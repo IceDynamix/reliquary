@@ -82,7 +82,7 @@ impl ::protobuf::Message for KPLHHLEGGCD {
                 16 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.LOPNADHJKBF = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for KPLHHLEGGCD {
             my_size += ::protobuf::rt::uint32_size(2, self.IHAOMLEPHOM);
         }
         if self.LOPNADHJKBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LOPNADHJKBF);
+            my_size += ::protobuf::rt::uint32_size(13, self.LOPNADHJKBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for KPLHHLEGGCD {
             os.write_uint32(2, self.IHAOMLEPHOM)?;
         }
         if self.LOPNADHJKBF != 0 {
-            os.write_uint32(7, self.LOPNADHJKBF)?;
+            os.write_uint32(13, self.LOPNADHJKBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KPLHHLEGGCD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KPLHHLEGGCD.proto\"Q\n\x0bKPLHHLEGGCD\x12\x20\n\x0bIHAOMLEPHOM\x18\
-    \x02\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x20\n\x0bLOPNADHJKBF\x18\x07\x20\x01\
-    (\rR\x0bLOPNADHJKBFb\x06proto3\
+    \x02\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x20\n\x0bLOPNADHJKBF\x18\r\x20\x01(\
+    \rR\x0bLOPNADHJKBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

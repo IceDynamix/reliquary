@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCCONKJHDJL {
     // message fields
-    // @@protoc_insertion_point(field:BCCONKJHDJL.display_value)
-    pub display_value: ::protobuf::MessageField<super::AOHKKFHDALO::AOHKKFHDALO>,
     // @@protoc_insertion_point(field:BCCONKJHDJL.FKKGLFOHGGA)
     pub FKKGLFOHGGA: ::protobuf::EnumOrUnknown<super::GridFightDropType::GridFightDropType>,
     // @@protoc_insertion_point(field:BCCONKJHDJL.FNLMKJLKLFH)
     pub FNLMKJLKLFH: u32,
     // @@protoc_insertion_point(field:BCCONKJHDJL.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:BCCONKJHDJL.param)
+    pub param: ::protobuf::MessageField<super::AOHKKFHDALO::AOHKKFHDALO>,
     // special fields
     // @@protoc_insertion_point(special_field:BCCONKJHDJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl BCCONKJHDJL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AOHKKFHDALO::AOHKKFHDALO>(
-            "display_value",
-            |m: &BCCONKJHDJL| { &m.display_value },
-            |m: &mut BCCONKJHDJL| { &mut m.display_value },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FKKGLFOHGGA",
             |m: &BCCONKJHDJL| { &m.FKKGLFOHGGA },
@@ -74,6 +69,11 @@ impl BCCONKJHDJL {
             "num",
             |m: &BCCONKJHDJL| { &m.num },
             |m: &mut BCCONKJHDJL| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AOHKKFHDALO::AOHKKFHDALO>(
+            "param",
+            |m: &BCCONKJHDJL| { &m.param },
+            |m: &mut BCCONKJHDJL| { &mut m.param },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCCONKJHDJL>(
             "BCCONKJHDJL",
@@ -93,9 +93,6 @@ impl ::protobuf::Message for BCCONKJHDJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
-                },
                 8 => {
                     self.FKKGLFOHGGA = is.read_enum_or_unknown()?;
                 },
@@ -104,6 +101,9 @@ impl ::protobuf::Message for BCCONKJHDJL {
                 },
                 24 => {
                     self.num = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.param)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,10 +117,6 @@ impl ::protobuf::Message for BCCONKJHDJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.display_value.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(1, self.FKKGLFOHGGA.value());
         }
@@ -130,15 +126,16 @@ impl ::protobuf::Message for BCCONKJHDJL {
         if self.num != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.num);
         }
+        if let Some(v) = self.param.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.display_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.FKKGLFOHGGA != ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.FKKGLFOHGGA))?;
         }
@@ -147,6 +144,9 @@ impl ::protobuf::Message for BCCONKJHDJL {
         }
         if self.num != 0 {
             os.write_uint32(3, self.num)?;
+        }
+        if let Some(v) = self.param.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BCCONKJHDJL {
     }
 
     fn clear(&mut self) {
-        self.display_value.clear();
         self.FKKGLFOHGGA = ::protobuf::EnumOrUnknown::new(super::GridFightDropType::GridFightDropType::MJJIFGINJAJ_NLCDGIPGFDJ);
         self.FNLMKJLKLFH = 0;
         self.num = 0;
+        self.param.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCCONKJHDJL {
         static instance: BCCONKJHDJL = BCCONKJHDJL {
-            display_value: ::protobuf::MessageField::none(),
             FKKGLFOHGGA: ::protobuf::EnumOrUnknown::from_i32(0),
             FNLMKJLKLFH: 0,
             num: 0,
+            param: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for BCCONKJHDJL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BCCONKJHDJL.proto\x1a\x11AOHKKFHDALO.proto\x1a\x17GridFightDropTyp\
-    e.proto\"\xaa\x01\n\x0bBCCONKJHDJL\x121\n\rdisplay_value\x18\x05\x20\x01\
-    (\x0b2\x0c.AOHKKFHDALOR\x0cdisplayValue\x124\n\x0bFKKGLFOHGGA\x18\x01\
-    \x20\x01(\x0e2\x12.GridFightDropTypeR\x0bFKKGLFOHGGA\x12\x20\n\x0bFNLMKJ\
-    LKLFH\x18\x02\x20\x01(\rR\x0bFNLMKJLKLFH\x12\x10\n\x03num\x18\x03\x20\
-    \x01(\rR\x03numb\x06proto3\
+    e.proto\"\x9b\x01\n\x0bBCCONKJHDJL\x124\n\x0bFKKGLFOHGGA\x18\x01\x20\x01\
+    (\x0e2\x12.GridFightDropTypeR\x0bFKKGLFOHGGA\x12\x20\n\x0bFNLMKJLKLFH\
+    \x18\x02\x20\x01(\rR\x0bFNLMKJLKLFH\x12\x10\n\x03num\x18\x03\x20\x01(\rR\
+    \x03num\x12\"\n\x05param\x18\x05\x20\x01(\x0b2\x0c.AOHKKFHDALOR\x05param\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

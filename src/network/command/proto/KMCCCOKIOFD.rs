@@ -32,10 +32,10 @@ pub struct KMCCCOKIOFD {
     pub GDNEHLEOMOM: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.FBNBPPHOGLI)
     pub FBNBPPHOGLI: u32,
-    // @@protoc_insertion_point(field:KMCCCOKIOFD.buff_id)
-    pub buff_id: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.EGKLFMCHLCO)
     pub EGKLFMCHLCO: u32,
+    // @@protoc_insertion_point(field:KMCCCOKIOFD.buff_id)
+    pub buff_id: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.JBGENFIKGGF)
     pub JBGENFIKGGF: u32,
     // special fields
@@ -68,14 +68,14 @@ impl KMCCCOKIOFD {
             |m: &mut KMCCCOKIOFD| { &mut m.FBNBPPHOGLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_id",
-            |m: &KMCCCOKIOFD| { &m.buff_id },
-            |m: &mut KMCCCOKIOFD| { &mut m.buff_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGKLFMCHLCO",
             |m: &KMCCCOKIOFD| { &m.EGKLFMCHLCO },
             |m: &mut KMCCCOKIOFD| { &mut m.EGKLFMCHLCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_id",
+            |m: &KMCCCOKIOFD| { &m.buff_id },
+            |m: &mut KMCCCOKIOFD| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JBGENFIKGGF",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.GDNEHLEOMOM = is.read_uint32()?;
                 },
-                88 => {
+                24 => {
                     self.FBNBPPHOGLI = is.read_uint32()?;
                 },
-                72 => {
-                    self.buff_id = is.read_uint32()?;
-                },
-                8 => {
+                48 => {
                     self.EGKLFMCHLCO = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
+                    self.buff_id = is.read_uint32()?;
+                },
+                72 => {
                     self.JBGENFIKGGF = is.read_uint32()?;
                 },
                 tag => {
@@ -128,19 +128,19 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GDNEHLEOMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GDNEHLEOMOM);
+            my_size += ::protobuf::rt::uint32_size(2, self.GDNEHLEOMOM);
         }
         if self.FBNBPPHOGLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FBNBPPHOGLI);
-        }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.FBNBPPHOGLI);
         }
         if self.EGKLFMCHLCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EGKLFMCHLCO);
+            my_size += ::protobuf::rt::uint32_size(6, self.EGKLFMCHLCO);
+        }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
         }
         if self.JBGENFIKGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JBGENFIKGGF);
+            my_size += ::protobuf::rt::uint32_size(9, self.JBGENFIKGGF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for KMCCCOKIOFD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GDNEHLEOMOM != 0 {
-            os.write_uint32(5, self.GDNEHLEOMOM)?;
+            os.write_uint32(2, self.GDNEHLEOMOM)?;
         }
         if self.FBNBPPHOGLI != 0 {
-            os.write_uint32(11, self.FBNBPPHOGLI)?;
-        }
-        if self.buff_id != 0 {
-            os.write_uint32(9, self.buff_id)?;
+            os.write_uint32(3, self.FBNBPPHOGLI)?;
         }
         if self.EGKLFMCHLCO != 0 {
-            os.write_uint32(1, self.EGKLFMCHLCO)?;
+            os.write_uint32(6, self.EGKLFMCHLCO)?;
+        }
+        if self.buff_id != 0 {
+            os.write_uint32(8, self.buff_id)?;
         }
         if self.JBGENFIKGGF != 0 {
-            os.write_uint32(14, self.JBGENFIKGGF)?;
+            os.write_uint32(9, self.JBGENFIKGGF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,8 +182,8 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     fn clear(&mut self) {
         self.GDNEHLEOMOM = 0;
         self.FBNBPPHOGLI = 0;
-        self.buff_id = 0;
         self.EGKLFMCHLCO = 0;
+        self.buff_id = 0;
         self.JBGENFIKGGF = 0;
         self.special_fields.clear();
     }
@@ -192,8 +192,8 @@ impl ::protobuf::Message for KMCCCOKIOFD {
         static instance: KMCCCOKIOFD = KMCCCOKIOFD {
             GDNEHLEOMOM: 0,
             FBNBPPHOGLI: 0,
-            buff_id: 0,
             EGKLFMCHLCO: 0,
+            buff_id: 0,
             JBGENFIKGGF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for KMCCCOKIOFD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KMCCCOKIOFD.proto\"\xae\x01\n\x0bKMCCCOKIOFD\x12\x20\n\x0bGDNEHLEO\
-    MOM\x18\x05\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\x0bFBNBPPHOGLI\x18\x0b\
-    \x20\x01(\rR\x0bFBNBPPHOGLI\x12\x17\n\x07buff_id\x18\t\x20\x01(\rR\x06bu\
-    ffId\x12\x20\n\x0bEGKLFMCHLCO\x18\x01\x20\x01(\rR\x0bEGKLFMCHLCO\x12\x20\
-    \n\x0bJBGENFIKGGF\x18\x0e\x20\x01(\rR\x0bJBGENFIKGGFb\x06proto3\
+    MOM\x18\x02\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\x0bFBNBPPHOGLI\x18\x03\
+    \x20\x01(\rR\x0bFBNBPPHOGLI\x12\x20\n\x0bEGKLFMCHLCO\x18\x06\x20\x01(\rR\
+    \x0bEGKLFMCHLCO\x12\x17\n\x07buff_id\x18\x08\x20\x01(\rR\x06buffId\x12\
+    \x20\n\x0bJBGENFIKGGF\x18\t\x20\x01(\rR\x0bJBGENFIKGGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

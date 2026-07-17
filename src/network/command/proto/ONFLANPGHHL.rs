@@ -30,10 +30,10 @@ pub struct ONFLANPGHHL {
     // message fields
     // @@protoc_insertion_point(field:ONFLANPGHHL.inside_relic_list)
     pub inside_relic_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ONFLANPGHHL.outside_relic_list)
-    pub outside_relic_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ONFLANPGHHL.ALAEIBDIGHM)
     pub ALAEIBDIGHM: ::protobuf::EnumOrUnknown<super::KCKJILIMNFF::KCKJILIMNFF>,
+    // @@protoc_insertion_point(field:ONFLANPGHHL.outside_relic_list)
+    pub outside_relic_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ONFLANPGHHL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ONFLANPGHHL {
             |m: &ONFLANPGHHL| { &m.inside_relic_list },
             |m: &mut ONFLANPGHHL| { &mut m.inside_relic_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "outside_relic_list",
-            |m: &ONFLANPGHHL| { &m.outside_relic_list },
-            |m: &mut ONFLANPGHHL| { &mut m.outside_relic_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALAEIBDIGHM",
             |m: &ONFLANPGHHL| { &m.ALAEIBDIGHM },
             |m: &mut ONFLANPGHHL| { &mut m.ALAEIBDIGHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "outside_relic_list",
+            |m: &ONFLANPGHHL| { &m.outside_relic_list },
+            |m: &mut ONFLANPGHHL| { &mut m.outside_relic_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONFLANPGHHL>(
             "ONFLANPGHHL",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for ONFLANPGHHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.inside_relic_list)?;
                 },
-                112 => {
+                32 => {
                     self.inside_relic_list.push(is.read_uint32()?);
                 },
-                18 => {
+                104 => {
+                    self.ALAEIBDIGHM = is.read_enum_or_unknown()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.outside_relic_list)?;
                 },
-                16 => {
+                120 => {
                     self.outside_relic_list.push(is.read_uint32()?);
-                },
-                48 => {
-                    self.ALAEIBDIGHM = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for ONFLANPGHHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.inside_relic_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.outside_relic_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.inside_relic_list);
         if self.ALAEIBDIGHM != ::protobuf::EnumOrUnknown::new(super::KCKJILIMNFF::KCKJILIMNFF::KCKJILIMNFF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.ALAEIBDIGHM.value());
+            my_size += ::protobuf::rt::int32_size(13, self.ALAEIBDIGHM.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.outside_relic_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.inside_relic_list)?;
-        os.write_repeated_packed_uint32(2, &self.outside_relic_list)?;
+        os.write_repeated_packed_uint32(4, &self.inside_relic_list)?;
         if self.ALAEIBDIGHM != ::protobuf::EnumOrUnknown::new(super::KCKJILIMNFF::KCKJILIMNFF::KCKJILIMNFF_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.ALAEIBDIGHM))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.ALAEIBDIGHM))?;
         }
+        os.write_repeated_packed_uint32(15, &self.outside_relic_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for ONFLANPGHHL {
 
     fn clear(&mut self) {
         self.inside_relic_list.clear();
-        self.outside_relic_list.clear();
         self.ALAEIBDIGHM = ::protobuf::EnumOrUnknown::new(super::KCKJILIMNFF::KCKJILIMNFF::KCKJILIMNFF_NLCDGIPGFDJ);
+        self.outside_relic_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONFLANPGHHL {
         static instance: ONFLANPGHHL = ONFLANPGHHL {
             inside_relic_list: ::std::vec::Vec::new(),
-            outside_relic_list: ::std::vec::Vec::new(),
             ALAEIBDIGHM: ::protobuf::EnumOrUnknown::from_i32(0),
+            outside_relic_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for ONFLANPGHHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONFLANPGHHL.proto\x1a\x11KCKJILIMNFF.proto\"\x97\x01\n\x0bONFLANPG\
-    HHL\x12*\n\x11inside_relic_list\x18\x0e\x20\x03(\rR\x0finsideRelicList\
-    \x12,\n\x12outside_relic_list\x18\x02\x20\x03(\rR\x10outsideRelicList\
-    \x12.\n\x0bALAEIBDIGHM\x18\x06\x20\x01(\x0e2\x0c.KCKJILIMNFFR\x0bALAEIBD\
-    IGHMb\x06proto3\
+    HHL\x12*\n\x11inside_relic_list\x18\x04\x20\x03(\rR\x0finsideRelicList\
+    \x12.\n\x0bALAEIBDIGHM\x18\r\x20\x01(\x0e2\x0c.KCKJILIMNFFR\x0bALAEIBDIG\
+    HM\x12,\n\x12outside_relic_list\x18\x0f\x20\x03(\rR\x10outsideRelicListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

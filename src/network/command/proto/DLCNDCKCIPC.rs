@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DLCNDCKCIPC {
     // message fields
-    // @@protoc_insertion_point(field:DLCNDCKCIPC.AAFIFEGKACO)
-    pub AAFIFEGKACO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DLCNDCKCIPC.JGCCIMMEDIJ)
-    pub JGCCIMMEDIJ: u32,
     // @@protoc_insertion_point(field:DLCNDCKCIPC.HIFMFMBCODL)
     pub HIFMFMBCODL: bool,
+    // @@protoc_insertion_point(field:DLCNDCKCIPC.JGCCIMMEDIJ)
+    pub JGCCIMMEDIJ: u32,
+    // @@protoc_insertion_point(field:DLCNDCKCIPC.AAFIFEGKACO)
+    pub AAFIFEGKACO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DLCNDCKCIPC.HGKBJIAAFPC)
     pub HGKBJIAAFPC: u32,
     // special fields
@@ -55,20 +55,20 @@ impl DLCNDCKCIPC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AAFIFEGKACO",
-            |m: &DLCNDCKCIPC| { &m.AAFIFEGKACO },
-            |m: &mut DLCNDCKCIPC| { &mut m.AAFIFEGKACO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HIFMFMBCODL",
+            |m: &DLCNDCKCIPC| { &m.HIFMFMBCODL },
+            |m: &mut DLCNDCKCIPC| { &mut m.HIFMFMBCODL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGCCIMMEDIJ",
             |m: &DLCNDCKCIPC| { &m.JGCCIMMEDIJ },
             |m: &mut DLCNDCKCIPC| { &mut m.JGCCIMMEDIJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIFMFMBCODL",
-            |m: &DLCNDCKCIPC| { &m.HIFMFMBCODL },
-            |m: &mut DLCNDCKCIPC| { &mut m.HIFMFMBCODL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AAFIFEGKACO",
+            |m: &DLCNDCKCIPC| { &m.AAFIFEGKACO },
+            |m: &mut DLCNDCKCIPC| { &mut m.AAFIFEGKACO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HGKBJIAAFPC",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for DLCNDCKCIPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AAFIFEGKACO)?;
-                },
-                8 => {
-                    self.AAFIFEGKACO.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.JGCCIMMEDIJ = is.read_uint32()?;
-                },
-                96 => {
+                24 => {
                     self.HIFMFMBCODL = is.read_bool()?;
                 },
-                40 => {
+                32 => {
+                    self.JGCCIMMEDIJ = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AAFIFEGKACO)?;
+                },
+                56 => {
+                    self.AAFIFEGKACO.push(is.read_uint32()?);
+                },
+                120 => {
                     self.HGKBJIAAFPC = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for DLCNDCKCIPC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.AAFIFEGKACO);
-        if self.JGCCIMMEDIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JGCCIMMEDIJ);
-        }
         if self.HIFMFMBCODL != false {
             my_size += 1 + 1;
         }
+        if self.JGCCIMMEDIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JGCCIMMEDIJ);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AAFIFEGKACO);
         if self.HGKBJIAAFPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HGKBJIAAFPC);
+            my_size += ::protobuf::rt::uint32_size(15, self.HGKBJIAAFPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for DLCNDCKCIPC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.AAFIFEGKACO)?;
-        if self.JGCCIMMEDIJ != 0 {
-            os.write_uint32(10, self.JGCCIMMEDIJ)?;
-        }
         if self.HIFMFMBCODL != false {
-            os.write_bool(12, self.HIFMFMBCODL)?;
+            os.write_bool(3, self.HIFMFMBCODL)?;
         }
+        if self.JGCCIMMEDIJ != 0 {
+            os.write_uint32(4, self.JGCCIMMEDIJ)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.AAFIFEGKACO)?;
         if self.HGKBJIAAFPC != 0 {
-            os.write_uint32(5, self.HGKBJIAAFPC)?;
+            os.write_uint32(15, self.HGKBJIAAFPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for DLCNDCKCIPC {
     }
 
     fn clear(&mut self) {
-        self.AAFIFEGKACO.clear();
-        self.JGCCIMMEDIJ = 0;
         self.HIFMFMBCODL = false;
+        self.JGCCIMMEDIJ = 0;
+        self.AAFIFEGKACO.clear();
         self.HGKBJIAAFPC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DLCNDCKCIPC {
         static instance: DLCNDCKCIPC = DLCNDCKCIPC {
-            AAFIFEGKACO: ::std::vec::Vec::new(),
-            JGCCIMMEDIJ: 0,
             HIFMFMBCODL: false,
+            JGCCIMMEDIJ: 0,
+            AAFIFEGKACO: ::std::vec::Vec::new(),
             HGKBJIAAFPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for DLCNDCKCIPC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DLCNDCKCIPC.proto\"\x95\x01\n\x0bDLCNDCKCIPC\x12\x20\n\x0bAAFIFEGK\
-    ACO\x18\x01\x20\x03(\rR\x0bAAFIFEGKACO\x12\x20\n\x0bJGCCIMMEDIJ\x18\n\
-    \x20\x01(\rR\x0bJGCCIMMEDIJ\x12\x20\n\x0bHIFMFMBCODL\x18\x0c\x20\x01(\
-    \x08R\x0bHIFMFMBCODL\x12\x20\n\x0bHGKBJIAAFPC\x18\x05\x20\x01(\rR\x0bHGK\
-    BJIAAFPCb\x06proto3\
+    \n\x11DLCNDCKCIPC.proto\"\x95\x01\n\x0bDLCNDCKCIPC\x12\x20\n\x0bHIFMFMBC\
+    ODL\x18\x03\x20\x01(\x08R\x0bHIFMFMBCODL\x12\x20\n\x0bJGCCIMMEDIJ\x18\
+    \x04\x20\x01(\rR\x0bJGCCIMMEDIJ\x12\x20\n\x0bAAFIFEGKACO\x18\x07\x20\x03\
+    (\rR\x0bAAFIFEGKACO\x12\x20\n\x0bHGKBJIAAFPC\x18\x0f\x20\x01(\rR\x0bHGKB\
+    JIAAFPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

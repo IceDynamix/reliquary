@@ -93,19 +93,19 @@ impl ::protobuf::Message for ChallengeTierceRecordInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     self.result_list.push(is.read_message()?);
                 },
-                10 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                8 => {
+                40 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
                 48 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
                     self.is_passed = is.read_bool()?;
                 },
                 tag => {
@@ -124,7 +124,7 @@ impl ::protobuf::Message for ChallengeTierceRecordInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.finished_target_list);
         if self.challenge_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.challenge_id);
         }
@@ -138,14 +138,14 @@ impl ::protobuf::Message for ChallengeTierceRecordInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.result_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        os.write_repeated_packed_uint32(1, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(5, &self.finished_target_list)?;
         if self.challenge_id != 0 {
             os.write_uint32(6, self.challenge_id)?;
         }
         if self.is_passed != false {
-            os.write_bool(4, self.is_passed)?;
+            os.write_bool(10, self.is_passed)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeTierceRecordInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChallengeTierceRecordInfo.proto\x1a\x20ChallengeTierceStageRecord.\
     proto\"\xcb\x01\n\x19ChallengeTierceRecordInfo\x12<\n\x0bresult_list\x18\
-    \x0b\x20\x03(\x0b2\x1b.ChallengeTierceStageRecordR\nresultList\x120\n\
-    \x14finished_target_list\x18\x01\x20\x03(\rR\x12finishedTargetList\x12!\
+    \x04\x20\x03(\x0b2\x1b.ChallengeTierceStageRecordR\nresultList\x120\n\
+    \x14finished_target_list\x18\x05\x20\x03(\rR\x12finishedTargetList\x12!\
     \n\x0cchallenge_id\x18\x06\x20\x01(\rR\x0bchallengeId\x12\x1b\n\tis_pass\
-    ed\x18\x04\x20\x01(\x08R\x08isPassedb\x06proto3\
+    ed\x18\n\x20\x01(\x08R\x08isPassedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

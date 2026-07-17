@@ -30,8 +30,6 @@ pub struct AEFFOCFJNBF {
     // message fields
     // @@protoc_insertion_point(field:AEFFOCFJNBF.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:AEFFOCFJNBF.CBJALFOLFIH)
-    pub CBJALFOLFIH: f32,
     // @@protoc_insertion_point(field:AEFFOCFJNBF.buff_id)
     pub buff_id: u32,
     // special fields
@@ -51,17 +49,12 @@ impl AEFFOCFJNBF {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
             |m: &AEFFOCFJNBF| { &m.cost_data },
             |m: &mut AEFFOCFJNBF| { &mut m.cost_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBJALFOLFIH",
-            |m: &AEFFOCFJNBF| { &m.CBJALFOLFIH },
-            |m: &mut AEFFOCFJNBF| { &mut m.CBJALFOLFIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -89,10 +82,7 @@ impl ::protobuf::Message for AEFFOCFJNBF {
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                109 => {
-                    self.CBJALFOLFIH = is.read_float()?;
-                },
-                112 => {
+                88 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +101,8 @@ impl ::protobuf::Message for AEFFOCFJNBF {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.CBJALFOLFIH != 0. {
-            my_size += 1 + 4;
-        }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +113,8 @@ impl ::protobuf::Message for AEFFOCFJNBF {
         if let Some(v) = self.cost_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.CBJALFOLFIH != 0. {
-            os.write_float(13, self.CBJALFOLFIH)?;
-        }
         if self.buff_id != 0 {
-            os.write_uint32(14, self.buff_id)?;
+            os.write_uint32(11, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +134,6 @@ impl ::protobuf::Message for AEFFOCFJNBF {
 
     fn clear(&mut self) {
         self.cost_data.clear();
-        self.CBJALFOLFIH = 0.;
         self.buff_id = 0;
         self.special_fields.clear();
     }
@@ -158,7 +141,6 @@ impl ::protobuf::Message for AEFFOCFJNBF {
     fn default_instance() -> &'static AEFFOCFJNBF {
         static instance: AEFFOCFJNBF = AEFFOCFJNBF {
             cost_data: ::protobuf::MessageField::none(),
-            CBJALFOLFIH: 0.,
             buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AEFFOCFJNBF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AEFFOCFJNBF.proto\x1a\x12ItemCostData.proto\"t\n\x0bAEFFOCFJNBF\
+    \n\x11AEFFOCFJNBF.proto\x1a\x12ItemCostData.proto\"R\n\x0bAEFFOCFJNBF\
     \x12*\n\tcost_data\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    \x20\n\x0bCBJALFOLFIH\x18\r\x20\x01(\x02R\x0bCBJALFOLFIH\x12\x17\n\x07bu\
-    ff_id\x18\x0e\x20\x01(\rR\x06buffIdb\x06proto3\
+    \x17\n\x07buff_id\x18\x0b\x20\x01(\rR\x06buffIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

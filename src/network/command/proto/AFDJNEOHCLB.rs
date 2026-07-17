@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AFDJNEOHCLB {
     // message fields
-    // @@protoc_insertion_point(field:AFDJNEOHCLB.source)
-    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
     // @@protoc_insertion_point(field:AFDJNEOHCLB.OCJCOOLMCGD)
     pub OCJCOOLMCGD: u32,
+    // @@protoc_insertion_point(field:AFDJNEOHCLB.source)
+    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
     // @@protoc_insertion_point(field:AFDJNEOHCLB.progress)
     pub progress: u32,
     // special fields
@@ -53,15 +53,15 @@ impl AFDJNEOHCLB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
-            "source",
-            |m: &AFDJNEOHCLB| { &m.source },
-            |m: &mut AFDJNEOHCLB| { &mut m.source },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCJCOOLMCGD",
             |m: &AFDJNEOHCLB| { &m.OCJCOOLMCGD },
             |m: &mut AFDJNEOHCLB| { &mut m.OCJCOOLMCGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
+            "source",
+            |m: &AFDJNEOHCLB| { &m.source },
+            |m: &mut AFDJNEOHCLB| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AFDJNEOHCLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
-                },
-                48 => {
+                64 => {
                     self.OCJCOOLMCGD = is.read_uint32()?;
                 },
-                104 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
+                },
+                120 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for AFDJNEOHCLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OCJCOOLMCGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OCJCOOLMCGD);
+        }
         if let Some(v) = self.source.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OCJCOOLMCGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OCJCOOLMCGD);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.progress);
+            my_size += ::protobuf::rt::uint32_size(15, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AFDJNEOHCLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.OCJCOOLMCGD != 0 {
-            os.write_uint32(6, self.OCJCOOLMCGD)?;
+            os.write_uint32(8, self.OCJCOOLMCGD)?;
+        }
+        if let Some(v) = self.source.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.progress != 0 {
-            os.write_uint32(13, self.progress)?;
+            os.write_uint32(15, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AFDJNEOHCLB {
     }
 
     fn clear(&mut self) {
-        self.source.clear();
         self.OCJCOOLMCGD = 0;
+        self.source.clear();
         self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AFDJNEOHCLB {
         static instance: AFDJNEOHCLB = AFDJNEOHCLB {
-            source: ::protobuf::MessageField::none(),
             OCJCOOLMCGD: 0,
+            source: ::protobuf::MessageField::none(),
             progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AFDJNEOHCLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFDJNEOHCLB.proto\x1a\x11JLPEICPFLMC.proto\"q\n\x0bAFDJNEOHCLB\x12\
-    $\n\x06source\x18\n\x20\x01(\x0b2\x0c.JLPEICPFLMCR\x06source\x12\x20\n\
-    \x0bOCJCOOLMCGD\x18\x06\x20\x01(\rR\x0bOCJCOOLMCGD\x12\x1a\n\x08progress\
-    \x18\r\x20\x01(\rR\x08progressb\x06proto3\
+    \x20\n\x0bOCJCOOLMCGD\x18\x08\x20\x01(\rR\x0bOCJCOOLMCGD\x12$\n\x06sourc\
+    e\x18\t\x20\x01(\x0b2\x0c.JLPEICPFLMCR\x06source\x12\x1a\n\x08progress\
+    \x18\x0f\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

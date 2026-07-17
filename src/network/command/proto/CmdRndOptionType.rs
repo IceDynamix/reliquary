@@ -30,13 +30,13 @@ pub enum CmdRndOptionType {
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_NLCDGIPGFDJ)
     LHHIKPLMLGH_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_FHMBJGCBBPF)
-    LHHIKPLMLGH_FHMBJGCBBPF = 3473,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_IFMEJPJJELN)
-    LHHIKPLMLGH_IFMEJPJJELN = 3427,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_AKEKFNOPPLF)
-    LHHIKPLMLGH_AKEKFNOPPLF = 3403,
+    LHHIKPLMLGH_FHMBJGCBBPF = 3425,
     // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_BKAOLMEOLFJ)
-    LHHIKPLMLGH_BKAOLMEOLFJ = 3480,
+    LHHIKPLMLGH_BKAOLMEOLFJ = 3493,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_AKEKFNOPPLF)
+    LHHIKPLMLGH_AKEKFNOPPLF = 3478,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_IFMEJPJJELN)
+    LHHIKPLMLGH_IFMEJPJJELN = 3458,
 }
 
 impl ::protobuf::Enum for CmdRndOptionType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdRndOptionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRndOptionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ),
-            3473 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF),
-            3427 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
-            3403 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
-            3480 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ),
+            3425 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF),
+            3493 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ),
+            3478 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
+            3458 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
             _ => ::std::option::Option::None
         }
     }
@@ -61,9 +61,9 @@ impl ::protobuf::Enum for CmdRndOptionType {
         match str {
             "LHHIKPLMLGH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ),
             "LHHIKPLMLGH_FHMBJGCBBPF" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF),
-            "LHHIKPLMLGH_IFMEJPJJELN" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
-            "LHHIKPLMLGH_AKEKFNOPPLF" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
             "LHHIKPLMLGH_BKAOLMEOLFJ" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ),
+            "LHHIKPLMLGH_AKEKFNOPPLF" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
+            "LHHIKPLMLGH_IFMEJPJJELN" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
             _ => ::std::option::Option::None
         }
     }
@@ -71,9 +71,9 @@ impl ::protobuf::Enum for CmdRndOptionType {
     const VALUES: &'static [CmdRndOptionType] = &[
         CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ,
         CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF,
-        CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN,
-        CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF,
         CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ,
+        CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF,
+        CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN,
     ];
 }
 
@@ -87,9 +87,9 @@ impl ::protobuf::EnumFull for CmdRndOptionType {
         let index = match self {
             CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ => 0,
             CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF => 1,
-            CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN => 2,
+            CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ => 2,
             CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF => 3,
-            CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ => 4,
+            CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -110,9 +110,9 @@ impl CmdRndOptionType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRndOptionType.proto*\xa7\x01\n\x10CmdRndOptionType\x12\x1b\n\
     \x17LHHIKPLMLGH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LHHIKPLMLGH_FHMBJGCBBPF\
-    \x10\x91\x1b\x12\x1c\n\x17LHHIKPLMLGH_IFMEJPJJELN\x10\xe3\x1a\x12\x1c\n\
-    \x17LHHIKPLMLGH_AKEKFNOPPLF\x10\xcb\x1a\x12\x1c\n\x17LHHIKPLMLGH_BKAOLME\
-    OLFJ\x10\x98\x1bb\x06proto3\
+    \x10\xe1\x1a\x12\x1c\n\x17LHHIKPLMLGH_BKAOLMEOLFJ\x10\xa5\x1b\x12\x1c\n\
+    \x17LHHIKPLMLGH_AKEKFNOPPLF\x10\x96\x1b\x12\x1c\n\x17LHHIKPLMLGH_IFMEJPJ\
+    JELN\x10\x82\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

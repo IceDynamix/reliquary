@@ -79,7 +79,7 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEPNEDJPAGK)?;
                 },
                 104 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.AEPNEDJPAGK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueShopBeginBattleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueShopBeginBattleScRsp.proto\x1a\x15SceneBattleInfo.proto\"i\n\
-    \x19RogueShopBeginBattleScRsp\x122\n\x0bAEPNEDJPAGK\x18\x04\x20\x01(\x0b\
+    \x19RogueShopBeginBattleScRsp\x122\n\x0bAEPNEDJPAGK\x18\x02\x20\x01(\x0b\
     2\x10.SceneBattleInfoR\x0bAEPNEDJPAGK\x12\x18\n\x07retcode\x18\r\x20\x01\
     (\rR\x07retcodeb\x06proto3\
 ";

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GOMKGHJBNFM {
     // message fields
-    // @@protoc_insertion_point(field:GOMKGHJBNFM.JEKLOEPPJBK)
-    pub JEKLOEPPJBK: u32,
     // @@protoc_insertion_point(field:GOMKGHJBNFM.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:GOMKGHJBNFM.JEKLOEPPJBK)
+    pub JEKLOEPPJBK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GOMKGHJBNFM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GOMKGHJBNFM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEKLOEPPJBK",
-            |m: &GOMKGHJBNFM| { &m.JEKLOEPPJBK },
-            |m: &mut GOMKGHJBNFM| { &mut m.JEKLOEPPJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &GOMKGHJBNFM| { &m.level },
             |m: &mut GOMKGHJBNFM| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JEKLOEPPJBK",
+            |m: &GOMKGHJBNFM| { &m.JEKLOEPPJBK },
+            |m: &mut GOMKGHJBNFM| { &mut m.JEKLOEPPJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GOMKGHJBNFM>(
             "GOMKGHJBNFM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GOMKGHJBNFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.JEKLOEPPJBK = is.read_uint32()?;
-                },
-                48 => {
+                40 => {
                     self.level = is.read_uint32()?;
+                },
+                72 => {
+                    self.JEKLOEPPJBK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GOMKGHJBNFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JEKLOEPPJBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JEKLOEPPJBK);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        }
+        if self.JEKLOEPPJBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JEKLOEPPJBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GOMKGHJBNFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JEKLOEPPJBK != 0 {
-            os.write_uint32(8, self.JEKLOEPPJBK)?;
-        }
         if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+            os.write_uint32(5, self.level)?;
+        }
+        if self.JEKLOEPPJBK != 0 {
+            os.write_uint32(9, self.JEKLOEPPJBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GOMKGHJBNFM {
     }
 
     fn clear(&mut self) {
-        self.JEKLOEPPJBK = 0;
         self.level = 0;
+        self.JEKLOEPPJBK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GOMKGHJBNFM {
         static instance: GOMKGHJBNFM = GOMKGHJBNFM {
-            JEKLOEPPJBK: 0,
             level: 0,
+            JEKLOEPPJBK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GOMKGHJBNFM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GOMKGHJBNFM.proto\"E\n\x0bGOMKGHJBNFM\x12\x20\n\x0bJEKLOEPPJBK\x18\
-    \x08\x20\x01(\rR\x0bJEKLOEPPJBK\x12\x14\n\x05level\x18\x06\x20\x01(\rR\
-    \x05levelb\x06proto3\
+    \n\x11GOMKGHJBNFM.proto\"E\n\x0bGOMKGHJBNFM\x12\x14\n\x05level\x18\x05\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bJEKLOEPPJBK\x18\t\x20\x01(\rR\x0bJEKL\
+    OEPPJBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

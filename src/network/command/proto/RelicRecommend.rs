@@ -72,7 +72,7 @@ impl ::protobuf::Message for RelicRecommend {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     self.GMCNPKAJMHC.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RelicRecommend {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.GMCNPKAJMHC {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicRecommend {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RelicRecommend.proto\x1a\x11GHAJJBBEHBE.proto\"@\n\x0eRelicRecomme\
-    nd\x12.\n\x0bGMCNPKAJMHC\x18\x01\x20\x03(\x0b2\x0c.GHAJJBBEHBER\x0bGMCNP\
-    KAJMHCb\x06proto3\
+    nd\x12.\n\x0bGMCNPKAJMHC\x18\t\x20\x03(\x0b2\x0c.GHAJJBBEHBER\x0bGMCNPKA\
+    JMHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for CMKMOIGANHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.FPJMKDNDENK = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CMKMOIGANHN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FPJMKDNDENK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FPJMKDNDENK);
+            my_size += ::protobuf::rt::uint32_size(2, self.FPJMKDNDENK);
         }
         if self.stage_id != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.stage_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CMKMOIGANHN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FPJMKDNDENK != 0 {
-            os.write_uint32(3, self.FPJMKDNDENK)?;
+            os.write_uint32(2, self.FPJMKDNDENK)?;
         }
         if self.stage_id != 0 {
             os.write_uint32(12, self.stage_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CMKMOIGANHN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CMKMOIGANHN.proto\"J\n\x0bCMKMOIGANHN\x12\x20\n\x0bFPJMKDNDENK\x18\
-    \x03\x20\x01(\rR\x0bFPJMKDNDENK\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\r\
+    \x02\x20\x01(\rR\x0bFPJMKDNDENK\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\r\
     R\x07stageIdb\x06proto3\
 ";
 

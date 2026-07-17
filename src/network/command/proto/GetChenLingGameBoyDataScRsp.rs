@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChenLingGameBoyDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChenLingGameBoyDataScRsp.IAOBHCOOMJP)
-    pub IAOBHCOOMJP: ::protobuf::MessageField<super::JBOBHIPHGPB::JBOBHIPHGPB>,
+    // @@protoc_insertion_point(field:GetChenLingGameBoyDataScRsp.game_data)
+    pub game_data: ::protobuf::MessageField<super::JBOBHIPHGPB::JBOBHIPHGPB>,
     // @@protoc_insertion_point(field:GetChenLingGameBoyDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetChenLingGameBoyDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBOBHIPHGPB::JBOBHIPHGPB>(
-            "IAOBHCOOMJP",
-            |m: &GetChenLingGameBoyDataScRsp| { &m.IAOBHCOOMJP },
-            |m: &mut GetChenLingGameBoyDataScRsp| { &mut m.IAOBHCOOMJP },
+            "game_data",
+            |m: &GetChenLingGameBoyDataScRsp| { &m.game_data },
+            |m: &mut GetChenLingGameBoyDataScRsp| { &mut m.game_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetChenLingGameBoyDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAOBHCOOMJP)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_data)?;
                 },
-                104 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetChenLingGameBoyDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
+        if let Some(v) = self.game_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetChenLingGameBoyDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.game_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetChenLingGameBoyDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.IAOBHCOOMJP.clear();
+        self.game_data.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChenLingGameBoyDataScRsp {
         static instance: GetChenLingGameBoyDataScRsp = GetChenLingGameBoyDataScRsp {
-            IAOBHCOOMJP: ::protobuf::MessageField::none(),
+            game_data: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetChenLingGameBoyDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetChenLingGameBoyDataScRsp.proto\x1a\x11JBOBHIPHGPB.proto\"g\n\x1bGe\
-    tChenLingGameBoyDataScRsp\x12.\n\x0bIAOBHCOOMJP\x18\x08\x20\x01(\x0b2\
-    \x0c.JBOBHIPHGPBR\x0bIAOBHCOOMJP\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n!GetChenLingGameBoyDataScRsp.proto\x1a\x11JBOBHIPHGPB.proto\"b\n\x1bGe\
+    tChenLingGameBoyDataScRsp\x12)\n\tgame_data\x18\t\x20\x01(\x0b2\x0c.JBOB\
+    HIPHGPBR\x08gameData\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

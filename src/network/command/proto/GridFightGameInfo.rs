@@ -45,12 +45,12 @@ impl GridFightGameInfo {
         ::std::default::Default::default()
     }
 
-    // .NIHNGPKHEPC FAOCFBOFCJP = 1;
+    // .GridFightGameBasicInfo FAOCFBOFCJP = 15;
 
-    pub fn FAOCFBOFCJP(&self) -> &super::NIHNGPKHEPC::NIHNGPKHEPC {
+    pub fn FAOCFBOFCJP(&self) -> &super::GridFightGameBasicInfo::GridFightGameBasicInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(ref v)) => v,
-            _ => <super::NIHNGPKHEPC::NIHNGPKHEPC as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameBasicInfo::GridFightGameBasicInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -66,15 +66,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_FAOCFBOFCJP(&mut self, v: super::NIHNGPKHEPC::NIHNGPKHEPC) {
+    pub fn set_FAOCFBOFCJP(&mut self, v: super::GridFightGameBasicInfo::GridFightGameBasicInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FAOCFBOFCJP(&mut self) -> &mut super::NIHNGPKHEPC::NIHNGPKHEPC {
+    pub fn mut_FAOCFBOFCJP(&mut self) -> &mut super::GridFightGameBasicInfo::GridFightGameBasicInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(super::NIHNGPKHEPC::NIHNGPKHEPC::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(super::GridFightGameBasicInfo::GridFightGameBasicInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(ref mut v)) => v,
@@ -83,23 +83,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_FAOCFBOFCJP(&mut self) -> super::NIHNGPKHEPC::NIHNGPKHEPC {
+    pub fn take_FAOCFBOFCJP(&mut self) -> super::GridFightGameBasicInfo::GridFightGameBasicInfo {
         if self.has_FAOCFBOFCJP() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NIHNGPKHEPC::NIHNGPKHEPC::new()
+            super::GridFightGameBasicInfo::GridFightGameBasicInfo::new()
         }
     }
 
-    // .CONONEALNOF GCKLIONKMJC = 11;
+    // .GridFightGameItemsInfo GCKLIONKMJC = 11;
 
-    pub fn GCKLIONKMJC(&self) -> &super::CONONEALNOF::CONONEALNOF {
+    pub fn GCKLIONKMJC(&self) -> &super::GridFightGameItemsInfo::GridFightGameItemsInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(ref v)) => v,
-            _ => <super::CONONEALNOF::CONONEALNOF as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameItemsInfo::GridFightGameItemsInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -115,15 +115,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_GCKLIONKMJC(&mut self, v: super::CONONEALNOF::CONONEALNOF) {
+    pub fn set_GCKLIONKMJC(&mut self, v: super::GridFightGameItemsInfo::GridFightGameItemsInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_GCKLIONKMJC(&mut self) -> &mut super::CONONEALNOF::CONONEALNOF {
+    pub fn mut_GCKLIONKMJC(&mut self) -> &mut super::GridFightGameItemsInfo::GridFightGameItemsInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(super::CONONEALNOF::CONONEALNOF::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(super::GridFightGameItemsInfo::GridFightGameItemsInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(ref mut v)) => v,
@@ -132,23 +132,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_GCKLIONKMJC(&mut self) -> super::CONONEALNOF::CONONEALNOF {
+    pub fn take_GCKLIONKMJC(&mut self) -> super::GridFightGameItemsInfo::GridFightGameItemsInfo {
         if self.has_GCKLIONKMJC() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CONONEALNOF::CONONEALNOF::new()
+            super::GridFightGameItemsInfo::GridFightGameItemsInfo::new()
         }
     }
 
-    // .POCJDMMANBM EBHDIOGALIE = 7;
+    // .GridFightGameShopInfo EBHDIOGALIE = 13;
 
-    pub fn EBHDIOGALIE(&self) -> &super::POCJDMMANBM::POCJDMMANBM {
+    pub fn EBHDIOGALIE(&self) -> &super::GridFightGameShopInfo::GridFightGameShopInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(ref v)) => v,
-            _ => <super::POCJDMMANBM::POCJDMMANBM as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameShopInfo::GridFightGameShopInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -164,15 +164,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_EBHDIOGALIE(&mut self, v: super::POCJDMMANBM::POCJDMMANBM) {
+    pub fn set_EBHDIOGALIE(&mut self, v: super::GridFightGameShopInfo::GridFightGameShopInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EBHDIOGALIE(&mut self) -> &mut super::POCJDMMANBM::POCJDMMANBM {
+    pub fn mut_EBHDIOGALIE(&mut self) -> &mut super::GridFightGameShopInfo::GridFightGameShopInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(super::POCJDMMANBM::POCJDMMANBM::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(super::GridFightGameShopInfo::GridFightGameShopInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(ref mut v)) => v,
@@ -181,23 +181,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_EBHDIOGALIE(&mut self) -> super::POCJDMMANBM::POCJDMMANBM {
+    pub fn take_EBHDIOGALIE(&mut self) -> super::GridFightGameShopInfo::GridFightGameShopInfo {
         if self.has_EBHDIOGALIE() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::POCJDMMANBM::POCJDMMANBM::new()
+            super::GridFightGameShopInfo::GridFightGameShopInfo::new()
         }
     }
 
-    // .BEEFLEJAOCN KLCPAAHDPJF = 6;
+    // .GridFightLevelInfo KLCPAAHDPJF = 14;
 
-    pub fn KLCPAAHDPJF(&self) -> &super::BEEFLEJAOCN::BEEFLEJAOCN {
+    pub fn KLCPAAHDPJF(&self) -> &super::GridFightLevelInfo::GridFightLevelInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(ref v)) => v,
-            _ => <super::BEEFLEJAOCN::BEEFLEJAOCN as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightLevelInfo::GridFightLevelInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -213,15 +213,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_KLCPAAHDPJF(&mut self, v: super::BEEFLEJAOCN::BEEFLEJAOCN) {
+    pub fn set_KLCPAAHDPJF(&mut self, v: super::GridFightLevelInfo::GridFightLevelInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KLCPAAHDPJF(&mut self) -> &mut super::BEEFLEJAOCN::BEEFLEJAOCN {
+    pub fn mut_KLCPAAHDPJF(&mut self) -> &mut super::GridFightLevelInfo::GridFightLevelInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(super::BEEFLEJAOCN::BEEFLEJAOCN::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(super::GridFightLevelInfo::GridFightLevelInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(ref mut v)) => v,
@@ -230,23 +230,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_KLCPAAHDPJF(&mut self) -> super::BEEFLEJAOCN::BEEFLEJAOCN {
+    pub fn take_KLCPAAHDPJF(&mut self) -> super::GridFightLevelInfo::GridFightLevelInfo {
         if self.has_KLCPAAHDPJF() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::BEEFLEJAOCN::BEEFLEJAOCN::new()
+            super::GridFightLevelInfo::GridFightLevelInfo::new()
         }
     }
 
-    // .DBONCGFHHDN DBAGKJNPDOL = 3;
+    // .GridFightGameOrbInfo DBAGKJNPDOL = 7;
 
-    pub fn DBAGKJNPDOL(&self) -> &super::DBONCGFHHDN::DBONCGFHHDN {
+    pub fn DBAGKJNPDOL(&self) -> &super::GridFightGameOrbInfo::GridFightGameOrbInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(ref v)) => v,
-            _ => <super::DBONCGFHHDN::DBONCGFHHDN as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameOrbInfo::GridFightGameOrbInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -262,15 +262,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_DBAGKJNPDOL(&mut self, v: super::DBONCGFHHDN::DBONCGFHHDN) {
+    pub fn set_DBAGKJNPDOL(&mut self, v: super::GridFightGameOrbInfo::GridFightGameOrbInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DBAGKJNPDOL(&mut self) -> &mut super::DBONCGFHHDN::DBONCGFHHDN {
+    pub fn mut_DBAGKJNPDOL(&mut self) -> &mut super::GridFightGameOrbInfo::GridFightGameOrbInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(super::DBONCGFHHDN::DBONCGFHHDN::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(super::GridFightGameOrbInfo::GridFightGameOrbInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(ref mut v)) => v,
@@ -279,23 +279,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_DBAGKJNPDOL(&mut self) -> super::DBONCGFHHDN::DBONCGFHHDN {
+    pub fn take_DBAGKJNPDOL(&mut self) -> super::GridFightGameOrbInfo::GridFightGameOrbInfo {
         if self.has_DBAGKJNPDOL() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DBONCGFHHDN::DBONCGFHHDN::new()
+            super::GridFightGameOrbInfo::GridFightGameOrbInfo::new()
         }
     }
 
-    // .KGFNICBCMOA LLDBOIANGDN = 12;
+    // .GridFightGameAugmentSync LLDBOIANGDN = 4;
 
-    pub fn LLDBOIANGDN(&self) -> &super::KGFNICBCMOA::KGFNICBCMOA {
+    pub fn LLDBOIANGDN(&self) -> &super::GridFightGameAugmentSync::GridFightGameAugmentSync {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(ref v)) => v,
-            _ => <super::KGFNICBCMOA::KGFNICBCMOA as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameAugmentSync::GridFightGameAugmentSync as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -311,15 +311,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_LLDBOIANGDN(&mut self, v: super::KGFNICBCMOA::KGFNICBCMOA) {
+    pub fn set_LLDBOIANGDN(&mut self, v: super::GridFightGameAugmentSync::GridFightGameAugmentSync) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LLDBOIANGDN(&mut self) -> &mut super::KGFNICBCMOA::KGFNICBCMOA {
+    pub fn mut_LLDBOIANGDN(&mut self) -> &mut super::GridFightGameAugmentSync::GridFightGameAugmentSync {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(super::KGFNICBCMOA::KGFNICBCMOA::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(super::GridFightGameAugmentSync::GridFightGameAugmentSync::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(ref mut v)) => v,
@@ -328,23 +328,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_LLDBOIANGDN(&mut self) -> super::KGFNICBCMOA::KGFNICBCMOA {
+    pub fn take_LLDBOIANGDN(&mut self) -> super::GridFightGameAugmentSync::GridFightGameAugmentSync {
         if self.has_LLDBOIANGDN() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KGFNICBCMOA::KGFNICBCMOA::new()
+            super::GridFightGameAugmentSync::GridFightGameAugmentSync::new()
         }
     }
 
-    // .FFOGFOBHDEK OAHOAPCIDMK = 14;
+    // .GridFightGameTraitInfo OAHOAPCIDMK = 10;
 
-    pub fn OAHOAPCIDMK(&self) -> &super::FFOGFOBHDEK::FFOGFOBHDEK {
+    pub fn OAHOAPCIDMK(&self) -> &super::GridFightGameTraitInfo::GridFightGameTraitInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(ref v)) => v,
-            _ => <super::FFOGFOBHDEK::FFOGFOBHDEK as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameTraitInfo::GridFightGameTraitInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -360,15 +360,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_OAHOAPCIDMK(&mut self, v: super::FFOGFOBHDEK::FFOGFOBHDEK) {
+    pub fn set_OAHOAPCIDMK(&mut self, v: super::GridFightGameTraitInfo::GridFightGameTraitInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_OAHOAPCIDMK(&mut self) -> &mut super::FFOGFOBHDEK::FFOGFOBHDEK {
+    pub fn mut_OAHOAPCIDMK(&mut self) -> &mut super::GridFightGameTraitInfo::GridFightGameTraitInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(super::FFOGFOBHDEK::FFOGFOBHDEK::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(super::GridFightGameTraitInfo::GridFightGameTraitInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(ref mut v)) => v,
@@ -377,23 +377,23 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_OAHOAPCIDMK(&mut self) -> super::FFOGFOBHDEK::FFOGFOBHDEK {
+    pub fn take_OAHOAPCIDMK(&mut self) -> super::GridFightGameTraitInfo::GridFightGameTraitInfo {
         if self.has_OAHOAPCIDMK() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FFOGFOBHDEK::FFOGFOBHDEK::new()
+            super::GridFightGameTraitInfo::GridFightGameTraitInfo::new()
         }
     }
 
-    // .HKFECLCHBFJ EJIPINIKNCK = 2;
+    // .GridFightGameTeamInfo EJIPINIKNCK = 5;
 
-    pub fn EJIPINIKNCK(&self) -> &super::HKFECLCHBFJ::HKFECLCHBFJ {
+    pub fn EJIPINIKNCK(&self) -> &super::GridFightGameTeamInfo::GridFightGameTeamInfo {
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(ref v)) => v,
-            _ => <super::HKFECLCHBFJ::HKFECLCHBFJ as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightGameTeamInfo::GridFightGameTeamInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -409,15 +409,15 @@ impl GridFightGameInfo {
     }
 
     // Param is passed by value, moved
-    pub fn set_EJIPINIKNCK(&mut self, v: super::HKFECLCHBFJ::HKFECLCHBFJ) {
+    pub fn set_EJIPINIKNCK(&mut self, v: super::GridFightGameTeamInfo::GridFightGameTeamInfo) {
         self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EJIPINIKNCK(&mut self) -> &mut super::HKFECLCHBFJ::HKFECLCHBFJ {
+    pub fn mut_EJIPINIKNCK(&mut self) -> &mut super::GridFightGameTeamInfo::GridFightGameTeamInfo {
         if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(_)) = self.LEOIAOFBBFA {
         } else {
-            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(super::HKFECLCHBFJ::HKFECLCHBFJ::new()));
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(super::GridFightGameTeamInfo::GridFightGameTeamInfo::new()));
         }
         match self.LEOIAOFBBFA {
             ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(ref mut v)) => v,
@@ -426,18 +426,18 @@ impl GridFightGameInfo {
     }
 
     // Take field
-    pub fn take_EJIPINIKNCK(&mut self) -> super::HKFECLCHBFJ::HKFECLCHBFJ {
+    pub fn take_EJIPINIKNCK(&mut self) -> super::GridFightGameTeamInfo::GridFightGameTeamInfo {
         if self.has_EJIPINIKNCK() {
             match self.LEOIAOFBBFA.take() {
                 ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HKFECLCHBFJ::HKFECLCHBFJ::new()
+            super::GridFightGameTeamInfo::GridFightGameTeamInfo::new()
         }
     }
 
-    // .FIIJNPBFJBG KFBIEANENKJ = 5;
+    // .FIIJNPBFJBG KFBIEANENKJ = 1;
 
     pub fn KFBIEANENKJ(&self) -> &super::FIIJNPBFJBG::FIIJNPBFJBG {
         match self.LEOIAOFBBFA {
@@ -486,59 +486,108 @@ impl GridFightGameInfo {
         }
     }
 
+    // .MCNFDKKKABH CKLNMDAMJCB = 8;
+
+    pub fn CKLNMDAMJCB(&self) -> &super::MCNFDKKKABH::MCNFDKKKABH {
+        match self.LEOIAOFBBFA {
+            ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(ref v)) => v,
+            _ => <super::MCNFDKKKABH::MCNFDKKKABH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CKLNMDAMJCB(&mut self) {
+        self.LEOIAOFBBFA = ::std::option::Option::None;
+    }
+
+    pub fn has_CKLNMDAMJCB(&self) -> bool {
+        match self.LEOIAOFBBFA {
+            ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CKLNMDAMJCB(&mut self, v: super::MCNFDKKKABH::MCNFDKKKABH) {
+        self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CKLNMDAMJCB(&mut self) -> &mut super::MCNFDKKKABH::MCNFDKKKABH {
+        if let ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(_)) = self.LEOIAOFBBFA {
+        } else {
+            self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(super::MCNFDKKKABH::MCNFDKKKABH::new()));
+        }
+        match self.LEOIAOFBBFA {
+            ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CKLNMDAMJCB(&mut self) -> super::MCNFDKKKABH::MCNFDKKKABH {
+        if self.has_CKLNMDAMJCB() {
+            match self.LEOIAOFBBFA.take() {
+                ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::MCNFDKKKABH::MCNFDKKKABH::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NIHNGPKHEPC::NIHNGPKHEPC>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameBasicInfo::GridFightGameBasicInfo>(
             "FAOCFBOFCJP",
             GridFightGameInfo::has_FAOCFBOFCJP,
             GridFightGameInfo::FAOCFBOFCJP,
             GridFightGameInfo::mut_FAOCFBOFCJP,
             GridFightGameInfo::set_FAOCFBOFCJP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CONONEALNOF::CONONEALNOF>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameItemsInfo::GridFightGameItemsInfo>(
             "GCKLIONKMJC",
             GridFightGameInfo::has_GCKLIONKMJC,
             GridFightGameInfo::GCKLIONKMJC,
             GridFightGameInfo::mut_GCKLIONKMJC,
             GridFightGameInfo::set_GCKLIONKMJC,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::POCJDMMANBM::POCJDMMANBM>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameShopInfo::GridFightGameShopInfo>(
             "EBHDIOGALIE",
             GridFightGameInfo::has_EBHDIOGALIE,
             GridFightGameInfo::EBHDIOGALIE,
             GridFightGameInfo::mut_EBHDIOGALIE,
             GridFightGameInfo::set_EBHDIOGALIE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BEEFLEJAOCN::BEEFLEJAOCN>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightLevelInfo::GridFightLevelInfo>(
             "KLCPAAHDPJF",
             GridFightGameInfo::has_KLCPAAHDPJF,
             GridFightGameInfo::KLCPAAHDPJF,
             GridFightGameInfo::mut_KLCPAAHDPJF,
             GridFightGameInfo::set_KLCPAAHDPJF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DBONCGFHHDN::DBONCGFHHDN>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameOrbInfo::GridFightGameOrbInfo>(
             "DBAGKJNPDOL",
             GridFightGameInfo::has_DBAGKJNPDOL,
             GridFightGameInfo::DBAGKJNPDOL,
             GridFightGameInfo::mut_DBAGKJNPDOL,
             GridFightGameInfo::set_DBAGKJNPDOL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KGFNICBCMOA::KGFNICBCMOA>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameAugmentSync::GridFightGameAugmentSync>(
             "LLDBOIANGDN",
             GridFightGameInfo::has_LLDBOIANGDN,
             GridFightGameInfo::LLDBOIANGDN,
             GridFightGameInfo::mut_LLDBOIANGDN,
             GridFightGameInfo::set_LLDBOIANGDN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FFOGFOBHDEK::FFOGFOBHDEK>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameTraitInfo::GridFightGameTraitInfo>(
             "OAHOAPCIDMK",
             GridFightGameInfo::has_OAHOAPCIDMK,
             GridFightGameInfo::OAHOAPCIDMK,
             GridFightGameInfo::mut_OAHOAPCIDMK,
             GridFightGameInfo::set_OAHOAPCIDMK,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HKFECLCHBFJ::HKFECLCHBFJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightGameTeamInfo::GridFightGameTeamInfo>(
             "EJIPINIKNCK",
             GridFightGameInfo::has_EJIPINIKNCK,
             GridFightGameInfo::EJIPINIKNCK,
@@ -551,6 +600,13 @@ impl GridFightGameInfo {
             GridFightGameInfo::KFBIEANENKJ,
             GridFightGameInfo::mut_KFBIEANENKJ,
             GridFightGameInfo::set_KFBIEANENKJ,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCNFDKKKABH::MCNFDKKKABH>(
+            "CKLNMDAMJCB",
+            GridFightGameInfo::has_CKLNMDAMJCB,
+            GridFightGameInfo::CKLNMDAMJCB,
+            GridFightGameInfo::mut_CKLNMDAMJCB,
+            GridFightGameInfo::set_CKLNMDAMJCB,
         ));
         oneofs.push(grid_fight_game_info::LEOIAOFBBFA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightGameInfo>(
@@ -571,32 +627,35 @@ impl ::protobuf::Message for GridFightGameInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                122 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(is.read_message()?));
                 },
                 90 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(is.read_message()?));
                 },
-                58 => {
+                106 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(is.read_message()?));
                 },
-                50 => {
+                114 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(is.read_message()?));
                 },
-                26 => {
+                58 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(is.read_message()?));
                 },
-                98 => {
+                34 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(is.read_message()?));
                 },
-                114 => {
+                82 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(is.read_message()?));
                 },
-                18 => {
+                42 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(is.read_message()?));
                 },
-                42 => {
+                10 => {
                     self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::KFBIEANENKJ(is.read_message()?));
+                },
+                66 => {
+                    self.LEOIAOFBBFA = ::std::option::Option::Some(grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -648,6 +707,10 @@ impl ::protobuf::Message for GridFightGameInfo {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -659,31 +722,34 @@ impl ::protobuf::Message for GridFightGameInfo {
         if let ::std::option::Option::Some(ref v) = self.LEOIAOFBBFA {
             match v {
                 &grid_fight_game_info::LEOIAOFBBFA::FAOCFBOFCJP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &grid_fight_game_info::LEOIAOFBBFA::GCKLIONKMJC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &grid_fight_game_info::LEOIAOFBBFA::EBHDIOGALIE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &grid_fight_game_info::LEOIAOFBBFA::KLCPAAHDPJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-                },
-                &grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
-                &grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
-                &grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
+                &grid_fight_game_info::LEOIAOFBBFA::DBAGKJNPDOL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
+                &grid_fight_game_info::LEOIAOFBBFA::LLDBOIANGDN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
+                &grid_fight_game_info::LEOIAOFBBFA::OAHOAPCIDMK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
                 &grid_fight_game_info::LEOIAOFBBFA::EJIPINIKNCK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &grid_fight_game_info::LEOIAOFBBFA::KFBIEANENKJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &grid_fight_game_info::LEOIAOFBBFA::CKLNMDAMJCB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -704,6 +770,7 @@ impl ::protobuf::Message for GridFightGameInfo {
     }
 
     fn clear(&mut self) {
+        self.LEOIAOFBBFA = ::std::option::Option::None;
         self.LEOIAOFBBFA = ::std::option::Option::None;
         self.LEOIAOFBBFA = ::std::option::Option::None;
         self.LEOIAOFBBFA = ::std::option::Option::None;
@@ -750,23 +817,25 @@ pub mod grid_fight_game_info {
     // @@protoc_insertion_point(oneof:GridFightGameInfo.LEOIAOFBBFA)
     pub enum LEOIAOFBBFA {
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.FAOCFBOFCJP)
-        FAOCFBOFCJP(super::super::NIHNGPKHEPC::NIHNGPKHEPC),
+        FAOCFBOFCJP(super::super::GridFightGameBasicInfo::GridFightGameBasicInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.GCKLIONKMJC)
-        GCKLIONKMJC(super::super::CONONEALNOF::CONONEALNOF),
+        GCKLIONKMJC(super::super::GridFightGameItemsInfo::GridFightGameItemsInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.EBHDIOGALIE)
-        EBHDIOGALIE(super::super::POCJDMMANBM::POCJDMMANBM),
+        EBHDIOGALIE(super::super::GridFightGameShopInfo::GridFightGameShopInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.KLCPAAHDPJF)
-        KLCPAAHDPJF(super::super::BEEFLEJAOCN::BEEFLEJAOCN),
+        KLCPAAHDPJF(super::super::GridFightLevelInfo::GridFightLevelInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.DBAGKJNPDOL)
-        DBAGKJNPDOL(super::super::DBONCGFHHDN::DBONCGFHHDN),
+        DBAGKJNPDOL(super::super::GridFightGameOrbInfo::GridFightGameOrbInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.LLDBOIANGDN)
-        LLDBOIANGDN(super::super::KGFNICBCMOA::KGFNICBCMOA),
+        LLDBOIANGDN(super::super::GridFightGameAugmentSync::GridFightGameAugmentSync),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.OAHOAPCIDMK)
-        OAHOAPCIDMK(super::super::FFOGFOBHDEK::FFOGFOBHDEK),
+        OAHOAPCIDMK(super::super::GridFightGameTraitInfo::GridFightGameTraitInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.EJIPINIKNCK)
-        EJIPINIKNCK(super::super::HKFECLCHBFJ::HKFECLCHBFJ),
+        EJIPINIKNCK(super::super::GridFightGameTeamInfo::GridFightGameTeamInfo),
         // @@protoc_insertion_point(oneof_field:GridFightGameInfo.KFBIEANENKJ)
         KFBIEANENKJ(super::super::FIIJNPBFJBG::FIIJNPBFJBG),
+        // @@protoc_insertion_point(oneof_field:GridFightGameInfo.CKLNMDAMJCB)
+        CKLNMDAMJCB(super::super::MCNFDKKKABH::MCNFDKKKABH),
     }
 
     impl ::protobuf::Oneof for LEOIAOFBBFA {
@@ -787,21 +856,25 @@ pub mod grid_fight_game_info {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GridFightGameInfo.proto\x1a\x11BEEFLEJAOCN.proto\x1a\x11CONONEALNO\
-    F.proto\x1a\x11DBONCGFHHDN.proto\x1a\x11FFOGFOBHDEK.proto\x1a\x11FIIJNPB\
-    FJBG.proto\x1a\x11HKFECLCHBFJ.proto\x1a\x11KGFNICBCMOA.proto\x1a\x11NIHN\
-    GPKHEPC.proto\x1a\x11POCJDMMANBM.proto\"\xe4\x03\n\x11GridFightGameInfo\
-    \x120\n\x0bFAOCFBOFCJP\x18\x01\x20\x01(\x0b2\x0c.NIHNGPKHEPCH\0R\x0bFAOC\
-    FBOFCJP\x120\n\x0bGCKLIONKMJC\x18\x0b\x20\x01(\x0b2\x0c.CONONEALNOFH\0R\
-    \x0bGCKLIONKMJC\x120\n\x0bEBHDIOGALIE\x18\x07\x20\x01(\x0b2\x0c.POCJDMMA\
-    NBMH\0R\x0bEBHDIOGALIE\x120\n\x0bKLCPAAHDPJF\x18\x06\x20\x01(\x0b2\x0c.B\
-    EEFLEJAOCNH\0R\x0bKLCPAAHDPJF\x120\n\x0bDBAGKJNPDOL\x18\x03\x20\x01(\x0b\
-    2\x0c.DBONCGFHHDNH\0R\x0bDBAGKJNPDOL\x120\n\x0bLLDBOIANGDN\x18\x0c\x20\
-    \x01(\x0b2\x0c.KGFNICBCMOAH\0R\x0bLLDBOIANGDN\x120\n\x0bOAHOAPCIDMK\x18\
-    \x0e\x20\x01(\x0b2\x0c.FFOGFOBHDEKH\0R\x0bOAHOAPCIDMK\x120\n\x0bEJIPINIK\
-    NCK\x18\x02\x20\x01(\x0b2\x0c.HKFECLCHBFJH\0R\x0bEJIPINIKNCK\x120\n\x0bK\
-    FBIEANENKJ\x18\x05\x20\x01(\x0b2\x0c.FIIJNPBFJBGH\0R\x0bKFBIEANENKJB\r\n\
-    \x0bLEOIAOFBBFAb\x06proto3\
+    \n\x17GridFightGameInfo.proto\x1a\x11FIIJNPBFJBG.proto\x1a\x1eGridFightG\
+    ameAugmentSync.proto\x1a\x1cGridFightGameBasicInfo.proto\x1a\x1cGridFigh\
+    tGameItemsInfo.proto\x1a\x1aGridFightGameOrbInfo.proto\x1a\x1bGridFightG\
+    ameShopInfo.proto\x1a\x1bGridFightGameTeamInfo.proto\x1a\x1cGridFightGam\
+    eTraitInfo.proto\x1a\x18GridFightLevelInfo.proto\x1a\x11MCNFDKKKABH.prot\
+    o\"\xe8\x04\n\x11GridFightGameInfo\x12;\n\x0bFAOCFBOFCJP\x18\x0f\x20\x01\
+    (\x0b2\x17.GridFightGameBasicInfoH\0R\x0bFAOCFBOFCJP\x12;\n\x0bGCKLIONKM\
+    JC\x18\x0b\x20\x01(\x0b2\x17.GridFightGameItemsInfoH\0R\x0bGCKLIONKMJC\
+    \x12:\n\x0bEBHDIOGALIE\x18\r\x20\x01(\x0b2\x16.GridFightGameShopInfoH\0R\
+    \x0bEBHDIOGALIE\x127\n\x0bKLCPAAHDPJF\x18\x0e\x20\x01(\x0b2\x13.GridFigh\
+    tLevelInfoH\0R\x0bKLCPAAHDPJF\x129\n\x0bDBAGKJNPDOL\x18\x07\x20\x01(\x0b\
+    2\x15.GridFightGameOrbInfoH\0R\x0bDBAGKJNPDOL\x12=\n\x0bLLDBOIANGDN\x18\
+    \x04\x20\x01(\x0b2\x19.GridFightGameAugmentSyncH\0R\x0bLLDBOIANGDN\x12;\
+    \n\x0bOAHOAPCIDMK\x18\n\x20\x01(\x0b2\x17.GridFightGameTraitInfoH\0R\x0b\
+    OAHOAPCIDMK\x12:\n\x0bEJIPINIKNCK\x18\x05\x20\x01(\x0b2\x16.GridFightGam\
+    eTeamInfoH\0R\x0bEJIPINIKNCK\x120\n\x0bKFBIEANENKJ\x18\x01\x20\x01(\x0b2\
+    \x0c.FIIJNPBFJBGH\0R\x0bKFBIEANENKJ\x120\n\x0bCKLNMDAMJCB\x18\x08\x20\
+    \x01(\x0b2\x0c.MCNFDKKKABHH\0R\x0bCKLNMDAMJCBB\r\n\x0bLEOIAOFBBFAb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -818,16 +891,17 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(9);
-            deps.push(super::BEEFLEJAOCN::file_descriptor().clone());
-            deps.push(super::CONONEALNOF::file_descriptor().clone());
-            deps.push(super::DBONCGFHHDN::file_descriptor().clone());
-            deps.push(super::FFOGFOBHDEK::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(10);
             deps.push(super::FIIJNPBFJBG::file_descriptor().clone());
-            deps.push(super::HKFECLCHBFJ::file_descriptor().clone());
-            deps.push(super::KGFNICBCMOA::file_descriptor().clone());
-            deps.push(super::NIHNGPKHEPC::file_descriptor().clone());
-            deps.push(super::POCJDMMANBM::file_descriptor().clone());
+            deps.push(super::GridFightGameAugmentSync::file_descriptor().clone());
+            deps.push(super::GridFightGameBasicInfo::file_descriptor().clone());
+            deps.push(super::GridFightGameItemsInfo::file_descriptor().clone());
+            deps.push(super::GridFightGameOrbInfo::file_descriptor().clone());
+            deps.push(super::GridFightGameShopInfo::file_descriptor().clone());
+            deps.push(super::GridFightGameTeamInfo::file_descriptor().clone());
+            deps.push(super::GridFightGameTraitInfo::file_descriptor().clone());
+            deps.push(super::GridFightLevelInfo::file_descriptor().clone());
+            deps.push(super::MCNFDKKKABH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightGameInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

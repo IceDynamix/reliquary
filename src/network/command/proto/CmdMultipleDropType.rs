@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMultipleDropType {
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_NLCDGIPGFDJ)
     ACIMFGFNPDF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_FEKBMNHPIHH)
-    ACIMFGFNPDF_FEKBMNHPIHH = 4636,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_EKEMGKOPHFP)
-    ACIMFGFNPDF_EKEMGKOPHFP = 4627,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_KBJBDAOPHGG)
-    ACIMFGFNPDF_KBJBDAOPHGG = 4613,
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_NPKMBAOAPLD)
-    ACIMFGFNPDF_NPKMBAOAPLD = 4673,
+    ACIMFGFNPDF_NPKMBAOAPLD = 4625,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_FEKBMNHPIHH)
+    ACIMFGFNPDF_FEKBMNHPIHH = 4688,
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_DOICNEIODDH)
-    ACIMFGFNPDF_DOICNEIODDH = 4603,
+    ACIMFGFNPDF_DOICNEIODDH = 4678,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_KBJBDAOPHGG)
+    ACIMFGFNPDF_KBJBDAOPHGG = 4681,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_EKEMGKOPHFP)
+    ACIMFGFNPDF_EKEMGKOPHFP = 4658,
     // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_IEKEHEGBEKF)
-    ACIMFGFNPDF_IEKEHEGBEKF = 4680,
+    ACIMFGFNPDF_IEKEHEGBEKF = 4693,
 }
 
 impl ::protobuf::Enum for CmdMultipleDropType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdMultipleDropType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultipleDropType> {
         match value {
             0 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ),
-            4636 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
-            4627 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
-            4613 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
-            4673 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD),
-            4603 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH),
-            4680 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF),
+            4625 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD),
+            4688 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
+            4678 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH),
+            4681 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
+            4658 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
+            4693 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF),
             _ => ::std::option::Option::None
         }
     }
@@ -66,11 +66,11 @@ impl ::protobuf::Enum for CmdMultipleDropType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMultipleDropType> {
         match str {
             "ACIMFGFNPDF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ),
-            "ACIMFGFNPDF_FEKBMNHPIHH" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
-            "ACIMFGFNPDF_EKEMGKOPHFP" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
-            "ACIMFGFNPDF_KBJBDAOPHGG" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
             "ACIMFGFNPDF_NPKMBAOAPLD" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD),
+            "ACIMFGFNPDF_FEKBMNHPIHH" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
             "ACIMFGFNPDF_DOICNEIODDH" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH),
+            "ACIMFGFNPDF_KBJBDAOPHGG" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
+            "ACIMFGFNPDF_EKEMGKOPHFP" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
             "ACIMFGFNPDF_IEKEHEGBEKF" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF),
             _ => ::std::option::Option::None
         }
@@ -78,11 +78,11 @@ impl ::protobuf::Enum for CmdMultipleDropType {
 
     const VALUES: &'static [CmdMultipleDropType] = &[
         CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ,
-        CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH,
-        CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP,
-        CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG,
         CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD,
+        CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH,
         CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH,
+        CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG,
+        CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP,
         CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF,
     ];
 }
@@ -96,11 +96,11 @@ impl ::protobuf::EnumFull for CmdMultipleDropType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ => 0,
-            CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH => 1,
-            CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP => 2,
-            CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG => 3,
-            CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD => 4,
-            CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH => 5,
+            CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD => 1,
+            CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH => 2,
+            CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH => 3,
+            CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG => 4,
+            CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP => 5,
             CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF => 6,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -121,11 +121,11 @@ impl CmdMultipleDropType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdMultipleDropType.proto*\xe6\x01\n\x13CmdMultipleDropType\x12\
-    \x1b\n\x17ACIMFGFNPDF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ACIMFGFNPDF_FEKBMNH\
-    PIHH\x10\x9c$\x12\x1c\n\x17ACIMFGFNPDF_EKEMGKOPHFP\x10\x93$\x12\x1c\n\
-    \x17ACIMFGFNPDF_KBJBDAOPHGG\x10\x85$\x12\x1c\n\x17ACIMFGFNPDF_NPKMBAOAPL\
-    D\x10\xc1$\x12\x1c\n\x17ACIMFGFNPDF_DOICNEIODDH\x10\xfb#\x12\x1c\n\x17AC\
-    IMFGFNPDF_IEKEHEGBEKF\x10\xc8$b\x06proto3\
+    \x1b\n\x17ACIMFGFNPDF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ACIMFGFNPDF_NPKMBAO\
+    APLD\x10\x91$\x12\x1c\n\x17ACIMFGFNPDF_FEKBMNHPIHH\x10\xd0$\x12\x1c\n\
+    \x17ACIMFGFNPDF_DOICNEIODDH\x10\xc6$\x12\x1c\n\x17ACIMFGFNPDF_KBJBDAOPHG\
+    G\x10\xc9$\x12\x1c\n\x17ACIMFGFNPDF_EKEMGKOPHFP\x10\xb2$\x12\x1c\n\x17AC\
+    IMFGFNPDF_IEKEHEGBEKF\x10\xd5$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

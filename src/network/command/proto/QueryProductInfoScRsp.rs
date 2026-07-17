@@ -34,10 +34,10 @@ pub struct QueryProductInfoScRsp {
     pub BFFHEKCGLMA: u32,
     // @@protoc_insertion_point(field:QueryProductInfoScRsp.BEBFNDIGKFK)
     pub BEBFNDIGKFK: u32,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:QueryProductInfoScRsp.month_card_out_date_time)
     pub month_card_out_date_time: u64,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:QueryProductInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl QueryProductInfoScRsp {
             |m: &mut QueryProductInfoScRsp| { &mut m.BEBFNDIGKFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &QueryProductInfoScRsp| { &m.retcode },
-            |m: &mut QueryProductInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "month_card_out_date_time",
             |m: &QueryProductInfoScRsp| { &m.month_card_out_date_time },
             |m: &mut QueryProductInfoScRsp| { &mut m.month_card_out_date_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &QueryProductInfoScRsp| { &m.retcode },
+            |m: &mut QueryProductInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QueryProductInfoScRsp>(
             "QueryProductInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     self.product_list.push(is.read_message()?);
                 },
-                48 => {
+                40 => {
                     self.BFFHEKCGLMA = is.read_uint32()?;
                 },
-                80 => {
+                48 => {
                     self.BEBFNDIGKFK = is.read_uint32()?;
                 },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                72 => {
+                56 => {
                     self.month_card_out_date_time = is.read_uint64()?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -132,16 +132,16 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.BFFHEKCGLMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BFFHEKCGLMA);
+            my_size += ::protobuf::rt::uint32_size(5, self.BFFHEKCGLMA);
         }
         if self.BEBFNDIGKFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BEBFNDIGKFK);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.BEBFNDIGKFK);
         }
         if self.month_card_out_date_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.month_card_out_date_time);
+            my_size += ::protobuf::rt::uint64_size(7, self.month_card_out_date_time);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.product_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.BFFHEKCGLMA != 0 {
-            os.write_uint32(6, self.BFFHEKCGLMA)?;
+            os.write_uint32(5, self.BFFHEKCGLMA)?;
         }
         if self.BEBFNDIGKFK != 0 {
-            os.write_uint32(10, self.BEBFNDIGKFK)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(6, self.BEBFNDIGKFK)?;
         }
         if self.month_card_out_date_time != 0 {
-            os.write_uint64(9, self.month_card_out_date_time)?;
+            os.write_uint64(7, self.month_card_out_date_time)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
         self.product_list.clear();
         self.BFFHEKCGLMA = 0;
         self.BEBFNDIGKFK = 0;
-        self.retcode = 0;
         self.month_card_out_date_time = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
@@ -194,8 +194,8 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
             product_list: ::std::vec::Vec::new(),
             BFFHEKCGLMA: 0,
             BEBFNDIGKFK: 0,
-            retcode: 0,
             month_card_out_date_time: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for QueryProductInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bQueryProductInfoScRsp.proto\x1a\rProduct.proto\"\xda\x01\n\x15Quer\
-    yProductInfoScRsp\x12+\n\x0cproduct_list\x18\x03\x20\x03(\x0b2\x08.Produ\
-    ctR\x0bproductList\x12\x20\n\x0bBFFHEKCGLMA\x18\x06\x20\x01(\rR\x0bBFFHE\
-    KCGLMA\x12\x20\n\x0bBEBFNDIGKFK\x18\n\x20\x01(\rR\x0bBEBFNDIGKFK\x12\x18\
-    \n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x126\n\x18month_card_out_date\
-    _time\x18\t\x20\x01(\x04R\x14monthCardOutDateTimeb\x06proto3\
+    yProductInfoScRsp\x12+\n\x0cproduct_list\x18\x04\x20\x03(\x0b2\x08.Produ\
+    ctR\x0bproductList\x12\x20\n\x0bBFFHEKCGLMA\x18\x05\x20\x01(\rR\x0bBFFHE\
+    KCGLMA\x12\x20\n\x0bBEBFNDIGKFK\x18\x06\x20\x01(\rR\x0bBEBFNDIGKFK\x126\
+    \n\x18month_card_out_date_time\x18\x07\x20\x01(\x04R\x14monthCardOutDate\
+    Time\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

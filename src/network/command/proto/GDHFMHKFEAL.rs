@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GDHFMHKFEAL {
     // message fields
-    // @@protoc_insertion_point(field:GDHFMHKFEAL.NMGIABHIJJB)
-    pub NMGIABHIJJB: ::protobuf::MessageField<super::GridFightDropInfo::GridFightDropInfo>,
     // @@protoc_insertion_point(field:GDHFMHKFEAL.FKNNKCKLFMD)
     pub FKNNKCKLFMD: u32,
+    // @@protoc_insertion_point(field:GDHFMHKFEAL.NMGIABHIJJB)
+    pub NMGIABHIJJB: ::protobuf::MessageField<super::GridFightDropInfo::GridFightDropInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GDHFMHKFEAL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GDHFMHKFEAL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightDropInfo::GridFightDropInfo>(
-            "NMGIABHIJJB",
-            |m: &GDHFMHKFEAL| { &m.NMGIABHIJJB },
-            |m: &mut GDHFMHKFEAL| { &mut m.NMGIABHIJJB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FKNNKCKLFMD",
             |m: &GDHFMHKFEAL| { &m.FKNNKCKLFMD },
             |m: &mut GDHFMHKFEAL| { &mut m.FKNNKCKLFMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightDropInfo::GridFightDropInfo>(
+            "NMGIABHIJJB",
+            |m: &GDHFMHKFEAL| { &m.NMGIABHIJJB },
+            |m: &mut GDHFMHKFEAL| { &mut m.NMGIABHIJJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GDHFMHKFEAL>(
             "GDHFMHKFEAL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMGIABHIJJB)?;
-                },
                 48 => {
                     self.FKNNKCKLFMD = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMGIABHIJJB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FKNNKCKLFMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FKNNKCKLFMD);
+        }
         if let Some(v) = self.NMGIABHIJJB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.FKNNKCKLFMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FKNNKCKLFMD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NMGIABHIJJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.FKNNKCKLFMD != 0 {
             os.write_uint32(6, self.FKNNKCKLFMD)?;
+        }
+        if let Some(v) = self.NMGIABHIJJB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GDHFMHKFEAL {
     }
 
     fn clear(&mut self) {
-        self.NMGIABHIJJB.clear();
         self.FKNNKCKLFMD = 0;
+        self.NMGIABHIJJB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GDHFMHKFEAL {
         static instance: GDHFMHKFEAL = GDHFMHKFEAL {
-            NMGIABHIJJB: ::protobuf::MessageField::none(),
             FKNNKCKLFMD: 0,
+            NMGIABHIJJB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GDHFMHKFEAL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GDHFMHKFEAL.proto\x1a\x17GridFightDropInfo.proto\"e\n\x0bGDHFMHKFE\
-    AL\x124\n\x0bNMGIABHIJJB\x18\x02\x20\x01(\x0b2\x12.GridFightDropInfoR\
-    \x0bNMGIABHIJJB\x12\x20\n\x0bFKNNKCKLFMD\x18\x06\x20\x01(\rR\x0bFKNNKCKL\
-    FMDb\x06proto3\
+    AL\x12\x20\n\x0bFKNNKCKLFMD\x18\x06\x20\x01(\rR\x0bFKNNKCKLFMD\x124\n\
+    \x0bNMGIABHIJJB\x18\x0b\x20\x01(\x0b2\x12.GridFightDropInfoR\x0bNMGIABHI\
+    JJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

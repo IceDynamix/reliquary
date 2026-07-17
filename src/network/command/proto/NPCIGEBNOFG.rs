@@ -30,8 +30,8 @@ pub struct NPCIGEBNOFG {
     // message fields
     // @@protoc_insertion_point(field:NPCIGEBNOFG.num)
     pub num: u32,
-    // @@protoc_insertion_point(field:NPCIGEBNOFG.BEBEEMKOBNN)
-    pub BEBEEMKOBNN: u32,
+    // @@protoc_insertion_point(field:NPCIGEBNOFG.display_type)
+    pub display_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NPCIGEBNOFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl NPCIGEBNOFG {
             |m: &mut NPCIGEBNOFG| { &mut m.num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BEBEEMKOBNN",
-            |m: &NPCIGEBNOFG| { &m.BEBEEMKOBNN },
-            |m: &mut NPCIGEBNOFG| { &mut m.BEBEEMKOBNN },
+            "display_type",
+            |m: &NPCIGEBNOFG| { &m.display_type },
+            |m: &mut NPCIGEBNOFG| { &mut m.display_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NPCIGEBNOFG>(
             "NPCIGEBNOFG",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NPCIGEBNOFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.num = is.read_uint32()?;
                 },
-                112 => {
-                    self.BEBEEMKOBNN = is.read_uint32()?;
+                80 => {
+                    self.display_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NPCIGEBNOFG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.num);
+            my_size += ::protobuf::rt::uint32_size(8, self.num);
         }
-        if self.BEBEEMKOBNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BEBEEMKOBNN);
+        if self.display_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.display_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NPCIGEBNOFG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(9, self.num)?;
+            os.write_uint32(8, self.num)?;
         }
-        if self.BEBEEMKOBNN != 0 {
-            os.write_uint32(14, self.BEBEEMKOBNN)?;
+        if self.display_type != 0 {
+            os.write_uint32(10, self.display_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for NPCIGEBNOFG {
 
     fn clear(&mut self) {
         self.num = 0;
-        self.BEBEEMKOBNN = 0;
+        self.display_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NPCIGEBNOFG {
         static instance: NPCIGEBNOFG = NPCIGEBNOFG {
             num: 0,
-            BEBEEMKOBNN: 0,
+            display_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NPCIGEBNOFG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NPCIGEBNOFG.proto\"A\n\x0bNPCIGEBNOFG\x12\x10\n\x03num\x18\t\x20\
-    \x01(\rR\x03num\x12\x20\n\x0bBEBEEMKOBNN\x18\x0e\x20\x01(\rR\x0bBEBEEMKO\
-    BNNb\x06proto3\
+    \n\x11NPCIGEBNOFG.proto\"B\n\x0bNPCIGEBNOFG\x12\x10\n\x03num\x18\x08\x20\
+    \x01(\rR\x03num\x12!\n\x0cdisplay_type\x18\n\x20\x01(\rR\x0bdisplayTypeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

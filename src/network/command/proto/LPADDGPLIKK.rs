@@ -30,16 +30,16 @@ pub struct LPADDGPLIKK {
     // message fields
     // @@protoc_insertion_point(field:LPADDGPLIKK.NMMCOBBKKHA)
     pub NMMCOBBKKHA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LPADDGPLIKK.BIMFEAHDMIK)
-    pub BIMFEAHDMIK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LPADDGPLIKK.LONFKFCFDND)
-    pub LONFKFCFDND: ::std::vec::Vec<super::BDJLHJDPEEK::BDJLHJDPEEK>,
-    // @@protoc_insertion_point(field:LPADDGPLIKK.PJOAKLHHCNI)
-    pub PJOAKLHHCNI: u32,
     // @@protoc_insertion_point(field:LPADDGPLIKK.AMOABLICEDP)
     pub AMOABLICEDP: u32,
     // @@protoc_insertion_point(field:LPADDGPLIKK.MKJDMNAEAED)
     pub MKJDMNAEAED: u32,
+    // @@protoc_insertion_point(field:LPADDGPLIKK.PJOAKLHHCNI)
+    pub PJOAKLHHCNI: u32,
+    // @@protoc_insertion_point(field:LPADDGPLIKK.BIMFEAHDMIK)
+    pub BIMFEAHDMIK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LPADDGPLIKK.LONFKFCFDND)
+    pub LONFKFCFDND: ::std::vec::Vec<super::BDJLHJDPEEK::BDJLHJDPEEK>,
     // special fields
     // @@protoc_insertion_point(special_field:LPADDGPLIKK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,21 +64,6 @@ impl LPADDGPLIKK {
             |m: &LPADDGPLIKK| { &m.NMMCOBBKKHA },
             |m: &mut LPADDGPLIKK| { &mut m.NMMCOBBKKHA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIMFEAHDMIK",
-            |m: &LPADDGPLIKK| { &m.BIMFEAHDMIK },
-            |m: &mut LPADDGPLIKK| { &mut m.BIMFEAHDMIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LONFKFCFDND",
-            |m: &LPADDGPLIKK| { &m.LONFKFCFDND },
-            |m: &mut LPADDGPLIKK| { &mut m.LONFKFCFDND },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJOAKLHHCNI",
-            |m: &LPADDGPLIKK| { &m.PJOAKLHHCNI },
-            |m: &mut LPADDGPLIKK| { &mut m.PJOAKLHHCNI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMOABLICEDP",
             |m: &LPADDGPLIKK| { &m.AMOABLICEDP },
@@ -88,6 +73,21 @@ impl LPADDGPLIKK {
             "MKJDMNAEAED",
             |m: &LPADDGPLIKK| { &m.MKJDMNAEAED },
             |m: &mut LPADDGPLIKK| { &mut m.MKJDMNAEAED },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PJOAKLHHCNI",
+            |m: &LPADDGPLIKK| { &m.PJOAKLHHCNI },
+            |m: &mut LPADDGPLIKK| { &mut m.PJOAKLHHCNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BIMFEAHDMIK",
+            |m: &LPADDGPLIKK| { &m.BIMFEAHDMIK },
+            |m: &mut LPADDGPLIKK| { &mut m.BIMFEAHDMIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LONFKFCFDND",
+            |m: &LPADDGPLIKK| { &m.LONFKFCFDND },
+            |m: &mut LPADDGPLIKK| { &mut m.LONFKFCFDND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPADDGPLIKK>(
             "LPADDGPLIKK",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for LPADDGPLIKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.NMMCOBBKKHA)?;
                 },
-                32 => {
+                8 => {
                     self.NMMCOBBKKHA.push(is.read_uint32()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BIMFEAHDMIK)?;
-                },
-                120 => {
-                    self.BIMFEAHDMIK.push(is.read_uint32()?);
-                },
-                98 => {
-                    self.LONFKFCFDND.push(is.read_message()?);
-                },
-                24 => {
-                    self.PJOAKLHHCNI = is.read_uint32()?;
-                },
-                88 => {
+                32 => {
                     self.AMOABLICEDP = is.read_uint32()?;
                 },
-                72 => {
+                40 => {
                     self.MKJDMNAEAED = is.read_uint32()?;
+                },
+                64 => {
+                    self.PJOAKLHHCNI = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BIMFEAHDMIK)?;
+                },
+                72 => {
+                    self.BIMFEAHDMIK.push(is.read_uint32()?);
+                },
+                114 => {
+                    self.LONFKFCFDND.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,41 +143,41 @@ impl ::protobuf::Message for LPADDGPLIKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NMMCOBBKKHA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.BIMFEAHDMIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NMMCOBBKKHA);
+        if self.AMOABLICEDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AMOABLICEDP);
+        }
+        if self.MKJDMNAEAED != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MKJDMNAEAED);
+        }
+        if self.PJOAKLHHCNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PJOAKLHHCNI);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.BIMFEAHDMIK);
         for value in &self.LONFKFCFDND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PJOAKLHHCNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PJOAKLHHCNI);
-        }
-        if self.AMOABLICEDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AMOABLICEDP);
-        }
-        if self.MKJDMNAEAED != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MKJDMNAEAED);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.NMMCOBBKKHA)?;
-        os.write_repeated_packed_uint32(15, &self.BIMFEAHDMIK)?;
-        for v in &self.LONFKFCFDND {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if self.PJOAKLHHCNI != 0 {
-            os.write_uint32(3, self.PJOAKLHHCNI)?;
-        }
+        os.write_repeated_packed_uint32(1, &self.NMMCOBBKKHA)?;
         if self.AMOABLICEDP != 0 {
-            os.write_uint32(11, self.AMOABLICEDP)?;
+            os.write_uint32(4, self.AMOABLICEDP)?;
         }
         if self.MKJDMNAEAED != 0 {
-            os.write_uint32(9, self.MKJDMNAEAED)?;
+            os.write_uint32(5, self.MKJDMNAEAED)?;
         }
+        if self.PJOAKLHHCNI != 0 {
+            os.write_uint32(8, self.PJOAKLHHCNI)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.BIMFEAHDMIK)?;
+        for v in &self.LONFKFCFDND {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,22 +196,22 @@ impl ::protobuf::Message for LPADDGPLIKK {
 
     fn clear(&mut self) {
         self.NMMCOBBKKHA.clear();
-        self.BIMFEAHDMIK.clear();
-        self.LONFKFCFDND.clear();
-        self.PJOAKLHHCNI = 0;
         self.AMOABLICEDP = 0;
         self.MKJDMNAEAED = 0;
+        self.PJOAKLHHCNI = 0;
+        self.BIMFEAHDMIK.clear();
+        self.LONFKFCFDND.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPADDGPLIKK {
         static instance: LPADDGPLIKK = LPADDGPLIKK {
             NMMCOBBKKHA: ::std::vec::Vec::new(),
-            BIMFEAHDMIK: ::std::vec::Vec::new(),
-            LONFKFCFDND: ::std::vec::Vec::new(),
-            PJOAKLHHCNI: 0,
             AMOABLICEDP: 0,
             MKJDMNAEAED: 0,
+            PJOAKLHHCNI: 0,
+            BIMFEAHDMIK: ::std::vec::Vec::new(),
+            LONFKFCFDND: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for LPADDGPLIKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPADDGPLIKK.proto\x1a\x11BDJLHJDPEEK.proto\"\xe7\x01\n\x0bLPADDGPL\
-    IKK\x12\x20\n\x0bNMMCOBBKKHA\x18\x04\x20\x03(\rR\x0bNMMCOBBKKHA\x12\x20\
-    \n\x0bBIMFEAHDMIK\x18\x0f\x20\x03(\rR\x0bBIMFEAHDMIK\x12.\n\x0bLONFKFCFD\
-    ND\x18\x0c\x20\x03(\x0b2\x0c.BDJLHJDPEEKR\x0bLONFKFCFDND\x12\x20\n\x0bPJ\
-    OAKLHHCNI\x18\x03\x20\x01(\rR\x0bPJOAKLHHCNI\x12\x20\n\x0bAMOABLICEDP\
-    \x18\x0b\x20\x01(\rR\x0bAMOABLICEDP\x12\x20\n\x0bMKJDMNAEAED\x18\t\x20\
-    \x01(\rR\x0bMKJDMNAEAEDb\x06proto3\
+    IKK\x12\x20\n\x0bNMMCOBBKKHA\x18\x01\x20\x03(\rR\x0bNMMCOBBKKHA\x12\x20\
+    \n\x0bAMOABLICEDP\x18\x04\x20\x01(\rR\x0bAMOABLICEDP\x12\x20\n\x0bMKJDMN\
+    AEAED\x18\x05\x20\x01(\rR\x0bMKJDMNAEAED\x12\x20\n\x0bPJOAKLHHCNI\x18\
+    \x08\x20\x01(\rR\x0bPJOAKLHHCNI\x12\x20\n\x0bBIMFEAHDMIK\x18\t\x20\x03(\
+    \rR\x0bBIMFEAHDMIK\x12.\n\x0bLONFKFCFDND\x18\x0e\x20\x03(\x0b2\x0c.BDJLH\
+    JDPEEKR\x0bLONFKFCFDNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

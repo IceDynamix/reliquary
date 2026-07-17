@@ -30,8 +30,8 @@ pub struct KHADHDLCNOI {
     // message fields
     // @@protoc_insertion_point(field:KHADHDLCNOI.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:KHADHDLCNOI.KDHCICFNAOC)
-    pub KDHCICFNAOC: bool,
+    // @@protoc_insertion_point(field:KHADHDLCNOI.is_pause)
+    pub is_pause: bool,
     // special fields
     // @@protoc_insertion_point(special_field:KHADHDLCNOI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl KHADHDLCNOI {
             |m: &mut KHADHDLCNOI| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDHCICFNAOC",
-            |m: &KHADHDLCNOI| { &m.KDHCICFNAOC },
-            |m: &mut KHADHDLCNOI| { &mut m.KDHCICFNAOC },
+            "is_pause",
+            |m: &KHADHDLCNOI| { &m.is_pause },
+            |m: &mut KHADHDLCNOI| { &mut m.is_pause },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KHADHDLCNOI>(
             "KHADHDLCNOI",
@@ -83,7 +83,7 @@ impl ::protobuf::Message for KHADHDLCNOI {
                     self.id = is.read_uint32()?;
                 },
                 16 => {
-                    self.KDHCICFNAOC = is.read_bool()?;
+                    self.is_pause = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for KHADHDLCNOI {
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
-        if self.KDHCICFNAOC != false {
+        if self.is_pause != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,8 +112,8 @@ impl ::protobuf::Message for KHADHDLCNOI {
         if self.id != 0 {
             os.write_uint32(1, self.id)?;
         }
-        if self.KDHCICFNAOC != false {
-            os.write_bool(2, self.KDHCICFNAOC)?;
+        if self.is_pause != false {
+            os.write_bool(2, self.is_pause)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for KHADHDLCNOI {
 
     fn clear(&mut self) {
         self.id = 0;
-        self.KDHCICFNAOC = false;
+        self.is_pause = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KHADHDLCNOI {
         static instance: KHADHDLCNOI = KHADHDLCNOI {
             id: 0,
-            KDHCICFNAOC: false,
+            is_pause: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KHADHDLCNOI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KHADHDLCNOI.proto\"?\n\x0bKHADHDLCNOI\x12\x0e\n\x02id\x18\x01\x20\
-    \x01(\rR\x02id\x12\x20\n\x0bKDHCICFNAOC\x18\x02\x20\x01(\x08R\x0bKDHCICF\
-    NAOCb\x06proto3\
+    \n\x11KHADHDLCNOI.proto\"8\n\x0bKHADHDLCNOI\x12\x0e\n\x02id\x18\x01\x20\
+    \x01(\rR\x02id\x12\x19\n\x08is_pause\x18\x02\x20\x01(\x08R\x07isPauseb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

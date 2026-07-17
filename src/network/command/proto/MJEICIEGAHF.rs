@@ -79,13 +79,13 @@ impl ::protobuf::Message for MJEICIEGAHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.OOEOCGLLHFO)?;
                 },
-                32 => {
+                80 => {
                     self.OOEOCGLLHFO.push(is.read_uint32()?);
                 },
-                112 => {
+                96 => {
                     self.JMNJLFACCLM = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for MJEICIEGAHF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.OOEOCGLLHFO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OOEOCGLLHFO);
         if self.JMNJLFACCLM != ::protobuf::EnumOrUnknown::new(super::JDCAPBNPOOK::JDCAPBNPOOK::JDCAPBNPOOK_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(14, self.JMNJLFACCLM.value());
+            my_size += ::protobuf::rt::int32_size(12, self.JMNJLFACCLM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for MJEICIEGAHF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.OOEOCGLLHFO)?;
+        os.write_repeated_packed_uint32(10, &self.OOEOCGLLHFO)?;
         if self.JMNJLFACCLM != ::protobuf::EnumOrUnknown::new(super::JDCAPBNPOOK::JDCAPBNPOOK::JDCAPBNPOOK_NLCDGIPGFDJ) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.JMNJLFACCLM))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.JMNJLFACCLM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for MJEICIEGAHF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MJEICIEGAHF.proto\x1a\x11JDCAPBNPOOK.proto\"_\n\x0bMJEICIEGAHF\x12\
-    \x20\n\x0bOOEOCGLLHFO\x18\x04\x20\x03(\rR\x0bOOEOCGLLHFO\x12.\n\x0bJMNJL\
-    FACCLM\x18\x0e\x20\x01(\x0e2\x0c.JDCAPBNPOOKR\x0bJMNJLFACCLMb\x06proto3\
+    \x20\n\x0bOOEOCGLLHFO\x18\n\x20\x03(\rR\x0bOOEOCGLLHFO\x12.\n\x0bJMNJLFA\
+    CCLM\x18\x0c\x20\x01(\x0e2\x0c.JDCAPBNPOOKR\x0bJMNJLFACCLMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

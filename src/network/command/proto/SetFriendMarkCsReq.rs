@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendMarkCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.BIJJOJNJHDO)
-    pub BIJJOJNJHDO: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.BIJJOJNJHDO)
+    pub BIJJOJNJHDO: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.reason)
     pub reason: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SetFriendMarkCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIJJOJNJHDO",
-            |m: &SetFriendMarkCsReq| { &m.BIJJOJNJHDO },
-            |m: &mut SetFriendMarkCsReq| { &mut m.BIJJOJNJHDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &SetFriendMarkCsReq| { &m.uid },
             |m: &mut SetFriendMarkCsReq| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIJJOJNJHDO",
+            |m: &SetFriendMarkCsReq| { &m.BIJJOJNJHDO },
+            |m: &mut SetFriendMarkCsReq| { &mut m.BIJJOJNJHDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BIJJOJNJHDO = is.read_bool()?;
-                },
-                48 => {
+                8 => {
                     self.uid = is.read_uint32()?;
                 },
-                40 => {
+                16 => {
+                    self.BIJJOJNJHDO = is.read_bool()?;
+                },
+                120 => {
                     self.reason = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        }
         if self.BIJJOJNJHDO != false {
             my_size += 1 + 1;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.uid);
-        }
         if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.reason);
+            my_size += ::protobuf::rt::uint32_size(15, self.reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BIJJOJNJHDO != false {
-            os.write_bool(13, self.BIJJOJNJHDO)?;
-        }
         if self.uid != 0 {
-            os.write_uint32(6, self.uid)?;
+            os.write_uint32(1, self.uid)?;
+        }
+        if self.BIJJOJNJHDO != false {
+            os.write_bool(2, self.BIJJOJNJHDO)?;
         }
         if self.reason != 0 {
-            os.write_uint32(5, self.reason)?;
+            os.write_uint32(15, self.reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     }
 
     fn clear(&mut self) {
-        self.BIJJOJNJHDO = false;
         self.uid = 0;
+        self.BIJJOJNJHDO = false;
         self.reason = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
-            BIJJOJNJHDO: false,
             uid: 0,
+            BIJJOJNJHDO: false,
             reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x20\n\x0bB\
-    IJJOJNJHDO\x18\r\x20\x01(\x08R\x0bBIJJOJNJHDO\x12\x10\n\x03uid\x18\x06\
-    \x20\x01(\rR\x03uid\x12\x16\n\x06reason\x18\x05\x20\x01(\rR\x06reasonb\
+    \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x10\n\x03u\
+    id\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bBIJJOJNJHDO\x18\x02\x20\x01(\
+    \x08R\x0bBIJJOJNJHDO\x12\x16\n\x06reason\x18\x0f\x20\x01(\rR\x06reasonb\
     \x06proto3\
 ";
 

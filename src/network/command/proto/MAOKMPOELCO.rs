@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAOKMPOELCO {
     // message fields
-    // @@protoc_insertion_point(field:MAOKMPOELCO.BBEHHCHKMNL)
-    pub BBEHHCHKMNL: ::protobuf::MessageField<super::PKHKEEKIODC::PKHKEEKIODC>,
-    // @@protoc_insertion_point(field:MAOKMPOELCO.queue_position)
-    pub queue_position: u32,
     // @@protoc_insertion_point(field:MAOKMPOELCO.source)
     pub source: ::protobuf::EnumOrUnknown<super::NHHMEPILLHL::NHHMEPILLHL>,
+    // @@protoc_insertion_point(field:MAOKMPOELCO.queue_position)
+    pub queue_position: u32,
+    // @@protoc_insertion_point(field:MAOKMPOELCO.detail)
+    pub detail: ::protobuf::MessageField<super::PKHKEEKIODC::PKHKEEKIODC>,
     // special fields
     // @@protoc_insertion_point(special_field:MAOKMPOELCO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MAOKMPOELCO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKHKEEKIODC::PKHKEEKIODC>(
-            "BBEHHCHKMNL",
-            |m: &MAOKMPOELCO| { &m.BBEHHCHKMNL },
-            |m: &mut MAOKMPOELCO| { &mut m.BBEHHCHKMNL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &MAOKMPOELCO| { &m.source },
+            |m: &mut MAOKMPOELCO| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
             |m: &MAOKMPOELCO| { &m.queue_position },
             |m: &mut MAOKMPOELCO| { &mut m.queue_position },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &MAOKMPOELCO| { &m.source },
-            |m: &mut MAOKMPOELCO| { &mut m.source },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKHKEEKIODC::PKHKEEKIODC>(
+            "detail",
+            |m: &MAOKMPOELCO| { &m.detail },
+            |m: &mut MAOKMPOELCO| { &mut m.detail },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAOKMPOELCO>(
             "MAOKMPOELCO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MAOKMPOELCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEHHCHKMNL)?;
+                72 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                80 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                96 => {
-                    self.source = is.read_enum_or_unknown()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MAOKMPOELCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::NHHMEPILLHL::NHHMEPILLHL::NHHMEPILLHL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(9, self.source.value());
         }
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(10, self.queue_position);
         }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::NHHMEPILLHL::NHHMEPILLHL::NHHMEPILLHL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.source.value());
+        if let Some(v) = self.detail.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MAOKMPOELCO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::NHHMEPILLHL::NHHMEPILLHL::NHHMEPILLHL_NLCDGIPGFDJ) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if self.queue_position != 0 {
-            os.write_uint32(15, self.queue_position)?;
+            os.write_uint32(10, self.queue_position)?;
         }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::NHHMEPILLHL::NHHMEPILLHL::NHHMEPILLHL_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        if let Some(v) = self.detail.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MAOKMPOELCO {
     }
 
     fn clear(&mut self) {
-        self.BBEHHCHKMNL.clear();
-        self.queue_position = 0;
         self.source = ::protobuf::EnumOrUnknown::new(super::NHHMEPILLHL::NHHMEPILLHL::NHHMEPILLHL_NLCDGIPGFDJ);
+        self.queue_position = 0;
+        self.detail.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAOKMPOELCO {
         static instance: MAOKMPOELCO = MAOKMPOELCO {
-            BBEHHCHKMNL: ::protobuf::MessageField::none(),
-            queue_position: 0,
             source: ::protobuf::EnumOrUnknown::from_i32(0),
+            queue_position: 0,
+            detail: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for MAOKMPOELCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAOKMPOELCO.proto\x1a\x11NHHMEPILLHL.proto\x1a\x11PKHKEEKIODC.prot\
-    o\"\x8a\x01\n\x0bMAOKMPOELCO\x12.\n\x0bBBEHHCHKMNL\x18\r\x20\x01(\x0b2\
-    \x0c.PKHKEEKIODCR\x0bBBEHHCHKMNL\x12%\n\x0equeue_position\x18\x0f\x20\
-    \x01(\rR\rqueuePosition\x12$\n\x06source\x18\x0c\x20\x01(\x0e2\x0c.NHHME\
-    PILLHLR\x06sourceb\x06proto3\
+    o\"\x80\x01\n\x0bMAOKMPOELCO\x12$\n\x06source\x18\t\x20\x01(\x0e2\x0c.NH\
+    HMEPILLHLR\x06source\x12%\n\x0equeue_position\x18\n\x20\x01(\rR\rqueuePo\
+    sition\x12$\n\x06detail\x18\x0b\x20\x01(\x0b2\x0c.PKHKEEKIODCR\x06detail\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

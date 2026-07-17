@@ -32,10 +32,10 @@ pub struct KIAICMELIMM {
     pub AOKECJBFMCN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:KIAICMELIMM.CDBGPMABMGM)
     pub CDBGPMABMGM: u32,
-    // @@protoc_insertion_point(field:KIAICMELIMM.FPCOPPLFBOP)
-    pub FPCOPPLFBOP: u32,
     // @@protoc_insertion_point(field:KIAICMELIMM.FGOHMOMLEBG)
     pub FGOHMOMLEBG: u32,
+    // @@protoc_insertion_point(field:KIAICMELIMM.enemy_hp_multiplier)
+    pub enemy_hp_multiplier: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KIAICMELIMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl KIAICMELIMM {
             |m: &mut KIAICMELIMM| { &mut m.CDBGPMABMGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPCOPPLFBOP",
-            |m: &KIAICMELIMM| { &m.FPCOPPLFBOP },
-            |m: &mut KIAICMELIMM| { &mut m.FPCOPPLFBOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGOHMOMLEBG",
             |m: &KIAICMELIMM| { &m.FGOHMOMLEBG },
             |m: &mut KIAICMELIMM| { &mut m.FGOHMOMLEBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enemy_hp_multiplier",
+            |m: &KIAICMELIMM| { &m.enemy_hp_multiplier },
+            |m: &mut KIAICMELIMM| { &mut m.enemy_hp_multiplier },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KIAICMELIMM>(
             "KIAICMELIMM",
@@ -111,11 +111,11 @@ impl ::protobuf::Message for KIAICMELIMM {
                 16 => {
                     self.CDBGPMABMGM = is.read_uint32()?;
                 },
-                32 => {
-                    self.FPCOPPLFBOP = is.read_uint32()?;
-                },
                 24 => {
                     self.FGOHMOMLEBG = is.read_uint32()?;
+                },
+                32 => {
+                    self.enemy_hp_multiplier = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,11 +138,11 @@ impl ::protobuf::Message for KIAICMELIMM {
         if self.CDBGPMABMGM != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.CDBGPMABMGM);
         }
-        if self.FPCOPPLFBOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FPCOPPLFBOP);
-        }
         if self.FGOHMOMLEBG != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.FGOHMOMLEBG);
+        }
+        if self.enemy_hp_multiplier != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.enemy_hp_multiplier);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,11 +162,11 @@ impl ::protobuf::Message for KIAICMELIMM {
         if self.CDBGPMABMGM != 0 {
             os.write_uint32(2, self.CDBGPMABMGM)?;
         }
-        if self.FPCOPPLFBOP != 0 {
-            os.write_uint32(4, self.FPCOPPLFBOP)?;
-        }
         if self.FGOHMOMLEBG != 0 {
             os.write_uint32(3, self.FGOHMOMLEBG)?;
+        }
+        if self.enemy_hp_multiplier != 0 {
+            os.write_uint32(4, self.enemy_hp_multiplier)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,8 +187,8 @@ impl ::protobuf::Message for KIAICMELIMM {
     fn clear(&mut self) {
         self.AOKECJBFMCN.clear();
         self.CDBGPMABMGM = 0;
-        self.FPCOPPLFBOP = 0;
         self.FGOHMOMLEBG = 0;
+        self.enemy_hp_multiplier = 0;
         self.special_fields.clear();
     }
 
@@ -216,13 +216,13 @@ impl ::protobuf::reflect::ProtobufValue for KIAICMELIMM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KIAICMELIMM.proto\"\xf4\x01\n\x0bKIAICMELIMM\x12?\n\x0bAOKECJBFMCN\
+    \n\x11KIAICMELIMM.proto\"\x82\x02\n\x0bKIAICMELIMM\x12?\n\x0bAOKECJBFMCN\
     \x18\x01\x20\x03(\x0b2\x1d.KIAICMELIMM.AOKECJBFMCNEntryR\x0bAOKECJBFMCN\
     \x12\x20\n\x0bCDBGPMABMGM\x18\x02\x20\x01(\rR\x0bCDBGPMABMGM\x12\x20\n\
-    \x0bFPCOPPLFBOP\x18\x04\x20\x01(\rR\x0bFPCOPPLFBOP\x12\x20\n\x0bFGOHMOML\
-    EBG\x18\x03\x20\x01(\rR\x0bFGOHMOMLEBG\x1a>\n\x10AOKECJBFMCNEntry\x12\
-    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
-    \x01(\rR\x05value:\x028\x01b\x06proto3\
+    \x0bFGOHMOMLEBG\x18\x03\x20\x01(\rR\x0bFGOHMOMLEBG\x12.\n\x13enemy_hp_mu\
+    ltiplier\x18\x04\x20\x01(\rR\x11enemyHpMultiplier\x1a>\n\x10AOKECJBFMCNE\
+    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\
+    \x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

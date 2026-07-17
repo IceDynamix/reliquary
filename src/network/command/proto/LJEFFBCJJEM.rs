@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LJEFFBCJJEM {
     // message fields
-    // @@protoc_insertion_point(field:LJEFFBCJJEM.IAOBHCOOMJP)
-    pub IAOBHCOOMJP: ::protobuf::MessageField<super::GGHOBPBFFOB::GGHOBPBFFOB>,
+    // @@protoc_insertion_point(field:LJEFFBCJJEM.game_data)
+    pub game_data: ::protobuf::MessageField<super::GGHOBPBFFOB::GGHOBPBFFOB>,
     // special fields
     // @@protoc_insertion_point(special_field:LJEFFBCJJEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl LJEFFBCJJEM {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGHOBPBFFOB::GGHOBPBFFOB>(
-            "IAOBHCOOMJP",
-            |m: &LJEFFBCJJEM| { &m.IAOBHCOOMJP },
-            |m: &mut LJEFFBCJJEM| { &mut m.IAOBHCOOMJP },
+            "game_data",
+            |m: &LJEFFBCJJEM| { &m.game_data },
+            |m: &mut LJEFFBCJJEM| { &mut m.game_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LJEFFBCJJEM>(
             "LJEFFBCJJEM",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for LJEFFBCJJEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAOBHCOOMJP)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for LJEFFBCJJEM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
+        if let Some(v) = self.game_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for LJEFFBCJJEM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.game_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for LJEFFBCJJEM {
     }
 
     fn clear(&mut self) {
-        self.IAOBHCOOMJP.clear();
+        self.game_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LJEFFBCJJEM {
         static instance: LJEFFBCJJEM = LJEFFBCJJEM {
-            IAOBHCOOMJP: ::protobuf::MessageField::none(),
+            game_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for LJEFFBCJJEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LJEFFBCJJEM.proto\x1a\x11GGHOBPBFFOB.proto\"=\n\x0bLJEFFBCJJEM\x12\
-    .\n\x0bIAOBHCOOMJP\x18\x03\x20\x01(\x0b2\x0c.GGHOBPBFFOBR\x0bIAOBHCOOMJP\
-    b\x06proto3\
+    \n\x11LJEFFBCJJEM.proto\x1a\x11GGHOBPBFFOB.proto\"8\n\x0bLJEFFBCJJEM\x12\
+    )\n\tgame_data\x18\x0b\x20\x01(\x0b2\x0c.GGHOBPBFFOBR\x08gameDatab\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

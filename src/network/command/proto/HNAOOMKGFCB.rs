@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HNAOOMKGFCB {
     // message fields
+    // @@protoc_insertion_point(field:HNAOOMKGFCB.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::PDHFFPOJNJG::PDHFFPOJNJG>,
     // @@protoc_insertion_point(field:HNAOOMKGFCB.LLMHAEAPGON)
     pub LLMHAEAPGON: u32,
-    // @@protoc_insertion_point(field:HNAOOMKGFCB.NFMKOFNEKLA)
-    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::PDHFFPOJNJG::PDHFFPOJNJG>,
     // @@protoc_insertion_point(field:HNAOOMKGFCB.BHCCDFFBAAM)
     pub BHCCDFFBAAM: u32,
     // special fields
@@ -54,14 +54,14 @@ impl HNAOOMKGFCB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source_type",
+            |m: &HNAOOMKGFCB| { &m.source_type },
+            |m: &mut HNAOOMKGFCB| { &mut m.source_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LLMHAEAPGON",
             |m: &HNAOOMKGFCB| { &m.LLMHAEAPGON },
             |m: &mut HNAOOMKGFCB| { &mut m.LLMHAEAPGON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFMKOFNEKLA",
-            |m: &HNAOOMKGFCB| { &m.NFMKOFNEKLA },
-            |m: &mut HNAOOMKGFCB| { &mut m.NFMKOFNEKLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BHCCDFFBAAM",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for HNAOOMKGFCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
+                    self.source_type = is.read_enum_or_unknown()?;
+                },
+                56 => {
                     self.LLMHAEAPGON = is.read_uint32()?;
                 },
-                32 => {
-                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
-                },
-                88 => {
+                80 => {
                     self.BHCCDFFBAAM = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HNAOOMKGFCB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LLMHAEAPGON != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LLMHAEAPGON);
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.source_type.value());
         }
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.NFMKOFNEKLA.value());
+        if self.LLMHAEAPGON != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LLMHAEAPGON);
         }
         if self.BHCCDFFBAAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BHCCDFFBAAM);
+            my_size += ::protobuf::rt::uint32_size(10, self.BHCCDFFBAAM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HNAOOMKGFCB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LLMHAEAPGON != 0 {
-            os.write_uint32(3, self.LLMHAEAPGON)?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+        if self.LLMHAEAPGON != 0 {
+            os.write_uint32(7, self.LLMHAEAPGON)?;
         }
         if self.BHCCDFFBAAM != 0 {
-            os.write_uint32(11, self.BHCCDFFBAAM)?;
+            os.write_uint32(10, self.BHCCDFFBAAM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for HNAOOMKGFCB {
     }
 
     fn clear(&mut self) {
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ);
         self.LLMHAEAPGON = 0;
-        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::PDHFFPOJNJG::PDHFFPOJNJG::PDHFFPOJNJG_NLCDGIPGFDJ);
         self.BHCCDFFBAAM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HNAOOMKGFCB {
         static instance: HNAOOMKGFCB = HNAOOMKGFCB {
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             LLMHAEAPGON: 0,
-            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             BHCCDFFBAAM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for HNAOOMKGFCB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HNAOOMKGFCB.proto\x1a\x11PDHFFPOJNJG.proto\"\x81\x01\n\x0bHNAOOMKG\
-    FCB\x12\x20\n\x0bLLMHAEAPGON\x18\x03\x20\x01(\rR\x0bLLMHAEAPGON\x12.\n\
-    \x0bNFMKOFNEKLA\x18\x04\x20\x01(\x0e2\x0c.PDHFFPOJNJGR\x0bNFMKOFNEKLA\
-    \x12\x20\n\x0bBHCCDFFBAAM\x18\x0b\x20\x01(\rR\x0bBHCCDFFBAAMb\x06proto3\
+    \n\x11HNAOOMKGFCB.proto\x1a\x11PDHFFPOJNJG.proto\"\x80\x01\n\x0bHNAOOMKG\
+    FCB\x12-\n\x0bsource_type\x18\x01\x20\x01(\x0e2\x0c.PDHFFPOJNJGR\nsource\
+    Type\x12\x20\n\x0bLLMHAEAPGON\x18\x07\x20\x01(\rR\x0bLLMHAEAPGON\x12\x20\
+    \n\x0bBHCCDFFBAAM\x18\n\x20\x01(\rR\x0bBHCCDFFBAAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

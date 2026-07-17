@@ -52,6 +52,7 @@ pub mod proto {
     pub mod HeadIconData;
     pub mod Item;
     pub mod ItemList;
+    pub mod KVP;
     pub mod Material;
     pub mod MessageGroupStatus;
     pub mod MessageSectionStatus;
@@ -59,7 +60,6 @@ pub mod proto {
     pub mod MissionCustomValue;
     pub mod MissionStatus;
     pub mod MissionSync;
-    pub mod MissionSyncRecord;
     pub mod PileItem;
     pub mod PlayerBasicInfo;
     pub mod PlayerBoardModuleSync;
@@ -77,8 +77,6 @@ pub mod proto {
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod ALBOJHJALOF;
-    pub mod APAMFCKFHLL;
     pub mod BKGPJOBNMKJ;
     pub mod CCHMHOONEGG;
     pub mod CFMDKNCDDAL;

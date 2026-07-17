@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FMDGFHPOAIO {
     // message fields
-    // @@protoc_insertion_point(field:FMDGFHPOAIO.JALHKMEOOPN)
-    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:FMDGFHPOAIO.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:FMDGFHPOAIO.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FMDGFHPOAIO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FMDGFHPOAIO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &FMDGFHPOAIO| { &m.JALHKMEOOPN },
-            |m: &mut FMDGFHPOAIO| { &mut m.JALHKMEOOPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &FMDGFHPOAIO| { &m.group_id },
             |m: &mut FMDGFHPOAIO| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JALHKMEOOPN",
+            |m: &FMDGFHPOAIO| { &m.JALHKMEOOPN },
+            |m: &mut FMDGFHPOAIO| { &mut m.JALHKMEOOPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FMDGFHPOAIO>(
             "FMDGFHPOAIO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FMDGFHPOAIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JALHKMEOOPN = is.read_uint32()?;
-                },
                 40 => {
                     self.group_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.JALHKMEOOPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FMDGFHPOAIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JALHKMEOOPN);
-        }
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.group_id);
+        }
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JALHKMEOOPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FMDGFHPOAIO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JALHKMEOOPN != 0 {
-            os.write_uint32(3, self.JALHKMEOOPN)?;
-        }
         if self.group_id != 0 {
             os.write_uint32(5, self.group_id)?;
+        }
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(8, self.JALHKMEOOPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FMDGFHPOAIO {
     }
 
     fn clear(&mut self) {
-        self.JALHKMEOOPN = 0;
         self.group_id = 0;
+        self.JALHKMEOOPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FMDGFHPOAIO {
         static instance: FMDGFHPOAIO = FMDGFHPOAIO {
-            JALHKMEOOPN: 0,
             group_id: 0,
+            JALHKMEOOPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FMDGFHPOAIO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FMDGFHPOAIO.proto\"J\n\x0bFMDGFHPOAIO\x12\x20\n\x0bJALHKMEOOPN\x18\
-    \x03\x20\x01(\rR\x0bJALHKMEOOPN\x12\x19\n\x08group_id\x18\x05\x20\x01(\r\
-    R\x07groupIdb\x06proto3\
+    \n\x11FMDGFHPOAIO.proto\"J\n\x0bFMDGFHPOAIO\x12\x19\n\x08group_id\x18\
+    \x05\x20\x01(\rR\x07groupId\x12\x20\n\x0bJALHKMEOOPN\x18\x08\x20\x01(\rR\
+    \x0bJALHKMEOOPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

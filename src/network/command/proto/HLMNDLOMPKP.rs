@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HLMNDLOMPKP {
     // message fields
-    // @@protoc_insertion_point(field:HLMNDLOMPKP.OCILFNNGHBD)
-    pub OCILFNNGHBD: u32,
-    // @@protoc_insertion_point(field:HLMNDLOMPKP.HOPACEGJJKB)
-    pub HOPACEGJJKB: u32,
-    // @@protoc_insertion_point(field:HLMNDLOMPKP.NGKFIFAFMND)
-    pub NGKFIFAFMND: u32,
     // @@protoc_insertion_point(field:HLMNDLOMPKP.GPILDEKMAGJ)
     pub GPILDEKMAGJ: u32,
+    // @@protoc_insertion_point(field:HLMNDLOMPKP.OCILFNNGHBD)
+    pub OCILFNNGHBD: u32,
+    // @@protoc_insertion_point(field:HLMNDLOMPKP.NGKFIFAFMND)
+    pub NGKFIFAFMND: u32,
+    // @@protoc_insertion_point(field:HLMNDLOMPKP.HOPACEGJJKB)
+    pub HOPACEGJJKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HLMNDLOMPKP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,14 @@ impl HLMNDLOMPKP {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPILDEKMAGJ",
+            |m: &HLMNDLOMPKP| { &m.GPILDEKMAGJ },
+            |m: &mut HLMNDLOMPKP| { &mut m.GPILDEKMAGJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCILFNNGHBD",
             |m: &HLMNDLOMPKP| { &m.OCILFNNGHBD },
             |m: &mut HLMNDLOMPKP| { &mut m.OCILFNNGHBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOPACEGJJKB",
-            |m: &HLMNDLOMPKP| { &m.HOPACEGJJKB },
-            |m: &mut HLMNDLOMPKP| { &mut m.HOPACEGJJKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NGKFIFAFMND",
@@ -71,9 +71,9 @@ impl HLMNDLOMPKP {
             |m: &mut HLMNDLOMPKP| { &mut m.NGKFIFAFMND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPILDEKMAGJ",
-            |m: &HLMNDLOMPKP| { &m.GPILDEKMAGJ },
-            |m: &mut HLMNDLOMPKP| { &mut m.GPILDEKMAGJ },
+            "HOPACEGJJKB",
+            |m: &HLMNDLOMPKP| { &m.HOPACEGJJKB },
+            |m: &mut HLMNDLOMPKP| { &mut m.HOPACEGJJKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HLMNDLOMPKP>(
             "HLMNDLOMPKP",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HLMNDLOMPKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.GPILDEKMAGJ = is.read_uint32()?;
+                },
                 16 => {
                     self.OCILFNNGHBD = is.read_uint32()?;
-                },
-                32 => {
-                    self.HOPACEGJJKB = is.read_uint32()?;
                 },
                 24 => {
                     self.NGKFIFAFMND = is.read_uint32()?;
                 },
-                8 => {
-                    self.GPILDEKMAGJ = is.read_uint32()?;
+                32 => {
+                    self.HOPACEGJJKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for HLMNDLOMPKP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GPILDEKMAGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GPILDEKMAGJ);
+        }
         if self.OCILFNNGHBD != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.OCILFNNGHBD);
-        }
-        if self.HOPACEGJJKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HOPACEGJJKB);
         }
         if self.NGKFIFAFMND != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.NGKFIFAFMND);
         }
-        if self.GPILDEKMAGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GPILDEKMAGJ);
+        if self.HOPACEGJJKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HOPACEGJJKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for HLMNDLOMPKP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GPILDEKMAGJ != 0 {
+            os.write_uint32(1, self.GPILDEKMAGJ)?;
+        }
         if self.OCILFNNGHBD != 0 {
             os.write_uint32(2, self.OCILFNNGHBD)?;
-        }
-        if self.HOPACEGJJKB != 0 {
-            os.write_uint32(4, self.HOPACEGJJKB)?;
         }
         if self.NGKFIFAFMND != 0 {
             os.write_uint32(3, self.NGKFIFAFMND)?;
         }
-        if self.GPILDEKMAGJ != 0 {
-            os.write_uint32(1, self.GPILDEKMAGJ)?;
+        if self.HOPACEGJJKB != 0 {
+            os.write_uint32(4, self.HOPACEGJJKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for HLMNDLOMPKP {
     }
 
     fn clear(&mut self) {
-        self.OCILFNNGHBD = 0;
-        self.HOPACEGJJKB = 0;
-        self.NGKFIFAFMND = 0;
         self.GPILDEKMAGJ = 0;
+        self.OCILFNNGHBD = 0;
+        self.NGKFIFAFMND = 0;
+        self.HOPACEGJJKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HLMNDLOMPKP {
         static instance: HLMNDLOMPKP = HLMNDLOMPKP {
-            OCILFNNGHBD: 0,
-            HOPACEGJJKB: 0,
-            NGKFIFAFMND: 0,
             GPILDEKMAGJ: 0,
+            OCILFNNGHBD: 0,
+            NGKFIFAFMND: 0,
+            HOPACEGJJKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for HLMNDLOMPKP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HLMNDLOMPKP.proto\"\x95\x01\n\x0bHLMNDLOMPKP\x12\x20\n\x0bOCILFNNG\
-    HBD\x18\x02\x20\x01(\rR\x0bOCILFNNGHBD\x12\x20\n\x0bHOPACEGJJKB\x18\x04\
-    \x20\x01(\rR\x0bHOPACEGJJKB\x12\x20\n\x0bNGKFIFAFMND\x18\x03\x20\x01(\rR\
-    \x0bNGKFIFAFMND\x12\x20\n\x0bGPILDEKMAGJ\x18\x01\x20\x01(\rR\x0bGPILDEKM\
-    AGJb\x06proto3\
+    \n\x11HLMNDLOMPKP.proto\"\x95\x01\n\x0bHLMNDLOMPKP\x12\x20\n\x0bGPILDEKM\
+    AGJ\x18\x01\x20\x01(\rR\x0bGPILDEKMAGJ\x12\x20\n\x0bOCILFNNGHBD\x18\x02\
+    \x20\x01(\rR\x0bOCILFNNGHBD\x12\x20\n\x0bNGKFIFAFMND\x18\x03\x20\x01(\rR\
+    \x0bNGKFIFAFMND\x12\x20\n\x0bHOPACEGJJKB\x18\x04\x20\x01(\rR\x0bHOPACEGJ\
+    JKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

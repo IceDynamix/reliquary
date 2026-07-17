@@ -29,34 +29,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSwitchHandType {
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_NLCDGIPGFDJ)
     BKCCNEKJADF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EJDADPCKAGG)
-    BKCCNEKJADF_EJDADPCKAGG = 8120,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_KPCOBCBAGGF)
+    BKCCNEKJADF_KPCOBCBAGGF = 8110,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_FNIOEFBGMEO)
+    BKCCNEKJADF_FNIOEFBGMEO = 8120,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_GMNINGGAIKG)
+    BKCCNEKJADF_GMNINGGAIKG = 8108,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_KNPANHIGPBL)
+    BKCCNEKJADF_KNPANHIGPBL = 8117,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_GFIKCCKEHJF)
+    BKCCNEKJADF_GFIKCCKEHJF = 8103,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_KAMHALFJDFH)
     BKCCNEKJADF_KAMHALFJDFH = 8118,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EOAFOIBICOH)
+    BKCCNEKJADF_EOAFOIBICOH = 8104,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_ILOADBMOGJL)
+    BKCCNEKJADF_ILOADBMOGJL = 8109,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EINMDLDJKNP)
+    BKCCNEKJADF_EINMDLDJKNP = 8115,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EJDADPCKAGG)
+    BKCCNEKJADF_EJDADPCKAGG = 8112,
+    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_NMFDIDGOONF)
+    BKCCNEKJADF_NMFDIDGOONF = 8105,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_IENPIABKCNF)
     BKCCNEKJADF_IENPIABKCNF = 8102,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_KNPANHIGPBL)
-    BKCCNEKJADF_KNPANHIGPBL = 8119,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_FNIOEFBGMEO)
-    BKCCNEKJADF_FNIOEFBGMEO = 8108,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_AIPGFFAAMGK)
-    BKCCNEKJADF_AIPGFFAAMGK = 8117,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EOAFOIBICOH)
-    BKCCNEKJADF_EOAFOIBICOH = 8114,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_GFIKCCKEHJF)
-    BKCCNEKJADF_GFIKCCKEHJF = 8116,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_KPCOBCBAGGF)
-    BKCCNEKJADF_KPCOBCBAGGF = 8107,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_GMNINGGAIKG)
-    BKCCNEKJADF_GMNINGGAIKG = 8106,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_ILOADBMOGJL)
-    BKCCNEKJADF_ILOADBMOGJL = 8103,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_EINMDLDJKNP)
-    BKCCNEKJADF_EINMDLDJKNP = 8111,
-    // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_NMFDIDGOONF)
-    BKCCNEKJADF_NMFDIDGOONF = 8112,
+    BKCCNEKJADF_AIPGFFAAMGK = 8101,
     // @@protoc_insertion_point(enum_value:CmdSwitchHandType.BKCCNEKJADF_BNGFJCFOFBH)
-    BKCCNEKJADF_BNGFJCFOFBH = 8104,
+    BKCCNEKJADF_BNGFJCFOFBH = 8111,
 }
 
 impl ::protobuf::Enum for CmdSwitchHandType {
@@ -69,20 +69,20 @@ impl ::protobuf::Enum for CmdSwitchHandType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSwitchHandType> {
         match value {
             0 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_NLCDGIPGFDJ),
-            8120 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG),
+            8110 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF),
+            8120 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO),
+            8108 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG),
+            8117 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL),
+            8103 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF),
             8118 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH),
+            8104 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH),
+            8109 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL),
+            8115 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP),
+            8112 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG),
+            8105 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF),
             8102 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF),
-            8119 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL),
-            8108 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO),
-            8117 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK),
-            8114 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH),
-            8116 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF),
-            8107 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF),
-            8106 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG),
-            8103 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL),
-            8111 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP),
-            8112 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF),
-            8104 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_BNGFJCFOFBH),
+            8101 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK),
+            8111 => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_BNGFJCFOFBH),
             _ => ::std::option::Option::None
         }
     }
@@ -90,19 +90,19 @@ impl ::protobuf::Enum for CmdSwitchHandType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSwitchHandType> {
         match str {
             "BKCCNEKJADF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_NLCDGIPGFDJ),
-            "BKCCNEKJADF_EJDADPCKAGG" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG),
-            "BKCCNEKJADF_KAMHALFJDFH" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH),
-            "BKCCNEKJADF_IENPIABKCNF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF),
-            "BKCCNEKJADF_KNPANHIGPBL" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL),
-            "BKCCNEKJADF_FNIOEFBGMEO" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO),
-            "BKCCNEKJADF_AIPGFFAAMGK" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK),
-            "BKCCNEKJADF_EOAFOIBICOH" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH),
-            "BKCCNEKJADF_GFIKCCKEHJF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF),
             "BKCCNEKJADF_KPCOBCBAGGF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF),
+            "BKCCNEKJADF_FNIOEFBGMEO" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO),
             "BKCCNEKJADF_GMNINGGAIKG" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG),
+            "BKCCNEKJADF_KNPANHIGPBL" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL),
+            "BKCCNEKJADF_GFIKCCKEHJF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF),
+            "BKCCNEKJADF_KAMHALFJDFH" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH),
+            "BKCCNEKJADF_EOAFOIBICOH" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH),
             "BKCCNEKJADF_ILOADBMOGJL" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL),
             "BKCCNEKJADF_EINMDLDJKNP" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP),
+            "BKCCNEKJADF_EJDADPCKAGG" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG),
             "BKCCNEKJADF_NMFDIDGOONF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF),
+            "BKCCNEKJADF_IENPIABKCNF" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF),
+            "BKCCNEKJADF_AIPGFFAAMGK" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK),
             "BKCCNEKJADF_BNGFJCFOFBH" => ::std::option::Option::Some(CmdSwitchHandType::BKCCNEKJADF_BNGFJCFOFBH),
             _ => ::std::option::Option::None
         }
@@ -110,19 +110,19 @@ impl ::protobuf::Enum for CmdSwitchHandType {
 
     const VALUES: &'static [CmdSwitchHandType] = &[
         CmdSwitchHandType::BKCCNEKJADF_NLCDGIPGFDJ,
-        CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG,
-        CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH,
-        CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF,
-        CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL,
-        CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO,
-        CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK,
-        CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH,
-        CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF,
         CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF,
+        CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO,
         CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG,
+        CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL,
+        CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF,
+        CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH,
+        CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH,
         CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL,
         CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP,
+        CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG,
         CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF,
+        CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF,
+        CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK,
         CmdSwitchHandType::BKCCNEKJADF_BNGFJCFOFBH,
     ];
 }
@@ -136,19 +136,19 @@ impl ::protobuf::EnumFull for CmdSwitchHandType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSwitchHandType::BKCCNEKJADF_NLCDGIPGFDJ => 0,
-            CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG => 1,
-            CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH => 2,
-            CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF => 3,
+            CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF => 1,
+            CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO => 2,
+            CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG => 3,
             CmdSwitchHandType::BKCCNEKJADF_KNPANHIGPBL => 4,
-            CmdSwitchHandType::BKCCNEKJADF_FNIOEFBGMEO => 5,
-            CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK => 6,
+            CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF => 5,
+            CmdSwitchHandType::BKCCNEKJADF_KAMHALFJDFH => 6,
             CmdSwitchHandType::BKCCNEKJADF_EOAFOIBICOH => 7,
-            CmdSwitchHandType::BKCCNEKJADF_GFIKCCKEHJF => 8,
-            CmdSwitchHandType::BKCCNEKJADF_KPCOBCBAGGF => 9,
-            CmdSwitchHandType::BKCCNEKJADF_GMNINGGAIKG => 10,
-            CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL => 11,
-            CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP => 12,
-            CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF => 13,
+            CmdSwitchHandType::BKCCNEKJADF_ILOADBMOGJL => 8,
+            CmdSwitchHandType::BKCCNEKJADF_EINMDLDJKNP => 9,
+            CmdSwitchHandType::BKCCNEKJADF_EJDADPCKAGG => 10,
+            CmdSwitchHandType::BKCCNEKJADF_NMFDIDGOONF => 11,
+            CmdSwitchHandType::BKCCNEKJADF_IENPIABKCNF => 12,
+            CmdSwitchHandType::BKCCNEKJADF_AIPGFFAAMGK => 13,
             CmdSwitchHandType::BKCCNEKJADF_BNGFJCFOFBH => 14,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -169,16 +169,16 @@ impl CmdSwitchHandType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdSwitchHandType.proto*\xd4\x03\n\x11CmdSwitchHandType\x12\x1b\n\
-    \x17BKCCNEKJADF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BKCCNEKJADF_EJDADPCKAGG\
-    \x10\xb8?\x12\x1c\n\x17BKCCNEKJADF_KAMHALFJDFH\x10\xb6?\x12\x1c\n\x17BKC\
-    CNEKJADF_IENPIABKCNF\x10\xa6?\x12\x1c\n\x17BKCCNEKJADF_KNPANHIGPBL\x10\
-    \xb7?\x12\x1c\n\x17BKCCNEKJADF_FNIOEFBGMEO\x10\xac?\x12\x1c\n\x17BKCCNEK\
-    JADF_AIPGFFAAMGK\x10\xb5?\x12\x1c\n\x17BKCCNEKJADF_EOAFOIBICOH\x10\xb2?\
-    \x12\x1c\n\x17BKCCNEKJADF_GFIKCCKEHJF\x10\xb4?\x12\x1c\n\x17BKCCNEKJADF_\
-    KPCOBCBAGGF\x10\xab?\x12\x1c\n\x17BKCCNEKJADF_GMNINGGAIKG\x10\xaa?\x12\
-    \x1c\n\x17BKCCNEKJADF_ILOADBMOGJL\x10\xa7?\x12\x1c\n\x17BKCCNEKJADF_EINM\
-    DLDJKNP\x10\xaf?\x12\x1c\n\x17BKCCNEKJADF_NMFDIDGOONF\x10\xb0?\x12\x1c\n\
-    \x17BKCCNEKJADF_BNGFJCFOFBH\x10\xa8?b\x06proto3\
+    \x17BKCCNEKJADF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BKCCNEKJADF_KPCOBCBAGGF\
+    \x10\xae?\x12\x1c\n\x17BKCCNEKJADF_FNIOEFBGMEO\x10\xb8?\x12\x1c\n\x17BKC\
+    CNEKJADF_GMNINGGAIKG\x10\xac?\x12\x1c\n\x17BKCCNEKJADF_KNPANHIGPBL\x10\
+    \xb5?\x12\x1c\n\x17BKCCNEKJADF_GFIKCCKEHJF\x10\xa7?\x12\x1c\n\x17BKCCNEK\
+    JADF_KAMHALFJDFH\x10\xb6?\x12\x1c\n\x17BKCCNEKJADF_EOAFOIBICOH\x10\xa8?\
+    \x12\x1c\n\x17BKCCNEKJADF_ILOADBMOGJL\x10\xad?\x12\x1c\n\x17BKCCNEKJADF_\
+    EINMDLDJKNP\x10\xb3?\x12\x1c\n\x17BKCCNEKJADF_EJDADPCKAGG\x10\xb0?\x12\
+    \x1c\n\x17BKCCNEKJADF_NMFDIDGOONF\x10\xa9?\x12\x1c\n\x17BKCCNEKJADF_IENP\
+    IABKCNF\x10\xa6?\x12\x1c\n\x17BKCCNEKJADF_AIPGFFAAMGK\x10\xa5?\x12\x1c\n\
+    \x17BKCCNEKJADF_BNGFJCFOFBH\x10\xaf?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

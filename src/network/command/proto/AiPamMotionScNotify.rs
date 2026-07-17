@@ -72,7 +72,7 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                42 => {
                     self.BLCCBDPODFM.push(is.read_string()?);
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         for value in &self.BLCCBDPODFM {
-            my_size += ::protobuf::rt::string_size(15, &value);
+            my_size += ::protobuf::rt::string_size(5, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for AiPamMotionScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BLCCBDPODFM {
-            os.write_string(15, &v)?;
+            os.write_string(5, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for AiPamMotionScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19AiPamMotionScNotify.proto\"7\n\x13AiPamMotionScNotify\x12\x20\n\
-    \x0bBLCCBDPODFM\x18\x0f\x20\x03(\tR\x0bBLCCBDPODFMb\x06proto3\
+    \x0bBLCCBDPODFM\x18\x05\x20\x03(\tR\x0bBLCCBDPODFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

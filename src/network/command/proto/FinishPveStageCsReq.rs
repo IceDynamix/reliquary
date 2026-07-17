@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishPveStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishPveStageCsReq.AINKFEINNAK)
-    pub AINKFEINNAK: bool,
-    // @@protoc_insertion_point(field:FinishPveStageCsReq.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:FinishPveStageCsReq.damage)
-    pub damage: u32,
     // @@protoc_insertion_point(field:FinishPveStageCsReq.MPDHNFNCIEA)
     pub MPDHNFNCIEA: u32,
+    // @@protoc_insertion_point(field:FinishPveStageCsReq.damage)
+    pub damage: u32,
+    // @@protoc_insertion_point(field:FinishPveStageCsReq.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:FinishPveStageCsReq.AINKFEINNAK)
+    pub AINKFEINNAK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FinishPveStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,9 @@ impl FinishPveStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AINKFEINNAK",
-            |m: &FinishPveStageCsReq| { &m.AINKFEINNAK },
-            |m: &mut FinishPveStageCsReq| { &mut m.AINKFEINNAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &FinishPveStageCsReq| { &m.is_win },
-            |m: &mut FinishPveStageCsReq| { &mut m.is_win },
+            "MPDHNFNCIEA",
+            |m: &FinishPveStageCsReq| { &m.MPDHNFNCIEA },
+            |m: &mut FinishPveStageCsReq| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
@@ -71,9 +66,14 @@ impl FinishPveStageCsReq {
             |m: &mut FinishPveStageCsReq| { &mut m.damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPDHNFNCIEA",
-            |m: &FinishPveStageCsReq| { &m.MPDHNFNCIEA },
-            |m: &mut FinishPveStageCsReq| { &mut m.MPDHNFNCIEA },
+            "is_win",
+            |m: &FinishPveStageCsReq| { &m.is_win },
+            |m: &mut FinishPveStageCsReq| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AINKFEINNAK",
+            |m: &FinishPveStageCsReq| { &m.AINKFEINNAK },
+            |m: &mut FinishPveStageCsReq| { &mut m.AINKFEINNAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishPveStageCsReq>(
             "FinishPveStageCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FinishPveStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.AINKFEINNAK = is.read_bool()?;
+                72 => {
+                    self.MPDHNFNCIEA = is.read_uint32()?;
                 },
-                112 => {
-                    self.is_win = is.read_bool()?;
-                },
-                32 => {
+                80 => {
                     self.damage = is.read_uint32()?;
                 },
-                8 => {
-                    self.MPDHNFNCIEA = is.read_uint32()?;
+                104 => {
+                    self.is_win = is.read_bool()?;
+                },
+                112 => {
+                    self.AINKFEINNAK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FinishPveStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AINKFEINNAK != false {
-            my_size += 1 + 1;
+        if self.MPDHNFNCIEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MPDHNFNCIEA);
+        }
+        if self.damage != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.damage);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.damage);
-        }
-        if self.MPDHNFNCIEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MPDHNFNCIEA);
+        if self.AINKFEINNAK != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FinishPveStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AINKFEINNAK != false {
-            os.write_bool(6, self.AINKFEINNAK)?;
-        }
-        if self.is_win != false {
-            os.write_bool(14, self.is_win)?;
+        if self.MPDHNFNCIEA != 0 {
+            os.write_uint32(9, self.MPDHNFNCIEA)?;
         }
         if self.damage != 0 {
-            os.write_uint32(4, self.damage)?;
+            os.write_uint32(10, self.damage)?;
         }
-        if self.MPDHNFNCIEA != 0 {
-            os.write_uint32(1, self.MPDHNFNCIEA)?;
+        if self.is_win != false {
+            os.write_bool(13, self.is_win)?;
+        }
+        if self.AINKFEINNAK != false {
+            os.write_bool(14, self.AINKFEINNAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for FinishPveStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.AINKFEINNAK = false;
-        self.is_win = false;
-        self.damage = 0;
         self.MPDHNFNCIEA = 0;
+        self.damage = 0;
+        self.is_win = false;
+        self.AINKFEINNAK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishPveStageCsReq {
         static instance: FinishPveStageCsReq = FinishPveStageCsReq {
-            AINKFEINNAK: false,
-            is_win: false,
-            damage: 0,
             MPDHNFNCIEA: 0,
+            damage: 0,
+            is_win: false,
+            AINKFEINNAK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishPveStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FinishPveStageCsReq.proto\"\x88\x01\n\x13FinishPveStageCsReq\x12\
-    \x20\n\x0bAINKFEINNAK\x18\x06\x20\x01(\x08R\x0bAINKFEINNAK\x12\x15\n\x06\
-    is_win\x18\x0e\x20\x01(\x08R\x05isWin\x12\x16\n\x06damage\x18\x04\x20\
-    \x01(\rR\x06damage\x12\x20\n\x0bMPDHNFNCIEA\x18\x01\x20\x01(\rR\x0bMPDHN\
-    FNCIEAb\x06proto3\
+    \x20\n\x0bMPDHNFNCIEA\x18\t\x20\x01(\rR\x0bMPDHNFNCIEA\x12\x16\n\x06dama\
+    ge\x18\n\x20\x01(\rR\x06damage\x12\x15\n\x06is_win\x18\r\x20\x01(\x08R\
+    \x05isWin\x12\x20\n\x0bAINKFEINNAK\x18\x0e\x20\x01(\x08R\x0bAINKFEINNAKb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

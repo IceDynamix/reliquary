@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GHCDMMNHNHO {
     // message fields
-    // @@protoc_insertion_point(field:GHCDMMNHNHO.GCABCJKCAOE)
-    pub GCABCJKCAOE: i32,
     // @@protoc_insertion_point(field:GHCDMMNHNHO.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:GHCDMMNHNHO.GCABCJKCAOE)
+    pub GCABCJKCAOE: i32,
     // @@protoc_insertion_point(field:GHCDMMNHNHO.enhanced_id)
     pub enhanced_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GHCDMMNHNHO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCABCJKCAOE",
-            |m: &GHCDMMNHNHO| { &m.GCABCJKCAOE },
-            |m: &mut GHCDMMNHNHO| { &mut m.GCABCJKCAOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &GHCDMMNHNHO| { &m.avatar_id },
             |m: &mut GHCDMMNHNHO| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCABCJKCAOE",
+            |m: &GHCDMMNHNHO| { &m.GCABCJKCAOE },
+            |m: &mut GHCDMMNHNHO| { &mut m.GCABCJKCAOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "enhanced_id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for GHCDMMNHNHO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.GCABCJKCAOE = is.read_int32()?;
-                },
                 8 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.GCABCJKCAOE = is.read_int32()?;
                 },
                 24 => {
                     self.enhanced_id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GHCDMMNHNHO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCABCJKCAOE != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.GCABCJKCAOE);
-        }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
+        if self.GCABCJKCAOE != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.GCABCJKCAOE);
         }
         if self.enhanced_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.enhanced_id);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for GHCDMMNHNHO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCABCJKCAOE != 0 {
-            os.write_int32(2, self.GCABCJKCAOE)?;
-        }
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
+        }
+        if self.GCABCJKCAOE != 0 {
+            os.write_int32(2, self.GCABCJKCAOE)?;
         }
         if self.enhanced_id != 0 {
             os.write_uint32(3, self.enhanced_id)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GHCDMMNHNHO {
     }
 
     fn clear(&mut self) {
-        self.GCABCJKCAOE = 0;
         self.avatar_id = 0;
+        self.GCABCJKCAOE = 0;
         self.enhanced_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GHCDMMNHNHO {
         static instance: GHCDMMNHNHO = GHCDMMNHNHO {
-            GCABCJKCAOE: 0,
             avatar_id: 0,
+            GCABCJKCAOE: 0,
             enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GHCDMMNHNHO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GHCDMMNHNHO.proto\"m\n\x0bGHCDMMNHNHO\x12\x20\n\x0bGCABCJKCAOE\x18\
-    \x02\x20\x01(\x05R\x0bGCABCJKCAOE\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\
-    \rR\x08avatarId\x12\x1f\n\x0benhanced_id\x18\x03\x20\x01(\rR\nenhancedId\
+    \n\x11GHCDMMNHNHO.proto\"m\n\x0bGHCDMMNHNHO\x12\x1b\n\tavatar_id\x18\x01\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bGCABCJKCAOE\x18\x02\x20\x01(\x05R\
+    \x0bGCABCJKCAOE\x12\x1f\n\x0benhanced_id\x18\x03\x20\x01(\rR\nenhancedId\
     b\x06proto3\
 ";
 

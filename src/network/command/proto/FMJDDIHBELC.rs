@@ -79,10 +79,10 @@ impl ::protobuf::Message for FMJDDIHBELC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.grid_fight_lineup_hp = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
                     self.PPKKHHNEOHB = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FMJDDIHBELC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.grid_fight_lineup_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.grid_fight_lineup_hp);
+            my_size += ::protobuf::rt::uint32_size(5, self.grid_fight_lineup_hp);
         }
         if self.PPKKHHNEOHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PPKKHHNEOHB);
+            my_size += ::protobuf::rt::uint32_size(7, self.PPKKHHNEOHB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FMJDDIHBELC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.grid_fight_lineup_hp != 0 {
-            os.write_uint32(1, self.grid_fight_lineup_hp)?;
+            os.write_uint32(5, self.grid_fight_lineup_hp)?;
         }
         if self.PPKKHHNEOHB != 0 {
-            os.write_uint32(13, self.PPKKHHNEOHB)?;
+            os.write_uint32(7, self.PPKKHHNEOHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FMJDDIHBELC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FMJDDIHBELC.proto\"`\n\x0bFMJDDIHBELC\x12/\n\x14grid_fight_lineup_\
-    hp\x18\x01\x20\x01(\rR\x11gridFightLineupHp\x12\x20\n\x0bPPKKHHNEOHB\x18\
-    \r\x20\x01(\rR\x0bPPKKHHNEOHBb\x06proto3\
+    hp\x18\x05\x20\x01(\rR\x11gridFightLineupHp\x12\x20\n\x0bPPKKHHNEOHB\x18\
+    \x07\x20\x01(\rR\x0bPPKKHHNEOHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

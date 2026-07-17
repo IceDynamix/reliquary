@@ -28,10 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleBuff {
     // message fields
-    // @@protoc_insertion_point(field:BattleBuff.dynamic_values)
-    pub dynamic_values: ::std::collections::HashMap<::std::string::String, f32>,
-    // @@protoc_insertion_point(field:BattleBuff.target_index_list)
-    pub target_index_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BattleBuff.id)
     pub id: u32,
     // @@protoc_insertion_point(field:BattleBuff.level)
@@ -40,6 +36,10 @@ pub struct BattleBuff {
     pub owner_index: u32,
     // @@protoc_insertion_point(field:BattleBuff.wave_flag)
     pub wave_flag: u32,
+    // @@protoc_insertion_point(field:BattleBuff.target_index_list)
+    pub target_index_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleBuff.dynamic_values)
+    pub dynamic_values: ::std::collections::HashMap<::std::string::String, f32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleBuff.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,16 +59,6 @@ impl BattleBuff {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "dynamic_values",
-            |m: &BattleBuff| { &m.dynamic_values },
-            |m: &mut BattleBuff| { &mut m.dynamic_values },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "target_index_list",
-            |m: &BattleBuff| { &m.target_index_list },
-            |m: &mut BattleBuff| { &mut m.target_index_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &BattleBuff| { &m.id },
@@ -89,6 +79,16 @@ impl BattleBuff {
             |m: &BattleBuff| { &m.wave_flag },
             |m: &mut BattleBuff| { &mut m.wave_flag },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "target_index_list",
+            |m: &BattleBuff| { &m.target_index_list },
+            |m: &mut BattleBuff| { &mut m.target_index_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "dynamic_values",
+            |m: &BattleBuff| { &m.dynamic_values },
+            |m: &mut BattleBuff| { &mut m.dynamic_values },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleBuff>(
             "BattleBuff",
             fields,
@@ -107,6 +107,24 @@ impl ::protobuf::Message for BattleBuff {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.id = is.read_uint32()?;
+                },
+                16 => {
+                    self.level = is.read_uint32()?;
+                },
+                24 => {
+                    self.owner_index = is.read_uint32()?;
+                },
+                32 => {
+                    self.wave_flag = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.target_index_list)?;
+                },
+                40 => {
+                    self.target_index_list.push(is.read_uint32()?);
+                },
                 50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -122,24 +140,6 @@ impl ::protobuf::Message for BattleBuff {
                     is.pop_limit(old_limit);
                     self.dynamic_values.insert(key, value);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.target_index_list)?;
-                },
-                40 => {
-                    self.target_index_list.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.id = is.read_uint32()?;
-                },
-                16 => {
-                    self.level = is.read_uint32()?;
-                },
-                24 => {
-                    self.owner_index = is.read_uint32()?;
-                },
-                32 => {
-                    self.wave_flag = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -152,13 +152,6 @@ impl ::protobuf::Message for BattleBuff {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.dynamic_values {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += 1 + 4;
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.target_index_list);
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
@@ -171,22 +164,19 @@ impl ::protobuf::Message for BattleBuff {
         if self.wave_flag != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.wave_flag);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.target_index_list);
+        for (k, v) in &self.dynamic_values {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += 1 + 4;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.dynamic_values {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += 1 + 4;
-            os.write_raw_varint32(50)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_string(1, &k)?;
-            os.write_float(2, *v)?;
-        };
-        os.write_repeated_packed_uint32(5, &self.target_index_list)?;
         if self.id != 0 {
             os.write_uint32(1, self.id)?;
         }
@@ -199,6 +189,16 @@ impl ::protobuf::Message for BattleBuff {
         if self.wave_flag != 0 {
             os.write_uint32(4, self.wave_flag)?;
         }
+        os.write_repeated_packed_uint32(5, &self.target_index_list)?;
+        for (k, v) in &self.dynamic_values {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += 1 + 4;
+            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_string(1, &k)?;
+            os.write_float(2, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -216,12 +216,12 @@ impl ::protobuf::Message for BattleBuff {
     }
 
     fn clear(&mut self) {
-        self.dynamic_values.clear();
-        self.target_index_list.clear();
         self.id = 0;
         self.level = 0;
         self.owner_index = 0;
         self.wave_flag = 0;
+        self.target_index_list.clear();
+        self.dynamic_values.clear();
         self.special_fields.clear();
     }
 
@@ -249,14 +249,14 @@ impl ::protobuf::reflect::ProtobufValue for BattleBuff {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10BattleBuff.proto\"\xa5\x02\n\nBattleBuff\x12E\n\x0edynamic_values\
-    \x18\x06\x20\x03(\x0b2\x1e.BattleBuff.DynamicValuesEntryR\rdynamicValues\
-    \x12*\n\x11target_index_list\x18\x05\x20\x03(\rR\x0ftargetIndexList\x12\
-    \x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x02\x20\
-    \x01(\rR\x05level\x12\x1f\n\x0bowner_index\x18\x03\x20\x01(\rR\nownerInd\
-    ex\x12\x1b\n\twave_flag\x18\x04\x20\x01(\rR\x08waveFlag\x1a@\n\x12Dynami\
-    cValuesEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05va\
-    lue\x18\x02\x20\x01(\x02R\x05value:\x028\x01b\x06proto3\
+    \n\x10BattleBuff.proto\"\xa5\x02\n\nBattleBuff\x12\x0e\n\x02id\x18\x01\
+    \x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12\
+    \x1f\n\x0bowner_index\x18\x03\x20\x01(\rR\nownerIndex\x12\x1b\n\twave_fl\
+    ag\x18\x04\x20\x01(\rR\x08waveFlag\x12*\n\x11target_index_list\x18\x05\
+    \x20\x03(\rR\x0ftargetIndexList\x12E\n\x0edynamic_values\x18\x06\x20\x03\
+    (\x0b2\x1e.BattleBuff.DynamicValuesEntryR\rdynamicValues\x1a@\n\x12Dynam\
+    icValuesEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\x02R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

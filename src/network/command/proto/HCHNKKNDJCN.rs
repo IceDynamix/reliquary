@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HCHNKKNDJCN {
     // message fields
-    // @@protoc_insertion_point(field:HCHNKKNDJCN.CFNNMOCBBFM)
-    pub CFNNMOCBBFM: ::std::vec::Vec<super::LBBGLAHFJKN::LBBGLAHFJKN>,
-    // @@protoc_insertion_point(field:HCHNKKNDJCN.DKPKFELCMIC)
-    pub DKPKFELCMIC: u32,
     // @@protoc_insertion_point(field:HCHNKKNDJCN.KPJHKDOMEMJ)
     pub KPJHKDOMEMJ: u32,
+    // @@protoc_insertion_point(field:HCHNKKNDJCN.status_list)
+    pub status_list: ::std::vec::Vec<super::LBBGLAHFJKN::LBBGLAHFJKN>,
+    // @@protoc_insertion_point(field:HCHNKKNDJCN.mood)
+    pub mood: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HCHNKKNDJCN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl HCHNKKNDJCN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFNNMOCBBFM",
-            |m: &HCHNKKNDJCN| { &m.CFNNMOCBBFM },
-            |m: &mut HCHNKKNDJCN| { &mut m.CFNNMOCBBFM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKPKFELCMIC",
-            |m: &HCHNKKNDJCN| { &m.DKPKFELCMIC },
-            |m: &mut HCHNKKNDJCN| { &mut m.DKPKFELCMIC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KPJHKDOMEMJ",
             |m: &HCHNKKNDJCN| { &m.KPJHKDOMEMJ },
             |m: &mut HCHNKKNDJCN| { &mut m.KPJHKDOMEMJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "status_list",
+            |m: &HCHNKKNDJCN| { &m.status_list },
+            |m: &mut HCHNKKNDJCN| { &mut m.status_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "mood",
+            |m: &HCHNKKNDJCN| { &m.mood },
+            |m: &mut HCHNKKNDJCN| { &mut m.mood },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HCHNKKNDJCN>(
             "HCHNKKNDJCN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HCHNKKNDJCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.CFNNMOCBBFM.push(is.read_message()?);
+                64 => {
+                    self.KPJHKDOMEMJ = is.read_uint32()?;
                 },
-                24 => {
-                    self.DKPKFELCMIC = is.read_uint32()?;
+                98 => {
+                    self.status_list.push(is.read_message()?);
                 },
                 120 => {
-                    self.KPJHKDOMEMJ = is.read_uint32()?;
+                    self.mood = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for HCHNKKNDJCN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CFNNMOCBBFM {
+        if self.KPJHKDOMEMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KPJHKDOMEMJ);
+        }
+        for value in &self.status_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DKPKFELCMIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DKPKFELCMIC);
-        }
-        if self.KPJHKDOMEMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KPJHKDOMEMJ);
+        if self.mood != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.mood);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for HCHNKKNDJCN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CFNNMOCBBFM {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        if self.DKPKFELCMIC != 0 {
-            os.write_uint32(3, self.DKPKFELCMIC)?;
-        }
         if self.KPJHKDOMEMJ != 0 {
-            os.write_uint32(15, self.KPJHKDOMEMJ)?;
+            os.write_uint32(8, self.KPJHKDOMEMJ)?;
+        }
+        for v in &self.status_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.mood != 0 {
+            os.write_uint32(15, self.mood)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for HCHNKKNDJCN {
     }
 
     fn clear(&mut self) {
-        self.CFNNMOCBBFM.clear();
-        self.DKPKFELCMIC = 0;
         self.KPJHKDOMEMJ = 0;
+        self.status_list.clear();
+        self.mood = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HCHNKKNDJCN {
         static instance: HCHNKKNDJCN = HCHNKKNDJCN {
-            CFNNMOCBBFM: ::std::vec::Vec::new(),
-            DKPKFELCMIC: 0,
             KPJHKDOMEMJ: 0,
+            status_list: ::std::vec::Vec::new(),
+            mood: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for HCHNKKNDJCN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HCHNKKNDJCN.proto\x1a\x11LBBGLAHFJKN.proto\"\x81\x01\n\x0bHCHNKKND\
-    JCN\x12.\n\x0bCFNNMOCBBFM\x18\n\x20\x03(\x0b2\x0c.LBBGLAHFJKNR\x0bCFNNMO\
-    CBBFM\x12\x20\n\x0bDKPKFELCMIC\x18\x03\x20\x01(\rR\x0bDKPKFELCMIC\x12\
-    \x20\n\x0bKPJHKDOMEMJ\x18\x0f\x20\x01(\rR\x0bKPJHKDOMEMJb\x06proto3\
+    \n\x11HCHNKKNDJCN.proto\x1a\x11LBBGLAHFJKN.proto\"r\n\x0bHCHNKKNDJCN\x12\
+    \x20\n\x0bKPJHKDOMEMJ\x18\x08\x20\x01(\rR\x0bKPJHKDOMEMJ\x12-\n\x0bstatu\
+    s_list\x18\x0c\x20\x03(\x0b2\x0c.LBBGLAHFJKNR\nstatusList\x12\x12\n\x04m\
+    ood\x18\x0f\x20\x01(\rR\x04moodb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

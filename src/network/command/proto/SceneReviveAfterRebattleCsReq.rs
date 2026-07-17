@@ -72,7 +72,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                80 => {
                     self.NKDAAAGPCDB = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.NKDAAAGPCDB.value());
+            my_size += ::protobuf::rt::int32_size(10, self.NKDAAAGPCDB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SceneReviveAfterRebattleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SceneReviveAfterRebattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SceneReviveAfterRebattleCsReq.proto\x1a\x12RebattleType.proto\"P\n\
-    \x1dSceneReviveAfterRebattleCsReq\x12/\n\x0bNKDAAAGPCDB\x18\t\x20\x01(\
+    \x1dSceneReviveAfterRebattleCsReq\x12/\n\x0bNKDAAAGPCDB\x18\n\x20\x01(\
     \x0e2\r.RebattleTypeR\x0bNKDAAAGPCDBb\x06proto3\
 ";
 

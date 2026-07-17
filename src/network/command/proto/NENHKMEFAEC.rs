@@ -28,10 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NENHKMEFAEC {
     // message fields
-    // @@protoc_insertion_point(field:NENHKMEFAEC.JDFPKAMFHAP)
-    pub JDFPKAMFHAP: ::protobuf::MessageField<super::LAJGLHCCNED::LAJGLHCCNED>,
-    // @@protoc_insertion_point(field:NENHKMEFAEC.OJNGBIBGHBL)
-    pub OJNGBIBGHBL: u32,
     // @@protoc_insertion_point(field:NENHKMEFAEC.BCAKPNCHIIJ)
     pub BCAKPNCHIIJ: u32,
     // @@protoc_insertion_point(field:NENHKMEFAEC.reason)
@@ -53,18 +49,8 @@ impl NENHKMEFAEC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LAJGLHCCNED::LAJGLHCCNED>(
-            "JDFPKAMFHAP",
-            |m: &NENHKMEFAEC| { &m.JDFPKAMFHAP },
-            |m: &mut NENHKMEFAEC| { &mut m.JDFPKAMFHAP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJNGBIBGHBL",
-            |m: &NENHKMEFAEC| { &m.OJNGBIBGHBL },
-            |m: &mut NENHKMEFAEC| { &mut m.OJNGBIBGHBL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BCAKPNCHIIJ",
             |m: &NENHKMEFAEC| { &m.BCAKPNCHIIJ },
@@ -93,16 +79,10 @@ impl ::protobuf::Message for NENHKMEFAEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDFPKAMFHAP)?;
-                },
-                72 => {
-                    self.OJNGBIBGHBL = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.BCAKPNCHIIJ = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -117,18 +97,11 @@ impl ::protobuf::Message for NENHKMEFAEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JDFPKAMFHAP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.OJNGBIBGHBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OJNGBIBGHBL);
-        }
         if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BCAKPNCHIIJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.BCAKPNCHIIJ);
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(9, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +109,11 @@ impl ::protobuf::Message for NENHKMEFAEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JDFPKAMFHAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.OJNGBIBGHBL != 0 {
-            os.write_uint32(9, self.OJNGBIBGHBL)?;
-        }
         if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(6, self.BCAKPNCHIIJ)?;
+            os.write_uint32(4, self.BCAKPNCHIIJ)?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +132,6 @@ impl ::protobuf::Message for NENHKMEFAEC {
     }
 
     fn clear(&mut self) {
-        self.JDFPKAMFHAP.clear();
-        self.OJNGBIBGHBL = 0;
         self.BCAKPNCHIIJ = 0;
         self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.special_fields.clear();
@@ -174,8 +139,6 @@ impl ::protobuf::Message for NENHKMEFAEC {
 
     fn default_instance() -> &'static NENHKMEFAEC {
         static instance: NENHKMEFAEC = NENHKMEFAEC {
-            JDFPKAMFHAP: ::protobuf::MessageField::none(),
-            OJNGBIBGHBL: 0,
             BCAKPNCHIIJ: 0,
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,12 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NENHKMEFAEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NENHKMEFAEC.proto\x1a\x11LAJGLHCCNED.proto\x1a\x11NPPEMMILLCO.prot\
-    o\"\xa7\x01\n\x0bNENHKMEFAEC\x12.\n\x0bJDFPKAMFHAP\x18\x04\x20\x01(\x0b2\
-    \x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12\x20\n\x0bOJNGBIBGHBL\x18\t\x20\x01(\
-    \rR\x0bOJNGBIBGHBL\x12\x20\n\x0bBCAKPNCHIIJ\x18\x06\x20\x01(\rR\x0bBCAKP\
-    NCHIIJ\x12$\n\x06reason\x18\x0f\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\
-    b\x06proto3\
+    \n\x11NENHKMEFAEC.proto\x1a\x11NPPEMMILLCO.proto\"U\n\x0bNENHKMEFAEC\x12\
+    \x20\n\x0bBCAKPNCHIIJ\x18\x04\x20\x01(\rR\x0bBCAKPNCHIIJ\x12$\n\x06reaso\
+    n\x18\t\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,8 +184,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::LAJGLHCCNED::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::NPPEMMILLCO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NENHKMEFAEC::generated_message_descriptor_data());

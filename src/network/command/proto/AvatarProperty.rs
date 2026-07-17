@@ -34,14 +34,14 @@ pub struct AvatarProperty {
     pub attack: f64,
     // @@protoc_insertion_point(field:AvatarProperty.defence)
     pub defence: f64,
-    // @@protoc_insertion_point(field:AvatarProperty.left_sp)
-    pub left_sp: f64,
-    // @@protoc_insertion_point(field:AvatarProperty.max_sp)
-    pub max_sp: f64,
     // @@protoc_insertion_point(field:AvatarProperty.speed)
     pub speed: f64,
     // @@protoc_insertion_point(field:AvatarProperty.left_hp)
     pub left_hp: f64,
+    // @@protoc_insertion_point(field:AvatarProperty.left_sp)
+    pub left_sp: f64,
+    // @@protoc_insertion_point(field:AvatarProperty.max_sp)
+    pub max_sp: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -77,16 +77,6 @@ impl AvatarProperty {
             |m: &mut AvatarProperty| { &mut m.defence },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "left_sp",
-            |m: &AvatarProperty| { &m.left_sp },
-            |m: &mut AvatarProperty| { &mut m.left_sp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_sp",
-            |m: &AvatarProperty| { &m.max_sp },
-            |m: &mut AvatarProperty| { &mut m.max_sp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "speed",
             |m: &AvatarProperty| { &m.speed },
             |m: &mut AvatarProperty| { &mut m.speed },
@@ -95,6 +85,16 @@ impl AvatarProperty {
             "left_hp",
             |m: &AvatarProperty| { &m.left_hp },
             |m: &mut AvatarProperty| { &mut m.left_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "left_sp",
+            |m: &AvatarProperty| { &m.left_sp },
+            |m: &mut AvatarProperty| { &mut m.left_sp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_sp",
+            |m: &AvatarProperty| { &m.max_sp },
+            |m: &mut AvatarProperty| { &mut m.max_sp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarProperty>(
             "AvatarProperty",
@@ -123,17 +123,17 @@ impl ::protobuf::Message for AvatarProperty {
                 25 => {
                     self.defence = is.read_double()?;
                 },
-                49 => {
-                    self.left_sp = is.read_double()?;
-                },
-                57 => {
-                    self.max_sp = is.read_double()?;
-                },
                 33 => {
                     self.speed = is.read_double()?;
                 },
                 41 => {
                     self.left_hp = is.read_double()?;
+                },
+                49 => {
+                    self.left_sp = is.read_double()?;
+                },
+                57 => {
+                    self.max_sp = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -156,16 +156,16 @@ impl ::protobuf::Message for AvatarProperty {
         if self.defence != 0. {
             my_size += 1 + 8;
         }
-        if self.left_sp != 0. {
-            my_size += 1 + 8;
-        }
-        if self.max_sp != 0. {
-            my_size += 1 + 8;
-        }
         if self.speed != 0. {
             my_size += 1 + 8;
         }
         if self.left_hp != 0. {
+            my_size += 1 + 8;
+        }
+        if self.left_sp != 0. {
+            my_size += 1 + 8;
+        }
+        if self.max_sp != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -183,17 +183,17 @@ impl ::protobuf::Message for AvatarProperty {
         if self.defence != 0. {
             os.write_double(3, self.defence)?;
         }
-        if self.left_sp != 0. {
-            os.write_double(6, self.left_sp)?;
-        }
-        if self.max_sp != 0. {
-            os.write_double(7, self.max_sp)?;
-        }
         if self.speed != 0. {
             os.write_double(4, self.speed)?;
         }
         if self.left_hp != 0. {
             os.write_double(5, self.left_hp)?;
+        }
+        if self.left_sp != 0. {
+            os.write_double(6, self.left_sp)?;
+        }
+        if self.max_sp != 0. {
+            os.write_double(7, self.max_sp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -215,10 +215,10 @@ impl ::protobuf::Message for AvatarProperty {
         self.max_hp = 0.;
         self.attack = 0.;
         self.defence = 0.;
-        self.left_sp = 0.;
-        self.max_sp = 0.;
         self.speed = 0.;
         self.left_hp = 0.;
+        self.left_sp = 0.;
+        self.max_sp = 0.;
         self.special_fields.clear();
     }
 
@@ -227,10 +227,10 @@ impl ::protobuf::Message for AvatarProperty {
             max_hp: 0.,
             attack: 0.,
             defence: 0.,
-            left_sp: 0.,
-            max_sp: 0.,
             speed: 0.,
             left_hp: 0.,
+            left_sp: 0.,
+            max_sp: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,10 +258,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14AvatarProperty.proto\"\xb8\x01\n\x0eAvatarProperty\x12\x15\n\x06ma\
     x_hp\x18\x01\x20\x01(\x01R\x05maxHp\x12\x16\n\x06attack\x18\x02\x20\x01(\
     \x01R\x06attack\x12\x18\n\x07defence\x18\x03\x20\x01(\x01R\x07defence\
-    \x12\x17\n\x07left_sp\x18\x06\x20\x01(\x01R\x06leftSp\x12\x15\n\x06max_s\
-    p\x18\x07\x20\x01(\x01R\x05maxSp\x12\x14\n\x05speed\x18\x04\x20\x01(\x01\
-    R\x05speed\x12\x17\n\x07left_hp\x18\x05\x20\x01(\x01R\x06leftHpb\x06prot\
-    o3\
+    \x12\x14\n\x05speed\x18\x04\x20\x01(\x01R\x05speed\x12\x17\n\x07left_hp\
+    \x18\x05\x20\x01(\x01R\x06leftHp\x12\x17\n\x07left_sp\x18\x06\x20\x01(\
+    \x01R\x06leftSp\x12\x15\n\x06max_sp\x18\x07\x20\x01(\x01R\x05maxSpb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

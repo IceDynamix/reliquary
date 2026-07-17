@@ -82,7 +82,7 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
                 98 => {
                     self.item_list.push(is.read_message()?);
                 },
-                48 => {
+                104 => {
                     self.section_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.section_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.section_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for FinishPerformSectionIdCsReq {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.section_id != 0 {
-            os.write_uint32(6, self.section_id)?;
+            os.write_uint32(13, self.section_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishPerformSectionIdCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FinishPerformSectionIdCsReq.proto\x1a\x11MessageItem.proto\"g\n\x1bFi\
     nishPerformSectionIdCsReq\x12)\n\titem_list\x18\x0c\x20\x03(\x0b2\x0c.Me\
-    ssageItemR\x08itemList\x12\x1d\n\nsection_id\x18\x06\x20\x01(\rR\tsectio\
-    nIdb\x06proto3\
+    ssageItemR\x08itemList\x12\x1d\n\nsection_id\x18\r\x20\x01(\rR\tsectionI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

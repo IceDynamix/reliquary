@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournGetSettleInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournGetSettleInfoScRsp.BFLLJJBHLDF)
-    pub BFLLJJBHLDF: ::protobuf::MessageField<super::FAICNBKIELL::FAICNBKIELL>,
     // @@protoc_insertion_point(field:RogueTournGetSettleInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournGetSettleInfoScRsp.BFLLJJBHLDF)
+    pub BFLLJJBHLDF: ::protobuf::MessageField<super::FAICNBKIELL::FAICNBKIELL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournGetSettleInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueTournGetSettleInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAICNBKIELL::FAICNBKIELL>(
-            "BFLLJJBHLDF",
-            |m: &RogueTournGetSettleInfoScRsp| { &m.BFLLJJBHLDF },
-            |m: &mut RogueTournGetSettleInfoScRsp| { &mut m.BFLLJJBHLDF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournGetSettleInfoScRsp| { &m.retcode },
             |m: &mut RogueTournGetSettleInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAICNBKIELL::FAICNBKIELL>(
+            "BFLLJJBHLDF",
+            |m: &RogueTournGetSettleInfoScRsp| { &m.BFLLJJBHLDF },
+            |m: &mut RogueTournGetSettleInfoScRsp| { &mut m.BFLLJJBHLDF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournGetSettleInfoScRsp>(
             "RogueTournGetSettleInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournGetSettleInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
-                },
-                96 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueTournGetSettleInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         if let Some(v) = self.BFLLJJBHLDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournGetSettleInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournGetSettleInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.BFLLJJBHLDF.clear();
         self.retcode = 0;
+        self.BFLLJJBHLDF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournGetSettleInfoScRsp {
         static instance: RogueTournGetSettleInfoScRsp = RogueTournGetSettleInfoScRsp {
-            BFLLJJBHLDF: ::protobuf::MessageField::none(),
             retcode: 0,
+            BFLLJJBHLDF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournGetSettleInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournGetSettleInfoScRsp.proto\x1a\x11FAICNBKIELL.proto\"h\n\x1c\
-    RogueTournGetSettleInfoScRsp\x12.\n\x0bBFLLJJBHLDF\x18\x0f\x20\x01(\x0b2\
-    \x0c.FAICNBKIELLR\x0bBFLLJJBHLDF\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    RogueTournGetSettleInfoScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bBFLLJJBHLDF\x18\t\x20\x01(\x0b2\x0c.FAICNBKIELLR\
+    \x0bBFLLJJBHLDFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

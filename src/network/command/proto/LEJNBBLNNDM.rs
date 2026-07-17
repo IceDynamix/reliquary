@@ -30,8 +30,8 @@ pub struct LEJNBBLNNDM {
     // message fields
     // @@protoc_insertion_point(field:LEJNBBLNNDM.source)
     pub source: ::protobuf::MessageField<super::OBEBKODGODB::OBEBKODGODB>,
-    // @@protoc_insertion_point(field:LEJNBBLNNDM.BBEHHCHKMNL)
-    pub BBEHHCHKMNL: ::protobuf::MessageField<super::EPKGFJDJMHM::EPKGFJDJMHM>,
+    // @@protoc_insertion_point(field:LEJNBBLNNDM.detail)
+    pub detail: ::protobuf::MessageField<super::EPKGFJDJMHM::EPKGFJDJMHM>,
     // special fields
     // @@protoc_insertion_point(special_field:LEJNBBLNNDM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl LEJNBBLNNDM {
             |m: &mut LEJNBBLNNDM| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPKGFJDJMHM::EPKGFJDJMHM>(
-            "BBEHHCHKMNL",
-            |m: &LEJNBBLNNDM| { &m.BBEHHCHKMNL },
-            |m: &mut LEJNBBLNNDM| { &mut m.BBEHHCHKMNL },
+            "detail",
+            |m: &LEJNBBLNNDM| { &m.detail },
+            |m: &mut LEJNBBLNNDM| { &mut m.detail },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEJNBBLNNDM>(
             "LEJNBBLNNDM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LEJNBBLNNDM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEHHCHKMNL)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LEJNBBLNNDM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
+        if let Some(v) = self.detail.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for LEJNBBLNNDM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.BBEHHCHKMNL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.detail.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for LEJNBBLNNDM {
 
     fn clear(&mut self) {
         self.source.clear();
-        self.BBEHHCHKMNL.clear();
+        self.detail.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LEJNBBLNNDM {
         static instance: LEJNBBLNNDM = LEJNBBLNNDM {
             source: ::protobuf::MessageField::none(),
-            BBEHHCHKMNL: ::protobuf::MessageField::none(),
+            detail: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for LEJNBBLNNDM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEJNBBLNNDM.proto\x1a\x11EPKGFJDJMHM.proto\x1a\x11OBEBKODGODB.prot\
-    o\"c\n\x0bLEJNBBLNNDM\x12$\n\x06source\x18\x04\x20\x01(\x0b2\x0c.OBEBKOD\
-    GODBR\x06source\x12.\n\x0bBBEHHCHKMNL\x18\x0c\x20\x01(\x0b2\x0c.EPKGFJDJ\
-    MHMR\x0bBBEHHCHKMNLb\x06proto3\
+    o\"Y\n\x0bLEJNBBLNNDM\x12$\n\x06source\x18\x06\x20\x01(\x0b2\x0c.OBEBKOD\
+    GODBR\x06source\x12$\n\x06detail\x18\x07\x20\x01(\x0b2\x0c.EPKGFJDJMHMR\
+    \x06detailb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

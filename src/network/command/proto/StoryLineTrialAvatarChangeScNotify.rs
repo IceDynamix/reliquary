@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StoryLineTrialAvatarChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.ILIDIIGALKD)
-    pub ILIDIIGALKD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.EDBMIFNEHHH)
     pub EDBMIFNEHHH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.ILIDIIGALKD)
+    pub ILIDIIGALKD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StoryLineTrialAvatarChangeScNotify.OLPNMKAPDLP)
     pub OLPNMKAPDLP: bool,
     // special fields
@@ -54,14 +54,14 @@ impl StoryLineTrialAvatarChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ILIDIIGALKD",
-            |m: &StoryLineTrialAvatarChangeScNotify| { &m.ILIDIIGALKD },
-            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.ILIDIIGALKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EDBMIFNEHHH",
             |m: &StoryLineTrialAvatarChangeScNotify| { &m.EDBMIFNEHHH },
             |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.EDBMIFNEHHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ILIDIIGALKD",
+            |m: &StoryLineTrialAvatarChangeScNotify| { &m.ILIDIIGALKD },
+            |m: &mut StoryLineTrialAvatarChangeScNotify| { &mut m.ILIDIIGALKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLPNMKAPDLP",
@@ -86,19 +86,19 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ILIDIIGALKD)?;
-                },
-                32 => {
-                    self.ILIDIIGALKD.push(is.read_uint32()?);
-                },
-                26 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.EDBMIFNEHHH)?;
                 },
-                24 => {
+                8 => {
                     self.EDBMIFNEHHH.push(is.read_uint32()?);
                 },
-                104 => {
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ILIDIIGALKD)?;
+                },
+                16 => {
+                    self.ILIDIIGALKD.push(is.read_uint32()?);
+                },
+                48 => {
                     self.OLPNMKAPDLP = is.read_bool()?;
                 },
                 tag => {
@@ -113,8 +113,8 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ILIDIIGALKD);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EDBMIFNEHHH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.EDBMIFNEHHH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ILIDIIGALKD);
         if self.OLPNMKAPDLP != false {
             my_size += 1 + 1;
         }
@@ -124,10 +124,10 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.ILIDIIGALKD)?;
-        os.write_repeated_packed_uint32(3, &self.EDBMIFNEHHH)?;
+        os.write_repeated_packed_uint32(1, &self.EDBMIFNEHHH)?;
+        os.write_repeated_packed_uint32(2, &self.ILIDIIGALKD)?;
         if self.OLPNMKAPDLP != false {
-            os.write_bool(13, self.OLPNMKAPDLP)?;
+            os.write_bool(6, self.OLPNMKAPDLP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -146,16 +146,16 @@ impl ::protobuf::Message for StoryLineTrialAvatarChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.ILIDIIGALKD.clear();
         self.EDBMIFNEHHH.clear();
+        self.ILIDIIGALKD.clear();
         self.OLPNMKAPDLP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StoryLineTrialAvatarChangeScNotify {
         static instance: StoryLineTrialAvatarChangeScNotify = StoryLineTrialAvatarChangeScNotify {
-            ILIDIIGALKD: ::std::vec::Vec::new(),
             EDBMIFNEHHH: ::std::vec::Vec::new(),
+            ILIDIIGALKD: ::std::vec::Vec::new(),
             OLPNMKAPDLP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineTrialAvatarChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(StoryLineTrialAvatarChangeScNotify.proto\"\x8a\x01\n\"StoryLineTrialA\
-    vatarChangeScNotify\x12\x20\n\x0bILIDIIGALKD\x18\x04\x20\x03(\rR\x0bILID\
-    IIGALKD\x12\x20\n\x0bEDBMIFNEHHH\x18\x03\x20\x03(\rR\x0bEDBMIFNEHHH\x12\
-    \x20\n\x0bOLPNMKAPDLP\x18\r\x20\x01(\x08R\x0bOLPNMKAPDLPb\x06proto3\
+    vatarChangeScNotify\x12\x20\n\x0bEDBMIFNEHHH\x18\x01\x20\x03(\rR\x0bEDBM\
+    IFNEHHH\x12\x20\n\x0bILIDIIGALKD\x18\x02\x20\x03(\rR\x0bILIDIIGALKD\x12\
+    \x20\n\x0bOLPNMKAPDLP\x18\x06\x20\x01(\x08R\x0bOLPNMKAPDLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

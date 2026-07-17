@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAAIMLDHJCI {
     // message fields
+    // @@protoc_insertion_point(field:PAAIMLDHJCI.NELOAKJAABI)
+    pub NELOAKJAABI: u32,
     // @@protoc_insertion_point(field:PAAIMLDHJCI.max_score)
     pub max_score: u32,
     // @@protoc_insertion_point(field:PAAIMLDHJCI.KKNGIFOJLGJ)
     pub KKNGIFOJLGJ: u32,
-    // @@protoc_insertion_point(field:PAAIMLDHJCI.NELOAKJAABI)
-    pub NELOAKJAABI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PAAIMLDHJCI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl PAAIMLDHJCI {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NELOAKJAABI",
+            |m: &PAAIMLDHJCI| { &m.NELOAKJAABI },
+            |m: &mut PAAIMLDHJCI| { &mut m.NELOAKJAABI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "max_score",
             |m: &PAAIMLDHJCI| { &m.max_score },
             |m: &mut PAAIMLDHJCI| { &mut m.max_score },
@@ -62,11 +67,6 @@ impl PAAIMLDHJCI {
             "KKNGIFOJLGJ",
             |m: &PAAIMLDHJCI| { &m.KKNGIFOJLGJ },
             |m: &mut PAAIMLDHJCI| { &mut m.KKNGIFOJLGJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NELOAKJAABI",
-            |m: &PAAIMLDHJCI| { &m.NELOAKJAABI },
-            |m: &mut PAAIMLDHJCI| { &mut m.NELOAKJAABI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAAIMLDHJCI>(
             "PAAIMLDHJCI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PAAIMLDHJCI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
+                    self.NELOAKJAABI = is.read_uint32()?;
+                },
+                40 => {
                     self.max_score = is.read_uint32()?;
                 },
-                64 => {
+                96 => {
                     self.KKNGIFOJLGJ = is.read_uint32()?;
-                },
-                88 => {
-                    self.NELOAKJAABI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PAAIMLDHJCI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NELOAKJAABI != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NELOAKJAABI);
+        }
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(5, self.max_score);
         }
         if self.KKNGIFOJLGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KKNGIFOJLGJ);
-        }
-        if self.NELOAKJAABI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NELOAKJAABI);
+            my_size += ::protobuf::rt::uint32_size(12, self.KKNGIFOJLGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PAAIMLDHJCI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NELOAKJAABI != 0 {
+            os.write_uint32(4, self.NELOAKJAABI)?;
+        }
         if self.max_score != 0 {
-            os.write_uint32(7, self.max_score)?;
+            os.write_uint32(5, self.max_score)?;
         }
         if self.KKNGIFOJLGJ != 0 {
-            os.write_uint32(8, self.KKNGIFOJLGJ)?;
-        }
-        if self.NELOAKJAABI != 0 {
-            os.write_uint32(11, self.NELOAKJAABI)?;
+            os.write_uint32(12, self.KKNGIFOJLGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PAAIMLDHJCI {
     }
 
     fn clear(&mut self) {
+        self.NELOAKJAABI = 0;
         self.max_score = 0;
         self.KKNGIFOJLGJ = 0;
-        self.NELOAKJAABI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAAIMLDHJCI {
         static instance: PAAIMLDHJCI = PAAIMLDHJCI {
+            NELOAKJAABI: 0,
             max_score: 0,
             KKNGIFOJLGJ: 0,
-            NELOAKJAABI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PAAIMLDHJCI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PAAIMLDHJCI.proto\"n\n\x0bPAAIMLDHJCI\x12\x1b\n\tmax_score\x18\x07\
-    \x20\x01(\rR\x08maxScore\x12\x20\n\x0bKKNGIFOJLGJ\x18\x08\x20\x01(\rR\
-    \x0bKKNGIFOJLGJ\x12\x20\n\x0bNELOAKJAABI\x18\x0b\x20\x01(\rR\x0bNELOAKJA\
-    ABIb\x06proto3\
+    \n\x11PAAIMLDHJCI.proto\"n\n\x0bPAAIMLDHJCI\x12\x20\n\x0bNELOAKJAABI\x18\
+    \x04\x20\x01(\rR\x0bNELOAKJAABI\x12\x1b\n\tmax_score\x18\x05\x20\x01(\rR\
+    \x08maxScore\x12\x20\n\x0bKKNGIFOJLGJ\x18\x0c\x20\x01(\rR\x0bKKNGIFOJLGJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

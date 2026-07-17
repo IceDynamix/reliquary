@@ -82,7 +82,7 @@ impl ::protobuf::Message for BNHBDMIDFCL {
                 104 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                6674 => {
+                8426 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DOKPHNPNCPN)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for BNHBDMIDFCL {
             os.write_uint32(13, self.unique_id)?;
         }
         if let Some(v) = self.DOKPHNPNCPN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(834, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1053, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for BNHBDMIDFCL {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BNHBDMIDFCL.proto\x1a\x11JAAJAPNFMGO.proto\"[\n\x0bBNHBDMIDFCL\x12\
     \x1b\n\tunique_id\x18\r\x20\x01(\rR\x08uniqueId\x12/\n\x0bDOKPHNPNCPN\
-    \x18\xc2\x06\x20\x01(\x0b2\x0c.JAAJAPNFMGOR\x0bDOKPHNPNCPNb\x06proto3\
+    \x18\x9d\x08\x20\x01(\x0b2\x0c.JAAJAPNFMGOR\x0bDOKPHNPNCPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

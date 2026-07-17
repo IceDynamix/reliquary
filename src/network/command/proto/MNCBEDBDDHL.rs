@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MNCBEDBDDHL {
     // message fields
-    // @@protoc_insertion_point(field:MNCBEDBDDHL.NNJCEINOEHH)
-    pub NNJCEINOEHH: ::std::vec::Vec<super::AAKECCJELLI::AAKECCJELLI>,
     // @@protoc_insertion_point(field:MNCBEDBDDHL.JKNLCEEDAHJ)
     pub JKNLCEEDAHJ: ::protobuf::MessageField<super::KHADHDLCNOI::KHADHDLCNOI>,
+    // @@protoc_insertion_point(field:MNCBEDBDDHL.NNJCEINOEHH)
+    pub NNJCEINOEHH: ::std::vec::Vec<super::AAKECCJELLI::AAKECCJELLI>,
     // @@protoc_insertion_point(field:MNCBEDBDDHL.PGPNCNABHAM)
     pub PGPNCNABHAM: bool,
     // special fields
@@ -53,15 +53,15 @@ impl MNCBEDBDDHL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NNJCEINOEHH",
-            |m: &MNCBEDBDDHL| { &m.NNJCEINOEHH },
-            |m: &mut MNCBEDBDDHL| { &mut m.NNJCEINOEHH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KHADHDLCNOI::KHADHDLCNOI>(
             "JKNLCEEDAHJ",
             |m: &MNCBEDBDDHL| { &m.JKNLCEEDAHJ },
             |m: &mut MNCBEDBDDHL| { &mut m.JKNLCEEDAHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NNJCEINOEHH",
+            |m: &MNCBEDBDDHL| { &m.NNJCEINOEHH },
+            |m: &mut MNCBEDBDDHL| { &mut m.NNJCEINOEHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PGPNCNABHAM",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for MNCBEDBDDHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.NNJCEINOEHH.push(is.read_message()?);
-                },
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JKNLCEEDAHJ)?;
+                },
+                18 => {
+                    self.NNJCEINOEHH.push(is.read_message()?);
                 },
                 24 => {
                     self.PGPNCNABHAM = is.read_bool()?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MNCBEDBDDHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NNJCEINOEHH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.JKNLCEEDAHJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.NNJCEINOEHH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.PGPNCNABHAM != false {
             my_size += 1 + 1;
         }
@@ -124,12 +124,12 @@ impl ::protobuf::Message for MNCBEDBDDHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NNJCEINOEHH {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if let Some(v) = self.JKNLCEEDAHJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
+        for v in &self.NNJCEINOEHH {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         if self.PGPNCNABHAM != false {
             os.write_bool(3, self.PGPNCNABHAM)?;
         }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MNCBEDBDDHL {
     }
 
     fn clear(&mut self) {
-        self.NNJCEINOEHH.clear();
         self.JKNLCEEDAHJ.clear();
+        self.NNJCEINOEHH.clear();
         self.PGPNCNABHAM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MNCBEDBDDHL {
         static instance: MNCBEDBDDHL = MNCBEDBDDHL {
-            NNJCEINOEHH: ::std::vec::Vec::new(),
             JKNLCEEDAHJ: ::protobuf::MessageField::none(),
+            NNJCEINOEHH: ::std::vec::Vec::new(),
             PGPNCNABHAM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for MNCBEDBDDHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MNCBEDBDDHL.proto\x1a\x11AAKECCJELLI.proto\x1a\x11KHADHDLCNOI.prot\
-    o\"\x8f\x01\n\x0bMNCBEDBDDHL\x12.\n\x0bNNJCEINOEHH\x18\x02\x20\x03(\x0b2\
-    \x0c.AAKECCJELLIR\x0bNNJCEINOEHH\x12.\n\x0bJKNLCEEDAHJ\x18\x01\x20\x01(\
-    \x0b2\x0c.KHADHDLCNOIR\x0bJKNLCEEDAHJ\x12\x20\n\x0bPGPNCNABHAM\x18\x03\
+    o\"\x8f\x01\n\x0bMNCBEDBDDHL\x12.\n\x0bJKNLCEEDAHJ\x18\x01\x20\x01(\x0b2\
+    \x0c.KHADHDLCNOIR\x0bJKNLCEEDAHJ\x12.\n\x0bNNJCEINOEHH\x18\x02\x20\x03(\
+    \x0b2\x0c.AAKECCJELLIR\x0bNNJCEINOEHH\x12\x20\n\x0bPGPNCNABHAM\x18\x03\
     \x20\x01(\x08R\x0bPGPNCNABHAMb\x06proto3\
 ";
 

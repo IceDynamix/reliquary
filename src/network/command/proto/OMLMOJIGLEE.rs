@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMLMOJIGLEE {
     // message fields
-    // @@protoc_insertion_point(field:OMLMOJIGLEE.KINNMAGDDJJ)
-    pub KINNMAGDDJJ: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OMLMOJIGLEE.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OMLMOJIGLEE.KAHMGPGPOII)
@@ -38,6 +36,8 @@ pub struct OMLMOJIGLEE {
     pub BELPGDAGFIH: bool,
     // @@protoc_insertion_point(field:OMLMOJIGLEE.GCIHGKCJOGB)
     pub GCIHGKCJOGB: bool,
+    // @@protoc_insertion_point(field:OMLMOJIGLEE.KINNMAGDDJJ)
+    pub KINNMAGDDJJ: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // special fields
     // @@protoc_insertion_point(special_field:OMLMOJIGLEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,11 +58,6 @@ impl OMLMOJIGLEE {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "KINNMAGDDJJ",
-            |m: &OMLMOJIGLEE| { &m.KINNMAGDDJJ },
-            |m: &mut OMLMOJIGLEE| { &mut m.KINNMAGDDJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
             |m: &OMLMOJIGLEE| { &m.cost_data },
             |m: &mut OMLMOJIGLEE| { &mut m.cost_data },
@@ -82,6 +77,11 @@ impl OMLMOJIGLEE {
             |m: &OMLMOJIGLEE| { &m.GCIHGKCJOGB },
             |m: &mut OMLMOJIGLEE| { &mut m.GCIHGKCJOGB },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "KINNMAGDDJJ",
+            |m: &OMLMOJIGLEE| { &m.KINNMAGDDJJ },
+            |m: &mut OMLMOJIGLEE| { &mut m.KINNMAGDDJJ },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMLMOJIGLEE>(
             "OMLMOJIGLEE",
             fields,
@@ -100,20 +100,20 @@ impl ::protobuf::Message for OMLMOJIGLEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KINNMAGDDJJ)?;
-                },
-                74 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                8 => {
+                32 => {
                     self.KAHMGPGPOII = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.BELPGDAGFIH = is.read_bool()?;
                 },
-                104 => {
+                88 => {
                     self.GCIHGKCJOGB = is.read_bool()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KINNMAGDDJJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for OMLMOJIGLEE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KINNMAGDDJJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KAHMGPGPOII != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KAHMGPGPOII);
+            my_size += ::protobuf::rt::uint32_size(4, self.KAHMGPGPOII);
         }
         if self.BELPGDAGFIH != false {
             my_size += 1 + 1;
         }
         if self.GCIHGKCJOGB != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.KINNMAGDDJJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for OMLMOJIGLEE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KINNMAGDDJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.KAHMGPGPOII != 0 {
-            os.write_uint32(1, self.KAHMGPGPOII)?;
+            os.write_uint32(4, self.KAHMGPGPOII)?;
         }
         if self.BELPGDAGFIH != false {
-            os.write_bool(8, self.BELPGDAGFIH)?;
+            os.write_bool(5, self.BELPGDAGFIH)?;
         }
         if self.GCIHGKCJOGB != false {
-            os.write_bool(13, self.GCIHGKCJOGB)?;
+            os.write_bool(11, self.GCIHGKCJOGB)?;
+        }
+        if let Some(v) = self.KINNMAGDDJJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for OMLMOJIGLEE {
     }
 
     fn clear(&mut self) {
-        self.KINNMAGDDJJ.clear();
         self.cost_data.clear();
         self.KAHMGPGPOII = 0;
         self.BELPGDAGFIH = false;
         self.GCIHGKCJOGB = false;
+        self.KINNMAGDDJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMLMOJIGLEE {
         static instance: OMLMOJIGLEE = OMLMOJIGLEE {
-            KINNMAGDDJJ: ::protobuf::MessageField::none(),
             cost_data: ::protobuf::MessageField::none(),
             KAHMGPGPOII: 0,
             BELPGDAGFIH: false,
             GCIHGKCJOGB: false,
+            KINNMAGDDJJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for OMLMOJIGLEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMLMOJIGLEE.proto\x1a\x12ItemCostData.proto\"\xd0\x01\n\x0bOMLMOJI\
-    GLEE\x12/\n\x0bKINNMAGDDJJ\x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x0bKINN\
-    MAGDDJJ\x12*\n\tcost_data\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x08costDat\
-    a\x12\x20\n\x0bKAHMGPGPOII\x18\x01\x20\x01(\rR\x0bKAHMGPGPOII\x12\x20\n\
-    \x0bBELPGDAGFIH\x18\x08\x20\x01(\x08R\x0bBELPGDAGFIH\x12\x20\n\x0bGCIHGK\
-    CJOGB\x18\r\x20\x01(\x08R\x0bGCIHGKCJOGBb\x06proto3\
+    GLEE\x12*\n\tcost_data\x18\x01\x20\x01(\x0b2\r.ItemCostDataR\x08costData\
+    \x12\x20\n\x0bKAHMGPGPOII\x18\x04\x20\x01(\rR\x0bKAHMGPGPOII\x12\x20\n\
+    \x0bBELPGDAGFIH\x18\x05\x20\x01(\x08R\x0bBELPGDAGFIH\x12\x20\n\x0bGCIHGK\
+    CJOGB\x18\x0b\x20\x01(\x08R\x0bGCIHGKCJOGB\x12/\n\x0bKINNMAGDDJJ\x18\x0f\
+    \x20\x01(\x0b2\r.ItemCostDataR\x0bKINNMAGDDJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

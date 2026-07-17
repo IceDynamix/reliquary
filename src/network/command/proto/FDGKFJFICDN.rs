@@ -30,8 +30,8 @@ pub struct FDGKFJFICDN {
     // message fields
     // @@protoc_insertion_point(field:FDGKFJFICDN.OCPEPEMNNEK)
     pub OCPEPEMNNEK: u32,
-    // @@protoc_insertion_point(field:FDGKFJFICDN.PNJEGPAFNCI)
-    pub PNJEGPAFNCI: f64,
+    // @@protoc_insertion_point(field:FDGKFJFICDN.delay)
+    pub delay: f64,
     // special fields
     // @@protoc_insertion_point(special_field:FDGKFJFICDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FDGKFJFICDN {
             |m: &mut FDGKFJFICDN| { &mut m.OCPEPEMNNEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJEGPAFNCI",
-            |m: &FDGKFJFICDN| { &m.PNJEGPAFNCI },
-            |m: &mut FDGKFJFICDN| { &mut m.PNJEGPAFNCI },
+            "delay",
+            |m: &FDGKFJFICDN| { &m.delay },
+            |m: &mut FDGKFJFICDN| { &mut m.delay },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FDGKFJFICDN>(
             "FDGKFJFICDN",
@@ -83,7 +83,7 @@ impl ::protobuf::Message for FDGKFJFICDN {
                     self.OCPEPEMNNEK = is.read_uint32()?;
                 },
                 17 => {
-                    self.PNJEGPAFNCI = is.read_double()?;
+                    self.delay = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for FDGKFJFICDN {
         if self.OCPEPEMNNEK != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.OCPEPEMNNEK);
         }
-        if self.PNJEGPAFNCI != 0. {
+        if self.delay != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -112,8 +112,8 @@ impl ::protobuf::Message for FDGKFJFICDN {
         if self.OCPEPEMNNEK != 0 {
             os.write_uint32(1, self.OCPEPEMNNEK)?;
         }
-        if self.PNJEGPAFNCI != 0. {
-            os.write_double(2, self.PNJEGPAFNCI)?;
+        if self.delay != 0. {
+            os.write_double(2, self.delay)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for FDGKFJFICDN {
 
     fn clear(&mut self) {
         self.OCPEPEMNNEK = 0;
-        self.PNJEGPAFNCI = 0.;
+        self.delay = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FDGKFJFICDN {
         static instance: FDGKFJFICDN = FDGKFJFICDN {
             OCPEPEMNNEK: 0,
-            PNJEGPAFNCI: 0.,
+            delay: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FDGKFJFICDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FDGKFJFICDN.proto\"Q\n\x0bFDGKFJFICDN\x12\x20\n\x0bOCPEPEMNNEK\x18\
-    \x01\x20\x01(\rR\x0bOCPEPEMNNEK\x12\x20\n\x0bPNJEGPAFNCI\x18\x02\x20\x01\
-    (\x01R\x0bPNJEGPAFNCIb\x06proto3\
+    \n\x11FDGKFJFICDN.proto\"E\n\x0bFDGKFJFICDN\x12\x20\n\x0bOCPEPEMNNEK\x18\
+    \x01\x20\x01(\rR\x0bOCPEPEMNNEK\x12\x14\n\x05delay\x18\x02\x20\x01(\x01R\
+    \x05delayb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,13 +79,13 @@ impl ::protobuf::Message for IIMHLPBEDDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.KCNEKEGGAGG)?;
                 },
-                112 => {
+                80 => {
                     self.KCNEKEGGAGG.push(is.read_uint32()?);
                 },
-                18 => {
+                90 => {
                     self.LONFKFCFDND.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for IIMHLPBEDDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.KCNEKEGGAGG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KCNEKEGGAGG);
         for value in &self.LONFKFCFDND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for IIMHLPBEDDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.KCNEKEGGAGG)?;
+        os.write_repeated_packed_uint32(10, &self.KCNEKEGGAGG)?;
         for v in &self.LONFKFCFDND {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for IIMHLPBEDDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IIMHLPBEDDH.proto\x1a\x11NIJHCCNMEGA.proto\"_\n\x0bIIMHLPBEDDH\x12\
-    \x20\n\x0bKCNEKEGGAGG\x18\x0e\x20\x03(\rR\x0bKCNEKEGGAGG\x12.\n\x0bLONFK\
-    FCFDND\x18\x02\x20\x03(\x0b2\x0c.NIJHCCNMEGAR\x0bLONFKFCFDNDb\x06proto3\
+    \x20\n\x0bKCNEKEGGAGG\x18\n\x20\x03(\rR\x0bKCNEKEGGAGG\x12.\n\x0bLONFKFC\
+    FDND\x18\x0b\x20\x03(\x0b2\x0c.NIJHCCNMEGAR\x0bLONFKFCFDNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

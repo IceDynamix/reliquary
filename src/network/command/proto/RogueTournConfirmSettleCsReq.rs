@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     self.name = is.read_string()?;
                 },
-                16 => {
+                72 => {
                     self.NPHAJEKCBKF = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.area_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.name);
+            my_size += ::protobuf::rt::string_size(6, &self.name);
         }
         if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NPHAJEKCBKF);
+            my_size += ::protobuf::rt::uint32_size(9, self.NPHAJEKCBKF);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.name.is_empty() {
-            os.write_string(4, &self.name)?;
+            os.write_string(6, &self.name)?;
         }
         if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(2, self.NPHAJEKCBKF)?;
+            os.write_uint32(9, self.NPHAJEKCBKF)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(12, self.area_id)?;
+            os.write_uint32(11, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournConfirmSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournConfirmSettleCsReq.proto\"m\n\x1cRogueTournConfirmSettleCs\
-    Req\x12\x12\n\x04name\x18\x04\x20\x01(\tR\x04name\x12\x20\n\x0bNPHAJEKCB\
-    KF\x18\x02\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x17\n\x07area_id\x18\x0c\x20\
-    \x01(\rR\x06areaIdb\x06proto3\
+    Req\x12\x12\n\x04name\x18\x06\x20\x01(\tR\x04name\x12\x20\n\x0bNPHAJEKCB\
+    KF\x18\t\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x17\n\x07area_id\x18\x0b\x20\x01\
+    (\rR\x06areaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

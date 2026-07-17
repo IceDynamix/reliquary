@@ -28,40 +28,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLOICBDOCNJ {
     // message fields
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.EEDLBJGGLKD)
-    pub EEDLBJGGLKD: ::std::vec::Vec<super::KFKLPGEKJLA::KFKLPGEKJLA>,
     // @@protoc_insertion_point(field:FLOICBDOCNJ.room_id)
     pub room_id: ::std::string::String,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.CLACJFEEPNI)
-    pub CLACJFEEPNI: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.LLGCGHPMKFG)
-    pub LLGCGHPMKFG: f32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.LNPPGBHEHML)
-    pub LNPPGBHEHML: i32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.MGNAMCPOMGK)
-    pub MGNAMCPOMGK: i32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.GOGMGECOIJH)
-    pub GOGMGECOIJH: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.FIOEEAIBEPO)
-    pub FIOEEAIBEPO: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.JLAHNBIMKPD)
-    pub JLAHNBIMKPD: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.IPDDIKPHGPE)
-    pub IPDDIKPHGPE: u32,
     // @@protoc_insertion_point(field:FLOICBDOCNJ.LOPNADHJKBF)
     pub LOPNADHJKBF: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.PEHKIICMBCD)
-    pub PEHKIICMBCD: i32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.GECCGKAHDOB)
-    pub GECCGKAHDOB: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.PBIOONALCPL)
-    pub PBIOONALCPL: i32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.IEHKEIKCKLL)
-    pub IEHKEIKCKLL: u32,
-    // @@protoc_insertion_point(field:FLOICBDOCNJ.HCMKEFPFEDH)
-    pub HCMKEFPFEDH: i32,
     // @@protoc_insertion_point(field:FLOICBDOCNJ.section_id)
     pub section_id: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.IPDDIKPHGPE)
+    pub IPDDIKPHGPE: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.GECCGKAHDOB)
+    pub GECCGKAHDOB: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.CLACJFEEPNI)
+    pub CLACJFEEPNI: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.EEDLBJGGLKD)
+    pub EEDLBJGGLKD: ::std::vec::Vec<super::KFKLPGEKJLA::KFKLPGEKJLA>,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.IEHKEIKCKLL)
+    pub IEHKEIKCKLL: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.JLAHNBIMKPD)
+    pub JLAHNBIMKPD: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.LLGCGHPMKFG)
+    pub LLGCGHPMKFG: f32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.PBIOONALCPL)
+    pub PBIOONALCPL: i32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.MGNAMCPOMGK)
+    pub MGNAMCPOMGK: i32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.PEHKIICMBCD)
+    pub PEHKIICMBCD: i32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.GOGMGECOIJH)
+    pub GOGMGECOIJH: u32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.LNPPGBHEHML)
+    pub LNPPGBHEHML: i32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.HCMKEFPFEDH)
+    pub HCMKEFPFEDH: i32,
+    // @@protoc_insertion_point(field:FLOICBDOCNJ.FIOEEAIBEPO)
+    pub FIOEEAIBEPO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FLOICBDOCNJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -81,55 +81,10 @@ impl FLOICBDOCNJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(17);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEDLBJGGLKD",
-            |m: &FLOICBDOCNJ| { &m.EEDLBJGGLKD },
-            |m: &mut FLOICBDOCNJ| { &mut m.EEDLBJGGLKD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &FLOICBDOCNJ| { &m.room_id },
             |m: &mut FLOICBDOCNJ| { &mut m.room_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLACJFEEPNI",
-            |m: &FLOICBDOCNJ| { &m.CLACJFEEPNI },
-            |m: &mut FLOICBDOCNJ| { &mut m.CLACJFEEPNI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLGCGHPMKFG",
-            |m: &FLOICBDOCNJ| { &m.LLGCGHPMKFG },
-            |m: &mut FLOICBDOCNJ| { &mut m.LLGCGHPMKFG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNPPGBHEHML",
-            |m: &FLOICBDOCNJ| { &m.LNPPGBHEHML },
-            |m: &mut FLOICBDOCNJ| { &mut m.LNPPGBHEHML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGNAMCPOMGK",
-            |m: &FLOICBDOCNJ| { &m.MGNAMCPOMGK },
-            |m: &mut FLOICBDOCNJ| { &mut m.MGNAMCPOMGK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOGMGECOIJH",
-            |m: &FLOICBDOCNJ| { &m.GOGMGECOIJH },
-            |m: &mut FLOICBDOCNJ| { &mut m.GOGMGECOIJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIOEEAIBEPO",
-            |m: &FLOICBDOCNJ| { &m.FIOEEAIBEPO },
-            |m: &mut FLOICBDOCNJ| { &mut m.FIOEEAIBEPO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLAHNBIMKPD",
-            |m: &FLOICBDOCNJ| { &m.JLAHNBIMKPD },
-            |m: &mut FLOICBDOCNJ| { &mut m.JLAHNBIMKPD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPDDIKPHGPE",
-            |m: &FLOICBDOCNJ| { &m.IPDDIKPHGPE },
-            |m: &mut FLOICBDOCNJ| { &mut m.IPDDIKPHGPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOPNADHJKBF",
@@ -137,9 +92,14 @@ impl FLOICBDOCNJ {
             |m: &mut FLOICBDOCNJ| { &mut m.LOPNADHJKBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PEHKIICMBCD",
-            |m: &FLOICBDOCNJ| { &m.PEHKIICMBCD },
-            |m: &mut FLOICBDOCNJ| { &mut m.PEHKIICMBCD },
+            "section_id",
+            |m: &FLOICBDOCNJ| { &m.section_id },
+            |m: &mut FLOICBDOCNJ| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPDDIKPHGPE",
+            |m: &FLOICBDOCNJ| { &m.IPDDIKPHGPE },
+            |m: &mut FLOICBDOCNJ| { &mut m.IPDDIKPHGPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GECCGKAHDOB",
@@ -147,9 +107,14 @@ impl FLOICBDOCNJ {
             |m: &mut FLOICBDOCNJ| { &mut m.GECCGKAHDOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBIOONALCPL",
-            |m: &FLOICBDOCNJ| { &m.PBIOONALCPL },
-            |m: &mut FLOICBDOCNJ| { &mut m.PBIOONALCPL },
+            "CLACJFEEPNI",
+            |m: &FLOICBDOCNJ| { &m.CLACJFEEPNI },
+            |m: &mut FLOICBDOCNJ| { &mut m.CLACJFEEPNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EEDLBJGGLKD",
+            |m: &FLOICBDOCNJ| { &m.EEDLBJGGLKD },
+            |m: &mut FLOICBDOCNJ| { &mut m.EEDLBJGGLKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IEHKEIKCKLL",
@@ -157,14 +122,49 @@ impl FLOICBDOCNJ {
             |m: &mut FLOICBDOCNJ| { &mut m.IEHKEIKCKLL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLAHNBIMKPD",
+            |m: &FLOICBDOCNJ| { &m.JLAHNBIMKPD },
+            |m: &mut FLOICBDOCNJ| { &mut m.JLAHNBIMKPD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLGCGHPMKFG",
+            |m: &FLOICBDOCNJ| { &m.LLGCGHPMKFG },
+            |m: &mut FLOICBDOCNJ| { &mut m.LLGCGHPMKFG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBIOONALCPL",
+            |m: &FLOICBDOCNJ| { &m.PBIOONALCPL },
+            |m: &mut FLOICBDOCNJ| { &mut m.PBIOONALCPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MGNAMCPOMGK",
+            |m: &FLOICBDOCNJ| { &m.MGNAMCPOMGK },
+            |m: &mut FLOICBDOCNJ| { &mut m.MGNAMCPOMGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PEHKIICMBCD",
+            |m: &FLOICBDOCNJ| { &m.PEHKIICMBCD },
+            |m: &mut FLOICBDOCNJ| { &mut m.PEHKIICMBCD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GOGMGECOIJH",
+            |m: &FLOICBDOCNJ| { &m.GOGMGECOIJH },
+            |m: &mut FLOICBDOCNJ| { &mut m.GOGMGECOIJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNPPGBHEHML",
+            |m: &FLOICBDOCNJ| { &m.LNPPGBHEHML },
+            |m: &mut FLOICBDOCNJ| { &mut m.LNPPGBHEHML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HCMKEFPFEDH",
             |m: &FLOICBDOCNJ| { &m.HCMKEFPFEDH },
             |m: &mut FLOICBDOCNJ| { &mut m.HCMKEFPFEDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &FLOICBDOCNJ| { &m.section_id },
-            |m: &mut FLOICBDOCNJ| { &mut m.section_id },
+            "FIOEEAIBEPO",
+            |m: &FLOICBDOCNJ| { &m.FIOEEAIBEPO },
+            |m: &mut FLOICBDOCNJ| { &mut m.FIOEEAIBEPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLOICBDOCNJ>(
             "FLOICBDOCNJ",
@@ -184,56 +184,56 @@ impl ::protobuf::Message for FLOICBDOCNJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.EEDLBJGGLKD.push(is.read_message()?);
-                },
                 10 => {
                     self.room_id = is.read_string()?;
-                },
-                48 => {
-                    self.CLACJFEEPNI = is.read_uint32()?;
-                },
-                85 => {
-                    self.LLGCGHPMKFG = is.read_float()?;
-                },
-                120 => {
-                    self.LNPPGBHEHML = is.read_int32()?;
-                },
-                96 => {
-                    self.MGNAMCPOMGK = is.read_int32()?;
-                },
-                112 => {
-                    self.GOGMGECOIJH = is.read_uint32()?;
-                },
-                136 => {
-                    self.FIOEEAIBEPO = is.read_uint32()?;
-                },
-                72 => {
-                    self.JLAHNBIMKPD = is.read_uint32()?;
-                },
-                32 => {
-                    self.IPDDIKPHGPE = is.read_uint32()?;
                 },
                 16 => {
                     self.LOPNADHJKBF = is.read_uint32()?;
                 },
-                104 => {
-                    self.PEHKIICMBCD = is.read_int32()?;
+                24 => {
+                    self.section_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.IPDDIKPHGPE = is.read_uint32()?;
                 },
                 40 => {
                     self.GECCGKAHDOB = is.read_uint32()?;
                 },
-                88 => {
-                    self.PBIOONALCPL = is.read_int32()?;
+                48 => {
+                    self.CLACJFEEPNI = is.read_uint32()?;
+                },
+                58 => {
+                    self.EEDLBJGGLKD.push(is.read_message()?);
                 },
                 64 => {
                     self.IEHKEIKCKLL = is.read_uint32()?;
                 },
+                72 => {
+                    self.JLAHNBIMKPD = is.read_uint32()?;
+                },
+                85 => {
+                    self.LLGCGHPMKFG = is.read_float()?;
+                },
+                88 => {
+                    self.PBIOONALCPL = is.read_int32()?;
+                },
+                96 => {
+                    self.MGNAMCPOMGK = is.read_int32()?;
+                },
+                104 => {
+                    self.PEHKIICMBCD = is.read_int32()?;
+                },
+                112 => {
+                    self.GOGMGECOIJH = is.read_uint32()?;
+                },
+                120 => {
+                    self.LNPPGBHEHML = is.read_int32()?;
+                },
                 128 => {
                     self.HCMKEFPFEDH = is.read_int32()?;
                 },
-                24 => {
-                    self.section_id = is.read_uint32()?;
+                136 => {
+                    self.FIOEEAIBEPO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -247,57 +247,57 @@ impl ::protobuf::Message for FLOICBDOCNJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EEDLBJGGLKD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if !self.room_id.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.room_id);
-        }
-        if self.CLACJFEEPNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CLACJFEEPNI);
-        }
-        if self.LLGCGHPMKFG != 0. {
-            my_size += 1 + 4;
-        }
-        if self.LNPPGBHEHML != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.LNPPGBHEHML);
-        }
-        if self.MGNAMCPOMGK != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.MGNAMCPOMGK);
-        }
-        if self.GOGMGECOIJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GOGMGECOIJH);
-        }
-        if self.FIOEEAIBEPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.FIOEEAIBEPO);
-        }
-        if self.JLAHNBIMKPD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JLAHNBIMKPD);
-        }
-        if self.IPDDIKPHGPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IPDDIKPHGPE);
         }
         if self.LOPNADHJKBF != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.LOPNADHJKBF);
         }
-        if self.PEHKIICMBCD != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.PEHKIICMBCD);
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.section_id);
+        }
+        if self.IPDDIKPHGPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IPDDIKPHGPE);
         }
         if self.GECCGKAHDOB != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.GECCGKAHDOB);
         }
+        if self.CLACJFEEPNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CLACJFEEPNI);
+        }
+        for value in &self.EEDLBJGGLKD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.IEHKEIKCKLL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IEHKEIKCKLL);
+        }
+        if self.JLAHNBIMKPD != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JLAHNBIMKPD);
+        }
+        if self.LLGCGHPMKFG != 0. {
+            my_size += 1 + 4;
+        }
         if self.PBIOONALCPL != 0 {
             my_size += ::protobuf::rt::int32_size(11, self.PBIOONALCPL);
         }
-        if self.IEHKEIKCKLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IEHKEIKCKLL);
+        if self.MGNAMCPOMGK != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.MGNAMCPOMGK);
+        }
+        if self.PEHKIICMBCD != 0 {
+            my_size += ::protobuf::rt::int32_size(13, self.PEHKIICMBCD);
+        }
+        if self.GOGMGECOIJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.GOGMGECOIJH);
+        }
+        if self.LNPPGBHEHML != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.LNPPGBHEHML);
         }
         if self.HCMKEFPFEDH != 0 {
             my_size += ::protobuf::rt::int32_size(16, self.HCMKEFPFEDH);
         }
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.section_id);
+        if self.FIOEEAIBEPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.FIOEEAIBEPO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -305,56 +305,56 @@ impl ::protobuf::Message for FLOICBDOCNJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EEDLBJGGLKD {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if !self.room_id.is_empty() {
             os.write_string(1, &self.room_id)?;
-        }
-        if self.CLACJFEEPNI != 0 {
-            os.write_uint32(6, self.CLACJFEEPNI)?;
-        }
-        if self.LLGCGHPMKFG != 0. {
-            os.write_float(10, self.LLGCGHPMKFG)?;
-        }
-        if self.LNPPGBHEHML != 0 {
-            os.write_int32(15, self.LNPPGBHEHML)?;
-        }
-        if self.MGNAMCPOMGK != 0 {
-            os.write_int32(12, self.MGNAMCPOMGK)?;
-        }
-        if self.GOGMGECOIJH != 0 {
-            os.write_uint32(14, self.GOGMGECOIJH)?;
-        }
-        if self.FIOEEAIBEPO != 0 {
-            os.write_uint32(17, self.FIOEEAIBEPO)?;
-        }
-        if self.JLAHNBIMKPD != 0 {
-            os.write_uint32(9, self.JLAHNBIMKPD)?;
-        }
-        if self.IPDDIKPHGPE != 0 {
-            os.write_uint32(4, self.IPDDIKPHGPE)?;
         }
         if self.LOPNADHJKBF != 0 {
             os.write_uint32(2, self.LOPNADHJKBF)?;
         }
-        if self.PEHKIICMBCD != 0 {
-            os.write_int32(13, self.PEHKIICMBCD)?;
+        if self.section_id != 0 {
+            os.write_uint32(3, self.section_id)?;
+        }
+        if self.IPDDIKPHGPE != 0 {
+            os.write_uint32(4, self.IPDDIKPHGPE)?;
         }
         if self.GECCGKAHDOB != 0 {
             os.write_uint32(5, self.GECCGKAHDOB)?;
         }
+        if self.CLACJFEEPNI != 0 {
+            os.write_uint32(6, self.CLACJFEEPNI)?;
+        }
+        for v in &self.EEDLBJGGLKD {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if self.IEHKEIKCKLL != 0 {
+            os.write_uint32(8, self.IEHKEIKCKLL)?;
+        }
+        if self.JLAHNBIMKPD != 0 {
+            os.write_uint32(9, self.JLAHNBIMKPD)?;
+        }
+        if self.LLGCGHPMKFG != 0. {
+            os.write_float(10, self.LLGCGHPMKFG)?;
+        }
         if self.PBIOONALCPL != 0 {
             os.write_int32(11, self.PBIOONALCPL)?;
         }
-        if self.IEHKEIKCKLL != 0 {
-            os.write_uint32(8, self.IEHKEIKCKLL)?;
+        if self.MGNAMCPOMGK != 0 {
+            os.write_int32(12, self.MGNAMCPOMGK)?;
+        }
+        if self.PEHKIICMBCD != 0 {
+            os.write_int32(13, self.PEHKIICMBCD)?;
+        }
+        if self.GOGMGECOIJH != 0 {
+            os.write_uint32(14, self.GOGMGECOIJH)?;
+        }
+        if self.LNPPGBHEHML != 0 {
+            os.write_int32(15, self.LNPPGBHEHML)?;
         }
         if self.HCMKEFPFEDH != 0 {
             os.write_int32(16, self.HCMKEFPFEDH)?;
         }
-        if self.section_id != 0 {
-            os.write_uint32(3, self.section_id)?;
+        if self.FIOEEAIBEPO != 0 {
+            os.write_uint32(17, self.FIOEEAIBEPO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -373,45 +373,45 @@ impl ::protobuf::Message for FLOICBDOCNJ {
     }
 
     fn clear(&mut self) {
-        self.EEDLBJGGLKD.clear();
         self.room_id.clear();
-        self.CLACJFEEPNI = 0;
-        self.LLGCGHPMKFG = 0.;
-        self.LNPPGBHEHML = 0;
-        self.MGNAMCPOMGK = 0;
-        self.GOGMGECOIJH = 0;
-        self.FIOEEAIBEPO = 0;
-        self.JLAHNBIMKPD = 0;
-        self.IPDDIKPHGPE = 0;
         self.LOPNADHJKBF = 0;
-        self.PEHKIICMBCD = 0;
-        self.GECCGKAHDOB = 0;
-        self.PBIOONALCPL = 0;
-        self.IEHKEIKCKLL = 0;
-        self.HCMKEFPFEDH = 0;
         self.section_id = 0;
+        self.IPDDIKPHGPE = 0;
+        self.GECCGKAHDOB = 0;
+        self.CLACJFEEPNI = 0;
+        self.EEDLBJGGLKD.clear();
+        self.IEHKEIKCKLL = 0;
+        self.JLAHNBIMKPD = 0;
+        self.LLGCGHPMKFG = 0.;
+        self.PBIOONALCPL = 0;
+        self.MGNAMCPOMGK = 0;
+        self.PEHKIICMBCD = 0;
+        self.GOGMGECOIJH = 0;
+        self.LNPPGBHEHML = 0;
+        self.HCMKEFPFEDH = 0;
+        self.FIOEEAIBEPO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLOICBDOCNJ {
         static instance: FLOICBDOCNJ = FLOICBDOCNJ {
-            EEDLBJGGLKD: ::std::vec::Vec::new(),
             room_id: ::std::string::String::new(),
-            CLACJFEEPNI: 0,
-            LLGCGHPMKFG: 0.,
-            LNPPGBHEHML: 0,
-            MGNAMCPOMGK: 0,
-            GOGMGECOIJH: 0,
-            FIOEEAIBEPO: 0,
-            JLAHNBIMKPD: 0,
-            IPDDIKPHGPE: 0,
             LOPNADHJKBF: 0,
-            PEHKIICMBCD: 0,
-            GECCGKAHDOB: 0,
-            PBIOONALCPL: 0,
-            IEHKEIKCKLL: 0,
-            HCMKEFPFEDH: 0,
             section_id: 0,
+            IPDDIKPHGPE: 0,
+            GECCGKAHDOB: 0,
+            CLACJFEEPNI: 0,
+            EEDLBJGGLKD: ::std::vec::Vec::new(),
+            IEHKEIKCKLL: 0,
+            JLAHNBIMKPD: 0,
+            LLGCGHPMKFG: 0.,
+            PBIOONALCPL: 0,
+            MGNAMCPOMGK: 0,
+            PEHKIICMBCD: 0,
+            GOGMGECOIJH: 0,
+            LNPPGBHEHML: 0,
+            HCMKEFPFEDH: 0,
+            FIOEEAIBEPO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -437,21 +437,21 @@ impl ::protobuf::reflect::ProtobufValue for FLOICBDOCNJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLOICBDOCNJ.proto\x1a\x11KFKLPGEKJLA.proto\"\xd1\x04\n\x0bFLOICBDO\
-    CNJ\x12.\n\x0bEEDLBJGGLKD\x18\x07\x20\x03(\x0b2\x0c.KFKLPGEKJLAR\x0bEEDL\
-    BJGGLKD\x12\x17\n\x07room_id\x18\x01\x20\x01(\tR\x06roomId\x12\x20\n\x0b\
-    CLACJFEEPNI\x18\x06\x20\x01(\rR\x0bCLACJFEEPNI\x12\x20\n\x0bLLGCGHPMKFG\
-    \x18\n\x20\x01(\x02R\x0bLLGCGHPMKFG\x12\x20\n\x0bLNPPGBHEHML\x18\x0f\x20\
-    \x01(\x05R\x0bLNPPGBHEHML\x12\x20\n\x0bMGNAMCPOMGK\x18\x0c\x20\x01(\x05R\
-    \x0bMGNAMCPOMGK\x12\x20\n\x0bGOGMGECOIJH\x18\x0e\x20\x01(\rR\x0bGOGMGECO\
-    IJH\x12\x20\n\x0bFIOEEAIBEPO\x18\x11\x20\x01(\rR\x0bFIOEEAIBEPO\x12\x20\
-    \n\x0bJLAHNBIMKPD\x18\t\x20\x01(\rR\x0bJLAHNBIMKPD\x12\x20\n\x0bIPDDIKPH\
-    GPE\x18\x04\x20\x01(\rR\x0bIPDDIKPHGPE\x12\x20\n\x0bLOPNADHJKBF\x18\x02\
-    \x20\x01(\rR\x0bLOPNADHJKBF\x12\x20\n\x0bPEHKIICMBCD\x18\r\x20\x01(\x05R\
-    \x0bPEHKIICMBCD\x12\x20\n\x0bGECCGKAHDOB\x18\x05\x20\x01(\rR\x0bGECCGKAH\
-    DOB\x12\x20\n\x0bPBIOONALCPL\x18\x0b\x20\x01(\x05R\x0bPBIOONALCPL\x12\
-    \x20\n\x0bIEHKEIKCKLL\x18\x08\x20\x01(\rR\x0bIEHKEIKCKLL\x12\x20\n\x0bHC\
-    MKEFPFEDH\x18\x10\x20\x01(\x05R\x0bHCMKEFPFEDH\x12\x1d\n\nsection_id\x18\
-    \x03\x20\x01(\rR\tsectionIdb\x06proto3\
+    CNJ\x12\x17\n\x07room_id\x18\x01\x20\x01(\tR\x06roomId\x12\x20\n\x0bLOPN\
+    ADHJKBF\x18\x02\x20\x01(\rR\x0bLOPNADHJKBF\x12\x1d\n\nsection_id\x18\x03\
+    \x20\x01(\rR\tsectionId\x12\x20\n\x0bIPDDIKPHGPE\x18\x04\x20\x01(\rR\x0b\
+    IPDDIKPHGPE\x12\x20\n\x0bGECCGKAHDOB\x18\x05\x20\x01(\rR\x0bGECCGKAHDOB\
+    \x12\x20\n\x0bCLACJFEEPNI\x18\x06\x20\x01(\rR\x0bCLACJFEEPNI\x12.\n\x0bE\
+    EDLBJGGLKD\x18\x07\x20\x03(\x0b2\x0c.KFKLPGEKJLAR\x0bEEDLBJGGLKD\x12\x20\
+    \n\x0bIEHKEIKCKLL\x18\x08\x20\x01(\rR\x0bIEHKEIKCKLL\x12\x20\n\x0bJLAHNB\
+    IMKPD\x18\t\x20\x01(\rR\x0bJLAHNBIMKPD\x12\x20\n\x0bLLGCGHPMKFG\x18\n\
+    \x20\x01(\x02R\x0bLLGCGHPMKFG\x12\x20\n\x0bPBIOONALCPL\x18\x0b\x20\x01(\
+    \x05R\x0bPBIOONALCPL\x12\x20\n\x0bMGNAMCPOMGK\x18\x0c\x20\x01(\x05R\x0bM\
+    GNAMCPOMGK\x12\x20\n\x0bPEHKIICMBCD\x18\r\x20\x01(\x05R\x0bPEHKIICMBCD\
+    \x12\x20\n\x0bGOGMGECOIJH\x18\x0e\x20\x01(\rR\x0bGOGMGECOIJH\x12\x20\n\
+    \x0bLNPPGBHEHML\x18\x0f\x20\x01(\x05R\x0bLNPPGBHEHML\x12\x20\n\x0bHCMKEF\
+    PFEDH\x18\x10\x20\x01(\x05R\x0bHCMKEFPFEDH\x12\x20\n\x0bFIOEEAIBEPO\x18\
+    \x11\x20\x01(\rR\x0bFIOEEAIBEPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

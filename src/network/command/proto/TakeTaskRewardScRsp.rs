@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTaskRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeTaskRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeTaskRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeTaskRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTaskRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl TakeTaskRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakeTaskRewardScRsp| { &m.reward },
-            |m: &mut TakeTaskRewardScRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeTaskRewardScRsp| { &m.retcode },
             |m: &mut TakeTaskRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakeTaskRewardScRsp| { &m.reward },
+            |m: &mut TakeTaskRewardScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTaskRewardScRsp>(
             "TakeTaskRewardScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TakeTaskRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                56 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TakeTaskRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TakeTaskRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TakeTaskRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
         self.retcode = 0;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTaskRewardScRsp {
         static instance: TakeTaskRewardScRsp = TakeTaskRewardScRsp {
-            reward: ::protobuf::MessageField::none(),
             retcode: 0,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeTaskRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19TakeTaskRewardScRsp.proto\x1a\x0eItemList.proto\"R\n\x13TakeTaskRe\
-    wardScRsp\x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\
-    \x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    wardScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12!\n\x06\
+    reward\x18\x0f\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

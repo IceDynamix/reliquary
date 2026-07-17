@@ -30,10 +30,10 @@ pub struct GetMultipleDropInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMultipleDropInfoScRsp.FAFFFJGJHHC)
     pub FAFFFJGJHHC: ::std::vec::Vec<super::BMJHAHOLEGH::BMJHAHOLEGH>,
-    // @@protoc_insertion_point(field:GetMultipleDropInfoScRsp.MOPAGKNEMOD)
-    pub MOPAGKNEMOD: ::std::vec::Vec<super::NGLOBFBCGBB::NGLOBFBCGBB>,
     // @@protoc_insertion_point(field:GetMultipleDropInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMultipleDropInfoScRsp.MOPAGKNEMOD)
+    pub MOPAGKNEMOD: ::std::vec::Vec<super::NGLOBFBCGBB::NGLOBFBCGBB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMultipleDropInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetMultipleDropInfoScRsp {
             |m: &GetMultipleDropInfoScRsp| { &m.FAFFFJGJHHC },
             |m: &mut GetMultipleDropInfoScRsp| { &mut m.FAFFFJGJHHC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MOPAGKNEMOD",
-            |m: &GetMultipleDropInfoScRsp| { &m.MOPAGKNEMOD },
-            |m: &mut GetMultipleDropInfoScRsp| { &mut m.MOPAGKNEMOD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetMultipleDropInfoScRsp| { &m.retcode },
             |m: &mut GetMultipleDropInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MOPAGKNEMOD",
+            |m: &GetMultipleDropInfoScRsp| { &m.MOPAGKNEMOD },
+            |m: &mut GetMultipleDropInfoScRsp| { &mut m.MOPAGKNEMOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMultipleDropInfoScRsp>(
             "GetMultipleDropInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     self.FAFFFJGJHHC.push(is.read_message()?);
                 },
-                34 => {
-                    self.MOPAGKNEMOD.push(is.read_message()?);
-                },
-                104 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    self.MOPAGKNEMOD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         for value in &self.MOPAGKNEMOD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FAFFFJGJHHC {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        for v in &self.MOPAGKNEMOD {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        for v in &self.MOPAGKNEMOD {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
 
     fn clear(&mut self) {
         self.FAFFFJGJHHC.clear();
-        self.MOPAGKNEMOD.clear();
         self.retcode = 0;
+        self.MOPAGKNEMOD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMultipleDropInfoScRsp {
         static instance: GetMultipleDropInfoScRsp = GetMultipleDropInfoScRsp {
             FAFFFJGJHHC: ::std::vec::Vec::new(),
-            MOPAGKNEMOD: ::std::vec::Vec::new(),
             retcode: 0,
+            MOPAGKNEMOD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMultipleDropInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetMultipleDropInfoScRsp.proto\x1a\x11BMJHAHOLEGH.proto\x1a\x11NGL\
     OBFBCGBB.proto\"\x94\x01\n\x18GetMultipleDropInfoScRsp\x12.\n\x0bFAFFFJG\
-    JHHC\x18\x0f\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJGJHHC\x12.\n\x0bMOP\
-    AGKNEMOD\x18\x04\x20\x03(\x0b2\x0c.NGLOBFBCGBBR\x0bMOPAGKNEMOD\x12\x18\n\
-    \x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    JHHC\x18\x03\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJGJHHC\x12\x18\n\x07\
+    retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bMOPAGKNEMOD\x18\r\x20\x03\
+    (\x0b2\x0c.NGLOBFBCGBBR\x0bMOPAGKNEMODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

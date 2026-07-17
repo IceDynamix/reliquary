@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGEOFJJKFNF {
     // message fields
-    // @@protoc_insertion_point(field:LGEOFJJKFNF.data)
-    pub data: ::protobuf::MessageField<super::BHMEPBAGOFF::BHMEPBAGOFF>,
     // @@protoc_insertion_point(field:LGEOFJJKFNF.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::CKGOFMFNIPP::CKGOFMFNIPP>,
+    // @@protoc_insertion_point(field:LGEOFJJKFNF.data)
+    pub data: ::protobuf::MessageField<super::BHMEPBAGOFF::BHMEPBAGOFF>,
     // special fields
     // @@protoc_insertion_point(special_field:LGEOFJJKFNF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LGEOFJJKFNF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHMEPBAGOFF::BHMEPBAGOFF>(
-            "data",
-            |m: &LGEOFJJKFNF| { &m.data },
-            |m: &mut LGEOFJJKFNF| { &mut m.data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &LGEOFJJKFNF| { &m.reason },
             |m: &mut LGEOFJJKFNF| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHMEPBAGOFF::BHMEPBAGOFF>(
+            "data",
+            |m: &LGEOFJJKFNF| { &m.data },
+            |m: &mut LGEOFJJKFNF| { &mut m.data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGEOFJJKFNF>(
             "LGEOFJJKFNF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LGEOFJJKFNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
-                },
-                56 => {
+                16 => {
                     self.reason = is.read_enum_or_unknown()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for LGEOFJJKFNF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::CKGOFMFNIPP::CKGOFMFNIPP::CKGOFMFNIPP_HGBBGFBCCJJ) {
+            my_size += ::protobuf::rt::int32_size(2, self.reason.value());
+        }
         if let Some(v) = self.data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::CKGOFMFNIPP::CKGOFMFNIPP::CKGOFMFNIPP_HGBBGFBCCJJ) {
-            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LGEOFJJKFNF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::CKGOFMFNIPP::CKGOFMFNIPP::CKGOFMFNIPP_HGBBGFBCCJJ) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if let Some(v) = self.data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LGEOFJJKFNF {
     }
 
     fn clear(&mut self) {
-        self.data.clear();
         self.reason = ::protobuf::EnumOrUnknown::new(super::CKGOFMFNIPP::CKGOFMFNIPP::CKGOFMFNIPP_HGBBGFBCCJJ);
+        self.data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGEOFJJKFNF {
         static instance: LGEOFJJKFNF = LGEOFJJKFNF {
-            data: ::protobuf::MessageField::none(),
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LGEOFJJKFNF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGEOFJJKFNF.proto\x1a\x11BHMEPBAGOFF.proto\x1a\x11CKGOFMFNIPP.prot\
-    o\"U\n\x0bLGEOFJJKFNF\x12\x20\n\x04data\x18\t\x20\x01(\x0b2\x0c.BHMEPBAG\
-    OFFR\x04data\x12$\n\x06reason\x18\x07\x20\x01(\x0e2\x0c.CKGOFMFNIPPR\x06\
-    reasonb\x06proto3\
+    o\"U\n\x0bLGEOFJJKFNF\x12$\n\x06reason\x18\x02\x20\x01(\x0e2\x0c.CKGOFMF\
+    NIPPR\x06reason\x12\x20\n\x04data\x18\r\x20\x01(\x0b2\x0c.BHMEPBAGOFFR\
+    \x04datab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

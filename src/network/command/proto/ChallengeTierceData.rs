@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeTierceData {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeTierceData.stage_info_list)
-    pub stage_info_list: ::std::vec::Vec<super::ChallengeTierceStageInfo::ChallengeTierceStageInfo>,
-    // @@protoc_insertion_point(field:ChallengeTierceData.record)
-    pub record: ::protobuf::MessageField<super::ChallengeTierceRecord::ChallengeTierceRecord>,
-    // @@protoc_insertion_point(field:ChallengeTierceData.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengeTierceData.challenge_id)
+    pub challenge_id: u32,
     // @@protoc_insertion_point(field:ChallengeTierceData.result_list)
     pub result_list: ::std::vec::Vec<super::ChallengeTierceStageData::ChallengeTierceStageData>,
     // @@protoc_insertion_point(field:ChallengeTierceData.is_passed)
     pub is_passed: bool,
-    // @@protoc_insertion_point(field:ChallengeTierceData.challenge_id)
-    pub challenge_id: u32,
+    // @@protoc_insertion_point(field:ChallengeTierceData.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengeTierceData.stage_info_list)
+    pub stage_info_list: ::std::vec::Vec<super::ChallengeTierceStageInfo::ChallengeTierceStageInfo>,
+    // @@protoc_insertion_point(field:ChallengeTierceData.record)
+    pub record: ::protobuf::MessageField<super::ChallengeTierceRecord::ChallengeTierceRecord>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeTierceData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,10 @@ impl ChallengeTierceData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "stage_info_list",
-            |m: &ChallengeTierceData| { &m.stage_info_list },
-            |m: &mut ChallengeTierceData| { &mut m.stage_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeTierceRecord::ChallengeTierceRecord>(
-            "record",
-            |m: &ChallengeTierceData| { &m.record },
-            |m: &mut ChallengeTierceData| { &mut m.record },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengeTierceData| { &m.finished_target_list },
-            |m: &mut ChallengeTierceData| { &mut m.finished_target_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_id",
+            |m: &ChallengeTierceData| { &m.challenge_id },
+            |m: &mut ChallengeTierceData| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "result_list",
@@ -84,10 +74,20 @@ impl ChallengeTierceData {
             |m: &ChallengeTierceData| { &m.is_passed },
             |m: &mut ChallengeTierceData| { &mut m.is_passed },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &ChallengeTierceData| { &m.challenge_id },
-            |m: &mut ChallengeTierceData| { &mut m.challenge_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengeTierceData| { &m.finished_target_list },
+            |m: &mut ChallengeTierceData| { &mut m.finished_target_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "stage_info_list",
+            |m: &ChallengeTierceData| { &m.stage_info_list },
+            |m: &mut ChallengeTierceData| { &mut m.stage_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeTierceRecord::ChallengeTierceRecord>(
+            "record",
+            |m: &ChallengeTierceData| { &m.record },
+            |m: &mut ChallengeTierceData| { &mut m.record },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeTierceData>(
             "ChallengeTierceData",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ChallengeTierceData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.stage_info_list.push(is.read_message()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record)?;
+                24 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
                 34 => {
+                    self.result_list.push(is.read_message()?);
+                },
+                48 => {
+                    self.is_passed = is.read_bool()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                32 => {
+                56 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
                 66 => {
-                    self.result_list.push(is.read_message()?);
+                    self.stage_info_list.push(is.read_message()?);
                 },
-                24 => {
-                    self.is_passed = is.read_bool()?;
-                },
-                72 => {
-                    self.challenge_id = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,6 +140,17 @@ impl ::protobuf::Message for ChallengeTierceData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.challenge_id);
+        }
+        for value in &self.result_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.is_passed != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.finished_target_list);
         for value in &self.stage_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -148,38 +159,27 @@ impl ::protobuf::Message for ChallengeTierceData {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.finished_target_list);
-        for value in &self.result_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.is_passed != false {
-            my_size += 1 + 1;
-        }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.challenge_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.stage_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if let Some(v) = self.record.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.challenge_id != 0 {
+            os.write_uint32(3, self.challenge_id)?;
         }
-        os.write_repeated_packed_uint32(4, &self.finished_target_list)?;
         for v in &self.result_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.is_passed != false {
-            os.write_bool(3, self.is_passed)?;
+            os.write_bool(6, self.is_passed)?;
         }
-        if self.challenge_id != 0 {
-            os.write_uint32(9, self.challenge_id)?;
+        os.write_repeated_packed_uint32(7, &self.finished_target_list)?;
+        for v in &self.stage_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if let Some(v) = self.record.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for ChallengeTierceData {
     }
 
     fn clear(&mut self) {
-        self.stage_info_list.clear();
-        self.record.clear();
-        self.finished_target_list.clear();
+        self.challenge_id = 0;
         self.result_list.clear();
         self.is_passed = false;
-        self.challenge_id = 0;
+        self.finished_target_list.clear();
+        self.stage_info_list.clear();
+        self.record.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeTierceData {
         static instance: ChallengeTierceData = ChallengeTierceData {
-            stage_info_list: ::std::vec::Vec::new(),
-            record: ::protobuf::MessageField::none(),
-            finished_target_list: ::std::vec::Vec::new(),
+            challenge_id: 0,
             result_list: ::std::vec::Vec::new(),
             is_passed: false,
-            challenge_id: 0,
+            finished_target_list: ::std::vec::Vec::new(),
+            stage_info_list: ::std::vec::Vec::new(),
+            record: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,13 +241,13 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeTierceData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ChallengeTierceData.proto\x1a\x1bChallengeTierceRecord.proto\x1a\
     \x1eChallengeTierceStageData.proto\x1a\x1eChallengeTierceStageInfo.proto\
-    \"\xb6\x02\n\x13ChallengeTierceData\x12A\n\x0fstage_info_list\x18\x0f\
-    \x20\x03(\x0b2\x19.ChallengeTierceStageInfoR\rstageInfoList\x12.\n\x06re\
-    cord\x18\n\x20\x01(\x0b2\x16.ChallengeTierceRecordR\x06record\x120\n\x14\
-    finished_target_list\x18\x04\x20\x03(\rR\x12finishedTargetList\x12:\n\
-    \x0bresult_list\x18\x08\x20\x03(\x0b2\x19.ChallengeTierceStageDataR\nres\
-    ultList\x12\x1b\n\tis_passed\x18\x03\x20\x01(\x08R\x08isPassed\x12!\n\
-    \x0cchallenge_id\x18\t\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    \"\xb6\x02\n\x13ChallengeTierceData\x12!\n\x0cchallenge_id\x18\x03\x20\
+    \x01(\rR\x0bchallengeId\x12:\n\x0bresult_list\x18\x04\x20\x03(\x0b2\x19.\
+    ChallengeTierceStageDataR\nresultList\x12\x1b\n\tis_passed\x18\x06\x20\
+    \x01(\x08R\x08isPassed\x120\n\x14finished_target_list\x18\x07\x20\x03(\r\
+    R\x12finishedTargetList\x12A\n\x0fstage_info_list\x18\x08\x20\x03(\x0b2\
+    \x19.ChallengeTierceStageInfoR\rstageInfoList\x12.\n\x06record\x18\r\x20\
+    \x01(\x0b2\x16.ChallengeTierceRecordR\x06recordb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ALNGMGOJDOA {
     // message fields
-    // @@protoc_insertion_point(field:ALNGMGOJDOA.GMONIMLFKFC)
-    pub GMONIMLFKFC: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:ALNGMGOJDOA.MJNNNJPDKDI)
-    pub MJNNNJPDKDI: ::std::vec::Vec<super::HPIEHAMDJAP::HPIEHAMDJAP>,
     // @@protoc_insertion_point(field:ALNGMGOJDOA.AEOMEFEMBJI)
     pub AEOMEFEMBJI: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:ALNGMGOJDOA.MJNNNJPDKDI)
+    pub MJNNNJPDKDI: ::std::vec::Vec<super::HPIEHAMDJAP::HPIEHAMDJAP>,
+    // @@protoc_insertion_point(field:ALNGMGOJDOA.GMONIMLFKFC)
+    pub GMONIMLFKFC: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:ALNGMGOJDOA.DBINCLPHEFN)
     pub DBINCLPHEFN: ::std::vec::Vec<super::MLHLIMIJHDD::MLHLIMIJHDD>,
     // special fields
@@ -56,9 +56,9 @@ impl ALNGMGOJDOA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "GMONIMLFKFC",
-            |m: &ALNGMGOJDOA| { &m.GMONIMLFKFC },
-            |m: &mut ALNGMGOJDOA| { &mut m.GMONIMLFKFC },
+            "AEOMEFEMBJI",
+            |m: &ALNGMGOJDOA| { &m.AEOMEFEMBJI },
+            |m: &mut ALNGMGOJDOA| { &mut m.AEOMEFEMBJI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MJNNNJPDKDI",
@@ -66,9 +66,9 @@ impl ALNGMGOJDOA {
             |m: &mut ALNGMGOJDOA| { &mut m.MJNNNJPDKDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "AEOMEFEMBJI",
-            |m: &ALNGMGOJDOA| { &m.AEOMEFEMBJI },
-            |m: &mut ALNGMGOJDOA| { &mut m.AEOMEFEMBJI },
+            "GMONIMLFKFC",
+            |m: &ALNGMGOJDOA| { &m.GMONIMLFKFC },
+            |m: &mut ALNGMGOJDOA| { &mut m.GMONIMLFKFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DBINCLPHEFN",
@@ -93,24 +93,6 @@ impl ::protobuf::Message for ALNGMGOJDOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.GMONIMLFKFC.insert(key, value);
-                },
-                98 => {
-                    self.MJNNNJPDKDI.push(is.read_message()?);
-                },
                 58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -126,7 +108,25 @@ impl ::protobuf::Message for ALNGMGOJDOA {
                     is.pop_limit(old_limit);
                     self.AEOMEFEMBJI.insert(key, value);
                 },
-                10 => {
+                74 => {
+                    self.MJNNNJPDKDI.push(is.read_message()?);
+                },
+                98 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.GMONIMLFKFC.insert(key, value);
+                },
+                122 => {
                     self.DBINCLPHEFN.push(is.read_message()?);
                 },
                 tag => {
@@ -141,7 +141,7 @@ impl ::protobuf::Message for ALNGMGOJDOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.GMONIMLFKFC {
+        for (k, v) in &self.AEOMEFEMBJI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -151,7 +151,7 @@ impl ::protobuf::Message for ALNGMGOJDOA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for (k, v) in &self.AEOMEFEMBJI {
+        for (k, v) in &self.GMONIMLFKFC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -167,18 +167,6 @@ impl ::protobuf::Message for ALNGMGOJDOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.GMONIMLFKFC {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
-        for v in &self.MJNNNJPDKDI {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         for (k, v) in &self.AEOMEFEMBJI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -188,8 +176,20 @@ impl ::protobuf::Message for ALNGMGOJDOA {
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        for v in &self.MJNNNJPDKDI {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for (k, v) in &self.GMONIMLFKFC {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
         for v in &self.DBINCLPHEFN {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -208,9 +208,9 @@ impl ::protobuf::Message for ALNGMGOJDOA {
     }
 
     fn clear(&mut self) {
-        self.GMONIMLFKFC.clear();
-        self.MJNNNJPDKDI.clear();
         self.AEOMEFEMBJI.clear();
+        self.MJNNNJPDKDI.clear();
+        self.GMONIMLFKFC.clear();
         self.DBINCLPHEFN.clear();
         self.special_fields.clear();
     }
@@ -240,14 +240,14 @@ impl ::protobuf::reflect::ProtobufValue for ALNGMGOJDOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ALNGMGOJDOA.proto\x1a\x11HPIEHAMDJAP.proto\x1a\x11MLHLIMIJHDD.prot\
-    o\"\xef\x02\n\x0bALNGMGOJDOA\x12?\n\x0bGMONIMLFKFC\x18\n\x20\x03(\x0b2\
-    \x1d.ALNGMGOJDOA.GMONIMLFKFCEntryR\x0bGMONIMLFKFC\x12.\n\x0bMJNNNJPDKDI\
-    \x18\x0c\x20\x03(\x0b2\x0c.HPIEHAMDJAPR\x0bMJNNNJPDKDI\x12?\n\x0bAEOMEFE\
-    MBJI\x18\x07\x20\x03(\x0b2\x1d.ALNGMGOJDOA.AEOMEFEMBJIEntryR\x0bAEOMEFEM\
-    BJI\x12.\n\x0bDBINCLPHEFN\x18\x01\x20\x03(\x0b2\x0c.MLHLIMIJHDDR\x0bDBIN\
-    CLPHEFN\x1a>\n\x10GMONIMLFKFCEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    o\"\xef\x02\n\x0bALNGMGOJDOA\x12?\n\x0bAEOMEFEMBJI\x18\x07\x20\x03(\x0b2\
+    \x1d.ALNGMGOJDOA.AEOMEFEMBJIEntryR\x0bAEOMEFEMBJI\x12.\n\x0bMJNNNJPDKDI\
+    \x18\t\x20\x03(\x0b2\x0c.HPIEHAMDJAPR\x0bMJNNNJPDKDI\x12?\n\x0bGMONIMLFK\
+    FC\x18\x0c\x20\x03(\x0b2\x1d.ALNGMGOJDOA.GMONIMLFKFCEntryR\x0bGMONIMLFKF\
+    C\x12.\n\x0bDBINCLPHEFN\x18\x0f\x20\x03(\x0b2\x0c.MLHLIMIJHDDR\x0bDBINCL\
+    PHEFN\x1a>\n\x10AEOMEFEMBJIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
     \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\
-    \x10AEOMEFEMBJIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
+    \x10GMONIMLFKFCEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\
     \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

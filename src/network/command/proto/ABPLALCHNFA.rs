@@ -31,7 +31,7 @@ pub struct ABPLALCHNFA {
     // @@protoc_insertion_point(field:ABPLALCHNFA.OOEOCGLLHFO)
     pub OOEOCGLLHFO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ABPLALCHNFA.JKPJFKCBIEM)
-    pub JKPJFKCBIEM: ::std::vec::Vec<super::KFNCAIHIHCM::KFNCAIHIHCM>,
+    pub JKPJFKCBIEM: ::std::vec::Vec<super::GridFightSyncData::GridFightSyncData>,
     // @@protoc_insertion_point(field:ABPLALCHNFA.grid_update_src)
     pub grid_update_src: ::protobuf::EnumOrUnknown<super::GridFightUpdateSrcType::GridFightUpdateSrcType>,
     // special fields
@@ -86,16 +86,16 @@ impl ::protobuf::Message for ABPLALCHNFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.OOEOCGLLHFO)?;
                 },
-                72 => {
+                48 => {
                     self.OOEOCGLLHFO.push(is.read_uint32()?);
                 },
-                10 => {
+                58 => {
                     self.JKPJFKCBIEM.push(is.read_message()?);
                 },
-                96 => {
+                104 => {
                     self.grid_update_src = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -110,13 +110,13 @@ impl ::protobuf::Message for ABPLALCHNFA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OOEOCGLLHFO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.OOEOCGLLHFO);
         for value in &self.JKPJFKCBIEM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::GridFightUpdateSrcType::GridFightUpdateSrcType::JJDFGMMMCMI_CMOALMGLKIE) {
-            my_size += ::protobuf::rt::int32_size(12, self.grid_update_src.value());
+            my_size += ::protobuf::rt::int32_size(13, self.grid_update_src.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for ABPLALCHNFA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.OOEOCGLLHFO)?;
+        os.write_repeated_packed_uint32(6, &self.OOEOCGLLHFO)?;
         for v in &self.JKPJFKCBIEM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::GridFightUpdateSrcType::GridFightUpdateSrcType::JJDFGMMMCMI_CMOALMGLKIE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.grid_update_src))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.grid_update_src))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,11 +183,12 @@ impl ::protobuf::reflect::ProtobufValue for ABPLALCHNFA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABPLALCHNFA.proto\x1a\x1cGridFightUpdateSrcType.proto\x1a\x11KFNCA\
-    IHIHCM.proto\"\xa0\x01\n\x0bABPLALCHNFA\x12\x20\n\x0bOOEOCGLLHFO\x18\t\
-    \x20\x03(\rR\x0bOOEOCGLLHFO\x12.\n\x0bJKPJFKCBIEM\x18\x01\x20\x03(\x0b2\
-    \x0c.KFNCAIHIHCMR\x0bJKPJFKCBIEM\x12?\n\x0fgrid_update_src\x18\x0c\x20\
-    \x01(\x0e2\x17.GridFightUpdateSrcTypeR\rgridUpdateSrcb\x06proto3\
+    \n\x11ABPLALCHNFA.proto\x1a\x17GridFightSyncData.proto\x1a\x1cGridFightU\
+    pdateSrcType.proto\"\xa6\x01\n\x0bABPLALCHNFA\x12\x20\n\x0bOOEOCGLLHFO\
+    \x18\x06\x20\x03(\rR\x0bOOEOCGLLHFO\x124\n\x0bJKPJFKCBIEM\x18\x07\x20\
+    \x03(\x0b2\x12.GridFightSyncDataR\x0bJKPJFKCBIEM\x12?\n\x0fgrid_update_s\
+    rc\x18\r\x20\x01(\x0e2\x17.GridFightUpdateSrcTypeR\rgridUpdateSrcb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,8 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::GridFightSyncData::file_descriptor().clone());
             deps.push(super::GridFightUpdateSrcType::file_descriptor().clone());
-            deps.push(super::KFNCAIHIHCM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ABPLALCHNFA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

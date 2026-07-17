@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NGJLHMAHIDD {
     // message fields
+    // @@protoc_insertion_point(field:NGJLHMAHIDD.level_state)
+    pub level_state: u32,
     // @@protoc_insertion_point(field:NGJLHMAHIDD.FOEMKKBNCNI)
     pub FOEMKKBNCNI: ::std::vec::Vec<super::HONBPDEJDCC::HONBPDEJDCC>,
-    // @@protoc_insertion_point(field:NGJLHMAHIDD.PENABKKHDIH)
-    pub PENABKKHDIH: u64,
-    // @@protoc_insertion_point(field:NGJLHMAHIDD.FFKKLALNFPG)
-    pub FFKKLALNFPG: u32,
     // @@protoc_insertion_point(field:NGJLHMAHIDD.OCPMGBPNMED)
     pub OCPMGBPNMED: u32,
+    // @@protoc_insertion_point(field:NGJLHMAHIDD.level_state_start_timestamp)
+    pub level_state_start_timestamp: u64,
     // special fields
     // @@protoc_insertion_point(special_field:NGJLHMAHIDD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl NGJLHMAHIDD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_state",
+            |m: &NGJLHMAHIDD| { &m.level_state },
+            |m: &mut NGJLHMAHIDD| { &mut m.level_state },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FOEMKKBNCNI",
             |m: &NGJLHMAHIDD| { &m.FOEMKKBNCNI },
             |m: &mut NGJLHMAHIDD| { &mut m.FOEMKKBNCNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PENABKKHDIH",
-            |m: &NGJLHMAHIDD| { &m.PENABKKHDIH },
-            |m: &mut NGJLHMAHIDD| { &mut m.PENABKKHDIH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFKKLALNFPG",
-            |m: &NGJLHMAHIDD| { &m.FFKKLALNFPG },
-            |m: &mut NGJLHMAHIDD| { &mut m.FFKKLALNFPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCPMGBPNMED",
             |m: &NGJLHMAHIDD| { &m.OCPMGBPNMED },
             |m: &mut NGJLHMAHIDD| { &mut m.OCPMGBPNMED },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_state_start_timestamp",
+            |m: &NGJLHMAHIDD| { &m.level_state_start_timestamp },
+            |m: &mut NGJLHMAHIDD| { &mut m.level_state_start_timestamp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NGJLHMAHIDD>(
             "NGJLHMAHIDD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NGJLHMAHIDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                40 => {
+                    self.level_state = is.read_uint32()?;
+                },
+                50 => {
                     self.FOEMKKBNCNI.push(is.read_message()?);
                 },
-                80 => {
-                    self.PENABKKHDIH = is.read_uint64()?;
+                72 => {
+                    self.OCPMGBPNMED = is.read_uint32()?;
                 },
                 88 => {
-                    self.FFKKLALNFPG = is.read_uint32()?;
-                },
-                104 => {
-                    self.OCPMGBPNMED = is.read_uint32()?;
+                    self.level_state_start_timestamp = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for NGJLHMAHIDD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.level_state != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.level_state);
+        }
         for value in &self.FOEMKKBNCNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PENABKKHDIH != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.PENABKKHDIH);
-        }
-        if self.FFKKLALNFPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FFKKLALNFPG);
-        }
         if self.OCPMGBPNMED != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OCPMGBPNMED);
+            my_size += ::protobuf::rt::uint32_size(9, self.OCPMGBPNMED);
+        }
+        if self.level_state_start_timestamp != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.level_state_start_timestamp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for NGJLHMAHIDD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.level_state != 0 {
+            os.write_uint32(5, self.level_state)?;
+        }
         for v in &self.FOEMKKBNCNI {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.PENABKKHDIH != 0 {
-            os.write_uint64(10, self.PENABKKHDIH)?;
-        }
-        if self.FFKKLALNFPG != 0 {
-            os.write_uint32(11, self.FFKKLALNFPG)?;
-        }
         if self.OCPMGBPNMED != 0 {
-            os.write_uint32(13, self.OCPMGBPNMED)?;
+            os.write_uint32(9, self.OCPMGBPNMED)?;
+        }
+        if self.level_state_start_timestamp != 0 {
+            os.write_uint64(11, self.level_state_start_timestamp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for NGJLHMAHIDD {
     }
 
     fn clear(&mut self) {
+        self.level_state = 0;
         self.FOEMKKBNCNI.clear();
-        self.PENABKKHDIH = 0;
-        self.FFKKLALNFPG = 0;
         self.OCPMGBPNMED = 0;
+        self.level_state_start_timestamp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGJLHMAHIDD {
         static instance: NGJLHMAHIDD = NGJLHMAHIDD {
+            level_state: 0,
             FOEMKKBNCNI: ::std::vec::Vec::new(),
-            PENABKKHDIH: 0,
-            FFKKLALNFPG: 0,
             OCPMGBPNMED: 0,
+            level_state_start_timestamp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for NGJLHMAHIDD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NGJLHMAHIDD.proto\x1a\x11HONBPDEJDCC.proto\"\xa3\x01\n\x0bNGJLHMAH\
-    IDD\x12.\n\x0bFOEMKKBNCNI\x18\t\x20\x03(\x0b2\x0c.HONBPDEJDCCR\x0bFOEMKK\
-    BNCNI\x12\x20\n\x0bPENABKKHDIH\x18\n\x20\x01(\x04R\x0bPENABKKHDIH\x12\
-    \x20\n\x0bFFKKLALNFPG\x18\x0b\x20\x01(\rR\x0bFFKKLALNFPG\x12\x20\n\x0bOC\
-    PMGBPNMED\x18\r\x20\x01(\rR\x0bOCPMGBPNMEDb\x06proto3\
+    \n\x11NGJLHMAHIDD.proto\x1a\x11HONBPDEJDCC.proto\"\xbf\x01\n\x0bNGJLHMAH\
+    IDD\x12\x1f\n\x0blevel_state\x18\x05\x20\x01(\rR\nlevelState\x12.\n\x0bF\
+    OEMKKBNCNI\x18\x06\x20\x03(\x0b2\x0c.HONBPDEJDCCR\x0bFOEMKKBNCNI\x12\x20\
+    \n\x0bOCPMGBPNMED\x18\t\x20\x01(\rR\x0bOCPMGBPNMED\x12=\n\x1blevel_state\
+    _start_timestamp\x18\x0b\x20\x01(\x04R\x18levelStateStartTimestampb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

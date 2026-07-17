@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JAONELJJAFK {
     // message fields
+    // @@protoc_insertion_point(field:JAONELJJAFK.property_type)
+    pub property_type: u32,
     // @@protoc_insertion_point(field:JAONELJJAFK.value)
     pub value: f32,
-    // @@protoc_insertion_point(field:JAONELJJAFK.ACHILGIPGKL)
-    pub ACHILGIPGKL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JAONELJJAFK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JAONELJJAFK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "property_type",
+            |m: &JAONELJJAFK| { &m.property_type },
+            |m: &mut JAONELJJAFK| { &mut m.property_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "value",
             |m: &JAONELJJAFK| { &m.value },
             |m: &mut JAONELJJAFK| { &mut m.value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACHILGIPGKL",
-            |m: &JAONELJJAFK| { &m.ACHILGIPGKL },
-            |m: &mut JAONELJJAFK| { &mut m.ACHILGIPGKL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JAONELJJAFK>(
             "JAONELJJAFK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JAONELJJAFK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.property_type = is.read_uint32()?;
+                },
                 21 => {
                     self.value = is.read_float()?;
-                },
-                8 => {
-                    self.ACHILGIPGKL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JAONELJJAFK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.property_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.property_type);
+        }
         if self.value != 0. {
             my_size += 1 + 4;
-        }
-        if self.ACHILGIPGKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ACHILGIPGKL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JAONELJJAFK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.property_type != 0 {
+            os.write_uint32(1, self.property_type)?;
+        }
         if self.value != 0. {
             os.write_float(2, self.value)?;
-        }
-        if self.ACHILGIPGKL != 0 {
-            os.write_uint32(1, self.ACHILGIPGKL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JAONELJJAFK {
     }
 
     fn clear(&mut self) {
+        self.property_type = 0;
         self.value = 0.;
-        self.ACHILGIPGKL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JAONELJJAFK {
         static instance: JAONELJJAFK = JAONELJJAFK {
+            property_type: 0,
             value: 0.,
-            ACHILGIPGKL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JAONELJJAFK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JAONELJJAFK.proto\"E\n\x0bJAONELJJAFK\x12\x14\n\x05value\x18\x02\
-    \x20\x01(\x02R\x05value\x12\x20\n\x0bACHILGIPGKL\x18\x01\x20\x01(\rR\x0b\
-    ACHILGIPGKLb\x06proto3\
+    \n\x11JAONELJJAFK.proto\"H\n\x0bJAONELJJAFK\x12#\n\rproperty_type\x18\
+    \x01\x20\x01(\rR\x0cpropertyType\x12\x14\n\x05value\x18\x02\x20\x01(\x02\
+    R\x05valueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

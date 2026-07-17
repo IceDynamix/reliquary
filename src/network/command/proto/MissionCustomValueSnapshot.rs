@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MissionCustomValueSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:MissionCustomValueSnapshot.mcv_key)
-    pub mcv_key: ::std::string::String,
     // @@protoc_insertion_point(field:MissionCustomValueSnapshot.custom_value)
     pub custom_value: u32,
+    // @@protoc_insertion_point(field:MissionCustomValueSnapshot.mcv_key)
+    pub mcv_key: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MissionCustomValueSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MissionCustomValueSnapshot {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "mcv_key",
-            |m: &MissionCustomValueSnapshot| { &m.mcv_key },
-            |m: &mut MissionCustomValueSnapshot| { &mut m.mcv_key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "custom_value",
             |m: &MissionCustomValueSnapshot| { &m.custom_value },
             |m: &mut MissionCustomValueSnapshot| { &mut m.custom_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "mcv_key",
+            |m: &MissionCustomValueSnapshot| { &m.mcv_key },
+            |m: &mut MissionCustomValueSnapshot| { &mut m.mcv_key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MissionCustomValueSnapshot>(
             "MissionCustomValueSnapshot",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MissionCustomValueSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.mcv_key = is.read_string()?;
-                },
                 8 => {
                     self.custom_value = is.read_uint32()?;
+                },
+                18 => {
+                    self.mcv_key = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MissionCustomValueSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.mcv_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.mcv_key);
-        }
         if self.custom_value != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.custom_value);
+        }
+        if !self.mcv_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.mcv_key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MissionCustomValueSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.mcv_key.is_empty() {
-            os.write_string(2, &self.mcv_key)?;
-        }
         if self.custom_value != 0 {
             os.write_uint32(1, self.custom_value)?;
+        }
+        if !self.mcv_key.is_empty() {
+            os.write_string(2, &self.mcv_key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MissionCustomValueSnapshot {
     }
 
     fn clear(&mut self) {
-        self.mcv_key.clear();
         self.custom_value = 0;
+        self.mcv_key.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MissionCustomValueSnapshot {
         static instance: MissionCustomValueSnapshot = MissionCustomValueSnapshot {
-            mcv_key: ::std::string::String::new(),
             custom_value: 0,
+            mcv_key: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MissionCustomValueSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MissionCustomValueSnapshot.proto\"X\n\x1aMissionCustomValueSnapsho\
-    t\x12\x17\n\x07mcv_key\x18\x02\x20\x01(\tR\x06mcvKey\x12!\n\x0ccustom_va\
-    lue\x18\x01\x20\x01(\rR\x0bcustomValueb\x06proto3\
+    t\x12!\n\x0ccustom_value\x18\x01\x20\x01(\rR\x0bcustomValue\x12\x17\n\
+    \x07mcv_key\x18\x02\x20\x01(\tR\x06mcvKeyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.EFLOILNLFIC)?;
                 },
-                48 => {
+                72 => {
                     self.EFLOILNLFIC.push(is.read_uint32()?);
                 },
                 88 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.EFLOILNLFIC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.EFLOILNLFIC);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetRndOptionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.EFLOILNLFIC)?;
+        os.write_repeated_packed_uint32(9, &self.EFLOILNLFIC)?;
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for GetRndOptionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetRndOptionScRsp.proto\"O\n\x11GetRndOptionScRsp\x12\x20\n\x0bEFL\
-    OILNLFIC\x18\x06\x20\x03(\rR\x0bEFLOILNLFIC\x12\x18\n\x07retcode\x18\x0b\
+    OILNLFIC\x18\t\x20\x03(\rR\x0bEFLOILNLFIC\x12\x18\n\x07retcode\x18\x0b\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

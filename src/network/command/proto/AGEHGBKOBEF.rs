@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AGEHGBKOBEF {
     // message fields
-    // @@protoc_insertion_point(field:AGEHGBKOBEF.LFLCDNGALME)
-    pub LFLCDNGALME: ::protobuf::MessageField<super::EDOIEMCFFCA::EDOIEMCFFCA>,
     // @@protoc_insertion_point(field:AGEHGBKOBEF.CFDIKLBINHK)
     pub CFDIKLBINHK: ::protobuf::MessageField<super::HNKAOFDGLIE::HNKAOFDGLIE>,
+    // @@protoc_insertion_point(field:AGEHGBKOBEF.LFLCDNGALME)
+    pub LFLCDNGALME: ::protobuf::MessageField<super::EDOIEMCFFCA::EDOIEMCFFCA>,
     // special fields
     // @@protoc_insertion_point(special_field:AGEHGBKOBEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl AGEHGBKOBEF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EDOIEMCFFCA::EDOIEMCFFCA>(
-            "LFLCDNGALME",
-            |m: &AGEHGBKOBEF| { &m.LFLCDNGALME },
-            |m: &mut AGEHGBKOBEF| { &mut m.LFLCDNGALME },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNKAOFDGLIE::HNKAOFDGLIE>(
             "CFDIKLBINHK",
             |m: &AGEHGBKOBEF| { &m.CFDIKLBINHK },
             |m: &mut AGEHGBKOBEF| { &mut m.CFDIKLBINHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EDOIEMCFFCA::EDOIEMCFFCA>(
+            "LFLCDNGALME",
+            |m: &AGEHGBKOBEF| { &m.LFLCDNGALME },
+            |m: &mut AGEHGBKOBEF| { &mut m.LFLCDNGALME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AGEHGBKOBEF>(
             "AGEHGBKOBEF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AGEHGBKOBEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                11778 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
-                },
-                6994 => {
+                3586 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
+                },
+                7682 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AGEHGBKOBEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for AGEHGBKOBEF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1472, v, os)?;
-        }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(874, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(448, v, os)?;
+        }
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(960, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for AGEHGBKOBEF {
     }
 
     fn clear(&mut self) {
-        self.LFLCDNGALME.clear();
         self.CFDIKLBINHK.clear();
+        self.LFLCDNGALME.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AGEHGBKOBEF {
         static instance: AGEHGBKOBEF = AGEHGBKOBEF {
-            LFLCDNGALME: ::protobuf::MessageField::none(),
             CFDIKLBINHK: ::protobuf::MessageField::none(),
+            LFLCDNGALME: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for AGEHGBKOBEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AGEHGBKOBEF.proto\x1a\x11EDOIEMCFFCA.proto\x1a\x11HNKAOFDGLIE.prot\
-    o\"o\n\x0bAGEHGBKOBEF\x12/\n\x0bLFLCDNGALME\x18\xc0\x0b\x20\x01(\x0b2\
-    \x0c.EDOIEMCFFCAR\x0bLFLCDNGALME\x12/\n\x0bCFDIKLBINHK\x18\xea\x06\x20\
-    \x01(\x0b2\x0c.HNKAOFDGLIER\x0bCFDIKLBINHKb\x06proto3\
+    o\"o\n\x0bAGEHGBKOBEF\x12/\n\x0bCFDIKLBINHK\x18\xc0\x03\x20\x01(\x0b2\
+    \x0c.HNKAOFDGLIER\x0bCFDIKLBINHK\x12/\n\x0bLFLCDNGALME\x18\xc0\x07\x20\
+    \x01(\x0b2\x0c.EDOIEMCFFCAR\x0bLFLCDNGALMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

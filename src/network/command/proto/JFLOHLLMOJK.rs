@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JFLOHLLMOJK {
     // message fields
-    // @@protoc_insertion_point(field:JFLOHLLMOJK.MNCBFLEFJCK)
-    pub MNCBFLEFJCK: u32,
     // @@protoc_insertion_point(field:JFLOHLLMOJK.KCBLNMMHOKG)
     pub KCBLNMMHOKG: u32,
+    // @@protoc_insertion_point(field:JFLOHLLMOJK.MNCBFLEFJCK)
+    pub MNCBFLEFJCK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JFLOHLLMOJK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JFLOHLLMOJK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNCBFLEFJCK",
-            |m: &JFLOHLLMOJK| { &m.MNCBFLEFJCK },
-            |m: &mut JFLOHLLMOJK| { &mut m.MNCBFLEFJCK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KCBLNMMHOKG",
             |m: &JFLOHLLMOJK| { &m.KCBLNMMHOKG },
             |m: &mut JFLOHLLMOJK| { &mut m.KCBLNMMHOKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MNCBFLEFJCK",
+            |m: &JFLOHLLMOJK| { &m.MNCBFLEFJCK },
+            |m: &mut JFLOHLLMOJK| { &mut m.MNCBFLEFJCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JFLOHLLMOJK>(
             "JFLOHLLMOJK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.MNCBFLEFJCK = is.read_uint32()?;
-                },
-                64 => {
+                8 => {
                     self.KCBLNMMHOKG = is.read_uint32()?;
+                },
+                40 => {
+                    self.MNCBFLEFJCK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNCBFLEFJCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MNCBFLEFJCK);
-        }
         if self.KCBLNMMHOKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KCBLNMMHOKG);
+            my_size += ::protobuf::rt::uint32_size(1, self.KCBLNMMHOKG);
+        }
+        if self.MNCBFLEFJCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MNCBFLEFJCK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNCBFLEFJCK != 0 {
-            os.write_uint32(4, self.MNCBFLEFJCK)?;
-        }
         if self.KCBLNMMHOKG != 0 {
-            os.write_uint32(8, self.KCBLNMMHOKG)?;
+            os.write_uint32(1, self.KCBLNMMHOKG)?;
+        }
+        if self.MNCBFLEFJCK != 0 {
+            os.write_uint32(5, self.MNCBFLEFJCK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     }
 
     fn clear(&mut self) {
-        self.MNCBFLEFJCK = 0;
         self.KCBLNMMHOKG = 0;
+        self.MNCBFLEFJCK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JFLOHLLMOJK {
         static instance: JFLOHLLMOJK = JFLOHLLMOJK {
-            MNCBFLEFJCK: 0,
             KCBLNMMHOKG: 0,
+            MNCBFLEFJCK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JFLOHLLMOJK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JFLOHLLMOJK.proto\"Q\n\x0bJFLOHLLMOJK\x12\x20\n\x0bMNCBFLEFJCK\x18\
-    \x04\x20\x01(\rR\x0bMNCBFLEFJCK\x12\x20\n\x0bKCBLNMMHOKG\x18\x08\x20\x01\
-    (\rR\x0bKCBLNMMHOKGb\x06proto3\
+    \n\x11JFLOHLLMOJK.proto\"Q\n\x0bJFLOHLLMOJK\x12\x20\n\x0bKCBLNMMHOKG\x18\
+    \x01\x20\x01(\rR\x0bKCBLNMMHOKG\x12\x20\n\x0bMNCBFLEFJCK\x18\x05\x20\x01\
+    (\rR\x0bMNCBFLEFJCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

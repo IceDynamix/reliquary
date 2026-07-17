@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LKIOMEBIICO {
     // message fields
-    // @@protoc_insertion_point(field:LKIOMEBIICO.FLHHBLAFJLF)
-    pub FLHHBLAFJLF: ::std::vec::Vec<super::GOKOIADHFCN::GOKOIADHFCN>,
     // @@protoc_insertion_point(field:LKIOMEBIICO.passenger_id)
     pub passenger_id: u32,
+    // @@protoc_insertion_point(field:LKIOMEBIICO.FLHHBLAFJLF)
+    pub FLHHBLAFJLF: ::std::vec::Vec<super::GOKOIADHFCN::GOKOIADHFCN>,
     // special fields
     // @@protoc_insertion_point(special_field:LKIOMEBIICO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LKIOMEBIICO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FLHHBLAFJLF",
-            |m: &LKIOMEBIICO| { &m.FLHHBLAFJLF },
-            |m: &mut LKIOMEBIICO| { &mut m.FLHHBLAFJLF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "passenger_id",
             |m: &LKIOMEBIICO| { &m.passenger_id },
             |m: &mut LKIOMEBIICO| { &mut m.passenger_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FLHHBLAFJLF",
+            |m: &LKIOMEBIICO| { &m.FLHHBLAFJLF },
+            |m: &mut LKIOMEBIICO| { &mut m.FLHHBLAFJLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LKIOMEBIICO>(
             "LKIOMEBIICO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LKIOMEBIICO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.FLHHBLAFJLF.push(is.read_message()?);
-                },
-                72 => {
+                48 => {
                     self.passenger_id = is.read_uint32()?;
+                },
+                90 => {
+                    self.FLHHBLAFJLF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for LKIOMEBIICO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.passenger_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.passenger_id);
+        }
         for value in &self.FLHHBLAFJLF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.passenger_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.passenger_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FLHHBLAFJLF {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         if self.passenger_id != 0 {
-            os.write_uint32(9, self.passenger_id)?;
+            os.write_uint32(6, self.passenger_id)?;
         }
+        for v in &self.FLHHBLAFJLF {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LKIOMEBIICO {
     }
 
     fn clear(&mut self) {
-        self.FLHHBLAFJLF.clear();
         self.passenger_id = 0;
+        self.FLHHBLAFJLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LKIOMEBIICO {
         static instance: LKIOMEBIICO = LKIOMEBIICO {
-            FLHHBLAFJLF: ::std::vec::Vec::new(),
             passenger_id: 0,
+            FLHHBLAFJLF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LKIOMEBIICO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LKIOMEBIICO.proto\x1a\x11GOKOIADHFCN.proto\"`\n\x0bLKIOMEBIICO\x12\
-    .\n\x0bFLHHBLAFJLF\x18\x0e\x20\x03(\x0b2\x0c.GOKOIADHFCNR\x0bFLHHBLAFJLF\
-    \x12!\n\x0cpassenger_id\x18\t\x20\x01(\rR\x0bpassengerIdb\x06proto3\
+    !\n\x0cpassenger_id\x18\x06\x20\x01(\rR\x0bpassengerId\x12.\n\x0bFLHHBLA\
+    FJLF\x18\x0b\x20\x03(\x0b2\x0c.GOKOIADHFCNR\x0bFLHHBLAFJLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

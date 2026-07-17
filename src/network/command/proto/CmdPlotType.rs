@@ -30,9 +30,9 @@ pub enum CmdPlotType {
     // @@protoc_insertion_point(enum_value:CmdPlotType.MENMKJOIJBE_NLCDGIPGFDJ)
     MENMKJOIJBE_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdPlotType.MENMKJOIJBE_OCEIGENBHHG)
-    MENMKJOIJBE_OCEIGENBHHG = 1103,
+    MENMKJOIJBE_OCEIGENBHHG = 1178,
     // @@protoc_insertion_point(enum_value:CmdPlotType.MENMKJOIJBE_HLBDJCCBNJP)
-    MENMKJOIJBE_HLBDJCCBNJP = 1173,
+    MENMKJOIJBE_HLBDJCCBNJP = 1125,
 }
 
 impl ::protobuf::Enum for CmdPlotType {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for CmdPlotType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlotType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlotType::MENMKJOIJBE_NLCDGIPGFDJ),
-            1103 => ::std::option::Option::Some(CmdPlotType::MENMKJOIJBE_OCEIGENBHHG),
-            1173 => ::std::option::Option::Some(CmdPlotType::MENMKJOIJBE_HLBDJCCBNJP),
+            1178 => ::std::option::Option::Some(CmdPlotType::MENMKJOIJBE_OCEIGENBHHG),
+            1125 => ::std::option::Option::Some(CmdPlotType::MENMKJOIJBE_HLBDJCCBNJP),
             _ => ::std::option::Option::None
         }
     }
@@ -97,8 +97,8 @@ impl CmdPlotType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdPlotType.proto*f\n\x0bCmdPlotType\x12\x1b\n\x17MENMKJOIJBE_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17MENMKJOIJBE_OCEIGENBHHG\x10\xcf\x08\x12\x1c\n\
-    \x17MENMKJOIJBE_HLBDJCCBNJP\x10\x95\tb\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17MENMKJOIJBE_OCEIGENBHHG\x10\x9a\t\x12\x1c\n\
+    \x17MENMKJOIJBE_HLBDJCCBNJP\x10\xe5\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

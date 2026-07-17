@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                96 => {
                     self.PBNJDHFCHHC = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetForbidOtherApplyFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PBNJDHFCHHC != false {
-            os.write_bool(9, self.PBNJDHFCHHC)?;
+            os.write_bool(12, self.PBNJDHFCHHC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SetForbidOtherApplyFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SetForbidOtherApplyFriendCsReq.proto\"B\n\x1eSetForbidOtherApplyFrien\
-    dCsReq\x12\x20\n\x0bPBNJDHFCHHC\x18\t\x20\x01(\x08R\x0bPBNJDHFCHHCb\x06p\
-    roto3\
+    dCsReq\x12\x20\n\x0bPBNJDHFCHHC\x18\x0c\x20\x01(\x08R\x0bPBNJDHFCHHCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

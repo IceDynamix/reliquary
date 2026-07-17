@@ -72,7 +72,7 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(12, self.DOOACEHOPEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(13, self.DOOACEHOPEE)?;
+            os.write_uint32(12, self.DOOACEHOPEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrainVisitorBehaviorRewardCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeTrainVisitorBehaviorRewardCsReq.proto\"G\n#TakeTrainVisitorBehavi\
-    orRewardCsReq\x12\x20\n\x0bDOOACEHOPEE\x18\r\x20\x01(\rR\x0bDOOACEHOPEEb\
-    \x06proto3\
+    orRewardCsReq\x12\x20\n\x0bDOOACEHOPEE\x18\x0c\x20\x01(\rR\x0bDOOACEHOPE\
+    Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LECPPIEIENH {
     // message fields
-    // @@protoc_insertion_point(field:LECPPIEIENH.KDIDDHIDNCG)
-    pub KDIDDHIDNCG: u32,
     // @@protoc_insertion_point(field:LECPPIEIENH.JJPMDBCPJBA)
     pub JJPMDBCPJBA: u32,
+    // @@protoc_insertion_point(field:LECPPIEIENH.FKGLNIAHGOA)
+    pub FKGLNIAHGOA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LECPPIEIENH.index)
     pub index: u32,
+    // @@protoc_insertion_point(field:LECPPIEIENH.KDIDDHIDNCG)
+    pub KDIDDHIDNCG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LECPPIEIENH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +53,27 @@ impl LECPPIEIENH {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDIDDHIDNCG",
-            |m: &LECPPIEIENH| { &m.KDIDDHIDNCG },
-            |m: &mut LECPPIEIENH| { &mut m.KDIDDHIDNCG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JJPMDBCPJBA",
             |m: &LECPPIEIENH| { &m.JJPMDBCPJBA },
             |m: &mut LECPPIEIENH| { &mut m.JJPMDBCPJBA },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FKGLNIAHGOA",
+            |m: &LECPPIEIENH| { &m.FKGLNIAHGOA },
+            |m: &mut LECPPIEIENH| { &mut m.FKGLNIAHGOA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &LECPPIEIENH| { &m.index },
             |m: &mut LECPPIEIENH| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDIDDHIDNCG",
+            |m: &LECPPIEIENH| { &m.KDIDDHIDNCG },
+            |m: &mut LECPPIEIENH| { &mut m.KDIDDHIDNCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LECPPIEIENH>(
             "LECPPIEIENH",
@@ -86,14 +93,20 @@ impl ::protobuf::Message for LECPPIEIENH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.KDIDDHIDNCG = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.JJPMDBCPJBA = is.read_uint32()?;
                 },
-                72 => {
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FKGLNIAHGOA)?;
+                },
+                96 => {
+                    self.FKGLNIAHGOA.push(is.read_uint32()?);
+                },
+                104 => {
                     self.index = is.read_uint32()?;
+                },
+                112 => {
+                    self.KDIDDHIDNCG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +120,15 @@ impl ::protobuf::Message for LECPPIEIENH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDIDDHIDNCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KDIDDHIDNCG);
-        }
         if self.JJPMDBCPJBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JJPMDBCPJBA);
+            my_size += ::protobuf::rt::uint32_size(4, self.JJPMDBCPJBA);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FKGLNIAHGOA);
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.index);
+            my_size += ::protobuf::rt::uint32_size(13, self.index);
+        }
+        if self.KDIDDHIDNCG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KDIDDHIDNCG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +136,15 @@ impl ::protobuf::Message for LECPPIEIENH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDIDDHIDNCG != 0 {
-            os.write_uint32(3, self.KDIDDHIDNCG)?;
-        }
         if self.JJPMDBCPJBA != 0 {
-            os.write_uint32(14, self.JJPMDBCPJBA)?;
+            os.write_uint32(4, self.JJPMDBCPJBA)?;
         }
+        os.write_repeated_packed_uint32(12, &self.FKGLNIAHGOA)?;
         if self.index != 0 {
-            os.write_uint32(9, self.index)?;
+            os.write_uint32(13, self.index)?;
+        }
+        if self.KDIDDHIDNCG != 0 {
+            os.write_uint32(14, self.KDIDDHIDNCG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +163,19 @@ impl ::protobuf::Message for LECPPIEIENH {
     }
 
     fn clear(&mut self) {
-        self.KDIDDHIDNCG = 0;
         self.JJPMDBCPJBA = 0;
+        self.FKGLNIAHGOA.clear();
         self.index = 0;
+        self.KDIDDHIDNCG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LECPPIEIENH {
         static instance: LECPPIEIENH = LECPPIEIENH {
-            KDIDDHIDNCG: 0,
             JJPMDBCPJBA: 0,
+            FKGLNIAHGOA: ::std::vec::Vec::new(),
             index: 0,
+            KDIDDHIDNCG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for LECPPIEIENH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LECPPIEIENH.proto\"g\n\x0bLECPPIEIENH\x12\x20\n\x0bKDIDDHIDNCG\x18\
-    \x03\x20\x01(\rR\x0bKDIDDHIDNCG\x12\x20\n\x0bJJPMDBCPJBA\x18\x0e\x20\x01\
-    (\rR\x0bJJPMDBCPJBA\x12\x14\n\x05index\x18\t\x20\x01(\rR\x05indexb\x06pr\
-    oto3\
+    \n\x11LECPPIEIENH.proto\"\x89\x01\n\x0bLECPPIEIENH\x12\x20\n\x0bJJPMDBCP\
+    JBA\x18\x04\x20\x01(\rR\x0bJJPMDBCPJBA\x12\x20\n\x0bFKGLNIAHGOA\x18\x0c\
+    \x20\x03(\rR\x0bFKGLNIAHGOA\x12\x14\n\x05index\x18\r\x20\x01(\rR\x05inde\
+    x\x12\x20\n\x0bKDIDDHIDNCG\x18\x0e\x20\x01(\rR\x0bKDIDDHIDNCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

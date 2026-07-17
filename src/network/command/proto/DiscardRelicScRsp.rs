@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiscardRelicScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DiscardRelicScRsp.relic_ids)
-    pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiscardRelicScRsp.IFEEJKMACHF)
     pub IFEEJKMACHF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
-    // @@protoc_insertion_point(field:DiscardRelicScRsp.DKPCAIGPHNO)
-    pub DKPCAIGPHNO: bool,
+    // @@protoc_insertion_point(field:DiscardRelicScRsp.relic_ids)
+    pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiscardRelicScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:DiscardRelicScRsp.DKPCAIGPHNO)
+    pub DKPCAIGPHNO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl DiscardRelicScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEEJKMACHF",
+            |m: &DiscardRelicScRsp| { &m.IFEEJKMACHF },
+            |m: &mut DiscardRelicScRsp| { &mut m.IFEEJKMACHF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
             |m: &DiscardRelicScRsp| { &m.relic_ids },
             |m: &mut DiscardRelicScRsp| { &mut m.relic_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFEEJKMACHF",
-            |m: &DiscardRelicScRsp| { &m.IFEEJKMACHF },
-            |m: &mut DiscardRelicScRsp| { &mut m.IFEEJKMACHF },
+            "retcode",
+            |m: &DiscardRelicScRsp| { &m.retcode },
+            |m: &mut DiscardRelicScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DKPCAIGPHNO",
             |m: &DiscardRelicScRsp| { &m.DKPCAIGPHNO },
             |m: &mut DiscardRelicScRsp| { &mut m.DKPCAIGPHNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DiscardRelicScRsp| { &m.retcode },
-            |m: &mut DiscardRelicScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicScRsp>(
             "DiscardRelicScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
-                },
-                96 => {
-                    self.relic_ids.push(is.read_uint32()?);
-                },
-                16 => {
+                24 => {
                     self.IFEEJKMACHF = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.DKPCAIGPHNO = is.read_bool()?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                80 => {
+                40 => {
+                    self.relic_ids.push(is.read_uint32()?);
+                },
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.DKPCAIGPHNO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.relic_ids);
         if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::PJHKIIDEOOG_ICFONCMFNLG) {
-            my_size += ::protobuf::rt::int32_size(2, self.IFEEJKMACHF.value());
+            my_size += ::protobuf::rt::int32_size(3, self.IFEEJKMACHF.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.relic_ids);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.DKPCAIGPHNO != false {
             my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.relic_ids)?;
         if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::PJHKIIDEOOG_ICFONCMFNLG) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.IFEEJKMACHF))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.IFEEJKMACHF))?;
+        }
+        os.write_repeated_packed_uint32(5, &self.relic_ids)?;
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         if self.DKPCAIGPHNO != false {
-            os.write_bool(9, self.DKPCAIGPHNO)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_bool(14, self.DKPCAIGPHNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for DiscardRelicScRsp {
     }
 
     fn clear(&mut self) {
-        self.relic_ids.clear();
         self.IFEEJKMACHF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::PJHKIIDEOOG_ICFONCMFNLG);
-        self.DKPCAIGPHNO = false;
+        self.relic_ids.clear();
         self.retcode = 0;
+        self.DKPCAIGPHNO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiscardRelicScRsp {
         static instance: DiscardRelicScRsp = DiscardRelicScRsp {
-            relic_ids: ::std::vec::Vec::new(),
             IFEEJKMACHF: ::protobuf::EnumOrUnknown::from_i32(0),
-            DKPCAIGPHNO: false,
+            relic_ids: ::std::vec::Vec::new(),
             retcode: 0,
+            DKPCAIGPHNO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicScRsp.proto\x1a\x16RelicDiscardType.proto\"\xa1\x01\n\
-    \x11DiscardRelicScRsp\x12\x1b\n\trelic_ids\x18\x0c\x20\x03(\rR\x08relicI\
-    ds\x123\n\x0bIFEEJKMACHF\x18\x02\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0b\
-    IFEEJKMACHF\x12\x20\n\x0bDKPCAIGPHNO\x18\t\x20\x01(\x08R\x0bDKPCAIGPHNO\
-    \x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x11DiscardRelicScRsp\x123\n\x0bIFEEJKMACHF\x18\x03\x20\x01(\x0e2\x11.Re\
+    licDiscardTypeR\x0bIFEEJKMACHF\x12\x1b\n\trelic_ids\x18\x05\x20\x03(\rR\
+    \x08relicIds\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\
+    \n\x0bDKPCAIGPHNO\x18\x0e\x20\x01(\x08R\x0bDKPCAIGPHNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

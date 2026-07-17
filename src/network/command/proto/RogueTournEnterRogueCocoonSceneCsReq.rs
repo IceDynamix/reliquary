@@ -28,18 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournEnterRogueCocoonSceneCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.DCNNFJLABPL)
     pub DCNNFJLABPL: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.difficulty_level)
-    pub difficulty_level: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.HECCOBFBJFI)
-    pub HECCOBFBJFI: u32,
-    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.FDEKKOKBDIC)
-    pub FDEKKOKBDIC: bool,
     // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.NBLMAGLGCGN)
     pub NBLMAGLGCGN: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.difficulty)
+    pub difficulty: u32,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
+    // @@protoc_insertion_point(field:RogueTournEnterRogueCocoonSceneCsReq.HECCOBFBJFI)
+    pub HECCOBFBJFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournEnterRogueCocoonSceneCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,37 +55,32 @@ impl RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.avatar_list },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCNNFJLABPL",
             |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.DCNNFJLABPL },
             |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.DCNNFJLABPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "difficulty_level",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.difficulty_level },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.difficulty_level },
+            "NBLMAGLGCGN",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.NBLMAGLGCGN },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.NBLMAGLGCGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "difficulty",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.difficulty },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.difficulty },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.avatar_list },
+            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HECCOBFBJFI",
             |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.HECCOBFBJFI },
             |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.HECCOBFBJFI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDEKKOKBDIC",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.FDEKKOKBDIC },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.FDEKKOKBDIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBLMAGLGCGN",
-            |m: &RogueTournEnterRogueCocoonSceneCsReq| { &m.NBLMAGLGCGN },
-            |m: &mut RogueTournEnterRogueCocoonSceneCsReq| { &mut m.NBLMAGLGCGN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournEnterRogueCocoonSceneCsReq>(
             "RogueTournEnterRogueCocoonSceneCsReq",
@@ -107,23 +100,20 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                64 => {
+                16 => {
                     self.DCNNFJLABPL = is.read_uint32()?;
                 },
-                88 => {
-                    self.difficulty_level = is.read_uint32()?;
-                },
-                72 => {
-                    self.HECCOBFBJFI = is.read_uint32()?;
-                },
-                16 => {
-                    self.FDEKKOKBDIC = is.read_bool()?;
-                },
-                40 => {
+                48 => {
                     self.NBLMAGLGCGN = is.read_uint32()?;
+                },
+                64 => {
+                    self.difficulty = is.read_uint32()?;
+                },
+                82 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                96 => {
+                    self.HECCOBFBJFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +127,21 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DCNNFJLABPL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DCNNFJLABPL);
+        }
+        if self.NBLMAGLGCGN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NBLMAGLGCGN);
+        }
+        if self.difficulty != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.difficulty);
+        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DCNNFJLABPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DCNNFJLABPL);
-        }
-        if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.difficulty_level);
-        }
         if self.HECCOBFBJFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HECCOBFBJFI);
-        }
-        if self.FDEKKOKBDIC != false {
-            my_size += 1 + 1;
-        }
-        if self.NBLMAGLGCGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NBLMAGLGCGN);
+            my_size += ::protobuf::rt::uint32_size(12, self.HECCOBFBJFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +149,20 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if self.DCNNFJLABPL != 0 {
-            os.write_uint32(8, self.DCNNFJLABPL)?;
-        }
-        if self.difficulty_level != 0 {
-            os.write_uint32(11, self.difficulty_level)?;
-        }
-        if self.HECCOBFBJFI != 0 {
-            os.write_uint32(9, self.HECCOBFBJFI)?;
-        }
-        if self.FDEKKOKBDIC != false {
-            os.write_bool(2, self.FDEKKOKBDIC)?;
+            os.write_uint32(2, self.DCNNFJLABPL)?;
         }
         if self.NBLMAGLGCGN != 0 {
-            os.write_uint32(5, self.NBLMAGLGCGN)?;
+            os.write_uint32(6, self.NBLMAGLGCGN)?;
+        }
+        if self.difficulty != 0 {
+            os.write_uint32(8, self.difficulty)?;
+        }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.HECCOBFBJFI != 0 {
+            os.write_uint32(12, self.HECCOBFBJFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +181,21 @@ impl ::protobuf::Message for RogueTournEnterRogueCocoonSceneCsReq {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
         self.DCNNFJLABPL = 0;
-        self.difficulty_level = 0;
-        self.HECCOBFBJFI = 0;
-        self.FDEKKOKBDIC = false;
         self.NBLMAGLGCGN = 0;
+        self.difficulty = 0;
+        self.avatar_list.clear();
+        self.HECCOBFBJFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournEnterRogueCocoonSceneCsReq {
         static instance: RogueTournEnterRogueCocoonSceneCsReq = RogueTournEnterRogueCocoonSceneCsReq {
-            avatar_list: ::std::vec::Vec::new(),
             DCNNFJLABPL: 0,
-            difficulty_level: 0,
-            HECCOBFBJFI: 0,
-            FDEKKOKBDIC: false,
             NBLMAGLGCGN: 0,
+            difficulty: 0,
+            avatar_list: ::std::vec::Vec::new(),
+            HECCOBFBJFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournEnterRogueCocoonSceneCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*RogueTournEnterRogueCocoonSceneCsReq.proto\x1a\x16AvatarIdentifier.pr\
-    oto\"\x8d\x02\n$RogueTournEnterRogueCocoonSceneCsReq\x122\n\x0bavatar_li\
-    st\x18\x07\x20\x03(\x0b2\x11.AvatarIdentifierR\navatarList\x12\x20\n\x0b\
-    DCNNFJLABPL\x18\x08\x20\x01(\rR\x0bDCNNFJLABPL\x12)\n\x10difficulty_leve\
-    l\x18\x0b\x20\x01(\rR\x0fdifficultyLevel\x12\x20\n\x0bHECCOBFBJFI\x18\t\
-    \x20\x01(\rR\x0bHECCOBFBJFI\x12\x20\n\x0bFDEKKOKBDIC\x18\x02\x20\x01(\
-    \x08R\x0bFDEKKOKBDIC\x12\x20\n\x0bNBLMAGLGCGN\x18\x05\x20\x01(\rR\x0bNBL\
-    MAGLGCGNb\x06proto3\
+    oto\"\xe0\x01\n$RogueTournEnterRogueCocoonSceneCsReq\x12\x20\n\x0bDCNNFJ\
+    LABPL\x18\x02\x20\x01(\rR\x0bDCNNFJLABPL\x12\x20\n\x0bNBLMAGLGCGN\x18\
+    \x06\x20\x01(\rR\x0bNBLMAGLGCGN\x12\x1e\n\ndifficulty\x18\x08\x20\x01(\r\
+    R\ndifficulty\x122\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x11.AvatarIdenti\
+    fierR\navatarList\x12\x20\n\x0bHECCOBFBJFI\x18\x0c\x20\x01(\rR\x0bHECCOB\
+    FBJFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

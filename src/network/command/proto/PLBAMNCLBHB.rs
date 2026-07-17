@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PLBAMNCLBHB {
     // message fields
-    // @@protoc_insertion_point(field:PLBAMNCLBHB.MALDOMHPILM)
-    pub MALDOMHPILM: ::std::vec::Vec<super::DNLKMHLAPHC::DNLKMHLAPHC>,
-    // @@protoc_insertion_point(field:PLBAMNCLBHB.HIILDALHIMD)
-    pub HIILDALHIMD: ::std::vec::Vec<super::MMBBHFNJILI::MMBBHFNJILI>,
     // @@protoc_insertion_point(field:PLBAMNCLBHB.NBMNPGKEIIH)
     pub NBMNPGKEIIH: u32,
     // @@protoc_insertion_point(field:PLBAMNCLBHB.HIKMFMJCNKP)
     pub HIKMFMJCNKP: bool,
+    // @@protoc_insertion_point(field:PLBAMNCLBHB.HIILDALHIMD)
+    pub HIILDALHIMD: ::std::vec::Vec<super::MMBBHFNJILI::MMBBHFNJILI>,
+    // @@protoc_insertion_point(field:PLBAMNCLBHB.MALDOMHPILM)
+    pub MALDOMHPILM: ::std::vec::Vec<super::DNLKMHLAPHC::DNLKMHLAPHC>,
     // special fields
     // @@protoc_insertion_point(special_field:PLBAMNCLBHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl PLBAMNCLBHB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MALDOMHPILM",
-            |m: &PLBAMNCLBHB| { &m.MALDOMHPILM },
-            |m: &mut PLBAMNCLBHB| { &mut m.MALDOMHPILM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HIILDALHIMD",
-            |m: &PLBAMNCLBHB| { &m.HIILDALHIMD },
-            |m: &mut PLBAMNCLBHB| { &mut m.HIILDALHIMD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBMNPGKEIIH",
             |m: &PLBAMNCLBHB| { &m.NBMNPGKEIIH },
@@ -74,6 +64,16 @@ impl PLBAMNCLBHB {
             "HIKMFMJCNKP",
             |m: &PLBAMNCLBHB| { &m.HIKMFMJCNKP },
             |m: &mut PLBAMNCLBHB| { &mut m.HIKMFMJCNKP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HIILDALHIMD",
+            |m: &PLBAMNCLBHB| { &m.HIILDALHIMD },
+            |m: &mut PLBAMNCLBHB| { &mut m.HIILDALHIMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MALDOMHPILM",
+            |m: &PLBAMNCLBHB| { &m.MALDOMHPILM },
+            |m: &mut PLBAMNCLBHB| { &mut m.MALDOMHPILM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PLBAMNCLBHB>(
             "PLBAMNCLBHB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.MALDOMHPILM.push(is.read_message()?);
-                },
-                26 => {
-                    self.HIILDALHIMD.push(is.read_message()?);
-                },
                 16 => {
                     self.NBMNPGKEIIH = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.HIKMFMJCNKP = is.read_bool()?;
+                },
+                66 => {
+                    self.HIILDALHIMD.push(is.read_message()?);
+                },
+                74 => {
+                    self.MALDOMHPILM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MALDOMHPILM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.HIILDALHIMD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.NBMNPGKEIIH != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.NBMNPGKEIIH);
         }
         if self.HIKMFMJCNKP != false {
             my_size += 1 + 1;
         }
+        for value in &self.HIILDALHIMD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.MALDOMHPILM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MALDOMHPILM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.HIILDALHIMD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
         if self.NBMNPGKEIIH != 0 {
             os.write_uint32(2, self.NBMNPGKEIIH)?;
         }
         if self.HIKMFMJCNKP != false {
-            os.write_bool(10, self.HIKMFMJCNKP)?;
+            os.write_bool(3, self.HIKMFMJCNKP)?;
         }
+        for v in &self.HIILDALHIMD {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        for v in &self.MALDOMHPILM {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     }
 
     fn clear(&mut self) {
-        self.MALDOMHPILM.clear();
-        self.HIILDALHIMD.clear();
         self.NBMNPGKEIIH = 0;
         self.HIKMFMJCNKP = false;
+        self.HIILDALHIMD.clear();
+        self.MALDOMHPILM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PLBAMNCLBHB {
         static instance: PLBAMNCLBHB = PLBAMNCLBHB {
-            MALDOMHPILM: ::std::vec::Vec::new(),
-            HIILDALHIMD: ::std::vec::Vec::new(),
             NBMNPGKEIIH: 0,
             HIKMFMJCNKP: false,
+            HIILDALHIMD: ::std::vec::Vec::new(),
+            MALDOMHPILM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for PLBAMNCLBHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLBAMNCLBHB.proto\x1a\x11DNLKMHLAPHC.proto\x1a\x11MMBBHFNJILI.prot\
-    o\"\xb1\x01\n\x0bPLBAMNCLBHB\x12.\n\x0bMALDOMHPILM\x18\x08\x20\x03(\x0b2\
-    \x0c.DNLKMHLAPHCR\x0bMALDOMHPILM\x12.\n\x0bHIILDALHIMD\x18\x03\x20\x03(\
-    \x0b2\x0c.MMBBHFNJILIR\x0bHIILDALHIMD\x12\x20\n\x0bNBMNPGKEIIH\x18\x02\
-    \x20\x01(\rR\x0bNBMNPGKEIIH\x12\x20\n\x0bHIKMFMJCNKP\x18\n\x20\x01(\x08R\
-    \x0bHIKMFMJCNKPb\x06proto3\
+    o\"\xb1\x01\n\x0bPLBAMNCLBHB\x12\x20\n\x0bNBMNPGKEIIH\x18\x02\x20\x01(\r\
+    R\x0bNBMNPGKEIIH\x12\x20\n\x0bHIKMFMJCNKP\x18\x03\x20\x01(\x08R\x0bHIKMF\
+    MJCNKP\x12.\n\x0bHIILDALHIMD\x18\x08\x20\x03(\x0b2\x0c.MMBBHFNJILIR\x0bH\
+    IILDALHIMD\x12.\n\x0bMALDOMHPILM\x18\t\x20\x03(\x0b2\x0c.DNLKMHLAPHCR\
+    \x0bMALDOMHPILMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

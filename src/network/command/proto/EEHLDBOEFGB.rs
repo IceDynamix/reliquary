@@ -34,10 +34,10 @@ pub struct EEHLDBOEFGB {
     pub BCAKPNCHIIJ: u32,
     // @@protoc_insertion_point(field:EEHLDBOEFGB.OJNGBIBGHBL)
     pub OJNGBIBGHBL: i32,
-    // @@protoc_insertion_point(field:EEHLDBOEFGB.HKEACDBJCOD)
-    pub HKEACDBJCOD: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:EEHLDBOEFGB.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
+    // @@protoc_insertion_point(field:EEHLDBOEFGB.game_mode)
+    pub game_mode: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:EEHLDBOEFGB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl EEHLDBOEFGB {
             |m: &mut EEHLDBOEFGB| { &mut m.OJNGBIBGHBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKEACDBJCOD",
-            |m: &EEHLDBOEFGB| { &m.HKEACDBJCOD },
-            |m: &mut EEHLDBOEFGB| { &mut m.HKEACDBJCOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &EEHLDBOEFGB| { &m.reason },
             |m: &mut EEHLDBOEFGB| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_mode",
+            |m: &EEHLDBOEFGB| { &m.game_mode },
+            |m: &mut EEHLDBOEFGB| { &mut m.game_mode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EEHLDBOEFGB>(
             "EEHLDBOEFGB",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EEHLDBOEFGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDFPKAMFHAP)?;
                 },
-                16 => {
+                40 => {
                     self.BCAKPNCHIIJ = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.OJNGBIBGHBL = is.read_int32()?;
                 },
-                104 => {
-                    self.HKEACDBJCOD = is.read_enum_or_unknown()?;
-                },
-                56 => {
+                88 => {
                     self.reason = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.game_mode = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -132,16 +132,16 @@ impl ::protobuf::Message for EEHLDBOEFGB {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BCAKPNCHIIJ);
+            my_size += ::protobuf::rt::uint32_size(5, self.BCAKPNCHIIJ);
         }
         if self.OJNGBIBGHBL != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.OJNGBIBGHBL);
-        }
-        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.HKEACDBJCOD.value());
+            my_size += ::protobuf::rt::int32_size(7, self.OJNGBIBGHBL);
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
+        }
+        if self.game_mode != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.game_mode.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for EEHLDBOEFGB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JDFPKAMFHAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(2, self.BCAKPNCHIIJ)?;
+            os.write_uint32(5, self.BCAKPNCHIIJ)?;
         }
         if self.OJNGBIBGHBL != 0 {
-            os.write_int32(5, self.OJNGBIBGHBL)?;
-        }
-        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
+            os.write_int32(7, self.OJNGBIBGHBL)?;
         }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if self.game_mode != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.game_mode))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::Message for EEHLDBOEFGB {
         self.JDFPKAMFHAP.clear();
         self.BCAKPNCHIIJ = 0;
         self.OJNGBIBGHBL = 0;
-        self.HKEACDBJCOD = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
         self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
+        self.game_mode = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
@@ -194,8 +194,8 @@ impl ::protobuf::Message for EEHLDBOEFGB {
             JDFPKAMFHAP: ::protobuf::MessageField::none(),
             BCAKPNCHIIJ: 0,
             OJNGBIBGHBL: 0,
-            HKEACDBJCOD: ::protobuf::EnumOrUnknown::from_i32(0),
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            game_mode: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for EEHLDBOEFGB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EEHLDBOEFGB.proto\x1a\x13FightGameMode.proto\x1a\x11LAJGLHCCNED.pr\
-    oto\x1a\x11NPPEMMILLCO.proto\"\xd9\x01\n\x0bEEHLDBOEFGB\x12.\n\x0bJDFPKA\
-    MFHAP\x18\x0b\x20\x01(\x0b2\x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12\x20\n\
-    \x0bBCAKPNCHIIJ\x18\x02\x20\x01(\rR\x0bBCAKPNCHIIJ\x12\x20\n\x0bOJNGBIBG\
-    HBL\x18\x05\x20\x01(\x05R\x0bOJNGBIBGHBL\x120\n\x0bHKEACDBJCOD\x18\r\x20\
-    \x01(\x0e2\x0e.FightGameModeR\x0bHKEACDBJCOD\x12$\n\x06reason\x18\x07\
-    \x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reasonb\x06proto3\
+    oto\x1a\x11NPPEMMILLCO.proto\"\xd4\x01\n\x0bEEHLDBOEFGB\x12.\n\x0bJDFPKA\
+    MFHAP\x18\x04\x20\x01(\x0b2\x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12\x20\n\
+    \x0bBCAKPNCHIIJ\x18\x05\x20\x01(\rR\x0bBCAKPNCHIIJ\x12\x20\n\x0bOJNGBIBG\
+    HBL\x18\x07\x20\x01(\x05R\x0bOJNGBIBGHBL\x12$\n\x06reason\x18\x0b\x20\
+    \x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\x12+\n\tgame_mode\x18\x0c\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x08gameModeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

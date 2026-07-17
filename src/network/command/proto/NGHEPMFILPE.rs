@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NGHEPMFILPE {
     // message fields
-    // @@protoc_insertion_point(field:NGHEPMFILPE.GOBMEEHNFDC)
-    pub GOBMEEHNFDC: ::protobuf::MessageField<super::AKHEOAIPAPA::AKHEOAIPAPA>,
     // @@protoc_insertion_point(field:NGHEPMFILPE.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
+    // @@protoc_insertion_point(field:NGHEPMFILPE.GOBMEEHNFDC)
+    pub GOBMEEHNFDC: ::protobuf::MessageField<super::AKHEOAIPAPA::AKHEOAIPAPA>,
     // special fields
     // @@protoc_insertion_point(special_field:NGHEPMFILPE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NGHEPMFILPE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AKHEOAIPAPA::AKHEOAIPAPA>(
-            "GOBMEEHNFDC",
-            |m: &NGHEPMFILPE| { &m.GOBMEEHNFDC },
-            |m: &mut NGHEPMFILPE| { &mut m.GOBMEEHNFDC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFCNALJDHMP",
             |m: &NGHEPMFILPE| { &m.BFCNALJDHMP },
             |m: &mut NGHEPMFILPE| { &mut m.BFCNALJDHMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AKHEOAIPAPA::AKHEOAIPAPA>(
+            "GOBMEEHNFDC",
+            |m: &NGHEPMFILPE| { &m.GOBMEEHNFDC },
+            |m: &mut NGHEPMFILPE| { &mut m.GOBMEEHNFDC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NGHEPMFILPE>(
             "NGHEPMFILPE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NGHEPMFILPE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOBMEEHNFDC)?;
-                },
-                72 => {
+                80 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOBMEEHNFDC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for NGHEPMFILPE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BFCNALJDHMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BFCNALJDHMP);
+        }
         if let Some(v) = self.GOBMEEHNFDC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BFCNALJDHMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for NGHEPMFILPE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GOBMEEHNFDC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(9, self.BFCNALJDHMP)?;
+            os.write_uint32(10, self.BFCNALJDHMP)?;
+        }
+        if let Some(v) = self.GOBMEEHNFDC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for NGHEPMFILPE {
     }
 
     fn clear(&mut self) {
-        self.GOBMEEHNFDC.clear();
         self.BFCNALJDHMP = 0;
+        self.GOBMEEHNFDC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGHEPMFILPE {
         static instance: NGHEPMFILPE = NGHEPMFILPE {
-            GOBMEEHNFDC: ::protobuf::MessageField::none(),
             BFCNALJDHMP: 0,
+            GOBMEEHNFDC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NGHEPMFILPE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGHEPMFILPE.proto\x1a\x11AKHEOAIPAPA.proto\"_\n\x0bNGHEPMFILPE\x12\
-    .\n\x0bGOBMEEHNFDC\x18\x0f\x20\x01(\x0b2\x0c.AKHEOAIPAPAR\x0bGOBMEEHNFDC\
-    \x12\x20\n\x0bBFCNALJDHMP\x18\t\x20\x01(\rR\x0bBFCNALJDHMPb\x06proto3\
+    \x20\n\x0bBFCNALJDHMP\x18\n\x20\x01(\rR\x0bBFCNALJDHMP\x12.\n\x0bGOBMEEH\
+    NFDC\x18\x0e\x20\x01(\x0b2\x0c.AKHEOAIPAPAR\x0bGOBMEEHNFDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

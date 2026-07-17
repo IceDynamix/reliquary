@@ -79,10 +79,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                50 => {
                     self.IGHFGADJCMG = is.read_string()?;
                 },
-                24 => {
+                120 => {
                     self.EIKOEBDEGGA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.IGHFGADJCMG.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.IGHFGADJCMG);
+            my_size += ::protobuf::rt::string_size(6, &self.IGHFGADJCMG);
         }
         if self.EIKOEBDEGGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EIKOEBDEGGA);
+            my_size += ::protobuf::rt::uint32_size(15, self.EIKOEBDEGGA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DABKPEFPBOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.IGHFGADJCMG.is_empty() {
-            os.write_string(2, &self.IGHFGADJCMG)?;
+            os.write_string(6, &self.IGHFGADJCMG)?;
         }
         if self.EIKOEBDEGGA != 0 {
-            os.write_uint32(3, self.EIKOEBDEGGA)?;
+            os.write_uint32(15, self.EIKOEBDEGGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DABKPEFPBOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DABKPEFPBOL.proto\"Q\n\x0bDABKPEFPBOL\x12\x20\n\x0bIGHFGADJCMG\x18\
-    \x02\x20\x01(\tR\x0bIGHFGADJCMG\x12\x20\n\x0bEIKOEBDEGGA\x18\x03\x20\x01\
+    \x06\x20\x01(\tR\x0bIGHFGADJCMG\x12\x20\n\x0bEIKOEBDEGGA\x18\x0f\x20\x01\
     (\rR\x0bEIKOEBDEGGAb\x06proto3\
 ";
 

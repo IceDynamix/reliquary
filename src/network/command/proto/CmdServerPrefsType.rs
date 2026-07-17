@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdServerPrefsType {
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_NLCDGIPGFDJ)
     EHBMIAIMLDM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_MGANIPAGEMF)
-    EHBMIAIMLDM_MGANIPAGEMF = 6136,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_FHLIGINBMMD)
-    EHBMIAIMLDM_FHLIGINBMMD = 6113,
-    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_CFEDCHCKPDI)
-    EHBMIAIMLDM_CFEDCHCKPDI = 6173,
+    EHBMIAIMLDM_FHLIGINBMMD = 6181,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_LJGPIDLHFCG)
-    EHBMIAIMLDM_LJGPIDLHFCG = 6127,
+    EHBMIAIMLDM_LJGPIDLHFCG = 6158,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_CFEDCHCKPDI)
+    EHBMIAIMLDM_CFEDCHCKPDI = 6125,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_BIOLLCIKFFD)
-    EHBMIAIMLDM_BIOLLCIKFFD = 6180,
+    EHBMIAIMLDM_BIOLLCIKFFD = 6193,
+    // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_MGANIPAGEMF)
+    EHBMIAIMLDM_MGANIPAGEMF = 6188,
     // @@protoc_insertion_point(enum_value:CmdServerPrefsType.EHBMIAIMLDM_BMKEPFAHFOO)
-    EHBMIAIMLDM_BMKEPFAHFOO = 6103,
+    EHBMIAIMLDM_BMKEPFAHFOO = 6178,
 }
 
 impl ::protobuf::Enum for CmdServerPrefsType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdServerPrefsType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdServerPrefsType> {
         match value {
             0 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_NLCDGIPGFDJ),
-            6136 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF),
-            6113 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD),
-            6173 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI),
-            6127 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG),
-            6180 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD),
-            6103 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BMKEPFAHFOO),
+            6181 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD),
+            6158 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG),
+            6125 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI),
+            6193 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD),
+            6188 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF),
+            6178 => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BMKEPFAHFOO),
             _ => ::std::option::Option::None
         }
     }
@@ -66,11 +66,11 @@ impl ::protobuf::Enum for CmdServerPrefsType {
     fn from_str(str: &str) -> ::std::option::Option<CmdServerPrefsType> {
         match str {
             "EHBMIAIMLDM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_NLCDGIPGFDJ),
-            "EHBMIAIMLDM_MGANIPAGEMF" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF),
             "EHBMIAIMLDM_FHLIGINBMMD" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD),
-            "EHBMIAIMLDM_CFEDCHCKPDI" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI),
             "EHBMIAIMLDM_LJGPIDLHFCG" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG),
+            "EHBMIAIMLDM_CFEDCHCKPDI" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI),
             "EHBMIAIMLDM_BIOLLCIKFFD" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD),
+            "EHBMIAIMLDM_MGANIPAGEMF" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF),
             "EHBMIAIMLDM_BMKEPFAHFOO" => ::std::option::Option::Some(CmdServerPrefsType::EHBMIAIMLDM_BMKEPFAHFOO),
             _ => ::std::option::Option::None
         }
@@ -78,11 +78,11 @@ impl ::protobuf::Enum for CmdServerPrefsType {
 
     const VALUES: &'static [CmdServerPrefsType] = &[
         CmdServerPrefsType::EHBMIAIMLDM_NLCDGIPGFDJ,
-        CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF,
         CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD,
-        CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI,
         CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG,
+        CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI,
         CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD,
+        CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF,
         CmdServerPrefsType::EHBMIAIMLDM_BMKEPFAHFOO,
     ];
 }
@@ -96,11 +96,11 @@ impl ::protobuf::EnumFull for CmdServerPrefsType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdServerPrefsType::EHBMIAIMLDM_NLCDGIPGFDJ => 0,
-            CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF => 1,
-            CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD => 2,
+            CmdServerPrefsType::EHBMIAIMLDM_FHLIGINBMMD => 1,
+            CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG => 2,
             CmdServerPrefsType::EHBMIAIMLDM_CFEDCHCKPDI => 3,
-            CmdServerPrefsType::EHBMIAIMLDM_LJGPIDLHFCG => 4,
-            CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD => 5,
+            CmdServerPrefsType::EHBMIAIMLDM_BIOLLCIKFFD => 4,
+            CmdServerPrefsType::EHBMIAIMLDM_MGANIPAGEMF => 5,
             CmdServerPrefsType::EHBMIAIMLDM_BMKEPFAHFOO => 6,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -121,11 +121,11 @@ impl CmdServerPrefsType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdServerPrefsType.proto*\xe5\x01\n\x12CmdServerPrefsType\x12\x1b\
-    \n\x17EHBMIAIMLDM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EHBMIAIMLDM_MGANIPAGEMF\
-    \x10\xf8/\x12\x1c\n\x17EHBMIAIMLDM_FHLIGINBMMD\x10\xe1/\x12\x1c\n\x17EHB\
-    MIAIMLDM_CFEDCHCKPDI\x10\x9d0\x12\x1c\n\x17EHBMIAIMLDM_LJGPIDLHFCG\x10\
-    \xef/\x12\x1c\n\x17EHBMIAIMLDM_BIOLLCIKFFD\x10\xa40\x12\x1c\n\x17EHBMIAI\
-    MLDM_BMKEPFAHFOO\x10\xd7/b\x06proto3\
+    \n\x17EHBMIAIMLDM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EHBMIAIMLDM_FHLIGINBMMD\
+    \x10\xa50\x12\x1c\n\x17EHBMIAIMLDM_LJGPIDLHFCG\x10\x8e0\x12\x1c\n\x17EHB\
+    MIAIMLDM_CFEDCHCKPDI\x10\xed/\x12\x1c\n\x17EHBMIAIMLDM_BIOLLCIKFFD\x10\
+    \xb10\x12\x1c\n\x17EHBMIAIMLDM_MGANIPAGEMF\x10\xac0\x12\x1c\n\x17EHBMIAI\
+    MLDM_BMKEPFAHFOO\x10\xa20b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

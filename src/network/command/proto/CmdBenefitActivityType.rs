@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdBenefitActivityType {
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_NLCDGIPGFDJ)
     CCOCNFLIOGK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_GEBPBMHOAKE)
-    CCOCNFLIOGK_GEBPBMHOAKE = 4894,
-    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_MKDHLCBNNGO)
-    CCOCNFLIOGK_MKDHLCBNNGO = 4877,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_IPAGACDDOFA)
-    CCOCNFLIOGK_IPAGACDDOFA = 4882,
-    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_PNDFJJKAFCI)
-    CCOCNFLIOGK_PNDFJJKAFCI = 4857,
-    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_ECFPFPKMFFN)
-    CCOCNFLIOGK_ECFPFPKMFFN = 4892,
+    CCOCNFLIOGK_IPAGACDDOFA = 4859,
     // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_CFBPOIPOLAL)
-    CCOCNFLIOGK_CFBPOIPOLAL = 4873,
+    CCOCNFLIOGK_CFBPOIPOLAL = 4894,
+    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_MKDHLCBNNGO)
+    CCOCNFLIOGK_MKDHLCBNNGO = 4898,
+    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_PNDFJJKAFCI)
+    CCOCNFLIOGK_PNDFJJKAFCI = 4887,
+    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_ECFPFPKMFFN)
+    CCOCNFLIOGK_ECFPFPKMFFN = 4873,
+    // @@protoc_insertion_point(enum_value:CmdBenefitActivityType.CCOCNFLIOGK_GEBPBMHOAKE)
+    CCOCNFLIOGK_GEBPBMHOAKE = 4869,
 }
 
 impl ::protobuf::Enum for CmdBenefitActivityType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdBenefitActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBenefitActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_NLCDGIPGFDJ),
-            4894 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE),
-            4877 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO),
-            4882 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA),
-            4857 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_PNDFJJKAFCI),
-            4892 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_ECFPFPKMFFN),
-            4873 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL),
+            4859 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA),
+            4894 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL),
+            4898 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO),
+            4887 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_PNDFJJKAFCI),
+            4873 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_ECFPFPKMFFN),
+            4869 => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdBenefitActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBenefitActivityType> {
         match str {
             "CCOCNFLIOGK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_NLCDGIPGFDJ),
-            "CCOCNFLIOGK_GEBPBMHOAKE" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE),
-            "CCOCNFLIOGK_MKDHLCBNNGO" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO),
             "CCOCNFLIOGK_IPAGACDDOFA" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA),
+            "CCOCNFLIOGK_CFBPOIPOLAL" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL),
+            "CCOCNFLIOGK_MKDHLCBNNGO" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO),
             "CCOCNFLIOGK_PNDFJJKAFCI" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_PNDFJJKAFCI),
             "CCOCNFLIOGK_ECFPFPKMFFN" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_ECFPFPKMFFN),
-            "CCOCNFLIOGK_CFBPOIPOLAL" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL),
+            "CCOCNFLIOGK_GEBPBMHOAKE" => ::std::option::Option::Some(CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBenefitActivityType] = &[
         CmdBenefitActivityType::CCOCNFLIOGK_NLCDGIPGFDJ,
-        CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE,
-        CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO,
         CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA,
+        CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL,
+        CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO,
         CmdBenefitActivityType::CCOCNFLIOGK_PNDFJJKAFCI,
         CmdBenefitActivityType::CCOCNFLIOGK_ECFPFPKMFFN,
-        CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL,
+        CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdBenefitActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBenefitActivityType::CCOCNFLIOGK_NLCDGIPGFDJ => 0,
-            CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE => 1,
-            CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO => 2,
-            CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA => 3,
+            CmdBenefitActivityType::CCOCNFLIOGK_IPAGACDDOFA => 1,
+            CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL => 2,
+            CmdBenefitActivityType::CCOCNFLIOGK_MKDHLCBNNGO => 3,
             CmdBenefitActivityType::CCOCNFLIOGK_PNDFJJKAFCI => 4,
             CmdBenefitActivityType::CCOCNFLIOGK_ECFPFPKMFFN => 5,
-            CmdBenefitActivityType::CCOCNFLIOGK_CFBPOIPOLAL => 6,
+            CmdBenefitActivityType::CCOCNFLIOGK_GEBPBMHOAKE => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CmdBenefitActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdBenefitActivityType.proto*\xe9\x01\n\x16CmdBenefitActivityType\
-    \x12\x1b\n\x17CCOCNFLIOGK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CCOCNFLIOGK_GEB\
-    PBMHOAKE\x10\x9e&\x12\x1c\n\x17CCOCNFLIOGK_MKDHLCBNNGO\x10\x8d&\x12\x1c\
-    \n\x17CCOCNFLIOGK_IPAGACDDOFA\x10\x92&\x12\x1c\n\x17CCOCNFLIOGK_PNDFJJKA\
-    FCI\x10\xf9%\x12\x1c\n\x17CCOCNFLIOGK_ECFPFPKMFFN\x10\x9c&\x12\x1c\n\x17\
-    CCOCNFLIOGK_CFBPOIPOLAL\x10\x89&b\x06proto3\
+    \x12\x1b\n\x17CCOCNFLIOGK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CCOCNFLIOGK_IPA\
+    GACDDOFA\x10\xfb%\x12\x1c\n\x17CCOCNFLIOGK_CFBPOIPOLAL\x10\x9e&\x12\x1c\
+    \n\x17CCOCNFLIOGK_MKDHLCBNNGO\x10\xa2&\x12\x1c\n\x17CCOCNFLIOGK_PNDFJJKA\
+    FCI\x10\x97&\x12\x1c\n\x17CCOCNFLIOGK_ECFPFPKMFFN\x10\x89&\x12\x1c\n\x17\
+    CCOCNFLIOGK_GEBPBMHOAKE\x10\x85&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for BDPHJAEBKAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     self.battle_target_list.push(is.read_message()?);
                 },
-                72 => {
+                120 => {
                     self.NFGNOCBCKID = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for BDPHJAEBKAD {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.NFGNOCBCKID != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NFGNOCBCKID);
+            my_size += ::protobuf::rt::uint32_size(15, self.NFGNOCBCKID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for BDPHJAEBKAD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if self.NFGNOCBCKID != 0 {
-            os.write_uint32(9, self.NFGNOCBCKID)?;
+            os.write_uint32(15, self.NFGNOCBCKID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for BDPHJAEBKAD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BDPHJAEBKAD.proto\x1a-RogueAdventureRoomGameplayWolfGunTarget.prot\
-    o\"\x87\x01\n\x0bBDPHJAEBKAD\x12V\n\x12battle_target_list\x18\x07\x20\
+    o\"\x87\x01\n\x0bBDPHJAEBKAD\x12V\n\x12battle_target_list\x18\x05\x20\
     \x03(\x0b2(.RogueAdventureRoomGameplayWolfGunTargetR\x10battleTargetList\
-    \x12\x20\n\x0bNFGNOCBCKID\x18\t\x20\x01(\rR\x0bNFGNOCBCKIDb\x06proto3\
+    \x12\x20\n\x0bNFGNOCBCKID\x18\x0f\x20\x01(\rR\x0bNFGNOCBCKIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

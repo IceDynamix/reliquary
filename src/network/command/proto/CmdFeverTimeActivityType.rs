@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdFeverTimeActivityType {
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_NLCDGIPGFDJ)
     BJJBIJMNDCA_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_OAMHFHNBNGK)
+    BJJBIJMNDCA_OAMHFHNBNGK = 7151,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_JHOLICGFNOB)
-    BJJBIJMNDCA_JHOLICGFNOB = 7160,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_NFDAILAEGAA)
-    BJJBIJMNDCA_NFDAILAEGAA = 7152,
+    BJJBIJMNDCA_JHOLICGFNOB = 7155,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_KGEJMFBEJGB)
-    BJJBIJMNDCA_KGEJMFBEJGB = 7159,
+    BJJBIJMNDCA_KGEJMFBEJGB = 7160,
+    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_NFDAILAEGAA)
+    BJJBIJMNDCA_NFDAILAEGAA = 7153,
     // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_FNDOIOMCDBE)
     BJJBIJMNDCA_FNDOIOMCDBE = 7154,
-    // @@protoc_insertion_point(enum_value:CmdFeverTimeActivityType.BJJBIJMNDCA_OAMHFHNBNGK)
-    BJJBIJMNDCA_OAMHFHNBNGK = 7158,
 }
 
 impl ::protobuf::Enum for CmdFeverTimeActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdFeverTimeActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFeverTimeActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NLCDGIPGFDJ),
-            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB),
-            7152 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA),
-            7159 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB),
+            7151 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK),
+            7155 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB),
+            7160 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB),
+            7153 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA),
             7154 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE),
-            7158 => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdFeverTimeActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdFeverTimeActivityType> {
         match str {
             "BJJBIJMNDCA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NLCDGIPGFDJ),
-            "BJJBIJMNDCA_JHOLICGFNOB" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB),
-            "BJJBIJMNDCA_NFDAILAEGAA" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA),
-            "BJJBIJMNDCA_KGEJMFBEJGB" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB),
-            "BJJBIJMNDCA_FNDOIOMCDBE" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE),
             "BJJBIJMNDCA_OAMHFHNBNGK" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK),
+            "BJJBIJMNDCA_JHOLICGFNOB" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB),
+            "BJJBIJMNDCA_KGEJMFBEJGB" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB),
+            "BJJBIJMNDCA_NFDAILAEGAA" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA),
+            "BJJBIJMNDCA_FNDOIOMCDBE" => ::std::option::Option::Some(CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFeverTimeActivityType] = &[
         CmdFeverTimeActivityType::BJJBIJMNDCA_NLCDGIPGFDJ,
-        CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB,
-        CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA,
-        CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB,
-        CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE,
         CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK,
+        CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB,
+        CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB,
+        CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA,
+        CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdFeverTimeActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdFeverTimeActivityType::BJJBIJMNDCA_NLCDGIPGFDJ => 0,
-            CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB => 1,
-            CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA => 2,
+            CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK => 1,
+            CmdFeverTimeActivityType::BJJBIJMNDCA_JHOLICGFNOB => 2,
             CmdFeverTimeActivityType::BJJBIJMNDCA_KGEJMFBEJGB => 3,
-            CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE => 4,
-            CmdFeverTimeActivityType::BJJBIJMNDCA_OAMHFHNBNGK => 5,
+            CmdFeverTimeActivityType::BJJBIJMNDCA_NFDAILAEGAA => 4,
+            CmdFeverTimeActivityType::BJJBIJMNDCA_FNDOIOMCDBE => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -116,9 +116,9 @@ impl CmdFeverTimeActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCmdFeverTimeActivityType.proto*\xcd\x01\n\x18CmdFeverTimeActivityT\
     ype\x12\x1b\n\x17BJJBIJMNDCA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJJBIJMNDCA_\
-    JHOLICGFNOB\x10\xf87\x12\x1c\n\x17BJJBIJMNDCA_NFDAILAEGAA\x10\xf07\x12\
-    \x1c\n\x17BJJBIJMNDCA_KGEJMFBEJGB\x10\xf77\x12\x1c\n\x17BJJBIJMNDCA_FNDO\
-    IOMCDBE\x10\xf27\x12\x1c\n\x17BJJBIJMNDCA_OAMHFHNBNGK\x10\xf67b\x06proto\
+    OAMHFHNBNGK\x10\xef7\x12\x1c\n\x17BJJBIJMNDCA_JHOLICGFNOB\x10\xf37\x12\
+    \x1c\n\x17BJJBIJMNDCA_KGEJMFBEJGB\x10\xf87\x12\x1c\n\x17BJJBIJMNDCA_NFDA\
+    ILAEGAA\x10\xf17\x12\x1c\n\x17BJJBIJMNDCA_FNDOIOMCDBE\x10\xf27b\x06proto\
     3\
 ";
 

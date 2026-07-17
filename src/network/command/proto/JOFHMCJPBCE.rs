@@ -79,10 +79,10 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.count = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.PCPDHEIEJFO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JOFHMCJPBCE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.count);
+            my_size += ::protobuf::rt::uint32_size(4, self.count);
         }
         if self.PCPDHEIEJFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PCPDHEIEJFO);
+            my_size += ::protobuf::rt::uint32_size(12, self.PCPDHEIEJFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JOFHMCJPBCE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(7, self.count)?;
+            os.write_uint32(4, self.count)?;
         }
         if self.PCPDHEIEJFO != 0 {
-            os.write_uint32(11, self.PCPDHEIEJFO)?;
+            os.write_uint32(12, self.PCPDHEIEJFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for JOFHMCJPBCE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JOFHMCJPBCE.proto\"E\n\x0bJOFHMCJPBCE\x12\x14\n\x05count\x18\x07\
-    \x20\x01(\rR\x05count\x12\x20\n\x0bPCPDHEIEJFO\x18\x0b\x20\x01(\rR\x0bPC\
+    \n\x11JOFHMCJPBCE.proto\"E\n\x0bJOFHMCJPBCE\x12\x14\n\x05count\x18\x04\
+    \x20\x01(\rR\x05count\x12\x20\n\x0bPCPDHEIEJFO\x18\x0c\x20\x01(\rR\x0bPC\
     PDHEIEJFOb\x06proto3\
 ";
 

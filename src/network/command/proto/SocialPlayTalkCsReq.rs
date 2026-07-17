@@ -72,7 +72,7 @@ impl ::protobuf::Message for SocialPlayTalkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHKCDLPHMPA)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SocialPlayTalkCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PHKCDLPHMPA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayTalkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SocialPlayTalkCsReq.proto\x1a\x11MIKGMGBHLEN.proto\"E\n\x13SocialP\
-    layTalkCsReq\x12.\n\x0bPHKCDLPHMPA\x18\x01\x20\x01(\x0b2\x0c.MIKGMGBHLEN\
-    R\x0bPHKCDLPHMPAb\x06proto3\
+    layTalkCsReq\x12.\n\x0bPHKCDLPHMPA\x18\r\x20\x01(\x0b2\x0c.MIKGMGBHLENR\
+    \x0bPHKCDLPHMPAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

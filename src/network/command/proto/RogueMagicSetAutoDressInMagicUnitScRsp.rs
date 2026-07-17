@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.GBEMCAHPBKP = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.GBEMCAHPBKP != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.GBEMCAHPBKP != false {
-            os.write_bool(11, self.GBEMCAHPBKP)?;
+            os.write_bool(13, self.GBEMCAHPBKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSetAutoDressInMagicUnitScR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicSetAutoDressInMagicUnitScRsp.proto\"d\n&RogueMagicSetAutoDr\
-    essInMagicUnitScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bGBEMCAHPBKP\x18\x0b\x20\x01(\x08R\x0bGBEMCAHPBKPb\x06proto\
-    3\
+    essInMagicUnitScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bGBEMCAHPBKP\x18\r\x20\x01(\x08R\x0bGBEMCAHPBKPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -93,13 +93,13 @@ impl ::protobuf::Message for AIOCPFLCNLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.FOOMIPJJKOG.push(is.read_message()?);
                 },
-                56 => {
+                16 => {
                     self.progress = is.read_uint32()?;
                 },
-                96 => {
+                56 => {
                     self.area_id = is.read_uint32()?;
                 },
                 80 => {
@@ -122,10 +122,10 @@ impl ::protobuf::Message for AIOCPFLCNLB {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.progress);
+            my_size += ::protobuf::rt::uint32_size(2, self.progress);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.area_id);
         }
         if self.GKENFCLLLJC != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.GKENFCLLLJC);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for AIOCPFLCNLB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FOOMIPJJKOG {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.progress != 0 {
-            os.write_uint32(7, self.progress)?;
+            os.write_uint32(2, self.progress)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(12, self.area_id)?;
+            os.write_uint32(7, self.area_id)?;
         }
         if self.GKENFCLLLJC != 0 {
             os.write_uint32(10, self.GKENFCLLLJC)?;
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for AIOCPFLCNLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIOCPFLCNLB.proto\x1a\x11IDBCDHIOKEG.proto\"\x94\x01\n\x0bAIOCPFLC\
-    NLB\x12.\n\x0bFOOMIPJJKOG\x18\x02\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOM\
-    IPJJKOG\x12\x1a\n\x08progress\x18\x07\x20\x01(\rR\x08progress\x12\x17\n\
-    \x07area_id\x18\x0c\x20\x01(\rR\x06areaId\x12\x20\n\x0bGKENFCLLLJC\x18\n\
+    NLB\x12.\n\x0bFOOMIPJJKOG\x18\x01\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bFOOM\
+    IPJJKOG\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\x12\x17\n\
+    \x07area_id\x18\x07\x20\x01(\rR\x06areaId\x12\x20\n\x0bGKENFCLLLJC\x18\n\
     \x20\x01(\rR\x0bGKENFCLLLJCb\x06proto3\
 ";
 

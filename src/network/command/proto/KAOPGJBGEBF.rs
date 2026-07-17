@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KAOPGJBGEBF {
     // message fields
-    // @@protoc_insertion_point(field:KAOPGJBGEBF.value)
-    pub value: i32,
     // @@protoc_insertion_point(field:KAOPGJBGEBF.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:KAOPGJBGEBF.value)
+    pub value: i32,
     // @@protoc_insertion_point(field:KAOPGJBGEBF.DAMIHCPPJAB)
     pub DAMIHCPPJAB: u32,
     // special fields
@@ -54,14 +54,14 @@ impl KAOPGJBGEBF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "value",
-            |m: &KAOPGJBGEBF| { &m.value },
-            |m: &mut KAOPGJBGEBF| { &mut m.value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &KAOPGJBGEBF| { &m.unique_id },
             |m: &mut KAOPGJBGEBF| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "value",
+            |m: &KAOPGJBGEBF| { &m.value },
+            |m: &mut KAOPGJBGEBF| { &mut m.value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DAMIHCPPJAB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for KAOPGJBGEBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.value = is.read_int32()?;
-                },
-                56 => {
+                48 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                40 => {
+                96 => {
+                    self.value = is.read_int32()?;
+                },
+                112 => {
                     self.DAMIHCPPJAB = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KAOPGJBGEBF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.value != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.value);
-        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
+        }
+        if self.value != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.value);
         }
         if self.DAMIHCPPJAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DAMIHCPPJAB);
+            my_size += ::protobuf::rt::uint32_size(14, self.DAMIHCPPJAB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KAOPGJBGEBF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.value != 0 {
-            os.write_int32(4, self.value)?;
-        }
         if self.unique_id != 0 {
-            os.write_uint32(7, self.unique_id)?;
+            os.write_uint32(6, self.unique_id)?;
+        }
+        if self.value != 0 {
+            os.write_int32(12, self.value)?;
         }
         if self.DAMIHCPPJAB != 0 {
-            os.write_uint32(5, self.DAMIHCPPJAB)?;
+            os.write_uint32(14, self.DAMIHCPPJAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KAOPGJBGEBF {
     }
 
     fn clear(&mut self) {
-        self.value = 0;
         self.unique_id = 0;
+        self.value = 0;
         self.DAMIHCPPJAB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAOPGJBGEBF {
         static instance: KAOPGJBGEBF = KAOPGJBGEBF {
-            value: 0,
             unique_id: 0,
+            value: 0,
             DAMIHCPPJAB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KAOPGJBGEBF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KAOPGJBGEBF.proto\"b\n\x0bKAOPGJBGEBF\x12\x14\n\x05value\x18\x04\
-    \x20\x01(\x05R\x05value\x12\x1b\n\tunique_id\x18\x07\x20\x01(\rR\x08uniq\
-    ueId\x12\x20\n\x0bDAMIHCPPJAB\x18\x05\x20\x01(\rR\x0bDAMIHCPPJABb\x06pro\
-    to3\
+    \n\x11KAOPGJBGEBF.proto\"b\n\x0bKAOPGJBGEBF\x12\x1b\n\tunique_id\x18\x06\
+    \x20\x01(\rR\x08uniqueId\x12\x14\n\x05value\x18\x0c\x20\x01(\x05R\x05val\
+    ue\x12\x20\n\x0bDAMIHCPPJAB\x18\x0e\x20\x01(\rR\x0bDAMIHCPPJABb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

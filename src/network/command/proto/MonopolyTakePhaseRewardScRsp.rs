@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyTakePhaseRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.reward_list)
-    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.IICEKEPFMJO)
-    pub IICEKEPFMJO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.IICEKEPFMJO)
+    pub IICEKEPFMJO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyTakePhaseRewardScRsp.reward_list)
+    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyTakePhaseRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MonopolyTakePhaseRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward_list",
-            |m: &MonopolyTakePhaseRewardScRsp| { &m.reward_list },
-            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.reward_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MonopolyTakePhaseRewardScRsp| { &m.retcode },
+            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IICEKEPFMJO",
             |m: &MonopolyTakePhaseRewardScRsp| { &m.IICEKEPFMJO },
             |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.IICEKEPFMJO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyTakePhaseRewardScRsp| { &m.retcode },
-            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward_list",
+            |m: &MonopolyTakePhaseRewardScRsp| { &m.reward_list },
+            |m: &mut MonopolyTakePhaseRewardScRsp| { &mut m.reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyTakePhaseRewardScRsp>(
             "MonopolyTakePhaseRewardScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.IICEKEPFMJO)?;
                 },
-                72 => {
+                104 => {
                     self.IICEKEPFMJO.push(is.read_uint32()?);
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.IICEKEPFMJO);
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IICEKEPFMJO);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.IICEKEPFMJO)?;
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.IICEKEPFMJO)?;
+        if let Some(v) = self.reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MonopolyTakePhaseRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward_list.clear();
-        self.IICEKEPFMJO.clear();
         self.retcode = 0;
+        self.IICEKEPFMJO.clear();
+        self.reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyTakePhaseRewardScRsp {
         static instance: MonopolyTakePhaseRewardScRsp = MonopolyTakePhaseRewardScRsp {
-            reward_list: ::protobuf::MessageField::none(),
-            IICEKEPFMJO: ::std::vec::Vec::new(),
             retcode: 0,
+            IICEKEPFMJO: ::std::vec::Vec::new(),
+            reward_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyTakePhaseRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"MonopolyTakePhaseRewardScRsp.proto\x1a\x0eItemList.proto\"\x86\x01\n\
-    \x1cMonopolyTakePhaseRewardScRsp\x12*\n\x0breward_list\x18\x02\x20\x01(\
-    \x0b2\t.ItemListR\nrewardList\x12\x20\n\x0bIICEKEPFMJO\x18\t\x20\x03(\rR\
-    \x0bIICEKEPFMJO\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \x1cMonopolyTakePhaseRewardScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bIICEKEPFMJO\x18\r\x20\x03(\rR\x0bIICEKEPFMJO\
+    \x12*\n\x0breward_list\x18\x0f\x20\x01(\x0b2\t.ItemListR\nrewardListb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

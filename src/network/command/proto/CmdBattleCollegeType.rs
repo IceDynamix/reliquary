@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdBattleCollegeType {
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_NLCDGIPGFDJ)
     GJPPDNGGKCC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_LGCCILOHONJ)
-    GJPPDNGGKCC_LGCCILOHONJ = 5703,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_GGMOCMBGFAJ)
-    GJPPDNGGKCC_GGMOCMBGFAJ = 5773,
+    GJPPDNGGKCC_GGMOCMBGFAJ = 5725,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_DNAPAEJPILD)
-    GJPPDNGGKCC_DNAPAEJPILD = 5736,
+    GJPPDNGGKCC_DNAPAEJPILD = 5788,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_DLAEKJKFPJO)
-    GJPPDNGGKCC_DLAEKJKFPJO = 5727,
+    GJPPDNGGKCC_DLAEKJKFPJO = 5758,
     // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_HMHLNKIKKHG)
-    GJPPDNGGKCC_HMHLNKIKKHG = 5780,
+    GJPPDNGGKCC_HMHLNKIKKHG = 5793,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_LGCCILOHONJ)
+    GJPPDNGGKCC_LGCCILOHONJ = 5778,
 }
 
 impl ::protobuf::Enum for CmdBattleCollegeType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleCollegeType> {
         match value {
             0 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ),
-            5703 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
-            5773 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ),
-            5736 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD),
-            5727 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO),
-            5780 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG),
+            5725 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ),
+            5788 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD),
+            5758 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO),
+            5793 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG),
+            5778 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleCollegeType> {
         match str {
             "GJPPDNGGKCC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ),
-            "GJPPDNGGKCC_LGCCILOHONJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
             "GJPPDNGGKCC_GGMOCMBGFAJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ),
             "GJPPDNGGKCC_DNAPAEJPILD" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD),
             "GJPPDNGGKCC_DLAEKJKFPJO" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO),
             "GJPPDNGGKCC_HMHLNKIKKHG" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG),
+            "GJPPDNGGKCC_LGCCILOHONJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleCollegeType] = &[
         CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ,
-        CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ,
         CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ,
         CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD,
         CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO,
         CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG,
+        CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ => 0,
-            CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ => 1,
-            CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ => 2,
-            CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD => 3,
-            CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO => 4,
-            CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG => 5,
+            CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ => 1,
+            CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD => 2,
+            CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO => 3,
+            CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG => 4,
+            CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdBattleCollegeType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdBattleCollegeType.proto*\xc9\x01\n\x14CmdBattleCollegeType\x12\
-    \x1b\n\x17GJPPDNGGKCC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJPPDNGGKCC_LGCCILO\
-    HONJ\x10\xc7,\x12\x1c\n\x17GJPPDNGGKCC_GGMOCMBGFAJ\x10\x8d-\x12\x1c\n\
-    \x17GJPPDNGGKCC_DNAPAEJPILD\x10\xe8,\x12\x1c\n\x17GJPPDNGGKCC_DLAEKJKFPJ\
-    O\x10\xdf,\x12\x1c\n\x17GJPPDNGGKCC_HMHLNKIKKHG\x10\x94-b\x06proto3\
+    \x1b\n\x17GJPPDNGGKCC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJPPDNGGKCC_GGMOCMB\
+    GFAJ\x10\xdd,\x12\x1c\n\x17GJPPDNGGKCC_DNAPAEJPILD\x10\x9c-\x12\x1c\n\
+    \x17GJPPDNGGKCC_DLAEKJKFPJO\x10\xfe,\x12\x1c\n\x17GJPPDNGGKCC_HMHLNKIKKH\
+    G\x10\xa1-\x12\x1c\n\x17GJPPDNGGKCC_LGCCILOHONJ\x10\x92-b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

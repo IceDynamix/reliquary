@@ -28,16 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuitLineupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QuitLineupScRsp.is_virtual)
-    pub is_virtual: bool,
-    // @@protoc_insertion_point(field:QuitLineupScRsp.MFBIPMACFCE)
-    pub MFBIPMACFCE: bool,
-    // @@protoc_insertion_point(field:QuitLineupScRsp.base_avatar_id)
-    pub base_avatar_id: u32,
-    // @@protoc_insertion_point(field:QuitLineupScRsp.plane_id)
-    pub plane_id: u32,
     // @@protoc_insertion_point(field:QuitLineupScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:QuitLineupScRsp._is_virtual)
+    pub _is_virtual: bool,
+    // @@protoc_insertion_point(field:QuitLineupScRsp.MFBIPMACFCE)
+    pub MFBIPMACFCE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:QuitLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,32 +51,22 @@ impl QuitLineupScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &QuitLineupScRsp| { &m.is_virtual },
-            |m: &mut QuitLineupScRsp| { &mut m.is_virtual },
+            "retcode",
+            |m: &QuitLineupScRsp| { &m.retcode },
+            |m: &mut QuitLineupScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "_is_virtual",
+            |m: &QuitLineupScRsp| { &m._is_virtual },
+            |m: &mut QuitLineupScRsp| { &mut m._is_virtual },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MFBIPMACFCE",
             |m: &QuitLineupScRsp| { &m.MFBIPMACFCE },
             |m: &mut QuitLineupScRsp| { &mut m.MFBIPMACFCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "base_avatar_id",
-            |m: &QuitLineupScRsp| { &m.base_avatar_id },
-            |m: &mut QuitLineupScRsp| { &mut m.base_avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &QuitLineupScRsp| { &m.plane_id },
-            |m: &mut QuitLineupScRsp| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &QuitLineupScRsp| { &m.retcode },
-            |m: &mut QuitLineupScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QuitLineupScRsp>(
             "QuitLineupScRsp",
@@ -100,20 +86,14 @@ impl ::protobuf::Message for QuitLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.is_virtual = is.read_bool()?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.MFBIPMACFCE = is.read_bool()?;
+                72 => {
+                    self._is_virtual = is.read_bool()?;
                 },
                 120 => {
-                    self.base_avatar_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                    self.MFBIPMACFCE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +107,14 @@ impl ::protobuf::Message for QuitLineupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_virtual != false {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self._is_virtual != false {
             my_size += 1 + 1;
         }
         if self.MFBIPMACFCE != false {
             my_size += 1 + 1;
-        }
-        if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.base_avatar_id);
-        }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.plane_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +122,14 @@ impl ::protobuf::Message for QuitLineupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_virtual != false {
-            os.write_bool(6, self.is_virtual)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self._is_virtual != false {
+            os.write_bool(9, self._is_virtual)?;
         }
         if self.MFBIPMACFCE != false {
-            os.write_bool(14, self.MFBIPMACFCE)?;
-        }
-        if self.base_avatar_id != 0 {
-            os.write_uint32(15, self.base_avatar_id)?;
-        }
-        if self.plane_id != 0 {
-            os.write_uint32(11, self.plane_id)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_bool(15, self.MFBIPMACFCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +148,17 @@ impl ::protobuf::Message for QuitLineupScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_virtual = false;
-        self.MFBIPMACFCE = false;
-        self.base_avatar_id = 0;
-        self.plane_id = 0;
         self.retcode = 0;
+        self._is_virtual = false;
+        self.MFBIPMACFCE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QuitLineupScRsp {
         static instance: QuitLineupScRsp = QuitLineupScRsp {
-            is_virtual: false,
-            MFBIPMACFCE: false,
-            base_avatar_id: 0,
-            plane_id: 0,
             retcode: 0,
+            _is_virtual: false,
+            MFBIPMACFCE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for QuitLineupScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15QuitLineupScRsp.proto\"\xad\x01\n\x0fQuitLineupScRsp\x12\x1d\n\nis\
-    _virtual\x18\x06\x20\x01(\x08R\tisVirtual\x12\x20\n\x0bMFBIPMACFCE\x18\
-    \x0e\x20\x01(\x08R\x0bMFBIPMACFCE\x12$\n\x0ebase_avatar_id\x18\x0f\x20\
-    \x01(\rR\x0cbaseAvatarId\x12\x19\n\x08plane_id\x18\x0b\x20\x01(\rR\x07pl\
-    aneId\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x15QuitLineupScRsp.proto\"m\n\x0fQuitLineupScRsp\x12\x18\n\x07retcode\
+    \x18\x01\x20\x01(\rR\x07retcode\x12\x1e\n\x0b_is_virtual\x18\t\x20\x01(\
+    \x08R\tIsVirtual\x12\x20\n\x0bMFBIPMACFCE\x18\x0f\x20\x01(\x08R\x0bMFBIP\
+    MACFCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGJHBCBIONE {
     // message fields
-    // @@protoc_insertion_point(field:HGJHBCBIONE.GLOAGDBEKDP)
-    pub GLOAGDBEKDP: ::protobuf::MessageField<super::OJHHACMHFKA::OJHHACMHFKA>,
     // @@protoc_insertion_point(field:HGJHBCBIONE.GMKICMIMAAB)
     pub GMKICMIMAAB: ::protobuf::EnumOrUnknown<super::GJJEOANEDDO::GJJEOANEDDO>,
+    // @@protoc_insertion_point(field:HGJHBCBIONE.GLOAGDBEKDP)
+    pub GLOAGDBEKDP: ::protobuf::MessageField<super::OJHHACMHFKA::OJHHACMHFKA>,
     // special fields
     // @@protoc_insertion_point(special_field:HGJHBCBIONE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HGJHBCBIONE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJHHACMHFKA::OJHHACMHFKA>(
-            "GLOAGDBEKDP",
-            |m: &HGJHBCBIONE| { &m.GLOAGDBEKDP },
-            |m: &mut HGJHBCBIONE| { &mut m.GLOAGDBEKDP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMKICMIMAAB",
             |m: &HGJHBCBIONE| { &m.GMKICMIMAAB },
             |m: &mut HGJHBCBIONE| { &mut m.GMKICMIMAAB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJHHACMHFKA::OJHHACMHFKA>(
+            "GLOAGDBEKDP",
+            |m: &HGJHBCBIONE| { &m.GLOAGDBEKDP },
+            |m: &mut HGJHBCBIONE| { &mut m.GLOAGDBEKDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGJHBCBIONE>(
             "HGJHBCBIONE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HGJHBCBIONE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLOAGDBEKDP)?;
-                },
-                88 => {
+                24 => {
                     self.GMKICMIMAAB = is.read_enum_or_unknown()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLOAGDBEKDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for HGJHBCBIONE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GMKICMIMAAB != ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(3, self.GMKICMIMAAB.value());
+        }
         if let Some(v) = self.GLOAGDBEKDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GMKICMIMAAB != ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.GMKICMIMAAB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for HGJHBCBIONE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GLOAGDBEKDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.GMKICMIMAAB != ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.GMKICMIMAAB))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.GMKICMIMAAB))?;
+        }
+        if let Some(v) = self.GLOAGDBEKDP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HGJHBCBIONE {
     }
 
     fn clear(&mut self) {
-        self.GLOAGDBEKDP.clear();
         self.GMKICMIMAAB = ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ);
+        self.GLOAGDBEKDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGJHBCBIONE {
         static instance: HGJHBCBIONE = HGJHBCBIONE {
-            GLOAGDBEKDP: ::protobuf::MessageField::none(),
             GMKICMIMAAB: ::protobuf::EnumOrUnknown::from_i32(0),
+            GLOAGDBEKDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for HGJHBCBIONE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGJHBCBIONE.proto\x1a\x11GJJEOANEDDO.proto\x1a\x11OJHHACMHFKA.prot\
-    o\"m\n\x0bHGJHBCBIONE\x12.\n\x0bGLOAGDBEKDP\x18\x06\x20\x01(\x0b2\x0c.OJ\
-    HHACMHFKAR\x0bGLOAGDBEKDP\x12.\n\x0bGMKICMIMAAB\x18\x0b\x20\x01(\x0e2\
-    \x0c.GJJEOANEDDOR\x0bGMKICMIMAABb\x06proto3\
+    o\"m\n\x0bHGJHBCBIONE\x12.\n\x0bGMKICMIMAAB\x18\x03\x20\x01(\x0e2\x0c.GJ\
+    JEOANEDDOR\x0bGMKICMIMAAB\x12.\n\x0bGLOAGDBEKDP\x18\r\x20\x01(\x0b2\x0c.\
+    OJHHACMHFKAR\x0bGLOAGDBEKDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

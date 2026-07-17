@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeContentCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeContentCsReq.MMNJODIJPOE)
-    pub MMNJODIJPOE: ::protobuf::EnumOrUnknown<super::LPPKGHJGOCC::LPPKGHJGOCC>,
+    // @@protoc_insertion_point(field:TakeContentCsReq.content_type)
+    pub content_type: ::protobuf::EnumOrUnknown<super::LPPKGHJGOCC::LPPKGHJGOCC>,
     // @@protoc_insertion_point(field:TakeContentCsReq.content_id)
     pub content_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeContentCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMNJODIJPOE",
-            |m: &TakeContentCsReq| { &m.MMNJODIJPOE },
-            |m: &mut TakeContentCsReq| { &mut m.MMNJODIJPOE },
+            "content_type",
+            |m: &TakeContentCsReq| { &m.content_type },
+            |m: &mut TakeContentCsReq| { &mut m.content_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeContentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.MMNJODIJPOE = is.read_enum_or_unknown()?;
-                },
                 48 => {
+                    self.content_type = is.read_enum_or_unknown()?;
+                },
+                112 => {
                     self.content_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeContentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.MMNJODIJPOE.value());
+        if self.content_type != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(6, self.content_type.value());
         }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeContentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
+        if self.content_type != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.content_type))?;
         }
         if self.content_id != 0 {
-            os.write_uint32(6, self.content_id)?;
+            os.write_uint32(14, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TakeContentCsReq {
     }
 
     fn clear(&mut self) {
-        self.MMNJODIJPOE = ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ);
+        self.content_type = ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ);
         self.content_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeContentCsReq {
         static instance: TakeContentCsReq = TakeContentCsReq {
-            MMNJODIJPOE: ::protobuf::EnumOrUnknown::from_i32(0),
+            content_type: ::protobuf::EnumOrUnknown::from_i32(0),
             content_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeContentCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16TakeContentCsReq.proto\x1a\x11LPPKGHJGOCC.proto\"a\n\x10TakeConten\
-    tCsReq\x12.\n\x0bMMNJODIJPOE\x18\t\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bMMN\
-    JODIJPOE\x12\x1d\n\ncontent_id\x18\x06\x20\x01(\rR\tcontentIdb\x06proto3\
+    \n\x16TakeContentCsReq.proto\x1a\x11LPPKGHJGOCC.proto\"b\n\x10TakeConten\
+    tCsReq\x12/\n\x0ccontent_type\x18\x06\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0b\
+    contentType\x12\x1d\n\ncontent_id\x18\x0e\x20\x01(\rR\tcontentIdb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

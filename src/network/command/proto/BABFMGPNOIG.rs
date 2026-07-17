@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BABFMGPNOIG {
     // message fields
-    // @@protoc_insertion_point(field:BABFMGPNOIG.CGDNMDDIHKA)
-    pub CGDNMDDIHKA: u32,
+    // @@protoc_insertion_point(field:BABFMGPNOIG.chapter_index)
+    pub chapter_index: u32,
     // @@protoc_insertion_point(field:BABFMGPNOIG.KJJJPMAPFOH)
     pub KJJJPMAPFOH: u32,
     // special fields
@@ -52,9 +52,9 @@ impl BABFMGPNOIG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGDNMDDIHKA",
-            |m: &BABFMGPNOIG| { &m.CGDNMDDIHKA },
-            |m: &mut BABFMGPNOIG| { &mut m.CGDNMDDIHKA },
+            "chapter_index",
+            |m: &BABFMGPNOIG| { &m.chapter_index },
+            |m: &mut BABFMGPNOIG| { &mut m.chapter_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KJJJPMAPFOH",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for BABFMGPNOIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.CGDNMDDIHKA = is.read_uint32()?;
+                24 => {
+                    self.chapter_index = is.read_uint32()?;
                 },
-                88 => {
+                104 => {
                     self.KJJJPMAPFOH = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BABFMGPNOIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CGDNMDDIHKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CGDNMDDIHKA);
+        if self.chapter_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.chapter_index);
         }
         if self.KJJJPMAPFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KJJJPMAPFOH);
+            my_size += ::protobuf::rt::uint32_size(13, self.KJJJPMAPFOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BABFMGPNOIG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CGDNMDDIHKA != 0 {
-            os.write_uint32(2, self.CGDNMDDIHKA)?;
+        if self.chapter_index != 0 {
+            os.write_uint32(3, self.chapter_index)?;
         }
         if self.KJJJPMAPFOH != 0 {
-            os.write_uint32(11, self.KJJJPMAPFOH)?;
+            os.write_uint32(13, self.KJJJPMAPFOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for BABFMGPNOIG {
     }
 
     fn clear(&mut self) {
-        self.CGDNMDDIHKA = 0;
+        self.chapter_index = 0;
         self.KJJJPMAPFOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BABFMGPNOIG {
         static instance: BABFMGPNOIG = BABFMGPNOIG {
-            CGDNMDDIHKA: 0,
+            chapter_index: 0,
             KJJJPMAPFOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BABFMGPNOIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BABFMGPNOIG.proto\"Q\n\x0bBABFMGPNOIG\x12\x20\n\x0bCGDNMDDIHKA\x18\
-    \x02\x20\x01(\rR\x0bCGDNMDDIHKA\x12\x20\n\x0bKJJJPMAPFOH\x18\x0b\x20\x01\
-    (\rR\x0bKJJJPMAPFOHb\x06proto3\
+    \n\x11BABFMGPNOIG.proto\"T\n\x0bBABFMGPNOIG\x12#\n\rchapter_index\x18\
+    \x03\x20\x01(\rR\x0cchapterIndex\x12\x20\n\x0bKJJJPMAPFOH\x18\r\x20\x01(\
+    \rR\x0bKJJJPMAPFOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

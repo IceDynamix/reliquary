@@ -79,7 +79,7 @@ impl ::protobuf::Message for SwordTrainingRestoreGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJGOEJHKOKE)?;
                 },
                 88 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for SwordTrainingRestoreGameScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.AJGOEJHKOKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingRestoreGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SwordTrainingRestoreGameScRsp.proto\x1a\x11EINKHFKDCCD.proto\"i\n\x1d\
-    SwordTrainingRestoreGameScRsp\x12.\n\x0bAJGOEJHKOKE\x18\x05\x20\x01(\x0b\
+    SwordTrainingRestoreGameScRsp\x12.\n\x0bAJGOEJHKOKE\x18\x07\x20\x01(\x0b\
     2\x0c.EINKHFKDCCDR\x0bAJGOEJHKOKE\x12\x18\n\x07retcode\x18\x0b\x20\x01(\
     \rR\x07retcodeb\x06proto3\
 ";

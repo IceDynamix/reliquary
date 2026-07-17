@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraFinishEndlessRoundScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.DKMKPFDNEBL)
-    pub DKMKPFDNEBL: ::std::vec::Vec<super::GADFFIFFNHM::GADFFIFFNHM>,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.IOMEILDMBNE)
-    pub IOMEILDMBNE: u32,
     // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.MMFKMEGECOI)
     pub MMFKMEGECOI: u32,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.EBDOCKLLKMI)
-    pub EBDOCKLLKMI: u32,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.CJEILDIOIOE)
-    pub CJEILDIOIOE: bool,
-    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.NMPCJAOIOHJ)
-    pub NMPCJAOIOHJ: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.PIGPKIDNMDH)
     pub PIGPKIDNMDH: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.NMPCJAOIOHJ)
+    pub NMPCJAOIOHJ: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.EBDOCKLLKMI)
+    pub EBDOCKLLKMI: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.IOMEILDMBNE)
+    pub IOMEILDMBNE: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.CJEILDIOIOE)
+    pub CJEILDIOIOE: bool,
+    // @@protoc_insertion_point(field:ChimeraFinishEndlessRoundScRsp.DKMKPFDNEBL)
+    pub DKMKPFDNEBL: ::std::vec::Vec<super::GADFFIFFNHM::GADFFIFFNHM>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraFinishEndlessRoundScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,10 +63,10 @@ impl ChimeraFinishEndlessRoundScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKMKPFDNEBL",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.DKMKPFDNEBL },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.DKMKPFDNEBL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMFKMEGECOI",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.MMFKMEGECOI },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.MMFKMEGECOI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -74,24 +74,9 @@ impl ChimeraFinishEndlessRoundScRsp {
             |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOMEILDMBNE",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.IOMEILDMBNE },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.IOMEILDMBNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMFKMEGECOI",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.MMFKMEGECOI },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.MMFKMEGECOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBDOCKLLKMI",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.EBDOCKLLKMI },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.EBDOCKLLKMI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJEILDIOIOE",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.CJEILDIOIOE },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.CJEILDIOIOE },
+            "PIGPKIDNMDH",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.PIGPKIDNMDH },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.PIGPKIDNMDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMPCJAOIOHJ",
@@ -99,9 +84,24 @@ impl ChimeraFinishEndlessRoundScRsp {
             |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.NMPCJAOIOHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIGPKIDNMDH",
-            |m: &ChimeraFinishEndlessRoundScRsp| { &m.PIGPKIDNMDH },
-            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.PIGPKIDNMDH },
+            "EBDOCKLLKMI",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.EBDOCKLLKMI },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.EBDOCKLLKMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOMEILDMBNE",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.IOMEILDMBNE },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.IOMEILDMBNE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJEILDIOIOE",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.CJEILDIOIOE },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.CJEILDIOIOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DKMKPFDNEBL",
+            |m: &ChimeraFinishEndlessRoundScRsp| { &m.DKMKPFDNEBL },
+            |m: &mut ChimeraFinishEndlessRoundScRsp| { &mut m.DKMKPFDNEBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraFinishEndlessRoundScRsp>(
             "ChimeraFinishEndlessRoundScRsp",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.DKMKPFDNEBL.push(is.read_message()?);
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
-                    self.IOMEILDMBNE = is.read_uint32()?;
-                },
-                40 => {
+                8 => {
                     self.MMFKMEGECOI = is.read_uint32()?;
                 },
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 32 => {
+                    self.PIGPKIDNMDH = is.read_uint32()?;
+                },
+                56 => {
+                    self.NMPCJAOIOHJ = is.read_uint32()?;
+                },
+                64 => {
                     self.EBDOCKLLKMI = is.read_uint32()?;
                 },
                 72 => {
+                    self.IOMEILDMBNE = is.read_uint32()?;
+                },
+                96 => {
                     self.CJEILDIOIOE = is.read_bool()?;
                 },
-                24 => {
-                    self.NMPCJAOIOHJ = is.read_uint32()?;
-                },
-                88 => {
-                    self.PIGPKIDNMDH = is.read_uint32()?;
+                106 => {
+                    self.DKMKPFDNEBL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,61 +157,61 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DKMKPFDNEBL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.IOMEILDMBNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IOMEILDMBNE);
-        }
         if self.MMFKMEGECOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MMFKMEGECOI);
+            my_size += ::protobuf::rt::uint32_size(1, self.MMFKMEGECOI);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.PIGPKIDNMDH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.PIGPKIDNMDH);
+        }
+        if self.NMPCJAOIOHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NMPCJAOIOHJ);
         }
         if self.EBDOCKLLKMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EBDOCKLLKMI);
+            my_size += ::protobuf::rt::uint32_size(8, self.EBDOCKLLKMI);
+        }
+        if self.IOMEILDMBNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IOMEILDMBNE);
         }
         if self.CJEILDIOIOE != false {
             my_size += 1 + 1;
         }
-        if self.NMPCJAOIOHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NMPCJAOIOHJ);
-        }
-        if self.PIGPKIDNMDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PIGPKIDNMDH);
-        }
+        for value in &self.DKMKPFDNEBL {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DKMKPFDNEBL {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        if self.IOMEILDMBNE != 0 {
-            os.write_uint32(13, self.IOMEILDMBNE)?;
-        }
         if self.MMFKMEGECOI != 0 {
-            os.write_uint32(5, self.MMFKMEGECOI)?;
+            os.write_uint32(1, self.MMFKMEGECOI)?;
         }
-        if self.EBDOCKLLKMI != 0 {
-            os.write_uint32(4, self.EBDOCKLLKMI)?;
-        }
-        if self.CJEILDIOIOE != false {
-            os.write_bool(9, self.CJEILDIOIOE)?;
-        }
-        if self.NMPCJAOIOHJ != 0 {
-            os.write_uint32(3, self.NMPCJAOIOHJ)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         if self.PIGPKIDNMDH != 0 {
-            os.write_uint32(11, self.PIGPKIDNMDH)?;
+            os.write_uint32(4, self.PIGPKIDNMDH)?;
         }
+        if self.NMPCJAOIOHJ != 0 {
+            os.write_uint32(7, self.NMPCJAOIOHJ)?;
+        }
+        if self.EBDOCKLLKMI != 0 {
+            os.write_uint32(8, self.EBDOCKLLKMI)?;
+        }
+        if self.IOMEILDMBNE != 0 {
+            os.write_uint32(9, self.IOMEILDMBNE)?;
+        }
+        if self.CJEILDIOIOE != false {
+            os.write_bool(12, self.CJEILDIOIOE)?;
+        }
+        for v in &self.DKMKPFDNEBL {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -229,27 +229,27 @@ impl ::protobuf::Message for ChimeraFinishEndlessRoundScRsp {
     }
 
     fn clear(&mut self) {
-        self.DKMKPFDNEBL.clear();
-        self.retcode = 0;
-        self.IOMEILDMBNE = 0;
         self.MMFKMEGECOI = 0;
-        self.EBDOCKLLKMI = 0;
-        self.CJEILDIOIOE = false;
-        self.NMPCJAOIOHJ = 0;
+        self.retcode = 0;
         self.PIGPKIDNMDH = 0;
+        self.NMPCJAOIOHJ = 0;
+        self.EBDOCKLLKMI = 0;
+        self.IOMEILDMBNE = 0;
+        self.CJEILDIOIOE = false;
+        self.DKMKPFDNEBL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraFinishEndlessRoundScRsp {
         static instance: ChimeraFinishEndlessRoundScRsp = ChimeraFinishEndlessRoundScRsp {
-            DKMKPFDNEBL: ::std::vec::Vec::new(),
-            retcode: 0,
-            IOMEILDMBNE: 0,
             MMFKMEGECOI: 0,
-            EBDOCKLLKMI: 0,
-            CJEILDIOIOE: false,
-            NMPCJAOIOHJ: 0,
+            retcode: 0,
             PIGPKIDNMDH: 0,
+            NMPCJAOIOHJ: 0,
+            EBDOCKLLKMI: 0,
+            IOMEILDMBNE: 0,
+            CJEILDIOIOE: false,
+            DKMKPFDNEBL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -275,14 +275,14 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraFinishEndlessRoundScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChimeraFinishEndlessRoundScRsp.proto\x1a\x11GADFFIFFNHM.proto\"\xb6\
-    \x02\n\x1eChimeraFinishEndlessRoundScRsp\x12.\n\x0bDKMKPFDNEBL\x18\x0c\
-    \x20\x03(\x0b2\x0c.GADFFIFFNHMR\x0bDKMKPFDNEBL\x12\x18\n\x07retcode\x18\
-    \n\x20\x01(\rR\x07retcode\x12\x20\n\x0bIOMEILDMBNE\x18\r\x20\x01(\rR\x0b\
-    IOMEILDMBNE\x12\x20\n\x0bMMFKMEGECOI\x18\x05\x20\x01(\rR\x0bMMFKMEGECOI\
-    \x12\x20\n\x0bEBDOCKLLKMI\x18\x04\x20\x01(\rR\x0bEBDOCKLLKMI\x12\x20\n\
-    \x0bCJEILDIOIOE\x18\t\x20\x01(\x08R\x0bCJEILDIOIOE\x12\x20\n\x0bNMPCJAOI\
-    OHJ\x18\x03\x20\x01(\rR\x0bNMPCJAOIOHJ\x12\x20\n\x0bPIGPKIDNMDH\x18\x0b\
-    \x20\x01(\rR\x0bPIGPKIDNMDHb\x06proto3\
+    \x02\n\x1eChimeraFinishEndlessRoundScRsp\x12\x20\n\x0bMMFKMEGECOI\x18\
+    \x01\x20\x01(\rR\x0bMMFKMEGECOI\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bPIGPKIDNMDH\x18\x04\x20\x01(\rR\x0bPIGPKIDNMDH\
+    \x12\x20\n\x0bNMPCJAOIOHJ\x18\x07\x20\x01(\rR\x0bNMPCJAOIOHJ\x12\x20\n\
+    \x0bEBDOCKLLKMI\x18\x08\x20\x01(\rR\x0bEBDOCKLLKMI\x12\x20\n\x0bIOMEILDM\
+    BNE\x18\t\x20\x01(\rR\x0bIOMEILDMBNE\x12\x20\n\x0bCJEILDIOIOE\x18\x0c\
+    \x20\x01(\x08R\x0bCJEILDIOIOE\x12.\n\x0bDKMKPFDNEBL\x18\r\x20\x03(\x0b2\
+    \x0c.GADFFIFFNHMR\x0bDKMKPFDNEBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

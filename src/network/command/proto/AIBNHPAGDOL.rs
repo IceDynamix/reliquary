@@ -30,8 +30,8 @@ pub struct AIBNHPAGDOL {
     // message fields
     // @@protoc_insertion_point(field:AIBNHPAGDOL.GKEPPNOLNHF)
     pub GKEPPNOLNHF: bool,
-    // @@protoc_insertion_point(field:AIBNHPAGDOL.DPCJFFPOLFG)
-    pub DPCJFFPOLFG: u32,
+    // @@protoc_insertion_point(field:AIBNHPAGDOL.forbid_reason)
+    pub forbid_reason: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AIBNHPAGDOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl AIBNHPAGDOL {
             |m: &mut AIBNHPAGDOL| { &mut m.GKEPPNOLNHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPCJFFPOLFG",
-            |m: &AIBNHPAGDOL| { &m.DPCJFFPOLFG },
-            |m: &mut AIBNHPAGDOL| { &mut m.DPCJFFPOLFG },
+            "forbid_reason",
+            |m: &AIBNHPAGDOL| { &m.forbid_reason },
+            |m: &mut AIBNHPAGDOL| { &mut m.forbid_reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AIBNHPAGDOL>(
             "AIBNHPAGDOL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AIBNHPAGDOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.GKEPPNOLNHF = is.read_bool()?;
                 },
-                112 => {
-                    self.DPCJFFPOLFG = is.read_uint32()?;
+                40 => {
+                    self.forbid_reason = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for AIBNHPAGDOL {
         if self.GKEPPNOLNHF != false {
             my_size += 1 + 1;
         }
-        if self.DPCJFFPOLFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DPCJFFPOLFG);
+        if self.forbid_reason != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.forbid_reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AIBNHPAGDOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GKEPPNOLNHF != false {
-            os.write_bool(11, self.GKEPPNOLNHF)?;
+            os.write_bool(4, self.GKEPPNOLNHF)?;
         }
-        if self.DPCJFFPOLFG != 0 {
-            os.write_uint32(14, self.DPCJFFPOLFG)?;
+        if self.forbid_reason != 0 {
+            os.write_uint32(5, self.forbid_reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for AIBNHPAGDOL {
 
     fn clear(&mut self) {
         self.GKEPPNOLNHF = false;
-        self.DPCJFFPOLFG = 0;
+        self.forbid_reason = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIBNHPAGDOL {
         static instance: AIBNHPAGDOL = AIBNHPAGDOL {
             GKEPPNOLNHF: false,
-            DPCJFFPOLFG: 0,
+            forbid_reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AIBNHPAGDOL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIBNHPAGDOL.proto\"Q\n\x0bAIBNHPAGDOL\x12\x20\n\x0bGKEPPNOLNHF\x18\
-    \x0b\x20\x01(\x08R\x0bGKEPPNOLNHF\x12\x20\n\x0bDPCJFFPOLFG\x18\x0e\x20\
-    \x01(\rR\x0bDPCJFFPOLFGb\x06proto3\
+    \n\x11AIBNHPAGDOL.proto\"T\n\x0bAIBNHPAGDOL\x12\x20\n\x0bGKEPPNOLNHF\x18\
+    \x04\x20\x01(\x08R\x0bGKEPPNOLNHF\x12#\n\rforbid_reason\x18\x05\x20\x01(\
+    \rR\x0cforbidReasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

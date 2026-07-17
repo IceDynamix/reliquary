@@ -45,7 +45,7 @@ impl JPGKBLDLADF {
         ::std::default::Default::default()
     }
 
-    // uint32 AOKPCNJJBAO = 5;
+    // uint32 AOKPCNJJBAO = 2;
 
     pub fn AOKPCNJJBAO(&self) -> u32 {
         match self.MNLCHEJKDHO {
@@ -70,12 +70,12 @@ impl JPGKBLDLADF {
         self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v))
     }
 
-    // .GEPAFBJBGBH KBBOAJPMNCN = 2;
+    // .GridFightCurrentTask KBBOAJPMNCN = 3;
 
-    pub fn KBBOAJPMNCN(&self) -> &super::GEPAFBJBGBH::GEPAFBJBGBH {
+    pub fn KBBOAJPMNCN(&self) -> &super::GridFightCurrentTask::GridFightCurrentTask {
         match self.MNLCHEJKDHO {
             ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v)) => v,
-            _ => <super::GEPAFBJBGBH::GEPAFBJBGBH as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightCurrentTask::GridFightCurrentTask as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -91,15 +91,15 @@ impl JPGKBLDLADF {
     }
 
     // Param is passed by value, moved
-    pub fn set_KBBOAJPMNCN(&mut self, v: super::GEPAFBJBGBH::GEPAFBJBGBH) {
+    pub fn set_KBBOAJPMNCN(&mut self, v: super::GridFightCurrentTask::GridFightCurrentTask) {
         self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KBBOAJPMNCN(&mut self) -> &mut super::GEPAFBJBGBH::GEPAFBJBGBH {
+    pub fn mut_KBBOAJPMNCN(&mut self) -> &mut super::GridFightCurrentTask::GridFightCurrentTask {
         if let ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(_)) = self.MNLCHEJKDHO {
         } else {
-            self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(super::GEPAFBJBGBH::GEPAFBJBGBH::new()));
+            self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(super::GridFightCurrentTask::GridFightCurrentTask::new()));
         }
         match self.MNLCHEJKDHO {
             ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref mut v)) => v,
@@ -108,14 +108,14 @@ impl JPGKBLDLADF {
     }
 
     // Take field
-    pub fn take_KBBOAJPMNCN(&mut self) -> super::GEPAFBJBGBH::GEPAFBJBGBH {
+    pub fn take_KBBOAJPMNCN(&mut self) -> super::GridFightCurrentTask::GridFightCurrentTask {
         if self.has_KBBOAJPMNCN() {
             match self.MNLCHEJKDHO.take() {
                 ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GEPAFBJBGBH::GEPAFBJBGBH::new()
+            super::GridFightCurrentTask::GridFightCurrentTask::new()
         }
     }
 
@@ -153,7 +153,7 @@ impl JPGKBLDLADF {
             JPGKBLDLADF::AOKPCNJJBAO,
             JPGKBLDLADF::set_AOKPCNJJBAO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GEPAFBJBGBH::GEPAFBJBGBH>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightCurrentTask::GridFightCurrentTask>(
             "KBBOAJPMNCN",
             JPGKBLDLADF::has_KBBOAJPMNCN,
             JPGKBLDLADF::KBBOAJPMNCN,
@@ -185,10 +185,10 @@ impl ::protobuf::Message for JPGKBLDLADF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(is.read_uint32()?));
                 },
-                18 => {
+                26 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(is.read_message()?));
                 },
                 48 => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for JPGKBLDLADF {
         if let ::std::option::Option::Some(ref v) = self.MNLCHEJKDHO {
             match v {
                 &jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(5, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
                 &jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v) => {
                     let len = v.compute_size();
@@ -229,10 +229,10 @@ impl ::protobuf::Message for JPGKBLDLADF {
         if let ::std::option::Option::Some(ref v) = self.MNLCHEJKDHO {
             match v {
                 &jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v) => {
-                    os.write_uint32(5, v)?;
+                    os.write_uint32(2, v)?;
                 },
                 &jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &jpgkbldladf::MNLCHEJKDHO::CEPEHNEOIOH(v) => {
                     os.write_uint32(6, v)?;
@@ -298,7 +298,7 @@ pub mod jpgkbldladf {
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.AOKPCNJJBAO)
         AOKPCNJJBAO(u32),
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.KBBOAJPMNCN)
-        KBBOAJPMNCN(super::super::GEPAFBJBGBH::GEPAFBJBGBH),
+        KBBOAJPMNCN(super::super::GridFightCurrentTask::GridFightCurrentTask),
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.CEPEHNEOIOH)
         CEPEHNEOIOH(u32),
     }
@@ -321,11 +321,11 @@ pub mod jpgkbldladf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPGKBLDLADF.proto\x1a\x11GEPAFBJBGBH.proto\"\x96\x01\n\x0bJPGKBLDL\
-    ADF\x12\"\n\x0bAOKPCNJJBAO\x18\x05\x20\x01(\rH\0R\x0bAOKPCNJJBAO\x120\n\
-    \x0bKBBOAJPMNCN\x18\x02\x20\x01(\x0b2\x0c.GEPAFBJBGBHH\0R\x0bKBBOAJPMNCN\
-    \x12\"\n\x0bCEPEHNEOIOH\x18\x06\x20\x01(\rH\0R\x0bCEPEHNEOIOHB\r\n\x0bMN\
-    LCHEJKDHOb\x06proto3\
+    \n\x11JPGKBLDLADF.proto\x1a\x1aGridFightCurrentTask.proto\"\x9f\x01\n\
+    \x0bJPGKBLDLADF\x12\"\n\x0bAOKPCNJJBAO\x18\x02\x20\x01(\rH\0R\x0bAOKPCNJ\
+    JBAO\x129\n\x0bKBBOAJPMNCN\x18\x03\x20\x01(\x0b2\x15.GridFightCurrentTas\
+    kH\0R\x0bKBBOAJPMNCN\x12\"\n\x0bCEPEHNEOIOH\x18\x06\x20\x01(\rH\0R\x0bCE\
+    PEHNEOIOHB\r\n\x0bMNLCHEJKDHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -343,7 +343,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GEPAFBJBGBH::file_descriptor().clone());
+            deps.push(super::GridFightCurrentTask::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JPGKBLDLADF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

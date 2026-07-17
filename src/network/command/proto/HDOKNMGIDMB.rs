@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDOKNMGIDMB {
     // message fields
-    // @@protoc_insertion_point(field:HDOKNMGIDMB.BGNKLMIMBPI)
-    pub BGNKLMIMBPI: ::std::vec::Vec<super::HBJLNKAFNAD::HBJLNKAFNAD>,
     // @@protoc_insertion_point(field:HDOKNMGIDMB.type)
     pub type_: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
+    // @@protoc_insertion_point(field:HDOKNMGIDMB.BGNKLMIMBPI)
+    pub BGNKLMIMBPI: ::std::vec::Vec<super::HBJLNKAFNAD::HBJLNKAFNAD>,
     // @@protoc_insertion_point(field:HDOKNMGIDMB.KPCPABKPAKL)
     pub KPCPABKPAKL: bool,
     // special fields
@@ -53,15 +53,15 @@ impl HDOKNMGIDMB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGNKLMIMBPI",
-            |m: &HDOKNMGIDMB| { &m.BGNKLMIMBPI },
-            |m: &mut HDOKNMGIDMB| { &mut m.BGNKLMIMBPI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &HDOKNMGIDMB| { &m.type_ },
             |m: &mut HDOKNMGIDMB| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BGNKLMIMBPI",
+            |m: &HDOKNMGIDMB| { &m.BGNKLMIMBPI },
+            |m: &mut HDOKNMGIDMB| { &mut m.BGNKLMIMBPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KPCPABKPAKL",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.BGNKLMIMBPI.push(is.read_message()?);
-                },
                 8 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                18 => {
+                    self.BGNKLMIMBPI.push(is.read_message()?);
                 },
                 24 => {
                     self.KPCPABKPAKL = is.read_bool()?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
+        }
         for value in &self.BGNKLMIMBPI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
-            my_size += ::protobuf::rt::int32_size(1, self.type_.value());
-        }
         if self.KPCPABKPAKL != false {
             my_size += 1 + 1;
         }
@@ -123,12 +123,12 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BGNKLMIMBPI {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
+        for v in &self.BGNKLMIMBPI {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         if self.KPCPABKPAKL != false {
             os.write_bool(3, self.KPCPABKPAKL)?;
         }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for HDOKNMGIDMB {
     }
 
     fn clear(&mut self) {
-        self.BGNKLMIMBPI.clear();
         self.type_ = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH);
+        self.BGNKLMIMBPI.clear();
         self.KPCPABKPAKL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDOKNMGIDMB {
         static instance: HDOKNMGIDMB = HDOKNMGIDMB {
-            BGNKLMIMBPI: ::std::vec::Vec::new(),
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            BGNKLMIMBPI: ::std::vec::Vec::new(),
             KPCPABKPAKL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for HDOKNMGIDMB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDOKNMGIDMB.proto\x1a\x17FeatureSwitchType.proto\x1a\x11HBJLNKAFNA\
-    D.proto\"\x87\x01\n\x0bHDOKNMGIDMB\x12.\n\x0bBGNKLMIMBPI\x18\x02\x20\x03\
-    (\x0b2\x0c.HBJLNKAFNADR\x0bBGNKLMIMBPI\x12&\n\x04type\x18\x01\x20\x01(\
-    \x0e2\x12.FeatureSwitchTypeR\x04type\x12\x20\n\x0bKPCPABKPAKL\x18\x03\
+    D.proto\"\x87\x01\n\x0bHDOKNMGIDMB\x12&\n\x04type\x18\x01\x20\x01(\x0e2\
+    \x12.FeatureSwitchTypeR\x04type\x12.\n\x0bBGNKLMIMBPI\x18\x02\x20\x03(\
+    \x0b2\x0c.HBJLNKAFNADR\x0bBGNKLMIMBPI\x12\x20\n\x0bKPCPABKPAKL\x18\x03\
     \x20\x01(\x08R\x0bKPCPABKPAKLb\x06proto3\
 ";
 

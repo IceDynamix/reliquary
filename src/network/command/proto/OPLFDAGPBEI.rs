@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OPLFDAGPBEI {
     // message fields
-    // @@protoc_insertion_point(field:OPLFDAGPBEI.FLFNBPLNNBL)
-    pub FLFNBPLNNBL: ::protobuf::MessageField<super::HJNPOBAMKKF::HJNPOBAMKKF>,
-    // @@protoc_insertion_point(field:OPLFDAGPBEI.stop_desc)
-    pub stop_desc: ::std::string::String,
-    // @@protoc_insertion_point(field:OPLFDAGPBEI.LLMDKAHFIIJ)
-    pub LLMDKAHFIIJ: ::protobuf::MessageField<super::HJNPOBAMKKF::HJNPOBAMKKF>,
     // @@protoc_insertion_point(field:OPLFDAGPBEI.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:OPLFDAGPBEI.FLFNBPLNNBL)
+    pub FLFNBPLNNBL: ::protobuf::MessageField<super::HJNPOBAMKKF::HJNPOBAMKKF>,
+    // @@protoc_insertion_point(field:OPLFDAGPBEI.LLMDKAHFIIJ)
+    pub LLMDKAHFIIJ: ::protobuf::MessageField<super::HJNPOBAMKKF::HJNPOBAMKKF>,
+    // @@protoc_insertion_point(field:OPLFDAGPBEI.stop_desc)
+    pub stop_desc: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:OPLFDAGPBEI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl OPLFDAGPBEI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &OPLFDAGPBEI| { &m.avatar_id },
+            |m: &mut OPLFDAGPBEI| { &mut m.avatar_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HJNPOBAMKKF::HJNPOBAMKKF>(
             "FLFNBPLNNBL",
             |m: &OPLFDAGPBEI| { &m.FLFNBPLNNBL },
             |m: &mut OPLFDAGPBEI| { &mut m.FLFNBPLNNBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stop_desc",
-            |m: &OPLFDAGPBEI| { &m.stop_desc },
-            |m: &mut OPLFDAGPBEI| { &mut m.stop_desc },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HJNPOBAMKKF::HJNPOBAMKKF>(
             "LLMDKAHFIIJ",
@@ -71,9 +71,9 @@ impl OPLFDAGPBEI {
             |m: &mut OPLFDAGPBEI| { &mut m.LLMDKAHFIIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &OPLFDAGPBEI| { &m.avatar_id },
-            |m: &mut OPLFDAGPBEI| { &mut m.avatar_id },
+            "stop_desc",
+            |m: &OPLFDAGPBEI| { &m.stop_desc },
+            |m: &mut OPLFDAGPBEI| { &mut m.stop_desc },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPLFDAGPBEI>(
             "OPLFDAGPBEI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OPLFDAGPBEI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FLFNBPLNNBL)?;
-                },
-                34 => {
-                    self.stop_desc = is.read_string()?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLMDKAHFIIJ)?;
                 },
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
+                34 => {
+                    self.stop_desc = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for OPLFDAGPBEI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
         if let Some(v) = self.FLFNBPLNNBL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.stop_desc.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.stop_desc);
         }
         if let Some(v) = self.LLMDKAHFIIJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        if !self.stop_desc.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.stop_desc);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for OPLFDAGPBEI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.avatar_id != 0 {
+            os.write_uint32(1, self.avatar_id)?;
+        }
         if let Some(v) = self.FLFNBPLNNBL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if !self.stop_desc.is_empty() {
-            os.write_string(4, &self.stop_desc)?;
         }
         if let Some(v) = self.LLMDKAHFIIJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
+        if !self.stop_desc.is_empty() {
+            os.write_string(4, &self.stop_desc)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for OPLFDAGPBEI {
     }
 
     fn clear(&mut self) {
-        self.FLFNBPLNNBL.clear();
-        self.stop_desc.clear();
-        self.LLMDKAHFIIJ.clear();
         self.avatar_id = 0;
+        self.FLFNBPLNNBL.clear();
+        self.LLMDKAHFIIJ.clear();
+        self.stop_desc.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPLFDAGPBEI {
         static instance: OPLFDAGPBEI = OPLFDAGPBEI {
-            FLFNBPLNNBL: ::protobuf::MessageField::none(),
-            stop_desc: ::std::string::String::new(),
-            LLMDKAHFIIJ: ::protobuf::MessageField::none(),
             avatar_id: 0,
+            FLFNBPLNNBL: ::protobuf::MessageField::none(),
+            LLMDKAHFIIJ: ::protobuf::MessageField::none(),
+            stop_desc: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for OPLFDAGPBEI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OPLFDAGPBEI.proto\x1a\x11HJNPOBAMKKF.proto\"\xa7\x01\n\x0bOPLFDAGP\
-    BEI\x12.\n\x0bFLFNBPLNNBL\x18\x02\x20\x01(\x0b2\x0c.HJNPOBAMKKFR\x0bFLFN\
-    BPLNNBL\x12\x1b\n\tstop_desc\x18\x04\x20\x01(\tR\x08stopDesc\x12.\n\x0bL\
+    BEI\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12.\n\x0bFLFNB\
+    PLNNBL\x18\x02\x20\x01(\x0b2\x0c.HJNPOBAMKKFR\x0bFLFNBPLNNBL\x12.\n\x0bL\
     LMDKAHFIIJ\x18\x03\x20\x01(\x0b2\x0c.HJNPOBAMKKFR\x0bLLMDKAHFIIJ\x12\x1b\
-    \n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n\tstop_desc\x18\x04\x20\x01(\tR\x08stopDescb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

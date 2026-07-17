@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PHGFFOEJEBM {
     // message fields
-    // @@protoc_insertion_point(field:PHGFFOEJEBM.PEOODHOAJMP)
-    pub PEOODHOAJMP: ::std::string::String,
     // @@protoc_insertion_point(field:PHGFFOEJEBM.EGCPAOEAGLF)
     pub EGCPAOEAGLF: ::std::string::String,
+    // @@protoc_insertion_point(field:PHGFFOEJEBM.PEOODHOAJMP)
+    pub PEOODHOAJMP: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:PHGFFOEJEBM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PHGFFOEJEBM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PEOODHOAJMP",
-            |m: &PHGFFOEJEBM| { &m.PEOODHOAJMP },
-            |m: &mut PHGFFOEJEBM| { &mut m.PEOODHOAJMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGCPAOEAGLF",
             |m: &PHGFFOEJEBM| { &m.EGCPAOEAGLF },
             |m: &mut PHGFFOEJEBM| { &mut m.EGCPAOEAGLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PEOODHOAJMP",
+            |m: &PHGFFOEJEBM| { &m.PEOODHOAJMP },
+            |m: &mut PHGFFOEJEBM| { &mut m.PEOODHOAJMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PHGFFOEJEBM>(
             "PHGFFOEJEBM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PHGFFOEJEBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.PEOODHOAJMP = is.read_string()?;
-                },
-                42 => {
+                66 => {
                     self.EGCPAOEAGLF = is.read_string()?;
+                },
+                74 => {
+                    self.PEOODHOAJMP = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PHGFFOEJEBM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.PEOODHOAJMP.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.PEOODHOAJMP);
-        }
         if !self.EGCPAOEAGLF.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.EGCPAOEAGLF);
+            my_size += ::protobuf::rt::string_size(8, &self.EGCPAOEAGLF);
+        }
+        if !self.PEOODHOAJMP.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.PEOODHOAJMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PHGFFOEJEBM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.PEOODHOAJMP.is_empty() {
-            os.write_string(7, &self.PEOODHOAJMP)?;
-        }
         if !self.EGCPAOEAGLF.is_empty() {
-            os.write_string(5, &self.EGCPAOEAGLF)?;
+            os.write_string(8, &self.EGCPAOEAGLF)?;
+        }
+        if !self.PEOODHOAJMP.is_empty() {
+            os.write_string(9, &self.PEOODHOAJMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PHGFFOEJEBM {
     }
 
     fn clear(&mut self) {
-        self.PEOODHOAJMP.clear();
         self.EGCPAOEAGLF.clear();
+        self.PEOODHOAJMP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PHGFFOEJEBM {
         static instance: PHGFFOEJEBM = PHGFFOEJEBM {
-            PEOODHOAJMP: ::std::string::String::new(),
             EGCPAOEAGLF: ::std::string::String::new(),
+            PEOODHOAJMP: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PHGFFOEJEBM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PHGFFOEJEBM.proto\"Q\n\x0bPHGFFOEJEBM\x12\x20\n\x0bPEOODHOAJMP\x18\
-    \x07\x20\x01(\tR\x0bPEOODHOAJMP\x12\x20\n\x0bEGCPAOEAGLF\x18\x05\x20\x01\
-    (\tR\x0bEGCPAOEAGLFb\x06proto3\
+    \n\x11PHGFFOEJEBM.proto\"Q\n\x0bPHGFFOEJEBM\x12\x20\n\x0bEGCPAOEAGLF\x18\
+    \x08\x20\x01(\tR\x0bEGCPAOEAGLF\x12\x20\n\x0bPEOODHOAJMP\x18\t\x20\x01(\
+    \tR\x0bPEOODHOAJMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

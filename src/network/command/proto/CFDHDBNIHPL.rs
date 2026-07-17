@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFDHDBNIHPL {
     // message fields
-    // @@protoc_insertion_point(field:CFDHDBNIHPL.NGIJFAEONCK)
-    pub NGIJFAEONCK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CFDHDBNIHPL.GNHLKBINIEF)
     pub GNHLKBINIEF: f64,
+    // @@protoc_insertion_point(field:CFDHDBNIHPL.NGIJFAEONCK)
+    pub NGIJFAEONCK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:CFDHDBNIHPL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CFDHDBNIHPL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NGIJFAEONCK",
-            |m: &CFDHDBNIHPL| { &m.NGIJFAEONCK },
-            |m: &mut CFDHDBNIHPL| { &mut m.NGIJFAEONCK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNHLKBINIEF",
             |m: &CFDHDBNIHPL| { &m.GNHLKBINIEF },
             |m: &mut CFDHDBNIHPL| { &mut m.GNHLKBINIEF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NGIJFAEONCK",
+            |m: &CFDHDBNIHPL| { &m.NGIJFAEONCK },
+            |m: &mut CFDHDBNIHPL| { &mut m.NGIJFAEONCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFDHDBNIHPL>(
             "CFDHDBNIHPL",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for CFDHDBNIHPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                9 => {
+                    self.GNHLKBINIEF = is.read_double()?;
+                },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.NGIJFAEONCK)?;
                 },
                 16 => {
                     self.NGIJFAEONCK.push(is.read_uint32()?);
-                },
-                9 => {
-                    self.GNHLKBINIEF = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for CFDHDBNIHPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NGIJFAEONCK);
         if self.GNHLKBINIEF != 0. {
             my_size += 1 + 8;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NGIJFAEONCK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.NGIJFAEONCK)?;
         if self.GNHLKBINIEF != 0. {
             os.write_double(1, self.GNHLKBINIEF)?;
         }
+        os.write_repeated_packed_uint32(2, &self.NGIJFAEONCK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for CFDHDBNIHPL {
     }
 
     fn clear(&mut self) {
-        self.NGIJFAEONCK.clear();
         self.GNHLKBINIEF = 0.;
+        self.NGIJFAEONCK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFDHDBNIHPL {
         static instance: CFDHDBNIHPL = CFDHDBNIHPL {
-            NGIJFAEONCK: ::std::vec::Vec::new(),
             GNHLKBINIEF: 0.,
+            NGIJFAEONCK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for CFDHDBNIHPL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CFDHDBNIHPL.proto\"Q\n\x0bCFDHDBNIHPL\x12\x20\n\x0bNGIJFAEONCK\x18\
-    \x02\x20\x03(\rR\x0bNGIJFAEONCK\x12\x20\n\x0bGNHLKBINIEF\x18\x01\x20\x01\
-    (\x01R\x0bGNHLKBINIEFb\x06proto3\
+    \n\x11CFDHDBNIHPL.proto\"Q\n\x0bCFDHDBNIHPL\x12\x20\n\x0bGNHLKBINIEF\x18\
+    \x01\x20\x01(\x01R\x0bGNHLKBINIEF\x12\x20\n\x0bNGIJFAEONCK\x18\x02\x20\
+    \x03(\rR\x0bNGIJFAEONCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

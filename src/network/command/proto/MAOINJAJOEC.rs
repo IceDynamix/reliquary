@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAOINJAJOEC {
     // message fields
-    // @@protoc_insertion_point(field:MAOINJAJOEC.gold)
-    pub gold: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
-    // @@protoc_insertion_point(field:MAOINJAJOEC.PPOAGPGEAFH)
-    pub PPOAGPGEAFH: u32,
     // @@protoc_insertion_point(field:MAOINJAJOEC.JKAGCGKCHJG)
     pub JKAGCGKCHJG: u32,
-    // @@protoc_insertion_point(field:MAOINJAJOEC.EMJPFPHBKMG)
-    pub EMJPFPHBKMG: u32,
+    // @@protoc_insertion_point(field:MAOINJAJOEC.gold)
+    pub gold: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
+    // @@protoc_insertion_point(field:MAOINJAJOEC.business_day)
+    pub business_day: u32,
     // @@protoc_insertion_point(field:MAOINJAJOEC.LBICJMAMFGN)
     pub LBICJMAMFGN: u32,
+    // @@protoc_insertion_point(field:MAOINJAJOEC.EMJPFPHBKMG)
+    pub EMJPFPHBKMG: u32,
+    // @@protoc_insertion_point(field:MAOINJAJOEC.PPOAGPGEAFH)
+    pub PPOAGPGEAFH: u32,
     // @@protoc_insertion_point(field:MAOINJAJOEC.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:MAOINJAJOEC.LFKDANGNJIM)
-    pub LFKDANGNJIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MAOINJAJOEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,20 @@ impl MAOINJAJOEC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JKAGCGKCHJG",
+            |m: &MAOINJAJOEC| { &m.JKAGCGKCHJG },
+            |m: &mut MAOINJAJOEC| { &mut m.JKAGCGKCHJG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
             "gold",
             |m: &MAOINJAJOEC| { &m.gold },
             |m: &mut MAOINJAJOEC| { &mut m.gold },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPOAGPGEAFH",
-            |m: &MAOINJAJOEC| { &m.PPOAGPGEAFH },
-            |m: &mut MAOINJAJOEC| { &mut m.PPOAGPGEAFH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKAGCGKCHJG",
-            |m: &MAOINJAJOEC| { &m.JKAGCGKCHJG },
-            |m: &mut MAOINJAJOEC| { &mut m.JKAGCGKCHJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMJPFPHBKMG",
-            |m: &MAOINJAJOEC| { &m.EMJPFPHBKMG },
-            |m: &mut MAOINJAJOEC| { &mut m.EMJPFPHBKMG },
+            "business_day",
+            |m: &MAOINJAJOEC| { &m.business_day },
+            |m: &mut MAOINJAJOEC| { &mut m.business_day },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LBICJMAMFGN",
@@ -87,14 +82,19 @@ impl MAOINJAJOEC {
             |m: &mut MAOINJAJOEC| { &mut m.LBICJMAMFGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMJPFPHBKMG",
+            |m: &MAOINJAJOEC| { &m.EMJPFPHBKMG },
+            |m: &mut MAOINJAJOEC| { &mut m.EMJPFPHBKMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PPOAGPGEAFH",
+            |m: &MAOINJAJOEC| { &m.PPOAGPGEAFH },
+            |m: &mut MAOINJAJOEC| { &mut m.PPOAGPGEAFH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &MAOINJAJOEC| { &m.uid },
             |m: &mut MAOINJAJOEC| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFKDANGNJIM",
-            |m: &MAOINJAJOEC| { &m.LFKDANGNJIM },
-            |m: &mut MAOINJAJOEC| { &mut m.LFKDANGNJIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAOINJAJOEC>(
             "MAOINJAJOEC",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for MAOINJAJOEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gold)?;
-                },
-                120 => {
-                    self.PPOAGPGEAFH = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.JKAGCGKCHJG = is.read_uint32()?;
                 },
-                104 => {
-                    self.EMJPFPHBKMG = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.gold)?;
                 },
-                16 => {
+                48 => {
+                    self.business_day = is.read_uint32()?;
+                },
+                56 => {
                     self.LBICJMAMFGN = is.read_uint32()?;
                 },
-                64 => {
-                    self.uid = is.read_uint32()?;
+                72 => {
+                    self.EMJPFPHBKMG = is.read_uint32()?;
                 },
-                112 => {
-                    self.LFKDANGNJIM = is.read_uint32()?;
+                80 => {
+                    self.PPOAGPGEAFH = is.read_uint32()?;
+                },
+                104 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for MAOINJAJOEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JKAGCGKCHJG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JKAGCGKCHJG);
+        }
         if let Some(v) = self.gold.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PPOAGPGEAFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PPOAGPGEAFH);
-        }
-        if self.JKAGCGKCHJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JKAGCGKCHJG);
-        }
-        if self.EMJPFPHBKMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EMJPFPHBKMG);
+        if self.business_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.business_day);
         }
         if self.LBICJMAMFGN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LBICJMAMFGN);
+            my_size += ::protobuf::rt::uint32_size(7, self.LBICJMAMFGN);
+        }
+        if self.EMJPFPHBKMG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EMJPFPHBKMG);
+        }
+        if self.PPOAGPGEAFH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PPOAGPGEAFH);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
-        }
-        if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LFKDANGNJIM);
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for MAOINJAJOEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.gold.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.PPOAGPGEAFH != 0 {
-            os.write_uint32(15, self.PPOAGPGEAFH)?;
-        }
         if self.JKAGCGKCHJG != 0 {
-            os.write_uint32(11, self.JKAGCGKCHJG)?;
+            os.write_uint32(1, self.JKAGCGKCHJG)?;
         }
-        if self.EMJPFPHBKMG != 0 {
-            os.write_uint32(13, self.EMJPFPHBKMG)?;
+        if let Some(v) = self.gold.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if self.business_day != 0 {
+            os.write_uint32(6, self.business_day)?;
         }
         if self.LBICJMAMFGN != 0 {
-            os.write_uint32(2, self.LBICJMAMFGN)?;
+            os.write_uint32(7, self.LBICJMAMFGN)?;
+        }
+        if self.EMJPFPHBKMG != 0 {
+            os.write_uint32(9, self.EMJPFPHBKMG)?;
+        }
+        if self.PPOAGPGEAFH != 0 {
+            os.write_uint32(10, self.PPOAGPGEAFH)?;
         }
         if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
-        }
-        if self.LFKDANGNJIM != 0 {
-            os.write_uint32(14, self.LFKDANGNJIM)?;
+            os.write_uint32(13, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for MAOINJAJOEC {
     }
 
     fn clear(&mut self) {
-        self.gold.clear();
-        self.PPOAGPGEAFH = 0;
         self.JKAGCGKCHJG = 0;
-        self.EMJPFPHBKMG = 0;
+        self.gold.clear();
+        self.business_day = 0;
         self.LBICJMAMFGN = 0;
+        self.EMJPFPHBKMG = 0;
+        self.PPOAGPGEAFH = 0;
         self.uid = 0;
-        self.LFKDANGNJIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAOINJAJOEC {
         static instance: MAOINJAJOEC = MAOINJAJOEC {
-            gold: ::protobuf::MessageField::none(),
-            PPOAGPGEAFH: 0,
             JKAGCGKCHJG: 0,
-            EMJPFPHBKMG: 0,
+            gold: ::protobuf::MessageField::none(),
+            business_day: 0,
             LBICJMAMFGN: 0,
+            EMJPFPHBKMG: 0,
+            PPOAGPGEAFH: 0,
             uid: 0,
-            LFKDANGNJIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,13 +256,13 @@ impl ::protobuf::reflect::ProtobufValue for MAOINJAJOEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MAOINJAJOEC.proto\x1a\x11NCFKHDIKCNI.proto\"\xeb\x01\n\x0bMAOINJAJ\
-    OEC\x12\x20\n\x04gold\x18\x06\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x04gold\x12\
-    \x20\n\x0bPPOAGPGEAFH\x18\x0f\x20\x01(\rR\x0bPPOAGPGEAFH\x12\x20\n\x0bJK\
-    AGCGKCHJG\x18\x0b\x20\x01(\rR\x0bJKAGCGKCHJG\x12\x20\n\x0bEMJPFPHBKMG\
-    \x18\r\x20\x01(\rR\x0bEMJPFPHBKMG\x12\x20\n\x0bLBICJMAMFGN\x18\x02\x20\
-    \x01(\rR\x0bLBICJMAMFGN\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03uid\x12\
-    \x20\n\x0bLFKDANGNJIM\x18\x0e\x20\x01(\rR\x0bLFKDANGNJIMb\x06proto3\
+    \n\x11MAOINJAJOEC.proto\x1a\x11NCFKHDIKCNI.proto\"\xec\x01\n\x0bMAOINJAJ\
+    OEC\x12\x20\n\x0bJKAGCGKCHJG\x18\x01\x20\x01(\rR\x0bJKAGCGKCHJG\x12\x20\
+    \n\x04gold\x18\x03\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x04gold\x12!\n\x0cbusi\
+    ness_day\x18\x06\x20\x01(\rR\x0bbusinessDay\x12\x20\n\x0bLBICJMAMFGN\x18\
+    \x07\x20\x01(\rR\x0bLBICJMAMFGN\x12\x20\n\x0bEMJPFPHBKMG\x18\t\x20\x01(\
+    \rR\x0bEMJPFPHBKMG\x12\x20\n\x0bPPOAGPGEAFH\x18\n\x20\x01(\rR\x0bPPOAGPG\
+    EAFH\x12\x10\n\x03uid\x18\r\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

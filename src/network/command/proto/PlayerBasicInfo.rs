@@ -32,18 +32,18 @@ pub struct PlayerBasicInfo {
     pub nickname: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerBasicInfo.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:PlayerBasicInfo.exp)
+    pub exp: u32,
+    // @@protoc_insertion_point(field:PlayerBasicInfo.stamina)
+    pub stamina: u32,
+    // @@protoc_insertion_point(field:PlayerBasicInfo.oneric_shard_count)
+    pub oneric_shard_count: u32,
     // @@protoc_insertion_point(field:PlayerBasicInfo.stellar_jade_count)
     pub stellar_jade_count: u32,
     // @@protoc_insertion_point(field:PlayerBasicInfo.credit_count)
     pub credit_count: u32,
     // @@protoc_insertion_point(field:PlayerBasicInfo.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:PlayerBasicInfo.oneric_shard_count)
-    pub oneric_shard_count: u32,
-    // @@protoc_insertion_point(field:PlayerBasicInfo.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:PlayerBasicInfo.stamina)
-    pub stamina: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerBasicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,6 +74,21 @@ impl PlayerBasicInfo {
             |m: &mut PlayerBasicInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &PlayerBasicInfo| { &m.exp },
+            |m: &mut PlayerBasicInfo| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stamina",
+            |m: &PlayerBasicInfo| { &m.stamina },
+            |m: &mut PlayerBasicInfo| { &mut m.stamina },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "oneric_shard_count",
+            |m: &PlayerBasicInfo| { &m.oneric_shard_count },
+            |m: &mut PlayerBasicInfo| { &mut m.oneric_shard_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stellar_jade_count",
             |m: &PlayerBasicInfo| { &m.stellar_jade_count },
             |m: &mut PlayerBasicInfo| { &mut m.stellar_jade_count },
@@ -87,21 +102,6 @@ impl PlayerBasicInfo {
             "world_level",
             |m: &PlayerBasicInfo| { &m.world_level },
             |m: &mut PlayerBasicInfo| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "oneric_shard_count",
-            |m: &PlayerBasicInfo| { &m.oneric_shard_count },
-            |m: &mut PlayerBasicInfo| { &mut m.oneric_shard_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &PlayerBasicInfo| { &m.exp },
-            |m: &mut PlayerBasicInfo| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stamina",
-            |m: &PlayerBasicInfo| { &m.stamina },
-            |m: &mut PlayerBasicInfo| { &mut m.stamina },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerBasicInfo>(
             "PlayerBasicInfo",
@@ -127,6 +127,15 @@ impl ::protobuf::Message for PlayerBasicInfo {
                 16 => {
                     self.level = is.read_uint32()?;
                 },
+                24 => {
+                    self.exp = is.read_uint32()?;
+                },
+                32 => {
+                    self.stamina = is.read_uint32()?;
+                },
+                40 => {
+                    self.oneric_shard_count = is.read_uint32()?;
+                },
                 48 => {
                     self.stellar_jade_count = is.read_uint32()?;
                 },
@@ -135,15 +144,6 @@ impl ::protobuf::Message for PlayerBasicInfo {
                 },
                 64 => {
                     self.world_level = is.read_uint32()?;
-                },
-                40 => {
-                    self.oneric_shard_count = is.read_uint32()?;
-                },
-                24 => {
-                    self.exp = is.read_uint32()?;
-                },
-                32 => {
-                    self.stamina = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,6 +163,15 @@ impl ::protobuf::Message for PlayerBasicInfo {
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.exp);
+        }
+        if self.stamina != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.stamina);
+        }
+        if self.oneric_shard_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.oneric_shard_count);
+        }
         if self.stellar_jade_count != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.stellar_jade_count);
         }
@@ -171,15 +180,6 @@ impl ::protobuf::Message for PlayerBasicInfo {
         }
         if self.world_level != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.world_level);
-        }
-        if self.oneric_shard_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.oneric_shard_count);
-        }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.exp);
-        }
-        if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.stamina);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -193,6 +193,15 @@ impl ::protobuf::Message for PlayerBasicInfo {
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
         }
+        if self.exp != 0 {
+            os.write_uint32(3, self.exp)?;
+        }
+        if self.stamina != 0 {
+            os.write_uint32(4, self.stamina)?;
+        }
+        if self.oneric_shard_count != 0 {
+            os.write_uint32(5, self.oneric_shard_count)?;
+        }
         if self.stellar_jade_count != 0 {
             os.write_uint32(6, self.stellar_jade_count)?;
         }
@@ -201,15 +210,6 @@ impl ::protobuf::Message for PlayerBasicInfo {
         }
         if self.world_level != 0 {
             os.write_uint32(8, self.world_level)?;
-        }
-        if self.oneric_shard_count != 0 {
-            os.write_uint32(5, self.oneric_shard_count)?;
-        }
-        if self.exp != 0 {
-            os.write_uint32(3, self.exp)?;
-        }
-        if self.stamina != 0 {
-            os.write_uint32(4, self.stamina)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,12 +230,12 @@ impl ::protobuf::Message for PlayerBasicInfo {
     fn clear(&mut self) {
         self.nickname.clear();
         self.level = 0;
+        self.exp = 0;
+        self.stamina = 0;
+        self.oneric_shard_count = 0;
         self.stellar_jade_count = 0;
         self.credit_count = 0;
         self.world_level = 0;
-        self.oneric_shard_count = 0;
-        self.exp = 0;
-        self.stamina = 0;
         self.special_fields.clear();
     }
 
@@ -243,12 +243,12 @@ impl ::protobuf::Message for PlayerBasicInfo {
         static instance: PlayerBasicInfo = PlayerBasicInfo {
             nickname: ::std::string::String::new(),
             level: 0,
+            exp: 0,
+            stamina: 0,
+            oneric_shard_count: 0,
             stellar_jade_count: 0,
             credit_count: 0,
             world_level: 0,
-            oneric_shard_count: 0,
-            exp: 0,
-            stamina: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -275,12 +275,12 @@ impl ::protobuf::reflect::ProtobufValue for PlayerBasicInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15PlayerBasicInfo.proto\"\x8f\x02\n\x0fPlayerBasicInfo\x12\x1a\n\x08\
     nickname\x18\x01\x20\x01(\tR\x08nickname\x12\x14\n\x05level\x18\x02\x20\
-    \x01(\rR\x05level\x12,\n\x12stellar_jade_count\x18\x06\x20\x01(\rR\x10st\
-    ellarJadeCount\x12!\n\x0ccredit_count\x18\x07\x20\x01(\rR\x0bcreditCount\
-    \x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\nworldLevel\x12,\n\x12oner\
-    ic_shard_count\x18\x05\x20\x01(\rR\x10onericShardCount\x12\x10\n\x03exp\
-    \x18\x03\x20\x01(\rR\x03exp\x12\x18\n\x07stamina\x18\x04\x20\x01(\rR\x07\
-    staminab\x06proto3\
+    \x01(\rR\x05level\x12\x10\n\x03exp\x18\x03\x20\x01(\rR\x03exp\x12\x18\n\
+    \x07stamina\x18\x04\x20\x01(\rR\x07stamina\x12,\n\x12oneric_shard_count\
+    \x18\x05\x20\x01(\rR\x10onericShardCount\x12,\n\x12stellar_jade_count\
+    \x18\x06\x20\x01(\rR\x10stellarJadeCount\x12!\n\x0ccredit_count\x18\x07\
+    \x20\x01(\rR\x0bcreditCount\x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\
+    \nworldLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

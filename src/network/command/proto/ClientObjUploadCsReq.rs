@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientObjUploadCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.sc_data)
-    pub sc_data: ::std::string::String,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.content_type)
+    pub content_type: ::protobuf::EnumOrUnknown<super::ALGMICKCABI::ALGMICKCABI>,
     // @@protoc_insertion_point(field:ClientObjUploadCsReq.EOHFCODKKMD)
     pub EOHFCODKKMD: u32,
-    // @@protoc_insertion_point(field:ClientObjUploadCsReq.MMNJODIJPOE)
-    pub MMNJODIJPOE: ::protobuf::EnumOrUnknown<super::ALGMICKCABI::ALGMICKCABI>,
+    // @@protoc_insertion_point(field:ClientObjUploadCsReq.sc_data)
+    pub sc_data: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:ClientObjUploadCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ClientObjUploadCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sc_data",
-            |m: &ClientObjUploadCsReq| { &m.sc_data },
-            |m: &mut ClientObjUploadCsReq| { &mut m.sc_data },
+            "content_type",
+            |m: &ClientObjUploadCsReq| { &m.content_type },
+            |m: &mut ClientObjUploadCsReq| { &mut m.content_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EOHFCODKKMD",
@@ -64,9 +64,9 @@ impl ClientObjUploadCsReq {
             |m: &mut ClientObjUploadCsReq| { &mut m.EOHFCODKKMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMNJODIJPOE",
-            |m: &ClientObjUploadCsReq| { &m.MMNJODIJPOE },
-            |m: &mut ClientObjUploadCsReq| { &mut m.MMNJODIJPOE },
+            "sc_data",
+            |m: &ClientObjUploadCsReq| { &m.sc_data },
+            |m: &mut ClientObjUploadCsReq| { &mut m.sc_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientObjUploadCsReq>(
             "ClientObjUploadCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.sc_data = is.read_string()?;
-                },
                 8 => {
-                    self.EOHFCODKKMD = is.read_uint32()?;
+                    self.content_type = is.read_enum_or_unknown()?;
                 },
                 32 => {
-                    self.MMNJODIJPOE = is.read_enum_or_unknown()?;
+                    self.EOHFCODKKMD = is.read_uint32()?;
+                },
+                114 => {
+                    self.sc_data = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.sc_data.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.sc_data);
+        if self.content_type != ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH) {
+            my_size += ::protobuf::rt::int32_size(1, self.content_type.value());
         }
         if self.EOHFCODKKMD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EOHFCODKKMD);
+            my_size += ::protobuf::rt::uint32_size(4, self.EOHFCODKKMD);
         }
-        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH) {
-            my_size += ::protobuf::rt::int32_size(4, self.MMNJODIJPOE.value());
+        if !self.sc_data.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.sc_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.sc_data.is_empty() {
-            os.write_string(9, &self.sc_data)?;
+        if self.content_type != ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.content_type))?;
         }
         if self.EOHFCODKKMD != 0 {
-            os.write_uint32(1, self.EOHFCODKKMD)?;
+            os.write_uint32(4, self.EOHFCODKKMD)?;
         }
-        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
+        if !self.sc_data.is_empty() {
+            os.write_string(14, &self.sc_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ClientObjUploadCsReq {
     }
 
     fn clear(&mut self) {
-        self.sc_data.clear();
+        self.content_type = ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH);
         self.EOHFCODKKMD = 0;
-        self.MMNJODIJPOE = ::protobuf::EnumOrUnknown::new(super::ALGMICKCABI::ALGMICKCABI::ALGMICKCABI_FLANKPMJBMH);
+        self.sc_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientObjUploadCsReq {
         static instance: ClientObjUploadCsReq = ClientObjUploadCsReq {
-            sc_data: ::std::string::String::new(),
+            content_type: ::protobuf::EnumOrUnknown::from_i32(0),
             EOHFCODKKMD: 0,
-            MMNJODIJPOE: ::protobuf::EnumOrUnknown::from_i32(0),
+            sc_data: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ClientObjUploadCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aClientObjUploadCsReq.proto\x1a\x11ALGMICKCABI.proto\"\x81\x01\n\
-    \x14ClientObjUploadCsReq\x12\x17\n\x07sc_data\x18\t\x20\x01(\tR\x06scDat\
-    a\x12\x20\n\x0bEOHFCODKKMD\x18\x01\x20\x01(\rR\x0bEOHFCODKKMD\x12.\n\x0b\
-    MMNJODIJPOE\x18\x04\x20\x01(\x0e2\x0c.ALGMICKCABIR\x0bMMNJODIJPOEb\x06pr\
-    oto3\
+    \n\x1aClientObjUploadCsReq.proto\x1a\x11ALGMICKCABI.proto\"\x82\x01\n\
+    \x14ClientObjUploadCsReq\x12/\n\x0ccontent_type\x18\x01\x20\x01(\x0e2\
+    \x0c.ALGMICKCABIR\x0bcontentType\x12\x20\n\x0bEOHFCODKKMD\x18\x04\x20\
+    \x01(\rR\x0bEOHFCODKKMD\x12\x17\n\x07sc_data\x18\x0e\x20\x01(\tR\x06scDa\
+    tab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

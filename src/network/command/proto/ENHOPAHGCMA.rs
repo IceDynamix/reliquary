@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENHOPAHGCMA {
     // message fields
-    // @@protoc_insertion_point(field:ENHOPAHGCMA.DNOBAJNIGAC)
-    pub DNOBAJNIGAC: ::std::string::String,
-    // @@protoc_insertion_point(field:ENHOPAHGCMA.IFPFJIIFALA)
-    pub IFPFJIIFALA: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:ENHOPAHGCMA.LNGJODEPCDN)
-    pub LNGJODEPCDN: u32,
-    // @@protoc_insertion_point(field:ENHOPAHGCMA.EKHEAFBKDFP)
-    pub EKHEAFBKDFP: u32,
     // @@protoc_insertion_point(field:ENHOPAHGCMA.config_id)
     pub config_id: u32,
+    // @@protoc_insertion_point(field:ENHOPAHGCMA.DNOBAJNIGAC)
+    pub DNOBAJNIGAC: ::std::string::String,
+    // @@protoc_insertion_point(field:ENHOPAHGCMA.EKHEAFBKDFP)
+    pub EKHEAFBKDFP: u32,
+    // @@protoc_insertion_point(field:ENHOPAHGCMA.LNGJODEPCDN)
+    pub LNGJODEPCDN: u32,
+    // @@protoc_insertion_point(field:ENHOPAHGCMA.IFPFJIIFALA)
+    pub IFPFJIIFALA: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ENHOPAHGCMA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,14 @@ impl ENHOPAHGCMA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &ENHOPAHGCMA| { &m.config_id },
+            |m: &mut ENHOPAHGCMA| { &mut m.config_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DNOBAJNIGAC",
             |m: &ENHOPAHGCMA| { &m.DNOBAJNIGAC },
             |m: &mut ENHOPAHGCMA| { &mut m.DNOBAJNIGAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "IFPFJIIFALA",
-            |m: &ENHOPAHGCMA| { &m.IFPFJIIFALA },
-            |m: &mut ENHOPAHGCMA| { &mut m.IFPFJIIFALA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNGJODEPCDN",
-            |m: &ENHOPAHGCMA| { &m.LNGJODEPCDN },
-            |m: &mut ENHOPAHGCMA| { &mut m.LNGJODEPCDN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EKHEAFBKDFP",
@@ -78,9 +73,14 @@ impl ENHOPAHGCMA {
             |m: &mut ENHOPAHGCMA| { &mut m.EKHEAFBKDFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &ENHOPAHGCMA| { &m.config_id },
-            |m: &mut ENHOPAHGCMA| { &mut m.config_id },
+            "LNGJODEPCDN",
+            |m: &ENHOPAHGCMA| { &m.LNGJODEPCDN },
+            |m: &mut ENHOPAHGCMA| { &mut m.LNGJODEPCDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "IFPFJIIFALA",
+            |m: &ENHOPAHGCMA| { &m.IFPFJIIFALA },
+            |m: &mut ENHOPAHGCMA| { &mut m.IFPFJIIFALA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENHOPAHGCMA>(
             "ENHOPAHGCMA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                16 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                42 => {
                     self.DNOBAJNIGAC = is.read_string()?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IFPFJIIFALA)?;
-                },
-                72 => {
-                    self.LNGJODEPCDN = is.read_uint32()?;
-                },
-                40 => {
+                48 => {
                     self.EKHEAFBKDFP = is.read_uint32()?;
                 },
-                32 => {
-                    self.config_id = is.read_uint32()?;
+                88 => {
+                    self.LNGJODEPCDN = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IFPFJIIFALA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
+        }
         if !self.DNOBAJNIGAC.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.DNOBAJNIGAC);
+            my_size += ::protobuf::rt::string_size(5, &self.DNOBAJNIGAC);
+        }
+        if self.EKHEAFBKDFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EKHEAFBKDFP);
+        }
+        if self.LNGJODEPCDN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.LNGJODEPCDN);
         }
         if let Some(v) = self.IFPFJIIFALA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LNGJODEPCDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LNGJODEPCDN);
-        }
-        if self.EKHEAFBKDFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EKHEAFBKDFP);
-        }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.config_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.config_id != 0 {
+            os.write_uint32(2, self.config_id)?;
+        }
         if !self.DNOBAJNIGAC.is_empty() {
-            os.write_string(1, &self.DNOBAJNIGAC)?;
-        }
-        if let Some(v) = self.IFPFJIIFALA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.LNGJODEPCDN != 0 {
-            os.write_uint32(9, self.LNGJODEPCDN)?;
+            os.write_string(5, &self.DNOBAJNIGAC)?;
         }
         if self.EKHEAFBKDFP != 0 {
-            os.write_uint32(5, self.EKHEAFBKDFP)?;
+            os.write_uint32(6, self.EKHEAFBKDFP)?;
         }
-        if self.config_id != 0 {
-            os.write_uint32(4, self.config_id)?;
+        if self.LNGJODEPCDN != 0 {
+            os.write_uint32(11, self.LNGJODEPCDN)?;
+        }
+        if let Some(v) = self.IFPFJIIFALA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for ENHOPAHGCMA {
     }
 
     fn clear(&mut self) {
-        self.DNOBAJNIGAC.clear();
-        self.IFPFJIIFALA.clear();
-        self.LNGJODEPCDN = 0;
-        self.EKHEAFBKDFP = 0;
         self.config_id = 0;
+        self.DNOBAJNIGAC.clear();
+        self.EKHEAFBKDFP = 0;
+        self.LNGJODEPCDN = 0;
+        self.IFPFJIIFALA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENHOPAHGCMA {
         static instance: ENHOPAHGCMA = ENHOPAHGCMA {
-            DNOBAJNIGAC: ::std::string::String::new(),
-            IFPFJIIFALA: ::protobuf::MessageField::none(),
-            LNGJODEPCDN: 0,
-            EKHEAFBKDFP: 0,
             config_id: 0,
+            DNOBAJNIGAC: ::std::string::String::new(),
+            EKHEAFBKDFP: 0,
+            LNGJODEPCDN: 0,
+            IFPFJIIFALA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ENHOPAHGCMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENHOPAHGCMA.proto\x1a\x10MotionInfo.proto\"\xbf\x01\n\x0bENHOPAHGC\
-    MA\x12\x20\n\x0bDNOBAJNIGAC\x18\x01\x20\x01(\tR\x0bDNOBAJNIGAC\x12-\n\
-    \x0bIFPFJIIFALA\x18\x07\x20\x01(\x0b2\x0b.MotionInfoR\x0bIFPFJIIFALA\x12\
-    \x20\n\x0bLNGJODEPCDN\x18\t\x20\x01(\rR\x0bLNGJODEPCDN\x12\x20\n\x0bEKHE\
-    AFBKDFP\x18\x05\x20\x01(\rR\x0bEKHEAFBKDFP\x12\x1b\n\tconfig_id\x18\x04\
-    \x20\x01(\rR\x08configIdb\x06proto3\
+    MA\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\x08configId\x12\x20\n\x0bDNO\
+    BAJNIGAC\x18\x05\x20\x01(\tR\x0bDNOBAJNIGAC\x12\x20\n\x0bEKHEAFBKDFP\x18\
+    \x06\x20\x01(\rR\x0bEKHEAFBKDFP\x12\x20\n\x0bLNGJODEPCDN\x18\x0b\x20\x01\
+    (\rR\x0bLNGJODEPCDN\x12-\n\x0bIFPFJIIFALA\x18\x0c\x20\x01(\x0b2\x0b.Moti\
+    onInfoR\x0bIFPFJIIFALAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GACKCPEPDAF {
     // message fields
-    // @@protoc_insertion_point(field:GACKCPEPDAF.config_id)
-    pub config_id: u32,
     // @@protoc_insertion_point(field:GACKCPEPDAF.MLMFNEBLNHP)
     pub MLMFNEBLNHP: u64,
-    // @@protoc_insertion_point(field:GACKCPEPDAF.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
+    // @@protoc_insertion_point(field:GACKCPEPDAF.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:GACKCPEPDAF.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:GACKCPEPDAF.config_id)
+    pub config_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GACKCPEPDAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GACKCPEPDAF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &GACKCPEPDAF| { &m.config_id },
-            |m: &mut GACKCPEPDAF| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MLMFNEBLNHP",
             |m: &GACKCPEPDAF| { &m.MLMFNEBLNHP },
             |m: &mut GACKCPEPDAF| { &mut m.MLMFNEBLNHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &GACKCPEPDAF| { &m.HCBADDHNIDG },
-            |m: &mut GACKCPEPDAF| { &mut m.HCBADDHNIDG },
+            "max_level",
+            |m: &GACKCPEPDAF| { &m.max_level },
+            |m: &mut GACKCPEPDAF| { &mut m.max_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &GACKCPEPDAF| { &m.level },
             |m: &mut GACKCPEPDAF| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &GACKCPEPDAF| { &m.config_id },
+            |m: &mut GACKCPEPDAF| { &mut m.config_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GACKCPEPDAF>(
             "GACKCPEPDAF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GACKCPEPDAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.config_id = is.read_uint32()?;
-                },
                 88 => {
                     self.MLMFNEBLNHP = is.read_uint64()?;
                 },
-                56 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
+                96 => {
+                    self.max_level = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.level = is.read_uint32()?;
+                },
+                120 => {
+                    self.config_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GACKCPEPDAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.config_id);
-        }
         if self.MLMFNEBLNHP != 0 {
             my_size += ::protobuf::rt::uint64_size(11, self.MLMFNEBLNHP);
         }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HCBADDHNIDG);
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.max_level);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.config_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GACKCPEPDAF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.config_id != 0 {
-            os.write_uint32(1, self.config_id)?;
-        }
         if self.MLMFNEBLNHP != 0 {
             os.write_uint64(11, self.MLMFNEBLNHP)?;
         }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(7, self.HCBADDHNIDG)?;
+        if self.max_level != 0 {
+            os.write_uint32(12, self.max_level)?;
         }
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(14, self.level)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(15, self.config_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for GACKCPEPDAF {
     }
 
     fn clear(&mut self) {
-        self.config_id = 0;
         self.MLMFNEBLNHP = 0;
-        self.HCBADDHNIDG = 0;
+        self.max_level = 0;
         self.level = 0;
+        self.config_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GACKCPEPDAF {
         static instance: GACKCPEPDAF = GACKCPEPDAF {
-            config_id: 0,
             MLMFNEBLNHP: 0,
-            HCBADDHNIDG: 0,
+            max_level: 0,
             level: 0,
+            config_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GACKCPEPDAF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GACKCPEPDAF.proto\"\x84\x01\n\x0bGACKCPEPDAF\x12\x1b\n\tconfig_id\
-    \x18\x01\x20\x01(\rR\x08configId\x12\x20\n\x0bMLMFNEBLNHP\x18\x0b\x20\
-    \x01(\x04R\x0bMLMFNEBLNHP\x12\x20\n\x0bHCBADDHNIDG\x18\x07\x20\x01(\rR\
-    \x0bHCBADDHNIDG\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05levelb\x06prot\
-    o3\
+    \n\x11GACKCPEPDAF.proto\"\x7f\n\x0bGACKCPEPDAF\x12\x20\n\x0bMLMFNEBLNHP\
+    \x18\x0b\x20\x01(\x04R\x0bMLMFNEBLNHP\x12\x1b\n\tmax_level\x18\x0c\x20\
+    \x01(\rR\x08maxLevel\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12\
+    \x1b\n\tconfig_id\x18\x0f\x20\x01(\rR\x08configIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

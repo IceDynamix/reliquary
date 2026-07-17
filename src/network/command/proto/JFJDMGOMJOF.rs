@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JFJDMGOMJOF {
     // message fields
-    // @@protoc_insertion_point(field:JFJDMGOMJOF.KGOCFEINBIN)
-    pub KGOCFEINBIN: ::protobuf::MessageField<super::IPGIJFNAFLC::IPGIJFNAFLC>,
     // @@protoc_insertion_point(field:JFJDMGOMJOF.JNIEIKOKBGK)
     pub JNIEIKOKBGK: ::protobuf::EnumOrUnknown<super::ABLCCPHIOMI::ABLCCPHIOMI>,
+    // @@protoc_insertion_point(field:JFJDMGOMJOF.KGOCFEINBIN)
+    pub KGOCFEINBIN: ::protobuf::MessageField<super::IPGIJFNAFLC::IPGIJFNAFLC>,
     // special fields
     // @@protoc_insertion_point(special_field:JFJDMGOMJOF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl JFJDMGOMJOF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGIJFNAFLC::IPGIJFNAFLC>(
-            "KGOCFEINBIN",
-            |m: &JFJDMGOMJOF| { &m.KGOCFEINBIN },
-            |m: &mut JFJDMGOMJOF| { &mut m.KGOCFEINBIN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNIEIKOKBGK",
             |m: &JFJDMGOMJOF| { &m.JNIEIKOKBGK },
             |m: &mut JFJDMGOMJOF| { &mut m.JNIEIKOKBGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGIJFNAFLC::IPGIJFNAFLC>(
+            "KGOCFEINBIN",
+            |m: &JFJDMGOMJOF| { &m.KGOCFEINBIN },
+            |m: &mut JFJDMGOMJOF| { &mut m.KGOCFEINBIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JFJDMGOMJOF>(
             "JFJDMGOMJOF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JFJDMGOMJOF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGOCFEINBIN)?;
-                },
-                112 => {
+                8 => {
                     self.JNIEIKOKBGK = is.read_enum_or_unknown()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGOCFEINBIN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for JFJDMGOMJOF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JNIEIKOKBGK != ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD) {
+            my_size += ::protobuf::rt::int32_size(1, self.JNIEIKOKBGK.value());
+        }
         if let Some(v) = self.KGOCFEINBIN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JNIEIKOKBGK != ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD) {
-            my_size += ::protobuf::rt::int32_size(14, self.JNIEIKOKBGK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for JFJDMGOMJOF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KGOCFEINBIN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.JNIEIKOKBGK != ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.JNIEIKOKBGK))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.JNIEIKOKBGK))?;
+        }
+        if let Some(v) = self.KGOCFEINBIN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for JFJDMGOMJOF {
     }
 
     fn clear(&mut self) {
-        self.KGOCFEINBIN.clear();
         self.JNIEIKOKBGK = ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD);
+        self.KGOCFEINBIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JFJDMGOMJOF {
         static instance: JFJDMGOMJOF = JFJDMGOMJOF {
-            KGOCFEINBIN: ::protobuf::MessageField::none(),
             JNIEIKOKBGK: ::protobuf::EnumOrUnknown::from_i32(0),
+            KGOCFEINBIN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for JFJDMGOMJOF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JFJDMGOMJOF.proto\x1a\x11ABLCCPHIOMI.proto\x1a\x11IPGIJFNAFLC.prot\
-    o\"m\n\x0bJFJDMGOMJOF\x12.\n\x0bKGOCFEINBIN\x18\x06\x20\x01(\x0b2\x0c.IP\
-    GIJFNAFLCR\x0bKGOCFEINBIN\x12.\n\x0bJNIEIKOKBGK\x18\x0e\x20\x01(\x0e2\
-    \x0c.ABLCCPHIOMIR\x0bJNIEIKOKBGKb\x06proto3\
+    o\"m\n\x0bJFJDMGOMJOF\x12.\n\x0bJNIEIKOKBGK\x18\x01\x20\x01(\x0e2\x0c.AB\
+    LCCPHIOMIR\x0bJNIEIKOKBGK\x12.\n\x0bKGOCFEINBIN\x18\x0c\x20\x01(\x0b2\
+    \x0c.IPGIJFNAFLCR\x0bKGOCFEINBINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

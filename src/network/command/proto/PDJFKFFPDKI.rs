@@ -30,8 +30,6 @@ pub struct PDJFKFFPDKI {
     // message fields
     // @@protoc_insertion_point(field:PDJFKFFPDKI.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PDJFKFFPDKI.CBILPMICEKC)
-    pub CBILPMICEKC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PDJFKFFPDKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl PDJFKFFPDKI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PDJFKFFPDKI| { &m.retcode },
             |m: &mut PDJFKFFPDKI| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBILPMICEKC",
-            |m: &PDJFKFFPDKI| { &m.CBILPMICEKC },
-            |m: &mut PDJFKFFPDKI| { &mut m.CBILPMICEKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PDJFKFFPDKI>(
             "PDJFKFFPDKI",
@@ -79,11 +72,8 @@ impl ::protobuf::Message for PDJFKFFPDKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                40 => {
-                    self.CBILPMICEKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +88,7 @@ impl ::protobuf::Message for PDJFKFFPDKI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
-        if self.CBILPMICEKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CBILPMICEKC);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +97,7 @@ impl ::protobuf::Message for PDJFKFFPDKI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
-        if self.CBILPMICEKC != 0 {
-            os.write_uint32(5, self.CBILPMICEKC)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +117,12 @@ impl ::protobuf::Message for PDJFKFFPDKI {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CBILPMICEKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PDJFKFFPDKI {
         static instance: PDJFKFFPDKI = PDJFKFFPDKI {
             retcode: 0,
-            CBILPMICEKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for PDJFKFFPDKI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PDJFKFFPDKI.proto\"I\n\x0bPDJFKFFPDKI\x12\x18\n\x07retcode\x18\x08\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bCBILPMICEKC\x18\x05\x20\x01(\rR\x0b\
-    CBILPMICEKCb\x06proto3\
+    \n\x11PDJFKFFPDKI.proto\"'\n\x0bPDJFKFFPDKI\x12\x18\n\x07retcode\x18\x0e\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

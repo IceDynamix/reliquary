@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGECGKEKFNC {
     // message fields
-    // @@protoc_insertion_point(field:PGECGKEKFNC.role_id)
-    pub role_id: u32,
     // @@protoc_insertion_point(field:PGECGKEKFNC.LPFGIGJDLFM)
     pub LPFGIGJDLFM: u32,
+    // @@protoc_insertion_point(field:PGECGKEKFNC.role_id)
+    pub role_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PGECGKEKFNC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PGECGKEKFNC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_id",
-            |m: &PGECGKEKFNC| { &m.role_id },
-            |m: &mut PGECGKEKFNC| { &mut m.role_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LPFGIGJDLFM",
             |m: &PGECGKEKFNC| { &m.LPFGIGJDLFM },
             |m: &mut PGECGKEKFNC| { &mut m.LPFGIGJDLFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role_id",
+            |m: &PGECGKEKFNC| { &m.role_id },
+            |m: &mut PGECGKEKFNC| { &mut m.role_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PGECGKEKFNC>(
             "PGECGKEKFNC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PGECGKEKFNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.role_id = is.read_uint32()?;
-                },
-                80 => {
+                8 => {
                     self.LPFGIGJDLFM = is.read_uint32()?;
+                },
+                16 => {
+                    self.role_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PGECGKEKFNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.role_id);
-        }
         if self.LPFGIGJDLFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LPFGIGJDLFM);
+            my_size += ::protobuf::rt::uint32_size(1, self.LPFGIGJDLFM);
+        }
+        if self.role_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PGECGKEKFNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.role_id != 0 {
-            os.write_uint32(7, self.role_id)?;
-        }
         if self.LPFGIGJDLFM != 0 {
-            os.write_uint32(10, self.LPFGIGJDLFM)?;
+            os.write_uint32(1, self.LPFGIGJDLFM)?;
+        }
+        if self.role_id != 0 {
+            os.write_uint32(2, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PGECGKEKFNC {
     }
 
     fn clear(&mut self) {
-        self.role_id = 0;
         self.LPFGIGJDLFM = 0;
+        self.role_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGECGKEKFNC {
         static instance: PGECGKEKFNC = PGECGKEKFNC {
-            role_id: 0,
             LPFGIGJDLFM: 0,
+            role_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PGECGKEKFNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGECGKEKFNC.proto\"H\n\x0bPGECGKEKFNC\x12\x17\n\x07role_id\x18\x07\
-    \x20\x01(\rR\x06roleId\x12\x20\n\x0bLPFGIGJDLFM\x18\n\x20\x01(\rR\x0bLPF\
-    GIGJDLFMb\x06proto3\
+    \n\x11PGECGKEKFNC.proto\"H\n\x0bPGECGKEKFNC\x12\x20\n\x0bLPFGIGJDLFM\x18\
+    \x01\x20\x01(\rR\x0bLPFGIGJDLFM\x12\x17\n\x07role_id\x18\x02\x20\x01(\rR\
+    \x06roleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

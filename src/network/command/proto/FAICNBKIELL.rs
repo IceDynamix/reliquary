@@ -28,18 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAICNBKIELL {
     // message fields
-    // @@protoc_insertion_point(field:FAICNBKIELL.AOGOHOCFFNE)
-    pub AOGOHOCFFNE: ::protobuf::MessageField<super::DCDMPLJNBJC::DCDMPLJNBJC>,
-    // @@protoc_insertion_point(field:FAICNBKIELL.JJLFKNPEPFP)
-    pub JJLFKNPEPFP: ::protobuf::MessageField<super::GKHFFKMFMEN::GKHFFKMFMEN>,
-    // @@protoc_insertion_point(field:FAICNBKIELL.EIOHFJMFOKF)
-    pub EIOHFJMFOKF: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:FAICNBKIELL.BNLLEJPCIGD)
     pub BNLLEJPCIGD: ::protobuf::MessageField<super::FBBOKKLGKGL::FBBOKKLGKGL>,
-    // @@protoc_insertion_point(field:FAICNBKIELL.PHGJIJELKDB)
-    pub PHGJIJELKDB: ::protobuf::MessageField<super::PFLOIHLLMEE::PFLOIHLLMEE>,
     // @@protoc_insertion_point(field:FAICNBKIELL.CPOLAHJPGFE)
     pub CPOLAHJPGFE: ::protobuf::MessageField<super::JGMDJIENFFH::JGMDJIENFFH>,
+    // @@protoc_insertion_point(field:FAICNBKIELL.JJLFKNPEPFP)
+    pub JJLFKNPEPFP: ::protobuf::MessageField<super::GKHFFKMFMEN::GKHFFKMFMEN>,
+    // @@protoc_insertion_point(field:FAICNBKIELL.AOGOHOCFFNE)
+    pub AOGOHOCFFNE: ::protobuf::MessageField<super::DCDMPLJNBJC::DCDMPLJNBJC>,
+    // @@protoc_insertion_point(field:FAICNBKIELL.PHGJIJELKDB)
+    pub PHGJIJELKDB: ::protobuf::MessageField<super::PFLOIHLLMEE::PFLOIHLLMEE>,
     // @@protoc_insertion_point(field:FAICNBKIELL.AOMHPLHONJA)
     pub AOMHPLHONJA: ::protobuf::MessageField<super::BJLNEBBMMOE::BJLNEBBMMOE>,
     // special fields
@@ -59,37 +57,32 @@ impl FAICNBKIELL {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(7);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DCDMPLJNBJC::DCDMPLJNBJC>(
-            "AOGOHOCFFNE",
-            |m: &FAICNBKIELL| { &m.AOGOHOCFFNE },
-            |m: &mut FAICNBKIELL| { &mut m.AOGOHOCFFNE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBBOKKLGKGL::FBBOKKLGKGL>(
+            "BNLLEJPCIGD",
+            |m: &FAICNBKIELL| { &m.BNLLEJPCIGD },
+            |m: &mut FAICNBKIELL| { &mut m.BNLLEJPCIGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JGMDJIENFFH::JGMDJIENFFH>(
+            "CPOLAHJPGFE",
+            |m: &FAICNBKIELL| { &m.CPOLAHJPGFE },
+            |m: &mut FAICNBKIELL| { &mut m.CPOLAHJPGFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GKHFFKMFMEN::GKHFFKMFMEN>(
             "JJLFKNPEPFP",
             |m: &FAICNBKIELL| { &m.JJLFKNPEPFP },
             |m: &mut FAICNBKIELL| { &mut m.JJLFKNPEPFP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "EIOHFJMFOKF",
-            |m: &FAICNBKIELL| { &m.EIOHFJMFOKF },
-            |m: &mut FAICNBKIELL| { &mut m.EIOHFJMFOKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FBBOKKLGKGL::FBBOKKLGKGL>(
-            "BNLLEJPCIGD",
-            |m: &FAICNBKIELL| { &m.BNLLEJPCIGD },
-            |m: &mut FAICNBKIELL| { &mut m.BNLLEJPCIGD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DCDMPLJNBJC::DCDMPLJNBJC>(
+            "AOGOHOCFFNE",
+            |m: &FAICNBKIELL| { &m.AOGOHOCFFNE },
+            |m: &mut FAICNBKIELL| { &mut m.AOGOHOCFFNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFLOIHLLMEE::PFLOIHLLMEE>(
             "PHGJIJELKDB",
             |m: &FAICNBKIELL| { &m.PHGJIJELKDB },
             |m: &mut FAICNBKIELL| { &mut m.PHGJIJELKDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JGMDJIENFFH::JGMDJIENFFH>(
-            "CPOLAHJPGFE",
-            |m: &FAICNBKIELL| { &m.CPOLAHJPGFE },
-            |m: &mut FAICNBKIELL| { &mut m.CPOLAHJPGFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BJLNEBBMMOE::BJLNEBBMMOE>(
             "AOMHPLHONJA",
@@ -114,25 +107,22 @@ impl ::protobuf::Message for FAICNBKIELL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AOGOHOCFFNE)?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJLFKNPEPFP)?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIOHFJMFOKF)?;
-                },
-                34 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNLLEJPCIGD)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
-                },
-                50 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPOLAHJPGFE)?;
                 },
                 74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JJLFKNPEPFP)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AOGOHOCFFNE)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AOMHPLHONJA)?;
                 },
                 tag => {
@@ -147,7 +137,11 @@ impl ::protobuf::Message for FAICNBKIELL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AOGOHOCFFNE.as_ref() {
+        if let Some(v) = self.BNLLEJPCIGD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.CPOLAHJPGFE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -155,19 +149,11 @@ impl ::protobuf::Message for FAICNBKIELL {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.EIOHFJMFOKF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.BNLLEJPCIGD.as_ref() {
+        if let Some(v) = self.AOGOHOCFFNE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.PHGJIJELKDB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.CPOLAHJPGFE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -181,26 +167,23 @@ impl ::protobuf::Message for FAICNBKIELL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AOGOHOCFFNE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.JJLFKNPEPFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.EIOHFJMFOKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if let Some(v) = self.BNLLEJPCIGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if let Some(v) = self.PHGJIJELKDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.CPOLAHJPGFE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.JJLFKNPEPFP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.AOGOHOCFFNE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.PHGJIJELKDB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.AOMHPLHONJA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -219,24 +202,22 @@ impl ::protobuf::Message for FAICNBKIELL {
     }
 
     fn clear(&mut self) {
-        self.AOGOHOCFFNE.clear();
-        self.JJLFKNPEPFP.clear();
-        self.EIOHFJMFOKF.clear();
         self.BNLLEJPCIGD.clear();
-        self.PHGJIJELKDB.clear();
         self.CPOLAHJPGFE.clear();
+        self.JJLFKNPEPFP.clear();
+        self.AOGOHOCFFNE.clear();
+        self.PHGJIJELKDB.clear();
         self.AOMHPLHONJA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FAICNBKIELL {
         static instance: FAICNBKIELL = FAICNBKIELL {
-            AOGOHOCFFNE: ::protobuf::MessageField::none(),
-            JJLFKNPEPFP: ::protobuf::MessageField::none(),
-            EIOHFJMFOKF: ::protobuf::MessageField::none(),
             BNLLEJPCIGD: ::protobuf::MessageField::none(),
-            PHGJIJELKDB: ::protobuf::MessageField::none(),
             CPOLAHJPGFE: ::protobuf::MessageField::none(),
+            JJLFKNPEPFP: ::protobuf::MessageField::none(),
+            AOGOHOCFFNE: ::protobuf::MessageField::none(),
+            PHGJIJELKDB: ::protobuf::MessageField::none(),
             AOMHPLHONJA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -264,15 +245,14 @@ impl ::protobuf::reflect::ProtobufValue for FAICNBKIELL {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FAICNBKIELL.proto\x1a\x11BJLNEBBMMOE.proto\x1a\x11DCDMPLJNBJC.prot\
     o\x1a\x11FBBOKKLGKGL.proto\x1a\x11GKHFFKMFMEN.proto\x1a\x11JGMDJIENFFH.p\
-    roto\x1a\x10LineupInfo.proto\x1a\x11PFLOIHLLMEE.proto\"\xdc\x02\n\x0bFAI\
-    CNBKIELL\x12.\n\x0bAOGOHOCFFNE\x18\x0b\x20\x01(\x0b2\x0c.DCDMPLJNBJCR\
-    \x0bAOGOHOCFFNE\x12.\n\x0bJJLFKNPEPFP\x18\x0f\x20\x01(\x0b2\x0c.GKHFFKMF\
-    MENR\x0bJJLFKNPEPFP\x12-\n\x0bEIOHFJMFOKF\x18\x0e\x20\x01(\x0b2\x0b.Line\
-    upInfoR\x0bEIOHFJMFOKF\x12.\n\x0bBNLLEJPCIGD\x18\x04\x20\x01(\x0b2\x0c.F\
-    BBOKKLGKGLR\x0bBNLLEJPCIGD\x12.\n\x0bPHGJIJELKDB\x18\x02\x20\x01(\x0b2\
-    \x0c.PFLOIHLLMEER\x0bPHGJIJELKDB\x12.\n\x0bCPOLAHJPGFE\x18\x06\x20\x01(\
-    \x0b2\x0c.JGMDJIENFFHR\x0bCPOLAHJPGFE\x12.\n\x0bAOMHPLHONJA\x18\t\x20\
-    \x01(\x0b2\x0c.BJLNEBBMMOER\x0bAOMHPLHONJAb\x06proto3\
+    roto\x1a\x11PFLOIHLLMEE.proto\"\xad\x02\n\x0bFAICNBKIELL\x12.\n\x0bBNLLE\
+    JPCIGD\x18\x03\x20\x01(\x0b2\x0c.FBBOKKLGKGLR\x0bBNLLEJPCIGD\x12.\n\x0bC\
+    POLAHJPGFE\x18\x07\x20\x01(\x0b2\x0c.JGMDJIENFFHR\x0bCPOLAHJPGFE\x12.\n\
+    \x0bJJLFKNPEPFP\x18\t\x20\x01(\x0b2\x0c.GKHFFKMFMENR\x0bJJLFKNPEPFP\x12.\
+    \n\x0bAOGOHOCFFNE\x18\x0c\x20\x01(\x0b2\x0c.DCDMPLJNBJCR\x0bAOGOHOCFFNE\
+    \x12.\n\x0bPHGJIJELKDB\x18\r\x20\x01(\x0b2\x0c.PFLOIHLLMEER\x0bPHGJIJELK\
+    DB\x12.\n\x0bAOMHPLHONJA\x18\x0f\x20\x01(\x0b2\x0c.BJLNEBBMMOER\x0bAOMHP\
+    LHONJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -289,13 +269,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(7);
+            let mut deps = ::std::vec::Vec::with_capacity(6);
             deps.push(super::BJLNEBBMMOE::file_descriptor().clone());
             deps.push(super::DCDMPLJNBJC::file_descriptor().clone());
             deps.push(super::FBBOKKLGKGL::file_descriptor().clone());
             deps.push(super::GKHFFKMFMEN::file_descriptor().clone());
             deps.push(super::JGMDJIENFFH::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
             deps.push(super::PFLOIHLLMEE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FAICNBKIELL::generated_message_descriptor_data());

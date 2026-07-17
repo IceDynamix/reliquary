@@ -30,12 +30,12 @@ pub struct ChallengePeakBuild {
     // message fields
     // @@protoc_insertion_point(field:ChallengePeakBuild.relic_list)
     pub relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
-    // @@protoc_insertion_point(field:ChallengePeakBuild.MDOJNENGCFE)
-    pub MDOJNENGCFE: u32,
-    // @@protoc_insertion_point(field:ChallengePeakBuild.avatar_id)
-    pub avatar_id: u32,
     // @@protoc_insertion_point(field:ChallengePeakBuild.equipment_unique_id)
     pub equipment_unique_id: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBuild.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBuild.skin_id)
+    pub skin_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengePeakBuild.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl ChallengePeakBuild {
             |m: &mut ChallengePeakBuild| { &mut m.relic_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDOJNENGCFE",
-            |m: &ChallengePeakBuild| { &m.MDOJNENGCFE },
-            |m: &mut ChallengePeakBuild| { &mut m.MDOJNENGCFE },
+            "equipment_unique_id",
+            |m: &ChallengePeakBuild| { &m.equipment_unique_id },
+            |m: &mut ChallengePeakBuild| { &mut m.equipment_unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -71,9 +71,9 @@ impl ChallengePeakBuild {
             |m: &mut ChallengePeakBuild| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "equipment_unique_id",
-            |m: &ChallengePeakBuild| { &m.equipment_unique_id },
-            |m: &mut ChallengePeakBuild| { &mut m.equipment_unique_id },
+            "skin_id",
+            |m: &ChallengePeakBuild| { &m.skin_id },
+            |m: &mut ChallengePeakBuild| { &mut m.skin_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengePeakBuild>(
             "ChallengePeakBuild",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChallengePeakBuild {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                10 => {
                     self.relic_list.push(is.read_message()?);
                 },
-                64 => {
-                    self.MDOJNENGCFE = is.read_uint32()?;
+                24 => {
+                    self.equipment_unique_id = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.equipment_unique_id = is.read_uint32()?;
+                72 => {
+                    self.skin_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for ChallengePeakBuild {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MDOJNENGCFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MDOJNENGCFE);
+        if self.equipment_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.equipment_unique_id);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
-        if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.equipment_unique_id);
+        if self.skin_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for ChallengePeakBuild {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.MDOJNENGCFE != 0 {
-            os.write_uint32(8, self.MDOJNENGCFE)?;
+        if self.equipment_unique_id != 0 {
+            os.write_uint32(3, self.equipment_unique_id)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
         }
-        if self.equipment_unique_id != 0 {
-            os.write_uint32(11, self.equipment_unique_id)?;
+        if self.skin_id != 0 {
+            os.write_uint32(9, self.skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for ChallengePeakBuild {
 
     fn clear(&mut self) {
         self.relic_list.clear();
-        self.MDOJNENGCFE = 0;
-        self.avatar_id = 0;
         self.equipment_unique_id = 0;
+        self.avatar_id = 0;
+        self.skin_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakBuild {
         static instance: ChallengePeakBuild = ChallengePeakBuild {
             relic_list: ::std::vec::Vec::new(),
-            MDOJNENGCFE: 0,
-            avatar_id: 0,
             equipment_unique_id: 0,
+            avatar_id: 0,
+            skin_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakBuild {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ChallengePeakBuild.proto\x1a\x10EquipRelic.proto\"\xaf\x01\n\x12Ch\
-    allengePeakBuild\x12*\n\nrelic_list\x18\x0e\x20\x03(\x0b2\x0b.EquipRelic\
-    R\trelicList\x12\x20\n\x0bMDOJNENGCFE\x18\x08\x20\x01(\rR\x0bMDOJNENGCFE\
-    \x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarId\x12.\n\x13equipmen\
-    t_unique_id\x18\x0b\x20\x01(\rR\x11equipmentUniqueIdb\x06proto3\
+    \n\x18ChallengePeakBuild.proto\x1a\x10EquipRelic.proto\"\xa6\x01\n\x12Ch\
+    allengePeakBuild\x12*\n\nrelic_list\x18\x01\x20\x03(\x0b2\x0b.EquipRelic\
+    R\trelicList\x12.\n\x13equipment_unique_id\x18\x03\x20\x01(\rR\x11equipm\
+    entUniqueId\x12\x1b\n\tavatar_id\x18\x07\x20\x01(\rR\x08avatarId\x12\x17\
+    \n\x07skin_id\x18\t\x20\x01(\rR\x06skinIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

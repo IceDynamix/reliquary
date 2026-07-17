@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PBMGACMAMBE {
     // message fields
-    // @@protoc_insertion_point(field:PBMGACMAMBE.JKFNAKBGIBF)
-    pub JKFNAKBGIBF: ::std::vec::Vec<super::KGLIOOODBPN::KGLIOOODBPN>,
     // @@protoc_insertion_point(field:PBMGACMAMBE.IOJPOKCDFHM)
     pub IOJPOKCDFHM: u32,
+    // @@protoc_insertion_point(field:PBMGACMAMBE.JKFNAKBGIBF)
+    pub JKFNAKBGIBF: ::std::vec::Vec<super::KGLIOOODBPN::KGLIOOODBPN>,
     // special fields
     // @@protoc_insertion_point(special_field:PBMGACMAMBE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PBMGACMAMBE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKFNAKBGIBF",
-            |m: &PBMGACMAMBE| { &m.JKFNAKBGIBF },
-            |m: &mut PBMGACMAMBE| { &mut m.JKFNAKBGIBF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IOJPOKCDFHM",
             |m: &PBMGACMAMBE| { &m.IOJPOKCDFHM },
             |m: &mut PBMGACMAMBE| { &mut m.IOJPOKCDFHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JKFNAKBGIBF",
+            |m: &PBMGACMAMBE| { &m.JKFNAKBGIBF },
+            |m: &mut PBMGACMAMBE| { &mut m.JKFNAKBGIBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PBMGACMAMBE>(
             "PBMGACMAMBE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PBMGACMAMBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.JKFNAKBGIBF.push(is.read_message()?);
-                },
-                40 => {
+                56 => {
                     self.IOJPOKCDFHM = is.read_uint32()?;
+                },
+                106 => {
+                    self.JKFNAKBGIBF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for PBMGACMAMBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IOJPOKCDFHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IOJPOKCDFHM);
+        }
         for value in &self.JKFNAKBGIBF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.IOJPOKCDFHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IOJPOKCDFHM);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JKFNAKBGIBF {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.IOJPOKCDFHM != 0 {
-            os.write_uint32(5, self.IOJPOKCDFHM)?;
+            os.write_uint32(7, self.IOJPOKCDFHM)?;
         }
+        for v in &self.JKFNAKBGIBF {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PBMGACMAMBE {
     }
 
     fn clear(&mut self) {
-        self.JKFNAKBGIBF.clear();
         self.IOJPOKCDFHM = 0;
+        self.JKFNAKBGIBF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PBMGACMAMBE {
         static instance: PBMGACMAMBE = PBMGACMAMBE {
-            JKFNAKBGIBF: ::std::vec::Vec::new(),
             IOJPOKCDFHM: 0,
+            JKFNAKBGIBF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PBMGACMAMBE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PBMGACMAMBE.proto\x1a\x11KGLIOOODBPN.proto\"_\n\x0bPBMGACMAMBE\x12\
-    .\n\x0bJKFNAKBGIBF\x18\x0c\x20\x03(\x0b2\x0c.KGLIOOODBPNR\x0bJKFNAKBGIBF\
-    \x12\x20\n\x0bIOJPOKCDFHM\x18\x05\x20\x01(\rR\x0bIOJPOKCDFHMb\x06proto3\
+    \x20\n\x0bIOJPOKCDFHM\x18\x07\x20\x01(\rR\x0bIOJPOKCDFHM\x12.\n\x0bJKFNA\
+    KBGIBF\x18\r\x20\x03(\x0b2\x0c.KGLIOOODBPNR\x0bJKFNAKBGIBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

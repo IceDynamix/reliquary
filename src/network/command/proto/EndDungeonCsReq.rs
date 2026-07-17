@@ -30,10 +30,10 @@ pub struct EndDungeonCsReq {
     // message fields
     // @@protoc_insertion_point(field:EndDungeonCsReq.FEODDIKPAOA)
     pub FEODDIKPAOA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EndDungeonCsReq.HNMLBLGGOLB)
-    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // @@protoc_insertion_point(field:EndDungeonCsReq.DHLLPOBKLIO)
     pub DHLLPOBKLIO: bool,
+    // @@protoc_insertion_point(field:EndDungeonCsReq.HNMLBLGGOLB)
+    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // special fields
     // @@protoc_insertion_point(special_field:EndDungeonCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl EndDungeonCsReq {
             |m: &EndDungeonCsReq| { &m.FEODDIKPAOA },
             |m: &mut EndDungeonCsReq| { &mut m.FEODDIKPAOA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
-            "HNMLBLGGOLB",
-            |m: &EndDungeonCsReq| { &m.HNMLBLGGOLB },
-            |m: &mut EndDungeonCsReq| { &mut m.HNMLBLGGOLB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHLLPOBKLIO",
             |m: &EndDungeonCsReq| { &m.DHLLPOBKLIO },
             |m: &mut EndDungeonCsReq| { &mut m.DHLLPOBKLIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
+            "HNMLBLGGOLB",
+            |m: &EndDungeonCsReq| { &m.HNMLBLGGOLB },
+            |m: &mut EndDungeonCsReq| { &mut m.HNMLBLGGOLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EndDungeonCsReq>(
             "EndDungeonCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for EndDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.FEODDIKPAOA)?;
                 },
-                88 => {
+                32 => {
                     self.FEODDIKPAOA.push(is.read_uint32()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
-                },
-                80 => {
+                88 => {
                     self.DHLLPOBKLIO = is.read_bool()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for EndDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.FEODDIKPAOA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.FEODDIKPAOA);
+        if self.DHLLPOBKLIO != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.HNMLBLGGOLB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DHLLPOBKLIO != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for EndDungeonCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.FEODDIKPAOA)?;
-        if let Some(v) = self.HNMLBLGGOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
+        os.write_repeated_packed_uint32(4, &self.FEODDIKPAOA)?;
         if self.DHLLPOBKLIO != false {
-            os.write_bool(10, self.DHLLPOBKLIO)?;
+            os.write_bool(11, self.DHLLPOBKLIO)?;
+        }
+        if let Some(v) = self.HNMLBLGGOLB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EndDungeonCsReq {
 
     fn clear(&mut self) {
         self.FEODDIKPAOA.clear();
-        self.HNMLBLGGOLB.clear();
         self.DHLLPOBKLIO = false;
+        self.HNMLBLGGOLB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EndDungeonCsReq {
         static instance: EndDungeonCsReq = EndDungeonCsReq {
             FEODDIKPAOA: ::std::vec::Vec::new(),
-            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             DHLLPOBKLIO: false,
+            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for EndDungeonCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EndDungeonCsReq.proto\x1a\x11BIKNPJPLDAO.proto\"\x85\x01\n\x0fEndD\
-    ungeonCsReq\x12\x20\n\x0bFEODDIKPAOA\x18\x0b\x20\x03(\rR\x0bFEODDIKPAOA\
-    \x12.\n\x0bHNMLBLGGOLB\x18\r\x20\x01(\x0b2\x0c.BIKNPJPLDAOR\x0bHNMLBLGGO\
-    LB\x12\x20\n\x0bDHLLPOBKLIO\x18\n\x20\x01(\x08R\x0bDHLLPOBKLIOb\x06proto\
-    3\
+    ungeonCsReq\x12\x20\n\x0bFEODDIKPAOA\x18\x04\x20\x03(\rR\x0bFEODDIKPAOA\
+    \x12\x20\n\x0bDHLLPOBKLIO\x18\x0b\x20\x01(\x08R\x0bDHLLPOBKLIO\x12.\n\
+    \x0bHNMLBLGGOLB\x18\x0f\x20\x01(\x0b2\x0c.BIKNPJPLDAOR\x0bHNMLBLGGOLBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

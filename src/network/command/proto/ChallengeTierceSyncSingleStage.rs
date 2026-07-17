@@ -30,10 +30,10 @@ pub struct ChallengeTierceSyncSingleStage {
     // message fields
     // @@protoc_insertion_point(field:ChallengeTierceSyncSingleStage.stage_data)
     pub stage_data: ::protobuf::MessageField<super::ChallengeTierceStageData::ChallengeTierceStageData>,
-    // @@protoc_insertion_point(field:ChallengeTierceSyncSingleStage.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengeTierceSyncSingleStage.is_passed)
     pub is_passed: bool,
+    // @@protoc_insertion_point(field:ChallengeTierceSyncSingleStage.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeTierceSyncSingleStage.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ChallengeTierceSyncSingleStage {
             |m: &ChallengeTierceSyncSingleStage| { &m.stage_data },
             |m: &mut ChallengeTierceSyncSingleStage| { &mut m.stage_data },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengeTierceSyncSingleStage| { &m.finished_target_list },
-            |m: &mut ChallengeTierceSyncSingleStage| { &mut m.finished_target_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_passed",
             |m: &ChallengeTierceSyncSingleStage| { &m.is_passed },
             |m: &mut ChallengeTierceSyncSingleStage| { &mut m.is_passed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengeTierceSyncSingleStage| { &m.finished_target_list },
+            |m: &mut ChallengeTierceSyncSingleStage| { &mut m.finished_target_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeTierceSyncSingleStage>(
             "ChallengeTierceSyncSingleStage",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ChallengeTierceSyncSingleStage {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_data)?;
                 },
-                6922 => {
+                1648 => {
+                    self.is_passed = is.read_bool()?;
+                },
+                12730 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                6920 => {
+                12728 => {
                     self.finished_target_list.push(is.read_uint32()?);
-                },
-                2648 => {
-                    self.is_passed = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for ChallengeTierceSyncSingleStage {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(865, &self.finished_target_list);
         if self.is_passed != false {
             my_size += 2 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1591, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for ChallengeTierceSyncSingleStage {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.stage_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        os.write_repeated_packed_uint32(865, &self.finished_target_list)?;
         if self.is_passed != false {
-            os.write_bool(331, self.is_passed)?;
+            os.write_bool(206, self.is_passed)?;
         }
+        os.write_repeated_packed_uint32(1591, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ChallengeTierceSyncSingleStage {
 
     fn clear(&mut self) {
         self.stage_data.clear();
-        self.finished_target_list.clear();
         self.is_passed = false;
+        self.finished_target_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeTierceSyncSingleStage {
         static instance: ChallengeTierceSyncSingleStage = ChallengeTierceSyncSingleStage {
             stage_data: ::protobuf::MessageField::none(),
-            finished_target_list: ::std::vec::Vec::new(),
             is_passed: false,
+            finished_target_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeTierceSyncSingleStage {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChallengeTierceSyncSingleStage.proto\x1a\x1eChallengeTierceStageData.\
     proto\"\xab\x01\n\x1eChallengeTierceSyncSingleStage\x128\n\nstage_data\
-    \x18\x04\x20\x01(\x0b2\x19.ChallengeTierceStageDataR\tstageData\x121\n\
-    \x14finished_target_list\x18\xe1\x06\x20\x03(\rR\x12finishedTargetList\
-    \x12\x1c\n\tis_passed\x18\xcb\x02\x20\x01(\x08R\x08isPassedb\x06proto3\
+    \x18\x0b\x20\x01(\x0b2\x19.ChallengeTierceStageDataR\tstageData\x12\x1c\
+    \n\tis_passed\x18\xce\x01\x20\x01(\x08R\x08isPassed\x121\n\x14finished_t\
+    arget_list\x18\xb7\x0c\x20\x03(\rR\x12finishedTargetListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

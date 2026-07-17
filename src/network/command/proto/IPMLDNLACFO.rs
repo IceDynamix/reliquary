@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IPMLDNLACFO {
     // message fields
+    // @@protoc_insertion_point(field:IPMLDNLACFO.item)
+    pub item: ::protobuf::MessageField<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
     // @@protoc_insertion_point(field:IPMLDNLACFO.PIENFNCGFMB)
     pub PIENFNCGFMB: ::protobuf::MessageField<super::AIMNHEHKIMI::AIMNHEHKIMI>,
-    // @@protoc_insertion_point(field:IPMLDNLACFO.NLFCABFPJHD)
-    pub NLFCABFPJHD: ::protobuf::MessageField<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
     // special fields
     // @@protoc_insertion_point(special_field:IPMLDNLACFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl IPMLDNLACFO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMKMEFMOJGJ::FMKMEFMOJGJ>(
+            "item",
+            |m: &IPMLDNLACFO| { &m.item },
+            |m: &mut IPMLDNLACFO| { &mut m.item },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AIMNHEHKIMI::AIMNHEHKIMI>(
             "PIENFNCGFMB",
             |m: &IPMLDNLACFO| { &m.PIENFNCGFMB },
             |m: &mut IPMLDNLACFO| { &mut m.PIENFNCGFMB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMKMEFMOJGJ::FMKMEFMOJGJ>(
-            "NLFCABFPJHD",
-            |m: &IPMLDNLACFO| { &m.NLFCABFPJHD },
-            |m: &mut IPMLDNLACFO| { &mut m.NLFCABFPJHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IPMLDNLACFO>(
             "IPMLDNLACFO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for IPMLDNLACFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIENFNCGFMB)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLFCABFPJHD)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIENFNCGFMB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for IPMLDNLACFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PIENFNCGFMB.as_ref() {
+        if let Some(v) = self.item.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.NLFCABFPJHD.as_ref() {
+        if let Some(v) = self.PIENFNCGFMB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for IPMLDNLACFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PIENFNCGFMB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.item.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if let Some(v) = self.NLFCABFPJHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.PIENFNCGFMB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for IPMLDNLACFO {
     }
 
     fn clear(&mut self) {
+        self.item.clear();
         self.PIENFNCGFMB.clear();
-        self.NLFCABFPJHD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IPMLDNLACFO {
         static instance: IPMLDNLACFO = IPMLDNLACFO {
+            item: ::protobuf::MessageField::none(),
             PIENFNCGFMB: ::protobuf::MessageField::none(),
-            NLFCABFPJHD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for IPMLDNLACFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IPMLDNLACFO.proto\x1a\x11AIMNHEHKIMI.proto\x1a\x11FMKMEFMOJGJ.prot\
-    o\"m\n\x0bIPMLDNLACFO\x12.\n\x0bPIENFNCGFMB\x18\x02\x20\x01(\x0b2\x0c.AI\
-    MNHEHKIMIR\x0bPIENFNCGFMB\x12.\n\x0bNLFCABFPJHD\x18\x04\x20\x01(\x0b2\
-    \x0c.FMKMEFMOJGJR\x0bNLFCABFPJHDb\x06proto3\
+    o\"_\n\x0bIPMLDNLACFO\x12\x20\n\x04item\x18\x05\x20\x01(\x0b2\x0c.FMKMEF\
+    MOJGJR\x04item\x12.\n\x0bPIENFNCGFMB\x18\x0c\x20\x01(\x0b2\x0c.AIMNHEHKI\
+    MIR\x0bPIENFNCGFMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

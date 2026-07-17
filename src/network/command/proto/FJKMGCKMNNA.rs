@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FJKMGCKMNNA {
     // message fields
-    // @@protoc_insertion_point(field:FJKMGCKMNNA.NFMKOFNEKLA)
-    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::MOHNIMLCODA::MOHNIMLCODA>,
+    // @@protoc_insertion_point(field:FJKMGCKMNNA.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::MOHNIMLCODA::MOHNIMLCODA>,
     // @@protoc_insertion_point(field:FJKMGCKMNNA.BNEFLBPCPOI)
     pub BNEFLBPCPOI: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FJKMGCKMNNA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFMKOFNEKLA",
-            |m: &FJKMGCKMNNA| { &m.NFMKOFNEKLA },
-            |m: &mut FJKMGCKMNNA| { &mut m.NFMKOFNEKLA },
+            "source_type",
+            |m: &FJKMGCKMNNA| { &m.source_type },
+            |m: &mut FJKMGCKMNNA| { &mut m.source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BNEFLBPCPOI",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FJKMGCKMNNA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
+                8 => {
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
-                32 => {
+                24 => {
                     self.BNEFLBPCPOI = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FJKMGCKMNNA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.NFMKOFNEKLA.value());
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.source_type.value());
         }
         if self.BNEFLBPCPOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BNEFLBPCPOI);
+            my_size += ::protobuf::rt::uint32_size(3, self.BNEFLBPCPOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FJKMGCKMNNA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         if self.BNEFLBPCPOI != 0 {
-            os.write_uint32(4, self.BNEFLBPCPOI)?;
+            os.write_uint32(3, self.BNEFLBPCPOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FJKMGCKMNNA {
     }
 
     fn clear(&mut self) {
-        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ);
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ);
         self.BNEFLBPCPOI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FJKMGCKMNNA {
         static instance: FJKMGCKMNNA = FJKMGCKMNNA {
-            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             BNEFLBPCPOI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FJKMGCKMNNA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FJKMGCKMNNA.proto\x1a\x11MOHNIMLCODA.proto\"_\n\x0bFJKMGCKMNNA\x12\
-    .\n\x0bNFMKOFNEKLA\x18\x05\x20\x01(\x0e2\x0c.MOHNIMLCODAR\x0bNFMKOFNEKLA\
-    \x12\x20\n\x0bBNEFLBPCPOI\x18\x04\x20\x01(\rR\x0bBNEFLBPCPOIb\x06proto3\
+    \n\x11FJKMGCKMNNA.proto\x1a\x11MOHNIMLCODA.proto\"^\n\x0bFJKMGCKMNNA\x12\
+    -\n\x0bsource_type\x18\x01\x20\x01(\x0e2\x0c.MOHNIMLCODAR\nsourceType\
+    \x12\x20\n\x0bBNEFLBPCPOI\x18\x03\x20\x01(\rR\x0bBNEFLBPCPOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

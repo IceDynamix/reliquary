@@ -93,16 +93,16 @@ impl ::protobuf::Message for MazePropState {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
                 },
-                64 => {
+                40 => {
                     self.config_id = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.state = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -122,13 +122,13 @@ impl ::protobuf::Message for MazePropState {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.config_id);
         }
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.state);
+            my_size += ::protobuf::rt::uint32_size(7, self.state);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for MazePropState {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.config_id != 0 {
-            os.write_uint32(8, self.config_id)?;
+            os.write_uint32(5, self.config_id)?;
         }
         if self.state != 0 {
-            os.write_uint32(5, self.state)?;
+            os.write_uint32(7, self.state)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
+            os.write_uint32(13, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,9 +203,9 @@ impl ::protobuf::reflect::ProtobufValue for MazePropState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13MazePropState.proto\x1a\x13PropExtraInfo.proto\"\x8c\x01\n\rMazePr\
-    opState\x12-\n\nextra_info\x18\x06\x20\x01(\x0b2\x0e.PropExtraInfoR\text\
-    raInfo\x12\x1b\n\tconfig_id\x18\x08\x20\x01(\rR\x08configId\x12\x14\n\
-    \x05state\x18\x05\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\t\x20\
+    opState\x12-\n\nextra_info\x18\x01\x20\x01(\x0b2\x0e.PropExtraInfoR\text\
+    raInfo\x12\x1b\n\tconfig_id\x18\x05\x20\x01(\rR\x08configId\x12\x14\n\
+    \x05state\x18\x07\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\r\x20\
     \x01(\rR\x07groupIdb\x06proto3\
 ";
 

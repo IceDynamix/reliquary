@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeTeamSlotCsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeTeamSlotCsCsReq.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:UpgradeTeamSlotCsCsReq.JIGOOAEFDPP)
     pub JIGOOAEFDPP: u32,
+    // @@protoc_insertion_point(field:UpgradeTeamSlotCsCsReq.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpgradeTeamSlotCsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl UpgradeTeamSlotCsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &UpgradeTeamSlotCsCsReq| { &m.level },
-            |m: &mut UpgradeTeamSlotCsCsReq| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JIGOOAEFDPP",
             |m: &UpgradeTeamSlotCsCsReq| { &m.JIGOOAEFDPP },
             |m: &mut UpgradeTeamSlotCsCsReq| { &mut m.JIGOOAEFDPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &UpgradeTeamSlotCsCsReq| { &m.level },
+            |m: &mut UpgradeTeamSlotCsCsReq| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpgradeTeamSlotCsCsReq>(
             "UpgradeTeamSlotCsCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for UpgradeTeamSlotCsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                64 => {
+                    self.JIGOOAEFDPP = is.read_uint32()?;
+                },
                 104 => {
                     self.level = is.read_uint32()?;
-                },
-                56 => {
-                    self.JIGOOAEFDPP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for UpgradeTeamSlotCsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JIGOOAEFDPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JIGOOAEFDPP);
+        }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
-        if self.JIGOOAEFDPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JIGOOAEFDPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for UpgradeTeamSlotCsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.JIGOOAEFDPP != 0 {
+            os.write_uint32(8, self.JIGOOAEFDPP)?;
+        }
         if self.level != 0 {
             os.write_uint32(13, self.level)?;
-        }
-        if self.JIGOOAEFDPP != 0 {
-            os.write_uint32(7, self.JIGOOAEFDPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for UpgradeTeamSlotCsCsReq {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.JIGOOAEFDPP = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeTeamSlotCsCsReq {
         static instance: UpgradeTeamSlotCsCsReq = UpgradeTeamSlotCsCsReq {
-            level: 0,
             JIGOOAEFDPP: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeTeamSlotCsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cUpgradeTeamSlotCsCsReq.proto\"P\n\x16UpgradeTeamSlotCsCsReq\x12\
-    \x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x20\n\x0bJIGOOAEFDPP\x18\
-    \x07\x20\x01(\rR\x0bJIGOOAEFDPPb\x06proto3\
+    \x20\n\x0bJIGOOAEFDPP\x18\x08\x20\x01(\rR\x0bJIGOOAEFDPP\x12\x14\n\x05le\
+    vel\x18\r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

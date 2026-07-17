@@ -72,7 +72,7 @@ impl ::protobuf::Message for RelicBoxRegularScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AHNPPGMFOKN)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RelicBoxRegularScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.AHNPPGMFOKN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RelicBoxRegularScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRelicBoxRegularScNotify.proto\x1a\x11DPJCBHKGFOK.proto\"I\n\x17Rel\
-    icBoxRegularScNotify\x12.\n\x0bAHNPPGMFOKN\x18\x0c\x20\x01(\x0b2\x0c.DPJ\
+    icBoxRegularScNotify\x12.\n\x0bAHNPPGMFOKN\x18\x0e\x20\x01(\x0b2\x0c.DPJ\
     CBHKGFOKR\x0bAHNPPGMFOKNb\x06proto3\
 ";
 

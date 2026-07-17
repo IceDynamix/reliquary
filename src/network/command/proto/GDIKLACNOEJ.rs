@@ -72,7 +72,7 @@ impl ::protobuf::Message for GDIKLACNOEJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACCCINPPINC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GDIKLACNOEJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ACCCINPPINC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GDIKLACNOEJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GDIKLACNOEJ.proto\x1a\x11OKCCLEEPELM.proto\"=\n\x0bGDIKLACNOEJ\x12\
-    .\n\x0bACCCINPPINC\x18\x02\x20\x01(\x0b2\x0c.OKCCLEEPELMR\x0bACCCINPPINC\
+    .\n\x0bACCCINPPINC\x18\x04\x20\x01(\x0b2\x0c.OKCCLEEPELMR\x0bACCCINPPINC\
     b\x06proto3\
 ";
 

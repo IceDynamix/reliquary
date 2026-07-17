@@ -30,12 +30,12 @@ pub struct GANFMBPEJPF {
     // message fields
     // @@protoc_insertion_point(field:GANFMBPEJPF.JFHKJOGEOND)
     pub JFHKJOGEOND: ::std::vec::Vec<super::DIKBPKAKENO::DIKBPKAKENO>,
-    // @@protoc_insertion_point(field:GANFMBPEJPF.DPIKOCFILGP)
-    pub DPIKOCFILGP: ::std::vec::Vec<super::NPAJHGDEIDJ::NPAJHGDEIDJ>,
-    // @@protoc_insertion_point(field:GANFMBPEJPF.PAKECMNPEJJ)
-    pub PAKECMNPEJJ: ::std::vec::Vec<super::DGKLPPLJBNB::DGKLPPLJBNB>,
     // @@protoc_insertion_point(field:GANFMBPEJPF.CEPDOBEIEFG)
     pub CEPDOBEIEFG: ::std::vec::Vec<super::JMJEIBGACMD::JMJEIBGACMD>,
+    // @@protoc_insertion_point(field:GANFMBPEJPF.PAKECMNPEJJ)
+    pub PAKECMNPEJJ: ::std::vec::Vec<super::DGKLPPLJBNB::DGKLPPLJBNB>,
+    // @@protoc_insertion_point(field:GANFMBPEJPF.DPIKOCFILGP)
+    pub DPIKOCFILGP: ::std::vec::Vec<super::NPAJHGDEIDJ::NPAJHGDEIDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GANFMBPEJPF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl GANFMBPEJPF {
             |m: &mut GANFMBPEJPF| { &mut m.JFHKJOGEOND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DPIKOCFILGP",
-            |m: &GANFMBPEJPF| { &m.DPIKOCFILGP },
-            |m: &mut GANFMBPEJPF| { &mut m.DPIKOCFILGP },
+            "CEPDOBEIEFG",
+            |m: &GANFMBPEJPF| { &m.CEPDOBEIEFG },
+            |m: &mut GANFMBPEJPF| { &mut m.CEPDOBEIEFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PAKECMNPEJJ",
@@ -71,9 +71,9 @@ impl GANFMBPEJPF {
             |m: &mut GANFMBPEJPF| { &mut m.PAKECMNPEJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEPDOBEIEFG",
-            |m: &GANFMBPEJPF| { &m.CEPDOBEIEFG },
-            |m: &mut GANFMBPEJPF| { &mut m.CEPDOBEIEFG },
+            "DPIKOCFILGP",
+            |m: &GANFMBPEJPF| { &m.DPIKOCFILGP },
+            |m: &mut GANFMBPEJPF| { &mut m.DPIKOCFILGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GANFMBPEJPF>(
             "GANFMBPEJPF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GANFMBPEJPF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.JFHKJOGEOND.push(is.read_message()?);
                 },
                 50 => {
-                    self.DPIKOCFILGP.push(is.read_message()?);
+                    self.CEPDOBEIEFG.push(is.read_message()?);
                 },
-                66 => {
+                74 => {
                     self.PAKECMNPEJJ.push(is.read_message()?);
                 },
-                106 => {
-                    self.CEPDOBEIEFG.push(is.read_message()?);
+                122 => {
+                    self.DPIKOCFILGP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,7 +121,7 @@ impl ::protobuf::Message for GANFMBPEJPF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.DPIKOCFILGP {
+        for value in &self.CEPDOBEIEFG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -129,7 +129,7 @@ impl ::protobuf::Message for GANFMBPEJPF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CEPDOBEIEFG {
+        for value in &self.DPIKOCFILGP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GANFMBPEJPF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.JFHKJOGEOND {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        for v in &self.DPIKOCFILGP {
+        for v in &self.CEPDOBEIEFG {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.PAKECMNPEJJ {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        for v in &self.CEPDOBEIEFG {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.DPIKOCFILGP {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +169,18 @@ impl ::protobuf::Message for GANFMBPEJPF {
 
     fn clear(&mut self) {
         self.JFHKJOGEOND.clear();
-        self.DPIKOCFILGP.clear();
-        self.PAKECMNPEJJ.clear();
         self.CEPDOBEIEFG.clear();
+        self.PAKECMNPEJJ.clear();
+        self.DPIKOCFILGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GANFMBPEJPF {
         static instance: GANFMBPEJPF = GANFMBPEJPF {
             JFHKJOGEOND: ::std::vec::Vec::new(),
-            DPIKOCFILGP: ::std::vec::Vec::new(),
-            PAKECMNPEJJ: ::std::vec::Vec::new(),
             CEPDOBEIEFG: ::std::vec::Vec::new(),
+            PAKECMNPEJJ: ::std::vec::Vec::new(),
+            DPIKOCFILGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -207,11 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for GANFMBPEJPF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GANFMBPEJPF.proto\x1a\x11DGKLPPLJBNB.proto\x1a\x11DIKBPKAKENO.prot\
     o\x1a\x11JMJEIBGACMD.proto\x1a\x11NPAJHGDEIDJ.proto\"\xcd\x01\n\x0bGANFM\
-    BPEJPF\x12.\n\x0bJFHKJOGEOND\x18\x02\x20\x03(\x0b2\x0c.DIKBPKAKENOR\x0bJ\
-    FHKJOGEOND\x12.\n\x0bDPIKOCFILGP\x18\x06\x20\x03(\x0b2\x0c.NPAJHGDEIDJR\
-    \x0bDPIKOCFILGP\x12.\n\x0bPAKECMNPEJJ\x18\x08\x20\x03(\x0b2\x0c.DGKLPPLJ\
-    BNBR\x0bPAKECMNPEJJ\x12.\n\x0bCEPDOBEIEFG\x18\r\x20\x03(\x0b2\x0c.JMJEIB\
-    GACMDR\x0bCEPDOBEIEFGb\x06proto3\
+    BPEJPF\x12.\n\x0bJFHKJOGEOND\x18\x01\x20\x03(\x0b2\x0c.DIKBPKAKENOR\x0bJ\
+    FHKJOGEOND\x12.\n\x0bCEPDOBEIEFG\x18\x06\x20\x03(\x0b2\x0c.JMJEIBGACMDR\
+    \x0bCEPDOBEIEFG\x12.\n\x0bPAKECMNPEJJ\x18\t\x20\x03(\x0b2\x0c.DGKLPPLJBN\
+    BR\x0bPAKECMNPEJJ\x12.\n\x0bDPIKOCFILGP\x18\x0f\x20\x03(\x0b2\x0c.NPAJHG\
+    DEIDJR\x0bDPIKOCFILGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

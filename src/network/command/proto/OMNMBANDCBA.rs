@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMNMBANDCBA {
     // message fields
+    // @@protoc_insertion_point(field:OMNMBANDCBA.LIAGGDDILGO)
+    pub LIAGGDDILGO: i32,
     // @@protoc_insertion_point(field:OMNMBANDCBA.PILABDDEKII)
     pub PILABDDEKII: ::std::collections::HashMap<u32, bool>,
     // @@protoc_insertion_point(field:OMNMBANDCBA.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OMNMBANDCBA.JFIGNBBLCIM)
     pub JFIGNBBLCIM: u32,
-    // @@protoc_insertion_point(field:OMNMBANDCBA.LIAGGDDILGO)
-    pub LIAGGDDILGO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:OMNMBANDCBA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,11 @@ impl OMNMBANDCBA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIAGGDDILGO",
+            |m: &OMNMBANDCBA| { &m.LIAGGDDILGO },
+            |m: &mut OMNMBANDCBA| { &mut m.LIAGGDDILGO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "PILABDDEKII",
             |m: &OMNMBANDCBA| { &m.PILABDDEKII },
@@ -69,11 +74,6 @@ impl OMNMBANDCBA {
             "JFIGNBBLCIM",
             |m: &OMNMBANDCBA| { &m.JFIGNBBLCIM },
             |m: &mut OMNMBANDCBA| { &mut m.JFIGNBBLCIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIAGGDDILGO",
-            |m: &OMNMBANDCBA| { &m.LIAGGDDILGO },
-            |m: &mut OMNMBANDCBA| { &mut m.LIAGGDDILGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMNMBANDCBA>(
             "OMNMBANDCBA",
@@ -93,7 +93,10 @@ impl ::protobuf::Message for OMNMBANDCBA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                16 => {
+                    self.LIAGGDDILGO = is.read_int32()?;
+                },
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,14 +111,11 @@ impl ::protobuf::Message for OMNMBANDCBA {
                     is.pop_limit(old_limit);
                     self.PILABDDEKII.insert(key, value);
                 },
-                18 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                112 => {
+                120 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
-                },
-                96 => {
-                    self.LIAGGDDILGO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,6 +129,9 @@ impl ::protobuf::Message for OMNMBANDCBA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LIAGGDDILGO != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.LIAGGDDILGO);
+        }
         for (k, v) in &self.PILABDDEKII {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -140,10 +143,7 @@ impl ::protobuf::Message for OMNMBANDCBA {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JFIGNBBLCIM);
-        }
-        if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::uint32_size(15, self.JFIGNBBLCIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,23 +151,23 @@ impl ::protobuf::Message for OMNMBANDCBA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LIAGGDDILGO != 0 {
+            os.write_int32(2, self.LIAGGDDILGO)?;
+        }
         for (k, v) in &self.PILABDDEKII {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(14, self.JFIGNBBLCIM)?;
-        }
-        if self.LIAGGDDILGO != 0 {
-            os.write_int32(12, self.LIAGGDDILGO)?;
+            os.write_uint32(15, self.JFIGNBBLCIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::Message for OMNMBANDCBA {
     }
 
     fn clear(&mut self) {
+        self.LIAGGDDILGO = 0;
         self.PILABDDEKII.clear();
         self.cost_data.clear();
         self.JFIGNBBLCIM = 0;
-        self.LIAGGDDILGO = 0;
         self.special_fields.clear();
     }
 
@@ -218,10 +218,10 @@ impl ::protobuf::reflect::ProtobufValue for OMNMBANDCBA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMNMBANDCBA.proto\x1a\x12ItemCostData.proto\"\xfe\x01\n\x0bOMNMBAN\
-    DCBA\x12?\n\x0bPILABDDEKII\x18\x06\x20\x03(\x0b2\x1d.OMNMBANDCBA.PILABDD\
-    EKIIEntryR\x0bPILABDDEKII\x12*\n\tcost_data\x18\x02\x20\x01(\x0b2\r.Item\
-    CostDataR\x08costData\x12\x20\n\x0bJFIGNBBLCIM\x18\x0e\x20\x01(\rR\x0bJF\
-    IGNBBLCIM\x12\x20\n\x0bLIAGGDDILGO\x18\x0c\x20\x01(\x05R\x0bLIAGGDDILGO\
+    DCBA\x12\x20\n\x0bLIAGGDDILGO\x18\x02\x20\x01(\x05R\x0bLIAGGDDILGO\x12?\
+    \n\x0bPILABDDEKII\x18\x03\x20\x03(\x0b2\x1d.OMNMBANDCBA.PILABDDEKIIEntry\
+    R\x0bPILABDDEKII\x12*\n\tcost_data\x18\n\x20\x01(\x0b2\r.ItemCostDataR\
+    \x08costData\x12\x20\n\x0bJFIGNBBLCIM\x18\x0f\x20\x01(\rR\x0bJFIGNBBLCIM\
     \x1a>\n\x10PILABDDEKIIEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
 ";

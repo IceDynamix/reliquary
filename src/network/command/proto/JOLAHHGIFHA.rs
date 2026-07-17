@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JOLAHHGIFHA {
     // message fields
-    // @@protoc_insertion_point(field:JOLAHHGIFHA.rot_index)
-    pub rot_index: ::protobuf::MessageField<super::Vector::Vector>,
-    // @@protoc_insertion_point(field:JOLAHHGIFHA.pos_index)
-    pub pos_index: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:JOLAHHGIFHA.pos)
+    pub pos: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:JOLAHHGIFHA.rot)
+    pub rot: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:JOLAHHGIFHA.ICNANKMDJIC)
+    pub ICNANKMDJIC: f32,
     // @@protoc_insertion_point(field:JOLAHHGIFHA.GHMKFMBDKNE)
     pub GHMKFMBDKNE: ::protobuf::MessageField<super::Vector::Vector>,
-    // @@protoc_insertion_point(field:JOLAHHGIFHA.MFCHJFPOCIA)
-    pub MFCHJFPOCIA: i64,
-    // @@protoc_insertion_point(field:JOLAHHGIFHA.MGIOLDGHPMA)
-    pub MGIOLDGHPMA: bool,
     // @@protoc_insertion_point(field:JOLAHHGIFHA.GHEMGLKGKLC)
     pub GHEMGLKGKLC: f32,
     // @@protoc_insertion_point(field:JOLAHHGIFHA.FPHBEHJJBIA)
     pub FPHBEHJJBIA: u32,
-    // @@protoc_insertion_point(field:JOLAHHGIFHA.ICNANKMDJIC)
-    pub ICNANKMDJIC: f32,
+    // @@protoc_insertion_point(field:JOLAHHGIFHA.MGIOLDGHPMA)
+    pub MGIOLDGHPMA: bool,
+    // @@protoc_insertion_point(field:JOLAHHGIFHA.time_stamp)
+    pub time_stamp: i64,
     // special fields
     // @@protoc_insertion_point(special_field:JOLAHHGIFHA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,29 +64,24 @@ impl JOLAHHGIFHA {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "rot_index",
-            |m: &JOLAHHGIFHA| { &m.rot_index },
-            |m: &mut JOLAHHGIFHA| { &mut m.rot_index },
+            "pos",
+            |m: &JOLAHHGIFHA| { &m.pos },
+            |m: &mut JOLAHHGIFHA| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "pos_index",
-            |m: &JOLAHHGIFHA| { &m.pos_index },
-            |m: &mut JOLAHHGIFHA| { &mut m.pos_index },
+            "rot",
+            |m: &JOLAHHGIFHA| { &m.rot },
+            |m: &mut JOLAHHGIFHA| { &mut m.rot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ICNANKMDJIC",
+            |m: &JOLAHHGIFHA| { &m.ICNANKMDJIC },
+            |m: &mut JOLAHHGIFHA| { &mut m.ICNANKMDJIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
             "GHMKFMBDKNE",
             |m: &JOLAHHGIFHA| { &m.GHMKFMBDKNE },
             |m: &mut JOLAHHGIFHA| { &mut m.GHMKFMBDKNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFCHJFPOCIA",
-            |m: &JOLAHHGIFHA| { &m.MFCHJFPOCIA },
-            |m: &mut JOLAHHGIFHA| { &mut m.MFCHJFPOCIA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MGIOLDGHPMA",
-            |m: &JOLAHHGIFHA| { &m.MGIOLDGHPMA },
-            |m: &mut JOLAHHGIFHA| { &mut m.MGIOLDGHPMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHEMGLKGKLC",
@@ -99,9 +94,14 @@ impl JOLAHHGIFHA {
             |m: &mut JOLAHHGIFHA| { &mut m.FPHBEHJJBIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICNANKMDJIC",
-            |m: &JOLAHHGIFHA| { &m.ICNANKMDJIC },
-            |m: &mut JOLAHHGIFHA| { &mut m.ICNANKMDJIC },
+            "MGIOLDGHPMA",
+            |m: &JOLAHHGIFHA| { &m.MGIOLDGHPMA },
+            |m: &mut JOLAHHGIFHA| { &mut m.MGIOLDGHPMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "time_stamp",
+            |m: &JOLAHHGIFHA| { &m.time_stamp },
+            |m: &mut JOLAHHGIFHA| { &mut m.time_stamp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JOLAHHGIFHA>(
             "JOLAHHGIFHA",
@@ -121,20 +121,17 @@ impl ::protobuf::Message for JOLAHHGIFHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rot_index)?;
-                },
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos_index)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rot)?;
+                },
+                29 => {
+                    self.ICNANKMDJIC = is.read_float()?;
                 },
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHMKFMBDKNE)?;
-                },
-                64 => {
-                    self.MFCHJFPOCIA = is.read_int64()?;
-                },
-                56 => {
-                    self.MGIOLDGHPMA = is.read_bool()?;
                 },
                 45 => {
                     self.GHEMGLKGKLC = is.read_float()?;
@@ -142,8 +139,11 @@ impl ::protobuf::Message for JOLAHHGIFHA {
                 48 => {
                     self.FPHBEHJJBIA = is.read_uint32()?;
                 },
-                29 => {
-                    self.ICNANKMDJIC = is.read_float()?;
+                56 => {
+                    self.MGIOLDGHPMA = is.read_bool()?;
+                },
+                64 => {
+                    self.time_stamp = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,23 +157,20 @@ impl ::protobuf::Message for JOLAHHGIFHA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.rot_index.as_ref() {
+        if let Some(v) = self.pos.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.pos_index.as_ref() {
+        if let Some(v) = self.rot.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ICNANKMDJIC != 0. {
+            my_size += 1 + 4;
         }
         if let Some(v) = self.GHMKFMBDKNE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.MFCHJFPOCIA != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.MFCHJFPOCIA);
-        }
-        if self.MGIOLDGHPMA != false {
-            my_size += 1 + 1;
         }
         if self.GHEMGLKGKLC != 0. {
             my_size += 1 + 4;
@@ -181,8 +178,11 @@ impl ::protobuf::Message for JOLAHHGIFHA {
         if self.FPHBEHJJBIA != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.FPHBEHJJBIA);
         }
-        if self.ICNANKMDJIC != 0. {
-            my_size += 1 + 4;
+        if self.MGIOLDGHPMA != false {
+            my_size += 1 + 1;
+        }
+        if self.time_stamp != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.time_stamp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,20 +190,17 @@ impl ::protobuf::Message for JOLAHHGIFHA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.rot_index.as_ref() {
+        if let Some(v) = self.pos.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.rot.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.pos_index.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.ICNANKMDJIC != 0. {
+            os.write_float(3, self.ICNANKMDJIC)?;
         }
         if let Some(v) = self.GHMKFMBDKNE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.MFCHJFPOCIA != 0 {
-            os.write_int64(8, self.MFCHJFPOCIA)?;
-        }
-        if self.MGIOLDGHPMA != false {
-            os.write_bool(7, self.MGIOLDGHPMA)?;
         }
         if self.GHEMGLKGKLC != 0. {
             os.write_float(5, self.GHEMGLKGKLC)?;
@@ -211,8 +208,11 @@ impl ::protobuf::Message for JOLAHHGIFHA {
         if self.FPHBEHJJBIA != 0 {
             os.write_uint32(6, self.FPHBEHJJBIA)?;
         }
-        if self.ICNANKMDJIC != 0. {
-            os.write_float(3, self.ICNANKMDJIC)?;
+        if self.MGIOLDGHPMA != false {
+            os.write_bool(7, self.MGIOLDGHPMA)?;
+        }
+        if self.time_stamp != 0 {
+            os.write_int64(8, self.time_stamp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -231,27 +231,27 @@ impl ::protobuf::Message for JOLAHHGIFHA {
     }
 
     fn clear(&mut self) {
-        self.rot_index.clear();
-        self.pos_index.clear();
+        self.pos.clear();
+        self.rot.clear();
+        self.ICNANKMDJIC = 0.;
         self.GHMKFMBDKNE.clear();
-        self.MFCHJFPOCIA = 0;
-        self.MGIOLDGHPMA = false;
         self.GHEMGLKGKLC = 0.;
         self.FPHBEHJJBIA = 0;
-        self.ICNANKMDJIC = 0.;
+        self.MGIOLDGHPMA = false;
+        self.time_stamp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JOLAHHGIFHA {
         static instance: JOLAHHGIFHA = JOLAHHGIFHA {
-            rot_index: ::protobuf::MessageField::none(),
-            pos_index: ::protobuf::MessageField::none(),
+            pos: ::protobuf::MessageField::none(),
+            rot: ::protobuf::MessageField::none(),
+            ICNANKMDJIC: 0.,
             GHMKFMBDKNE: ::protobuf::MessageField::none(),
-            MFCHJFPOCIA: 0,
-            MGIOLDGHPMA: false,
             GHEMGLKGKLC: 0.,
             FPHBEHJJBIA: 0,
-            ICNANKMDJIC: 0.,
+            MGIOLDGHPMA: false,
+            time_stamp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,15 +276,15 @@ impl ::protobuf::reflect::ProtobufValue for JOLAHHGIFHA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JOLAHHGIFHA.proto\x1a\x0cVector.proto\"\xae\x02\n\x0bJOLAHHGIFHA\
-    \x12$\n\trot_index\x18\x02\x20\x01(\x0b2\x07.VectorR\x08rotIndex\x12$\n\
-    \tpos_index\x18\x01\x20\x01(\x0b2\x07.VectorR\x08posIndex\x12)\n\x0bGHMK\
-    FMBDKNE\x18\x04\x20\x01(\x0b2\x07.VectorR\x0bGHMKFMBDKNE\x12\x20\n\x0bMF\
-    CHJFPOCIA\x18\x08\x20\x01(\x03R\x0bMFCHJFPOCIA\x12\x20\n\x0bMGIOLDGHPMA\
-    \x18\x07\x20\x01(\x08R\x0bMGIOLDGHPMA\x12\x20\n\x0bGHEMGLKGKLC\x18\x05\
+    \n\x11JOLAHHGIFHA.proto\x1a\x0cVector.proto\"\x95\x02\n\x0bJOLAHHGIFHA\
+    \x12\x19\n\x03pos\x18\x01\x20\x01(\x0b2\x07.VectorR\x03pos\x12\x19\n\x03\
+    rot\x18\x02\x20\x01(\x0b2\x07.VectorR\x03rot\x12\x20\n\x0bICNANKMDJIC\
+    \x18\x03\x20\x01(\x02R\x0bICNANKMDJIC\x12)\n\x0bGHMKFMBDKNE\x18\x04\x20\
+    \x01(\x0b2\x07.VectorR\x0bGHMKFMBDKNE\x12\x20\n\x0bGHEMGLKGKLC\x18\x05\
     \x20\x01(\x02R\x0bGHEMGLKGKLC\x12\x20\n\x0bFPHBEHJJBIA\x18\x06\x20\x01(\
-    \rR\x0bFPHBEHJJBIA\x12\x20\n\x0bICNANKMDJIC\x18\x03\x20\x01(\x02R\x0bICN\
-    ANKMDJICb\x06proto3\
+    \rR\x0bFPHBEHJJBIA\x12\x20\n\x0bMGIOLDGHPMA\x18\x07\x20\x01(\x08R\x0bMGI\
+    OLDGHPMA\x12\x1d\n\ntime_stamp\x18\x08\x20\x01(\x03R\ttimeStampb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

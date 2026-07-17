@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierAddNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierAddNotify.ILIIOLJMKME)
-    pub ILIIOLJMKME: ::protobuf::MessageField<super::BMCNDLNONMO::BMCNDLNONMO>,
+    // @@protoc_insertion_point(field:RogueModifierAddNotify.modifier)
+    pub modifier: ::protobuf::MessageField<super::BMCNDLNONMO::BMCNDLNONMO>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierAddNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueModifierAddNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BMCNDLNONMO::BMCNDLNONMO>(
-            "ILIIOLJMKME",
-            |m: &RogueModifierAddNotify| { &m.ILIIOLJMKME },
-            |m: &mut RogueModifierAddNotify| { &mut m.ILIIOLJMKME },
+            "modifier",
+            |m: &RogueModifierAddNotify| { &m.modifier },
+            |m: &mut RogueModifierAddNotify| { &mut m.modifier },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierAddNotify>(
             "RogueModifierAddNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILIIOLJMKME)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.modifier)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ILIIOLJMKME.as_ref() {
+        if let Some(v) = self.modifier.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ILIIOLJMKME.as_ref() {
+        if let Some(v) = self.modifier.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueModifierAddNotify {
     }
 
     fn clear(&mut self) {
-        self.ILIIOLJMKME.clear();
+        self.modifier.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierAddNotify {
         static instance: RogueModifierAddNotify = RogueModifierAddNotify {
-            ILIIOLJMKME: ::protobuf::MessageField::none(),
+            modifier: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierAddNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cRogueModifierAddNotify.proto\x1a\x11BMCNDLNONMO.proto\"H\n\x16Rogu\
-    eModifierAddNotify\x12.\n\x0bILIIOLJMKME\x18\x0e\x20\x01(\x0b2\x0c.BMCND\
-    LNONMOR\x0bILIIOLJMKMEb\x06proto3\
+    \n\x1cRogueModifierAddNotify.proto\x1a\x11BMCNDLNONMO.proto\"B\n\x16Rogu\
+    eModifierAddNotify\x12(\n\x08modifier\x18\x0e\x20\x01(\x0b2\x0c.BMCNDLNO\
+    NMOR\x08modifierb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

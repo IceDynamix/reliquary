@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TryDownLoadReplay {
     // message fields
-    // @@protoc_insertion_point(field:TryDownLoadReplay.replay_name)
-    pub replay_name: ::std::string::String,
-    // @@protoc_insertion_point(field:TryDownLoadReplay.try_down_load_replay)
-    pub try_down_load_replay: ::protobuf::MessageField<super::ReplayInfo::ReplayInfo>,
+    // @@protoc_insertion_point(field:TryDownLoadReplay.battle_replay_key)
+    pub battle_replay_key: ::std::string::String,
+    // @@protoc_insertion_point(field:TryDownLoadReplay.replay_info)
+    pub replay_info: ::protobuf::MessageField<super::ReplayInfo::ReplayInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:TryDownLoadReplay.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TryDownLoadReplay {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "replay_name",
-            |m: &TryDownLoadReplay| { &m.replay_name },
-            |m: &mut TryDownLoadReplay| { &mut m.replay_name },
+            "battle_replay_key",
+            |m: &TryDownLoadReplay| { &m.battle_replay_key },
+            |m: &mut TryDownLoadReplay| { &mut m.battle_replay_key },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ReplayInfo::ReplayInfo>(
-            "try_down_load_replay",
-            |m: &TryDownLoadReplay| { &m.try_down_load_replay },
-            |m: &mut TryDownLoadReplay| { &mut m.try_down_load_replay },
+            "replay_info",
+            |m: &TryDownLoadReplay| { &m.replay_info },
+            |m: &mut TryDownLoadReplay| { &mut m.replay_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TryDownLoadReplay>(
             "TryDownLoadReplay",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for TryDownLoadReplay {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.replay_name = is.read_string()?;
+                    self.battle_replay_key = is.read_string()?;
                 },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.try_down_load_replay)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.replay_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for TryDownLoadReplay {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.replay_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.replay_name);
+        if !self.battle_replay_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.battle_replay_key);
         }
-        if let Some(v) = self.try_down_load_replay.as_ref() {
+        if let Some(v) = self.replay_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TryDownLoadReplay {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.replay_name.is_empty() {
-            os.write_string(1, &self.replay_name)?;
+        if !self.battle_replay_key.is_empty() {
+            os.write_string(1, &self.battle_replay_key)?;
         }
-        if let Some(v) = self.try_down_load_replay.as_ref() {
+        if let Some(v) = self.replay_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -133,15 +133,15 @@ impl ::protobuf::Message for TryDownLoadReplay {
     }
 
     fn clear(&mut self) {
-        self.replay_name.clear();
-        self.try_down_load_replay.clear();
+        self.battle_replay_key.clear();
+        self.replay_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TryDownLoadReplay {
         static instance: TryDownLoadReplay = TryDownLoadReplay {
-            replay_name: ::std::string::String::new(),
-            try_down_load_replay: ::protobuf::MessageField::none(),
+            battle_replay_key: ::std::string::String::new(),
+            replay_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TryDownLoadReplay {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TryDownLoadReplay.proto\x1a\x10ReplayInfo.proto\"r\n\x11TryDownLoa\
-    dReplay\x12\x1f\n\x0breplay_name\x18\x01\x20\x01(\tR\nreplayName\x12<\n\
-    \x14try_down_load_replay\x18\x02\x20\x01(\x0b2\x0b.ReplayInfoR\x11tryDow\
-    nLoadReplayb\x06proto3\
+    \n\x17TryDownLoadReplay.proto\x1a\x10ReplayInfo.proto\"m\n\x11TryDownLoa\
+    dReplay\x12*\n\x11battle_replay_key\x18\x01\x20\x01(\tR\x0fbattleReplayK\
+    ey\x12,\n\x0breplay_info\x18\x02\x20\x01(\x0b2\x0b.ReplayInfoR\nreplayIn\
+    fob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

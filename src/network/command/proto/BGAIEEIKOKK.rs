@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BGAIEEIKOKK {
     // message fields
-    // @@protoc_insertion_point(field:BGAIEEIKOKK.record_score)
-    pub record_score: u32,
+    // @@protoc_insertion_point(field:BGAIEEIKOKK.total_score)
+    pub total_score: u32,
+    // @@protoc_insertion_point(field:BGAIEEIKOKK.star_num)
+    pub star_num: u32,
     // @@protoc_insertion_point(field:BGAIEEIKOKK.has_passed)
     pub has_passed: bool,
-    // @@protoc_insertion_point(field:BGAIEEIKOKK.MHIJJHMGHFN)
-    pub MHIJJHMGHFN: u32,
     // @@protoc_insertion_point(field:BGAIEEIKOKK.level_id)
     pub level_id: u32,
     // special fields
@@ -56,19 +56,19 @@ impl BGAIEEIKOKK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "record_score",
-            |m: &BGAIEEIKOKK| { &m.record_score },
-            |m: &mut BGAIEEIKOKK| { &mut m.record_score },
+            "total_score",
+            |m: &BGAIEEIKOKK| { &m.total_score },
+            |m: &mut BGAIEEIKOKK| { &mut m.total_score },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "star_num",
+            |m: &BGAIEEIKOKK| { &m.star_num },
+            |m: &mut BGAIEEIKOKK| { &mut m.star_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
             |m: &BGAIEEIKOKK| { &m.has_passed },
             |m: &mut BGAIEEIKOKK| { &mut m.has_passed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHIJJHMGHFN",
-            |m: &BGAIEEIKOKK| { &m.MHIJJHMGHFN },
-            |m: &mut BGAIEEIKOKK| { &mut m.MHIJJHMGHFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for BGAIEEIKOKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.record_score = is.read_uint32()?;
+                24 => {
+                    self.total_score = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
+                    self.star_num = is.read_uint32()?;
+                },
+                104 => {
                     self.has_passed = is.read_bool()?;
                 },
-                32 => {
-                    self.MHIJJHMGHFN = is.read_uint32()?;
-                },
-                40 => {
+                112 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for BGAIEEIKOKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.record_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.record_score);
+        if self.total_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.total_score);
+        }
+        if self.star_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.star_num);
         }
         if self.has_passed != false {
             my_size += 1 + 1;
         }
-        if self.MHIJJHMGHFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MHIJJHMGHFN);
-        }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BGAIEEIKOKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.record_score != 0 {
-            os.write_uint32(1, self.record_score)?;
+        if self.total_score != 0 {
+            os.write_uint32(3, self.total_score)?;
+        }
+        if self.star_num != 0 {
+            os.write_uint32(11, self.star_num)?;
         }
         if self.has_passed != false {
-            os.write_bool(9, self.has_passed)?;
-        }
-        if self.MHIJJHMGHFN != 0 {
-            os.write_uint32(4, self.MHIJJHMGHFN)?;
+            os.write_bool(13, self.has_passed)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(5, self.level_id)?;
+            os.write_uint32(14, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for BGAIEEIKOKK {
     }
 
     fn clear(&mut self) {
-        self.record_score = 0;
+        self.total_score = 0;
+        self.star_num = 0;
         self.has_passed = false;
-        self.MHIJJHMGHFN = 0;
         self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BGAIEEIKOKK {
         static instance: BGAIEEIKOKK = BGAIEEIKOKK {
-            record_score: 0,
+            total_score: 0,
+            star_num: 0,
             has_passed: false,
-            MHIJJHMGHFN: 0,
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for BGAIEEIKOKK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BGAIEEIKOKK.proto\"\x8c\x01\n\x0bBGAIEEIKOKK\x12!\n\x0crecord_scor\
-    e\x18\x01\x20\x01(\rR\x0brecordScore\x12\x1d\n\nhas_passed\x18\t\x20\x01\
-    (\x08R\thasPassed\x12\x20\n\x0bMHIJJHMGHFN\x18\x04\x20\x01(\rR\x0bMHIJJH\
-    MGHFN\x12\x19\n\x08level_id\x18\x05\x20\x01(\rR\x07levelIdb\x06proto3\
+    \n\x11BGAIEEIKOKK.proto\"\x83\x01\n\x0bBGAIEEIKOKK\x12\x1f\n\x0btotal_sc\
+    ore\x18\x03\x20\x01(\rR\ntotalScore\x12\x19\n\x08star_num\x18\x0b\x20\
+    \x01(\rR\x07starNum\x12\x1d\n\nhas_passed\x18\r\x20\x01(\x08R\thasPassed\
+    \x12\x19\n\x08level_id\x18\x0e\x20\x01(\rR\x07levelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

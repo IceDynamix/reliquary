@@ -32,14 +32,14 @@ pub struct JPAOIPLDKHB {
     pub BJPHDKEBOBK: ::std::vec::Vec<super::IKAHKMNCFDN::IKAHKMNCFDN>,
     // @@protoc_insertion_point(field:JPAOIPLDKHB.NLJBJMDPBGN)
     pub NLJBJMDPBGN: ::protobuf::MessageField<super::BFAKMCIJFCB::BFAKMCIJFCB>,
-    // @@protoc_insertion_point(field:JPAOIPLDKHB.HBKEPFKDAMI)
-    pub HBKEPFKDAMI: u32,
-    // @@protoc_insertion_point(field:JPAOIPLDKHB.GAEKEFEKCBD)
-    pub GAEKEFEKCBD: u32,
     // @@protoc_insertion_point(field:JPAOIPLDKHB.DBIKJPDBMOE)
     pub DBIKJPDBMOE: i64,
     // @@protoc_insertion_point(field:JPAOIPLDKHB.CMHKFNFKGOI)
     pub CMHKFNFKGOI: i64,
+    // @@protoc_insertion_point(field:JPAOIPLDKHB.HBKEPFKDAMI)
+    pub HBKEPFKDAMI: u32,
+    // @@protoc_insertion_point(field:JPAOIPLDKHB.GAEKEFEKCBD)
+    pub GAEKEFEKCBD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPAOIPLDKHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,16 +70,6 @@ impl JPAOIPLDKHB {
             |m: &mut JPAOIPLDKHB| { &mut m.NLJBJMDPBGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBKEPFKDAMI",
-            |m: &JPAOIPLDKHB| { &m.HBKEPFKDAMI },
-            |m: &mut JPAOIPLDKHB| { &mut m.HBKEPFKDAMI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAEKEFEKCBD",
-            |m: &JPAOIPLDKHB| { &m.GAEKEFEKCBD },
-            |m: &mut JPAOIPLDKHB| { &mut m.GAEKEFEKCBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBIKJPDBMOE",
             |m: &JPAOIPLDKHB| { &m.DBIKJPDBMOE },
             |m: &mut JPAOIPLDKHB| { &mut m.DBIKJPDBMOE },
@@ -88,6 +78,16 @@ impl JPAOIPLDKHB {
             "CMHKFNFKGOI",
             |m: &JPAOIPLDKHB| { &m.CMHKFNFKGOI },
             |m: &mut JPAOIPLDKHB| { &mut m.CMHKFNFKGOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBKEPFKDAMI",
+            |m: &JPAOIPLDKHB| { &m.HBKEPFKDAMI },
+            |m: &mut JPAOIPLDKHB| { &mut m.HBKEPFKDAMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAEKEFEKCBD",
+            |m: &JPAOIPLDKHB| { &m.GAEKEFEKCBD },
+            |m: &mut JPAOIPLDKHB| { &mut m.GAEKEFEKCBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPAOIPLDKHB>(
             "JPAOIPLDKHB",
@@ -113,17 +113,17 @@ impl ::protobuf::Message for JPAOIPLDKHB {
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLJBJMDPBGN)?;
                 },
-                40 => {
-                    self.HBKEPFKDAMI = is.read_uint32()?;
-                },
-                48 => {
-                    self.GAEKEFEKCBD = is.read_uint32()?;
-                },
                 24 => {
                     self.DBIKJPDBMOE = is.read_int64()?;
                 },
                 32 => {
                     self.CMHKFNFKGOI = is.read_int64()?;
+                },
+                40 => {
+                    self.HBKEPFKDAMI = is.read_uint32()?;
+                },
+                48 => {
+                    self.GAEKEFEKCBD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -145,17 +145,17 @@ impl ::protobuf::Message for JPAOIPLDKHB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HBKEPFKDAMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HBKEPFKDAMI);
-        }
-        if self.GAEKEFEKCBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GAEKEFEKCBD);
-        }
         if self.DBIKJPDBMOE != 0 {
             my_size += ::protobuf::rt::int64_size(3, self.DBIKJPDBMOE);
         }
         if self.CMHKFNFKGOI != 0 {
             my_size += ::protobuf::rt::int64_size(4, self.CMHKFNFKGOI);
+        }
+        if self.HBKEPFKDAMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HBKEPFKDAMI);
+        }
+        if self.GAEKEFEKCBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GAEKEFEKCBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -169,17 +169,17 @@ impl ::protobuf::Message for JPAOIPLDKHB {
         if let Some(v) = self.NLJBJMDPBGN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if self.HBKEPFKDAMI != 0 {
-            os.write_uint32(5, self.HBKEPFKDAMI)?;
-        }
-        if self.GAEKEFEKCBD != 0 {
-            os.write_uint32(6, self.GAEKEFEKCBD)?;
-        }
         if self.DBIKJPDBMOE != 0 {
             os.write_int64(3, self.DBIKJPDBMOE)?;
         }
         if self.CMHKFNFKGOI != 0 {
             os.write_int64(4, self.CMHKFNFKGOI)?;
+        }
+        if self.HBKEPFKDAMI != 0 {
+            os.write_uint32(5, self.HBKEPFKDAMI)?;
+        }
+        if self.GAEKEFEKCBD != 0 {
+            os.write_uint32(6, self.GAEKEFEKCBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,10 +200,10 @@ impl ::protobuf::Message for JPAOIPLDKHB {
     fn clear(&mut self) {
         self.BJPHDKEBOBK.clear();
         self.NLJBJMDPBGN.clear();
-        self.HBKEPFKDAMI = 0;
-        self.GAEKEFEKCBD = 0;
         self.DBIKJPDBMOE = 0;
         self.CMHKFNFKGOI = 0;
+        self.HBKEPFKDAMI = 0;
+        self.GAEKEFEKCBD = 0;
         self.special_fields.clear();
     }
 
@@ -211,10 +211,10 @@ impl ::protobuf::Message for JPAOIPLDKHB {
         static instance: JPAOIPLDKHB = JPAOIPLDKHB {
             BJPHDKEBOBK: ::std::vec::Vec::new(),
             NLJBJMDPBGN: ::protobuf::MessageField::none(),
-            HBKEPFKDAMI: 0,
-            GAEKEFEKCBD: 0,
             DBIKJPDBMOE: 0,
             CMHKFNFKGOI: 0,
+            HBKEPFKDAMI: 0,
+            GAEKEFEKCBD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -242,11 +242,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPAOIPLDKHB.proto\x1a\x11BFAKMCIJFCB.proto\x1a\x11IKAHKMNCFDN.prot\
     o\"\xf5\x01\n\x0bJPAOIPLDKHB\x12.\n\x0bBJPHDKEBOBK\x18\x01\x20\x03(\x0b2\
     \x0c.IKAHKMNCFDNR\x0bBJPHDKEBOBK\x12.\n\x0bNLJBJMDPBGN\x18\x02\x20\x01(\
-    \x0b2\x0c.BFAKMCIJFCBR\x0bNLJBJMDPBGN\x12\x20\n\x0bHBKEPFKDAMI\x18\x05\
-    \x20\x01(\rR\x0bHBKEPFKDAMI\x12\x20\n\x0bGAEKEFEKCBD\x18\x06\x20\x01(\rR\
-    \x0bGAEKEFEKCBD\x12\x20\n\x0bDBIKJPDBMOE\x18\x03\x20\x01(\x03R\x0bDBIKJP\
-    DBMOE\x12\x20\n\x0bCMHKFNFKGOI\x18\x04\x20\x01(\x03R\x0bCMHKFNFKGOIb\x06\
-    proto3\
+    \x0b2\x0c.BFAKMCIJFCBR\x0bNLJBJMDPBGN\x12\x20\n\x0bDBIKJPDBMOE\x18\x03\
+    \x20\x01(\x03R\x0bDBIKJPDBMOE\x12\x20\n\x0bCMHKFNFKGOI\x18\x04\x20\x01(\
+    \x03R\x0bCMHKFNFKGOI\x12\x20\n\x0bHBKEPFKDAMI\x18\x05\x20\x01(\rR\x0bHBK\
+    EPFKDAMI\x12\x20\n\x0bGAEKEFEKCBD\x18\x06\x20\x01(\rR\x0bGAEKEFEKCBDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

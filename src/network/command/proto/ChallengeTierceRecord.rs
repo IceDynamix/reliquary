@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeTierceRecord {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeTierceRecord.record_score)
-    pub record_score: u32,
+    // @@protoc_insertion_point(field:ChallengeTierceRecord.total_score)
+    pub total_score: u32,
     // @@protoc_insertion_point(field:ChallengeTierceRecord.used_cycle_count)
     pub used_cycle_count: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ChallengeTierceRecord {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "record_score",
-            |m: &ChallengeTierceRecord| { &m.record_score },
-            |m: &mut ChallengeTierceRecord| { &mut m.record_score },
+            "total_score",
+            |m: &ChallengeTierceRecord| { &m.total_score },
+            |m: &mut ChallengeTierceRecord| { &mut m.total_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "used_cycle_count",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChallengeTierceRecord {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.record_score = is.read_uint32()?;
+                112 => {
+                    self.total_score = is.read_uint32()?;
                 },
-                8 => {
+                120 => {
                     self.used_cycle_count = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChallengeTierceRecord {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.record_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.record_score);
+        if self.total_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.total_score);
         }
         if self.used_cycle_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.used_cycle_count);
+            my_size += ::protobuf::rt::uint32_size(15, self.used_cycle_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChallengeTierceRecord {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.record_score != 0 {
-            os.write_uint32(5, self.record_score)?;
+        if self.total_score != 0 {
+            os.write_uint32(14, self.total_score)?;
         }
         if self.used_cycle_count != 0 {
-            os.write_uint32(1, self.used_cycle_count)?;
+            os.write_uint32(15, self.used_cycle_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChallengeTierceRecord {
     }
 
     fn clear(&mut self) {
-        self.record_score = 0;
+        self.total_score = 0;
         self.used_cycle_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeTierceRecord {
         static instance: ChallengeTierceRecord = ChallengeTierceRecord {
-            record_score: 0,
+            total_score: 0,
             used_cycle_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeTierceRecord {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bChallengeTierceRecord.proto\"d\n\x15ChallengeTierceRecord\x12!\n\
-    \x0crecord_score\x18\x05\x20\x01(\rR\x0brecordScore\x12(\n\x10used_cycle\
-    _count\x18\x01\x20\x01(\rR\x0eusedCycleCountb\x06proto3\
+    \n\x1bChallengeTierceRecord.proto\"b\n\x15ChallengeTierceRecord\x12\x1f\
+    \n\x0btotal_score\x18\x0e\x20\x01(\rR\ntotalScore\x12(\n\x10used_cycle_c\
+    ount\x18\x0f\x20\x01(\rR\x0eusedCycleCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

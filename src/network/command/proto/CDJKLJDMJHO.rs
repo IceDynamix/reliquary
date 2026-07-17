@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDJKLJDMJHO {
     // message fields
-    // @@protoc_insertion_point(field:CDJKLJDMJHO.IAOBHCOOMJP)
-    pub IAOBHCOOMJP: ::protobuf::MessageField<super::JBOBHIPHGPB::JBOBHIPHGPB>,
+    // @@protoc_insertion_point(field:CDJKLJDMJHO.game_data)
+    pub game_data: ::protobuf::MessageField<super::JBOBHIPHGPB::JBOBHIPHGPB>,
     // @@protoc_insertion_point(field:CDJKLJDMJHO.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl CDJKLJDMJHO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBOBHIPHGPB::JBOBHIPHGPB>(
-            "IAOBHCOOMJP",
-            |m: &CDJKLJDMJHO| { &m.IAOBHCOOMJP },
-            |m: &mut CDJKLJDMJHO| { &mut m.IAOBHCOOMJP },
+            "game_data",
+            |m: &CDJKLJDMJHO| { &m.game_data },
+            |m: &mut CDJKLJDMJHO| { &mut m.game_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for CDJKLJDMJHO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAOBHCOOMJP)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_data)?;
                 },
                 88 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for CDJKLJDMJHO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
+        if let Some(v) = self.game_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,8 +110,8 @@ impl ::protobuf::Message for CDJKLJDMJHO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.game_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for CDJKLJDMJHO {
     }
 
     fn clear(&mut self) {
-        self.IAOBHCOOMJP.clear();
+        self.game_data.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CDJKLJDMJHO {
         static instance: CDJKLJDMJHO = CDJKLJDMJHO {
-            IAOBHCOOMJP: ::protobuf::MessageField::none(),
+            game_data: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for CDJKLJDMJHO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CDJKLJDMJHO.proto\x1a\x11JBOBHIPHGPB.proto\"W\n\x0bCDJKLJDMJHO\x12\
-    .\n\x0bIAOBHCOOMJP\x18\n\x20\x01(\x0b2\x0c.JBOBHIPHGPBR\x0bIAOBHCOOMJP\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x11CDJKLJDMJHO.proto\x1a\x11JBOBHIPHGPB.proto\"R\n\x0bCDJKLJDMJHO\x12\
+    )\n\tgame_data\x18\x03\x20\x01(\x0b2\x0c.JBOBHIPHGPBR\x08gameData\x12\
+    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

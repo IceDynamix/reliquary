@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECOGPFKDJDF {
     // message fields
-    // @@protoc_insertion_point(field:ECOGPFKDJDF.MKIOMOINKOF)
-    pub MKIOMOINKOF: ::std::vec::Vec<super::KFKLPGEKJLA::KFKLPGEKJLA>,
-    // @@protoc_insertion_point(field:ECOGPFKDJDF.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:ECOGPFKDJDF.FADDJCGMJGB)
-    pub FADDJCGMJGB: u32,
     // @@protoc_insertion_point(field:ECOGPFKDJDF.LHHJFMMCBAF)
     pub LHHJFMMCBAF: u32,
+    // @@protoc_insertion_point(field:ECOGPFKDJDF.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:ECOGPFKDJDF.position)
+    pub position: u32,
     // @@protoc_insertion_point(field:ECOGPFKDJDF.NEGCJDDIIJP)
     pub NEGCJDDIIJP: u32,
-    // @@protoc_insertion_point(field:ECOGPFKDJDF.BBFOLEOPPPL)
-    pub BBFOLEOPPPL: u32,
+    // @@protoc_insertion_point(field:ECOGPFKDJDF.MKIOMOINKOF)
+    pub MKIOMOINKOF: ::std::vec::Vec<super::KFKLPGEKJLA::KFKLPGEKJLA>,
+    // @@protoc_insertion_point(field:ECOGPFKDJDF.FADDJCGMJGB)
+    pub FADDJCGMJGB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ECOGPFKDJDF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,10 @@ impl ECOGPFKDJDF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MKIOMOINKOF",
-            |m: &ECOGPFKDJDF| { &m.MKIOMOINKOF },
-            |m: &mut ECOGPFKDJDF| { &mut m.MKIOMOINKOF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHHJFMMCBAF",
+            |m: &ECOGPFKDJDF| { &m.LHHJFMMCBAF },
+            |m: &mut ECOGPFKDJDF| { &mut m.LHHJFMMCBAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -70,24 +70,24 @@ impl ECOGPFKDJDF {
             |m: &mut ECOGPFKDJDF| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FADDJCGMJGB",
-            |m: &ECOGPFKDJDF| { &m.FADDJCGMJGB },
-            |m: &mut ECOGPFKDJDF| { &mut m.FADDJCGMJGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHHJFMMCBAF",
-            |m: &ECOGPFKDJDF| { &m.LHHJFMMCBAF },
-            |m: &mut ECOGPFKDJDF| { &mut m.LHHJFMMCBAF },
+            "position",
+            |m: &ECOGPFKDJDF| { &m.position },
+            |m: &mut ECOGPFKDJDF| { &mut m.position },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEGCJDDIIJP",
             |m: &ECOGPFKDJDF| { &m.NEGCJDDIIJP },
             |m: &mut ECOGPFKDJDF| { &mut m.NEGCJDDIIJP },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MKIOMOINKOF",
+            |m: &ECOGPFKDJDF| { &m.MKIOMOINKOF },
+            |m: &mut ECOGPFKDJDF| { &mut m.MKIOMOINKOF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BBFOLEOPPPL",
-            |m: &ECOGPFKDJDF| { &m.BBFOLEOPPPL },
-            |m: &mut ECOGPFKDJDF| { &mut m.BBFOLEOPPPL },
+            "FADDJCGMJGB",
+            |m: &ECOGPFKDJDF| { &m.FADDJCGMJGB },
+            |m: &mut ECOGPFKDJDF| { &mut m.FADDJCGMJGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ECOGPFKDJDF>(
             "ECOGPFKDJDF",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for ECOGPFKDJDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MKIOMOINKOF.push(is.read_message()?);
+                8 => {
+                    self.LHHJFMMCBAF = is.read_uint32()?;
                 },
                 16 => {
                     self.rank = is.read_uint32()?;
                 },
-                48 => {
-                    self.FADDJCGMJGB = is.read_uint32()?;
-                },
-                8 => {
-                    self.LHHJFMMCBAF = is.read_uint32()?;
+                24 => {
+                    self.position = is.read_uint32()?;
                 },
                 32 => {
                     self.NEGCJDDIIJP = is.read_uint32()?;
                 },
-                24 => {
-                    self.BBFOLEOPPPL = is.read_uint32()?;
+                42 => {
+                    self.MKIOMOINKOF.push(is.read_message()?);
+                },
+                48 => {
+                    self.FADDJCGMJGB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for ECOGPFKDJDF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MKIOMOINKOF {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.LHHJFMMCBAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LHHJFMMCBAF);
+        }
         if self.rank != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.rank);
         }
-        if self.FADDJCGMJGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FADDJCGMJGB);
-        }
-        if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHHJFMMCBAF);
+        if self.position != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.position);
         }
         if self.NEGCJDDIIJP != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.NEGCJDDIIJP);
         }
-        if self.BBFOLEOPPPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BBFOLEOPPPL);
+        for value in &self.MKIOMOINKOF {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.FADDJCGMJGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FADDJCGMJGB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for ECOGPFKDJDF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MKIOMOINKOF {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
+        if self.LHHJFMMCBAF != 0 {
+            os.write_uint32(1, self.LHHJFMMCBAF)?;
+        }
         if self.rank != 0 {
             os.write_uint32(2, self.rank)?;
         }
-        if self.FADDJCGMJGB != 0 {
-            os.write_uint32(6, self.FADDJCGMJGB)?;
-        }
-        if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(1, self.LHHJFMMCBAF)?;
+        if self.position != 0 {
+            os.write_uint32(3, self.position)?;
         }
         if self.NEGCJDDIIJP != 0 {
             os.write_uint32(4, self.NEGCJDDIIJP)?;
         }
-        if self.BBFOLEOPPPL != 0 {
-            os.write_uint32(3, self.BBFOLEOPPPL)?;
+        for v in &self.MKIOMOINKOF {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.FADDJCGMJGB != 0 {
+            os.write_uint32(6, self.FADDJCGMJGB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for ECOGPFKDJDF {
     }
 
     fn clear(&mut self) {
-        self.MKIOMOINKOF.clear();
-        self.rank = 0;
-        self.FADDJCGMJGB = 0;
         self.LHHJFMMCBAF = 0;
+        self.rank = 0;
+        self.position = 0;
         self.NEGCJDDIIJP = 0;
-        self.BBFOLEOPPPL = 0;
+        self.MKIOMOINKOF.clear();
+        self.FADDJCGMJGB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECOGPFKDJDF {
         static instance: ECOGPFKDJDF = ECOGPFKDJDF {
-            MKIOMOINKOF: ::std::vec::Vec::new(),
-            rank: 0,
-            FADDJCGMJGB: 0,
             LHHJFMMCBAF: 0,
+            rank: 0,
+            position: 0,
             NEGCJDDIIJP: 0,
-            BBFOLEOPPPL: 0,
+            MKIOMOINKOF: ::std::vec::Vec::new(),
+            FADDJCGMJGB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,13 +238,13 @@ impl ::protobuf::reflect::ProtobufValue for ECOGPFKDJDF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECOGPFKDJDF.proto\x1a\x11KFKLPGEKJLA.proto\"\xd9\x01\n\x0bECOGPFKD\
-    JDF\x12.\n\x0bMKIOMOINKOF\x18\x05\x20\x03(\x0b2\x0c.KFKLPGEKJLAR\x0bMKIO\
-    MOINKOF\x12\x12\n\x04rank\x18\x02\x20\x01(\rR\x04rank\x12\x20\n\x0bFADDJ\
-    CGMJGB\x18\x06\x20\x01(\rR\x0bFADDJCGMJGB\x12\x20\n\x0bLHHJFMMCBAF\x18\
-    \x01\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\n\x0bNEGCJDDIIJP\x18\x04\x20\x01\
-    (\rR\x0bNEGCJDDIIJP\x12\x20\n\x0bBBFOLEOPPPL\x18\x03\x20\x01(\rR\x0bBBFO\
-    LEOPPPLb\x06proto3\
+    \n\x11ECOGPFKDJDF.proto\x1a\x11KFKLPGEKJLA.proto\"\xd3\x01\n\x0bECOGPFKD\
+    JDF\x12\x20\n\x0bLHHJFMMCBAF\x18\x01\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x12\
+    \n\x04rank\x18\x02\x20\x01(\rR\x04rank\x12\x1a\n\x08position\x18\x03\x20\
+    \x01(\rR\x08position\x12\x20\n\x0bNEGCJDDIIJP\x18\x04\x20\x01(\rR\x0bNEG\
+    CJDDIIJP\x12.\n\x0bMKIOMOINKOF\x18\x05\x20\x03(\x0b2\x0c.KFKLPGEKJLAR\
+    \x0bMKIOMOINKOF\x12\x20\n\x0bFADDJCGMJGB\x18\x06\x20\x01(\rR\x0bFADDJCGM\
+    JGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

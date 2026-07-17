@@ -48,7 +48,7 @@ impl CELLCCKJIGL {
         ::std::default::Default::default()
     }
 
-    // .GFHCKBHCNDF DCCILJIBPNK = 1903;
+    // .GFHCKBHCNDF DCCILJIBPNK = 1590;
 
     pub fn DCCILJIBPNK(&self) -> &super::GFHCKBHCNDF::GFHCKBHCNDF {
         match self.EBFMCHOOAOG {
@@ -97,7 +97,7 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .AMBAFEMGGLD FHEOAODACLK = 1770;
+    // .AMBAFEMGGLD FHEOAODACLK = 24;
 
     pub fn FHEOAODACLK(&self) -> &super::AMBAFEMGGLD::AMBAFEMGGLD {
         match self.EBFMCHOOAOG {
@@ -146,7 +146,7 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .HIDPFIAALLB NLEOMLNOKCC = 897;
+    // .HIDPFIAALLB NLEOMLNOKCC = 826;
 
     pub fn NLEOMLNOKCC(&self) -> &super::HIDPFIAALLB::HIDPFIAALLB {
         match self.EBFMCHOOAOG {
@@ -195,7 +195,7 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .MBDOBECHOJA KNBGBCEBLDF = 1695;
+    // .MBDOBECHOJA KNBGBCEBLDF = 233;
 
     pub fn KNBGBCEBLDF(&self) -> &super::MBDOBECHOJA::MBDOBECHOJA {
         match self.EBFMCHOOAOG {
@@ -244,7 +244,7 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .PLAGFACLPDL NDJKPABPJHO = 952;
+    // .PLAGFACLPDL NDJKPABPJHO = 1897;
 
     pub fn NDJKPABPJHO(&self) -> &super::PLAGFACLPDL::PLAGFACLPDL {
         match self.EBFMCHOOAOG {
@@ -355,22 +355,22 @@ impl ::protobuf::Message for CELLCCKJIGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.NMNKDOOKMPC = is.read_uint32()?;
                 },
-                15226 => {
+                12722 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(is.read_message()?));
                 },
-                14162 => {
+                194 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::FHEOAODACLK(is.read_message()?));
                 },
-                7178 => {
+                6610 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(is.read_message()?));
                 },
-                13562 => {
+                1866 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::KNBGBCEBLDF(is.read_message()?));
                 },
-                7618 => {
+                15178 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NDJKPABPJHO(is.read_message()?));
                 },
                 tag => {
@@ -386,7 +386,7 @@ impl ::protobuf::Message for CELLCCKJIGL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NMNKDOOKMPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NMNKDOOKMPC);
+            my_size += ::protobuf::rt::uint32_size(2, self.NMNKDOOKMPC);
         }
         if let ::std::option::Option::Some(ref v) = self.EBFMCHOOAOG {
             match v {
@@ -419,24 +419,24 @@ impl ::protobuf::Message for CELLCCKJIGL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NMNKDOOKMPC != 0 {
-            os.write_uint32(9, self.NMNKDOOKMPC)?;
+            os.write_uint32(2, self.NMNKDOOKMPC)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EBFMCHOOAOG {
             match v {
                 &cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1903, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1590, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::FHEOAODACLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1770, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(24, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(897, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(826, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::KNBGBCEBLDF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1695, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(233, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::NDJKPABPJHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(952, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1897, v, os)?;
                 },
             };
         }
@@ -532,13 +532,13 @@ pub mod cellcckjigl {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CELLCCKJIGL.proto\x1a\x11AMBAFEMGGLD.proto\x1a\x11GFHCKBHCNDF.prot\
     o\x1a\x11HIDPFIAALLB.proto\x1a\x11MBDOBECHOJA.proto\x1a\x11PLAGFACLPDL.p\
-    roto\"\xbd\x02\n\x0bCELLCCKJIGL\x12\x20\n\x0bNMNKDOOKMPC\x18\t\x20\x01(\
-    \rR\x0bNMNKDOOKMPC\x121\n\x0bDCCILJIBPNK\x18\xef\x0e\x20\x01(\x0b2\x0c.G\
-    FHCKBHCNDFH\0R\x0bDCCILJIBPNK\x121\n\x0bFHEOAODACLK\x18\xea\r\x20\x01(\
-    \x0b2\x0c.AMBAFEMGGLDH\0R\x0bFHEOAODACLK\x121\n\x0bNLEOMLNOKCC\x18\x81\
-    \x07\x20\x01(\x0b2\x0c.HIDPFIAALLBH\0R\x0bNLEOMLNOKCC\x121\n\x0bKNBGBCEB\
-    LDF\x18\x9f\r\x20\x01(\x0b2\x0c.MBDOBECHOJAH\0R\x0bKNBGBCEBLDF\x121\n\
-    \x0bNDJKPABPJHO\x18\xb8\x07\x20\x01(\x0b2\x0c.PLAGFACLPDLH\0R\x0bNDJKPAB\
+    roto\"\xbc\x02\n\x0bCELLCCKJIGL\x12\x20\n\x0bNMNKDOOKMPC\x18\x02\x20\x01\
+    (\rR\x0bNMNKDOOKMPC\x121\n\x0bDCCILJIBPNK\x18\xb6\x0c\x20\x01(\x0b2\x0c.\
+    GFHCKBHCNDFH\0R\x0bDCCILJIBPNK\x120\n\x0bFHEOAODACLK\x18\x18\x20\x01(\
+    \x0b2\x0c.AMBAFEMGGLDH\0R\x0bFHEOAODACLK\x121\n\x0bNLEOMLNOKCC\x18\xba\
+    \x06\x20\x01(\x0b2\x0c.HIDPFIAALLBH\0R\x0bNLEOMLNOKCC\x121\n\x0bKNBGBCEB\
+    LDF\x18\xe9\x01\x20\x01(\x0b2\x0c.MBDOBECHOJAH\0R\x0bKNBGBCEBLDF\x121\n\
+    \x0bNDJKPABPJHO\x18\xe9\x0e\x20\x01(\x0b2\x0c.PLAGFACLPDLH\0R\x0bNDJKPAB\
     PJHOB\r\n\x0bEBFMCHOOAOGb\x06proto3\
 ";
 

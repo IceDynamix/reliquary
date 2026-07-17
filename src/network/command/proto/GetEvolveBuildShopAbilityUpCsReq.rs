@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityUpCsReq {
                 16 => {
                     self.JEKLOEPPJBK = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityUpCsReq {
             my_size += ::protobuf::rt::uint32_size(2, self.JEKLOEPPJBK);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityUpCsReq {
             os.write_uint32(2, self.JEKLOEPPJBK)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildShopAbilityUpCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GetEvolveBuildShopAbilityUpCsReq.proto\"Z\n\x20GetEvolveBuildShopAbil\
     ityUpCsReq\x12\x20\n\x0bJEKLOEPPJBK\x18\x02\x20\x01(\rR\x0bJEKLOEPPJBK\
-    \x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05levelb\x06proto3\
+    \x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

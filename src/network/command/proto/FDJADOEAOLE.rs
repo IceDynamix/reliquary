@@ -35,6 +35,8 @@ pub enum FDJADOEAOLE {
     FDJADOEAOLE_PKHPJIKJMDO = 2,
     // @@protoc_insertion_point(enum_value:FDJADOEAOLE.FDJADOEAOLE_HFGBOOLJDNA)
     FDJADOEAOLE_HFGBOOLJDNA = 3,
+    // @@protoc_insertion_point(enum_value:FDJADOEAOLE.FDJADOEAOLE_ENDLJOAKNPI)
+    FDJADOEAOLE_ENDLJOAKNPI = 4,
 }
 
 impl ::protobuf::Enum for FDJADOEAOLE {
@@ -50,6 +52,7 @@ impl ::protobuf::Enum for FDJADOEAOLE {
             1 => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_AHGEIJFIGKE),
             2 => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_PKHPJIKJMDO),
             3 => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_HFGBOOLJDNA),
+            4 => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_ENDLJOAKNPI),
             _ => ::std::option::Option::None
         }
     }
@@ -60,6 +63,7 @@ impl ::protobuf::Enum for FDJADOEAOLE {
             "FDJADOEAOLE_AHGEIJFIGKE" => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_AHGEIJFIGKE),
             "FDJADOEAOLE_PKHPJIKJMDO" => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_PKHPJIKJMDO),
             "FDJADOEAOLE_HFGBOOLJDNA" => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_HFGBOOLJDNA),
+            "FDJADOEAOLE_ENDLJOAKNPI" => ::std::option::Option::Some(FDJADOEAOLE::FDJADOEAOLE_ENDLJOAKNPI),
             _ => ::std::option::Option::None
         }
     }
@@ -69,6 +73,7 @@ impl ::protobuf::Enum for FDJADOEAOLE {
         FDJADOEAOLE::FDJADOEAOLE_AHGEIJFIGKE,
         FDJADOEAOLE::FDJADOEAOLE_PKHPJIKJMDO,
         FDJADOEAOLE::FDJADOEAOLE_HFGBOOLJDNA,
+        FDJADOEAOLE::FDJADOEAOLE_ENDLJOAKNPI,
     ];
 }
 
@@ -97,10 +102,10 @@ impl FDJADOEAOLE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FDJADOEAOLE.proto*\x81\x01\n\x0bFDJADOEAOLE\x12\x1b\n\x17FDJADOEAO\
+    \n\x11FDJADOEAOLE.proto*\x9e\x01\n\x0bFDJADOEAOLE\x12\x1b\n\x17FDJADOEAO\
     LE_OIDDFJEFIPF\x10\0\x12\x1b\n\x17FDJADOEAOLE_AHGEIJFIGKE\x10\x01\x12\
     \x1b\n\x17FDJADOEAOLE_PKHPJIKJMDO\x10\x02\x12\x1b\n\x17FDJADOEAOLE_HFGBO\
-    OLJDNA\x10\x03b\x06proto3\
+    OLJDNA\x10\x03\x12\x1b\n\x17FDJADOEAOLE_ENDLJOAKNPI\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

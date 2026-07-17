@@ -29,72 +29,72 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdElfRestaurantType {
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NLCDGIPGFDJ)
     AEHOCHBKGOL_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FHNGMDINBFL)
-    AEHOCHBKGOL_FHNGMDINBFL = 2569,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HAKDEKOKFDD)
-    AEHOCHBKGOL_HAKDEKOKFDD = 2565,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MMDHFIHGFHL)
-    AEHOCHBKGOL_MMDHFIHGFHL = 2584,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CCOIOBIHKHD)
-    AEHOCHBKGOL_CCOIOBIHKHD = 2564,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CDNJKEPLPBI)
-    AEHOCHBKGOL_CDNJKEPLPBI = 2592,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_GKOBLBJGNKB)
-    AEHOCHBKGOL_GKOBLBJGNKB = 2587,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_JCCKCKFLPAE)
-    AEHOCHBKGOL_JCCKCKFLPAE = 2568,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CKLPBJGJHIJ)
-    AEHOCHBKGOL_CKLPBJGJHIJ = 2600,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGFPEMGOCNG)
-    AEHOCHBKGOL_KGFPEMGOCNG = 2553,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NAFFCCDNDNE)
-    AEHOCHBKGOL_NAFFCCDNDNE = 2557,
+    AEHOCHBKGOL_NAFFCCDNDNE = 2587,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_GKOBLBJGNKB)
+    AEHOCHBKGOL_GKOBLBJGNKB = 2589,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DNHPFOOEPLE)
+    AEHOCHBKGOL_DNHPFOOEPLE = 2567,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LCFDIHFAGHA)
+    AEHOCHBKGOL_LCFDIHFAGHA = 2583,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGLPEMOFKEF)
+    AEHOCHBKGOL_KGLPEMOFKEF = 2574,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CGIKAANCBEP)
+    AEHOCHBKGOL_CGIKAANCBEP = 2559,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_JCCKCKFLPAE)
+    AEHOCHBKGOL_JCCKCKFLPAE = 2593,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HPKGGLPLHMD)
+    AEHOCHBKGOL_HPKGGLPLHMD = 2556,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OADEAFDLNPG)
+    AEHOCHBKGOL_OADEAFDLNPG = 2586,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_IMGIFCEMEED)
+    AEHOCHBKGOL_IMGIFCEMEED = 2557,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FBJOMEBDKMF)
+    AEHOCHBKGOL_FBJOMEBDKMF = 2585,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OGCDAOELHCB)
+    AEHOCHBKGOL_OGCDAOELHCB = 2568,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HAKDEKOKFDD)
+    AEHOCHBKGOL_HAKDEKOKFDD = 2592,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NPBGDFLGLBI)
+    AEHOCHBKGOL_NPBGDFLGLBI = 2594,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_BPOKCCBFKGF)
     AEHOCHBKGOL_BPOKCCBFKGF = 2572,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HDDBEMMEPOJ)
-    AEHOCHBKGOL_HDDBEMMEPOJ = 2590,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CGIKAANCBEP)
-    AEHOCHBKGOL_CGIKAANCBEP = 2582,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NPBGDFLGLBI)
-    AEHOCHBKGOL_NPBGDFLGLBI = 2573,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OGCDAOELHCB)
-    AEHOCHBKGOL_OGCDAOELHCB = 2591,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MFDGFABJPEB)
-    AEHOCHBKGOL_MFDGFABJPEB = 2596,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CHGMBMNHNCP)
-    AEHOCHBKGOL_CHGMBMNHNCP = 2599,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_EMJLCELODAP)
-    AEHOCHBKGOL_EMJLCELODAP = 2598,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGLPEMOFKEF)
-    AEHOCHBKGOL_KGLPEMOFKEF = 2593,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LCFDIHFAGHA)
-    AEHOCHBKGOL_LCFDIHFAGHA = 2555,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_PAANBAEHMDB)
-    AEHOCHBKGOL_PAANBAEHMDB = 2579,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HPKGGLPLHMD)
-    AEHOCHBKGOL_HPKGGLPLHMD = 2558,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OADEAFDLNPG)
-    AEHOCHBKGOL_OADEAFDLNPG = 2574,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_ICEJBAGGOJP)
-    AEHOCHBKGOL_ICEJBAGGOJP = 2559,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AEPHKPFNNCJ)
-    AEHOCHBKGOL_AEPHKPFNNCJ = 2577,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DFLNCKFIJIL)
-    AEHOCHBKGOL_DFLNCKFIJIL = 2556,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AGLGOEMGMHL)
-    AEHOCHBKGOL_AGLGOEMGMHL = 2566,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_IMGIFCEMEED)
-    AEHOCHBKGOL_IMGIFCEMEED = 2595,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CDNJKEPLPBI)
+    AEHOCHBKGOL_CDNJKEPLPBI = 2573,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DOJNGFGJICF)
-    AEHOCHBKGOL_DOJNGFGJICF = 2562,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DNHPFOOEPLE)
-    AEHOCHBKGOL_DNHPFOOEPLE = 2571,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FBJOMEBDKMF)
-    AEHOCHBKGOL_FBJOMEBDKMF = 2570,
+    AEHOCHBKGOL_DOJNGFGJICF = 2565,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CKLPBJGJHIJ)
+    AEHOCHBKGOL_CKLPBJGJHIJ = 2595,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AGLGOEMGMHL)
+    AEHOCHBKGOL_AGLGOEMGMHL = 2558,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AEPHKPFNNCJ)
+    AEHOCHBKGOL_AEPHKPFNNCJ = 2598,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CHGMBMNHNCP)
+    AEHOCHBKGOL_CHGMBMNHNCP = 2590,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LOMMBNHOCDD)
-    AEHOCHBKGOL_LOMMBNHOCDD = 2588,
+    AEHOCHBKGOL_LOMMBNHOCDD = 2564,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DFLNCKFIJIL)
+    AEHOCHBKGOL_DFLNCKFIJIL = 2563,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_PAANBAEHMDB)
+    AEHOCHBKGOL_PAANBAEHMDB = 2571,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FHNGMDINBFL)
+    AEHOCHBKGOL_FHNGMDINBFL = 2553,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HDDBEMMEPOJ)
+    AEHOCHBKGOL_HDDBEMMEPOJ = 2579,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MFDGFABJPEB)
+    AEHOCHBKGOL_MFDGFABJPEB = 2597,
     // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LEIKNDKAJLH)
-    AEHOCHBKGOL_LEIKNDKAJLH = 2578,
+    AEHOCHBKGOL_LEIKNDKAJLH = 2580,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MMDHFIHGFHL)
+    AEHOCHBKGOL_MMDHFIHGFHL = 2570,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CCOIOBIHKHD)
+    AEHOCHBKGOL_CCOIOBIHKHD = 2576,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGFPEMGOCNG)
+    AEHOCHBKGOL_KGFPEMGOCNG = 2552,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_EMJLCELODAP)
+    AEHOCHBKGOL_EMJLCELODAP = 2582,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_ICEJBAGGOJP)
+    AEHOCHBKGOL_ICEJBAGGOJP = 2560,
 }
 
 impl ::protobuf::Enum for CmdElfRestaurantType {
@@ -107,39 +107,39 @@ impl ::protobuf::Enum for CmdElfRestaurantType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdElfRestaurantType> {
         match value {
             0 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ),
-            2569 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
-            2565 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
-            2584 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
-            2564 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
-            2592 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
-            2587 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
-            2568 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
-            2600 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
-            2553 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
-            2557 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE),
+            2587 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE),
+            2589 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
+            2567 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
+            2583 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA),
+            2574 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
+            2559 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
+            2593 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
+            2556 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD),
+            2586 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG),
+            2557 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED),
+            2585 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF),
+            2568 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
+            2592 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
+            2594 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
             2572 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF),
-            2590 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
-            2582 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
-            2573 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
-            2591 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
-            2596 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
-            2599 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
-            2598 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
-            2593 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
-            2555 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA),
-            2579 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
-            2558 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD),
-            2574 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG),
-            2559 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
-            2577 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
-            2556 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
-            2566 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
-            2595 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED),
-            2562 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
-            2571 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
-            2570 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF),
-            2588 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD),
-            2578 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH),
+            2573 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
+            2565 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
+            2595 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
+            2558 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
+            2598 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
+            2590 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
+            2564 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD),
+            2563 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
+            2571 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
+            2553 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
+            2579 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
+            2597 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
+            2580 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH),
+            2570 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
+            2576 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
+            2552 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
+            2582 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
+            2560 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
             _ => ::std::option::Option::None
         }
     }
@@ -147,78 +147,78 @@ impl ::protobuf::Enum for CmdElfRestaurantType {
     fn from_str(str: &str) -> ::std::option::Option<CmdElfRestaurantType> {
         match str {
             "AEHOCHBKGOL_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ),
-            "AEHOCHBKGOL_FHNGMDINBFL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
-            "AEHOCHBKGOL_HAKDEKOKFDD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
-            "AEHOCHBKGOL_MMDHFIHGFHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
-            "AEHOCHBKGOL_CCOIOBIHKHD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
-            "AEHOCHBKGOL_CDNJKEPLPBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
-            "AEHOCHBKGOL_GKOBLBJGNKB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
-            "AEHOCHBKGOL_JCCKCKFLPAE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
-            "AEHOCHBKGOL_CKLPBJGJHIJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
-            "AEHOCHBKGOL_KGFPEMGOCNG" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
             "AEHOCHBKGOL_NAFFCCDNDNE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE),
-            "AEHOCHBKGOL_BPOKCCBFKGF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF),
-            "AEHOCHBKGOL_HDDBEMMEPOJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
-            "AEHOCHBKGOL_CGIKAANCBEP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
-            "AEHOCHBKGOL_NPBGDFLGLBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
-            "AEHOCHBKGOL_OGCDAOELHCB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
-            "AEHOCHBKGOL_MFDGFABJPEB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
-            "AEHOCHBKGOL_CHGMBMNHNCP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
-            "AEHOCHBKGOL_EMJLCELODAP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
-            "AEHOCHBKGOL_KGLPEMOFKEF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
+            "AEHOCHBKGOL_GKOBLBJGNKB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
+            "AEHOCHBKGOL_DNHPFOOEPLE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
             "AEHOCHBKGOL_LCFDIHFAGHA" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA),
-            "AEHOCHBKGOL_PAANBAEHMDB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
+            "AEHOCHBKGOL_KGLPEMOFKEF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
+            "AEHOCHBKGOL_CGIKAANCBEP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
+            "AEHOCHBKGOL_JCCKCKFLPAE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
             "AEHOCHBKGOL_HPKGGLPLHMD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD),
             "AEHOCHBKGOL_OADEAFDLNPG" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG),
-            "AEHOCHBKGOL_ICEJBAGGOJP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
-            "AEHOCHBKGOL_AEPHKPFNNCJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
-            "AEHOCHBKGOL_DFLNCKFIJIL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
-            "AEHOCHBKGOL_AGLGOEMGMHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
             "AEHOCHBKGOL_IMGIFCEMEED" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED),
-            "AEHOCHBKGOL_DOJNGFGJICF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
-            "AEHOCHBKGOL_DNHPFOOEPLE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
             "AEHOCHBKGOL_FBJOMEBDKMF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF),
+            "AEHOCHBKGOL_OGCDAOELHCB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
+            "AEHOCHBKGOL_HAKDEKOKFDD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
+            "AEHOCHBKGOL_NPBGDFLGLBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
+            "AEHOCHBKGOL_BPOKCCBFKGF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF),
+            "AEHOCHBKGOL_CDNJKEPLPBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
+            "AEHOCHBKGOL_DOJNGFGJICF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
+            "AEHOCHBKGOL_CKLPBJGJHIJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
+            "AEHOCHBKGOL_AGLGOEMGMHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
+            "AEHOCHBKGOL_AEPHKPFNNCJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
+            "AEHOCHBKGOL_CHGMBMNHNCP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
             "AEHOCHBKGOL_LOMMBNHOCDD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD),
+            "AEHOCHBKGOL_DFLNCKFIJIL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
+            "AEHOCHBKGOL_PAANBAEHMDB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
+            "AEHOCHBKGOL_FHNGMDINBFL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
+            "AEHOCHBKGOL_HDDBEMMEPOJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
+            "AEHOCHBKGOL_MFDGFABJPEB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
             "AEHOCHBKGOL_LEIKNDKAJLH" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH),
+            "AEHOCHBKGOL_MMDHFIHGFHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
+            "AEHOCHBKGOL_CCOIOBIHKHD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
+            "AEHOCHBKGOL_KGFPEMGOCNG" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
+            "AEHOCHBKGOL_EMJLCELODAP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
+            "AEHOCHBKGOL_ICEJBAGGOJP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdElfRestaurantType] = &[
         CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ,
-        CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL,
-        CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD,
-        CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL,
-        CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD,
-        CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI,
-        CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB,
-        CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE,
-        CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ,
-        CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG,
         CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE,
-        CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF,
-        CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ,
-        CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP,
-        CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI,
-        CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB,
-        CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB,
-        CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP,
-        CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP,
-        CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF,
+        CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB,
+        CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE,
         CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA,
-        CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB,
+        CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF,
+        CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP,
+        CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE,
         CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD,
         CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG,
-        CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP,
-        CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ,
-        CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL,
-        CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL,
         CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED,
-        CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF,
-        CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE,
         CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF,
+        CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB,
+        CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD,
+        CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI,
+        CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF,
+        CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI,
+        CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF,
+        CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL,
+        CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP,
         CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD,
+        CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL,
+        CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB,
+        CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL,
+        CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB,
         CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH,
+        CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL,
+        CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD,
+        CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG,
+        CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP,
+        CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP,
     ];
 }
 
@@ -231,39 +231,39 @@ impl ::protobuf::EnumFull for CmdElfRestaurantType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ => 0,
-            CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL => 1,
-            CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD => 2,
-            CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL => 3,
-            CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD => 4,
-            CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI => 5,
-            CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB => 6,
+            CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE => 1,
+            CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB => 2,
+            CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE => 3,
+            CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA => 4,
+            CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF => 5,
+            CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP => 6,
             CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE => 7,
-            CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ => 8,
-            CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG => 9,
-            CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE => 10,
-            CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF => 11,
-            CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ => 12,
-            CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP => 13,
+            CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD => 8,
+            CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG => 9,
+            CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED => 10,
+            CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF => 11,
+            CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB => 12,
+            CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD => 13,
             CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI => 14,
-            CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB => 15,
-            CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB => 16,
-            CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP => 17,
-            CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP => 18,
-            CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF => 19,
-            CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA => 20,
-            CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB => 21,
-            CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD => 22,
-            CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG => 23,
-            CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP => 24,
-            CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ => 25,
-            CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL => 26,
-            CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL => 27,
-            CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED => 28,
-            CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF => 29,
-            CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE => 30,
-            CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF => 31,
-            CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD => 32,
-            CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH => 33,
+            CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF => 15,
+            CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI => 16,
+            CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF => 17,
+            CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ => 18,
+            CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL => 19,
+            CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ => 20,
+            CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP => 21,
+            CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD => 22,
+            CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL => 23,
+            CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB => 24,
+            CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL => 25,
+            CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ => 26,
+            CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB => 27,
+            CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH => 28,
+            CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL => 29,
+            CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD => 30,
+            CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG => 31,
+            CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP => 32,
+            CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP => 33,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -283,30 +283,30 @@ impl CmdElfRestaurantType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdElfRestaurantType.proto*\x91\x08\n\x14CmdElfRestaurantType\x12\
-    \x1b\n\x17AEHOCHBKGOL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17AEHOCHBKGOL_FHNGMDI\
-    NBFL\x10\x89\x14\x12\x1c\n\x17AEHOCHBKGOL_HAKDEKOKFDD\x10\x85\x14\x12\
-    \x1c\n\x17AEHOCHBKGOL_MMDHFIHGFHL\x10\x98\x14\x12\x1c\n\x17AEHOCHBKGOL_C\
-    COIOBIHKHD\x10\x84\x14\x12\x1c\n\x17AEHOCHBKGOL_CDNJKEPLPBI\x10\xa0\x14\
-    \x12\x1c\n\x17AEHOCHBKGOL_GKOBLBJGNKB\x10\x9b\x14\x12\x1c\n\x17AEHOCHBKG\
-    OL_JCCKCKFLPAE\x10\x88\x14\x12\x1c\n\x17AEHOCHBKGOL_CKLPBJGJHIJ\x10\xa8\
-    \x14\x12\x1c\n\x17AEHOCHBKGOL_KGFPEMGOCNG\x10\xf9\x13\x12\x1c\n\x17AEHOC\
-    HBKGOL_NAFFCCDNDNE\x10\xfd\x13\x12\x1c\n\x17AEHOCHBKGOL_BPOKCCBFKGF\x10\
-    \x8c\x14\x12\x1c\n\x17AEHOCHBKGOL_HDDBEMMEPOJ\x10\x9e\x14\x12\x1c\n\x17A\
-    EHOCHBKGOL_CGIKAANCBEP\x10\x96\x14\x12\x1c\n\x17AEHOCHBKGOL_NPBGDFLGLBI\
-    \x10\x8d\x14\x12\x1c\n\x17AEHOCHBKGOL_OGCDAOELHCB\x10\x9f\x14\x12\x1c\n\
-    \x17AEHOCHBKGOL_MFDGFABJPEB\x10\xa4\x14\x12\x1c\n\x17AEHOCHBKGOL_CHGMBMN\
-    HNCP\x10\xa7\x14\x12\x1c\n\x17AEHOCHBKGOL_EMJLCELODAP\x10\xa6\x14\x12\
-    \x1c\n\x17AEHOCHBKGOL_KGLPEMOFKEF\x10\xa1\x14\x12\x1c\n\x17AEHOCHBKGOL_L\
-    CFDIHFAGHA\x10\xfb\x13\x12\x1c\n\x17AEHOCHBKGOL_PAANBAEHMDB\x10\x93\x14\
-    \x12\x1c\n\x17AEHOCHBKGOL_HPKGGLPLHMD\x10\xfe\x13\x12\x1c\n\x17AEHOCHBKG\
-    OL_OADEAFDLNPG\x10\x8e\x14\x12\x1c\n\x17AEHOCHBKGOL_ICEJBAGGOJP\x10\xff\
-    \x13\x12\x1c\n\x17AEHOCHBKGOL_AEPHKPFNNCJ\x10\x91\x14\x12\x1c\n\x17AEHOC\
-    HBKGOL_DFLNCKFIJIL\x10\xfc\x13\x12\x1c\n\x17AEHOCHBKGOL_AGLGOEMGMHL\x10\
-    \x86\x14\x12\x1c\n\x17AEHOCHBKGOL_IMGIFCEMEED\x10\xa3\x14\x12\x1c\n\x17A\
-    EHOCHBKGOL_DOJNGFGJICF\x10\x82\x14\x12\x1c\n\x17AEHOCHBKGOL_DNHPFOOEPLE\
-    \x10\x8b\x14\x12\x1c\n\x17AEHOCHBKGOL_FBJOMEBDKMF\x10\x8a\x14\x12\x1c\n\
-    \x17AEHOCHBKGOL_LOMMBNHOCDD\x10\x9c\x14\x12\x1c\n\x17AEHOCHBKGOL_LEIKNDK\
-    AJLH\x10\x92\x14b\x06proto3\
+    \x1b\n\x17AEHOCHBKGOL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17AEHOCHBKGOL_NAFFCCD\
+    NDNE\x10\x9b\x14\x12\x1c\n\x17AEHOCHBKGOL_GKOBLBJGNKB\x10\x9d\x14\x12\
+    \x1c\n\x17AEHOCHBKGOL_DNHPFOOEPLE\x10\x87\x14\x12\x1c\n\x17AEHOCHBKGOL_L\
+    CFDIHFAGHA\x10\x97\x14\x12\x1c\n\x17AEHOCHBKGOL_KGLPEMOFKEF\x10\x8e\x14\
+    \x12\x1c\n\x17AEHOCHBKGOL_CGIKAANCBEP\x10\xff\x13\x12\x1c\n\x17AEHOCHBKG\
+    OL_JCCKCKFLPAE\x10\xa1\x14\x12\x1c\n\x17AEHOCHBKGOL_HPKGGLPLHMD\x10\xfc\
+    \x13\x12\x1c\n\x17AEHOCHBKGOL_OADEAFDLNPG\x10\x9a\x14\x12\x1c\n\x17AEHOC\
+    HBKGOL_IMGIFCEMEED\x10\xfd\x13\x12\x1c\n\x17AEHOCHBKGOL_FBJOMEBDKMF\x10\
+    \x99\x14\x12\x1c\n\x17AEHOCHBKGOL_OGCDAOELHCB\x10\x88\x14\x12\x1c\n\x17A\
+    EHOCHBKGOL_HAKDEKOKFDD\x10\xa0\x14\x12\x1c\n\x17AEHOCHBKGOL_NPBGDFLGLBI\
+    \x10\xa2\x14\x12\x1c\n\x17AEHOCHBKGOL_BPOKCCBFKGF\x10\x8c\x14\x12\x1c\n\
+    \x17AEHOCHBKGOL_CDNJKEPLPBI\x10\x8d\x14\x12\x1c\n\x17AEHOCHBKGOL_DOJNGFG\
+    JICF\x10\x85\x14\x12\x1c\n\x17AEHOCHBKGOL_CKLPBJGJHIJ\x10\xa3\x14\x12\
+    \x1c\n\x17AEHOCHBKGOL_AGLGOEMGMHL\x10\xfe\x13\x12\x1c\n\x17AEHOCHBKGOL_A\
+    EPHKPFNNCJ\x10\xa6\x14\x12\x1c\n\x17AEHOCHBKGOL_CHGMBMNHNCP\x10\x9e\x14\
+    \x12\x1c\n\x17AEHOCHBKGOL_LOMMBNHOCDD\x10\x84\x14\x12\x1c\n\x17AEHOCHBKG\
+    OL_DFLNCKFIJIL\x10\x83\x14\x12\x1c\n\x17AEHOCHBKGOL_PAANBAEHMDB\x10\x8b\
+    \x14\x12\x1c\n\x17AEHOCHBKGOL_FHNGMDINBFL\x10\xf9\x13\x12\x1c\n\x17AEHOC\
+    HBKGOL_HDDBEMMEPOJ\x10\x93\x14\x12\x1c\n\x17AEHOCHBKGOL_MFDGFABJPEB\x10\
+    \xa5\x14\x12\x1c\n\x17AEHOCHBKGOL_LEIKNDKAJLH\x10\x94\x14\x12\x1c\n\x17A\
+    EHOCHBKGOL_MMDHFIHGFHL\x10\x8a\x14\x12\x1c\n\x17AEHOCHBKGOL_CCOIOBIHKHD\
+    \x10\x90\x14\x12\x1c\n\x17AEHOCHBKGOL_KGFPEMGOCNG\x10\xf8\x13\x12\x1c\n\
+    \x17AEHOCHBKGOL_EMJLCELODAP\x10\x96\x14\x12\x1c\n\x17AEHOCHBKGOL_ICEJBAG\
+    GOJP\x10\x80\x14b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

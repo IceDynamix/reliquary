@@ -32,10 +32,10 @@ pub struct FKCNEPIJJAO {
     pub area_id: u32,
     // @@protoc_insertion_point(field:FKCNEPIJJAO.FEFLAJIODHB)
     pub FEFLAJIODHB: u32,
-    // @@protoc_insertion_point(field:FKCNEPIJJAO.JNCCOGCHNMB)
-    pub JNCCOGCHNMB: u32,
     // @@protoc_insertion_point(field:FKCNEPIJJAO.DCOKLHPBAJO)
     pub DCOKLHPBAJO: u32,
+    // @@protoc_insertion_point(field:FKCNEPIJJAO.JNCCOGCHNMB)
+    pub JNCCOGCHNMB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FKCNEPIJJAO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl FKCNEPIJJAO {
             |m: &mut FKCNEPIJJAO| { &mut m.FEFLAJIODHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNCCOGCHNMB",
-            |m: &FKCNEPIJJAO| { &m.JNCCOGCHNMB },
-            |m: &mut FKCNEPIJJAO| { &mut m.JNCCOGCHNMB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCOKLHPBAJO",
             |m: &FKCNEPIJJAO| { &m.DCOKLHPBAJO },
             |m: &mut FKCNEPIJJAO| { &mut m.DCOKLHPBAJO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNCCOGCHNMB",
+            |m: &FKCNEPIJJAO| { &m.JNCCOGCHNMB },
+            |m: &mut FKCNEPIJJAO| { &mut m.JNCCOGCHNMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FKCNEPIJJAO>(
             "FKCNEPIJJAO",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.area_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.FEFLAJIODHB = is.read_uint32()?;
                 },
-                56 => {
-                    self.JNCCOGCHNMB = is.read_uint32()?;
-                },
-                8 => {
+                80 => {
                     self.DCOKLHPBAJO = is.read_uint32()?;
+                },
+                88 => {
+                    self.JNCCOGCHNMB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
         }
         if self.FEFLAJIODHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FEFLAJIODHB);
-        }
-        if self.JNCCOGCHNMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JNCCOGCHNMB);
+            my_size += ::protobuf::rt::uint32_size(9, self.FEFLAJIODHB);
         }
         if self.DCOKLHPBAJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DCOKLHPBAJO);
+            my_size += ::protobuf::rt::uint32_size(10, self.DCOKLHPBAJO);
+        }
+        if self.JNCCOGCHNMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JNCCOGCHNMB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for FKCNEPIJJAO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(4, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
         }
         if self.FEFLAJIODHB != 0 {
-            os.write_uint32(14, self.FEFLAJIODHB)?;
-        }
-        if self.JNCCOGCHNMB != 0 {
-            os.write_uint32(7, self.JNCCOGCHNMB)?;
+            os.write_uint32(9, self.FEFLAJIODHB)?;
         }
         if self.DCOKLHPBAJO != 0 {
-            os.write_uint32(1, self.DCOKLHPBAJO)?;
+            os.write_uint32(10, self.DCOKLHPBAJO)?;
+        }
+        if self.JNCCOGCHNMB != 0 {
+            os.write_uint32(11, self.JNCCOGCHNMB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     fn clear(&mut self) {
         self.area_id = 0;
         self.FEFLAJIODHB = 0;
-        self.JNCCOGCHNMB = 0;
         self.DCOKLHPBAJO = 0;
+        self.JNCCOGCHNMB = 0;
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for FKCNEPIJJAO {
         static instance: FKCNEPIJJAO = FKCNEPIJJAO {
             area_id: 0,
             FEFLAJIODHB: 0,
-            JNCCOGCHNMB: 0,
             DCOKLHPBAJO: 0,
+            JNCCOGCHNMB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for FKCNEPIJJAO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FKCNEPIJJAO.proto\"\x8c\x01\n\x0bFKCNEPIJJAO\x12\x17\n\x07area_id\
-    \x18\x04\x20\x01(\rR\x06areaId\x12\x20\n\x0bFEFLAJIODHB\x18\x0e\x20\x01(\
-    \rR\x0bFEFLAJIODHB\x12\x20\n\x0bJNCCOGCHNMB\x18\x07\x20\x01(\rR\x0bJNCCO\
-    GCHNMB\x12\x20\n\x0bDCOKLHPBAJO\x18\x01\x20\x01(\rR\x0bDCOKLHPBAJOb\x06p\
-    roto3\
+    \x18\x03\x20\x01(\rR\x06areaId\x12\x20\n\x0bFEFLAJIODHB\x18\t\x20\x01(\r\
+    R\x0bFEFLAJIODHB\x12\x20\n\x0bDCOKLHPBAJO\x18\n\x20\x01(\rR\x0bDCOKLHPBA\
+    JO\x12\x20\n\x0bJNCCOGCHNMB\x18\x0b\x20\x01(\rR\x0bJNCCOGCHNMBb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

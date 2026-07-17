@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterRoomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.KHBLMAOPLLN)
-    pub KHBLMAOPLLN: u32,
     // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.JOJCPKNIJOH)
     pub JOJCPKNIJOH: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterRoomCsReq.KHBLMAOPLLN)
+    pub KHBLMAOPLLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicEnterRoomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueMagicEnterRoomCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHBLMAOPLLN",
-            |m: &RogueMagicEnterRoomCsReq| { &m.KHBLMAOPLLN },
-            |m: &mut RogueMagicEnterRoomCsReq| { &mut m.KHBLMAOPLLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOJCPKNIJOH",
             |m: &RogueMagicEnterRoomCsReq| { &m.JOJCPKNIJOH },
             |m: &mut RogueMagicEnterRoomCsReq| { &mut m.JOJCPKNIJOH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KHBLMAOPLLN",
+            |m: &RogueMagicEnterRoomCsReq| { &m.KHBLMAOPLLN },
+            |m: &mut RogueMagicEnterRoomCsReq| { &mut m.KHBLMAOPLLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicEnterRoomCsReq>(
             "RogueMagicEnterRoomCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.KHBLMAOPLLN = is.read_uint32()?;
+                48 => {
+                    self.JOJCPKNIJOH = is.read_uint32()?;
                 },
                 72 => {
-                    self.JOJCPKNIJOH = is.read_uint32()?;
+                    self.KHBLMAOPLLN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KHBLMAOPLLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KHBLMAOPLLN);
-        }
         if self.JOJCPKNIJOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JOJCPKNIJOH);
+            my_size += ::protobuf::rt::uint32_size(6, self.JOJCPKNIJOH);
+        }
+        if self.KHBLMAOPLLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KHBLMAOPLLN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KHBLMAOPLLN != 0 {
-            os.write_uint32(11, self.KHBLMAOPLLN)?;
-        }
         if self.JOJCPKNIJOH != 0 {
-            os.write_uint32(9, self.JOJCPKNIJOH)?;
+            os.write_uint32(6, self.JOJCPKNIJOH)?;
+        }
+        if self.KHBLMAOPLLN != 0 {
+            os.write_uint32(9, self.KHBLMAOPLLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueMagicEnterRoomCsReq {
     }
 
     fn clear(&mut self) {
-        self.KHBLMAOPLLN = 0;
         self.JOJCPKNIJOH = 0;
+        self.KHBLMAOPLLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterRoomCsReq {
         static instance: RogueMagicEnterRoomCsReq = RogueMagicEnterRoomCsReq {
-            KHBLMAOPLLN: 0,
             JOJCPKNIJOH: 0,
+            KHBLMAOPLLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueMagicEnterRoomCsReq.proto\"^\n\x18RogueMagicEnterRoomCsReq\
-    \x12\x20\n\x0bKHBLMAOPLLN\x18\x0b\x20\x01(\rR\x0bKHBLMAOPLLN\x12\x20\n\
-    \x0bJOJCPKNIJOH\x18\t\x20\x01(\rR\x0bJOJCPKNIJOHb\x06proto3\
+    \x12\x20\n\x0bJOJCPKNIJOH\x18\x06\x20\x01(\rR\x0bJOJCPKNIJOH\x12\x20\n\
+    \x0bKHBLMAOPLLN\x18\t\x20\x01(\rR\x0bKHBLMAOPLLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKEOMFNPKPO {
     // message fields
-    // @@protoc_insertion_point(field:CKEOMFNPKPO.ANBKDJKHCBI)
-    pub ANBKDJKHCBI: ::protobuf::MessageField<super::KOFMGCNIMIN::KOFMGCNIMIN>,
+    // @@protoc_insertion_point(field:CKEOMFNPKPO.miracle)
+    pub miracle: ::protobuf::MessageField<super::KOFMGCNIMIN::KOFMGCNIMIN>,
     // special fields
     // @@protoc_insertion_point(special_field:CKEOMFNPKPO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CKEOMFNPKPO {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOFMGCNIMIN::KOFMGCNIMIN>(
-            "ANBKDJKHCBI",
-            |m: &CKEOMFNPKPO| { &m.ANBKDJKHCBI },
-            |m: &mut CKEOMFNPKPO| { &mut m.ANBKDJKHCBI },
+            "miracle",
+            |m: &CKEOMFNPKPO| { &m.miracle },
+            |m: &mut CKEOMFNPKPO| { &mut m.miracle },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKEOMFNPKPO>(
             "CKEOMFNPKPO",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CKEOMFNPKPO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANBKDJKHCBI)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.miracle)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for CKEOMFNPKPO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ANBKDJKHCBI.as_ref() {
+        if let Some(v) = self.miracle.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for CKEOMFNPKPO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ANBKDJKHCBI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.miracle.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for CKEOMFNPKPO {
     }
 
     fn clear(&mut self) {
-        self.ANBKDJKHCBI.clear();
+        self.miracle.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKEOMFNPKPO {
         static instance: CKEOMFNPKPO = CKEOMFNPKPO {
-            ANBKDJKHCBI: ::protobuf::MessageField::none(),
+            miracle: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for CKEOMFNPKPO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKEOMFNPKPO.proto\x1a\x11KOFMGCNIMIN.proto\"=\n\x0bCKEOMFNPKPO\x12\
-    .\n\x0bANBKDJKHCBI\x18\x07\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bANBKDJKHCBI\
-    b\x06proto3\
+    \n\x11CKEOMFNPKPO.proto\x1a\x11KOFMGCNIMIN.proto\"5\n\x0bCKEOMFNPKPO\x12\
+    &\n\x07miracle\x18\x0f\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x07miracleb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

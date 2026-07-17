@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IDGMALDABBE {
     // message fields
-    // @@protoc_insertion_point(field:IDGMALDABBE.EECAHBHNDHC)
-    pub EECAHBHNDHC: ::std::vec::Vec<super::KELKOMPBONA::KELKOMPBONA>,
+    // @@protoc_insertion_point(field:IDGMALDABBE.total_damage)
+    pub total_damage: u32,
     // @@protoc_insertion_point(field:IDGMALDABBE.IIFPJKNCLGF)
     pub IIFPJKNCLGF: ::std::vec::Vec<super::KELKOMPBONA::KELKOMPBONA>,
     // @@protoc_insertion_point(field:IDGMALDABBE.NMPGPDMHKAM)
     pub NMPGPDMHKAM: ::protobuf::MessageField<super::NDLBFFKAGBN::NDLBFFKAGBN>,
     // @@protoc_insertion_point(field:IDGMALDABBE.cost_time)
     pub cost_time: u32,
-    // @@protoc_insertion_point(field:IDGMALDABBE.total_damage)
-    pub total_damage: u32,
+    // @@protoc_insertion_point(field:IDGMALDABBE.EECAHBHNDHC)
+    pub EECAHBHNDHC: ::std::vec::Vec<super::KELKOMPBONA::KELKOMPBONA>,
     // special fields
     // @@protoc_insertion_point(special_field:IDGMALDABBE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl IDGMALDABBE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EECAHBHNDHC",
-            |m: &IDGMALDABBE| { &m.EECAHBHNDHC },
-            |m: &mut IDGMALDABBE| { &mut m.EECAHBHNDHC },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_damage",
+            |m: &IDGMALDABBE| { &m.total_damage },
+            |m: &mut IDGMALDABBE| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IIFPJKNCLGF",
@@ -77,10 +77,10 @@ impl IDGMALDABBE {
             |m: &IDGMALDABBE| { &m.cost_time },
             |m: &mut IDGMALDABBE| { &mut m.cost_time },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &IDGMALDABBE| { &m.total_damage },
-            |m: &mut IDGMALDABBE| { &mut m.total_damage },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EECAHBHNDHC",
+            |m: &IDGMALDABBE| { &m.EECAHBHNDHC },
+            |m: &mut IDGMALDABBE| { &mut m.EECAHBHNDHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IDGMALDABBE>(
             "IDGMALDABBE",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for IDGMALDABBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.EECAHBHNDHC.push(is.read_message()?);
+                16 => {
+                    self.total_damage = is.read_uint32()?;
                 },
-                106 => {
+                42 => {
                     self.IIFPJKNCLGF.push(is.read_message()?);
                 },
-                10 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMPGPDMHKAM)?;
                 },
-                80 => {
+                72 => {
                     self.cost_time = is.read_uint32()?;
                 },
-                72 => {
-                    self.total_damage = is.read_uint32()?;
+                122 => {
+                    self.EECAHBHNDHC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,10 +127,9 @@ impl ::protobuf::Message for IDGMALDABBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EECAHBHNDHC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.total_damage != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.total_damage);
+        }
         for value in &self.IIFPJKNCLGF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -140,32 +139,33 @@ impl ::protobuf::Message for IDGMALDABBE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cost_time);
+            my_size += ::protobuf::rt::uint32_size(9, self.cost_time);
         }
-        if self.total_damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.total_damage);
-        }
+        for value in &self.EECAHBHNDHC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EECAHBHNDHC {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
+        if self.total_damage != 0 {
+            os.write_uint32(2, self.total_damage)?;
+        }
         for v in &self.IIFPJKNCLGF {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         if let Some(v) = self.NMPGPDMHKAM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.cost_time != 0 {
-            os.write_uint32(10, self.cost_time)?;
+            os.write_uint32(9, self.cost_time)?;
         }
-        if self.total_damage != 0 {
-            os.write_uint32(9, self.total_damage)?;
-        }
+        for v in &self.EECAHBHNDHC {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,21 +183,21 @@ impl ::protobuf::Message for IDGMALDABBE {
     }
 
     fn clear(&mut self) {
-        self.EECAHBHNDHC.clear();
+        self.total_damage = 0;
         self.IIFPJKNCLGF.clear();
         self.NMPGPDMHKAM.clear();
         self.cost_time = 0;
-        self.total_damage = 0;
+        self.EECAHBHNDHC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IDGMALDABBE {
         static instance: IDGMALDABBE = IDGMALDABBE {
-            EECAHBHNDHC: ::std::vec::Vec::new(),
+            total_damage: 0,
             IIFPJKNCLGF: ::std::vec::Vec::new(),
             NMPGPDMHKAM: ::protobuf::MessageField::none(),
             cost_time: 0,
-            total_damage: 0,
+            EECAHBHNDHC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,12 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for IDGMALDABBE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IDGMALDABBE.proto\x1a\x11KELKOMPBONA.proto\x1a\x11NDLBFFKAGBN.prot\
-    o\"\xdd\x01\n\x0bIDGMALDABBE\x12.\n\x0bEECAHBHNDHC\x18\x0e\x20\x03(\x0b2\
-    \x0c.KELKOMPBONAR\x0bEECAHBHNDHC\x12.\n\x0bIIFPJKNCLGF\x18\r\x20\x03(\
-    \x0b2\x0c.KELKOMPBONAR\x0bIIFPJKNCLGF\x12.\n\x0bNMPGPDMHKAM\x18\x01\x20\
-    \x01(\x0b2\x0c.NDLBFFKAGBNR\x0bNMPGPDMHKAM\x12\x1b\n\tcost_time\x18\n\
-    \x20\x01(\rR\x08costTime\x12!\n\x0ctotal_damage\x18\t\x20\x01(\rR\x0btot\
-    alDamageb\x06proto3\
+    o\"\xdd\x01\n\x0bIDGMALDABBE\x12!\n\x0ctotal_damage\x18\x02\x20\x01(\rR\
+    \x0btotalDamage\x12.\n\x0bIIFPJKNCLGF\x18\x05\x20\x03(\x0b2\x0c.KELKOMPB\
+    ONAR\x0bIIFPJKNCLGF\x12.\n\x0bNMPGPDMHKAM\x18\x08\x20\x01(\x0b2\x0c.NDLB\
+    FFKAGBNR\x0bNMPGPDMHKAM\x12\x1b\n\tcost_time\x18\t\x20\x01(\rR\x08costTi\
+    me\x12.\n\x0bEECAHBHNDHC\x18\x0f\x20\x03(\x0b2\x0c.KELKOMPBONAR\x0bEECAH\
+    BHNDHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

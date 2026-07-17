@@ -30,10 +30,10 @@ pub struct HLFOOKANNDE {
     // message fields
     // @@protoc_insertion_point(field:HLFOOKANNDE.JGDOICIEMAH)
     pub JGDOICIEMAH: u32,
-    // @@protoc_insertion_point(field:HLFOOKANNDE.KADNIAEJACG)
-    pub KADNIAEJACG: f64,
     // @@protoc_insertion_point(field:HLFOOKANNDE.damage)
     pub damage: f64,
+    // @@protoc_insertion_point(field:HLFOOKANNDE.KADNIAEJACG)
+    pub KADNIAEJACG: f64,
     // special fields
     // @@protoc_insertion_point(special_field:HLFOOKANNDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl HLFOOKANNDE {
             |m: &mut HLFOOKANNDE| { &mut m.JGDOICIEMAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KADNIAEJACG",
-            |m: &HLFOOKANNDE| { &m.KADNIAEJACG },
-            |m: &mut HLFOOKANNDE| { &mut m.KADNIAEJACG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
             |m: &HLFOOKANNDE| { &m.damage },
             |m: &mut HLFOOKANNDE| { &mut m.damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KADNIAEJACG",
+            |m: &HLFOOKANNDE| { &m.KADNIAEJACG },
+            |m: &mut HLFOOKANNDE| { &mut m.KADNIAEJACG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HLFOOKANNDE>(
             "HLFOOKANNDE",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for HLFOOKANNDE {
                 8 => {
                     self.JGDOICIEMAH = is.read_uint32()?;
                 },
-                25 => {
-                    self.KADNIAEJACG = is.read_double()?;
-                },
                 17 => {
                     self.damage = is.read_double()?;
+                },
+                25 => {
+                    self.KADNIAEJACG = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HLFOOKANNDE {
         if self.JGDOICIEMAH != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.JGDOICIEMAH);
         }
-        if self.KADNIAEJACG != 0. {
+        if self.damage != 0. {
             my_size += 1 + 8;
         }
-        if self.damage != 0. {
+        if self.KADNIAEJACG != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -125,11 +125,11 @@ impl ::protobuf::Message for HLFOOKANNDE {
         if self.JGDOICIEMAH != 0 {
             os.write_uint32(1, self.JGDOICIEMAH)?;
         }
-        if self.KADNIAEJACG != 0. {
-            os.write_double(3, self.KADNIAEJACG)?;
-        }
         if self.damage != 0. {
             os.write_double(2, self.damage)?;
+        }
+        if self.KADNIAEJACG != 0. {
+            os.write_double(3, self.KADNIAEJACG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for HLFOOKANNDE {
 
     fn clear(&mut self) {
         self.JGDOICIEMAH = 0;
-        self.KADNIAEJACG = 0.;
         self.damage = 0.;
+        self.KADNIAEJACG = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HLFOOKANNDE {
         static instance: HLFOOKANNDE = HLFOOKANNDE {
             JGDOICIEMAH: 0,
-            KADNIAEJACG: 0.,
             damage: 0.,
+            KADNIAEJACG: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HLFOOKANNDE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLFOOKANNDE.proto\"i\n\x0bHLFOOKANNDE\x12\x20\n\x0bJGDOICIEMAH\x18\
-    \x01\x20\x01(\rR\x0bJGDOICIEMAH\x12\x20\n\x0bKADNIAEJACG\x18\x03\x20\x01\
-    (\x01R\x0bKADNIAEJACG\x12\x16\n\x06damage\x18\x02\x20\x01(\x01R\x06damag\
-    eb\x06proto3\
+    \x01\x20\x01(\rR\x0bJGDOICIEMAH\x12\x16\n\x06damage\x18\x02\x20\x01(\x01\
+    R\x06damage\x12\x20\n\x0bKADNIAEJACG\x18\x03\x20\x01(\x01R\x0bKADNIAEJAC\
+    Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

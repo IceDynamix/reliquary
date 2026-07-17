@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMailType {
     // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_NLCDGIPGFDJ)
     CFGEBHKAEHB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_NKLEGIGBOFE)
-    CFGEBHKAEHB_NKLEGIGBOFE = 881,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_EPNKGIBMBOM)
-    CFGEBHKAEHB_EPNKGIBMBOM = 836,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_GLMALNLNPPI)
-    CFGEBHKAEHB_GLMALNLNPPI = 810,
     // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PGAFBFPOJGF)
-    CFGEBHKAEHB_PGAFBFPOJGF = 803,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PCCBLDPKNKH)
-    CFGEBHKAEHB_PCCBLDPKNKH = 827,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_BKPBLKEGOEL)
-    CFGEBHKAEHB_BKPBLKEGOEL = 873,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_KPMKIALICNC)
-    CFGEBHKAEHB_KPMKIALICNC = 880,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PELMIHDCFIL)
-    CFGEBHKAEHB_PELMIHDCFIL = 815,
+    CFGEBHKAEHB_PGAFBFPOJGF = 878,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_EPNKGIBMBOM)
+    CFGEBHKAEHB_EPNKGIBMBOM = 888,
     // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_FCLOLINPLNI)
-    CFGEBHKAEHB_FCLOLINPLNI = 813,
+    CFGEBHKAEHB_FCLOLINPLNI = 881,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_NKLEGIGBOFE)
+    CFGEBHKAEHB_NKLEGIGBOFE = 847,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PCCBLDPKNKH)
+    CFGEBHKAEHB_PCCBLDPKNKH = 858,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_BKPBLKEGOEL)
+    CFGEBHKAEHB_BKPBLKEGOEL = 825,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_KPMKIALICNC)
+    CFGEBHKAEHB_KPMKIALICNC = 893,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_GLMALNLNPPI)
+    CFGEBHKAEHB_GLMALNLNPPI = 826,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PELMIHDCFIL)
+    CFGEBHKAEHB_PELMIHDCFIL = 886,
 }
 
 impl ::protobuf::Enum for CmdMailType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdMailType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMailType> {
         match value {
             0 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ),
-            881 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
-            836 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
-            810 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
-            803 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF),
-            827 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH),
-            873 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL),
-            880 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_KPMKIALICNC),
-            815 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PELMIHDCFIL),
-            813 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
+            878 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF),
+            888 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
+            881 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
+            847 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
+            858 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH),
+            825 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL),
+            893 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_KPMKIALICNC),
+            826 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
+            886 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PELMIHDCFIL),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CmdMailType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMailType> {
         match str {
             "CFGEBHKAEHB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ),
-            "CFGEBHKAEHB_NKLEGIGBOFE" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
-            "CFGEBHKAEHB_EPNKGIBMBOM" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
-            "CFGEBHKAEHB_GLMALNLNPPI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
             "CFGEBHKAEHB_PGAFBFPOJGF" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF),
+            "CFGEBHKAEHB_EPNKGIBMBOM" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
+            "CFGEBHKAEHB_FCLOLINPLNI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
+            "CFGEBHKAEHB_NKLEGIGBOFE" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
             "CFGEBHKAEHB_PCCBLDPKNKH" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH),
             "CFGEBHKAEHB_BKPBLKEGOEL" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL),
             "CFGEBHKAEHB_KPMKIALICNC" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_KPMKIALICNC),
+            "CFGEBHKAEHB_GLMALNLNPPI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
             "CFGEBHKAEHB_PELMIHDCFIL" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PELMIHDCFIL),
-            "CFGEBHKAEHB_FCLOLINPLNI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMailType] = &[
         CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ,
-        CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE,
-        CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM,
-        CmdMailType::CFGEBHKAEHB_GLMALNLNPPI,
         CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF,
+        CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM,
+        CmdMailType::CFGEBHKAEHB_FCLOLINPLNI,
+        CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE,
         CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH,
         CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL,
         CmdMailType::CFGEBHKAEHB_KPMKIALICNC,
+        CmdMailType::CFGEBHKAEHB_GLMALNLNPPI,
         CmdMailType::CFGEBHKAEHB_PELMIHDCFIL,
-        CmdMailType::CFGEBHKAEHB_FCLOLINPLNI,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CmdMailType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ => 0,
-            CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE => 1,
+            CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF => 1,
             CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM => 2,
-            CmdMailType::CFGEBHKAEHB_GLMALNLNPPI => 3,
-            CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF => 4,
+            CmdMailType::CFGEBHKAEHB_FCLOLINPLNI => 3,
+            CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE => 4,
             CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH => 5,
             CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL => 6,
             CmdMailType::CFGEBHKAEHB_KPMKIALICNC => 7,
-            CmdMailType::CFGEBHKAEHB_PELMIHDCFIL => 8,
-            CmdMailType::CFGEBHKAEHB_FCLOLINPLNI => 9,
+            CmdMailType::CFGEBHKAEHB_GLMALNLNPPI => 8,
+            CmdMailType::CFGEBHKAEHB_PELMIHDCFIL => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,13 @@ impl CmdMailType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdMailType.proto*\xb8\x02\n\x0bCmdMailType\x12\x1b\n\x17CFGEBHKAE\
-    HB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CFGEBHKAEHB_NKLEGIGBOFE\x10\xf1\x06\
-    \x12\x1c\n\x17CFGEBHKAEHB_EPNKGIBMBOM\x10\xc4\x06\x12\x1c\n\x17CFGEBHKAE\
-    HB_GLMALNLNPPI\x10\xaa\x06\x12\x1c\n\x17CFGEBHKAEHB_PGAFBFPOJGF\x10\xa3\
-    \x06\x12\x1c\n\x17CFGEBHKAEHB_PCCBLDPKNKH\x10\xbb\x06\x12\x1c\n\x17CFGEB\
-    HKAEHB_BKPBLKEGOEL\x10\xe9\x06\x12\x1c\n\x17CFGEBHKAEHB_KPMKIALICNC\x10\
-    \xf0\x06\x12\x1c\n\x17CFGEBHKAEHB_PELMIHDCFIL\x10\xaf\x06\x12\x1c\n\x17C\
-    FGEBHKAEHB_FCLOLINPLNI\x10\xad\x06b\x06proto3\
+    HB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CFGEBHKAEHB_PGAFBFPOJGF\x10\xee\x06\
+    \x12\x1c\n\x17CFGEBHKAEHB_EPNKGIBMBOM\x10\xf8\x06\x12\x1c\n\x17CFGEBHKAE\
+    HB_FCLOLINPLNI\x10\xf1\x06\x12\x1c\n\x17CFGEBHKAEHB_NKLEGIGBOFE\x10\xcf\
+    \x06\x12\x1c\n\x17CFGEBHKAEHB_PCCBLDPKNKH\x10\xda\x06\x12\x1c\n\x17CFGEB\
+    HKAEHB_BKPBLKEGOEL\x10\xb9\x06\x12\x1c\n\x17CFGEBHKAEHB_KPMKIALICNC\x10\
+    \xfd\x06\x12\x1c\n\x17CFGEBHKAEHB_GLMALNLNPPI\x10\xba\x06\x12\x1c\n\x17C\
+    FGEBHKAEHB_PELMIHDCFIL\x10\xf6\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

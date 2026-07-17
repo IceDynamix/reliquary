@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HFKKKFJHPHJ {
     // message fields
+    // @@protoc_insertion_point(field:HFKKKFJHPHJ.augment_id)
+    pub augment_id: u32,
     // @@protoc_insertion_point(field:HFKKKFJHPHJ.damage)
     pub damage: f64,
     // @@protoc_insertion_point(field:HFKKKFJHPHJ.KINKMHEAANP)
     pub KINKMHEAANP: f64,
-    // @@protoc_insertion_point(field:HFKKKFJHPHJ.augment_id)
-    pub augment_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HFKKKFJHPHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl HFKKKFJHPHJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "augment_id",
+            |m: &HFKKKFJHPHJ| { &m.augment_id },
+            |m: &mut HFKKKFJHPHJ| { &mut m.augment_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
             |m: &HFKKKFJHPHJ| { &m.damage },
             |m: &mut HFKKKFJHPHJ| { &mut m.damage },
@@ -62,11 +67,6 @@ impl HFKKKFJHPHJ {
             "KINKMHEAANP",
             |m: &HFKKKFJHPHJ| { &m.KINKMHEAANP },
             |m: &mut HFKKKFJHPHJ| { &mut m.KINKMHEAANP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "augment_id",
-            |m: &HFKKKFJHPHJ| { &m.augment_id },
-            |m: &mut HFKKKFJHPHJ| { &mut m.augment_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFKKKFJHPHJ>(
             "HFKKKFJHPHJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HFKKKFJHPHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.augment_id = is.read_uint32()?;
+                },
                 25 => {
                     self.damage = is.read_double()?;
                 },
                 33 => {
                     self.KINKMHEAANP = is.read_double()?;
-                },
-                8 => {
-                    self.augment_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HFKKKFJHPHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.augment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.augment_id);
+        }
         if self.damage != 0. {
             my_size += 1 + 8;
         }
         if self.KINKMHEAANP != 0. {
             my_size += 1 + 8;
-        }
-        if self.augment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.augment_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HFKKKFJHPHJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.augment_id != 0 {
+            os.write_uint32(1, self.augment_id)?;
+        }
         if self.damage != 0. {
             os.write_double(3, self.damage)?;
         }
         if self.KINKMHEAANP != 0. {
             os.write_double(4, self.KINKMHEAANP)?;
-        }
-        if self.augment_id != 0 {
-            os.write_uint32(1, self.augment_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HFKKKFJHPHJ {
     }
 
     fn clear(&mut self) {
+        self.augment_id = 0;
         self.damage = 0.;
         self.KINKMHEAANP = 0.;
-        self.augment_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFKKKFJHPHJ {
         static instance: HFKKKFJHPHJ = HFKKKFJHPHJ {
+            augment_id: 0,
             damage: 0.,
             KINKMHEAANP: 0.,
-            augment_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for HFKKKFJHPHJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HFKKKFJHPHJ.proto\"f\n\x0bHFKKKFJHPHJ\x12\x16\n\x06damage\x18\x03\
-    \x20\x01(\x01R\x06damage\x12\x20\n\x0bKINKMHEAANP\x18\x04\x20\x01(\x01R\
-    \x0bKINKMHEAANP\x12\x1d\n\naugment_id\x18\x01\x20\x01(\rR\taugmentIdb\
-    \x06proto3\
+    \n\x11HFKKKFJHPHJ.proto\"f\n\x0bHFKKKFJHPHJ\x12\x1d\n\naugment_id\x18\
+    \x01\x20\x01(\rR\taugmentId\x12\x16\n\x06damage\x18\x03\x20\x01(\x01R\
+    \x06damage\x12\x20\n\x0bKINKMHEAANP\x18\x04\x20\x01(\x01R\x0bKINKMHEAANP\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

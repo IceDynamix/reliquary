@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NDLBFFKAGBN {
     // message fields
-    // @@protoc_insertion_point(field:NDLBFFKAGBN.ODIBDCLGKBE)
-    pub ODIBDCLGKBE: u32,
-    // @@protoc_insertion_point(field:NDLBFFKAGBN.LPLLIICLCHB)
-    pub LPLLIICLCHB: u32,
     // @@protoc_insertion_point(field:NDLBFFKAGBN.total_auto_turns)
     pub total_auto_turns: u32,
-    // @@protoc_insertion_point(field:NDLBFFKAGBN.MHDBNNKHBBL)
-    pub MHDBNNKHBBL: u32,
-    // @@protoc_insertion_point(field:NDLBFFKAGBN.BPHNEOLCKAD)
-    pub BPHNEOLCKAD: u32,
+    // @@protoc_insertion_point(field:NDLBFFKAGBN.ODIBDCLGKBE)
+    pub ODIBDCLGKBE: u32,
     // @@protoc_insertion_point(field:NDLBFFKAGBN.total_turns)
     pub total_turns: u32,
+    // @@protoc_insertion_point(field:NDLBFFKAGBN.LPLLIICLCHB)
+    pub LPLLIICLCHB: u32,
+    // @@protoc_insertion_point(field:NDLBFFKAGBN.BPHNEOLCKAD)
+    pub BPHNEOLCKAD: u32,
+    // @@protoc_insertion_point(field:NDLBFFKAGBN.MHDBNNKHBBL)
+    pub MHDBNNKHBBL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NDLBFFKAGBN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,19 @@ impl NDLBFFKAGBN {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_auto_turns",
+            |m: &NDLBFFKAGBN| { &m.total_auto_turns },
+            |m: &mut NDLBFFKAGBN| { &mut m.total_auto_turns },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ODIBDCLGKBE",
             |m: &NDLBFFKAGBN| { &m.ODIBDCLGKBE },
             |m: &mut NDLBFFKAGBN| { &mut m.ODIBDCLGKBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_turns",
+            |m: &NDLBFFKAGBN| { &m.total_turns },
+            |m: &mut NDLBFFKAGBN| { &mut m.total_turns },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LPLLIICLCHB",
@@ -70,24 +80,14 @@ impl NDLBFFKAGBN {
             |m: &mut NDLBFFKAGBN| { &mut m.LPLLIICLCHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_auto_turns",
-            |m: &NDLBFFKAGBN| { &m.total_auto_turns },
-            |m: &mut NDLBFFKAGBN| { &mut m.total_auto_turns },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHDBNNKHBBL",
-            |m: &NDLBFFKAGBN| { &m.MHDBNNKHBBL },
-            |m: &mut NDLBFFKAGBN| { &mut m.MHDBNNKHBBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPHNEOLCKAD",
             |m: &NDLBFFKAGBN| { &m.BPHNEOLCKAD },
             |m: &mut NDLBFFKAGBN| { &mut m.BPHNEOLCKAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_turns",
-            |m: &NDLBFFKAGBN| { &m.total_turns },
-            |m: &mut NDLBFFKAGBN| { &mut m.total_turns },
+            "MHDBNNKHBBL",
+            |m: &NDLBFFKAGBN| { &m.MHDBNNKHBBL },
+            |m: &mut NDLBFFKAGBN| { &mut m.MHDBNNKHBBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NDLBFFKAGBN>(
             "NDLBFFKAGBN",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for NDLBFFKAGBN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.ODIBDCLGKBE = is.read_uint32()?;
-                },
                 16 => {
-                    self.LPLLIICLCHB = is.read_uint32()?;
-                },
-                48 => {
                     self.total_auto_turns = is.read_uint32()?;
                 },
-                88 => {
-                    self.MHDBNNKHBBL = is.read_uint32()?;
+                24 => {
+                    self.ODIBDCLGKBE = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
+                    self.total_turns = is.read_uint32()?;
+                },
+                48 => {
+                    self.LPLLIICLCHB = is.read_uint32()?;
+                },
+                64 => {
                     self.BPHNEOLCKAD = is.read_uint32()?;
                 },
-                112 => {
-                    self.total_turns = is.read_uint32()?;
+                80 => {
+                    self.MHDBNNKHBBL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for NDLBFFKAGBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODIBDCLGKBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ODIBDCLGKBE);
-        }
-        if self.LPLLIICLCHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LPLLIICLCHB);
-        }
         if self.total_auto_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.total_auto_turns);
+            my_size += ::protobuf::rt::uint32_size(2, self.total_auto_turns);
         }
-        if self.MHDBNNKHBBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MHDBNNKHBBL);
-        }
-        if self.BPHNEOLCKAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BPHNEOLCKAD);
+        if self.ODIBDCLGKBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.ODIBDCLGKBE);
         }
         if self.total_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.total_turns);
+            my_size += ::protobuf::rt::uint32_size(4, self.total_turns);
+        }
+        if self.LPLLIICLCHB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LPLLIICLCHB);
+        }
+        if self.BPHNEOLCKAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.BPHNEOLCKAD);
+        }
+        if self.MHDBNNKHBBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MHDBNNKHBBL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for NDLBFFKAGBN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODIBDCLGKBE != 0 {
-            os.write_uint32(8, self.ODIBDCLGKBE)?;
-        }
-        if self.LPLLIICLCHB != 0 {
-            os.write_uint32(2, self.LPLLIICLCHB)?;
-        }
         if self.total_auto_turns != 0 {
-            os.write_uint32(6, self.total_auto_turns)?;
+            os.write_uint32(2, self.total_auto_turns)?;
         }
-        if self.MHDBNNKHBBL != 0 {
-            os.write_uint32(11, self.MHDBNNKHBBL)?;
-        }
-        if self.BPHNEOLCKAD != 0 {
-            os.write_uint32(9, self.BPHNEOLCKAD)?;
+        if self.ODIBDCLGKBE != 0 {
+            os.write_uint32(3, self.ODIBDCLGKBE)?;
         }
         if self.total_turns != 0 {
-            os.write_uint32(14, self.total_turns)?;
+            os.write_uint32(4, self.total_turns)?;
+        }
+        if self.LPLLIICLCHB != 0 {
+            os.write_uint32(6, self.LPLLIICLCHB)?;
+        }
+        if self.BPHNEOLCKAD != 0 {
+            os.write_uint32(8, self.BPHNEOLCKAD)?;
+        }
+        if self.MHDBNNKHBBL != 0 {
+            os.write_uint32(10, self.MHDBNNKHBBL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for NDLBFFKAGBN {
     }
 
     fn clear(&mut self) {
-        self.ODIBDCLGKBE = 0;
-        self.LPLLIICLCHB = 0;
         self.total_auto_turns = 0;
-        self.MHDBNNKHBBL = 0;
-        self.BPHNEOLCKAD = 0;
+        self.ODIBDCLGKBE = 0;
         self.total_turns = 0;
+        self.LPLLIICLCHB = 0;
+        self.BPHNEOLCKAD = 0;
+        self.MHDBNNKHBBL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NDLBFFKAGBN {
         static instance: NDLBFFKAGBN = NDLBFFKAGBN {
-            ODIBDCLGKBE: 0,
-            LPLLIICLCHB: 0,
             total_auto_turns: 0,
-            MHDBNNKHBBL: 0,
-            BPHNEOLCKAD: 0,
+            ODIBDCLGKBE: 0,
             total_turns: 0,
+            LPLLIICLCHB: 0,
+            BPHNEOLCKAD: 0,
+            MHDBNNKHBBL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for NDLBFFKAGBN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NDLBFFKAGBN.proto\"\xe0\x01\n\x0bNDLBFFKAGBN\x12\x20\n\x0bODIBDCLG\
-    KBE\x18\x08\x20\x01(\rR\x0bODIBDCLGKBE\x12\x20\n\x0bLPLLIICLCHB\x18\x02\
-    \x20\x01(\rR\x0bLPLLIICLCHB\x12(\n\x10total_auto_turns\x18\x06\x20\x01(\
-    \rR\x0etotalAutoTurns\x12\x20\n\x0bMHDBNNKHBBL\x18\x0b\x20\x01(\rR\x0bMH\
-    DBNNKHBBL\x12\x20\n\x0bBPHNEOLCKAD\x18\t\x20\x01(\rR\x0bBPHNEOLCKAD\x12\
-    \x1f\n\x0btotal_turns\x18\x0e\x20\x01(\rR\ntotalTurnsb\x06proto3\
+    \n\x11NDLBFFKAGBN.proto\"\xe0\x01\n\x0bNDLBFFKAGBN\x12(\n\x10total_auto_\
+    turns\x18\x02\x20\x01(\rR\x0etotalAutoTurns\x12\x20\n\x0bODIBDCLGKBE\x18\
+    \x03\x20\x01(\rR\x0bODIBDCLGKBE\x12\x1f\n\x0btotal_turns\x18\x04\x20\x01\
+    (\rR\ntotalTurns\x12\x20\n\x0bLPLLIICLCHB\x18\x06\x20\x01(\rR\x0bLPLLIIC\
+    LCHB\x12\x20\n\x0bBPHNEOLCKAD\x18\x08\x20\x01(\rR\x0bBPHNEOLCKAD\x12\x20\
+    \n\x0bMHDBNNKHBBL\x18\n\x20\x01(\rR\x0bMHDBNNKHBBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

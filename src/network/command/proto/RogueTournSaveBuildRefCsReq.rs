@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournSaveBuildRefCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournSaveBuildRefCsReq.name)
-    pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RogueTournSaveBuildRefCsReq.MPOEFPFPEND)
     pub MPOEFPFPEND: ::protobuf::MessageField<super::OOLJJHMLHBH::OOLJJHMLHBH>,
+    // @@protoc_insertion_point(field:RogueTournSaveBuildRefCsReq.name)
+    pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RogueTournSaveBuildRefCsReq.NPHAJEKCBKF)
     pub NPHAJEKCBKF: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RogueTournSaveBuildRefCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &RogueTournSaveBuildRefCsReq| { &m.name },
-            |m: &mut RogueTournSaveBuildRefCsReq| { &mut m.name },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOLJJHMLHBH::OOLJJHMLHBH>(
             "MPOEFPFPEND",
             |m: &RogueTournSaveBuildRefCsReq| { &m.MPOEFPFPEND },
             |m: &mut RogueTournSaveBuildRefCsReq| { &mut m.MPOEFPFPEND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &RogueTournSaveBuildRefCsReq| { &m.name },
+            |m: &mut RogueTournSaveBuildRefCsReq| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPHAJEKCBKF",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.name = is.read_string()?;
-                },
-                90 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MPOEFPFPEND)?;
                 },
-                48 => {
+                50 => {
+                    self.name = is.read_string()?;
+                },
+                120 => {
                     self.NPHAJEKCBKF = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.name);
-        }
         if let Some(v) = self.MPOEFPFPEND.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.name);
+        }
         if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NPHAJEKCBKF);
+            my_size += ::protobuf::rt::uint32_size(15, self.NPHAJEKCBKF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.name.is_empty() {
-            os.write_string(10, &self.name)?;
-        }
         if let Some(v) = self.MPOEFPFPEND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(6, &self.name)?;
         }
         if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(6, self.NPHAJEKCBKF)?;
+            os.write_uint32(15, self.NPHAJEKCBKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueTournSaveBuildRefCsReq {
     }
 
     fn clear(&mut self) {
-        self.name.clear();
         self.MPOEFPFPEND.clear();
+        self.name.clear();
         self.NPHAJEKCBKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournSaveBuildRefCsReq {
         static instance: RogueTournSaveBuildRefCsReq = RogueTournSaveBuildRefCsReq {
-            name: ::std::string::String::new(),
             MPOEFPFPEND: ::protobuf::MessageField::none(),
+            name: ::std::string::String::new(),
             NPHAJEKCBKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournSaveBuildRefCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournSaveBuildRefCsReq.proto\x1a\x11OOLJJHMLHBH.proto\"\x83\x01\
-    \n\x1bRogueTournSaveBuildRefCsReq\x12\x12\n\x04name\x18\n\x20\x01(\tR\
-    \x04name\x12.\n\x0bMPOEFPFPEND\x18\x0b\x20\x01(\x0b2\x0c.OOLJJHMLHBHR\
-    \x0bMPOEFPFPEND\x12\x20\n\x0bNPHAJEKCBKF\x18\x06\x20\x01(\rR\x0bNPHAJEKC\
-    BKFb\x06proto3\
+    \n\x1bRogueTournSaveBuildRefCsReq\x12.\n\x0bMPOEFPFPEND\x18\x03\x20\x01(\
+    \x0b2\x0c.OOLJJHMLHBHR\x0bMPOEFPFPEND\x12\x12\n\x04name\x18\x06\x20\x01(\
+    \tR\x04name\x12\x20\n\x0bNPHAJEKCBKF\x18\x0f\x20\x01(\rR\x0bNPHAJEKCBKFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

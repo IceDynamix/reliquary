@@ -79,10 +79,10 @@ impl ::protobuf::Message for CGGPJFLLGID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.JIGOOAEFDPP = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CGGPJFLLGID {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JIGOOAEFDPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JIGOOAEFDPP);
+            my_size += ::protobuf::rt::uint32_size(8, self.JIGOOAEFDPP);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CGGPJFLLGID {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JIGOOAEFDPP != 0 {
-            os.write_uint32(7, self.JIGOOAEFDPP)?;
+            os.write_uint32(8, self.JIGOOAEFDPP)?;
         }
         if self.level != 0 {
-            os.write_uint32(15, self.level)?;
+            os.write_uint32(11, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CGGPJFLLGID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGGPJFLLGID.proto\"E\n\x0bCGGPJFLLGID\x12\x20\n\x0bJIGOOAEFDPP\x18\
-    \x07\x20\x01(\rR\x0bJIGOOAEFDPP\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\
+    \x08\x20\x01(\rR\x0bJIGOOAEFDPP\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\
     \x05levelb\x06proto3\
 ";
 

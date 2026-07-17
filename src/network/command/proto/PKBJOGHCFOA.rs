@@ -86,13 +86,13 @@ impl ::protobuf::Message for PKBJOGHCFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHEFAHCPHBL)?;
                 },
-                42 => {
+                114 => {
                     self.DFLEOIGPLNM.push(is.read_message()?);
                 },
-                64 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for PKBJOGHCFOA {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for PKBJOGHCFOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KHEFAHCPHBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for PKBJOGHCFOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKBJOGHCFOA.proto\x1a\x11FOJDKLCHCKG.proto\x1a\x11LMLNNHKJEIP.prot\
-    o\"\x87\x01\n\x0bPKBJOGHCFOA\x12.\n\x0bKHEFAHCPHBL\x18\x07\x20\x01(\x0b2\
-    \x0c.FOJDKLCHCKGR\x0bKHEFAHCPHBL\x12.\n\x0bDFLEOIGPLNM\x18\x05\x20\x03(\
-    \x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\x12\x18\n\x07retcode\x18\x08\x20\
+    o\"\x87\x01\n\x0bPKBJOGHCFOA\x12.\n\x0bKHEFAHCPHBL\x18\x05\x20\x01(\x0b2\
+    \x0c.FOJDKLCHCKGR\x0bKHEFAHCPHBL\x12.\n\x0bDFLEOIGPLNM\x18\x0e\x20\x03(\
+    \x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\x12\x18\n\x07retcode\x18\x0f\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 

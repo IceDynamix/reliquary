@@ -45,7 +45,7 @@ impl KEKFNKDLDOM {
         ::std::default::Default::default()
     }
 
-    // .IBCDDGKNICG ICKNLCPNHCD = 798;
+    // .IBCDDGKNICG ICKNLCPNHCD = 1425;
 
     pub fn ICKNLCPNHCD(&self) -> &super::IBCDDGKNICG::IBCDDGKNICG {
         match self.JNLIJAABGFF {
@@ -94,7 +94,7 @@ impl KEKFNKDLDOM {
         }
     }
 
-    // .EAFHBODFEKM LOMPGELJCLM = 1826;
+    // .EAFHBODFEKM LOMPGELJCLM = 1509;
 
     pub fn LOMPGELJCLM(&self) -> &super::EAFHBODFEKM::EAFHBODFEKM {
         match self.JNLIJAABGFF {
@@ -179,10 +179,10 @@ impl ::protobuf::Message for KEKFNKDLDOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                6386 => {
+                11402 => {
                     self.JNLIJAABGFF = ::std::option::Option::Some(kekfnkdldom::JNLIJAABGFF::ICKNLCPNHCD(is.read_message()?));
                 },
-                14610 => {
+                12074 => {
                     self.JNLIJAABGFF = ::std::option::Option::Some(kekfnkdldom::JNLIJAABGFF::LOMPGELJCLM(is.read_message()?));
                 },
                 tag => {
@@ -218,10 +218,10 @@ impl ::protobuf::Message for KEKFNKDLDOM {
         if let ::std::option::Option::Some(ref v) = self.JNLIJAABGFF {
             match v {
                 &kekfnkdldom::JNLIJAABGFF::ICKNLCPNHCD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(798, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1425, v, os)?;
                 },
                 &kekfnkdldom::JNLIJAABGFF::LOMPGELJCLM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1826, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1509, v, os)?;
                 },
             };
         }
@@ -305,9 +305,9 @@ pub mod kekfnkdldom {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEKFNKDLDOM.proto\x1a\x11EAFHBODFEKM.proto\x1a\x11IBCDDGKNICG.prot\
-    o\"\x82\x01\n\x0bKEKFNKDLDOM\x121\n\x0bICKNLCPNHCD\x18\x9e\x06\x20\x01(\
-    \x0b2\x0c.IBCDDGKNICGH\0R\x0bICKNLCPNHCD\x121\n\x0bLOMPGELJCLM\x18\xa2\
-    \x0e\x20\x01(\x0b2\x0c.EAFHBODFEKMH\0R\x0bLOMPGELJCLMB\r\n\x0bJNLIJAABGF\
+    o\"\x82\x01\n\x0bKEKFNKDLDOM\x121\n\x0bICKNLCPNHCD\x18\x91\x0b\x20\x01(\
+    \x0b2\x0c.IBCDDGKNICGH\0R\x0bICKNLCPNHCD\x121\n\x0bLOMPGELJCLM\x18\xe5\
+    \x0b\x20\x01(\x0b2\x0c.EAFHBODFEKMH\0R\x0bLOMPGELJCLMB\r\n\x0bJNLIJAABGF\
     Fb\x06proto3\
 ";
 

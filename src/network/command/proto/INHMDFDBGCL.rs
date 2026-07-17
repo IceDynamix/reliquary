@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct INHMDFDBGCL {
     // message fields
-    // @@protoc_insertion_point(field:INHMDFDBGCL.CLNGFDPINDB)
-    pub CLNGFDPINDB: ::std::string::String,
     // @@protoc_insertion_point(field:INHMDFDBGCL.room_id)
     pub room_id: u64,
     // @@protoc_insertion_point(field:INHMDFDBGCL.MPDHNFNCIEA)
     pub MPDHNFNCIEA: u32,
-    // @@protoc_insertion_point(field:INHMDFDBGCL.HJPBAJEPAGE)
-    pub HJPBAJEPAGE: u32,
     // @@protoc_insertion_point(field:INHMDFDBGCL.PJGILAADCPN)
     pub PJGILAADCPN: u32,
+    // @@protoc_insertion_point(field:INHMDFDBGCL.turn)
+    pub turn: u32,
+    // @@protoc_insertion_point(field:INHMDFDBGCL.CLNGFDPINDB)
+    pub CLNGFDPINDB: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:INHMDFDBGCL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,11 +58,6 @@ impl INHMDFDBGCL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLNGFDPINDB",
-            |m: &INHMDFDBGCL| { &m.CLNGFDPINDB },
-            |m: &mut INHMDFDBGCL| { &mut m.CLNGFDPINDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &INHMDFDBGCL| { &m.room_id },
             |m: &mut INHMDFDBGCL| { &mut m.room_id },
@@ -73,14 +68,19 @@ impl INHMDFDBGCL {
             |m: &mut INHMDFDBGCL| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJPBAJEPAGE",
-            |m: &INHMDFDBGCL| { &m.HJPBAJEPAGE },
-            |m: &mut INHMDFDBGCL| { &mut m.HJPBAJEPAGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJGILAADCPN",
             |m: &INHMDFDBGCL| { &m.PJGILAADCPN },
             |m: &mut INHMDFDBGCL| { &mut m.PJGILAADCPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "turn",
+            |m: &INHMDFDBGCL| { &m.turn },
+            |m: &mut INHMDFDBGCL| { &mut m.turn },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLNGFDPINDB",
+            |m: &INHMDFDBGCL| { &m.CLNGFDPINDB },
+            |m: &mut INHMDFDBGCL| { &mut m.CLNGFDPINDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<INHMDFDBGCL>(
             "INHMDFDBGCL",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for INHMDFDBGCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.CLNGFDPINDB = is.read_string()?;
-                },
                 8 => {
                     self.room_id = is.read_uint64()?;
                 },
                 16 => {
                     self.MPDHNFNCIEA = is.read_uint32()?;
                 },
-                32 => {
-                    self.HJPBAJEPAGE = is.read_uint32()?;
-                },
                 24 => {
                     self.PJGILAADCPN = is.read_uint32()?;
+                },
+                32 => {
+                    self.turn = is.read_uint32()?;
+                },
+                42 => {
+                    self.CLNGFDPINDB = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for INHMDFDBGCL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.CLNGFDPINDB.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.CLNGFDPINDB);
-        }
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.room_id);
         }
         if self.MPDHNFNCIEA != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
         }
-        if self.HJPBAJEPAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HJPBAJEPAGE);
-        }
         if self.PJGILAADCPN != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.PJGILAADCPN);
+        }
+        if self.turn != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.turn);
+        }
+        if !self.CLNGFDPINDB.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.CLNGFDPINDB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for INHMDFDBGCL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.CLNGFDPINDB.is_empty() {
-            os.write_string(5, &self.CLNGFDPINDB)?;
-        }
         if self.room_id != 0 {
             os.write_uint64(1, self.room_id)?;
         }
         if self.MPDHNFNCIEA != 0 {
             os.write_uint32(2, self.MPDHNFNCIEA)?;
         }
-        if self.HJPBAJEPAGE != 0 {
-            os.write_uint32(4, self.HJPBAJEPAGE)?;
-        }
         if self.PJGILAADCPN != 0 {
             os.write_uint32(3, self.PJGILAADCPN)?;
+        }
+        if self.turn != 0 {
+            os.write_uint32(4, self.turn)?;
+        }
+        if !self.CLNGFDPINDB.is_empty() {
+            os.write_string(5, &self.CLNGFDPINDB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for INHMDFDBGCL {
     }
 
     fn clear(&mut self) {
-        self.CLNGFDPINDB.clear();
         self.room_id = 0;
         self.MPDHNFNCIEA = 0;
-        self.HJPBAJEPAGE = 0;
         self.PJGILAADCPN = 0;
+        self.turn = 0;
+        self.CLNGFDPINDB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static INHMDFDBGCL {
         static instance: INHMDFDBGCL = INHMDFDBGCL {
-            CLNGFDPINDB: ::std::string::String::new(),
             room_id: 0,
             MPDHNFNCIEA: 0,
-            HJPBAJEPAGE: 0,
             PJGILAADCPN: 0,
+            turn: 0,
+            CLNGFDPINDB: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for INHMDFDBGCL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11INHMDFDBGCL.proto\"\xae\x01\n\x0bINHMDFDBGCL\x12\x20\n\x0bCLNGFDPI\
-    NDB\x18\x05\x20\x01(\tR\x0bCLNGFDPINDB\x12\x17\n\x07room_id\x18\x01\x20\
-    \x01(\x04R\x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01(\rR\x0bMPD\
-    HNFNCIEA\x12\x20\n\x0bHJPBAJEPAGE\x18\x04\x20\x01(\rR\x0bHJPBAJEPAGE\x12\
-    \x20\n\x0bPJGILAADCPN\x18\x03\x20\x01(\rR\x0bPJGILAADCPNb\x06proto3\
+    \n\x11INHMDFDBGCL.proto\"\xa0\x01\n\x0bINHMDFDBGCL\x12\x17\n\x07room_id\
+    \x18\x01\x20\x01(\x04R\x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\
+    \x01(\rR\x0bMPDHNFNCIEA\x12\x20\n\x0bPJGILAADCPN\x18\x03\x20\x01(\rR\x0b\
+    PJGILAADCPN\x12\x12\n\x04turn\x18\x04\x20\x01(\rR\x04turn\x12\x20\n\x0bC\
+    LNGFDPINDB\x18\x05\x20\x01(\tR\x0bCLNGFDPINDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

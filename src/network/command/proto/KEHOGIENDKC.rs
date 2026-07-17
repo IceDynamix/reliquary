@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KEHOGIENDKC {
     // message fields
-    // @@protoc_insertion_point(field:KEHOGIENDKC.authkey_ver)
-    pub authkey_ver: ::protobuf::EnumOrUnknown<super::MMLAPDEBFJM::MMLAPDEBFJM>,
-    // @@protoc_insertion_point(field:KEHOGIENDKC.AIBJEFAPGMN)
-    pub AIBJEFAPGMN: u32,
     // @@protoc_insertion_point(field:KEHOGIENDKC.DACCGMCONBP)
     pub DACCGMCONBP: u32,
+    // @@protoc_insertion_point(field:KEHOGIENDKC.AIBJEFAPGMN)
+    pub AIBJEFAPGMN: u32,
+    // @@protoc_insertion_point(field:KEHOGIENDKC.authkey_ver)
+    pub authkey_ver: ::protobuf::EnumOrUnknown<super::MMLAPDEBFJM::MMLAPDEBFJM>,
     // special fields
     // @@protoc_insertion_point(special_field:KEHOGIENDKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl KEHOGIENDKC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "authkey_ver",
-            |m: &KEHOGIENDKC| { &m.authkey_ver },
-            |m: &mut KEHOGIENDKC| { &mut m.authkey_ver },
+            "DACCGMCONBP",
+            |m: &KEHOGIENDKC| { &m.DACCGMCONBP },
+            |m: &mut KEHOGIENDKC| { &mut m.DACCGMCONBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AIBJEFAPGMN",
@@ -64,9 +64,9 @@ impl KEHOGIENDKC {
             |m: &mut KEHOGIENDKC| { &mut m.AIBJEFAPGMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DACCGMCONBP",
-            |m: &KEHOGIENDKC| { &m.DACCGMCONBP },
-            |m: &mut KEHOGIENDKC| { &mut m.DACCGMCONBP },
+            "authkey_ver",
+            |m: &KEHOGIENDKC| { &m.authkey_ver },
+            |m: &mut KEHOGIENDKC| { &mut m.authkey_ver },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KEHOGIENDKC>(
             "KEHOGIENDKC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KEHOGIENDKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.authkey_ver = is.read_enum_or_unknown()?;
+                80 => {
+                    self.DACCGMCONBP = is.read_uint32()?;
                 },
-                40 => {
+                96 => {
                     self.AIBJEFAPGMN = is.read_uint32()?;
                 },
-                48 => {
-                    self.DACCGMCONBP = is.read_uint32()?;
+                120 => {
+                    self.authkey_ver = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KEHOGIENDKC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.authkey_ver.value());
+        if self.DACCGMCONBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.DACCGMCONBP);
         }
         if self.AIBJEFAPGMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AIBJEFAPGMN);
+            my_size += ::protobuf::rt::uint32_size(12, self.AIBJEFAPGMN);
         }
-        if self.DACCGMCONBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DACCGMCONBP);
+        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(15, self.authkey_ver.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KEHOGIENDKC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.authkey_ver))?;
+        if self.DACCGMCONBP != 0 {
+            os.write_uint32(10, self.DACCGMCONBP)?;
         }
         if self.AIBJEFAPGMN != 0 {
-            os.write_uint32(5, self.AIBJEFAPGMN)?;
+            os.write_uint32(12, self.AIBJEFAPGMN)?;
         }
-        if self.DACCGMCONBP != 0 {
-            os.write_uint32(6, self.DACCGMCONBP)?;
+        if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.authkey_ver))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KEHOGIENDKC {
     }
 
     fn clear(&mut self) {
-        self.authkey_ver = ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ);
-        self.AIBJEFAPGMN = 0;
         self.DACCGMCONBP = 0;
+        self.AIBJEFAPGMN = 0;
+        self.authkey_ver = ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KEHOGIENDKC {
         static instance: KEHOGIENDKC = KEHOGIENDKC {
-            authkey_ver: ::protobuf::EnumOrUnknown::from_i32(0),
-            AIBJEFAPGMN: 0,
             DACCGMCONBP: 0,
+            AIBJEFAPGMN: 0,
+            authkey_ver: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for KEHOGIENDKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEHOGIENDKC.proto\x1a\x11MMLAPDEBFJM.proto\"\x80\x01\n\x0bKEHOGIEN\
-    DKC\x12-\n\x0bauthkey_ver\x18\t\x20\x01(\x0e2\x0c.MMLAPDEBFJMR\nauthkeyV\
-    er\x12\x20\n\x0bAIBJEFAPGMN\x18\x05\x20\x01(\rR\x0bAIBJEFAPGMN\x12\x20\n\
-    \x0bDACCGMCONBP\x18\x06\x20\x01(\rR\x0bDACCGMCONBPb\x06proto3\
+    DKC\x12\x20\n\x0bDACCGMCONBP\x18\n\x20\x01(\rR\x0bDACCGMCONBP\x12\x20\n\
+    \x0bAIBJEFAPGMN\x18\x0c\x20\x01(\rR\x0bAIBJEFAPGMN\x12-\n\x0bauthkey_ver\
+    \x18\x0f\x20\x01(\x0e2\x0c.MMLAPDEBFJMR\nauthkeyVerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

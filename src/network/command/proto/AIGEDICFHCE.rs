@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AIGEDICFHCE {
     // message fields
-    // @@protoc_insertion_point(field:AIGEDICFHCE.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:AIGEDICFHCE.IMGLLIBJAPC)
     pub IMGLLIBJAPC: u32,
+    // @@protoc_insertion_point(field:AIGEDICFHCE.is_win)
+    pub is_win: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AIGEDICFHCE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AIGEDICFHCE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &AIGEDICFHCE| { &m.is_win },
-            |m: &mut AIGEDICFHCE| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IMGLLIBJAPC",
             |m: &AIGEDICFHCE| { &m.IMGLLIBJAPC },
             |m: &mut AIGEDICFHCE| { &mut m.IMGLLIBJAPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &AIGEDICFHCE| { &m.is_win },
+            |m: &mut AIGEDICFHCE| { &mut m.is_win },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AIGEDICFHCE>(
             "AIGEDICFHCE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AIGEDICFHCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.is_win = is.read_bool()?;
-                },
-                80 => {
+                56 => {
                     self.IMGLLIBJAPC = is.read_uint32()?;
+                },
+                72 => {
+                    self.is_win = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AIGEDICFHCE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IMGLLIBJAPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.IMGLLIBJAPC);
+        }
         if self.is_win != false {
             my_size += 1 + 1;
-        }
-        if self.IMGLLIBJAPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IMGLLIBJAPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AIGEDICFHCE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_win != false {
-            os.write_bool(2, self.is_win)?;
-        }
         if self.IMGLLIBJAPC != 0 {
-            os.write_uint32(10, self.IMGLLIBJAPC)?;
+            os.write_uint32(7, self.IMGLLIBJAPC)?;
+        }
+        if self.is_win != false {
+            os.write_bool(9, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AIGEDICFHCE {
     }
 
     fn clear(&mut self) {
-        self.is_win = false;
         self.IMGLLIBJAPC = 0;
+        self.is_win = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIGEDICFHCE {
         static instance: AIGEDICFHCE = AIGEDICFHCE {
-            is_win: false,
             IMGLLIBJAPC: 0,
+            is_win: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AIGEDICFHCE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AIGEDICFHCE.proto\"F\n\x0bAIGEDICFHCE\x12\x15\n\x06is_win\x18\x02\
-    \x20\x01(\x08R\x05isWin\x12\x20\n\x0bIMGLLIBJAPC\x18\n\x20\x01(\rR\x0bIM\
-    GLLIBJAPCb\x06proto3\
+    \n\x11AIGEDICFHCE.proto\"F\n\x0bAIGEDICFHCE\x12\x20\n\x0bIMGLLIBJAPC\x18\
+    \x07\x20\x01(\rR\x0bIMGLLIBJAPC\x12\x15\n\x06is_win\x18\t\x20\x01(\x08R\
+    \x05isWinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

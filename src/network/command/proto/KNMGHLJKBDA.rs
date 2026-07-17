@@ -30,16 +30,16 @@ pub struct KNMGHLJKBDA {
     // message fields
     // @@protoc_insertion_point(field:KNMGHLJKBDA.room_id)
     pub room_id: u64,
-    // @@protoc_insertion_point(field:KNMGHLJKBDA.reason)
-    pub reason: u32,
     // @@protoc_insertion_point(field:KNMGHLJKBDA.MPDHNFNCIEA)
     pub MPDHNFNCIEA: u32,
-    // @@protoc_insertion_point(field:KNMGHLJKBDA.type)
-    pub type_: u32,
+    // @@protoc_insertion_point(field:KNMGHLJKBDA.turn)
+    pub turn: u32,
     // @@protoc_insertion_point(field:KNMGHLJKBDA.OIEMGLCGIOM)
     pub OIEMGLCGIOM: u32,
-    // @@protoc_insertion_point(field:KNMGHLJKBDA.HJPBAJEPAGE)
-    pub HJPBAJEPAGE: u32,
+    // @@protoc_insertion_point(field:KNMGHLJKBDA.type)
+    pub type_: u32,
+    // @@protoc_insertion_point(field:KNMGHLJKBDA.reason)
+    pub reason: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KNMGHLJKBDA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,19 +65,14 @@ impl KNMGHLJKBDA {
             |m: &mut KNMGHLJKBDA| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &KNMGHLJKBDA| { &m.reason },
-            |m: &mut KNMGHLJKBDA| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MPDHNFNCIEA",
             |m: &KNMGHLJKBDA| { &m.MPDHNFNCIEA },
             |m: &mut KNMGHLJKBDA| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &KNMGHLJKBDA| { &m.type_ },
-            |m: &mut KNMGHLJKBDA| { &mut m.type_ },
+            "turn",
+            |m: &KNMGHLJKBDA| { &m.turn },
+            |m: &mut KNMGHLJKBDA| { &mut m.turn },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OIEMGLCGIOM",
@@ -85,9 +80,14 @@ impl KNMGHLJKBDA {
             |m: &mut KNMGHLJKBDA| { &mut m.OIEMGLCGIOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJPBAJEPAGE",
-            |m: &KNMGHLJKBDA| { &m.HJPBAJEPAGE },
-            |m: &mut KNMGHLJKBDA| { &mut m.HJPBAJEPAGE },
+            "type",
+            |m: &KNMGHLJKBDA| { &m.type_ },
+            |m: &mut KNMGHLJKBDA| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &KNMGHLJKBDA| { &m.reason },
+            |m: &mut KNMGHLJKBDA| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNMGHLJKBDA>(
             "KNMGHLJKBDA",
@@ -110,20 +110,20 @@ impl ::protobuf::Message for KNMGHLJKBDA {
                 8 => {
                     self.room_id = is.read_uint64()?;
                 },
-                48 => {
-                    self.reason = is.read_uint32()?;
-                },
                 16 => {
                     self.MPDHNFNCIEA = is.read_uint32()?;
                 },
-                40 => {
-                    self.type_ = is.read_uint32()?;
+                24 => {
+                    self.turn = is.read_uint32()?;
                 },
                 32 => {
                     self.OIEMGLCGIOM = is.read_uint32()?;
                 },
-                24 => {
-                    self.HJPBAJEPAGE = is.read_uint32()?;
+                40 => {
+                    self.type_ = is.read_uint32()?;
+                },
+                48 => {
+                    self.reason = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,20 +140,20 @@ impl ::protobuf::Message for KNMGHLJKBDA {
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.room_id);
         }
-        if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.reason);
-        }
         if self.MPDHNFNCIEA != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
         }
-        if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.type_);
+        if self.turn != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.turn);
         }
         if self.OIEMGLCGIOM != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.OIEMGLCGIOM);
         }
-        if self.HJPBAJEPAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HJPBAJEPAGE);
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.type_);
+        }
+        if self.reason != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,20 +164,20 @@ impl ::protobuf::Message for KNMGHLJKBDA {
         if self.room_id != 0 {
             os.write_uint64(1, self.room_id)?;
         }
-        if self.reason != 0 {
-            os.write_uint32(6, self.reason)?;
-        }
         if self.MPDHNFNCIEA != 0 {
             os.write_uint32(2, self.MPDHNFNCIEA)?;
         }
-        if self.type_ != 0 {
-            os.write_uint32(5, self.type_)?;
+        if self.turn != 0 {
+            os.write_uint32(3, self.turn)?;
         }
         if self.OIEMGLCGIOM != 0 {
             os.write_uint32(4, self.OIEMGLCGIOM)?;
         }
-        if self.HJPBAJEPAGE != 0 {
-            os.write_uint32(3, self.HJPBAJEPAGE)?;
+        if self.type_ != 0 {
+            os.write_uint32(5, self.type_)?;
+        }
+        if self.reason != 0 {
+            os.write_uint32(6, self.reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for KNMGHLJKBDA {
 
     fn clear(&mut self) {
         self.room_id = 0;
-        self.reason = 0;
         self.MPDHNFNCIEA = 0;
-        self.type_ = 0;
+        self.turn = 0;
         self.OIEMGLCGIOM = 0;
-        self.HJPBAJEPAGE = 0;
+        self.type_ = 0;
+        self.reason = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNMGHLJKBDA {
         static instance: KNMGHLJKBDA = KNMGHLJKBDA {
             room_id: 0,
-            reason: 0,
             MPDHNFNCIEA: 0,
-            type_: 0,
+            turn: 0,
             OIEMGLCGIOM: 0,
-            HJPBAJEPAGE: 0,
+            type_: 0,
+            reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,12 +237,12 @@ impl ::protobuf::reflect::ProtobufValue for KNMGHLJKBDA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNMGHLJKBDA.proto\"\xb8\x01\n\x0bKNMGHLJKBDA\x12\x17\n\x07room_id\
-    \x18\x01\x20\x01(\x04R\x06roomId\x12\x16\n\x06reason\x18\x06\x20\x01(\rR\
-    \x06reason\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01(\rR\x0bMPDHNFNCIEA\
-    \x12\x12\n\x04type\x18\x05\x20\x01(\rR\x04type\x12\x20\n\x0bOIEMGLCGIOM\
-    \x18\x04\x20\x01(\rR\x0bOIEMGLCGIOM\x12\x20\n\x0bHJPBAJEPAGE\x18\x03\x20\
-    \x01(\rR\x0bHJPBAJEPAGEb\x06proto3\
+    \n\x11KNMGHLJKBDA.proto\"\xaa\x01\n\x0bKNMGHLJKBDA\x12\x17\n\x07room_id\
+    \x18\x01\x20\x01(\x04R\x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\
+    \x01(\rR\x0bMPDHNFNCIEA\x12\x12\n\x04turn\x18\x03\x20\x01(\rR\x04turn\
+    \x12\x20\n\x0bOIEMGLCGIOM\x18\x04\x20\x01(\rR\x0bOIEMGLCGIOM\x12\x12\n\
+    \x04type\x18\x05\x20\x01(\rR\x04type\x12\x16\n\x06reason\x18\x06\x20\x01\
+    (\rR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

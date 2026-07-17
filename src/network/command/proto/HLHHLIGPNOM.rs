@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HLHHLIGPNOM {
     // message fields
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.grid_fight_item_list)
-    pub grid_fight_item_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.MCJMHBIECMN)
     pub MCJMHBIECMN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.NALMBOOCCIN)
-    pub NALMBOOCCIN: u32,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.grid_fight_item_list)
+    pub grid_fight_item_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.source)
     pub source: ::protobuf::EnumOrUnknown<super::GridFightEquipTrackSource::GridFightEquipTrackSource>,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.BJDOINAHDLN)
     pub BJDOINAHDLN: bool,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.priority)
+    pub priority: u32,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.BGFFICLCKHE)
     pub BGFFICLCKHE: u32,
     // special fields
@@ -60,19 +60,14 @@ impl HLHHLIGPNOM {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_item_list",
-            |m: &HLHHLIGPNOM| { &m.grid_fight_item_list },
-            |m: &mut HLHHLIGPNOM| { &mut m.grid_fight_item_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MCJMHBIECMN",
             |m: &HLHHLIGPNOM| { &m.MCJMHBIECMN },
             |m: &mut HLHHLIGPNOM| { &mut m.MCJMHBIECMN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NALMBOOCCIN",
-            |m: &HLHHLIGPNOM| { &m.NALMBOOCCIN },
-            |m: &mut HLHHLIGPNOM| { &mut m.NALMBOOCCIN },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_item_list",
+            |m: &HLHHLIGPNOM| { &m.grid_fight_item_list },
+            |m: &mut HLHHLIGPNOM| { &mut m.grid_fight_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source",
@@ -83,6 +78,11 @@ impl HLHHLIGPNOM {
             "BJDOINAHDLN",
             |m: &HLHHLIGPNOM| { &m.BJDOINAHDLN },
             |m: &mut HLHHLIGPNOM| { &mut m.BJDOINAHDLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "priority",
+            |m: &HLHHLIGPNOM| { &m.priority },
+            |m: &mut HLHHLIGPNOM| { &mut m.priority },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BGFFICLCKHE",
@@ -107,28 +107,28 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
+                },
+                8 => {
+                    self.MCJMHBIECMN.push(is.read_uint32()?);
+                },
                 42 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_item_list)?;
                 },
                 40 => {
                     self.grid_fight_item_list.push(is.read_uint32()?);
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
-                },
-                104 => {
-                    self.MCJMHBIECMN.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.NALMBOOCCIN = is.read_uint32()?;
-                },
-                120 => {
+                48 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                72 => {
                     self.BJDOINAHDLN = is.read_bool()?;
                 },
-                112 => {
+                80 => {
+                    self.priority = is.read_uint32()?;
+                },
+                120 => {
                     self.BGFFICLCKHE = is.read_uint32()?;
                 },
                 tag => {
@@ -143,19 +143,19 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MCJMHBIECMN);
         my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.grid_fight_item_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.MCJMHBIECMN);
-        if self.NALMBOOCCIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NALMBOOCCIN);
-        }
         if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP) {
-            my_size += ::protobuf::rt::int32_size(15, self.source.value());
+            my_size += ::protobuf::rt::int32_size(6, self.source.value());
         }
         if self.BJDOINAHDLN != false {
             my_size += 1 + 1;
         }
+        if self.priority != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.priority);
+        }
         if self.BGFFICLCKHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BGFFICLCKHE);
+            my_size += ::protobuf::rt::uint32_size(15, self.BGFFICLCKHE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,19 +163,19 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.MCJMHBIECMN)?;
         os.write_repeated_packed_uint32(5, &self.grid_fight_item_list)?;
-        os.write_repeated_packed_uint32(13, &self.MCJMHBIECMN)?;
-        if self.NALMBOOCCIN != 0 {
-            os.write_uint32(11, self.NALMBOOCCIN)?;
-        }
         if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if self.BJDOINAHDLN != false {
-            os.write_bool(7, self.BJDOINAHDLN)?;
+            os.write_bool(9, self.BJDOINAHDLN)?;
+        }
+        if self.priority != 0 {
+            os.write_uint32(10, self.priority)?;
         }
         if self.BGFFICLCKHE != 0 {
-            os.write_uint32(14, self.BGFFICLCKHE)?;
+            os.write_uint32(15, self.BGFFICLCKHE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -194,22 +194,22 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_item_list.clear();
         self.MCJMHBIECMN.clear();
-        self.NALMBOOCCIN = 0;
+        self.grid_fight_item_list.clear();
         self.source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP);
         self.BJDOINAHDLN = false;
+        self.priority = 0;
         self.BGFFICLCKHE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HLHHLIGPNOM {
         static instance: HLHHLIGPNOM = HLHHLIGPNOM {
-            grid_fight_item_list: ::std::vec::Vec::new(),
             MCJMHBIECMN: ::std::vec::Vec::new(),
-            NALMBOOCCIN: 0,
+            grid_fight_item_list: ::std::vec::Vec::new(),
             source: ::protobuf::EnumOrUnknown::from_i32(0),
             BJDOINAHDLN: false,
+            priority: 0,
             BGFFICLCKHE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -235,13 +235,13 @@ impl ::protobuf::reflect::ProtobufValue for HLHHLIGPNOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HLHHLIGPNOM.proto\x1a\x1fGridFightEquipTrackSource.proto\"\xfa\x01\
-    \n\x0bHLHHLIGPNOM\x12/\n\x14grid_fight_item_list\x18\x05\x20\x03(\rR\x11\
-    gridFightItemList\x12\x20\n\x0bMCJMHBIECMN\x18\r\x20\x03(\rR\x0bMCJMHBIE\
-    CMN\x12\x20\n\x0bNALMBOOCCIN\x18\x0b\x20\x01(\rR\x0bNALMBOOCCIN\x122\n\
-    \x06source\x18\x0f\x20\x01(\x0e2\x1a.GridFightEquipTrackSourceR\x06sourc\
-    e\x12\x20\n\x0bBJDOINAHDLN\x18\x07\x20\x01(\x08R\x0bBJDOINAHDLN\x12\x20\
-    \n\x0bBGFFICLCKHE\x18\x0e\x20\x01(\rR\x0bBGFFICLCKHEb\x06proto3\
+    \n\x11HLHHLIGPNOM.proto\x1a\x1fGridFightEquipTrackSource.proto\"\xf4\x01\
+    \n\x0bHLHHLIGPNOM\x12\x20\n\x0bMCJMHBIECMN\x18\x01\x20\x03(\rR\x0bMCJMHB\
+    IECMN\x12/\n\x14grid_fight_item_list\x18\x05\x20\x03(\rR\x11gridFightIte\
+    mList\x122\n\x06source\x18\x06\x20\x01(\x0e2\x1a.GridFightEquipTrackSour\
+    ceR\x06source\x12\x20\n\x0bBJDOINAHDLN\x18\t\x20\x01(\x08R\x0bBJDOINAHDL\
+    N\x12\x1a\n\x08priority\x18\n\x20\x01(\rR\x08priority\x12\x20\n\x0bBGFFI\
+    CLCKHE\x18\x0f\x20\x01(\rR\x0bBGFFICLCKHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

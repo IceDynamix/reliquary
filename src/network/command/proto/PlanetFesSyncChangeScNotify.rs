@@ -72,7 +72,7 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     self.DGNGMJMPFGK.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DGNGMJMPFGK {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSyncChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesSyncChangeScNotify.proto\x1a\x11LEJNBBLNNDM.proto\"M\n\x1bPl\
-    anetFesSyncChangeScNotify\x12.\n\x0bDGNGMJMPFGK\x18\x02\x20\x03(\x0b2\
-    \x0c.LEJNBBLNNDMR\x0bDGNGMJMPFGKb\x06proto3\
+    anetFesSyncChangeScNotify\x12.\n\x0bDGNGMJMPFGK\x18\n\x20\x03(\x0b2\x0c.\
+    LEJNBBLNNDMR\x0bDGNGMJMPFGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

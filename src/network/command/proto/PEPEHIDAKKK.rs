@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEPEHIDAKKK {
     // message fields
-    // @@protoc_insertion_point(field:PEPEHIDAKKK.PMFAHDMLOFK)
-    pub PMFAHDMLOFK: u32,
     // @@protoc_insertion_point(field:PEPEHIDAKKK.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:PEPEHIDAKKK.PMFAHDMLOFK)
+    pub PMFAHDMLOFK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PEPEHIDAKKK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PEPEHIDAKKK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMFAHDMLOFK",
-            |m: &PEPEHIDAKKK| { &m.PMFAHDMLOFK },
-            |m: &mut PEPEHIDAKKK| { &mut m.PMFAHDMLOFK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &PEPEHIDAKKK| { &m.avatar_id },
             |m: &mut PEPEHIDAKKK| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PMFAHDMLOFK",
+            |m: &PEPEHIDAKKK| { &m.PMFAHDMLOFK },
+            |m: &mut PEPEHIDAKKK| { &mut m.PMFAHDMLOFK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEPEHIDAKKK>(
             "PEPEHIDAKKK",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for PEPEHIDAKKK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.PMFAHDMLOFK = is.read_uint32()?;
-                },
-                24 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.PMFAHDMLOFK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PEPEHIDAKKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PMFAHDMLOFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PMFAHDMLOFK);
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
+        }
+        if self.PMFAHDMLOFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PMFAHDMLOFK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PEPEHIDAKKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PMFAHDMLOFK != 0 {
-            os.write_uint32(2, self.PMFAHDMLOFK)?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(3, self.avatar_id)?;
+            os.write_uint32(2, self.avatar_id)?;
+        }
+        if self.PMFAHDMLOFK != 0 {
+            os.write_uint32(6, self.PMFAHDMLOFK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PEPEHIDAKKK {
     }
 
     fn clear(&mut self) {
-        self.PMFAHDMLOFK = 0;
         self.avatar_id = 0;
+        self.PMFAHDMLOFK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEPEHIDAKKK {
         static instance: PEPEHIDAKKK = PEPEHIDAKKK {
-            PMFAHDMLOFK: 0,
             avatar_id: 0,
+            PMFAHDMLOFK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PEPEHIDAKKK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PEPEHIDAKKK.proto\"L\n\x0bPEPEHIDAKKK\x12\x20\n\x0bPMFAHDMLOFK\x18\
-    \x02\x20\x01(\rR\x0bPMFAHDMLOFK\x12\x1b\n\tavatar_id\x18\x03\x20\x01(\rR\
-    \x08avatarIdb\x06proto3\
+    \n\x11PEPEHIDAKKK.proto\"L\n\x0bPEPEHIDAKKK\x12\x1b\n\tavatar_id\x18\x02\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bPMFAHDMLOFK\x18\x06\x20\x01(\rR\
+    \x0bPMFAHDMLOFKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

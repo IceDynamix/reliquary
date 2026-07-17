@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IIPAHEHJJJL {
     // message fields
-    // @@protoc_insertion_point(field:IIPAHEHJJJL.MBGGCJIJEAK)
-    pub MBGGCJIJEAK: ::std::vec::Vec<super::ECOGPFKDJDF::ECOGPFKDJDF>,
     // @@protoc_insertion_point(field:IIPAHEHJJJL.room_id)
     pub room_id: ::std::string::String,
+    // @@protoc_insertion_point(field:IIPAHEHJJJL.LOPNADHJKBF)
+    pub LOPNADHJKBF: u32,
+    // @@protoc_insertion_point(field:IIPAHEHJJJL.section_id)
+    pub section_id: u32,
     // @@protoc_insertion_point(field:IIPAHEHJJJL.player_info)
     pub player_info: ::protobuf::MessageField<super::MNIAIAGFEBP::MNIAIAGFEBP>,
-    // @@protoc_insertion_point(field:IIPAHEHJJJL.GDLMMADBEMM)
-    pub GDLMMADBEMM: ::std::vec::Vec<super::DBNNBCGMIGP::DBNNBCGMIGP>,
+    // @@protoc_insertion_point(field:IIPAHEHJJJL.MBGGCJIJEAK)
+    pub MBGGCJIJEAK: ::std::vec::Vec<super::ECOGPFKDJDF::ECOGPFKDJDF>,
     // @@protoc_insertion_point(field:IIPAHEHJJJL.KPOJFEJNIHK)
     pub KPOJFEJNIHK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IIPAHEHJJJL.GMDPHHPGGFE)
     pub GMDPHHPGGFE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IIPAHEHJJJL.GGGMDECDEBB)
     pub GGGMDECDEBB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IIPAHEHJJJL.LOPNADHJKBF)
-    pub LOPNADHJKBF: u32,
-    // @@protoc_insertion_point(field:IIPAHEHJJJL.section_id)
-    pub section_id: u32,
+    // @@protoc_insertion_point(field:IIPAHEHJJJL.GDLMMADBEMM)
+    pub GDLMMADBEMM: ::std::vec::Vec<super::DBNNBCGMIGP::DBNNBCGMIGP>,
     // special fields
     // @@protoc_insertion_point(special_field:IIPAHEHJJJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,15 +65,20 @@ impl IIPAHEHJJJL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MBGGCJIJEAK",
-            |m: &IIPAHEHJJJL| { &m.MBGGCJIJEAK },
-            |m: &mut IIPAHEHJJJL| { &mut m.MBGGCJIJEAK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &IIPAHEHJJJL| { &m.room_id },
             |m: &mut IIPAHEHJJJL| { &mut m.room_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOPNADHJKBF",
+            |m: &IIPAHEHJJJL| { &m.LOPNADHJKBF },
+            |m: &mut IIPAHEHJJJL| { &mut m.LOPNADHJKBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "section_id",
+            |m: &IIPAHEHJJJL| { &m.section_id },
+            |m: &mut IIPAHEHJJJL| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MNIAIAGFEBP::MNIAIAGFEBP>(
             "player_info",
@@ -81,9 +86,9 @@ impl IIPAHEHJJJL {
             |m: &mut IIPAHEHJJJL| { &mut m.player_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GDLMMADBEMM",
-            |m: &IIPAHEHJJJL| { &m.GDLMMADBEMM },
-            |m: &mut IIPAHEHJJJL| { &mut m.GDLMMADBEMM },
+            "MBGGCJIJEAK",
+            |m: &IIPAHEHJJJL| { &m.MBGGCJIJEAK },
+            |m: &mut IIPAHEHJJJL| { &mut m.MBGGCJIJEAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KPOJFEJNIHK",
@@ -100,15 +105,10 @@ impl IIPAHEHJJJL {
             |m: &IIPAHEHJJJL| { &m.GGGMDECDEBB },
             |m: &mut IIPAHEHJJJL| { &mut m.GGGMDECDEBB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPNADHJKBF",
-            |m: &IIPAHEHJJJL| { &m.LOPNADHJKBF },
-            |m: &mut IIPAHEHJJJL| { &mut m.LOPNADHJKBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &IIPAHEHJJJL| { &m.section_id },
-            |m: &mut IIPAHEHJJJL| { &mut m.section_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GDLMMADBEMM",
+            |m: &IIPAHEHJJJL| { &m.GDLMMADBEMM },
+            |m: &mut IIPAHEHJJJL| { &mut m.GDLMMADBEMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IIPAHEHJJJL>(
             "IIPAHEHJJJL",
@@ -128,17 +128,20 @@ impl ::protobuf::Message for IIPAHEHJJJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.MBGGCJIJEAK.push(is.read_message()?);
-                },
                 10 => {
                     self.room_id = is.read_string()?;
+                },
+                16 => {
+                    self.LOPNADHJKBF = is.read_uint32()?;
+                },
+                24 => {
+                    self.section_id = is.read_uint32()?;
                 },
                 34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
-                74 => {
-                    self.GDLMMADBEMM.push(is.read_message()?);
+                42 => {
+                    self.MBGGCJIJEAK.push(is.read_message()?);
                 },
                 50 => {
                     is.read_repeated_packed_uint32_into(&mut self.KPOJFEJNIHK)?;
@@ -158,11 +161,8 @@ impl ::protobuf::Message for IIPAHEHJJJL {
                 64 => {
                     self.GGGMDECDEBB.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.LOPNADHJKBF = is.read_uint32()?;
-                },
-                24 => {
-                    self.section_id = is.read_uint32()?;
+                74 => {
+                    self.GDLMMADBEMM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -176,57 +176,57 @@ impl ::protobuf::Message for IIPAHEHJJJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MBGGCJIJEAK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if !self.room_id.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.room_id);
         }
-        if let Some(v) = self.player_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.GDLMMADBEMM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KPOJFEJNIHK);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GMDPHHPGGFE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GGGMDECDEBB);
         if self.LOPNADHJKBF != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.LOPNADHJKBF);
         }
         if self.section_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.section_id);
         }
+        if let Some(v) = self.player_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.MBGGCJIJEAK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KPOJFEJNIHK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GMDPHHPGGFE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GGGMDECDEBB);
+        for value in &self.GDLMMADBEMM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MBGGCJIJEAK {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if !self.room_id.is_empty() {
             os.write_string(1, &self.room_id)?;
         }
-        if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        for v in &self.GDLMMADBEMM {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        os.write_repeated_packed_uint32(6, &self.KPOJFEJNIHK)?;
-        os.write_repeated_packed_uint32(7, &self.GMDPHHPGGFE)?;
-        os.write_repeated_packed_uint32(8, &self.GGGMDECDEBB)?;
         if self.LOPNADHJKBF != 0 {
             os.write_uint32(2, self.LOPNADHJKBF)?;
         }
         if self.section_id != 0 {
             os.write_uint32(3, self.section_id)?;
         }
+        if let Some(v) = self.player_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        for v in &self.MBGGCJIJEAK {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        os.write_repeated_packed_uint32(6, &self.KPOJFEJNIHK)?;
+        os.write_repeated_packed_uint32(7, &self.GMDPHHPGGFE)?;
+        os.write_repeated_packed_uint32(8, &self.GGGMDECDEBB)?;
+        for v in &self.GDLMMADBEMM {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -244,29 +244,29 @@ impl ::protobuf::Message for IIPAHEHJJJL {
     }
 
     fn clear(&mut self) {
-        self.MBGGCJIJEAK.clear();
         self.room_id.clear();
+        self.LOPNADHJKBF = 0;
+        self.section_id = 0;
         self.player_info.clear();
-        self.GDLMMADBEMM.clear();
+        self.MBGGCJIJEAK.clear();
         self.KPOJFEJNIHK.clear();
         self.GMDPHHPGGFE.clear();
         self.GGGMDECDEBB.clear();
-        self.LOPNADHJKBF = 0;
-        self.section_id = 0;
+        self.GDLMMADBEMM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IIPAHEHJJJL {
         static instance: IIPAHEHJJJL = IIPAHEHJJJL {
-            MBGGCJIJEAK: ::std::vec::Vec::new(),
             room_id: ::std::string::String::new(),
+            LOPNADHJKBF: 0,
+            section_id: 0,
             player_info: ::protobuf::MessageField::none(),
-            GDLMMADBEMM: ::std::vec::Vec::new(),
+            MBGGCJIJEAK: ::std::vec::Vec::new(),
             KPOJFEJNIHK: ::std::vec::Vec::new(),
             GMDPHHPGGFE: ::std::vec::Vec::new(),
             GGGMDECDEBB: ::std::vec::Vec::new(),
-            LOPNADHJKBF: 0,
-            section_id: 0,
+            GDLMMADBEMM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,15 +292,15 @@ impl ::protobuf::reflect::ProtobufValue for IIPAHEHJJJL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IIPAHEHJJJL.proto\x1a\x11DBNNBCGMIGP.proto\x1a\x11ECOGPFKDJDF.prot\
-    o\x1a\x11MNIAIAGFEBP.proto\"\xdc\x02\n\x0bIIPAHEHJJJL\x12.\n\x0bMBGGCJIJ\
-    EAK\x18\x05\x20\x03(\x0b2\x0c.ECOGPFKDJDFR\x0bMBGGCJIJEAK\x12\x17\n\x07r\
-    oom_id\x18\x01\x20\x01(\tR\x06roomId\x12-\n\x0bplayer_info\x18\x04\x20\
-    \x01(\x0b2\x0c.MNIAIAGFEBPR\nplayerInfo\x12.\n\x0bGDLMMADBEMM\x18\t\x20\
-    \x03(\x0b2\x0c.DBNNBCGMIGPR\x0bGDLMMADBEMM\x12\x20\n\x0bKPOJFEJNIHK\x18\
-    \x06\x20\x03(\rR\x0bKPOJFEJNIHK\x12\x20\n\x0bGMDPHHPGGFE\x18\x07\x20\x03\
-    (\rR\x0bGMDPHHPGGFE\x12\x20\n\x0bGGGMDECDEBB\x18\x08\x20\x03(\rR\x0bGGGM\
-    DECDEBB\x12\x20\n\x0bLOPNADHJKBF\x18\x02\x20\x01(\rR\x0bLOPNADHJKBF\x12\
-    \x1d\n\nsection_id\x18\x03\x20\x01(\rR\tsectionIdb\x06proto3\
+    o\x1a\x11MNIAIAGFEBP.proto\"\xdc\x02\n\x0bIIPAHEHJJJL\x12\x17\n\x07room_\
+    id\x18\x01\x20\x01(\tR\x06roomId\x12\x20\n\x0bLOPNADHJKBF\x18\x02\x20\
+    \x01(\rR\x0bLOPNADHJKBF\x12\x1d\n\nsection_id\x18\x03\x20\x01(\rR\tsecti\
+    onId\x12-\n\x0bplayer_info\x18\x04\x20\x01(\x0b2\x0c.MNIAIAGFEBPR\nplaye\
+    rInfo\x12.\n\x0bMBGGCJIJEAK\x18\x05\x20\x03(\x0b2\x0c.ECOGPFKDJDFR\x0bMB\
+    GGCJIJEAK\x12\x20\n\x0bKPOJFEJNIHK\x18\x06\x20\x03(\rR\x0bKPOJFEJNIHK\
+    \x12\x20\n\x0bGMDPHHPGGFE\x18\x07\x20\x03(\rR\x0bGMDPHHPGGFE\x12\x20\n\
+    \x0bGGGMDECDEBB\x18\x08\x20\x03(\rR\x0bGGGMDECDEBB\x12.\n\x0bGDLMMADBEMM\
+    \x18\t\x20\x03(\x0b2\x0c.DBNNBCGMIGPR\x0bGDLMMADBEMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

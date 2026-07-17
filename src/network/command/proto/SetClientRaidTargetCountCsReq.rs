@@ -79,7 +79,7 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.KJKGHIEKNID = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KJKGHIEKNID != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KJKGHIEKNID);
+            my_size += ::protobuf::rt::uint32_size(1, self.KJKGHIEKNID);
         }
         if self.progress != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.progress);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KJKGHIEKNID != 0 {
-            os.write_uint32(6, self.KJKGHIEKNID)?;
+            os.write_uint32(1, self.KJKGHIEKNID)?;
         }
         if self.progress != 0 {
             os.write_uint32(12, self.progress)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountCsReq.proto\"]\n\x1dSetClientRaidTargetCountC\
-    sReq\x12\x20\n\x0bKJKGHIEKNID\x18\x06\x20\x01(\rR\x0bKJKGHIEKNID\x12\x1a\
+    sReq\x12\x20\n\x0bKJKGHIEKNID\x18\x01\x20\x01(\rR\x0bKJKGHIEKNID\x12\x1a\
     \n\x08progress\x18\x0c\x20\x01(\rR\x08progressb\x06proto3\
 ";
 

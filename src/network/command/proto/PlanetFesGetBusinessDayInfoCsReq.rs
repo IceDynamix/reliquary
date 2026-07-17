@@ -72,7 +72,7 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.EFILMAOHOBK = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EFILMAOHOBK != false {
-            os.write_bool(1, self.EFILMAOHOBK)?;
+            os.write_bool(4, self.EFILMAOHOBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetBusinessDayInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlanetFesGetBusinessDayInfoCsReq.proto\"D\n\x20PlanetFesGetBusinessDa\
-    yInfoCsReq\x12\x20\n\x0bEFILMAOHOBK\x18\x01\x20\x01(\x08R\x0bEFILMAOHOBK\
+    yInfoCsReq\x12\x20\n\x0bEFILMAOHOBK\x18\x04\x20\x01(\x08R\x0bEFILMAOHOBK\
     b\x06proto3\
 ";
 

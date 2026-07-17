@@ -30,10 +30,10 @@ pub struct RefreshTriggerByClientScNotify {
     // message fields
     // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_name)
     pub trigger_name: ::std::string::String,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_target_id_list)
-    pub trigger_target_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_entity_id)
     pub trigger_entity_id: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScNotify.trigger_target_id_list)
+    pub trigger_target_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RefreshTriggerByClientScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl RefreshTriggerByClientScNotify {
             |m: &RefreshTriggerByClientScNotify| { &m.trigger_name },
             |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_name },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "trigger_target_id_list",
-            |m: &RefreshTriggerByClientScNotify| { &m.trigger_target_id_list },
-            |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_target_id_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_entity_id",
             |m: &RefreshTriggerByClientScNotify| { &m.trigger_entity_id },
             |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "trigger_target_id_list",
+            |m: &RefreshTriggerByClientScNotify| { &m.trigger_target_id_list },
+            |m: &mut RefreshTriggerByClientScNotify| { &mut m.trigger_target_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RefreshTriggerByClientScNotify>(
             "RefreshTriggerByClientScNotify",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     self.trigger_name = is.read_string()?;
                 },
-                50 => {
+                72 => {
+                    self.trigger_entity_id = is.read_uint32()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.trigger_target_id_list)?;
                 },
-                48 => {
+                120 => {
                     self.trigger_target_id_list.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.trigger_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(2, &self.trigger_name);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.trigger_target_id_list);
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.trigger_entity_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.trigger_target_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.trigger_name.is_empty() {
-            os.write_string(7, &self.trigger_name)?;
+            os.write_string(2, &self.trigger_name)?;
         }
-        os.write_repeated_packed_uint32(6, &self.trigger_target_id_list)?;
         if self.trigger_entity_id != 0 {
-            os.write_uint32(5, self.trigger_entity_id)?;
+            os.write_uint32(9, self.trigger_entity_id)?;
         }
+        os.write_repeated_packed_uint32(15, &self.trigger_target_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScNotify {
 
     fn clear(&mut self) {
         self.trigger_name.clear();
-        self.trigger_target_id_list.clear();
         self.trigger_entity_id = 0;
+        self.trigger_target_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientScNotify {
         static instance: RefreshTriggerByClientScNotify = RefreshTriggerByClientScNotify {
             trigger_name: ::std::string::String::new(),
-            trigger_target_id_list: ::std::vec::Vec::new(),
             trigger_entity_id: 0,
+            trigger_target_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$RefreshTriggerByClientScNotify.proto\"\xa4\x01\n\x1eRefreshTriggerByC\
-    lientScNotify\x12!\n\x0ctrigger_name\x18\x07\x20\x01(\tR\x0btriggerName\
-    \x123\n\x16trigger_target_id_list\x18\x06\x20\x03(\rR\x13triggerTargetId\
-    List\x12*\n\x11trigger_entity_id\x18\x05\x20\x01(\rR\x0ftriggerEntityIdb\
+    lientScNotify\x12!\n\x0ctrigger_name\x18\x02\x20\x01(\tR\x0btriggerName\
+    \x12*\n\x11trigger_entity_id\x18\t\x20\x01(\rR\x0ftriggerEntityId\x123\n\
+    \x16trigger_target_id_list\x18\x0f\x20\x03(\rR\x13triggerTargetIdListb\
     \x06proto3\
 ";
 

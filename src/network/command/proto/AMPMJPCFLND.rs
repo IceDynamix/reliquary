@@ -30,8 +30,8 @@ pub struct AMPMJPCFLND {
     // message fields
     // @@protoc_insertion_point(field:AMPMJPCFLND.KLAJGAKAFCP)
     pub KLAJGAKAFCP: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
-    // @@protoc_insertion_point(field:AMPMJPCFLND.FEBKMOCOJLE)
-    pub FEBKMOCOJLE: bool,
+    // @@protoc_insertion_point(field:AMPMJPCFLND.is_open)
+    pub is_open: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AMPMJPCFLND.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl AMPMJPCFLND {
             |m: &mut AMPMJPCFLND| { &mut m.KLAJGAKAFCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEBKMOCOJLE",
-            |m: &AMPMJPCFLND| { &m.FEBKMOCOJLE },
-            |m: &mut AMPMJPCFLND| { &mut m.FEBKMOCOJLE },
+            "is_open",
+            |m: &AMPMJPCFLND| { &m.is_open },
+            |m: &mut AMPMJPCFLND| { &mut m.is_open },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMPMJPCFLND>(
             "AMPMJPCFLND",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AMPMJPCFLND {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.FEBKMOCOJLE = is.read_bool()?;
+                96 => {
+                    self.is_open = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for AMPMJPCFLND {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.KLAJGAKAFCP.value());
+            my_size += ::protobuf::rt::int32_size(3, self.KLAJGAKAFCP.value());
         }
-        if self.FEBKMOCOJLE != false {
+        if self.is_open != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AMPMJPCFLND {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
         }
-        if self.FEBKMOCOJLE != false {
-            os.write_bool(13, self.FEBKMOCOJLE)?;
+        if self.is_open != false {
+            os.write_bool(12, self.is_open)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for AMPMJPCFLND {
 
     fn clear(&mut self) {
         self.KLAJGAKAFCP = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ);
-        self.FEBKMOCOJLE = false;
+        self.is_open = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMPMJPCFLND {
         static instance: AMPMJPCFLND = AMPMJPCFLND {
             KLAJGAKAFCP: ::protobuf::EnumOrUnknown::from_i32(0),
-            FEBKMOCOJLE: false,
+            is_open: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AMPMJPCFLND {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMPMJPCFLND.proto\x1a\x14TurnFoodSwitch.proto\"b\n\x0bAMPMJPCFLND\
-    \x121\n\x0bKLAJGAKAFCP\x18\x02\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bKLAJ\
-    GAKAFCP\x12\x20\n\x0bFEBKMOCOJLE\x18\r\x20\x01(\x08R\x0bFEBKMOCOJLEb\x06\
-    proto3\
+    \n\x11AMPMJPCFLND.proto\x1a\x14TurnFoodSwitch.proto\"Y\n\x0bAMPMJPCFLND\
+    \x121\n\x0bKLAJGAKAFCP\x18\x03\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bKLAJ\
+    GAKAFCP\x12\x17\n\x07is_open\x18\x0c\x20\x01(\x08R\x06isOpenb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

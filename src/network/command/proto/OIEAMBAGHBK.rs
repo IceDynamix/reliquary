@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIEAMBAGHBK {
     // message fields
-    // @@protoc_insertion_point(field:OIEAMBAGHBK.item_list)
-    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:OIEAMBAGHBK.JALHKMEOOPN)
-    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:OIEAMBAGHBK.OOFKOIMLCPA)
     pub OOFKOIMLCPA: bool,
+    // @@protoc_insertion_point(field:OIEAMBAGHBK.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
+    // @@protoc_insertion_point(field:OIEAMBAGHBK.item_list)
+    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:OIEAMBAGHBK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl OIEAMBAGHBK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "item_list",
-            |m: &OIEAMBAGHBK| { &m.item_list },
-            |m: &mut OIEAMBAGHBK| { &mut m.item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OOFKOIMLCPA",
+            |m: &OIEAMBAGHBK| { &m.OOFKOIMLCPA },
+            |m: &mut OIEAMBAGHBK| { &mut m.OOFKOIMLCPA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JALHKMEOOPN",
             |m: &OIEAMBAGHBK| { &m.JALHKMEOOPN },
             |m: &mut OIEAMBAGHBK| { &mut m.JALHKMEOOPN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOFKOIMLCPA",
-            |m: &OIEAMBAGHBK| { &m.OOFKOIMLCPA },
-            |m: &mut OIEAMBAGHBK| { &mut m.OOFKOIMLCPA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "item_list",
+            |m: &OIEAMBAGHBK| { &m.item_list },
+            |m: &mut OIEAMBAGHBK| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIEAMBAGHBK>(
             "OIEAMBAGHBK",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OIEAMBAGHBK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
+                8 => {
+                    self.OOFKOIMLCPA = is.read_bool()?;
                 },
-                32 => {
+                40 => {
                     self.JALHKMEOOPN = is.read_uint32()?;
                 },
-                48 => {
-                    self.OOFKOIMLCPA = is.read_bool()?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for OIEAMBAGHBK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OOFKOIMLCPA != false {
+            my_size += 1 + 1;
+        }
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JALHKMEOOPN);
+        }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JALHKMEOOPN);
-        }
-        if self.OOFKOIMLCPA != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for OIEAMBAGHBK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.OOFKOIMLCPA != false {
+            os.write_bool(1, self.OOFKOIMLCPA)?;
         }
         if self.JALHKMEOOPN != 0 {
-            os.write_uint32(4, self.JALHKMEOOPN)?;
+            os.write_uint32(5, self.JALHKMEOOPN)?;
         }
-        if self.OOFKOIMLCPA != false {
-            os.write_bool(6, self.OOFKOIMLCPA)?;
+        if let Some(v) = self.item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for OIEAMBAGHBK {
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
-        self.JALHKMEOOPN = 0;
         self.OOFKOIMLCPA = false;
+        self.JALHKMEOOPN = 0;
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIEAMBAGHBK {
         static instance: OIEAMBAGHBK = OIEAMBAGHBK {
-            item_list: ::protobuf::MessageField::none(),
-            JALHKMEOOPN: 0,
             OOFKOIMLCPA: false,
+            JALHKMEOOPN: 0,
+            item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for OIEAMBAGHBK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OIEAMBAGHBK.proto\x1a\x0eItemList.proto\"y\n\x0bOIEAMBAGHBK\x12&\n\
-    \titem_list\x18\x01\x20\x01(\x0b2\t.ItemListR\x08itemList\x12\x20\n\x0bJ\
-    ALHKMEOOPN\x18\x04\x20\x01(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOOFKOIMLCPA\
-    \x18\x06\x20\x01(\x08R\x0bOOFKOIMLCPAb\x06proto3\
+    \n\x11OIEAMBAGHBK.proto\x1a\x0eItemList.proto\"y\n\x0bOIEAMBAGHBK\x12\
+    \x20\n\x0bOOFKOIMLCPA\x18\x01\x20\x01(\x08R\x0bOOFKOIMLCPA\x12\x20\n\x0b\
+    JALHKMEOOPN\x18\x05\x20\x01(\rR\x0bJALHKMEOOPN\x12&\n\titem_list\x18\n\
+    \x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

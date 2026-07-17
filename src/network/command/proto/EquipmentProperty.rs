@@ -30,12 +30,12 @@ pub struct EquipmentProperty {
     // message fields
     // @@protoc_insertion_point(field:EquipmentProperty.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:EquipmentProperty.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:EquipmentProperty.promotion)
-    pub promotion: u32,
     // @@protoc_insertion_point(field:EquipmentProperty.rank)
     pub rank: u32,
+    // @@protoc_insertion_point(field:EquipmentProperty.promotion)
+    pub promotion: u32,
+    // @@protoc_insertion_point(field:EquipmentProperty.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EquipmentProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl EquipmentProperty {
             |m: &mut EquipmentProperty| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &EquipmentProperty| { &m.level },
-            |m: &mut EquipmentProperty| { &mut m.level },
+            "rank",
+            |m: &EquipmentProperty| { &m.rank },
+            |m: &mut EquipmentProperty| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
@@ -71,9 +71,9 @@ impl EquipmentProperty {
             |m: &mut EquipmentProperty| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &EquipmentProperty| { &m.rank },
-            |m: &mut EquipmentProperty| { &mut m.rank },
+            "level",
+            |m: &EquipmentProperty| { &m.level },
+            |m: &mut EquipmentProperty| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EquipmentProperty>(
             "EquipmentProperty",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for EquipmentProperty {
                 8 => {
                     self.id = is.read_uint32()?;
                 },
-                32 => {
-                    self.level = is.read_uint32()?;
+                16 => {
+                    self.rank = is.read_uint32()?;
                 },
                 24 => {
                     self.promotion = is.read_uint32()?;
                 },
-                16 => {
-                    self.rank = is.read_uint32()?;
+                32 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for EquipmentProperty {
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.rank);
         }
         if self.promotion != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.promotion);
         }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.rank);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for EquipmentProperty {
         if self.id != 0 {
             os.write_uint32(1, self.id)?;
         }
-        if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+        if self.rank != 0 {
+            os.write_uint32(2, self.rank)?;
         }
         if self.promotion != 0 {
             os.write_uint32(3, self.promotion)?;
         }
-        if self.rank != 0 {
-            os.write_uint32(2, self.rank)?;
+        if self.level != 0 {
+            os.write_uint32(4, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for EquipmentProperty {
 
     fn clear(&mut self) {
         self.id = 0;
-        self.level = 0;
-        self.promotion = 0;
         self.rank = 0;
+        self.promotion = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EquipmentProperty {
         static instance: EquipmentProperty = EquipmentProperty {
             id: 0,
-            level: 0,
-            promotion: 0,
             rank: 0,
+            promotion: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for EquipmentProperty {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17EquipmentProperty.proto\"k\n\x11EquipmentProperty\x12\x0e\n\x02id\
-    \x18\x01\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05lev\
-    el\x12\x1c\n\tpromotion\x18\x03\x20\x01(\rR\tpromotion\x12\x12\n\x04rank\
-    \x18\x02\x20\x01(\rR\x04rankb\x06proto3\
+    \x18\x01\x20\x01(\rR\x02id\x12\x12\n\x04rank\x18\x02\x20\x01(\rR\x04rank\
+    \x12\x1c\n\tpromotion\x18\x03\x20\x01(\rR\tpromotion\x12\x14\n\x05level\
+    \x18\x04\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

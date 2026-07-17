@@ -79,7 +79,7 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.enhanced_id = is.read_uint32()?;
                 },
                 88 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.enhanced_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.enhanced_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.enhanced_id);
         }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SetAvatarEnhancedIdCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.enhanced_id != 0 {
-            os.write_uint32(1, self.enhanced_id)?;
+            os.write_uint32(4, self.enhanced_id)?;
         }
         if self.avatar_id != 0 {
             os.write_uint32(11, self.avatar_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetAvatarEnhancedIdCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetAvatarEnhancedIdCsReq.proto\"X\n\x18SetAvatarEnhancedIdCsReq\
-    \x12\x1f\n\x0benhanced_id\x18\x01\x20\x01(\rR\nenhancedId\x12\x1b\n\tava\
+    \x12\x1f\n\x0benhanced_id\x18\x04\x20\x01(\rR\nenhancedId\x12\x1b\n\tava\
     tar_id\x18\x0b\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 

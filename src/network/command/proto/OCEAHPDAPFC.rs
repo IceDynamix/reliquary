@@ -45,7 +45,7 @@ impl OCEAHPDAPFC {
         ::std::default::Default::default()
     }
 
-    // uint32 OCJCOOLMCGD = 14;
+    // uint32 OCJCOOLMCGD = 15;
 
     pub fn OCJCOOLMCGD(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -119,7 +119,7 @@ impl OCEAHPDAPFC {
         }
     }
 
-    // uint32 HOCFMNJPCLI = 6;
+    // uint32 HOCFMNJPCLI = 12;
 
     pub fn HOCFMNJPCLI(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -144,7 +144,7 @@ impl OCEAHPDAPFC {
         self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::HOCFMNJPCLI(v))
     }
 
-    // uint32 JGMJFHLIAIL = 7;
+    // uint32 JGMJFHLIAIL = 11;
 
     pub fn JGMJFHLIAIL(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -169,7 +169,7 @@ impl OCEAHPDAPFC {
         self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::JGMJFHLIAIL(v))
     }
 
-    // .KJAMNAOLOLL IAFPOEBBJIL = 2;
+    // .KJAMNAOLOLL IAFPOEBBJIL = 7;
 
     pub fn IAFPOEBBJIL(&self) -> &super::KJAMNAOLOLL::KJAMNAOLOLL {
         match self.MMCGBGDJIPN {
@@ -218,7 +218,7 @@ impl OCEAHPDAPFC {
         }
     }
 
-    // .LGGGHFDBCFN LDBGGNHLFAM = 15;
+    // .LGGGHFDBCFN LDBGGNHLFAM = 10;
 
     pub fn LDBGGNHLFAM(&self) -> &super::LGGGHFDBCFN::LGGGHFDBCFN {
         match self.MMCGBGDJIPN {
@@ -267,7 +267,7 @@ impl OCEAHPDAPFC {
         }
     }
 
-    // .JPIEAEJIDAO HDMEPMHHOLP = 12;
+    // .JPIEAEJIDAO HDMEPMHHOLP = 14;
 
     pub fn HDMEPMHHOLP(&self) -> &super::JPIEAEJIDAO::JPIEAEJIDAO {
         match self.MMCGBGDJIPN {
@@ -316,7 +316,7 @@ impl OCEAHPDAPFC {
         }
     }
 
-    // uint32 JDGKFGONCJI = 8;
+    // uint32 JDGKFGONCJI = 5;
 
     pub fn JDGKFGONCJI(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -341,7 +341,7 @@ impl OCEAHPDAPFC {
         self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::JDGKFGONCJI(v))
     }
 
-    // uint32 CGEFHJIEKGF = 5;
+    // uint32 CGEFHJIEKGF = 9;
 
     pub fn CGEFHJIEKGF(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -446,31 +446,31 @@ impl ::protobuf::Message for OCEAHPDAPFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                120 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::OCJCOOLMCGD(is.read_uint32()?));
                 },
                 26 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::NOGCKIHEDCE(is.read_message()?));
                 },
-                48 => {
+                96 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::HOCFMNJPCLI(is.read_uint32()?));
                 },
-                56 => {
+                88 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::JGMJFHLIAIL(is.read_uint32()?));
                 },
-                18 => {
+                58 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::IAFPOEBBJIL(is.read_message()?));
                 },
-                122 => {
+                82 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::LDBGGNHLFAM(is.read_message()?));
                 },
-                98 => {
+                114 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::HDMEPMHHOLP(is.read_message()?));
                 },
-                64 => {
+                40 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::JDGKFGONCJI(is.read_uint32()?));
                 },
-                40 => {
+                72 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oceahpdapfc::MMCGBGDJIPN::CGEFHJIEKGF(is.read_uint32()?));
                 },
                 tag => {
@@ -488,17 +488,17 @@ impl ::protobuf::Message for OCEAHPDAPFC {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &oceahpdapfc::MMCGBGDJIPN::OCJCOOLMCGD(v) => {
-                    my_size += ::protobuf::rt::uint32_size(14, v);
+                    my_size += ::protobuf::rt::uint32_size(15, v);
                 },
                 &oceahpdapfc::MMCGBGDJIPN::NOGCKIHEDCE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::HOCFMNJPCLI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                    my_size += ::protobuf::rt::uint32_size(12, v);
                 },
                 &oceahpdapfc::MMCGBGDJIPN::JGMJFHLIAIL(v) => {
-                    my_size += ::protobuf::rt::uint32_size(7, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
                 &oceahpdapfc::MMCGBGDJIPN::IAFPOEBBJIL(ref v) => {
                     let len = v.compute_size();
@@ -513,10 +513,10 @@ impl ::protobuf::Message for OCEAHPDAPFC {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::JDGKFGONCJI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(5, v);
                 },
                 &oceahpdapfc::MMCGBGDJIPN::CGEFHJIEKGF(v) => {
-                    my_size += ::protobuf::rt::uint32_size(5, v);
+                    my_size += ::protobuf::rt::uint32_size(9, v);
                 },
             };
         }
@@ -529,31 +529,31 @@ impl ::protobuf::Message for OCEAHPDAPFC {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &oceahpdapfc::MMCGBGDJIPN::OCJCOOLMCGD(v) => {
-                    os.write_uint32(14, v)?;
+                    os.write_uint32(15, v)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::NOGCKIHEDCE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::HOCFMNJPCLI(v) => {
-                    os.write_uint32(6, v)?;
+                    os.write_uint32(12, v)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::JGMJFHLIAIL(v) => {
-                    os.write_uint32(7, v)?;
+                    os.write_uint32(11, v)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::IAFPOEBBJIL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::LDBGGNHLFAM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::HDMEPMHHOLP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::JDGKFGONCJI(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(5, v)?;
                 },
                 &oceahpdapfc::MMCGBGDJIPN::CGEFHJIEKGF(v) => {
-                    os.write_uint32(5, v)?;
+                    os.write_uint32(9, v)?;
                 },
             };
         }
@@ -659,16 +659,16 @@ pub mod oceahpdapfc {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCEAHPDAPFC.proto\x1a\x11JPIEAEJIDAO.proto\x1a\x11KJAMNAOLOLL.prot\
     o\x1a\x11LGGGHFDBCFN.proto\x1a\x11PBLBAAMLNLH.proto\"\x98\x03\n\x0bOCEAH\
-    PDAPFC\x12\"\n\x0bOCJCOOLMCGD\x18\x0e\x20\x01(\rH\0R\x0bOCJCOOLMCGD\x120\
+    PDAPFC\x12\"\n\x0bOCJCOOLMCGD\x18\x0f\x20\x01(\rH\0R\x0bOCJCOOLMCGD\x120\
     \n\x0bNOGCKIHEDCE\x18\x03\x20\x01(\x0b2\x0c.PBLBAAMLNLHH\0R\x0bNOGCKIHED\
-    CE\x12\"\n\x0bHOCFMNJPCLI\x18\x06\x20\x01(\rH\0R\x0bHOCFMNJPCLI\x12\"\n\
-    \x0bJGMJFHLIAIL\x18\x07\x20\x01(\rH\0R\x0bJGMJFHLIAIL\x120\n\x0bIAFPOEBB\
-    JIL\x18\x02\x20\x01(\x0b2\x0c.KJAMNAOLOLLH\0R\x0bIAFPOEBBJIL\x120\n\x0bL\
-    DBGGNHLFAM\x18\x0f\x20\x01(\x0b2\x0c.LGGGHFDBCFNH\0R\x0bLDBGGNHLFAM\x120\
-    \n\x0bHDMEPMHHOLP\x18\x0c\x20\x01(\x0b2\x0c.JPIEAEJIDAOH\0R\x0bHDMEPMHHO\
-    LP\x12\"\n\x0bJDGKFGONCJI\x18\x08\x20\x01(\rH\0R\x0bJDGKFGONCJI\x12\"\n\
-    \x0bCGEFHJIEKGF\x18\x05\x20\x01(\rH\0R\x0bCGEFHJIEKGFB\r\n\x0bMMCGBGDJIP\
-    Nb\x06proto3\
+    CE\x12\"\n\x0bHOCFMNJPCLI\x18\x0c\x20\x01(\rH\0R\x0bHOCFMNJPCLI\x12\"\n\
+    \x0bJGMJFHLIAIL\x18\x0b\x20\x01(\rH\0R\x0bJGMJFHLIAIL\x120\n\x0bIAFPOEBB\
+    JIL\x18\x07\x20\x01(\x0b2\x0c.KJAMNAOLOLLH\0R\x0bIAFPOEBBJIL\x120\n\x0bL\
+    DBGGNHLFAM\x18\n\x20\x01(\x0b2\x0c.LGGGHFDBCFNH\0R\x0bLDBGGNHLFAM\x120\n\
+    \x0bHDMEPMHHOLP\x18\x0e\x20\x01(\x0b2\x0c.JPIEAEJIDAOH\0R\x0bHDMEPMHHOLP\
+    \x12\"\n\x0bJDGKFGONCJI\x18\x05\x20\x01(\rH\0R\x0bJDGKFGONCJI\x12\"\n\
+    \x0bCGEFHJIEKGF\x18\t\x20\x01(\rH\0R\x0bCGEFHJIEKGFB\r\n\x0bMMCGBGDJIPNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

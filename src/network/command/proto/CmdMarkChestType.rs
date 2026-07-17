@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMarkChestType {
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_NLCDGIPGFDJ)
     LCNKHDAOMKM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_ALNPOCFENNI)
-    LCNKHDAOMKM_ALNPOCFENNI = 8200,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_LKCNJILIMFK)
-    LCNKHDAOMKM_LKCNJILIMFK = 8196,
+    LCNKHDAOMKM_LKCNJILIMFK = 8183,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_MCNFOCKIPJE)
+    LCNKHDAOMKM_MCNFOCKIPJE = 8198,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_BOKHFIIFNOK)
     LCNKHDAOMKM_BOKHFIIFNOK = 8182,
     // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_GBKFEPPMDJG)
-    LCNKHDAOMKM_GBKFEPPMDJG = 8186,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_MCNFOCKIPJE)
-    LCNKHDAOMKM_MCNFOCKIPJE = 8198,
+    LCNKHDAOMKM_GBKFEPPMDJG = 8188,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.LCNKHDAOMKM_ALNPOCFENNI)
+    LCNKHDAOMKM_ALNPOCFENNI = 8192,
 }
 
 impl ::protobuf::Enum for CmdMarkChestType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdMarkChestType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarkChestType> {
         match value {
             0 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_NLCDGIPGFDJ),
-            8200 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI),
-            8196 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK),
-            8182 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_BOKHFIIFNOK),
-            8186 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_GBKFEPPMDJG),
+            8183 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK),
             8198 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE),
+            8182 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_BOKHFIIFNOK),
+            8188 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_GBKFEPPMDJG),
+            8192 => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdMarkChestType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMarkChestType> {
         match str {
             "LCNKHDAOMKM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_NLCDGIPGFDJ),
-            "LCNKHDAOMKM_ALNPOCFENNI" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI),
             "LCNKHDAOMKM_LKCNJILIMFK" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK),
+            "LCNKHDAOMKM_MCNFOCKIPJE" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE),
             "LCNKHDAOMKM_BOKHFIIFNOK" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_BOKHFIIFNOK),
             "LCNKHDAOMKM_GBKFEPPMDJG" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_GBKFEPPMDJG),
-            "LCNKHDAOMKM_MCNFOCKIPJE" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE),
+            "LCNKHDAOMKM_ALNPOCFENNI" => ::std::option::Option::Some(CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMarkChestType] = &[
         CmdMarkChestType::LCNKHDAOMKM_NLCDGIPGFDJ,
-        CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI,
         CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK,
+        CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE,
         CmdMarkChestType::LCNKHDAOMKM_BOKHFIIFNOK,
         CmdMarkChestType::LCNKHDAOMKM_GBKFEPPMDJG,
-        CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE,
+        CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdMarkChestType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMarkChestType::LCNKHDAOMKM_NLCDGIPGFDJ => 0,
-            CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI => 1,
-            CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK => 2,
+            CmdMarkChestType::LCNKHDAOMKM_LKCNJILIMFK => 1,
+            CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE => 2,
             CmdMarkChestType::LCNKHDAOMKM_BOKHFIIFNOK => 3,
             CmdMarkChestType::LCNKHDAOMKM_GBKFEPPMDJG => 4,
-            CmdMarkChestType::LCNKHDAOMKM_MCNFOCKIPJE => 5,
+            CmdMarkChestType::LCNKHDAOMKM_ALNPOCFENNI => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdMarkChestType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdMarkChestType.proto*\xc5\x01\n\x10CmdMarkChestType\x12\x1b\n\
-    \x17LCNKHDAOMKM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCNKHDAOMKM_ALNPOCFENNI\
-    \x10\x88@\x12\x1c\n\x17LCNKHDAOMKM_LKCNJILIMFK\x10\x84@\x12\x1c\n\x17LCN\
+    \x17LCNKHDAOMKM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCNKHDAOMKM_LKCNJILIMFK\
+    \x10\xf7?\x12\x1c\n\x17LCNKHDAOMKM_MCNFOCKIPJE\x10\x86@\x12\x1c\n\x17LCN\
     KHDAOMKM_BOKHFIIFNOK\x10\xf6?\x12\x1c\n\x17LCNKHDAOMKM_GBKFEPPMDJG\x10\
-    \xfa?\x12\x1c\n\x17LCNKHDAOMKM_MCNFOCKIPJE\x10\x86@b\x06proto3\
+    \xfc?\x12\x1c\n\x17LCNKHDAOMKM_ALNPOCFENNI\x10\x80@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

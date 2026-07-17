@@ -86,13 +86,13 @@ impl ::protobuf::Message for BMBCNFKFABK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
-                18 => {
+                74 => {
                     self.DFLEOIGPLNM.push(is.read_message()?);
                 },
-                72 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for BMBCNFKFABK {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for BMBCNFKFABK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for BMBCNFKFABK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMBCNFKFABK.proto\x1a\x11JECNOELJLKO.proto\x1a\x11LMLNNHKJEIP.prot\
-    o\"y\n\x0bBMBCNFKFABK\x12\x20\n\x04data\x18\n\x20\x01(\x0b2\x0c.JECNOELJ\
-    LKOR\x04data\x12.\n\x0bDFLEOIGPLNM\x18\x02\x20\x03(\x0b2\x0c.LMLNNHKJEIP\
-    R\x0bDFLEOIGPLNM\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06p\
-    roto3\
+    o\"y\n\x0bBMBCNFKFABK\x12\x20\n\x04data\x18\x06\x20\x01(\x0b2\x0c.JECNOE\
+    LJLKOR\x04data\x12.\n\x0bDFLEOIGPLNM\x18\t\x20\x03(\x0b2\x0c.LMLNNHKJEIP\
+    R\x0bDFLEOIGPLNM\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

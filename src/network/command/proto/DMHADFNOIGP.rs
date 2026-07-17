@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMHADFNOIGP {
     // message fields
+    // @@protoc_insertion_point(field:DMHADFNOIGP.is_success)
+    pub is_success: bool,
     // @@protoc_insertion_point(field:DMHADFNOIGP.JOJJKJFHMBI)
     pub JOJJKJFHMBI: ::std::vec::Vec<super::MOJFFDOILBN::MOJFFDOILBN>,
-    // @@protoc_insertion_point(field:DMHADFNOIGP.EIIMAEHCGBC)
-    pub EIIMAEHCGBC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DMHADFNOIGP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DMHADFNOIGP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_success",
+            |m: &DMHADFNOIGP| { &m.is_success },
+            |m: &mut DMHADFNOIGP| { &mut m.is_success },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JOJJKJFHMBI",
             |m: &DMHADFNOIGP| { &m.JOJJKJFHMBI },
             |m: &mut DMHADFNOIGP| { &mut m.JOJJKJFHMBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIIMAEHCGBC",
-            |m: &DMHADFNOIGP| { &m.EIIMAEHCGBC },
-            |m: &mut DMHADFNOIGP| { &mut m.EIIMAEHCGBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DMHADFNOIGP>(
             "DMHADFNOIGP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DMHADFNOIGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.JOJJKJFHMBI.push(is.read_message()?);
+                96 => {
+                    self.is_success = is.read_bool()?;
                 },
-                56 => {
-                    self.EIIMAEHCGBC = is.read_bool()?;
+                114 => {
+                    self.JOJJKJFHMBI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for DMHADFNOIGP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_success != false {
+            my_size += 1 + 1;
+        }
         for value in &self.JOJJKJFHMBI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EIIMAEHCGBC != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JOJJKJFHMBI {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.EIIMAEHCGBC != false {
-            os.write_bool(7, self.EIIMAEHCGBC)?;
+        if self.is_success != false {
+            os.write_bool(12, self.is_success)?;
         }
+        for v in &self.JOJJKJFHMBI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DMHADFNOIGP {
     }
 
     fn clear(&mut self) {
+        self.is_success = false;
         self.JOJJKJFHMBI.clear();
-        self.EIIMAEHCGBC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DMHADFNOIGP {
         static instance: DMHADFNOIGP = DMHADFNOIGP {
+            is_success: false,
             JOJJKJFHMBI: ::std::vec::Vec::new(),
-            EIIMAEHCGBC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for DMHADFNOIGP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DMHADFNOIGP.proto\x1a\x11MOJFFDOILBN.proto\"_\n\x0bDMHADFNOIGP\x12\
-    .\n\x0bJOJJKJFHMBI\x18\x04\x20\x03(\x0b2\x0c.MOJFFDOILBNR\x0bJOJJKJFHMBI\
-    \x12\x20\n\x0bEIIMAEHCGBC\x18\x07\x20\x01(\x08R\x0bEIIMAEHCGBCb\x06proto\
-    3\
+    \n\x11DMHADFNOIGP.proto\x1a\x11MOJFFDOILBN.proto\"\\\n\x0bDMHADFNOIGP\
+    \x12\x1d\n\nis_success\x18\x0c\x20\x01(\x08R\tisSuccess\x12.\n\x0bJOJJKJ\
+    FHMBI\x18\x0e\x20\x03(\x0b2\x0c.MOJFFDOILBNR\x0bJOJJKJFHMBIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

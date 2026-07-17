@@ -32,10 +32,10 @@ pub struct BoxingClubRewardScNotify {
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:BoxingClubRewardScNotify.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:BoxingClubRewardScNotify.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:BoxingClubRewardScNotify.EAFICCLCLLA)
     pub EAFICCLCLLA: u32,
+    // @@protoc_insertion_point(field:BoxingClubRewardScNotify.is_win)
+    pub is_win: bool,
     // special fields
     // @@protoc_insertion_point(special_field:BoxingClubRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl BoxingClubRewardScNotify {
             |m: &mut BoxingClubRewardScNotify| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &BoxingClubRewardScNotify| { &m.is_win },
-            |m: &mut BoxingClubRewardScNotify| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAFICCLCLLA",
             |m: &BoxingClubRewardScNotify| { &m.EAFICCLCLLA },
             |m: &mut BoxingClubRewardScNotify| { &mut m.EAFICCLCLLA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &BoxingClubRewardScNotify| { &m.is_win },
+            |m: &mut BoxingClubRewardScNotify| { &mut m.is_win },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoxingClubRewardScNotify>(
             "BoxingClubRewardScNotify",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                32 => {
+                16 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.is_win = is.read_bool()?;
-                },
-                56 => {
+                24 => {
                     self.EAFICCLCLLA = is.read_uint32()?;
+                },
+                32 => {
+                    self.is_win = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -122,13 +122,13 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.challenge_id);
+        }
+        if self.EAFICCLCLLA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EAFICCLCLLA);
         }
         if self.is_win != false {
             my_size += 1 + 1;
-        }
-        if self.EAFICCLCLLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.EAFICCLCLLA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,13 +140,13 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(4, self.challenge_id)?;
-        }
-        if self.is_win != false {
-            os.write_bool(11, self.is_win)?;
+            os.write_uint32(2, self.challenge_id)?;
         }
         if self.EAFICCLCLLA != 0 {
-            os.write_uint32(7, self.EAFICCLCLLA)?;
+            os.write_uint32(3, self.EAFICCLCLLA)?;
+        }
+        if self.is_win != false {
+            os.write_bool(4, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
     fn clear(&mut self) {
         self.reward.clear();
         self.challenge_id = 0;
-        self.is_win = false;
         self.EAFICCLCLLA = 0;
+        self.is_win = false;
         self.special_fields.clear();
     }
 
@@ -176,8 +176,8 @@ impl ::protobuf::Message for BoxingClubRewardScNotify {
         static instance: BoxingClubRewardScNotify = BoxingClubRewardScNotify {
             reward: ::protobuf::MessageField::none(),
             challenge_id: 0,
-            is_win: false,
             EAFICCLCLLA: 0,
+            is_win: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,9 +204,9 @@ impl ::protobuf::reflect::ProtobufValue for BoxingClubRewardScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eBoxingClubRewardScNotify.proto\x1a\x0eItemList.proto\"\x99\x01\n\
     \x18BoxingClubRewardScNotify\x12!\n\x06reward\x18\x01\x20\x01(\x0b2\t.It\
-    emListR\x06reward\x12!\n\x0cchallenge_id\x18\x04\x20\x01(\rR\x0bchalleng\
-    eId\x12\x15\n\x06is_win\x18\x0b\x20\x01(\x08R\x05isWin\x12\x20\n\x0bEAFI\
-    CCLCLLA\x18\x07\x20\x01(\rR\x0bEAFICCLCLLAb\x06proto3\
+    emListR\x06reward\x12!\n\x0cchallenge_id\x18\x02\x20\x01(\rR\x0bchalleng\
+    eId\x12\x20\n\x0bEAFICCLCLLA\x18\x03\x20\x01(\rR\x0bEAFICCLCLLA\x12\x15\
+    \n\x06is_win\x18\x04\x20\x01(\x08R\x05isWinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

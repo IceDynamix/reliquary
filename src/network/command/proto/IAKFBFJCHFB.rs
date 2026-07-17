@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IAKFBFJCHFB {
     // message fields
-    // @@protoc_insertion_point(field:IAKFBFJCHFB.IBHPAFKOPFO)
-    pub IBHPAFKOPFO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:IAKFBFJCHFB.EAFFACCBAAA)
+    pub EAFFACCBAAA: u32,
     // @@protoc_insertion_point(field:IAKFBFJCHFB.unique_id)
     pub unique_id: u32,
     // @@protoc_insertion_point(field:IAKFBFJCHFB.card_id)
     pub card_id: u32,
-    // @@protoc_insertion_point(field:IAKFBFJCHFB.EAFFACCBAAA)
-    pub EAFFACCBAAA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IAKFBFJCHFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,12 +51,12 @@ impl IAKFBFJCHFB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBHPAFKOPFO",
-            |m: &IAKFBFJCHFB| { &m.IBHPAFKOPFO },
-            |m: &mut IAKFBFJCHFB| { &mut m.IBHPAFKOPFO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EAFFACCBAAA",
+            |m: &IAKFBFJCHFB| { &m.EAFFACCBAAA },
+            |m: &mut IAKFBFJCHFB| { &mut m.EAFFACCBAAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -69,11 +67,6 @@ impl IAKFBFJCHFB {
             "card_id",
             |m: &IAKFBFJCHFB| { &m.card_id },
             |m: &mut IAKFBFJCHFB| { &mut m.card_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAFFACCBAAA",
-            |m: &IAKFBFJCHFB| { &m.EAFFACCBAAA },
-            |m: &mut IAKFBFJCHFB| { &mut m.EAFFACCBAAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAKFBFJCHFB>(
             "IAKFBFJCHFB",
@@ -93,20 +86,14 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IBHPAFKOPFO)?;
-                },
-                96 => {
-                    self.IBHPAFKOPFO.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.unique_id = is.read_uint32()?;
+                64 => {
+                    self.EAFFACCBAAA = is.read_uint32()?;
                 },
                 88 => {
-                    self.card_id = is.read_uint32()?;
+                    self.unique_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.EAFFACCBAAA = is.read_uint32()?;
+                96 => {
+                    self.card_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +107,14 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.IBHPAFKOPFO);
+        if self.EAFFACCBAAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.EAFFACCBAAA);
+        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
         if self.card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.card_id);
-        }
-        if self.EAFFACCBAAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EAFFACCBAAA);
+            my_size += ::protobuf::rt::uint32_size(12, self.card_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +122,14 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.IBHPAFKOPFO)?;
+        if self.EAFFACCBAAA != 0 {
+            os.write_uint32(8, self.EAFFACCBAAA)?;
+        }
         if self.unique_id != 0 {
-            os.write_uint32(10, self.unique_id)?;
+            os.write_uint32(11, self.unique_id)?;
         }
         if self.card_id != 0 {
-            os.write_uint32(11, self.card_id)?;
-        }
-        if self.EAFFACCBAAA != 0 {
-            os.write_uint32(3, self.EAFFACCBAAA)?;
+            os.write_uint32(12, self.card_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +148,17 @@ impl ::protobuf::Message for IAKFBFJCHFB {
     }
 
     fn clear(&mut self) {
-        self.IBHPAFKOPFO.clear();
+        self.EAFFACCBAAA = 0;
         self.unique_id = 0;
         self.card_id = 0;
-        self.EAFFACCBAAA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAKFBFJCHFB {
         static instance: IAKFBFJCHFB = IAKFBFJCHFB {
-            IBHPAFKOPFO: ::std::vec::Vec::new(),
+            EAFFACCBAAA: 0,
             unique_id: 0,
             card_id: 0,
-            EAFFACCBAAA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for IAKFBFJCHFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IAKFBFJCHFB.proto\"\x87\x01\n\x0bIAKFBFJCHFB\x12\x20\n\x0bIBHPAFKO\
-    PFO\x18\x0c\x20\x03(\rR\x0bIBHPAFKOPFO\x12\x1b\n\tunique_id\x18\n\x20\
-    \x01(\rR\x08uniqueId\x12\x17\n\x07card_id\x18\x0b\x20\x01(\rR\x06cardId\
-    \x12\x20\n\x0bEAFFACCBAAA\x18\x03\x20\x01(\rR\x0bEAFFACCBAAAb\x06proto3\
+    \n\x11IAKFBFJCHFB.proto\"e\n\x0bIAKFBFJCHFB\x12\x20\n\x0bEAFFACCBAAA\x18\
+    \x08\x20\x01(\rR\x0bEAFFACCBAAA\x12\x1b\n\tunique_id\x18\x0b\x20\x01(\rR\
+    \x08uniqueId\x12\x17\n\x07card_id\x18\x0c\x20\x01(\rR\x06cardIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

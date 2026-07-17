@@ -43,8 +43,6 @@ pub enum GEOOCKILLEF {
     GEOOCKILLEF_FPCCHGCPELO = 6,
     // @@protoc_insertion_point(enum_value:GEOOCKILLEF.GEOOCKILLEF_FMMGPFPLAJI)
     GEOOCKILLEF_FMMGPFPLAJI = 7,
-    // @@protoc_insertion_point(enum_value:GEOOCKILLEF.GEOOCKILLEF_GKNBOODLJLC)
-    GEOOCKILLEF_GKNBOODLJLC = 8,
     // @@protoc_insertion_point(enum_value:GEOOCKILLEF.GEOOCKILLEF_FAGNGHEDEIP)
     GEOOCKILLEF_FAGNGHEDEIP = 9,
     // @@protoc_insertion_point(enum_value:GEOOCKILLEF.GEOOCKILLEF_LAHLPPEDGGO)
@@ -68,7 +66,6 @@ impl ::protobuf::Enum for GEOOCKILLEF {
             5 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_MKNLIFHBNNH),
             6 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FPCCHGCPELO),
             7 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FMMGPFPLAJI),
-            8 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_GKNBOODLJLC),
             9 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FAGNGHEDEIP),
             10 => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_LAHLPPEDGGO),
             _ => ::std::option::Option::None
@@ -85,7 +82,6 @@ impl ::protobuf::Enum for GEOOCKILLEF {
             "GEOOCKILLEF_MKNLIFHBNNH" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_MKNLIFHBNNH),
             "GEOOCKILLEF_FPCCHGCPELO" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FPCCHGCPELO),
             "GEOOCKILLEF_FMMGPFPLAJI" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FMMGPFPLAJI),
-            "GEOOCKILLEF_GKNBOODLJLC" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_GKNBOODLJLC),
             "GEOOCKILLEF_FAGNGHEDEIP" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_FAGNGHEDEIP),
             "GEOOCKILLEF_LAHLPPEDGGO" => ::std::option::Option::Some(GEOOCKILLEF::GEOOCKILLEF_LAHLPPEDGGO),
             _ => ::std::option::Option::None
@@ -101,7 +97,6 @@ impl ::protobuf::Enum for GEOOCKILLEF {
         GEOOCKILLEF::GEOOCKILLEF_MKNLIFHBNNH,
         GEOOCKILLEF::GEOOCKILLEF_FPCCHGCPELO,
         GEOOCKILLEF::GEOOCKILLEF_FMMGPFPLAJI,
-        GEOOCKILLEF::GEOOCKILLEF_GKNBOODLJLC,
         GEOOCKILLEF::GEOOCKILLEF_FAGNGHEDEIP,
         GEOOCKILLEF::GEOOCKILLEF_LAHLPPEDGGO,
     ];
@@ -114,7 +109,18 @@ impl ::protobuf::EnumFull for GEOOCKILLEF {
     }
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
-        let index = *self as usize;
+        let index = match self {
+            GEOOCKILLEF::GEOOCKILLEF_DAJIEGLJFAK => 0,
+            GEOOCKILLEF::GEOOCKILLEF_AIANNAINGKK => 1,
+            GEOOCKILLEF::GEOOCKILLEF_BGODPDMEEHD => 2,
+            GEOOCKILLEF::GEOOCKILLEF_CKNBODHNOAK => 3,
+            GEOOCKILLEF::GEOOCKILLEF_DDLJICIALFA => 4,
+            GEOOCKILLEF::GEOOCKILLEF_MKNLIFHBNNH => 5,
+            GEOOCKILLEF::GEOOCKILLEF_FPCCHGCPELO => 6,
+            GEOOCKILLEF::GEOOCKILLEF_FMMGPFPLAJI => 7,
+            GEOOCKILLEF::GEOOCKILLEF_FAGNGHEDEIP => 8,
+            GEOOCKILLEF::GEOOCKILLEF_LAHLPPEDGGO => 9,
+        };
         Self::enum_descriptor().value_by_index(index)
     }
 }
@@ -132,14 +138,14 @@ impl GEOOCKILLEF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GEOOCKILLEF.proto*\xcc\x02\n\x0bGEOOCKILLEF\x12\x1b\n\x17GEOOCKILL\
+    \n\x11GEOOCKILLEF.proto*\xaf\x02\n\x0bGEOOCKILLEF\x12\x1b\n\x17GEOOCKILL\
     EF_DAJIEGLJFAK\x10\0\x12\x1b\n\x17GEOOCKILLEF_AIANNAINGKK\x10\x01\x12\
     \x1b\n\x17GEOOCKILLEF_BGODPDMEEHD\x10\x02\x12\x1b\n\x17GEOOCKILLEF_CKNBO\
     DHNOAK\x10\x03\x12\x1b\n\x17GEOOCKILLEF_DDLJICIALFA\x10\x04\x12\x1b\n\
     \x17GEOOCKILLEF_MKNLIFHBNNH\x10\x05\x12\x1b\n\x17GEOOCKILLEF_FPCCHGCPELO\
     \x10\x06\x12\x1b\n\x17GEOOCKILLEF_FMMGPFPLAJI\x10\x07\x12\x1b\n\x17GEOOC\
-    KILLEF_GKNBOODLJLC\x10\x08\x12\x1b\n\x17GEOOCKILLEF_FAGNGHEDEIP\x10\t\
-    \x12\x1b\n\x17GEOOCKILLEF_LAHLPPEDGGO\x10\nb\x06proto3\
+    KILLEF_FAGNGHEDEIP\x10\t\x12\x1b\n\x17GEOOCKILLEF_LAHLPPEDGGO\x10\nb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

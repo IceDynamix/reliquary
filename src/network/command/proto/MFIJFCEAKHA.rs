@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MFIJFCEAKHA {
     // message fields
-    // @@protoc_insertion_point(field:MFIJFCEAKHA.CAGCHKJHMPD)
-    pub CAGCHKJHMPD: bool,
+    // @@protoc_insertion_point(field:MFIJFCEAKHA.is_active)
+    pub is_active: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MFIJFCEAKHA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MFIJFCEAKHA {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAGCHKJHMPD",
-            |m: &MFIJFCEAKHA| { &m.CAGCHKJHMPD },
-            |m: &mut MFIJFCEAKHA| { &mut m.CAGCHKJHMPD },
+            "is_active",
+            |m: &MFIJFCEAKHA| { &m.is_active },
+            |m: &mut MFIJFCEAKHA| { &mut m.is_active },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MFIJFCEAKHA>(
             "MFIJFCEAKHA",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MFIJFCEAKHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.CAGCHKJHMPD = is.read_bool()?;
+                56 => {
+                    self.is_active = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MFIJFCEAKHA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CAGCHKJHMPD != false {
+        if self.is_active != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MFIJFCEAKHA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CAGCHKJHMPD != false {
-            os.write_bool(4, self.CAGCHKJHMPD)?;
+        if self.is_active != false {
+            os.write_bool(7, self.is_active)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MFIJFCEAKHA {
     }
 
     fn clear(&mut self) {
-        self.CAGCHKJHMPD = false;
+        self.is_active = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MFIJFCEAKHA {
         static instance: MFIJFCEAKHA = MFIJFCEAKHA {
-            CAGCHKJHMPD: false,
+            is_active: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for MFIJFCEAKHA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MFIJFCEAKHA.proto\"/\n\x0bMFIJFCEAKHA\x12\x20\n\x0bCAGCHKJHMPD\x18\
-    \x04\x20\x01(\x08R\x0bCAGCHKJHMPDb\x06proto3\
+    \n\x11MFIJFCEAKHA.proto\"*\n\x0bMFIJFCEAKHA\x12\x1b\n\tis_active\x18\x07\
+    \x20\x01(\x08R\x08isActiveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

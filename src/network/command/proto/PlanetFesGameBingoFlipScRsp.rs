@@ -93,16 +93,16 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                40 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.BDEFAFFDBCC = is.read_bool()?;
                 },
-                16 => {
+                112 => {
                     self.LKFIGBGPEJB = is.read_uint32()?;
                 },
                 tag => {
@@ -122,13 +122,13 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.BDEFAFFDBCC != false {
             my_size += 1 + 1;
         }
         if self.LKFIGBGPEJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LKFIGBGPEJB);
+            my_size += ::protobuf::rt::uint32_size(14, self.LKFIGBGPEJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.BDEFAFFDBCC != false {
-            os.write_bool(11, self.BDEFAFFDBCC)?;
+            os.write_bool(10, self.BDEFAFFDBCC)?;
         }
         if self.LKFIGBGPEJB != 0 {
-            os.write_uint32(2, self.LKFIGBGPEJB)?;
+            os.write_uint32(14, self.LKFIGBGPEJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGameBingoFlipScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesGameBingoFlipScRsp.proto\x1a\x11GNMCIEPEBPK.proto\"\xa1\x01\
-    \n\x1bPlanetFesGameBingoFlipScRsp\x12$\n\x06reward\x18\x06\x20\x01(\x0b2\
-    \x0c.GNMCIEPEBPKR\x06reward\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07\
-    retcode\x12\x20\n\x0bBDEFAFFDBCC\x18\x0b\x20\x01(\x08R\x0bBDEFAFFDBCC\
-    \x12\x20\n\x0bLKFIGBGPEJB\x18\x02\x20\x01(\rR\x0bLKFIGBGPEJBb\x06proto3\
+    \n\x1bPlanetFesGameBingoFlipScRsp\x12$\n\x06reward\x18\x03\x20\x01(\x0b2\
+    \x0c.GNMCIEPEBPKR\x06reward\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bBDEFAFFDBCC\x18\n\x20\x01(\x08R\x0bBDEFAFFDBCC\x12\
+    \x20\n\x0bLKFIGBGPEJB\x18\x0e\x20\x01(\rR\x0bLKFIGBGPEJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

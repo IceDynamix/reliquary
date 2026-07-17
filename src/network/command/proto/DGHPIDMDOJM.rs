@@ -28,16 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DGHPIDMDOJM {
     // message fields
-    // @@protoc_insertion_point(field:DGHPIDMDOJM.uuid)
-    pub uuid: ::std::string::String,
-    // @@protoc_insertion_point(field:DGHPIDMDOJM.OEIBHLMDJKA)
-    pub OEIBHLMDJKA: ::protobuf::MessageField<super::BLPHONLBNBO::BLPHONLBNBO>,
-    // @@protoc_insertion_point(field:DGHPIDMDOJM.PPJFMBIGIGB)
-    pub PPJFMBIGIGB: ::protobuf::MessageField<super::AHCLMAGAHPN::AHCLMAGAHPN>,
     // @@protoc_insertion_point(field:DGHPIDMDOJM.GABODFDMPMM)
     pub GABODFDMPMM: u32,
-    // @@protoc_insertion_point(field:DGHPIDMDOJM.CPFCMKLCMFG)
-    pub CPFCMKLCMFG: u32,
+    // @@protoc_insertion_point(field:DGHPIDMDOJM.PPJFMBIGIGB)
+    pub PPJFMBIGIGB: ::protobuf::MessageField<super::AHCLMAGAHPN::AHCLMAGAHPN>,
+    // @@protoc_insertion_point(field:DGHPIDMDOJM.OEIBHLMDJKA)
+    pub OEIBHLMDJKA: ::protobuf::MessageField<super::BLPHONLBNBO::BLPHONLBNBO>,
+    // @@protoc_insertion_point(field:DGHPIDMDOJM.uuid)
+    pub uuid: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:DGHPIDMDOJM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,32 +53,27 @@ impl DGHPIDMDOJM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uuid",
-            |m: &DGHPIDMDOJM| { &m.uuid },
-            |m: &mut DGHPIDMDOJM| { &mut m.uuid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLPHONLBNBO::BLPHONLBNBO>(
-            "OEIBHLMDJKA",
-            |m: &DGHPIDMDOJM| { &m.OEIBHLMDJKA },
-            |m: &mut DGHPIDMDOJM| { &mut m.OEIBHLMDJKA },
+            "GABODFDMPMM",
+            |m: &DGHPIDMDOJM| { &m.GABODFDMPMM },
+            |m: &mut DGHPIDMDOJM| { &mut m.GABODFDMPMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHCLMAGAHPN::AHCLMAGAHPN>(
             "PPJFMBIGIGB",
             |m: &DGHPIDMDOJM| { &m.PPJFMBIGIGB },
             |m: &mut DGHPIDMDOJM| { &mut m.PPJFMBIGIGB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GABODFDMPMM",
-            |m: &DGHPIDMDOJM| { &m.GABODFDMPMM },
-            |m: &mut DGHPIDMDOJM| { &mut m.GABODFDMPMM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLPHONLBNBO::BLPHONLBNBO>(
+            "OEIBHLMDJKA",
+            |m: &DGHPIDMDOJM| { &m.OEIBHLMDJKA },
+            |m: &mut DGHPIDMDOJM| { &mut m.OEIBHLMDJKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPFCMKLCMFG",
-            |m: &DGHPIDMDOJM| { &m.CPFCMKLCMFG },
-            |m: &mut DGHPIDMDOJM| { &mut m.CPFCMKLCMFG },
+            "uuid",
+            |m: &DGHPIDMDOJM| { &m.uuid },
+            |m: &mut DGHPIDMDOJM| { &mut m.uuid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DGHPIDMDOJM>(
             "DGHPIDMDOJM",
@@ -100,20 +93,17 @@ impl ::protobuf::Message for DGHPIDMDOJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.uuid = is.read_string()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFMBIGIGB)?;
-                },
-                56 => {
+                16 => {
                     self.GABODFDMPMM = is.read_uint32()?;
                 },
-                120 => {
-                    self.CPFCMKLCMFG = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFMBIGIGB)?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                },
+                58 => {
+                    self.uuid = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +117,19 @@ impl ::protobuf::Message for DGHPIDMDOJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.uuid.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.uuid);
-        }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.GABODFDMPMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GABODFDMPMM);
         }
         if let Some(v) = self.PPJFMBIGIGB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GABODFDMPMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GABODFDMPMM);
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.CPFCMKLCMFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CPFCMKLCMFG);
+        if !self.uuid.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.uuid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +137,17 @@ impl ::protobuf::Message for DGHPIDMDOJM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.uuid.is_empty() {
-            os.write_string(8, &self.uuid)?;
-        }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.GABODFDMPMM != 0 {
+            os.write_uint32(2, self.GABODFDMPMM)?;
         }
         if let Some(v) = self.PPJFMBIGIGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.GABODFDMPMM != 0 {
-            os.write_uint32(7, self.GABODFDMPMM)?;
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.CPFCMKLCMFG != 0 {
-            os.write_uint32(15, self.CPFCMKLCMFG)?;
+        if !self.uuid.is_empty() {
+            os.write_string(7, &self.uuid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +166,19 @@ impl ::protobuf::Message for DGHPIDMDOJM {
     }
 
     fn clear(&mut self) {
-        self.uuid.clear();
-        self.OEIBHLMDJKA.clear();
-        self.PPJFMBIGIGB.clear();
         self.GABODFDMPMM = 0;
-        self.CPFCMKLCMFG = 0;
+        self.PPJFMBIGIGB.clear();
+        self.OEIBHLMDJKA.clear();
+        self.uuid.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DGHPIDMDOJM {
         static instance: DGHPIDMDOJM = DGHPIDMDOJM {
-            uuid: ::std::string::String::new(),
-            OEIBHLMDJKA: ::protobuf::MessageField::none(),
-            PPJFMBIGIGB: ::protobuf::MessageField::none(),
             GABODFDMPMM: 0,
-            CPFCMKLCMFG: 0,
+            PPJFMBIGIGB: ::protobuf::MessageField::none(),
+            OEIBHLMDJKA: ::protobuf::MessageField::none(),
+            uuid: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for DGHPIDMDOJM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DGHPIDMDOJM.proto\x1a\x11AHCLMAGAHPN.proto\x1a\x11BLPHONLBNBO.prot\
-    o\"\xc5\x01\n\x0bDGHPIDMDOJM\x12\x12\n\x04uuid\x18\x08\x20\x01(\tR\x04uu\
-    id\x12.\n\x0bOEIBHLMDJKA\x18\t\x20\x01(\x0b2\x0c.BLPHONLBNBOR\x0bOEIBHLM\
-    DJKA\x12.\n\x0bPPJFMBIGIGB\x18\x05\x20\x01(\x0b2\x0c.AHCLMAGAHPNR\x0bPPJ\
-    FMBIGIGB\x12\x20\n\x0bGABODFDMPMM\x18\x07\x20\x01(\rR\x0bGABODFDMPMM\x12\
-    \x20\n\x0bCPFCMKLCMFG\x18\x0f\x20\x01(\rR\x0bCPFCMKLCMFGb\x06proto3\
+    o\"\xa3\x01\n\x0bDGHPIDMDOJM\x12\x20\n\x0bGABODFDMPMM\x18\x02\x20\x01(\r\
+    R\x0bGABODFDMPMM\x12.\n\x0bPPJFMBIGIGB\x18\x04\x20\x01(\x0b2\x0c.AHCLMAG\
+    AHPNR\x0bPPJFMBIGIGB\x12.\n\x0bOEIBHLMDJKA\x18\x06\x20\x01(\x0b2\x0c.BLP\
+    HONLBNBOR\x0bOEIBHLMDJKA\x12\x12\n\x04uuid\x18\x07\x20\x01(\tR\x04uuidb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

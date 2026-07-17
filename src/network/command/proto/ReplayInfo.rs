@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplayInfo {
     // message fields
-    // @@protoc_insertion_point(field:ReplayInfo.replay_name)
-    pub replay_name: ::std::string::String,
-    // @@protoc_insertion_point(field:ReplayInfo.nickname)
-    pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:ReplayInfo.stage_id)
-    pub stage_id: u32,
-    // @@protoc_insertion_point(field:ReplayInfo.PBNIENNCNOP)
-    pub PBNIENNCNOP: u32,
     // @@protoc_insertion_point(field:ReplayInfo.LMFBCHEHOLO)
     pub LMFBCHEHOLO: u64,
-    // @@protoc_insertion_point(field:ReplayInfo.create_time)
-    pub create_time: u64,
-    // @@protoc_insertion_point(field:ReplayInfo.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:ReplayInfo.replay_type)
     pub replay_type: ::protobuf::EnumOrUnknown<super::PBIEFHKNAFA::PBIEFHKNAFA>,
+    // @@protoc_insertion_point(field:ReplayInfo.stage_id)
+    pub stage_id: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.nickname)
+    pub nickname: ::std::string::String,
     // @@protoc_insertion_point(field:ReplayInfo.head_icon)
     pub head_icon: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.replay_name)
+    pub replay_name: ::std::string::String,
+    // @@protoc_insertion_point(field:ReplayInfo.create_time)
+    pub create_time: u64,
     // @@protoc_insertion_point(field:ReplayInfo.KLIFGJOILEE)
     pub KLIFGJOILEE: u32,
+    // @@protoc_insertion_point(field:ReplayInfo.PBNIENNCNOP)
+    pub PBNIENNCNOP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReplayInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -68,39 +68,9 @@ impl ReplayInfo {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "replay_name",
-            |m: &ReplayInfo| { &m.replay_name },
-            |m: &mut ReplayInfo| { &mut m.replay_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &ReplayInfo| { &m.nickname },
-            |m: &mut ReplayInfo| { &mut m.nickname },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &ReplayInfo| { &m.stage_id },
-            |m: &mut ReplayInfo| { &mut m.stage_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBNIENNCNOP",
-            |m: &ReplayInfo| { &m.PBNIENNCNOP },
-            |m: &mut ReplayInfo| { &mut m.PBNIENNCNOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LMFBCHEHOLO",
             |m: &ReplayInfo| { &m.LMFBCHEHOLO },
             |m: &mut ReplayInfo| { &mut m.LMFBCHEHOLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "create_time",
-            |m: &ReplayInfo| { &m.create_time },
-            |m: &mut ReplayInfo| { &mut m.create_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &ReplayInfo| { &m.uid },
-            |m: &mut ReplayInfo| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "replay_type",
@@ -108,14 +78,44 @@ impl ReplayInfo {
             |m: &mut ReplayInfo| { &mut m.replay_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &ReplayInfo| { &m.stage_id },
+            |m: &mut ReplayInfo| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &ReplayInfo| { &m.uid },
+            |m: &mut ReplayInfo| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &ReplayInfo| { &m.nickname },
+            |m: &mut ReplayInfo| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "head_icon",
             |m: &ReplayInfo| { &m.head_icon },
             |m: &mut ReplayInfo| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "replay_name",
+            |m: &ReplayInfo| { &m.replay_name },
+            |m: &mut ReplayInfo| { &mut m.replay_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "create_time",
+            |m: &ReplayInfo| { &m.create_time },
+            |m: &mut ReplayInfo| { &mut m.create_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KLIFGJOILEE",
             |m: &ReplayInfo| { &m.KLIFGJOILEE },
             |m: &mut ReplayInfo| { &mut m.KLIFGJOILEE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PBNIENNCNOP",
+            |m: &ReplayInfo| { &m.PBNIENNCNOP },
+            |m: &mut ReplayInfo| { &mut m.PBNIENNCNOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplayInfo>(
             "ReplayInfo",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for ReplayInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.replay_name = is.read_string()?;
-                },
-                42 => {
-                    self.nickname = is.read_string()?;
-                },
-                24 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.PBNIENNCNOP = is.read_uint32()?;
-                },
                 8 => {
                     self.LMFBCHEHOLO = is.read_uint64()?;
-                },
-                64 => {
-                    self.create_time = is.read_uint64()?;
-                },
-                32 => {
-                    self.uid = is.read_uint32()?;
                 },
                 16 => {
                     self.replay_type = is.read_enum_or_unknown()?;
                 },
+                24 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.uid = is.read_uint32()?;
+                },
+                42 => {
+                    self.nickname = is.read_string()?;
+                },
                 48 => {
                     self.head_icon = is.read_uint32()?;
                 },
+                58 => {
+                    self.replay_name = is.read_string()?;
+                },
+                64 => {
+                    self.create_time = is.read_uint64()?;
+                },
                 72 => {
                     self.KLIFGJOILEE = is.read_uint32()?;
+                },
+                80 => {
+                    self.PBNIENNCNOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,35 +177,35 @@ impl ::protobuf::Message for ReplayInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.replay_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.replay_name);
-        }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.nickname);
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
-        }
-        if self.PBNIENNCNOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PBNIENNCNOP);
-        }
         if self.LMFBCHEHOLO != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.LMFBCHEHOLO);
-        }
-        if self.create_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.create_time);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::PBIEFHKNAFA::PBIEFHKNAFA::PBIEFHKNAFA_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(2, self.replay_type.value());
         }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+        }
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.nickname);
+        }
         if self.head_icon != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.head_icon);
         }
+        if !self.replay_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.replay_name);
+        }
+        if self.create_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.create_time);
+        }
         if self.KLIFGJOILEE != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.KLIFGJOILEE);
+        }
+        if self.PBNIENNCNOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PBNIENNCNOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -213,35 +213,35 @@ impl ::protobuf::Message for ReplayInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.replay_name.is_empty() {
-            os.write_string(7, &self.replay_name)?;
-        }
-        if !self.nickname.is_empty() {
-            os.write_string(5, &self.nickname)?;
-        }
-        if self.stage_id != 0 {
-            os.write_uint32(3, self.stage_id)?;
-        }
-        if self.PBNIENNCNOP != 0 {
-            os.write_uint32(10, self.PBNIENNCNOP)?;
-        }
         if self.LMFBCHEHOLO != 0 {
             os.write_uint64(1, self.LMFBCHEHOLO)?;
-        }
-        if self.create_time != 0 {
-            os.write_uint64(8, self.create_time)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
         }
         if self.replay_type != ::protobuf::EnumOrUnknown::new(super::PBIEFHKNAFA::PBIEFHKNAFA::PBIEFHKNAFA_NLCDGIPGFDJ) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.replay_type))?;
         }
+        if self.stage_id != 0 {
+            os.write_uint32(3, self.stage_id)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(4, self.uid)?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(5, &self.nickname)?;
+        }
         if self.head_icon != 0 {
             os.write_uint32(6, self.head_icon)?;
         }
+        if !self.replay_name.is_empty() {
+            os.write_string(7, &self.replay_name)?;
+        }
+        if self.create_time != 0 {
+            os.write_uint64(8, self.create_time)?;
+        }
         if self.KLIFGJOILEE != 0 {
             os.write_uint32(9, self.KLIFGJOILEE)?;
+        }
+        if self.PBNIENNCNOP != 0 {
+            os.write_uint32(10, self.PBNIENNCNOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -260,31 +260,31 @@ impl ::protobuf::Message for ReplayInfo {
     }
 
     fn clear(&mut self) {
-        self.replay_name.clear();
-        self.nickname.clear();
-        self.stage_id = 0;
-        self.PBNIENNCNOP = 0;
         self.LMFBCHEHOLO = 0;
-        self.create_time = 0;
-        self.uid = 0;
         self.replay_type = ::protobuf::EnumOrUnknown::new(super::PBIEFHKNAFA::PBIEFHKNAFA::PBIEFHKNAFA_NLCDGIPGFDJ);
+        self.stage_id = 0;
+        self.uid = 0;
+        self.nickname.clear();
         self.head_icon = 0;
+        self.replay_name.clear();
+        self.create_time = 0;
         self.KLIFGJOILEE = 0;
+        self.PBNIENNCNOP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplayInfo {
         static instance: ReplayInfo = ReplayInfo {
-            replay_name: ::std::string::String::new(),
-            nickname: ::std::string::String::new(),
-            stage_id: 0,
-            PBNIENNCNOP: 0,
             LMFBCHEHOLO: 0,
-            create_time: 0,
-            uid: 0,
             replay_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            stage_id: 0,
+            uid: 0,
+            nickname: ::std::string::String::new(),
             head_icon: 0,
+            replay_name: ::std::string::String::new(),
+            create_time: 0,
             KLIFGJOILEE: 0,
+            PBNIENNCNOP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -310,15 +310,15 @@ impl ::protobuf::reflect::ProtobufValue for ReplayInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10ReplayInfo.proto\x1a\x11PBIEFHKNAFA.proto\"\xc9\x02\n\nReplayInfo\
-    \x12\x1f\n\x0breplay_name\x18\x07\x20\x01(\tR\nreplayName\x12\x1a\n\x08n\
-    ickname\x18\x05\x20\x01(\tR\x08nickname\x12\x19\n\x08stage_id\x18\x03\
-    \x20\x01(\rR\x07stageId\x12\x20\n\x0bPBNIENNCNOP\x18\n\x20\x01(\rR\x0bPB\
-    NIENNCNOP\x12\x20\n\x0bLMFBCHEHOLO\x18\x01\x20\x01(\x04R\x0bLMFBCHEHOLO\
-    \x12\x1f\n\x0bcreate_time\x18\x08\x20\x01(\x04R\ncreateTime\x12\x10\n\
-    \x03uid\x18\x04\x20\x01(\rR\x03uid\x12-\n\x0breplay_type\x18\x02\x20\x01\
-    (\x0e2\x0c.PBIEFHKNAFAR\nreplayType\x12\x1b\n\thead_icon\x18\x06\x20\x01\
-    (\rR\x08headIcon\x12\x20\n\x0bKLIFGJOILEE\x18\t\x20\x01(\rR\x0bKLIFGJOIL\
-    EEb\x06proto3\
+    \x12\x20\n\x0bLMFBCHEHOLO\x18\x01\x20\x01(\x04R\x0bLMFBCHEHOLO\x12-\n\
+    \x0breplay_type\x18\x02\x20\x01(\x0e2\x0c.PBIEFHKNAFAR\nreplayType\x12\
+    \x19\n\x08stage_id\x18\x03\x20\x01(\rR\x07stageId\x12\x10\n\x03uid\x18\
+    \x04\x20\x01(\rR\x03uid\x12\x1a\n\x08nickname\x18\x05\x20\x01(\tR\x08nic\
+    kname\x12\x1b\n\thead_icon\x18\x06\x20\x01(\rR\x08headIcon\x12\x1f\n\x0b\
+    replay_name\x18\x07\x20\x01(\tR\nreplayName\x12\x1f\n\x0bcreate_time\x18\
+    \x08\x20\x01(\x04R\ncreateTime\x12\x20\n\x0bKLIFGJOILEE\x18\t\x20\x01(\r\
+    R\x0bKLIFGJOILEE\x12\x20\n\x0bPBNIENNCNOP\x18\n\x20\x01(\rR\x0bPBNIENNCN\
+    OPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

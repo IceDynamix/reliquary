@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JLIFGIMBMBD {
     // message fields
-    // @@protoc_insertion_point(field:JLIFGIMBMBD.HMLBJFJIPCE)
-    pub HMLBJFJIPCE: u32,
-    // @@protoc_insertion_point(field:JLIFGIMBMBD.BIOFDPICHLC)
-    pub BIOFDPICHLC: u32,
     // @@protoc_insertion_point(field:JLIFGIMBMBD.KKCKMCDGCGK)
     pub KKCKMCDGCGK: u32,
+    // @@protoc_insertion_point(field:JLIFGIMBMBD.BIOFDPICHLC)
+    pub BIOFDPICHLC: u32,
+    // @@protoc_insertion_point(field:JLIFGIMBMBD.HMLBJFJIPCE)
+    pub HMLBJFJIPCE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JLIFGIMBMBD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl JLIFGIMBMBD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMLBJFJIPCE",
-            |m: &JLIFGIMBMBD| { &m.HMLBJFJIPCE },
-            |m: &mut JLIFGIMBMBD| { &mut m.HMLBJFJIPCE },
+            "KKCKMCDGCGK",
+            |m: &JLIFGIMBMBD| { &m.KKCKMCDGCGK },
+            |m: &mut JLIFGIMBMBD| { &mut m.KKCKMCDGCGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIOFDPICHLC",
@@ -64,9 +64,9 @@ impl JLIFGIMBMBD {
             |m: &mut JLIFGIMBMBD| { &mut m.BIOFDPICHLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKCKMCDGCGK",
-            |m: &JLIFGIMBMBD| { &m.KKCKMCDGCGK },
-            |m: &mut JLIFGIMBMBD| { &mut m.KKCKMCDGCGK },
+            "HMLBJFJIPCE",
+            |m: &JLIFGIMBMBD| { &m.HMLBJFJIPCE },
+            |m: &mut JLIFGIMBMBD| { &mut m.HMLBJFJIPCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JLIFGIMBMBD>(
             "JLIFGIMBMBD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JLIFGIMBMBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.HMLBJFJIPCE = is.read_uint32()?;
+                24 => {
+                    self.KKCKMCDGCGK = is.read_uint32()?;
                 },
-                112 => {
+                40 => {
                     self.BIOFDPICHLC = is.read_uint32()?;
                 },
-                80 => {
-                    self.KKCKMCDGCGK = is.read_uint32()?;
+                96 => {
+                    self.HMLBJFJIPCE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JLIFGIMBMBD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HMLBJFJIPCE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HMLBJFJIPCE);
+        if self.KKCKMCDGCGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KKCKMCDGCGK);
         }
         if self.BIOFDPICHLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BIOFDPICHLC);
+            my_size += ::protobuf::rt::uint32_size(5, self.BIOFDPICHLC);
         }
-        if self.KKCKMCDGCGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KKCKMCDGCGK);
+        if self.HMLBJFJIPCE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HMLBJFJIPCE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JLIFGIMBMBD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HMLBJFJIPCE != 0 {
-            os.write_uint32(2, self.HMLBJFJIPCE)?;
+        if self.KKCKMCDGCGK != 0 {
+            os.write_uint32(3, self.KKCKMCDGCGK)?;
         }
         if self.BIOFDPICHLC != 0 {
-            os.write_uint32(14, self.BIOFDPICHLC)?;
+            os.write_uint32(5, self.BIOFDPICHLC)?;
         }
-        if self.KKCKMCDGCGK != 0 {
-            os.write_uint32(10, self.KKCKMCDGCGK)?;
+        if self.HMLBJFJIPCE != 0 {
+            os.write_uint32(12, self.HMLBJFJIPCE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JLIFGIMBMBD {
     }
 
     fn clear(&mut self) {
-        self.HMLBJFJIPCE = 0;
-        self.BIOFDPICHLC = 0;
         self.KKCKMCDGCGK = 0;
+        self.BIOFDPICHLC = 0;
+        self.HMLBJFJIPCE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JLIFGIMBMBD {
         static instance: JLIFGIMBMBD = JLIFGIMBMBD {
-            HMLBJFJIPCE: 0,
-            BIOFDPICHLC: 0,
             KKCKMCDGCGK: 0,
+            BIOFDPICHLC: 0,
+            HMLBJFJIPCE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JLIFGIMBMBD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JLIFGIMBMBD.proto\"s\n\x0bJLIFGIMBMBD\x12\x20\n\x0bHMLBJFJIPCE\x18\
-    \x02\x20\x01(\rR\x0bHMLBJFJIPCE\x12\x20\n\x0bBIOFDPICHLC\x18\x0e\x20\x01\
-    (\rR\x0bBIOFDPICHLC\x12\x20\n\x0bKKCKMCDGCGK\x18\n\x20\x01(\rR\x0bKKCKMC\
-    DGCGKb\x06proto3\
+    \n\x11JLIFGIMBMBD.proto\"s\n\x0bJLIFGIMBMBD\x12\x20\n\x0bKKCKMCDGCGK\x18\
+    \x03\x20\x01(\rR\x0bKKCKMCDGCGK\x12\x20\n\x0bBIOFDPICHLC\x18\x05\x20\x01\
+    (\rR\x0bBIOFDPICHLC\x12\x20\n\x0bHMLBJFJIPCE\x18\x0c\x20\x01(\rR\x0bHMLB\
+    JFJIPCEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

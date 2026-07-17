@@ -79,13 +79,13 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.entity_id_list)?;
                 },
-                24 => {
+                16 => {
                     self.entity_id_list.push(is.read_uint32()?);
                 },
-                32 => {
+                104 => {
                     self.interact_id = is.read_uint64()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.entity_id_list);
         if self.interact_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.interact_id);
+            my_size += ::protobuf::rt::uint64_size(13, self.interact_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.entity_id_list)?;
+        os.write_repeated_packed_uint32(2, &self.entity_id_list)?;
         if self.interact_id != 0 {
-            os.write_uint64(4, self.interact_id)?;
+            os.write_uint64(13, self.interact_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSummonUnitCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDeleteSummonUnitCsReq.proto\"^\n\x15DeleteSummonUnitCsReq\x12$\n\
-    \x0eentity_id_list\x18\x03\x20\x03(\rR\x0centityIdList\x12\x1f\n\x0binte\
-    ract_id\x18\x04\x20\x01(\x04R\ninteractIdb\x06proto3\
+    \x0eentity_id_list\x18\x02\x20\x03(\rR\x0centityIdList\x12\x1f\n\x0binte\
+    ract_id\x18\r\x20\x01(\x04R\ninteractIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

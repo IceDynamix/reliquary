@@ -28,34 +28,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NINLEFEPGCC {
     // message fields
+    // @@protoc_insertion_point(field:NINLEFEPGCC.room_id)
+    pub room_id: u64,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.GLHKJMBKKPI)
+    pub GLHKJMBKKPI: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.GAENFKKAKOI)
+    pub GAENFKKAKOI: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.OOJGMIMJAGC)
+    pub OOJGMIMJAGC: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.CJNHAILKEPN)
+    pub CJNHAILKEPN: bool,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.turn)
+    pub turn: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.FDAOAJKBJKM)
+    pub FDAOAJKBJKM: u32,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.COGGJELNFCN)
+    pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.IDBGCLFLCGE)
+    pub IDBGCLFLCGE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
+    // @@protoc_insertion_point(field:NINLEFEPGCC.attack_type)
+    pub attack_type: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.ADHHMELLEHA)
     pub ADHHMELLEHA: ::protobuf::MessageField<super::FDNOPLPDLFC::FDNOPLPDLFC>,
     // @@protoc_insertion_point(field:NINLEFEPGCC.KNMNGCBMNMJ)
     pub KNMNGCBMNMJ: ::protobuf::MessageField<super::FDNOPLPDLFC::FDNOPLPDLFC>,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.IDBGCLFLCGE)
-    pub IDBGCLFLCGE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.COGGJELNFCN)
-    pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.GLHKJMBKKPI)
-    pub GLHKJMBKKPI: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.FDAOAJKBJKM)
-    pub FDAOAJKBJKM: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.room_id)
-    pub room_id: u64,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.OOJGMIMJAGC)
-    pub OOJGMIMJAGC: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.KFEMJMKMGIJ)
     pub KFEMJMKMGIJ: u32,
     // @@protoc_insertion_point(field:NINLEFEPGCC.cost_time)
     pub cost_time: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.GAENFKKAKOI)
-    pub GAENFKKAKOI: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.attack_type)
-    pub attack_type: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.HJPBAJEPAGE)
-    pub HJPBAJEPAGE: u32,
-    // @@protoc_insertion_point(field:NINLEFEPGCC.CJNHAILKEPN)
-    pub CJNHAILKEPN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:NINLEFEPGCC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,6 +75,56 @@ impl NINLEFEPGCC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_id",
+            |m: &NINLEFEPGCC| { &m.room_id },
+            |m: &mut NINLEFEPGCC| { &mut m.room_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GLHKJMBKKPI",
+            |m: &NINLEFEPGCC| { &m.GLHKJMBKKPI },
+            |m: &mut NINLEFEPGCC| { &mut m.GLHKJMBKKPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAENFKKAKOI",
+            |m: &NINLEFEPGCC| { &m.GAENFKKAKOI },
+            |m: &mut NINLEFEPGCC| { &mut m.GAENFKKAKOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OOJGMIMJAGC",
+            |m: &NINLEFEPGCC| { &m.OOJGMIMJAGC },
+            |m: &mut NINLEFEPGCC| { &mut m.OOJGMIMJAGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJNHAILKEPN",
+            |m: &NINLEFEPGCC| { &m.CJNHAILKEPN },
+            |m: &mut NINLEFEPGCC| { &mut m.CJNHAILKEPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "turn",
+            |m: &NINLEFEPGCC| { &m.turn },
+            |m: &mut NINLEFEPGCC| { &mut m.turn },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDAOAJKBJKM",
+            |m: &NINLEFEPGCC| { &m.FDAOAJKBJKM },
+            |m: &mut NINLEFEPGCC| { &mut m.FDAOAJKBJKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
+            "COGGJELNFCN",
+            |m: &NINLEFEPGCC| { &m.COGGJELNFCN },
+            |m: &mut NINLEFEPGCC| { &mut m.COGGJELNFCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
+            "IDBGCLFLCGE",
+            |m: &NINLEFEPGCC| { &m.IDBGCLFLCGE },
+            |m: &mut NINLEFEPGCC| { &mut m.IDBGCLFLCGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "attack_type",
+            |m: &NINLEFEPGCC| { &m.attack_type },
+            |m: &mut NINLEFEPGCC| { &mut m.attack_type },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FDNOPLPDLFC::FDNOPLPDLFC>(
             "ADHHMELLEHA",
             |m: &NINLEFEPGCC| { &m.ADHHMELLEHA },
@@ -85,36 +135,6 @@ impl NINLEFEPGCC {
             |m: &NINLEFEPGCC| { &m.KNMNGCBMNMJ },
             |m: &mut NINLEFEPGCC| { &mut m.KNMNGCBMNMJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
-            "IDBGCLFLCGE",
-            |m: &NINLEFEPGCC| { &m.IDBGCLFLCGE },
-            |m: &mut NINLEFEPGCC| { &mut m.IDBGCLFLCGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
-            "COGGJELNFCN",
-            |m: &NINLEFEPGCC| { &m.COGGJELNFCN },
-            |m: &mut NINLEFEPGCC| { &mut m.COGGJELNFCN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLHKJMBKKPI",
-            |m: &NINLEFEPGCC| { &m.GLHKJMBKKPI },
-            |m: &mut NINLEFEPGCC| { &mut m.GLHKJMBKKPI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDAOAJKBJKM",
-            |m: &NINLEFEPGCC| { &m.FDAOAJKBJKM },
-            |m: &mut NINLEFEPGCC| { &mut m.FDAOAJKBJKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &NINLEFEPGCC| { &m.room_id },
-            |m: &mut NINLEFEPGCC| { &mut m.room_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOJGMIMJAGC",
-            |m: &NINLEFEPGCC| { &m.OOJGMIMJAGC },
-            |m: &mut NINLEFEPGCC| { &mut m.OOJGMIMJAGC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFEMJMKMGIJ",
             |m: &NINLEFEPGCC| { &m.KFEMJMKMGIJ },
@@ -124,26 +144,6 @@ impl NINLEFEPGCC {
             "cost_time",
             |m: &NINLEFEPGCC| { &m.cost_time },
             |m: &mut NINLEFEPGCC| { &mut m.cost_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAENFKKAKOI",
-            |m: &NINLEFEPGCC| { &m.GAENFKKAKOI },
-            |m: &mut NINLEFEPGCC| { &mut m.GAENFKKAKOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "attack_type",
-            |m: &NINLEFEPGCC| { &m.attack_type },
-            |m: &mut NINLEFEPGCC| { &mut m.attack_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJPBAJEPAGE",
-            |m: &NINLEFEPGCC| { &m.HJPBAJEPAGE },
-            |m: &mut NINLEFEPGCC| { &mut m.HJPBAJEPAGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJNHAILKEPN",
-            |m: &NINLEFEPGCC| { &m.CJNHAILKEPN },
-            |m: &mut NINLEFEPGCC| { &mut m.CJNHAILKEPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NINLEFEPGCC>(
             "NINLEFEPGCC",
@@ -163,47 +163,47 @@ impl ::protobuf::Message for NINLEFEPGCC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.room_id = is.read_uint64()?;
+                },
+                16 => {
+                    self.GLHKJMBKKPI = is.read_uint32()?;
+                },
+                24 => {
+                    self.GAENFKKAKOI = is.read_uint32()?;
+                },
+                32 => {
+                    self.OOJGMIMJAGC = is.read_uint32()?;
+                },
+                40 => {
+                    self.CJNHAILKEPN = is.read_bool()?;
+                },
+                48 => {
+                    self.turn = is.read_uint32()?;
+                },
+                56 => {
+                    self.FDAOAJKBJKM = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COGGJELNFCN)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDBGCLFLCGE)?;
+                },
+                80 => {
+                    self.attack_type = is.read_uint32()?;
+                },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ADHHMELLEHA)?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNMNGCBMNMJ)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDBGCLFLCGE)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COGGJELNFCN)?;
-                },
-                16 => {
-                    self.GLHKJMBKKPI = is.read_uint32()?;
-                },
-                56 => {
-                    self.FDAOAJKBJKM = is.read_uint32()?;
-                },
-                8 => {
-                    self.room_id = is.read_uint64()?;
-                },
-                32 => {
-                    self.OOJGMIMJAGC = is.read_uint32()?;
-                },
                 104 => {
                     self.KFEMJMKMGIJ = is.read_uint32()?;
                 },
                 112 => {
                     self.cost_time = is.read_uint32()?;
-                },
-                24 => {
-                    self.GAENFKKAKOI = is.read_uint32()?;
-                },
-                80 => {
-                    self.attack_type = is.read_uint32()?;
-                },
-                48 => {
-                    self.HJPBAJEPAGE = is.read_uint32()?;
-                },
-                40 => {
-                    self.CJNHAILKEPN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -217,11 +217,28 @@ impl ::protobuf::Message for NINLEFEPGCC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ADHHMELLEHA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
         }
-        if let Some(v) = self.KNMNGCBMNMJ.as_ref() {
+        if self.GLHKJMBKKPI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GLHKJMBKKPI);
+        }
+        if self.GAENFKKAKOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.GAENFKKAKOI);
+        }
+        if self.OOJGMIMJAGC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.OOJGMIMJAGC);
+        }
+        if self.CJNHAILKEPN != false {
+            my_size += 1 + 1;
+        }
+        if self.turn != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.turn);
+        }
+        if self.FDAOAJKBJKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FDAOAJKBJKM);
+        }
+        if let Some(v) = self.COGGJELNFCN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -229,21 +246,16 @@ impl ::protobuf::Message for NINLEFEPGCC {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.COGGJELNFCN.as_ref() {
+        if self.attack_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.attack_type);
+        }
+        if let Some(v) = self.ADHHMELLEHA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GLHKJMBKKPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GLHKJMBKKPI);
-        }
-        if self.FDAOAJKBJKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FDAOAJKBJKM);
-        }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
-        }
-        if self.OOJGMIMJAGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OOJGMIMJAGC);
+        if let Some(v) = self.KNMNGCBMNMJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KFEMJMKMGIJ != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.KFEMJMKMGIJ);
@@ -251,65 +263,53 @@ impl ::protobuf::Message for NINLEFEPGCC {
         if self.cost_time != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.cost_time);
         }
-        if self.GAENFKKAKOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GAENFKKAKOI);
-        }
-        if self.attack_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.attack_type);
-        }
-        if self.HJPBAJEPAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HJPBAJEPAGE);
-        }
-        if self.CJNHAILKEPN != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.room_id != 0 {
+            os.write_uint64(1, self.room_id)?;
+        }
+        if self.GLHKJMBKKPI != 0 {
+            os.write_uint32(2, self.GLHKJMBKKPI)?;
+        }
+        if self.GAENFKKAKOI != 0 {
+            os.write_uint32(3, self.GAENFKKAKOI)?;
+        }
+        if self.OOJGMIMJAGC != 0 {
+            os.write_uint32(4, self.OOJGMIMJAGC)?;
+        }
+        if self.CJNHAILKEPN != false {
+            os.write_bool(5, self.CJNHAILKEPN)?;
+        }
+        if self.turn != 0 {
+            os.write_uint32(6, self.turn)?;
+        }
+        if self.FDAOAJKBJKM != 0 {
+            os.write_uint32(7, self.FDAOAJKBJKM)?;
+        }
+        if let Some(v) = self.COGGJELNFCN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.IDBGCLFLCGE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.attack_type != 0 {
+            os.write_uint32(10, self.attack_type)?;
+        }
         if let Some(v) = self.ADHHMELLEHA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.KNMNGCBMNMJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.IDBGCLFLCGE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.COGGJELNFCN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.GLHKJMBKKPI != 0 {
-            os.write_uint32(2, self.GLHKJMBKKPI)?;
-        }
-        if self.FDAOAJKBJKM != 0 {
-            os.write_uint32(7, self.FDAOAJKBJKM)?;
-        }
-        if self.room_id != 0 {
-            os.write_uint64(1, self.room_id)?;
-        }
-        if self.OOJGMIMJAGC != 0 {
-            os.write_uint32(4, self.OOJGMIMJAGC)?;
-        }
         if self.KFEMJMKMGIJ != 0 {
             os.write_uint32(13, self.KFEMJMKMGIJ)?;
         }
         if self.cost_time != 0 {
             os.write_uint32(14, self.cost_time)?;
-        }
-        if self.GAENFKKAKOI != 0 {
-            os.write_uint32(3, self.GAENFKKAKOI)?;
-        }
-        if self.attack_type != 0 {
-            os.write_uint32(10, self.attack_type)?;
-        }
-        if self.HJPBAJEPAGE != 0 {
-            os.write_uint32(6, self.HJPBAJEPAGE)?;
-        }
-        if self.CJNHAILKEPN != false {
-            os.write_bool(5, self.CJNHAILKEPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -328,39 +328,39 @@ impl ::protobuf::Message for NINLEFEPGCC {
     }
 
     fn clear(&mut self) {
+        self.room_id = 0;
+        self.GLHKJMBKKPI = 0;
+        self.GAENFKKAKOI = 0;
+        self.OOJGMIMJAGC = 0;
+        self.CJNHAILKEPN = false;
+        self.turn = 0;
+        self.FDAOAJKBJKM = 0;
+        self.COGGJELNFCN.clear();
+        self.IDBGCLFLCGE.clear();
+        self.attack_type = 0;
         self.ADHHMELLEHA.clear();
         self.KNMNGCBMNMJ.clear();
-        self.IDBGCLFLCGE.clear();
-        self.COGGJELNFCN.clear();
-        self.GLHKJMBKKPI = 0;
-        self.FDAOAJKBJKM = 0;
-        self.room_id = 0;
-        self.OOJGMIMJAGC = 0;
         self.KFEMJMKMGIJ = 0;
         self.cost_time = 0;
-        self.GAENFKKAKOI = 0;
-        self.attack_type = 0;
-        self.HJPBAJEPAGE = 0;
-        self.CJNHAILKEPN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NINLEFEPGCC {
         static instance: NINLEFEPGCC = NINLEFEPGCC {
+            room_id: 0,
+            GLHKJMBKKPI: 0,
+            GAENFKKAKOI: 0,
+            OOJGMIMJAGC: 0,
+            CJNHAILKEPN: false,
+            turn: 0,
+            FDAOAJKBJKM: 0,
+            COGGJELNFCN: ::protobuf::MessageField::none(),
+            IDBGCLFLCGE: ::protobuf::MessageField::none(),
+            attack_type: 0,
             ADHHMELLEHA: ::protobuf::MessageField::none(),
             KNMNGCBMNMJ: ::protobuf::MessageField::none(),
-            IDBGCLFLCGE: ::protobuf::MessageField::none(),
-            COGGJELNFCN: ::protobuf::MessageField::none(),
-            GLHKJMBKKPI: 0,
-            FDAOAJKBJKM: 0,
-            room_id: 0,
-            OOJGMIMJAGC: 0,
             KFEMJMKMGIJ: 0,
             cost_time: 0,
-            GAENFKKAKOI: 0,
-            attack_type: 0,
-            HJPBAJEPAGE: 0,
-            CJNHAILKEPN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -386,19 +386,19 @@ impl ::protobuf::reflect::ProtobufValue for NINLEFEPGCC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NINLEFEPGCC.proto\x1a\x11CKODNPNBOEN.proto\x1a\x11FDNOPLPDLFC.prot\
-    o\"\x92\x04\n\x0bNINLEFEPGCC\x12.\n\x0bADHHMELLEHA\x18\x0b\x20\x01(\x0b2\
-    \x0c.FDNOPLPDLFCR\x0bADHHMELLEHA\x12.\n\x0bKNMNGCBMNMJ\x18\x0c\x20\x01(\
-    \x0b2\x0c.FDNOPLPDLFCR\x0bKNMNGCBMNMJ\x12.\n\x0bIDBGCLFLCGE\x18\t\x20\
-    \x01(\x0b2\x0c.CKODNPNBOENR\x0bIDBGCLFLCGE\x12.\n\x0bCOGGJELNFCN\x18\x08\
-    \x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bCOGGJELNFCN\x12\x20\n\x0bGLHKJMBKKPI\
-    \x18\x02\x20\x01(\rR\x0bGLHKJMBKKPI\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\
-    \x01(\rR\x0bFDAOAJKBJKM\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\x06ro\
-    omId\x12\x20\n\x0bOOJGMIMJAGC\x18\x04\x20\x01(\rR\x0bOOJGMIMJAGC\x12\x20\
-    \n\x0bKFEMJMKMGIJ\x18\r\x20\x01(\rR\x0bKFEMJMKMGIJ\x12\x1b\n\tcost_time\
-    \x18\x0e\x20\x01(\rR\x08costTime\x12\x20\n\x0bGAENFKKAKOI\x18\x03\x20\
-    \x01(\rR\x0bGAENFKKAKOI\x12\x1f\n\x0battack_type\x18\n\x20\x01(\rR\natta\
-    ckType\x12\x20\n\x0bHJPBAJEPAGE\x18\x06\x20\x01(\rR\x0bHJPBAJEPAGE\x12\
-    \x20\n\x0bCJNHAILKEPN\x18\x05\x20\x01(\x08R\x0bCJNHAILKEPNb\x06proto3\
+    o\"\x84\x04\n\x0bNINLEFEPGCC\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\
+    \x06roomId\x12\x20\n\x0bGLHKJMBKKPI\x18\x02\x20\x01(\rR\x0bGLHKJMBKKPI\
+    \x12\x20\n\x0bGAENFKKAKOI\x18\x03\x20\x01(\rR\x0bGAENFKKAKOI\x12\x20\n\
+    \x0bOOJGMIMJAGC\x18\x04\x20\x01(\rR\x0bOOJGMIMJAGC\x12\x20\n\x0bCJNHAILK\
+    EPN\x18\x05\x20\x01(\x08R\x0bCJNHAILKEPN\x12\x12\n\x04turn\x18\x06\x20\
+    \x01(\rR\x04turn\x12\x20\n\x0bFDAOAJKBJKM\x18\x07\x20\x01(\rR\x0bFDAOAJK\
+    BJKM\x12.\n\x0bCOGGJELNFCN\x18\x08\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bCOG\
+    GJELNFCN\x12.\n\x0bIDBGCLFLCGE\x18\t\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bI\
+    DBGCLFLCGE\x12\x1f\n\x0battack_type\x18\n\x20\x01(\rR\nattackType\x12.\n\
+    \x0bADHHMELLEHA\x18\x0b\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bADHHMELLEHA\
+    \x12.\n\x0bKNMNGCBMNMJ\x18\x0c\x20\x01(\x0b2\x0c.FDNOPLPDLFCR\x0bKNMNGCB\
+    MNMJ\x12\x20\n\x0bKFEMJMKMGIJ\x18\r\x20\x01(\rR\x0bKFEMJMKMGIJ\x12\x1b\n\
+    \tcost_time\x18\x0e\x20\x01(\rR\x08costTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

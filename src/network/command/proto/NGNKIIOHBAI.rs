@@ -86,16 +86,16 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.OLPPMEAMFFO)?;
                 },
-                24 => {
+                32 => {
                     self.OLPPMEAMFFO.push(is.read_uint32()?);
                 },
-                8 => {
+                64 => {
                     self.effect_id = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.trait_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.OLPPMEAMFFO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.OLPPMEAMFFO);
         if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.effect_id);
         }
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.OLPPMEAMFFO)?;
+        os.write_repeated_packed_uint32(4, &self.OLPPMEAMFFO)?;
         if self.effect_id != 0 {
-            os.write_uint32(1, self.effect_id)?;
+            os.write_uint32(8, self.effect_id)?;
         }
         if self.trait_id != 0 {
-            os.write_uint32(7, self.trait_id)?;
+            os.write_uint32(13, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NGNKIIOHBAI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGNKIIOHBAI.proto\"g\n\x0bNGNKIIOHBAI\x12\x20\n\x0bOLPPMEAMFFO\x18\
-    \x03\x20\x03(\rR\x0bOLPPMEAMFFO\x12\x1b\n\teffect_id\x18\x01\x20\x01(\rR\
-    \x08effectId\x12\x19\n\x08trait_id\x18\x07\x20\x01(\rR\x07traitIdb\x06pr\
-    oto3\
+    \x04\x20\x03(\rR\x0bOLPPMEAMFFO\x12\x1b\n\teffect_id\x18\x08\x20\x01(\rR\
+    \x08effectId\x12\x19\n\x08trait_id\x18\r\x20\x01(\rR\x07traitIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

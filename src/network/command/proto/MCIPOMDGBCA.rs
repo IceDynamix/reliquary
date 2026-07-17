@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MCIPOMDGBCA {
     // message fields
     // @@protoc_insertion_point(field:MCIPOMDGBCA.DHFOFLFCLAH)
-    pub DHFOFLFCLAH: ::protobuf::MessageField<super::MPIMAEMCEFH::MPIMAEMCEFH>,
+    pub DHFOFLFCLAH: ::protobuf::MessageField<super::GridFightCurrentInfo::GridFightCurrentInfo>,
     // @@protoc_insertion_point(field:MCIPOMDGBCA.retcode)
     pub retcode: u32,
     // special fields
@@ -51,7 +51,7 @@ impl MCIPOMDGBCA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MPIMAEMCEFH::MPIMAEMCEFH>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightCurrentInfo::GridFightCurrentInfo>(
             "DHFOFLFCLAH",
             |m: &MCIPOMDGBCA| { &m.DHFOFLFCLAH },
             |m: &mut MCIPOMDGBCA| { &mut m.DHFOFLFCLAH },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCIPOMDGBCA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHFOFLFCLAH)?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MCIPOMDGBCA {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MCIPOMDGBCA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.DHFOFLFCLAH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for MCIPOMDGBCA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MCIPOMDGBCA.proto\x1a\x11MPIMAEMCEFH.proto\"W\n\x0bMCIPOMDGBCA\x12\
-    .\n\x0bDHFOFLFCLAH\x18\t\x20\x01(\x0b2\x0c.MPIMAEMCEFHR\x0bDHFOFLFCLAH\
-    \x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x11MCIPOMDGBCA.proto\x1a\x1aGridFightCurrentInfo.proto\"`\n\x0bMCIPOM\
+    DGBCA\x127\n\x0bDHFOFLFCLAH\x18\x02\x20\x01(\x0b2\x15.GridFightCurrentIn\
+    foR\x0bDHFOFLFCLAH\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MPIMAEMCEFH::file_descriptor().clone());
+            deps.push(super::GridFightCurrentInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MCIPOMDGBCA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

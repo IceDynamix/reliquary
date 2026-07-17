@@ -86,13 +86,13 @@ impl ::protobuf::Message for PNLLCBKLBLE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LONFKFCFDND)?;
                 },
-                88 => {
+                64 => {
                     self.LNLOHDJIFPK = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.DOFBGHGHDJA = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for PNLLCBKLBLE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.LNLOHDJIFPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNLOHDJIFPK);
+            my_size += ::protobuf::rt::uint32_size(8, self.LNLOHDJIFPK);
         }
         if self.DOFBGHGHDJA != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PNLLCBKLBLE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LONFKFCFDND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.LNLOHDJIFPK != 0 {
-            os.write_uint32(11, self.LNLOHDJIFPK)?;
+            os.write_uint32(8, self.LNLOHDJIFPK)?;
         }
         if self.DOFBGHGHDJA != false {
-            os.write_bool(8, self.DOFBGHGHDJA)?;
+            os.write_bool(14, self.DOFBGHGHDJA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PNLLCBKLBLE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNLLCBKLBLE.proto\x1a\x11IEDLKIGJLEM.proto\"\x81\x01\n\x0bPNLLCBKL\
-    BLE\x12.\n\x0bLONFKFCFDND\x18\x0c\x20\x01(\x0b2\x0c.IEDLKIGJLEMR\x0bLONF\
-    KFCFDND\x12\x20\n\x0bLNLOHDJIFPK\x18\x0b\x20\x01(\rR\x0bLNLOHDJIFPK\x12\
-    \x20\n\x0bDOFBGHGHDJA\x18\x08\x20\x01(\x08R\x0bDOFBGHGHDJAb\x06proto3\
+    BLE\x12.\n\x0bLONFKFCFDND\x18\x04\x20\x01(\x0b2\x0c.IEDLKIGJLEMR\x0bLONF\
+    KFCFDND\x12\x20\n\x0bLNLOHDJIFPK\x18\x08\x20\x01(\rR\x0bLNLOHDJIFPK\x12\
+    \x20\n\x0bDOFBGHGHDJA\x18\x0e\x20\x01(\x08R\x0bDOFBGHGHDJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

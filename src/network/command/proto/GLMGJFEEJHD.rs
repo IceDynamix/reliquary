@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLMGJFEEJHD {
     // message fields
-    // @@protoc_insertion_point(field:GLMGJFEEJHD.AFDNFCBCFBF)
-    pub AFDNFCBCFBF: u32,
+    // @@protoc_insertion_point(field:GLMGJFEEJHD.ratio)
+    pub ratio: u32,
     // @@protoc_insertion_point(field:GLMGJFEEJHD.config_id)
     pub config_id: u32,
     // @@protoc_insertion_point(field:GLMGJFEEJHD.BAJHKGJPFED)
@@ -52,7 +52,7 @@ impl GLMGJFEEJHD {
         ::std::default::Default::default()
     }
 
-    // .KDPGIMOOLON AGLMEDOBMAL = 11;
+    // .KDPGIMOOLON AGLMEDOBMAL = 5;
 
     pub fn AGLMEDOBMAL(&self) -> &super::KDPGIMOOLON::KDPGIMOOLON {
         match self.JMPNIHHAMPH {
@@ -101,7 +101,7 @@ impl GLMGJFEEJHD {
         }
     }
 
-    // .JGKNADEDNHB LOCHFJEECKL = 5;
+    // .JGKNADEDNHB LOCHFJEECKL = 10;
 
     pub fn LOCHFJEECKL(&self) -> &super::JGKNADEDNHB::JGKNADEDNHB {
         match self.JMPNIHHAMPH {
@@ -203,9 +203,9 @@ impl GLMGJFEEJHD {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFDNFCBCFBF",
-            |m: &GLMGJFEEJHD| { &m.AFDNFCBCFBF },
-            |m: &mut GLMGJFEEJHD| { &mut m.AFDNFCBCFBF },
+            "ratio",
+            |m: &GLMGJFEEJHD| { &m.ratio },
+            |m: &mut GLMGJFEEJHD| { &mut m.ratio },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "config_id",
@@ -257,19 +257,19 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.AFDNFCBCFBF = is.read_uint32()?;
+                48 => {
+                    self.ratio = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.config_id = is.read_uint32()?;
                 },
-                24 => {
+                104 => {
                     self.BAJHKGJPFED = is.read_uint32()?;
                 },
-                90 => {
+                42 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(is.read_message()?));
                 },
-                42 => {
+                82 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(is.read_message()?));
                 },
                 58 => {
@@ -287,14 +287,14 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AFDNFCBCFBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AFDNFCBCFBF);
+        if self.ratio != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ratio);
         }
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.config_id);
         }
         if self.BAJHKGJPFED != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BAJHKGJPFED);
+            my_size += ::protobuf::rt::uint32_size(13, self.BAJHKGJPFED);
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
@@ -318,22 +318,22 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AFDNFCBCFBF != 0 {
-            os.write_uint32(8, self.AFDNFCBCFBF)?;
+        if self.ratio != 0 {
+            os.write_uint32(6, self.ratio)?;
         }
         if self.config_id != 0 {
-            os.write_uint32(9, self.config_id)?;
+            os.write_uint32(11, self.config_id)?;
         }
         if self.BAJHKGJPFED != 0 {
-            os.write_uint32(3, self.BAJHKGJPFED)?;
+            os.write_uint32(13, self.BAJHKGJPFED)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
                 &glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &glmgjfeejhd::JMPNIHHAMPH::COKLIDDAEOH(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
@@ -357,7 +357,7 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     }
 
     fn clear(&mut self) {
-        self.AFDNFCBCFBF = 0;
+        self.ratio = 0;
         self.config_id = 0;
         self.BAJHKGJPFED = 0;
         self.JMPNIHHAMPH = ::std::option::Option::None;
@@ -368,7 +368,7 @@ impl ::protobuf::Message for GLMGJFEEJHD {
 
     fn default_instance() -> &'static GLMGJFEEJHD {
         static instance: GLMGJFEEJHD = GLMGJFEEJHD {
-            AFDNFCBCFBF: 0,
+            ratio: 0,
             config_id: 0,
             BAJHKGJPFED: 0,
             JMPNIHHAMPH: ::std::option::Option::None,
@@ -429,13 +429,13 @@ pub mod glmgjfeejhd {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLMGJFEEJHD.proto\x1a\x11JGKNADEDNHB.proto\x1a\x11KDPGIMOOLON.prot\
-    o\x1a\x11LOEBAOEFMDC.proto\"\x93\x02\n\x0bGLMGJFEEJHD\x12\x20\n\x0bAFDNF\
-    CBCFBF\x18\x08\x20\x01(\rR\x0bAFDNFCBCFBF\x12\x1b\n\tconfig_id\x18\t\x20\
-    \x01(\rR\x08configId\x12\x20\n\x0bBAJHKGJPFED\x18\x03\x20\x01(\rR\x0bBAJ\
-    HKGJPFED\x120\n\x0bAGLMEDOBMAL\x18\x0b\x20\x01(\x0b2\x0c.KDPGIMOOLONH\0R\
-    \x0bAGLMEDOBMAL\x120\n\x0bLOCHFJEECKL\x18\x05\x20\x01(\x0b2\x0c.JGKNADED\
-    NHBH\0R\x0bLOCHFJEECKL\x120\n\x0bCOKLIDDAEOH\x18\x07\x20\x01(\x0b2\x0c.L\
-    OEBAOEFMDCH\0R\x0bCOKLIDDAEOHB\r\n\x0bJMPNIHHAMPHb\x06proto3\
+    o\x1a\x11LOEBAOEFMDC.proto\"\x87\x02\n\x0bGLMGJFEEJHD\x12\x14\n\x05ratio\
+    \x18\x06\x20\x01(\rR\x05ratio\x12\x1b\n\tconfig_id\x18\x0b\x20\x01(\rR\
+    \x08configId\x12\x20\n\x0bBAJHKGJPFED\x18\r\x20\x01(\rR\x0bBAJHKGJPFED\
+    \x120\n\x0bAGLMEDOBMAL\x18\x05\x20\x01(\x0b2\x0c.KDPGIMOOLONH\0R\x0bAGLM\
+    EDOBMAL\x120\n\x0bLOCHFJEECKL\x18\n\x20\x01(\x0b2\x0c.JGKNADEDNHBH\0R\
+    \x0bLOCHFJEECKL\x120\n\x0bCOKLIDDAEOH\x18\x07\x20\x01(\x0b2\x0c.LOEBAOEF\
+    MDCH\0R\x0bCOKLIDDAEOHB\r\n\x0bJMPNIHHAMPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

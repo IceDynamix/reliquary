@@ -30,10 +30,10 @@ pub struct GetEvolveBuildQueryInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.JPDOIGJNGNP)
     pub JPDOIGJNGNP: ::std::vec::Vec<super::LDLCMMOPKNG::LDLCMMOPKNG>,
-    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.CFDIKLBINHK)
-    pub CFDIKLBINHK: ::protobuf::MessageField<super::CJJHNFICDIM::CJJHNFICDIM>,
     // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.CFDIKLBINHK)
+    pub CFDIKLBINHK: ::protobuf::MessageField<super::CJJHNFICDIM::CJJHNFICDIM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetEvolveBuildQueryInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetEvolveBuildQueryInfoScRsp {
             |m: &GetEvolveBuildQueryInfoScRsp| { &m.JPDOIGJNGNP },
             |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.JPDOIGJNGNP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJJHNFICDIM::CJJHNFICDIM>(
-            "CFDIKLBINHK",
-            |m: &GetEvolveBuildQueryInfoScRsp| { &m.CFDIKLBINHK },
-            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.CFDIKLBINHK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetEvolveBuildQueryInfoScRsp| { &m.retcode },
             |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJJHNFICDIM::CJJHNFICDIM>(
+            "CFDIKLBINHK",
+            |m: &GetEvolveBuildQueryInfoScRsp| { &m.CFDIKLBINHK },
+            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.CFDIKLBINHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEvolveBuildQueryInfoScRsp>(
             "GetEvolveBuildQueryInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                26 => {
                     self.JPDOIGJNGNP.push(is.read_message()?);
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
-                },
-                32 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.JPDOIGJNGNP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
 
     fn clear(&mut self) {
         self.JPDOIGJNGNP.clear();
-        self.CFDIKLBINHK.clear();
         self.retcode = 0;
+        self.CFDIKLBINHK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEvolveBuildQueryInfoScRsp {
         static instance: GetEvolveBuildQueryInfoScRsp = GetEvolveBuildQueryInfoScRsp {
             JPDOIGJNGNP: ::std::vec::Vec::new(),
-            CFDIKLBINHK: ::protobuf::MessageField::none(),
             retcode: 0,
+            CFDIKLBINHK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildQueryInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetEvolveBuildQueryInfoScRsp.proto\x1a\x11CJJHNFICDIM.proto\x1a\x11L\
     DLCMMOPKNG.proto\"\x98\x01\n\x1cGetEvolveBuildQueryInfoScRsp\x12.\n\x0bJ\
-    PDOIGJNGNP\x18\t\x20\x03(\x0b2\x0c.LDLCMMOPKNGR\x0bJPDOIGJNGNP\x12.\n\
-    \x0bCFDIKLBINHK\x18\x08\x20\x01(\x0b2\x0c.CJJHNFICDIMR\x0bCFDIKLBINHK\
-    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
+    PDOIGJNGNP\x18\x03\x20\x03(\x0b2\x0c.LDLCMMOPKNGR\x0bJPDOIGJNGNP\x12\x18\
+    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bCFDIKLBINHK\x18\t\
+    \x20\x01(\x0b2\x0c.CJJHNFICDIMR\x0bCFDIKLBINHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     self.DGNGMJMPFGK.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyQuizDurationChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DGNGMJMPFGK {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyQuizDurationChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MonopolyQuizDurationChangeScNotify.proto\x1a\x11JPEGNCJDBOM.proto\"T\
-    \n\"MonopolyQuizDurationChangeScNotify\x12.\n\x0bDGNGMJMPFGK\x18\x04\x20\
+    \n\"MonopolyQuizDurationChangeScNotify\x12.\n\x0bDGNGMJMPFGK\x18\x01\x20\
     \x03(\x0b2\x0c.JPEGNCJDBOMR\x0bDGNGMJMPFGKb\x06proto3\
 ";
 

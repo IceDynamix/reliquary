@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LMKECAPDMAC {
     // message fields
+    // @@protoc_insertion_point(field:LMKECAPDMAC.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:LMKECAPDMAC.skill_id)
     pub skill_id: u32,
     // @@protoc_insertion_point(field:LMKECAPDMAC.skill_level)
     pub skill_level: u32,
-    // @@protoc_insertion_point(field:LMKECAPDMAC.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LMKECAPDMAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl LMKECAPDMAC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_level",
+            |m: &LMKECAPDMAC| { &m.max_level },
+            |m: &mut LMKECAPDMAC| { &mut m.max_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &LMKECAPDMAC| { &m.skill_id },
             |m: &mut LMKECAPDMAC| { &mut m.skill_id },
@@ -62,11 +67,6 @@ impl LMKECAPDMAC {
             "skill_level",
             |m: &LMKECAPDMAC| { &m.skill_level },
             |m: &mut LMKECAPDMAC| { &mut m.skill_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &LMKECAPDMAC| { &m.HCBADDHNIDG },
-            |m: &mut LMKECAPDMAC| { &mut m.HCBADDHNIDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMKECAPDMAC>(
             "LMKECAPDMAC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LMKECAPDMAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.max_level = is.read_uint32()?;
+                },
                 72 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 104 => {
                     self.skill_level = is.read_uint32()?;
-                },
-                8 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LMKECAPDMAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.max_level);
+        }
         if self.skill_id != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.skill_id);
         }
         if self.skill_level != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.skill_level);
-        }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HCBADDHNIDG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LMKECAPDMAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.max_level != 0 {
+            os.write_uint32(6, self.max_level)?;
+        }
         if self.skill_id != 0 {
             os.write_uint32(9, self.skill_id)?;
         }
         if self.skill_level != 0 {
             os.write_uint32(13, self.skill_level)?;
-        }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(1, self.HCBADDHNIDG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LMKECAPDMAC {
     }
 
     fn clear(&mut self) {
+        self.max_level = 0;
         self.skill_id = 0;
         self.skill_level = 0;
-        self.HCBADDHNIDG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMKECAPDMAC {
         static instance: LMKECAPDMAC = LMKECAPDMAC {
+            max_level: 0,
             skill_id: 0,
             skill_level: 0,
-            HCBADDHNIDG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LMKECAPDMAC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LMKECAPDMAC.proto\"k\n\x0bLMKECAPDMAC\x12\x19\n\x08skill_id\x18\t\
-    \x20\x01(\rR\x07skillId\x12\x1f\n\x0bskill_level\x18\r\x20\x01(\rR\nskil\
-    lLevel\x12\x20\n\x0bHCBADDHNIDG\x18\x01\x20\x01(\rR\x0bHCBADDHNIDGb\x06p\
-    roto3\
+    \n\x11LMKECAPDMAC.proto\"f\n\x0bLMKECAPDMAC\x12\x1b\n\tmax_level\x18\x06\
+    \x20\x01(\rR\x08maxLevel\x12\x19\n\x08skill_id\x18\t\x20\x01(\rR\x07skil\
+    lId\x12\x1f\n\x0bskill_level\x18\r\x20\x01(\rR\nskillLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

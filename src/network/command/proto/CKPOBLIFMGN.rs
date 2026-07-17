@@ -28,10 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKPOBLIFMGN {
     // message fields
-    // @@protoc_insertion_point(field:CKPOBLIFMGN.MGBNEAHCDMA)
-    pub MGBNEAHCDMA: ::protobuf::MessageField<super::NDLNIKCCALK::NDLNIKCCALK>,
     // @@protoc_insertion_point(field:CKPOBLIFMGN.MHFHLBHFIBC)
-    pub MHFHLBHFIBC: ::protobuf::MessageField<super::FMNKKAMOHEE::FMNKKAMOHEE>,
+    pub MHFHLBHFIBC: ::protobuf::MessageField<super::GridFightTalentInfo::GridFightTalentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:CKPOBLIFMGN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,14 +47,9 @@ impl CKPOBLIFMGN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDLNIKCCALK::NDLNIKCCALK>(
-            "MGBNEAHCDMA",
-            |m: &CKPOBLIFMGN| { &m.MGBNEAHCDMA },
-            |m: &mut CKPOBLIFMGN| { &mut m.MGBNEAHCDMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMNKKAMOHEE::FMNKKAMOHEE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightTalentInfo::GridFightTalentInfo>(
             "MHFHLBHFIBC",
             |m: &CKPOBLIFMGN| { &m.MHFHLBHFIBC },
             |m: &mut CKPOBLIFMGN| { &mut m.MHFHLBHFIBC },
@@ -79,10 +72,7 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGBNEAHCDMA)?;
-                },
-                106 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MHFHLBHFIBC)?;
                 },
                 tag => {
@@ -97,10 +87,6 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MGBNEAHCDMA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.MHFHLBHFIBC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,11 +97,8 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MGBNEAHCDMA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if let Some(v) = self.MHFHLBHFIBC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +117,12 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     }
 
     fn clear(&mut self) {
-        self.MGBNEAHCDMA.clear();
         self.MHFHLBHFIBC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKPOBLIFMGN {
         static instance: CKPOBLIFMGN = CKPOBLIFMGN {
-            MGBNEAHCDMA: ::protobuf::MessageField::none(),
             MHFHLBHFIBC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,10 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for CKPOBLIFMGN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKPOBLIFMGN.proto\x1a\x11FMNKKAMOHEE.proto\x1a\x11NDLNIKCCALK.prot\
-    o\"m\n\x0bCKPOBLIFMGN\x12.\n\x0bMGBNEAHCDMA\x18\x04\x20\x01(\x0b2\x0c.ND\
-    LNIKCCALKR\x0bMGBNEAHCDMA\x12.\n\x0bMHFHLBHFIBC\x18\r\x20\x01(\x0b2\x0c.\
-    FMNKKAMOHEER\x0bMHFHLBHFIBCb\x06proto3\
+    \n\x11CKPOBLIFMGN.proto\x1a\x19GridFightTalentInfo.proto\"E\n\x0bCKPOBLI\
+    FMGN\x126\n\x0bMHFHLBHFIBC\x18\x0b\x20\x01(\x0b2\x14.GridFightTalentInfo\
+    R\x0bMHFHLBHFIBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,9 +167,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FMNKKAMOHEE::file_descriptor().clone());
-            deps.push(super::NDLNIKCCALK::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::GridFightTalentInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CKPOBLIFMGN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

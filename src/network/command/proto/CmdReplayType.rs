@@ -29,14 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdReplayType {
     // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_NLCDGIPGFDJ)
     GLHDKOHHDDK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_OENOMLJLADC)
-    GLHDKOHHDDK_OENOMLJLADC = 3580,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_IDABMGHDHJH)
-    GLHDKOHHDDK_IDABMGHDHJH = 3573,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_OINMFGJKBFP)
-    GLHDKOHHDDK_OINMFGJKBFP = 3527,
     // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_CMGJOLOLINK)
-    GLHDKOHHDDK_CMGJOLOLINK = 3503,
+    GLHDKOHHDDK_CMGJOLOLINK = 3578,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_IDABMGHDHJH)
+    GLHDKOHHDDK_IDABMGHDHJH = 3525,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -49,10 +45,8 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
             0 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ),
-            3580 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OENOMLJLADC),
-            3573 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
-            3527 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP),
-            3503 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK),
+            3578 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK),
+            3525 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +54,16 @@ impl ::protobuf::Enum for CmdReplayType {
     fn from_str(str: &str) -> ::std::option::Option<CmdReplayType> {
         match str {
             "GLHDKOHHDDK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ),
-            "GLHDKOHHDDK_OENOMLJLADC" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OENOMLJLADC),
-            "GLHDKOHHDDK_IDABMGHDHJH" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
-            "GLHDKOHHDDK_OINMFGJKBFP" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP),
             "GLHDKOHHDDK_CMGJOLOLINK" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK),
+            "GLHDKOHHDDK_IDABMGHDHJH" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdReplayType] = &[
         CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ,
-        CmdReplayType::GLHDKOHHDDK_OENOMLJLADC,
-        CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH,
-        CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP,
         CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK,
+        CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH,
     ];
 }
 
@@ -86,10 +76,8 @@ impl ::protobuf::EnumFull for CmdReplayType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ => 0,
-            CmdReplayType::GLHDKOHHDDK_OENOMLJLADC => 1,
+            CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK => 1,
             CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH => 2,
-            CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP => 3,
-            CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -108,11 +96,9 @@ impl CmdReplayType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x1b\n\x17GLHDKOH\
-    HDDK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GLHDKOHHDDK_OENOMLJLADC\x10\xfc\x1b\
-    \x12\x1c\n\x17GLHDKOHHDDK_IDABMGHDHJH\x10\xf5\x1b\x12\x1c\n\x17GLHDKOHHD\
-    DK_OINMFGJKBFP\x10\xc7\x1b\x12\x1c\n\x17GLHDKOHHDDK_CMGJOLOLINK\x10\xaf\
-    \x1bb\x06proto3\
+    \n\x13CmdReplayType.proto*h\n\rCmdReplayType\x12\x1b\n\x17GLHDKOHHDDK_NL\
+    CDGIPGFDJ\x10\0\x12\x1c\n\x17GLHDKOHHDDK_CMGJOLOLINK\x10\xfa\x1b\x12\x1c\
+    \n\x17GLHDKOHHDDK_IDABMGHDHJH\x10\xc5\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

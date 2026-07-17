@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusSnsPostCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.DNNCAGJIOAP)
-    pub DNNCAGJIOAP: u32,
     // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.MDAIPFLCNAJ)
     pub MDAIPFLCNAJ: u32,
     // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.CBGODLHCLPK)
     pub CBGODLHCLPK: u32,
+    // @@protoc_insertion_point(field:HeliobusSnsPostCsReq.DNNCAGJIOAP)
+    pub DNNCAGJIOAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsPostCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl HeliobusSnsPostCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNNCAGJIOAP",
-            |m: &HeliobusSnsPostCsReq| { &m.DNNCAGJIOAP },
-            |m: &mut HeliobusSnsPostCsReq| { &mut m.DNNCAGJIOAP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDAIPFLCNAJ",
             |m: &HeliobusSnsPostCsReq| { &m.MDAIPFLCNAJ },
             |m: &mut HeliobusSnsPostCsReq| { &mut m.MDAIPFLCNAJ },
@@ -67,6 +62,11 @@ impl HeliobusSnsPostCsReq {
             "CBGODLHCLPK",
             |m: &HeliobusSnsPostCsReq| { &m.CBGODLHCLPK },
             |m: &mut HeliobusSnsPostCsReq| { &mut m.CBGODLHCLPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNNCAGJIOAP",
+            |m: &HeliobusSnsPostCsReq| { &m.DNNCAGJIOAP },
+            |m: &mut HeliobusSnsPostCsReq| { &mut m.DNNCAGJIOAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsPostCsReq>(
             "HeliobusSnsPostCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.DNNCAGJIOAP = is.read_uint32()?;
-                },
-                32 => {
+                40 => {
                     self.MDAIPFLCNAJ = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.CBGODLHCLPK = is.read_uint32()?;
+                },
+                88 => {
+                    self.DNNCAGJIOAP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNNCAGJIOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DNNCAGJIOAP);
-        }
         if self.MDAIPFLCNAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MDAIPFLCNAJ);
+            my_size += ::protobuf::rt::uint32_size(5, self.MDAIPFLCNAJ);
         }
         if self.CBGODLHCLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CBGODLHCLPK);
+            my_size += ::protobuf::rt::uint32_size(10, self.CBGODLHCLPK);
+        }
+        if self.DNNCAGJIOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DNNCAGJIOAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNNCAGJIOAP != 0 {
-            os.write_uint32(14, self.DNNCAGJIOAP)?;
-        }
         if self.MDAIPFLCNAJ != 0 {
-            os.write_uint32(4, self.MDAIPFLCNAJ)?;
+            os.write_uint32(5, self.MDAIPFLCNAJ)?;
         }
         if self.CBGODLHCLPK != 0 {
-            os.write_uint32(1, self.CBGODLHCLPK)?;
+            os.write_uint32(10, self.CBGODLHCLPK)?;
+        }
+        if self.DNNCAGJIOAP != 0 {
+            os.write_uint32(11, self.DNNCAGJIOAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HeliobusSnsPostCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNNCAGJIOAP = 0;
         self.MDAIPFLCNAJ = 0;
         self.CBGODLHCLPK = 0;
+        self.DNNCAGJIOAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsPostCsReq {
         static instance: HeliobusSnsPostCsReq = HeliobusSnsPostCsReq {
-            DNNCAGJIOAP: 0,
             MDAIPFLCNAJ: 0,
             CBGODLHCLPK: 0,
+            DNNCAGJIOAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsPostCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aHeliobusSnsPostCsReq.proto\"|\n\x14HeliobusSnsPostCsReq\x12\x20\n\
-    \x0bDNNCAGJIOAP\x18\x0e\x20\x01(\rR\x0bDNNCAGJIOAP\x12\x20\n\x0bMDAIPFLC\
-    NAJ\x18\x04\x20\x01(\rR\x0bMDAIPFLCNAJ\x12\x20\n\x0bCBGODLHCLPK\x18\x01\
-    \x20\x01(\rR\x0bCBGODLHCLPKb\x06proto3\
+    \x0bMDAIPFLCNAJ\x18\x05\x20\x01(\rR\x0bMDAIPFLCNAJ\x12\x20\n\x0bCBGODLHC\
+    LPK\x18\n\x20\x01(\rR\x0bCBGODLHCLPK\x12\x20\n\x0bDNNCAGJIOAP\x18\x0b\
+    \x20\x01(\rR\x0bDNNCAGJIOAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

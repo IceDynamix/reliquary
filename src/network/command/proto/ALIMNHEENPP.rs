@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ALIMNHEENPP {
     // message fields
-    // @@protoc_insertion_point(field:ALIMNHEENPP.IEBNOGOOEMO)
-    pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
     // @@protoc_insertion_point(field:ALIMNHEENPP.role_star)
     pub role_star: u32,
+    // @@protoc_insertion_point(field:ALIMNHEENPP.IEBNOGOOEMO)
+    pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
     // special fields
     // @@protoc_insertion_point(special_field:ALIMNHEENPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ALIMNHEENPP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IEBNOGOOEMO",
-            |m: &ALIMNHEENPP| { &m.IEBNOGOOEMO },
-            |m: &mut ALIMNHEENPP| { &mut m.IEBNOGOOEMO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_star",
             |m: &ALIMNHEENPP| { &m.role_star },
             |m: &mut ALIMNHEENPP| { &mut m.role_star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IEBNOGOOEMO",
+            |m: &ALIMNHEENPP| { &m.IEBNOGOOEMO },
+            |m: &mut ALIMNHEENPP| { &mut m.IEBNOGOOEMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ALIMNHEENPP>(
             "ALIMNHEENPP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ALIMNHEENPP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.IEBNOGOOEMO.push(is.read_message()?);
-                },
                 8 => {
                     self.role_star = is.read_uint32()?;
+                },
+                18 => {
+                    self.IEBNOGOOEMO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for ALIMNHEENPP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.role_star);
+        }
         for value in &self.IEBNOGOOEMO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.role_star);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IEBNOGOOEMO {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.role_star != 0 {
             os.write_uint32(1, self.role_star)?;
         }
+        for v in &self.IEBNOGOOEMO {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ALIMNHEENPP {
     }
 
     fn clear(&mut self) {
-        self.IEBNOGOOEMO.clear();
         self.role_star = 0;
+        self.IEBNOGOOEMO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ALIMNHEENPP {
         static instance: ALIMNHEENPP = ALIMNHEENPP {
-            IEBNOGOOEMO: ::std::vec::Vec::new(),
             role_star: 0,
+            IEBNOGOOEMO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ALIMNHEENPP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ALIMNHEENPP.proto\x1a\x11BCCONKJHDJL.proto\"Z\n\x0bALIMNHEENPP\x12\
-    .\n\x0bIEBNOGOOEMO\x18\x02\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMO\
-    \x12\x1b\n\trole_star\x18\x01\x20\x01(\rR\x08roleStarb\x06proto3\
+    \x1b\n\trole_star\x18\x01\x20\x01(\rR\x08roleStar\x12.\n\x0bIEBNOGOOEMO\
+    \x18\x02\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

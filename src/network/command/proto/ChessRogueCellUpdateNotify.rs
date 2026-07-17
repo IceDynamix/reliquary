@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueCellUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.CPPCIGMJALM)
-    pub CPPCIGMJALM: ::std::vec::Vec<super::CGMCMAKMJDK::CGMCMAKMJDK>,
-    // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.CFAOFCGJBMA)
-    pub CFAOFCGJBMA: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.AIHCKNAMPBP)
     pub AIHCKNAMPBP: u32,
+    // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.CFAOFCGJBMA)
+    pub CFAOFCGJBMA: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.reason)
     pub reason: ::protobuf::EnumOrUnknown<super::AIMCAMJABNA::AIMCAMJABNA>,
+    // @@protoc_insertion_point(field:ChessRogueCellUpdateNotify.CPPCIGMJALM)
+    pub CPPCIGMJALM: ::std::vec::Vec<super::CGMCMAKMJDK::CGMCMAKMJDK>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueCellUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl ChessRogueCellUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CPPCIGMJALM",
-            |m: &ChessRogueCellUpdateNotify| { &m.CPPCIGMJALM },
-            |m: &mut ChessRogueCellUpdateNotify| { &mut m.CPPCIGMJALM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIHCKNAMPBP",
+            |m: &ChessRogueCellUpdateNotify| { &m.AIHCKNAMPBP },
+            |m: &mut ChessRogueCellUpdateNotify| { &mut m.AIHCKNAMPBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFAOFCGJBMA",
@@ -66,14 +66,14 @@ impl ChessRogueCellUpdateNotify {
             |m: &mut ChessRogueCellUpdateNotify| { &mut m.CFAOFCGJBMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIHCKNAMPBP",
-            |m: &ChessRogueCellUpdateNotify| { &m.AIHCKNAMPBP },
-            |m: &mut ChessRogueCellUpdateNotify| { &mut m.AIHCKNAMPBP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
             |m: &ChessRogueCellUpdateNotify| { &m.reason },
             |m: &mut ChessRogueCellUpdateNotify| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CPPCIGMJALM",
+            |m: &ChessRogueCellUpdateNotify| { &m.CPPCIGMJALM },
+            |m: &mut ChessRogueCellUpdateNotify| { &mut m.CPPCIGMJALM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueCellUpdateNotify>(
             "ChessRogueCellUpdateNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.CPPCIGMJALM.push(is.read_message()?);
+                32 => {
+                    self.AIHCKNAMPBP = is.read_uint32()?;
                 },
                 56 => {
                     self.CFAOFCGJBMA = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.AIHCKNAMPBP = is.read_uint32()?;
-                },
-                32 => {
+                80 => {
                     self.reason = is.read_enum_or_unknown()?;
+                },
+                122 => {
+                    self.CPPCIGMJALM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.AIHCKNAMPBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AIHCKNAMPBP);
+        }
+        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
+            my_size += ::protobuf::rt::int32_size(7, self.CFAOFCGJBMA.value());
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.reason.value());
+        }
         for value in &self.CPPCIGMJALM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
-            my_size += ::protobuf::rt::int32_size(7, self.CFAOFCGJBMA.value());
-        }
-        if self.AIHCKNAMPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AIHCKNAMPBP);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.reason.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CPPCIGMJALM {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
+        if self.AIHCKNAMPBP != 0 {
+            os.write_uint32(4, self.AIHCKNAMPBP)?;
+        }
         if self.CFAOFCGJBMA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
             os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.CFAOFCGJBMA))?;
         }
-        if self.AIHCKNAMPBP != 0 {
-            os.write_uint32(12, self.AIHCKNAMPBP)?;
-        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
+        for v in &self.CPPCIGMJALM {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ChessRogueCellUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.CPPCIGMJALM.clear();
-        self.CFAOFCGJBMA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA);
         self.AIHCKNAMPBP = 0;
+        self.CFAOFCGJBMA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA);
         self.reason = ::protobuf::EnumOrUnknown::new(super::AIMCAMJABNA::AIMCAMJABNA::AIMCAMJABNA_NLCDGIPGFDJ);
+        self.CPPCIGMJALM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueCellUpdateNotify {
         static instance: ChessRogueCellUpdateNotify = ChessRogueCellUpdateNotify {
-            CPPCIGMJALM: ::std::vec::Vec::new(),
-            CFAOFCGJBMA: ::protobuf::EnumOrUnknown::from_i32(0),
             AIHCKNAMPBP: 0,
+            CFAOFCGJBMA: ::protobuf::EnumOrUnknown::from_i32(0),
             reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            CPPCIGMJALM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueCellUpdateNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChessRogueCellUpdateNotify.proto\x1a\x11AIMCAMJABNA.proto\x1a\x11C\
     GMCMAKMJDK.proto\x1a\x1dRogueModifierSourceType.proto\"\xd0\x01\n\x1aChe\
-    ssRogueCellUpdateNotify\x12.\n\x0bCPPCIGMJALM\x18\x0b\x20\x03(\x0b2\x0c.\
-    CGMCMAKMJDKR\x0bCPPCIGMJALM\x12:\n\x0bCFAOFCGJBMA\x18\x07\x20\x01(\x0e2\
-    \x18.RogueModifierSourceTypeR\x0bCFAOFCGJBMA\x12\x20\n\x0bAIHCKNAMPBP\
-    \x18\x0c\x20\x01(\rR\x0bAIHCKNAMPBP\x12$\n\x06reason\x18\x04\x20\x01(\
-    \x0e2\x0c.AIMCAMJABNAR\x06reasonb\x06proto3\
+    ssRogueCellUpdateNotify\x12\x20\n\x0bAIHCKNAMPBP\x18\x04\x20\x01(\rR\x0b\
+    AIHCKNAMPBP\x12:\n\x0bCFAOFCGJBMA\x18\x07\x20\x01(\x0e2\x18.RogueModifie\
+    rSourceTypeR\x0bCFAOFCGJBMA\x12$\n\x06reason\x18\n\x20\x01(\x0e2\x0c.AIM\
+    CAMJABNAR\x06reason\x12.\n\x0bCPPCIGMJALM\x18\x0f\x20\x03(\x0b2\x0c.CGMC\
+    MAKMJDKR\x0bCPPCIGMJALMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

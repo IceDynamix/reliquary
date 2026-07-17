@@ -82,7 +82,7 @@ impl ::protobuf::Message for TakeQuestEquipCsCsReq {
                 32 => {
                     self.DKPCAIGPHNO = is.read_bool()?;
                 },
-                48 => {
+                120 => {
                     self.quest_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for TakeQuestEquipCsCsReq {
             my_size += 1 + 1;
         }
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.quest_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for TakeQuestEquipCsCsReq {
             os.write_bool(4, self.DKPCAIGPHNO)?;
         }
         if self.quest_id != 0 {
-            os.write_uint32(6, self.quest_id)?;
+            os.write_uint32(15, self.quest_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestEquipCsCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bTakeQuestEquipCsCsReq.proto\"T\n\x15TakeQuestEquipCsCsReq\x12\x20\
     \n\x0bDKPCAIGPHNO\x18\x04\x20\x01(\x08R\x0bDKPCAIGPHNO\x12\x19\n\x08ques\
-    t_id\x18\x06\x20\x01(\rR\x07questIdb\x06proto3\
+    t_id\x18\x0f\x20\x01(\rR\x07questIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for HMAAICNBKCI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                98 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -115,7 +115,7 @@ impl ::protobuf::Message for HMAAICNBKCI {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(66)?; // Tag.
+            os.write_raw_varint32(98)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_int32(2, *v)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HMAAICNBKCI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HMAAICNBKCI.proto\"\x8e\x01\n\x0bHMAAICNBKCI\x12?\n\x0bDCLBHOHPGMB\
-    \x18\x08\x20\x03(\x0b2\x1d.HMAAICNBKCI.DCLBHOHPGMBEntryR\x0bDCLBHOHPGMB\
+    \x18\x0c\x20\x03(\x0b2\x1d.HMAAICNBKCI.DCLBHOHPGMBEntryR\x0bDCLBHOHPGMB\
     \x1a>\n\x10DCLBHOHPGMBEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
 ";

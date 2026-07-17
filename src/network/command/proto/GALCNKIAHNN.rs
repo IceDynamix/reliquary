@@ -30,8 +30,8 @@ pub struct GALCNKIAHNN {
     // message fields
     // @@protoc_insertion_point(field:GALCNKIAHNN.NLGNNDIFGGF)
     pub NLGNNDIFGGF: u32,
-    // @@protoc_insertion_point(field:GALCNKIAHNN.DDCLCNPONOH)
-    pub DDCLCNPONOH: u32,
+    // @@protoc_insertion_point(field:GALCNKIAHNN.add_coin)
+    pub add_coin: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GALCNKIAHNN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GALCNKIAHNN {
             |m: &mut GALCNKIAHNN| { &mut m.NLGNNDIFGGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDCLCNPONOH",
-            |m: &GALCNKIAHNN| { &m.DDCLCNPONOH },
-            |m: &mut GALCNKIAHNN| { &mut m.DDCLCNPONOH },
+            "add_coin",
+            |m: &GALCNKIAHNN| { &m.add_coin },
+            |m: &mut GALCNKIAHNN| { &mut m.add_coin },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GALCNKIAHNN>(
             "GALCNKIAHNN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GALCNKIAHNN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.NLGNNDIFGGF = is.read_uint32()?;
                 },
-                88 => {
-                    self.DDCLCNPONOH = is.read_uint32()?;
+                24 => {
+                    self.add_coin = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GALCNKIAHNN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NLGNNDIFGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NLGNNDIFGGF);
+            my_size += ::protobuf::rt::uint32_size(1, self.NLGNNDIFGGF);
         }
-        if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DDCLCNPONOH);
+        if self.add_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.add_coin);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GALCNKIAHNN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NLGNNDIFGGF != 0 {
-            os.write_uint32(10, self.NLGNNDIFGGF)?;
+            os.write_uint32(1, self.NLGNNDIFGGF)?;
         }
-        if self.DDCLCNPONOH != 0 {
-            os.write_uint32(11, self.DDCLCNPONOH)?;
+        if self.add_coin != 0 {
+            os.write_uint32(3, self.add_coin)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GALCNKIAHNN {
 
     fn clear(&mut self) {
         self.NLGNNDIFGGF = 0;
-        self.DDCLCNPONOH = 0;
+        self.add_coin = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GALCNKIAHNN {
         static instance: GALCNKIAHNN = GALCNKIAHNN {
             NLGNNDIFGGF: 0,
-            DDCLCNPONOH: 0,
+            add_coin: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GALCNKIAHNN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GALCNKIAHNN.proto\"Q\n\x0bGALCNKIAHNN\x12\x20\n\x0bNLGNNDIFGGF\x18\
-    \n\x20\x01(\rR\x0bNLGNNDIFGGF\x12\x20\n\x0bDDCLCNPONOH\x18\x0b\x20\x01(\
-    \rR\x0bDDCLCNPONOHb\x06proto3\
+    \n\x11GALCNKIAHNN.proto\"J\n\x0bGALCNKIAHNN\x12\x20\n\x0bNLGNNDIFGGF\x18\
+    \x01\x20\x01(\rR\x0bNLGNNDIFGGF\x12\x19\n\x08add_coin\x18\x03\x20\x01(\r\
+    R\x07addCoinb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAIFDBLLGKK {
     // message fields
+    // @@protoc_insertion_point(field:FAIFDBLLGKK.event_type)
+    pub event_type: ::protobuf::EnumOrUnknown<super::KDNCOBMFFEB::KDNCOBMFFEB>,
     // @@protoc_insertion_point(field:FAIFDBLLGKK.ACFENKABBKK)
     pub ACFENKABBKK: ::std::string::String,
-    // @@protoc_insertion_point(field:FAIFDBLLGKK.LAOACNPDOLD)
-    pub LAOACNPDOLD: ::protobuf::EnumOrUnknown<super::KDNCOBMFFEB::KDNCOBMFFEB>,
     // @@protoc_insertion_point(field:FAIFDBLLGKK.JKIHICLOPKM)
     pub JKIHICLOPKM: u32,
-    // @@protoc_insertion_point(field:FAIFDBLLGKK.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:FAIFDBLLGKK.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // message oneof groups
     pub FCIDKEAOIBG: ::std::option::Option<faifdbllgkk::FCIDKEAOIBG>,
     // special fields
@@ -52,55 +52,6 @@ impl<'a> ::std::default::Default for &'a FAIFDBLLGKK {
 impl FAIFDBLLGKK {
     pub fn new() -> FAIFDBLLGKK {
         ::std::default::Default::default()
-    }
-
-    // .AFBMANOLIOJ BDOEMDGHHEP = 10;
-
-    pub fn BDOEMDGHHEP(&self) -> &super::AFBMANOLIOJ::AFBMANOLIOJ {
-        match self.FCIDKEAOIBG {
-            ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(ref v)) => v,
-            _ => <super::AFBMANOLIOJ::AFBMANOLIOJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_BDOEMDGHHEP(&mut self) {
-        self.FCIDKEAOIBG = ::std::option::Option::None;
-    }
-
-    pub fn has_BDOEMDGHHEP(&self) -> bool {
-        match self.FCIDKEAOIBG {
-            ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BDOEMDGHHEP(&mut self, v: super::AFBMANOLIOJ::AFBMANOLIOJ) {
-        self.FCIDKEAOIBG = ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_BDOEMDGHHEP(&mut self) -> &mut super::AFBMANOLIOJ::AFBMANOLIOJ {
-        if let ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(_)) = self.FCIDKEAOIBG {
-        } else {
-            self.FCIDKEAOIBG = ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(super::AFBMANOLIOJ::AFBMANOLIOJ::new()));
-        }
-        match self.FCIDKEAOIBG {
-            ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_BDOEMDGHHEP(&mut self) -> super::AFBMANOLIOJ::AFBMANOLIOJ {
-        if self.has_BDOEMDGHHEP() {
-            match self.FCIDKEAOIBG.take() {
-                ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AFBMANOLIOJ::AFBMANOLIOJ::new()
-        }
     }
 
     // .DEHDGGEDJHI stop_desc = 11;
@@ -300,17 +251,17 @@ impl FAIFDBLLGKK {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_type",
+            |m: &FAIFDBLLGKK| { &m.event_type },
+            |m: &mut FAIFDBLLGKK| { &mut m.event_type },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACFENKABBKK",
             |m: &FAIFDBLLGKK| { &m.ACFENKABBKK },
             |m: &mut FAIFDBLLGKK| { &mut m.ACFENKABBKK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &FAIFDBLLGKK| { &m.LAOACNPDOLD },
-            |m: &mut FAIFDBLLGKK| { &mut m.LAOACNPDOLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JKIHICLOPKM",
@@ -318,16 +269,9 @@ impl FAIFDBLLGKK {
             |m: &mut FAIFDBLLGKK| { &mut m.JKIHICLOPKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &FAIFDBLLGKK| { &m.BDPIMPJOJBK },
-            |m: &mut FAIFDBLLGKK| { &mut m.BDPIMPJOJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AFBMANOLIOJ::AFBMANOLIOJ>(
-            "BDOEMDGHHEP",
-            FAIFDBLLGKK::has_BDOEMDGHHEP,
-            FAIFDBLLGKK::BDOEMDGHHEP,
-            FAIFDBLLGKK::mut_BDOEMDGHHEP,
-            FAIFDBLLGKK::set_BDOEMDGHHEP,
+            "role",
+            |m: &FAIFDBLLGKK| { &m.role },
+            |m: &mut FAIFDBLLGKK| { &mut m.role },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DEHDGGEDJHI::DEHDGGEDJHI>(
             "stop_desc",
@@ -376,20 +320,17 @@ impl ::protobuf::Message for FAIFDBLLGKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.event_type = is.read_enum_or_unknown()?;
+                },
                 18 => {
                     self.ACFENKABBKK = is.read_string()?;
-                },
-                8 => {
-                    self.LAOACNPDOLD = is.read_enum_or_unknown()?;
                 },
                 24 => {
                     self.JKIHICLOPKM = is.read_uint32()?;
                 },
                 32 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
-                },
-                82 => {
-                    self.FCIDKEAOIBG = ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(is.read_message()?));
+                    self.role = is.read_enum_or_unknown()?;
                 },
                 90 => {
                     self.FCIDKEAOIBG = ::std::option::Option::Some(faifdbllgkk::FCIDKEAOIBG::StopDesc(is.read_message()?));
@@ -415,24 +356,20 @@ impl ::protobuf::Message for FAIFDBLLGKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.event_type != ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.event_type.value());
+        }
         if !self.ACFENKABBKK.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.ACFENKABBKK);
-        }
-        if self.LAOACNPDOLD != ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.LAOACNPDOLD.value());
         }
         if self.JKIHICLOPKM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.JKIHICLOPKM);
         }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.BDPIMPJOJBK.value());
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.role.value());
         }
         if let ::std::option::Option::Some(ref v) = self.FCIDKEAOIBG {
             match v {
-                &faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &faifdbllgkk::FCIDKEAOIBG::StopDesc(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -457,23 +394,20 @@ impl ::protobuf::Message for FAIFDBLLGKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.event_type != ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.event_type))?;
+        }
         if !self.ACFENKABBKK.is_empty() {
             os.write_string(2, &self.ACFENKABBKK)?;
-        }
-        if self.LAOACNPDOLD != ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.LAOACNPDOLD))?;
         }
         if self.JKIHICLOPKM != 0 {
             os.write_uint32(3, self.JKIHICLOPKM)?;
         }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.role))?;
         }
         if let ::std::option::Option::Some(ref v) = self.FCIDKEAOIBG {
             match v {
-                &faifdbllgkk::FCIDKEAOIBG::BDOEMDGHHEP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-                },
                 &faifdbllgkk::FCIDKEAOIBG::StopDesc(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
@@ -505,11 +439,10 @@ impl ::protobuf::Message for FAIFDBLLGKK {
     }
 
     fn clear(&mut self) {
+        self.event_type = ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ);
         self.ACFENKABBKK.clear();
-        self.LAOACNPDOLD = ::protobuf::EnumOrUnknown::new(super::KDNCOBMFFEB::KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ);
         self.JKIHICLOPKM = 0;
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
-        self.FCIDKEAOIBG = ::std::option::Option::None;
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.FCIDKEAOIBG = ::std::option::Option::None;
         self.FCIDKEAOIBG = ::std::option::Option::None;
         self.FCIDKEAOIBG = ::std::option::Option::None;
@@ -519,10 +452,10 @@ impl ::protobuf::Message for FAIFDBLLGKK {
 
     fn default_instance() -> &'static FAIFDBLLGKK {
         static instance: FAIFDBLLGKK = FAIFDBLLGKK {
+            event_type: ::protobuf::EnumOrUnknown::from_i32(0),
             ACFENKABBKK: ::std::string::String::new(),
-            LAOACNPDOLD: ::protobuf::EnumOrUnknown::from_i32(0),
             JKIHICLOPKM: 0,
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
             FCIDKEAOIBG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -554,8 +487,6 @@ pub mod faifdbllgkk {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FAIFDBLLGKK.FCIDKEAOIBG)
     pub enum FCIDKEAOIBG {
-        // @@protoc_insertion_point(oneof_field:FAIFDBLLGKK.BDOEMDGHHEP)
-        BDOEMDGHHEP(super::super::AFBMANOLIOJ::AFBMANOLIOJ),
         // @@protoc_insertion_point(oneof_field:FAIFDBLLGKK.stop_desc)
         StopDesc(super::super::DEHDGGEDJHI::DEHDGGEDJHI),
         // @@protoc_insertion_point(oneof_field:FAIFDBLLGKK.LMJCPMFPHLK)
@@ -584,19 +515,18 @@ pub mod faifdbllgkk {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FAIFDBLLGKK.proto\x1a\x11AFBMANOLIOJ.proto\x1a\x11BALHBDBHHON.prot\
-    o\x1a\x11DEHDGGEDJHI.proto\x1a\x11DOPJFJCLIAH.proto\x1a\x11FKNKNLGMACL.p\
-    roto\x1a\x11IAGGIFBOFDF.proto\x1a\x11KDNCOBMFFEB.proto\"\xb5\x03\n\x0bFA\
-    IFDBLLGKK\x12\x20\n\x0bACFENKABBKK\x18\x02\x20\x01(\tR\x0bACFENKABBKK\
-    \x12.\n\x0bLAOACNPDOLD\x18\x01\x20\x01(\x0e2\x0c.KDNCOBMFFEBR\x0bLAOACNP\
-    DOLD\x12\x20\n\x0bJKIHICLOPKM\x18\x03\x20\x01(\rR\x0bJKIHICLOPKM\x12.\n\
-    \x0bBDPIMPJOJBK\x18\x04\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\
-    \x120\n\x0bBDOEMDGHHEP\x18\n\x20\x01(\x0b2\x0c.AFBMANOLIOJH\0R\x0bBDOEMD\
-    GHHEP\x12+\n\tstop_desc\x18\x0b\x20\x01(\x0b2\x0c.DEHDGGEDJHIH\0R\x08sto\
-    pDesc\x120\n\x0bLMJCPMFPHLK\x18\x0c\x20\x01(\x0b2\x0c.DOPJFJCLIAHH\0R\
-    \x0bLMJCPMFPHLK\x120\n\x0bFHDMHKOMEFO\x18\r\x20\x01(\x0b2\x0c.BALHBDBHHO\
-    NH\0R\x0bFHDMHKOMEFO\x120\n\x0bFIFCCCJOLNE\x18\x0e\x20\x01(\x0b2\x0c.IAG\
-    GIFBOFDFH\0R\x0bFIFCCCJOLNEB\r\n\x0bFCIDKEAOIBGb\x06proto3\
+    \n\x11FAIFDBLLGKK.proto\x1a\x11BALHBDBHHON.proto\x1a\x11DEHDGGEDJHI.prot\
+    o\x1a\x11DOPJFJCLIAH.proto\x1a\x11FKNKNLGMACL.proto\x1a\x11IAGGIFBOFDF.p\
+    roto\x1a\x11KDNCOBMFFEB.proto\"\xf2\x02\n\x0bFAIFDBLLGKK\x12+\n\nevent_t\
+    ype\x18\x01\x20\x01(\x0e2\x0c.KDNCOBMFFEBR\teventType\x12\x20\n\x0bACFEN\
+    KABBKK\x18\x02\x20\x01(\tR\x0bACFENKABBKK\x12\x20\n\x0bJKIHICLOPKM\x18\
+    \x03\x20\x01(\rR\x0bJKIHICLOPKM\x12\x20\n\x04role\x18\x04\x20\x01(\x0e2\
+    \x0c.FKNKNLGMACLR\x04role\x12+\n\tstop_desc\x18\x0b\x20\x01(\x0b2\x0c.DE\
+    HDGGEDJHIH\0R\x08stopDesc\x120\n\x0bLMJCPMFPHLK\x18\x0c\x20\x01(\x0b2\
+    \x0c.DOPJFJCLIAHH\0R\x0bLMJCPMFPHLK\x120\n\x0bFHDMHKOMEFO\x18\r\x20\x01(\
+    \x0b2\x0c.BALHBDBHHONH\0R\x0bFHDMHKOMEFO\x120\n\x0bFIFCCCJOLNE\x18\x0e\
+    \x20\x01(\x0b2\x0c.IAGGIFBOFDFH\0R\x0bFIFCCCJOLNEB\r\n\x0bFCIDKEAOIBGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -613,8 +543,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(7);
-            deps.push(super::AFBMANOLIOJ::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(6);
             deps.push(super::BALHBDBHHON::file_descriptor().clone());
             deps.push(super::DEHDGGEDJHI::file_descriptor().clone());
             deps.push(super::DOPJFJCLIAH::file_descriptor().clone());

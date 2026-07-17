@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetChallengeTierceLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetChallengeTierceLineupCsReq.stage_info_list)
-    pub stage_info_list: ::std::vec::Vec<super::ChallengeTierceStageLineupInfo::ChallengeTierceStageLineupInfo>,
     // @@protoc_insertion_point(field:SetChallengeTierceLineupCsReq.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:SetChallengeTierceLineupCsReq.stage_info_list)
+    pub stage_info_list: ::std::vec::Vec<super::ChallengeTierceStageLineupInfo::ChallengeTierceStageLineupInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SetChallengeTierceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SetChallengeTierceLineupCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "stage_info_list",
-            |m: &SetChallengeTierceLineupCsReq| { &m.stage_info_list },
-            |m: &mut SetChallengeTierceLineupCsReq| { &mut m.stage_info_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &SetChallengeTierceLineupCsReq| { &m.challenge_id },
             |m: &mut SetChallengeTierceLineupCsReq| { &mut m.challenge_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "stage_info_list",
+            |m: &SetChallengeTierceLineupCsReq| { &m.stage_info_list },
+            |m: &mut SetChallengeTierceLineupCsReq| { &mut m.stage_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetChallengeTierceLineupCsReq>(
             "SetChallengeTierceLineupCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetChallengeTierceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.stage_info_list.push(is.read_message()?);
-                },
-                64 => {
+                56 => {
                     self.challenge_id = is.read_uint32()?;
+                },
+                98 => {
+                    self.stage_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for SetChallengeTierceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.challenge_id);
+        }
         for value in &self.stage_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.challenge_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.stage_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.challenge_id != 0 {
-            os.write_uint32(8, self.challenge_id)?;
+            os.write_uint32(7, self.challenge_id)?;
         }
+        for v in &self.stage_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetChallengeTierceLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.stage_info_list.clear();
         self.challenge_id = 0;
+        self.stage_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetChallengeTierceLineupCsReq {
         static instance: SetChallengeTierceLineupCsReq = SetChallengeTierceLineupCsReq {
-            stage_info_list: ::std::vec::Vec::new(),
             challenge_id: 0,
+            stage_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SetChallengeTierceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetChallengeTierceLineupCsReq.proto\x1a$ChallengeTierceStageLineupInf\
-    o.proto\"\x8b\x01\n\x1dSetChallengeTierceLineupCsReq\x12G\n\x0fstage_inf\
-    o_list\x18\x02\x20\x03(\x0b2\x1f.ChallengeTierceStageLineupInfoR\rstageI\
-    nfoList\x12!\n\x0cchallenge_id\x18\x08\x20\x01(\rR\x0bchallengeIdb\x06pr\
+    o.proto\"\x8b\x01\n\x1dSetChallengeTierceLineupCsReq\x12!\n\x0cchallenge\
+    _id\x18\x07\x20\x01(\rR\x0bchallengeId\x12G\n\x0fstage_info_list\x18\x0c\
+    \x20\x03(\x0b2\x1f.ChallengeTierceStageLineupInfoR\rstageInfoListb\x06pr\
     oto3\
 ";
 

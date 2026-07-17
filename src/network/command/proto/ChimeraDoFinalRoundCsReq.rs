@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDoFinalRoundCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::HFBJNFJHKPO::HFBJNFJHKPO>,
-    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.lineup)
-    pub lineup: ::protobuf::MessageField<super::GCFGCHAMNOL::GCFGCHAMNOL>,
-    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.FJLPLIGMPHB)
-    pub FJLPLIGMPHB: ::std::vec::Vec<super::DEJGMBKPHEC::DEJGMBKPHEC>,
-    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.PKKGGLIGKKN)
-    pub PKKGGLIGKKN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.NMPCJAOIOHJ)
-    pub NMPCJAOIOHJ: u32,
     // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.CJEILDIOIOE)
     pub CJEILDIOIOE: bool,
+    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.PKKGGLIGKKN)
+    pub PKKGGLIGKKN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.lineup)
+    pub lineup: ::protobuf::MessageField<super::GCFGCHAMNOL::GCFGCHAMNOL>,
+    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.stt)
+    pub stt: ::protobuf::MessageField<super::HFBJNFJHKPO::HFBJNFJHKPO>,
+    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.NMPCJAOIOHJ)
+    pub NMPCJAOIOHJ: u32,
+    // @@protoc_insertion_point(field:ChimeraDoFinalRoundCsReq.FJLPLIGMPHB)
+    pub FJLPLIGMPHB: ::std::vec::Vec<super::DEJGMBKPHEC::DEJGMBKPHEC>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDoFinalRoundCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl ChimeraDoFinalRoundCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFBJNFJHKPO::HFBJNFJHKPO>(
-            "stt",
-            |m: &ChimeraDoFinalRoundCsReq| { &m.stt },
-            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.stt },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFGCHAMNOL::GCFGCHAMNOL>(
-            "lineup",
-            |m: &ChimeraDoFinalRoundCsReq| { &m.lineup },
-            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJLPLIGMPHB",
-            |m: &ChimeraDoFinalRoundCsReq| { &m.FJLPLIGMPHB },
-            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.FJLPLIGMPHB },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJEILDIOIOE",
+            |m: &ChimeraDoFinalRoundCsReq| { &m.CJEILDIOIOE },
+            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.CJEILDIOIOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PKKGGLIGKKN",
             |m: &ChimeraDoFinalRoundCsReq| { &m.PKKGGLIGKKN },
             |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.PKKGGLIGKKN },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFGCHAMNOL::GCFGCHAMNOL>(
+            "lineup",
+            |m: &ChimeraDoFinalRoundCsReq| { &m.lineup },
+            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HFBJNFJHKPO::HFBJNFJHKPO>(
+            "stt",
+            |m: &ChimeraDoFinalRoundCsReq| { &m.stt },
+            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.stt },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMPCJAOIOHJ",
             |m: &ChimeraDoFinalRoundCsReq| { &m.NMPCJAOIOHJ },
             |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.NMPCJAOIOHJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJEILDIOIOE",
-            |m: &ChimeraDoFinalRoundCsReq| { &m.CJEILDIOIOE },
-            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.CJEILDIOIOE },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FJLPLIGMPHB",
+            |m: &ChimeraDoFinalRoundCsReq| { &m.FJLPLIGMPHB },
+            |m: &mut ChimeraDoFinalRoundCsReq| { &mut m.FJLPLIGMPHB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDoFinalRoundCsReq>(
             "ChimeraDoFinalRoundCsReq",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ChimeraDoFinalRoundCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                8 => {
+                    self.CJEILDIOIOE = is.read_bool()?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                98 => {
-                    self.FJLPLIGMPHB.push(is.read_message()?);
-                },
-                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.PKKGGLIGKKN)?;
                 },
-                32 => {
+                48 => {
                     self.PKKGGLIGKKN.push(is.read_uint32()?);
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
                 112 => {
                     self.NMPCJAOIOHJ = is.read_uint32()?;
                 },
-                72 => {
-                    self.CJEILDIOIOE = is.read_bool()?;
+                122 => {
+                    self.FJLPLIGMPHB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,47 +140,47 @@ impl ::protobuf::Message for ChimeraDoFinalRoundCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CJEILDIOIOE != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PKKGGLIGKKN);
+        if let Some(v) = self.lineup.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.lineup.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.NMPCJAOIOHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NMPCJAOIOHJ);
         }
         for value in &self.FJLPLIGMPHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.PKKGGLIGKKN);
-        if self.NMPCJAOIOHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NMPCJAOIOHJ);
-        }
-        if self.CJEILDIOIOE != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.CJEILDIOIOE != false {
+            os.write_bool(1, self.CJEILDIOIOE)?;
         }
+        os.write_repeated_packed_uint32(6, &self.PKKGGLIGKKN)?;
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        for v in &self.FJLPLIGMPHB {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        os.write_repeated_packed_uint32(4, &self.PKKGGLIGKKN)?;
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         if self.NMPCJAOIOHJ != 0 {
             os.write_uint32(14, self.NMPCJAOIOHJ)?;
         }
-        if self.CJEILDIOIOE != false {
-            os.write_bool(9, self.CJEILDIOIOE)?;
-        }
+        for v in &self.FJLPLIGMPHB {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for ChimeraDoFinalRoundCsReq {
     }
 
     fn clear(&mut self) {
-        self.stt.clear();
-        self.lineup.clear();
-        self.FJLPLIGMPHB.clear();
-        self.PKKGGLIGKKN.clear();
-        self.NMPCJAOIOHJ = 0;
         self.CJEILDIOIOE = false;
+        self.PKKGGLIGKKN.clear();
+        self.lineup.clear();
+        self.stt.clear();
+        self.NMPCJAOIOHJ = 0;
+        self.FJLPLIGMPHB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDoFinalRoundCsReq {
         static instance: ChimeraDoFinalRoundCsReq = ChimeraDoFinalRoundCsReq {
-            stt: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
-            FJLPLIGMPHB: ::std::vec::Vec::new(),
-            PKKGGLIGKKN: ::std::vec::Vec::new(),
-            NMPCJAOIOHJ: 0,
             CJEILDIOIOE: false,
+            PKKGGLIGKKN: ::std::vec::Vec::new(),
+            lineup: ::protobuf::MessageField::none(),
+            stt: ::protobuf::MessageField::none(),
+            NMPCJAOIOHJ: 0,
+            FJLPLIGMPHB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDoFinalRoundCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDoFinalRoundCsReq.proto\x1a\x11DEJGMBKPHEC.proto\x1a\x11GCF\
     GCHAMNOL.proto\x1a\x11HFBJNFJHKPO.proto\"\xf6\x01\n\x18ChimeraDoFinalRou\
-    ndCsReq\x12\x1e\n\x03stt\x18\x08\x20\x01(\x0b2\x0c.HFBJNFJHKPOR\x03stt\
-    \x12$\n\x06lineup\x18\x06\x20\x01(\x0b2\x0c.GCFGCHAMNOLR\x06lineup\x12.\
-    \n\x0bFJLPLIGMPHB\x18\x0c\x20\x03(\x0b2\x0c.DEJGMBKPHECR\x0bFJLPLIGMPHB\
-    \x12\x20\n\x0bPKKGGLIGKKN\x18\x04\x20\x03(\rR\x0bPKKGGLIGKKN\x12\x20\n\
-    \x0bNMPCJAOIOHJ\x18\x0e\x20\x01(\rR\x0bNMPCJAOIOHJ\x12\x20\n\x0bCJEILDIO\
-    IOE\x18\t\x20\x01(\x08R\x0bCJEILDIOIOEb\x06proto3\
+    ndCsReq\x12\x20\n\x0bCJEILDIOIOE\x18\x01\x20\x01(\x08R\x0bCJEILDIOIOE\
+    \x12\x20\n\x0bPKKGGLIGKKN\x18\x06\x20\x03(\rR\x0bPKKGGLIGKKN\x12$\n\x06l\
+    ineup\x18\t\x20\x01(\x0b2\x0c.GCFGCHAMNOLR\x06lineup\x12\x1e\n\x03stt\
+    \x18\x0b\x20\x01(\x0b2\x0c.HFBJNFJHKPOR\x03stt\x12\x20\n\x0bNMPCJAOIOHJ\
+    \x18\x0e\x20\x01(\rR\x0bNMPCJAOIOHJ\x12.\n\x0bFJLPLIGMPHB\x18\x0f\x20\
+    \x03(\x0b2\x0c.DEJGMBKPHECR\x0bFJLPLIGMPHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

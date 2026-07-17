@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GFNAPELNFIC {
     // message fields
-    // @@protoc_insertion_point(field:GFNAPELNFIC.JBNMAOFOFPE)
-    pub JBNMAOFOFPE: ::protobuf::MessageField<super::DKPHAFPGDLO::DKPHAFPGDLO>,
     // @@protoc_insertion_point(field:GFNAPELNFIC.CLFBBAPEPML)
     pub CLFBBAPEPML: u32,
-    // @@protoc_insertion_point(field:GFNAPELNFIC.AALCCPJCBME)
-    pub AALCCPJCBME: bool,
+    // @@protoc_insertion_point(field:GFNAPELNFIC.is_locked)
+    pub is_locked: bool,
+    // @@protoc_insertion_point(field:GFNAPELNFIC.JBNMAOFOFPE)
+    pub JBNMAOFOFPE: ::protobuf::MessageField<super::DKPHAFPGDLO::DKPHAFPGDLO>,
     // special fields
     // @@protoc_insertion_point(special_field:GFNAPELNFIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GFNAPELNFIC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKPHAFPGDLO::DKPHAFPGDLO>(
-            "JBNMAOFOFPE",
-            |m: &GFNAPELNFIC| { &m.JBNMAOFOFPE },
-            |m: &mut GFNAPELNFIC| { &mut m.JBNMAOFOFPE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLFBBAPEPML",
             |m: &GFNAPELNFIC| { &m.CLFBBAPEPML },
             |m: &mut GFNAPELNFIC| { &mut m.CLFBBAPEPML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AALCCPJCBME",
-            |m: &GFNAPELNFIC| { &m.AALCCPJCBME },
-            |m: &mut GFNAPELNFIC| { &mut m.AALCCPJCBME },
+            "is_locked",
+            |m: &GFNAPELNFIC| { &m.is_locked },
+            |m: &mut GFNAPELNFIC| { &mut m.is_locked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKPHAFPGDLO::DKPHAFPGDLO>(
+            "JBNMAOFOFPE",
+            |m: &GFNAPELNFIC| { &m.JBNMAOFOFPE },
+            |m: &mut GFNAPELNFIC| { &mut m.JBNMAOFOFPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GFNAPELNFIC>(
             "GFNAPELNFIC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GFNAPELNFIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBNMAOFOFPE)?;
-                },
                 8 => {
                     self.CLFBBAPEPML = is.read_uint32()?;
                 },
                 16 => {
-                    self.AALCCPJCBME = is.read_bool()?;
+                    self.is_locked = is.read_bool()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBNMAOFOFPE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GFNAPELNFIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JBNMAOFOFPE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.CLFBBAPEPML != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.CLFBBAPEPML);
         }
-        if self.AALCCPJCBME != false {
+        if self.is_locked != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.JBNMAOFOFPE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GFNAPELNFIC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JBNMAOFOFPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.CLFBBAPEPML != 0 {
             os.write_uint32(1, self.CLFBBAPEPML)?;
         }
-        if self.AALCCPJCBME != false {
-            os.write_bool(2, self.AALCCPJCBME)?;
+        if self.is_locked != false {
+            os.write_bool(2, self.is_locked)?;
+        }
+        if let Some(v) = self.JBNMAOFOFPE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GFNAPELNFIC {
     }
 
     fn clear(&mut self) {
-        self.JBNMAOFOFPE.clear();
         self.CLFBBAPEPML = 0;
-        self.AALCCPJCBME = false;
+        self.is_locked = false;
+        self.JBNMAOFOFPE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GFNAPELNFIC {
         static instance: GFNAPELNFIC = GFNAPELNFIC {
-            JBNMAOFOFPE: ::protobuf::MessageField::none(),
             CLFBBAPEPML: 0,
-            AALCCPJCBME: false,
+            is_locked: false,
+            JBNMAOFOFPE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GFNAPELNFIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFNAPELNFIC.proto\x1a\x11DKPHAFPGDLO.proto\"\x81\x01\n\x0bGFNAPELN\
-    FIC\x12.\n\x0bJBNMAOFOFPE\x18\x03\x20\x01(\x0b2\x0c.DKPHAFPGDLOR\x0bJBNM\
-    AOFOFPE\x12\x20\n\x0bCLFBBAPEPML\x18\x01\x20\x01(\rR\x0bCLFBBAPEPML\x12\
-    \x20\n\x0bAALCCPJCBME\x18\x02\x20\x01(\x08R\x0bAALCCPJCBMEb\x06proto3\
+    \n\x11GFNAPELNFIC.proto\x1a\x11DKPHAFPGDLO.proto\"|\n\x0bGFNAPELNFIC\x12\
+    \x20\n\x0bCLFBBAPEPML\x18\x01\x20\x01(\rR\x0bCLFBBAPEPML\x12\x1b\n\tis_l\
+    ocked\x18\x02\x20\x01(\x08R\x08isLocked\x12.\n\x0bJBNMAOFOFPE\x18\x03\
+    \x20\x01(\x0b2\x0c.DKPHAFPGDLOR\x0bJBNMAOFOFPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

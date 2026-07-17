@@ -45,7 +45,7 @@ impl CCKJAEDDDCL {
         ::std::default::Default::default()
     }
 
-    // .KPIHDPGDMKB BMGOLFNGHGH = 10;
+    // .KPIHDPGDMKB BMGOLFNGHGH = 6;
 
     pub fn BMGOLFNGHGH(&self) -> &super::KPIHDPGDMKB::KPIHDPGDMKB {
         match self.KKNBOACNCON {
@@ -94,7 +94,7 @@ impl CCKJAEDDDCL {
         }
     }
 
-    // .AHLALEEJOEG BBEKBJPHEJK = 2;
+    // .AHLALEEJOEG BBEKBJPHEJK = 14;
 
     pub fn BBEKBJPHEJK(&self) -> &super::AHLALEEJOEG::AHLALEEJOEG {
         match self.KKNBOACNCON {
@@ -143,7 +143,7 @@ impl CCKJAEDDDCL {
         }
     }
 
-    // .CDDEIPOBBCN MECOEFEJANE = 15;
+    // .CDDEIPOBBCN MECOEFEJANE = 5;
 
     pub fn MECOEFEJANE(&self) -> &super::CDDEIPOBBCN::CDDEIPOBBCN {
         match self.KKNBOACNCON {
@@ -192,7 +192,7 @@ impl CCKJAEDDDCL {
         }
     }
 
-    // .GANFMBPEJPF ABPOOCOOKCF = 13;
+    // .GANFMBPEJPF ABPOOCOOKCF = 15;
 
     pub fn ABPOOCOOKCF(&self) -> &super::GANFMBPEJPF::GANFMBPEJPF {
         match self.KKNBOACNCON {
@@ -291,16 +291,16 @@ impl ::protobuf::Message for CCKJAEDDDCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BMGOLFNGHGH(is.read_message()?));
                 },
-                18 => {
+                114 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(is.read_message()?));
                 },
-                122 => {
+                42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::MECOEFEJANE(is.read_message()?));
                 },
-                106 => {
+                122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(is.read_message()?));
                 },
                 tag => {
@@ -344,16 +344,16 @@ impl ::protobuf::Message for CCKJAEDDDCL {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &cckjaedddcl::KKNBOACNCON::BMGOLFNGHGH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &cckjaedddcl::KKNBOACNCON::MECOEFEJANE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -444,11 +444,11 @@ pub mod cckjaedddcl {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCKJAEDDDCL.proto\x1a\x11AHLALEEJOEG.proto\x1a\x11CDDEIPOBBCN.prot\
     o\x1a\x11GANFMBPEJPF.proto\x1a\x11KPIHDPGDMKB.proto\"\xe4\x01\n\x0bCCKJA\
-    EDDDCL\x120\n\x0bBMGOLFNGHGH\x18\n\x20\x01(\x0b2\x0c.KPIHDPGDMKBH\0R\x0b\
-    BMGOLFNGHGH\x120\n\x0bBBEKBJPHEJK\x18\x02\x20\x01(\x0b2\x0c.AHLALEEJOEGH\
-    \0R\x0bBBEKBJPHEJK\x120\n\x0bMECOEFEJANE\x18\x0f\x20\x01(\x0b2\x0c.CDDEI\
-    POBBCNH\0R\x0bMECOEFEJANE\x120\n\x0bABPOOCOOKCF\x18\r\x20\x01(\x0b2\x0c.\
-    GANFMBPEJPFH\0R\x0bABPOOCOOKCFB\r\n\x0bKKNBOACNCONb\x06proto3\
+    EDDDCL\x120\n\x0bBMGOLFNGHGH\x18\x06\x20\x01(\x0b2\x0c.KPIHDPGDMKBH\0R\
+    \x0bBMGOLFNGHGH\x120\n\x0bBBEKBJPHEJK\x18\x0e\x20\x01(\x0b2\x0c.AHLALEEJ\
+    OEGH\0R\x0bBBEKBJPHEJK\x120\n\x0bMECOEFEJANE\x18\x05\x20\x01(\x0b2\x0c.C\
+    DDEIPOBBCNH\0R\x0bMECOEFEJANE\x120\n\x0bABPOOCOOKCF\x18\x0f\x20\x01(\x0b\
+    2\x0c.GANFMBPEJPFH\0R\x0bABPOOCOOKCFB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

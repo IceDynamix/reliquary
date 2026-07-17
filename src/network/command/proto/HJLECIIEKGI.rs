@@ -48,7 +48,7 @@ impl HJLECIIEKGI {
         ::std::default::Default::default()
     }
 
-    // .AMEJEFBKPCH KLONPDNKBJF = 1477;
+    // .AMEJEFBKPCH KLONPDNKBJF = 628;
 
     pub fn KLONPDNKBJF(&self) -> &super::AMEJEFBKPCH::AMEJEFBKPCH {
         match self.FGLIODAJFML {
@@ -97,56 +97,7 @@ impl HJLECIIEKGI {
         }
     }
 
-    // .LKIOMEBIICO OPLCAIDOCJI = 1935;
-
-    pub fn OPLCAIDOCJI(&self) -> &super::LKIOMEBIICO::LKIOMEBIICO {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(ref v)) => v,
-            _ => <super::LKIOMEBIICO::LKIOMEBIICO as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OPLCAIDOCJI(&mut self) {
-        self.FGLIODAJFML = ::std::option::Option::None;
-    }
-
-    pub fn has_OPLCAIDOCJI(&self) -> bool {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OPLCAIDOCJI(&mut self, v: super::LKIOMEBIICO::LKIOMEBIICO) {
-        self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OPLCAIDOCJI(&mut self) -> &mut super::LKIOMEBIICO::LKIOMEBIICO {
-        if let ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(_)) = self.FGLIODAJFML {
-        } else {
-            self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(super::LKIOMEBIICO::LKIOMEBIICO::new()));
-        }
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OPLCAIDOCJI(&mut self) -> super::LKIOMEBIICO::LKIOMEBIICO {
-        if self.has_OPLCAIDOCJI() {
-            match self.FGLIODAJFML.take() {
-                ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::LKIOMEBIICO::LKIOMEBIICO::new()
-        }
-    }
-
-    // .OGAFHKMJELA AKDJGIJMHPJ = 1554;
+    // .OGAFHKMJELA AKDJGIJMHPJ = 668;
 
     pub fn AKDJGIJMHPJ(&self) -> &super::OGAFHKMJELA::OGAFHKMJELA {
         match self.FGLIODAJFML {
@@ -195,7 +146,7 @@ impl HJLECIIEKGI {
         }
     }
 
-    // .JEBGFIJPAPG LGBJDFHBIND = 1811;
+    // .JEBGFIJPAPG LGBJDFHBIND = 1733;
 
     pub fn LGBJDFHBIND(&self) -> &super::JEBGFIJPAPG::JEBGFIJPAPG {
         match self.FGLIODAJFML {
@@ -245,7 +196,7 @@ impl HJLECIIEKGI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
@@ -258,13 +209,6 @@ impl HJLECIIEKGI {
             HJLECIIEKGI::KLONPDNKBJF,
             HJLECIIEKGI::mut_KLONPDNKBJF,
             HJLECIIEKGI::set_KLONPDNKBJF,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LKIOMEBIICO::LKIOMEBIICO>(
-            "OPLCAIDOCJI",
-            HJLECIIEKGI::has_OPLCAIDOCJI,
-            HJLECIIEKGI::OPLCAIDOCJI,
-            HJLECIIEKGI::mut_OPLCAIDOCJI,
-            HJLECIIEKGI::set_OPLCAIDOCJI,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGAFHKMJELA::OGAFHKMJELA>(
             "AKDJGIJMHPJ",
@@ -299,19 +243,16 @@ impl ::protobuf::Message for HJLECIIEKGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                11818 => {
+                5026 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(is.read_message()?));
                 },
-                15482 => {
-                    self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(is.read_message()?));
-                },
-                12434 => {
+                5346 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(is.read_message()?));
                 },
-                14490 => {
+                13866 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(is.read_message()?));
                 },
                 tag => {
@@ -327,15 +268,11 @@ impl ::protobuf::Message for HJLECIIEKGI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
                 &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -356,21 +293,18 @@ impl ::protobuf::Message for HJLECIIEKGI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(5, self.queue_position)?;
+            os.write_uint32(13, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
                 &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1477, v, os)?;
-                },
-                &hjleciiekgi::FGLIODAJFML::OPLCAIDOCJI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1935, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(628, v, os)?;
                 },
                 &hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1554, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(668, v, os)?;
                 },
                 &hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1811, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
                 },
             };
         }
@@ -392,7 +326,6 @@ impl ::protobuf::Message for HJLECIIEKGI {
 
     fn clear(&mut self) {
         self.queue_position = 0;
-        self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
@@ -435,8 +368,6 @@ pub mod hjleciiekgi {
     pub enum FGLIODAJFML {
         // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.KLONPDNKBJF)
         KLONPDNKBJF(super::super::AMEJEFBKPCH::AMEJEFBKPCH),
-        // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.OPLCAIDOCJI)
-        OPLCAIDOCJI(super::super::LKIOMEBIICO::LKIOMEBIICO),
         // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.AKDJGIJMHPJ)
         AKDJGIJMHPJ(super::super::OGAFHKMJELA::OGAFHKMJELA),
         // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.LGBJDFHBIND)
@@ -462,13 +393,12 @@ pub mod hjleciiekgi {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJLECIIEKGI.proto\x1a\x11AMEJEFBKPCH.proto\x1a\x11JEBGFIJPAPG.prot\
-    o\x1a\x11LKIOMEBIICO.proto\x1a\x11OGAFHKMJELA.proto\"\x8f\x02\n\x0bHJLEC\
-    IIEKGI\x12%\n\x0equeue_position\x18\x05\x20\x01(\rR\rqueuePosition\x121\
-    \n\x0bKLONPDNKBJF\x18\xc5\x0b\x20\x01(\x0b2\x0c.AMEJEFBKPCHH\0R\x0bKLONP\
-    DNKBJF\x121\n\x0bOPLCAIDOCJI\x18\x8f\x0f\x20\x01(\x0b2\x0c.LKIOMEBIICOH\
-    \0R\x0bOPLCAIDOCJI\x121\n\x0bAKDJGIJMHPJ\x18\x92\x0c\x20\x01(\x0b2\x0c.O\
-    GAFHKMJELAH\0R\x0bAKDJGIJMHPJ\x121\n\x0bLGBJDFHBIND\x18\x93\x0e\x20\x01(\
-    \x0b2\x0c.JEBGFIJPAPGH\0R\x0bLGBJDFHBINDB\r\n\x0bFGLIODAJFMLb\x06proto3\
+    o\x1a\x11OGAFHKMJELA.proto\"\xdc\x01\n\x0bHJLECIIEKGI\x12%\n\x0equeue_po\
+    sition\x18\r\x20\x01(\rR\rqueuePosition\x121\n\x0bKLONPDNKBJF\x18\xf4\
+    \x04\x20\x01(\x0b2\x0c.AMEJEFBKPCHH\0R\x0bKLONPDNKBJF\x121\n\x0bAKDJGIJM\
+    HPJ\x18\x9c\x05\x20\x01(\x0b2\x0c.OGAFHKMJELAH\0R\x0bAKDJGIJMHPJ\x121\n\
+    \x0bLGBJDFHBIND\x18\xc5\r\x20\x01(\x0b2\x0c.JEBGFIJPAPGH\0R\x0bLGBJDFHBI\
+    NDB\r\n\x0bFGLIODAJFMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -485,10 +415,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::AMEJEFBKPCH::file_descriptor().clone());
             deps.push(super::JEBGFIJPAPG::file_descriptor().clone());
-            deps.push(super::LKIOMEBIICO::file_descriptor().clone());
             deps.push(super::OGAFHKMJELA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HJLECIIEKGI::generated_message_descriptor_data());

@@ -86,13 +86,13 @@ impl ::protobuf::Message for OENNAOAFAMA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
+                72 => {
                     self.JBDFEHDFKNO = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.DACKJGDGMLN = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for OENNAOAFAMA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.JBDFEHDFKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JBDFEHDFKNO);
+            my_size += ::protobuf::rt::uint32_size(9, self.JBDFEHDFKNO);
         }
         if self.DACKJGDGMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DACKJGDGMLN);
+            my_size += ::protobuf::rt::uint32_size(10, self.DACKJGDGMLN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for OENNAOAFAMA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.JBDFEHDFKNO != 0 {
-            os.write_uint32(1, self.JBDFEHDFKNO)?;
+            os.write_uint32(9, self.JBDFEHDFKNO)?;
         }
         if self.DACKJGDGMLN != 0 {
-            os.write_uint32(15, self.DACKJGDGMLN)?;
+            os.write_uint32(10, self.DACKJGDGMLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for OENNAOAFAMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OENNAOAFAMA.proto\"k\n\x0bOENNAOAFAMA\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bJBDFEHDFKNO\x18\x01\x20\x01(\rR\x0b\
-    JBDFEHDFKNO\x12\x20\n\x0bDACKJGDGMLN\x18\x0f\x20\x01(\rR\x0bDACKJGDGMLNb\
-    \x06proto3\
+    \n\x11OENNAOAFAMA.proto\"k\n\x0bOENNAOAFAMA\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bJBDFEHDFKNO\x18\t\x20\x01(\rR\x0bJB\
+    DFEHDFKNO\x12\x20\n\x0bDACKJGDGMLN\x18\n\x20\x01(\rR\x0bDACKJGDGMLNb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

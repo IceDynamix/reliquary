@@ -45,7 +45,7 @@ impl FHBDPOJEEMJ {
         ::std::default::Default::default()
     }
 
-    // .DJEECBNBGMN HHBPBGMNGPN = 14;
+    // .DJEECBNBGMN HHBPBGMNGPN = 13;
 
     pub fn HHBPBGMNGPN(&self) -> &super::DJEECBNBGMN::DJEECBNBGMN {
         match self.KOEFMOAPDGI {
@@ -94,7 +94,7 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .EGAILAEBLIG ECCLOKPNFHP = 11;
+    // .EGAILAEBLIG ECCLOKPNFHP = 1;
 
     pub fn ECCLOKPNFHP(&self) -> &super::EGAILAEBLIG::EGAILAEBLIG {
         match self.KOEFMOAPDGI {
@@ -143,56 +143,7 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .EBIDBCOBLNM BJJGPOEFBAC = 5;
-
-    pub fn BJJGPOEFBAC(&self) -> &super::EBIDBCOBLNM::EBIDBCOBLNM {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(ref v)) => v,
-            _ => <super::EBIDBCOBLNM::EBIDBCOBLNM as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_BJJGPOEFBAC(&mut self) {
-        self.KOEFMOAPDGI = ::std::option::Option::None;
-    }
-
-    pub fn has_BJJGPOEFBAC(&self) -> bool {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BJJGPOEFBAC(&mut self, v: super::EBIDBCOBLNM::EBIDBCOBLNM) {
-        self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_BJJGPOEFBAC(&mut self) -> &mut super::EBIDBCOBLNM::EBIDBCOBLNM {
-        if let ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(_)) = self.KOEFMOAPDGI {
-        } else {
-            self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(super::EBIDBCOBLNM::EBIDBCOBLNM::new()));
-        }
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_BJJGPOEFBAC(&mut self) -> super::EBIDBCOBLNM::EBIDBCOBLNM {
-        if self.has_BJJGPOEFBAC() {
-            match self.KOEFMOAPDGI.take() {
-                ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EBIDBCOBLNM::EBIDBCOBLNM::new()
-        }
-    }
-
-    // .HLEBBGFAKAK HDFLCOIDCPE = 15;
+    // .HLEBBGFAKAK HDFLCOIDCPE = 6;
 
     pub fn HDFLCOIDCPE(&self) -> &super::HLEBBGFAKAK::HLEBBGFAKAK {
         match self.KOEFMOAPDGI {
@@ -241,57 +192,8 @@ impl FHBDPOJEEMJ {
         }
     }
 
-    // .COKFMMNDCHN NJKMEJIBIDC = 1;
-
-    pub fn NJKMEJIBIDC(&self) -> &super::COKFMMNDCHN::COKFMMNDCHN {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(ref v)) => v,
-            _ => <super::COKFMMNDCHN::COKFMMNDCHN as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NJKMEJIBIDC(&mut self) {
-        self.KOEFMOAPDGI = ::std::option::Option::None;
-    }
-
-    pub fn has_NJKMEJIBIDC(&self) -> bool {
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NJKMEJIBIDC(&mut self, v: super::COKFMMNDCHN::COKFMMNDCHN) {
-        self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NJKMEJIBIDC(&mut self) -> &mut super::COKFMMNDCHN::COKFMMNDCHN {
-        if let ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(_)) = self.KOEFMOAPDGI {
-        } else {
-            self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(super::COKFMMNDCHN::COKFMMNDCHN::new()));
-        }
-        match self.KOEFMOAPDGI {
-            ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NJKMEJIBIDC(&mut self) -> super::COKFMMNDCHN::COKFMMNDCHN {
-        if self.has_NJKMEJIBIDC() {
-            match self.KOEFMOAPDGI.take() {
-                ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::COKFMMNDCHN::COKFMMNDCHN::new()
-        }
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DJEECBNBGMN::DJEECBNBGMN>(
             "HHBPBGMNGPN",
@@ -307,26 +209,12 @@ impl FHBDPOJEEMJ {
             FHBDPOJEEMJ::mut_ECCLOKPNFHP,
             FHBDPOJEEMJ::set_ECCLOKPNFHP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EBIDBCOBLNM::EBIDBCOBLNM>(
-            "BJJGPOEFBAC",
-            FHBDPOJEEMJ::has_BJJGPOEFBAC,
-            FHBDPOJEEMJ::BJJGPOEFBAC,
-            FHBDPOJEEMJ::mut_BJJGPOEFBAC,
-            FHBDPOJEEMJ::set_BJJGPOEFBAC,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLEBBGFAKAK::HLEBBGFAKAK>(
             "HDFLCOIDCPE",
             FHBDPOJEEMJ::has_HDFLCOIDCPE,
             FHBDPOJEEMJ::HDFLCOIDCPE,
             FHBDPOJEEMJ::mut_HDFLCOIDCPE,
             FHBDPOJEEMJ::set_HDFLCOIDCPE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::COKFMMNDCHN::COKFMMNDCHN>(
-            "NJKMEJIBIDC",
-            FHBDPOJEEMJ::has_NJKMEJIBIDC,
-            FHBDPOJEEMJ::NJKMEJIBIDC,
-            FHBDPOJEEMJ::mut_NJKMEJIBIDC,
-            FHBDPOJEEMJ::set_NJKMEJIBIDC,
         ));
         oneofs.push(fhbdpojeemj::KOEFMOAPDGI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHBDPOJEEMJ>(
@@ -347,20 +235,14 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                106 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(is.read_message()?));
                 },
-                90 => {
+                10 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(is.read_message()?));
                 },
-                42 => {
-                    self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(is.read_message()?));
-                },
-                122 => {
+                50 => {
                     self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(is.read_message()?));
-                },
-                10 => {
-                    self.KOEFMOAPDGI = ::std::option::Option::Some(fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -384,15 +266,7 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -407,19 +281,13 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
         if let ::std::option::Option::Some(ref v) = self.KOEFMOAPDGI {
             match v {
                 &fhbdpojeemj::KOEFMOAPDGI::HHBPBGMNGPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::ECCLOKPNFHP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &fhbdpojeemj::KOEFMOAPDGI::BJJGPOEFBAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &fhbdpojeemj::KOEFMOAPDGI::HDFLCOIDCPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-                },
-                &fhbdpojeemj::KOEFMOAPDGI::NJKMEJIBIDC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -440,8 +308,6 @@ impl ::protobuf::Message for FHBDPOJEEMJ {
     }
 
     fn clear(&mut self) {
-        self.KOEFMOAPDGI = ::std::option::Option::None;
-        self.KOEFMOAPDGI = ::std::option::Option::None;
         self.KOEFMOAPDGI = ::std::option::Option::None;
         self.KOEFMOAPDGI = ::std::option::Option::None;
         self.KOEFMOAPDGI = ::std::option::Option::None;
@@ -485,12 +351,8 @@ pub mod fhbdpojeemj {
         HHBPBGMNGPN(super::super::DJEECBNBGMN::DJEECBNBGMN),
         // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.ECCLOKPNFHP)
         ECCLOKPNFHP(super::super::EGAILAEBLIG::EGAILAEBLIG),
-        // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.BJJGPOEFBAC)
-        BJJGPOEFBAC(super::super::EBIDBCOBLNM::EBIDBCOBLNM),
         // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.HDFLCOIDCPE)
         HDFLCOIDCPE(super::super::HLEBBGFAKAK::HLEBBGFAKAK),
-        // @@protoc_insertion_point(oneof_field:FHBDPOJEEMJ.NJKMEJIBIDC)
-        NJKMEJIBIDC(super::super::COKFMMNDCHN::COKFMMNDCHN),
     }
 
     impl ::protobuf::Oneof for KOEFMOAPDGI {
@@ -511,14 +373,11 @@ pub mod fhbdpojeemj {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHBDPOJEEMJ.proto\x1a\x11COKFMMNDCHN.proto\x1a\x11DJEECBNBGMN.prot\
-    o\x1a\x11EBIDBCOBLNM.proto\x1a\x11EGAILAEBLIG.proto\x1a\x11HLEBBGFAKAK.p\
-    roto\"\x96\x02\n\x0bFHBDPOJEEMJ\x120\n\x0bHHBPBGMNGPN\x18\x0e\x20\x01(\
-    \x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNGPN\x120\n\x0bECCLOKPNFHP\x18\x0b\
-    \x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNFHP\x120\n\x0bBJJGPOEFBAC\
-    \x18\x05\x20\x01(\x0b2\x0c.EBIDBCOBLNMH\0R\x0bBJJGPOEFBAC\x120\n\x0bHDFL\
-    COIDCPE\x18\x0f\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDCPE\x120\n\
-    \x0bNJKMEJIBIDC\x18\x01\x20\x01(\x0b2\x0c.COKFMMNDCHNH\0R\x0bNJKMEJIBIDC\
+    \n\x11FHBDPOJEEMJ.proto\x1a\x11DJEECBNBGMN.proto\x1a\x11EGAILAEBLIG.prot\
+    o\x1a\x11HLEBBGFAKAK.proto\"\xb2\x01\n\x0bFHBDPOJEEMJ\x120\n\x0bHHBPBGMN\
+    GPN\x18\r\x20\x01(\x0b2\x0c.DJEECBNBGMNH\0R\x0bHHBPBGMNGPN\x120\n\x0bECC\
+    LOKPNFHP\x18\x01\x20\x01(\x0b2\x0c.EGAILAEBLIGH\0R\x0bECCLOKPNFHP\x120\n\
+    \x0bHDFLCOIDCPE\x18\x06\x20\x01(\x0b2\x0c.HLEBBGFAKAKH\0R\x0bHDFLCOIDCPE\
     B\r\n\x0bKOEFMOAPDGIb\x06proto3\
 ";
 
@@ -536,10 +395,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::COKFMMNDCHN::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::DJEECBNBGMN::file_descriptor().clone());
-            deps.push(super::EBIDBCOBLNM::file_descriptor().clone());
             deps.push(super::EGAILAEBLIG::file_descriptor().clone());
             deps.push(super::HLEBBGFAKAK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

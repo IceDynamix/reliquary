@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KIJEFPFAIJC {
     // message fields
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.BKIIJELPNPL)
-    pub BKIIJELPNPL: ::std::string::String,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.platform)
-    pub platform: u32,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.client_res_version)
-    pub client_res_version: u32,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.account_ip)
-    pub account_ip: u32,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.PMLOIOIAHCF)
-    pub PMLOIOIAHCF: u64,
-    // @@protoc_insertion_point(field:KIJEFPFAIJC.MLKLBJJHGIO)
-    pub MLKLBJJHGIO: u32,
     // @@protoc_insertion_point(field:KIJEFPFAIJC.account_ip_port)
     pub account_ip_port: u32,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.PMLOIOIAHCF)
+    pub PMLOIOIAHCF: u64,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.platform)
+    pub platform: u32,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.fight_token)
+    pub fight_token: ::std::string::String,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.account_ip)
+    pub account_ip: u32,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.client_res_version)
+    pub client_res_version: u32,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.MLKLBJJHGIO)
+    pub MLKLBJJHGIO: u32,
+    // @@protoc_insertion_point(field:KIJEFPFAIJC.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KIJEFPFAIJC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,29 +64,9 @@ impl KIJEFPFAIJC {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKIIJELPNPL",
-            |m: &KIJEFPFAIJC| { &m.BKIIJELPNPL },
-            |m: &mut KIJEFPFAIJC| { &mut m.BKIIJELPNPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &KIJEFPFAIJC| { &m.platform },
-            |m: &mut KIJEFPFAIJC| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_res_version",
-            |m: &KIJEFPFAIJC| { &m.client_res_version },
-            |m: &mut KIJEFPFAIJC| { &mut m.client_res_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &KIJEFPFAIJC| { &m.uid },
-            |m: &mut KIJEFPFAIJC| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "account_ip",
-            |m: &KIJEFPFAIJC| { &m.account_ip },
-            |m: &mut KIJEFPFAIJC| { &mut m.account_ip },
+            "account_ip_port",
+            |m: &KIJEFPFAIJC| { &m.account_ip_port },
+            |m: &mut KIJEFPFAIJC| { &mut m.account_ip_port },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PMLOIOIAHCF",
@@ -94,14 +74,34 @@ impl KIJEFPFAIJC {
             |m: &mut KIJEFPFAIJC| { &mut m.PMLOIOIAHCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &KIJEFPFAIJC| { &m.platform },
+            |m: &mut KIJEFPFAIJC| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "fight_token",
+            |m: &KIJEFPFAIJC| { &m.fight_token },
+            |m: &mut KIJEFPFAIJC| { &mut m.fight_token },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "account_ip",
+            |m: &KIJEFPFAIJC| { &m.account_ip },
+            |m: &mut KIJEFPFAIJC| { &mut m.account_ip },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_res_version",
+            |m: &KIJEFPFAIJC| { &m.client_res_version },
+            |m: &mut KIJEFPFAIJC| { &mut m.client_res_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MLKLBJJHGIO",
             |m: &KIJEFPFAIJC| { &m.MLKLBJJHGIO },
             |m: &mut KIJEFPFAIJC| { &mut m.MLKLBJJHGIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "account_ip_port",
-            |m: &KIJEFPFAIJC| { &m.account_ip_port },
-            |m: &mut KIJEFPFAIJC| { &mut m.account_ip_port },
+            "uid",
+            |m: &KIJEFPFAIJC| { &m.uid },
+            |m: &mut KIJEFPFAIJC| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KIJEFPFAIJC>(
             "KIJEFPFAIJC",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for KIJEFPFAIJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.BKIIJELPNPL = is.read_string()?;
+                8 => {
+                    self.account_ip_port = is.read_uint32()?;
                 },
-                24 => {
-                    self.platform = is.read_uint32()?;
-                },
-                120 => {
-                    self.client_res_version = is.read_uint32()?;
-                },
-                48 => {
-                    self.uid = is.read_uint32()?;
-                },
-                96 => {
-                    self.account_ip = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.PMLOIOIAHCF = is.read_uint64()?;
                 },
-                64 => {
+                56 => {
+                    self.platform = is.read_uint32()?;
+                },
+                66 => {
+                    self.fight_token = is.read_string()?;
+                },
+                72 => {
+                    self.account_ip = is.read_uint32()?;
+                },
+                88 => {
+                    self.client_res_version = is.read_uint32()?;
+                },
+                96 => {
                     self.MLKLBJJHGIO = is.read_uint32()?;
                 },
-                80 => {
-                    self.account_ip_port = is.read_uint32()?;
+                112 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,29 +157,29 @@ impl ::protobuf::Message for KIJEFPFAIJC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.BKIIJELPNPL.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.BKIIJELPNPL);
-        }
-        if self.platform != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.platform);
-        }
-        if self.client_res_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.client_res_version);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.uid);
-        }
-        if self.account_ip != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.account_ip);
+        if self.account_ip_port != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.account_ip_port);
         }
         if self.PMLOIOIAHCF != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.PMLOIOIAHCF);
+            my_size += ::protobuf::rt::uint64_size(4, self.PMLOIOIAHCF);
+        }
+        if self.platform != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.platform);
+        }
+        if !self.fight_token.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.fight_token);
+        }
+        if self.account_ip != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.account_ip);
+        }
+        if self.client_res_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.client_res_version);
         }
         if self.MLKLBJJHGIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MLKLBJJHGIO);
+            my_size += ::protobuf::rt::uint32_size(12, self.MLKLBJJHGIO);
         }
-        if self.account_ip_port != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.account_ip_port);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -187,29 +187,29 @@ impl ::protobuf::Message for KIJEFPFAIJC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.BKIIJELPNPL.is_empty() {
-            os.write_string(1, &self.BKIIJELPNPL)?;
-        }
-        if self.platform != 0 {
-            os.write_uint32(3, self.platform)?;
-        }
-        if self.client_res_version != 0 {
-            os.write_uint32(15, self.client_res_version)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(6, self.uid)?;
-        }
-        if self.account_ip != 0 {
-            os.write_uint32(12, self.account_ip)?;
+        if self.account_ip_port != 0 {
+            os.write_uint32(1, self.account_ip_port)?;
         }
         if self.PMLOIOIAHCF != 0 {
-            os.write_uint64(7, self.PMLOIOIAHCF)?;
+            os.write_uint64(4, self.PMLOIOIAHCF)?;
+        }
+        if self.platform != 0 {
+            os.write_uint32(7, self.platform)?;
+        }
+        if !self.fight_token.is_empty() {
+            os.write_string(8, &self.fight_token)?;
+        }
+        if self.account_ip != 0 {
+            os.write_uint32(9, self.account_ip)?;
+        }
+        if self.client_res_version != 0 {
+            os.write_uint32(11, self.client_res_version)?;
         }
         if self.MLKLBJJHGIO != 0 {
-            os.write_uint32(8, self.MLKLBJJHGIO)?;
+            os.write_uint32(12, self.MLKLBJJHGIO)?;
         }
-        if self.account_ip_port != 0 {
-            os.write_uint32(10, self.account_ip_port)?;
+        if self.uid != 0 {
+            os.write_uint32(14, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -228,27 +228,27 @@ impl ::protobuf::Message for KIJEFPFAIJC {
     }
 
     fn clear(&mut self) {
-        self.BKIIJELPNPL.clear();
-        self.platform = 0;
-        self.client_res_version = 0;
-        self.uid = 0;
-        self.account_ip = 0;
-        self.PMLOIOIAHCF = 0;
-        self.MLKLBJJHGIO = 0;
         self.account_ip_port = 0;
+        self.PMLOIOIAHCF = 0;
+        self.platform = 0;
+        self.fight_token.clear();
+        self.account_ip = 0;
+        self.client_res_version = 0;
+        self.MLKLBJJHGIO = 0;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KIJEFPFAIJC {
         static instance: KIJEFPFAIJC = KIJEFPFAIJC {
-            BKIIJELPNPL: ::std::string::String::new(),
-            platform: 0,
-            client_res_version: 0,
-            uid: 0,
-            account_ip: 0,
-            PMLOIOIAHCF: 0,
-            MLKLBJJHGIO: 0,
             account_ip_port: 0,
+            PMLOIOIAHCF: 0,
+            platform: 0,
+            fight_token: ::std::string::String::new(),
+            account_ip: 0,
+            client_res_version: 0,
+            MLKLBJJHGIO: 0,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -273,14 +273,14 @@ impl ::protobuf::reflect::ProtobufValue for KIJEFPFAIJC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KIJEFPFAIJC.proto\"\x96\x02\n\x0bKIJEFPFAIJC\x12\x20\n\x0bBKIIJELP\
-    NPL\x18\x01\x20\x01(\tR\x0bBKIIJELPNPL\x12\x1a\n\x08platform\x18\x03\x20\
-    \x01(\rR\x08platform\x12,\n\x12client_res_version\x18\x0f\x20\x01(\rR\
-    \x10clientResVersion\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\x03uid\x12\x1d\
-    \n\naccount_ip\x18\x0c\x20\x01(\rR\taccountIp\x12\x20\n\x0bPMLOIOIAHCF\
-    \x18\x07\x20\x01(\x04R\x0bPMLOIOIAHCF\x12\x20\n\x0bMLKLBJJHGIO\x18\x08\
-    \x20\x01(\rR\x0bMLKLBJJHGIO\x12&\n\x0faccount_ip_port\x18\n\x20\x01(\rR\
-    \raccountIpPortb\x06proto3\
+    \n\x11KIJEFPFAIJC.proto\"\x95\x02\n\x0bKIJEFPFAIJC\x12&\n\x0faccount_ip_\
+    port\x18\x01\x20\x01(\rR\raccountIpPort\x12\x20\n\x0bPMLOIOIAHCF\x18\x04\
+    \x20\x01(\x04R\x0bPMLOIOIAHCF\x12\x1a\n\x08platform\x18\x07\x20\x01(\rR\
+    \x08platform\x12\x1f\n\x0bfight_token\x18\x08\x20\x01(\tR\nfightToken\
+    \x12\x1d\n\naccount_ip\x18\t\x20\x01(\rR\taccountIp\x12,\n\x12client_res\
+    _version\x18\x0b\x20\x01(\rR\x10clientResVersion\x12\x20\n\x0bMLKLBJJHGI\
+    O\x18\x0c\x20\x01(\rR\x0bMLKLBJJHGIO\x12\x10\n\x03uid\x18\x0e\x20\x01(\r\
+    R\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

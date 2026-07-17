@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAGLMEAGPPC {
     // message fields
-    // @@protoc_insertion_point(field:PAGLMEAGPPC.AJKOKAJABFG)
-    pub AJKOKAJABFG: ::std::vec::Vec<super::EOAJKNKDAOD::EOAJKNKDAOD>,
     // @@protoc_insertion_point(field:PAGLMEAGPPC.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PAGLMEAGPPC.AJKOKAJABFG)
+    pub AJKOKAJABFG: ::std::vec::Vec<super::EOAJKNKDAOD::EOAJKNKDAOD>,
     // special fields
     // @@protoc_insertion_point(special_field:PAGLMEAGPPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PAGLMEAGPPC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJKOKAJABFG",
-            |m: &PAGLMEAGPPC| { &m.AJKOKAJABFG },
-            |m: &mut PAGLMEAGPPC| { &mut m.AJKOKAJABFG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PAGLMEAGPPC| { &m.retcode },
             |m: &mut PAGLMEAGPPC| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AJKOKAJABFG",
+            |m: &PAGLMEAGPPC| { &m.AJKOKAJABFG },
+            |m: &mut PAGLMEAGPPC| { &mut m.AJKOKAJABFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAGLMEAGPPC>(
             "PAGLMEAGPPC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PAGLMEAGPPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.AJKOKAJABFG.push(is.read_message()?);
-                },
-                120 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    self.AJKOKAJABFG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for PAGLMEAGPPC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         for value in &self.AJKOKAJABFG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.AJKOKAJABFG {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
+        for v in &self.AJKOKAJABFG {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PAGLMEAGPPC {
     }
 
     fn clear(&mut self) {
-        self.AJKOKAJABFG.clear();
         self.retcode = 0;
+        self.AJKOKAJABFG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAGLMEAGPPC {
         static instance: PAGLMEAGPPC = PAGLMEAGPPC {
-            AJKOKAJABFG: ::std::vec::Vec::new(),
             retcode: 0,
+            AJKOKAJABFG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PAGLMEAGPPC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PAGLMEAGPPC.proto\x1a\x11EOAJKNKDAOD.proto\"W\n\x0bPAGLMEAGPPC\x12\
-    .\n\x0bAJKOKAJABFG\x18\x0e\x20\x03(\x0b2\x0c.EOAJKNKDAODR\x0bAJKOKAJABFG\
-    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bAJKOKAJABFG\x18\
+    \x0b\x20\x03(\x0b2\x0c.EOAJKNKDAODR\x0bAJKOKAJABFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

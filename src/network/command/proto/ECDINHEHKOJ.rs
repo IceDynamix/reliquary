@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECDINHEHKOJ {
     // message fields
-    // @@protoc_insertion_point(field:ECDINHEHKOJ.BHKJIFAFHFN)
-    pub BHKJIFAFHFN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ECDINHEHKOJ.GMBDHLCGOBI)
     pub GMBDHLCGOBI: u32,
-    // @@protoc_insertion_point(field:ECDINHEHKOJ.FJONJANIOIK)
-    pub FJONJANIOIK: u32,
-    // @@protoc_insertion_point(field:ECDINHEHKOJ.EBENOMJDOOF)
-    pub EBENOMJDOOF: u32,
-    // @@protoc_insertion_point(field:ECDINHEHKOJ.CGIGAAKLCKM)
-    pub CGIGAAKLCKM: u32,
     // @@protoc_insertion_point(field:ECDINHEHKOJ.GAIEFCFBNPA)
     pub GAIEFCFBNPA: u32,
+    // @@protoc_insertion_point(field:ECDINHEHKOJ.EBENOMJDOOF)
+    pub EBENOMJDOOF: u32,
+    // @@protoc_insertion_point(field:ECDINHEHKOJ.BHKJIFAFHFN)
+    pub BHKJIFAFHFN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ECDINHEHKOJ.FJONJANIOIK)
+    pub FJONJANIOIK: u32,
+    // @@protoc_insertion_point(field:ECDINHEHKOJ.CGIGAAKLCKM)
+    pub CGIGAAKLCKM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ECDINHEHKOJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,25 @@ impl ECDINHEHKOJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BHKJIFAFHFN",
-            |m: &ECDINHEHKOJ| { &m.BHKJIFAFHFN },
-            |m: &mut ECDINHEHKOJ| { &mut m.BHKJIFAFHFN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMBDHLCGOBI",
             |m: &ECDINHEHKOJ| { &m.GMBDHLCGOBI },
             |m: &mut ECDINHEHKOJ| { &mut m.GMBDHLCGOBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAIEFCFBNPA",
+            |m: &ECDINHEHKOJ| { &m.GAIEFCFBNPA },
+            |m: &mut ECDINHEHKOJ| { &mut m.GAIEFCFBNPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBENOMJDOOF",
+            |m: &ECDINHEHKOJ| { &m.EBENOMJDOOF },
+            |m: &mut ECDINHEHKOJ| { &mut m.EBENOMJDOOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BHKJIFAFHFN",
+            |m: &ECDINHEHKOJ| { &m.BHKJIFAFHFN },
+            |m: &mut ECDINHEHKOJ| { &mut m.BHKJIFAFHFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJONJANIOIK",
@@ -75,19 +85,9 @@ impl ECDINHEHKOJ {
             |m: &mut ECDINHEHKOJ| { &mut m.FJONJANIOIK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBENOMJDOOF",
-            |m: &ECDINHEHKOJ| { &m.EBENOMJDOOF },
-            |m: &mut ECDINHEHKOJ| { &mut m.EBENOMJDOOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CGIGAAKLCKM",
             |m: &ECDINHEHKOJ| { &m.CGIGAAKLCKM },
             |m: &mut ECDINHEHKOJ| { &mut m.CGIGAAKLCKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAIEFCFBNPA",
-            |m: &ECDINHEHKOJ| { &m.GAIEFCFBNPA },
-            |m: &mut ECDINHEHKOJ| { &mut m.GAIEFCFBNPA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ECDINHEHKOJ>(
             "ECDINHEHKOJ",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ECDINHEHKOJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BHKJIFAFHFN)?;
-                },
-                96 => {
-                    self.BHKJIFAFHFN.push(is.read_uint32()?);
-                },
-                48 => {
+                8 => {
                     self.GMBDHLCGOBI = is.read_uint32()?;
                 },
-                40 => {
-                    self.FJONJANIOIK = is.read_uint32()?;
+                56 => {
+                    self.GAIEFCFBNPA = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
                     self.EBENOMJDOOF = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BHKJIFAFHFN)?;
+                },
+                72 => {
+                    self.BHKJIFAFHFN.push(is.read_uint32()?);
+                },
+                80 => {
+                    self.FJONJANIOIK = is.read_uint32()?;
                 },
                 88 => {
                     self.CGIGAAKLCKM = is.read_uint32()?;
-                },
-                24 => {
-                    self.GAIEFCFBNPA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for ECDINHEHKOJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.BHKJIFAFHFN);
         if self.GMBDHLCGOBI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GMBDHLCGOBI);
+            my_size += ::protobuf::rt::uint32_size(1, self.GMBDHLCGOBI);
         }
-        if self.FJONJANIOIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FJONJANIOIK);
+        if self.GAIEFCFBNPA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.GAIEFCFBNPA);
         }
         if self.EBENOMJDOOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EBENOMJDOOF);
+            my_size += ::protobuf::rt::uint32_size(8, self.EBENOMJDOOF);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.BHKJIFAFHFN);
+        if self.FJONJANIOIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FJONJANIOIK);
         }
         if self.CGIGAAKLCKM != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.CGIGAAKLCKM);
-        }
-        if self.GAIEFCFBNPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GAIEFCFBNPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for ECDINHEHKOJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.BHKJIFAFHFN)?;
         if self.GMBDHLCGOBI != 0 {
-            os.write_uint32(6, self.GMBDHLCGOBI)?;
+            os.write_uint32(1, self.GMBDHLCGOBI)?;
         }
-        if self.FJONJANIOIK != 0 {
-            os.write_uint32(5, self.FJONJANIOIK)?;
+        if self.GAIEFCFBNPA != 0 {
+            os.write_uint32(7, self.GAIEFCFBNPA)?;
         }
         if self.EBENOMJDOOF != 0 {
-            os.write_uint32(13, self.EBENOMJDOOF)?;
+            os.write_uint32(8, self.EBENOMJDOOF)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.BHKJIFAFHFN)?;
+        if self.FJONJANIOIK != 0 {
+            os.write_uint32(10, self.FJONJANIOIK)?;
         }
         if self.CGIGAAKLCKM != 0 {
             os.write_uint32(11, self.CGIGAAKLCKM)?;
-        }
-        if self.GAIEFCFBNPA != 0 {
-            os.write_uint32(3, self.GAIEFCFBNPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,23 +195,23 @@ impl ::protobuf::Message for ECDINHEHKOJ {
     }
 
     fn clear(&mut self) {
-        self.BHKJIFAFHFN.clear();
         self.GMBDHLCGOBI = 0;
-        self.FJONJANIOIK = 0;
-        self.EBENOMJDOOF = 0;
-        self.CGIGAAKLCKM = 0;
         self.GAIEFCFBNPA = 0;
+        self.EBENOMJDOOF = 0;
+        self.BHKJIFAFHFN.clear();
+        self.FJONJANIOIK = 0;
+        self.CGIGAAKLCKM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECDINHEHKOJ {
         static instance: ECDINHEHKOJ = ECDINHEHKOJ {
-            BHKJIFAFHFN: ::std::vec::Vec::new(),
             GMBDHLCGOBI: 0,
-            FJONJANIOIK: 0,
-            EBENOMJDOOF: 0,
-            CGIGAAKLCKM: 0,
             GAIEFCFBNPA: 0,
+            EBENOMJDOOF: 0,
+            BHKJIFAFHFN: ::std::vec::Vec::new(),
+            FJONJANIOIK: 0,
+            CGIGAAKLCKM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,12 @@ impl ::protobuf::reflect::ProtobufValue for ECDINHEHKOJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECDINHEHKOJ.proto\"\xd9\x01\n\x0bECDINHEHKOJ\x12\x20\n\x0bBHKJIFAF\
-    HFN\x18\x0c\x20\x03(\rR\x0bBHKJIFAFHFN\x12\x20\n\x0bGMBDHLCGOBI\x18\x06\
-    \x20\x01(\rR\x0bGMBDHLCGOBI\x12\x20\n\x0bFJONJANIOIK\x18\x05\x20\x01(\rR\
-    \x0bFJONJANIOIK\x12\x20\n\x0bEBENOMJDOOF\x18\r\x20\x01(\rR\x0bEBENOMJDOO\
-    F\x12\x20\n\x0bCGIGAAKLCKM\x18\x0b\x20\x01(\rR\x0bCGIGAAKLCKM\x12\x20\n\
-    \x0bGAIEFCFBNPA\x18\x03\x20\x01(\rR\x0bGAIEFCFBNPAb\x06proto3\
+    \n\x11ECDINHEHKOJ.proto\"\xd9\x01\n\x0bECDINHEHKOJ\x12\x20\n\x0bGMBDHLCG\
+    OBI\x18\x01\x20\x01(\rR\x0bGMBDHLCGOBI\x12\x20\n\x0bGAIEFCFBNPA\x18\x07\
+    \x20\x01(\rR\x0bGAIEFCFBNPA\x12\x20\n\x0bEBENOMJDOOF\x18\x08\x20\x01(\rR\
+    \x0bEBENOMJDOOF\x12\x20\n\x0bBHKJIFAFHFN\x18\t\x20\x03(\rR\x0bBHKJIFAFHF\
+    N\x12\x20\n\x0bFJONJANIOIK\x18\n\x20\x01(\rR\x0bFJONJANIOIK\x12\x20\n\
+    \x0bCGIGAAKLCKM\x18\x0b\x20\x01(\rR\x0bCGIGAAKLCKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

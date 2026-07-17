@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFHHMGIIHEH {
     // message fields
+    // @@protoc_insertion_point(field:FFHHMGIIHEH.retcode)
+    pub retcode: ::protobuf::EnumOrUnknown<super::AKBCEFGFJCJ::AKBCEFGFJCJ>,
+    // @@protoc_insertion_point(field:FFHHMGIIHEH.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.stt)
     pub stt: ::protobuf::MessageField<super::BattleStatistics::BattleStatistics>,
-    // @@protoc_insertion_point(field:FFHHMGIIHEH.DCLGGMAEMAO)
-    pub DCLGGMAEMAO: ::std::collections::HashMap<::std::string::String, u32>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.IJHANPILBAM)
     pub IJHANPILBAM: ::std::string::String,
+    // @@protoc_insertion_point(field:FFHHMGIIHEH.DCLGGMAEMAO)
+    pub DCLGGMAEMAO: ::std::collections::HashMap<::std::string::String, u32>,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.EAHGEKNLHPN)
     pub EAHGEKNLHPN: u32,
     // @@protoc_insertion_point(field:FFHHMGIIHEH.GNLAPGBAAOO)
     pub GNLAPGBAAOO: u32,
-    // @@protoc_insertion_point(field:FFHHMGIIHEH.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:FFHHMGIIHEH.retcode)
-    pub retcode: ::protobuf::EnumOrUnknown<super::AKBCEFGFJCJ::AKBCEFGFJCJ>,
     // special fields
     // @@protoc_insertion_point(special_field:FFHHMGIIHEH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,30 @@ impl FFHHMGIIHEH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FFHHMGIIHEH| { &m.retcode },
+            |m: &mut FFHHMGIIHEH| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_status",
+            |m: &FFHHMGIIHEH| { &m.end_status },
+            |m: &mut FFHHMGIIHEH| { &mut m.end_status },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleStatistics::BattleStatistics>(
             "stt",
             |m: &FFHHMGIIHEH| { &m.stt },
             |m: &mut FFHHMGIIHEH| { &mut m.stt },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "DCLGGMAEMAO",
-            |m: &FFHHMGIIHEH| { &m.DCLGGMAEMAO },
-            |m: &mut FFHHMGIIHEH| { &mut m.DCLGGMAEMAO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IJHANPILBAM",
             |m: &FFHHMGIIHEH| { &m.IJHANPILBAM },
             |m: &mut FFHHMGIIHEH| { &mut m.IJHANPILBAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "DCLGGMAEMAO",
+            |m: &FFHHMGIIHEH| { &m.DCLGGMAEMAO },
+            |m: &mut FFHHMGIIHEH| { &mut m.DCLGGMAEMAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAHGEKNLHPN",
@@ -85,16 +95,6 @@ impl FFHHMGIIHEH {
             "GNLAPGBAAOO",
             |m: &FFHHMGIIHEH| { &m.GNLAPGBAAOO },
             |m: &mut FFHHMGIIHEH| { &mut m.GNLAPGBAAOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &FFHHMGIIHEH| { &m.end_status },
-            |m: &mut FFHHMGIIHEH| { &mut m.end_status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FFHHMGIIHEH| { &m.retcode },
-            |m: &mut FFHHMGIIHEH| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFHHMGIIHEH>(
             "FFHHMGIIHEH",
@@ -114,8 +114,17 @@ impl ::protobuf::Message for FFHHMGIIHEH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.retcode = is.read_enum_or_unknown()?;
+                },
+                16 => {
+                    self.end_status = is.read_enum_or_unknown()?;
+                },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                },
+                34 => {
+                    self.IJHANPILBAM = is.read_string()?;
                 },
                 42 => {
                     let len = is.read_raw_varint32()?;
@@ -132,20 +141,11 @@ impl ::protobuf::Message for FFHHMGIIHEH {
                     is.pop_limit(old_limit);
                     self.DCLGGMAEMAO.insert(key, value);
                 },
-                34 => {
-                    self.IJHANPILBAM = is.read_string()?;
-                },
                 48 => {
                     self.EAHGEKNLHPN = is.read_uint32()?;
                 },
                 56 => {
                     self.GNLAPGBAAOO = is.read_uint32()?;
-                },
-                16 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.retcode = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,9 +159,18 @@ impl ::protobuf::Message for FFHHMGIIHEH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK) {
+            my_size += ::protobuf::rt::int32_size(1, self.retcode.value());
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(2, self.end_status.value());
+        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.IJHANPILBAM.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.IJHANPILBAM);
         }
         for (k, v) in &self.DCLGGMAEMAO {
             let mut entry_size = 0;
@@ -169,20 +178,11 @@ impl ::protobuf::Message for FFHHMGIIHEH {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if !self.IJHANPILBAM.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.IJHANPILBAM);
-        }
         if self.EAHGEKNLHPN != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.EAHGEKNLHPN);
         }
         if self.GNLAPGBAAOO != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.GNLAPGBAAOO);
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.end_status.value());
-        }
-        if self.retcode != ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK) {
-            my_size += ::protobuf::rt::int32_size(1, self.retcode.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,8 +190,17 @@ impl ::protobuf::Message for FFHHMGIIHEH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.retcode))?;
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        }
         if let Some(v) = self.stt.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if !self.IJHANPILBAM.is_empty() {
+            os.write_string(4, &self.IJHANPILBAM)?;
         }
         for (k, v) in &self.DCLGGMAEMAO {
             let mut entry_size = 0;
@@ -202,20 +211,11 @@ impl ::protobuf::Message for FFHHMGIIHEH {
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
-        if !self.IJHANPILBAM.is_empty() {
-            os.write_string(4, &self.IJHANPILBAM)?;
-        }
         if self.EAHGEKNLHPN != 0 {
             os.write_uint32(6, self.EAHGEKNLHPN)?;
         }
         if self.GNLAPGBAAOO != 0 {
             os.write_uint32(7, self.GNLAPGBAAOO)?;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
-        }
-        if self.retcode != ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.retcode))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -234,13 +234,13 @@ impl ::protobuf::Message for FFHHMGIIHEH {
     }
 
     fn clear(&mut self) {
+        self.retcode = ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK);
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
         self.stt.clear();
-        self.DCLGGMAEMAO.clear();
         self.IJHANPILBAM.clear();
+        self.DCLGGMAEMAO.clear();
         self.EAHGEKNLHPN = 0;
         self.GNLAPGBAAOO = 0;
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.retcode = ::protobuf::EnumOrUnknown::new(super::AKBCEFGFJCJ::AKBCEFGFJCJ::AKBCEFGFJCJ_PPIGKPCFNGK);
         self.special_fields.clear();
     }
 
@@ -269,14 +269,14 @@ impl ::protobuf::reflect::ProtobufValue for FFHHMGIIHEH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFHHMGIIHEH.proto\x1a\x11AKBCEFGFJCJ.proto\x1a\x15BattleEndStatus.\
-    proto\x1a\x16BattleStatistics.proto\"\xf2\x02\n\x0bFFHHMGIIHEH\x12#\n\
-    \x03stt\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12?\n\x0bDCL\
-    GGMAEMAO\x18\x05\x20\x03(\x0b2\x1d.FFHHMGIIHEH.DCLGGMAEMAOEntryR\x0bDCLG\
-    GMAEMAO\x12\x20\n\x0bIJHANPILBAM\x18\x04\x20\x01(\tR\x0bIJHANPILBAM\x12\
+    proto\x1a\x16BattleStatistics.proto\"\xf2\x02\n\x0bFFHHMGIIHEH\x12&\n\
+    \x07retcode\x18\x01\x20\x01(\x0e2\x0c.AKBCEFGFJCJR\x07retcode\x12/\n\nen\
+    d_status\x18\x02\x20\x01(\x0e2\x10.BattleEndStatusR\tendStatus\x12#\n\
+    \x03stt\x18\x03\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12\x20\n\x0b\
+    IJHANPILBAM\x18\x04\x20\x01(\tR\x0bIJHANPILBAM\x12?\n\x0bDCLGGMAEMAO\x18\
+    \x05\x20\x03(\x0b2\x1d.FFHHMGIIHEH.DCLGGMAEMAOEntryR\x0bDCLGGMAEMAO\x12\
     \x20\n\x0bEAHGEKNLHPN\x18\x06\x20\x01(\rR\x0bEAHGEKNLHPN\x12\x20\n\x0bGN\
-    LAPGBAAOO\x18\x07\x20\x01(\rR\x0bGNLAPGBAAOO\x12/\n\nend_status\x18\x02\
-    \x20\x01(\x0e2\x10.BattleEndStatusR\tendStatus\x12&\n\x07retcode\x18\x01\
-    \x20\x01(\x0e2\x0c.AKBCEFGFJCJR\x07retcode\x1a>\n\x10DCLGGMAEMAOEntry\
+    LAPGBAAOO\x18\x07\x20\x01(\rR\x0bGNLAPGBAAOO\x1a>\n\x10DCLGGMAEMAOEntry\
     \x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\
     \x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

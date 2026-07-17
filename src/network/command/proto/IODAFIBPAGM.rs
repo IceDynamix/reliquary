@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IODAFIBPAGM {
     // message fields
-    // @@protoc_insertion_point(field:IODAFIBPAGM.JNGNGMJCAAI)
-    pub JNGNGMJCAAI: ::std::vec::Vec<super::JOMEGNGJKJK::JOMEGNGJKJK>,
-    // @@protoc_insertion_point(field:IODAFIBPAGM.map_id)
-    pub map_id: u32,
     // @@protoc_insertion_point(field:IODAFIBPAGM.cost_time)
     pub cost_time: u32,
+    // @@protoc_insertion_point(field:IODAFIBPAGM.map_id)
+    pub map_id: u32,
+    // @@protoc_insertion_point(field:IODAFIBPAGM.JNGNGMJCAAI)
+    pub JNGNGMJCAAI: ::std::vec::Vec<super::JOMEGNGJKJK::JOMEGNGJKJK>,
     // special fields
     // @@protoc_insertion_point(special_field:IODAFIBPAGM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl IODAFIBPAGM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JNGNGMJCAAI",
-            |m: &IODAFIBPAGM| { &m.JNGNGMJCAAI },
-            |m: &mut IODAFIBPAGM| { &mut m.JNGNGMJCAAI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cost_time",
+            |m: &IODAFIBPAGM| { &m.cost_time },
+            |m: &mut IODAFIBPAGM| { &mut m.cost_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &IODAFIBPAGM| { &m.map_id },
             |m: &mut IODAFIBPAGM| { &mut m.map_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cost_time",
-            |m: &IODAFIBPAGM| { &m.cost_time },
-            |m: &mut IODAFIBPAGM| { &mut m.cost_time },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JNGNGMJCAAI",
+            |m: &IODAFIBPAGM| { &m.JNGNGMJCAAI },
+            |m: &mut IODAFIBPAGM| { &mut m.JNGNGMJCAAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IODAFIBPAGM>(
             "IODAFIBPAGM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IODAFIBPAGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.JNGNGMJCAAI.push(is.read_message()?);
+                48 => {
+                    self.cost_time = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.map_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.cost_time = is.read_uint32()?;
+                114 => {
+                    self.JNGNGMJCAAI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for IODAFIBPAGM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.cost_time != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.cost_time);
+        }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.map_id);
+        }
         for value in &self.JNGNGMJCAAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.map_id);
-        }
-        if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cost_time);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JNGNGMJCAAI {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.map_id != 0 {
-            os.write_uint32(9, self.map_id)?;
-        }
         if self.cost_time != 0 {
-            os.write_uint32(14, self.cost_time)?;
+            os.write_uint32(6, self.cost_time)?;
         }
+        if self.map_id != 0 {
+            os.write_uint32(13, self.map_id)?;
+        }
+        for v in &self.JNGNGMJCAAI {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for IODAFIBPAGM {
     }
 
     fn clear(&mut self) {
-        self.JNGNGMJCAAI.clear();
-        self.map_id = 0;
         self.cost_time = 0;
+        self.map_id = 0;
+        self.JNGNGMJCAAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IODAFIBPAGM {
         static instance: IODAFIBPAGM = IODAFIBPAGM {
-            JNGNGMJCAAI: ::std::vec::Vec::new(),
-            map_id: 0,
             cost_time: 0,
+            map_id: 0,
+            JNGNGMJCAAI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for IODAFIBPAGM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IODAFIBPAGM.proto\x1a\x11JOMEGNGJKJK.proto\"q\n\x0bIODAFIBPAGM\x12\
-    .\n\x0bJNGNGMJCAAI\x18\x06\x20\x03(\x0b2\x0c.JOMEGNGJKJKR\x0bJNGNGMJCAAI\
-    \x12\x15\n\x06map_id\x18\t\x20\x01(\rR\x05mapId\x12\x1b\n\tcost_time\x18\
-    \x0e\x20\x01(\rR\x08costTimeb\x06proto3\
+    \x1b\n\tcost_time\x18\x06\x20\x01(\rR\x08costTime\x12\x15\n\x06map_id\
+    \x18\r\x20\x01(\rR\x05mapId\x12.\n\x0bJNGNGMJCAAI\x18\x0e\x20\x03(\x0b2\
+    \x0c.JOMEGNGJKJKR\x0bJNGNGMJCAAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MNIAIAGFEBP {
     // message fields
-    // @@protoc_insertion_point(field:MNIAIAGFEBP.DKKAEHDLECP)
-    pub DKKAEHDLECP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MNIAIAGFEBP.FJKDOIDEBJC)
     pub FJKDOIDEBJC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MNIAIAGFEBP.DKKAEHDLECP)
+    pub DKKAEHDLECP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MNIAIAGFEBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MNIAIAGFEBP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKKAEHDLECP",
-            |m: &MNIAIAGFEBP| { &m.DKKAEHDLECP },
-            |m: &mut MNIAIAGFEBP| { &mut m.DKKAEHDLECP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FJKDOIDEBJC",
             |m: &MNIAIAGFEBP| { &m.FJKDOIDEBJC },
             |m: &mut MNIAIAGFEBP| { &mut m.FJKDOIDEBJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DKKAEHDLECP",
+            |m: &MNIAIAGFEBP| { &m.DKKAEHDLECP },
+            |m: &mut MNIAIAGFEBP| { &mut m.DKKAEHDLECP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MNIAIAGFEBP>(
             "MNIAIAGFEBP",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for MNIAIAGFEBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DKKAEHDLECP)?;
-                },
-                16 => {
-                    self.DKKAEHDLECP.push(is.read_uint32()?);
-                },
                 10 => {
                     is.read_repeated_packed_uint32_into(&mut self.FJKDOIDEBJC)?;
                 },
                 8 => {
                     self.FJKDOIDEBJC.push(is.read_uint32()?);
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DKKAEHDLECP)?;
+                },
+                16 => {
+                    self.DKKAEHDLECP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for MNIAIAGFEBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DKKAEHDLECP);
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.FJKDOIDEBJC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DKKAEHDLECP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.DKKAEHDLECP)?;
         os.write_repeated_packed_uint32(1, &self.FJKDOIDEBJC)?;
+        os.write_repeated_packed_uint32(2, &self.DKKAEHDLECP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for MNIAIAGFEBP {
     }
 
     fn clear(&mut self) {
-        self.DKKAEHDLECP.clear();
         self.FJKDOIDEBJC.clear();
+        self.DKKAEHDLECP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MNIAIAGFEBP {
         static instance: MNIAIAGFEBP = MNIAIAGFEBP {
-            DKKAEHDLECP: ::std::vec::Vec::new(),
             FJKDOIDEBJC: ::std::vec::Vec::new(),
+            DKKAEHDLECP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for MNIAIAGFEBP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MNIAIAGFEBP.proto\"Q\n\x0bMNIAIAGFEBP\x12\x20\n\x0bDKKAEHDLECP\x18\
-    \x02\x20\x03(\rR\x0bDKKAEHDLECP\x12\x20\n\x0bFJKDOIDEBJC\x18\x01\x20\x03\
-    (\rR\x0bFJKDOIDEBJCb\x06proto3\
+    \n\x11MNIAIAGFEBP.proto\"Q\n\x0bMNIAIAGFEBP\x12\x20\n\x0bFJKDOIDEBJC\x18\
+    \x01\x20\x03(\rR\x0bFJKDOIDEBJC\x12\x20\n\x0bDKKAEHDLECP\x18\x02\x20\x03\
+    (\rR\x0bDKKAEHDLECPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

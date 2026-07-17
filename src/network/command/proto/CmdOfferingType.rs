@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdOfferingType {
     // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_NLCDGIPGFDJ)
     LIPONPBGOPN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_ANEEKCGOAMC)
-    LIPONPBGOPN_ANEEKCGOAMC = 6936,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_FLPIHJLMCDM)
-    LIPONPBGOPN_FLPIHJLMCDM = 6940,
+    LIPONPBGOPN_FLPIHJLMCDM = 6932,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_HGKELIFKFDP)
+    LIPONPBGOPN_HGKELIFKFDP = 6928,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_FKLKKDCLGEN)
+    LIPONPBGOPN_FKLKKDCLGEN = 6925,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_ANEEKCGOAMC)
+    LIPONPBGOPN_ANEEKCGOAMC = 6923,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_ABEHDHJCDIL)
-    LIPONPBGOPN_ABEHDHJCDIL = 6939,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_FEFDACJCFIL)
-    LIPONPBGOPN_FEFDACJCFIL = 6922,
+    LIPONPBGOPN_ABEHDHJCDIL = 6937,
     // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_HMNDKFKCGNL)
     LIPONPBGOPN_HMNDKFKCGNL = 6938,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_HGKELIFKFDP)
-    LIPONPBGOPN_HGKELIFKFDP = 6926,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_FKLKKDCLGEN)
-    LIPONPBGOPN_FKLKKDCLGEN = 6932,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.LIPONPBGOPN_FEFDACJCFIL)
+    LIPONPBGOPN_FEFDACJCFIL = 6922,
 }
 
 impl ::protobuf::Enum for CmdOfferingType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdOfferingType> {
         match value {
             0 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_NLCDGIPGFDJ),
-            6936 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC),
-            6940 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM),
-            6939 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL),
-            6922 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL),
+            6932 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM),
+            6928 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP),
+            6925 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN),
+            6923 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC),
+            6937 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL),
             6938 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL),
-            6926 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP),
-            6932 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN),
+            6922 => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdOfferingType {
     fn from_str(str: &str) -> ::std::option::Option<CmdOfferingType> {
         match str {
             "LIPONPBGOPN_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_NLCDGIPGFDJ),
-            "LIPONPBGOPN_ANEEKCGOAMC" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC),
             "LIPONPBGOPN_FLPIHJLMCDM" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM),
-            "LIPONPBGOPN_ABEHDHJCDIL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL),
-            "LIPONPBGOPN_FEFDACJCFIL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL),
-            "LIPONPBGOPN_HMNDKFKCGNL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL),
             "LIPONPBGOPN_HGKELIFKFDP" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP),
             "LIPONPBGOPN_FKLKKDCLGEN" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN),
+            "LIPONPBGOPN_ANEEKCGOAMC" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC),
+            "LIPONPBGOPN_ABEHDHJCDIL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL),
+            "LIPONPBGOPN_HMNDKFKCGNL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL),
+            "LIPONPBGOPN_FEFDACJCFIL" => ::std::option::Option::Some(CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdOfferingType] = &[
         CmdOfferingType::LIPONPBGOPN_NLCDGIPGFDJ,
-        CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC,
         CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM,
-        CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL,
-        CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL,
-        CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL,
         CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP,
         CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN,
+        CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC,
+        CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL,
+        CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL,
+        CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdOfferingType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdOfferingType::LIPONPBGOPN_NLCDGIPGFDJ => 0,
-            CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC => 1,
-            CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM => 2,
-            CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL => 3,
-            CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL => 4,
-            CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL => 5,
-            CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP => 6,
-            CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN => 7,
+            CmdOfferingType::LIPONPBGOPN_FLPIHJLMCDM => 1,
+            CmdOfferingType::LIPONPBGOPN_HGKELIFKFDP => 2,
+            CmdOfferingType::LIPONPBGOPN_FKLKKDCLGEN => 3,
+            CmdOfferingType::LIPONPBGOPN_ANEEKCGOAMC => 4,
+            CmdOfferingType::LIPONPBGOPN_ABEHDHJCDIL => 5,
+            CmdOfferingType::LIPONPBGOPN_HMNDKFKCGNL => 6,
+            CmdOfferingType::LIPONPBGOPN_FEFDACJCFIL => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,11 +127,11 @@ impl CmdOfferingType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdOfferingType.proto*\x80\x02\n\x0fCmdOfferingType\x12\x1b\n\x17L\
-    IPONPBGOPN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIPONPBGOPN_ANEEKCGOAMC\x10\
-    \x986\x12\x1c\n\x17LIPONPBGOPN_FLPIHJLMCDM\x10\x9c6\x12\x1c\n\x17LIPONPB\
-    GOPN_ABEHDHJCDIL\x10\x9b6\x12\x1c\n\x17LIPONPBGOPN_FEFDACJCFIL\x10\x8a6\
-    \x12\x1c\n\x17LIPONPBGOPN_HMNDKFKCGNL\x10\x9a6\x12\x1c\n\x17LIPONPBGOPN_\
-    HGKELIFKFDP\x10\x8e6\x12\x1c\n\x17LIPONPBGOPN_FKLKKDCLGEN\x10\x946b\x06p\
+    IPONPBGOPN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIPONPBGOPN_FLPIHJLMCDM\x10\
+    \x946\x12\x1c\n\x17LIPONPBGOPN_HGKELIFKFDP\x10\x906\x12\x1c\n\x17LIPONPB\
+    GOPN_FKLKKDCLGEN\x10\x8d6\x12\x1c\n\x17LIPONPBGOPN_ANEEKCGOAMC\x10\x8b6\
+    \x12\x1c\n\x17LIPONPBGOPN_ABEHDHJCDIL\x10\x996\x12\x1c\n\x17LIPONPBGOPN_\
+    HMNDKFKCGNL\x10\x9a6\x12\x1c\n\x17LIPONPBGOPN_FEFDACJCFIL\x10\x8a6b\x06p\
     roto3\
 ";
 

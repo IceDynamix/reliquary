@@ -72,7 +72,7 @@ impl ::protobuf::Message for NONKABLNHEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                48 => {
                     self.PGMABEHJJAB = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for NONKABLNHEM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PGMABEHJJAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PGMABEHJJAB);
+            my_size += ::protobuf::rt::uint32_size(6, self.PGMABEHJJAB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for NONKABLNHEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PGMABEHJJAB != 0 {
-            os.write_uint32(12, self.PGMABEHJJAB)?;
+            os.write_uint32(6, self.PGMABEHJJAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for NONKABLNHEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NONKABLNHEM.proto\"/\n\x0bNONKABLNHEM\x12\x20\n\x0bPGMABEHJJAB\x18\
-    \x0c\x20\x01(\rR\x0bPGMABEHJJABb\x06proto3\
+    \x06\x20\x01(\rR\x0bPGMABEHJJABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

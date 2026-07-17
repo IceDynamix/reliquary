@@ -79,10 +79,10 @@ impl ::protobuf::Message for PICHIFNMBNO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                80 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                6954 => {
+                1146 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GFGGBLEGKGJ)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PICHIFNMBNO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
         }
         if let Some(v) = self.GFGGBLEGKGJ.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PICHIFNMBNO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(13, self.unique_id)?;
+            os.write_uint32(10, self.unique_id)?;
         }
         if let Some(v) = self.GFGGBLEGKGJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(869, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(143, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PICHIFNMBNO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PICHIFNMBNO.proto\x1a\x11LFIONDMGCOP.proto\"[\n\x0bPICHIFNMBNO\x12\
-    \x1b\n\tunique_id\x18\r\x20\x01(\rR\x08uniqueId\x12/\n\x0bGFGGBLEGKGJ\
-    \x18\xe5\x06\x20\x01(\x0b2\x0c.LFIONDMGCOPR\x0bGFGGBLEGKGJb\x06proto3\
+    \x1b\n\tunique_id\x18\n\x20\x01(\rR\x08uniqueId\x12/\n\x0bGFGGBLEGKGJ\
+    \x18\x8f\x01\x20\x01(\x0b2\x0c.LFIONDMGCOPR\x0bGFGGBLEGKGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

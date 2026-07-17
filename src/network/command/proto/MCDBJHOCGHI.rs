@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCDBJHOCGHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.trait_id = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.BJDOINAHDLN = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MCDBJHOCGHI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.trait_id);
         }
         if self.BJDOINAHDLN != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MCDBJHOCGHI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.trait_id != 0 {
-            os.write_uint32(1, self.trait_id)?;
+            os.write_uint32(9, self.trait_id)?;
         }
         if self.BJDOINAHDLN != false {
-            os.write_bool(4, self.BJDOINAHDLN)?;
+            os.write_bool(11, self.BJDOINAHDLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MCDBJHOCGHI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MCDBJHOCGHI.proto\"J\n\x0bMCDBJHOCGHI\x12\x19\n\x08trait_id\x18\
-    \x01\x20\x01(\rR\x07traitId\x12\x20\n\x0bBJDOINAHDLN\x18\x04\x20\x01(\
-    \x08R\x0bBJDOINAHDLNb\x06proto3\
+    \n\x11MCDBJHOCGHI.proto\"J\n\x0bMCDBJHOCGHI\x12\x19\n\x08trait_id\x18\t\
+    \x20\x01(\rR\x07traitId\x12\x20\n\x0bBJDOINAHDLN\x18\x0b\x20\x01(\x08R\
+    \x0bBJDOINAHDLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

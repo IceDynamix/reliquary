@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDDFDNHFCIL {
     // message fields
-    // @@protoc_insertion_point(field:MDDFDNHFCIL.IAOBHCOOMJP)
-    pub IAOBHCOOMJP: ::protobuf::MessageField<super::GGHOBPBFFOB::GGHOBPBFFOB>,
     // @@protoc_insertion_point(field:MDDFDNHFCIL.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MDDFDNHFCIL.game_data)
+    pub game_data: ::protobuf::MessageField<super::GGHOBPBFFOB::GGHOBPBFFOB>,
     // special fields
     // @@protoc_insertion_point(special_field:MDDFDNHFCIL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MDDFDNHFCIL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGHOBPBFFOB::GGHOBPBFFOB>(
-            "IAOBHCOOMJP",
-            |m: &MDDFDNHFCIL| { &m.IAOBHCOOMJP },
-            |m: &mut MDDFDNHFCIL| { &mut m.IAOBHCOOMJP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MDDFDNHFCIL| { &m.retcode },
             |m: &mut MDDFDNHFCIL| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GGHOBPBFFOB::GGHOBPBFFOB>(
+            "game_data",
+            |m: &MDDFDNHFCIL| { &m.game_data },
+            |m: &mut MDDFDNHFCIL| { &mut m.game_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MDDFDNHFCIL>(
             "MDDFDNHFCIL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MDDFDNHFCIL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAOBHCOOMJP)?;
-                },
-                24 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_data)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MDDFDNHFCIL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if let Some(v) = self.game_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MDDFDNHFCIL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IAOBHCOOMJP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if let Some(v) = self.game_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MDDFDNHFCIL {
     }
 
     fn clear(&mut self) {
-        self.IAOBHCOOMJP.clear();
         self.retcode = 0;
+        self.game_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDDFDNHFCIL {
         static instance: MDDFDNHFCIL = MDDFDNHFCIL {
-            IAOBHCOOMJP: ::protobuf::MessageField::none(),
             retcode: 0,
+            game_data: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MDDFDNHFCIL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MDDFDNHFCIL.proto\x1a\x11GGHOBPBFFOB.proto\"W\n\x0bMDDFDNHFCIL\x12\
-    .\n\x0bIAOBHCOOMJP\x18\x0c\x20\x01(\x0b2\x0c.GGHOBPBFFOBR\x0bIAOBHCOOMJP\
-    \x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x11MDDFDNHFCIL.proto\x1a\x11GGHOBPBFFOB.proto\"R\n\x0bMDDFDNHFCIL\x12\
+    \x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12)\n\tgame_data\x18\t\
+    \x20\x01(\x0b2\x0c.GGHOBPBFFOBR\x08gameDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

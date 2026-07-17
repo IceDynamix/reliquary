@@ -30,14 +30,14 @@ pub struct JPKJNNKMIGJ {
     // message fields
     // @@protoc_insertion_point(field:JPKJNNKMIGJ.GDLJHBLJODK)
     pub GDLJHBLJODK: u32,
-    // @@protoc_insertion_point(field:JPKJNNKMIGJ.IBNLKOLLPJH)
-    pub IBNLKOLLPJH: u32,
-    // @@protoc_insertion_point(field:JPKJNNKMIGJ.CJKMCOMGJCL)
-    pub CJKMCOMGJCL: f64,
     // @@protoc_insertion_point(field:JPKJNNKMIGJ.DFBHOJANGCF)
     pub DFBHOJANGCF: u32,
+    // @@protoc_insertion_point(field:JPKJNNKMIGJ.CJKMCOMGJCL)
+    pub CJKMCOMGJCL: f64,
     // @@protoc_insertion_point(field:JPKJNNKMIGJ.wave)
     pub wave: u32,
+    // @@protoc_insertion_point(field:JPKJNNKMIGJ.IBNLKOLLPJH)
+    pub IBNLKOLLPJH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPKJNNKMIGJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,9 @@ impl JPKJNNKMIGJ {
             |m: &mut JPKJNNKMIGJ| { &mut m.GDLJHBLJODK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBNLKOLLPJH",
-            |m: &JPKJNNKMIGJ| { &m.IBNLKOLLPJH },
-            |m: &mut JPKJNNKMIGJ| { &mut m.IBNLKOLLPJH },
+            "DFBHOJANGCF",
+            |m: &JPKJNNKMIGJ| { &m.DFBHOJANGCF },
+            |m: &mut JPKJNNKMIGJ| { &mut m.DFBHOJANGCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CJKMCOMGJCL",
@@ -73,14 +73,14 @@ impl JPKJNNKMIGJ {
             |m: &mut JPKJNNKMIGJ| { &mut m.CJKMCOMGJCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DFBHOJANGCF",
-            |m: &JPKJNNKMIGJ| { &m.DFBHOJANGCF },
-            |m: &mut JPKJNNKMIGJ| { &mut m.DFBHOJANGCF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "wave",
             |m: &JPKJNNKMIGJ| { &m.wave },
             |m: &mut JPKJNNKMIGJ| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBNLKOLLPJH",
+            |m: &JPKJNNKMIGJ| { &m.IBNLKOLLPJH },
+            |m: &mut JPKJNNKMIGJ| { &mut m.IBNLKOLLPJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPKJNNKMIGJ>(
             "JPKJNNKMIGJ",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for JPKJNNKMIGJ {
                 8 => {
                     self.GDLJHBLJODK = is.read_uint32()?;
                 },
-                40 => {
-                    self.IBNLKOLLPJH = is.read_uint32()?;
+                16 => {
+                    self.DFBHOJANGCF = is.read_uint32()?;
                 },
                 25 => {
                     self.CJKMCOMGJCL = is.read_double()?;
                 },
-                16 => {
-                    self.DFBHOJANGCF = is.read_uint32()?;
-                },
                 32 => {
                     self.wave = is.read_uint32()?;
+                },
+                40 => {
+                    self.IBNLKOLLPJH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for JPKJNNKMIGJ {
         if self.GDLJHBLJODK != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.GDLJHBLJODK);
         }
-        if self.IBNLKOLLPJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IBNLKOLLPJH);
+        if self.DFBHOJANGCF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DFBHOJANGCF);
         }
         if self.CJKMCOMGJCL != 0. {
             my_size += 1 + 8;
         }
-        if self.DFBHOJANGCF != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DFBHOJANGCF);
-        }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.wave);
+        }
+        if self.IBNLKOLLPJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IBNLKOLLPJH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,17 +151,17 @@ impl ::protobuf::Message for JPKJNNKMIGJ {
         if self.GDLJHBLJODK != 0 {
             os.write_uint32(1, self.GDLJHBLJODK)?;
         }
-        if self.IBNLKOLLPJH != 0 {
-            os.write_uint32(5, self.IBNLKOLLPJH)?;
+        if self.DFBHOJANGCF != 0 {
+            os.write_uint32(2, self.DFBHOJANGCF)?;
         }
         if self.CJKMCOMGJCL != 0. {
             os.write_double(3, self.CJKMCOMGJCL)?;
         }
-        if self.DFBHOJANGCF != 0 {
-            os.write_uint32(2, self.DFBHOJANGCF)?;
-        }
         if self.wave != 0 {
             os.write_uint32(4, self.wave)?;
+        }
+        if self.IBNLKOLLPJH != 0 {
+            os.write_uint32(5, self.IBNLKOLLPJH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for JPKJNNKMIGJ {
 
     fn clear(&mut self) {
         self.GDLJHBLJODK = 0;
-        self.IBNLKOLLPJH = 0;
-        self.CJKMCOMGJCL = 0.;
         self.DFBHOJANGCF = 0;
+        self.CJKMCOMGJCL = 0.;
         self.wave = 0;
+        self.IBNLKOLLPJH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPKJNNKMIGJ {
         static instance: JPKJNNKMIGJ = JPKJNNKMIGJ {
             GDLJHBLJODK: 0,
-            IBNLKOLLPJH: 0,
-            CJKMCOMGJCL: 0.,
             DFBHOJANGCF: 0,
+            CJKMCOMGJCL: 0.,
             wave: 0,
+            IBNLKOLLPJH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for JPKJNNKMIGJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPKJNNKMIGJ.proto\"\xa9\x01\n\x0bJPKJNNKMIGJ\x12\x20\n\x0bGDLJHBLJ\
-    ODK\x18\x01\x20\x01(\rR\x0bGDLJHBLJODK\x12\x20\n\x0bIBNLKOLLPJH\x18\x05\
-    \x20\x01(\rR\x0bIBNLKOLLPJH\x12\x20\n\x0bCJKMCOMGJCL\x18\x03\x20\x01(\
-    \x01R\x0bCJKMCOMGJCL\x12\x20\n\x0bDFBHOJANGCF\x18\x02\x20\x01(\rR\x0bDFB\
-    HOJANGCF\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04waveb\x06proto3\
+    ODK\x18\x01\x20\x01(\rR\x0bGDLJHBLJODK\x12\x20\n\x0bDFBHOJANGCF\x18\x02\
+    \x20\x01(\rR\x0bDFBHOJANGCF\x12\x20\n\x0bCJKMCOMGJCL\x18\x03\x20\x01(\
+    \x01R\x0bCJKMCOMGJCL\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04wave\x12\
+    \x20\n\x0bIBNLKOLLPJH\x18\x05\x20\x01(\rR\x0bIBNLKOLLPJHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

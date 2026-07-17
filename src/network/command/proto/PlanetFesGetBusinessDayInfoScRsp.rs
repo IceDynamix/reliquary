@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOLCNGAKAMG)?;
                 },
-                56 => {
+                112 => {
                     self.NACEMPJFKAH = is.read_int64()?;
                 },
-                80 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.NACEMPJFKAH != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.NACEMPJFKAH);
+            my_size += ::protobuf::rt::int64_size(14, self.NACEMPJFKAH);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlanetFesGetBusinessDayInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BOLCNGAKAMG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.NACEMPJFKAH != 0 {
-            os.write_int64(7, self.NACEMPJFKAH)?;
+            os.write_int64(14, self.NACEMPJFKAH)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetBusinessDayInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlanetFesGetBusinessDayInfoScRsp.proto\x1a\x11PLPDNKNJBAA.proto\"\x8e\
-    \x01\n\x20PlanetFesGetBusinessDayInfoScRsp\x12.\n\x0bBOLCNGAKAMG\x18\r\
+    \x01\n\x20PlanetFesGetBusinessDayInfoScRsp\x12.\n\x0bBOLCNGAKAMG\x18\n\
     \x20\x01(\x0b2\x0c.PLPDNKNJBAAR\x0bBOLCNGAKAMG\x12\x20\n\x0bNACEMPJFKAH\
-    \x18\x07\x20\x01(\x03R\x0bNACEMPJFKAH\x12\x18\n\x07retcode\x18\n\x20\x01\
-    (\rR\x07retcodeb\x06proto3\
+    \x18\x0e\x20\x01(\x03R\x0bNACEMPJFKAH\x12\x18\n\x07retcode\x18\x0f\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

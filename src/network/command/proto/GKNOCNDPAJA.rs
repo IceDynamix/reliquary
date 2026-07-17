@@ -30,10 +30,10 @@ pub struct GKNOCNDPAJA {
     // message fields
     // @@protoc_insertion_point(field:GKNOCNDPAJA.IEPAPOPIFHH)
     pub IEPAPOPIFHH: u64,
+    // @@protoc_insertion_point(field:GKNOCNDPAJA.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:GKNOCNDPAJA.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:GKNOCNDPAJA.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GKNOCNDPAJA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GKNOCNDPAJA {
             |m: &mut GKNOCNDPAJA| { &mut m.IEPAPOPIFHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_level",
+            |m: &GKNOCNDPAJA| { &m.max_level },
+            |m: &mut GKNOCNDPAJA| { &mut m.max_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &GKNOCNDPAJA| { &m.level },
             |m: &mut GKNOCNDPAJA| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &GKNOCNDPAJA| { &m.HCBADDHNIDG },
-            |m: &mut GKNOCNDPAJA| { &mut m.HCBADDHNIDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKNOCNDPAJA>(
             "GKNOCNDPAJA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GKNOCNDPAJA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.IEPAPOPIFHH = is.read_uint64()?;
                 },
-                96 => {
-                    self.level = is.read_uint32()?;
+                56 => {
+                    self.max_level = is.read_uint32()?;
                 },
-                104 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
+                80 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GKNOCNDPAJA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IEPAPOPIFHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.IEPAPOPIFHH);
+            my_size += ::protobuf::rt::uint64_size(3, self.IEPAPOPIFHH);
+        }
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.max_level);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
-        }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GKNOCNDPAJA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IEPAPOPIFHH != 0 {
-            os.write_uint64(6, self.IEPAPOPIFHH)?;
+            os.write_uint64(3, self.IEPAPOPIFHH)?;
+        }
+        if self.max_level != 0 {
+            os.write_uint32(7, self.max_level)?;
         }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
-        }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(13, self.HCBADDHNIDG)?;
+            os.write_uint32(10, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GKNOCNDPAJA {
 
     fn clear(&mut self) {
         self.IEPAPOPIFHH = 0;
+        self.max_level = 0;
         self.level = 0;
-        self.HCBADDHNIDG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKNOCNDPAJA {
         static instance: GKNOCNDPAJA = GKNOCNDPAJA {
             IEPAPOPIFHH: 0,
+            max_level: 0,
             level: 0,
-            HCBADDHNIDG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GKNOCNDPAJA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKNOCNDPAJA.proto\"g\n\x0bGKNOCNDPAJA\x12\x20\n\x0bIEPAPOPIFHH\x18\
-    \x06\x20\x01(\x04R\x0bIEPAPOPIFHH\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\
-    \x05level\x12\x20\n\x0bHCBADDHNIDG\x18\r\x20\x01(\rR\x0bHCBADDHNIDGb\x06\
-    proto3\
+    \n\x11GKNOCNDPAJA.proto\"b\n\x0bGKNOCNDPAJA\x12\x20\n\x0bIEPAPOPIFHH\x18\
+    \x03\x20\x01(\x04R\x0bIEPAPOPIFHH\x12\x1b\n\tmax_level\x18\x07\x20\x01(\
+    \rR\x08maxLevel\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

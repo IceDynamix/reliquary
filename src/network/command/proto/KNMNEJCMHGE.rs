@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNMNEJCMHGE {
     // message fields
-    // @@protoc_insertion_point(field:KNMNEJCMHGE.MNLINFEODPJ)
-    pub MNLINFEODPJ: i32,
     // @@protoc_insertion_point(field:KNMNEJCMHGE.GMPKBKLGDMA)
     pub GMPKBKLGDMA: f32,
+    // @@protoc_insertion_point(field:KNMNEJCMHGE.MNLINFEODPJ)
+    pub MNLINFEODPJ: i32,
     // special fields
     // @@protoc_insertion_point(special_field:KNMNEJCMHGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KNMNEJCMHGE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNLINFEODPJ",
-            |m: &KNMNEJCMHGE| { &m.MNLINFEODPJ },
-            |m: &mut KNMNEJCMHGE| { &mut m.MNLINFEODPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMPKBKLGDMA",
             |m: &KNMNEJCMHGE| { &m.GMPKBKLGDMA },
             |m: &mut KNMNEJCMHGE| { &mut m.GMPKBKLGDMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MNLINFEODPJ",
+            |m: &KNMNEJCMHGE| { &m.MNLINFEODPJ },
+            |m: &mut KNMNEJCMHGE| { &mut m.MNLINFEODPJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNMNEJCMHGE>(
             "KNMNEJCMHGE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KNMNEJCMHGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MNLINFEODPJ = is.read_int32()?;
-                },
-                77 => {
+                101 => {
                     self.GMPKBKLGDMA = is.read_float()?;
+                },
+                112 => {
+                    self.MNLINFEODPJ = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KNMNEJCMHGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNLINFEODPJ != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.MNLINFEODPJ);
-        }
         if self.GMPKBKLGDMA != 0. {
             my_size += 1 + 4;
+        }
+        if self.MNLINFEODPJ != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.MNLINFEODPJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KNMNEJCMHGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNLINFEODPJ != 0 {
-            os.write_int32(1, self.MNLINFEODPJ)?;
-        }
         if self.GMPKBKLGDMA != 0. {
-            os.write_float(9, self.GMPKBKLGDMA)?;
+            os.write_float(12, self.GMPKBKLGDMA)?;
+        }
+        if self.MNLINFEODPJ != 0 {
+            os.write_int32(14, self.MNLINFEODPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KNMNEJCMHGE {
     }
 
     fn clear(&mut self) {
-        self.MNLINFEODPJ = 0;
         self.GMPKBKLGDMA = 0.;
+        self.MNLINFEODPJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNMNEJCMHGE {
         static instance: KNMNEJCMHGE = KNMNEJCMHGE {
-            MNLINFEODPJ: 0,
             GMPKBKLGDMA: 0.,
+            MNLINFEODPJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KNMNEJCMHGE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNMNEJCMHGE.proto\"Q\n\x0bKNMNEJCMHGE\x12\x20\n\x0bMNLINFEODPJ\x18\
-    \x01\x20\x01(\x05R\x0bMNLINFEODPJ\x12\x20\n\x0bGMPKBKLGDMA\x18\t\x20\x01\
-    (\x02R\x0bGMPKBKLGDMAb\x06proto3\
+    \n\x11KNMNEJCMHGE.proto\"Q\n\x0bKNMNEJCMHGE\x12\x20\n\x0bGMPKBKLGDMA\x18\
+    \x0c\x20\x01(\x02R\x0bGMPKBKLGDMA\x12\x20\n\x0bMNLINFEODPJ\x18\x0e\x20\
+    \x01(\x05R\x0bMNLINFEODPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

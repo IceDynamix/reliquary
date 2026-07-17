@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AFGMNFFBBIG {
     // message fields
-    // @@protoc_insertion_point(field:AFGMNFFBBIG.OFHCHNKEFMD)
-    pub OFHCHNKEFMD: ::std::vec::Vec<super::GHCDMMNHNHO::GHCDMMNHNHO>,
-    // @@protoc_insertion_point(field:AFGMNFFBBIG.JNFCFEIAABH)
-    pub JNFCFEIAABH: ::std::vec::Vec<super::GANDCEDCLDL::GANDCEDCLDL>,
-    // @@protoc_insertion_point(field:AFGMNFFBBIG.PNJEGPAFNCI)
-    pub PNJEGPAFNCI: u32,
-    // @@protoc_insertion_point(field:AFGMNFFBBIG.monster_id)
-    pub monster_id: u32,
     // @@protoc_insertion_point(field:AFGMNFFBBIG.BKPDKFLDLDD)
     pub BKPDKFLDLDD: u32,
+    // @@protoc_insertion_point(field:AFGMNFFBBIG.monster_id)
+    pub monster_id: u32,
+    // @@protoc_insertion_point(field:AFGMNFFBBIG.OFHCHNKEFMD)
+    pub OFHCHNKEFMD: ::std::vec::Vec<super::GHCDMMNHNHO::GHCDMMNHNHO>,
+    // @@protoc_insertion_point(field:AFGMNFFBBIG.delay)
+    pub delay: u32,
+    // @@protoc_insertion_point(field:AFGMNFFBBIG.JNFCFEIAABH)
+    pub JNFCFEIAABH: ::std::vec::Vec<super::GANDCEDCLDL::GANDCEDCLDL>,
     // special fields
     // @@protoc_insertion_point(special_field:AFGMNFFBBIG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl AFGMNFFBBIG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OFHCHNKEFMD",
-            |m: &AFGMNFFBBIG| { &m.OFHCHNKEFMD },
-            |m: &mut AFGMNFFBBIG| { &mut m.OFHCHNKEFMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JNFCFEIAABH",
-            |m: &AFGMNFFBBIG| { &m.JNFCFEIAABH },
-            |m: &mut AFGMNFFBBIG| { &mut m.JNFCFEIAABH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJEGPAFNCI",
-            |m: &AFGMNFFBBIG| { &m.PNJEGPAFNCI },
-            |m: &mut AFGMNFFBBIG| { &mut m.PNJEGPAFNCI },
+            "BKPDKFLDLDD",
+            |m: &AFGMNFFBBIG| { &m.BKPDKFLDLDD },
+            |m: &mut AFGMNFFBBIG| { &mut m.BKPDKFLDLDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
             |m: &AFGMNFFBBIG| { &m.monster_id },
             |m: &mut AFGMNFFBBIG| { &mut m.monster_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OFHCHNKEFMD",
+            |m: &AFGMNFFBBIG| { &m.OFHCHNKEFMD },
+            |m: &mut AFGMNFFBBIG| { &mut m.OFHCHNKEFMD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKPDKFLDLDD",
-            |m: &AFGMNFFBBIG| { &m.BKPDKFLDLDD },
-            |m: &mut AFGMNFFBBIG| { &mut m.BKPDKFLDLDD },
+            "delay",
+            |m: &AFGMNFFBBIG| { &m.delay },
+            |m: &mut AFGMNFFBBIG| { &mut m.delay },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JNFCFEIAABH",
+            |m: &AFGMNFFBBIG| { &m.JNFCFEIAABH },
+            |m: &mut AFGMNFFBBIG| { &mut m.JNFCFEIAABH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AFGMNFFBBIG>(
             "AFGMNFFBBIG",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AFGMNFFBBIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.OFHCHNKEFMD.push(is.read_message()?);
-                },
-                42 => {
-                    self.JNFCFEIAABH.push(is.read_message()?);
-                },
-                32 => {
-                    self.PNJEGPAFNCI = is.read_uint32()?;
+                8 => {
+                    self.BKPDKFLDLDD = is.read_uint32()?;
                 },
                 16 => {
                     self.monster_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.BKPDKFLDLDD = is.read_uint32()?;
+                26 => {
+                    self.OFHCHNKEFMD.push(is.read_message()?);
+                },
+                32 => {
+                    self.delay = is.read_uint32()?;
+                },
+                42 => {
+                    self.JNFCFEIAABH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,44 +127,44 @@ impl ::protobuf::Message for AFGMNFFBBIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OFHCHNKEFMD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.JNFCFEIAABH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.PNJEGPAFNCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PNJEGPAFNCI);
+        if self.BKPDKFLDLDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BKPDKFLDLDD);
         }
         if self.monster_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.monster_id);
         }
-        if self.BKPDKFLDLDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BKPDKFLDLDD);
+        for value in &self.OFHCHNKEFMD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.delay != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.delay);
         }
+        for value in &self.JNFCFEIAABH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OFHCHNKEFMD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.JNFCFEIAABH {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.PNJEGPAFNCI != 0 {
-            os.write_uint32(4, self.PNJEGPAFNCI)?;
+        if self.BKPDKFLDLDD != 0 {
+            os.write_uint32(1, self.BKPDKFLDLDD)?;
         }
         if self.monster_id != 0 {
             os.write_uint32(2, self.monster_id)?;
         }
-        if self.BKPDKFLDLDD != 0 {
-            os.write_uint32(1, self.BKPDKFLDLDD)?;
+        for v in &self.OFHCHNKEFMD {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.delay != 0 {
+            os.write_uint32(4, self.delay)?;
         }
+        for v in &self.JNFCFEIAABH {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for AFGMNFFBBIG {
     }
 
     fn clear(&mut self) {
-        self.OFHCHNKEFMD.clear();
-        self.JNFCFEIAABH.clear();
-        self.PNJEGPAFNCI = 0;
-        self.monster_id = 0;
         self.BKPDKFLDLDD = 0;
+        self.monster_id = 0;
+        self.OFHCHNKEFMD.clear();
+        self.delay = 0;
+        self.JNFCFEIAABH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AFGMNFFBBIG {
         static instance: AFGMNFFBBIG = AFGMNFFBBIG {
-            OFHCHNKEFMD: ::std::vec::Vec::new(),
-            JNFCFEIAABH: ::std::vec::Vec::new(),
-            PNJEGPAFNCI: 0,
-            monster_id: 0,
             BKPDKFLDLDD: 0,
+            monster_id: 0,
+            OFHCHNKEFMD: ::std::vec::Vec::new(),
+            delay: 0,
+            JNFCFEIAABH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for AFGMNFFBBIG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFGMNFFBBIG.proto\x1a\x11GANDCEDCLDL.proto\x1a\x11GHCDMMNHNHO.prot\
-    o\"\xd0\x01\n\x0bAFGMNFFBBIG\x12.\n\x0bOFHCHNKEFMD\x18\x03\x20\x03(\x0b2\
-    \x0c.GHCDMMNHNHOR\x0bOFHCHNKEFMD\x12.\n\x0bJNFCFEIAABH\x18\x05\x20\x03(\
-    \x0b2\x0c.GANDCEDCLDLR\x0bJNFCFEIAABH\x12\x20\n\x0bPNJEGPAFNCI\x18\x04\
-    \x20\x01(\rR\x0bPNJEGPAFNCI\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tm\
-    onsterId\x12\x20\n\x0bBKPDKFLDLDD\x18\x01\x20\x01(\rR\x0bBKPDKFLDLDDb\
-    \x06proto3\
+    o\"\xc4\x01\n\x0bAFGMNFFBBIG\x12\x20\n\x0bBKPDKFLDLDD\x18\x01\x20\x01(\r\
+    R\x0bBKPDKFLDLDD\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tmonsterId\
+    \x12.\n\x0bOFHCHNKEFMD\x18\x03\x20\x03(\x0b2\x0c.GHCDMMNHNHOR\x0bOFHCHNK\
+    EFMD\x12\x14\n\x05delay\x18\x04\x20\x01(\rR\x05delay\x12.\n\x0bJNFCFEIAA\
+    BH\x18\x05\x20\x03(\x0b2\x0c.GANDCEDCLDLR\x0bJNFCFEIAABHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

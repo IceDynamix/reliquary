@@ -30,12 +30,8 @@ pub struct GFGHGCIMKGA {
     // message fields
     // @@protoc_insertion_point(field:GFGHGCIMKGA.OPAEGCBNACJ)
     pub OPAEGCBNACJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GFGHGCIMKGA.DCLPLNFINDL)
-    pub DCLPLNFINDL: bool,
-    // @@protoc_insertion_point(field:GFGHGCIMKGA.OGGEKFLBGLB)
-    pub OGGEKFLBGLB: u32,
-    // @@protoc_insertion_point(field:GFGHGCIMKGA.EGDEKFJJNEP)
-    pub EGDEKFJJNEP: u32,
+    // @@protoc_insertion_point(field:GFGHGCIMKGA.unlock_aeon_enhance_num)
+    pub unlock_aeon_enhance_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GFGHGCIMKGA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,7 +49,7 @@ impl GFGHGCIMKGA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OPAEGCBNACJ",
@@ -61,19 +57,9 @@ impl GFGHGCIMKGA {
             |m: &mut GFGHGCIMKGA| { &mut m.OPAEGCBNACJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCLPLNFINDL",
-            |m: &GFGHGCIMKGA| { &m.DCLPLNFINDL },
-            |m: &mut GFGHGCIMKGA| { &mut m.DCLPLNFINDL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGGEKFLBGLB",
-            |m: &GFGHGCIMKGA| { &m.OGGEKFLBGLB },
-            |m: &mut GFGHGCIMKGA| { &mut m.OGGEKFLBGLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGDEKFJJNEP",
-            |m: &GFGHGCIMKGA| { &m.EGDEKFJJNEP },
-            |m: &mut GFGHGCIMKGA| { &mut m.EGDEKFJJNEP },
+            "unlock_aeon_enhance_num",
+            |m: &GFGHGCIMKGA| { &m.unlock_aeon_enhance_num },
+            |m: &mut GFGHGCIMKGA| { &mut m.unlock_aeon_enhance_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GFGHGCIMKGA>(
             "GFGHGCIMKGA",
@@ -93,20 +79,14 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.OPAEGCBNACJ)?;
                 },
-                72 => {
+                80 => {
                     self.OPAEGCBNACJ.push(is.read_uint32()?);
                 },
-                88 => {
-                    self.DCLPLNFINDL = is.read_bool()?;
-                },
-                120 => {
-                    self.OGGEKFLBGLB = is.read_uint32()?;
-                },
                 104 => {
-                    self.EGDEKFJJNEP = is.read_uint32()?;
+                    self.unlock_aeon_enhance_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +100,9 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OPAEGCBNACJ);
-        if self.DCLPLNFINDL != false {
-            my_size += 1 + 1;
-        }
-        if self.OGGEKFLBGLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OGGEKFLBGLB);
-        }
-        if self.EGDEKFJJNEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EGDEKFJJNEP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OPAEGCBNACJ);
+        if self.unlock_aeon_enhance_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.unlock_aeon_enhance_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +110,9 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.OPAEGCBNACJ)?;
-        if self.DCLPLNFINDL != false {
-            os.write_bool(11, self.DCLPLNFINDL)?;
-        }
-        if self.OGGEKFLBGLB != 0 {
-            os.write_uint32(15, self.OGGEKFLBGLB)?;
-        }
-        if self.EGDEKFJJNEP != 0 {
-            os.write_uint32(13, self.EGDEKFJJNEP)?;
+        os.write_repeated_packed_uint32(10, &self.OPAEGCBNACJ)?;
+        if self.unlock_aeon_enhance_num != 0 {
+            os.write_uint32(13, self.unlock_aeon_enhance_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +132,14 @@ impl ::protobuf::Message for GFGHGCIMKGA {
 
     fn clear(&mut self) {
         self.OPAEGCBNACJ.clear();
-        self.DCLPLNFINDL = false;
-        self.OGGEKFLBGLB = 0;
-        self.EGDEKFJJNEP = 0;
+        self.unlock_aeon_enhance_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GFGHGCIMKGA {
         static instance: GFGHGCIMKGA = GFGHGCIMKGA {
             OPAEGCBNACJ: ::std::vec::Vec::new(),
-            DCLPLNFINDL: false,
-            OGGEKFLBGLB: 0,
-            EGDEKFJJNEP: 0,
+            unlock_aeon_enhance_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GFGHGCIMKGA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFGHGCIMKGA.proto\"\x95\x01\n\x0bGFGHGCIMKGA\x12\x20\n\x0bOPAEGCBN\
-    ACJ\x18\t\x20\x03(\rR\x0bOPAEGCBNACJ\x12\x20\n\x0bDCLPLNFINDL\x18\x0b\
-    \x20\x01(\x08R\x0bDCLPLNFINDL\x12\x20\n\x0bOGGEKFLBGLB\x18\x0f\x20\x01(\
-    \rR\x0bOGGEKFLBGLB\x12\x20\n\x0bEGDEKFJJNEP\x18\r\x20\x01(\rR\x0bEGDEKFJ\
-    JNEPb\x06proto3\
+    \n\x11GFGHGCIMKGA.proto\"f\n\x0bGFGHGCIMKGA\x12\x20\n\x0bOPAEGCBNACJ\x18\
+    \n\x20\x03(\rR\x0bOPAEGCBNACJ\x125\n\x17unlock_aeon_enhance_num\x18\r\
+    \x20\x01(\rR\x14unlockAeonEnhanceNumb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

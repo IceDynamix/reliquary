@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchHandResetHandPosScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSwitchHandResetHandPosScRsp.BEADAHPGGAF)
-    pub BEADAHPGGAF: ::protobuf::MessageField<super::ENHOPAHGCMA::ENHOPAHGCMA>,
     // @@protoc_insertion_point(field:GetSwitchHandResetHandPosScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSwitchHandResetHandPosScRsp.BEADAHPGGAF)
+    pub BEADAHPGGAF: ::protobuf::MessageField<super::ENHOPAHGCMA::ENHOPAHGCMA>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSwitchHandResetHandPosScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetSwitchHandResetHandPosScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ENHOPAHGCMA::ENHOPAHGCMA>(
-            "BEADAHPGGAF",
-            |m: &GetSwitchHandResetHandPosScRsp| { &m.BEADAHPGGAF },
-            |m: &mut GetSwitchHandResetHandPosScRsp| { &mut m.BEADAHPGGAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwitchHandResetHandPosScRsp| { &m.retcode },
             |m: &mut GetSwitchHandResetHandPosScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ENHOPAHGCMA::ENHOPAHGCMA>(
+            "BEADAHPGGAF",
+            |m: &GetSwitchHandResetHandPosScRsp| { &m.BEADAHPGGAF },
+            |m: &mut GetSwitchHandResetHandPosScRsp| { &mut m.BEADAHPGGAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSwitchHandResetHandPosScRsp>(
             "GetSwitchHandResetHandPosScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetSwitchHandResetHandPosScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BEADAHPGGAF)?;
-                },
-                104 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BEADAHPGGAF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetSwitchHandResetHandPosScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if let Some(v) = self.BEADAHPGGAF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetSwitchHandResetHandPosScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BEADAHPGGAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
+        }
+        if let Some(v) = self.BEADAHPGGAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSwitchHandResetHandPosScRsp {
     }
 
     fn clear(&mut self) {
-        self.BEADAHPGGAF.clear();
         self.retcode = 0;
+        self.BEADAHPGGAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchHandResetHandPosScRsp {
         static instance: GetSwitchHandResetHandPosScRsp = GetSwitchHandResetHandPosScRsp {
-            BEADAHPGGAF: ::protobuf::MessageField::none(),
             retcode: 0,
+            BEADAHPGGAF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchHandResetHandPosScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GetSwitchHandResetHandPosScRsp.proto\x1a\x11ENHOPAHGCMA.proto\"j\n\
-    \x1eGetSwitchHandResetHandPosScRsp\x12.\n\x0bBEADAHPGGAF\x18\x06\x20\x01\
-    (\x0b2\x0c.ENHOPAHGCMAR\x0bBEADAHPGGAF\x12\x18\n\x07retcode\x18\r\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \x1eGetSwitchHandResetHandPosScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bBEADAHPGGAF\x18\n\x20\x01(\x0b2\x0c.ENHOPAHGCMA\
+    R\x0bBEADAHPGGAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

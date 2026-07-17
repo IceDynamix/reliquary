@@ -27,9 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:NLOPJLCMLEN)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NLOPJLCMLEN {
-    // message fields
-    // @@protoc_insertion_point(field:NLOPJLCMLEN.player_data)
-    pub player_data: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NLOPJLCMLEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,13 +44,8 @@ impl NLOPJLCMLEN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "player_data",
-            |m: &NLOPJLCMLEN| { &m.player_data },
-            |m: &mut NLOPJLCMLEN| { &mut m.player_data },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NLOPJLCMLEN>(
             "NLOPJLCMLEN",
             fields,
@@ -72,9 +64,6 @@ impl ::protobuf::Message for NLOPJLCMLEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.player_data = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -87,18 +76,12 @@ impl ::protobuf::Message for NLOPJLCMLEN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.player_data != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.player_data);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.player_data != 0 {
-            os.write_uint32(8, self.player_data)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,13 +99,11 @@ impl ::protobuf::Message for NLOPJLCMLEN {
     }
 
     fn clear(&mut self) {
-        self.player_data = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NLOPJLCMLEN {
         static instance: NLOPJLCMLEN = NLOPJLCMLEN {
-            player_data: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +128,7 @@ impl ::protobuf::reflect::ProtobufValue for NLOPJLCMLEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NLOPJLCMLEN.proto\".\n\x0bNLOPJLCMLEN\x12\x1f\n\x0bplayer_data\x18\
-    \x08\x20\x01(\rR\nplayerDatab\x06proto3\
+    \n\x11NLOPJLCMLEN.proto\"\r\n\x0bNLOPJLCMLENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

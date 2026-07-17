@@ -29,44 +29,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdDiceCombatType {
     // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_NLCDGIPGFDJ)
     PMDFMAIHPGL_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FKPMIOIMJIN)
-    PMDFMAIHPGL_FKPMIOIMJIN = 9263,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_AGEOJALCOOC)
-    PMDFMAIHPGL_AGEOJALCOOC = 9275,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_JBBGAEIBIML)
-    PMDFMAIHPGL_JBBGAEIBIML = 9264,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_LEEAGKMABHA)
-    PMDFMAIHPGL_LEEAGKMABHA = 9266,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_DACGJALMPOI)
-    PMDFMAIHPGL_DACGJALMPOI = 9292,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_IBMBBIKGBMA)
-    PMDFMAIHPGL_IBMBBIKGBMA = 9268,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_MOFOKOBAPGO)
-    PMDFMAIHPGL_MOFOKOBAPGO = 9273,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_JNPCPMEDCML)
-    PMDFMAIHPGL_JNPCPMEDCML = 9274,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_NPANIDLBFNM)
-    PMDFMAIHPGL_NPANIDLBFNM = 9299,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FNPAAMBPLKH)
-    PMDFMAIHPGL_FNPAAMBPLKH = 9288,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_OBHIIPGCBOC)
-    PMDFMAIHPGL_OBHIIPGCBOC = 9294,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_BDLAEOIMDMF)
-    PMDFMAIHPGL_BDLAEOIMDMF = 9287,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_ODEGHHDHEOJ)
-    PMDFMAIHPGL_ODEGHHDHEOJ = 9276,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FFGHFAIAKJC)
-    PMDFMAIHPGL_FFGHFAIAKJC = 9265,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_HCJAMGHDCEE)
-    PMDFMAIHPGL_HCJAMGHDCEE = 9293,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_LDDOHEMDKDH)
-    PMDFMAIHPGL_LDDOHEMDKDH = 9272,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_PDHNBGCCHGE)
-    PMDFMAIHPGL_PDHNBGCCHGE = 9279,
-    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_CKHPINAGMPA)
-    PMDFMAIHPGL_CKHPINAGMPA = 9280,
     // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_MGAJDOGBDJI)
-    PMDFMAIHPGL_MGAJDOGBDJI = 9269,
+    PMDFMAIHPGL_MGAJDOGBDJI = 9293,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_IBMBBIKGBMA)
+    PMDFMAIHPGL_IBMBBIKGBMA = 9284,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FKPMIOIMJIN)
+    PMDFMAIHPGL_FKPMIOIMJIN = 9281,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_AGEOJALCOOC)
+    PMDFMAIHPGL_AGEOJALCOOC = 9279,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FNPAAMBPLKH)
+    PMDFMAIHPGL_FNPAAMBPLKH = 9265,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_ODEGHHDHEOJ)
+    PMDFMAIHPGL_ODEGHHDHEOJ = 9270,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_JBBGAEIBIML)
+    PMDFMAIHPGL_JBBGAEIBIML = 9274,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_HCJAMGHDCEE)
+    PMDFMAIHPGL_HCJAMGHDCEE = 9296,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_BDLAEOIMDMF)
+    PMDFMAIHPGL_BDLAEOIMDMF = 9267,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_CKHPINAGMPA)
+    PMDFMAIHPGL_CKHPINAGMPA = 9297,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_OBHIIPGCBOC)
+    PMDFMAIHPGL_OBHIIPGCBOC = 9273,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_NPANIDLBFNM)
+    PMDFMAIHPGL_NPANIDLBFNM = 9295,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_LEEAGKMABHA)
+    PMDFMAIHPGL_LEEAGKMABHA = 9272,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_DACGJALMPOI)
+    PMDFMAIHPGL_DACGJALMPOI = 9269,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_LDDOHEMDKDH)
+    PMDFMAIHPGL_LDDOHEMDKDH = 9298,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_JNPCPMEDCML)
+    PMDFMAIHPGL_JNPCPMEDCML = 9276,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_FFGHFAIAKJC)
+    PMDFMAIHPGL_FFGHFAIAKJC = 9278,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_PDHNBGCCHGE)
+    PMDFMAIHPGL_PDHNBGCCHGE = 9290,
+    // @@protoc_insertion_point(enum_value:CmdDiceCombatType.PMDFMAIHPGL_MOFOKOBAPGO)
+    PMDFMAIHPGL_MOFOKOBAPGO = 9283,
 }
 
 impl ::protobuf::Enum for CmdDiceCombatType {
@@ -79,25 +79,25 @@ impl ::protobuf::Enum for CmdDiceCombatType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdDiceCombatType> {
         match value {
             0 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NLCDGIPGFDJ),
-            9263 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN),
-            9275 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC),
-            9264 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML),
-            9266 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA),
-            9292 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI),
-            9268 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA),
-            9273 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO),
-            9274 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML),
-            9299 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM),
-            9288 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH),
-            9294 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC),
-            9287 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF),
-            9276 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ),
-            9265 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC),
-            9293 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE),
-            9272 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH),
-            9279 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE),
-            9280 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA),
-            9269 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI),
+            9293 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI),
+            9284 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA),
+            9281 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN),
+            9279 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC),
+            9265 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH),
+            9270 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ),
+            9274 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML),
+            9296 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE),
+            9267 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF),
+            9297 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA),
+            9273 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC),
+            9295 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM),
+            9272 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA),
+            9269 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI),
+            9298 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH),
+            9276 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML),
+            9278 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC),
+            9290 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE),
+            9283 => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO),
             _ => ::std::option::Option::None
         }
     }
@@ -105,50 +105,50 @@ impl ::protobuf::Enum for CmdDiceCombatType {
     fn from_str(str: &str) -> ::std::option::Option<CmdDiceCombatType> {
         match str {
             "PMDFMAIHPGL_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NLCDGIPGFDJ),
+            "PMDFMAIHPGL_MGAJDOGBDJI" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI),
+            "PMDFMAIHPGL_IBMBBIKGBMA" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA),
             "PMDFMAIHPGL_FKPMIOIMJIN" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN),
             "PMDFMAIHPGL_AGEOJALCOOC" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC),
+            "PMDFMAIHPGL_FNPAAMBPLKH" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH),
+            "PMDFMAIHPGL_ODEGHHDHEOJ" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ),
             "PMDFMAIHPGL_JBBGAEIBIML" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML),
+            "PMDFMAIHPGL_HCJAMGHDCEE" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE),
+            "PMDFMAIHPGL_BDLAEOIMDMF" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF),
+            "PMDFMAIHPGL_CKHPINAGMPA" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA),
+            "PMDFMAIHPGL_OBHIIPGCBOC" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC),
+            "PMDFMAIHPGL_NPANIDLBFNM" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM),
             "PMDFMAIHPGL_LEEAGKMABHA" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA),
             "PMDFMAIHPGL_DACGJALMPOI" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI),
-            "PMDFMAIHPGL_IBMBBIKGBMA" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA),
-            "PMDFMAIHPGL_MOFOKOBAPGO" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO),
-            "PMDFMAIHPGL_JNPCPMEDCML" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML),
-            "PMDFMAIHPGL_NPANIDLBFNM" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM),
-            "PMDFMAIHPGL_FNPAAMBPLKH" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH),
-            "PMDFMAIHPGL_OBHIIPGCBOC" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC),
-            "PMDFMAIHPGL_BDLAEOIMDMF" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF),
-            "PMDFMAIHPGL_ODEGHHDHEOJ" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ),
-            "PMDFMAIHPGL_FFGHFAIAKJC" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC),
-            "PMDFMAIHPGL_HCJAMGHDCEE" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE),
             "PMDFMAIHPGL_LDDOHEMDKDH" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH),
+            "PMDFMAIHPGL_JNPCPMEDCML" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML),
+            "PMDFMAIHPGL_FFGHFAIAKJC" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC),
             "PMDFMAIHPGL_PDHNBGCCHGE" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE),
-            "PMDFMAIHPGL_CKHPINAGMPA" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA),
-            "PMDFMAIHPGL_MGAJDOGBDJI" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI),
+            "PMDFMAIHPGL_MOFOKOBAPGO" => ::std::option::Option::Some(CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDiceCombatType] = &[
         CmdDiceCombatType::PMDFMAIHPGL_NLCDGIPGFDJ,
+        CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI,
+        CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA,
         CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN,
         CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC,
+        CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH,
+        CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ,
         CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML,
+        CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE,
+        CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF,
+        CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA,
+        CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC,
+        CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM,
         CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA,
         CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI,
-        CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA,
-        CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO,
-        CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML,
-        CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM,
-        CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH,
-        CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC,
-        CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF,
-        CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ,
-        CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC,
-        CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE,
         CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH,
+        CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML,
+        CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC,
         CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE,
-        CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA,
-        CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI,
+        CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO,
     ];
 }
 
@@ -161,25 +161,25 @@ impl ::protobuf::EnumFull for CmdDiceCombatType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdDiceCombatType::PMDFMAIHPGL_NLCDGIPGFDJ => 0,
-            CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN => 1,
-            CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC => 2,
-            CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML => 3,
-            CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA => 4,
-            CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI => 5,
-            CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA => 6,
-            CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO => 7,
-            CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML => 8,
-            CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM => 9,
-            CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH => 10,
+            CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI => 1,
+            CmdDiceCombatType::PMDFMAIHPGL_IBMBBIKGBMA => 2,
+            CmdDiceCombatType::PMDFMAIHPGL_FKPMIOIMJIN => 3,
+            CmdDiceCombatType::PMDFMAIHPGL_AGEOJALCOOC => 4,
+            CmdDiceCombatType::PMDFMAIHPGL_FNPAAMBPLKH => 5,
+            CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ => 6,
+            CmdDiceCombatType::PMDFMAIHPGL_JBBGAEIBIML => 7,
+            CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE => 8,
+            CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF => 9,
+            CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA => 10,
             CmdDiceCombatType::PMDFMAIHPGL_OBHIIPGCBOC => 11,
-            CmdDiceCombatType::PMDFMAIHPGL_BDLAEOIMDMF => 12,
-            CmdDiceCombatType::PMDFMAIHPGL_ODEGHHDHEOJ => 13,
-            CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC => 14,
-            CmdDiceCombatType::PMDFMAIHPGL_HCJAMGHDCEE => 15,
-            CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH => 16,
-            CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE => 17,
-            CmdDiceCombatType::PMDFMAIHPGL_CKHPINAGMPA => 18,
-            CmdDiceCombatType::PMDFMAIHPGL_MGAJDOGBDJI => 19,
+            CmdDiceCombatType::PMDFMAIHPGL_NPANIDLBFNM => 12,
+            CmdDiceCombatType::PMDFMAIHPGL_LEEAGKMABHA => 13,
+            CmdDiceCombatType::PMDFMAIHPGL_DACGJALMPOI => 14,
+            CmdDiceCombatType::PMDFMAIHPGL_LDDOHEMDKDH => 15,
+            CmdDiceCombatType::PMDFMAIHPGL_JNPCPMEDCML => 16,
+            CmdDiceCombatType::PMDFMAIHPGL_FFGHFAIAKJC => 17,
+            CmdDiceCombatType::PMDFMAIHPGL_PDHNBGCCHGE => 18,
+            CmdDiceCombatType::PMDFMAIHPGL_MOFOKOBAPGO => 19,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -199,19 +199,19 @@ impl CmdDiceCombatType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdDiceCombatType.proto*\xea\x04\n\x11CmdDiceCombatType\x12\x1b\n\
-    \x17PMDFMAIHPGL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PMDFMAIHPGL_FKPMIOIMJIN\
-    \x10\xafH\x12\x1c\n\x17PMDFMAIHPGL_AGEOJALCOOC\x10\xbbH\x12\x1c\n\x17PMD\
-    FMAIHPGL_JBBGAEIBIML\x10\xb0H\x12\x1c\n\x17PMDFMAIHPGL_LEEAGKMABHA\x10\
-    \xb2H\x12\x1c\n\x17PMDFMAIHPGL_DACGJALMPOI\x10\xccH\x12\x1c\n\x17PMDFMAI\
-    HPGL_IBMBBIKGBMA\x10\xb4H\x12\x1c\n\x17PMDFMAIHPGL_MOFOKOBAPGO\x10\xb9H\
-    \x12\x1c\n\x17PMDFMAIHPGL_JNPCPMEDCML\x10\xbaH\x12\x1c\n\x17PMDFMAIHPGL_\
-    NPANIDLBFNM\x10\xd3H\x12\x1c\n\x17PMDFMAIHPGL_FNPAAMBPLKH\x10\xc8H\x12\
-    \x1c\n\x17PMDFMAIHPGL_OBHIIPGCBOC\x10\xceH\x12\x1c\n\x17PMDFMAIHPGL_BDLA\
-    EOIMDMF\x10\xc7H\x12\x1c\n\x17PMDFMAIHPGL_ODEGHHDHEOJ\x10\xbcH\x12\x1c\n\
-    \x17PMDFMAIHPGL_FFGHFAIAKJC\x10\xb1H\x12\x1c\n\x17PMDFMAIHPGL_HCJAMGHDCE\
-    E\x10\xcdH\x12\x1c\n\x17PMDFMAIHPGL_LDDOHEMDKDH\x10\xb8H\x12\x1c\n\x17PM\
-    DFMAIHPGL_PDHNBGCCHGE\x10\xbfH\x12\x1c\n\x17PMDFMAIHPGL_CKHPINAGMPA\x10\
-    \xc0H\x12\x1c\n\x17PMDFMAIHPGL_MGAJDOGBDJI\x10\xb5Hb\x06proto3\
+    \x17PMDFMAIHPGL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PMDFMAIHPGL_MGAJDOGBDJI\
+    \x10\xcdH\x12\x1c\n\x17PMDFMAIHPGL_IBMBBIKGBMA\x10\xc4H\x12\x1c\n\x17PMD\
+    FMAIHPGL_FKPMIOIMJIN\x10\xc1H\x12\x1c\n\x17PMDFMAIHPGL_AGEOJALCOOC\x10\
+    \xbfH\x12\x1c\n\x17PMDFMAIHPGL_FNPAAMBPLKH\x10\xb1H\x12\x1c\n\x17PMDFMAI\
+    HPGL_ODEGHHDHEOJ\x10\xb6H\x12\x1c\n\x17PMDFMAIHPGL_JBBGAEIBIML\x10\xbaH\
+    \x12\x1c\n\x17PMDFMAIHPGL_HCJAMGHDCEE\x10\xd0H\x12\x1c\n\x17PMDFMAIHPGL_\
+    BDLAEOIMDMF\x10\xb3H\x12\x1c\n\x17PMDFMAIHPGL_CKHPINAGMPA\x10\xd1H\x12\
+    \x1c\n\x17PMDFMAIHPGL_OBHIIPGCBOC\x10\xb9H\x12\x1c\n\x17PMDFMAIHPGL_NPAN\
+    IDLBFNM\x10\xcfH\x12\x1c\n\x17PMDFMAIHPGL_LEEAGKMABHA\x10\xb8H\x12\x1c\n\
+    \x17PMDFMAIHPGL_DACGJALMPOI\x10\xb5H\x12\x1c\n\x17PMDFMAIHPGL_LDDOHEMDKD\
+    H\x10\xd2H\x12\x1c\n\x17PMDFMAIHPGL_JNPCPMEDCML\x10\xbcH\x12\x1c\n\x17PM\
+    DFMAIHPGL_FFGHFAIAKJC\x10\xbeH\x12\x1c\n\x17PMDFMAIHPGL_PDHNBGCCHGE\x10\
+    \xcaH\x12\x1c\n\x17PMDFMAIHPGL_MOFOKOBAPGO\x10\xc3Hb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

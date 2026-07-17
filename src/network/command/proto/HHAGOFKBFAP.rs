@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HHAGOFKBFAP {
     // message fields
-    // @@protoc_insertion_point(field:HHAGOFKBFAP.IHNENEGKEPO)
-    pub IHNENEGKEPO: ::protobuf::MessageField<super::ANMDOACPHMN::ANMDOACPHMN>,
+    // @@protoc_insertion_point(field:HHAGOFKBFAP.IIMOONEHGLO)
+    pub IIMOONEHGLO: u32,
     // @@protoc_insertion_point(field:HHAGOFKBFAP.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:HHAGOFKBFAP.NDLJIJINOBB)
+    pub NDLJIJINOBB: f64,
+    // @@protoc_insertion_point(field:HHAGOFKBFAP.IHNENEGKEPO)
+    pub IHNENEGKEPO: ::protobuf::MessageField<super::ANMDOACPHMN::ANMDOACPHMN>,
     // @@protoc_insertion_point(field:HHAGOFKBFAP.MEFKKHAJACJ)
     pub MEFKKHAJACJ: u32,
     // @@protoc_insertion_point(field:HHAGOFKBFAP.status)
     pub status: u32,
-    // @@protoc_insertion_point(field:HHAGOFKBFAP.IIMOONEHGLO)
-    pub IIMOONEHGLO: u32,
-    // @@protoc_insertion_point(field:HHAGOFKBFAP.NDLJIJINOBB)
-    pub NDLJIJINOBB: f64,
     // special fields
     // @@protoc_insertion_point(special_field:HHAGOFKBFAP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,25 @@ impl HHAGOFKBFAP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANMDOACPHMN::ANMDOACPHMN>(
-            "IHNENEGKEPO",
-            |m: &HHAGOFKBFAP| { &m.IHNENEGKEPO },
-            |m: &mut HHAGOFKBFAP| { &mut m.IHNENEGKEPO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IIMOONEHGLO",
+            |m: &HHAGOFKBFAP| { &m.IIMOONEHGLO },
+            |m: &mut HHAGOFKBFAP| { &mut m.IIMOONEHGLO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &HHAGOFKBFAP| { &m.score_id },
             |m: &mut HHAGOFKBFAP| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDLJIJINOBB",
+            |m: &HHAGOFKBFAP| { &m.NDLJIJINOBB },
+            |m: &mut HHAGOFKBFAP| { &mut m.NDLJIJINOBB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANMDOACPHMN::ANMDOACPHMN>(
+            "IHNENEGKEPO",
+            |m: &HHAGOFKBFAP| { &m.IHNENEGKEPO },
+            |m: &mut HHAGOFKBFAP| { &mut m.IHNENEGKEPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MEFKKHAJACJ",
@@ -78,16 +88,6 @@ impl HHAGOFKBFAP {
             "status",
             |m: &HHAGOFKBFAP| { &m.status },
             |m: &mut HHAGOFKBFAP| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IIMOONEHGLO",
-            |m: &HHAGOFKBFAP| { &m.IIMOONEHGLO },
-            |m: &mut HHAGOFKBFAP| { &mut m.IIMOONEHGLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDLJIJINOBB",
-            |m: &HHAGOFKBFAP| { &m.NDLJIJINOBB },
-            |m: &mut HHAGOFKBFAP| { &mut m.NDLJIJINOBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HHAGOFKBFAP>(
             "HHAGOFKBFAP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for HHAGOFKBFAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHNENEGKEPO)?;
-                },
-                96 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.MEFKKHAJACJ = is.read_uint32()?;
-                },
-                120 => {
-                    self.status = is.read_uint32()?;
-                },
                 16 => {
                     self.IIMOONEHGLO = is.read_uint32()?;
                 },
-                49 => {
+                32 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                57 => {
                     self.NDLJIJINOBB = is.read_double()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHNENEGKEPO)?;
+                },
+                96 => {
+                    self.MEFKKHAJACJ = is.read_uint32()?;
+                },
+                104 => {
+                    self.status = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for HHAGOFKBFAP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IIMOONEHGLO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IIMOONEHGLO);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+        }
+        if self.NDLJIJINOBB != 0. {
+            my_size += 1 + 8;
+        }
         if let Some(v) = self.IHNENEGKEPO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.score_id);
-        }
         if self.MEFKKHAJACJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MEFKKHAJACJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.MEFKKHAJACJ);
         }
         if self.status != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.status);
-        }
-        if self.IIMOONEHGLO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IIMOONEHGLO);
-        }
-        if self.NDLJIJINOBB != 0. {
-            my_size += 1 + 8;
+            my_size += ::protobuf::rt::uint32_size(13, self.status);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for HHAGOFKBFAP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IHNENEGKEPO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.score_id != 0 {
-            os.write_uint32(12, self.score_id)?;
-        }
-        if self.MEFKKHAJACJ != 0 {
-            os.write_uint32(5, self.MEFKKHAJACJ)?;
-        }
-        if self.status != 0 {
-            os.write_uint32(15, self.status)?;
-        }
         if self.IIMOONEHGLO != 0 {
             os.write_uint32(2, self.IIMOONEHGLO)?;
         }
+        if self.score_id != 0 {
+            os.write_uint32(4, self.score_id)?;
+        }
         if self.NDLJIJINOBB != 0. {
-            os.write_double(6, self.NDLJIJINOBB)?;
+            os.write_double(7, self.NDLJIJINOBB)?;
+        }
+        if let Some(v) = self.IHNENEGKEPO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.MEFKKHAJACJ != 0 {
+            os.write_uint32(12, self.MEFKKHAJACJ)?;
+        }
+        if self.status != 0 {
+            os.write_uint32(13, self.status)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for HHAGOFKBFAP {
     }
 
     fn clear(&mut self) {
-        self.IHNENEGKEPO.clear();
+        self.IIMOONEHGLO = 0;
         self.score_id = 0;
+        self.NDLJIJINOBB = 0.;
+        self.IHNENEGKEPO.clear();
         self.MEFKKHAJACJ = 0;
         self.status = 0;
-        self.IIMOONEHGLO = 0;
-        self.NDLJIJINOBB = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HHAGOFKBFAP {
         static instance: HHAGOFKBFAP = HHAGOFKBFAP {
-            IHNENEGKEPO: ::protobuf::MessageField::none(),
+            IIMOONEHGLO: 0,
             score_id: 0,
+            NDLJIJINOBB: 0.,
+            IHNENEGKEPO: ::protobuf::MessageField::none(),
             MEFKKHAJACJ: 0,
             status: 0,
-            IIMOONEHGLO: 0,
-            NDLJIJINOBB: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for HHAGOFKBFAP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HHAGOFKBFAP.proto\x1a\x11ANMDOACPHMN.proto\"\xd6\x01\n\x0bHHAGOFKB\
-    FAP\x12.\n\x0bIHNENEGKEPO\x18\x01\x20\x01(\x0b2\x0c.ANMDOACPHMNR\x0bIHNE\
-    NEGKEPO\x12\x19\n\x08score_id\x18\x0c\x20\x01(\rR\x07scoreId\x12\x20\n\
-    \x0bMEFKKHAJACJ\x18\x05\x20\x01(\rR\x0bMEFKKHAJACJ\x12\x16\n\x06status\
-    \x18\x0f\x20\x01(\rR\x06status\x12\x20\n\x0bIIMOONEHGLO\x18\x02\x20\x01(\
-    \rR\x0bIIMOONEHGLO\x12\x20\n\x0bNDLJIJINOBB\x18\x06\x20\x01(\x01R\x0bNDL\
-    JIJINOBBb\x06proto3\
+    FAP\x12\x20\n\x0bIIMOONEHGLO\x18\x02\x20\x01(\rR\x0bIIMOONEHGLO\x12\x19\
+    \n\x08score_id\x18\x04\x20\x01(\rR\x07scoreId\x12\x20\n\x0bNDLJIJINOBB\
+    \x18\x07\x20\x01(\x01R\x0bNDLJIJINOBB\x12.\n\x0bIHNENEGKEPO\x18\x08\x20\
+    \x01(\x0b2\x0c.ANMDOACPHMNR\x0bIHNENEGKEPO\x12\x20\n\x0bMEFKKHAJACJ\x18\
+    \x0c\x20\x01(\rR\x0bMEFKKHAJACJ\x12\x16\n\x06status\x18\r\x20\x01(\rR\
+    \x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NLAGKOJKHCN {
     // message fields
-    // @@protoc_insertion_point(field:NLAGKOJKHCN.GALBOLNODBB)
-    pub GALBOLNODBB: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:NLAGKOJKHCN.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:NLAGKOJKHCN.GALBOLNODBB)
+    pub GALBOLNODBB: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // special fields
     // @@protoc_insertion_point(special_field:NLAGKOJKHCN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NLAGKOJKHCN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
-            "GALBOLNODBB",
-            |m: &NLAGKOJKHCN| { &m.GALBOLNODBB },
-            |m: &mut NLAGKOJKHCN| { &mut m.GALBOLNODBB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &NLAGKOJKHCN| { &m.retcode },
             |m: &mut NLAGKOJKHCN| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
+            "GALBOLNODBB",
+            |m: &NLAGKOJKHCN| { &m.GALBOLNODBB },
+            |m: &mut NLAGKOJKHCN| { &mut m.GALBOLNODBB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NLAGKOJKHCN>(
             "NLAGKOJKHCN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NLAGKOJKHCN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GALBOLNODBB)?;
-                },
-                16 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GALBOLNODBB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for NLAGKOJKHCN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if let Some(v) = self.GALBOLNODBB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for NLAGKOJKHCN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GALBOLNODBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
+        }
+        if let Some(v) = self.GALBOLNODBB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for NLAGKOJKHCN {
     }
 
     fn clear(&mut self) {
-        self.GALBOLNODBB.clear();
         self.retcode = 0;
+        self.GALBOLNODBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NLAGKOJKHCN {
         static instance: NLAGKOJKHCN = NLAGKOJKHCN {
-            GALBOLNODBB: ::protobuf::MessageField::none(),
             retcode: 0,
+            GALBOLNODBB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NLAGKOJKHCN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NLAGKOJKHCN.proto\x1a\x11NCFKHDIKCNI.proto\"W\n\x0bNLAGKOJKHCN\x12\
-    .\n\x0bGALBOLNODBB\x18\x08\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bGALBOLNODBB\
-    \x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bGALBOLNODBB\
+    \x18\x0b\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bGALBOLNODBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

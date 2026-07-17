@@ -79,7 +79,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 80 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for ExpUpEquipmentCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.equipment_unique_id != 0 {
             os.write_uint32(10, self.equipment_unique_id)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for ExpUpEquipmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19ExpUpEquipmentCsReq.proto\x1a\x12ItemCostData.proto\"q\n\x13ExpUpE\
-    quipmentCsReq\x12*\n\tcost_data\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\
+    quipmentCsReq\x12*\n\tcost_data\x18\x01\x20\x01(\x0b2\r.ItemCostDataR\
     \x08costData\x12.\n\x13equipment_unique_id\x18\n\x20\x01(\rR\x11equipmen\
     tUniqueIdb\x06proto3\
 ";

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHCEIOHLADG {
     // message fields
-    // @@protoc_insertion_point(field:FHCEIOHLADG.pos_index)
-    pub pos_index: u32,
-    // @@protoc_insertion_point(field:FHCEIOHLADG.LLLOOKPGGGG)
-    pub LLLOOKPGGGG: u32,
+    // @@protoc_insertion_point(field:FHCEIOHLADG.pos)
+    pub pos: u32,
     // @@protoc_insertion_point(field:FHCEIOHLADG.LHHONKJPPDC)
     pub LHHONKJPPDC: u32,
     // @@protoc_insertion_point(field:FHCEIOHLADG.KFGOKFKHOPB)
     pub KFGOKFKHOPB: u32,
+    // @@protoc_insertion_point(field:FHCEIOHLADG.LLLOOKPGGGG)
+    pub LLLOOKPGGGG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FHCEIOHLADG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,9 @@ impl FHCEIOHLADG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &FHCEIOHLADG| { &m.pos_index },
-            |m: &mut FHCEIOHLADG| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLLOOKPGGGG",
-            |m: &FHCEIOHLADG| { &m.LLLOOKPGGGG },
-            |m: &mut FHCEIOHLADG| { &mut m.LLLOOKPGGGG },
+            "pos",
+            |m: &FHCEIOHLADG| { &m.pos },
+            |m: &mut FHCEIOHLADG| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHHONKJPPDC",
@@ -74,6 +69,11 @@ impl FHCEIOHLADG {
             "KFGOKFKHOPB",
             |m: &FHCEIOHLADG| { &m.KFGOKFKHOPB },
             |m: &mut FHCEIOHLADG| { &mut m.KFGOKFKHOPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLLOOKPGGGG",
+            |m: &FHCEIOHLADG| { &m.LLLOOKPGGGG },
+            |m: &mut FHCEIOHLADG| { &mut m.LLLOOKPGGGG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHCEIOHLADG>(
             "FHCEIOHLADG",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for FHCEIOHLADG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.pos_index = is.read_uint32()?;
-                },
-                32 => {
-                    self.LLLOOKPGGGG = is.read_uint32()?;
+                    self.pos = is.read_uint32()?;
                 },
                 16 => {
                     self.LHHONKJPPDC = is.read_uint32()?;
                 },
                 24 => {
                     self.KFGOKFKHOPB = is.read_uint32()?;
+                },
+                32 => {
+                    self.LLLOOKPGGGG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,11 +117,8 @@ impl ::protobuf::Message for FHCEIOHLADG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.pos_index);
-        }
-        if self.LLLOOKPGGGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LLLOOKPGGGG);
+        if self.pos != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.pos);
         }
         if self.LHHONKJPPDC != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.LHHONKJPPDC);
@@ -129,23 +126,26 @@ impl ::protobuf::Message for FHCEIOHLADG {
         if self.KFGOKFKHOPB != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.KFGOKFKHOPB);
         }
+        if self.LLLOOKPGGGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LLLOOKPGGGG);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pos_index != 0 {
-            os.write_uint32(1, self.pos_index)?;
-        }
-        if self.LLLOOKPGGGG != 0 {
-            os.write_uint32(4, self.LLLOOKPGGGG)?;
+        if self.pos != 0 {
+            os.write_uint32(1, self.pos)?;
         }
         if self.LHHONKJPPDC != 0 {
             os.write_uint32(2, self.LHHONKJPPDC)?;
         }
         if self.KFGOKFKHOPB != 0 {
             os.write_uint32(3, self.KFGOKFKHOPB)?;
+        }
+        if self.LLLOOKPGGGG != 0 {
+            os.write_uint32(4, self.LLLOOKPGGGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for FHCEIOHLADG {
     }
 
     fn clear(&mut self) {
-        self.pos_index = 0;
-        self.LLLOOKPGGGG = 0;
+        self.pos = 0;
         self.LHHONKJPPDC = 0;
         self.KFGOKFKHOPB = 0;
+        self.LLLOOKPGGGG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHCEIOHLADG {
         static instance: FHCEIOHLADG = FHCEIOHLADG {
-            pos_index: 0,
-            LLLOOKPGGGG: 0,
+            pos: 0,
             LHHONKJPPDC: 0,
             KFGOKFKHOPB: 0,
+            LLLOOKPGGGG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FHCEIOHLADG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FHCEIOHLADG.proto\"\x90\x01\n\x0bFHCEIOHLADG\x12\x1b\n\tpos_index\
-    \x18\x01\x20\x01(\rR\x08posIndex\x12\x20\n\x0bLLLOOKPGGGG\x18\x04\x20\
-    \x01(\rR\x0bLLLOOKPGGGG\x12\x20\n\x0bLHHONKJPPDC\x18\x02\x20\x01(\rR\x0b\
-    LHHONKJPPDC\x12\x20\n\x0bKFGOKFKHOPB\x18\x03\x20\x01(\rR\x0bKFGOKFKHOPBb\
-    \x06proto3\
+    \n\x11FHCEIOHLADG.proto\"\x85\x01\n\x0bFHCEIOHLADG\x12\x10\n\x03pos\x18\
+    \x01\x20\x01(\rR\x03pos\x12\x20\n\x0bLHHONKJPPDC\x18\x02\x20\x01(\rR\x0b\
+    LHHONKJPPDC\x12\x20\n\x0bKFGOKFKHOPB\x18\x03\x20\x01(\rR\x0bKFGOKFKHOPB\
+    \x12\x20\n\x0bLLLOOKPGGGG\x18\x04\x20\x01(\rR\x0bLLLOOKPGGGGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

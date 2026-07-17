@@ -32,8 +32,8 @@ pub struct StatisticEvent {
     pub type_: ::protobuf::EnumOrUnknown<super::BattleStaticticEventType::BattleStaticticEventType>,
     // @@protoc_insertion_point(field:StatisticEvent.LMMDHGCIHBL)
     pub LMMDHGCIHBL: u32,
-    // @@protoc_insertion_point(field:StatisticEvent.display_value)
-    pub display_value: u32,
+    // @@protoc_insertion_point(field:StatisticEvent.param)
+    pub param: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StatisticEvent.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl StatisticEvent {
             |m: &mut StatisticEvent| { &mut m.LMMDHGCIHBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &StatisticEvent| { &m.display_value },
-            |m: &mut StatisticEvent| { &mut m.display_value },
+            "param",
+            |m: &StatisticEvent| { &m.param },
+            |m: &mut StatisticEvent| { &mut m.param },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StatisticEvent>(
             "StatisticEvent",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for StatisticEvent {
                     self.LMMDHGCIHBL = is.read_uint32()?;
                 },
                 24 => {
-                    self.display_value = is.read_uint32()?;
+                    self.param = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,8 +113,8 @@ impl ::protobuf::Message for StatisticEvent {
         if self.LMMDHGCIHBL != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.LMMDHGCIHBL);
         }
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.display_value);
+        if self.param != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.param);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,8 +128,8 @@ impl ::protobuf::Message for StatisticEvent {
         if self.LMMDHGCIHBL != 0 {
             os.write_uint32(2, self.LMMDHGCIHBL)?;
         }
-        if self.display_value != 0 {
-            os.write_uint32(3, self.display_value)?;
+        if self.param != 0 {
+            os.write_uint32(3, self.param)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for StatisticEvent {
     fn clear(&mut self) {
         self.type_ = ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE);
         self.LMMDHGCIHBL = 0;
-        self.display_value = 0;
+        self.param = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for StatisticEvent {
         static instance: StatisticEvent = StatisticEvent {
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
             LMMDHGCIHBL: 0,
-            display_value: 0,
+            param: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for StatisticEvent {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StatisticEvent.proto\x1a\x1eBattleStaticticEventType.proto\"\x86\
-    \x01\n\x0eStatisticEvent\x12-\n\x04type\x18\x01\x20\x01(\x0e2\x19.Battle\
-    StaticticEventTypeR\x04type\x12\x20\n\x0bLMMDHGCIHBL\x18\x02\x20\x01(\rR\
-    \x0bLMMDHGCIHBL\x12#\n\rdisplay_value\x18\x03\x20\x01(\rR\x0cdisplayValu\
-    eb\x06proto3\
+    \n\x14StatisticEvent.proto\x1a\x1eBattleStaticticEventType.proto\"w\n\
+    \x0eStatisticEvent\x12-\n\x04type\x18\x01\x20\x01(\x0e2\x19.BattleStatic\
+    ticEventTypeR\x04type\x12\x20\n\x0bLMMDHGCIHBL\x18\x02\x20\x01(\rR\x0bLM\
+    MDHGCIHBL\x12\x14\n\x05param\x18\x03\x20\x01(\rR\x05paramb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADHGIJPHLEB {
     // message fields
-    // @@protoc_insertion_point(field:ADHGIJPHLEB.MFJCLCJNAFO)
-    pub MFJCLCJNAFO: ::std::vec::Vec<super::OBIMHNFFLEM::OBIMHNFFLEM>,
     // @@protoc_insertion_point(field:ADHGIJPHLEB.trait_id)
     pub trait_id: u32,
-    // @@protoc_insertion_point(field:ADHGIJPHLEB.KINKMHEAANP)
-    pub KINKMHEAANP: f64,
+    // @@protoc_insertion_point(field:ADHGIJPHLEB.MFJCLCJNAFO)
+    pub MFJCLCJNAFO: ::std::vec::Vec<super::OBIMHNFFLEM::OBIMHNFFLEM>,
     // @@protoc_insertion_point(field:ADHGIJPHLEB.damage)
     pub damage: f64,
+    // @@protoc_insertion_point(field:ADHGIJPHLEB.KINKMHEAANP)
+    pub KINKMHEAANP: f64,
     // special fields
     // @@protoc_insertion_point(special_field:ADHGIJPHLEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl ADHGIJPHLEB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trait_id",
+            |m: &ADHGIJPHLEB| { &m.trait_id },
+            |m: &mut ADHGIJPHLEB| { &mut m.trait_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MFJCLCJNAFO",
             |m: &ADHGIJPHLEB| { &m.MFJCLCJNAFO },
             |m: &mut ADHGIJPHLEB| { &mut m.MFJCLCJNAFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trait_id",
-            |m: &ADHGIJPHLEB| { &m.trait_id },
-            |m: &mut ADHGIJPHLEB| { &mut m.trait_id },
+            "damage",
+            |m: &ADHGIJPHLEB| { &m.damage },
+            |m: &mut ADHGIJPHLEB| { &mut m.damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KINKMHEAANP",
             |m: &ADHGIJPHLEB| { &m.KINKMHEAANP },
             |m: &mut ADHGIJPHLEB| { &mut m.KINKMHEAANP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage",
-            |m: &ADHGIJPHLEB| { &m.damage },
-            |m: &mut ADHGIJPHLEB| { &mut m.damage },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADHGIJPHLEB>(
             "ADHGIJPHLEB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ADHGIJPHLEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.MFJCLCJNAFO.push(is.read_message()?);
-                },
                 8 => {
                     self.trait_id = is.read_uint32()?;
                 },
-                33 => {
-                    self.KINKMHEAANP = is.read_double()?;
+                18 => {
+                    self.MFJCLCJNAFO.push(is.read_message()?);
                 },
                 25 => {
                     self.damage = is.read_double()?;
+                },
+                33 => {
+                    self.KINKMHEAANP = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ADHGIJPHLEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.trait_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.trait_id);
+        }
         for value in &self.MFJCLCJNAFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.trait_id);
-        }
-        if self.KINKMHEAANP != 0. {
+        if self.damage != 0. {
             my_size += 1 + 8;
         }
-        if self.damage != 0. {
+        if self.KINKMHEAANP != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ADHGIJPHLEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MFJCLCJNAFO {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.trait_id != 0 {
             os.write_uint32(1, self.trait_id)?;
         }
-        if self.KINKMHEAANP != 0. {
-            os.write_double(4, self.KINKMHEAANP)?;
-        }
+        for v in &self.MFJCLCJNAFO {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         if self.damage != 0. {
             os.write_double(3, self.damage)?;
+        }
+        if self.KINKMHEAANP != 0. {
+            os.write_double(4, self.KINKMHEAANP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ADHGIJPHLEB {
     }
 
     fn clear(&mut self) {
-        self.MFJCLCJNAFO.clear();
         self.trait_id = 0;
-        self.KINKMHEAANP = 0.;
+        self.MFJCLCJNAFO.clear();
         self.damage = 0.;
+        self.KINKMHEAANP = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADHGIJPHLEB {
         static instance: ADHGIJPHLEB = ADHGIJPHLEB {
-            MFJCLCJNAFO: ::std::vec::Vec::new(),
             trait_id: 0,
-            KINKMHEAANP: 0.,
+            MFJCLCJNAFO: ::std::vec::Vec::new(),
             damage: 0.,
+            KINKMHEAANP: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ADHGIJPHLEB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ADHGIJPHLEB.proto\x1a\x11OBIMHNFFLEM.proto\"\x92\x01\n\x0bADHGIJPH\
-    LEB\x12.\n\x0bMFJCLCJNAFO\x18\x02\x20\x03(\x0b2\x0c.OBIMHNFFLEMR\x0bMFJC\
-    LCJNAFO\x12\x19\n\x08trait_id\x18\x01\x20\x01(\rR\x07traitId\x12\x20\n\
-    \x0bKINKMHEAANP\x18\x04\x20\x01(\x01R\x0bKINKMHEAANP\x12\x16\n\x06damage\
-    \x18\x03\x20\x01(\x01R\x06damageb\x06proto3\
+    LEB\x12\x19\n\x08trait_id\x18\x01\x20\x01(\rR\x07traitId\x12.\n\x0bMFJCL\
+    CJNAFO\x18\x02\x20\x03(\x0b2\x0c.OBIMHNFFLEMR\x0bMFJCLCJNAFO\x12\x16\n\
+    \x06damage\x18\x03\x20\x01(\x01R\x06damage\x12\x20\n\x0bKINKMHEAANP\x18\
+    \x04\x20\x01(\x01R\x0bKINKMHEAANPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

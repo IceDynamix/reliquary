@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKCDIAAFICJ {
     // message fields
+    // @@protoc_insertion_point(field:CKCDIAAFICJ.BKPDKFLDLDD)
+    pub BKPDKFLDLDD: u32,
     // @@protoc_insertion_point(field:CKCDIAAFICJ.IFMOHNAAAMC)
     pub IFMOHNAAAMC: f64,
     // @@protoc_insertion_point(field:CKCDIAAFICJ.MMPHFLDBEKB)
     pub MMPHFLDBEKB: u32,
     // @@protoc_insertion_point(field:CKCDIAAFICJ.break_times)
     pub break_times: u32,
-    // @@protoc_insertion_point(field:CKCDIAAFICJ.BKPDKFLDLDD)
-    pub BKPDKFLDLDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CKCDIAAFICJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,11 @@ impl CKCDIAAFICJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BKPDKFLDLDD",
+            |m: &CKCDIAAFICJ| { &m.BKPDKFLDLDD },
+            |m: &mut CKCDIAAFICJ| { &mut m.BKPDKFLDLDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFMOHNAAAMC",
             |m: &CKCDIAAFICJ| { &m.IFMOHNAAAMC },
             |m: &mut CKCDIAAFICJ| { &mut m.IFMOHNAAAMC },
@@ -69,11 +74,6 @@ impl CKCDIAAFICJ {
             "break_times",
             |m: &CKCDIAAFICJ| { &m.break_times },
             |m: &mut CKCDIAAFICJ| { &mut m.break_times },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKPDKFLDLDD",
-            |m: &CKCDIAAFICJ| { &m.BKPDKFLDLDD },
-            |m: &mut CKCDIAAFICJ| { &mut m.BKPDKFLDLDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKCDIAAFICJ>(
             "CKCDIAAFICJ",
@@ -93,6 +93,9 @@ impl ::protobuf::Message for CKCDIAAFICJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.BKPDKFLDLDD = is.read_uint32()?;
+                },
                 17 => {
                     self.IFMOHNAAAMC = is.read_double()?;
                 },
@@ -101,9 +104,6 @@ impl ::protobuf::Message for CKCDIAAFICJ {
                 },
                 32 => {
                     self.break_times = is.read_uint32()?;
-                },
-                8 => {
-                    self.BKPDKFLDLDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,6 +117,9 @@ impl ::protobuf::Message for CKCDIAAFICJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BKPDKFLDLDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BKPDKFLDLDD);
+        }
         if self.IFMOHNAAAMC != 0. {
             my_size += 1 + 8;
         }
@@ -126,15 +129,15 @@ impl ::protobuf::Message for CKCDIAAFICJ {
         if self.break_times != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.break_times);
         }
-        if self.BKPDKFLDLDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BKPDKFLDLDD);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BKPDKFLDLDD != 0 {
+            os.write_uint32(1, self.BKPDKFLDLDD)?;
+        }
         if self.IFMOHNAAAMC != 0. {
             os.write_double(2, self.IFMOHNAAAMC)?;
         }
@@ -143,9 +146,6 @@ impl ::protobuf::Message for CKCDIAAFICJ {
         }
         if self.break_times != 0 {
             os.write_uint32(4, self.break_times)?;
-        }
-        if self.BKPDKFLDLDD != 0 {
-            os.write_uint32(1, self.BKPDKFLDLDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for CKCDIAAFICJ {
     }
 
     fn clear(&mut self) {
+        self.BKPDKFLDLDD = 0;
         self.IFMOHNAAAMC = 0.;
         self.MMPHFLDBEKB = 0;
         self.break_times = 0;
-        self.BKPDKFLDLDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKCDIAAFICJ {
         static instance: CKCDIAAFICJ = CKCDIAAFICJ {
+            BKPDKFLDLDD: 0,
             IFMOHNAAAMC: 0.,
             MMPHFLDBEKB: 0,
             break_times: 0,
-            BKPDKFLDLDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for CKCDIAAFICJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKCDIAAFICJ.proto\"\x94\x01\n\x0bCKCDIAAFICJ\x12\x20\n\x0bIFMOHNAA\
-    AMC\x18\x02\x20\x01(\x01R\x0bIFMOHNAAAMC\x12\x20\n\x0bMMPHFLDBEKB\x18\
-    \x03\x20\x01(\rR\x0bMMPHFLDBEKB\x12\x1f\n\x0bbreak_times\x18\x04\x20\x01\
-    (\rR\nbreakTimes\x12\x20\n\x0bBKPDKFLDLDD\x18\x01\x20\x01(\rR\x0bBKPDKFL\
-    DLDDb\x06proto3\
+    \n\x11CKCDIAAFICJ.proto\"\x94\x01\n\x0bCKCDIAAFICJ\x12\x20\n\x0bBKPDKFLD\
+    LDD\x18\x01\x20\x01(\rR\x0bBKPDKFLDLDD\x12\x20\n\x0bIFMOHNAAAMC\x18\x02\
+    \x20\x01(\x01R\x0bIFMOHNAAAMC\x12\x20\n\x0bMMPHFLDBEKB\x18\x03\x20\x01(\
+    \rR\x0bMMPHFLDBEKB\x12\x1f\n\x0bbreak_times\x18\x04\x20\x01(\rR\nbreakTi\
+    mesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

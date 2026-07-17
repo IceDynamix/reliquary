@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleMonsterParam {
     // message fields
-    // @@protoc_insertion_point(field:BattleMonsterParam.CPHIINKIDEB)
-    pub CPHIINKIDEB: u32,
-    // @@protoc_insertion_point(field:BattleMonsterParam.elite_group)
-    pub elite_group: u32,
-    // @@protoc_insertion_point(field:BattleMonsterParam.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:BattleMonsterParam.IEDEBFCCKNL)
-    pub IEDEBFCCKNL: u32,
     // @@protoc_insertion_point(field:BattleMonsterParam.hard_level_group)
     pub hard_level_group: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.elite_group)
+    pub elite_group: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.IEDEBFCCKNL)
+    pub IEDEBFCCKNL: u32,
+    // @@protoc_insertion_point(field:BattleMonsterParam.CPHIINKIDEB)
+    pub CPHIINKIDEB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleMonsterParam.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl BattleMonsterParam {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPHIINKIDEB",
-            |m: &BattleMonsterParam| { &m.CPHIINKIDEB },
-            |m: &mut BattleMonsterParam| { &mut m.CPHIINKIDEB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "elite_group",
-            |m: &BattleMonsterParam| { &m.elite_group },
-            |m: &mut BattleMonsterParam| { &mut m.elite_group },
+            "hard_level_group",
+            |m: &BattleMonsterParam| { &m.hard_level_group },
+            |m: &mut BattleMonsterParam| { &mut m.hard_level_group },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -73,14 +68,19 @@ impl BattleMonsterParam {
             |m: &mut BattleMonsterParam| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "elite_group",
+            |m: &BattleMonsterParam| { &m.elite_group },
+            |m: &mut BattleMonsterParam| { &mut m.elite_group },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IEDEBFCCKNL",
             |m: &BattleMonsterParam| { &m.IEDEBFCCKNL },
             |m: &mut BattleMonsterParam| { &mut m.IEDEBFCCKNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hard_level_group",
-            |m: &BattleMonsterParam| { &m.hard_level_group },
-            |m: &mut BattleMonsterParam| { &mut m.hard_level_group },
+            "CPHIINKIDEB",
+            |m: &BattleMonsterParam| { &m.CPHIINKIDEB },
+            |m: &mut BattleMonsterParam| { &mut m.CPHIINKIDEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleMonsterParam>(
             "BattleMonsterParam",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BattleMonsterParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CPHIINKIDEB = is.read_uint32()?;
-                },
-                24 => {
-                    self.elite_group = is.read_uint32()?;
+                8 => {
+                    self.hard_level_group = is.read_uint32()?;
                 },
                 16 => {
                     self.level = is.read_uint32()?;
                 },
+                24 => {
+                    self.elite_group = is.read_uint32()?;
+                },
                 32 => {
                     self.IEDEBFCCKNL = is.read_uint32()?;
                 },
-                8 => {
-                    self.hard_level_group = is.read_uint32()?;
+                40 => {
+                    self.CPHIINKIDEB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for BattleMonsterParam {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CPHIINKIDEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CPHIINKIDEB);
-        }
-        if self.elite_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.elite_group);
+        if self.hard_level_group != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.hard_level_group);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
+        if self.elite_group != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.elite_group);
+        }
         if self.IEDEBFCCKNL != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.IEDEBFCCKNL);
         }
-        if self.hard_level_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.hard_level_group);
+        if self.CPHIINKIDEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.CPHIINKIDEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for BattleMonsterParam {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CPHIINKIDEB != 0 {
-            os.write_uint32(5, self.CPHIINKIDEB)?;
-        }
-        if self.elite_group != 0 {
-            os.write_uint32(3, self.elite_group)?;
+        if self.hard_level_group != 0 {
+            os.write_uint32(1, self.hard_level_group)?;
         }
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
         }
+        if self.elite_group != 0 {
+            os.write_uint32(3, self.elite_group)?;
+        }
         if self.IEDEBFCCKNL != 0 {
             os.write_uint32(4, self.IEDEBFCCKNL)?;
         }
-        if self.hard_level_group != 0 {
-            os.write_uint32(1, self.hard_level_group)?;
+        if self.CPHIINKIDEB != 0 {
+            os.write_uint32(5, self.CPHIINKIDEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for BattleMonsterParam {
     }
 
     fn clear(&mut self) {
-        self.CPHIINKIDEB = 0;
-        self.elite_group = 0;
-        self.level = 0;
-        self.IEDEBFCCKNL = 0;
         self.hard_level_group = 0;
+        self.level = 0;
+        self.elite_group = 0;
+        self.IEDEBFCCKNL = 0;
+        self.CPHIINKIDEB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleMonsterParam {
         static instance: BattleMonsterParam = BattleMonsterParam {
-            CPHIINKIDEB: 0,
-            elite_group: 0,
-            level: 0,
-            IEDEBFCCKNL: 0,
             hard_level_group: 0,
+            level: 0,
+            elite_group: 0,
+            IEDEBFCCKNL: 0,
+            CPHIINKIDEB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for BattleMonsterParam {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18BattleMonsterParam.proto\"\xb9\x01\n\x12BattleMonsterParam\x12\x20\
-    \n\x0bCPHIINKIDEB\x18\x05\x20\x01(\rR\x0bCPHIINKIDEB\x12\x1f\n\x0belite_\
-    group\x18\x03\x20\x01(\rR\neliteGroup\x12\x14\n\x05level\x18\x02\x20\x01\
-    (\rR\x05level\x12\x20\n\x0bIEDEBFCCKNL\x18\x04\x20\x01(\rR\x0bIEDEBFCCKN\
-    L\x12(\n\x10hard_level_group\x18\x01\x20\x01(\rR\x0ehardLevelGroupb\x06p\
-    roto3\
+    \n\x18BattleMonsterParam.proto\"\xb9\x01\n\x12BattleMonsterParam\x12(\n\
+    \x10hard_level_group\x18\x01\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05\
+    level\x18\x02\x20\x01(\rR\x05level\x12\x1f\n\x0belite_group\x18\x03\x20\
+    \x01(\rR\neliteGroup\x12\x20\n\x0bIEDEBFCCKNL\x18\x04\x20\x01(\rR\x0bIED\
+    EBFCCKNL\x12\x20\n\x0bCPHIINKIDEB\x18\x05\x20\x01(\rR\x0bCPHIINKIDEBb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

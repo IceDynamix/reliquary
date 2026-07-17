@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDAOEKOEDHO {
     // message fields
-    // @@protoc_insertion_point(field:HDAOEKOEDHO.pos_index)
-    pub pos_index: u32,
+    // @@protoc_insertion_point(field:HDAOEKOEDHO.pos)
+    pub pos: u32,
     // @@protoc_insertion_point(field:HDAOEKOEDHO.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:HDAOEKOEDHO.HBONKLEOEEI)
@@ -54,9 +54,9 @@ impl HDAOEKOEDHO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &HDAOEKOEDHO| { &m.pos_index },
-            |m: &mut HDAOEKOEDHO| { &mut m.pos_index },
+            "pos",
+            |m: &HDAOEKOEDHO| { &m.pos },
+            |m: &mut HDAOEKOEDHO| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for HDAOEKOEDHO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.pos_index = is.read_uint32()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                48 => {
+                    self.pos = is.read_uint32()?;
                 },
                 64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                88 => {
                     self.HBONKLEOEEI = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HDAOEKOEDHO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.pos_index);
+        if self.pos != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.pos);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.HBONKLEOEEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HBONKLEOEEI);
+            my_size += ::protobuf::rt::uint32_size(11, self.HBONKLEOEEI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HDAOEKOEDHO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.pos_index != 0 {
-            os.write_uint32(13, self.pos_index)?;
+        if self.pos != 0 {
+            os.write_uint32(6, self.pos)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.HBONKLEOEEI != 0 {
-            os.write_uint32(8, self.HBONKLEOEEI)?;
+            os.write_uint32(11, self.HBONKLEOEEI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::Message for HDAOEKOEDHO {
     }
 
     fn clear(&mut self) {
-        self.pos_index = 0;
+        self.pos = 0;
         self.retcode = 0;
         self.HBONKLEOEEI = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for HDAOEKOEDHO {
 
     fn default_instance() -> &'static HDAOEKOEDHO {
         static instance: HDAOEKOEDHO = HDAOEKOEDHO {
-            pos_index: 0,
+            pos: 0,
             retcode: 0,
             HBONKLEOEEI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for HDAOEKOEDHO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDAOEKOEDHO.proto\"f\n\x0bHDAOEKOEDHO\x12\x1b\n\tpos_index\x18\r\
-    \x20\x01(\rR\x08posIndex\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07ret\
-    code\x12\x20\n\x0bHBONKLEOEEI\x18\x08\x20\x01(\rR\x0bHBONKLEOEEIb\x06pro\
-    to3\
+    \n\x11HDAOEKOEDHO.proto\"[\n\x0bHDAOEKOEDHO\x12\x10\n\x03pos\x18\x06\x20\
+    \x01(\rR\x03pos\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bHBONKLEOEEI\x18\x0b\x20\x01(\rR\x0bHBONKLEOEEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

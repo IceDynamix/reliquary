@@ -45,12 +45,12 @@ impl GridFightSeasonHandBookNotify {
         ::std::default::Default::default()
     }
 
-    // .NCHKFJPOHAH KBHGCCENEEC = 1655;
+    // .GridFightHandBookRoleInfo KBHGCCENEEC = 518;
 
-    pub fn KBHGCCENEEC(&self) -> &super::NCHKFJPOHAH::NCHKFJPOHAH {
+    pub fn KBHGCCENEEC(&self) -> &super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo {
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(ref v)) => v,
-            _ => <super::NCHKFJPOHAH::NCHKFJPOHAH as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -66,15 +66,15 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_KBHGCCENEEC(&mut self, v: super::NCHKFJPOHAH::NCHKFJPOHAH) {
+    pub fn set_KBHGCCENEEC(&mut self, v: super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo) {
         self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KBHGCCENEEC(&mut self) -> &mut super::NCHKFJPOHAH::NCHKFJPOHAH {
+    pub fn mut_KBHGCCENEEC(&mut self) -> &mut super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo {
         if let ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(super::NCHKFJPOHAH::NCHKFJPOHAH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo::new()));
         }
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(ref mut v)) => v,
@@ -83,23 +83,23 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Take field
-    pub fn take_KBHGCCENEEC(&mut self) -> super::NCHKFJPOHAH::NCHKFJPOHAH {
+    pub fn take_KBHGCCENEEC(&mut self) -> super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo {
         if self.has_KBHGCCENEEC() {
             match self.KKNBOACNCON.take() {
                 ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NCHKFJPOHAH::NCHKFJPOHAH::new()
+            super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo::new()
         }
     }
 
-    // .FCEILNCDMAH LNLDBNIGODI = 717;
+    // .GridFightHandBookEquipInfo LNLDBNIGODI = 1637;
 
-    pub fn LNLDBNIGODI(&self) -> &super::FCEILNCDMAH::FCEILNCDMAH {
+    pub fn LNLDBNIGODI(&self) -> &super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo {
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(ref v)) => v,
-            _ => <super::FCEILNCDMAH::FCEILNCDMAH as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -115,15 +115,15 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_LNLDBNIGODI(&mut self, v: super::FCEILNCDMAH::FCEILNCDMAH) {
+    pub fn set_LNLDBNIGODI(&mut self, v: super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo) {
         self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LNLDBNIGODI(&mut self) -> &mut super::FCEILNCDMAH::FCEILNCDMAH {
+    pub fn mut_LNLDBNIGODI(&mut self) -> &mut super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo {
         if let ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(super::FCEILNCDMAH::FCEILNCDMAH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo::new()));
         }
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(ref mut v)) => v,
@@ -132,23 +132,23 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Take field
-    pub fn take_LNLDBNIGODI(&mut self) -> super::FCEILNCDMAH::FCEILNCDMAH {
+    pub fn take_LNLDBNIGODI(&mut self) -> super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo {
         if self.has_LNLDBNIGODI() {
             match self.KKNBOACNCON.take() {
                 ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FCEILNCDMAH::FCEILNCDMAH::new()
+            super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo::new()
         }
     }
 
-    // .GKNIJKHENBF ODEJBBALEOA = 582;
+    // .GridFightHandBookAugmentInfo ODEJBBALEOA = 537;
 
-    pub fn ODEJBBALEOA(&self) -> &super::GKNIJKHENBF::GKNIJKHENBF {
+    pub fn ODEJBBALEOA(&self) -> &super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo {
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(ref v)) => v,
-            _ => <super::GKNIJKHENBF::GKNIJKHENBF as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -164,15 +164,15 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_ODEJBBALEOA(&mut self, v: super::GKNIJKHENBF::GKNIJKHENBF) {
+    pub fn set_ODEJBBALEOA(&mut self, v: super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo) {
         self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_ODEJBBALEOA(&mut self) -> &mut super::GKNIJKHENBF::GKNIJKHENBF {
+    pub fn mut_ODEJBBALEOA(&mut self) -> &mut super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo {
         if let ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(super::GKNIJKHENBF::GKNIJKHENBF::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo::new()));
         }
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(ref mut v)) => v,
@@ -181,23 +181,23 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Take field
-    pub fn take_ODEJBBALEOA(&mut self) -> super::GKNIJKHENBF::GKNIJKHENBF {
+    pub fn take_ODEJBBALEOA(&mut self) -> super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo {
         if self.has_ODEJBBALEOA() {
             match self.KKNBOACNCON.take() {
                 ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GKNIJKHENBF::GKNIJKHENBF::new()
+            super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo::new()
         }
     }
 
-    // .NEDHMLJKIOA HLHCCONOKCL = 559;
+    // .GridFightHandBookPortalInfo HLHCCONOKCL = 1531;
 
-    pub fn HLHCCONOKCL(&self) -> &super::NEDHMLJKIOA::NEDHMLJKIOA {
+    pub fn HLHCCONOKCL(&self) -> &super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo {
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(ref v)) => v,
-            _ => <super::NEDHMLJKIOA::NEDHMLJKIOA as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -213,15 +213,15 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_HLHCCONOKCL(&mut self, v: super::NEDHMLJKIOA::NEDHMLJKIOA) {
+    pub fn set_HLHCCONOKCL(&mut self, v: super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo) {
         self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HLHCCONOKCL(&mut self) -> &mut super::NEDHMLJKIOA::NEDHMLJKIOA {
+    pub fn mut_HLHCCONOKCL(&mut self) -> &mut super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo {
         if let ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(super::NEDHMLJKIOA::NEDHMLJKIOA::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo::new()));
         }
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(ref mut v)) => v,
@@ -230,23 +230,23 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Take field
-    pub fn take_HLHCCONOKCL(&mut self) -> super::NEDHMLJKIOA::NEDHMLJKIOA {
+    pub fn take_HLHCCONOKCL(&mut self) -> super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo {
         if self.has_HLHCCONOKCL() {
             match self.KKNBOACNCON.take() {
                 ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NEDHMLJKIOA::NEDHMLJKIOA::new()
+            super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo::new()
         }
     }
 
-    // .AHPHDNBNLPJ BNFHPKCIFCC = 1010;
+    // .GridFightHandBookMonsterInfo BNFHPKCIFCC = 1069;
 
-    pub fn BNFHPKCIFCC(&self) -> &super::AHPHDNBNLPJ::AHPHDNBNLPJ {
+    pub fn BNFHPKCIFCC(&self) -> &super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo {
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(ref v)) => v,
-            _ => <super::AHPHDNBNLPJ::AHPHDNBNLPJ as ::protobuf::Message>::default_instance(),
+            _ => <super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -262,15 +262,15 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_BNFHPKCIFCC(&mut self, v: super::AHPHDNBNLPJ::AHPHDNBNLPJ) {
+    pub fn set_BNFHPKCIFCC(&mut self, v: super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo) {
         self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BNFHPKCIFCC(&mut self) -> &mut super::AHPHDNBNLPJ::AHPHDNBNLPJ {
+    pub fn mut_BNFHPKCIFCC(&mut self) -> &mut super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo {
         if let ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(super::AHPHDNBNLPJ::AHPHDNBNLPJ::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo::new()));
         }
         match self.KKNBOACNCON {
             ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(ref mut v)) => v,
@@ -279,49 +279,49 @@ impl GridFightSeasonHandBookNotify {
     }
 
     // Take field
-    pub fn take_BNFHPKCIFCC(&mut self) -> super::AHPHDNBNLPJ::AHPHDNBNLPJ {
+    pub fn take_BNFHPKCIFCC(&mut self) -> super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo {
         if self.has_BNFHPKCIFCC() {
             match self.KKNBOACNCON.take() {
                 ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AHPHDNBNLPJ::AHPHDNBNLPJ::new()
+            super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NCHKFJPOHAH::NCHKFJPOHAH>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo>(
             "KBHGCCENEEC",
             GridFightSeasonHandBookNotify::has_KBHGCCENEEC,
             GridFightSeasonHandBookNotify::KBHGCCENEEC,
             GridFightSeasonHandBookNotify::mut_KBHGCCENEEC,
             GridFightSeasonHandBookNotify::set_KBHGCCENEEC,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FCEILNCDMAH::FCEILNCDMAH>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo>(
             "LNLDBNIGODI",
             GridFightSeasonHandBookNotify::has_LNLDBNIGODI,
             GridFightSeasonHandBookNotify::LNLDBNIGODI,
             GridFightSeasonHandBookNotify::mut_LNLDBNIGODI,
             GridFightSeasonHandBookNotify::set_LNLDBNIGODI,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKNIJKHENBF::GKNIJKHENBF>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo>(
             "ODEJBBALEOA",
             GridFightSeasonHandBookNotify::has_ODEJBBALEOA,
             GridFightSeasonHandBookNotify::ODEJBBALEOA,
             GridFightSeasonHandBookNotify::mut_ODEJBBALEOA,
             GridFightSeasonHandBookNotify::set_ODEJBBALEOA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NEDHMLJKIOA::NEDHMLJKIOA>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo>(
             "HLHCCONOKCL",
             GridFightSeasonHandBookNotify::has_HLHCCONOKCL,
             GridFightSeasonHandBookNotify::HLHCCONOKCL,
             GridFightSeasonHandBookNotify::mut_HLHCCONOKCL,
             GridFightSeasonHandBookNotify::set_HLHCCONOKCL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHPHDNBNLPJ::AHPHDNBNLPJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo>(
             "BNFHPKCIFCC",
             GridFightSeasonHandBookNotify::has_BNFHPKCIFCC,
             GridFightSeasonHandBookNotify::BNFHPKCIFCC,
@@ -347,19 +347,19 @@ impl ::protobuf::Message for GridFightSeasonHandBookNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                13242 => {
+                4146 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(is.read_message()?));
                 },
-                5738 => {
+                13098 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(is.read_message()?));
                 },
-                4658 => {
+                4298 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(is.read_message()?));
                 },
-                4474 => {
+                12250 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(is.read_message()?));
                 },
-                8082 => {
+                8554 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(is.read_message()?));
                 },
                 tag => {
@@ -407,19 +407,19 @@ impl ::protobuf::Message for GridFightSeasonHandBookNotify {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &grid_fight_season_hand_book_notify::KKNBOACNCON::KBHGCCENEEC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1655, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(518, v, os)?;
                 },
                 &grid_fight_season_hand_book_notify::KKNBOACNCON::LNLDBNIGODI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(717, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1637, v, os)?;
                 },
                 &grid_fight_season_hand_book_notify::KKNBOACNCON::ODEJBBALEOA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(582, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(537, v, os)?;
                 },
                 &grid_fight_season_hand_book_notify::KKNBOACNCON::HLHCCONOKCL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(559, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1531, v, os)?;
                 },
                 &grid_fight_season_hand_book_notify::KKNBOACNCON::BNFHPKCIFCC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1010, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1069, v, os)?;
                 },
             };
         }
@@ -482,15 +482,15 @@ pub mod grid_fight_season_hand_book_notify {
     // @@protoc_insertion_point(oneof:GridFightSeasonHandBookNotify.KKNBOACNCON)
     pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:GridFightSeasonHandBookNotify.KBHGCCENEEC)
-        KBHGCCENEEC(super::super::NCHKFJPOHAH::NCHKFJPOHAH),
+        KBHGCCENEEC(super::super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSeasonHandBookNotify.LNLDBNIGODI)
-        LNLDBNIGODI(super::super::FCEILNCDMAH::FCEILNCDMAH),
+        LNLDBNIGODI(super::super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSeasonHandBookNotify.ODEJBBALEOA)
-        ODEJBBALEOA(super::super::GKNIJKHENBF::GKNIJKHENBF),
+        ODEJBBALEOA(super::super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSeasonHandBookNotify.HLHCCONOKCL)
-        HLHCCONOKCL(super::super::NEDHMLJKIOA::NEDHMLJKIOA),
+        HLHCCONOKCL(super::super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSeasonHandBookNotify.BNFHPKCIFCC)
-        BNFHPKCIFCC(super::super::AHPHDNBNLPJ::AHPHDNBNLPJ),
+        BNFHPKCIFCC(super::super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -511,16 +511,18 @@ pub mod grid_fight_season_hand_book_notify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GridFightSeasonHandBookNotify.proto\x1a\x11AHPHDNBNLPJ.proto\x1a\x11F\
-    CEILNCDMAH.proto\x1a\x11GKNIJKHENBF.proto\x1a\x11NCHKFJPOHAH.proto\x1a\
-    \x11NEDHMLJKIOA.proto\"\xad\x02\n\x1dGridFightSeasonHandBookNotify\x121\
-    \n\x0bKBHGCCENEEC\x18\xf7\x0c\x20\x01(\x0b2\x0c.NCHKFJPOHAHH\0R\x0bKBHGC\
-    CENEEC\x121\n\x0bLNLDBNIGODI\x18\xcd\x05\x20\x01(\x0b2\x0c.FCEILNCDMAHH\
-    \0R\x0bLNLDBNIGODI\x121\n\x0bODEJBBALEOA\x18\xc6\x04\x20\x01(\x0b2\x0c.G\
-    KNIJKHENBFH\0R\x0bODEJBBALEOA\x121\n\x0bHLHCCONOKCL\x18\xaf\x04\x20\x01(\
-    \x0b2\x0c.NEDHMLJKIOAH\0R\x0bHLHCCONOKCL\x121\n\x0bBNFHPKCIFCC\x18\xf2\
-    \x07\x20\x01(\x0b2\x0c.AHPHDNBNLPJH\0R\x0bBNFHPKCIFCCB\r\n\x0bKKNBOACNCO\
-    Nb\x06proto3\
+    \n#GridFightSeasonHandBookNotify.proto\x1a\"GridFightHandBookAugmentInfo\
+    .proto\x1a\x20GridFightHandBookEquipInfo.proto\x1a\"GridFightHandBookMon\
+    sterInfo.proto\x1a!GridFightHandBookPortalInfo.proto\x1a\x1fGridFightHan\
+    dBookRoleInfo.proto\"\xfc\x02\n\x1dGridFightSeasonHandBookNotify\x12?\n\
+    \x0bKBHGCCENEEC\x18\x86\x04\x20\x01(\x0b2\x1a.GridFightHandBookRoleInfoH\
+    \0R\x0bKBHGCCENEEC\x12@\n\x0bLNLDBNIGODI\x18\xe5\x0c\x20\x01(\x0b2\x1b.G\
+    ridFightHandBookEquipInfoH\0R\x0bLNLDBNIGODI\x12B\n\x0bODEJBBALEOA\x18\
+    \x99\x04\x20\x01(\x0b2\x1d.GridFightHandBookAugmentInfoH\0R\x0bODEJBBALE\
+    OA\x12A\n\x0bHLHCCONOKCL\x18\xfb\x0b\x20\x01(\x0b2\x1c.GridFightHandBook\
+    PortalInfoH\0R\x0bHLHCCONOKCL\x12B\n\x0bBNFHPKCIFCC\x18\xad\x08\x20\x01(\
+    \x0b2\x1d.GridFightHandBookMonsterInfoH\0R\x0bBNFHPKCIFCCB\r\n\x0bKKNBOA\
+    CNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -538,11 +540,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::AHPHDNBNLPJ::file_descriptor().clone());
-            deps.push(super::FCEILNCDMAH::file_descriptor().clone());
-            deps.push(super::GKNIJKHENBF::file_descriptor().clone());
-            deps.push(super::NCHKFJPOHAH::file_descriptor().clone());
-            deps.push(super::NEDHMLJKIOA::file_descriptor().clone());
+            deps.push(super::GridFightHandBookAugmentInfo::file_descriptor().clone());
+            deps.push(super::GridFightHandBookEquipInfo::file_descriptor().clone());
+            deps.push(super::GridFightHandBookMonsterInfo::file_descriptor().clone());
+            deps.push(super::GridFightHandBookPortalInfo::file_descriptor().clone());
+            deps.push(super::GridFightHandBookRoleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightSeasonHandBookNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

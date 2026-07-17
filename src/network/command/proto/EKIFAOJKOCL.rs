@@ -45,7 +45,7 @@ impl EKIFAOJKOCL {
         ::std::default::Default::default()
     }
 
-    // uint32 unique_id = 15;
+    // uint32 unique_id = 14;
 
     pub fn unique_id(&self) -> u32 {
         match self.GBFHOGKMMEA {
@@ -70,7 +70,7 @@ impl EKIFAOJKOCL {
         self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(v))
     }
 
-    // uint32 JAMNNBEPPKE = 1;
+    // uint32 JAMNNBEPPKE = 13;
 
     pub fn JAMNNBEPPKE(&self) -> u32 {
         match self.GBFHOGKMMEA {
@@ -129,10 +129,10 @@ impl ::protobuf::Message for EKIFAOJKOCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::UniqueId(is.read_uint32()?));
                 },
-                8 => {
+                104 => {
                     self.GBFHOGKMMEA = ::std::option::Option::Some(ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(is.read_uint32()?));
                 },
                 tag => {
@@ -150,10 +150,10 @@ impl ::protobuf::Message for EKIFAOJKOCL {
         if let ::std::option::Option::Some(ref v) = self.GBFHOGKMMEA {
             match v {
                 &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(15, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
                 &ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
             };
         }
@@ -166,10 +166,10 @@ impl ::protobuf::Message for EKIFAOJKOCL {
         if let ::std::option::Option::Some(ref v) = self.GBFHOGKMMEA {
             match v {
                 &ekifaojkocl::GBFHOGKMMEA::UniqueId(v) => {
-                    os.write_uint32(15, v)?;
+                    os.write_uint32(14, v)?;
                 },
                 &ekifaojkocl::GBFHOGKMMEA::JAMNNBEPPKE(v) => {
-                    os.write_uint32(1, v)?;
+                    os.write_uint32(13, v)?;
                 },
             };
         }
@@ -252,9 +252,9 @@ pub mod ekifaojkocl {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EKIFAOJKOCL.proto\"_\n\x0bEKIFAOJKOCL\x12\x1d\n\tunique_id\x18\x0f\
-    \x20\x01(\rH\0R\x08uniqueId\x12\"\n\x0bJAMNNBEPPKE\x18\x01\x20\x01(\rH\0\
-    R\x0bJAMNNBEPPKEB\r\n\x0bGBFHOGKMMEAb\x06proto3\
+    \n\x11EKIFAOJKOCL.proto\"_\n\x0bEKIFAOJKOCL\x12\x1d\n\tunique_id\x18\x0e\
+    \x20\x01(\rH\0R\x08uniqueId\x12\"\n\x0bJAMNNBEPPKE\x18\r\x20\x01(\rH\0R\
+    \x0bJAMNNBEPPKEB\r\n\x0bGBFHOGKMMEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

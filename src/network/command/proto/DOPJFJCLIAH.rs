@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DOPJFJCLIAH {
     // message fields
-    // @@protoc_insertion_point(field:DOPJFJCLIAH.JLNEBLAKKOB)
-    pub JLNEBLAKKOB: bool,
     // @@protoc_insertion_point(field:DOPJFJCLIAH.LJOEMLOJDDP)
     pub LJOEMLOJDDP: bool,
+    // @@protoc_insertion_point(field:DOPJFJCLIAH.JLNEBLAKKOB)
+    pub JLNEBLAKKOB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DOPJFJCLIAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DOPJFJCLIAH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLNEBLAKKOB",
-            |m: &DOPJFJCLIAH| { &m.JLNEBLAKKOB },
-            |m: &mut DOPJFJCLIAH| { &mut m.JLNEBLAKKOB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJOEMLOJDDP",
             |m: &DOPJFJCLIAH| { &m.LJOEMLOJDDP },
             |m: &mut DOPJFJCLIAH| { &mut m.LJOEMLOJDDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLNEBLAKKOB",
+            |m: &DOPJFJCLIAH| { &m.JLNEBLAKKOB },
+            |m: &mut DOPJFJCLIAH| { &mut m.JLNEBLAKKOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DOPJFJCLIAH>(
             "DOPJFJCLIAH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DOPJFJCLIAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.JLNEBLAKKOB = is.read_bool()?;
-                },
                 8 => {
                     self.LJOEMLOJDDP = is.read_bool()?;
+                },
+                16 => {
+                    self.JLNEBLAKKOB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for DOPJFJCLIAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JLNEBLAKKOB != false {
+        if self.LJOEMLOJDDP != false {
             my_size += 1 + 1;
         }
-        if self.LJOEMLOJDDP != false {
+        if self.JLNEBLAKKOB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DOPJFJCLIAH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JLNEBLAKKOB != false {
-            os.write_bool(2, self.JLNEBLAKKOB)?;
-        }
         if self.LJOEMLOJDDP != false {
             os.write_bool(1, self.LJOEMLOJDDP)?;
+        }
+        if self.JLNEBLAKKOB != false {
+            os.write_bool(2, self.JLNEBLAKKOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DOPJFJCLIAH {
     }
 
     fn clear(&mut self) {
-        self.JLNEBLAKKOB = false;
         self.LJOEMLOJDDP = false;
+        self.JLNEBLAKKOB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DOPJFJCLIAH {
         static instance: DOPJFJCLIAH = DOPJFJCLIAH {
-            JLNEBLAKKOB: false,
             LJOEMLOJDDP: false,
+            JLNEBLAKKOB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DOPJFJCLIAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DOPJFJCLIAH.proto\"Q\n\x0bDOPJFJCLIAH\x12\x20\n\x0bJLNEBLAKKOB\x18\
-    \x02\x20\x01(\x08R\x0bJLNEBLAKKOB\x12\x20\n\x0bLJOEMLOJDDP\x18\x01\x20\
-    \x01(\x08R\x0bLJOEMLOJDDPb\x06proto3\
+    \n\x11DOPJFJCLIAH.proto\"Q\n\x0bDOPJFJCLIAH\x12\x20\n\x0bLJOEMLOJDDP\x18\
+    \x01\x20\x01(\x08R\x0bLJOEMLOJDDP\x12\x20\n\x0bJLNEBLAKKOB\x18\x02\x20\
+    \x01(\x08R\x0bJLNEBLAKKOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

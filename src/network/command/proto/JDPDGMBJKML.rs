@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JDPDGMBJKML {
     // message fields
-    // @@protoc_insertion_point(field:JDPDGMBJKML.AKBMAMDMOFD)
-    pub AKBMAMDMOFD: ::protobuf::MessageField<super::APFOIAIFHEN::APFOIAIFHEN>,
-    // @@protoc_insertion_point(field:JDPDGMBJKML.grid_game_role_list)
-    pub grid_game_role_list: ::std::vec::Vec<super::OIJHAJAIFFH::OIJHAJAIFFH>,
-    // @@protoc_insertion_point(field:JDPDGMBJKML.section_id)
-    pub section_id: u32,
-    // @@protoc_insertion_point(field:JDPDGMBJKML.DCAHJELNJNP)
-    pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:JDPDGMBJKML.uid)
     pub uid: u32,
     // @@protoc_insertion_point(field:JDPDGMBJKML.EHNJDIDABHD)
     pub EHNJDIDABHD: u32,
-    // @@protoc_insertion_point(field:JDPDGMBJKML.NHDBBIGPAFO)
-    pub NHDBBIGPAFO: u32,
     // @@protoc_insertion_point(field:JDPDGMBJKML.AACGBEBGDPE)
     pub AACGBEBGDPE: u32,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.NHDBBIGPAFO)
+    pub NHDBBIGPAFO: u32,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.DCAHJELNJNP)
+    pub DCAHJELNJNP: u32,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.section_id)
+    pub section_id: u32,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.grid_game_role_list)
+    pub grid_game_role_list: ::std::vec::Vec<super::OIJHAJAIFFH::OIJHAJAIFFH>,
+    // @@protoc_insertion_point(field:JDPDGMBJKML.AKBMAMDMOFD)
+    pub AKBMAMDMOFD: ::protobuf::MessageField<super::APFOIAIFHEN::APFOIAIFHEN>,
     // special fields
     // @@protoc_insertion_point(special_field:JDPDGMBJKML.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,26 +63,6 @@ impl JDPDGMBJKML {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::APFOIAIFHEN::APFOIAIFHEN>(
-            "AKBMAMDMOFD",
-            |m: &JDPDGMBJKML| { &m.AKBMAMDMOFD },
-            |m: &mut JDPDGMBJKML| { &mut m.AKBMAMDMOFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_game_role_list",
-            |m: &JDPDGMBJKML| { &m.grid_game_role_list },
-            |m: &mut JDPDGMBJKML| { &mut m.grid_game_role_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &JDPDGMBJKML| { &m.section_id },
-            |m: &mut JDPDGMBJKML| { &mut m.section_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCAHJELNJNP",
-            |m: &JDPDGMBJKML| { &m.DCAHJELNJNP },
-            |m: &mut JDPDGMBJKML| { &mut m.DCAHJELNJNP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &JDPDGMBJKML| { &m.uid },
@@ -94,14 +74,34 @@ impl JDPDGMBJKML {
             |m: &mut JDPDGMBJKML| { &mut m.EHNJDIDABHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AACGBEBGDPE",
+            |m: &JDPDGMBJKML| { &m.AACGBEBGDPE },
+            |m: &mut JDPDGMBJKML| { &mut m.AACGBEBGDPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NHDBBIGPAFO",
             |m: &JDPDGMBJKML| { &m.NHDBBIGPAFO },
             |m: &mut JDPDGMBJKML| { &mut m.NHDBBIGPAFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AACGBEBGDPE",
-            |m: &JDPDGMBJKML| { &m.AACGBEBGDPE },
-            |m: &mut JDPDGMBJKML| { &mut m.AACGBEBGDPE },
+            "DCAHJELNJNP",
+            |m: &JDPDGMBJKML| { &m.DCAHJELNJNP },
+            |m: &mut JDPDGMBJKML| { &mut m.DCAHJELNJNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "section_id",
+            |m: &JDPDGMBJKML| { &m.section_id },
+            |m: &mut JDPDGMBJKML| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_game_role_list",
+            |m: &JDPDGMBJKML| { &m.grid_game_role_list },
+            |m: &mut JDPDGMBJKML| { &mut m.grid_game_role_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::APFOIAIFHEN::APFOIAIFHEN>(
+            "AKBMAMDMOFD",
+            |m: &JDPDGMBJKML| { &m.AKBMAMDMOFD },
+            |m: &mut JDPDGMBJKML| { &mut m.AKBMAMDMOFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JDPDGMBJKML>(
             "JDPDGMBJKML",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for JDPDGMBJKML {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKBMAMDMOFD)?;
-                },
-                58 => {
-                    self.grid_game_role_list.push(is.read_message()?);
-                },
-                48 => {
-                    self.section_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.DCAHJELNJNP = is.read_uint32()?;
-                },
                 8 => {
                     self.uid = is.read_uint32()?;
                 },
                 16 => {
                     self.EHNJDIDABHD = is.read_uint32()?;
                 },
+                24 => {
+                    self.AACGBEBGDPE = is.read_uint32()?;
+                },
                 32 => {
                     self.NHDBBIGPAFO = is.read_uint32()?;
                 },
-                24 => {
-                    self.AACGBEBGDPE = is.read_uint32()?;
+                40 => {
+                    self.DCAHJELNJNP = is.read_uint32()?;
+                },
+                48 => {
+                    self.section_id = is.read_uint32()?;
+                },
+                58 => {
+                    self.grid_game_role_list.push(is.read_message()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKBMAMDMOFD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,31 +157,31 @@ impl ::protobuf::Message for JDPDGMBJKML {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AKBMAMDMOFD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.grid_game_role_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.section_id);
-        }
-        if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DCAHJELNJNP);
-        }
         if self.uid != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.uid);
         }
         if self.EHNJDIDABHD != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.EHNJDIDABHD);
         }
+        if self.AACGBEBGDPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.AACGBEBGDPE);
+        }
         if self.NHDBBIGPAFO != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.NHDBBIGPAFO);
         }
-        if self.AACGBEBGDPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AACGBEBGDPE);
+        if self.DCAHJELNJNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.DCAHJELNJNP);
+        }
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.section_id);
+        }
+        for value in &self.grid_game_role_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.AKBMAMDMOFD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,29 +189,29 @@ impl ::protobuf::Message for JDPDGMBJKML {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AKBMAMDMOFD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        for v in &self.grid_game_role_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.section_id != 0 {
-            os.write_uint32(6, self.section_id)?;
-        }
-        if self.DCAHJELNJNP != 0 {
-            os.write_uint32(5, self.DCAHJELNJNP)?;
-        }
         if self.uid != 0 {
             os.write_uint32(1, self.uid)?;
         }
         if self.EHNJDIDABHD != 0 {
             os.write_uint32(2, self.EHNJDIDABHD)?;
         }
+        if self.AACGBEBGDPE != 0 {
+            os.write_uint32(3, self.AACGBEBGDPE)?;
+        }
         if self.NHDBBIGPAFO != 0 {
             os.write_uint32(4, self.NHDBBIGPAFO)?;
         }
-        if self.AACGBEBGDPE != 0 {
-            os.write_uint32(3, self.AACGBEBGDPE)?;
+        if self.DCAHJELNJNP != 0 {
+            os.write_uint32(5, self.DCAHJELNJNP)?;
+        }
+        if self.section_id != 0 {
+            os.write_uint32(6, self.section_id)?;
+        }
+        for v in &self.grid_game_role_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if let Some(v) = self.AKBMAMDMOFD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,27 +230,27 @@ impl ::protobuf::Message for JDPDGMBJKML {
     }
 
     fn clear(&mut self) {
-        self.AKBMAMDMOFD.clear();
-        self.grid_game_role_list.clear();
-        self.section_id = 0;
-        self.DCAHJELNJNP = 0;
         self.uid = 0;
         self.EHNJDIDABHD = 0;
-        self.NHDBBIGPAFO = 0;
         self.AACGBEBGDPE = 0;
+        self.NHDBBIGPAFO = 0;
+        self.DCAHJELNJNP = 0;
+        self.section_id = 0;
+        self.grid_game_role_list.clear();
+        self.AKBMAMDMOFD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JDPDGMBJKML {
         static instance: JDPDGMBJKML = JDPDGMBJKML {
-            AKBMAMDMOFD: ::protobuf::MessageField::none(),
-            grid_game_role_list: ::std::vec::Vec::new(),
-            section_id: 0,
-            DCAHJELNJNP: 0,
             uid: 0,
             EHNJDIDABHD: 0,
-            NHDBBIGPAFO: 0,
             AACGBEBGDPE: 0,
+            NHDBBIGPAFO: 0,
+            DCAHJELNJNP: 0,
+            section_id: 0,
+            grid_game_role_list: ::std::vec::Vec::new(),
+            AKBMAMDMOFD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,14 +276,14 @@ impl ::protobuf::reflect::ProtobufValue for JDPDGMBJKML {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JDPDGMBJKML.proto\x1a\x11APFOIAIFHEN.proto\x1a\x11OIJHAJAIFFH.prot\
-    o\"\xb3\x02\n\x0bJDPDGMBJKML\x12.\n\x0bAKBMAMDMOFD\x18\x08\x20\x01(\x0b2\
-    \x0c.APFOIAIFHENR\x0bAKBMAMDMOFD\x12;\n\x13grid_game_role_list\x18\x07\
-    \x20\x03(\x0b2\x0c.OIJHAJAIFFHR\x10gridGameRoleList\x12\x1d\n\nsection_i\
-    d\x18\x06\x20\x01(\rR\tsectionId\x12\x20\n\x0bDCAHJELNJNP\x18\x05\x20\
-    \x01(\rR\x0bDCAHJELNJNP\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\
-    \x20\n\x0bEHNJDIDABHD\x18\x02\x20\x01(\rR\x0bEHNJDIDABHD\x12\x20\n\x0bNH\
-    DBBIGPAFO\x18\x04\x20\x01(\rR\x0bNHDBBIGPAFO\x12\x20\n\x0bAACGBEBGDPE\
-    \x18\x03\x20\x01(\rR\x0bAACGBEBGDPEb\x06proto3\
+    o\"\xb3\x02\n\x0bJDPDGMBJKML\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\
+    \x12\x20\n\x0bEHNJDIDABHD\x18\x02\x20\x01(\rR\x0bEHNJDIDABHD\x12\x20\n\
+    \x0bAACGBEBGDPE\x18\x03\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bNHDBBIGP\
+    AFO\x18\x04\x20\x01(\rR\x0bNHDBBIGPAFO\x12\x20\n\x0bDCAHJELNJNP\x18\x05\
+    \x20\x01(\rR\x0bDCAHJELNJNP\x12\x1d\n\nsection_id\x18\x06\x20\x01(\rR\ts\
+    ectionId\x12;\n\x13grid_game_role_list\x18\x07\x20\x03(\x0b2\x0c.OIJHAJA\
+    IFFHR\x10gridGameRoleList\x12.\n\x0bAKBMAMDMOFD\x18\x08\x20\x01(\x0b2\
+    \x0c.APFOIAIFHENR\x0bAKBMAMDMOFDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

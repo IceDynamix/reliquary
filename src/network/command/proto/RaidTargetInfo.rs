@@ -30,10 +30,10 @@ pub struct RaidTargetInfo {
     // message fields
     // @@protoc_insertion_point(field:RaidTargetInfo.KKCKMCDGCGK)
     pub KKCKMCDGCGK: u32,
-    // @@protoc_insertion_point(field:RaidTargetInfo.LCILPGIDEAC)
-    pub LCILPGIDEAC: u32,
     // @@protoc_insertion_point(field:RaidTargetInfo.KCEEHIOCBPC)
     pub KCEEHIOCBPC: ::protobuf::EnumOrUnknown<super::MJPGDJIGLKO::MJPGDJIGLKO>,
+    // @@protoc_insertion_point(field:RaidTargetInfo.LCILPGIDEAC)
+    pub LCILPGIDEAC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidTargetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl RaidTargetInfo {
             |m: &mut RaidTargetInfo| { &mut m.KKCKMCDGCGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCILPGIDEAC",
-            |m: &RaidTargetInfo| { &m.LCILPGIDEAC },
-            |m: &mut RaidTargetInfo| { &mut m.LCILPGIDEAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KCEEHIOCBPC",
             |m: &RaidTargetInfo| { &m.KCEEHIOCBPC },
             |m: &mut RaidTargetInfo| { &mut m.KCEEHIOCBPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LCILPGIDEAC",
+            |m: &RaidTargetInfo| { &m.LCILPGIDEAC },
+            |m: &mut RaidTargetInfo| { &mut m.LCILPGIDEAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidTargetInfo>(
             "RaidTargetInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                64 => {
                     self.KKCKMCDGCGK = is.read_uint32()?;
+                },
+                80 => {
+                    self.KCEEHIOCBPC = is.read_enum_or_unknown()?;
                 },
                 88 => {
                     self.LCILPGIDEAC = is.read_uint32()?;
-                },
-                48 => {
-                    self.KCEEHIOCBPC = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RaidTargetInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KKCKMCDGCGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KKCKMCDGCGK);
+            my_size += ::protobuf::rt::uint32_size(8, self.KKCKMCDGCGK);
+        }
+        if self.KCEEHIOCBPC != ::protobuf::EnumOrUnknown::new(super::MJPGDJIGLKO::MJPGDJIGLKO::MJPGDJIGLKO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.KCEEHIOCBPC.value());
         }
         if self.LCILPGIDEAC != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.LCILPGIDEAC);
-        }
-        if self.KCEEHIOCBPC != ::protobuf::EnumOrUnknown::new(super::MJPGDJIGLKO::MJPGDJIGLKO::MJPGDJIGLKO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.KCEEHIOCBPC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RaidTargetInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KKCKMCDGCGK != 0 {
-            os.write_uint32(13, self.KKCKMCDGCGK)?;
+            os.write_uint32(8, self.KKCKMCDGCGK)?;
+        }
+        if self.KCEEHIOCBPC != ::protobuf::EnumOrUnknown::new(super::MJPGDJIGLKO::MJPGDJIGLKO::MJPGDJIGLKO_NLCDGIPGFDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.KCEEHIOCBPC))?;
         }
         if self.LCILPGIDEAC != 0 {
             os.write_uint32(11, self.LCILPGIDEAC)?;
-        }
-        if self.KCEEHIOCBPC != ::protobuf::EnumOrUnknown::new(super::MJPGDJIGLKO::MJPGDJIGLKO::MJPGDJIGLKO_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KCEEHIOCBPC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RaidTargetInfo {
 
     fn clear(&mut self) {
         self.KKCKMCDGCGK = 0;
-        self.LCILPGIDEAC = 0;
         self.KCEEHIOCBPC = ::protobuf::EnumOrUnknown::new(super::MJPGDJIGLKO::MJPGDJIGLKO::MJPGDJIGLKO_NLCDGIPGFDJ);
+        self.LCILPGIDEAC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidTargetInfo {
         static instance: RaidTargetInfo = RaidTargetInfo {
             KKCKMCDGCGK: 0,
-            LCILPGIDEAC: 0,
             KCEEHIOCBPC: ::protobuf::EnumOrUnknown::from_i32(0),
+            LCILPGIDEAC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidTargetInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RaidTargetInfo.proto\x1a\x11MJPGDJIGLKO.proto\"\x84\x01\n\x0eRaidT\
-    argetInfo\x12\x20\n\x0bKKCKMCDGCGK\x18\r\x20\x01(\rR\x0bKKCKMCDGCGK\x12\
-    \x20\n\x0bLCILPGIDEAC\x18\x0b\x20\x01(\rR\x0bLCILPGIDEAC\x12.\n\x0bKCEEH\
-    IOCBPC\x18\x06\x20\x01(\x0e2\x0c.MJPGDJIGLKOR\x0bKCEEHIOCBPCb\x06proto3\
+    argetInfo\x12\x20\n\x0bKKCKMCDGCGK\x18\x08\x20\x01(\rR\x0bKKCKMCDGCGK\
+    \x12.\n\x0bKCEEHIOCBPC\x18\n\x20\x01(\x0e2\x0c.MJPGDJIGLKOR\x0bKCEEHIOCB\
+    PC\x12\x20\n\x0bLCILPGIDEAC\x18\x0b\x20\x01(\rR\x0bLCILPGIDEACb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

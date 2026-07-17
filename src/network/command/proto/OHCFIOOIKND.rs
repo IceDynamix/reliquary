@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OHCFIOOIKND {
     // message fields
-    // @@protoc_insertion_point(field:OHCFIOOIKND.LNFCBCDNFDL)
-    pub LNFCBCDNFDL: ::std::vec::Vec<super::LIONJNJEBBF::LIONJNJEBBF>,
     // @@protoc_insertion_point(field:OHCFIOOIKND.ILKLAJBGKKI)
     pub ILKLAJBGKKI: ::std::vec::Vec<super::AOMMAFEOBOA::AOMMAFEOBOA>,
+    // @@protoc_insertion_point(field:OHCFIOOIKND.LNFCBCDNFDL)
+    pub LNFCBCDNFDL: ::std::vec::Vec<super::LIONJNJEBBF::LIONJNJEBBF>,
     // special fields
     // @@protoc_insertion_point(special_field:OHCFIOOIKND.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OHCFIOOIKND {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LNFCBCDNFDL",
-            |m: &OHCFIOOIKND| { &m.LNFCBCDNFDL },
-            |m: &mut OHCFIOOIKND| { &mut m.LNFCBCDNFDL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ILKLAJBGKKI",
             |m: &OHCFIOOIKND| { &m.ILKLAJBGKKI },
             |m: &mut OHCFIOOIKND| { &mut m.ILKLAJBGKKI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LNFCBCDNFDL",
+            |m: &OHCFIOOIKND| { &m.LNFCBCDNFDL },
+            |m: &mut OHCFIOOIKND| { &mut m.LNFCBCDNFDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHCFIOOIKND>(
             "OHCFIOOIKND",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OHCFIOOIKND {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.LNFCBCDNFDL.push(is.read_message()?);
-                },
-                10 => {
+                34 => {
                     self.ILKLAJBGKKI.push(is.read_message()?);
+                },
+                74 => {
+                    self.LNFCBCDNFDL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OHCFIOOIKND {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LNFCBCDNFDL {
+        for value in &self.ILKLAJBGKKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.ILKLAJBGKKI {
+        for value in &self.LNFCBCDNFDL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OHCFIOOIKND {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LNFCBCDNFDL {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         for v in &self.ILKLAJBGKKI {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        for v in &self.LNFCBCDNFDL {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for OHCFIOOIKND {
     }
 
     fn clear(&mut self) {
-        self.LNFCBCDNFDL.clear();
         self.ILKLAJBGKKI.clear();
+        self.LNFCBCDNFDL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHCFIOOIKND {
         static instance: OHCFIOOIKND = OHCFIOOIKND {
-            LNFCBCDNFDL: ::std::vec::Vec::new(),
             ILKLAJBGKKI: ::std::vec::Vec::new(),
+            LNFCBCDNFDL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for OHCFIOOIKND {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OHCFIOOIKND.proto\x1a\x11AOMMAFEOBOA.proto\x1a\x11LIONJNJEBBF.prot\
-    o\"m\n\x0bOHCFIOOIKND\x12.\n\x0bLNFCBCDNFDL\x18\x06\x20\x03(\x0b2\x0c.LI\
-    ONJNJEBBFR\x0bLNFCBCDNFDL\x12.\n\x0bILKLAJBGKKI\x18\x01\x20\x03(\x0b2\
-    \x0c.AOMMAFEOBOAR\x0bILKLAJBGKKIb\x06proto3\
+    o\"m\n\x0bOHCFIOOIKND\x12.\n\x0bILKLAJBGKKI\x18\x04\x20\x03(\x0b2\x0c.AO\
+    MMAFEOBOAR\x0bILKLAJBGKKI\x12.\n\x0bLNFCBCDNFDL\x18\t\x20\x03(\x0b2\x0c.\
+    LIONJNJEBBFR\x0bLNFCBCDNFDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

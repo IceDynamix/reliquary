@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDDLALFAMKO {
     // message fields
-    // @@protoc_insertion_point(field:HDDLALFAMKO.LPBBJFFNACA)
-    pub LPBBJFFNACA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HDDLALFAMKO.KDJACPBDHAE)
     pub KDJACPBDHAE: ::protobuf::EnumOrUnknown<super::LAEHICCBBFN::LAEHICCBBFN>,
+    // @@protoc_insertion_point(field:HDDLALFAMKO.LPBBJFFNACA)
+    pub LPBBJFFNACA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:HDDLALFAMKO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HDDLALFAMKO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LPBBJFFNACA",
-            |m: &HDDLALFAMKO| { &m.LPBBJFFNACA },
-            |m: &mut HDDLALFAMKO| { &mut m.LPBBJFFNACA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDJACPBDHAE",
             |m: &HDDLALFAMKO| { &m.KDJACPBDHAE },
             |m: &mut HDDLALFAMKO| { &mut m.KDJACPBDHAE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LPBBJFFNACA",
+            |m: &HDDLALFAMKO| { &m.LPBBJFFNACA },
+            |m: &mut HDDLALFAMKO| { &mut m.LPBBJFFNACA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDDLALFAMKO>(
             "HDDLALFAMKO",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for HDDLALFAMKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                48 => {
+                    self.KDJACPBDHAE = is.read_enum_or_unknown()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.LPBBJFFNACA)?;
                 },
-                80 => {
+                120 => {
                     self.LPBBJFFNACA.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.KDJACPBDHAE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for HDDLALFAMKO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LPBBJFFNACA);
         if self.KDJACPBDHAE != ::protobuf::EnumOrUnknown::new(super::LAEHICCBBFN::LAEHICCBBFN::LAEHICCBBFN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(3, self.KDJACPBDHAE.value());
+            my_size += ::protobuf::rt::int32_size(6, self.KDJACPBDHAE.value());
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LPBBJFFNACA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.LPBBJFFNACA)?;
         if self.KDJACPBDHAE != ::protobuf::EnumOrUnknown::new(super::LAEHICCBBFN::LAEHICCBBFN::LAEHICCBBFN_NLCDGIPGFDJ) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KDJACPBDHAE))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KDJACPBDHAE))?;
         }
+        os.write_repeated_packed_uint32(15, &self.LPBBJFFNACA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for HDDLALFAMKO {
     }
 
     fn clear(&mut self) {
-        self.LPBBJFFNACA.clear();
         self.KDJACPBDHAE = ::protobuf::EnumOrUnknown::new(super::LAEHICCBBFN::LAEHICCBBFN::LAEHICCBBFN_NLCDGIPGFDJ);
+        self.LPBBJFFNACA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDDLALFAMKO {
         static instance: HDDLALFAMKO = HDDLALFAMKO {
-            LPBBJFFNACA: ::std::vec::Vec::new(),
             KDJACPBDHAE: ::protobuf::EnumOrUnknown::from_i32(0),
+            LPBBJFFNACA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for HDDLALFAMKO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDDLALFAMKO.proto\x1a\x11LAEHICCBBFN.proto\"_\n\x0bHDDLALFAMKO\x12\
-    \x20\n\x0bLPBBJFFNACA\x18\n\x20\x03(\rR\x0bLPBBJFFNACA\x12.\n\x0bKDJACPB\
-    DHAE\x18\x03\x20\x01(\x0e2\x0c.LAEHICCBBFNR\x0bKDJACPBDHAEb\x06proto3\
+    .\n\x0bKDJACPBDHAE\x18\x06\x20\x01(\x0e2\x0c.LAEHICCBBFNR\x0bKDJACPBDHAE\
+    \x12\x20\n\x0bLPBBJFFNACA\x18\x0f\x20\x03(\rR\x0bLPBBJFFNACAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

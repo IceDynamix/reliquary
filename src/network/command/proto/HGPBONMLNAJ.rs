@@ -86,13 +86,13 @@ impl ::protobuf::Message for HGPBONMLNAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                8 => {
                     self.progress = is.read_uint32()?;
                 },
-                24 => {
+                56 => {
                     self.IBEFDOMBEHM = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HGPBONMLNAJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.progress);
+            my_size += ::protobuf::rt::uint32_size(1, self.progress);
         }
         if self.IBEFDOMBEHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IBEFDOMBEHM);
+            my_size += ::protobuf::rt::uint32_size(7, self.IBEFDOMBEHM);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::DBKAAJAEGNM::DBKAAJAEGNM::DBKAAJAEGNM_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(10, self.status.value());
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HGPBONMLNAJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.progress != 0 {
-            os.write_uint32(14, self.progress)?;
+            os.write_uint32(1, self.progress)?;
         }
         if self.IBEFDOMBEHM != 0 {
-            os.write_uint32(3, self.IBEFDOMBEHM)?;
+            os.write_uint32(7, self.IBEFDOMBEHM)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::DBKAAJAEGNM::DBKAAJAEGNM::DBKAAJAEGNM_NLCDGIPGFDJ) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HGPBONMLNAJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGPBONMLNAJ.proto\x1a\x11DBKAAJAEGNM.proto\"q\n\x0bHGPBONMLNAJ\x12\
-    \x1a\n\x08progress\x18\x0e\x20\x01(\rR\x08progress\x12\x20\n\x0bIBEFDOMB\
-    EHM\x18\x03\x20\x01(\rR\x0bIBEFDOMBEHM\x12$\n\x06status\x18\n\x20\x01(\
+    \x1a\n\x08progress\x18\x01\x20\x01(\rR\x08progress\x12\x20\n\x0bIBEFDOMB\
+    EHM\x18\x07\x20\x01(\rR\x0bIBEFDOMBEHM\x12$\n\x06status\x18\x0b\x20\x01(\
     \x0e2\x0c.DBKAAJAEGNMR\x06statusb\x06proto3\
 ";
 

@@ -30,12 +30,10 @@ pub struct DLEKOLHCNIE {
     // message fields
     // @@protoc_insertion_point(field:DLEKOLHCNIE.FJKHIFDJMDB)
     pub FJKHIFDJMDB: bool,
-    // @@protoc_insertion_point(field:DLEKOLHCNIE.LMLNHNMKOOC)
-    pub LMLNHNMKOOC: bool,
     // @@protoc_insertion_point(field:DLEKOLHCNIE.is_taken_reward)
     pub is_taken_reward: bool,
-    // @@protoc_insertion_point(field:DLEKOLHCNIE.GNACLLNFHFD)
-    pub GNACLLNFHFD: bool,
+    // @@protoc_insertion_point(field:DLEKOLHCNIE.is_unlock)
+    pub is_unlock: bool,
     // @@protoc_insertion_point(field:DLEKOLHCNIE.area_id)
     pub area_id: u32,
     // special fields
@@ -55,7 +53,7 @@ impl DLEKOLHCNIE {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJKHIFDJMDB",
@@ -63,19 +61,14 @@ impl DLEKOLHCNIE {
             |m: &mut DLEKOLHCNIE| { &mut m.FJKHIFDJMDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMLNHNMKOOC",
-            |m: &DLEKOLHCNIE| { &m.LMLNHNMKOOC },
-            |m: &mut DLEKOLHCNIE| { &mut m.LMLNHNMKOOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_taken_reward",
             |m: &DLEKOLHCNIE| { &m.is_taken_reward },
             |m: &mut DLEKOLHCNIE| { &mut m.is_taken_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNACLLNFHFD",
-            |m: &DLEKOLHCNIE| { &m.GNACLLNFHFD },
-            |m: &mut DLEKOLHCNIE| { &mut m.GNACLLNFHFD },
+            "is_unlock",
+            |m: &DLEKOLHCNIE| { &m.is_unlock },
+            |m: &mut DLEKOLHCNIE| { &mut m.is_unlock },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -100,19 +93,16 @@ impl ::protobuf::Message for DLEKOLHCNIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                72 => {
                     self.FJKHIFDJMDB = is.read_bool()?;
                 },
-                88 => {
-                    self.LMLNHNMKOOC = is.read_bool()?;
-                },
-                104 => {
+                80 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
-                8 => {
-                    self.GNACLLNFHFD = is.read_bool()?;
+                88 => {
+                    self.is_unlock = is.read_bool()?;
                 },
-                112 => {
+                120 => {
                     self.area_id = is.read_uint32()?;
                 },
                 tag => {
@@ -130,17 +120,14 @@ impl ::protobuf::Message for DLEKOLHCNIE {
         if self.FJKHIFDJMDB != false {
             my_size += 1 + 1;
         }
-        if self.LMLNHNMKOOC != false {
-            my_size += 1 + 1;
-        }
         if self.is_taken_reward != false {
             my_size += 1 + 1;
         }
-        if self.GNACLLNFHFD != false {
+        if self.is_unlock != false {
             my_size += 1 + 1;
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +136,16 @@ impl ::protobuf::Message for DLEKOLHCNIE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FJKHIFDJMDB != false {
-            os.write_bool(6, self.FJKHIFDJMDB)?;
-        }
-        if self.LMLNHNMKOOC != false {
-            os.write_bool(11, self.LMLNHNMKOOC)?;
+            os.write_bool(9, self.FJKHIFDJMDB)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(13, self.is_taken_reward)?;
+            os.write_bool(10, self.is_taken_reward)?;
         }
-        if self.GNACLLNFHFD != false {
-            os.write_bool(1, self.GNACLLNFHFD)?;
+        if self.is_unlock != false {
+            os.write_bool(11, self.is_unlock)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(14, self.area_id)?;
+            os.write_uint32(15, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,9 +165,8 @@ impl ::protobuf::Message for DLEKOLHCNIE {
 
     fn clear(&mut self) {
         self.FJKHIFDJMDB = false;
-        self.LMLNHNMKOOC = false;
         self.is_taken_reward = false;
-        self.GNACLLNFHFD = false;
+        self.is_unlock = false;
         self.area_id = 0;
         self.special_fields.clear();
     }
@@ -191,9 +174,8 @@ impl ::protobuf::Message for DLEKOLHCNIE {
     fn default_instance() -> &'static DLEKOLHCNIE {
         static instance: DLEKOLHCNIE = DLEKOLHCNIE {
             FJKHIFDJMDB: false,
-            LMLNHNMKOOC: false,
             is_taken_reward: false,
-            GNACLLNFHFD: false,
+            is_unlock: false,
             area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,12 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DLEKOLHCNIE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DLEKOLHCNIE.proto\"\xb4\x01\n\x0bDLEKOLHCNIE\x12\x20\n\x0bFJKHIFDJ\
-    MDB\x18\x06\x20\x01(\x08R\x0bFJKHIFDJMDB\x12\x20\n\x0bLMLNHNMKOOC\x18\
-    \x0b\x20\x01(\x08R\x0bLMLNHNMKOOC\x12&\n\x0fis_taken_reward\x18\r\x20\
-    \x01(\x08R\risTakenReward\x12\x20\n\x0bGNACLLNFHFD\x18\x01\x20\x01(\x08R\
-    \x0bGNACLLNFHFD\x12\x17\n\x07area_id\x18\x0e\x20\x01(\rR\x06areaIdb\x06p\
-    roto3\
+    \n\x11DLEKOLHCNIE.proto\"\x8d\x01\n\x0bDLEKOLHCNIE\x12\x20\n\x0bFJKHIFDJ\
+    MDB\x18\t\x20\x01(\x08R\x0bFJKHIFDJMDB\x12&\n\x0fis_taken_reward\x18\n\
+    \x20\x01(\x08R\risTakenReward\x12\x1b\n\tis_unlock\x18\x0b\x20\x01(\x08R\
+    \x08isUnlock\x12\x17\n\x07area_id\x18\x0f\x20\x01(\rR\x06areaIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

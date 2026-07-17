@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDHOBLLOBNP {
     // message fields
-    // @@protoc_insertion_point(field:EDHOBLLOBNP.OBGMKBIOMKB)
-    pub OBGMKBIOMKB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EDHOBLLOBNP.NELBBCIGIGF)
     pub NELBBCIGIGF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EDHOBLLOBNP.index)
-    pub index: u32,
+    // @@protoc_insertion_point(field:EDHOBLLOBNP.OBGMKBIOMKB)
+    pub OBGMKBIOMKB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EDHOBLLOBNP.JJPMDBCPJBA)
     pub JJPMDBCPJBA: u32,
+    // @@protoc_insertion_point(field:EDHOBLLOBNP.index)
+    pub index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EDHOBLLOBNP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl EDHOBLLOBNP {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OBGMKBIOMKB",
-            |m: &EDHOBLLOBNP| { &m.OBGMKBIOMKB },
-            |m: &mut EDHOBLLOBNP| { &mut m.OBGMKBIOMKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NELBBCIGIGF",
             |m: &EDHOBLLOBNP| { &m.NELBBCIGIGF },
             |m: &mut EDHOBLLOBNP| { &mut m.NELBBCIGIGF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &EDHOBLLOBNP| { &m.index },
-            |m: &mut EDHOBLLOBNP| { &mut m.index },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OBGMKBIOMKB",
+            |m: &EDHOBLLOBNP| { &m.OBGMKBIOMKB },
+            |m: &mut EDHOBLLOBNP| { &mut m.OBGMKBIOMKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JJPMDBCPJBA",
             |m: &EDHOBLLOBNP| { &m.JJPMDBCPJBA },
             |m: &mut EDHOBLLOBNP| { &mut m.JJPMDBCPJBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &EDHOBLLOBNP| { &m.index },
+            |m: &mut EDHOBLLOBNP| { &mut m.index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EDHOBLLOBNP>(
             "EDHOBLLOBNP",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OBGMKBIOMKB)?;
-                },
-                120 => {
-                    self.OBGMKBIOMKB.push(is.read_uint32()?);
-                },
-                106 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NELBBCIGIGF)?;
                 },
-                104 => {
+                64 => {
                     self.NELBBCIGIGF.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.index = is.read_uint32()?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OBGMKBIOMKB)?;
+                },
+                72 => {
+                    self.OBGMKBIOMKB.push(is.read_uint32()?);
                 },
                 112 => {
                     self.JJPMDBCPJBA = is.read_uint32()?;
+                },
+                120 => {
+                    self.index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OBGMKBIOMKB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NELBBCIGIGF);
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.index);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NELBBCIGIGF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OBGMKBIOMKB);
         if self.JJPMDBCPJBA != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.JJPMDBCPJBA);
+        }
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.OBGMKBIOMKB)?;
-        os.write_repeated_packed_uint32(13, &self.NELBBCIGIGF)?;
-        if self.index != 0 {
-            os.write_uint32(3, self.index)?;
-        }
+        os.write_repeated_packed_uint32(8, &self.NELBBCIGIGF)?;
+        os.write_repeated_packed_uint32(9, &self.OBGMKBIOMKB)?;
         if self.JJPMDBCPJBA != 0 {
             os.write_uint32(14, self.JJPMDBCPJBA)?;
+        }
+        if self.index != 0 {
+            os.write_uint32(15, self.index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,19 +162,19 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     }
 
     fn clear(&mut self) {
-        self.OBGMKBIOMKB.clear();
         self.NELBBCIGIGF.clear();
-        self.index = 0;
+        self.OBGMKBIOMKB.clear();
         self.JJPMDBCPJBA = 0;
+        self.index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDHOBLLOBNP {
         static instance: EDHOBLLOBNP = EDHOBLLOBNP {
-            OBGMKBIOMKB: ::std::vec::Vec::new(),
             NELBBCIGIGF: ::std::vec::Vec::new(),
-            index: 0,
+            OBGMKBIOMKB: ::std::vec::Vec::new(),
             JJPMDBCPJBA: 0,
+            index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for EDHOBLLOBNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDHOBLLOBNP.proto\"\x89\x01\n\x0bEDHOBLLOBNP\x12\x20\n\x0bOBGMKBIO\
-    MKB\x18\x0f\x20\x03(\rR\x0bOBGMKBIOMKB\x12\x20\n\x0bNELBBCIGIGF\x18\r\
-    \x20\x03(\rR\x0bNELBBCIGIGF\x12\x14\n\x05index\x18\x03\x20\x01(\rR\x05in\
-    dex\x12\x20\n\x0bJJPMDBCPJBA\x18\x0e\x20\x01(\rR\x0bJJPMDBCPJBAb\x06prot\
+    \n\x11EDHOBLLOBNP.proto\"\x89\x01\n\x0bEDHOBLLOBNP\x12\x20\n\x0bNELBBCIG\
+    IGF\x18\x08\x20\x03(\rR\x0bNELBBCIGIGF\x12\x20\n\x0bOBGMKBIOMKB\x18\t\
+    \x20\x03(\rR\x0bOBGMKBIOMKB\x12\x20\n\x0bJJPMDBCPJBA\x18\x0e\x20\x01(\rR\
+    \x0bJJPMDBCPJBA\x12\x14\n\x05index\x18\x0f\x20\x01(\rR\x05indexb\x06prot\
     o3\
 ";
 

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Dispatch {
     // message fields
-    // @@protoc_insertion_point(field:Dispatch.FMPGOLIBHBD)
-    pub FMPGOLIBHBD: ::std::string::String,
+    // @@protoc_insertion_point(field:Dispatch.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:Dispatch.msg)
+    pub msg: ::std::string::String,
     // @@protoc_insertion_point(field:Dispatch.top_sever_region_name)
     pub top_sever_region_name: ::std::string::String,
     // @@protoc_insertion_point(field:Dispatch.region_list)
     pub region_list: ::std::vec::Vec<super::RegionInfo::RegionInfo>,
-    // @@protoc_insertion_point(field:Dispatch.msg)
-    pub msg: ::std::string::String,
-    // @@protoc_insertion_point(field:Dispatch.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:Dispatch.FMPGOLIBHBD)
+    pub FMPGOLIBHBD: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:Dispatch.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl Dispatch {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMPGOLIBHBD",
-            |m: &Dispatch| { &m.FMPGOLIBHBD },
-            |m: &mut Dispatch| { &mut m.FMPGOLIBHBD },
+            "retcode",
+            |m: &Dispatch| { &m.retcode },
+            |m: &mut Dispatch| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "msg",
+            |m: &Dispatch| { &m.msg },
+            |m: &mut Dispatch| { &mut m.msg },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "top_sever_region_name",
@@ -73,14 +78,9 @@ impl Dispatch {
             |m: &mut Dispatch| { &mut m.region_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg",
-            |m: &Dispatch| { &m.msg },
-            |m: &mut Dispatch| { &mut m.msg },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &Dispatch| { &m.retcode },
-            |m: &mut Dispatch| { &mut m.retcode },
+            "FMPGOLIBHBD",
+            |m: &Dispatch| { &m.FMPGOLIBHBD },
+            |m: &mut Dispatch| { &mut m.FMPGOLIBHBD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Dispatch>(
             "Dispatch",
@@ -100,8 +100,11 @@ impl ::protobuf::Message for Dispatch {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.FMPGOLIBHBD = is.read_string()?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                18 => {
+                    self.msg = is.read_string()?;
                 },
                 26 => {
                     self.top_sever_region_name = is.read_string()?;
@@ -109,11 +112,8 @@ impl ::protobuf::Message for Dispatch {
                 34 => {
                     self.region_list.push(is.read_message()?);
                 },
-                18 => {
-                    self.msg = is.read_string()?;
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    self.FMPGOLIBHBD = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,8 +127,11 @@ impl ::protobuf::Message for Dispatch {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.FMPGOLIBHBD.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.FMPGOLIBHBD);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if !self.msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.msg);
         }
         if !self.top_sever_region_name.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.top_sever_region_name);
@@ -137,11 +140,8 @@ impl ::protobuf::Message for Dispatch {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.msg);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if !self.FMPGOLIBHBD.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.FMPGOLIBHBD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,8 +149,11 @@ impl ::protobuf::Message for Dispatch {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.FMPGOLIBHBD.is_empty() {
-            os.write_string(5, &self.FMPGOLIBHBD)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
+        if !self.msg.is_empty() {
+            os.write_string(2, &self.msg)?;
         }
         if !self.top_sever_region_name.is_empty() {
             os.write_string(3, &self.top_sever_region_name)?;
@@ -158,11 +161,8 @@ impl ::protobuf::Message for Dispatch {
         for v in &self.region_list {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if !self.msg.is_empty() {
-            os.write_string(2, &self.msg)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if !self.FMPGOLIBHBD.is_empty() {
+            os.write_string(5, &self.FMPGOLIBHBD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for Dispatch {
     }
 
     fn clear(&mut self) {
-        self.FMPGOLIBHBD.clear();
+        self.retcode = 0;
+        self.msg.clear();
         self.top_sever_region_name.clear();
         self.region_list.clear();
-        self.msg.clear();
-        self.retcode = 0;
+        self.FMPGOLIBHBD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Dispatch {
         static instance: Dispatch = Dispatch {
-            FMPGOLIBHBD: ::std::string::String::new(),
+            retcode: 0,
+            msg: ::std::string::String::new(),
             top_sever_region_name: ::std::string::String::new(),
             region_list: ::std::vec::Vec::new(),
-            msg: ::std::string::String::new(),
-            retcode: 0,
+            FMPGOLIBHBD: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for Dispatch {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eDispatch.proto\x1a\x10RegionInfo.proto\"\xb9\x01\n\x08Dispatch\x12\
-    \x20\n\x0bFMPGOLIBHBD\x18\x05\x20\x01(\tR\x0bFMPGOLIBHBD\x121\n\x15top_s\
-    ever_region_name\x18\x03\x20\x01(\tR\x12topSeverRegionName\x12,\n\x0breg\
-    ion_list\x18\x04\x20\x03(\x0b2\x0b.RegionInfoR\nregionList\x12\x10\n\x03\
-    msg\x18\x02\x20\x01(\tR\x03msg\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x10\n\x03msg\x18\
+    \x02\x20\x01(\tR\x03msg\x121\n\x15top_sever_region_name\x18\x03\x20\x01(\
+    \tR\x12topSeverRegionName\x12,\n\x0bregion_list\x18\x04\x20\x03(\x0b2\
+    \x0b.RegionInfoR\nregionList\x12\x20\n\x0bFMPGOLIBHBD\x18\x05\x20\x01(\t\
+    R\x0bFMPGOLIBHBDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

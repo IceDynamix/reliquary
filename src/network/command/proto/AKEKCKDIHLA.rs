@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKEKCKDIHLA {
     // message fields
-    // @@protoc_insertion_point(field:AKEKCKDIHLA.HMELFPDPCFC)
-    pub HMELFPDPCFC: ::std::string::String,
-    // @@protoc_insertion_point(field:AKEKCKDIHLA.KHBBNDBJAFK)
-    pub KHBBNDBJAFK: i32,
-    // @@protoc_insertion_point(field:AKEKCKDIHLA.DHPDILNLIPC)
-    pub DHPDILNLIPC: i32,
+    // @@protoc_insertion_point(field:AKEKCKDIHLA.new_value)
+    pub new_value: i32,
+    // @@protoc_insertion_point(field:AKEKCKDIHLA.property_name)
+    pub property_name: ::std::string::String,
+    // @@protoc_insertion_point(field:AKEKCKDIHLA.old_value)
+    pub old_value: i32,
     // special fields
     // @@protoc_insertion_point(special_field:AKEKCKDIHLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl AKEKCKDIHLA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMELFPDPCFC",
-            |m: &AKEKCKDIHLA| { &m.HMELFPDPCFC },
-            |m: &mut AKEKCKDIHLA| { &mut m.HMELFPDPCFC },
+            "new_value",
+            |m: &AKEKCKDIHLA| { &m.new_value },
+            |m: &mut AKEKCKDIHLA| { &mut m.new_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHBBNDBJAFK",
-            |m: &AKEKCKDIHLA| { &m.KHBBNDBJAFK },
-            |m: &mut AKEKCKDIHLA| { &mut m.KHBBNDBJAFK },
+            "property_name",
+            |m: &AKEKCKDIHLA| { &m.property_name },
+            |m: &mut AKEKCKDIHLA| { &mut m.property_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHPDILNLIPC",
-            |m: &AKEKCKDIHLA| { &m.DHPDILNLIPC },
-            |m: &mut AKEKCKDIHLA| { &mut m.DHPDILNLIPC },
+            "old_value",
+            |m: &AKEKCKDIHLA| { &m.old_value },
+            |m: &mut AKEKCKDIHLA| { &mut m.old_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKEKCKDIHLA>(
             "AKEKCKDIHLA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AKEKCKDIHLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.HMELFPDPCFC = is.read_string()?;
+                8 => {
+                    self.new_value = is.read_int32()?;
                 },
-                112 => {
-                    self.KHBBNDBJAFK = is.read_int32()?;
+                58 => {
+                    self.property_name = is.read_string()?;
                 },
-                80 => {
-                    self.DHPDILNLIPC = is.read_int32()?;
+                72 => {
+                    self.old_value = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AKEKCKDIHLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.HMELFPDPCFC.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.HMELFPDPCFC);
+        if self.new_value != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.new_value);
         }
-        if self.KHBBNDBJAFK != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.KHBBNDBJAFK);
+        if !self.property_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.property_name);
         }
-        if self.DHPDILNLIPC != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.DHPDILNLIPC);
+        if self.old_value != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.old_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AKEKCKDIHLA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.HMELFPDPCFC.is_empty() {
-            os.write_string(15, &self.HMELFPDPCFC)?;
+        if self.new_value != 0 {
+            os.write_int32(1, self.new_value)?;
         }
-        if self.KHBBNDBJAFK != 0 {
-            os.write_int32(14, self.KHBBNDBJAFK)?;
+        if !self.property_name.is_empty() {
+            os.write_string(7, &self.property_name)?;
         }
-        if self.DHPDILNLIPC != 0 {
-            os.write_int32(10, self.DHPDILNLIPC)?;
+        if self.old_value != 0 {
+            os.write_int32(9, self.old_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for AKEKCKDIHLA {
     }
 
     fn clear(&mut self) {
-        self.HMELFPDPCFC.clear();
-        self.KHBBNDBJAFK = 0;
-        self.DHPDILNLIPC = 0;
+        self.new_value = 0;
+        self.property_name.clear();
+        self.old_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKEKCKDIHLA {
         static instance: AKEKCKDIHLA = AKEKCKDIHLA {
-            HMELFPDPCFC: ::std::string::String::new(),
-            KHBBNDBJAFK: 0,
-            DHPDILNLIPC: 0,
+            new_value: 0,
+            property_name: ::std::string::String::new(),
+            old_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for AKEKCKDIHLA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKEKCKDIHLA.proto\"s\n\x0bAKEKCKDIHLA\x12\x20\n\x0bHMELFPDPCFC\x18\
-    \x0f\x20\x01(\tR\x0bHMELFPDPCFC\x12\x20\n\x0bKHBBNDBJAFK\x18\x0e\x20\x01\
-    (\x05R\x0bKHBBNDBJAFK\x12\x20\n\x0bDHPDILNLIPC\x18\n\x20\x01(\x05R\x0bDH\
-    PDILNLIPCb\x06proto3\
+    \n\x11AKEKCKDIHLA.proto\"l\n\x0bAKEKCKDIHLA\x12\x1b\n\tnew_value\x18\x01\
+    \x20\x01(\x05R\x08newValue\x12#\n\rproperty_name\x18\x07\x20\x01(\tR\x0c\
+    propertyName\x12\x1b\n\told_value\x18\t\x20\x01(\x05R\x08oldValueb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

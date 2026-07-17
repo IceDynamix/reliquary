@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChangeStoryLineFinishScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.action)
-    pub action: ::protobuf::EnumOrUnknown<super::ChangeStoryLineAction::ChangeStoryLineAction>,
-    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.cur_story_line_id)
-    pub cur_story_line_id: u32,
     // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.ONBMNAMBIGE)
     pub ONBMNAMBIGE: u32,
     // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.HBFDGEPBLNP)
     pub HBFDGEPBLNP: bool,
+    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.action)
+    pub action: ::protobuf::EnumOrUnknown<super::ChangeStoryLineAction::ChangeStoryLineAction>,
+    // @@protoc_insertion_point(field:ChangeStoryLineFinishScNotify.cur_story_line_id)
+    pub cur_story_line_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChangeStoryLineFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl ChangeStoryLineFinishScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "action",
-            |m: &ChangeStoryLineFinishScNotify| { &m.action },
-            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.action },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_story_line_id",
-            |m: &ChangeStoryLineFinishScNotify| { &m.cur_story_line_id },
-            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.cur_story_line_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ONBMNAMBIGE",
             |m: &ChangeStoryLineFinishScNotify| { &m.ONBMNAMBIGE },
             |m: &mut ChangeStoryLineFinishScNotify| { &mut m.ONBMNAMBIGE },
@@ -74,6 +64,16 @@ impl ChangeStoryLineFinishScNotify {
             "HBFDGEPBLNP",
             |m: &ChangeStoryLineFinishScNotify| { &m.HBFDGEPBLNP },
             |m: &mut ChangeStoryLineFinishScNotify| { &mut m.HBFDGEPBLNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "action",
+            |m: &ChangeStoryLineFinishScNotify| { &m.action },
+            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.action },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_story_line_id",
+            |m: &ChangeStoryLineFinishScNotify| { &m.cur_story_line_id },
+            |m: &mut ChangeStoryLineFinishScNotify| { &mut m.cur_story_line_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChangeStoryLineFinishScNotify>(
             "ChangeStoryLineFinishScNotify",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
+                    self.ONBMNAMBIGE = is.read_uint32()?;
+                },
+                48 => {
+                    self.HBFDGEPBLNP = is.read_bool()?;
+                },
+                80 => {
                     self.action = is.read_enum_or_unknown()?;
                 },
                 96 => {
                     self.cur_story_line_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.ONBMNAMBIGE = is.read_uint32()?;
-                },
-                88 => {
-                    self.HBFDGEPBLNP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.action != ::protobuf::EnumOrUnknown::new(super::ChangeStoryLineAction::ChangeStoryLineAction::ChangeStoryLineAction_None) {
-            my_size += ::protobuf::rt::int32_size(4, self.action.value());
-        }
-        if self.cur_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_story_line_id);
-        }
         if self.ONBMNAMBIGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.ONBMNAMBIGE);
+            my_size += ::protobuf::rt::uint32_size(4, self.ONBMNAMBIGE);
         }
         if self.HBFDGEPBLNP != false {
             my_size += 1 + 1;
+        }
+        if self.action != ::protobuf::EnumOrUnknown::new(super::ChangeStoryLineAction::ChangeStoryLineAction::ChangeStoryLineAction_None) {
+            my_size += ::protobuf::rt::int32_size(10, self.action.value());
+        }
+        if self.cur_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_story_line_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ONBMNAMBIGE != 0 {
+            os.write_uint32(4, self.ONBMNAMBIGE)?;
+        }
+        if self.HBFDGEPBLNP != false {
+            os.write_bool(6, self.HBFDGEPBLNP)?;
+        }
         if self.action != ::protobuf::EnumOrUnknown::new(super::ChangeStoryLineAction::ChangeStoryLineAction::ChangeStoryLineAction_None) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.action))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.action))?;
         }
         if self.cur_story_line_id != 0 {
             os.write_uint32(12, self.cur_story_line_id)?;
-        }
-        if self.ONBMNAMBIGE != 0 {
-            os.write_uint32(5, self.ONBMNAMBIGE)?;
-        }
-        if self.HBFDGEPBLNP != false {
-            os.write_bool(11, self.HBFDGEPBLNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ChangeStoryLineFinishScNotify {
     }
 
     fn clear(&mut self) {
-        self.action = ::protobuf::EnumOrUnknown::new(super::ChangeStoryLineAction::ChangeStoryLineAction::ChangeStoryLineAction_None);
-        self.cur_story_line_id = 0;
         self.ONBMNAMBIGE = 0;
         self.HBFDGEPBLNP = false;
+        self.action = ::protobuf::EnumOrUnknown::new(super::ChangeStoryLineAction::ChangeStoryLineAction::ChangeStoryLineAction_None);
+        self.cur_story_line_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChangeStoryLineFinishScNotify {
         static instance: ChangeStoryLineFinishScNotify = ChangeStoryLineFinishScNotify {
-            action: ::protobuf::EnumOrUnknown::from_i32(0),
-            cur_story_line_id: 0,
             ONBMNAMBIGE: 0,
             HBFDGEPBLNP: false,
+            action: ::protobuf::EnumOrUnknown::from_i32(0),
+            cur_story_line_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for ChangeStoryLineFinishScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ChangeStoryLineFinishScNotify.proto\x1a\x1bChangeStoryLineAction.prot\
-    o\"\xbe\x01\n\x1dChangeStoryLineFinishScNotify\x12.\n\x06action\x18\x04\
-    \x20\x01(\x0e2\x16.ChangeStoryLineActionR\x06action\x12)\n\x11cur_story_\
-    line_id\x18\x0c\x20\x01(\rR\x0ecurStoryLineId\x12\x20\n\x0bONBMNAMBIGE\
-    \x18\x05\x20\x01(\rR\x0bONBMNAMBIGE\x12\x20\n\x0bHBFDGEPBLNP\x18\x0b\x20\
-    \x01(\x08R\x0bHBFDGEPBLNPb\x06proto3\
+    o\"\xbe\x01\n\x1dChangeStoryLineFinishScNotify\x12\x20\n\x0bONBMNAMBIGE\
+    \x18\x04\x20\x01(\rR\x0bONBMNAMBIGE\x12\x20\n\x0bHBFDGEPBLNP\x18\x06\x20\
+    \x01(\x08R\x0bHBFDGEPBLNP\x12.\n\x06action\x18\n\x20\x01(\x0e2\x16.Chang\
+    eStoryLineActionR\x06action\x12)\n\x11cur_story_line_id\x18\x0c\x20\x01(\
+    \rR\x0ecurStoryLineIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

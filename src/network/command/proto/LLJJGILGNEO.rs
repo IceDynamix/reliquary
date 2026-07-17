@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLJJGILGNEO {
     // message fields
-    // @@protoc_insertion_point(field:LLJJGILGNEO.FAOOHIBOJNE)
-    pub FAOOHIBOJNE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
-    // @@protoc_insertion_point(field:LLJJGILGNEO.COGGJELNFCN)
-    pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
     // @@protoc_insertion_point(field:LLJJGILGNEO.room_id)
     pub room_id: u64,
-    // @@protoc_insertion_point(field:LLJJGILGNEO.DLLADAJAKAG)
-    pub DLLADAJAKAG: u32,
-    // @@protoc_insertion_point(field:LLJJGILGNEO.monster_battle_type)
-    pub monster_battle_type: u32,
-    // @@protoc_insertion_point(field:LLJJGILGNEO.MMNJJHDBJCI)
-    pub MMNJJHDBJCI: u32,
-    // @@protoc_insertion_point(field:LLJJGILGNEO.PJGILAADCPN)
-    pub PJGILAADCPN: u32,
     // @@protoc_insertion_point(field:LLJJGILGNEO.MPDHNFNCIEA)
     pub MPDHNFNCIEA: u32,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.PJGILAADCPN)
+    pub PJGILAADCPN: u32,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.DLLADAJAKAG)
+    pub DLLADAJAKAG: u32,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.MMNJJHDBJCI)
+    pub MMNJJHDBJCI: u32,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.COGGJELNFCN)
+    pub COGGJELNFCN: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.FAOOHIBOJNE)
+    pub FAOOHIBOJNE: ::protobuf::MessageField<super::CKODNPNBOEN::CKODNPNBOEN>,
+    // @@protoc_insertion_point(field:LLJJGILGNEO.monster_battle_type)
+    pub monster_battle_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LLJJGILGNEO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,35 +63,15 @@ impl LLJJGILGNEO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
-            "FAOOHIBOJNE",
-            |m: &LLJJGILGNEO| { &m.FAOOHIBOJNE },
-            |m: &mut LLJJGILGNEO| { &mut m.FAOOHIBOJNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
-            "COGGJELNFCN",
-            |m: &LLJJGILGNEO| { &m.COGGJELNFCN },
-            |m: &mut LLJJGILGNEO| { &mut m.COGGJELNFCN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &LLJJGILGNEO| { &m.room_id },
             |m: &mut LLJJGILGNEO| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLLADAJAKAG",
-            |m: &LLJJGILGNEO| { &m.DLLADAJAKAG },
-            |m: &mut LLJJGILGNEO| { &mut m.DLLADAJAKAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "monster_battle_type",
-            |m: &LLJJGILGNEO| { &m.monster_battle_type },
-            |m: &mut LLJJGILGNEO| { &mut m.monster_battle_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMNJJHDBJCI",
-            |m: &LLJJGILGNEO| { &m.MMNJJHDBJCI },
-            |m: &mut LLJJGILGNEO| { &mut m.MMNJJHDBJCI },
+            "MPDHNFNCIEA",
+            |m: &LLJJGILGNEO| { &m.MPDHNFNCIEA },
+            |m: &mut LLJJGILGNEO| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJGILAADCPN",
@@ -99,9 +79,29 @@ impl LLJJGILGNEO {
             |m: &mut LLJJGILGNEO| { &mut m.PJGILAADCPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPDHNFNCIEA",
-            |m: &LLJJGILGNEO| { &m.MPDHNFNCIEA },
-            |m: &mut LLJJGILGNEO| { &mut m.MPDHNFNCIEA },
+            "DLLADAJAKAG",
+            |m: &LLJJGILGNEO| { &m.DLLADAJAKAG },
+            |m: &mut LLJJGILGNEO| { &mut m.DLLADAJAKAG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMNJJHDBJCI",
+            |m: &LLJJGILGNEO| { &m.MMNJJHDBJCI },
+            |m: &mut LLJJGILGNEO| { &mut m.MMNJJHDBJCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
+            "COGGJELNFCN",
+            |m: &LLJJGILGNEO| { &m.COGGJELNFCN },
+            |m: &mut LLJJGILGNEO| { &mut m.COGGJELNFCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CKODNPNBOEN::CKODNPNBOEN>(
+            "FAOOHIBOJNE",
+            |m: &LLJJGILGNEO| { &m.FAOOHIBOJNE },
+            |m: &mut LLJJGILGNEO| { &mut m.FAOOHIBOJNE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "monster_battle_type",
+            |m: &LLJJGILGNEO| { &m.monster_battle_type },
+            |m: &mut LLJJGILGNEO| { &mut m.monster_battle_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLJJGILGNEO>(
             "LLJJGILGNEO",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for LLJJGILGNEO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FAOOHIBOJNE)?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COGGJELNFCN)?;
-                },
                 8 => {
                     self.room_id = is.read_uint64()?;
                 },
-                32 => {
-                    self.DLLADAJAKAG = is.read_uint32()?;
-                },
-                64 => {
-                    self.monster_battle_type = is.read_uint32()?;
-                },
-                40 => {
-                    self.MMNJJHDBJCI = is.read_uint32()?;
+                16 => {
+                    self.MPDHNFNCIEA = is.read_uint32()?;
                 },
                 24 => {
                     self.PJGILAADCPN = is.read_uint32()?;
                 },
-                16 => {
-                    self.MPDHNFNCIEA = is.read_uint32()?;
+                32 => {
+                    self.DLLADAJAKAG = is.read_uint32()?;
+                },
+                40 => {
+                    self.MMNJJHDBJCI = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COGGJELNFCN)?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FAOOHIBOJNE)?;
+                },
+                64 => {
+                    self.monster_battle_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,31 +157,31 @@ impl ::protobuf::Message for LLJJGILGNEO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FAOOHIBOJNE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
+        }
+        if self.MPDHNFNCIEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
+        }
+        if self.PJGILAADCPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PJGILAADCPN);
+        }
+        if self.DLLADAJAKAG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DLLADAJAKAG);
+        }
+        if self.MMNJJHDBJCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.MMNJJHDBJCI);
         }
         if let Some(v) = self.COGGJELNFCN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
-        }
-        if self.DLLADAJAKAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DLLADAJAKAG);
+        if let Some(v) = self.FAOOHIBOJNE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.monster_battle_type);
-        }
-        if self.MMNJJHDBJCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MMNJJHDBJCI);
-        }
-        if self.PJGILAADCPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PJGILAADCPN);
-        }
-        if self.MPDHNFNCIEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,29 +189,29 @@ impl ::protobuf::Message for LLJJGILGNEO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FAOOHIBOJNE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.COGGJELNFCN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.room_id != 0 {
             os.write_uint64(1, self.room_id)?;
         }
-        if self.DLLADAJAKAG != 0 {
-            os.write_uint32(4, self.DLLADAJAKAG)?;
-        }
-        if self.monster_battle_type != 0 {
-            os.write_uint32(8, self.monster_battle_type)?;
-        }
-        if self.MMNJJHDBJCI != 0 {
-            os.write_uint32(5, self.MMNJJHDBJCI)?;
+        if self.MPDHNFNCIEA != 0 {
+            os.write_uint32(2, self.MPDHNFNCIEA)?;
         }
         if self.PJGILAADCPN != 0 {
             os.write_uint32(3, self.PJGILAADCPN)?;
         }
-        if self.MPDHNFNCIEA != 0 {
-            os.write_uint32(2, self.MPDHNFNCIEA)?;
+        if self.DLLADAJAKAG != 0 {
+            os.write_uint32(4, self.DLLADAJAKAG)?;
+        }
+        if self.MMNJJHDBJCI != 0 {
+            os.write_uint32(5, self.MMNJJHDBJCI)?;
+        }
+        if let Some(v) = self.COGGJELNFCN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.FAOOHIBOJNE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.monster_battle_type != 0 {
+            os.write_uint32(8, self.monster_battle_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,27 +230,27 @@ impl ::protobuf::Message for LLJJGILGNEO {
     }
 
     fn clear(&mut self) {
-        self.FAOOHIBOJNE.clear();
-        self.COGGJELNFCN.clear();
         self.room_id = 0;
-        self.DLLADAJAKAG = 0;
-        self.monster_battle_type = 0;
-        self.MMNJJHDBJCI = 0;
-        self.PJGILAADCPN = 0;
         self.MPDHNFNCIEA = 0;
+        self.PJGILAADCPN = 0;
+        self.DLLADAJAKAG = 0;
+        self.MMNJJHDBJCI = 0;
+        self.COGGJELNFCN.clear();
+        self.FAOOHIBOJNE.clear();
+        self.monster_battle_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLJJGILGNEO {
         static instance: LLJJGILGNEO = LLJJGILGNEO {
-            FAOOHIBOJNE: ::protobuf::MessageField::none(),
-            COGGJELNFCN: ::protobuf::MessageField::none(),
             room_id: 0,
-            DLLADAJAKAG: 0,
-            monster_battle_type: 0,
-            MMNJJHDBJCI: 0,
-            PJGILAADCPN: 0,
             MPDHNFNCIEA: 0,
+            PJGILAADCPN: 0,
+            DLLADAJAKAG: 0,
+            MMNJJHDBJCI: 0,
+            COGGJELNFCN: ::protobuf::MessageField::none(),
+            FAOOHIBOJNE: ::protobuf::MessageField::none(),
+            monster_battle_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,14 +276,14 @@ impl ::protobuf::reflect::ProtobufValue for LLJJGILGNEO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LLJJGILGNEO.proto\x1a\x11CKODNPNBOEN.proto\"\xbe\x02\n\x0bLLJJGILG\
-    NEO\x12.\n\x0bFAOOHIBOJNE\x18\x07\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0bFAOO\
-    HIBOJNE\x12.\n\x0bCOGGJELNFCN\x18\x06\x20\x01(\x0b2\x0c.CKODNPNBOENR\x0b\
-    COGGJELNFCN\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\x06roomId\x12\x20\
-    \n\x0bDLLADAJAKAG\x18\x04\x20\x01(\rR\x0bDLLADAJAKAG\x12.\n\x13monster_b\
-    attle_type\x18\x08\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bMMNJJHD\
-    BJCI\x18\x05\x20\x01(\rR\x0bMMNJJHDBJCI\x12\x20\n\x0bPJGILAADCPN\x18\x03\
-    \x20\x01(\rR\x0bPJGILAADCPN\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01(\rR\
-    \x0bMPDHNFNCIEAb\x06proto3\
+    NEO\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\x06roomId\x12\x20\n\x0bMP\
+    DHNFNCIEA\x18\x02\x20\x01(\rR\x0bMPDHNFNCIEA\x12\x20\n\x0bPJGILAADCPN\
+    \x18\x03\x20\x01(\rR\x0bPJGILAADCPN\x12\x20\n\x0bDLLADAJAKAG\x18\x04\x20\
+    \x01(\rR\x0bDLLADAJAKAG\x12\x20\n\x0bMMNJJHDBJCI\x18\x05\x20\x01(\rR\x0b\
+    MMNJJHDBJCI\x12.\n\x0bCOGGJELNFCN\x18\x06\x20\x01(\x0b2\x0c.CKODNPNBOENR\
+    \x0bCOGGJELNFCN\x12.\n\x0bFAOOHIBOJNE\x18\x07\x20\x01(\x0b2\x0c.CKODNPNB\
+    OENR\x0bFAOOHIBOJNE\x12.\n\x13monster_battle_type\x18\x08\x20\x01(\rR\
+    \x11monsterBattleTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

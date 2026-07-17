@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECOAKLBOLDA {
     // message fields
-    // @@protoc_insertion_point(field:ECOAKLBOLDA.EECIJBLGLNG)
-    pub EECIJBLGLNG: u32,
     // @@protoc_insertion_point(field:ECOAKLBOLDA.CBFFGFBEFMF)
     pub CBFFGFBEFMF: u32,
+    // @@protoc_insertion_point(field:ECOAKLBOLDA.EECIJBLGLNG)
+    pub EECIJBLGLNG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ECOAKLBOLDA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ECOAKLBOLDA {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EECIJBLGLNG",
-            |m: &ECOAKLBOLDA| { &m.EECIJBLGLNG },
-            |m: &mut ECOAKLBOLDA| { &mut m.EECIJBLGLNG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBFFGFBEFMF",
             |m: &ECOAKLBOLDA| { &m.CBFFGFBEFMF },
             |m: &mut ECOAKLBOLDA| { &mut m.CBFFGFBEFMF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EECIJBLGLNG",
+            |m: &ECOAKLBOLDA| { &m.EECIJBLGLNG },
+            |m: &mut ECOAKLBOLDA| { &mut m.EECIJBLGLNG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ECOAKLBOLDA>(
             "ECOAKLBOLDA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ECOAKLBOLDA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.EECIJBLGLNG = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.CBFFGFBEFMF = is.read_uint32()?;
+                },
+                112 => {
+                    self.EECIJBLGLNG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ECOAKLBOLDA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EECIJBLGLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EECIJBLGLNG);
-        }
         if self.CBFFGFBEFMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CBFFGFBEFMF);
+            my_size += ::protobuf::rt::uint32_size(4, self.CBFFGFBEFMF);
+        }
+        if self.EECIJBLGLNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EECIJBLGLNG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ECOAKLBOLDA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EECIJBLGLNG != 0 {
-            os.write_uint32(6, self.EECIJBLGLNG)?;
-        }
         if self.CBFFGFBEFMF != 0 {
-            os.write_uint32(8, self.CBFFGFBEFMF)?;
+            os.write_uint32(4, self.CBFFGFBEFMF)?;
+        }
+        if self.EECIJBLGLNG != 0 {
+            os.write_uint32(14, self.EECIJBLGLNG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ECOAKLBOLDA {
     }
 
     fn clear(&mut self) {
-        self.EECIJBLGLNG = 0;
         self.CBFFGFBEFMF = 0;
+        self.EECIJBLGLNG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECOAKLBOLDA {
         static instance: ECOAKLBOLDA = ECOAKLBOLDA {
-            EECIJBLGLNG: 0,
             CBFFGFBEFMF: 0,
+            EECIJBLGLNG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ECOAKLBOLDA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECOAKLBOLDA.proto\"Q\n\x0bECOAKLBOLDA\x12\x20\n\x0bEECIJBLGLNG\x18\
-    \x06\x20\x01(\rR\x0bEECIJBLGLNG\x12\x20\n\x0bCBFFGFBEFMF\x18\x08\x20\x01\
-    (\rR\x0bCBFFGFBEFMFb\x06proto3\
+    \n\x11ECOAKLBOLDA.proto\"Q\n\x0bECOAKLBOLDA\x12\x20\n\x0bCBFFGFBEFMF\x18\
+    \x04\x20\x01(\rR\x0bCBFFGFBEFMF\x12\x20\n\x0bEECIJBLGLNG\x18\x0e\x20\x01\
+    (\rR\x0bEECIJBLGLNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

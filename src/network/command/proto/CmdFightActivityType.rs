@@ -30,19 +30,19 @@ pub enum CmdFightActivityType {
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_NLCDGIPGFDJ)
     EJNCEADPKFE_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_HFBELGKADLF)
-    EJNCEADPKFE_HFBELGKADLF = 3636,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_NEBCECBJEGP)
-    EJNCEADPKFE_NEBCECBJEGP = 3673,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_KOPFLKEHKEF)
-    EJNCEADPKFE_KOPFLKEHKEF = 3680,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_CFFKPLMCNJI)
-    EJNCEADPKFE_CFFKPLMCNJI = 3613,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_FCLKICJNKBC)
-    EJNCEADPKFE_FCLKICJNKBC = 3615,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_IDPBIJOAHAC)
-    EJNCEADPKFE_IDPBIJOAHAC = 3603,
+    EJNCEADPKFE_HFBELGKADLF = 3688,
     // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_IJBOBOFLEAE)
-    EJNCEADPKFE_IJBOBOFLEAE = 3627,
+    EJNCEADPKFE_IJBOBOFLEAE = 3658,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_NEBCECBJEGP)
+    EJNCEADPKFE_NEBCECBJEGP = 3625,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_CFFKPLMCNJI)
+    EJNCEADPKFE_CFFKPLMCNJI = 3681,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_KOPFLKEHKEF)
+    EJNCEADPKFE_KOPFLKEHKEF = 3693,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_FCLKICJNKBC)
+    EJNCEADPKFE_FCLKICJNKBC = 3686,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_IDPBIJOAHAC)
+    EJNCEADPKFE_IDPBIJOAHAC = 3678,
 }
 
 impl ::protobuf::Enum for CmdFightActivityType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdFightActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ),
-            3636 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF),
-            3673 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP),
-            3680 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
-            3613 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI),
-            3615 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC),
-            3603 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC),
-            3627 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
+            3688 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF),
+            3658 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
+            3625 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP),
+            3681 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI),
+            3693 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
+            3686 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC),
+            3678 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC),
             _ => ::std::option::Option::None
         }
     }
@@ -70,12 +70,12 @@ impl ::protobuf::Enum for CmdFightActivityType {
         match str {
             "EJNCEADPKFE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ),
             "EJNCEADPKFE_HFBELGKADLF" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF),
+            "EJNCEADPKFE_IJBOBOFLEAE" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
             "EJNCEADPKFE_NEBCECBJEGP" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP),
-            "EJNCEADPKFE_KOPFLKEHKEF" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
             "EJNCEADPKFE_CFFKPLMCNJI" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI),
+            "EJNCEADPKFE_KOPFLKEHKEF" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
             "EJNCEADPKFE_FCLKICJNKBC" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC),
             "EJNCEADPKFE_IDPBIJOAHAC" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC),
-            "EJNCEADPKFE_IJBOBOFLEAE" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
             _ => ::std::option::Option::None
         }
     }
@@ -83,12 +83,12 @@ impl ::protobuf::Enum for CmdFightActivityType {
     const VALUES: &'static [CmdFightActivityType] = &[
         CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ,
         CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF,
+        CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE,
         CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP,
-        CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF,
         CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI,
+        CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF,
         CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC,
         CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC,
-        CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE,
     ];
 }
 
@@ -102,12 +102,12 @@ impl ::protobuf::EnumFull for CmdFightActivityType {
         let index = match self {
             CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ => 0,
             CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF => 1,
-            CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP => 2,
-            CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF => 3,
+            CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE => 2,
+            CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP => 3,
             CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI => 4,
-            CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC => 5,
-            CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC => 6,
-            CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE => 7,
+            CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF => 5,
+            CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC => 6,
+            CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -128,11 +128,11 @@ impl CmdFightActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdFightActivityType.proto*\x85\x02\n\x14CmdFightActivityType\x12\
     \x1b\n\x17EJNCEADPKFE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EJNCEADPKFE_HFBELGK\
-    ADLF\x10\xb4\x1c\x12\x1c\n\x17EJNCEADPKFE_NEBCECBJEGP\x10\xd9\x1c\x12\
-    \x1c\n\x17EJNCEADPKFE_KOPFLKEHKEF\x10\xe0\x1c\x12\x1c\n\x17EJNCEADPKFE_C\
-    FFKPLMCNJI\x10\x9d\x1c\x12\x1c\n\x17EJNCEADPKFE_FCLKICJNKBC\x10\x9f\x1c\
-    \x12\x1c\n\x17EJNCEADPKFE_IDPBIJOAHAC\x10\x93\x1c\x12\x1c\n\x17EJNCEADPK\
-    FE_IJBOBOFLEAE\x10\xab\x1cb\x06proto3\
+    ADLF\x10\xe8\x1c\x12\x1c\n\x17EJNCEADPKFE_IJBOBOFLEAE\x10\xca\x1c\x12\
+    \x1c\n\x17EJNCEADPKFE_NEBCECBJEGP\x10\xa9\x1c\x12\x1c\n\x17EJNCEADPKFE_C\
+    FFKPLMCNJI\x10\xe1\x1c\x12\x1c\n\x17EJNCEADPKFE_KOPFLKEHKEF\x10\xed\x1c\
+    \x12\x1c\n\x17EJNCEADPKFE_FCLKICJNKBC\x10\xe6\x1c\x12\x1c\n\x17EJNCEADPK\
+    FE_IDPBIJOAHAC\x10\xde\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

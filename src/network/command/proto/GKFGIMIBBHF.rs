@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKFGIMIBBHF {
     // message fields
-    // @@protoc_insertion_point(field:GKFGIMIBBHF.MMFGAJNCAOA)
-    pub MMFGAJNCAOA: u32,
-    // @@protoc_insertion_point(field:GKFGIMIBBHF.CIHFGJDCHIA)
-    pub CIHFGJDCHIA: bool,
     // @@protoc_insertion_point(field:GKFGIMIBBHF.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:GKFGIMIBBHF.MMFGAJNCAOA)
+    pub MMFGAJNCAOA: u32,
+    // @@protoc_insertion_point(field:GKFGIMIBBHF.finish)
+    pub finish: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GKFGIMIBBHF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GKFGIMIBBHF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &GKFGIMIBBHF| { &m.progress },
+            |m: &mut GKFGIMIBBHF| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MMFGAJNCAOA",
             |m: &GKFGIMIBBHF| { &m.MMFGAJNCAOA },
             |m: &mut GKFGIMIBBHF| { &mut m.MMFGAJNCAOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIHFGJDCHIA",
-            |m: &GKFGIMIBBHF| { &m.CIHFGJDCHIA },
-            |m: &mut GKFGIMIBBHF| { &mut m.CIHFGJDCHIA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &GKFGIMIBBHF| { &m.progress },
-            |m: &mut GKFGIMIBBHF| { &mut m.progress },
+            "finish",
+            |m: &GKFGIMIBBHF| { &m.finish },
+            |m: &mut GKFGIMIBBHF| { &mut m.finish },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKFGIMIBBHF>(
             "GKFGIMIBBHF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GKFGIMIBBHF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
+                    self.progress = is.read_uint32()?;
+                },
+                56 => {
                     self.MMFGAJNCAOA = is.read_uint32()?;
                 },
-                40 => {
-                    self.CIHFGJDCHIA = is.read_bool()?;
-                },
-                96 => {
-                    self.progress = is.read_uint32()?;
+                64 => {
+                    self.finish = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GKFGIMIBBHF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MMFGAJNCAOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MMFGAJNCAOA);
-        }
-        if self.CIHFGJDCHIA != false {
-            my_size += 1 + 1;
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.progress);
+            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+        }
+        if self.MMFGAJNCAOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MMFGAJNCAOA);
+        }
+        if self.finish != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GKFGIMIBBHF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMFGAJNCAOA != 0 {
-            os.write_uint32(15, self.MMFGAJNCAOA)?;
-        }
-        if self.CIHFGJDCHIA != false {
-            os.write_bool(5, self.CIHFGJDCHIA)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(12, self.progress)?;
+            os.write_uint32(2, self.progress)?;
+        }
+        if self.MMFGAJNCAOA != 0 {
+            os.write_uint32(7, self.MMFGAJNCAOA)?;
+        }
+        if self.finish != false {
+            os.write_bool(8, self.finish)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GKFGIMIBBHF {
     }
 
     fn clear(&mut self) {
-        self.MMFGAJNCAOA = 0;
-        self.CIHFGJDCHIA = false;
         self.progress = 0;
+        self.MMFGAJNCAOA = 0;
+        self.finish = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKFGIMIBBHF {
         static instance: GKFGIMIBBHF = GKFGIMIBBHF {
-            MMFGAJNCAOA: 0,
-            CIHFGJDCHIA: false,
             progress: 0,
+            MMFGAJNCAOA: 0,
+            finish: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GKFGIMIBBHF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKFGIMIBBHF.proto\"m\n\x0bGKFGIMIBBHF\x12\x20\n\x0bMMFGAJNCAOA\x18\
-    \x0f\x20\x01(\rR\x0bMMFGAJNCAOA\x12\x20\n\x0bCIHFGJDCHIA\x18\x05\x20\x01\
-    (\x08R\x0bCIHFGJDCHIA\x12\x1a\n\x08progress\x18\x0c\x20\x01(\rR\x08progr\
-    essb\x06proto3\
+    \n\x11GKFGIMIBBHF.proto\"c\n\x0bGKFGIMIBBHF\x12\x1a\n\x08progress\x18\
+    \x02\x20\x01(\rR\x08progress\x12\x20\n\x0bMMFGAJNCAOA\x18\x07\x20\x01(\r\
+    R\x0bMMFGAJNCAOA\x12\x16\n\x06finish\x18\x08\x20\x01(\x08R\x06finishb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

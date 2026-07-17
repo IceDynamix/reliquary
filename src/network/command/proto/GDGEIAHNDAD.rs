@@ -32,10 +32,10 @@ pub struct GDGEIAHNDAD {
     pub IFOKHMFNNNF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GDGEIAHNDAD.OELPOFLBMIE)
     pub OELPOFLBMIE: ::std::vec::Vec<super::JEEHGNIBIFE::JEEHGNIBIFE>,
-    // @@protoc_insertion_point(field:GDGEIAHNDAD.CFNKOBKJKNK)
-    pub CFNKOBKJKNK: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // @@protoc_insertion_point(field:GDGEIAHNDAD.ALOOPKCJFEA)
     pub ALOOPKCJFEA: ::std::vec::Vec<super::BOLCGIOGIBP::BOLCGIOGIBP>,
+    // @@protoc_insertion_point(field:GDGEIAHNDAD.CFNKOBKJKNK)
+    pub CFNKOBKJKNK: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // special fields
     // @@protoc_insertion_point(special_field:GDGEIAHNDAD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl GDGEIAHNDAD {
             |m: &mut GDGEIAHNDAD| { &mut m.OELPOFLBMIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFNKOBKJKNK",
-            |m: &GDGEIAHNDAD| { &m.CFNKOBKJKNK },
-            |m: &mut GDGEIAHNDAD| { &mut m.CFNKOBKJKNK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ALOOPKCJFEA",
             |m: &GDGEIAHNDAD| { &m.ALOOPKCJFEA },
             |m: &mut GDGEIAHNDAD| { &mut m.ALOOPKCJFEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CFNKOBKJKNK",
+            |m: &GDGEIAHNDAD| { &m.CFNKOBKJKNK },
+            |m: &mut GDGEIAHNDAD| { &mut m.CFNKOBKJKNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GDGEIAHNDAD>(
             "GDGEIAHNDAD",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.IFOKHMFNNNF)?;
                 },
-                120 => {
+                24 => {
                     self.IFOKHMFNNNF.push(is.read_uint32()?);
                 },
                 42 => {
                     self.OELPOFLBMIE.push(is.read_message()?);
                 },
-                106 => {
-                    self.CFNKOBKJKNK.push(is.read_message()?);
-                },
-                10 => {
+                66 => {
                     self.ALOOPKCJFEA.push(is.read_message()?);
+                },
+                74 => {
+                    self.CFNKOBKJKNK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IFOKHMFNNNF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.IFOKHMFNNNF);
         for value in &self.OELPOFLBMIE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CFNKOBKJKNK {
+        for value in &self.ALOOPKCJFEA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.ALOOPKCJFEA {
+        for value in &self.CFNKOBKJKNK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,15 +139,15 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.IFOKHMFNNNF)?;
+        os.write_repeated_packed_uint32(3, &self.IFOKHMFNNNF)?;
         for v in &self.OELPOFLBMIE {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        for v in &self.CFNKOBKJKNK {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         for v in &self.ALOOPKCJFEA {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        for v in &self.CFNKOBKJKNK {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::Message for GDGEIAHNDAD {
     fn clear(&mut self) {
         self.IFOKHMFNNNF.clear();
         self.OELPOFLBMIE.clear();
-        self.CFNKOBKJKNK.clear();
         self.ALOOPKCJFEA.clear();
+        self.CFNKOBKJKNK.clear();
         self.special_fields.clear();
     }
 
@@ -177,8 +177,8 @@ impl ::protobuf::Message for GDGEIAHNDAD {
         static instance: GDGEIAHNDAD = GDGEIAHNDAD {
             IFOKHMFNNNF: ::std::vec::Vec::new(),
             OELPOFLBMIE: ::std::vec::Vec::new(),
-            CFNKOBKJKNK: ::std::vec::Vec::new(),
             ALOOPKCJFEA: ::std::vec::Vec::new(),
+            CFNKOBKJKNK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,10 +205,10 @@ impl ::protobuf::reflect::ProtobufValue for GDGEIAHNDAD {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GDGEIAHNDAD.proto\x1a\x11BOLCGIOGIBP.proto\x1a\x11IODAFIBPAGM.prot\
     o\x1a\x11JEEHGNIBIFE.proto\"\xbf\x01\n\x0bGDGEIAHNDAD\x12\x20\n\x0bIFOKH\
-    MFNNNF\x18\x0f\x20\x03(\rR\x0bIFOKHMFNNNF\x12.\n\x0bOELPOFLBMIE\x18\x05\
-    \x20\x03(\x0b2\x0c.JEEHGNIBIFER\x0bOELPOFLBMIE\x12.\n\x0bCFNKOBKJKNK\x18\
-    \r\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bCFNKOBKJKNK\x12.\n\x0bALOOPKCJFEA\
-    \x18\x01\x20\x03(\x0b2\x0c.BOLCGIOGIBPR\x0bALOOPKCJFEAb\x06proto3\
+    MFNNNF\x18\x03\x20\x03(\rR\x0bIFOKHMFNNNF\x12.\n\x0bOELPOFLBMIE\x18\x05\
+    \x20\x03(\x0b2\x0c.JEEHGNIBIFER\x0bOELPOFLBMIE\x12.\n\x0bALOOPKCJFEA\x18\
+    \x08\x20\x03(\x0b2\x0c.BOLCGIOGIBPR\x0bALOOPKCJFEA\x12.\n\x0bCFNKOBKJKNK\
+    \x18\t\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bCFNKOBKJKNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

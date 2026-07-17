@@ -82,10 +82,10 @@ impl ::protobuf::Message for NAFMBLMMAAG {
                 26 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                58 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                56 => {
+                72 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for NAFMBLMMAAG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.buff_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.buff_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -114,7 +114,7 @@ impl ::protobuf::Message for NAFMBLMMAAG {
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        os.write_repeated_packed_uint32(7, &self.buff_list)?;
+        os.write_repeated_packed_uint32(9, &self.buff_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for NAFMBLMMAAG {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NAFMBLMMAAG.proto\x1a\x1bStrongChallengeAvatar.proto\"c\n\x0bNAFMB\
     LMMAAG\x127\n\x0bavatar_list\x18\x03\x20\x03(\x0b2\x16.StrongChallengeAv\
-    atarR\navatarList\x12\x1b\n\tbuff_list\x18\x07\x20\x03(\rR\x08buffListb\
+    atarR\navatarList\x12\x1b\n\tbuff_list\x18\t\x20\x03(\rR\x08buffListb\
     \x06proto3\
 ";
 

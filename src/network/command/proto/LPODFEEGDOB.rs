@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPODFEEGDOB {
     // message fields
-    // @@protoc_insertion_point(field:LPODFEEGDOB.DODBOEIBPGK)
-    pub DODBOEIBPGK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LPODFEEGDOB.DMGJDGJMCJL)
     pub DMGJDGJMCJL: u32,
     // @@protoc_insertion_point(field:LPODFEEGDOB.CLNDMEODHJE)
@@ -51,13 +49,8 @@ impl LPODFEEGDOB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DODBOEIBPGK",
-            |m: &LPODFEEGDOB| { &m.DODBOEIBPGK },
-            |m: &mut LPODFEEGDOB| { &mut m.DODBOEIBPGK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DMGJDGJMCJL",
             |m: &LPODFEEGDOB| { &m.DMGJDGJMCJL },
@@ -86,16 +79,10 @@ impl ::protobuf::Message for LPODFEEGDOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DODBOEIBPGK)?;
-                },
                 40 => {
-                    self.DODBOEIBPGK.push(is.read_uint32()?);
-                },
-                112 => {
                     self.DMGJDGJMCJL = is.read_uint32()?;
                 },
-                8 => {
+                120 => {
                     self.CLNDMEODHJE = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +97,11 @@ impl ::protobuf::Message for LPODFEEGDOB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.DODBOEIBPGK);
         if self.DMGJDGJMCJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DMGJDGJMCJL);
+            my_size += ::protobuf::rt::uint32_size(5, self.DMGJDGJMCJL);
         }
         if self.CLNDMEODHJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CLNDMEODHJE);
+            my_size += ::protobuf::rt::uint32_size(15, self.CLNDMEODHJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +109,11 @@ impl ::protobuf::Message for LPODFEEGDOB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.DODBOEIBPGK)?;
         if self.DMGJDGJMCJL != 0 {
-            os.write_uint32(14, self.DMGJDGJMCJL)?;
+            os.write_uint32(5, self.DMGJDGJMCJL)?;
         }
         if self.CLNDMEODHJE != 0 {
-            os.write_uint32(1, self.CLNDMEODHJE)?;
+            os.write_uint32(15, self.CLNDMEODHJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +132,6 @@ impl ::protobuf::Message for LPODFEEGDOB {
     }
 
     fn clear(&mut self) {
-        self.DODBOEIBPGK.clear();
         self.DMGJDGJMCJL = 0;
         self.CLNDMEODHJE = 0;
         self.special_fields.clear();
@@ -155,7 +139,6 @@ impl ::protobuf::Message for LPODFEEGDOB {
 
     fn default_instance() -> &'static LPODFEEGDOB {
         static instance: LPODFEEGDOB = LPODFEEGDOB {
-            DODBOEIBPGK: ::std::vec::Vec::new(),
             DMGJDGJMCJL: 0,
             CLNDMEODHJE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -182,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for LPODFEEGDOB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LPODFEEGDOB.proto\"s\n\x0bLPODFEEGDOB\x12\x20\n\x0bDODBOEIBPGK\x18\
-    \x05\x20\x03(\rR\x0bDODBOEIBPGK\x12\x20\n\x0bDMGJDGJMCJL\x18\x0e\x20\x01\
-    (\rR\x0bDMGJDGJMCJL\x12\x20\n\x0bCLNDMEODHJE\x18\x01\x20\x01(\rR\x0bCLND\
-    MEODHJEb\x06proto3\
+    \n\x11LPODFEEGDOB.proto\"Q\n\x0bLPODFEEGDOB\x12\x20\n\x0bDMGJDGJMCJL\x18\
+    \x05\x20\x01(\rR\x0bDMGJDGJMCJL\x12\x20\n\x0bCLNDMEODHJE\x18\x0f\x20\x01\
+    (\rR\x0bCLNDMEODHJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

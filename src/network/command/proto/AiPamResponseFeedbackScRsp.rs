@@ -30,12 +30,12 @@ pub struct AiPamResponseFeedbackScRsp {
     // message fields
     // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.NMMJBGFDNAI)
     pub NMMJBGFDNAI: bool,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.IAJAOMAKAHA)
-    pub IAJAOMAKAHA: bool,
     // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.IAJAOMAKAHA)
+    pub IAJAOMAKAHA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamResponseFeedbackScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl AiPamResponseFeedbackScRsp {
             |m: &mut AiPamResponseFeedbackScRsp| { &mut m.NMMJBGFDNAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAJAOMAKAHA",
-            |m: &AiPamResponseFeedbackScRsp| { &m.IAJAOMAKAHA },
-            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.IAJAOMAKAHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AiPamResponseFeedbackScRsp| { &m.retcode },
             |m: &mut AiPamResponseFeedbackScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &AiPamResponseFeedbackScRsp| { &m.BDPIMPJOJBK },
-            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.BDPIMPJOJBK },
+            "role",
+            |m: &AiPamResponseFeedbackScRsp| { &m.role },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.role },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAJAOMAKAHA",
+            |m: &AiPamResponseFeedbackScRsp| { &m.IAJAOMAKAHA },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.IAJAOMAKAHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamResponseFeedbackScRsp>(
             "AiPamResponseFeedbackScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.NMMJBGFDNAI = is.read_bool()?;
                 },
-                80 => {
-                    self.IAJAOMAKAHA = is.read_bool()?;
-                },
-                104 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 64 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
+                    self.role = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.IAJAOMAKAHA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
         if self.NMMJBGFDNAI != false {
             my_size += 1 + 1;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(8, self.role.value());
+        }
         if self.IAJAOMAKAHA != false {
             my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.BDPIMPJOJBK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NMMJBGFDNAI != false {
-            os.write_bool(2, self.NMMJBGFDNAI)?;
-        }
-        if self.IAJAOMAKAHA != false {
-            os.write_bool(10, self.IAJAOMAKAHA)?;
+            os.write_bool(4, self.NMMJBGFDNAI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.role))?;
+        }
+        if self.IAJAOMAKAHA != false {
+            os.write_bool(12, self.IAJAOMAKAHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
 
     fn clear(&mut self) {
         self.NMMJBGFDNAI = false;
-        self.IAJAOMAKAHA = false;
         self.retcode = 0;
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.IAJAOMAKAHA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamResponseFeedbackScRsp {
         static instance: AiPamResponseFeedbackScRsp = AiPamResponseFeedbackScRsp {
             NMMJBGFDNAI: false,
-            IAJAOMAKAHA: false,
             retcode: 0,
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
+            IAJAOMAKAHA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,12 +201,12 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20AiPamResponseFeedbackScRsp.proto\x1a\x11FKNKNLGMACL.proto\"\xaa\
-    \x01\n\x1aAiPamResponseFeedbackScRsp\x12\x20\n\x0bNMMJBGFDNAI\x18\x02\
-    \x20\x01(\x08R\x0bNMMJBGFDNAI\x12\x20\n\x0bIAJAOMAKAHA\x18\n\x20\x01(\
-    \x08R\x0bIAJAOMAKAHA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bBDPIMPJOJBK\x18\x08\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJ\
-    OJBKb\x06proto3\
+    \n\x20AiPamResponseFeedbackScRsp.proto\x1a\x11FKNKNLGMACL.proto\"\x9c\
+    \x01\n\x1aAiPamResponseFeedbackScRsp\x12\x20\n\x0bNMMJBGFDNAI\x18\x04\
+    \x20\x01(\x08R\x0bNMMJBGFDNAI\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x04role\x18\x08\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x04\
+    role\x12\x20\n\x0bIAJAOMAKAHA\x18\x0c\x20\x01(\x08R\x0bIAJAOMAKAHAb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

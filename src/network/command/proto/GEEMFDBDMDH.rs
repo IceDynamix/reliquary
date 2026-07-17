@@ -30,10 +30,10 @@ pub struct GEEMFDBDMDH {
     // message fields
     // @@protoc_insertion_point(field:GEEMFDBDMDH.LHIAODNJIIC)
     pub LHIAODNJIIC: ::protobuf::MessageField<super::NFPLDMFCLHA::NFPLDMFCLHA>,
-    // @@protoc_insertion_point(field:GEEMFDBDMDH.EDCLIPCEHAO)
-    pub EDCLIPCEHAO: ::protobuf::MessageField<super::NFPLDMFCLHA::NFPLDMFCLHA>,
     // @@protoc_insertion_point(field:GEEMFDBDMDH.PBMAHOJBAGG)
     pub PBMAHOJBAGG: u32,
+    // @@protoc_insertion_point(field:GEEMFDBDMDH.EDCLIPCEHAO)
+    pub EDCLIPCEHAO: ::protobuf::MessageField<super::NFPLDMFCLHA::NFPLDMFCLHA>,
     // special fields
     // @@protoc_insertion_point(special_field:GEEMFDBDMDH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GEEMFDBDMDH {
             |m: &GEEMFDBDMDH| { &m.LHIAODNJIIC },
             |m: &mut GEEMFDBDMDH| { &mut m.LHIAODNJIIC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFPLDMFCLHA::NFPLDMFCLHA>(
-            "EDCLIPCEHAO",
-            |m: &GEEMFDBDMDH| { &m.EDCLIPCEHAO },
-            |m: &mut GEEMFDBDMDH| { &mut m.EDCLIPCEHAO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PBMAHOJBAGG",
             |m: &GEEMFDBDMDH| { &m.PBMAHOJBAGG },
             |m: &mut GEEMFDBDMDH| { &mut m.PBMAHOJBAGG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NFPLDMFCLHA::NFPLDMFCLHA>(
+            "EDCLIPCEHAO",
+            |m: &GEEMFDBDMDH| { &m.EDCLIPCEHAO },
+            |m: &mut GEEMFDBDMDH| { &mut m.EDCLIPCEHAO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEEMFDBDMDH>(
             "GEEMFDBDMDH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GEEMFDBDMDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHIAODNJIIC)?;
+                },
+                80 => {
+                    self.PBMAHOJBAGG = is.read_uint32()?;
                 },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDCLIPCEHAO)?;
-                },
-                24 => {
-                    self.PBMAHOJBAGG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for GEEMFDBDMDH {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.PBMAHOJBAGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PBMAHOJBAGG);
+        }
         if let Some(v) = self.EDCLIPCEHAO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PBMAHOJBAGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PBMAHOJBAGG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GEEMFDBDMDH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LHIAODNJIIC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.PBMAHOJBAGG != 0 {
+            os.write_uint32(10, self.PBMAHOJBAGG)?;
         }
         if let Some(v) = self.EDCLIPCEHAO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.PBMAHOJBAGG != 0 {
-            os.write_uint32(3, self.PBMAHOJBAGG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GEEMFDBDMDH {
 
     fn clear(&mut self) {
         self.LHIAODNJIIC.clear();
-        self.EDCLIPCEHAO.clear();
         self.PBMAHOJBAGG = 0;
+        self.EDCLIPCEHAO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEEMFDBDMDH {
         static instance: GEEMFDBDMDH = GEEMFDBDMDH {
             LHIAODNJIIC: ::protobuf::MessageField::none(),
-            EDCLIPCEHAO: ::protobuf::MessageField::none(),
             PBMAHOJBAGG: 0,
+            EDCLIPCEHAO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for GEEMFDBDMDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEEMFDBDMDH.proto\x1a\x11NFPLDMFCLHA.proto\"\x8f\x01\n\x0bGEEMFDBD\
-    MDH\x12.\n\x0bLHIAODNJIIC\x18\r\x20\x01(\x0b2\x0c.NFPLDMFCLHAR\x0bLHIAOD\
-    NJIIC\x12.\n\x0bEDCLIPCEHAO\x18\x0b\x20\x01(\x0b2\x0c.NFPLDMFCLHAR\x0bED\
-    CLIPCEHAO\x12\x20\n\x0bPBMAHOJBAGG\x18\x03\x20\x01(\rR\x0bPBMAHOJBAGGb\
+    MDH\x12.\n\x0bLHIAODNJIIC\x18\x05\x20\x01(\x0b2\x0c.NFPLDMFCLHAR\x0bLHIA\
+    ODNJIIC\x12\x20\n\x0bPBMAHOJBAGG\x18\n\x20\x01(\rR\x0bPBMAHOJBAGG\x12.\n\
+    \x0bEDCLIPCEHAO\x18\x0b\x20\x01(\x0b2\x0c.NFPLDMFCLHAR\x0bEDCLIPCEHAOb\
     \x06proto3\
 ";
 

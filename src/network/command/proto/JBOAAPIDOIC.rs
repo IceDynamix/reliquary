@@ -82,7 +82,7 @@ impl ::protobuf::Message for JBOAAPIDOIC {
                 88 => {
                     self.IPILHKHCLJH = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.FLFOCHJFLOE = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for JBOAAPIDOIC {
             my_size += ::protobuf::rt::uint32_size(11, self.IPILHKHCLJH);
         }
         if self.FLFOCHJFLOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FLFOCHJFLOE);
+            my_size += ::protobuf::rt::uint32_size(13, self.FLFOCHJFLOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for JBOAAPIDOIC {
             os.write_uint32(11, self.IPILHKHCLJH)?;
         }
         if self.FLFOCHJFLOE != 0 {
-            os.write_uint32(7, self.FLFOCHJFLOE)?;
+            os.write_uint32(13, self.FLFOCHJFLOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JBOAAPIDOIC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBOAAPIDOIC.proto\"Q\n\x0bJBOAAPIDOIC\x12\x20\n\x0bIPILHKHCLJH\x18\
-    \x0b\x20\x01(\rR\x0bIPILHKHCLJH\x12\x20\n\x0bFLFOCHJFLOE\x18\x07\x20\x01\
-    (\rR\x0bFLFOCHJFLOEb\x06proto3\
+    \x0b\x20\x01(\rR\x0bIPILHKHCLJH\x12\x20\n\x0bFLFOCHJFLOE\x18\r\x20\x01(\
+    \rR\x0bFLFOCHJFLOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

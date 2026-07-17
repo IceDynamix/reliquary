@@ -79,7 +79,7 @@ impl ::protobuf::Message for AGDPIOAKFGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 104 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AGDPIOAKFGB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.teleport_id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.teleport_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AGDPIOAKFGB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.teleport_id != 0 {
             os.write_uint32(13, self.teleport_id)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for AGDPIOAKFGB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AGDPIOAKFGB.proto\"H\n\x0bAGDPIOAKFGB\x12\x18\n\x07retcode\x18\x05\
+    \n\x11AGDPIOAKFGB.proto\"H\n\x0bAGDPIOAKFGB\x12\x18\n\x07retcode\x18\x0c\
     \x20\x01(\rR\x07retcode\x12\x1f\n\x0bteleport_id\x18\r\x20\x01(\rR\ntele\
     portIdb\x06proto3\
 ";

@@ -79,10 +79,10 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                16 => {
+                96 => {
                     self.GLANPLEGMPG = is.read_uint64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BBIPCFPDEJN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != ::protobuf::EnumOrUnknown::new(super::CDABMABJFII::CDABMABJFII::CDABMABJFII_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(2, self.reason.value());
         }
         if self.GLANPLEGMPG != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.GLANPLEGMPG);
+            my_size += ::protobuf::rt::uint64_size(12, self.GLANPLEGMPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BBIPCFPDEJN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != ::protobuf::EnumOrUnknown::new(super::CDABMABJFII::CDABMABJFII::CDABMABJFII_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.GLANPLEGMPG != 0 {
-            os.write_uint64(2, self.GLANPLEGMPG)?;
+            os.write_uint64(12, self.GLANPLEGMPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BBIPCFPDEJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BBIPCFPDEJN.proto\x1a\x11CDABMABJFII.proto\"U\n\x0bBBIPCFPDEJN\x12\
-    $\n\x06reason\x18\x0b\x20\x01(\x0e2\x0c.CDABMABJFIIR\x06reason\x12\x20\n\
-    \x0bGLANPLEGMPG\x18\x02\x20\x01(\x04R\x0bGLANPLEGMPGb\x06proto3\
+    $\n\x06reason\x18\x02\x20\x01(\x0e2\x0c.CDABMABJFIIR\x06reason\x12\x20\n\
+    \x0bGLANPLEGMPG\x18\x0c\x20\x01(\x04R\x0bGLANPLEGMPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

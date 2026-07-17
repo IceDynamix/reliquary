@@ -28,52 +28,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OEDHMAHDECC {
     // message fields
-    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_game_npc_list)
-    pub grid_game_npc_list: ::std::vec::Vec<super::GGAKNLJJNEI::GGAKNLJJNEI>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.EEGPILJDLBG)
-    pub EEGPILJDLBG: ::std::vec::Vec<super::PLFKMENCDMM::PLFKMENCDMM>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.boss_info)
-    pub boss_info: ::protobuf::MessageField<super::KGMCLFHAJNJ::KGMCLFHAJNJ>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.HGAGKFEKBDA)
-    pub HGAGKFEKBDA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_game_role_list)
-    pub grid_game_role_list: ::std::vec::Vec<super::CDEAABODKCP::CDEAABODKCP>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.CFFCNEDGCJJ)
-    pub CFFCNEDGCJJ: ::std::vec::Vec<super::LAAMIAJFOMC::LAAMIAJFOMC>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.OAIGAGABCMK)
-    pub OAIGAGABCMK: ::std::vec::Vec<super::GIDEDMOPFKF::GIDEDMOPFKF>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.KCOMPKMJCMC)
-    pub KCOMPKMJCMC: ::std::vec::Vec<super::FPHPFJLAJDK::FPHPFJLAJDK>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.APABPAFGCIA)
-    pub APABPAFGCIA: ::std::vec::Vec<super::KINJHHBJNJP::KINJHHBJNJP>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.sync_augment_info)
-    pub sync_augment_info: ::std::vec::Vec<super::PPGEBEBPMJC::PPGEBEBPMJC>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.JLDDDLDNFEF)
-    pub JLDDDLDNFEF: ::protobuf::MessageField<super::CLFABOEKMJI::CLFABOEKMJI>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.NDLIKNEKDLL)
-    pub NDLIKNEKDLL: ::protobuf::MessageField<super::GOCIGPCDKDJ::GOCIGPCDKDJ>,
     // @@protoc_insertion_point(field:OEDHMAHDECC.grid_fight_trait_info)
-    pub grid_fight_trait_info: ::std::vec::Vec<super::FBNGHMHHHLL::FBNGHMHHHLL>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.PPJFPNMIFHL)
-    pub PPJFPNMIFHL: ::protobuf::MessageField<super::GLPCEKMKLGG::GLPCEKMKLGG>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_fight_equipment_list)
-    pub grid_fight_equipment_list: ::std::vec::Vec<super::IJDLENJJBHJ::IJDLENJJBHJ>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.JFCHLABGFJO)
-    pub JFCHLABGFJO: ::std::vec::Vec<super::NFIDNDFHJGN::NFIDNDFHJGN>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.MHLBIBGKIOB)
-    pub MHLBIBGKIOB: ::std::vec::Vec<u32>,
+    pub grid_fight_trait_info: ::std::vec::Vec<super::GridGameTraitInfo::GridGameTraitInfo>,
     // @@protoc_insertion_point(field:OEDHMAHDECC.LLJJCOOKANH)
     pub LLJJCOOKANH: u32,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::PEIJNEFOCHI::PEIJNEFOCHI>,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.DBODGPBOIHC)
-    pub DBODGPBOIHC: bool,
-    // @@protoc_insertion_point(field:OEDHMAHDECC.is_overlock)
-    pub is_overlock: bool,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.OAIGAGABCMK)
+    pub OAIGAGABCMK: ::std::vec::Vec<super::GridFightGamePortalBuffInfo::GridFightGamePortalBuffInfo>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.sync_augment_info)
+    pub sync_augment_info: ::std::vec::Vec<super::GridGameAugmentInfo::GridGameAugmentInfo>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.basic)
+    pub basic: ::protobuf::MessageField<super::GOCIGPCDKDJ::GOCIGPCDKDJ>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.EEGPILJDLBG)
+    pub EEGPILJDLBG: ::std::vec::Vec<super::PLFKMENCDMM::PLFKMENCDMM>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.KCOMPKMJCMC)
+    pub KCOMPKMJCMC: ::std::vec::Vec<super::FPHPFJLAJDK::FPHPFJLAJDK>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_game_role_list)
+    pub grid_game_role_list: ::std::vec::Vec<super::GridGameRoleInfo::GridGameRoleInfo>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.MHLBIBGKIOB)
+    pub MHLBIBGKIOB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.JFCHLABGFJO)
+    pub JFCHLABGFJO: ::std::vec::Vec<super::NFIDNDFHJGN::NFIDNDFHJGN>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.APABPAFGCIA)
+    pub APABPAFGCIA: ::std::vec::Vec<super::KINJHHBJNJP::KINJHHBJNJP>,
     // @@protoc_insertion_point(field:OEDHMAHDECC.MBMJNEDIFFC)
     pub MBMJNEDIFFC: u32,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.is_overlock)
+    pub is_overlock: bool,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.PPJFPNMIFHL)
+    pub PPJFPNMIFHL: ::protobuf::MessageField<super::GLPCEKMKLGG::GLPCEKMKLGG>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.DBODGPBOIHC)
+    pub DBODGPBOIHC: bool,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.JLDDDLDNFEF)
+    pub JLDDDLDNFEF: ::protobuf::MessageField<super::CLFABOEKMJI::CLFABOEKMJI>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.HGAGKFEKBDA)
+    pub HGAGKFEKBDA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_game_npc_list)
+    pub grid_game_npc_list: ::std::vec::Vec<super::GridGameNpcInfo::GridGameNpcInfo>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::GridFightSettleReason::GridFightSettleReason>,
     // @@protoc_insertion_point(field:OEDHMAHDECC.AKEGLJLCFPH)
     pub AKEGLJLCFPH: u32,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.CFFCNEDGCJJ)
+    pub CFFCNEDGCJJ: ::std::vec::Vec<super::LAAMIAJFOMC::LAAMIAJFOMC>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.boss_info)
+    pub boss_info: ::protobuf::MessageField<super::KGMCLFHAJNJ::KGMCLFHAJNJ>,
+    // @@protoc_insertion_point(field:OEDHMAHDECC.grid_fight_equipment_list)
+    pub grid_fight_equipment_list: ::std::vec::Vec<super::GridFightEquipmentInfo::GridFightEquipmentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OEDHMAHDECC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -94,34 +94,14 @@ impl OEDHMAHDECC {
         let mut fields = ::std::vec::Vec::with_capacity(23);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_game_npc_list",
-            |m: &OEDHMAHDECC| { &m.grid_game_npc_list },
-            |m: &mut OEDHMAHDECC| { &mut m.grid_game_npc_list },
+            "grid_fight_trait_info",
+            |m: &OEDHMAHDECC| { &m.grid_fight_trait_info },
+            |m: &mut OEDHMAHDECC| { &mut m.grid_fight_trait_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEGPILJDLBG",
-            |m: &OEDHMAHDECC| { &m.EEGPILJDLBG },
-            |m: &mut OEDHMAHDECC| { &mut m.EEGPILJDLBG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGMCLFHAJNJ::KGMCLFHAJNJ>(
-            "boss_info",
-            |m: &OEDHMAHDECC| { &m.boss_info },
-            |m: &mut OEDHMAHDECC| { &mut m.boss_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGAGKFEKBDA",
-            |m: &OEDHMAHDECC| { &m.HGAGKFEKBDA },
-            |m: &mut OEDHMAHDECC| { &mut m.HGAGKFEKBDA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_game_role_list",
-            |m: &OEDHMAHDECC| { &m.grid_game_role_list },
-            |m: &mut OEDHMAHDECC| { &mut m.grid_game_role_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFFCNEDGCJJ",
-            |m: &OEDHMAHDECC| { &m.CFFCNEDGCJJ },
-            |m: &mut OEDHMAHDECC| { &mut m.CFFCNEDGCJJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLJJCOOKANH",
+            |m: &OEDHMAHDECC| { &m.LLJJCOOKANH },
+            |m: &mut OEDHMAHDECC| { &mut m.LLJJCOOKANH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OAIGAGABCMK",
@@ -129,44 +109,34 @@ impl OEDHMAHDECC {
             |m: &mut OEDHMAHDECC| { &mut m.OAIGAGABCMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "sync_augment_info",
+            |m: &OEDHMAHDECC| { &m.sync_augment_info },
+            |m: &mut OEDHMAHDECC| { &mut m.sync_augment_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GOCIGPCDKDJ::GOCIGPCDKDJ>(
+            "basic",
+            |m: &OEDHMAHDECC| { &m.basic },
+            |m: &mut OEDHMAHDECC| { &mut m.basic },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EEGPILJDLBG",
+            |m: &OEDHMAHDECC| { &m.EEGPILJDLBG },
+            |m: &mut OEDHMAHDECC| { &mut m.EEGPILJDLBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KCOMPKMJCMC",
             |m: &OEDHMAHDECC| { &m.KCOMPKMJCMC },
             |m: &mut OEDHMAHDECC| { &mut m.KCOMPKMJCMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APABPAFGCIA",
-            |m: &OEDHMAHDECC| { &m.APABPAFGCIA },
-            |m: &mut OEDHMAHDECC| { &mut m.APABPAFGCIA },
+            "grid_game_role_list",
+            |m: &OEDHMAHDECC| { &m.grid_game_role_list },
+            |m: &mut OEDHMAHDECC| { &mut m.grid_game_role_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sync_augment_info",
-            |m: &OEDHMAHDECC| { &m.sync_augment_info },
-            |m: &mut OEDHMAHDECC| { &mut m.sync_augment_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CLFABOEKMJI::CLFABOEKMJI>(
-            "JLDDDLDNFEF",
-            |m: &OEDHMAHDECC| { &m.JLDDDLDNFEF },
-            |m: &mut OEDHMAHDECC| { &mut m.JLDDDLDNFEF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GOCIGPCDKDJ::GOCIGPCDKDJ>(
-            "NDLIKNEKDLL",
-            |m: &OEDHMAHDECC| { &m.NDLIKNEKDLL },
-            |m: &mut OEDHMAHDECC| { &mut m.NDLIKNEKDLL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_trait_info",
-            |m: &OEDHMAHDECC| { &m.grid_fight_trait_info },
-            |m: &mut OEDHMAHDECC| { &mut m.grid_fight_trait_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLPCEKMKLGG::GLPCEKMKLGG>(
-            "PPJFPNMIFHL",
-            |m: &OEDHMAHDECC| { &m.PPJFPNMIFHL },
-            |m: &mut OEDHMAHDECC| { &mut m.PPJFPNMIFHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_equipment_list",
-            |m: &OEDHMAHDECC| { &m.grid_fight_equipment_list },
-            |m: &mut OEDHMAHDECC| { &mut m.grid_fight_equipment_list },
+            "MHLBIBGKIOB",
+            |m: &OEDHMAHDECC| { &m.MHLBIBGKIOB },
+            |m: &mut OEDHMAHDECC| { &mut m.MHLBIBGKIOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JFCHLABGFJO",
@@ -174,29 +144,9 @@ impl OEDHMAHDECC {
             |m: &mut OEDHMAHDECC| { &mut m.JFCHLABGFJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MHLBIBGKIOB",
-            |m: &OEDHMAHDECC| { &m.MHLBIBGKIOB },
-            |m: &mut OEDHMAHDECC| { &mut m.MHLBIBGKIOB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLJJCOOKANH",
-            |m: &OEDHMAHDECC| { &m.LLJJCOOKANH },
-            |m: &mut OEDHMAHDECC| { &mut m.LLJJCOOKANH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &OEDHMAHDECC| { &m.reason },
-            |m: &mut OEDHMAHDECC| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBODGPBOIHC",
-            |m: &OEDHMAHDECC| { &m.DBODGPBOIHC },
-            |m: &mut OEDHMAHDECC| { &mut m.DBODGPBOIHC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_overlock",
-            |m: &OEDHMAHDECC| { &m.is_overlock },
-            |m: &mut OEDHMAHDECC| { &mut m.is_overlock },
+            "APABPAFGCIA",
+            |m: &OEDHMAHDECC| { &m.APABPAFGCIA },
+            |m: &mut OEDHMAHDECC| { &mut m.APABPAFGCIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBMJNEDIFFC",
@@ -204,9 +154,59 @@ impl OEDHMAHDECC {
             |m: &mut OEDHMAHDECC| { &mut m.MBMJNEDIFFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_overlock",
+            |m: &OEDHMAHDECC| { &m.is_overlock },
+            |m: &mut OEDHMAHDECC| { &mut m.is_overlock },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLPCEKMKLGG::GLPCEKMKLGG>(
+            "PPJFPNMIFHL",
+            |m: &OEDHMAHDECC| { &m.PPJFPNMIFHL },
+            |m: &mut OEDHMAHDECC| { &mut m.PPJFPNMIFHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBODGPBOIHC",
+            |m: &OEDHMAHDECC| { &m.DBODGPBOIHC },
+            |m: &mut OEDHMAHDECC| { &mut m.DBODGPBOIHC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CLFABOEKMJI::CLFABOEKMJI>(
+            "JLDDDLDNFEF",
+            |m: &OEDHMAHDECC| { &m.JLDDDLDNFEF },
+            |m: &mut OEDHMAHDECC| { &mut m.JLDDDLDNFEF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HGAGKFEKBDA",
+            |m: &OEDHMAHDECC| { &m.HGAGKFEKBDA },
+            |m: &mut OEDHMAHDECC| { &mut m.HGAGKFEKBDA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_game_npc_list",
+            |m: &OEDHMAHDECC| { &m.grid_game_npc_list },
+            |m: &mut OEDHMAHDECC| { &mut m.grid_game_npc_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &OEDHMAHDECC| { &m.reason },
+            |m: &mut OEDHMAHDECC| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AKEGLJLCFPH",
             |m: &OEDHMAHDECC| { &m.AKEGLJLCFPH },
             |m: &mut OEDHMAHDECC| { &mut m.AKEGLJLCFPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CFFCNEDGCJJ",
+            |m: &OEDHMAHDECC| { &m.CFFCNEDGCJJ },
+            |m: &mut OEDHMAHDECC| { &mut m.CFFCNEDGCJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGMCLFHAJNJ::KGMCLFHAJNJ>(
+            "boss_info",
+            |m: &OEDHMAHDECC| { &m.boss_info },
+            |m: &mut OEDHMAHDECC| { &mut m.boss_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_equipment_list",
+            |m: &OEDHMAHDECC| { &m.grid_fight_equipment_list },
+            |m: &mut OEDHMAHDECC| { &mut m.grid_fight_equipment_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OEDHMAHDECC>(
             "OEDHMAHDECC",
@@ -226,80 +226,80 @@ impl ::protobuf::Message for OEDHMAHDECC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                7986 => {
-                    self.grid_game_npc_list.push(is.read_message()?);
-                },
-                114 => {
-                    self.EEGPILJDLBG.push(is.read_message()?);
-                },
-                5762 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
-                },
-                1898 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HGAGKFEKBDA)?;
-                },
-                1896 => {
-                    self.HGAGKFEKBDA.push(is.read_uint32()?);
-                },
-                8658 => {
-                    self.grid_game_role_list.push(is.read_message()?);
-                },
-                4818 => {
-                    self.CFFCNEDGCJJ.push(is.read_message()?);
-                },
                 26 => {
-                    self.OAIGAGABCMK.push(is.read_message()?);
-                },
-                15914 => {
-                    self.KCOMPKMJCMC.push(is.read_message()?);
-                },
-                1866 => {
-                    self.APABPAFGCIA.push(is.read_message()?);
-                },
-                58 => {
-                    self.sync_augment_info.push(is.read_message()?);
-                },
-                1738 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLDDDLDNFEF)?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDLIKNEKDLL)?;
-                },
-                74 => {
                     self.grid_fight_trait_info.push(is.read_message()?);
                 },
-                12858 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFPNMIFHL)?;
-                },
-                4530 => {
-                    self.grid_fight_equipment_list.push(is.read_message()?);
-                },
-                10298 => {
-                    self.JFCHLABGFJO.push(is.read_message()?);
-                },
-                4074 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MHLBIBGKIOB)?;
-                },
-                4072 => {
-                    self.MHLBIBGKIOB.push(is.read_uint32()?);
-                },
-                16 => {
+                48 => {
                     self.LLJJCOOKANH = is.read_uint32()?;
                 },
-                10792 => {
-                    self.reason = is.read_enum_or_unknown()?;
+                58 => {
+                    self.OAIGAGABCMK.push(is.read_message()?);
                 },
-                9520 => {
-                    self.DBODGPBOIHC = is.read_bool()?;
+                66 => {
+                    self.sync_augment_info.push(is.read_message()?);
                 },
-                10968 => {
-                    self.is_overlock = is.read_bool()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic)?;
                 },
-                792 => {
+                106 => {
+                    self.EEGPILJDLBG.push(is.read_message()?);
+                },
+                3146 => {
+                    self.KCOMPKMJCMC.push(is.read_message()?);
+                },
+                5090 => {
+                    self.grid_game_role_list.push(is.read_message()?);
+                },
+                5458 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MHLBIBGKIOB)?;
+                },
+                5456 => {
+                    self.MHLBIBGKIOB.push(is.read_uint32()?);
+                },
+                5906 => {
+                    self.JFCHLABGFJO.push(is.read_message()?);
+                },
+                6098 => {
+                    self.APABPAFGCIA.push(is.read_message()?);
+                },
+                7280 => {
                     self.MBMJNEDIFFC = is.read_uint32()?;
                 },
-                14768 => {
+                10272 => {
+                    self.is_overlock = is.read_bool()?;
+                },
+                10322 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFPNMIFHL)?;
+                },
+                10344 => {
+                    self.DBODGPBOIHC = is.read_bool()?;
+                },
+                10426 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JLDDDLDNFEF)?;
+                },
+                10490 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HGAGKFEKBDA)?;
+                },
+                10488 => {
+                    self.HGAGKFEKBDA.push(is.read_uint32()?);
+                },
+                11410 => {
+                    self.grid_game_npc_list.push(is.read_message()?);
+                },
+                12376 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                12544 => {
                     self.AKEGLJLCFPH = is.read_uint32()?;
+                },
+                14770 => {
+                    self.CFFCNEDGCJJ.push(is.read_message()?);
+                },
+                14930 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
+                },
+                15778 => {
+                    self.grid_fight_equipment_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -313,28 +313,26 @@ impl ::protobuf::Message for OEDHMAHDECC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.grid_game_npc_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.EEGPILJDLBG {
+        for value in &self.grid_fight_trait_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.boss_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.LLJJCOOKANH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LLJJCOOKANH);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(237, &self.HGAGKFEKBDA);
-        for value in &self.grid_game_role_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.CFFCNEDGCJJ {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.OAIGAGABCMK {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.sync_augment_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.basic.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.EEGPILJDLBG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -342,27 +340,52 @@ impl ::protobuf::Message for OEDHMAHDECC {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.grid_game_role_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(682, &self.MHLBIBGKIOB);
+        for value in &self.JFCHLABGFJO {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.APABPAFGCIA {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.sync_augment_info {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.MBMJNEDIFFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(910, self.MBMJNEDIFFC);
+        }
+        if self.is_overlock != false {
+            my_size += 2 + 1;
+        }
+        if let Some(v) = self.PPJFPNMIFHL.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.DBODGPBOIHC != false {
+            my_size += 2 + 1;
+        }
         if let Some(v) = self.JLDDDLDNFEF.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.grid_fight_trait_info {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1311, &self.HGAGKFEKBDA);
+        for value in &self.grid_game_npc_list {
             let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.PPJFPNMIFHL.as_ref() {
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GridFightSettleReason::GridFightSettleReason::PEIJNEFOCHI_AIBAFPBKDJI) {
+            my_size += ::protobuf::rt::int32_size(1547, self.reason.value());
+        }
+        if self.AKEGLJLCFPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(1568, self.AKEGLJLCFPH);
+        }
+        for value in &self.CFFCNEDGCJJ {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.boss_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -370,100 +393,77 @@ impl ::protobuf::Message for OEDHMAHDECC {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.JFCHLABGFJO {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(509, &self.MHLBIBGKIOB);
-        if self.LLJJCOOKANH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LLJJCOOKANH);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::PEIJNEFOCHI::PEIJNEFOCHI::PEIJNEFOCHI_AIBAFPBKDJI) {
-            my_size += ::protobuf::rt::int32_size(1349, self.reason.value());
-        }
-        if self.DBODGPBOIHC != false {
-            my_size += 2 + 1;
-        }
-        if self.is_overlock != false {
-            my_size += 2 + 1;
-        }
-        if self.MBMJNEDIFFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(99, self.MBMJNEDIFFC);
-        }
-        if self.AKEGLJLCFPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1846, self.AKEGLJLCFPH);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.grid_game_npc_list {
-            ::protobuf::rt::write_message_field_with_cached_size(998, v, os)?;
-        };
-        for v in &self.EEGPILJDLBG {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if let Some(v) = self.boss_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(720, v, os)?;
-        }
-        os.write_repeated_packed_uint32(237, &self.HGAGKFEKBDA)?;
-        for v in &self.grid_game_role_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1082, v, os)?;
-        };
-        for v in &self.CFFCNEDGCJJ {
-            ::protobuf::rt::write_message_field_with_cached_size(602, v, os)?;
-        };
-        for v in &self.OAIGAGABCMK {
+        for v in &self.grid_fight_trait_info {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        for v in &self.KCOMPKMJCMC {
-            ::protobuf::rt::write_message_field_with_cached_size(1989, v, os)?;
-        };
-        for v in &self.APABPAFGCIA {
-            ::protobuf::rt::write_message_field_with_cached_size(233, v, os)?;
-        };
-        for v in &self.sync_augment_info {
+        if self.LLJJCOOKANH != 0 {
+            os.write_uint32(6, self.LLJJCOOKANH)?;
+        }
+        for v in &self.OAIGAGABCMK {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if let Some(v) = self.JLDDDLDNFEF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(217, v, os)?;
-        }
-        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        for v in &self.grid_fight_trait_info {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.sync_augment_info {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if let Some(v) = self.PPJFPNMIFHL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1607, v, os)?;
+        if let Some(v) = self.basic.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        for v in &self.grid_fight_equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(566, v, os)?;
+        for v in &self.EEGPILJDLBG {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        for v in &self.KCOMPKMJCMC {
+            ::protobuf::rt::write_message_field_with_cached_size(393, v, os)?;
+        };
+        for v in &self.grid_game_role_list {
+            ::protobuf::rt::write_message_field_with_cached_size(636, v, os)?;
+        };
+        os.write_repeated_packed_uint32(682, &self.MHLBIBGKIOB)?;
         for v in &self.JFCHLABGFJO {
-            ::protobuf::rt::write_message_field_with_cached_size(1287, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(738, v, os)?;
         };
-        os.write_repeated_packed_uint32(509, &self.MHLBIBGKIOB)?;
-        if self.LLJJCOOKANH != 0 {
-            os.write_uint32(2, self.LLJJCOOKANH)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::PEIJNEFOCHI::PEIJNEFOCHI::PEIJNEFOCHI_AIBAFPBKDJI) {
-            os.write_enum(1349, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.DBODGPBOIHC != false {
-            os.write_bool(1190, self.DBODGPBOIHC)?;
+        for v in &self.APABPAFGCIA {
+            ::protobuf::rt::write_message_field_with_cached_size(762, v, os)?;
+        };
+        if self.MBMJNEDIFFC != 0 {
+            os.write_uint32(910, self.MBMJNEDIFFC)?;
         }
         if self.is_overlock != false {
-            os.write_bool(1371, self.is_overlock)?;
+            os.write_bool(1284, self.is_overlock)?;
         }
-        if self.MBMJNEDIFFC != 0 {
-            os.write_uint32(99, self.MBMJNEDIFFC)?;
+        if let Some(v) = self.PPJFPNMIFHL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1290, v, os)?;
+        }
+        if self.DBODGPBOIHC != false {
+            os.write_bool(1293, self.DBODGPBOIHC)?;
+        }
+        if let Some(v) = self.JLDDDLDNFEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1303, v, os)?;
+        }
+        os.write_repeated_packed_uint32(1311, &self.HGAGKFEKBDA)?;
+        for v in &self.grid_game_npc_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1426, v, os)?;
+        };
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GridFightSettleReason::GridFightSettleReason::PEIJNEFOCHI_AIBAFPBKDJI) {
+            os.write_enum(1547, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.AKEGLJLCFPH != 0 {
-            os.write_uint32(1846, self.AKEGLJLCFPH)?;
+            os.write_uint32(1568, self.AKEGLJLCFPH)?;
         }
+        for v in &self.CFFCNEDGCJJ {
+            ::protobuf::rt::write_message_field_with_cached_size(1846, v, os)?;
+        };
+        if let Some(v) = self.boss_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1866, v, os)?;
+        }
+        for v in &self.grid_fight_equipment_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1972, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -481,57 +481,57 @@ impl ::protobuf::Message for OEDHMAHDECC {
     }
 
     fn clear(&mut self) {
-        self.grid_game_npc_list.clear();
-        self.EEGPILJDLBG.clear();
-        self.boss_info.clear();
-        self.HGAGKFEKBDA.clear();
-        self.grid_game_role_list.clear();
-        self.CFFCNEDGCJJ.clear();
-        self.OAIGAGABCMK.clear();
-        self.KCOMPKMJCMC.clear();
-        self.APABPAFGCIA.clear();
-        self.sync_augment_info.clear();
-        self.JLDDDLDNFEF.clear();
-        self.NDLIKNEKDLL.clear();
         self.grid_fight_trait_info.clear();
-        self.PPJFPNMIFHL.clear();
-        self.grid_fight_equipment_list.clear();
-        self.JFCHLABGFJO.clear();
-        self.MHLBIBGKIOB.clear();
         self.LLJJCOOKANH = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::PEIJNEFOCHI::PEIJNEFOCHI::PEIJNEFOCHI_AIBAFPBKDJI);
-        self.DBODGPBOIHC = false;
-        self.is_overlock = false;
+        self.OAIGAGABCMK.clear();
+        self.sync_augment_info.clear();
+        self.basic.clear();
+        self.EEGPILJDLBG.clear();
+        self.KCOMPKMJCMC.clear();
+        self.grid_game_role_list.clear();
+        self.MHLBIBGKIOB.clear();
+        self.JFCHLABGFJO.clear();
+        self.APABPAFGCIA.clear();
         self.MBMJNEDIFFC = 0;
+        self.is_overlock = false;
+        self.PPJFPNMIFHL.clear();
+        self.DBODGPBOIHC = false;
+        self.JLDDDLDNFEF.clear();
+        self.HGAGKFEKBDA.clear();
+        self.grid_game_npc_list.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::GridFightSettleReason::GridFightSettleReason::PEIJNEFOCHI_AIBAFPBKDJI);
         self.AKEGLJLCFPH = 0;
+        self.CFFCNEDGCJJ.clear();
+        self.boss_info.clear();
+        self.grid_fight_equipment_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OEDHMAHDECC {
         static instance: OEDHMAHDECC = OEDHMAHDECC {
-            grid_game_npc_list: ::std::vec::Vec::new(),
-            EEGPILJDLBG: ::std::vec::Vec::new(),
-            boss_info: ::protobuf::MessageField::none(),
-            HGAGKFEKBDA: ::std::vec::Vec::new(),
-            grid_game_role_list: ::std::vec::Vec::new(),
-            CFFCNEDGCJJ: ::std::vec::Vec::new(),
-            OAIGAGABCMK: ::std::vec::Vec::new(),
-            KCOMPKMJCMC: ::std::vec::Vec::new(),
-            APABPAFGCIA: ::std::vec::Vec::new(),
-            sync_augment_info: ::std::vec::Vec::new(),
-            JLDDDLDNFEF: ::protobuf::MessageField::none(),
-            NDLIKNEKDLL: ::protobuf::MessageField::none(),
             grid_fight_trait_info: ::std::vec::Vec::new(),
-            PPJFPNMIFHL: ::protobuf::MessageField::none(),
-            grid_fight_equipment_list: ::std::vec::Vec::new(),
-            JFCHLABGFJO: ::std::vec::Vec::new(),
-            MHLBIBGKIOB: ::std::vec::Vec::new(),
             LLJJCOOKANH: 0,
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            DBODGPBOIHC: false,
-            is_overlock: false,
+            OAIGAGABCMK: ::std::vec::Vec::new(),
+            sync_augment_info: ::std::vec::Vec::new(),
+            basic: ::protobuf::MessageField::none(),
+            EEGPILJDLBG: ::std::vec::Vec::new(),
+            KCOMPKMJCMC: ::std::vec::Vec::new(),
+            grid_game_role_list: ::std::vec::Vec::new(),
+            MHLBIBGKIOB: ::std::vec::Vec::new(),
+            JFCHLABGFJO: ::std::vec::Vec::new(),
+            APABPAFGCIA: ::std::vec::Vec::new(),
             MBMJNEDIFFC: 0,
+            is_overlock: false,
+            PPJFPNMIFHL: ::protobuf::MessageField::none(),
+            DBODGPBOIHC: false,
+            JLDDDLDNFEF: ::protobuf::MessageField::none(),
+            HGAGKFEKBDA: ::std::vec::Vec::new(),
+            grid_game_npc_list: ::std::vec::Vec::new(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             AKEGLJLCFPH: 0,
+            CFFCNEDGCJJ: ::std::vec::Vec::new(),
+            boss_info: ::protobuf::MessageField::none(),
+            grid_fight_equipment_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -556,37 +556,39 @@ impl ::protobuf::reflect::ProtobufValue for OEDHMAHDECC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OEDHMAHDECC.proto\x1a\x11CDEAABODKCP.proto\x1a\x11CLFABOEKMJI.prot\
-    o\x1a\x11FBNGHMHHHLL.proto\x1a\x11FPHPFJLAJDK.proto\x1a\x11GGAKNLJJNEI.p\
-    roto\x1a\x11GIDEDMOPFKF.proto\x1a\x11GLPCEKMKLGG.proto\x1a\x11GOCIGPCDKD\
-    J.proto\x1a\x11IJDLENJJBHJ.proto\x1a\x11KGMCLFHAJNJ.proto\x1a\x11KINJHHB\
-    JNJP.proto\x1a\x11LAAMIAJFOMC.proto\x1a\x11NFIDNDFHJGN.proto\x1a\x11PEIJ\
-    NEFOCHI.proto\x1a\x11PLFKMENCDMM.proto\x1a\x11PPGEBEBPMJC.proto\"\xc7\
-    \x08\n\x0bOEDHMAHDECC\x12:\n\x12grid_game_npc_list\x18\xe6\x07\x20\x03(\
-    \x0b2\x0c.GGAKNLJJNEIR\x0fgridGameNpcList\x12.\n\x0bEEGPILJDLBG\x18\x0e\
-    \x20\x03(\x0b2\x0c.PLFKMENCDMMR\x0bEEGPILJDLBG\x12*\n\tboss_info\x18\xd0\
-    \x05\x20\x01(\x0b2\x0c.KGMCLFHAJNJR\x08bossInfo\x12!\n\x0bHGAGKFEKBDA\
-    \x18\xed\x01\x20\x03(\rR\x0bHGAGKFEKBDA\x12<\n\x13grid_game_role_list\
-    \x18\xba\x08\x20\x03(\x0b2\x0c.CDEAABODKCPR\x10gridGameRoleList\x12/\n\
-    \x0bCFFCNEDGCJJ\x18\xda\x04\x20\x03(\x0b2\x0c.LAAMIAJFOMCR\x0bCFFCNEDGCJ\
-    J\x12.\n\x0bOAIGAGABCMK\x18\x03\x20\x03(\x0b2\x0c.GIDEDMOPFKFR\x0bOAIGAG\
-    ABCMK\x12/\n\x0bKCOMPKMJCMC\x18\xc5\x0f\x20\x03(\x0b2\x0c.FPHPFJLAJDKR\
-    \x0bKCOMPKMJCMC\x12/\n\x0bAPABPAFGCIA\x18\xe9\x01\x20\x03(\x0b2\x0c.KINJ\
-    HHBJNJPR\x0bAPABPAFGCIA\x128\n\x11sync_augment_info\x18\x07\x20\x03(\x0b\
-    2\x0c.PPGEBEBPMJCR\x0fsyncAugmentInfo\x12/\n\x0bJLDDDLDNFEF\x18\xd9\x01\
-    \x20\x01(\x0b2\x0c.CLFABOEKMJIR\x0bJLDDDLDNFEF\x12.\n\x0bNDLIKNEKDLL\x18\
-    \x0f\x20\x01(\x0b2\x0c.GOCIGPCDKDJR\x0bNDLIKNEKDLL\x12?\n\x15grid_fight_\
-    trait_info\x18\t\x20\x03(\x0b2\x0c.FBNGHMHHHLLR\x12gridFightTraitInfo\
-    \x12/\n\x0bPPJFPNMIFHL\x18\xc7\x0c\x20\x01(\x0b2\x0c.GLPCEKMKLGGR\x0bPPJ\
-    FPNMIFHL\x12H\n\x19grid_fight_equipment_list\x18\xb6\x04\x20\x03(\x0b2\
-    \x0c.IJDLENJJBHJR\x16gridFightEquipmentList\x12/\n\x0bJFCHLABGFJO\x18\
-    \x87\n\x20\x03(\x0b2\x0c.NFIDNDFHJGNR\x0bJFCHLABGFJO\x12!\n\x0bMHLBIBGKI\
-    OB\x18\xfd\x03\x20\x03(\rR\x0bMHLBIBGKIOB\x12\x20\n\x0bLLJJCOOKANH\x18\
-    \x02\x20\x01(\rR\x0bLLJJCOOKANH\x12%\n\x06reason\x18\xc5\n\x20\x01(\x0e2\
-    \x0c.PEIJNEFOCHIR\x06reason\x12!\n\x0bDBODGPBOIHC\x18\xa6\t\x20\x01(\x08\
-    R\x0bDBODGPBOIHC\x12\x20\n\x0bis_overlock\x18\xdb\n\x20\x01(\x08R\nisOve\
-    rlock\x12\x20\n\x0bMBMJNEDIFFC\x18c\x20\x01(\rR\x0bMBMJNEDIFFC\x12!\n\
-    \x0bAKEGLJLCFPH\x18\xb6\x0e\x20\x01(\rR\x0bAKEGLJLCFPHb\x06proto3\
+    \n\x11OEDHMAHDECC.proto\x1a\x11CLFABOEKMJI.proto\x1a\x11FPHPFJLAJDK.prot\
+    o\x1a\x11GLPCEKMKLGG.proto\x1a\x11GOCIGPCDKDJ.proto\x1a\x1cGridFightEqui\
+    pmentInfo.proto\x1a!GridFightGamePortalBuffInfo.proto\x1a\x1bGridFightSe\
+    ttleReason.proto\x1a\x19GridGameAugmentInfo.proto\x1a\x15GridGameNpcInfo\
+    .proto\x1a\x16GridGameRoleInfo.proto\x1a\x17GridGameTraitInfo.proto\x1a\
+    \x11KGMCLFHAJNJ.proto\x1a\x11KINJHHBJNJP.proto\x1a\x11LAAMIAJFOMC.proto\
+    \x1a\x11NFIDNDFHJGN.proto\x1a\x11PLFKMENCDMM.proto\"\xf8\x08\n\x0bOEDHMA\
+    HDECC\x12E\n\x15grid_fight_trait_info\x18\x03\x20\x03(\x0b2\x12.GridGame\
+    TraitInfoR\x12gridFightTraitInfo\x12\x20\n\x0bLLJJCOOKANH\x18\x06\x20\
+    \x01(\rR\x0bLLJJCOOKANH\x12>\n\x0bOAIGAGABCMK\x18\x07\x20\x03(\x0b2\x1c.\
+    GridFightGamePortalBuffInfoR\x0bOAIGAGABCMK\x12@\n\x11sync_augment_info\
+    \x18\x08\x20\x03(\x0b2\x14.GridGameAugmentInfoR\x0fsyncAugmentInfo\x12\"\
+    \n\x05basic\x18\x0c\x20\x01(\x0b2\x0c.GOCIGPCDKDJR\x05basic\x12.\n\x0bEE\
+    GPILJDLBG\x18\r\x20\x03(\x0b2\x0c.PLFKMENCDMMR\x0bEEGPILJDLBG\x12/\n\x0b\
+    KCOMPKMJCMC\x18\x89\x03\x20\x03(\x0b2\x0c.FPHPFJLAJDKR\x0bKCOMPKMJCMC\
+    \x12A\n\x13grid_game_role_list\x18\xfc\x04\x20\x03(\x0b2\x11.GridGameRol\
+    eInfoR\x10gridGameRoleList\x12!\n\x0bMHLBIBGKIOB\x18\xaa\x05\x20\x03(\rR\
+    \x0bMHLBIBGKIOB\x12/\n\x0bJFCHLABGFJO\x18\xe2\x05\x20\x03(\x0b2\x0c.NFID\
+    NDFHJGNR\x0bJFCHLABGFJO\x12/\n\x0bAPABPAFGCIA\x18\xfa\x05\x20\x03(\x0b2\
+    \x0c.KINJHHBJNJPR\x0bAPABPAFGCIA\x12!\n\x0bMBMJNEDIFFC\x18\x8e\x07\x20\
+    \x01(\rR\x0bMBMJNEDIFFC\x12\x20\n\x0bis_overlock\x18\x84\n\x20\x01(\x08R\
+    \nisOverlock\x12/\n\x0bPPJFPNMIFHL\x18\x8a\n\x20\x01(\x0b2\x0c.GLPCEKMKL\
+    GGR\x0bPPJFPNMIFHL\x12!\n\x0bDBODGPBOIHC\x18\x8d\n\x20\x01(\x08R\x0bDBOD\
+    GPBOIHC\x12/\n\x0bJLDDDLDNFEF\x18\x97\n\x20\x01(\x0b2\x0c.CLFABOEKMJIR\
+    \x0bJLDDDLDNFEF\x12!\n\x0bHGAGKFEKBDA\x18\x9f\n\x20\x03(\rR\x0bHGAGKFEKB\
+    DA\x12>\n\x12grid_game_npc_list\x18\x92\x0b\x20\x03(\x0b2\x10.GridGameNp\
+    cInfoR\x0fgridGameNpcList\x12/\n\x06reason\x18\x8b\x0c\x20\x01(\x0e2\x16\
+    .GridFightSettleReasonR\x06reason\x12!\n\x0bAKEGLJLCFPH\x18\xa0\x0c\x20\
+    \x01(\rR\x0bAKEGLJLCFPH\x12/\n\x0bCFFCNEDGCJJ\x18\xb6\x0e\x20\x03(\x0b2\
+    \x0c.LAAMIAJFOMCR\x0bCFFCNEDGCJJ\x12*\n\tboss_info\x18\xca\x0e\x20\x01(\
+    \x0b2\x0c.KGMCLFHAJNJR\x08bossInfo\x12S\n\x19grid_fight_equipment_list\
+    \x18\xb4\x0f\x20\x03(\x0b2\x17.GridFightEquipmentInfoR\x16gridFightEquip\
+    mentListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -604,22 +606,22 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(16);
-            deps.push(super::CDEAABODKCP::file_descriptor().clone());
             deps.push(super::CLFABOEKMJI::file_descriptor().clone());
-            deps.push(super::FBNGHMHHHLL::file_descriptor().clone());
             deps.push(super::FPHPFJLAJDK::file_descriptor().clone());
-            deps.push(super::GGAKNLJJNEI::file_descriptor().clone());
-            deps.push(super::GIDEDMOPFKF::file_descriptor().clone());
             deps.push(super::GLPCEKMKLGG::file_descriptor().clone());
             deps.push(super::GOCIGPCDKDJ::file_descriptor().clone());
-            deps.push(super::IJDLENJJBHJ::file_descriptor().clone());
+            deps.push(super::GridFightEquipmentInfo::file_descriptor().clone());
+            deps.push(super::GridFightGamePortalBuffInfo::file_descriptor().clone());
+            deps.push(super::GridFightSettleReason::file_descriptor().clone());
+            deps.push(super::GridGameAugmentInfo::file_descriptor().clone());
+            deps.push(super::GridGameNpcInfo::file_descriptor().clone());
+            deps.push(super::GridGameRoleInfo::file_descriptor().clone());
+            deps.push(super::GridGameTraitInfo::file_descriptor().clone());
             deps.push(super::KGMCLFHAJNJ::file_descriptor().clone());
             deps.push(super::KINJHHBJNJP::file_descriptor().clone());
             deps.push(super::LAAMIAJFOMC::file_descriptor().clone());
             deps.push(super::NFIDNDFHJGN::file_descriptor().clone());
-            deps.push(super::PEIJNEFOCHI::file_descriptor().clone());
             deps.push(super::PLFKMENCDMM::file_descriptor().clone());
-            deps.push(super::PPGEBEBPMJC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OEDHMAHDECC::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

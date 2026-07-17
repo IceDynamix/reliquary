@@ -45,7 +45,7 @@ impl ChallengeTierceSyncNotify {
         ::std::default::Default::default()
     }
 
-    // .ChallengeTierceSyncSingleStage IANBCDJPDJF = 6;
+    // .ChallengeTierceSyncSingleStage IANBCDJPDJF = 1;
 
     pub fn IANBCDJPDJF(&self) -> &super::ChallengeTierceSyncSingleStage::ChallengeTierceSyncSingleStage {
         match self.MMCGBGDJIPN {
@@ -94,7 +94,7 @@ impl ChallengeTierceSyncNotify {
         }
     }
 
-    // .ChallengeTierceSyncAllStage DFNNKENBOEN = 7;
+    // .ChallengeTierceSyncAllStage DFNNKENBOEN = 12;
 
     pub fn DFNNKENBOEN(&self) -> &super::ChallengeTierceSyncAllStage::ChallengeTierceSyncAllStage {
         match self.MMCGBGDJIPN {
@@ -143,12 +143,12 @@ impl ChallengeTierceSyncNotify {
         }
     }
 
-    // .FBAMAFLOBGA IBFHHKHNEFL = 12;
+    // .ChallengeTierceStageClear IBFHHKHNEFL = 4;
 
-    pub fn IBFHHKHNEFL(&self) -> &super::FBAMAFLOBGA::FBAMAFLOBGA {
+    pub fn IBFHHKHNEFL(&self) -> &super::ChallengeTierceStageClear::ChallengeTierceStageClear {
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(ref v)) => v,
-            _ => <super::FBAMAFLOBGA::FBAMAFLOBGA as ::protobuf::Message>::default_instance(),
+            _ => <super::ChallengeTierceStageClear::ChallengeTierceStageClear as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -164,15 +164,15 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_IBFHHKHNEFL(&mut self, v: super::FBAMAFLOBGA::FBAMAFLOBGA) {
+    pub fn set_IBFHHKHNEFL(&mut self, v: super::ChallengeTierceStageClear::ChallengeTierceStageClear) {
         self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IBFHHKHNEFL(&mut self) -> &mut super::FBAMAFLOBGA::FBAMAFLOBGA {
+    pub fn mut_IBFHHKHNEFL(&mut self) -> &mut super::ChallengeTierceStageClear::ChallengeTierceStageClear {
         if let ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(_)) = self.MMCGBGDJIPN {
         } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(super::FBAMAFLOBGA::FBAMAFLOBGA::new()));
+            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(super::ChallengeTierceStageClear::ChallengeTierceStageClear::new()));
         }
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(ref mut v)) => v,
@@ -181,23 +181,23 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Take field
-    pub fn take_IBFHHKHNEFL(&mut self) -> super::FBAMAFLOBGA::FBAMAFLOBGA {
+    pub fn take_IBFHHKHNEFL(&mut self) -> super::ChallengeTierceStageClear::ChallengeTierceStageClear {
         if self.has_IBFHHKHNEFL() {
             match self.MMCGBGDJIPN.take() {
                 ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FBAMAFLOBGA::FBAMAFLOBGA::new()
+            super::ChallengeTierceStageClear::ChallengeTierceStageClear::new()
         }
     }
 
-    // .PEOKJEOOOJD IIHFEDLHOPI = 10;
+    // .ChallengeTiercePendingStageSettle IIHFEDLHOPI = 14;
 
-    pub fn IIHFEDLHOPI(&self) -> &super::PEOKJEOOOJD::PEOKJEOOOJD {
+    pub fn IIHFEDLHOPI(&self) -> &super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle {
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(ref v)) => v,
-            _ => <super::PEOKJEOOOJD::PEOKJEOOOJD as ::protobuf::Message>::default_instance(),
+            _ => <super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -213,15 +213,15 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_IIHFEDLHOPI(&mut self, v: super::PEOKJEOOOJD::PEOKJEOOOJD) {
+    pub fn set_IIHFEDLHOPI(&mut self, v: super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle) {
         self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IIHFEDLHOPI(&mut self) -> &mut super::PEOKJEOOOJD::PEOKJEOOOJD {
+    pub fn mut_IIHFEDLHOPI(&mut self) -> &mut super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle {
         if let ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(_)) = self.MMCGBGDJIPN {
         } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(super::PEOKJEOOOJD::PEOKJEOOOJD::new()));
+            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle::new()));
         }
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(ref mut v)) => v,
@@ -230,23 +230,23 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Take field
-    pub fn take_IIHFEDLHOPI(&mut self) -> super::PEOKJEOOOJD::PEOKJEOOOJD {
+    pub fn take_IIHFEDLHOPI(&mut self) -> super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle {
         if self.has_IIHFEDLHOPI() {
             match self.MMCGBGDJIPN.take() {
                 ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::PEOKJEOOOJD::PEOKJEOOOJD::new()
+            super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle::new()
         }
     }
 
-    // .FLIPNFHAMPO HNHCFJJNJCE = 14;
+    // .ChallengeTierceMedal HNHCFJJNJCE = 5;
 
-    pub fn HNHCFJJNJCE(&self) -> &super::FLIPNFHAMPO::FLIPNFHAMPO {
+    pub fn HNHCFJJNJCE(&self) -> &super::ChallengeTierceMedal::ChallengeTierceMedal {
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(ref v)) => v,
-            _ => <super::FLIPNFHAMPO::FLIPNFHAMPO as ::protobuf::Message>::default_instance(),
+            _ => <super::ChallengeTierceMedal::ChallengeTierceMedal as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -262,15 +262,15 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Param is passed by value, moved
-    pub fn set_HNHCFJJNJCE(&mut self, v: super::FLIPNFHAMPO::FLIPNFHAMPO) {
+    pub fn set_HNHCFJJNJCE(&mut self, v: super::ChallengeTierceMedal::ChallengeTierceMedal) {
         self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HNHCFJJNJCE(&mut self) -> &mut super::FLIPNFHAMPO::FLIPNFHAMPO {
+    pub fn mut_HNHCFJJNJCE(&mut self) -> &mut super::ChallengeTierceMedal::ChallengeTierceMedal {
         if let ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(_)) = self.MMCGBGDJIPN {
         } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(super::FLIPNFHAMPO::FLIPNFHAMPO::new()));
+            self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(super::ChallengeTierceMedal::ChallengeTierceMedal::new()));
         }
         match self.MMCGBGDJIPN {
             ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(ref mut v)) => v,
@@ -279,14 +279,14 @@ impl ChallengeTierceSyncNotify {
     }
 
     // Take field
-    pub fn take_HNHCFJJNJCE(&mut self) -> super::FLIPNFHAMPO::FLIPNFHAMPO {
+    pub fn take_HNHCFJJNJCE(&mut self) -> super::ChallengeTierceMedal::ChallengeTierceMedal {
         if self.has_HNHCFJJNJCE() {
             match self.MMCGBGDJIPN.take() {
                 ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FLIPNFHAMPO::FLIPNFHAMPO::new()
+            super::ChallengeTierceMedal::ChallengeTierceMedal::new()
         }
     }
 
@@ -307,21 +307,21 @@ impl ChallengeTierceSyncNotify {
             ChallengeTierceSyncNotify::mut_DFNNKENBOEN,
             ChallengeTierceSyncNotify::set_DFNNKENBOEN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FBAMAFLOBGA::FBAMAFLOBGA>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeTierceStageClear::ChallengeTierceStageClear>(
             "IBFHHKHNEFL",
             ChallengeTierceSyncNotify::has_IBFHHKHNEFL,
             ChallengeTierceSyncNotify::IBFHHKHNEFL,
             ChallengeTierceSyncNotify::mut_IBFHHKHNEFL,
             ChallengeTierceSyncNotify::set_IBFHHKHNEFL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PEOKJEOOOJD::PEOKJEOOOJD>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle>(
             "IIHFEDLHOPI",
             ChallengeTierceSyncNotify::has_IIHFEDLHOPI,
             ChallengeTierceSyncNotify::IIHFEDLHOPI,
             ChallengeTierceSyncNotify::mut_IIHFEDLHOPI,
             ChallengeTierceSyncNotify::set_IIHFEDLHOPI,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FLIPNFHAMPO::FLIPNFHAMPO>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeTierceMedal::ChallengeTierceMedal>(
             "HNHCFJJNJCE",
             ChallengeTierceSyncNotify::has_HNHCFJJNJCE,
             ChallengeTierceSyncNotify::HNHCFJJNJCE,
@@ -347,19 +347,19 @@ impl ::protobuf::Message for ChallengeTierceSyncNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IANBCDJPDJF(is.read_message()?));
                 },
-                58 => {
+                98 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::DFNNKENBOEN(is.read_message()?));
                 },
-                98 => {
+                34 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(is.read_message()?));
                 },
-                82 => {
+                114 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(is.read_message()?));
                 },
-                114 => {
+                42 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(is.read_message()?));
                 },
                 tag => {
@@ -407,19 +407,19 @@ impl ::protobuf::Message for ChallengeTierceSyncNotify {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &challenge_tierce_sync_notify::MMCGBGDJIPN::IANBCDJPDJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &challenge_tierce_sync_notify::MMCGBGDJIPN::DFNNKENBOEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
-                &challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
+                &challenge_tierce_sync_notify::MMCGBGDJIPN::IBFHHKHNEFL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                },
                 &challenge_tierce_sync_notify::MMCGBGDJIPN::IIHFEDLHOPI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &challenge_tierce_sync_notify::MMCGBGDJIPN::HNHCFJJNJCE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -486,11 +486,11 @@ pub mod challenge_tierce_sync_notify {
         // @@protoc_insertion_point(oneof_field:ChallengeTierceSyncNotify.DFNNKENBOEN)
         DFNNKENBOEN(super::super::ChallengeTierceSyncAllStage::ChallengeTierceSyncAllStage),
         // @@protoc_insertion_point(oneof_field:ChallengeTierceSyncNotify.IBFHHKHNEFL)
-        IBFHHKHNEFL(super::super::FBAMAFLOBGA::FBAMAFLOBGA),
+        IBFHHKHNEFL(super::super::ChallengeTierceStageClear::ChallengeTierceStageClear),
         // @@protoc_insertion_point(oneof_field:ChallengeTierceSyncNotify.IIHFEDLHOPI)
-        IIHFEDLHOPI(super::super::PEOKJEOOOJD::PEOKJEOOOJD),
+        IIHFEDLHOPI(super::super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle),
         // @@protoc_insertion_point(oneof_field:ChallengeTierceSyncNotify.HNHCFJJNJCE)
-        HNHCFJJNJCE(super::super::FLIPNFHAMPO::FLIPNFHAMPO),
+        HNHCFJJNJCE(super::super::ChallengeTierceMedal::ChallengeTierceMedal),
     }
 
     impl ::protobuf::Oneof for MMCGBGDJIPN {
@@ -511,16 +511,17 @@ pub mod challenge_tierce_sync_notify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChallengeTierceSyncNotify.proto\x1a!ChallengeTierceSyncAllStage.pr\
-    oto\x1a$ChallengeTierceSyncSingleStage.proto\x1a\x11FBAMAFLOBGA.proto\
-    \x1a\x11FLIPNFHAMPO.proto\x1a\x11PEOKJEOOOJD.proto\"\xc7\x02\n\x19Challe\
-    ngeTierceSyncNotify\x12C\n\x0bIANBCDJPDJF\x18\x06\x20\x01(\x0b2\x1f.Chal\
-    lengeTierceSyncSingleStageH\0R\x0bIANBCDJPDJF\x12@\n\x0bDFNNKENBOEN\x18\
-    \x07\x20\x01(\x0b2\x1c.ChallengeTierceSyncAllStageH\0R\x0bDFNNKENBOEN\
-    \x120\n\x0bIBFHHKHNEFL\x18\x0c\x20\x01(\x0b2\x0c.FBAMAFLOBGAH\0R\x0bIBFH\
-    HKHNEFL\x120\n\x0bIIHFEDLHOPI\x18\n\x20\x01(\x0b2\x0c.PEOKJEOOOJDH\0R\
-    \x0bIIHFEDLHOPI\x120\n\x0bHNHCFJJNJCE\x18\x0e\x20\x01(\x0b2\x0c.FLIPNFHA\
-    MPOH\0R\x0bHNHCFJJNJCEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
+    \n\x1fChallengeTierceSyncNotify.proto\x1a\x1aChallengeTierceMedal.proto\
+    \x1a'ChallengeTiercePendingStageSettle.proto\x1a\x1fChallengeTierceStage\
+    Clear.proto\x1a!ChallengeTierceSyncAllStage.proto\x1a$ChallengeTierceSyn\
+    cSingleStage.proto\"\xf4\x02\n\x19ChallengeTierceSyncNotify\x12C\n\x0bIA\
+    NBCDJPDJF\x18\x01\x20\x01(\x0b2\x1f.ChallengeTierceSyncSingleStageH\0R\
+    \x0bIANBCDJPDJF\x12@\n\x0bDFNNKENBOEN\x18\x0c\x20\x01(\x0b2\x1c.Challeng\
+    eTierceSyncAllStageH\0R\x0bDFNNKENBOEN\x12>\n\x0bIBFHHKHNEFL\x18\x04\x20\
+    \x01(\x0b2\x1a.ChallengeTierceStageClearH\0R\x0bIBFHHKHNEFL\x12F\n\x0bII\
+    HFEDLHOPI\x18\x0e\x20\x01(\x0b2\".ChallengeTiercePendingStageSettleH\0R\
+    \x0bIIHFEDLHOPI\x129\n\x0bHNHCFJJNJCE\x18\x05\x20\x01(\x0b2\x15.Challeng\
+    eTierceMedalH\0R\x0bHNHCFJJNJCEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -538,11 +539,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
+            deps.push(super::ChallengeTierceMedal::file_descriptor().clone());
+            deps.push(super::ChallengeTiercePendingStageSettle::file_descriptor().clone());
+            deps.push(super::ChallengeTierceStageClear::file_descriptor().clone());
             deps.push(super::ChallengeTierceSyncAllStage::file_descriptor().clone());
             deps.push(super::ChallengeTierceSyncSingleStage::file_descriptor().clone());
-            deps.push(super::FBAMAFLOBGA::file_descriptor().clone());
-            deps.push(super::FLIPNFHAMPO::file_descriptor().clone());
-            deps.push(super::PEOKJEOOOJD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeTierceSyncNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

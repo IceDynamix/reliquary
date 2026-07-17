@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MEPHKJFAJPP {
     // message fields
-    // @@protoc_insertion_point(field:MEPHKJFAJPP.HELMPDCKLEO)
-    pub HELMPDCKLEO: ::std::string::String,
-    // @@protoc_insertion_point(field:MEPHKJFAJPP.EIDOKHKEOPP)
-    pub EIDOKHKEOPP: ::std::string::String,
     // @@protoc_insertion_point(field:MEPHKJFAJPP.NLONGNHNECG)
     pub NLONGNHNECG: ::std::string::String,
     // @@protoc_insertion_point(field:MEPHKJFAJPP.BHNHGPCGKMA)
     pub BHNHGPCGKMA: ::std::string::String,
-    // @@protoc_insertion_point(field:MEPHKJFAJPP.GLEEJNEJACP)
-    pub GLEEJNEJACP: ::std::string::String,
-    // @@protoc_insertion_point(field:MEPHKJFAJPP.DFBLOBNLHCC)
-    pub DFBLOBNLHCC: ::std::string::String,
     // @@protoc_insertion_point(field:MEPHKJFAJPP.CKACNADCDFP)
     pub CKACNADCDFP: ::std::string::String,
+    // @@protoc_insertion_point(field:MEPHKJFAJPP.EIDOKHKEOPP)
+    pub EIDOKHKEOPP: ::std::string::String,
+    // @@protoc_insertion_point(field:MEPHKJFAJPP.HELMPDCKLEO)
+    pub HELMPDCKLEO: ::std::string::String,
+    // @@protoc_insertion_point(field:MEPHKJFAJPP.DFBLOBNLHCC)
+    pub DFBLOBNLHCC: ::std::string::String,
+    // @@protoc_insertion_point(field:MEPHKJFAJPP.GLEEJNEJACP)
+    pub GLEEJNEJACP: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MEPHKJFAJPP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,16 +62,6 @@ impl MEPHKJFAJPP {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HELMPDCKLEO",
-            |m: &MEPHKJFAJPP| { &m.HELMPDCKLEO },
-            |m: &mut MEPHKJFAJPP| { &mut m.HELMPDCKLEO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIDOKHKEOPP",
-            |m: &MEPHKJFAJPP| { &m.EIDOKHKEOPP },
-            |m: &mut MEPHKJFAJPP| { &mut m.EIDOKHKEOPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLONGNHNECG",
             |m: &MEPHKJFAJPP| { &m.NLONGNHNECG },
             |m: &mut MEPHKJFAJPP| { &mut m.NLONGNHNECG },
@@ -82,9 +72,19 @@ impl MEPHKJFAJPP {
             |m: &mut MEPHKJFAJPP| { &mut m.BHNHGPCGKMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLEEJNEJACP",
-            |m: &MEPHKJFAJPP| { &m.GLEEJNEJACP },
-            |m: &mut MEPHKJFAJPP| { &mut m.GLEEJNEJACP },
+            "CKACNADCDFP",
+            |m: &MEPHKJFAJPP| { &m.CKACNADCDFP },
+            |m: &mut MEPHKJFAJPP| { &mut m.CKACNADCDFP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EIDOKHKEOPP",
+            |m: &MEPHKJFAJPP| { &m.EIDOKHKEOPP },
+            |m: &mut MEPHKJFAJPP| { &mut m.EIDOKHKEOPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HELMPDCKLEO",
+            |m: &MEPHKJFAJPP| { &m.HELMPDCKLEO },
+            |m: &mut MEPHKJFAJPP| { &mut m.HELMPDCKLEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DFBLOBNLHCC",
@@ -92,9 +92,9 @@ impl MEPHKJFAJPP {
             |m: &mut MEPHKJFAJPP| { &mut m.DFBLOBNLHCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKACNADCDFP",
-            |m: &MEPHKJFAJPP| { &m.CKACNADCDFP },
-            |m: &mut MEPHKJFAJPP| { &mut m.CKACNADCDFP },
+            "GLEEJNEJACP",
+            |m: &MEPHKJFAJPP| { &m.GLEEJNEJACP },
+            |m: &mut MEPHKJFAJPP| { &mut m.GLEEJNEJACP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MEPHKJFAJPP>(
             "MEPHKJFAJPP",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for MEPHKJFAJPP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.HELMPDCKLEO = is.read_string()?;
-                },
-                34 => {
-                    self.EIDOKHKEOPP = is.read_string()?;
-                },
                 10 => {
                     self.NLONGNHNECG = is.read_string()?;
                 },
                 18 => {
                     self.BHNHGPCGKMA = is.read_string()?;
                 },
-                58 => {
-                    self.GLEEJNEJACP = is.read_string()?;
+                26 => {
+                    self.CKACNADCDFP = is.read_string()?;
+                },
+                34 => {
+                    self.EIDOKHKEOPP = is.read_string()?;
+                },
+                42 => {
+                    self.HELMPDCKLEO = is.read_string()?;
                 },
                 50 => {
                     self.DFBLOBNLHCC = is.read_string()?;
                 },
-                26 => {
-                    self.CKACNADCDFP = is.read_string()?;
+                58 => {
+                    self.GLEEJNEJACP = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for MEPHKJFAJPP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.HELMPDCKLEO.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.HELMPDCKLEO);
-        }
-        if !self.EIDOKHKEOPP.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.EIDOKHKEOPP);
-        }
         if !self.NLONGNHNECG.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.NLONGNHNECG);
         }
         if !self.BHNHGPCGKMA.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.BHNHGPCGKMA);
         }
-        if !self.GLEEJNEJACP.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.GLEEJNEJACP);
+        if !self.CKACNADCDFP.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.CKACNADCDFP);
+        }
+        if !self.EIDOKHKEOPP.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.EIDOKHKEOPP);
+        }
+        if !self.HELMPDCKLEO.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.HELMPDCKLEO);
         }
         if !self.DFBLOBNLHCC.is_empty() {
             my_size += ::protobuf::rt::string_size(6, &self.DFBLOBNLHCC);
         }
-        if !self.CKACNADCDFP.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.CKACNADCDFP);
+        if !self.GLEEJNEJACP.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.GLEEJNEJACP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for MEPHKJFAJPP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.HELMPDCKLEO.is_empty() {
-            os.write_string(5, &self.HELMPDCKLEO)?;
-        }
-        if !self.EIDOKHKEOPP.is_empty() {
-            os.write_string(4, &self.EIDOKHKEOPP)?;
-        }
         if !self.NLONGNHNECG.is_empty() {
             os.write_string(1, &self.NLONGNHNECG)?;
         }
         if !self.BHNHGPCGKMA.is_empty() {
             os.write_string(2, &self.BHNHGPCGKMA)?;
         }
-        if !self.GLEEJNEJACP.is_empty() {
-            os.write_string(7, &self.GLEEJNEJACP)?;
+        if !self.CKACNADCDFP.is_empty() {
+            os.write_string(3, &self.CKACNADCDFP)?;
+        }
+        if !self.EIDOKHKEOPP.is_empty() {
+            os.write_string(4, &self.EIDOKHKEOPP)?;
+        }
+        if !self.HELMPDCKLEO.is_empty() {
+            os.write_string(5, &self.HELMPDCKLEO)?;
         }
         if !self.DFBLOBNLHCC.is_empty() {
             os.write_string(6, &self.DFBLOBNLHCC)?;
         }
-        if !self.CKACNADCDFP.is_empty() {
-            os.write_string(3, &self.CKACNADCDFP)?;
+        if !self.GLEEJNEJACP.is_empty() {
+            os.write_string(7, &self.GLEEJNEJACP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for MEPHKJFAJPP {
     }
 
     fn clear(&mut self) {
-        self.HELMPDCKLEO.clear();
-        self.EIDOKHKEOPP.clear();
         self.NLONGNHNECG.clear();
         self.BHNHGPCGKMA.clear();
-        self.GLEEJNEJACP.clear();
-        self.DFBLOBNLHCC.clear();
         self.CKACNADCDFP.clear();
+        self.EIDOKHKEOPP.clear();
+        self.HELMPDCKLEO.clear();
+        self.DFBLOBNLHCC.clear();
+        self.GLEEJNEJACP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MEPHKJFAJPP {
         static instance: MEPHKJFAJPP = MEPHKJFAJPP {
-            HELMPDCKLEO: ::std::string::String::new(),
-            EIDOKHKEOPP: ::std::string::String::new(),
             NLONGNHNECG: ::std::string::String::new(),
             BHNHGPCGKMA: ::std::string::String::new(),
-            GLEEJNEJACP: ::std::string::String::new(),
-            DFBLOBNLHCC: ::std::string::String::new(),
             CKACNADCDFP: ::std::string::String::new(),
+            EIDOKHKEOPP: ::std::string::String::new(),
+            HELMPDCKLEO: ::std::string::String::new(),
+            DFBLOBNLHCC: ::std::string::String::new(),
+            GLEEJNEJACP: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for MEPHKJFAJPP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MEPHKJFAJPP.proto\"\xfb\x01\n\x0bMEPHKJFAJPP\x12\x20\n\x0bHELMPDCK\
-    LEO\x18\x05\x20\x01(\tR\x0bHELMPDCKLEO\x12\x20\n\x0bEIDOKHKEOPP\x18\x04\
-    \x20\x01(\tR\x0bEIDOKHKEOPP\x12\x20\n\x0bNLONGNHNECG\x18\x01\x20\x01(\tR\
-    \x0bNLONGNHNECG\x12\x20\n\x0bBHNHGPCGKMA\x18\x02\x20\x01(\tR\x0bBHNHGPCG\
-    KMA\x12\x20\n\x0bGLEEJNEJACP\x18\x07\x20\x01(\tR\x0bGLEEJNEJACP\x12\x20\
-    \n\x0bDFBLOBNLHCC\x18\x06\x20\x01(\tR\x0bDFBLOBNLHCC\x12\x20\n\x0bCKACNA\
-    DCDFP\x18\x03\x20\x01(\tR\x0bCKACNADCDFPb\x06proto3\
+    \n\x11MEPHKJFAJPP.proto\"\xfb\x01\n\x0bMEPHKJFAJPP\x12\x20\n\x0bNLONGNHN\
+    ECG\x18\x01\x20\x01(\tR\x0bNLONGNHNECG\x12\x20\n\x0bBHNHGPCGKMA\x18\x02\
+    \x20\x01(\tR\x0bBHNHGPCGKMA\x12\x20\n\x0bCKACNADCDFP\x18\x03\x20\x01(\tR\
+    \x0bCKACNADCDFP\x12\x20\n\x0bEIDOKHKEOPP\x18\x04\x20\x01(\tR\x0bEIDOKHKE\
+    OPP\x12\x20\n\x0bHELMPDCKLEO\x18\x05\x20\x01(\tR\x0bHELMPDCKLEO\x12\x20\
+    \n\x0bDFBLOBNLHCC\x18\x06\x20\x01(\tR\x0bDFBLOBNLHCC\x12\x20\n\x0bGLEEJN\
+    EJACP\x18\x07\x20\x01(\tR\x0bGLEEJNEJACPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

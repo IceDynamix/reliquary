@@ -79,7 +79,7 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.buff_two = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.buff_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.buff_two);
+            my_size += ::protobuf::rt::uint32_size(5, self.buff_two);
         }
         if self.buff_one != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.buff_one);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for ChallengeStoryBuffInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.buff_two != 0 {
-            os.write_uint32(13, self.buff_two)?;
+            os.write_uint32(5, self.buff_two)?;
         }
         if self.buff_one != 0 {
             os.write_uint32(12, self.buff_one)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryBuffInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cChallengeStoryBuffInfo.proto\"N\n\x16ChallengeStoryBuffInfo\x12\
-    \x19\n\x08buff_two\x18\r\x20\x01(\rR\x07buffTwo\x12\x19\n\x08buff_one\
+    \x19\n\x08buff_two\x18\x05\x20\x01(\rR\x07buffTwo\x12\x19\n\x08buff_one\
     \x18\x0c\x20\x01(\rR\x07buffOneb\x06proto3\
 ";
 

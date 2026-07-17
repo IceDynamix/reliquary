@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OPOCANGAEHJ {
     // message fields
-    // @@protoc_insertion_point(field:OPOCANGAEHJ.x)
-    pub x: u32,
     // @@protoc_insertion_point(field:OPOCANGAEHJ.y)
     pub y: u32,
+    // @@protoc_insertion_point(field:OPOCANGAEHJ.x)
+    pub x: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OPOCANGAEHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OPOCANGAEHJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "x",
-            |m: &OPOCANGAEHJ| { &m.x },
-            |m: &mut OPOCANGAEHJ| { &mut m.x },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "y",
             |m: &OPOCANGAEHJ| { &m.y },
             |m: &mut OPOCANGAEHJ| { &mut m.y },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "x",
+            |m: &OPOCANGAEHJ| { &m.x },
+            |m: &mut OPOCANGAEHJ| { &mut m.x },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPOCANGAEHJ>(
             "OPOCANGAEHJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OPOCANGAEHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.x = is.read_uint32()?;
-                },
-                24 => {
+                56 => {
                     self.y = is.read_uint32()?;
+                },
+                96 => {
+                    self.x = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OPOCANGAEHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.x != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.x);
-        }
         if self.y != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.y);
+            my_size += ::protobuf::rt::uint32_size(7, self.y);
+        }
+        if self.x != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.x);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OPOCANGAEHJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.x != 0 {
-            os.write_uint32(8, self.x)?;
-        }
         if self.y != 0 {
-            os.write_uint32(3, self.y)?;
+            os.write_uint32(7, self.y)?;
+        }
+        if self.x != 0 {
+            os.write_uint32(12, self.x)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OPOCANGAEHJ {
     }
 
     fn clear(&mut self) {
-        self.x = 0;
         self.y = 0;
+        self.x = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPOCANGAEHJ {
         static instance: OPOCANGAEHJ = OPOCANGAEHJ {
-            x: 0,
             y: 0,
+            x: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for OPOCANGAEHJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OPOCANGAEHJ.proto\")\n\x0bOPOCANGAEHJ\x12\x0c\n\x01x\x18\x08\x20\
-    \x01(\rR\x01x\x12\x0c\n\x01y\x18\x03\x20\x01(\rR\x01yb\x06proto3\
+    \n\x11OPOCANGAEHJ.proto\")\n\x0bOPOCANGAEHJ\x12\x0c\n\x01y\x18\x07\x20\
+    \x01(\rR\x01y\x12\x0c\n\x01x\x18\x0c\x20\x01(\rR\x01xb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

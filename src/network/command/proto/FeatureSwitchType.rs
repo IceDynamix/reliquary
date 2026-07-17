@@ -219,6 +219,10 @@ pub enum FeatureSwitchType {
     BLOHGFCFEEL_KGMKFOPKJPK = 96,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_HBMLKNFMGEN)
     BLOHGFCFEEL_HBMLKNFMGEN = 97,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_AFNFHMPAPFN)
+    BLOHGFCFEEL_AFNFHMPAPFN = 98,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.BLOHGFCFEEL_MOMBNANDPNO)
+    BLOHGFCFEEL_MOMBNANDPNO = 99,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -326,6 +330,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             95 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD),
             96 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK),
             97 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN),
+            98 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN),
+            99 => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO),
             _ => ::std::option::Option::None
         }
     }
@@ -428,6 +434,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "BLOHGFCFEEL_KACOHBEJFOD" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD),
             "BLOHGFCFEEL_KGMKFOPKJPK" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK),
             "BLOHGFCFEEL_HBMLKNFMGEN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN),
+            "BLOHGFCFEEL_AFNFHMPAPFN" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN),
+            "BLOHGFCFEEL_MOMBNANDPNO" => ::std::option::Option::Some(FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO),
             _ => ::std::option::Option::None
         }
     }
@@ -529,6 +537,8 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD,
         FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK,
         FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN,
+        FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN,
+        FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO,
     ];
 }
 
@@ -636,6 +646,8 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::BLOHGFCFEEL_KACOHBEJFOD => 93,
             FeatureSwitchType::BLOHGFCFEEL_KGMKFOPKJPK => 94,
             FeatureSwitchType::BLOHGFCFEEL_HBMLKNFMGEN => 95,
+            FeatureSwitchType::BLOHGFCFEEL_AFNFHMPAPFN => 96,
+            FeatureSwitchType::BLOHGFCFEEL_MOMBNANDPNO => 97,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -654,7 +666,7 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xf3\x15\n\x11FeatureSwitchType\x12\x1b\n\
+    \n\x17FeatureSwitchType.proto*\xad\x16\n\x11FeatureSwitchType\x12\x1b\n\
     \x17BLOHGFCFEEL_OLLFDOONPPH\x10\0\x12\x1b\n\x17BLOHGFCFEEL_CMPBOEFPAFF\
     \x10\x01\x12\x1b\n\x17BLOHGFCFEEL_NPMMMJEABDA\x10\x02\x12\x1b\n\x17BLOHG\
     FCFEEL_LDFMLGODBCI\x10\x03\x12\x1b\n\x17BLOHGFCFEEL_IMFCEBAFAOD\x10\x04\
@@ -713,7 +725,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     _KNMALPBJLJL\x10\\\x12\x1b\n\x17BLOHGFCFEEL_IPDDHMBDLJI\x10]\x12\x1b\n\
     \x17BLOHGFCFEEL_ANCKMNILOCG\x10^\x12\x1b\n\x17BLOHGFCFEEL_KACOHBEJFOD\
     \x10_\x12\x1b\n\x17BLOHGFCFEEL_KGMKFOPKJPK\x10`\x12\x1b\n\x17BLOHGFCFEEL\
-    _HBMLKNFMGEN\x10ab\x06proto3\
+    _HBMLKNFMGEN\x10a\x12\x1b\n\x17BLOHGFCFEEL_AFNFHMPAPFN\x10b\x12\x1b\n\
+    \x17BLOHGFCFEEL_MOMBNANDPNO\x10cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOIONLDJGJI {
     // message fields
-    // @@protoc_insertion_point(field:MOIONLDJGJI.display_value)
-    pub display_value: ::protobuf::MessageField<super::LMIFHAMFCFE::LMIFHAMFCFE>,
+    // @@protoc_insertion_point(field:MOIONLDJGJI.param)
+    pub param: ::protobuf::MessageField<super::GridFightConsumableTargetInfo::GridFightConsumableTargetInfo>,
     // @@protoc_insertion_point(field:MOIONLDJGJI.item_id)
     pub item_id: u32,
+    // @@protoc_insertion_point(field:MOIONLDJGJI.group_id)
+    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MOIONLDJGJI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +51,22 @@ impl MOIONLDJGJI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMIFHAMFCFE::LMIFHAMFCFE>(
-            "display_value",
-            |m: &MOIONLDJGJI| { &m.display_value },
-            |m: &mut MOIONLDJGJI| { &mut m.display_value },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightConsumableTargetInfo::GridFightConsumableTargetInfo>(
+            "param",
+            |m: &MOIONLDJGJI| { &m.param },
+            |m: &mut MOIONLDJGJI| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &MOIONLDJGJI| { &m.item_id },
             |m: &mut MOIONLDJGJI| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &MOIONLDJGJI| { &m.group_id },
+            |m: &mut MOIONLDJGJI| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MOIONLDJGJI>(
             "MOIONLDJGJI",
@@ -79,11 +86,14 @@ impl ::protobuf::Message for MOIONLDJGJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.display_value)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.param)?;
                 },
-                120 => {
+                80 => {
                     self.item_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +107,15 @@ impl ::protobuf::Message for MOIONLDJGJI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.display_value.as_ref() {
+        if let Some(v) = self.param.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +123,14 @@ impl ::protobuf::Message for MOIONLDJGJI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.display_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.param.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(15, self.item_id)?;
+            os.write_uint32(10, self.item_id)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(12, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +149,17 @@ impl ::protobuf::Message for MOIONLDJGJI {
     }
 
     fn clear(&mut self) {
-        self.display_value.clear();
+        self.param.clear();
         self.item_id = 0;
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MOIONLDJGJI {
         static instance: MOIONLDJGJI = MOIONLDJGJI {
-            display_value: ::protobuf::MessageField::none(),
+            param: ::protobuf::MessageField::none(),
             item_id: 0,
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MOIONLDJGJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOIONLDJGJI.proto\x1a\x11LMIFHAMFCFE.proto\"Y\n\x0bMOIONLDJGJI\x12\
-    1\n\rdisplay_value\x18\x06\x20\x01(\x0b2\x0c.LMIFHAMFCFER\x0cdisplayValu\
-    e\x12\x17\n\x07item_id\x18\x0f\x20\x01(\rR\x06itemIdb\x06proto3\
+    \n\x11MOIONLDJGJI.proto\x1a#GridFightConsumableTargetInfo.proto\"w\n\x0b\
+    MOIONLDJGJI\x124\n\x05param\x18\x02\x20\x01(\x0b2\x1e.GridFightConsumabl\
+    eTargetInfoR\x05param\x12\x17\n\x07item_id\x18\n\x20\x01(\rR\x06itemId\
+    \x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LMIFHAMFCFE::file_descriptor().clone());
+            deps.push(super::GridFightConsumableTargetInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MOIONLDJGJI::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

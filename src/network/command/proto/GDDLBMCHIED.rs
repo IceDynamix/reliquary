@@ -79,13 +79,13 @@ impl ::protobuf::Message for GDDLBMCHIED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.MKOKLLKALDE)?;
                 },
-                24 => {
+                72 => {
                     self.MKOKLLKALDE.push(is.read_uint32()?);
                 },
-                56 => {
+                96 => {
                     self.KDIDDHIDNCG = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for GDDLBMCHIED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MKOKLLKALDE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.MKOKLLKALDE);
         if self.KDIDDHIDNCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KDIDDHIDNCG);
+            my_size += ::protobuf::rt::uint32_size(12, self.KDIDDHIDNCG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for GDDLBMCHIED {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.MKOKLLKALDE)?;
+        os.write_repeated_packed_uint32(9, &self.MKOKLLKALDE)?;
         if self.KDIDDHIDNCG != 0 {
-            os.write_uint32(7, self.KDIDDHIDNCG)?;
+            os.write_uint32(12, self.KDIDDHIDNCG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GDDLBMCHIED {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GDDLBMCHIED.proto\"Q\n\x0bGDDLBMCHIED\x12\x20\n\x0bMKOKLLKALDE\x18\
-    \x03\x20\x03(\rR\x0bMKOKLLKALDE\x12\x20\n\x0bKDIDDHIDNCG\x18\x07\x20\x01\
-    (\rR\x0bKDIDDHIDNCGb\x06proto3\
+    \t\x20\x03(\rR\x0bMKOKLLKALDE\x12\x20\n\x0bKDIDDHIDNCG\x18\x0c\x20\x01(\
+    \rR\x0bKDIDDHIDNCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

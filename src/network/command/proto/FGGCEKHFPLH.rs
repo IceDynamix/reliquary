@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FGGCEKHFPLH {
     // message fields
-    // @@protoc_insertion_point(field:FGGCEKHFPLH.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::PKCIPJBKAFO::PKCIPJBKAFO>,
     // @@protoc_insertion_point(field:FGGCEKHFPLH.buff_list)
     pub buff_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FGGCEKHFPLH.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::PKCIPJBKAFO::PKCIPJBKAFO>,
     // special fields
     // @@protoc_insertion_point(special_field:FGGCEKHFPLH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FGGCEKHFPLH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &FGGCEKHFPLH| { &m.avatar_list },
-            |m: &mut FGGCEKHFPLH| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &FGGCEKHFPLH| { &m.buff_list },
             |m: &mut FGGCEKHFPLH| { &mut m.buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &FGGCEKHFPLH| { &m.avatar_list },
+            |m: &mut FGGCEKHFPLH| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FGGCEKHFPLH>(
             "FGGCEKHFPLH",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for FGGCEKHFPLH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                66 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
                 },
-                64 => {
+                48 => {
                     self.buff_list.push(is.read_uint32()?);
+                },
+                58 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for FGGCEKHFPLH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.buff_list);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.buff_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(6, &self.buff_list)?;
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        os.write_repeated_packed_uint32(8, &self.buff_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FGGCEKHFPLH {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
         self.buff_list.clear();
+        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FGGCEKHFPLH {
         static instance: FGGCEKHFPLH = FGGCEKHFPLH {
-            avatar_list: ::std::vec::Vec::new(),
             buff_list: ::std::vec::Vec::new(),
+            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FGGCEKHFPLH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGGCEKHFPLH.proto\x1a\x11PKCIPJBKAFO.proto\"Y\n\x0bFGGCEKHFPLH\x12\
-    -\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\x0c.PKCIPJBKAFOR\navatarList\
-    \x12\x1b\n\tbuff_list\x18\x08\x20\x03(\rR\x08buffListb\x06proto3\
+    \x1b\n\tbuff_list\x18\x06\x20\x03(\rR\x08buffList\x12-\n\x0bavatar_list\
+    \x18\x07\x20\x03(\x0b2\x0c.PKCIPJBKAFOR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

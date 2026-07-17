@@ -30,12 +30,12 @@ pub struct RechargeSuccNotify {
     // message fields
     // @@protoc_insertion_point(field:RechargeSuccNotify.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RechargeSuccNotify.price_tier)
-    pub price_tier: ::std::string::String,
     // @@protoc_insertion_point(field:RechargeSuccNotify.product_id)
     pub product_id: ::std::string::String,
     // @@protoc_insertion_point(field:RechargeSuccNotify.month_card_out_date_time)
     pub month_card_out_date_time: u64,
+    // @@protoc_insertion_point(field:RechargeSuccNotify.price_tier)
+    pub price_tier: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RechargeSuccNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl RechargeSuccNotify {
             |m: &mut RechargeSuccNotify| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "price_tier",
-            |m: &RechargeSuccNotify| { &m.price_tier },
-            |m: &mut RechargeSuccNotify| { &mut m.price_tier },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "product_id",
             |m: &RechargeSuccNotify| { &m.product_id },
             |m: &mut RechargeSuccNotify| { &mut m.product_id },
@@ -74,6 +69,11 @@ impl RechargeSuccNotify {
             "month_card_out_date_time",
             |m: &RechargeSuccNotify| { &m.month_card_out_date_time },
             |m: &mut RechargeSuccNotify| { &mut m.month_card_out_date_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "price_tier",
+            |m: &RechargeSuccNotify| { &m.price_tier },
+            |m: &mut RechargeSuccNotify| { &mut m.price_tier },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RechargeSuccNotify>(
             "RechargeSuccNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RechargeSuccNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
-                82 => {
-                    self.price_tier = is.read_string()?;
-                },
-                98 => {
+                26 => {
                     self.product_id = is.read_string()?;
                 },
-                56 => {
+                48 => {
                     self.month_card_out_date_time = is.read_uint64()?;
+                },
+                90 => {
+                    self.price_tier = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for RechargeSuccNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.price_tier.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.price_tier);
-        }
         if !self.product_id.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.product_id);
+            my_size += ::protobuf::rt::string_size(3, &self.product_id);
         }
         if self.month_card_out_date_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.month_card_out_date_time);
+            my_size += ::protobuf::rt::uint64_size(6, self.month_card_out_date_time);
+        }
+        if !self.price_tier.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.price_tier);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for RechargeSuccNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if !self.price_tier.is_empty() {
-            os.write_string(10, &self.price_tier)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if !self.product_id.is_empty() {
-            os.write_string(12, &self.product_id)?;
+            os.write_string(3, &self.product_id)?;
         }
         if self.month_card_out_date_time != 0 {
-            os.write_uint64(7, self.month_card_out_date_time)?;
+            os.write_uint64(6, self.month_card_out_date_time)?;
+        }
+        if !self.price_tier.is_empty() {
+            os.write_string(11, &self.price_tier)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for RechargeSuccNotify {
 
     fn clear(&mut self) {
         self.item_list.clear();
-        self.price_tier.clear();
         self.product_id.clear();
         self.month_card_out_date_time = 0;
+        self.price_tier.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RechargeSuccNotify {
         static instance: RechargeSuccNotify = RechargeSuccNotify {
             item_list: ::protobuf::MessageField::none(),
-            price_tier: ::std::string::String::new(),
             product_id: ::std::string::String::new(),
             month_card_out_date_time: 0,
+            price_tier: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for RechargeSuccNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RechargeSuccNotify.proto\x1a\x0eItemList.proto\"\xb2\x01\n\x12Rech\
-    argeSuccNotify\x12&\n\titem_list\x18\t\x20\x01(\x0b2\t.ItemListR\x08item\
-    List\x12\x1d\n\nprice_tier\x18\n\x20\x01(\tR\tpriceTier\x12\x1d\n\nprodu\
-    ct_id\x18\x0c\x20\x01(\tR\tproductId\x126\n\x18month_card_out_date_time\
-    \x18\x07\x20\x01(\x04R\x14monthCardOutDateTimeb\x06proto3\
+    argeSuccNotify\x12&\n\titem_list\x18\x01\x20\x01(\x0b2\t.ItemListR\x08it\
+    emList\x12\x1d\n\nproduct_id\x18\x03\x20\x01(\tR\tproductId\x126\n\x18mo\
+    nth_card_out_date_time\x18\x06\x20\x01(\x04R\x14monthCardOutDateTime\x12\
+    \x1d\n\nprice_tier\x18\x0b\x20\x01(\tR\tpriceTierb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

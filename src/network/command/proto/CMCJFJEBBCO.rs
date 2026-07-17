@@ -30,14 +30,14 @@ pub struct CMCJFJEBBCO {
     // message fields
     // @@protoc_insertion_point(field:CMCJFJEBBCO.LEMBPAGGMEM)
     pub LEMBPAGGMEM: ::std::string::String,
-    // @@protoc_insertion_point(field:CMCJFJEBBCO.MBPELIOJBDG)
-    pub MBPELIOJBDG: i32,
-    // @@protoc_insertion_point(field:CMCJFJEBBCO.LMMHAGLDACM)
-    pub LMMHAGLDACM: i32,
-    // @@protoc_insertion_point(field:CMCJFJEBBCO.HDMMKJIKCOJ)
-    pub HDMMKJIKCOJ: i32,
     // @@protoc_insertion_point(field:CMCJFJEBBCO.BLNDDBDIDNJ)
     pub BLNDDBDIDNJ: i32,
+    // @@protoc_insertion_point(field:CMCJFJEBBCO.HDMMKJIKCOJ)
+    pub HDMMKJIKCOJ: i32,
+    // @@protoc_insertion_point(field:CMCJFJEBBCO.LMMHAGLDACM)
+    pub LMMHAGLDACM: i32,
+    // @@protoc_insertion_point(field:CMCJFJEBBCO.MBPELIOJBDG)
+    pub MBPELIOJBDG: i32,
     // special fields
     // @@protoc_insertion_point(special_field:CMCJFJEBBCO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,14 +63,9 @@ impl CMCJFJEBBCO {
             |m: &mut CMCJFJEBBCO| { &mut m.LEMBPAGGMEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBPELIOJBDG",
-            |m: &CMCJFJEBBCO| { &m.MBPELIOJBDG },
-            |m: &mut CMCJFJEBBCO| { &mut m.MBPELIOJBDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMMHAGLDACM",
-            |m: &CMCJFJEBBCO| { &m.LMMHAGLDACM },
-            |m: &mut CMCJFJEBBCO| { &mut m.LMMHAGLDACM },
+            "BLNDDBDIDNJ",
+            |m: &CMCJFJEBBCO| { &m.BLNDDBDIDNJ },
+            |m: &mut CMCJFJEBBCO| { &mut m.BLNDDBDIDNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HDMMKJIKCOJ",
@@ -78,9 +73,14 @@ impl CMCJFJEBBCO {
             |m: &mut CMCJFJEBBCO| { &mut m.HDMMKJIKCOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLNDDBDIDNJ",
-            |m: &CMCJFJEBBCO| { &m.BLNDDBDIDNJ },
-            |m: &mut CMCJFJEBBCO| { &mut m.BLNDDBDIDNJ },
+            "LMMHAGLDACM",
+            |m: &CMCJFJEBBCO| { &m.LMMHAGLDACM },
+            |m: &mut CMCJFJEBBCO| { &mut m.LMMHAGLDACM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBPELIOJBDG",
+            |m: &CMCJFJEBBCO| { &m.MBPELIOJBDG },
+            |m: &mut CMCJFJEBBCO| { &mut m.MBPELIOJBDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CMCJFJEBBCO>(
             "CMCJFJEBBCO",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for CMCJFJEBBCO {
                 10 => {
                     self.LEMBPAGGMEM = is.read_string()?;
                 },
-                40 => {
-                    self.MBPELIOJBDG = is.read_int32()?;
-                },
-                32 => {
-                    self.LMMHAGLDACM = is.read_int32()?;
+                16 => {
+                    self.BLNDDBDIDNJ = is.read_int32()?;
                 },
                 24 => {
                     self.HDMMKJIKCOJ = is.read_int32()?;
                 },
-                16 => {
-                    self.BLNDDBDIDNJ = is.read_int32()?;
+                32 => {
+                    self.LMMHAGLDACM = is.read_int32()?;
+                },
+                40 => {
+                    self.MBPELIOJBDG = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for CMCJFJEBBCO {
         if !self.LEMBPAGGMEM.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.LEMBPAGGMEM);
         }
-        if self.MBPELIOJBDG != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.MBPELIOJBDG);
-        }
-        if self.LMMHAGLDACM != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.LMMHAGLDACM);
+        if self.BLNDDBDIDNJ != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.BLNDDBDIDNJ);
         }
         if self.HDMMKJIKCOJ != 0 {
             my_size += ::protobuf::rt::int32_size(3, self.HDMMKJIKCOJ);
         }
-        if self.BLNDDBDIDNJ != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.BLNDDBDIDNJ);
+        if self.LMMHAGLDACM != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.LMMHAGLDACM);
+        }
+        if self.MBPELIOJBDG != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.MBPELIOJBDG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,17 +151,17 @@ impl ::protobuf::Message for CMCJFJEBBCO {
         if !self.LEMBPAGGMEM.is_empty() {
             os.write_string(1, &self.LEMBPAGGMEM)?;
         }
-        if self.MBPELIOJBDG != 0 {
-            os.write_int32(5, self.MBPELIOJBDG)?;
-        }
-        if self.LMMHAGLDACM != 0 {
-            os.write_int32(4, self.LMMHAGLDACM)?;
+        if self.BLNDDBDIDNJ != 0 {
+            os.write_int32(2, self.BLNDDBDIDNJ)?;
         }
         if self.HDMMKJIKCOJ != 0 {
             os.write_int32(3, self.HDMMKJIKCOJ)?;
         }
-        if self.BLNDDBDIDNJ != 0 {
-            os.write_int32(2, self.BLNDDBDIDNJ)?;
+        if self.LMMHAGLDACM != 0 {
+            os.write_int32(4, self.LMMHAGLDACM)?;
+        }
+        if self.MBPELIOJBDG != 0 {
+            os.write_int32(5, self.MBPELIOJBDG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for CMCJFJEBBCO {
 
     fn clear(&mut self) {
         self.LEMBPAGGMEM.clear();
-        self.MBPELIOJBDG = 0;
-        self.LMMHAGLDACM = 0;
-        self.HDMMKJIKCOJ = 0;
         self.BLNDDBDIDNJ = 0;
+        self.HDMMKJIKCOJ = 0;
+        self.LMMHAGLDACM = 0;
+        self.MBPELIOJBDG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CMCJFJEBBCO {
         static instance: CMCJFJEBBCO = CMCJFJEBBCO {
             LEMBPAGGMEM: ::std::string::String::new(),
-            MBPELIOJBDG: 0,
-            LMMHAGLDACM: 0,
-            HDMMKJIKCOJ: 0,
             BLNDDBDIDNJ: 0,
+            HDMMKJIKCOJ: 0,
+            LMMHAGLDACM: 0,
+            MBPELIOJBDG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for CMCJFJEBBCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CMCJFJEBBCO.proto\"\xb7\x01\n\x0bCMCJFJEBBCO\x12\x20\n\x0bLEMBPAGG\
-    MEM\x18\x01\x20\x01(\tR\x0bLEMBPAGGMEM\x12\x20\n\x0bMBPELIOJBDG\x18\x05\
-    \x20\x01(\x05R\x0bMBPELIOJBDG\x12\x20\n\x0bLMMHAGLDACM\x18\x04\x20\x01(\
-    \x05R\x0bLMMHAGLDACM\x12\x20\n\x0bHDMMKJIKCOJ\x18\x03\x20\x01(\x05R\x0bH\
-    DMMKJIKCOJ\x12\x20\n\x0bBLNDDBDIDNJ\x18\x02\x20\x01(\x05R\x0bBLNDDBDIDNJ\
+    MEM\x18\x01\x20\x01(\tR\x0bLEMBPAGGMEM\x12\x20\n\x0bBLNDDBDIDNJ\x18\x02\
+    \x20\x01(\x05R\x0bBLNDDBDIDNJ\x12\x20\n\x0bHDMMKJIKCOJ\x18\x03\x20\x01(\
+    \x05R\x0bHDMMKJIKCOJ\x12\x20\n\x0bLMMHAGLDACM\x18\x04\x20\x01(\x05R\x0bL\
+    MMHAGLDACM\x12\x20\n\x0bMBPELIOJBDG\x18\x05\x20\x01(\x05R\x0bMBPELIOJBDG\
     b\x06proto3\
 ";
 

@@ -30,8 +30,8 @@ pub struct PlanetFesBonusEventInteractCsReq {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.JCBNLGDOMMF)
     pub JCBNLGDOMMF: u32,
-    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.LAOACNPDOLD)
-    pub LAOACNPDOLD: u32,
+    // @@protoc_insertion_point(field:PlanetFesBonusEventInteractCsReq.event_type)
+    pub event_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBonusEventInteractCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl PlanetFesBonusEventInteractCsReq {
             |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.JCBNLGDOMMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &PlanetFesBonusEventInteractCsReq| { &m.LAOACNPDOLD },
-            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.LAOACNPDOLD },
+            "event_type",
+            |m: &PlanetFesBonusEventInteractCsReq| { &m.event_type },
+            |m: &mut PlanetFesBonusEventInteractCsReq| { &mut m.event_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBonusEventInteractCsReq>(
             "PlanetFesBonusEventInteractCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.JCBNLGDOMMF = is.read_uint32()?;
                 },
-                64 => {
-                    self.LAOACNPDOLD = is.read_uint32()?;
+                80 => {
+                    self.event_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JCBNLGDOMMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JCBNLGDOMMF);
+            my_size += ::protobuf::rt::uint32_size(5, self.JCBNLGDOMMF);
         }
-        if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LAOACNPDOLD);
+        if self.event_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.event_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JCBNLGDOMMF != 0 {
-            os.write_uint32(13, self.JCBNLGDOMMF)?;
+            os.write_uint32(5, self.JCBNLGDOMMF)?;
         }
-        if self.LAOACNPDOLD != 0 {
-            os.write_uint32(8, self.LAOACNPDOLD)?;
+        if self.event_type != 0 {
+            os.write_uint32(10, self.event_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for PlanetFesBonusEventInteractCsReq {
 
     fn clear(&mut self) {
         self.JCBNLGDOMMF = 0;
-        self.LAOACNPDOLD = 0;
+        self.event_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBonusEventInteractCsReq {
         static instance: PlanetFesBonusEventInteractCsReq = PlanetFesBonusEventInteractCsReq {
             JCBNLGDOMMF: 0,
-            LAOACNPDOLD: 0,
+            event_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBonusEventInteractCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&PlanetFesBonusEventInteractCsReq.proto\"f\n\x20PlanetFesBonusEventInt\
-    eractCsReq\x12\x20\n\x0bJCBNLGDOMMF\x18\r\x20\x01(\rR\x0bJCBNLGDOMMF\x12\
-    \x20\n\x0bLAOACNPDOLD\x18\x08\x20\x01(\rR\x0bLAOACNPDOLDb\x06proto3\
+    \n&PlanetFesBonusEventInteractCsReq.proto\"c\n\x20PlanetFesBonusEventInt\
+    eractCsReq\x12\x20\n\x0bJCBNLGDOMMF\x18\x05\x20\x01(\rR\x0bJCBNLGDOMMF\
+    \x12\x1d\n\nevent_type\x18\n\x20\x01(\rR\teventTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

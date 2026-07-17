@@ -79,10 +79,10 @@ impl ::protobuf::Message for JDLIPNFGEID {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.avatar_type = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JDLIPNFGEID {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.avatar_type);
+            my_size += ::protobuf::rt::uint32_size(6, self.avatar_type);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JDLIPNFGEID {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_type != 0 {
-            os.write_uint32(4, self.avatar_type)?;
+            os.write_uint32(6, self.avatar_type)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(15, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JDLIPNFGEID {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JDLIPNFGEID.proto\"K\n\x0bJDLIPNFGEID\x12\x1f\n\x0bavatar_type\x18\
-    \x04\x20\x01(\rR\navatarType\x12\x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\
-    \x08avatarIdb\x06proto3\
+    \x06\x20\x01(\rR\navatarType\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08a\
+    vatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

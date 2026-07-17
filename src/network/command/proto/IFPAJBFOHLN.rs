@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IFPAJBFOHLN {
     // message fields
+    // @@protoc_insertion_point(field:IFPAJBFOHLN.section_id)
+    pub section_id: u32,
     // @@protoc_insertion_point(field:IFPAJBFOHLN.DCAHJELNJNP)
     pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:IFPAJBFOHLN.role_id)
     pub role_id: u32,
-    // @@protoc_insertion_point(field:IFPAJBFOHLN.section_id)
-    pub section_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IFPAJBFOHLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl IFPAJBFOHLN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "section_id",
+            |m: &IFPAJBFOHLN| { &m.section_id },
+            |m: &mut IFPAJBFOHLN| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCAHJELNJNP",
             |m: &IFPAJBFOHLN| { &m.DCAHJELNJNP },
             |m: &mut IFPAJBFOHLN| { &mut m.DCAHJELNJNP },
@@ -62,11 +67,6 @@ impl IFPAJBFOHLN {
             "role_id",
             |m: &IFPAJBFOHLN| { &m.role_id },
             |m: &mut IFPAJBFOHLN| { &mut m.role_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &IFPAJBFOHLN| { &m.section_id },
-            |m: &mut IFPAJBFOHLN| { &mut m.section_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IFPAJBFOHLN>(
             "IFPAJBFOHLN",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for IFPAJBFOHLN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
+                    self.section_id = is.read_uint32()?;
+                },
+                88 => {
                     self.DCAHJELNJNP = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.role_id = is.read_uint32()?;
-                },
-                80 => {
-                    self.section_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for IFPAJBFOHLN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.section_id);
+        }
         if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DCAHJELNJNP);
+            my_size += ::protobuf::rt::uint32_size(11, self.DCAHJELNJNP);
         }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.role_id);
-        }
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.section_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for IFPAJBFOHLN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.section_id != 0 {
+            os.write_uint32(4, self.section_id)?;
+        }
         if self.DCAHJELNJNP != 0 {
-            os.write_uint32(4, self.DCAHJELNJNP)?;
+            os.write_uint32(11, self.DCAHJELNJNP)?;
         }
         if self.role_id != 0 {
-            os.write_uint32(12, self.role_id)?;
-        }
-        if self.section_id != 0 {
-            os.write_uint32(10, self.section_id)?;
+            os.write_uint32(15, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for IFPAJBFOHLN {
     }
 
     fn clear(&mut self) {
+        self.section_id = 0;
         self.DCAHJELNJNP = 0;
         self.role_id = 0;
-        self.section_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IFPAJBFOHLN {
         static instance: IFPAJBFOHLN = IFPAJBFOHLN {
+            section_id: 0,
             DCAHJELNJNP: 0,
             role_id: 0,
-            section_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for IFPAJBFOHLN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IFPAJBFOHLN.proto\"g\n\x0bIFPAJBFOHLN\x12\x20\n\x0bDCAHJELNJNP\x18\
-    \x04\x20\x01(\rR\x0bDCAHJELNJNP\x12\x17\n\x07role_id\x18\x0c\x20\x01(\rR\
-    \x06roleId\x12\x1d\n\nsection_id\x18\n\x20\x01(\rR\tsectionIdb\x06proto3\
+    \n\x11IFPAJBFOHLN.proto\"g\n\x0bIFPAJBFOHLN\x12\x1d\n\nsection_id\x18\
+    \x04\x20\x01(\rR\tsectionId\x12\x20\n\x0bDCAHJELNJNP\x18\x0b\x20\x01(\rR\
+    \x0bDCAHJELNJNP\x12\x17\n\x07role_id\x18\x0f\x20\x01(\rR\x06roleIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

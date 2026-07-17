@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSaveLogisticsMapScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSaveLogisticsMapScRsp.CFNKOBKJKNK)
-    pub CFNKOBKJKNK: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // @@protoc_insertion_point(field:GetSaveLogisticsMapScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSaveLogisticsMapScRsp.CFNKOBKJKNK)
+    pub CFNKOBKJKNK: ::std::vec::Vec<super::IODAFIBPAGM::IODAFIBPAGM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSaveLogisticsMapScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetSaveLogisticsMapScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFNKOBKJKNK",
-            |m: &GetSaveLogisticsMapScRsp| { &m.CFNKOBKJKNK },
-            |m: &mut GetSaveLogisticsMapScRsp| { &mut m.CFNKOBKJKNK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSaveLogisticsMapScRsp| { &m.retcode },
             |m: &mut GetSaveLogisticsMapScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CFNKOBKJKNK",
+            |m: &GetSaveLogisticsMapScRsp| { &m.CFNKOBKJKNK },
+            |m: &mut GetSaveLogisticsMapScRsp| { &mut m.CFNKOBKJKNK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSaveLogisticsMapScRsp>(
             "GetSaveLogisticsMapScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetSaveLogisticsMapScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.CFNKOBKJKNK.push(is.read_message()?);
-                },
-                8 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    self.CFNKOBKJKNK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetSaveLogisticsMapScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         for value in &self.CFNKOBKJKNK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CFNKOBKJKNK {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
+        for v in &self.CFNKOBKJKNK {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSaveLogisticsMapScRsp {
     }
 
     fn clear(&mut self) {
-        self.CFNKOBKJKNK.clear();
         self.retcode = 0;
+        self.CFNKOBKJKNK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSaveLogisticsMapScRsp {
         static instance: GetSaveLogisticsMapScRsp = GetSaveLogisticsMapScRsp {
-            CFNKOBKJKNK: ::std::vec::Vec::new(),
             retcode: 0,
+            CFNKOBKJKNK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveLogisticsMapScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetSaveLogisticsMapScRsp.proto\x1a\x11IODAFIBPAGM.proto\"d\n\x18Ge\
-    tSaveLogisticsMapScRsp\x12.\n\x0bCFNKOBKJKNK\x18\n\x20\x03(\x0b2\x0c.IOD\
-    AFIBPAGMR\x0bCFNKOBKJKNK\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07ret\
-    codeb\x06proto3\
+    tSaveLogisticsMapScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retco\
+    de\x12.\n\x0bCFNKOBKJKNK\x18\r\x20\x03(\x0b2\x0c.IODAFIBPAGMR\x0bCFNKOBK\
+    JKNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

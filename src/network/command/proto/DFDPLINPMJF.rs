@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DFDPLINPMJF {
     // message fields
-    // @@protoc_insertion_point(field:DFDPLINPMJF.KGIELMEOPEH)
-    pub KGIELMEOPEH: ::std::vec::Vec<super::CMIKEILGNGK::CMIKEILGNGK>,
     // @@protoc_insertion_point(field:DFDPLINPMJF.INGDHDPEGOK)
     pub INGDHDPEGOK: u32,
     // @@protoc_insertion_point(field:DFDPLINPMJF.IGPNFJDACIE)
     pub IGPNFJDACIE: u32,
+    // @@protoc_insertion_point(field:DFDPLINPMJF.KGIELMEOPEH)
+    pub KGIELMEOPEH: ::std::vec::Vec<super::CMIKEILGNGK::CMIKEILGNGK>,
     // special fields
     // @@protoc_insertion_point(special_field:DFDPLINPMJF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl DFDPLINPMJF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KGIELMEOPEH",
-            |m: &DFDPLINPMJF| { &m.KGIELMEOPEH },
-            |m: &mut DFDPLINPMJF| { &mut m.KGIELMEOPEH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INGDHDPEGOK",
             |m: &DFDPLINPMJF| { &m.INGDHDPEGOK },
@@ -67,6 +62,11 @@ impl DFDPLINPMJF {
             "IGPNFJDACIE",
             |m: &DFDPLINPMJF| { &m.IGPNFJDACIE },
             |m: &mut DFDPLINPMJF| { &mut m.IGPNFJDACIE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KGIELMEOPEH",
+            |m: &DFDPLINPMJF| { &m.KGIELMEOPEH },
+            |m: &mut DFDPLINPMJF| { &mut m.KGIELMEOPEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFDPLINPMJF>(
             "DFDPLINPMJF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DFDPLINPMJF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.KGIELMEOPEH.push(is.read_message()?);
-                },
                 8 => {
                     self.INGDHDPEGOK = is.read_uint32()?;
                 },
                 16 => {
                     self.IGPNFJDACIE = is.read_uint32()?;
+                },
+                26 => {
+                    self.KGIELMEOPEH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for DFDPLINPMJF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KGIELMEOPEH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.INGDHDPEGOK != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.INGDHDPEGOK);
         }
         if self.IGPNFJDACIE != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.IGPNFJDACIE);
         }
+        for value in &self.KGIELMEOPEH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KGIELMEOPEH {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
         if self.INGDHDPEGOK != 0 {
             os.write_uint32(1, self.INGDHDPEGOK)?;
         }
         if self.IGPNFJDACIE != 0 {
             os.write_uint32(2, self.IGPNFJDACIE)?;
         }
+        for v in &self.KGIELMEOPEH {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for DFDPLINPMJF {
     }
 
     fn clear(&mut self) {
-        self.KGIELMEOPEH.clear();
         self.INGDHDPEGOK = 0;
         self.IGPNFJDACIE = 0;
+        self.KGIELMEOPEH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFDPLINPMJF {
         static instance: DFDPLINPMJF = DFDPLINPMJF {
-            KGIELMEOPEH: ::std::vec::Vec::new(),
             INGDHDPEGOK: 0,
             IGPNFJDACIE: 0,
+            KGIELMEOPEH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for DFDPLINPMJF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DFDPLINPMJF.proto\x1a\x11CMIKEILGNGK.proto\"\x81\x01\n\x0bDFDPLINP\
-    MJF\x12.\n\x0bKGIELMEOPEH\x18\x03\x20\x03(\x0b2\x0c.CMIKEILGNGKR\x0bKGIE\
-    LMEOPEH\x12\x20\n\x0bINGDHDPEGOK\x18\x01\x20\x01(\rR\x0bINGDHDPEGOK\x12\
-    \x20\n\x0bIGPNFJDACIE\x18\x02\x20\x01(\rR\x0bIGPNFJDACIEb\x06proto3\
+    MJF\x12\x20\n\x0bINGDHDPEGOK\x18\x01\x20\x01(\rR\x0bINGDHDPEGOK\x12\x20\
+    \n\x0bIGPNFJDACIE\x18\x02\x20\x01(\rR\x0bIGPNFJDACIE\x12.\n\x0bKGIELMEOP\
+    EH\x18\x03\x20\x03(\x0b2\x0c.CMIKEILGNGKR\x0bKGIELMEOPEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

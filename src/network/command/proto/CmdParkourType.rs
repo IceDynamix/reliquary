@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdParkourType {
     // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_NLCDGIPGFDJ)
     KCLDFMNECJB_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_AGOKKBAKEBA)
+    KCLDFMNECJB_AGOKKBAKEBA = 8384,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_EINFPBHAJFJ)
+    KCLDFMNECJB_EINFPBHAJFJ = 8397,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_ADHENKLHBKE)
+    KCLDFMNECJB_ADHENKLHBKE = 8388,
     // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_GMBKGFOIOPI)
     KCLDFMNECJB_GMBKGFOIOPI = 8398,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_PGIBHKCAEAK)
-    KCLDFMNECJB_PGIBHKCAEAK = 8392,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_AGOKKBAKEBA)
-    KCLDFMNECJB_AGOKKBAKEBA = 8394,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_EINFPBHAJFJ)
-    KCLDFMNECJB_EINFPBHAJFJ = 8399,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_ICJCOBDPNGO)
+    KCLDFMNECJB_ICJCOBDPNGO = 8392,
     // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_GAJOJHCNNMO)
     KCLDFMNECJB_GAJOJHCNNMO = 8382,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_ADHENKLHBKE)
-    KCLDFMNECJB_ADHENKLHBKE = 8386,
-    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_ICJCOBDPNGO)
-    KCLDFMNECJB_ICJCOBDPNGO = 8400,
     // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_GMODLOKAHLA)
-    KCLDFMNECJB_GMODLOKAHLA = 8396,
+    KCLDFMNECJB_GMODLOKAHLA = 8383,
+    // @@protoc_insertion_point(enum_value:CmdParkourType.KCLDFMNECJB_PGIBHKCAEAK)
+    KCLDFMNECJB_PGIBHKCAEAK = 8385,
 }
 
 impl ::protobuf::Enum for CmdParkourType {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for CmdParkourType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdParkourType> {
         match value {
             0 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_NLCDGIPGFDJ),
+            8384 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA),
+            8397 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ),
+            8388 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ADHENKLHBKE),
             8398 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI),
-            8392 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK),
-            8394 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA),
-            8399 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ),
+            8392 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO),
             8382 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO),
-            8386 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ADHENKLHBKE),
-            8400 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO),
-            8396 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMODLOKAHLA),
+            8383 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMODLOKAHLA),
+            8385 => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for CmdParkourType {
     fn from_str(str: &str) -> ::std::option::Option<CmdParkourType> {
         match str {
             "KCLDFMNECJB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_NLCDGIPGFDJ),
-            "KCLDFMNECJB_GMBKGFOIOPI" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI),
-            "KCLDFMNECJB_PGIBHKCAEAK" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK),
             "KCLDFMNECJB_AGOKKBAKEBA" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA),
             "KCLDFMNECJB_EINFPBHAJFJ" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ),
-            "KCLDFMNECJB_GAJOJHCNNMO" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO),
             "KCLDFMNECJB_ADHENKLHBKE" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ADHENKLHBKE),
+            "KCLDFMNECJB_GMBKGFOIOPI" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI),
             "KCLDFMNECJB_ICJCOBDPNGO" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO),
+            "KCLDFMNECJB_GAJOJHCNNMO" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO),
             "KCLDFMNECJB_GMODLOKAHLA" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_GMODLOKAHLA),
+            "KCLDFMNECJB_PGIBHKCAEAK" => ::std::option::Option::Some(CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdParkourType] = &[
         CmdParkourType::KCLDFMNECJB_NLCDGIPGFDJ,
-        CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI,
-        CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK,
         CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA,
         CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ,
-        CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO,
         CmdParkourType::KCLDFMNECJB_ADHENKLHBKE,
+        CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI,
         CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO,
+        CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO,
         CmdParkourType::KCLDFMNECJB_GMODLOKAHLA,
+        CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for CmdParkourType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdParkourType::KCLDFMNECJB_NLCDGIPGFDJ => 0,
-            CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI => 1,
-            CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK => 2,
-            CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA => 3,
-            CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ => 4,
-            CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO => 5,
-            CmdParkourType::KCLDFMNECJB_ADHENKLHBKE => 6,
-            CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO => 7,
-            CmdParkourType::KCLDFMNECJB_GMODLOKAHLA => 8,
+            CmdParkourType::KCLDFMNECJB_AGOKKBAKEBA => 1,
+            CmdParkourType::KCLDFMNECJB_EINFPBHAJFJ => 2,
+            CmdParkourType::KCLDFMNECJB_ADHENKLHBKE => 3,
+            CmdParkourType::KCLDFMNECJB_GMBKGFOIOPI => 4,
+            CmdParkourType::KCLDFMNECJB_ICJCOBDPNGO => 5,
+            CmdParkourType::KCLDFMNECJB_GAJOJHCNNMO => 6,
+            CmdParkourType::KCLDFMNECJB_GMODLOKAHLA => 7,
+            CmdParkourType::KCLDFMNECJB_PGIBHKCAEAK => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,12 +133,12 @@ impl CmdParkourType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdParkourType.proto*\x9d\x02\n\x0eCmdParkourType\x12\x1b\n\x17KCL\
-    DFMNECJB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KCLDFMNECJB_GMBKGFOIOPI\x10\xceA\
-    \x12\x1c\n\x17KCLDFMNECJB_PGIBHKCAEAK\x10\xc8A\x12\x1c\n\x17KCLDFMNECJB_\
-    AGOKKBAKEBA\x10\xcaA\x12\x1c\n\x17KCLDFMNECJB_EINFPBHAJFJ\x10\xcfA\x12\
-    \x1c\n\x17KCLDFMNECJB_GAJOJHCNNMO\x10\xbeA\x12\x1c\n\x17KCLDFMNECJB_ADHE\
-    NKLHBKE\x10\xc2A\x12\x1c\n\x17KCLDFMNECJB_ICJCOBDPNGO\x10\xd0A\x12\x1c\n\
-    \x17KCLDFMNECJB_GMODLOKAHLA\x10\xccAb\x06proto3\
+    DFMNECJB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KCLDFMNECJB_AGOKKBAKEBA\x10\xc0A\
+    \x12\x1c\n\x17KCLDFMNECJB_EINFPBHAJFJ\x10\xcdA\x12\x1c\n\x17KCLDFMNECJB_\
+    ADHENKLHBKE\x10\xc4A\x12\x1c\n\x17KCLDFMNECJB_GMBKGFOIOPI\x10\xceA\x12\
+    \x1c\n\x17KCLDFMNECJB_ICJCOBDPNGO\x10\xc8A\x12\x1c\n\x17KCLDFMNECJB_GAJO\
+    JHCNNMO\x10\xbeA\x12\x1c\n\x17KCLDFMNECJB_GMODLOKAHLA\x10\xbfA\x12\x1c\n\
+    \x17KCLDFMNECJB_PGIBHKCAEAK\x10\xc1Ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

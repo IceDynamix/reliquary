@@ -72,7 +72,7 @@ impl ::protobuf::Message for PlayerReturnExtraHcoinProgressScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                80 => {
                     self.HBPKGODMJNK = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for PlayerReturnExtraHcoinProgressScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HBPKGODMJNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HBPKGODMJNK);
+            my_size += ::protobuf::rt::uint32_size(10, self.HBPKGODMJNK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PlayerReturnExtraHcoinProgressScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HBPKGODMJNK != 0 {
-            os.write_uint32(6, self.HBPKGODMJNK)?;
+            os.write_uint32(10, self.HBPKGODMJNK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnExtraHcoinProgressScNoti
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,PlayerReturnExtraHcoinProgressScNotify.proto\"J\n&PlayerReturnExtraHc\
-    oinProgressScNotify\x12\x20\n\x0bHBPKGODMJNK\x18\x06\x20\x01(\rR\x0bHBPK\
-    GODMJNKb\x06proto3\
+    oinProgressScNotify\x12\x20\n\x0bHBPKGODMJNK\x18\n\x20\x01(\rR\x0bHBPKGO\
+    DMJNKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

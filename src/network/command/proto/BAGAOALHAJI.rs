@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BAGAOALHAJI {
     // message fields
-    // @@protoc_insertion_point(field:BAGAOALHAJI.APHGAEAPLJF)
-    pub APHGAEAPLJF: ::std::vec::Vec<super::EKEOBMOKEFD::EKEOBMOKEFD>,
+    // @@protoc_insertion_point(field:BAGAOALHAJI.skill_list)
+    pub skill_list: ::std::vec::Vec<super::EKEOBMOKEFD::EKEOBMOKEFD>,
     // special fields
     // @@protoc_insertion_point(special_field:BAGAOALHAJI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BAGAOALHAJI {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APHGAEAPLJF",
-            |m: &BAGAOALHAJI| { &m.APHGAEAPLJF },
-            |m: &mut BAGAOALHAJI| { &mut m.APHGAEAPLJF },
+            "skill_list",
+            |m: &BAGAOALHAJI| { &m.skill_list },
+            |m: &mut BAGAOALHAJI| { &mut m.skill_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAGAOALHAJI>(
             "BAGAOALHAJI",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BAGAOALHAJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.APHGAEAPLJF.push(is.read_message()?);
+                26 => {
+                    self.skill_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for BAGAOALHAJI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.APHGAEAPLJF {
+        for value in &self.skill_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for BAGAOALHAJI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.APHGAEAPLJF {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.skill_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for BAGAOALHAJI {
     }
 
     fn clear(&mut self) {
-        self.APHGAEAPLJF.clear();
+        self.skill_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAGAOALHAJI {
         static instance: BAGAOALHAJI = BAGAOALHAJI {
-            APHGAEAPLJF: ::std::vec::Vec::new(),
+            skill_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for BAGAOALHAJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAGAOALHAJI.proto\x1a\x11EKEOBMOKEFD.proto\"=\n\x0bBAGAOALHAJI\x12\
-    .\n\x0bAPHGAEAPLJF\x18\x07\x20\x03(\x0b2\x0c.EKEOBMOKEFDR\x0bAPHGAEAPLJF\
-    b\x06proto3\
+    \n\x11BAGAOALHAJI.proto\x1a\x11EKEOBMOKEFD.proto\":\n\x0bBAGAOALHAJI\x12\
+    +\n\nskill_list\x18\x03\x20\x03(\x0b2\x0c.EKEOBMOKEFDR\tskillListb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdEraFlipperType {
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_NLCDGIPGFDJ)
     LDEBFOMPOGN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DDHFJFAKPCB)
-    LDEBFOMPOGN_DDHFJFAKPCB = 6560,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_GKOKHIOBJDM)
-    LDEBFOMPOGN_GKOKHIOBJDM = 6573,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DDFCEHMLIAL)
-    LDEBFOMPOGN_DDFCEHMLIAL = 6567,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_KHMGHMMCJEM)
-    LDEBFOMPOGN_KHMGHMMCJEM = 6564,
+    LDEBFOMPOGN_KHMGHMMCJEM = 6562,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_GKOKHIOBJDM)
+    LDEBFOMPOGN_GKOKHIOBJDM = 6559,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DDFCEHMLIAL)
+    LDEBFOMPOGN_DDFCEHMLIAL = 6571,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_HBIJLNGMBIB)
+    LDEBFOMPOGN_HBIJLNGMBIB = 6557,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DANCIMOJIJM)
+    LDEBFOMPOGN_DANCIMOJIJM = 6555,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DDHFJFAKPCB)
+    LDEBFOMPOGN_DDHFJFAKPCB = 6565,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_OPAIFJPGJKA)
+    LDEBFOMPOGN_OPAIFJPGJKA = 6568,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_HGACHEAMGPI)
+    LDEBFOMPOGN_HGACHEAMGPI = 6569,
     // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_LBIGAGOEINK)
     LDEBFOMPOGN_LBIGAGOEINK = 6558,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_DANCIMOJIJM)
-    LDEBFOMPOGN_DANCIMOJIJM = 6552,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_OPAIFJPGJKA)
-    LDEBFOMPOGN_OPAIFJPGJKA = 6557,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_HBIJLNGMBIB)
-    LDEBFOMPOGN_HBIJLNGMBIB = 6561,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.LDEBFOMPOGN_HGACHEAMGPI)
-    LDEBFOMPOGN_HGACHEAMGPI = 6553,
 }
 
 impl ::protobuf::Enum for CmdEraFlipperType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdEraFlipperType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdEraFlipperType> {
         match value {
             0 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_NLCDGIPGFDJ),
-            6560 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB),
-            6573 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_GKOKHIOBJDM),
-            6567 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDFCEHMLIAL),
-            6564 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM),
+            6562 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM),
+            6559 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_GKOKHIOBJDM),
+            6571 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDFCEHMLIAL),
+            6557 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB),
+            6555 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM),
+            6565 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB),
+            6568 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA),
+            6569 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI),
             6558 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK),
-            6552 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM),
-            6557 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA),
-            6561 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB),
-            6553 => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CmdEraFlipperType {
     fn from_str(str: &str) -> ::std::option::Option<CmdEraFlipperType> {
         match str {
             "LDEBFOMPOGN_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_NLCDGIPGFDJ),
-            "LDEBFOMPOGN_DDHFJFAKPCB" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB),
+            "LDEBFOMPOGN_KHMGHMMCJEM" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM),
             "LDEBFOMPOGN_GKOKHIOBJDM" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_GKOKHIOBJDM),
             "LDEBFOMPOGN_DDFCEHMLIAL" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDFCEHMLIAL),
-            "LDEBFOMPOGN_KHMGHMMCJEM" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM),
-            "LDEBFOMPOGN_LBIGAGOEINK" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK),
-            "LDEBFOMPOGN_DANCIMOJIJM" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM),
-            "LDEBFOMPOGN_OPAIFJPGJKA" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA),
             "LDEBFOMPOGN_HBIJLNGMBIB" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB),
+            "LDEBFOMPOGN_DANCIMOJIJM" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM),
+            "LDEBFOMPOGN_DDHFJFAKPCB" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB),
+            "LDEBFOMPOGN_OPAIFJPGJKA" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA),
             "LDEBFOMPOGN_HGACHEAMGPI" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI),
+            "LDEBFOMPOGN_LBIGAGOEINK" => ::std::option::Option::Some(CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdEraFlipperType] = &[
         CmdEraFlipperType::LDEBFOMPOGN_NLCDGIPGFDJ,
-        CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB,
+        CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM,
         CmdEraFlipperType::LDEBFOMPOGN_GKOKHIOBJDM,
         CmdEraFlipperType::LDEBFOMPOGN_DDFCEHMLIAL,
-        CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM,
-        CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK,
-        CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM,
-        CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA,
         CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB,
+        CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM,
+        CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB,
+        CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA,
         CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI,
+        CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CmdEraFlipperType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdEraFlipperType::LDEBFOMPOGN_NLCDGIPGFDJ => 0,
-            CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB => 1,
+            CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM => 1,
             CmdEraFlipperType::LDEBFOMPOGN_GKOKHIOBJDM => 2,
             CmdEraFlipperType::LDEBFOMPOGN_DDFCEHMLIAL => 3,
-            CmdEraFlipperType::LDEBFOMPOGN_KHMGHMMCJEM => 4,
-            CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK => 5,
-            CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM => 6,
+            CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB => 4,
+            CmdEraFlipperType::LDEBFOMPOGN_DANCIMOJIJM => 5,
+            CmdEraFlipperType::LDEBFOMPOGN_DDHFJFAKPCB => 6,
             CmdEraFlipperType::LDEBFOMPOGN_OPAIFJPGJKA => 7,
-            CmdEraFlipperType::LDEBFOMPOGN_HBIJLNGMBIB => 8,
-            CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI => 9,
+            CmdEraFlipperType::LDEBFOMPOGN_HGACHEAMGPI => 8,
+            CmdEraFlipperType::LDEBFOMPOGN_LBIGAGOEINK => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,13 @@ impl CmdEraFlipperType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdEraFlipperType.proto*\xbe\x02\n\x11CmdEraFlipperType\x12\x1b\n\
-    \x17LDEBFOMPOGN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LDEBFOMPOGN_DDHFJFAKPCB\
-    \x10\xa03\x12\x1c\n\x17LDEBFOMPOGN_GKOKHIOBJDM\x10\xad3\x12\x1c\n\x17LDE\
-    BFOMPOGN_DDFCEHMLIAL\x10\xa73\x12\x1c\n\x17LDEBFOMPOGN_KHMGHMMCJEM\x10\
-    \xa43\x12\x1c\n\x17LDEBFOMPOGN_LBIGAGOEINK\x10\x9e3\x12\x1c\n\x17LDEBFOM\
-    POGN_DANCIMOJIJM\x10\x983\x12\x1c\n\x17LDEBFOMPOGN_OPAIFJPGJKA\x10\x9d3\
-    \x12\x1c\n\x17LDEBFOMPOGN_HBIJLNGMBIB\x10\xa13\x12\x1c\n\x17LDEBFOMPOGN_\
-    HGACHEAMGPI\x10\x993b\x06proto3\
+    \x17LDEBFOMPOGN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LDEBFOMPOGN_KHMGHMMCJEM\
+    \x10\xa23\x12\x1c\n\x17LDEBFOMPOGN_GKOKHIOBJDM\x10\x9f3\x12\x1c\n\x17LDE\
+    BFOMPOGN_DDFCEHMLIAL\x10\xab3\x12\x1c\n\x17LDEBFOMPOGN_HBIJLNGMBIB\x10\
+    \x9d3\x12\x1c\n\x17LDEBFOMPOGN_DANCIMOJIJM\x10\x9b3\x12\x1c\n\x17LDEBFOM\
+    POGN_DDHFJFAKPCB\x10\xa53\x12\x1c\n\x17LDEBFOMPOGN_OPAIFJPGJKA\x10\xa83\
+    \x12\x1c\n\x17LDEBFOMPOGN_HGACHEAMGPI\x10\xa93\x12\x1c\n\x17LDEBFOMPOGN_\
+    LBIGAGOEINK\x10\x9e3b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

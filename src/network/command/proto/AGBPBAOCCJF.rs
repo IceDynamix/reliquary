@@ -72,7 +72,7 @@ impl ::protobuf::Message for AGBPBAOCCJF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
                     self.is_win = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for AGBPBAOCCJF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_win != false {
-            os.write_bool(2, self.is_win)?;
+            os.write_bool(7, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for AGBPBAOCCJF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AGBPBAOCCJF.proto\"$\n\x0bAGBPBAOCCJF\x12\x15\n\x06is_win\x18\x02\
+    \n\x11AGBPBAOCCJF.proto\"$\n\x0bAGBPBAOCCJF\x12\x15\n\x06is_win\x18\x07\
     \x20\x01(\x08R\x05isWinb\x06proto3\
 ";
 

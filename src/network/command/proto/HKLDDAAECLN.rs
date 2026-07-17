@@ -30,8 +30,8 @@ pub struct HKLDDAAECLN {
     // message fields
     // @@protoc_insertion_point(field:HKLDDAAECLN.state)
     pub state: u32,
-    // @@protoc_insertion_point(field:HKLDDAAECLN.LJHKNKFLGDE)
-    pub LJHKNKFLGDE: u32,
+    // @@protoc_insertion_point(field:HKLDDAAECLN.region_id)
+    pub region_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HKLDDAAECLN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl HKLDDAAECLN {
             |m: &mut HKLDDAAECLN| { &mut m.state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHKNKFLGDE",
-            |m: &HKLDDAAECLN| { &m.LJHKNKFLGDE },
-            |m: &mut HKLDDAAECLN| { &mut m.LJHKNKFLGDE },
+            "region_id",
+            |m: &HKLDDAAECLN| { &m.region_id },
+            |m: &mut HKLDDAAECLN| { &mut m.region_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HKLDDAAECLN>(
             "HKLDDAAECLN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HKLDDAAECLN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.state = is.read_uint32()?;
                 },
-                24 => {
-                    self.LJHKNKFLGDE = is.read_uint32()?;
+                120 => {
+                    self.region_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HKLDDAAECLN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.state);
+            my_size += ::protobuf::rt::uint32_size(8, self.state);
         }
-        if self.LJHKNKFLGDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LJHKNKFLGDE);
+        if self.region_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.region_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HKLDDAAECLN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.state != 0 {
-            os.write_uint32(10, self.state)?;
+            os.write_uint32(8, self.state)?;
         }
-        if self.LJHKNKFLGDE != 0 {
-            os.write_uint32(3, self.LJHKNKFLGDE)?;
+        if self.region_id != 0 {
+            os.write_uint32(15, self.region_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for HKLDDAAECLN {
 
     fn clear(&mut self) {
         self.state = 0;
-        self.LJHKNKFLGDE = 0;
+        self.region_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HKLDDAAECLN {
         static instance: HKLDDAAECLN = HKLDDAAECLN {
             state: 0,
-            LJHKNKFLGDE: 0,
+            region_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HKLDDAAECLN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HKLDDAAECLN.proto\"E\n\x0bHKLDDAAECLN\x12\x14\n\x05state\x18\n\x20\
-    \x01(\rR\x05state\x12\x20\n\x0bLJHKNKFLGDE\x18\x03\x20\x01(\rR\x0bLJHKNK\
-    FLGDEb\x06proto3\
+    \n\x11HKLDDAAECLN.proto\"@\n\x0bHKLDDAAECLN\x12\x14\n\x05state\x18\x08\
+    \x20\x01(\rR\x05state\x12\x1b\n\tregion_id\x18\x0f\x20\x01(\rR\x08region\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

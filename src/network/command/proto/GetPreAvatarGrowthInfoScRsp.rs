@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GetPreAvatarGrowthInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.JLMMCNIMPOA)
-    pub JLMMCNIMPOA: ::std::vec::Vec<super::OGIFJNIGHBO::OGIFJNIGHBO>,
+    pub JLMMCNIMPOA: ::std::vec::Vec<super::PreAvatarGrowthMaterialData::PreAvatarGrowthMaterialData>,
     // @@protoc_insertion_point(field:GetPreAvatarGrowthInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
                 50 => {
                     self.JLMMCNIMPOA.push(is.read_message()?);
                 },
-                32 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetPreAvatarGrowthInfoScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetPreAvatarGrowthInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetPreAvatarGrowthInfoScRsp.proto\x1a\x11OGIFJNIGHBO.proto\"g\n\x1bGe\
-    tPreAvatarGrowthInfoScRsp\x12.\n\x0bJLMMCNIMPOA\x18\x06\x20\x03(\x0b2\
-    \x0c.OGIFJNIGHBOR\x0bJLMMCNIMPOA\x12\x18\n\x07retcode\x18\x04\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n!GetPreAvatarGrowthInfoScRsp.proto\x1a!PreAvatarGrowthMaterialData.pro\
+    to\"w\n\x1bGetPreAvatarGrowthInfoScRsp\x12>\n\x0bJLMMCNIMPOA\x18\x06\x20\
+    \x03(\x0b2\x1c.PreAvatarGrowthMaterialDataR\x0bJLMMCNIMPOA\x12\x18\n\x07\
+    retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OGIFJNIGHBO::file_descriptor().clone());
+            deps.push(super::PreAvatarGrowthMaterialData::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPreAvatarGrowthInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,28 +28,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CGMCMAKMJDK {
     // message fields
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.CFGEJHAOKED)
+    pub CFGEJHAOKED: u32,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.KFEMJMKMGIJ)
+    pub KFEMJMKMGIJ: ::protobuf::EnumOrUnknown<super::ChessRogueCellSpecialType::ChessRogueCellSpecialType>,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.JMPMDGJLIPF)
+    pub JMPMDGJLIPF: u32,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.is_unlock)
+    pub is_unlock: bool,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.room_id)
+    pub room_id: u32,
     // @@protoc_insertion_point(field:CGMCMAKMJDK.stage_info)
     pub stage_info: ::protobuf::MessageField<super::MCDONFNGMJE::MCDONFNGMJE>,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.PDKOHKKMKLF)
+    pub PDKOHKKMKLF: u32,
+    // @@protoc_insertion_point(field:CGMCMAKMJDK.LDDHLGINDIJ)
+    pub LDDHLGINDIJ: bool,
     // @@protoc_insertion_point(field:CGMCMAKMJDK.HLALFNEDFED)
     pub HLALFNEDFED: u32,
     // @@protoc_insertion_point(field:CGMCMAKMJDK.EJEDLGNLOHB)
     pub EJEDLGNLOHB: ::protobuf::EnumOrUnknown<super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus>,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.CFGEJHAOKED)
-    pub CFGEJHAOKED: u32,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.room_id)
-    pub room_id: u32,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.LDDHLGINDIJ)
-    pub LDDHLGINDIJ: bool,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.GNACLLNFHFD)
-    pub GNACLLNFHFD: bool,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.JMPMDGJLIPF)
-    pub JMPMDGJLIPF: u32,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.id)
-    pub id: u32,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.PDKOHKKMKLF)
-    pub PDKOHKKMKLF: u32,
-    // @@protoc_insertion_point(field:CGMCMAKMJDK.KFEMJMKMGIJ)
-    pub KFEMJMKMGIJ: ::protobuf::EnumOrUnknown<super::ChessRogueCellSpecialType::ChessRogueCellSpecialType>,
     // special fields
     // @@protoc_insertion_point(special_field:CGMCMAKMJDK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,10 +69,50 @@ impl CGMCMAKMJDK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(11);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFGEJHAOKED",
+            |m: &CGMCMAKMJDK| { &m.CFGEJHAOKED },
+            |m: &mut CGMCMAKMJDK| { &mut m.CFGEJHAOKED },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KFEMJMKMGIJ",
+            |m: &CGMCMAKMJDK| { &m.KFEMJMKMGIJ },
+            |m: &mut CGMCMAKMJDK| { &mut m.KFEMJMKMGIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JMPMDGJLIPF",
+            |m: &CGMCMAKMJDK| { &m.JMPMDGJLIPF },
+            |m: &mut CGMCMAKMJDK| { &mut m.JMPMDGJLIPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_unlock",
+            |m: &CGMCMAKMJDK| { &m.is_unlock },
+            |m: &mut CGMCMAKMJDK| { &mut m.is_unlock },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &CGMCMAKMJDK| { &m.id },
+            |m: &mut CGMCMAKMJDK| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_id",
+            |m: &CGMCMAKMJDK| { &m.room_id },
+            |m: &mut CGMCMAKMJDK| { &mut m.room_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MCDONFNGMJE::MCDONFNGMJE>(
             "stage_info",
             |m: &CGMCMAKMJDK| { &m.stage_info },
             |m: &mut CGMCMAKMJDK| { &mut m.stage_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDKOHKKMKLF",
+            |m: &CGMCMAKMJDK| { &m.PDKOHKKMKLF },
+            |m: &mut CGMCMAKMJDK| { &mut m.PDKOHKKMKLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDDHLGINDIJ",
+            |m: &CGMCMAKMJDK| { &m.LDDHLGINDIJ },
+            |m: &mut CGMCMAKMJDK| { &mut m.LDDHLGINDIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HLALFNEDFED",
@@ -83,46 +123,6 @@ impl CGMCMAKMJDK {
             "EJEDLGNLOHB",
             |m: &CGMCMAKMJDK| { &m.EJEDLGNLOHB },
             |m: &mut CGMCMAKMJDK| { &mut m.EJEDLGNLOHB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFGEJHAOKED",
-            |m: &CGMCMAKMJDK| { &m.CFGEJHAOKED },
-            |m: &mut CGMCMAKMJDK| { &mut m.CFGEJHAOKED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &CGMCMAKMJDK| { &m.room_id },
-            |m: &mut CGMCMAKMJDK| { &mut m.room_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDDHLGINDIJ",
-            |m: &CGMCMAKMJDK| { &m.LDDHLGINDIJ },
-            |m: &mut CGMCMAKMJDK| { &mut m.LDDHLGINDIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNACLLNFHFD",
-            |m: &CGMCMAKMJDK| { &m.GNACLLNFHFD },
-            |m: &mut CGMCMAKMJDK| { &mut m.GNACLLNFHFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMPMDGJLIPF",
-            |m: &CGMCMAKMJDK| { &m.JMPMDGJLIPF },
-            |m: &mut CGMCMAKMJDK| { &mut m.JMPMDGJLIPF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &CGMCMAKMJDK| { &m.id },
-            |m: &mut CGMCMAKMJDK| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDKOHKKMKLF",
-            |m: &CGMCMAKMJDK| { &m.PDKOHKKMKLF },
-            |m: &mut CGMCMAKMJDK| { &mut m.PDKOHKKMKLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KFEMJMKMGIJ",
-            |m: &CGMCMAKMJDK| { &m.KFEMJMKMGIJ },
-            |m: &mut CGMCMAKMJDK| { &mut m.KFEMJMKMGIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CGMCMAKMJDK>(
             "CGMCMAKMJDK",
@@ -142,38 +142,38 @@ impl ::protobuf::Message for CGMCMAKMJDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
                 8 => {
-                    self.HLALFNEDFED = is.read_uint32()?;
-                },
-                96 => {
-                    self.EJEDLGNLOHB = is.read_enum_or_unknown()?;
-                },
-                16 => {
                     self.CFGEJHAOKED = is.read_uint32()?;
                 },
-                112 => {
-                    self.room_id = is.read_uint32()?;
+                16 => {
+                    self.KFEMJMKMGIJ = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.LDDHLGINDIJ = is.read_bool()?;
-                },
-                80 => {
-                    self.GNACLLNFHFD = is.read_bool()?;
-                },
-                104 => {
+                24 => {
                     self.JMPMDGJLIPF = is.read_uint32()?;
                 },
                 40 => {
-                    self.id = is.read_uint32()?;
-                },
-                120 => {
-                    self.PDKOHKKMKLF = is.read_uint32()?;
+                    self.is_unlock = is.read_bool()?;
                 },
                 48 => {
-                    self.KFEMJMKMGIJ = is.read_enum_or_unknown()?;
+                    self.id = is.read_uint32()?;
+                },
+                56 => {
+                    self.room_id = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                72 => {
+                    self.PDKOHKKMKLF = is.read_uint32()?;
+                },
+                80 => {
+                    self.LDDHLGINDIJ = is.read_bool()?;
+                },
+                96 => {
+                    self.HLALFNEDFED = is.read_uint32()?;
+                },
+                120 => {
+                    self.EJEDLGNLOHB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -187,39 +187,39 @@ impl ::protobuf::Message for CGMCMAKMJDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CFGEJHAOKED != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CFGEJHAOKED);
+        }
+        if self.KFEMJMKMGIJ != ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(2, self.KFEMJMKMGIJ.value());
+        }
+        if self.JMPMDGJLIPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JMPMDGJLIPF);
+        }
+        if self.is_unlock != false {
+            my_size += 1 + 1;
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
+        }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
+        }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HLALFNEDFED != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HLALFNEDFED);
-        }
-        if self.EJEDLGNLOHB != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH) {
-            my_size += ::protobuf::rt::int32_size(12, self.EJEDLGNLOHB.value());
-        }
-        if self.CFGEJHAOKED != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.CFGEJHAOKED);
-        }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.room_id);
+        if self.PDKOHKKMKLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PDKOHKKMKLF);
         }
         if self.LDDHLGINDIJ != false {
             my_size += 1 + 1;
         }
-        if self.GNACLLNFHFD != false {
-            my_size += 1 + 1;
+        if self.HLALFNEDFED != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HLALFNEDFED);
         }
-        if self.JMPMDGJLIPF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JMPMDGJLIPF);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
-        }
-        if self.PDKOHKKMKLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PDKOHKKMKLF);
-        }
-        if self.KFEMJMKMGIJ != ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.KFEMJMKMGIJ.value());
+        if self.EJEDLGNLOHB != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH) {
+            my_size += ::protobuf::rt::int32_size(15, self.EJEDLGNLOHB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -227,38 +227,38 @@ impl ::protobuf::Message for CGMCMAKMJDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.HLALFNEDFED != 0 {
-            os.write_uint32(1, self.HLALFNEDFED)?;
-        }
-        if self.EJEDLGNLOHB != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.EJEDLGNLOHB))?;
-        }
         if self.CFGEJHAOKED != 0 {
-            os.write_uint32(2, self.CFGEJHAOKED)?;
-        }
-        if self.room_id != 0 {
-            os.write_uint32(14, self.room_id)?;
-        }
-        if self.LDDHLGINDIJ != false {
-            os.write_bool(7, self.LDDHLGINDIJ)?;
-        }
-        if self.GNACLLNFHFD != false {
-            os.write_bool(10, self.GNACLLNFHFD)?;
-        }
-        if self.JMPMDGJLIPF != 0 {
-            os.write_uint32(13, self.JMPMDGJLIPF)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(5, self.id)?;
-        }
-        if self.PDKOHKKMKLF != 0 {
-            os.write_uint32(15, self.PDKOHKKMKLF)?;
+            os.write_uint32(1, self.CFGEJHAOKED)?;
         }
         if self.KFEMJMKMGIJ != ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KFEMJMKMGIJ))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.KFEMJMKMGIJ))?;
+        }
+        if self.JMPMDGJLIPF != 0 {
+            os.write_uint32(3, self.JMPMDGJLIPF)?;
+        }
+        if self.is_unlock != false {
+            os.write_bool(5, self.is_unlock)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(6, self.id)?;
+        }
+        if self.room_id != 0 {
+            os.write_uint32(7, self.room_id)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.PDKOHKKMKLF != 0 {
+            os.write_uint32(9, self.PDKOHKKMKLF)?;
+        }
+        if self.LDDHLGINDIJ != false {
+            os.write_bool(10, self.LDDHLGINDIJ)?;
+        }
+        if self.HLALFNEDFED != 0 {
+            os.write_uint32(12, self.HLALFNEDFED)?;
+        }
+        if self.EJEDLGNLOHB != ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.EJEDLGNLOHB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -277,33 +277,33 @@ impl ::protobuf::Message for CGMCMAKMJDK {
     }
 
     fn clear(&mut self) {
+        self.CFGEJHAOKED = 0;
+        self.KFEMJMKMGIJ = ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ);
+        self.JMPMDGJLIPF = 0;
+        self.is_unlock = false;
+        self.id = 0;
+        self.room_id = 0;
         self.stage_info.clear();
+        self.PDKOHKKMKLF = 0;
+        self.LDDHLGINDIJ = false;
         self.HLALFNEDFED = 0;
         self.EJEDLGNLOHB = ::protobuf::EnumOrUnknown::new(super::ChessRogueBoardCellStatus::ChessRogueBoardCellStatus::GOBKHHAEIAF_BPOCOHFIAOH);
-        self.CFGEJHAOKED = 0;
-        self.room_id = 0;
-        self.LDDHLGINDIJ = false;
-        self.GNACLLNFHFD = false;
-        self.JMPMDGJLIPF = 0;
-        self.id = 0;
-        self.PDKOHKKMKLF = 0;
-        self.KFEMJMKMGIJ = ::protobuf::EnumOrUnknown::new(super::ChessRogueCellSpecialType::ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CGMCMAKMJDK {
         static instance: CGMCMAKMJDK = CGMCMAKMJDK {
+            CFGEJHAOKED: 0,
+            KFEMJMKMGIJ: ::protobuf::EnumOrUnknown::from_i32(0),
+            JMPMDGJLIPF: 0,
+            is_unlock: false,
+            id: 0,
+            room_id: 0,
             stage_info: ::protobuf::MessageField::none(),
+            PDKOHKKMKLF: 0,
+            LDDHLGINDIJ: false,
             HLALFNEDFED: 0,
             EJEDLGNLOHB: ::protobuf::EnumOrUnknown::from_i32(0),
-            CFGEJHAOKED: 0,
-            room_id: 0,
-            LDDHLGINDIJ: false,
-            GNACLLNFHFD: false,
-            JMPMDGJLIPF: 0,
-            id: 0,
-            PDKOHKKMKLF: 0,
-            KFEMJMKMGIJ: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -329,18 +329,18 @@ impl ::protobuf::reflect::ProtobufValue for CGMCMAKMJDK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CGMCMAKMJDK.proto\x1a\x1fChessRogueBoardCellStatus.proto\x1a\x1fCh\
-    essRogueCellSpecialType.proto\x1a\x11MCDONFNGMJE.proto\"\xab\x03\n\x0bCG\
-    MCMAKMJDK\x12+\n\nstage_info\x18\x0b\x20\x01(\x0b2\x0c.MCDONFNGMJER\tsta\
-    geInfo\x12\x20\n\x0bHLALFNEDFED\x18\x01\x20\x01(\rR\x0bHLALFNEDFED\x12<\
-    \n\x0bEJEDLGNLOHB\x18\x0c\x20\x01(\x0e2\x1a.ChessRogueBoardCellStatusR\
-    \x0bEJEDLGNLOHB\x12\x20\n\x0bCFGEJHAOKED\x18\x02\x20\x01(\rR\x0bCFGEJHAO\
-    KED\x12\x17\n\x07room_id\x18\x0e\x20\x01(\rR\x06roomId\x12\x20\n\x0bLDDH\
-    LGINDIJ\x18\x07\x20\x01(\x08R\x0bLDDHLGINDIJ\x12\x20\n\x0bGNACLLNFHFD\
-    \x18\n\x20\x01(\x08R\x0bGNACLLNFHFD\x12\x20\n\x0bJMPMDGJLIPF\x18\r\x20\
-    \x01(\rR\x0bJMPMDGJLIPF\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12\
-    \x20\n\x0bPDKOHKKMKLF\x18\x0f\x20\x01(\rR\x0bPDKOHKKMKLF\x12<\n\x0bKFEMJ\
-    MKMGIJ\x18\x06\x20\x01(\x0e2\x1a.ChessRogueCellSpecialTypeR\x0bKFEMJMKMG\
-    IJb\x06proto3\
+    essRogueCellSpecialType.proto\x1a\x11MCDONFNGMJE.proto\"\xa6\x03\n\x0bCG\
+    MCMAKMJDK\x12\x20\n\x0bCFGEJHAOKED\x18\x01\x20\x01(\rR\x0bCFGEJHAOKED\
+    \x12<\n\x0bKFEMJMKMGIJ\x18\x02\x20\x01(\x0e2\x1a.ChessRogueCellSpecialTy\
+    peR\x0bKFEMJMKMGIJ\x12\x20\n\x0bJMPMDGJLIPF\x18\x03\x20\x01(\rR\x0bJMPMD\
+    GJLIPF\x12\x1b\n\tis_unlock\x18\x05\x20\x01(\x08R\x08isUnlock\x12\x0e\n\
+    \x02id\x18\x06\x20\x01(\rR\x02id\x12\x17\n\x07room_id\x18\x07\x20\x01(\r\
+    R\x06roomId\x12+\n\nstage_info\x18\x08\x20\x01(\x0b2\x0c.MCDONFNGMJER\ts\
+    tageInfo\x12\x20\n\x0bPDKOHKKMKLF\x18\t\x20\x01(\rR\x0bPDKOHKKMKLF\x12\
+    \x20\n\x0bLDDHLGINDIJ\x18\n\x20\x01(\x08R\x0bLDDHLGINDIJ\x12\x20\n\x0bHL\
+    ALFNEDFED\x18\x0c\x20\x01(\rR\x0bHLALFNEDFED\x12<\n\x0bEJEDLGNLOHB\x18\
+    \x0f\x20\x01(\x0e2\x1a.ChessRogueBoardCellStatusR\x0bEJEDLGNLOHBb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

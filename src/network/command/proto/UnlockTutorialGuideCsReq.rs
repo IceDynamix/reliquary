@@ -79,7 +79,7 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.group_id = is.read_uint32()?;
                 },
                 104 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::AOCCEBGNPJA_GINFCGDDDOM) {
             my_size += ::protobuf::rt::int32_size(13, self.type_.value());
@@ -110,7 +110,7 @@ impl ::protobuf::Message for UnlockTutorialGuideCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(5, self.group_id)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::TutorialGuideType::TutorialGuideType::AOCCEBGNPJA_GINFCGDDDOM) {
             os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTutorialGuideCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUnlockTutorialGuideCsReq.proto\x1a\x17TutorialGuideType.proto\"]\n\
-    \x18UnlockTutorialGuideCsReq\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\
+    \x18UnlockTutorialGuideCsReq\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\
     \x07groupId\x12&\n\x04type\x18\r\x20\x01(\x0e2\x12.TutorialGuideTypeR\
     \x04typeb\x06proto3\
 ";

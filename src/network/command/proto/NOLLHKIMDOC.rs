@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NOLLHKIMDOC {
     // message fields
-    // @@protoc_insertion_point(field:NOLLHKIMDOC.IJMHPOEPILG)
-    pub IJMHPOEPILG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NOLLHKIMDOC.JOADLJIDGND)
-    pub JOADLJIDGND: u32,
     // @@protoc_insertion_point(field:NOLLHKIMDOC.GLDGCHLDMJE)
     pub GLDGCHLDMJE: i64,
+    // @@protoc_insertion_point(field:NOLLHKIMDOC.JOADLJIDGND)
+    pub JOADLJIDGND: u32,
+    // @@protoc_insertion_point(field:NOLLHKIMDOC.IJMHPOEPILG)
+    pub IJMHPOEPILG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NOLLHKIMDOC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl NOLLHKIMDOC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IJMHPOEPILG",
-            |m: &NOLLHKIMDOC| { &m.IJMHPOEPILG },
-            |m: &mut NOLLHKIMDOC| { &mut m.IJMHPOEPILG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GLDGCHLDMJE",
+            |m: &NOLLHKIMDOC| { &m.GLDGCHLDMJE },
+            |m: &mut NOLLHKIMDOC| { &mut m.GLDGCHLDMJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOADLJIDGND",
             |m: &NOLLHKIMDOC| { &m.JOADLJIDGND },
             |m: &mut NOLLHKIMDOC| { &mut m.JOADLJIDGND },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLDGCHLDMJE",
-            |m: &NOLLHKIMDOC| { &m.GLDGCHLDMJE },
-            |m: &mut NOLLHKIMDOC| { &mut m.GLDGCHLDMJE },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IJMHPOEPILG",
+            |m: &NOLLHKIMDOC| { &m.IJMHPOEPILG },
+            |m: &mut NOLLHKIMDOC| { &mut m.IJMHPOEPILG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NOLLHKIMDOC>(
             "NOLLHKIMDOC",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for NOLLHKIMDOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IJMHPOEPILG)?;
-                },
-                96 => {
-                    self.IJMHPOEPILG.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.JOADLJIDGND = is.read_uint32()?;
-                },
                 8 => {
                     self.GLDGCHLDMJE = is.read_int64()?;
+                },
+                16 => {
+                    self.JOADLJIDGND = is.read_uint32()?;
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IJMHPOEPILG)?;
+                },
+                24 => {
+                    self.IJMHPOEPILG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for NOLLHKIMDOC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.IJMHPOEPILG);
-        if self.JOADLJIDGND != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JOADLJIDGND);
-        }
         if self.GLDGCHLDMJE != 0 {
             my_size += ::protobuf::rt::int64_size(1, self.GLDGCHLDMJE);
         }
+        if self.JOADLJIDGND != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JOADLJIDGND);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.IJMHPOEPILG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.IJMHPOEPILG)?;
-        if self.JOADLJIDGND != 0 {
-            os.write_uint32(13, self.JOADLJIDGND)?;
-        }
         if self.GLDGCHLDMJE != 0 {
             os.write_int64(1, self.GLDGCHLDMJE)?;
         }
+        if self.JOADLJIDGND != 0 {
+            os.write_uint32(2, self.JOADLJIDGND)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.IJMHPOEPILG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for NOLLHKIMDOC {
     }
 
     fn clear(&mut self) {
-        self.IJMHPOEPILG.clear();
-        self.JOADLJIDGND = 0;
         self.GLDGCHLDMJE = 0;
+        self.JOADLJIDGND = 0;
+        self.IJMHPOEPILG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NOLLHKIMDOC {
         static instance: NOLLHKIMDOC = NOLLHKIMDOC {
-            IJMHPOEPILG: ::std::vec::Vec::new(),
-            JOADLJIDGND: 0,
             GLDGCHLDMJE: 0,
+            JOADLJIDGND: 0,
+            IJMHPOEPILG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for NOLLHKIMDOC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NOLLHKIMDOC.proto\"s\n\x0bNOLLHKIMDOC\x12\x20\n\x0bIJMHPOEPILG\x18\
-    \x0c\x20\x03(\rR\x0bIJMHPOEPILG\x12\x20\n\x0bJOADLJIDGND\x18\r\x20\x01(\
-    \rR\x0bJOADLJIDGND\x12\x20\n\x0bGLDGCHLDMJE\x18\x01\x20\x01(\x03R\x0bGLD\
-    GCHLDMJEb\x06proto3\
+    \n\x11NOLLHKIMDOC.proto\"s\n\x0bNOLLHKIMDOC\x12\x20\n\x0bGLDGCHLDMJE\x18\
+    \x01\x20\x01(\x03R\x0bGLDGCHLDMJE\x12\x20\n\x0bJOADLJIDGND\x18\x02\x20\
+    \x01(\rR\x0bJOADLJIDGND\x12\x20\n\x0bIJMHPOEPILG\x18\x03\x20\x03(\rR\x0b\
+    IJMHPOEPILGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

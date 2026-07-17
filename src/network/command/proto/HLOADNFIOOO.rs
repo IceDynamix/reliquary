@@ -32,8 +32,6 @@ pub struct HLOADNFIOOO {
     pub DCKIGAHCNMJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HLOADNFIOOO.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:HLOADNFIOOO.FJAKCBPAFMD)
-    pub FJAKCBPAFMD: bool,
     // @@protoc_insertion_point(field:HLOADNFIOOO.FANPGKBLIOB)
     pub FANPGKBLIOB: bool,
     // special fields
@@ -53,7 +51,7 @@ impl HLOADNFIOOO {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCKIGAHCNMJ",
@@ -64,11 +62,6 @@ impl HLOADNFIOOO {
             "level_id",
             |m: &HLOADNFIOOO| { &m.level_id },
             |m: &mut HLOADNFIOOO| { &mut m.level_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJAKCBPAFMD",
-            |m: &HLOADNFIOOO| { &m.FJAKCBPAFMD },
-            |m: &mut HLOADNFIOOO| { &mut m.FJAKCBPAFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FANPGKBLIOB",
@@ -93,19 +86,16 @@ impl ::protobuf::Message for HLOADNFIOOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.DCKIGAHCNMJ)?;
                 },
-                80 => {
+                16 => {
                     self.DCKIGAHCNMJ.push(is.read_uint32()?);
                 },
-                104 => {
+                48 => {
                     self.level_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.FJAKCBPAFMD = is.read_bool()?;
-                },
-                48 => {
+                88 => {
                     self.FANPGKBLIOB = is.read_bool()?;
                 },
                 tag => {
@@ -120,12 +110,9 @@ impl ::protobuf::Message for HLOADNFIOOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.DCKIGAHCNMJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DCKIGAHCNMJ);
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level_id);
-        }
-        if self.FJAKCBPAFMD != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(6, self.level_id);
         }
         if self.FANPGKBLIOB != false {
             my_size += 1 + 1;
@@ -136,15 +123,12 @@ impl ::protobuf::Message for HLOADNFIOOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.DCKIGAHCNMJ)?;
+        os.write_repeated_packed_uint32(2, &self.DCKIGAHCNMJ)?;
         if self.level_id != 0 {
-            os.write_uint32(13, self.level_id)?;
-        }
-        if self.FJAKCBPAFMD != false {
-            os.write_bool(14, self.FJAKCBPAFMD)?;
+            os.write_uint32(6, self.level_id)?;
         }
         if self.FANPGKBLIOB != false {
-            os.write_bool(6, self.FANPGKBLIOB)?;
+            os.write_bool(11, self.FANPGKBLIOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +149,6 @@ impl ::protobuf::Message for HLOADNFIOOO {
     fn clear(&mut self) {
         self.DCKIGAHCNMJ.clear();
         self.level_id = 0;
-        self.FJAKCBPAFMD = false;
         self.FANPGKBLIOB = false;
         self.special_fields.clear();
     }
@@ -174,7 +157,6 @@ impl ::protobuf::Message for HLOADNFIOOO {
         static instance: HLOADNFIOOO = HLOADNFIOOO {
             DCKIGAHCNMJ: ::std::vec::Vec::new(),
             level_id: 0,
-            FJAKCBPAFMD: false,
             FANPGKBLIOB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for HLOADNFIOOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HLOADNFIOOO.proto\"\x8e\x01\n\x0bHLOADNFIOOO\x12\x20\n\x0bDCKIGAHC\
-    NMJ\x18\n\x20\x03(\rR\x0bDCKIGAHCNMJ\x12\x19\n\x08level_id\x18\r\x20\x01\
-    (\rR\x07levelId\x12\x20\n\x0bFJAKCBPAFMD\x18\x0e\x20\x01(\x08R\x0bFJAKCB\
-    PAFMD\x12\x20\n\x0bFANPGKBLIOB\x18\x06\x20\x01(\x08R\x0bFANPGKBLIOBb\x06\
-    proto3\
+    \n\x11HLOADNFIOOO.proto\"l\n\x0bHLOADNFIOOO\x12\x20\n\x0bDCKIGAHCNMJ\x18\
+    \x02\x20\x03(\rR\x0bDCKIGAHCNMJ\x12\x19\n\x08level_id\x18\x06\x20\x01(\r\
+    R\x07levelId\x12\x20\n\x0bFANPGKBLIOB\x18\x0b\x20\x01(\x08R\x0bFANPGKBLI\
+    OBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJKHJADDKLD)?;
                 },
-                40 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TrainPartyGamePlayStartScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FJKHJADDKLD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlayStartScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TrainPartyGamePlayStartScRsp.proto\x1a\x11EPHKIEHONGB.proto\"h\n\x1c\
-    TrainPartyGamePlayStartScRsp\x12.\n\x0bFJKHJADDKLD\x18\t\x20\x01(\x0b2\
-    \x0c.EPHKIEHONGBR\x0bFJKHJADDKLD\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    TrainPartyGamePlayStartScRsp\x12.\n\x0bFJKHJADDKLD\x18\x07\x20\x01(\x0b2\
+    \x0c.EPHKIEHONGBR\x0bFJKHJADDKLD\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
+    \x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

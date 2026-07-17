@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMusicRhythmType {
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_NLCDGIPGFDJ)
     PHAPALJNLBE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PJFKKFFGNJO)
-    PHAPALJNLBE_PJFKKFFGNJO = 7600,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_LJFKOLLPGKP)
-    PHAPALJNLBE_LJFKOLLPGKP = 7574,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_LHHIDMNPKGM)
-    PHAPALJNLBE_LHHIDMNPKGM = 7591,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_KDBOPFPFGNF)
-    PHAPALJNLBE_KDBOPFPFGNF = 7578,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PGGPINKJPJA)
-    PHAPALJNLBE_PGGPINKJPJA = 7596,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_IMBKCHOMGBP)
-    PHAPALJNLBE_IMBKCHOMGBP = 7587,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PHBPMCMMCGJ)
-    PHAPALJNLBE_PHBPMCMMCGJ = 7581,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_APKIMNNBLIE)
-    PHAPALJNLBE_APKIMNNBLIE = 7598,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_GFPOONKNKPD)
-    PHAPALJNLBE_GFPOONKNKPD = 7582,
+    PHAPALJNLBE_GFPOONKNKPD = 7574,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_KDBOPFPFGNF)
+    PHAPALJNLBE_KDBOPFPFGNF = 7590,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PHBPMCMMCGJ)
+    PHAPALJNLBE_PHBPMCMMCGJ = 7585,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_LHHIDMNPKGM)
+    PHAPALJNLBE_LHHIDMNPKGM = 7588,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_BHGAAEBOBOO)
-    PHAPALJNLBE_BHGAAEBOBOO = 7589,
-    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_HJMPAGJEBOI)
-    PHAPALJNLBE_HJMPAGJEBOI = 7588,
+    PHAPALJNLBE_BHGAAEBOBOO = 7582,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PJFKKFFGNJO)
+    PHAPALJNLBE_PJFKKFFGNJO = 7591,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_APKIMNNBLIE)
+    PHAPALJNLBE_APKIMNNBLIE = 7592,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_IMBKCHOMGBP)
+    PHAPALJNLBE_IMBKCHOMGBP = 7599,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_LJFKOLLPGKP)
+    PHAPALJNLBE_LJFKOLLPGKP = 7577,
     // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_LKFCANNCJPC)
-    PHAPALJNLBE_LKFCANNCJPC = 7592,
+    PHAPALJNLBE_LKFCANNCJPC = 7575,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_PGGPINKJPJA)
+    PHAPALJNLBE_PGGPINKJPJA = 7579,
+    // @@protoc_insertion_point(enum_value:CmdMusicRhythmType.PHAPALJNLBE_HJMPAGJEBOI)
+    PHAPALJNLBE_HJMPAGJEBOI = 7595,
 }
 
 impl ::protobuf::Enum for CmdMusicRhythmType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdMusicRhythmType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMusicRhythmType> {
         match value {
             0 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_NLCDGIPGFDJ),
-            7600 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO),
-            7574 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP),
-            7591 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM),
-            7578 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF),
-            7596 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA),
-            7587 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP),
-            7581 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ),
-            7598 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE),
-            7582 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD),
-            7589 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO),
-            7588 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI),
-            7592 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC),
+            7574 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD),
+            7590 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF),
+            7585 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ),
+            7588 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM),
+            7582 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO),
+            7591 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO),
+            7592 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE),
+            7599 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP),
+            7577 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP),
+            7575 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC),
+            7579 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA),
+            7595 => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdMusicRhythmType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMusicRhythmType> {
         match str {
             "PHAPALJNLBE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_NLCDGIPGFDJ),
-            "PHAPALJNLBE_PJFKKFFGNJO" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO),
-            "PHAPALJNLBE_LJFKOLLPGKP" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP),
-            "PHAPALJNLBE_LHHIDMNPKGM" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM),
-            "PHAPALJNLBE_KDBOPFPFGNF" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF),
-            "PHAPALJNLBE_PGGPINKJPJA" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA),
-            "PHAPALJNLBE_IMBKCHOMGBP" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP),
-            "PHAPALJNLBE_PHBPMCMMCGJ" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ),
-            "PHAPALJNLBE_APKIMNNBLIE" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE),
             "PHAPALJNLBE_GFPOONKNKPD" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD),
+            "PHAPALJNLBE_KDBOPFPFGNF" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF),
+            "PHAPALJNLBE_PHBPMCMMCGJ" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ),
+            "PHAPALJNLBE_LHHIDMNPKGM" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM),
             "PHAPALJNLBE_BHGAAEBOBOO" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO),
-            "PHAPALJNLBE_HJMPAGJEBOI" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI),
+            "PHAPALJNLBE_PJFKKFFGNJO" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO),
+            "PHAPALJNLBE_APKIMNNBLIE" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE),
+            "PHAPALJNLBE_IMBKCHOMGBP" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP),
+            "PHAPALJNLBE_LJFKOLLPGKP" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP),
             "PHAPALJNLBE_LKFCANNCJPC" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC),
+            "PHAPALJNLBE_PGGPINKJPJA" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA),
+            "PHAPALJNLBE_HJMPAGJEBOI" => ::std::option::Option::Some(CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMusicRhythmType] = &[
         CmdMusicRhythmType::PHAPALJNLBE_NLCDGIPGFDJ,
-        CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO,
-        CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP,
-        CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM,
-        CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF,
-        CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA,
-        CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP,
-        CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ,
-        CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE,
         CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD,
+        CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF,
+        CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ,
+        CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM,
         CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO,
-        CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI,
+        CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO,
+        CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE,
+        CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP,
+        CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP,
         CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC,
+        CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA,
+        CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdMusicRhythmType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMusicRhythmType::PHAPALJNLBE_NLCDGIPGFDJ => 0,
-            CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO => 1,
-            CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP => 2,
-            CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM => 3,
-            CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF => 4,
-            CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA => 5,
-            CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP => 6,
-            CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ => 7,
-            CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE => 8,
-            CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD => 9,
-            CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO => 10,
-            CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI => 11,
-            CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC => 12,
+            CmdMusicRhythmType::PHAPALJNLBE_GFPOONKNKPD => 1,
+            CmdMusicRhythmType::PHAPALJNLBE_KDBOPFPFGNF => 2,
+            CmdMusicRhythmType::PHAPALJNLBE_PHBPMCMMCGJ => 3,
+            CmdMusicRhythmType::PHAPALJNLBE_LHHIDMNPKGM => 4,
+            CmdMusicRhythmType::PHAPALJNLBE_BHGAAEBOBOO => 5,
+            CmdMusicRhythmType::PHAPALJNLBE_PJFKKFFGNJO => 6,
+            CmdMusicRhythmType::PHAPALJNLBE_APKIMNNBLIE => 7,
+            CmdMusicRhythmType::PHAPALJNLBE_IMBKCHOMGBP => 8,
+            CmdMusicRhythmType::PHAPALJNLBE_LJFKOLLPGKP => 9,
+            CmdMusicRhythmType::PHAPALJNLBE_LKFCANNCJPC => 10,
+            CmdMusicRhythmType::PHAPALJNLBE_PGGPINKJPJA => 11,
+            CmdMusicRhythmType::PHAPALJNLBE_HJMPAGJEBOI => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +157,15 @@ impl CmdMusicRhythmType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdMusicRhythmType.proto*\x99\x03\n\x12CmdMusicRhythmType\x12\x1b\
-    \n\x17PHAPALJNLBE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PHAPALJNLBE_PJFKKFFGNJO\
-    \x10\xb0;\x12\x1c\n\x17PHAPALJNLBE_LJFKOLLPGKP\x10\x96;\x12\x1c\n\x17PHA\
-    PALJNLBE_LHHIDMNPKGM\x10\xa7;\x12\x1c\n\x17PHAPALJNLBE_KDBOPFPFGNF\x10\
-    \x9a;\x12\x1c\n\x17PHAPALJNLBE_PGGPINKJPJA\x10\xac;\x12\x1c\n\x17PHAPALJ\
-    NLBE_IMBKCHOMGBP\x10\xa3;\x12\x1c\n\x17PHAPALJNLBE_PHBPMCMMCGJ\x10\x9d;\
-    \x12\x1c\n\x17PHAPALJNLBE_APKIMNNBLIE\x10\xae;\x12\x1c\n\x17PHAPALJNLBE_\
-    GFPOONKNKPD\x10\x9e;\x12\x1c\n\x17PHAPALJNLBE_BHGAAEBOBOO\x10\xa5;\x12\
-    \x1c\n\x17PHAPALJNLBE_HJMPAGJEBOI\x10\xa4;\x12\x1c\n\x17PHAPALJNLBE_LKFC\
-    ANNCJPC\x10\xa8;b\x06proto3\
+    \n\x17PHAPALJNLBE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PHAPALJNLBE_GFPOONKNKPD\
+    \x10\x96;\x12\x1c\n\x17PHAPALJNLBE_KDBOPFPFGNF\x10\xa6;\x12\x1c\n\x17PHA\
+    PALJNLBE_PHBPMCMMCGJ\x10\xa1;\x12\x1c\n\x17PHAPALJNLBE_LHHIDMNPKGM\x10\
+    \xa4;\x12\x1c\n\x17PHAPALJNLBE_BHGAAEBOBOO\x10\x9e;\x12\x1c\n\x17PHAPALJ\
+    NLBE_PJFKKFFGNJO\x10\xa7;\x12\x1c\n\x17PHAPALJNLBE_APKIMNNBLIE\x10\xa8;\
+    \x12\x1c\n\x17PHAPALJNLBE_IMBKCHOMGBP\x10\xaf;\x12\x1c\n\x17PHAPALJNLBE_\
+    LJFKOLLPGKP\x10\x99;\x12\x1c\n\x17PHAPALJNLBE_LKFCANNCJPC\x10\x97;\x12\
+    \x1c\n\x17PHAPALJNLBE_PGGPINKJPJA\x10\x9b;\x12\x1c\n\x17PHAPALJNLBE_HJMP\
+    AGJEBOI\x10\xab;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.slot = is.read_uint32()?;
                 },
                 40 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.slot);
+            my_size += ::protobuf::rt::uint32_size(3, self.slot);
         }
         if self.item_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.item_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.slot != 0 {
-            os.write_uint32(7, self.slot)?;
+            os.write_uint32(3, self.slot)?;
         }
         if self.item_id != 0 {
             os.write_uint32(5, self.item_id)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for POPJNEHGMIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11POPJNEHGMIH.proto\":\n\x0bPOPJNEHGMIH\x12\x12\n\x04slot\x18\x07\
+    \n\x11POPJNEHGMIH.proto\":\n\x0bPOPJNEHGMIH\x12\x12\n\x04slot\x18\x03\
     \x20\x01(\rR\x04slot\x12\x17\n\x07item_id\x18\x05\x20\x01(\rR\x06itemIdb\
     \x06proto3\
 ";

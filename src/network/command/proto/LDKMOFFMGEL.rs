@@ -86,13 +86,13 @@ impl ::protobuf::Message for LDKMOFFMGEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                32 => {
                     self.type_ = is.read_uint32()?;
                 },
-                112 => {
+                80 => {
                     self.LPOLPDBELON = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for LDKMOFFMGEL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.type_);
+            my_size += ::protobuf::rt::uint32_size(4, self.type_);
         }
         if self.LPOLPDBELON != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LPOLPDBELON);
+            my_size += ::protobuf::rt::uint32_size(10, self.LPOLPDBELON);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.slot);
+            my_size += ::protobuf::rt::uint32_size(11, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LDKMOFFMGEL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != 0 {
-            os.write_uint32(10, self.type_)?;
+            os.write_uint32(4, self.type_)?;
         }
         if self.LPOLPDBELON != 0 {
-            os.write_uint32(14, self.LPOLPDBELON)?;
+            os.write_uint32(10, self.LPOLPDBELON)?;
         }
         if self.slot != 0 {
-            os.write_uint32(6, self.slot)?;
+            os.write_uint32(11, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LDKMOFFMGEL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LDKMOFFMGEL.proto\"W\n\x0bLDKMOFFMGEL\x12\x12\n\x04type\x18\n\x20\
-    \x01(\rR\x04type\x12\x20\n\x0bLPOLPDBELON\x18\x0e\x20\x01(\rR\x0bLPOLPDB\
-    ELON\x12\x12\n\x04slot\x18\x06\x20\x01(\rR\x04slotb\x06proto3\
+    \n\x11LDKMOFFMGEL.proto\"W\n\x0bLDKMOFFMGEL\x12\x12\n\x04type\x18\x04\
+    \x20\x01(\rR\x04type\x12\x20\n\x0bLPOLPDBELON\x18\n\x20\x01(\rR\x0bLPOLP\
+    DBELON\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

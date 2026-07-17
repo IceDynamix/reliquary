@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NIFPICHIDLJ {
     // message fields
-    // @@protoc_insertion_point(field:NIFPICHIDLJ.switch_list)
-    pub switch_list: ::std::vec::Vec<super::OEBBNFANHLK::OEBBNFANHLK>,
-    // @@protoc_insertion_point(field:NIFPICHIDLJ.config_id)
-    pub config_id: u32,
     // @@protoc_insertion_point(field:NIFPICHIDLJ.type)
     pub type_: ::protobuf::EnumOrUnknown<super::MOHNIMLCODA::MOHNIMLCODA>,
-    // @@protoc_insertion_point(field:NIFPICHIDLJ.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:NIFPICHIDLJ.config_id)
+    pub config_id: u32,
     // @@protoc_insertion_point(field:NIFPICHIDLJ.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:NIFPICHIDLJ.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:NIFPICHIDLJ.switch_list)
+    pub switch_list: ::std::vec::Vec<super::OEBBNFANHLK::OEBBNFANHLK>,
     // special fields
     // @@protoc_insertion_point(special_field:NIFPICHIDLJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl NIFPICHIDLJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "switch_list",
-            |m: &NIFPICHIDLJ| { &m.switch_list },
-            |m: &mut NIFPICHIDLJ| { &mut m.switch_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &NIFPICHIDLJ| { &m.type_ },
+            |m: &mut NIFPICHIDLJ| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "config_id",
@@ -68,19 +68,19 @@ impl NIFPICHIDLJ {
             |m: &mut NIFPICHIDLJ| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &NIFPICHIDLJ| { &m.type_ },
-            |m: &mut NIFPICHIDLJ| { &mut m.type_ },
+            "unique_id",
+            |m: &NIFPICHIDLJ| { &m.unique_id },
+            |m: &mut NIFPICHIDLJ| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &NIFPICHIDLJ| { &m.level },
             |m: &mut NIFPICHIDLJ| { &mut m.level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &NIFPICHIDLJ| { &m.unique_id },
-            |m: &mut NIFPICHIDLJ| { &mut m.unique_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "switch_list",
+            |m: &NIFPICHIDLJ| { &m.switch_list },
+            |m: &mut NIFPICHIDLJ| { &mut m.switch_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIFPICHIDLJ>(
             "NIFPICHIDLJ",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NIFPICHIDLJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.switch_list.push(is.read_message()?);
+                8 => {
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 16 => {
                     self.config_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.type_ = is.read_enum_or_unknown()?;
+                24 => {
+                    self.unique_id = is.read_uint32()?;
                 },
                 32 => {
                     self.level = is.read_uint32()?;
                 },
-                24 => {
-                    self.unique_id = is.read_uint32()?;
+                42 => {
+                    self.switch_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for NIFPICHIDLJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.switch_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.config_id);
         }
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
         }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
+        }
+        for value in &self.switch_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.switch_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.config_id != 0 {
-            os.write_uint32(2, self.config_id)?;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+        if self.config_id != 0 {
+            os.write_uint32(2, self.config_id)?;
         }
         if self.unique_id != 0 {
             os.write_uint32(3, self.unique_id)?;
         }
+        if self.level != 0 {
+            os.write_uint32(4, self.level)?;
+        }
+        for v in &self.switch_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for NIFPICHIDLJ {
     }
 
     fn clear(&mut self) {
-        self.switch_list.clear();
-        self.config_id = 0;
         self.type_ = ::protobuf::EnumOrUnknown::new(super::MOHNIMLCODA::MOHNIMLCODA::MOHNIMLCODA_NLCDGIPGFDJ);
-        self.level = 0;
+        self.config_id = 0;
         self.unique_id = 0;
+        self.level = 0;
+        self.switch_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIFPICHIDLJ {
         static instance: NIFPICHIDLJ = NIFPICHIDLJ {
-            switch_list: ::std::vec::Vec::new(),
-            config_id: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            level: 0,
+            config_id: 0,
             unique_id: 0,
+            level: 0,
+            switch_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for NIFPICHIDLJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NIFPICHIDLJ.proto\x1a\x11MOHNIMLCODA.proto\x1a\x11OEBBNFANHLK.prot\
-    o\"\xae\x01\n\x0bNIFPICHIDLJ\x12-\n\x0bswitch_list\x18\x05\x20\x03(\x0b2\
-    \x0c.OEBBNFANHLKR\nswitchList\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\
-    \x08configId\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c.MOHNIMLCODAR\
-    \x04type\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05level\x12\x1b\n\tuniq\
-    ue_id\x18\x03\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    o\"\xae\x01\n\x0bNIFPICHIDLJ\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c\
+    .MOHNIMLCODAR\x04type\x12\x1b\n\tconfig_id\x18\x02\x20\x01(\rR\x08config\
+    Id\x12\x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12\x14\n\x05lev\
+    el\x18\x04\x20\x01(\rR\x05level\x12-\n\x0bswitch_list\x18\x05\x20\x03(\
+    \x0b2\x0c.OEBBNFANHLKR\nswitchListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

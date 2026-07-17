@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TriggerAiPamSpeakScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TriggerAiPamSpeakScRsp.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:TriggerAiPamSpeakScRsp.JMPPMNAONHM)
     pub JMPPMNAONHM: u32,
     // @@protoc_insertion_point(field:TriggerAiPamSpeakScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TriggerAiPamSpeakScRsp.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:TriggerAiPamSpeakScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl TriggerAiPamSpeakScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &TriggerAiPamSpeakScRsp| { &m.BDPIMPJOJBK },
-            |m: &mut TriggerAiPamSpeakScRsp| { &mut m.BDPIMPJOJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JMPPMNAONHM",
             |m: &TriggerAiPamSpeakScRsp| { &m.JMPPMNAONHM },
             |m: &mut TriggerAiPamSpeakScRsp| { &mut m.JMPPMNAONHM },
@@ -67,6 +62,11 @@ impl TriggerAiPamSpeakScRsp {
             "retcode",
             |m: &TriggerAiPamSpeakScRsp| { &m.retcode },
             |m: &mut TriggerAiPamSpeakScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role",
+            |m: &TriggerAiPamSpeakScRsp| { &m.role },
+            |m: &mut TriggerAiPamSpeakScRsp| { &mut m.role },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TriggerAiPamSpeakScRsp>(
             "TriggerAiPamSpeakScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TriggerAiPamSpeakScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
-                },
-                24 => {
+                16 => {
                     self.JMPPMNAONHM = is.read_uint32()?;
                 },
-                40 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.role = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TriggerAiPamSpeakScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.BDPIMPJOJBK.value());
-        }
         if self.JMPPMNAONHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JMPPMNAONHM);
+            my_size += ::protobuf::rt::uint32_size(2, self.JMPPMNAONHM);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.role.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TriggerAiPamSpeakScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
-        }
         if self.JMPPMNAONHM != 0 {
-            os.write_uint32(3, self.JMPPMNAONHM)?;
+            os.write_uint32(2, self.JMPPMNAONHM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.role))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TriggerAiPamSpeakScRsp {
     }
 
     fn clear(&mut self) {
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.JMPPMNAONHM = 0;
         self.retcode = 0;
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TriggerAiPamSpeakScRsp {
         static instance: TriggerAiPamSpeakScRsp = TriggerAiPamSpeakScRsp {
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             JMPPMNAONHM: 0,
             retcode: 0,
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for TriggerAiPamSpeakScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTriggerAiPamSpeakScRsp.proto\x1a\x11FKNKNLGMACL.proto\"\x84\x01\n\
-    \x16TriggerAiPamSpeakScRsp\x12.\n\x0bBDPIMPJOJBK\x18\r\x20\x01(\x0e2\x0c\
-    .FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bJMPPMNAONHM\x18\x03\x20\x01(\r\
-    R\x0bJMPPMNAONHM\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x1cTriggerAiPamSpeakScRsp.proto\x1a\x11FKNKNLGMACL.proto\"v\n\x16Trig\
+    gerAiPamSpeakScRsp\x12\x20\n\x0bJMPPMNAONHM\x18\x02\x20\x01(\rR\x0bJMPPM\
+    NAONHM\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x04\
+    role\x18\r\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x04roleb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

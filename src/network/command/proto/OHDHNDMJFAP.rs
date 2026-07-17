@@ -30,10 +30,10 @@ pub struct OHDHNDMJFAP {
     // message fields
     // @@protoc_insertion_point(field:OHDHNDMJFAP.GFOAHHHNBJC)
     pub GFOAHHHNBJC: ::std::vec::Vec<super::BattleAvatarServantInfo::BattleAvatarServantInfo>,
-    // @@protoc_insertion_point(field:OHDHNDMJFAP.BOBELCJDDOA)
-    pub BOBELCJDDOA: u32,
     // @@protoc_insertion_point(field:OHDHNDMJFAP.GNMMFALALLD)
     pub GNMMFALALLD: u32,
+    // @@protoc_insertion_point(field:OHDHNDMJFAP.BOBELCJDDOA)
+    pub BOBELCJDDOA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OHDHNDMJFAP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl OHDHNDMJFAP {
             |m: &mut OHDHNDMJFAP| { &mut m.GFOAHHHNBJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOBELCJDDOA",
-            |m: &OHDHNDMJFAP| { &m.BOBELCJDDOA },
-            |m: &mut OHDHNDMJFAP| { &mut m.BOBELCJDDOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNMMFALALLD",
             |m: &OHDHNDMJFAP| { &m.GNMMFALALLD },
             |m: &mut OHDHNDMJFAP| { &mut m.GNMMFALALLD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BOBELCJDDOA",
+            |m: &OHDHNDMJFAP| { &m.BOBELCJDDOA },
+            |m: &mut OHDHNDMJFAP| { &mut m.BOBELCJDDOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHDHNDMJFAP>(
             "OHDHNDMJFAP",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for OHDHNDMJFAP {
                 10 => {
                     self.GFOAHHHNBJC.push(is.read_message()?);
                 },
-                24 => {
-                    self.BOBELCJDDOA = is.read_uint32()?;
-                },
                 16 => {
                     self.GNMMFALALLD = is.read_uint32()?;
+                },
+                24 => {
+                    self.BOBELCJDDOA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OHDHNDMJFAP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BOBELCJDDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BOBELCJDDOA);
-        }
         if self.GNMMFALALLD != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.GNMMFALALLD);
+        }
+        if self.BOBELCJDDOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BOBELCJDDOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +126,11 @@ impl ::protobuf::Message for OHDHNDMJFAP {
         for v in &self.GFOAHHHNBJC {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.BOBELCJDDOA != 0 {
-            os.write_uint32(3, self.BOBELCJDDOA)?;
-        }
         if self.GNMMFALALLD != 0 {
             os.write_uint32(2, self.GNMMFALALLD)?;
+        }
+        if self.BOBELCJDDOA != 0 {
+            os.write_uint32(3, self.BOBELCJDDOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for OHDHNDMJFAP {
 
     fn clear(&mut self) {
         self.GFOAHHHNBJC.clear();
-        self.BOBELCJDDOA = 0;
         self.GNMMFALALLD = 0;
+        self.BOBELCJDDOA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHDHNDMJFAP {
         static instance: OHDHNDMJFAP = OHDHNDMJFAP {
             GFOAHHHNBJC: ::std::vec::Vec::new(),
-            BOBELCJDDOA: 0,
             GNMMFALALLD: 0,
+            BOBELCJDDOA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for OHDHNDMJFAP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OHDHNDMJFAP.proto\x1a\x1dBattleAvatarServantInfo.proto\"\x8d\x01\n\
     \x0bOHDHNDMJFAP\x12:\n\x0bGFOAHHHNBJC\x18\x01\x20\x03(\x0b2\x18.BattleAv\
-    atarServantInfoR\x0bGFOAHHHNBJC\x12\x20\n\x0bBOBELCJDDOA\x18\x03\x20\x01\
-    (\rR\x0bBOBELCJDDOA\x12\x20\n\x0bGNMMFALALLD\x18\x02\x20\x01(\rR\x0bGNMM\
-    FALALLDb\x06proto3\
+    atarServantInfoR\x0bGFOAHHHNBJC\x12\x20\n\x0bGNMMFALALLD\x18\x02\x20\x01\
+    (\rR\x0bGNMMFALALLD\x12\x20\n\x0bBOBELCJDDOA\x18\x03\x20\x01(\rR\x0bBOBE\
+    LCJDDOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

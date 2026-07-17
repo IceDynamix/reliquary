@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRollShopType {
     // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_NLCDGIPGFDJ)
     OHCMLBPONOB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_JLMAAPILPFM)
-    OHCMLBPONOB_JLMAAPILPFM = 6906,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_MGKPBJDFEFH)
+    OHCMLBPONOB_MGKPBJDFEFH = 6912,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_OAOLKAMEEJA)
+    OHCMLBPONOB_OAOLKAMEEJA = 6903,
     // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_FNHGIIEDMOL)
     OHCMLBPONOB_FNHGIIEDMOL = 6902,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_OAOLKAMEEJA)
-    OHCMLBPONOB_OAOLKAMEEJA = 6916,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_JLMAAPILPFM)
+    OHCMLBPONOB_JLMAAPILPFM = 6908,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_EOKAIKAJHOP)
+    OHCMLBPONOB_EOKAIKAJHOP = 6917,
     // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_IHMMENKJJGC)
     OHCMLBPONOB_IHMMENKJJGC = 6918,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_EOKAIKAJHOP)
-    OHCMLBPONOB_EOKAIKAJHOP = 6919,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_MGKPBJDFEFH)
-    OHCMLBPONOB_MGKPBJDFEFH = 6920,
 }
 
 impl ::protobuf::Enum for CmdRollShopType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRollShopType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRollShopType> {
         match value {
             0 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ),
-            6906 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
+            6912 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH),
+            6903 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
             6902 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL),
-            6916 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
+            6908 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
+            6917 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
             6918 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC),
-            6919 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
-            6920 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdRollShopType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRollShopType> {
         match str {
             "OHCMLBPONOB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ),
-            "OHCMLBPONOB_JLMAAPILPFM" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
-            "OHCMLBPONOB_FNHGIIEDMOL" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL),
-            "OHCMLBPONOB_OAOLKAMEEJA" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
-            "OHCMLBPONOB_IHMMENKJJGC" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC),
-            "OHCMLBPONOB_EOKAIKAJHOP" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
             "OHCMLBPONOB_MGKPBJDFEFH" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH),
+            "OHCMLBPONOB_OAOLKAMEEJA" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
+            "OHCMLBPONOB_FNHGIIEDMOL" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL),
+            "OHCMLBPONOB_JLMAAPILPFM" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
+            "OHCMLBPONOB_EOKAIKAJHOP" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
+            "OHCMLBPONOB_IHMMENKJJGC" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRollShopType] = &[
         CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ,
-        CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM,
-        CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL,
-        CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA,
-        CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC,
-        CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP,
         CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH,
+        CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA,
+        CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL,
+        CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM,
+        CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP,
+        CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdRollShopType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ => 0,
-            CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM => 1,
-            CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL => 2,
-            CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA => 3,
-            CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC => 4,
+            CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH => 1,
+            CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA => 2,
+            CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL => 3,
+            CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM => 4,
             CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP => 5,
-            CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH => 6,
+            CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CmdRollShopType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdRollShopType.proto*\xe2\x01\n\x0fCmdRollShopType\x12\x1b\n\x17O\
-    HCMLBPONOB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OHCMLBPONOB_JLMAAPILPFM\x10\
-    \xfa5\x12\x1c\n\x17OHCMLBPONOB_FNHGIIEDMOL\x10\xf65\x12\x1c\n\x17OHCMLBP\
-    ONOB_OAOLKAMEEJA\x10\x846\x12\x1c\n\x17OHCMLBPONOB_IHMMENKJJGC\x10\x866\
-    \x12\x1c\n\x17OHCMLBPONOB_EOKAIKAJHOP\x10\x876\x12\x1c\n\x17OHCMLBPONOB_\
-    MGKPBJDFEFH\x10\x886b\x06proto3\
+    HCMLBPONOB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OHCMLBPONOB_MGKPBJDFEFH\x10\
+    \x806\x12\x1c\n\x17OHCMLBPONOB_OAOLKAMEEJA\x10\xf75\x12\x1c\n\x17OHCMLBP\
+    ONOB_FNHGIIEDMOL\x10\xf65\x12\x1c\n\x17OHCMLBPONOB_JLMAAPILPFM\x10\xfc5\
+    \x12\x1c\n\x17OHCMLBPONOB_EOKAIKAJHOP\x10\x856\x12\x1c\n\x17OHCMLBPONOB_\
+    IHMMENKJJGC\x10\x866b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

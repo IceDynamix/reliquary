@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NNFFGHJKPJD {
     // message fields
-    // @@protoc_insertion_point(field:NNFFGHJKPJD.OGDKJPDFFAI)
-    pub OGDKJPDFFAI: ::std::vec::Vec<super::NJHFBDDHCEN::NJHFBDDHCEN>,
     // @@protoc_insertion_point(field:NNFFGHJKPJD.JOMDKGINNEK)
     pub JOMDKGINNEK: u32,
     // @@protoc_insertion_point(field:NNFFGHJKPJD.shop_id)
     pub shop_id: u32,
     // @@protoc_insertion_point(field:NNFFGHJKPJD.AAIODNCLAIP)
     pub AAIODNCLAIP: u32,
+    // @@protoc_insertion_point(field:NNFFGHJKPJD.OGDKJPDFFAI)
+    pub OGDKJPDFFAI: ::std::vec::Vec<super::NJHFBDDHCEN::NJHFBDDHCEN>,
     // special fields
     // @@protoc_insertion_point(special_field:NNFFGHJKPJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl NNFFGHJKPJD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OGDKJPDFFAI",
-            |m: &NNFFGHJKPJD| { &m.OGDKJPDFFAI },
-            |m: &mut NNFFGHJKPJD| { &mut m.OGDKJPDFFAI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOMDKGINNEK",
             |m: &NNFFGHJKPJD| { &m.JOMDKGINNEK },
@@ -74,6 +69,11 @@ impl NNFFGHJKPJD {
             "AAIODNCLAIP",
             |m: &NNFFGHJKPJD| { &m.AAIODNCLAIP },
             |m: &mut NNFFGHJKPJD| { &mut m.AAIODNCLAIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OGDKJPDFFAI",
+            |m: &NNFFGHJKPJD| { &m.OGDKJPDFFAI },
+            |m: &mut NNFFGHJKPJD| { &mut m.OGDKJPDFFAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NNFFGHJKPJD>(
             "NNFFGHJKPJD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NNFFGHJKPJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.OGDKJPDFFAI.push(is.read_message()?);
-                },
-                120 => {
+                16 => {
                     self.JOMDKGINNEK = is.read_uint32()?;
                 },
-                16 => {
+                56 => {
                     self.shop_id = is.read_uint32()?;
                 },
-                72 => {
+                112 => {
                     self.AAIODNCLAIP = is.read_uint32()?;
+                },
+                122 => {
+                    self.OGDKJPDFFAI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for NNFFGHJKPJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JOMDKGINNEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JOMDKGINNEK);
+        }
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.shop_id);
+        }
+        if self.AAIODNCLAIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AAIODNCLAIP);
+        }
         for value in &self.OGDKJPDFFAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JOMDKGINNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JOMDKGINNEK);
-        }
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.shop_id);
-        }
-        if self.AAIODNCLAIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AAIODNCLAIP);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OGDKJPDFFAI {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.JOMDKGINNEK != 0 {
-            os.write_uint32(15, self.JOMDKGINNEK)?;
+            os.write_uint32(2, self.JOMDKGINNEK)?;
         }
         if self.shop_id != 0 {
-            os.write_uint32(2, self.shop_id)?;
+            os.write_uint32(7, self.shop_id)?;
         }
         if self.AAIODNCLAIP != 0 {
-            os.write_uint32(9, self.AAIODNCLAIP)?;
+            os.write_uint32(14, self.AAIODNCLAIP)?;
         }
+        for v in &self.OGDKJPDFFAI {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for NNFFGHJKPJD {
     }
 
     fn clear(&mut self) {
-        self.OGDKJPDFFAI.clear();
         self.JOMDKGINNEK = 0;
         self.shop_id = 0;
         self.AAIODNCLAIP = 0;
+        self.OGDKJPDFFAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NNFFGHJKPJD {
         static instance: NNFFGHJKPJD = NNFFGHJKPJD {
-            OGDKJPDFFAI: ::std::vec::Vec::new(),
             JOMDKGINNEK: 0,
             shop_id: 0,
             AAIODNCLAIP: 0,
+            OGDKJPDFFAI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for NNFFGHJKPJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NNFFGHJKPJD.proto\x1a\x11NJHFBDDHCEN.proto\"\x9a\x01\n\x0bNNFFGHJK\
-    PJD\x12.\n\x0bOGDKJPDFFAI\x18\n\x20\x03(\x0b2\x0c.NJHFBDDHCENR\x0bOGDKJP\
-    DFFAI\x12\x20\n\x0bJOMDKGINNEK\x18\x0f\x20\x01(\rR\x0bJOMDKGINNEK\x12\
-    \x17\n\x07shop_id\x18\x02\x20\x01(\rR\x06shopId\x12\x20\n\x0bAAIODNCLAIP\
-    \x18\t\x20\x01(\rR\x0bAAIODNCLAIPb\x06proto3\
+    PJD\x12\x20\n\x0bJOMDKGINNEK\x18\x02\x20\x01(\rR\x0bJOMDKGINNEK\x12\x17\
+    \n\x07shop_id\x18\x07\x20\x01(\rR\x06shopId\x12\x20\n\x0bAAIODNCLAIP\x18\
+    \x0e\x20\x01(\rR\x0bAAIODNCLAIP\x12.\n\x0bOGDKJPDFFAI\x18\x0f\x20\x03(\
+    \x0b2\x0c.NJHFBDDHCENR\x0bOGDKJPDFFAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

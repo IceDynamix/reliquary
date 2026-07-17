@@ -72,7 +72,7 @@ impl ::protobuf::Message for FEMJLEMCEFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.GCOPDPOLECJ = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for FEMJLEMCEFD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GCOPDPOLECJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GCOPDPOLECJ);
+            my_size += ::protobuf::rt::uint32_size(7, self.GCOPDPOLECJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FEMJLEMCEFD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GCOPDPOLECJ != 0 {
-            os.write_uint32(1, self.GCOPDPOLECJ)?;
+            os.write_uint32(7, self.GCOPDPOLECJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FEMJLEMCEFD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FEMJLEMCEFD.proto\"/\n\x0bFEMJLEMCEFD\x12\x20\n\x0bGCOPDPOLECJ\x18\
-    \x01\x20\x01(\rR\x0bGCOPDPOLECJb\x06proto3\
+    \x07\x20\x01(\rR\x0bGCOPDPOLECJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

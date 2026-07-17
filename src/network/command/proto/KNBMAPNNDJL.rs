@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KNBMAPNNDJL {
     // message fields
-    // @@protoc_insertion_point(field:KNBMAPNNDJL.NONACGPCEKE)
-    pub NONACGPCEKE: i32,
     // @@protoc_insertion_point(field:KNBMAPNNDJL.OLLPHBPPEHG)
     pub OLLPHBPPEHG: i32,
+    // @@protoc_insertion_point(field:KNBMAPNNDJL.NONACGPCEKE)
+    pub NONACGPCEKE: i32,
     // @@protoc_insertion_point(field:KNBMAPNNDJL.BCJLNFOMEAG)
     pub BCJLNFOMEAG: i32,
     // special fields
@@ -54,14 +54,14 @@ impl KNBMAPNNDJL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NONACGPCEKE",
-            |m: &KNBMAPNNDJL| { &m.NONACGPCEKE },
-            |m: &mut KNBMAPNNDJL| { &mut m.NONACGPCEKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLLPHBPPEHG",
             |m: &KNBMAPNNDJL| { &m.OLLPHBPPEHG },
             |m: &mut KNBMAPNNDJL| { &mut m.OLLPHBPPEHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NONACGPCEKE",
+            |m: &KNBMAPNNDJL| { &m.NONACGPCEKE },
+            |m: &mut KNBMAPNNDJL| { &mut m.NONACGPCEKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BCJLNFOMEAG",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for KNBMAPNNDJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NONACGPCEKE = is.read_int32()?;
-                },
                 8 => {
                     self.OLLPHBPPEHG = is.read_int32()?;
+                },
+                16 => {
+                    self.NONACGPCEKE = is.read_int32()?;
                 },
                 24 => {
                     self.BCJLNFOMEAG = is.read_int32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for KNBMAPNNDJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NONACGPCEKE != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.NONACGPCEKE);
-        }
         if self.OLLPHBPPEHG != 0 {
             my_size += ::protobuf::rt::int32_size(1, self.OLLPHBPPEHG);
+        }
+        if self.NONACGPCEKE != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.NONACGPCEKE);
         }
         if self.BCJLNFOMEAG != 0 {
             my_size += ::protobuf::rt::int32_size(3, self.BCJLNFOMEAG);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for KNBMAPNNDJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NONACGPCEKE != 0 {
-            os.write_int32(2, self.NONACGPCEKE)?;
-        }
         if self.OLLPHBPPEHG != 0 {
             os.write_int32(1, self.OLLPHBPPEHG)?;
+        }
+        if self.NONACGPCEKE != 0 {
+            os.write_int32(2, self.NONACGPCEKE)?;
         }
         if self.BCJLNFOMEAG != 0 {
             os.write_int32(3, self.BCJLNFOMEAG)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KNBMAPNNDJL {
     }
 
     fn clear(&mut self) {
-        self.NONACGPCEKE = 0;
         self.OLLPHBPPEHG = 0;
+        self.NONACGPCEKE = 0;
         self.BCJLNFOMEAG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNBMAPNNDJL {
         static instance: KNBMAPNNDJL = KNBMAPNNDJL {
-            NONACGPCEKE: 0,
             OLLPHBPPEHG: 0,
+            NONACGPCEKE: 0,
             BCJLNFOMEAG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for KNBMAPNNDJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KNBMAPNNDJL.proto\"s\n\x0bKNBMAPNNDJL\x12\x20\n\x0bNONACGPCEKE\x18\
-    \x02\x20\x01(\x05R\x0bNONACGPCEKE\x12\x20\n\x0bOLLPHBPPEHG\x18\x01\x20\
-    \x01(\x05R\x0bOLLPHBPPEHG\x12\x20\n\x0bBCJLNFOMEAG\x18\x03\x20\x01(\x05R\
+    \n\x11KNBMAPNNDJL.proto\"s\n\x0bKNBMAPNNDJL\x12\x20\n\x0bOLLPHBPPEHG\x18\
+    \x01\x20\x01(\x05R\x0bOLLPHBPPEHG\x12\x20\n\x0bNONACGPCEKE\x18\x02\x20\
+    \x01(\x05R\x0bNONACGPCEKE\x12\x20\n\x0bBCJLNFOMEAG\x18\x03\x20\x01(\x05R\
     \x0bBCJLNFOMEAGb\x06proto3\
 ";
 

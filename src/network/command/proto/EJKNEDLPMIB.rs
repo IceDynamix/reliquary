@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EJKNEDLPMIB {
     // message fields
-    // @@protoc_insertion_point(field:EJKNEDLPMIB.GHPKFACFMML)
-    pub GHPKFACFMML: ::protobuf::MessageField<super::GACKCPEPDAF::GACKCPEPDAF>,
     // @@protoc_insertion_point(field:EJKNEDLPMIB.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
+    // @@protoc_insertion_point(field:EJKNEDLPMIB.GHPKFACFMML)
+    pub GHPKFACFMML: ::protobuf::MessageField<super::GACKCPEPDAF::GACKCPEPDAF>,
     // special fields
     // @@protoc_insertion_point(special_field:EJKNEDLPMIB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EJKNEDLPMIB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GACKCPEPDAF::GACKCPEPDAF>(
-            "GHPKFACFMML",
-            |m: &EJKNEDLPMIB| { &m.GHPKFACFMML },
-            |m: &mut EJKNEDLPMIB| { &mut m.GHPKFACFMML },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFCNALJDHMP",
             |m: &EJKNEDLPMIB| { &m.BFCNALJDHMP },
             |m: &mut EJKNEDLPMIB| { &mut m.BFCNALJDHMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GACKCPEPDAF::GACKCPEPDAF>(
+            "GHPKFACFMML",
+            |m: &EJKNEDLPMIB| { &m.GHPKFACFMML },
+            |m: &mut EJKNEDLPMIB| { &mut m.GHPKFACFMML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJKNEDLPMIB>(
             "EJKNEDLPMIB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EJKNEDLPMIB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHPKFACFMML)?;
-                },
-                24 => {
+                56 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GHPKFACFMML)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EJKNEDLPMIB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BFCNALJDHMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BFCNALJDHMP);
+        }
         if let Some(v) = self.GHPKFACFMML.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BFCNALJDHMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EJKNEDLPMIB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.GHPKFACFMML.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(3, self.BFCNALJDHMP)?;
+            os.write_uint32(7, self.BFCNALJDHMP)?;
+        }
+        if let Some(v) = self.GHPKFACFMML.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EJKNEDLPMIB {
     }
 
     fn clear(&mut self) {
-        self.GHPKFACFMML.clear();
         self.BFCNALJDHMP = 0;
+        self.GHPKFACFMML.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EJKNEDLPMIB {
         static instance: EJKNEDLPMIB = EJKNEDLPMIB {
-            GHPKFACFMML: ::protobuf::MessageField::none(),
             BFCNALJDHMP: 0,
+            GHPKFACFMML: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EJKNEDLPMIB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EJKNEDLPMIB.proto\x1a\x11GACKCPEPDAF.proto\"_\n\x0bEJKNEDLPMIB\x12\
-    .\n\x0bGHPKFACFMML\x18\x04\x20\x01(\x0b2\x0c.GACKCPEPDAFR\x0bGHPKFACFMML\
-    \x12\x20\n\x0bBFCNALJDHMP\x18\x03\x20\x01(\rR\x0bBFCNALJDHMPb\x06proto3\
+    \x20\n\x0bBFCNALJDHMP\x18\x07\x20\x01(\rR\x0bBFCNALJDHMP\x12.\n\x0bGHPKF\
+    ACFMML\x18\x0b\x20\x01(\x0b2\x0c.GACKCPEPDAFR\x0bGHPKFACFMMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

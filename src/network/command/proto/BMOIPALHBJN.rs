@@ -30,12 +30,12 @@ pub struct BMOIPALHBJN {
     // message fields
     // @@protoc_insertion_point(field:BMOIPALHBJN.OGDKJPDFFAI)
     pub OGDKJPDFFAI: ::std::vec::Vec<super::NJHFBDDHCEN::NJHFBDDHCEN>,
+    // @@protoc_insertion_point(field:BMOIPALHBJN.JOMDKGINNEK)
+    pub JOMDKGINNEK: u32,
     // @@protoc_insertion_point(field:BMOIPALHBJN.shop_id)
     pub shop_id: u32,
     // @@protoc_insertion_point(field:BMOIPALHBJN.AAIODNCLAIP)
     pub AAIODNCLAIP: u32,
-    // @@protoc_insertion_point(field:BMOIPALHBJN.JOMDKGINNEK)
-    pub JOMDKGINNEK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BMOIPALHBJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl BMOIPALHBJN {
             |m: &mut BMOIPALHBJN| { &mut m.OGDKJPDFFAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOMDKGINNEK",
+            |m: &BMOIPALHBJN| { &m.JOMDKGINNEK },
+            |m: &mut BMOIPALHBJN| { &mut m.JOMDKGINNEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "shop_id",
             |m: &BMOIPALHBJN| { &m.shop_id },
             |m: &mut BMOIPALHBJN| { &mut m.shop_id },
@@ -69,11 +74,6 @@ impl BMOIPALHBJN {
             "AAIODNCLAIP",
             |m: &BMOIPALHBJN| { &m.AAIODNCLAIP },
             |m: &mut BMOIPALHBJN| { &mut m.AAIODNCLAIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOMDKGINNEK",
-            |m: &BMOIPALHBJN| { &m.JOMDKGINNEK },
-            |m: &mut BMOIPALHBJN| { &mut m.JOMDKGINNEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMOIPALHBJN>(
             "BMOIPALHBJN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BMOIPALHBJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     self.OGDKJPDFFAI.push(is.read_message()?);
                 },
-                56 => {
+                64 => {
+                    self.JOMDKGINNEK = is.read_uint32()?;
+                },
+                88 => {
                     self.shop_id = is.read_uint32()?;
                 },
                 96 => {
                     self.AAIODNCLAIP = is.read_uint32()?;
-                },
-                48 => {
-                    self.JOMDKGINNEK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for BMOIPALHBJN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.JOMDKGINNEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JOMDKGINNEK);
+        }
         if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.shop_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.shop_id);
         }
         if self.AAIODNCLAIP != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.AAIODNCLAIP);
-        }
-        if self.JOMDKGINNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JOMDKGINNEK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for BMOIPALHBJN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.OGDKJPDFFAI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.JOMDKGINNEK != 0 {
+            os.write_uint32(8, self.JOMDKGINNEK)?;
+        }
         if self.shop_id != 0 {
-            os.write_uint32(7, self.shop_id)?;
+            os.write_uint32(11, self.shop_id)?;
         }
         if self.AAIODNCLAIP != 0 {
             os.write_uint32(12, self.AAIODNCLAIP)?;
-        }
-        if self.JOMDKGINNEK != 0 {
-            os.write_uint32(6, self.JOMDKGINNEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for BMOIPALHBJN {
 
     fn clear(&mut self) {
         self.OGDKJPDFFAI.clear();
+        self.JOMDKGINNEK = 0;
         self.shop_id = 0;
         self.AAIODNCLAIP = 0;
-        self.JOMDKGINNEK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMOIPALHBJN {
         static instance: BMOIPALHBJN = BMOIPALHBJN {
             OGDKJPDFFAI: ::std::vec::Vec::new(),
+            JOMDKGINNEK: 0,
             shop_id: 0,
             AAIODNCLAIP: 0,
-            JOMDKGINNEK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BMOIPALHBJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMOIPALHBJN.proto\x1a\x11NJHFBDDHCEN.proto\"\x9a\x01\n\x0bBMOIPALH\
-    BJN\x12.\n\x0bOGDKJPDFFAI\x18\x0b\x20\x03(\x0b2\x0c.NJHFBDDHCENR\x0bOGDK\
-    JPDFFAI\x12\x17\n\x07shop_id\x18\x07\x20\x01(\rR\x06shopId\x12\x20\n\x0b\
-    AAIODNCLAIP\x18\x0c\x20\x01(\rR\x0bAAIODNCLAIP\x12\x20\n\x0bJOMDKGINNEK\
-    \x18\x06\x20\x01(\rR\x0bJOMDKGINNEKb\x06proto3\
+    BJN\x12.\n\x0bOGDKJPDFFAI\x18\x04\x20\x03(\x0b2\x0c.NJHFBDDHCENR\x0bOGDK\
+    JPDFFAI\x12\x20\n\x0bJOMDKGINNEK\x18\x08\x20\x01(\rR\x0bJOMDKGINNEK\x12\
+    \x17\n\x07shop_id\x18\x0b\x20\x01(\rR\x06shopId\x12\x20\n\x0bAAIODNCLAIP\
+    \x18\x0c\x20\x01(\rR\x0bAAIODNCLAIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

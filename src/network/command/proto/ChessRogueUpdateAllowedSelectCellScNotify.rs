@@ -79,13 +79,13 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.AADAFLKEJGD)?;
                 },
-                40 => {
+                104 => {
                     self.AADAFLKEJGD.push(is.read_uint32()?);
                 },
-                80 => {
+                112 => {
                     self.AIHCKNAMPBP = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.AADAFLKEJGD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.AADAFLKEJGD);
         if self.AIHCKNAMPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.AIHCKNAMPBP);
+            my_size += ::protobuf::rt::uint32_size(14, self.AIHCKNAMPBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.AADAFLKEJGD)?;
+        os.write_repeated_packed_uint32(13, &self.AADAFLKEJGD)?;
         if self.AIHCKNAMPBP != 0 {
-            os.write_uint32(10, self.AIHCKNAMPBP)?;
+            os.write_uint32(14, self.AIHCKNAMPBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAllowedSelectCellScN
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAllowedSelectCellScNotify.proto\"o\n)ChessRogueUpdate\
-    AllowedSelectCellScNotify\x12\x20\n\x0bAADAFLKEJGD\x18\x05\x20\x03(\rR\
-    \x0bAADAFLKEJGD\x12\x20\n\x0bAIHCKNAMPBP\x18\n\x20\x01(\rR\x0bAIHCKNAMPB\
-    Pb\x06proto3\
+    AllowedSelectCellScNotify\x12\x20\n\x0bAADAFLKEJGD\x18\r\x20\x03(\rR\x0b\
+    AADAFLKEJGD\x12\x20\n\x0bAIHCKNAMPBP\x18\x0e\x20\x01(\rR\x0bAIHCKNAMPBPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

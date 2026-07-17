@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartDungeonCsReq {
     // message fields
+    // @@protoc_insertion_point(field:StartDungeonCsReq.COLOHMBFKIH)
+    pub COLOHMBFKIH: ::std::vec::Vec<super::KVP::KVP>,
+    // @@protoc_insertion_point(field:StartDungeonCsReq.ENCINPIHHDF)
+    pub ENCINPIHHDF: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:StartDungeonCsReq.JAJDGPAKNLL)
     pub JAJDGPAKNLL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartDungeonCsReq.COLOHMBFKIH)
-    pub COLOHMBFKIH: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
-    // @@protoc_insertion_point(field:StartDungeonCsReq.ENCINPIHHDF)
-    pub ENCINPIHHDF: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:StartDungeonCsReq.EICEKDBENKM)
     pub EICEKDBENKM: u32,
     // special fields
@@ -56,11 +56,6 @@ impl StartDungeonCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JAJDGPAKNLL",
-            |m: &StartDungeonCsReq| { &m.JAJDGPAKNLL },
-            |m: &mut StartDungeonCsReq| { &mut m.JAJDGPAKNLL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "COLOHMBFKIH",
             |m: &StartDungeonCsReq| { &m.COLOHMBFKIH },
             |m: &mut StartDungeonCsReq| { &mut m.COLOHMBFKIH },
@@ -69,6 +64,11 @@ impl StartDungeonCsReq {
             "ENCINPIHHDF",
             |m: &StartDungeonCsReq| { &m.ENCINPIHHDF },
             |m: &mut StartDungeonCsReq| { &mut m.ENCINPIHHDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JAJDGPAKNLL",
+            |m: &StartDungeonCsReq| { &m.JAJDGPAKNLL },
+            |m: &mut StartDungeonCsReq| { &mut m.JAJDGPAKNLL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EICEKDBENKM",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for StartDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JAJDGPAKNLL)?;
-                },
-                16 => {
-                    self.JAJDGPAKNLL.push(is.read_uint32()?);
-                },
-                42 => {
+                10 => {
                     self.COLOHMBFKIH.push(is.read_message()?);
                 },
-                34 => {
+                18 => {
                     self.ENCINPIHHDF.push(is.read_message()?);
                 },
-                8 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JAJDGPAKNLL)?;
+                },
+                48 => {
+                    self.JAJDGPAKNLL.push(is.read_uint32()?);
+                },
+                64 => {
                     self.EICEKDBENKM = is.read_uint32()?;
                 },
                 tag => {
@@ -120,7 +120,6 @@ impl ::protobuf::Message for StartDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JAJDGPAKNLL);
         for value in &self.COLOHMBFKIH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -129,8 +128,9 @@ impl ::protobuf::Message for StartDungeonCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JAJDGPAKNLL);
         if self.EICEKDBENKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EICEKDBENKM);
+            my_size += ::protobuf::rt::uint32_size(8, self.EICEKDBENKM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,15 +138,15 @@ impl ::protobuf::Message for StartDungeonCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.JAJDGPAKNLL)?;
         for v in &self.COLOHMBFKIH {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         for v in &self.ENCINPIHHDF {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        os.write_repeated_packed_uint32(6, &self.JAJDGPAKNLL)?;
         if self.EICEKDBENKM != 0 {
-            os.write_uint32(1, self.EICEKDBENKM)?;
+            os.write_uint32(8, self.EICEKDBENKM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for StartDungeonCsReq {
     }
 
     fn clear(&mut self) {
-        self.JAJDGPAKNLL.clear();
         self.COLOHMBFKIH.clear();
         self.ENCINPIHHDF.clear();
+        self.JAJDGPAKNLL.clear();
         self.EICEKDBENKM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartDungeonCsReq {
         static instance: StartDungeonCsReq = StartDungeonCsReq {
-            JAJDGPAKNLL: ::std::vec::Vec::new(),
             COLOHMBFKIH: ::std::vec::Vec::new(),
             ENCINPIHHDF: ::std::vec::Vec::new(),
+            JAJDGPAKNLL: ::std::vec::Vec::new(),
             EICEKDBENKM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,12 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for StartDungeonCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17StartDungeonCsReq.proto\x1a\x11APAMFCKFHLL.proto\"\xb7\x01\n\x11St\
-    artDungeonCsReq\x12\x20\n\x0bJAJDGPAKNLL\x18\x02\x20\x03(\rR\x0bJAJDGPAK\
-    NLL\x12.\n\x0bCOLOHMBFKIH\x18\x05\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bCOLO\
-    HMBFKIH\x12.\n\x0bENCINPIHHDF\x18\x04\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0b\
-    ENCINPIHHDF\x12\x20\n\x0bEICEKDBENKM\x18\x01\x20\x01(\rR\x0bEICEKDBENKMb\
-    \x06proto3\
+    \n\x17StartDungeonCsReq.proto\x1a\tKVP.proto\"\xa7\x01\n\x11StartDungeon\
+    CsReq\x12&\n\x0bCOLOHMBFKIH\x18\x01\x20\x03(\x0b2\x04.KVPR\x0bCOLOHMBFKI\
+    H\x12&\n\x0bENCINPIHHDF\x18\x02\x20\x03(\x0b2\x04.KVPR\x0bENCINPIHHDF\
+    \x12\x20\n\x0bJAJDGPAKNLL\x18\x06\x20\x03(\rR\x0bJAJDGPAKNLL\x12\x20\n\
+    \x0bEICEKDBENKM\x18\x08\x20\x01(\rR\x0bEICEKDBENKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartDungeonCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

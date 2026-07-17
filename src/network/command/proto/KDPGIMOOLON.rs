@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KDPGIMOOLON {
     // message fields
-    // @@protoc_insertion_point(field:KDPGIMOOLON.PGMHMPEHPHP)
-    pub PGMHMPEHPHP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.KNJMPBHKHCJ)
     pub KNJMPBHKHCJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KDPGIMOOLON.PGMHMPEHPHP)
+    pub PGMHMPEHPHP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.JKOOLMNHPHI)
     pub JKOOLMNHPHI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.BDEFAFFDBCC)
@@ -58,14 +58,14 @@ impl KDPGIMOOLON {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PGMHMPEHPHP",
-            |m: &KDPGIMOOLON| { &m.PGMHMPEHPHP },
-            |m: &mut KDPGIMOOLON| { &mut m.PGMHMPEHPHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KNJMPBHKHCJ",
             |m: &KDPGIMOOLON| { &m.KNJMPBHKHCJ },
             |m: &mut KDPGIMOOLON| { &mut m.KNJMPBHKHCJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PGMHMPEHPHP",
+            |m: &KDPGIMOOLON| { &m.PGMHMPEHPHP },
+            |m: &mut KDPGIMOOLON| { &mut m.PGMHMPEHPHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JKOOLMNHPHI",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for KDPGIMOOLON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PGMHMPEHPHP)?;
-                },
-                104 => {
-                    self.PGMHMPEHPHP.push(is.read_uint32()?);
-                },
-                98 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.KNJMPBHKHCJ)?;
                 },
-                96 => {
+                16 => {
                     self.KNJMPBHKHCJ.push(is.read_uint32()?);
                 },
-                10 => {
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PGMHMPEHPHP)?;
+                },
+                48 => {
+                    self.PGMHMPEHPHP.push(is.read_uint32()?);
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.JKOOLMNHPHI)?;
                 },
-                8 => {
+                56 => {
                     self.JKOOLMNHPHI.push(is.read_uint32()?);
                 },
                 72 => {
@@ -136,9 +136,9 @@ impl ::protobuf::Message for KDPGIMOOLON {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PGMHMPEHPHP);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.KNJMPBHKHCJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JKOOLMNHPHI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.KNJMPBHKHCJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PGMHMPEHPHP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JKOOLMNHPHI);
         if self.BDEFAFFDBCC != false {
             my_size += 1 + 1;
         }
@@ -151,9 +151,9 @@ impl ::protobuf::Message for KDPGIMOOLON {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.PGMHMPEHPHP)?;
-        os.write_repeated_packed_uint32(12, &self.KNJMPBHKHCJ)?;
-        os.write_repeated_packed_uint32(1, &self.JKOOLMNHPHI)?;
+        os.write_repeated_packed_uint32(2, &self.KNJMPBHKHCJ)?;
+        os.write_repeated_packed_uint32(6, &self.PGMHMPEHPHP)?;
+        os.write_repeated_packed_uint32(7, &self.JKOOLMNHPHI)?;
         if self.BDEFAFFDBCC != false {
             os.write_bool(9, self.BDEFAFFDBCC)?;
         }
@@ -177,8 +177,8 @@ impl ::protobuf::Message for KDPGIMOOLON {
     }
 
     fn clear(&mut self) {
-        self.PGMHMPEHPHP.clear();
         self.KNJMPBHKHCJ.clear();
+        self.PGMHMPEHPHP.clear();
         self.JKOOLMNHPHI.clear();
         self.BDEFAFFDBCC = false;
         self.PEDFLGGDHDP = 0;
@@ -187,8 +187,8 @@ impl ::protobuf::Message for KDPGIMOOLON {
 
     fn default_instance() -> &'static KDPGIMOOLON {
         static instance: KDPGIMOOLON = KDPGIMOOLON {
-            PGMHMPEHPHP: ::std::vec::Vec::new(),
             KNJMPBHKHCJ: ::std::vec::Vec::new(),
+            PGMHMPEHPHP: ::std::vec::Vec::new(),
             JKOOLMNHPHI: ::std::vec::Vec::new(),
             BDEFAFFDBCC: false,
             PEDFLGGDHDP: 0,
@@ -216,9 +216,9 @@ impl ::protobuf::reflect::ProtobufValue for KDPGIMOOLON {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KDPGIMOOLON.proto\"\xb7\x01\n\x0bKDPGIMOOLON\x12\x20\n\x0bPGMHMPEH\
-    PHP\x18\r\x20\x03(\rR\x0bPGMHMPEHPHP\x12\x20\n\x0bKNJMPBHKHCJ\x18\x0c\
-    \x20\x03(\rR\x0bKNJMPBHKHCJ\x12\x20\n\x0bJKOOLMNHPHI\x18\x01\x20\x03(\rR\
+    \n\x11KDPGIMOOLON.proto\"\xb7\x01\n\x0bKDPGIMOOLON\x12\x20\n\x0bKNJMPBHK\
+    HCJ\x18\x02\x20\x03(\rR\x0bKNJMPBHKHCJ\x12\x20\n\x0bPGMHMPEHPHP\x18\x06\
+    \x20\x03(\rR\x0bPGMHMPEHPHP\x12\x20\n\x0bJKOOLMNHPHI\x18\x07\x20\x03(\rR\
     \x0bJKOOLMNHPHI\x12\x20\n\x0bBDEFAFFDBCC\x18\t\x20\x01(\x08R\x0bBDEFAFFD\
     BCC\x12\x20\n\x0bPEDFLGGDHDP\x18\x0e\x20\x01(\rR\x0bPEDFLGGDHDPb\x06prot\
     o3\

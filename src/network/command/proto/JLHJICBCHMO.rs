@@ -79,10 +79,10 @@ impl ::protobuf::Message for JLHJICBCHMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLCPFLOPGBM)?;
                 },
-                104 => {
+                120 => {
                     self.BJIBCOHEGIJ = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for JLHJICBCHMO {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.BJIBCOHEGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BJIBCOHEGIJ);
+            my_size += ::protobuf::rt::uint32_size(15, self.BJIBCOHEGIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JLHJICBCHMO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HLCPFLOPGBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.BJIBCOHEGIJ != 0 {
-            os.write_uint32(13, self.BJIBCOHEGIJ)?;
+            os.write_uint32(15, self.BJIBCOHEGIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JLHJICBCHMO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JLHJICBCHMO.proto\x1a\x11KOFMGCNIMIN.proto\"_\n\x0bJLHJICBCHMO\x12\
-    .\n\x0bHLCPFLOPGBM\x18\n\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bHLCPFLOPGBM\
-    \x12\x20\n\x0bBJIBCOHEGIJ\x18\r\x20\x01(\rR\x0bBJIBCOHEGIJb\x06proto3\
+    .\n\x0bHLCPFLOPGBM\x18\x02\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bHLCPFLOPGBM\
+    \x12\x20\n\x0bBJIBCOHEGIJ\x18\x0f\x20\x01(\rR\x0bBJIBCOHEGIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

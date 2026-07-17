@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FCOENPKOEBP {
     // message fields
-    // @@protoc_insertion_point(field:FCOENPKOEBP.OPMGDNNAEJF)
-    pub OPMGDNNAEJF: ::protobuf::MessageField<super::JBCHHGDHKIG::JBCHHGDHKIG>,
     // @@protoc_insertion_point(field:FCOENPKOEBP.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:FCOENPKOEBP.GHNJCLNKGHH)
-    pub GHNJCLNKGHH: ::protobuf::EnumOrUnknown<super::EILNMPEFGOM::EILNMPEFGOM>,
-    // @@protoc_insertion_point(field:FCOENPKOEBP.BIACKLBMMAP)
-    pub BIACKLBMMAP: u32,
     // @@protoc_insertion_point(field:FCOENPKOEBP.JEKLOEPPJBK)
     pub JEKLOEPPJBK: u32,
+    // @@protoc_insertion_point(field:FCOENPKOEBP.BIACKLBMMAP)
+    pub BIACKLBMMAP: u32,
     // @@protoc_insertion_point(field:FCOENPKOEBP.GAHFPGCPAJA)
     pub GAHFPGCPAJA: u32,
+    // @@protoc_insertion_point(field:FCOENPKOEBP.OPMGDNNAEJF)
+    pub OPMGDNNAEJF: ::protobuf::MessageField<super::JBCHHGDHKIG::JBCHHGDHKIG>,
+    // @@protoc_insertion_point(field:FCOENPKOEBP.owner_type)
+    pub owner_type: ::protobuf::EnumOrUnknown<super::EILNMPEFGOM::EILNMPEFGOM>,
     // special fields
     // @@protoc_insertion_point(special_field:FCOENPKOEBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,10 @@ impl FCOENPKOEBP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBCHHGDHKIG::JBCHHGDHKIG>(
-            "OPMGDNNAEJF",
-            |m: &FCOENPKOEBP| { &m.OPMGDNNAEJF },
-            |m: &mut FCOENPKOEBP| { &mut m.OPMGDNNAEJF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &FCOENPKOEBP| { &m.item_id },
             |m: &mut FCOENPKOEBP| { &mut m.item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHNJCLNKGHH",
-            |m: &FCOENPKOEBP| { &m.GHNJCLNKGHH },
-            |m: &mut FCOENPKOEBP| { &mut m.GHNJCLNKGHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIACKLBMMAP",
-            |m: &FCOENPKOEBP| { &m.BIACKLBMMAP },
-            |m: &mut FCOENPKOEBP| { &mut m.BIACKLBMMAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JEKLOEPPJBK",
@@ -85,9 +70,24 @@ impl FCOENPKOEBP {
             |m: &mut FCOENPKOEBP| { &mut m.JEKLOEPPJBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIACKLBMMAP",
+            |m: &FCOENPKOEBP| { &m.BIACKLBMMAP },
+            |m: &mut FCOENPKOEBP| { &mut m.BIACKLBMMAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GAHFPGCPAJA",
             |m: &FCOENPKOEBP| { &m.GAHFPGCPAJA },
             |m: &mut FCOENPKOEBP| { &mut m.GAHFPGCPAJA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBCHHGDHKIG::JBCHHGDHKIG>(
+            "OPMGDNNAEJF",
+            |m: &FCOENPKOEBP| { &m.OPMGDNNAEJF },
+            |m: &mut FCOENPKOEBP| { &mut m.OPMGDNNAEJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "owner_type",
+            |m: &FCOENPKOEBP| { &m.owner_type },
+            |m: &mut FCOENPKOEBP| { &mut m.owner_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FCOENPKOEBP>(
             "FCOENPKOEBP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for FCOENPKOEBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPMGDNNAEJF)?;
-                },
-                56 => {
-                    self.item_id = is.read_uint32()?;
-                },
                 32 => {
-                    self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
-                },
-                24 => {
-                    self.BIACKLBMMAP = is.read_uint32()?;
+                    self.item_id = is.read_uint32()?;
                 },
                 40 => {
                     self.JEKLOEPPJBK = is.read_uint32()?;
                 },
                 48 => {
+                    self.BIACKLBMMAP = is.read_uint32()?;
+                },
+                72 => {
                     self.GAHFPGCPAJA = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPMGDNNAEJF)?;
+                },
+                120 => {
+                    self.owner_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for FCOENPKOEBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.item_id);
-        }
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.GHNJCLNKGHH.value());
-        }
-        if self.BIACKLBMMAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BIACKLBMMAP);
+            my_size += ::protobuf::rt::uint32_size(4, self.item_id);
         }
         if self.JEKLOEPPJBK != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.JEKLOEPPJBK);
         }
+        if self.BIACKLBMMAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BIACKLBMMAP);
+        }
         if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GAHFPGCPAJA);
+            my_size += ::protobuf::rt::uint32_size(9, self.GAHFPGCPAJA);
+        }
+        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ) {
+            my_size += ::protobuf::rt::int32_size(15, self.owner_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for FCOENPKOEBP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.item_id != 0 {
-            os.write_uint32(7, self.item_id)?;
-        }
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
-        }
-        if self.BIACKLBMMAP != 0 {
-            os.write_uint32(3, self.BIACKLBMMAP)?;
+            os.write_uint32(4, self.item_id)?;
         }
         if self.JEKLOEPPJBK != 0 {
             os.write_uint32(5, self.JEKLOEPPJBK)?;
         }
+        if self.BIACKLBMMAP != 0 {
+            os.write_uint32(6, self.BIACKLBMMAP)?;
+        }
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint32(6, self.GAHFPGCPAJA)?;
+            os.write_uint32(9, self.GAHFPGCPAJA)?;
+        }
+        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.owner_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for FCOENPKOEBP {
     }
 
     fn clear(&mut self) {
-        self.OPMGDNNAEJF.clear();
         self.item_id = 0;
-        self.GHNJCLNKGHH = ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ);
-        self.BIACKLBMMAP = 0;
         self.JEKLOEPPJBK = 0;
+        self.BIACKLBMMAP = 0;
         self.GAHFPGCPAJA = 0;
+        self.OPMGDNNAEJF.clear();
+        self.owner_type = ::protobuf::EnumOrUnknown::new(super::EILNMPEFGOM::EILNMPEFGOM::EILNMPEFGOM_GFHLAKINNHJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FCOENPKOEBP {
         static instance: FCOENPKOEBP = FCOENPKOEBP {
-            OPMGDNNAEJF: ::protobuf::MessageField::none(),
             item_id: 0,
-            GHNJCLNKGHH: ::protobuf::EnumOrUnknown::from_i32(0),
-            BIACKLBMMAP: 0,
             JEKLOEPPJBK: 0,
+            BIACKLBMMAP: 0,
             GAHFPGCPAJA: 0,
+            OPMGDNNAEJF: ::protobuf::MessageField::none(),
+            owner_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for FCOENPKOEBP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FCOENPKOEBP.proto\x1a\x11EILNMPEFGOM.proto\x1a\x11JBCHHGDHKIG.prot\
-    o\"\xec\x01\n\x0bFCOENPKOEBP\x12.\n\x0bOPMGDNNAEJF\x18\r\x20\x01(\x0b2\
-    \x0c.JBCHHGDHKIGR\x0bOPMGDNNAEJF\x12\x17\n\x07item_id\x18\x07\x20\x01(\r\
-    R\x06itemId\x12.\n\x0bGHNJCLNKGHH\x18\x04\x20\x01(\x0e2\x0c.EILNMPEFGOMR\
-    \x0bGHNJCLNKGHH\x12\x20\n\x0bBIACKLBMMAP\x18\x03\x20\x01(\rR\x0bBIACKLBM\
-    MAP\x12\x20\n\x0bJEKLOEPPJBK\x18\x05\x20\x01(\rR\x0bJEKLOEPPJBK\x12\x20\
-    \n\x0bGAHFPGCPAJA\x18\x06\x20\x01(\rR\x0bGAHFPGCPAJAb\x06proto3\
+    o\"\xe9\x01\n\x0bFCOENPKOEBP\x12\x17\n\x07item_id\x18\x04\x20\x01(\rR\
+    \x06itemId\x12\x20\n\x0bJEKLOEPPJBK\x18\x05\x20\x01(\rR\x0bJEKLOEPPJBK\
+    \x12\x20\n\x0bBIACKLBMMAP\x18\x06\x20\x01(\rR\x0bBIACKLBMMAP\x12\x20\n\
+    \x0bGAHFPGCPAJA\x18\t\x20\x01(\rR\x0bGAHFPGCPAJA\x12.\n\x0bOPMGDNNAEJF\
+    \x18\x0e\x20\x01(\x0b2\x0c.JBCHHGDHKIGR\x0bOPMGDNNAEJF\x12+\n\nowner_typ\
+    e\x18\x0f\x20\x01(\x0e2\x0c.EILNMPEFGOMR\townerTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

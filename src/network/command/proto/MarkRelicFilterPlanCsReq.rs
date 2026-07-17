@@ -86,16 +86,16 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.GGIGDJPFBBP)?;
                 },
-                64 => {
+                40 => {
                     self.GGIGDJPFBBP.push(is.read_uint32()?);
                 },
-                56 => {
+                104 => {
                     self.NPPKABBJCMI = is.read_bool()?;
                 },
-                48 => {
+                120 => {
                     self.BIJJOJNJHDO = is.read_bool()?;
                 },
                 tag => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GGIGDJPFBBP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GGIGDJPFBBP);
         if self.NPPKABBJCMI != false {
             my_size += 1 + 1;
         }
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MarkRelicFilterPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.GGIGDJPFBBP)?;
+        os.write_repeated_packed_uint32(5, &self.GGIGDJPFBBP)?;
         if self.NPPKABBJCMI != false {
-            os.write_bool(7, self.NPPKABBJCMI)?;
+            os.write_bool(13, self.NPPKABBJCMI)?;
         }
         if self.BIJJOJNJHDO != false {
-            os.write_bool(6, self.BIJJOJNJHDO)?;
+            os.write_bool(15, self.BIJJOJNJHDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkRelicFilterPlanCsReq.proto\"\x80\x01\n\x18MarkRelicFilterPlanC\
-    sReq\x12\x20\n\x0bGGIGDJPFBBP\x18\x08\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x20\
-    \n\x0bNPPKABBJCMI\x18\x07\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0bBIJJ\
-    OJNJHDO\x18\x06\x20\x01(\x08R\x0bBIJJOJNJHDOb\x06proto3\
+    sReq\x12\x20\n\x0bGGIGDJPFBBP\x18\x05\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x20\
+    \n\x0bNPPKABBJCMI\x18\r\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0bBIJJOJ\
+    NJHDO\x18\x0f\x20\x01(\x08R\x0bBIJJOJNJHDOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

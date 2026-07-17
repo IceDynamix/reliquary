@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJNJDDFGFJL {
     // message fields
+    // @@protoc_insertion_point(field:AJNJDDFGFJL.max_level)
+    pub max_level: u32,
     // @@protoc_insertion_point(field:AJNJDDFGFJL.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
-    // @@protoc_insertion_point(field:AJNJDDFGFJL.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
-    // @@protoc_insertion_point(field:AJNJDDFGFJL.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:AJNJDDFGFJL.IEPAPOPIFHH)
     pub IEPAPOPIFHH: u64,
+    // @@protoc_insertion_point(field:AJNJDDFGFJL.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AJNJDDFGFJL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl AJNJDDFGFJL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_level",
+            |m: &AJNJDDFGFJL| { &m.max_level },
+            |m: &mut AJNJDDFGFJL| { &mut m.max_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFCNALJDHMP",
             |m: &AJNJDDFGFJL| { &m.BFCNALJDHMP },
             |m: &mut AJNJDDFGFJL| { &mut m.BFCNALJDHMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &AJNJDDFGFJL| { &m.HCBADDHNIDG },
-            |m: &mut AJNJDDFGFJL| { &mut m.HCBADDHNIDG },
+            "IEPAPOPIFHH",
+            |m: &AJNJDDFGFJL| { &m.IEPAPOPIFHH },
+            |m: &mut AJNJDDFGFJL| { &mut m.IEPAPOPIFHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &AJNJDDFGFJL| { &m.level },
             |m: &mut AJNJDDFGFJL| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEPAPOPIFHH",
-            |m: &AJNJDDFGFJL| { &m.IEPAPOPIFHH },
-            |m: &mut AJNJDDFGFJL| { &mut m.IEPAPOPIFHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AJNJDDFGFJL>(
             "AJNJDDFGFJL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                56 => {
+                    self.max_level = is.read_uint32()?;
+                },
                 64 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
                 },
-                96 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
-                },
-                24 => {
-                    self.level = is.read_uint32()?;
-                },
-                16 => {
+                88 => {
                     self.IEPAPOPIFHH = is.read_uint64()?;
+                },
+                120 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.max_level);
+        }
         if self.BFCNALJDHMP != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.BFCNALJDHMP);
         }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HCBADDHNIDG);
+        if self.IEPAPOPIFHH != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.IEPAPOPIFHH);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
-        if self.IEPAPOPIFHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.IEPAPOPIFHH);
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.max_level != 0 {
+            os.write_uint32(7, self.max_level)?;
+        }
         if self.BFCNALJDHMP != 0 {
             os.write_uint32(8, self.BFCNALJDHMP)?;
         }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(12, self.HCBADDHNIDG)?;
+        if self.IEPAPOPIFHH != 0 {
+            os.write_uint64(11, self.IEPAPOPIFHH)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
-        }
-        if self.IEPAPOPIFHH != 0 {
-            os.write_uint64(2, self.IEPAPOPIFHH)?;
+            os.write_uint32(15, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for AJNJDDFGFJL {
     }
 
     fn clear(&mut self) {
+        self.max_level = 0;
         self.BFCNALJDHMP = 0;
-        self.HCBADDHNIDG = 0;
-        self.level = 0;
         self.IEPAPOPIFHH = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJNJDDFGFJL {
         static instance: AJNJDDFGFJL = AJNJDDFGFJL {
+            max_level: 0,
             BFCNALJDHMP: 0,
-            HCBADDHNIDG: 0,
-            level: 0,
             IEPAPOPIFHH: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for AJNJDDFGFJL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJNJDDFGFJL.proto\"\x89\x01\n\x0bAJNJDDFGFJL\x12\x20\n\x0bBFCNALJD\
-    HMP\x18\x08\x20\x01(\rR\x0bBFCNALJDHMP\x12\x20\n\x0bHCBADDHNIDG\x18\x0c\
-    \x20\x01(\rR\x0bHCBADDHNIDG\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05le\
-    vel\x12\x20\n\x0bIEPAPOPIFHH\x18\x02\x20\x01(\x04R\x0bIEPAPOPIFHHb\x06pr\
-    oto3\
+    \n\x11AJNJDDFGFJL.proto\"\x84\x01\n\x0bAJNJDDFGFJL\x12\x1b\n\tmax_level\
+    \x18\x07\x20\x01(\rR\x08maxLevel\x12\x20\n\x0bBFCNALJDHMP\x18\x08\x20\
+    \x01(\rR\x0bBFCNALJDHMP\x12\x20\n\x0bIEPAPOPIFHH\x18\x0b\x20\x01(\x04R\
+    \x0bIEPAPOPIFHH\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05levelb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

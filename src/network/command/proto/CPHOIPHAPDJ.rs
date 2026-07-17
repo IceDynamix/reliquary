@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CPHOIPHAPDJ {
     // message fields
-    // @@protoc_insertion_point(field:CPHOIPHAPDJ.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:CPHOIPHAPDJ.PLEEMBMPICA)
-    pub PLEEMBMPICA: u32,
     // @@protoc_insertion_point(field:CPHOIPHAPDJ.role_star)
     pub role_star: u32,
+    // @@protoc_insertion_point(field:CPHOIPHAPDJ.PLEEMBMPICA)
+    pub PLEEMBMPICA: u32,
     // @@protoc_insertion_point(field:CPHOIPHAPDJ.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:CPHOIPHAPDJ.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CPHOIPHAPDJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl CPHOIPHAPDJ {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &CPHOIPHAPDJ| { &m.avatar_id },
-            |m: &mut CPHOIPHAPDJ| { &mut m.avatar_id },
+            "role_star",
+            |m: &CPHOIPHAPDJ| { &m.role_star },
+            |m: &mut CPHOIPHAPDJ| { &mut m.role_star },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLEEMBMPICA",
@@ -66,14 +66,14 @@ impl CPHOIPHAPDJ {
             |m: &mut CPHOIPHAPDJ| { &mut m.PLEEMBMPICA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_star",
-            |m: &CPHOIPHAPDJ| { &m.role_star },
-            |m: &mut CPHOIPHAPDJ| { &mut m.role_star },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &CPHOIPHAPDJ| { &m.level },
             |m: &mut CPHOIPHAPDJ| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &CPHOIPHAPDJ| { &m.avatar_id },
+            |m: &mut CPHOIPHAPDJ| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CPHOIPHAPDJ>(
             "CPHOIPHAPDJ",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for CPHOIPHAPDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.PLEEMBMPICA = is.read_uint32()?;
-                },
-                40 => {
+                48 => {
                     self.role_star = is.read_uint32()?;
                 },
                 72 => {
+                    self.PLEEMBMPICA = is.read_uint32()?;
+                },
+                96 => {
                     self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for CPHOIPHAPDJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.role_star);
         }
         if self.PLEEMBMPICA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PLEEMBMPICA);
-        }
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.role_star);
+            my_size += ::protobuf::rt::uint32_size(9, self.PLEEMBMPICA);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.level);
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for CPHOIPHAPDJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(3, self.avatar_id)?;
+        if self.role_star != 0 {
+            os.write_uint32(6, self.role_star)?;
         }
         if self.PLEEMBMPICA != 0 {
-            os.write_uint32(7, self.PLEEMBMPICA)?;
-        }
-        if self.role_star != 0 {
-            os.write_uint32(5, self.role_star)?;
+            os.write_uint32(9, self.PLEEMBMPICA)?;
         }
         if self.level != 0 {
-            os.write_uint32(9, self.level)?;
+            os.write_uint32(12, self.level)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for CPHOIPHAPDJ {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.PLEEMBMPICA = 0;
         self.role_star = 0;
+        self.PLEEMBMPICA = 0;
         self.level = 0;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CPHOIPHAPDJ {
         static instance: CPHOIPHAPDJ = CPHOIPHAPDJ {
-            avatar_id: 0,
-            PLEEMBMPICA: 0,
             role_star: 0,
+            PLEEMBMPICA: 0,
             level: 0,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for CPHOIPHAPDJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CPHOIPHAPDJ.proto\"\x7f\n\x0bCPHOIPHAPDJ\x12\x1b\n\tavatar_id\x18\
-    \x03\x20\x01(\rR\x08avatarId\x12\x20\n\x0bPLEEMBMPICA\x18\x07\x20\x01(\r\
-    R\x0bPLEEMBMPICA\x12\x1b\n\trole_star\x18\x05\x20\x01(\rR\x08roleStar\
-    \x12\x14\n\x05level\x18\t\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x11CPHOIPHAPDJ.proto\"\x7f\n\x0bCPHOIPHAPDJ\x12\x1b\n\trole_star\x18\
+    \x06\x20\x01(\rR\x08roleStar\x12\x20\n\x0bPLEEMBMPICA\x18\t\x20\x01(\rR\
+    \x0bPLEEMBMPICA\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05level\x12\x1b\
+    \n\tavatar_id\x18\r\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

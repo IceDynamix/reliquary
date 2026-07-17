@@ -28,12 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueLayerSettlement {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueLayerSettlement.difficulty)
+    pub difficulty: u32,
     // @@protoc_insertion_point(field:ChessRogueLayerSettlement.MINFCKLKLNJ)
     pub MINFCKLKLNJ: ::protobuf::MessageField<super::OGHPKFMNNHL::OGHPKFMNNHL>,
-    // @@protoc_insertion_point(field:ChessRogueLayerSettlement.difficulty_level)
-    pub difficulty_level: u32,
-    // @@protoc_insertion_point(field:ChessRogueLayerSettlement.MDAIAMFJNHM)
-    pub MDAIAMFJNHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueLayerSettlement.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +49,17 @@ impl ChessRogueLayerSettlement {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "difficulty",
+            |m: &ChessRogueLayerSettlement| { &m.difficulty },
+            |m: &mut ChessRogueLayerSettlement| { &mut m.difficulty },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGHPKFMNNHL::OGHPKFMNNHL>(
             "MINFCKLKLNJ",
             |m: &ChessRogueLayerSettlement| { &m.MINFCKLKLNJ },
             |m: &mut ChessRogueLayerSettlement| { &mut m.MINFCKLKLNJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "difficulty_level",
-            |m: &ChessRogueLayerSettlement| { &m.difficulty_level },
-            |m: &mut ChessRogueLayerSettlement| { &mut m.difficulty_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDAIAMFJNHM",
-            |m: &ChessRogueLayerSettlement| { &m.MDAIAMFJNHM },
-            |m: &mut ChessRogueLayerSettlement| { &mut m.MDAIAMFJNHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueLayerSettlement>(
             "ChessRogueLayerSettlement",
@@ -86,14 +79,11 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                72 => {
+                    self.difficulty = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MINFCKLKLNJ)?;
-                },
-                96 => {
-                    self.difficulty_level = is.read_uint32()?;
-                },
-                16 => {
-                    self.MDAIAMFJNHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +97,12 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.difficulty != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.difficulty);
+        }
         if let Some(v) = self.MINFCKLKLNJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.difficulty_level);
-        }
-        if self.MDAIAMFJNHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MDAIAMFJNHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +110,11 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.difficulty != 0 {
+            os.write_uint32(9, self.difficulty)?;
+        }
         if let Some(v) = self.MINFCKLKLNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.difficulty_level != 0 {
-            os.write_uint32(12, self.difficulty_level)?;
-        }
-        if self.MDAIAMFJNHM != 0 {
-            os.write_uint32(2, self.MDAIAMFJNHM)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +133,15 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
     }
 
     fn clear(&mut self) {
+        self.difficulty = 0;
         self.MINFCKLKLNJ.clear();
-        self.difficulty_level = 0;
-        self.MDAIAMFJNHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueLayerSettlement {
         static instance: ChessRogueLayerSettlement = ChessRogueLayerSettlement {
+            difficulty: 0,
             MINFCKLKLNJ: ::protobuf::MessageField::none(),
-            difficulty_level: 0,
-            MDAIAMFJNHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLayerSettlement {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRogueLayerSettlement.proto\x1a\x11OGHPKFMNNHL.proto\"\x98\x01\
-    \n\x19ChessRogueLayerSettlement\x12.\n\x0bMINFCKLKLNJ\x18\r\x20\x01(\x0b\
-    2\x0c.OGHPKFMNNHLR\x0bMINFCKLKLNJ\x12)\n\x10difficulty_level\x18\x0c\x20\
-    \x01(\rR\x0fdifficultyLevel\x12\x20\n\x0bMDAIAMFJNHM\x18\x02\x20\x01(\rR\
-    \x0bMDAIAMFJNHMb\x06proto3\
+    \n\x1fChessRogueLayerSettlement.proto\x1a\x11OGHPKFMNNHL.proto\"k\n\x19C\
+    hessRogueLayerSettlement\x12\x1e\n\ndifficulty\x18\t\x20\x01(\rR\ndiffic\
+    ulty\x12.\n\x0bMINFCKLKLNJ\x18\x0e\x20\x01(\x0b2\x0c.OGHPKFMNNHLR\x0bMIN\
+    FCKLKLNJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

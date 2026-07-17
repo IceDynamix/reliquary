@@ -103,13 +103,13 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                56 => {
+                48 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.take_days = is.read_uint32()?;
                 },
                 112 => {
@@ -132,13 +132,13 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.panel_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if self.take_days != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.take_days);
+            my_size += ::protobuf::rt::uint32_size(12, self.take_days);
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.id);
@@ -153,13 +153,13 @@ impl ::protobuf::Message for TakeLoginActivityRewardScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(7, self.panel_id)?;
+            os.write_uint32(6, self.panel_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.take_days != 0 {
-            os.write_uint32(11, self.take_days)?;
+            os.write_uint32(12, self.take_days)?;
         }
         if self.id != 0 {
             os.write_uint32(14, self.id)?;
@@ -222,9 +222,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeLoginActivityRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeLoginActivityRewardScRsp.proto\x1a\x0eItemList.proto\"\xa3\x01\n\
     \x1cTakeLoginActivityRewardScRsp\x12!\n\x06reward\x18\x01\x20\x01(\x0b2\
-    \t.ItemListR\x06reward\x12\x19\n\x08panel_id\x18\x07\x20\x01(\rR\x07pane\
-    lId\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x1b\n\ttake_\
-    days\x18\x0b\x20\x01(\rR\x08takeDays\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\
+    \t.ItemListR\x06reward\x12\x19\n\x08panel_id\x18\x06\x20\x01(\rR\x07pane\
+    lId\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x1b\n\ttake_da\
+    ys\x18\x0c\x20\x01(\rR\x08takeDays\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\
     \x02idb\x06proto3\
 ";
 

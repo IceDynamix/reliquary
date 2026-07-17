@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChenLingFesDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetChenLingFesDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetChenLingFesDataScRsp.PNDPCELOGHG)
     pub PNDPCELOGHG: ::std::vec::Vec<super::BGAIEEIKOKK::BGAIEEIKOKK>,
     // @@protoc_insertion_point(field:GetChenLingFesDataScRsp.LAEDNIBCNKF)
     pub LAEDNIBCNKF: ::protobuf::MessageField<super::OFGLEOIIJBD::OFGLEOIIJBD>,
-    // @@protoc_insertion_point(field:GetChenLingFesDataScRsp.DEKCALEHILC)
-    pub DEKCALEHILC: u32,
-    // @@protoc_insertion_point(field:GetChenLingFesDataScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChenLingFesDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,8 +51,13 @@ impl GetChenLingFesDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetChenLingFesDataScRsp| { &m.retcode },
+            |m: &mut GetChenLingFesDataScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PNDPCELOGHG",
             |m: &GetChenLingFesDataScRsp| { &m.PNDPCELOGHG },
@@ -64,16 +67,6 @@ impl GetChenLingFesDataScRsp {
             "LAEDNIBCNKF",
             |m: &GetChenLingFesDataScRsp| { &m.LAEDNIBCNKF },
             |m: &mut GetChenLingFesDataScRsp| { &mut m.LAEDNIBCNKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEKCALEHILC",
-            |m: &GetChenLingFesDataScRsp| { &m.DEKCALEHILC },
-            |m: &mut GetChenLingFesDataScRsp| { &mut m.DEKCALEHILC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetChenLingFesDataScRsp| { &m.retcode },
-            |m: &mut GetChenLingFesDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChenLingFesDataScRsp>(
             "GetChenLingFesDataScRsp",
@@ -93,17 +86,14 @@ impl ::protobuf::Message for GetChenLingFesDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
                     self.PNDPCELOGHG.push(is.read_message()?);
                 },
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LAEDNIBCNKF)?;
-                },
-                104 => {
-                    self.DEKCALEHILC = is.read_uint32()?;
-                },
-                56 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,6 +107,9 @@ impl ::protobuf::Message for GetChenLingFesDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         for value in &self.PNDPCELOGHG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -125,29 +118,20 @@ impl ::protobuf::Message for GetChenLingFesDataScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DEKCALEHILC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DEKCALEHILC);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
         for v in &self.PNDPCELOGHG {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if let Some(v) = self.LAEDNIBCNKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.DEKCALEHILC != 0 {
-            os.write_uint32(13, self.DEKCALEHILC)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +150,17 @@ impl ::protobuf::Message for GetChenLingFesDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.PNDPCELOGHG.clear();
         self.LAEDNIBCNKF.clear();
-        self.DEKCALEHILC = 0;
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChenLingFesDataScRsp {
         static instance: GetChenLingFesDataScRsp = GetChenLingFesDataScRsp {
+            retcode: 0,
             PNDPCELOGHG: ::std::vec::Vec::new(),
             LAEDNIBCNKF: ::protobuf::MessageField::none(),
-            DEKCALEHILC: 0,
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for GetChenLingFesDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetChenLingFesDataScRsp.proto\x1a\x11BGAIEEIKOKK.proto\x1a\x11OFGL\
-    EOIIJBD.proto\"\xb5\x01\n\x17GetChenLingFesDataScRsp\x12.\n\x0bPNDPCELOG\
-    HG\x18\x03\x20\x03(\x0b2\x0c.BGAIEEIKOKKR\x0bPNDPCELOGHG\x12.\n\x0bLAEDN\
-    IBCNKF\x18\n\x20\x01(\x0b2\x0c.OFGLEOIIJBDR\x0bLAEDNIBCNKF\x12\x20\n\x0b\
-    DEKCALEHILC\x18\r\x20\x01(\rR\x0bDEKCALEHILC\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    EOIIJBD.proto\"\x93\x01\n\x17GetChenLingFesDataScRsp\x12\x18\n\x07retcod\
+    e\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bPNDPCELOGHG\x18\r\x20\x03(\
+    \x0b2\x0c.BGAIEEIKOKKR\x0bPNDPCELOGHG\x12.\n\x0bLAEDNIBCNKF\x18\x0f\x20\
+    \x01(\x0b2\x0c.OFGLEOIIJBDR\x0bLAEDNIBCNKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

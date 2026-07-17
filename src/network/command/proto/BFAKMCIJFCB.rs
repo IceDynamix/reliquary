@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFAKMCIJFCB {
     // message fields
-    // @@protoc_insertion_point(field:BFAKMCIJFCB.PNHLAAMNGFE)
-    pub PNHLAAMNGFE: ::std::vec::Vec<super::HJACHMJFEAH::HJACHMJFEAH>,
     // @@protoc_insertion_point(field:BFAKMCIJFCB.PKMHMGAEAGO)
     pub PKMHMGAEAGO: ::std::vec::Vec<super::IIONNFELFEF::IIONNFELFEF>,
+    // @@protoc_insertion_point(field:BFAKMCIJFCB.PNHLAAMNGFE)
+    pub PNHLAAMNGFE: ::std::vec::Vec<super::HJACHMJFEAH::HJACHMJFEAH>,
     // @@protoc_insertion_point(field:BFAKMCIJFCB.GLOGEMFDMJG)
     pub GLOGEMFDMJG: ::protobuf::EnumOrUnknown<super::BOMHOLBACKF::BOMHOLBACKF>,
     // special fields
@@ -54,14 +54,14 @@ impl BFAKMCIJFCB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNHLAAMNGFE",
-            |m: &BFAKMCIJFCB| { &m.PNHLAAMNGFE },
-            |m: &mut BFAKMCIJFCB| { &mut m.PNHLAAMNGFE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PKMHMGAEAGO",
             |m: &BFAKMCIJFCB| { &m.PKMHMGAEAGO },
             |m: &mut BFAKMCIJFCB| { &mut m.PKMHMGAEAGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PNHLAAMNGFE",
+            |m: &BFAKMCIJFCB| { &m.PNHLAAMNGFE },
+            |m: &mut BFAKMCIJFCB| { &mut m.PNHLAAMNGFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GLOGEMFDMJG",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for BFAKMCIJFCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.PNHLAAMNGFE.push(is.read_message()?);
-                },
                 10 => {
                     self.PKMHMGAEAGO.push(is.read_message()?);
+                },
+                18 => {
+                    self.PNHLAAMNGFE.push(is.read_message()?);
                 },
                 24 => {
                     self.GLOGEMFDMJG = is.read_enum_or_unknown()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for BFAKMCIJFCB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PNHLAAMNGFE {
+        for value in &self.PKMHMGAEAGO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PKMHMGAEAGO {
+        for value in &self.PNHLAAMNGFE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,11 +124,11 @@ impl ::protobuf::Message for BFAKMCIJFCB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PNHLAAMNGFE {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         for v in &self.PKMHMGAEAGO {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        for v in &self.PNHLAAMNGFE {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.GLOGEMFDMJG != ::protobuf::EnumOrUnknown::new(super::BOMHOLBACKF::BOMHOLBACKF::BOMHOLBACKF_HGLIFJGHADE) {
             os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.GLOGEMFDMJG))?;
@@ -150,16 +150,16 @@ impl ::protobuf::Message for BFAKMCIJFCB {
     }
 
     fn clear(&mut self) {
-        self.PNHLAAMNGFE.clear();
         self.PKMHMGAEAGO.clear();
+        self.PNHLAAMNGFE.clear();
         self.GLOGEMFDMJG = ::protobuf::EnumOrUnknown::new(super::BOMHOLBACKF::BOMHOLBACKF::BOMHOLBACKF_HGLIFJGHADE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFAKMCIJFCB {
         static instance: BFAKMCIJFCB = BFAKMCIJFCB {
-            PNHLAAMNGFE: ::std::vec::Vec::new(),
             PKMHMGAEAGO: ::std::vec::Vec::new(),
+            PNHLAAMNGFE: ::std::vec::Vec::new(),
             GLOGEMFDMJG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for BFAKMCIJFCB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFAKMCIJFCB.proto\x1a\x11BOMHOLBACKF.proto\x1a\x11HJACHMJFEAH.prot\
-    o\x1a\x11IIONNFELFEF.proto\"\x9d\x01\n\x0bBFAKMCIJFCB\x12.\n\x0bPNHLAAMN\
-    GFE\x18\x02\x20\x03(\x0b2\x0c.HJACHMJFEAHR\x0bPNHLAAMNGFE\x12.\n\x0bPKMH\
-    MGAEAGO\x18\x01\x20\x03(\x0b2\x0c.IIONNFELFEFR\x0bPKMHMGAEAGO\x12.\n\x0b\
+    o\x1a\x11IIONNFELFEF.proto\"\x9d\x01\n\x0bBFAKMCIJFCB\x12.\n\x0bPKMHMGAE\
+    AGO\x18\x01\x20\x03(\x0b2\x0c.IIONNFELFEFR\x0bPKMHMGAEAGO\x12.\n\x0bPNHL\
+    AAMNGFE\x18\x02\x20\x03(\x0b2\x0c.HJACHMJFEAHR\x0bPNHLAAMNGFE\x12.\n\x0b\
     GLOGEMFDMJG\x18\x03\x20\x01(\x0e2\x0c.BOMHOLBACKFR\x0bGLOGEMFDMJGb\x06pr\
     oto3\
 ";

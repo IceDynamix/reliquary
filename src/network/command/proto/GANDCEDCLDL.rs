@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GANDCEDCLDL {
     // message fields
-    // @@protoc_insertion_point(field:GANDCEDCLDL.FHPMEIECKLG)
-    pub FHPMEIECKLG: u32,
     // @@protoc_insertion_point(field:GANDCEDCLDL.KAAHKLDJPJE)
     pub KAAHKLDJPJE: u32,
+    // @@protoc_insertion_point(field:GANDCEDCLDL.FHPMEIECKLG)
+    pub FHPMEIECKLG: u32,
     // @@protoc_insertion_point(field:GANDCEDCLDL.entity_id)
     pub entity_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GANDCEDCLDL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHPMEIECKLG",
-            |m: &GANDCEDCLDL| { &m.FHPMEIECKLG },
-            |m: &mut GANDCEDCLDL| { &mut m.FHPMEIECKLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KAAHKLDJPJE",
             |m: &GANDCEDCLDL| { &m.KAAHKLDJPJE },
             |m: &mut GANDCEDCLDL| { &mut m.KAAHKLDJPJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FHPMEIECKLG",
+            |m: &GANDCEDCLDL| { &m.FHPMEIECKLG },
+            |m: &mut GANDCEDCLDL| { &mut m.FHPMEIECKLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for GANDCEDCLDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FHPMEIECKLG = is.read_uint32()?;
-                },
                 8 => {
                     self.KAAHKLDJPJE = is.read_uint32()?;
+                },
+                16 => {
+                    self.FHPMEIECKLG = is.read_uint32()?;
                 },
                 24 => {
                     self.entity_id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GANDCEDCLDL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FHPMEIECKLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FHPMEIECKLG);
-        }
         if self.KAAHKLDJPJE != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.KAAHKLDJPJE);
+        }
+        if self.FHPMEIECKLG != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FHPMEIECKLG);
         }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.entity_id);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for GANDCEDCLDL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FHPMEIECKLG != 0 {
-            os.write_uint32(2, self.FHPMEIECKLG)?;
-        }
         if self.KAAHKLDJPJE != 0 {
             os.write_uint32(1, self.KAAHKLDJPJE)?;
+        }
+        if self.FHPMEIECKLG != 0 {
+            os.write_uint32(2, self.FHPMEIECKLG)?;
         }
         if self.entity_id != 0 {
             os.write_uint32(3, self.entity_id)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GANDCEDCLDL {
     }
 
     fn clear(&mut self) {
-        self.FHPMEIECKLG = 0;
         self.KAAHKLDJPJE = 0;
+        self.FHPMEIECKLG = 0;
         self.entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GANDCEDCLDL {
         static instance: GANDCEDCLDL = GANDCEDCLDL {
-            FHPMEIECKLG: 0,
             KAAHKLDJPJE: 0,
+            FHPMEIECKLG: 0,
             entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GANDCEDCLDL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GANDCEDCLDL.proto\"n\n\x0bGANDCEDCLDL\x12\x20\n\x0bFHPMEIECKLG\x18\
-    \x02\x20\x01(\rR\x0bFHPMEIECKLG\x12\x20\n\x0bKAAHKLDJPJE\x18\x01\x20\x01\
-    (\rR\x0bKAAHKLDJPJE\x12\x1b\n\tentity_id\x18\x03\x20\x01(\rR\x08entityId\
+    \n\x11GANDCEDCLDL.proto\"n\n\x0bGANDCEDCLDL\x12\x20\n\x0bKAAHKLDJPJE\x18\
+    \x01\x20\x01(\rR\x0bKAAHKLDJPJE\x12\x20\n\x0bFHPMEIECKLG\x18\x02\x20\x01\
+    (\rR\x0bFHPMEIECKLG\x12\x1b\n\tentity_id\x18\x03\x20\x01(\rR\x08entityId\
     b\x06proto3\
 ";
 

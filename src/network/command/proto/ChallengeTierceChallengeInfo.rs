@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeTierceChallengeInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.IIHFEDLHOPI)
-    pub IIHFEDLHOPI: ::protobuf::MessageField<super::PEOKJEOOOJD::PEOKJEOOOJD>,
-    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.stage_index)
-    pub stage_index: u32,
     // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.is_single_stage)
     pub is_single_stage: bool,
+    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.stage_index)
+    pub stage_index: u32,
+    // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.IIHFEDLHOPI)
+    pub IIHFEDLHOPI: ::protobuf::MessageField<super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle>,
     // @@protoc_insertion_point(field:ChallengeTierceChallengeInfo.challenge_id)
     pub challenge_id: u32,
     // special fields
@@ -57,25 +57,25 @@ impl ChallengeTierceChallengeInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_single_stage",
+            |m: &ChallengeTierceChallengeInfo| { &m.is_single_stage },
+            |m: &mut ChallengeTierceChallengeInfo| { &mut m.is_single_stage },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
             |m: &ChallengeTierceChallengeInfo| { &m.lineup_list },
             |m: &mut ChallengeTierceChallengeInfo| { &mut m.lineup_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PEOKJEOOOJD::PEOKJEOOOJD>(
-            "IIHFEDLHOPI",
-            |m: &ChallengeTierceChallengeInfo| { &m.IIHFEDLHOPI },
-            |m: &mut ChallengeTierceChallengeInfo| { &mut m.IIHFEDLHOPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_index",
             |m: &ChallengeTierceChallengeInfo| { &m.stage_index },
             |m: &mut ChallengeTierceChallengeInfo| { &mut m.stage_index },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_single_stage",
-            |m: &ChallengeTierceChallengeInfo| { &m.is_single_stage },
-            |m: &mut ChallengeTierceChallengeInfo| { &mut m.is_single_stage },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeTiercePendingStageSettle::ChallengeTiercePendingStageSettle>(
+            "IIHFEDLHOPI",
+            |m: &ChallengeTierceChallengeInfo| { &m.IIHFEDLHOPI },
+            |m: &mut ChallengeTierceChallengeInfo| { &mut m.IIHFEDLHOPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for ChallengeTierceChallengeInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.lineup_list.push(is.read_message()?);
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIHFEDLHOPI)?;
-                },
-                64 => {
-                    self.stage_index = is.read_uint32()?;
-                },
-                56 => {
+                8 => {
                     self.is_single_stage = is.read_bool()?;
                 },
-                24 => {
+                58 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                96 => {
+                    self.stage_index = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIHFEDLHOPI)?;
+                },
+                120 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -127,22 +127,22 @@ impl ::protobuf::Message for ChallengeTierceChallengeInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_single_stage != false {
+            my_size += 1 + 1;
+        }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.stage_index);
+        }
         if let Some(v) = self.IIHFEDLHOPI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.stage_index);
-        }
-        if self.is_single_stage != false {
-            my_size += 1 + 1;
-        }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for ChallengeTierceChallengeInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if let Some(v) = self.IIHFEDLHOPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if self.stage_index != 0 {
-            os.write_uint32(8, self.stage_index)?;
-        }
         if self.is_single_stage != false {
-            os.write_bool(7, self.is_single_stage)?;
+            os.write_bool(1, self.is_single_stage)?;
+        }
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        if self.stage_index != 0 {
+            os.write_uint32(12, self.stage_index)?;
+        }
+        if let Some(v) = self.IIHFEDLHOPI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(3, self.challenge_id)?;
+            os.write_uint32(15, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for ChallengeTierceChallengeInfo {
     }
 
     fn clear(&mut self) {
-        self.lineup_list.clear();
-        self.IIHFEDLHOPI.clear();
-        self.stage_index = 0;
         self.is_single_stage = false;
+        self.lineup_list.clear();
+        self.stage_index = 0;
+        self.IIHFEDLHOPI.clear();
         self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeTierceChallengeInfo {
         static instance: ChallengeTierceChallengeInfo = ChallengeTierceChallengeInfo {
-            lineup_list: ::std::vec::Vec::new(),
-            IIHFEDLHOPI: ::protobuf::MessageField::none(),
-            stage_index: 0,
             is_single_stage: false,
+            lineup_list: ::std::vec::Vec::new(),
+            stage_index: 0,
+            IIHFEDLHOPI: ::protobuf::MessageField::none(),
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,13 +221,14 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeTierceChallengeInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"ChallengeTierceChallengeInfo.proto\x1a\x10LineupInfo.proto\x1a\x11PE\
-    OKJEOOOJD.proto\"\xe8\x01\n\x1cChallengeTierceChallengeInfo\x12,\n\x0bli\
-    neup_list\x18\x04\x20\x03(\x0b2\x0b.LineupInfoR\nlineupList\x12.\n\x0bII\
-    HFEDLHOPI\x18\x02\x20\x01(\x0b2\x0c.PEOKJEOOOJDR\x0bIIHFEDLHOPI\x12\x1f\
-    \n\x0bstage_index\x18\x08\x20\x01(\rR\nstageIndex\x12&\n\x0fis_single_st\
-    age\x18\x07\x20\x01(\x08R\risSingleStage\x12!\n\x0cchallenge_id\x18\x03\
-    \x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    \n\"ChallengeTierceChallengeInfo.proto\x1a'ChallengeTiercePendingStageSe\
+    ttle.proto\x1a\x10LineupInfo.proto\"\xfe\x01\n\x1cChallengeTierceChallen\
+    geInfo\x12&\n\x0fis_single_stage\x18\x01\x20\x01(\x08R\risSingleStage\
+    \x12,\n\x0blineup_list\x18\x07\x20\x03(\x0b2\x0b.LineupInfoR\nlineupList\
+    \x12\x1f\n\x0bstage_index\x18\x0c\x20\x01(\rR\nstageIndex\x12D\n\x0bIIHF\
+    EDLHOPI\x18\r\x20\x01(\x0b2\".ChallengeTiercePendingStageSettleR\x0bIIHF\
+    EDLHOPI\x12!\n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bchallengeIdb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,8 +246,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::ChallengeTiercePendingStageSettle::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::PEOKJEOOOJD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeTierceChallengeInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

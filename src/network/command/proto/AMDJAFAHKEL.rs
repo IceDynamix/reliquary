@@ -30,12 +30,12 @@ pub struct AMDJAFAHKEL {
     // message fields
     // @@protoc_insertion_point(field:AMDJAFAHKEL.GOOAMHHLHPJ)
     pub GOOAMHHLHPJ: ::protobuf::MessageField<super::KIAKKNFLEPN::KIAKKNFLEPN>,
-    // @@protoc_insertion_point(field:AMDJAFAHKEL.CDMKBCHLPAB)
-    pub CDMKBCHLPAB: ::std::vec::Vec<super::BJMPHAAOEFL::BJMPHAAOEFL>,
     // @@protoc_insertion_point(field:AMDJAFAHKEL.GAHFPGCPAJA)
     pub GAHFPGCPAJA: u32,
     // @@protoc_insertion_point(field:AMDJAFAHKEL.unique_id)
     pub unique_id: i32,
+    // @@protoc_insertion_point(field:AMDJAFAHKEL.CDMKBCHLPAB)
+    pub CDMKBCHLPAB: ::std::vec::Vec<super::BJMPHAAOEFL::BJMPHAAOEFL>,
     // special fields
     // @@protoc_insertion_point(special_field:AMDJAFAHKEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl AMDJAFAHKEL {
             |m: &AMDJAFAHKEL| { &m.GOOAMHHLHPJ },
             |m: &mut AMDJAFAHKEL| { &mut m.GOOAMHHLHPJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CDMKBCHLPAB",
-            |m: &AMDJAFAHKEL| { &m.CDMKBCHLPAB },
-            |m: &mut AMDJAFAHKEL| { &mut m.CDMKBCHLPAB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GAHFPGCPAJA",
             |m: &AMDJAFAHKEL| { &m.GAHFPGCPAJA },
@@ -74,6 +69,11 @@ impl AMDJAFAHKEL {
             "unique_id",
             |m: &AMDJAFAHKEL| { &m.unique_id },
             |m: &mut AMDJAFAHKEL| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CDMKBCHLPAB",
+            |m: &AMDJAFAHKEL| { &m.CDMKBCHLPAB },
+            |m: &mut AMDJAFAHKEL| { &mut m.CDMKBCHLPAB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMDJAFAHKEL>(
             "AMDJAFAHKEL",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AMDJAFAHKEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOAMHHLHPJ)?;
                 },
-                10 => {
-                    self.CDMKBCHLPAB.push(is.read_message()?);
-                },
-                96 => {
+                40 => {
                     self.GAHFPGCPAJA = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.unique_id = is.read_int32()?;
+                },
+                122 => {
+                    self.CDMKBCHLPAB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,16 +121,16 @@ impl ::protobuf::Message for AMDJAFAHKEL {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.GAHFPGCPAJA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GAHFPGCPAJA);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.unique_id);
+        }
         for value in &self.CDMKBCHLPAB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GAHFPGCPAJA);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.unique_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,17 +138,17 @@ impl ::protobuf::Message for AMDJAFAHKEL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GOOAMHHLHPJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        for v in &self.CDMKBCHLPAB {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint32(12, self.GAHFPGCPAJA)?;
+            os.write_uint32(5, self.GAHFPGCPAJA)?;
         }
         if self.unique_id != 0 {
-            os.write_int32(2, self.unique_id)?;
+            os.write_int32(12, self.unique_id)?;
         }
+        for v in &self.CDMKBCHLPAB {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,18 +167,18 @@ impl ::protobuf::Message for AMDJAFAHKEL {
 
     fn clear(&mut self) {
         self.GOOAMHHLHPJ.clear();
-        self.CDMKBCHLPAB.clear();
         self.GAHFPGCPAJA = 0;
         self.unique_id = 0;
+        self.CDMKBCHLPAB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMDJAFAHKEL {
         static instance: AMDJAFAHKEL = AMDJAFAHKEL {
             GOOAMHHLHPJ: ::protobuf::MessageField::none(),
-            CDMKBCHLPAB: ::std::vec::Vec::new(),
             GAHFPGCPAJA: 0,
             unique_id: 0,
+            CDMKBCHLPAB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for AMDJAFAHKEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AMDJAFAHKEL.proto\x1a\x11BJMPHAAOEFL.proto\x1a\x11KIAKKNFLEPN.prot\
-    o\"\xac\x01\n\x0bAMDJAFAHKEL\x12.\n\x0bGOOAMHHLHPJ\x18\x08\x20\x01(\x0b2\
-    \x0c.KIAKKNFLEPNR\x0bGOOAMHHLHPJ\x12.\n\x0bCDMKBCHLPAB\x18\x01\x20\x03(\
-    \x0b2\x0c.BJMPHAAOEFLR\x0bCDMKBCHLPAB\x12\x20\n\x0bGAHFPGCPAJA\x18\x0c\
-    \x20\x01(\rR\x0bGAHFPGCPAJA\x12\x1b\n\tunique_id\x18\x02\x20\x01(\x05R\
-    \x08uniqueIdb\x06proto3\
+    o\"\xac\x01\n\x0bAMDJAFAHKEL\x12.\n\x0bGOOAMHHLHPJ\x18\x02\x20\x01(\x0b2\
+    \x0c.KIAKKNFLEPNR\x0bGOOAMHHLHPJ\x12\x20\n\x0bGAHFPGCPAJA\x18\x05\x20\
+    \x01(\rR\x0bGAHFPGCPAJA\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\x05R\x08un\
+    iqueId\x12.\n\x0bCDMKBCHLPAB\x18\x0f\x20\x03(\x0b2\x0c.BJMPHAAOEFLR\x0bC\
+    DMKBCHLPABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

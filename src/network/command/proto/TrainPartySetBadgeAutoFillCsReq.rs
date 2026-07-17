@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.PELJACANAFH = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PELJACANAFH != false {
-            os.write_bool(13, self.PELJACANAFH)?;
+            os.write_bool(6, self.PELJACANAFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySetBadgeAutoFillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrainPartySetBadgeAutoFillCsReq.proto\"C\n\x1fTrainPartySetBadgeAutoF\
-    illCsReq\x12\x20\n\x0bPELJACANAFH\x18\r\x20\x01(\x08R\x0bPELJACANAFHb\
+    illCsReq\x12\x20\n\x0bPELJACANAFH\x18\x06\x20\x01(\x08R\x0bPELJACANAFHb\
     \x06proto3\
 ";
 

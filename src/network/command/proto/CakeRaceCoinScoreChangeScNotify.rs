@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceCoinScoreChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.item_value)
-    pub item_value: u32,
     // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.item_value)
+    pub item_value: u32,
     // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.JNBEGEOPGFJ)
     pub JNBEGEOPGFJ: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CakeRaceCoinScoreChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_value",
-            |m: &CakeRaceCoinScoreChangeScNotify| { &m.item_value },
-            |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.item_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &CakeRaceCoinScoreChangeScNotify| { &m.score_id },
             |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_value",
+            |m: &CakeRaceCoinScoreChangeScNotify| { &m.item_value },
+            |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.item_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNBEGEOPGFJ",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.item_value = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.score_id = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
+                    self.item_value = is.read_uint32()?;
+                },
+                112 => {
                     self.JNBEGEOPGFJ = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_value);
-        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.score_id);
+        }
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.item_value);
         }
         if self.JNBEGEOPGFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JNBEGEOPGFJ);
+            my_size += ::protobuf::rt::uint32_size(14, self.JNBEGEOPGFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_value != 0 {
-            os.write_uint32(12, self.item_value)?;
-        }
         if self.score_id != 0 {
-            os.write_uint32(11, self.score_id)?;
+            os.write_uint32(1, self.score_id)?;
+        }
+        if self.item_value != 0 {
+            os.write_uint32(9, self.item_value)?;
         }
         if self.JNBEGEOPGFJ != 0 {
-            os.write_uint32(15, self.JNBEGEOPGFJ)?;
+            os.write_uint32(14, self.JNBEGEOPGFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.item_value = 0;
         self.score_id = 0;
+        self.item_value = 0;
         self.JNBEGEOPGFJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceCoinScoreChangeScNotify {
         static instance: CakeRaceCoinScoreChangeScNotify = CakeRaceCoinScoreChangeScNotify {
-            item_value: 0,
             score_id: 0,
+            item_value: 0,
             JNBEGEOPGFJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceCoinScoreChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%CakeRaceCoinScoreChangeScNotify.proto\"}\n\x1fCakeRaceCoinScoreChange\
-    ScNotify\x12\x1d\n\nitem_value\x18\x0c\x20\x01(\rR\titemValue\x12\x19\n\
-    \x08score_id\x18\x0b\x20\x01(\rR\x07scoreId\x12\x20\n\x0bJNBEGEOPGFJ\x18\
-    \x0f\x20\x01(\rR\x0bJNBEGEOPGFJb\x06proto3\
+    ScNotify\x12\x19\n\x08score_id\x18\x01\x20\x01(\rR\x07scoreId\x12\x1d\n\
+    \nitem_value\x18\t\x20\x01(\rR\titemValue\x12\x20\n\x0bJNBEGEOPGFJ\x18\
+    \x0e\x20\x01(\rR\x0bJNBEGEOPGFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

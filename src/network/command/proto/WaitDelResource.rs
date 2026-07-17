@@ -79,10 +79,10 @@ impl ::protobuf::Message for WaitDelResource {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.num = is.read_uint32()?;
                 },
-                80 => {
+                112 => {
                     self.tid = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for WaitDelResource {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.num);
+            my_size += ::protobuf::rt::uint32_size(3, self.num);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.tid);
+            my_size += ::protobuf::rt::uint32_size(14, self.tid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for WaitDelResource {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(8, self.num)?;
+            os.write_uint32(3, self.num)?;
         }
         if self.tid != 0 {
-            os.write_uint32(10, self.tid)?;
+            os.write_uint32(14, self.tid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for WaitDelResource {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15WaitDelResource.proto\"5\n\x0fWaitDelResource\x12\x10\n\x03num\x18\
-    \x08\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\n\x20\x01(\rR\x03tidb\x06pr\
-    oto3\
+    \x03\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\x0e\x20\x01(\rR\x03tidb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

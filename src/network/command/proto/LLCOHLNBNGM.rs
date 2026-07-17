@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LLCOHLNBNGM {
     // message fields
+    // @@protoc_insertion_point(field:LLCOHLNBNGM.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:LLCOHLNBNGM.BKNKFNHIPAK)
     pub BKNKFNHIPAK: ::protobuf::MessageField<super::FHNAEJBKINH::FHNAEJBKINH>,
-    // @@protoc_insertion_point(field:LLCOHLNBNGM.FDEAKDCDGML)
-    pub FDEAKDCDGML: u32,
     // @@protoc_insertion_point(field:LLCOHLNBNGM.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:LLCOHLNBNGM.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:LLCOHLNBNGM.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:LLCOHLNBNGM.FDEAKDCDGML)
+    pub FDEAKDCDGML: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LLCOHLNBNGM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,15 @@ impl LLCOHLNBNGM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &LLCOHLNBNGM| { &m.panel_id },
+            |m: &mut LLCOHLNBNGM| { &mut m.panel_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHNAEJBKINH::FHNAEJBKINH>(
             "BKNKFNHIPAK",
             |m: &LLCOHLNBNGM| { &m.BKNKFNHIPAK },
             |m: &mut LLCOHLNBNGM| { &mut m.BKNKFNHIPAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDEAKDCDGML",
-            |m: &LLCOHLNBNGM| { &m.FDEAKDCDGML },
-            |m: &mut LLCOHLNBNGM| { &mut m.FDEAKDCDGML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -78,9 +78,9 @@ impl LLCOHLNBNGM {
             |m: &mut LLCOHLNBNGM| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &LLCOHLNBNGM| { &m.panel_id },
-            |m: &mut LLCOHLNBNGM| { &mut m.panel_id },
+            "FDEAKDCDGML",
+            |m: &LLCOHLNBNGM| { &m.FDEAKDCDGML },
+            |m: &mut LLCOHLNBNGM| { &mut m.FDEAKDCDGML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LLCOHLNBNGM>(
             "LLCOHLNBNGM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for LLCOHLNBNGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                8 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BKNKFNHIPAK)?;
                 },
-                16 => {
-                    self.FDEAKDCDGML = is.read_uint32()?;
-                },
-                80 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
-                    self.panel_id = is.read_uint32()?;
+                112 => {
+                    self.FDEAKDCDGML = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for LLCOHLNBNGM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
+        }
         if let Some(v) = self.BKNKFNHIPAK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FDEAKDCDGML != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FDEAKDCDGML);
-        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
+        if self.FDEAKDCDGML != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FDEAKDCDGML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for LLCOHLNBNGM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BKNKFNHIPAK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.panel_id != 0 {
+            os.write_uint32(1, self.panel_id)?;
         }
-        if self.FDEAKDCDGML != 0 {
-            os.write_uint32(2, self.FDEAKDCDGML)?;
+        if let Some(v) = self.BKNKFNHIPAK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(12, self.panel_id)?;
+        if self.FDEAKDCDGML != 0 {
+            os.write_uint32(14, self.FDEAKDCDGML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for LLCOHLNBNGM {
     }
 
     fn clear(&mut self) {
+        self.panel_id = 0;
         self.BKNKFNHIPAK.clear();
-        self.FDEAKDCDGML = 0;
         self.group_id = 0;
         self.retcode = 0;
-        self.panel_id = 0;
+        self.FDEAKDCDGML = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LLCOHLNBNGM {
         static instance: LLCOHLNBNGM = LLCOHLNBNGM {
+            panel_id: 0,
             BKNKFNHIPAK: ::protobuf::MessageField::none(),
-            FDEAKDCDGML: 0,
             group_id: 0,
             retcode: 0,
-            panel_id: 0,
+            FDEAKDCDGML: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for LLCOHLNBNGM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LLCOHLNBNGM.proto\x1a\x11FHNAEJBKINH.proto\"\xaf\x01\n\x0bLLCOHLNB\
-    NGM\x12.\n\x0bBKNKFNHIPAK\x18\x0b\x20\x01(\x0b2\x0c.FHNAEJBKINHR\x0bBKNK\
-    FNHIPAK\x12\x20\n\x0bFDEAKDCDGML\x18\x02\x20\x01(\rR\x0bFDEAKDCDGML\x12\
-    \x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\
-    \x01\x20\x01(\rR\x07retcode\x12\x19\n\x08panel_id\x18\x0c\x20\x01(\rR\
-    \x07panelIdb\x06proto3\
+    NGM\x12\x19\n\x08panel_id\x18\x01\x20\x01(\rR\x07panelId\x12.\n\x0bBKNKF\
+    NHIPAK\x18\x02\x20\x01(\x0b2\x0c.FHNAEJBKINHR\x0bBKNKFNHIPAK\x12\x19\n\
+    \x08group_id\x18\x04\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x08\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bFDEAKDCDGML\x18\x0e\x20\x01(\rR\x0b\
+    FDEAKDCDGMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

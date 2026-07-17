@@ -32,8 +32,6 @@ pub struct IDBCDHIOKEG {
     pub status: ::protobuf::EnumOrUnknown<super::JIIEHEBIBMO::JIIEHEBIBMO>,
     // @@protoc_insertion_point(field:IDBCDHIOKEG.DNLIGEOFPEL)
     pub DNLIGEOFPEL: u32,
-    // @@protoc_insertion_point(field:IDBCDHIOKEG.JLCAIKEFAPN)
-    pub JLCAIKEFAPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IDBCDHIOKEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +49,7 @@ impl IDBCDHIOKEG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -62,11 +60,6 @@ impl IDBCDHIOKEG {
             "DNLIGEOFPEL",
             |m: &IDBCDHIOKEG| { &m.DNLIGEOFPEL },
             |m: &mut IDBCDHIOKEG| { &mut m.DNLIGEOFPEL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLCAIKEFAPN",
-            |m: &IDBCDHIOKEG| { &m.JLCAIKEFAPN },
-            |m: &mut IDBCDHIOKEG| { &mut m.JLCAIKEFAPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IDBCDHIOKEG>(
             "IDBCDHIOKEG",
@@ -86,14 +79,11 @@ impl ::protobuf::Message for IDBCDHIOKEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                88 => {
                     self.DNLIGEOFPEL = is.read_uint32()?;
-                },
-                80 => {
-                    self.JLCAIKEFAPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +98,10 @@ impl ::protobuf::Message for IDBCDHIOKEG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::JIIEHEBIBMO::JIIEHEBIBMO::JIIEHEBIBMO_CIJCGPBOFJP) {
-            my_size += ::protobuf::rt::int32_size(8, self.status.value());
+            my_size += ::protobuf::rt::int32_size(9, self.status.value());
         }
         if self.DNLIGEOFPEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DNLIGEOFPEL);
-        }
-        if self.JLCAIKEFAPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JLCAIKEFAPN);
+            my_size += ::protobuf::rt::uint32_size(11, self.DNLIGEOFPEL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +110,10 @@ impl ::protobuf::Message for IDBCDHIOKEG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::JIIEHEBIBMO::JIIEHEBIBMO::JIIEHEBIBMO_CIJCGPBOFJP) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.DNLIGEOFPEL != 0 {
-            os.write_uint32(9, self.DNLIGEOFPEL)?;
-        }
-        if self.JLCAIKEFAPN != 0 {
-            os.write_uint32(10, self.JLCAIKEFAPN)?;
+            os.write_uint32(11, self.DNLIGEOFPEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +134,6 @@ impl ::protobuf::Message for IDBCDHIOKEG {
     fn clear(&mut self) {
         self.status = ::protobuf::EnumOrUnknown::new(super::JIIEHEBIBMO::JIIEHEBIBMO::JIIEHEBIBMO_CIJCGPBOFJP);
         self.DNLIGEOFPEL = 0;
-        self.JLCAIKEFAPN = 0;
         self.special_fields.clear();
     }
 
@@ -158,7 +141,6 @@ impl ::protobuf::Message for IDBCDHIOKEG {
         static instance: IDBCDHIOKEG = IDBCDHIOKEG {
             status: ::protobuf::EnumOrUnknown::from_i32(0),
             DNLIGEOFPEL: 0,
-            JLCAIKEFAPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IDBCDHIOKEG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IDBCDHIOKEG.proto\x1a\x11JIIEHEBIBMO.proto\"w\n\x0bIDBCDHIOKEG\x12\
-    $\n\x06status\x18\x08\x20\x01(\x0e2\x0c.JIIEHEBIBMOR\x06status\x12\x20\n\
-    \x0bDNLIGEOFPEL\x18\t\x20\x01(\rR\x0bDNLIGEOFPEL\x12\x20\n\x0bJLCAIKEFAP\
-    N\x18\n\x20\x01(\rR\x0bJLCAIKEFAPNb\x06proto3\
+    \n\x11IDBCDHIOKEG.proto\x1a\x11JIIEHEBIBMO.proto\"U\n\x0bIDBCDHIOKEG\x12\
+    $\n\x06status\x18\t\x20\x01(\x0e2\x0c.JIIEHEBIBMOR\x06status\x12\x20\n\
+    \x0bDNLIGEOFPEL\x18\x0b\x20\x01(\rR\x0bDNLIGEOFPELb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

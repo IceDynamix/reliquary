@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GGIHCKPGACF {
     // message fields
-    // @@protoc_insertion_point(field:GGIHCKPGACF.EHMGEMMNPLA)
-    pub EHMGEMMNPLA: ::std::vec::Vec<::std::string::String>,
-    // @@protoc_insertion_point(field:GGIHCKPGACF.HBBIHGLHKDM)
-    pub HBBIHGLHKDM: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:GGIHCKPGACF.PKLFOJBALKK)
     pub PKLFOJBALKK: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GGIHCKPGACF.HBBIHGLHKDM)
+    pub HBBIHGLHKDM: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GGIHCKPGACF.EHMGEMMNPLA)
+    pub EHMGEMMNPLA: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:GGIHCKPGACF.retcode)
     pub retcode: u32,
     // special fields
@@ -56,9 +56,9 @@ impl GGIHCKPGACF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EHMGEMMNPLA",
-            |m: &GGIHCKPGACF| { &m.EHMGEMMNPLA },
-            |m: &mut GGIHCKPGACF| { &mut m.EHMGEMMNPLA },
+            "PKLFOJBALKK",
+            |m: &GGIHCKPGACF| { &m.PKLFOJBALKK },
+            |m: &mut GGIHCKPGACF| { &mut m.PKLFOJBALKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HBBIHGLHKDM",
@@ -66,9 +66,9 @@ impl GGIHCKPGACF {
             |m: &mut GGIHCKPGACF| { &mut m.HBBIHGLHKDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PKLFOJBALKK",
-            |m: &GGIHCKPGACF| { &m.PKLFOJBALKK },
-            |m: &mut GGIHCKPGACF| { &mut m.PKLFOJBALKK },
+            "EHMGEMMNPLA",
+            |m: &GGIHCKPGACF| { &m.EHMGEMMNPLA },
+            |m: &mut GGIHCKPGACF| { &mut m.EHMGEMMNPLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GGIHCKPGACF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                34 => {
+                    self.PKLFOJBALKK.push(is.read_string()?);
+                },
+                50 => {
+                    self.HBBIHGLHKDM.push(is.read_string()?);
+                },
                 66 => {
                     self.EHMGEMMNPLA.push(is.read_string()?);
                 },
-                122 => {
-                    self.HBBIHGLHKDM.push(is.read_string()?);
-                },
-                10 => {
-                    self.PKLFOJBALKK.push(is.read_string()?);
-                },
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GGIHCKPGACF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.PKLFOJBALKK {
+            my_size += ::protobuf::rt::string_size(4, &value);
+        };
+        for value in &self.HBBIHGLHKDM {
+            my_size += ::protobuf::rt::string_size(6, &value);
+        };
         for value in &self.EHMGEMMNPLA {
             my_size += ::protobuf::rt::string_size(8, &value);
         };
-        for value in &self.HBBIHGLHKDM {
-            my_size += ::protobuf::rt::string_size(15, &value);
-        };
-        for value in &self.PKLFOJBALKK {
-            my_size += ::protobuf::rt::string_size(1, &value);
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GGIHCKPGACF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.PKLFOJBALKK {
+            os.write_string(4, &v)?;
+        };
+        for v in &self.HBBIHGLHKDM {
+            os.write_string(6, &v)?;
+        };
         for v in &self.EHMGEMMNPLA {
             os.write_string(8, &v)?;
         };
-        for v in &self.HBBIHGLHKDM {
-            os.write_string(15, &v)?;
-        };
-        for v in &self.PKLFOJBALKK {
-            os.write_string(1, &v)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for GGIHCKPGACF {
     }
 
     fn clear(&mut self) {
-        self.EHMGEMMNPLA.clear();
-        self.HBBIHGLHKDM.clear();
         self.PKLFOJBALKK.clear();
+        self.HBBIHGLHKDM.clear();
+        self.EHMGEMMNPLA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GGIHCKPGACF {
         static instance: GGIHCKPGACF = GGIHCKPGACF {
-            EHMGEMMNPLA: ::std::vec::Vec::new(),
-            HBBIHGLHKDM: ::std::vec::Vec::new(),
             PKLFOJBALKK: ::std::vec::Vec::new(),
+            HBBIHGLHKDM: ::std::vec::Vec::new(),
+            EHMGEMMNPLA: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GGIHCKPGACF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GGIHCKPGACF.proto\"\x8d\x01\n\x0bGGIHCKPGACF\x12\x20\n\x0bEHMGEMMN\
-    PLA\x18\x08\x20\x03(\tR\x0bEHMGEMMNPLA\x12\x20\n\x0bHBBIHGLHKDM\x18\x0f\
-    \x20\x03(\tR\x0bHBBIHGLHKDM\x12\x20\n\x0bPKLFOJBALKK\x18\x01\x20\x03(\tR\
-    \x0bPKLFOJBALKK\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06pr\
+    \n\x11GGIHCKPGACF.proto\"\x8d\x01\n\x0bGGIHCKPGACF\x12\x20\n\x0bPKLFOJBA\
+    LKK\x18\x04\x20\x03(\tR\x0bPKLFOJBALKK\x12\x20\n\x0bHBBIHGLHKDM\x18\x06\
+    \x20\x03(\tR\x0bHBBIHGLHKDM\x12\x20\n\x0bEHMGEMMNPLA\x18\x08\x20\x03(\tR\
+    \x0bEHMGEMMNPLA\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06pr\
     oto3\
 ";
 

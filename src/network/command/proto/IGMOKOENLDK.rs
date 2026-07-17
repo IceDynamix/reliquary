@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IGMOKOENLDK {
     // message fields
+    // @@protoc_insertion_point(field:IGMOKOENLDK.max_hp)
+    pub max_hp: f64,
     // @@protoc_insertion_point(field:IGMOKOENLDK.attack)
     pub attack: f64,
-    // @@protoc_insertion_point(field:IGMOKOENLDK.left_hp)
-    pub left_hp: f64,
+    // @@protoc_insertion_point(field:IGMOKOENLDK.defence)
+    pub defence: f64,
     // @@protoc_insertion_point(field:IGMOKOENLDK.OFMLLDLAOCC)
     pub OFMLLDLAOCC: f64,
     // @@protoc_insertion_point(field:IGMOKOENLDK.speed)
     pub speed: f64,
-    // @@protoc_insertion_point(field:IGMOKOENLDK.defence)
-    pub defence: f64,
+    // @@protoc_insertion_point(field:IGMOKOENLDK.left_hp)
+    pub left_hp: f64,
     // @@protoc_insertion_point(field:IGMOKOENLDK.GENCOBDFKLA)
     pub GENCOBDFKLA: f64,
-    // @@protoc_insertion_point(field:IGMOKOENLDK.max_hp)
-    pub max_hp: f64,
     // special fields
     // @@protoc_insertion_point(special_field:IGMOKOENLDK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,14 +62,19 @@ impl IGMOKOENLDK {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_hp",
+            |m: &IGMOKOENLDK| { &m.max_hp },
+            |m: &mut IGMOKOENLDK| { &mut m.max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "attack",
             |m: &IGMOKOENLDK| { &m.attack },
             |m: &mut IGMOKOENLDK| { &mut m.attack },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "left_hp",
-            |m: &IGMOKOENLDK| { &m.left_hp },
-            |m: &mut IGMOKOENLDK| { &mut m.left_hp },
+            "defence",
+            |m: &IGMOKOENLDK| { &m.defence },
+            |m: &mut IGMOKOENLDK| { &mut m.defence },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFMLLDLAOCC",
@@ -82,19 +87,14 @@ impl IGMOKOENLDK {
             |m: &mut IGMOKOENLDK| { &mut m.speed },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "defence",
-            |m: &IGMOKOENLDK| { &m.defence },
-            |m: &mut IGMOKOENLDK| { &mut m.defence },
+            "left_hp",
+            |m: &IGMOKOENLDK| { &m.left_hp },
+            |m: &mut IGMOKOENLDK| { &mut m.left_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GENCOBDFKLA",
             |m: &IGMOKOENLDK| { &m.GENCOBDFKLA },
             |m: &mut IGMOKOENLDK| { &mut m.GENCOBDFKLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_hp",
-            |m: &IGMOKOENLDK| { &m.max_hp },
-            |m: &mut IGMOKOENLDK| { &mut m.max_hp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IGMOKOENLDK>(
             "IGMOKOENLDK",
@@ -114,11 +114,14 @@ impl ::protobuf::Message for IGMOKOENLDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                9 => {
+                    self.max_hp = is.read_double()?;
+                },
                 17 => {
                     self.attack = is.read_double()?;
                 },
-                49 => {
-                    self.left_hp = is.read_double()?;
+                25 => {
+                    self.defence = is.read_double()?;
                 },
                 33 => {
                     self.OFMLLDLAOCC = is.read_double()?;
@@ -126,14 +129,11 @@ impl ::protobuf::Message for IGMOKOENLDK {
                 41 => {
                     self.speed = is.read_double()?;
                 },
-                25 => {
-                    self.defence = is.read_double()?;
+                49 => {
+                    self.left_hp = is.read_double()?;
                 },
                 57 => {
                     self.GENCOBDFKLA = is.read_double()?;
-                },
-                9 => {
-                    self.max_hp = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,10 +147,13 @@ impl ::protobuf::Message for IGMOKOENLDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.max_hp != 0. {
+            my_size += 1 + 8;
+        }
         if self.attack != 0. {
             my_size += 1 + 8;
         }
-        if self.left_hp != 0. {
+        if self.defence != 0. {
             my_size += 1 + 8;
         }
         if self.OFMLLDLAOCC != 0. {
@@ -159,13 +162,10 @@ impl ::protobuf::Message for IGMOKOENLDK {
         if self.speed != 0. {
             my_size += 1 + 8;
         }
-        if self.defence != 0. {
+        if self.left_hp != 0. {
             my_size += 1 + 8;
         }
         if self.GENCOBDFKLA != 0. {
-            my_size += 1 + 8;
-        }
-        if self.max_hp != 0. {
             my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -174,11 +174,14 @@ impl ::protobuf::Message for IGMOKOENLDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.max_hp != 0. {
+            os.write_double(1, self.max_hp)?;
+        }
         if self.attack != 0. {
             os.write_double(2, self.attack)?;
         }
-        if self.left_hp != 0. {
-            os.write_double(6, self.left_hp)?;
+        if self.defence != 0. {
+            os.write_double(3, self.defence)?;
         }
         if self.OFMLLDLAOCC != 0. {
             os.write_double(4, self.OFMLLDLAOCC)?;
@@ -186,14 +189,11 @@ impl ::protobuf::Message for IGMOKOENLDK {
         if self.speed != 0. {
             os.write_double(5, self.speed)?;
         }
-        if self.defence != 0. {
-            os.write_double(3, self.defence)?;
+        if self.left_hp != 0. {
+            os.write_double(6, self.left_hp)?;
         }
         if self.GENCOBDFKLA != 0. {
             os.write_double(7, self.GENCOBDFKLA)?;
-        }
-        if self.max_hp != 0. {
-            os.write_double(1, self.max_hp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for IGMOKOENLDK {
     }
 
     fn clear(&mut self) {
+        self.max_hp = 0.;
         self.attack = 0.;
-        self.left_hp = 0.;
+        self.defence = 0.;
         self.OFMLLDLAOCC = 0.;
         self.speed = 0.;
-        self.defence = 0.;
+        self.left_hp = 0.;
         self.GENCOBDFKLA = 0.;
-        self.max_hp = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IGMOKOENLDK {
         static instance: IGMOKOENLDK = IGMOKOENLDK {
+            max_hp: 0.,
             attack: 0.,
-            left_hp: 0.,
+            defence: 0.,
             OFMLLDLAOCC: 0.,
             speed: 0.,
-            defence: 0.,
+            left_hp: 0.,
             GENCOBDFKLA: 0.,
-            max_hp: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for IGMOKOENLDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IGMOKOENLDK.proto\"\xc9\x01\n\x0bIGMOKOENLDK\x12\x16\n\x06attack\
-    \x18\x02\x20\x01(\x01R\x06attack\x12\x17\n\x07left_hp\x18\x06\x20\x01(\
-    \x01R\x06leftHp\x12\x20\n\x0bOFMLLDLAOCC\x18\x04\x20\x01(\x01R\x0bOFMLLD\
-    LAOCC\x12\x14\n\x05speed\x18\x05\x20\x01(\x01R\x05speed\x12\x18\n\x07def\
-    ence\x18\x03\x20\x01(\x01R\x07defence\x12\x20\n\x0bGENCOBDFKLA\x18\x07\
-    \x20\x01(\x01R\x0bGENCOBDFKLA\x12\x15\n\x06max_hp\x18\x01\x20\x01(\x01R\
-    \x05maxHpb\x06proto3\
+    \n\x11IGMOKOENLDK.proto\"\xc9\x01\n\x0bIGMOKOENLDK\x12\x15\n\x06max_hp\
+    \x18\x01\x20\x01(\x01R\x05maxHp\x12\x16\n\x06attack\x18\x02\x20\x01(\x01\
+    R\x06attack\x12\x18\n\x07defence\x18\x03\x20\x01(\x01R\x07defence\x12\
+    \x20\n\x0bOFMLLDLAOCC\x18\x04\x20\x01(\x01R\x0bOFMLLDLAOCC\x12\x14\n\x05\
+    speed\x18\x05\x20\x01(\x01R\x05speed\x12\x17\n\x07left_hp\x18\x06\x20\
+    \x01(\x01R\x06leftHp\x12\x20\n\x0bGENCOBDFKLA\x18\x07\x20\x01(\x01R\x0bG\
+    ENCOBDFKLAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,15 +29,15 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct NMEMDFOCMFO {
     // message fields
     // @@protoc_insertion_point(field:NMEMDFOCMFO.IOFKDDFNDGC)
-    pub IOFKDDFNDGC: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    pub IOFKDDFNDGC: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:NMEMDFOCMFO.IBLOFDAGDCE)
-    pub IBLOFDAGDCE: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    pub IBLOFDAGDCE: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:NMEMDFOCMFO.HPCKMFMNOBG)
-    pub HPCKMFMNOBG: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
-    // @@protoc_insertion_point(field:NMEMDFOCMFO.retcode)
-    pub retcode: u32,
+    pub HPCKMFMNOBG: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:NMEMDFOCMFO.PJODECIGFOI)
     pub PJODECIGFOI: u32,
+    // @@protoc_insertion_point(field:NMEMDFOCMFO.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NMEMDFOCMFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl NMEMDFOCMFO {
             |m: &mut NMEMDFOCMFO| { &mut m.HPCKMFMNOBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &NMEMDFOCMFO| { &m.retcode },
-            |m: &mut NMEMDFOCMFO| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJODECIGFOI",
             |m: &NMEMDFOCMFO| { &m.PJODECIGFOI },
             |m: &mut NMEMDFOCMFO| { &mut m.PJODECIGFOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &NMEMDFOCMFO| { &m.retcode },
+            |m: &mut NMEMDFOCMFO| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMEMDFOCMFO>(
             "NMEMDFOCMFO",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NMEMDFOCMFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                10 => {
                     self.IOFKDDFNDGC.push(is.read_message()?);
                 },
-                42 => {
+                26 => {
                     self.IBLOFDAGDCE.push(is.read_message()?);
                 },
-                90 => {
+                34 => {
                     self.HPCKMFMNOBG.push(is.read_message()?);
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                48 => {
+                40 => {
                     self.PJODECIGFOI = is.read_uint32()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,11 +139,11 @@ impl ::protobuf::Message for NMEMDFOCMFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if self.PJODECIGFOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PJODECIGFOI);
+            my_size += ::protobuf::rt::uint32_size(5, self.PJODECIGFOI);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,19 +152,19 @@ impl ::protobuf::Message for NMEMDFOCMFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IOFKDDFNDGC {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         for v in &self.IBLOFDAGDCE {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.HPCKMFMNOBG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if self.PJODECIGFOI != 0 {
-            os.write_uint32(6, self.PJODECIGFOI)?;
+            os.write_uint32(5, self.PJODECIGFOI)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::Message for NMEMDFOCMFO {
         self.IOFKDDFNDGC.clear();
         self.IBLOFDAGDCE.clear();
         self.HPCKMFMNOBG.clear();
-        self.retcode = 0;
         self.PJODECIGFOI = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
@@ -196,8 +196,8 @@ impl ::protobuf::Message for NMEMDFOCMFO {
             IOFKDDFNDGC: ::std::vec::Vec::new(),
             IBLOFDAGDCE: ::std::vec::Vec::new(),
             HPCKMFMNOBG: ::std::vec::Vec::new(),
-            retcode: 0,
             PJODECIGFOI: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for NMEMDFOCMFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMEMDFOCMFO.proto\x1a\x11APAMFCKFHLL.proto\"\xd9\x01\n\x0bNMEMDFOC\
-    MFO\x12.\n\x0bIOFKDDFNDGC\x18\x07\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bIOFK\
-    DDFNDGC\x12.\n\x0bIBLOFDAGDCE\x18\x05\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0b\
-    IBLOFDAGDCE\x12.\n\x0bHPCKMFMNOBG\x18\x0b\x20\x03(\x0b2\x0c.APAMFCKFHLLR\
-    \x0bHPCKMFMNOBG\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bPJODECIGFOI\x18\x06\x20\x01(\rR\x0bPJODECIGFOIb\x06proto3\
+    \n\x11NMEMDFOCMFO.proto\x1a\tKVP.proto\"\xc1\x01\n\x0bNMEMDFOCMFO\x12&\n\
+    \x0bIOFKDDFNDGC\x18\x01\x20\x03(\x0b2\x04.KVPR\x0bIOFKDDFNDGC\x12&\n\x0b\
+    IBLOFDAGDCE\x18\x03\x20\x03(\x0b2\x04.KVPR\x0bIBLOFDAGDCE\x12&\n\x0bHPCK\
+    MFMNOBG\x18\x04\x20\x03(\x0b2\x04.KVPR\x0bHPCKMFMNOBG\x12\x20\n\x0bPJODE\
+    CIGFOI\x18\x05\x20\x01(\rR\x0bPJODECIGFOI\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NMEMDFOCMFO::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,10 +79,10 @@ impl ::protobuf::Message for EMDKLICDPKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.IJCJBDDGGJF = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.HIEMHCBHKEO = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EMDKLICDPKK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IJCJBDDGGJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IJCJBDDGGJF);
+            my_size += ::protobuf::rt::uint32_size(11, self.IJCJBDDGGJF);
         }
         if self.HIEMHCBHKEO != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EMDKLICDPKK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IJCJBDDGGJF != 0 {
-            os.write_uint32(9, self.IJCJBDDGGJF)?;
+            os.write_uint32(11, self.IJCJBDDGGJF)?;
         }
         if self.HIEMHCBHKEO != false {
-            os.write_bool(10, self.HIEMHCBHKEO)?;
+            os.write_bool(13, self.HIEMHCBHKEO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EMDKLICDPKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EMDKLICDPKK.proto\"Q\n\x0bEMDKLICDPKK\x12\x20\n\x0bIJCJBDDGGJF\x18\
-    \t\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bHIEMHCBHKEO\x18\n\x20\x01(\
+    \x0b\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bHIEMHCBHKEO\x18\r\x20\x01(\
     \x08R\x0bHIEMHCBHKEOb\x06proto3\
 ";
 

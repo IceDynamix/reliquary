@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GCECAGOELDP {
     // message fields
+    // @@protoc_insertion_point(field:GCECAGOELDP.exp)
+    pub exp: u32,
     // @@protoc_insertion_point(field:GCECAGOELDP.CFIKMGKPOFH)
     pub CFIKMGKPOFH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GCECAGOELDP.NPDOKAJOOKD)
     pub NPDOKAJOOKD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GCECAGOELDP.exp)
-    pub exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GCECAGOELDP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl GCECAGOELDP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &GCECAGOELDP| { &m.exp },
+            |m: &mut GCECAGOELDP| { &mut m.exp },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CFIKMGKPOFH",
             |m: &GCECAGOELDP| { &m.CFIKMGKPOFH },
@@ -62,11 +67,6 @@ impl GCECAGOELDP {
             "NPDOKAJOOKD",
             |m: &GCECAGOELDP| { &m.NPDOKAJOOKD },
             |m: &mut GCECAGOELDP| { &mut m.NPDOKAJOOKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &GCECAGOELDP| { &m.exp },
-            |m: &mut GCECAGOELDP| { &mut m.exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GCECAGOELDP>(
             "GCECAGOELDP",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for GCECAGOELDP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CFIKMGKPOFH)?;
-                },
-                16 => {
-                    self.CFIKMGKPOFH.push(is.read_uint32()?);
+                8 => {
+                    self.exp = is.read_uint32()?;
                 },
                 82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NPDOKAJOOKD)?;
+                    is.read_repeated_packed_uint32_into(&mut self.CFIKMGKPOFH)?;
                 },
                 80 => {
-                    self.NPDOKAJOOKD.push(is.read_uint32()?);
+                    self.CFIKMGKPOFH.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.exp = is.read_uint32()?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NPDOKAJOOKD)?;
+                },
+                112 => {
+                    self.NPDOKAJOOKD.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for GCECAGOELDP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.CFIKMGKPOFH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NPDOKAJOOKD);
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.exp);
+            my_size += ::protobuf::rt::uint32_size(1, self.exp);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CFIKMGKPOFH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NPDOKAJOOKD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.CFIKMGKPOFH)?;
-        os.write_repeated_packed_uint32(10, &self.NPDOKAJOOKD)?;
         if self.exp != 0 {
-            os.write_uint32(4, self.exp)?;
+            os.write_uint32(1, self.exp)?;
         }
+        os.write_repeated_packed_uint32(10, &self.CFIKMGKPOFH)?;
+        os.write_repeated_packed_uint32(14, &self.NPDOKAJOOKD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,17 +146,17 @@ impl ::protobuf::Message for GCECAGOELDP {
     }
 
     fn clear(&mut self) {
+        self.exp = 0;
         self.CFIKMGKPOFH.clear();
         self.NPDOKAJOOKD.clear();
-        self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GCECAGOELDP {
         static instance: GCECAGOELDP = GCECAGOELDP {
+            exp: 0,
             CFIKMGKPOFH: ::std::vec::Vec::new(),
             NPDOKAJOOKD: ::std::vec::Vec::new(),
-            exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -181,10 +181,9 @@ impl ::protobuf::reflect::ProtobufValue for GCECAGOELDP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GCECAGOELDP.proto\"c\n\x0bGCECAGOELDP\x12\x20\n\x0bCFIKMGKPOFH\x18\
-    \x02\x20\x03(\rR\x0bCFIKMGKPOFH\x12\x20\n\x0bNPDOKAJOOKD\x18\n\x20\x03(\
-    \rR\x0bNPDOKAJOOKD\x12\x10\n\x03exp\x18\x04\x20\x01(\rR\x03expb\x06proto\
-    3\
+    \n\x11GCECAGOELDP.proto\"c\n\x0bGCECAGOELDP\x12\x10\n\x03exp\x18\x01\x20\
+    \x01(\rR\x03exp\x12\x20\n\x0bCFIKMGKPOFH\x18\n\x20\x03(\rR\x0bCFIKMGKPOF\
+    H\x12\x20\n\x0bNPDOKAJOOKD\x18\x0e\x20\x03(\rR\x0bNPDOKAJOOKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

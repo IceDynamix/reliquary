@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HIEKLHPINHL {
     // message fields
-    // @@protoc_insertion_point(field:HIEKLHPINHL.HOCMHABKLGJ)
-    pub HOCMHABKLGJ: u32,
+    // @@protoc_insertion_point(field:HIEKLHPINHL.max_count)
+    pub max_count: u32,
     // @@protoc_insertion_point(field:HIEKLHPINHL.OFBPKCNCGFG)
     pub OFBPKCNCGFG: u32,
     // special fields
@@ -52,9 +52,9 @@ impl HIEKLHPINHL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOCMHABKLGJ",
-            |m: &HIEKLHPINHL| { &m.HOCMHABKLGJ },
-            |m: &mut HIEKLHPINHL| { &mut m.HOCMHABKLGJ },
+            "max_count",
+            |m: &HIEKLHPINHL| { &m.max_count },
+            |m: &mut HIEKLHPINHL| { &mut m.max_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFBPKCNCGFG",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for HIEKLHPINHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.HOCMHABKLGJ = is.read_uint32()?;
+                104 => {
+                    self.max_count = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
                     self.OFBPKCNCGFG = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HIEKLHPINHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOCMHABKLGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HOCMHABKLGJ);
+        if self.max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.max_count);
         }
         if self.OFBPKCNCGFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OFBPKCNCGFG);
+            my_size += ::protobuf::rt::uint32_size(15, self.OFBPKCNCGFG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HIEKLHPINHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOCMHABKLGJ != 0 {
-            os.write_uint32(9, self.HOCMHABKLGJ)?;
+        if self.max_count != 0 {
+            os.write_uint32(13, self.max_count)?;
         }
         if self.OFBPKCNCGFG != 0 {
-            os.write_uint32(11, self.OFBPKCNCGFG)?;
+            os.write_uint32(15, self.OFBPKCNCGFG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for HIEKLHPINHL {
     }
 
     fn clear(&mut self) {
-        self.HOCMHABKLGJ = 0;
+        self.max_count = 0;
         self.OFBPKCNCGFG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HIEKLHPINHL {
         static instance: HIEKLHPINHL = HIEKLHPINHL {
-            HOCMHABKLGJ: 0,
+            max_count: 0,
             OFBPKCNCGFG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HIEKLHPINHL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HIEKLHPINHL.proto\"Q\n\x0bHIEKLHPINHL\x12\x20\n\x0bHOCMHABKLGJ\x18\
-    \t\x20\x01(\rR\x0bHOCMHABKLGJ\x12\x20\n\x0bOFBPKCNCGFG\x18\x0b\x20\x01(\
-    \rR\x0bOFBPKCNCGFGb\x06proto3\
+    \n\x11HIEKLHPINHL.proto\"L\n\x0bHIEKLHPINHL\x12\x1b\n\tmax_count\x18\r\
+    \x20\x01(\rR\x08maxCount\x12\x20\n\x0bOFBPKCNCGFG\x18\x0f\x20\x01(\rR\
+    \x0bOFBPKCNCGFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

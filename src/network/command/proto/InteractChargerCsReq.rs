@@ -72,7 +72,7 @@ impl ::protobuf::Message for InteractChargerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.charger_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for InteractChargerCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.charger_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for InteractChargerCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aInteractChargerCsReq.proto\x1a\x11ChargerInfo.proto\"G\n\x14Intera\
-    ctChargerCsReq\x12/\n\x0ccharger_info\x18\n\x20\x01(\x0b2\x0c.ChargerInf\
-    oR\x0bchargerInfob\x06proto3\
+    ctChargerCsReq\x12/\n\x0ccharger_info\x18\x05\x20\x01(\x0b2\x0c.ChargerI\
+    nfoR\x0bchargerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

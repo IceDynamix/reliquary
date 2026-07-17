@@ -28,12 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AetherDivideSpiritInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.IAGNGEGKDOL)
-    pub IAGNGEGKDOL: ::protobuf::MessageField<super::GHBICGMEFPL::GHBICGMEFPL>,
     // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.FGBAPJKDFOC)
     pub FGBAPJKDFOC: ::std::vec::Vec<super::GHBICGMEFPL::GHBICGMEFPL>,
-    // @@protoc_insertion_point(field:AetherDivideSpiritInfoScNotify.NCAOMBHCGNA)
-    pub NCAOMBHCGNA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AetherDivideSpiritInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +47,12 @@ impl AetherDivideSpiritInfoScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GHBICGMEFPL::GHBICGMEFPL>(
-            "IAGNGEGKDOL",
-            |m: &AetherDivideSpiritInfoScNotify| { &m.IAGNGEGKDOL },
-            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.IAGNGEGKDOL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FGBAPJKDFOC",
             |m: &AetherDivideSpiritInfoScNotify| { &m.FGBAPJKDFOC },
             |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.FGBAPJKDFOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCAOMBHCGNA",
-            |m: &AetherDivideSpiritInfoScNotify| { &m.NCAOMBHCGNA },
-            |m: &mut AetherDivideSpiritInfoScNotify| { &mut m.NCAOMBHCGNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AetherDivideSpiritInfoScNotify>(
             "AetherDivideSpiritInfoScNotify",
@@ -86,14 +72,8 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAGNGEGKDOL)?;
-                },
-                74 => {
+                90 => {
                     self.FGBAPJKDFOC.push(is.read_message()?);
-                },
-                112 => {
-                    self.NCAOMBHCGNA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +87,19 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IAGNGEGKDOL.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.FGBAPJKDFOC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NCAOMBHCGNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NCAOMBHCGNA);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IAGNGEGKDOL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         for v in &self.FGBAPJKDFOC {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if self.NCAOMBHCGNA != 0 {
-            os.write_uint32(14, self.NCAOMBHCGNA)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +117,13 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.IAGNGEGKDOL.clear();
         self.FGBAPJKDFOC.clear();
-        self.NCAOMBHCGNA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AetherDivideSpiritInfoScNotify {
         static instance: AetherDivideSpiritInfoScNotify = AetherDivideSpiritInfoScNotify {
-            IAGNGEGKDOL: ::protobuf::MessageField::none(),
             FGBAPJKDFOC: ::std::vec::Vec::new(),
-            NCAOMBHCGNA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$AetherDivideSpiritInfoScNotify.proto\x1a\x11GHBICGMEFPL.proto\"\xa2\
-    \x01\n\x1eAetherDivideSpiritInfoScNotify\x12.\n\x0bIAGNGEGKDOL\x18\x0c\
-    \x20\x01(\x0b2\x0c.GHBICGMEFPLR\x0bIAGNGEGKDOL\x12.\n\x0bFGBAPJKDFOC\x18\
-    \t\x20\x03(\x0b2\x0c.GHBICGMEFPLR\x0bFGBAPJKDFOC\x12\x20\n\x0bNCAOMBHCGN\
-    A\x18\x0e\x20\x01(\rR\x0bNCAOMBHCGNAb\x06proto3\
+    \n$AetherDivideSpiritInfoScNotify.proto\x1a\x11GHBICGMEFPL.proto\"P\n\
+    \x1eAetherDivideSpiritInfoScNotify\x12.\n\x0bFGBAPJKDFOC\x18\x0b\x20\x03\
+    (\x0b2\x0c.GHBICGMEFPLR\x0bFGBAPJKDFOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

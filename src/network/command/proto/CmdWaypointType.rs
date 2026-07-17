@@ -29,24 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdWaypointType {
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_NLCDGIPGFDJ)
     CHLEIBCFDBO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_PBFIBBAHBIH)
-    CHLEIBCFDBO_PBFIBBAHBIH = 427,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_KNFMJKOGEGF)
-    CHLEIBCFDBO_KNFMJKOGEGF = 473,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_PLAOBLCOJDG)
-    CHLEIBCFDBO_PLAOBLCOJDG = 415,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_CAABEEPDOPJ)
-    CHLEIBCFDBO_CAABEEPDOPJ = 410,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_HBAPBPBKJLL)
-    CHLEIBCFDBO_HBAPBPBKJLL = 413,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_CDNDJJEKEOK)
-    CHLEIBCFDBO_CDNDJJEKEOK = 480,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_DDKCNBCOELM)
-    CHLEIBCFDBO_DDKCNBCOELM = 436,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_CEOAHCNJAPL)
-    CHLEIBCFDBO_CEOAHCNJAPL = 481,
     // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_HCNHEDFNLJC)
-    CHLEIBCFDBO_HCNHEDFNLJC = 403,
+    CHLEIBCFDBO_HCNHEDFNLJC = 478,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_HBAPBPBKJLL)
+    CHLEIBCFDBO_HBAPBPBKJLL = 481,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_KNFMJKOGEGF)
+    CHLEIBCFDBO_KNFMJKOGEGF = 425,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CHLEIBCFDBO_DDKCNBCOELM)
+    CHLEIBCFDBO_DDKCNBCOELM = 488,
 }
 
 impl ::protobuf::Enum for CmdWaypointType {
@@ -59,15 +49,10 @@ impl ::protobuf::Enum for CmdWaypointType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdWaypointType> {
         match value {
             0 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_NLCDGIPGFDJ),
-            427 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_PBFIBBAHBIH),
-            473 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF),
-            415 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_PLAOBLCOJDG),
-            410 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CAABEEPDOPJ),
-            413 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL),
-            480 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CDNDJJEKEOK),
-            436 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM),
-            481 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CEOAHCNJAPL),
-            403 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC),
+            478 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC),
+            481 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL),
+            425 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF),
+            488 => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +60,20 @@ impl ::protobuf::Enum for CmdWaypointType {
     fn from_str(str: &str) -> ::std::option::Option<CmdWaypointType> {
         match str {
             "CHLEIBCFDBO_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_NLCDGIPGFDJ),
-            "CHLEIBCFDBO_PBFIBBAHBIH" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_PBFIBBAHBIH),
-            "CHLEIBCFDBO_KNFMJKOGEGF" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF),
-            "CHLEIBCFDBO_PLAOBLCOJDG" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_PLAOBLCOJDG),
-            "CHLEIBCFDBO_CAABEEPDOPJ" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CAABEEPDOPJ),
-            "CHLEIBCFDBO_HBAPBPBKJLL" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL),
-            "CHLEIBCFDBO_CDNDJJEKEOK" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CDNDJJEKEOK),
-            "CHLEIBCFDBO_DDKCNBCOELM" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM),
-            "CHLEIBCFDBO_CEOAHCNJAPL" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_CEOAHCNJAPL),
             "CHLEIBCFDBO_HCNHEDFNLJC" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC),
+            "CHLEIBCFDBO_HBAPBPBKJLL" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL),
+            "CHLEIBCFDBO_KNFMJKOGEGF" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF),
+            "CHLEIBCFDBO_DDKCNBCOELM" => ::std::option::Option::Some(CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWaypointType] = &[
         CmdWaypointType::CHLEIBCFDBO_NLCDGIPGFDJ,
-        CmdWaypointType::CHLEIBCFDBO_PBFIBBAHBIH,
-        CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF,
-        CmdWaypointType::CHLEIBCFDBO_PLAOBLCOJDG,
-        CmdWaypointType::CHLEIBCFDBO_CAABEEPDOPJ,
-        CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL,
-        CmdWaypointType::CHLEIBCFDBO_CDNDJJEKEOK,
-        CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM,
-        CmdWaypointType::CHLEIBCFDBO_CEOAHCNJAPL,
         CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC,
+        CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL,
+        CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF,
+        CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM,
     ];
 }
 
@@ -111,15 +86,10 @@ impl ::protobuf::EnumFull for CmdWaypointType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdWaypointType::CHLEIBCFDBO_NLCDGIPGFDJ => 0,
-            CmdWaypointType::CHLEIBCFDBO_PBFIBBAHBIH => 1,
-            CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF => 2,
-            CmdWaypointType::CHLEIBCFDBO_PLAOBLCOJDG => 3,
-            CmdWaypointType::CHLEIBCFDBO_CAABEEPDOPJ => 4,
-            CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL => 5,
-            CmdWaypointType::CHLEIBCFDBO_CDNDJJEKEOK => 6,
-            CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM => 7,
-            CmdWaypointType::CHLEIBCFDBO_CEOAHCNJAPL => 8,
-            CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC => 9,
+            CmdWaypointType::CHLEIBCFDBO_HCNHEDFNLJC => 1,
+            CmdWaypointType::CHLEIBCFDBO_HBAPBPBKJLL => 2,
+            CmdWaypointType::CHLEIBCFDBO_KNFMJKOGEGF => 3,
+            CmdWaypointType::CHLEIBCFDBO_DDKCNBCOELM => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -138,14 +108,11 @@ impl CmdWaypointType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdWaypointType.proto*\xbc\x02\n\x0fCmdWaypointType\x12\x1b\n\x17C\
-    HLEIBCFDBO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CHLEIBCFDBO_PBFIBBAHBIH\x10\
-    \xab\x03\x12\x1c\n\x17CHLEIBCFDBO_KNFMJKOGEGF\x10\xd9\x03\x12\x1c\n\x17C\
-    HLEIBCFDBO_PLAOBLCOJDG\x10\x9f\x03\x12\x1c\n\x17CHLEIBCFDBO_CAABEEPDOPJ\
-    \x10\x9a\x03\x12\x1c\n\x17CHLEIBCFDBO_HBAPBPBKJLL\x10\x9d\x03\x12\x1c\n\
-    \x17CHLEIBCFDBO_CDNDJJEKEOK\x10\xe0\x03\x12\x1c\n\x17CHLEIBCFDBO_DDKCNBC\
-    OELM\x10\xb4\x03\x12\x1c\n\x17CHLEIBCFDBO_CEOAHCNJAPL\x10\xe1\x03\x12\
-    \x1c\n\x17CHLEIBCFDBO_HCNHEDFNLJC\x10\x93\x03b\x06proto3\
+    \n\x15CmdWaypointType.proto*\xa6\x01\n\x0fCmdWaypointType\x12\x1b\n\x17C\
+    HLEIBCFDBO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CHLEIBCFDBO_HCNHEDFNLJC\x10\
+    \xde\x03\x12\x1c\n\x17CHLEIBCFDBO_HBAPBPBKJLL\x10\xe1\x03\x12\x1c\n\x17C\
+    HLEIBCFDBO_KNFMJKOGEGF\x10\xa9\x03\x12\x1c\n\x17CHLEIBCFDBO_DDKCNBCOELM\
+    \x10\xe8\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

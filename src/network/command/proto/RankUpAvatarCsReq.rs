@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RankUpAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RankUpAvatarCsReq.cost_data)
-    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:RankUpAvatarCsReq.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:RankUpAvatarCsReq.cost_data)
+    pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:RankUpAvatarCsReq.rank)
     pub rank: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RankUpAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "cost_data",
-            |m: &RankUpAvatarCsReq| { &m.cost_data },
-            |m: &mut RankUpAvatarCsReq| { &mut m.cost_data },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &RankUpAvatarCsReq| { &m.avatar_id },
             |m: &mut RankUpAvatarCsReq| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &RankUpAvatarCsReq| { &m.cost_data },
+            |m: &mut RankUpAvatarCsReq| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rank",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
-                },
-                24 => {
+                40 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                48 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
+                },
+                104 => {
                     self.rank = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
+        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
-        }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.rank);
+            my_size += ::protobuf::rt::uint32_size(13, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         if self.avatar_id != 0 {
-            os.write_uint32(3, self.avatar_id)?;
+            os.write_uint32(5, self.avatar_id)?;
+        }
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.rank != 0 {
-            os.write_uint32(6, self.rank)?;
+            os.write_uint32(13, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.cost_data.clear();
         self.avatar_id = 0;
+        self.cost_data.clear();
         self.rank = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RankUpAvatarCsReq {
         static instance: RankUpAvatarCsReq = RankUpAvatarCsReq {
-            cost_data: ::protobuf::MessageField::none(),
             avatar_id: 0,
+            cost_data: ::protobuf::MessageField::none(),
             rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RankUpAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RankUpAvatarCsReq.proto\x1a\x12ItemCostData.proto\"p\n\x11RankUpAv\
-    atarCsReq\x12*\n\tcost_data\x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x08cos\
-    tData\x12\x1b\n\tavatar_id\x18\x03\x20\x01(\rR\x08avatarId\x12\x12\n\x04\
-    rank\x18\x06\x20\x01(\rR\x04rankb\x06proto3\
+    atarCsReq\x12\x1b\n\tavatar_id\x18\x05\x20\x01(\rR\x08avatarId\x12*\n\tc\
+    ost_data\x18\t\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x12\n\x04ra\
+    nk\x18\r\x20\x01(\rR\x04rankb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

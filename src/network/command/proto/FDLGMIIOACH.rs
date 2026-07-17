@@ -45,7 +45,7 @@ impl FDLGMIIOACH {
         ::std::default::Default::default()
     }
 
-    // uint32 NNDNCAEGDFI = 8;
+    // uint32 NNDNCAEGDFI = 14;
 
     pub fn NNDNCAEGDFI(&self) -> u32 {
         match self.NNIHPHPEGIJ {
@@ -70,7 +70,7 @@ impl FDLGMIIOACH {
         self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v))
     }
 
-    // uint32 extra_id = 4;
+    // uint32 extra_id = 11;
 
     pub fn extra_id(&self) -> u32 {
         match self.NNIHPHPEGIJ {
@@ -129,10 +129,10 @@ impl ::protobuf::Message for FDLGMIIOACH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                112 => {
                     self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(is.read_uint32()?));
                 },
-                32 => {
+                88 => {
                     self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::ExtraId(is.read_uint32()?));
                 },
                 tag => {
@@ -150,10 +150,10 @@ impl ::protobuf::Message for FDLGMIIOACH {
         if let ::std::option::Option::Some(ref v) = self.NNIHPHPEGIJ {
             match v {
                 &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
                 &fdlgmiioach::NNIHPHPEGIJ::ExtraId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
             };
         }
@@ -166,10 +166,10 @@ impl ::protobuf::Message for FDLGMIIOACH {
         if let ::std::option::Option::Some(ref v) = self.NNIHPHPEGIJ {
             match v {
                 &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(14, v)?;
                 },
                 &fdlgmiioach::NNIHPHPEGIJ::ExtraId(v) => {
-                    os.write_uint32(4, v)?;
+                    os.write_uint32(11, v)?;
                 },
             };
         }
@@ -253,7 +253,7 @@ pub mod fdlgmiioach {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FDLGMIIOACH.proto\"]\n\x0bFDLGMIIOACH\x12\"\n\x0bNNDNCAEGDFI\x18\
-    \x08\x20\x01(\rH\0R\x0bNNDNCAEGDFI\x12\x1b\n\x08extra_id\x18\x04\x20\x01\
+    \x0e\x20\x01(\rH\0R\x0bNNDNCAEGDFI\x12\x1b\n\x08extra_id\x18\x0b\x20\x01\
     (\rH\0R\x07extraIdB\r\n\x0bNNIHPHPEGIJb\x06proto3\
 ";
 

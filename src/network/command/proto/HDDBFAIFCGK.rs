@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDDBFAIFCGK {
     // message fields
-    // @@protoc_insertion_point(field:HDDBFAIFCGK.EHFHDELPGLN)
-    pub EHFHDELPGLN: ::std::vec::Vec<super::PJPMBOBAMIC::PJPMBOBAMIC>,
     // @@protoc_insertion_point(field:HDDBFAIFCGK.LFPABLEIKKE)
     pub LFPABLEIKKE: u32,
+    // @@protoc_insertion_point(field:HDDBFAIFCGK.EHFHDELPGLN)
+    pub EHFHDELPGLN: ::std::vec::Vec<super::PJPMBOBAMIC::PJPMBOBAMIC>,
     // special fields
     // @@protoc_insertion_point(special_field:HDDBFAIFCGK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HDDBFAIFCGK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EHFHDELPGLN",
-            |m: &HDDBFAIFCGK| { &m.EHFHDELPGLN },
-            |m: &mut HDDBFAIFCGK| { &mut m.EHFHDELPGLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LFPABLEIKKE",
             |m: &HDDBFAIFCGK| { &m.LFPABLEIKKE },
             |m: &mut HDDBFAIFCGK| { &mut m.LFPABLEIKKE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EHFHDELPGLN",
+            |m: &HDDBFAIFCGK| { &m.EHFHDELPGLN },
+            |m: &mut HDDBFAIFCGK| { &mut m.EHFHDELPGLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDDBFAIFCGK>(
             "HDDBFAIFCGK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HDDBFAIFCGK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.EHFHDELPGLN.push(is.read_message()?);
-                },
-                8 => {
+                48 => {
                     self.LFPABLEIKKE = is.read_uint32()?;
+                },
+                106 => {
+                    self.EHFHDELPGLN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for HDDBFAIFCGK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LFPABLEIKKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LFPABLEIKKE);
+        }
         for value in &self.EHFHDELPGLN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LFPABLEIKKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LFPABLEIKKE);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EHFHDELPGLN {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         if self.LFPABLEIKKE != 0 {
-            os.write_uint32(1, self.LFPABLEIKKE)?;
+            os.write_uint32(6, self.LFPABLEIKKE)?;
         }
+        for v in &self.EHFHDELPGLN {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for HDDBFAIFCGK {
     }
 
     fn clear(&mut self) {
-        self.EHFHDELPGLN.clear();
         self.LFPABLEIKKE = 0;
+        self.EHFHDELPGLN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDDBFAIFCGK {
         static instance: HDDBFAIFCGK = HDDBFAIFCGK {
-            EHFHDELPGLN: ::std::vec::Vec::new(),
             LFPABLEIKKE: 0,
+            EHFHDELPGLN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HDDBFAIFCGK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDDBFAIFCGK.proto\x1a\x11PJPMBOBAMIC.proto\"_\n\x0bHDDBFAIFCGK\x12\
-    .\n\x0bEHFHDELPGLN\x18\x0f\x20\x03(\x0b2\x0c.PJPMBOBAMICR\x0bEHFHDELPGLN\
-    \x12\x20\n\x0bLFPABLEIKKE\x18\x01\x20\x01(\rR\x0bLFPABLEIKKEb\x06proto3\
+    \x20\n\x0bLFPABLEIKKE\x18\x06\x20\x01(\rR\x0bLFPABLEIKKE\x12.\n\x0bEHFHD\
+    ELPGLN\x18\r\x20\x03(\x0b2\x0c.PJPMBOBAMICR\x0bEHFHDELPGLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CBDMGEGELFM {
     // message fields
-    // @@protoc_insertion_point(field:CBDMGEGELFM.DPICNGBHFAC)
-    pub DPICNGBHFAC: i32,
     // @@protoc_insertion_point(field:CBDMGEGELFM.key)
     pub key: u32,
+    // @@protoc_insertion_point(field:CBDMGEGELFM.DPICNGBHFAC)
+    pub DPICNGBHFAC: i32,
     // special fields
     // @@protoc_insertion_point(special_field:CBDMGEGELFM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CBDMGEGELFM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPICNGBHFAC",
-            |m: &CBDMGEGELFM| { &m.DPICNGBHFAC },
-            |m: &mut CBDMGEGELFM| { &mut m.DPICNGBHFAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "key",
             |m: &CBDMGEGELFM| { &m.key },
             |m: &mut CBDMGEGELFM| { &mut m.key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPICNGBHFAC",
+            |m: &CBDMGEGELFM| { &m.DPICNGBHFAC },
+            |m: &mut CBDMGEGELFM| { &mut m.DPICNGBHFAC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CBDMGEGELFM>(
             "CBDMGEGELFM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CBDMGEGELFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.DPICNGBHFAC = is.read_int32()?;
-                },
-                72 => {
+                16 => {
                     self.key = is.read_uint32()?;
+                },
+                96 => {
+                    self.DPICNGBHFAC = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CBDMGEGELFM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPICNGBHFAC != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.DPICNGBHFAC);
-        }
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.key);
+            my_size += ::protobuf::rt::uint32_size(2, self.key);
+        }
+        if self.DPICNGBHFAC != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.DPICNGBHFAC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CBDMGEGELFM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPICNGBHFAC != 0 {
-            os.write_int32(15, self.DPICNGBHFAC)?;
-        }
         if self.key != 0 {
-            os.write_uint32(9, self.key)?;
+            os.write_uint32(2, self.key)?;
+        }
+        if self.DPICNGBHFAC != 0 {
+            os.write_int32(12, self.DPICNGBHFAC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CBDMGEGELFM {
     }
 
     fn clear(&mut self) {
-        self.DPICNGBHFAC = 0;
         self.key = 0;
+        self.DPICNGBHFAC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CBDMGEGELFM {
         static instance: CBDMGEGELFM = CBDMGEGELFM {
-            DPICNGBHFAC: 0,
             key: 0,
+            DPICNGBHFAC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CBDMGEGELFM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CBDMGEGELFM.proto\"A\n\x0bCBDMGEGELFM\x12\x20\n\x0bDPICNGBHFAC\x18\
-    \x0f\x20\x01(\x05R\x0bDPICNGBHFAC\x12\x10\n\x03key\x18\t\x20\x01(\rR\x03\
-    keyb\x06proto3\
+    \n\x11CBDMGEGELFM.proto\"A\n\x0bCBDMGEGELFM\x12\x10\n\x03key\x18\x02\x20\
+    \x01(\rR\x03key\x12\x20\n\x0bDPICNGBHFAC\x18\x0c\x20\x01(\x05R\x0bDPICNG\
+    BHFACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

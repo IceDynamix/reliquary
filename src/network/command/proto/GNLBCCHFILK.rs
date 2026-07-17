@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GNLBCCHFILK {
     // message fields
-    // @@protoc_insertion_point(field:GNLBCCHFILK.KDFKDNLNDHN)
-    pub KDFKDNLNDHN: ::protobuf::MessageField<super::BDJLHJDPEEK::BDJLHJDPEEK>,
     // @@protoc_insertion_point(field:GNLBCCHFILK.BJDEBHMKJBC)
     pub BJDEBHMKJBC: bool,
+    // @@protoc_insertion_point(field:GNLBCCHFILK.KDFKDNLNDHN)
+    pub KDFKDNLNDHN: ::protobuf::MessageField<super::BDJLHJDPEEK::BDJLHJDPEEK>,
     // special fields
     // @@protoc_insertion_point(special_field:GNLBCCHFILK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GNLBCCHFILK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDJLHJDPEEK::BDJLHJDPEEK>(
-            "KDFKDNLNDHN",
-            |m: &GNLBCCHFILK| { &m.KDFKDNLNDHN },
-            |m: &mut GNLBCCHFILK| { &mut m.KDFKDNLNDHN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BJDEBHMKJBC",
             |m: &GNLBCCHFILK| { &m.BJDEBHMKJBC },
             |m: &mut GNLBCCHFILK| { &mut m.BJDEBHMKJBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDJLHJDPEEK::BDJLHJDPEEK>(
+            "KDFKDNLNDHN",
+            |m: &GNLBCCHFILK| { &m.KDFKDNLNDHN },
+            |m: &mut GNLBCCHFILK| { &mut m.KDFKDNLNDHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GNLBCCHFILK>(
             "GNLBCCHFILK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GNLBCCHFILK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDFKDNLNDHN)?;
-                },
-                104 => {
+                56 => {
                     self.BJDEBHMKJBC = is.read_bool()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDFKDNLNDHN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GNLBCCHFILK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BJDEBHMKJBC != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.KDFKDNLNDHN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BJDEBHMKJBC != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GNLBCCHFILK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KDFKDNLNDHN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.BJDEBHMKJBC != false {
-            os.write_bool(13, self.BJDEBHMKJBC)?;
+            os.write_bool(7, self.BJDEBHMKJBC)?;
+        }
+        if let Some(v) = self.KDFKDNLNDHN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GNLBCCHFILK {
     }
 
     fn clear(&mut self) {
-        self.KDFKDNLNDHN.clear();
         self.BJDEBHMKJBC = false;
+        self.KDFKDNLNDHN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GNLBCCHFILK {
         static instance: GNLBCCHFILK = GNLBCCHFILK {
-            KDFKDNLNDHN: ::protobuf::MessageField::none(),
             BJDEBHMKJBC: false,
+            KDFKDNLNDHN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GNLBCCHFILK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNLBCCHFILK.proto\x1a\x11BDJLHJDPEEK.proto\"_\n\x0bGNLBCCHFILK\x12\
-    .\n\x0bKDFKDNLNDHN\x18\x04\x20\x01(\x0b2\x0c.BDJLHJDPEEKR\x0bKDFKDNLNDHN\
-    \x12\x20\n\x0bBJDEBHMKJBC\x18\r\x20\x01(\x08R\x0bBJDEBHMKJBCb\x06proto3\
+    \x20\n\x0bBJDEBHMKJBC\x18\x07\x20\x01(\x08R\x0bBJDEBHMKJBC\x12.\n\x0bKDF\
+    KDNLNDHN\x18\r\x20\x01(\x0b2\x0c.BDJLHJDPEEKR\x0bKDFKDNLNDHNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

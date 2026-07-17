@@ -28,12 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PIBFIDOEPAP {
     // message fields
-    // @@protoc_insertion_point(field:PIBFIDOEPAP.LHHACOILCMG)
-    pub LHHACOILCMG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PIBFIDOEPAP.FFFNGBKHOEA)
-    pub FFFNGBKHOEA: u32,
     // @@protoc_insertion_point(field:PIBFIDOEPAP.GNIFODGCPAA)
     pub GNIFODGCPAA: u32,
+    // @@protoc_insertion_point(field:PIBFIDOEPAP.FFFNGBKHOEA)
+    pub FFFNGBKHOEA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PIBFIDOEPAP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +49,17 @@ impl PIBFIDOEPAP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LHHACOILCMG",
-            |m: &PIBFIDOEPAP| { &m.LHHACOILCMG },
-            |m: &mut PIBFIDOEPAP| { &mut m.LHHACOILCMG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNIFODGCPAA",
+            |m: &PIBFIDOEPAP| { &m.GNIFODGCPAA },
+            |m: &mut PIBFIDOEPAP| { &mut m.GNIFODGCPAA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FFFNGBKHOEA",
             |m: &PIBFIDOEPAP| { &m.FFFNGBKHOEA },
             |m: &mut PIBFIDOEPAP| { &mut m.FFFNGBKHOEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNIFODGCPAA",
-            |m: &PIBFIDOEPAP| { &m.GNIFODGCPAA },
-            |m: &mut PIBFIDOEPAP| { &mut m.GNIFODGCPAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PIBFIDOEPAP>(
             "PIBFIDOEPAP",
@@ -86,17 +79,11 @@ impl ::protobuf::Message for PIBFIDOEPAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LHHACOILCMG)?;
-                },
-                8 => {
-                    self.LHHACOILCMG.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.FFFNGBKHOEA = is.read_uint32()?;
-                },
-                40 => {
+                72 => {
                     self.GNIFODGCPAA = is.read_uint32()?;
+                },
+                112 => {
+                    self.FFFNGBKHOEA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +97,11 @@ impl ::protobuf::Message for PIBFIDOEPAP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LHHACOILCMG);
-        if self.FFFNGBKHOEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FFFNGBKHOEA);
-        }
         if self.GNIFODGCPAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GNIFODGCPAA);
+            my_size += ::protobuf::rt::uint32_size(9, self.GNIFODGCPAA);
+        }
+        if self.FFFNGBKHOEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FFFNGBKHOEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +109,11 @@ impl ::protobuf::Message for PIBFIDOEPAP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.LHHACOILCMG)?;
-        if self.FFFNGBKHOEA != 0 {
-            os.write_uint32(12, self.FFFNGBKHOEA)?;
-        }
         if self.GNIFODGCPAA != 0 {
-            os.write_uint32(5, self.GNIFODGCPAA)?;
+            os.write_uint32(9, self.GNIFODGCPAA)?;
+        }
+        if self.FFFNGBKHOEA != 0 {
+            os.write_uint32(14, self.FFFNGBKHOEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +132,15 @@ impl ::protobuf::Message for PIBFIDOEPAP {
     }
 
     fn clear(&mut self) {
-        self.LHHACOILCMG.clear();
-        self.FFFNGBKHOEA = 0;
         self.GNIFODGCPAA = 0;
+        self.FFFNGBKHOEA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PIBFIDOEPAP {
         static instance: PIBFIDOEPAP = PIBFIDOEPAP {
-            LHHACOILCMG: ::std::vec::Vec::new(),
-            FFFNGBKHOEA: 0,
             GNIFODGCPAA: 0,
+            FFFNGBKHOEA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PIBFIDOEPAP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PIBFIDOEPAP.proto\"s\n\x0bPIBFIDOEPAP\x12\x20\n\x0bLHHACOILCMG\x18\
-    \x01\x20\x03(\rR\x0bLHHACOILCMG\x12\x20\n\x0bFFFNGBKHOEA\x18\x0c\x20\x01\
-    (\rR\x0bFFFNGBKHOEA\x12\x20\n\x0bGNIFODGCPAA\x18\x05\x20\x01(\rR\x0bGNIF\
-    ODGCPAAb\x06proto3\
+    \n\x11PIBFIDOEPAP.proto\"Q\n\x0bPIBFIDOEPAP\x12\x20\n\x0bGNIFODGCPAA\x18\
+    \t\x20\x01(\rR\x0bGNIFODGCPAA\x12\x20\n\x0bFFFNGBKHOEA\x18\x0e\x20\x01(\
+    \rR\x0bFFFNGBKHOEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

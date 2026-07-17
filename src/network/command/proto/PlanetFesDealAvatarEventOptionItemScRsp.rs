@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDealAvatarEventOptionItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.GLOAGDBEKDP)
-    pub GLOAGDBEKDP: ::protobuf::MessageField<super::OJHHACMHFKA::OJHHACMHFKA>,
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::GNMCIEPEBPK::GNMCIEPEBPK>,
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.DNLAFCPNPOE)
-    pub DNLAFCPNPOE: u32,
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.IIBJDCKHAKE)
-    pub IIBJDCKHAKE: u32,
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.MLKBOBIEAPL)
     pub MLKBOBIEAPL: bool,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.GLOAGDBEKDP)
+    pub GLOAGDBEKDP: ::protobuf::MessageField<super::OJHHACMHFKA::OJHHACMHFKA>,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.IIBJDCKHAKE)
+    pub IIBJDCKHAKE: u32,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.DNLAFCPNPOE)
+    pub DNLAFCPNPOE: u32,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::GNMCIEPEBPK::GNMCIEPEBPK>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesDealAvatarEventOptionItemScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,15 @@ impl PlanetFesDealAvatarEventOptionItemScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLKBOBIEAPL",
+            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.MLKBOBIEAPL },
+            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.MLKBOBIEAPL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJHHACMHFKA::OJHHACMHFKA>(
             "GLOAGDBEKDP",
             |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.GLOAGDBEKDP },
             |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.GLOAGDBEKDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GNMCIEPEBPK::GNMCIEPEBPK>(
-            "reward",
-            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.reward },
-            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNLAFCPNPOE",
-            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.DNLAFCPNPOE },
-            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.DNLAFCPNPOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IIBJDCKHAKE",
@@ -80,14 +75,19 @@ impl PlanetFesDealAvatarEventOptionItemScRsp {
             |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.IIBJDCKHAKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNLAFCPNPOE",
+            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.DNLAFCPNPOE },
+            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.DNLAFCPNPOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.retcode },
             |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLKBOBIEAPL",
-            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.MLKBOBIEAPL },
-            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.MLKBOBIEAPL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GNMCIEPEBPK::GNMCIEPEBPK>(
+            "reward",
+            |m: &PlanetFesDealAvatarEventOptionItemScRsp| { &m.reward },
+            |m: &mut PlanetFesDealAvatarEventOptionItemScRsp| { &mut m.reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesDealAvatarEventOptionItemScRsp>(
             "PlanetFesDealAvatarEventOptionItemScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                8 => {
+                    self.MLKBOBIEAPL = is.read_bool()?;
+                },
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLOAGDBEKDP)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                64 => {
-                    self.DNLAFCPNPOE = is.read_uint32()?;
-                },
-                16 => {
+                32 => {
                     self.IIBJDCKHAKE = is.read_uint32()?;
                 },
-                24 => {
+                72 => {
+                    self.DNLAFCPNPOE = is.read_uint32()?;
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.MLKBOBIEAPL = is.read_bool()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MLKBOBIEAPL != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.GLOAGDBEKDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.IIBJDCKHAKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IIBJDCKHAKE);
+        }
+        if self.DNLAFCPNPOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DNLAFCPNPOE);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DNLAFCPNPOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DNLAFCPNPOE);
-        }
-        if self.IIBJDCKHAKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IIBJDCKHAKE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        if self.MLKBOBIEAPL != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.MLKBOBIEAPL != false {
+            os.write_bool(1, self.MLKBOBIEAPL)?;
+        }
         if let Some(v) = self.GLOAGDBEKDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.DNLAFCPNPOE != 0 {
-            os.write_uint32(8, self.DNLAFCPNPOE)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.IIBJDCKHAKE != 0 {
-            os.write_uint32(2, self.IIBJDCKHAKE)?;
+            os.write_uint32(4, self.IIBJDCKHAKE)?;
+        }
+        if self.DNLAFCPNPOE != 0 {
+            os.write_uint32(9, self.DNLAFCPNPOE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
-        if self.MLKBOBIEAPL != false {
-            os.write_bool(11, self.MLKBOBIEAPL)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.GLOAGDBEKDP.clear();
-        self.reward.clear();
-        self.DNLAFCPNPOE = 0;
-        self.IIBJDCKHAKE = 0;
-        self.retcode = 0;
         self.MLKBOBIEAPL = false;
+        self.GLOAGDBEKDP.clear();
+        self.IIBJDCKHAKE = 0;
+        self.DNLAFCPNPOE = 0;
+        self.retcode = 0;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDealAvatarEventOptionItemScRsp {
         static instance: PlanetFesDealAvatarEventOptionItemScRsp = PlanetFesDealAvatarEventOptionItemScRsp {
-            GLOAGDBEKDP: ::protobuf::MessageField::none(),
-            reward: ::protobuf::MessageField::none(),
-            DNLAFCPNPOE: 0,
-            IIBJDCKHAKE: 0,
-            retcode: 0,
             MLKBOBIEAPL: false,
+            GLOAGDBEKDP: ::protobuf::MessageField::none(),
+            IIBJDCKHAKE: 0,
+            DNLAFCPNPOE: 0,
+            retcode: 0,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDealAvatarEventOptionItemSc
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-PlanetFesDealAvatarEventOptionItemScRsp.proto\x1a\x11GNMCIEPEBPK.prot\
     o\x1a\x11OJHHACMHFKA.proto\"\xff\x01\n'PlanetFesDealAvatarEventOptionIte\
-    mScRsp\x12.\n\x0bGLOAGDBEKDP\x18\x05\x20\x01(\x0b2\x0c.OJHHACMHFKAR\x0bG\
-    LOAGDBEKDP\x12$\n\x06reward\x18\n\x20\x01(\x0b2\x0c.GNMCIEPEBPKR\x06rewa\
-    rd\x12\x20\n\x0bDNLAFCPNPOE\x18\x08\x20\x01(\rR\x0bDNLAFCPNPOE\x12\x20\n\
-    \x0bIIBJDCKHAKE\x18\x02\x20\x01(\rR\x0bIIBJDCKHAKE\x12\x18\n\x07retcode\
-    \x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bMLKBOBIEAPL\x18\x0b\x20\x01\
-    (\x08R\x0bMLKBOBIEAPLb\x06proto3\
+    mScRsp\x12\x20\n\x0bMLKBOBIEAPL\x18\x01\x20\x01(\x08R\x0bMLKBOBIEAPL\x12\
+    .\n\x0bGLOAGDBEKDP\x18\x02\x20\x01(\x0b2\x0c.OJHHACMHFKAR\x0bGLOAGDBEKDP\
+    \x12\x20\n\x0bIIBJDCKHAKE\x18\x04\x20\x01(\rR\x0bIIBJDCKHAKE\x12\x20\n\
+    \x0bDNLAFCPNPOE\x18\t\x20\x01(\rR\x0bDNLAFCPNPOE\x12\x18\n\x07retcode\
+    \x18\n\x20\x01(\rR\x07retcode\x12$\n\x06reward\x18\x0e\x20\x01(\x0b2\x0c\
+    .GNMCIEPEBPKR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

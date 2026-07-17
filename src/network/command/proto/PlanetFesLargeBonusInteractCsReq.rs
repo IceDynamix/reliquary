@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesLargeBonusInteractCsReq {
     // message fields
+    // @@protoc_insertion_point(field:PlanetFesLargeBonusInteractCsReq.IABOGPKEAGF)
+    pub IABOGPKEAGF: u32,
     // @@protoc_insertion_point(field:PlanetFesLargeBonusInteractCsReq.MMKABABENKE)
     pub MMKABABENKE: u32,
     // @@protoc_insertion_point(field:PlanetFesLargeBonusInteractCsReq.DNBKKDBFFAJ)
     pub DNBKKDBFFAJ: u32,
-    // @@protoc_insertion_point(field:PlanetFesLargeBonusInteractCsReq.IABOGPKEAGF)
-    pub IABOGPKEAGF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesLargeBonusInteractCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl PlanetFesLargeBonusInteractCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IABOGPKEAGF",
+            |m: &PlanetFesLargeBonusInteractCsReq| { &m.IABOGPKEAGF },
+            |m: &mut PlanetFesLargeBonusInteractCsReq| { &mut m.IABOGPKEAGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MMKABABENKE",
             |m: &PlanetFesLargeBonusInteractCsReq| { &m.MMKABABENKE },
             |m: &mut PlanetFesLargeBonusInteractCsReq| { &mut m.MMKABABENKE },
@@ -62,11 +67,6 @@ impl PlanetFesLargeBonusInteractCsReq {
             "DNBKKDBFFAJ",
             |m: &PlanetFesLargeBonusInteractCsReq| { &m.DNBKKDBFFAJ },
             |m: &mut PlanetFesLargeBonusInteractCsReq| { &mut m.DNBKKDBFFAJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IABOGPKEAGF",
-            |m: &PlanetFesLargeBonusInteractCsReq| { &m.IABOGPKEAGF },
-            |m: &mut PlanetFesLargeBonusInteractCsReq| { &mut m.IABOGPKEAGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesLargeBonusInteractCsReq>(
             "PlanetFesLargeBonusInteractCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesLargeBonusInteractCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                8 => {
+                    self.IABOGPKEAGF = is.read_uint32()?;
+                },
+                16 => {
                     self.MMKABABENKE = is.read_uint32()?;
                 },
-                8 => {
+                32 => {
                     self.DNBKKDBFFAJ = is.read_uint32()?;
-                },
-                72 => {
-                    self.IABOGPKEAGF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlanetFesLargeBonusInteractCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IABOGPKEAGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.IABOGPKEAGF);
+        }
         if self.MMKABABENKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MMKABABENKE);
+            my_size += ::protobuf::rt::uint32_size(2, self.MMKABABENKE);
         }
         if self.DNBKKDBFFAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DNBKKDBFFAJ);
-        }
-        if self.IABOGPKEAGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IABOGPKEAGF);
+            my_size += ::protobuf::rt::uint32_size(4, self.DNBKKDBFFAJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PlanetFesLargeBonusInteractCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.IABOGPKEAGF != 0 {
+            os.write_uint32(1, self.IABOGPKEAGF)?;
+        }
         if self.MMKABABENKE != 0 {
-            os.write_uint32(15, self.MMKABABENKE)?;
+            os.write_uint32(2, self.MMKABABENKE)?;
         }
         if self.DNBKKDBFFAJ != 0 {
-            os.write_uint32(1, self.DNBKKDBFFAJ)?;
-        }
-        if self.IABOGPKEAGF != 0 {
-            os.write_uint32(9, self.IABOGPKEAGF)?;
+            os.write_uint32(4, self.DNBKKDBFFAJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PlanetFesLargeBonusInteractCsReq {
     }
 
     fn clear(&mut self) {
+        self.IABOGPKEAGF = 0;
         self.MMKABABENKE = 0;
         self.DNBKKDBFFAJ = 0;
-        self.IABOGPKEAGF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesLargeBonusInteractCsReq {
         static instance: PlanetFesLargeBonusInteractCsReq = PlanetFesLargeBonusInteractCsReq {
+            IABOGPKEAGF: 0,
             MMKABABENKE: 0,
             DNBKKDBFFAJ: 0,
-            IABOGPKEAGF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesLargeBonusInteractCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlanetFesLargeBonusInteractCsReq.proto\"\x88\x01\n\x20PlanetFesLargeB\
-    onusInteractCsReq\x12\x20\n\x0bMMKABABENKE\x18\x0f\x20\x01(\rR\x0bMMKABA\
-    BENKE\x12\x20\n\x0bDNBKKDBFFAJ\x18\x01\x20\x01(\rR\x0bDNBKKDBFFAJ\x12\
-    \x20\n\x0bIABOGPKEAGF\x18\t\x20\x01(\rR\x0bIABOGPKEAGFb\x06proto3\
+    onusInteractCsReq\x12\x20\n\x0bIABOGPKEAGF\x18\x01\x20\x01(\rR\x0bIABOGP\
+    KEAGF\x12\x20\n\x0bMMKABABENKE\x18\x02\x20\x01(\rR\x0bMMKABABENKE\x12\
+    \x20\n\x0bDNBKKDBFFAJ\x18\x04\x20\x01(\rR\x0bDNBKKDBFFAJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FriendRecommendInfo {
     // message fields
-    // @@protoc_insertion_point(field:FriendRecommendInfo.player_info)
-    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // @@protoc_insertion_point(field:FriendRecommendInfo.JINLAHLMDLN)
     pub JINLAHLMDLN: bool,
+    // @@protoc_insertion_point(field:FriendRecommendInfo.player_info)
+    pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:FriendRecommendInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl FriendRecommendInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_info",
-            |m: &FriendRecommendInfo| { &m.player_info },
-            |m: &mut FriendRecommendInfo| { &mut m.player_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JINLAHLMDLN",
             |m: &FriendRecommendInfo| { &m.JINLAHLMDLN },
             |m: &mut FriendRecommendInfo| { &mut m.JINLAHLMDLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_info",
+            |m: &FriendRecommendInfo| { &m.player_info },
+            |m: &mut FriendRecommendInfo| { &mut m.player_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendRecommendInfo>(
             "FriendRecommendInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FriendRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
-                },
-                112 => {
+                8 => {
                     self.JINLAHLMDLN = is.read_bool()?;
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for FriendRecommendInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JINLAHLMDLN != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.JINLAHLMDLN != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for FriendRecommendInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.JINLAHLMDLN != false {
-            os.write_bool(14, self.JINLAHLMDLN)?;
+            os.write_bool(1, self.JINLAHLMDLN)?;
+        }
+        if let Some(v) = self.player_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for FriendRecommendInfo {
     }
 
     fn clear(&mut self) {
-        self.player_info.clear();
         self.JINLAHLMDLN = false;
+        self.player_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendRecommendInfo {
         static instance: FriendRecommendInfo = FriendRecommendInfo {
-            player_info: ::protobuf::MessageField::none(),
             JINLAHLMDLN: false,
+            player_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for FriendRecommendInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FriendRecommendInfo.proto\x1a\x16PlayerSimpleInfo.proto\"k\n\x13Fr\
-    iendRecommendInfo\x122\n\x0bplayer_info\x18\x01\x20\x01(\x0b2\x11.Player\
-    SimpleInfoR\nplayerInfo\x12\x20\n\x0bJINLAHLMDLN\x18\x0e\x20\x01(\x08R\
-    \x0bJINLAHLMDLNb\x06proto3\
+    iendRecommendInfo\x12\x20\n\x0bJINLAHLMDLN\x18\x01\x20\x01(\x08R\x0bJINL\
+    AHLMDLN\x122\n\x0bplayer_info\x18\n\x20\x01(\x0b2\x11.PlayerSimpleInfoR\
+    \nplayerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

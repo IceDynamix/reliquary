@@ -28,22 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OFMCKLEMOMP {
     // message fields
-    // @@protoc_insertion_point(field:OFMCKLEMOMP.ONECEAIJLAM)
-    pub ONECEAIJLAM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OFMCKLEMOMP.GOOMJPLEIKL)
-    pub GOOMJPLEIKL: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:OFMCKLEMOMP.BLDFABMEGIP)
-    pub BLDFABMEGIP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OFMCKLEMOMP.LGIPILAKIKB)
     pub LGIPILAKIKB: u32,
-    // @@protoc_insertion_point(field:OFMCKLEMOMP.MLCAJKJLBFJ)
-    pub MLCAJKJLBFJ: u32,
-    // @@protoc_insertion_point(field:OFMCKLEMOMP.OELJGANLKLJ)
-    pub OELJGANLKLJ: bool,
+    // @@protoc_insertion_point(field:OFMCKLEMOMP.ONECEAIJLAM)
+    pub ONECEAIJLAM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OFMCKLEMOMP.OJCEEICJBGI)
     pub OJCEEICJBGI: u32,
     // @@protoc_insertion_point(field:OFMCKLEMOMP.DENIIHGKNFM)
     pub DENIIHGKNFM: u32,
+    // @@protoc_insertion_point(field:OFMCKLEMOMP.GOOMJPLEIKL)
+    pub GOOMJPLEIKL: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:OFMCKLEMOMP.can_roll)
+    pub can_roll: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OFMCKLEMOMP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,37 +57,17 @@ impl OFMCKLEMOMP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(8);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ONECEAIJLAM",
-            |m: &OFMCKLEMOMP| { &m.ONECEAIJLAM },
-            |m: &mut OFMCKLEMOMP| { &mut m.ONECEAIJLAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "GOOMJPLEIKL",
-            |m: &OFMCKLEMOMP| { &m.GOOMJPLEIKL },
-            |m: &mut OFMCKLEMOMP| { &mut m.GOOMJPLEIKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BLDFABMEGIP",
-            |m: &OFMCKLEMOMP| { &m.BLDFABMEGIP },
-            |m: &mut OFMCKLEMOMP| { &mut m.BLDFABMEGIP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGIPILAKIKB",
             |m: &OFMCKLEMOMP| { &m.LGIPILAKIKB },
             |m: &mut OFMCKLEMOMP| { &mut m.LGIPILAKIKB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLCAJKJLBFJ",
-            |m: &OFMCKLEMOMP| { &m.MLCAJKJLBFJ },
-            |m: &mut OFMCKLEMOMP| { &mut m.MLCAJKJLBFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OELJGANLKLJ",
-            |m: &OFMCKLEMOMP| { &m.OELJGANLKLJ },
-            |m: &mut OFMCKLEMOMP| { &mut m.OELJGANLKLJ },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ONECEAIJLAM",
+            |m: &OFMCKLEMOMP| { &m.ONECEAIJLAM },
+            |m: &mut OFMCKLEMOMP| { &mut m.ONECEAIJLAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OJCEEICJBGI",
@@ -102,6 +78,16 @@ impl OFMCKLEMOMP {
             "DENIIHGKNFM",
             |m: &OFMCKLEMOMP| { &m.DENIIHGKNFM },
             |m: &mut OFMCKLEMOMP| { &mut m.DENIIHGKNFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "GOOMJPLEIKL",
+            |m: &OFMCKLEMOMP| { &m.GOOMJPLEIKL },
+            |m: &mut OFMCKLEMOMP| { &mut m.GOOMJPLEIKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "can_roll",
+            |m: &OFMCKLEMOMP| { &m.can_roll },
+            |m: &mut OFMCKLEMOMP| { &mut m.can_roll },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OFMCKLEMOMP>(
             "OFMCKLEMOMP",
@@ -121,35 +107,26 @@ impl ::protobuf::Message for OFMCKLEMOMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ONECEAIJLAM)?;
-                },
-                16 => {
-                    self.ONECEAIJLAM.push(is.read_uint32()?);
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOMJPLEIKL)?;
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BLDFABMEGIP)?;
-                },
-                24 => {
-                    self.BLDFABMEGIP.push(is.read_uint32()?);
-                },
-                104 => {
+                8 => {
                     self.LGIPILAKIKB = is.read_uint32()?;
                 },
-                32 => {
-                    self.MLCAJKJLBFJ = is.read_uint32()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ONECEAIJLAM)?;
                 },
-                72 => {
-                    self.OELJGANLKLJ = is.read_bool()?;
+                24 => {
+                    self.ONECEAIJLAM.push(is.read_uint32()?);
                 },
-                8 => {
+                40 => {
                     self.OJCEEICJBGI = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.DENIIHGKNFM = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOOMJPLEIKL)?;
+                },
+                120 => {
+                    self.can_roll = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -163,26 +140,22 @@ impl ::protobuf::Message for OFMCKLEMOMP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ONECEAIJLAM);
+        if self.LGIPILAKIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LGIPILAKIKB);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.ONECEAIJLAM);
+        if self.OJCEEICJBGI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.OJCEEICJBGI);
+        }
+        if self.DENIIHGKNFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DENIIHGKNFM);
+        }
         if let Some(v) = self.GOOMJPLEIKL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BLDFABMEGIP);
-        if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LGIPILAKIKB);
-        }
-        if self.MLCAJKJLBFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MLCAJKJLBFJ);
-        }
-        if self.OELJGANLKLJ != false {
+        if self.can_roll != false {
             my_size += 1 + 1;
-        }
-        if self.OJCEEICJBGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OJCEEICJBGI);
-        }
-        if self.DENIIHGKNFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DENIIHGKNFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -190,25 +163,21 @@ impl ::protobuf::Message for OFMCKLEMOMP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.ONECEAIJLAM)?;
-        if let Some(v) = self.GOOMJPLEIKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.BLDFABMEGIP)?;
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(13, self.LGIPILAKIKB)?;
+            os.write_uint32(1, self.LGIPILAKIKB)?;
         }
-        if self.MLCAJKJLBFJ != 0 {
-            os.write_uint32(4, self.MLCAJKJLBFJ)?;
-        }
-        if self.OELJGANLKLJ != false {
-            os.write_bool(9, self.OELJGANLKLJ)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.ONECEAIJLAM)?;
         if self.OJCEEICJBGI != 0 {
-            os.write_uint32(1, self.OJCEEICJBGI)?;
+            os.write_uint32(5, self.OJCEEICJBGI)?;
         }
         if self.DENIIHGKNFM != 0 {
-            os.write_uint32(10, self.DENIIHGKNFM)?;
+            os.write_uint32(8, self.DENIIHGKNFM)?;
+        }
+        if let Some(v) = self.GOOMJPLEIKL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if self.can_roll != false {
+            os.write_bool(15, self.can_roll)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,27 +196,23 @@ impl ::protobuf::Message for OFMCKLEMOMP {
     }
 
     fn clear(&mut self) {
-        self.ONECEAIJLAM.clear();
-        self.GOOMJPLEIKL.clear();
-        self.BLDFABMEGIP.clear();
         self.LGIPILAKIKB = 0;
-        self.MLCAJKJLBFJ = 0;
-        self.OELJGANLKLJ = false;
+        self.ONECEAIJLAM.clear();
         self.OJCEEICJBGI = 0;
         self.DENIIHGKNFM = 0;
+        self.GOOMJPLEIKL.clear();
+        self.can_roll = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OFMCKLEMOMP {
         static instance: OFMCKLEMOMP = OFMCKLEMOMP {
-            ONECEAIJLAM: ::std::vec::Vec::new(),
-            GOOMJPLEIKL: ::protobuf::MessageField::none(),
-            BLDFABMEGIP: ::std::vec::Vec::new(),
             LGIPILAKIKB: 0,
-            MLCAJKJLBFJ: 0,
-            OELJGANLKLJ: false,
+            ONECEAIJLAM: ::std::vec::Vec::new(),
             OJCEEICJBGI: 0,
             DENIIHGKNFM: 0,
+            GOOMJPLEIKL: ::protobuf::MessageField::none(),
+            can_roll: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -272,15 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for OFMCKLEMOMP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OFMCKLEMOMP.proto\x1a\x12ItemCostData.proto\"\xac\x02\n\x0bOFMCKLE\
-    MOMP\x12\x20\n\x0bONECEAIJLAM\x18\x02\x20\x03(\rR\x0bONECEAIJLAM\x12/\n\
-    \x0bGOOMJPLEIKL\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0bGOOMJPLEIKL\x12\
-    \x20\n\x0bBLDFABMEGIP\x18\x03\x20\x03(\rR\x0bBLDFABMEGIP\x12\x20\n\x0bLG\
-    IPILAKIKB\x18\r\x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\n\x0bMLCAJKJLBFJ\x18\
-    \x04\x20\x01(\rR\x0bMLCAJKJLBFJ\x12\x20\n\x0bOELJGANLKLJ\x18\t\x20\x01(\
-    \x08R\x0bOELJGANLKLJ\x12\x20\n\x0bOJCEEICJBGI\x18\x01\x20\x01(\rR\x0bOJC\
-    EEICJBGI\x12\x20\n\x0bDENIIHGKNFM\x18\n\x20\x01(\rR\x0bDENIIHGKNFMb\x06p\
-    roto3\
+    \n\x11OFMCKLEMOMP.proto\x1a\x12ItemCostData.proto\"\xe1\x01\n\x0bOFMCKLE\
+    MOMP\x12\x20\n\x0bLGIPILAKIKB\x18\x01\x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\
+    \n\x0bONECEAIJLAM\x18\x03\x20\x03(\rR\x0bONECEAIJLAM\x12\x20\n\x0bOJCEEI\
+    CJBGI\x18\x05\x20\x01(\rR\x0bOJCEEICJBGI\x12\x20\n\x0bDENIIHGKNFM\x18\
+    \x08\x20\x01(\rR\x0bDENIIHGKNFM\x12/\n\x0bGOOMJPLEIKL\x18\t\x20\x01(\x0b\
+    2\r.ItemCostDataR\x0bGOOMJPLEIKL\x12\x19\n\x08can_roll\x18\x0f\x20\x01(\
+    \x08R\x07canRollb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

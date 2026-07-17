@@ -29,46 +29,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMapRotationType {
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_NLCDGIPGFDJ)
     LLGNEHDEAFB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_DONNNJLGABE)
-    LLGNEHDEAFB_DONNNJLGABE = 6854,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_EJELBNKLFDJ)
-    LLGNEHDEAFB_EJELBNKLFDJ = 6842,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_HIOAFNDKBKO)
-    LLGNEHDEAFB_HIOAFNDKBKO = 6810,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GEEJLMENDGC)
-    LLGNEHDEAFB_GEEJLMENDGC = 6881,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_JBFMGCIDLKE)
-    LLGNEHDEAFB_JBFMGCIDLKE = 6812,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_NHPFKHBLBDD)
-    LLGNEHDEAFB_NHPFKHBLBDD = 6836,
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_BGKIMCFIDJP)
-    LLGNEHDEAFB_BGKIMCFIDJP = 6883,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_OKNOECBLJHG)
-    LLGNEHDEAFB_OKNOECBLJHG = 6824,
+    LLGNEHDEAFB_BGKIMCFIDJP = 6838,
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_IIDKFIGMHHE)
-    LLGNEHDEAFB_IIDKFIGMHHE = 6815,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GMPGIIIILIH)
-    LLGNEHDEAFB_GMPGIIIILIH = 6803,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_CEOGMABPNGP)
-    LLGNEHDEAFB_CEOGMABPNGP = 6887,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_BLAKAIFHDMA)
-    LLGNEHDEAFB_BLAKAIFHDMA = 6827,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_NNFHIIFJILF)
-    LLGNEHDEAFB_NNFHIIFJILF = 6880,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_IKNEABEHAGO)
-    LLGNEHDEAFB_IKNEABEHAGO = 6809,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GOELJOLEGHB)
-    LLGNEHDEAFB_GOELJOLEGHB = 6873,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_PMJCDLIOAON)
-    LLGNEHDEAFB_PMJCDLIOAON = 6813,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_FOKPNCMNKDJ)
-    LLGNEHDEAFB_FOKPNCMNKDJ = 6861,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_HDJLHHPODKL)
-    LLGNEHDEAFB_HDJLHHPODKL = 6829,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_OMBDFNNCLHC)
-    LLGNEHDEAFB_OMBDFNNCLHC = 6876,
+    LLGNEHDEAFB_IIDKFIGMHHE = 6886,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_OKNOECBLJHG)
+    LLGNEHDEAFB_OKNOECBLJHG = 6845,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_DONNNJLGABE)
+    LLGNEHDEAFB_DONNNJLGABE = 6833,
     // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_EGJJGMJHLHC)
-    LLGNEHDEAFB_EGJJGMJHLHC = 6838,
+    LLGNEHDEAFB_EGJJGMJHLHC = 6836,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_NHPFKHBLBDD)
+    LLGNEHDEAFB_NHPFKHBLBDD = 6888,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_NNFHIIFJILF)
+    LLGNEHDEAFB_NNFHIIFJILF = 6893,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GMPGIIIILIH)
+    LLGNEHDEAFB_GMPGIIIILIH = 6878,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_JBFMGCIDLKE)
+    LLGNEHDEAFB_JBFMGCIDLKE = 6840,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_BLAKAIFHDMA)
+    LLGNEHDEAFB_BLAKAIFHDMA = 6858,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_HIOAFNDKBKO)
+    LLGNEHDEAFB_HIOAFNDKBKO = 6826,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_CEOGMABPNGP)
+    LLGNEHDEAFB_CEOGMABPNGP = 6813,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GEEJLMENDGC)
+    LLGNEHDEAFB_GEEJLMENDGC = 6847,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_GOELJOLEGHB)
+    LLGNEHDEAFB_GOELJOLEGHB = 6825,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_HDJLHHPODKL)
+    LLGNEHDEAFB_HDJLHHPODKL = 6871,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_FOKPNCMNKDJ)
+    LLGNEHDEAFB_FOKPNCMNKDJ = 6848,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_PMJCDLIOAON)
+    LLGNEHDEAFB_PMJCDLIOAON = 6881,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_EJELBNKLFDJ)
+    LLGNEHDEAFB_EJELBNKLFDJ = 6804,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.LLGNEHDEAFB_OMBDFNNCLHC)
+    LLGNEHDEAFB_OMBDFNNCLHC = 6811,
 }
 
 impl ::protobuf::Enum for CmdMapRotationType {
@@ -81,26 +79,25 @@ impl ::protobuf::Enum for CmdMapRotationType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMapRotationType> {
         match value {
             0 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NLCDGIPGFDJ),
-            6854 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE),
-            6842 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ),
-            6810 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO),
-            6881 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC),
-            6812 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE),
-            6836 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD),
-            6883 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP),
-            6824 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG),
-            6815 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE),
-            6803 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH),
-            6887 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP),
-            6827 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA),
-            6880 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF),
-            6809 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_IKNEABEHAGO),
-            6873 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB),
-            6813 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON),
-            6861 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ),
-            6829 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL),
-            6876 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC),
-            6838 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC),
+            6838 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP),
+            6886 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE),
+            6845 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG),
+            6833 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE),
+            6836 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC),
+            6888 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD),
+            6893 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF),
+            6878 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH),
+            6840 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE),
+            6858 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA),
+            6826 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO),
+            6813 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP),
+            6847 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC),
+            6825 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB),
+            6871 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL),
+            6848 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ),
+            6881 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON),
+            6804 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ),
+            6811 => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC),
             _ => ::std::option::Option::None
         }
     }
@@ -108,52 +105,50 @@ impl ::protobuf::Enum for CmdMapRotationType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMapRotationType> {
         match str {
             "LLGNEHDEAFB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NLCDGIPGFDJ),
-            "LLGNEHDEAFB_DONNNJLGABE" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE),
-            "LLGNEHDEAFB_EJELBNKLFDJ" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ),
-            "LLGNEHDEAFB_HIOAFNDKBKO" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO),
-            "LLGNEHDEAFB_GEEJLMENDGC" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC),
-            "LLGNEHDEAFB_JBFMGCIDLKE" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE),
-            "LLGNEHDEAFB_NHPFKHBLBDD" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD),
             "LLGNEHDEAFB_BGKIMCFIDJP" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP),
-            "LLGNEHDEAFB_OKNOECBLJHG" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG),
             "LLGNEHDEAFB_IIDKFIGMHHE" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE),
-            "LLGNEHDEAFB_GMPGIIIILIH" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH),
-            "LLGNEHDEAFB_CEOGMABPNGP" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP),
-            "LLGNEHDEAFB_BLAKAIFHDMA" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA),
-            "LLGNEHDEAFB_NNFHIIFJILF" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF),
-            "LLGNEHDEAFB_IKNEABEHAGO" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_IKNEABEHAGO),
-            "LLGNEHDEAFB_GOELJOLEGHB" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB),
-            "LLGNEHDEAFB_PMJCDLIOAON" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON),
-            "LLGNEHDEAFB_FOKPNCMNKDJ" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ),
-            "LLGNEHDEAFB_HDJLHHPODKL" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL),
-            "LLGNEHDEAFB_OMBDFNNCLHC" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC),
+            "LLGNEHDEAFB_OKNOECBLJHG" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG),
+            "LLGNEHDEAFB_DONNNJLGABE" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE),
             "LLGNEHDEAFB_EGJJGMJHLHC" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC),
+            "LLGNEHDEAFB_NHPFKHBLBDD" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD),
+            "LLGNEHDEAFB_NNFHIIFJILF" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF),
+            "LLGNEHDEAFB_GMPGIIIILIH" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH),
+            "LLGNEHDEAFB_JBFMGCIDLKE" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE),
+            "LLGNEHDEAFB_BLAKAIFHDMA" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA),
+            "LLGNEHDEAFB_HIOAFNDKBKO" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO),
+            "LLGNEHDEAFB_CEOGMABPNGP" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP),
+            "LLGNEHDEAFB_GEEJLMENDGC" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC),
+            "LLGNEHDEAFB_GOELJOLEGHB" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB),
+            "LLGNEHDEAFB_HDJLHHPODKL" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL),
+            "LLGNEHDEAFB_FOKPNCMNKDJ" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ),
+            "LLGNEHDEAFB_PMJCDLIOAON" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON),
+            "LLGNEHDEAFB_EJELBNKLFDJ" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ),
+            "LLGNEHDEAFB_OMBDFNNCLHC" => ::std::option::Option::Some(CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMapRotationType] = &[
         CmdMapRotationType::LLGNEHDEAFB_NLCDGIPGFDJ,
-        CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE,
-        CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ,
-        CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO,
-        CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC,
-        CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE,
-        CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD,
         CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP,
-        CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG,
         CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE,
-        CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH,
-        CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP,
-        CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA,
-        CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF,
-        CmdMapRotationType::LLGNEHDEAFB_IKNEABEHAGO,
-        CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB,
-        CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON,
-        CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ,
-        CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL,
-        CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC,
+        CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG,
+        CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE,
         CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC,
+        CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD,
+        CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF,
+        CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH,
+        CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE,
+        CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA,
+        CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO,
+        CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP,
+        CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC,
+        CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB,
+        CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL,
+        CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ,
+        CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON,
+        CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ,
+        CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC,
     ];
 }
 
@@ -166,26 +161,25 @@ impl ::protobuf::EnumFull for CmdMapRotationType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMapRotationType::LLGNEHDEAFB_NLCDGIPGFDJ => 0,
-            CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE => 1,
-            CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ => 2,
-            CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO => 3,
-            CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC => 4,
-            CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE => 5,
+            CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP => 1,
+            CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE => 2,
+            CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG => 3,
+            CmdMapRotationType::LLGNEHDEAFB_DONNNJLGABE => 4,
+            CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC => 5,
             CmdMapRotationType::LLGNEHDEAFB_NHPFKHBLBDD => 6,
-            CmdMapRotationType::LLGNEHDEAFB_BGKIMCFIDJP => 7,
-            CmdMapRotationType::LLGNEHDEAFB_OKNOECBLJHG => 8,
-            CmdMapRotationType::LLGNEHDEAFB_IIDKFIGMHHE => 9,
-            CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH => 10,
-            CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP => 11,
-            CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA => 12,
-            CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF => 13,
-            CmdMapRotationType::LLGNEHDEAFB_IKNEABEHAGO => 14,
-            CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB => 15,
-            CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON => 16,
-            CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ => 17,
-            CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL => 18,
+            CmdMapRotationType::LLGNEHDEAFB_NNFHIIFJILF => 7,
+            CmdMapRotationType::LLGNEHDEAFB_GMPGIIIILIH => 8,
+            CmdMapRotationType::LLGNEHDEAFB_JBFMGCIDLKE => 9,
+            CmdMapRotationType::LLGNEHDEAFB_BLAKAIFHDMA => 10,
+            CmdMapRotationType::LLGNEHDEAFB_HIOAFNDKBKO => 11,
+            CmdMapRotationType::LLGNEHDEAFB_CEOGMABPNGP => 12,
+            CmdMapRotationType::LLGNEHDEAFB_GEEJLMENDGC => 13,
+            CmdMapRotationType::LLGNEHDEAFB_GOELJOLEGHB => 14,
+            CmdMapRotationType::LLGNEHDEAFB_HDJLHHPODKL => 15,
+            CmdMapRotationType::LLGNEHDEAFB_FOKPNCMNKDJ => 16,
+            CmdMapRotationType::LLGNEHDEAFB_PMJCDLIOAON => 17,
+            CmdMapRotationType::LLGNEHDEAFB_EJELBNKLFDJ => 18,
             CmdMapRotationType::LLGNEHDEAFB_OMBDFNNCLHC => 19,
-            CmdMapRotationType::LLGNEHDEAFB_EGJJGMJHLHC => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -204,21 +198,20 @@ impl CmdMapRotationType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdMapRotationType.proto*\x89\x05\n\x12CmdMapRotationType\x12\x1b\
-    \n\x17LLGNEHDEAFB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LLGNEHDEAFB_DONNNJLGABE\
-    \x10\xc65\x12\x1c\n\x17LLGNEHDEAFB_EJELBNKLFDJ\x10\xba5\x12\x1c\n\x17LLG\
-    NEHDEAFB_HIOAFNDKBKO\x10\x9a5\x12\x1c\n\x17LLGNEHDEAFB_GEEJLMENDGC\x10\
-    \xe15\x12\x1c\n\x17LLGNEHDEAFB_JBFMGCIDLKE\x10\x9c5\x12\x1c\n\x17LLGNEHD\
-    EAFB_NHPFKHBLBDD\x10\xb45\x12\x1c\n\x17LLGNEHDEAFB_BGKIMCFIDJP\x10\xe35\
-    \x12\x1c\n\x17LLGNEHDEAFB_OKNOECBLJHG\x10\xa85\x12\x1c\n\x17LLGNEHDEAFB_\
-    IIDKFIGMHHE\x10\x9f5\x12\x1c\n\x17LLGNEHDEAFB_GMPGIIIILIH\x10\x935\x12\
-    \x1c\n\x17LLGNEHDEAFB_CEOGMABPNGP\x10\xe75\x12\x1c\n\x17LLGNEHDEAFB_BLAK\
-    AIFHDMA\x10\xab5\x12\x1c\n\x17LLGNEHDEAFB_NNFHIIFJILF\x10\xe05\x12\x1c\n\
-    \x17LLGNEHDEAFB_IKNEABEHAGO\x10\x995\x12\x1c\n\x17LLGNEHDEAFB_GOELJOLEGH\
-    B\x10\xd95\x12\x1c\n\x17LLGNEHDEAFB_PMJCDLIOAON\x10\x9d5\x12\x1c\n\x17LL\
-    GNEHDEAFB_FOKPNCMNKDJ\x10\xcd5\x12\x1c\n\x17LLGNEHDEAFB_HDJLHHPODKL\x10\
-    \xad5\x12\x1c\n\x17LLGNEHDEAFB_OMBDFNNCLHC\x10\xdc5\x12\x1c\n\x17LLGNEHD\
-    EAFB_EGJJGMJHLHC\x10\xb65b\x06proto3\
+    \n\x18CmdMapRotationType.proto*\xeb\x04\n\x12CmdMapRotationType\x12\x1b\
+    \n\x17LLGNEHDEAFB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LLGNEHDEAFB_BGKIMCFIDJP\
+    \x10\xb65\x12\x1c\n\x17LLGNEHDEAFB_IIDKFIGMHHE\x10\xe65\x12\x1c\n\x17LLG\
+    NEHDEAFB_OKNOECBLJHG\x10\xbd5\x12\x1c\n\x17LLGNEHDEAFB_DONNNJLGABE\x10\
+    \xb15\x12\x1c\n\x17LLGNEHDEAFB_EGJJGMJHLHC\x10\xb45\x12\x1c\n\x17LLGNEHD\
+    EAFB_NHPFKHBLBDD\x10\xe85\x12\x1c\n\x17LLGNEHDEAFB_NNFHIIFJILF\x10\xed5\
+    \x12\x1c\n\x17LLGNEHDEAFB_GMPGIIIILIH\x10\xde5\x12\x1c\n\x17LLGNEHDEAFB_\
+    JBFMGCIDLKE\x10\xb85\x12\x1c\n\x17LLGNEHDEAFB_BLAKAIFHDMA\x10\xca5\x12\
+    \x1c\n\x17LLGNEHDEAFB_HIOAFNDKBKO\x10\xaa5\x12\x1c\n\x17LLGNEHDEAFB_CEOG\
+    MABPNGP\x10\x9d5\x12\x1c\n\x17LLGNEHDEAFB_GEEJLMENDGC\x10\xbf5\x12\x1c\n\
+    \x17LLGNEHDEAFB_GOELJOLEGHB\x10\xa95\x12\x1c\n\x17LLGNEHDEAFB_HDJLHHPODK\
+    L\x10\xd75\x12\x1c\n\x17LLGNEHDEAFB_FOKPNCMNKDJ\x10\xc05\x12\x1c\n\x17LL\
+    GNEHDEAFB_PMJCDLIOAON\x10\xe15\x12\x1c\n\x17LLGNEHDEAFB_EJELBNKLFDJ\x10\
+    \x945\x12\x1c\n\x17LLGNEHDEAFB_OMBDFNNCLHC\x10\x9b5b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOIAMDKEFKH {
     // message fields
+    // @@protoc_insertion_point(field:KOIAMDKEFKH.CPFCNOAJCGK)
+    pub CPFCNOAJCGK: ::protobuf::EnumOrUnknown<super::GridFightEquipDressSource::GridFightEquipDressSource>,
     // @@protoc_insertion_point(field:KOIAMDKEFKH.MDNAGANGNKK)
     pub MDNAGANGNKK: u32,
     // @@protoc_insertion_point(field:KOIAMDKEFKH.PEBCBLBLMPH)
     pub PEBCBLBLMPH: u32,
-    // @@protoc_insertion_point(field:KOIAMDKEFKH.CPFCNOAJCGK)
-    pub CPFCNOAJCGK: ::protobuf::EnumOrUnknown<super::GridFightEquipDressSource::GridFightEquipDressSource>,
     // special fields
     // @@protoc_insertion_point(special_field:KOIAMDKEFKH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl KOIAMDKEFKH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CPFCNOAJCGK",
+            |m: &KOIAMDKEFKH| { &m.CPFCNOAJCGK },
+            |m: &mut KOIAMDKEFKH| { &mut m.CPFCNOAJCGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDNAGANGNKK",
             |m: &KOIAMDKEFKH| { &m.MDNAGANGNKK },
             |m: &mut KOIAMDKEFKH| { &mut m.MDNAGANGNKK },
@@ -62,11 +67,6 @@ impl KOIAMDKEFKH {
             "PEBCBLBLMPH",
             |m: &KOIAMDKEFKH| { &m.PEBCBLBLMPH },
             |m: &mut KOIAMDKEFKH| { &mut m.PEBCBLBLMPH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPFCNOAJCGK",
-            |m: &KOIAMDKEFKH| { &m.CPFCNOAJCGK },
-            |m: &mut KOIAMDKEFKH| { &mut m.CPFCNOAJCGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOIAMDKEFKH>(
             "KOIAMDKEFKH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KOIAMDKEFKH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                16 => {
+                    self.CPFCNOAJCGK = is.read_enum_or_unknown()?;
+                },
+                32 => {
                     self.MDNAGANGNKK = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.PEBCBLBLMPH = is.read_uint32()?;
-                },
-                80 => {
-                    self.CPFCNOAJCGK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KOIAMDKEFKH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CPFCNOAJCGK != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG) {
+            my_size += ::protobuf::rt::int32_size(2, self.CPFCNOAJCGK.value());
+        }
         if self.MDNAGANGNKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MDNAGANGNKK);
+            my_size += ::protobuf::rt::uint32_size(4, self.MDNAGANGNKK);
         }
         if self.PEBCBLBLMPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PEBCBLBLMPH);
-        }
-        if self.CPFCNOAJCGK != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG) {
-            my_size += ::protobuf::rt::int32_size(10, self.CPFCNOAJCGK.value());
+            my_size += ::protobuf::rt::uint32_size(14, self.PEBCBLBLMPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KOIAMDKEFKH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.CPFCNOAJCGK != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.CPFCNOAJCGK))?;
+        }
         if self.MDNAGANGNKK != 0 {
-            os.write_uint32(12, self.MDNAGANGNKK)?;
+            os.write_uint32(4, self.MDNAGANGNKK)?;
         }
         if self.PEBCBLBLMPH != 0 {
-            os.write_uint32(8, self.PEBCBLBLMPH)?;
-        }
-        if self.CPFCNOAJCGK != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.CPFCNOAJCGK))?;
+            os.write_uint32(14, self.PEBCBLBLMPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KOIAMDKEFKH {
     }
 
     fn clear(&mut self) {
+        self.CPFCNOAJCGK = ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG);
         self.MDNAGANGNKK = 0;
         self.PEBCBLBLMPH = 0;
-        self.CPFCNOAJCGK = ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOIAMDKEFKH {
         static instance: KOIAMDKEFKH = KOIAMDKEFKH {
+            CPFCNOAJCGK: ::protobuf::EnumOrUnknown::from_i32(0),
             MDNAGANGNKK: 0,
             PEBCBLBLMPH: 0,
-            CPFCNOAJCGK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for KOIAMDKEFKH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KOIAMDKEFKH.proto\x1a\x1fGridFightEquipDressSource.proto\"\x8f\x01\
-    \n\x0bKOIAMDKEFKH\x12\x20\n\x0bMDNAGANGNKK\x18\x0c\x20\x01(\rR\x0bMDNAGA\
-    NGNKK\x12\x20\n\x0bPEBCBLBLMPH\x18\x08\x20\x01(\rR\x0bPEBCBLBLMPH\x12<\n\
-    \x0bCPFCNOAJCGK\x18\n\x20\x01(\x0e2\x1a.GridFightEquipDressSourceR\x0bCP\
-    FCNOAJCGKb\x06proto3\
+    \n\x0bKOIAMDKEFKH\x12<\n\x0bCPFCNOAJCGK\x18\x02\x20\x01(\x0e2\x1a.GridFi\
+    ghtEquipDressSourceR\x0bCPFCNOAJCGK\x12\x20\n\x0bMDNAGANGNKK\x18\x04\x20\
+    \x01(\rR\x0bMDNAGANGNKK\x12\x20\n\x0bPEBCBLBLMPH\x18\x0e\x20\x01(\rR\x0b\
+    PEBCBLBLMPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

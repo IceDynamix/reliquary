@@ -82,7 +82,7 @@ impl ::protobuf::Message for PropTimelineInfo {
                 66 => {
                     self.timeline_byte_value = is.read_string()?;
                 },
-                16 => {
+                96 => {
                     self.timeline_bool_value = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PropTimelineInfo {
             os.write_string(8, &self.timeline_byte_value)?;
         }
         if self.timeline_bool_value != false {
-            os.write_bool(2, self.timeline_bool_value)?;
+            os.write_bool(12, self.timeline_bool_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for PropTimelineInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PropTimelineInfo.proto\"r\n\x10PropTimelineInfo\x12.\n\x13timeline\
     _byte_value\x18\x08\x20\x01(\tR\x11timelineByteValue\x12.\n\x13timeline_\
-    bool_value\x18\x02\x20\x01(\x08R\x11timelineBoolValueb\x06proto3\
+    bool_value\x18\x0c\x20\x01(\x08R\x11timelineBoolValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

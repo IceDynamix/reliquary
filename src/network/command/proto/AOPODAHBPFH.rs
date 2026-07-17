@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOPODAHBPFH {
     // message fields
-    // @@protoc_insertion_point(field:AOPODAHBPFH.MMNJODIJPOE)
-    pub MMNJODIJPOE: u32,
     // @@protoc_insertion_point(field:AOPODAHBPFH.content_id)
     pub content_id: u32,
+    // @@protoc_insertion_point(field:AOPODAHBPFH.content_type)
+    pub content_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AOPODAHBPFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AOPODAHBPFH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMNJODIJPOE",
-            |m: &AOPODAHBPFH| { &m.MMNJODIJPOE },
-            |m: &mut AOPODAHBPFH| { &mut m.MMNJODIJPOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
             |m: &AOPODAHBPFH| { &m.content_id },
             |m: &mut AOPODAHBPFH| { &mut m.content_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "content_type",
+            |m: &AOPODAHBPFH| { &m.content_type },
+            |m: &mut AOPODAHBPFH| { &mut m.content_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOPODAHBPFH>(
             "AOPODAHBPFH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AOPODAHBPFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.MMNJODIJPOE = is.read_uint32()?;
-                },
-                16 => {
+                24 => {
                     self.content_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.content_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AOPODAHBPFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MMNJODIJPOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MMNJODIJPOE);
-        }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.content_id);
+        }
+        if self.content_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.content_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AOPODAHBPFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MMNJODIJPOE != 0 {
-            os.write_uint32(8, self.MMNJODIJPOE)?;
-        }
         if self.content_id != 0 {
-            os.write_uint32(2, self.content_id)?;
+            os.write_uint32(3, self.content_id)?;
+        }
+        if self.content_type != 0 {
+            os.write_uint32(14, self.content_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AOPODAHBPFH {
     }
 
     fn clear(&mut self) {
-        self.MMNJODIJPOE = 0;
         self.content_id = 0;
+        self.content_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOPODAHBPFH {
         static instance: AOPODAHBPFH = AOPODAHBPFH {
-            MMNJODIJPOE: 0,
             content_id: 0,
+            content_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AOPODAHBPFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOPODAHBPFH.proto\"N\n\x0bAOPODAHBPFH\x12\x20\n\x0bMMNJODIJPOE\x18\
-    \x08\x20\x01(\rR\x0bMMNJODIJPOE\x12\x1d\n\ncontent_id\x18\x02\x20\x01(\r\
-    R\tcontentIdb\x06proto3\
+    \n\x11AOPODAHBPFH.proto\"O\n\x0bAOPODAHBPFH\x12\x1d\n\ncontent_id\x18\
+    \x03\x20\x01(\rR\tcontentId\x12!\n\x0ccontent_type\x18\x0e\x20\x01(\rR\
+    \x0bcontentTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

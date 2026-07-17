@@ -48,7 +48,7 @@ impl FateHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .AFKJKLJJLKN HNPBCGILAJP = 15;
+    // .AFKJKLJJLKN HNPBCGILAJP = 3;
 
     pub fn HNPBCGILAJP(&self) -> &super::AFKJKLJJLKN::AFKJKLJJLKN {
         match self.DMNECEKOLAJ {
@@ -97,7 +97,7 @@ impl FateHandlePendingActionCsReq {
         }
     }
 
-    // .GHAJMKCEEPJ NPBKAADBHHC = 11;
+    // .GHAJMKCEEPJ NPBKAADBHHC = 14;
 
     pub fn NPBKAADBHHC(&self) -> &super::GHAJMKCEEPJ::GHAJMKCEEPJ {
         match self.DMNECEKOLAJ {
@@ -187,13 +187,13 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                122 => {
+                26 => {
                     self.DMNECEKOLAJ = ::std::option::Option::Some(fate_handle_pending_action_cs_req::DMNECEKOLAJ::HNPBCGILAJP(is.read_message()?));
                 },
-                90 => {
+                114 => {
                     self.DMNECEKOLAJ = ::std::option::Option::Some(fate_handle_pending_action_cs_req::DMNECEKOLAJ::NPBKAADBHHC(is.read_message()?));
                 },
                 tag => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(8, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.DMNECEKOLAJ {
             match v {
@@ -230,15 +230,15 @@ impl ::protobuf::Message for FateHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(4, self.queue_position)?;
+            os.write_uint32(8, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.DMNECEKOLAJ {
             match v {
                 &fate_handle_pending_action_cs_req::DMNECEKOLAJ::HNPBCGILAJP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
                 &fate_handle_pending_action_cs_req::DMNECEKOLAJ::NPBKAADBHHC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -325,9 +325,9 @@ pub mod fate_handle_pending_action_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FateHandlePendingActionCsReq.proto\x1a\x11AFKJKLJJLKN.proto\x1a\x11G\
     HAJMKCEEPJ.proto\"\xb8\x01\n\x1cFateHandlePendingActionCsReq\x12%\n\x0eq\
-    ueue_position\x18\x04\x20\x01(\rR\rqueuePosition\x120\n\x0bHNPBCGILAJP\
-    \x18\x0f\x20\x01(\x0b2\x0c.AFKJKLJJLKNH\0R\x0bHNPBCGILAJP\x120\n\x0bNPBK\
-    AADBHHC\x18\x0b\x20\x01(\x0b2\x0c.GHAJMKCEEPJH\0R\x0bNPBKAADBHHCB\r\n\
+    ueue_position\x18\x08\x20\x01(\rR\rqueuePosition\x120\n\x0bHNPBCGILAJP\
+    \x18\x03\x20\x01(\x0b2\x0c.AFKJKLJJLKNH\0R\x0bHNPBCGILAJP\x120\n\x0bNPBK\
+    AADBHHC\x18\x0e\x20\x01(\x0b2\x0c.GHAJMKCEEPJH\0R\x0bNPBKAADBHHCB\r\n\
     \x0bDMNECEKOLAJb\x06proto3\
 ";
 

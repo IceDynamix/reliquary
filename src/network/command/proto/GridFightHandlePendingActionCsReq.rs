@@ -48,7 +48,7 @@ impl GridFightHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .LAPOAFHDNCM MFFCPLBNHCF = 1609;
+    // .LAPOAFHDNCM MFFCPLBNHCF = 2023;
 
     pub fn MFFCPLBNHCF(&self) -> &super::LAPOAFHDNCM::LAPOAFHDNCM {
         match self.FGLIODAJFML {
@@ -97,7 +97,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .EPLJJNHCJIF DCPHLHNLNKF = 1783;
+    // .EPLJJNHCJIF DCPHLHNLNKF = 1901;
 
     pub fn DCPHLHNLNKF(&self) -> &super::EPLJJNHCJIF::EPLJJNHCJIF {
         match self.FGLIODAJFML {
@@ -146,7 +146,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .CJPOMFIDLOA IBCHMBNIPLK = 1599;
+    // .CJPOMFIDLOA IBCHMBNIPLK = 1939;
 
     pub fn IBCHMBNIPLK(&self) -> &super::CJPOMFIDLOA::CJPOMFIDLOA {
         match self.FGLIODAJFML {
@@ -195,7 +195,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .GIOLAAKLDED DAJDBBEPMMA = 520;
+    // .GIOLAAKLDED DAJDBBEPMMA = 656;
 
     pub fn DAJDBBEPMMA(&self) -> &super::GIOLAAKLDED::GIOLAAKLDED {
         match self.FGLIODAJFML {
@@ -244,7 +244,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .GKLDOELMEIN PKHJLKNGCGH = 283;
+    // .GKLDOELMEIN PKHJLKNGCGH = 1607;
 
     pub fn PKHJLKNGCGH(&self) -> &super::GKLDOELMEIN::GKLDOELMEIN {
         match self.FGLIODAJFML {
@@ -293,7 +293,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .OHAINOHGKCM BAKAKODKECM = 1177;
+    // .OHAINOHGKCM BAKAKODKECM = 690;
 
     pub fn BAKAKODKECM(&self) -> &super::OHAINOHGKCM::OHAINOHGKCM {
         match self.FGLIODAJFML {
@@ -342,7 +342,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .NIDJPBLNDLH JLPOPEAJHMF = 1097;
+    // .NIDJPBLNDLH JLPOPEAJHMF = 1162;
 
     pub fn JLPOPEAJHMF(&self) -> &super::NIDJPBLNDLH::NIDJPBLNDLH {
         match self.FGLIODAJFML {
@@ -391,7 +391,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .NNFPCAPDENH KEBDKGKEJDD = 471;
+    // .NNFPCAPDENH KEBDKGKEJDD = 301;
 
     pub fn KEBDKGKEJDD(&self) -> &super::NNFPCAPDENH::NNFPCAPDENH {
         match self.FGLIODAJFML {
@@ -440,7 +440,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .AJDFPFHBFJM NNDGEJFLGGF = 1950;
+    // .AJDFPFHBFJM NNDGEJFLGGF = 1142;
 
     pub fn NNDGEJFLGGF(&self) -> &super::AJDFPFHBFJM::AJDFPFHBFJM {
         match self.FGLIODAJFML {
@@ -489,7 +489,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .NEMAKFJPGDF LGNPHHBGKFH = 1883;
+    // .NEMAKFJPGDF LGNPHHBGKFH = 497;
 
     pub fn LGNPHHBGKFH(&self) -> &super::NEMAKFJPGDF::NEMAKFJPGDF {
         match self.FGLIODAJFML {
@@ -538,7 +538,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .HMNMJKCHABE FIKAGBAEOAP = 1774;
+    // .HMNMJKCHABE FIKAGBAEOAP = 827;
 
     pub fn FIKAGBAEOAP(&self) -> &super::HMNMJKCHABE::HMNMJKCHABE {
         match self.FGLIODAJFML {
@@ -587,7 +587,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .DFMGEJCCBPD IACBCOBMGJB = 128;
+    // .DFMGEJCCBPD IACBCOBMGJB = 349;
 
     pub fn IACBCOBMGJB(&self) -> &super::DFMGEJCCBPD::DFMGEJCCBPD {
         match self.FGLIODAJFML {
@@ -636,7 +636,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .PDKGKIDCBKA HOKCPPPLJIO = 1134;
+    // .PDKGKIDCBKA HOKCPPPLJIO = 374;
 
     pub fn HOKCPPPLJIO(&self) -> &super::PDKGKIDCBKA::PDKGKIDCBKA {
         match self.FGLIODAJFML {
@@ -685,7 +685,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .DGILDLDMGEI EMMPHLKJAJN = 1306;
+    // .DGILDLDMGEI EMMPHLKJAJN = 1304;
 
     pub fn EMMPHLKJAJN(&self) -> &super::DGILDLDMGEI::DGILDLDMGEI {
         match self.FGLIODAJFML {
@@ -734,7 +734,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .PCCGPNAFMHP HHNPEHMBDKD = 1548;
+    // .PCCGPNAFMHP HHNPEHMBDKD = 1095;
 
     pub fn HHNPEHMBDKD(&self) -> &super::PCCGPNAFMHP::PCCGPNAFMHP {
         match self.FGLIODAJFML {
@@ -783,7 +783,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .LFONAPFHAOB HHNHGJMOGDD = 219;
+    // .LFONAPFHAOB HHNHGJMOGDD = 885;
 
     pub fn HHNHGJMOGDD(&self) -> &super::LFONAPFHAOB::LFONAPFHAOB {
         match self.FGLIODAJFML {
@@ -832,7 +832,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .FNNFHNKHIDD CFDIPFKBFJB = 325;
+    // .FNNFHNKHIDD CFDIPFKBFJB = 210;
 
     pub fn CFDIPFKBFJB(&self) -> &super::FNNFHNKHIDD::FNNFHNKHIDD {
         match self.FGLIODAJFML {
@@ -881,7 +881,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .IDOJADMFGKF NFBJINKLLLK = 871;
+    // .IDOJADMFGKF NFBJINKLLLK = 1748;
 
     pub fn NFBJINKLLLK(&self) -> &super::IDOJADMFGKF::IDOJADMFGKF {
         match self.FGLIODAJFML {
@@ -930,7 +930,7 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
-    // .EJEFKJGAKOO LAJGNNBOLDG = 1089;
+    // .EJEFKJGAKOO LAJGNNBOLDG = 1884;
 
     pub fn LAJGNNBOLDG(&self) -> &super::EJEFKJGAKOO::EJEFKJGAKOO {
         match self.FGLIODAJFML {
@@ -979,8 +979,106 @@ impl GridFightHandlePendingActionCsReq {
         }
     }
 
+    // .FKILNIGOKBF LFIDNOAECMN = 1593;
+
+    pub fn LFIDNOAECMN(&self) -> &super::FKILNIGOKBF::FKILNIGOKBF {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(ref v)) => v,
+            _ => <super::FKILNIGOKBF::FKILNIGOKBF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LFIDNOAECMN(&mut self) {
+        self.FGLIODAJFML = ::std::option::Option::None;
+    }
+
+    pub fn has_LFIDNOAECMN(&self) -> bool {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LFIDNOAECMN(&mut self, v: super::FKILNIGOKBF::FKILNIGOKBF) {
+        self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LFIDNOAECMN(&mut self) -> &mut super::FKILNIGOKBF::FKILNIGOKBF {
+        if let ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(_)) = self.FGLIODAJFML {
+        } else {
+            self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(super::FKILNIGOKBF::FKILNIGOKBF::new()));
+        }
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LFIDNOAECMN(&mut self) -> super::FKILNIGOKBF::FKILNIGOKBF {
+        if self.has_LFIDNOAECMN() {
+            match self.FGLIODAJFML.take() {
+                ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::FKILNIGOKBF::FKILNIGOKBF::new()
+        }
+    }
+
+    // .KCCPHHGCPMP IOHJGOENAPF = 1247;
+
+    pub fn IOHJGOENAPF(&self) -> &super::KCCPHHGCPMP::KCCPHHGCPMP {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(ref v)) => v,
+            _ => <super::KCCPHHGCPMP::KCCPHHGCPMP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_IOHJGOENAPF(&mut self) {
+        self.FGLIODAJFML = ::std::option::Option::None;
+    }
+
+    pub fn has_IOHJGOENAPF(&self) -> bool {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_IOHJGOENAPF(&mut self, v: super::KCCPHHGCPMP::KCCPHHGCPMP) {
+        self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_IOHJGOENAPF(&mut self) -> &mut super::KCCPHHGCPMP::KCCPHHGCPMP {
+        if let ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(_)) = self.FGLIODAJFML {
+        } else {
+            self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(super::KCCPHHGCPMP::KCCPHHGCPMP::new()));
+        }
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_IOHJGOENAPF(&mut self) -> super::KCCPHHGCPMP::KCCPHHGCPMP {
+        if self.has_IOHJGOENAPF() {
+            match self.FGLIODAJFML.take() {
+                ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KCCPHHGCPMP::KCCPHHGCPMP::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(20);
+        let mut fields = ::std::vec::Vec::with_capacity(22);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
@@ -1120,6 +1218,20 @@ impl GridFightHandlePendingActionCsReq {
             GridFightHandlePendingActionCsReq::mut_LAJGNNBOLDG,
             GridFightHandlePendingActionCsReq::set_LAJGNNBOLDG,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FKILNIGOKBF::FKILNIGOKBF>(
+            "LFIDNOAECMN",
+            GridFightHandlePendingActionCsReq::has_LFIDNOAECMN,
+            GridFightHandlePendingActionCsReq::LFIDNOAECMN,
+            GridFightHandlePendingActionCsReq::mut_LFIDNOAECMN,
+            GridFightHandlePendingActionCsReq::set_LFIDNOAECMN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KCCPHHGCPMP::KCCPHHGCPMP>(
+            "IOHJGOENAPF",
+            GridFightHandlePendingActionCsReq::has_IOHJGOENAPF,
+            GridFightHandlePendingActionCsReq::IOHJGOENAPF,
+            GridFightHandlePendingActionCsReq::mut_IOHJGOENAPF,
+            GridFightHandlePendingActionCsReq::set_IOHJGOENAPF,
+        ));
         oneofs.push(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightHandlePendingActionCsReq>(
             "GridFightHandlePendingActionCsReq",
@@ -1139,65 +1251,71 @@ impl ::protobuf::Message for GridFightHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                12874 => {
+                16186 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::MFFCPLBNHCF(is.read_message()?));
                 },
-                14266 => {
+                15210 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::DCPHLHNLNKF(is.read_message()?));
                 },
-                12794 => {
+                15514 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IBCHMBNIPLK(is.read_message()?));
                 },
-                4162 => {
+                5250 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::DAJDBBEPMMA(is.read_message()?));
                 },
-                2266 => {
+                12858 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::PKHJLKNGCGH(is.read_message()?));
                 },
-                9418 => {
+                5522 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::BAKAKODKECM(is.read_message()?));
                 },
-                8778 => {
+                9298 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::JLPOPEAJHMF(is.read_message()?));
                 },
-                3770 => {
+                2410 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::KEBDKGKEJDD(is.read_message()?));
                 },
-                15602 => {
+                9138 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::NNDGEJFLGGF(is.read_message()?));
                 },
-                15066 => {
+                3978 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LGNPHHBGKFH(is.read_message()?));
                 },
-                14194 => {
+                6618 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::FIKAGBAEOAP(is.read_message()?));
                 },
-                1026 => {
+                2794 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IACBCOBMGJB(is.read_message()?));
                 },
-                9074 => {
+                2994 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HOKCPPPLJIO(is.read_message()?));
                 },
-                10450 => {
+                10434 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::EMMPHLKJAJN(is.read_message()?));
                 },
-                12386 => {
+                8762 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HHNPEHMBDKD(is.read_message()?));
                 },
-                1754 => {
+                7082 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HHNHGJMOGDD(is.read_message()?));
                 },
-                2602 => {
+                1682 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::CFDIPFKBFJB(is.read_message()?));
                 },
-                6970 => {
+                13986 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::NFBJINKLLLK(is.read_message()?));
                 },
-                8714 => {
+                15074 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LAJGNNBOLDG(is.read_message()?));
+                },
+                12746 => {
+                    self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(is.read_message()?));
+                },
+                9978 => {
+                    self.FGLIODAJFML = ::std::option::Option::Some(grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -1212,7 +1330,7 @@ impl ::protobuf::Message for GridFightHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(4, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
@@ -1289,6 +1407,14 @@ impl ::protobuf::Message for GridFightHandlePendingActionCsReq {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LAJGNNBOLDG(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -1301,66 +1427,72 @@ impl ::protobuf::Message for GridFightHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(15, self.queue_position)?;
+            os.write_uint32(4, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::MFFCPLBNHCF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1609, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2023, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::DCPHLHNLNKF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1783, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1901, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IBCHMBNIPLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1599, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1939, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::DAJDBBEPMMA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(520, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(656, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::PKHJLKNGCGH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(283, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1607, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::BAKAKODKECM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1177, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(690, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::JLPOPEAJHMF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1097, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1162, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::KEBDKGKEJDD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(471, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(301, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::NNDGEJFLGGF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1950, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1142, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LGNPHHBGKFH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1883, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(497, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::FIKAGBAEOAP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1774, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(827, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IACBCOBMGJB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(128, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(349, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HOKCPPPLJIO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1134, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(374, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::EMMPHLKJAJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1306, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1304, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HHNPEHMBDKD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1548, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1095, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::HHNHGJMOGDD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(219, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(885, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::CFDIPFKBFJB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(325, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(210, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::NFBJINKLLLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(871, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1748, v, os)?;
                 },
                 &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LAJGNNBOLDG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1089, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1884, v, os)?;
+                },
+                &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::LFIDNOAECMN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1593, v, os)?;
+                },
+                &grid_fight_handle_pending_action_cs_req::FGLIODAJFML::IOHJGOENAPF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1247, v, os)?;
                 },
             };
         }
@@ -1382,6 +1514,8 @@ impl ::protobuf::Message for GridFightHandlePendingActionCsReq {
 
     fn clear(&mut self) {
         self.queue_position = 0;
+        self.FGLIODAJFML = ::std::option::Option::None;
+        self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
         self.FGLIODAJFML = ::std::option::Option::None;
@@ -1476,6 +1610,10 @@ pub mod grid_fight_handle_pending_action_cs_req {
         NFBJINKLLLK(super::super::IDOJADMFGKF::IDOJADMFGKF),
         // @@protoc_insertion_point(oneof_field:GridFightHandlePendingActionCsReq.LAJGNNBOLDG)
         LAJGNNBOLDG(super::super::EJEFKJGAKOO::EJEFKJGAKOO),
+        // @@protoc_insertion_point(oneof_field:GridFightHandlePendingActionCsReq.LFIDNOAECMN)
+        LFIDNOAECMN(super::super::FKILNIGOKBF::FKILNIGOKBF),
+        // @@protoc_insertion_point(oneof_field:GridFightHandlePendingActionCsReq.IOHJGOENAPF)
+        IOHJGOENAPF(super::super::KCCPHHGCPMP::KCCPHHGCPMP),
     }
 
     impl ::protobuf::Oneof for FGLIODAJFML {
@@ -1498,36 +1636,39 @@ pub mod grid_fight_handle_pending_action_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GridFightHandlePendingActionCsReq.proto\x1a\x11AJDFPFHBFJM.proto\x1a\
     \x11CJPOMFIDLOA.proto\x1a\x11DFMGEJCCBPD.proto\x1a\x11DGILDLDMGEI.proto\
-    \x1a\x11EJEFKJGAKOO.proto\x1a\x11EPLJJNHCJIF.proto\x1a\x11FNNFHNKHIDD.pr\
-    oto\x1a\x11GIOLAAKLDED.proto\x1a\x11GKLDOELMEIN.proto\x1a\x11HMNMJKCHABE\
-    .proto\x1a\x11IDOJADMFGKF.proto\x1a\x11LAPOAFHDNCM.proto\x1a\x11LFONAPFH\
-    AOB.proto\x1a\x11NEMAKFJPGDF.proto\x1a\x11NIDJPBLNDLH.proto\x1a\x11NNFPC\
-    APDENH.proto\x1a\x11OHAINOHGKCM.proto\x1a\x11PCCGPNAFMHP.proto\x1a\x11PD\
-    KGKIDCBKA.proto\"\xa2\x08\n!GridFightHandlePendingActionCsReq\x12%\n\x0e\
-    queue_position\x18\x0f\x20\x01(\rR\rqueuePosition\x121\n\x0bMFFCPLBNHCF\
-    \x18\xc9\x0c\x20\x01(\x0b2\x0c.LAPOAFHDNCMH\0R\x0bMFFCPLBNHCF\x121\n\x0b\
-    DCPHLHNLNKF\x18\xf7\r\x20\x01(\x0b2\x0c.EPLJJNHCJIFH\0R\x0bDCPHLHNLNKF\
-    \x121\n\x0bIBCHMBNIPLK\x18\xbf\x0c\x20\x01(\x0b2\x0c.CJPOMFIDLOAH\0R\x0b\
-    IBCHMBNIPLK\x121\n\x0bDAJDBBEPMMA\x18\x88\x04\x20\x01(\x0b2\x0c.GIOLAAKL\
-    DEDH\0R\x0bDAJDBBEPMMA\x121\n\x0bPKHJLKNGCGH\x18\x9b\x02\x20\x01(\x0b2\
-    \x0c.GKLDOELMEINH\0R\x0bPKHJLKNGCGH\x121\n\x0bBAKAKODKECM\x18\x99\t\x20\
-    \x01(\x0b2\x0c.OHAINOHGKCMH\0R\x0bBAKAKODKECM\x121\n\x0bJLPOPEAJHMF\x18\
-    \xc9\x08\x20\x01(\x0b2\x0c.NIDJPBLNDLHH\0R\x0bJLPOPEAJHMF\x121\n\x0bKEBD\
-    KGKEJDD\x18\xd7\x03\x20\x01(\x0b2\x0c.NNFPCAPDENHH\0R\x0bKEBDKGKEJDD\x12\
-    1\n\x0bNNDGEJFLGGF\x18\x9e\x0f\x20\x01(\x0b2\x0c.AJDFPFHBFJMH\0R\x0bNNDG\
-    EJFLGGF\x121\n\x0bLGNPHHBGKFH\x18\xdb\x0e\x20\x01(\x0b2\x0c.NEMAKFJPGDFH\
-    \0R\x0bLGNPHHBGKFH\x121\n\x0bFIKAGBAEOAP\x18\xee\r\x20\x01(\x0b2\x0c.HMN\
-    MJKCHABEH\0R\x0bFIKAGBAEOAP\x121\n\x0bIACBCOBMGJB\x18\x80\x01\x20\x01(\
-    \x0b2\x0c.DFMGEJCCBPDH\0R\x0bIACBCOBMGJB\x121\n\x0bHOKCPPPLJIO\x18\xee\
-    \x08\x20\x01(\x0b2\x0c.PDKGKIDCBKAH\0R\x0bHOKCPPPLJIO\x121\n\x0bEMMPHLKJ\
-    AJN\x18\x9a\n\x20\x01(\x0b2\x0c.DGILDLDMGEIH\0R\x0bEMMPHLKJAJN\x121\n\
-    \x0bHHNPEHMBDKD\x18\x8c\x0c\x20\x01(\x0b2\x0c.PCCGPNAFMHPH\0R\x0bHHNPEHM\
-    BDKD\x121\n\x0bHHNHGJMOGDD\x18\xdb\x01\x20\x01(\x0b2\x0c.LFONAPFHAOBH\0R\
-    \x0bHHNHGJMOGDD\x121\n\x0bCFDIPFKBFJB\x18\xc5\x02\x20\x01(\x0b2\x0c.FNNF\
-    HNKHIDDH\0R\x0bCFDIPFKBFJB\x121\n\x0bNFBJINKLLLK\x18\xe7\x06\x20\x01(\
-    \x0b2\x0c.IDOJADMFGKFH\0R\x0bNFBJINKLLLK\x121\n\x0bLAJGNNBOLDG\x18\xc1\
-    \x08\x20\x01(\x0b2\x0c.EJEFKJGAKOOH\0R\x0bLAJGNNBOLDGB\r\n\x0bFGLIODAJFM\
-    Lb\x06proto3\
+    \x1a\x11EJEFKJGAKOO.proto\x1a\x11EPLJJNHCJIF.proto\x1a\x11FKILNIGOKBF.pr\
+    oto\x1a\x11FNNFHNKHIDD.proto\x1a\x11GIOLAAKLDED.proto\x1a\x11GKLDOELMEIN\
+    .proto\x1a\x11HMNMJKCHABE.proto\x1a\x11IDOJADMFGKF.proto\x1a\x11KCCPHHGC\
+    PMP.proto\x1a\x11LAPOAFHDNCM.proto\x1a\x11LFONAPFHAOB.proto\x1a\x11NEMAK\
+    FJPGDF.proto\x1a\x11NIDJPBLNDLH.proto\x1a\x11NNFPCAPDENH.proto\x1a\x11OH\
+    AINOHGKCM.proto\x1a\x11PCCGPNAFMHP.proto\x1a\x11PDKGKIDCBKA.proto\"\x88\
+    \t\n!GridFightHandlePendingActionCsReq\x12%\n\x0equeue_position\x18\x04\
+    \x20\x01(\rR\rqueuePosition\x121\n\x0bMFFCPLBNHCF\x18\xe7\x0f\x20\x01(\
+    \x0b2\x0c.LAPOAFHDNCMH\0R\x0bMFFCPLBNHCF\x121\n\x0bDCPHLHNLNKF\x18\xed\
+    \x0e\x20\x01(\x0b2\x0c.EPLJJNHCJIFH\0R\x0bDCPHLHNLNKF\x121\n\x0bIBCHMBNI\
+    PLK\x18\x93\x0f\x20\x01(\x0b2\x0c.CJPOMFIDLOAH\0R\x0bIBCHMBNIPLK\x121\n\
+    \x0bDAJDBBEPMMA\x18\x90\x05\x20\x01(\x0b2\x0c.GIOLAAKLDEDH\0R\x0bDAJDBBE\
+    PMMA\x121\n\x0bPKHJLKNGCGH\x18\xc7\x0c\x20\x01(\x0b2\x0c.GKLDOELMEINH\0R\
+    \x0bPKHJLKNGCGH\x121\n\x0bBAKAKODKECM\x18\xb2\x05\x20\x01(\x0b2\x0c.OHAI\
+    NOHGKCMH\0R\x0bBAKAKODKECM\x121\n\x0bJLPOPEAJHMF\x18\x8a\t\x20\x01(\x0b2\
+    \x0c.NIDJPBLNDLHH\0R\x0bJLPOPEAJHMF\x121\n\x0bKEBDKGKEJDD\x18\xad\x02\
+    \x20\x01(\x0b2\x0c.NNFPCAPDENHH\0R\x0bKEBDKGKEJDD\x121\n\x0bNNDGEJFLGGF\
+    \x18\xf6\x08\x20\x01(\x0b2\x0c.AJDFPFHBFJMH\0R\x0bNNDGEJFLGGF\x121\n\x0b\
+    LGNPHHBGKFH\x18\xf1\x03\x20\x01(\x0b2\x0c.NEMAKFJPGDFH\0R\x0bLGNPHHBGKFH\
+    \x121\n\x0bFIKAGBAEOAP\x18\xbb\x06\x20\x01(\x0b2\x0c.HMNMJKCHABEH\0R\x0b\
+    FIKAGBAEOAP\x121\n\x0bIACBCOBMGJB\x18\xdd\x02\x20\x01(\x0b2\x0c.DFMGEJCC\
+    BPDH\0R\x0bIACBCOBMGJB\x121\n\x0bHOKCPPPLJIO\x18\xf6\x02\x20\x01(\x0b2\
+    \x0c.PDKGKIDCBKAH\0R\x0bHOKCPPPLJIO\x121\n\x0bEMMPHLKJAJN\x18\x98\n\x20\
+    \x01(\x0b2\x0c.DGILDLDMGEIH\0R\x0bEMMPHLKJAJN\x121\n\x0bHHNPEHMBDKD\x18\
+    \xc7\x08\x20\x01(\x0b2\x0c.PCCGPNAFMHPH\0R\x0bHHNPEHMBDKD\x121\n\x0bHHNH\
+    GJMOGDD\x18\xf5\x06\x20\x01(\x0b2\x0c.LFONAPFHAOBH\0R\x0bHHNHGJMOGDD\x12\
+    1\n\x0bCFDIPFKBFJB\x18\xd2\x01\x20\x01(\x0b2\x0c.FNNFHNKHIDDH\0R\x0bCFDI\
+    PFKBFJB\x121\n\x0bNFBJINKLLLK\x18\xd4\r\x20\x01(\x0b2\x0c.IDOJADMFGKFH\0\
+    R\x0bNFBJINKLLLK\x121\n\x0bLAJGNNBOLDG\x18\xdc\x0e\x20\x01(\x0b2\x0c.EJE\
+    FKJGAKOOH\0R\x0bLAJGNNBOLDG\x121\n\x0bLFIDNOAECMN\x18\xb9\x0c\x20\x01(\
+    \x0b2\x0c.FKILNIGOKBFH\0R\x0bLFIDNOAECMN\x121\n\x0bIOHJGOENAPF\x18\xdf\t\
+    \x20\x01(\x0b2\x0c.KCCPHHGCPMPH\0R\x0bIOHJGOENAPFB\r\n\x0bFGLIODAJFMLb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1544,18 +1685,20 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(19);
+            let mut deps = ::std::vec::Vec::with_capacity(21);
             deps.push(super::AJDFPFHBFJM::file_descriptor().clone());
             deps.push(super::CJPOMFIDLOA::file_descriptor().clone());
             deps.push(super::DFMGEJCCBPD::file_descriptor().clone());
             deps.push(super::DGILDLDMGEI::file_descriptor().clone());
             deps.push(super::EJEFKJGAKOO::file_descriptor().clone());
             deps.push(super::EPLJJNHCJIF::file_descriptor().clone());
+            deps.push(super::FKILNIGOKBF::file_descriptor().clone());
             deps.push(super::FNNFHNKHIDD::file_descriptor().clone());
             deps.push(super::GIOLAAKLDED::file_descriptor().clone());
             deps.push(super::GKLDOELMEIN::file_descriptor().clone());
             deps.push(super::HMNMJKCHABE::file_descriptor().clone());
             deps.push(super::IDOJADMFGKF::file_descriptor().clone());
+            deps.push(super::KCCPHHGCPMP::file_descriptor().clone());
             deps.push(super::LAPOAFHDNCM::file_descriptor().clone());
             deps.push(super::LFONAPFHAOB::file_descriptor().clone());
             deps.push(super::NEMAKFJPGDF::file_descriptor().clone());

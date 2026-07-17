@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGOKJFKMCBE {
     // message fields
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.BJGOOFNOGMJ)
-    pub BJGOOFNOGMJ: u32,
     // @@protoc_insertion_point(field:LGOKJFKMCBE.KJGDBFEFHPJ)
     pub KJGDBFEFHPJ: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.MINCPOKEPDP)
-    pub MINCPOKEPDP: f64,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.OLPDBDEDCOG)
-    pub OLPDBDEDCOG: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.OEBAIDCOPLC)
-    pub OEBAIDCOPLC: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.HKAENABCBHL)
-    pub HKAENABCBHL: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.IBHKMLKHKJB)
-    pub IBHKMLKHKJB: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.GMJGPDKJAEE)
-    pub GMJGPDKJAEE: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.NBKOOPBPNPL)
-    pub NBKOOPBPNPL: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.IBOPDGOFDOD)
-    pub IBOPDGOFDOD: u32,
-    // @@protoc_insertion_point(field:LGOKJFKMCBE.AEPMEGILLOJ)
-    pub AEPMEGILLOJ: f64,
     // @@protoc_insertion_point(field:LGOKJFKMCBE.HIFNHNLNDPN)
     pub HIFNHNLNDPN: f64,
     // @@protoc_insertion_point(field:LGOKJFKMCBE.JGFKNDMDHHP)
     pub JGFKNDMDHHP: f64,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.IBOPDGOFDOD)
+    pub IBOPDGOFDOD: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.NBKOOPBPNPL)
+    pub NBKOOPBPNPL: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.GMJGPDKJAEE)
+    pub GMJGPDKJAEE: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.HKAENABCBHL)
+    pub HKAENABCBHL: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.AEPMEGILLOJ)
+    pub AEPMEGILLOJ: f64,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.BJGOOFNOGMJ)
+    pub BJGOOFNOGMJ: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.OLPDBDEDCOG)
+    pub OLPDBDEDCOG: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.MINCPOKEPDP)
+    pub MINCPOKEPDP: f64,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.OEBAIDCOPLC)
+    pub OEBAIDCOPLC: u32,
+    // @@protoc_insertion_point(field:LGOKJFKMCBE.IBHKMLKHKJB)
+    pub IBHKMLKHKJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LGOKJFKMCBE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,59 +74,9 @@ impl LGOKJFKMCBE {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJGOOFNOGMJ",
-            |m: &LGOKJFKMCBE| { &m.BJGOOFNOGMJ },
-            |m: &mut LGOKJFKMCBE| { &mut m.BJGOOFNOGMJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KJGDBFEFHPJ",
             |m: &LGOKJFKMCBE| { &m.KJGDBFEFHPJ },
             |m: &mut LGOKJFKMCBE| { &mut m.KJGDBFEFHPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MINCPOKEPDP",
-            |m: &LGOKJFKMCBE| { &m.MINCPOKEPDP },
-            |m: &mut LGOKJFKMCBE| { &mut m.MINCPOKEPDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OLPDBDEDCOG",
-            |m: &LGOKJFKMCBE| { &m.OLPDBDEDCOG },
-            |m: &mut LGOKJFKMCBE| { &mut m.OLPDBDEDCOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OEBAIDCOPLC",
-            |m: &LGOKJFKMCBE| { &m.OEBAIDCOPLC },
-            |m: &mut LGOKJFKMCBE| { &mut m.OEBAIDCOPLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKAENABCBHL",
-            |m: &LGOKJFKMCBE| { &m.HKAENABCBHL },
-            |m: &mut LGOKJFKMCBE| { &mut m.HKAENABCBHL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBHKMLKHKJB",
-            |m: &LGOKJFKMCBE| { &m.IBHKMLKHKJB },
-            |m: &mut LGOKJFKMCBE| { &mut m.IBHKMLKHKJB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMJGPDKJAEE",
-            |m: &LGOKJFKMCBE| { &m.GMJGPDKJAEE },
-            |m: &mut LGOKJFKMCBE| { &mut m.GMJGPDKJAEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBKOOPBPNPL",
-            |m: &LGOKJFKMCBE| { &m.NBKOOPBPNPL },
-            |m: &mut LGOKJFKMCBE| { &mut m.NBKOOPBPNPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBOPDGOFDOD",
-            |m: &LGOKJFKMCBE| { &m.IBOPDGOFDOD },
-            |m: &mut LGOKJFKMCBE| { &mut m.IBOPDGOFDOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEPMEGILLOJ",
-            |m: &LGOKJFKMCBE| { &m.AEPMEGILLOJ },
-            |m: &mut LGOKJFKMCBE| { &mut m.AEPMEGILLOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIFNHNLNDPN",
@@ -137,6 +87,56 @@ impl LGOKJFKMCBE {
             "JGFKNDMDHHP",
             |m: &LGOKJFKMCBE| { &m.JGFKNDMDHHP },
             |m: &mut LGOKJFKMCBE| { &mut m.JGFKNDMDHHP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBOPDGOFDOD",
+            |m: &LGOKJFKMCBE| { &m.IBOPDGOFDOD },
+            |m: &mut LGOKJFKMCBE| { &mut m.IBOPDGOFDOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NBKOOPBPNPL",
+            |m: &LGOKJFKMCBE| { &m.NBKOOPBPNPL },
+            |m: &mut LGOKJFKMCBE| { &mut m.NBKOOPBPNPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMJGPDKJAEE",
+            |m: &LGOKJFKMCBE| { &m.GMJGPDKJAEE },
+            |m: &mut LGOKJFKMCBE| { &mut m.GMJGPDKJAEE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HKAENABCBHL",
+            |m: &LGOKJFKMCBE| { &m.HKAENABCBHL },
+            |m: &mut LGOKJFKMCBE| { &mut m.HKAENABCBHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AEPMEGILLOJ",
+            |m: &LGOKJFKMCBE| { &m.AEPMEGILLOJ },
+            |m: &mut LGOKJFKMCBE| { &mut m.AEPMEGILLOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJGOOFNOGMJ",
+            |m: &LGOKJFKMCBE| { &m.BJGOOFNOGMJ },
+            |m: &mut LGOKJFKMCBE| { &mut m.BJGOOFNOGMJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OLPDBDEDCOG",
+            |m: &LGOKJFKMCBE| { &m.OLPDBDEDCOG },
+            |m: &mut LGOKJFKMCBE| { &mut m.OLPDBDEDCOG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MINCPOKEPDP",
+            |m: &LGOKJFKMCBE| { &m.MINCPOKEPDP },
+            |m: &mut LGOKJFKMCBE| { &mut m.MINCPOKEPDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OEBAIDCOPLC",
+            |m: &LGOKJFKMCBE| { &m.OEBAIDCOPLC },
+            |m: &mut LGOKJFKMCBE| { &mut m.OEBAIDCOPLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBHKMLKHKJB",
+            |m: &LGOKJFKMCBE| { &m.IBHKMLKHKJB },
+            |m: &mut LGOKJFKMCBE| { &mut m.IBHKMLKHKJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGOKJFKMCBE>(
             "LGOKJFKMCBE",
@@ -156,44 +156,44 @@ impl ::protobuf::Message for LGOKJFKMCBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.BJGOOFNOGMJ = is.read_uint32()?;
-                },
                 8 => {
                     self.KJGDBFEFHPJ = is.read_uint32()?;
-                },
-                89 => {
-                    self.MINCPOKEPDP = is.read_double()?;
-                },
-                80 => {
-                    self.OLPDBDEDCOG = is.read_uint32()?;
-                },
-                96 => {
-                    self.OEBAIDCOPLC = is.read_uint32()?;
-                },
-                56 => {
-                    self.HKAENABCBHL = is.read_uint32()?;
-                },
-                104 => {
-                    self.IBHKMLKHKJB = is.read_uint32()?;
-                },
-                48 => {
-                    self.GMJGPDKJAEE = is.read_uint32()?;
-                },
-                40 => {
-                    self.NBKOOPBPNPL = is.read_uint32()?;
-                },
-                32 => {
-                    self.IBOPDGOFDOD = is.read_uint32()?;
-                },
-                65 => {
-                    self.AEPMEGILLOJ = is.read_double()?;
                 },
                 17 => {
                     self.HIFNHNLNDPN = is.read_double()?;
                 },
                 25 => {
                     self.JGFKNDMDHHP = is.read_double()?;
+                },
+                32 => {
+                    self.IBOPDGOFDOD = is.read_uint32()?;
+                },
+                40 => {
+                    self.NBKOOPBPNPL = is.read_uint32()?;
+                },
+                48 => {
+                    self.GMJGPDKJAEE = is.read_uint32()?;
+                },
+                56 => {
+                    self.HKAENABCBHL = is.read_uint32()?;
+                },
+                65 => {
+                    self.AEPMEGILLOJ = is.read_double()?;
+                },
+                72 => {
+                    self.BJGOOFNOGMJ = is.read_uint32()?;
+                },
+                80 => {
+                    self.OLPDBDEDCOG = is.read_uint32()?;
+                },
+                89 => {
+                    self.MINCPOKEPDP = is.read_double()?;
+                },
+                96 => {
+                    self.OEBAIDCOPLC = is.read_uint32()?;
+                },
+                104 => {
+                    self.IBHKMLKHKJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -207,44 +207,44 @@ impl ::protobuf::Message for LGOKJFKMCBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BJGOOFNOGMJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BJGOOFNOGMJ);
-        }
         if self.KJGDBFEFHPJ != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.KJGDBFEFHPJ);
-        }
-        if self.MINCPOKEPDP != 0. {
-            my_size += 1 + 8;
-        }
-        if self.OLPDBDEDCOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OLPDBDEDCOG);
-        }
-        if self.OEBAIDCOPLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OEBAIDCOPLC);
-        }
-        if self.HKAENABCBHL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HKAENABCBHL);
-        }
-        if self.IBHKMLKHKJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IBHKMLKHKJB);
-        }
-        if self.GMJGPDKJAEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GMJGPDKJAEE);
-        }
-        if self.NBKOOPBPNPL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NBKOOPBPNPL);
-        }
-        if self.IBOPDGOFDOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IBOPDGOFDOD);
-        }
-        if self.AEPMEGILLOJ != 0. {
-            my_size += 1 + 8;
         }
         if self.HIFNHNLNDPN != 0. {
             my_size += 1 + 8;
         }
         if self.JGFKNDMDHHP != 0. {
             my_size += 1 + 8;
+        }
+        if self.IBOPDGOFDOD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IBOPDGOFDOD);
+        }
+        if self.NBKOOPBPNPL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NBKOOPBPNPL);
+        }
+        if self.GMJGPDKJAEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GMJGPDKJAEE);
+        }
+        if self.HKAENABCBHL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HKAENABCBHL);
+        }
+        if self.AEPMEGILLOJ != 0. {
+            my_size += 1 + 8;
+        }
+        if self.BJGOOFNOGMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BJGOOFNOGMJ);
+        }
+        if self.OLPDBDEDCOG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OLPDBDEDCOG);
+        }
+        if self.MINCPOKEPDP != 0. {
+            my_size += 1 + 8;
+        }
+        if self.OEBAIDCOPLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OEBAIDCOPLC);
+        }
+        if self.IBHKMLKHKJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IBHKMLKHKJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -252,44 +252,44 @@ impl ::protobuf::Message for LGOKJFKMCBE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BJGOOFNOGMJ != 0 {
-            os.write_uint32(9, self.BJGOOFNOGMJ)?;
-        }
         if self.KJGDBFEFHPJ != 0 {
             os.write_uint32(1, self.KJGDBFEFHPJ)?;
-        }
-        if self.MINCPOKEPDP != 0. {
-            os.write_double(11, self.MINCPOKEPDP)?;
-        }
-        if self.OLPDBDEDCOG != 0 {
-            os.write_uint32(10, self.OLPDBDEDCOG)?;
-        }
-        if self.OEBAIDCOPLC != 0 {
-            os.write_uint32(12, self.OEBAIDCOPLC)?;
-        }
-        if self.HKAENABCBHL != 0 {
-            os.write_uint32(7, self.HKAENABCBHL)?;
-        }
-        if self.IBHKMLKHKJB != 0 {
-            os.write_uint32(13, self.IBHKMLKHKJB)?;
-        }
-        if self.GMJGPDKJAEE != 0 {
-            os.write_uint32(6, self.GMJGPDKJAEE)?;
-        }
-        if self.NBKOOPBPNPL != 0 {
-            os.write_uint32(5, self.NBKOOPBPNPL)?;
-        }
-        if self.IBOPDGOFDOD != 0 {
-            os.write_uint32(4, self.IBOPDGOFDOD)?;
-        }
-        if self.AEPMEGILLOJ != 0. {
-            os.write_double(8, self.AEPMEGILLOJ)?;
         }
         if self.HIFNHNLNDPN != 0. {
             os.write_double(2, self.HIFNHNLNDPN)?;
         }
         if self.JGFKNDMDHHP != 0. {
             os.write_double(3, self.JGFKNDMDHHP)?;
+        }
+        if self.IBOPDGOFDOD != 0 {
+            os.write_uint32(4, self.IBOPDGOFDOD)?;
+        }
+        if self.NBKOOPBPNPL != 0 {
+            os.write_uint32(5, self.NBKOOPBPNPL)?;
+        }
+        if self.GMJGPDKJAEE != 0 {
+            os.write_uint32(6, self.GMJGPDKJAEE)?;
+        }
+        if self.HKAENABCBHL != 0 {
+            os.write_uint32(7, self.HKAENABCBHL)?;
+        }
+        if self.AEPMEGILLOJ != 0. {
+            os.write_double(8, self.AEPMEGILLOJ)?;
+        }
+        if self.BJGOOFNOGMJ != 0 {
+            os.write_uint32(9, self.BJGOOFNOGMJ)?;
+        }
+        if self.OLPDBDEDCOG != 0 {
+            os.write_uint32(10, self.OLPDBDEDCOG)?;
+        }
+        if self.MINCPOKEPDP != 0. {
+            os.write_double(11, self.MINCPOKEPDP)?;
+        }
+        if self.OEBAIDCOPLC != 0 {
+            os.write_uint32(12, self.OEBAIDCOPLC)?;
+        }
+        if self.IBHKMLKHKJB != 0 {
+            os.write_uint32(13, self.IBHKMLKHKJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -308,37 +308,37 @@ impl ::protobuf::Message for LGOKJFKMCBE {
     }
 
     fn clear(&mut self) {
-        self.BJGOOFNOGMJ = 0;
         self.KJGDBFEFHPJ = 0;
-        self.MINCPOKEPDP = 0.;
-        self.OLPDBDEDCOG = 0;
-        self.OEBAIDCOPLC = 0;
-        self.HKAENABCBHL = 0;
-        self.IBHKMLKHKJB = 0;
-        self.GMJGPDKJAEE = 0;
-        self.NBKOOPBPNPL = 0;
-        self.IBOPDGOFDOD = 0;
-        self.AEPMEGILLOJ = 0.;
         self.HIFNHNLNDPN = 0.;
         self.JGFKNDMDHHP = 0.;
+        self.IBOPDGOFDOD = 0;
+        self.NBKOOPBPNPL = 0;
+        self.GMJGPDKJAEE = 0;
+        self.HKAENABCBHL = 0;
+        self.AEPMEGILLOJ = 0.;
+        self.BJGOOFNOGMJ = 0;
+        self.OLPDBDEDCOG = 0;
+        self.MINCPOKEPDP = 0.;
+        self.OEBAIDCOPLC = 0;
+        self.IBHKMLKHKJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGOKJFKMCBE {
         static instance: LGOKJFKMCBE = LGOKJFKMCBE {
-            BJGOOFNOGMJ: 0,
             KJGDBFEFHPJ: 0,
-            MINCPOKEPDP: 0.,
-            OLPDBDEDCOG: 0,
-            OEBAIDCOPLC: 0,
-            HKAENABCBHL: 0,
-            IBHKMLKHKJB: 0,
-            GMJGPDKJAEE: 0,
-            NBKOOPBPNPL: 0,
-            IBOPDGOFDOD: 0,
-            AEPMEGILLOJ: 0.,
             HIFNHNLNDPN: 0.,
             JGFKNDMDHHP: 0.,
+            IBOPDGOFDOD: 0,
+            NBKOOPBPNPL: 0,
+            GMJGPDKJAEE: 0,
+            HKAENABCBHL: 0,
+            AEPMEGILLOJ: 0.,
+            BJGOOFNOGMJ: 0,
+            OLPDBDEDCOG: 0,
+            MINCPOKEPDP: 0.,
+            OEBAIDCOPLC: 0,
+            IBHKMLKHKJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -363,18 +363,18 @@ impl ::protobuf::reflect::ProtobufValue for LGOKJFKMCBE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LGOKJFKMCBE.proto\"\xc7\x03\n\x0bLGOKJFKMCBE\x12\x20\n\x0bBJGOOFNO\
-    GMJ\x18\t\x20\x01(\rR\x0bBJGOOFNOGMJ\x12\x20\n\x0bKJGDBFEFHPJ\x18\x01\
-    \x20\x01(\rR\x0bKJGDBFEFHPJ\x12\x20\n\x0bMINCPOKEPDP\x18\x0b\x20\x01(\
-    \x01R\x0bMINCPOKEPDP\x12\x20\n\x0bOLPDBDEDCOG\x18\n\x20\x01(\rR\x0bOLPDB\
-    DEDCOG\x12\x20\n\x0bOEBAIDCOPLC\x18\x0c\x20\x01(\rR\x0bOEBAIDCOPLC\x12\
-    \x20\n\x0bHKAENABCBHL\x18\x07\x20\x01(\rR\x0bHKAENABCBHL\x12\x20\n\x0bIB\
-    HKMLKHKJB\x18\r\x20\x01(\rR\x0bIBHKMLKHKJB\x12\x20\n\x0bGMJGPDKJAEE\x18\
-    \x06\x20\x01(\rR\x0bGMJGPDKJAEE\x12\x20\n\x0bNBKOOPBPNPL\x18\x05\x20\x01\
-    (\rR\x0bNBKOOPBPNPL\x12\x20\n\x0bIBOPDGOFDOD\x18\x04\x20\x01(\rR\x0bIBOP\
-    DGOFDOD\x12\x20\n\x0bAEPMEGILLOJ\x18\x08\x20\x01(\x01R\x0bAEPMEGILLOJ\
-    \x12\x20\n\x0bHIFNHNLNDPN\x18\x02\x20\x01(\x01R\x0bHIFNHNLNDPN\x12\x20\n\
-    \x0bJGFKNDMDHHP\x18\x03\x20\x01(\x01R\x0bJGFKNDMDHHPb\x06proto3\
+    \n\x11LGOKJFKMCBE.proto\"\xc7\x03\n\x0bLGOKJFKMCBE\x12\x20\n\x0bKJGDBFEF\
+    HPJ\x18\x01\x20\x01(\rR\x0bKJGDBFEFHPJ\x12\x20\n\x0bHIFNHNLNDPN\x18\x02\
+    \x20\x01(\x01R\x0bHIFNHNLNDPN\x12\x20\n\x0bJGFKNDMDHHP\x18\x03\x20\x01(\
+    \x01R\x0bJGFKNDMDHHP\x12\x20\n\x0bIBOPDGOFDOD\x18\x04\x20\x01(\rR\x0bIBO\
+    PDGOFDOD\x12\x20\n\x0bNBKOOPBPNPL\x18\x05\x20\x01(\rR\x0bNBKOOPBPNPL\x12\
+    \x20\n\x0bGMJGPDKJAEE\x18\x06\x20\x01(\rR\x0bGMJGPDKJAEE\x12\x20\n\x0bHK\
+    AENABCBHL\x18\x07\x20\x01(\rR\x0bHKAENABCBHL\x12\x20\n\x0bAEPMEGILLOJ\
+    \x18\x08\x20\x01(\x01R\x0bAEPMEGILLOJ\x12\x20\n\x0bBJGOOFNOGMJ\x18\t\x20\
+    \x01(\rR\x0bBJGOOFNOGMJ\x12\x20\n\x0bOLPDBDEDCOG\x18\n\x20\x01(\rR\x0bOL\
+    PDBDEDCOG\x12\x20\n\x0bMINCPOKEPDP\x18\x0b\x20\x01(\x01R\x0bMINCPOKEPDP\
+    \x12\x20\n\x0bOEBAIDCOPLC\x18\x0c\x20\x01(\rR\x0bOEBAIDCOPLC\x12\x20\n\
+    \x0bIBHKMLKHKJB\x18\r\x20\x01(\rR\x0bIBHKMLKHKJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

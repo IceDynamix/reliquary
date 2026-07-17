@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.KJKGHIEKNID)
     pub KJKGHIEKNID: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.progress)
+    pub progress: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientRaidTargetCountScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl SetClientRaidTargetCountScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &SetClientRaidTargetCountScRsp| { &m.progress },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.progress },
+            "KJKGHIEKNID",
+            |m: &SetClientRaidTargetCountScRsp| { &m.KJKGHIEKNID },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.KJKGHIEKNID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -64,9 +64,9 @@ impl SetClientRaidTargetCountScRsp {
             |m: &mut SetClientRaidTargetCountScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KJKGHIEKNID",
-            |m: &SetClientRaidTargetCountScRsp| { &m.KJKGHIEKNID },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.KJKGHIEKNID },
+            "progress",
+            |m: &SetClientRaidTargetCountScRsp| { &m.progress },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.progress },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientRaidTargetCountScRsp>(
             "SetClientRaidTargetCountScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.progress = is.read_uint32()?;
+                16 => {
+                    self.KJKGHIEKNID = is.read_uint32()?;
                 },
-                104 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.KJKGHIEKNID = is.read_uint32()?;
+                32 => {
+                    self.progress = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.progress);
+        if self.KJKGHIEKNID != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KJKGHIEKNID);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.KJKGHIEKNID != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KJKGHIEKNID);
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(4, self.progress)?;
+        if self.KJKGHIEKNID != 0 {
+            os.write_uint32(2, self.KJKGHIEKNID)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.KJKGHIEKNID != 0 {
-            os.write_uint32(14, self.KJKGHIEKNID)?;
+        if self.progress != 0 {
+            os.write_uint32(4, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     }
 
     fn clear(&mut self) {
-        self.progress = 0;
-        self.retcode = 0;
         self.KJKGHIEKNID = 0;
+        self.retcode = 0;
+        self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountScRsp {
         static instance: SetClientRaidTargetCountScRsp = SetClientRaidTargetCountScRsp {
-            progress: 0,
-            retcode: 0,
             KJKGHIEKNID: 0,
+            retcode: 0,
+            progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountScRsp.proto\"w\n\x1dSetClientRaidTargetCountS\
-    cRsp\x12\x1a\n\x08progress\x18\x04\x20\x01(\rR\x08progress\x12\x18\n\x07\
-    retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bKJKGHIEKNID\x18\x0e\
-    \x20\x01(\rR\x0bKJKGHIEKNIDb\x06proto3\
+    cRsp\x12\x20\n\x0bKJKGHIEKNID\x18\x02\x20\x01(\rR\x0bKJKGHIEKNID\x12\x18\
+    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x1a\n\x08progress\x18\
+    \x04\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

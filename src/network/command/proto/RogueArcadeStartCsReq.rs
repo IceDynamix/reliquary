@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                56 => {
+                88 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
                 112 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NOEPBNMJFGL);
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.room_id);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for RogueArcadeStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(11, &self.NOEPBNMJFGL)?;
         if self.room_id != 0 {
             os.write_uint32(14, self.room_id)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueArcadeStartCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueArcadeStartCsReq.proto\"R\n\x15RogueArcadeStartCsReq\x12\x20\
-    \n\x0bNOEPBNMJFGL\x18\x07\x20\x03(\rR\x0bNOEPBNMJFGL\x12\x17\n\x07room_i\
+    \n\x0bNOEPBNMJFGL\x18\x0b\x20\x03(\rR\x0bNOEPBNMJFGL\x12\x17\n\x07room_i\
     d\x18\x0e\x20\x01(\rR\x06roomIdb\x06proto3\
 ";
 

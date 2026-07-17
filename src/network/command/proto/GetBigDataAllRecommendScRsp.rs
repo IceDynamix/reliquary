@@ -50,7 +50,7 @@ impl GetBigDataAllRecommendScRsp {
         ::std::default::Default::default()
     }
 
-    // .BigDataRecommendRelicAvatar relic_avatar = 8;
+    // .BigDataRecommendRelicAvatar relic_avatar = 1;
 
     pub fn relic_avatar(&self) -> &super::BigDataRecommendRelicAvatar::BigDataRecommendRelicAvatar {
         match self.OODKOEILJCD {
@@ -99,7 +99,7 @@ impl GetBigDataAllRecommendScRsp {
         }
     }
 
-    // .BigDataRecommendAvatarRelic avatar_relic = 1;
+    // .BigDataRecommendAvatarRelic avatar_relic = 8;
 
     pub fn avatar_relic(&self) -> &super::BigDataRecommendAvatarRelic::BigDataRecommendAvatarRelic {
         match self.OODKOEILJCD {
@@ -148,7 +148,7 @@ impl GetBigDataAllRecommendScRsp {
         }
     }
 
-    // .GNBBDMBNNDJ KHCMLINMGEN = 4;
+    // .GNBBDMBNNDJ KHCMLINMGEN = 7;
 
     pub fn KHCMLINMGEN(&self) -> &super::GNBBDMBNNDJ::GNBBDMBNNDJ {
         match self.OODKOEILJCD {
@@ -250,19 +250,19 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.big_data_recommend_type = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                10 => {
                     self.OODKOEILJCD = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::OODKOEILJCD::RelicAvatar(is.read_message()?));
                 },
-                10 => {
+                66 => {
                     self.OODKOEILJCD = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::OODKOEILJCD::AvatarRelic(is.read_message()?));
                 },
-                34 => {
+                58 => {
                     self.OODKOEILJCD = ::std::option::Option::Some(get_big_data_all_recommend_sc_rsp::OODKOEILJCD::KHCMLINMGEN(is.read_message()?));
                 },
                 tag => {
@@ -278,10 +278,10 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.big_data_recommend_type.value());
+            my_size += ::protobuf::rt::int32_size(5, self.big_data_recommend_type.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.OODKOEILJCD {
             match v {
@@ -306,21 +306,21 @@ impl ::protobuf::Message for GetBigDataAllRecommendScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.big_data_recommend_type != ::protobuf::EnumOrUnknown::new(super::BigDataRecommendType::BigDataRecommendType::BIG_DATA_RECOMMEND_TYPE_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.big_data_recommend_type))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.OODKOEILJCD {
             match v {
                 &get_big_data_all_recommend_sc_rsp::OODKOEILJCD::RelicAvatar(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &get_big_data_all_recommend_sc_rsp::OODKOEILJCD::AvatarRelic(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
+                &get_big_data_all_recommend_sc_rsp::OODKOEILJCD::AvatarRelic(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
                 &get_big_data_all_recommend_sc_rsp::OODKOEILJCD::KHCMLINMGEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -413,12 +413,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetBigDataAllRecommendScRsp.proto\x1a!BigDataRecommendAvatarRelic.pro\
     to\x1a!BigDataRecommendRelicAvatar.proto\x1a\x1aBigDataRecommendType.pro\
     to\x1a\x11GNBBDMBNNDJ.proto\"\xcc\x02\n\x1bGetBigDataAllRecommendScRsp\
-    \x12L\n\x17big_data_recommend_type\x18\r\x20\x01(\x0e2\x15.BigDataRecomm\
-    endTypeR\x14bigDataRecommendType\x12\x18\n\x07retcode\x18\x03\x20\x01(\r\
-    R\x07retcode\x12A\n\x0crelic_avatar\x18\x08\x20\x01(\x0b2\x1c.BigDataRec\
-    ommendRelicAvatarH\0R\x0brelicAvatar\x12A\n\x0cavatar_relic\x18\x01\x20\
+    \x12L\n\x17big_data_recommend_type\x18\x05\x20\x01(\x0e2\x15.BigDataReco\
+    mmendTypeR\x14bigDataRecommendType\x12\x18\n\x07retcode\x18\t\x20\x01(\r\
+    R\x07retcode\x12A\n\x0crelic_avatar\x18\x01\x20\x01(\x0b2\x1c.BigDataRec\
+    ommendRelicAvatarH\0R\x0brelicAvatar\x12A\n\x0cavatar_relic\x18\x08\x20\
     \x01(\x0b2\x1c.BigDataRecommendAvatarRelicH\0R\x0bavatarRelic\x120\n\x0b\
-    KHCMLINMGEN\x18\x04\x20\x01(\x0b2\x0c.GNBBDMBNNDJH\0R\x0bKHCMLINMGENB\r\
+    KHCMLINMGEN\x18\x07\x20\x01(\x0b2\x0c.GNBBDMBNNDJH\0R\x0bKHCMLINMGENB\r\
     \n\x0bOODKOEILJCDb\x06proto3\
 ";
 

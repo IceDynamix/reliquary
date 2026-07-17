@@ -48,7 +48,7 @@ impl TrainPartyHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .MDOIMCNFDLC KLONPDNKBJF = 2023;
+    // .MDOIMCNFDLC KLONPDNKBJF = 1533;
 
     pub fn KLONPDNKBJF(&self) -> &super::MDOIMCNFDLC::MDOIMCNFDLC {
         match self.KILBFAAFDPD {
@@ -97,7 +97,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .PFAIANENDEE LGBJDFHBIND = 779;
+    // .PFAIANENDEE LGBJDFHBIND = 352;
 
     pub fn LGBJDFHBIND(&self) -> &super::PFAIANENDEE::PFAIANENDEE {
         match self.KILBFAAFDPD {
@@ -146,7 +146,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .CKPNGMLENFA NELLGPKHIKE = 145;
+    // .CKPNGMLENFA NELLGPKHIKE = 1642;
 
     pub fn NELLGPKHIKE(&self) -> &super::CKPNGMLENFA::CKPNGMLENFA {
         match self.KILBFAAFDPD {
@@ -195,7 +195,7 @@ impl TrainPartyHandlePendingActionCsReq {
         }
     }
 
-    // .MOCNDOCEOJM NMEFKABDHAN = 885;
+    // .MOCNDOCEOJM NMEFKABDHAN = 795;
 
     pub fn NMEFKABDHAN(&self) -> &super::MOCNDOCEOJM::MOCNDOCEOJM {
         match self.KILBFAAFDPD {
@@ -299,19 +299,19 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                16186 => {
+                12266 => {
                     self.KILBFAAFDPD = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KILBFAAFDPD::KLONPDNKBJF(is.read_message()?));
                 },
-                6234 => {
+                2818 => {
                     self.KILBFAAFDPD = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KILBFAAFDPD::LGBJDFHBIND(is.read_message()?));
                 },
-                1162 => {
+                13138 => {
                     self.KILBFAAFDPD = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KILBFAAFDPD::NELLGPKHIKE(is.read_message()?));
                 },
-                7082 => {
+                6362 => {
                     self.KILBFAAFDPD = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KILBFAAFDPD::NMEFKABDHAN(is.read_message()?));
                 },
                 tag => {
@@ -327,7 +327,7 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(6, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.KILBFAAFDPD {
             match v {
@@ -356,21 +356,21 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(3, self.queue_position)?;
+            os.write_uint32(6, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KILBFAAFDPD {
             match v {
                 &train_party_handle_pending_action_cs_req::KILBFAAFDPD::KLONPDNKBJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2023, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1533, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::KILBFAAFDPD::LGBJDFHBIND(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(779, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(352, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::KILBFAAFDPD::NELLGPKHIKE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(145, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1642, v, os)?;
                 },
                 &train_party_handle_pending_action_cs_req::KILBFAAFDPD::NMEFKABDHAN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(885, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(795, v, os)?;
                 },
             };
         }
@@ -464,11 +464,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyHandlePendingActionCsReq.proto\x1a\x11CKPNGMLENFA.proto\x1a\
     \x11MDOIMCNFDLC.proto\x1a\x11MOCNDOCEOJM.proto\x1a\x11PFAIANENDEE.proto\
     \"\xa6\x02\n\"TrainPartyHandlePendingActionCsReq\x12%\n\x0equeue_positio\
-    n\x18\x03\x20\x01(\rR\rqueuePosition\x121\n\x0bKLONPDNKBJF\x18\xe7\x0f\
+    n\x18\x06\x20\x01(\rR\rqueuePosition\x121\n\x0bKLONPDNKBJF\x18\xfd\x0b\
     \x20\x01(\x0b2\x0c.MDOIMCNFDLCH\0R\x0bKLONPDNKBJF\x121\n\x0bLGBJDFHBIND\
-    \x18\x8b\x06\x20\x01(\x0b2\x0c.PFAIANENDEEH\0R\x0bLGBJDFHBIND\x121\n\x0b\
-    NELLGPKHIKE\x18\x91\x01\x20\x01(\x0b2\x0c.CKPNGMLENFAH\0R\x0bNELLGPKHIKE\
-    \x121\n\x0bNMEFKABDHAN\x18\xf5\x06\x20\x01(\x0b2\x0c.MOCNDOCEOJMH\0R\x0b\
+    \x18\xe0\x02\x20\x01(\x0b2\x0c.PFAIANENDEEH\0R\x0bLGBJDFHBIND\x121\n\x0b\
+    NELLGPKHIKE\x18\xea\x0c\x20\x01(\x0b2\x0c.CKPNGMLENFAH\0R\x0bNELLGPKHIKE\
+    \x121\n\x0bNMEFKABDHAN\x18\x9b\x06\x20\x01(\x0b2\x0c.MOCNDOCEOJMH\0R\x0b\
     NMEFKABDHANB\r\n\x0bKILBFAAFDPDb\x06proto3\
 ";
 

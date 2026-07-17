@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ECCKHOLLPPC {
     // message fields
-    // @@protoc_insertion_point(field:ECCKHOLLPPC.AGNFHCLKGCF)
-    pub AGNFHCLKGCF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ECCKHOLLPPC.ANBJMMOEGJE)
     pub ANBJMMOEGJE: u64,
     // @@protoc_insertion_point(field:ECCKHOLLPPC.GJNMHILINHC)
     pub GJNMHILINHC: u32,
     // @@protoc_insertion_point(field:ECCKHOLLPPC.JOJALEHLLEJ)
     pub JOJALEHLLEJ: u32,
+    // @@protoc_insertion_point(field:ECCKHOLLPPC.AGNFHCLKGCF)
+    pub AGNFHCLKGCF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ECCKHOLLPPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl ECCKHOLLPPC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AGNFHCLKGCF",
-            |m: &ECCKHOLLPPC| { &m.AGNFHCLKGCF },
-            |m: &mut ECCKHOLLPPC| { &mut m.AGNFHCLKGCF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANBJMMOEGJE",
             |m: &ECCKHOLLPPC| { &m.ANBJMMOEGJE },
@@ -74,6 +69,11 @@ impl ECCKHOLLPPC {
             "JOJALEHLLEJ",
             |m: &ECCKHOLLPPC| { &m.JOJALEHLLEJ },
             |m: &mut ECCKHOLLPPC| { &mut m.JOJALEHLLEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AGNFHCLKGCF",
+            |m: &ECCKHOLLPPC| { &m.AGNFHCLKGCF },
+            |m: &mut ECCKHOLLPPC| { &mut m.AGNFHCLKGCF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ECCKHOLLPPC>(
             "ECCKHOLLPPC",
@@ -93,12 +93,6 @@ impl ::protobuf::Message for ECCKHOLLPPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AGNFHCLKGCF)?;
-                },
-                32 => {
-                    self.AGNFHCLKGCF.push(is.read_uint32()?);
-                },
                 8 => {
                     self.ANBJMMOEGJE = is.read_uint64()?;
                 },
@@ -107,6 +101,12 @@ impl ::protobuf::Message for ECCKHOLLPPC {
                 },
                 24 => {
                     self.JOJALEHLLEJ = is.read_uint32()?;
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AGNFHCLKGCF)?;
+                },
+                32 => {
+                    self.AGNFHCLKGCF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,7 +120,6 @@ impl ::protobuf::Message for ECCKHOLLPPC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.AGNFHCLKGCF);
         if self.ANBJMMOEGJE != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.ANBJMMOEGJE);
         }
@@ -130,13 +129,13 @@ impl ::protobuf::Message for ECCKHOLLPPC {
         if self.JOJALEHLLEJ != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.JOJALEHLLEJ);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.AGNFHCLKGCF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.AGNFHCLKGCF)?;
         if self.ANBJMMOEGJE != 0 {
             os.write_uint64(1, self.ANBJMMOEGJE)?;
         }
@@ -146,6 +145,7 @@ impl ::protobuf::Message for ECCKHOLLPPC {
         if self.JOJALEHLLEJ != 0 {
             os.write_uint32(3, self.JOJALEHLLEJ)?;
         }
+        os.write_repeated_packed_uint32(4, &self.AGNFHCLKGCF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for ECCKHOLLPPC {
     }
 
     fn clear(&mut self) {
-        self.AGNFHCLKGCF.clear();
         self.ANBJMMOEGJE = 0;
         self.GJNMHILINHC = 0;
         self.JOJALEHLLEJ = 0;
+        self.AGNFHCLKGCF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ECCKHOLLPPC {
         static instance: ECCKHOLLPPC = ECCKHOLLPPC {
-            AGNFHCLKGCF: ::std::vec::Vec::new(),
             ANBJMMOEGJE: 0,
             GJNMHILINHC: 0,
             JOJALEHLLEJ: 0,
+            AGNFHCLKGCF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for ECCKHOLLPPC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ECCKHOLLPPC.proto\"\x95\x01\n\x0bECCKHOLLPPC\x12\x20\n\x0bAGNFHCLK\
-    GCF\x18\x04\x20\x03(\rR\x0bAGNFHCLKGCF\x12\x20\n\x0bANBJMMOEGJE\x18\x01\
-    \x20\x01(\x04R\x0bANBJMMOEGJE\x12\x20\n\x0bGJNMHILINHC\x18\x02\x20\x01(\
-    \rR\x0bGJNMHILINHC\x12\x20\n\x0bJOJALEHLLEJ\x18\x03\x20\x01(\rR\x0bJOJAL\
-    EHLLEJb\x06proto3\
+    \n\x11ECCKHOLLPPC.proto\"\x95\x01\n\x0bECCKHOLLPPC\x12\x20\n\x0bANBJMMOE\
+    GJE\x18\x01\x20\x01(\x04R\x0bANBJMMOEGJE\x12\x20\n\x0bGJNMHILINHC\x18\
+    \x02\x20\x01(\rR\x0bGJNMHILINHC\x12\x20\n\x0bJOJALEHLLEJ\x18\x03\x20\x01\
+    (\rR\x0bJOJALEHLLEJ\x12\x20\n\x0bAGNFHCLKGCF\x18\x04\x20\x03(\rR\x0bAGNF\
+    HCLKGCFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

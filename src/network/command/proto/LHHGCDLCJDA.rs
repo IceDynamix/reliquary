@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHHGCDLCJDA {
     // message fields
-    // @@protoc_insertion_point(field:LHHGCDLCJDA.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:LHHGCDLCJDA.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:LHHGCDLCJDA.group_id)
+    pub group_id: u32,
     // @@protoc_insertion_point(field:LHHGCDLCJDA.BIMDKNLMICG)
     pub BIMDKNLMICG: bool,
     // special fields
@@ -54,14 +54,14 @@ impl LHHGCDLCJDA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &LHHGCDLCJDA| { &m.group_id },
-            |m: &mut LHHGCDLCJDA| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &LHHGCDLCJDA| { &m.id },
             |m: &mut LHHGCDLCJDA| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &LHHGCDLCJDA| { &m.group_id },
+            |m: &mut LHHGCDLCJDA| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIMDKNLMICG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LHHGCDLCJDA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.id = is.read_uint32()?;
                 },
-                16 => {
+                64 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                88 => {
                     self.BIMDKNLMICG = is.read_bool()?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for LHHGCDLCJDA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::uint32_size(4, self.id);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
         }
         if self.BIMDKNLMICG != false {
             my_size += 1 + 1;
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LHHGCDLCJDA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(9, self.group_id)?;
-        }
         if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_uint32(4, self.id)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(8, self.group_id)?;
         }
         if self.BIMDKNLMICG != false {
-            os.write_bool(2, self.BIMDKNLMICG)?;
+            os.write_bool(11, self.BIMDKNLMICG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LHHGCDLCJDA {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.id = 0;
+        self.group_id = 0;
         self.BIMDKNLMICG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHHGCDLCJDA {
         static instance: LHHGCDLCJDA = LHHGCDLCJDA {
-            group_id: 0,
             id: 0,
+            group_id: 0,
             BIMDKNLMICG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for LHHGCDLCJDA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHHGCDLCJDA.proto\"Z\n\x0bLHHGCDLCJDA\x12\x19\n\x08group_id\x18\t\
-    \x20\x01(\rR\x07groupId\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12\
-    \x20\n\x0bBIMDKNLMICG\x18\x02\x20\x01(\x08R\x0bBIMDKNLMICGb\x06proto3\
+    \n\x11LHHGCDLCJDA.proto\"Z\n\x0bLHHGCDLCJDA\x12\x0e\n\x02id\x18\x04\x20\
+    \x01(\rR\x02id\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\x07groupId\x12\
+    \x20\n\x0bBIMDKNLMICG\x18\x0b\x20\x01(\x08R\x0bBIMDKNLMICGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

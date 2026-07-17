@@ -28,12 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PICDJHEPJLC {
     // message fields
-    // @@protoc_insertion_point(field:PICDJHEPJLC.PCDFIOCMJFE)
-    pub PCDFIOCMJFE: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:PICDJHEPJLC.ACAOLNODBLN)
-    pub ACAOLNODBLN: u32,
     // @@protoc_insertion_point(field:PICDJHEPJLC.LEGCBILEEHK)
     pub LEGCBILEEHK: u32,
+    // @@protoc_insertion_point(field:PICDJHEPJLC.PCDFIOCMJFE)
+    pub PCDFIOCMJFE: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PICDJHEPJLC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +49,17 @@ impl PICDJHEPJLC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "PCDFIOCMJFE",
-            |m: &PICDJHEPJLC| { &m.PCDFIOCMJFE },
-            |m: &mut PICDJHEPJLC| { &mut m.PCDFIOCMJFE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACAOLNODBLN",
-            |m: &PICDJHEPJLC| { &m.ACAOLNODBLN },
-            |m: &mut PICDJHEPJLC| { &mut m.ACAOLNODBLN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LEGCBILEEHK",
             |m: &PICDJHEPJLC| { &m.LEGCBILEEHK },
             |m: &mut PICDJHEPJLC| { &mut m.LEGCBILEEHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "PCDFIOCMJFE",
+            |m: &PICDJHEPJLC| { &m.PCDFIOCMJFE },
+            |m: &mut PICDJHEPJLC| { &mut m.PCDFIOCMJFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PICDJHEPJLC>(
             "PICDJHEPJLC",
@@ -86,7 +79,10 @@ impl ::protobuf::Message for PICDJHEPJLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                24 => {
+                    self.LEGCBILEEHK = is.read_uint32()?;
+                },
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -101,12 +97,6 @@ impl ::protobuf::Message for PICDJHEPJLC {
                     is.pop_limit(old_limit);
                     self.PCDFIOCMJFE.insert(key, value);
                 },
-                104 => {
-                    self.ACAOLNODBLN = is.read_uint32()?;
-                },
-                24 => {
-                    self.LEGCBILEEHK = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -119,39 +109,33 @@ impl ::protobuf::Message for PICDJHEPJLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LEGCBILEEHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LEGCBILEEHK);
+        }
         for (k, v) in &self.PCDFIOCMJFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.ACAOLNODBLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.ACAOLNODBLN);
-        }
-        if self.LEGCBILEEHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LEGCBILEEHK);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LEGCBILEEHK != 0 {
+            os.write_uint32(3, self.LEGCBILEEHK)?;
+        }
         for (k, v) in &self.PCDFIOCMJFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(66)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.ACAOLNODBLN != 0 {
-            os.write_uint32(13, self.ACAOLNODBLN)?;
-        }
-        if self.LEGCBILEEHK != 0 {
-            os.write_uint32(3, self.LEGCBILEEHK)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -169,9 +153,8 @@ impl ::protobuf::Message for PICDJHEPJLC {
     }
 
     fn clear(&mut self) {
-        self.PCDFIOCMJFE.clear();
-        self.ACAOLNODBLN = 0;
         self.LEGCBILEEHK = 0;
+        self.PCDFIOCMJFE.clear();
         self.special_fields.clear();
     }
 
@@ -199,12 +182,11 @@ impl ::protobuf::reflect::ProtobufValue for PICDJHEPJLC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PICDJHEPJLC.proto\"\xd2\x01\n\x0bPICDJHEPJLC\x12?\n\x0bPCDFIOCMJFE\
-    \x18\x08\x20\x03(\x0b2\x1d.PICDJHEPJLC.PCDFIOCMJFEEntryR\x0bPCDFIOCMJFE\
-    \x12\x20\n\x0bACAOLNODBLN\x18\r\x20\x01(\rR\x0bACAOLNODBLN\x12\x20\n\x0b\
-    LEGCBILEEHK\x18\x03\x20\x01(\rR\x0bLEGCBILEEHK\x1a>\n\x10PCDFIOCMJFEEntr\
-    y\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\
-    \x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11PICDJHEPJLC.proto\"\xb0\x01\n\x0bPICDJHEPJLC\x12\x20\n\x0bLEGCBILE\
+    EHK\x18\x03\x20\x01(\rR\x0bLEGCBILEEHK\x12?\n\x0bPCDFIOCMJFE\x18\r\x20\
+    \x03(\x0b2\x1d.PICDJHEPJLC.PCDFIOCMJFEEntryR\x0bPCDFIOCMJFE\x1a>\n\x10PC\
+    DFIOCMJFEEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05\
+    value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

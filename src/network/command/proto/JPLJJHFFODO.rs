@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JPLJJHFFODO {
     // message fields
+    // @@protoc_insertion_point(field:JPLJJHFFODO.event_type)
+    pub event_type: u32,
     // @@protoc_insertion_point(field:JPLJJHFFODO.num)
     pub num: u32,
-    // @@protoc_insertion_point(field:JPLJJHFFODO.LAOACNPDOLD)
-    pub LAOACNPDOLD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPLJJHFFODO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl JPLJJHFFODO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_type",
+            |m: &JPLJJHFFODO| { &m.event_type },
+            |m: &mut JPLJJHFFODO| { &mut m.event_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
             |m: &JPLJJHFFODO| { &m.num },
             |m: &mut JPLJJHFFODO| { &mut m.num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &JPLJJHFFODO| { &m.LAOACNPDOLD },
-            |m: &mut JPLJJHFFODO| { &mut m.LAOACNPDOLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPLJJHFFODO>(
             "JPLJJHFFODO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JPLJJHFFODO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.num = is.read_uint32()?;
+                16 => {
+                    self.event_type = is.read_uint32()?;
                 },
-                8 => {
-                    self.LAOACNPDOLD = is.read_uint32()?;
+                32 => {
+                    self.num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JPLJJHFFODO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.num);
+        if self.event_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.event_type);
         }
-        if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LAOACNPDOLD);
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for JPLJJHFFODO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num != 0 {
-            os.write_uint32(13, self.num)?;
+        if self.event_type != 0 {
+            os.write_uint32(2, self.event_type)?;
         }
-        if self.LAOACNPDOLD != 0 {
-            os.write_uint32(1, self.LAOACNPDOLD)?;
+        if self.num != 0 {
+            os.write_uint32(4, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for JPLJJHFFODO {
     }
 
     fn clear(&mut self) {
+        self.event_type = 0;
         self.num = 0;
-        self.LAOACNPDOLD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPLJJHFFODO {
         static instance: JPLJJHFFODO = JPLJJHFFODO {
+            event_type: 0,
             num: 0,
-            LAOACNPDOLD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JPLJJHFFODO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPLJJHFFODO.proto\"A\n\x0bJPLJJHFFODO\x12\x10\n\x03num\x18\r\x20\
-    \x01(\rR\x03num\x12\x20\n\x0bLAOACNPDOLD\x18\x01\x20\x01(\rR\x0bLAOACNPD\
-    OLDb\x06proto3\
+    \n\x11JPLJJHFFODO.proto\">\n\x0bJPLJJHFFODO\x12\x1d\n\nevent_type\x18\
+    \x02\x20\x01(\rR\teventType\x12\x10\n\x03num\x18\x04\x20\x01(\rR\x03numb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ICABANFEIHJ {
     // message fields
-    // @@protoc_insertion_point(field:ICABANFEIHJ.NILEKCAGIMK)
-    pub NILEKCAGIMK: ::std::vec::Vec<super::LGFLGGDMAGD::LGFLGGDMAGD>,
     // @@protoc_insertion_point(field:ICABANFEIHJ.LCJFDCHINHL)
     pub LCJFDCHINHL: ::std::vec::Vec<super::MOOGIHHBHFG::MOOGIHHBHFG>,
+    // @@protoc_insertion_point(field:ICABANFEIHJ.NILEKCAGIMK)
+    pub NILEKCAGIMK: ::std::vec::Vec<super::LGFLGGDMAGD::LGFLGGDMAGD>,
     // special fields
     // @@protoc_insertion_point(special_field:ICABANFEIHJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ICABANFEIHJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NILEKCAGIMK",
-            |m: &ICABANFEIHJ| { &m.NILEKCAGIMK },
-            |m: &mut ICABANFEIHJ| { &mut m.NILEKCAGIMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LCJFDCHINHL",
             |m: &ICABANFEIHJ| { &m.LCJFDCHINHL },
             |m: &mut ICABANFEIHJ| { &mut m.LCJFDCHINHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NILEKCAGIMK",
+            |m: &ICABANFEIHJ| { &m.NILEKCAGIMK },
+            |m: &mut ICABANFEIHJ| { &mut m.NILEKCAGIMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ICABANFEIHJ>(
             "ICABANFEIHJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ICABANFEIHJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.NILEKCAGIMK.push(is.read_message()?);
-                },
                 42 => {
                     self.LCJFDCHINHL.push(is.read_message()?);
+                },
+                106 => {
+                    self.NILEKCAGIMK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ICABANFEIHJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NILEKCAGIMK {
+        for value in &self.LCJFDCHINHL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.LCJFDCHINHL {
+        for value in &self.NILEKCAGIMK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ICABANFEIHJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NILEKCAGIMK {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         for v in &self.LCJFDCHINHL {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        for v in &self.NILEKCAGIMK {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for ICABANFEIHJ {
     }
 
     fn clear(&mut self) {
-        self.NILEKCAGIMK.clear();
         self.LCJFDCHINHL.clear();
+        self.NILEKCAGIMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ICABANFEIHJ {
         static instance: ICABANFEIHJ = ICABANFEIHJ {
-            NILEKCAGIMK: ::std::vec::Vec::new(),
             LCJFDCHINHL: ::std::vec::Vec::new(),
+            NILEKCAGIMK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ICABANFEIHJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICABANFEIHJ.proto\x1a\x11LGFLGGDMAGD.proto\x1a\x11MOOGIHHBHFG.prot\
-    o\"m\n\x0bICABANFEIHJ\x12.\n\x0bNILEKCAGIMK\x18\n\x20\x03(\x0b2\x0c.LGFL\
-    GGDMAGDR\x0bNILEKCAGIMK\x12.\n\x0bLCJFDCHINHL\x18\x05\x20\x03(\x0b2\x0c.\
-    MOOGIHHBHFGR\x0bLCJFDCHINHLb\x06proto3\
+    o\"m\n\x0bICABANFEIHJ\x12.\n\x0bLCJFDCHINHL\x18\x05\x20\x03(\x0b2\x0c.MO\
+    OGIHHBHFGR\x0bLCJFDCHINHL\x12.\n\x0bNILEKCAGIMK\x18\r\x20\x03(\x0b2\x0c.\
+    LGFLGGDMAGDR\x0bNILEKCAGIMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AcceptMultipleExpeditionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.accept_multi_expedition)
-    pub accept_multi_expedition: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.DJOBNPIAEJP)
     pub DJOBNPIAEJP: ::std::vec::Vec<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.accept_multi_expedition)
+    pub accept_multi_expedition: ::std::vec::Vec<super::ExpeditionInfo::ExpeditionInfo>,
     // @@protoc_insertion_point(field:AcceptMultipleExpeditionScRsp.BJMGDBCHEAN)
     pub BJMGDBCHEAN: i64,
     // special fields
@@ -56,11 +56,6 @@ impl AcceptMultipleExpeditionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "accept_multi_expedition",
-            |m: &AcceptMultipleExpeditionScRsp| { &m.accept_multi_expedition },
-            |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.accept_multi_expedition },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DJOBNPIAEJP",
             |m: &AcceptMultipleExpeditionScRsp| { &m.DJOBNPIAEJP },
             |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.DJOBNPIAEJP },
@@ -69,6 +64,11 @@ impl AcceptMultipleExpeditionScRsp {
             "retcode",
             |m: &AcceptMultipleExpeditionScRsp| { &m.retcode },
             |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "accept_multi_expedition",
+            |m: &AcceptMultipleExpeditionScRsp| { &m.accept_multi_expedition },
+            |m: &mut AcceptMultipleExpeditionScRsp| { &mut m.accept_multi_expedition },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BJMGDBCHEAN",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.accept_multi_expedition.push(is.read_message()?);
-                },
-                106 => {
+                34 => {
                     self.DJOBNPIAEJP.push(is.read_message()?);
                 },
-                64 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
+                98 => {
+                    self.accept_multi_expedition.push(is.read_message()?);
+                },
+                120 => {
                     self.BJMGDBCHEAN = is.read_int64()?;
                 },
                 tag => {
@@ -117,19 +117,19 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.accept_multi_expedition {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.DJOBNPIAEJP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
+        for value in &self.accept_multi_expedition {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.BJMGDBCHEAN != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.BJMGDBCHEAN);
+            my_size += ::protobuf::rt::int64_size(15, self.BJMGDBCHEAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.accept_multi_expedition {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         for v in &self.DJOBNPIAEJP {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        for v in &self.accept_multi_expedition {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.BJMGDBCHEAN != 0 {
-            os.write_int64(4, self.BJMGDBCHEAN)?;
+            os.write_int64(15, self.BJMGDBCHEAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for AcceptMultipleExpeditionScRsp {
     }
 
     fn clear(&mut self) {
-        self.accept_multi_expedition.clear();
         self.DJOBNPIAEJP.clear();
         self.retcode = 0;
+        self.accept_multi_expedition.clear();
         self.BJMGDBCHEAN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptMultipleExpeditionScRsp {
         static instance: AcceptMultipleExpeditionScRsp = AcceptMultipleExpeditionScRsp {
-            accept_multi_expedition: ::std::vec::Vec::new(),
             DJOBNPIAEJP: ::std::vec::Vec::new(),
             retcode: 0,
+            accept_multi_expedition: ::std::vec::Vec::new(),
             BJMGDBCHEAN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for AcceptMultipleExpeditionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#AcceptMultipleExpeditionScRsp.proto\x1a\x14ExpeditionInfo.proto\x1a\
-    \x0eItemList.proto\"\xd1\x01\n\x1dAcceptMultipleExpeditionScRsp\x12G\n\
-    \x17accept_multi_expedition\x18\x01\x20\x03(\x0b2\x0f.ExpeditionInfoR\
-    \x15acceptMultiExpedition\x12+\n\x0bDJOBNPIAEJP\x18\r\x20\x03(\x0b2\t.It\
-    emListR\x0bDJOBNPIAEJP\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retco\
-    de\x12\x20\n\x0bBJMGDBCHEAN\x18\x04\x20\x01(\x03R\x0bBJMGDBCHEANb\x06pro\
-    to3\
+    \x0eItemList.proto\"\xd1\x01\n\x1dAcceptMultipleExpeditionScRsp\x12+\n\
+    \x0bDJOBNPIAEJP\x18\x04\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJP\x12\x18\
+    \n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12G\n\x17accept_multi_expedi\
+    tion\x18\x0c\x20\x03(\x0b2\x0f.ExpeditionInfoR\x15acceptMultiExpedition\
+    \x12\x20\n\x0bBJMGDBCHEAN\x18\x0f\x20\x01(\x03R\x0bBJMGDBCHEANb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

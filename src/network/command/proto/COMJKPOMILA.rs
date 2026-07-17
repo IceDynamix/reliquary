@@ -28,8 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct COMJKPOMILA {
     // message fields
+    // @@protoc_insertion_point(field:COMJKPOMILA.server_tick)
+    pub server_tick: u32,
     // @@protoc_insertion_point(field:COMJKPOMILA.LNBKFFIDEEJ)
     pub LNBKFFIDEEJ: ::std::string::String,
+    // @@protoc_insertion_point(field:COMJKPOMILA.server_time_ms)
+    pub server_time_ms: u64,
     // @@protoc_insertion_point(field:COMJKPOMILA.OMFPICKPOCP)
     pub OMFPICKPOCP: u32,
     // special fields
@@ -49,12 +53,22 @@ impl COMJKPOMILA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "server_tick",
+            |m: &COMJKPOMILA| { &m.server_tick },
+            |m: &mut COMJKPOMILA| { &mut m.server_tick },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNBKFFIDEEJ",
             |m: &COMJKPOMILA| { &m.LNBKFFIDEEJ },
             |m: &mut COMJKPOMILA| { &mut m.LNBKFFIDEEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "server_time_ms",
+            |m: &COMJKPOMILA| { &m.server_time_ms },
+            |m: &mut COMJKPOMILA| { &mut m.server_time_ms },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OMFPICKPOCP",
@@ -79,10 +93,16 @@ impl ::protobuf::Message for COMJKPOMILA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.server_tick = is.read_uint32()?;
+                },
                 50 => {
                     self.LNBKFFIDEEJ = is.read_string()?;
                 },
-                64 => {
+                80 => {
+                    self.server_time_ms = is.read_uint64()?;
+                },
+                96 => {
                     self.OMFPICKPOCP = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +117,17 @@ impl ::protobuf::Message for COMJKPOMILA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.server_tick != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.server_tick);
+        }
         if !self.LNBKFFIDEEJ.is_empty() {
             my_size += ::protobuf::rt::string_size(6, &self.LNBKFFIDEEJ);
         }
+        if self.server_time_ms != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.server_time_ms);
+        }
         if self.OMFPICKPOCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OMFPICKPOCP);
+            my_size += ::protobuf::rt::uint32_size(12, self.OMFPICKPOCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +135,17 @@ impl ::protobuf::Message for COMJKPOMILA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.server_tick != 0 {
+            os.write_uint32(3, self.server_tick)?;
+        }
         if !self.LNBKFFIDEEJ.is_empty() {
             os.write_string(6, &self.LNBKFFIDEEJ)?;
         }
+        if self.server_time_ms != 0 {
+            os.write_uint64(10, self.server_time_ms)?;
+        }
         if self.OMFPICKPOCP != 0 {
-            os.write_uint32(8, self.OMFPICKPOCP)?;
+            os.write_uint32(12, self.OMFPICKPOCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +164,18 @@ impl ::protobuf::Message for COMJKPOMILA {
     }
 
     fn clear(&mut self) {
+        self.server_tick = 0;
         self.LNBKFFIDEEJ.clear();
+        self.server_time_ms = 0;
         self.OMFPICKPOCP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static COMJKPOMILA {
         static instance: COMJKPOMILA = COMJKPOMILA {
+            server_tick: 0,
             LNBKFFIDEEJ: ::std::string::String::new(),
+            server_time_ms: 0,
             OMFPICKPOCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for COMJKPOMILA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11COMJKPOMILA.proto\"Q\n\x0bCOMJKPOMILA\x12\x20\n\x0bLNBKFFIDEEJ\x18\
-    \x06\x20\x01(\tR\x0bLNBKFFIDEEJ\x12\x20\n\x0bOMFPICKPOCP\x18\x08\x20\x01\
-    (\rR\x0bOMFPICKPOCPb\x06proto3\
+    \n\x11COMJKPOMILA.proto\"\x98\x01\n\x0bCOMJKPOMILA\x12\x1f\n\x0bserver_t\
+    ick\x18\x03\x20\x01(\rR\nserverTick\x12\x20\n\x0bLNBKFFIDEEJ\x18\x06\x20\
+    \x01(\tR\x0bLNBKFFIDEEJ\x12$\n\x0eserver_time_ms\x18\n\x20\x01(\x04R\x0c\
+    serverTimeMs\x12\x20\n\x0bOMFPICKPOCP\x18\x0c\x20\x01(\rR\x0bOMFPICKPOCP\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

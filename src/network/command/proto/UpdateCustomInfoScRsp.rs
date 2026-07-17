@@ -48,7 +48,7 @@ impl UpdateCustomInfoScRsp {
         ::std::default::Default::default()
     }
 
-    // string title = 13;
+    // string title = 5;
 
     pub fn title(&self) -> &str {
         match self.MMCGBGDJIPN {
@@ -97,7 +97,7 @@ impl UpdateCustomInfoScRsp {
         }
     }
 
-    // uint32 AJIMPLLIFIE = 15;
+    // uint32 AJIMPLLIFIE = 11;
 
     pub fn AJIMPLLIFIE(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -161,13 +161,13 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                42 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(is.read_string()?));
                 },
-                120 => {
+                88 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
                 },
                 tag => {
@@ -183,15 +183,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
-                    my_size += ::protobuf::rt::string_size(13, &v);
+                    my_size += ::protobuf::rt::string_size(5, &v);
                 },
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(15, v);
+                    my_size += ::protobuf::rt::uint32_size(11, v);
                 },
             };
         }
@@ -202,15 +202,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
-                    os.write_string(13, v)?;
+                    os.write_string(5, v)?;
                 },
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    os.write_uint32(15, v)?;
+                    os.write_uint32(11, v)?;
                 },
             };
         }
@@ -296,8 +296,8 @@ pub mod update_custom_info_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateCustomInfoScRsp.proto\"|\n\x15UpdateCustomInfoScRsp\x12\x18\
-    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x16\n\x05title\x18\r\
-    \x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\x0f\x20\x01(\rH\0R\
+    \n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x16\n\x05title\x18\x05\
+    \x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\x0b\x20\x01(\rH\0R\
     \x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 

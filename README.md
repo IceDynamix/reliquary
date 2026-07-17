@@ -67,6 +67,7 @@ in the generated protobuf types, hence the major version bumps.
 | `19.0.0`        | `4.1`        |
 | `20.1.0`        | `4.2`        |
 | `21.0.0`        | `4.3`        |
+| `22.0.0`        | `4.4`        |
 
 ## related
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FDJCIHMFOMC {
     // message fields
+    // @@protoc_insertion_point(field:FDJCIHMFOMC.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:FDJCIHMFOMC.EGCPAOEAGLF)
     pub EGCPAOEAGLF: ::std::string::String,
     // @@protoc_insertion_point(field:FDJCIHMFOMC.PEOODHOAJMP)
     pub PEOODHOAJMP: ::std::string::String,
-    // @@protoc_insertion_point(field:FDJCIHMFOMC.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FDJCIHMFOMC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl FDJCIHMFOMC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FDJCIHMFOMC| { &m.retcode },
+            |m: &mut FDJCIHMFOMC| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGCPAOEAGLF",
             |m: &FDJCIHMFOMC| { &m.EGCPAOEAGLF },
             |m: &mut FDJCIHMFOMC| { &mut m.EGCPAOEAGLF },
@@ -62,11 +67,6 @@ impl FDJCIHMFOMC {
             "PEOODHOAJMP",
             |m: &FDJCIHMFOMC| { &m.PEOODHOAJMP },
             |m: &mut FDJCIHMFOMC| { &mut m.PEOODHOAJMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FDJCIHMFOMC| { &m.retcode },
-            |m: &mut FDJCIHMFOMC| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FDJCIHMFOMC>(
             "FDJCIHMFOMC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FDJCIHMFOMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                66 => {
                     self.EGCPAOEAGLF = is.read_string()?;
                 },
-                34 => {
+                82 => {
                     self.PEOODHOAJMP = is.read_string()?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FDJCIHMFOMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         if !self.EGCPAOEAGLF.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.EGCPAOEAGLF);
+            my_size += ::protobuf::rt::string_size(8, &self.EGCPAOEAGLF);
         }
         if !self.PEOODHOAJMP.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.PEOODHOAJMP);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::string_size(10, &self.PEOODHOAJMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FDJCIHMFOMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
         if !self.EGCPAOEAGLF.is_empty() {
-            os.write_string(7, &self.EGCPAOEAGLF)?;
+            os.write_string(8, &self.EGCPAOEAGLF)?;
         }
         if !self.PEOODHOAJMP.is_empty() {
-            os.write_string(4, &self.PEOODHOAJMP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_string(10, &self.PEOODHOAJMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FDJCIHMFOMC {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.EGCPAOEAGLF.clear();
         self.PEOODHOAJMP.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FDJCIHMFOMC {
         static instance: FDJCIHMFOMC = FDJCIHMFOMC {
+            retcode: 0,
             EGCPAOEAGLF: ::std::string::String::new(),
             PEOODHOAJMP: ::std::string::String::new(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for FDJCIHMFOMC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FDJCIHMFOMC.proto\"k\n\x0bFDJCIHMFOMC\x12\x20\n\x0bEGCPAOEAGLF\x18\
-    \x07\x20\x01(\tR\x0bEGCPAOEAGLF\x12\x20\n\x0bPEOODHOAJMP\x18\x04\x20\x01\
-    (\tR\x0bPEOODHOAJMP\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
+    \n\x11FDJCIHMFOMC.proto\"k\n\x0bFDJCIHMFOMC\x12\x18\n\x07retcode\x18\x07\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bEGCPAOEAGLF\x18\x08\x20\x01(\tR\x0b\
+    EGCPAOEAGLF\x12\x20\n\x0bPEOODHOAJMP\x18\n\x20\x01(\tR\x0bPEOODHOAJMPb\
     \x06proto3\
 ";
 

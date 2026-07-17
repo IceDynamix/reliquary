@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LCKBHJBKHNH {
     // message fields
+    // @@protoc_insertion_point(field:LCKBHJBKHNH.cur_wave)
+    pub cur_wave: u32,
     // @@protoc_insertion_point(field:LCKBHJBKHNH.ILOODGHPOBM)
     pub ILOODGHPOBM: ::protobuf::MessageField<super::KFOOLGFCNDN::KFOOLGFCNDN>,
-    // @@protoc_insertion_point(field:LCKBHJBKHNH.DKCGLOIAPAH)
-    pub DKCGLOIAPAH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LCKBHJBKHNH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LCKBHJBKHNH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cur_wave",
+            |m: &LCKBHJBKHNH| { &m.cur_wave },
+            |m: &mut LCKBHJBKHNH| { &mut m.cur_wave },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFOOLGFCNDN::KFOOLGFCNDN>(
             "ILOODGHPOBM",
             |m: &LCKBHJBKHNH| { &m.ILOODGHPOBM },
             |m: &mut LCKBHJBKHNH| { &mut m.ILOODGHPOBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKCGLOIAPAH",
-            |m: &LCKBHJBKHNH| { &m.DKCGLOIAPAH },
-            |m: &mut LCKBHJBKHNH| { &mut m.DKCGLOIAPAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LCKBHJBKHNH>(
             "LCKBHJBKHNH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LCKBHJBKHNH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILOODGHPOBM)?;
+                32 => {
+                    self.cur_wave = is.read_uint32()?;
                 },
-                104 => {
-                    self.DKCGLOIAPAH = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILOODGHPOBM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for LCKBHJBKHNH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.cur_wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.cur_wave);
+        }
         if let Some(v) = self.ILOODGHPOBM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DKCGLOIAPAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DKCGLOIAPAH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LCKBHJBKHNH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ILOODGHPOBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.cur_wave != 0 {
+            os.write_uint32(4, self.cur_wave)?;
         }
-        if self.DKCGLOIAPAH != 0 {
-            os.write_uint32(13, self.DKCGLOIAPAH)?;
+        if let Some(v) = self.ILOODGHPOBM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LCKBHJBKHNH {
     }
 
     fn clear(&mut self) {
+        self.cur_wave = 0;
         self.ILOODGHPOBM.clear();
-        self.DKCGLOIAPAH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LCKBHJBKHNH {
         static instance: LCKBHJBKHNH = LCKBHJBKHNH {
+            cur_wave: 0,
             ILOODGHPOBM: ::protobuf::MessageField::none(),
-            DKCGLOIAPAH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for LCKBHJBKHNH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LCKBHJBKHNH.proto\x1a\x11KFOOLGFCNDN.proto\"_\n\x0bLCKBHJBKHNH\x12\
-    .\n\x0bILOODGHPOBM\x18\x06\x20\x01(\x0b2\x0c.KFOOLGFCNDNR\x0bILOODGHPOBM\
-    \x12\x20\n\x0bDKCGLOIAPAH\x18\r\x20\x01(\rR\x0bDKCGLOIAPAHb\x06proto3\
+    \n\x11LCKBHJBKHNH.proto\x1a\x11KFOOLGFCNDN.proto\"X\n\x0bLCKBHJBKHNH\x12\
+    \x19\n\x08cur_wave\x18\x04\x20\x01(\rR\x07curWave\x12.\n\x0bILOODGHPOBM\
+    \x18\x0f\x20\x01(\x0b2\x0c.KFOOLGFCNDNR\x0bILOODGHPOBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

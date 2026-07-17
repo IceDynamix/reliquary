@@ -29,64 +29,64 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMissionType {
     // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_NLCDGIPGFDJ)
     LCPPDELLPFC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LHGHGPPLMHP)
-    LCPPDELLPFC_LHGHGPPLMHP = 1213,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GGALJELEFJE)
-    LCPPDELLPFC_GGALJELEFJE = 1283,
     // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_JLDAAJCCALH)
-    LCPPDELLPFC_JLDAAJCCALH = 1236,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_ENDBCNNJJHL)
-    LCPPDELLPFC_ENDBCNNJJHL = 1271,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_EHIPHLFDPAL)
-    LCPPDELLPFC_EHIPHLFDPAL = 1227,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_DLPNDOBOOID)
-    LCPPDELLPFC_DLPNDOBOOID = 1274,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CCMKCBBKEMI)
-    LCPPDELLPFC_CCMKCBBKEMI = 1214,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_IELGHNCAHPP)
-    LCPPDELLPFC_IELGHNCAHPP = 1205,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_HOPFKPAAOLF)
-    LCPPDELLPFC_HOPFKPAAOLF = 1254,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_BKCLALEKNFL)
-    LCPPDELLPFC_BKCLALEKNFL = 1273,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_EJELMOICPKP)
-    LCPPDELLPFC_EJELMOICPKP = 1249,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CPLPLIPGNMC)
-    LCPPDELLPFC_CPLPLIPGNMC = 1201,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_KAIGPFCIIMI)
-    LCPPDELLPFC_KAIGPFCIIMI = 1203,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_AHOPGIFHMNP)
-    LCPPDELLPFC_AHOPGIFHMNP = 1230,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GCNEMMGKPID)
-    LCPPDELLPFC_GCNEMMGKPID = 1215,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_JAOAIEHCNJK)
-    LCPPDELLPFC_JAOAIEHCNJK = 1267,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_NPACCLDDFNN)
-    LCPPDELLPFC_NPACCLDDFNN = 1212,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_IOMJKMCAIFN)
-    LCPPDELLPFC_IOMJKMCAIFN = 1253,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_BKMFAJCFOJH)
-    LCPPDELLPFC_BKMFAJCFOJH = 1282,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LINJAMBKGBI)
-    LCPPDELLPFC_LINJAMBKGBI = 1220,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CCBEELOLNCG)
-    LCPPDELLPFC_CCBEELOLNCG = 1266,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_KNGEOOAHOHO)
-    LCPPDELLPFC_KNGEOOAHOHO = 1285,
+    LCPPDELLPFC_JLDAAJCCALH = 1288,
     // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_ELFBPOKAKIF)
-    LCPPDELLPFC_ELFBPOKAKIF = 1280,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_AKPMOPEFADP)
-    LCPPDELLPFC_AKPMOPEFADP = 1216,
+    LCPPDELLPFC_ELFBPOKAKIF = 1293,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LHGHGPPLMHP)
+    LCPPDELLPFC_LHGHGPPLMHP = 1281,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_HOPFKPAAOLF)
+    LCPPDELLPFC_HOPFKPAAOLF = 1233,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_BKMFAJCFOJH)
+    LCPPDELLPFC_BKMFAJCFOJH = 1249,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CCMKCBBKEMI)
+    LCPPDELLPFC_CCMKCBBKEMI = 1244,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_IOMJKMCAIFN)
+    LCPPDELLPFC_IOMJKMCAIFN = 1215,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_KAIGPFCIIMI)
+    LCPPDELLPFC_KAIGPFCIIMI = 1278,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_BKCLALEKNFL)
+    LCPPDELLPFC_BKCLALEKNFL = 1225,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_NPACCLDDFNN)
+    LCPPDELLPFC_NPACCLDDFNN = 1240,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LINJAMBKGBI)
+    LCPPDELLPFC_LINJAMBKGBI = 1234,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CPLPLIPGNMC)
+    LCPPDELLPFC_CPLPLIPGNMC = 1243,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_EJELMOICPKP)
+    LCPPDELLPFC_EJELMOICPKP = 1241,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_AHOPGIFHMNP)
+    LCPPDELLPFC_AHOPGIFHMNP = 1205,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_JAOAIEHCNJK)
+    LCPPDELLPFC_JAOAIEHCNJK = 1229,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_EHIPHLFDPAL)
+    LCPPDELLPFC_EHIPHLFDPAL = 1258,
     // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_NOALKEOFMJD)
-    LCPPDELLPFC_NOALKEOFMJD = 1292,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LMCGPIJBEGP)
-    LCPPDELLPFC_LMCGPIJBEGP = 1232,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_HGCCJBHCDOE)
-    LCPPDELLPFC_HGCCJBHCDOE = 1235,
-    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GIFCDHOJNMI)
-    LCPPDELLPFC_GIFCDHOJNMI = 1228,
+    LCPPDELLPFC_NOALKEOFMJD = 1284,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_IELGHNCAHPP)
+    LCPPDELLPFC_IELGHNCAHPP = 1275,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_CCBEELOLNCG)
+    LCPPDELLPFC_CCBEELOLNCG = 1221,
     // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_BGJPJMLOCAA)
-    LCPPDELLPFC_BGJPJMLOCAA = 1224,
+    LCPPDELLPFC_BGJPJMLOCAA = 1245,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_DLPNDOBOOID)
+    LCPPDELLPFC_DLPNDOBOOID = 1280,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_ENDBCNNJJHL)
+    LCPPDELLPFC_ENDBCNNJJHL = 1269,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_KNGEOOAHOHO)
+    LCPPDELLPFC_KNGEOOAHOHO = 1263,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GGALJELEFJE)
+    LCPPDELLPFC_GGALJELEFJE = 1238,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GIFCDHOJNMI)
+    LCPPDELLPFC_GIFCDHOJNMI = 1210,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_LMCGPIJBEGP)
+    LCPPDELLPFC_LMCGPIJBEGP = 1273,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_AKPMOPEFADP)
+    LCPPDELLPFC_AKPMOPEFADP = 1235,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_HGCCJBHCDOE)
+    LCPPDELLPFC_HGCCJBHCDOE = 1212,
+    // @@protoc_insertion_point(enum_value:CmdMissionType.LCPPDELLPFC_GCNEMMGKPID)
+    LCPPDELLPFC_GCNEMMGKPID = 1286,
 }
 
 impl ::protobuf::Enum for CmdMissionType {
@@ -99,35 +99,35 @@ impl ::protobuf::Enum for CmdMissionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMissionType> {
         match value {
             0 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NLCDGIPGFDJ),
-            1213 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP),
-            1283 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GGALJELEFJE),
-            1236 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JLDAAJCCALH),
-            1271 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL),
-            1227 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL),
-            1274 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_DLPNDOBOOID),
-            1214 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI),
-            1205 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IELGHNCAHPP),
-            1254 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF),
-            1273 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKCLALEKNFL),
-            1249 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EJELMOICPKP),
-            1201 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC),
-            1203 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI),
-            1230 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP),
-            1215 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GCNEMMGKPID),
-            1267 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK),
-            1212 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NPACCLDDFNN),
-            1253 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN),
-            1282 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH),
-            1220 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LINJAMBKGBI),
-            1266 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCBEELOLNCG),
-            1285 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO),
-            1280 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF),
-            1216 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AKPMOPEFADP),
-            1292 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NOALKEOFMJD),
-            1232 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP),
-            1235 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE),
-            1228 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI),
-            1224 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA),
+            1288 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JLDAAJCCALH),
+            1293 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF),
+            1281 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP),
+            1233 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF),
+            1249 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH),
+            1244 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI),
+            1215 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN),
+            1278 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI),
+            1225 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKCLALEKNFL),
+            1240 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NPACCLDDFNN),
+            1234 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LINJAMBKGBI),
+            1243 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC),
+            1241 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EJELMOICPKP),
+            1205 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP),
+            1229 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK),
+            1258 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL),
+            1284 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NOALKEOFMJD),
+            1275 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IELGHNCAHPP),
+            1221 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCBEELOLNCG),
+            1245 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA),
+            1280 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_DLPNDOBOOID),
+            1269 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL),
+            1263 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO),
+            1238 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GGALJELEFJE),
+            1210 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI),
+            1273 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP),
+            1235 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AKPMOPEFADP),
+            1212 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE),
+            1286 => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GCNEMMGKPID),
             _ => ::std::option::Option::None
         }
     }
@@ -135,70 +135,70 @@ impl ::protobuf::Enum for CmdMissionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMissionType> {
         match str {
             "LCPPDELLPFC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NLCDGIPGFDJ),
-            "LCPPDELLPFC_LHGHGPPLMHP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP),
-            "LCPPDELLPFC_GGALJELEFJE" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GGALJELEFJE),
             "LCPPDELLPFC_JLDAAJCCALH" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JLDAAJCCALH),
-            "LCPPDELLPFC_ENDBCNNJJHL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL),
-            "LCPPDELLPFC_EHIPHLFDPAL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL),
-            "LCPPDELLPFC_DLPNDOBOOID" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_DLPNDOBOOID),
-            "LCPPDELLPFC_CCMKCBBKEMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI),
-            "LCPPDELLPFC_IELGHNCAHPP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IELGHNCAHPP),
-            "LCPPDELLPFC_HOPFKPAAOLF" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF),
-            "LCPPDELLPFC_BKCLALEKNFL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKCLALEKNFL),
-            "LCPPDELLPFC_EJELMOICPKP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EJELMOICPKP),
-            "LCPPDELLPFC_CPLPLIPGNMC" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC),
-            "LCPPDELLPFC_KAIGPFCIIMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI),
-            "LCPPDELLPFC_AHOPGIFHMNP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP),
-            "LCPPDELLPFC_GCNEMMGKPID" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GCNEMMGKPID),
-            "LCPPDELLPFC_JAOAIEHCNJK" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK),
-            "LCPPDELLPFC_NPACCLDDFNN" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NPACCLDDFNN),
-            "LCPPDELLPFC_IOMJKMCAIFN" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN),
-            "LCPPDELLPFC_BKMFAJCFOJH" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH),
-            "LCPPDELLPFC_LINJAMBKGBI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LINJAMBKGBI),
-            "LCPPDELLPFC_CCBEELOLNCG" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCBEELOLNCG),
-            "LCPPDELLPFC_KNGEOOAHOHO" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO),
             "LCPPDELLPFC_ELFBPOKAKIF" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF),
-            "LCPPDELLPFC_AKPMOPEFADP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AKPMOPEFADP),
+            "LCPPDELLPFC_LHGHGPPLMHP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP),
+            "LCPPDELLPFC_HOPFKPAAOLF" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF),
+            "LCPPDELLPFC_BKMFAJCFOJH" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH),
+            "LCPPDELLPFC_CCMKCBBKEMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI),
+            "LCPPDELLPFC_IOMJKMCAIFN" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN),
+            "LCPPDELLPFC_KAIGPFCIIMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI),
+            "LCPPDELLPFC_BKCLALEKNFL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BKCLALEKNFL),
+            "LCPPDELLPFC_NPACCLDDFNN" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NPACCLDDFNN),
+            "LCPPDELLPFC_LINJAMBKGBI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LINJAMBKGBI),
+            "LCPPDELLPFC_CPLPLIPGNMC" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC),
+            "LCPPDELLPFC_EJELMOICPKP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EJELMOICPKP),
+            "LCPPDELLPFC_AHOPGIFHMNP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP),
+            "LCPPDELLPFC_JAOAIEHCNJK" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK),
+            "LCPPDELLPFC_EHIPHLFDPAL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL),
             "LCPPDELLPFC_NOALKEOFMJD" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_NOALKEOFMJD),
-            "LCPPDELLPFC_LMCGPIJBEGP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP),
-            "LCPPDELLPFC_HGCCJBHCDOE" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE),
-            "LCPPDELLPFC_GIFCDHOJNMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI),
+            "LCPPDELLPFC_IELGHNCAHPP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_IELGHNCAHPP),
+            "LCPPDELLPFC_CCBEELOLNCG" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_CCBEELOLNCG),
             "LCPPDELLPFC_BGJPJMLOCAA" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA),
+            "LCPPDELLPFC_DLPNDOBOOID" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_DLPNDOBOOID),
+            "LCPPDELLPFC_ENDBCNNJJHL" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL),
+            "LCPPDELLPFC_KNGEOOAHOHO" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO),
+            "LCPPDELLPFC_GGALJELEFJE" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GGALJELEFJE),
+            "LCPPDELLPFC_GIFCDHOJNMI" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI),
+            "LCPPDELLPFC_LMCGPIJBEGP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP),
+            "LCPPDELLPFC_AKPMOPEFADP" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_AKPMOPEFADP),
+            "LCPPDELLPFC_HGCCJBHCDOE" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE),
+            "LCPPDELLPFC_GCNEMMGKPID" => ::std::option::Option::Some(CmdMissionType::LCPPDELLPFC_GCNEMMGKPID),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMissionType] = &[
         CmdMissionType::LCPPDELLPFC_NLCDGIPGFDJ,
-        CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP,
-        CmdMissionType::LCPPDELLPFC_GGALJELEFJE,
         CmdMissionType::LCPPDELLPFC_JLDAAJCCALH,
-        CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL,
-        CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL,
-        CmdMissionType::LCPPDELLPFC_DLPNDOBOOID,
-        CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI,
-        CmdMissionType::LCPPDELLPFC_IELGHNCAHPP,
-        CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF,
-        CmdMissionType::LCPPDELLPFC_BKCLALEKNFL,
-        CmdMissionType::LCPPDELLPFC_EJELMOICPKP,
-        CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC,
-        CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI,
-        CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP,
-        CmdMissionType::LCPPDELLPFC_GCNEMMGKPID,
-        CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK,
-        CmdMissionType::LCPPDELLPFC_NPACCLDDFNN,
-        CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN,
-        CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH,
-        CmdMissionType::LCPPDELLPFC_LINJAMBKGBI,
-        CmdMissionType::LCPPDELLPFC_CCBEELOLNCG,
-        CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO,
         CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF,
-        CmdMissionType::LCPPDELLPFC_AKPMOPEFADP,
+        CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP,
+        CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF,
+        CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH,
+        CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI,
+        CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN,
+        CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI,
+        CmdMissionType::LCPPDELLPFC_BKCLALEKNFL,
+        CmdMissionType::LCPPDELLPFC_NPACCLDDFNN,
+        CmdMissionType::LCPPDELLPFC_LINJAMBKGBI,
+        CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC,
+        CmdMissionType::LCPPDELLPFC_EJELMOICPKP,
+        CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP,
+        CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK,
+        CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL,
         CmdMissionType::LCPPDELLPFC_NOALKEOFMJD,
-        CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP,
-        CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE,
-        CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI,
+        CmdMissionType::LCPPDELLPFC_IELGHNCAHPP,
+        CmdMissionType::LCPPDELLPFC_CCBEELOLNCG,
         CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA,
+        CmdMissionType::LCPPDELLPFC_DLPNDOBOOID,
+        CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL,
+        CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO,
+        CmdMissionType::LCPPDELLPFC_GGALJELEFJE,
+        CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI,
+        CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP,
+        CmdMissionType::LCPPDELLPFC_AKPMOPEFADP,
+        CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE,
+        CmdMissionType::LCPPDELLPFC_GCNEMMGKPID,
     ];
 }
 
@@ -211,35 +211,35 @@ impl ::protobuf::EnumFull for CmdMissionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMissionType::LCPPDELLPFC_NLCDGIPGFDJ => 0,
-            CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP => 1,
-            CmdMissionType::LCPPDELLPFC_GGALJELEFJE => 2,
-            CmdMissionType::LCPPDELLPFC_JLDAAJCCALH => 3,
-            CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL => 4,
-            CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL => 5,
-            CmdMissionType::LCPPDELLPFC_DLPNDOBOOID => 6,
-            CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI => 7,
-            CmdMissionType::LCPPDELLPFC_IELGHNCAHPP => 8,
-            CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF => 9,
-            CmdMissionType::LCPPDELLPFC_BKCLALEKNFL => 10,
-            CmdMissionType::LCPPDELLPFC_EJELMOICPKP => 11,
+            CmdMissionType::LCPPDELLPFC_JLDAAJCCALH => 1,
+            CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF => 2,
+            CmdMissionType::LCPPDELLPFC_LHGHGPPLMHP => 3,
+            CmdMissionType::LCPPDELLPFC_HOPFKPAAOLF => 4,
+            CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH => 5,
+            CmdMissionType::LCPPDELLPFC_CCMKCBBKEMI => 6,
+            CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN => 7,
+            CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI => 8,
+            CmdMissionType::LCPPDELLPFC_BKCLALEKNFL => 9,
+            CmdMissionType::LCPPDELLPFC_NPACCLDDFNN => 10,
+            CmdMissionType::LCPPDELLPFC_LINJAMBKGBI => 11,
             CmdMissionType::LCPPDELLPFC_CPLPLIPGNMC => 12,
-            CmdMissionType::LCPPDELLPFC_KAIGPFCIIMI => 13,
+            CmdMissionType::LCPPDELLPFC_EJELMOICPKP => 13,
             CmdMissionType::LCPPDELLPFC_AHOPGIFHMNP => 14,
-            CmdMissionType::LCPPDELLPFC_GCNEMMGKPID => 15,
-            CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK => 16,
-            CmdMissionType::LCPPDELLPFC_NPACCLDDFNN => 17,
-            CmdMissionType::LCPPDELLPFC_IOMJKMCAIFN => 18,
-            CmdMissionType::LCPPDELLPFC_BKMFAJCFOJH => 19,
-            CmdMissionType::LCPPDELLPFC_LINJAMBKGBI => 20,
-            CmdMissionType::LCPPDELLPFC_CCBEELOLNCG => 21,
-            CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO => 22,
-            CmdMissionType::LCPPDELLPFC_ELFBPOKAKIF => 23,
-            CmdMissionType::LCPPDELLPFC_AKPMOPEFADP => 24,
-            CmdMissionType::LCPPDELLPFC_NOALKEOFMJD => 25,
+            CmdMissionType::LCPPDELLPFC_JAOAIEHCNJK => 15,
+            CmdMissionType::LCPPDELLPFC_EHIPHLFDPAL => 16,
+            CmdMissionType::LCPPDELLPFC_NOALKEOFMJD => 17,
+            CmdMissionType::LCPPDELLPFC_IELGHNCAHPP => 18,
+            CmdMissionType::LCPPDELLPFC_CCBEELOLNCG => 19,
+            CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA => 20,
+            CmdMissionType::LCPPDELLPFC_DLPNDOBOOID => 21,
+            CmdMissionType::LCPPDELLPFC_ENDBCNNJJHL => 22,
+            CmdMissionType::LCPPDELLPFC_KNGEOOAHOHO => 23,
+            CmdMissionType::LCPPDELLPFC_GGALJELEFJE => 24,
+            CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI => 25,
             CmdMissionType::LCPPDELLPFC_LMCGPIJBEGP => 26,
-            CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE => 27,
-            CmdMissionType::LCPPDELLPFC_GIFCDHOJNMI => 28,
-            CmdMissionType::LCPPDELLPFC_BGJPJMLOCAA => 29,
+            CmdMissionType::LCPPDELLPFC_AKPMOPEFADP => 27,
+            CmdMissionType::LCPPDELLPFC_HGCCJBHCDOE => 28,
+            CmdMissionType::LCPPDELLPFC_GCNEMMGKPID => 29,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -259,26 +259,26 @@ impl CmdMissionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdMissionType.proto*\x93\x07\n\x0eCmdMissionType\x12\x1b\n\x17LCP\
-    PDELLPFC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCPPDELLPFC_LHGHGPPLMHP\x10\xbd\
-    \t\x12\x1c\n\x17LCPPDELLPFC_GGALJELEFJE\x10\x83\n\x12\x1c\n\x17LCPPDELLP\
-    FC_JLDAAJCCALH\x10\xd4\t\x12\x1c\n\x17LCPPDELLPFC_ENDBCNNJJHL\x10\xf7\t\
-    \x12\x1c\n\x17LCPPDELLPFC_EHIPHLFDPAL\x10\xcb\t\x12\x1c\n\x17LCPPDELLPFC\
-    _DLPNDOBOOID\x10\xfa\t\x12\x1c\n\x17LCPPDELLPFC_CCMKCBBKEMI\x10\xbe\t\
-    \x12\x1c\n\x17LCPPDELLPFC_IELGHNCAHPP\x10\xb5\t\x12\x1c\n\x17LCPPDELLPFC\
-    _HOPFKPAAOLF\x10\xe6\t\x12\x1c\n\x17LCPPDELLPFC_BKCLALEKNFL\x10\xf9\t\
-    \x12\x1c\n\x17LCPPDELLPFC_EJELMOICPKP\x10\xe1\t\x12\x1c\n\x17LCPPDELLPFC\
-    _CPLPLIPGNMC\x10\xb1\t\x12\x1c\n\x17LCPPDELLPFC_KAIGPFCIIMI\x10\xb3\t\
-    \x12\x1c\n\x17LCPPDELLPFC_AHOPGIFHMNP\x10\xce\t\x12\x1c\n\x17LCPPDELLPFC\
-    _GCNEMMGKPID\x10\xbf\t\x12\x1c\n\x17LCPPDELLPFC_JAOAIEHCNJK\x10\xf3\t\
-    \x12\x1c\n\x17LCPPDELLPFC_NPACCLDDFNN\x10\xbc\t\x12\x1c\n\x17LCPPDELLPFC\
-    _IOMJKMCAIFN\x10\xe5\t\x12\x1c\n\x17LCPPDELLPFC_BKMFAJCFOJH\x10\x82\n\
-    \x12\x1c\n\x17LCPPDELLPFC_LINJAMBKGBI\x10\xc4\t\x12\x1c\n\x17LCPPDELLPFC\
-    _CCBEELOLNCG\x10\xf2\t\x12\x1c\n\x17LCPPDELLPFC_KNGEOOAHOHO\x10\x85\n\
-    \x12\x1c\n\x17LCPPDELLPFC_ELFBPOKAKIF\x10\x80\n\x12\x1c\n\x17LCPPDELLPFC\
-    _AKPMOPEFADP\x10\xc0\t\x12\x1c\n\x17LCPPDELLPFC_NOALKEOFMJD\x10\x8c\n\
-    \x12\x1c\n\x17LCPPDELLPFC_LMCGPIJBEGP\x10\xd0\t\x12\x1c\n\x17LCPPDELLPFC\
-    _HGCCJBHCDOE\x10\xd3\t\x12\x1c\n\x17LCPPDELLPFC_GIFCDHOJNMI\x10\xcc\t\
-    \x12\x1c\n\x17LCPPDELLPFC_BGJPJMLOCAA\x10\xc8\tb\x06proto3\
+    PDELLPFC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCPPDELLPFC_JLDAAJCCALH\x10\x88\
+    \n\x12\x1c\n\x17LCPPDELLPFC_ELFBPOKAKIF\x10\x8d\n\x12\x1c\n\x17LCPPDELLP\
+    FC_LHGHGPPLMHP\x10\x81\n\x12\x1c\n\x17LCPPDELLPFC_HOPFKPAAOLF\x10\xd1\t\
+    \x12\x1c\n\x17LCPPDELLPFC_BKMFAJCFOJH\x10\xe1\t\x12\x1c\n\x17LCPPDELLPFC\
+    _CCMKCBBKEMI\x10\xdc\t\x12\x1c\n\x17LCPPDELLPFC_IOMJKMCAIFN\x10\xbf\t\
+    \x12\x1c\n\x17LCPPDELLPFC_KAIGPFCIIMI\x10\xfe\t\x12\x1c\n\x17LCPPDELLPFC\
+    _BKCLALEKNFL\x10\xc9\t\x12\x1c\n\x17LCPPDELLPFC_NPACCLDDFNN\x10\xd8\t\
+    \x12\x1c\n\x17LCPPDELLPFC_LINJAMBKGBI\x10\xd2\t\x12\x1c\n\x17LCPPDELLPFC\
+    _CPLPLIPGNMC\x10\xdb\t\x12\x1c\n\x17LCPPDELLPFC_EJELMOICPKP\x10\xd9\t\
+    \x12\x1c\n\x17LCPPDELLPFC_AHOPGIFHMNP\x10\xb5\t\x12\x1c\n\x17LCPPDELLPFC\
+    _JAOAIEHCNJK\x10\xcd\t\x12\x1c\n\x17LCPPDELLPFC_EHIPHLFDPAL\x10\xea\t\
+    \x12\x1c\n\x17LCPPDELLPFC_NOALKEOFMJD\x10\x84\n\x12\x1c\n\x17LCPPDELLPFC\
+    _IELGHNCAHPP\x10\xfb\t\x12\x1c\n\x17LCPPDELLPFC_CCBEELOLNCG\x10\xc5\t\
+    \x12\x1c\n\x17LCPPDELLPFC_BGJPJMLOCAA\x10\xdd\t\x12\x1c\n\x17LCPPDELLPFC\
+    _DLPNDOBOOID\x10\x80\n\x12\x1c\n\x17LCPPDELLPFC_ENDBCNNJJHL\x10\xf5\t\
+    \x12\x1c\n\x17LCPPDELLPFC_KNGEOOAHOHO\x10\xef\t\x12\x1c\n\x17LCPPDELLPFC\
+    _GGALJELEFJE\x10\xd6\t\x12\x1c\n\x17LCPPDELLPFC_GIFCDHOJNMI\x10\xba\t\
+    \x12\x1c\n\x17LCPPDELLPFC_LMCGPIJBEGP\x10\xf9\t\x12\x1c\n\x17LCPPDELLPFC\
+    _AKPMOPEFADP\x10\xd3\t\x12\x1c\n\x17LCPPDELLPFC_HGCCJBHCDOE\x10\xbc\t\
+    \x12\x1c\n\x17LCPPDELLPFC_GCNEMMGKPID\x10\x86\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

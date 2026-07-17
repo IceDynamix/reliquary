@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDKEPPDIDIH {
     // message fields
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.EJDDMNAODEN)
-    pub EJDDMNAODEN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.JNDBCDAIIDD)
-    pub JNDBCDAIIDD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.damage)
-    pub damage: f64,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.OELDAKBOPJA)
-    pub OELDAKBOPJA: f64,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.AFPKBFAPOAH)
-    pub AFPKBFAPOAH: i32,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.wave)
-    pub wave: u32,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.source)
-    pub source: u32,
-    // @@protoc_insertion_point(field:HDKEPPDIDIH.enhanced_id)
-    pub enhanced_id: u32,
     // @@protoc_insertion_point(field:HDKEPPDIDIH.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.EJDDMNAODEN)
+    pub EJDDMNAODEN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.source)
+    pub source: u32,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.damage)
+    pub damage: f64,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.JNDBCDAIIDD)
+    pub JNDBCDAIIDD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.AFPKBFAPOAH)
+    pub AFPKBFAPOAH: i32,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.OELDAKBOPJA)
+    pub OELDAKBOPJA: f64,
     // @@protoc_insertion_point(field:HDKEPPDIDIH.CNGEOGOMPOP)
     pub CNGEOGOMPOP: u32,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.wave)
+    pub wave: u32,
+    // @@protoc_insertion_point(field:HDKEPPDIDIH.enhanced_id)
+    pub enhanced_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HDKEPPDIDIH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,35 +67,15 @@ impl HDKEPPDIDIH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &HDKEPPDIDIH| { &m.avatar_id },
+            |m: &mut HDKEPPDIDIH| { &mut m.avatar_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EJDDMNAODEN",
             |m: &HDKEPPDIDIH| { &m.EJDDMNAODEN },
             |m: &mut HDKEPPDIDIH| { &mut m.EJDDMNAODEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JNDBCDAIIDD",
-            |m: &HDKEPPDIDIH| { &m.JNDBCDAIIDD },
-            |m: &mut HDKEPPDIDIH| { &mut m.JNDBCDAIIDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage",
-            |m: &HDKEPPDIDIH| { &m.damage },
-            |m: &mut HDKEPPDIDIH| { &mut m.damage },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OELDAKBOPJA",
-            |m: &HDKEPPDIDIH| { &m.OELDAKBOPJA },
-            |m: &mut HDKEPPDIDIH| { &mut m.OELDAKBOPJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFPKBFAPOAH",
-            |m: &HDKEPPDIDIH| { &m.AFPKBFAPOAH },
-            |m: &mut HDKEPPDIDIH| { &mut m.AFPKBFAPOAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &HDKEPPDIDIH| { &m.wave },
-            |m: &mut HDKEPPDIDIH| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source",
@@ -103,19 +83,39 @@ impl HDKEPPDIDIH {
             |m: &mut HDKEPPDIDIH| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "enhanced_id",
-            |m: &HDKEPPDIDIH| { &m.enhanced_id },
-            |m: &mut HDKEPPDIDIH| { &mut m.enhanced_id },
+            "damage",
+            |m: &HDKEPPDIDIH| { &m.damage },
+            |m: &mut HDKEPPDIDIH| { &mut m.damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JNDBCDAIIDD",
+            |m: &HDKEPPDIDIH| { &m.JNDBCDAIIDD },
+            |m: &mut HDKEPPDIDIH| { &mut m.JNDBCDAIIDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &HDKEPPDIDIH| { &m.avatar_id },
-            |m: &mut HDKEPPDIDIH| { &mut m.avatar_id },
+            "AFPKBFAPOAH",
+            |m: &HDKEPPDIDIH| { &m.AFPKBFAPOAH },
+            |m: &mut HDKEPPDIDIH| { &mut m.AFPKBFAPOAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OELDAKBOPJA",
+            |m: &HDKEPPDIDIH| { &m.OELDAKBOPJA },
+            |m: &mut HDKEPPDIDIH| { &mut m.OELDAKBOPJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CNGEOGOMPOP",
             |m: &HDKEPPDIDIH| { &m.CNGEOGOMPOP },
             |m: &mut HDKEPPDIDIH| { &mut m.CNGEOGOMPOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "wave",
+            |m: &HDKEPPDIDIH| { &m.wave },
+            |m: &mut HDKEPPDIDIH| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enhanced_id",
+            |m: &HDKEPPDIDIH| { &m.enhanced_id },
+            |m: &mut HDKEPPDIDIH| { &mut m.enhanced_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDKEPPDIDIH>(
             "HDKEPPDIDIH",
@@ -135,11 +135,20 @@ impl ::protobuf::Message for HDKEPPDIDIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.EJDDMNAODEN)?;
                 },
                 16 => {
                     self.EJDDMNAODEN.push(is.read_uint32()?);
+                },
+                24 => {
+                    self.source = is.read_uint32()?;
+                },
+                33 => {
+                    self.damage = is.read_double()?;
                 },
                 42 => {
                     is.read_repeated_packed_uint32_into(&mut self.JNDBCDAIIDD)?;
@@ -147,29 +156,20 @@ impl ::protobuf::Message for HDKEPPDIDIH {
                 40 => {
                     self.JNDBCDAIIDD.push(is.read_uint32()?);
                 },
-                33 => {
-                    self.damage = is.read_double()?;
+                48 => {
+                    self.AFPKBFAPOAH = is.read_int32()?;
                 },
                 57 => {
                     self.OELDAKBOPJA = is.read_double()?;
                 },
-                48 => {
-                    self.AFPKBFAPOAH = is.read_int32()?;
+                64 => {
+                    self.CNGEOGOMPOP = is.read_uint32()?;
                 },
                 72 => {
                     self.wave = is.read_uint32()?;
                 },
-                24 => {
-                    self.source = is.read_uint32()?;
-                },
                 80 => {
                     self.enhanced_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.CNGEOGOMPOP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -183,31 +183,31 @@ impl ::protobuf::Message for HDKEPPDIDIH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.EJDDMNAODEN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JNDBCDAIIDD);
+        if self.source != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.source);
+        }
         if self.damage != 0. {
             my_size += 1 + 8;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JNDBCDAIIDD);
+        if self.AFPKBFAPOAH != 0 {
+            my_size += ::protobuf::rt::int32_size(6, self.AFPKBFAPOAH);
         }
         if self.OELDAKBOPJA != 0. {
             my_size += 1 + 8;
         }
-        if self.AFPKBFAPOAH != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.AFPKBFAPOAH);
+        if self.CNGEOGOMPOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CNGEOGOMPOP);
         }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.wave);
         }
-        if self.source != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.source);
-        }
         if self.enhanced_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.enhanced_id);
-        }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
-        }
-        if self.CNGEOGOMPOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CNGEOGOMPOP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -215,31 +215,31 @@ impl ::protobuf::Message for HDKEPPDIDIH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.avatar_id != 0 {
+            os.write_uint32(1, self.avatar_id)?;
+        }
         os.write_repeated_packed_uint32(2, &self.EJDDMNAODEN)?;
-        os.write_repeated_packed_uint32(5, &self.JNDBCDAIIDD)?;
+        if self.source != 0 {
+            os.write_uint32(3, self.source)?;
+        }
         if self.damage != 0. {
             os.write_double(4, self.damage)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.JNDBCDAIIDD)?;
+        if self.AFPKBFAPOAH != 0 {
+            os.write_int32(6, self.AFPKBFAPOAH)?;
         }
         if self.OELDAKBOPJA != 0. {
             os.write_double(7, self.OELDAKBOPJA)?;
         }
-        if self.AFPKBFAPOAH != 0 {
-            os.write_int32(6, self.AFPKBFAPOAH)?;
+        if self.CNGEOGOMPOP != 0 {
+            os.write_uint32(8, self.CNGEOGOMPOP)?;
         }
         if self.wave != 0 {
             os.write_uint32(9, self.wave)?;
         }
-        if self.source != 0 {
-            os.write_uint32(3, self.source)?;
-        }
         if self.enhanced_id != 0 {
             os.write_uint32(10, self.enhanced_id)?;
-        }
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
-        }
-        if self.CNGEOGOMPOP != 0 {
-            os.write_uint32(8, self.CNGEOGOMPOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -258,31 +258,31 @@ impl ::protobuf::Message for HDKEPPDIDIH {
     }
 
     fn clear(&mut self) {
-        self.EJDDMNAODEN.clear();
-        self.JNDBCDAIIDD.clear();
-        self.damage = 0.;
-        self.OELDAKBOPJA = 0.;
-        self.AFPKBFAPOAH = 0;
-        self.wave = 0;
-        self.source = 0;
-        self.enhanced_id = 0;
         self.avatar_id = 0;
+        self.EJDDMNAODEN.clear();
+        self.source = 0;
+        self.damage = 0.;
+        self.JNDBCDAIIDD.clear();
+        self.AFPKBFAPOAH = 0;
+        self.OELDAKBOPJA = 0.;
         self.CNGEOGOMPOP = 0;
+        self.wave = 0;
+        self.enhanced_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDKEPPDIDIH {
         static instance: HDKEPPDIDIH = HDKEPPDIDIH {
-            EJDDMNAODEN: ::std::vec::Vec::new(),
-            JNDBCDAIIDD: ::std::vec::Vec::new(),
-            damage: 0.,
-            OELDAKBOPJA: 0.,
-            AFPKBFAPOAH: 0,
-            wave: 0,
-            source: 0,
-            enhanced_id: 0,
             avatar_id: 0,
+            EJDDMNAODEN: ::std::vec::Vec::new(),
+            source: 0,
+            damage: 0.,
+            JNDBCDAIIDD: ::std::vec::Vec::new(),
+            AFPKBFAPOAH: 0,
+            OELDAKBOPJA: 0.,
             CNGEOGOMPOP: 0,
+            wave: 0,
+            enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -307,15 +307,15 @@ impl ::protobuf::reflect::ProtobufValue for HDKEPPDIDIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDKEPPDIDIH.proto\"\xb9\x02\n\x0bHDKEPPDIDIH\x12\x20\n\x0bEJDDMNAO\
-    DEN\x18\x02\x20\x03(\rR\x0bEJDDMNAODEN\x12\x20\n\x0bJNDBCDAIIDD\x18\x05\
-    \x20\x03(\rR\x0bJNDBCDAIIDD\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\
-    \x06damage\x12\x20\n\x0bOELDAKBOPJA\x18\x07\x20\x01(\x01R\x0bOELDAKBOPJA\
-    \x12\x20\n\x0bAFPKBFAPOAH\x18\x06\x20\x01(\x05R\x0bAFPKBFAPOAH\x12\x12\n\
-    \x04wave\x18\t\x20\x01(\rR\x04wave\x12\x16\n\x06source\x18\x03\x20\x01(\
-    \rR\x06source\x12\x1f\n\x0benhanced_id\x18\n\x20\x01(\rR\nenhancedId\x12\
-    \x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bCNGEOGOMP\
-    OP\x18\x08\x20\x01(\rR\x0bCNGEOGOMPOPb\x06proto3\
+    \n\x11HDKEPPDIDIH.proto\"\xb9\x02\n\x0bHDKEPPDIDIH\x12\x1b\n\tavatar_id\
+    \x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bEJDDMNAODEN\x18\x02\x20\
+    \x03(\rR\x0bEJDDMNAODEN\x12\x16\n\x06source\x18\x03\x20\x01(\rR\x06sourc\
+    e\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\x12\x20\n\x0bJNDBC\
+    DAIIDD\x18\x05\x20\x03(\rR\x0bJNDBCDAIIDD\x12\x20\n\x0bAFPKBFAPOAH\x18\
+    \x06\x20\x01(\x05R\x0bAFPKBFAPOAH\x12\x20\n\x0bOELDAKBOPJA\x18\x07\x20\
+    \x01(\x01R\x0bOELDAKBOPJA\x12\x20\n\x0bCNGEOGOMPOP\x18\x08\x20\x01(\rR\
+    \x0bCNGEOGOMPOP\x12\x12\n\x04wave\x18\t\x20\x01(\rR\x04wave\x12\x1f\n\
+    \x0benhanced_id\x18\n\x20\x01(\rR\nenhancedIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDBOGEKADGP {
     // message fields
-    // @@protoc_insertion_point(field:EDBOGEKADGP.EEDPLDBFMMM)
-    pub EEDPLDBFMMM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EDBOGEKADGP.KGEBFIOJFLC)
     pub KGEBFIOJFLC: u32,
+    // @@protoc_insertion_point(field:EDBOGEKADGP.EEDPLDBFMMM)
+    pub EEDPLDBFMMM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:EDBOGEKADGP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EDBOGEKADGP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EEDPLDBFMMM",
-            |m: &EDBOGEKADGP| { &m.EEDPLDBFMMM },
-            |m: &mut EDBOGEKADGP| { &mut m.EEDPLDBFMMM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KGEBFIOJFLC",
             |m: &EDBOGEKADGP| { &m.KGEBFIOJFLC },
             |m: &mut EDBOGEKADGP| { &mut m.KGEBFIOJFLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EEDPLDBFMMM",
+            |m: &EDBOGEKADGP| { &m.EEDPLDBFMMM },
+            |m: &mut EDBOGEKADGP| { &mut m.EEDPLDBFMMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EDBOGEKADGP>(
             "EDBOGEKADGP",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for EDBOGEKADGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                16 => {
+                    self.KGEBFIOJFLC = is.read_uint32()?;
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.EEDPLDBFMMM)?;
                 },
-                40 => {
+                88 => {
                     self.EEDPLDBFMMM.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.KGEBFIOJFLC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EDBOGEKADGP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EEDPLDBFMMM);
         if self.KGEBFIOJFLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KGEBFIOJFLC);
+            my_size += ::protobuf::rt::uint32_size(2, self.KGEBFIOJFLC);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EEDPLDBFMMM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.EEDPLDBFMMM)?;
         if self.KGEBFIOJFLC != 0 {
-            os.write_uint32(3, self.KGEBFIOJFLC)?;
+            os.write_uint32(2, self.KGEBFIOJFLC)?;
         }
+        os.write_repeated_packed_uint32(11, &self.EEDPLDBFMMM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for EDBOGEKADGP {
     }
 
     fn clear(&mut self) {
-        self.EEDPLDBFMMM.clear();
         self.KGEBFIOJFLC = 0;
+        self.EEDPLDBFMMM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDBOGEKADGP {
         static instance: EDBOGEKADGP = EDBOGEKADGP {
-            EEDPLDBFMMM: ::std::vec::Vec::new(),
             KGEBFIOJFLC: 0,
+            EEDPLDBFMMM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for EDBOGEKADGP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDBOGEKADGP.proto\"Q\n\x0bEDBOGEKADGP\x12\x20\n\x0bEEDPLDBFMMM\x18\
-    \x05\x20\x03(\rR\x0bEEDPLDBFMMM\x12\x20\n\x0bKGEBFIOJFLC\x18\x03\x20\x01\
-    (\rR\x0bKGEBFIOJFLCb\x06proto3\
+    \n\x11EDBOGEKADGP.proto\"Q\n\x0bEDBOGEKADGP\x12\x20\n\x0bKGEBFIOJFLC\x18\
+    \x02\x20\x01(\rR\x0bKGEBFIOJFLC\x12\x20\n\x0bEEDPLDBFMMM\x18\x0b\x20\x03\
+    (\rR\x0bEEDPLDBFMMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

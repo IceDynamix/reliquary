@@ -28,62 +28,180 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GateServer {
     // message fields
-    // @@protoc_insertion_point(field:GateServer.lua_url)
-    pub lua_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk1)
-    pub unk1: bool,
-    // @@protoc_insertion_point(field:GateServer.ip)
-    pub ip: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.port)
-    pub port: u32,
     // @@protoc_insertion_point(field:GateServer.region_name)
     pub region_name: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.asset_bundle_url)
-    pub asset_bundle_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ip)
+    pub ip: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.lua_url)
+    pub lua_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.asb_relogin_desc)
+    pub asb_relogin_desc: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.ex_resource_url)
     pub ex_resource_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk2)
-    pub unk2: bool,
-    // @@protoc_insertion_point(field:GateServer.asset_bundle_url_android)
-    pub asset_bundle_url_android: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.client_secret_key)
-    pub client_secret_key: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk3)
-    pub unk3: bool,
-    // @@protoc_insertion_point(field:GateServer.ifix_url)
-    pub ifix_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk4)
-    pub unk4: bool,
+    // @@protoc_insertion_point(field:GateServer.port)
+    pub port: u32,
+    // @@protoc_insertion_point(field:GateServer.enable_design_data_bundle_version_update)
+    pub enable_design_data_bundle_version_update: bool,
+    // @@protoc_insertion_point(field:GateServer.stop_end_time)
+    pub stop_end_time: i64,
+    // @@protoc_insertion_point(field:GateServer.stop_begin_time)
+    pub stop_begin_time: i64,
+    // @@protoc_insertion_point(field:GateServer.design_data_relogin_type)
+    pub design_data_relogin_type: u32,
+    // @@protoc_insertion_point(field:GateServer.enable_video_bundle_version_update)
+    pub enable_video_bundle_version_update: bool,
+    // @@protoc_insertion_point(field:GateServer.asb_relogin_type)
+    pub asb_relogin_type: u32,
+    // @@protoc_insertion_point(field:GateServer.stop_desc)
+    pub stop_desc: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GateServer.msg)
-    pub msg: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk5)
-    pub unk5: bool,
-    // @@protoc_insertion_point(field:GateServer.unk6)
-    pub unk6: bool,
-    // @@protoc_insertion_point(field:GateServer.unk7)
-    pub unk7: bool,
-    // @@protoc_insertion_point(field:GateServer.unk8)
-    pub unk8: bool,
-    // @@protoc_insertion_point(field:GateServer.unk9)
-    pub unk9: bool,
-    // @@protoc_insertion_point(field:GateServer.unk10)
-    pub unk10: bool,
-    // @@protoc_insertion_point(field:GateServer.unk11)
-    pub unk11: bool,
-    // @@protoc_insertion_point(field:GateServer.unk12)
-    pub unk12: bool,
-    // @@protoc_insertion_point(field:GateServer.unk13)
-    pub unk13: bool,
-    // @@protoc_insertion_point(field:GateServer.unk14)
-    pub unk14: bool,
-    // @@protoc_insertion_point(field:GateServer.unk15)
-    pub unk15: bool,
-    // @@protoc_insertion_point(field:GateServer.ifix_version)
-    pub ifix_version: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.mdk_res_version)
-    pub mdk_res_version: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.asset_bundle_url)
+    pub asset_bundle_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.watermark_enable)
+    pub watermark_enable: bool,
+    // @@protoc_insertion_point(field:GateServer.enable_upload_battle_log)
+    pub enable_upload_battle_log: bool,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_overseas)
+    pub anniv_3_rd_overseas: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ftc_switch)
+    pub ftc_switch: bool,
+    // @@protoc_insertion_point(field:GateServer.operation_feedback_url)
+    pub operation_feedback_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.FMLPNNMJDIC)
+    pub FMLPNNMJDIC: bool,
+    // @@protoc_insertion_point(field:GateServer.redeem_code_url)
+    pub redeem_code_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_build_ref_api_req_color_header_key)
+    pub rogue_tourn_build_ref_api_req_color_header_key: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.personal_information_in_game_url)
+    pub personal_information_in_game_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_magic_h_5_url)
+    pub rogue_magic_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_notice_id)
+    pub rogue_tourn_notice_id: u32,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_notice_pic_type)
+    pub rogue_tourn_notice_pic_type: u32,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_book)
+    pub anniv_3_rd_book: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_live_mainpage)
+    pub anniv_3_rd_live_mainpage: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.design_data_relogin_desc)
+    pub design_data_relogin_desc: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_fes)
+    pub anniv_3_rd_fes: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.JDMJIGDPDNB)
+    pub JDMJIGDPDNB: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.enable_save_replay_file)
+    pub enable_save_replay_file: bool,
+    // @@protoc_insertion_point(field:GateServer.user_agreement_url)
+    pub user_agreement_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.player_return_invite_h_5_url)
+    pub player_return_invite_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.official_community_url)
+    pub official_community_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.game_start_customer_service_url)
+    pub game_start_customer_service_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_2_nd_callback)
+    pub anniv_2_nd_callback: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_2_nd_book)
+    pub anniv_2_nd_book: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.grid_fight_game_ref_cdn_url)
+    pub grid_fight_game_ref_cdn_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ban_appeal_url)
+    pub ban_appeal_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_callback)
+    pub anniv_3_rd_callback: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.android_middle_package_enable)
+    pub android_middle_package_enable: bool,
+    // @@protoc_insertion_point(field:GateServer.grid_fight_intro_h_5_url)
+    pub grid_fight_intro_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_build_ref_h_5_url)
+    pub rogue_tourn_build_ref_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.hot_point_url)
+    pub hot_point_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.login_white_msg)
+    pub login_white_msg: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.enable_predownload)
+    pub enable_predownload: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.close_redeem_code)
+    pub close_redeem_code: bool,
+    // @@protoc_insertion_point(field:GateServer.online_replay_upload_url)
+    pub online_replay_upload_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.grid_fight_game_ref_color_header_value)
+    pub grid_fight_game_ref_color_header_value: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.web_tool_url)
+    pub web_tool_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.teenager_privacy_in_game_url)
+    pub teenager_privacy_in_game_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ios_exam)
+    pub ios_exam: bool,
+    // @@protoc_insertion_point(field:GateServer.mtp_switch)
+    pub mtp_switch: bool,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_build_ref_api_req_color_header_value)
+    pub rogue_tourn_build_ref_api_req_color_header_value: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.online_replay_download_url)
+    pub online_replay_download_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.temporary_maintenance_url)
+    pub temporary_maintenance_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_2_nd_os)
+    pub anniv_2_nd_os: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.player_return_invite_h_6_url)
+    pub player_return_invite_h_6_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_live_inprogress)
+    pub anniv_3_rd_live_inprogress: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.grid_fight_game_ref_color_header_key)
+    pub grid_fight_game_ref_color_header_key: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.privacy_in_game_url)
+    pub privacy_in_game_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.player_return_questionnaire_a_url)
+    pub player_return_questionnaire_a_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_build_ref_static_data_url_prefix)
+    pub rogue_tourn_build_ref_static_data_url_prefix: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.event_tracking_open)
+    pub event_tracking_open: bool,
+    // @@protoc_insertion_point(field:GateServer.predownload_update_url)
+    pub predownload_update_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.NNFLHCGDGJM)
+    pub NNFLHCGDGJM: bool,
+    // @@protoc_insertion_point(field:GateServer.anniv_2_nd_concert)
+    pub anniv_2_nd_concert: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.cdn_ipv_6_enable)
+    pub cdn_ipv_6_enable: u32,
+    // @@protoc_insertion_point(field:GateServer.third_privacy_in_game_url)
+    pub third_privacy_in_game_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.i_fix_patch_revision)
+    pub i_fix_patch_revision: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.anniv_3_rd_live_recorded)
+    pub anniv_3_rd_live_recorded: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.custom_service_url)
+    pub custom_service_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.asset_bundle_url_android)
+    pub asset_bundle_url_android: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.rogue_tourn_h_5_url)
+    pub rogue_tourn_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.grid_fight_game_ref_h_5_url)
+    pub grid_fight_game_ref_h_5_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.use_tcp)
+    pub use_tcp: bool,
+    // @@protoc_insertion_point(field:GateServer.OLGOHLGJFHI)
+    pub OLGOHLGJFHI: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:GateServer.cloud_game_url)
+    pub cloud_game_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.player_return_questionnaire_b_url)
+    pub player_return_questionnaire_b_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.community_activity_url)
+    pub community_activity_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.forbid_recharge)
+    pub forbid_recharge: bool,
+    // @@protoc_insertion_point(field:GateServer.server_description)
+    pub server_description: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ifix_url)
+    pub ifix_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.client_secret_key)
+    pub client_secret_key: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.network_diagnostic)
+    pub network_diagnostic: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GateServer.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -101,17 +219,12 @@ impl GateServer {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(28);
+        let mut fields = ::std::vec::Vec::with_capacity(87);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "lua_url",
-            |m: &GateServer| { &m.lua_url },
-            |m: &mut GateServer| { &mut m.lua_url },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk1",
-            |m: &GateServer| { &m.unk1 },
-            |m: &mut GateServer| { &mut m.unk1 },
+            "region_name",
+            |m: &GateServer| { &m.region_name },
+            |m: &mut GateServer| { &mut m.region_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ip",
@@ -119,19 +232,14 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.ip },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "port",
-            |m: &GateServer| { &m.port },
-            |m: &mut GateServer| { &mut m.port },
+            "lua_url",
+            |m: &GateServer| { &m.lua_url },
+            |m: &mut GateServer| { &mut m.lua_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "region_name",
-            |m: &GateServer| { &m.region_name },
-            |m: &mut GateServer| { &mut m.region_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "asset_bundle_url",
-            |m: &GateServer| { &m.asset_bundle_url },
-            |m: &mut GateServer| { &mut m.asset_bundle_url },
+            "asb_relogin_desc",
+            |m: &GateServer| { &m.asb_relogin_desc },
+            |m: &mut GateServer| { &mut m.asb_relogin_desc },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ex_resource_url",
@@ -139,34 +247,44 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.ex_resource_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk2",
-            |m: &GateServer| { &m.unk2 },
-            |m: &mut GateServer| { &mut m.unk2 },
+            "port",
+            |m: &GateServer| { &m.port },
+            |m: &mut GateServer| { &mut m.port },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "asset_bundle_url_android",
-            |m: &GateServer| { &m.asset_bundle_url_android },
-            |m: &mut GateServer| { &mut m.asset_bundle_url_android },
+            "enable_design_data_bundle_version_update",
+            |m: &GateServer| { &m.enable_design_data_bundle_version_update },
+            |m: &mut GateServer| { &mut m.enable_design_data_bundle_version_update },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_secret_key",
-            |m: &GateServer| { &m.client_secret_key },
-            |m: &mut GateServer| { &mut m.client_secret_key },
+            "stop_end_time",
+            |m: &GateServer| { &m.stop_end_time },
+            |m: &mut GateServer| { &mut m.stop_end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk3",
-            |m: &GateServer| { &m.unk3 },
-            |m: &mut GateServer| { &mut m.unk3 },
+            "stop_begin_time",
+            |m: &GateServer| { &m.stop_begin_time },
+            |m: &mut GateServer| { &mut m.stop_begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ifix_url",
-            |m: &GateServer| { &m.ifix_url },
-            |m: &mut GateServer| { &mut m.ifix_url },
+            "design_data_relogin_type",
+            |m: &GateServer| { &m.design_data_relogin_type },
+            |m: &mut GateServer| { &mut m.design_data_relogin_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk4",
-            |m: &GateServer| { &m.unk4 },
-            |m: &mut GateServer| { &mut m.unk4 },
+            "enable_video_bundle_version_update",
+            |m: &GateServer| { &m.enable_video_bundle_version_update },
+            |m: &mut GateServer| { &mut m.enable_video_bundle_version_update },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "asb_relogin_type",
+            |m: &GateServer| { &m.asb_relogin_type },
+            |m: &mut GateServer| { &mut m.asb_relogin_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stop_desc",
+            |m: &GateServer| { &m.stop_desc },
+            |m: &mut GateServer| { &mut m.stop_desc },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -174,74 +292,369 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "msg",
-            |m: &GateServer| { &m.msg },
-            |m: &mut GateServer| { &mut m.msg },
+            "asset_bundle_url",
+            |m: &GateServer| { &m.asset_bundle_url },
+            |m: &mut GateServer| { &mut m.asset_bundle_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk5",
-            |m: &GateServer| { &m.unk5 },
-            |m: &mut GateServer| { &mut m.unk5 },
+            "watermark_enable",
+            |m: &GateServer| { &m.watermark_enable },
+            |m: &mut GateServer| { &mut m.watermark_enable },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk6",
-            |m: &GateServer| { &m.unk6 },
-            |m: &mut GateServer| { &mut m.unk6 },
+            "enable_upload_battle_log",
+            |m: &GateServer| { &m.enable_upload_battle_log },
+            |m: &mut GateServer| { &mut m.enable_upload_battle_log },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk7",
-            |m: &GateServer| { &m.unk7 },
-            |m: &mut GateServer| { &mut m.unk7 },
+            "anniv_3_rd_overseas",
+            |m: &GateServer| { &m.anniv_3_rd_overseas },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_overseas },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk8",
-            |m: &GateServer| { &m.unk8 },
-            |m: &mut GateServer| { &mut m.unk8 },
+            "ftc_switch",
+            |m: &GateServer| { &m.ftc_switch },
+            |m: &mut GateServer| { &mut m.ftc_switch },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk9",
-            |m: &GateServer| { &m.unk9 },
-            |m: &mut GateServer| { &mut m.unk9 },
+            "operation_feedback_url",
+            |m: &GateServer| { &m.operation_feedback_url },
+            |m: &mut GateServer| { &mut m.operation_feedback_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk10",
-            |m: &GateServer| { &m.unk10 },
-            |m: &mut GateServer| { &mut m.unk10 },
+            "FMLPNNMJDIC",
+            |m: &GateServer| { &m.FMLPNNMJDIC },
+            |m: &mut GateServer| { &mut m.FMLPNNMJDIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk11",
-            |m: &GateServer| { &m.unk11 },
-            |m: &mut GateServer| { &mut m.unk11 },
+            "redeem_code_url",
+            |m: &GateServer| { &m.redeem_code_url },
+            |m: &mut GateServer| { &mut m.redeem_code_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk12",
-            |m: &GateServer| { &m.unk12 },
-            |m: &mut GateServer| { &mut m.unk12 },
+            "rogue_tourn_build_ref_api_req_color_header_key",
+            |m: &GateServer| { &m.rogue_tourn_build_ref_api_req_color_header_key },
+            |m: &mut GateServer| { &mut m.rogue_tourn_build_ref_api_req_color_header_key },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk13",
-            |m: &GateServer| { &m.unk13 },
-            |m: &mut GateServer| { &mut m.unk13 },
+            "personal_information_in_game_url",
+            |m: &GateServer| { &m.personal_information_in_game_url },
+            |m: &mut GateServer| { &mut m.personal_information_in_game_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk14",
-            |m: &GateServer| { &m.unk14 },
-            |m: &mut GateServer| { &mut m.unk14 },
+            "rogue_magic_h_5_url",
+            |m: &GateServer| { &m.rogue_magic_h_5_url },
+            |m: &mut GateServer| { &mut m.rogue_magic_h_5_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk15",
-            |m: &GateServer| { &m.unk15 },
-            |m: &mut GateServer| { &mut m.unk15 },
+            "rogue_tourn_notice_id",
+            |m: &GateServer| { &m.rogue_tourn_notice_id },
+            |m: &mut GateServer| { &mut m.rogue_tourn_notice_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ifix_version",
-            |m: &GateServer| { &m.ifix_version },
-            |m: &mut GateServer| { &mut m.ifix_version },
+            "rogue_tourn_notice_pic_type",
+            |m: &GateServer| { &m.rogue_tourn_notice_pic_type },
+            |m: &mut GateServer| { &mut m.rogue_tourn_notice_pic_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "mdk_res_version",
-            |m: &GateServer| { &m.mdk_res_version },
-            |m: &mut GateServer| { &mut m.mdk_res_version },
+            "anniv_3_rd_book",
+            |m: &GateServer| { &m.anniv_3_rd_book },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_book },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_3_rd_live_mainpage",
+            |m: &GateServer| { &m.anniv_3_rd_live_mainpage },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_live_mainpage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "design_data_relogin_desc",
+            |m: &GateServer| { &m.design_data_relogin_desc },
+            |m: &mut GateServer| { &mut m.design_data_relogin_desc },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_3_rd_fes",
+            |m: &GateServer| { &m.anniv_3_rd_fes },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_fes },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDMJIGDPDNB",
+            |m: &GateServer| { &m.JDMJIGDPDNB },
+            |m: &mut GateServer| { &mut m.JDMJIGDPDNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enable_save_replay_file",
+            |m: &GateServer| { &m.enable_save_replay_file },
+            |m: &mut GateServer| { &mut m.enable_save_replay_file },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "user_agreement_url",
+            |m: &GateServer| { &m.user_agreement_url },
+            |m: &mut GateServer| { &mut m.user_agreement_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "player_return_invite_h_5_url",
+            |m: &GateServer| { &m.player_return_invite_h_5_url },
+            |m: &mut GateServer| { &mut m.player_return_invite_h_5_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "official_community_url",
+            |m: &GateServer| { &m.official_community_url },
+            |m: &mut GateServer| { &mut m.official_community_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_start_customer_service_url",
+            |m: &GateServer| { &m.game_start_customer_service_url },
+            |m: &mut GateServer| { &mut m.game_start_customer_service_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_2_nd_callback",
+            |m: &GateServer| { &m.anniv_2_nd_callback },
+            |m: &mut GateServer| { &mut m.anniv_2_nd_callback },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_2_nd_book",
+            |m: &GateServer| { &m.anniv_2_nd_book },
+            |m: &mut GateServer| { &mut m.anniv_2_nd_book },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_game_ref_cdn_url",
+            |m: &GateServer| { &m.grid_fight_game_ref_cdn_url },
+            |m: &mut GateServer| { &mut m.grid_fight_game_ref_cdn_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ban_appeal_url",
+            |m: &GateServer| { &m.ban_appeal_url },
+            |m: &mut GateServer| { &mut m.ban_appeal_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_3_rd_callback",
+            |m: &GateServer| { &m.anniv_3_rd_callback },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_callback },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "android_middle_package_enable",
+            |m: &GateServer| { &m.android_middle_package_enable },
+            |m: &mut GateServer| { &mut m.android_middle_package_enable },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_intro_h_5_url",
+            |m: &GateServer| { &m.grid_fight_intro_h_5_url },
+            |m: &mut GateServer| { &mut m.grid_fight_intro_h_5_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_tourn_build_ref_h_5_url",
+            |m: &GateServer| { &m.rogue_tourn_build_ref_h_5_url },
+            |m: &mut GateServer| { &mut m.rogue_tourn_build_ref_h_5_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hot_point_url",
+            |m: &GateServer| { &m.hot_point_url },
+            |m: &mut GateServer| { &mut m.hot_point_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "login_white_msg",
+            |m: &GateServer| { &m.login_white_msg },
+            |m: &mut GateServer| { &mut m.login_white_msg },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enable_predownload",
+            |m: &GateServer| { &m.enable_predownload },
+            |m: &mut GateServer| { &mut m.enable_predownload },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "close_redeem_code",
+            |m: &GateServer| { &m.close_redeem_code },
+            |m: &mut GateServer| { &mut m.close_redeem_code },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "online_replay_upload_url",
+            |m: &GateServer| { &m.online_replay_upload_url },
+            |m: &mut GateServer| { &mut m.online_replay_upload_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_game_ref_color_header_value",
+            |m: &GateServer| { &m.grid_fight_game_ref_color_header_value },
+            |m: &mut GateServer| { &mut m.grid_fight_game_ref_color_header_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "web_tool_url",
+            |m: &GateServer| { &m.web_tool_url },
+            |m: &mut GateServer| { &mut m.web_tool_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "teenager_privacy_in_game_url",
+            |m: &GateServer| { &m.teenager_privacy_in_game_url },
+            |m: &mut GateServer| { &mut m.teenager_privacy_in_game_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ios_exam",
+            |m: &GateServer| { &m.ios_exam },
+            |m: &mut GateServer| { &mut m.ios_exam },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "mtp_switch",
+            |m: &GateServer| { &m.mtp_switch },
+            |m: &mut GateServer| { &mut m.mtp_switch },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_tourn_build_ref_api_req_color_header_value",
+            |m: &GateServer| { &m.rogue_tourn_build_ref_api_req_color_header_value },
+            |m: &mut GateServer| { &mut m.rogue_tourn_build_ref_api_req_color_header_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "online_replay_download_url",
+            |m: &GateServer| { &m.online_replay_download_url },
+            |m: &mut GateServer| { &mut m.online_replay_download_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "temporary_maintenance_url",
+            |m: &GateServer| { &m.temporary_maintenance_url },
+            |m: &mut GateServer| { &mut m.temporary_maintenance_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_2_nd_os",
+            |m: &GateServer| { &m.anniv_2_nd_os },
+            |m: &mut GateServer| { &mut m.anniv_2_nd_os },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "player_return_invite_h_6_url",
+            |m: &GateServer| { &m.player_return_invite_h_6_url },
+            |m: &mut GateServer| { &mut m.player_return_invite_h_6_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_3_rd_live_inprogress",
+            |m: &GateServer| { &m.anniv_3_rd_live_inprogress },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_live_inprogress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_game_ref_color_header_key",
+            |m: &GateServer| { &m.grid_fight_game_ref_color_header_key },
+            |m: &mut GateServer| { &mut m.grid_fight_game_ref_color_header_key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "privacy_in_game_url",
+            |m: &GateServer| { &m.privacy_in_game_url },
+            |m: &mut GateServer| { &mut m.privacy_in_game_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "player_return_questionnaire_a_url",
+            |m: &GateServer| { &m.player_return_questionnaire_a_url },
+            |m: &mut GateServer| { &mut m.player_return_questionnaire_a_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_tourn_build_ref_static_data_url_prefix",
+            |m: &GateServer| { &m.rogue_tourn_build_ref_static_data_url_prefix },
+            |m: &mut GateServer| { &mut m.rogue_tourn_build_ref_static_data_url_prefix },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_tracking_open",
+            |m: &GateServer| { &m.event_tracking_open },
+            |m: &mut GateServer| { &mut m.event_tracking_open },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "predownload_update_url",
+            |m: &GateServer| { &m.predownload_update_url },
+            |m: &mut GateServer| { &mut m.predownload_update_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NNFLHCGDGJM",
+            |m: &GateServer| { &m.NNFLHCGDGJM },
+            |m: &mut GateServer| { &mut m.NNFLHCGDGJM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_2_nd_concert",
+            |m: &GateServer| { &m.anniv_2_nd_concert },
+            |m: &mut GateServer| { &mut m.anniv_2_nd_concert },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cdn_ipv_6_enable",
+            |m: &GateServer| { &m.cdn_ipv_6_enable },
+            |m: &mut GateServer| { &mut m.cdn_ipv_6_enable },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "third_privacy_in_game_url",
+            |m: &GateServer| { &m.third_privacy_in_game_url },
+            |m: &mut GateServer| { &mut m.third_privacy_in_game_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "i_fix_patch_revision",
+            |m: &GateServer| { &m.i_fix_patch_revision },
+            |m: &mut GateServer| { &mut m.i_fix_patch_revision },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "anniv_3_rd_live_recorded",
+            |m: &GateServer| { &m.anniv_3_rd_live_recorded },
+            |m: &mut GateServer| { &mut m.anniv_3_rd_live_recorded },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "custom_service_url",
+            |m: &GateServer| { &m.custom_service_url },
+            |m: &mut GateServer| { &mut m.custom_service_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "asset_bundle_url_android",
+            |m: &GateServer| { &m.asset_bundle_url_android },
+            |m: &mut GateServer| { &mut m.asset_bundle_url_android },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rogue_tourn_h_5_url",
+            |m: &GateServer| { &m.rogue_tourn_h_5_url },
+            |m: &mut GateServer| { &mut m.rogue_tourn_h_5_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_game_ref_h_5_url",
+            |m: &GateServer| { &m.grid_fight_game_ref_h_5_url },
+            |m: &mut GateServer| { &mut m.grid_fight_game_ref_h_5_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "use_tcp",
+            |m: &GateServer| { &m.use_tcp },
+            |m: &mut GateServer| { &mut m.use_tcp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OLGOHLGJFHI",
+            |m: &GateServer| { &m.OLGOHLGJFHI },
+            |m: &mut GateServer| { &mut m.OLGOHLGJFHI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cloud_game_url",
+            |m: &GateServer| { &m.cloud_game_url },
+            |m: &mut GateServer| { &mut m.cloud_game_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "player_return_questionnaire_b_url",
+            |m: &GateServer| { &m.player_return_questionnaire_b_url },
+            |m: &mut GateServer| { &mut m.player_return_questionnaire_b_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "community_activity_url",
+            |m: &GateServer| { &m.community_activity_url },
+            |m: &mut GateServer| { &mut m.community_activity_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "forbid_recharge",
+            |m: &GateServer| { &m.forbid_recharge },
+            |m: &mut GateServer| { &mut m.forbid_recharge },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "server_description",
+            |m: &GateServer| { &m.server_description },
+            |m: &mut GateServer| { &mut m.server_description },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ifix_url",
+            |m: &GateServer| { &m.ifix_url },
+            |m: &mut GateServer| { &mut m.ifix_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_secret_key",
+            |m: &GateServer| { &m.client_secret_key },
+            |m: &mut GateServer| { &mut m.client_secret_key },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "network_diagnostic",
+            |m: &GateServer| { &m.network_diagnostic },
+            |m: &mut GateServer| { &mut m.network_diagnostic },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GateServer>(
             "GateServer",
@@ -262,88 +675,265 @@ impl ::protobuf::Message for GateServer {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
+                    self.region_name = is.read_string()?;
+                },
+                18 => {
+                    self.ip = is.read_string()?;
+                },
+                26 => {
                     self.lua_url = is.read_string()?;
                 },
-                24 => {
-                    self.unk1 = is.read_bool()?;
-                },
                 34 => {
-                    self.ip = is.read_string()?;
+                    self.asb_relogin_desc = is.read_string()?;
+                },
+                42 => {
+                    self.ex_resource_url = is.read_string()?;
                 },
                 48 => {
                     self.port = is.read_uint32()?;
                 },
-                58 => {
-                    self.region_name = is.read_string()?;
+                56 => {
+                    self.enable_design_data_bundle_version_update = is.read_bool()?;
                 },
-                82 => {
-                    self.asset_bundle_url = is.read_string()?;
+                64 => {
+                    self.stop_end_time = is.read_int64()?;
                 },
-                90 => {
-                    self.ex_resource_url = is.read_string()?;
+                72 => {
+                    self.stop_begin_time = is.read_int64()?;
                 },
-                104 => {
-                    self.unk2 = is.read_bool()?;
+                80 => {
+                    self.design_data_relogin_type = is.read_uint32()?;
                 },
-                474 => {
-                    self.asset_bundle_url_android = is.read_string()?;
+                88 => {
+                    self.enable_video_bundle_version_update = is.read_bool()?;
                 },
-                1666 => {
-                    self.client_secret_key = is.read_string()?;
+                96 => {
+                    self.asb_relogin_type = is.read_uint32()?;
                 },
-                2440 => {
-                    self.unk3 = is.read_bool()?;
-                },
-                2834 => {
-                    self.ifix_url = is.read_string()?;
-                },
-                7344 => {
-                    self.unk4 = is.read_bool()?;
+                106 => {
+                    self.stop_desc = is.read_string()?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                6178 => {
-                    self.msg = is.read_string()?;
+                122 => {
+                    self.asset_bundle_url = is.read_string()?;
                 },
-                6792 => {
-                    self.unk5 = is.read_bool()?;
+                384 => {
+                    self.watermark_enable = is.read_bool()?;
                 },
-                8128 => {
-                    self.unk6 = is.read_bool()?;
+                552 => {
+                    self.enable_upload_battle_log = is.read_bool()?;
                 },
-                8432 => {
-                    self.unk7 = is.read_bool()?;
+                850 => {
+                    self.anniv_3_rd_overseas = is.read_string()?;
                 },
-                9584 => {
-                    self.unk8 = is.read_bool()?;
+                1184 => {
+                    self.ftc_switch = is.read_bool()?;
                 },
-                9672 => {
-                    self.unk9 = is.read_bool()?;
+                1274 => {
+                    self.operation_feedback_url = is.read_string()?;
                 },
-                16216 => {
-                    self.unk10 = is.read_bool()?;
+                1928 => {
+                    self.FMLPNNMJDIC = is.read_bool()?;
                 },
-                6704 => {
-                    self.unk11 = is.read_bool()?;
+                2130 => {
+                    self.redeem_code_url = is.read_string()?;
                 },
-                4960 => {
-                    self.unk12 = is.read_bool()?;
+                2146 => {
+                    self.rogue_tourn_build_ref_api_req_color_header_key = is.read_string()?;
                 },
-                8848 => {
-                    self.unk13 = is.read_bool()?;
+                2378 => {
+                    self.personal_information_in_game_url = is.read_string()?;
                 },
-                6208 => {
-                    self.unk14 = is.read_bool()?;
+                2482 => {
+                    self.rogue_magic_h_5_url = is.read_string()?;
                 },
-                7736 => {
-                    self.unk15 = is.read_bool()?;
+                2680 => {
+                    self.rogue_tourn_notice_id = is.read_uint32()?;
                 },
-                8826 => {
-                    self.ifix_version = is.read_string()?;
+                2768 => {
+                    self.rogue_tourn_notice_pic_type = is.read_uint32()?;
                 },
-                16194 => {
-                    self.mdk_res_version = is.read_string()?;
+                2882 => {
+                    self.anniv_3_rd_book = is.read_string()?;
+                },
+                2906 => {
+                    self.anniv_3_rd_live_mainpage = is.read_string()?;
+                },
+                2970 => {
+                    self.design_data_relogin_desc = is.read_string()?;
+                },
+                3530 => {
+                    self.anniv_3_rd_fes = is.read_string()?;
+                },
+                3746 => {
+                    self.JDMJIGDPDNB = is.read_string()?;
+                },
+                3896 => {
+                    self.enable_save_replay_file = is.read_bool()?;
+                },
+                3954 => {
+                    self.user_agreement_url = is.read_string()?;
+                },
+                4010 => {
+                    self.player_return_invite_h_5_url = is.read_string()?;
+                },
+                4186 => {
+                    self.official_community_url = is.read_string()?;
+                },
+                4322 => {
+                    self.game_start_customer_service_url = is.read_string()?;
+                },
+                4346 => {
+                    self.anniv_2_nd_callback = is.read_string()?;
+                },
+                4370 => {
+                    self.anniv_2_nd_book = is.read_string()?;
+                },
+                4410 => {
+                    self.grid_fight_game_ref_cdn_url = is.read_string()?;
+                },
+                5266 => {
+                    self.ban_appeal_url = is.read_string()?;
+                },
+                5594 => {
+                    self.anniv_3_rd_callback = is.read_string()?;
+                },
+                5808 => {
+                    self.android_middle_package_enable = is.read_bool()?;
+                },
+                5946 => {
+                    self.grid_fight_intro_h_5_url = is.read_string()?;
+                },
+                6146 => {
+                    self.rogue_tourn_build_ref_h_5_url = is.read_string()?;
+                },
+                6274 => {
+                    self.hot_point_url = is.read_string()?;
+                },
+                6322 => {
+                    self.login_white_msg = is.read_string()?;
+                },
+                6370 => {
+                    self.enable_predownload = is.read_string()?;
+                },
+                7224 => {
+                    self.close_redeem_code = is.read_bool()?;
+                },
+                7514 => {
+                    self.online_replay_upload_url = is.read_string()?;
+                },
+                7570 => {
+                    self.grid_fight_game_ref_color_header_value = is.read_string()?;
+                },
+                7858 => {
+                    self.web_tool_url = is.read_string()?;
+                },
+                7914 => {
+                    self.teenager_privacy_in_game_url = is.read_string()?;
+                },
+                8168 => {
+                    self.ios_exam = is.read_bool()?;
+                },
+                8360 => {
+                    self.mtp_switch = is.read_bool()?;
+                },
+                8490 => {
+                    self.rogue_tourn_build_ref_api_req_color_header_value = is.read_string()?;
+                },
+                9298 => {
+                    self.online_replay_download_url = is.read_string()?;
+                },
+                9650 => {
+                    self.temporary_maintenance_url = is.read_string()?;
+                },
+                10306 => {
+                    self.anniv_2_nd_os = is.read_string()?;
+                },
+                10410 => {
+                    self.player_return_invite_h_6_url = is.read_string()?;
+                },
+                10530 => {
+                    self.anniv_3_rd_live_inprogress = is.read_string()?;
+                },
+                10722 => {
+                    self.grid_fight_game_ref_color_header_key = is.read_string()?;
+                },
+                11514 => {
+                    self.privacy_in_game_url = is.read_string()?;
+                },
+                11666 => {
+                    self.player_return_questionnaire_a_url = is.read_string()?;
+                },
+                11746 => {
+                    self.rogue_tourn_build_ref_static_data_url_prefix = is.read_string()?;
+                },
+                12120 => {
+                    self.event_tracking_open = is.read_bool()?;
+                },
+                12426 => {
+                    self.predownload_update_url = is.read_string()?;
+                },
+                12544 => {
+                    self.NNFLHCGDGJM = is.read_bool()?;
+                },
+                12770 => {
+                    self.anniv_2_nd_concert = is.read_string()?;
+                },
+                12840 => {
+                    self.cdn_ipv_6_enable = is.read_uint32()?;
+                },
+                13178 => {
+                    self.third_privacy_in_game_url = is.read_string()?;
+                },
+                13258 => {
+                    self.i_fix_patch_revision = is.read_string()?;
+                },
+                13946 => {
+                    self.anniv_3_rd_live_recorded = is.read_string()?;
+                },
+                13954 => {
+                    self.custom_service_url = is.read_string()?;
+                },
+                14194 => {
+                    self.asset_bundle_url_android = is.read_string()?;
+                },
+                14706 => {
+                    self.rogue_tourn_h_5_url = is.read_string()?;
+                },
+                14818 => {
+                    self.grid_fight_game_ref_h_5_url = is.read_string()?;
+                },
+                14968 => {
+                    self.use_tcp = is.read_bool()?;
+                },
+                15266 => {
+                    self.OLGOHLGJFHI.push(is.read_string()?);
+                },
+                15338 => {
+                    self.cloud_game_url = is.read_string()?;
+                },
+                15490 => {
+                    self.player_return_questionnaire_b_url = is.read_string()?;
+                },
+                15810 => {
+                    self.community_activity_url = is.read_string()?;
+                },
+                15888 => {
+                    self.forbid_recharge = is.read_bool()?;
+                },
+                15930 => {
+                    self.server_description = is.read_string()?;
+                },
+                16306 => {
+                    self.ifix_url = is.read_string()?;
+                },
+                16354 => {
+                    self.client_secret_key = is.read_string()?;
+                },
+                16376 => {
+                    self.network_diagnostic = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -357,89 +947,266 @@ impl ::protobuf::Message for GateServer {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.lua_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.lua_url);
-        }
-        if self.unk1 != false {
-            my_size += 1 + 1;
+        if !self.region_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.region_name);
         }
         if !self.ip.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.ip);
+            my_size += ::protobuf::rt::string_size(2, &self.ip);
+        }
+        if !self.lua_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.lua_url);
+        }
+        if !self.asb_relogin_desc.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.asb_relogin_desc);
+        }
+        if !self.ex_resource_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.ex_resource_url);
         }
         if self.port != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.port);
         }
-        if !self.region_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.region_name);
-        }
-        if !self.asset_bundle_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.asset_bundle_url);
-        }
-        if !self.ex_resource_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.ex_resource_url);
-        }
-        if self.unk2 != false {
+        if self.enable_design_data_bundle_version_update != false {
             my_size += 1 + 1;
         }
-        if !self.asset_bundle_url_android.is_empty() {
-            my_size += ::protobuf::rt::string_size(59, &self.asset_bundle_url_android);
+        if self.stop_end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.stop_end_time);
         }
-        if !self.client_secret_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(208, &self.client_secret_key);
+        if self.stop_begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(9, self.stop_begin_time);
         }
-        if self.unk3 != false {
-            my_size += 2 + 1;
+        if self.design_data_relogin_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.design_data_relogin_type);
         }
-        if !self.ifix_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(354, &self.ifix_url);
+        if self.enable_video_bundle_version_update != false {
+            my_size += 1 + 1;
         }
-        if self.unk4 != false {
-            my_size += 2 + 1;
+        if self.asb_relogin_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.asb_relogin_type);
+        }
+        if !self.stop_desc.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.stop_desc);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(772, &self.msg);
+        if !self.asset_bundle_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.asset_bundle_url);
         }
-        if self.unk5 != false {
+        if self.watermark_enable != false {
             my_size += 2 + 1;
         }
-        if self.unk6 != false {
+        if self.enable_upload_battle_log != false {
             my_size += 2 + 1;
         }
-        if self.unk7 != false {
+        if !self.anniv_3_rd_overseas.is_empty() {
+            my_size += ::protobuf::rt::string_size(106, &self.anniv_3_rd_overseas);
+        }
+        if self.ftc_switch != false {
             my_size += 2 + 1;
         }
-        if self.unk8 != false {
+        if !self.operation_feedback_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(159, &self.operation_feedback_url);
+        }
+        if self.FMLPNNMJDIC != false {
             my_size += 2 + 1;
         }
-        if self.unk9 != false {
+        if !self.redeem_code_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(266, &self.redeem_code_url);
+        }
+        if !self.rogue_tourn_build_ref_api_req_color_header_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(268, &self.rogue_tourn_build_ref_api_req_color_header_key);
+        }
+        if !self.personal_information_in_game_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(297, &self.personal_information_in_game_url);
+        }
+        if !self.rogue_magic_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(310, &self.rogue_magic_h_5_url);
+        }
+        if self.rogue_tourn_notice_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(335, self.rogue_tourn_notice_id);
+        }
+        if self.rogue_tourn_notice_pic_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(346, self.rogue_tourn_notice_pic_type);
+        }
+        if !self.anniv_3_rd_book.is_empty() {
+            my_size += ::protobuf::rt::string_size(360, &self.anniv_3_rd_book);
+        }
+        if !self.anniv_3_rd_live_mainpage.is_empty() {
+            my_size += ::protobuf::rt::string_size(363, &self.anniv_3_rd_live_mainpage);
+        }
+        if !self.design_data_relogin_desc.is_empty() {
+            my_size += ::protobuf::rt::string_size(371, &self.design_data_relogin_desc);
+        }
+        if !self.anniv_3_rd_fes.is_empty() {
+            my_size += ::protobuf::rt::string_size(441, &self.anniv_3_rd_fes);
+        }
+        if !self.JDMJIGDPDNB.is_empty() {
+            my_size += ::protobuf::rt::string_size(468, &self.JDMJIGDPDNB);
+        }
+        if self.enable_save_replay_file != false {
             my_size += 2 + 1;
         }
-        if self.unk10 != false {
+        if !self.user_agreement_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(494, &self.user_agreement_url);
+        }
+        if !self.player_return_invite_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(501, &self.player_return_invite_h_5_url);
+        }
+        if !self.official_community_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(523, &self.official_community_url);
+        }
+        if !self.game_start_customer_service_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(540, &self.game_start_customer_service_url);
+        }
+        if !self.anniv_2_nd_callback.is_empty() {
+            my_size += ::protobuf::rt::string_size(543, &self.anniv_2_nd_callback);
+        }
+        if !self.anniv_2_nd_book.is_empty() {
+            my_size += ::protobuf::rt::string_size(546, &self.anniv_2_nd_book);
+        }
+        if !self.grid_fight_game_ref_cdn_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(551, &self.grid_fight_game_ref_cdn_url);
+        }
+        if !self.ban_appeal_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(658, &self.ban_appeal_url);
+        }
+        if !self.anniv_3_rd_callback.is_empty() {
+            my_size += ::protobuf::rt::string_size(699, &self.anniv_3_rd_callback);
+        }
+        if self.android_middle_package_enable != false {
             my_size += 2 + 1;
         }
-        if self.unk11 != false {
+        if !self.grid_fight_intro_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(743, &self.grid_fight_intro_h_5_url);
+        }
+        if !self.rogue_tourn_build_ref_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(768, &self.rogue_tourn_build_ref_h_5_url);
+        }
+        if !self.hot_point_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(784, &self.hot_point_url);
+        }
+        if !self.login_white_msg.is_empty() {
+            my_size += ::protobuf::rt::string_size(790, &self.login_white_msg);
+        }
+        if !self.enable_predownload.is_empty() {
+            my_size += ::protobuf::rt::string_size(796, &self.enable_predownload);
+        }
+        if self.close_redeem_code != false {
             my_size += 2 + 1;
         }
-        if self.unk12 != false {
+        if !self.online_replay_upload_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(939, &self.online_replay_upload_url);
+        }
+        if !self.grid_fight_game_ref_color_header_value.is_empty() {
+            my_size += ::protobuf::rt::string_size(946, &self.grid_fight_game_ref_color_header_value);
+        }
+        if !self.web_tool_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(982, &self.web_tool_url);
+        }
+        if !self.teenager_privacy_in_game_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(989, &self.teenager_privacy_in_game_url);
+        }
+        if self.ios_exam != false {
             my_size += 2 + 1;
         }
-        if self.unk13 != false {
+        if self.mtp_switch != false {
             my_size += 2 + 1;
         }
-        if self.unk14 != false {
+        if !self.rogue_tourn_build_ref_api_req_color_header_value.is_empty() {
+            my_size += ::protobuf::rt::string_size(1061, &self.rogue_tourn_build_ref_api_req_color_header_value);
+        }
+        if !self.online_replay_download_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1162, &self.online_replay_download_url);
+        }
+        if !self.temporary_maintenance_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1206, &self.temporary_maintenance_url);
+        }
+        if !self.anniv_2_nd_os.is_empty() {
+            my_size += ::protobuf::rt::string_size(1288, &self.anniv_2_nd_os);
+        }
+        if !self.player_return_invite_h_6_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1301, &self.player_return_invite_h_6_url);
+        }
+        if !self.anniv_3_rd_live_inprogress.is_empty() {
+            my_size += ::protobuf::rt::string_size(1316, &self.anniv_3_rd_live_inprogress);
+        }
+        if !self.grid_fight_game_ref_color_header_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(1340, &self.grid_fight_game_ref_color_header_key);
+        }
+        if !self.privacy_in_game_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1439, &self.privacy_in_game_url);
+        }
+        if !self.player_return_questionnaire_a_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1458, &self.player_return_questionnaire_a_url);
+        }
+        if !self.rogue_tourn_build_ref_static_data_url_prefix.is_empty() {
+            my_size += ::protobuf::rt::string_size(1468, &self.rogue_tourn_build_ref_static_data_url_prefix);
+        }
+        if self.event_tracking_open != false {
             my_size += 2 + 1;
         }
-        if self.unk15 != false {
+        if !self.predownload_update_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1553, &self.predownload_update_url);
+        }
+        if self.NNFLHCGDGJM != false {
             my_size += 2 + 1;
         }
-        if !self.ifix_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(1103, &self.ifix_version);
+        if !self.anniv_2_nd_concert.is_empty() {
+            my_size += ::protobuf::rt::string_size(1596, &self.anniv_2_nd_concert);
         }
-        if !self.mdk_res_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(2024, &self.mdk_res_version);
+        if self.cdn_ipv_6_enable != 0 {
+            my_size += ::protobuf::rt::uint32_size(1605, self.cdn_ipv_6_enable);
+        }
+        if !self.third_privacy_in_game_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1647, &self.third_privacy_in_game_url);
+        }
+        if !self.i_fix_patch_revision.is_empty() {
+            my_size += ::protobuf::rt::string_size(1657, &self.i_fix_patch_revision);
+        }
+        if !self.anniv_3_rd_live_recorded.is_empty() {
+            my_size += ::protobuf::rt::string_size(1743, &self.anniv_3_rd_live_recorded);
+        }
+        if !self.custom_service_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1744, &self.custom_service_url);
+        }
+        if !self.asset_bundle_url_android.is_empty() {
+            my_size += ::protobuf::rt::string_size(1774, &self.asset_bundle_url_android);
+        }
+        if !self.rogue_tourn_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1838, &self.rogue_tourn_h_5_url);
+        }
+        if !self.grid_fight_game_ref_h_5_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1852, &self.grid_fight_game_ref_h_5_url);
+        }
+        if self.use_tcp != false {
+            my_size += 2 + 1;
+        }
+        for value in &self.OLGOHLGJFHI {
+            my_size += ::protobuf::rt::string_size(1908, &value);
+        };
+        if !self.cloud_game_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1917, &self.cloud_game_url);
+        }
+        if !self.player_return_questionnaire_b_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1936, &self.player_return_questionnaire_b_url);
+        }
+        if !self.community_activity_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(1976, &self.community_activity_url);
+        }
+        if self.forbid_recharge != false {
+            my_size += 2 + 1;
+        }
+        if !self.server_description.is_empty() {
+            my_size += ::protobuf::rt::string_size(1991, &self.server_description);
+        }
+        if !self.ifix_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(2038, &self.ifix_url);
+        }
+        if !self.client_secret_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(2044, &self.client_secret_key);
+        }
+        if self.network_diagnostic != false {
+            my_size += 2 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -447,89 +1214,266 @@ impl ::protobuf::Message for GateServer {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.lua_url.is_empty() {
-            os.write_string(1, &self.lua_url)?;
-        }
-        if self.unk1 != false {
-            os.write_bool(3, self.unk1)?;
+        if !self.region_name.is_empty() {
+            os.write_string(1, &self.region_name)?;
         }
         if !self.ip.is_empty() {
-            os.write_string(4, &self.ip)?;
+            os.write_string(2, &self.ip)?;
+        }
+        if !self.lua_url.is_empty() {
+            os.write_string(3, &self.lua_url)?;
+        }
+        if !self.asb_relogin_desc.is_empty() {
+            os.write_string(4, &self.asb_relogin_desc)?;
+        }
+        if !self.ex_resource_url.is_empty() {
+            os.write_string(5, &self.ex_resource_url)?;
         }
         if self.port != 0 {
             os.write_uint32(6, self.port)?;
         }
-        if !self.region_name.is_empty() {
-            os.write_string(7, &self.region_name)?;
+        if self.enable_design_data_bundle_version_update != false {
+            os.write_bool(7, self.enable_design_data_bundle_version_update)?;
         }
-        if !self.asset_bundle_url.is_empty() {
-            os.write_string(10, &self.asset_bundle_url)?;
+        if self.stop_end_time != 0 {
+            os.write_int64(8, self.stop_end_time)?;
         }
-        if !self.ex_resource_url.is_empty() {
-            os.write_string(11, &self.ex_resource_url)?;
+        if self.stop_begin_time != 0 {
+            os.write_int64(9, self.stop_begin_time)?;
         }
-        if self.unk2 != false {
-            os.write_bool(13, self.unk2)?;
+        if self.design_data_relogin_type != 0 {
+            os.write_uint32(10, self.design_data_relogin_type)?;
         }
-        if !self.asset_bundle_url_android.is_empty() {
-            os.write_string(59, &self.asset_bundle_url_android)?;
+        if self.enable_video_bundle_version_update != false {
+            os.write_bool(11, self.enable_video_bundle_version_update)?;
         }
-        if !self.client_secret_key.is_empty() {
-            os.write_string(208, &self.client_secret_key)?;
+        if self.asb_relogin_type != 0 {
+            os.write_uint32(12, self.asb_relogin_type)?;
         }
-        if self.unk3 != false {
-            os.write_bool(305, self.unk3)?;
-        }
-        if !self.ifix_url.is_empty() {
-            os.write_string(354, &self.ifix_url)?;
-        }
-        if self.unk4 != false {
-            os.write_bool(918, self.unk4)?;
+        if !self.stop_desc.is_empty() {
+            os.write_string(13, &self.stop_desc)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
-        if !self.msg.is_empty() {
-            os.write_string(772, &self.msg)?;
+        if !self.asset_bundle_url.is_empty() {
+            os.write_string(15, &self.asset_bundle_url)?;
         }
-        if self.unk5 != false {
-            os.write_bool(849, self.unk5)?;
+        if self.watermark_enable != false {
+            os.write_bool(48, self.watermark_enable)?;
         }
-        if self.unk6 != false {
-            os.write_bool(1016, self.unk6)?;
+        if self.enable_upload_battle_log != false {
+            os.write_bool(69, self.enable_upload_battle_log)?;
         }
-        if self.unk7 != false {
-            os.write_bool(1054, self.unk7)?;
+        if !self.anniv_3_rd_overseas.is_empty() {
+            os.write_string(106, &self.anniv_3_rd_overseas)?;
         }
-        if self.unk8 != false {
-            os.write_bool(1198, self.unk8)?;
+        if self.ftc_switch != false {
+            os.write_bool(148, self.ftc_switch)?;
         }
-        if self.unk9 != false {
-            os.write_bool(1209, self.unk9)?;
+        if !self.operation_feedback_url.is_empty() {
+            os.write_string(159, &self.operation_feedback_url)?;
         }
-        if self.unk10 != false {
-            os.write_bool(2027, self.unk10)?;
+        if self.FMLPNNMJDIC != false {
+            os.write_bool(241, self.FMLPNNMJDIC)?;
         }
-        if self.unk11 != false {
-            os.write_bool(838, self.unk11)?;
+        if !self.redeem_code_url.is_empty() {
+            os.write_string(266, &self.redeem_code_url)?;
         }
-        if self.unk12 != false {
-            os.write_bool(620, self.unk12)?;
+        if !self.rogue_tourn_build_ref_api_req_color_header_key.is_empty() {
+            os.write_string(268, &self.rogue_tourn_build_ref_api_req_color_header_key)?;
         }
-        if self.unk13 != false {
-            os.write_bool(1106, self.unk13)?;
+        if !self.personal_information_in_game_url.is_empty() {
+            os.write_string(297, &self.personal_information_in_game_url)?;
         }
-        if self.unk14 != false {
-            os.write_bool(776, self.unk14)?;
+        if !self.rogue_magic_h_5_url.is_empty() {
+            os.write_string(310, &self.rogue_magic_h_5_url)?;
         }
-        if self.unk15 != false {
-            os.write_bool(967, self.unk15)?;
+        if self.rogue_tourn_notice_id != 0 {
+            os.write_uint32(335, self.rogue_tourn_notice_id)?;
         }
-        if !self.ifix_version.is_empty() {
-            os.write_string(1103, &self.ifix_version)?;
+        if self.rogue_tourn_notice_pic_type != 0 {
+            os.write_uint32(346, self.rogue_tourn_notice_pic_type)?;
         }
-        if !self.mdk_res_version.is_empty() {
-            os.write_string(2024, &self.mdk_res_version)?;
+        if !self.anniv_3_rd_book.is_empty() {
+            os.write_string(360, &self.anniv_3_rd_book)?;
+        }
+        if !self.anniv_3_rd_live_mainpage.is_empty() {
+            os.write_string(363, &self.anniv_3_rd_live_mainpage)?;
+        }
+        if !self.design_data_relogin_desc.is_empty() {
+            os.write_string(371, &self.design_data_relogin_desc)?;
+        }
+        if !self.anniv_3_rd_fes.is_empty() {
+            os.write_string(441, &self.anniv_3_rd_fes)?;
+        }
+        if !self.JDMJIGDPDNB.is_empty() {
+            os.write_string(468, &self.JDMJIGDPDNB)?;
+        }
+        if self.enable_save_replay_file != false {
+            os.write_bool(487, self.enable_save_replay_file)?;
+        }
+        if !self.user_agreement_url.is_empty() {
+            os.write_string(494, &self.user_agreement_url)?;
+        }
+        if !self.player_return_invite_h_5_url.is_empty() {
+            os.write_string(501, &self.player_return_invite_h_5_url)?;
+        }
+        if !self.official_community_url.is_empty() {
+            os.write_string(523, &self.official_community_url)?;
+        }
+        if !self.game_start_customer_service_url.is_empty() {
+            os.write_string(540, &self.game_start_customer_service_url)?;
+        }
+        if !self.anniv_2_nd_callback.is_empty() {
+            os.write_string(543, &self.anniv_2_nd_callback)?;
+        }
+        if !self.anniv_2_nd_book.is_empty() {
+            os.write_string(546, &self.anniv_2_nd_book)?;
+        }
+        if !self.grid_fight_game_ref_cdn_url.is_empty() {
+            os.write_string(551, &self.grid_fight_game_ref_cdn_url)?;
+        }
+        if !self.ban_appeal_url.is_empty() {
+            os.write_string(658, &self.ban_appeal_url)?;
+        }
+        if !self.anniv_3_rd_callback.is_empty() {
+            os.write_string(699, &self.anniv_3_rd_callback)?;
+        }
+        if self.android_middle_package_enable != false {
+            os.write_bool(726, self.android_middle_package_enable)?;
+        }
+        if !self.grid_fight_intro_h_5_url.is_empty() {
+            os.write_string(743, &self.grid_fight_intro_h_5_url)?;
+        }
+        if !self.rogue_tourn_build_ref_h_5_url.is_empty() {
+            os.write_string(768, &self.rogue_tourn_build_ref_h_5_url)?;
+        }
+        if !self.hot_point_url.is_empty() {
+            os.write_string(784, &self.hot_point_url)?;
+        }
+        if !self.login_white_msg.is_empty() {
+            os.write_string(790, &self.login_white_msg)?;
+        }
+        if !self.enable_predownload.is_empty() {
+            os.write_string(796, &self.enable_predownload)?;
+        }
+        if self.close_redeem_code != false {
+            os.write_bool(903, self.close_redeem_code)?;
+        }
+        if !self.online_replay_upload_url.is_empty() {
+            os.write_string(939, &self.online_replay_upload_url)?;
+        }
+        if !self.grid_fight_game_ref_color_header_value.is_empty() {
+            os.write_string(946, &self.grid_fight_game_ref_color_header_value)?;
+        }
+        if !self.web_tool_url.is_empty() {
+            os.write_string(982, &self.web_tool_url)?;
+        }
+        if !self.teenager_privacy_in_game_url.is_empty() {
+            os.write_string(989, &self.teenager_privacy_in_game_url)?;
+        }
+        if self.ios_exam != false {
+            os.write_bool(1021, self.ios_exam)?;
+        }
+        if self.mtp_switch != false {
+            os.write_bool(1045, self.mtp_switch)?;
+        }
+        if !self.rogue_tourn_build_ref_api_req_color_header_value.is_empty() {
+            os.write_string(1061, &self.rogue_tourn_build_ref_api_req_color_header_value)?;
+        }
+        if !self.online_replay_download_url.is_empty() {
+            os.write_string(1162, &self.online_replay_download_url)?;
+        }
+        if !self.temporary_maintenance_url.is_empty() {
+            os.write_string(1206, &self.temporary_maintenance_url)?;
+        }
+        if !self.anniv_2_nd_os.is_empty() {
+            os.write_string(1288, &self.anniv_2_nd_os)?;
+        }
+        if !self.player_return_invite_h_6_url.is_empty() {
+            os.write_string(1301, &self.player_return_invite_h_6_url)?;
+        }
+        if !self.anniv_3_rd_live_inprogress.is_empty() {
+            os.write_string(1316, &self.anniv_3_rd_live_inprogress)?;
+        }
+        if !self.grid_fight_game_ref_color_header_key.is_empty() {
+            os.write_string(1340, &self.grid_fight_game_ref_color_header_key)?;
+        }
+        if !self.privacy_in_game_url.is_empty() {
+            os.write_string(1439, &self.privacy_in_game_url)?;
+        }
+        if !self.player_return_questionnaire_a_url.is_empty() {
+            os.write_string(1458, &self.player_return_questionnaire_a_url)?;
+        }
+        if !self.rogue_tourn_build_ref_static_data_url_prefix.is_empty() {
+            os.write_string(1468, &self.rogue_tourn_build_ref_static_data_url_prefix)?;
+        }
+        if self.event_tracking_open != false {
+            os.write_bool(1515, self.event_tracking_open)?;
+        }
+        if !self.predownload_update_url.is_empty() {
+            os.write_string(1553, &self.predownload_update_url)?;
+        }
+        if self.NNFLHCGDGJM != false {
+            os.write_bool(1568, self.NNFLHCGDGJM)?;
+        }
+        if !self.anniv_2_nd_concert.is_empty() {
+            os.write_string(1596, &self.anniv_2_nd_concert)?;
+        }
+        if self.cdn_ipv_6_enable != 0 {
+            os.write_uint32(1605, self.cdn_ipv_6_enable)?;
+        }
+        if !self.third_privacy_in_game_url.is_empty() {
+            os.write_string(1647, &self.third_privacy_in_game_url)?;
+        }
+        if !self.i_fix_patch_revision.is_empty() {
+            os.write_string(1657, &self.i_fix_patch_revision)?;
+        }
+        if !self.anniv_3_rd_live_recorded.is_empty() {
+            os.write_string(1743, &self.anniv_3_rd_live_recorded)?;
+        }
+        if !self.custom_service_url.is_empty() {
+            os.write_string(1744, &self.custom_service_url)?;
+        }
+        if !self.asset_bundle_url_android.is_empty() {
+            os.write_string(1774, &self.asset_bundle_url_android)?;
+        }
+        if !self.rogue_tourn_h_5_url.is_empty() {
+            os.write_string(1838, &self.rogue_tourn_h_5_url)?;
+        }
+        if !self.grid_fight_game_ref_h_5_url.is_empty() {
+            os.write_string(1852, &self.grid_fight_game_ref_h_5_url)?;
+        }
+        if self.use_tcp != false {
+            os.write_bool(1871, self.use_tcp)?;
+        }
+        for v in &self.OLGOHLGJFHI {
+            os.write_string(1908, &v)?;
+        };
+        if !self.cloud_game_url.is_empty() {
+            os.write_string(1917, &self.cloud_game_url)?;
+        }
+        if !self.player_return_questionnaire_b_url.is_empty() {
+            os.write_string(1936, &self.player_return_questionnaire_b_url)?;
+        }
+        if !self.community_activity_url.is_empty() {
+            os.write_string(1976, &self.community_activity_url)?;
+        }
+        if self.forbid_recharge != false {
+            os.write_bool(1986, self.forbid_recharge)?;
+        }
+        if !self.server_description.is_empty() {
+            os.write_string(1991, &self.server_description)?;
+        }
+        if !self.ifix_url.is_empty() {
+            os.write_string(2038, &self.ifix_url)?;
+        }
+        if !self.client_secret_key.is_empty() {
+            os.write_string(2044, &self.client_secret_key)?;
+        }
+        if self.network_diagnostic != false {
+            os.write_bool(2047, self.network_diagnostic)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -548,67 +1492,185 @@ impl ::protobuf::Message for GateServer {
     }
 
     fn clear(&mut self) {
-        self.lua_url.clear();
-        self.unk1 = false;
-        self.ip.clear();
-        self.port = 0;
         self.region_name.clear();
-        self.asset_bundle_url.clear();
+        self.ip.clear();
+        self.lua_url.clear();
+        self.asb_relogin_desc.clear();
         self.ex_resource_url.clear();
-        self.unk2 = false;
-        self.asset_bundle_url_android.clear();
-        self.client_secret_key.clear();
-        self.unk3 = false;
-        self.ifix_url.clear();
-        self.unk4 = false;
+        self.port = 0;
+        self.enable_design_data_bundle_version_update = false;
+        self.stop_end_time = 0;
+        self.stop_begin_time = 0;
+        self.design_data_relogin_type = 0;
+        self.enable_video_bundle_version_update = false;
+        self.asb_relogin_type = 0;
+        self.stop_desc.clear();
         self.retcode = 0;
-        self.msg.clear();
-        self.unk5 = false;
-        self.unk6 = false;
-        self.unk7 = false;
-        self.unk8 = false;
-        self.unk9 = false;
-        self.unk10 = false;
-        self.unk11 = false;
-        self.unk12 = false;
-        self.unk13 = false;
-        self.unk14 = false;
-        self.unk15 = false;
-        self.ifix_version.clear();
-        self.mdk_res_version.clear();
+        self.asset_bundle_url.clear();
+        self.watermark_enable = false;
+        self.enable_upload_battle_log = false;
+        self.anniv_3_rd_overseas.clear();
+        self.ftc_switch = false;
+        self.operation_feedback_url.clear();
+        self.FMLPNNMJDIC = false;
+        self.redeem_code_url.clear();
+        self.rogue_tourn_build_ref_api_req_color_header_key.clear();
+        self.personal_information_in_game_url.clear();
+        self.rogue_magic_h_5_url.clear();
+        self.rogue_tourn_notice_id = 0;
+        self.rogue_tourn_notice_pic_type = 0;
+        self.anniv_3_rd_book.clear();
+        self.anniv_3_rd_live_mainpage.clear();
+        self.design_data_relogin_desc.clear();
+        self.anniv_3_rd_fes.clear();
+        self.JDMJIGDPDNB.clear();
+        self.enable_save_replay_file = false;
+        self.user_agreement_url.clear();
+        self.player_return_invite_h_5_url.clear();
+        self.official_community_url.clear();
+        self.game_start_customer_service_url.clear();
+        self.anniv_2_nd_callback.clear();
+        self.anniv_2_nd_book.clear();
+        self.grid_fight_game_ref_cdn_url.clear();
+        self.ban_appeal_url.clear();
+        self.anniv_3_rd_callback.clear();
+        self.android_middle_package_enable = false;
+        self.grid_fight_intro_h_5_url.clear();
+        self.rogue_tourn_build_ref_h_5_url.clear();
+        self.hot_point_url.clear();
+        self.login_white_msg.clear();
+        self.enable_predownload.clear();
+        self.close_redeem_code = false;
+        self.online_replay_upload_url.clear();
+        self.grid_fight_game_ref_color_header_value.clear();
+        self.web_tool_url.clear();
+        self.teenager_privacy_in_game_url.clear();
+        self.ios_exam = false;
+        self.mtp_switch = false;
+        self.rogue_tourn_build_ref_api_req_color_header_value.clear();
+        self.online_replay_download_url.clear();
+        self.temporary_maintenance_url.clear();
+        self.anniv_2_nd_os.clear();
+        self.player_return_invite_h_6_url.clear();
+        self.anniv_3_rd_live_inprogress.clear();
+        self.grid_fight_game_ref_color_header_key.clear();
+        self.privacy_in_game_url.clear();
+        self.player_return_questionnaire_a_url.clear();
+        self.rogue_tourn_build_ref_static_data_url_prefix.clear();
+        self.event_tracking_open = false;
+        self.predownload_update_url.clear();
+        self.NNFLHCGDGJM = false;
+        self.anniv_2_nd_concert.clear();
+        self.cdn_ipv_6_enable = 0;
+        self.third_privacy_in_game_url.clear();
+        self.i_fix_patch_revision.clear();
+        self.anniv_3_rd_live_recorded.clear();
+        self.custom_service_url.clear();
+        self.asset_bundle_url_android.clear();
+        self.rogue_tourn_h_5_url.clear();
+        self.grid_fight_game_ref_h_5_url.clear();
+        self.use_tcp = false;
+        self.OLGOHLGJFHI.clear();
+        self.cloud_game_url.clear();
+        self.player_return_questionnaire_b_url.clear();
+        self.community_activity_url.clear();
+        self.forbid_recharge = false;
+        self.server_description.clear();
+        self.ifix_url.clear();
+        self.client_secret_key.clear();
+        self.network_diagnostic = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GateServer {
         static instance: GateServer = GateServer {
-            lua_url: ::std::string::String::new(),
-            unk1: false,
-            ip: ::std::string::String::new(),
-            port: 0,
             region_name: ::std::string::String::new(),
-            asset_bundle_url: ::std::string::String::new(),
+            ip: ::std::string::String::new(),
+            lua_url: ::std::string::String::new(),
+            asb_relogin_desc: ::std::string::String::new(),
             ex_resource_url: ::std::string::String::new(),
-            unk2: false,
-            asset_bundle_url_android: ::std::string::String::new(),
-            client_secret_key: ::std::string::String::new(),
-            unk3: false,
-            ifix_url: ::std::string::String::new(),
-            unk4: false,
+            port: 0,
+            enable_design_data_bundle_version_update: false,
+            stop_end_time: 0,
+            stop_begin_time: 0,
+            design_data_relogin_type: 0,
+            enable_video_bundle_version_update: false,
+            asb_relogin_type: 0,
+            stop_desc: ::std::string::String::new(),
             retcode: 0,
-            msg: ::std::string::String::new(),
-            unk5: false,
-            unk6: false,
-            unk7: false,
-            unk8: false,
-            unk9: false,
-            unk10: false,
-            unk11: false,
-            unk12: false,
-            unk13: false,
-            unk14: false,
-            unk15: false,
-            ifix_version: ::std::string::String::new(),
-            mdk_res_version: ::std::string::String::new(),
+            asset_bundle_url: ::std::string::String::new(),
+            watermark_enable: false,
+            enable_upload_battle_log: false,
+            anniv_3_rd_overseas: ::std::string::String::new(),
+            ftc_switch: false,
+            operation_feedback_url: ::std::string::String::new(),
+            FMLPNNMJDIC: false,
+            redeem_code_url: ::std::string::String::new(),
+            rogue_tourn_build_ref_api_req_color_header_key: ::std::string::String::new(),
+            personal_information_in_game_url: ::std::string::String::new(),
+            rogue_magic_h_5_url: ::std::string::String::new(),
+            rogue_tourn_notice_id: 0,
+            rogue_tourn_notice_pic_type: 0,
+            anniv_3_rd_book: ::std::string::String::new(),
+            anniv_3_rd_live_mainpage: ::std::string::String::new(),
+            design_data_relogin_desc: ::std::string::String::new(),
+            anniv_3_rd_fes: ::std::string::String::new(),
+            JDMJIGDPDNB: ::std::string::String::new(),
+            enable_save_replay_file: false,
+            user_agreement_url: ::std::string::String::new(),
+            player_return_invite_h_5_url: ::std::string::String::new(),
+            official_community_url: ::std::string::String::new(),
+            game_start_customer_service_url: ::std::string::String::new(),
+            anniv_2_nd_callback: ::std::string::String::new(),
+            anniv_2_nd_book: ::std::string::String::new(),
+            grid_fight_game_ref_cdn_url: ::std::string::String::new(),
+            ban_appeal_url: ::std::string::String::new(),
+            anniv_3_rd_callback: ::std::string::String::new(),
+            android_middle_package_enable: false,
+            grid_fight_intro_h_5_url: ::std::string::String::new(),
+            rogue_tourn_build_ref_h_5_url: ::std::string::String::new(),
+            hot_point_url: ::std::string::String::new(),
+            login_white_msg: ::std::string::String::new(),
+            enable_predownload: ::std::string::String::new(),
+            close_redeem_code: false,
+            online_replay_upload_url: ::std::string::String::new(),
+            grid_fight_game_ref_color_header_value: ::std::string::String::new(),
+            web_tool_url: ::std::string::String::new(),
+            teenager_privacy_in_game_url: ::std::string::String::new(),
+            ios_exam: false,
+            mtp_switch: false,
+            rogue_tourn_build_ref_api_req_color_header_value: ::std::string::String::new(),
+            online_replay_download_url: ::std::string::String::new(),
+            temporary_maintenance_url: ::std::string::String::new(),
+            anniv_2_nd_os: ::std::string::String::new(),
+            player_return_invite_h_6_url: ::std::string::String::new(),
+            anniv_3_rd_live_inprogress: ::std::string::String::new(),
+            grid_fight_game_ref_color_header_key: ::std::string::String::new(),
+            privacy_in_game_url: ::std::string::String::new(),
+            player_return_questionnaire_a_url: ::std::string::String::new(),
+            rogue_tourn_build_ref_static_data_url_prefix: ::std::string::String::new(),
+            event_tracking_open: false,
+            predownload_update_url: ::std::string::String::new(),
+            NNFLHCGDGJM: false,
+            anniv_2_nd_concert: ::std::string::String::new(),
+            cdn_ipv_6_enable: 0,
+            third_privacy_in_game_url: ::std::string::String::new(),
+            i_fix_patch_revision: ::std::string::String::new(),
+            anniv_3_rd_live_recorded: ::std::string::String::new(),
+            custom_service_url: ::std::string::String::new(),
+            asset_bundle_url_android: ::std::string::String::new(),
+            rogue_tourn_h_5_url: ::std::string::String::new(),
+            grid_fight_game_ref_h_5_url: ::std::string::String::new(),
+            use_tcp: false,
+            OLGOHLGJFHI: ::std::vec::Vec::new(),
+            cloud_game_url: ::std::string::String::new(),
+            player_return_questionnaire_b_url: ::std::string::String::new(),
+            community_activity_url: ::std::string::String::new(),
+            forbid_recharge: false,
+            server_description: ::std::string::String::new(),
+            ifix_url: ::std::string::String::new(),
+            client_secret_key: ::std::string::String::new(),
+            network_diagnostic: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -633,29 +1695,99 @@ impl ::protobuf::reflect::ProtobufValue for GateServer {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10GateServer.proto\"\xfd\x05\n\nGateServer\x12\x17\n\x07lua_url\x18\
-    \x01\x20\x01(\tR\x06luaUrl\x12\x12\n\x04unk1\x18\x03\x20\x01(\x08R\x04un\
-    k1\x12\x0e\n\x02ip\x18\x04\x20\x01(\tR\x02ip\x12\x12\n\x04port\x18\x06\
-    \x20\x01(\rR\x04port\x12\x1f\n\x0bregion_name\x18\x07\x20\x01(\tR\nregio\
-    nName\x12(\n\x10asset_bundle_url\x18\n\x20\x01(\tR\x0eassetBundleUrl\x12\
-    &\n\x0fex_resource_url\x18\x0b\x20\x01(\tR\rexResourceUrl\x12\x12\n\x04u\
-    nk2\x18\r\x20\x01(\x08R\x04unk2\x127\n\x18asset_bundle_url_android\x18;\
-    \x20\x01(\tR\x15assetBundleUrlAndroid\x12+\n\x11client_secret_key\x18\
-    \xd0\x01\x20\x01(\tR\x0fclientSecretKey\x12\x13\n\x04unk3\x18\xb1\x02\
-    \x20\x01(\x08R\x04unk3\x12\x1a\n\x08ifix_url\x18\xe2\x02\x20\x01(\tR\x07\
-    ifixUrl\x12\x13\n\x04unk4\x18\x96\x07\x20\x01(\x08R\x04unk4\x12\x18\n\
-    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x11\n\x03msg\x18\x84\x06\
-    \x20\x01(\tR\x03msg\x12\x13\n\x04unk5\x18\xd1\x06\x20\x01(\x08R\x04unk5\
-    \x12\x13\n\x04unk6\x18\xf8\x07\x20\x01(\x08R\x04unk6\x12\x13\n\x04unk7\
-    \x18\x9e\x08\x20\x01(\x08R\x04unk7\x12\x13\n\x04unk8\x18\xae\t\x20\x01(\
-    \x08R\x04unk8\x12\x13\n\x04unk9\x18\xb9\t\x20\x01(\x08R\x04unk9\x12\x15\
-    \n\x05unk10\x18\xeb\x0f\x20\x01(\x08R\x05unk10\x12\x15\n\x05unk11\x18\
-    \xc6\x06\x20\x01(\x08R\x05unk11\x12\x15\n\x05unk12\x18\xec\x04\x20\x01(\
-    \x08R\x05unk12\x12\x15\n\x05unk13\x18\xd2\x08\x20\x01(\x08R\x05unk13\x12\
-    \x15\n\x05unk14\x18\x88\x06\x20\x01(\x08R\x05unk14\x12\x15\n\x05unk15\
-    \x18\xc7\x07\x20\x01(\x08R\x05unk15\x12\"\n\x0cifix_version\x18\xcf\x08\
-    \x20\x01(\tR\x0bifixVersion\x12'\n\x0fmdk_res_version\x18\xe8\x0f\x20\
-    \x01(\tR\rmdkResVersionb\x06proto3\
+    \n\x10GateServer.proto\"\xbc\"\n\nGateServer\x12\x1f\n\x0bregion_name\
+    \x18\x01\x20\x01(\tR\nregionName\x12\x0e\n\x02ip\x18\x02\x20\x01(\tR\x02\
+    ip\x12\x17\n\x07lua_url\x18\x03\x20\x01(\tR\x06luaUrl\x12(\n\x10asb_relo\
+    gin_desc\x18\x04\x20\x01(\tR\x0easbReloginDesc\x12&\n\x0fex_resource_url\
+    \x18\x05\x20\x01(\tR\rexResourceUrl\x12\x12\n\x04port\x18\x06\x20\x01(\r\
+    R\x04port\x12U\n(enable_design_data_bundle_version_update\x18\x07\x20\
+    \x01(\x08R#enableDesignDataBundleVersionUpdate\x12\"\n\rstop_end_time\
+    \x18\x08\x20\x01(\x03R\x0bstopEndTime\x12&\n\x0fstop_begin_time\x18\t\
+    \x20\x01(\x03R\rstopBeginTime\x127\n\x18design_data_relogin_type\x18\n\
+    \x20\x01(\rR\x15designDataReloginType\x12J\n\"enable_video_bundle_versio\
+    n_update\x18\x0b\x20\x01(\x08R\x1eenableVideoBundleVersionUpdate\x12(\n\
+    \x10asb_relogin_type\x18\x0c\x20\x01(\rR\x0easbReloginType\x12\x1b\n\tst\
+    op_desc\x18\r\x20\x01(\tR\x08stopDesc\x12\x18\n\x07retcode\x18\x0e\x20\
+    \x01(\rR\x07retcode\x12(\n\x10asset_bundle_url\x18\x0f\x20\x01(\tR\x0eas\
+    setBundleUrl\x12)\n\x10watermark_enable\x180\x20\x01(\x08R\x0fwatermarkE\
+    nable\x127\n\x18enable_upload_battle_log\x18E\x20\x01(\x08R\x15enableUpl\
+    oadBattleLog\x12-\n\x13anniv_3_rd_overseas\x18j\x20\x01(\tR\x10anniv3RdO\
+    verseas\x12\x1e\n\nftc_switch\x18\x94\x01\x20\x01(\x08R\tftcSwitch\x125\
+    \n\x16operation_feedback_url\x18\x9f\x01\x20\x01(\tR\x14operationFeedbac\
+    kUrl\x12!\n\x0bFMLPNNMJDIC\x18\xf1\x01\x20\x01(\x08R\x0bFMLPNNMJDIC\x12'\
+    \n\x0fredeem_code_url\x18\x8a\x02\x20\x01(\tR\rredeemCodeUrl\x12_\n.rogu\
+    e_tourn_build_ref_api_req_color_header_key\x18\x8c\x02\x20\x01(\tR&rogue\
+    TournBuildRefApiReqColorHeaderKey\x12G\n\x20personal_information_in_game\
+    _url\x18\xa9\x02\x20\x01(\tR\x1cpersonalInformationInGameUrl\x12-\n\x13r\
+    ogue_magic_h_5_url\x18\xb6\x02\x20\x01(\tR\x0frogueMagicH5Url\x122\n\x15\
+    rogue_tourn_notice_id\x18\xcf\x02\x20\x01(\rR\x12rogueTournNoticeId\x12=\
+    \n\x1brogue_tourn_notice_pic_type\x18\xda\x02\x20\x01(\rR\x17rogueTournN\
+    oticePicType\x12&\n\x0fanniv_3_rd_book\x18\xe8\x02\x20\x01(\tR\x0canniv3\
+    RdBook\x127\n\x18anniv_3_rd_live_mainpage\x18\xeb\x02\x20\x01(\tR\x14ann\
+    iv3RdLiveMainpage\x128\n\x18design_data_relogin_desc\x18\xf3\x02\x20\x01\
+    (\tR\x15designDataReloginDesc\x12$\n\x0eanniv_3_rd_fes\x18\xb9\x03\x20\
+    \x01(\tR\x0banniv3RdFes\x12!\n\x0bJDMJIGDPDNB\x18\xd4\x03\x20\x01(\tR\
+    \x0bJDMJIGDPDNB\x126\n\x17enable_save_replay_file\x18\xe7\x03\x20\x01(\
+    \x08R\x14enableSaveReplayFile\x12-\n\x12user_agreement_url\x18\xee\x03\
+    \x20\x01(\tR\x10userAgreementUrl\x12>\n\x1cplayer_return_invite_h_5_url\
+    \x18\xf5\x03\x20\x01(\tR\x17playerReturnInviteH5Url\x125\n\x16official_c\
+    ommunity_url\x18\x8b\x04\x20\x01(\tR\x14officialCommunityUrl\x12E\n\x1fg\
+    ame_start_customer_service_url\x18\x9c\x04\x20\x01(\tR\x1bgameStartCusto\
+    merServiceUrl\x12.\n\x13anniv_2_nd_callback\x18\x9f\x04\x20\x01(\tR\x10a\
+    nniv2NdCallback\x12&\n\x0fanniv_2_nd_book\x18\xa2\x04\x20\x01(\tR\x0cann\
+    iv2NdBook\x12<\n\x1bgrid_fight_game_ref_cdn_url\x18\xa7\x04\x20\x01(\tR\
+    \x16gridFightGameRefCdnUrl\x12%\n\x0eban_appeal_url\x18\x92\x05\x20\x01(\
+    \tR\x0cbanAppealUrl\x12.\n\x13anniv_3_rd_callback\x18\xbb\x05\x20\x01(\t\
+    R\x10anniv3RdCallback\x12B\n\x1dandroid_middle_package_enable\x18\xd6\
+    \x05\x20\x01(\x08R\x1aandroidMiddlePackageEnable\x126\n\x18grid_fight_in\
+    tro_h_5_url\x18\xe7\x05\x20\x01(\tR\x13gridFightIntroH5Url\x12?\n\x1drog\
+    ue_tourn_build_ref_h_5_url\x18\x80\x06\x20\x01(\tR\x17rogueTournBuildRef\
+    H5Url\x12#\n\rhot_point_url\x18\x90\x06\x20\x01(\tR\x0bhotPointUrl\x12'\
+    \n\x0flogin_white_msg\x18\x96\x06\x20\x01(\tR\rloginWhiteMsg\x12.\n\x12e\
+    nable_predownload\x18\x9c\x06\x20\x01(\tR\x11enablePredownload\x12+\n\
+    \x11close_redeem_code\x18\x87\x07\x20\x01(\x08R\x0fcloseRedeemCode\x128\
+    \n\x18online_replay_upload_url\x18\xab\x07\x20\x01(\tR\x15onlineReplayUp\
+    loadUrl\x12Q\n&grid_fight_game_ref_color_header_value\x18\xb2\x07\x20\
+    \x01(\tR\x20gridFightGameRefColorHeaderValue\x12!\n\x0cweb_tool_url\x18\
+    \xd6\x07\x20\x01(\tR\nwebToolUrl\x12?\n\x1cteenager_privacy_in_game_url\
+    \x18\xdd\x07\x20\x01(\tR\x18teenagerPrivacyInGameUrl\x12\x1a\n\x08ios_ex\
+    am\x18\xfd\x07\x20\x01(\x08R\x07iosExam\x12\x1e\n\nmtp_switch\x18\x95\
+    \x08\x20\x01(\x08R\tmtpSwitch\x12c\n0rogue_tourn_build_ref_api_req_color\
+    _header_value\x18\xa5\x08\x20\x01(\tR(rogueTournBuildRefApiReqColorHeade\
+    rValue\x12<\n\x1aonline_replay_download_url\x18\x8a\t\x20\x01(\tR\x17onl\
+    ineReplayDownloadUrl\x12;\n\x19temporary_maintenance_url\x18\xb6\t\x20\
+    \x01(\tR\x17temporaryMaintenanceUrl\x12\"\n\ranniv_2_nd_os\x18\x88\n\x20\
+    \x01(\tR\nanniv2NdOs\x12>\n\x1cplayer_return_invite_h_6_url\x18\x95\n\
+    \x20\x01(\tR\x17playerReturnInviteH6Url\x12;\n\x1aanniv_3_rd_live_inprog\
+    ress\x18\xa4\n\x20\x01(\tR\x16anniv3RdLiveInprogress\x12M\n$grid_fight_g\
+    ame_ref_color_header_key\x18\xbc\n\x20\x01(\tR\x1egridFightGameRefColorH\
+    eaderKey\x12.\n\x13privacy_in_game_url\x18\x9f\x0b\x20\x01(\tR\x10privac\
+    yInGameUrl\x12I\n!player_return_questionnaire_a_url\x18\xb2\x0b\x20\x01(\
+    \tR\x1dplayerReturnQuestionnaireAUrl\x12\\\n,rogue_tourn_build_ref_stati\
+    c_data_url_prefix\x18\xbc\x0b\x20\x01(\tR%rogueTournBuildRefStaticDataUr\
+    lPrefix\x12/\n\x13event_tracking_open\x18\xeb\x0b\x20\x01(\x08R\x11event\
+    TrackingOpen\x125\n\x16predownload_update_url\x18\x91\x0c\x20\x01(\tR\
+    \x14predownloadUpdateUrl\x12!\n\x0bNNFLHCGDGJM\x18\xa0\x0c\x20\x01(\x08R\
+    \x0bNNFLHCGDGJM\x12,\n\x12anniv_2_nd_concert\x18\xbc\x0c\x20\x01(\tR\x0f\
+    anniv2NdConcert\x12(\n\x10cdn_ipv_6_enable\x18\xc5\x0c\x20\x01(\rR\rcdnI\
+    pv6Enable\x129\n\x19third_privacy_in_game_url\x18\xef\x0c\x20\x01(\tR\
+    \x15thirdPrivacyInGameUrl\x120\n\x14i_fix_patch_revision\x18\xf9\x0c\x20\
+    \x01(\tR\x11iFixPatchRevision\x127\n\x18anniv_3_rd_live_recorded\x18\xcf\
+    \r\x20\x01(\tR\x14anniv3RdLiveRecorded\x12-\n\x12custom_service_url\x18\
+    \xd0\r\x20\x01(\tR\x10customServiceUrl\x128\n\x18asset_bundle_url_androi\
+    d\x18\xee\r\x20\x01(\tR\x15assetBundleUrlAndroid\x12-\n\x13rogue_tourn_h\
+    _5_url\x18\xae\x0e\x20\x01(\tR\x0frogueTournH5Url\x12;\n\x1bgrid_fight_g\
+    ame_ref_h_5_url\x18\xbc\x0e\x20\x01(\tR\x15gridFightGameRefH5Url\x12\x18\
+    \n\x07use_tcp\x18\xcf\x0e\x20\x01(\x08R\x06useTcp\x12!\n\x0bOLGOHLGJFHI\
+    \x18\xf4\x0e\x20\x03(\tR\x0bOLGOHLGJFHI\x12%\n\x0ecloud_game_url\x18\xfd\
+    \x0e\x20\x01(\tR\x0ccloudGameUrl\x12I\n!player_return_questionnaire_b_ur\
+    l\x18\x90\x0f\x20\x01(\tR\x1dplayerReturnQuestionnaireBUrl\x125\n\x16com\
+    munity_activity_url\x18\xb8\x0f\x20\x01(\tR\x14communityActivityUrl\x12(\
+    \n\x0fforbid_recharge\x18\xc2\x0f\x20\x01(\x08R\x0eforbidRecharge\x12.\n\
+    \x12server_description\x18\xc7\x0f\x20\x01(\tR\x11serverDescription\x12\
+    \x1a\n\x08ifix_url\x18\xf6\x0f\x20\x01(\tR\x07ifixUrl\x12+\n\x11client_s\
+    ecret_key\x18\xfc\x0f\x20\x01(\tR\x0fclientSecretKey\x12.\n\x12network_d\
+    iagnostic\x18\xff\x0f\x20\x01(\x08R\x11networkDiagnosticb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

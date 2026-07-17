@@ -72,10 +72,10 @@ impl ::protobuf::Message for HINIJKGDDBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_trait_info)?;
                 },
-                40 => {
+                32 => {
                     self.grid_fight_trait_info.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for HINIJKGDDBI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.grid_fight_trait_info);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.grid_fight_trait_info);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.grid_fight_trait_info)?;
+        os.write_repeated_packed_uint32(4, &self.grid_fight_trait_info)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for HINIJKGDDBI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HINIJKGDDBI.proto\"@\n\x0bHINIJKGDDBI\x121\n\x15grid_fight_trait_i\
-    nfo\x18\x05\x20\x03(\rR\x12gridFightTraitInfob\x06proto3\
+    nfo\x18\x04\x20\x03(\rR\x12gridFightTraitInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

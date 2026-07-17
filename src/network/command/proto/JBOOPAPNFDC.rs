@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBOOPAPNFDC {
     // message fields
+    // @@protoc_insertion_point(field:JBOOPAPNFDC.CIBONIOHELB)
+    pub CIBONIOHELB: bool,
     // @@protoc_insertion_point(field:JBOOPAPNFDC.CGAFCMIAKLI)
     pub CGAFCMIAKLI: ::std::vec::Vec<u32>,
     // special fields
@@ -47,8 +49,13 @@ impl JBOOPAPNFDC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIBONIOHELB",
+            |m: &JBOOPAPNFDC| { &m.CIBONIOHELB },
+            |m: &mut JBOOPAPNFDC| { &mut m.CIBONIOHELB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CGAFCMIAKLI",
             |m: &JBOOPAPNFDC| { &m.CGAFCMIAKLI },
@@ -72,10 +79,13 @@ impl ::protobuf::Message for JBOOPAPNFDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                40 => {
+                    self.CIBONIOHELB = is.read_bool()?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.CGAFCMIAKLI)?;
                 },
-                40 => {
+                96 => {
                     self.CGAFCMIAKLI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +100,20 @@ impl ::protobuf::Message for JBOOPAPNFDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.CGAFCMIAKLI);
+        if self.CIBONIOHELB != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CGAFCMIAKLI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.CGAFCMIAKLI)?;
+        if self.CIBONIOHELB != false {
+            os.write_bool(5, self.CIBONIOHELB)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.CGAFCMIAKLI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,12 +131,14 @@ impl ::protobuf::Message for JBOOPAPNFDC {
     }
 
     fn clear(&mut self) {
+        self.CIBONIOHELB = false;
         self.CGAFCMIAKLI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JBOOPAPNFDC {
         static instance: JBOOPAPNFDC = JBOOPAPNFDC {
+            CIBONIOHELB: false,
             CGAFCMIAKLI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -146,8 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for JBOOPAPNFDC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JBOOPAPNFDC.proto\"/\n\x0bJBOOPAPNFDC\x12\x20\n\x0bCGAFCMIAKLI\x18\
-    \x05\x20\x03(\rR\x0bCGAFCMIAKLIb\x06proto3\
+    \n\x11JBOOPAPNFDC.proto\"Q\n\x0bJBOOPAPNFDC\x12\x20\n\x0bCIBONIOHELB\x18\
+    \x05\x20\x01(\x08R\x0bCIBONIOHELB\x12\x20\n\x0bCGAFCMIAKLI\x18\x0c\x20\
+    \x03(\rR\x0bCGAFCMIAKLIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

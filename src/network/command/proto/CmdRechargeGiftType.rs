@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRechargeGiftType {
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_NLCDGIPGFDJ)
     OOCIMJEDCHK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_MFNAHHMMGNK)
-    OOCIMJEDCHK_MFNAHHMMGNK = 8376,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_FNCLAPFKLCI)
+    OOCIMJEDCHK_FNCLAPFKLCI = 8377,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_DOIMOMMDEGJ)
-    OOCIMJEDCHK_DOIMOMMDEGJ = 8374,
+    OOCIMJEDCHK_DOIMOMMDEGJ = 8364,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_MFNAHHMMGNK)
+    OOCIMJEDCHK_MFNAHHMMGNK = 8363,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_GLAMIHDHHCC)
     OOCIMJEDCHK_GLAMIHDHHCC = 8362,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_FNCLAPFKLCI)
-    OOCIMJEDCHK_FNCLAPFKLCI = 8379,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_LBDOOLDNLIE)
-    OOCIMJEDCHK_LBDOOLDNLIE = 8364,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_IDPBCHCHIFN)
+    OOCIMJEDCHK_IDPBCHCHIFN = 8372,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_DIAEHNNMAOM)
+    OOCIMJEDCHK_DIAEHNNMAOM = 8368,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_KFKCLHJNNHP)
     OOCIMJEDCHK_KFKCLHJNNHP = 8378,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_IDPBCHCHIFN)
-    OOCIMJEDCHK_IDPBCHCHIFN = 8380,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_LBDOOLDNLIE)
+    OOCIMJEDCHK_LBDOOLDNLIE = 8371,
     // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_NHDCDBDGGFJ)
-    OOCIMJEDCHK_NHDCDBDGGFJ = 8372,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.OOCIMJEDCHK_DIAEHNNMAOM)
-    OOCIMJEDCHK_DIAEHNNMAOM = 8366,
+    OOCIMJEDCHK_NHDCDBDGGFJ = 8365,
 }
 
 impl ::protobuf::Enum for CmdRechargeGiftType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRechargeGiftType> {
         match value {
             0 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NLCDGIPGFDJ),
-            8376 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK),
-            8374 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ),
+            8377 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI),
+            8364 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ),
+            8363 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK),
             8362 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC),
-            8379 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI),
-            8364 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE),
+            8372 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN),
+            8368 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM),
             8378 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP),
-            8380 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN),
-            8372 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ),
-            8366 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM),
+            8371 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE),
+            8365 => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ),
             _ => ::std::option::Option::None
         }
     }
@@ -75,30 +75,30 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRechargeGiftType> {
         match str {
             "OOCIMJEDCHK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NLCDGIPGFDJ),
-            "OOCIMJEDCHK_MFNAHHMMGNK" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK),
-            "OOCIMJEDCHK_DOIMOMMDEGJ" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ),
-            "OOCIMJEDCHK_GLAMIHDHHCC" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC),
             "OOCIMJEDCHK_FNCLAPFKLCI" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI),
-            "OOCIMJEDCHK_LBDOOLDNLIE" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE),
-            "OOCIMJEDCHK_KFKCLHJNNHP" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP),
+            "OOCIMJEDCHK_DOIMOMMDEGJ" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ),
+            "OOCIMJEDCHK_MFNAHHMMGNK" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK),
+            "OOCIMJEDCHK_GLAMIHDHHCC" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC),
             "OOCIMJEDCHK_IDPBCHCHIFN" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN),
-            "OOCIMJEDCHK_NHDCDBDGGFJ" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ),
             "OOCIMJEDCHK_DIAEHNNMAOM" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM),
+            "OOCIMJEDCHK_KFKCLHJNNHP" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP),
+            "OOCIMJEDCHK_LBDOOLDNLIE" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE),
+            "OOCIMJEDCHK_NHDCDBDGGFJ" => ::std::option::Option::Some(CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRechargeGiftType] = &[
         CmdRechargeGiftType::OOCIMJEDCHK_NLCDGIPGFDJ,
-        CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK,
-        CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ,
-        CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC,
         CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI,
-        CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE,
-        CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP,
+        CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ,
+        CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK,
+        CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC,
         CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN,
-        CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ,
         CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM,
+        CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP,
+        CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE,
+        CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ,
     ];
 }
 
@@ -111,15 +111,15 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRechargeGiftType::OOCIMJEDCHK_NLCDGIPGFDJ => 0,
-            CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK => 1,
+            CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI => 1,
             CmdRechargeGiftType::OOCIMJEDCHK_DOIMOMMDEGJ => 2,
-            CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC => 3,
-            CmdRechargeGiftType::OOCIMJEDCHK_FNCLAPFKLCI => 4,
-            CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE => 5,
-            CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP => 6,
-            CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN => 7,
-            CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ => 8,
-            CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM => 9,
+            CmdRechargeGiftType::OOCIMJEDCHK_MFNAHHMMGNK => 3,
+            CmdRechargeGiftType::OOCIMJEDCHK_GLAMIHDHHCC => 4,
+            CmdRechargeGiftType::OOCIMJEDCHK_IDPBCHCHIFN => 5,
+            CmdRechargeGiftType::OOCIMJEDCHK_DIAEHNNMAOM => 6,
+            CmdRechargeGiftType::OOCIMJEDCHK_KFKCLHJNNHP => 7,
+            CmdRechargeGiftType::OOCIMJEDCHK_LBDOOLDNLIE => 8,
+            CmdRechargeGiftType::OOCIMJEDCHK_NHDCDBDGGFJ => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,13 +139,13 @@ impl CmdRechargeGiftType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdRechargeGiftType.proto*\xc0\x02\n\x13CmdRechargeGiftType\x12\
-    \x1b\n\x17OOCIMJEDCHK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OOCIMJEDCHK_MFNAHHM\
-    MGNK\x10\xb8A\x12\x1c\n\x17OOCIMJEDCHK_DOIMOMMDEGJ\x10\xb6A\x12\x1c\n\
-    \x17OOCIMJEDCHK_GLAMIHDHHCC\x10\xaaA\x12\x1c\n\x17OOCIMJEDCHK_FNCLAPFKLC\
-    I\x10\xbbA\x12\x1c\n\x17OOCIMJEDCHK_LBDOOLDNLIE\x10\xacA\x12\x1c\n\x17OO\
-    CIMJEDCHK_KFKCLHJNNHP\x10\xbaA\x12\x1c\n\x17OOCIMJEDCHK_IDPBCHCHIFN\x10\
-    \xbcA\x12\x1c\n\x17OOCIMJEDCHK_NHDCDBDGGFJ\x10\xb4A\x12\x1c\n\x17OOCIMJE\
-    DCHK_DIAEHNNMAOM\x10\xaeAb\x06proto3\
+    \x1b\n\x17OOCIMJEDCHK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OOCIMJEDCHK_FNCLAPF\
+    KLCI\x10\xb9A\x12\x1c\n\x17OOCIMJEDCHK_DOIMOMMDEGJ\x10\xacA\x12\x1c\n\
+    \x17OOCIMJEDCHK_MFNAHHMMGNK\x10\xabA\x12\x1c\n\x17OOCIMJEDCHK_GLAMIHDHHC\
+    C\x10\xaaA\x12\x1c\n\x17OOCIMJEDCHK_IDPBCHCHIFN\x10\xb4A\x12\x1c\n\x17OO\
+    CIMJEDCHK_DIAEHNNMAOM\x10\xb0A\x12\x1c\n\x17OOCIMJEDCHK_KFKCLHJNNHP\x10\
+    \xbaA\x12\x1c\n\x17OOCIMJEDCHK_LBDOOLDNLIE\x10\xb3A\x12\x1c\n\x17OOCIMJE\
+    DCHK_NHDCDBDGGFJ\x10\xadAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

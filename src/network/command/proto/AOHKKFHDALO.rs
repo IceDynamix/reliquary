@@ -27,9 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:AOHKKFHDALO)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOHKKFHDALO {
-    // message fields
-    // @@protoc_insertion_point(field:AOHKKFHDALO.role_star)
-    pub role_star: u32,
+    // message oneof groups
+    pub NEBNJDMFELO: ::std::option::Option<aohkkfhdalo::NEBNJDMFELO>,
     // special fields
     // @@protoc_insertion_point(special_field:AOHKKFHDALO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +45,72 @@ impl AOHKKFHDALO {
         ::std::default::Default::default()
     }
 
+    // uint32 role_star = 101;
+
+    pub fn role_star(&self) -> u32 {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::RoleStar(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_role_star(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_role_star(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::RoleStar(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_role_star(&mut self, v: u32) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::RoleStar(v))
+    }
+
+    // uint32 PIHGNNMBCEJ = 102;
+
+    pub fn PIHGNNMBCEJ(&self) -> u32 {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_PIHGNNMBCEJ(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_PIHGNNMBCEJ(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_PIHGNNMBCEJ(&mut self, v: u32) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "role_star",
-            |m: &AOHKKFHDALO| { &m.role_star },
-            |m: &mut AOHKKFHDALO| { &mut m.role_star },
+            AOHKKFHDALO::has_role_star,
+            AOHKKFHDALO::role_star,
+            AOHKKFHDALO::set_role_star,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "PIHGNNMBCEJ",
+            AOHKKFHDALO::has_PIHGNNMBCEJ,
+            AOHKKFHDALO::PIHGNNMBCEJ,
+            AOHKKFHDALO::set_PIHGNNMBCEJ,
+        ));
+        oneofs.push(aohkkfhdalo::NEBNJDMFELO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOHKKFHDALO>(
             "AOHKKFHDALO",
             fields,
@@ -73,7 +130,10 @@ impl ::protobuf::Message for AOHKKFHDALO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 808 => {
-                    self.role_star = is.read_uint32()?;
+                    self.NEBNJDMFELO = ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::RoleStar(is.read_uint32()?));
+                },
+                816 => {
+                    self.NEBNJDMFELO = ::std::option::Option::Some(aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +147,15 @@ impl ::protobuf::Message for AOHKKFHDALO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(101, self.role_star);
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
+            match v {
+                &aohkkfhdalo::NEBNJDMFELO::RoleStar(v) => {
+                    my_size += ::protobuf::rt::uint32_size(101, v);
+                },
+                &aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(v) => {
+                    my_size += ::protobuf::rt::uint32_size(102, v);
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +163,15 @@ impl ::protobuf::Message for AOHKKFHDALO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.role_star != 0 {
-            os.write_uint32(101, self.role_star)?;
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
+            match v {
+                &aohkkfhdalo::NEBNJDMFELO::RoleStar(v) => {
+                    os.write_uint32(101, v)?;
+                },
+                &aohkkfhdalo::NEBNJDMFELO::PIHGNNMBCEJ(v) => {
+                    os.write_uint32(102, v)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +190,14 @@ impl ::protobuf::Message for AOHKKFHDALO {
     }
 
     fn clear(&mut self) {
-        self.role_star = 0;
+        self.NEBNJDMFELO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOHKKFHDALO {
         static instance: AOHKKFHDALO = AOHKKFHDALO {
-            role_star: 0,
+            NEBNJDMFELO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +221,40 @@ impl ::protobuf::reflect::ProtobufValue for AOHKKFHDALO {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `AOHKKFHDALO`
+pub mod aohkkfhdalo {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:AOHKKFHDALO.NEBNJDMFELO)
+    pub enum NEBNJDMFELO {
+        // @@protoc_insertion_point(oneof_field:AOHKKFHDALO.role_star)
+        RoleStar(u32),
+        // @@protoc_insertion_point(oneof_field:AOHKKFHDALO.PIHGNNMBCEJ)
+        PIHGNNMBCEJ(u32),
+    }
+
+    impl ::protobuf::Oneof for NEBNJDMFELO {
+    }
+
+    impl ::protobuf::OneofFull for NEBNJDMFELO {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::AOHKKFHDALO as ::protobuf::MessageFull>::descriptor().oneof_by_name("NEBNJDMFELO").unwrap()).clone()
+        }
+    }
+
+    impl NEBNJDMFELO {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NEBNJDMFELO>("NEBNJDMFELO")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOHKKFHDALO.proto\"*\n\x0bAOHKKFHDALO\x12\x1b\n\trole_star\x18e\
-    \x20\x01(\rR\x08roleStarb\x06proto3\
+    \n\x11AOHKKFHDALO.proto\"_\n\x0bAOHKKFHDALO\x12\x1d\n\trole_star\x18e\
+    \x20\x01(\rH\0R\x08roleStar\x12\"\n\x0bPIHGNNMBCEJ\x18f\x20\x01(\rH\0R\
+    \x0bPIHGNNMBCEJB\r\n\x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

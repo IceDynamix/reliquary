@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOFMGCNIMIN {
     // message fields
-    // @@protoc_insertion_point(field:KOFMGCNIMIN.HFCJPCKONIF)
-    pub HFCJPCKONIF: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:KOFMGCNIMIN.DGGCFDKJDPO)
     pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:KOFMGCNIMIN.total_count)
+    pub total_count: u32,
     // @@protoc_insertion_point(field:KOFMGCNIMIN.LJCEOGPOGBE)
     pub LJCEOGPOGBE: u32,
-    // @@protoc_insertion_point(field:KOFMGCNIMIN.AADNIFFHHDD)
-    pub AADNIFFHHDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KOFMGCNIMIN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,27 +51,22 @@ impl KOFMGCNIMIN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "HFCJPCKONIF",
-            |m: &KOFMGCNIMIN| { &m.HFCJPCKONIF },
-            |m: &mut KOFMGCNIMIN| { &mut m.HFCJPCKONIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DGGCFDKJDPO",
             |m: &KOFMGCNIMIN| { &m.DGGCFDKJDPO },
             |m: &mut KOFMGCNIMIN| { &mut m.DGGCFDKJDPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_count",
+            |m: &KOFMGCNIMIN| { &m.total_count },
+            |m: &mut KOFMGCNIMIN| { &mut m.total_count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJCEOGPOGBE",
             |m: &KOFMGCNIMIN| { &m.LJCEOGPOGBE },
             |m: &mut KOFMGCNIMIN| { &mut m.LJCEOGPOGBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AADNIFFHHDD",
-            |m: &KOFMGCNIMIN| { &m.AADNIFFHHDD },
-            |m: &mut KOFMGCNIMIN| { &mut m.AADNIFFHHDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KOFMGCNIMIN>(
             "KOFMGCNIMIN",
@@ -93,29 +86,14 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.HFCJPCKONIF.insert(key, value);
-                },
-                72 => {
+                32 => {
                     self.DGGCFDKJDPO = is.read_uint32()?;
+                },
+                80 => {
+                    self.total_count = is.read_uint32()?;
                 },
                 96 => {
                     self.LJCEOGPOGBE = is.read_uint32()?;
-                },
-                8 => {
-                    self.AADNIFFHHDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,20 +107,14 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.HFCJPCKONIF {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
         if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DGGCFDKJDPO);
+            my_size += ::protobuf::rt::uint32_size(4, self.DGGCFDKJDPO);
+        }
+        if self.total_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.total_count);
         }
         if self.LJCEOGPOGBE != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.LJCEOGPOGBE);
-        }
-        if self.AADNIFFHHDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.AADNIFFHHDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,23 +122,14 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.HFCJPCKONIF {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
         if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(9, self.DGGCFDKJDPO)?;
+            os.write_uint32(4, self.DGGCFDKJDPO)?;
+        }
+        if self.total_count != 0 {
+            os.write_uint32(10, self.total_count)?;
         }
         if self.LJCEOGPOGBE != 0 {
             os.write_uint32(12, self.LJCEOGPOGBE)?;
-        }
-        if self.AADNIFFHHDD != 0 {
-            os.write_uint32(1, self.AADNIFFHHDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,16 +148,20 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     }
 
     fn clear(&mut self) {
-        self.HFCJPCKONIF.clear();
         self.DGGCFDKJDPO = 0;
+        self.total_count = 0;
         self.LJCEOGPOGBE = 0;
-        self.AADNIFFHHDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOFMGCNIMIN {
-        static instance: ::protobuf::rt::Lazy<KOFMGCNIMIN> = ::protobuf::rt::Lazy::new();
-        instance.get(KOFMGCNIMIN::new)
+        static instance: KOFMGCNIMIN = KOFMGCNIMIN {
+            DGGCFDKJDPO: 0,
+            total_count: 0,
+            LJCEOGPOGBE: 0,
+            special_fields: ::protobuf::SpecialFields::new(),
+        };
+        &instance
     }
 }
 
@@ -216,13 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KOFMGCNIMIN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KOFMGCNIMIN.proto\"\xf4\x01\n\x0bKOFMGCNIMIN\x12?\n\x0bHFCJPCKONIF\
-    \x18\x0b\x20\x03(\x0b2\x1d.KOFMGCNIMIN.HFCJPCKONIFEntryR\x0bHFCJPCKONIF\
-    \x12\x20\n\x0bDGGCFDKJDPO\x18\t\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0b\
-    LJCEOGPOGBE\x18\x0c\x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bAADNIFFHHDD\
-    \x18\x01\x20\x01(\rR\x0bAADNIFFHHDD\x1a>\n\x10HFCJPCKONIFEntry\x12\x10\n\
-    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
-    R\x05value:\x028\x01b\x06proto3\
+    \n\x11KOFMGCNIMIN.proto\"r\n\x0bKOFMGCNIMIN\x12\x20\n\x0bDGGCFDKJDPO\x18\
+    \x04\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x1f\n\x0btotal_count\x18\n\x20\x01(\
+    \rR\ntotalCount\x12\x20\n\x0bLJCEOGPOGBE\x18\x0c\x20\x01(\rR\x0bLJCEOGPO\
+    GBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

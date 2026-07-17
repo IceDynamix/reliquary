@@ -86,13 +86,13 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.MGBHJPPJHEA = is.read_uint32()?;
                 },
-                120 => {
+                64 => {
                     self.BPCOIOLGEMK = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.GIIIFDGFJPG = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MGBHJPPJHEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MGBHJPPJHEA);
+            my_size += ::protobuf::rt::uint32_size(3, self.MGBHJPPJHEA);
         }
         if self.BPCOIOLGEMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BPCOIOLGEMK);
+            my_size += ::protobuf::rt::uint32_size(8, self.BPCOIOLGEMK);
         }
         if self.GIIIFDGFJPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GIIIFDGFJPG);
+            my_size += ::protobuf::rt::uint32_size(10, self.GIIIFDGFJPG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MGBHJPPJHEA != 0 {
-            os.write_uint32(7, self.MGBHJPPJHEA)?;
+            os.write_uint32(3, self.MGBHJPPJHEA)?;
         }
         if self.BPCOIOLGEMK != 0 {
-            os.write_uint32(15, self.BPCOIOLGEMK)?;
+            os.write_uint32(8, self.BPCOIOLGEMK)?;
         }
         if self.GIIIFDGFJPG != 0 {
-            os.write_uint32(5, self.GIIIFDGFJPG)?;
+            os.write_uint32(10, self.GIIIFDGFJPG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordDataChangeNotify.proto\"\x80\x01\n\x18PunkLordDataChangeNo\
-    tify\x12\x20\n\x0bMGBHJPPJHEA\x18\x07\x20\x01(\rR\x0bMGBHJPPJHEA\x12\x20\
-    \n\x0bBPCOIOLGEMK\x18\x0f\x20\x01(\rR\x0bBPCOIOLGEMK\x12\x20\n\x0bGIIIFD\
-    GFJPG\x18\x05\x20\x01(\rR\x0bGIIIFDGFJPGb\x06proto3\
+    tify\x12\x20\n\x0bMGBHJPPJHEA\x18\x03\x20\x01(\rR\x0bMGBHJPPJHEA\x12\x20\
+    \n\x0bBPCOIOLGEMK\x18\x08\x20\x01(\rR\x0bBPCOIOLGEMK\x12\x20\n\x0bGIIIFD\
+    GFJPG\x18\n\x20\x01(\rR\x0bGIIIFDGFJPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

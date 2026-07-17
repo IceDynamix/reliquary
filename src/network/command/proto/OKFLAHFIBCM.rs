@@ -28,44 +28,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKFLAHFIBCM {
     // message fields
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.EABKOHGCHFP)
-    pub EABKOHGCHFP: ::protobuf::MessageField<super::EICNFLHIHOI::EICNFLHIHOI>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.APFNIHDLFIE)
-    pub APFNIHDLFIE: ::protobuf::MessageField<super::OJHHHPLBIEJ::OJHHHPLBIEJ>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.IJHANPILBAM)
-    pub IJHANPILBAM: ::std::string::String,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.version)
+    pub version: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.logic_random_seed)
+    pub logic_random_seed: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.stage_id)
+    pub stage_id: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.lineup)
+    pub lineup: ::protobuf::MessageField<super::DBCBMJKOBPJ::DBCBMJKOBPJ>,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.op_list)
     pub op_list: ::std::vec::Vec<super::BattleOp::BattleOp>,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.turn_snapshot_hash)
     pub turn_snapshot_hash: ::std::string::String,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.DDFABAGIHMD)
-    pub DDFABAGIHMD: ::protobuf::MessageField<super::EBPDNOOMHBD::EBPDNOOMHBD>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.lineup)
-    pub lineup: ::protobuf::MessageField<super::DBCBMJKOBPJ::DBCBMJKOBPJ>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.DACGLGHGLIG)
-    pub DACGLGHGLIG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.battle_event)
-    pub battle_event: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.MBHFMFEMPOM)
-    pub MBHFMFEMPOM: ::protobuf::EnumOrUnknown<super::OIKBIPICGDN::OIKBIPICGDN>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.version)
-    pub version: u32,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.FMOAAHKDGNP)
     pub FMOAAHKDGNP: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.DACGLGHGLIG)
+    pub DACGLGHGLIG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.NNGDLOHALCN)
     pub NNGDLOHALCN: bool,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.NIBMFCFBHEP)
-    pub NIBMFCFBHEP: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.MBHFMFEMPOM)
+    pub MBHFMFEMPOM: ::protobuf::EnumOrUnknown<super::OIKBIPICGDN::OIKBIPICGDN>,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.JKCEIMCCBBA)
     pub JKCEIMCCBBA: ::protobuf::EnumOrUnknown<super::BattleModuleType::BattleModuleType>,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.logic_random_seed)
-    pub logic_random_seed: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.battle_event)
+    pub battle_event: ::std::vec::Vec<super::BattleEventBattleInfo::BattleEventBattleInfo>,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.rounds_limit)
     pub rounds_limit: u32,
-    // @@protoc_insertion_point(field:OKFLAHFIBCM.stage_id)
-    pub stage_id: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.config)
+    pub config: ::protobuf::MessageField<super::EICNFLHIHOI::EICNFLHIHOI>,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.IJHANPILBAM)
+    pub IJHANPILBAM: ::std::string::String,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.NIBMFCFBHEP)
+    pub NIBMFCFBHEP: u32,
     // @@protoc_insertion_point(field:OKFLAHFIBCM.monster_wave_length)
     pub monster_wave_length: u32,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.APFNIHDLFIE)
+    pub APFNIHDLFIE: ::protobuf::MessageField<super::OJHHHPLBIEJ::OJHHHPLBIEJ>,
+    // @@protoc_insertion_point(field:OKFLAHFIBCM.DDFABAGIHMD)
+    pub DDFABAGIHMD: ::protobuf::MessageField<super::EBPDNOOMHBD::EBPDNOOMHBD>,
     // special fields
     // @@protoc_insertion_point(special_field:OKFLAHFIBCM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,20 +85,25 @@ impl OKFLAHFIBCM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(19);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EICNFLHIHOI::EICNFLHIHOI>(
-            "EABKOHGCHFP",
-            |m: &OKFLAHFIBCM| { &m.EABKOHGCHFP },
-            |m: &mut OKFLAHFIBCM| { &mut m.EABKOHGCHFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJHHHPLBIEJ::OJHHHPLBIEJ>(
-            "APFNIHDLFIE",
-            |m: &OKFLAHFIBCM| { &m.APFNIHDLFIE },
-            |m: &mut OKFLAHFIBCM| { &mut m.APFNIHDLFIE },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "version",
+            |m: &OKFLAHFIBCM| { &m.version },
+            |m: &mut OKFLAHFIBCM| { &mut m.version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJHANPILBAM",
-            |m: &OKFLAHFIBCM| { &m.IJHANPILBAM },
-            |m: &mut OKFLAHFIBCM| { &mut m.IJHANPILBAM },
+            "logic_random_seed",
+            |m: &OKFLAHFIBCM| { &m.logic_random_seed },
+            |m: &mut OKFLAHFIBCM| { &mut m.logic_random_seed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &OKFLAHFIBCM| { &m.stage_id },
+            |m: &mut OKFLAHFIBCM| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DBCBMJKOBPJ::DBCBMJKOBPJ>(
+            "lineup",
+            |m: &OKFLAHFIBCM| { &m.lineup },
+            |m: &mut OKFLAHFIBCM| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "op_list",
@@ -110,40 +115,15 @@ impl OKFLAHFIBCM {
             |m: &OKFLAHFIBCM| { &m.turn_snapshot_hash },
             |m: &mut OKFLAHFIBCM| { &mut m.turn_snapshot_hash },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EBPDNOOMHBD::EBPDNOOMHBD>(
-            "DDFABAGIHMD",
-            |m: &OKFLAHFIBCM| { &m.DDFABAGIHMD },
-            |m: &mut OKFLAHFIBCM| { &mut m.DDFABAGIHMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DBCBMJKOBPJ::DBCBMJKOBPJ>(
-            "lineup",
-            |m: &OKFLAHFIBCM| { &m.lineup },
-            |m: &mut OKFLAHFIBCM| { &mut m.lineup },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMOAAHKDGNP",
+            |m: &OKFLAHFIBCM| { &m.FMOAAHKDGNP },
+            |m: &mut OKFLAHFIBCM| { &mut m.FMOAAHKDGNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DACGLGHGLIG",
             |m: &OKFLAHFIBCM| { &m.DACGLGHGLIG },
             |m: &mut OKFLAHFIBCM| { &mut m.DACGLGHGLIG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_event",
-            |m: &OKFLAHFIBCM| { &m.battle_event },
-            |m: &mut OKFLAHFIBCM| { &mut m.battle_event },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBHFMFEMPOM",
-            |m: &OKFLAHFIBCM| { &m.MBHFMFEMPOM },
-            |m: &mut OKFLAHFIBCM| { &mut m.MBHFMFEMPOM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "version",
-            |m: &OKFLAHFIBCM| { &m.version },
-            |m: &mut OKFLAHFIBCM| { &mut m.version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMOAAHKDGNP",
-            |m: &OKFLAHFIBCM| { &m.FMOAAHKDGNP },
-            |m: &mut OKFLAHFIBCM| { &mut m.FMOAAHKDGNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NNGDLOHALCN",
@@ -151,34 +131,54 @@ impl OKFLAHFIBCM {
             |m: &mut OKFLAHFIBCM| { &mut m.NNGDLOHALCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIBMFCFBHEP",
-            |m: &OKFLAHFIBCM| { &m.NIBMFCFBHEP },
-            |m: &mut OKFLAHFIBCM| { &mut m.NIBMFCFBHEP },
+            "MBHFMFEMPOM",
+            |m: &OKFLAHFIBCM| { &m.MBHFMFEMPOM },
+            |m: &mut OKFLAHFIBCM| { &mut m.MBHFMFEMPOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JKCEIMCCBBA",
             |m: &OKFLAHFIBCM| { &m.JKCEIMCCBBA },
             |m: &mut OKFLAHFIBCM| { &mut m.JKCEIMCCBBA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "logic_random_seed",
-            |m: &OKFLAHFIBCM| { &m.logic_random_seed },
-            |m: &mut OKFLAHFIBCM| { &mut m.logic_random_seed },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_event",
+            |m: &OKFLAHFIBCM| { &m.battle_event },
+            |m: &mut OKFLAHFIBCM| { &mut m.battle_event },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rounds_limit",
             |m: &OKFLAHFIBCM| { &m.rounds_limit },
             |m: &mut OKFLAHFIBCM| { &mut m.rounds_limit },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EICNFLHIHOI::EICNFLHIHOI>(
+            "config",
+            |m: &OKFLAHFIBCM| { &m.config },
+            |m: &mut OKFLAHFIBCM| { &mut m.config },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &OKFLAHFIBCM| { &m.stage_id },
-            |m: &mut OKFLAHFIBCM| { &mut m.stage_id },
+            "IJHANPILBAM",
+            |m: &OKFLAHFIBCM| { &m.IJHANPILBAM },
+            |m: &mut OKFLAHFIBCM| { &mut m.IJHANPILBAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NIBMFCFBHEP",
+            |m: &OKFLAHFIBCM| { &m.NIBMFCFBHEP },
+            |m: &mut OKFLAHFIBCM| { &mut m.NIBMFCFBHEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_wave_length",
             |m: &OKFLAHFIBCM| { &m.monster_wave_length },
             |m: &mut OKFLAHFIBCM| { &mut m.monster_wave_length },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OJHHHPLBIEJ::OJHHHPLBIEJ>(
+            "APFNIHDLFIE",
+            |m: &OKFLAHFIBCM| { &m.APFNIHDLFIE },
+            |m: &mut OKFLAHFIBCM| { &mut m.APFNIHDLFIE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EBPDNOOMHBD::EBPDNOOMHBD>(
+            "DDFABAGIHMD",
+            |m: &OKFLAHFIBCM| { &m.DDFABAGIHMD },
+            |m: &mut OKFLAHFIBCM| { &mut m.DDFABAGIHMD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKFLAHFIBCM>(
             "OKFLAHFIBCM",
@@ -198,14 +198,17 @@ impl ::protobuf::Message for OKFLAHFIBCM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EABKOHGCHFP)?;
+                8 => {
+                    self.version = is.read_uint32()?;
                 },
-                154 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APFNIHDLFIE)?;
+                16 => {
+                    self.logic_random_seed = is.read_uint32()?;
                 },
-                130 => {
-                    self.IJHANPILBAM = is.read_string()?;
+                24 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 42 => {
                     self.op_list.push(is.read_message()?);
@@ -213,11 +216,8 @@ impl ::protobuf::Message for OKFLAHFIBCM {
                 50 => {
                     self.turn_snapshot_hash = is.read_string()?;
                 },
-                802 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDFABAGIHMD)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                56 => {
+                    self.FMOAAHKDGNP = is.read_uint32()?;
                 },
                 66 => {
                     is.read_repeated_packed_uint32_into(&mut self.DACGLGHGLIG)?;
@@ -225,38 +225,38 @@ impl ::protobuf::Message for OKFLAHFIBCM {
                 64 => {
                     self.DACGLGHGLIG.push(is.read_uint32()?);
                 },
-                98 => {
-                    self.battle_event.push(is.read_message()?);
+                72 => {
+                    self.NNGDLOHALCN = is.read_bool()?;
                 },
                 80 => {
                     self.MBHFMFEMPOM = is.read_enum_or_unknown()?;
                 },
-                8 => {
-                    self.version = is.read_uint32()?;
-                },
-                56 => {
-                    self.FMOAAHKDGNP = is.read_uint32()?;
-                },
-                72 => {
-                    self.NNGDLOHALCN = is.read_bool()?;
-                },
-                136 => {
-                    self.NIBMFCFBHEP = is.read_uint32()?;
-                },
                 88 => {
                     self.JKCEIMCCBBA = is.read_enum_or_unknown()?;
                 },
-                16 => {
-                    self.logic_random_seed = is.read_uint32()?;
+                98 => {
+                    self.battle_event.push(is.read_message()?);
                 },
                 112 => {
                     self.rounds_limit = is.read_uint32()?;
                 },
-                24 => {
-                    self.stage_id = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.config)?;
+                },
+                130 => {
+                    self.IJHANPILBAM = is.read_string()?;
+                },
+                136 => {
+                    self.NIBMFCFBHEP = is.read_uint32()?;
                 },
                 144 => {
                     self.monster_wave_length = is.read_uint32()?;
+                },
+                154 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APFNIHDLFIE)?;
+                },
+                802 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDFABAGIHMD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -270,16 +270,18 @@ impl ::protobuf::Message for OKFLAHFIBCM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EABKOHGCHFP.as_ref() {
+        if self.version != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.version);
+        }
+        if self.logic_random_seed != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.logic_random_seed);
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
+        }
+        if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.APFNIHDLFIE.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.IJHANPILBAM.is_empty() {
-            my_size += ::protobuf::rt::string_size(16, &self.IJHANPILBAM);
         }
         for value in &self.op_list {
             let len = value.compute_size();
@@ -288,48 +290,46 @@ impl ::protobuf::Message for OKFLAHFIBCM {
         if !self.turn_snapshot_hash.is_empty() {
             my_size += ::protobuf::rt::string_size(6, &self.turn_snapshot_hash);
         }
-        if let Some(v) = self.DDFABAGIHMD.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.lineup.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DACGLGHGLIG);
-        for value in &self.battle_event {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.MBHFMFEMPOM != ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG) {
-            my_size += ::protobuf::rt::int32_size(10, self.MBHFMFEMPOM.value());
-        }
-        if self.version != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.version);
-        }
         if self.FMOAAHKDGNP != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.FMOAAHKDGNP);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DACGLGHGLIG);
         if self.NNGDLOHALCN != false {
             my_size += 1 + 1;
         }
-        if self.NIBMFCFBHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.NIBMFCFBHEP);
+        if self.MBHFMFEMPOM != ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG) {
+            my_size += ::protobuf::rt::int32_size(10, self.MBHFMFEMPOM.value());
         }
         if self.JKCEIMCCBBA != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC) {
             my_size += ::protobuf::rt::int32_size(11, self.JKCEIMCCBBA.value());
         }
-        if self.logic_random_seed != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.logic_random_seed);
-        }
+        for value in &self.battle_event {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.rounds_limit != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.rounds_limit);
         }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
+        if let Some(v) = self.config.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.IJHANPILBAM.is_empty() {
+            my_size += ::protobuf::rt::string_size(16, &self.IJHANPILBAM);
+        }
+        if self.NIBMFCFBHEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.NIBMFCFBHEP);
         }
         if self.monster_wave_length != 0 {
             my_size += ::protobuf::rt::uint32_size(18, self.monster_wave_length);
+        }
+        if let Some(v) = self.APFNIHDLFIE.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.DDFABAGIHMD.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -337,14 +337,17 @@ impl ::protobuf::Message for OKFLAHFIBCM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EABKOHGCHFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.version != 0 {
+            os.write_uint32(1, self.version)?;
         }
-        if let Some(v) = self.APFNIHDLFIE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
+        if self.logic_random_seed != 0 {
+            os.write_uint32(2, self.logic_random_seed)?;
         }
-        if !self.IJHANPILBAM.is_empty() {
-            os.write_string(16, &self.IJHANPILBAM)?;
+        if self.stage_id != 0 {
+            os.write_uint32(3, self.stage_id)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.op_list {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -352,45 +355,42 @@ impl ::protobuf::Message for OKFLAHFIBCM {
         if !self.turn_snapshot_hash.is_empty() {
             os.write_string(6, &self.turn_snapshot_hash)?;
         }
-        if let Some(v) = self.DDFABAGIHMD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(100, v, os)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        os.write_repeated_packed_uint32(8, &self.DACGLGHGLIG)?;
-        for v in &self.battle_event {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if self.MBHFMFEMPOM != ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MBHFMFEMPOM))?;
-        }
-        if self.version != 0 {
-            os.write_uint32(1, self.version)?;
-        }
         if self.FMOAAHKDGNP != 0 {
             os.write_uint32(7, self.FMOAAHKDGNP)?;
         }
+        os.write_repeated_packed_uint32(8, &self.DACGLGHGLIG)?;
         if self.NNGDLOHALCN != false {
             os.write_bool(9, self.NNGDLOHALCN)?;
         }
-        if self.NIBMFCFBHEP != 0 {
-            os.write_uint32(17, self.NIBMFCFBHEP)?;
+        if self.MBHFMFEMPOM != ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MBHFMFEMPOM))?;
         }
         if self.JKCEIMCCBBA != ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC) {
             os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.JKCEIMCCBBA))?;
         }
-        if self.logic_random_seed != 0 {
-            os.write_uint32(2, self.logic_random_seed)?;
-        }
+        for v in &self.battle_event {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.rounds_limit != 0 {
             os.write_uint32(14, self.rounds_limit)?;
         }
-        if self.stage_id != 0 {
-            os.write_uint32(3, self.stage_id)?;
+        if let Some(v) = self.config.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if !self.IJHANPILBAM.is_empty() {
+            os.write_string(16, &self.IJHANPILBAM)?;
+        }
+        if self.NIBMFCFBHEP != 0 {
+            os.write_uint32(17, self.NIBMFCFBHEP)?;
         }
         if self.monster_wave_length != 0 {
             os.write_uint32(18, self.monster_wave_length)?;
+        }
+        if let Some(v) = self.APFNIHDLFIE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
+        }
+        if let Some(v) = self.DDFABAGIHMD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(100, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -409,49 +409,49 @@ impl ::protobuf::Message for OKFLAHFIBCM {
     }
 
     fn clear(&mut self) {
-        self.EABKOHGCHFP.clear();
-        self.APFNIHDLFIE.clear();
-        self.IJHANPILBAM.clear();
+        self.version = 0;
+        self.logic_random_seed = 0;
+        self.stage_id = 0;
+        self.lineup.clear();
         self.op_list.clear();
         self.turn_snapshot_hash.clear();
-        self.DDFABAGIHMD.clear();
-        self.lineup.clear();
-        self.DACGLGHGLIG.clear();
-        self.battle_event.clear();
-        self.MBHFMFEMPOM = ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG);
-        self.version = 0;
         self.FMOAAHKDGNP = 0;
+        self.DACGLGHGLIG.clear();
         self.NNGDLOHALCN = false;
-        self.NIBMFCFBHEP = 0;
+        self.MBHFMFEMPOM = ::protobuf::EnumOrUnknown::new(super::OIKBIPICGDN::OIKBIPICGDN::OIKBIPICGDN_KNDKKGPEJAG);
         self.JKCEIMCCBBA = ::protobuf::EnumOrUnknown::new(super::BattleModuleType::BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC);
-        self.logic_random_seed = 0;
+        self.battle_event.clear();
         self.rounds_limit = 0;
-        self.stage_id = 0;
+        self.config.clear();
+        self.IJHANPILBAM.clear();
+        self.NIBMFCFBHEP = 0;
         self.monster_wave_length = 0;
+        self.APFNIHDLFIE.clear();
+        self.DDFABAGIHMD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKFLAHFIBCM {
         static instance: OKFLAHFIBCM = OKFLAHFIBCM {
-            EABKOHGCHFP: ::protobuf::MessageField::none(),
-            APFNIHDLFIE: ::protobuf::MessageField::none(),
-            IJHANPILBAM: ::std::string::String::new(),
+            version: 0,
+            logic_random_seed: 0,
+            stage_id: 0,
+            lineup: ::protobuf::MessageField::none(),
             op_list: ::std::vec::Vec::new(),
             turn_snapshot_hash: ::std::string::String::new(),
-            DDFABAGIHMD: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
-            DACGLGHGLIG: ::std::vec::Vec::new(),
-            battle_event: ::std::vec::Vec::new(),
-            MBHFMFEMPOM: ::protobuf::EnumOrUnknown::from_i32(0),
-            version: 0,
             FMOAAHKDGNP: 0,
+            DACGLGHGLIG: ::std::vec::Vec::new(),
             NNGDLOHALCN: false,
-            NIBMFCFBHEP: 0,
+            MBHFMFEMPOM: ::protobuf::EnumOrUnknown::from_i32(0),
             JKCEIMCCBBA: ::protobuf::EnumOrUnknown::from_i32(0),
-            logic_random_seed: 0,
+            battle_event: ::std::vec::Vec::new(),
             rounds_limit: 0,
-            stage_id: 0,
+            config: ::protobuf::MessageField::none(),
+            IJHANPILBAM: ::std::string::String::new(),
+            NIBMFCFBHEP: 0,
             monster_wave_length: 0,
+            APFNIHDLFIE: ::protobuf::MessageField::none(),
+            DDFABAGIHMD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -479,25 +479,25 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKFLAHFIBCM.proto\x1a\x1bBattleEventBattleInfo.proto\x1a\x16Battle\
     ModuleType.proto\x1a\x0eBattleOp.proto\x1a\x11DBCBMJKOBPJ.proto\x1a\x11E\
     BPDNOOMHBD.proto\x1a\x11EICNFLHIHOI.proto\x1a\x11OIKBIPICGDN.proto\x1a\
-    \x11OJHHHPLBIEJ.proto\"\x93\x06\n\x0bOKFLAHFIBCM\x12.\n\x0bEABKOHGCHFP\
-    \x18\x0f\x20\x01(\x0b2\x0c.EICNFLHIHOIR\x0bEABKOHGCHFP\x12.\n\x0bAPFNIHD\
-    LFIE\x18\x13\x20\x01(\x0b2\x0c.OJHHHPLBIEJR\x0bAPFNIHDLFIE\x12\x20\n\x0b\
-    IJHANPILBAM\x18\x10\x20\x01(\tR\x0bIJHANPILBAM\x12\"\n\x07op_list\x18\
-    \x05\x20\x03(\x0b2\t.BattleOpR\x06opList\x12,\n\x12turn_snapshot_hash\
-    \x18\x06\x20\x01(\tR\x10turnSnapshotHash\x12.\n\x0bDDFABAGIHMD\x18d\x20\
-    \x01(\x0b2\x0c.EBPDNOOMHBDR\x0bDDFABAGIHMD\x12$\n\x06lineup\x18\x04\x20\
-    \x01(\x0b2\x0c.DBCBMJKOBPJR\x06lineup\x12\x20\n\x0bDACGLGHGLIG\x18\x08\
-    \x20\x03(\rR\x0bDACGLGHGLIG\x129\n\x0cbattle_event\x18\x0c\x20\x03(\x0b2\
-    \x16.BattleEventBattleInfoR\x0bbattleEvent\x12.\n\x0bMBHFMFEMPOM\x18\n\
-    \x20\x01(\x0e2\x0c.OIKBIPICGDNR\x0bMBHFMFEMPOM\x12\x18\n\x07version\x18\
-    \x01\x20\x01(\rR\x07version\x12\x20\n\x0bFMOAAHKDGNP\x18\x07\x20\x01(\rR\
-    \x0bFMOAAHKDGNP\x12\x20\n\x0bNNGDLOHALCN\x18\t\x20\x01(\x08R\x0bNNGDLOHA\
-    LCN\x12\x20\n\x0bNIBMFCFBHEP\x18\x11\x20\x01(\rR\x0bNIBMFCFBHEP\x123\n\
-    \x0bJKCEIMCCBBA\x18\x0b\x20\x01(\x0e2\x11.BattleModuleTypeR\x0bJKCEIMCCB\
-    BA\x12*\n\x11logic_random_seed\x18\x02\x20\x01(\rR\x0flogicRandomSeed\
-    \x12!\n\x0crounds_limit\x18\x0e\x20\x01(\rR\x0broundsLimit\x12\x19\n\x08\
-    stage_id\x18\x03\x20\x01(\rR\x07stageId\x12.\n\x13monster_wave_length\
-    \x18\x12\x20\x01(\rR\x11monsterWaveLengthb\x06proto3\
+    \x11OJHHHPLBIEJ.proto\"\x89\x06\n\x0bOKFLAHFIBCM\x12\x18\n\x07version\
+    \x18\x01\x20\x01(\rR\x07version\x12*\n\x11logic_random_seed\x18\x02\x20\
+    \x01(\rR\x0flogicRandomSeed\x12\x19\n\x08stage_id\x18\x03\x20\x01(\rR\
+    \x07stageId\x12$\n\x06lineup\x18\x04\x20\x01(\x0b2\x0c.DBCBMJKOBPJR\x06l\
+    ineup\x12\"\n\x07op_list\x18\x05\x20\x03(\x0b2\t.BattleOpR\x06opList\x12\
+    ,\n\x12turn_snapshot_hash\x18\x06\x20\x01(\tR\x10turnSnapshotHash\x12\
+    \x20\n\x0bFMOAAHKDGNP\x18\x07\x20\x01(\rR\x0bFMOAAHKDGNP\x12\x20\n\x0bDA\
+    CGLGHGLIG\x18\x08\x20\x03(\rR\x0bDACGLGHGLIG\x12\x20\n\x0bNNGDLOHALCN\
+    \x18\t\x20\x01(\x08R\x0bNNGDLOHALCN\x12.\n\x0bMBHFMFEMPOM\x18\n\x20\x01(\
+    \x0e2\x0c.OIKBIPICGDNR\x0bMBHFMFEMPOM\x123\n\x0bJKCEIMCCBBA\x18\x0b\x20\
+    \x01(\x0e2\x11.BattleModuleTypeR\x0bJKCEIMCCBBA\x129\n\x0cbattle_event\
+    \x18\x0c\x20\x03(\x0b2\x16.BattleEventBattleInfoR\x0bbattleEvent\x12!\n\
+    \x0crounds_limit\x18\x0e\x20\x01(\rR\x0broundsLimit\x12$\n\x06config\x18\
+    \x0f\x20\x01(\x0b2\x0c.EICNFLHIHOIR\x06config\x12\x20\n\x0bIJHANPILBAM\
+    \x18\x10\x20\x01(\tR\x0bIJHANPILBAM\x12\x20\n\x0bNIBMFCFBHEP\x18\x11\x20\
+    \x01(\rR\x0bNIBMFCFBHEP\x12.\n\x13monster_wave_length\x18\x12\x20\x01(\r\
+    R\x11monsterWaveLength\x12.\n\x0bAPFNIHDLFIE\x18\x13\x20\x01(\x0b2\x0c.O\
+    JHHHPLBIEJR\x0bAPFNIHDLFIE\x12.\n\x0bDDFABAGIHMD\x18d\x20\x01(\x0b2\x0c.\
+    EBPDNOOMHBDR\x0bDDFABAGIHMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

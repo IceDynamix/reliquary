@@ -72,7 +72,7 @@ impl ::protobuf::Message for GateServerScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                42 => {
                     self.OKLNPLEDKDE = is.read_string()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GateServerScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.OKLNPLEDKDE.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.OKLNPLEDKDE);
+            my_size += ::protobuf::rt::string_size(5, &self.OKLNPLEDKDE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GateServerScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.OKLNPLEDKDE.is_empty() {
-            os.write_string(11, &self.OKLNPLEDKDE)?;
+            os.write_string(5, &self.OKLNPLEDKDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GateServerScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GateServerScNotify.proto\"6\n\x12GateServerScNotify\x12\x20\n\x0bO\
-    KLNPLEDKDE\x18\x0b\x20\x01(\tR\x0bOKLNPLEDKDEb\x06proto3\
+    KLNPLEDKDE\x18\x05\x20\x01(\tR\x0bOKLNPLEDKDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

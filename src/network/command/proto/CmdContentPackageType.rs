@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdContentPackageType {
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_NLCDGIPGFDJ)
     PKKCLCNFPLE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_DAKANPJMLEA)
-    PKKCLCNFPLE_DAKANPJMLEA = 7507,
-    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_DODAJINHEGA)
-    PKKCLCNFPLE_DODAJINHEGA = 7532,
-    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_OCFEICNOBPC)
-    PKKCLCNFPLE_OCFEICNOBPC = 7542,
     // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_LIGGAHEJBCM)
-    PKKCLCNFPLE_LIGGAHEJBCM = 7527,
+    PKKCLCNFPLE_LIGGAHEJBCM = 7548,
+    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_DAKANPJMLEA)
+    PKKCLCNFPLE_DAKANPJMLEA = 7537,
+    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_DODAJINHEGA)
+    PKKCLCNFPLE_DODAJINHEGA = 7509,
+    // @@protoc_insertion_point(enum_value:CmdContentPackageType.PKKCLCNFPLE_OCFEICNOBPC)
+    PKKCLCNFPLE_OCFEICNOBPC = 7523,
 }
 
 impl ::protobuf::Enum for CmdContentPackageType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdContentPackageType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdContentPackageType> {
         match value {
             0 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_NLCDGIPGFDJ),
-            7507 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA),
-            7532 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA),
-            7542 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC),
-            7527 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM),
+            7548 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM),
+            7537 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA),
+            7509 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA),
+            7523 => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for CmdContentPackageType {
     fn from_str(str: &str) -> ::std::option::Option<CmdContentPackageType> {
         match str {
             "PKKCLCNFPLE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_NLCDGIPGFDJ),
+            "PKKCLCNFPLE_LIGGAHEJBCM" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM),
             "PKKCLCNFPLE_DAKANPJMLEA" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA),
             "PKKCLCNFPLE_DODAJINHEGA" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA),
             "PKKCLCNFPLE_OCFEICNOBPC" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC),
-            "PKKCLCNFPLE_LIGGAHEJBCM" => ::std::option::Option::Some(CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdContentPackageType] = &[
         CmdContentPackageType::PKKCLCNFPLE_NLCDGIPGFDJ,
+        CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM,
         CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA,
         CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA,
         CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC,
-        CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for CmdContentPackageType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdContentPackageType::PKKCLCNFPLE_NLCDGIPGFDJ => 0,
-            CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA => 1,
-            CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA => 2,
-            CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC => 3,
-            CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM => 4,
+            CmdContentPackageType::PKKCLCNFPLE_LIGGAHEJBCM => 1,
+            CmdContentPackageType::PKKCLCNFPLE_DAKANPJMLEA => 2,
+            CmdContentPackageType::PKKCLCNFPLE_DODAJINHEGA => 3,
+            CmdContentPackageType::PKKCLCNFPLE_OCFEICNOBPC => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,10 +109,10 @@ impl CmdContentPackageType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdContentPackageType.proto*\xac\x01\n\x15CmdContentPackageType\
-    \x12\x1b\n\x17PKKCLCNFPLE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PKKCLCNFPLE_DAK\
-    ANPJMLEA\x10\xd3:\x12\x1c\n\x17PKKCLCNFPLE_DODAJINHEGA\x10\xec:\x12\x1c\
-    \n\x17PKKCLCNFPLE_OCFEICNOBPC\x10\xf6:\x12\x1c\n\x17PKKCLCNFPLE_LIGGAHEJ\
-    BCM\x10\xe7:b\x06proto3\
+    \x12\x1b\n\x17PKKCLCNFPLE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PKKCLCNFPLE_LIG\
+    GAHEJBCM\x10\xfc:\x12\x1c\n\x17PKKCLCNFPLE_DAKANPJMLEA\x10\xf1:\x12\x1c\
+    \n\x17PKKCLCNFPLE_DODAJINHEGA\x10\xd5:\x12\x1c\n\x17PKKCLCNFPLE_OCFEICNO\
+    BPC\x10\xe3:b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

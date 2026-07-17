@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MCECLBDBENF {
     // message fields
-    // @@protoc_insertion_point(field:MCECLBDBENF.HJPBAJEPAGE)
-    pub HJPBAJEPAGE: ::protobuf::MessageField<super::LBBNBAEKGCJ::LBBNBAEKGCJ>,
+    // @@protoc_insertion_point(field:MCECLBDBENF.turn)
+    pub turn: ::protobuf::MessageField<super::LBBNBAEKGCJ::LBBNBAEKGCJ>,
     // @@protoc_insertion_point(field:MCECLBDBENF.IMGDMDDKHDL)
     pub IMGDMDDKHDL: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MCECLBDBENF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LBBNBAEKGCJ::LBBNBAEKGCJ>(
-            "HJPBAJEPAGE",
-            |m: &MCECLBDBENF| { &m.HJPBAJEPAGE },
-            |m: &mut MCECLBDBENF| { &mut m.HJPBAJEPAGE },
+            "turn",
+            |m: &MCECLBDBENF| { &m.turn },
+            |m: &mut MCECLBDBENF| { &mut m.turn },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IMGDMDDKHDL",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCECLBDBENF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HJPBAJEPAGE)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.turn)?;
                 },
-                80 => {
+                88 => {
                     self.IMGDMDDKHDL = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MCECLBDBENF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HJPBAJEPAGE.as_ref() {
+        if let Some(v) = self.turn.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.IMGDMDDKHDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.IMGDMDDKHDL);
+            my_size += ::protobuf::rt::uint32_size(11, self.IMGDMDDKHDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MCECLBDBENF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HJPBAJEPAGE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.turn.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.IMGDMDDKHDL != 0 {
-            os.write_uint32(10, self.IMGDMDDKHDL)?;
+            os.write_uint32(11, self.IMGDMDDKHDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for MCECLBDBENF {
     }
 
     fn clear(&mut self) {
-        self.HJPBAJEPAGE.clear();
+        self.turn.clear();
         self.IMGDMDDKHDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MCECLBDBENF {
         static instance: MCECLBDBENF = MCECLBDBENF {
-            HJPBAJEPAGE: ::protobuf::MessageField::none(),
+            turn: ::protobuf::MessageField::none(),
             IMGDMDDKHDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MCECLBDBENF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MCECLBDBENF.proto\x1a\x11LBBNBAEKGCJ.proto\"_\n\x0bMCECLBDBENF\x12\
-    .\n\x0bHJPBAJEPAGE\x18\x02\x20\x01(\x0b2\x0c.LBBNBAEKGCJR\x0bHJPBAJEPAGE\
-    \x12\x20\n\x0bIMGDMDDKHDL\x18\n\x20\x01(\rR\x0bIMGDMDDKHDLb\x06proto3\
+    \n\x11MCECLBDBENF.proto\x1a\x11LBBNBAEKGCJ.proto\"Q\n\x0bMCECLBDBENF\x12\
+    \x20\n\x04turn\x18\x04\x20\x01(\x0b2\x0c.LBBNBAEKGCJR\x04turn\x12\x20\n\
+    \x0bIMGDMDDKHDL\x18\x0b\x20\x01(\rR\x0bIMGDMDDKHDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

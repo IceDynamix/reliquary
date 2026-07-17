@@ -28,42 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetDataScRsp.CMBJOLCGMAI)
-    pub CMBJOLCGMAI: ::std::vec::Vec<super::ONNMLLIEENI::ONNMLLIEENI>,
-    // @@protoc_insertion_point(field:GetDataScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::GCFGCHAMNOL::GCFGCHAMNOL>,
-    // @@protoc_insertion_point(field:GetDataScRsp.ICBIMKIEOEP)
-    pub ICBIMKIEOEP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetDataScRsp.JCOAGOJEAPB)
-    pub JCOAGOJEAPB: ::std::vec::Vec<super::GADFFIFFNHM::GADFFIFFNHM>,
-    // @@protoc_insertion_point(field:GetDataScRsp.FBNEKMPIAKD)
-    pub FBNEKMPIAKD: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.HFPGDCJMNIK)
-    pub HFPGDCJMNIK: ::protobuf::EnumOrUnknown<super::HDIOKENOFNJ::HDIOKENOFNJ>,
-    // @@protoc_insertion_point(field:GetDataScRsp.ENMLPFBMPNI)
-    pub ENMLPFBMPNI: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.JIDBIMNMLJP)
-    pub JIDBIMNMLJP: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.PIGPKIDNMDH)
-    pub PIGPKIDNMDH: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.IOMEILDMBNE)
-    pub IOMEILDMBNE: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.CJLBLDFGELH)
-    pub CJLBLDFGELH: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.GGPKMPBBENP)
-    pub GGPKMPBBENP: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.NMPCJAOIOHJ)
-    pub NMPCJAOIOHJ: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.IMCGJPMBPPJ)
-    pub IMCGJPMBPPJ: u32,
     // @@protoc_insertion_point(field:GetDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.KCCACINBEEA)
-    pub KCCACINBEEA: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.MMFKMEGECOI)
-    pub MMFKMEGECOI: u32,
-    // @@protoc_insertion_point(field:GetDataScRsp.HCENDLKKHOC)
-    pub HCENDLKKHOC: u32,
+    // @@protoc_insertion_point(field:GetDataScRsp.is_taken_reward)
+    pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:GetDataScRsp.avatar_id)
+    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -81,97 +51,22 @@ impl GetDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(18);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CMBJOLCGMAI",
-            |m: &GetDataScRsp| { &m.CMBJOLCGMAI },
-            |m: &mut GetDataScRsp| { &mut m.CMBJOLCGMAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCFGCHAMNOL::GCFGCHAMNOL>(
-            "lineup",
-            |m: &GetDataScRsp| { &m.lineup },
-            |m: &mut GetDataScRsp| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ICBIMKIEOEP",
-            |m: &GetDataScRsp| { &m.ICBIMKIEOEP },
-            |m: &mut GetDataScRsp| { &mut m.ICBIMKIEOEP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JCOAGOJEAPB",
-            |m: &GetDataScRsp| { &m.JCOAGOJEAPB },
-            |m: &mut GetDataScRsp| { &mut m.JCOAGOJEAPB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBNEKMPIAKD",
-            |m: &GetDataScRsp| { &m.FBNEKMPIAKD },
-            |m: &mut GetDataScRsp| { &mut m.FBNEKMPIAKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFPGDCJMNIK",
-            |m: &GetDataScRsp| { &m.HFPGDCJMNIK },
-            |m: &mut GetDataScRsp| { &mut m.HFPGDCJMNIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENMLPFBMPNI",
-            |m: &GetDataScRsp| { &m.ENMLPFBMPNI },
-            |m: &mut GetDataScRsp| { &mut m.ENMLPFBMPNI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIDBIMNMLJP",
-            |m: &GetDataScRsp| { &m.JIDBIMNMLJP },
-            |m: &mut GetDataScRsp| { &mut m.JIDBIMNMLJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIGPKIDNMDH",
-            |m: &GetDataScRsp| { &m.PIGPKIDNMDH },
-            |m: &mut GetDataScRsp| { &mut m.PIGPKIDNMDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IOMEILDMBNE",
-            |m: &GetDataScRsp| { &m.IOMEILDMBNE },
-            |m: &mut GetDataScRsp| { &mut m.IOMEILDMBNE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJLBLDFGELH",
-            |m: &GetDataScRsp| { &m.CJLBLDFGELH },
-            |m: &mut GetDataScRsp| { &mut m.CJLBLDFGELH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGPKMPBBENP",
-            |m: &GetDataScRsp| { &m.GGPKMPBBENP },
-            |m: &mut GetDataScRsp| { &mut m.GGPKMPBBENP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMPCJAOIOHJ",
-            |m: &GetDataScRsp| { &m.NMPCJAOIOHJ },
-            |m: &mut GetDataScRsp| { &mut m.NMPCJAOIOHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMCGJPMBPPJ",
-            |m: &GetDataScRsp| { &m.IMCGJPMBPPJ },
-            |m: &mut GetDataScRsp| { &mut m.IMCGJPMBPPJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetDataScRsp| { &m.retcode },
             |m: &mut GetDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCCACINBEEA",
-            |m: &GetDataScRsp| { &m.KCCACINBEEA },
-            |m: &mut GetDataScRsp| { &mut m.KCCACINBEEA },
+            "is_taken_reward",
+            |m: &GetDataScRsp| { &m.is_taken_reward },
+            |m: &mut GetDataScRsp| { &mut m.is_taken_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMFKMEGECOI",
-            |m: &GetDataScRsp| { &m.MMFKMEGECOI },
-            |m: &mut GetDataScRsp| { &mut m.MMFKMEGECOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCENDLKKHOC",
-            |m: &GetDataScRsp| { &m.HCENDLKKHOC },
-            |m: &mut GetDataScRsp| { &mut m.HCENDLKKHOC },
+            "avatar_id",
+            |m: &GetDataScRsp| { &m.avatar_id },
+            |m: &mut GetDataScRsp| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDataScRsp>(
             "GetDataScRsp",
@@ -191,62 +86,14 @@ impl ::protobuf::Message for GetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.CMBJOLCGMAI.push(is.read_message()?);
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ICBIMKIEOEP)?;
-                },
-                88 => {
-                    self.ICBIMKIEOEP.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.JCOAGOJEAPB.push(is.read_message()?);
-                },
-                112 => {
-                    self.FBNEKMPIAKD = is.read_uint32()?;
-                },
-                96 => {
-                    self.HFPGDCJMNIK = is.read_enum_or_unknown()?;
-                },
-                15760 => {
-                    self.ENMLPFBMPNI = is.read_uint32()?;
-                },
-                8 => {
-                    self.JIDBIMNMLJP = is.read_uint32()?;
-                },
-                80 => {
-                    self.PIGPKIDNMDH = is.read_uint32()?;
-                },
-                24 => {
-                    self.IOMEILDMBNE = is.read_uint32()?;
-                },
                 56 => {
-                    self.CJLBLDFGELH = is.read_uint32()?;
-                },
-                11976 => {
-                    self.GGPKMPBBENP = is.read_uint32()?;
-                },
-                840 => {
-                    self.NMPCJAOIOHJ = is.read_uint32()?;
-                },
-                48 => {
-                    self.IMCGJPMBPPJ = is.read_uint32()?;
-                },
-                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                14496 => {
-                    self.KCCACINBEEA = is.read_uint32()?;
+                80 => {
+                    self.is_taken_reward = is.read_bool()?;
                 },
-                72 => {
-                    self.MMFKMEGECOI = is.read_uint32()?;
-                },
-                16 => {
-                    self.HCENDLKKHOC = is.read_uint32()?;
+                104 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -260,60 +107,14 @@ impl ::protobuf::Message for GetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CMBJOLCGMAI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.lineup.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ICBIMKIEOEP);
-        for value in &self.JCOAGOJEAPB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.FBNEKMPIAKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.FBNEKMPIAKD);
-        }
-        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
-            my_size += ::protobuf::rt::int32_size(12, self.HFPGDCJMNIK.value());
-        }
-        if self.ENMLPFBMPNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1970, self.ENMLPFBMPNI);
-        }
-        if self.JIDBIMNMLJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JIDBIMNMLJP);
-        }
-        if self.PIGPKIDNMDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PIGPKIDNMDH);
-        }
-        if self.IOMEILDMBNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IOMEILDMBNE);
-        }
-        if self.CJLBLDFGELH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CJLBLDFGELH);
-        }
-        if self.GGPKMPBBENP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1497, self.GGPKMPBBENP);
-        }
-        if self.NMPCJAOIOHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(105, self.NMPCJAOIOHJ);
-        }
-        if self.IMCGJPMBPPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IMCGJPMBPPJ);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if self.KCCACINBEEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1812, self.KCCACINBEEA);
+        if self.is_taken_reward != false {
+            my_size += 1 + 1;
         }
-        if self.MMFKMEGECOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MMFKMEGECOI);
-        }
-        if self.HCENDLKKHOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HCENDLKKHOC);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -321,57 +122,14 @@ impl ::protobuf::Message for GetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CMBJOLCGMAI {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        os.write_repeated_packed_uint32(11, &self.ICBIMKIEOEP)?;
-        for v in &self.JCOAGOJEAPB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.FBNEKMPIAKD != 0 {
-            os.write_uint32(14, self.FBNEKMPIAKD)?;
-        }
-        if self.HFPGDCJMNIK != ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.HFPGDCJMNIK))?;
-        }
-        if self.ENMLPFBMPNI != 0 {
-            os.write_uint32(1970, self.ENMLPFBMPNI)?;
-        }
-        if self.JIDBIMNMLJP != 0 {
-            os.write_uint32(1, self.JIDBIMNMLJP)?;
-        }
-        if self.PIGPKIDNMDH != 0 {
-            os.write_uint32(10, self.PIGPKIDNMDH)?;
-        }
-        if self.IOMEILDMBNE != 0 {
-            os.write_uint32(3, self.IOMEILDMBNE)?;
-        }
-        if self.CJLBLDFGELH != 0 {
-            os.write_uint32(7, self.CJLBLDFGELH)?;
-        }
-        if self.GGPKMPBBENP != 0 {
-            os.write_uint32(1497, self.GGPKMPBBENP)?;
-        }
-        if self.NMPCJAOIOHJ != 0 {
-            os.write_uint32(105, self.NMPCJAOIOHJ)?;
-        }
-        if self.IMCGJPMBPPJ != 0 {
-            os.write_uint32(6, self.IMCGJPMBPPJ)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if self.KCCACINBEEA != 0 {
-            os.write_uint32(1812, self.KCCACINBEEA)?;
+        if self.is_taken_reward != false {
+            os.write_bool(10, self.is_taken_reward)?;
         }
-        if self.MMFKMEGECOI != 0 {
-            os.write_uint32(9, self.MMFKMEGECOI)?;
-        }
-        if self.HCENDLKKHOC != 0 {
-            os.write_uint32(2, self.HCENDLKKHOC)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -390,47 +148,17 @@ impl ::protobuf::Message for GetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CMBJOLCGMAI.clear();
-        self.lineup.clear();
-        self.ICBIMKIEOEP.clear();
-        self.JCOAGOJEAPB.clear();
-        self.FBNEKMPIAKD = 0;
-        self.HFPGDCJMNIK = ::protobuf::EnumOrUnknown::new(super::HDIOKENOFNJ::HDIOKENOFNJ::HDIOKENOFNJ_EEGFMMCGCNH);
-        self.ENMLPFBMPNI = 0;
-        self.JIDBIMNMLJP = 0;
-        self.PIGPKIDNMDH = 0;
-        self.IOMEILDMBNE = 0;
-        self.CJLBLDFGELH = 0;
-        self.GGPKMPBBENP = 0;
-        self.NMPCJAOIOHJ = 0;
-        self.IMCGJPMBPPJ = 0;
         self.retcode = 0;
-        self.KCCACINBEEA = 0;
-        self.MMFKMEGECOI = 0;
-        self.HCENDLKKHOC = 0;
+        self.is_taken_reward = false;
+        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDataScRsp {
         static instance: GetDataScRsp = GetDataScRsp {
-            CMBJOLCGMAI: ::std::vec::Vec::new(),
-            lineup: ::protobuf::MessageField::none(),
-            ICBIMKIEOEP: ::std::vec::Vec::new(),
-            JCOAGOJEAPB: ::std::vec::Vec::new(),
-            FBNEKMPIAKD: 0,
-            HFPGDCJMNIK: ::protobuf::EnumOrUnknown::from_i32(0),
-            ENMLPFBMPNI: 0,
-            JIDBIMNMLJP: 0,
-            PIGPKIDNMDH: 0,
-            IOMEILDMBNE: 0,
-            CJLBLDFGELH: 0,
-            GGPKMPBBENP: 0,
-            NMPCJAOIOHJ: 0,
-            IMCGJPMBPPJ: 0,
             retcode: 0,
-            KCCACINBEEA: 0,
-            MMFKMEGECOI: 0,
-            HCENDLKKHOC: 0,
+            is_taken_reward: false,
+            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -455,25 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GetDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetDataScRsp.proto\x1a\x11GADFFIFFNHM.proto\x1a\x11GCFGCHAMNOL.pro\
-    to\x1a\x11HDIOKENOFNJ.proto\x1a\x11ONNMLLIEENI.proto\"\x9b\x05\n\x0cGetD\
-    ataScRsp\x12.\n\x0bCMBJOLCGMAI\x18\x08\x20\x03(\x0b2\x0c.ONNMLLIEENIR\
-    \x0bCMBJOLCGMAI\x12$\n\x06lineup\x18\x04\x20\x01(\x0b2\x0c.GCFGCHAMNOLR\
-    \x06lineup\x12\x20\n\x0bICBIMKIEOEP\x18\x0b\x20\x03(\rR\x0bICBIMKIEOEP\
-    \x12.\n\x0bJCOAGOJEAPB\x18\x05\x20\x03(\x0b2\x0c.GADFFIFFNHMR\x0bJCOAGOJ\
-    EAPB\x12\x20\n\x0bFBNEKMPIAKD\x18\x0e\x20\x01(\rR\x0bFBNEKMPIAKD\x12.\n\
-    \x0bHFPGDCJMNIK\x18\x0c\x20\x01(\x0e2\x0c.HDIOKENOFNJR\x0bHFPGDCJMNIK\
-    \x12!\n\x0bENMLPFBMPNI\x18\xb2\x0f\x20\x01(\rR\x0bENMLPFBMPNI\x12\x20\n\
-    \x0bJIDBIMNMLJP\x18\x01\x20\x01(\rR\x0bJIDBIMNMLJP\x12\x20\n\x0bPIGPKIDN\
-    MDH\x18\n\x20\x01(\rR\x0bPIGPKIDNMDH\x12\x20\n\x0bIOMEILDMBNE\x18\x03\
-    \x20\x01(\rR\x0bIOMEILDMBNE\x12\x20\n\x0bCJLBLDFGELH\x18\x07\x20\x01(\rR\
-    \x0bCJLBLDFGELH\x12!\n\x0bGGPKMPBBENP\x18\xd9\x0b\x20\x01(\rR\x0bGGPKMPB\
-    BENP\x12\x20\n\x0bNMPCJAOIOHJ\x18i\x20\x01(\rR\x0bNMPCJAOIOHJ\x12\x20\n\
-    \x0bIMCGJPMBPPJ\x18\x06\x20\x01(\rR\x0bIMCGJPMBPPJ\x12\x18\n\x07retcode\
-    \x18\x0f\x20\x01(\rR\x07retcode\x12!\n\x0bKCCACINBEEA\x18\x94\x0e\x20\
-    \x01(\rR\x0bKCCACINBEEA\x12\x20\n\x0bMMFKMEGECOI\x18\t\x20\x01(\rR\x0bMM\
-    FKMEGECOI\x12\x20\n\x0bHCENDLKKHOC\x18\x02\x20\x01(\rR\x0bHCENDLKKHOCb\
-    \x06proto3\
+    \n\x12GetDataScRsp.proto\"m\n\x0cGetDataScRsp\x12\x18\n\x07retcode\x18\
+    \x07\x20\x01(\rR\x07retcode\x12&\n\x0fis_taken_reward\x18\n\x20\x01(\x08\
+    R\risTakenReward\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08avatarIdb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -490,11 +203,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::GADFFIFFNHM::file_descriptor().clone());
-            deps.push(super::GCFGCHAMNOL::file_descriptor().clone());
-            deps.push(super::HDIOKENOFNJ::file_descriptor().clone());
-            deps.push(super::ONNMLLIEENI::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

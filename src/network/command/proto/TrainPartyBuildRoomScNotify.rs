@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPMHKECPBOJ)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrainPartyBuildRoomScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CPMHKECPBOJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildRoomScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!TrainPartyBuildRoomScNotify.proto\x1a\x14TrainPartyInfo.proto\"P\n\
-    \x1bTrainPartyBuildRoomScNotify\x121\n\x0bCPMHKECPBOJ\x18\x01\x20\x01(\
-    \x0b2\x0f.TrainPartyInfoR\x0bCPMHKECPBOJb\x06proto3\
+    \x1bTrainPartyBuildRoomScNotify\x121\n\x0bCPMHKECPBOJ\x18\t\x20\x01(\x0b\
+    2\x0f.TrainPartyInfoR\x0bCPMHKECPBOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

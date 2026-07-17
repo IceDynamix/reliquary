@@ -86,13 +86,13 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.JDIFHPAFPID = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.PCJOBDNLEAI = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.PMCPIECGEHH = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JDIFHPAFPID != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JDIFHPAFPID);
+            my_size += ::protobuf::rt::uint32_size(8, self.JDIFHPAFPID);
         }
         if self.PCJOBDNLEAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PCJOBDNLEAI);
+            my_size += ::protobuf::rt::uint32_size(11, self.PCJOBDNLEAI);
         }
         if self.PMCPIECGEHH != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JDIFHPAFPID != 0 {
-            os.write_uint32(7, self.JDIFHPAFPID)?;
+            os.write_uint32(8, self.JDIFHPAFPID)?;
         }
         if self.PCJOBDNLEAI != 0 {
-            os.write_uint32(12, self.PCJOBDNLEAI)?;
+            os.write_uint32(11, self.PCJOBDNLEAI)?;
         }
         if self.PMCPIECGEHH != false {
-            os.write_bool(9, self.PMCPIECGEHH)?;
+            os.write_bool(13, self.PMCPIECGEHH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for FateShopSellBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFateShopSellBuffCsReq.proto\"}\n\x15FateShopSellBuffCsReq\x12\x20\
-    \n\x0bJDIFHPAFPID\x18\x07\x20\x01(\rR\x0bJDIFHPAFPID\x12\x20\n\x0bPCJOBD\
-    NLEAI\x18\x0c\x20\x01(\rR\x0bPCJOBDNLEAI\x12\x20\n\x0bPMCPIECGEHH\x18\t\
+    \n\x0bJDIFHPAFPID\x18\x08\x20\x01(\rR\x0bJDIFHPAFPID\x12\x20\n\x0bPCJOBD\
+    NLEAI\x18\x0b\x20\x01(\rR\x0bPCJOBDNLEAI\x12\x20\n\x0bPMCPIECGEHH\x18\r\
     \x20\x01(\x08R\x0bPMCPIECGEHHb\x06proto3\
 ";
 

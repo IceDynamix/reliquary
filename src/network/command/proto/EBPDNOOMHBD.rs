@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EBPDNOOMHBD {
     // message fields
-    // @@protoc_insertion_point(field:EBPDNOOMHBD.BDGLPMHPEKD)
-    pub BDGLPMHPEKD: ::std::string::String,
-    // @@protoc_insertion_point(field:EBPDNOOMHBD.COBOAEBCMCO)
-    pub COBOAEBCMCO: ::protobuf::MessageField<super::IBHHJPCIOIC::IBHHJPCIOIC>,
     // @@protoc_insertion_point(field:EBPDNOOMHBD.JJOGEHPDOKH)
     pub JJOGEHPDOKH: ::std::vec::Vec<super::JIEAANCEIJP::JIEAANCEIJP>,
+    // @@protoc_insertion_point(field:EBPDNOOMHBD.BDGLPMHPEKD)
+    pub BDGLPMHPEKD: ::std::string::String,
     // @@protoc_insertion_point(field:EBPDNOOMHBD.debug_extra_info)
     pub debug_extra_info: ::std::string::String,
     // @@protoc_insertion_point(field:EBPDNOOMHBD.ADAILGDCPNH)
     pub ADAILGDCPNH: ::std::vec::Vec<super::PAPJEPAJPCJ::PAPJEPAJPCJ>,
-    // @@protoc_insertion_point(field:EBPDNOOMHBD.floor_id)
-    pub floor_id: u32,
-    // @@protoc_insertion_point(field:EBPDNOOMHBD.PBIGECFCHEN)
-    pub PBIGECFCHEN: u32,
-    // @@protoc_insertion_point(field:EBPDNOOMHBD.ABDBLDPCJCJ)
-    pub ABDBLDPCJCJ: u32,
     // @@protoc_insertion_point(field:EBPDNOOMHBD.plane_id)
     pub plane_id: u32,
+    // @@protoc_insertion_point(field:EBPDNOOMHBD.floor_id)
+    pub floor_id: u32,
+    // @@protoc_insertion_point(field:EBPDNOOMHBD.ABDBLDPCJCJ)
+    pub ABDBLDPCJCJ: u32,
+    // @@protoc_insertion_point(field:EBPDNOOMHBD.PBIGECFCHEN)
+    pub PBIGECFCHEN: u32,
+    // @@protoc_insertion_point(field:EBPDNOOMHBD.COBOAEBCMCO)
+    pub COBOAEBCMCO: ::protobuf::MessageField<super::IBHHJPCIOIC::IBHHJPCIOIC>,
     // @@protoc_insertion_point(field:EBPDNOOMHBD.IOHJEHHHPCL)
     pub IOHJEHHHPCL: u32,
     // special fields
@@ -67,20 +67,15 @@ impl EBPDNOOMHBD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDGLPMHPEKD",
-            |m: &EBPDNOOMHBD| { &m.BDGLPMHPEKD },
-            |m: &mut EBPDNOOMHBD| { &mut m.BDGLPMHPEKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IBHHJPCIOIC::IBHHJPCIOIC>(
-            "COBOAEBCMCO",
-            |m: &EBPDNOOMHBD| { &m.COBOAEBCMCO },
-            |m: &mut EBPDNOOMHBD| { &mut m.COBOAEBCMCO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JJOGEHPDOKH",
             |m: &EBPDNOOMHBD| { &m.JJOGEHPDOKH },
             |m: &mut EBPDNOOMHBD| { &mut m.JJOGEHPDOKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDGLPMHPEKD",
+            |m: &EBPDNOOMHBD| { &m.BDGLPMHPEKD },
+            |m: &mut EBPDNOOMHBD| { &mut m.BDGLPMHPEKD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "debug_extra_info",
@@ -93,14 +88,14 @@ impl EBPDNOOMHBD {
             |m: &mut EBPDNOOMHBD| { &mut m.ADAILGDCPNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &EBPDNOOMHBD| { &m.plane_id },
+            |m: &mut EBPDNOOMHBD| { &mut m.plane_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
             |m: &EBPDNOOMHBD| { &m.floor_id },
             |m: &mut EBPDNOOMHBD| { &mut m.floor_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBIGECFCHEN",
-            |m: &EBPDNOOMHBD| { &m.PBIGECFCHEN },
-            |m: &mut EBPDNOOMHBD| { &mut m.PBIGECFCHEN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ABDBLDPCJCJ",
@@ -108,9 +103,14 @@ impl EBPDNOOMHBD {
             |m: &mut EBPDNOOMHBD| { &mut m.ABDBLDPCJCJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &EBPDNOOMHBD| { &m.plane_id },
-            |m: &mut EBPDNOOMHBD| { &mut m.plane_id },
+            "PBIGECFCHEN",
+            |m: &EBPDNOOMHBD| { &m.PBIGECFCHEN },
+            |m: &mut EBPDNOOMHBD| { &mut m.PBIGECFCHEN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IBHHJPCIOIC::IBHHJPCIOIC>(
+            "COBOAEBCMCO",
+            |m: &EBPDNOOMHBD| { &m.COBOAEBCMCO },
+            |m: &mut EBPDNOOMHBD| { &mut m.COBOAEBCMCO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IOHJEHHHPCL",
@@ -135,14 +135,11 @@ impl ::protobuf::Message for EBPDNOOMHBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.BDGLPMHPEKD = is.read_string()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COBOAEBCMCO)?;
-                },
                 10 => {
                     self.JJOGEHPDOKH.push(is.read_message()?);
+                },
+                18 => {
+                    self.BDGLPMHPEKD = is.read_string()?;
                 },
                 26 => {
                     self.debug_extra_info = is.read_string()?;
@@ -150,17 +147,20 @@ impl ::protobuf::Message for EBPDNOOMHBD {
                 34 => {
                     self.ADAILGDCPNH.push(is.read_message()?);
                 },
+                40 => {
+                    self.plane_id = is.read_uint32()?;
+                },
                 48 => {
                     self.floor_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.PBIGECFCHEN = is.read_uint32()?;
                 },
                 56 => {
                     self.ABDBLDPCJCJ = is.read_uint32()?;
                 },
-                40 => {
-                    self.plane_id = is.read_uint32()?;
+                64 => {
+                    self.PBIGECFCHEN = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COBOAEBCMCO)?;
                 },
                 80 => {
                     self.IOHJEHHHPCL = is.read_uint32()?;
@@ -177,17 +177,13 @@ impl ::protobuf::Message for EBPDNOOMHBD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.BDGLPMHPEKD.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.BDGLPMHPEKD);
-        }
-        if let Some(v) = self.COBOAEBCMCO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.JJOGEHPDOKH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if !self.BDGLPMHPEKD.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.BDGLPMHPEKD);
+        }
         if !self.debug_extra_info.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.debug_extra_info);
         }
@@ -195,17 +191,21 @@ impl ::protobuf::Message for EBPDNOOMHBD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.plane_id);
+        }
         if self.floor_id != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.floor_id);
-        }
-        if self.PBIGECFCHEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PBIGECFCHEN);
         }
         if self.ABDBLDPCJCJ != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.ABDBLDPCJCJ);
         }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.plane_id);
+        if self.PBIGECFCHEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.PBIGECFCHEN);
+        }
+        if let Some(v) = self.COBOAEBCMCO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.IOHJEHHHPCL != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.IOHJEHHHPCL);
@@ -216,32 +216,32 @@ impl ::protobuf::Message for EBPDNOOMHBD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.BDGLPMHPEKD.is_empty() {
-            os.write_string(2, &self.BDGLPMHPEKD)?;
-        }
-        if let Some(v) = self.COBOAEBCMCO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         for v in &self.JJOGEHPDOKH {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if !self.BDGLPMHPEKD.is_empty() {
+            os.write_string(2, &self.BDGLPMHPEKD)?;
+        }
         if !self.debug_extra_info.is_empty() {
             os.write_string(3, &self.debug_extra_info)?;
         }
         for v in &self.ADAILGDCPNH {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.plane_id != 0 {
+            os.write_uint32(5, self.plane_id)?;
+        }
         if self.floor_id != 0 {
             os.write_uint32(6, self.floor_id)?;
-        }
-        if self.PBIGECFCHEN != 0 {
-            os.write_uint32(8, self.PBIGECFCHEN)?;
         }
         if self.ABDBLDPCJCJ != 0 {
             os.write_uint32(7, self.ABDBLDPCJCJ)?;
         }
-        if self.plane_id != 0 {
-            os.write_uint32(5, self.plane_id)?;
+        if self.PBIGECFCHEN != 0 {
+            os.write_uint32(8, self.PBIGECFCHEN)?;
+        }
+        if let Some(v) = self.COBOAEBCMCO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.IOHJEHHHPCL != 0 {
             os.write_uint32(10, self.IOHJEHHHPCL)?;
@@ -263,30 +263,30 @@ impl ::protobuf::Message for EBPDNOOMHBD {
     }
 
     fn clear(&mut self) {
-        self.BDGLPMHPEKD.clear();
-        self.COBOAEBCMCO.clear();
         self.JJOGEHPDOKH.clear();
+        self.BDGLPMHPEKD.clear();
         self.debug_extra_info.clear();
         self.ADAILGDCPNH.clear();
-        self.floor_id = 0;
-        self.PBIGECFCHEN = 0;
-        self.ABDBLDPCJCJ = 0;
         self.plane_id = 0;
+        self.floor_id = 0;
+        self.ABDBLDPCJCJ = 0;
+        self.PBIGECFCHEN = 0;
+        self.COBOAEBCMCO.clear();
         self.IOHJEHHHPCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EBPDNOOMHBD {
         static instance: EBPDNOOMHBD = EBPDNOOMHBD {
-            BDGLPMHPEKD: ::std::string::String::new(),
-            COBOAEBCMCO: ::protobuf::MessageField::none(),
             JJOGEHPDOKH: ::std::vec::Vec::new(),
+            BDGLPMHPEKD: ::std::string::String::new(),
             debug_extra_info: ::std::string::String::new(),
             ADAILGDCPNH: ::std::vec::Vec::new(),
-            floor_id: 0,
-            PBIGECFCHEN: 0,
-            ABDBLDPCJCJ: 0,
             plane_id: 0,
+            floor_id: 0,
+            ABDBLDPCJCJ: 0,
+            PBIGECFCHEN: 0,
+            COBOAEBCMCO: ::protobuf::MessageField::none(),
             IOHJEHHHPCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -313,16 +313,16 @@ impl ::protobuf::reflect::ProtobufValue for EBPDNOOMHBD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EBPDNOOMHBD.proto\x1a\x11IBHHJPCIOIC.proto\x1a\x11JIEAANCEIJP.prot\
-    o\x1a\x11PAPJEPAJPCJ.proto\"\x85\x03\n\x0bEBPDNOOMHBD\x12\x20\n\x0bBDGLP\
-    MHPEKD\x18\x02\x20\x01(\tR\x0bBDGLPMHPEKD\x12.\n\x0bCOBOAEBCMCO\x18\t\
-    \x20\x01(\x0b2\x0c.IBHHJPCIOICR\x0bCOBOAEBCMCO\x12.\n\x0bJJOGEHPDOKH\x18\
-    \x01\x20\x03(\x0b2\x0c.JIEAANCEIJPR\x0bJJOGEHPDOKH\x12(\n\x10debug_extra\
-    _info\x18\x03\x20\x01(\tR\x0edebugExtraInfo\x12.\n\x0bADAILGDCPNH\x18\
-    \x04\x20\x03(\x0b2\x0c.PAPJEPAJPCJR\x0bADAILGDCPNH\x12\x19\n\x08floor_id\
-    \x18\x06\x20\x01(\rR\x07floorId\x12\x20\n\x0bPBIGECFCHEN\x18\x08\x20\x01\
-    (\rR\x0bPBIGECFCHEN\x12\x20\n\x0bABDBLDPCJCJ\x18\x07\x20\x01(\rR\x0bABDB\
-    LDPCJCJ\x12\x19\n\x08plane_id\x18\x05\x20\x01(\rR\x07planeId\x12\x20\n\
-    \x0bIOHJEHHHPCL\x18\n\x20\x01(\rR\x0bIOHJEHHHPCLb\x06proto3\
+    o\x1a\x11PAPJEPAJPCJ.proto\"\x85\x03\n\x0bEBPDNOOMHBD\x12.\n\x0bJJOGEHPD\
+    OKH\x18\x01\x20\x03(\x0b2\x0c.JIEAANCEIJPR\x0bJJOGEHPDOKH\x12\x20\n\x0bB\
+    DGLPMHPEKD\x18\x02\x20\x01(\tR\x0bBDGLPMHPEKD\x12(\n\x10debug_extra_info\
+    \x18\x03\x20\x01(\tR\x0edebugExtraInfo\x12.\n\x0bADAILGDCPNH\x18\x04\x20\
+    \x03(\x0b2\x0c.PAPJEPAJPCJR\x0bADAILGDCPNH\x12\x19\n\x08plane_id\x18\x05\
+    \x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\x06\x20\x01(\rR\x07flo\
+    orId\x12\x20\n\x0bABDBLDPCJCJ\x18\x07\x20\x01(\rR\x0bABDBLDPCJCJ\x12\x20\
+    \n\x0bPBIGECFCHEN\x18\x08\x20\x01(\rR\x0bPBIGECFCHEN\x12.\n\x0bCOBOAEBCM\
+    CO\x18\t\x20\x01(\x0b2\x0c.IBHHJPCIOICR\x0bCOBOAEBCMCO\x12\x20\n\x0bIOHJ\
+    EHHHPCL\x18\n\x20\x01(\rR\x0bIOHJEHHHPCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

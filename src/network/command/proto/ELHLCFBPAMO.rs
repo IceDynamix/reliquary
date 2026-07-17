@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ELHLCFBPAMO {
     // message fields
-    // @@protoc_insertion_point(field:ELHLCFBPAMO.FJIKMHCJMKH)
-    pub FJIKMHCJMKH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ELHLCFBPAMO.LLICIMBCNPF)
-    pub LLICIMBCNPF: u32,
+    // @@protoc_insertion_point(field:ELHLCFBPAMO.attribute_list)
+    pub attribute_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ELHLCFBPAMO.composition_type)
+    pub composition_type: u32,
     // @@protoc_insertion_point(field:ELHLCFBPAMO.level)
     pub level: u32,
     // special fields
@@ -54,14 +54,14 @@ impl ELHLCFBPAMO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJIKMHCJMKH",
-            |m: &ELHLCFBPAMO| { &m.FJIKMHCJMKH },
-            |m: &mut ELHLCFBPAMO| { &mut m.FJIKMHCJMKH },
+            "attribute_list",
+            |m: &ELHLCFBPAMO| { &m.attribute_list },
+            |m: &mut ELHLCFBPAMO| { &mut m.attribute_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLICIMBCNPF",
-            |m: &ELHLCFBPAMO| { &m.LLICIMBCNPF },
-            |m: &mut ELHLCFBPAMO| { &mut m.LLICIMBCNPF },
+            "composition_type",
+            |m: &ELHLCFBPAMO| { &m.composition_type },
+            |m: &mut ELHLCFBPAMO| { &mut m.composition_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -87,15 +87,15 @@ impl ::protobuf::Message for ELHLCFBPAMO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FJIKMHCJMKH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.attribute_list)?;
                 },
                 16 => {
-                    self.FJIKMHCJMKH.push(is.read_uint32()?);
+                    self.attribute_list.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.LLICIMBCNPF = is.read_uint32()?;
+                72 => {
+                    self.composition_type = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for ELHLCFBPAMO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.FJIKMHCJMKH);
-        if self.LLICIMBCNPF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LLICIMBCNPF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.attribute_list);
+        if self.composition_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.composition_type);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for ELHLCFBPAMO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.FJIKMHCJMKH)?;
-        if self.LLICIMBCNPF != 0 {
-            os.write_uint32(6, self.LLICIMBCNPF)?;
+        os.write_repeated_packed_uint32(2, &self.attribute_list)?;
+        if self.composition_type != 0 {
+            os.write_uint32(9, self.composition_type)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for ELHLCFBPAMO {
     }
 
     fn clear(&mut self) {
-        self.FJIKMHCJMKH.clear();
-        self.LLICIMBCNPF = 0;
+        self.attribute_list.clear();
+        self.composition_type = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ELHLCFBPAMO {
         static instance: ELHLCFBPAMO = ELHLCFBPAMO {
-            FJIKMHCJMKH: ::std::vec::Vec::new(),
-            LLICIMBCNPF: 0,
+            attribute_list: ::std::vec::Vec::new(),
+            composition_type: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for ELHLCFBPAMO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ELHLCFBPAMO.proto\"g\n\x0bELHLCFBPAMO\x12\x20\n\x0bFJIKMHCJMKH\x18\
-    \x02\x20\x03(\rR\x0bFJIKMHCJMKH\x12\x20\n\x0bLLICIMBCNPF\x18\x06\x20\x01\
-    (\rR\x0bLLICIMBCNPF\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05levelb\x06\
-    proto3\
+    \n\x11ELHLCFBPAMO.proto\"u\n\x0bELHLCFBPAMO\x12%\n\x0eattribute_list\x18\
+    \x02\x20\x03(\rR\rattributeList\x12)\n\x10composition_type\x18\t\x20\x01\
+    (\rR\x0fcompositionType\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05levelb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

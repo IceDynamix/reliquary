@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GHAJMKCEEPJ {
     // message fields
-    // @@protoc_insertion_point(field:GHAJMKCEEPJ.MLKBOBIEAPL)
-    pub MLKBOBIEAPL: bool,
     // @@protoc_insertion_point(field:GHAJMKCEEPJ.NOILILELKFB)
     pub NOILILELKFB: u32,
+    // @@protoc_insertion_point(field:GHAJMKCEEPJ.MLKBOBIEAPL)
+    pub MLKBOBIEAPL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GHAJMKCEEPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GHAJMKCEEPJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLKBOBIEAPL",
-            |m: &GHAJMKCEEPJ| { &m.MLKBOBIEAPL },
-            |m: &mut GHAJMKCEEPJ| { &mut m.MLKBOBIEAPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOILILELKFB",
             |m: &GHAJMKCEEPJ| { &m.NOILILELKFB },
             |m: &mut GHAJMKCEEPJ| { &mut m.NOILILELKFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLKBOBIEAPL",
+            |m: &GHAJMKCEEPJ| { &m.MLKBOBIEAPL },
+            |m: &mut GHAJMKCEEPJ| { &mut m.MLKBOBIEAPL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GHAJMKCEEPJ>(
             "GHAJMKCEEPJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GHAJMKCEEPJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                48 => {
+                    self.NOILILELKFB = is.read_uint32()?;
+                },
                 104 => {
                     self.MLKBOBIEAPL = is.read_bool()?;
-                },
-                120 => {
-                    self.NOILILELKFB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GHAJMKCEEPJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NOILILELKFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NOILILELKFB);
+        }
         if self.MLKBOBIEAPL != false {
             my_size += 1 + 1;
-        }
-        if self.NOILILELKFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NOILILELKFB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GHAJMKCEEPJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NOILILELKFB != 0 {
+            os.write_uint32(6, self.NOILILELKFB)?;
+        }
         if self.MLKBOBIEAPL != false {
             os.write_bool(13, self.MLKBOBIEAPL)?;
-        }
-        if self.NOILILELKFB != 0 {
-            os.write_uint32(15, self.NOILILELKFB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GHAJMKCEEPJ {
     }
 
     fn clear(&mut self) {
-        self.MLKBOBIEAPL = false;
         self.NOILILELKFB = 0;
+        self.MLKBOBIEAPL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GHAJMKCEEPJ {
         static instance: GHAJMKCEEPJ = GHAJMKCEEPJ {
-            MLKBOBIEAPL: false,
             NOILILELKFB: 0,
+            MLKBOBIEAPL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GHAJMKCEEPJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GHAJMKCEEPJ.proto\"Q\n\x0bGHAJMKCEEPJ\x12\x20\n\x0bMLKBOBIEAPL\x18\
-    \r\x20\x01(\x08R\x0bMLKBOBIEAPL\x12\x20\n\x0bNOILILELKFB\x18\x0f\x20\x01\
-    (\rR\x0bNOILILELKFBb\x06proto3\
+    \n\x11GHAJMKCEEPJ.proto\"Q\n\x0bGHAJMKCEEPJ\x12\x20\n\x0bNOILILELKFB\x18\
+    \x06\x20\x01(\rR\x0bNOILILELKFB\x12\x20\n\x0bMLKBOBIEAPL\x18\r\x20\x01(\
+    \x08R\x0bMLKBOBIEAPLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

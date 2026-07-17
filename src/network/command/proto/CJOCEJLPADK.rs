@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CJOCEJLPADK {
     // message fields
-    // @@protoc_insertion_point(field:CJOCEJLPADK.BJODJNFGMCB)
-    pub BJODJNFGMCB: ::std::vec::Vec<super::OGHAIFPHMPE::OGHAIFPHMPE>,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.ALHIONICLCM)
-    pub ALHIONICLCM: ::std::vec::Vec<super::OGHAIFPHMPE::OGHAIFPHMPE>,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.GNAMNBDIEKG)
-    pub GNAMNBDIEKG: u32,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.ILLEDJLNGNF)
-    pub ILLEDJLNGNF: u32,
-    // @@protoc_insertion_point(field:CJOCEJLPADK.CKLCDAGMFKP)
-    pub CKLCDAGMFKP: u64,
     // @@protoc_insertion_point(field:CJOCEJLPADK.monster_battle_type)
     pub monster_battle_type: u32,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.room_uid)
+    pub room_uid: u64,
     // @@protoc_insertion_point(field:CJOCEJLPADK.level_id)
     pub level_id: u32,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.GNAMNBDIEKG)
+    pub GNAMNBDIEKG: u32,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.BJODJNFGMCB)
+    pub BJODJNFGMCB: ::std::vec::Vec<super::OGHAIFPHMPE::OGHAIFPHMPE>,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.rank)
+    pub rank: u32,
     // @@protoc_insertion_point(field:CJOCEJLPADK.GAENFKKAKOI)
     pub GAENFKKAKOI: u64,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.ALHIONICLCM)
+    pub ALHIONICLCM: ::std::vec::Vec<super::OGHAIFPHMPE::OGHAIFPHMPE>,
+    // @@protoc_insertion_point(field:CJOCEJLPADK.ILLEDJLNGNF)
+    pub ILLEDJLNGNF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CJOCEJLPADK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,40 +65,15 @@ impl CJOCEJLPADK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BJODJNFGMCB",
-            |m: &CJOCEJLPADK| { &m.BJODJNFGMCB },
-            |m: &mut CJOCEJLPADK| { &mut m.BJODJNFGMCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ALHIONICLCM",
-            |m: &CJOCEJLPADK| { &m.ALHIONICLCM },
-            |m: &mut CJOCEJLPADK| { &mut m.ALHIONICLCM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNAMNBDIEKG",
-            |m: &CJOCEJLPADK| { &m.GNAMNBDIEKG },
-            |m: &mut CJOCEJLPADK| { &mut m.GNAMNBDIEKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &CJOCEJLPADK| { &m.rank },
-            |m: &mut CJOCEJLPADK| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILLEDJLNGNF",
-            |m: &CJOCEJLPADK| { &m.ILLEDJLNGNF },
-            |m: &mut CJOCEJLPADK| { &mut m.ILLEDJLNGNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKLCDAGMFKP",
-            |m: &CJOCEJLPADK| { &m.CKLCDAGMFKP },
-            |m: &mut CJOCEJLPADK| { &mut m.CKLCDAGMFKP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_battle_type",
             |m: &CJOCEJLPADK| { &m.monster_battle_type },
             |m: &mut CJOCEJLPADK| { &mut m.monster_battle_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_uid",
+            |m: &CJOCEJLPADK| { &m.room_uid },
+            |m: &mut CJOCEJLPADK| { &mut m.room_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -106,9 +81,34 @@ impl CJOCEJLPADK {
             |m: &mut CJOCEJLPADK| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNAMNBDIEKG",
+            |m: &CJOCEJLPADK| { &m.GNAMNBDIEKG },
+            |m: &mut CJOCEJLPADK| { &mut m.GNAMNBDIEKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BJODJNFGMCB",
+            |m: &CJOCEJLPADK| { &m.BJODJNFGMCB },
+            |m: &mut CJOCEJLPADK| { &mut m.BJODJNFGMCB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &CJOCEJLPADK| { &m.rank },
+            |m: &mut CJOCEJLPADK| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GAENFKKAKOI",
             |m: &CJOCEJLPADK| { &m.GAENFKKAKOI },
             |m: &mut CJOCEJLPADK| { &mut m.GAENFKKAKOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ALHIONICLCM",
+            |m: &CJOCEJLPADK| { &m.ALHIONICLCM },
+            |m: &mut CJOCEJLPADK| { &mut m.ALHIONICLCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ILLEDJLNGNF",
+            |m: &CJOCEJLPADK| { &m.ILLEDJLNGNF },
+            |m: &mut CJOCEJLPADK| { &mut m.ILLEDJLNGNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CJOCEJLPADK>(
             "CJOCEJLPADK",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for CJOCEJLPADK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.BJODJNFGMCB.push(is.read_message()?);
-                },
-                66 => {
-                    self.ALHIONICLCM.push(is.read_message()?);
-                },
-                32 => {
-                    self.GNAMNBDIEKG = is.read_uint32()?;
-                },
-                48 => {
-                    self.rank = is.read_uint32()?;
-                },
-                72 => {
-                    self.ILLEDJLNGNF = is.read_uint32()?;
-                },
-                16 => {
-                    self.CKLCDAGMFKP = is.read_uint64()?;
-                },
                 8 => {
                     self.monster_battle_type = is.read_uint32()?;
+                },
+                16 => {
+                    self.room_uid = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
                 },
+                32 => {
+                    self.GNAMNBDIEKG = is.read_uint32()?;
+                },
+                42 => {
+                    self.BJODJNFGMCB.push(is.read_message()?);
+                },
+                48 => {
+                    self.rank = is.read_uint32()?;
+                },
                 56 => {
                     self.GAENFKKAKOI = is.read_uint64()?;
+                },
+                66 => {
+                    self.ALHIONICLCM.push(is.read_message()?);
+                },
+                72 => {
+                    self.ILLEDJLNGNF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,34 +167,34 @@ impl ::protobuf::Message for CJOCEJLPADK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BJODJNFGMCB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.ALHIONICLCM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.GNAMNBDIEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GNAMNBDIEKG);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.rank);
-        }
-        if self.ILLEDJLNGNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ILLEDJLNGNF);
-        }
-        if self.CKLCDAGMFKP != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
-        }
         if self.monster_battle_type != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
+        }
+        if self.room_uid != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
         }
+        if self.GNAMNBDIEKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.GNAMNBDIEKG);
+        }
+        for value in &self.BJODJNFGMCB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.rank);
+        }
         if self.GAENFKKAKOI != 0 {
             my_size += ::protobuf::rt::uint64_size(7, self.GAENFKKAKOI);
+        }
+        for value in &self.ALHIONICLCM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.ILLEDJLNGNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILLEDJLNGNF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -202,32 +202,32 @@ impl ::protobuf::Message for CJOCEJLPADK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BJODJNFGMCB {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.ALHIONICLCM {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.GNAMNBDIEKG != 0 {
-            os.write_uint32(4, self.GNAMNBDIEKG)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(6, self.rank)?;
-        }
-        if self.ILLEDJLNGNF != 0 {
-            os.write_uint32(9, self.ILLEDJLNGNF)?;
-        }
-        if self.CKLCDAGMFKP != 0 {
-            os.write_uint64(2, self.CKLCDAGMFKP)?;
-        }
         if self.monster_battle_type != 0 {
             os.write_uint32(1, self.monster_battle_type)?;
+        }
+        if self.room_uid != 0 {
+            os.write_uint64(2, self.room_uid)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
         }
+        if self.GNAMNBDIEKG != 0 {
+            os.write_uint32(4, self.GNAMNBDIEKG)?;
+        }
+        for v in &self.BJODJNFGMCB {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.rank != 0 {
+            os.write_uint32(6, self.rank)?;
+        }
         if self.GAENFKKAKOI != 0 {
             os.write_uint64(7, self.GAENFKKAKOI)?;
+        }
+        for v in &self.ALHIONICLCM {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.ILLEDJLNGNF != 0 {
+            os.write_uint32(9, self.ILLEDJLNGNF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,29 +246,29 @@ impl ::protobuf::Message for CJOCEJLPADK {
     }
 
     fn clear(&mut self) {
-        self.BJODJNFGMCB.clear();
-        self.ALHIONICLCM.clear();
-        self.GNAMNBDIEKG = 0;
-        self.rank = 0;
-        self.ILLEDJLNGNF = 0;
-        self.CKLCDAGMFKP = 0;
         self.monster_battle_type = 0;
+        self.room_uid = 0;
         self.level_id = 0;
+        self.GNAMNBDIEKG = 0;
+        self.BJODJNFGMCB.clear();
+        self.rank = 0;
         self.GAENFKKAKOI = 0;
+        self.ALHIONICLCM.clear();
+        self.ILLEDJLNGNF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CJOCEJLPADK {
         static instance: CJOCEJLPADK = CJOCEJLPADK {
-            BJODJNFGMCB: ::std::vec::Vec::new(),
-            ALHIONICLCM: ::std::vec::Vec::new(),
-            GNAMNBDIEKG: 0,
-            rank: 0,
-            ILLEDJLNGNF: 0,
-            CKLCDAGMFKP: 0,
             monster_battle_type: 0,
+            room_uid: 0,
             level_id: 0,
+            GNAMNBDIEKG: 0,
+            BJODJNFGMCB: ::std::vec::Vec::new(),
+            rank: 0,
             GAENFKKAKOI: 0,
+            ALHIONICLCM: ::std::vec::Vec::new(),
+            ILLEDJLNGNF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,16 +293,16 @@ impl ::protobuf::reflect::ProtobufValue for CJOCEJLPADK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CJOCEJLPADK.proto\x1a\x11OGHAIFPHMPE.proto\"\xd4\x02\n\x0bCJOCEJLP\
-    ADK\x12.\n\x0bBJODJNFGMCB\x18\x05\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bBJOD\
-    JNFGMCB\x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0b\
-    ALHIONICLCM\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIEKG\
-    \x12\x12\n\x04rank\x18\x06\x20\x01(\rR\x04rank\x12\x20\n\x0bILLEDJLNGNF\
-    \x18\t\x20\x01(\rR\x0bILLEDJLNGNF\x12\x20\n\x0bCKLCDAGMFKP\x18\x02\x20\
-    \x01(\x04R\x0bCKLCDAGMFKP\x12.\n\x13monster_battle_type\x18\x01\x20\x01(\
-    \rR\x11monsterBattleType\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07le\
-    velId\x12\x20\n\x0bGAENFKKAKOI\x18\x07\x20\x01(\x04R\x0bGAENFKKAKOIb\x06\
-    proto3\
+    \n\x11CJOCEJLPADK.proto\x1a\x11OGHAIFPHMPE.proto\"\xcd\x02\n\x0bCJOCEJLP\
+    ADK\x12.\n\x13monster_battle_type\x18\x01\x20\x01(\rR\x11monsterBattleTy\
+    pe\x12\x19\n\x08room_uid\x18\x02\x20\x01(\x04R\x07roomUid\x12\x19\n\x08l\
+    evel_id\x18\x03\x20\x01(\rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\
+    \x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x0bBJODJNFGMCB\x18\x05\x20\x03(\x0b2\
+    \x0c.OGHAIFPHMPER\x0bBJODJNFGMCB\x12\x12\n\x04rank\x18\x06\x20\x01(\rR\
+    \x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x07\x20\x01(\x04R\x0bGAENFKKAKOI\
+    \x12.\n\x0bALHIONICLCM\x18\x08\x20\x03(\x0b2\x0c.OGHAIFPHMPER\x0bALHIONI\
+    CLCM\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\x0bILLEDJLNGNFb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

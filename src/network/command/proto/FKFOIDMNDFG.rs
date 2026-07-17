@@ -30,12 +30,10 @@ pub struct FKFOIDMNDFG {
     // message fields
     // @@protoc_insertion_point(field:FKFOIDMNDFG.BNLLEJPCIGD)
     pub BNLLEJPCIGD: ::protobuf::MessageField<super::NOAKCDKAAFB::NOAKCDKAAFB>,
-    // @@protoc_insertion_point(field:FKFOIDMNDFG.EIOHFJMFOKF)
-    pub EIOHFJMFOKF: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:FKFOIDMNDFG.PHGJIJELKDB)
-    pub PHGJIJELKDB: ::protobuf::MessageField<super::GCBCKOKEAJH::GCBCKOKEAJH>,
     // @@protoc_insertion_point(field:FKFOIDMNDFG.KDDGKLNGNEA)
     pub KDDGKLNGNEA: ::protobuf::MessageField<super::EJHDAJAGFIJ::EJHDAJAGFIJ>,
+    // @@protoc_insertion_point(field:FKFOIDMNDFG.PHGJIJELKDB)
+    pub PHGJIJELKDB: ::protobuf::MessageField<super::GCBCKOKEAJH::GCBCKOKEAJH>,
     // special fields
     // @@protoc_insertion_point(special_field:FKFOIDMNDFG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,27 +51,22 @@ impl FKFOIDMNDFG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NOAKCDKAAFB::NOAKCDKAAFB>(
             "BNLLEJPCIGD",
             |m: &FKFOIDMNDFG| { &m.BNLLEJPCIGD },
             |m: &mut FKFOIDMNDFG| { &mut m.BNLLEJPCIGD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "EIOHFJMFOKF",
-            |m: &FKFOIDMNDFG| { &m.EIOHFJMFOKF },
-            |m: &mut FKFOIDMNDFG| { &mut m.EIOHFJMFOKF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJHDAJAGFIJ::EJHDAJAGFIJ>(
+            "KDDGKLNGNEA",
+            |m: &FKFOIDMNDFG| { &m.KDDGKLNGNEA },
+            |m: &mut FKFOIDMNDFG| { &mut m.KDDGKLNGNEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCBCKOKEAJH::GCBCKOKEAJH>(
             "PHGJIJELKDB",
             |m: &FKFOIDMNDFG| { &m.PHGJIJELKDB },
             |m: &mut FKFOIDMNDFG| { &mut m.PHGJIJELKDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJHDAJAGFIJ::EJHDAJAGFIJ>(
-            "KDDGKLNGNEA",
-            |m: &FKFOIDMNDFG| { &m.KDDGKLNGNEA },
-            |m: &mut FKFOIDMNDFG| { &mut m.KDDGKLNGNEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FKFOIDMNDFG>(
             "FKFOIDMNDFG",
@@ -93,17 +86,14 @@ impl ::protobuf::Message for FKFOIDMNDFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNLLEJPCIGD)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIOHFJMFOKF)?;
-                },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
-                },
-                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDDGKLNGNEA)?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,15 +111,11 @@ impl ::protobuf::Message for FKFOIDMNDFG {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.EIOHFJMFOKF.as_ref() {
+        if let Some(v) = self.KDDGKLNGNEA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.PHGJIJELKDB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.KDDGKLNGNEA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -140,16 +126,13 @@ impl ::protobuf::Message for FKFOIDMNDFG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BNLLEJPCIGD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.EIOHFJMFOKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.PHGJIJELKDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.KDDGKLNGNEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.PHGJIJELKDB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +152,16 @@ impl ::protobuf::Message for FKFOIDMNDFG {
 
     fn clear(&mut self) {
         self.BNLLEJPCIGD.clear();
-        self.EIOHFJMFOKF.clear();
-        self.PHGJIJELKDB.clear();
         self.KDDGKLNGNEA.clear();
+        self.PHGJIJELKDB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FKFOIDMNDFG {
         static instance: FKFOIDMNDFG = FKFOIDMNDFG {
             BNLLEJPCIGD: ::protobuf::MessageField::none(),
-            EIOHFJMFOKF: ::protobuf::MessageField::none(),
-            PHGJIJELKDB: ::protobuf::MessageField::none(),
             KDDGKLNGNEA: ::protobuf::MessageField::none(),
+            PHGJIJELKDB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -206,12 +187,11 @@ impl ::protobuf::reflect::ProtobufValue for FKFOIDMNDFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FKFOIDMNDFG.proto\x1a\x11EJHDAJAGFIJ.proto\x1a\x11GCBCKOKEAJH.prot\
-    o\x1a\x10LineupInfo.proto\x1a\x11NOAKCDKAAFB.proto\"\xcc\x01\n\x0bFKFOID\
-    MNDFG\x12.\n\x0bBNLLEJPCIGD\x18\x01\x20\x01(\x0b2\x0c.NOAKCDKAAFBR\x0bBN\
-    LLEJPCIGD\x12-\n\x0bEIOHFJMFOKF\x18\r\x20\x01(\x0b2\x0b.LineupInfoR\x0bE\
-    IOHFJMFOKF\x12.\n\x0bPHGJIJELKDB\x18\x06\x20\x01(\x0b2\x0c.GCBCKOKEAJHR\
-    \x0bPHGJIJELKDB\x12.\n\x0bKDDGKLNGNEA\x18\x0e\x20\x01(\x0b2\x0c.EJHDAJAG\
-    FIJR\x0bKDDGKLNGNEAb\x06proto3\
+    o\x1a\x11NOAKCDKAAFB.proto\"\x9d\x01\n\x0bFKFOIDMNDFG\x12.\n\x0bBNLLEJPC\
+    IGD\x18\x02\x20\x01(\x0b2\x0c.NOAKCDKAAFBR\x0bBNLLEJPCIGD\x12.\n\x0bKDDG\
+    KLNGNEA\x18\x06\x20\x01(\x0b2\x0c.EJHDAJAGFIJR\x0bKDDGKLNGNEA\x12.\n\x0b\
+    PHGJIJELKDB\x18\t\x20\x01(\x0b2\x0c.GCBCKOKEAJHR\x0bPHGJIJELKDBb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -228,10 +208,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::EJHDAJAGFIJ::file_descriptor().clone());
             deps.push(super::GCBCKOKEAJH::file_descriptor().clone());
-            deps.push(super::LineupInfo::file_descriptor().clone());
             deps.push(super::NOAKCDKAAFB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FKFOIDMNDFG::generated_message_descriptor_data());

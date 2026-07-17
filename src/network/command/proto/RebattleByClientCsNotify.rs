@@ -79,10 +79,10 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                72 => {
+                80 => {
                     self.NKDAAAGPCDB = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.NKDAAAGPCDB.value());
+            my_size += ::protobuf::rt::int32_size(10, self.NKDAAAGPCDB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RebattleByClientCsNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.NKDAAAGPCDB != ::protobuf::EnumOrUnknown::new(super::RebattleType::RebattleType::REBATTLE_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.NKDAAAGPCDB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for RebattleByClientCsNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRebattleByClientCsNotify.proto\x1a\x16BattleStatistics.proto\x1a\
     \x12RebattleType.proto\"p\n\x18RebattleByClientCsNotify\x12#\n\x03stt\
-    \x18\x0f\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12/\n\x0bNKDAAAGPCD\
-    B\x18\t\x20\x01(\x0e2\r.RebattleTypeR\x0bNKDAAAGPCDBb\x06proto3\
+    \x18\x02\x20\x01(\x0b2\x11.BattleStatisticsR\x03stt\x12/\n\x0bNKDAAAGPCD\
+    B\x18\n\x20\x01(\x0e2\r.RebattleTypeR\x0bNKDAAAGPCDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

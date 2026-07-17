@@ -79,10 +79,10 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.BAAGDILLLME = is.read_uint32()?;
                 },
-                8 => {
+                56 => {
                     self.IECKKCHJMLP = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BAAGDILLLME != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BAAGDILLLME);
+            my_size += ::protobuf::rt::uint32_size(1, self.BAAGDILLLME);
         }
         if self.IECKKCHJMLP != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FavourArchiveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BAAGDILLLME != 0 {
-            os.write_uint32(9, self.BAAGDILLLME)?;
+            os.write_uint32(1, self.BAAGDILLLME)?;
         }
         if self.IECKKCHJMLP != false {
-            os.write_bool(1, self.IECKKCHJMLP)?;
+            os.write_bool(7, self.IECKKCHJMLP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FavourArchiveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bB\
-    AAGDILLLME\x18\t\x20\x01(\rR\x0bBAAGDILLLME\x12\x20\n\x0bIECKKCHJMLP\x18\
-    \x01\x20\x01(\x08R\x0bIECKKCHJMLPb\x06proto3\
+    AAGDILLLME\x18\x01\x20\x01(\rR\x0bBAAGDILLLME\x12\x20\n\x0bIECKKCHJMLP\
+    \x18\x07\x20\x01(\x08R\x0bIECKKCHJMLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

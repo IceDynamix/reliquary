@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct V2FinishPveStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.KGHBJELHOBA)
-    pub KGHBJELHOBA: u32,
-    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.MPDHNFNCIEA)
-    pub MPDHNFNCIEA: u32,
-    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.AINKFEINNAK)
-    pub AINKFEINNAK: bool,
-    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:V2FinishPveStageCsReq.AELAEGOOBMB)
     pub AELAEGOOBMB: u32,
+    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.MPDHNFNCIEA)
+    pub MPDHNFNCIEA: u32,
+    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.KGHBJELHOBA)
+    pub KGHBJELHOBA: u32,
     // @@protoc_insertion_point(field:V2FinishPveStageCsReq.FGBIJPLPOBI)
     pub FGBIJPLPOBI: u32,
+    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:V2FinishPveStageCsReq.EOILKCCLEIF)
     pub EOILKCCLEIF: u32,
+    // @@protoc_insertion_point(field:V2FinishPveStageCsReq.AINKFEINNAK)
+    pub AINKFEINNAK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:V2FinishPveStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,9 @@ impl V2FinishPveStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGHBJELHOBA",
-            |m: &V2FinishPveStageCsReq| { &m.KGHBJELHOBA },
-            |m: &mut V2FinishPveStageCsReq| { &mut m.KGHBJELHOBA },
+            "AELAEGOOBMB",
+            |m: &V2FinishPveStageCsReq| { &m.AELAEGOOBMB },
+            |m: &mut V2FinishPveStageCsReq| { &mut m.AELAEGOOBMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MPDHNFNCIEA",
@@ -72,19 +72,9 @@ impl V2FinishPveStageCsReq {
             |m: &mut V2FinishPveStageCsReq| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AINKFEINNAK",
-            |m: &V2FinishPveStageCsReq| { &m.AINKFEINNAK },
-            |m: &mut V2FinishPveStageCsReq| { &mut m.AINKFEINNAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &V2FinishPveStageCsReq| { &m.is_win },
-            |m: &mut V2FinishPveStageCsReq| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AELAEGOOBMB",
-            |m: &V2FinishPveStageCsReq| { &m.AELAEGOOBMB },
-            |m: &mut V2FinishPveStageCsReq| { &mut m.AELAEGOOBMB },
+            "KGHBJELHOBA",
+            |m: &V2FinishPveStageCsReq| { &m.KGHBJELHOBA },
+            |m: &mut V2FinishPveStageCsReq| { &mut m.KGHBJELHOBA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGBIJPLPOBI",
@@ -92,9 +82,19 @@ impl V2FinishPveStageCsReq {
             |m: &mut V2FinishPveStageCsReq| { &mut m.FGBIJPLPOBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &V2FinishPveStageCsReq| { &m.is_win },
+            |m: &mut V2FinishPveStageCsReq| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EOILKCCLEIF",
             |m: &V2FinishPveStageCsReq| { &m.EOILKCCLEIF },
             |m: &mut V2FinishPveStageCsReq| { &mut m.EOILKCCLEIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AINKFEINNAK",
+            |m: &V2FinishPveStageCsReq| { &m.AINKFEINNAK },
+            |m: &mut V2FinishPveStageCsReq| { &mut m.AINKFEINNAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<V2FinishPveStageCsReq>(
             "V2FinishPveStageCsReq",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for V2FinishPveStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KGHBJELHOBA = is.read_uint32()?;
-                },
-                8 => {
-                    self.MPDHNFNCIEA = is.read_uint32()?;
-                },
-                88 => {
-                    self.AINKFEINNAK = is.read_bool()?;
-                },
-                24 => {
-                    self.is_win = is.read_bool()?;
-                },
-                56 => {
+                32 => {
                     self.AELAEGOOBMB = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
+                    self.MPDHNFNCIEA = is.read_uint32()?;
+                },
+                48 => {
+                    self.KGHBJELHOBA = is.read_uint32()?;
+                },
+                64 => {
                     self.FGBIJPLPOBI = is.read_uint32()?;
                 },
                 96 => {
+                    self.is_win = is.read_bool()?;
+                },
+                112 => {
                     self.EOILKCCLEIF = is.read_uint32()?;
+                },
+                120 => {
+                    self.AINKFEINNAK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for V2FinishPveStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGHBJELHOBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KGHBJELHOBA);
+        if self.AELAEGOOBMB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AELAEGOOBMB);
         }
         if self.MPDHNFNCIEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MPDHNFNCIEA);
+            my_size += ::protobuf::rt::uint32_size(5, self.MPDHNFNCIEA);
         }
-        if self.AINKFEINNAK != false {
-            my_size += 1 + 1;
+        if self.KGHBJELHOBA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KGHBJELHOBA);
+        }
+        if self.FGBIJPLPOBI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FGBIJPLPOBI);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.AELAEGOOBMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AELAEGOOBMB);
-        }
-        if self.FGBIJPLPOBI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FGBIJPLPOBI);
-        }
         if self.EOILKCCLEIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EOILKCCLEIF);
+            my_size += ::protobuf::rt::uint32_size(14, self.EOILKCCLEIF);
+        }
+        if self.AINKFEINNAK != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for V2FinishPveStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGHBJELHOBA != 0 {
-            os.write_uint32(15, self.KGHBJELHOBA)?;
+        if self.AELAEGOOBMB != 0 {
+            os.write_uint32(4, self.AELAEGOOBMB)?;
         }
         if self.MPDHNFNCIEA != 0 {
-            os.write_uint32(1, self.MPDHNFNCIEA)?;
+            os.write_uint32(5, self.MPDHNFNCIEA)?;
         }
-        if self.AINKFEINNAK != false {
-            os.write_bool(11, self.AINKFEINNAK)?;
-        }
-        if self.is_win != false {
-            os.write_bool(3, self.is_win)?;
-        }
-        if self.AELAEGOOBMB != 0 {
-            os.write_uint32(7, self.AELAEGOOBMB)?;
+        if self.KGHBJELHOBA != 0 {
+            os.write_uint32(6, self.KGHBJELHOBA)?;
         }
         if self.FGBIJPLPOBI != 0 {
-            os.write_uint32(4, self.FGBIJPLPOBI)?;
+            os.write_uint32(8, self.FGBIJPLPOBI)?;
+        }
+        if self.is_win != false {
+            os.write_bool(12, self.is_win)?;
         }
         if self.EOILKCCLEIF != 0 {
-            os.write_uint32(12, self.EOILKCCLEIF)?;
+            os.write_uint32(14, self.EOILKCCLEIF)?;
+        }
+        if self.AINKFEINNAK != false {
+            os.write_bool(15, self.AINKFEINNAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for V2FinishPveStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.KGHBJELHOBA = 0;
-        self.MPDHNFNCIEA = 0;
-        self.AINKFEINNAK = false;
-        self.is_win = false;
         self.AELAEGOOBMB = 0;
+        self.MPDHNFNCIEA = 0;
+        self.KGHBJELHOBA = 0;
         self.FGBIJPLPOBI = 0;
+        self.is_win = false;
         self.EOILKCCLEIF = 0;
+        self.AINKFEINNAK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static V2FinishPveStageCsReq {
         static instance: V2FinishPveStageCsReq = V2FinishPveStageCsReq {
-            KGHBJELHOBA: 0,
-            MPDHNFNCIEA: 0,
-            AINKFEINNAK: false,
-            is_win: false,
             AELAEGOOBMB: 0,
+            MPDHNFNCIEA: 0,
+            KGHBJELHOBA: 0,
             FGBIJPLPOBI: 0,
+            is_win: false,
             EOILKCCLEIF: 0,
+            AINKFEINNAK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,12 +256,13 @@ impl ::protobuf::reflect::ProtobufValue for V2FinishPveStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bV2FinishPveStageCsReq.proto\"\xfa\x01\n\x15V2FinishPveStageCsReq\
-    \x12\x20\n\x0bKGHBJELHOBA\x18\x0f\x20\x01(\rR\x0bKGHBJELHOBA\x12\x20\n\
-    \x0bMPDHNFNCIEA\x18\x01\x20\x01(\rR\x0bMPDHNFNCIEA\x12\x20\n\x0bAINKFEIN\
-    NAK\x18\x0b\x20\x01(\x08R\x0bAINKFEINNAK\x12\x15\n\x06is_win\x18\x03\x20\
-    \x01(\x08R\x05isWin\x12\x20\n\x0bAELAEGOOBMB\x18\x07\x20\x01(\rR\x0bAELA\
-    EGOOBMB\x12\x20\n\x0bFGBIJPLPOBI\x18\x04\x20\x01(\rR\x0bFGBIJPLPOBI\x12\
-    \x20\n\x0bEOILKCCLEIF\x18\x0c\x20\x01(\rR\x0bEOILKCCLEIFb\x06proto3\
+    \x12\x20\n\x0bAELAEGOOBMB\x18\x04\x20\x01(\rR\x0bAELAEGOOBMB\x12\x20\n\
+    \x0bMPDHNFNCIEA\x18\x05\x20\x01(\rR\x0bMPDHNFNCIEA\x12\x20\n\x0bKGHBJELH\
+    OBA\x18\x06\x20\x01(\rR\x0bKGHBJELHOBA\x12\x20\n\x0bFGBIJPLPOBI\x18\x08\
+    \x20\x01(\rR\x0bFGBIJPLPOBI\x12\x15\n\x06is_win\x18\x0c\x20\x01(\x08R\
+    \x05isWin\x12\x20\n\x0bEOILKCCLEIF\x18\x0e\x20\x01(\rR\x0bEOILKCCLEIF\
+    \x12\x20\n\x0bAINKFEINNAK\x18\x0f\x20\x01(\x08R\x0bAINKFEINNAKb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

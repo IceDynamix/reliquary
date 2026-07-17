@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDKJPKPEJFO {
     // message fields
-    // @@protoc_insertion_point(field:HDKJPKPEJFO.GKCABEGBOCG)
-    pub GKCABEGBOCG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HDKJPKPEJFO.level_id)
     pub level_id: u32,
+    // @@protoc_insertion_point(field:HDKJPKPEJFO.GKCABEGBOCG)
+    pub GKCABEGBOCG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:HDKJPKPEJFO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl HDKJPKPEJFO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GKCABEGBOCG",
-            |m: &HDKJPKPEJFO| { &m.GKCABEGBOCG },
-            |m: &mut HDKJPKPEJFO| { &mut m.GKCABEGBOCG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
             |m: &HDKJPKPEJFO| { &m.level_id },
             |m: &mut HDKJPKPEJFO| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GKCABEGBOCG",
+            |m: &HDKJPKPEJFO| { &m.GKCABEGBOCG },
+            |m: &mut HDKJPKPEJFO| { &mut m.GKCABEGBOCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDKJPKPEJFO>(
             "HDKJPKPEJFO",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for HDKJPKPEJFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                32 => {
+                    self.level_id = is.read_uint32()?;
+                },
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.GKCABEGBOCG)?;
                 },
-                104 => {
+                40 => {
                     self.GKCABEGBOCG.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.level_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for HDKJPKPEJFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.GKCABEGBOCG);
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.level_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GKCABEGBOCG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.GKCABEGBOCG)?;
         if self.level_id != 0 {
-            os.write_uint32(12, self.level_id)?;
+            os.write_uint32(4, self.level_id)?;
         }
+        os.write_repeated_packed_uint32(5, &self.GKCABEGBOCG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for HDKJPKPEJFO {
     }
 
     fn clear(&mut self) {
-        self.GKCABEGBOCG.clear();
         self.level_id = 0;
+        self.GKCABEGBOCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDKJPKPEJFO {
         static instance: HDKJPKPEJFO = HDKJPKPEJFO {
-            GKCABEGBOCG: ::std::vec::Vec::new(),
             level_id: 0,
+            GKCABEGBOCG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for HDKJPKPEJFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HDKJPKPEJFO.proto\"J\n\x0bHDKJPKPEJFO\x12\x20\n\x0bGKCABEGBOCG\x18\
-    \r\x20\x03(\rR\x0bGKCABEGBOCG\x12\x19\n\x08level_id\x18\x0c\x20\x01(\rR\
-    \x07levelIdb\x06proto3\
+    \n\x11HDKJPKPEJFO.proto\"J\n\x0bHDKJPKPEJFO\x12\x19\n\x08level_id\x18\
+    \x04\x20\x01(\rR\x07levelId\x12\x20\n\x0bGKCABEGBOCG\x18\x05\x20\x03(\rR\
+    \x0bGKCABEGBOCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

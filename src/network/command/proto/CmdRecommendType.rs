@@ -30,13 +30,13 @@ pub enum CmdRecommendType {
     // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_NLCDGIPGFDJ)
     APDINKHBHGC_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_DFIEHBOAJDG)
-    APDINKHBHGC_DFIEHBOAJDG = 2419,
+    APDINKHBHGC_DFIEHBOAJDG = 2403,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_CECCNMFJEPB)
-    APDINKHBHGC_CECCNMFJEPB = 2445,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_DDHLPICBNLN)
-    APDINKHBHGC_DDHLPICBNLN = 2429,
+    APDINKHBHGC_CECCNMFJEPB = 2407,
     // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_CMNBINBILDO)
-    APDINKHBHGC_CMNBINBILDO = 2409,
+    APDINKHBHGC_CMNBINBILDO = 2410,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_DDHLPICBNLN)
+    APDINKHBHGC_DDHLPICBNLN = 2421,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdRecommendType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
             0 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ),
-            2419 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG),
-            2445 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CECCNMFJEPB),
-            2429 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
-            2409 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CMNBINBILDO),
+            2403 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG),
+            2407 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CECCNMFJEPB),
+            2410 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CMNBINBILDO),
+            2421 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
             _ => ::std::option::Option::None
         }
     }
@@ -62,8 +62,8 @@ impl ::protobuf::Enum for CmdRecommendType {
             "APDINKHBHGC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ),
             "APDINKHBHGC_DFIEHBOAJDG" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG),
             "APDINKHBHGC_CECCNMFJEPB" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CECCNMFJEPB),
-            "APDINKHBHGC_DDHLPICBNLN" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
             "APDINKHBHGC_CMNBINBILDO" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CMNBINBILDO),
+            "APDINKHBHGC_DDHLPICBNLN" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
             _ => ::std::option::Option::None
         }
     }
@@ -72,8 +72,8 @@ impl ::protobuf::Enum for CmdRecommendType {
         CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ,
         CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG,
         CmdRecommendType::APDINKHBHGC_CECCNMFJEPB,
-        CmdRecommendType::APDINKHBHGC_DDHLPICBNLN,
         CmdRecommendType::APDINKHBHGC_CMNBINBILDO,
+        CmdRecommendType::APDINKHBHGC_DDHLPICBNLN,
     ];
 }
 
@@ -88,8 +88,8 @@ impl ::protobuf::EnumFull for CmdRecommendType {
             CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ => 0,
             CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG => 1,
             CmdRecommendType::APDINKHBHGC_CECCNMFJEPB => 2,
-            CmdRecommendType::APDINKHBHGC_DDHLPICBNLN => 3,
-            CmdRecommendType::APDINKHBHGC_CMNBINBILDO => 4,
+            CmdRecommendType::APDINKHBHGC_CMNBINBILDO => 3,
+            CmdRecommendType::APDINKHBHGC_DDHLPICBNLN => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -110,9 +110,9 @@ impl CmdRecommendType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdRecommendType.proto*\xa7\x01\n\x10CmdRecommendType\x12\x1b\n\
     \x17APDINKHBHGC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APDINKHBHGC_DFIEHBOAJDG\
-    \x10\xf3\x12\x12\x1c\n\x17APDINKHBHGC_CECCNMFJEPB\x10\x8d\x13\x12\x1c\n\
-    \x17APDINKHBHGC_DDHLPICBNLN\x10\xfd\x12\x12\x1c\n\x17APDINKHBHGC_CMNBINB\
-    ILDO\x10\xe9\x12b\x06proto3\
+    \x10\xe3\x12\x12\x1c\n\x17APDINKHBHGC_CECCNMFJEPB\x10\xe7\x12\x12\x1c\n\
+    \x17APDINKHBHGC_CMNBINBILDO\x10\xea\x12\x12\x1c\n\x17APDINKHBHGC_DDHLPIC\
+    BNLN\x10\xf5\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

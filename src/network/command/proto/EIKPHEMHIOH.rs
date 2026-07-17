@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EIKPHEMHIOH {
     // message fields
-    // @@protoc_insertion_point(field:EIKPHEMHIOH.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
-    // @@protoc_insertion_point(field:EIKPHEMHIOH.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:EIKPHEMHIOH.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:EIKPHEMHIOH.buff_two)
-    pub buff_two: u32,
-    // @@protoc_insertion_point(field:EIKPHEMHIOH.buff_one)
-    pub buff_one: u32,
     // @@protoc_insertion_point(field:EIKPHEMHIOH.EEJCPNAEKLJ)
     pub EEJCPNAEKLJ: u32,
+    // @@protoc_insertion_point(field:EIKPHEMHIOH.buff_one)
+    pub buff_one: u32,
+    // @@protoc_insertion_point(field:EIKPHEMHIOH.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
+    // @@protoc_insertion_point(field:EIKPHEMHIOH.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:EIKPHEMHIOH.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:EIKPHEMHIOH.buff_two)
+    pub buff_two: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EIKPHEMHIOH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,20 @@ impl EIKPHEMHIOH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EEJCPNAEKLJ",
+            |m: &EIKPHEMHIOH| { &m.EEJCPNAEKLJ },
+            |m: &mut EIKPHEMHIOH| { &mut m.EEJCPNAEKLJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "buff_one",
+            |m: &EIKPHEMHIOH| { &m.buff_one },
+            |m: &mut EIKPHEMHIOH| { &mut m.buff_one },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "lineup_list",
             |m: &EIKPHEMHIOH| { &m.lineup_list },
             |m: &mut EIKPHEMHIOH| { &mut m.lineup_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &EIKPHEMHIOH| { &m.level },
-            |m: &mut EIKPHEMHIOH| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -75,19 +80,14 @@ impl EIKPHEMHIOH {
             |m: &mut EIKPHEMHIOH| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &EIKPHEMHIOH| { &m.level },
+            |m: &mut EIKPHEMHIOH| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_two",
             |m: &EIKPHEMHIOH| { &m.buff_two },
             |m: &mut EIKPHEMHIOH| { &mut m.buff_two },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_one",
-            |m: &EIKPHEMHIOH| { &m.buff_one },
-            |m: &mut EIKPHEMHIOH| { &mut m.buff_one },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEJCPNAEKLJ",
-            |m: &EIKPHEMHIOH| { &m.EEJCPNAEKLJ },
-            |m: &mut EIKPHEMHIOH| { &mut m.EEJCPNAEKLJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EIKPHEMHIOH>(
             "EIKPHEMHIOH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for EIKPHEMHIOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.lineup_list.push(is.read_message()?);
-                },
-                24 => {
-                    self.level = is.read_uint32()?;
-                },
-                112 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.buff_two = is.read_uint32()?;
-                },
-                104 => {
-                    self.buff_one = is.read_uint32()?;
+                40 => {
+                    self.EEJCPNAEKLJ = is.read_uint32()?;
                 },
                 48 => {
-                    self.EEJCPNAEKLJ = is.read_uint32()?;
+                    self.buff_one = is.read_uint32()?;
+                },
+                74 => {
+                    self.lineup_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.level = is.read_uint32()?;
+                },
+                120 => {
+                    self.buff_two = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for EIKPHEMHIOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EEJCPNAEKLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EEJCPNAEKLJ);
+        }
+        if self.buff_one != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.buff_one);
+        }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         if self.buff_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.buff_two);
-        }
-        if self.buff_one != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.buff_one);
-        }
-        if self.EEJCPNAEKLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EEJCPNAEKLJ);
+            my_size += ::protobuf::rt::uint32_size(15, self.buff_two);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for EIKPHEMHIOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.level != 0 {
-            os.write_uint32(3, self.level)?;
-        }
-        if self.score_id != 0 {
-            os.write_uint32(14, self.score_id)?;
-        }
-        if self.buff_two != 0 {
-            os.write_uint32(2, self.buff_two)?;
+        if self.EEJCPNAEKLJ != 0 {
+            os.write_uint32(5, self.EEJCPNAEKLJ)?;
         }
         if self.buff_one != 0 {
-            os.write_uint32(13, self.buff_one)?;
+            os.write_uint32(6, self.buff_one)?;
         }
-        if self.EEJCPNAEKLJ != 0 {
-            os.write_uint32(6, self.EEJCPNAEKLJ)?;
+        for v in &self.lineup_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.score_id != 0 {
+            os.write_uint32(10, self.score_id)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(11, self.level)?;
+        }
+        if self.buff_two != 0 {
+            os.write_uint32(15, self.buff_two)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for EIKPHEMHIOH {
     }
 
     fn clear(&mut self) {
-        self.lineup_list.clear();
-        self.level = 0;
-        self.score_id = 0;
-        self.buff_two = 0;
-        self.buff_one = 0;
         self.EEJCPNAEKLJ = 0;
+        self.buff_one = 0;
+        self.lineup_list.clear();
+        self.score_id = 0;
+        self.level = 0;
+        self.buff_two = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EIKPHEMHIOH {
         static instance: EIKPHEMHIOH = EIKPHEMHIOH {
-            lineup_list: ::std::vec::Vec::new(),
-            level: 0,
-            score_id: 0,
-            buff_two: 0,
-            buff_one: 0,
             EEJCPNAEKLJ: 0,
+            buff_one: 0,
+            lineup_list: ::std::vec::Vec::new(),
+            score_id: 0,
+            level: 0,
+            buff_two: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for EIKPHEMHIOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIKPHEMHIOH.proto\x1a\x19ChallengeLineupList.proto\"\xcd\x01\n\x0b\
-    EIKPHEMHIOH\x125\n\x0blineup_list\x18\x08\x20\x03(\x0b2\x14.ChallengeLin\
-    eupListR\nlineupList\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\
-    \x19\n\x08score_id\x18\x0e\x20\x01(\rR\x07scoreId\x12\x19\n\x08buff_two\
-    \x18\x02\x20\x01(\rR\x07buffTwo\x12\x19\n\x08buff_one\x18\r\x20\x01(\rR\
-    \x07buffOne\x12\x20\n\x0bEEJCPNAEKLJ\x18\x06\x20\x01(\rR\x0bEEJCPNAEKLJb\
+    EIKPHEMHIOH\x12\x20\n\x0bEEJCPNAEKLJ\x18\x05\x20\x01(\rR\x0bEEJCPNAEKLJ\
+    \x12\x19\n\x08buff_one\x18\x06\x20\x01(\rR\x07buffOne\x125\n\x0blineup_l\
+    ist\x18\t\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupList\x12\x19\n\
+    \x08score_id\x18\n\x20\x01(\rR\x07scoreId\x12\x14\n\x05level\x18\x0b\x20\
+    \x01(\rR\x05level\x12\x19\n\x08buff_two\x18\x0f\x20\x01(\rR\x07buffTwob\
     \x06proto3\
 ";
 

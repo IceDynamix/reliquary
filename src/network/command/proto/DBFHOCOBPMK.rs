@@ -86,13 +86,13 @@ impl ::protobuf::Message for DBFHOCOBPMK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                66 => {
                     self.HDCHFBKDCEB.push(is.read_message()?);
                 },
-                58 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDFFIGJLGMM)?;
                 },
-                104 => {
+                120 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for DBFHOCOBPMK {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for DBFHOCOBPMK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.HDCHFBKDCEB {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if let Some(v) = self.CDFFIGJLGMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(13, self.group_id)?;
+            os.write_uint32(15, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for DBFHOCOBPMK {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBFHOCOBPMK.proto\x1a'PlayerChallengePeakRecordBossData.proto\x1a&\
     PlayerChallengePeakRecordMobData.proto\"\xb3\x01\n\x0bDBFHOCOBPMK\x12C\n\
-    \x0bHDCHFBKDCEB\x18\x0c\x20\x03(\x0b2!.PlayerChallengePeakRecordMobDataR\
-    \x0bHDCHFBKDCEB\x12D\n\x0bCDFFIGJLGMM\x18\x07\x20\x01(\x0b2\".PlayerChal\
-    lengePeakRecordBossDataR\x0bCDFFIGJLGMM\x12\x19\n\x08group_id\x18\r\x20\
-    \x01(\rR\x07groupIdb\x06proto3\
+    \x0bHDCHFBKDCEB\x18\x08\x20\x03(\x0b2!.PlayerChallengePeakRecordMobDataR\
+    \x0bHDCHFBKDCEB\x12D\n\x0bCDFFIGJLGMM\x18\x0e\x20\x01(\x0b2\".PlayerChal\
+    lengePeakRecordBossDataR\x0bCDFFIGJLGMM\x12\x19\n\x08group_id\x18\x0f\
+    \x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

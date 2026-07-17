@@ -79,10 +79,10 @@ impl ::protobuf::Message for FGFJNANBJJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                40 => {
                     self.CLLLEMMKDMB = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.is_finish = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FGFJNANBJJI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLLLEMMKDMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CLLLEMMKDMB);
+            my_size += ::protobuf::rt::uint32_size(5, self.CLLLEMMKDMB);
         }
         if self.is_finish != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FGFJNANBJJI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLLLEMMKDMB != 0 {
-            os.write_uint32(7, self.CLLLEMMKDMB)?;
+            os.write_uint32(5, self.CLLLEMMKDMB)?;
         }
         if self.is_finish != false {
-            os.write_bool(6, self.is_finish)?;
+            os.write_bool(10, self.is_finish)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FGFJNANBJJI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGFJNANBJJI.proto\"L\n\x0bFGFJNANBJJI\x12\x20\n\x0bCLLLEMMKDMB\x18\
-    \x07\x20\x01(\rR\x0bCLLLEMMKDMB\x12\x1b\n\tis_finish\x18\x06\x20\x01(\
-    \x08R\x08isFinishb\x06proto3\
+    \x05\x20\x01(\rR\x0bCLLLEMMKDMB\x12\x1b\n\tis_finish\x18\n\x20\x01(\x08R\
+    \x08isFinishb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

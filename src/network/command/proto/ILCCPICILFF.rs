@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ILCCPICILFF {
     // message fields
-    // @@protoc_insertion_point(field:ILCCPICILFF.BIKALOGMMDA)
-    pub BIKALOGMMDA: u32,
-    // @@protoc_insertion_point(field:ILCCPICILFF.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::GameplayCounterUpdateReason::GameplayCounterUpdateReason>,
     // @@protoc_insertion_point(field:ILCCPICILFF.OFBPKCNCGFG)
     pub OFBPKCNCGFG: u32,
+    // @@protoc_insertion_point(field:ILCCPICILFF.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::GameplayCounterUpdateReason::GameplayCounterUpdateReason>,
+    // @@protoc_insertion_point(field:ILCCPICILFF.BIKALOGMMDA)
+    pub BIKALOGMMDA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ILCCPICILFF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ILCCPICILFF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIKALOGMMDA",
-            |m: &ILCCPICILFF| { &m.BIKALOGMMDA },
-            |m: &mut ILCCPICILFF| { &mut m.BIKALOGMMDA },
+            "OFBPKCNCGFG",
+            |m: &ILCCPICILFF| { &m.OFBPKCNCGFG },
+            |m: &mut ILCCPICILFF| { &mut m.OFBPKCNCGFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -64,9 +64,9 @@ impl ILCCPICILFF {
             |m: &mut ILCCPICILFF| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFBPKCNCGFG",
-            |m: &ILCCPICILFF| { &m.OFBPKCNCGFG },
-            |m: &mut ILCCPICILFF| { &mut m.OFBPKCNCGFG },
+            "BIKALOGMMDA",
+            |m: &ILCCPICILFF| { &m.BIKALOGMMDA },
+            |m: &mut ILCCPICILFF| { &mut m.BIKALOGMMDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ILCCPICILFF>(
             "ILCCPICILFF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ILCCPICILFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.BIKALOGMMDA = is.read_uint32()?;
-                },
-                104 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
                 8 => {
                     self.OFBPKCNCGFG = is.read_uint32()?;
+                },
+                56 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                80 => {
+                    self.BIKALOGMMDA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ILCCPICILFF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BIKALOGMMDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BIKALOGMMDA);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.reason.value());
-        }
         if self.OFBPKCNCGFG != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.OFBPKCNCGFG);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
+        }
+        if self.BIKALOGMMDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BIKALOGMMDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ILCCPICILFF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BIKALOGMMDA != 0 {
-            os.write_uint32(11, self.BIKALOGMMDA)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
         if self.OFBPKCNCGFG != 0 {
             os.write_uint32(1, self.OFBPKCNCGFG)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if self.BIKALOGMMDA != 0 {
+            os.write_uint32(10, self.BIKALOGMMDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ILCCPICILFF {
     }
 
     fn clear(&mut self) {
-        self.BIKALOGMMDA = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
         self.OFBPKCNCGFG = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::GameplayCounterUpdateReason::GameplayCounterUpdateReason::GAMEPLAY_COUNTER_UPDATE_REASON_NONE);
+        self.BIKALOGMMDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ILCCPICILFF {
         static instance: ILCCPICILFF = ILCCPICILFF {
-            BIKALOGMMDA: 0,
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             OFBPKCNCGFG: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            BIKALOGMMDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ILCCPICILFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ILCCPICILFF.proto\x1a!GameplayCounterUpdateReason.proto\"\x87\x01\
-    \n\x0bILCCPICILFF\x12\x20\n\x0bBIKALOGMMDA\x18\x0b\x20\x01(\rR\x0bBIKALO\
-    GMMDA\x124\n\x06reason\x18\r\x20\x01(\x0e2\x1c.GameplayCounterUpdateReas\
-    onR\x06reason\x12\x20\n\x0bOFBPKCNCGFG\x18\x01\x20\x01(\rR\x0bOFBPKCNCGF\
-    Gb\x06proto3\
+    \n\x0bILCCPICILFF\x12\x20\n\x0bOFBPKCNCGFG\x18\x01\x20\x01(\rR\x0bOFBPKC\
+    NCGFG\x124\n\x06reason\x18\x07\x20\x01(\x0e2\x1c.GameplayCounterUpdateRe\
+    asonR\x06reason\x12\x20\n\x0bBIKALOGMMDA\x18\n\x20\x01(\rR\x0bBIKALOGMMD\
+    Ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGroupCustomSaveDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.save_data)
-    pub save_data: ::std::string::String,
-    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.interact_id)
-    pub interact_id: u64,
     // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.entry_id)
     pub entry_id: u32,
+    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.interact_id)
+    pub interact_id: u64,
+    // @@protoc_insertion_point(field:SetGroupCustomSaveDataCsReq.save_data)
+    pub save_data: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetGroupCustomSaveDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl SetGroupCustomSaveDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "save_data",
-            |m: &SetGroupCustomSaveDataCsReq| { &m.save_data },
-            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.save_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interact_id",
-            |m: &SetGroupCustomSaveDataCsReq| { &m.interact_id },
-            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.interact_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &SetGroupCustomSaveDataCsReq| { &m.group_id },
             |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.group_id },
@@ -74,6 +64,16 @@ impl SetGroupCustomSaveDataCsReq {
             "entry_id",
             |m: &SetGroupCustomSaveDataCsReq| { &m.entry_id },
             |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.entry_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interact_id",
+            |m: &SetGroupCustomSaveDataCsReq| { &m.interact_id },
+            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.interact_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "save_data",
+            |m: &SetGroupCustomSaveDataCsReq| { &m.save_data },
+            |m: &mut SetGroupCustomSaveDataCsReq| { &mut m.save_data },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetGroupCustomSaveDataCsReq>(
             "SetGroupCustomSaveDataCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.save_data = is.read_string()?;
-                },
-                88 => {
-                    self.interact_id = is.read_uint64()?;
-                },
-                80 => {
+                8 => {
                     self.group_id = is.read_uint32()?;
                 },
                 40 => {
                     self.entry_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.interact_id = is.read_uint64()?;
+                },
+                114 => {
+                    self.save_data = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.save_data.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.save_data);
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+        }
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.entry_id);
         }
         if self.interact_id != 0 {
             my_size += ::protobuf::rt::uint64_size(11, self.interact_id);
         }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
-        }
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.entry_id);
+        if !self.save_data.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.save_data);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.save_data.is_empty() {
-            os.write_string(8, &self.save_data)?;
+        if self.group_id != 0 {
+            os.write_uint32(1, self.group_id)?;
+        }
+        if self.entry_id != 0 {
+            os.write_uint32(5, self.entry_id)?;
         }
         if self.interact_id != 0 {
             os.write_uint64(11, self.interact_id)?;
         }
-        if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
-        }
-        if self.entry_id != 0 {
-            os.write_uint32(5, self.entry_id)?;
+        if !self.save_data.is_empty() {
+            os.write_string(14, &self.save_data)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for SetGroupCustomSaveDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.save_data.clear();
-        self.interact_id = 0;
         self.group_id = 0;
         self.entry_id = 0;
+        self.interact_id = 0;
+        self.save_data.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGroupCustomSaveDataCsReq {
         static instance: SetGroupCustomSaveDataCsReq = SetGroupCustomSaveDataCsReq {
-            save_data: ::std::string::String::new(),
-            interact_id: 0,
             group_id: 0,
             entry_id: 0,
+            interact_id: 0,
+            save_data: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SetGroupCustomSaveDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SetGroupCustomSaveDataCsReq.proto\"\x91\x01\n\x1bSetGroupCustomSaveDa\
-    taCsReq\x12\x1b\n\tsave_data\x18\x08\x20\x01(\tR\x08saveData\x12\x1f\n\
-    \x0binteract_id\x18\x0b\x20\x01(\x04R\ninteractId\x12\x19\n\x08group_id\
-    \x18\n\x20\x01(\rR\x07groupId\x12\x19\n\x08entry_id\x18\x05\x20\x01(\rR\
-    \x07entryIdb\x06proto3\
+    taCsReq\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupId\x12\x19\n\
+    \x08entry_id\x18\x05\x20\x01(\rR\x07entryId\x12\x1f\n\x0binteract_id\x18\
+    \x0b\x20\x01(\x04R\ninteractId\x12\x1b\n\tsave_data\x18\x0e\x20\x01(\tR\
+    \x08saveDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

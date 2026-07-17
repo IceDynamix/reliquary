@@ -59,6 +59,10 @@ pub enum JDCAPBNPOOK {
     JDCAPBNPOOK_ONPNOPLOAGH = 110,
     // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_MDBHGMDBJGK)
     JDCAPBNPOOK_MDBHGMDBJGK = 111,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_DICKKDIAEND)
+    JDCAPBNPOOK_DICKKDIAEND = 112,
+    // @@protoc_insertion_point(enum_value:JDCAPBNPOOK.JDCAPBNPOOK_LKPOOOLNAJC)
+    JDCAPBNPOOK_LKPOOOLNAJC = 113,
 }
 
 impl ::protobuf::Enum for JDCAPBNPOOK {
@@ -86,6 +90,8 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
             109 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_FIFGENNKDBE),
             110 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_ONPNOPLOAGH),
             111 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK),
+            112 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND),
+            113 => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC),
             _ => ::std::option::Option::None
         }
     }
@@ -108,6 +114,8 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
             "JDCAPBNPOOK_FIFGENNKDBE" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_FIFGENNKDBE),
             "JDCAPBNPOOK_ONPNOPLOAGH" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_ONPNOPLOAGH),
             "JDCAPBNPOOK_MDBHGMDBJGK" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK),
+            "JDCAPBNPOOK_DICKKDIAEND" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND),
+            "JDCAPBNPOOK_LKPOOOLNAJC" => ::std::option::Option::Some(JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC),
             _ => ::std::option::Option::None
         }
     }
@@ -129,6 +137,8 @@ impl ::protobuf::Enum for JDCAPBNPOOK {
         JDCAPBNPOOK::JDCAPBNPOOK_FIFGENNKDBE,
         JDCAPBNPOOK::JDCAPBNPOOK_ONPNOPLOAGH,
         JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK,
+        JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND,
+        JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC,
     ];
 }
 
@@ -156,6 +166,8 @@ impl ::protobuf::EnumFull for JDCAPBNPOOK {
             JDCAPBNPOOK::JDCAPBNPOOK_FIFGENNKDBE => 13,
             JDCAPBNPOOK::JDCAPBNPOOK_ONPNOPLOAGH => 14,
             JDCAPBNPOOK::JDCAPBNPOOK_MDBHGMDBJGK => 15,
+            JDCAPBNPOOK::JDCAPBNPOOK_DICKKDIAEND => 16,
+            JDCAPBNPOOK::JDCAPBNPOOK_LKPOOOLNAJC => 17,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -174,7 +186,7 @@ impl JDCAPBNPOOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JDCAPBNPOOK.proto*\xdd\x03\n\x0bJDCAPBNPOOK\x12\x1b\n\x17JDCAPBNPO\
+    \n\x11JDCAPBNPOOK.proto*\x97\x04\n\x0bJDCAPBNPOOK\x12\x1b\n\x17JDCAPBNPO\
     OK_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17JDCAPBNPOOK_ENPLACDLJGA\x10\x01\x12\
     \x1b\n\x17JDCAPBNPOOK_NMEEOHMGPKD\x10\x02\x12\x1b\n\x17JDCAPBNPOOK_OMKPE\
     NOHLII\x10\x04\x12\x1b\n\x17JDCAPBNPOOK_AOIGFLELHHH\x10\x05\x12\x1b\n\
@@ -184,7 +196,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x17JDCAPBNPOOK_MLOMHPFOMLO\x10j\x12\x1b\n\x17JDCAPBNPOOK_EDJGIJIILKE\
     \x10k\x12\x1b\n\x17JDCAPBNPOOK_GGMPEGMEHPD\x10l\x12\x1b\n\x17JDCAPBNPOOK\
     _FIFGENNKDBE\x10m\x12\x1b\n\x17JDCAPBNPOOK_ONPNOPLOAGH\x10n\x12\x1b\n\
-    \x17JDCAPBNPOOK_MDBHGMDBJGK\x10ob\x06proto3\
+    \x17JDCAPBNPOOK_MDBHGMDBJGK\x10o\x12\x1b\n\x17JDCAPBNPOOK_DICKKDIAEND\
+    \x10p\x12\x1b\n\x17JDCAPBNPOOK_LKPOOOLNAJC\x10qb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

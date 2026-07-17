@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKPKIINILKA {
     // message fields
-    // @@protoc_insertion_point(field:CKPKIINILKA.DJMHHMMABJL)
-    pub DJMHHMMABJL: ::protobuf::MessageField<super::HHAGOFKBFAP::HHAGOFKBFAP>,
     // @@protoc_insertion_point(field:CKPKIINILKA.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:CKPKIINILKA.DJMHHMMABJL)
+    pub DJMHHMMABJL: ::protobuf::MessageField<super::HHAGOFKBFAP::HHAGOFKBFAP>,
     // special fields
     // @@protoc_insertion_point(special_field:CKPKIINILKA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CKPKIINILKA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHAGOFKBFAP::HHAGOFKBFAP>(
-            "DJMHHMMABJL",
-            |m: &CKPKIINILKA| { &m.DJMHHMMABJL },
-            |m: &mut CKPKIINILKA| { &mut m.DJMHHMMABJL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &CKPKIINILKA| { &m.retcode },
             |m: &mut CKPKIINILKA| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHAGOFKBFAP::HHAGOFKBFAP>(
+            "DJMHHMMABJL",
+            |m: &CKPKIINILKA| { &m.DJMHHMMABJL },
+            |m: &mut CKPKIINILKA| { &mut m.DJMHHMMABJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CKPKIINILKA>(
             "CKPKIINILKA",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CKPKIINILKA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
-                },
-                88 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJMHHMMABJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for CKPKIINILKA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         if let Some(v) = self.DJMHHMMABJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for CKPKIINILKA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DJMHHMMABJL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
+        }
+        if let Some(v) = self.DJMHHMMABJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CKPKIINILKA {
     }
 
     fn clear(&mut self) {
-        self.DJMHHMMABJL.clear();
         self.retcode = 0;
+        self.DJMHHMMABJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKPKIINILKA {
         static instance: CKPKIINILKA = CKPKIINILKA {
-            DJMHHMMABJL: ::protobuf::MessageField::none(),
             retcode: 0,
+            DJMHHMMABJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CKPKIINILKA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CKPKIINILKA.proto\x1a\x11HHAGOFKBFAP.proto\"W\n\x0bCKPKIINILKA\x12\
-    .\n\x0bDJMHHMMABJL\x18\x01\x20\x01(\x0b2\x0c.HHAGOFKBFAPR\x0bDJMHHMMABJL\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bDJMHHMMABJL\
+    \x18\x0c\x20\x01(\x0b2\x0c.HHAGOFKBFAPR\x0bDJMHHMMABJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

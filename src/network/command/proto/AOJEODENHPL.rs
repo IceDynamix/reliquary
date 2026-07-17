@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOJEODENHPL {
     // message fields
+    // @@protoc_insertion_point(field:AOJEODENHPL.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:AOJEODENHPL.chapter_index)
+    pub chapter_index: u32,
+    // @@protoc_insertion_point(field:AOJEODENHPL.IKKEJKOGBNO)
+    pub IKKEJKOGBNO: u32,
     // @@protoc_insertion_point(field:AOJEODENHPL.has_passed)
     pub has_passed: bool,
     // @@protoc_insertion_point(field:AOJEODENHPL.KJJJPMAPFOH)
     pub KJJJPMAPFOH: u32,
-    // @@protoc_insertion_point(field:AOJEODENHPL.IKKEJKOGBNO)
-    pub IKKEJKOGBNO: u32,
-    // @@protoc_insertion_point(field:AOJEODENHPL.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:AOJEODENHPL.CGDNMDDIHKA)
-    pub CGDNMDDIHKA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AOJEODENHPL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,21 @@ impl AOJEODENHPL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &AOJEODENHPL| { &m.event_id },
+            |m: &mut AOJEODENHPL| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "chapter_index",
+            |m: &AOJEODENHPL| { &m.chapter_index },
+            |m: &mut AOJEODENHPL| { &mut m.chapter_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IKKEJKOGBNO",
+            |m: &AOJEODENHPL| { &m.IKKEJKOGBNO },
+            |m: &mut AOJEODENHPL| { &mut m.IKKEJKOGBNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
             |m: &AOJEODENHPL| { &m.has_passed },
             |m: &mut AOJEODENHPL| { &mut m.has_passed },
@@ -66,21 +81,6 @@ impl AOJEODENHPL {
             "KJJJPMAPFOH",
             |m: &AOJEODENHPL| { &m.KJJJPMAPFOH },
             |m: &mut AOJEODENHPL| { &mut m.KJJJPMAPFOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKKEJKOGBNO",
-            |m: &AOJEODENHPL| { &m.IKKEJKOGBNO },
-            |m: &mut AOJEODENHPL| { &mut m.IKKEJKOGBNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &AOJEODENHPL| { &m.event_id },
-            |m: &mut AOJEODENHPL| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGDNMDDIHKA",
-            |m: &AOJEODENHPL| { &m.CGDNMDDIHKA },
-            |m: &mut AOJEODENHPL| { &mut m.CGDNMDDIHKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOJEODENHPL>(
             "AOJEODENHPL",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AOJEODENHPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.has_passed = is.read_bool()?;
-                },
                 40 => {
-                    self.KJJJPMAPFOH = is.read_uint32()?;
-                },
-                48 => {
-                    self.IKKEJKOGBNO = is.read_uint32()?;
-                },
-                16 => {
                     self.event_id = is.read_uint32()?;
                 },
                 56 => {
-                    self.CGDNMDDIHKA = is.read_uint32()?;
+                    self.chapter_index = is.read_uint32()?;
+                },
+                64 => {
+                    self.IKKEJKOGBNO = is.read_uint32()?;
+                },
+                88 => {
+                    self.has_passed = is.read_bool()?;
+                },
+                104 => {
+                    self.KJJJPMAPFOH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for AOJEODENHPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.event_id);
+        }
+        if self.chapter_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.chapter_index);
+        }
+        if self.IKKEJKOGBNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IKKEJKOGBNO);
+        }
         if self.has_passed != false {
             my_size += 1 + 1;
         }
         if self.KJJJPMAPFOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.KJJJPMAPFOH);
-        }
-        if self.IKKEJKOGBNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IKKEJKOGBNO);
-        }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.event_id);
-        }
-        if self.CGDNMDDIHKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CGDNMDDIHKA);
+            my_size += ::protobuf::rt::uint32_size(13, self.KJJJPMAPFOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for AOJEODENHPL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.has_passed != false {
-            os.write_bool(12, self.has_passed)?;
+        if self.event_id != 0 {
+            os.write_uint32(5, self.event_id)?;
         }
-        if self.KJJJPMAPFOH != 0 {
-            os.write_uint32(5, self.KJJJPMAPFOH)?;
+        if self.chapter_index != 0 {
+            os.write_uint32(7, self.chapter_index)?;
         }
         if self.IKKEJKOGBNO != 0 {
-            os.write_uint32(6, self.IKKEJKOGBNO)?;
+            os.write_uint32(8, self.IKKEJKOGBNO)?;
         }
-        if self.event_id != 0 {
-            os.write_uint32(2, self.event_id)?;
+        if self.has_passed != false {
+            os.write_bool(11, self.has_passed)?;
         }
-        if self.CGDNMDDIHKA != 0 {
-            os.write_uint32(7, self.CGDNMDDIHKA)?;
+        if self.KJJJPMAPFOH != 0 {
+            os.write_uint32(13, self.KJJJPMAPFOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for AOJEODENHPL {
     }
 
     fn clear(&mut self) {
+        self.event_id = 0;
+        self.chapter_index = 0;
+        self.IKKEJKOGBNO = 0;
         self.has_passed = false;
         self.KJJJPMAPFOH = 0;
-        self.IKKEJKOGBNO = 0;
-        self.event_id = 0;
-        self.CGDNMDDIHKA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOJEODENHPL {
         static instance: AOJEODENHPL = AOJEODENHPL {
+            event_id: 0,
+            chapter_index: 0,
+            IKKEJKOGBNO: 0,
             has_passed: false,
             KJJJPMAPFOH: 0,
-            IKKEJKOGBNO: 0,
-            event_id: 0,
-            CGDNMDDIHKA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for AOJEODENHPL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOJEODENHPL.proto\"\xad\x01\n\x0bAOJEODENHPL\x12\x1d\n\nhas_passed\
-    \x18\x0c\x20\x01(\x08R\thasPassed\x12\x20\n\x0bKJJJPMAPFOH\x18\x05\x20\
-    \x01(\rR\x0bKJJJPMAPFOH\x12\x20\n\x0bIKKEJKOGBNO\x18\x06\x20\x01(\rR\x0b\
-    IKKEJKOGBNO\x12\x19\n\x08event_id\x18\x02\x20\x01(\rR\x07eventId\x12\x20\
-    \n\x0bCGDNMDDIHKA\x18\x07\x20\x01(\rR\x0bCGDNMDDIHKAb\x06proto3\
+    \n\x11AOJEODENHPL.proto\"\xb0\x01\n\x0bAOJEODENHPL\x12\x19\n\x08event_id\
+    \x18\x05\x20\x01(\rR\x07eventId\x12#\n\rchapter_index\x18\x07\x20\x01(\r\
+    R\x0cchapterIndex\x12\x20\n\x0bIKKEJKOGBNO\x18\x08\x20\x01(\rR\x0bIKKEJK\
+    OGBNO\x12\x1d\n\nhas_passed\x18\x0b\x20\x01(\x08R\thasPassed\x12\x20\n\
+    \x0bKJJJPMAPFOH\x18\r\x20\x01(\rR\x0bKJJJPMAPFOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

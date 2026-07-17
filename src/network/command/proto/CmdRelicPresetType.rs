@@ -29,26 +29,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRelicPresetType {
     // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_NLCDGIPGFDJ)
     IHFPHIPHDCE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_ODHBCNILDOK)
-    IHFPHIPHDCE_ODHBCNILDOK = 9842,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_HOCGMBLBMBD)
-    IHFPHIPHDCE_HOCGMBLBMBD = 9860,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_BJGKLFMLMAF)
-    IHFPHIPHDCE_BJGKLFMLMAF = 9851,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_FJPOEECMLFM)
-    IHFPHIPHDCE_FJPOEECMLFM = 9856,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_PKLFCJBCOLE)
-    IHFPHIPHDCE_PKLFCJBCOLE = 9844,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_ALPFGCMPNAK)
-    IHFPHIPHDCE_ALPFGCMPNAK = 9846,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_FPEMHEADJMF)
-    IHFPHIPHDCE_FPEMHEADJMF = 9854,
-    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_CHMEMLHLCMA)
-    IHFPHIPHDCE_CHMEMLHLCMA = 9859,
     // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_CIGFPGNKCBO)
-    IHFPHIPHDCE_CIGFPGNKCBO = 9852,
+    IHFPHIPHDCE_CIGFPGNKCBO = 9845,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_FPEMHEADJMF)
+    IHFPHIPHDCE_FPEMHEADJMF = 9844,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_FJPOEECMLFM)
+    IHFPHIPHDCE_FJPOEECMLFM = 9843,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_ALPFGCMPNAK)
+    IHFPHIPHDCE_ALPFGCMPNAK = 9848,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_BJGKLFMLMAF)
+    IHFPHIPHDCE_BJGKLFMLMAF = 9855,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_HOCGMBLBMBD)
+    IHFPHIPHDCE_HOCGMBLBMBD = 9852,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_PKLFCJBCOLE)
+    IHFPHIPHDCE_PKLFCJBCOLE = 9851,
     // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_EMOAOEIMDDM)
     IHFPHIPHDCE_EMOAOEIMDDM = 9858,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_ODHBCNILDOK)
+    IHFPHIPHDCE_ODHBCNILDOK = 9842,
+    // @@protoc_insertion_point(enum_value:CmdRelicPresetType.IHFPHIPHDCE_CHMEMLHLCMA)
+    IHFPHIPHDCE_CHMEMLHLCMA = 9857,
 }
 
 impl ::protobuf::Enum for CmdRelicPresetType {
@@ -61,16 +61,16 @@ impl ::protobuf::Enum for CmdRelicPresetType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRelicPresetType> {
         match value {
             0 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_NLCDGIPGFDJ),
-            9842 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK),
-            9860 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD),
-            9851 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF),
-            9856 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM),
-            9844 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE),
-            9846 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK),
-            9854 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF),
-            9859 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA),
-            9852 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO),
+            9845 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO),
+            9844 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF),
+            9843 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM),
+            9848 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK),
+            9855 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF),
+            9852 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD),
+            9851 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE),
             9858 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_EMOAOEIMDDM),
+            9842 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK),
+            9857 => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA),
             _ => ::std::option::Option::None
         }
     }
@@ -78,32 +78,32 @@ impl ::protobuf::Enum for CmdRelicPresetType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRelicPresetType> {
         match str {
             "IHFPHIPHDCE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_NLCDGIPGFDJ),
-            "IHFPHIPHDCE_ODHBCNILDOK" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK),
-            "IHFPHIPHDCE_HOCGMBLBMBD" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD),
-            "IHFPHIPHDCE_BJGKLFMLMAF" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF),
-            "IHFPHIPHDCE_FJPOEECMLFM" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM),
-            "IHFPHIPHDCE_PKLFCJBCOLE" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE),
-            "IHFPHIPHDCE_ALPFGCMPNAK" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK),
-            "IHFPHIPHDCE_FPEMHEADJMF" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF),
-            "IHFPHIPHDCE_CHMEMLHLCMA" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA),
             "IHFPHIPHDCE_CIGFPGNKCBO" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO),
+            "IHFPHIPHDCE_FPEMHEADJMF" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF),
+            "IHFPHIPHDCE_FJPOEECMLFM" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM),
+            "IHFPHIPHDCE_ALPFGCMPNAK" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK),
+            "IHFPHIPHDCE_BJGKLFMLMAF" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF),
+            "IHFPHIPHDCE_HOCGMBLBMBD" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD),
+            "IHFPHIPHDCE_PKLFCJBCOLE" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE),
             "IHFPHIPHDCE_EMOAOEIMDDM" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_EMOAOEIMDDM),
+            "IHFPHIPHDCE_ODHBCNILDOK" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK),
+            "IHFPHIPHDCE_CHMEMLHLCMA" => ::std::option::Option::Some(CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRelicPresetType] = &[
         CmdRelicPresetType::IHFPHIPHDCE_NLCDGIPGFDJ,
-        CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK,
-        CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD,
-        CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF,
-        CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM,
-        CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE,
-        CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK,
-        CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF,
-        CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA,
         CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO,
+        CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF,
+        CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM,
+        CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK,
+        CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF,
+        CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD,
+        CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE,
         CmdRelicPresetType::IHFPHIPHDCE_EMOAOEIMDDM,
+        CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK,
+        CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA,
     ];
 }
 
@@ -116,16 +116,16 @@ impl ::protobuf::EnumFull for CmdRelicPresetType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRelicPresetType::IHFPHIPHDCE_NLCDGIPGFDJ => 0,
-            CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK => 1,
-            CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD => 2,
-            CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF => 3,
-            CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM => 4,
-            CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE => 5,
-            CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK => 6,
-            CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF => 7,
-            CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA => 8,
-            CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO => 9,
-            CmdRelicPresetType::IHFPHIPHDCE_EMOAOEIMDDM => 10,
+            CmdRelicPresetType::IHFPHIPHDCE_CIGFPGNKCBO => 1,
+            CmdRelicPresetType::IHFPHIPHDCE_FPEMHEADJMF => 2,
+            CmdRelicPresetType::IHFPHIPHDCE_FJPOEECMLFM => 3,
+            CmdRelicPresetType::IHFPHIPHDCE_ALPFGCMPNAK => 4,
+            CmdRelicPresetType::IHFPHIPHDCE_BJGKLFMLMAF => 5,
+            CmdRelicPresetType::IHFPHIPHDCE_HOCGMBLBMBD => 6,
+            CmdRelicPresetType::IHFPHIPHDCE_PKLFCJBCOLE => 7,
+            CmdRelicPresetType::IHFPHIPHDCE_EMOAOEIMDDM => 8,
+            CmdRelicPresetType::IHFPHIPHDCE_ODHBCNILDOK => 9,
+            CmdRelicPresetType::IHFPHIPHDCE_CHMEMLHLCMA => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,13 +145,13 @@ impl CmdRelicPresetType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18CmdRelicPresetType.proto*\xdd\x02\n\x12CmdRelicPresetType\x12\x1b\
-    \n\x17IHFPHIPHDCE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IHFPHIPHDCE_ODHBCNILDOK\
-    \x10\xf2L\x12\x1c\n\x17IHFPHIPHDCE_HOCGMBLBMBD\x10\x84M\x12\x1c\n\x17IHF\
-    PHIPHDCE_BJGKLFMLMAF\x10\xfbL\x12\x1c\n\x17IHFPHIPHDCE_FJPOEECMLFM\x10\
-    \x80M\x12\x1c\n\x17IHFPHIPHDCE_PKLFCJBCOLE\x10\xf4L\x12\x1c\n\x17IHFPHIP\
-    HDCE_ALPFGCMPNAK\x10\xf6L\x12\x1c\n\x17IHFPHIPHDCE_FPEMHEADJMF\x10\xfeL\
-    \x12\x1c\n\x17IHFPHIPHDCE_CHMEMLHLCMA\x10\x83M\x12\x1c\n\x17IHFPHIPHDCE_\
-    CIGFPGNKCBO\x10\xfcL\x12\x1c\n\x17IHFPHIPHDCE_EMOAOEIMDDM\x10\x82Mb\x06p\
+    \n\x17IHFPHIPHDCE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IHFPHIPHDCE_CIGFPGNKCBO\
+    \x10\xf5L\x12\x1c\n\x17IHFPHIPHDCE_FPEMHEADJMF\x10\xf4L\x12\x1c\n\x17IHF\
+    PHIPHDCE_FJPOEECMLFM\x10\xf3L\x12\x1c\n\x17IHFPHIPHDCE_ALPFGCMPNAK\x10\
+    \xf8L\x12\x1c\n\x17IHFPHIPHDCE_BJGKLFMLMAF\x10\xffL\x12\x1c\n\x17IHFPHIP\
+    HDCE_HOCGMBLBMBD\x10\xfcL\x12\x1c\n\x17IHFPHIPHDCE_PKLFCJBCOLE\x10\xfbL\
+    \x12\x1c\n\x17IHFPHIPHDCE_EMOAOEIMDDM\x10\x82M\x12\x1c\n\x17IHFPHIPHDCE_\
+    ODHBCNILDOK\x10\xf2L\x12\x1c\n\x17IHFPHIPHDCE_CHMEMLHLCMA\x10\x81Mb\x06p\
     roto3\
 ";
 

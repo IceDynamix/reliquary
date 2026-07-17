@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CKODNPNBOEN {
     // message fields
-    // @@protoc_insertion_point(field:CKODNPNBOEN.GHPBBHOBMJN)
-    pub GHPBBHOBMJN: u32,
     // @@protoc_insertion_point(field:CKODNPNBOEN.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:CKODNPNBOEN.GHPBBHOBMJN)
+    pub GHPBBHOBMJN: u32,
     // @@protoc_insertion_point(field:CKODNPNBOEN.avatar_level)
     pub avatar_level: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CKODNPNBOEN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHPBBHOBMJN",
-            |m: &CKODNPNBOEN| { &m.GHPBBHOBMJN },
-            |m: &mut CKODNPNBOEN| { &mut m.GHPBBHOBMJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &CKODNPNBOEN| { &m.avatar_id },
             |m: &mut CKODNPNBOEN| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GHPBBHOBMJN",
+            |m: &CKODNPNBOEN| { &m.GHPBBHOBMJN },
+            |m: &mut CKODNPNBOEN| { &mut m.GHPBBHOBMJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_level",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for CKODNPNBOEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.GHPBBHOBMJN = is.read_uint32()?;
-                },
                 8 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.GHPBBHOBMJN = is.read_uint32()?;
                 },
                 24 => {
                     self.avatar_level = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for CKODNPNBOEN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GHPBBHOBMJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GHPBBHOBMJN);
-        }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
+        if self.GHPBBHOBMJN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GHPBBHOBMJN);
         }
         if self.avatar_level != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.avatar_level);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for CKODNPNBOEN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GHPBBHOBMJN != 0 {
-            os.write_uint32(2, self.GHPBBHOBMJN)?;
-        }
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
+        }
+        if self.GHPBBHOBMJN != 0 {
+            os.write_uint32(2, self.GHPBBHOBMJN)?;
         }
         if self.avatar_level != 0 {
             os.write_uint32(3, self.avatar_level)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CKODNPNBOEN {
     }
 
     fn clear(&mut self) {
-        self.GHPBBHOBMJN = 0;
         self.avatar_id = 0;
+        self.GHPBBHOBMJN = 0;
         self.avatar_level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CKODNPNBOEN {
         static instance: CKODNPNBOEN = CKODNPNBOEN {
-            GHPBBHOBMJN: 0,
             avatar_id: 0,
+            GHPBBHOBMJN: 0,
             avatar_level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CKODNPNBOEN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKODNPNBOEN.proto\"o\n\x0bCKODNPNBOEN\x12\x20\n\x0bGHPBBHOBMJN\x18\
-    \x02\x20\x01(\rR\x0bGHPBBHOBMJN\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\
-    \x08avatarId\x12!\n\x0cavatar_level\x18\x03\x20\x01(\rR\x0bavatarLevelb\
-    \x06proto3\
+    \n\x11CKODNPNBOEN.proto\"o\n\x0bCKODNPNBOEN\x12\x1b\n\tavatar_id\x18\x01\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bGHPBBHOBMJN\x18\x02\x20\x01(\rR\
+    \x0bGHPBBHOBMJN\x12!\n\x0cavatar_level\x18\x03\x20\x01(\rR\x0bavatarLeve\
+    lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

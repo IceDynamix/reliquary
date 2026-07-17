@@ -45,7 +45,7 @@ impl UpdateCustomInfoCsReq {
         ::std::default::Default::default()
     }
 
-    // string title = 2;
+    // string title = 10;
 
     pub fn title(&self) -> &str {
         match self.MMCGBGDJIPN {
@@ -94,7 +94,7 @@ impl UpdateCustomInfoCsReq {
         }
     }
 
-    // uint32 AJIMPLLIFIE = 8;
+    // uint32 AJIMPLLIFIE = 13;
 
     pub fn AJIMPLLIFIE(&self) -> u32 {
         match self.MMCGBGDJIPN {
@@ -153,10 +153,10 @@ impl ::protobuf::Message for UpdateCustomInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_cs_req::MMCGBGDJIPN::Title(is.read_string()?));
                 },
-                64 => {
+                104 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
                 },
                 tag => {
@@ -174,10 +174,10 @@ impl ::protobuf::Message for UpdateCustomInfoCsReq {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &update_custom_info_cs_req::MMCGBGDJIPN::Title(ref v) => {
-                    my_size += ::protobuf::rt::string_size(2, &v);
+                    my_size += ::protobuf::rt::string_size(10, &v);
                 },
                 &update_custom_info_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
             };
         }
@@ -190,10 +190,10 @@ impl ::protobuf::Message for UpdateCustomInfoCsReq {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &update_custom_info_cs_req::MMCGBGDJIPN::Title(ref v) => {
-                    os.write_string(2, v)?;
+                    os.write_string(10, v)?;
                 },
                 &update_custom_info_cs_req::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(13, v)?;
                 },
             };
         }
@@ -277,8 +277,8 @@ pub mod update_custom_info_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateCustomInfoCsReq.proto\"b\n\x15UpdateCustomInfoCsReq\x12\x16\
-    \n\x05title\x18\x02\x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\
-    \x08\x20\x01(\rH\0R\x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
+    \n\x05title\x18\n\x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\r\
+    \x20\x01(\rH\0R\x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

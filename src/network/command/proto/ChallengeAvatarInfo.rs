@@ -30,14 +30,14 @@ pub struct ChallengeAvatarInfo {
     // message fields
     // @@protoc_insertion_point(field:ChallengeAvatarInfo.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:ChallengeAvatarInfo.MDOJNENGCFE)
-    pub MDOJNENGCFE: u32,
-    // @@protoc_insertion_point(field:ChallengeAvatarInfo.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:ChallengeAvatarInfo.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:ChallengeAvatarInfo.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:ChallengeAvatarInfo.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:ChallengeAvatarInfo.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:ChallengeAvatarInfo.skin_id)
+    pub skin_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeAvatarInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,14 +63,9 @@ impl ChallengeAvatarInfo {
             |m: &mut ChallengeAvatarInfo| { &mut m.avatar_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDOJNENGCFE",
-            |m: &ChallengeAvatarInfo| { &m.MDOJNENGCFE },
-            |m: &mut ChallengeAvatarInfo| { &mut m.MDOJNENGCFE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &ChallengeAvatarInfo| { &m.index },
-            |m: &mut ChallengeAvatarInfo| { &mut m.index },
+            "id",
+            |m: &ChallengeAvatarInfo| { &m.id },
+            |m: &mut ChallengeAvatarInfo| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -78,9 +73,14 @@ impl ChallengeAvatarInfo {
             |m: &mut ChallengeAvatarInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &ChallengeAvatarInfo| { &m.id },
-            |m: &mut ChallengeAvatarInfo| { &mut m.id },
+            "index",
+            |m: &ChallengeAvatarInfo| { &m.index },
+            |m: &mut ChallengeAvatarInfo| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "skin_id",
+            |m: &ChallengeAvatarInfo| { &m.skin_id },
+            |m: &mut ChallengeAvatarInfo| { &mut m.skin_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeAvatarInfo>(
             "ChallengeAvatarInfo",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
                 8 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.MDOJNENGCFE = is.read_uint32()?;
-                },
-                32 => {
-                    self.index = is.read_uint32()?;
+                16 => {
+                    self.id = is.read_uint32()?;
                 },
                 24 => {
                     self.level = is.read_uint32()?;
                 },
-                16 => {
-                    self.id = is.read_uint32()?;
+                32 => {
+                    self.index = is.read_uint32()?;
+                },
+                40 => {
+                    self.skin_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
             my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
         }
-        if self.MDOJNENGCFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MDOJNENGCFE);
-        }
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.index);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.id);
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.index);
+        }
+        if self.skin_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,17 +151,17 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
-        if self.MDOJNENGCFE != 0 {
-            os.write_uint32(5, self.MDOJNENGCFE)?;
-        }
-        if self.index != 0 {
-            os.write_uint32(4, self.index)?;
+        if self.id != 0 {
+            os.write_uint32(2, self.id)?;
         }
         if self.level != 0 {
             os.write_uint32(3, self.level)?;
         }
-        if self.id != 0 {
-            os.write_uint32(2, self.id)?;
+        if self.index != 0 {
+            os.write_uint32(4, self.index)?;
+        }
+        if self.skin_id != 0 {
+            os.write_uint32(5, self.skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for ChallengeAvatarInfo {
 
     fn clear(&mut self) {
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.MDOJNENGCFE = 0;
-        self.index = 0;
-        self.level = 0;
         self.id = 0;
+        self.level = 0;
+        self.index = 0;
+        self.skin_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeAvatarInfo {
         static instance: ChallengeAvatarInfo = ChallengeAvatarInfo {
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            MDOJNENGCFE: 0,
-            index: 0,
-            level: 0,
             id: 0,
+            level: 0,
+            index: 0,
+            skin_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeAvatarInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19ChallengeAvatarInfo.proto\x1a\x10AvatarType.proto\"\xa1\x01\n\x13C\
+    \n\x19ChallengeAvatarInfo.proto\x1a\x10AvatarType.proto\"\x98\x01\n\x13C\
     hallengeAvatarInfo\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.Avata\
-    rTypeR\navatarType\x12\x20\n\x0bMDOJNENGCFE\x18\x05\x20\x01(\rR\x0bMDOJN\
-    ENGCFE\x12\x14\n\x05index\x18\x04\x20\x01(\rR\x05index\x12\x14\n\x05leve\
-    l\x18\x03\x20\x01(\rR\x05level\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\
-    b\x06proto3\
+    rTypeR\navatarType\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\
+    \x05level\x18\x03\x20\x01(\rR\x05level\x12\x14\n\x05index\x18\x04\x20\
+    \x01(\rR\x05index\x12\x17\n\x07skin_id\x18\x05\x20\x01(\rR\x06skinIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

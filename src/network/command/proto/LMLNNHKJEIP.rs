@@ -30,10 +30,10 @@ pub struct LMLNNHKJEIP {
     // message fields
     // @@protoc_insertion_point(field:LMLNNHKJEIP.basic_info)
     pub basic_info: ::protobuf::MessageField<super::MOHAGOFLGAP::MOHAGOFLGAP>,
-    // @@protoc_insertion_point(field:LMLNNHKJEIP.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
     // @@protoc_insertion_point(field:LMLNNHKJEIP.GBBCBJCACIN)
     pub GBBCBJCACIN: ::protobuf::MessageField<super::CIGLIFFIIDC::CIGLIFFIIDC>,
+    // @@protoc_insertion_point(field:LMLNNHKJEIP.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:LMLNNHKJEIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl LMLNNHKJEIP {
             |m: &LMLNNHKJEIP| { &m.basic_info },
             |m: &mut LMLNNHKJEIP| { &mut m.basic_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
-            "stage_info",
-            |m: &LMLNNHKJEIP| { &m.stage_info },
-            |m: &mut LMLNNHKJEIP| { &mut m.stage_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CIGLIFFIIDC::CIGLIFFIIDC>(
             "GBBCBJCACIN",
             |m: &LMLNNHKJEIP| { &m.GBBCBJCACIN },
             |m: &mut LMLNNHKJEIP| { &mut m.GBBCBJCACIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
+            "stage_info",
+            |m: &LMLNNHKJEIP| { &m.stage_info },
+            |m: &mut LMLNNHKJEIP| { &mut m.stage_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMLNNHKJEIP>(
             "LMLNNHKJEIP",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for LMLNNHKJEIP {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
-                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GBBCBJCACIN)?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for LMLNNHKJEIP {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.stage_info.as_ref() {
+        if let Some(v) = self.GBBCBJCACIN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GBBCBJCACIN.as_ref() {
+        if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -128,11 +128,11 @@ impl ::protobuf::Message for LMLNNHKJEIP {
         if let Some(v) = self.basic_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if let Some(v) = self.GBBCBJCACIN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,16 +152,16 @@ impl ::protobuf::Message for LMLNNHKJEIP {
 
     fn clear(&mut self) {
         self.basic_info.clear();
-        self.stage_info.clear();
         self.GBBCBJCACIN.clear();
+        self.stage_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMLNNHKJEIP {
         static instance: LMLNNHKJEIP = LMLNNHKJEIP {
             basic_info: ::protobuf::MessageField::none(),
-            stage_info: ::protobuf::MessageField::none(),
             GBBCBJCACIN: ::protobuf::MessageField::none(),
+            stage_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for LMLNNHKJEIP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMLNNHKJEIP.proto\x1a\x11CIGLIFFIIDC.proto\x1a\x16LobbyGameExtInfo\
     .proto\x1a\x11MOHAGOFLGAP.proto\"\x9c\x01\n\x0bLMLNNHKJEIP\x12+\n\nbasic\
-    _info\x18\x01\x20\x01(\x0b2\x0c.MOHAGOFLGAPR\tbasicInfo\x120\n\nstage_in\
-    fo\x18\x03\x20\x01(\x0b2\x11.LobbyGameExtInfoR\tstageInfo\x12.\n\x0bGBBC\
-    BJCACIN\x18\x02\x20\x01(\x0b2\x0c.CIGLIFFIIDCR\x0bGBBCBJCACINb\x06proto3\
+    _info\x18\x01\x20\x01(\x0b2\x0c.MOHAGOFLGAPR\tbasicInfo\x12.\n\x0bGBBCBJ\
+    CACIN\x18\x02\x20\x01(\x0b2\x0c.CIGLIFFIIDCR\x0bGBBCBJCACIN\x120\n\nstag\
+    e_info\x18\x03\x20\x01(\x0b2\x11.LobbyGameExtInfoR\tstageInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

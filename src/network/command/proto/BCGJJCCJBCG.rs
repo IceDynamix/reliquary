@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCGJJCCJBCG {
     // message fields
+    // @@protoc_insertion_point(field:BCGJJCCJBCG.HHGAHEBNAIL)
+    pub HHGAHEBNAIL: u32,
+    // @@protoc_insertion_point(field:BCGJJCCJBCG.NJHAPBIALCN)
+    pub NJHAPBIALCN: u32,
     // @@protoc_insertion_point(field:BCGJJCCJBCG.MIKLLOOAJFE)
     pub MIKLLOOAJFE: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:BCGJJCCJBCG.HLLIBEEKFII)
     pub HLLIBEEKFII: u32,
-    // @@protoc_insertion_point(field:BCGJJCCJBCG.NJHAPBIALCN)
-    pub NJHAPBIALCN: u32,
-    // @@protoc_insertion_point(field:BCGJJCCJBCG.HHGAHEBNAIL)
-    pub HHGAHEBNAIL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BCGJJCCJBCG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,16 @@ impl BCGJJCCJBCG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHGAHEBNAIL",
+            |m: &BCGJJCCJBCG| { &m.HHGAHEBNAIL },
+            |m: &mut BCGJJCCJBCG| { &mut m.HHGAHEBNAIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NJHAPBIALCN",
+            |m: &BCGJJCCJBCG| { &m.NJHAPBIALCN },
+            |m: &mut BCGJJCCJBCG| { &mut m.NJHAPBIALCN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "MIKLLOOAJFE",
             |m: &BCGJJCCJBCG| { &m.MIKLLOOAJFE },
@@ -64,16 +74,6 @@ impl BCGJJCCJBCG {
             "HLLIBEEKFII",
             |m: &BCGJJCCJBCG| { &m.HLLIBEEKFII },
             |m: &mut BCGJJCCJBCG| { &mut m.HLLIBEEKFII },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJHAPBIALCN",
-            |m: &BCGJJCCJBCG| { &m.NJHAPBIALCN },
-            |m: &mut BCGJJCCJBCG| { &mut m.NJHAPBIALCN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHGAHEBNAIL",
-            |m: &BCGJJCCJBCG| { &m.HHGAHEBNAIL },
-            |m: &mut BCGJJCCJBCG| { &mut m.HHGAHEBNAIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCGJJCCJBCG>(
             "BCGJJCCJBCG",
@@ -93,7 +93,13 @@ impl ::protobuf::Message for BCGJJCCJBCG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                8 => {
+                    self.HHGAHEBNAIL = is.read_uint32()?;
+                },
+                32 => {
+                    self.NJHAPBIALCN = is.read_uint32()?;
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,12 +117,6 @@ impl ::protobuf::Message for BCGJJCCJBCG {
                 80 => {
                     self.HLLIBEEKFII = is.read_uint32()?;
                 },
-                112 => {
-                    self.NJHAPBIALCN = is.read_uint32()?;
-                },
-                16 => {
-                    self.HHGAHEBNAIL = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -129,6 +129,12 @@ impl ::protobuf::Message for BCGJJCCJBCG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HHGAHEBNAIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HHGAHEBNAIL);
+        }
+        if self.NJHAPBIALCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NJHAPBIALCN);
+        }
         for (k, v) in &self.MIKLLOOAJFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -138,35 +144,29 @@ impl ::protobuf::Message for BCGJJCCJBCG {
         if self.HLLIBEEKFII != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.HLLIBEEKFII);
         }
-        if self.NJHAPBIALCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NJHAPBIALCN);
-        }
-        if self.HHGAHEBNAIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HHGAHEBNAIL);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HHGAHEBNAIL != 0 {
+            os.write_uint32(1, self.HHGAHEBNAIL)?;
+        }
+        if self.NJHAPBIALCN != 0 {
+            os.write_uint32(4, self.NJHAPBIALCN)?;
+        }
         for (k, v) in &self.MIKLLOOAJFE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(10)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.HLLIBEEKFII != 0 {
             os.write_uint32(10, self.HLLIBEEKFII)?;
-        }
-        if self.NJHAPBIALCN != 0 {
-            os.write_uint32(14, self.NJHAPBIALCN)?;
-        }
-        if self.HHGAHEBNAIL != 0 {
-            os.write_uint32(2, self.HHGAHEBNAIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::Message for BCGJJCCJBCG {
     }
 
     fn clear(&mut self) {
+        self.HHGAHEBNAIL = 0;
+        self.NJHAPBIALCN = 0;
         self.MIKLLOOAJFE.clear();
         self.HLLIBEEKFII = 0;
-        self.NJHAPBIALCN = 0;
-        self.HHGAHEBNAIL = 0;
         self.special_fields.clear();
     }
 
@@ -216,11 +216,11 @@ impl ::protobuf::reflect::ProtobufValue for BCGJJCCJBCG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCGJJCCJBCG.proto\"\xf4\x01\n\x0bBCGJJCCJBCG\x12?\n\x0bMIKLLOOAJFE\
-    \x18\x01\x20\x03(\x0b2\x1d.BCGJJCCJBCG.MIKLLOOAJFEEntryR\x0bMIKLLOOAJFE\
-    \x12\x20\n\x0bHLLIBEEKFII\x18\n\x20\x01(\rR\x0bHLLIBEEKFII\x12\x20\n\x0b\
-    NJHAPBIALCN\x18\x0e\x20\x01(\rR\x0bNJHAPBIALCN\x12\x20\n\x0bHHGAHEBNAIL\
-    \x18\x02\x20\x01(\rR\x0bHHGAHEBNAIL\x1a>\n\x10MIKLLOOAJFEEntry\x12\x10\n\
+    \n\x11BCGJJCCJBCG.proto\"\xf4\x01\n\x0bBCGJJCCJBCG\x12\x20\n\x0bHHGAHEBN\
+    AIL\x18\x01\x20\x01(\rR\x0bHHGAHEBNAIL\x12\x20\n\x0bNJHAPBIALCN\x18\x04\
+    \x20\x01(\rR\x0bNJHAPBIALCN\x12?\n\x0bMIKLLOOAJFE\x18\x06\x20\x03(\x0b2\
+    \x1d.BCGJJCCJBCG.MIKLLOOAJFEEntryR\x0bMIKLLOOAJFE\x12\x20\n\x0bHLLIBEEKF\
+    II\x18\n\x20\x01(\rR\x0bHLLIBEEKFII\x1a>\n\x10MIKLLOOAJFEEntry\x12\x10\n\
     \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
     R\x05value:\x028\x01b\x06proto3\
 ";

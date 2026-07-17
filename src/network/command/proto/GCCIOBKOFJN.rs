@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GCCIOBKOFJN {
     // message fields
-    // @@protoc_insertion_point(field:GCCIOBKOFJN.JJDILEHLHDH)
-    pub JJDILEHLHDH: ::std::vec::Vec<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
     // @@protoc_insertion_point(field:GCCIOBKOFJN.LGIPILAKIKB)
     pub LGIPILAKIKB: u32,
+    // @@protoc_insertion_point(field:GCCIOBKOFJN.JJDILEHLHDH)
+    pub JJDILEHLHDH: ::std::vec::Vec<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GCCIOBKOFJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GCCIOBKOFJN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJDILEHLHDH",
-            |m: &GCCIOBKOFJN| { &m.JJDILEHLHDH },
-            |m: &mut GCCIOBKOFJN| { &mut m.JJDILEHLHDH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGIPILAKIKB",
             |m: &GCCIOBKOFJN| { &m.LGIPILAKIKB },
             |m: &mut GCCIOBKOFJN| { &mut m.LGIPILAKIKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JJDILEHLHDH",
+            |m: &GCCIOBKOFJN| { &m.JJDILEHLHDH },
+            |m: &mut GCCIOBKOFJN| { &mut m.JJDILEHLHDH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GCCIOBKOFJN>(
             "GCCIOBKOFJN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GCCIOBKOFJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.JJDILEHLHDH.push(is.read_message()?);
-                },
-                56 => {
+                32 => {
                     self.LGIPILAKIKB = is.read_uint32()?;
+                },
+                82 => {
+                    self.JJDILEHLHDH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GCCIOBKOFJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LGIPILAKIKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LGIPILAKIKB);
+        }
         for value in &self.JJDILEHLHDH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LGIPILAKIKB);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JJDILEHLHDH {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(7, self.LGIPILAKIKB)?;
+            os.write_uint32(4, self.LGIPILAKIKB)?;
         }
+        for v in &self.JJDILEHLHDH {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GCCIOBKOFJN {
     }
 
     fn clear(&mut self) {
-        self.JJDILEHLHDH.clear();
         self.LGIPILAKIKB = 0;
+        self.JJDILEHLHDH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GCCIOBKOFJN {
         static instance: GCCIOBKOFJN = GCCIOBKOFJN {
-            JJDILEHLHDH: ::std::vec::Vec::new(),
             LGIPILAKIKB: 0,
+            JJDILEHLHDH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GCCIOBKOFJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GCCIOBKOFJN.proto\x1a\x11KJAMNOGFAMJ.proto\"_\n\x0bGCCIOBKOFJN\x12\
-    .\n\x0bJJDILEHLHDH\x18\x05\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x0bJJDILEHLHDH\
-    \x12\x20\n\x0bLGIPILAKIKB\x18\x07\x20\x01(\rR\x0bLGIPILAKIKBb\x06proto3\
+    \x20\n\x0bLGIPILAKIKB\x18\x04\x20\x01(\rR\x0bLGIPILAKIKB\x12.\n\x0bJJDIL\
+    EHLHDH\x18\n\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x0bJJDILEHLHDHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

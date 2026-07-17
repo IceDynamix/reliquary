@@ -79,13 +79,13 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.MOAOBPPHLDC)?;
                 },
-                24 => {
+                8 => {
                     self.MOAOBPPHLDC.push(is.read_uint32()?);
                 },
-                88 => {
+                48 => {
                     self.OPMPEGKMBPC = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MOAOBPPHLDC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.MOAOBPPHLDC);
         if self.OPMPEGKMBPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OPMPEGKMBPC);
+            my_size += ::protobuf::rt::uint32_size(6, self.OPMPEGKMBPC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.MOAOBPPHLDC)?;
+        os.write_repeated_packed_uint32(1, &self.MOAOBPPHLDC)?;
         if self.OPMPEGKMBPC != 0 {
-            os.write_uint32(11, self.OPMPEGKMBPC)?;
+            os.write_uint32(6, self.OPMPEGKMBPC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooBornCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SpaceZooBornCsReq.proto\"W\n\x11SpaceZooBornCsReq\x12\x20\n\x0bMOA\
-    OBPPHLDC\x18\x03\x20\x03(\rR\x0bMOAOBPPHLDC\x12\x20\n\x0bOPMPEGKMBPC\x18\
-    \x0b\x20\x01(\rR\x0bOPMPEGKMBPCb\x06proto3\
+    OBPPHLDC\x18\x01\x20\x03(\rR\x0bMOAOBPPHLDC\x12\x20\n\x0bOPMPEGKMBPC\x18\
+    \x06\x20\x01(\rR\x0bOPMPEGKMBPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

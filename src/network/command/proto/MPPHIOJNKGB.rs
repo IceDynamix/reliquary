@@ -30,10 +30,10 @@ pub struct MPPHIOJNKGB {
     // message fields
     // @@protoc_insertion_point(field:MPPHIOJNKGB.lineup)
     pub lineup: ::protobuf::MessageField<super::PNCNGIAMLCA::PNCNGIAMLCA>,
-    // @@protoc_insertion_point(field:MPPHIOJNKGB.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:MPPHIOJNKGB.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:MPPHIOJNKGB.score_id)
+    pub score_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MPPHIOJNKGB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl MPPHIOJNKGB {
             |m: &mut MPPHIOJNKGB| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &MPPHIOJNKGB| { &m.score_id },
-            |m: &mut MPPHIOJNKGB| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &MPPHIOJNKGB| { &m.uid },
             |m: &mut MPPHIOJNKGB| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &MPPHIOJNKGB| { &m.score_id },
+            |m: &mut MPPHIOJNKGB| { &mut m.score_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MPPHIOJNKGB>(
             "MPPHIOJNKGB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MPPHIOJNKGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                48 => {
+                    self.uid = is.read_uint32()?;
                 },
                 112 => {
                     self.score_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MPPHIOJNKGB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
+        }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.score_id);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MPPHIOJNKGB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(6, self.uid)?;
         }
         if self.score_id != 0 {
             os.write_uint32(14, self.score_id)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(9, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MPPHIOJNKGB {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.score_id = 0;
         self.uid = 0;
+        self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MPPHIOJNKGB {
         static instance: MPPHIOJNKGB = MPPHIOJNKGB {
             lineup: ::protobuf::MessageField::none(),
-            score_id: 0,
             uid: 0,
+            score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for MPPHIOJNKGB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MPPHIOJNKGB.proto\x1a\x11PNCNGIAMLCA.proto\"`\n\x0bMPPHIOJNKGB\x12\
-    $\n\x06lineup\x18\x06\x20\x01(\x0b2\x0c.PNCNGIAMLCAR\x06lineup\x12\x19\n\
-    \x08score_id\x18\x0e\x20\x01(\rR\x07scoreId\x12\x10\n\x03uid\x18\t\x20\
-    \x01(\rR\x03uidb\x06proto3\
+    $\n\x06lineup\x18\x05\x20\x01(\x0b2\x0c.PNCNGIAMLCAR\x06lineup\x12\x10\n\
+    \x03uid\x18\x06\x20\x01(\rR\x03uid\x12\x19\n\x08score_id\x18\x0e\x20\x01\
+    (\rR\x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

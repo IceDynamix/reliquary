@@ -30,10 +30,10 @@ pub struct KKNGAGGAJKC {
     // message fields
     // @@protoc_insertion_point(field:KKNGAGGAJKC.EDMBJCBKBIM)
     pub EDMBJCBKBIM: ::std::string::String,
-    // @@protoc_insertion_point(field:KKNGAGGAJKC.DMHFFKNLILH)
-    pub DMHFFKNLILH: ::std::string::String,
     // @@protoc_insertion_point(field:KKNGAGGAJKC.OIBPLFNJOEM)
     pub OIBPLFNJOEM: ::std::string::String,
+    // @@protoc_insertion_point(field:KKNGAGGAJKC.DMHFFKNLILH)
+    pub DMHFFKNLILH: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:KKNGAGGAJKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl KKNGAGGAJKC {
             |m: &mut KKNGAGGAJKC| { &mut m.EDMBJCBKBIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMHFFKNLILH",
-            |m: &KKNGAGGAJKC| { &m.DMHFFKNLILH },
-            |m: &mut KKNGAGGAJKC| { &mut m.DMHFFKNLILH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OIBPLFNJOEM",
             |m: &KKNGAGGAJKC| { &m.OIBPLFNJOEM },
             |m: &mut KKNGAGGAJKC| { &mut m.OIBPLFNJOEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMHFFKNLILH",
+            |m: &KKNGAGGAJKC| { &m.DMHFFKNLILH },
+            |m: &mut KKNGAGGAJKC| { &mut m.DMHFFKNLILH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKNGAGGAJKC>(
             "KKNGAGGAJKC",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for KKNGAGGAJKC {
                 10 => {
                     self.EDMBJCBKBIM = is.read_string()?;
                 },
-                26 => {
-                    self.DMHFFKNLILH = is.read_string()?;
-                },
                 18 => {
                     self.OIBPLFNJOEM = is.read_string()?;
+                },
+                26 => {
+                    self.DMHFFKNLILH = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for KKNGAGGAJKC {
         if !self.EDMBJCBKBIM.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.EDMBJCBKBIM);
         }
-        if !self.DMHFFKNLILH.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.DMHFFKNLILH);
-        }
         if !self.OIBPLFNJOEM.is_empty() {
             my_size += ::protobuf::rt::string_size(2, &self.OIBPLFNJOEM);
+        }
+        if !self.DMHFFKNLILH.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.DMHFFKNLILH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for KKNGAGGAJKC {
         if !self.EDMBJCBKBIM.is_empty() {
             os.write_string(1, &self.EDMBJCBKBIM)?;
         }
-        if !self.DMHFFKNLILH.is_empty() {
-            os.write_string(3, &self.DMHFFKNLILH)?;
-        }
         if !self.OIBPLFNJOEM.is_empty() {
             os.write_string(2, &self.OIBPLFNJOEM)?;
+        }
+        if !self.DMHFFKNLILH.is_empty() {
+            os.write_string(3, &self.DMHFFKNLILH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for KKNGAGGAJKC {
 
     fn clear(&mut self) {
         self.EDMBJCBKBIM.clear();
-        self.DMHFFKNLILH.clear();
         self.OIBPLFNJOEM.clear();
+        self.DMHFFKNLILH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKNGAGGAJKC {
         static instance: KKNGAGGAJKC = KKNGAGGAJKC {
             EDMBJCBKBIM: ::std::string::String::new(),
-            DMHFFKNLILH: ::std::string::String::new(),
             OIBPLFNJOEM: ::std::string::String::new(),
+            DMHFFKNLILH: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for KKNGAGGAJKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKNGAGGAJKC.proto\"s\n\x0bKKNGAGGAJKC\x12\x20\n\x0bEDMBJCBKBIM\x18\
-    \x01\x20\x01(\tR\x0bEDMBJCBKBIM\x12\x20\n\x0bDMHFFKNLILH\x18\x03\x20\x01\
-    (\tR\x0bDMHFFKNLILH\x12\x20\n\x0bOIBPLFNJOEM\x18\x02\x20\x01(\tR\x0bOIBP\
-    LFNJOEMb\x06proto3\
+    \x01\x20\x01(\tR\x0bEDMBJCBKBIM\x12\x20\n\x0bOIBPLFNJOEM\x18\x02\x20\x01\
+    (\tR\x0bOIBPLFNJOEM\x12\x20\n\x0bDMHFFKNLILH\x18\x03\x20\x01(\tR\x0bDMHF\
+    FKNLILHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

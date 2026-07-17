@@ -29,48 +29,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPlayerReturnType {
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_NLCDGIPGFDJ)
     JGDHIFOCFMM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_PIFENBGEGLG)
-    JGDHIFOCFMM_PIFENBGEGLG = 4552,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_HDGHBEEGHMJ)
-    JGDHIFOCFMM_HDGHBEEGHMJ = 4587,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_LECOJPDHEKB)
-    JGDHIFOCFMM_LECOJPDHEKB = 4571,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_BBAEJNAICME)
-    JGDHIFOCFMM_BBAEJNAICME = 4580,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_HOILKNMOKKP)
-    JGDHIFOCFMM_HOILKNMOKKP = 4513,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KLPKEBJGGNC)
-    JGDHIFOCFMM_KLPKEBJGGNC = 4573,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_CKAPGBNFJED)
-    JGDHIFOCFMM_CKAPGBNFJED = 4542,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_APNCCHHIHEJ)
-    JGDHIFOCFMM_APNCCHHIHEJ = 4554,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_FGJLKGIIICJ)
-    JGDHIFOCFMM_FGJLKGIIICJ = 4509,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_FIOHCFAGLOK)
-    JGDHIFOCFMM_FIOHCFAGLOK = 4512,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_OMNHOAIHGGG)
-    JGDHIFOCFMM_OMNHOAIHGGG = 4581,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_EHNPLBICNBA)
-    JGDHIFOCFMM_EHNPLBICNBA = 4510,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_OGPKAHADKOE)
-    JGDHIFOCFMM_OGPKAHADKOE = 4536,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_MDLIJMICHNA)
-    JGDHIFOCFMM_MDLIJMICHNA = 4524,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KDMHHNKIKNL)
-    JGDHIFOCFMM_KDMHHNKIKNL = 4503,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_JHDFPKLCIHE)
-    JGDHIFOCFMM_JHDFPKLCIHE = 4583,
+    JGDHIFOCFMM_LECOJPDHEKB = 4569,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_HIJOOLDBOGH)
-    JGDHIFOCFMM_HIJOOLDBOGH = 4578,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_PEJFEOEJOOJ)
-    JGDHIFOCFMM_PEJFEOEJOOJ = 4527,
-    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KLMJNOGPEFP)
-    JGDHIFOCFMM_KLMJNOGPEFP = 4561,
+    JGDHIFOCFMM_HIJOOLDBOGH = 4565,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KLPKEBJGGNC)
+    JGDHIFOCFMM_KLPKEBJGGNC = 4525,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_EHNPLBICNBA)
+    JGDHIFOCFMM_EHNPLBICNBA = 4526,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_FGJLKGIIICJ)
+    JGDHIFOCFMM_FGJLKGIIICJ = 4539,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_GBENGJCCJNP)
-    JGDHIFOCFMM_GBENGJCCJNP = 4529,
+    JGDHIFOCFMM_GBENGJCCJNP = 4571,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_JHDFPKLCIHE)
+    JGDHIFOCFMM_JHDFPKLCIHE = 4538,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_HDGHBEEGHMJ)
+    JGDHIFOCFMM_HDGHBEEGHMJ = 4513,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_MDLIJMICHNA)
+    JGDHIFOCFMM_MDLIJMICHNA = 4545,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KLMJNOGPEFP)
+    JGDHIFOCFMM_KLMJNOGPEFP = 4548,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_KDMHHNKIKNL)
+    JGDHIFOCFMM_KDMHHNKIKNL = 4578,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_PIFENBGEGLG)
+    JGDHIFOCFMM_PIFENBGEGLG = 4530,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_HOILKNMOKKP)
+    JGDHIFOCFMM_HOILKNMOKKP = 4581,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_PEJFEOEJOOJ)
+    JGDHIFOCFMM_PEJFEOEJOOJ = 4558,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_APNCCHHIHEJ)
+    JGDHIFOCFMM_APNCCHHIHEJ = 4533,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_BBAEJNAICME)
+    JGDHIFOCFMM_BBAEJNAICME = 4593,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_FIOHCFAGLOK)
+    JGDHIFOCFMM_FIOHCFAGLOK = 4540,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_CKAPGBNFJED)
+    JGDHIFOCFMM_CKAPGBNFJED = 4504,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_OGPKAHADKOE)
+    JGDHIFOCFMM_OGPKAHADKOE = 4588,
+    // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_OMNHOAIHGGG)
+    JGDHIFOCFMM_OMNHOAIHGGG = 4547,
     // @@protoc_insertion_point(enum_value:CmdPlayerReturnType.JGDHIFOCFMM_NAEOOKHCMFP)
-    JGDHIFOCFMM_NAEOOKHCMFP = 4515,
+    JGDHIFOCFMM_NAEOOKHCMFP = 4586,
 }
 
 impl ::protobuf::Enum for CmdPlayerReturnType {
@@ -83,27 +83,27 @@ impl ::protobuf::Enum for CmdPlayerReturnType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerReturnType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_NLCDGIPGFDJ),
-            4552 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG),
-            4587 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ),
-            4571 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB),
-            4580 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME),
-            4513 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP),
-            4573 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC),
-            4542 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED),
-            4554 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ),
-            4509 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ),
-            4512 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK),
-            4581 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG),
-            4510 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA),
-            4536 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE),
-            4524 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA),
-            4503 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL),
-            4583 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE),
-            4578 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH),
-            4527 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ),
-            4561 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP),
-            4529 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP),
-            4515 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_NAEOOKHCMFP),
+            4569 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB),
+            4565 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH),
+            4525 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC),
+            4526 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA),
+            4539 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ),
+            4571 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP),
+            4538 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE),
+            4513 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ),
+            4545 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA),
+            4548 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP),
+            4578 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL),
+            4530 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG),
+            4581 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP),
+            4558 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ),
+            4533 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ),
+            4593 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME),
+            4540 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK),
+            4504 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED),
+            4588 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE),
+            4547 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG),
+            4586 => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_NAEOOKHCMFP),
             _ => ::std::option::Option::None
         }
     }
@@ -111,26 +111,26 @@ impl ::protobuf::Enum for CmdPlayerReturnType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerReturnType> {
         match str {
             "JGDHIFOCFMM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_NLCDGIPGFDJ),
-            "JGDHIFOCFMM_PIFENBGEGLG" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG),
-            "JGDHIFOCFMM_HDGHBEEGHMJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ),
             "JGDHIFOCFMM_LECOJPDHEKB" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB),
-            "JGDHIFOCFMM_BBAEJNAICME" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME),
-            "JGDHIFOCFMM_HOILKNMOKKP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP),
-            "JGDHIFOCFMM_KLPKEBJGGNC" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC),
-            "JGDHIFOCFMM_CKAPGBNFJED" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED),
-            "JGDHIFOCFMM_APNCCHHIHEJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ),
-            "JGDHIFOCFMM_FGJLKGIIICJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ),
-            "JGDHIFOCFMM_FIOHCFAGLOK" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK),
-            "JGDHIFOCFMM_OMNHOAIHGGG" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG),
-            "JGDHIFOCFMM_EHNPLBICNBA" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA),
-            "JGDHIFOCFMM_OGPKAHADKOE" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE),
-            "JGDHIFOCFMM_MDLIJMICHNA" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA),
-            "JGDHIFOCFMM_KDMHHNKIKNL" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL),
-            "JGDHIFOCFMM_JHDFPKLCIHE" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE),
             "JGDHIFOCFMM_HIJOOLDBOGH" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH),
-            "JGDHIFOCFMM_PEJFEOEJOOJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ),
-            "JGDHIFOCFMM_KLMJNOGPEFP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP),
+            "JGDHIFOCFMM_KLPKEBJGGNC" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC),
+            "JGDHIFOCFMM_EHNPLBICNBA" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA),
+            "JGDHIFOCFMM_FGJLKGIIICJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ),
             "JGDHIFOCFMM_GBENGJCCJNP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP),
+            "JGDHIFOCFMM_JHDFPKLCIHE" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE),
+            "JGDHIFOCFMM_HDGHBEEGHMJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ),
+            "JGDHIFOCFMM_MDLIJMICHNA" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA),
+            "JGDHIFOCFMM_KLMJNOGPEFP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP),
+            "JGDHIFOCFMM_KDMHHNKIKNL" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL),
+            "JGDHIFOCFMM_PIFENBGEGLG" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG),
+            "JGDHIFOCFMM_HOILKNMOKKP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP),
+            "JGDHIFOCFMM_PEJFEOEJOOJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ),
+            "JGDHIFOCFMM_APNCCHHIHEJ" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ),
+            "JGDHIFOCFMM_BBAEJNAICME" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME),
+            "JGDHIFOCFMM_FIOHCFAGLOK" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK),
+            "JGDHIFOCFMM_CKAPGBNFJED" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED),
+            "JGDHIFOCFMM_OGPKAHADKOE" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE),
+            "JGDHIFOCFMM_OMNHOAIHGGG" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG),
             "JGDHIFOCFMM_NAEOOKHCMFP" => ::std::option::Option::Some(CmdPlayerReturnType::JGDHIFOCFMM_NAEOOKHCMFP),
             _ => ::std::option::Option::None
         }
@@ -138,26 +138,26 @@ impl ::protobuf::Enum for CmdPlayerReturnType {
 
     const VALUES: &'static [CmdPlayerReturnType] = &[
         CmdPlayerReturnType::JGDHIFOCFMM_NLCDGIPGFDJ,
-        CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG,
-        CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ,
         CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB,
-        CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME,
-        CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP,
-        CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC,
-        CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED,
-        CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ,
-        CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ,
-        CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK,
-        CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG,
-        CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA,
-        CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE,
-        CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA,
-        CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL,
-        CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE,
         CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH,
-        CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ,
-        CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP,
+        CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC,
+        CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA,
+        CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ,
         CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP,
+        CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE,
+        CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ,
+        CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA,
+        CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP,
+        CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL,
+        CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG,
+        CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP,
+        CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ,
+        CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ,
+        CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME,
+        CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK,
+        CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED,
+        CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE,
+        CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG,
         CmdPlayerReturnType::JGDHIFOCFMM_NAEOOKHCMFP,
     ];
 }
@@ -171,26 +171,26 @@ impl ::protobuf::EnumFull for CmdPlayerReturnType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPlayerReturnType::JGDHIFOCFMM_NLCDGIPGFDJ => 0,
-            CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG => 1,
-            CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ => 2,
-            CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB => 3,
-            CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME => 4,
-            CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP => 5,
-            CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC => 6,
-            CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED => 7,
-            CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ => 8,
-            CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ => 9,
-            CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK => 10,
-            CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG => 11,
-            CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA => 12,
-            CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE => 13,
-            CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA => 14,
-            CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL => 15,
-            CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE => 16,
-            CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH => 17,
-            CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ => 18,
-            CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP => 19,
-            CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP => 20,
+            CmdPlayerReturnType::JGDHIFOCFMM_LECOJPDHEKB => 1,
+            CmdPlayerReturnType::JGDHIFOCFMM_HIJOOLDBOGH => 2,
+            CmdPlayerReturnType::JGDHIFOCFMM_KLPKEBJGGNC => 3,
+            CmdPlayerReturnType::JGDHIFOCFMM_EHNPLBICNBA => 4,
+            CmdPlayerReturnType::JGDHIFOCFMM_FGJLKGIIICJ => 5,
+            CmdPlayerReturnType::JGDHIFOCFMM_GBENGJCCJNP => 6,
+            CmdPlayerReturnType::JGDHIFOCFMM_JHDFPKLCIHE => 7,
+            CmdPlayerReturnType::JGDHIFOCFMM_HDGHBEEGHMJ => 8,
+            CmdPlayerReturnType::JGDHIFOCFMM_MDLIJMICHNA => 9,
+            CmdPlayerReturnType::JGDHIFOCFMM_KLMJNOGPEFP => 10,
+            CmdPlayerReturnType::JGDHIFOCFMM_KDMHHNKIKNL => 11,
+            CmdPlayerReturnType::JGDHIFOCFMM_PIFENBGEGLG => 12,
+            CmdPlayerReturnType::JGDHIFOCFMM_HOILKNMOKKP => 13,
+            CmdPlayerReturnType::JGDHIFOCFMM_PEJFEOEJOOJ => 14,
+            CmdPlayerReturnType::JGDHIFOCFMM_APNCCHHIHEJ => 15,
+            CmdPlayerReturnType::JGDHIFOCFMM_BBAEJNAICME => 16,
+            CmdPlayerReturnType::JGDHIFOCFMM_FIOHCFAGLOK => 17,
+            CmdPlayerReturnType::JGDHIFOCFMM_CKAPGBNFJED => 18,
+            CmdPlayerReturnType::JGDHIFOCFMM_OGPKAHADKOE => 19,
+            CmdPlayerReturnType::JGDHIFOCFMM_OMNHOAIHGGG => 20,
             CmdPlayerReturnType::JGDHIFOCFMM_NAEOOKHCMFP => 21,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -211,21 +211,21 @@ impl CmdPlayerReturnType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdPlayerReturnType.proto*\xa8\x05\n\x13CmdPlayerReturnType\x12\
-    \x1b\n\x17JGDHIFOCFMM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGDHIFOCFMM_PIFENBG\
-    EGLG\x10\xc8#\x12\x1c\n\x17JGDHIFOCFMM_HDGHBEEGHMJ\x10\xeb#\x12\x1c\n\
-    \x17JGDHIFOCFMM_LECOJPDHEKB\x10\xdb#\x12\x1c\n\x17JGDHIFOCFMM_BBAEJNAICM\
-    E\x10\xe4#\x12\x1c\n\x17JGDHIFOCFMM_HOILKNMOKKP\x10\xa1#\x12\x1c\n\x17JG\
-    DHIFOCFMM_KLPKEBJGGNC\x10\xdd#\x12\x1c\n\x17JGDHIFOCFMM_CKAPGBNFJED\x10\
-    \xbe#\x12\x1c\n\x17JGDHIFOCFMM_APNCCHHIHEJ\x10\xca#\x12\x1c\n\x17JGDHIFO\
-    CFMM_FGJLKGIIICJ\x10\x9d#\x12\x1c\n\x17JGDHIFOCFMM_FIOHCFAGLOK\x10\xa0#\
-    \x12\x1c\n\x17JGDHIFOCFMM_OMNHOAIHGGG\x10\xe5#\x12\x1c\n\x17JGDHIFOCFMM_\
-    EHNPLBICNBA\x10\x9e#\x12\x1c\n\x17JGDHIFOCFMM_OGPKAHADKOE\x10\xb8#\x12\
-    \x1c\n\x17JGDHIFOCFMM_MDLIJMICHNA\x10\xac#\x12\x1c\n\x17JGDHIFOCFMM_KDMH\
-    HNKIKNL\x10\x97#\x12\x1c\n\x17JGDHIFOCFMM_JHDFPKLCIHE\x10\xe7#\x12\x1c\n\
-    \x17JGDHIFOCFMM_HIJOOLDBOGH\x10\xe2#\x12\x1c\n\x17JGDHIFOCFMM_PEJFEOEJOO\
-    J\x10\xaf#\x12\x1c\n\x17JGDHIFOCFMM_KLMJNOGPEFP\x10\xd1#\x12\x1c\n\x17JG\
-    DHIFOCFMM_GBENGJCCJNP\x10\xb1#\x12\x1c\n\x17JGDHIFOCFMM_NAEOOKHCMFP\x10\
-    \xa3#b\x06proto3\
+    \x1b\n\x17JGDHIFOCFMM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGDHIFOCFMM_LECOJPD\
+    HEKB\x10\xd9#\x12\x1c\n\x17JGDHIFOCFMM_HIJOOLDBOGH\x10\xd5#\x12\x1c\n\
+    \x17JGDHIFOCFMM_KLPKEBJGGNC\x10\xad#\x12\x1c\n\x17JGDHIFOCFMM_EHNPLBICNB\
+    A\x10\xae#\x12\x1c\n\x17JGDHIFOCFMM_FGJLKGIIICJ\x10\xbb#\x12\x1c\n\x17JG\
+    DHIFOCFMM_GBENGJCCJNP\x10\xdb#\x12\x1c\n\x17JGDHIFOCFMM_JHDFPKLCIHE\x10\
+    \xba#\x12\x1c\n\x17JGDHIFOCFMM_HDGHBEEGHMJ\x10\xa1#\x12\x1c\n\x17JGDHIFO\
+    CFMM_MDLIJMICHNA\x10\xc1#\x12\x1c\n\x17JGDHIFOCFMM_KLMJNOGPEFP\x10\xc4#\
+    \x12\x1c\n\x17JGDHIFOCFMM_KDMHHNKIKNL\x10\xe2#\x12\x1c\n\x17JGDHIFOCFMM_\
+    PIFENBGEGLG\x10\xb2#\x12\x1c\n\x17JGDHIFOCFMM_HOILKNMOKKP\x10\xe5#\x12\
+    \x1c\n\x17JGDHIFOCFMM_PEJFEOEJOOJ\x10\xce#\x12\x1c\n\x17JGDHIFOCFMM_APNC\
+    CHHIHEJ\x10\xb5#\x12\x1c\n\x17JGDHIFOCFMM_BBAEJNAICME\x10\xf1#\x12\x1c\n\
+    \x17JGDHIFOCFMM_FIOHCFAGLOK\x10\xbc#\x12\x1c\n\x17JGDHIFOCFMM_CKAPGBNFJE\
+    D\x10\x98#\x12\x1c\n\x17JGDHIFOCFMM_OGPKAHADKOE\x10\xec#\x12\x1c\n\x17JG\
+    DHIFOCFMM_OMNHOAIHGGG\x10\xc3#\x12\x1c\n\x17JGDHIFOCFMM_NAEOOKHCMFP\x10\
+    \xea#b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

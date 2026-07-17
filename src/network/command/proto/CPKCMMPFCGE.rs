@@ -86,13 +86,13 @@ impl ::protobuf::Message for CPKCMMPFCGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     self.PBFNPODNDID.push(is.read_message()?);
                 },
-                8 => {
+                80 => {
                     self.DDAGDNNDCDI = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for CPKCMMPFCGE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.DDAGDNNDCDI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DDAGDNNDCDI);
+            my_size += ::protobuf::rt::uint32_size(10, self.DDAGDNNDCDI);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for CPKCMMPFCGE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.PBFNPODNDID {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.DDAGDNNDCDI != 0 {
-            os.write_uint32(1, self.DDAGDNNDCDI)?;
+            os.write_uint32(10, self.DDAGDNNDCDI)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(6, self.unique_id)?;
+            os.write_uint32(11, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for CPKCMMPFCGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CPKCMMPFCGE.proto\x1a\x11BDGGEHGLFAC.proto\"|\n\x0bCPKCMMPFCGE\x12\
-    .\n\x0bPBFNPODNDID\x18\x02\x20\x03(\x0b2\x0c.BDGGEHGLFACR\x0bPBFNPODNDID\
-    \x12\x20\n\x0bDDAGDNNDCDI\x18\x01\x20\x01(\rR\x0bDDAGDNNDCDI\x12\x1b\n\t\
-    unique_id\x18\x06\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    .\n\x0bPBFNPODNDID\x18\x08\x20\x03(\x0b2\x0c.BDGGEHGLFACR\x0bPBFNPODNDID\
+    \x12\x20\n\x0bDDAGDNNDCDI\x18\n\x20\x01(\rR\x0bDDAGDNNDCDI\x12\x1b\n\tun\
+    ique_id\x18\x0b\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetKilledPunkLordMonsterDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.CPPDAIMLDGB)
-    pub CPPDAIMLDGB: ::std::vec::Vec<super::FGFGINEFBBK::FGFGINEFBBK>,
     // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.BLLLCPONFBE)
     pub BLLLCPONFBE: ::std::vec::Vec<super::CDCCPHILOCC::CDCCPHILOCC>,
+    // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.CPPDAIMLDGB)
+    pub CPPDAIMLDGB: ::std::vec::Vec<super::FGFGINEFBBK::FGFGINEFBBK>,
     // @@protoc_insertion_point(field:GetKilledPunkLordMonsterDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GetKilledPunkLordMonsterDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CPPDAIMLDGB",
-            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.CPPDAIMLDGB },
-            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.CPPDAIMLDGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BLLLCPONFBE",
             |m: &GetKilledPunkLordMonsterDataScRsp| { &m.BLLLCPONFBE },
             |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.BLLLCPONFBE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CPPDAIMLDGB",
+            |m: &GetKilledPunkLordMonsterDataScRsp| { &m.CPPDAIMLDGB },
+            |m: &mut GetKilledPunkLordMonsterDataScRsp| { &mut m.CPPDAIMLDGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.CPPDAIMLDGB.push(is.read_message()?);
-                },
                 82 => {
                     self.BLLLCPONFBE.push(is.read_message()?);
                 },
-                48 => {
+                90 => {
+                    self.CPPDAIMLDGB.push(is.read_message()?);
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,16 +107,16 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CPPDAIMLDGB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.BLLLCPONFBE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.CPPDAIMLDGB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CPPDAIMLDGB {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         for v in &self.BLLLCPONFBE {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        for v in &self.CPPDAIMLDGB {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetKilledPunkLordMonsterDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.CPPDAIMLDGB.clear();
         self.BLLLCPONFBE.clear();
+        self.CPPDAIMLDGB.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetKilledPunkLordMonsterDataScRsp {
         static instance: GetKilledPunkLordMonsterDataScRsp = GetKilledPunkLordMonsterDataScRsp {
-            CPPDAIMLDGB: ::std::vec::Vec::new(),
             BLLLCPONFBE: ::std::vec::Vec::new(),
+            CPPDAIMLDGB: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetKilledPunkLordMonsterDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetKilledPunkLordMonsterDataScRsp.proto\x1a\x11CDCCPHILOCC.proto\x1a\
     \x11FGFGINEFBBK.proto\"\x9d\x01\n!GetKilledPunkLordMonsterDataScRsp\x12.\
-    \n\x0bCPPDAIMLDGB\x18\x04\x20\x03(\x0b2\x0c.FGFGINEFBBKR\x0bCPPDAIMLDGB\
-    \x12.\n\x0bBLLLCPONFBE\x18\n\x20\x03(\x0b2\x0c.CDCCPHILOCCR\x0bBLLLCPONF\
-    BE\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x0bBLLLCPONFBE\x18\n\x20\x03(\x0b2\x0c.CDCCPHILOCCR\x0bBLLLCPONFBE\
+    \x12.\n\x0bCPPDAIMLDGB\x18\x0b\x20\x03(\x0b2\x0c.FGFGINEFBBKR\x0bCPPDAIM\
+    LDGB\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

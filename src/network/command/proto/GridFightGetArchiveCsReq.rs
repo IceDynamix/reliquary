@@ -72,7 +72,7 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                112 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MLJIILDNDPL::MLJIILDNDPL::MLJIILDNDPL_LAHJFEFDOBC) {
-            my_size += ::protobuf::rt::int32_size(2, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MLJIILDNDPL::MLJIILDNDPL::MLJIILDNDPL_LAHJFEFDOBC) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightGetArchiveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGridFightGetArchiveCsReq.proto\x1a\x11MLJIILDNDPL.proto\"<\n\x18Gr\
-    idFightGetArchiveCsReq\x12\x20\n\x04type\x18\x02\x20\x01(\x0e2\x0c.MLJII\
+    idFightGetArchiveCsReq\x12\x20\n\x04type\x18\x0e\x20\x01(\x0e2\x0c.MLJII\
     LDNDPLR\x04typeb\x06proto3\
 ";
 

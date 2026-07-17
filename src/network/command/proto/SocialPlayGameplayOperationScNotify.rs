@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayGameplayOperationScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.IKDEIJCEDIO)
-    pub IKDEIJCEDIO: u32,
-    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.PLIDNBMCIJH)
-    pub PLIDNBMCIJH: u32,
+    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.room_owner_uid)
+    pub room_owner_uid: u32,
+    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.op_uid)
+    pub op_uid: u32,
     // message oneof groups
     pub NBGBONGLJHM: ::std::option::Option<social_play_gameplay_operation_sc_notify::NBGBONGLJHM>,
     // special fields
@@ -50,56 +50,7 @@ impl SocialPlayGameplayOperationScNotify {
         ::std::default::Default::default()
     }
 
-    // .MHNNEFBOPIE NJDCPMENIFG = 902;
-
-    pub fn NJDCPMENIFG(&self) -> &super::MHNNEFBOPIE::MHNNEFBOPIE {
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v)) => v,
-            _ => <super::MHNNEFBOPIE::MHNNEFBOPIE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NJDCPMENIFG(&mut self) {
-        self.NBGBONGLJHM = ::std::option::Option::None;
-    }
-
-    pub fn has_NJDCPMENIFG(&self) -> bool {
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NJDCPMENIFG(&mut self, v: super::MHNNEFBOPIE::MHNNEFBOPIE) {
-        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NJDCPMENIFG(&mut self) -> &mut super::MHNNEFBOPIE::MHNNEFBOPIE {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(_)) = self.NBGBONGLJHM {
-        } else {
-            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(super::MHNNEFBOPIE::MHNNEFBOPIE::new()));
-        }
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NJDCPMENIFG(&mut self) -> super::MHNNEFBOPIE::MHNNEFBOPIE {
-        if self.has_NJDCPMENIFG() {
-            match self.NBGBONGLJHM.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::MHNNEFBOPIE::MHNNEFBOPIE::new()
-        }
-    }
-
-    // uint32 LMGGGLECNEA = 623;
+    // uint32 LMGGGLECNEA = 914;
 
     pub fn LMGGGLECNEA(&self) -> u32 {
         match self.NBGBONGLJHM {
@@ -124,7 +75,7 @@ impl SocialPlayGameplayOperationScNotify {
         self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v))
     }
 
-    // .JBJNJPAOCDA GNLAECODENP = 278;
+    // .JBJNJPAOCDA GNLAECODENP = 1883;
 
     pub fn GNLAECODENP(&self) -> &super::JBJNJPAOCDA::JBJNJPAOCDA {
         match self.NBGBONGLJHM {
@@ -173,7 +124,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // .POBLGKIGINE LMFMBJCNALJ = 1031;
+    // .POBLGKIGINE LMFMBJCNALJ = 1621;
 
     pub fn LMFMBJCNALJ(&self) -> &super::POBLGKIGINE::POBLGKIGINE {
         match self.NBGBONGLJHM {
@@ -222,7 +173,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // uint32 HJHPHDACEHE = 332;
+    // uint32 HJHPHDACEHE = 849;
 
     pub fn HJHPHDACEHE(&self) -> u32 {
         match self.NBGBONGLJHM {
@@ -247,56 +198,7 @@ impl SocialPlayGameplayOperationScNotify {
         self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v))
     }
 
-    // .EIIDKJFKIPE NIELDCLPOLA = 177;
-
-    pub fn NIELDCLPOLA(&self) -> &super::EIIDKJFKIPE::EIIDKJFKIPE {
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v)) => v,
-            _ => <super::EIIDKJFKIPE::EIIDKJFKIPE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NIELDCLPOLA(&mut self) {
-        self.NBGBONGLJHM = ::std::option::Option::None;
-    }
-
-    pub fn has_NIELDCLPOLA(&self) -> bool {
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NIELDCLPOLA(&mut self, v: super::EIIDKJFKIPE::EIIDKJFKIPE) {
-        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NIELDCLPOLA(&mut self) -> &mut super::EIIDKJFKIPE::EIIDKJFKIPE {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(_)) = self.NBGBONGLJHM {
-        } else {
-            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(super::EIIDKJFKIPE::EIIDKJFKIPE::new()));
-        }
-        match self.NBGBONGLJHM {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NIELDCLPOLA(&mut self) -> super::EIIDKJFKIPE::EIIDKJFKIPE {
-        if self.has_NIELDCLPOLA() {
-            match self.NBGBONGLJHM.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EIIDKJFKIPE::EIIDKJFKIPE::new()
-        }
-    }
-
-    // .BFAKMCIJFCB OEMEKBOGNJH = 1354;
+    // .BFAKMCIJFCB OEMEKBOGNJH = 832;
 
     pub fn OEMEKBOGNJH(&self) -> &super::BFAKMCIJFCB::BFAKMCIJFCB {
         match self.NBGBONGLJHM {
@@ -345,7 +247,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // .HMACEHDGGHB ONMNMLBANHK = 199;
+    // .HMACEHDGGHB ONMNMLBANHK = 1786;
 
     pub fn ONMNMLBANHK(&self) -> &super::HMACEHDGGHB::HMACEHDGGHB {
         match self.NBGBONGLJHM {
@@ -394,7 +296,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // .MIKGMGBHLEN PHKCDLPHMPA = 1153;
+    // .MIKGMGBHLEN PHKCDLPHMPA = 1794;
 
     pub fn PHKCDLPHMPA(&self) -> &super::MIKGMGBHLEN::MIKGMGBHLEN {
         match self.NBGBONGLJHM {
@@ -443,7 +345,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // .POBLGKIGINE LABNNEGJNHO = 1794;
+    // .POBLGKIGINE LABNNEGJNHO = 1625;
 
     pub fn LABNNEGJNHO(&self) -> &super::POBLGKIGINE::POBLGKIGINE {
         match self.NBGBONGLJHM {
@@ -492,7 +394,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // int64 DBIKJPDBMOE = 89;
+    // int64 DBIKJPDBMOE = 557;
 
     pub fn DBIKJPDBMOE(&self) -> i64 {
         match self.NBGBONGLJHM {
@@ -517,7 +419,7 @@ impl SocialPlayGameplayOperationScNotify {
         self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v))
     }
 
-    // .IKBDJLNEPBH IMPBCBPIFAG = 1335;
+    // .IKBDJLNEPBH IMPBCBPIFAG = 799;
 
     pub fn IMPBCBPIFAG(&self) -> &super::IKBDJLNEPBH::IKBDJLNEPBH {
         match self.NBGBONGLJHM {
@@ -566,7 +468,7 @@ impl SocialPlayGameplayOperationScNotify {
         }
     }
 
-    // uint32 BJLCBAAKPDI = 1251;
+    // uint32 BJLCBAAKPDI = 1359;
 
     pub fn BJLCBAAKPDI(&self) -> u32 {
         match self.NBGBONGLJHM {
@@ -591,7 +493,7 @@ impl SocialPlayGameplayOperationScNotify {
         self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v))
     }
 
-    // uint32 DLKOEIANIMK = 1874;
+    // uint32 DLKOEIANIMK = 1834;
 
     pub fn DLKOEIANIMK(&self) -> u32 {
         match self.NBGBONGLJHM {
@@ -617,24 +519,17 @@ impl SocialPlayGameplayOperationScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(16);
+        let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKDEIJCEDIO",
-            |m: &SocialPlayGameplayOperationScNotify| { &m.IKDEIJCEDIO },
-            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.IKDEIJCEDIO },
+            "room_owner_uid",
+            |m: &SocialPlayGameplayOperationScNotify| { &m.room_owner_uid },
+            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.room_owner_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLIDNBMCIJH",
-            |m: &SocialPlayGameplayOperationScNotify| { &m.PLIDNBMCIJH },
-            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.PLIDNBMCIJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MHNNEFBOPIE::MHNNEFBOPIE>(
-            "NJDCPMENIFG",
-            SocialPlayGameplayOperationScNotify::has_NJDCPMENIFG,
-            SocialPlayGameplayOperationScNotify::NJDCPMENIFG,
-            SocialPlayGameplayOperationScNotify::mut_NJDCPMENIFG,
-            SocialPlayGameplayOperationScNotify::set_NJDCPMENIFG,
+            "op_uid",
+            |m: &SocialPlayGameplayOperationScNotify| { &m.op_uid },
+            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.op_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "LMGGGLECNEA",
@@ -661,13 +556,6 @@ impl SocialPlayGameplayOperationScNotify {
             SocialPlayGameplayOperationScNotify::has_HJHPHDACEHE,
             SocialPlayGameplayOperationScNotify::HJHPHDACEHE,
             SocialPlayGameplayOperationScNotify::set_HJHPHDACEHE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EIIDKJFKIPE::EIIDKJFKIPE>(
-            "NIELDCLPOLA",
-            SocialPlayGameplayOperationScNotify::has_NIELDCLPOLA,
-            SocialPlayGameplayOperationScNotify::NIELDCLPOLA,
-            SocialPlayGameplayOperationScNotify::mut_NIELDCLPOLA,
-            SocialPlayGameplayOperationScNotify::set_NIELDCLPOLA,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFAKMCIJFCB::BFAKMCIJFCB>(
             "OEMEKBOGNJH",
@@ -741,52 +629,46 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.IKDEIJCEDIO = is.read_uint32()?;
+                56 => {
+                    self.room_owner_uid = is.read_uint32()?;
                 },
-                40 => {
-                    self.PLIDNBMCIJH = is.read_uint32()?;
+                120 => {
+                    self.op_uid = is.read_uint32()?;
                 },
-                7218 => {
-                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(is.read_message()?));
-                },
-                4984 => {
+                7312 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(is.read_uint32()?));
                 },
-                2226 => {
+                15066 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(is.read_message()?));
                 },
-                8250 => {
+                12970 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(is.read_message()?));
                 },
-                2656 => {
+                6792 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(is.read_uint32()?));
                 },
-                1418 => {
-                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(is.read_message()?));
-                },
-                10834 => {
+                6658 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(is.read_message()?));
                 },
-                1594 => {
+                14290 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(is.read_message()?));
                 },
-                9226 => {
+                14354 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(is.read_message()?));
                 },
-                14354 => {
+                13002 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(is.read_message()?));
                 },
-                712 => {
+                4456 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(is.read_int64()?));
                 },
-                10682 => {
+                6394 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(is.read_message()?));
                 },
-                10008 => {
+                10872 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(is.read_uint32()?));
                 },
-                14992 => {
+                14672 => {
                     self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(is.read_uint32()?));
                 },
                 tag => {
@@ -801,20 +683,16 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IKDEIJCEDIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IKDEIJCEDIO);
+        if self.room_owner_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.room_owner_uid);
         }
-        if self.PLIDNBMCIJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PLIDNBMCIJH);
+        if self.op_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.op_uid);
         }
         if let ::std::option::Option::Some(ref v) = self.NBGBONGLJHM {
             match v {
-                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(623, v);
+                    my_size += ::protobuf::rt::uint32_size(914, v);
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref v) => {
                     let len = v.compute_size();
@@ -825,11 +703,7 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(332, v);
-                },
-                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                    my_size += ::protobuf::rt::uint32_size(849, v);
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref v) => {
                     let len = v.compute_size();
@@ -848,17 +722,17 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v) => {
-                    my_size += ::protobuf::rt::int64_size(89, v);
+                    my_size += ::protobuf::rt::int64_size(557, v);
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1251, v);
+                    my_size += ::protobuf::rt::uint32_size(1359, v);
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1874, v);
+                    my_size += ::protobuf::rt::uint32_size(1834, v);
                 },
             };
         }
@@ -868,55 +742,49 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IKDEIJCEDIO != 0 {
-            os.write_uint32(14, self.IKDEIJCEDIO)?;
+        if self.room_owner_uid != 0 {
+            os.write_uint32(7, self.room_owner_uid)?;
         }
-        if self.PLIDNBMCIJH != 0 {
-            os.write_uint32(5, self.PLIDNBMCIJH)?;
+        if self.op_uid != 0 {
+            os.write_uint32(15, self.op_uid)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NBGBONGLJHM {
             match v {
-                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(902, v, os)?;
-                },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v) => {
-                    os.write_uint32(623, v)?;
+                    os.write_uint32(914, v)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(278, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1883, v, os)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1031, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1621, v, os)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v) => {
-                    os.write_uint32(332, v)?;
-                },
-                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(177, v, os)?;
+                    os.write_uint32(849, v)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1354, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(832, v, os)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(199, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1786, v, os)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1153, v, os)?;
-                },
-                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1794, v, os)?;
                 },
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1625, v, os)?;
+                },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v) => {
-                    os.write_int64(89, v)?;
+                    os.write_int64(557, v)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1335, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(799, v, os)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v) => {
-                    os.write_uint32(1251, v)?;
+                    os.write_uint32(1359, v)?;
                 },
                 &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v) => {
-                    os.write_uint32(1874, v)?;
+                    os.write_uint32(1834, v)?;
                 },
             };
         }
@@ -937,10 +805,8 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     }
 
     fn clear(&mut self) {
-        self.IKDEIJCEDIO = 0;
-        self.PLIDNBMCIJH = 0;
-        self.NBGBONGLJHM = ::std::option::Option::None;
-        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.room_owner_uid = 0;
+        self.op_uid = 0;
         self.NBGBONGLJHM = ::std::option::Option::None;
         self.NBGBONGLJHM = ::std::option::Option::None;
         self.NBGBONGLJHM = ::std::option::Option::None;
@@ -958,8 +824,8 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
 
     fn default_instance() -> &'static SocialPlayGameplayOperationScNotify {
         static instance: SocialPlayGameplayOperationScNotify = SocialPlayGameplayOperationScNotify {
-            IKDEIJCEDIO: 0,
-            PLIDNBMCIJH: 0,
+            room_owner_uid: 0,
+            op_uid: 0,
             NBGBONGLJHM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -991,8 +857,6 @@ pub mod social_play_gameplay_operation_sc_notify {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:SocialPlayGameplayOperationScNotify.NBGBONGLJHM)
     pub enum NBGBONGLJHM {
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NJDCPMENIFG)
-        NJDCPMENIFG(super::super::MHNNEFBOPIE::MHNNEFBOPIE),
         // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.LMGGGLECNEA)
         LMGGGLECNEA(u32),
         // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.GNLAECODENP)
@@ -1001,8 +865,6 @@ pub mod social_play_gameplay_operation_sc_notify {
         LMFMBJCNALJ(super::super::POBLGKIGINE::POBLGKIGINE),
         // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.HJHPHDACEHE)
         HJHPHDACEHE(u32),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NIELDCLPOLA)
-        NIELDCLPOLA(super::super::EIIDKJFKIPE::EIIDKJFKIPE),
         // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.OEMEKBOGNJH)
         OEMEKBOGNJH(super::super::BFAKMCIJFCB::BFAKMCIJFCB),
         // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.ONMNMLBANHK)
@@ -1040,26 +902,24 @@ pub mod social_play_gameplay_operation_sc_notify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SocialPlayGameplayOperationScNotify.proto\x1a\x11BFAKMCIJFCB.proto\
-    \x1a\x11EIIDKJFKIPE.proto\x1a\x11HMACEHDGGHB.proto\x1a\x11IKBDJLNEPBH.pr\
-    oto\x1a\x11JBJNJPAOCDA.proto\x1a\x11MHNNEFBOPIE.proto\x1a\x11MIKGMGBHLEN\
-    .proto\x1a\x11POBLGKIGINE.proto\"\xfb\x05\n#SocialPlayGameplayOperationS\
-    cNotify\x12\x20\n\x0bIKDEIJCEDIO\x18\x0e\x20\x01(\rR\x0bIKDEIJCEDIO\x12\
-    \x20\n\x0bPLIDNBMCIJH\x18\x05\x20\x01(\rR\x0bPLIDNBMCIJH\x121\n\x0bNJDCP\
-    MENIFG\x18\x86\x07\x20\x01(\x0b2\x0c.MHNNEFBOPIEH\0R\x0bNJDCPMENIFG\x12#\
-    \n\x0bLMGGGLECNEA\x18\xef\x04\x20\x01(\rH\0R\x0bLMGGGLECNEA\x121\n\x0bGN\
-    LAECODENP\x18\x96\x02\x20\x01(\x0b2\x0c.JBJNJPAOCDAH\0R\x0bGNLAECODENP\
-    \x121\n\x0bLMFMBJCNALJ\x18\x87\x08\x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0b\
-    LMFMBJCNALJ\x12#\n\x0bHJHPHDACEHE\x18\xcc\x02\x20\x01(\rH\0R\x0bHJHPHDAC\
-    EHE\x121\n\x0bNIELDCLPOLA\x18\xb1\x01\x20\x01(\x0b2\x0c.EIIDKJFKIPEH\0R\
-    \x0bNIELDCLPOLA\x121\n\x0bOEMEKBOGNJH\x18\xca\n\x20\x01(\x0b2\x0c.BFAKMC\
-    IJFCBH\0R\x0bOEMEKBOGNJH\x121\n\x0bONMNMLBANHK\x18\xc7\x01\x20\x01(\x0b2\
-    \x0c.HMACEHDGGHBH\0R\x0bONMNMLBANHK\x121\n\x0bPHKCDLPHMPA\x18\x81\t\x20\
-    \x01(\x0b2\x0c.MIKGMGBHLENH\0R\x0bPHKCDLPHMPA\x121\n\x0bLABNNEGJNHO\x18\
-    \x82\x0e\x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0bLABNNEGJNHO\x12\"\n\x0bDBI\
-    KJPDBMOE\x18Y\x20\x01(\x03H\0R\x0bDBIKJPDBMOE\x121\n\x0bIMPBCBPIFAG\x18\
-    \xb7\n\x20\x01(\x0b2\x0c.IKBDJLNEPBHH\0R\x0bIMPBCBPIFAG\x12#\n\x0bBJLCBA\
-    AKPDI\x18\xe3\t\x20\x01(\rH\0R\x0bBJLCBAAKPDI\x12#\n\x0bDLKOEIANIMK\x18\
-    \xd2\x0e\x20\x01(\rH\0R\x0bDLKOEIANIMKB\r\n\x0bNBGBONGLJHMb\x06proto3\
+    \x1a\x11HMACEHDGGHB.proto\x1a\x11IKBDJLNEPBH.proto\x1a\x11JBJNJPAOCDA.pr\
+    oto\x1a\x11MIKGMGBHLEN.proto\x1a\x11POBLGKIGINE.proto\"\x8f\x05\n#Social\
+    PlayGameplayOperationScNotify\x12$\n\x0eroom_owner_uid\x18\x07\x20\x01(\
+    \rR\x0croomOwnerUid\x12\x15\n\x06op_uid\x18\x0f\x20\x01(\rR\x05opUid\x12\
+    #\n\x0bLMGGGLECNEA\x18\x92\x07\x20\x01(\rH\0R\x0bLMGGGLECNEA\x121\n\x0bG\
+    NLAECODENP\x18\xdb\x0e\x20\x01(\x0b2\x0c.JBJNJPAOCDAH\0R\x0bGNLAECODENP\
+    \x121\n\x0bLMFMBJCNALJ\x18\xd5\x0c\x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0b\
+    LMFMBJCNALJ\x12#\n\x0bHJHPHDACEHE\x18\xd1\x06\x20\x01(\rH\0R\x0bHJHPHDAC\
+    EHE\x121\n\x0bOEMEKBOGNJH\x18\xc0\x06\x20\x01(\x0b2\x0c.BFAKMCIJFCBH\0R\
+    \x0bOEMEKBOGNJH\x121\n\x0bONMNMLBANHK\x18\xfa\r\x20\x01(\x0b2\x0c.HMACEH\
+    DGGHBH\0R\x0bONMNMLBANHK\x121\n\x0bPHKCDLPHMPA\x18\x82\x0e\x20\x01(\x0b2\
+    \x0c.MIKGMGBHLENH\0R\x0bPHKCDLPHMPA\x121\n\x0bLABNNEGJNHO\x18\xd9\x0c\
+    \x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0bLABNNEGJNHO\x12#\n\x0bDBIKJPDBMOE\
+    \x18\xad\x04\x20\x01(\x03H\0R\x0bDBIKJPDBMOE\x121\n\x0bIMPBCBPIFAG\x18\
+    \x9f\x06\x20\x01(\x0b2\x0c.IKBDJLNEPBHH\0R\x0bIMPBCBPIFAG\x12#\n\x0bBJLC\
+    BAAKPDI\x18\xcf\n\x20\x01(\rH\0R\x0bBJLCBAAKPDI\x12#\n\x0bDLKOEIANIMK\
+    \x18\xaa\x0e\x20\x01(\rH\0R\x0bDLKOEIANIMKB\r\n\x0bNBGBONGLJHMb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1076,13 +936,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(8);
+            let mut deps = ::std::vec::Vec::with_capacity(6);
             deps.push(super::BFAKMCIJFCB::file_descriptor().clone());
-            deps.push(super::EIIDKJFKIPE::file_descriptor().clone());
             deps.push(super::HMACEHDGGHB::file_descriptor().clone());
             deps.push(super::IKBDJLNEPBH::file_descriptor().clone());
             deps.push(super::JBJNJPAOCDA::file_descriptor().clone());
-            deps.push(super::MHNNEFBOPIE::file_descriptor().clone());
             deps.push(super::MIKGMGBHLEN::file_descriptor().clone());
             deps.push(super::POBLGKIGINE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

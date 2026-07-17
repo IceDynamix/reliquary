@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeCsReq.first_lineup)
-    pub first_lineup: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.stage_info)
     pub stage_info: ::protobuf::MessageField<super::ChallengeBuffInfo::ChallengeBuffInfo>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.first_lineup)
+    pub first_lineup: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.second_lineup)
     pub second_lineup: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartChallengeCsReq.BKNKLEOCJNO)
-    pub BKNKLEOCJNO: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
-    // @@protoc_insertion_point(field:StartChallengeCsReq.ABNDFKFIKCI)
-    pub ABNDFKFIKCI: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.avatar_lineup_first)
+    pub avatar_lineup_first: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
+    // @@protoc_insertion_point(field:StartChallengeCsReq.avatar_lineup_second)
+    pub avatar_lineup_second: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
     // @@protoc_insertion_point(field:StartChallengeCsReq.challenge_id)
     pub challenge_id: u32,
     // special fields
@@ -59,15 +59,15 @@ impl StartChallengeCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "first_lineup",
-            |m: &StartChallengeCsReq| { &m.first_lineup },
-            |m: &mut StartChallengeCsReq| { &mut m.first_lineup },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBuffInfo::ChallengeBuffInfo>(
             "stage_info",
             |m: &StartChallengeCsReq| { &m.stage_info },
             |m: &mut StartChallengeCsReq| { &mut m.stage_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "first_lineup",
+            |m: &StartChallengeCsReq| { &m.first_lineup },
+            |m: &mut StartChallengeCsReq| { &mut m.first_lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "second_lineup",
@@ -75,14 +75,14 @@ impl StartChallengeCsReq {
             |m: &mut StartChallengeCsReq| { &mut m.second_lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BKNKLEOCJNO",
-            |m: &StartChallengeCsReq| { &m.BKNKLEOCJNO },
-            |m: &mut StartChallengeCsReq| { &mut m.BKNKLEOCJNO },
+            "avatar_lineup_first",
+            |m: &StartChallengeCsReq| { &m.avatar_lineup_first },
+            |m: &mut StartChallengeCsReq| { &mut m.avatar_lineup_first },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ABNDFKFIKCI",
-            |m: &StartChallengeCsReq| { &m.ABNDFKFIKCI },
-            |m: &mut StartChallengeCsReq| { &mut m.ABNDFKFIKCI },
+            "avatar_lineup_second",
+            |m: &StartChallengeCsReq| { &m.avatar_lineup_second },
+            |m: &mut StartChallengeCsReq| { &mut m.avatar_lineup_second },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -107,14 +107,14 @@ impl ::protobuf::Message for StartChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.first_lineup)?;
                 },
-                64 => {
+                24 => {
                     self.first_lineup.push(is.read_uint32()?);
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 34 => {
                     is.read_repeated_packed_uint32_into(&mut self.second_lineup)?;
@@ -122,13 +122,13 @@ impl ::protobuf::Message for StartChallengeCsReq {
                 32 => {
                     self.second_lineup.push(is.read_uint32()?);
                 },
-                106 => {
-                    self.BKNKLEOCJNO.push(is.read_message()?);
+                50 => {
+                    self.avatar_lineup_first.push(is.read_message()?);
                 },
-                10 => {
-                    self.ABNDFKFIKCI.push(is.read_message()?);
+                82 => {
+                    self.avatar_lineup_second.push(is.read_message()?);
                 },
-                112 => {
+                96 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -143,22 +143,22 @@ impl ::protobuf::Message for StartChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.first_lineup);
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.first_lineup);
         my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.second_lineup);
-        for value in &self.BKNKLEOCJNO {
+        for value in &self.avatar_lineup_first {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.ABNDFKFIKCI {
+        for value in &self.avatar_lineup_second {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -166,19 +166,19 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.first_lineup)?;
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.second_lineup)?;
-        for v in &self.BKNKLEOCJNO {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        for v in &self.ABNDFKFIKCI {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.first_lineup)?;
+        os.write_repeated_packed_uint32(4, &self.second_lineup)?;
+        for v in &self.avatar_lineup_first {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.avatar_lineup_second {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.challenge_id != 0 {
-            os.write_uint32(14, self.challenge_id)?;
+            os.write_uint32(12, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for StartChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.first_lineup.clear();
         self.stage_info.clear();
+        self.first_lineup.clear();
         self.second_lineup.clear();
-        self.BKNKLEOCJNO.clear();
-        self.ABNDFKFIKCI.clear();
+        self.avatar_lineup_first.clear();
+        self.avatar_lineup_second.clear();
         self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengeCsReq {
         static instance: StartChallengeCsReq = StartChallengeCsReq {
-            first_lineup: ::std::vec::Vec::new(),
             stage_info: ::protobuf::MessageField::none(),
+            first_lineup: ::std::vec::Vec::new(),
             second_lineup: ::std::vec::Vec::new(),
-            BKNKLEOCJNO: ::std::vec::Vec::new(),
-            ABNDFKFIKCI: ::std::vec::Vec::new(),
+            avatar_lineup_first: ::std::vec::Vec::new(),
+            avatar_lineup_second: ::std::vec::Vec::new(),
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,13 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StartChallengeCsReq.proto\x1a\x16AvatarIdentifier.proto\x1a\x17Cha\
-    llengeBuffInfo.proto\"\x9d\x02\n\x13StartChallengeCsReq\x12!\n\x0cfirst_\
-    lineup\x18\x08\x20\x03(\rR\x0bfirstLineup\x121\n\nstage_info\x18\x02\x20\
-    \x01(\x0b2\x12.ChallengeBuffInfoR\tstageInfo\x12#\n\rsecond_lineup\x18\
-    \x04\x20\x03(\rR\x0csecondLineup\x123\n\x0bBKNKLEOCJNO\x18\r\x20\x03(\
-    \x0b2\x11.AvatarIdentifierR\x0bBKNKLEOCJNO\x123\n\x0bABNDFKFIKCI\x18\x01\
-    \x20\x03(\x0b2\x11.AvatarIdentifierR\x0bABNDFKFIKCI\x12!\n\x0cchallenge_\
-    id\x18\x0e\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    llengeBuffInfo.proto\"\xbb\x02\n\x13StartChallengeCsReq\x121\n\nstage_in\
+    fo\x18\x01\x20\x01(\x0b2\x12.ChallengeBuffInfoR\tstageInfo\x12!\n\x0cfir\
+    st_lineup\x18\x03\x20\x03(\rR\x0bfirstLineup\x12#\n\rsecond_lineup\x18\
+    \x04\x20\x03(\rR\x0csecondLineup\x12A\n\x13avatar_lineup_first\x18\x06\
+    \x20\x03(\x0b2\x11.AvatarIdentifierR\x11avatarLineupFirst\x12C\n\x14avat\
+    ar_lineup_second\x18\n\x20\x03(\x0b2\x11.AvatarIdentifierR\x12avatarLine\
+    upSecond\x12!\n\x0cchallenge_id\x18\x0c\x20\x01(\rR\x0bchallengeIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

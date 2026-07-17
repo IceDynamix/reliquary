@@ -29,30 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdChenLingFesType {
     // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_NLCDGIPGFDJ)
     LCOIIEGJAOK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_EAEOGKPEAEG)
-    LCOIIEGJAOK_EAEOGKPEAEG = 9945,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_AGGHGALCLOC)
-    LCOIIEGJAOK_AGGHGALCLOC = 9943,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_BHBABNHKMIG)
-    LCOIIEGJAOK_BHBABNHKMIG = 9934,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_JPMACCMOJPJ)
-    LCOIIEGJAOK_JPMACCMOJPJ = 9923,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_IODLKJNPGLC)
-    LCOIIEGJAOK_IODLKJNPGLC = 9929,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_AIHPKAEDHGF)
-    LCOIIEGJAOK_AIHPKAEDHGF = 9944,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_FGEKDBIEDEJ)
-    LCOIIEGJAOK_FGEKDBIEDEJ = 9927,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_BJCOFJPKOLI)
-    LCOIIEGJAOK_BJCOFJPKOLI = 9909,
     // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_PFMMOPDHJOJ)
-    LCOIIEGJAOK_PFMMOPDHJOJ = 9907,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_LKNMPMOPGAK)
-    LCOIIEGJAOK_LKNMPMOPGAK = 9919,
-    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_NEMAHJMIBNA)
-    LCOIIEGJAOK_NEMAHJMIBNA = 9942,
+    LCOIIEGJAOK_PFMMOPDHJOJ = 9937,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_FGEKDBIEDEJ)
+    LCOIIEGJAOK_FGEKDBIEDEJ = 9948,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_IFLMBGGEJNF)
+    LCOIIEGJAOK_IFLMBGGEJNF = 9917,
     // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_DGOFALCINAO)
-    LCOIIEGJAOK_DGOFALCINAO = 9932,
+    LCOIIEGJAOK_DGOFALCINAO = 9909,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_JPMACCMOJPJ)
+    LCOIIEGJAOK_JPMACCMOJPJ = 9944,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_AGGHGALCLOC)
+    LCOIIEGJAOK_AGGHGALCLOC = 9924,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_LKNMPMOPGAK)
+    LCOIIEGJAOK_LKNMPMOPGAK = 9903,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_NEMAHJMIBNA)
+    LCOIIEGJAOK_NEMAHJMIBNA = 9923,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_AIHPKAEDHGF)
+    LCOIIEGJAOK_AIHPKAEDHGF = 9919,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_IODLKJNPGLC)
+    LCOIIEGJAOK_IODLKJNPGLC = 9921,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_EAEOGKPEAEG)
+    LCOIIEGJAOK_EAEOGKPEAEG = 9907,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_BJCOFJPKOLI)
+    LCOIIEGJAOK_BJCOFJPKOLI = 9910,
+    // @@protoc_insertion_point(enum_value:CmdChenLingFesType.LCOIIEGJAOK_BHBABNHKMIG)
+    LCOIIEGJAOK_BHBABNHKMIG = 9920,
 }
 
 impl ::protobuf::Enum for CmdChenLingFesType {
@@ -65,18 +67,19 @@ impl ::protobuf::Enum for CmdChenLingFesType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChenLingFesType> {
         match value {
             0 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_NLCDGIPGFDJ),
-            9945 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG),
-            9943 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC),
-            9934 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG),
-            9923 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ),
-            9929 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC),
-            9944 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF),
-            9927 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ),
-            9909 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI),
-            9907 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ),
-            9919 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK),
-            9942 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA),
-            9932 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO),
+            9937 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ),
+            9948 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ),
+            9917 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IFLMBGGEJNF),
+            9909 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO),
+            9944 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ),
+            9924 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC),
+            9903 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK),
+            9923 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA),
+            9919 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF),
+            9921 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC),
+            9907 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG),
+            9910 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI),
+            9920 => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +87,38 @@ impl ::protobuf::Enum for CmdChenLingFesType {
     fn from_str(str: &str) -> ::std::option::Option<CmdChenLingFesType> {
         match str {
             "LCOIIEGJAOK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_NLCDGIPGFDJ),
-            "LCOIIEGJAOK_EAEOGKPEAEG" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG),
-            "LCOIIEGJAOK_AGGHGALCLOC" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC),
-            "LCOIIEGJAOK_BHBABNHKMIG" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG),
-            "LCOIIEGJAOK_JPMACCMOJPJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ),
-            "LCOIIEGJAOK_IODLKJNPGLC" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC),
-            "LCOIIEGJAOK_AIHPKAEDHGF" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF),
-            "LCOIIEGJAOK_FGEKDBIEDEJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ),
-            "LCOIIEGJAOK_BJCOFJPKOLI" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI),
             "LCOIIEGJAOK_PFMMOPDHJOJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ),
+            "LCOIIEGJAOK_FGEKDBIEDEJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ),
+            "LCOIIEGJAOK_IFLMBGGEJNF" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IFLMBGGEJNF),
+            "LCOIIEGJAOK_DGOFALCINAO" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO),
+            "LCOIIEGJAOK_JPMACCMOJPJ" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ),
+            "LCOIIEGJAOK_AGGHGALCLOC" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC),
             "LCOIIEGJAOK_LKNMPMOPGAK" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK),
             "LCOIIEGJAOK_NEMAHJMIBNA" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA),
-            "LCOIIEGJAOK_DGOFALCINAO" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO),
+            "LCOIIEGJAOK_AIHPKAEDHGF" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF),
+            "LCOIIEGJAOK_IODLKJNPGLC" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC),
+            "LCOIIEGJAOK_EAEOGKPEAEG" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG),
+            "LCOIIEGJAOK_BJCOFJPKOLI" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI),
+            "LCOIIEGJAOK_BHBABNHKMIG" => ::std::option::Option::Some(CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChenLingFesType] = &[
         CmdChenLingFesType::LCOIIEGJAOK_NLCDGIPGFDJ,
-        CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG,
-        CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC,
-        CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG,
-        CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ,
-        CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC,
-        CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF,
-        CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ,
-        CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI,
         CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ,
+        CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ,
+        CmdChenLingFesType::LCOIIEGJAOK_IFLMBGGEJNF,
+        CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO,
+        CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ,
+        CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC,
         CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK,
         CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA,
-        CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO,
+        CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF,
+        CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC,
+        CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG,
+        CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI,
+        CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG,
     ];
 }
 
@@ -126,18 +131,19 @@ impl ::protobuf::EnumFull for CmdChenLingFesType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdChenLingFesType::LCOIIEGJAOK_NLCDGIPGFDJ => 0,
-            CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG => 1,
-            CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC => 2,
-            CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG => 3,
-            CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ => 4,
-            CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC => 5,
-            CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF => 6,
-            CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ => 7,
-            CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI => 8,
-            CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ => 9,
-            CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK => 10,
-            CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA => 11,
-            CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO => 12,
+            CmdChenLingFesType::LCOIIEGJAOK_PFMMOPDHJOJ => 1,
+            CmdChenLingFesType::LCOIIEGJAOK_FGEKDBIEDEJ => 2,
+            CmdChenLingFesType::LCOIIEGJAOK_IFLMBGGEJNF => 3,
+            CmdChenLingFesType::LCOIIEGJAOK_DGOFALCINAO => 4,
+            CmdChenLingFesType::LCOIIEGJAOK_JPMACCMOJPJ => 5,
+            CmdChenLingFesType::LCOIIEGJAOK_AGGHGALCLOC => 6,
+            CmdChenLingFesType::LCOIIEGJAOK_LKNMPMOPGAK => 7,
+            CmdChenLingFesType::LCOIIEGJAOK_NEMAHJMIBNA => 8,
+            CmdChenLingFesType::LCOIIEGJAOK_AIHPKAEDHGF => 9,
+            CmdChenLingFesType::LCOIIEGJAOK_IODLKJNPGLC => 10,
+            CmdChenLingFesType::LCOIIEGJAOK_EAEOGKPEAEG => 11,
+            CmdChenLingFesType::LCOIIEGJAOK_BJCOFJPKOLI => 12,
+            CmdChenLingFesType::LCOIIEGJAOK_BHBABNHKMIG => 13,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -156,16 +162,17 @@ impl CmdChenLingFesType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdChenLingFesType.proto*\x99\x03\n\x12CmdChenLingFesType\x12\x1b\
-    \n\x17LCOIIEGJAOK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCOIIEGJAOK_EAEOGKPEAEG\
-    \x10\xd9M\x12\x1c\n\x17LCOIIEGJAOK_AGGHGALCLOC\x10\xd7M\x12\x1c\n\x17LCO\
-    IIEGJAOK_BHBABNHKMIG\x10\xceM\x12\x1c\n\x17LCOIIEGJAOK_JPMACCMOJPJ\x10\
-    \xc3M\x12\x1c\n\x17LCOIIEGJAOK_IODLKJNPGLC\x10\xc9M\x12\x1c\n\x17LCOIIEG\
-    JAOK_AIHPKAEDHGF\x10\xd8M\x12\x1c\n\x17LCOIIEGJAOK_FGEKDBIEDEJ\x10\xc7M\
-    \x12\x1c\n\x17LCOIIEGJAOK_BJCOFJPKOLI\x10\xb5M\x12\x1c\n\x17LCOIIEGJAOK_\
-    PFMMOPDHJOJ\x10\xb3M\x12\x1c\n\x17LCOIIEGJAOK_LKNMPMOPGAK\x10\xbfM\x12\
-    \x1c\n\x17LCOIIEGJAOK_NEMAHJMIBNA\x10\xd6M\x12\x1c\n\x17LCOIIEGJAOK_DGOF\
-    ALCINAO\x10\xccMb\x06proto3\
+    \n\x18CmdChenLingFesType.proto*\xb7\x03\n\x12CmdChenLingFesType\x12\x1b\
+    \n\x17LCOIIEGJAOK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCOIIEGJAOK_PFMMOPDHJOJ\
+    \x10\xd1M\x12\x1c\n\x17LCOIIEGJAOK_FGEKDBIEDEJ\x10\xdcM\x12\x1c\n\x17LCO\
+    IIEGJAOK_IFLMBGGEJNF\x10\xbdM\x12\x1c\n\x17LCOIIEGJAOK_DGOFALCINAO\x10\
+    \xb5M\x12\x1c\n\x17LCOIIEGJAOK_JPMACCMOJPJ\x10\xd8M\x12\x1c\n\x17LCOIIEG\
+    JAOK_AGGHGALCLOC\x10\xc4M\x12\x1c\n\x17LCOIIEGJAOK_LKNMPMOPGAK\x10\xafM\
+    \x12\x1c\n\x17LCOIIEGJAOK_NEMAHJMIBNA\x10\xc3M\x12\x1c\n\x17LCOIIEGJAOK_\
+    AIHPKAEDHGF\x10\xbfM\x12\x1c\n\x17LCOIIEGJAOK_IODLKJNPGLC\x10\xc1M\x12\
+    \x1c\n\x17LCOIIEGJAOK_EAEOGKPEAEG\x10\xb3M\x12\x1c\n\x17LCOIIEGJAOK_BJCO\
+    FJPKOLI\x10\xb6M\x12\x1c\n\x17LCOIIEGJAOK_BHBABNHKMIG\x10\xc0Mb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

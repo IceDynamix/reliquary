@@ -86,16 +86,16 @@ impl ::protobuf::Message for MGBKBIKLJDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.GGIGDJPFBBP)?;
                 },
-                80 => {
+                16 => {
                     self.GGIGDJPFBBP.push(is.read_uint32()?);
                 },
-                96 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.NPPKABBJCMI = is.read_bool()?;
                 },
                 tag => {
@@ -110,9 +110,9 @@ impl ::protobuf::Message for MGBKBIKLJDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.GGIGDJPFBBP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.GGIGDJPFBBP);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if self.NPPKABBJCMI != false {
             my_size += 1 + 1;
@@ -123,12 +123,12 @@ impl ::protobuf::Message for MGBKBIKLJDN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.GGIGDJPFBBP)?;
+        os.write_repeated_packed_uint32(2, &self.GGIGDJPFBBP)?;
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if self.NPPKABBJCMI != false {
-            os.write_bool(15, self.NPPKABBJCMI)?;
+            os.write_bool(14, self.NPPKABBJCMI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for MGBKBIKLJDN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MGBKBIKLJDN.proto\"k\n\x0bMGBKBIKLJDN\x12\x20\n\x0bGGIGDJPFBBP\x18\
-    \n\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\
-    \x07retcode\x12\x20\n\x0bNPPKABBJCMI\x18\x0f\x20\x01(\x08R\x0bNPPKABBJCM\
+    \x02\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bNPPKABBJCMI\x18\x0e\x20\x01(\x08R\x0bNPPKABBJCM\
     Ib\x06proto3\
 ";
 

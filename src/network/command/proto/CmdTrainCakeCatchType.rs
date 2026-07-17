@@ -29,58 +29,58 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTrainCakeCatchType {
     // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NLCDGIPGFDJ)
     NMGINGMHJDA_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JLBBKGOMCDE)
-    NMGINGMHJDA_JLBBKGOMCDE = 9679,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_HJAGKHEJOFM)
-    NMGINGMHJDA_HJAGKHEJOFM = 9716,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BMCMIGILNBE)
-    NMGINGMHJDA_BMCMIGILNBE = 9755,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OGOCLNPJPHO)
-    NMGINGMHJDA_OGOCLNPJPHO = 9752,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PNLGFFDJKHL)
-    NMGINGMHJDA_PNLGFFDJKHL = 9760,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JNCFJJIGEFG)
-    NMGINGMHJDA_JNCFJJIGEFG = 9640,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AEFOHGJHOMB)
-    NMGINGMHJDA_AEFOHGJHOMB = 9633,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AFAKIKMICOF)
-    NMGINGMHJDA_AFAKIKMICOF = 9720,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BOIAJPMHPML)
-    NMGINGMHJDA_BOIAJPMHPML = 9644,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BPOBPOPNPNL)
-    NMGINGMHJDA_BPOBPOPNPNL = 9698,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_EHGILHHDKHF)
-    NMGINGMHJDA_EHGILHHDKHF = 9653,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_GCNJHGHPHDG)
-    NMGINGMHJDA_GCNJHGHPHDG = 9765,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NJNHJOFFHHC)
-    NMGINGMHJDA_NJNHJOFFHHC = 9637,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NMEHFLHCOJI)
-    NMGINGMHJDA_NMEHFLHCOJI = 9625,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JHKBKHGFEFP)
-    NMGINGMHJDA_JHKBKHGFEFP = 9641,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_LLKDECHFKDJ)
-    NMGINGMHJDA_LLKDECHFKDJ = 9754,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NOBEEMKGGHK)
-    NMGINGMHJDA_NOBEEMKGGHK = 9712,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PJPMBFIMNJB)
-    NMGINGMHJDA_PJPMBFIMNJB = 9646,
     // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OAFHNCOANPE)
     NMGINGMHJDA_OAFHNCOANPE = 9715,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_EHGILHHDKHF)
+    NMGINGMHJDA_EHGILHHDKHF = 9740,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BOIAJPMHPML)
+    NMGINGMHJDA_BOIAJPMHPML = 9668,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_GCNJHGHPHDG)
+    NMGINGMHJDA_GCNJHGHPHDG = 9683,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PNLGFFDJKHL)
+    NMGINGMHJDA_PNLGFFDJKHL = 9718,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AFAKIKMICOF)
+    NMGINGMHJDA_AFAKIKMICOF = 9767,
     // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_APDHJHHIMOF)
-    NMGINGMHJDA_APDHJHHIMOF = 9768,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_CFAOJOLPOPG)
-    NMGINGMHJDA_CFAOJOLPOPG = 9632,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OBOPFNGMBAO)
-    NMGINGMHJDA_OBOPFNGMBAO = 9676,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JEOIKEHOPLD)
-    NMGINGMHJDA_JEOIKEHOPLD = 9642,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_ELPACLCOJOM)
-    NMGINGMHJDA_ELPACLCOJOM = 9626,
+    NMGINGMHJDA_APDHJHHIMOF = 9642,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OGOCLNPJPHO)
+    NMGINGMHJDA_OGOCLNPJPHO = 9658,
     // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PBPPLEDIMGH)
-    NMGINGMHJDA_PBPPLEDIMGH = 9700,
+    NMGINGMHJDA_PBPPLEDIMGH = 9753,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AEFOHGJHOMB)
+    NMGINGMHJDA_AEFOHGJHOMB = 9713,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BMCMIGILNBE)
+    NMGINGMHJDA_BMCMIGILNBE = 9628,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NMEHFLHCOJI)
+    NMGINGMHJDA_NMEHFLHCOJI = 9747,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PJPMBFIMNJB)
+    NMGINGMHJDA_PJPMBFIMNJB = 9653,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OBOPFNGMBAO)
+    NMGINGMHJDA_OBOPFNGMBAO = 9725,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JHKBKHGFEFP)
+    NMGINGMHJDA_JHKBKHGFEFP = 9686,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JNCFJJIGEFG)
+    NMGINGMHJDA_JNCFJJIGEFG = 9659,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BPOBPOPNPNL)
+    NMGINGMHJDA_BPOBPOPNPNL = 9666,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_CFAOJOLPOPG)
+    NMGINGMHJDA_CFAOJOLPOPG = 9661,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_ELPACLCOJOM)
+    NMGINGMHJDA_ELPACLCOJOM = 9639,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NJNHJOFFHHC)
+    NMGINGMHJDA_NJNHJOFFHHC = 9662,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NOBEEMKGGHK)
+    NMGINGMHJDA_NOBEEMKGGHK = 9695,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JLBBKGOMCDE)
+    NMGINGMHJDA_JLBBKGOMCDE = 9671,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_LLKDECHFKDJ)
+    NMGINGMHJDA_LLKDECHFKDJ = 9644,
     // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BPOKMJCLOPB)
-    NMGINGMHJDA_BPOKMJCLOPB = 9622,
+    NMGINGMHJDA_BPOKMJCLOPB = 9699,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_HJAGKHEJOFM)
+    NMGINGMHJDA_HJAGKHEJOFM = 9672,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JEOIKEHOPLD)
+    NMGINGMHJDA_JEOIKEHOPLD = 9765,
 }
 
 impl ::protobuf::Enum for CmdTrainCakeCatchType {
@@ -93,32 +93,32 @@ impl ::protobuf::Enum for CmdTrainCakeCatchType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainCakeCatchType> {
         match value {
             0 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ),
-            9679 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
-            9716 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
-            9755 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
-            9752 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
-            9760 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
-            9640 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
-            9633 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
-            9720 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
-            9644 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
-            9698 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
-            9653 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
-            9765 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
-            9637 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
-            9625 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
-            9641 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
-            9754 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
-            9712 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
-            9646 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
             9715 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE),
-            9768 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF),
-            9632 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
-            9676 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
-            9642 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
-            9626 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
-            9700 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH),
-            9622 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB),
+            9740 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
+            9668 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
+            9683 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
+            9718 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
+            9767 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
+            9642 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF),
+            9658 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
+            9753 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH),
+            9713 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
+            9628 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
+            9747 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
+            9653 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
+            9725 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
+            9686 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
+            9659 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
+            9666 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
+            9661 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
+            9639 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
+            9662 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
+            9695 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
+            9671 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
+            9644 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
+            9699 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB),
+            9672 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
+            9765 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
             _ => ::std::option::Option::None
         }
     }
@@ -126,64 +126,64 @@ impl ::protobuf::Enum for CmdTrainCakeCatchType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainCakeCatchType> {
         match str {
             "NMGINGMHJDA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ),
-            "NMGINGMHJDA_JLBBKGOMCDE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
-            "NMGINGMHJDA_HJAGKHEJOFM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
-            "NMGINGMHJDA_BMCMIGILNBE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
-            "NMGINGMHJDA_OGOCLNPJPHO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
-            "NMGINGMHJDA_PNLGFFDJKHL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
-            "NMGINGMHJDA_JNCFJJIGEFG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
-            "NMGINGMHJDA_AEFOHGJHOMB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
-            "NMGINGMHJDA_AFAKIKMICOF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
-            "NMGINGMHJDA_BOIAJPMHPML" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
-            "NMGINGMHJDA_BPOBPOPNPNL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
-            "NMGINGMHJDA_EHGILHHDKHF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
-            "NMGINGMHJDA_GCNJHGHPHDG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
-            "NMGINGMHJDA_NJNHJOFFHHC" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
-            "NMGINGMHJDA_NMEHFLHCOJI" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
-            "NMGINGMHJDA_JHKBKHGFEFP" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
-            "NMGINGMHJDA_LLKDECHFKDJ" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
-            "NMGINGMHJDA_NOBEEMKGGHK" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
-            "NMGINGMHJDA_PJPMBFIMNJB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
             "NMGINGMHJDA_OAFHNCOANPE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE),
+            "NMGINGMHJDA_EHGILHHDKHF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
+            "NMGINGMHJDA_BOIAJPMHPML" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
+            "NMGINGMHJDA_GCNJHGHPHDG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
+            "NMGINGMHJDA_PNLGFFDJKHL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
+            "NMGINGMHJDA_AFAKIKMICOF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
             "NMGINGMHJDA_APDHJHHIMOF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF),
-            "NMGINGMHJDA_CFAOJOLPOPG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
-            "NMGINGMHJDA_OBOPFNGMBAO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
-            "NMGINGMHJDA_JEOIKEHOPLD" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
-            "NMGINGMHJDA_ELPACLCOJOM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
+            "NMGINGMHJDA_OGOCLNPJPHO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
             "NMGINGMHJDA_PBPPLEDIMGH" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH),
+            "NMGINGMHJDA_AEFOHGJHOMB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
+            "NMGINGMHJDA_BMCMIGILNBE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
+            "NMGINGMHJDA_NMEHFLHCOJI" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
+            "NMGINGMHJDA_PJPMBFIMNJB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
+            "NMGINGMHJDA_OBOPFNGMBAO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
+            "NMGINGMHJDA_JHKBKHGFEFP" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
+            "NMGINGMHJDA_JNCFJJIGEFG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
+            "NMGINGMHJDA_BPOBPOPNPNL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
+            "NMGINGMHJDA_CFAOJOLPOPG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
+            "NMGINGMHJDA_ELPACLCOJOM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
+            "NMGINGMHJDA_NJNHJOFFHHC" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
+            "NMGINGMHJDA_NOBEEMKGGHK" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
+            "NMGINGMHJDA_JLBBKGOMCDE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
+            "NMGINGMHJDA_LLKDECHFKDJ" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
             "NMGINGMHJDA_BPOKMJCLOPB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB),
+            "NMGINGMHJDA_HJAGKHEJOFM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
+            "NMGINGMHJDA_JEOIKEHOPLD" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainCakeCatchType] = &[
         CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ,
-        CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE,
-        CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM,
-        CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE,
-        CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO,
-        CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL,
-        CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG,
-        CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB,
-        CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF,
-        CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML,
-        CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL,
-        CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF,
-        CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG,
-        CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC,
-        CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI,
-        CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP,
-        CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ,
-        CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK,
-        CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB,
         CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML,
+        CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL,
+        CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF,
         CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF,
-        CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG,
-        CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO,
-        CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD,
-        CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM,
+        CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO,
         CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH,
+        CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI,
+        CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB,
+        CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL,
+        CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ,
         CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB,
+        CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD,
     ];
 }
 
@@ -196,32 +196,32 @@ impl ::protobuf::EnumFull for CmdTrainCakeCatchType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ => 0,
-            CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE => 1,
-            CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM => 2,
-            CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE => 3,
-            CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO => 4,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE => 1,
+            CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF => 2,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML => 3,
+            CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG => 4,
             CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL => 5,
-            CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG => 6,
-            CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB => 7,
-            CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF => 8,
-            CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML => 9,
-            CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL => 10,
-            CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF => 11,
-            CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG => 12,
-            CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC => 13,
-            CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI => 14,
+            CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF => 6,
+            CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF => 7,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO => 8,
+            CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH => 9,
+            CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB => 10,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE => 11,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI => 12,
+            CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB => 13,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO => 14,
             CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP => 15,
-            CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ => 16,
-            CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK => 17,
-            CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB => 18,
-            CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE => 19,
-            CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF => 20,
-            CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG => 21,
-            CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO => 22,
-            CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD => 23,
-            CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM => 24,
-            CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH => 25,
-            CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB => 26,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG => 16,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL => 17,
+            CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG => 18,
+            CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM => 19,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC => 20,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK => 21,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE => 22,
+            CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ => 23,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB => 24,
+            CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM => 25,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD => 26,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -241,24 +241,24 @@ impl CmdTrainCakeCatchType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdTrainCakeCatchType.proto*\xc0\x06\n\x15CmdTrainCakeCatchType\
-    \x12\x1b\n\x17NMGINGMHJDA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NMGINGMHJDA_JLB\
-    BKGOMCDE\x10\xcfK\x12\x1c\n\x17NMGINGMHJDA_HJAGKHEJOFM\x10\xf4K\x12\x1c\
-    \n\x17NMGINGMHJDA_BMCMIGILNBE\x10\x9bL\x12\x1c\n\x17NMGINGMHJDA_OGOCLNPJ\
-    PHO\x10\x98L\x12\x1c\n\x17NMGINGMHJDA_PNLGFFDJKHL\x10\xa0L\x12\x1c\n\x17\
-    NMGINGMHJDA_JNCFJJIGEFG\x10\xa8K\x12\x1c\n\x17NMGINGMHJDA_AEFOHGJHOMB\
-    \x10\xa1K\x12\x1c\n\x17NMGINGMHJDA_AFAKIKMICOF\x10\xf8K\x12\x1c\n\x17NMG\
-    INGMHJDA_BOIAJPMHPML\x10\xacK\x12\x1c\n\x17NMGINGMHJDA_BPOBPOPNPNL\x10\
-    \xe2K\x12\x1c\n\x17NMGINGMHJDA_EHGILHHDKHF\x10\xb5K\x12\x1c\n\x17NMGINGM\
-    HJDA_GCNJHGHPHDG\x10\xa5L\x12\x1c\n\x17NMGINGMHJDA_NJNHJOFFHHC\x10\xa5K\
-    \x12\x1c\n\x17NMGINGMHJDA_NMEHFLHCOJI\x10\x99K\x12\x1c\n\x17NMGINGMHJDA_\
-    JHKBKHGFEFP\x10\xa9K\x12\x1c\n\x17NMGINGMHJDA_LLKDECHFKDJ\x10\x9aL\x12\
-    \x1c\n\x17NMGINGMHJDA_NOBEEMKGGHK\x10\xf0K\x12\x1c\n\x17NMGINGMHJDA_PJPM\
-    BFIMNJB\x10\xaeK\x12\x1c\n\x17NMGINGMHJDA_OAFHNCOANPE\x10\xf3K\x12\x1c\n\
-    \x17NMGINGMHJDA_APDHJHHIMOF\x10\xa8L\x12\x1c\n\x17NMGINGMHJDA_CFAOJOLPOP\
-    G\x10\xa0K\x12\x1c\n\x17NMGINGMHJDA_OBOPFNGMBAO\x10\xccK\x12\x1c\n\x17NM\
-    GINGMHJDA_JEOIKEHOPLD\x10\xaaK\x12\x1c\n\x17NMGINGMHJDA_ELPACLCOJOM\x10\
-    \x9aK\x12\x1c\n\x17NMGINGMHJDA_PBPPLEDIMGH\x10\xe4K\x12\x1c\n\x17NMGINGM\
-    HJDA_BPOKMJCLOPB\x10\x96Kb\x06proto3\
+    \x12\x1b\n\x17NMGINGMHJDA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NMGINGMHJDA_OAF\
+    HNCOANPE\x10\xf3K\x12\x1c\n\x17NMGINGMHJDA_EHGILHHDKHF\x10\x8cL\x12\x1c\
+    \n\x17NMGINGMHJDA_BOIAJPMHPML\x10\xc4K\x12\x1c\n\x17NMGINGMHJDA_GCNJHGHP\
+    HDG\x10\xd3K\x12\x1c\n\x17NMGINGMHJDA_PNLGFFDJKHL\x10\xf6K\x12\x1c\n\x17\
+    NMGINGMHJDA_AFAKIKMICOF\x10\xa7L\x12\x1c\n\x17NMGINGMHJDA_APDHJHHIMOF\
+    \x10\xaaK\x12\x1c\n\x17NMGINGMHJDA_OGOCLNPJPHO\x10\xbaK\x12\x1c\n\x17NMG\
+    INGMHJDA_PBPPLEDIMGH\x10\x99L\x12\x1c\n\x17NMGINGMHJDA_AEFOHGJHOMB\x10\
+    \xf1K\x12\x1c\n\x17NMGINGMHJDA_BMCMIGILNBE\x10\x9cK\x12\x1c\n\x17NMGINGM\
+    HJDA_NMEHFLHCOJI\x10\x93L\x12\x1c\n\x17NMGINGMHJDA_PJPMBFIMNJB\x10\xb5K\
+    \x12\x1c\n\x17NMGINGMHJDA_OBOPFNGMBAO\x10\xfdK\x12\x1c\n\x17NMGINGMHJDA_\
+    JHKBKHGFEFP\x10\xd6K\x12\x1c\n\x17NMGINGMHJDA_JNCFJJIGEFG\x10\xbbK\x12\
+    \x1c\n\x17NMGINGMHJDA_BPOBPOPNPNL\x10\xc2K\x12\x1c\n\x17NMGINGMHJDA_CFAO\
+    JOLPOPG\x10\xbdK\x12\x1c\n\x17NMGINGMHJDA_ELPACLCOJOM\x10\xa7K\x12\x1c\n\
+    \x17NMGINGMHJDA_NJNHJOFFHHC\x10\xbeK\x12\x1c\n\x17NMGINGMHJDA_NOBEEMKGGH\
+    K\x10\xdfK\x12\x1c\n\x17NMGINGMHJDA_JLBBKGOMCDE\x10\xc7K\x12\x1c\n\x17NM\
+    GINGMHJDA_LLKDECHFKDJ\x10\xacK\x12\x1c\n\x17NMGINGMHJDA_BPOKMJCLOPB\x10\
+    \xe3K\x12\x1c\n\x17NMGINGMHJDA_HJAGKHEJOFM\x10\xc8K\x12\x1c\n\x17NMGINGM\
+    HJDA_JEOIKEHOPLD\x10\xa5Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

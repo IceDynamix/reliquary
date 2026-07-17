@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OIJHAJAIFFH {
     // message fields
-    // @@protoc_insertion_point(field:OIJHAJAIFFH.grid_fight_value_init_component)
-    pub grid_fight_value_init_component: ::std::collections::HashMap<::std::string::String, u32>,
-    // @@protoc_insertion_point(field:OIJHAJAIFFH.grid_fight_item_list)
-    pub grid_fight_item_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OIJHAJAIFFH.pos)
+    pub pos: u32,
     // @@protoc_insertion_point(field:OIJHAJAIFFH.role_id)
     pub role_id: u32,
     // @@protoc_insertion_point(field:OIJHAJAIFFH.role_star)
     pub role_star: u32,
-    // @@protoc_insertion_point(field:OIJHAJAIFFH.pos_index)
-    pub pos_index: u32,
+    // @@protoc_insertion_point(field:OIJHAJAIFFH.grid_fight_item_list)
+    pub grid_fight_item_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OIJHAJAIFFH.grid_fight_value_init_component)
+    pub grid_fight_value_init_component: ::std::collections::HashMap<::std::string::String, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OIJHAJAIFFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,10 @@ impl OIJHAJAIFFH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "grid_fight_value_init_component",
-            |m: &OIJHAJAIFFH| { &m.grid_fight_value_init_component },
-            |m: &mut OIJHAJAIFFH| { &mut m.grid_fight_value_init_component },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_item_list",
-            |m: &OIJHAJAIFFH| { &m.grid_fight_item_list },
-            |m: &mut OIJHAJAIFFH| { &mut m.grid_fight_item_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pos",
+            |m: &OIJHAJAIFFH| { &m.pos },
+            |m: &mut OIJHAJAIFFH| { &mut m.pos },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_id",
@@ -77,10 +72,15 @@ impl OIJHAJAIFFH {
             |m: &OIJHAJAIFFH| { &m.role_star },
             |m: &mut OIJHAJAIFFH| { &mut m.role_star },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &OIJHAJAIFFH| { &m.pos_index },
-            |m: &mut OIJHAJAIFFH| { &mut m.pos_index },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_item_list",
+            |m: &OIJHAJAIFFH| { &m.grid_fight_item_list },
+            |m: &mut OIJHAJAIFFH| { &mut m.grid_fight_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "grid_fight_value_init_component",
+            |m: &OIJHAJAIFFH| { &m.grid_fight_value_init_component },
+            |m: &mut OIJHAJAIFFH| { &mut m.grid_fight_value_init_component },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIJHAJAIFFH>(
             "OIJHAJAIFFH",
@@ -100,6 +100,21 @@ impl ::protobuf::Message for OIJHAJAIFFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.pos = is.read_uint32()?;
+                },
+                16 => {
+                    self.role_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.role_star = is.read_uint32()?;
+                },
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.grid_fight_item_list)?;
+                },
+                32 => {
+                    self.grid_fight_item_list.push(is.read_uint32()?);
+                },
                 42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -115,21 +130,6 @@ impl ::protobuf::Message for OIJHAJAIFFH {
                     is.pop_limit(old_limit);
                     self.grid_fight_value_init_component.insert(key, value);
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.grid_fight_item_list)?;
-                },
-                32 => {
-                    self.grid_fight_item_list.push(is.read_uint32()?);
-                },
-                16 => {
-                    self.role_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.role_star = is.read_uint32()?;
-                },
-                8 => {
-                    self.pos_index = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -142,28 +142,38 @@ impl ::protobuf::Message for OIJHAJAIFFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.grid_fight_value_init_component {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.grid_fight_item_list);
+        if self.pos != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.pos);
+        }
         if self.role_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.role_id);
         }
         if self.role_star != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.role_star);
         }
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.pos_index);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.grid_fight_item_list);
+        for (k, v) in &self.grid_fight_value_init_component {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.pos != 0 {
+            os.write_uint32(1, self.pos)?;
+        }
+        if self.role_id != 0 {
+            os.write_uint32(2, self.role_id)?;
+        }
+        if self.role_star != 0 {
+            os.write_uint32(3, self.role_star)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.grid_fight_item_list)?;
         for (k, v) in &self.grid_fight_value_init_component {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -173,16 +183,6 @@ impl ::protobuf::Message for OIJHAJAIFFH {
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(4, &self.grid_fight_item_list)?;
-        if self.role_id != 0 {
-            os.write_uint32(2, self.role_id)?;
-        }
-        if self.role_star != 0 {
-            os.write_uint32(3, self.role_star)?;
-        }
-        if self.pos_index != 0 {
-            os.write_uint32(1, self.pos_index)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -200,11 +200,11 @@ impl ::protobuf::Message for OIJHAJAIFFH {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_value_init_component.clear();
-        self.grid_fight_item_list.clear();
+        self.pos = 0;
         self.role_id = 0;
         self.role_star = 0;
-        self.pos_index = 0;
+        self.grid_fight_item_list.clear();
+        self.grid_fight_value_init_component.clear();
         self.special_fields.clear();
     }
 
@@ -232,15 +232,14 @@ impl ::protobuf::reflect::ProtobufValue for OIJHAJAIFFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OIJHAJAIFFH.proto\"\xd6\x02\n\x0bOIJHAJAIFFH\x12s\n\x1fgrid_fight_\
-    value_init_component\x18\x05\x20\x03(\x0b2-.OIJHAJAIFFH.GridFightValueIn\
-    itComponentEntryR\x1bgridFightValueInitComponent\x12/\n\x14grid_fight_it\
-    em_list\x18\x04\x20\x03(\rR\x11gridFightItemList\x12\x17\n\x07role_id\
-    \x18\x02\x20\x01(\rR\x06roleId\x12\x1b\n\trole_star\x18\x03\x20\x01(\rR\
-    \x08roleStar\x12\x1b\n\tpos_index\x18\x01\x20\x01(\rR\x08posIndex\x1aN\n\
-    \x20GridFightValueInitComponentEntry\x12\x10\n\x03key\x18\x01\x20\x01(\t\
-    R\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06p\
-    roto3\
+    \n\x11OIJHAJAIFFH.proto\"\xcb\x02\n\x0bOIJHAJAIFFH\x12\x10\n\x03pos\x18\
+    \x01\x20\x01(\rR\x03pos\x12\x17\n\x07role_id\x18\x02\x20\x01(\rR\x06role\
+    Id\x12\x1b\n\trole_star\x18\x03\x20\x01(\rR\x08roleStar\x12/\n\x14grid_f\
+    ight_item_list\x18\x04\x20\x03(\rR\x11gridFightItemList\x12s\n\x1fgrid_f\
+    ight_value_init_component\x18\x05\x20\x03(\x0b2-.OIJHAJAIFFH.GridFightVa\
+    lueInitComponentEntryR\x1bgridFightValueInitComponent\x1aN\n\x20GridFigh\
+    tValueInitComponentEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\
+    \x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

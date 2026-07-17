@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyShopGoodCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyShopGoodCsReq.shop_id)
-    pub shop_id: u32,
     // @@protoc_insertion_point(field:BuyShopGoodCsReq.KDMNGCLJDOM)
     pub KDMNGCLJDOM: u32,
+    // @@protoc_insertion_point(field:BuyShopGoodCsReq.shop_id)
+    pub shop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyShopGoodCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BuyShopGoodCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &BuyShopGoodCsReq| { &m.shop_id },
-            |m: &mut BuyShopGoodCsReq| { &mut m.shop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDMNGCLJDOM",
             |m: &BuyShopGoodCsReq| { &m.KDMNGCLJDOM },
             |m: &mut BuyShopGoodCsReq| { &mut m.KDMNGCLJDOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "shop_id",
+            |m: &BuyShopGoodCsReq| { &m.shop_id },
+            |m: &mut BuyShopGoodCsReq| { &mut m.shop_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyShopGoodCsReq>(
             "BuyShopGoodCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BuyShopGoodCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.shop_id = is.read_uint32()?;
-                },
-                16 => {
+                40 => {
                     self.KDMNGCLJDOM = is.read_uint32()?;
+                },
+                64 => {
+                    self.shop_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BuyShopGoodCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.shop_id);
-        }
         if self.KDMNGCLJDOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KDMNGCLJDOM);
+            my_size += ::protobuf::rt::uint32_size(5, self.KDMNGCLJDOM);
+        }
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.shop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BuyShopGoodCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.shop_id != 0 {
-            os.write_uint32(15, self.shop_id)?;
-        }
         if self.KDMNGCLJDOM != 0 {
-            os.write_uint32(2, self.KDMNGCLJDOM)?;
+            os.write_uint32(5, self.KDMNGCLJDOM)?;
+        }
+        if self.shop_id != 0 {
+            os.write_uint32(8, self.shop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BuyShopGoodCsReq {
     }
 
     fn clear(&mut self) {
-        self.shop_id = 0;
         self.KDMNGCLJDOM = 0;
+        self.shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyShopGoodCsReq {
         static instance: BuyShopGoodCsReq = BuyShopGoodCsReq {
-            shop_id: 0,
             KDMNGCLJDOM: 0,
+            shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BuyShopGoodCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BuyShopGoodCsReq.proto\"M\n\x10BuyShopGoodCsReq\x12\x17\n\x07shop_\
-    id\x18\x0f\x20\x01(\rR\x06shopId\x12\x20\n\x0bKDMNGCLJDOM\x18\x02\x20\
-    \x01(\rR\x0bKDMNGCLJDOMb\x06proto3\
+    \n\x16BuyShopGoodCsReq.proto\"M\n\x10BuyShopGoodCsReq\x12\x20\n\x0bKDMNG\
+    CLJDOM\x18\x05\x20\x01(\rR\x0bKDMNGCLJDOM\x12\x17\n\x07shop_id\x18\x08\
+    \x20\x01(\rR\x06shopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

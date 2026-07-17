@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFPHCDCNOBN {
     // message fields
-    // @@protoc_insertion_point(field:PFPHCDCNOBN.JJFOLKFOOLI)
-    pub JJFOLKFOOLI: u32,
+    // @@protoc_insertion_point(field:PFPHCDCNOBN.seal_id)
+    pub seal_id: u32,
     // @@protoc_insertion_point(field:PFPHCDCNOBN.MDKFLGDEJCN)
     pub MDKFLGDEJCN: u32,
     // special fields
@@ -52,9 +52,9 @@ impl PFPHCDCNOBN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJFOLKFOOLI",
-            |m: &PFPHCDCNOBN| { &m.JJFOLKFOOLI },
-            |m: &mut PFPHCDCNOBN| { &mut m.JJFOLKFOOLI },
+            "seal_id",
+            |m: &PFPHCDCNOBN| { &m.seal_id },
+            |m: &mut PFPHCDCNOBN| { &mut m.seal_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDKFLGDEJCN",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for PFPHCDCNOBN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.JJFOLKFOOLI = is.read_uint32()?;
+                    self.seal_id = is.read_uint32()?;
                 },
                 16 => {
                     self.MDKFLGDEJCN = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PFPHCDCNOBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJFOLKFOOLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JJFOLKFOOLI);
+        if self.seal_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.seal_id);
         }
         if self.MDKFLGDEJCN != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.MDKFLGDEJCN);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for PFPHCDCNOBN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJFOLKFOOLI != 0 {
-            os.write_uint32(1, self.JJFOLKFOOLI)?;
+        if self.seal_id != 0 {
+            os.write_uint32(1, self.seal_id)?;
         }
         if self.MDKFLGDEJCN != 0 {
             os.write_uint32(2, self.MDKFLGDEJCN)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for PFPHCDCNOBN {
     }
 
     fn clear(&mut self) {
-        self.JJFOLKFOOLI = 0;
+        self.seal_id = 0;
         self.MDKFLGDEJCN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PFPHCDCNOBN {
         static instance: PFPHCDCNOBN = PFPHCDCNOBN {
-            JJFOLKFOOLI: 0,
+            seal_id: 0,
             MDKFLGDEJCN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PFPHCDCNOBN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PFPHCDCNOBN.proto\"Q\n\x0bPFPHCDCNOBN\x12\x20\n\x0bJJFOLKFOOLI\x18\
-    \x01\x20\x01(\rR\x0bJJFOLKFOOLI\x12\x20\n\x0bMDKFLGDEJCN\x18\x02\x20\x01\
-    (\rR\x0bMDKFLGDEJCNb\x06proto3\
+    \n\x11PFPHCDCNOBN.proto\"H\n\x0bPFPHCDCNOBN\x12\x17\n\x07seal_id\x18\x01\
+    \x20\x01(\rR\x06sealId\x12\x20\n\x0bMDKFLGDEJCN\x18\x02\x20\x01(\rR\x0bM\
+    DKFLGDEJCNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BAHMABONKBP {
     // message fields
-    // @@protoc_insertion_point(field:BAHMABONKBP.item_id)
-    pub item_id: u32,
-    // @@protoc_insertion_point(field:BAHMABONKBP.DCIJEFMACME)
-    pub DCIJEFMACME: u32,
-    // @@protoc_insertion_point(field:BAHMABONKBP.KNKFPENAPBF)
-    pub KNKFPENAPBF: i32,
-    // @@protoc_insertion_point(field:BAHMABONKBP.APHMBADNMPH)
-    pub APHMBADNMPH: i32,
-    // @@protoc_insertion_point(field:BAHMABONKBP.unique_id)
-    pub unique_id: u64,
-    // @@protoc_insertion_point(field:BAHMABONKBP.NMELCPIOKNO)
-    pub NMELCPIOKNO: u32,
     // @@protoc_insertion_point(field:BAHMABONKBP.EPLJKOLIPCI)
     pub EPLJKOLIPCI: u32,
+    // @@protoc_insertion_point(field:BAHMABONKBP.DCIJEFMACME)
+    pub DCIJEFMACME: u32,
+    // @@protoc_insertion_point(field:BAHMABONKBP.unique_id)
+    pub unique_id: u64,
+    // @@protoc_insertion_point(field:BAHMABONKBP.APHMBADNMPH)
+    pub APHMBADNMPH: i32,
+    // @@protoc_insertion_point(field:BAHMABONKBP.item_id)
+    pub item_id: u32,
+    // @@protoc_insertion_point(field:BAHMABONKBP.rotation)
+    pub rotation: u32,
+    // @@protoc_insertion_point(field:BAHMABONKBP.KNKFPENAPBF)
+    pub KNKFPENAPBF: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BAHMABONKBP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,9 @@ impl BAHMABONKBP {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &BAHMABONKBP| { &m.item_id },
-            |m: &mut BAHMABONKBP| { &mut m.item_id },
+            "EPLJKOLIPCI",
+            |m: &BAHMABONKBP| { &m.EPLJKOLIPCI },
+            |m: &mut BAHMABONKBP| { &mut m.EPLJKOLIPCI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCIJEFMACME",
@@ -72,9 +72,9 @@ impl BAHMABONKBP {
             |m: &mut BAHMABONKBP| { &mut m.DCIJEFMACME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNKFPENAPBF",
-            |m: &BAHMABONKBP| { &m.KNKFPENAPBF },
-            |m: &mut BAHMABONKBP| { &mut m.KNKFPENAPBF },
+            "unique_id",
+            |m: &BAHMABONKBP| { &m.unique_id },
+            |m: &mut BAHMABONKBP| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APHMBADNMPH",
@@ -82,19 +82,19 @@ impl BAHMABONKBP {
             |m: &mut BAHMABONKBP| { &mut m.APHMBADNMPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &BAHMABONKBP| { &m.unique_id },
-            |m: &mut BAHMABONKBP| { &mut m.unique_id },
+            "item_id",
+            |m: &BAHMABONKBP| { &m.item_id },
+            |m: &mut BAHMABONKBP| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMELCPIOKNO",
-            |m: &BAHMABONKBP| { &m.NMELCPIOKNO },
-            |m: &mut BAHMABONKBP| { &mut m.NMELCPIOKNO },
+            "rotation",
+            |m: &BAHMABONKBP| { &m.rotation },
+            |m: &mut BAHMABONKBP| { &mut m.rotation },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPLJKOLIPCI",
-            |m: &BAHMABONKBP| { &m.EPLJKOLIPCI },
-            |m: &mut BAHMABONKBP| { &mut m.EPLJKOLIPCI },
+            "KNKFPENAPBF",
+            |m: &BAHMABONKBP| { &m.KNKFPENAPBF },
+            |m: &mut BAHMABONKBP| { &mut m.KNKFPENAPBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAHMABONKBP>(
             "BAHMABONKBP",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for BAHMABONKBP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                16 => {
+                    self.EPLJKOLIPCI = is.read_uint32()?;
+                },
+                32 => {
+                    self.DCIJEFMACME = is.read_uint32()?;
+                },
+                56 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                64 => {
+                    self.APHMBADNMPH = is.read_int32()?;
+                },
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
                 112 => {
-                    self.DCIJEFMACME = is.read_uint32()?;
+                    self.rotation = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
                     self.KNKFPENAPBF = is.read_int32()?;
-                },
-                80 => {
-                    self.APHMBADNMPH = is.read_int32()?;
-                },
-                104 => {
-                    self.unique_id = is.read_uint64()?;
-                },
-                40 => {
-                    self.NMELCPIOKNO = is.read_uint32()?;
-                },
-                16 => {
-                    self.EPLJKOLIPCI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for BAHMABONKBP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
-        }
-        if self.DCIJEFMACME != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DCIJEFMACME);
-        }
-        if self.KNKFPENAPBF != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.KNKFPENAPBF);
-        }
-        if self.APHMBADNMPH != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.APHMBADNMPH);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.unique_id);
-        }
-        if self.NMELCPIOKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NMELCPIOKNO);
-        }
         if self.EPLJKOLIPCI != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.EPLJKOLIPCI);
+        }
+        if self.DCIJEFMACME != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DCIJEFMACME);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.unique_id);
+        }
+        if self.APHMBADNMPH != 0 {
+            my_size += ::protobuf::rt::int32_size(8, self.APHMBADNMPH);
+        }
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
+        }
+        if self.rotation != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.rotation);
+        }
+        if self.KNKFPENAPBF != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.KNKFPENAPBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for BAHMABONKBP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_id != 0 {
-            os.write_uint32(12, self.item_id)?;
-        }
-        if self.DCIJEFMACME != 0 {
-            os.write_uint32(14, self.DCIJEFMACME)?;
-        }
-        if self.KNKFPENAPBF != 0 {
-            os.write_int32(11, self.KNKFPENAPBF)?;
-        }
-        if self.APHMBADNMPH != 0 {
-            os.write_int32(10, self.APHMBADNMPH)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint64(13, self.unique_id)?;
-        }
-        if self.NMELCPIOKNO != 0 {
-            os.write_uint32(5, self.NMELCPIOKNO)?;
-        }
         if self.EPLJKOLIPCI != 0 {
             os.write_uint32(2, self.EPLJKOLIPCI)?;
+        }
+        if self.DCIJEFMACME != 0 {
+            os.write_uint32(4, self.DCIJEFMACME)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint64(7, self.unique_id)?;
+        }
+        if self.APHMBADNMPH != 0 {
+            os.write_int32(8, self.APHMBADNMPH)?;
+        }
+        if self.item_id != 0 {
+            os.write_uint32(11, self.item_id)?;
+        }
+        if self.rotation != 0 {
+            os.write_uint32(14, self.rotation)?;
+        }
+        if self.KNKFPENAPBF != 0 {
+            os.write_int32(15, self.KNKFPENAPBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for BAHMABONKBP {
     }
 
     fn clear(&mut self) {
-        self.item_id = 0;
-        self.DCIJEFMACME = 0;
-        self.KNKFPENAPBF = 0;
-        self.APHMBADNMPH = 0;
-        self.unique_id = 0;
-        self.NMELCPIOKNO = 0;
         self.EPLJKOLIPCI = 0;
+        self.DCIJEFMACME = 0;
+        self.unique_id = 0;
+        self.APHMBADNMPH = 0;
+        self.item_id = 0;
+        self.rotation = 0;
+        self.KNKFPENAPBF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAHMABONKBP {
         static instance: BAHMABONKBP = BAHMABONKBP {
-            item_id: 0,
-            DCIJEFMACME: 0,
-            KNKFPENAPBF: 0,
-            APHMBADNMPH: 0,
-            unique_id: 0,
-            NMELCPIOKNO: 0,
             EPLJKOLIPCI: 0,
+            DCIJEFMACME: 0,
+            unique_id: 0,
+            APHMBADNMPH: 0,
+            item_id: 0,
+            rotation: 0,
+            KNKFPENAPBF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for BAHMABONKBP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAHMABONKBP.proto\"\xed\x01\n\x0bBAHMABONKBP\x12\x17\n\x07item_id\
-    \x18\x0c\x20\x01(\rR\x06itemId\x12\x20\n\x0bDCIJEFMACME\x18\x0e\x20\x01(\
-    \rR\x0bDCIJEFMACME\x12\x20\n\x0bKNKFPENAPBF\x18\x0b\x20\x01(\x05R\x0bKNK\
-    FPENAPBF\x12\x20\n\x0bAPHMBADNMPH\x18\n\x20\x01(\x05R\x0bAPHMBADNMPH\x12\
-    \x1b\n\tunique_id\x18\r\x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bNMELCPIOK\
-    NO\x18\x05\x20\x01(\rR\x0bNMELCPIOKNO\x12\x20\n\x0bEPLJKOLIPCI\x18\x02\
-    \x20\x01(\rR\x0bEPLJKOLIPCIb\x06proto3\
+    \n\x11BAHMABONKBP.proto\"\xe7\x01\n\x0bBAHMABONKBP\x12\x20\n\x0bEPLJKOLI\
+    PCI\x18\x02\x20\x01(\rR\x0bEPLJKOLIPCI\x12\x20\n\x0bDCIJEFMACME\x18\x04\
+    \x20\x01(\rR\x0bDCIJEFMACME\x12\x1b\n\tunique_id\x18\x07\x20\x01(\x04R\
+    \x08uniqueId\x12\x20\n\x0bAPHMBADNMPH\x18\x08\x20\x01(\x05R\x0bAPHMBADNM\
+    PH\x12\x17\n\x07item_id\x18\x0b\x20\x01(\rR\x06itemId\x12\x1a\n\x08rotat\
+    ion\x18\x0e\x20\x01(\rR\x08rotation\x12\x20\n\x0bKNKFPENAPBF\x18\x0f\x20\
+    \x01(\x05R\x0bKNKFPENAPBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

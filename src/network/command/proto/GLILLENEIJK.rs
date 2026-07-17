@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLILLENEIJK {
     // message fields
-    // @@protoc_insertion_point(field:GLILLENEIJK.FFFNGBKHOEA)
-    pub FFFNGBKHOEA: u32,
     // @@protoc_insertion_point(field:GLILLENEIJK.GNIFODGCPAA)
     pub GNIFODGCPAA: u32,
+    // @@protoc_insertion_point(field:GLILLENEIJK.FFFNGBKHOEA)
+    pub FFFNGBKHOEA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GLILLENEIJK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GLILLENEIJK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFFNGBKHOEA",
-            |m: &GLILLENEIJK| { &m.FFFNGBKHOEA },
-            |m: &mut GLILLENEIJK| { &mut m.FFFNGBKHOEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNIFODGCPAA",
             |m: &GLILLENEIJK| { &m.GNIFODGCPAA },
             |m: &mut GLILLENEIJK| { &mut m.GNIFODGCPAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FFFNGBKHOEA",
+            |m: &GLILLENEIJK| { &m.FFFNGBKHOEA },
+            |m: &mut GLILLENEIJK| { &mut m.FFFNGBKHOEA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLILLENEIJK>(
             "GLILLENEIJK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GLILLENEIJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.FFFNGBKHOEA = is.read_uint32()?;
-                },
-                48 => {
+                64 => {
                     self.GNIFODGCPAA = is.read_uint32()?;
+                },
+                112 => {
+                    self.FFFNGBKHOEA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GLILLENEIJK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FFFNGBKHOEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FFFNGBKHOEA);
-        }
         if self.GNIFODGCPAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GNIFODGCPAA);
+            my_size += ::protobuf::rt::uint32_size(8, self.GNIFODGCPAA);
+        }
+        if self.FFFNGBKHOEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FFFNGBKHOEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GLILLENEIJK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FFFNGBKHOEA != 0 {
-            os.write_uint32(10, self.FFFNGBKHOEA)?;
-        }
         if self.GNIFODGCPAA != 0 {
-            os.write_uint32(6, self.GNIFODGCPAA)?;
+            os.write_uint32(8, self.GNIFODGCPAA)?;
+        }
+        if self.FFFNGBKHOEA != 0 {
+            os.write_uint32(14, self.FFFNGBKHOEA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GLILLENEIJK {
     }
 
     fn clear(&mut self) {
-        self.FFFNGBKHOEA = 0;
         self.GNIFODGCPAA = 0;
+        self.FFFNGBKHOEA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLILLENEIJK {
         static instance: GLILLENEIJK = GLILLENEIJK {
-            FFFNGBKHOEA: 0,
             GNIFODGCPAA: 0,
+            FFFNGBKHOEA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GLILLENEIJK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLILLENEIJK.proto\"Q\n\x0bGLILLENEIJK\x12\x20\n\x0bFFFNGBKHOEA\x18\
-    \n\x20\x01(\rR\x0bFFFNGBKHOEA\x12\x20\n\x0bGNIFODGCPAA\x18\x06\x20\x01(\
-    \rR\x0bGNIFODGCPAAb\x06proto3\
+    \n\x11GLILLENEIJK.proto\"Q\n\x0bGLILLENEIJK\x12\x20\n\x0bGNIFODGCPAA\x18\
+    \x08\x20\x01(\rR\x0bGNIFODGCPAA\x12\x20\n\x0bFFFNGBKHOEA\x18\x0e\x20\x01\
+    (\rR\x0bFFFNGBKHOEAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

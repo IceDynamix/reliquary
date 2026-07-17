@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EBPBMFBFEJA {
     // message fields
-    // @@protoc_insertion_point(field:EBPBMFBFEJA.AAIMONALOPD)
-    pub AAIMONALOPD: ::protobuf::MessageField<super::NEBJABOEDND::NEBJABOEDND>,
-    // @@protoc_insertion_point(field:EBPBMFBFEJA.CFDIKLBINHK)
-    pub CFDIKLBINHK: ::protobuf::MessageField<super::LCEDDGELBMJ::LCEDDGELBMJ>,
     // @@protoc_insertion_point(field:EBPBMFBFEJA.ENFKEAEGPBJ)
     pub ENFKEAEGPBJ: bool,
     // @@protoc_insertion_point(field:EBPBMFBFEJA.FGLEKNDHMKN)
     pub FGLEKNDHMKN: u32,
+    // @@protoc_insertion_point(field:EBPBMFBFEJA.CFDIKLBINHK)
+    pub CFDIKLBINHK: ::protobuf::MessageField<super::LCEDDGELBMJ::LCEDDGELBMJ>,
+    // @@protoc_insertion_point(field:EBPBMFBFEJA.AAIMONALOPD)
+    pub AAIMONALOPD: ::protobuf::MessageField<super::ChimeraDuelPlayerRankData::ChimeraDuelPlayerRankData>,
     // special fields
     // @@protoc_insertion_point(special_field:EBPBMFBFEJA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl EBPBMFBFEJA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NEBJABOEDND::NEBJABOEDND>(
-            "AAIMONALOPD",
-            |m: &EBPBMFBFEJA| { &m.AAIMONALOPD },
-            |m: &mut EBPBMFBFEJA| { &mut m.AAIMONALOPD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCEDDGELBMJ::LCEDDGELBMJ>(
-            "CFDIKLBINHK",
-            |m: &EBPBMFBFEJA| { &m.CFDIKLBINHK },
-            |m: &mut EBPBMFBFEJA| { &mut m.CFDIKLBINHK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ENFKEAEGPBJ",
             |m: &EBPBMFBFEJA| { &m.ENFKEAEGPBJ },
@@ -74,6 +64,16 @@ impl EBPBMFBFEJA {
             "FGLEKNDHMKN",
             |m: &EBPBMFBFEJA| { &m.FGLEKNDHMKN },
             |m: &mut EBPBMFBFEJA| { &mut m.FGLEKNDHMKN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCEDDGELBMJ::LCEDDGELBMJ>(
+            "CFDIKLBINHK",
+            |m: &EBPBMFBFEJA| { &m.CFDIKLBINHK },
+            |m: &mut EBPBMFBFEJA| { &mut m.CFDIKLBINHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChimeraDuelPlayerRankData::ChimeraDuelPlayerRankData>(
+            "AAIMONALOPD",
+            |m: &EBPBMFBFEJA| { &m.AAIMONALOPD },
+            |m: &mut EBPBMFBFEJA| { &mut m.AAIMONALOPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EBPBMFBFEJA>(
             "EBPBMFBFEJA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EBPBMFBFEJA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAIMONALOPD)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
-                },
-                48 => {
+                8 => {
                     self.ENFKEAEGPBJ = is.read_bool()?;
                 },
-                24 => {
+                40 => {
                     self.FGLEKNDHMKN = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAIMONALOPD)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for EBPBMFBFEJA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AAIMONALOPD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.ENFKEAEGPBJ != false {
+            my_size += 1 + 1;
+        }
+        if self.FGLEKNDHMKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.FGLEKNDHMKN);
         }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ENFKEAEGPBJ != false {
-            my_size += 1 + 1;
-        }
-        if self.FGLEKNDHMKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FGLEKNDHMKN);
+        if let Some(v) = self.AAIMONALOPD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EBPBMFBFEJA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AAIMONALOPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if self.ENFKEAEGPBJ != false {
-            os.write_bool(6, self.ENFKEAEGPBJ)?;
+            os.write_bool(1, self.ENFKEAEGPBJ)?;
         }
         if self.FGLEKNDHMKN != 0 {
-            os.write_uint32(3, self.FGLEKNDHMKN)?;
+            os.write_uint32(5, self.FGLEKNDHMKN)?;
+        }
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.AAIMONALOPD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for EBPBMFBFEJA {
     }
 
     fn clear(&mut self) {
-        self.AAIMONALOPD.clear();
-        self.CFDIKLBINHK.clear();
         self.ENFKEAEGPBJ = false;
         self.FGLEKNDHMKN = 0;
+        self.CFDIKLBINHK.clear();
+        self.AAIMONALOPD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EBPBMFBFEJA {
         static instance: EBPBMFBFEJA = EBPBMFBFEJA {
-            AAIMONALOPD: ::protobuf::MessageField::none(),
-            CFDIKLBINHK: ::protobuf::MessageField::none(),
             ENFKEAEGPBJ: false,
             FGLEKNDHMKN: 0,
+            CFDIKLBINHK: ::protobuf::MessageField::none(),
+            AAIMONALOPD: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for EBPBMFBFEJA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EBPBMFBFEJA.proto\x1a\x11LCEDDGELBMJ.proto\x1a\x11NEBJABOEDND.prot\
-    o\"\xb1\x01\n\x0bEBPBMFBFEJA\x12.\n\x0bAAIMONALOPD\x18\x07\x20\x01(\x0b2\
-    \x0c.NEBJABOEDNDR\x0bAAIMONALOPD\x12.\n\x0bCFDIKLBINHK\x18\n\x20\x01(\
-    \x0b2\x0c.LCEDDGELBMJR\x0bCFDIKLBINHK\x12\x20\n\x0bENFKEAEGPBJ\x18\x06\
-    \x20\x01(\x08R\x0bENFKEAEGPBJ\x12\x20\n\x0bFGLEKNDHMKN\x18\x03\x20\x01(\
-    \rR\x0bFGLEKNDHMKNb\x06proto3\
+    \n\x11EBPBMFBFEJA.proto\x1a\x1fChimeraDuelPlayerRankData.proto\x1a\x11LC\
+    EDDGELBMJ.proto\"\xbf\x01\n\x0bEBPBMFBFEJA\x12\x20\n\x0bENFKEAEGPBJ\x18\
+    \x01\x20\x01(\x08R\x0bENFKEAEGPBJ\x12\x20\n\x0bFGLEKNDHMKN\x18\x05\x20\
+    \x01(\rR\x0bFGLEKNDHMKN\x12.\n\x0bCFDIKLBINHK\x18\x07\x20\x01(\x0b2\x0c.\
+    LCEDDGELBMJR\x0bCFDIKLBINHK\x12<\n\x0bAAIMONALOPD\x18\x08\x20\x01(\x0b2\
+    \x1a.ChimeraDuelPlayerRankDataR\x0bAAIMONALOPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::ChimeraDuelPlayerRankData::file_descriptor().clone());
             deps.push(super::LCEDDGELBMJ::file_descriptor().clone());
-            deps.push(super::NEBJABOEDND::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EBPBMFBFEJA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

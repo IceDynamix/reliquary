@@ -72,7 +72,7 @@ impl ::protobuf::Message for MissionSyncTaskCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                50 => {
                     self.key = is.read_string()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MissionSyncTaskCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.key.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.key);
+            my_size += ::protobuf::rt::string_size(6, &self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MissionSyncTaskCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.key.is_empty() {
-            os.write_string(12, &self.key)?;
+            os.write_string(6, &self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MissionSyncTaskCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aMissionSyncTaskCsReq.proto\"(\n\x14MissionSyncTaskCsReq\x12\x10\n\
-    \x03key\x18\x0c\x20\x01(\tR\x03keyb\x06proto3\
+    \x03key\x18\x06\x20\x01(\tR\x03keyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

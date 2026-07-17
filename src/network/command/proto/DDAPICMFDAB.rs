@@ -86,13 +86,13 @@ impl ::protobuf::Message for DDAPICMFDAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                24 => {
                     self.KBLBFGANMPJ = is.read_bool()?;
                 },
-                24 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.CBGODLHCLPK = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for DDAPICMFDAB {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         if self.CBGODLHCLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CBGODLHCLPK);
+            my_size += ::protobuf::rt::uint32_size(11, self.CBGODLHCLPK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DDAPICMFDAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KBLBFGANMPJ != false {
-            os.write_bool(12, self.KBLBFGANMPJ)?;
+            os.write_bool(3, self.KBLBFGANMPJ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if self.CBGODLHCLPK != 0 {
-            os.write_uint32(9, self.CBGODLHCLPK)?;
+            os.write_uint32(11, self.CBGODLHCLPK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DDAPICMFDAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDAPICMFDAB.proto\"k\n\x0bDDAPICMFDAB\x12\x20\n\x0bKBLBFGANMPJ\x18\
-    \x0c\x20\x01(\x08R\x0bKBLBFGANMPJ\x12\x18\n\x07retcode\x18\x03\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x0bCBGODLHCLPK\x18\t\x20\x01(\rR\x0bCBGODLHCLPK\
-    b\x06proto3\
+    \x03\x20\x01(\x08R\x0bKBLBFGANMPJ\x12\x18\n\x07retcode\x18\x06\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bCBGODLHCLPK\x18\x0b\x20\x01(\rR\x0bCBGODLHCL\
+    PKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

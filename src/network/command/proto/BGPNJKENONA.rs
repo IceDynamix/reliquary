@@ -27,9 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:BGPNJKENONA)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BGPNJKENONA {
-    // message fields
-    // @@protoc_insertion_point(field:BGPNJKENONA.FODJGGIGBGJ)
-    pub FODJGGIGBGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BGPNJKENONA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,13 +44,8 @@ impl BGPNJKENONA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FODJGGIGBGJ",
-            |m: &BGPNJKENONA| { &m.FODJGGIGBGJ },
-            |m: &mut BGPNJKENONA| { &mut m.FODJGGIGBGJ },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BGPNJKENONA>(
             "BGPNJKENONA",
             fields,
@@ -72,9 +64,6 @@ impl ::protobuf::Message for BGPNJKENONA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.FODJGGIGBGJ = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -87,18 +76,12 @@ impl ::protobuf::Message for BGPNJKENONA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FODJGGIGBGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FODJGGIGBGJ);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FODJGGIGBGJ != 0 {
-            os.write_uint32(10, self.FODJGGIGBGJ)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,13 +99,11 @@ impl ::protobuf::Message for BGPNJKENONA {
     }
 
     fn clear(&mut self) {
-        self.FODJGGIGBGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BGPNJKENONA {
         static instance: BGPNJKENONA = BGPNJKENONA {
-            FODJGGIGBGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +128,7 @@ impl ::protobuf::reflect::ProtobufValue for BGPNJKENONA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BGPNJKENONA.proto\"/\n\x0bBGPNJKENONA\x12\x20\n\x0bFODJGGIGBGJ\x18\
-    \n\x20\x01(\rR\x0bFODJGGIGBGJb\x06proto3\
+    \n\x11BGPNJKENONA.proto\"\r\n\x0bBGPNJKENONAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

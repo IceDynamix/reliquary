@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PNGGKFFJILG {
     // message fields
-    // @@protoc_insertion_point(field:PNGGKFFJILG.HEPCHHCHHPF)
-    pub HEPCHHCHHPF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.HJPBAJEPAGE)
-    pub HJPBAJEPAGE: u32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.type)
-    pub type_: u32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.KCCJCGFKCCC)
-    pub KCCJCGFKCCC: i32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.reason)
-    pub reason: u32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.FOJGIEEHHNG)
-    pub FOJGIEEHHNG: u32,
-    // @@protoc_insertion_point(field:PNGGKFFJILG.MPDHNFNCIEA)
-    pub MPDHNFNCIEA: u32,
     // @@protoc_insertion_point(field:PNGGKFFJILG.room_id)
     pub room_id: u64,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.MPDHNFNCIEA)
+    pub MPDHNFNCIEA: u32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.turn)
+    pub turn: u32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.type)
+    pub type_: u32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.reason)
+    pub reason: u32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.HEPCHHCHHPF)
+    pub HEPCHHCHHPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.KCCJCGFKCCC)
+    pub KCCJCGFKCCC: i32,
+    // @@protoc_insertion_point(field:PNGGKFFJILG.FOJGIEEHHNG)
+    pub FOJGIEEHHNG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PNGGKFFJILG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,35 +63,10 @@ impl PNGGKFFJILG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HEPCHHCHHPF",
-            |m: &PNGGKFFJILG| { &m.HEPCHHCHHPF },
-            |m: &mut PNGGKFFJILG| { &mut m.HEPCHHCHHPF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJPBAJEPAGE",
-            |m: &PNGGKFFJILG| { &m.HJPBAJEPAGE },
-            |m: &mut PNGGKFFJILG| { &mut m.HJPBAJEPAGE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &PNGGKFFJILG| { &m.type_ },
-            |m: &mut PNGGKFFJILG| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCCJCGFKCCC",
-            |m: &PNGGKFFJILG| { &m.KCCJCGFKCCC },
-            |m: &mut PNGGKFFJILG| { &mut m.KCCJCGFKCCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &PNGGKFFJILG| { &m.reason },
-            |m: &mut PNGGKFFJILG| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FOJGIEEHHNG",
-            |m: &PNGGKFFJILG| { &m.FOJGIEEHHNG },
-            |m: &mut PNGGKFFJILG| { &mut m.FOJGIEEHHNG },
+            "room_id",
+            |m: &PNGGKFFJILG| { &m.room_id },
+            |m: &mut PNGGKFFJILG| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MPDHNFNCIEA",
@@ -99,9 +74,34 @@ impl PNGGKFFJILG {
             |m: &mut PNGGKFFJILG| { &mut m.MPDHNFNCIEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &PNGGKFFJILG| { &m.room_id },
-            |m: &mut PNGGKFFJILG| { &mut m.room_id },
+            "turn",
+            |m: &PNGGKFFJILG| { &m.turn },
+            |m: &mut PNGGKFFJILG| { &mut m.turn },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &PNGGKFFJILG| { &m.type_ },
+            |m: &mut PNGGKFFJILG| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &PNGGKFFJILG| { &m.reason },
+            |m: &mut PNGGKFFJILG| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HEPCHHCHHPF",
+            |m: &PNGGKFFJILG| { &m.HEPCHHCHHPF },
+            |m: &mut PNGGKFFJILG| { &mut m.HEPCHHCHHPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KCCJCGFKCCC",
+            |m: &PNGGKFFJILG| { &m.KCCJCGFKCCC },
+            |m: &mut PNGGKFFJILG| { &mut m.KCCJCGFKCCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FOJGIEEHHNG",
+            |m: &PNGGKFFJILG| { &m.FOJGIEEHHNG },
+            |m: &mut PNGGKFFJILG| { &mut m.FOJGIEEHHNG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNGGKFFJILG>(
             "PNGGKFFJILG",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for PNGGKFFJILG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.room_id = is.read_uint64()?;
+                },
+                16 => {
+                    self.MPDHNFNCIEA = is.read_uint32()?;
+                },
+                24 => {
+                    self.turn = is.read_uint32()?;
+                },
+                32 => {
+                    self.type_ = is.read_uint32()?;
+                },
+                40 => {
+                    self.reason = is.read_uint32()?;
+                },
                 50 => {
                     is.read_repeated_packed_uint32_into(&mut self.HEPCHHCHHPF)?;
                 },
                 48 => {
                     self.HEPCHHCHHPF.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.HJPBAJEPAGE = is.read_uint32()?;
-                },
-                32 => {
-                    self.type_ = is.read_uint32()?;
-                },
                 56 => {
                     self.KCCJCGFKCCC = is.read_int32()?;
                 },
-                40 => {
-                    self.reason = is.read_uint32()?;
-                },
                 64 => {
                     self.FOJGIEEHHNG = is.read_uint32()?;
-                },
-                16 => {
-                    self.MPDHNFNCIEA = is.read_uint32()?;
-                },
-                8 => {
-                    self.room_id = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,27 +160,27 @@ impl ::protobuf::Message for PNGGKFFJILG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HEPCHHCHHPF);
-        if self.HJPBAJEPAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HJPBAJEPAGE);
-        }
-        if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.type_);
-        }
-        if self.KCCJCGFKCCC != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.KCCJCGFKCCC);
-        }
-        if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.reason);
-        }
-        if self.FOJGIEEHHNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FOJGIEEHHNG);
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
         }
         if self.MPDHNFNCIEA != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.MPDHNFNCIEA);
         }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
+        if self.turn != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.turn);
+        }
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.type_);
+        }
+        if self.reason != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.reason);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HEPCHHCHHPF);
+        if self.KCCJCGFKCCC != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.KCCJCGFKCCC);
+        }
+        if self.FOJGIEEHHNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FOJGIEEHHNG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -188,27 +188,27 @@ impl ::protobuf::Message for PNGGKFFJILG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.HEPCHHCHHPF)?;
-        if self.HJPBAJEPAGE != 0 {
-            os.write_uint32(3, self.HJPBAJEPAGE)?;
-        }
-        if self.type_ != 0 {
-            os.write_uint32(4, self.type_)?;
-        }
-        if self.KCCJCGFKCCC != 0 {
-            os.write_int32(7, self.KCCJCGFKCCC)?;
-        }
-        if self.reason != 0 {
-            os.write_uint32(5, self.reason)?;
-        }
-        if self.FOJGIEEHHNG != 0 {
-            os.write_uint32(8, self.FOJGIEEHHNG)?;
+        if self.room_id != 0 {
+            os.write_uint64(1, self.room_id)?;
         }
         if self.MPDHNFNCIEA != 0 {
             os.write_uint32(2, self.MPDHNFNCIEA)?;
         }
-        if self.room_id != 0 {
-            os.write_uint64(1, self.room_id)?;
+        if self.turn != 0 {
+            os.write_uint32(3, self.turn)?;
+        }
+        if self.type_ != 0 {
+            os.write_uint32(4, self.type_)?;
+        }
+        if self.reason != 0 {
+            os.write_uint32(5, self.reason)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.HEPCHHCHHPF)?;
+        if self.KCCJCGFKCCC != 0 {
+            os.write_int32(7, self.KCCJCGFKCCC)?;
+        }
+        if self.FOJGIEEHHNG != 0 {
+            os.write_uint32(8, self.FOJGIEEHHNG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,27 +227,27 @@ impl ::protobuf::Message for PNGGKFFJILG {
     }
 
     fn clear(&mut self) {
-        self.HEPCHHCHHPF.clear();
-        self.HJPBAJEPAGE = 0;
-        self.type_ = 0;
-        self.KCCJCGFKCCC = 0;
-        self.reason = 0;
-        self.FOJGIEEHHNG = 0;
-        self.MPDHNFNCIEA = 0;
         self.room_id = 0;
+        self.MPDHNFNCIEA = 0;
+        self.turn = 0;
+        self.type_ = 0;
+        self.reason = 0;
+        self.HEPCHHCHHPF.clear();
+        self.KCCJCGFKCCC = 0;
+        self.FOJGIEEHHNG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNGGKFFJILG {
         static instance: PNGGKFFJILG = PNGGKFFJILG {
-            HEPCHHCHHPF: ::std::vec::Vec::new(),
-            HJPBAJEPAGE: 0,
-            type_: 0,
-            KCCJCGFKCCC: 0,
-            reason: 0,
-            FOJGIEEHHNG: 0,
-            MPDHNFNCIEA: 0,
             room_id: 0,
+            MPDHNFNCIEA: 0,
+            turn: 0,
+            type_: 0,
+            reason: 0,
+            HEPCHHCHHPF: ::std::vec::Vec::new(),
+            KCCJCGFKCCC: 0,
+            FOJGIEEHHNG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -272,14 +272,14 @@ impl ::protobuf::reflect::ProtobufValue for PNGGKFFJILG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PNGGKFFJILG.proto\"\xfc\x01\n\x0bPNGGKFFJILG\x12\x20\n\x0bHEPCHHCH\
-    HPF\x18\x06\x20\x03(\rR\x0bHEPCHHCHHPF\x12\x20\n\x0bHJPBAJEPAGE\x18\x03\
-    \x20\x01(\rR\x0bHJPBAJEPAGE\x12\x12\n\x04type\x18\x04\x20\x01(\rR\x04typ\
-    e\x12\x20\n\x0bKCCJCGFKCCC\x18\x07\x20\x01(\x05R\x0bKCCJCGFKCCC\x12\x16\
-    \n\x06reason\x18\x05\x20\x01(\rR\x06reason\x12\x20\n\x0bFOJGIEEHHNG\x18\
-    \x08\x20\x01(\rR\x0bFOJGIEEHHNG\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\x01\
-    (\rR\x0bMPDHNFNCIEA\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\x06roomId\
-    b\x06proto3\
+    \n\x11PNGGKFFJILG.proto\"\xee\x01\n\x0bPNGGKFFJILG\x12\x17\n\x07room_id\
+    \x18\x01\x20\x01(\x04R\x06roomId\x12\x20\n\x0bMPDHNFNCIEA\x18\x02\x20\
+    \x01(\rR\x0bMPDHNFNCIEA\x12\x12\n\x04turn\x18\x03\x20\x01(\rR\x04turn\
+    \x12\x12\n\x04type\x18\x04\x20\x01(\rR\x04type\x12\x16\n\x06reason\x18\
+    \x05\x20\x01(\rR\x06reason\x12\x20\n\x0bHEPCHHCHHPF\x18\x06\x20\x03(\rR\
+    \x0bHEPCHHCHHPF\x12\x20\n\x0bKCCJCGFKCCC\x18\x07\x20\x01(\x05R\x0bKCCJCG\
+    FKCCC\x12\x20\n\x0bFOJGIEEHHNG\x18\x08\x20\x01(\rR\x0bFOJGIEEHHNGb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

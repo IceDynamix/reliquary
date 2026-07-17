@@ -86,13 +86,13 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
             my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for StartBattleCollegeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(11, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for StartBattleCollegeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dStartBattleCollegeScRsp.proto\x1a\x15SceneBattleInfo.proto\"v\n\
-    \x17StartBattleCollegeScRsp\x121\n\x0bbattle_info\x18\x07\x20\x01(\x0b2\
+    \x17StartBattleCollegeScRsp\x121\n\x0bbattle_info\x18\x03\x20\x01(\x0b2\
     \x10.SceneBattleInfoR\nbattleInfo\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcode\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\x02idb\x06proto3\
+    \x07retcode\x12\x0e\n\x02id\x18\x0b\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

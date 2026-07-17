@@ -29,46 +29,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRaidType {
     // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NLCDGIPGFDJ)
     ENMOIIMEDKD_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_LAKLHDPLLAP)
-    ENMOIIMEDKD_LAKLHDPLLAP = 2205,
     // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_KIAAALLPPCM)
-    ENMOIIMEDKD_KIAAALLPPCM = 2240,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DPIANCJPNBI)
-    ENMOIIMEDKD_DPIANCJPNBI = 2238,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NKCJGPBMLBM)
-    ENMOIIMEDKD_NKCJGPBMLBM = 2232,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DBEOJEGFCIO)
-    ENMOIIMEDKD_DBEOJEGFCIO = 2244,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GDJCOFKGJCG)
-    ENMOIIMEDKD_GDJCOFKGJCG = 2227,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EELECOGCJKP)
-    ENMOIIMEDKD_EELECOGCJKP = 2220,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NEDJJGKDDNP)
-    ENMOIIMEDKD_NEDJJGKDDNP = 2229,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_FGBBOOCHPOO)
-    ENMOIIMEDKD_FGBBOOCHPOO = 2234,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GMBHKFNHOJI)
-    ENMOIIMEDKD_GMBHKFNHOJI = 2219,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GLHPDJAKOGI)
-    ENMOIIMEDKD_GLHPDJAKOGI = 2212,
+    ENMOIIMEDKD_KIAAALLPPCM = 2229,
     // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_PMIJIJGANAN)
-    ENMOIIMEDKD_PMIJIJGANAN = 2243,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_PMPIJBHGOKC)
-    ENMOIIMEDKD_PMPIJBHGOKC = 2208,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EHIFBAALDMH)
-    ENMOIIMEDKD_EHIFBAALDMH = 2207,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EJHGOOPPKCO)
-    ENMOIIMEDKD_EJHGOOPPKCO = 2242,
+    ENMOIIMEDKD_PMIJIJGANAN = 2224,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GLHPDJAKOGI)
+    ENMOIIMEDKD_GLHPDJAKOGI = 2215,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NEDJJGKDDNP)
+    ENMOIIMEDKD_NEDJJGKDDNP = 2221,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DPIANCJPNBI)
+    ENMOIIMEDKD_DPIANCJPNBI = 2214,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DBEOJEGFCIO)
+    ENMOIIMEDKD_DBEOJEGFCIO = 2219,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GDJCOFKGJCG)
+    ENMOIIMEDKD_GDJCOFKGJCG = 2248,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_FGBBOOCHPOO)
+    ENMOIIMEDKD_FGBBOOCHPOO = 2220,
     // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_HEHJAHHAKDI)
-    ENMOIIMEDKD_HEHJAHHAKDI = 2223,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_MDMMEFIPJKD)
-    ENMOIIMEDKD_MDMMEFIPJKD = 2245,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_JIPMAKDBIAJ)
-    ENMOIIMEDKD_JIPMAKDBIAJ = 2209,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_OHCJFFHMILD)
-    ENMOIIMEDKD_OHCJFFHMILD = 2221,
+    ENMOIIMEDKD_HEHJAHHAKDI = 2244,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EJHGOOPPKCO)
+    ENMOIIMEDKD_EJHGOOPPKCO = 2223,
     // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_OPNFILPAAGH)
-    ENMOIIMEDKD_OPNFILPAAGH = 2203,
+    ENMOIIMEDKD_OPNFILPAAGH = 2202,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NKCJGPBMLBM)
+    ENMOIIMEDKD_NKCJGPBMLBM = 2209,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_OHCJFFHMILD)
+    ENMOIIMEDKD_OHCJFFHMILD = 2217,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_JIPMAKDBIAJ)
+    ENMOIIMEDKD_JIPMAKDBIAJ = 2210,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EELECOGCJKP)
+    ENMOIIMEDKD_EELECOGCJKP = 2235,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_PMPIJBHGOKC)
+    ENMOIIMEDKD_PMPIJBHGOKC = 2206,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EHIFBAALDMH)
+    ENMOIIMEDKD_EHIFBAALDMH = 2237,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_MDMMEFIPJKD)
+    ENMOIIMEDKD_MDMMEFIPJKD = 2207,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_LAKLHDPLLAP)
+    ENMOIIMEDKD_LAKLHDPLLAP = 2233,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GMBHKFNHOJI)
+    ENMOIIMEDKD_GMBHKFNHOJI = 2203,
 }
 
 impl ::protobuf::Enum for CmdRaidType {
@@ -81,26 +81,26 @@ impl ::protobuf::Enum for CmdRaidType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidType> {
         match value {
             0 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ),
-            2205 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
-            2240 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM),
-            2238 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI),
-            2232 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
-            2244 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO),
-            2227 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG),
-            2220 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
-            2229 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
-            2234 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO),
-            2219 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
-            2212 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
-            2243 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
-            2208 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC),
-            2207 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH),
-            2242 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
-            2223 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
-            2245 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD),
-            2209 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
-            2221 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
-            2203 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
+            2229 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM),
+            2224 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
+            2215 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
+            2221 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
+            2214 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI),
+            2219 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO),
+            2248 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG),
+            2220 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO),
+            2244 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
+            2223 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
+            2202 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
+            2209 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
+            2217 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
+            2210 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
+            2235 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
+            2206 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC),
+            2237 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH),
+            2207 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD),
+            2233 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
+            2203 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
             _ => ::std::option::Option::None
         }
     }
@@ -108,52 +108,52 @@ impl ::protobuf::Enum for CmdRaidType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRaidType> {
         match str {
             "ENMOIIMEDKD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ),
-            "ENMOIIMEDKD_LAKLHDPLLAP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
             "ENMOIIMEDKD_KIAAALLPPCM" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM),
+            "ENMOIIMEDKD_PMIJIJGANAN" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
+            "ENMOIIMEDKD_GLHPDJAKOGI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
+            "ENMOIIMEDKD_NEDJJGKDDNP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
             "ENMOIIMEDKD_DPIANCJPNBI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI),
-            "ENMOIIMEDKD_NKCJGPBMLBM" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
             "ENMOIIMEDKD_DBEOJEGFCIO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO),
             "ENMOIIMEDKD_GDJCOFKGJCG" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG),
-            "ENMOIIMEDKD_EELECOGCJKP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
-            "ENMOIIMEDKD_NEDJJGKDDNP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
             "ENMOIIMEDKD_FGBBOOCHPOO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO),
-            "ENMOIIMEDKD_GMBHKFNHOJI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
-            "ENMOIIMEDKD_GLHPDJAKOGI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
-            "ENMOIIMEDKD_PMIJIJGANAN" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
+            "ENMOIIMEDKD_HEHJAHHAKDI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
+            "ENMOIIMEDKD_EJHGOOPPKCO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
+            "ENMOIIMEDKD_OPNFILPAAGH" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
+            "ENMOIIMEDKD_NKCJGPBMLBM" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
+            "ENMOIIMEDKD_OHCJFFHMILD" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
+            "ENMOIIMEDKD_JIPMAKDBIAJ" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
+            "ENMOIIMEDKD_EELECOGCJKP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
             "ENMOIIMEDKD_PMPIJBHGOKC" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC),
             "ENMOIIMEDKD_EHIFBAALDMH" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH),
-            "ENMOIIMEDKD_EJHGOOPPKCO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
-            "ENMOIIMEDKD_HEHJAHHAKDI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
             "ENMOIIMEDKD_MDMMEFIPJKD" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD),
-            "ENMOIIMEDKD_JIPMAKDBIAJ" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
-            "ENMOIIMEDKD_OHCJFFHMILD" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
-            "ENMOIIMEDKD_OPNFILPAAGH" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
+            "ENMOIIMEDKD_LAKLHDPLLAP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
+            "ENMOIIMEDKD_GMBHKFNHOJI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRaidType] = &[
         CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ,
-        CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP,
         CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM,
+        CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN,
+        CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI,
+        CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP,
         CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI,
-        CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM,
         CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO,
         CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG,
-        CmdRaidType::ENMOIIMEDKD_EELECOGCJKP,
-        CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP,
         CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO,
-        CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI,
-        CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI,
-        CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN,
+        CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI,
+        CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO,
+        CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH,
+        CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM,
+        CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD,
+        CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ,
+        CmdRaidType::ENMOIIMEDKD_EELECOGCJKP,
         CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC,
         CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH,
-        CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO,
-        CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI,
         CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD,
-        CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ,
-        CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD,
-        CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH,
+        CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP,
+        CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI,
     ];
 }
 
@@ -166,26 +166,26 @@ impl ::protobuf::EnumFull for CmdRaidType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ => 0,
-            CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP => 1,
-            CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM => 2,
-            CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI => 3,
-            CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM => 4,
-            CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO => 5,
-            CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG => 6,
-            CmdRaidType::ENMOIIMEDKD_EELECOGCJKP => 7,
-            CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP => 8,
-            CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO => 9,
-            CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI => 10,
-            CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI => 11,
-            CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN => 12,
-            CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC => 13,
-            CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH => 14,
-            CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO => 15,
-            CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI => 16,
-            CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD => 17,
-            CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ => 18,
-            CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD => 19,
-            CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH => 20,
+            CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM => 1,
+            CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN => 2,
+            CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI => 3,
+            CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP => 4,
+            CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI => 5,
+            CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO => 6,
+            CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG => 7,
+            CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO => 8,
+            CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI => 9,
+            CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO => 10,
+            CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH => 11,
+            CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM => 12,
+            CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD => 13,
+            CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ => 14,
+            CmdRaidType::ENMOIIMEDKD_EELECOGCJKP => 15,
+            CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC => 16,
+            CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH => 17,
+            CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD => 18,
+            CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP => 19,
+            CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,20 +205,20 @@ impl CmdRaidType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdRaidType.proto*\x82\x05\n\x0bCmdRaidType\x12\x1b\n\x17ENMOIIMED\
-    KD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ENMOIIMEDKD_LAKLHDPLLAP\x10\x9d\x11\
-    \x12\x1c\n\x17ENMOIIMEDKD_KIAAALLPPCM\x10\xc0\x11\x12\x1c\n\x17ENMOIIMED\
-    KD_DPIANCJPNBI\x10\xbe\x11\x12\x1c\n\x17ENMOIIMEDKD_NKCJGPBMLBM\x10\xb8\
-    \x11\x12\x1c\n\x17ENMOIIMEDKD_DBEOJEGFCIO\x10\xc4\x11\x12\x1c\n\x17ENMOI\
-    IMEDKD_GDJCOFKGJCG\x10\xb3\x11\x12\x1c\n\x17ENMOIIMEDKD_EELECOGCJKP\x10\
-    \xac\x11\x12\x1c\n\x17ENMOIIMEDKD_NEDJJGKDDNP\x10\xb5\x11\x12\x1c\n\x17E\
-    NMOIIMEDKD_FGBBOOCHPOO\x10\xba\x11\x12\x1c\n\x17ENMOIIMEDKD_GMBHKFNHOJI\
-    \x10\xab\x11\x12\x1c\n\x17ENMOIIMEDKD_GLHPDJAKOGI\x10\xa4\x11\x12\x1c\n\
-    \x17ENMOIIMEDKD_PMIJIJGANAN\x10\xc3\x11\x12\x1c\n\x17ENMOIIMEDKD_PMPIJBH\
-    GOKC\x10\xa0\x11\x12\x1c\n\x17ENMOIIMEDKD_EHIFBAALDMH\x10\x9f\x11\x12\
-    \x1c\n\x17ENMOIIMEDKD_EJHGOOPPKCO\x10\xc2\x11\x12\x1c\n\x17ENMOIIMEDKD_H\
-    EHJAHHAKDI\x10\xaf\x11\x12\x1c\n\x17ENMOIIMEDKD_MDMMEFIPJKD\x10\xc5\x11\
-    \x12\x1c\n\x17ENMOIIMEDKD_JIPMAKDBIAJ\x10\xa1\x11\x12\x1c\n\x17ENMOIIMED\
-    KD_OHCJFFHMILD\x10\xad\x11\x12\x1c\n\x17ENMOIIMEDKD_OPNFILPAAGH\x10\x9b\
+    KD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ENMOIIMEDKD_KIAAALLPPCM\x10\xb5\x11\
+    \x12\x1c\n\x17ENMOIIMEDKD_PMIJIJGANAN\x10\xb0\x11\x12\x1c\n\x17ENMOIIMED\
+    KD_GLHPDJAKOGI\x10\xa7\x11\x12\x1c\n\x17ENMOIIMEDKD_NEDJJGKDDNP\x10\xad\
+    \x11\x12\x1c\n\x17ENMOIIMEDKD_DPIANCJPNBI\x10\xa6\x11\x12\x1c\n\x17ENMOI\
+    IMEDKD_DBEOJEGFCIO\x10\xab\x11\x12\x1c\n\x17ENMOIIMEDKD_GDJCOFKGJCG\x10\
+    \xc8\x11\x12\x1c\n\x17ENMOIIMEDKD_FGBBOOCHPOO\x10\xac\x11\x12\x1c\n\x17E\
+    NMOIIMEDKD_HEHJAHHAKDI\x10\xc4\x11\x12\x1c\n\x17ENMOIIMEDKD_EJHGOOPPKCO\
+    \x10\xaf\x11\x12\x1c\n\x17ENMOIIMEDKD_OPNFILPAAGH\x10\x9a\x11\x12\x1c\n\
+    \x17ENMOIIMEDKD_NKCJGPBMLBM\x10\xa1\x11\x12\x1c\n\x17ENMOIIMEDKD_OHCJFFH\
+    MILD\x10\xa9\x11\x12\x1c\n\x17ENMOIIMEDKD_JIPMAKDBIAJ\x10\xa2\x11\x12\
+    \x1c\n\x17ENMOIIMEDKD_EELECOGCJKP\x10\xbb\x11\x12\x1c\n\x17ENMOIIMEDKD_P\
+    MPIJBHGOKC\x10\x9e\x11\x12\x1c\n\x17ENMOIIMEDKD_EHIFBAALDMH\x10\xbd\x11\
+    \x12\x1c\n\x17ENMOIIMEDKD_MDMMEFIPJKD\x10\x9f\x11\x12\x1c\n\x17ENMOIIMED\
+    KD_LAKLHDPLLAP\x10\xb9\x11\x12\x1c\n\x17ENMOIIMEDKD_GMBHKFNHOJI\x10\x9b\
     \x11b\x06proto3\
 ";
 

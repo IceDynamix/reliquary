@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMGHLHHJEGE {
     // message fields
-    // @@protoc_insertion_point(field:BMGHLHHJEGE.LAOACNPDOLD)
-    pub LAOACNPDOLD: u32,
-    // @@protoc_insertion_point(field:BMGHLHHJEGE.PPFAEMGDAOF)
-    pub PPFAEMGDAOF: bool,
+    // @@protoc_insertion_point(field:BMGHLHHJEGE.event_type)
+    pub event_type: u32,
+    // @@protoc_insertion_point(field:BMGHLHHJEGE.is_disappeared_once)
+    pub is_disappeared_once: bool,
     // special fields
     // @@protoc_insertion_point(special_field:BMGHLHHJEGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BMGHLHHJEGE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &BMGHLHHJEGE| { &m.LAOACNPDOLD },
-            |m: &mut BMGHLHHJEGE| { &mut m.LAOACNPDOLD },
+            "event_type",
+            |m: &BMGHLHHJEGE| { &m.event_type },
+            |m: &mut BMGHLHHJEGE| { &mut m.event_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPFAEMGDAOF",
-            |m: &BMGHLHHJEGE| { &m.PPFAEMGDAOF },
-            |m: &mut BMGHLHHJEGE| { &mut m.PPFAEMGDAOF },
+            "is_disappeared_once",
+            |m: &BMGHLHHJEGE| { &m.is_disappeared_once },
+            |m: &mut BMGHLHHJEGE| { &mut m.is_disappeared_once },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMGHLHHJEGE>(
             "BMGHLHHJEGE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.LAOACNPDOLD = is.read_uint32()?;
+                56 => {
+                    self.event_type = is.read_uint32()?;
                 },
-                24 => {
-                    self.PPFAEMGDAOF = is.read_bool()?;
+                96 => {
+                    self.is_disappeared_once = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LAOACNPDOLD);
+        if self.event_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.event_type);
         }
-        if self.PPFAEMGDAOF != false {
+        if self.is_disappeared_once != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LAOACNPDOLD != 0 {
-            os.write_uint32(8, self.LAOACNPDOLD)?;
+        if self.event_type != 0 {
+            os.write_uint32(7, self.event_type)?;
         }
-        if self.PPFAEMGDAOF != false {
-            os.write_bool(3, self.PPFAEMGDAOF)?;
+        if self.is_disappeared_once != false {
+            os.write_bool(12, self.is_disappeared_once)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     }
 
     fn clear(&mut self) {
-        self.LAOACNPDOLD = 0;
-        self.PPFAEMGDAOF = false;
+        self.event_type = 0;
+        self.is_disappeared_once = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMGHLHHJEGE {
         static instance: BMGHLHHJEGE = BMGHLHHJEGE {
-            LAOACNPDOLD: 0,
-            PPFAEMGDAOF: false,
+            event_type: 0,
+            is_disappeared_once: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BMGHLHHJEGE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BMGHLHHJEGE.proto\"Q\n\x0bBMGHLHHJEGE\x12\x20\n\x0bLAOACNPDOLD\x18\
-    \x08\x20\x01(\rR\x0bLAOACNPDOLD\x12\x20\n\x0bPPFAEMGDAOF\x18\x03\x20\x01\
-    (\x08R\x0bPPFAEMGDAOFb\x06proto3\
+    \n\x11BMGHLHHJEGE.proto\"\\\n\x0bBMGHLHHJEGE\x12\x1d\n\nevent_type\x18\
+    \x07\x20\x01(\rR\teventType\x12.\n\x13is_disappeared_once\x18\x0c\x20\
+    \x01(\x08R\x11isDisappearedOnceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdExpeditionType {
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_NLCDGIPGFDJ)
     OKPCOBCMOFF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_DFJDNLNFKLG)
-    OKPCOBCMOFF_DFJDNLNFKLG = 2509,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_CHEPKADENJL)
-    OKPCOBCMOFF_CHEPKADENJL = 2542,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_CCMNFGHDCDO)
-    OKPCOBCMOFF_CCMNFGHDCDO = 2503,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_KDNHLKEOHHA)
-    OKPCOBCMOFF_KDNHLKEOHHA = 2532,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_ECHFAEDEFLG)
-    OKPCOBCMOFF_ECHFAEDEFLG = 2508,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_MKBNPFGGANC)
-    OKPCOBCMOFF_MKBNPFGGANC = 2520,
     // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_OLCHGINAEIG)
-    OKPCOBCMOFF_OLCHGINAEIG = 2538,
+    OKPCOBCMOFF_OLCHGINAEIG = 2514,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_KDNHLKEOHHA)
+    OKPCOBCMOFF_KDNHLKEOHHA = 2509,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_MKBNPFGGANC)
+    OKPCOBCMOFF_MKBNPFGGANC = 2535,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_DFJDNLNFKLG)
+    OKPCOBCMOFF_DFJDNLNFKLG = 2510,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_CHEPKADENJL)
+    OKPCOBCMOFF_CHEPKADENJL = 2523,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_ECHFAEDEFLG)
+    OKPCOBCMOFF_ECHFAEDEFLG = 2506,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.OKPCOBCMOFF_CCMNFGHDCDO)
+    OKPCOBCMOFF_CCMNFGHDCDO = 2502,
 }
 
 impl ::protobuf::Enum for CmdExpeditionType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdExpeditionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdExpeditionType> {
         match value {
             0 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_NLCDGIPGFDJ),
-            2509 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG),
-            2542 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL),
-            2503 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO),
-            2532 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA),
-            2508 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG),
-            2520 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC),
-            2538 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG),
+            2514 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG),
+            2509 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA),
+            2535 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC),
+            2510 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG),
+            2523 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL),
+            2506 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG),
+            2502 => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdExpeditionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdExpeditionType> {
         match str {
             "OKPCOBCMOFF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_NLCDGIPGFDJ),
+            "OKPCOBCMOFF_OLCHGINAEIG" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG),
+            "OKPCOBCMOFF_KDNHLKEOHHA" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA),
+            "OKPCOBCMOFF_MKBNPFGGANC" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC),
             "OKPCOBCMOFF_DFJDNLNFKLG" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG),
             "OKPCOBCMOFF_CHEPKADENJL" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL),
-            "OKPCOBCMOFF_CCMNFGHDCDO" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO),
-            "OKPCOBCMOFF_KDNHLKEOHHA" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA),
             "OKPCOBCMOFF_ECHFAEDEFLG" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG),
-            "OKPCOBCMOFF_MKBNPFGGANC" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC),
-            "OKPCOBCMOFF_OLCHGINAEIG" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG),
+            "OKPCOBCMOFF_CCMNFGHDCDO" => ::std::option::Option::Some(CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdExpeditionType] = &[
         CmdExpeditionType::OKPCOBCMOFF_NLCDGIPGFDJ,
+        CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG,
+        CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA,
+        CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC,
         CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG,
         CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL,
-        CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO,
-        CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA,
         CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG,
-        CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC,
-        CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG,
+        CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdExpeditionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdExpeditionType::OKPCOBCMOFF_NLCDGIPGFDJ => 0,
-            CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG => 1,
-            CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL => 2,
-            CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO => 3,
-            CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA => 4,
-            CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG => 5,
-            CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC => 6,
-            CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG => 7,
+            CmdExpeditionType::OKPCOBCMOFF_OLCHGINAEIG => 1,
+            CmdExpeditionType::OKPCOBCMOFF_KDNHLKEOHHA => 2,
+            CmdExpeditionType::OKPCOBCMOFF_MKBNPFGGANC => 3,
+            CmdExpeditionType::OKPCOBCMOFF_DFJDNLNFKLG => 4,
+            CmdExpeditionType::OKPCOBCMOFF_CHEPKADENJL => 5,
+            CmdExpeditionType::OKPCOBCMOFF_ECHFAEDEFLG => 6,
+            CmdExpeditionType::OKPCOBCMOFF_CCMNFGHDCDO => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl CmdExpeditionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdExpeditionType.proto*\x82\x02\n\x11CmdExpeditionType\x12\x1b\n\
-    \x17OKPCOBCMOFF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OKPCOBCMOFF_DFJDNLNFKLG\
-    \x10\xcd\x13\x12\x1c\n\x17OKPCOBCMOFF_CHEPKADENJL\x10\xee\x13\x12\x1c\n\
-    \x17OKPCOBCMOFF_CCMNFGHDCDO\x10\xc7\x13\x12\x1c\n\x17OKPCOBCMOFF_KDNHLKE\
-    OHHA\x10\xe4\x13\x12\x1c\n\x17OKPCOBCMOFF_ECHFAEDEFLG\x10\xcc\x13\x12\
-    \x1c\n\x17OKPCOBCMOFF_MKBNPFGGANC\x10\xd8\x13\x12\x1c\n\x17OKPCOBCMOFF_O\
-    LCHGINAEIG\x10\xea\x13b\x06proto3\
+    \x17OKPCOBCMOFF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OKPCOBCMOFF_OLCHGINAEIG\
+    \x10\xd2\x13\x12\x1c\n\x17OKPCOBCMOFF_KDNHLKEOHHA\x10\xcd\x13\x12\x1c\n\
+    \x17OKPCOBCMOFF_MKBNPFGGANC\x10\xe7\x13\x12\x1c\n\x17OKPCOBCMOFF_DFJDNLN\
+    FKLG\x10\xce\x13\x12\x1c\n\x17OKPCOBCMOFF_CHEPKADENJL\x10\xdb\x13\x12\
+    \x1c\n\x17OKPCOBCMOFF_ECHFAEDEFLG\x10\xca\x13\x12\x1c\n\x17OKPCOBCMOFF_C\
+    CMNFGHDCDO\x10\xc6\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

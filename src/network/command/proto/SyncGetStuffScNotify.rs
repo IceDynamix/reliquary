@@ -82,7 +82,7 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
                 24 => {
                     self.BAPBMHCHCIC = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                32 => {
                     self.CEAMLKCMMGD = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
             my_size += ::protobuf::rt::int32_size(3, self.BAPBMHCHCIC.value());
         }
         if self.CEAMLKCMMGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CEAMLKCMMGD);
+            my_size += ::protobuf::rt::uint32_size(4, self.CEAMLKCMMGD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
             os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BAPBMHCHCIC))?;
         }
         if self.CEAMLKCMMGD != 0 {
-            os.write_uint32(9, self.CEAMLKCMMGD)?;
+            os.write_uint32(4, self.CEAMLKCMMGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncGetStuffScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSyncGetStuffScNotify.proto\x1a\x12GetStuffType.proto\"i\n\x14SyncG\
     etStuffScNotify\x12/\n\x0bBAPBMHCHCIC\x18\x03\x20\x01(\x0e2\r.GetStuffTy\
-    peR\x0bBAPBMHCHCIC\x12\x20\n\x0bCEAMLKCMMGD\x18\t\x20\x01(\rR\x0bCEAMLKC\
-    MMGDb\x06proto3\
+    peR\x0bBAPBMHCHCIC\x12\x20\n\x0bCEAMLKCMMGD\x18\x04\x20\x01(\rR\x0bCEAML\
+    KCMMGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

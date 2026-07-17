@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeOffSkillCoreCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.slot = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.APGDJGPGGMO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TakeOffSkillCoreCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.slot);
+            my_size += ::protobuf::rt::uint32_size(7, self.slot);
         }
         if self.APGDJGPGGMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.APGDJGPGGMO);
+            my_size += ::protobuf::rt::uint32_size(11, self.APGDJGPGGMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TakeOffSkillCoreCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.slot != 0 {
-            os.write_uint32(5, self.slot)?;
+            os.write_uint32(7, self.slot)?;
         }
         if self.APGDJGPGGMO != 0 {
-            os.write_uint32(7, self.APGDJGPGGMO)?;
+            os.write_uint32(11, self.APGDJGPGGMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeOffSkillCoreCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bTakeOffSkillCoreCsReq.proto\"M\n\x15TakeOffSkillCoreCsReq\x12\x12\
-    \n\x04slot\x18\x05\x20\x01(\rR\x04slot\x12\x20\n\x0bAPGDJGPGGMO\x18\x07\
+    \n\x04slot\x18\x07\x20\x01(\rR\x04slot\x12\x20\n\x0bAPGDJGPGGMO\x18\x0b\
     \x20\x01(\rR\x0bAPGDJGPGGMOb\x06proto3\
 ";
 

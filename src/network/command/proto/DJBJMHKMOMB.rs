@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DJBJMHKMOMB {
     // message fields
-    // @@protoc_insertion_point(field:DJBJMHKMOMB.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:DJBJMHKMOMB.JAPPKIFAHPH)
     pub JAPPKIFAHPH: ::protobuf::EnumOrUnknown<super::BGPPDMIPDDH::BGPPDMIPDDH>,
+    // @@protoc_insertion_point(field:DJBJMHKMOMB.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DJBJMHKMOMB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DJBJMHKMOMB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &DJBJMHKMOMB| { &m.level },
-            |m: &mut DJBJMHKMOMB| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JAPPKIFAHPH",
             |m: &DJBJMHKMOMB| { &m.JAPPKIFAHPH },
             |m: &mut DJBJMHKMOMB| { &mut m.JAPPKIFAHPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &DJBJMHKMOMB| { &m.level },
+            |m: &mut DJBJMHKMOMB| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DJBJMHKMOMB>(
             "DJBJMHKMOMB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DJBJMHKMOMB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.level = is.read_uint32()?;
-                },
-                40 => {
+                24 => {
                     self.JAPPKIFAHPH = is.read_enum_or_unknown()?;
+                },
+                32 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DJBJMHKMOMB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
-        }
         if self.JAPPKIFAHPH != ::protobuf::EnumOrUnknown::new(super::BGPPDMIPDDH::BGPPDMIPDDH::BGPPDMIPDDH_IIHEIDCFALE) {
-            my_size += ::protobuf::rt::int32_size(5, self.JAPPKIFAHPH.value());
+            my_size += ::protobuf::rt::int32_size(3, self.JAPPKIFAHPH.value());
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DJBJMHKMOMB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(1, self.level)?;
-        }
         if self.JAPPKIFAHPH != ::protobuf::EnumOrUnknown::new(super::BGPPDMIPDDH::BGPPDMIPDDH::BGPPDMIPDDH_IIHEIDCFALE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.JAPPKIFAHPH))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.JAPPKIFAHPH))?;
+        }
+        if self.level != 0 {
+            os.write_uint32(4, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DJBJMHKMOMB {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.JAPPKIFAHPH = ::protobuf::EnumOrUnknown::new(super::BGPPDMIPDDH::BGPPDMIPDDH::BGPPDMIPDDH_IIHEIDCFALE);
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DJBJMHKMOMB {
         static instance: DJBJMHKMOMB = DJBJMHKMOMB {
-            level: 0,
             JAPPKIFAHPH: ::protobuf::EnumOrUnknown::from_i32(0),
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DJBJMHKMOMB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJBJMHKMOMB.proto\x1a\x11BGPPDMIPDDH.proto\"S\n\x0bDJBJMHKMOMB\x12\
-    \x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12.\n\x0bJAPPKIFAHPH\x18\
-    \x05\x20\x01(\x0e2\x0c.BGPPDMIPDDHR\x0bJAPPKIFAHPHb\x06proto3\
+    .\n\x0bJAPPKIFAHPH\x18\x03\x20\x01(\x0e2\x0c.BGPPDMIPDDHR\x0bJAPPKIFAHPH\
+    \x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

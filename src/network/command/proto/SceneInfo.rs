@@ -28,54 +28,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneInfo {
     // message fields
-    // @@protoc_insertion_point(field:SceneInfo.group_state_list)
-    pub group_state_list: ::std::vec::Vec<super::SceneGroupState::SceneGroupState>,
-    // @@protoc_insertion_point(field:SceneInfo.custom_data_list)
-    pub custom_data_list: ::std::vec::Vec<super::CustomSaveData::CustomSaveData>,
-    // @@protoc_insertion_point(field:SceneInfo.floor_saved_data)
-    pub floor_saved_data: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:SceneInfo.plane_id)
+    pub plane_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.floor_id)
+    pub floor_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.world_id)
+    pub world_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.opened_chests_list)
+    pub opened_chests_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SceneInfo.entry_id)
+    pub entry_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.BIKBFGPFAAC)
+    pub BIKBFGPFAAC: ::std::collections::HashMap<u32, super::HIEKLHPINHL::HIEKLHPINHL>,
+    // @@protoc_insertion_point(field:SceneInfo.leader_entity_id)
+    pub leader_entity_id: u32,
     // @@protoc_insertion_point(field:SceneInfo.entity_list)
     pub entity_list: ::std::vec::Vec<super::SceneEntityInfo::SceneEntityInfo>,
+    // @@protoc_insertion_point(field:SceneInfo.client_pos_version)
+    pub client_pos_version: u32,
+    // @@protoc_insertion_point(field:SceneInfo.custom_data_list)
+    pub custom_data_list: ::std::vec::Vec<super::CustomSaveData::CustomSaveData>,
+    // @@protoc_insertion_point(field:SceneInfo.CPIKFGPCOCE)
+    pub CPIKFGPCOCE: ::std::vec::Vec<super::HGNBPANECAL::HGNBPANECAL>,
+    // @@protoc_insertion_point(field:SceneInfo.game_mode_type)
+    pub game_mode_type: u32,
+    // @@protoc_insertion_point(field:SceneInfo.scene_buff_info_list)
+    pub scene_buff_info_list: ::std::vec::Vec<super::BuffInfo::BuffInfo>,
+    // @@protoc_insertion_point(field:SceneInfo.floor_saved_data)
+    pub floor_saved_data: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:SceneInfo.content_id)
+    pub content_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.entity_group_list)
+    pub entity_group_list: ::std::vec::Vec<super::SceneEntityGroupInfo::SceneEntityGroupInfo>,
+    // @@protoc_insertion_point(field:SceneInfo.scene_identifier)
+    pub scene_identifier: ::protobuf::MessageField<super::SceneIdentifier::SceneIdentifier>,
+    // @@protoc_insertion_point(field:SceneInfo.dimension_id)
+    pub dimension_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.game_story_line_id)
+    pub game_story_line_id: u32,
+    // @@protoc_insertion_point(field:SceneInfo.interact_id)
+    pub interact_id: u64,
+    // @@protoc_insertion_point(field:SceneInfo.lighten_section_list)
+    pub lighten_section_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SceneInfo.scene_mission_info)
     pub scene_mission_info: ::protobuf::MessageField<super::MissionStatusBySceneInfo::MissionStatusBySceneInfo>,
     // @@protoc_insertion_point(field:SceneInfo.FOJJGJPIMBL)
     pub FOJJGJPIMBL: ::protobuf::MessageField<super::BELNLOJAFCM::BELNLOJAFCM>,
-    // @@protoc_insertion_point(field:SceneInfo.entity_group_list)
-    pub entity_group_list: ::std::vec::Vec<super::SceneEntityGroupInfo::SceneEntityGroupInfo>,
-    // @@protoc_insertion_point(field:SceneInfo.CPIKFGPCOCE)
-    pub CPIKFGPCOCE: ::std::vec::Vec<super::HGNBPANECAL::HGNBPANECAL>,
-    // @@protoc_insertion_point(field:SceneInfo.opened_chests_list)
-    pub opened_chests_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneInfo.lighten_section_list)
-    pub lighten_section_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SceneInfo.scene_identifier)
-    pub scene_identifier: ::protobuf::MessageField<super::SceneIdentifier::SceneIdentifier>,
-    // @@protoc_insertion_point(field:SceneInfo.scene_buff_info_list)
-    pub scene_buff_info_list: ::std::vec::Vec<super::BuffInfo::BuffInfo>,
-    // @@protoc_insertion_point(field:SceneInfo.BIKBFGPFAAC)
-    pub BIKBFGPFAAC: ::std::collections::HashMap<u32, super::HIEKLHPINHL::HIEKLHPINHL>,
-    // @@protoc_insertion_point(field:SceneInfo.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.dimension_id)
-    pub dimension_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.client_pos_version)
-    pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:SceneInfo.floor_id)
-    pub floor_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.entry_id)
-    pub entry_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.world_id)
-    pub world_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.content_id)
-    pub content_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.game_mode_type)
-    pub game_mode_type: u32,
-    // @@protoc_insertion_point(field:SceneInfo.game_story_line_id)
-    pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.leader_entity_id)
-    pub leader_entity_id: u32,
-    // @@protoc_insertion_point(field:SceneInfo.interact_id)
-    pub interact_id: u64,
     // special fields
     // @@protoc_insertion_point(special_field:SceneInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -93,27 +91,112 @@ impl SceneInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(24);
+        let mut fields = ::std::vec::Vec::with_capacity(23);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &SceneInfo| { &m.plane_id },
+            |m: &mut SceneInfo| { &mut m.plane_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &SceneInfo| { &m.floor_id },
+            |m: &mut SceneInfo| { &mut m.floor_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_id",
+            |m: &SceneInfo| { &m.world_id },
+            |m: &mut SceneInfo| { &mut m.world_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "group_state_list",
-            |m: &SceneInfo| { &m.group_state_list },
-            |m: &mut SceneInfo| { &mut m.group_state_list },
+            "opened_chests_list",
+            |m: &SceneInfo| { &m.opened_chests_list },
+            |m: &mut SceneInfo| { &mut m.opened_chests_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_id",
+            |m: &SceneInfo| { &m.entry_id },
+            |m: &mut SceneInfo| { &mut m.entry_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "BIKBFGPFAAC",
+            |m: &SceneInfo| { &m.BIKBFGPFAAC },
+            |m: &mut SceneInfo| { &mut m.BIKBFGPFAAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "leader_entity_id",
+            |m: &SceneInfo| { &m.leader_entity_id },
+            |m: &mut SceneInfo| { &mut m.leader_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "entity_list",
+            |m: &SceneInfo| { &m.entity_list },
+            |m: &mut SceneInfo| { &mut m.entity_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_pos_version",
+            |m: &SceneInfo| { &m.client_pos_version },
+            |m: &mut SceneInfo| { &mut m.client_pos_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "custom_data_list",
             |m: &SceneInfo| { &m.custom_data_list },
             |m: &mut SceneInfo| { &mut m.custom_data_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CPIKFGPCOCE",
+            |m: &SceneInfo| { &m.CPIKFGPCOCE },
+            |m: &mut SceneInfo| { &mut m.CPIKFGPCOCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_mode_type",
+            |m: &SceneInfo| { &m.game_mode_type },
+            |m: &mut SceneInfo| { &mut m.game_mode_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "scene_buff_info_list",
+            |m: &SceneInfo| { &m.scene_buff_info_list },
+            |m: &mut SceneInfo| { &mut m.scene_buff_info_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "floor_saved_data",
             |m: &SceneInfo| { &m.floor_saved_data },
             |m: &mut SceneInfo| { &mut m.floor_saved_data },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "content_id",
+            |m: &SceneInfo| { &m.content_id },
+            |m: &mut SceneInfo| { &mut m.content_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_list",
-            |m: &SceneInfo| { &m.entity_list },
-            |m: &mut SceneInfo| { &mut m.entity_list },
+            "entity_group_list",
+            |m: &SceneInfo| { &m.entity_group_list },
+            |m: &mut SceneInfo| { &mut m.entity_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneIdentifier::SceneIdentifier>(
+            "scene_identifier",
+            |m: &SceneInfo| { &m.scene_identifier },
+            |m: &mut SceneInfo| { &mut m.scene_identifier },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dimension_id",
+            |m: &SceneInfo| { &m.dimension_id },
+            |m: &mut SceneInfo| { &mut m.dimension_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_story_line_id",
+            |m: &SceneInfo| { &m.game_story_line_id },
+            |m: &mut SceneInfo| { &mut m.game_story_line_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interact_id",
+            |m: &SceneInfo| { &m.interact_id },
+            |m: &mut SceneInfo| { &mut m.interact_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lighten_section_list",
+            |m: &SceneInfo| { &m.lighten_section_list },
+            |m: &mut SceneInfo| { &mut m.lighten_section_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionStatusBySceneInfo::MissionStatusBySceneInfo>(
             "scene_mission_info",
@@ -124,96 +207,6 @@ impl SceneInfo {
             "FOJJGJPIMBL",
             |m: &SceneInfo| { &m.FOJJGJPIMBL },
             |m: &mut SceneInfo| { &mut m.FOJJGJPIMBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_group_list",
-            |m: &SceneInfo| { &m.entity_group_list },
-            |m: &mut SceneInfo| { &mut m.entity_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CPIKFGPCOCE",
-            |m: &SceneInfo| { &m.CPIKFGPCOCE },
-            |m: &mut SceneInfo| { &mut m.CPIKFGPCOCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "opened_chests_list",
-            |m: &SceneInfo| { &m.opened_chests_list },
-            |m: &mut SceneInfo| { &mut m.opened_chests_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lighten_section_list",
-            |m: &SceneInfo| { &m.lighten_section_list },
-            |m: &mut SceneInfo| { &mut m.lighten_section_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneIdentifier::SceneIdentifier>(
-            "scene_identifier",
-            |m: &SceneInfo| { &m.scene_identifier },
-            |m: &mut SceneInfo| { &mut m.scene_identifier },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "scene_buff_info_list",
-            |m: &SceneInfo| { &m.scene_buff_info_list },
-            |m: &mut SceneInfo| { &mut m.scene_buff_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "BIKBFGPFAAC",
-            |m: &SceneInfo| { &m.BIKBFGPFAAC },
-            |m: &mut SceneInfo| { &mut m.BIKBFGPFAAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &SceneInfo| { &m.plane_id },
-            |m: &mut SceneInfo| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dimension_id",
-            |m: &SceneInfo| { &m.dimension_id },
-            |m: &mut SceneInfo| { &mut m.dimension_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_pos_version",
-            |m: &SceneInfo| { &m.client_pos_version },
-            |m: &mut SceneInfo| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &SceneInfo| { &m.floor_id },
-            |m: &mut SceneInfo| { &mut m.floor_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &SceneInfo| { &m.entry_id },
-            |m: &mut SceneInfo| { &mut m.entry_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_id",
-            |m: &SceneInfo| { &m.world_id },
-            |m: &mut SceneInfo| { &mut m.world_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &SceneInfo| { &m.content_id },
-            |m: &mut SceneInfo| { &mut m.content_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_mode_type",
-            |m: &SceneInfo| { &m.game_mode_type },
-            |m: &mut SceneInfo| { &mut m.game_mode_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &SceneInfo| { &m.game_story_line_id },
-            |m: &mut SceneInfo| { &mut m.game_story_line_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "leader_entity_id",
-            |m: &SceneInfo| { &m.leader_entity_id },
-            |m: &mut SceneInfo| { &mut m.leader_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "interact_id",
-            |m: &SceneInfo| { &m.interact_id },
-            |m: &mut SceneInfo| { &mut m.interact_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneInfo>(
             "SceneInfo",
@@ -233,61 +226,25 @@ impl ::protobuf::Message for SceneInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10282 => {
-                    self.group_state_list.push(is.read_message()?);
+                8 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.world_id = is.read_uint32()?;
                 },
                 34 => {
-                    self.custom_data_list.push(is.read_message()?);
-                },
-                9962 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            10 => key = is.read_string()?,
-                            16 => value = is.read_int32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.floor_saved_data.insert(key, value);
-                },
-                18 => {
-                    self.entity_list.push(is.read_message()?);
-                },
-                6434 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene_mission_info)?;
-                },
-                9170 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FOJJGJPIMBL)?;
-                },
-                9202 => {
-                    self.entity_group_list.push(is.read_message()?);
-                },
-                82 => {
-                    self.CPIKFGPCOCE.push(is.read_message()?);
-                },
-                2546 => {
                     is.read_repeated_packed_uint32_into(&mut self.opened_chests_list)?;
                 },
-                2544 => {
+                32 => {
                     self.opened_chests_list.push(is.read_uint32()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
+                40 => {
+                    self.entry_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.lighten_section_list.push(is.read_uint32()?);
-                },
-                14218 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene_identifier)?;
-                },
-                114 => {
-                    self.scene_buff_info_list.push(is.read_message()?);
-                },
-                26 => {
+                58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -302,38 +259,71 @@ impl ::protobuf::Message for SceneInfo {
                     is.pop_limit(old_limit);
                     self.BIKBFGPFAAC.insert(key, value);
                 },
-                8 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                5720 => {
-                    self.dimension_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.client_pos_version = is.read_uint32()?;
-                },
-                72 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.entry_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.world_id = is.read_uint32()?;
-                },
-                5480 => {
-                    self.content_id = is.read_uint32()?;
-                },
                 64 => {
-                    self.game_mode_type = is.read_uint32()?;
-                },
-                11304 => {
-                    self.game_story_line_id = is.read_uint32()?;
-                },
-                56 => {
                     self.leader_entity_id = is.read_uint32()?;
                 },
-                7272 => {
+                74 => {
+                    self.entity_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.client_pos_version = is.read_uint32()?;
+                },
+                90 => {
+                    self.custom_data_list.push(is.read_message()?);
+                },
+                98 => {
+                    self.CPIKFGPCOCE.push(is.read_message()?);
+                },
+                104 => {
+                    self.game_mode_type = is.read_uint32()?;
+                },
+                122 => {
+                    self.scene_buff_info_list.push(is.read_message()?);
+                },
+                7042 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            10 => key = is.read_string()?,
+                            16 => value = is.read_int32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.floor_saved_data.insert(key, value);
+                },
+                7728 => {
+                    self.content_id = is.read_uint32()?;
+                },
+                7914 => {
+                    self.entity_group_list.push(is.read_message()?);
+                },
+                8858 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene_identifier)?;
+                },
+                9944 => {
+                    self.dimension_id = is.read_uint32()?;
+                },
+                11168 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                11968 => {
                     self.interact_id = is.read_uint64()?;
+                },
+                12834 => {
+                    is.read_repeated_packed_uint32_into(&mut self.lighten_section_list)?;
+                },
+                12832 => {
+                    self.lighten_section_list.push(is.read_uint32()?);
+                },
+                13282 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene_mission_info)?;
+                },
+                15506 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FOJJGJPIMBL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -347,11 +337,48 @@ impl ::protobuf::Message for SceneInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.group_state_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.plane_id);
+        }
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
+        }
+        if self.world_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.world_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.opened_chests_list);
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.entry_id);
+        }
+        for (k, v) in &self.BIKBFGPFAAC {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.compute_size();
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.leader_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.leader_entity_id);
+        }
+        for value in &self.entity_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.client_pos_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.client_pos_version);
+        }
         for value in &self.custom_data_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.CPIKFGPCOCE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.game_mode_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.game_mode_type);
+        }
+        for value in &self.scene_buff_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -361,10 +388,27 @@ impl ::protobuf::Message for SceneInfo {
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.entity_list {
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(966, self.content_id);
+        }
+        for value in &self.entity_group_list {
             let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.scene_identifier.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.dimension_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1243, self.dimension_id);
+        }
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1396, self.game_story_line_id);
+        }
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(1496, self.interact_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1604, &self.lighten_section_list);
         if let Some(v) = self.scene_mission_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -372,64 +416,6 @@ impl ::protobuf::Message for SceneInfo {
         if let Some(v) = self.FOJJGJPIMBL.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.entity_group_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.CPIKFGPCOCE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(318, &self.opened_chests_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.lighten_section_list);
-        if let Some(v) = self.scene_identifier.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.scene_buff_info_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for (k, v) in &self.BIKBFGPFAAC {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            let len = v.compute_size();
-            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.plane_id);
-        }
-        if self.dimension_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(715, self.dimension_id);
-        }
-        if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.client_pos_version);
-        }
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.floor_id);
-        }
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.entry_id);
-        }
-        if self.world_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.world_id);
-        }
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(685, self.content_id);
-        }
-        if self.game_mode_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.game_mode_type);
-        }
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1413, self.game_story_line_id);
-        }
-        if self.leader_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.leader_entity_id);
-        }
-        if self.interact_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(909, self.interact_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -437,86 +423,83 @@ impl ::protobuf::Message for SceneInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.group_state_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1285, v, os)?;
-        };
-        for v in &self.custom_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        for (k, v) in &self.floor_saved_data {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::string_size(1, &k);
-            entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(9962)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_string(1, &k)?;
-            os.write_int32(2, *v)?;
-        };
-        for v in &self.entity_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if let Some(v) = self.scene_mission_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(804, v, os)?;
+        if self.plane_id != 0 {
+            os.write_uint32(1, self.plane_id)?;
         }
-        if let Some(v) = self.FOJJGJPIMBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1146, v, os)?;
+        if self.floor_id != 0 {
+            os.write_uint32(2, self.floor_id)?;
         }
-        for v in &self.entity_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1150, v, os)?;
-        };
-        for v in &self.CPIKFGPCOCE {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        os.write_repeated_packed_uint32(318, &self.opened_chests_list)?;
-        os.write_repeated_packed_uint32(15, &self.lighten_section_list)?;
-        if let Some(v) = self.scene_identifier.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1777, v, os)?;
+        if self.world_id != 0 {
+            os.write_uint32(3, self.world_id)?;
         }
-        for v in &self.scene_buff_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
+        os.write_repeated_packed_uint32(4, &self.opened_chests_list)?;
+        if self.entry_id != 0 {
+            os.write_uint32(5, self.entry_id)?;
+        }
         for (k, v) in &self.BIKBFGPFAAC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(26)?; // Tag.
+            os.write_raw_varint32(58)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.plane_id != 0 {
-            os.write_uint32(1, self.plane_id)?;
+        if self.leader_entity_id != 0 {
+            os.write_uint32(8, self.leader_entity_id)?;
+        }
+        for v in &self.entity_list {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.client_pos_version != 0 {
+            os.write_uint32(10, self.client_pos_version)?;
+        }
+        for v in &self.custom_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.CPIKFGPCOCE {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.game_mode_type != 0 {
+            os.write_uint32(13, self.game_mode_type)?;
+        }
+        for v in &self.scene_buff_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        for (k, v) in &self.floor_saved_data {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::string_size(1, &k);
+            entry_size += ::protobuf::rt::int32_size(2, *v);
+            os.write_raw_varint32(7042)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_string(1, &k)?;
+            os.write_int32(2, *v)?;
+        };
+        if self.content_id != 0 {
+            os.write_uint32(966, self.content_id)?;
+        }
+        for v in &self.entity_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(989, v, os)?;
+        };
+        if let Some(v) = self.scene_identifier.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1107, v, os)?;
         }
         if self.dimension_id != 0 {
-            os.write_uint32(715, self.dimension_id)?;
-        }
-        if self.client_pos_version != 0 {
-            os.write_uint32(11, self.client_pos_version)?;
-        }
-        if self.floor_id != 0 {
-            os.write_uint32(9, self.floor_id)?;
-        }
-        if self.entry_id != 0 {
-            os.write_uint32(5, self.entry_id)?;
-        }
-        if self.world_id != 0 {
-            os.write_uint32(6, self.world_id)?;
-        }
-        if self.content_id != 0 {
-            os.write_uint32(685, self.content_id)?;
-        }
-        if self.game_mode_type != 0 {
-            os.write_uint32(8, self.game_mode_type)?;
+            os.write_uint32(1243, self.dimension_id)?;
         }
         if self.game_story_line_id != 0 {
-            os.write_uint32(1413, self.game_story_line_id)?;
-        }
-        if self.leader_entity_id != 0 {
-            os.write_uint32(7, self.leader_entity_id)?;
+            os.write_uint32(1396, self.game_story_line_id)?;
         }
         if self.interact_id != 0 {
-            os.write_uint64(909, self.interact_id)?;
+            os.write_uint64(1496, self.interact_id)?;
+        }
+        os.write_repeated_packed_uint32(1604, &self.lighten_section_list)?;
+        if let Some(v) = self.scene_mission_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1660, v, os)?;
+        }
+        if let Some(v) = self.FOJJGJPIMBL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1938, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -535,30 +518,29 @@ impl ::protobuf::Message for SceneInfo {
     }
 
     fn clear(&mut self) {
-        self.group_state_list.clear();
-        self.custom_data_list.clear();
-        self.floor_saved_data.clear();
+        self.plane_id = 0;
+        self.floor_id = 0;
+        self.world_id = 0;
+        self.opened_chests_list.clear();
+        self.entry_id = 0;
+        self.BIKBFGPFAAC.clear();
+        self.leader_entity_id = 0;
         self.entity_list.clear();
+        self.client_pos_version = 0;
+        self.custom_data_list.clear();
+        self.CPIKFGPCOCE.clear();
+        self.game_mode_type = 0;
+        self.scene_buff_info_list.clear();
+        self.floor_saved_data.clear();
+        self.content_id = 0;
+        self.entity_group_list.clear();
+        self.scene_identifier.clear();
+        self.dimension_id = 0;
+        self.game_story_line_id = 0;
+        self.interact_id = 0;
+        self.lighten_section_list.clear();
         self.scene_mission_info.clear();
         self.FOJJGJPIMBL.clear();
-        self.entity_group_list.clear();
-        self.CPIKFGPCOCE.clear();
-        self.opened_chests_list.clear();
-        self.lighten_section_list.clear();
-        self.scene_identifier.clear();
-        self.scene_buff_info_list.clear();
-        self.BIKBFGPFAAC.clear();
-        self.plane_id = 0;
-        self.dimension_id = 0;
-        self.client_pos_version = 0;
-        self.floor_id = 0;
-        self.entry_id = 0;
-        self.world_id = 0;
-        self.content_id = 0;
-        self.game_mode_type = 0;
-        self.game_story_line_id = 0;
-        self.leader_entity_id = 0;
-        self.interact_id = 0;
         self.special_fields.clear();
     }
 
@@ -589,37 +571,35 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0fSceneInfo.proto\x1a\x11BELNLOJAFCM.proto\x1a\x0eBuffInfo.proto\x1a\
     \x14CustomSaveData.proto\x1a\x11HGNBPANECAL.proto\x1a\x11HIEKLHPINHL.pro\
     to\x1a\x1eMissionStatusBySceneInfo.proto\x1a\x1aSceneEntityGroupInfo.pro\
-    to\x1a\x15SceneEntityInfo.proto\x1a\x15SceneGroupState.proto\x1a\x15Scen\
-    eIdentifier.proto\"\x99\n\n\tSceneInfo\x12;\n\x10group_state_list\x18\
-    \x85\n\x20\x03(\x0b2\x10.SceneGroupStateR\x0egroupStateList\x129\n\x10cu\
-    stom_data_list\x18\x04\x20\x03(\x0b2\x0f.CustomSaveDataR\x0ecustomDataLi\
-    st\x12I\n\x10floor_saved_data\x18\xdd\t\x20\x03(\x0b2\x1e.SceneInfo.Floo\
-    rSavedDataEntryR\x0efloorSavedData\x121\n\x0bentity_list\x18\x02\x20\x03\
-    (\x0b2\x10.SceneEntityInfoR\nentityList\x12H\n\x12scene_mission_info\x18\
-    \xa4\x06\x20\x01(\x0b2\x19.MissionStatusBySceneInfoR\x10sceneMissionInfo\
-    \x12/\n\x0bFOJJGJPIMBL\x18\xfa\x08\x20\x01(\x0b2\x0c.BELNLOJAFCMR\x0bFOJ\
-    JGJPIMBL\x12B\n\x11entity_group_list\x18\xfe\x08\x20\x03(\x0b2\x15.Scene\
-    EntityGroupInfoR\x0fentityGroupList\x12.\n\x0bCPIKFGPCOCE\x18\n\x20\x03(\
-    \x0b2\x0c.HGNBPANECALR\x0bCPIKFGPCOCE\x12-\n\x12opened_chests_list\x18\
-    \xbe\x02\x20\x03(\rR\x10openedChestsList\x120\n\x14lighten_section_list\
-    \x18\x0f\x20\x03(\rR\x12lightenSectionList\x12<\n\x10scene_identifier\
-    \x18\xf1\r\x20\x01(\x0b2\x10.SceneIdentifierR\x0fsceneIdentifier\x12:\n\
-    \x14scene_buff_info_list\x18\x0e\x20\x03(\x0b2\t.BuffInfoR\x11sceneBuffI\
-    nfoList\x12=\n\x0bBIKBFGPFAAC\x18\x03\x20\x03(\x0b2\x1b.SceneInfo.BIKBFG\
-    PFAACEntryR\x0bBIKBFGPFAAC\x12\x19\n\x08plane_id\x18\x01\x20\x01(\rR\x07\
-    planeId\x12\"\n\x0cdimension_id\x18\xcb\x05\x20\x01(\rR\x0bdimensionId\
-    \x12,\n\x12client_pos_version\x18\x0b\x20\x01(\rR\x10clientPosVersion\
-    \x12\x19\n\x08floor_id\x18\t\x20\x01(\rR\x07floorId\x12\x19\n\x08entry_i\
-    d\x18\x05\x20\x01(\rR\x07entryId\x12\x19\n\x08world_id\x18\x06\x20\x01(\
-    \rR\x07worldId\x12\x1e\n\ncontent_id\x18\xad\x05\x20\x01(\rR\tcontentId\
-    \x12$\n\x0egame_mode_type\x18\x08\x20\x01(\rR\x0cgameModeType\x12,\n\x12\
-    game_story_line_id\x18\x85\x0b\x20\x01(\rR\x0fgameStoryLineId\x12(\n\x10\
-    leader_entity_id\x18\x07\x20\x01(\rR\x0eleaderEntityId\x12\x20\n\x0binte\
-    ract_id\x18\x8d\x07\x20\x01(\x04R\ninteractId\x1aA\n\x13FloorSavedDataEn\
-    try\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\
-    \x02\x20\x01(\x05R\x05value:\x028\x01\x1aL\n\x10BIKBFGPFAACEntry\x12\x10\
-    \n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\x02\x20\x01(\
-    \x0b2\x0c.HIEKLHPINHLR\x05value:\x028\x01b\x06proto3\
+    to\x1a\x15SceneEntityInfo.proto\x1a\x15SceneIdentifier.proto\"\xdc\t\n\t\
+    SceneInfo\x12\x19\n\x08plane_id\x18\x01\x20\x01(\rR\x07planeId\x12\x19\n\
+    \x08floor_id\x18\x02\x20\x01(\rR\x07floorId\x12\x19\n\x08world_id\x18\
+    \x03\x20\x01(\rR\x07worldId\x12,\n\x12opened_chests_list\x18\x04\x20\x03\
+    (\rR\x10openedChestsList\x12\x19\n\x08entry_id\x18\x05\x20\x01(\rR\x07en\
+    tryId\x12=\n\x0bBIKBFGPFAAC\x18\x07\x20\x03(\x0b2\x1b.SceneInfo.BIKBFGPF\
+    AACEntryR\x0bBIKBFGPFAAC\x12(\n\x10leader_entity_id\x18\x08\x20\x01(\rR\
+    \x0eleaderEntityId\x121\n\x0bentity_list\x18\t\x20\x03(\x0b2\x10.SceneEn\
+    tityInfoR\nentityList\x12,\n\x12client_pos_version\x18\n\x20\x01(\rR\x10\
+    clientPosVersion\x129\n\x10custom_data_list\x18\x0b\x20\x03(\x0b2\x0f.Cu\
+    stomSaveDataR\x0ecustomDataList\x12.\n\x0bCPIKFGPCOCE\x18\x0c\x20\x03(\
+    \x0b2\x0c.HGNBPANECALR\x0bCPIKFGPCOCE\x12$\n\x0egame_mode_type\x18\r\x20\
+    \x01(\rR\x0cgameModeType\x12:\n\x14scene_buff_info_list\x18\x0f\x20\x03(\
+    \x0b2\t.BuffInfoR\x11sceneBuffInfoList\x12I\n\x10floor_saved_data\x18\
+    \xf0\x06\x20\x03(\x0b2\x1e.SceneInfo.FloorSavedDataEntryR\x0efloorSavedD\
+    ata\x12\x1e\n\ncontent_id\x18\xc6\x07\x20\x01(\rR\tcontentId\x12B\n\x11e\
+    ntity_group_list\x18\xdd\x07\x20\x03(\x0b2\x15.SceneEntityGroupInfoR\x0f\
+    entityGroupList\x12<\n\x10scene_identifier\x18\xd3\x08\x20\x01(\x0b2\x10\
+    .SceneIdentifierR\x0fsceneIdentifier\x12\"\n\x0cdimension_id\x18\xdb\t\
+    \x20\x01(\rR\x0bdimensionId\x12,\n\x12game_story_line_id\x18\xf4\n\x20\
+    \x01(\rR\x0fgameStoryLineId\x12\x20\n\x0binteract_id\x18\xd8\x0b\x20\x01\
+    (\x04R\ninteractId\x121\n\x14lighten_section_list\x18\xc4\x0c\x20\x03(\r\
+    R\x12lightenSectionList\x12H\n\x12scene_mission_info\x18\xfc\x0c\x20\x01\
+    (\x0b2\x19.MissionStatusBySceneInfoR\x10sceneMissionInfo\x12/\n\x0bFOJJG\
+    JPIMBL\x18\x92\x0f\x20\x01(\x0b2\x0c.BELNLOJAFCMR\x0bFOJJGJPIMBL\x1aL\n\
+    \x10BIKBFGPFAACEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\
+    \x05value\x18\x02\x20\x01(\x0b2\x0c.HIEKLHPINHLR\x05value:\x028\x01\x1aA\
+    \n\x13FloorSavedDataEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -636,7 +616,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(10);
+            let mut deps = ::std::vec::Vec::with_capacity(9);
             deps.push(super::BELNLOJAFCM::file_descriptor().clone());
             deps.push(super::BuffInfo::file_descriptor().clone());
             deps.push(super::CustomSaveData::file_descriptor().clone());
@@ -645,7 +625,6 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::MissionStatusBySceneInfo::file_descriptor().clone());
             deps.push(super::SceneEntityGroupInfo::file_descriptor().clone());
             deps.push(super::SceneEntityInfo::file_descriptor().clone());
-            deps.push(super::SceneGroupState::file_descriptor().clone());
             deps.push(super::SceneIdentifier::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneInfo::generated_message_descriptor_data());

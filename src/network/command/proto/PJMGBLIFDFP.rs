@@ -192,8 +192,57 @@ impl PJMGBLIFDFP {
         }
     }
 
+    // .HFAAFFDPBIL MPNPIIHHFPN = 1004;
+
+    pub fn MPNPIIHHFPN(&self) -> &super::HFAAFFDPBIL::HFAAFFDPBIL {
+        match self.CGIFMOFGECO {
+            ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(ref v)) => v,
+            _ => <super::HFAAFFDPBIL::HFAAFFDPBIL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MPNPIIHHFPN(&mut self) {
+        self.CGIFMOFGECO = ::std::option::Option::None;
+    }
+
+    pub fn has_MPNPIIHHFPN(&self) -> bool {
+        match self.CGIFMOFGECO {
+            ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MPNPIIHHFPN(&mut self, v: super::HFAAFFDPBIL::HFAAFFDPBIL) {
+        self.CGIFMOFGECO = ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MPNPIIHHFPN(&mut self) -> &mut super::HFAAFFDPBIL::HFAAFFDPBIL {
+        if let ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(_)) = self.CGIFMOFGECO {
+        } else {
+            self.CGIFMOFGECO = ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(super::HFAAFFDPBIL::HFAAFFDPBIL::new()));
+        }
+        match self.CGIFMOFGECO {
+            ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MPNPIIHHFPN(&mut self) -> super::HFAAFFDPBIL::HFAAFFDPBIL {
+        if self.has_MPNPIIHHFPN() {
+            match self.CGIFMOFGECO.take() {
+                ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HFAAFFDPBIL::HFAAFFDPBIL::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HCLAEGGMCFK::HCLAEGGMCFK>(
             "lobby_grid_fight_info",
@@ -215,6 +264,13 @@ impl PJMGBLIFDFP {
             PJMGBLIFDFP::FNNOPJBPLPF,
             PJMGBLIFDFP::mut_FNNOPJBPLPF,
             PJMGBLIFDFP::set_FNNOPJBPLPF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HFAAFFDPBIL::HFAAFFDPBIL>(
+            "MPNPIIHHFPN",
+            PJMGBLIFDFP::has_MPNPIIHHFPN,
+            PJMGBLIFDFP::MPNPIIHHFPN,
+            PJMGBLIFDFP::mut_MPNPIIHHFPN,
+            PJMGBLIFDFP::set_MPNPIIHHFPN,
         ));
         oneofs.push(pjmgblifdfp::CGIFMOFGECO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PJMGBLIFDFP>(
@@ -244,6 +300,9 @@ impl ::protobuf::Message for PJMGBLIFDFP {
                 8026 => {
                     self.CGIFMOFGECO = ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::FNNOPJBPLPF(is.read_message()?));
                 },
+                8034 => {
+                    self.CGIFMOFGECO = ::std::option::Option::Some(pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(is.read_message()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -270,6 +329,10 @@ impl ::protobuf::Message for PJMGBLIFDFP {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -288,6 +351,9 @@ impl ::protobuf::Message for PJMGBLIFDFP {
                 },
                 &pjmgblifdfp::CGIFMOFGECO::FNNOPJBPLPF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1003, v, os)?;
+                },
+                &pjmgblifdfp::CGIFMOFGECO::MPNPIIHHFPN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1004, v, os)?;
                 },
             };
         }
@@ -308,6 +374,7 @@ impl ::protobuf::Message for PJMGBLIFDFP {
     }
 
     fn clear(&mut self) {
+        self.CGIFMOFGECO = ::std::option::Option::None;
         self.CGIFMOFGECO = ::std::option::Option::None;
         self.CGIFMOFGECO = ::std::option::Option::None;
         self.CGIFMOFGECO = ::std::option::Option::None;
@@ -353,6 +420,8 @@ pub mod pjmgblifdfp {
         GOKJCFBPHCJ(super::super::ONNHDODIIED::ONNHDODIIED),
         // @@protoc_insertion_point(oneof_field:PJMGBLIFDFP.FNNOPJBPLPF)
         FNNOPJBPLPF(super::super::GBAKEFGOLCB::GBAKEFGOLCB),
+        // @@protoc_insertion_point(oneof_field:PJMGBLIFDFP.MPNPIIHHFPN)
+        MPNPIIHHFPN(super::super::HFAAFFDPBIL::HFAAFFDPBIL),
     }
 
     impl ::protobuf::Oneof for CGIFMOFGECO {
@@ -374,11 +443,13 @@ pub mod pjmgblifdfp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PJMGBLIFDFP.proto\x1a\x11GBAKEFGOLCB.proto\x1a\x11HCLAEGGMCFK.prot\
-    o\x1a\x11ONNHDODIIED.proto\"\xc6\x01\n\x0bPJMGBLIFDFP\x12B\n\x15lobby_gr\
-    id_fight_info\x18\xe9\x07\x20\x01(\x0b2\x0c.HCLAEGGMCFKH\0R\x12lobbyGrid\
-    FightInfo\x121\n\x0bGOKJCFBPHCJ\x18\xea\x07\x20\x01(\x0b2\x0c.ONNHDODIIE\
-    DH\0R\x0bGOKJCFBPHCJ\x121\n\x0bFNNOPJBPLPF\x18\xeb\x07\x20\x01(\x0b2\x0c\
-    .GBAKEFGOLCBH\0R\x0bFNNOPJBPLPFB\r\n\x0bCGIFMOFGECOb\x06proto3\
+    o\x1a\x11HFAAFFDPBIL.proto\x1a\x11ONNHDODIIED.proto\"\xf9\x01\n\x0bPJMGB\
+    LIFDFP\x12B\n\x15lobby_grid_fight_info\x18\xe9\x07\x20\x01(\x0b2\x0c.HCL\
+    AEGGMCFKH\0R\x12lobbyGridFightInfo\x121\n\x0bGOKJCFBPHCJ\x18\xea\x07\x20\
+    \x01(\x0b2\x0c.ONNHDODIIEDH\0R\x0bGOKJCFBPHCJ\x121\n\x0bFNNOPJBPLPF\x18\
+    \xeb\x07\x20\x01(\x0b2\x0c.GBAKEFGOLCBH\0R\x0bFNNOPJBPLPF\x121\n\x0bMPNP\
+    IIHHFPN\x18\xec\x07\x20\x01(\x0b2\x0c.HFAAFFDPBILH\0R\x0bMPNPIIHHFPNB\r\
+    \n\x0bCGIFMOFGECOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -395,9 +466,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::GBAKEFGOLCB::file_descriptor().clone());
             deps.push(super::HCLAEGGMCFK::file_descriptor().clone());
+            deps.push(super::HFAAFFDPBIL::file_descriptor().clone());
             deps.push(super::ONNHDODIIED::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PJMGBLIFDFP::generated_message_descriptor_data());

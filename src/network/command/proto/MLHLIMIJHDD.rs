@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MLHLIMIJHDD {
     // message fields
-    // @@protoc_insertion_point(field:MLHLIMIJHDD.LALGADHLMCB)
-    pub LALGADHLMCB: u32,
-    // @@protoc_insertion_point(field:MLHLIMIJHDD.HBONKLEOEEI)
-    pub HBONKLEOEEI: u32,
-    // @@protoc_insertion_point(field:MLHLIMIJHDD.pos_index)
-    pub pos_index: u32,
+    // @@protoc_insertion_point(field:MLHLIMIJHDD.pos)
+    pub pos: u32,
     // @@protoc_insertion_point(field:MLHLIMIJHDD.count)
     pub count: u32,
+    // @@protoc_insertion_point(field:MLHLIMIJHDD.HBONKLEOEEI)
+    pub HBONKLEOEEI: u32,
+    // @@protoc_insertion_point(field:MLHLIMIJHDD.LALGADHLMCB)
+    pub LALGADHLMCB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MLHLIMIJHDD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,14 @@ impl MLHLIMIJHDD {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LALGADHLMCB",
-            |m: &MLHLIMIJHDD| { &m.LALGADHLMCB },
-            |m: &mut MLHLIMIJHDD| { &mut m.LALGADHLMCB },
+            "pos",
+            |m: &MLHLIMIJHDD| { &m.pos },
+            |m: &mut MLHLIMIJHDD| { &mut m.pos },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "count",
+            |m: &MLHLIMIJHDD| { &m.count },
+            |m: &mut MLHLIMIJHDD| { &mut m.count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBONKLEOEEI",
@@ -66,14 +71,9 @@ impl MLHLIMIJHDD {
             |m: &mut MLHLIMIJHDD| { &mut m.HBONKLEOEEI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &MLHLIMIJHDD| { &m.pos_index },
-            |m: &mut MLHLIMIJHDD| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "count",
-            |m: &MLHLIMIJHDD| { &m.count },
-            |m: &mut MLHLIMIJHDD| { &mut m.count },
+            "LALGADHLMCB",
+            |m: &MLHLIMIJHDD| { &m.LALGADHLMCB },
+            |m: &mut MLHLIMIJHDD| { &mut m.LALGADHLMCB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MLHLIMIJHDD>(
             "MLHLIMIJHDD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MLHLIMIJHDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.LALGADHLMCB = is.read_uint32()?;
-                },
-                72 => {
-                    self.HBONKLEOEEI = is.read_uint32()?;
-                },
-                56 => {
-                    self.pos_index = is.read_uint32()?;
+                16 => {
+                    self.pos = is.read_uint32()?;
                 },
                 48 => {
                     self.count = is.read_uint32()?;
+                },
+                56 => {
+                    self.HBONKLEOEEI = is.read_uint32()?;
+                },
+                72 => {
+                    self.LALGADHLMCB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for MLHLIMIJHDD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LALGADHLMCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LALGADHLMCB);
-        }
-        if self.HBONKLEOEEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HBONKLEOEEI);
-        }
-        if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.pos_index);
+        if self.pos != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.pos);
         }
         if self.count != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.count);
+        }
+        if self.HBONKLEOEEI != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HBONKLEOEEI);
+        }
+        if self.LALGADHLMCB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LALGADHLMCB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for MLHLIMIJHDD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LALGADHLMCB != 0 {
-            os.write_uint32(15, self.LALGADHLMCB)?;
-        }
-        if self.HBONKLEOEEI != 0 {
-            os.write_uint32(9, self.HBONKLEOEEI)?;
-        }
-        if self.pos_index != 0 {
-            os.write_uint32(7, self.pos_index)?;
+        if self.pos != 0 {
+            os.write_uint32(2, self.pos)?;
         }
         if self.count != 0 {
             os.write_uint32(6, self.count)?;
+        }
+        if self.HBONKLEOEEI != 0 {
+            os.write_uint32(7, self.HBONKLEOEEI)?;
+        }
+        if self.LALGADHLMCB != 0 {
+            os.write_uint32(9, self.LALGADHLMCB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for MLHLIMIJHDD {
     }
 
     fn clear(&mut self) {
-        self.LALGADHLMCB = 0;
-        self.HBONKLEOEEI = 0;
-        self.pos_index = 0;
+        self.pos = 0;
         self.count = 0;
+        self.HBONKLEOEEI = 0;
+        self.LALGADHLMCB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MLHLIMIJHDD {
         static instance: MLHLIMIJHDD = MLHLIMIJHDD {
-            LALGADHLMCB: 0,
-            HBONKLEOEEI: 0,
-            pos_index: 0,
+            pos: 0,
             count: 0,
+            HBONKLEOEEI: 0,
+            LALGADHLMCB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for MLHLIMIJHDD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MLHLIMIJHDD.proto\"\x84\x01\n\x0bMLHLIMIJHDD\x12\x20\n\x0bLALGADHL\
-    MCB\x18\x0f\x20\x01(\rR\x0bLALGADHLMCB\x12\x20\n\x0bHBONKLEOEEI\x18\t\
-    \x20\x01(\rR\x0bHBONKLEOEEI\x12\x1b\n\tpos_index\x18\x07\x20\x01(\rR\x08\
-    posIndex\x12\x14\n\x05count\x18\x06\x20\x01(\rR\x05countb\x06proto3\
+    \n\x11MLHLIMIJHDD.proto\"y\n\x0bMLHLIMIJHDD\x12\x10\n\x03pos\x18\x02\x20\
+    \x01(\rR\x03pos\x12\x14\n\x05count\x18\x06\x20\x01(\rR\x05count\x12\x20\
+    \n\x0bHBONKLEOEEI\x18\x07\x20\x01(\rR\x0bHBONKLEOEEI\x12\x20\n\x0bLALGAD\
+    HLMCB\x18\t\x20\x01(\rR\x0bLALGADHLMCBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

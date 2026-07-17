@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AvatarIdentifier {
     // message fields
-    // @@protoc_insertion_point(field:AvatarIdentifier.assist_uid)
-    pub assist_uid: u32,
     // @@protoc_insertion_point(field:AvatarIdentifier.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:AvatarIdentifier.assist_uid)
+    pub assist_uid: u32,
     // @@protoc_insertion_point(field:AvatarIdentifier.id)
     pub id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl AvatarIdentifier {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "assist_uid",
-            |m: &AvatarIdentifier| { &m.assist_uid },
-            |m: &mut AvatarIdentifier| { &mut m.assist_uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &AvatarIdentifier| { &m.avatar_type },
             |m: &mut AvatarIdentifier| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "assist_uid",
+            |m: &AvatarIdentifier| { &m.assist_uid },
+            |m: &mut AvatarIdentifier| { &mut m.assist_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AvatarIdentifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
+                },
+                56 => {
                     self.assist_uid = is.read_uint32()?;
                 },
                 72 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
-                },
-                40 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AvatarIdentifier {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.assist_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.assist_uid);
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(3, self.avatar_type.value());
+        }
+        if self.assist_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.assist_uid);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(9, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AvatarIdentifier {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.assist_uid != 0 {
-            os.write_uint32(14, self.assist_uid)?;
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.assist_uid != 0 {
+            os.write_uint32(7, self.assist_uid)?;
         }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(9, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for AvatarIdentifier {
     }
 
     fn clear(&mut self) {
-        self.assist_uid = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.assist_uid = 0;
         self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarIdentifier {
         static instance: AvatarIdentifier = AvatarIdentifier {
-            assist_uid: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            assist_uid: 0,
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarIdentifier {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarIdentifier.proto\x1a\x10AvatarType.proto\"o\n\x10AvatarIdent\
-    ifier\x12\x1d\n\nassist_uid\x18\x0e\x20\x01(\rR\tassistUid\x12,\n\x0bava\
-    tar_type\x18\t\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x0e\n\x02id\
-    \x18\x05\x20\x01(\rR\x02idb\x06proto3\
+    ifier\x12,\n\x0bavatar_type\x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\navata\
+    rType\x12\x1d\n\nassist_uid\x18\x07\x20\x01(\rR\tassistUid\x12\x0e\n\x02\
+    id\x18\t\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

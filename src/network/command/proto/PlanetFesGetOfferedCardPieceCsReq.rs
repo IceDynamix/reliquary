@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetOfferedCardPieceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.CBMBOBNCKMO)
-    pub CBMBOBNCKMO: u64,
     // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.FOGGEJIIJCM)
     pub FOGGEJIIJCM: bool,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceCsReq.CBMBOBNCKMO)
+    pub CBMBOBNCKMO: u64,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetOfferedCardPieceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesGetOfferedCardPieceCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBMBOBNCKMO",
-            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.CBMBOBNCKMO },
-            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.CBMBOBNCKMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOGGEJIIJCM",
             |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.FOGGEJIIJCM },
             |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.FOGGEJIIJCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBMBOBNCKMO",
+            |m: &PlanetFesGetOfferedCardPieceCsReq| { &m.CBMBOBNCKMO },
+            |m: &mut PlanetFesGetOfferedCardPieceCsReq| { &mut m.CBMBOBNCKMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetOfferedCardPieceCsReq>(
             "PlanetFesGetOfferedCardPieceCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.CBMBOBNCKMO = is.read_uint64()?;
-                },
-                104 => {
+                32 => {
                     self.FOGGEJIIJCM = is.read_bool()?;
+                },
+                72 => {
+                    self.CBMBOBNCKMO = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBMBOBNCKMO != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.CBMBOBNCKMO);
-        }
         if self.FOGGEJIIJCM != false {
             my_size += 1 + 1;
+        }
+        if self.CBMBOBNCKMO != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.CBMBOBNCKMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBMBOBNCKMO != 0 {
-            os.write_uint64(2, self.CBMBOBNCKMO)?;
-        }
         if self.FOGGEJIIJCM != false {
-            os.write_bool(13, self.FOGGEJIIJCM)?;
+            os.write_bool(4, self.FOGGEJIIJCM)?;
+        }
+        if self.CBMBOBNCKMO != 0 {
+            os.write_uint64(9, self.CBMBOBNCKMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     }
 
     fn clear(&mut self) {
-        self.CBMBOBNCKMO = 0;
         self.FOGGEJIIJCM = false;
+        self.CBMBOBNCKMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetOfferedCardPieceCsReq {
         static instance: PlanetFesGetOfferedCardPieceCsReq = PlanetFesGetOfferedCardPieceCsReq {
-            CBMBOBNCKMO: 0,
             FOGGEJIIJCM: false,
+            CBMBOBNCKMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetOfferedCardPieceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'PlanetFesGetOfferedCardPieceCsReq.proto\"g\n!PlanetFesGetOfferedCardP\
-    ieceCsReq\x12\x20\n\x0bCBMBOBNCKMO\x18\x02\x20\x01(\x04R\x0bCBMBOBNCKMO\
-    \x12\x20\n\x0bFOGGEJIIJCM\x18\r\x20\x01(\x08R\x0bFOGGEJIIJCMb\x06proto3\
+    ieceCsReq\x12\x20\n\x0bFOGGEJIIJCM\x18\x04\x20\x01(\x08R\x0bFOGGEJIIJCM\
+    \x12\x20\n\x0bCBMBOBNCKMO\x18\t\x20\x01(\x04R\x0bCBMBOBNCKMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

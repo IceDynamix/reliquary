@@ -48,7 +48,7 @@ impl ActivityRaidPlacingGameCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 GFHGCDEJFIE = 5;
+    // uint32 GFHGCDEJFIE = 4;
 
     pub fn GFHGCDEJFIE(&self) -> u32 {
         match self.EFJLHNMJEED {
@@ -73,7 +73,7 @@ impl ActivityRaidPlacingGameCsReq {
         self.EFJLHNMJEED = ::std::option::Option::Some(activity_raid_placing_game_cs_req::EFJLHNMJEED::GFHGCDEJFIE(v))
     }
 
-    // uint32 CAAHDGFMNNO = 13;
+    // uint32 CAAHDGFMNNO = 14;
 
     pub fn CAAHDGFMNNO(&self) -> u32 {
         match self.EFJLHNMJEED {
@@ -137,13 +137,13 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GPOMFKNHCPB)?;
                 },
-                40 => {
+                32 => {
                     self.EFJLHNMJEED = ::std::option::Option::Some(activity_raid_placing_game_cs_req::EFJLHNMJEED::GFHGCDEJFIE(is.read_uint32()?));
                 },
-                104 => {
+                112 => {
                     self.EFJLHNMJEED = ::std::option::Option::Some(activity_raid_placing_game_cs_req::EFJLHNMJEED::CAAHDGFMNNO(is.read_uint32()?));
                 },
                 tag => {
@@ -165,10 +165,10 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
         if let ::std::option::Option::Some(ref v) = self.EFJLHNMJEED {
             match v {
                 &activity_raid_placing_game_cs_req::EFJLHNMJEED::GFHGCDEJFIE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(5, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &activity_raid_placing_game_cs_req::EFJLHNMJEED::CAAHDGFMNNO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                    my_size += ::protobuf::rt::uint32_size(14, v);
                 },
             };
         }
@@ -179,15 +179,15 @@ impl ::protobuf::Message for ActivityRaidPlacingGameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GPOMFKNHCPB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EFJLHNMJEED {
             match v {
                 &activity_raid_placing_game_cs_req::EFJLHNMJEED::GFHGCDEJFIE(v) => {
-                    os.write_uint32(5, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &activity_raid_placing_game_cs_req::EFJLHNMJEED::CAAHDGFMNNO(v) => {
-                    os.write_uint32(13, v)?;
+                    os.write_uint32(14, v)?;
                 },
             };
         }
@@ -273,9 +273,9 @@ pub mod activity_raid_placing_game_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ActivityRaidPlacingGameCsReq.proto\x1a\x16AlleyPlacingShip.proto\"\
-    \xaa\x01\n\x1cActivityRaidPlacingGameCsReq\x123\n\x0bGPOMFKNHCPB\x18\x0f\
+    \xaa\x01\n\x1cActivityRaidPlacingGameCsReq\x123\n\x0bGPOMFKNHCPB\x18\x02\
     \x20\x01(\x0b2\x11.AlleyPlacingShipR\x0bGPOMFKNHCPB\x12\"\n\x0bGFHGCDEJF\
-    IE\x18\x05\x20\x01(\rH\0R\x0bGFHGCDEJFIE\x12\"\n\x0bCAAHDGFMNNO\x18\r\
+    IE\x18\x04\x20\x01(\rH\0R\x0bGFHGCDEJFIE\x12\"\n\x0bCAAHDGFMNNO\x18\x0e\
     \x20\x01(\rH\0R\x0bCAAHDGFMNNOB\r\n\x0bEFJLHNMJEEDb\x06proto3\
 ";
 

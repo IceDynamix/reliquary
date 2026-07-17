@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRogueModifierType {
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_NLCDGIPGFDJ)
     JKJGPOOLLKF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_EPPMKBDPDBM)
-    JKJGPOOLLKF_EPPMKBDPDBM = 5327,
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_LHGHFLGEBBN)
-    JKJGPOOLLKF_LHGHFLGEBBN = 5336,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_KKEHIBPDIEF)
-    JKJGPOOLLKF_KKEHIBPDIEF = 5310,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_GALJIBIENIB)
-    JKJGPOOLLKF_GALJIBIENIB = 5380,
+    JKJGPOOLLKF_LHGHFLGEBBN = 5388,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_EPPMKBDPDBM)
+    JKJGPOOLLKF_EPPMKBDPDBM = 5358,
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_ECBIHKFNGGM)
-    JKJGPOOLLKF_ECBIHKFNGGM = 5387,
+    JKJGPOOLLKF_ECBIHKFNGGM = 5313,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_GALJIBIENIB)
+    JKJGPOOLLKF_GALJIBIENIB = 5393,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_KKEHIBPDIEF)
+    JKJGPOOLLKF_KKEHIBPDIEF = 5326,
     // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_PLELMMJJOLM)
-    JKJGPOOLLKF_PLELMMJJOLM = 5381,
+    JKJGPOOLLKF_PLELMMJJOLM = 5347,
 }
 
 impl ::protobuf::Enum for CmdRogueModifierType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRogueModifierType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueModifierType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ),
-            5327 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
-            5336 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN),
-            5310 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
-            5380 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
-            5387 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM),
-            5381 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM),
+            5388 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN),
+            5358 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
+            5313 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM),
+            5393 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
+            5326 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
+            5347 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM),
             _ => ::std::option::Option::None
         }
     }
@@ -66,11 +66,11 @@ impl ::protobuf::Enum for CmdRogueModifierType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueModifierType> {
         match str {
             "JKJGPOOLLKF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ),
-            "JKJGPOOLLKF_EPPMKBDPDBM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
             "JKJGPOOLLKF_LHGHFLGEBBN" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN),
-            "JKJGPOOLLKF_KKEHIBPDIEF" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
-            "JKJGPOOLLKF_GALJIBIENIB" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
+            "JKJGPOOLLKF_EPPMKBDPDBM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
             "JKJGPOOLLKF_ECBIHKFNGGM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM),
+            "JKJGPOOLLKF_GALJIBIENIB" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
+            "JKJGPOOLLKF_KKEHIBPDIEF" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
             "JKJGPOOLLKF_PLELMMJJOLM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM),
             _ => ::std::option::Option::None
         }
@@ -78,11 +78,11 @@ impl ::protobuf::Enum for CmdRogueModifierType {
 
     const VALUES: &'static [CmdRogueModifierType] = &[
         CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ,
-        CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM,
         CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN,
-        CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF,
-        CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB,
+        CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM,
         CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM,
+        CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB,
+        CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF,
         CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM,
     ];
 }
@@ -96,11 +96,11 @@ impl ::protobuf::EnumFull for CmdRogueModifierType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ => 0,
-            CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM => 1,
-            CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN => 2,
-            CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF => 3,
+            CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN => 1,
+            CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM => 2,
+            CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM => 3,
             CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB => 4,
-            CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM => 5,
+            CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF => 5,
             CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM => 6,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -121,11 +121,11 @@ impl CmdRogueModifierType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdRogueModifierType.proto*\xe7\x01\n\x14CmdRogueModifierType\x12\
-    \x1b\n\x17JKJGPOOLLKF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JKJGPOOLLKF_EPPMKBD\
-    PDBM\x10\xcf)\x12\x1c\n\x17JKJGPOOLLKF_LHGHFLGEBBN\x10\xd8)\x12\x1c\n\
-    \x17JKJGPOOLLKF_KKEHIBPDIEF\x10\xbe)\x12\x1c\n\x17JKJGPOOLLKF_GALJIBIENI\
-    B\x10\x84*\x12\x1c\n\x17JKJGPOOLLKF_ECBIHKFNGGM\x10\x8b*\x12\x1c\n\x17JK\
-    JGPOOLLKF_PLELMMJJOLM\x10\x85*b\x06proto3\
+    \x1b\n\x17JKJGPOOLLKF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JKJGPOOLLKF_LHGHFLG\
+    EBBN\x10\x8c*\x12\x1c\n\x17JKJGPOOLLKF_EPPMKBDPDBM\x10\xee)\x12\x1c\n\
+    \x17JKJGPOOLLKF_ECBIHKFNGGM\x10\xc1)\x12\x1c\n\x17JKJGPOOLLKF_GALJIBIENI\
+    B\x10\x91*\x12\x1c\n\x17JKJGPOOLLKF_KKEHIBPDIEF\x10\xce)\x12\x1c\n\x17JK\
+    JGPOOLLKF_PLELMMJJOLM\x10\xe3)b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for AiPamResponseFeedbackCommentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                74 => {
                     self.IMNOJNCGGNI = is.read_string()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AiPamResponseFeedbackCommentCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.IMNOJNCGGNI.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.IMNOJNCGGNI);
+            my_size += ::protobuf::rt::string_size(9, &self.IMNOJNCGGNI);
         }
         if self.OLLBLNAGMPC != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.OLLBLNAGMPC);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AiPamResponseFeedbackCommentCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.IMNOJNCGGNI.is_empty() {
-            os.write_string(4, &self.IMNOJNCGGNI)?;
+            os.write_string(9, &self.IMNOJNCGGNI)?;
         }
         if self.OLLBLNAGMPC != 0 {
             os.write_uint32(12, self.OLLBLNAGMPC)?;
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackCommentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'AiPamResponseFeedbackCommentCsReq.proto\"g\n!AiPamResponseFeedbackCom\
-    mentCsReq\x12\x20\n\x0bIMNOJNCGGNI\x18\x04\x20\x01(\tR\x0bIMNOJNCGGNI\
-    \x12\x20\n\x0bOLLBLNAGMPC\x18\x0c\x20\x01(\rR\x0bOLLBLNAGMPCb\x06proto3\
+    mentCsReq\x12\x20\n\x0bIMNOJNCGGNI\x18\t\x20\x01(\tR\x0bIMNOJNCGGNI\x12\
+    \x20\n\x0bOLLBLNAGMPC\x18\x0c\x20\x01(\rR\x0bOLLBLNAGMPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

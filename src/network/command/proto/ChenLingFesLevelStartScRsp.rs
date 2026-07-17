@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingFesLevelStartScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.FGKPIDLKALL)
+    pub FGKPIDLKALL: u32,
     // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.NLMEEEKBPKO)
     pub NLMEEEKBPKO: ::std::string::String,
     // @@protoc_insertion_point(field:ChenLingFesLevelStartScRsp.FGGCAOAPGPA)
@@ -53,8 +55,13 @@ impl ChenLingFesLevelStartScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGKPIDLKALL",
+            |m: &ChenLingFesLevelStartScRsp| { &m.FGKPIDLKALL },
+            |m: &mut ChenLingFesLevelStartScRsp| { &mut m.FGKPIDLKALL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NLMEEEKBPKO",
             |m: &ChenLingFesLevelStartScRsp| { &m.NLMEEEKBPKO },
@@ -93,16 +100,19 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                16 => {
+                    self.FGKPIDLKALL = is.read_uint32()?;
+                },
+                42 => {
                     self.NLMEEEKBPKO = is.read_string()?;
                 },
-                106 => {
+                74 => {
                     self.FGGCAOAPGPA = is.read_string()?;
                 },
-                56 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                16 => {
+                104 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +127,20 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FGKPIDLKALL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FGKPIDLKALL);
+        }
         if !self.NLMEEEKBPKO.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.NLMEEEKBPKO);
+            my_size += ::protobuf::rt::string_size(5, &self.NLMEEEKBPKO);
         }
         if !self.FGGCAOAPGPA.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.FGGCAOAPGPA);
+            my_size += ::protobuf::rt::string_size(9, &self.FGGCAOAPGPA);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +148,20 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FGKPIDLKALL != 0 {
+            os.write_uint32(2, self.FGKPIDLKALL)?;
+        }
         if !self.NLMEEEKBPKO.is_empty() {
-            os.write_string(12, &self.NLMEEEKBPKO)?;
+            os.write_string(5, &self.NLMEEEKBPKO)?;
         }
         if !self.FGGCAOAPGPA.is_empty() {
-            os.write_string(13, &self.FGGCAOAPGPA)?;
+            os.write_string(9, &self.FGGCAOAPGPA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(2, self.level_id)?;
+            os.write_uint32(13, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,6 +180,7 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
     }
 
     fn clear(&mut self) {
+        self.FGKPIDLKALL = 0;
         self.NLMEEEKBPKO.clear();
         self.FGGCAOAPGPA.clear();
         self.retcode = 0;
@@ -173,6 +190,7 @@ impl ::protobuf::Message for ChenLingFesLevelStartScRsp {
 
     fn default_instance() -> &'static ChenLingFesLevelStartScRsp {
         static instance: ChenLingFesLevelStartScRsp = ChenLingFesLevelStartScRsp {
+            FGKPIDLKALL: 0,
             NLMEEEKBPKO: ::std::string::String::new(),
             FGGCAOAPGPA: ::std::string::String::new(),
             retcode: 0,
@@ -201,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingFesLevelStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ChenLingFesLevelStartScRsp.proto\"\x95\x01\n\x1aChenLingFesLevelSt\
-    artScRsp\x12\x20\n\x0bNLMEEEKBPKO\x18\x0c\x20\x01(\tR\x0bNLMEEEKBPKO\x12\
-    \x20\n\x0bFGGCAOAPGPA\x18\r\x20\x01(\tR\x0bFGGCAOAPGPA\x12\x18\n\x07retc\
-    ode\x18\x07\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\x02\x20\x01\
-    (\rR\x07levelIdb\x06proto3\
+    \n\x20ChenLingFesLevelStartScRsp.proto\"\xb7\x01\n\x1aChenLingFesLevelSt\
+    artScRsp\x12\x20\n\x0bFGKPIDLKALL\x18\x02\x20\x01(\rR\x0bFGKPIDLKALL\x12\
+    \x20\n\x0bNLMEEEKBPKO\x18\x05\x20\x01(\tR\x0bNLMEEEKBPKO\x12\x20\n\x0bFG\
+    GCAOAPGPA\x18\t\x20\x01(\tR\x0bFGGCAOAPGPA\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\r\x20\x01(\rR\x07level\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

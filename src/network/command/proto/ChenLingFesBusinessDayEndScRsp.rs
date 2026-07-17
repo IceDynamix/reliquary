@@ -32,8 +32,10 @@ pub struct ChenLingFesBusinessDayEndScRsp {
     pub FGGCAOAPGPA: ::std::string::String,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndScRsp.LFKDANGNJIM)
-    pub LFKDANGNJIM: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndScRsp.FGKPIDLKALL)
+    pub FGKPIDLKALL: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndScRsp.business_day)
+    pub business_day: u32,
     // message oneof groups
     pub FBLHECDEHEF: ::std::option::Option<chen_ling_fes_business_day_end_sc_rsp::FBLHECDEHEF>,
     // special fields
@@ -52,7 +54,7 @@ impl ChenLingFesBusinessDayEndScRsp {
         ::std::default::Default::default()
     }
 
-    // .DMHADFNOIGP EHIHHFMGNHH = 13;
+    // .DMHADFNOIGP EHIHHFMGNHH = 1;
 
     pub fn EHIHHFMGNHH(&self) -> &super::DMHADFNOIGP::DMHADFNOIGP {
         match self.FBLHECDEHEF {
@@ -101,7 +103,7 @@ impl ChenLingFesBusinessDayEndScRsp {
         }
     }
 
-    // .MOJFFDOILBN GAAHAOGLNPJ = 8;
+    // .MOJFFDOILBN GAAHAOGLNPJ = 15;
 
     pub fn GAAHAOGLNPJ(&self) -> &super::MOJFFDOILBN::MOJFFDOILBN {
         match self.FBLHECDEHEF {
@@ -151,7 +153,7 @@ impl ChenLingFesBusinessDayEndScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGGCAOAPGPA",
@@ -164,9 +166,14 @@ impl ChenLingFesBusinessDayEndScRsp {
             |m: &mut ChenLingFesBusinessDayEndScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFKDANGNJIM",
-            |m: &ChenLingFesBusinessDayEndScRsp| { &m.LFKDANGNJIM },
-            |m: &mut ChenLingFesBusinessDayEndScRsp| { &mut m.LFKDANGNJIM },
+            "FGKPIDLKALL",
+            |m: &ChenLingFesBusinessDayEndScRsp| { &m.FGKPIDLKALL },
+            |m: &mut ChenLingFesBusinessDayEndScRsp| { &mut m.FGKPIDLKALL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "business_day",
+            |m: &ChenLingFesBusinessDayEndScRsp| { &m.business_day },
+            |m: &mut ChenLingFesBusinessDayEndScRsp| { &mut m.business_day },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DMHADFNOIGP::DMHADFNOIGP>(
             "EHIHHFMGNHH",
@@ -201,19 +208,22 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     self.FGGCAOAPGPA = is.read_string()?;
                 },
-                96 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.LFKDANGNJIM = is.read_uint32()?;
+                48 => {
+                    self.FGKPIDLKALL = is.read_uint32()?;
                 },
-                106 => {
+                112 => {
+                    self.business_day = is.read_uint32()?;
+                },
+                10 => {
                     self.FBLHECDEHEF = ::std::option::Option::Some(chen_ling_fes_business_day_end_sc_rsp::FBLHECDEHEF::EHIHHFMGNHH(is.read_message()?));
                 },
-                66 => {
+                122 => {
                     self.FBLHECDEHEF = ::std::option::Option::Some(chen_ling_fes_business_day_end_sc_rsp::FBLHECDEHEF::GAAHAOGLNPJ(is.read_message()?));
                 },
                 tag => {
@@ -229,13 +239,16 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.FGGCAOAPGPA.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.FGGCAOAPGPA);
+            my_size += ::protobuf::rt::string_size(2, &self.FGGCAOAPGPA);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LFKDANGNJIM);
+        if self.FGKPIDLKALL != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FGKPIDLKALL);
+        }
+        if self.business_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.business_day);
         }
         if let ::std::option::Option::Some(ref v) = self.FBLHECDEHEF {
             match v {
@@ -256,21 +269,24 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.FGGCAOAPGPA.is_empty() {
-            os.write_string(1, &self.FGGCAOAPGPA)?;
+            os.write_string(2, &self.FGGCAOAPGPA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.LFKDANGNJIM != 0 {
-            os.write_uint32(3, self.LFKDANGNJIM)?;
+        if self.FGKPIDLKALL != 0 {
+            os.write_uint32(6, self.FGKPIDLKALL)?;
+        }
+        if self.business_day != 0 {
+            os.write_uint32(14, self.business_day)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FBLHECDEHEF {
             match v {
                 &chen_ling_fes_business_day_end_sc_rsp::FBLHECDEHEF::EHIHHFMGNHH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &chen_ling_fes_business_day_end_sc_rsp::FBLHECDEHEF::GAAHAOGLNPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -293,7 +309,8 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndScRsp {
     fn clear(&mut self) {
         self.FGGCAOAPGPA.clear();
         self.retcode = 0;
-        self.LFKDANGNJIM = 0;
+        self.FGKPIDLKALL = 0;
+        self.business_day = 0;
         self.FBLHECDEHEF = ::std::option::Option::None;
         self.FBLHECDEHEF = ::std::option::Option::None;
         self.special_fields.clear();
@@ -303,7 +320,8 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndScRsp {
         static instance: ChenLingFesBusinessDayEndScRsp = ChenLingFesBusinessDayEndScRsp {
             FGGCAOAPGPA: ::std::string::String::new(),
             retcode: 0,
-            LFKDANGNJIM: 0,
+            FGKPIDLKALL: 0,
+            business_day: 0,
             FBLHECDEHEF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -360,12 +378,13 @@ pub mod chen_ling_fes_business_day_end_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChenLingFesBusinessDayEndScRsp.proto\x1a\x11DMHADFNOIGP.proto\x1a\x11\
-    MOJFFDOILBN.proto\"\xf1\x01\n\x1eChenLingFesBusinessDayEndScRsp\x12\x20\
-    \n\x0bFGGCAOAPGPA\x18\x01\x20\x01(\tR\x0bFGGCAOAPGPA\x12\x18\n\x07retcod\
-    e\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bLFKDANGNJIM\x18\x03\x20\
-    \x01(\rR\x0bLFKDANGNJIM\x120\n\x0bEHIHHFMGNHH\x18\r\x20\x01(\x0b2\x0c.DM\
-    HADFNOIGPH\0R\x0bEHIHHFMGNHH\x120\n\x0bGAAHAOGLNPJ\x18\x08\x20\x01(\x0b2\
-    \x0c.MOJFFDOILBNH\0R\x0bGAAHAOGLNPJB\r\n\x0bFBLHECDEHEFb\x06proto3\
+    MOJFFDOILBN.proto\"\x94\x02\n\x1eChenLingFesBusinessDayEndScRsp\x12\x20\
+    \n\x0bFGGCAOAPGPA\x18\x02\x20\x01(\tR\x0bFGGCAOAPGPA\x12\x18\n\x07retcod\
+    e\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bFGKPIDLKALL\x18\x06\x20\
+    \x01(\rR\x0bFGKPIDLKALL\x12!\n\x0cbusiness_day\x18\x0e\x20\x01(\rR\x0bbu\
+    sinessDay\x120\n\x0bEHIHHFMGNHH\x18\x01\x20\x01(\x0b2\x0c.DMHADFNOIGPH\0\
+    R\x0bEHIHHFMGNHH\x120\n\x0bGAAHAOGLNPJ\x18\x0f\x20\x01(\x0b2\x0c.MOJFFDO\
+    ILBNH\0R\x0bGAAHAOGLNPJB\r\n\x0bFBLHECDEHEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

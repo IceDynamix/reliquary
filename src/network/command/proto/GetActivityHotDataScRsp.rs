@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetActivityHotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     self.content_package_list.push(is.read_message()?);
                 },
                 88 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GetActivityHotDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.content_package_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetActivityHotDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetActivityHotDataScRsp.proto\x1a\x11EFGIHHJGCFA.proto\"s\n\x17Get\
-    ActivityHotDataScRsp\x12>\n\x14content_package_list\x18\n\x20\x03(\x0b2\
-    \x0c.EFGIHHJGCFAR\x12contentPackageList\x12\x18\n\x07retcode\x18\x0b\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    ActivityHotDataScRsp\x12>\n\x14content_package_list\x18\x02\x20\x03(\x0b\
+    2\x0c.EFGIHHJGCFAR\x12contentPackageList\x12\x18\n\x07retcode\x18\x0b\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

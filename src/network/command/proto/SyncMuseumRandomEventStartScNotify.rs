@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncMuseumRandomEventStartScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncMuseumRandomEventStartScNotify.CIKPBGDIABO)
-    pub CIKPBGDIABO: ::protobuf::MessageField<super::FFEEHEBBLCI::FFEEHEBBLCI>,
+    // @@protoc_insertion_point(field:SyncMuseumRandomEventStartScNotify.info)
+    pub info: ::protobuf::MessageField<super::FFEEHEBBLCI::FFEEHEBBLCI>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncMuseumRandomEventStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncMuseumRandomEventStartScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FFEEHEBBLCI::FFEEHEBBLCI>(
-            "CIKPBGDIABO",
-            |m: &SyncMuseumRandomEventStartScNotify| { &m.CIKPBGDIABO },
-            |m: &mut SyncMuseumRandomEventStartScNotify| { &mut m.CIKPBGDIABO },
+            "info",
+            |m: &SyncMuseumRandomEventStartScNotify| { &m.info },
+            |m: &mut SyncMuseumRandomEventStartScNotify| { &mut m.info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncMuseumRandomEventStartScNotify>(
             "SyncMuseumRandomEventStartScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CIKPBGDIABO)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CIKPBGDIABO.as_ref() {
+        if let Some(v) = self.info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CIKPBGDIABO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     }
 
     fn clear(&mut self) {
-        self.CIKPBGDIABO.clear();
+        self.info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncMuseumRandomEventStartScNotify {
         static instance: SyncMuseumRandomEventStartScNotify = SyncMuseumRandomEventStartScNotify {
-            CIKPBGDIABO: ::protobuf::MessageField::none(),
+            info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncMuseumRandomEventStartScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(SyncMuseumRandomEventStartScNotify.proto\x1a\x11FFEEHEBBLCI.proto\"T\
-    \n\"SyncMuseumRandomEventStartScNotify\x12.\n\x0bCIKPBGDIABO\x18\x0b\x20\
-    \x01(\x0b2\x0c.FFEEHEBBLCIR\x0bCIKPBGDIABOb\x06proto3\
+    \n(SyncMuseumRandomEventStartScNotify.proto\x1a\x11FFEEHEBBLCI.proto\"F\
+    \n\"SyncMuseumRandomEventStartScNotify\x12\x20\n\x04info\x18\x07\x20\x01\
+    (\x0b2\x0c.FFEEHEBBLCIR\x04infob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

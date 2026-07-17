@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JDFNPICGCGI {
     // message fields
-    // @@protoc_insertion_point(field:JDFNPICGCGI.JBEBEKECKJN)
-    pub JBEBEKECKJN: ::protobuf::MessageField<super::ODHJEDHKHOD::ODHJEDHKHOD>,
-    // @@protoc_insertion_point(field:JDFNPICGCGI.MLIDKPGKCIL)
-    pub MLIDKPGKCIL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JDFNPICGCGI.FNIPHPIEBNB)
-    pub FNIPHPIEBNB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JDFNPICGCGI.KEGHPOHGPFF)
     pub KEGHPOHGPFF: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:JDFNPICGCGI.OIMCPHNONPF)
-    pub OIMCPHNONPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JDFNPICGCGI.MLIDKPGKCIL)
+    pub MLIDKPGKCIL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JDFNPICGCGI.GJFPEFCOBFJ)
     pub GJFPEFCOBFJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JDFNPICGCGI.LIFJCJKNKNJ)
     pub LIFJCJKNKNJ: u32,
-    // @@protoc_insertion_point(field:JDFNPICGCGI.FAHAMJFPMMI)
-    pub FAHAMJFPMMI: u32,
+    // @@protoc_insertion_point(field:JDFNPICGCGI.JBEBEKECKJN)
+    pub JBEBEKECKJN: ::protobuf::MessageField<super::ODHJEDHKHOD::ODHJEDHKHOD>,
     // @@protoc_insertion_point(field:JDFNPICGCGI.PLJNPPKFFCO)
     pub PLJNPPKFFCO: bool,
+    // @@protoc_insertion_point(field:JDFNPICGCGI.OIMCPHNONPF)
+    pub OIMCPHNONPF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JDFNPICGCGI.FNIPHPIEBNB)
+    pub FNIPHPIEBNB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JDFNPICGCGI.FAHAMJFPMMI)
+    pub FAHAMJFPMMI: u32,
     // @@protoc_insertion_point(field:JDFNPICGCGI.KLGGHNILHIC)
     pub KLGGHNILHIC: bool,
     // special fields
@@ -67,30 +67,15 @@ impl JDFNPICGCGI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODHJEDHKHOD::ODHJEDHKHOD>(
-            "JBEBEKECKJN",
-            |m: &JDFNPICGCGI| { &m.JBEBEKECKJN },
-            |m: &mut JDFNPICGCGI| { &mut m.JBEBEKECKJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MLIDKPGKCIL",
-            |m: &JDFNPICGCGI| { &m.MLIDKPGKCIL },
-            |m: &mut JDFNPICGCGI| { &mut m.MLIDKPGKCIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FNIPHPIEBNB",
-            |m: &JDFNPICGCGI| { &m.FNIPHPIEBNB },
-            |m: &mut JDFNPICGCGI| { &mut m.FNIPHPIEBNB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "KEGHPOHGPFF",
             |m: &JDFNPICGCGI| { &m.KEGHPOHGPFF },
             |m: &mut JDFNPICGCGI| { &mut m.KEGHPOHGPFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OIMCPHNONPF",
-            |m: &JDFNPICGCGI| { &m.OIMCPHNONPF },
-            |m: &mut JDFNPICGCGI| { &mut m.OIMCPHNONPF },
+            "MLIDKPGKCIL",
+            |m: &JDFNPICGCGI| { &m.MLIDKPGKCIL },
+            |m: &mut JDFNPICGCGI| { &mut m.MLIDKPGKCIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GJFPEFCOBFJ",
@@ -102,15 +87,30 @@ impl JDFNPICGCGI {
             |m: &JDFNPICGCGI| { &m.LIFJCJKNKNJ },
             |m: &mut JDFNPICGCGI| { &mut m.LIFJCJKNKNJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAHAMJFPMMI",
-            |m: &JDFNPICGCGI| { &m.FAHAMJFPMMI },
-            |m: &mut JDFNPICGCGI| { &mut m.FAHAMJFPMMI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODHJEDHKHOD::ODHJEDHKHOD>(
+            "JBEBEKECKJN",
+            |m: &JDFNPICGCGI| { &m.JBEBEKECKJN },
+            |m: &mut JDFNPICGCGI| { &mut m.JBEBEKECKJN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLJNPPKFFCO",
             |m: &JDFNPICGCGI| { &m.PLJNPPKFFCO },
             |m: &mut JDFNPICGCGI| { &mut m.PLJNPPKFFCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OIMCPHNONPF",
+            |m: &JDFNPICGCGI| { &m.OIMCPHNONPF },
+            |m: &mut JDFNPICGCGI| { &mut m.OIMCPHNONPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FNIPHPIEBNB",
+            |m: &JDFNPICGCGI| { &m.FNIPHPIEBNB },
+            |m: &mut JDFNPICGCGI| { &mut m.FNIPHPIEBNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FAHAMJFPMMI",
+            |m: &JDFNPICGCGI| { &m.FAHAMJFPMMI },
+            |m: &mut JDFNPICGCGI| { &mut m.FAHAMJFPMMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KLGGHNILHIC",
@@ -135,22 +135,7 @@ impl ::protobuf::Message for JDFNPICGCGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBEBEKECKJN)?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MLIDKPGKCIL)?;
-                },
-                120 => {
-                    self.MLIDKPGKCIL.push(is.read_uint32()?);
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FNIPHPIEBNB)?;
-                },
-                80 => {
-                    self.FNIPHPIEBNB.push(is.read_uint32()?);
-                },
-                42 => {
+                10 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -165,28 +150,43 @@ impl ::protobuf::Message for JDFNPICGCGI {
                     is.pop_limit(old_limit);
                     self.KEGHPOHGPFF.insert(key, value);
                 },
-                74 => {
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MLIDKPGKCIL)?;
+                },
+                16 => {
+                    self.MLIDKPGKCIL.push(is.read_uint32()?);
+                },
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GJFPEFCOBFJ)?;
+                },
+                24 => {
+                    self.GJFPEFCOBFJ.push(is.read_uint32()?);
+                },
+                40 => {
+                    self.LIFJCJKNKNJ = is.read_uint32()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBEBEKECKJN)?;
+                },
+                88 => {
+                    self.PLJNPPKFFCO = is.read_bool()?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.OIMCPHNONPF)?;
                 },
-                72 => {
+                96 => {
                     self.OIMCPHNONPF.push(is.read_uint32()?);
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GJFPEFCOBFJ)?;
+                    is.read_repeated_packed_uint32_into(&mut self.FNIPHPIEBNB)?;
                 },
                 104 => {
-                    self.GJFPEFCOBFJ.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.LIFJCJKNKNJ = is.read_uint32()?;
-                },
-                24 => {
-                    self.FAHAMJFPMMI = is.read_uint32()?;
+                    self.FNIPHPIEBNB.push(is.read_uint32()?);
                 },
                 112 => {
-                    self.PLJNPPKFFCO = is.read_bool()?;
+                    self.FAHAMJFPMMI = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.KLGGHNILHIC = is.read_bool()?;
                 },
                 tag => {
@@ -201,28 +201,28 @@ impl ::protobuf::Message for JDFNPICGCGI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JBEBEKECKJN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.MLIDKPGKCIL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FNIPHPIEBNB);
         for (k, v) in &self.KEGHPOHGPFF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OIMCPHNONPF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.GJFPEFCOBFJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.MLIDKPGKCIL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.GJFPEFCOBFJ);
         if self.LIFJCJKNKNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LIFJCJKNKNJ);
+            my_size += ::protobuf::rt::uint32_size(5, self.LIFJCJKNKNJ);
         }
-        if self.FAHAMJFPMMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FAHAMJFPMMI);
+        if let Some(v) = self.JBEBEKECKJN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.PLJNPPKFFCO != false {
             my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OIMCPHNONPF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FNIPHPIEBNB);
+        if self.FAHAMJFPMMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FAHAMJFPMMI);
         }
         if self.KLGGHNILHIC != false {
             my_size += 1 + 1;
@@ -233,33 +233,33 @@ impl ::protobuf::Message for JDFNPICGCGI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JBEBEKECKJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        os.write_repeated_packed_uint32(15, &self.MLIDKPGKCIL)?;
-        os.write_repeated_packed_uint32(10, &self.FNIPHPIEBNB)?;
         for (k, v) in &self.KEGHPOHGPFF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(9, &self.OIMCPHNONPF)?;
-        os.write_repeated_packed_uint32(13, &self.GJFPEFCOBFJ)?;
+        os.write_repeated_packed_uint32(2, &self.MLIDKPGKCIL)?;
+        os.write_repeated_packed_uint32(3, &self.GJFPEFCOBFJ)?;
         if self.LIFJCJKNKNJ != 0 {
-            os.write_uint32(1, self.LIFJCJKNKNJ)?;
+            os.write_uint32(5, self.LIFJCJKNKNJ)?;
         }
-        if self.FAHAMJFPMMI != 0 {
-            os.write_uint32(3, self.FAHAMJFPMMI)?;
+        if let Some(v) = self.JBEBEKECKJN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.PLJNPPKFFCO != false {
-            os.write_bool(14, self.PLJNPPKFFCO)?;
+            os.write_bool(11, self.PLJNPPKFFCO)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.OIMCPHNONPF)?;
+        os.write_repeated_packed_uint32(13, &self.FNIPHPIEBNB)?;
+        if self.FAHAMJFPMMI != 0 {
+            os.write_uint32(14, self.FAHAMJFPMMI)?;
         }
         if self.KLGGHNILHIC != false {
-            os.write_bool(7, self.KLGGHNILHIC)?;
+            os.write_bool(15, self.KLGGHNILHIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -278,15 +278,15 @@ impl ::protobuf::Message for JDFNPICGCGI {
     }
 
     fn clear(&mut self) {
-        self.JBEBEKECKJN.clear();
-        self.MLIDKPGKCIL.clear();
-        self.FNIPHPIEBNB.clear();
         self.KEGHPOHGPFF.clear();
-        self.OIMCPHNONPF.clear();
+        self.MLIDKPGKCIL.clear();
         self.GJFPEFCOBFJ.clear();
         self.LIFJCJKNKNJ = 0;
-        self.FAHAMJFPMMI = 0;
+        self.JBEBEKECKJN.clear();
         self.PLJNPPKFFCO = false;
+        self.OIMCPHNONPF.clear();
+        self.FNIPHPIEBNB.clear();
+        self.FAHAMJFPMMI = 0;
         self.KLGGHNILHIC = false;
         self.special_fields.clear();
     }
@@ -316,18 +316,18 @@ impl ::protobuf::reflect::ProtobufValue for JDFNPICGCGI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JDFNPICGCGI.proto\x1a\x11ODHJEDHKHOD.proto\"\xce\x03\n\x0bJDFNPICG\
-    CGI\x12.\n\x0bJBEBEKECKJN\x18\x04\x20\x01(\x0b2\x0c.ODHJEDHKHODR\x0bJBEB\
-    EKECKJN\x12\x20\n\x0bMLIDKPGKCIL\x18\x0f\x20\x03(\rR\x0bMLIDKPGKCIL\x12\
-    \x20\n\x0bFNIPHPIEBNB\x18\n\x20\x03(\rR\x0bFNIPHPIEBNB\x12?\n\x0bKEGHPOH\
-    GPFF\x18\x05\x20\x03(\x0b2\x1d.JDFNPICGCGI.KEGHPOHGPFFEntryR\x0bKEGHPOHG\
-    PFF\x12\x20\n\x0bOIMCPHNONPF\x18\t\x20\x03(\rR\x0bOIMCPHNONPF\x12\x20\n\
-    \x0bGJFPEFCOBFJ\x18\r\x20\x03(\rR\x0bGJFPEFCOBFJ\x12\x20\n\x0bLIFJCJKNKN\
-    J\x18\x01\x20\x01(\rR\x0bLIFJCJKNKNJ\x12\x20\n\x0bFAHAMJFPMMI\x18\x03\
-    \x20\x01(\rR\x0bFAHAMJFPMMI\x12\x20\n\x0bPLJNPPKFFCO\x18\x0e\x20\x01(\
-    \x08R\x0bPLJNPPKFFCO\x12\x20\n\x0bKLGGHNILHIC\x18\x07\x20\x01(\x08R\x0bK\
-    LGGHNILHIC\x1a>\n\x10KEGHPOHGPFFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\
-    \rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\
-    \x06proto3\
+    CGI\x12?\n\x0bKEGHPOHGPFF\x18\x01\x20\x03(\x0b2\x1d.JDFNPICGCGI.KEGHPOHG\
+    PFFEntryR\x0bKEGHPOHGPFF\x12\x20\n\x0bMLIDKPGKCIL\x18\x02\x20\x03(\rR\
+    \x0bMLIDKPGKCIL\x12\x20\n\x0bGJFPEFCOBFJ\x18\x03\x20\x03(\rR\x0bGJFPEFCO\
+    BFJ\x12\x20\n\x0bLIFJCJKNKNJ\x18\x05\x20\x01(\rR\x0bLIFJCJKNKNJ\x12.\n\
+    \x0bJBEBEKECKJN\x18\x08\x20\x01(\x0b2\x0c.ODHJEDHKHODR\x0bJBEBEKECKJN\
+    \x12\x20\n\x0bPLJNPPKFFCO\x18\x0b\x20\x01(\x08R\x0bPLJNPPKFFCO\x12\x20\n\
+    \x0bOIMCPHNONPF\x18\x0c\x20\x03(\rR\x0bOIMCPHNONPF\x12\x20\n\x0bFNIPHPIE\
+    BNB\x18\r\x20\x03(\rR\x0bFNIPHPIEBNB\x12\x20\n\x0bFAHAMJFPMMI\x18\x0e\
+    \x20\x01(\rR\x0bFAHAMJFPMMI\x12\x20\n\x0bKLGGHNILHIC\x18\x0f\x20\x01(\
+    \x08R\x0bKLGGHNILHIC\x1a>\n\x10KEGHPOHGPFFEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
+    8\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

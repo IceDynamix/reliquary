@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FCCDKHNGIPH {
     // message fields
-    // @@protoc_insertion_point(field:FCCDKHNGIPH.DHIOHIOPCGP)
-    pub DHIOHIOPCGP: ::std::vec::Vec<super::BAEFMEJJIBI::BAEFMEJJIBI>,
-    // @@protoc_insertion_point(field:FCCDKHNGIPH.FJPJFHPNKBH)
-    pub FJPJFHPNKBH: u32,
     // @@protoc_insertion_point(field:FCCDKHNGIPH.MLDLNLGBMHN)
     pub MLDLNLGBMHN: u32,
-    // @@protoc_insertion_point(field:FCCDKHNGIPH.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:FCCDKHNGIPH.PELHCNILCBP)
-    pub PELHCNILCBP: u32,
     // @@protoc_insertion_point(field:FCCDKHNGIPH.area_id)
     pub area_id: u32,
+    // @@protoc_insertion_point(field:FCCDKHNGIPH.FJPJFHPNKBH)
+    pub FJPJFHPNKBH: u32,
+    // @@protoc_insertion_point(field:FCCDKHNGIPH.PELHCNILCBP)
+    pub PELHCNILCBP: u32,
+    // @@protoc_insertion_point(field:FCCDKHNGIPH.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:FCCDKHNGIPH.DHIOHIOPCGP)
+    pub DHIOHIOPCGP: ::std::vec::Vec<super::BAEFMEJJIBI::BAEFMEJJIBI>,
     // special fields
     // @@protoc_insertion_point(special_field:FCCDKHNGIPH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,15 @@ impl FCCDKHNGIPH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHIOHIOPCGP",
-            |m: &FCCDKHNGIPH| { &m.DHIOHIOPCGP },
-            |m: &mut FCCDKHNGIPH| { &mut m.DHIOHIOPCGP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLDLNLGBMHN",
+            |m: &FCCDKHNGIPH| { &m.MLDLNLGBMHN },
+            |m: &mut FCCDKHNGIPH| { &mut m.MLDLNLGBMHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &FCCDKHNGIPH| { &m.area_id },
+            |m: &mut FCCDKHNGIPH| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FJPJFHPNKBH",
@@ -70,24 +75,19 @@ impl FCCDKHNGIPH {
             |m: &mut FCCDKHNGIPH| { &mut m.FJPJFHPNKBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLDLNLGBMHN",
-            |m: &FCCDKHNGIPH| { &m.MLDLNLGBMHN },
-            |m: &mut FCCDKHNGIPH| { &mut m.MLDLNLGBMHN },
+            "PELHCNILCBP",
+            |m: &FCCDKHNGIPH| { &m.PELHCNILCBP },
+            |m: &mut FCCDKHNGIPH| { &mut m.PELHCNILCBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &FCCDKHNGIPH| { &m.level },
             |m: &mut FCCDKHNGIPH| { &mut m.level },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PELHCNILCBP",
-            |m: &FCCDKHNGIPH| { &m.PELHCNILCBP },
-            |m: &mut FCCDKHNGIPH| { &mut m.PELHCNILCBP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &FCCDKHNGIPH| { &m.area_id },
-            |m: &mut FCCDKHNGIPH| { &mut m.area_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DHIOHIOPCGP",
+            |m: &FCCDKHNGIPH| { &m.DHIOHIOPCGP },
+            |m: &mut FCCDKHNGIPH| { &mut m.DHIOHIOPCGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FCCDKHNGIPH>(
             "FCCDKHNGIPH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for FCCDKHNGIPH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.DHIOHIOPCGP.push(is.read_message()?);
-                },
-                104 => {
-                    self.FJPJFHPNKBH = is.read_uint32()?;
-                },
-                120 => {
+                8 => {
                     self.MLDLNLGBMHN = is.read_uint32()?;
                 },
-                88 => {
-                    self.level = is.read_uint32()?;
+                24 => {
+                    self.area_id = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
+                    self.FJPJFHPNKBH = is.read_uint32()?;
+                },
+                40 => {
                     self.PELHCNILCBP = is.read_uint32()?;
                 },
-                80 => {
-                    self.area_id = is.read_uint32()?;
+                104 => {
+                    self.level = is.read_uint32()?;
+                },
+                114 => {
+                    self.DHIOHIOPCGP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,49 +137,49 @@ impl ::protobuf::Message for FCCDKHNGIPH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MLDLNLGBMHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MLDLNLGBMHN);
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.area_id);
+        }
+        if self.FJPJFHPNKBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FJPJFHPNKBH);
+        }
+        if self.PELHCNILCBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PELHCNILCBP);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
         for value in &self.DHIOHIOPCGP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FJPJFHPNKBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FJPJFHPNKBH);
-        }
-        if self.MLDLNLGBMHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.MLDLNLGBMHN);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
-        }
-        if self.PELHCNILCBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PELHCNILCBP);
-        }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.area_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DHIOHIOPCGP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if self.FJPJFHPNKBH != 0 {
-            os.write_uint32(13, self.FJPJFHPNKBH)?;
-        }
         if self.MLDLNLGBMHN != 0 {
-            os.write_uint32(15, self.MLDLNLGBMHN)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(11, self.level)?;
-        }
-        if self.PELHCNILCBP != 0 {
-            os.write_uint32(8, self.PELHCNILCBP)?;
+            os.write_uint32(1, self.MLDLNLGBMHN)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(10, self.area_id)?;
+            os.write_uint32(3, self.area_id)?;
         }
+        if self.FJPJFHPNKBH != 0 {
+            os.write_uint32(4, self.FJPJFHPNKBH)?;
+        }
+        if self.PELHCNILCBP != 0 {
+            os.write_uint32(5, self.PELHCNILCBP)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
+        }
+        for v in &self.DHIOHIOPCGP {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +197,23 @@ impl ::protobuf::Message for FCCDKHNGIPH {
     }
 
     fn clear(&mut self) {
-        self.DHIOHIOPCGP.clear();
-        self.FJPJFHPNKBH = 0;
         self.MLDLNLGBMHN = 0;
-        self.level = 0;
-        self.PELHCNILCBP = 0;
         self.area_id = 0;
+        self.FJPJFHPNKBH = 0;
+        self.PELHCNILCBP = 0;
+        self.level = 0;
+        self.DHIOHIOPCGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FCCDKHNGIPH {
         static instance: FCCDKHNGIPH = FCCDKHNGIPH {
-            DHIOHIOPCGP: ::std::vec::Vec::new(),
-            FJPJFHPNKBH: 0,
             MLDLNLGBMHN: 0,
-            level: 0,
-            PELHCNILCBP: 0,
             area_id: 0,
+            FJPJFHPNKBH: 0,
+            PELHCNILCBP: 0,
+            level: 0,
+            DHIOHIOPCGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for FCCDKHNGIPH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FCCDKHNGIPH.proto\x1a\x11BAEFMEJJIBI.proto\"\xd2\x01\n\x0bFCCDKHNG\
-    IPH\x12.\n\x0bDHIOHIOPCGP\x18\t\x20\x03(\x0b2\x0c.BAEFMEJJIBIR\x0bDHIOHI\
-    OPCGP\x12\x20\n\x0bFJPJFHPNKBH\x18\r\x20\x01(\rR\x0bFJPJFHPNKBH\x12\x20\
-    \n\x0bMLDLNLGBMHN\x18\x0f\x20\x01(\rR\x0bMLDLNLGBMHN\x12\x14\n\x05level\
-    \x18\x0b\x20\x01(\rR\x05level\x12\x20\n\x0bPELHCNILCBP\x18\x08\x20\x01(\
-    \rR\x0bPELHCNILCBP\x12\x17\n\x07area_id\x18\n\x20\x01(\rR\x06areaIdb\x06\
-    proto3\
+    IPH\x12\x20\n\x0bMLDLNLGBMHN\x18\x01\x20\x01(\rR\x0bMLDLNLGBMHN\x12\x17\
+    \n\x07area_id\x18\x03\x20\x01(\rR\x06areaId\x12\x20\n\x0bFJPJFHPNKBH\x18\
+    \x04\x20\x01(\rR\x0bFJPJFHPNKBH\x12\x20\n\x0bPELHCNILCBP\x18\x05\x20\x01\
+    (\rR\x0bPELHCNILCBP\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12.\n\
+    \x0bDHIOHIOPCGP\x18\x0e\x20\x03(\x0b2\x0c.BAEFMEJJIBIR\x0bDHIOHIOPCGPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

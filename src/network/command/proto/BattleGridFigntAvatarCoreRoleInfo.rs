@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleGridFigntAvatarCoreRoleInfo {
     // message fields
-    // @@protoc_insertion_point(field:BattleGridFigntAvatarCoreRoleInfo.LKNGKJCFFBH)
-    pub LKNGKJCFFBH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BattleGridFigntAvatarCoreRoleInfo.grid_fight_avatar_list)
     pub grid_fight_avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFigntAvatarCoreRoleInfo.LKNGKJCFFBH)
+    pub LKNGKJCFFBH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleGridFigntAvatarCoreRoleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BattleGridFigntAvatarCoreRoleInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LKNGKJCFFBH",
-            |m: &BattleGridFigntAvatarCoreRoleInfo| { &m.LKNGKJCFFBH },
-            |m: &mut BattleGridFigntAvatarCoreRoleInfo| { &mut m.LKNGKJCFFBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_avatar_list",
             |m: &BattleGridFigntAvatarCoreRoleInfo| { &m.grid_fight_avatar_list },
             |m: &mut BattleGridFigntAvatarCoreRoleInfo| { &mut m.grid_fight_avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LKNGKJCFFBH",
+            |m: &BattleGridFigntAvatarCoreRoleInfo| { &m.LKNGKJCFFBH },
+            |m: &mut BattleGridFigntAvatarCoreRoleInfo| { &mut m.LKNGKJCFFBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleGridFigntAvatarCoreRoleInfo>(
             "BattleGridFigntAvatarCoreRoleInfo",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for BattleGridFigntAvatarCoreRoleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LKNGKJCFFBH)?;
-                },
-                16 => {
-                    self.LKNGKJCFFBH.push(is.read_uint32()?);
-                },
                 10 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_avatar_list)?;
                 },
                 8 => {
                     self.grid_fight_avatar_list.push(is.read_uint32()?);
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LKNGKJCFFBH)?;
+                },
+                16 => {
+                    self.LKNGKJCFFBH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for BattleGridFigntAvatarCoreRoleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LKNGKJCFFBH);
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.grid_fight_avatar_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LKNGKJCFFBH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.LKNGKJCFFBH)?;
         os.write_repeated_packed_uint32(1, &self.grid_fight_avatar_list)?;
+        os.write_repeated_packed_uint32(2, &self.LKNGKJCFFBH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for BattleGridFigntAvatarCoreRoleInfo {
     }
 
     fn clear(&mut self) {
-        self.LKNGKJCFFBH.clear();
         self.grid_fight_avatar_list.clear();
+        self.LKNGKJCFFBH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleGridFigntAvatarCoreRoleInfo {
         static instance: BattleGridFigntAvatarCoreRoleInfo = BattleGridFigntAvatarCoreRoleInfo {
-            LKNGKJCFFBH: ::std::vec::Vec::new(),
             grid_fight_avatar_list: ::std::vec::Vec::new(),
+            LKNGKJCFFBH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for BattleGridFigntAvatarCoreRoleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'BattleGridFigntAvatarCoreRoleInfo.proto\"z\n!BattleGridFigntAvatarCor\
-    eRoleInfo\x12\x20\n\x0bLKNGKJCFFBH\x18\x02\x20\x03(\rR\x0bLKNGKJCFFBH\
-    \x123\n\x16grid_fight_avatar_list\x18\x01\x20\x03(\rR\x13gridFightAvatar\
-    Listb\x06proto3\
+    eRoleInfo\x123\n\x16grid_fight_avatar_list\x18\x01\x20\x03(\rR\x13gridFi\
+    ghtAvatarList\x12\x20\n\x0bLKNGKJCFFBH\x18\x02\x20\x03(\rR\x0bLKNGKJCFFB\
+    Hb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

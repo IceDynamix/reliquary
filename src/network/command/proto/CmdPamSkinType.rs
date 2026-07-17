@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPamSkinType {
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_NLCDGIPGFDJ)
     LIKMDKALNNI_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_JBGKHBDHFDD)
-    LIKMDKALNNI_JBGKHBDHFDD = 8126,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_NJMBOIMIKOD)
-    LIKMDKALNNI_NJMBOIMIKOD = 8136,
-    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_ACDGHHDMCAL)
-    LIKMDKALNNI_ACDGHHDMCAL = 8140,
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_BEGEEPLAAPL)
     LIKMDKALNNI_BEGEEPLAAPL = 8122,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_NJMBOIMIKOD)
+    LIKMDKALNNI_NJMBOIMIKOD = 8123,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_JBGKHBDHFDD)
+    LIKMDKALNNI_JBGKHBDHFDD = 8128,
+    // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_ACDGHHDMCAL)
+    LIKMDKALNNI_ACDGHHDMCAL = 8132,
     // @@protoc_insertion_point(enum_value:CmdPamSkinType.LIKMDKALNNI_ADPIFEFKCAD)
     LIKMDKALNNI_ADPIFEFKCAD = 8138,
 }
@@ -51,10 +51,10 @@ impl ::protobuf::Enum for CmdPamSkinType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPamSkinType> {
         match value {
             0 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NLCDGIPGFDJ),
-            8126 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD),
-            8136 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD),
-            8140 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL),
             8122 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_BEGEEPLAAPL),
+            8123 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD),
+            8128 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD),
+            8132 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL),
             8138 => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ADPIFEFKCAD),
             _ => ::std::option::Option::None
         }
@@ -63,10 +63,10 @@ impl ::protobuf::Enum for CmdPamSkinType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPamSkinType> {
         match str {
             "LIKMDKALNNI_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NLCDGIPGFDJ),
-            "LIKMDKALNNI_JBGKHBDHFDD" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD),
-            "LIKMDKALNNI_NJMBOIMIKOD" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD),
-            "LIKMDKALNNI_ACDGHHDMCAL" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL),
             "LIKMDKALNNI_BEGEEPLAAPL" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_BEGEEPLAAPL),
+            "LIKMDKALNNI_NJMBOIMIKOD" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD),
+            "LIKMDKALNNI_JBGKHBDHFDD" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD),
+            "LIKMDKALNNI_ACDGHHDMCAL" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL),
             "LIKMDKALNNI_ADPIFEFKCAD" => ::std::option::Option::Some(CmdPamSkinType::LIKMDKALNNI_ADPIFEFKCAD),
             _ => ::std::option::Option::None
         }
@@ -74,10 +74,10 @@ impl ::protobuf::Enum for CmdPamSkinType {
 
     const VALUES: &'static [CmdPamSkinType] = &[
         CmdPamSkinType::LIKMDKALNNI_NLCDGIPGFDJ,
-        CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD,
-        CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD,
-        CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL,
         CmdPamSkinType::LIKMDKALNNI_BEGEEPLAAPL,
+        CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD,
+        CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD,
+        CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL,
         CmdPamSkinType::LIKMDKALNNI_ADPIFEFKCAD,
     ];
 }
@@ -91,10 +91,10 @@ impl ::protobuf::EnumFull for CmdPamSkinType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPamSkinType::LIKMDKALNNI_NLCDGIPGFDJ => 0,
-            CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD => 1,
+            CmdPamSkinType::LIKMDKALNNI_BEGEEPLAAPL => 1,
             CmdPamSkinType::LIKMDKALNNI_NJMBOIMIKOD => 2,
-            CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL => 3,
-            CmdPamSkinType::LIKMDKALNNI_BEGEEPLAAPL => 4,
+            CmdPamSkinType::LIKMDKALNNI_JBGKHBDHFDD => 3,
+            CmdPamSkinType::LIKMDKALNNI_ACDGHHDMCAL => 4,
             CmdPamSkinType::LIKMDKALNNI_ADPIFEFKCAD => 5,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -115,9 +115,9 @@ impl CmdPamSkinType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdPamSkinType.proto*\xc3\x01\n\x0eCmdPamSkinType\x12\x1b\n\x17LIK\
-    MDKALNNI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIKMDKALNNI_JBGKHBDHFDD\x10\xbe?\
-    \x12\x1c\n\x17LIKMDKALNNI_NJMBOIMIKOD\x10\xc8?\x12\x1c\n\x17LIKMDKALNNI_\
-    ACDGHHDMCAL\x10\xcc?\x12\x1c\n\x17LIKMDKALNNI_BEGEEPLAAPL\x10\xba?\x12\
+    MDKALNNI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIKMDKALNNI_BEGEEPLAAPL\x10\xba?\
+    \x12\x1c\n\x17LIKMDKALNNI_NJMBOIMIKOD\x10\xbb?\x12\x1c\n\x17LIKMDKALNNI_\
+    JBGKHBDHFDD\x10\xc0?\x12\x1c\n\x17LIKMDKALNNI_ACDGHHDMCAL\x10\xc4?\x12\
     \x1c\n\x17LIKMDKALNNI_ADPIFEFKCAD\x10\xca?b\x06proto3\
 ";
 

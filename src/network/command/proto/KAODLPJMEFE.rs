@@ -30,24 +30,24 @@ pub struct KAODLPJMEFE {
     // message fields
     // @@protoc_insertion_point(field:KAODLPJMEFE.head_frame_info)
     pub head_frame_info: ::protobuf::MessageField<super::HeadFrameInfo::HeadFrameInfo>,
-    // @@protoc_insertion_point(field:KAODLPJMEFE.DJONELMIFEE)
-    pub DJONELMIFEE: ::std::string::String,
+    // @@protoc_insertion_point(field:KAODLPJMEFE.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:KAODLPJMEFE.nickname)
     pub nickname: ::std::string::String,
     // @@protoc_insertion_point(field:KAODLPJMEFE.remark_name)
     pub remark_name: ::std::string::String,
-    // @@protoc_insertion_point(field:KAODLPJMEFE.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:KAODLPJMEFE.head_icon)
-    pub head_icon: u32,
-    // @@protoc_insertion_point(field:KAODLPJMEFE.DCOFPHDKNIJ)
-    pub DCOFPHDKNIJ: u32,
-    // @@protoc_insertion_point(field:KAODLPJMEFE.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:KAODLPJMEFE.platform)
     pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
+    // @@protoc_insertion_point(field:KAODLPJMEFE.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:KAODLPJMEFE.DJONELMIFEE)
+    pub DJONELMIFEE: ::std::string::String,
+    // @@protoc_insertion_point(field:KAODLPJMEFE.head_icon)
+    pub head_icon: u32,
     // @@protoc_insertion_point(field:KAODLPJMEFE.MIDBIPHKLJO)
     pub MIDBIPHKLJO: u32,
+    // @@protoc_insertion_point(field:KAODLPJMEFE.DCOFPHDKNIJ)
+    pub DCOFPHDKNIJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KAODLPJMEFE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,9 +73,9 @@ impl KAODLPJMEFE {
             |m: &mut KAODLPJMEFE| { &mut m.head_frame_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJONELMIFEE",
-            |m: &KAODLPJMEFE| { &m.DJONELMIFEE },
-            |m: &mut KAODLPJMEFE| { &mut m.DJONELMIFEE },
+            "uid",
+            |m: &KAODLPJMEFE| { &m.uid },
+            |m: &mut KAODLPJMEFE| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "nickname",
@@ -88,19 +88,9 @@ impl KAODLPJMEFE {
             |m: &mut KAODLPJMEFE| { &mut m.remark_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &KAODLPJMEFE| { &m.uid },
-            |m: &mut KAODLPJMEFE| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "head_icon",
-            |m: &KAODLPJMEFE| { &m.head_icon },
-            |m: &mut KAODLPJMEFE| { &mut m.head_icon },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCOFPHDKNIJ",
-            |m: &KAODLPJMEFE| { &m.DCOFPHDKNIJ },
-            |m: &mut KAODLPJMEFE| { &mut m.DCOFPHDKNIJ },
+            "platform",
+            |m: &KAODLPJMEFE| { &m.platform },
+            |m: &mut KAODLPJMEFE| { &mut m.platform },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -108,14 +98,24 @@ impl KAODLPJMEFE {
             |m: &mut KAODLPJMEFE| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &KAODLPJMEFE| { &m.platform },
-            |m: &mut KAODLPJMEFE| { &mut m.platform },
+            "DJONELMIFEE",
+            |m: &KAODLPJMEFE| { &m.DJONELMIFEE },
+            |m: &mut KAODLPJMEFE| { &mut m.DJONELMIFEE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "head_icon",
+            |m: &KAODLPJMEFE| { &m.head_icon },
+            |m: &mut KAODLPJMEFE| { &mut m.head_icon },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MIDBIPHKLJO",
             |m: &KAODLPJMEFE| { &m.MIDBIPHKLJO },
             |m: &mut KAODLPJMEFE| { &mut m.MIDBIPHKLJO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DCOFPHDKNIJ",
+            |m: &KAODLPJMEFE| { &m.DCOFPHDKNIJ },
+            |m: &mut KAODLPJMEFE| { &mut m.DCOFPHDKNIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KAODLPJMEFE>(
             "KAODLPJMEFE",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for KAODLPJMEFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.head_frame_info)?;
                 },
-                42 => {
-                    self.DJONELMIFEE = is.read_string()?;
-                },
-                106 => {
-                    self.nickname = is.read_string()?;
-                },
-                114 => {
-                    self.remark_name = is.read_string()?;
-                },
-                96 => {
+                24 => {
                     self.uid = is.read_uint32()?;
                 },
-                56 => {
-                    self.head_icon = is.read_uint32()?;
+                34 => {
+                    self.nickname = is.read_string()?;
                 },
-                8 => {
-                    self.DCOFPHDKNIJ = is.read_uint32()?;
+                42 => {
+                    self.remark_name = is.read_string()?;
                 },
                 48 => {
-                    self.level = is.read_uint32()?;
-                },
-                80 => {
                     self.platform = is.read_enum_or_unknown()?;
                 },
-                16 => {
+                64 => {
+                    self.level = is.read_uint32()?;
+                },
+                98 => {
+                    self.DJONELMIFEE = is.read_string()?;
+                },
+                104 => {
+                    self.head_icon = is.read_uint32()?;
+                },
+                112 => {
                     self.MIDBIPHKLJO = is.read_uint32()?;
+                },
+                120 => {
+                    self.DCOFPHDKNIJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -181,32 +181,32 @@ impl ::protobuf::Message for KAODLPJMEFE {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.DJONELMIFEE.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.DJONELMIFEE);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.uid);
         }
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.nickname);
+            my_size += ::protobuf::rt::string_size(4, &self.nickname);
         }
         if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.remark_name);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.uid);
-        }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.head_icon);
-        }
-        if self.DCOFPHDKNIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DCOFPHDKNIJ);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
+            my_size += ::protobuf::rt::string_size(5, &self.remark_name);
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(10, self.platform.value());
+            my_size += ::protobuf::rt::int32_size(6, self.platform.value());
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if !self.DJONELMIFEE.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.DJONELMIFEE);
+        }
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.head_icon);
         }
         if self.MIDBIPHKLJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MIDBIPHKLJO);
+            my_size += ::protobuf::rt::uint32_size(14, self.MIDBIPHKLJO);
+        }
+        if self.DCOFPHDKNIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DCOFPHDKNIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -215,34 +215,34 @@ impl ::protobuf::Message for KAODLPJMEFE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.head_frame_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if !self.DJONELMIFEE.is_empty() {
-            os.write_string(5, &self.DJONELMIFEE)?;
-        }
-        if !self.nickname.is_empty() {
-            os.write_string(13, &self.nickname)?;
-        }
-        if !self.remark_name.is_empty() {
-            os.write_string(14, &self.remark_name)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.uid != 0 {
-            os.write_uint32(12, self.uid)?;
+            os.write_uint32(3, self.uid)?;
         }
-        if self.head_icon != 0 {
-            os.write_uint32(7, self.head_icon)?;
+        if !self.nickname.is_empty() {
+            os.write_string(4, &self.nickname)?;
         }
-        if self.DCOFPHDKNIJ != 0 {
-            os.write_uint32(1, self.DCOFPHDKNIJ)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(6, self.level)?;
+        if !self.remark_name.is_empty() {
+            os.write_string(5, &self.remark_name)?;
         }
         if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
+        if self.level != 0 {
+            os.write_uint32(8, self.level)?;
+        }
+        if !self.DJONELMIFEE.is_empty() {
+            os.write_string(12, &self.DJONELMIFEE)?;
+        }
+        if self.head_icon != 0 {
+            os.write_uint32(13, self.head_icon)?;
         }
         if self.MIDBIPHKLJO != 0 {
-            os.write_uint32(2, self.MIDBIPHKLJO)?;
+            os.write_uint32(14, self.MIDBIPHKLJO)?;
+        }
+        if self.DCOFPHDKNIJ != 0 {
+            os.write_uint32(15, self.DCOFPHDKNIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,30 +262,30 @@ impl ::protobuf::Message for KAODLPJMEFE {
 
     fn clear(&mut self) {
         self.head_frame_info.clear();
-        self.DJONELMIFEE.clear();
+        self.uid = 0;
         self.nickname.clear();
         self.remark_name.clear();
-        self.uid = 0;
-        self.head_icon = 0;
-        self.DCOFPHDKNIJ = 0;
-        self.level = 0;
         self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
+        self.level = 0;
+        self.DJONELMIFEE.clear();
+        self.head_icon = 0;
         self.MIDBIPHKLJO = 0;
+        self.DCOFPHDKNIJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAODLPJMEFE {
         static instance: KAODLPJMEFE = KAODLPJMEFE {
             head_frame_info: ::protobuf::MessageField::none(),
-            DJONELMIFEE: ::std::string::String::new(),
+            uid: 0,
             nickname: ::std::string::String::new(),
             remark_name: ::std::string::String::new(),
-            uid: 0,
-            head_icon: 0,
-            DCOFPHDKNIJ: 0,
-            level: 0,
             platform: ::protobuf::EnumOrUnknown::from_i32(0),
+            level: 0,
+            DJONELMIFEE: ::std::string::String::new(),
+            head_icon: 0,
             MIDBIPHKLJO: 0,
+            DCOFPHDKNIJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -311,15 +311,15 @@ impl ::protobuf::reflect::ProtobufValue for KAODLPJMEFE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KAODLPJMEFE.proto\x1a\x13HeadFrameInfo.proto\x1a\x12PlatformType.p\
-    roto\"\xd8\x02\n\x0bKAODLPJMEFE\x126\n\x0fhead_frame_info\x18\x08\x20\
-    \x01(\x0b2\x0e.HeadFrameInfoR\rheadFrameInfo\x12\x20\n\x0bDJONELMIFEE\
-    \x18\x05\x20\x01(\tR\x0bDJONELMIFEE\x12\x1a\n\x08nickname\x18\r\x20\x01(\
-    \tR\x08nickname\x12\x1f\n\x0bremark_name\x18\x0e\x20\x01(\tR\nremarkName\
-    \x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\x03uid\x12\x1b\n\thead_icon\x18\
-    \x07\x20\x01(\rR\x08headIcon\x12\x20\n\x0bDCOFPHDKNIJ\x18\x01\x20\x01(\r\
-    R\x0bDCOFPHDKNIJ\x12\x14\n\x05level\x18\x06\x20\x01(\rR\x05level\x12)\n\
-    \x08platform\x18\n\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x20\n\
-    \x0bMIDBIPHKLJO\x18\x02\x20\x01(\rR\x0bMIDBIPHKLJOb\x06proto3\
+    roto\"\xd8\x02\n\x0bKAODLPJMEFE\x126\n\x0fhead_frame_info\x18\x02\x20\
+    \x01(\x0b2\x0e.HeadFrameInfoR\rheadFrameInfo\x12\x10\n\x03uid\x18\x03\
+    \x20\x01(\rR\x03uid\x12\x1a\n\x08nickname\x18\x04\x20\x01(\tR\x08nicknam\
+    e\x12\x1f\n\x0bremark_name\x18\x05\x20\x01(\tR\nremarkName\x12)\n\x08pla\
+    tform\x18\x06\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x14\n\x05lev\
+    el\x18\x08\x20\x01(\rR\x05level\x12\x20\n\x0bDJONELMIFEE\x18\x0c\x20\x01\
+    (\tR\x0bDJONELMIFEE\x12\x1b\n\thead_icon\x18\r\x20\x01(\rR\x08headIcon\
+    \x12\x20\n\x0bMIDBIPHKLJO\x18\x0e\x20\x01(\rR\x0bMIDBIPHKLJO\x12\x20\n\
+    \x0bDCOFPHDKNIJ\x18\x0f\x20\x01(\rR\x0bDCOFPHDKNIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

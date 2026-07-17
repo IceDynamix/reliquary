@@ -29,176 +29,162 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSceneType {
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NLCDGIPGFDJ)
     JHDCKJGDKBE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BJHGGELHMHJ)
-    JHDCKJGDKBE_BJHGGELHMHJ = 1408,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GBKHPDLKJFF)
-    JHDCKJGDKBE_GBKHPDLKJFF = 1474,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FNMLKBAJKIA)
-    JHDCKJGDKBE_FNMLKBAJKIA = 1401,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JIAEHCICDLJ)
-    JHDCKJGDKBE_JIAEHCICDLJ = 1471,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HOANLDEAKGM)
-    JHDCKJGDKBE_HOANLDEAKGM = 1425,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EKHDGCAKMCK)
-    JHDCKJGDKBE_EKHDGCAKMCK = 1483,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JPCEKLHLGEJ)
-    JHDCKJGDKBE_JPCEKLHLGEJ = 1486,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CCGMMIDKLDB)
-    JHDCKJGDKBE_CCGMMIDKLDB = 1452,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NKONHNEADDP)
-    JHDCKJGDKBE_NKONHNEADDP = 1465,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EPDGPIEDFFF)
-    JHDCKJGDKBE_EPDGPIEDFFF = 1404,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LBHAOMOKKLA)
-    JHDCKJGDKBE_LBHAOMOKKLA = 1430,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ONNJOPGHBBC)
-    JHDCKJGDKBE_ONNJOPGHBBC = 1495,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AEMFLMKKCHM)
-    JHDCKJGDKBE_AEMFLMKKCHM = 1485,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FNOJDGAFLMA)
-    JHDCKJGDKBE_FNOJDGAFLMA = 1403,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DINHGFMGDGP)
-    JHDCKJGDKBE_DINHGFMGDGP = 1407,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JNENFBNOCCD)
-    JHDCKJGDKBE_JNENFBNOCCD = 1423,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FCCELHODNJJ)
-    JHDCKJGDKBE_FCCELHODNJJ = 1422,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BIELKBIFBNP)
-    JHDCKJGDKBE_BIELKBIFBNP = 1446,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LAIPEFIIEPC)
-    JHDCKJGDKBE_LAIPEFIIEPC = 1415,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PPCCOBMCPCP)
-    JHDCKJGDKBE_PPCCOBMCPCP = 1473,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JKEOBFIMPOG)
-    JHDCKJGDKBE_JKEOBFIMPOG = 1414,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FILKNGPLIHH)
-    JHDCKJGDKBE_FILKNGPLIHH = 1424,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FGBOLPEDCAF)
-    JHDCKJGDKBE_FGBOLPEDCAF = 1416,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FOADFHNFNCA)
-    JHDCKJGDKBE_FOADFHNFNCA = 1467,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PNJEHDAJBGK)
-    JHDCKJGDKBE_PNJEHDAJBGK = 1470,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_IAMNIJOGMGI)
-    JHDCKJGDKBE_IAMNIJOGMGI = 1481,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PDKBDCAOKGG)
-    JHDCKJGDKBE_PDKBDCAOKGG = 1455,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PBHLDKNKIBM)
-    JHDCKJGDKBE_PBHLDKNKIBM = 1406,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NPBFHJHPLEL)
-    JHDCKJGDKBE_NPBFHJHPLEL = 1458,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PHLNPAJMPCN)
-    JHDCKJGDKBE_PHLNPAJMPCN = 1420,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JNJIGOOJHNM)
-    JHDCKJGDKBE_JNJIGOOJHNM = 1450,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CHKENGBFHML)
-    JHDCKJGDKBE_CHKENGBFHML = 1432,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ICIJKHOCDHA)
-    JHDCKJGDKBE_ICIJKHOCDHA = 1492,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DCBHPPJCEJA)
-    JHDCKJGDKBE_DCBHPPJCEJA = 1454,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PEJHGODBHKP)
-    JHDCKJGDKBE_PEJHGODBHKP = 1491,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LLAMDIIPKOL)
-    JHDCKJGDKBE_LLAMDIIPKOL = 1460,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DNLOPMPCJPI)
-    JHDCKJGDKBE_DNLOPMPCJPI = 1461,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NOGMFNHLBEO)
-    JHDCKJGDKBE_NOGMFNHLBEO = 1489,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GCLFALNBAMH)
-    JHDCKJGDKBE_GCLFALNBAMH = 1440,
+    JHDCKJGDKBE_IAMNIJOGMGI = 1447,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HGBJCPDDILE)
-    JHDCKJGDKBE_HGBJCPDDILE = 1413,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NLGHJDKPIEE)
-    JHDCKJGDKBE_NLGHJDKPIEE = 1477,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DJCAMALOJAK)
-    JHDCKJGDKBE_DJCAMALOJAK = 1464,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NGPKANKILHC)
-    JHDCKJGDKBE_NGPKANKILHC = 1405,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AFEOJBGCCIN)
-    JHDCKJGDKBE_AFEOJBGCCIN = 1428,
+    JHDCKJGDKBE_HGBJCPDDILE = 1481,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FCCELHODNJJ)
+    JHDCKJGDKBE_FCCELHODNJJ = 1460,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JKEOBFIMPOG)
+    JHDCKJGDKBE_JKEOBFIMPOG = 1444,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FILKNGPLIHH)
+    JHDCKJGDKBE_FILKNGPLIHH = 1445,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DLDOLADCMOM)
+    JHDCKJGDKBE_DLDOLADCMOM = 1427,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DPDMEMOEDNI)
+    JHDCKJGDKBE_DPDMEMOEDNI = 1458,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DPIOELODIBF)
+    JHDCKJGDKBE_DPIOELODIBF = 1424,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AEMFLMKKCHM)
+    JHDCKJGDKBE_AEMFLMKKCHM = 1463,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AOCCFOOBNFL)
+    JHDCKJGDKBE_AOCCFOOBNFL = 1468,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NOGMFNHLBEO)
+    JHDCKJGDKBE_NOGMFNHLBEO = 1474,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JPCEKLHLGEJ)
+    JHDCKJGDKBE_JPCEKLHLGEJ = 1470,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ECJPIFOIJEA)
+    JHDCKJGDKBE_ECJPIFOIJEA = 1423,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_OGFHILHFDDF)
+    JHDCKJGDKBE_OGFHILHFDDF = 1465,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DAOJKJOPIBG)
+    JHDCKJGDKBE_DAOJKJOPIBG = 1408,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JFEHKBLKEEF)
+    JHDCKJGDKBE_JFEHKBLKEEF = 1432,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HOANLDEAKGM)
+    JHDCKJGDKBE_HOANLDEAKGM = 1477,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CEHOPIIGLEG)
+    JHDCKJGDKBE_CEHOPIIGLEG = 1442,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EGHDEMKNDHB)
+    JHDCKJGDKBE_EGHDEMKNDHB = 1439,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_MMKOHEAIDII)
+    JHDCKJGDKBE_MMKOHEAIDII = 1491,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LLAMDIIPKOL)
+    JHDCKJGDKBE_LLAMDIIPKOL = 1454,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NIBLJJFDDHK)
+    JHDCKJGDKBE_NIBLJJFDDHK = 1479,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JLHJENJMNNE)
+    JHDCKJGDKBE_JLHJENJMNNE = 1497,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NAGLKBBGPNP)
+    JHDCKJGDKBE_NAGLKBBGPNP = 1500,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JCCIOABOKDJ)
+    JHDCKJGDKBE_JCCIOABOKDJ = 1462,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EPDGPIEDFFF)
+    JHDCKJGDKBE_EPDGPIEDFFF = 1456,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DNLOPMPCJPI)
+    JHDCKJGDKBE_DNLOPMPCJPI = 1448,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BJEOKMEGJDD)
+    JHDCKJGDKBE_BJEOKMEGJDD = 1409,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DINHGFMGDGP)
+    JHDCKJGDKBE_DINHGFMGDGP = 1431,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NKONHNEADDP)
+    JHDCKJGDKBE_NKONHNEADDP = 1407,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BDHNAFBAHLM)
+    JHDCKJGDKBE_BDHNAFBAHLM = 1472,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EFMGKNCDPME)
+    JHDCKJGDKBE_EFMGKNCDPME = 1496,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ICIJKHOCDHA)
+    JHDCKJGDKBE_ICIJKHOCDHA = 1484,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_OPHOLBDOAHK)
-    JHDCKJGDKBE_OPHOLBDOAHK = 1429,
+    JHDCKJGDKBE_OPHOLBDOAHK = 1471,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HLJBKBMFNAA)
+    JHDCKJGDKBE_HLJBKBMFNAA = 1401,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NPBFHJHPLEL)
+    JHDCKJGDKBE_NPBFHJHPLEL = 1498,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BIELKBIFBNP)
+    JHDCKJGDKBE_BIELKBIFBNP = 1417,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JIAEHCICDLJ)
+    JHDCKJGDKBE_JIAEHCICDLJ = 1469,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KNOPMBDFGEN)
+    JHDCKJGDKBE_KNOPMBDFGEN = 1450,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AFNPMKCNMMJ)
+    JHDCKJGDKBE_AFNPMKCNMMJ = 1418,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HJBIHOADNGG)
+    JHDCKJGDKBE_HJBIHOADNGG = 1415,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FHFBANPOFPP)
+    JHDCKJGDKBE_FHFBANPOFPP = 1459,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CHKENGBFHML)
+    JHDCKJGDKBE_CHKENGBFHML = 1473,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GBKHPDLKJFF)
+    JHDCKJGDKBE_GBKHPDLKJFF = 1480,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BJHGGELHMHJ)
+    JHDCKJGDKBE_BJHGGELHMHJ = 1464,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DJCAMALOJAK)
+    JHDCKJGDKBE_DJCAMALOJAK = 1490,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NGPKANKILHC)
+    JHDCKJGDKBE_NGPKANKILHC = 1475,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PPCCOBMCPCP)
+    JHDCKJGDKBE_PPCCOBMCPCP = 1425,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PHLNPAJMPCN)
+    JHDCKJGDKBE_PHLNPAJMPCN = 1434,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_MGEPAPPJLLJ)
+    JHDCKJGDKBE_MGEPAPPJLLJ = 1461,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EKHDGCAKMCK)
+    JHDCKJGDKBE_EKHDGCAKMCK = 1438,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GHGAIPIPJBE)
+    JHDCKJGDKBE_GHGAIPIPJBE = 1413,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FNOJDGAFLMA)
+    JHDCKJGDKBE_FNOJDGAFLMA = 1478,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PEJHGODBHKP)
+    JHDCKJGDKBE_PEJHGODBHKP = 1416,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KMHPIJLLLOH)
+    JHDCKJGDKBE_KMHPIJLLLOH = 1426,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CCGMMIDKLDB)
+    JHDCKJGDKBE_CCGMMIDKLDB = 1430,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JNJIGOOJHNM)
+    JHDCKJGDKBE_JNJIGOOJHNM = 1467,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PDKBDCAOKGG)
+    JHDCKJGDKBE_PDKBDCAOKGG = 1403,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ABMMBPKLFMC)
+    JHDCKJGDKBE_ABMMBPKLFMC = 1453,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CPCONKMIOPA)
+    JHDCKJGDKBE_CPCONKMIOPA = 1483,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DCBHPPJCEJA)
+    JHDCKJGDKBE_DCBHPPJCEJA = 1433,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FOADFHNFNCA)
+    JHDCKJGDKBE_FOADFHNFNCA = 1429,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_IFKKOABAGCD)
     JHDCKJGDKBE_IFKKOABAGCD = 1402,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NIBLJJFDDHK)
-    JHDCKJGDKBE_NIBLJJFDDHK = 1456,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FHFBANPOFPP)
-    JHDCKJGDKBE_FHFBANPOFPP = 1479,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DPDMEMOEDNI)
-    JHDCKJGDKBE_DPDMEMOEDNI = 1427,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_IOKIBHKLDDI)
-    JHDCKJGDKBE_IOKIBHKLDDI = 1435,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ECJPIFOIJEA)
-    JHDCKJGDKBE_ECJPIFOIJEA = 1411,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EMHKHDBKPOI)
-    JHDCKJGDKBE_EMHKHDBKPOI = 1438,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KAJMLFFMFMI)
-    JHDCKJGDKBE_KAJMLFFMFMI = 1436,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HJBIHOADNGG)
-    JHDCKJGDKBE_HJBIHOADNGG = 1453,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_HLJBKBMFNAA)
-    JHDCKJGDKBE_HLJBKBMFNAA = 1468,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AKDHLNBKBLG)
-    JHDCKJGDKBE_AKDHLNBKBLG = 1442,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DPIOELODIBF)
-    JHDCKJGDKBE_DPIOELODIBF = 1484,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JFEHKBLKEEF)
-    JHDCKJGDKBE_JFEHKBLKEEF = 1444,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DLDOLADCMOM)
-    JHDCKJGDKBE_DLDOLADCMOM = 1431,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LBFEFJIFDAI)
-    JHDCKJGDKBE_LBFEFJIFDAI = 1419,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JLHJENJMNNE)
-    JHDCKJGDKBE_JLHJENJMNNE = 1475,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JCCIOABOKDJ)
-    JHDCKJGDKBE_JCCIOABOKDJ = 1443,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BJEOKMEGJDD)
-    JHDCKJGDKBE_BJEOKMEGJDD = 1447,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AFNPMKCNMMJ)
-    JHDCKJGDKBE_AFNPMKCNMMJ = 1463,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KNOPMBDFGEN)
-    JHDCKJGDKBE_KNOPMBDFGEN = 1433,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CPCONKMIOPA)
-    JHDCKJGDKBE_CPCONKMIOPA = 1497,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ABMMBPKLFMC)
-    JHDCKJGDKBE_ABMMBPKLFMC = 1417,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_MGEPAPPJLLJ)
-    JHDCKJGDKBE_MGEPAPPJLLJ = 1494,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_COIEAMJOCFF)
-    JHDCKJGDKBE_COIEAMJOCFF = 1480,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_BDHNAFBAHLM)
-    JHDCKJGDKBE_BDHNAFBAHLM = 1459,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_MAMGBMAPACD)
-    JHDCKJGDKBE_MAMGBMAPACD = 1434,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_MMKOHEAIDII)
-    JHDCKJGDKBE_MMKOHEAIDII = 1498,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AOCCFOOBNFL)
-    JHDCKJGDKBE_AOCCFOOBNFL = 1457,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GHGAIPIPJBE)
-    JHDCKJGDKBE_GHGAIPIPJBE = 1487,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LBHAOMOKKLA)
+    JHDCKJGDKBE_LBHAOMOKKLA = 1405,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PHGMMCCOFCM)
-    JHDCKJGDKBE_PHGMMCCOFCM = 1466,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_DAOJKJOPIBG)
-    JHDCKJGDKBE_DAOJKJOPIBG = 1462,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FBONLGBFFKK)
-    JHDCKJGDKBE_FBONLGBFFKK = 1472,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_NAGLKBBGPNP)
-    JHDCKJGDKBE_NAGLKBBGPNP = 1421,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EFMGKNCDPME)
-    JHDCKJGDKBE_EFMGKNCDPME = 1499,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KNDDOLEHBKE)
-    JHDCKJGDKBE_KNDDOLEHBKE = 1412,
+    JHDCKJGDKBE_PHGMMCCOFCM = 1421,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EMHKHDBKPOI)
+    JHDCKJGDKBE_EMHKHDBKPOI = 1436,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_JNENFBNOCCD)
+    JHDCKJGDKBE_JNENFBNOCCD = 1406,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_AKDHLNBKBLG)
+    JHDCKJGDKBE_AKDHLNBKBLG = 1404,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LAIPEFIIEPC)
+    JHDCKJGDKBE_LAIPEFIIEPC = 1486,
     // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GCKJDNHBJJP)
-    JHDCKJGDKBE_GCKJDNHBJJP = 1469,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KMHPIJLLLOH)
-    JHDCKJGDKBE_KMHPIJLLLOH = 1410,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_OGFHILHFDDF)
-    JHDCKJGDKBE_OGFHILHFDDF = 1478,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_EGHDEMKNDHB)
-    JHDCKJGDKBE_EGHDEMKNDHB = 1409,
-    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_CEHOPIIGLEG)
-    JHDCKJGDKBE_CEHOPIIGLEG = 1448,
+    JHDCKJGDKBE_GCKJDNHBJJP = 1495,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_COIEAMJOCFF)
+    JHDCKJGDKBE_COIEAMJOCFF = 1493,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_GCLFALNBAMH)
+    JHDCKJGDKBE_GCLFALNBAMH = 1457,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_FBONLGBFFKK)
+    JHDCKJGDKBE_FBONLGBFFKK = 1485,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_PBHLDKNKIBM)
+    JHDCKJGDKBE_PBHLDKNKIBM = 1452,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KAJMLFFMFMI)
+    JHDCKJGDKBE_KAJMLFFMFMI = 1488,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_ONNJOPGHBBC)
+    JHDCKJGDKBE_ONNJOPGHBBC = 1422,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_KNDDOLEHBKE)
+    JHDCKJGDKBE_KNDDOLEHBKE = 1440,
+    // @@protoc_insertion_point(enum_value:CmdSceneType.JHDCKJGDKBE_LBFEFJIFDAI)
+    JHDCKJGDKBE_LBFEFJIFDAI = 1492,
 }
 
 impl ::protobuf::Enum for CmdSceneType {
@@ -211,91 +197,84 @@ impl ::protobuf::Enum for CmdSceneType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSceneType> {
         match value {
             0 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NLCDGIPGFDJ),
-            1408 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ),
-            1474 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF),
-            1401 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNMLKBAJKIA),
-            1471 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ),
-            1425 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM),
-            1483 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK),
-            1486 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ),
-            1452 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB),
-            1465 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NKONHNEADDP),
-            1404 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF),
-            1430 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA),
-            1495 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC),
-            1485 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM),
-            1403 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA),
-            1407 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP),
-            1423 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD),
-            1422 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ),
-            1446 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP),
-            1415 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC),
-            1473 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP),
-            1414 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG),
-            1424 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH),
-            1416 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FGBOLPEDCAF),
-            1467 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA),
-            1470 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PNJEHDAJBGK),
-            1481 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI),
-            1455 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG),
-            1406 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM),
-            1458 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL),
-            1420 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN),
-            1450 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM),
-            1432 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CHKENGBFHML),
-            1492 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA),
-            1454 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA),
-            1491 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP),
-            1460 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL),
-            1461 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI),
-            1489 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO),
-            1440 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH),
-            1413 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE),
-            1477 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NLGHJDKPIEE),
-            1464 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK),
-            1405 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NGPKANKILHC),
-            1428 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFEOJBGCCIN),
-            1429 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK),
+            1447 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI),
+            1481 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE),
+            1460 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ),
+            1444 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG),
+            1445 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH),
+            1427 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM),
+            1458 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI),
+            1424 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPIOELODIBF),
+            1463 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM),
+            1468 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL),
+            1474 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO),
+            1470 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ),
+            1423 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA),
+            1465 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF),
+            1408 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG),
+            1432 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF),
+            1477 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM),
+            1442 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG),
+            1439 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB),
+            1491 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII),
+            1454 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL),
+            1479 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK),
+            1497 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE),
+            1500 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP),
+            1462 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ),
+            1456 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF),
+            1448 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI),
+            1409 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD),
+            1431 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP),
+            1407 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NKONHNEADDP),
+            1472 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM),
+            1496 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME),
+            1484 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA),
+            1471 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK),
+            1401 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA),
+            1498 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL),
+            1417 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP),
+            1469 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ),
+            1450 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN),
+            1418 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ),
+            1415 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG),
+            1459 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP),
+            1473 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CHKENGBFHML),
+            1480 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF),
+            1464 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ),
+            1490 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK),
+            1475 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NGPKANKILHC),
+            1425 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP),
+            1434 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN),
+            1461 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ),
+            1438 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK),
+            1413 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE),
+            1478 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA),
+            1416 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP),
+            1426 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH),
+            1430 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB),
+            1467 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM),
+            1403 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG),
+            1453 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC),
+            1483 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA),
+            1433 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA),
+            1429 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA),
             1402 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD),
-            1456 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK),
-            1479 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP),
-            1427 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI),
-            1435 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IOKIBHKLDDI),
-            1411 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA),
-            1438 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI),
-            1436 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI),
-            1453 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG),
-            1468 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA),
-            1442 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG),
-            1484 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPIOELODIBF),
-            1444 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF),
-            1431 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM),
-            1419 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI),
-            1475 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE),
-            1443 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ),
-            1447 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD),
-            1463 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ),
-            1433 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN),
-            1497 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA),
-            1417 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC),
-            1494 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ),
-            1480 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF),
-            1459 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM),
-            1434 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MAMGBMAPACD),
-            1498 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII),
-            1457 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL),
-            1487 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE),
-            1466 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM),
-            1462 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG),
-            1472 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK),
-            1421 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP),
-            1499 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME),
-            1412 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE),
-            1469 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP),
-            1410 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH),
-            1478 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF),
-            1409 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB),
-            1448 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG),
+            1405 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA),
+            1421 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM),
+            1436 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI),
+            1406 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD),
+            1404 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG),
+            1486 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC),
+            1495 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP),
+            1493 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF),
+            1457 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH),
+            1485 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK),
+            1452 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM),
+            1488 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI),
+            1422 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC),
+            1440 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE),
+            1492 => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI),
             _ => ::std::option::Option::None
         }
     }
@@ -303,182 +282,168 @@ impl ::protobuf::Enum for CmdSceneType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSceneType> {
         match str {
             "JHDCKJGDKBE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NLCDGIPGFDJ),
-            "JHDCKJGDKBE_BJHGGELHMHJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ),
-            "JHDCKJGDKBE_GBKHPDLKJFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF),
-            "JHDCKJGDKBE_FNMLKBAJKIA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNMLKBAJKIA),
-            "JHDCKJGDKBE_JIAEHCICDLJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ),
-            "JHDCKJGDKBE_HOANLDEAKGM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM),
-            "JHDCKJGDKBE_EKHDGCAKMCK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK),
-            "JHDCKJGDKBE_JPCEKLHLGEJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ),
-            "JHDCKJGDKBE_CCGMMIDKLDB" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB),
-            "JHDCKJGDKBE_NKONHNEADDP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NKONHNEADDP),
-            "JHDCKJGDKBE_EPDGPIEDFFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF),
-            "JHDCKJGDKBE_LBHAOMOKKLA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA),
-            "JHDCKJGDKBE_ONNJOPGHBBC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC),
-            "JHDCKJGDKBE_AEMFLMKKCHM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM),
-            "JHDCKJGDKBE_FNOJDGAFLMA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA),
-            "JHDCKJGDKBE_DINHGFMGDGP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP),
-            "JHDCKJGDKBE_JNENFBNOCCD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD),
+            "JHDCKJGDKBE_IAMNIJOGMGI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI),
+            "JHDCKJGDKBE_HGBJCPDDILE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE),
             "JHDCKJGDKBE_FCCELHODNJJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ),
-            "JHDCKJGDKBE_BIELKBIFBNP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP),
-            "JHDCKJGDKBE_LAIPEFIIEPC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC),
-            "JHDCKJGDKBE_PPCCOBMCPCP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP),
             "JHDCKJGDKBE_JKEOBFIMPOG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG),
             "JHDCKJGDKBE_FILKNGPLIHH" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH),
-            "JHDCKJGDKBE_FGBOLPEDCAF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FGBOLPEDCAF),
-            "JHDCKJGDKBE_FOADFHNFNCA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA),
-            "JHDCKJGDKBE_PNJEHDAJBGK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PNJEHDAJBGK),
-            "JHDCKJGDKBE_IAMNIJOGMGI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI),
-            "JHDCKJGDKBE_PDKBDCAOKGG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG),
-            "JHDCKJGDKBE_PBHLDKNKIBM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM),
-            "JHDCKJGDKBE_NPBFHJHPLEL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL),
-            "JHDCKJGDKBE_PHLNPAJMPCN" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN),
-            "JHDCKJGDKBE_JNJIGOOJHNM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM),
-            "JHDCKJGDKBE_CHKENGBFHML" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CHKENGBFHML),
-            "JHDCKJGDKBE_ICIJKHOCDHA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA),
-            "JHDCKJGDKBE_DCBHPPJCEJA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA),
-            "JHDCKJGDKBE_PEJHGODBHKP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP),
-            "JHDCKJGDKBE_LLAMDIIPKOL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL),
-            "JHDCKJGDKBE_DNLOPMPCJPI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI),
+            "JHDCKJGDKBE_DLDOLADCMOM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM),
+            "JHDCKJGDKBE_DPDMEMOEDNI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI),
+            "JHDCKJGDKBE_DPIOELODIBF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPIOELODIBF),
+            "JHDCKJGDKBE_AEMFLMKKCHM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM),
+            "JHDCKJGDKBE_AOCCFOOBNFL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL),
             "JHDCKJGDKBE_NOGMFNHLBEO" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO),
-            "JHDCKJGDKBE_GCLFALNBAMH" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH),
-            "JHDCKJGDKBE_HGBJCPDDILE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE),
-            "JHDCKJGDKBE_NLGHJDKPIEE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NLGHJDKPIEE),
+            "JHDCKJGDKBE_JPCEKLHLGEJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ),
+            "JHDCKJGDKBE_ECJPIFOIJEA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA),
+            "JHDCKJGDKBE_OGFHILHFDDF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF),
+            "JHDCKJGDKBE_DAOJKJOPIBG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG),
+            "JHDCKJGDKBE_JFEHKBLKEEF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF),
+            "JHDCKJGDKBE_HOANLDEAKGM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM),
+            "JHDCKJGDKBE_CEHOPIIGLEG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG),
+            "JHDCKJGDKBE_EGHDEMKNDHB" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB),
+            "JHDCKJGDKBE_MMKOHEAIDII" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII),
+            "JHDCKJGDKBE_LLAMDIIPKOL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL),
+            "JHDCKJGDKBE_NIBLJJFDDHK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK),
+            "JHDCKJGDKBE_JLHJENJMNNE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE),
+            "JHDCKJGDKBE_NAGLKBBGPNP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP),
+            "JHDCKJGDKBE_JCCIOABOKDJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ),
+            "JHDCKJGDKBE_EPDGPIEDFFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF),
+            "JHDCKJGDKBE_DNLOPMPCJPI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI),
+            "JHDCKJGDKBE_BJEOKMEGJDD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD),
+            "JHDCKJGDKBE_DINHGFMGDGP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP),
+            "JHDCKJGDKBE_NKONHNEADDP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NKONHNEADDP),
+            "JHDCKJGDKBE_BDHNAFBAHLM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM),
+            "JHDCKJGDKBE_EFMGKNCDPME" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME),
+            "JHDCKJGDKBE_ICIJKHOCDHA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA),
+            "JHDCKJGDKBE_OPHOLBDOAHK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK),
+            "JHDCKJGDKBE_HLJBKBMFNAA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA),
+            "JHDCKJGDKBE_NPBFHJHPLEL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL),
+            "JHDCKJGDKBE_BIELKBIFBNP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP),
+            "JHDCKJGDKBE_JIAEHCICDLJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ),
+            "JHDCKJGDKBE_KNOPMBDFGEN" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN),
+            "JHDCKJGDKBE_AFNPMKCNMMJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ),
+            "JHDCKJGDKBE_HJBIHOADNGG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG),
+            "JHDCKJGDKBE_FHFBANPOFPP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP),
+            "JHDCKJGDKBE_CHKENGBFHML" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CHKENGBFHML),
+            "JHDCKJGDKBE_GBKHPDLKJFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF),
+            "JHDCKJGDKBE_BJHGGELHMHJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ),
             "JHDCKJGDKBE_DJCAMALOJAK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK),
             "JHDCKJGDKBE_NGPKANKILHC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NGPKANKILHC),
-            "JHDCKJGDKBE_AFEOJBGCCIN" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFEOJBGCCIN),
-            "JHDCKJGDKBE_OPHOLBDOAHK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK),
-            "JHDCKJGDKBE_IFKKOABAGCD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD),
-            "JHDCKJGDKBE_NIBLJJFDDHK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK),
-            "JHDCKJGDKBE_FHFBANPOFPP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP),
-            "JHDCKJGDKBE_DPDMEMOEDNI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI),
-            "JHDCKJGDKBE_IOKIBHKLDDI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IOKIBHKLDDI),
-            "JHDCKJGDKBE_ECJPIFOIJEA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA),
-            "JHDCKJGDKBE_EMHKHDBKPOI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI),
-            "JHDCKJGDKBE_KAJMLFFMFMI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI),
-            "JHDCKJGDKBE_HJBIHOADNGG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG),
-            "JHDCKJGDKBE_HLJBKBMFNAA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA),
-            "JHDCKJGDKBE_AKDHLNBKBLG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG),
-            "JHDCKJGDKBE_DPIOELODIBF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DPIOELODIBF),
-            "JHDCKJGDKBE_JFEHKBLKEEF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF),
-            "JHDCKJGDKBE_DLDOLADCMOM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM),
-            "JHDCKJGDKBE_LBFEFJIFDAI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI),
-            "JHDCKJGDKBE_JLHJENJMNNE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE),
-            "JHDCKJGDKBE_JCCIOABOKDJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ),
-            "JHDCKJGDKBE_BJEOKMEGJDD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD),
-            "JHDCKJGDKBE_AFNPMKCNMMJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ),
-            "JHDCKJGDKBE_KNOPMBDFGEN" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN),
-            "JHDCKJGDKBE_CPCONKMIOPA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA),
-            "JHDCKJGDKBE_ABMMBPKLFMC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC),
+            "JHDCKJGDKBE_PPCCOBMCPCP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP),
+            "JHDCKJGDKBE_PHLNPAJMPCN" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN),
             "JHDCKJGDKBE_MGEPAPPJLLJ" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ),
-            "JHDCKJGDKBE_COIEAMJOCFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF),
-            "JHDCKJGDKBE_BDHNAFBAHLM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM),
-            "JHDCKJGDKBE_MAMGBMAPACD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MAMGBMAPACD),
-            "JHDCKJGDKBE_MMKOHEAIDII" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII),
-            "JHDCKJGDKBE_AOCCFOOBNFL" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL),
+            "JHDCKJGDKBE_EKHDGCAKMCK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK),
             "JHDCKJGDKBE_GHGAIPIPJBE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE),
-            "JHDCKJGDKBE_PHGMMCCOFCM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM),
-            "JHDCKJGDKBE_DAOJKJOPIBG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG),
-            "JHDCKJGDKBE_FBONLGBFFKK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK),
-            "JHDCKJGDKBE_NAGLKBBGPNP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP),
-            "JHDCKJGDKBE_EFMGKNCDPME" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME),
-            "JHDCKJGDKBE_KNDDOLEHBKE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE),
-            "JHDCKJGDKBE_GCKJDNHBJJP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP),
+            "JHDCKJGDKBE_FNOJDGAFLMA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA),
+            "JHDCKJGDKBE_PEJHGODBHKP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP),
             "JHDCKJGDKBE_KMHPIJLLLOH" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH),
-            "JHDCKJGDKBE_OGFHILHFDDF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF),
-            "JHDCKJGDKBE_EGHDEMKNDHB" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB),
-            "JHDCKJGDKBE_CEHOPIIGLEG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG),
+            "JHDCKJGDKBE_CCGMMIDKLDB" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB),
+            "JHDCKJGDKBE_JNJIGOOJHNM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM),
+            "JHDCKJGDKBE_PDKBDCAOKGG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG),
+            "JHDCKJGDKBE_ABMMBPKLFMC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC),
+            "JHDCKJGDKBE_CPCONKMIOPA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA),
+            "JHDCKJGDKBE_DCBHPPJCEJA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA),
+            "JHDCKJGDKBE_FOADFHNFNCA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA),
+            "JHDCKJGDKBE_IFKKOABAGCD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD),
+            "JHDCKJGDKBE_LBHAOMOKKLA" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA),
+            "JHDCKJGDKBE_PHGMMCCOFCM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM),
+            "JHDCKJGDKBE_EMHKHDBKPOI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI),
+            "JHDCKJGDKBE_JNENFBNOCCD" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD),
+            "JHDCKJGDKBE_AKDHLNBKBLG" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG),
+            "JHDCKJGDKBE_LAIPEFIIEPC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC),
+            "JHDCKJGDKBE_GCKJDNHBJJP" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP),
+            "JHDCKJGDKBE_COIEAMJOCFF" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF),
+            "JHDCKJGDKBE_GCLFALNBAMH" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH),
+            "JHDCKJGDKBE_FBONLGBFFKK" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK),
+            "JHDCKJGDKBE_PBHLDKNKIBM" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM),
+            "JHDCKJGDKBE_KAJMLFFMFMI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI),
+            "JHDCKJGDKBE_ONNJOPGHBBC" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC),
+            "JHDCKJGDKBE_KNDDOLEHBKE" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE),
+            "JHDCKJGDKBE_LBFEFJIFDAI" => ::std::option::Option::Some(CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSceneType] = &[
         CmdSceneType::JHDCKJGDKBE_NLCDGIPGFDJ,
-        CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ,
-        CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF,
-        CmdSceneType::JHDCKJGDKBE_FNMLKBAJKIA,
-        CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ,
-        CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM,
-        CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK,
-        CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ,
-        CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB,
-        CmdSceneType::JHDCKJGDKBE_NKONHNEADDP,
-        CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF,
-        CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA,
-        CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC,
-        CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM,
-        CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA,
-        CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP,
-        CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD,
+        CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI,
+        CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE,
         CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ,
-        CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP,
-        CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC,
-        CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP,
         CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG,
         CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH,
-        CmdSceneType::JHDCKJGDKBE_FGBOLPEDCAF,
-        CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA,
-        CmdSceneType::JHDCKJGDKBE_PNJEHDAJBGK,
-        CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI,
-        CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG,
-        CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM,
-        CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL,
-        CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN,
-        CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM,
-        CmdSceneType::JHDCKJGDKBE_CHKENGBFHML,
-        CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA,
-        CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA,
-        CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP,
-        CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL,
-        CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI,
+        CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM,
+        CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI,
+        CmdSceneType::JHDCKJGDKBE_DPIOELODIBF,
+        CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM,
+        CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL,
         CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO,
-        CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH,
-        CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE,
-        CmdSceneType::JHDCKJGDKBE_NLGHJDKPIEE,
+        CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ,
+        CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA,
+        CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF,
+        CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG,
+        CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF,
+        CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM,
+        CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG,
+        CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB,
+        CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII,
+        CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL,
+        CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK,
+        CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE,
+        CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP,
+        CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ,
+        CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF,
+        CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI,
+        CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD,
+        CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP,
+        CmdSceneType::JHDCKJGDKBE_NKONHNEADDP,
+        CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM,
+        CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME,
+        CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA,
+        CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK,
+        CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA,
+        CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL,
+        CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP,
+        CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ,
+        CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN,
+        CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ,
+        CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG,
+        CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP,
+        CmdSceneType::JHDCKJGDKBE_CHKENGBFHML,
+        CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF,
+        CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ,
         CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK,
         CmdSceneType::JHDCKJGDKBE_NGPKANKILHC,
-        CmdSceneType::JHDCKJGDKBE_AFEOJBGCCIN,
-        CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK,
-        CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD,
-        CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK,
-        CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP,
-        CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI,
-        CmdSceneType::JHDCKJGDKBE_IOKIBHKLDDI,
-        CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA,
-        CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI,
-        CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI,
-        CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG,
-        CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA,
-        CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG,
-        CmdSceneType::JHDCKJGDKBE_DPIOELODIBF,
-        CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF,
-        CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM,
-        CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI,
-        CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE,
-        CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ,
-        CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD,
-        CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ,
-        CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN,
-        CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA,
-        CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC,
+        CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP,
+        CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN,
         CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ,
-        CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF,
-        CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM,
-        CmdSceneType::JHDCKJGDKBE_MAMGBMAPACD,
-        CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII,
-        CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL,
+        CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK,
         CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE,
-        CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM,
-        CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG,
-        CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK,
-        CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP,
-        CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME,
-        CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE,
-        CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP,
+        CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA,
+        CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP,
         CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH,
-        CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF,
-        CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB,
-        CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG,
+        CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB,
+        CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM,
+        CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG,
+        CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC,
+        CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA,
+        CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA,
+        CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA,
+        CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD,
+        CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA,
+        CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM,
+        CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI,
+        CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD,
+        CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG,
+        CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC,
+        CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP,
+        CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF,
+        CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH,
+        CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK,
+        CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM,
+        CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI,
+        CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC,
+        CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE,
+        CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI,
     ];
 }
 
@@ -491,91 +456,84 @@ impl ::protobuf::EnumFull for CmdSceneType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSceneType::JHDCKJGDKBE_NLCDGIPGFDJ => 0,
-            CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ => 1,
-            CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF => 2,
-            CmdSceneType::JHDCKJGDKBE_FNMLKBAJKIA => 3,
-            CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ => 4,
-            CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM => 5,
-            CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK => 6,
-            CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ => 7,
-            CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB => 8,
-            CmdSceneType::JHDCKJGDKBE_NKONHNEADDP => 9,
-            CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF => 10,
-            CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA => 11,
-            CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC => 12,
-            CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM => 13,
-            CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA => 14,
-            CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP => 15,
-            CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD => 16,
-            CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ => 17,
-            CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP => 18,
-            CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC => 19,
-            CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP => 20,
-            CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG => 21,
-            CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH => 22,
-            CmdSceneType::JHDCKJGDKBE_FGBOLPEDCAF => 23,
-            CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA => 24,
-            CmdSceneType::JHDCKJGDKBE_PNJEHDAJBGK => 25,
-            CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI => 26,
-            CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG => 27,
-            CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM => 28,
-            CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL => 29,
-            CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN => 30,
-            CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM => 31,
-            CmdSceneType::JHDCKJGDKBE_CHKENGBFHML => 32,
+            CmdSceneType::JHDCKJGDKBE_IAMNIJOGMGI => 1,
+            CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE => 2,
+            CmdSceneType::JHDCKJGDKBE_FCCELHODNJJ => 3,
+            CmdSceneType::JHDCKJGDKBE_JKEOBFIMPOG => 4,
+            CmdSceneType::JHDCKJGDKBE_FILKNGPLIHH => 5,
+            CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM => 6,
+            CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI => 7,
+            CmdSceneType::JHDCKJGDKBE_DPIOELODIBF => 8,
+            CmdSceneType::JHDCKJGDKBE_AEMFLMKKCHM => 9,
+            CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL => 10,
+            CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO => 11,
+            CmdSceneType::JHDCKJGDKBE_JPCEKLHLGEJ => 12,
+            CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA => 13,
+            CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF => 14,
+            CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG => 15,
+            CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF => 16,
+            CmdSceneType::JHDCKJGDKBE_HOANLDEAKGM => 17,
+            CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG => 18,
+            CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB => 19,
+            CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII => 20,
+            CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL => 21,
+            CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK => 22,
+            CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE => 23,
+            CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP => 24,
+            CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ => 25,
+            CmdSceneType::JHDCKJGDKBE_EPDGPIEDFFF => 26,
+            CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI => 27,
+            CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD => 28,
+            CmdSceneType::JHDCKJGDKBE_DINHGFMGDGP => 29,
+            CmdSceneType::JHDCKJGDKBE_NKONHNEADDP => 30,
+            CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM => 31,
+            CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME => 32,
             CmdSceneType::JHDCKJGDKBE_ICIJKHOCDHA => 33,
-            CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA => 34,
-            CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP => 35,
-            CmdSceneType::JHDCKJGDKBE_LLAMDIIPKOL => 36,
-            CmdSceneType::JHDCKJGDKBE_DNLOPMPCJPI => 37,
-            CmdSceneType::JHDCKJGDKBE_NOGMFNHLBEO => 38,
-            CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH => 39,
-            CmdSceneType::JHDCKJGDKBE_HGBJCPDDILE => 40,
-            CmdSceneType::JHDCKJGDKBE_NLGHJDKPIEE => 41,
-            CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK => 42,
-            CmdSceneType::JHDCKJGDKBE_NGPKANKILHC => 43,
-            CmdSceneType::JHDCKJGDKBE_AFEOJBGCCIN => 44,
-            CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK => 45,
-            CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD => 46,
-            CmdSceneType::JHDCKJGDKBE_NIBLJJFDDHK => 47,
-            CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP => 48,
-            CmdSceneType::JHDCKJGDKBE_DPDMEMOEDNI => 49,
-            CmdSceneType::JHDCKJGDKBE_IOKIBHKLDDI => 50,
-            CmdSceneType::JHDCKJGDKBE_ECJPIFOIJEA => 51,
-            CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI => 52,
-            CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI => 53,
-            CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG => 54,
-            CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA => 55,
-            CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG => 56,
-            CmdSceneType::JHDCKJGDKBE_DPIOELODIBF => 57,
-            CmdSceneType::JHDCKJGDKBE_JFEHKBLKEEF => 58,
-            CmdSceneType::JHDCKJGDKBE_DLDOLADCMOM => 59,
-            CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI => 60,
-            CmdSceneType::JHDCKJGDKBE_JLHJENJMNNE => 61,
-            CmdSceneType::JHDCKJGDKBE_JCCIOABOKDJ => 62,
-            CmdSceneType::JHDCKJGDKBE_BJEOKMEGJDD => 63,
-            CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ => 64,
-            CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN => 65,
-            CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA => 66,
-            CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC => 67,
-            CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ => 68,
-            CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF => 69,
-            CmdSceneType::JHDCKJGDKBE_BDHNAFBAHLM => 70,
-            CmdSceneType::JHDCKJGDKBE_MAMGBMAPACD => 71,
-            CmdSceneType::JHDCKJGDKBE_MMKOHEAIDII => 72,
-            CmdSceneType::JHDCKJGDKBE_AOCCFOOBNFL => 73,
-            CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE => 74,
-            CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM => 75,
-            CmdSceneType::JHDCKJGDKBE_DAOJKJOPIBG => 76,
-            CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK => 77,
-            CmdSceneType::JHDCKJGDKBE_NAGLKBBGPNP => 78,
-            CmdSceneType::JHDCKJGDKBE_EFMGKNCDPME => 79,
-            CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE => 80,
-            CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP => 81,
-            CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH => 82,
-            CmdSceneType::JHDCKJGDKBE_OGFHILHFDDF => 83,
-            CmdSceneType::JHDCKJGDKBE_EGHDEMKNDHB => 84,
-            CmdSceneType::JHDCKJGDKBE_CEHOPIIGLEG => 85,
+            CmdSceneType::JHDCKJGDKBE_OPHOLBDOAHK => 34,
+            CmdSceneType::JHDCKJGDKBE_HLJBKBMFNAA => 35,
+            CmdSceneType::JHDCKJGDKBE_NPBFHJHPLEL => 36,
+            CmdSceneType::JHDCKJGDKBE_BIELKBIFBNP => 37,
+            CmdSceneType::JHDCKJGDKBE_JIAEHCICDLJ => 38,
+            CmdSceneType::JHDCKJGDKBE_KNOPMBDFGEN => 39,
+            CmdSceneType::JHDCKJGDKBE_AFNPMKCNMMJ => 40,
+            CmdSceneType::JHDCKJGDKBE_HJBIHOADNGG => 41,
+            CmdSceneType::JHDCKJGDKBE_FHFBANPOFPP => 42,
+            CmdSceneType::JHDCKJGDKBE_CHKENGBFHML => 43,
+            CmdSceneType::JHDCKJGDKBE_GBKHPDLKJFF => 44,
+            CmdSceneType::JHDCKJGDKBE_BJHGGELHMHJ => 45,
+            CmdSceneType::JHDCKJGDKBE_DJCAMALOJAK => 46,
+            CmdSceneType::JHDCKJGDKBE_NGPKANKILHC => 47,
+            CmdSceneType::JHDCKJGDKBE_PPCCOBMCPCP => 48,
+            CmdSceneType::JHDCKJGDKBE_PHLNPAJMPCN => 49,
+            CmdSceneType::JHDCKJGDKBE_MGEPAPPJLLJ => 50,
+            CmdSceneType::JHDCKJGDKBE_EKHDGCAKMCK => 51,
+            CmdSceneType::JHDCKJGDKBE_GHGAIPIPJBE => 52,
+            CmdSceneType::JHDCKJGDKBE_FNOJDGAFLMA => 53,
+            CmdSceneType::JHDCKJGDKBE_PEJHGODBHKP => 54,
+            CmdSceneType::JHDCKJGDKBE_KMHPIJLLLOH => 55,
+            CmdSceneType::JHDCKJGDKBE_CCGMMIDKLDB => 56,
+            CmdSceneType::JHDCKJGDKBE_JNJIGOOJHNM => 57,
+            CmdSceneType::JHDCKJGDKBE_PDKBDCAOKGG => 58,
+            CmdSceneType::JHDCKJGDKBE_ABMMBPKLFMC => 59,
+            CmdSceneType::JHDCKJGDKBE_CPCONKMIOPA => 60,
+            CmdSceneType::JHDCKJGDKBE_DCBHPPJCEJA => 61,
+            CmdSceneType::JHDCKJGDKBE_FOADFHNFNCA => 62,
+            CmdSceneType::JHDCKJGDKBE_IFKKOABAGCD => 63,
+            CmdSceneType::JHDCKJGDKBE_LBHAOMOKKLA => 64,
+            CmdSceneType::JHDCKJGDKBE_PHGMMCCOFCM => 65,
+            CmdSceneType::JHDCKJGDKBE_EMHKHDBKPOI => 66,
+            CmdSceneType::JHDCKJGDKBE_JNENFBNOCCD => 67,
+            CmdSceneType::JHDCKJGDKBE_AKDHLNBKBLG => 68,
+            CmdSceneType::JHDCKJGDKBE_LAIPEFIIEPC => 69,
+            CmdSceneType::JHDCKJGDKBE_GCKJDNHBJJP => 70,
+            CmdSceneType::JHDCKJGDKBE_COIEAMJOCFF => 71,
+            CmdSceneType::JHDCKJGDKBE_GCLFALNBAMH => 72,
+            CmdSceneType::JHDCKJGDKBE_FBONLGBFFKK => 73,
+            CmdSceneType::JHDCKJGDKBE_PBHLDKNKIBM => 74,
+            CmdSceneType::JHDCKJGDKBE_KAJMLFFMFMI => 75,
+            CmdSceneType::JHDCKJGDKBE_ONNJOPGHBBC => 76,
+            CmdSceneType::JHDCKJGDKBE_KNDDOLEHBKE => 77,
+            CmdSceneType::JHDCKJGDKBE_LBFEFJIFDAI => 78,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -594,66 +552,61 @@ impl CmdSceneType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdSceneType.proto*\xa1\x14\n\x0cCmdSceneType\x12\x1b\n\x17JHDCKJG\
-    DKBE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JHDCKJGDKBE_BJHGGELHMHJ\x10\x80\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_GBKHPDLKJFF\x10\xc2\x0b\x12\x1c\n\x17JHDCKJGDK\
-    BE_FNMLKBAJKIA\x10\xf9\n\x12\x1c\n\x17JHDCKJGDKBE_JIAEHCICDLJ\x10\xbf\
-    \x0b\x12\x1c\n\x17JHDCKJGDKBE_HOANLDEAKGM\x10\x91\x0b\x12\x1c\n\x17JHDCK\
-    JGDKBE_EKHDGCAKMCK\x10\xcb\x0b\x12\x1c\n\x17JHDCKJGDKBE_JPCEKLHLGEJ\x10\
-    \xce\x0b\x12\x1c\n\x17JHDCKJGDKBE_CCGMMIDKLDB\x10\xac\x0b\x12\x1c\n\x17J\
-    HDCKJGDKBE_NKONHNEADDP\x10\xb9\x0b\x12\x1c\n\x17JHDCKJGDKBE_EPDGPIEDFFF\
-    \x10\xfc\n\x12\x1c\n\x17JHDCKJGDKBE_LBHAOMOKKLA\x10\x96\x0b\x12\x1c\n\
-    \x17JHDCKJGDKBE_ONNJOPGHBBC\x10\xd7\x0b\x12\x1c\n\x17JHDCKJGDKBE_AEMFLMK\
-    KCHM\x10\xcd\x0b\x12\x1c\n\x17JHDCKJGDKBE_FNOJDGAFLMA\x10\xfb\n\x12\x1c\
-    \n\x17JHDCKJGDKBE_DINHGFMGDGP\x10\xff\n\x12\x1c\n\x17JHDCKJGDKBE_JNENFBN\
-    OCCD\x10\x8f\x0b\x12\x1c\n\x17JHDCKJGDKBE_FCCELHODNJJ\x10\x8e\x0b\x12\
-    \x1c\n\x17JHDCKJGDKBE_BIELKBIFBNP\x10\xa6\x0b\x12\x1c\n\x17JHDCKJGDKBE_L\
-    AIPEFIIEPC\x10\x87\x0b\x12\x1c\n\x17JHDCKJGDKBE_PPCCOBMCPCP\x10\xc1\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_JKEOBFIMPOG\x10\x86\x0b\x12\x1c\n\x17JHDCKJGDK\
-    BE_FILKNGPLIHH\x10\x90\x0b\x12\x1c\n\x17JHDCKJGDKBE_FGBOLPEDCAF\x10\x88\
-    \x0b\x12\x1c\n\x17JHDCKJGDKBE_FOADFHNFNCA\x10\xbb\x0b\x12\x1c\n\x17JHDCK\
-    JGDKBE_PNJEHDAJBGK\x10\xbe\x0b\x12\x1c\n\x17JHDCKJGDKBE_IAMNIJOGMGI\x10\
-    \xc9\x0b\x12\x1c\n\x17JHDCKJGDKBE_PDKBDCAOKGG\x10\xaf\x0b\x12\x1c\n\x17J\
-    HDCKJGDKBE_PBHLDKNKIBM\x10\xfe\n\x12\x1c\n\x17JHDCKJGDKBE_NPBFHJHPLEL\
-    \x10\xb2\x0b\x12\x1c\n\x17JHDCKJGDKBE_PHLNPAJMPCN\x10\x8c\x0b\x12\x1c\n\
-    \x17JHDCKJGDKBE_JNJIGOOJHNM\x10\xaa\x0b\x12\x1c\n\x17JHDCKJGDKBE_CHKENGB\
-    FHML\x10\x98\x0b\x12\x1c\n\x17JHDCKJGDKBE_ICIJKHOCDHA\x10\xd4\x0b\x12\
-    \x1c\n\x17JHDCKJGDKBE_DCBHPPJCEJA\x10\xae\x0b\x12\x1c\n\x17JHDCKJGDKBE_P\
-    EJHGODBHKP\x10\xd3\x0b\x12\x1c\n\x17JHDCKJGDKBE_LLAMDIIPKOL\x10\xb4\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_DNLOPMPCJPI\x10\xb5\x0b\x12\x1c\n\x17JHDCKJGDK\
-    BE_NOGMFNHLBEO\x10\xd1\x0b\x12\x1c\n\x17JHDCKJGDKBE_GCLFALNBAMH\x10\xa0\
-    \x0b\x12\x1c\n\x17JHDCKJGDKBE_HGBJCPDDILE\x10\x85\x0b\x12\x1c\n\x17JHDCK\
-    JGDKBE_NLGHJDKPIEE\x10\xc5\x0b\x12\x1c\n\x17JHDCKJGDKBE_DJCAMALOJAK\x10\
-    \xb8\x0b\x12\x1c\n\x17JHDCKJGDKBE_NGPKANKILHC\x10\xfd\n\x12\x1c\n\x17JHD\
-    CKJGDKBE_AFEOJBGCCIN\x10\x94\x0b\x12\x1c\n\x17JHDCKJGDKBE_OPHOLBDOAHK\
-    \x10\x95\x0b\x12\x1c\n\x17JHDCKJGDKBE_IFKKOABAGCD\x10\xfa\n\x12\x1c\n\
-    \x17JHDCKJGDKBE_NIBLJJFDDHK\x10\xb0\x0b\x12\x1c\n\x17JHDCKJGDKBE_FHFBANP\
-    OFPP\x10\xc7\x0b\x12\x1c\n\x17JHDCKJGDKBE_DPDMEMOEDNI\x10\x93\x0b\x12\
-    \x1c\n\x17JHDCKJGDKBE_IOKIBHKLDDI\x10\x9b\x0b\x12\x1c\n\x17JHDCKJGDKBE_E\
-    CJPIFOIJEA\x10\x83\x0b\x12\x1c\n\x17JHDCKJGDKBE_EMHKHDBKPOI\x10\x9e\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_KAJMLFFMFMI\x10\x9c\x0b\x12\x1c\n\x17JHDCKJGDK\
-    BE_HJBIHOADNGG\x10\xad\x0b\x12\x1c\n\x17JHDCKJGDKBE_HLJBKBMFNAA\x10\xbc\
-    \x0b\x12\x1c\n\x17JHDCKJGDKBE_AKDHLNBKBLG\x10\xa2\x0b\x12\x1c\n\x17JHDCK\
-    JGDKBE_DPIOELODIBF\x10\xcc\x0b\x12\x1c\n\x17JHDCKJGDKBE_JFEHKBLKEEF\x10\
-    \xa4\x0b\x12\x1c\n\x17JHDCKJGDKBE_DLDOLADCMOM\x10\x97\x0b\x12\x1c\n\x17J\
-    HDCKJGDKBE_LBFEFJIFDAI\x10\x8b\x0b\x12\x1c\n\x17JHDCKJGDKBE_JLHJENJMNNE\
-    \x10\xc3\x0b\x12\x1c\n\x17JHDCKJGDKBE_JCCIOABOKDJ\x10\xa3\x0b\x12\x1c\n\
-    \x17JHDCKJGDKBE_BJEOKMEGJDD\x10\xa7\x0b\x12\x1c\n\x17JHDCKJGDKBE_AFNPMKC\
-    NMMJ\x10\xb7\x0b\x12\x1c\n\x17JHDCKJGDKBE_KNOPMBDFGEN\x10\x99\x0b\x12\
-    \x1c\n\x17JHDCKJGDKBE_CPCONKMIOPA\x10\xd9\x0b\x12\x1c\n\x17JHDCKJGDKBE_A\
-    BMMBPKLFMC\x10\x89\x0b\x12\x1c\n\x17JHDCKJGDKBE_MGEPAPPJLLJ\x10\xd6\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_COIEAMJOCFF\x10\xc8\x0b\x12\x1c\n\x17JHDCKJGDK\
-    BE_BDHNAFBAHLM\x10\xb3\x0b\x12\x1c\n\x17JHDCKJGDKBE_MAMGBMAPACD\x10\x9a\
-    \x0b\x12\x1c\n\x17JHDCKJGDKBE_MMKOHEAIDII\x10\xda\x0b\x12\x1c\n\x17JHDCK\
-    JGDKBE_AOCCFOOBNFL\x10\xb1\x0b\x12\x1c\n\x17JHDCKJGDKBE_GHGAIPIPJBE\x10\
-    \xcf\x0b\x12\x1c\n\x17JHDCKJGDKBE_PHGMMCCOFCM\x10\xba\x0b\x12\x1c\n\x17J\
-    HDCKJGDKBE_DAOJKJOPIBG\x10\xb6\x0b\x12\x1c\n\x17JHDCKJGDKBE_FBONLGBFFKK\
-    \x10\xc0\x0b\x12\x1c\n\x17JHDCKJGDKBE_NAGLKBBGPNP\x10\x8d\x0b\x12\x1c\n\
-    \x17JHDCKJGDKBE_EFMGKNCDPME\x10\xdb\x0b\x12\x1c\n\x17JHDCKJGDKBE_KNDDOLE\
-    HBKE\x10\x84\x0b\x12\x1c\n\x17JHDCKJGDKBE_GCKJDNHBJJP\x10\xbd\x0b\x12\
-    \x1c\n\x17JHDCKJGDKBE_KMHPIJLLLOH\x10\x82\x0b\x12\x1c\n\x17JHDCKJGDKBE_O\
-    GFHILHFDDF\x10\xc6\x0b\x12\x1c\n\x17JHDCKJGDKBE_EGHDEMKNDHB\x10\x81\x0b\
-    \x12\x1c\n\x17JHDCKJGDKBE_CEHOPIIGLEG\x10\xa8\x0bb\x06proto3\
+    \n\x12CmdSceneType.proto*\xcf\x12\n\x0cCmdSceneType\x12\x1b\n\x17JHDCKJG\
+    DKBE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JHDCKJGDKBE_IAMNIJOGMGI\x10\xa7\x0b\
+    \x12\x1c\n\x17JHDCKJGDKBE_HGBJCPDDILE\x10\xc9\x0b\x12\x1c\n\x17JHDCKJGDK\
+    BE_FCCELHODNJJ\x10\xb4\x0b\x12\x1c\n\x17JHDCKJGDKBE_JKEOBFIMPOG\x10\xa4\
+    \x0b\x12\x1c\n\x17JHDCKJGDKBE_FILKNGPLIHH\x10\xa5\x0b\x12\x1c\n\x17JHDCK\
+    JGDKBE_DLDOLADCMOM\x10\x93\x0b\x12\x1c\n\x17JHDCKJGDKBE_DPDMEMOEDNI\x10\
+    \xb2\x0b\x12\x1c\n\x17JHDCKJGDKBE_DPIOELODIBF\x10\x90\x0b\x12\x1c\n\x17J\
+    HDCKJGDKBE_AEMFLMKKCHM\x10\xb7\x0b\x12\x1c\n\x17JHDCKJGDKBE_AOCCFOOBNFL\
+    \x10\xbc\x0b\x12\x1c\n\x17JHDCKJGDKBE_NOGMFNHLBEO\x10\xc2\x0b\x12\x1c\n\
+    \x17JHDCKJGDKBE_JPCEKLHLGEJ\x10\xbe\x0b\x12\x1c\n\x17JHDCKJGDKBE_ECJPIFO\
+    IJEA\x10\x8f\x0b\x12\x1c\n\x17JHDCKJGDKBE_OGFHILHFDDF\x10\xb9\x0b\x12\
+    \x1c\n\x17JHDCKJGDKBE_DAOJKJOPIBG\x10\x80\x0b\x12\x1c\n\x17JHDCKJGDKBE_J\
+    FEHKBLKEEF\x10\x98\x0b\x12\x1c\n\x17JHDCKJGDKBE_HOANLDEAKGM\x10\xc5\x0b\
+    \x12\x1c\n\x17JHDCKJGDKBE_CEHOPIIGLEG\x10\xa2\x0b\x12\x1c\n\x17JHDCKJGDK\
+    BE_EGHDEMKNDHB\x10\x9f\x0b\x12\x1c\n\x17JHDCKJGDKBE_MMKOHEAIDII\x10\xd3\
+    \x0b\x12\x1c\n\x17JHDCKJGDKBE_LLAMDIIPKOL\x10\xae\x0b\x12\x1c\n\x17JHDCK\
+    JGDKBE_NIBLJJFDDHK\x10\xc7\x0b\x12\x1c\n\x17JHDCKJGDKBE_JLHJENJMNNE\x10\
+    \xd9\x0b\x12\x1c\n\x17JHDCKJGDKBE_NAGLKBBGPNP\x10\xdc\x0b\x12\x1c\n\x17J\
+    HDCKJGDKBE_JCCIOABOKDJ\x10\xb6\x0b\x12\x1c\n\x17JHDCKJGDKBE_EPDGPIEDFFF\
+    \x10\xb0\x0b\x12\x1c\n\x17JHDCKJGDKBE_DNLOPMPCJPI\x10\xa8\x0b\x12\x1c\n\
+    \x17JHDCKJGDKBE_BJEOKMEGJDD\x10\x81\x0b\x12\x1c\n\x17JHDCKJGDKBE_DINHGFM\
+    GDGP\x10\x97\x0b\x12\x1c\n\x17JHDCKJGDKBE_NKONHNEADDP\x10\xff\n\x12\x1c\
+    \n\x17JHDCKJGDKBE_BDHNAFBAHLM\x10\xc0\x0b\x12\x1c\n\x17JHDCKJGDKBE_EFMGK\
+    NCDPME\x10\xd8\x0b\x12\x1c\n\x17JHDCKJGDKBE_ICIJKHOCDHA\x10\xcc\x0b\x12\
+    \x1c\n\x17JHDCKJGDKBE_OPHOLBDOAHK\x10\xbf\x0b\x12\x1c\n\x17JHDCKJGDKBE_H\
+    LJBKBMFNAA\x10\xf9\n\x12\x1c\n\x17JHDCKJGDKBE_NPBFHJHPLEL\x10\xda\x0b\
+    \x12\x1c\n\x17JHDCKJGDKBE_BIELKBIFBNP\x10\x89\x0b\x12\x1c\n\x17JHDCKJGDK\
+    BE_JIAEHCICDLJ\x10\xbd\x0b\x12\x1c\n\x17JHDCKJGDKBE_KNOPMBDFGEN\x10\xaa\
+    \x0b\x12\x1c\n\x17JHDCKJGDKBE_AFNPMKCNMMJ\x10\x8a\x0b\x12\x1c\n\x17JHDCK\
+    JGDKBE_HJBIHOADNGG\x10\x87\x0b\x12\x1c\n\x17JHDCKJGDKBE_FHFBANPOFPP\x10\
+    \xb3\x0b\x12\x1c\n\x17JHDCKJGDKBE_CHKENGBFHML\x10\xc1\x0b\x12\x1c\n\x17J\
+    HDCKJGDKBE_GBKHPDLKJFF\x10\xc8\x0b\x12\x1c\n\x17JHDCKJGDKBE_BJHGGELHMHJ\
+    \x10\xb8\x0b\x12\x1c\n\x17JHDCKJGDKBE_DJCAMALOJAK\x10\xd2\x0b\x12\x1c\n\
+    \x17JHDCKJGDKBE_NGPKANKILHC\x10\xc3\x0b\x12\x1c\n\x17JHDCKJGDKBE_PPCCOBM\
+    CPCP\x10\x91\x0b\x12\x1c\n\x17JHDCKJGDKBE_PHLNPAJMPCN\x10\x9a\x0b\x12\
+    \x1c\n\x17JHDCKJGDKBE_MGEPAPPJLLJ\x10\xb5\x0b\x12\x1c\n\x17JHDCKJGDKBE_E\
+    KHDGCAKMCK\x10\x9e\x0b\x12\x1c\n\x17JHDCKJGDKBE_GHGAIPIPJBE\x10\x85\x0b\
+    \x12\x1c\n\x17JHDCKJGDKBE_FNOJDGAFLMA\x10\xc6\x0b\x12\x1c\n\x17JHDCKJGDK\
+    BE_PEJHGODBHKP\x10\x88\x0b\x12\x1c\n\x17JHDCKJGDKBE_KMHPIJLLLOH\x10\x92\
+    \x0b\x12\x1c\n\x17JHDCKJGDKBE_CCGMMIDKLDB\x10\x96\x0b\x12\x1c\n\x17JHDCK\
+    JGDKBE_JNJIGOOJHNM\x10\xbb\x0b\x12\x1c\n\x17JHDCKJGDKBE_PDKBDCAOKGG\x10\
+    \xfb\n\x12\x1c\n\x17JHDCKJGDKBE_ABMMBPKLFMC\x10\xad\x0b\x12\x1c\n\x17JHD\
+    CKJGDKBE_CPCONKMIOPA\x10\xcb\x0b\x12\x1c\n\x17JHDCKJGDKBE_DCBHPPJCEJA\
+    \x10\x99\x0b\x12\x1c\n\x17JHDCKJGDKBE_FOADFHNFNCA\x10\x95\x0b\x12\x1c\n\
+    \x17JHDCKJGDKBE_IFKKOABAGCD\x10\xfa\n\x12\x1c\n\x17JHDCKJGDKBE_LBHAOMOKK\
+    LA\x10\xfd\n\x12\x1c\n\x17JHDCKJGDKBE_PHGMMCCOFCM\x10\x8d\x0b\x12\x1c\n\
+    \x17JHDCKJGDKBE_EMHKHDBKPOI\x10\x9c\x0b\x12\x1c\n\x17JHDCKJGDKBE_JNENFBN\
+    OCCD\x10\xfe\n\x12\x1c\n\x17JHDCKJGDKBE_AKDHLNBKBLG\x10\xfc\n\x12\x1c\n\
+    \x17JHDCKJGDKBE_LAIPEFIIEPC\x10\xce\x0b\x12\x1c\n\x17JHDCKJGDKBE_GCKJDNH\
+    BJJP\x10\xd7\x0b\x12\x1c\n\x17JHDCKJGDKBE_COIEAMJOCFF\x10\xd5\x0b\x12\
+    \x1c\n\x17JHDCKJGDKBE_GCLFALNBAMH\x10\xb1\x0b\x12\x1c\n\x17JHDCKJGDKBE_F\
+    BONLGBFFKK\x10\xcd\x0b\x12\x1c\n\x17JHDCKJGDKBE_PBHLDKNKIBM\x10\xac\x0b\
+    \x12\x1c\n\x17JHDCKJGDKBE_KAJMLFFMFMI\x10\xd0\x0b\x12\x1c\n\x17JHDCKJGDK\
+    BE_ONNJOPGHBBC\x10\x8e\x0b\x12\x1c\n\x17JHDCKJGDKBE_KNDDOLEHBKE\x10\xa0\
+    \x0b\x12\x1c\n\x17JHDCKJGDKBE_LBFEFJIFDAI\x10\xd4\x0bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

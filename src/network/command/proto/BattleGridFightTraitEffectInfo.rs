@@ -244,8 +244,57 @@ impl BattleGridFightTraitEffectInfo {
         }
     }
 
+    // .CPMNHNHKLBK LFIDNOAECMN = 105;
+
+    pub fn LFIDNOAECMN(&self) -> &super::CPMNHNHKLBK::CPMNHNHKLBK {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(ref v)) => v,
+            _ => <super::CPMNHNHKLBK::CPMNHNHKLBK as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LFIDNOAECMN(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_LFIDNOAECMN(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LFIDNOAECMN(&mut self, v: super::CPMNHNHKLBK::CPMNHNHKLBK) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LFIDNOAECMN(&mut self) -> &mut super::CPMNHNHKLBK::CPMNHNHKLBK {
+        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(_)) = self.NEBNJDMFELO {
+        } else {
+            self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(super::CPMNHNHKLBK::CPMNHNHKLBK::new()));
+        }
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LFIDNOAECMN(&mut self) -> super::CPMNHNHKLBK::CPMNHNHKLBK {
+        if self.has_LFIDNOAECMN() {
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CPMNHNHKLBK::CPMNHNHKLBK::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "effect_id",
@@ -279,6 +328,13 @@ impl BattleGridFightTraitEffectInfo {
             BattleGridFightTraitEffectInfo::JLCLHAKNMLL,
             BattleGridFightTraitEffectInfo::mut_JLCLHAKNMLL,
             BattleGridFightTraitEffectInfo::set_JLCLHAKNMLL,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CPMNHNHKLBK::CPMNHNHKLBK>(
+            "LFIDNOAECMN",
+            BattleGridFightTraitEffectInfo::has_LFIDNOAECMN,
+            BattleGridFightTraitEffectInfo::LFIDNOAECMN,
+            BattleGridFightTraitEffectInfo::mut_LFIDNOAECMN,
+            BattleGridFightTraitEffectInfo::set_LFIDNOAECMN,
         ));
         oneofs.push(battle_grid_fight_trait_effect_info::NEBNJDMFELO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleGridFightTraitEffectInfo>(
@@ -314,6 +370,9 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
                 834 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(is.read_message()?));
                 },
+                842 => {
+                    self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(is.read_message()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -347,6 +406,10 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -372,6 +435,9 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
                 &battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(104, v, os)?;
                 },
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::LFIDNOAECMN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(105, v, os)?;
+                },
             };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -392,6 +458,7 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
 
     fn clear(&mut self) {
         self.effect_id = 0;
+        self.NEBNJDMFELO = ::std::option::Option::None;
         self.NEBNJDMFELO = ::std::option::Option::None;
         self.NEBNJDMFELO = ::std::option::Option::None;
         self.NEBNJDMFELO = ::std::option::Option::None;
@@ -441,6 +508,8 @@ pub mod battle_grid_fight_trait_effect_info {
         TraitEffectLevelInfo(super::super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo),
         // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.JLCLHAKNMLL)
         JLCLHAKNMLL(super::super::KFMKBMJPEIC::KFMKBMJPEIC),
+        // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.LFIDNOAECMN)
+        LFIDNOAECMN(super::super::CPMNHNHKLBK::CPMNHNHKLBK),
     }
 
     impl ::protobuf::Oneof for NEBNJDMFELO {
@@ -462,15 +531,17 @@ pub mod battle_grid_fight_trait_effect_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$BattleGridFightTraitEffectInfo.proto\x1a&BattleGridFightTraitCoreRole\
-    Info.proto\x1a'BattleGridFigntAvatarCoreRoleInfo.proto\x1a#GridFightTrai\
-    tEffectLevelInfo.proto\x1a\x11KFMKBMJPEIC.proto\"\xf4\x02\n\x1eBattleGri\
-    dFightTraitEffectInfo\x12\x1b\n\teffect_id\x18\x01\x20\x01(\rR\x08effect\
-    Id\x12K\n\x0ftrait_core_role\x18e\x20\x01(\x0b2!.BattleGridFightTraitCor\
-    eRoleInfoH\0R\rtraitCoreRole\x12N\n\x10avatar_core_info\x18f\x20\x01(\
-    \x0b2\".BattleGridFigntAvatarCoreRoleInfoH\0R\x0eavatarCoreInfo\x12W\n\
-    \x17trait_effect_level_info\x18g\x20\x01(\x0b2\x1e.GridFightTraitEffectL\
-    evelInfoH\0R\x14traitEffectLevelInfo\x120\n\x0bJLCLHAKNMLL\x18h\x20\x01(\
-    \x0b2\x0c.KFMKBMJPEICH\0R\x0bJLCLHAKNMLLB\r\n\x0bNEBNJDMFELOb\x06proto3\
+    Info.proto\x1a'BattleGridFigntAvatarCoreRoleInfo.proto\x1a\x11CPMNHNHKLB\
+    K.proto\x1a#GridFightTraitEffectLevelInfo.proto\x1a\x11KFMKBMJPEIC.proto\
+    \"\xa6\x03\n\x1eBattleGridFightTraitEffectInfo\x12\x1b\n\teffect_id\x18\
+    \x01\x20\x01(\rR\x08effectId\x12K\n\x0ftrait_core_role\x18e\x20\x01(\x0b\
+    2!.BattleGridFightTraitCoreRoleInfoH\0R\rtraitCoreRole\x12N\n\x10avatar_\
+    core_info\x18f\x20\x01(\x0b2\".BattleGridFigntAvatarCoreRoleInfoH\0R\x0e\
+    avatarCoreInfo\x12W\n\x17trait_effect_level_info\x18g\x20\x01(\x0b2\x1e.\
+    GridFightTraitEffectLevelInfoH\0R\x14traitEffectLevelInfo\x120\n\x0bJLCL\
+    HAKNMLL\x18h\x20\x01(\x0b2\x0c.KFMKBMJPEICH\0R\x0bJLCLHAKNMLL\x120\n\x0b\
+    LFIDNOAECMN\x18i\x20\x01(\x0b2\x0c.CPMNHNHKLBKH\0R\x0bLFIDNOAECMNB\r\n\
+    \x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -487,9 +558,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(4);
+            let mut deps = ::std::vec::Vec::with_capacity(5);
             deps.push(super::BattleGridFightTraitCoreRoleInfo::file_descriptor().clone());
             deps.push(super::BattleGridFigntAvatarCoreRoleInfo::file_descriptor().clone());
+            deps.push(super::CPMNHNHKLBK::file_descriptor().clone());
             deps.push(super::GridFightTraitEffectLevelInfo::file_descriptor().clone());
             deps.push(super::KFMKBMJPEIC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

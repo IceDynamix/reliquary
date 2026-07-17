@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HJACHMJFEAH {
     // message fields
-    // @@protoc_insertion_point(field:HJACHMJFEAH.slot)
-    pub slot: u32,
     // @@protoc_insertion_point(field:HJACHMJFEAH.PCPDHEIEJFO)
     pub PCPDHEIEJFO: u32,
+    // @@protoc_insertion_point(field:HJACHMJFEAH.slot)
+    pub slot: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HJACHMJFEAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl HJACHMJFEAH {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &HJACHMJFEAH| { &m.slot },
-            |m: &mut HJACHMJFEAH| { &mut m.slot },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PCPDHEIEJFO",
             |m: &HJACHMJFEAH| { &m.PCPDHEIEJFO },
             |m: &mut HJACHMJFEAH| { &mut m.PCPDHEIEJFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &HJACHMJFEAH| { &m.slot },
+            |m: &mut HJACHMJFEAH| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HJACHMJFEAH>(
             "HJACHMJFEAH",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HJACHMJFEAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.slot = is.read_uint32()?;
-                },
                 8 => {
                     self.PCPDHEIEJFO = is.read_uint32()?;
+                },
+                16 => {
+                    self.slot = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for HJACHMJFEAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.slot);
-        }
         if self.PCPDHEIEJFO != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.PCPDHEIEJFO);
+        }
+        if self.slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for HJACHMJFEAH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != 0 {
-            os.write_uint32(2, self.slot)?;
-        }
         if self.PCPDHEIEJFO != 0 {
             os.write_uint32(1, self.PCPDHEIEJFO)?;
+        }
+        if self.slot != 0 {
+            os.write_uint32(2, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for HJACHMJFEAH {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
         self.PCPDHEIEJFO = 0;
+        self.slot = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HJACHMJFEAH {
         static instance: HJACHMJFEAH = HJACHMJFEAH {
-            slot: 0,
             PCPDHEIEJFO: 0,
+            slot: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HJACHMJFEAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HJACHMJFEAH.proto\"C\n\x0bHJACHMJFEAH\x12\x12\n\x04slot\x18\x02\
-    \x20\x01(\rR\x04slot\x12\x20\n\x0bPCPDHEIEJFO\x18\x01\x20\x01(\rR\x0bPCP\
-    DHEIEJFOb\x06proto3\
+    \n\x11HJACHMJFEAH.proto\"C\n\x0bHJACHMJFEAH\x12\x20\n\x0bPCPDHEIEJFO\x18\
+    \x01\x20\x01(\rR\x0bPCPDHEIEJFO\x12\x12\n\x04slot\x18\x02\x20\x01(\rR\
+    \x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

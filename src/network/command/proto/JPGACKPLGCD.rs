@@ -30,10 +30,10 @@ pub struct JPGACKPLGCD {
     // message fields
     // @@protoc_insertion_point(field:JPGACKPLGCD.KALACJBAPOA)
     pub KALACJBAPOA: bool,
-    // @@protoc_insertion_point(field:JPGACKPLGCD.IBLGOCFBOCO)
-    pub IBLGOCFBOCO: bool,
     // @@protoc_insertion_point(field:JPGACKPLGCD.FOKJIPGMKAN)
     pub FOKJIPGMKAN: bool,
+    // @@protoc_insertion_point(field:JPGACKPLGCD.IBLGOCFBOCO)
+    pub IBLGOCFBOCO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JPGACKPLGCD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl JPGACKPLGCD {
             |m: &mut JPGACKPLGCD| { &mut m.KALACJBAPOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBLGOCFBOCO",
-            |m: &JPGACKPLGCD| { &m.IBLGOCFBOCO },
-            |m: &mut JPGACKPLGCD| { &mut m.IBLGOCFBOCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOKJIPGMKAN",
             |m: &JPGACKPLGCD| { &m.FOKJIPGMKAN },
             |m: &mut JPGACKPLGCD| { &mut m.FOKJIPGMKAN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBLGOCFBOCO",
+            |m: &JPGACKPLGCD| { &m.IBLGOCFBOCO },
+            |m: &mut JPGACKPLGCD| { &mut m.IBLGOCFBOCO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPGACKPLGCD>(
             "JPGACKPLGCD",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for JPGACKPLGCD {
                 8 => {
                     self.KALACJBAPOA = is.read_bool()?;
                 },
-                24 => {
-                    self.IBLGOCFBOCO = is.read_bool()?;
-                },
                 16 => {
                     self.FOKJIPGMKAN = is.read_bool()?;
+                },
+                24 => {
+                    self.IBLGOCFBOCO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JPGACKPLGCD {
         if self.KALACJBAPOA != false {
             my_size += 1 + 1;
         }
-        if self.IBLGOCFBOCO != false {
+        if self.FOKJIPGMKAN != false {
             my_size += 1 + 1;
         }
-        if self.FOKJIPGMKAN != false {
+        if self.IBLGOCFBOCO != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -125,11 +125,11 @@ impl ::protobuf::Message for JPGACKPLGCD {
         if self.KALACJBAPOA != false {
             os.write_bool(1, self.KALACJBAPOA)?;
         }
-        if self.IBLGOCFBOCO != false {
-            os.write_bool(3, self.IBLGOCFBOCO)?;
-        }
         if self.FOKJIPGMKAN != false {
             os.write_bool(2, self.FOKJIPGMKAN)?;
+        }
+        if self.IBLGOCFBOCO != false {
+            os.write_bool(3, self.IBLGOCFBOCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for JPGACKPLGCD {
 
     fn clear(&mut self) {
         self.KALACJBAPOA = false;
-        self.IBLGOCFBOCO = false;
         self.FOKJIPGMKAN = false;
+        self.IBLGOCFBOCO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPGACKPLGCD {
         static instance: JPGACKPLGCD = JPGACKPLGCD {
             KALACJBAPOA: false,
-            IBLGOCFBOCO: false,
             FOKJIPGMKAN: false,
+            IBLGOCFBOCO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JPGACKPLGCD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPGACKPLGCD.proto\"s\n\x0bJPGACKPLGCD\x12\x20\n\x0bKALACJBAPOA\x18\
-    \x01\x20\x01(\x08R\x0bKALACJBAPOA\x12\x20\n\x0bIBLGOCFBOCO\x18\x03\x20\
-    \x01(\x08R\x0bIBLGOCFBOCO\x12\x20\n\x0bFOKJIPGMKAN\x18\x02\x20\x01(\x08R\
-    \x0bFOKJIPGMKANb\x06proto3\
+    \x01\x20\x01(\x08R\x0bKALACJBAPOA\x12\x20\n\x0bFOKJIPGMKAN\x18\x02\x20\
+    \x01(\x08R\x0bFOKJIPGMKAN\x12\x20\n\x0bIBLGOCFBOCO\x18\x03\x20\x01(\x08R\
+    \x0bIBLGOCFBOCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

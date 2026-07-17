@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPOKOPCGMAJ {
     // message fields
-    // @@protoc_insertion_point(field:BPOKOPCGMAJ.IFLBAAABKAI)
-    pub IFLBAAABKAI: i32,
+    // @@protoc_insertion_point(field:BPOKOPCGMAJ.change_value)
+    pub change_value: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BPOKOPCGMAJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BPOKOPCGMAJ {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFLBAAABKAI",
-            |m: &BPOKOPCGMAJ| { &m.IFLBAAABKAI },
-            |m: &mut BPOKOPCGMAJ| { &mut m.IFLBAAABKAI },
+            "change_value",
+            |m: &BPOKOPCGMAJ| { &m.change_value },
+            |m: &mut BPOKOPCGMAJ| { &mut m.change_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPOKOPCGMAJ>(
             "BPOKOPCGMAJ",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IFLBAAABKAI = is.read_int32()?;
+                32 => {
+                    self.change_value = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IFLBAAABKAI != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.IFLBAAABKAI);
+        if self.change_value != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.change_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFLBAAABKAI != 0 {
-            os.write_int32(9, self.IFLBAAABKAI)?;
+        if self.change_value != 0 {
+            os.write_int32(4, self.change_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     }
 
     fn clear(&mut self) {
-        self.IFLBAAABKAI = 0;
+        self.change_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPOKOPCGMAJ {
         static instance: BPOKOPCGMAJ = BPOKOPCGMAJ {
-            IFLBAAABKAI: 0,
+            change_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for BPOKOPCGMAJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPOKOPCGMAJ.proto\"/\n\x0bBPOKOPCGMAJ\x12\x20\n\x0bIFLBAAABKAI\x18\
-    \t\x20\x01(\x05R\x0bIFLBAAABKAIb\x06proto3\
+    \n\x11BPOKOPCGMAJ.proto\"0\n\x0bBPOKOPCGMAJ\x12!\n\x0cchange_value\x18\
+    \x04\x20\x01(\x05R\x0bchangeValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

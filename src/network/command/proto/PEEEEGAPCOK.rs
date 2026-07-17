@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PEEEEGAPCOK {
     // message fields
-    // @@protoc_insertion_point(field:PEEEEGAPCOK.AALDPOAKJBK)
-    pub AALDPOAKJBK: ::std::string::String,
-    // @@protoc_insertion_point(field:PEEEEGAPCOK.IKDEIJCEDIO)
-    pub IKDEIJCEDIO: u32,
-    // @@protoc_insertion_point(field:PEEEEGAPCOK.CMIEOOODDIA)
-    pub CMIEOOODDIA: i64,
     // @@protoc_insertion_point(field:PEEEEGAPCOK.PLPPPCEPBDO)
     pub PLPPPCEPBDO: u32,
+    // @@protoc_insertion_point(field:PEEEEGAPCOK.op_uid)
+    pub op_uid: u32,
     // @@protoc_insertion_point(field:PEEEEGAPCOK.OOCPKIGPEHP)
     pub OOCPKIGPEHP: u32,
+    // @@protoc_insertion_point(field:PEEEEGAPCOK.CMIEOOODDIA)
+    pub CMIEOOODDIA: i64,
+    // @@protoc_insertion_point(field:PEEEEGAPCOK.AALDPOAKJBK)
+    pub AALDPOAKJBK: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:PEEEEGAPCOK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl PEEEEGAPCOK {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AALDPOAKJBK",
-            |m: &PEEEEGAPCOK| { &m.AALDPOAKJBK },
-            |m: &mut PEEEEGAPCOK| { &mut m.AALDPOAKJBK },
+            "PLPPPCEPBDO",
+            |m: &PEEEEGAPCOK| { &m.PLPPPCEPBDO },
+            |m: &mut PEEEEGAPCOK| { &mut m.PLPPPCEPBDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKDEIJCEDIO",
-            |m: &PEEEEGAPCOK| { &m.IKDEIJCEDIO },
-            |m: &mut PEEEEGAPCOK| { &mut m.IKDEIJCEDIO },
+            "op_uid",
+            |m: &PEEEEGAPCOK| { &m.op_uid },
+            |m: &mut PEEEEGAPCOK| { &mut m.op_uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OOCPKIGPEHP",
+            |m: &PEEEEGAPCOK| { &m.OOCPKIGPEHP },
+            |m: &mut PEEEEGAPCOK| { &mut m.OOCPKIGPEHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CMIEOOODDIA",
@@ -73,14 +78,9 @@ impl PEEEEGAPCOK {
             |m: &mut PEEEEGAPCOK| { &mut m.CMIEOOODDIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLPPPCEPBDO",
-            |m: &PEEEEGAPCOK| { &m.PLPPPCEPBDO },
-            |m: &mut PEEEEGAPCOK| { &mut m.PLPPPCEPBDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOCPKIGPEHP",
-            |m: &PEEEEGAPCOK| { &m.OOCPKIGPEHP },
-            |m: &mut PEEEEGAPCOK| { &mut m.OOCPKIGPEHP },
+            "AALDPOAKJBK",
+            |m: &PEEEEGAPCOK| { &m.AALDPOAKJBK },
+            |m: &mut PEEEEGAPCOK| { &mut m.AALDPOAKJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEEEEGAPCOK>(
             "PEEEEGAPCOK",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PEEEEGAPCOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.AALDPOAKJBK = is.read_string()?;
+                8 => {
+                    self.PLPPPCEPBDO = is.read_uint32()?;
                 },
                 16 => {
-                    self.IKDEIJCEDIO = is.read_uint32()?;
+                    self.op_uid = is.read_uint32()?;
+                },
+                24 => {
+                    self.OOCPKIGPEHP = is.read_uint32()?;
                 },
                 32 => {
                     self.CMIEOOODDIA = is.read_int64()?;
                 },
-                8 => {
-                    self.PLPPPCEPBDO = is.read_uint32()?;
-                },
-                24 => {
-                    self.OOCPKIGPEHP = is.read_uint32()?;
+                42 => {
+                    self.AALDPOAKJBK = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for PEEEEGAPCOK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.AALDPOAKJBK.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.AALDPOAKJBK);
+        if self.PLPPPCEPBDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PLPPPCEPBDO);
         }
-        if self.IKDEIJCEDIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IKDEIJCEDIO);
+        if self.op_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.op_uid);
+        }
+        if self.OOCPKIGPEHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OOCPKIGPEHP);
         }
         if self.CMIEOOODDIA != 0 {
             my_size += ::protobuf::rt::int64_size(4, self.CMIEOOODDIA);
         }
-        if self.PLPPPCEPBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PLPPPCEPBDO);
-        }
-        if self.OOCPKIGPEHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OOCPKIGPEHP);
+        if !self.AALDPOAKJBK.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.AALDPOAKJBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for PEEEEGAPCOK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.AALDPOAKJBK.is_empty() {
-            os.write_string(5, &self.AALDPOAKJBK)?;
+        if self.PLPPPCEPBDO != 0 {
+            os.write_uint32(1, self.PLPPPCEPBDO)?;
         }
-        if self.IKDEIJCEDIO != 0 {
-            os.write_uint32(2, self.IKDEIJCEDIO)?;
+        if self.op_uid != 0 {
+            os.write_uint32(2, self.op_uid)?;
+        }
+        if self.OOCPKIGPEHP != 0 {
+            os.write_uint32(3, self.OOCPKIGPEHP)?;
         }
         if self.CMIEOOODDIA != 0 {
             os.write_int64(4, self.CMIEOOODDIA)?;
         }
-        if self.PLPPPCEPBDO != 0 {
-            os.write_uint32(1, self.PLPPPCEPBDO)?;
-        }
-        if self.OOCPKIGPEHP != 0 {
-            os.write_uint32(3, self.OOCPKIGPEHP)?;
+        if !self.AALDPOAKJBK.is_empty() {
+            os.write_string(5, &self.AALDPOAKJBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for PEEEEGAPCOK {
     }
 
     fn clear(&mut self) {
-        self.AALDPOAKJBK.clear();
-        self.IKDEIJCEDIO = 0;
-        self.CMIEOOODDIA = 0;
         self.PLPPPCEPBDO = 0;
+        self.op_uid = 0;
         self.OOCPKIGPEHP = 0;
+        self.CMIEOOODDIA = 0;
+        self.AALDPOAKJBK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PEEEEGAPCOK {
         static instance: PEEEEGAPCOK = PEEEEGAPCOK {
-            AALDPOAKJBK: ::std::string::String::new(),
-            IKDEIJCEDIO: 0,
-            CMIEOOODDIA: 0,
             PLPPPCEPBDO: 0,
+            op_uid: 0,
             OOCPKIGPEHP: 0,
+            CMIEOOODDIA: 0,
+            AALDPOAKJBK: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for PEEEEGAPCOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PEEEEGAPCOK.proto\"\xb7\x01\n\x0bPEEEEGAPCOK\x12\x20\n\x0bAALDPOAK\
-    JBK\x18\x05\x20\x01(\tR\x0bAALDPOAKJBK\x12\x20\n\x0bIKDEIJCEDIO\x18\x02\
-    \x20\x01(\rR\x0bIKDEIJCEDIO\x12\x20\n\x0bCMIEOOODDIA\x18\x04\x20\x01(\
-    \x03R\x0bCMIEOOODDIA\x12\x20\n\x0bPLPPPCEPBDO\x18\x01\x20\x01(\rR\x0bPLP\
-    PPCEPBDO\x12\x20\n\x0bOOCPKIGPEHP\x18\x03\x20\x01(\rR\x0bOOCPKIGPEHPb\
-    \x06proto3\
+    \n\x11PEEEEGAPCOK.proto\"\xac\x01\n\x0bPEEEEGAPCOK\x12\x20\n\x0bPLPPPCEP\
+    BDO\x18\x01\x20\x01(\rR\x0bPLPPPCEPBDO\x12\x15\n\x06op_uid\x18\x02\x20\
+    \x01(\rR\x05opUid\x12\x20\n\x0bOOCPKIGPEHP\x18\x03\x20\x01(\rR\x0bOOCPKI\
+    GPEHP\x12\x20\n\x0bCMIEOOODDIA\x18\x04\x20\x01(\x03R\x0bCMIEOOODDIA\x12\
+    \x20\n\x0bAALDPOAKJBK\x18\x05\x20\x01(\tR\x0bAALDPOAKJBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

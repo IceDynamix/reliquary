@@ -29,34 +29,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTalkEventType {
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_MNPGFLPBDLK)
     LAGOBKECEDB_MNPGFLPBDLK = 0,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_CGDCKICAEIL)
-    LAGOBKECEDB_CGDCKICAEIL = 2180,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_PBEPLMGLHHJ)
-    LAGOBKECEDB_PBEPLMGLHHJ = 2127,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_BECJLBLPNHG)
-    LAGOBKECEDB_BECJLBLPNHG = 2187,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_HNCHEKHCDLH)
-    LAGOBKECEDB_HNCHEKHCDLH = 2154,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_PEBGMODAAJE)
-    LAGOBKECEDB_PEBGMODAAJE = 2110,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_EPECNFIOLOP)
-    LAGOBKECEDB_EPECNFIOLOP = 2112,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_CPNNEDNLMCG)
-    LAGOBKECEDB_CPNNEDNLMCG = 2103,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_ANIFMPJBLKE)
-    LAGOBKECEDB_ANIFMPJBLKE = 2129,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_MJOOLIOLKBI)
-    LAGOBKECEDB_MJOOLIOLKBI = 2113,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_NPCAKFDNJED)
-    LAGOBKECEDB_NPCAKFDNJED = 2136,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_IJHKJBJLJCH)
-    LAGOBKECEDB_IJHKJBJLJCH = 2183,
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_IPAFFKCGCIP)
-    LAGOBKECEDB_IPAFFKCGCIP = 2115,
+    LAGOBKECEDB_IPAFFKCGCIP = 2186,
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_CGEKPNBMDKN)
-    LAGOBKECEDB_CGEKPNBMDKN = 2173,
+    LAGOBKECEDB_CGEKPNBMDKN = 2125,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_IJHKJBJLJCH)
+    LAGOBKECEDB_IJHKJBJLJCH = 2138,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_EPECNFIOLOP)
+    LAGOBKECEDB_EPECNFIOLOP = 2140,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_CPNNEDNLMCG)
+    LAGOBKECEDB_CPNNEDNLMCG = 2178,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_CGDCKICAEIL)
+    LAGOBKECEDB_CGDCKICAEIL = 2193,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_NPCAKFDNJED)
+    LAGOBKECEDB_NPCAKFDNJED = 2188,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_HNCHEKHCDLH)
+    LAGOBKECEDB_HNCHEKHCDLH = 2133,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_ANIFMPJBLKE)
+    LAGOBKECEDB_ANIFMPJBLKE = 2171,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_PBEPLMGLHHJ)
+    LAGOBKECEDB_PBEPLMGLHHJ = 2158,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_MJOOLIOLKBI)
+    LAGOBKECEDB_MJOOLIOLKBI = 2181,
     // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_AGBBELHLOMN)
-    LAGOBKECEDB_AGBBELHLOMN = 2181,
+    LAGOBKECEDB_AGBBELHLOMN = 2147,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_BECJLBLPNHG)
+    LAGOBKECEDB_BECJLBLPNHG = 2113,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.LAGOBKECEDB_PEBGMODAAJE)
+    LAGOBKECEDB_PEBGMODAAJE = 2126,
 }
 
 impl ::protobuf::Enum for CmdTalkEventType {
@@ -69,20 +69,20 @@ impl ::protobuf::Enum for CmdTalkEventType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTalkEventType> {
         match value {
             0 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MNPGFLPBDLK),
-            2180 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL),
-            2127 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ),
-            2187 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG),
-            2154 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH),
-            2110 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE),
-            2112 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP),
-            2103 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG),
-            2129 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE),
-            2113 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI),
-            2136 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED),
-            2183 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH),
-            2115 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP),
-            2173 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN),
-            2181 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN),
+            2186 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP),
+            2125 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN),
+            2138 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH),
+            2140 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP),
+            2178 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG),
+            2193 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL),
+            2188 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED),
+            2133 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH),
+            2171 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE),
+            2158 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ),
+            2181 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI),
+            2147 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN),
+            2113 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG),
+            2126 => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE),
             _ => ::std::option::Option::None
         }
     }
@@ -90,40 +90,40 @@ impl ::protobuf::Enum for CmdTalkEventType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTalkEventType> {
         match str {
             "LAGOBKECEDB_MNPGFLPBDLK" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MNPGFLPBDLK),
-            "LAGOBKECEDB_CGDCKICAEIL" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL),
-            "LAGOBKECEDB_PBEPLMGLHHJ" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ),
-            "LAGOBKECEDB_BECJLBLPNHG" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG),
-            "LAGOBKECEDB_HNCHEKHCDLH" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH),
-            "LAGOBKECEDB_PEBGMODAAJE" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE),
-            "LAGOBKECEDB_EPECNFIOLOP" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP),
-            "LAGOBKECEDB_CPNNEDNLMCG" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG),
-            "LAGOBKECEDB_ANIFMPJBLKE" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE),
-            "LAGOBKECEDB_MJOOLIOLKBI" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI),
-            "LAGOBKECEDB_NPCAKFDNJED" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED),
-            "LAGOBKECEDB_IJHKJBJLJCH" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH),
             "LAGOBKECEDB_IPAFFKCGCIP" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP),
             "LAGOBKECEDB_CGEKPNBMDKN" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN),
+            "LAGOBKECEDB_IJHKJBJLJCH" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH),
+            "LAGOBKECEDB_EPECNFIOLOP" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP),
+            "LAGOBKECEDB_CPNNEDNLMCG" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG),
+            "LAGOBKECEDB_CGDCKICAEIL" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL),
+            "LAGOBKECEDB_NPCAKFDNJED" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED),
+            "LAGOBKECEDB_HNCHEKHCDLH" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH),
+            "LAGOBKECEDB_ANIFMPJBLKE" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE),
+            "LAGOBKECEDB_PBEPLMGLHHJ" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ),
+            "LAGOBKECEDB_MJOOLIOLKBI" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI),
             "LAGOBKECEDB_AGBBELHLOMN" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN),
+            "LAGOBKECEDB_BECJLBLPNHG" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG),
+            "LAGOBKECEDB_PEBGMODAAJE" => ::std::option::Option::Some(CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTalkEventType] = &[
         CmdTalkEventType::LAGOBKECEDB_MNPGFLPBDLK,
-        CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL,
-        CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ,
-        CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG,
-        CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH,
-        CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE,
-        CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP,
-        CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG,
-        CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE,
-        CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI,
-        CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED,
-        CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH,
         CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP,
         CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN,
+        CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH,
+        CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP,
+        CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG,
+        CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL,
+        CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED,
+        CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH,
+        CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE,
+        CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ,
+        CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI,
         CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN,
+        CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG,
+        CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE,
     ];
 }
 
@@ -136,20 +136,20 @@ impl ::protobuf::EnumFull for CmdTalkEventType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTalkEventType::LAGOBKECEDB_MNPGFLPBDLK => 0,
-            CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL => 1,
-            CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ => 2,
-            CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG => 3,
-            CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH => 4,
-            CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE => 5,
-            CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP => 6,
-            CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG => 7,
-            CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE => 8,
-            CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI => 9,
-            CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED => 10,
-            CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH => 11,
-            CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP => 12,
-            CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN => 13,
-            CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN => 14,
+            CmdTalkEventType::LAGOBKECEDB_IPAFFKCGCIP => 1,
+            CmdTalkEventType::LAGOBKECEDB_CGEKPNBMDKN => 2,
+            CmdTalkEventType::LAGOBKECEDB_IJHKJBJLJCH => 3,
+            CmdTalkEventType::LAGOBKECEDB_EPECNFIOLOP => 4,
+            CmdTalkEventType::LAGOBKECEDB_CPNNEDNLMCG => 5,
+            CmdTalkEventType::LAGOBKECEDB_CGDCKICAEIL => 6,
+            CmdTalkEventType::LAGOBKECEDB_NPCAKFDNJED => 7,
+            CmdTalkEventType::LAGOBKECEDB_HNCHEKHCDLH => 8,
+            CmdTalkEventType::LAGOBKECEDB_ANIFMPJBLKE => 9,
+            CmdTalkEventType::LAGOBKECEDB_PBEPLMGLHHJ => 10,
+            CmdTalkEventType::LAGOBKECEDB_MJOOLIOLKBI => 11,
+            CmdTalkEventType::LAGOBKECEDB_AGBBELHLOMN => 12,
+            CmdTalkEventType::LAGOBKECEDB_BECJLBLPNHG => 13,
+            CmdTalkEventType::LAGOBKECEDB_PEBGMODAAJE => 14,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -169,17 +169,17 @@ impl CmdTalkEventType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdTalkEventType.proto*\xd3\x03\n\x10CmdTalkEventType\x12\x1b\n\
-    \x17LAGOBKECEDB_MNPGFLPBDLK\x10\0\x12\x1c\n\x17LAGOBKECEDB_CGDCKICAEIL\
-    \x10\x84\x11\x12\x1c\n\x17LAGOBKECEDB_PBEPLMGLHHJ\x10\xcf\x10\x12\x1c\n\
-    \x17LAGOBKECEDB_BECJLBLPNHG\x10\x8b\x11\x12\x1c\n\x17LAGOBKECEDB_HNCHEKH\
-    CDLH\x10\xea\x10\x12\x1c\n\x17LAGOBKECEDB_PEBGMODAAJE\x10\xbe\x10\x12\
-    \x1c\n\x17LAGOBKECEDB_EPECNFIOLOP\x10\xc0\x10\x12\x1c\n\x17LAGOBKECEDB_C\
-    PNNEDNLMCG\x10\xb7\x10\x12\x1c\n\x17LAGOBKECEDB_ANIFMPJBLKE\x10\xd1\x10\
-    \x12\x1c\n\x17LAGOBKECEDB_MJOOLIOLKBI\x10\xc1\x10\x12\x1c\n\x17LAGOBKECE\
-    DB_NPCAKFDNJED\x10\xd8\x10\x12\x1c\n\x17LAGOBKECEDB_IJHKJBJLJCH\x10\x87\
-    \x11\x12\x1c\n\x17LAGOBKECEDB_IPAFFKCGCIP\x10\xc3\x10\x12\x1c\n\x17LAGOB\
-    KECEDB_CGEKPNBMDKN\x10\xfd\x10\x12\x1c\n\x17LAGOBKECEDB_AGBBELHLOMN\x10\
-    \x85\x11b\x06proto3\
+    \x17LAGOBKECEDB_MNPGFLPBDLK\x10\0\x12\x1c\n\x17LAGOBKECEDB_IPAFFKCGCIP\
+    \x10\x8a\x11\x12\x1c\n\x17LAGOBKECEDB_CGEKPNBMDKN\x10\xcd\x10\x12\x1c\n\
+    \x17LAGOBKECEDB_IJHKJBJLJCH\x10\xda\x10\x12\x1c\n\x17LAGOBKECEDB_EPECNFI\
+    OLOP\x10\xdc\x10\x12\x1c\n\x17LAGOBKECEDB_CPNNEDNLMCG\x10\x82\x11\x12\
+    \x1c\n\x17LAGOBKECEDB_CGDCKICAEIL\x10\x91\x11\x12\x1c\n\x17LAGOBKECEDB_N\
+    PCAKFDNJED\x10\x8c\x11\x12\x1c\n\x17LAGOBKECEDB_HNCHEKHCDLH\x10\xd5\x10\
+    \x12\x1c\n\x17LAGOBKECEDB_ANIFMPJBLKE\x10\xfb\x10\x12\x1c\n\x17LAGOBKECE\
+    DB_PBEPLMGLHHJ\x10\xee\x10\x12\x1c\n\x17LAGOBKECEDB_MJOOLIOLKBI\x10\x85\
+    \x11\x12\x1c\n\x17LAGOBKECEDB_AGBBELHLOMN\x10\xe3\x10\x12\x1c\n\x17LAGOB\
+    KECEDB_BECJLBLPNHG\x10\xc1\x10\x12\x1c\n\x17LAGOBKECEDB_PEBGMODAAJE\x10\
+    \xce\x10b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

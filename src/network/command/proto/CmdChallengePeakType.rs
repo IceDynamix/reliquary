@@ -29,46 +29,46 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdChallengePeakType {
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_NLCDGIPGFDJ)
     GHGFEJEHGDM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LCJOEDMEKDN)
-    GHGFEJEHGDM_LCJOEDMEKDN = 8907,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_APOCCPDOGOL)
-    GHGFEJEHGDM_APOCCPDOGOL = 8929,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_OHDGEJLCAHA)
-    GHGFEJEHGDM_OHDGEJLCAHA = 8908,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HIMPPADFCCO)
-    GHGFEJEHGDM_HIMPPADFCCO = 8918,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_ELLHHFBMILA)
-    GHGFEJEHGDM_ELLHHFBMILA = 8912,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LAMJHJMCEPD)
-    GHGFEJEHGDM_LAMJHJMCEPD = 8945,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_PGAGCAMLDCB)
-    GHGFEJEHGDM_PGAGCAMLDCB = 8909,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_GDGEAGHJOJP)
-    GHGFEJEHGDM_GDGEAGHJOJP = 8941,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_MHKIBOMNCIP)
-    GHGFEJEHGDM_MHKIBOMNCIP = 8934,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_NCHOGHFCMPB)
-    GHGFEJEHGDM_NCHOGHFCMPB = 8923,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_JPLEJIHMAIO)
-    GHGFEJEHGDM_JPLEJIHMAIO = 8942,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CGHCPGNIHEH)
-    GHGFEJEHGDM_CGHCPGNIHEH = 8932,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_IGPMJGAHOPM)
-    GHGFEJEHGDM_IGPMJGAHOPM = 8921,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LBAFAPCBFLD)
-    GHGFEJEHGDM_LBAFAPCBFLD = 8944,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_EFBBFHBDDBH)
-    GHGFEJEHGDM_EFBBFHBDDBH = 8919,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_AEGHKHLKDEF)
-    GHGFEJEHGDM_AEGHKHLKDEF = 8927,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HBKMIEPLHOM)
-    GHGFEJEHGDM_HBKMIEPLHOM = 8943,
+    GHGFEJEHGDM_PGAGCAMLDCB = 8910,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HIMPPADFCCO)
+    GHGFEJEHGDM_HIMPPADFCCO = 8943,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_KAMEEPBPLJD)
-    GHGFEJEHGDM_KAMEEPBPLJD = 8905,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CMJGNICBNNE)
-    GHGFEJEHGDM_CMJGNICBNNE = 8940,
+    GHGFEJEHGDM_KAMEEPBPLJD = 8933,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LAMJHJMCEPD)
+    GHGFEJEHGDM_LAMJHJMCEPD = 8907,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HBKMIEPLHOM)
+    GHGFEJEHGDM_HBKMIEPLHOM = 8924,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CGHCPGNIHEH)
+    GHGFEJEHGDM_CGHCPGNIHEH = 8909,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_JPLEJIHMAIO)
+    GHGFEJEHGDM_JPLEJIHMAIO = 8923,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_AEGHKHLKDEF)
+    GHGFEJEHGDM_AEGHKHLKDEF = 8948,
     // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_KALFCEDOGGO)
-    GHGFEJEHGDM_KALFCEDOGGO = 8920,
+    GHGFEJEHGDM_KALFCEDOGGO = 8935,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_NCHOGHFCMPB)
+    GHGFEJEHGDM_NCHOGHFCMPB = 8944,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LCJOEDMEKDN)
+    GHGFEJEHGDM_LCJOEDMEKDN = 8937,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_APOCCPDOGOL)
+    GHGFEJEHGDM_APOCCPDOGOL = 8921,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_EFBBFHBDDBH)
+    GHGFEJEHGDM_EFBBFHBDDBH = 8903,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LBAFAPCBFLD)
+    GHGFEJEHGDM_LBAFAPCBFLD = 8919,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_GDGEAGHJOJP)
+    GHGFEJEHGDM_GDGEAGHJOJP = 8918,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_ELLHHFBMILA)
+    GHGFEJEHGDM_ELLHHFBMILA = 8915,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_OHDGEJLCAHA)
+    GHGFEJEHGDM_OHDGEJLCAHA = 8906,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_IGPMJGAHOPM)
+    GHGFEJEHGDM_IGPMJGAHOPM = 8917,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_MHKIBOMNCIP)
+    GHGFEJEHGDM_MHKIBOMNCIP = 8920,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CMJGNICBNNE)
+    GHGFEJEHGDM_CMJGNICBNNE = 8929,
 }
 
 impl ::protobuf::Enum for CmdChallengePeakType {
@@ -81,26 +81,26 @@ impl ::protobuf::Enum for CmdChallengePeakType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdChallengePeakType> {
         match value {
             0 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ),
-            8907 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN),
-            8929 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL),
-            8908 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
-            8918 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
-            8912 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
-            8945 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
-            8909 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
-            8941 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
-            8934 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
-            8923 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
-            8942 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
-            8932 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
-            8921 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
-            8944 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
-            8919 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH),
-            8927 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
-            8943 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
-            8905 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
-            8940 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE),
-            8920 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
+            8910 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
+            8943 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
+            8933 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
+            8907 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
+            8924 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
+            8909 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
+            8923 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
+            8948 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
+            8935 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
+            8944 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
+            8937 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN),
+            8921 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL),
+            8903 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH),
+            8919 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
+            8918 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
+            8915 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
+            8906 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
+            8917 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
+            8920 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
+            8929 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE),
             _ => ::std::option::Option::None
         }
     }
@@ -108,52 +108,52 @@ impl ::protobuf::Enum for CmdChallengePeakType {
     fn from_str(str: &str) -> ::std::option::Option<CmdChallengePeakType> {
         match str {
             "GHGFEJEHGDM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ),
+            "GHGFEJEHGDM_PGAGCAMLDCB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
+            "GHGFEJEHGDM_HIMPPADFCCO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
+            "GHGFEJEHGDM_KAMEEPBPLJD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
+            "GHGFEJEHGDM_LAMJHJMCEPD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
+            "GHGFEJEHGDM_HBKMIEPLHOM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
+            "GHGFEJEHGDM_CGHCPGNIHEH" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
+            "GHGFEJEHGDM_JPLEJIHMAIO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
+            "GHGFEJEHGDM_AEGHKHLKDEF" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
+            "GHGFEJEHGDM_KALFCEDOGGO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
+            "GHGFEJEHGDM_NCHOGHFCMPB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
             "GHGFEJEHGDM_LCJOEDMEKDN" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN),
             "GHGFEJEHGDM_APOCCPDOGOL" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL),
-            "GHGFEJEHGDM_OHDGEJLCAHA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
-            "GHGFEJEHGDM_HIMPPADFCCO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
-            "GHGFEJEHGDM_ELLHHFBMILA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
-            "GHGFEJEHGDM_LAMJHJMCEPD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
-            "GHGFEJEHGDM_PGAGCAMLDCB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
-            "GHGFEJEHGDM_GDGEAGHJOJP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
-            "GHGFEJEHGDM_MHKIBOMNCIP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
-            "GHGFEJEHGDM_NCHOGHFCMPB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
-            "GHGFEJEHGDM_JPLEJIHMAIO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
-            "GHGFEJEHGDM_CGHCPGNIHEH" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
-            "GHGFEJEHGDM_IGPMJGAHOPM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
-            "GHGFEJEHGDM_LBAFAPCBFLD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
             "GHGFEJEHGDM_EFBBFHBDDBH" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH),
-            "GHGFEJEHGDM_AEGHKHLKDEF" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
-            "GHGFEJEHGDM_HBKMIEPLHOM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
-            "GHGFEJEHGDM_KAMEEPBPLJD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
+            "GHGFEJEHGDM_LBAFAPCBFLD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
+            "GHGFEJEHGDM_GDGEAGHJOJP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
+            "GHGFEJEHGDM_ELLHHFBMILA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
+            "GHGFEJEHGDM_OHDGEJLCAHA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
+            "GHGFEJEHGDM_IGPMJGAHOPM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
+            "GHGFEJEHGDM_MHKIBOMNCIP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
             "GHGFEJEHGDM_CMJGNICBNNE" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE),
-            "GHGFEJEHGDM_KALFCEDOGGO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChallengePeakType] = &[
         CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ,
+        CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB,
+        CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO,
+        CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD,
+        CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD,
+        CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM,
+        CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH,
+        CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO,
+        CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF,
+        CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO,
+        CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB,
         CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN,
         CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL,
-        CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA,
-        CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO,
-        CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA,
-        CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD,
-        CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB,
-        CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP,
-        CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP,
-        CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB,
-        CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO,
-        CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH,
-        CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM,
-        CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD,
         CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH,
-        CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF,
-        CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM,
-        CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD,
+        CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD,
+        CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP,
+        CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA,
+        CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA,
+        CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM,
+        CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP,
         CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE,
-        CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO,
     ];
 }
 
@@ -166,26 +166,26 @@ impl ::protobuf::EnumFull for CmdChallengePeakType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ => 0,
-            CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN => 1,
-            CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL => 2,
-            CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA => 3,
-            CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO => 4,
-            CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA => 5,
-            CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD => 6,
-            CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB => 7,
-            CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP => 8,
-            CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP => 9,
+            CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB => 1,
+            CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO => 2,
+            CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD => 3,
+            CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD => 4,
+            CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM => 5,
+            CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH => 6,
+            CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO => 7,
+            CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF => 8,
+            CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO => 9,
             CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB => 10,
-            CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO => 11,
-            CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH => 12,
-            CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM => 13,
+            CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN => 11,
+            CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL => 12,
+            CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH => 13,
             CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD => 14,
-            CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH => 15,
-            CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF => 16,
-            CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM => 17,
-            CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD => 18,
-            CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE => 19,
-            CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO => 20,
+            CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP => 15,
+            CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA => 16,
+            CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA => 17,
+            CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM => 18,
+            CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP => 19,
+            CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,20 +205,20 @@ impl CmdChallengePeakType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCmdChallengePeakType.proto*\x8b\x05\n\x14CmdChallengePeakType\x12\
-    \x1b\n\x17GHGFEJEHGDM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GHGFEJEHGDM_LCJOEDM\
-    EKDN\x10\xcbE\x12\x1c\n\x17GHGFEJEHGDM_APOCCPDOGOL\x10\xe1E\x12\x1c\n\
-    \x17GHGFEJEHGDM_OHDGEJLCAHA\x10\xccE\x12\x1c\n\x17GHGFEJEHGDM_HIMPPADFCC\
-    O\x10\xd6E\x12\x1c\n\x17GHGFEJEHGDM_ELLHHFBMILA\x10\xd0E\x12\x1c\n\x17GH\
-    GFEJEHGDM_LAMJHJMCEPD\x10\xf1E\x12\x1c\n\x17GHGFEJEHGDM_PGAGCAMLDCB\x10\
-    \xcdE\x12\x1c\n\x17GHGFEJEHGDM_GDGEAGHJOJP\x10\xedE\x12\x1c\n\x17GHGFEJE\
-    HGDM_MHKIBOMNCIP\x10\xe6E\x12\x1c\n\x17GHGFEJEHGDM_NCHOGHFCMPB\x10\xdbE\
-    \x12\x1c\n\x17GHGFEJEHGDM_JPLEJIHMAIO\x10\xeeE\x12\x1c\n\x17GHGFEJEHGDM_\
-    CGHCPGNIHEH\x10\xe4E\x12\x1c\n\x17GHGFEJEHGDM_IGPMJGAHOPM\x10\xd9E\x12\
-    \x1c\n\x17GHGFEJEHGDM_LBAFAPCBFLD\x10\xf0E\x12\x1c\n\x17GHGFEJEHGDM_EFBB\
-    FHBDDBH\x10\xd7E\x12\x1c\n\x17GHGFEJEHGDM_AEGHKHLKDEF\x10\xdfE\x12\x1c\n\
-    \x17GHGFEJEHGDM_HBKMIEPLHOM\x10\xefE\x12\x1c\n\x17GHGFEJEHGDM_KAMEEPBPLJ\
-    D\x10\xc9E\x12\x1c\n\x17GHGFEJEHGDM_CMJGNICBNNE\x10\xecE\x12\x1c\n\x17GH\
-    GFEJEHGDM_KALFCEDOGGO\x10\xd8Eb\x06proto3\
+    \x1b\n\x17GHGFEJEHGDM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GHGFEJEHGDM_PGAGCAM\
+    LDCB\x10\xceE\x12\x1c\n\x17GHGFEJEHGDM_HIMPPADFCCO\x10\xefE\x12\x1c\n\
+    \x17GHGFEJEHGDM_KAMEEPBPLJD\x10\xe5E\x12\x1c\n\x17GHGFEJEHGDM_LAMJHJMCEP\
+    D\x10\xcbE\x12\x1c\n\x17GHGFEJEHGDM_HBKMIEPLHOM\x10\xdcE\x12\x1c\n\x17GH\
+    GFEJEHGDM_CGHCPGNIHEH\x10\xcdE\x12\x1c\n\x17GHGFEJEHGDM_JPLEJIHMAIO\x10\
+    \xdbE\x12\x1c\n\x17GHGFEJEHGDM_AEGHKHLKDEF\x10\xf4E\x12\x1c\n\x17GHGFEJE\
+    HGDM_KALFCEDOGGO\x10\xe7E\x12\x1c\n\x17GHGFEJEHGDM_NCHOGHFCMPB\x10\xf0E\
+    \x12\x1c\n\x17GHGFEJEHGDM_LCJOEDMEKDN\x10\xe9E\x12\x1c\n\x17GHGFEJEHGDM_\
+    APOCCPDOGOL\x10\xd9E\x12\x1c\n\x17GHGFEJEHGDM_EFBBFHBDDBH\x10\xc7E\x12\
+    \x1c\n\x17GHGFEJEHGDM_LBAFAPCBFLD\x10\xd7E\x12\x1c\n\x17GHGFEJEHGDM_GDGE\
+    AGHJOJP\x10\xd6E\x12\x1c\n\x17GHGFEJEHGDM_ELLHHFBMILA\x10\xd3E\x12\x1c\n\
+    \x17GHGFEJEHGDM_OHDGEJLCAHA\x10\xcaE\x12\x1c\n\x17GHGFEJEHGDM_IGPMJGAHOP\
+    M\x10\xd5E\x12\x1c\n\x17GHGFEJEHGDM_MHKIBOMNCIP\x10\xd8E\x12\x1c\n\x17GH\
+    GFEJEHGDM_CMJGNICBNNE\x10\xe1Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

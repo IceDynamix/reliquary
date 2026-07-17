@@ -72,7 +72,7 @@ impl ::protobuf::Message for DAENHKENJHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                18 => {
                     self.buff_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DAENHKENJHK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for DAENHKENJHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DAENHKENJHK.proto\x1a\x11KJEOBMBMNIN.proto\"8\n\x0bDAENHKENJHK\x12\
-    )\n\tbuff_list\x18\x04\x20\x03(\x0b2\x0c.KJEOBMBMNINR\x08buffListb\x06pr\
+    )\n\tbuff_list\x18\x02\x20\x03(\x0b2\x0c.KJEOBMBMNINR\x08buffListb\x06pr\
     oto3\
 ";
 

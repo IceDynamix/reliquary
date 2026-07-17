@@ -30,8 +30,8 @@ pub struct NAPFNBJDIOO {
     // message fields
     // @@protoc_insertion_point(field:NAPFNBJDIOO.MCGGEAAHBPD)
     pub MCGGEAAHBPD: ::protobuf::MessageField<super::EHKDAJFLIEI::EHKDAJFLIEI>,
-    // @@protoc_insertion_point(field:NAPFNBJDIOO.OEEDEIKJJJN)
-    pub OEEDEIKJJJN: ::protobuf::MessageField<super::IOHKFHBGICD::IOHKFHBGICD>,
+    // @@protoc_insertion_point(field:NAPFNBJDIOO.reward_item)
+    pub reward_item: ::protobuf::MessageField<super::IOHKFHBGICD::IOHKFHBGICD>,
     // special fields
     // @@protoc_insertion_point(special_field:NAPFNBJDIOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl NAPFNBJDIOO {
             |m: &mut NAPFNBJDIOO| { &mut m.MCGGEAAHBPD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IOHKFHBGICD::IOHKFHBGICD>(
-            "OEEDEIKJJJN",
-            |m: &NAPFNBJDIOO| { &m.OEEDEIKJJJN },
-            |m: &mut NAPFNBJDIOO| { &mut m.OEEDEIKJJJN },
+            "reward_item",
+            |m: &NAPFNBJDIOO| { &m.reward_item },
+            |m: &mut NAPFNBJDIOO| { &mut m.reward_item },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NAPFNBJDIOO>(
             "NAPFNBJDIOO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NAPFNBJDIOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCGGEAAHBPD)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEEDEIKJJJN)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_item)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NAPFNBJDIOO {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OEEDEIKJJJN.as_ref() {
+        if let Some(v) = self.reward_item.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -112,10 +112,10 @@ impl ::protobuf::Message for NAPFNBJDIOO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MCGGEAAHBPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.OEEDEIKJJJN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.reward_item.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for NAPFNBJDIOO {
 
     fn clear(&mut self) {
         self.MCGGEAAHBPD.clear();
-        self.OEEDEIKJJJN.clear();
+        self.reward_item.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NAPFNBJDIOO {
         static instance: NAPFNBJDIOO = NAPFNBJDIOO {
             MCGGEAAHBPD: ::protobuf::MessageField::none(),
-            OEEDEIKJJJN: ::protobuf::MessageField::none(),
+            reward_item: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for NAPFNBJDIOO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NAPFNBJDIOO.proto\x1a\x11EHKDAJFLIEI.proto\x1a\x11IOHKFHBGICD.prot\
-    o\"m\n\x0bNAPFNBJDIOO\x12.\n\x0bMCGGEAAHBPD\x18\x05\x20\x01(\x0b2\x0c.EH\
-    KDAJFLIEIR\x0bMCGGEAAHBPD\x12.\n\x0bOEEDEIKJJJN\x18\x02\x20\x01(\x0b2\
-    \x0c.IOHKFHBGICDR\x0bOEEDEIKJJJNb\x06proto3\
+    o\"l\n\x0bNAPFNBJDIOO\x12.\n\x0bMCGGEAAHBPD\x18\t\x20\x01(\x0b2\x0c.EHKD\
+    AJFLIEIR\x0bMCGGEAAHBPD\x12-\n\x0breward_item\x18\x0c\x20\x01(\x0b2\x0c.\
+    IOHKFHBGICDR\nrewardItemb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

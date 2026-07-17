@@ -30,15 +30,13 @@ pub enum CmdRaidCollectionType {
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_NLCDGIPGFDJ)
     ONNDCODLMGD_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_HIKIBFCIKBA)
-    ONNDCODLMGD_HIKIBFCIKBA = 6960,
+    ONNDCODLMGD_HIKIBFCIKBA = 6952,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_LNFHMGKBNEO)
     ONNDCODLMGD_LNFHMGKBNEO = 6958,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_BIHBGPPKCNL)
-    ONNDCODLMGD_BIHBGPPKCNL = 6946,
+    ONNDCODLMGD_BIHBGPPKCNL = 6948,
     // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_BNAFMMKMELE)
     ONNDCODLMGD_BNAFMMKMELE = 6942,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_KKBBOIFDIDA)
-    ONNDCODLMGD_KKBBOIFDIDA = 6956,
 }
 
 impl ::protobuf::Enum for CmdRaidCollectionType {
@@ -51,11 +49,10 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidCollectionType> {
         match value {
             0 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ),
-            6960 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA),
+            6952 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA),
             6958 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO),
-            6946 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL),
+            6948 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL),
             6942 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE),
-            6956 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA),
             _ => ::std::option::Option::None
         }
     }
@@ -67,7 +64,6 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
             "ONNDCODLMGD_LNFHMGKBNEO" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO),
             "ONNDCODLMGD_BIHBGPPKCNL" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL),
             "ONNDCODLMGD_BNAFMMKMELE" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE),
-            "ONNDCODLMGD_KKBBOIFDIDA" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA),
             _ => ::std::option::Option::None
         }
     }
@@ -78,7 +74,6 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
         CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO,
         CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL,
         CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE,
-        CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA,
     ];
 }
 
@@ -95,7 +90,6 @@ impl ::protobuf::EnumFull for CmdRaidCollectionType {
             CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO => 2,
             CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL => 3,
             CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE => 4,
-            CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -114,11 +108,11 @@ impl CmdRaidCollectionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdRaidCollectionType.proto*\xca\x01\n\x15CmdRaidCollectionType\
+    \n\x1bCmdRaidCollectionType.proto*\xac\x01\n\x15CmdRaidCollectionType\
     \x12\x1b\n\x17ONNDCODLMGD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONNDCODLMGD_HIK\
-    IBFCIKBA\x10\xb06\x12\x1c\n\x17ONNDCODLMGD_LNFHMGKBNEO\x10\xae6\x12\x1c\
-    \n\x17ONNDCODLMGD_BIHBGPPKCNL\x10\xa26\x12\x1c\n\x17ONNDCODLMGD_BNAFMMKM\
-    ELE\x10\x9e6\x12\x1c\n\x17ONNDCODLMGD_KKBBOIFDIDA\x10\xac6b\x06proto3\
+    IBFCIKBA\x10\xa86\x12\x1c\n\x17ONNDCODLMGD_LNFHMGKBNEO\x10\xae6\x12\x1c\
+    \n\x17ONNDCODLMGD_BIHBGPPKCNL\x10\xa46\x12\x1c\n\x17ONNDCODLMGD_BNAFMMKM\
+    ELE\x10\x9e6b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

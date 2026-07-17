@@ -72,10 +72,10 @@ impl ::protobuf::Message for GetMatchPlayDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                120 => {
                     self.LCCHAKBKAHL.push(is.read_enum_or_unknown()?);
                 },
-                42 => {
+                122 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.LCCHAKBKAHL)?
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetMatchPlayDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(5, &self.LCCHAKBKAHL);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(15, &self.LCCHAKBKAHL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(5, &self.LCCHAKBKAHL)?;
+        os.write_repeated_packed_enum_or_unknown(15, &self.LCCHAKBKAHL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for GetMatchPlayDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetMatchPlayDataCsReq.proto\x1a\x13FightGameMode.proto\"I\n\x15Get\
-    MatchPlayDataCsReq\x120\n\x0bLCCHAKBKAHL\x18\x05\x20\x03(\x0e2\x0e.Fight\
+    MatchPlayDataCsReq\x120\n\x0bLCCHAKBKAHL\x18\x0f\x20\x03(\x0e2\x0e.Fight\
     GameModeR\x0bLCCHAKBKAHLb\x06proto3\
 ";
 

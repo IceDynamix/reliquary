@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPamMissionType {
     // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_NLCDGIPGFDJ)
     KMGNIGGHMBM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_GOFMDEDHENA)
-    KMGNIGGHMBM_GOFMDEDHENA = 4003,
-    // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_HNHCOMDJGJI)
-    KMGNIGGHMBM_HNHCOMDJGJI = 4073,
     // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_MCKELFANPPI)
-    KMGNIGGHMBM_MCKELFANPPI = 4080,
+    KMGNIGGHMBM_MCKELFANPPI = 4093,
+    // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_HNHCOMDJGJI)
+    KMGNIGGHMBM_HNHCOMDJGJI = 4025,
+    // @@protoc_insertion_point(enum_value:CmdPamMissionType.KMGNIGGHMBM_GOFMDEDHENA)
+    KMGNIGGHMBM_GOFMDEDHENA = 4078,
 }
 
 impl ::protobuf::Enum for CmdPamMissionType {
@@ -47,9 +47,9 @@ impl ::protobuf::Enum for CmdPamMissionType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPamMissionType> {
         match value {
             0 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_NLCDGIPGFDJ),
-            4003 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA),
-            4073 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI),
-            4080 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI),
+            4093 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI),
+            4025 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI),
+            4078 => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA),
             _ => ::std::option::Option::None
         }
     }
@@ -57,18 +57,18 @@ impl ::protobuf::Enum for CmdPamMissionType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPamMissionType> {
         match str {
             "KMGNIGGHMBM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_NLCDGIPGFDJ),
-            "KMGNIGGHMBM_GOFMDEDHENA" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA),
-            "KMGNIGGHMBM_HNHCOMDJGJI" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI),
             "KMGNIGGHMBM_MCKELFANPPI" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI),
+            "KMGNIGGHMBM_HNHCOMDJGJI" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI),
+            "KMGNIGGHMBM_GOFMDEDHENA" => ::std::option::Option::Some(CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPamMissionType] = &[
         CmdPamMissionType::KMGNIGGHMBM_NLCDGIPGFDJ,
-        CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA,
-        CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI,
         CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI,
+        CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI,
+        CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA,
     ];
 }
 
@@ -81,9 +81,9 @@ impl ::protobuf::EnumFull for CmdPamMissionType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPamMissionType::KMGNIGGHMBM_NLCDGIPGFDJ => 0,
-            CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA => 1,
+            CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI => 1,
             CmdPamMissionType::KMGNIGGHMBM_HNHCOMDJGJI => 2,
-            CmdPamMissionType::KMGNIGGHMBM_MCKELFANPPI => 3,
+            CmdPamMissionType::KMGNIGGHMBM_GOFMDEDHENA => 3,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,9 +103,9 @@ impl CmdPamMissionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdPamMissionType.proto*\x8a\x01\n\x11CmdPamMissionType\x12\x1b\n\
-    \x17KMGNIGGHMBM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_GOFMDEDHENA\
-    \x10\xa3\x1f\x12\x1c\n\x17KMGNIGGHMBM_HNHCOMDJGJI\x10\xe9\x1f\x12\x1c\n\
-    \x17KMGNIGGHMBM_MCKELFANPPI\x10\xf0\x1fb\x06proto3\
+    \x17KMGNIGGHMBM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_MCKELFANPPI\
+    \x10\xfd\x1f\x12\x1c\n\x17KMGNIGGHMBM_HNHCOMDJGJI\x10\xb9\x1f\x12\x1c\n\
+    \x17KMGNIGGHMBM_GOFMDEDHENA\x10\xee\x1fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

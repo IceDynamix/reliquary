@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOAJKNKDAOD {
     // message fields
-    // @@protoc_insertion_point(field:EOAJKNKDAOD.DJNDMMIKFHN)
-    pub DJNDMMIKFHN: ::std::vec::Vec<super::HBFODNLIBFI::HBFODNLIBFI>,
     // @@protoc_insertion_point(field:EOAJKNKDAOD.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:EOAJKNKDAOD.DJNDMMIKFHN)
+    pub DJNDMMIKFHN: ::std::vec::Vec<super::HBFODNLIBFI::HBFODNLIBFI>,
     // special fields
     // @@protoc_insertion_point(special_field:EOAJKNKDAOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EOAJKNKDAOD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DJNDMMIKFHN",
-            |m: &EOAJKNKDAOD| { &m.DJNDMMIKFHN },
-            |m: &mut EOAJKNKDAOD| { &mut m.DJNDMMIKFHN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &EOAJKNKDAOD| { &m.group_id },
             |m: &mut EOAJKNKDAOD| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DJNDMMIKFHN",
+            |m: &EOAJKNKDAOD| { &m.DJNDMMIKFHN },
+            |m: &mut EOAJKNKDAOD| { &mut m.DJNDMMIKFHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOAJKNKDAOD>(
             "EOAJKNKDAOD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EOAJKNKDAOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.DJNDMMIKFHN.push(is.read_message()?);
-                },
-                96 => {
+                72 => {
                     self.group_id = is.read_uint32()?;
+                },
+                90 => {
+                    self.DJNDMMIKFHN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for EOAJKNKDAOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
+        }
         for value in &self.DJNDMMIKFHN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DJNDMMIKFHN {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(9, self.group_id)?;
         }
+        for v in &self.DJNDMMIKFHN {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EOAJKNKDAOD {
     }
 
     fn clear(&mut self) {
-        self.DJNDMMIKFHN.clear();
         self.group_id = 0;
+        self.DJNDMMIKFHN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOAJKNKDAOD {
         static instance: EOAJKNKDAOD = EOAJKNKDAOD {
-            DJNDMMIKFHN: ::std::vec::Vec::new(),
             group_id: 0,
+            DJNDMMIKFHN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EOAJKNKDAOD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EOAJKNKDAOD.proto\x1a\x11HBFODNLIBFI.proto\"X\n\x0bEOAJKNKDAOD\x12\
-    .\n\x0bDJNDMMIKFHN\x18\x08\x20\x03(\x0b2\x0c.HBFODNLIBFIR\x0bDJNDMMIKFHN\
-    \x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupIdb\x06proto3\
+    \x19\n\x08group_id\x18\t\x20\x01(\rR\x07groupId\x12.\n\x0bDJNDMMIKFHN\
+    \x18\x0b\x20\x03(\x0b2\x0c.HBFODNLIBFIR\x0bDJNDMMIKFHNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

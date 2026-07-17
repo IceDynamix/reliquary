@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HCGDLIAMDLA {
     // message fields
-    // @@protoc_insertion_point(field:HCGDLIAMDLA.JADCEPFHHDK)
-    pub JADCEPFHHDK: u32,
-    // @@protoc_insertion_point(field:HCGDLIAMDLA.JJGMIGBBEOO)
-    pub JJGMIGBBEOO: u32,
     // @@protoc_insertion_point(field:HCGDLIAMDLA.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:HCGDLIAMDLA.JJGMIGBBEOO)
+    pub JJGMIGBBEOO: u32,
+    // @@protoc_insertion_point(field:HCGDLIAMDLA.JADCEPFHHDK)
+    pub JADCEPFHHDK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HCGDLIAMDLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl HCGDLIAMDLA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JADCEPFHHDK",
-            |m: &HCGDLIAMDLA| { &m.JADCEPFHHDK },
-            |m: &mut HCGDLIAMDLA| { &mut m.JADCEPFHHDK },
+            "avatar_id",
+            |m: &HCGDLIAMDLA| { &m.avatar_id },
+            |m: &mut HCGDLIAMDLA| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JJGMIGBBEOO",
@@ -64,9 +64,9 @@ impl HCGDLIAMDLA {
             |m: &mut HCGDLIAMDLA| { &mut m.JJGMIGBBEOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &HCGDLIAMDLA| { &m.avatar_id },
-            |m: &mut HCGDLIAMDLA| { &mut m.avatar_id },
+            "JADCEPFHHDK",
+            |m: &HCGDLIAMDLA| { &m.JADCEPFHHDK },
+            |m: &mut HCGDLIAMDLA| { &mut m.JADCEPFHHDK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HCGDLIAMDLA>(
             "HCGDLIAMDLA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HCGDLIAMDLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JADCEPFHHDK = is.read_uint32()?;
+                80 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.JJGMIGBBEOO = is.read_uint32()?;
                 },
-                16 => {
-                    self.avatar_id = is.read_uint32()?;
+                112 => {
+                    self.JADCEPFHHDK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for HCGDLIAMDLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JADCEPFHHDK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JADCEPFHHDK);
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
         }
         if self.JJGMIGBBEOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JJGMIGBBEOO);
+            my_size += ::protobuf::rt::uint32_size(12, self.JJGMIGBBEOO);
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
+        if self.JADCEPFHHDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JADCEPFHHDK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for HCGDLIAMDLA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JADCEPFHHDK != 0 {
-            os.write_uint32(1, self.JADCEPFHHDK)?;
+        if self.avatar_id != 0 {
+            os.write_uint32(10, self.avatar_id)?;
         }
         if self.JJGMIGBBEOO != 0 {
-            os.write_uint32(9, self.JJGMIGBBEOO)?;
+            os.write_uint32(12, self.JJGMIGBBEOO)?;
         }
-        if self.avatar_id != 0 {
-            os.write_uint32(2, self.avatar_id)?;
+        if self.JADCEPFHHDK != 0 {
+            os.write_uint32(14, self.JADCEPFHHDK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for HCGDLIAMDLA {
     }
 
     fn clear(&mut self) {
-        self.JADCEPFHHDK = 0;
-        self.JJGMIGBBEOO = 0;
         self.avatar_id = 0;
+        self.JJGMIGBBEOO = 0;
+        self.JADCEPFHHDK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HCGDLIAMDLA {
         static instance: HCGDLIAMDLA = HCGDLIAMDLA {
-            JADCEPFHHDK: 0,
-            JJGMIGBBEOO: 0,
             avatar_id: 0,
+            JJGMIGBBEOO: 0,
+            JADCEPFHHDK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for HCGDLIAMDLA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HCGDLIAMDLA.proto\"n\n\x0bHCGDLIAMDLA\x12\x20\n\x0bJADCEPFHHDK\x18\
-    \x01\x20\x01(\rR\x0bJADCEPFHHDK\x12\x20\n\x0bJJGMIGBBEOO\x18\t\x20\x01(\
-    \rR\x0bJJGMIGBBEOO\x12\x1b\n\tavatar_id\x18\x02\x20\x01(\rR\x08avatarIdb\
-    \x06proto3\
+    \n\x11HCGDLIAMDLA.proto\"n\n\x0bHCGDLIAMDLA\x12\x1b\n\tavatar_id\x18\n\
+    \x20\x01(\rR\x08avatarId\x12\x20\n\x0bJJGMIGBBEOO\x18\x0c\x20\x01(\rR\
+    \x0bJJGMIGBBEOO\x12\x20\n\x0bJADCEPFHHDK\x18\x0e\x20\x01(\rR\x0bJADCEPFH\
+    HDKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

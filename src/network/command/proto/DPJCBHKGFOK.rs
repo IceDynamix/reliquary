@@ -72,7 +72,7 @@ impl ::protobuf::Message for DPJCBHKGFOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                58 => {
                     self.relics.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DPJCBHKGFOK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.relics {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for DPJCBHKGFOK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DPJCBHKGFOK.proto\x1a\x0bRelic.proto\"-\n\x0bDPJCBHKGFOK\x12\x1e\n\
-    \x06relics\x18\x05\x20\x03(\x0b2\x06.RelicR\x06relicsb\x06proto3\
+    \x06relics\x18\x07\x20\x03(\x0b2\x06.RelicR\x06relicsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

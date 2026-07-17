@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.IDCMACCPCBH)
-    pub IDCMACCPCBH: ::protobuf::MessageField<super::EEILAINOLPO::EEILAINOLPO>,
     // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterRoomScRsp.IDCMACCPCBH)
+    pub IDCMACCPCBH: ::protobuf::MessageField<super::EEILAINOLPO::EEILAINOLPO>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicEnterRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicEnterRoomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEILAINOLPO::EEILAINOLPO>(
-            "IDCMACCPCBH",
-            |m: &RogueMagicEnterRoomScRsp| { &m.IDCMACCPCBH },
-            |m: &mut RogueMagicEnterRoomScRsp| { &mut m.IDCMACCPCBH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicEnterRoomScRsp| { &m.retcode },
             |m: &mut RogueMagicEnterRoomScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEILAINOLPO::EEILAINOLPO>(
+            "IDCMACCPCBH",
+            |m: &RogueMagicEnterRoomScRsp| { &m.IDCMACCPCBH },
+            |m: &mut RogueMagicEnterRoomScRsp| { &mut m.IDCMACCPCBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicEnterRoomScRsp>(
             "RogueMagicEnterRoomScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
-                },
                 32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if let Some(v) = self.IDCMACCPCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IDCMACCPCBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(4, self.retcode)?;
+        }
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueMagicEnterRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.IDCMACCPCBH.clear();
         self.retcode = 0;
+        self.IDCMACCPCBH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterRoomScRsp {
         static instance: RogueMagicEnterRoomScRsp = RogueMagicEnterRoomScRsp {
-            IDCMACCPCBH: ::protobuf::MessageField::none(),
             retcode: 0,
+            IDCMACCPCBH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterRoomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRogueMagicEnterRoomScRsp.proto\x1a\x11EEILAINOLPO.proto\"d\n\x18Ro\
-    gueMagicEnterRoomScRsp\x12.\n\x0bIDCMACCPCBH\x18\r\x20\x01(\x0b2\x0c.EEI\
-    LAINOLPOR\x0bIDCMACCPCBH\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07ret\
-    codeb\x06proto3\
+    gueMagicEnterRoomScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retco\
+    de\x12.\n\x0bIDCMACCPCBH\x18\x0b\x20\x01(\x0b2\x0c.EEILAINOLPOR\x0bIDCMA\
+    CCPCBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

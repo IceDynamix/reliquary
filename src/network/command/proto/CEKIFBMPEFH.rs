@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEKIFBMPEFH {
     // message fields
-    // @@protoc_insertion_point(field:CEKIFBMPEFH.state)
-    pub state: ::protobuf::EnumOrUnknown<super::AlleyEventState::AlleyEventState>,
     // @@protoc_insertion_point(field:CEKIFBMPEFH.event_id)
     pub event_id: u32,
+    // @@protoc_insertion_point(field:CEKIFBMPEFH.state)
+    pub state: ::protobuf::EnumOrUnknown<super::AlleyEventState::AlleyEventState>,
     // @@protoc_insertion_point(field:CEKIFBMPEFH.FHMBKAPPAGO)
     pub FHMBKAPPAGO: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CEKIFBMPEFH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &CEKIFBMPEFH| { &m.state },
-            |m: &mut CEKIFBMPEFH| { &mut m.state },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
             |m: &CEKIFBMPEFH| { &m.event_id },
             |m: &mut CEKIFBMPEFH| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &CEKIFBMPEFH| { &m.state },
+            |m: &mut CEKIFBMPEFH| { &mut m.state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FHMBKAPPAGO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for CEKIFBMPEFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.state = is.read_enum_or_unknown()?;
-                },
                 56 => {
                     self.event_id = is.read_uint32()?;
                 },
                 72 => {
+                    self.state = is.read_enum_or_unknown()?;
+                },
+                112 => {
                     self.FHMBKAPPAGO = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CEKIFBMPEFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.state != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK) {
-            my_size += ::protobuf::rt::int32_size(8, self.state.value());
-        }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.event_id);
         }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK) {
+            my_size += ::protobuf::rt::int32_size(9, self.state.value());
+        }
         if self.FHMBKAPPAGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FHMBKAPPAGO);
+            my_size += ::protobuf::rt::uint32_size(14, self.FHMBKAPPAGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CEKIFBMPEFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.state != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.state))?;
-        }
         if self.event_id != 0 {
             os.write_uint32(7, self.event_id)?;
         }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        }
         if self.FHMBKAPPAGO != 0 {
-            os.write_uint32(9, self.FHMBKAPPAGO)?;
+            os.write_uint32(14, self.FHMBKAPPAGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CEKIFBMPEFH {
     }
 
     fn clear(&mut self) {
-        self.state = ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK);
         self.event_id = 0;
+        self.state = ::protobuf::EnumOrUnknown::new(super::AlleyEventState::AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK);
         self.FHMBKAPPAGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEKIFBMPEFH {
         static instance: CEKIFBMPEFH = CEKIFBMPEFH {
-            state: ::protobuf::EnumOrUnknown::from_i32(0),
             event_id: 0,
+            state: ::protobuf::EnumOrUnknown::from_i32(0),
             FHMBKAPPAGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CEKIFBMPEFH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEKIFBMPEFH.proto\x1a\x15AlleyEventState.proto\"r\n\x0bCEKIFBMPEFH\
-    \x12&\n\x05state\x18\x08\x20\x01(\x0e2\x10.AlleyEventStateR\x05state\x12\
-    \x19\n\x08event_id\x18\x07\x20\x01(\rR\x07eventId\x12\x20\n\x0bFHMBKAPPA\
-    GO\x18\t\x20\x01(\rR\x0bFHMBKAPPAGOb\x06proto3\
+    \x12\x19\n\x08event_id\x18\x07\x20\x01(\rR\x07eventId\x12&\n\x05state\
+    \x18\t\x20\x01(\x0e2\x10.AlleyEventStateR\x05state\x12\x20\n\x0bFHMBKAPP\
+    AGO\x18\x0e\x20\x01(\rR\x0bFHMBKAPPAGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

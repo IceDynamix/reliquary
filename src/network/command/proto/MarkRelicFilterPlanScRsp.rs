@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.GGIGDJPFBBP)
-    pub GGIGDJPFBBP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.NPPKABBJCMI)
-    pub NPPKABBJCMI: bool,
     // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.BIJJOJNJHDO)
     pub BIJJOJNJHDO: bool,
+    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.NPPKABBJCMI)
+    pub NPPKABBJCMI: bool,
+    // @@protoc_insertion_point(field:MarkRelicFilterPlanScRsp.GGIGDJPFBBP)
+    pub GGIGDJPFBBP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MarkRelicFilterPlanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl MarkRelicFilterPlanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GGIGDJPFBBP",
-            |m: &MarkRelicFilterPlanScRsp| { &m.GGIGDJPFBBP },
-            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.GGIGDJPFBBP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MarkRelicFilterPlanScRsp| { &m.retcode },
             |m: &mut MarkRelicFilterPlanScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIJJOJNJHDO",
+            |m: &MarkRelicFilterPlanScRsp| { &m.BIJJOJNJHDO },
+            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.BIJJOJNJHDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPPKABBJCMI",
             |m: &MarkRelicFilterPlanScRsp| { &m.NPPKABBJCMI },
             |m: &mut MarkRelicFilterPlanScRsp| { &mut m.NPPKABBJCMI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIJJOJNJHDO",
-            |m: &MarkRelicFilterPlanScRsp| { &m.BIJJOJNJHDO },
-            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.BIJJOJNJHDO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GGIGDJPFBBP",
+            |m: &MarkRelicFilterPlanScRsp| { &m.GGIGDJPFBBP },
+            |m: &mut MarkRelicFilterPlanScRsp| { &mut m.GGIGDJPFBBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarkRelicFilterPlanScRsp>(
             "MarkRelicFilterPlanScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                56 => {
+                    self.BIJJOJNJHDO = is.read_bool()?;
+                },
+                80 => {
+                    self.NPPKABBJCMI = is.read_bool()?;
+                },
                 90 => {
                     is.read_repeated_packed_uint32_into(&mut self.GGIGDJPFBBP)?;
                 },
                 88 => {
                     self.GGIGDJPFBBP.push(is.read_uint32()?);
-                },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                16 => {
-                    self.NPPKABBJCMI = is.read_bool()?;
-                },
-                8 => {
-                    self.BIJJOJNJHDO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.GGIGDJPFBBP);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.NPPKABBJCMI != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.BIJJOJNJHDO != false {
             my_size += 1 + 1;
         }
+        if self.NPPKABBJCMI != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.GGIGDJPFBBP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.GGIGDJPFBBP)?;
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.NPPKABBJCMI != false {
-            os.write_bool(2, self.NPPKABBJCMI)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.BIJJOJNJHDO != false {
-            os.write_bool(1, self.BIJJOJNJHDO)?;
+            os.write_bool(7, self.BIJJOJNJHDO)?;
         }
+        if self.NPPKABBJCMI != false {
+            os.write_bool(10, self.NPPKABBJCMI)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.GGIGDJPFBBP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for MarkRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.GGIGDJPFBBP.clear();
         self.retcode = 0;
-        self.NPPKABBJCMI = false;
         self.BIJJOJNJHDO = false;
+        self.NPPKABBJCMI = false;
+        self.GGIGDJPFBBP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkRelicFilterPlanScRsp {
         static instance: MarkRelicFilterPlanScRsp = MarkRelicFilterPlanScRsp {
-            GGIGDJPFBBP: ::std::vec::Vec::new(),
             retcode: 0,
-            NPPKABBJCMI: false,
             BIJJOJNJHDO: false,
+            NPPKABBJCMI: false,
+            GGIGDJPFBBP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkRelicFilterPlanScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarkRelicFilterPlanScRsp.proto\"\x9a\x01\n\x18MarkRelicFilterPlanS\
-    cRsp\x12\x20\n\x0bGGIGDJPFBBP\x18\x0b\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x18\
-    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bNPPKABBJCMI\
-    \x18\x02\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0bBIJJOJNJHDO\x18\x01\
-    \x20\x01(\x08R\x0bBIJJOJNJHDOb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bBI\
+    JJOJNJHDO\x18\x07\x20\x01(\x08R\x0bBIJJOJNJHDO\x12\x20\n\x0bNPPKABBJCMI\
+    \x18\n\x20\x01(\x08R\x0bNPPKABBJCMI\x12\x20\n\x0bGGIGDJPFBBP\x18\x0b\x20\
+    \x03(\rR\x0bGGIGDJPFBBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

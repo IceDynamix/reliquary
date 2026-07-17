@@ -79,10 +79,10 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                32 => {
                     self.CDMFHNGEFCN = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.op_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CDMFHNGEFCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CDMFHNGEFCN);
+            my_size += ::protobuf::rt::uint32_size(4, self.CDMFHNGEFCN);
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.op_type.value());
+            my_size += ::protobuf::rt::int32_size(12, self.op_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for TechTreeChangeNodeStateCsCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CDMFHNGEFCN != 0 {
-            os.write_uint32(10, self.CDMFHNGEFCN)?;
+            os.write_uint32(4, self.CDMFHNGEFCN)?;
         }
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::OEDABANAJEK::OEDABANAJEK::OEDABANAJEK_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TechTreeChangeNodeStateCsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TechTreeChangeNodeStateCsCsReq.proto\x1a\x11OEDABANAJEK.proto\"i\n\
-    \x1eTechTreeChangeNodeStateCsCsReq\x12\x20\n\x0bCDMFHNGEFCN\x18\n\x20\
-    \x01(\rR\x0bCDMFHNGEFCN\x12%\n\x07op_type\x18\x0b\x20\x01(\x0e2\x0c.OEDA\
+    \x1eTechTreeChangeNodeStateCsCsReq\x12\x20\n\x0bCDMFHNGEFCN\x18\x04\x20\
+    \x01(\rR\x0bCDMFHNGEFCN\x12%\n\x07op_type\x18\x0c\x20\x01(\x0e2\x0c.OEDA\
     BANAJEKR\x06opTypeb\x06proto3\
 ";
 

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KGHDDIBDABP {
     // message fields
+    // @@protoc_insertion_point(field:KGHDDIBDABP.is_locked)
+    pub is_locked: bool,
     // @@protoc_insertion_point(field:KGHDDIBDABP.grid_fight_equipment_id)
     pub grid_fight_equipment_id: u32,
-    // @@protoc_insertion_point(field:KGHDDIBDABP.FGECDDFBFOJ)
-    pub FGECDDFBFOJ: u32,
-    // @@protoc_insertion_point(field:KGHDDIBDABP.NDJGKJMPPHJ)
-    pub NDJGKJMPPHJ: u32,
-    // @@protoc_insertion_point(field:KGHDDIBDABP.AALCCPJCBME)
-    pub AALCCPJCBME: bool,
     // @@protoc_insertion_point(field:KGHDDIBDABP.IPAOBKONIFL)
     pub IPAOBKONIFL: u32,
+    // @@protoc_insertion_point(field:KGHDDIBDABP.NDJGKJMPPHJ)
+    pub NDJGKJMPPHJ: u32,
+    // @@protoc_insertion_point(field:KGHDDIBDABP.FGECDDFBFOJ)
+    pub FGECDDFBFOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KGHDDIBDABP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,19 @@ impl KGHDDIBDABP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_locked",
+            |m: &KGHDDIBDABP| { &m.is_locked },
+            |m: &mut KGHDDIBDABP| { &mut m.is_locked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_equipment_id",
             |m: &KGHDDIBDABP| { &m.grid_fight_equipment_id },
             |m: &mut KGHDDIBDABP| { &mut m.grid_fight_equipment_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FGECDDFBFOJ",
-            |m: &KGHDDIBDABP| { &m.FGECDDFBFOJ },
-            |m: &mut KGHDDIBDABP| { &mut m.FGECDDFBFOJ },
+            "IPAOBKONIFL",
+            |m: &KGHDDIBDABP| { &m.IPAOBKONIFL },
+            |m: &mut KGHDDIBDABP| { &mut m.IPAOBKONIFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NDJGKJMPPHJ",
@@ -73,14 +78,9 @@ impl KGHDDIBDABP {
             |m: &mut KGHDDIBDABP| { &mut m.NDJGKJMPPHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AALCCPJCBME",
-            |m: &KGHDDIBDABP| { &m.AALCCPJCBME },
-            |m: &mut KGHDDIBDABP| { &mut m.AALCCPJCBME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPAOBKONIFL",
-            |m: &KGHDDIBDABP| { &m.IPAOBKONIFL },
-            |m: &mut KGHDDIBDABP| { &mut m.IPAOBKONIFL },
+            "FGECDDFBFOJ",
+            |m: &KGHDDIBDABP| { &m.FGECDDFBFOJ },
+            |m: &mut KGHDDIBDABP| { &mut m.FGECDDFBFOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KGHDDIBDABP>(
             "KGHDDIBDABP",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for KGHDDIBDABP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                40 => {
+                    self.is_locked = is.read_bool()?;
+                },
+                72 => {
                     self.grid_fight_equipment_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.FGECDDFBFOJ = is.read_uint32()?;
+                104 => {
+                    self.IPAOBKONIFL = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.NDJGKJMPPHJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.AALCCPJCBME = is.read_bool()?;
-                },
-                96 => {
-                    self.IPAOBKONIFL = is.read_uint32()?;
+                120 => {
+                    self.FGECDDFBFOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for KGHDDIBDABP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.grid_fight_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.grid_fight_equipment_id);
-        }
-        if self.FGECDDFBFOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FGECDDFBFOJ);
-        }
-        if self.NDJGKJMPPHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NDJGKJMPPHJ);
-        }
-        if self.AALCCPJCBME != false {
+        if self.is_locked != false {
             my_size += 1 + 1;
         }
+        if self.grid_fight_equipment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.grid_fight_equipment_id);
+        }
         if self.IPAOBKONIFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IPAOBKONIFL);
+            my_size += ::protobuf::rt::uint32_size(13, self.IPAOBKONIFL);
+        }
+        if self.NDJGKJMPPHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NDJGKJMPPHJ);
+        }
+        if self.FGECDDFBFOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.FGECDDFBFOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for KGHDDIBDABP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_locked != false {
+            os.write_bool(5, self.is_locked)?;
+        }
         if self.grid_fight_equipment_id != 0 {
-            os.write_uint32(8, self.grid_fight_equipment_id)?;
-        }
-        if self.FGECDDFBFOJ != 0 {
-            os.write_uint32(11, self.FGECDDFBFOJ)?;
-        }
-        if self.NDJGKJMPPHJ != 0 {
-            os.write_uint32(6, self.NDJGKJMPPHJ)?;
-        }
-        if self.AALCCPJCBME != false {
-            os.write_bool(13, self.AALCCPJCBME)?;
+            os.write_uint32(9, self.grid_fight_equipment_id)?;
         }
         if self.IPAOBKONIFL != 0 {
-            os.write_uint32(12, self.IPAOBKONIFL)?;
+            os.write_uint32(13, self.IPAOBKONIFL)?;
+        }
+        if self.NDJGKJMPPHJ != 0 {
+            os.write_uint32(14, self.NDJGKJMPPHJ)?;
+        }
+        if self.FGECDDFBFOJ != 0 {
+            os.write_uint32(15, self.FGECDDFBFOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for KGHDDIBDABP {
     }
 
     fn clear(&mut self) {
+        self.is_locked = false;
         self.grid_fight_equipment_id = 0;
-        self.FGECDDFBFOJ = 0;
-        self.NDJGKJMPPHJ = 0;
-        self.AALCCPJCBME = false;
         self.IPAOBKONIFL = 0;
+        self.NDJGKJMPPHJ = 0;
+        self.FGECDDFBFOJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KGHDDIBDABP {
         static instance: KGHDDIBDABP = KGHDDIBDABP {
+            is_locked: false,
             grid_fight_equipment_id: 0,
-            FGECDDFBFOJ: 0,
-            NDJGKJMPPHJ: 0,
-            AALCCPJCBME: false,
             IPAOBKONIFL: 0,
+            NDJGKJMPPHJ: 0,
+            FGECDDFBFOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for KGHDDIBDABP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KGHDDIBDABP.proto\"\xcc\x01\n\x0bKGHDDIBDABP\x125\n\x17grid_fight_\
-    equipment_id\x18\x08\x20\x01(\rR\x14gridFightEquipmentId\x12\x20\n\x0bFG\
-    ECDDFBFOJ\x18\x0b\x20\x01(\rR\x0bFGECDDFBFOJ\x12\x20\n\x0bNDJGKJMPPHJ\
-    \x18\x06\x20\x01(\rR\x0bNDJGKJMPPHJ\x12\x20\n\x0bAALCCPJCBME\x18\r\x20\
-    \x01(\x08R\x0bAALCCPJCBME\x12\x20\n\x0bIPAOBKONIFL\x18\x0c\x20\x01(\rR\
-    \x0bIPAOBKONIFLb\x06proto3\
+    \n\x11KGHDDIBDABP.proto\"\xc7\x01\n\x0bKGHDDIBDABP\x12\x1b\n\tis_locked\
+    \x18\x05\x20\x01(\x08R\x08isLocked\x125\n\x17grid_fight_equipment_id\x18\
+    \t\x20\x01(\rR\x14gridFightEquipmentId\x12\x20\n\x0bIPAOBKONIFL\x18\r\
+    \x20\x01(\rR\x0bIPAOBKONIFL\x12\x20\n\x0bNDJGKJMPPHJ\x18\x0e\x20\x01(\rR\
+    \x0bNDJGKJMPPHJ\x12\x20\n\x0bFGECDDFBFOJ\x18\x0f\x20\x01(\rR\x0bFGECDDFB\
+    FOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -50,7 +50,7 @@ impl GNCJNHIOKDL {
         ::std::default::Default::default()
     }
 
-    // uint32 ECHFGJHHGOG = 11;
+    // uint32 ECHFGJHHGOG = 1;
 
     pub fn ECHFGJHHGOG(&self) -> u32 {
         match self.PGNIENCDODA {
@@ -75,7 +75,7 @@ impl GNCJNHIOKDL {
         self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v))
     }
 
-    // uint32 NDEDLLMEFBJ = 12;
+    // uint32 NDEDLLMEFBJ = 9;
 
     pub fn NDEDLLMEFBJ(&self) -> u32 {
         match self.PGNIENCDODA {
@@ -100,12 +100,12 @@ impl GNCJNHIOKDL {
         self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v))
     }
 
-    // .APAMFCKFHLL CJKEIMBCMEP = 4;
+    // .KVP CJKEIMBCMEP = 3;
 
-    pub fn CJKEIMBCMEP(&self) -> &super::APAMFCKFHLL::APAMFCKFHLL {
+    pub fn CJKEIMBCMEP(&self) -> &super::KVP::KVP {
         match self.PGNIENCDODA {
             ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref v)) => v,
-            _ => <super::APAMFCKFHLL::APAMFCKFHLL as ::protobuf::Message>::default_instance(),
+            _ => <super::KVP::KVP as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -121,15 +121,15 @@ impl GNCJNHIOKDL {
     }
 
     // Param is passed by value, moved
-    pub fn set_CJKEIMBCMEP(&mut self, v: super::APAMFCKFHLL::APAMFCKFHLL) {
+    pub fn set_CJKEIMBCMEP(&mut self, v: super::KVP::KVP) {
         self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CJKEIMBCMEP(&mut self) -> &mut super::APAMFCKFHLL::APAMFCKFHLL {
+    pub fn mut_CJKEIMBCMEP(&mut self) -> &mut super::KVP::KVP {
         if let ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(_)) = self.PGNIENCDODA {
         } else {
-            self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(super::APAMFCKFHLL::APAMFCKFHLL::new()));
+            self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(super::KVP::KVP::new()));
         }
         match self.PGNIENCDODA {
             ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref mut v)) => v,
@@ -138,14 +138,14 @@ impl GNCJNHIOKDL {
     }
 
     // Take field
-    pub fn take_CJKEIMBCMEP(&mut self) -> super::APAMFCKFHLL::APAMFCKFHLL {
+    pub fn take_CJKEIMBCMEP(&mut self) -> super::KVP::KVP {
         if self.has_CJKEIMBCMEP() {
             match self.PGNIENCDODA.take() {
                 ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::APAMFCKFHLL::APAMFCKFHLL::new()
+            super::KVP::KVP::new()
         }
     }
 
@@ -174,7 +174,7 @@ impl GNCJNHIOKDL {
             GNCJNHIOKDL::NDEDLLMEFBJ,
             GNCJNHIOKDL::set_NDEDLLMEFBJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APAMFCKFHLL::APAMFCKFHLL>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KVP::KVP>(
             "CJKEIMBCMEP",
             GNCJNHIOKDL::has_CJKEIMBCMEP,
             GNCJNHIOKDL::CJKEIMBCMEP,
@@ -200,19 +200,19 @@ impl ::protobuf::Message for GNCJNHIOKDL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                16 => {
                     self.CKHCLKOALKE = is.read_uint32()?;
                 },
-                24 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(is.read_uint32()?));
                 },
-                96 => {
+                72 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(is.read_uint32()?));
                 },
-                34 => {
+                26 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(is.read_message()?));
                 },
                 tag => {
@@ -228,18 +228,18 @@ impl ::protobuf::Message for GNCJNHIOKDL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CKHCLKOALKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CKHCLKOALKE);
+            my_size += ::protobuf::rt::uint32_size(2, self.CKHCLKOALKE);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
                 &gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(1, v);
                 },
                 &gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(9, v);
                 },
                 &gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref v) => {
                     let len = v.compute_size();
@@ -254,21 +254,21 @@ impl ::protobuf::Message for GNCJNHIOKDL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CKHCLKOALKE != 0 {
-            os.write_uint32(15, self.CKHCLKOALKE)?;
+            os.write_uint32(2, self.CKHCLKOALKE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
                 &gncjnhiokdl::PGNIENCDODA::ECHFGJHHGOG(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(1, v)?;
                 },
                 &gncjnhiokdl::PGNIENCDODA::NDEDLLMEFBJ(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(9, v)?;
                 },
                 &gncjnhiokdl::PGNIENCDODA::CJKEIMBCMEP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -337,7 +337,7 @@ pub mod gncjnhiokdl {
         // @@protoc_insertion_point(oneof_field:GNCJNHIOKDL.NDEDLLMEFBJ)
         NDEDLLMEFBJ(u32),
         // @@protoc_insertion_point(oneof_field:GNCJNHIOKDL.CJKEIMBCMEP)
-        CJKEIMBCMEP(super::super::APAMFCKFHLL::APAMFCKFHLL),
+        CJKEIMBCMEP(super::super::KVP::KVP),
     }
 
     impl ::protobuf::Oneof for PGNIENCDODA {
@@ -358,12 +358,12 @@ pub mod gncjnhiokdl {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GNCJNHIOKDL.proto\x1a\x11APAMFCKFHLL.proto\"\xd2\x01\n\x0bGNCJNHIO\
-    KDL\x12\x20\n\x0bCKHCLKOALKE\x18\x0f\x20\x01(\rR\x0bCKHCLKOALKE\x12\x18\
-    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\"\n\x0bECHFGJHHGOG\x18\
-    \x0b\x20\x01(\rH\0R\x0bECHFGJHHGOG\x12\"\n\x0bNDEDLLMEFBJ\x18\x0c\x20\
-    \x01(\rH\0R\x0bNDEDLLMEFBJ\x120\n\x0bCJKEIMBCMEP\x18\x04\x20\x01(\x0b2\
-    \x0c.APAMFCKFHLLH\0R\x0bCJKEIMBCMEPB\r\n\x0bPGNIENCDODAb\x06proto3\
+    \n\x11GNCJNHIOKDL.proto\x1a\tKVP.proto\"\xca\x01\n\x0bGNCJNHIOKDL\x12\
+    \x20\n\x0bCKHCLKOALKE\x18\x02\x20\x01(\rR\x0bCKHCLKOALKE\x12\x18\n\x07re\
+    tcode\x18\x08\x20\x01(\rR\x07retcode\x12\"\n\x0bECHFGJHHGOG\x18\x01\x20\
+    \x01(\rH\0R\x0bECHFGJHHGOG\x12\"\n\x0bNDEDLLMEFBJ\x18\t\x20\x01(\rH\0R\
+    \x0bNDEDLLMEFBJ\x12(\n\x0bCJKEIMBCMEP\x18\x03\x20\x01(\x0b2\x04.KVPH\0R\
+    \x0bCJKEIMBCMEPB\r\n\x0bPGNIENCDODAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -381,7 +381,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GNCJNHIOKDL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMJEIBGACMD {
     // message fields
-    // @@protoc_insertion_point(field:JMJEIBGACMD.status)
-    pub status: ::protobuf::EnumOrUnknown<super::LBPLJCHEJOK::LBPLJCHEJOK>,
     // @@protoc_insertion_point(field:JMJEIBGACMD.CNFGOHFPLGO)
     pub CNFGOHFPLGO: u32,
     // @@protoc_insertion_point(field:JMJEIBGACMD.ECPDJMMOGCI)
     pub ECPDJMMOGCI: u32,
+    // @@protoc_insertion_point(field:JMJEIBGACMD.status)
+    pub status: ::protobuf::EnumOrUnknown<super::LBPLJCHEJOK::LBPLJCHEJOK>,
     // special fields
     // @@protoc_insertion_point(special_field:JMJEIBGACMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl JMJEIBGACMD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &JMJEIBGACMD| { &m.status },
-            |m: &mut JMJEIBGACMD| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CNFGOHFPLGO",
             |m: &JMJEIBGACMD| { &m.CNFGOHFPLGO },
             |m: &mut JMJEIBGACMD| { &mut m.CNFGOHFPLGO },
@@ -67,6 +62,11 @@ impl JMJEIBGACMD {
             "ECPDJMMOGCI",
             |m: &JMJEIBGACMD| { &m.ECPDJMMOGCI },
             |m: &mut JMJEIBGACMD| { &mut m.ECPDJMMOGCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &JMJEIBGACMD| { &m.status },
+            |m: &mut JMJEIBGACMD| { &mut m.status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JMJEIBGACMD>(
             "JMJEIBGACMD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JMJEIBGACMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                120 => {
+                24 => {
                     self.CNFGOHFPLGO = is.read_uint32()?;
                 },
-                24 => {
+                32 => {
                     self.ECPDJMMOGCI = is.read_uint32()?;
+                },
+                104 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JMJEIBGACMD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
-        }
         if self.CNFGOHFPLGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CNFGOHFPLGO);
+            my_size += ::protobuf::rt::uint32_size(3, self.CNFGOHFPLGO);
         }
         if self.ECPDJMMOGCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ECPDJMMOGCI);
+            my_size += ::protobuf::rt::uint32_size(4, self.ECPDJMMOGCI);
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
+            my_size += ::protobuf::rt::int32_size(13, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JMJEIBGACMD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         if self.CNFGOHFPLGO != 0 {
-            os.write_uint32(15, self.CNFGOHFPLGO)?;
+            os.write_uint32(3, self.CNFGOHFPLGO)?;
         }
         if self.ECPDJMMOGCI != 0 {
-            os.write_uint32(3, self.ECPDJMMOGCI)?;
+            os.write_uint32(4, self.ECPDJMMOGCI)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JMJEIBGACMD {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG);
         self.CNFGOHFPLGO = 0;
         self.ECPDJMMOGCI = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMJEIBGACMD {
         static instance: JMJEIBGACMD = JMJEIBGACMD {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             CNFGOHFPLGO: 0,
             ECPDJMMOGCI: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JMJEIBGACMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JMJEIBGACMD.proto\x1a\x11LBPLJCHEJOK.proto\"w\n\x0bJMJEIBGACMD\x12\
-    $\n\x06status\x18\r\x20\x01(\x0e2\x0c.LBPLJCHEJOKR\x06status\x12\x20\n\
-    \x0bCNFGOHFPLGO\x18\x0f\x20\x01(\rR\x0bCNFGOHFPLGO\x12\x20\n\x0bECPDJMMO\
-    GCI\x18\x03\x20\x01(\rR\x0bECPDJMMOGCIb\x06proto3\
+    \x20\n\x0bCNFGOHFPLGO\x18\x03\x20\x01(\rR\x0bCNFGOHFPLGO\x12\x20\n\x0bEC\
+    PDJMMOGCI\x18\x04\x20\x01(\rR\x0bECPDJMMOGCI\x12$\n\x06status\x18\r\x20\
+    \x01(\x0e2\x0c.LBPLJCHEJOKR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

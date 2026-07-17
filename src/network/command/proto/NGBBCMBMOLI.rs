@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NGBBCMBMOLI {
     // message fields
+    // @@protoc_insertion_point(field:NGBBCMBMOLI.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:NGBBCMBMOLI.CLFMFEHJKEJ)
+    pub CLFMFEHJKEJ: bool,
     // @@protoc_insertion_point(field:NGBBCMBMOLI.GGPIFKGAPPB)
     pub GGPIFKGAPPB: bool,
     // @@protoc_insertion_point(field:NGBBCMBMOLI.AOOEIHOPALH)
     pub AOOEIHOPALH: bool,
-    // @@protoc_insertion_point(field:NGBBCMBMOLI.CLFMFEHJKEJ)
-    pub CLFMFEHJKEJ: bool,
     // @@protoc_insertion_point(field:NGBBCMBMOLI.LIEKGCNNIHA)
     pub LIEKGCNNIHA: bool,
-    // @@protoc_insertion_point(field:NGBBCMBMOLI.avatar_id)
-    pub avatar_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NGBBCMBMOLI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,16 @@ impl NGBBCMBMOLI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &NGBBCMBMOLI| { &m.avatar_id },
+            |m: &mut NGBBCMBMOLI| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLFMFEHJKEJ",
+            |m: &NGBBCMBMOLI| { &m.CLFMFEHJKEJ },
+            |m: &mut NGBBCMBMOLI| { &mut m.CLFMFEHJKEJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GGPIFKGAPPB",
             |m: &NGBBCMBMOLI| { &m.GGPIFKGAPPB },
             |m: &mut NGBBCMBMOLI| { &mut m.GGPIFKGAPPB },
@@ -68,19 +78,9 @@ impl NGBBCMBMOLI {
             |m: &mut NGBBCMBMOLI| { &mut m.AOOEIHOPALH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLFMFEHJKEJ",
-            |m: &NGBBCMBMOLI| { &m.CLFMFEHJKEJ },
-            |m: &mut NGBBCMBMOLI| { &mut m.CLFMFEHJKEJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LIEKGCNNIHA",
             |m: &NGBBCMBMOLI| { &m.LIEKGCNNIHA },
             |m: &mut NGBBCMBMOLI| { &mut m.LIEKGCNNIHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &NGBBCMBMOLI| { &m.avatar_id },
-            |m: &mut NGBBCMBMOLI| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NGBBCMBMOLI>(
             "NGBBCMBMOLI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for NGBBCMBMOLI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.CLFMFEHJKEJ = is.read_bool()?;
+                },
                 24 => {
                     self.GGPIFKGAPPB = is.read_bool()?;
                 },
                 32 => {
                     self.AOOEIHOPALH = is.read_bool()?;
                 },
-                16 => {
-                    self.CLFMFEHJKEJ = is.read_bool()?;
-                },
                 40 => {
                     self.LIEKGCNNIHA = is.read_bool()?;
-                },
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for NGBBCMBMOLI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
+        if self.CLFMFEHJKEJ != false {
+            my_size += 1 + 1;
+        }
         if self.GGPIFKGAPPB != false {
             my_size += 1 + 1;
         }
         if self.AOOEIHOPALH != false {
             my_size += 1 + 1;
         }
-        if self.CLFMFEHJKEJ != false {
-            my_size += 1 + 1;
-        }
         if self.LIEKGCNNIHA != false {
             my_size += 1 + 1;
-        }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for NGBBCMBMOLI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.avatar_id != 0 {
+            os.write_uint32(1, self.avatar_id)?;
+        }
+        if self.CLFMFEHJKEJ != false {
+            os.write_bool(2, self.CLFMFEHJKEJ)?;
+        }
         if self.GGPIFKGAPPB != false {
             os.write_bool(3, self.GGPIFKGAPPB)?;
         }
         if self.AOOEIHOPALH != false {
             os.write_bool(4, self.AOOEIHOPALH)?;
         }
-        if self.CLFMFEHJKEJ != false {
-            os.write_bool(2, self.CLFMFEHJKEJ)?;
-        }
         if self.LIEKGCNNIHA != false {
             os.write_bool(5, self.LIEKGCNNIHA)?;
-        }
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for NGBBCMBMOLI {
     }
 
     fn clear(&mut self) {
+        self.avatar_id = 0;
+        self.CLFMFEHJKEJ = false;
         self.GGPIFKGAPPB = false;
         self.AOOEIHOPALH = false;
-        self.CLFMFEHJKEJ = false;
         self.LIEKGCNNIHA = false;
-        self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGBBCMBMOLI {
         static instance: NGBBCMBMOLI = NGBBCMBMOLI {
+            avatar_id: 0,
+            CLFMFEHJKEJ: false,
             GGPIFKGAPPB: false,
             AOOEIHOPALH: false,
-            CLFMFEHJKEJ: false,
             LIEKGCNNIHA: false,
-            avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for NGBBCMBMOLI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NGBBCMBMOLI.proto\"\xb2\x01\n\x0bNGBBCMBMOLI\x12\x20\n\x0bGGPIFKGA\
-    PPB\x18\x03\x20\x01(\x08R\x0bGGPIFKGAPPB\x12\x20\n\x0bAOOEIHOPALH\x18\
-    \x04\x20\x01(\x08R\x0bAOOEIHOPALH\x12\x20\n\x0bCLFMFEHJKEJ\x18\x02\x20\
-    \x01(\x08R\x0bCLFMFEHJKEJ\x12\x20\n\x0bLIEKGCNNIHA\x18\x05\x20\x01(\x08R\
-    \x0bLIEKGCNNIHA\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarIdb\
-    \x06proto3\
+    \n\x11NGBBCMBMOLI.proto\"\xb2\x01\n\x0bNGBBCMBMOLI\x12\x1b\n\tavatar_id\
+    \x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bCLFMFEHJKEJ\x18\x02\x20\
+    \x01(\x08R\x0bCLFMFEHJKEJ\x12\x20\n\x0bGGPIFKGAPPB\x18\x03\x20\x01(\x08R\
+    \x0bGGPIFKGAPPB\x12\x20\n\x0bAOOEIHOPALH\x18\x04\x20\x01(\x08R\x0bAOOEIH\
+    OPALH\x12\x20\n\x0bLIEKGCNNIHA\x18\x05\x20\x01(\x08R\x0bLIEKGCNNIHAb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

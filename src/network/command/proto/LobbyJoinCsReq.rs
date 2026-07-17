@@ -92,7 +92,7 @@ impl ::protobuf::Message for LobbyJoinCsReq {
                 82 => {
                     self.JKJCIPFMOHG = is.read_string()?;
                 },
-                8 => {
+                120 => {
                     self.room_id = is.read_uint64()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for LobbyJoinCsReq {
             my_size += ::protobuf::rt::string_size(10, &self.JKJCIPFMOHG);
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.room_id);
+            my_size += ::protobuf::rt::uint64_size(15, self.room_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -130,7 +130,7 @@ impl ::protobuf::Message for LobbyJoinCsReq {
             os.write_string(10, &self.JKJCIPFMOHG)?;
         }
         if self.room_id != 0 {
-            os.write_uint64(1, self.room_id)?;
+            os.write_uint64(15, self.room_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,7 +187,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LobbyJoinCsReq.proto\x1a\x16LobbyGameExtInfo.proto\"\x80\x01\n\x0e\
     LobbyJoinCsReq\x123\n\x0bJIDKDPPPDPF\x18\x05\x20\x01(\x0b2\x11.LobbyGame\
     ExtInfoR\x0bJIDKDPPPDPF\x12\x20\n\x0bJKJCIPFMOHG\x18\n\x20\x01(\tR\x0bJK\
-    JCIPFMOHG\x12\x17\n\x07room_id\x18\x01\x20\x01(\x04R\x06roomIdb\x06proto\
+    JCIPFMOHG\x12\x17\n\x07room_id\x18\x0f\x20\x01(\x04R\x06roomIdb\x06proto\
     3\
 ";
 

@@ -30,8 +30,8 @@ pub struct CPGFNBBIGLH {
     // message fields
     // @@protoc_insertion_point(field:CPGFNBBIGLH.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:CPGFNBBIGLH.display_value)
-    pub display_value: u32,
+    // @@protoc_insertion_point(field:CPGFNBBIGLH.param)
+    pub param: u32,
     // @@protoc_insertion_point(field:CPGFNBBIGLH.retcode)
     pub retcode: u32,
     // special fields
@@ -59,9 +59,9 @@ impl CPGFNBBIGLH {
             |m: &mut CPGFNBBIGLH| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &CPGFNBBIGLH| { &m.display_value },
-            |m: &mut CPGFNBBIGLH| { &mut m.display_value },
+            "param",
+            |m: &CPGFNBBIGLH| { &m.param },
+            |m: &mut CPGFNBBIGLH| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for CPGFNBBIGLH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.event_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.display_value = is.read_uint32()?;
+                80 => {
+                    self.param = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for CPGFNBBIGLH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.event_id);
         }
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.display_value);
+        if self.param != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.param);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CPGFNBBIGLH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.event_id != 0 {
-            os.write_uint32(4, self.event_id)?;
+            os.write_uint32(5, self.event_id)?;
         }
-        if self.display_value != 0 {
-            os.write_uint32(1, self.display_value)?;
+        if self.param != 0 {
+            os.write_uint32(10, self.param)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for CPGFNBBIGLH {
 
     fn clear(&mut self) {
         self.event_id = 0;
-        self.display_value = 0;
+        self.param = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for CPGFNBBIGLH {
     fn default_instance() -> &'static CPGFNBBIGLH {
         static instance: CPGFNBBIGLH = CPGFNBBIGLH {
             event_id: 0,
-            display_value: 0,
+            param: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for CPGFNBBIGLH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CPGFNBBIGLH.proto\"g\n\x0bCPGFNBBIGLH\x12\x19\n\x08event_id\x18\
-    \x04\x20\x01(\rR\x07eventId\x12#\n\rdisplay_value\x18\x01\x20\x01(\rR\
-    \x0cdisplayValue\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x11CPGFNBBIGLH.proto\"X\n\x0bCPGFNBBIGLH\x12\x19\n\x08event_id\x18\
+    \x05\x20\x01(\rR\x07eventId\x12\x14\n\x05param\x18\n\x20\x01(\rR\x05para\
+    m\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

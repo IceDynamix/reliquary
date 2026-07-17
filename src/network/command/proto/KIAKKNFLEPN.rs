@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KIAKKNFLEPN {
     // message fields
-    // @@protoc_insertion_point(field:KIAKKNFLEPN.MOFEHOKGEJE)
-    pub MOFEHOKGEJE: u32,
-    // @@protoc_insertion_point(field:KIAKKNFLEPN.ALIKFDCKGJB)
-    pub ALIKFDCKGJB: u32,
     // @@protoc_insertion_point(field:KIAKKNFLEPN.MDNGADJPMCH)
     pub MDNGADJPMCH: i32,
+    // @@protoc_insertion_point(field:KIAKKNFLEPN.ALIKFDCKGJB)
+    pub ALIKFDCKGJB: u32,
+    // @@protoc_insertion_point(field:KIAKKNFLEPN.MOFEHOKGEJE)
+    pub MOFEHOKGEJE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KIAKKNFLEPN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl KIAKKNFLEPN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MOFEHOKGEJE",
-            |m: &KIAKKNFLEPN| { &m.MOFEHOKGEJE },
-            |m: &mut KIAKKNFLEPN| { &mut m.MOFEHOKGEJE },
+            "MDNGADJPMCH",
+            |m: &KIAKKNFLEPN| { &m.MDNGADJPMCH },
+            |m: &mut KIAKKNFLEPN| { &mut m.MDNGADJPMCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALIKFDCKGJB",
@@ -64,9 +64,9 @@ impl KIAKKNFLEPN {
             |m: &mut KIAKKNFLEPN| { &mut m.ALIKFDCKGJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDNGADJPMCH",
-            |m: &KIAKKNFLEPN| { &m.MDNGADJPMCH },
-            |m: &mut KIAKKNFLEPN| { &mut m.MDNGADJPMCH },
+            "MOFEHOKGEJE",
+            |m: &KIAKKNFLEPN| { &m.MOFEHOKGEJE },
+            |m: &mut KIAKKNFLEPN| { &mut m.MOFEHOKGEJE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KIAKKNFLEPN>(
             "KIAKKNFLEPN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KIAKKNFLEPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.MOFEHOKGEJE = is.read_uint32()?;
-                },
-                24 => {
-                    self.ALIKFDCKGJB = is.read_uint32()?;
-                },
                 8 => {
                     self.MDNGADJPMCH = is.read_int32()?;
+                },
+                32 => {
+                    self.ALIKFDCKGJB = is.read_uint32()?;
+                },
+                112 => {
+                    self.MOFEHOKGEJE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KIAKKNFLEPN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MOFEHOKGEJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MOFEHOKGEJE);
-        }
-        if self.ALIKFDCKGJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ALIKFDCKGJB);
-        }
         if self.MDNGADJPMCH != 0 {
             my_size += ::protobuf::rt::int32_size(1, self.MDNGADJPMCH);
+        }
+        if self.ALIKFDCKGJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ALIKFDCKGJB);
+        }
+        if self.MOFEHOKGEJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MOFEHOKGEJE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KIAKKNFLEPN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MOFEHOKGEJE != 0 {
-            os.write_uint32(10, self.MOFEHOKGEJE)?;
-        }
-        if self.ALIKFDCKGJB != 0 {
-            os.write_uint32(3, self.ALIKFDCKGJB)?;
-        }
         if self.MDNGADJPMCH != 0 {
             os.write_int32(1, self.MDNGADJPMCH)?;
+        }
+        if self.ALIKFDCKGJB != 0 {
+            os.write_uint32(4, self.ALIKFDCKGJB)?;
+        }
+        if self.MOFEHOKGEJE != 0 {
+            os.write_uint32(14, self.MOFEHOKGEJE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KIAKKNFLEPN {
     }
 
     fn clear(&mut self) {
-        self.MOFEHOKGEJE = 0;
-        self.ALIKFDCKGJB = 0;
         self.MDNGADJPMCH = 0;
+        self.ALIKFDCKGJB = 0;
+        self.MOFEHOKGEJE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KIAKKNFLEPN {
         static instance: KIAKKNFLEPN = KIAKKNFLEPN {
-            MOFEHOKGEJE: 0,
-            ALIKFDCKGJB: 0,
             MDNGADJPMCH: 0,
+            ALIKFDCKGJB: 0,
+            MOFEHOKGEJE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KIAKKNFLEPN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KIAKKNFLEPN.proto\"s\n\x0bKIAKKNFLEPN\x12\x20\n\x0bMOFEHOKGEJE\x18\
-    \n\x20\x01(\rR\x0bMOFEHOKGEJE\x12\x20\n\x0bALIKFDCKGJB\x18\x03\x20\x01(\
-    \rR\x0bALIKFDCKGJB\x12\x20\n\x0bMDNGADJPMCH\x18\x01\x20\x01(\x05R\x0bMDN\
-    GADJPMCHb\x06proto3\
+    \n\x11KIAKKNFLEPN.proto\"s\n\x0bKIAKKNFLEPN\x12\x20\n\x0bMDNGADJPMCH\x18\
+    \x01\x20\x01(\x05R\x0bMDNGADJPMCH\x12\x20\n\x0bALIKFDCKGJB\x18\x04\x20\
+    \x01(\rR\x0bALIKFDCKGJB\x12\x20\n\x0bMOFEHOKGEJE\x18\x0e\x20\x01(\rR\x0b\
+    MOFEHOKGEJEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

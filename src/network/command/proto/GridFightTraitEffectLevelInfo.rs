@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightTraitEffectLevelInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightTraitEffectLevelInfo.trait_effect_level_reward)
-    pub trait_effect_level_reward: ::std::collections::HashMap<u32, super::GridFightDropInfo::GridFightDropInfo>,
     // @@protoc_insertion_point(field:GridFightTraitEffectLevelInfo.trait_effect_level_exp)
     pub trait_effect_level_exp: u32,
+    // @@protoc_insertion_point(field:GridFightTraitEffectLevelInfo.trait_effect_level_reward)
+    pub trait_effect_level_reward: ::std::collections::HashMap<u32, super::GridFightDropInfo::GridFightDropInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightTraitEffectLevelInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GridFightTraitEffectLevelInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "trait_effect_level_reward",
-            |m: &GridFightTraitEffectLevelInfo| { &m.trait_effect_level_reward },
-            |m: &mut GridFightTraitEffectLevelInfo| { &mut m.trait_effect_level_reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_effect_level_exp",
             |m: &GridFightTraitEffectLevelInfo| { &m.trait_effect_level_exp },
             |m: &mut GridFightTraitEffectLevelInfo| { &mut m.trait_effect_level_exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "trait_effect_level_reward",
+            |m: &GridFightTraitEffectLevelInfo| { &m.trait_effect_level_reward },
+            |m: &mut GridFightTraitEffectLevelInfo| { &mut m.trait_effect_level_reward },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightTraitEffectLevelInfo>(
             "GridFightTraitEffectLevelInfo",
@@ -79,6 +79,9 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.trait_effect_level_exp = is.read_uint32()?;
+                },
                 18 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -94,9 +97,6 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
                     is.pop_limit(old_limit);
                     self.trait_effect_level_reward.insert(key, value);
                 },
-                8 => {
-                    self.trait_effect_level_exp = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -109,6 +109,9 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.trait_effect_level_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.trait_effect_level_exp);
+        }
         for (k, v) in &self.trait_effect_level_reward {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -116,15 +119,15 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.trait_effect_level_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.trait_effect_level_exp);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.trait_effect_level_exp != 0 {
+            os.write_uint32(1, self.trait_effect_level_exp)?;
+        }
         for (k, v) in &self.trait_effect_level_reward {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -135,9 +138,6 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.trait_effect_level_exp != 0 {
-            os.write_uint32(1, self.trait_effect_level_exp)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -155,8 +155,8 @@ impl ::protobuf::Message for GridFightTraitEffectLevelInfo {
     }
 
     fn clear(&mut self) {
-        self.trait_effect_level_reward.clear();
         self.trait_effect_level_exp = 0;
+        self.trait_effect_level_reward.clear();
         self.special_fields.clear();
     }
 
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightTraitEffectLevelInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GridFightTraitEffectLevelInfo.proto\x1a\x17GridFightDropInfo.proto\"\
-    \xaa\x02\n\x1dGridFightTraitEffectLevelInfo\x12u\n\x19trait_effect_level\
-    _reward\x18\x02\x20\x03(\x0b2:.GridFightTraitEffectLevelInfo.TraitEffect\
-    LevelRewardEntryR\x16traitEffectLevelReward\x123\n\x16trait_effect_level\
-    _exp\x18\x01\x20\x01(\rR\x13traitEffectLevelExp\x1a]\n\x1bTraitEffectLev\
+    \xaa\x02\n\x1dGridFightTraitEffectLevelInfo\x123\n\x16trait_effect_level\
+    _exp\x18\x01\x20\x01(\rR\x13traitEffectLevelExp\x12u\n\x19trait_effect_l\
+    evel_reward\x18\x02\x20\x03(\x0b2:.GridFightTraitEffectLevelInfo.TraitEf\
+    fectLevelRewardEntryR\x16traitEffectLevelReward\x1a]\n\x1bTraitEffectLev\
     elRewardEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12(\n\x05valu\
     e\x18\x02\x20\x01(\x0b2\x12.GridFightDropInfoR\x05value:\x028\x01b\x06pr\
     oto3\

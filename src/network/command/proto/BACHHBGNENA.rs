@@ -30,10 +30,10 @@ pub struct BACHHBGNENA {
     // message fields
     // @@protoc_insertion_point(field:BACHHBGNENA.CFDIKLBINHK)
     pub CFDIKLBINHK: ::protobuf::MessageField<super::PGPHEKKPBLD::PGPHEKKPBLD>,
-    // @@protoc_insertion_point(field:BACHHBGNENA.DLFHABGGHFF)
-    pub DLFHABGGHFF: u32,
     // @@protoc_insertion_point(field:BACHHBGNENA.EDDBMFMEPJK)
     pub EDDBMFMEPJK: u32,
+    // @@protoc_insertion_point(field:BACHHBGNENA.DLFHABGGHFF)
+    pub DLFHABGGHFF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BACHHBGNENA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl BACHHBGNENA {
             |m: &mut BACHHBGNENA| { &mut m.CFDIKLBINHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLFHABGGHFF",
-            |m: &BACHHBGNENA| { &m.DLFHABGGHFF },
-            |m: &mut BACHHBGNENA| { &mut m.DLFHABGGHFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EDDBMFMEPJK",
             |m: &BACHHBGNENA| { &m.EDDBMFMEPJK },
             |m: &mut BACHHBGNENA| { &mut m.EDDBMFMEPJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLFHABGGHFF",
+            |m: &BACHHBGNENA| { &m.DLFHABGGHFF },
+            |m: &mut BACHHBGNENA| { &mut m.DLFHABGGHFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BACHHBGNENA>(
             "BACHHBGNENA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BACHHBGNENA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
                 },
-                88 => {
-                    self.DLFHABGGHFF = is.read_uint32()?;
-                },
-                40 => {
+                72 => {
                     self.EDDBMFMEPJK = is.read_uint32()?;
+                },
+                104 => {
+                    self.DLFHABGGHFF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for BACHHBGNENA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DLFHABGGHFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DLFHABGGHFF);
-        }
         if self.EDDBMFMEPJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EDDBMFMEPJK);
+            my_size += ::protobuf::rt::uint32_size(9, self.EDDBMFMEPJK);
+        }
+        if self.DLFHABGGHFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DLFHABGGHFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for BACHHBGNENA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.DLFHABGGHFF != 0 {
-            os.write_uint32(11, self.DLFHABGGHFF)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.EDDBMFMEPJK != 0 {
-            os.write_uint32(5, self.EDDBMFMEPJK)?;
+            os.write_uint32(9, self.EDDBMFMEPJK)?;
+        }
+        if self.DLFHABGGHFF != 0 {
+            os.write_uint32(13, self.DLFHABGGHFF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for BACHHBGNENA {
 
     fn clear(&mut self) {
         self.CFDIKLBINHK.clear();
-        self.DLFHABGGHFF = 0;
         self.EDDBMFMEPJK = 0;
+        self.DLFHABGGHFF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BACHHBGNENA {
         static instance: BACHHBGNENA = BACHHBGNENA {
             CFDIKLBINHK: ::protobuf::MessageField::none(),
-            DLFHABGGHFF: 0,
             EDDBMFMEPJK: 0,
+            DLFHABGGHFF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BACHHBGNENA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BACHHBGNENA.proto\x1a\x11PGPHEKKPBLD.proto\"\x81\x01\n\x0bBACHHBGN\
-    ENA\x12.\n\x0bCFDIKLBINHK\x18\x01\x20\x01(\x0b2\x0c.PGPHEKKPBLDR\x0bCFDI\
-    KLBINHK\x12\x20\n\x0bDLFHABGGHFF\x18\x0b\x20\x01(\rR\x0bDLFHABGGHFF\x12\
-    \x20\n\x0bEDDBMFMEPJK\x18\x05\x20\x01(\rR\x0bEDDBMFMEPJKb\x06proto3\
+    ENA\x12.\n\x0bCFDIKLBINHK\x18\x04\x20\x01(\x0b2\x0c.PGPHEKKPBLDR\x0bCFDI\
+    KLBINHK\x12\x20\n\x0bEDDBMFMEPJK\x18\t\x20\x01(\rR\x0bEDDBMFMEPJK\x12\
+    \x20\n\x0bDLFHABGGHFF\x18\r\x20\x01(\rR\x0bDLFHABGGHFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

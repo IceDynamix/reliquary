@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONAADAJBLEB {
     // message fields
-    // @@protoc_insertion_point(field:ONAADAJBLEB.ONOHPMDGNNH)
-    pub ONOHPMDGNNH: u32,
     // @@protoc_insertion_point(field:ONAADAJBLEB.DBIKJPDBMOE)
     pub DBIKJPDBMOE: i64,
+    // @@protoc_insertion_point(field:ONAADAJBLEB.ONOHPMDGNNH)
+    pub ONOHPMDGNNH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ONAADAJBLEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ONAADAJBLEB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONOHPMDGNNH",
-            |m: &ONAADAJBLEB| { &m.ONOHPMDGNNH },
-            |m: &mut ONAADAJBLEB| { &mut m.ONOHPMDGNNH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBIKJPDBMOE",
             |m: &ONAADAJBLEB| { &m.DBIKJPDBMOE },
             |m: &mut ONAADAJBLEB| { &mut m.DBIKJPDBMOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ONOHPMDGNNH",
+            |m: &ONAADAJBLEB| { &m.ONOHPMDGNNH },
+            |m: &mut ONAADAJBLEB| { &mut m.ONOHPMDGNNH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONAADAJBLEB>(
             "ONAADAJBLEB",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ONAADAJBLEB {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 56 => {
-                    self.ONOHPMDGNNH = is.read_uint32()?;
-                },
-                96 => {
                     self.DBIKJPDBMOE = is.read_int64()?;
+                },
+                80 => {
+                    self.ONOHPMDGNNH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ONAADAJBLEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ONOHPMDGNNH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ONOHPMDGNNH);
-        }
         if self.DBIKJPDBMOE != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.DBIKJPDBMOE);
+            my_size += ::protobuf::rt::int64_size(7, self.DBIKJPDBMOE);
+        }
+        if self.ONOHPMDGNNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ONOHPMDGNNH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ONAADAJBLEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ONOHPMDGNNH != 0 {
-            os.write_uint32(7, self.ONOHPMDGNNH)?;
-        }
         if self.DBIKJPDBMOE != 0 {
-            os.write_int64(12, self.DBIKJPDBMOE)?;
+            os.write_int64(7, self.DBIKJPDBMOE)?;
+        }
+        if self.ONOHPMDGNNH != 0 {
+            os.write_uint32(10, self.ONOHPMDGNNH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ONAADAJBLEB {
     }
 
     fn clear(&mut self) {
-        self.ONOHPMDGNNH = 0;
         self.DBIKJPDBMOE = 0;
+        self.ONOHPMDGNNH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONAADAJBLEB {
         static instance: ONAADAJBLEB = ONAADAJBLEB {
-            ONOHPMDGNNH: 0,
             DBIKJPDBMOE: 0,
+            ONOHPMDGNNH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ONAADAJBLEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONAADAJBLEB.proto\"Q\n\x0bONAADAJBLEB\x12\x20\n\x0bONOHPMDGNNH\x18\
-    \x07\x20\x01(\rR\x0bONOHPMDGNNH\x12\x20\n\x0bDBIKJPDBMOE\x18\x0c\x20\x01\
-    (\x03R\x0bDBIKJPDBMOEb\x06proto3\
+    \n\x11ONAADAJBLEB.proto\"Q\n\x0bONAADAJBLEB\x12\x20\n\x0bDBIKJPDBMOE\x18\
+    \x07\x20\x01(\x03R\x0bDBIKJPDBMOE\x12\x20\n\x0bONOHPMDGNNH\x18\n\x20\x01\
+    (\rR\x0bONOHPMDGNNHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

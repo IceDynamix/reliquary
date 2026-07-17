@@ -883,8 +883,106 @@ impl BKFDFLNHKIF {
         }
     }
 
+    // .LPEHILMMINA team_towers_pvp_start = 268;
+
+    pub fn team_towers_pvp_start(&self) -> &super::LPEHILMMINA::LPEHILMMINA {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(ref v)) => v,
+            _ => <super::LPEHILMMINA::LPEHILMMINA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_team_towers_pvp_start(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_team_towers_pvp_start(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_team_towers_pvp_start(&mut self, v: super::LPEHILMMINA::LPEHILMMINA) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_team_towers_pvp_start(&mut self) -> &mut super::LPEHILMMINA::LPEHILMMINA {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(super::LPEHILMMINA::LPEHILMMINA::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_team_towers_pvp_start(&mut self) -> super::LPEHILMMINA::LPEHILMMINA {
+        if self.has_team_towers_pvp_start() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LPEHILMMINA::LPEHILMMINA::new()
+        }
+    }
+
+    // .HCHDLMIOOIP team_towers_pvp_end = 269;
+
+    pub fn team_towers_pvp_end(&self) -> &super::HCHDLMIOOIP::HCHDLMIOOIP {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(ref v)) => v,
+            _ => <super::HCHDLMIOOIP::HCHDLMIOOIP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_team_towers_pvp_end(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_team_towers_pvp_end(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_team_towers_pvp_end(&mut self, v: super::HCHDLMIOOIP::HCHDLMIOOIP) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_team_towers_pvp_end(&mut self) -> &mut super::HCHDLMIOOIP::HCHDLMIOOIP {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(super::HCHDLMIOOIP::HCHDLMIOOIP::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_team_towers_pvp_end(&mut self) -> super::HCHDLMIOOIP::HCHDLMIOOIP {
+        if self.has_team_towers_pvp_end() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HCHDLMIOOIP::HCHDLMIOOIP::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(19);
+        let mut fields = ::std::vec::Vec::with_capacity(21);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
@@ -1015,6 +1113,20 @@ impl BKFDFLNHKIF {
             BKFDFLNHKIF::mut_dice_combat_v_2_dice_change,
             BKFDFLNHKIF::set_dice_combat_v_2_dice_change,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LPEHILMMINA::LPEHILMMINA>(
+            "team_towers_pvp_start",
+            BKFDFLNHKIF::has_team_towers_pvp_start,
+            BKFDFLNHKIF::team_towers_pvp_start,
+            BKFDFLNHKIF::mut_team_towers_pvp_start,
+            BKFDFLNHKIF::set_team_towers_pvp_start,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HCHDLMIOOIP::HCHDLMIOOIP>(
+            "team_towers_pvp_end",
+            BKFDFLNHKIF::has_team_towers_pvp_end,
+            BKFDFLNHKIF::team_towers_pvp_end,
+            BKFDFLNHKIF::mut_team_towers_pvp_end,
+            BKFDFLNHKIF::set_team_towers_pvp_end,
+        ));
         oneofs.push(bkfdflnhkif::PAFLKJACEDD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKFDFLNHKIF>(
             "BKFDFLNHKIF",
@@ -1090,6 +1202,12 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                 },
                 2138 => {
                     self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(is.read_message()?));
+                },
+                2146 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(is.read_message()?));
+                },
+                2154 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -1179,6 +1297,14 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -1246,6 +1372,12 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                 &bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(267, v, os)?;
                 },
+                &bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpStart(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(268, v, os)?;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(269, v, os)?;
+                },
             };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -1267,6 +1399,8 @@ impl ::protobuf::Message for BKFDFLNHKIF {
     fn clear(&mut self) {
         self.queue_position = 0;
         self.ICBFDMNNENI = 0;
+        self.PAFLKJACEDD = ::std::option::Option::None;
+        self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
@@ -1356,6 +1490,10 @@ pub mod bkfdflnhkif {
         DiceCombatV2DiceChangeRequest(super::super::INHMDFDBGCL::INHMDFDBGCL),
         // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_dice_change)
         DiceCombatV2DiceChange(super::super::JEHPGCEIHDF::JEHPGCEIHDF),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.team_towers_pvp_start)
+        TeamTowersPvpStart(super::super::LPEHILMMINA::LPEHILMMINA),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.team_towers_pvp_end)
+        TeamTowersPvpEnd(super::super::HCHDLMIOOIP::HCHDLMIOOIP),
     }
 
     impl ::protobuf::Oneof for PAFLKJACEDD {
@@ -1377,38 +1515,42 @@ pub mod bkfdflnhkif {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BKFDFLNHKIF.proto\x1a\x11CJOCEJLPADK.proto\x1a\x11FLOICBDOCNJ.prot\
-    o\x1a\x11HPOLJGDGOEI.proto\x1a\x11IEMBKIAENOA.proto\x1a\x11IIPAHEHJJJL.p\
-    roto\x1a\x11INHMDFDBGCL.proto\x1a\x11JEHPGCEIHDF.proto\x1a\x11JPAHFFFCII\
-    K.proto\x1a\x11KKOKOAJBHFN.proto\x1a\x11KMGDCCNNGEE.proto\x1a\x11KNMGHLJ\
-    KBDA.proto\x1a\x11LLJJGILGNEO.proto\x1a\x11LOKPJGLJIIH.proto\x1a\x11NINL\
-    EFEPGCC.proto\x1a\x11PIMNGBAMMAM.proto\x1a\x11PJENKHDODKA.proto\x1a\x11P\
-    NGGKFFJILG.proto\"\x97\n\n\x0bBKFDFLNHKIF\x12%\n\x0equeue_position\x18\
-    \x01\x20\x01(\rR\rqueuePosition\x12\x20\n\x0bICBFDMNNENI\x18\x02\x20\x01\
-    (\rR\x0bICBFDMNNENI\x12:\n\x11marble_game_begin\x18e\x20\x01(\x0b2\x0c.C\
-    JOCEJLPADKH\0R\x0fmarbleGameBegin\x126\n\x0fmarble_game_end\x18f\x20\x01\
-    (\x0b2\x0c.KMGDCCNNGEEH\0R\rmarbleGameEnd\x12:\n\x11marble_game_round\
-    \x18g\x20\x01(\x0b2\x0c.LOKPJGLJIIHH\0R\x0fmarbleGameRound\x128\n\x10mar\
-    ble_game_turn\x18h\x20\x01(\x0b2\x0c.PIMNGBAMMAMH\0R\x0emarbleGameTurn\
-    \x12F\n\x17cake_race_section_begin\x18\xc9\x01\x20\x01(\x0b2\x0c.PJENKHD\
-    ODKAH\0R\x14cakeRaceSectionBegin\x12B\n\x15cake_race_section_end\x18\xca\
-    \x01\x20\x01(\x0b2\x0c.FLOICBDOCNJH\0R\x12cakeRaceSectionEnd\x12Q\n\x1dc\
-    ake_race_room_section_settle\x18\xcb\x01\x20\x01(\x0b2\x0c.IIPAHEHJJJLH\
-    \0R\x19cakeRaceRoomSectionSettle\x12;\n\x11dice_combat_begin\x18\xfb\x01\
-    \x20\x01(\x0b2\x0c.JPAHFFFCIIKH\0R\x0fdiceCombatBegin\x12@\n\x14dice_com\
-    bat_turn_end\x18\xfc\x01\x20\x01(\x0b2\x0c.NINLEFEPGCCH\0R\x11diceCombat\
-    TurnEnd\x127\n\x0fdice_combat_end\x18\xfd\x01\x20\x01(\x0b2\x0c.KKOKOAJB\
-    HFNH\0R\rdiceCombatEnd\x12A\n\x15dice_combat_v_2_begin\x18\x85\x02\x20\
-    \x01(\x0b2\x0c.LLJJGILGNEOH\0R\x11diceCombatV2Begin\x12=\n\x13dice_comba\
-    t_v_2_end\x18\x86\x02\x20\x01(\x0b2\x0c.HPOLJGDGOEIH\0R\x0fdiceCombatV2E\
-    nd\x12F\n\x18dice_combat_v_2_turn_end\x18\x87\x02\x20\x01(\x0b2\x0c.IEMB\
-    KIAENOAH\0R\x13diceCombatV2TurnEnd\x12]\n$dice_combat_v_2_tactics_point_\
-    change\x18\x88\x02\x20\x01(\x0b2\x0c.PNGGKFFJILGH\0R\x1ediceCombatV2Tact\
-    icsPointChange\x12[\n#dice_combat_v_2_tactics_card_change\x18\x89\x02\
-    \x20\x01(\x0b2\x0c.KNMGHLJKBDAH\0R\x1ddiceCombatV2TacticsCardChange\x12[\
-    \n#dice_combat_v_2_dice_change_request\x18\x8a\x02\x20\x01(\x0b2\x0c.INH\
-    MDFDBGCLH\0R\x1ddiceCombatV2DiceChangeRequest\x12L\n\x1bdice_combat_v_2_\
-    dice_change\x18\x8b\x02\x20\x01(\x0b2\x0c.JEHPGCEIHDFH\0R\x16diceCombatV\
-    2DiceChangeB\r\n\x0bPAFLKJACEDDb\x06proto3\
+    o\x1a\x11HCHDLMIOOIP.proto\x1a\x11HPOLJGDGOEI.proto\x1a\x11IEMBKIAENOA.p\
+    roto\x1a\x11IIPAHEHJJJL.proto\x1a\x11INHMDFDBGCL.proto\x1a\x11JEHPGCEIHD\
+    F.proto\x1a\x11JPAHFFFCIIK.proto\x1a\x11KKOKOAJBHFN.proto\x1a\x11KMGDCCN\
+    NGEE.proto\x1a\x11KNMGHLJKBDA.proto\x1a\x11LLJJGILGNEO.proto\x1a\x11LOKP\
+    JGLJIIH.proto\x1a\x11LPEHILMMINA.proto\x1a\x11NINLEFEPGCC.proto\x1a\x11P\
+    IMNGBAMMAM.proto\x1a\x11PJENKHDODKA.proto\x1a\x11PNGGKFFJILG.proto\"\x9b\
+    \x0b\n\x0bBKFDFLNHKIF\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueu\
+    ePosition\x12\x20\n\x0bICBFDMNNENI\x18\x02\x20\x01(\rR\x0bICBFDMNNENI\
+    \x12:\n\x11marble_game_begin\x18e\x20\x01(\x0b2\x0c.CJOCEJLPADKH\0R\x0fm\
+    arbleGameBegin\x126\n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c.KMGDCCNN\
+    GEEH\0R\rmarbleGameEnd\x12:\n\x11marble_game_round\x18g\x20\x01(\x0b2\
+    \x0c.LOKPJGLJIIHH\0R\x0fmarbleGameRound\x128\n\x10marble_game_turn\x18h\
+    \x20\x01(\x0b2\x0c.PIMNGBAMMAMH\0R\x0emarbleGameTurn\x12F\n\x17cake_race\
+    _section_begin\x18\xc9\x01\x20\x01(\x0b2\x0c.PJENKHDODKAH\0R\x14cakeRace\
+    SectionBegin\x12B\n\x15cake_race_section_end\x18\xca\x01\x20\x01(\x0b2\
+    \x0c.FLOICBDOCNJH\0R\x12cakeRaceSectionEnd\x12Q\n\x1dcake_race_room_sect\
+    ion_settle\x18\xcb\x01\x20\x01(\x0b2\x0c.IIPAHEHJJJLH\0R\x19cakeRaceRoom\
+    SectionSettle\x12;\n\x11dice_combat_begin\x18\xfb\x01\x20\x01(\x0b2\x0c.\
+    JPAHFFFCIIKH\0R\x0fdiceCombatBegin\x12@\n\x14dice_combat_turn_end\x18\
+    \xfc\x01\x20\x01(\x0b2\x0c.NINLEFEPGCCH\0R\x11diceCombatTurnEnd\x127\n\
+    \x0fdice_combat_end\x18\xfd\x01\x20\x01(\x0b2\x0c.KKOKOAJBHFNH\0R\rdiceC\
+    ombatEnd\x12A\n\x15dice_combat_v_2_begin\x18\x85\x02\x20\x01(\x0b2\x0c.L\
+    LJJGILGNEOH\0R\x11diceCombatV2Begin\x12=\n\x13dice_combat_v_2_end\x18\
+    \x86\x02\x20\x01(\x0b2\x0c.HPOLJGDGOEIH\0R\x0fdiceCombatV2End\x12F\n\x18\
+    dice_combat_v_2_turn_end\x18\x87\x02\x20\x01(\x0b2\x0c.IEMBKIAENOAH\0R\
+    \x13diceCombatV2TurnEnd\x12]\n$dice_combat_v_2_tactics_point_change\x18\
+    \x88\x02\x20\x01(\x0b2\x0c.PNGGKFFJILGH\0R\x1ediceCombatV2TacticsPointCh\
+    ange\x12[\n#dice_combat_v_2_tactics_card_change\x18\x89\x02\x20\x01(\x0b\
+    2\x0c.KNMGHLJKBDAH\0R\x1ddiceCombatV2TacticsCardChange\x12[\n#dice_comba\
+    t_v_2_dice_change_request\x18\x8a\x02\x20\x01(\x0b2\x0c.INHMDFDBGCLH\0R\
+    \x1ddiceCombatV2DiceChangeRequest\x12L\n\x1bdice_combat_v_2_dice_change\
+    \x18\x8b\x02\x20\x01(\x0b2\x0c.JEHPGCEIHDFH\0R\x16diceCombatV2DiceChange\
+    \x12B\n\x15team_towers_pvp_start\x18\x8c\x02\x20\x01(\x0b2\x0c.LPEHILMMI\
+    NAH\0R\x12teamTowersPvpStart\x12>\n\x13team_towers_pvp_end\x18\x8d\x02\
+    \x20\x01(\x0b2\x0c.HCHDLMIOOIPH\0R\x10teamTowersPvpEndB\r\n\x0bPAFLKJACE\
+    DDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1425,9 +1567,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(17);
+            let mut deps = ::std::vec::Vec::with_capacity(19);
             deps.push(super::CJOCEJLPADK::file_descriptor().clone());
             deps.push(super::FLOICBDOCNJ::file_descriptor().clone());
+            deps.push(super::HCHDLMIOOIP::file_descriptor().clone());
             deps.push(super::HPOLJGDGOEI::file_descriptor().clone());
             deps.push(super::IEMBKIAENOA::file_descriptor().clone());
             deps.push(super::IIPAHEHJJJL::file_descriptor().clone());
@@ -1439,6 +1582,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::KNMGHLJKBDA::file_descriptor().clone());
             deps.push(super::LLJJGILGNEO::file_descriptor().clone());
             deps.push(super::LOKPJGLJIIH::file_descriptor().clone());
+            deps.push(super::LPEHILMMINA::file_descriptor().clone());
             deps.push(super::NINLEFEPGCC::file_descriptor().clone());
             deps.push(super::PIMNGBAMMAM::file_descriptor().clone());
             deps.push(super::PJENKHDODKA::file_descriptor().clone());

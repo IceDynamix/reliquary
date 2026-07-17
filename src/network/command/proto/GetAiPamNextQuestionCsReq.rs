@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAiPamNextQuestionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetAiPamNextQuestionCsReq.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:GetAiPamNextQuestionCsReq.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAiPamNextQuestionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetAiPamNextQuestionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &GetAiPamNextQuestionCsReq| { &m.BDPIMPJOJBK },
-            |m: &mut GetAiPamNextQuestionCsReq| { &mut m.BDPIMPJOJBK },
+            "role",
+            |m: &GetAiPamNextQuestionCsReq| { &m.role },
+            |m: &mut GetAiPamNextQuestionCsReq| { &mut m.role },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAiPamNextQuestionCsReq>(
             "GetAiPamNextQuestionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetAiPamNextQuestionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
+                80 => {
+                    self.role = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetAiPamNextQuestionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(11, self.BDPIMPJOJBK.value());
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.role.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetAiPamNextQuestionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.role))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GetAiPamNextQuestionCsReq {
     }
 
     fn clear(&mut self) {
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAiPamNextQuestionCsReq {
         static instance: GetAiPamNextQuestionCsReq = GetAiPamNextQuestionCsReq {
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamNextQuestionCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetAiPamNextQuestionCsReq.proto\x1a\x11FKNKNLGMACL.proto\"K\n\x19G\
-    etAiPamNextQuestionCsReq\x12.\n\x0bBDPIMPJOJBK\x18\x0b\x20\x01(\x0e2\x0c\
-    .FKNKNLGMACLR\x0bBDPIMPJOJBKb\x06proto3\
+    \n\x1fGetAiPamNextQuestionCsReq.proto\x1a\x11FKNKNLGMACL.proto\"=\n\x19G\
+    etAiPamNextQuestionCsReq\x12\x20\n\x04role\x18\n\x20\x01(\x0e2\x0c.FKNKN\
+    LGMACLR\x04roleb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

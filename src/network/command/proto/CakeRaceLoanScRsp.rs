@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceLoanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceLoanScRsp.item_list)
-    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:CakeRaceLoanScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:CakeRaceLoanScRsp.AKEABJGIKLI)
     pub AKEABJGIKLI: u32,
+    // @@protoc_insertion_point(field:CakeRaceLoanScRsp.item_list)
+    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:CakeRaceLoanScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl CakeRaceLoanScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "item_list",
-            |m: &CakeRaceLoanScRsp| { &m.item_list },
-            |m: &mut CakeRaceLoanScRsp| { &mut m.item_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &CakeRaceLoanScRsp| { &m.retcode },
@@ -67,6 +62,11 @@ impl CakeRaceLoanScRsp {
             "AKEABJGIKLI",
             |m: &CakeRaceLoanScRsp| { &m.AKEABJGIKLI },
             |m: &mut CakeRaceLoanScRsp| { &mut m.AKEABJGIKLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "item_list",
+            |m: &CakeRaceLoanScRsp| { &m.item_list },
+            |m: &mut CakeRaceLoanScRsp| { &mut m.item_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CakeRaceLoanScRsp>(
             "CakeRaceLoanScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CakeRaceLoanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
-                },
-                32 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.AKEABJGIKLI = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for CakeRaceLoanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.AKEABJGIKLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AKEABJGIKLI);
+        }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.AKEABJGIKLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AKEABJGIKLI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for CakeRaceLoanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if self.AKEABJGIKLI != 0 {
-            os.write_uint32(14, self.AKEABJGIKLI)?;
+            os.write_uint32(8, self.AKEABJGIKLI)?;
+        }
+        if let Some(v) = self.item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for CakeRaceLoanScRsp {
     }
 
     fn clear(&mut self) {
-        self.item_list.clear();
         self.retcode = 0;
         self.AKEABJGIKLI = 0;
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceLoanScRsp {
         static instance: CakeRaceLoanScRsp = CakeRaceLoanScRsp {
-            item_list: ::protobuf::MessageField::none(),
             retcode: 0,
             AKEABJGIKLI: 0,
+            item_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceLoanScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CakeRaceLoanScRsp.proto\x1a\x0eItemList.proto\"w\n\x11CakeRaceLoan\
-    ScRsp\x12&\n\titem_list\x18\x06\x20\x01(\x0b2\t.ItemListR\x08itemList\
-    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bAKEABJ\
-    GIKLI\x18\x0e\x20\x01(\rR\x0bAKEABJGIKLIb\x06proto3\
+    ScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bA\
+    KEABJGIKLI\x18\x08\x20\x01(\rR\x0bAKEABJGIKLI\x12&\n\titem_list\x18\x0b\
+    \x20\x01(\x0b2\t.ItemListR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

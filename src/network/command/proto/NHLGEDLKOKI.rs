@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NHLGEDLKOKI {
     // message fields
-    // @@protoc_insertion_point(field:NHLGEDLKOKI.group_state_info)
-    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // @@protoc_insertion_point(field:NHLGEDLKOKI.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:NHLGEDLKOKI.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:NHLGEDLKOKI.LCPPNDPKHPH)
-    pub LCPPNDPKHPH: bool,
+    // @@protoc_insertion_point(field:NHLGEDLKOKI.group_state_info)
+    pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:NHLGEDLKOKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,13 +51,8 @@ impl NHLGEDLKOKI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
-            "group_state_info",
-            |m: &NHLGEDLKOKI| { &m.group_state_info },
-            |m: &mut NHLGEDLKOKI| { &mut m.group_state_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &NHLGEDLKOKI| { &m.motion },
@@ -70,10 +63,10 @@ impl NHLGEDLKOKI {
             |m: &NHLGEDLKOKI| { &m.id },
             |m: &mut NHLGEDLKOKI| { &mut m.id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCPPNDPKHPH",
-            |m: &NHLGEDLKOKI| { &m.LCPPNDPKHPH },
-            |m: &mut NHLGEDLKOKI| { &mut m.LCPPNDPKHPH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
+            "group_state_info",
+            |m: &NHLGEDLKOKI| { &m.group_state_info },
+            |m: &mut NHLGEDLKOKI| { &mut m.group_state_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NHLGEDLKOKI>(
             "NHLGEDLKOKI",
@@ -93,17 +86,14 @@ impl ::protobuf::Message for NHLGEDLKOKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
-                },
-                82 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                72 => {
+                48 => {
                     self.id = is.read_uint32()?;
                 },
-                24 => {
-                    self.LCPPNDPKHPH = is.read_bool()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +107,16 @@ impl ::protobuf::Message for NHLGEDLKOKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.group_state_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
         }
-        if self.LCPPNDPKHPH != false {
-            my_size += 1 + 1;
+        if let Some(v) = self.group_state_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +124,14 @@ impl ::protobuf::Message for NHLGEDLKOKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.id != 0 {
-            os.write_uint32(9, self.id)?;
+            os.write_uint32(6, self.id)?;
         }
-        if self.LCPPNDPKHPH != false {
-            os.write_bool(3, self.LCPPNDPKHPH)?;
+        if let Some(v) = self.group_state_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +150,17 @@ impl ::protobuf::Message for NHLGEDLKOKI {
     }
 
     fn clear(&mut self) {
-        self.group_state_info.clear();
         self.motion.clear();
         self.id = 0;
-        self.LCPPNDPKHPH = false;
+        self.group_state_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NHLGEDLKOKI {
         static instance: NHLGEDLKOKI = NHLGEDLKOKI {
-            group_state_info: ::protobuf::MessageField::none(),
             motion: ::protobuf::MessageField::none(),
             id: 0,
-            LCPPNDPKHPH: false,
+            group_state_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,10 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for NHLGEDLKOKI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHLGEDLKOKI.proto\x1a\x14GroupStateInfo.proto\x1a\x10MotionInfo.pr\
-    oto\"\x9f\x01\n\x0bNHLGEDLKOKI\x129\n\x10group_state_info\x18\x0e\x20\
-    \x01(\x0b2\x0f.GroupStateInfoR\x0egroupStateInfo\x12#\n\x06motion\x18\n\
-    \x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x0e\n\x02id\x18\t\x20\x01(\
-    \rR\x02id\x12\x20\n\x0bLCPPNDPKHPH\x18\x03\x20\x01(\x08R\x0bLCPPNDPKHPHb\
+    oto\"}\n\x0bNHLGEDLKOKI\x12#\n\x06motion\x18\x03\x20\x01(\x0b2\x0b.Motio\
+    nInfoR\x06motion\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x129\n\x10gro\
+    up_state_info\x18\t\x20\x01(\x0b2\x0f.GroupStateInfoR\x0egroupStateInfob\
     \x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OEBBNFANHLK {
     // message fields
-    // @@protoc_insertion_point(field:OEBBNFANHLK.AALPICLABCO)
-    pub AALPICLABCO: f64,
     // @@protoc_insertion_point(field:OEBBNFANHLK.JBPNBECLGKN)
     pub JBPNBECLGKN: u32,
+    // @@protoc_insertion_point(field:OEBBNFANHLK.AALPICLABCO)
+    pub AALPICLABCO: f64,
     // special fields
     // @@protoc_insertion_point(special_field:OEBBNFANHLK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OEBBNFANHLK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AALPICLABCO",
-            |m: &OEBBNFANHLK| { &m.AALPICLABCO },
-            |m: &mut OEBBNFANHLK| { &mut m.AALPICLABCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JBPNBECLGKN",
             |m: &OEBBNFANHLK| { &m.JBPNBECLGKN },
             |m: &mut OEBBNFANHLK| { &mut m.JBPNBECLGKN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AALPICLABCO",
+            |m: &OEBBNFANHLK| { &m.AALPICLABCO },
+            |m: &mut OEBBNFANHLK| { &mut m.AALPICLABCO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OEBBNFANHLK>(
             "OEBBNFANHLK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OEBBNFANHLK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                17 => {
-                    self.AALPICLABCO = is.read_double()?;
-                },
                 8 => {
                     self.JBPNBECLGKN = is.read_uint32()?;
+                },
+                17 => {
+                    self.AALPICLABCO = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OEBBNFANHLK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AALPICLABCO != 0. {
-            my_size += 1 + 8;
-        }
         if self.JBPNBECLGKN != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.JBPNBECLGKN);
+        }
+        if self.AALPICLABCO != 0. {
+            my_size += 1 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OEBBNFANHLK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AALPICLABCO != 0. {
-            os.write_double(2, self.AALPICLABCO)?;
-        }
         if self.JBPNBECLGKN != 0 {
             os.write_uint32(1, self.JBPNBECLGKN)?;
+        }
+        if self.AALPICLABCO != 0. {
+            os.write_double(2, self.AALPICLABCO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OEBBNFANHLK {
     }
 
     fn clear(&mut self) {
-        self.AALPICLABCO = 0.;
         self.JBPNBECLGKN = 0;
+        self.AALPICLABCO = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OEBBNFANHLK {
         static instance: OEBBNFANHLK = OEBBNFANHLK {
-            AALPICLABCO: 0.,
             JBPNBECLGKN: 0,
+            AALPICLABCO: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for OEBBNFANHLK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OEBBNFANHLK.proto\"Q\n\x0bOEBBNFANHLK\x12\x20\n\x0bAALPICLABCO\x18\
-    \x02\x20\x01(\x01R\x0bAALPICLABCO\x12\x20\n\x0bJBPNBECLGKN\x18\x01\x20\
-    \x01(\rR\x0bJBPNBECLGKNb\x06proto3\
+    \n\x11OEBBNFANHLK.proto\"Q\n\x0bOEBBNFANHLK\x12\x20\n\x0bJBPNBECLGKN\x18\
+    \x01\x20\x01(\rR\x0bJBPNBECLGKN\x12\x20\n\x0bAALPICLABCO\x18\x02\x20\x01\
+    (\x01R\x0bAALPICLABCOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EFBNNINLDMM {
     // message fields
+    // @@protoc_insertion_point(field:EFBNNINLDMM.OLIIDBMFHCH)
+    pub OLIIDBMFHCH: ::protobuf::MessageField<super::HLMNDLOMPKP::HLMNDLOMPKP>,
     // @@protoc_insertion_point(field:EFBNNINLDMM.LMHCDBENJLM)
     pub LMHCDBENJLM: ::protobuf::MessageField<super::HLMNDLOMPKP::HLMNDLOMPKP>,
     // @@protoc_insertion_point(field:EFBNNINLDMM.CDHIEPDFEIB)
     pub CDHIEPDFEIB: ::protobuf::MessageField<super::HLMNDLOMPKP::HLMNDLOMPKP>,
-    // @@protoc_insertion_point(field:EFBNNINLDMM.OLIIDBMFHCH)
-    pub OLIIDBMFHCH: ::protobuf::MessageField<super::HLMNDLOMPKP::HLMNDLOMPKP>,
-    // @@protoc_insertion_point(field:EFBNNINLDMM.BLHPCHNPNLA)
-    pub BLHPCHNPNLA: u32,
     // @@protoc_insertion_point(field:EFBNNINLDMM.JPBIPCKEIMG)
     pub JPBIPCKEIMG: u32,
+    // @@protoc_insertion_point(field:EFBNNINLDMM.BLHPCHNPNLA)
+    pub BLHPCHNPNLA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EFBNNINLDMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,6 +58,11 @@ impl EFBNNINLDMM {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLMNDLOMPKP::HLMNDLOMPKP>(
+            "OLIIDBMFHCH",
+            |m: &EFBNNINLDMM| { &m.OLIIDBMFHCH },
+            |m: &mut EFBNNINLDMM| { &mut m.OLIIDBMFHCH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLMNDLOMPKP::HLMNDLOMPKP>(
             "LMHCDBENJLM",
             |m: &EFBNNINLDMM| { &m.LMHCDBENJLM },
             |m: &mut EFBNNINLDMM| { &mut m.LMHCDBENJLM },
@@ -67,20 +72,15 @@ impl EFBNNINLDMM {
             |m: &EFBNNINLDMM| { &m.CDHIEPDFEIB },
             |m: &mut EFBNNINLDMM| { &mut m.CDHIEPDFEIB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLMNDLOMPKP::HLMNDLOMPKP>(
-            "OLIIDBMFHCH",
-            |m: &EFBNNINLDMM| { &m.OLIIDBMFHCH },
-            |m: &mut EFBNNINLDMM| { &mut m.OLIIDBMFHCH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPBIPCKEIMG",
+            |m: &EFBNNINLDMM| { &m.JPBIPCKEIMG },
+            |m: &mut EFBNNINLDMM| { &mut m.JPBIPCKEIMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BLHPCHNPNLA",
             |m: &EFBNNINLDMM| { &m.BLHPCHNPNLA },
             |m: &mut EFBNNINLDMM| { &mut m.BLHPCHNPNLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPBIPCKEIMG",
-            |m: &EFBNNINLDMM| { &m.JPBIPCKEIMG },
-            |m: &mut EFBNNINLDMM| { &mut m.JPBIPCKEIMG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EFBNNINLDMM>(
             "EFBNNINLDMM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EFBNNINLDMM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLIIDBMFHCH)?;
+                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMHCDBENJLM)?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDHIEPDFEIB)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OLIIDBMFHCH)?;
+                32 => {
+                    self.JPBIPCKEIMG = is.read_uint32()?;
                 },
                 40 => {
                     self.BLHPCHNPNLA = is.read_uint32()?;
-                },
-                32 => {
-                    self.JPBIPCKEIMG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,6 +127,10 @@ impl ::protobuf::Message for EFBNNINLDMM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.OLIIDBMFHCH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.LMHCDBENJLM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -135,15 +139,11 @@ impl ::protobuf::Message for EFBNNINLDMM {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OLIIDBMFHCH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.JPBIPCKEIMG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JPBIPCKEIMG);
         }
         if self.BLHPCHNPNLA != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.BLHPCHNPNLA);
-        }
-        if self.JPBIPCKEIMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JPBIPCKEIMG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,20 +151,20 @@ impl ::protobuf::Message for EFBNNINLDMM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.OLIIDBMFHCH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         if let Some(v) = self.LMHCDBENJLM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.CDHIEPDFEIB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.OLIIDBMFHCH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.JPBIPCKEIMG != 0 {
+            os.write_uint32(4, self.JPBIPCKEIMG)?;
         }
         if self.BLHPCHNPNLA != 0 {
             os.write_uint32(5, self.BLHPCHNPNLA)?;
-        }
-        if self.JPBIPCKEIMG != 0 {
-            os.write_uint32(4, self.JPBIPCKEIMG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,21 +183,21 @@ impl ::protobuf::Message for EFBNNINLDMM {
     }
 
     fn clear(&mut self) {
+        self.OLIIDBMFHCH.clear();
         self.LMHCDBENJLM.clear();
         self.CDHIEPDFEIB.clear();
-        self.OLIIDBMFHCH.clear();
-        self.BLHPCHNPNLA = 0;
         self.JPBIPCKEIMG = 0;
+        self.BLHPCHNPNLA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EFBNNINLDMM {
         static instance: EFBNNINLDMM = EFBNNINLDMM {
+            OLIIDBMFHCH: ::protobuf::MessageField::none(),
             LMHCDBENJLM: ::protobuf::MessageField::none(),
             CDHIEPDFEIB: ::protobuf::MessageField::none(),
-            OLIIDBMFHCH: ::protobuf::MessageField::none(),
-            BLHPCHNPNLA: 0,
             JPBIPCKEIMG: 0,
+            BLHPCHNPNLA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,11 +223,11 @@ impl ::protobuf::reflect::ProtobufValue for EFBNNINLDMM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EFBNNINLDMM.proto\x1a\x11HLMNDLOMPKP.proto\"\xe1\x01\n\x0bEFBNNINL\
-    DMM\x12.\n\x0bLMHCDBENJLM\x18\x02\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0bLMHC\
-    DBENJLM\x12.\n\x0bCDHIEPDFEIB\x18\x03\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0b\
-    CDHIEPDFEIB\x12.\n\x0bOLIIDBMFHCH\x18\x01\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\
-    \x0bOLIIDBMFHCH\x12\x20\n\x0bBLHPCHNPNLA\x18\x05\x20\x01(\rR\x0bBLHPCHNP\
-    NLA\x12\x20\n\x0bJPBIPCKEIMG\x18\x04\x20\x01(\rR\x0bJPBIPCKEIMGb\x06prot\
+    DMM\x12.\n\x0bOLIIDBMFHCH\x18\x01\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0bOLII\
+    DBMFHCH\x12.\n\x0bLMHCDBENJLM\x18\x02\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\x0b\
+    LMHCDBENJLM\x12.\n\x0bCDHIEPDFEIB\x18\x03\x20\x01(\x0b2\x0c.HLMNDLOMPKPR\
+    \x0bCDHIEPDFEIB\x12\x20\n\x0bJPBIPCKEIMG\x18\x04\x20\x01(\rR\x0bJPBIPCKE\
+    IMG\x12\x20\n\x0bBLHPCHNPNLA\x18\x05\x20\x01(\rR\x0bBLHPCHNPNLAb\x06prot\
     o3\
 ";
 

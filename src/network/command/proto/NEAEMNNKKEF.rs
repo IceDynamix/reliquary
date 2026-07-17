@@ -79,10 +79,10 @@ impl ::protobuf::Message for NEAEMNNKKEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                24 => {
                     self.DDFFJEBLCAN = is.read_uint32()?;
                 },
-                16 => {
+                56 => {
                     self.BGKDJKCFEKD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NEAEMNNKKEF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DDFFJEBLCAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DDFFJEBLCAN);
+            my_size += ::protobuf::rt::uint32_size(3, self.DDFFJEBLCAN);
         }
         if self.BGKDJKCFEKD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BGKDJKCFEKD);
+            my_size += ::protobuf::rt::uint32_size(7, self.BGKDJKCFEKD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NEAEMNNKKEF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DDFFJEBLCAN != 0 {
-            os.write_uint32(11, self.DDFFJEBLCAN)?;
+            os.write_uint32(3, self.DDFFJEBLCAN)?;
         }
         if self.BGKDJKCFEKD != 0 {
-            os.write_uint32(2, self.BGKDJKCFEKD)?;
+            os.write_uint32(7, self.BGKDJKCFEKD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NEAEMNNKKEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEAEMNNKKEF.proto\"Q\n\x0bNEAEMNNKKEF\x12\x20\n\x0bDDFFJEBLCAN\x18\
-    \x0b\x20\x01(\rR\x0bDDFFJEBLCAN\x12\x20\n\x0bBGKDJKCFEKD\x18\x02\x20\x01\
+    \x03\x20\x01(\rR\x0bDDFFJEBLCAN\x12\x20\n\x0bBGKDJKCFEKD\x18\x07\x20\x01\
     (\rR\x0bBGKDJKCFEKDb\x06proto3\
 ";
 

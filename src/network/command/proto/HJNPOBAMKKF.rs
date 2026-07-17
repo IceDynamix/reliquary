@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HJNPOBAMKKF {
     // message fields
-    // @@protoc_insertion_point(field:HJNPOBAMKKF.CDMKBCHLPAB)
-    pub CDMKBCHLPAB: ::std::vec::Vec<super::JAONELJJAFK::JAONELJJAFK>,
     // @@protoc_insertion_point(field:HJNPOBAMKKF.HGNKNFJPIKI)
     pub HGNKNFJPIKI: ::std::vec::Vec<super::AOAOBPGFHLA::AOAOBPGFHLA>,
+    // @@protoc_insertion_point(field:HJNPOBAMKKF.CDMKBCHLPAB)
+    pub CDMKBCHLPAB: ::std::vec::Vec<super::JAONELJJAFK::JAONELJJAFK>,
     // @@protoc_insertion_point(field:HJNPOBAMKKF.MNCFOGJECMF)
     pub MNCFOGJECMF: u32,
     // special fields
@@ -54,14 +54,14 @@ impl HJNPOBAMKKF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CDMKBCHLPAB",
-            |m: &HJNPOBAMKKF| { &m.CDMKBCHLPAB },
-            |m: &mut HJNPOBAMKKF| { &mut m.CDMKBCHLPAB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HGNKNFJPIKI",
             |m: &HJNPOBAMKKF| { &m.HGNKNFJPIKI },
             |m: &mut HJNPOBAMKKF| { &mut m.HGNKNFJPIKI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CDMKBCHLPAB",
+            |m: &HJNPOBAMKKF| { &m.CDMKBCHLPAB },
+            |m: &mut HJNPOBAMKKF| { &mut m.CDMKBCHLPAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MNCFOGJECMF",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for HJNPOBAMKKF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.CDMKBCHLPAB.push(is.read_message()?);
-                },
                 10 => {
                     self.HGNKNFJPIKI.push(is.read_message()?);
+                },
+                18 => {
+                    self.CDMKBCHLPAB.push(is.read_message()?);
                 },
                 24 => {
                     self.MNCFOGJECMF = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for HJNPOBAMKKF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CDMKBCHLPAB {
+        for value in &self.HGNKNFJPIKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HGNKNFJPIKI {
+        for value in &self.CDMKBCHLPAB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,11 +124,11 @@ impl ::protobuf::Message for HJNPOBAMKKF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CDMKBCHLPAB {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         for v in &self.HGNKNFJPIKI {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
+        for v in &self.CDMKBCHLPAB {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.MNCFOGJECMF != 0 {
             os.write_uint32(3, self.MNCFOGJECMF)?;
@@ -150,16 +150,16 @@ impl ::protobuf::Message for HJNPOBAMKKF {
     }
 
     fn clear(&mut self) {
-        self.CDMKBCHLPAB.clear();
         self.HGNKNFJPIKI.clear();
+        self.CDMKBCHLPAB.clear();
         self.MNCFOGJECMF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HJNPOBAMKKF {
         static instance: HJNPOBAMKKF = HJNPOBAMKKF {
-            CDMKBCHLPAB: ::std::vec::Vec::new(),
             HGNKNFJPIKI: ::std::vec::Vec::new(),
+            CDMKBCHLPAB: ::std::vec::Vec::new(),
             MNCFOGJECMF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for HJNPOBAMKKF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJNPOBAMKKF.proto\x1a\x11AOAOBPGFHLA.proto\x1a\x11JAONELJJAFK.prot\
-    o\"\x8f\x01\n\x0bHJNPOBAMKKF\x12.\n\x0bCDMKBCHLPAB\x18\x02\x20\x03(\x0b2\
-    \x0c.JAONELJJAFKR\x0bCDMKBCHLPAB\x12.\n\x0bHGNKNFJPIKI\x18\x01\x20\x03(\
-    \x0b2\x0c.AOAOBPGFHLAR\x0bHGNKNFJPIKI\x12\x20\n\x0bMNCFOGJECMF\x18\x03\
+    o\"\x8f\x01\n\x0bHJNPOBAMKKF\x12.\n\x0bHGNKNFJPIKI\x18\x01\x20\x03(\x0b2\
+    \x0c.AOAOBPGFHLAR\x0bHGNKNFJPIKI\x12.\n\x0bCDMKBCHLPAB\x18\x02\x20\x03(\
+    \x0b2\x0c.JAONELJJAFKR\x0bCDMKBCHLPAB\x12\x20\n\x0bMNCFOGJECMF\x18\x03\
     \x20\x01(\rR\x0bMNCFOGJECMFb\x06proto3\
 ";
 

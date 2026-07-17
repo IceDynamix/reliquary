@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DFLIHGGNBDB {
     // message fields
-    // @@protoc_insertion_point(field:DFLIHGGNBDB.JCJGJBLENCP)
-    pub JCJGJBLENCP: u32,
     // @@protoc_insertion_point(field:DFLIHGGNBDB.EDIGEANPBNL)
     pub EDIGEANPBNL: u32,
+    // @@protoc_insertion_point(field:DFLIHGGNBDB.row)
+    pub row: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DFLIHGGNBDB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DFLIHGGNBDB {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCJGJBLENCP",
-            |m: &DFLIHGGNBDB| { &m.JCJGJBLENCP },
-            |m: &mut DFLIHGGNBDB| { &mut m.JCJGJBLENCP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EDIGEANPBNL",
             |m: &DFLIHGGNBDB| { &m.EDIGEANPBNL },
             |m: &mut DFLIHGGNBDB| { &mut m.EDIGEANPBNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "row",
+            |m: &DFLIHGGNBDB| { &m.row },
+            |m: &mut DFLIHGGNBDB| { &mut m.row },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFLIHGGNBDB>(
             "DFLIHGGNBDB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DFLIHGGNBDB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.JCJGJBLENCP = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.EDIGEANPBNL = is.read_uint32()?;
+                },
+                120 => {
+                    self.row = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DFLIHGGNBDB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JCJGJBLENCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JCJGJBLENCP);
-        }
         if self.EDIGEANPBNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EDIGEANPBNL);
+            my_size += ::protobuf::rt::uint32_size(4, self.EDIGEANPBNL);
+        }
+        if self.row != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.row);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DFLIHGGNBDB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JCJGJBLENCP != 0 {
-            os.write_uint32(10, self.JCJGJBLENCP)?;
-        }
         if self.EDIGEANPBNL != 0 {
-            os.write_uint32(14, self.EDIGEANPBNL)?;
+            os.write_uint32(4, self.EDIGEANPBNL)?;
+        }
+        if self.row != 0 {
+            os.write_uint32(15, self.row)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DFLIHGGNBDB {
     }
 
     fn clear(&mut self) {
-        self.JCJGJBLENCP = 0;
         self.EDIGEANPBNL = 0;
+        self.row = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFLIHGGNBDB {
         static instance: DFLIHGGNBDB = DFLIHGGNBDB {
-            JCJGJBLENCP: 0,
             EDIGEANPBNL: 0,
+            row: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DFLIHGGNBDB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DFLIHGGNBDB.proto\"Q\n\x0bDFLIHGGNBDB\x12\x20\n\x0bJCJGJBLENCP\x18\
-    \n\x20\x01(\rR\x0bJCJGJBLENCP\x12\x20\n\x0bEDIGEANPBNL\x18\x0e\x20\x01(\
-    \rR\x0bEDIGEANPBNLb\x06proto3\
+    \n\x11DFLIHGGNBDB.proto\"A\n\x0bDFLIHGGNBDB\x12\x20\n\x0bEDIGEANPBNL\x18\
+    \x04\x20\x01(\rR\x0bEDIGEANPBNL\x12\x10\n\x03row\x18\x0f\x20\x01(\rR\x03\
+    rowb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

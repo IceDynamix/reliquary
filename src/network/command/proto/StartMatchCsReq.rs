@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartMatchCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartMatchCsReq.JIDKDPPPDPF)
-    pub JIDKDPPPDPF: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
     // @@protoc_insertion_point(field:StartMatchCsReq.GJNMHILINHC)
     pub GJNMHILINHC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:StartMatchCsReq.JIDKDPPPDPF)
+    pub JIDKDPPPDPF: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:StartMatchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl StartMatchCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
-            "JIDKDPPPDPF",
-            |m: &StartMatchCsReq| { &m.JIDKDPPPDPF },
-            |m: &mut StartMatchCsReq| { &mut m.JIDKDPPPDPF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GJNMHILINHC",
             |m: &StartMatchCsReq| { &m.GJNMHILINHC },
             |m: &mut StartMatchCsReq| { &mut m.GJNMHILINHC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
+            "JIDKDPPPDPF",
+            |m: &StartMatchCsReq| { &m.JIDKDPPPDPF },
+            |m: &mut StartMatchCsReq| { &mut m.JIDKDPPPDPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartMatchCsReq>(
             "StartMatchCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIDKDPPPDPF)?;
-                },
-                8 => {
+                32 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIDKDPPPDPF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for StartMatchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.GJNMHILINHC.value());
+        }
         if let Some(v) = self.JIDKDPPPDPF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.GJNMHILINHC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JIDKDPPPDPF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
+        }
+        if let Some(v) = self.JIDKDPPPDPF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIDKDPPPDPF.clear();
         self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.JIDKDPPPDPF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartMatchCsReq {
         static instance: StartMatchCsReq = StartMatchCsReq {
-            JIDKDPPPDPF: ::protobuf::MessageField::none(),
             GJNMHILINHC: ::protobuf::EnumOrUnknown::from_i32(0),
+            JIDKDPPPDPF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StartMatchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartMatchCsReq.proto\x1a\x13FightGameMode.proto\x1a\x16LobbyGameE\
-    xtInfo.proto\"x\n\x0fStartMatchCsReq\x123\n\x0bJIDKDPPPDPF\x18\x08\x20\
-    \x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPPPDPF\x120\n\x0bGJNMHILINHC\
-    \x18\x01\x20\x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHCb\x06proto3\
+    xtInfo.proto\"x\n\x0fStartMatchCsReq\x120\n\x0bGJNMHILINHC\x18\x04\x20\
+    \x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x123\n\x0bJIDKDPPPDPF\x18\
+    \x0b\x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJIDKDPPPDPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

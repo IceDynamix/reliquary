@@ -30,8 +30,6 @@ pub struct AcceptedPamMissionExpireScRsp {
     // message fields
     // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AcceptedPamMissionExpireScRsp.main_mission_id)
-    pub main_mission_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AcceptedPamMissionExpireScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl AcceptedPamMissionExpireScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AcceptedPamMissionExpireScRsp| { &m.retcode },
             |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_mission_id",
-            |m: &AcceptedPamMissionExpireScRsp| { &m.main_mission_id },
-            |m: &mut AcceptedPamMissionExpireScRsp| { &mut m.main_mission_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AcceptedPamMissionExpireScRsp>(
             "AcceptedPamMissionExpireScRsp",
@@ -79,11 +72,8 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 32 => {
-                    self.main_mission_id = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +88,7 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.main_mission_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +97,7 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if self.main_mission_id != 0 {
-            os.write_uint32(4, self.main_mission_id)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +117,12 @@ impl ::protobuf::Message for AcceptedPamMissionExpireScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.main_mission_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AcceptedPamMissionExpireScRsp {
         static instance: AcceptedPamMissionExpireScRsp = AcceptedPamMissionExpireScRsp {
             retcode: 0,
-            main_mission_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for AcceptedPamMissionExpireScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#AcceptedPamMissionExpireScRsp.proto\"a\n\x1dAcceptedPamMissionExpireS\
-    cRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12&\n\x0fmain_\
-    mission_id\x18\x04\x20\x01(\rR\rmainMissionIdb\x06proto3\
+    \n#AcceptedPamMissionExpireScRsp.proto\"9\n\x1dAcceptedPamMissionExpireS\
+    cRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

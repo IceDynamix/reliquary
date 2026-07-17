@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IBHHJPCIOIC {
     // message fields
+    // @@protoc_insertion_point(field:IBHHJPCIOIC.ECLAGOJMMBO)
+    pub ECLAGOJMMBO: bool,
     // @@protoc_insertion_point(field:IBHHJPCIOIC.JKMHAJHIKIK)
     pub JKMHAJHIKIK: ::std::collections::HashMap<::std::string::String, super::MOHMAHDOBDO::MOHMAHDOBDO>,
     // @@protoc_insertion_point(field:IBHHJPCIOIC.AFMFNCGCNHI)
     pub AFMFNCGCNHI: ::std::string::String,
-    // @@protoc_insertion_point(field:IBHHJPCIOIC.ECLAGOJMMBO)
-    pub ECLAGOJMMBO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:IBHHJPCIOIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl IBHHJPCIOIC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ECLAGOJMMBO",
+            |m: &IBHHJPCIOIC| { &m.ECLAGOJMMBO },
+            |m: &mut IBHHJPCIOIC| { &mut m.ECLAGOJMMBO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "JKMHAJHIKIK",
             |m: &IBHHJPCIOIC| { &m.JKMHAJHIKIK },
@@ -62,11 +67,6 @@ impl IBHHJPCIOIC {
             "AFMFNCGCNHI",
             |m: &IBHHJPCIOIC| { &m.AFMFNCGCNHI },
             |m: &mut IBHHJPCIOIC| { &mut m.AFMFNCGCNHI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECLAGOJMMBO",
-            |m: &IBHHJPCIOIC| { &m.ECLAGOJMMBO },
-            |m: &mut IBHHJPCIOIC| { &mut m.ECLAGOJMMBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IBHHJPCIOIC>(
             "IBHHJPCIOIC",
@@ -86,6 +86,9 @@ impl ::protobuf::Message for IBHHJPCIOIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.ECLAGOJMMBO = is.read_bool()?;
+                },
                 18 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -104,9 +107,6 @@ impl ::protobuf::Message for IBHHJPCIOIC {
                 26 => {
                     self.AFMFNCGCNHI = is.read_string()?;
                 },
-                8 => {
-                    self.ECLAGOJMMBO = is.read_bool()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -119,6 +119,9 @@ impl ::protobuf::Message for IBHHJPCIOIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ECLAGOJMMBO != false {
+            my_size += 1 + 1;
+        }
         for (k, v) in &self.JKMHAJHIKIK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -129,15 +132,15 @@ impl ::protobuf::Message for IBHHJPCIOIC {
         if !self.AFMFNCGCNHI.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.AFMFNCGCNHI);
         }
-        if self.ECLAGOJMMBO != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.ECLAGOJMMBO != false {
+            os.write_bool(1, self.ECLAGOJMMBO)?;
+        }
         for (k, v) in &self.JKMHAJHIKIK {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -150,9 +153,6 @@ impl ::protobuf::Message for IBHHJPCIOIC {
         };
         if !self.AFMFNCGCNHI.is_empty() {
             os.write_string(3, &self.AFMFNCGCNHI)?;
-        }
-        if self.ECLAGOJMMBO != false {
-            os.write_bool(1, self.ECLAGOJMMBO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -171,9 +171,9 @@ impl ::protobuf::Message for IBHHJPCIOIC {
     }
 
     fn clear(&mut self) {
+        self.ECLAGOJMMBO = false;
         self.JKMHAJHIKIK.clear();
         self.AFMFNCGCNHI.clear();
-        self.ECLAGOJMMBO = false;
         self.special_fields.clear();
     }
 
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for IBHHJPCIOIC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBHHJPCIOIC.proto\x1a\x11MOHMAHDOBDO.proto\"\xe0\x01\n\x0bIBHHJPCI\
-    OIC\x12?\n\x0bJKMHAJHIKIK\x18\x02\x20\x03(\x0b2\x1d.IBHHJPCIOIC.JKMHAJHI\
-    KIKEntryR\x0bJKMHAJHIKIK\x12\x20\n\x0bAFMFNCGCNHI\x18\x03\x20\x01(\tR\
-    \x0bAFMFNCGCNHI\x12\x20\n\x0bECLAGOJMMBO\x18\x01\x20\x01(\x08R\x0bECLAGO\
-    JMMBO\x1aL\n\x10JKMHAJHIKIKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\
-    \x03key\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.MOHMAHDOBDOR\x05value\
-    :\x028\x01b\x06proto3\
+    OIC\x12\x20\n\x0bECLAGOJMMBO\x18\x01\x20\x01(\x08R\x0bECLAGOJMMBO\x12?\n\
+    \x0bJKMHAJHIKIK\x18\x02\x20\x03(\x0b2\x1d.IBHHJPCIOIC.JKMHAJHIKIKEntryR\
+    \x0bJKMHAJHIKIK\x12\x20\n\x0bAFMFNCGCNHI\x18\x03\x20\x01(\tR\x0bAFMFNCGC\
+    NHI\x1aL\n\x10JKMHAJHIKIKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03k\
+    ey\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.MOHMAHDOBDOR\x05value:\x02\
+    8\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

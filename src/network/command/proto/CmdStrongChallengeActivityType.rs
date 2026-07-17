@@ -30,15 +30,15 @@ pub enum CmdStrongChallengeActivityType {
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_NLCDGIPGFDJ)
     GDBHLMFLJMH_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_KPEJEKDMPDN)
-    GDBHLMFLJMH_KPEJEKDMPDN = 6636,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_KGCIIBPEKOL)
-    GDBHLMFLJMH_KGCIIBPEKOL = 6673,
+    GDBHLMFLJMH_KPEJEKDMPDN = 6688,
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_OGJDJLFPAJF)
-    GDBHLMFLJMH_OGJDJLFPAJF = 6627,
-    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_EIOODPKEELI)
-    GDBHLMFLJMH_EIOODPKEELI = 6680,
+    GDBHLMFLJMH_OGJDJLFPAJF = 6658,
     // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_MNNOLKMBMCI)
-    GDBHLMFLJMH_MNNOLKMBMCI = 6603,
+    GDBHLMFLJMH_MNNOLKMBMCI = 6678,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_EIOODPKEELI)
+    GDBHLMFLJMH_EIOODPKEELI = 6693,
+    // @@protoc_insertion_point(enum_value:CmdStrongChallengeActivityType.GDBHLMFLJMH_KGCIIBPEKOL)
+    GDBHLMFLJMH_KGCIIBPEKOL = 6625,
 }
 
 impl ::protobuf::Enum for CmdStrongChallengeActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdStrongChallengeActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_NLCDGIPGFDJ),
-            6636 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KPEJEKDMPDN),
-            6673 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL),
-            6627 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF),
-            6680 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI),
-            6603 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI),
+            6688 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KPEJEKDMPDN),
+            6658 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF),
+            6678 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI),
+            6693 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI),
+            6625 => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL),
             _ => ::std::option::Option::None
         }
     }
@@ -64,10 +64,10 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
         match str {
             "GDBHLMFLJMH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_NLCDGIPGFDJ),
             "GDBHLMFLJMH_KPEJEKDMPDN" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KPEJEKDMPDN),
-            "GDBHLMFLJMH_KGCIIBPEKOL" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL),
             "GDBHLMFLJMH_OGJDJLFPAJF" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF),
-            "GDBHLMFLJMH_EIOODPKEELI" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI),
             "GDBHLMFLJMH_MNNOLKMBMCI" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI),
+            "GDBHLMFLJMH_EIOODPKEELI" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI),
+            "GDBHLMFLJMH_KGCIIBPEKOL" => ::std::option::Option::Some(CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL),
             _ => ::std::option::Option::None
         }
     }
@@ -75,10 +75,10 @@ impl ::protobuf::Enum for CmdStrongChallengeActivityType {
     const VALUES: &'static [CmdStrongChallengeActivityType] = &[
         CmdStrongChallengeActivityType::GDBHLMFLJMH_NLCDGIPGFDJ,
         CmdStrongChallengeActivityType::GDBHLMFLJMH_KPEJEKDMPDN,
-        CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL,
         CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF,
-        CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI,
         CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI,
+        CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI,
+        CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL,
     ];
 }
 
@@ -92,10 +92,10 @@ impl ::protobuf::EnumFull for CmdStrongChallengeActivityType {
         let index = match self {
             CmdStrongChallengeActivityType::GDBHLMFLJMH_NLCDGIPGFDJ => 0,
             CmdStrongChallengeActivityType::GDBHLMFLJMH_KPEJEKDMPDN => 1,
-            CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL => 2,
-            CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF => 3,
+            CmdStrongChallengeActivityType::GDBHLMFLJMH_OGJDJLFPAJF => 2,
+            CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI => 3,
             CmdStrongChallengeActivityType::GDBHLMFLJMH_EIOODPKEELI => 4,
-            CmdStrongChallengeActivityType::GDBHLMFLJMH_MNNOLKMBMCI => 5,
+            CmdStrongChallengeActivityType::GDBHLMFLJMH_KGCIIBPEKOL => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -116,9 +116,9 @@ impl CmdStrongChallengeActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$CmdStrongChallengeActivityType.proto*\xd3\x01\n\x1eCmdStrongChallenge\
     ActivityType\x12\x1b\n\x17GDBHLMFLJMH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GDB\
-    HLMFLJMH_KPEJEKDMPDN\x10\xec3\x12\x1c\n\x17GDBHLMFLJMH_KGCIIBPEKOL\x10\
-    \x914\x12\x1c\n\x17GDBHLMFLJMH_OGJDJLFPAJF\x10\xe33\x12\x1c\n\x17GDBHLMF\
-    LJMH_EIOODPKEELI\x10\x984\x12\x1c\n\x17GDBHLMFLJMH_MNNOLKMBMCI\x10\xcb3b\
+    HLMFLJMH_KPEJEKDMPDN\x10\xa04\x12\x1c\n\x17GDBHLMFLJMH_OGJDJLFPAJF\x10\
+    \x824\x12\x1c\n\x17GDBHLMFLJMH_MNNOLKMBMCI\x10\x964\x12\x1c\n\x17GDBHLMF\
+    LJMH_EIOODPKEELI\x10\xa54\x12\x1c\n\x17GDBHLMFLJMH_KGCIIBPEKOL\x10\xe13b\
     \x06proto3\
 ";
 

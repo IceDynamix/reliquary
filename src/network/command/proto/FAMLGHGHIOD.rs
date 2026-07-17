@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAMLGHGHIOD {
     // message fields
-    // @@protoc_insertion_point(field:FAMLGHGHIOD.buff_id)
-    pub buff_id: u32,
-    // @@protoc_insertion_point(field:FAMLGHGHIOD.NOJLMNMPKDP)
-    pub NOJLMNMPKDP: u32,
     // @@protoc_insertion_point(field:FAMLGHGHIOD.unique_id)
     pub unique_id: u64,
+    // @@protoc_insertion_point(field:FAMLGHGHIOD.NOJLMNMPKDP)
+    pub NOJLMNMPKDP: u32,
+    // @@protoc_insertion_point(field:FAMLGHGHIOD.buff_id)
+    pub buff_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FAMLGHGHIOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl FAMLGHGHIOD {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_id",
-            |m: &FAMLGHGHIOD| { &m.buff_id },
-            |m: &mut FAMLGHGHIOD| { &mut m.buff_id },
+            "unique_id",
+            |m: &FAMLGHGHIOD| { &m.unique_id },
+            |m: &mut FAMLGHGHIOD| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOJLMNMPKDP",
@@ -64,9 +64,9 @@ impl FAMLGHGHIOD {
             |m: &mut FAMLGHGHIOD| { &mut m.NOJLMNMPKDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &FAMLGHGHIOD| { &m.unique_id },
-            |m: &mut FAMLGHGHIOD| { &mut m.unique_id },
+            "buff_id",
+            |m: &FAMLGHGHIOD| { &m.buff_id },
+            |m: &mut FAMLGHGHIOD| { &mut m.buff_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FAMLGHGHIOD>(
             "FAMLGHGHIOD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FAMLGHGHIOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.buff_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.NOJLMNMPKDP = is.read_uint32()?;
+                16 => {
+                    self.unique_id = is.read_uint64()?;
                 },
                 56 => {
-                    self.unique_id = is.read_uint64()?;
+                    self.NOJLMNMPKDP = is.read_uint32()?;
+                },
+                112 => {
+                    self.buff_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FAMLGHGHIOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.unique_id);
         }
         if self.NOJLMNMPKDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NOJLMNMPKDP);
+            my_size += ::protobuf::rt::uint32_size(7, self.NOJLMNMPKDP);
         }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.unique_id);
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FAMLGHGHIOD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.buff_id != 0 {
-            os.write_uint32(8, self.buff_id)?;
+        if self.unique_id != 0 {
+            os.write_uint64(2, self.unique_id)?;
         }
         if self.NOJLMNMPKDP != 0 {
-            os.write_uint32(4, self.NOJLMNMPKDP)?;
+            os.write_uint32(7, self.NOJLMNMPKDP)?;
         }
-        if self.unique_id != 0 {
-            os.write_uint64(7, self.unique_id)?;
+        if self.buff_id != 0 {
+            os.write_uint32(14, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FAMLGHGHIOD {
     }
 
     fn clear(&mut self) {
-        self.buff_id = 0;
-        self.NOJLMNMPKDP = 0;
         self.unique_id = 0;
+        self.NOJLMNMPKDP = 0;
+        self.buff_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FAMLGHGHIOD {
         static instance: FAMLGHGHIOD = FAMLGHGHIOD {
-            buff_id: 0,
-            NOJLMNMPKDP: 0,
             unique_id: 0,
+            NOJLMNMPKDP: 0,
+            buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FAMLGHGHIOD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FAMLGHGHIOD.proto\"e\n\x0bFAMLGHGHIOD\x12\x17\n\x07buff_id\x18\x08\
-    \x20\x01(\rR\x06buffId\x12\x20\n\x0bNOJLMNMPKDP\x18\x04\x20\x01(\rR\x0bN\
-    OJLMNMPKDP\x12\x1b\n\tunique_id\x18\x07\x20\x01(\x04R\x08uniqueIdb\x06pr\
-    oto3\
+    \n\x11FAMLGHGHIOD.proto\"e\n\x0bFAMLGHGHIOD\x12\x1b\n\tunique_id\x18\x02\
+    \x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bNOJLMNMPKDP\x18\x07\x20\x01(\rR\
+    \x0bNOJLMNMPKDP\x12\x17\n\x07buff_id\x18\x0e\x20\x01(\rR\x06buffIdb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                80 => {
                     self.GKDCPNLOLNF = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != ::protobuf::EnumOrUnknown::new(super::IOJJCDAPLAJ::IOJJCDAPLAJ::IOJJCDAPLAJ_OLBIJIJCONK) {
-            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(8, self.reason.value());
         }
         if self.GKDCPNLOLNF != ::protobuf::EnumOrUnknown::new(super::GDHLDNFLOOF::GDHLDNFLOOF::GDHLDNFLOOF_ADHGHGEFMLG) {
-            my_size += ::protobuf::rt::int32_size(15, self.GKDCPNLOLNF.value());
+            my_size += ::protobuf::rt::int32_size(10, self.GKDCPNLOLNF.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChessRogueUpdateLevelBaseInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != ::protobuf::EnumOrUnknown::new(super::IOJJCDAPLAJ::IOJJCDAPLAJ::IOJJCDAPLAJ_OLBIJIJCONK) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.GKDCPNLOLNF != ::protobuf::EnumOrUnknown::new(super::GDHLDNFLOOF::GDHLDNFLOOF::GDHLDNFLOOF_ADHGHGEFMLG) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GKDCPNLOLNF))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GKDCPNLOLNF))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateLevelBaseInfoScNotif
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+ChessRogueUpdateLevelBaseInfoScNotify.proto\x1a\x11GDHLDNFLOOF.proto\
     \x1a\x11IOJJCDAPLAJ.proto\"}\n%ChessRogueUpdateLevelBaseInfoScNotify\x12\
-    $\n\x06reason\x18\x05\x20\x01(\x0e2\x0c.IOJJCDAPLAJR\x06reason\x12.\n\
-    \x0bGKDCPNLOLNF\x18\x0f\x20\x01(\x0e2\x0c.GDHLDNFLOOFR\x0bGKDCPNLOLNFb\
-    \x06proto3\
+    $\n\x06reason\x18\x08\x20\x01(\x0e2\x0c.IOJJCDAPLAJR\x06reason\x12.\n\
+    \x0bGKDCPNLOLNF\x18\n\x20\x01(\x0e2\x0c.GDHLDNFLOOFR\x0bGKDCPNLOLNFb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

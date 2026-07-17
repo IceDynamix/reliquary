@@ -29,32 +29,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdQuestType {
     // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_NLCDGIPGFDJ)
     HNJJNHPFBGO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_EEHHGFOMFAD)
-    HNJJNHPFBGO_EEHHGFOMFAD = 910,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_BMAEEOHLFLO)
-    HNJJNHPFBGO_BMAEEOHLFLO = 987,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_MNGGMLBGPOO)
-    HNJJNHPFBGO_MNGGMLBGPOO = 927,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_HMHBBKILIFK)
-    HNJJNHPFBGO_HMHBBKILIFK = 973,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OKMJKNLLHKP)
-    HNJJNHPFBGO_OKMJKNLLHKP = 915,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_CFHHFHMGAGL)
-    HNJJNHPFBGO_CFHHFHMGAGL = 929,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_IKABMLMGLHN)
-    HNJJNHPFBGO_IKABMLMGLHN = 912,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OIHECCNGJKO)
-    HNJJNHPFBGO_OIHECCNGJKO = 980,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OJKCEKKDLEL)
-    HNJJNHPFBGO_OJKCEKKDLEL = 909,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_POAMGCLPCAF)
-    HNJJNHPFBGO_POAMGCLPCAF = 981,
-    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_CCMMJODPCJB)
-    HNJJNHPFBGO_CCMMJODPCJB = 903,
     // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_JIJBFNKJHIJ)
-    HNJJNHPFBGO_JIJBFNKJHIJ = 954,
+    HNJJNHPFBGO_JIJBFNKJHIJ = 933,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_MNGGMLBGPOO)
+    HNJJNHPFBGO_MNGGMLBGPOO = 958,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_IKABMLMGLHN)
+    HNJJNHPFBGO_IKABMLMGLHN = 940,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_POAMGCLPCAF)
+    HNJJNHPFBGO_POAMGCLPCAF = 947,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_BMAEEOHLFLO)
+    HNJJNHPFBGO_BMAEEOHLFLO = 913,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OJKCEKKDLEL)
+    HNJJNHPFBGO_OJKCEKKDLEL = 939,
     // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_PJEHEOLCFCF)
-    HNJJNHPFBGO_PJEHEOLCFCF = 942,
+    HNJJNHPFBGO_PJEHEOLCFCF = 904,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OKMJKNLLHKP)
+    HNJJNHPFBGO_OKMJKNLLHKP = 986,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_OIHECCNGJKO)
+    HNJJNHPFBGO_OIHECCNGJKO = 993,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_HMHBBKILIFK)
+    HNJJNHPFBGO_HMHBBKILIFK = 925,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_CCMMJODPCJB)
+    HNJJNHPFBGO_CCMMJODPCJB = 978,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_CFHHFHMGAGL)
+    HNJJNHPFBGO_CFHHFHMGAGL = 971,
+    // @@protoc_insertion_point(enum_value:CmdQuestType.HNJJNHPFBGO_EEHHGFOMFAD)
+    HNJJNHPFBGO_EEHHGFOMFAD = 926,
 }
 
 impl ::protobuf::Enum for CmdQuestType {
@@ -67,19 +67,19 @@ impl ::protobuf::Enum for CmdQuestType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdQuestType> {
         match value {
             0 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_NLCDGIPGFDJ),
-            910 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD),
-            987 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO),
-            927 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO),
-            973 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK),
-            915 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP),
-            929 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL),
-            912 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN),
-            980 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO),
-            909 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL),
-            981 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF),
-            903 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB),
-            954 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ),
-            942 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF),
+            933 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ),
+            958 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO),
+            940 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN),
+            947 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF),
+            913 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO),
+            939 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL),
+            904 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF),
+            986 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP),
+            993 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO),
+            925 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK),
+            978 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB),
+            971 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL),
+            926 => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD),
             _ => ::std::option::Option::None
         }
     }
@@ -87,38 +87,38 @@ impl ::protobuf::Enum for CmdQuestType {
     fn from_str(str: &str) -> ::std::option::Option<CmdQuestType> {
         match str {
             "HNJJNHPFBGO_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_NLCDGIPGFDJ),
-            "HNJJNHPFBGO_EEHHGFOMFAD" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD),
-            "HNJJNHPFBGO_BMAEEOHLFLO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO),
-            "HNJJNHPFBGO_MNGGMLBGPOO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO),
-            "HNJJNHPFBGO_HMHBBKILIFK" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK),
-            "HNJJNHPFBGO_OKMJKNLLHKP" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP),
-            "HNJJNHPFBGO_CFHHFHMGAGL" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL),
-            "HNJJNHPFBGO_IKABMLMGLHN" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN),
-            "HNJJNHPFBGO_OIHECCNGJKO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO),
-            "HNJJNHPFBGO_OJKCEKKDLEL" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL),
-            "HNJJNHPFBGO_POAMGCLPCAF" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF),
-            "HNJJNHPFBGO_CCMMJODPCJB" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB),
             "HNJJNHPFBGO_JIJBFNKJHIJ" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ),
+            "HNJJNHPFBGO_MNGGMLBGPOO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO),
+            "HNJJNHPFBGO_IKABMLMGLHN" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN),
+            "HNJJNHPFBGO_POAMGCLPCAF" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF),
+            "HNJJNHPFBGO_BMAEEOHLFLO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO),
+            "HNJJNHPFBGO_OJKCEKKDLEL" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL),
             "HNJJNHPFBGO_PJEHEOLCFCF" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF),
+            "HNJJNHPFBGO_OKMJKNLLHKP" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP),
+            "HNJJNHPFBGO_OIHECCNGJKO" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO),
+            "HNJJNHPFBGO_HMHBBKILIFK" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK),
+            "HNJJNHPFBGO_CCMMJODPCJB" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB),
+            "HNJJNHPFBGO_CFHHFHMGAGL" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL),
+            "HNJJNHPFBGO_EEHHGFOMFAD" => ::std::option::Option::Some(CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdQuestType] = &[
         CmdQuestType::HNJJNHPFBGO_NLCDGIPGFDJ,
-        CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD,
-        CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO,
-        CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO,
-        CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK,
-        CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP,
-        CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL,
-        CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN,
-        CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO,
-        CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL,
-        CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF,
-        CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB,
         CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ,
+        CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO,
+        CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN,
+        CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF,
+        CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO,
+        CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL,
         CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF,
+        CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP,
+        CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO,
+        CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK,
+        CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB,
+        CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL,
+        CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD,
     ];
 }
 
@@ -131,19 +131,19 @@ impl ::protobuf::EnumFull for CmdQuestType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdQuestType::HNJJNHPFBGO_NLCDGIPGFDJ => 0,
-            CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD => 1,
-            CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO => 2,
-            CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO => 3,
-            CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK => 4,
-            CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP => 5,
-            CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL => 6,
-            CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN => 7,
-            CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO => 8,
-            CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL => 9,
-            CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF => 10,
+            CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ => 1,
+            CmdQuestType::HNJJNHPFBGO_MNGGMLBGPOO => 2,
+            CmdQuestType::HNJJNHPFBGO_IKABMLMGLHN => 3,
+            CmdQuestType::HNJJNHPFBGO_POAMGCLPCAF => 4,
+            CmdQuestType::HNJJNHPFBGO_BMAEEOHLFLO => 5,
+            CmdQuestType::HNJJNHPFBGO_OJKCEKKDLEL => 6,
+            CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF => 7,
+            CmdQuestType::HNJJNHPFBGO_OKMJKNLLHKP => 8,
+            CmdQuestType::HNJJNHPFBGO_OIHECCNGJKO => 9,
+            CmdQuestType::HNJJNHPFBGO_HMHBBKILIFK => 10,
             CmdQuestType::HNJJNHPFBGO_CCMMJODPCJB => 11,
-            CmdQuestType::HNJJNHPFBGO_JIJBFNKJHIJ => 12,
-            CmdQuestType::HNJJNHPFBGO_PJEHEOLCFCF => 13,
+            CmdQuestType::HNJJNHPFBGO_CFHHFHMGAGL => 12,
+            CmdQuestType::HNJJNHPFBGO_EEHHGFOMFAD => 13,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,16 +163,16 @@ impl CmdQuestType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdQuestType.proto*\xb1\x03\n\x0cCmdQuestType\x12\x1b\n\x17HNJJNHP\
-    FBGO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17HNJJNHPFBGO_EEHHGFOMFAD\x10\x8e\x07\
-    \x12\x1c\n\x17HNJJNHPFBGO_BMAEEOHLFLO\x10\xdb\x07\x12\x1c\n\x17HNJJNHPFB\
-    GO_MNGGMLBGPOO\x10\x9f\x07\x12\x1c\n\x17HNJJNHPFBGO_HMHBBKILIFK\x10\xcd\
-    \x07\x12\x1c\n\x17HNJJNHPFBGO_OKMJKNLLHKP\x10\x93\x07\x12\x1c\n\x17HNJJN\
-    HPFBGO_CFHHFHMGAGL\x10\xa1\x07\x12\x1c\n\x17HNJJNHPFBGO_IKABMLMGLHN\x10\
-    \x90\x07\x12\x1c\n\x17HNJJNHPFBGO_OIHECCNGJKO\x10\xd4\x07\x12\x1c\n\x17H\
-    NJJNHPFBGO_OJKCEKKDLEL\x10\x8d\x07\x12\x1c\n\x17HNJJNHPFBGO_POAMGCLPCAF\
-    \x10\xd5\x07\x12\x1c\n\x17HNJJNHPFBGO_CCMMJODPCJB\x10\x87\x07\x12\x1c\n\
-    \x17HNJJNHPFBGO_JIJBFNKJHIJ\x10\xba\x07\x12\x1c\n\x17HNJJNHPFBGO_PJEHEOL\
-    CFCF\x10\xae\x07b\x06proto3\
+    FBGO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17HNJJNHPFBGO_JIJBFNKJHIJ\x10\xa5\x07\
+    \x12\x1c\n\x17HNJJNHPFBGO_MNGGMLBGPOO\x10\xbe\x07\x12\x1c\n\x17HNJJNHPFB\
+    GO_IKABMLMGLHN\x10\xac\x07\x12\x1c\n\x17HNJJNHPFBGO_POAMGCLPCAF\x10\xb3\
+    \x07\x12\x1c\n\x17HNJJNHPFBGO_BMAEEOHLFLO\x10\x91\x07\x12\x1c\n\x17HNJJN\
+    HPFBGO_OJKCEKKDLEL\x10\xab\x07\x12\x1c\n\x17HNJJNHPFBGO_PJEHEOLCFCF\x10\
+    \x88\x07\x12\x1c\n\x17HNJJNHPFBGO_OKMJKNLLHKP\x10\xda\x07\x12\x1c\n\x17H\
+    NJJNHPFBGO_OIHECCNGJKO\x10\xe1\x07\x12\x1c\n\x17HNJJNHPFBGO_HMHBBKILIFK\
+    \x10\x9d\x07\x12\x1c\n\x17HNJJNHPFBGO_CCMMJODPCJB\x10\xd2\x07\x12\x1c\n\
+    \x17HNJJNHPFBGO_CFHHFHMGAGL\x10\xcb\x07\x12\x1c\n\x17HNJJNHPFBGO_EEHHGFO\
+    MFAD\x10\x9e\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

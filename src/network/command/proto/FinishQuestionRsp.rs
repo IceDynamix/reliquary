@@ -28,14 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishQuestionRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishQuestionRsp.DJNDDEBIMGA)
-    pub DJNDDEBIMGA: bool,
-    // @@protoc_insertion_point(field:FinishQuestionRsp.CJAINJMLDFC)
-    pub CJAINJMLDFC: u32,
-    // @@protoc_insertion_point(field:FinishQuestionRsp.JMBGMIPLLJI)
-    pub JMBGMIPLLJI: u32,
-    // @@protoc_insertion_point(field:FinishQuestionRsp.PDICFEGEPNM)
-    pub PDICFEGEPNM: u32,
     // @@protoc_insertion_point(field:FinishQuestionRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -55,28 +47,8 @@ impl FinishQuestionRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJNDDEBIMGA",
-            |m: &FinishQuestionRsp| { &m.DJNDDEBIMGA },
-            |m: &mut FinishQuestionRsp| { &mut m.DJNDDEBIMGA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJAINJMLDFC",
-            |m: &FinishQuestionRsp| { &m.CJAINJMLDFC },
-            |m: &mut FinishQuestionRsp| { &mut m.CJAINJMLDFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMBGMIPLLJI",
-            |m: &FinishQuestionRsp| { &m.JMBGMIPLLJI },
-            |m: &mut FinishQuestionRsp| { &mut m.JMBGMIPLLJI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDICFEGEPNM",
-            |m: &FinishQuestionRsp| { &m.PDICFEGEPNM },
-            |m: &mut FinishQuestionRsp| { &mut m.PDICFEGEPNM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FinishQuestionRsp| { &m.retcode },
@@ -101,18 +73,6 @@ impl ::protobuf::Message for FinishQuestionRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.DJNDDEBIMGA = is.read_bool()?;
-                },
-                48 => {
-                    self.CJAINJMLDFC = is.read_uint32()?;
-                },
-                72 => {
-                    self.JMBGMIPLLJI = is.read_uint32()?;
-                },
-                24 => {
-                    self.PDICFEGEPNM = is.read_uint32()?;
-                },
-                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -127,20 +87,8 @@ impl ::protobuf::Message for FinishQuestionRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJNDDEBIMGA != false {
-            my_size += 1 + 1;
-        }
-        if self.CJAINJMLDFC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CJAINJMLDFC);
-        }
-        if self.JMBGMIPLLJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JMBGMIPLLJI);
-        }
-        if self.PDICFEGEPNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PDICFEGEPNM);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +96,8 @@ impl ::protobuf::Message for FinishQuestionRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJNDDEBIMGA != false {
-            os.write_bool(2, self.DJNDDEBIMGA)?;
-        }
-        if self.CJAINJMLDFC != 0 {
-            os.write_uint32(6, self.CJAINJMLDFC)?;
-        }
-        if self.JMBGMIPLLJI != 0 {
-            os.write_uint32(9, self.JMBGMIPLLJI)?;
-        }
-        if self.PDICFEGEPNM != 0 {
-            os.write_uint32(3, self.PDICFEGEPNM)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +116,12 @@ impl ::protobuf::Message for FinishQuestionRsp {
     }
 
     fn clear(&mut self) {
-        self.DJNDDEBIMGA = false;
-        self.CJAINJMLDFC = 0;
-        self.JMBGMIPLLJI = 0;
-        self.PDICFEGEPNM = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishQuestionRsp {
         static instance: FinishQuestionRsp = FinishQuestionRsp {
-            DJNDDEBIMGA: false,
-            CJAINJMLDFC: 0,
-            JMBGMIPLLJI: 0,
-            PDICFEGEPNM: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,12 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishQuestionRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FinishQuestionRsp.proto\"\xb5\x01\n\x11FinishQuestionRsp\x12\x20\n\
-    \x0bDJNDDEBIMGA\x18\x02\x20\x01(\x08R\x0bDJNDDEBIMGA\x12\x20\n\x0bCJAINJ\
-    MLDFC\x18\x06\x20\x01(\rR\x0bCJAINJMLDFC\x12\x20\n\x0bJMBGMIPLLJI\x18\t\
-    \x20\x01(\rR\x0bJMBGMIPLLJI\x12\x20\n\x0bPDICFEGEPNM\x18\x03\x20\x01(\rR\
-    \x0bPDICFEGEPNM\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x17FinishQuestionRsp.proto\"-\n\x11FinishQuestionRsp\x12\x18\n\x07ret\
+    code\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSummonActivityType {
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_NLCDGIPGFDJ)
     FEGMMLEBKMA_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_CKCJOHHLLDI)
-    FEGMMLEBKMA_CKCJOHHLLDI = 7570,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_IMEGEEBOGOC)
+    FEGMMLEBKMA_IMEGEEBOGOC = 7570,
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_CPONBFJGEPM)
-    FEGMMLEBKMA_CPONBFJGEPM = 7568,
+    FEGMMLEBKMA_CPONBFJGEPM = 7561,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_FHJDJDBACKL)
+    FEGMMLEBKMA_FHJDJDBACKL = 7563,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_CKCJOHHLLDI)
+    FEGMMLEBKMA_CKCJOHHLLDI = 7565,
     // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_BKHOKHNAIMG)
     FEGMMLEBKMA_BKHOKHNAIMG = 7564,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_FHJDJDBACKL)
-    FEGMMLEBKMA_FHJDJDBACKL = 7562,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.FEGMMLEBKMA_IMEGEEBOGOC)
-    FEGMMLEBKMA_IMEGEEBOGOC = 7569,
 }
 
 impl ::protobuf::Enum for CmdSummonActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdSummonActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSummonActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_NLCDGIPGFDJ),
-            7570 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI),
-            7568 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM),
+            7570 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC),
+            7561 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM),
+            7563 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL),
+            7565 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI),
             7564 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG),
-            7562 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL),
-            7569 => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdSummonActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSummonActivityType> {
         match str {
             "FEGMMLEBKMA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_NLCDGIPGFDJ),
-            "FEGMMLEBKMA_CKCJOHHLLDI" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI),
-            "FEGMMLEBKMA_CPONBFJGEPM" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM),
-            "FEGMMLEBKMA_BKHOKHNAIMG" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG),
-            "FEGMMLEBKMA_FHJDJDBACKL" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL),
             "FEGMMLEBKMA_IMEGEEBOGOC" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC),
+            "FEGMMLEBKMA_CPONBFJGEPM" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM),
+            "FEGMMLEBKMA_FHJDJDBACKL" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL),
+            "FEGMMLEBKMA_CKCJOHHLLDI" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI),
+            "FEGMMLEBKMA_BKHOKHNAIMG" => ::std::option::Option::Some(CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSummonActivityType] = &[
         CmdSummonActivityType::FEGMMLEBKMA_NLCDGIPGFDJ,
-        CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI,
-        CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM,
-        CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG,
-        CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL,
         CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC,
+        CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM,
+        CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL,
+        CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI,
+        CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSummonActivityType::FEGMMLEBKMA_NLCDGIPGFDJ => 0,
-            CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI => 1,
+            CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC => 1,
             CmdSummonActivityType::FEGMMLEBKMA_CPONBFJGEPM => 2,
-            CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG => 3,
-            CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL => 4,
-            CmdSummonActivityType::FEGMMLEBKMA_IMEGEEBOGOC => 5,
+            CmdSummonActivityType::FEGMMLEBKMA_FHJDJDBACKL => 3,
+            CmdSummonActivityType::FEGMMLEBKMA_CKCJOHHLLDI => 4,
+            CmdSummonActivityType::FEGMMLEBKMA_BKHOKHNAIMG => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdSummonActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdSummonActivityType.proto*\xca\x01\n\x15CmdSummonActivityType\
-    \x12\x1b\n\x17FEGMMLEBKMA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FEGMMLEBKMA_CKC\
-    JOHHLLDI\x10\x92;\x12\x1c\n\x17FEGMMLEBKMA_CPONBFJGEPM\x10\x90;\x12\x1c\
-    \n\x17FEGMMLEBKMA_BKHOKHNAIMG\x10\x8c;\x12\x1c\n\x17FEGMMLEBKMA_FHJDJDBA\
-    CKL\x10\x8a;\x12\x1c\n\x17FEGMMLEBKMA_IMEGEEBOGOC\x10\x91;b\x06proto3\
+    \x12\x1b\n\x17FEGMMLEBKMA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FEGMMLEBKMA_IME\
+    GEEBOGOC\x10\x92;\x12\x1c\n\x17FEGMMLEBKMA_CPONBFJGEPM\x10\x89;\x12\x1c\
+    \n\x17FEGMMLEBKMA_FHJDJDBACKL\x10\x8b;\x12\x1c\n\x17FEGMMLEBKMA_CKCJOHHL\
+    LDI\x10\x8d;\x12\x1c\n\x17FEGMMLEBKMA_BKHOKHNAIMG\x10\x8c;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,10 +86,10 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                16 => {
                     self.id = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
                     self.type_ = is.read_uint32()?;
                 },
                 112 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.type_);
+            my_size += ::protobuf::rt::uint32_size(8, self.type_);
         }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.slot);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for CLLBJDEJFNF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_uint32(2, self.id)?;
         }
         if self.type_ != 0 {
-            os.write_uint32(11, self.type_)?;
+            os.write_uint32(8, self.type_)?;
         }
         if self.slot != 0 {
             os.write_uint32(14, self.slot)?;
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for CLLBJDEJFNF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CLLBJDEJFNF.proto\"E\n\x0bCLLBJDEJFNF\x12\x0e\n\x02id\x18\x06\x20\
-    \x01(\rR\x02id\x12\x12\n\x04type\x18\x0b\x20\x01(\rR\x04type\x12\x12\n\
+    \n\x11CLLBJDEJFNF.proto\"E\n\x0bCLLBJDEJFNF\x12\x0e\n\x02id\x18\x02\x20\
+    \x01(\rR\x02id\x12\x12\n\x04type\x18\x08\x20\x01(\rR\x04type\x12\x12\n\
     \x04slot\x18\x0e\x20\x01(\rR\x04slotb\x06proto3\
 ";
 

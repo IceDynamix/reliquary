@@ -86,13 +86,13 @@ impl ::protobuf::Message for KNECKDAOKOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
-                50 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJPLOMMEBGM)?;
                 },
-                106 => {
+                122 => {
                     self.item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for KNECKDAOKOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.GJPLOMMEBGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for KNECKDAOKOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KNECKDAOKOA.proto\x1a\x11FMKMEFMOJGJ.proto\x1a\x11NCFKHDIKCNI.prot\
-    o\"\x95\x01\n\x0bKNECKDAOKOA\x12+\n\nitem_value\x18\x01\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\titemValue\x12.\n\x0bGJPLOMMEBGM\x18\x06\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\x0bGJPLOMMEBGM\x12)\n\titem_list\x18\r\x20\x03(\x0b2\
+    o\"\x95\x01\n\x0bKNECKDAOKOA\x12+\n\nitem_value\x18\x03\x20\x01(\x0b2\
+    \x0c.NCFKHDIKCNIR\titemValue\x12.\n\x0bGJPLOMMEBGM\x18\x08\x20\x01(\x0b2\
+    \x0c.NCFKHDIKCNIR\x0bGJPLOMMEBGM\x12)\n\titem_list\x18\x0f\x20\x03(\x0b2\
     \x0c.FMKMEFMOJGJR\x08itemListb\x06proto3\
 ";
 

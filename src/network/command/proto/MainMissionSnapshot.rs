@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MainMissionSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:MainMissionSnapshot.sub_mission_list)
-    pub sub_mission_list: ::std::vec::Vec<super::SubMissionSnapshot::SubMissionSnapshot>,
     // @@protoc_insertion_point(field:MainMissionSnapshot.main_mission_id)
     pub main_mission_id: u32,
+    // @@protoc_insertion_point(field:MainMissionSnapshot.sub_mission_list)
+    pub sub_mission_list: ::std::vec::Vec<super::SubMissionSnapshot::SubMissionSnapshot>,
     // special fields
     // @@protoc_insertion_point(special_field:MainMissionSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MainMissionSnapshot {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "sub_mission_list",
-            |m: &MainMissionSnapshot| { &m.sub_mission_list },
-            |m: &mut MainMissionSnapshot| { &mut m.sub_mission_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "main_mission_id",
             |m: &MainMissionSnapshot| { &m.main_mission_id },
             |m: &mut MainMissionSnapshot| { &mut m.main_mission_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "sub_mission_list",
+            |m: &MainMissionSnapshot| { &m.sub_mission_list },
+            |m: &mut MainMissionSnapshot| { &mut m.sub_mission_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MainMissionSnapshot>(
             "MainMissionSnapshot",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MainMissionSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.sub_mission_list.push(is.read_message()?);
-                },
                 8 => {
                     self.main_mission_id = is.read_uint32()?;
+                },
+                18 => {
+                    self.sub_mission_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for MainMissionSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.main_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.main_mission_id);
+        }
         for value in &self.sub_mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.main_mission_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.sub_mission_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.main_mission_id != 0 {
             os.write_uint32(1, self.main_mission_id)?;
         }
+        for v in &self.sub_mission_list {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MainMissionSnapshot {
     }
 
     fn clear(&mut self) {
-        self.sub_mission_list.clear();
         self.main_mission_id = 0;
+        self.sub_mission_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MainMissionSnapshot {
         static instance: MainMissionSnapshot = MainMissionSnapshot {
-            sub_mission_list: ::std::vec::Vec::new(),
             main_mission_id: 0,
+            sub_mission_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MainMissionSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19MainMissionSnapshot.proto\x1a\x18SubMissionSnapshot.proto\"|\n\x13\
-    MainMissionSnapshot\x12=\n\x10sub_mission_list\x18\x02\x20\x03(\x0b2\x13\
-    .SubMissionSnapshotR\x0esubMissionList\x12&\n\x0fmain_mission_id\x18\x01\
-    \x20\x01(\rR\rmainMissionIdb\x06proto3\
+    MainMissionSnapshot\x12&\n\x0fmain_mission_id\x18\x01\x20\x01(\rR\rmainM\
+    issionId\x12=\n\x10sub_mission_list\x18\x02\x20\x03(\x0b2\x13.SubMission\
+    SnapshotR\x0esubMissionListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

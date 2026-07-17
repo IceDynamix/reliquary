@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendLoginInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.OMFOMBGFHPA)
-    pub OMFOMBGFHPA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.KCGCEPPMOKM)
-    pub KCGCEPPMOKM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.BHEICCGPBLG)
-    pub BHEICCGPBLG: bool,
-    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.EHBJFGPDPJF)
-    pub EHBJFGPDPJF: bool,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp._black_uid_list)
+    pub _black_uid_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.show_red_dot_flag)
+    pub show_red_dot_flag: bool,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.is_allow_other_apply)
+    pub is_allow_other_apply: bool,
+    // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp._friend_uid_list)
+    pub _friend_uid_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFriendLoginInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -58,24 +58,24 @@ impl GetFriendLoginInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OMFOMBGFHPA",
-            |m: &GetFriendLoginInfoScRsp| { &m.OMFOMBGFHPA },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.OMFOMBGFHPA },
+            "_black_uid_list",
+            |m: &GetFriendLoginInfoScRsp| { &m._black_uid_list },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m._black_uid_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "show_red_dot_flag",
+            |m: &GetFriendLoginInfoScRsp| { &m.show_red_dot_flag },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.show_red_dot_flag },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_allow_other_apply",
+            |m: &GetFriendLoginInfoScRsp| { &m.is_allow_other_apply },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m.is_allow_other_apply },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KCGCEPPMOKM",
-            |m: &GetFriendLoginInfoScRsp| { &m.KCGCEPPMOKM },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.KCGCEPPMOKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHEICCGPBLG",
-            |m: &GetFriendLoginInfoScRsp| { &m.BHEICCGPBLG },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.BHEICCGPBLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHBJFGPDPJF",
-            |m: &GetFriendLoginInfoScRsp| { &m.EHBJFGPDPJF },
-            |m: &mut GetFriendLoginInfoScRsp| { &mut m.EHBJFGPDPJF },
+            "_friend_uid_list",
+            |m: &GetFriendLoginInfoScRsp| { &m._friend_uid_list },
+            |m: &mut GetFriendLoginInfoScRsp| { &mut m._friend_uid_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,25 +100,25 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OMFOMBGFHPA)?;
-                },
-                72 => {
-                    self.OMFOMBGFHPA.push(is.read_uint32()?);
-                },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KCGCEPPMOKM)?;
-                },
-                104 => {
-                    self.KCGCEPPMOKM.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.BHEICCGPBLG = is.read_bool()?;
-                },
-                56 => {
-                    self.EHBJFGPDPJF = is.read_bool()?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self._black_uid_list)?;
                 },
                 16 => {
+                    self._black_uid_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.show_red_dot_flag = is.read_bool()?;
+                },
+                64 => {
+                    self.is_allow_other_apply = is.read_bool()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self._friend_uid_list)?;
+                },
+                88 => {
+                    self._friend_uid_list.push(is.read_uint32()?);
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -133,16 +133,16 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OMFOMBGFHPA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.KCGCEPPMOKM);
-        if self.BHEICCGPBLG != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self._black_uid_list);
+        if self.show_red_dot_flag != false {
             my_size += 1 + 1;
         }
-        if self.EHBJFGPDPJF != false {
+        if self.is_allow_other_apply != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self._friend_uid_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.OMFOMBGFHPA)?;
-        os.write_repeated_packed_uint32(13, &self.KCGCEPPMOKM)?;
-        if self.BHEICCGPBLG != false {
-            os.write_bool(15, self.BHEICCGPBLG)?;
+        os.write_repeated_packed_uint32(2, &self._black_uid_list)?;
+        if self.show_red_dot_flag != false {
+            os.write_bool(6, self.show_red_dot_flag)?;
         }
-        if self.EHBJFGPDPJF != false {
-            os.write_bool(7, self.EHBJFGPDPJF)?;
+        if self.is_allow_other_apply != false {
+            os.write_bool(8, self.is_allow_other_apply)?;
         }
+        os.write_repeated_packed_uint32(11, &self._friend_uid_list)?;
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -178,20 +178,20 @@ impl ::protobuf::Message for GetFriendLoginInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.OMFOMBGFHPA.clear();
-        self.KCGCEPPMOKM.clear();
-        self.BHEICCGPBLG = false;
-        self.EHBJFGPDPJF = false;
+        self._black_uid_list.clear();
+        self.show_red_dot_flag = false;
+        self.is_allow_other_apply = false;
+        self._friend_uid_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendLoginInfoScRsp {
         static instance: GetFriendLoginInfoScRsp = GetFriendLoginInfoScRsp {
-            OMFOMBGFHPA: ::std::vec::Vec::new(),
-            KCGCEPPMOKM: ::std::vec::Vec::new(),
-            BHEICCGPBLG: false,
-            EHBJFGPDPJF: false,
+            _black_uid_list: ::std::vec::Vec::new(),
+            show_red_dot_flag: false,
+            is_allow_other_apply: false,
+            _friend_uid_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -217,12 +217,12 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendLoginInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetFriendLoginInfoScRsp.proto\"\xbb\x01\n\x17GetFriendLoginInfoScR\
-    sp\x12\x20\n\x0bOMFOMBGFHPA\x18\t\x20\x03(\rR\x0bOMFOMBGFHPA\x12\x20\n\
-    \x0bKCGCEPPMOKM\x18\r\x20\x03(\rR\x0bKCGCEPPMOKM\x12\x20\n\x0bBHEICCGPBL\
-    G\x18\x0f\x20\x01(\x08R\x0bBHEICCGPBLG\x12\x20\n\x0bEHBJFGPDPJF\x18\x07\
-    \x20\x01(\x08R\x0bEHBJFGPDPJF\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x1dGetFriendLoginInfoScRsp.proto\"\xdf\x01\n\x17GetFriendLoginInfoScR\
+    sp\x12%\n\x0f_black_uid_list\x18\x02\x20\x03(\rR\x0cBlackUidList\x12)\n\
+    \x11show_red_dot_flag\x18\x06\x20\x01(\x08R\x0eshowRedDotFlag\x12/\n\x14\
+    is_allow_other_apply\x18\x08\x20\x01(\x08R\x11isAllowOtherApply\x12'\n\
+    \x10_friend_uid_list\x18\x0b\x20\x03(\rR\rFriendUidList\x12\x18\n\x07ret\
+    code\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

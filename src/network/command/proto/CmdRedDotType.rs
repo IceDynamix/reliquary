@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRedDotType {
     // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_NLCDGIPGFDJ)
     AAGDLGIHHOE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_NFMGANEMPNE)
-    AAGDLGIHHOE_NFMGANEMPNE = 5923,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_FKBAFCOEHGG)
-    AAGDLGIHHOE_FKBAFCOEHGG = 5927,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_EJDAHCIBGOF)
-    AAGDLGIHHOE_EJDAHCIBGOF = 5944,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_DFFBHAGPBJE)
-    AAGDLGIHHOE_DFFBHAGPBJE = 5942,
     // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_KABNELBBNKH)
-    AAGDLGIHHOE_KABNELBBNKH = 5907,
+    AAGDLGIHHOE_KABNELBBNKH = 5937,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_EJDAHCIBGOF)
+    AAGDLGIHHOE_EJDAHCIBGOF = 5919,
     // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_PHEGNNDHALO)
-    AAGDLGIHHOE_PHEGNNDHALO = 5932,
+    AAGDLGIHHOE_PHEGNNDHALO = 5909,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_NFMGANEMPNE)
+    AAGDLGIHHOE_NFMGANEMPNE = 5944,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_FKBAFCOEHGG)
+    AAGDLGIHHOE_FKBAFCOEHGG = 5948,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.AAGDLGIHHOE_DFFBHAGPBJE)
+    AAGDLGIHHOE_DFFBHAGPBJE = 5923,
 }
 
 impl ::protobuf::Enum for CmdRedDotType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdRedDotType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRedDotType> {
         match value {
             0 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_NLCDGIPGFDJ),
-            5923 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE),
-            5927 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG),
-            5944 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF),
-            5942 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE),
-            5907 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH),
-            5932 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO),
+            5937 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH),
+            5919 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF),
+            5909 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO),
+            5944 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE),
+            5948 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG),
+            5923 => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdRedDotType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRedDotType> {
         match str {
             "AAGDLGIHHOE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_NLCDGIPGFDJ),
+            "AAGDLGIHHOE_KABNELBBNKH" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH),
+            "AAGDLGIHHOE_EJDAHCIBGOF" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF),
+            "AAGDLGIHHOE_PHEGNNDHALO" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO),
             "AAGDLGIHHOE_NFMGANEMPNE" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE),
             "AAGDLGIHHOE_FKBAFCOEHGG" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG),
-            "AAGDLGIHHOE_EJDAHCIBGOF" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF),
             "AAGDLGIHHOE_DFFBHAGPBJE" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE),
-            "AAGDLGIHHOE_KABNELBBNKH" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH),
-            "AAGDLGIHHOE_PHEGNNDHALO" => ::std::option::Option::Some(CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRedDotType] = &[
         CmdRedDotType::AAGDLGIHHOE_NLCDGIPGFDJ,
+        CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH,
+        CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF,
+        CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO,
         CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE,
         CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG,
-        CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF,
         CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE,
-        CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH,
-        CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdRedDotType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRedDotType::AAGDLGIHHOE_NLCDGIPGFDJ => 0,
-            CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE => 1,
-            CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG => 2,
-            CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF => 3,
-            CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE => 4,
-            CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH => 5,
-            CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO => 6,
+            CmdRedDotType::AAGDLGIHHOE_KABNELBBNKH => 1,
+            CmdRedDotType::AAGDLGIHHOE_EJDAHCIBGOF => 2,
+            CmdRedDotType::AAGDLGIHHOE_PHEGNNDHALO => 3,
+            CmdRedDotType::AAGDLGIHHOE_NFMGANEMPNE => 4,
+            CmdRedDotType::AAGDLGIHHOE_FKBAFCOEHGG => 5,
+            CmdRedDotType::AAGDLGIHHOE_DFFBHAGPBJE => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CmdRedDotType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdRedDotType.proto*\xe0\x01\n\rCmdRedDotType\x12\x1b\n\x17AAGDLGI\
-    HHOE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17AAGDLGIHHOE_NFMGANEMPNE\x10\xa3.\x12\
-    \x1c\n\x17AAGDLGIHHOE_FKBAFCOEHGG\x10\xa7.\x12\x1c\n\x17AAGDLGIHHOE_EJDA\
-    HCIBGOF\x10\xb8.\x12\x1c\n\x17AAGDLGIHHOE_DFFBHAGPBJE\x10\xb6.\x12\x1c\n\
-    \x17AAGDLGIHHOE_KABNELBBNKH\x10\x93.\x12\x1c\n\x17AAGDLGIHHOE_PHEGNNDHAL\
-    O\x10\xac.b\x06proto3\
+    HHOE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17AAGDLGIHHOE_KABNELBBNKH\x10\xb1.\x12\
+    \x1c\n\x17AAGDLGIHHOE_EJDAHCIBGOF\x10\x9f.\x12\x1c\n\x17AAGDLGIHHOE_PHEG\
+    NNDHALO\x10\x95.\x12\x1c\n\x17AAGDLGIHHOE_NFMGANEMPNE\x10\xb8.\x12\x1c\n\
+    \x17AAGDLGIHHOE_FKBAFCOEHGG\x10\xbc.\x12\x1c\n\x17AAGDLGIHHOE_DFFBHAGPBJ\
+    E\x10\xa3.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

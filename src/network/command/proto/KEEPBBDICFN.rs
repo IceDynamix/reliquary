@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KEEPBBDICFN {
     // message fields
-    // @@protoc_insertion_point(field:KEEPBBDICFN.LOGHLGKIFEN)
-    pub LOGHLGKIFEN: u32,
     // @@protoc_insertion_point(field:KEEPBBDICFN.PDIAOLDMBLL)
     pub PDIAOLDMBLL: u32,
+    // @@protoc_insertion_point(field:KEEPBBDICFN.LOGHLGKIFEN)
+    pub LOGHLGKIFEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KEEPBBDICFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KEEPBBDICFN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOGHLGKIFEN",
-            |m: &KEEPBBDICFN| { &m.LOGHLGKIFEN },
-            |m: &mut KEEPBBDICFN| { &mut m.LOGHLGKIFEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDIAOLDMBLL",
             |m: &KEEPBBDICFN| { &m.PDIAOLDMBLL },
             |m: &mut KEEPBBDICFN| { &mut m.PDIAOLDMBLL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOGHLGKIFEN",
+            |m: &KEEPBBDICFN| { &m.LOGHLGKIFEN },
+            |m: &mut KEEPBBDICFN| { &mut m.LOGHLGKIFEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KEEPBBDICFN>(
             "KEEPBBDICFN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KEEPBBDICFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.PDIAOLDMBLL = is.read_uint32()?;
+                },
                 88 => {
                     self.LOGHLGKIFEN = is.read_uint32()?;
-                },
-                104 => {
-                    self.PDIAOLDMBLL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KEEPBBDICFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PDIAOLDMBLL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PDIAOLDMBLL);
+        }
         if self.LOGHLGKIFEN != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.LOGHLGKIFEN);
-        }
-        if self.PDIAOLDMBLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PDIAOLDMBLL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KEEPBBDICFN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PDIAOLDMBLL != 0 {
+            os.write_uint32(9, self.PDIAOLDMBLL)?;
+        }
         if self.LOGHLGKIFEN != 0 {
             os.write_uint32(11, self.LOGHLGKIFEN)?;
-        }
-        if self.PDIAOLDMBLL != 0 {
-            os.write_uint32(13, self.PDIAOLDMBLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KEEPBBDICFN {
     }
 
     fn clear(&mut self) {
-        self.LOGHLGKIFEN = 0;
         self.PDIAOLDMBLL = 0;
+        self.LOGHLGKIFEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KEEPBBDICFN {
         static instance: KEEPBBDICFN = KEEPBBDICFN {
-            LOGHLGKIFEN: 0,
             PDIAOLDMBLL: 0,
+            LOGHLGKIFEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KEEPBBDICFN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KEEPBBDICFN.proto\"Q\n\x0bKEEPBBDICFN\x12\x20\n\x0bLOGHLGKIFEN\x18\
-    \x0b\x20\x01(\rR\x0bLOGHLGKIFEN\x12\x20\n\x0bPDIAOLDMBLL\x18\r\x20\x01(\
-    \rR\x0bPDIAOLDMBLLb\x06proto3\
+    \n\x11KEEPBBDICFN.proto\"Q\n\x0bKEEPBBDICFN\x12\x20\n\x0bPDIAOLDMBLL\x18\
+    \t\x20\x01(\rR\x0bPDIAOLDMBLL\x12\x20\n\x0bLOGHLGKIFEN\x18\x0b\x20\x01(\
+    \rR\x0bLOGHLGKIFENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct DFKMNLIJMFB {
     // message fields
     // @@protoc_insertion_point(field:DFKMNLIJMFB.GEJNMNBLFLG)
     pub GEJNMNBLFLG: ::std::vec::Vec<super::DECHJACNLGP::DECHJACNLGP>,
-    // @@protoc_insertion_point(field:DFKMNLIJMFB.HELJNHNDCJP)
-    pub HELJNHNDCJP: bool,
     // @@protoc_insertion_point(field:DFKMNLIJMFB.POFBAHEECGB)
     pub POFBAHEECGB: u32,
+    // @@protoc_insertion_point(field:DFKMNLIJMFB.is_selected)
+    pub is_selected: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DFKMNLIJMFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl DFKMNLIJMFB {
             |m: &mut DFKMNLIJMFB| { &mut m.GEJNMNBLFLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HELJNHNDCJP",
-            |m: &DFKMNLIJMFB| { &m.HELJNHNDCJP },
-            |m: &mut DFKMNLIJMFB| { &mut m.HELJNHNDCJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "POFBAHEECGB",
             |m: &DFKMNLIJMFB| { &m.POFBAHEECGB },
             |m: &mut DFKMNLIJMFB| { &mut m.POFBAHEECGB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_selected",
+            |m: &DFKMNLIJMFB| { &m.is_selected },
+            |m: &mut DFKMNLIJMFB| { &mut m.is_selected },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFKMNLIJMFB>(
             "DFKMNLIJMFB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DFKMNLIJMFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                58 => {
                     self.GEJNMNBLFLG.push(is.read_message()?);
                 },
-                40 => {
-                    self.HELJNHNDCJP = is.read_bool()?;
-                },
-                8 => {
+                64 => {
                     self.POFBAHEECGB = is.read_uint32()?;
+                },
+                80 => {
+                    self.is_selected = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for DFKMNLIJMFB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HELJNHNDCJP != false {
-            my_size += 1 + 1;
-        }
         if self.POFBAHEECGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.POFBAHEECGB);
+            my_size += ::protobuf::rt::uint32_size(8, self.POFBAHEECGB);
+        }
+        if self.is_selected != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for DFKMNLIJMFB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.GEJNMNBLFLG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        if self.HELJNHNDCJP != false {
-            os.write_bool(5, self.HELJNHNDCJP)?;
-        }
         if self.POFBAHEECGB != 0 {
-            os.write_uint32(1, self.POFBAHEECGB)?;
+            os.write_uint32(8, self.POFBAHEECGB)?;
+        }
+        if self.is_selected != false {
+            os.write_bool(10, self.is_selected)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for DFKMNLIJMFB {
 
     fn clear(&mut self) {
         self.GEJNMNBLFLG.clear();
-        self.HELJNHNDCJP = false;
         self.POFBAHEECGB = 0;
+        self.is_selected = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFKMNLIJMFB {
         static instance: DFKMNLIJMFB = DFKMNLIJMFB {
             GEJNMNBLFLG: ::std::vec::Vec::new(),
-            HELJNHNDCJP: false,
             POFBAHEECGB: 0,
+            is_selected: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for DFKMNLIJMFB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DFKMNLIJMFB.proto\x1a\x11DECHJACNLGP.proto\"\x81\x01\n\x0bDFKMNLIJ\
-    MFB\x12.\n\x0bGEJNMNBLFLG\x18\x04\x20\x03(\x0b2\x0c.DECHJACNLGPR\x0bGEJN\
-    MNBLFLG\x12\x20\n\x0bHELJNHNDCJP\x18\x05\x20\x01(\x08R\x0bHELJNHNDCJP\
-    \x12\x20\n\x0bPOFBAHEECGB\x18\x01\x20\x01(\rR\x0bPOFBAHEECGBb\x06proto3\
+    \n\x11DFKMNLIJMFB.proto\x1a\x11DECHJACNLGP.proto\"\x80\x01\n\x0bDFKMNLIJ\
+    MFB\x12.\n\x0bGEJNMNBLFLG\x18\x07\x20\x03(\x0b2\x0c.DECHJACNLGPR\x0bGEJN\
+    MNBLFLG\x12\x20\n\x0bPOFBAHEECGB\x18\x08\x20\x01(\rR\x0bPOFBAHEECGB\x12\
+    \x1f\n\x0bis_selected\x18\n\x20\x01(\x08R\nisSelectedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

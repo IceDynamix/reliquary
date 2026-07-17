@@ -30,10 +30,10 @@ pub struct EnterFantasticStoryActivityStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::PKCIPJBKAFO::PKCIPJBKAFO>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.buff_list)
-    pub buff_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.OFHBPNGDEGO)
     pub OFHBPNGDEGO: u32,
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.buff_list)
+    pub buff_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageCsReq.battle_id)
     pub battle_id: u32,
     // special fields
@@ -60,15 +60,15 @@ impl EnterFantasticStoryActivityStageCsReq {
             |m: &EnterFantasticStoryActivityStageCsReq| { &m.avatar_list },
             |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.avatar_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &EnterFantasticStoryActivityStageCsReq| { &m.buff_list },
-            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.buff_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFHBPNGDEGO",
             |m: &EnterFantasticStoryActivityStageCsReq| { &m.OFHBPNGDEGO },
             |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.OFHBPNGDEGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &EnterFantasticStoryActivityStageCsReq| { &m.buff_list },
+            |m: &mut EnterFantasticStoryActivityStageCsReq| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_id",
@@ -93,8 +93,11 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     self.avatar_list.push(is.read_message()?);
+                },
+                16 => {
+                    self.OFHBPNGDEGO = is.read_uint32()?;
                 },
                 66 => {
                     is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
@@ -102,10 +105,7 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
                 64 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.OFHBPNGDEGO = is.read_uint32()?;
-                },
-                112 => {
+                88 => {
                     self.battle_id = is.read_uint32()?;
                 },
                 tag => {
@@ -124,12 +124,12 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.buff_list);
         if self.OFHBPNGDEGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OFHBPNGDEGO);
+            my_size += ::protobuf::rt::uint32_size(2, self.OFHBPNGDEGO);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.buff_list);
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.battle_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(8, &self.buff_list)?;
         if self.OFHBPNGDEGO != 0 {
-            os.write_uint32(13, self.OFHBPNGDEGO)?;
+            os.write_uint32(2, self.OFHBPNGDEGO)?;
         }
+        os.write_repeated_packed_uint32(8, &self.buff_list)?;
         if self.battle_id != 0 {
-            os.write_uint32(14, self.battle_id)?;
+            os.write_uint32(11, self.battle_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
 
     fn clear(&mut self) {
         self.avatar_list.clear();
-        self.buff_list.clear();
         self.OFHBPNGDEGO = 0;
+        self.buff_list.clear();
         self.battle_id = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageCsReq {
     fn default_instance() -> &'static EnterFantasticStoryActivityStageCsReq {
         static instance: EnterFantasticStoryActivityStageCsReq = EnterFantasticStoryActivityStageCsReq {
             avatar_list: ::std::vec::Vec::new(),
-            buff_list: ::std::vec::Vec::new(),
             OFHBPNGDEGO: 0,
+            buff_list: ::std::vec::Vec::new(),
             battle_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageCsRe
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+EnterFantasticStoryActivityStageCsReq.proto\x1a\x11PKCIPJBKAFO.proto\
     \"\xb2\x01\n%EnterFantasticStoryActivityStageCsReq\x12-\n\x0bavatar_list\
-    \x18\x06\x20\x03(\x0b2\x0c.PKCIPJBKAFOR\navatarList\x12\x1b\n\tbuff_list\
-    \x18\x08\x20\x03(\rR\x08buffList\x12\x20\n\x0bOFHBPNGDEGO\x18\r\x20\x01(\
-    \rR\x0bOFHBPNGDEGO\x12\x1b\n\tbattle_id\x18\x0e\x20\x01(\rR\x08battleIdb\
-    \x06proto3\
+    \x18\x01\x20\x03(\x0b2\x0c.PKCIPJBKAFOR\navatarList\x12\x20\n\x0bOFHBPNG\
+    DEGO\x18\x02\x20\x01(\rR\x0bOFHBPNGDEGO\x12\x1b\n\tbuff_list\x18\x08\x20\
+    \x03(\rR\x08buffList\x12\x1b\n\tbattle_id\x18\x0b\x20\x01(\rR\x08battleI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

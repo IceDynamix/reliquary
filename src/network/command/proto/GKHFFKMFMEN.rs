@@ -79,10 +79,10 @@ impl ::protobuf::Message for GKHFFKMFMEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.DOFNEAPHMKH = is.read_bool()?;
                 },
-                32 => {
+                96 => {
                     self.NIOFIOOGKLD = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GKHFFKMFMEN {
             my_size += 1 + 1;
         }
         if self.NIOFIOOGKLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NIOFIOOGKLD);
+            my_size += ::protobuf::rt::uint32_size(12, self.NIOFIOOGKLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GKHFFKMFMEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DOFNEAPHMKH != false {
-            os.write_bool(1, self.DOFNEAPHMKH)?;
+            os.write_bool(10, self.DOFNEAPHMKH)?;
         }
         if self.NIOFIOOGKLD != 0 {
-            os.write_uint32(4, self.NIOFIOOGKLD)?;
+            os.write_uint32(12, self.NIOFIOOGKLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GKHFFKMFMEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKHFFKMFMEN.proto\"Q\n\x0bGKHFFKMFMEN\x12\x20\n\x0bDOFNEAPHMKH\x18\
-    \x01\x20\x01(\x08R\x0bDOFNEAPHMKH\x12\x20\n\x0bNIOFIOOGKLD\x18\x04\x20\
-    \x01(\rR\x0bNIOFIOOGKLDb\x06proto3\
+    \n\x20\x01(\x08R\x0bDOFNEAPHMKH\x12\x20\n\x0bNIOFIOOGKLD\x18\x0c\x20\x01\
+    (\rR\x0bNIOFIOOGKLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

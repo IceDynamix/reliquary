@@ -30,10 +30,10 @@ pub struct HGCIPBFBNKO {
     // message fields
     // @@protoc_insertion_point(field:HGCIPBFBNKO.source)
     pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
-    // @@protoc_insertion_point(field:HGCIPBFBNKO.config_id)
-    pub config_id: u32,
     // @@protoc_insertion_point(field:HGCIPBFBNKO.unique_id)
     pub unique_id: u64,
+    // @@protoc_insertion_point(field:HGCIPBFBNKO.config_id)
+    pub config_id: u32,
     // @@protoc_insertion_point(field:HGCIPBFBNKO.AENBOONOFLC)
     pub AENBOONOFLC: ::protobuf::MessageField<super::JLIFGIMBMBD::JLIFGIMBMBD>,
     // special fields
@@ -61,14 +61,14 @@ impl HGCIPBFBNKO {
             |m: &mut HGCIPBFBNKO| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &HGCIPBFBNKO| { &m.config_id },
-            |m: &mut HGCIPBFBNKO| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &HGCIPBFBNKO| { &m.unique_id },
             |m: &mut HGCIPBFBNKO| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &HGCIPBFBNKO| { &m.config_id },
+            |m: &mut HGCIPBFBNKO| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLIFGIMBMBD::JLIFGIMBMBD>(
             "AENBOONOFLC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                80 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                120 => {
+                56 => {
                     self.unique_id = is.read_uint64()?;
                 },
-                50 => {
+                72 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AENBOONOFLC)?;
                 },
                 tag => {
@@ -121,11 +121,11 @@ impl ::protobuf::Message for HGCIPBFBNKO {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.config_id);
-        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.unique_id);
+            my_size += ::protobuf::rt::uint64_size(7, self.unique_id);
+        }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.config_id);
         }
         if let Some(v) = self.AENBOONOFLC.as_ref() {
             let len = v.compute_size();
@@ -138,16 +138,16 @@ impl ::protobuf::Message for HGCIPBFBNKO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.config_id != 0 {
-            os.write_uint32(10, self.config_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(15, self.unique_id)?;
+            os.write_uint64(7, self.unique_id)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(9, self.config_id)?;
         }
         if let Some(v) = self.AENBOONOFLC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for HGCIPBFBNKO {
 
     fn clear(&mut self) {
         self.source.clear();
-        self.config_id = 0;
         self.unique_id = 0;
+        self.config_id = 0;
         self.AENBOONOFLC.clear();
         self.special_fields.clear();
     }
@@ -176,8 +176,8 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     fn default_instance() -> &'static HGCIPBFBNKO {
         static instance: HGCIPBFBNKO = HGCIPBFBNKO {
             source: ::protobuf::MessageField::none(),
-            config_id: 0,
             unique_id: 0,
+            config_id: 0,
             AENBOONOFLC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for HGCIPBFBNKO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGCIPBFBNKO.proto\x1a\x11JLIFGIMBMBD.proto\x1a\x11JLPEICPFLMC.prot\
-    o\"\x9d\x01\n\x0bHGCIPBFBNKO\x12$\n\x06source\x18\x04\x20\x01(\x0b2\x0c.\
-    JLPEICPFLMCR\x06source\x12\x1b\n\tconfig_id\x18\n\x20\x01(\rR\x08configI\
-    d\x12\x1b\n\tunique_id\x18\x0f\x20\x01(\x04R\x08uniqueId\x12.\n\x0bAENBO\
-    ONOFLC\x18\x06\x20\x01(\x0b2\x0c.JLIFGIMBMBDR\x0bAENBOONOFLCb\x06proto3\
+    o\"\x9d\x01\n\x0bHGCIPBFBNKO\x12$\n\x06source\x18\x05\x20\x01(\x0b2\x0c.\
+    JLPEICPFLMCR\x06source\x12\x1b\n\tunique_id\x18\x07\x20\x01(\x04R\x08uni\
+    queId\x12\x1b\n\tconfig_id\x18\t\x20\x01(\rR\x08configId\x12.\n\x0bAENBO\
+    ONOFLC\x18\n\x20\x01(\x0b2\x0c.JLIFGIMBMBDR\x0bAENBOONOFLCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

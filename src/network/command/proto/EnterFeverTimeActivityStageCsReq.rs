@@ -30,10 +30,10 @@ pub struct EnterFeverTimeActivityStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::KPNHGDGLICN::KPNHGDGLICN>,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.CJHDABDKGHP)
-    pub CJHDABDKGHP: u32,
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.CJHDABDKGHP)
+    pub CJHDABDKGHP: u32,
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.MFLAIMHFABP)
     pub MFLAIMHFABP: u32,
     // special fields
@@ -61,14 +61,14 @@ impl EnterFeverTimeActivityStageCsReq {
             |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJHDABDKGHP",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.CJHDABDKGHP },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.CJHDABDKGHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &EnterFeverTimeActivityStageCsReq| { &m.id },
             |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJHDABDKGHP",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.CJHDABDKGHP },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.CJHDABDKGHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MFLAIMHFABP",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                88 => {
-                    self.CJHDABDKGHP = is.read_uint32()?;
-                },
-                48 => {
+                40 => {
                     self.id = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
+                    self.CJHDABDKGHP = is.read_uint32()?;
+                },
+                88 => {
                     self.MFLAIMHFABP = is.read_uint32()?;
                 },
                 tag => {
@@ -121,14 +121,14 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CJHDABDKGHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CJHDABDKGHP);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::uint32_size(5, self.id);
+        }
+        if self.CJHDABDKGHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CJHDABDKGHP);
         }
         if self.MFLAIMHFABP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MFLAIMHFABP);
+            my_size += ::protobuf::rt::uint32_size(11, self.MFLAIMHFABP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.CJHDABDKGHP != 0 {
-            os.write_uint32(11, self.CJHDABDKGHP)?;
-        }
         if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_uint32(5, self.id)?;
+        }
+        if self.CJHDABDKGHP != 0 {
+            os.write_uint32(8, self.CJHDABDKGHP)?;
         }
         if self.MFLAIMHFABP != 0 {
-            os.write_uint32(1, self.MFLAIMHFABP)?;
+            os.write_uint32(11, self.MFLAIMHFABP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
 
     fn clear(&mut self) {
         self.avatar_list.clear();
-        self.CJHDABDKGHP = 0;
         self.id = 0;
+        self.CJHDABDKGHP = 0;
         self.MFLAIMHFABP = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     fn default_instance() -> &'static EnterFeverTimeActivityStageCsReq {
         static instance: EnterFeverTimeActivityStageCsReq = EnterFeverTimeActivityStageCsReq {
             avatar_list: ::std::vec::Vec::new(),
-            CJHDABDKGHP: 0,
             id: 0,
+            CJHDABDKGHP: 0,
             MFLAIMHFABP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFeverTimeActivityStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&EnterFeverTimeActivityStageCsReq.proto\x1a\x11KPNHGDGLICN.proto\"\xa5\
-    \x01\n\x20EnterFeverTimeActivityStageCsReq\x12-\n\x0bavatar_list\x18\x0f\
-    \x20\x03(\x0b2\x0c.KPNHGDGLICNR\navatarList\x12\x20\n\x0bCJHDABDKGHP\x18\
-    \x0b\x20\x01(\rR\x0bCJHDABDKGHP\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02i\
-    d\x12\x20\n\x0bMFLAIMHFABP\x18\x01\x20\x01(\rR\x0bMFLAIMHFABPb\x06proto3\
+    \x01\n\x20EnterFeverTimeActivityStageCsReq\x12-\n\x0bavatar_list\x18\x02\
+    \x20\x03(\x0b2\x0c.KPNHGDGLICNR\navatarList\x12\x0e\n\x02id\x18\x05\x20\
+    \x01(\rR\x02id\x12\x20\n\x0bCJHDABDKGHP\x18\x08\x20\x01(\rR\x0bCJHDABDKG\
+    HP\x12\x20\n\x0bMFLAIMHFABP\x18\x0b\x20\x01(\rR\x0bMFLAIMHFABPb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

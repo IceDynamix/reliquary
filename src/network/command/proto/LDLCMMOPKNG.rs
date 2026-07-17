@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LDLCMMOPKNG {
     // message fields
-    // @@protoc_insertion_point(field:LDLCMMOPKNG.battle_target_list)
-    pub battle_target_list: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
-    // @@protoc_insertion_point(field:LDLCMMOPKNG.DCKIGAHCNMJ)
-    pub DCKIGAHCNMJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LDLCMMOPKNG.battle_info)
-    pub battle_info: ::protobuf::MessageField<super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>,
-    // @@protoc_insertion_point(field:LDLCMMOPKNG.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::EHPLFHLNMIF::EHPLFHLNMIF>,
     // @@protoc_insertion_point(field:LDLCMMOPKNG.HFPEJIDDDJG)
     pub HFPEJIDDDJG: ::protobuf::EnumOrUnknown<super::EDJKFOBBDJF::EDJKFOBBDJF>,
-    // @@protoc_insertion_point(field:LDLCMMOPKNG.round_cnt)
-    pub round_cnt: u32,
+    // @@protoc_insertion_point(field:LDLCMMOPKNG.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::EHPLFHLNMIF::EHPLFHLNMIF>,
     // @@protoc_insertion_point(field:LDLCMMOPKNG.DJHHPKMHPBC)
     pub DJHHPKMHPBC: u32,
+    // @@protoc_insertion_point(field:LDLCMMOPKNG.round_cnt)
+    pub round_cnt: u32,
+    // @@protoc_insertion_point(field:LDLCMMOPKNG.battle_target_list)
+    pub battle_target_list: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
+    // @@protoc_insertion_point(field:LDLCMMOPKNG.battle_info)
+    pub battle_info: ::protobuf::MessageField<super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>,
+    // @@protoc_insertion_point(field:LDLCMMOPKNG.DCKIGAHCNMJ)
+    pub DCKIGAHCNMJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:LDLCMMOPKNG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,10 @@ impl LDLCMMOPKNG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_target_list",
-            |m: &LDLCMMOPKNG| { &m.battle_target_list },
-            |m: &mut LDLCMMOPKNG| { &mut m.battle_target_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DCKIGAHCNMJ",
-            |m: &LDLCMMOPKNG| { &m.DCKIGAHCNMJ },
-            |m: &mut LDLCMMOPKNG| { &mut m.DCKIGAHCNMJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>(
-            "battle_info",
-            |m: &LDLCMMOPKNG| { &m.battle_info },
-            |m: &mut LDLCMMOPKNG| { &mut m.battle_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HFPEJIDDDJG",
+            |m: &LDLCMMOPKNG| { &m.HFPEJIDDDJG },
+            |m: &mut LDLCMMOPKNG| { &mut m.HFPEJIDDDJG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -82,19 +72,29 @@ impl LDLCMMOPKNG {
             |m: &mut LDLCMMOPKNG| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFPEJIDDDJG",
-            |m: &LDLCMMOPKNG| { &m.HFPEJIDDDJG },
-            |m: &mut LDLCMMOPKNG| { &mut m.HFPEJIDDDJG },
+            "DJHHPKMHPBC",
+            |m: &LDLCMMOPKNG| { &m.DJHHPKMHPBC },
+            |m: &mut LDLCMMOPKNG| { &mut m.DJHHPKMHPBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "round_cnt",
             |m: &LDLCMMOPKNG| { &m.round_cnt },
             |m: &mut LDLCMMOPKNG| { &mut m.round_cnt },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJHHPKMHPBC",
-            |m: &LDLCMMOPKNG| { &m.DJHHPKMHPBC },
-            |m: &mut LDLCMMOPKNG| { &mut m.DJHHPKMHPBC },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_target_list",
+            |m: &LDLCMMOPKNG| { &m.battle_target_list },
+            |m: &mut LDLCMMOPKNG| { &mut m.battle_target_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BattleGridFightSpecialBattleInfo::BattleGridFightSpecialBattleInfo>(
+            "battle_info",
+            |m: &LDLCMMOPKNG| { &m.battle_info },
+            |m: &mut LDLCMMOPKNG| { &mut m.battle_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DCKIGAHCNMJ",
+            |m: &LDLCMMOPKNG| { &m.DCKIGAHCNMJ },
+            |m: &mut LDLCMMOPKNG| { &mut m.DCKIGAHCNMJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LDLCMMOPKNG>(
             "LDLCMMOPKNG",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for LDLCMMOPKNG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.battle_target_list.push(is.read_message()?);
+                16 => {
+                    self.HFPEJIDDDJG = is.read_enum_or_unknown()?;
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DCKIGAHCNMJ)?;
+                26 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                40 => {
+                    self.DJHHPKMHPBC = is.read_uint32()?;
                 },
                 48 => {
-                    self.DCKIGAHCNMJ.push(is.read_uint32()?);
+                    self.round_cnt = is.read_uint32()?;
+                },
+                66 => {
+                    self.battle_target_list.push(is.read_message()?);
                 },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                34 => {
-                    self.avatar_list.push(is.read_message()?);
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DCKIGAHCNMJ)?;
                 },
-                16 => {
-                    self.HFPEJIDDDJG = is.read_enum_or_unknown()?;
-                },
-                24 => {
-                    self.round_cnt = is.read_uint32()?;
-                },
-                56 => {
-                    self.DJHHPKMHPBC = is.read_uint32()?;
+                120 => {
+                    self.DCKIGAHCNMJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,53 +150,53 @@ impl ::protobuf::Message for LDLCMMOPKNG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.battle_target_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DCKIGAHCNMJ);
-        if let Some(v) = self.battle_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
+            my_size += ::protobuf::rt::int32_size(2, self.HFPEJIDDDJG.value());
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
-            my_size += ::protobuf::rt::int32_size(2, self.HFPEJIDDDJG.value());
+        if self.DJHHPKMHPBC != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.DJHHPKMHPBC);
         }
         if self.round_cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.round_cnt);
+            my_size += ::protobuf::rt::uint32_size(6, self.round_cnt);
         }
-        if self.DJHHPKMHPBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DJHHPKMHPBC);
+        for value in &self.battle_target_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.battle_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DCKIGAHCNMJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        os.write_repeated_packed_uint32(6, &self.DCKIGAHCNMJ)?;
-        if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.HFPEJIDDDJG))?;
         }
-        if self.round_cnt != 0 {
-            os.write_uint32(3, self.round_cnt)?;
-        }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         if self.DJHHPKMHPBC != 0 {
-            os.write_uint32(7, self.DJHHPKMHPBC)?;
+            os.write_uint32(5, self.DJHHPKMHPBC)?;
         }
+        if self.round_cnt != 0 {
+            os.write_uint32(6, self.round_cnt)?;
+        }
+        for v in &self.battle_target_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if let Some(v) = self.battle_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.DCKIGAHCNMJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for LDLCMMOPKNG {
     }
 
     fn clear(&mut self) {
-        self.battle_target_list.clear();
-        self.DCKIGAHCNMJ.clear();
-        self.battle_info.clear();
-        self.avatar_list.clear();
         self.HFPEJIDDDJG = ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL);
-        self.round_cnt = 0;
+        self.avatar_list.clear();
         self.DJHHPKMHPBC = 0;
+        self.round_cnt = 0;
+        self.battle_target_list.clear();
+        self.battle_info.clear();
+        self.DCKIGAHCNMJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LDLCMMOPKNG {
         static instance: LDLCMMOPKNG = LDLCMMOPKNG {
-            battle_target_list: ::std::vec::Vec::new(),
-            DCKIGAHCNMJ: ::std::vec::Vec::new(),
-            battle_info: ::protobuf::MessageField::none(),
-            avatar_list: ::std::vec::Vec::new(),
             HFPEJIDDDJG: ::protobuf::EnumOrUnknown::from_i32(0),
-            round_cnt: 0,
+            avatar_list: ::std::vec::Vec::new(),
             DJHHPKMHPBC: 0,
+            round_cnt: 0,
+            battle_target_list: ::std::vec::Vec::new(),
+            battle_info: ::protobuf::MessageField::none(),
+            DCKIGAHCNMJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -259,14 +259,14 @@ impl ::protobuf::reflect::ProtobufValue for LDLCMMOPKNG {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LDLCMMOPKNG.proto\x1a&BattleGridFightSpecialBattleInfo.proto\x1a\
     \x12BattleTarget.proto\x1a\x11EDJKFOBBDJF.proto\x1a\x11EHPLFHLNMIF.proto\
-    \"\xce\x02\n\x0bLDLCMMOPKNG\x12;\n\x12battle_target_list\x18\x0c\x20\x03\
-    (\x0b2\r.BattleTargetR\x10battleTargetList\x12\x20\n\x0bDCKIGAHCNMJ\x18\
-    \x06\x20\x03(\rR\x0bDCKIGAHCNMJ\x12B\n\x0bbattle_info\x18\x0b\x20\x01(\
-    \x0b2!.BattleGridFightSpecialBattleInfoR\nbattleInfo\x12-\n\x0bavatar_li\
-    st\x18\x04\x20\x03(\x0b2\x0c.EHPLFHLNMIFR\navatarList\x12.\n\x0bHFPEJIDD\
-    DJG\x18\x02\x20\x01(\x0e2\x0c.EDJKFOBBDJFR\x0bHFPEJIDDDJG\x12\x1b\n\trou\
-    nd_cnt\x18\x03\x20\x01(\rR\x08roundCnt\x12\x20\n\x0bDJHHPKMHPBC\x18\x07\
-    \x20\x01(\rR\x0bDJHHPKMHPBCb\x06proto3\
+    \"\xce\x02\n\x0bLDLCMMOPKNG\x12.\n\x0bHFPEJIDDDJG\x18\x02\x20\x01(\x0e2\
+    \x0c.EDJKFOBBDJFR\x0bHFPEJIDDDJG\x12-\n\x0bavatar_list\x18\x03\x20\x03(\
+    \x0b2\x0c.EHPLFHLNMIFR\navatarList\x12\x20\n\x0bDJHHPKMHPBC\x18\x05\x20\
+    \x01(\rR\x0bDJHHPKMHPBC\x12\x1b\n\tround_cnt\x18\x06\x20\x01(\rR\x08roun\
+    dCnt\x12;\n\x12battle_target_list\x18\x08\x20\x03(\x0b2\r.BattleTargetR\
+    \x10battleTargetList\x12B\n\x0bbattle_info\x18\x0b\x20\x01(\x0b2!.Battle\
+    GridFightSpecialBattleInfoR\nbattleInfo\x12\x20\n\x0bDCKIGAHCNMJ\x18\x0f\
+    \x20\x03(\rR\x0bDCKIGAHCNMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

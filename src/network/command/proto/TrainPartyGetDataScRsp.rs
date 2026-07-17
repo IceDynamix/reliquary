@@ -79,7 +79,7 @@ impl ::protobuf::Message for TrainPartyGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_data)?;
                 },
                 72 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for TrainPartyGetDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.train_party_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cTrainPartyGetDataScRsp.proto\x1a\x14TrainPartyData.proto\"m\n\x16T\
-    rainPartyGetDataScRsp\x129\n\x10train_party_data\x18\x05\x20\x01(\x0b2\
+    rainPartyGetDataScRsp\x129\n\x10train_party_data\x18\x07\x20\x01(\x0b2\
     \x0f.TrainPartyDataR\x0etrainPartyData\x12\x18\n\x07retcode\x18\t\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";

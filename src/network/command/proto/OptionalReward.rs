@@ -79,10 +79,10 @@ impl ::protobuf::Message for OptionalReward {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.optional_reward_id = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OptionalReward {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.optional_reward_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.optional_reward_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.optional_reward_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OptionalReward {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.optional_reward_id != 0 {
-            os.write_uint32(6, self.optional_reward_id)?;
+            os.write_uint32(3, self.optional_reward_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(15, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OptionalReward {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14OptionalReward.proto\"T\n\x0eOptionalReward\x12,\n\x12optional_rew\
-    ard_id\x18\x06\x20\x01(\rR\x10optionalRewardId\x12\x14\n\x05level\x18\
-    \x08\x20\x01(\rR\x05levelb\x06proto3\
+    ard_id\x18\x03\x20\x01(\rR\x10optionalRewardId\x12\x14\n\x05level\x18\
+    \x0f\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

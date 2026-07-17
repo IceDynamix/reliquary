@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHJDEOLKHKB {
     // message fields
-    // @@protoc_insertion_point(field:LHJDEOLKHKB.MKJECBOMHPP)
-    pub MKJECBOMHPP: ::std::vec::Vec<super::JPEBEDHMNLA::JPEBEDHMNLA>,
     // @@protoc_insertion_point(field:LHJDEOLKHKB.DPPJILKLJAG)
     pub DPPJILKLJAG: ::std::vec::Vec<super::JPEBEDHMNLA::JPEBEDHMNLA>,
-    // @@protoc_insertion_point(field:LHJDEOLKHKB.PBFJFALJPFE)
-    pub PBFJFALJPFE: u32,
+    // @@protoc_insertion_point(field:LHJDEOLKHKB.MKJECBOMHPP)
+    pub MKJECBOMHPP: ::std::vec::Vec<super::JPEBEDHMNLA::JPEBEDHMNLA>,
+    // @@protoc_insertion_point(field:LHJDEOLKHKB.slot_num)
+    pub slot_num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LHJDEOLKHKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl LHJDEOLKHKB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MKJECBOMHPP",
-            |m: &LHJDEOLKHKB| { &m.MKJECBOMHPP },
-            |m: &mut LHJDEOLKHKB| { &mut m.MKJECBOMHPP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DPPJILKLJAG",
             |m: &LHJDEOLKHKB| { &m.DPPJILKLJAG },
             |m: &mut LHJDEOLKHKB| { &mut m.DPPJILKLJAG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MKJECBOMHPP",
+            |m: &LHJDEOLKHKB| { &m.MKJECBOMHPP },
+            |m: &mut LHJDEOLKHKB| { &mut m.MKJECBOMHPP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBFJFALJPFE",
-            |m: &LHJDEOLKHKB| { &m.PBFJFALJPFE },
-            |m: &mut LHJDEOLKHKB| { &mut m.PBFJFALJPFE },
+            "slot_num",
+            |m: &LHJDEOLKHKB| { &m.slot_num },
+            |m: &mut LHJDEOLKHKB| { &mut m.slot_num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LHJDEOLKHKB>(
             "LHJDEOLKHKB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LHJDEOLKHKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.MKJECBOMHPP.push(is.read_message()?);
-                },
                 26 => {
                     self.DPPJILKLJAG.push(is.read_message()?);
                 },
-                120 => {
-                    self.PBFJFALJPFE = is.read_uint32()?;
+                66 => {
+                    self.MKJECBOMHPP.push(is.read_message()?);
+                },
+                80 => {
+                    self.slot_num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for LHJDEOLKHKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MKJECBOMHPP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.DPPJILKLJAG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PBFJFALJPFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PBFJFALJPFE);
+        for value in &self.MKJECBOMHPP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.slot_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.slot_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for LHJDEOLKHKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MKJECBOMHPP {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         for v in &self.DPPJILKLJAG {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.PBFJFALJPFE != 0 {
-            os.write_uint32(15, self.PBFJFALJPFE)?;
+        for v in &self.MKJECBOMHPP {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.slot_num != 0 {
+            os.write_uint32(10, self.slot_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for LHJDEOLKHKB {
     }
 
     fn clear(&mut self) {
-        self.MKJECBOMHPP.clear();
         self.DPPJILKLJAG.clear();
-        self.PBFJFALJPFE = 0;
+        self.MKJECBOMHPP.clear();
+        self.slot_num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHJDEOLKHKB {
         static instance: LHJDEOLKHKB = LHJDEOLKHKB {
-            MKJECBOMHPP: ::std::vec::Vec::new(),
             DPPJILKLJAG: ::std::vec::Vec::new(),
-            PBFJFALJPFE: 0,
+            MKJECBOMHPP: ::std::vec::Vec::new(),
+            slot_num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for LHJDEOLKHKB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHJDEOLKHKB.proto\x1a\x11JPEBEDHMNLA.proto\"\x8f\x01\n\x0bLHJDEOLK\
-    HKB\x12.\n\x0bMKJECBOMHPP\x18\x0c\x20\x03(\x0b2\x0c.JPEBEDHMNLAR\x0bMKJE\
-    CBOMHPP\x12.\n\x0bDPPJILKLJAG\x18\x03\x20\x03(\x0b2\x0c.JPEBEDHMNLAR\x0b\
-    DPPJILKLJAG\x12\x20\n\x0bPBFJFALJPFE\x18\x0f\x20\x01(\rR\x0bPBFJFALJPFEb\
-    \x06proto3\
+    \n\x11LHJDEOLKHKB.proto\x1a\x11JPEBEDHMNLA.proto\"\x88\x01\n\x0bLHJDEOLK\
+    HKB\x12.\n\x0bDPPJILKLJAG\x18\x03\x20\x03(\x0b2\x0c.JPEBEDHMNLAR\x0bDPPJ\
+    ILKLJAG\x12.\n\x0bMKJECBOMHPP\x18\x08\x20\x03(\x0b2\x0c.JPEBEDHMNLAR\x0b\
+    MKJECBOMHPP\x12\x19\n\x08slot_num\x18\n\x20\x01(\rR\x07slotNumb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

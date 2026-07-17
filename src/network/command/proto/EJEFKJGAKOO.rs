@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EJEFKJGAKOO {
     // message fields
+    // @@protoc_insertion_point(field:EJEFKJGAKOO.effect_id)
+    pub effect_id: u32,
     // @@protoc_insertion_point(field:EJEFKJGAKOO.MENFBEDCBHB)
     pub MENFBEDCBHB: u32,
     // @@protoc_insertion_point(field:EJEFKJGAKOO.trait_id)
     pub trait_id: u32,
-    // @@protoc_insertion_point(field:EJEFKJGAKOO.effect_id)
-    pub effect_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EJEFKJGAKOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl EJEFKJGAKOO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "effect_id",
+            |m: &EJEFKJGAKOO| { &m.effect_id },
+            |m: &mut EJEFKJGAKOO| { &mut m.effect_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MENFBEDCBHB",
             |m: &EJEFKJGAKOO| { &m.MENFBEDCBHB },
             |m: &mut EJEFKJGAKOO| { &mut m.MENFBEDCBHB },
@@ -62,11 +67,6 @@ impl EJEFKJGAKOO {
             "trait_id",
             |m: &EJEFKJGAKOO| { &m.trait_id },
             |m: &mut EJEFKJGAKOO| { &mut m.trait_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "effect_id",
-            |m: &EJEFKJGAKOO| { &m.effect_id },
-            |m: &mut EJEFKJGAKOO| { &mut m.effect_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EJEFKJGAKOO>(
             "EJEFKJGAKOO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EJEFKJGAKOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
+                    self.effect_id = is.read_uint32()?;
+                },
+                88 => {
                     self.MENFBEDCBHB = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.trait_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.effect_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EJEFKJGAKOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.effect_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.effect_id);
+        }
         if self.MENFBEDCBHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MENFBEDCBHB);
+            my_size += ::protobuf::rt::uint32_size(11, self.MENFBEDCBHB);
         }
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.trait_id);
-        }
-        if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EJEFKJGAKOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.effect_id != 0 {
+            os.write_uint32(2, self.effect_id)?;
+        }
         if self.MENFBEDCBHB != 0 {
-            os.write_uint32(8, self.MENFBEDCBHB)?;
+            os.write_uint32(11, self.MENFBEDCBHB)?;
         }
         if self.trait_id != 0 {
-            os.write_uint32(6, self.trait_id)?;
-        }
-        if self.effect_id != 0 {
-            os.write_uint32(7, self.effect_id)?;
+            os.write_uint32(12, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EJEFKJGAKOO {
     }
 
     fn clear(&mut self) {
+        self.effect_id = 0;
         self.MENFBEDCBHB = 0;
         self.trait_id = 0;
-        self.effect_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EJEFKJGAKOO {
         static instance: EJEFKJGAKOO = EJEFKJGAKOO {
+            effect_id: 0,
             MENFBEDCBHB: 0,
             trait_id: 0,
-            effect_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EJEFKJGAKOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EJEFKJGAKOO.proto\"g\n\x0bEJEFKJGAKOO\x12\x20\n\x0bMENFBEDCBHB\x18\
-    \x08\x20\x01(\rR\x0bMENFBEDCBHB\x12\x19\n\x08trait_id\x18\x06\x20\x01(\r\
-    R\x07traitId\x12\x1b\n\teffect_id\x18\x07\x20\x01(\rR\x08effectIdb\x06pr\
-    oto3\
+    \n\x11EJEFKJGAKOO.proto\"g\n\x0bEJEFKJGAKOO\x12\x1b\n\teffect_id\x18\x02\
+    \x20\x01(\rR\x08effectId\x12\x20\n\x0bMENFBEDCBHB\x18\x0b\x20\x01(\rR\
+    \x0bMENFBEDCBHB\x12\x19\n\x08trait_id\x18\x0c\x20\x01(\rR\x07traitIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

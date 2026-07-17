@@ -79,7 +79,7 @@ impl ::protobuf::Message for GridFightUpdateEquipTrackCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                74 => {
                     self.DKEIDONNDCJ.push(is.read_message()?);
                 },
                 112 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GridFightUpdateEquipTrackCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DKEIDONNDCJ {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipTrackSource::GridFightEquipTrackSource::IHMJHLGKLHP_FAHMBODELMP) {
             os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.source))?;
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightUpdateEquipTrackCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GridFightUpdateEquipTrackCsReq.proto\x1a\x1fGridFightEquipTrackSource\
     .proto\x1a\x11HLHHLIGPNOM.proto\"\x84\x01\n\x1eGridFightUpdateEquipTrack\
-    CsReq\x12.\n\x0bDKEIDONNDCJ\x18\x0f\x20\x03(\x0b2\x0c.HLHHLIGPNOMR\x0bDK\
-    EIDONNDCJ\x122\n\x06source\x18\x0e\x20\x01(\x0e2\x1a.GridFightEquipTrack\
-    SourceR\x06sourceb\x06proto3\
+    CsReq\x12.\n\x0bDKEIDONNDCJ\x18\t\x20\x03(\x0b2\x0c.HLHHLIGPNOMR\x0bDKEI\
+    DONNDCJ\x122\n\x06source\x18\x0e\x20\x01(\x0e2\x1a.GridFightEquipTrackSo\
+    urceR\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

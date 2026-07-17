@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOffSkillCoreScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.LCCMCPMCLFH)
-    pub LCCMCPMCLFH: ::protobuf::MessageField<super::DMGDLEHEDFB::DMGDLEHEDFB>,
     // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.IAGNGEGKDOL)
     pub IAGNGEGKDOL: ::protobuf::MessageField<super::GHBICGMEFPL::GHBICGMEFPL>,
     // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.LCCMCPMCLFH)
+    pub LCCMCPMCLFH: ::protobuf::MessageField<super::DMGDLEHEDFB::DMGDLEHEDFB>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeOffSkillCoreScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl TakeOffSkillCoreScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMGDLEHEDFB::DMGDLEHEDFB>(
-            "LCCMCPMCLFH",
-            |m: &TakeOffSkillCoreScRsp| { &m.LCCMCPMCLFH },
-            |m: &mut TakeOffSkillCoreScRsp| { &mut m.LCCMCPMCLFH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GHBICGMEFPL::GHBICGMEFPL>(
             "IAGNGEGKDOL",
             |m: &TakeOffSkillCoreScRsp| { &m.IAGNGEGKDOL },
@@ -67,6 +62,11 @@ impl TakeOffSkillCoreScRsp {
             "retcode",
             |m: &TakeOffSkillCoreScRsp| { &m.retcode },
             |m: &mut TakeOffSkillCoreScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMGDLEHEDFB::DMGDLEHEDFB>(
+            "LCCMCPMCLFH",
+            |m: &TakeOffSkillCoreScRsp| { &m.LCCMCPMCLFH },
+            |m: &mut TakeOffSkillCoreScRsp| { &mut m.LCCMCPMCLFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeOffSkillCoreScRsp>(
             "TakeOffSkillCoreScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCCMCPMCLFH)?;
-                },
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAGNGEGKDOL)?;
                 },
-                80 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCCMCPMCLFH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LCCMCPMCLFH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.IAGNGEGKDOL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if let Some(v) = self.LCCMCPMCLFH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LCCMCPMCLFH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if let Some(v) = self.IAGNGEGKDOL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if let Some(v) = self.LCCMCPMCLFH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     }
 
     fn clear(&mut self) {
-        self.LCCMCPMCLFH.clear();
         self.IAGNGEGKDOL.clear();
         self.retcode = 0;
+        self.LCCMCPMCLFH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOffSkillCoreScRsp {
         static instance: TakeOffSkillCoreScRsp = TakeOffSkillCoreScRsp {
-            LCCMCPMCLFH: ::protobuf::MessageField::none(),
             IAGNGEGKDOL: ::protobuf::MessageField::none(),
             retcode: 0,
+            LCCMCPMCLFH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeOffSkillCoreScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bTakeOffSkillCoreScRsp.proto\x1a\x11DMGDLEHEDFB.proto\x1a\x11GHBICG\
-    MEFPL.proto\"\x91\x01\n\x15TakeOffSkillCoreScRsp\x12.\n\x0bLCCMCPMCLFH\
-    \x18\x08\x20\x01(\x0b2\x0c.DMGDLEHEDFBR\x0bLCCMCPMCLFH\x12.\n\x0bIAGNGEG\
-    KDOL\x18\x0b\x20\x01(\x0b2\x0c.GHBICGMEFPLR\x0bIAGNGEGKDOL\x12\x18\n\x07\
-    retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    MEFPL.proto\"\x91\x01\n\x15TakeOffSkillCoreScRsp\x12.\n\x0bIAGNGEGKDOL\
+    \x18\x02\x20\x01(\x0b2\x0c.GHBICGMEFPLR\x0bIAGNGEGKDOL\x12\x18\n\x07retc\
+    ode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bLCCMCPMCLFH\x18\x0b\x20\x01\
+    (\x0b2\x0c.DMGDLEHEDFBR\x0bLCCMCPMCLFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

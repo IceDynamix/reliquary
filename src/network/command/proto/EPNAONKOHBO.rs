@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EPNAONKOHBO {
     // message fields
-    // @@protoc_insertion_point(field:EPNAONKOHBO.KBKOGLCAEKG)
-    pub KBKOGLCAEKG: ::std::string::String,
+    // @@protoc_insertion_point(field:EPNAONKOHBO.ability_name)
+    pub ability_name: ::std::string::String,
     // @@protoc_insertion_point(field:EPNAONKOHBO.count)
     pub count: u32,
     // @@protoc_insertion_point(field:EPNAONKOHBO.total_damage)
@@ -54,9 +54,9 @@ impl EPNAONKOHBO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBKOGLCAEKG",
-            |m: &EPNAONKOHBO| { &m.KBKOGLCAEKG },
-            |m: &mut EPNAONKOHBO| { &mut m.KBKOGLCAEKG },
+            "ability_name",
+            |m: &EPNAONKOHBO| { &m.ability_name },
+            |m: &mut EPNAONKOHBO| { &mut m.ability_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
@@ -87,7 +87,7 @@ impl ::protobuf::Message for EPNAONKOHBO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.KBKOGLCAEKG = is.read_string()?;
+                    self.ability_name = is.read_string()?;
                 },
                 16 => {
                     self.count = is.read_uint32()?;
@@ -107,8 +107,8 @@ impl ::protobuf::Message for EPNAONKOHBO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.KBKOGLCAEKG.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.KBKOGLCAEKG);
+        if !self.ability_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.ability_name);
         }
         if self.count != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.count);
@@ -122,8 +122,8 @@ impl ::protobuf::Message for EPNAONKOHBO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.KBKOGLCAEKG.is_empty() {
-            os.write_string(1, &self.KBKOGLCAEKG)?;
+        if !self.ability_name.is_empty() {
+            os.write_string(1, &self.ability_name)?;
         }
         if self.count != 0 {
             os.write_uint32(2, self.count)?;
@@ -148,7 +148,7 @@ impl ::protobuf::Message for EPNAONKOHBO {
     }
 
     fn clear(&mut self) {
-        self.KBKOGLCAEKG.clear();
+        self.ability_name.clear();
         self.count = 0;
         self.total_damage = 0.;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for EPNAONKOHBO {
 
     fn default_instance() -> &'static EPNAONKOHBO {
         static instance: EPNAONKOHBO = EPNAONKOHBO {
-            KBKOGLCAEKG: ::std::string::String::new(),
+            ability_name: ::std::string::String::new(),
             count: 0,
             total_damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for EPNAONKOHBO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPNAONKOHBO.proto\"h\n\x0bEPNAONKOHBO\x12\x20\n\x0bKBKOGLCAEKG\x18\
-    \x01\x20\x01(\tR\x0bKBKOGLCAEKG\x12\x14\n\x05count\x18\x02\x20\x01(\rR\
+    \n\x11EPNAONKOHBO.proto\"i\n\x0bEPNAONKOHBO\x12!\n\x0cability_name\x18\
+    \x01\x20\x01(\tR\x0babilityName\x12\x14\n\x05count\x18\x02\x20\x01(\rR\
     \x05count\x12!\n\x0ctotal_damage\x18\x03\x20\x01(\x01R\x0btotalDamageb\
     \x06proto3\
 ";

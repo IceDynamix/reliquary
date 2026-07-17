@@ -93,19 +93,19 @@ impl ::protobuf::Message for HKCILGGEEFM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.expedition_info.push(is.read_message()?);
                 },
-                50 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.CAALNNFJIAH)?;
                 },
-                48 => {
+                40 => {
                     self.CAALNNFJIAH.push(is.read_uint32()?);
                 },
-                120 => {
+                72 => {
                     self.total_expedition_count = is.read_uint32()?;
                 },
-                24 => {
+                104 => {
                     self.BJMGDBCHEAN = is.read_int64()?;
                 },
                 tag => {
@@ -124,12 +124,12 @@ impl ::protobuf::Message for HKCILGGEEFM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.CAALNNFJIAH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.CAALNNFJIAH);
         if self.total_expedition_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.total_expedition_count);
+            my_size += ::protobuf::rt::uint32_size(9, self.total_expedition_count);
         }
         if self.BJMGDBCHEAN != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.BJMGDBCHEAN);
+            my_size += ::protobuf::rt::int64_size(13, self.BJMGDBCHEAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for HKCILGGEEFM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.expedition_info {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.CAALNNFJIAH)?;
+        os.write_repeated_packed_uint32(5, &self.CAALNNFJIAH)?;
         if self.total_expedition_count != 0 {
-            os.write_uint32(15, self.total_expedition_count)?;
+            os.write_uint32(9, self.total_expedition_count)?;
         }
         if self.BJMGDBCHEAN != 0 {
-            os.write_int64(3, self.BJMGDBCHEAN)?;
+            os.write_int64(13, self.BJMGDBCHEAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for HKCILGGEEFM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HKCILGGEEFM.proto\x1a\x14ExpeditionInfo.proto\"\xc1\x01\n\x0bHKCIL\
-    GGEEFM\x128\n\x0fexpedition_info\x18\n\x20\x03(\x0b2\x0f.ExpeditionInfoR\
-    \x0eexpeditionInfo\x12\x20\n\x0bCAALNNFJIAH\x18\x06\x20\x03(\rR\x0bCAALN\
-    NFJIAH\x124\n\x16total_expedition_count\x18\x0f\x20\x01(\rR\x14totalExpe\
-    ditionCount\x12\x20\n\x0bBJMGDBCHEAN\x18\x03\x20\x01(\x03R\x0bBJMGDBCHEA\
-    Nb\x06proto3\
+    GGEEFM\x128\n\x0fexpedition_info\x18\x01\x20\x03(\x0b2\x0f.ExpeditionInf\
+    oR\x0eexpeditionInfo\x12\x20\n\x0bCAALNNFJIAH\x18\x05\x20\x03(\rR\x0bCAA\
+    LNNFJIAH\x124\n\x16total_expedition_count\x18\t\x20\x01(\rR\x14totalExpe\
+    ditionCount\x12\x20\n\x0bBJMGDBCHEAN\x18\r\x20\x01(\x03R\x0bBJMGDBCHEANb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

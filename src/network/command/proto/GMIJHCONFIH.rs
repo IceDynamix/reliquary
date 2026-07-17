@@ -72,7 +72,7 @@ impl ::protobuf::Message for GMIJHCONFIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                26 => {
                     self.MAJGMMCOCIG.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GMIJHCONFIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.MAJGMMCOCIG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GMIJHCONFIH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMIJHCONFIH.proto\x1a\x11KOFMGCNIMIN.proto\"=\n\x0bGMIJHCONFIH\x12\
-    .\n\x0bMAJGMMCOCIG\x18\x04\x20\x03(\x0b2\x0c.KOFMGCNIMINR\x0bMAJGMMCOCIG\
+    .\n\x0bMAJGMMCOCIG\x18\x03\x20\x03(\x0b2\x0c.KOFMGCNIMINR\x0bMAJGMMCOCIG\
     b\x06proto3\
 ";
 

@@ -30,12 +30,12 @@ pub struct MHFNFINKJKP {
     // message fields
     // @@protoc_insertion_point(field:MHFNFINKJKP.CHEEOEHDOBF)
     pub CHEEOEHDOBF: u32,
-    // @@protoc_insertion_point(field:MHFNFINKJKP.grid_update_src)
-    pub grid_update_src: ::protobuf::EnumOrUnknown<super::ABBHAALIBAH::ABBHAALIBAH>,
     // @@protoc_insertion_point(field:MHFNFINKJKP.NKIENAICLGN)
     pub NKIENAICLGN: ::protobuf::EnumOrUnknown<super::IDDPBEAMDAO::IDDPBEAMDAO>,
     // @@protoc_insertion_point(field:MHFNFINKJKP.NKJPCMPMGPM)
     pub NKJPCMPMGPM: u32,
+    // @@protoc_insertion_point(field:MHFNFINKJKP.grid_update_src)
+    pub grid_update_src: ::protobuf::EnumOrUnknown<super::ABBHAALIBAH::ABBHAALIBAH>,
     // special fields
     // @@protoc_insertion_point(special_field:MHFNFINKJKP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl MHFNFINKJKP {
             |m: &mut MHFNFINKJKP| { &mut m.CHEEOEHDOBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_update_src",
-            |m: &MHFNFINKJKP| { &m.grid_update_src },
-            |m: &mut MHFNFINKJKP| { &mut m.grid_update_src },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NKIENAICLGN",
             |m: &MHFNFINKJKP| { &m.NKIENAICLGN },
             |m: &mut MHFNFINKJKP| { &mut m.NKIENAICLGN },
@@ -74,6 +69,11 @@ impl MHFNFINKJKP {
             "NKJPCMPMGPM",
             |m: &MHFNFINKJKP| { &m.NKJPCMPMGPM },
             |m: &mut MHFNFINKJKP| { &mut m.NKJPCMPMGPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_update_src",
+            |m: &MHFNFINKJKP| { &m.grid_update_src },
+            |m: &mut MHFNFINKJKP| { &mut m.grid_update_src },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MHFNFINKJKP>(
             "MHFNFINKJKP",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for MHFNFINKJKP {
                 8 => {
                     self.CHEEOEHDOBF = is.read_uint32()?;
                 },
-                32 => {
-                    self.grid_update_src = is.read_enum_or_unknown()?;
-                },
                 16 => {
                     self.NKIENAICLGN = is.read_enum_or_unknown()?;
                 },
                 24 => {
                     self.NKJPCMPMGPM = is.read_uint32()?;
+                },
+                32 => {
+                    self.grid_update_src = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for MHFNFINKJKP {
         if self.CHEEOEHDOBF != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.CHEEOEHDOBF);
         }
-        if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
-            my_size += ::protobuf::rt::int32_size(4, self.grid_update_src.value());
-        }
         if self.NKIENAICLGN != ::protobuf::EnumOrUnknown::new(super::IDDPBEAMDAO::IDDPBEAMDAO::IDDPBEAMDAO_IIOCEDFJPNH) {
             my_size += ::protobuf::rt::int32_size(2, self.NKIENAICLGN.value());
         }
         if self.NKJPCMPMGPM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.NKJPCMPMGPM);
+        }
+        if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
+            my_size += ::protobuf::rt::int32_size(4, self.grid_update_src.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for MHFNFINKJKP {
         if self.CHEEOEHDOBF != 0 {
             os.write_uint32(1, self.CHEEOEHDOBF)?;
         }
-        if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.grid_update_src))?;
-        }
         if self.NKIENAICLGN != ::protobuf::EnumOrUnknown::new(super::IDDPBEAMDAO::IDDPBEAMDAO::IDDPBEAMDAO_IIOCEDFJPNH) {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.NKIENAICLGN))?;
         }
         if self.NKJPCMPMGPM != 0 {
             os.write_uint32(3, self.NKJPCMPMGPM)?;
+        }
+        if self.grid_update_src != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.grid_update_src))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for MHFNFINKJKP {
 
     fn clear(&mut self) {
         self.CHEEOEHDOBF = 0;
-        self.grid_update_src = ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE);
         self.NKIENAICLGN = ::protobuf::EnumOrUnknown::new(super::IDDPBEAMDAO::IDDPBEAMDAO::IDDPBEAMDAO_IIOCEDFJPNH);
         self.NKJPCMPMGPM = 0;
+        self.grid_update_src = ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MHFNFINKJKP {
         static instance: MHFNFINKJKP = MHFNFINKJKP {
             CHEEOEHDOBF: 0,
-            grid_update_src: ::protobuf::EnumOrUnknown::from_i32(0),
             NKIENAICLGN: ::protobuf::EnumOrUnknown::from_i32(0),
             NKJPCMPMGPM: 0,
+            grid_update_src: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for MHFNFINKJKP {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MHFNFINKJKP.proto\x1a\x11ABBHAALIBAH.proto\x1a\x11IDDPBEAMDAO.prot\
     o\"\xb7\x01\n\x0bMHFNFINKJKP\x12\x20\n\x0bCHEEOEHDOBF\x18\x01\x20\x01(\r\
-    R\x0bCHEEOEHDOBF\x124\n\x0fgrid_update_src\x18\x04\x20\x01(\x0e2\x0c.ABB\
-    HAALIBAHR\rgridUpdateSrc\x12.\n\x0bNKIENAICLGN\x18\x02\x20\x01(\x0e2\x0c\
-    .IDDPBEAMDAOR\x0bNKIENAICLGN\x12\x20\n\x0bNKJPCMPMGPM\x18\x03\x20\x01(\r\
-    R\x0bNKJPCMPMGPMb\x06proto3\
+    R\x0bCHEEOEHDOBF\x12.\n\x0bNKIENAICLGN\x18\x02\x20\x01(\x0e2\x0c.IDDPBEA\
+    MDAOR\x0bNKIENAICLGN\x12\x20\n\x0bNKJPCMPMGPM\x18\x03\x20\x01(\rR\x0bNKJ\
+    PCMPMGPM\x124\n\x0fgrid_update_src\x18\x04\x20\x01(\x0e2\x0c.ABBHAALIBAH\
+    R\rgridUpdateSrcb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

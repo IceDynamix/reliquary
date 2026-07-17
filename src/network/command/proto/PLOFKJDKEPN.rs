@@ -79,10 +79,10 @@ impl ::protobuf::Message for PLOFKJDKEPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                58 => {
                     self.quest_list.push(is.read_message()?);
                 },
-                34 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DFBGAOAJLIC)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PLOFKJDKEPN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.quest_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if let Some(v) = self.DFBGAOAJLIC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for PLOFKJDKEPN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLOFKJDKEPN.proto\x1a\x11JHACFFJIPHK.proto\x1a\x11PCONBOGEDFD.prot\
-    o\"j\n\x0bPLOFKJDKEPN\x12+\n\nquest_list\x18\x08\x20\x03(\x0b2\x0c.JHACF\
-    FJIPHKR\tquestList\x12.\n\x0bDFBGAOAJLIC\x18\x04\x20\x01(\x0b2\x0c.PCONB\
+    o\"j\n\x0bPLOFKJDKEPN\x12+\n\nquest_list\x18\x07\x20\x03(\x0b2\x0c.JHACF\
+    FJIPHKR\tquestList\x12.\n\x0bDFBGAOAJLIC\x18\x08\x20\x01(\x0b2\x0c.PCONB\
     OGEDFDR\x0bDFBGAOAJLICb\x06proto3\
 ";
 

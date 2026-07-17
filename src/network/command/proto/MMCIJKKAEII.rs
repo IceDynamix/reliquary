@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MMCIJKKAEII {
     // message fields
-    // @@protoc_insertion_point(field:MMCIJKKAEII.EMIJCKENBKJ)
-    pub EMIJCKENBKJ: ::protobuf::MessageField<super::OFFMCODMKDL::OFFMCODMKDL>,
+    // @@protoc_insertion_point(field:MMCIJKKAEII.room_ext_info)
+    pub room_ext_info: ::protobuf::MessageField<super::OFFMCODMKDL::OFFMCODMKDL>,
     // @@protoc_insertion_point(field:MMCIJKKAEII.DFLEOIGPLNM)
     pub DFLEOIGPLNM: ::std::vec::Vec<super::LMLNNHKJEIP::LMLNNHKJEIP>,
     // special fields
@@ -52,9 +52,9 @@ impl MMCIJKKAEII {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OFFMCODMKDL::OFFMCODMKDL>(
-            "EMIJCKENBKJ",
-            |m: &MMCIJKKAEII| { &m.EMIJCKENBKJ },
-            |m: &mut MMCIJKKAEII| { &mut m.EMIJCKENBKJ },
+            "room_ext_info",
+            |m: &MMCIJKKAEII| { &m.room_ext_info },
+            |m: &mut MMCIJKKAEII| { &mut m.room_ext_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DFLEOIGPLNM",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for MMCIJKKAEII {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.room_ext_info)?;
                 },
-                114 => {
+                122 => {
                     self.DFLEOIGPLNM.push(is.read_message()?);
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MMCIJKKAEII {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+        if let Some(v) = self.room_ext_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MMCIJKKAEII {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+        if let Some(v) = self.room_ext_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for MMCIJKKAEII {
     }
 
     fn clear(&mut self) {
-        self.EMIJCKENBKJ.clear();
+        self.room_ext_info.clear();
         self.DFLEOIGPLNM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MMCIJKKAEII {
         static instance: MMCIJKKAEII = MMCIJKKAEII {
-            EMIJCKENBKJ: ::protobuf::MessageField::none(),
+            room_ext_info: ::protobuf::MessageField::none(),
             DFLEOIGPLNM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for MMCIJKKAEII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMCIJKKAEII.proto\x1a\x11LMLNNHKJEIP.proto\x1a\x11OFFMCODMKDL.prot\
-    o\"m\n\x0bMMCIJKKAEII\x12.\n\x0bEMIJCKENBKJ\x18\x05\x20\x01(\x0b2\x0c.OF\
-    FMCODMKDLR\x0bEMIJCKENBKJ\x12.\n\x0bDFLEOIGPLNM\x18\x0e\x20\x03(\x0b2\
+    o\"o\n\x0bMMCIJKKAEII\x120\n\rroom_ext_info\x18\x05\x20\x01(\x0b2\x0c.OF\
+    FMCODMKDLR\x0broomExtInfo\x12.\n\x0bDFLEOIGPLNM\x18\x0f\x20\x03(\x0b2\
     \x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNMb\x06proto3\
 ";
 

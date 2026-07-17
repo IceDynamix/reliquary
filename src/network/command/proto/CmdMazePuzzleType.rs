@@ -29,54 +29,54 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMazePuzzleType {
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_NLCDGIPGFDJ)
     GPNGEMMFFAK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_BDFOHFOJBKK)
-    GPNGEMMFFAK_BDFOHFOJBKK = 9093,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_PMBMKFMNPHM)
-    GPNGEMMFFAK_PMBMKFMNPHM = 9068,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_LDPOIFPCEHB)
-    GPNGEMMFFAK_LDPOIFPCEHB = 9053,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_JKEBLDNOJGO)
-    GPNGEMMFFAK_JKEBLDNOJGO = 9057,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_JCPGIMAGBHN)
-    GPNGEMMFFAK_JCPGIMAGBHN = 9094,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_EEICODKONDH)
-    GPNGEMMFFAK_EEICODKONDH = 9059,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KNLOKAAIGOB)
-    GPNGEMMFFAK_KNLOKAAIGOB = 9055,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_MDJODBLCMNM)
-    GPNGEMMFFAK_MDJODBLCMNM = 9090,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_DIELFHOLCGG)
-    GPNGEMMFFAK_DIELFHOLCGG = 9082,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KGELLCCEJAK)
-    GPNGEMMFFAK_KGELLCCEJAK = 9092,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_IPNFOOJJGMC)
-    GPNGEMMFFAK_IPNFOOJJGMC = 9056,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_AJFNKOGOODM)
-    GPNGEMMFFAK_AJFNKOGOODM = 9091,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_CCOKCJODLJI)
-    GPNGEMMFFAK_CCOKCJODLJI = 9066,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_NBOOGOBHMOE)
-    GPNGEMMFFAK_NBOOGOBHMOE = 9070,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_BDKPNHPGCOI)
-    GPNGEMMFFAK_BDKPNHPGCOI = 9095,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KGMEEFCMPCK)
-    GPNGEMMFFAK_KGMEEFCMPCK = 9071,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_LCKLCFFIFCC)
-    GPNGEMMFFAK_LCKLCFFIFCC = 9062,
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_EIFJIFCFLBJ)
-    GPNGEMMFFAK_EIFJIFCFLBJ = 9079,
+    GPNGEMMFFAK_EIFJIFCFLBJ = 9071,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_LCKLCFFIFCC)
+    GPNGEMMFFAK_LCKLCFFIFCC = 9065,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_NBOOGOBHMOE)
+    GPNGEMMFFAK_NBOOGOBHMOE = 9085,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KGELLCCEJAK)
+    GPNGEMMFFAK_KGELLCCEJAK = 9073,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_AJFNKOGOODM)
+    GPNGEMMFFAK_AJFNKOGOODM = 9068,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KNLOKAAIGOB)
+    GPNGEMMFFAK_KNLOKAAIGOB = 9083,
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KGJKELDNDDD)
-    GPNGEMMFFAK_KGJKELDNDDD = 9073,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_FCHACNCAFDN)
-    GPNGEMMFFAK_FCHACNCAFDN = 9077,
+    GPNGEMMFFAK_KGJKELDNDDD = 9094,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_JCPGIMAGBHN)
+    GPNGEMMFFAK_JCPGIMAGBHN = 9069,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_PMBMKFMNPHM)
+    GPNGEMMFFAK_PMBMKFMNPHM = 9093,
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_IKIEALJFGLL)
-    GPNGEMMFFAK_IKIEALJFGLL = 9069,
-    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_PCANBGGALEK)
-    GPNGEMMFFAK_PCANBGGALEK = 9088,
+    GPNGEMMFFAK_IKIEALJFGLL = 9053,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_IPNFOOJJGMC)
+    GPNGEMMFFAK_IPNFOOJJGMC = 9063,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_LDPOIFPCEHB)
+    GPNGEMMFFAK_LDPOIFPCEHB = 9052,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_FCHACNCAFDN)
+    GPNGEMMFFAK_FCHACNCAFDN = 9098,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_BDKPNHPGCOI)
+    GPNGEMMFFAK_BDKPNHPGCOI = 9057,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_CCOKCJODLJI)
+    GPNGEMMFFAK_CCOKCJODLJI = 9058,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_BDFOHFOJBKK)
+    GPNGEMMFFAK_BDFOHFOJBKK = 9074,
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_LMGELDDBLDH)
-    GPNGEMMFFAK_LMGELDDBLDH = 9084,
+    GPNGEMMFFAK_LMGELDDBLDH = 9070,
     // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_OFNGGJKPMIJ)
-    GPNGEMMFFAK_OFNGGJKPMIJ = 9058,
+    GPNGEMMFFAK_OFNGGJKPMIJ = 9056,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_MDJODBLCMNM)
+    GPNGEMMFFAK_MDJODBLCMNM = 9079,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_KGMEEFCMPCK)
+    GPNGEMMFFAK_KGMEEFCMPCK = 9067,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_PCANBGGALEK)
+    GPNGEMMFFAK_PCANBGGALEK = 9064,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_JKEBLDNOJGO)
+    GPNGEMMFFAK_JKEBLDNOJGO = 9087,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_DIELFHOLCGG)
+    GPNGEMMFFAK_DIELFHOLCGG = 9059,
+    // @@protoc_insertion_point(enum_value:CmdMazePuzzleType.GPNGEMMFFAK_EEICODKONDH)
+    GPNGEMMFFAK_EEICODKONDH = 9060,
 }
 
 impl ::protobuf::Enum for CmdMazePuzzleType {
@@ -89,30 +89,30 @@ impl ::protobuf::Enum for CmdMazePuzzleType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMazePuzzleType> {
         match value {
             0 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NLCDGIPGFDJ),
-            9093 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK),
-            9068 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM),
-            9053 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB),
-            9057 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO),
-            9094 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN),
-            9059 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH),
-            9055 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB),
-            9090 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM),
-            9082 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG),
-            9092 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK),
-            9056 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC),
-            9091 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM),
-            9066 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI),
-            9070 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE),
-            9095 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI),
-            9071 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK),
-            9062 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC),
-            9079 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ),
-            9073 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD),
-            9077 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN),
-            9069 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL),
-            9088 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK),
-            9084 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH),
-            9058 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ),
+            9071 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ),
+            9065 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC),
+            9085 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE),
+            9073 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK),
+            9068 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM),
+            9083 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB),
+            9094 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD),
+            9069 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN),
+            9093 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM),
+            9053 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL),
+            9063 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC),
+            9052 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB),
+            9098 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN),
+            9057 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI),
+            9058 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI),
+            9074 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK),
+            9070 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH),
+            9056 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ),
+            9079 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM),
+            9067 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK),
+            9064 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK),
+            9087 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO),
+            9059 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG),
+            9060 => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH),
             _ => ::std::option::Option::None
         }
     }
@@ -120,60 +120,60 @@ impl ::protobuf::Enum for CmdMazePuzzleType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMazePuzzleType> {
         match str {
             "GPNGEMMFFAK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NLCDGIPGFDJ),
-            "GPNGEMMFFAK_BDFOHFOJBKK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK),
-            "GPNGEMMFFAK_PMBMKFMNPHM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM),
-            "GPNGEMMFFAK_LDPOIFPCEHB" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB),
-            "GPNGEMMFFAK_JKEBLDNOJGO" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO),
-            "GPNGEMMFFAK_JCPGIMAGBHN" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN),
-            "GPNGEMMFFAK_EEICODKONDH" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH),
-            "GPNGEMMFFAK_KNLOKAAIGOB" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB),
-            "GPNGEMMFFAK_MDJODBLCMNM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM),
-            "GPNGEMMFFAK_DIELFHOLCGG" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG),
-            "GPNGEMMFFAK_KGELLCCEJAK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK),
-            "GPNGEMMFFAK_IPNFOOJJGMC" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC),
-            "GPNGEMMFFAK_AJFNKOGOODM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM),
-            "GPNGEMMFFAK_CCOKCJODLJI" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI),
-            "GPNGEMMFFAK_NBOOGOBHMOE" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE),
-            "GPNGEMMFFAK_BDKPNHPGCOI" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI),
-            "GPNGEMMFFAK_KGMEEFCMPCK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK),
-            "GPNGEMMFFAK_LCKLCFFIFCC" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC),
             "GPNGEMMFFAK_EIFJIFCFLBJ" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ),
+            "GPNGEMMFFAK_LCKLCFFIFCC" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC),
+            "GPNGEMMFFAK_NBOOGOBHMOE" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE),
+            "GPNGEMMFFAK_KGELLCCEJAK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK),
+            "GPNGEMMFFAK_AJFNKOGOODM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM),
+            "GPNGEMMFFAK_KNLOKAAIGOB" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB),
             "GPNGEMMFFAK_KGJKELDNDDD" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD),
-            "GPNGEMMFFAK_FCHACNCAFDN" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN),
+            "GPNGEMMFFAK_JCPGIMAGBHN" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN),
+            "GPNGEMMFFAK_PMBMKFMNPHM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM),
             "GPNGEMMFFAK_IKIEALJFGLL" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL),
-            "GPNGEMMFFAK_PCANBGGALEK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK),
+            "GPNGEMMFFAK_IPNFOOJJGMC" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC),
+            "GPNGEMMFFAK_LDPOIFPCEHB" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB),
+            "GPNGEMMFFAK_FCHACNCAFDN" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN),
+            "GPNGEMMFFAK_BDKPNHPGCOI" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI),
+            "GPNGEMMFFAK_CCOKCJODLJI" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI),
+            "GPNGEMMFFAK_BDFOHFOJBKK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK),
             "GPNGEMMFFAK_LMGELDDBLDH" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH),
             "GPNGEMMFFAK_OFNGGJKPMIJ" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ),
+            "GPNGEMMFFAK_MDJODBLCMNM" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM),
+            "GPNGEMMFFAK_KGMEEFCMPCK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK),
+            "GPNGEMMFFAK_PCANBGGALEK" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK),
+            "GPNGEMMFFAK_JKEBLDNOJGO" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO),
+            "GPNGEMMFFAK_DIELFHOLCGG" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG),
+            "GPNGEMMFFAK_EEICODKONDH" => ::std::option::Option::Some(CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMazePuzzleType] = &[
         CmdMazePuzzleType::GPNGEMMFFAK_NLCDGIPGFDJ,
-        CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK,
-        CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM,
-        CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB,
-        CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO,
-        CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN,
-        CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH,
-        CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB,
-        CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM,
-        CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG,
-        CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK,
-        CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC,
-        CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM,
-        CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI,
-        CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE,
-        CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI,
-        CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK,
-        CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC,
         CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ,
+        CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC,
+        CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE,
+        CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK,
+        CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM,
+        CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB,
         CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD,
-        CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN,
+        CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN,
+        CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM,
         CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL,
-        CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK,
+        CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC,
+        CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB,
+        CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN,
+        CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI,
+        CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI,
+        CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK,
         CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH,
         CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ,
+        CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM,
+        CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK,
+        CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK,
+        CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO,
+        CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG,
+        CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH,
     ];
 }
 
@@ -186,30 +186,30 @@ impl ::protobuf::EnumFull for CmdMazePuzzleType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMazePuzzleType::GPNGEMMFFAK_NLCDGIPGFDJ => 0,
-            CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK => 1,
-            CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM => 2,
-            CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB => 3,
-            CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO => 4,
-            CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN => 5,
-            CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH => 6,
-            CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB => 7,
-            CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM => 8,
-            CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG => 9,
-            CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK => 10,
+            CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ => 1,
+            CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC => 2,
+            CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE => 3,
+            CmdMazePuzzleType::GPNGEMMFFAK_KGELLCCEJAK => 4,
+            CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM => 5,
+            CmdMazePuzzleType::GPNGEMMFFAK_KNLOKAAIGOB => 6,
+            CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD => 7,
+            CmdMazePuzzleType::GPNGEMMFFAK_JCPGIMAGBHN => 8,
+            CmdMazePuzzleType::GPNGEMMFFAK_PMBMKFMNPHM => 9,
+            CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL => 10,
             CmdMazePuzzleType::GPNGEMMFFAK_IPNFOOJJGMC => 11,
-            CmdMazePuzzleType::GPNGEMMFFAK_AJFNKOGOODM => 12,
-            CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI => 13,
-            CmdMazePuzzleType::GPNGEMMFFAK_NBOOGOBHMOE => 14,
-            CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI => 15,
-            CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK => 16,
-            CmdMazePuzzleType::GPNGEMMFFAK_LCKLCFFIFCC => 17,
-            CmdMazePuzzleType::GPNGEMMFFAK_EIFJIFCFLBJ => 18,
-            CmdMazePuzzleType::GPNGEMMFFAK_KGJKELDNDDD => 19,
-            CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN => 20,
-            CmdMazePuzzleType::GPNGEMMFFAK_IKIEALJFGLL => 21,
-            CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK => 22,
-            CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH => 23,
-            CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ => 24,
+            CmdMazePuzzleType::GPNGEMMFFAK_LDPOIFPCEHB => 12,
+            CmdMazePuzzleType::GPNGEMMFFAK_FCHACNCAFDN => 13,
+            CmdMazePuzzleType::GPNGEMMFFAK_BDKPNHPGCOI => 14,
+            CmdMazePuzzleType::GPNGEMMFFAK_CCOKCJODLJI => 15,
+            CmdMazePuzzleType::GPNGEMMFFAK_BDFOHFOJBKK => 16,
+            CmdMazePuzzleType::GPNGEMMFFAK_LMGELDDBLDH => 17,
+            CmdMazePuzzleType::GPNGEMMFFAK_OFNGGJKPMIJ => 18,
+            CmdMazePuzzleType::GPNGEMMFFAK_MDJODBLCMNM => 19,
+            CmdMazePuzzleType::GPNGEMMFFAK_KGMEEFCMPCK => 20,
+            CmdMazePuzzleType::GPNGEMMFFAK_PCANBGGALEK => 21,
+            CmdMazePuzzleType::GPNGEMMFFAK_JKEBLDNOJGO => 22,
+            CmdMazePuzzleType::GPNGEMMFFAK_DIELFHOLCGG => 23,
+            CmdMazePuzzleType::GPNGEMMFFAK_EEICODKONDH => 24,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -229,22 +229,22 @@ impl CmdMazePuzzleType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdMazePuzzleType.proto*\x80\x06\n\x11CmdMazePuzzleType\x12\x1b\n\
-    \x17GPNGEMMFFAK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GPNGEMMFFAK_BDFOHFOJBKK\
-    \x10\x85G\x12\x1c\n\x17GPNGEMMFFAK_PMBMKFMNPHM\x10\xecF\x12\x1c\n\x17GPN\
-    GEMMFFAK_LDPOIFPCEHB\x10\xddF\x12\x1c\n\x17GPNGEMMFFAK_JKEBLDNOJGO\x10\
-    \xe1F\x12\x1c\n\x17GPNGEMMFFAK_JCPGIMAGBHN\x10\x86G\x12\x1c\n\x17GPNGEMM\
-    FFAK_EEICODKONDH\x10\xe3F\x12\x1c\n\x17GPNGEMMFFAK_KNLOKAAIGOB\x10\xdfF\
-    \x12\x1c\n\x17GPNGEMMFFAK_MDJODBLCMNM\x10\x82G\x12\x1c\n\x17GPNGEMMFFAK_\
-    DIELFHOLCGG\x10\xfaF\x12\x1c\n\x17GPNGEMMFFAK_KGELLCCEJAK\x10\x84G\x12\
-    \x1c\n\x17GPNGEMMFFAK_IPNFOOJJGMC\x10\xe0F\x12\x1c\n\x17GPNGEMMFFAK_AJFN\
-    KOGOODM\x10\x83G\x12\x1c\n\x17GPNGEMMFFAK_CCOKCJODLJI\x10\xeaF\x12\x1c\n\
-    \x17GPNGEMMFFAK_NBOOGOBHMOE\x10\xeeF\x12\x1c\n\x17GPNGEMMFFAK_BDKPNHPGCO\
-    I\x10\x87G\x12\x1c\n\x17GPNGEMMFFAK_KGMEEFCMPCK\x10\xefF\x12\x1c\n\x17GP\
-    NGEMMFFAK_LCKLCFFIFCC\x10\xe6F\x12\x1c\n\x17GPNGEMMFFAK_EIFJIFCFLBJ\x10\
-    \xf7F\x12\x1c\n\x17GPNGEMMFFAK_KGJKELDNDDD\x10\xf1F\x12\x1c\n\x17GPNGEMM\
-    FFAK_FCHACNCAFDN\x10\xf5F\x12\x1c\n\x17GPNGEMMFFAK_IKIEALJFGLL\x10\xedF\
-    \x12\x1c\n\x17GPNGEMMFFAK_PCANBGGALEK\x10\x80G\x12\x1c\n\x17GPNGEMMFFAK_\
-    LMGELDDBLDH\x10\xfcF\x12\x1c\n\x17GPNGEMMFFAK_OFNGGJKPMIJ\x10\xe2Fb\x06p\
+    \x17GPNGEMMFFAK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GPNGEMMFFAK_EIFJIFCFLBJ\
+    \x10\xefF\x12\x1c\n\x17GPNGEMMFFAK_LCKLCFFIFCC\x10\xe9F\x12\x1c\n\x17GPN\
+    GEMMFFAK_NBOOGOBHMOE\x10\xfdF\x12\x1c\n\x17GPNGEMMFFAK_KGELLCCEJAK\x10\
+    \xf1F\x12\x1c\n\x17GPNGEMMFFAK_AJFNKOGOODM\x10\xecF\x12\x1c\n\x17GPNGEMM\
+    FFAK_KNLOKAAIGOB\x10\xfbF\x12\x1c\n\x17GPNGEMMFFAK_KGJKELDNDDD\x10\x86G\
+    \x12\x1c\n\x17GPNGEMMFFAK_JCPGIMAGBHN\x10\xedF\x12\x1c\n\x17GPNGEMMFFAK_\
+    PMBMKFMNPHM\x10\x85G\x12\x1c\n\x17GPNGEMMFFAK_IKIEALJFGLL\x10\xddF\x12\
+    \x1c\n\x17GPNGEMMFFAK_IPNFOOJJGMC\x10\xe7F\x12\x1c\n\x17GPNGEMMFFAK_LDPO\
+    IFPCEHB\x10\xdcF\x12\x1c\n\x17GPNGEMMFFAK_FCHACNCAFDN\x10\x8aG\x12\x1c\n\
+    \x17GPNGEMMFFAK_BDKPNHPGCOI\x10\xe1F\x12\x1c\n\x17GPNGEMMFFAK_CCOKCJODLJ\
+    I\x10\xe2F\x12\x1c\n\x17GPNGEMMFFAK_BDFOHFOJBKK\x10\xf2F\x12\x1c\n\x17GP\
+    NGEMMFFAK_LMGELDDBLDH\x10\xeeF\x12\x1c\n\x17GPNGEMMFFAK_OFNGGJKPMIJ\x10\
+    \xe0F\x12\x1c\n\x17GPNGEMMFFAK_MDJODBLCMNM\x10\xf7F\x12\x1c\n\x17GPNGEMM\
+    FFAK_KGMEEFCMPCK\x10\xebF\x12\x1c\n\x17GPNGEMMFFAK_PCANBGGALEK\x10\xe8F\
+    \x12\x1c\n\x17GPNGEMMFFAK_JKEBLDNOJGO\x10\xffF\x12\x1c\n\x17GPNGEMMFFAK_\
+    DIELFHOLCGG\x10\xe3F\x12\x1c\n\x17GPNGEMMFFAK_EEICODKONDH\x10\xe4Fb\x06p\
     roto3\
 ";
 

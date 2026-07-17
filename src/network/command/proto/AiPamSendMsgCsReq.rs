@@ -28,16 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AiPamSendMsgCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.message_datas)
-    pub message_datas: ::protobuf::MessageField<super::MessageChatData::MessageChatData>,
-    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.NJFMDJDMDMA)
-    pub NJFMDJDMDMA: ::std::string::String,
-    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.content)
+    pub content: ::protobuf::MessageField<super::MessageChatData::MessageChatData>,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.GFIJJLNOOOM)
     pub GFIJJLNOOOM: bool,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.CLDBFBNOLNP)
     pub CLDBFBNOLNP: bool,
+    // @@protoc_insertion_point(field:AiPamSendMsgCsReq.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:AiPamSendMsgCsReq.LOODCBCFNMJ)
     pub LOODCBCFNMJ: bool,
     // special fields
@@ -57,22 +55,12 @@ impl AiPamSendMsgCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MessageChatData::MessageChatData>(
-            "message_datas",
-            |m: &AiPamSendMsgCsReq| { &m.message_datas },
-            |m: &mut AiPamSendMsgCsReq| { &mut m.message_datas },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJFMDJDMDMA",
-            |m: &AiPamSendMsgCsReq| { &m.NJFMDJDMDMA },
-            |m: &mut AiPamSendMsgCsReq| { &mut m.NJFMDJDMDMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &AiPamSendMsgCsReq| { &m.BDPIMPJOJBK },
-            |m: &mut AiPamSendMsgCsReq| { &mut m.BDPIMPJOJBK },
+            "content",
+            |m: &AiPamSendMsgCsReq| { &m.content },
+            |m: &mut AiPamSendMsgCsReq| { &mut m.content },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GFIJJLNOOOM",
@@ -83,6 +71,11 @@ impl AiPamSendMsgCsReq {
             "CLDBFBNOLNP",
             |m: &AiPamSendMsgCsReq| { &m.CLDBFBNOLNP },
             |m: &mut AiPamSendMsgCsReq| { &mut m.CLDBFBNOLNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role",
+            |m: &AiPamSendMsgCsReq| { &m.role },
+            |m: &mut AiPamSendMsgCsReq| { &mut m.role },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LOODCBCFNMJ",
@@ -107,22 +100,19 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.message_datas)?;
-                },
-                26 => {
-                    self.NJFMDJDMDMA = is.read_string()?;
-                },
-                112 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.GFIJJLNOOOM = is.read_bool()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.content)?;
                 },
                 32 => {
+                    self.GFIJJLNOOOM = is.read_bool()?;
+                },
+                48 => {
                     self.CLDBFBNOLNP = is.read_bool()?;
                 },
-                96 => {
+                64 => {
+                    self.role = is.read_enum_or_unknown()?;
+                },
+                72 => {
                     self.LOODCBCFNMJ = is.read_bool()?;
                 },
                 tag => {
@@ -137,21 +127,18 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.message_datas.as_ref() {
+        if let Some(v) = self.content.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if !self.NJFMDJDMDMA.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.NJFMDJDMDMA);
-        }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(14, self.BDPIMPJOJBK.value());
         }
         if self.GFIJJLNOOOM != false {
             my_size += 1 + 1;
         }
         if self.CLDBFBNOLNP != false {
             my_size += 1 + 1;
+        }
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(8, self.role.value());
         }
         if self.LOODCBCFNMJ != false {
             my_size += 1 + 1;
@@ -162,23 +149,20 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.message_datas.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if !self.NJFMDJDMDMA.is_empty() {
-            os.write_string(3, &self.NJFMDJDMDMA)?;
-        }
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        if let Some(v) = self.content.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.GFIJJLNOOOM != false {
-            os.write_bool(1, self.GFIJJLNOOOM)?;
+            os.write_bool(4, self.GFIJJLNOOOM)?;
         }
         if self.CLDBFBNOLNP != false {
-            os.write_bool(4, self.CLDBFBNOLNP)?;
+            os.write_bool(6, self.CLDBFBNOLNP)?;
+        }
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.role))?;
         }
         if self.LOODCBCFNMJ != false {
-            os.write_bool(12, self.LOODCBCFNMJ)?;
+            os.write_bool(9, self.LOODCBCFNMJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +181,20 @@ impl ::protobuf::Message for AiPamSendMsgCsReq {
     }
 
     fn clear(&mut self) {
-        self.message_datas.clear();
-        self.NJFMDJDMDMA.clear();
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.content.clear();
         self.GFIJJLNOOOM = false;
         self.CLDBFBNOLNP = false;
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.LOODCBCFNMJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamSendMsgCsReq {
         static instance: AiPamSendMsgCsReq = AiPamSendMsgCsReq {
-            message_datas: ::protobuf::MessageField::none(),
-            NJFMDJDMDMA: ::std::string::String::new(),
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            content: ::protobuf::MessageField::none(),
             GFIJJLNOOOM: false,
             CLDBFBNOLNP: false,
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
             LOODCBCFNMJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,13 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for AiPamSendMsgCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AiPamSendMsgCsReq.proto\x1a\x11FKNKNLGMACL.proto\x1a\x15MessageCha\
-    tData.proto\"\x82\x02\n\x11AiPamSendMsgCsReq\x125\n\rmessage_datas\x18\
-    \x0f\x20\x01(\x0b2\x10.MessageChatDataR\x0cmessageDatas\x12\x20\n\x0bNJF\
-    MDJDMDMA\x18\x03\x20\x01(\tR\x0bNJFMDJDMDMA\x12.\n\x0bBDPIMPJOJBK\x18\
-    \x0e\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bGFIJJLNO\
-    OOM\x18\x01\x20\x01(\x08R\x0bGFIJJLNOOOM\x12\x20\n\x0bCLDBFBNOLNP\x18\
-    \x04\x20\x01(\x08R\x0bCLDBFBNOLNP\x12\x20\n\x0bLOODCBCFNMJ\x18\x0c\x20\
-    \x01(\x08R\x0bLOODCBCFNMJb\x06proto3\
+    tData.proto\"\xc7\x01\n\x11AiPamSendMsgCsReq\x12*\n\x07content\x18\x01\
+    \x20\x01(\x0b2\x10.MessageChatDataR\x07content\x12\x20\n\x0bGFIJJLNOOOM\
+    \x18\x04\x20\x01(\x08R\x0bGFIJJLNOOOM\x12\x20\n\x0bCLDBFBNOLNP\x18\x06\
+    \x20\x01(\x08R\x0bCLDBFBNOLNP\x12\x20\n\x04role\x18\x08\x20\x01(\x0e2\
+    \x0c.FKNKNLGMACLR\x04role\x12\x20\n\x0bLOODCBCFNMJ\x18\t\x20\x01(\x08R\
+    \x0bLOODCBCFNMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

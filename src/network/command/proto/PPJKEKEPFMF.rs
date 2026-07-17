@@ -79,7 +79,7 @@ impl ::protobuf::Message for PPJKEKEPFMF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 32 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PPJKEKEPFMF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.event_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for PPJKEKEPFMF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.event_id != 0 {
             os.write_uint32(4, self.event_id)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for PPJKEKEPFMF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PPJKEKEPFMF.proto\"B\n\x0bPPJKEKEPFMF\x12\x18\n\x07retcode\x18\r\
+    \n\x11PPJKEKEPFMF.proto\"B\n\x0bPPJKEKEPFMF\x12\x18\n\x07retcode\x18\x02\
     \x20\x01(\rR\x07retcode\x12\x19\n\x08event_id\x18\x04\x20\x01(\rR\x07eve\
     ntIdb\x06proto3\
 ";

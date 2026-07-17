@@ -30,14 +30,14 @@ pub struct DIFGGDIHDEG {
     // message fields
     // @@protoc_insertion_point(field:DIFGGDIHDEG.MPOEFPFPEND)
     pub MPOEFPFPEND: ::protobuf::MessageField<super::OOLJJHMLHBH::OOLJJHMLHBH>,
-    // @@protoc_insertion_point(field:DIFGGDIHDEG.name)
-    pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:DIFGGDIHDEG.time)
-    pub time: i64,
-    // @@protoc_insertion_point(field:DIFGGDIHDEG.NPHAJEKCBKF)
-    pub NPHAJEKCBKF: u32,
     // @@protoc_insertion_point(field:DIFGGDIHDEG.BHNFGJOLLLB)
     pub BHNFGJOLLLB: i64,
+    // @@protoc_insertion_point(field:DIFGGDIHDEG.time)
+    pub time: i64,
+    // @@protoc_insertion_point(field:DIFGGDIHDEG.name)
+    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:DIFGGDIHDEG.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DIFGGDIHDEG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,9 @@ impl DIFGGDIHDEG {
             |m: &mut DIFGGDIHDEG| { &mut m.MPOEFPFPEND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &DIFGGDIHDEG| { &m.name },
-            |m: &mut DIFGGDIHDEG| { &mut m.name },
+            "BHNFGJOLLLB",
+            |m: &DIFGGDIHDEG| { &m.BHNFGJOLLLB },
+            |m: &mut DIFGGDIHDEG| { &mut m.BHNFGJOLLLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
@@ -73,14 +73,14 @@ impl DIFGGDIHDEG {
             |m: &mut DIFGGDIHDEG| { &mut m.time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &DIFGGDIHDEG| { &m.name },
+            |m: &mut DIFGGDIHDEG| { &mut m.name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPHAJEKCBKF",
             |m: &DIFGGDIHDEG| { &m.NPHAJEKCBKF },
             |m: &mut DIFGGDIHDEG| { &mut m.NPHAJEKCBKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHNFGJOLLLB",
-            |m: &DIFGGDIHDEG| { &m.BHNFGJOLLLB },
-            |m: &mut DIFGGDIHDEG| { &mut m.BHNFGJOLLLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DIFGGDIHDEG>(
             "DIFGGDIHDEG",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DIFGGDIHDEG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MPOEFPFPEND)?;
                 },
-                10 => {
-                    self.name = is.read_string()?;
-                },
-                72 => {
-                    self.time = is.read_int64()?;
+                56 => {
+                    self.BHNFGJOLLLB = is.read_int64()?;
                 },
                 88 => {
-                    self.NPHAJEKCBKF = is.read_uint32()?;
+                    self.time = is.read_int64()?;
+                },
+                106 => {
+                    self.name = is.read_string()?;
                 },
                 120 => {
-                    self.BHNFGJOLLLB = is.read_int64()?;
+                    self.NPHAJEKCBKF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,17 +131,17 @@ impl ::protobuf::Message for DIFGGDIHDEG {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.name);
+        if self.BHNFGJOLLLB != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.BHNFGJOLLLB);
         }
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.time);
+            my_size += ::protobuf::rt::int64_size(11, self.time);
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(13, &self.name);
         }
         if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NPHAJEKCBKF);
-        }
-        if self.BHNFGJOLLLB != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.BHNFGJOLLLB);
+            my_size += ::protobuf::rt::uint32_size(15, self.NPHAJEKCBKF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for DIFGGDIHDEG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MPOEFPFPEND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if !self.name.is_empty() {
-            os.write_string(1, &self.name)?;
-        }
-        if self.time != 0 {
-            os.write_int64(9, self.time)?;
-        }
-        if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(11, self.NPHAJEKCBKF)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.BHNFGJOLLLB != 0 {
-            os.write_int64(15, self.BHNFGJOLLLB)?;
+            os.write_int64(7, self.BHNFGJOLLLB)?;
+        }
+        if self.time != 0 {
+            os.write_int64(11, self.time)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(13, &self.name)?;
+        }
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(15, self.NPHAJEKCBKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for DIFGGDIHDEG {
 
     fn clear(&mut self) {
         self.MPOEFPFPEND.clear();
-        self.name.clear();
-        self.time = 0;
-        self.NPHAJEKCBKF = 0;
         self.BHNFGJOLLLB = 0;
+        self.time = 0;
+        self.name.clear();
+        self.NPHAJEKCBKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DIFGGDIHDEG {
         static instance: DIFGGDIHDEG = DIFGGDIHDEG {
             MPOEFPFPEND: ::protobuf::MessageField::none(),
-            name: ::std::string::String::new(),
-            time: 0,
-            NPHAJEKCBKF: 0,
             BHNFGJOLLLB: 0,
+            time: 0,
+            name: ::std::string::String::new(),
+            NPHAJEKCBKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for DIFGGDIHDEG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DIFGGDIHDEG.proto\x1a\x11OOLJJHMLHBH.proto\"\xa9\x01\n\x0bDIFGGDIH\
-    DEG\x12.\n\x0bMPOEFPFPEND\x18\r\x20\x01(\x0b2\x0c.OOLJJHMLHBHR\x0bMPOEFP\
-    FPEND\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04name\x12\x12\n\x04time\
-    \x18\t\x20\x01(\x03R\x04time\x12\x20\n\x0bNPHAJEKCBKF\x18\x0b\x20\x01(\r\
-    R\x0bNPHAJEKCBKF\x12\x20\n\x0bBHNFGJOLLLB\x18\x0f\x20\x01(\x03R\x0bBHNFG\
-    JOLLLBb\x06proto3\
+    DEG\x12.\n\x0bMPOEFPFPEND\x18\x06\x20\x01(\x0b2\x0c.OOLJJHMLHBHR\x0bMPOE\
+    FPFPEND\x12\x20\n\x0bBHNFGJOLLLB\x18\x07\x20\x01(\x03R\x0bBHNFGJOLLLB\
+    \x12\x12\n\x04time\x18\x0b\x20\x01(\x03R\x04time\x12\x12\n\x04name\x18\r\
+    \x20\x01(\tR\x04name\x12\x20\n\x0bNPHAJEKCBKF\x18\x0f\x20\x01(\rR\x0bNPH\
+    AJEKCBKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

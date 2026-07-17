@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PCGMJHKDCOG {
     // message fields
+    // @@protoc_insertion_point(field:PCGMJHKDCOG.IHJJKABIEPC)
+    pub IHJJKABIEPC: ::std::vec::Vec<super::KVP::KVP>,
     // @@protoc_insertion_point(field:PCGMJHKDCOG.KIDBGNPHGBI)
     pub KIDBGNPHGBI: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
-    // @@protoc_insertion_point(field:PCGMJHKDCOG.IHJJKABIEPC)
-    pub IHJJKABIEPC: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
-    // @@protoc_insertion_point(field:PCGMJHKDCOG.grid_fight_equipment_list)
-    pub grid_fight_equipment_list: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
     // @@protoc_insertion_point(field:PCGMJHKDCOG.OILPEBPLDBG)
     pub OILPEBPLDBG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PCGMJHKDCOG.grid_fight_equipment_list)
+    pub grid_fight_equipment_list: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
     // special fields
     // @@protoc_insertion_point(special_field:PCGMJHKDCOG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl PCGMJHKDCOG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KIDBGNPHGBI",
-            |m: &PCGMJHKDCOG| { &m.KIDBGNPHGBI },
-            |m: &mut PCGMJHKDCOG| { &mut m.KIDBGNPHGBI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHJJKABIEPC",
             |m: &PCGMJHKDCOG| { &m.IHJJKABIEPC },
             |m: &mut PCGMJHKDCOG| { &mut m.IHJJKABIEPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_equipment_list",
-            |m: &PCGMJHKDCOG| { &m.grid_fight_equipment_list },
-            |m: &mut PCGMJHKDCOG| { &mut m.grid_fight_equipment_list },
+            "KIDBGNPHGBI",
+            |m: &PCGMJHKDCOG| { &m.KIDBGNPHGBI },
+            |m: &mut PCGMJHKDCOG| { &mut m.KIDBGNPHGBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OILPEBPLDBG",
             |m: &PCGMJHKDCOG| { &m.OILPEBPLDBG },
             |m: &mut PCGMJHKDCOG| { &mut m.OILPEBPLDBG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_equipment_list",
+            |m: &PCGMJHKDCOG| { &m.grid_fight_equipment_list },
+            |m: &mut PCGMJHKDCOG| { &mut m.grid_fight_equipment_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PCGMJHKDCOG>(
             "PCGMJHKDCOG",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.KIDBGNPHGBI.push(is.read_message()?);
-                },
-                66 => {
+                10 => {
                     self.IHJJKABIEPC.push(is.read_message()?);
                 },
-                42 => {
-                    self.grid_fight_equipment_list.push(is.read_message()?);
+                50 => {
+                    self.KIDBGNPHGBI.push(is.read_message()?);
                 },
-                58 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.OILPEBPLDBG)?;
                 },
-                56 => {
+                80 => {
                     self.OILPEBPLDBG.push(is.read_uint32()?);
+                },
+                114 => {
+                    self.grid_fight_equipment_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,35 +120,35 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KIDBGNPHGBI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.IHJJKABIEPC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.KIDBGNPHGBI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OILPEBPLDBG);
         for value in &self.grid_fight_equipment_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.OILPEBPLDBG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KIDBGNPHGBI {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
         for v in &self.IHJJKABIEPC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        for v in &self.KIDBGNPHGBI {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        os.write_repeated_packed_uint32(10, &self.OILPEBPLDBG)?;
         for v in &self.grid_fight_equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        os.write_repeated_packed_uint32(7, &self.OILPEBPLDBG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     }
 
     fn clear(&mut self) {
-        self.KIDBGNPHGBI.clear();
         self.IHJJKABIEPC.clear();
-        self.grid_fight_equipment_list.clear();
+        self.KIDBGNPHGBI.clear();
         self.OILPEBPLDBG.clear();
+        self.grid_fight_equipment_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PCGMJHKDCOG {
         static instance: PCGMJHKDCOG = PCGMJHKDCOG {
-            KIDBGNPHGBI: ::std::vec::Vec::new(),
             IHJJKABIEPC: ::std::vec::Vec::new(),
-            grid_fight_equipment_list: ::std::vec::Vec::new(),
+            KIDBGNPHGBI: ::std::vec::Vec::new(),
             OILPEBPLDBG: ::std::vec::Vec::new(),
+            grid_fight_equipment_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for PCGMJHKDCOG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PCGMJHKDCOG.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11CBNNMKNBLDI.prot\
-    o\"\xd8\x01\n\x0bPCGMJHKDCOG\x12.\n\x0bKIDBGNPHGBI\x18\x03\x20\x03(\x0b2\
-    \x0c.CBNNMKNBLDIR\x0bKIDBGNPHGBI\x12.\n\x0bIHJJKABIEPC\x18\x08\x20\x03(\
-    \x0b2\x0c.APAMFCKFHLLR\x0bIHJJKABIEPC\x12G\n\x19grid_fight_equipment_lis\
-    t\x18\x05\x20\x03(\x0b2\x0c.CBNNMKNBLDIR\x16gridFightEquipmentList\x12\
-    \x20\n\x0bOILPEBPLDBG\x18\x07\x20\x03(\rR\x0bOILPEBPLDBGb\x06proto3\
+    \n\x11PCGMJHKDCOG.proto\x1a\x11CBNNMKNBLDI.proto\x1a\tKVP.proto\"\xd0\
+    \x01\n\x0bPCGMJHKDCOG\x12&\n\x0bIHJJKABIEPC\x18\x01\x20\x03(\x0b2\x04.KV\
+    PR\x0bIHJJKABIEPC\x12.\n\x0bKIDBGNPHGBI\x18\x06\x20\x03(\x0b2\x0c.CBNNMK\
+    NBLDIR\x0bKIDBGNPHGBI\x12\x20\n\x0bOILPEBPLDBG\x18\n\x20\x03(\rR\x0bOILP\
+    EBPLDBG\x12G\n\x19grid_fight_equipment_list\x18\x0e\x20\x03(\x0b2\x0c.CB\
+    NNMKNBLDIR\x16gridFightEquipmentListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             deps.push(super::CBNNMKNBLDI::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PCGMJHKDCOG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

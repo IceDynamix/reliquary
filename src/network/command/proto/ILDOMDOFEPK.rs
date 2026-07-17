@@ -89,10 +89,10 @@ impl ::protobuf::Message for ILDOMDOFEPK {
                 8 => {
                     self.group_id = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.FDEAKDCDGML = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.panel_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ILDOMDOFEPK {
             my_size += ::protobuf::rt::uint32_size(1, self.group_id);
         }
         if self.FDEAKDCDGML != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FDEAKDCDGML);
+            my_size += ::protobuf::rt::uint32_size(7, self.FDEAKDCDGML);
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for ILDOMDOFEPK {
             os.write_uint32(1, self.group_id)?;
         }
         if self.FDEAKDCDGML != 0 {
-            os.write_uint32(4, self.FDEAKDCDGML)?;
+            os.write_uint32(7, self.FDEAKDCDGML)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(11, self.panel_id)?;
+            os.write_uint32(12, self.panel_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for ILDOMDOFEPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ILDOMDOFEPK.proto\"e\n\x0bILDOMDOFEPK\x12\x19\n\x08group_id\x18\
-    \x01\x20\x01(\rR\x07groupId\x12\x20\n\x0bFDEAKDCDGML\x18\x04\x20\x01(\rR\
-    \x0bFDEAKDCDGML\x12\x19\n\x08panel_id\x18\x0b\x20\x01(\rR\x07panelIdb\
+    \x01\x20\x01(\rR\x07groupId\x12\x20\n\x0bFDEAKDCDGML\x18\x07\x20\x01(\rR\
+    \x0bFDEAKDCDGML\x12\x19\n\x08panel_id\x18\x0c\x20\x01(\rR\x07panelIdb\
     \x06proto3\
 ";
 

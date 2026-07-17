@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMessageType {
     // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_NLCDGIPGFDJ)
     BDIMOGEJAFG_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_OBKNDEAOLPF)
-    BDIMOGEJAFG_OBKNDEAOLPF = 2736,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_LDNLCNFIPCJ)
-    BDIMOGEJAFG_LDNLCNFIPCJ = 2729,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_PJBBDHBNFOC)
-    BDIMOGEJAFG_PJBBDHBNFOC = 2773,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_KDAGJGBHJFC)
-    BDIMOGEJAFG_KDAGJGBHJFC = 2712,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_IDLOFNPDAMF)
-    BDIMOGEJAFG_IDLOFNPDAMF = 2781,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_BOMFNPGCIEG)
-    BDIMOGEJAFG_BOMFNPGCIEG = 2780,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_DKKMLOIPOIH)
-    BDIMOGEJAFG_DKKMLOIPOIH = 2715,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_BBGNFMGJBIC)
-    BDIMOGEJAFG_BBGNFMGJBIC = 2787,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_IJDKJJBJEMN)
-    BDIMOGEJAFG_IJDKJJBJEMN = 2703,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_FPIEPJMKGGB)
-    BDIMOGEJAFG_FPIEPJMKGGB = 2710,
-    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_CHHHBIHDNNK)
-    BDIMOGEJAFG_CHHHBIHDNNK = 2713,
     // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_IFDAEEMGEKB)
-    BDIMOGEJAFG_IFDAEEMGEKB = 2727,
+    BDIMOGEJAFG_IFDAEEMGEKB = 2758,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_IJDKJJBJEMN)
+    BDIMOGEJAFG_IJDKJJBJEMN = 2778,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_IDLOFNPDAMF)
+    BDIMOGEJAFG_IDLOFNPDAMF = 2747,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_FPIEPJMKGGB)
+    BDIMOGEJAFG_FPIEPJMKGGB = 2726,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_CHHHBIHDNNK)
+    BDIMOGEJAFG_CHHHBIHDNNK = 2781,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_KDAGJGBHJFC)
+    BDIMOGEJAFG_KDAGJGBHJFC = 2740,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_OBKNDEAOLPF)
+    BDIMOGEJAFG_OBKNDEAOLPF = 2788,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_BBGNFMGJBIC)
+    BDIMOGEJAFG_BBGNFMGJBIC = 2713,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_PJBBDHBNFOC)
+    BDIMOGEJAFG_PJBBDHBNFOC = 2725,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_BOMFNPGCIEG)
+    BDIMOGEJAFG_BOMFNPGCIEG = 2793,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_LDNLCNFIPCJ)
+    BDIMOGEJAFG_LDNLCNFIPCJ = 2771,
+    // @@protoc_insertion_point(enum_value:CmdMessageType.BDIMOGEJAFG_DKKMLOIPOIH)
+    BDIMOGEJAFG_DKKMLOIPOIH = 2786,
 }
 
 impl ::protobuf::Enum for CmdMessageType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdMessageType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMessageType> {
         match value {
             0 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_NLCDGIPGFDJ),
-            2736 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF),
-            2729 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ),
-            2773 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC),
-            2712 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC),
-            2781 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF),
-            2780 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG),
-            2715 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH),
-            2787 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC),
-            2703 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN),
-            2710 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB),
-            2713 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK),
-            2727 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB),
+            2758 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB),
+            2778 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN),
+            2747 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF),
+            2726 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB),
+            2781 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK),
+            2740 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC),
+            2788 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF),
+            2713 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC),
+            2725 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC),
+            2793 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG),
+            2771 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ),
+            2786 => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdMessageType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMessageType> {
         match str {
             "BDIMOGEJAFG_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_NLCDGIPGFDJ),
-            "BDIMOGEJAFG_OBKNDEAOLPF" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF),
-            "BDIMOGEJAFG_LDNLCNFIPCJ" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ),
-            "BDIMOGEJAFG_PJBBDHBNFOC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC),
-            "BDIMOGEJAFG_KDAGJGBHJFC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC),
-            "BDIMOGEJAFG_IDLOFNPDAMF" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF),
-            "BDIMOGEJAFG_BOMFNPGCIEG" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG),
-            "BDIMOGEJAFG_DKKMLOIPOIH" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH),
-            "BDIMOGEJAFG_BBGNFMGJBIC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC),
+            "BDIMOGEJAFG_IFDAEEMGEKB" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB),
             "BDIMOGEJAFG_IJDKJJBJEMN" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN),
+            "BDIMOGEJAFG_IDLOFNPDAMF" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF),
             "BDIMOGEJAFG_FPIEPJMKGGB" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB),
             "BDIMOGEJAFG_CHHHBIHDNNK" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK),
-            "BDIMOGEJAFG_IFDAEEMGEKB" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB),
+            "BDIMOGEJAFG_KDAGJGBHJFC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC),
+            "BDIMOGEJAFG_OBKNDEAOLPF" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF),
+            "BDIMOGEJAFG_BBGNFMGJBIC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC),
+            "BDIMOGEJAFG_PJBBDHBNFOC" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC),
+            "BDIMOGEJAFG_BOMFNPGCIEG" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG),
+            "BDIMOGEJAFG_LDNLCNFIPCJ" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ),
+            "BDIMOGEJAFG_DKKMLOIPOIH" => ::std::option::Option::Some(CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMessageType] = &[
         CmdMessageType::BDIMOGEJAFG_NLCDGIPGFDJ,
-        CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF,
-        CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ,
-        CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC,
-        CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC,
-        CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF,
-        CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG,
-        CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH,
-        CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC,
+        CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB,
         CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN,
+        CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF,
         CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB,
         CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK,
-        CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB,
+        CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC,
+        CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF,
+        CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC,
+        CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC,
+        CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG,
+        CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ,
+        CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdMessageType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMessageType::BDIMOGEJAFG_NLCDGIPGFDJ => 0,
-            CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF => 1,
-            CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ => 2,
-            CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC => 3,
-            CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC => 4,
-            CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF => 5,
-            CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG => 6,
-            CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH => 7,
+            CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB => 1,
+            CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN => 2,
+            CmdMessageType::BDIMOGEJAFG_IDLOFNPDAMF => 3,
+            CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB => 4,
+            CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK => 5,
+            CmdMessageType::BDIMOGEJAFG_KDAGJGBHJFC => 6,
+            CmdMessageType::BDIMOGEJAFG_OBKNDEAOLPF => 7,
             CmdMessageType::BDIMOGEJAFG_BBGNFMGJBIC => 8,
-            CmdMessageType::BDIMOGEJAFG_IJDKJJBJEMN => 9,
-            CmdMessageType::BDIMOGEJAFG_FPIEPJMKGGB => 10,
-            CmdMessageType::BDIMOGEJAFG_CHHHBIHDNNK => 11,
-            CmdMessageType::BDIMOGEJAFG_IFDAEEMGEKB => 12,
+            CmdMessageType::BDIMOGEJAFG_PJBBDHBNFOC => 9,
+            CmdMessageType::BDIMOGEJAFG_BOMFNPGCIEG => 10,
+            CmdMessageType::BDIMOGEJAFG_LDNLCNFIPCJ => 11,
+            CmdMessageType::BDIMOGEJAFG_DKKMLOIPOIH => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +157,15 @@ impl CmdMessageType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdMessageType.proto*\x95\x03\n\x0eCmdMessageType\x12\x1b\n\x17BDI\
-    MOGEJAFG_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BDIMOGEJAFG_OBKNDEAOLPF\x10\xb0\
-    \x15\x12\x1c\n\x17BDIMOGEJAFG_LDNLCNFIPCJ\x10\xa9\x15\x12\x1c\n\x17BDIMO\
-    GEJAFG_PJBBDHBNFOC\x10\xd5\x15\x12\x1c\n\x17BDIMOGEJAFG_KDAGJGBHJFC\x10\
-    \x98\x15\x12\x1c\n\x17BDIMOGEJAFG_IDLOFNPDAMF\x10\xdd\x15\x12\x1c\n\x17B\
-    DIMOGEJAFG_BOMFNPGCIEG\x10\xdc\x15\x12\x1c\n\x17BDIMOGEJAFG_DKKMLOIPOIH\
-    \x10\x9b\x15\x12\x1c\n\x17BDIMOGEJAFG_BBGNFMGJBIC\x10\xe3\x15\x12\x1c\n\
-    \x17BDIMOGEJAFG_IJDKJJBJEMN\x10\x8f\x15\x12\x1c\n\x17BDIMOGEJAFG_FPIEPJM\
-    KGGB\x10\x96\x15\x12\x1c\n\x17BDIMOGEJAFG_CHHHBIHDNNK\x10\x99\x15\x12\
-    \x1c\n\x17BDIMOGEJAFG_IFDAEEMGEKB\x10\xa7\x15b\x06proto3\
+    MOGEJAFG_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BDIMOGEJAFG_IFDAEEMGEKB\x10\xc6\
+    \x15\x12\x1c\n\x17BDIMOGEJAFG_IJDKJJBJEMN\x10\xda\x15\x12\x1c\n\x17BDIMO\
+    GEJAFG_IDLOFNPDAMF\x10\xbb\x15\x12\x1c\n\x17BDIMOGEJAFG_FPIEPJMKGGB\x10\
+    \xa6\x15\x12\x1c\n\x17BDIMOGEJAFG_CHHHBIHDNNK\x10\xdd\x15\x12\x1c\n\x17B\
+    DIMOGEJAFG_KDAGJGBHJFC\x10\xb4\x15\x12\x1c\n\x17BDIMOGEJAFG_OBKNDEAOLPF\
+    \x10\xe4\x15\x12\x1c\n\x17BDIMOGEJAFG_BBGNFMGJBIC\x10\x99\x15\x12\x1c\n\
+    \x17BDIMOGEJAFG_PJBBDHBNFOC\x10\xa5\x15\x12\x1c\n\x17BDIMOGEJAFG_BOMFNPG\
+    CIEG\x10\xe9\x15\x12\x1c\n\x17BDIMOGEJAFG_LDNLCNFIPCJ\x10\xd3\x15\x12\
+    \x1c\n\x17BDIMOGEJAFG_DKKMLOIPOIH\x10\xe2\x15b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

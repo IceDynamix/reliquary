@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TriggerAiPamSpeakCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.role)
+    pub role: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.JMPPMNAONHM)
     pub JMPPMNAONHM: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TriggerAiPamSpeakCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &TriggerAiPamSpeakCsReq| { &m.BDPIMPJOJBK },
-            |m: &mut TriggerAiPamSpeakCsReq| { &mut m.BDPIMPJOJBK },
+            "role",
+            |m: &TriggerAiPamSpeakCsReq| { &m.role },
+            |m: &mut TriggerAiPamSpeakCsReq| { &mut m.role },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JMPPMNAONHM",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
+                8 => {
+                    self.role = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                16 => {
                     self.JMPPMNAONHM = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(14, self.BDPIMPJOJBK.value());
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.role.value());
         }
         if self.JMPPMNAONHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JMPPMNAONHM);
+            my_size += ::protobuf::rt::uint32_size(2, self.JMPPMNAONHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        if self.role != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.role))?;
         }
         if self.JMPPMNAONHM != 0 {
-            os.write_uint32(13, self.JMPPMNAONHM)?;
+            os.write_uint32(2, self.JMPPMNAONHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     }
 
     fn clear(&mut self) {
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.role = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.JMPPMNAONHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TriggerAiPamSpeakCsReq {
         static instance: TriggerAiPamSpeakCsReq = TriggerAiPamSpeakCsReq {
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            role: ::protobuf::EnumOrUnknown::from_i32(0),
             JMPPMNAONHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for TriggerAiPamSpeakCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTriggerAiPamSpeakCsReq.proto\x1a\x11FKNKNLGMACL.proto\"j\n\x16Trig\
-    gerAiPamSpeakCsReq\x12.\n\x0bBDPIMPJOJBK\x18\x0e\x20\x01(\x0e2\x0c.FKNKN\
-    LGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bJMPPMNAONHM\x18\r\x20\x01(\rR\x0bJMP\
-    PMNAONHMb\x06proto3\
+    \n\x1cTriggerAiPamSpeakCsReq.proto\x1a\x11FKNKNLGMACL.proto\"\\\n\x16Tri\
+    ggerAiPamSpeakCsReq\x12\x20\n\x04role\x18\x01\x20\x01(\x0e2\x0c.FKNKNLGM\
+    ACLR\x04role\x12\x20\n\x0bJMPPMNAONHM\x18\x02\x20\x01(\rR\x0bJMPPMNAONHM\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

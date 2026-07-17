@@ -32,8 +32,6 @@ pub struct MKEPKKAJONE {
     pub LPBLEICPFPD: ::std::vec::Vec<super::FDECDCEDPNM::FDECDCEDPNM>,
     // @@protoc_insertion_point(field:MKEPKKAJONE.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MKEPKKAJONE.DKFPMCPMPJH)
-    pub DKFPMCPMPJH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MKEPKKAJONE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +49,7 @@ impl MKEPKKAJONE {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LPBLEICPFPD",
@@ -62,11 +60,6 @@ impl MKEPKKAJONE {
             "retcode",
             |m: &MKEPKKAJONE| { &m.retcode },
             |m: &mut MKEPKKAJONE| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKFPMCPMPJH",
-            |m: &MKEPKKAJONE| { &m.DKFPMCPMPJH },
-            |m: &mut MKEPKKAJONE| { &mut m.DKFPMCPMPJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MKEPKKAJONE>(
             "MKEPKKAJONE",
@@ -86,14 +79,11 @@ impl ::protobuf::Message for MKEPKKAJONE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.LPBLEICPFPD.push(is.read_message()?);
                 },
-                8 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
-                },
-                88 => {
-                    self.DKFPMCPMPJH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -112,10 +102,7 @@ impl ::protobuf::Message for MKEPKKAJONE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if self.DKFPMCPMPJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DKFPMCPMPJH);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +111,10 @@ impl ::protobuf::Message for MKEPKKAJONE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LPBLEICPFPD {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if self.DKFPMCPMPJH != 0 {
-            os.write_uint32(11, self.DKFPMCPMPJH)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +135,6 @@ impl ::protobuf::Message for MKEPKKAJONE {
     fn clear(&mut self) {
         self.LPBLEICPFPD.clear();
         self.retcode = 0;
-        self.DKFPMCPMPJH = 0;
         self.special_fields.clear();
     }
 
@@ -159,7 +142,6 @@ impl ::protobuf::Message for MKEPKKAJONE {
         static instance: MKEPKKAJONE = MKEPKKAJONE {
             LPBLEICPFPD: ::std::vec::Vec::new(),
             retcode: 0,
-            DKFPMCPMPJH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MKEPKKAJONE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MKEPKKAJONE.proto\x1a\x11FDECDCEDPNM.proto\"y\n\x0bMKEPKKAJONE\x12\
-    .\n\x0bLPBLEICPFPD\x18\n\x20\x03(\x0b2\x0c.FDECDCEDPNMR\x0bLPBLEICPFPD\
-    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bDKFPMC\
-    PMPJH\x18\x0b\x20\x01(\rR\x0bDKFPMCPMPJHb\x06proto3\
+    \n\x11MKEPKKAJONE.proto\x1a\x11FDECDCEDPNM.proto\"W\n\x0bMKEPKKAJONE\x12\
+    .\n\x0bLPBLEICPFPD\x18\x01\x20\x03(\x0b2\x0c.FDECDCEDPNMR\x0bLPBLEICPFPD\
+    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

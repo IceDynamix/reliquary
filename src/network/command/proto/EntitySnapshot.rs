@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EntitySnapshot {
     // message fields
-    // @@protoc_insertion_point(field:EntitySnapshot.motion_info)
-    pub motion_info: ::protobuf::MessageField<super::MotionInfoSnapshot::MotionInfoSnapshot>,
-    // @@protoc_insertion_point(field:EntitySnapshot.instance_id)
-    pub instance_id: u32,
-    // @@protoc_insertion_point(field:EntitySnapshot.map_object_type)
-    pub map_object_type: ::protobuf::EnumOrUnknown<super::ABPEEALGKAO::ABPEEALGKAO>,
     // @@protoc_insertion_point(field:EntitySnapshot.entity_id)
     pub entity_id: u32,
+    // @@protoc_insertion_point(field:EntitySnapshot.instance_id)
+    pub instance_id: u32,
+    // @@protoc_insertion_point(field:EntitySnapshot.motion_info)
+    pub motion_info: ::protobuf::MessageField<super::MotionInfoSnapshot::MotionInfoSnapshot>,
+    // @@protoc_insertion_point(field:EntitySnapshot.map_object_type)
+    pub map_object_type: ::protobuf::EnumOrUnknown<super::ABPEEALGKAO::ABPEEALGKAO>,
     // @@protoc_insertion_point(field:EntitySnapshot.prop)
     pub prop: ::protobuf::MessageField<super::PropInfoSnapshot::PropInfoSnapshot>,
     // special fields
@@ -57,25 +57,25 @@ impl EntitySnapshot {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfoSnapshot::MotionInfoSnapshot>(
-            "motion_info",
-            |m: &EntitySnapshot| { &m.motion_info },
-            |m: &mut EntitySnapshot| { &mut m.motion_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entity_id",
+            |m: &EntitySnapshot| { &m.entity_id },
+            |m: &mut EntitySnapshot| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "instance_id",
             |m: &EntitySnapshot| { &m.instance_id },
             |m: &mut EntitySnapshot| { &mut m.instance_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfoSnapshot::MotionInfoSnapshot>(
+            "motion_info",
+            |m: &EntitySnapshot| { &m.motion_info },
+            |m: &mut EntitySnapshot| { &mut m.motion_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_object_type",
             |m: &EntitySnapshot| { &m.map_object_type },
             |m: &mut EntitySnapshot| { &mut m.map_object_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entity_id",
-            |m: &EntitySnapshot| { &m.entity_id },
-            |m: &mut EntitySnapshot| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PropInfoSnapshot::PropInfoSnapshot>(
             "prop",
@@ -100,17 +100,17 @@ impl ::protobuf::Message for EntitySnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion_info)?;
+                8 => {
+                    self.entity_id = is.read_uint32()?;
                 },
                 16 => {
                     self.instance_id = is.read_uint32()?;
                 },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion_info)?;
+                },
                 32 => {
                     self.map_object_type = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.entity_id = is.read_uint32()?;
                 },
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.prop)?;
@@ -127,18 +127,18 @@ impl ::protobuf::Message for EntitySnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.motion_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.entity_id);
         }
         if self.instance_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.instance_id);
         }
+        if let Some(v) = self.motion_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::ABPEEALGKAO::ABPEEALGKAO::ABPEEALGKAO_FKMOKGOBEHJ) {
             my_size += ::protobuf::rt::int32_size(4, self.map_object_type.value());
-        }
-        if self.entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.entity_id);
         }
         if let Some(v) = self.prop.as_ref() {
             let len = v.compute_size();
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EntitySnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.motion_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.entity_id != 0 {
+            os.write_uint32(1, self.entity_id)?;
         }
         if self.instance_id != 0 {
             os.write_uint32(2, self.instance_id)?;
         }
+        if let Some(v) = self.motion_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
         if self.map_object_type != ::protobuf::EnumOrUnknown::new(super::ABPEEALGKAO::ABPEEALGKAO::ABPEEALGKAO_FKMOKGOBEHJ) {
             os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.map_object_type))?;
-        }
-        if self.entity_id != 0 {
-            os.write_uint32(1, self.entity_id)?;
         }
         if let Some(v) = self.prop.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -182,20 +182,20 @@ impl ::protobuf::Message for EntitySnapshot {
     }
 
     fn clear(&mut self) {
-        self.motion_info.clear();
-        self.instance_id = 0;
-        self.map_object_type = ::protobuf::EnumOrUnknown::new(super::ABPEEALGKAO::ABPEEALGKAO::ABPEEALGKAO_FKMOKGOBEHJ);
         self.entity_id = 0;
+        self.instance_id = 0;
+        self.motion_info.clear();
+        self.map_object_type = ::protobuf::EnumOrUnknown::new(super::ABPEEALGKAO::ABPEEALGKAO::ABPEEALGKAO_FKMOKGOBEHJ);
         self.prop.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EntitySnapshot {
         static instance: EntitySnapshot = EntitySnapshot {
-            motion_info: ::protobuf::MessageField::none(),
-            instance_id: 0,
-            map_object_type: ::protobuf::EnumOrUnknown::from_i32(0),
             entity_id: 0,
+            instance_id: 0,
+            motion_info: ::protobuf::MessageField::none(),
+            map_object_type: ::protobuf::EnumOrUnknown::from_i32(0),
             prop: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,10 +223,10 @@ impl ::protobuf::reflect::ProtobufValue for EntitySnapshot {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14EntitySnapshot.proto\x1a\x11ABPEEALGKAO.proto\x1a\x18MotionInfoSna\
     pshot.proto\x1a\x16PropInfoSnapshot.proto\"\xe1\x01\n\x0eEntitySnapshot\
-    \x124\n\x0bmotion_info\x18\x03\x20\x01(\x0b2\x13.MotionInfoSnapshotR\nmo\
-    tionInfo\x12\x1f\n\x0binstance_id\x18\x02\x20\x01(\rR\ninstanceId\x124\n\
-    \x0fmap_object_type\x18\x04\x20\x01(\x0e2\x0c.ABPEEALGKAOR\rmapObjectTyp\
-    e\x12\x1b\n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12%\n\x04prop\
+    \x12\x1b\n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1f\n\x0binsta\
+    nce_id\x18\x02\x20\x01(\rR\ninstanceId\x124\n\x0bmotion_info\x18\x03\x20\
+    \x01(\x0b2\x13.MotionInfoSnapshotR\nmotionInfo\x124\n\x0fmap_object_type\
+    \x18\x04\x20\x01(\x0e2\x0c.ABPEEALGKAOR\rmapObjectType\x12%\n\x04prop\
     \x18\x05\x20\x01(\x0b2\x11.PropInfoSnapshotR\x04propb\x06proto3\
 ";
 

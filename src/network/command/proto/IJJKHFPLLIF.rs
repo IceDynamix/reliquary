@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IJJKHFPLLIF {
     // message fields
-    // @@protoc_insertion_point(field:IJJKHFPLLIF.FLOKEJHHPPO)
-    pub FLOKEJHHPPO: ::std::vec::Vec<super::LJEMPEHADKJ::LJEMPEHADKJ>,
-    // @@protoc_insertion_point(field:IJJKHFPLLIF.HGAIDOLJKDL)
-    pub HGAIDOLJKDL: ::std::vec::Vec<super::LJEMPEHADKJ::LJEMPEHADKJ>,
     // @@protoc_insertion_point(field:IJJKHFPLLIF.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:IJJKHFPLLIF.HGAIDOLJKDL)
+    pub HGAIDOLJKDL: ::std::vec::Vec<super::LJEMPEHADKJ::LJEMPEHADKJ>,
+    // @@protoc_insertion_point(field:IJJKHFPLLIF.FLOKEJHHPPO)
+    pub FLOKEJHHPPO: ::std::vec::Vec<super::LJEMPEHADKJ::LJEMPEHADKJ>,
     // special fields
     // @@protoc_insertion_point(special_field:IJJKHFPLLIF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl IJJKHFPLLIF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FLOKEJHHPPO",
-            |m: &IJJKHFPLLIF| { &m.FLOKEJHHPPO },
-            |m: &mut IJJKHFPLLIF| { &mut m.FLOKEJHHPPO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &IJJKHFPLLIF| { &m.avatar_id },
+            |m: &mut IJJKHFPLLIF| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HGAIDOLJKDL",
             |m: &IJJKHFPLLIF| { &m.HGAIDOLJKDL },
             |m: &mut IJJKHFPLLIF| { &mut m.HGAIDOLJKDL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &IJJKHFPLLIF| { &m.avatar_id },
-            |m: &mut IJJKHFPLLIF| { &mut m.avatar_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FLOKEJHHPPO",
+            |m: &IJJKHFPLLIF| { &m.FLOKEJHHPPO },
+            |m: &mut IJJKHFPLLIF| { &mut m.FLOKEJHHPPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IJJKHFPLLIF>(
             "IJJKHFPLLIF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IJJKHFPLLIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.FLOKEJHHPPO.push(is.read_message()?);
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
                 18 => {
                     self.HGAIDOLJKDL.push(is.read_message()?);
                 },
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
+                26 => {
+                    self.FLOKEJHHPPO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for IJJKHFPLLIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FLOKEJHHPPO {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
         for value in &self.HGAIDOLJKDL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
-        }
+        for value in &self.FLOKEJHHPPO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FLOKEJHHPPO {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.HGAIDOLJKDL {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
         }
+        for v in &self.HGAIDOLJKDL {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        for v in &self.FLOKEJHHPPO {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for IJJKHFPLLIF {
     }
 
     fn clear(&mut self) {
-        self.FLOKEJHHPPO.clear();
-        self.HGAIDOLJKDL.clear();
         self.avatar_id = 0;
+        self.HGAIDOLJKDL.clear();
+        self.FLOKEJHHPPO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IJJKHFPLLIF {
         static instance: IJJKHFPLLIF = IJJKHFPLLIF {
-            FLOKEJHHPPO: ::std::vec::Vec::new(),
-            HGAIDOLJKDL: ::std::vec::Vec::new(),
             avatar_id: 0,
+            HGAIDOLJKDL: ::std::vec::Vec::new(),
+            FLOKEJHHPPO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for IJJKHFPLLIF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IJJKHFPLLIF.proto\x1a\x11LJEMPEHADKJ.proto\"\x8a\x01\n\x0bIJJKHFPL\
-    LIF\x12.\n\x0bFLOKEJHHPPO\x18\x03\x20\x03(\x0b2\x0c.LJEMPEHADKJR\x0bFLOK\
-    EJHHPPO\x12.\n\x0bHGAIDOLJKDL\x18\x02\x20\x03(\x0b2\x0c.LJEMPEHADKJR\x0b\
-    HGAIDOLJKDL\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarIdb\x06pro\
+    LIF\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12.\n\x0bHGAID\
+    OLJKDL\x18\x02\x20\x03(\x0b2\x0c.LJEMPEHADKJR\x0bHGAIDOLJKDL\x12.\n\x0bF\
+    LOKEJHHPPO\x18\x03\x20\x03(\x0b2\x0c.LJEMPEHADKJR\x0bFLOKEJHHPPOb\x06pro\
     to3\
 ";
 

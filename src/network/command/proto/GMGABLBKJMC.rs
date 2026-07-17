@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GMGABLBKJMC {
     // message fields
-    // @@protoc_insertion_point(field:GMGABLBKJMC.LMIODAHFGOA)
-    pub LMIODAHFGOA: ::protobuf::EnumOrUnknown<super::FDICBBEGKEO::FDICBBEGKEO>,
-    // @@protoc_insertion_point(field:GMGABLBKJMC.display_value)
-    pub display_value: u32,
+    // @@protoc_insertion_point(field:GMGABLBKJMC.param)
+    pub param: u32,
+    // @@protoc_insertion_point(field:GMGABLBKJMC.buff_type)
+    pub buff_type: ::protobuf::EnumOrUnknown<super::FDICBBEGKEO::FDICBBEGKEO>,
     // special fields
     // @@protoc_insertion_point(special_field:GMGABLBKJMC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GMGABLBKJMC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMIODAHFGOA",
-            |m: &GMGABLBKJMC| { &m.LMIODAHFGOA },
-            |m: &mut GMGABLBKJMC| { &mut m.LMIODAHFGOA },
+            "param",
+            |m: &GMGABLBKJMC| { &m.param },
+            |m: &mut GMGABLBKJMC| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &GMGABLBKJMC| { &m.display_value },
-            |m: &mut GMGABLBKJMC| { &mut m.display_value },
+            "buff_type",
+            |m: &GMGABLBKJMC| { &m.buff_type },
+            |m: &mut GMGABLBKJMC| { &mut m.buff_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GMGABLBKJMC>(
             "GMGABLBKJMC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GMGABLBKJMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.LMIODAHFGOA = is.read_enum_or_unknown()?;
+                104 => {
+                    self.param = is.read_uint32()?;
                 },
                 112 => {
-                    self.display_value = is.read_uint32()?;
+                    self.buff_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GMGABLBKJMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMIODAHFGOA != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(10, self.LMIODAHFGOA.value());
+        if self.param != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.param);
         }
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.display_value);
+        if self.buff_type != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(14, self.buff_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GMGABLBKJMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMIODAHFGOA != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.LMIODAHFGOA))?;
+        if self.param != 0 {
+            os.write_uint32(13, self.param)?;
         }
-        if self.display_value != 0 {
-            os.write_uint32(14, self.display_value)?;
+        if self.buff_type != ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.buff_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GMGABLBKJMC {
     }
 
     fn clear(&mut self) {
-        self.LMIODAHFGOA = ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ);
-        self.display_value = 0;
+        self.param = 0;
+        self.buff_type = ::protobuf::EnumOrUnknown::new(super::FDICBBEGKEO::FDICBBEGKEO::FDICBBEGKEO_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GMGABLBKJMC {
         static instance: GMGABLBKJMC = GMGABLBKJMC {
-            LMIODAHFGOA: ::protobuf::EnumOrUnknown::from_i32(0),
-            display_value: 0,
+            param: 0,
+            buff_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GMGABLBKJMC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GMGABLBKJMC.proto\x1a\x11FDICBBEGKEO.proto\"b\n\x0bGMGABLBKJMC\x12\
-    .\n\x0bLMIODAHFGOA\x18\n\x20\x01(\x0e2\x0c.FDICBBEGKEOR\x0bLMIODAHFGOA\
-    \x12#\n\rdisplay_value\x18\x0e\x20\x01(\rR\x0cdisplayValueb\x06proto3\
+    \n\x11GMGABLBKJMC.proto\x1a\x11FDICBBEGKEO.proto\"N\n\x0bGMGABLBKJMC\x12\
+    \x14\n\x05param\x18\r\x20\x01(\rR\x05param\x12)\n\tbuff_type\x18\x0e\x20\
+    \x01(\x0e2\x0c.FDICBBEGKEOR\x08buffTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

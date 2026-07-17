@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicPresetUpdatePlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RelicPresetUpdatePlanScRsp.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:RelicPresetUpdatePlanScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RelicPresetUpdatePlanScRsp.unique_id)
+    pub unique_id: u32,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<relic_preset_update_plan_sc_rsp::KKNBOACNCON>,
     // special fields
@@ -50,7 +50,7 @@ impl RelicPresetUpdatePlanScRsp {
         ::std::default::Default::default()
     }
 
-    // .HPPOINFLEPJ relic_list = 14;
+    // .HPPOINFLEPJ relic_list = 15;
 
     pub fn relic_list(&self) -> &super::HPPOINFLEPJ::HPPOINFLEPJ {
         match self.KKNBOACNCON {
@@ -99,7 +99,7 @@ impl RelicPresetUpdatePlanScRsp {
         }
     }
 
-    // string name = 4;
+    // string name = 9;
 
     pub fn name(&self) -> &str {
         match self.KKNBOACNCON {
@@ -152,14 +152,14 @@ impl RelicPresetUpdatePlanScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &RelicPresetUpdatePlanScRsp| { &m.unique_id },
-            |m: &mut RelicPresetUpdatePlanScRsp| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RelicPresetUpdatePlanScRsp| { &m.retcode },
             |m: &mut RelicPresetUpdatePlanScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &RelicPresetUpdatePlanScRsp| { &m.unique_id },
+            |m: &mut RelicPresetUpdatePlanScRsp| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HPPOINFLEPJ::HPPOINFLEPJ>(
             "relic_list",
@@ -194,15 +194,15 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                48 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_sc_rsp::KKNBOACNCON::RelicList(is.read_message()?));
                 },
-                34 => {
+                74 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_sc_rsp::KKNBOACNCON::Name(is.read_string()?));
                 },
                 tag => {
@@ -217,11 +217,11 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -230,7 +230,7 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &relic_preset_update_plan_sc_rsp::KKNBOACNCON::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(4, &v);
+                    my_size += ::protobuf::rt::string_size(9, &v);
                 },
             };
         }
@@ -240,19 +240,19 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint32(6, self.unique_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &relic_preset_update_plan_sc_rsp::KKNBOACNCON::RelicList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &relic_preset_update_plan_sc_rsp::KKNBOACNCON::Name(ref v) => {
-                    os.write_string(4, v)?;
+                    os.write_string(9, v)?;
                 },
             };
         }
@@ -273,8 +273,8 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
         self.retcode = 0;
+        self.unique_id = 0;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
@@ -282,8 +282,8 @@ impl ::protobuf::Message for RelicPresetUpdatePlanScRsp {
 
     fn default_instance() -> &'static RelicPresetUpdatePlanScRsp {
         static instance: RelicPresetUpdatePlanScRsp = RelicPresetUpdatePlanScRsp {
-            unique_id: 0,
             retcode: 0,
+            unique_id: 0,
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -340,11 +340,11 @@ pub mod relic_preset_update_plan_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RelicPresetUpdatePlanScRsp.proto\x1a\x11HPPOINFLEPJ.proto\"\xa7\
-    \x01\n\x1aRelicPresetUpdatePlanScRsp\x12\x1b\n\tunique_id\x18\x03\x20\
-    \x01(\rR\x08uniqueId\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
-    \x12-\n\nrelic_list\x18\x0e\x20\x01(\x0b2\x0c.HPPOINFLEPJH\0R\trelicList\
-    \x12\x14\n\x04name\x18\x04\x20\x01(\tH\0R\x04nameB\r\n\x0bKKNBOACNCONb\
-    \x06proto3\
+    \x01\n\x1aRelicPresetUpdatePlanScRsp\x12\x18\n\x07retcode\x18\x03\x20\
+    \x01(\rR\x07retcode\x12\x1b\n\tunique_id\x18\x06\x20\x01(\rR\x08uniqueId\
+    \x12-\n\nrelic_list\x18\x0f\x20\x01(\x0b2\x0c.HPPOINFLEPJH\0R\trelicList\
+    \x12\x14\n\x04name\x18\t\x20\x01(\tH\0R\x04nameB\r\n\x0bKKNBOACNCONb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

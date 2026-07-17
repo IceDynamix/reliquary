@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IKMOCJBMGOJ {
     // message fields
-    // @@protoc_insertion_point(field:IKMOCJBMGOJ.CBMGDBJHLHO)
-    pub CBMGDBJHLHO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IKMOCJBMGOJ.is_get_all)
     pub is_get_all: bool,
+    // @@protoc_insertion_point(field:IKMOCJBMGOJ.CBMGDBJHLHO)
+    pub CBMGDBJHLHO: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:IKMOCJBMGOJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl IKMOCJBMGOJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CBMGDBJHLHO",
-            |m: &IKMOCJBMGOJ| { &m.CBMGDBJHLHO },
-            |m: &mut IKMOCJBMGOJ| { &mut m.CBMGDBJHLHO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_get_all",
             |m: &IKMOCJBMGOJ| { &m.is_get_all },
             |m: &mut IKMOCJBMGOJ| { &mut m.is_get_all },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CBMGDBJHLHO",
+            |m: &IKMOCJBMGOJ| { &m.CBMGDBJHLHO },
+            |m: &mut IKMOCJBMGOJ| { &mut m.CBMGDBJHLHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IKMOCJBMGOJ>(
             "IKMOCJBMGOJ",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for IKMOCJBMGOJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.is_get_all = is.read_bool()?;
+                },
                 90 => {
                     is.read_repeated_packed_uint32_into(&mut self.CBMGDBJHLHO)?;
                 },
                 88 => {
                     self.CBMGDBJHLHO.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.is_get_all = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for IKMOCJBMGOJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CBMGDBJHLHO);
         if self.is_get_all != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.CBMGDBJHLHO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.CBMGDBJHLHO)?;
         if self.is_get_all != false {
-            os.write_bool(12, self.is_get_all)?;
+            os.write_bool(3, self.is_get_all)?;
         }
+        os.write_repeated_packed_uint32(11, &self.CBMGDBJHLHO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for IKMOCJBMGOJ {
     }
 
     fn clear(&mut self) {
-        self.CBMGDBJHLHO.clear();
         self.is_get_all = false;
+        self.CBMGDBJHLHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IKMOCJBMGOJ {
         static instance: IKMOCJBMGOJ = IKMOCJBMGOJ {
-            CBMGDBJHLHO: ::std::vec::Vec::new(),
             is_get_all: false,
+            CBMGDBJHLHO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for IKMOCJBMGOJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IKMOCJBMGOJ.proto\"M\n\x0bIKMOCJBMGOJ\x12\x20\n\x0bCBMGDBJHLHO\x18\
-    \x0b\x20\x03(\rR\x0bCBMGDBJHLHO\x12\x1c\n\nis_get_all\x18\x0c\x20\x01(\
-    \x08R\x08isGetAllb\x06proto3\
+    \n\x11IKMOCJBMGOJ.proto\"M\n\x0bIKMOCJBMGOJ\x12\x1c\n\nis_get_all\x18\
+    \x03\x20\x01(\x08R\x08isGetAll\x12\x20\n\x0bCBMGDBJHLHO\x18\x0b\x20\x03(\
+    \rR\x0bCBMGDBJHLHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

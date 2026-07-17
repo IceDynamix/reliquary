@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPassengerInfo {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.GHPFANGEMAN)
-    pub GHPFANGEMAN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyPassengerInfo.passenger_info_list)
     pub passenger_info_list: ::std::vec::Vec<super::TrainPartyPassenger::TrainPartyPassenger>,
+    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.GHPFANGEMAN)
+    pub GHPFANGEMAN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyPassengerInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainPartyPassengerInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GHPFANGEMAN",
-            |m: &TrainPartyPassengerInfo| { &m.GHPFANGEMAN },
-            |m: &mut TrainPartyPassengerInfo| { &mut m.GHPFANGEMAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "passenger_info_list",
             |m: &TrainPartyPassengerInfo| { &m.passenger_info_list },
             |m: &mut TrainPartyPassengerInfo| { &mut m.passenger_info_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GHPFANGEMAN",
+            |m: &TrainPartyPassengerInfo| { &m.GHPFANGEMAN },
+            |m: &mut TrainPartyPassengerInfo| { &mut m.GHPFANGEMAN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyPassengerInfo>(
             "TrainPartyPassengerInfo",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                98 => {
+                    self.passenger_info_list.push(is.read_message()?);
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.GHPFANGEMAN)?;
                 },
-                80 => {
+                112 => {
                     self.GHPFANGEMAN.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.passenger_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.GHPFANGEMAN);
         for value in &self.passenger_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.GHPFANGEMAN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.GHPFANGEMAN)?;
         for v in &self.passenger_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
+        os.write_repeated_packed_uint32(14, &self.GHPFANGEMAN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     }
 
     fn clear(&mut self) {
-        self.GHPFANGEMAN.clear();
         self.passenger_info_list.clear();
+        self.GHPFANGEMAN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassengerInfo {
         static instance: TrainPartyPassengerInfo = TrainPartyPassengerInfo {
-            GHPFANGEMAN: ::std::vec::Vec::new(),
             passenger_info_list: ::std::vec::Vec::new(),
+            GHPFANGEMAN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPassengerInfo.proto\x1a\x19TrainPartyPassenger.proto\"\
-    \x81\x01\n\x17TrainPartyPassengerInfo\x12\x20\n\x0bGHPFANGEMAN\x18\n\x20\
-    \x03(\rR\x0bGHPFANGEMAN\x12D\n\x13passenger_info_list\x18\x08\x20\x03(\
-    \x0b2\x14.TrainPartyPassengerR\x11passengerInfoListb\x06proto3\
+    \x81\x01\n\x17TrainPartyPassengerInfo\x12D\n\x13passenger_info_list\x18\
+    \x0c\x20\x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoList\x12\x20\
+    \n\x0bGHPFANGEMAN\x18\x0e\x20\x03(\rR\x0bGHPFANGEMANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

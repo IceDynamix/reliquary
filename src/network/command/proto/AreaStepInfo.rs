@@ -79,10 +79,10 @@ impl ::protobuf::Message for AreaStepInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                66 => {
                     self.BKKLGCLOBCD.push(is.read_message()?);
                 },
-                104 => {
+                72 => {
                     self.GKENFCLLLJC = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for AreaStepInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.GKENFCLLLJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GKENFCLLLJC);
+            my_size += ::protobuf::rt::uint32_size(9, self.GKENFCLLLJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AreaStepInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BKKLGCLOBCD {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.GKENFCLLLJC != 0 {
-            os.write_uint32(13, self.GKENFCLLLJC)?;
+            os.write_uint32(9, self.GKENFCLLLJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AreaStepInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AreaStepInfo.proto\x1a\x11IDBCDHIOKEG.proto\"`\n\x0cAreaStepInfo\
-    \x12.\n\x0bBKKLGCLOBCD\x18\x01\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bBKKLGCL\
-    OBCD\x12\x20\n\x0bGKENFCLLLJC\x18\r\x20\x01(\rR\x0bGKENFCLLLJCb\x06proto\
+    \x12.\n\x0bBKKLGCLOBCD\x18\x08\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bBKKLGCL\
+    OBCD\x12\x20\n\x0bGKENFCLLLJC\x18\t\x20\x01(\rR\x0bGKENFCLLLJCb\x06proto\
     3\
 ";
 

@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdShopType {
     // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_NLCDGIPGFDJ)
     LHKCEAHDMDF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_OGOGLCKKCEK)
-    LHKCEAHDMDF_OGOGLCKKCEK = 1513,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_BEBCIIPDOEK)
-    LHKCEAHDMDF_BEBCIIPDOEK = 1527,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LHDGOGDBNFH)
-    LHKCEAHDMDF_LHDGOGDBNFH = 1515,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_ADLEAFAAFKB)
-    LHKCEAHDMDF_ADLEAFAAFKB = 1536,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_CHIGHHKJHHH)
-    LHKCEAHDMDF_CHIGHHKJHHH = 1573,
-    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LOFDPKHCHEA)
-    LHKCEAHDMDF_LOFDPKHCHEA = 1580,
     // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_HJEDLPLFIKL)
-    LHKCEAHDMDF_HJEDLPLFIKL = 1503,
+    LHKCEAHDMDF_HJEDLPLFIKL = 1578,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LHDGOGDBNFH)
+    LHKCEAHDMDF_LHDGOGDBNFH = 1586,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LOFDPKHCHEA)
+    LHKCEAHDMDF_LOFDPKHCHEA = 1593,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_OGOGLCKKCEK)
+    LHKCEAHDMDF_OGOGLCKKCEK = 1581,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_CHIGHHKJHHH)
+    LHKCEAHDMDF_CHIGHHKJHHH = 1525,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_BEBCIIPDOEK)
+    LHKCEAHDMDF_BEBCIIPDOEK = 1558,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_ADLEAFAAFKB)
+    LHKCEAHDMDF_ADLEAFAAFKB = 1588,
 }
 
 impl ::protobuf::Enum for CmdShopType {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for CmdShopType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdShopType> {
         match value {
             0 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ),
-            1513 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
-            1527 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
-            1515 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
-            1536 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
-            1573 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
-            1580 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
-            1503 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL),
+            1578 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL),
+            1586 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
+            1593 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
+            1581 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
+            1525 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
+            1558 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
+            1588 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for CmdShopType {
     fn from_str(str: &str) -> ::std::option::Option<CmdShopType> {
         match str {
             "LHKCEAHDMDF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ),
-            "LHKCEAHDMDF_OGOGLCKKCEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
-            "LHKCEAHDMDF_BEBCIIPDOEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
-            "LHKCEAHDMDF_LHDGOGDBNFH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
-            "LHKCEAHDMDF_ADLEAFAAFKB" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
-            "LHKCEAHDMDF_CHIGHHKJHHH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
-            "LHKCEAHDMDF_LOFDPKHCHEA" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
             "LHKCEAHDMDF_HJEDLPLFIKL" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL),
+            "LHKCEAHDMDF_LHDGOGDBNFH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
+            "LHKCEAHDMDF_LOFDPKHCHEA" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
+            "LHKCEAHDMDF_OGOGLCKKCEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
+            "LHKCEAHDMDF_CHIGHHKJHHH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
+            "LHKCEAHDMDF_BEBCIIPDOEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
+            "LHKCEAHDMDF_ADLEAFAAFKB" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdShopType] = &[
         CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ,
-        CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK,
-        CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK,
-        CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH,
-        CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB,
-        CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH,
-        CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA,
         CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL,
+        CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH,
+        CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA,
+        CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK,
+        CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH,
+        CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK,
+        CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for CmdShopType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ => 0,
-            CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK => 1,
-            CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK => 2,
-            CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH => 3,
-            CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB => 4,
+            CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL => 1,
+            CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH => 2,
+            CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA => 3,
+            CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK => 4,
             CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH => 5,
-            CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA => 6,
-            CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL => 7,
+            CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK => 6,
+            CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl CmdShopType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CmdShopType.proto*\xfc\x01\n\x0bCmdShopType\x12\x1b\n\x17LHKCEAHDM\
-    DF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LHKCEAHDMDF_OGOGLCKKCEK\x10\xe9\x0b\
-    \x12\x1c\n\x17LHKCEAHDMDF_BEBCIIPDOEK\x10\xf7\x0b\x12\x1c\n\x17LHKCEAHDM\
-    DF_LHDGOGDBNFH\x10\xeb\x0b\x12\x1c\n\x17LHKCEAHDMDF_ADLEAFAAFKB\x10\x80\
-    \x0c\x12\x1c\n\x17LHKCEAHDMDF_CHIGHHKJHHH\x10\xa5\x0c\x12\x1c\n\x17LHKCE\
-    AHDMDF_LOFDPKHCHEA\x10\xac\x0c\x12\x1c\n\x17LHKCEAHDMDF_HJEDLPLFIKL\x10\
-    \xdf\x0bb\x06proto3\
+    DF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LHKCEAHDMDF_HJEDLPLFIKL\x10\xaa\x0c\
+    \x12\x1c\n\x17LHKCEAHDMDF_LHDGOGDBNFH\x10\xb2\x0c\x12\x1c\n\x17LHKCEAHDM\
+    DF_LOFDPKHCHEA\x10\xb9\x0c\x12\x1c\n\x17LHKCEAHDMDF_OGOGLCKKCEK\x10\xad\
+    \x0c\x12\x1c\n\x17LHKCEAHDMDF_CHIGHHKJHHH\x10\xf5\x0b\x12\x1c\n\x17LHKCE\
+    AHDMDF_BEBCIIPDOEK\x10\x96\x0c\x12\x1c\n\x17LHKCEAHDMDF_ADLEAFAAFKB\x10\
+    \xb4\x0cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

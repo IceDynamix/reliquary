@@ -28,6 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JJHJCIAPADP {
     // message fields
+    // @@protoc_insertion_point(field:JJHJCIAPADP.GLHDCCPOGHL)
+    pub GLHDCCPOGHL: ::protobuf::MessageField<super::ABJGLPCOMMK::ABJGLPCOMMK>,
+    // @@protoc_insertion_point(field:JJHJCIAPADP.JBIFDJKPHIJ)
+    pub JBIFDJKPHIJ: ::protobuf::MessageField<super::NKAEOPAAJLG::NKAEOPAAJLG>,
     // @@protoc_insertion_point(field:JJHJCIAPADP.EAGPOCAGMCA)
     pub EAGPOCAGMCA: u32,
     // special fields
@@ -47,8 +51,18 @@ impl JJHJCIAPADP {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABJGLPCOMMK::ABJGLPCOMMK>(
+            "GLHDCCPOGHL",
+            |m: &JJHJCIAPADP| { &m.GLHDCCPOGHL },
+            |m: &mut JJHJCIAPADP| { &mut m.GLHDCCPOGHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKAEOPAAJLG::NKAEOPAAJLG>(
+            "JBIFDJKPHIJ",
+            |m: &JJHJCIAPADP| { &m.JBIFDJKPHIJ },
+            |m: &mut JJHJCIAPADP| { &mut m.JBIFDJKPHIJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAGPOCAGMCA",
             |m: &JJHJCIAPADP| { &m.EAGPOCAGMCA },
@@ -72,6 +86,12 @@ impl ::protobuf::Message for JJHJCIAPADP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                810 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLHDCCPOGHL)?;
+                },
+                818 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBIFDJKPHIJ)?;
+                },
                 8 => {
                     self.EAGPOCAGMCA = is.read_uint32()?;
                 },
@@ -87,6 +107,14 @@ impl ::protobuf::Message for JJHJCIAPADP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.GLHDCCPOGHL.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.JBIFDJKPHIJ.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.EAGPOCAGMCA != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.EAGPOCAGMCA);
         }
@@ -96,6 +124,12 @@ impl ::protobuf::Message for JJHJCIAPADP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.GLHDCCPOGHL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
+        }
+        if let Some(v) = self.JBIFDJKPHIJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
+        }
         if self.EAGPOCAGMCA != 0 {
             os.write_uint32(1, self.EAGPOCAGMCA)?;
         }
@@ -116,12 +150,16 @@ impl ::protobuf::Message for JJHJCIAPADP {
     }
 
     fn clear(&mut self) {
+        self.GLHDCCPOGHL.clear();
+        self.JBIFDJKPHIJ.clear();
         self.EAGPOCAGMCA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JJHJCIAPADP {
         static instance: JJHJCIAPADP = JJHJCIAPADP {
+            GLHDCCPOGHL: ::protobuf::MessageField::none(),
+            JBIFDJKPHIJ: ::protobuf::MessageField::none(),
             EAGPOCAGMCA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -147,8 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for JJHJCIAPADP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JJHJCIAPADP.proto\"/\n\x0bJJHJCIAPADP\x12\x20\n\x0bEAGPOCAGMCA\x18\
-    \x01\x20\x01(\rR\x0bEAGPOCAGMCAb\x06proto3\
+    \n\x11JJHJCIAPADP.proto\x1a\x11ABJGLPCOMMK.proto\x1a\x11NKAEOPAAJLG.prot\
+    o\"\x8f\x01\n\x0bJJHJCIAPADP\x12.\n\x0bGLHDCCPOGHL\x18e\x20\x01(\x0b2\
+    \x0c.ABJGLPCOMMKR\x0bGLHDCCPOGHL\x12.\n\x0bJBIFDJKPHIJ\x18f\x20\x01(\x0b\
+    2\x0c.NKAEOPAAJLGR\x0bJBIFDJKPHIJ\x12\x20\n\x0bEAGPOCAGMCA\x18\x01\x20\
+    \x01(\rR\x0bEAGPOCAGMCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -165,7 +206,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::ABJGLPCOMMK::file_descriptor().clone());
+            deps.push(super::NKAEOPAAJLG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JJHJCIAPADP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

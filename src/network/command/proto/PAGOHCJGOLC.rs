@@ -86,13 +86,13 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.PPFJGJNCOKI = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.is_meet = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PPFJGJNCOKI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PPFJGJNCOKI);
+            my_size += ::protobuf::rt::uint32_size(7, self.PPFJGJNCOKI);
         }
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(10, self.DOOACEHOPEE);
         }
         if self.is_meet != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for PAGOHCJGOLC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PPFJGJNCOKI != 0 {
-            os.write_uint32(12, self.PPFJGJNCOKI)?;
+            os.write_uint32(7, self.PPFJGJNCOKI)?;
         }
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(11, self.DOOACEHOPEE)?;
+            os.write_uint32(10, self.DOOACEHOPEE)?;
         }
         if self.is_meet != false {
-            os.write_bool(4, self.is_meet)?;
+            os.write_bool(12, self.is_meet)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PAGOHCJGOLC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PAGOHCJGOLC.proto\"j\n\x0bPAGOHCJGOLC\x12\x20\n\x0bPPFJGJNCOKI\x18\
-    \x0c\x20\x01(\rR\x0bPPFJGJNCOKI\x12\x20\n\x0bDOOACEHOPEE\x18\x0b\x20\x01\
-    (\rR\x0bDOOACEHOPEE\x12\x17\n\x07is_meet\x18\x04\x20\x01(\x08R\x06isMeet\
-    b\x06proto3\
+    \x07\x20\x01(\rR\x0bPPFJGJNCOKI\x12\x20\n\x0bDOOACEHOPEE\x18\n\x20\x01(\
+    \rR\x0bDOOACEHOPEE\x12\x17\n\x07is_meet\x18\x0c\x20\x01(\x08R\x06isMeetb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,7 +30,7 @@ pub enum CmdPlayerSyncType {
     // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.OFHDDJMLOGG_LIDGOKIFPOJ)
     OFHDDJMLOGG_LIDGOKIFPOJ = 0,
     // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.OFHDDJMLOGG_LMDPMECFOGM)
-    OFHDDJMLOGG_LMDPMECFOGM = 673,
+    OFHDDJMLOGG_LMDPMECFOGM = 625,
 }
 
 impl ::protobuf::Enum for CmdPlayerSyncType {
@@ -43,7 +43,7 @@ impl ::protobuf::Enum for CmdPlayerSyncType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerSyncType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ),
-            673 => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM),
+            625 => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM),
             _ => ::std::option::Option::None
         }
     }
@@ -91,8 +91,8 @@ impl CmdPlayerSyncType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CmdPlayerSyncType.proto*N\n\x11CmdPlayerSyncType\x12\x1b\n\x17OFHD\
-    DJMLOGG_LIDGOKIFPOJ\x10\0\x12\x1c\n\x17OFHDDJMLOGG_LMDPMECFOGM\x10\xa1\
-    \x05b\x06proto3\
+    DJMLOGG_LIDGOKIFPOJ\x10\0\x12\x1c\n\x17OFHDDJMLOGG_LMDPMECFOGM\x10\xf1\
+    \x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKLPMDCIEIG {
     // message fields
-    // @@protoc_insertion_point(field:OKLPMDCIEIG.JOHMBBFODBB)
-    pub JOHMBBFODBB: u32,
     // @@protoc_insertion_point(field:OKLPMDCIEIG.IPLNNHLGDJK)
     pub IPLNNHLGDJK: u32,
+    // @@protoc_insertion_point(field:OKLPMDCIEIG.JOHMBBFODBB)
+    pub JOHMBBFODBB: u32,
     // @@protoc_insertion_point(field:OKLPMDCIEIG.ADNKLLMHLCJ)
     pub ADNKLLMHLCJ: f64,
     // @@protoc_insertion_point(field:OKLPMDCIEIG.GADGHAGGBNO)
@@ -56,14 +56,14 @@ impl OKLPMDCIEIG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOHMBBFODBB",
-            |m: &OKLPMDCIEIG| { &m.JOHMBBFODBB },
-            |m: &mut OKLPMDCIEIG| { &mut m.JOHMBBFODBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPLNNHLGDJK",
             |m: &OKLPMDCIEIG| { &m.IPLNNHLGDJK },
             |m: &mut OKLPMDCIEIG| { &mut m.IPLNNHLGDJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOHMBBFODBB",
+            |m: &OKLPMDCIEIG| { &m.JOHMBBFODBB },
+            |m: &mut OKLPMDCIEIG| { &mut m.JOHMBBFODBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ADNKLLMHLCJ",
@@ -93,11 +93,11 @@ impl ::protobuf::Message for OKLPMDCIEIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.JOHMBBFODBB = is.read_uint32()?;
-                },
                 8 => {
                     self.IPLNNHLGDJK = is.read_uint32()?;
+                },
+                16 => {
+                    self.JOHMBBFODBB = is.read_uint32()?;
                 },
                 25 => {
                     self.ADNKLLMHLCJ = is.read_double()?;
@@ -117,11 +117,11 @@ impl ::protobuf::Message for OKLPMDCIEIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JOHMBBFODBB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JOHMBBFODBB);
-        }
         if self.IPLNNHLGDJK != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.IPLNNHLGDJK);
+        }
+        if self.JOHMBBFODBB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JOHMBBFODBB);
         }
         if self.ADNKLLMHLCJ != 0. {
             my_size += 1 + 8;
@@ -135,11 +135,11 @@ impl ::protobuf::Message for OKLPMDCIEIG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JOHMBBFODBB != 0 {
-            os.write_uint32(2, self.JOHMBBFODBB)?;
-        }
         if self.IPLNNHLGDJK != 0 {
             os.write_uint32(1, self.IPLNNHLGDJK)?;
+        }
+        if self.JOHMBBFODBB != 0 {
+            os.write_uint32(2, self.JOHMBBFODBB)?;
         }
         if self.ADNKLLMHLCJ != 0. {
             os.write_double(3, self.ADNKLLMHLCJ)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for OKLPMDCIEIG {
     }
 
     fn clear(&mut self) {
-        self.JOHMBBFODBB = 0;
         self.IPLNNHLGDJK = 0;
+        self.JOHMBBFODBB = 0;
         self.ADNKLLMHLCJ = 0.;
         self.GADGHAGGBNO = 0.;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for OKLPMDCIEIG {
 
     fn default_instance() -> &'static OKLPMDCIEIG {
         static instance: OKLPMDCIEIG = OKLPMDCIEIG {
-            JOHMBBFODBB: 0,
             IPLNNHLGDJK: 0,
+            JOHMBBFODBB: 0,
             ADNKLLMHLCJ: 0.,
             GADGHAGGBNO: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for OKLPMDCIEIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OKLPMDCIEIG.proto\"\x95\x01\n\x0bOKLPMDCIEIG\x12\x20\n\x0bJOHMBBFO\
-    DBB\x18\x02\x20\x01(\rR\x0bJOHMBBFODBB\x12\x20\n\x0bIPLNNHLGDJK\x18\x01\
-    \x20\x01(\rR\x0bIPLNNHLGDJK\x12\x20\n\x0bADNKLLMHLCJ\x18\x03\x20\x01(\
+    \n\x11OKLPMDCIEIG.proto\"\x95\x01\n\x0bOKLPMDCIEIG\x12\x20\n\x0bIPLNNHLG\
+    DJK\x18\x01\x20\x01(\rR\x0bIPLNNHLGDJK\x12\x20\n\x0bJOHMBBFODBB\x18\x02\
+    \x20\x01(\rR\x0bJOHMBBFODBB\x12\x20\n\x0bADNKLLMHLCJ\x18\x03\x20\x01(\
     \x01R\x0bADNKLLMHLCJ\x12\x20\n\x0bGADGHAGGBNO\x18\x04\x20\x01(\x01R\x0bG\
     ADGHAGGBNOb\x06proto3\
 ";

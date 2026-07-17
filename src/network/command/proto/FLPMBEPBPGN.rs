@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLPMBEPBPGN {
     // message fields
-    // @@protoc_insertion_point(field:FLPMBEPBPGN.APHGAEAPLJF)
-    pub APHGAEAPLJF: ::std::vec::Vec<super::LMKECAPDMAC::LMKECAPDMAC>,
+    // @@protoc_insertion_point(field:FLPMBEPBPGN.skill_list)
+    pub skill_list: ::std::vec::Vec<super::LMKECAPDMAC::LMKECAPDMAC>,
     // special fields
     // @@protoc_insertion_point(special_field:FLPMBEPBPGN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FLPMBEPBPGN {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APHGAEAPLJF",
-            |m: &FLPMBEPBPGN| { &m.APHGAEAPLJF },
-            |m: &mut FLPMBEPBPGN| { &mut m.APHGAEAPLJF },
+            "skill_list",
+            |m: &FLPMBEPBPGN| { &m.skill_list },
+            |m: &mut FLPMBEPBPGN| { &mut m.skill_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLPMBEPBPGN>(
             "FLPMBEPBPGN",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FLPMBEPBPGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.APHGAEAPLJF.push(is.read_message()?);
+                58 => {
+                    self.skill_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FLPMBEPBPGN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.APHGAEAPLJF {
+        for value in &self.skill_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FLPMBEPBPGN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.APHGAEAPLJF {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.skill_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FLPMBEPBPGN {
     }
 
     fn clear(&mut self) {
-        self.APHGAEAPLJF.clear();
+        self.skill_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLPMBEPBPGN {
         static instance: FLPMBEPBPGN = FLPMBEPBPGN {
-            APHGAEAPLJF: ::std::vec::Vec::new(),
+            skill_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FLPMBEPBPGN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FLPMBEPBPGN.proto\x1a\x11LMKECAPDMAC.proto\"=\n\x0bFLPMBEPBPGN\x12\
-    .\n\x0bAPHGAEAPLJF\x18\r\x20\x03(\x0b2\x0c.LMKECAPDMACR\x0bAPHGAEAPLJFb\
-    \x06proto3\
+    \n\x11FLPMBEPBPGN.proto\x1a\x11LMKECAPDMAC.proto\":\n\x0bFLPMBEPBPGN\x12\
+    +\n\nskill_list\x18\x07\x20\x03(\x0b2\x0c.LMKECAPDMACR\tskillListb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

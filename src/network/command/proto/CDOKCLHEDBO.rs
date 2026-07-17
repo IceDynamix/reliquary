@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDOKCLHEDBO {
     // message fields
-    // @@protoc_insertion_point(field:CDOKCLHEDBO.EGGJFCELHNK)
-    pub EGGJFCELHNK: ::protobuf::MessageField<super::PHINPOJOJGD::PHINPOJOJGD>,
     // @@protoc_insertion_point(field:CDOKCLHEDBO.retcode)
     pub retcode: u32,
     // special fields
@@ -49,13 +47,8 @@ impl CDOKCLHEDBO {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHINPOJOJGD::PHINPOJOJGD>(
-            "EGGJFCELHNK",
-            |m: &CDOKCLHEDBO| { &m.EGGJFCELHNK },
-            |m: &mut CDOKCLHEDBO| { &mut m.EGGJFCELHNK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &CDOKCLHEDBO| { &m.retcode },
@@ -79,10 +72,7 @@ impl ::protobuf::Message for CDOKCLHEDBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EGGJFCELHNK)?;
-                },
-                40 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +87,8 @@ impl ::protobuf::Message for CDOKCLHEDBO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EGGJFCELHNK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +96,8 @@ impl ::protobuf::Message for CDOKCLHEDBO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EGGJFCELHNK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +116,12 @@ impl ::protobuf::Message for CDOKCLHEDBO {
     }
 
     fn clear(&mut self) {
-        self.EGGJFCELHNK.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CDOKCLHEDBO {
         static instance: CDOKCLHEDBO = CDOKCLHEDBO {
-            EGGJFCELHNK: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for CDOKCLHEDBO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CDOKCLHEDBO.proto\x1a\x11PHINPOJOJGD.proto\"W\n\x0bCDOKCLHEDBO\x12\
-    .\n\x0bEGGJFCELHNK\x18\x0c\x20\x01(\x0b2\x0c.PHINPOJOJGDR\x0bEGGJFCELHNK\
-    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x11CDOKCLHEDBO.proto\"'\n\x0bCDOKCLHEDBO\x12\x18\n\x07retcode\x18\x0f\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -185,8 +165,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PHINPOJOJGD::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CDOKCLHEDBO::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

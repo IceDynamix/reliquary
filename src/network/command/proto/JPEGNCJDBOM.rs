@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JPEGNCJDBOM {
     // message fields
-    // @@protoc_insertion_point(field:JPEGNCJDBOM.BLLLEIGDMOI)
-    pub BLLLEIGDMOI: u32,
     // @@protoc_insertion_point(field:JPEGNCJDBOM.AHAPDFNPICG)
     pub AHAPDFNPICG: u32,
     // @@protoc_insertion_point(field:JPEGNCJDBOM.AFHMLGFILFN)
     pub AFHMLGFILFN: u32,
+    // @@protoc_insertion_point(field:JPEGNCJDBOM.BLLLEIGDMOI)
+    pub BLLLEIGDMOI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPEGNCJDBOM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl JPEGNCJDBOM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLLLEIGDMOI",
-            |m: &JPEGNCJDBOM| { &m.BLLLEIGDMOI },
-            |m: &mut JPEGNCJDBOM| { &mut m.BLLLEIGDMOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHAPDFNPICG",
             |m: &JPEGNCJDBOM| { &m.AHAPDFNPICG },
             |m: &mut JPEGNCJDBOM| { &mut m.AHAPDFNPICG },
@@ -67,6 +62,11 @@ impl JPEGNCJDBOM {
             "AFHMLGFILFN",
             |m: &JPEGNCJDBOM| { &m.AFHMLGFILFN },
             |m: &mut JPEGNCJDBOM| { &mut m.AFHMLGFILFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLLLEIGDMOI",
+            |m: &JPEGNCJDBOM| { &m.BLLLEIGDMOI },
+            |m: &mut JPEGNCJDBOM| { &mut m.BLLLEIGDMOI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPEGNCJDBOM>(
             "JPEGNCJDBOM",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JPEGNCJDBOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.BLLLEIGDMOI = is.read_uint32()?;
-                },
-                64 => {
+                40 => {
                     self.AHAPDFNPICG = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.AFHMLGFILFN = is.read_uint32()?;
+                },
+                104 => {
+                    self.BLLLEIGDMOI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JPEGNCJDBOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLLLEIGDMOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BLLLEIGDMOI);
-        }
         if self.AHAPDFNPICG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AHAPDFNPICG);
+            my_size += ::protobuf::rt::uint32_size(5, self.AHAPDFNPICG);
         }
         if self.AFHMLGFILFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AFHMLGFILFN);
+            my_size += ::protobuf::rt::uint32_size(7, self.AFHMLGFILFN);
+        }
+        if self.BLLLEIGDMOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BLLLEIGDMOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JPEGNCJDBOM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLLLEIGDMOI != 0 {
-            os.write_uint32(12, self.BLLLEIGDMOI)?;
-        }
         if self.AHAPDFNPICG != 0 {
-            os.write_uint32(8, self.AHAPDFNPICG)?;
+            os.write_uint32(5, self.AHAPDFNPICG)?;
         }
         if self.AFHMLGFILFN != 0 {
-            os.write_uint32(6, self.AFHMLGFILFN)?;
+            os.write_uint32(7, self.AFHMLGFILFN)?;
+        }
+        if self.BLLLEIGDMOI != 0 {
+            os.write_uint32(13, self.BLLLEIGDMOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JPEGNCJDBOM {
     }
 
     fn clear(&mut self) {
-        self.BLLLEIGDMOI = 0;
         self.AHAPDFNPICG = 0;
         self.AFHMLGFILFN = 0;
+        self.BLLLEIGDMOI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPEGNCJDBOM {
         static instance: JPEGNCJDBOM = JPEGNCJDBOM {
-            BLLLEIGDMOI: 0,
             AHAPDFNPICG: 0,
             AFHMLGFILFN: 0,
+            BLLLEIGDMOI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JPEGNCJDBOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPEGNCJDBOM.proto\"s\n\x0bJPEGNCJDBOM\x12\x20\n\x0bBLLLEIGDMOI\x18\
-    \x0c\x20\x01(\rR\x0bBLLLEIGDMOI\x12\x20\n\x0bAHAPDFNPICG\x18\x08\x20\x01\
-    (\rR\x0bAHAPDFNPICG\x12\x20\n\x0bAFHMLGFILFN\x18\x06\x20\x01(\rR\x0bAFHM\
-    LGFILFNb\x06proto3\
+    \n\x11JPEGNCJDBOM.proto\"s\n\x0bJPEGNCJDBOM\x12\x20\n\x0bAHAPDFNPICG\x18\
+    \x05\x20\x01(\rR\x0bAHAPDFNPICG\x12\x20\n\x0bAFHMLGFILFN\x18\x07\x20\x01\
+    (\rR\x0bAFHMLGFILFN\x12\x20\n\x0bBLLLEIGDMOI\x18\r\x20\x01(\rR\x0bBLLLEI\
+    GDMOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

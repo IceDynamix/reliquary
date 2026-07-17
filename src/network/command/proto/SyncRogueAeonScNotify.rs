@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncRogueAeonScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGDGIIOKHGF)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncRogueAeonScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BGDGIIOKHGF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueAeonScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSyncRogueAeonScNotify.proto\x1a\x11JIBBEEAIDIC.proto\"G\n\x15SyncR\
-    ogueAeonScNotify\x12.\n\x0bBGDGIIOKHGF\x18\x01\x20\x01(\x0b2\x0c.JIBBEEA\
+    ogueAeonScNotify\x12.\n\x0bBGDGIIOKHGF\x18\x04\x20\x01(\x0b2\x0c.JIBBEEA\
     IDICR\x0bBGDGIIOKHGFb\x06proto3\
 ";
 

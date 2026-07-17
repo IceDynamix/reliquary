@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KJMHIDMOBMB {
     // message fields
-    // @@protoc_insertion_point(field:KJMHIDMOBMB.IKLJBAJBOPG)
-    pub IKLJBAJBOPG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KJMHIDMOBMB.JBIDLKCBBCF)
-    pub JBIDLKCBBCF: u64,
+    // @@protoc_insertion_point(field:KJMHIDMOBMB.battle_power)
+    pub battle_power: u64,
+    // @@protoc_insertion_point(field:KJMHIDMOBMB.chapter_index)
+    pub chapter_index: u32,
+    // @@protoc_insertion_point(field:KJMHIDMOBMB.captain_num)
+    pub captain_num: u32,
     // @@protoc_insertion_point(field:KJMHIDMOBMB.OAJGKOOFNBL)
     pub OAJGKOOFNBL: u32,
-    // @@protoc_insertion_point(field:KJMHIDMOBMB.LGGDEGPEAFL)
-    pub LGGDEGPEAFL: u32,
-    // @@protoc_insertion_point(field:KJMHIDMOBMB.CNHCHIPIIDD)
-    pub CNHCHIPIIDD: bool,
-    // @@protoc_insertion_point(field:KJMHIDMOBMB.CGDNMDDIHKA)
-    pub CGDNMDDIHKA: u32,
+    // @@protoc_insertion_point(field:KJMHIDMOBMB.is_final_act_finished)
+    pub is_final_act_finished: bool,
+    // @@protoc_insertion_point(field:KJMHIDMOBMB.IKLJBAJBOPG)
+    pub IKLJBAJBOPG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KJMHIDMOBMB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,15 +59,20 @@ impl KJMHIDMOBMB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IKLJBAJBOPG",
-            |m: &KJMHIDMOBMB| { &m.IKLJBAJBOPG },
-            |m: &mut KJMHIDMOBMB| { &mut m.IKLJBAJBOPG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "battle_power",
+            |m: &KJMHIDMOBMB| { &m.battle_power },
+            |m: &mut KJMHIDMOBMB| { &mut m.battle_power },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBIDLKCBBCF",
-            |m: &KJMHIDMOBMB| { &m.JBIDLKCBBCF },
-            |m: &mut KJMHIDMOBMB| { &mut m.JBIDLKCBBCF },
+            "chapter_index",
+            |m: &KJMHIDMOBMB| { &m.chapter_index },
+            |m: &mut KJMHIDMOBMB| { &mut m.chapter_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "captain_num",
+            |m: &KJMHIDMOBMB| { &m.captain_num },
+            |m: &mut KJMHIDMOBMB| { &mut m.captain_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OAJGKOOFNBL",
@@ -75,19 +80,14 @@ impl KJMHIDMOBMB {
             |m: &mut KJMHIDMOBMB| { &mut m.OAJGKOOFNBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGGDEGPEAFL",
-            |m: &KJMHIDMOBMB| { &m.LGGDEGPEAFL },
-            |m: &mut KJMHIDMOBMB| { &mut m.LGGDEGPEAFL },
+            "is_final_act_finished",
+            |m: &KJMHIDMOBMB| { &m.is_final_act_finished },
+            |m: &mut KJMHIDMOBMB| { &mut m.is_final_act_finished },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CNHCHIPIIDD",
-            |m: &KJMHIDMOBMB| { &m.CNHCHIPIIDD },
-            |m: &mut KJMHIDMOBMB| { &mut m.CNHCHIPIIDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CGDNMDDIHKA",
-            |m: &KJMHIDMOBMB| { &m.CGDNMDDIHKA },
-            |m: &mut KJMHIDMOBMB| { &mut m.CGDNMDDIHKA },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IKLJBAJBOPG",
+            |m: &KJMHIDMOBMB| { &m.IKLJBAJBOPG },
+            |m: &mut KJMHIDMOBMB| { &mut m.IKLJBAJBOPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KJMHIDMOBMB>(
             "KJMHIDMOBMB",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for KJMHIDMOBMB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IKLJBAJBOPG)?;
+                8 => {
+                    self.battle_power = is.read_uint64()?;
                 },
-                80 => {
-                    self.IKLJBAJBOPG.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.JBIDLKCBBCF = is.read_uint64()?;
-                },
-                64 => {
-                    self.OAJGKOOFNBL = is.read_uint32()?;
+                32 => {
+                    self.chapter_index = is.read_uint32()?;
                 },
                 40 => {
-                    self.LGGDEGPEAFL = is.read_uint32()?;
+                    self.captain_num = is.read_uint32()?;
                 },
-                104 => {
-                    self.CNHCHIPIIDD = is.read_bool()?;
+                88 => {
+                    self.OAJGKOOFNBL = is.read_uint32()?;
                 },
-                56 => {
-                    self.CGDNMDDIHKA = is.read_uint32()?;
+                96 => {
+                    self.is_final_act_finished = is.read_bool()?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IKLJBAJBOPG)?;
+                },
+                112 => {
+                    self.IKLJBAJBOPG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,44 +140,44 @@ impl ::protobuf::Message for KJMHIDMOBMB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IKLJBAJBOPG);
-        if self.JBIDLKCBBCF != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.JBIDLKCBBCF);
+        if self.battle_power != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.battle_power);
+        }
+        if self.chapter_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.chapter_index);
+        }
+        if self.captain_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.captain_num);
         }
         if self.OAJGKOOFNBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OAJGKOOFNBL);
+            my_size += ::protobuf::rt::uint32_size(11, self.OAJGKOOFNBL);
         }
-        if self.LGGDEGPEAFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LGGDEGPEAFL);
-        }
-        if self.CNHCHIPIIDD != false {
+        if self.is_final_act_finished != false {
             my_size += 1 + 1;
         }
-        if self.CGDNMDDIHKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CGDNMDDIHKA);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IKLJBAJBOPG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.IKLJBAJBOPG)?;
-        if self.JBIDLKCBBCF != 0 {
-            os.write_uint64(9, self.JBIDLKCBBCF)?;
+        if self.battle_power != 0 {
+            os.write_uint64(1, self.battle_power)?;
+        }
+        if self.chapter_index != 0 {
+            os.write_uint32(4, self.chapter_index)?;
+        }
+        if self.captain_num != 0 {
+            os.write_uint32(5, self.captain_num)?;
         }
         if self.OAJGKOOFNBL != 0 {
-            os.write_uint32(8, self.OAJGKOOFNBL)?;
+            os.write_uint32(11, self.OAJGKOOFNBL)?;
         }
-        if self.LGGDEGPEAFL != 0 {
-            os.write_uint32(5, self.LGGDEGPEAFL)?;
+        if self.is_final_act_finished != false {
+            os.write_bool(12, self.is_final_act_finished)?;
         }
-        if self.CNHCHIPIIDD != false {
-            os.write_bool(13, self.CNHCHIPIIDD)?;
-        }
-        if self.CGDNMDDIHKA != 0 {
-            os.write_uint32(7, self.CGDNMDDIHKA)?;
-        }
+        os.write_repeated_packed_uint32(14, &self.IKLJBAJBOPG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -195,23 +195,23 @@ impl ::protobuf::Message for KJMHIDMOBMB {
     }
 
     fn clear(&mut self) {
-        self.IKLJBAJBOPG.clear();
-        self.JBIDLKCBBCF = 0;
+        self.battle_power = 0;
+        self.chapter_index = 0;
+        self.captain_num = 0;
         self.OAJGKOOFNBL = 0;
-        self.LGGDEGPEAFL = 0;
-        self.CNHCHIPIIDD = false;
-        self.CGDNMDDIHKA = 0;
+        self.is_final_act_finished = false;
+        self.IKLJBAJBOPG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KJMHIDMOBMB {
         static instance: KJMHIDMOBMB = KJMHIDMOBMB {
-            IKLJBAJBOPG: ::std::vec::Vec::new(),
-            JBIDLKCBBCF: 0,
+            battle_power: 0,
+            chapter_index: 0,
+            captain_num: 0,
             OAJGKOOFNBL: 0,
-            LGGDEGPEAFL: 0,
-            CNHCHIPIIDD: false,
-            CGDNMDDIHKA: 0,
+            is_final_act_finished: false,
+            IKLJBAJBOPG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,12 +236,13 @@ impl ::protobuf::reflect::ProtobufValue for KJMHIDMOBMB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KJMHIDMOBMB.proto\"\xd9\x01\n\x0bKJMHIDMOBMB\x12\x20\n\x0bIKLJBAJB\
-    OPG\x18\n\x20\x03(\rR\x0bIKLJBAJBOPG\x12\x20\n\x0bJBIDLKCBBCF\x18\t\x20\
-    \x01(\x04R\x0bJBIDLKCBBCF\x12\x20\n\x0bOAJGKOOFNBL\x18\x08\x20\x01(\rR\
-    \x0bOAJGKOOFNBL\x12\x20\n\x0bLGGDEGPEAFL\x18\x05\x20\x01(\rR\x0bLGGDEGPE\
-    AFL\x12\x20\n\x0bCNHCHIPIIDD\x18\r\x20\x01(\x08R\x0bCNHCHIPIIDD\x12\x20\
-    \n\x0bCGDNMDDIHKA\x18\x07\x20\x01(\rR\x0bCGDNMDDIHKAb\x06proto3\
+    \n\x11KJMHIDMOBMB.proto\"\xed\x01\n\x0bKJMHIDMOBMB\x12!\n\x0cbattle_powe\
+    r\x18\x01\x20\x01(\x04R\x0bbattlePower\x12#\n\rchapter_index\x18\x04\x20\
+    \x01(\rR\x0cchapterIndex\x12\x1f\n\x0bcaptain_num\x18\x05\x20\x01(\rR\nc\
+    aptainNum\x12\x20\n\x0bOAJGKOOFNBL\x18\x0b\x20\x01(\rR\x0bOAJGKOOFNBL\
+    \x121\n\x15is_final_act_finished\x18\x0c\x20\x01(\x08R\x12isFinalActFini\
+    shed\x12\x20\n\x0bIKLJBAJBOPG\x18\x0e\x20\x03(\rR\x0bIKLJBAJBOPGb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

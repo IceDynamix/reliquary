@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetLocalLegendDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetLocalLegendDataScRsp.level_data_list)
-    pub level_data_list: ::std::vec::Vec<super::JJEFLBCLBFN::JJEFLBCLBFN>,
     // @@protoc_insertion_point(field:GetLocalLegendDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetLocalLegendDataScRsp.level_data_list)
+    pub level_data_list: ::std::vec::Vec<super::JJEFLBCLBFN::JJEFLBCLBFN>,
     // special fields
     // @@protoc_insertion_point(special_field:GetLocalLegendDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetLocalLegendDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "level_data_list",
-            |m: &GetLocalLegendDataScRsp| { &m.level_data_list },
-            |m: &mut GetLocalLegendDataScRsp| { &mut m.level_data_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetLocalLegendDataScRsp| { &m.retcode },
             |m: &mut GetLocalLegendDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "level_data_list",
+            |m: &GetLocalLegendDataScRsp| { &m.level_data_list },
+            |m: &mut GetLocalLegendDataScRsp| { &mut m.level_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetLocalLegendDataScRsp>(
             "GetLocalLegendDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetLocalLegendDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.level_data_list.push(is.read_message()?);
-                },
-                56 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    self.level_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetLocalLegendDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         for value in &self.level_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.level_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
+        for v in &self.level_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetLocalLegendDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.level_data_list.clear();
         self.retcode = 0;
+        self.level_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetLocalLegendDataScRsp {
         static instance: GetLocalLegendDataScRsp = GetLocalLegendDataScRsp {
-            level_data_list: ::std::vec::Vec::new(),
             retcode: 0,
+            level_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetLocalLegendDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetLocalLegendDataScRsp.proto\x1a\x11JJEFLBCLBFN.proto\"i\n\x17Get\
-    LocalLegendDataScRsp\x124\n\x0flevel_data_list\x18\x0c\x20\x03(\x0b2\x0c\
-    .JJEFLBCLBFNR\rlevelDataList\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    LocalLegendDataScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    \x124\n\x0flevel_data_list\x18\r\x20\x03(\x0b2\x0c.JJEFLBCLBFNR\rlevelDa\
+    taListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

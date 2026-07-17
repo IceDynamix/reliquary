@@ -72,7 +72,7 @@ impl ::protobuf::Message for EACCOJLOPJL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                122 => {
                     self.CDAMKBGLNKO.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EACCOJLOPJL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.CDAMKBGLNKO {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for EACCOJLOPJL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EACCOJLOPJL.proto\x1a\x11CELLCCKJIGL.proto\"=\n\x0bEACCOJLOPJL\x12\
-    .\n\x0bCDAMKBGLNKO\x18\x04\x20\x03(\x0b2\x0c.CELLCCKJIGLR\x0bCDAMKBGLNKO\
+    .\n\x0bCDAMKBGLNKO\x18\x0f\x20\x03(\x0b2\x0c.CELLCCKJIGLR\x0bCDAMKBGLNKO\
     b\x06proto3\
 ";
 

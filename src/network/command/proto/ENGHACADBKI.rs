@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENGHACADBKI {
     // message fields
-    // @@protoc_insertion_point(field:ENGHACADBKI.FMIFPFAHFBL)
-    pub FMIFPFAHFBL: u32,
-    // @@protoc_insertion_point(field:ENGHACADBKI.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::TreasureDungeonRecordType::TreasureDungeonRecordType>,
-    // @@protoc_insertion_point(field:ENGHACADBKI.EGKLFMCHLCO)
-    pub EGKLFMCHLCO: u32,
     // @@protoc_insertion_point(field:ENGHACADBKI.LDMHLKGILOD)
     pub LDMHLKGILOD: u32,
     // @@protoc_insertion_point(field:ENGHACADBKI.FFKDFODDBDN)
     pub FFKDFODDBDN: u32,
+    // @@protoc_insertion_point(field:ENGHACADBKI.EGKLFMCHLCO)
+    pub EGKLFMCHLCO: u32,
+    // @@protoc_insertion_point(field:ENGHACADBKI.FMIFPFAHFBL)
+    pub FMIFPFAHFBL: u32,
+    // @@protoc_insertion_point(field:ENGHACADBKI.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::TreasureDungeonRecordType::TreasureDungeonRecordType>,
     // special fields
     // @@protoc_insertion_point(special_field:ENGHACADBKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,21 +58,6 @@ impl ENGHACADBKI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMIFPFAHFBL",
-            |m: &ENGHACADBKI| { &m.FMIFPFAHFBL },
-            |m: &mut ENGHACADBKI| { &mut m.FMIFPFAHFBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &ENGHACADBKI| { &m.type_ },
-            |m: &mut ENGHACADBKI| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGKLFMCHLCO",
-            |m: &ENGHACADBKI| { &m.EGKLFMCHLCO },
-            |m: &mut ENGHACADBKI| { &mut m.EGKLFMCHLCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LDMHLKGILOD",
             |m: &ENGHACADBKI| { &m.LDMHLKGILOD },
             |m: &mut ENGHACADBKI| { &mut m.LDMHLKGILOD },
@@ -81,6 +66,21 @@ impl ENGHACADBKI {
             "FFKDFODDBDN",
             |m: &ENGHACADBKI| { &m.FFKDFODDBDN },
             |m: &mut ENGHACADBKI| { &mut m.FFKDFODDBDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGKLFMCHLCO",
+            |m: &ENGHACADBKI| { &m.EGKLFMCHLCO },
+            |m: &mut ENGHACADBKI| { &mut m.EGKLFMCHLCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMIFPFAHFBL",
+            |m: &ENGHACADBKI| { &m.FMIFPFAHFBL },
+            |m: &mut ENGHACADBKI| { &mut m.FMIFPFAHFBL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &ENGHACADBKI| { &m.type_ },
+            |m: &mut ENGHACADBKI| { &mut m.type_ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENGHACADBKI>(
             "ENGHACADBKI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ENGHACADBKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.FMIFPFAHFBL = is.read_uint32()?;
-                },
-                112 => {
-                    self.type_ = is.read_enum_or_unknown()?;
-                },
-                32 => {
-                    self.EGKLFMCHLCO = is.read_uint32()?;
-                },
-                104 => {
+                8 => {
                     self.LDMHLKGILOD = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.FFKDFODDBDN = is.read_uint32()?;
+                },
+                80 => {
+                    self.EGKLFMCHLCO = is.read_uint32()?;
+                },
+                88 => {
+                    self.FMIFPFAHFBL = is.read_uint32()?;
+                },
+                104 => {
+                    self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for ENGHACADBKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMIFPFAHFBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FMIFPFAHFBL);
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD) {
-            my_size += ::protobuf::rt::int32_size(14, self.type_.value());
-        }
-        if self.EGKLFMCHLCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EGKLFMCHLCO);
-        }
         if self.LDMHLKGILOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LDMHLKGILOD);
+            my_size += ::protobuf::rt::uint32_size(1, self.LDMHLKGILOD);
         }
         if self.FFKDFODDBDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FFKDFODDBDN);
+            my_size += ::protobuf::rt::uint32_size(7, self.FFKDFODDBDN);
+        }
+        if self.EGKLFMCHLCO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EGKLFMCHLCO);
+        }
+        if self.FMIFPFAHFBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FMIFPFAHFBL);
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD) {
+            my_size += ::protobuf::rt::int32_size(13, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for ENGHACADBKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMIFPFAHFBL != 0 {
-            os.write_uint32(9, self.FMIFPFAHFBL)?;
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
-        if self.EGKLFMCHLCO != 0 {
-            os.write_uint32(4, self.EGKLFMCHLCO)?;
-        }
         if self.LDMHLKGILOD != 0 {
-            os.write_uint32(13, self.LDMHLKGILOD)?;
+            os.write_uint32(1, self.LDMHLKGILOD)?;
         }
         if self.FFKDFODDBDN != 0 {
-            os.write_uint32(6, self.FFKDFODDBDN)?;
+            os.write_uint32(7, self.FFKDFODDBDN)?;
+        }
+        if self.EGKLFMCHLCO != 0 {
+            os.write_uint32(10, self.EGKLFMCHLCO)?;
+        }
+        if self.FMIFPFAHFBL != 0 {
+            os.write_uint32(11, self.FMIFPFAHFBL)?;
+        }
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ENGHACADBKI {
     }
 
     fn clear(&mut self) {
-        self.FMIFPFAHFBL = 0;
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD);
-        self.EGKLFMCHLCO = 0;
         self.LDMHLKGILOD = 0;
         self.FFKDFODDBDN = 0;
+        self.EGKLFMCHLCO = 0;
+        self.FMIFPFAHFBL = 0;
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::TreasureDungeonRecordType::TreasureDungeonRecordType::EFPHNJOBNOE_OMCKGLPAFKD);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENGHACADBKI {
         static instance: ENGHACADBKI = ENGHACADBKI {
-            FMIFPFAHFBL: 0,
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            EGKLFMCHLCO: 0,
             LDMHLKGILOD: 0,
             FFKDFODDBDN: 0,
+            EGKLFMCHLCO: 0,
+            FMIFPFAHFBL: 0,
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for ENGHACADBKI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENGHACADBKI.proto\x1a\x1fTreasureDungeonRecordType.proto\"\xc5\x01\
-    \n\x0bENGHACADBKI\x12\x20\n\x0bFMIFPFAHFBL\x18\t\x20\x01(\rR\x0bFMIFPFAH\
-    FBL\x12.\n\x04type\x18\x0e\x20\x01(\x0e2\x1a.TreasureDungeonRecordTypeR\
-    \x04type\x12\x20\n\x0bEGKLFMCHLCO\x18\x04\x20\x01(\rR\x0bEGKLFMCHLCO\x12\
-    \x20\n\x0bLDMHLKGILOD\x18\r\x20\x01(\rR\x0bLDMHLKGILOD\x12\x20\n\x0bFFKD\
-    FODDBDN\x18\x06\x20\x01(\rR\x0bFFKDFODDBDNb\x06proto3\
+    \n\x0bENGHACADBKI\x12\x20\n\x0bLDMHLKGILOD\x18\x01\x20\x01(\rR\x0bLDMHLK\
+    GILOD\x12\x20\n\x0bFFKDFODDBDN\x18\x07\x20\x01(\rR\x0bFFKDFODDBDN\x12\
+    \x20\n\x0bEGKLFMCHLCO\x18\n\x20\x01(\rR\x0bEGKLFMCHLCO\x12\x20\n\x0bFMIF\
+    PFAHFBL\x18\x0b\x20\x01(\rR\x0bFMIFPFAHFBL\x12.\n\x04type\x18\r\x20\x01(\
+    \x0e2\x1a.TreasureDungeonRecordTypeR\x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

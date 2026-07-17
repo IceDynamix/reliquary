@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdActivityRewardStatType {
     // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_HBPEDDCOJDB)
     KFCMCPILLKE_HBPEDDCOJDB = 0,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_KLHLLOCNPBB)
-    KFCMCPILLKE_KLHLLOCNPBB = 9118,
     // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_PFKNIHCCOCP)
-    KFCMCPILLKE_PFKNIHCCOCP = 9112,
+    KFCMCPILLKE_PFKNIHCCOCP = 9113,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_MLGNILOBKGJ)
+    KFCMCPILLKE_MLGNILOBKGJ = 9116,
     // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_IPJFJIHGNEO)
     KFCMCPILLKE_IPJFJIHGNEO = 9114,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_NBNOMBOHFOJ)
-    KFCMCPILLKE_NBNOMBOHFOJ = 9120,
     // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_HMHALMFKEIP)
-    KFCMCPILLKE_HMHALMFKEIP = 9119,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_MLGNILOBKGJ)
-    KFCMCPILLKE_MLGNILOBKGJ = 9111,
+    KFCMCPILLKE_HMHALMFKEIP = 9120,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_NBNOMBOHFOJ)
+    KFCMCPILLKE_NBNOMBOHFOJ = 9115,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.KFCMCPILLKE_KLHLLOCNPBB)
+    KFCMCPILLKE_KLHLLOCNPBB = 9111,
 }
 
 impl ::protobuf::Enum for CmdActivityRewardStatType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdActivityRewardStatType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdActivityRewardStatType> {
         match value {
             0 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HBPEDDCOJDB),
-            9118 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB),
-            9112 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP),
+            9113 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP),
+            9116 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ),
             9114 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO),
-            9120 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ),
-            9119 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP),
-            9111 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ),
+            9120 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP),
+            9115 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ),
+            9111 => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdActivityRewardStatType {
     fn from_str(str: &str) -> ::std::option::Option<CmdActivityRewardStatType> {
         match str {
             "KFCMCPILLKE_HBPEDDCOJDB" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HBPEDDCOJDB),
-            "KFCMCPILLKE_KLHLLOCNPBB" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB),
             "KFCMCPILLKE_PFKNIHCCOCP" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP),
-            "KFCMCPILLKE_IPJFJIHGNEO" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO),
-            "KFCMCPILLKE_NBNOMBOHFOJ" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ),
-            "KFCMCPILLKE_HMHALMFKEIP" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP),
             "KFCMCPILLKE_MLGNILOBKGJ" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ),
+            "KFCMCPILLKE_IPJFJIHGNEO" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO),
+            "KFCMCPILLKE_HMHALMFKEIP" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP),
+            "KFCMCPILLKE_NBNOMBOHFOJ" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ),
+            "KFCMCPILLKE_KLHLLOCNPBB" => ::std::option::Option::Some(CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdActivityRewardStatType] = &[
         CmdActivityRewardStatType::KFCMCPILLKE_HBPEDDCOJDB,
-        CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB,
         CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP,
-        CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO,
-        CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ,
-        CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP,
         CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ,
+        CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO,
+        CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP,
+        CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ,
+        CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdActivityRewardStatType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdActivityRewardStatType::KFCMCPILLKE_HBPEDDCOJDB => 0,
-            CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB => 1,
-            CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP => 2,
+            CmdActivityRewardStatType::KFCMCPILLKE_PFKNIHCCOCP => 1,
+            CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ => 2,
             CmdActivityRewardStatType::KFCMCPILLKE_IPJFJIHGNEO => 3,
-            CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ => 4,
-            CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP => 5,
-            CmdActivityRewardStatType::KFCMCPILLKE_MLGNILOBKGJ => 6,
+            CmdActivityRewardStatType::KFCMCPILLKE_HMHALMFKEIP => 4,
+            CmdActivityRewardStatType::KFCMCPILLKE_NBNOMBOHFOJ => 5,
+            CmdActivityRewardStatType::KFCMCPILLKE_KLHLLOCNPBB => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -122,10 +122,10 @@ impl CmdActivityRewardStatType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCmdActivityRewardStatType.proto*\xec\x01\n\x19CmdActivityRewardSta\
     tType\x12\x1b\n\x17KFCMCPILLKE_HBPEDDCOJDB\x10\0\x12\x1c\n\x17KFCMCPILLK\
-    E_KLHLLOCNPBB\x10\x9eG\x12\x1c\n\x17KFCMCPILLKE_PFKNIHCCOCP\x10\x98G\x12\
-    \x1c\n\x17KFCMCPILLKE_IPJFJIHGNEO\x10\x9aG\x12\x1c\n\x17KFCMCPILLKE_NBNO\
-    MBOHFOJ\x10\xa0G\x12\x1c\n\x17KFCMCPILLKE_HMHALMFKEIP\x10\x9fG\x12\x1c\n\
-    \x17KFCMCPILLKE_MLGNILOBKGJ\x10\x97Gb\x06proto3\
+    E_PFKNIHCCOCP\x10\x99G\x12\x1c\n\x17KFCMCPILLKE_MLGNILOBKGJ\x10\x9cG\x12\
+    \x1c\n\x17KFCMCPILLKE_IPJFJIHGNEO\x10\x9aG\x12\x1c\n\x17KFCMCPILLKE_HMHA\
+    LMFKEIP\x10\xa0G\x12\x1c\n\x17KFCMCPILLKE_NBNOMBOHFOJ\x10\x9bG\x12\x1c\n\
+    \x17KFCMCPILLKE_KLHLLOCNPBB\x10\x97Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

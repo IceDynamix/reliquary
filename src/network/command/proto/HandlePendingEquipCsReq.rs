@@ -72,7 +72,7 @@ impl ::protobuf::Message for HandlePendingEquipCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                104 => {
                     self.DKPCAIGPHNO = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for HandlePendingEquipCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DKPCAIGPHNO != false {
-            os.write_bool(6, self.DKPCAIGPHNO)?;
+            os.write_bool(13, self.DKPCAIGPHNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for HandlePendingEquipCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dHandlePendingEquipCsReq.proto\";\n\x17HandlePendingEquipCsReq\x12\
-    \x20\n\x0bDKPCAIGPHNO\x18\x06\x20\x01(\x08R\x0bDKPCAIGPHNOb\x06proto3\
+    \x20\n\x0bDKPCAIGPHNO\x18\r\x20\x01(\x08R\x0bDKPCAIGPHNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

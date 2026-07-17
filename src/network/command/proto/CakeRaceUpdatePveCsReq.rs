@@ -124,7 +124,7 @@ impl CakeRaceUpdatePveCsReq {
         self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::BCFPLAPCFPL(v))
     }
 
-    // bool MAGPAGCHOHP = 2;
+    // bool MAGPAGCHOHP = 8;
 
     pub fn MAGPAGCHOHP(&self) -> bool {
         match self.FGIMLNIJINE {
@@ -149,7 +149,7 @@ impl CakeRaceUpdatePveCsReq {
         self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v))
     }
 
-    // .EMJCPFCMOMK KMOLBEGKLNI = 9;
+    // .EMJCPFCMOMK KMOLBEGKLNI = 4;
 
     pub fn KMOLBEGKLNI(&self) -> &super::EMJCPFCMOMK::EMJCPFCMOMK {
         match self.FGIMLNIJINE {
@@ -198,7 +198,7 @@ impl CakeRaceUpdatePveCsReq {
         }
     }
 
-    // bool PIKEOHHECCA = 14;
+    // bool PIKEOHHECCA = 12;
 
     pub fn PIKEOHHECCA(&self) -> bool {
         match self.FGIMLNIJINE {
@@ -287,10 +287,10 @@ impl ::protobuf::Message for CakeRaceUpdatePveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                24 => {
                     self.LOPNADHJKBF = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.OPNGHDENCAB = is.read_uint32()?;
                 },
                 42 => {
@@ -299,13 +299,13 @@ impl ::protobuf::Message for CakeRaceUpdatePveCsReq {
                 8 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::BCFPLAPCFPL(is.read_uint32()?));
                 },
-                16 => {
+                64 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(is.read_bool()?));
                 },
-                74 => {
+                34 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::KMOLBEGKLNI(is.read_message()?));
                 },
-                112 => {
+                96 => {
                     self.FGIMLNIJINE = ::std::option::Option::Some(cake_race_update_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(is.read_bool()?));
                 },
                 tag => {
@@ -321,10 +321,10 @@ impl ::protobuf::Message for CakeRaceUpdatePveCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LOPNADHJKBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LOPNADHJKBF);
+            my_size += ::protobuf::rt::uint32_size(3, self.LOPNADHJKBF);
         }
         if self.OPNGHDENCAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OPNGHDENCAB);
+            my_size += ::protobuf::rt::uint32_size(9, self.OPNGHDENCAB);
         }
         if let ::std::option::Option::Some(ref v) = self.FGIMLNIJINE {
             match v {
@@ -354,10 +354,10 @@ impl ::protobuf::Message for CakeRaceUpdatePveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LOPNADHJKBF != 0 {
-            os.write_uint32(13, self.LOPNADHJKBF)?;
+            os.write_uint32(3, self.LOPNADHJKBF)?;
         }
         if self.OPNGHDENCAB != 0 {
-            os.write_uint32(11, self.OPNGHDENCAB)?;
+            os.write_uint32(9, self.OPNGHDENCAB)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FGIMLNIJINE {
             match v {
@@ -368,13 +368,13 @@ impl ::protobuf::Message for CakeRaceUpdatePveCsReq {
                     os.write_uint32(1, v)?;
                 },
                 &cake_race_update_pve_cs_req::FGIMLNIJINE::MAGPAGCHOHP(v) => {
-                    os.write_bool(2, v)?;
+                    os.write_bool(8, v)?;
                 },
                 &cake_race_update_pve_cs_req::FGIMLNIJINE::KMOLBEGKLNI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &cake_race_update_pve_cs_req::FGIMLNIJINE::PIKEOHHECCA(v) => {
-                    os.write_bool(14, v)?;
+                    os.write_bool(12, v)?;
                 },
             };
         }
@@ -472,13 +472,13 @@ pub mod cake_race_update_pve_cs_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCakeRaceUpdatePveCsReq.proto\x1a\x11EMJCPFCMOMK.proto\x1a\x11ICDBH\
     MEPNDB.proto\"\xbb\x02\n\x16CakeRaceUpdatePveCsReq\x12\x20\n\x0bLOPNADHJ\
-    KBF\x18\r\x20\x01(\rR\x0bLOPNADHJKBF\x12\x20\n\x0bOPNGHDENCAB\x18\x0b\
+    KBF\x18\x03\x20\x01(\rR\x0bLOPNADHJKBF\x12\x20\n\x0bOPNGHDENCAB\x18\t\
     \x20\x01(\rR\x0bOPNGHDENCAB\x120\n\x0bBOEJNBKDJLM\x18\x05\x20\x01(\x0b2\
     \x0c.ICDBHMEPNDBH\0R\x0bBOEJNBKDJLM\x12\"\n\x0bBCFPLAPCFPL\x18\x01\x20\
-    \x01(\rH\0R\x0bBCFPLAPCFPL\x12\"\n\x0bMAGPAGCHOHP\x18\x02\x20\x01(\x08H\
-    \0R\x0bMAGPAGCHOHP\x120\n\x0bKMOLBEGKLNI\x18\t\x20\x01(\x0b2\x0c.EMJCPFC\
-    MOMKH\0R\x0bKMOLBEGKLNI\x12\"\n\x0bPIKEOHHECCA\x18\x0e\x20\x01(\x08H\0R\
-    \x0bPIKEOHHECCAB\r\n\x0bFGIMLNIJINEb\x06proto3\
+    \x01(\rH\0R\x0bBCFPLAPCFPL\x12\"\n\x0bMAGPAGCHOHP\x18\x08\x20\x01(\x08H\
+    \0R\x0bMAGPAGCHOHP\x120\n\x0bKMOLBEGKLNI\x18\x04\x20\x01(\x0b2\x0c.EMJCP\
+    FCMOMKH\0R\x0bKMOLBEGKLNI\x12\"\n\x0bPIKEOHHECCA\x18\x0c\x20\x01(\x08H\0\
+    R\x0bPIKEOHHECCAB\r\n\x0bFGIMLNIJINEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

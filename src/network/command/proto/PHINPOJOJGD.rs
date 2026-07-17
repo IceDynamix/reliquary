@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PHINPOJOJGD {
     // message fields
-    // @@protoc_insertion_point(field:PHINPOJOJGD.FHHKOHKBNOP)
-    pub FHHKOHKBNOP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PHINPOJOJGD.MHCHFDFMNFP)
     pub MHCHFDFMNFP: u32,
-    // @@protoc_insertion_point(field:PHINPOJOJGD.PKPNMOOICGP)
-    pub PKPNMOOICGP: bool,
-    // @@protoc_insertion_point(field:PHINPOJOJGD.KMNPJKCMIEN)
-    pub KMNPJKCMIEN: bool,
-    // @@protoc_insertion_point(field:PHINPOJOJGD.MJKPNOMCHID)
-    pub MJKPNOMCHID: i64,
     // @@protoc_insertion_point(field:PHINPOJOJGD.CDGMPCFGKMD)
     pub CDGMPCFGKMD: i64,
-    // @@protoc_insertion_point(field:PHINPOJOJGD.GACKJLBPKGD)
-    pub GACKJLBPKGD: u32,
+    // @@protoc_insertion_point(field:PHINPOJOJGD.PKPNMOOICGP)
+    pub PKPNMOOICGP: bool,
+    // @@protoc_insertion_point(field:PHINPOJOJGD.FHHKOHKBNOP)
+    pub FHHKOHKBNOP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PHINPOJOJGD.MJKPNOMCHID)
+    pub MJKPNOMCHID: i64,
+    // @@protoc_insertion_point(field:PHINPOJOJGD.KMNPJKCMIEN)
+    pub KMNPJKCMIEN: bool,
+    // @@protoc_insertion_point(field:PHINPOJOJGD.pool_id)
+    pub pool_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PHINPOJOJGD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,30 +61,10 @@ impl PHINPOJOJGD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FHHKOHKBNOP",
-            |m: &PHINPOJOJGD| { &m.FHHKOHKBNOP },
-            |m: &mut PHINPOJOJGD| { &mut m.FHHKOHKBNOP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MHCHFDFMNFP",
             |m: &PHINPOJOJGD| { &m.MHCHFDFMNFP },
             |m: &mut PHINPOJOJGD| { &mut m.MHCHFDFMNFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKPNMOOICGP",
-            |m: &PHINPOJOJGD| { &m.PKPNMOOICGP },
-            |m: &mut PHINPOJOJGD| { &mut m.PKPNMOOICGP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMNPJKCMIEN",
-            |m: &PHINPOJOJGD| { &m.KMNPJKCMIEN },
-            |m: &mut PHINPOJOJGD| { &mut m.KMNPJKCMIEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJKPNOMCHID",
-            |m: &PHINPOJOJGD| { &m.MJKPNOMCHID },
-            |m: &mut PHINPOJOJGD| { &mut m.MJKPNOMCHID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CDGMPCFGKMD",
@@ -92,9 +72,29 @@ impl PHINPOJOJGD {
             |m: &mut PHINPOJOJGD| { &mut m.CDGMPCFGKMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GACKJLBPKGD",
-            |m: &PHINPOJOJGD| { &m.GACKJLBPKGD },
-            |m: &mut PHINPOJOJGD| { &mut m.GACKJLBPKGD },
+            "PKPNMOOICGP",
+            |m: &PHINPOJOJGD| { &m.PKPNMOOICGP },
+            |m: &mut PHINPOJOJGD| { &mut m.PKPNMOOICGP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FHHKOHKBNOP",
+            |m: &PHINPOJOJGD| { &m.FHHKOHKBNOP },
+            |m: &mut PHINPOJOJGD| { &mut m.FHHKOHKBNOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MJKPNOMCHID",
+            |m: &PHINPOJOJGD| { &m.MJKPNOMCHID },
+            |m: &mut PHINPOJOJGD| { &mut m.MJKPNOMCHID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KMNPJKCMIEN",
+            |m: &PHINPOJOJGD| { &m.KMNPJKCMIEN },
+            |m: &mut PHINPOJOJGD| { &mut m.KMNPJKCMIEN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "pool_id",
+            |m: &PHINPOJOJGD| { &m.pool_id },
+            |m: &mut PHINPOJOJGD| { &mut m.pool_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PHINPOJOJGD>(
             "PHINPOJOJGD",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for PHINPOJOJGD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FHHKOHKBNOP)?;
-                },
-                48 => {
-                    self.FHHKOHKBNOP.push(is.read_uint32()?);
-                },
-                88 => {
+                24 => {
                     self.MHCHFDFMNFP = is.read_uint32()?;
                 },
-                104 => {
-                    self.PKPNMOOICGP = is.read_bool()?;
-                },
-                56 => {
-                    self.KMNPJKCMIEN = is.read_bool()?;
-                },
-                112 => {
-                    self.MJKPNOMCHID = is.read_int64()?;
-                },
-                16 => {
+                32 => {
                     self.CDGMPCFGKMD = is.read_int64()?;
                 },
+                48 => {
+                    self.PKPNMOOICGP = is.read_bool()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FHHKOHKBNOP)?;
+                },
+                56 => {
+                    self.FHHKOHKBNOP.push(is.read_uint32()?);
+                },
                 72 => {
-                    self.GACKJLBPKGD = is.read_uint32()?;
+                    self.MJKPNOMCHID = is.read_int64()?;
+                },
+                96 => {
+                    self.KMNPJKCMIEN = is.read_bool()?;
+                },
+                120 => {
+                    self.pool_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,24 +150,24 @@ impl ::protobuf::Message for PHINPOJOJGD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FHHKOHKBNOP);
         if self.MHCHFDFMNFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MHCHFDFMNFP);
+            my_size += ::protobuf::rt::uint32_size(3, self.MHCHFDFMNFP);
+        }
+        if self.CDGMPCFGKMD != 0 {
+            my_size += ::protobuf::rt::int64_size(4, self.CDGMPCFGKMD);
         }
         if self.PKPNMOOICGP != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FHHKOHKBNOP);
+        if self.MJKPNOMCHID != 0 {
+            my_size += ::protobuf::rt::int64_size(9, self.MJKPNOMCHID);
+        }
         if self.KMNPJKCMIEN != false {
             my_size += 1 + 1;
         }
-        if self.MJKPNOMCHID != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.MJKPNOMCHID);
-        }
-        if self.CDGMPCFGKMD != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.CDGMPCFGKMD);
-        }
-        if self.GACKJLBPKGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GACKJLBPKGD);
+        if self.pool_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.pool_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,24 +175,24 @@ impl ::protobuf::Message for PHINPOJOJGD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.FHHKOHKBNOP)?;
         if self.MHCHFDFMNFP != 0 {
-            os.write_uint32(11, self.MHCHFDFMNFP)?;
-        }
-        if self.PKPNMOOICGP != false {
-            os.write_bool(13, self.PKPNMOOICGP)?;
-        }
-        if self.KMNPJKCMIEN != false {
-            os.write_bool(7, self.KMNPJKCMIEN)?;
-        }
-        if self.MJKPNOMCHID != 0 {
-            os.write_int64(14, self.MJKPNOMCHID)?;
+            os.write_uint32(3, self.MHCHFDFMNFP)?;
         }
         if self.CDGMPCFGKMD != 0 {
-            os.write_int64(2, self.CDGMPCFGKMD)?;
+            os.write_int64(4, self.CDGMPCFGKMD)?;
         }
-        if self.GACKJLBPKGD != 0 {
-            os.write_uint32(9, self.GACKJLBPKGD)?;
+        if self.PKPNMOOICGP != false {
+            os.write_bool(6, self.PKPNMOOICGP)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.FHHKOHKBNOP)?;
+        if self.MJKPNOMCHID != 0 {
+            os.write_int64(9, self.MJKPNOMCHID)?;
+        }
+        if self.KMNPJKCMIEN != false {
+            os.write_bool(12, self.KMNPJKCMIEN)?;
+        }
+        if self.pool_id != 0 {
+            os.write_uint32(15, self.pool_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -211,25 +211,25 @@ impl ::protobuf::Message for PHINPOJOJGD {
     }
 
     fn clear(&mut self) {
-        self.FHHKOHKBNOP.clear();
         self.MHCHFDFMNFP = 0;
-        self.PKPNMOOICGP = false;
-        self.KMNPJKCMIEN = false;
-        self.MJKPNOMCHID = 0;
         self.CDGMPCFGKMD = 0;
-        self.GACKJLBPKGD = 0;
+        self.PKPNMOOICGP = false;
+        self.FHHKOHKBNOP.clear();
+        self.MJKPNOMCHID = 0;
+        self.KMNPJKCMIEN = false;
+        self.pool_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PHINPOJOJGD {
         static instance: PHINPOJOJGD = PHINPOJOJGD {
-            FHHKOHKBNOP: ::std::vec::Vec::new(),
             MHCHFDFMNFP: 0,
-            PKPNMOOICGP: false,
-            KMNPJKCMIEN: false,
-            MJKPNOMCHID: 0,
             CDGMPCFGKMD: 0,
-            GACKJLBPKGD: 0,
+            PKPNMOOICGP: false,
+            FHHKOHKBNOP: ::std::vec::Vec::new(),
+            MJKPNOMCHID: 0,
+            KMNPJKCMIEN: false,
+            pool_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -254,13 +254,13 @@ impl ::protobuf::reflect::ProtobufValue for PHINPOJOJGD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PHINPOJOJGD.proto\"\xfb\x01\n\x0bPHINPOJOJGD\x12\x20\n\x0bFHHKOHKB\
-    NOP\x18\x06\x20\x03(\rR\x0bFHHKOHKBNOP\x12\x20\n\x0bMHCHFDFMNFP\x18\x0b\
-    \x20\x01(\rR\x0bMHCHFDFMNFP\x12\x20\n\x0bPKPNMOOICGP\x18\r\x20\x01(\x08R\
-    \x0bPKPNMOOICGP\x12\x20\n\x0bKMNPJKCMIEN\x18\x07\x20\x01(\x08R\x0bKMNPJK\
-    CMIEN\x12\x20\n\x0bMJKPNOMCHID\x18\x0e\x20\x01(\x03R\x0bMJKPNOMCHID\x12\
-    \x20\n\x0bCDGMPCFGKMD\x18\x02\x20\x01(\x03R\x0bCDGMPCFGKMD\x12\x20\n\x0b\
-    GACKJLBPKGD\x18\t\x20\x01(\rR\x0bGACKJLBPKGDb\x06proto3\
+    \n\x11PHINPOJOJGD.proto\"\xf2\x01\n\x0bPHINPOJOJGD\x12\x20\n\x0bMHCHFDFM\
+    NFP\x18\x03\x20\x01(\rR\x0bMHCHFDFMNFP\x12\x20\n\x0bCDGMPCFGKMD\x18\x04\
+    \x20\x01(\x03R\x0bCDGMPCFGKMD\x12\x20\n\x0bPKPNMOOICGP\x18\x06\x20\x01(\
+    \x08R\x0bPKPNMOOICGP\x12\x20\n\x0bFHHKOHKBNOP\x18\x07\x20\x03(\rR\x0bFHH\
+    KOHKBNOP\x12\x20\n\x0bMJKPNOMCHID\x18\t\x20\x01(\x03R\x0bMJKPNOMCHID\x12\
+    \x20\n\x0bKMNPJKCMIEN\x18\x0c\x20\x01(\x08R\x0bKMNPJKCMIEN\x12\x17\n\x07\
+    pool_id\x18\x0f\x20\x01(\rR\x06poolIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

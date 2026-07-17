@@ -28,42 +28,42 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingFesBusinessDayEndCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.BAOPBDDEBKP)
-    pub BAOPBDDEBKP: ::std::vec::Vec<super::LECPPIEIENH::LECPPIEIENH>,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.MNLCAOLGEMM)
-    pub MNLCAOLGEMM: ::std::vec::Vec<super::PGEDFOBAEBC::PGEDFOBAEBC>,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.happy_progress)
+    pub happy_progress: f64,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.GOKMDCOJPHC)
     pub GOKMDCOJPHC: ::std::vec::Vec<super::NPNAEPOKPNE::NPNAEPOKPNE>,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.MBFLDKEDBHN)
-    pub MBFLDKEDBHN: ::std::vec::Vec<super::PGIEBMKMECE::PGIEBMKMECE>,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.FBNBEMECJIJ)
-    pub FBNBEMECJIJ: ::std::vec::Vec<super::AABJNONNLML::AABJNONNLML>,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.HDNGJJILDCE)
-    pub HDNGJJILDCE: ::std::vec::Vec<super::EDHOBLLOBNP::EDHOBLLOBNP>,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.PJGODPMGMEO)
     pub PJGODPMGMEO: ::std::vec::Vec<super::HDLMAPACKNH::HDLMAPACKNH>,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.HDNGJJILDCE)
+    pub HDNGJJILDCE: ::std::vec::Vec<super::EDHOBLLOBNP::EDHOBLLOBNP>,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.COJGECEMCFN)
     pub COJGECEMCFN: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.DBHHIKAFMPP)
-    pub DBHHIKAFMPP: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.FENKLBPKOAL)
-    pub FENKLBPKOAL: f64,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.EJEOGKPEIBF)
-    pub EJEOGKPEIBF: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.LFKDANGNJIM)
-    pub LFKDANGNJIM: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.CEHJOHCGOKE)
-    pub CEHJOHCGOKE: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.BMPABCGHPFG)
-    pub BMPABCGHPFG: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.DBODBBOMJAD)
-    pub DBODBBOMJAD: u32,
-    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.ELEKEHIMBDO)
-    pub ELEKEHIMBDO: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.business_day)
+    pub business_day: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.BAOPBDDEBKP)
+    pub BAOPBDDEBKP: ::std::vec::Vec<super::LECPPIEIENH::LECPPIEIENH>,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.HPHHKJHGMPJ)
     pub HPHHKJHGMPJ: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.MNLCAOLGEMM)
+    pub MNLCAOLGEMM: ::std::vec::Vec<super::PGEDFOBAEBC::PGEDFOBAEBC>,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.DBODBBOMJAD)
+    pub DBODBBOMJAD: u32,
     // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.OCLLAPEHDDH)
     pub OCLLAPEHDDH: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.MBFLDKEDBHN)
+    pub MBFLDKEDBHN: ::std::vec::Vec<super::PGIEBMKMECE::PGIEBMKMECE>,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.EJEOGKPEIBF)
+    pub EJEOGKPEIBF: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.FBNBEMECJIJ)
+    pub FBNBEMECJIJ: ::std::vec::Vec<super::AABJNONNLML::AABJNONNLML>,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.fever)
+    pub fever: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.business_time)
+    pub business_time: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.fever_cnt_today)
+    pub fever_cnt_today: u32,
+    // @@protoc_insertion_point(field:ChenLingFesBusinessDayEndCsReq.play_time)
+    pub play_time: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingFesBusinessDayEndCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -83,15 +83,10 @@ impl ChenLingFesBusinessDayEndCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(18);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAOPBDDEBKP",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.BAOPBDDEBKP },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.BAOPBDDEBKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MNLCAOLGEMM",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.MNLCAOLGEMM },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.MNLCAOLGEMM },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "happy_progress",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.happy_progress },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.happy_progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GOKMDCOJPHC",
@@ -99,24 +94,14 @@ impl ChenLingFesBusinessDayEndCsReq {
             |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.GOKMDCOJPHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MBFLDKEDBHN",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.MBFLDKEDBHN },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.MBFLDKEDBHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FBNBEMECJIJ",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.FBNBEMECJIJ },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.FBNBEMECJIJ },
+            "PJGODPMGMEO",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.PJGODPMGMEO },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.PJGODPMGMEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HDNGJJILDCE",
             |m: &ChenLingFesBusinessDayEndCsReq| { &m.HDNGJJILDCE },
             |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.HDNGJJILDCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PJGODPMGMEO",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.PJGODPMGMEO },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.PJGODPMGMEO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "COJGECEMCFN",
@@ -124,34 +109,24 @@ impl ChenLingFesBusinessDayEndCsReq {
             |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.COJGECEMCFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBHHIKAFMPP",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.DBHHIKAFMPP },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.DBHHIKAFMPP },
+            "business_day",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.business_day },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.business_day },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BAOPBDDEBKP",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.BAOPBDDEBKP },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.BAOPBDDEBKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FENKLBPKOAL",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.FENKLBPKOAL },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.FENKLBPKOAL },
+            "HPHHKJHGMPJ",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.HPHHKJHGMPJ },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.HPHHKJHGMPJ },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJEOGKPEIBF",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.EJEOGKPEIBF },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.EJEOGKPEIBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFKDANGNJIM",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.LFKDANGNJIM },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.LFKDANGNJIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEHJOHCGOKE",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.CEHJOHCGOKE },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.CEHJOHCGOKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMPABCGHPFG",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.BMPABCGHPFG },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.BMPABCGHPFG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MNLCAOLGEMM",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.MNLCAOLGEMM },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.MNLCAOLGEMM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBODBBOMJAD",
@@ -159,19 +134,44 @@ impl ChenLingFesBusinessDayEndCsReq {
             |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.DBODBBOMJAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELEKEHIMBDO",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.ELEKEHIMBDO },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.ELEKEHIMBDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPHHKJHGMPJ",
-            |m: &ChenLingFesBusinessDayEndCsReq| { &m.HPHHKJHGMPJ },
-            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.HPHHKJHGMPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCLLAPEHDDH",
             |m: &ChenLingFesBusinessDayEndCsReq| { &m.OCLLAPEHDDH },
             |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.OCLLAPEHDDH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MBFLDKEDBHN",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.MBFLDKEDBHN },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.MBFLDKEDBHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EJEOGKPEIBF",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.EJEOGKPEIBF },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.EJEOGKPEIBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FBNBEMECJIJ",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.FBNBEMECJIJ },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.FBNBEMECJIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "fever",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.fever },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.fever },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "business_time",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.business_time },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.business_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "fever_cnt_today",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.fever_cnt_today },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.fever_cnt_today },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "play_time",
+            |m: &ChenLingFesBusinessDayEndCsReq| { &m.play_time },
+            |m: &mut ChenLingFesBusinessDayEndCsReq| { &mut m.play_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingFesBusinessDayEndCsReq>(
             "ChenLingFesBusinessDayEndCsReq",
@@ -191,59 +191,59 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.BAOPBDDEBKP.push(is.read_message()?);
-                },
-                82 => {
-                    self.MNLCAOLGEMM.push(is.read_message()?);
-                },
-                10 => {
-                    self.GOKMDCOJPHC.push(is.read_message()?);
-                },
-                66 => {
-                    self.MBFLDKEDBHN.push(is.read_message()?);
+                9 => {
+                    self.happy_progress = is.read_double()?;
                 },
                 18 => {
-                    self.FBNBEMECJIJ.push(is.read_message()?);
-                },
-                114 => {
-                    self.HDNGJJILDCE.push(is.read_message()?);
+                    self.GOKMDCOJPHC.push(is.read_message()?);
                 },
                 26 => {
                     self.PJGODPMGMEO.push(is.read_message()?);
                 },
-                96 => {
+                34 => {
+                    self.HDNGJJILDCE.push(is.read_message()?);
+                },
+                40 => {
                     self.COJGECEMCFN = is.read_uint32()?;
                 },
-                14624 => {
-                    self.DBHHIKAFMPP = is.read_uint32()?;
+                56 => {
+                    self.business_day = is.read_uint32()?;
                 },
-                121 => {
-                    self.FENKLBPKOAL = is.read_double()?;
+                66 => {
+                    self.BAOPBDDEBKP.push(is.read_message()?);
                 },
                 72 => {
-                    self.EJEOGKPEIBF = is.read_uint32()?;
-                },
-                88 => {
-                    self.LFKDANGNJIM = is.read_uint32()?;
-                },
-                9920 => {
-                    self.CEHJOHCGOKE = is.read_uint32()?;
-                },
-                2904 => {
-                    self.BMPABCGHPFG = is.read_uint32()?;
-                },
-                56 => {
-                    self.DBODBBOMJAD = is.read_uint32()?;
-                },
-                32 => {
-                    self.ELEKEHIMBDO = is.read_uint32()?;
-                },
-                48 => {
                     self.HPHHKJHGMPJ = is.read_uint32()?;
                 },
-                104 => {
+                82 => {
+                    self.MNLCAOLGEMM.push(is.read_message()?);
+                },
+                88 => {
+                    self.DBODBBOMJAD = is.read_uint32()?;
+                },
+                96 => {
                     self.OCLLAPEHDDH = is.read_uint32()?;
+                },
+                106 => {
+                    self.MBFLDKEDBHN.push(is.read_message()?);
+                },
+                112 => {
+                    self.EJEOGKPEIBF = is.read_uint32()?;
+                },
+                122 => {
+                    self.FBNBEMECJIJ.push(is.read_message()?);
+                },
+                160 => {
+                    self.fever = is.read_uint32()?;
+                },
+                2544 => {
+                    self.business_time = is.read_uint32()?;
+                },
+                8504 => {
+                    self.fever_cnt_today = is.read_uint32()?;
+                },
+                16344 => {
+                    self.play_time = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -257,27 +257,10 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BAOPBDDEBKP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.MNLCAOLGEMM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.happy_progress != 0. {
+            my_size += 1 + 8;
+        }
         for value in &self.GOKMDCOJPHC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.MBFLDKEDBHN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.FBNBEMECJIJ {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.HDNGJJILDCE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -285,38 +268,55 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.HDNGJJILDCE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.COJGECEMCFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.COJGECEMCFN);
+            my_size += ::protobuf::rt::uint32_size(5, self.COJGECEMCFN);
         }
-        if self.DBHHIKAFMPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1828, self.DBHHIKAFMPP);
+        if self.business_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.business_day);
         }
-        if self.FENKLBPKOAL != 0. {
-            my_size += 1 + 8;
-        }
-        if self.EJEOGKPEIBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EJEOGKPEIBF);
-        }
-        if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LFKDANGNJIM);
-        }
-        if self.CEHJOHCGOKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1240, self.CEHJOHCGOKE);
-        }
-        if self.BMPABCGHPFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(363, self.BMPABCGHPFG);
-        }
-        if self.DBODBBOMJAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DBODBBOMJAD);
-        }
-        if self.ELEKEHIMBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ELEKEHIMBDO);
-        }
+        for value in &self.BAOPBDDEBKP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.HPHHKJHGMPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HPHHKJHGMPJ);
+            my_size += ::protobuf::rt::uint32_size(9, self.HPHHKJHGMPJ);
+        }
+        for value in &self.MNLCAOLGEMM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.DBODBBOMJAD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DBODBBOMJAD);
         }
         if self.OCLLAPEHDDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OCLLAPEHDDH);
+            my_size += ::protobuf::rt::uint32_size(12, self.OCLLAPEHDDH);
+        }
+        for value in &self.MBFLDKEDBHN {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.EJEOGKPEIBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EJEOGKPEIBF);
+        }
+        for value in &self.FBNBEMECJIJ {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.fever != 0 {
+            my_size += ::protobuf::rt::uint32_size(20, self.fever);
+        }
+        if self.business_time != 0 {
+            my_size += ::protobuf::rt::uint32_size(318, self.business_time);
+        }
+        if self.fever_cnt_today != 0 {
+            my_size += ::protobuf::rt::uint32_size(1063, self.fever_cnt_today);
+        }
+        if self.play_time != 0 {
+            my_size += ::protobuf::rt::uint32_size(2043, self.play_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -324,59 +324,59 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BAOPBDDEBKP {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.MNLCAOLGEMM {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
+        if self.happy_progress != 0. {
+            os.write_double(1, self.happy_progress)?;
+        }
         for v in &self.GOKMDCOJPHC {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        for v in &self.MBFLDKEDBHN {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.FBNBEMECJIJ {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.HDNGJJILDCE {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         for v in &self.PJGODPMGMEO {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        for v in &self.HDNGJJILDCE {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         if self.COJGECEMCFN != 0 {
-            os.write_uint32(12, self.COJGECEMCFN)?;
+            os.write_uint32(5, self.COJGECEMCFN)?;
         }
-        if self.DBHHIKAFMPP != 0 {
-            os.write_uint32(1828, self.DBHHIKAFMPP)?;
+        if self.business_day != 0 {
+            os.write_uint32(7, self.business_day)?;
         }
-        if self.FENKLBPKOAL != 0. {
-            os.write_double(15, self.FENKLBPKOAL)?;
-        }
-        if self.EJEOGKPEIBF != 0 {
-            os.write_uint32(9, self.EJEOGKPEIBF)?;
-        }
-        if self.LFKDANGNJIM != 0 {
-            os.write_uint32(11, self.LFKDANGNJIM)?;
-        }
-        if self.CEHJOHCGOKE != 0 {
-            os.write_uint32(1240, self.CEHJOHCGOKE)?;
-        }
-        if self.BMPABCGHPFG != 0 {
-            os.write_uint32(363, self.BMPABCGHPFG)?;
-        }
-        if self.DBODBBOMJAD != 0 {
-            os.write_uint32(7, self.DBODBBOMJAD)?;
-        }
-        if self.ELEKEHIMBDO != 0 {
-            os.write_uint32(4, self.ELEKEHIMBDO)?;
-        }
+        for v in &self.BAOPBDDEBKP {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         if self.HPHHKJHGMPJ != 0 {
-            os.write_uint32(6, self.HPHHKJHGMPJ)?;
+            os.write_uint32(9, self.HPHHKJHGMPJ)?;
+        }
+        for v in &self.MNLCAOLGEMM {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        if self.DBODBBOMJAD != 0 {
+            os.write_uint32(11, self.DBODBBOMJAD)?;
         }
         if self.OCLLAPEHDDH != 0 {
-            os.write_uint32(13, self.OCLLAPEHDDH)?;
+            os.write_uint32(12, self.OCLLAPEHDDH)?;
+        }
+        for v in &self.MBFLDKEDBHN {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if self.EJEOGKPEIBF != 0 {
+            os.write_uint32(14, self.EJEOGKPEIBF)?;
+        }
+        for v in &self.FBNBEMECJIJ {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
+        if self.fever != 0 {
+            os.write_uint32(20, self.fever)?;
+        }
+        if self.business_time != 0 {
+            os.write_uint32(318, self.business_time)?;
+        }
+        if self.fever_cnt_today != 0 {
+            os.write_uint32(1063, self.fever_cnt_today)?;
+        }
+        if self.play_time != 0 {
+            os.write_uint32(2043, self.play_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -395,47 +395,47 @@ impl ::protobuf::Message for ChenLingFesBusinessDayEndCsReq {
     }
 
     fn clear(&mut self) {
-        self.BAOPBDDEBKP.clear();
-        self.MNLCAOLGEMM.clear();
+        self.happy_progress = 0.;
         self.GOKMDCOJPHC.clear();
-        self.MBFLDKEDBHN.clear();
-        self.FBNBEMECJIJ.clear();
-        self.HDNGJJILDCE.clear();
         self.PJGODPMGMEO.clear();
+        self.HDNGJJILDCE.clear();
         self.COJGECEMCFN = 0;
-        self.DBHHIKAFMPP = 0;
-        self.FENKLBPKOAL = 0.;
-        self.EJEOGKPEIBF = 0;
-        self.LFKDANGNJIM = 0;
-        self.CEHJOHCGOKE = 0;
-        self.BMPABCGHPFG = 0;
-        self.DBODBBOMJAD = 0;
-        self.ELEKEHIMBDO = 0;
+        self.business_day = 0;
+        self.BAOPBDDEBKP.clear();
         self.HPHHKJHGMPJ = 0;
+        self.MNLCAOLGEMM.clear();
+        self.DBODBBOMJAD = 0;
         self.OCLLAPEHDDH = 0;
+        self.MBFLDKEDBHN.clear();
+        self.EJEOGKPEIBF = 0;
+        self.FBNBEMECJIJ.clear();
+        self.fever = 0;
+        self.business_time = 0;
+        self.fever_cnt_today = 0;
+        self.play_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingFesBusinessDayEndCsReq {
         static instance: ChenLingFesBusinessDayEndCsReq = ChenLingFesBusinessDayEndCsReq {
-            BAOPBDDEBKP: ::std::vec::Vec::new(),
-            MNLCAOLGEMM: ::std::vec::Vec::new(),
+            happy_progress: 0.,
             GOKMDCOJPHC: ::std::vec::Vec::new(),
-            MBFLDKEDBHN: ::std::vec::Vec::new(),
-            FBNBEMECJIJ: ::std::vec::Vec::new(),
-            HDNGJJILDCE: ::std::vec::Vec::new(),
             PJGODPMGMEO: ::std::vec::Vec::new(),
+            HDNGJJILDCE: ::std::vec::Vec::new(),
             COJGECEMCFN: 0,
-            DBHHIKAFMPP: 0,
-            FENKLBPKOAL: 0.,
-            EJEOGKPEIBF: 0,
-            LFKDANGNJIM: 0,
-            CEHJOHCGOKE: 0,
-            BMPABCGHPFG: 0,
-            DBODBBOMJAD: 0,
-            ELEKEHIMBDO: 0,
+            business_day: 0,
+            BAOPBDDEBKP: ::std::vec::Vec::new(),
             HPHHKJHGMPJ: 0,
+            MNLCAOLGEMM: ::std::vec::Vec::new(),
+            DBODBBOMJAD: 0,
             OCLLAPEHDDH: 0,
+            MBFLDKEDBHN: ::std::vec::Vec::new(),
+            EJEOGKPEIBF: 0,
+            FBNBEMECJIJ: ::std::vec::Vec::new(),
+            fever: 0,
+            business_time: 0,
+            fever_cnt_today: 0,
+            play_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -463,24 +463,24 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChenLingFesBusinessDayEndCsReq.proto\x1a\x11AABJNONNLML.proto\x1a\x11\
     EDHOBLLOBNP.proto\x1a\x11HDLMAPACKNH.proto\x1a\x11LECPPIEIENH.proto\x1a\
     \x11NPNAEPOKPNE.proto\x1a\x11PGEDFOBAEBC.proto\x1a\x11PGIEBMKMECE.proto\
-    \"\xe9\x05\n\x1eChenLingFesBusinessDayEndCsReq\x12.\n\x0bBAOPBDDEBKP\x18\
-    \x05\x20\x03(\x0b2\x0c.LECPPIEIENHR\x0bBAOPBDDEBKP\x12.\n\x0bMNLCAOLGEMM\
-    \x18\n\x20\x03(\x0b2\x0c.PGEDFOBAEBCR\x0bMNLCAOLGEMM\x12.\n\x0bGOKMDCOJP\
-    HC\x18\x01\x20\x03(\x0b2\x0c.NPNAEPOKPNER\x0bGOKMDCOJPHC\x12.\n\x0bMBFLD\
-    KEDBHN\x18\x08\x20\x03(\x0b2\x0c.PGIEBMKMECER\x0bMBFLDKEDBHN\x12.\n\x0bF\
-    BNBEMECJIJ\x18\x02\x20\x03(\x0b2\x0c.AABJNONNLMLR\x0bFBNBEMECJIJ\x12.\n\
-    \x0bHDNGJJILDCE\x18\x0e\x20\x03(\x0b2\x0c.EDHOBLLOBNPR\x0bHDNGJJILDCE\
-    \x12.\n\x0bPJGODPMGMEO\x18\x03\x20\x03(\x0b2\x0c.HDLMAPACKNHR\x0bPJGODPM\
-    GMEO\x12\x20\n\x0bCOJGECEMCFN\x18\x0c\x20\x01(\rR\x0bCOJGECEMCFN\x12!\n\
-    \x0bDBHHIKAFMPP\x18\xa4\x0e\x20\x01(\rR\x0bDBHHIKAFMPP\x12\x20\n\x0bFENK\
-    LBPKOAL\x18\x0f\x20\x01(\x01R\x0bFENKLBPKOAL\x12\x20\n\x0bEJEOGKPEIBF\
-    \x18\t\x20\x01(\rR\x0bEJEOGKPEIBF\x12\x20\n\x0bLFKDANGNJIM\x18\x0b\x20\
-    \x01(\rR\x0bLFKDANGNJIM\x12!\n\x0bCEHJOHCGOKE\x18\xd8\t\x20\x01(\rR\x0bC\
-    EHJOHCGOKE\x12!\n\x0bBMPABCGHPFG\x18\xeb\x02\x20\x01(\rR\x0bBMPABCGHPFG\
-    \x12\x20\n\x0bDBODBBOMJAD\x18\x07\x20\x01(\rR\x0bDBODBBOMJAD\x12\x20\n\
-    \x0bELEKEHIMBDO\x18\x04\x20\x01(\rR\x0bELEKEHIMBDO\x12\x20\n\x0bHPHHKJHG\
-    MPJ\x18\x06\x20\x01(\rR\x0bHPHHKJHGMPJ\x12\x20\n\x0bOCLLAPEHDDH\x18\r\
-    \x20\x01(\rR\x0bOCLLAPEHDDHb\x06proto3\
+    \"\xe7\x05\n\x1eChenLingFesBusinessDayEndCsReq\x12%\n\x0ehappy_progress\
+    \x18\x01\x20\x01(\x01R\rhappyProgress\x12.\n\x0bGOKMDCOJPHC\x18\x02\x20\
+    \x03(\x0b2\x0c.NPNAEPOKPNER\x0bGOKMDCOJPHC\x12.\n\x0bPJGODPMGMEO\x18\x03\
+    \x20\x03(\x0b2\x0c.HDLMAPACKNHR\x0bPJGODPMGMEO\x12.\n\x0bHDNGJJILDCE\x18\
+    \x04\x20\x03(\x0b2\x0c.EDHOBLLOBNPR\x0bHDNGJJILDCE\x12\x20\n\x0bCOJGECEM\
+    CFN\x18\x05\x20\x01(\rR\x0bCOJGECEMCFN\x12!\n\x0cbusiness_day\x18\x07\
+    \x20\x01(\rR\x0bbusinessDay\x12.\n\x0bBAOPBDDEBKP\x18\x08\x20\x03(\x0b2\
+    \x0c.LECPPIEIENHR\x0bBAOPBDDEBKP\x12\x20\n\x0bHPHHKJHGMPJ\x18\t\x20\x01(\
+    \rR\x0bHPHHKJHGMPJ\x12.\n\x0bMNLCAOLGEMM\x18\n\x20\x03(\x0b2\x0c.PGEDFOB\
+    AEBCR\x0bMNLCAOLGEMM\x12\x20\n\x0bDBODBBOMJAD\x18\x0b\x20\x01(\rR\x0bDBO\
+    DBBOMJAD\x12\x20\n\x0bOCLLAPEHDDH\x18\x0c\x20\x01(\rR\x0bOCLLAPEHDDH\x12\
+    .\n\x0bMBFLDKEDBHN\x18\r\x20\x03(\x0b2\x0c.PGIEBMKMECER\x0bMBFLDKEDBHN\
+    \x12\x20\n\x0bEJEOGKPEIBF\x18\x0e\x20\x01(\rR\x0bEJEOGKPEIBF\x12.\n\x0bF\
+    BNBEMECJIJ\x18\x0f\x20\x03(\x0b2\x0c.AABJNONNLMLR\x0bFBNBEMECJIJ\x12\x14\
+    \n\x05fever\x18\x14\x20\x01(\rR\x05fever\x12$\n\rbusiness_time\x18\xbe\
+    \x02\x20\x01(\rR\x0cbusinessTime\x12'\n\x0ffever_cnt_today\x18\xa7\x08\
+    \x20\x01(\rR\rfeverCntToday\x12\x1c\n\tplay_time\x18\xfb\x0f\x20\x01(\rR\
+    \x08playTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

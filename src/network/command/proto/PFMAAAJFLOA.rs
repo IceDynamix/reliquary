@@ -50,7 +50,7 @@ impl PFMAAAJFLOA {
         ::std::default::Default::default()
     }
 
-    // uint32 FJLCMPAPIGA = 11;
+    // uint32 FJLCMPAPIGA = 2;
 
     pub fn FJLCMPAPIGA(&self) -> u32 {
         match self.HGEOKHHJAIE {
@@ -75,7 +75,7 @@ impl PFMAAAJFLOA {
         self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v))
     }
 
-    // .NKGAIPKINJE EBEMKMGCCGJ = 6;
+    // .NKGAIPKINJE EBEMKMGCCGJ = 1;
 
     pub fn EBEMKMGCCGJ(&self) -> &super::NKGAIPKINJE::NKGAIPKINJE {
         match self.HGEOKHHJAIE {
@@ -169,16 +169,16 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                48 => {
                     self.LOGLBCPNAEL = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.LHHJFMMCBAF = is.read_uint32()?;
                 },
-                88 => {
+                16 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(is.read_uint32()?));
                 },
-                50 => {
+                10 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(is.read_message()?));
                 },
                 tag => {
@@ -194,15 +194,15 @@ impl ::protobuf::Message for PFMAAAJFLOA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LOGLBCPNAEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LOGLBCPNAEL);
+            my_size += ::protobuf::rt::uint32_size(6, self.LOGLBCPNAEL);
         }
         if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LHHJFMMCBAF);
+            my_size += ::protobuf::rt::uint32_size(10, self.LHHJFMMCBAF);
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
                     let len = v.compute_size();
@@ -217,18 +217,18 @@ impl ::protobuf::Message for PFMAAAJFLOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LOGLBCPNAEL != 0 {
-            os.write_uint32(7, self.LOGLBCPNAEL)?;
+            os.write_uint32(6, self.LOGLBCPNAEL)?;
         }
         if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(8, self.LHHJFMMCBAF)?;
+            os.write_uint32(10, self.LHHJFMMCBAF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &pfmaaajfloa::HGEOKHHJAIE::FJLCMPAPIGA(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(2, v)?;
                 },
                 &pfmaaajfloa::HGEOKHHJAIE::EBEMKMGCCGJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
             };
         }
@@ -316,9 +316,9 @@ pub mod pfmaaajfloa {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFMAAAJFLOA.proto\x1a\x11NKGAIPKINJE.proto\"\xb6\x01\n\x0bPFMAAAJF\
-    LOA\x12\x20\n\x0bLOGLBCPNAEL\x18\x07\x20\x01(\rR\x0bLOGLBCPNAEL\x12\x20\
-    \n\x0bLHHJFMMCBAF\x18\x08\x20\x01(\rR\x0bLHHJFMMCBAF\x12\"\n\x0bFJLCMPAP\
-    IGA\x18\x0b\x20\x01(\rH\0R\x0bFJLCMPAPIGA\x120\n\x0bEBEMKMGCCGJ\x18\x06\
+    LOA\x12\x20\n\x0bLOGLBCPNAEL\x18\x06\x20\x01(\rR\x0bLOGLBCPNAEL\x12\x20\
+    \n\x0bLHHJFMMCBAF\x18\n\x20\x01(\rR\x0bLHHJFMMCBAF\x12\"\n\x0bFJLCMPAPIG\
+    A\x18\x02\x20\x01(\rH\0R\x0bFJLCMPAPIGA\x120\n\x0bEBEMKMGCCGJ\x18\x01\
     \x20\x01(\x0b2\x0c.NKGAIPKINJEH\0R\x0bEBEMKMGCCGJB\r\n\x0bHGEOKHHJAIEb\
     \x06proto3\
 ";

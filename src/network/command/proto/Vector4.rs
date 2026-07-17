@@ -93,16 +93,16 @@ impl ::protobuf::Message for Vector4 {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                45 => {
+                53 => {
                     self.z = is.read_float()?;
                 },
-                125 => {
+                69 => {
                     self.w = is.read_float()?;
                 },
-                13 => {
+                77 => {
                     self.x = is.read_float()?;
                 },
-                109 => {
+                85 => {
                     self.y = is.read_float()?;
                 },
                 tag => {
@@ -136,16 +136,16 @@ impl ::protobuf::Message for Vector4 {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.z != 0. {
-            os.write_float(5, self.z)?;
+            os.write_float(6, self.z)?;
         }
         if self.w != 0. {
-            os.write_float(15, self.w)?;
+            os.write_float(8, self.w)?;
         }
         if self.x != 0. {
-            os.write_float(1, self.x)?;
+            os.write_float(9, self.x)?;
         }
         if self.y != 0. {
-            os.write_float(13, self.y)?;
+            os.write_float(10, self.y)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for Vector4 {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rVector4.proto\"A\n\x07Vector4\x12\x0c\n\x01z\x18\x05\x20\x01(\x02R\
-    \x01z\x12\x0c\n\x01w\x18\x0f\x20\x01(\x02R\x01w\x12\x0c\n\x01x\x18\x01\
-    \x20\x01(\x02R\x01x\x12\x0c\n\x01y\x18\r\x20\x01(\x02R\x01yb\x06proto3\
+    \n\rVector4.proto\"A\n\x07Vector4\x12\x0c\n\x01z\x18\x06\x20\x01(\x02R\
+    \x01z\x12\x0c\n\x01w\x18\x08\x20\x01(\x02R\x01w\x12\x0c\n\x01x\x18\t\x20\
+    \x01(\x02R\x01x\x12\x0c\n\x01y\x18\n\x20\x01(\x02R\x01yb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

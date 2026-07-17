@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIJBCJPELBG {
     // message fields
-    // @@protoc_insertion_point(field:GIJBCJPELBG.DHJANOFGDNP)
-    pub DHJANOFGDNP: u64,
-    // @@protoc_insertion_point(field:GIJBCJPELBG.IPDDIKPHGPE)
-    pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
     // @@protoc_insertion_point(field:GIJBCJPELBG.ODDLBGLACKO)
     pub ODDLBGLACKO: i32,
+    // @@protoc_insertion_point(field:GIJBCJPELBG.IPDDIKPHGPE)
+    pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
+    // @@protoc_insertion_point(field:GIJBCJPELBG.DHJANOFGDNP)
+    pub DHJANOFGDNP: u64,
     // special fields
     // @@protoc_insertion_point(special_field:GIJBCJPELBG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl GIJBCJPELBG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHJANOFGDNP",
-            |m: &GIJBCJPELBG| { &m.DHJANOFGDNP },
-            |m: &mut GIJBCJPELBG| { &mut m.DHJANOFGDNP },
+            "ODDLBGLACKO",
+            |m: &GIJBCJPELBG| { &m.ODDLBGLACKO },
+            |m: &mut GIJBCJPELBG| { &mut m.ODDLBGLACKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPDDIKPHGPE",
@@ -64,9 +64,9 @@ impl GIJBCJPELBG {
             |m: &mut GIJBCJPELBG| { &mut m.IPDDIKPHGPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODDLBGLACKO",
-            |m: &GIJBCJPELBG| { &m.ODDLBGLACKO },
-            |m: &mut GIJBCJPELBG| { &mut m.ODDLBGLACKO },
+            "DHJANOFGDNP",
+            |m: &GIJBCJPELBG| { &m.DHJANOFGDNP },
+            |m: &mut GIJBCJPELBG| { &mut m.DHJANOFGDNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIJBCJPELBG>(
             "GIJBCJPELBG",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for GIJBCJPELBG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.DHJANOFGDNP = is.read_uint64()?;
+                    self.ODDLBGLACKO = is.read_int32()?;
                 },
-                112 => {
+                56 => {
                     self.IPDDIKPHGPE = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.ODDLBGLACKO = is.read_int32()?;
+                88 => {
+                    self.DHJANOFGDNP = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GIJBCJPELBG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHJANOFGDNP != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.DHJANOFGDNP);
+        if self.ODDLBGLACKO != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.ODDLBGLACKO);
         }
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            my_size += ::protobuf::rt::int32_size(14, self.IPDDIKPHGPE.value());
+            my_size += ::protobuf::rt::int32_size(7, self.IPDDIKPHGPE.value());
         }
-        if self.ODDLBGLACKO != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.ODDLBGLACKO);
+        if self.DHJANOFGDNP != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.DHJANOFGDNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GIJBCJPELBG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHJANOFGDNP != 0 {
-            os.write_uint64(3, self.DHJANOFGDNP)?;
+        if self.ODDLBGLACKO != 0 {
+            os.write_int32(3, self.ODDLBGLACKO)?;
         }
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
         }
-        if self.ODDLBGLACKO != 0 {
-            os.write_int32(13, self.ODDLBGLACKO)?;
+        if self.DHJANOFGDNP != 0 {
+            os.write_uint64(11, self.DHJANOFGDNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GIJBCJPELBG {
     }
 
     fn clear(&mut self) {
-        self.DHJANOFGDNP = 0;
-        self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
         self.ODDLBGLACKO = 0;
+        self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
+        self.DHJANOFGDNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIJBCJPELBG {
         static instance: GIJBCJPELBG = GIJBCJPELBG {
-            DHJANOFGDNP: 0,
-            IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
             ODDLBGLACKO: 0,
+            IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
+            DHJANOFGDNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for GIJBCJPELBG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIJBCJPELBG.proto\x1a\x11DILHPBMCOFK.proto\"\x81\x01\n\x0bGIJBCJPE\
-    LBG\x12\x20\n\x0bDHJANOFGDNP\x18\x03\x20\x01(\x04R\x0bDHJANOFGDNP\x12.\n\
-    \x0bIPDDIKPHGPE\x18\x0e\x20\x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDDIKPHGPE\
-    \x12\x20\n\x0bODDLBGLACKO\x18\r\x20\x01(\x05R\x0bODDLBGLACKOb\x06proto3\
+    LBG\x12\x20\n\x0bODDLBGLACKO\x18\x03\x20\x01(\x05R\x0bODDLBGLACKO\x12.\n\
+    \x0bIPDDIKPHGPE\x18\x07\x20\x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDDIKPHGPE\
+    \x12\x20\n\x0bDHJANOFGDNP\x18\x0b\x20\x01(\x04R\x0bDHJANOFGDNPb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

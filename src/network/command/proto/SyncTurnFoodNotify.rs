@@ -79,16 +79,16 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.CAMEGAGKPGL)?;
                 },
-                104 => {
+                16 => {
                     self.CAMEGAGKPGL.push(is.read_uint32()?);
                 },
-                32 => {
+                88 => {
                     self.EOJBFLHBNMB.push(is.read_enum_or_unknown()?);
                 },
-                34 => {
+                90 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.EOJBFLHBNMB)?
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CAMEGAGKPGL);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.EOJBFLHBNMB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.CAMEGAGKPGL);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(11, &self.EOJBFLHBNMB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.CAMEGAGKPGL)?;
-        os.write_repeated_packed_enum_or_unknown(4, &self.EOJBFLHBNMB)?;
+        os.write_repeated_packed_uint32(2, &self.CAMEGAGKPGL)?;
+        os.write_repeated_packed_enum_or_unknown(11, &self.EOJBFLHBNMB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncTurnFoodNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SyncTurnFoodNotify.proto\x1a\x14TurnFoodSwitch.proto\"i\n\x12SyncT\
-    urnFoodNotify\x12\x20\n\x0bCAMEGAGKPGL\x18\r\x20\x03(\rR\x0bCAMEGAGKPGL\
-    \x121\n\x0bEOJBFLHBNMB\x18\x04\x20\x03(\x0e2\x0f.TurnFoodSwitchR\x0bEOJB\
-    FLHBNMBb\x06proto3\
+    urnFoodNotify\x12\x20\n\x0bCAMEGAGKPGL\x18\x02\x20\x03(\rR\x0bCAMEGAGKPG\
+    L\x121\n\x0bEOJBFLHBNMB\x18\x0b\x20\x03(\x0e2\x0f.TurnFoodSwitchR\x0bEOJ\
+    BFLHBNMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

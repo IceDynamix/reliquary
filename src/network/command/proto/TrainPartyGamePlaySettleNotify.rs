@@ -30,10 +30,10 @@ pub struct TrainPartyGamePlaySettleNotify {
     // message fields
     // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.ENBJCMPCMLK)
     pub ENBJCMPCMLK: ::protobuf::MessageField<super::TrainPartyPassengerInfo::TrainPartyPassengerInfo>,
-    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.CEJPCMHEEMN)
-    pub CEJPCMHEEMN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.unlock_area_num)
     pub unlock_area_num: u32,
+    // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.CEJPCMHEEMN)
+    pub CEJPCMHEEMN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyGamePlaySettleNotify.record_id)
     pub record_id: u32,
     // special fields
@@ -60,15 +60,15 @@ impl TrainPartyGamePlaySettleNotify {
             |m: &TrainPartyGamePlaySettleNotify| { &m.ENBJCMPCMLK },
             |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.ENBJCMPCMLK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEJPCMHEEMN",
-            |m: &TrainPartyGamePlaySettleNotify| { &m.CEJPCMHEEMN },
-            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.CEJPCMHEEMN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unlock_area_num",
             |m: &TrainPartyGamePlaySettleNotify| { &m.unlock_area_num },
             |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.unlock_area_num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CEJPCMHEEMN",
+            |m: &TrainPartyGamePlaySettleNotify| { &m.CEJPCMHEEMN },
+            |m: &mut TrainPartyGamePlaySettleNotify| { &mut m.CEJPCMHEEMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "record_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ENBJCMPCMLK)?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CEJPCMHEEMN)?;
-                },
-                96 => {
-                    self.CEJPCMHEEMN.push(is.read_uint32()?);
                 },
                 48 => {
                     self.unlock_area_num = is.read_uint32()?;
                 },
-                8 => {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CEJPCMHEEMN)?;
+                },
+                80 => {
+                    self.CEJPCMHEEMN.push(is.read_uint32()?);
+                },
+                96 => {
                     self.record_id = is.read_uint32()?;
                 },
                 tag => {
@@ -124,12 +124,12 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CEJPCMHEEMN);
         if self.unlock_area_num != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.unlock_area_num);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CEJPCMHEEMN);
         if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.record_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.record_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ENBJCMPCMLK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        os.write_repeated_packed_uint32(12, &self.CEJPCMHEEMN)?;
         if self.unlock_area_num != 0 {
             os.write_uint32(6, self.unlock_area_num)?;
         }
+        os.write_repeated_packed_uint32(10, &self.CEJPCMHEEMN)?;
         if self.record_id != 0 {
-            os.write_uint32(1, self.record_id)?;
+            os.write_uint32(12, self.record_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
 
     fn clear(&mut self) {
         self.ENBJCMPCMLK.clear();
-        self.CEJPCMHEEMN.clear();
         self.unlock_area_num = 0;
+        self.CEJPCMHEEMN.clear();
         self.record_id = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for TrainPartyGamePlaySettleNotify {
     fn default_instance() -> &'static TrainPartyGamePlaySettleNotify {
         static instance: TrainPartyGamePlaySettleNotify = TrainPartyGamePlaySettleNotify {
             ENBJCMPCMLK: ::protobuf::MessageField::none(),
-            CEJPCMHEEMN: ::std::vec::Vec::new(),
             unlock_area_num: 0,
+            CEJPCMHEEMN: ::std::vec::Vec::new(),
             record_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyGamePlaySettleNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$TrainPartyGamePlaySettleNotify.proto\x1a\x1dTrainPartyPassengerInfo.p\
     roto\"\xc3\x01\n\x1eTrainPartyGamePlaySettleNotify\x12:\n\x0bENBJCMPCMLK\
-    \x18\x05\x20\x01(\x0b2\x18.TrainPartyPassengerInfoR\x0bENBJCMPCMLK\x12\
-    \x20\n\x0bCEJPCMHEEMN\x18\x0c\x20\x03(\rR\x0bCEJPCMHEEMN\x12&\n\x0funloc\
-    k_area_num\x18\x06\x20\x01(\rR\runlockAreaNum\x12\x1b\n\trecord_id\x18\
-    \x01\x20\x01(\rR\x08recordIdb\x06proto3\
+    \x18\x03\x20\x01(\x0b2\x18.TrainPartyPassengerInfoR\x0bENBJCMPCMLK\x12&\
+    \n\x0funlock_area_num\x18\x06\x20\x01(\rR\runlockAreaNum\x12\x20\n\x0bCE\
+    JPCMHEEMN\x18\n\x20\x03(\rR\x0bCEJPCMHEEMN\x12\x1b\n\trecord_id\x18\x0c\
+    \x20\x01(\rR\x08recordIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

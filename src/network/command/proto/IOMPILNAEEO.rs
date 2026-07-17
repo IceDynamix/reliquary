@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IOMPILNAEEO {
     // message fields
-    // @@protoc_insertion_point(field:IOMPILNAEEO.DHMDAEKJENF)
-    pub DHMDAEKJENF: ::std::string::String,
+    // @@protoc_insertion_point(field:IOMPILNAEEO.event_name)
+    pub event_name: ::std::string::String,
     // @@protoc_insertion_point(field:IOMPILNAEEO.count)
     pub count: u32,
     // special fields
@@ -52,9 +52,9 @@ impl IOMPILNAEEO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHMDAEKJENF",
-            |m: &IOMPILNAEEO| { &m.DHMDAEKJENF },
-            |m: &mut IOMPILNAEEO| { &mut m.DHMDAEKJENF },
+            "event_name",
+            |m: &IOMPILNAEEO| { &m.event_name },
+            |m: &mut IOMPILNAEEO| { &mut m.event_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for IOMPILNAEEO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.DHMDAEKJENF = is.read_string()?;
+                    self.event_name = is.read_string()?;
                 },
                 16 => {
                     self.count = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for IOMPILNAEEO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.DHMDAEKJENF.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.DHMDAEKJENF);
+        if !self.event_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.event_name);
         }
         if self.count != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.count);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for IOMPILNAEEO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.DHMDAEKJENF.is_empty() {
-            os.write_string(1, &self.DHMDAEKJENF)?;
+        if !self.event_name.is_empty() {
+            os.write_string(1, &self.event_name)?;
         }
         if self.count != 0 {
             os.write_uint32(2, self.count)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for IOMPILNAEEO {
     }
 
     fn clear(&mut self) {
-        self.DHMDAEKJENF.clear();
+        self.event_name.clear();
         self.count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IOMPILNAEEO {
         static instance: IOMPILNAEEO = IOMPILNAEEO {
-            DHMDAEKJENF: ::std::string::String::new(),
+            event_name: ::std::string::String::new(),
             count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IOMPILNAEEO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IOMPILNAEEO.proto\"E\n\x0bIOMPILNAEEO\x12\x20\n\x0bDHMDAEKJENF\x18\
-    \x01\x20\x01(\tR\x0bDHMDAEKJENF\x12\x14\n\x05count\x18\x02\x20\x01(\rR\
-    \x05countb\x06proto3\
+    \n\x11IOMPILNAEEO.proto\"B\n\x0bIOMPILNAEEO\x12\x1d\n\nevent_name\x18\
+    \x01\x20\x01(\tR\teventName\x12\x14\n\x05count\x18\x02\x20\x01(\rR\x05co\
+    untb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

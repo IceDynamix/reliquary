@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDJBBILMHLC {
     // message fields
-    // @@protoc_insertion_point(field:MDJBBILMHLC.BPDABHGFBFO)
-    pub BPDABHGFBFO: ::std::vec::Vec<super::KKBGIPCAGGH::KKBGIPCAGGH>,
-    // @@protoc_insertion_point(field:MDJBBILMHLC.MOADBALHMFD)
-    pub MOADBALHMFD: u32,
     // @@protoc_insertion_point(field:MDJBBILMHLC.LNDKCPBJDKH)
     pub LNDKCPBJDKH: u32,
+    // @@protoc_insertion_point(field:MDJBBILMHLC.MOADBALHMFD)
+    pub MOADBALHMFD: u32,
+    // @@protoc_insertion_point(field:MDJBBILMHLC.BPDABHGFBFO)
+    pub BPDABHGFBFO: ::std::vec::Vec<super::GridFightEncounterInfo::GridFightEncounterInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:MDJBBILMHLC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MDJBBILMHLC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BPDABHGFBFO",
-            |m: &MDJBBILMHLC| { &m.BPDABHGFBFO },
-            |m: &mut MDJBBILMHLC| { &mut m.BPDABHGFBFO },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNDKCPBJDKH",
+            |m: &MDJBBILMHLC| { &m.LNDKCPBJDKH },
+            |m: &mut MDJBBILMHLC| { &mut m.LNDKCPBJDKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MOADBALHMFD",
             |m: &MDJBBILMHLC| { &m.MOADBALHMFD },
             |m: &mut MDJBBILMHLC| { &mut m.MOADBALHMFD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNDKCPBJDKH",
-            |m: &MDJBBILMHLC| { &m.LNDKCPBJDKH },
-            |m: &mut MDJBBILMHLC| { &mut m.LNDKCPBJDKH },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BPDABHGFBFO",
+            |m: &MDJBBILMHLC| { &m.BPDABHGFBFO },
+            |m: &mut MDJBBILMHLC| { &mut m.BPDABHGFBFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MDJBBILMHLC>(
             "MDJBBILMHLC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MDJBBILMHLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.BPDABHGFBFO.push(is.read_message()?);
-                },
-                80 => {
-                    self.MOADBALHMFD = is.read_uint32()?;
+                24 => {
+                    self.LNDKCPBJDKH = is.read_uint32()?;
                 },
                 56 => {
-                    self.LNDKCPBJDKH = is.read_uint32()?;
+                    self.MOADBALHMFD = is.read_uint32()?;
+                },
+                82 => {
+                    self.BPDABHGFBFO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for MDJBBILMHLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LNDKCPBJDKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LNDKCPBJDKH);
+        }
+        if self.MOADBALHMFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MOADBALHMFD);
+        }
         for value in &self.BPDABHGFBFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MOADBALHMFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MOADBALHMFD);
-        }
-        if self.LNDKCPBJDKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LNDKCPBJDKH);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BPDABHGFBFO {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.MOADBALHMFD != 0 {
-            os.write_uint32(10, self.MOADBALHMFD)?;
-        }
         if self.LNDKCPBJDKH != 0 {
-            os.write_uint32(7, self.LNDKCPBJDKH)?;
+            os.write_uint32(3, self.LNDKCPBJDKH)?;
         }
+        if self.MOADBALHMFD != 0 {
+            os.write_uint32(7, self.MOADBALHMFD)?;
+        }
+        for v in &self.BPDABHGFBFO {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MDJBBILMHLC {
     }
 
     fn clear(&mut self) {
-        self.BPDABHGFBFO.clear();
-        self.MOADBALHMFD = 0;
         self.LNDKCPBJDKH = 0;
+        self.MOADBALHMFD = 0;
+        self.BPDABHGFBFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDJBBILMHLC {
         static instance: MDJBBILMHLC = MDJBBILMHLC {
-            BPDABHGFBFO: ::std::vec::Vec::new(),
-            MOADBALHMFD: 0,
             LNDKCPBJDKH: 0,
+            MOADBALHMFD: 0,
+            BPDABHGFBFO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for MDJBBILMHLC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MDJBBILMHLC.proto\x1a\x11KKBGIPCAGGH.proto\"\x81\x01\n\x0bMDJBBILM\
-    HLC\x12.\n\x0bBPDABHGFBFO\x18\x0e\x20\x03(\x0b2\x0c.KKBGIPCAGGHR\x0bBPDA\
-    BHGFBFO\x12\x20\n\x0bMOADBALHMFD\x18\n\x20\x01(\rR\x0bMOADBALHMFD\x12\
-    \x20\n\x0bLNDKCPBJDKH\x18\x07\x20\x01(\rR\x0bLNDKCPBJDKHb\x06proto3\
+    \n\x11MDJBBILMHLC.proto\x1a\x1cGridFightEncounterInfo.proto\"\x8c\x01\n\
+    \x0bMDJBBILMHLC\x12\x20\n\x0bLNDKCPBJDKH\x18\x03\x20\x01(\rR\x0bLNDKCPBJ\
+    DKH\x12\x20\n\x0bMOADBALHMFD\x18\x07\x20\x01(\rR\x0bMOADBALHMFD\x129\n\
+    \x0bBPDABHGFBFO\x18\n\x20\x03(\x0b2\x17.GridFightEncounterInfoR\x0bBPDAB\
+    HGFBFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KKBGIPCAGGH::file_descriptor().clone());
+            deps.push(super::GridFightEncounterInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MDJBBILMHLC::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

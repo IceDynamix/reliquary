@@ -29,30 +29,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdTutorialType {
     // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NLCDGIPGFDJ)
     KAAMCALPIPD_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_GEDDGDNFMLC)
-    KAAMCALPIPD_GEDDGDNFMLC = 1636,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NGFHAOOAAGC)
-    KAAMCALPIPD_NGFHAOOAAGC = 1681,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NFNLOFDMPIP)
-    KAAMCALPIPD_NFNLOFDMPIP = 1673,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_BLPBNGIFIGN)
-    KAAMCALPIPD_BLPBNGIFIGN = 1615,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_COOPIEFCJOC)
-    KAAMCALPIPD_COOPIEFCJOC = 1612,
+    KAAMCALPIPD_BLPBNGIFIGN = 1686,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_BJKKIDCBHIO)
-    KAAMCALPIPD_BJKKIDCBHIO = 1613,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NKBOHHPKDME)
-    KAAMCALPIPD_NKBOHHPKDME = 1603,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_FNCJDAELOIH)
-    KAAMCALPIPD_FNCJDAELOIH = 1680,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_GMDOCADKOEP)
-    KAAMCALPIPD_GMDOCADKOEP = 1687,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_CEOEBCPLMFJ)
-    KAAMCALPIPD_CEOEBCPLMFJ = 1629,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NIAJIEEJFPK)
-    KAAMCALPIPD_NIAJIEEJFPK = 1627,
+    KAAMCALPIPD_BJKKIDCBHIO = 1681,
     // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_CKFLHOIIAGP)
-    KAAMCALPIPD_CKFLHOIIAGP = 1610,
+    KAAMCALPIPD_CKFLHOIIAGP = 1626,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_GEDDGDNFMLC)
+    KAAMCALPIPD_GEDDGDNFMLC = 1688,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_GMDOCADKOEP)
+    KAAMCALPIPD_GMDOCADKOEP = 1613,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_FNCJDAELOIH)
+    KAAMCALPIPD_FNCJDAELOIH = 1693,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NGFHAOOAAGC)
+    KAAMCALPIPD_NGFHAOOAAGC = 1647,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NIAJIEEJFPK)
+    KAAMCALPIPD_NIAJIEEJFPK = 1658,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_CEOEBCPLMFJ)
+    KAAMCALPIPD_CEOEBCPLMFJ = 1671,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_COOPIEFCJOC)
+    KAAMCALPIPD_COOPIEFCJOC = 1640,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NFNLOFDMPIP)
+    KAAMCALPIPD_NFNLOFDMPIP = 1625,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.KAAMCALPIPD_NKBOHHPKDME)
+    KAAMCALPIPD_NKBOHHPKDME = 1678,
 }
 
 impl ::protobuf::Enum for CmdTutorialType {
@@ -65,18 +65,18 @@ impl ::protobuf::Enum for CmdTutorialType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdTutorialType> {
         match value {
             0 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NLCDGIPGFDJ),
-            1636 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC),
-            1681 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC),
-            1673 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP),
-            1615 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN),
-            1612 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC),
-            1613 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO),
-            1603 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME),
-            1680 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH),
-            1687 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP),
-            1629 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ),
-            1627 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK),
-            1610 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP),
+            1686 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN),
+            1681 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO),
+            1626 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP),
+            1688 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC),
+            1613 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP),
+            1693 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH),
+            1647 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC),
+            1658 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK),
+            1671 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ),
+            1640 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC),
+            1625 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP),
+            1678 => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME),
             _ => ::std::option::Option::None
         }
     }
@@ -84,36 +84,36 @@ impl ::protobuf::Enum for CmdTutorialType {
     fn from_str(str: &str) -> ::std::option::Option<CmdTutorialType> {
         match str {
             "KAAMCALPIPD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NLCDGIPGFDJ),
-            "KAAMCALPIPD_GEDDGDNFMLC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC),
-            "KAAMCALPIPD_NGFHAOOAAGC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC),
-            "KAAMCALPIPD_NFNLOFDMPIP" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP),
             "KAAMCALPIPD_BLPBNGIFIGN" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN),
-            "KAAMCALPIPD_COOPIEFCJOC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC),
             "KAAMCALPIPD_BJKKIDCBHIO" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO),
-            "KAAMCALPIPD_NKBOHHPKDME" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME),
-            "KAAMCALPIPD_FNCJDAELOIH" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH),
-            "KAAMCALPIPD_GMDOCADKOEP" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP),
-            "KAAMCALPIPD_CEOEBCPLMFJ" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ),
-            "KAAMCALPIPD_NIAJIEEJFPK" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK),
             "KAAMCALPIPD_CKFLHOIIAGP" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP),
+            "KAAMCALPIPD_GEDDGDNFMLC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC),
+            "KAAMCALPIPD_GMDOCADKOEP" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP),
+            "KAAMCALPIPD_FNCJDAELOIH" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH),
+            "KAAMCALPIPD_NGFHAOOAAGC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC),
+            "KAAMCALPIPD_NIAJIEEJFPK" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK),
+            "KAAMCALPIPD_CEOEBCPLMFJ" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ),
+            "KAAMCALPIPD_COOPIEFCJOC" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC),
+            "KAAMCALPIPD_NFNLOFDMPIP" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP),
+            "KAAMCALPIPD_NKBOHHPKDME" => ::std::option::Option::Some(CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTutorialType] = &[
         CmdTutorialType::KAAMCALPIPD_NLCDGIPGFDJ,
-        CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC,
-        CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC,
-        CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP,
         CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN,
-        CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC,
         CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO,
-        CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME,
-        CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH,
-        CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP,
-        CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ,
-        CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK,
         CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP,
+        CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC,
+        CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP,
+        CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH,
+        CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC,
+        CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK,
+        CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ,
+        CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC,
+        CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP,
+        CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME,
     ];
 }
 
@@ -126,18 +126,18 @@ impl ::protobuf::EnumFull for CmdTutorialType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdTutorialType::KAAMCALPIPD_NLCDGIPGFDJ => 0,
-            CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC => 1,
-            CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC => 2,
-            CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP => 3,
-            CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN => 4,
-            CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC => 5,
-            CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO => 6,
-            CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME => 7,
-            CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH => 8,
-            CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP => 9,
-            CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ => 10,
-            CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK => 11,
-            CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP => 12,
+            CmdTutorialType::KAAMCALPIPD_BLPBNGIFIGN => 1,
+            CmdTutorialType::KAAMCALPIPD_BJKKIDCBHIO => 2,
+            CmdTutorialType::KAAMCALPIPD_CKFLHOIIAGP => 3,
+            CmdTutorialType::KAAMCALPIPD_GEDDGDNFMLC => 4,
+            CmdTutorialType::KAAMCALPIPD_GMDOCADKOEP => 5,
+            CmdTutorialType::KAAMCALPIPD_FNCJDAELOIH => 6,
+            CmdTutorialType::KAAMCALPIPD_NGFHAOOAAGC => 7,
+            CmdTutorialType::KAAMCALPIPD_NIAJIEEJFPK => 8,
+            CmdTutorialType::KAAMCALPIPD_CEOEBCPLMFJ => 9,
+            CmdTutorialType::KAAMCALPIPD_COOPIEFCJOC => 10,
+            CmdTutorialType::KAAMCALPIPD_NFNLOFDMPIP => 11,
+            CmdTutorialType::KAAMCALPIPD_NKBOHHPKDME => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,15 +157,15 @@ impl CmdTutorialType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdTutorialType.proto*\x96\x03\n\x0fCmdTutorialType\x12\x1b\n\x17K\
-    AAMCALPIPD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KAAMCALPIPD_GEDDGDNFMLC\x10\
-    \xe4\x0c\x12\x1c\n\x17KAAMCALPIPD_NGFHAOOAAGC\x10\x91\r\x12\x1c\n\x17KAA\
-    MCALPIPD_NFNLOFDMPIP\x10\x89\r\x12\x1c\n\x17KAAMCALPIPD_BLPBNGIFIGN\x10\
-    \xcf\x0c\x12\x1c\n\x17KAAMCALPIPD_COOPIEFCJOC\x10\xcc\x0c\x12\x1c\n\x17K\
-    AAMCALPIPD_BJKKIDCBHIO\x10\xcd\x0c\x12\x1c\n\x17KAAMCALPIPD_NKBOHHPKDME\
-    \x10\xc3\x0c\x12\x1c\n\x17KAAMCALPIPD_FNCJDAELOIH\x10\x90\r\x12\x1c\n\
-    \x17KAAMCALPIPD_GMDOCADKOEP\x10\x97\r\x12\x1c\n\x17KAAMCALPIPD_CEOEBCPLM\
-    FJ\x10\xdd\x0c\x12\x1c\n\x17KAAMCALPIPD_NIAJIEEJFPK\x10\xdb\x0c\x12\x1c\
-    \n\x17KAAMCALPIPD_CKFLHOIIAGP\x10\xca\x0cb\x06proto3\
+    AAMCALPIPD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KAAMCALPIPD_BLPBNGIFIGN\x10\
+    \x96\r\x12\x1c\n\x17KAAMCALPIPD_BJKKIDCBHIO\x10\x91\r\x12\x1c\n\x17KAAMC\
+    ALPIPD_CKFLHOIIAGP\x10\xda\x0c\x12\x1c\n\x17KAAMCALPIPD_GEDDGDNFMLC\x10\
+    \x98\r\x12\x1c\n\x17KAAMCALPIPD_GMDOCADKOEP\x10\xcd\x0c\x12\x1c\n\x17KAA\
+    MCALPIPD_FNCJDAELOIH\x10\x9d\r\x12\x1c\n\x17KAAMCALPIPD_NGFHAOOAAGC\x10\
+    \xef\x0c\x12\x1c\n\x17KAAMCALPIPD_NIAJIEEJFPK\x10\xfa\x0c\x12\x1c\n\x17K\
+    AAMCALPIPD_CEOEBCPLMFJ\x10\x87\r\x12\x1c\n\x17KAAMCALPIPD_COOPIEFCJOC\
+    \x10\xe8\x0c\x12\x1c\n\x17KAAMCALPIPD_NFNLOFDMPIP\x10\xd9\x0c\x12\x1c\n\
+    \x17KAAMCALPIPD_NKBOHHPKDME\x10\x8e\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TarotBookSyncDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.BBEMIGELGJC)
-    pub BBEMIGELGJC: ::protobuf::MessageField<super::OHCFIOOIKND::OHCFIOOIKND>,
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.IJOJMJOMELA)
-    pub IJOJMJOMELA: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.IMNNLHCAKML)
-    pub IMNNLHCAKML: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.LOCEBOCJGEC)
-    pub LOCEBOCJGEC: u32,
-    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.HBLKMBHGLNO)
-    pub HBLKMBHGLNO: u32,
     // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.energy_info)
     pub energy_info: u32,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.BBEMIGELGJC)
+    pub BBEMIGELGJC: ::protobuf::MessageField<super::OHCFIOOIKND::OHCFIOOIKND>,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.HBLKMBHGLNO)
+    pub HBLKMBHGLNO: u32,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.LOCEBOCJGEC)
+    pub LOCEBOCJGEC: u32,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.IMNNLHCAKML)
+    pub IMNNLHCAKML: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:TarotBookSyncDataScNotify.IJOJMJOMELA)
+    pub IJOJMJOMELA: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:TarotBookSyncDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,15 @@ impl TarotBookSyncDataScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "energy_info",
+            |m: &TarotBookSyncDataScNotify| { &m.energy_info },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.energy_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OHCFIOOIKND::OHCFIOOIKND>(
             "BBEMIGELGJC",
             |m: &TarotBookSyncDataScNotify| { &m.BBEMIGELGJC },
             |m: &mut TarotBookSyncDataScNotify| { &mut m.BBEMIGELGJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "IJOJMJOMELA",
-            |m: &TarotBookSyncDataScNotify| { &m.IJOJMJOMELA },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.IJOJMJOMELA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "IMNNLHCAKML",
-            |m: &TarotBookSyncDataScNotify| { &m.IMNNLHCAKML },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.IMNNLHCAKML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOCEBOCJGEC",
-            |m: &TarotBookSyncDataScNotify| { &m.LOCEBOCJGEC },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.LOCEBOCJGEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBLKMBHGLNO",
@@ -85,9 +75,19 @@ impl TarotBookSyncDataScNotify {
             |m: &mut TarotBookSyncDataScNotify| { &mut m.HBLKMBHGLNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "energy_info",
-            |m: &TarotBookSyncDataScNotify| { &m.energy_info },
-            |m: &mut TarotBookSyncDataScNotify| { &mut m.energy_info },
+            "LOCEBOCJGEC",
+            |m: &TarotBookSyncDataScNotify| { &m.LOCEBOCJGEC },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.LOCEBOCJGEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "IMNNLHCAKML",
+            |m: &TarotBookSyncDataScNotify| { &m.IMNNLHCAKML },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.IMNNLHCAKML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "IJOJMJOMELA",
+            |m: &TarotBookSyncDataScNotify| { &m.IJOJMJOMELA },
+            |m: &mut TarotBookSyncDataScNotify| { &mut m.IJOJMJOMELA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TarotBookSyncDataScNotify>(
             "TarotBookSyncDataScNotify",
@@ -107,25 +107,19 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                32 => {
+                    self.energy_info = is.read_uint32()?;
+                },
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBEMIGELGJC)?;
                 },
-                58 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.IJOJMJOMELA.insert(key, value);
+                64 => {
+                    self.HBLKMBHGLNO = is.read_uint32()?;
                 },
-                82 => {
+                72 => {
+                    self.LOCEBOCJGEC = is.read_uint32()?;
+                },
+                90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -140,14 +134,20 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
                     is.pop_limit(old_limit);
                     self.IMNNLHCAKML.insert(key, value);
                 },
-                120 => {
-                    self.LOCEBOCJGEC = is.read_uint32()?;
-                },
-                48 => {
-                    self.HBLKMBHGLNO = is.read_uint32()?;
-                },
-                112 => {
-                    self.energy_info = is.read_uint32()?;
+                106 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.IJOJMJOMELA.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -161,67 +161,67 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.energy_info != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.energy_info);
+        }
         if let Some(v) = self.BBEMIGELGJC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for (k, v) in &self.IJOJMJOMELA {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
+        if self.HBLKMBHGLNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HBLKMBHGLNO);
+        }
+        if self.LOCEBOCJGEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.LOCEBOCJGEC);
+        }
         for (k, v) in &self.IMNNLHCAKML {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.LOCEBOCJGEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LOCEBOCJGEC);
-        }
-        if self.HBLKMBHGLNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HBLKMBHGLNO);
-        }
-        if self.energy_info != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.energy_info);
-        }
+        for (k, v) in &self.IJOJMJOMELA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BBEMIGELGJC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.energy_info != 0 {
+            os.write_uint32(4, self.energy_info)?;
         }
-        for (k, v) in &self.IJOJMJOMELA {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
+        if let Some(v) = self.BBEMIGELGJC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.HBLKMBHGLNO != 0 {
+            os.write_uint32(8, self.HBLKMBHGLNO)?;
+        }
+        if self.LOCEBOCJGEC != 0 {
+            os.write_uint32(9, self.LOCEBOCJGEC)?;
+        }
         for (k, v) in &self.IMNNLHCAKML {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(90)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.LOCEBOCJGEC != 0 {
-            os.write_uint32(15, self.LOCEBOCJGEC)?;
-        }
-        if self.HBLKMBHGLNO != 0 {
-            os.write_uint32(6, self.HBLKMBHGLNO)?;
-        }
-        if self.energy_info != 0 {
-            os.write_uint32(14, self.energy_info)?;
-        }
+        for (k, v) in &self.IJOJMJOMELA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -239,12 +239,12 @@ impl ::protobuf::Message for TarotBookSyncDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.BBEMIGELGJC.clear();
-        self.IJOJMJOMELA.clear();
-        self.IMNNLHCAKML.clear();
-        self.LOCEBOCJGEC = 0;
-        self.HBLKMBHGLNO = 0;
         self.energy_info = 0;
+        self.BBEMIGELGJC.clear();
+        self.HBLKMBHGLNO = 0;
+        self.LOCEBOCJGEC = 0;
+        self.IMNNLHCAKML.clear();
+        self.IJOJMJOMELA.clear();
         self.special_fields.clear();
     }
 
@@ -273,15 +273,15 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookSyncDataScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTarotBookSyncDataScNotify.proto\x1a\x11OHCFIOOIKND.proto\"\xce\x03\
-    \n\x19TarotBookSyncDataScNotify\x12.\n\x0bBBEMIGELGJC\x18\t\x20\x01(\x0b\
-    2\x0c.OHCFIOOIKNDR\x0bBBEMIGELGJC\x12M\n\x0bIJOJMJOMELA\x18\x07\x20\x03(\
-    \x0b2+.TarotBookSyncDataScNotify.IJOJMJOMELAEntryR\x0bIJOJMJOMELA\x12M\n\
-    \x0bIMNNLHCAKML\x18\n\x20\x03(\x0b2+.TarotBookSyncDataScNotify.IMNNLHCAK\
-    MLEntryR\x0bIMNNLHCAKML\x12\x20\n\x0bLOCEBOCJGEC\x18\x0f\x20\x01(\rR\x0b\
-    LOCEBOCJGEC\x12\x20\n\x0bHBLKMBHGLNO\x18\x06\x20\x01(\rR\x0bHBLKMBHGLNO\
-    \x12\x1f\n\x0benergy_info\x18\x0e\x20\x01(\rR\nenergyInfo\x1a>\n\x10IJOJ\
-    MJOMELAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05va\
-    lue\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10IMNNLHCAKMLEntry\
+    \n\x19TarotBookSyncDataScNotify\x12\x1f\n\x0benergy_info\x18\x04\x20\x01\
+    (\rR\nenergyInfo\x12.\n\x0bBBEMIGELGJC\x18\x05\x20\x01(\x0b2\x0c.OHCFIOO\
+    IKNDR\x0bBBEMIGELGJC\x12\x20\n\x0bHBLKMBHGLNO\x18\x08\x20\x01(\rR\x0bHBL\
+    KMBHGLNO\x12\x20\n\x0bLOCEBOCJGEC\x18\t\x20\x01(\rR\x0bLOCEBOCJGEC\x12M\
+    \n\x0bIMNNLHCAKML\x18\x0b\x20\x03(\x0b2+.TarotBookSyncDataScNotify.IMNNL\
+    HCAKMLEntryR\x0bIMNNLHCAKML\x12M\n\x0bIJOJMJOMELA\x18\r\x20\x03(\x0b2+.T\
+    arotBookSyncDataScNotify.IJOJMJOMELAEntryR\x0bIJOJMJOMELA\x1a>\n\x10IMNN\
+    LHCAKMLEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05va\
+    lue\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10IJOJMJOMELAEntry\
     \x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\
     \x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

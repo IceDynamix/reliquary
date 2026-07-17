@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EGELHCKMLNK {
     // message fields
-    // @@protoc_insertion_point(field:EGELHCKMLNK.FDEAKDCDGML)
-    pub FDEAKDCDGML: u32,
     // @@protoc_insertion_point(field:EGELHCKMLNK.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EGELHCKMLNK.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:EGELHCKMLNK.FDEAKDCDGML)
+    pub FDEAKDCDGML: u32,
     // @@protoc_insertion_point(field:EGELHCKMLNK.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:EGELHCKMLNK.panel_id)
+    pub panel_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EGELHCKMLNK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl EGELHCKMLNK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDEAKDCDGML",
-            |m: &EGELHCKMLNK| { &m.FDEAKDCDGML },
-            |m: &mut EGELHCKMLNK| { &mut m.FDEAKDCDGML },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EGELHCKMLNK| { &m.retcode },
             |m: &mut EGELHCKMLNK| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &EGELHCKMLNK| { &m.panel_id },
-            |m: &mut EGELHCKMLNK| { &mut m.panel_id },
+            "FDEAKDCDGML",
+            |m: &EGELHCKMLNK| { &m.FDEAKDCDGML },
+            |m: &mut EGELHCKMLNK| { &mut m.FDEAKDCDGML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &EGELHCKMLNK| { &m.group_id },
             |m: &mut EGELHCKMLNK| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &EGELHCKMLNK| { &m.panel_id },
+            |m: &mut EGELHCKMLNK| { &mut m.panel_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EGELHCKMLNK>(
             "EGELHCKMLNK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EGELHCKMLNK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.FDEAKDCDGML = is.read_uint32()?;
-                },
-                88 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
-                    self.panel_id = is.read_uint32()?;
+                80 => {
+                    self.FDEAKDCDGML = is.read_uint32()?;
                 },
-                32 => {
+                96 => {
                     self.group_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.panel_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for EGELHCKMLNK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FDEAKDCDGML != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FDEAKDCDGML);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
+        if self.FDEAKDCDGML != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FDEAKDCDGML);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.panel_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for EGELHCKMLNK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FDEAKDCDGML != 0 {
-            os.write_uint32(13, self.FDEAKDCDGML)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(1, self.panel_id)?;
+        if self.FDEAKDCDGML != 0 {
+            os.write_uint32(10, self.FDEAKDCDGML)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+            os.write_uint32(12, self.group_id)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(14, self.panel_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for EGELHCKMLNK {
     }
 
     fn clear(&mut self) {
-        self.FDEAKDCDGML = 0;
         self.retcode = 0;
-        self.panel_id = 0;
+        self.FDEAKDCDGML = 0;
         self.group_id = 0;
+        self.panel_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EGELHCKMLNK {
         static instance: EGELHCKMLNK = EGELHCKMLNK {
-            FDEAKDCDGML: 0,
             retcode: 0,
-            panel_id: 0,
+            FDEAKDCDGML: 0,
             group_id: 0,
+            panel_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for EGELHCKMLNK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EGELHCKMLNK.proto\"\x7f\n\x0bEGELHCKMLNK\x12\x20\n\x0bFDEAKDCDGML\
-    \x18\r\x20\x01(\rR\x0bFDEAKDCDGML\x12\x18\n\x07retcode\x18\x0b\x20\x01(\
-    \rR\x07retcode\x12\x19\n\x08panel_id\x18\x01\x20\x01(\rR\x07panelId\x12\
-    \x19\n\x08group_id\x18\x04\x20\x01(\rR\x07groupIdb\x06proto3\
+    \n\x11EGELHCKMLNK.proto\"\x7f\n\x0bEGELHCKMLNK\x12\x18\n\x07retcode\x18\
+    \t\x20\x01(\rR\x07retcode\x12\x20\n\x0bFDEAKDCDGML\x18\n\x20\x01(\rR\x0b\
+    FDEAKDCDGML\x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupId\x12\x19\
+    \n\x08panel_id\x18\x0e\x20\x01(\rR\x07panelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

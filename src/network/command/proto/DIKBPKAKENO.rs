@@ -79,10 +79,10 @@ impl ::protobuf::Message for DIKBPKAKENO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.EFCAJENMLKA = is.read_uint32()?;
                 },
-                96 => {
+                24 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DIKBPKAKENO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EFCAJENMLKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EFCAJENMLKA);
+            my_size += ::protobuf::rt::uint32_size(1, self.EFCAJENMLKA);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::NKLAEHJPIMN::NKLAEHJPIMN::NKLAEHJPIMN_FGOFDMDBMAL) {
-            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+            my_size += ::protobuf::rt::int32_size(3, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DIKBPKAKENO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EFCAJENMLKA != 0 {
-            os.write_uint32(3, self.EFCAJENMLKA)?;
+            os.write_uint32(1, self.EFCAJENMLKA)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::NKLAEHJPIMN::NKLAEHJPIMN::NKLAEHJPIMN_FGOFDMDBMAL) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DIKBPKAKENO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DIKBPKAKENO.proto\x1a\x11NKLAEHJPIMN.proto\"U\n\x0bDIKBPKAKENO\x12\
-    \x20\n\x0bEFCAJENMLKA\x18\x03\x20\x01(\rR\x0bEFCAJENMLKA\x12$\n\x06statu\
-    s\x18\x0c\x20\x01(\x0e2\x0c.NKLAEHJPIMNR\x06statusb\x06proto3\
+    \x20\n\x0bEFCAJENMLKA\x18\x01\x20\x01(\rR\x0bEFCAJENMLKA\x12$\n\x06statu\
+    s\x18\x03\x20\x01(\x0e2\x0c.NKLAEHJPIMNR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

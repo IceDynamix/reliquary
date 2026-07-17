@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKMCODLAEKI {
     // message fields
-    // @@protoc_insertion_point(field:AKMCODLAEKI.key)
-    pub key: ::std::string::String,
     // @@protoc_insertion_point(field:AKMCODLAEKI.value)
     pub value: f64,
+    // @@protoc_insertion_point(field:AKMCODLAEKI.key)
+    pub key: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:AKMCODLAEKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AKMCODLAEKI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &AKMCODLAEKI| { &m.key },
-            |m: &mut AKMCODLAEKI| { &mut m.key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "value",
             |m: &AKMCODLAEKI| { &m.value },
             |m: &mut AKMCODLAEKI| { &mut m.value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "key",
+            |m: &AKMCODLAEKI| { &m.key },
+            |m: &mut AKMCODLAEKI| { &mut m.key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKMCODLAEKI>(
             "AKMCODLAEKI",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AKMCODLAEKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.key = is.read_string()?;
-                },
-                73 => {
+                17 => {
                     self.value = is.read_double()?;
+                },
+                26 => {
+                    self.key = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AKMCODLAEKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.key.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.key);
-        }
         if self.value != 0. {
             my_size += 1 + 8;
+        }
+        if !self.key.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AKMCODLAEKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.key.is_empty() {
-            os.write_string(1, &self.key)?;
-        }
         if self.value != 0. {
-            os.write_double(9, self.value)?;
+            os.write_double(2, self.value)?;
+        }
+        if !self.key.is_empty() {
+            os.write_string(3, &self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AKMCODLAEKI {
     }
 
     fn clear(&mut self) {
-        self.key.clear();
         self.value = 0.;
+        self.key.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKMCODLAEKI {
         static instance: AKMCODLAEKI = AKMCODLAEKI {
-            key: ::std::string::String::new(),
             value: 0.,
+            key: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for AKMCODLAEKI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AKMCODLAEKI.proto\"5\n\x0bAKMCODLAEKI\x12\x10\n\x03key\x18\x01\x20\
-    \x01(\tR\x03key\x12\x14\n\x05value\x18\t\x20\x01(\x01R\x05valueb\x06prot\
-    o3\
+    \n\x11AKMCODLAEKI.proto\"5\n\x0bAKMCODLAEKI\x12\x14\n\x05value\x18\x02\
+    \x20\x01(\x01R\x05value\x12\x10\n\x03key\x18\x03\x20\x01(\tR\x03keyb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.OEPCCMAPFFH = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.KFBJGFJHGEK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OEPCCMAPFFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OEPCCMAPFFH);
+            my_size += ::protobuf::rt::uint32_size(9, self.OEPCCMAPFFH);
         }
         if self.KFBJGFJHGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KFBJGFJHGEK);
+            my_size += ::protobuf::rt::uint32_size(15, self.KFBJGFJHGEK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OEPCCMAPFFH != 0 {
-            os.write_uint32(8, self.OEPCCMAPFFH)?;
+            os.write_uint32(9, self.OEPCCMAPFFH)?;
         }
         if self.KFBJGFJHGEK != 0 {
-            os.write_uint32(7, self.KFBJGFJHGEK)?;
+            os.write_uint32(15, self.KFBJGFJHGEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FiveDimMoneyChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FiveDimMoneyChangeScNotify.proto\"`\n\x1aFiveDimMoneyChangeScNotif\
-    y\x12\x20\n\x0bOEPCCMAPFFH\x18\x08\x20\x01(\rR\x0bOEPCCMAPFFH\x12\x20\n\
-    \x0bKFBJGFJHGEK\x18\x07\x20\x01(\rR\x0bKFBJGFJHGEKb\x06proto3\
+    y\x12\x20\n\x0bOEPCCMAPFFH\x18\t\x20\x01(\rR\x0bOEPCCMAPFFH\x12\x20\n\
+    \x0bKFBJGFJHGEK\x18\x0f\x20\x01(\rR\x0bKFBJGFJHGEKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

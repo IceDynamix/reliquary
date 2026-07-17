@@ -79,10 +79,10 @@ impl ::protobuf::Message for MNOOMFIAFPF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.op_type = is.read_enum_or_unknown()?;
                 },
-                112 => {
+                64 => {
                     self.MPKCANFHCHG = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for MNOOMFIAFPF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::FNCFIHAFGGN::FNCFIHAFGGN::FNCFIHAFGGN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.op_type.value());
+            my_size += ::protobuf::rt::int32_size(2, self.op_type.value());
         }
         if self.MPKCANFHCHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MPKCANFHCHG);
+            my_size += ::protobuf::rt::uint32_size(8, self.MPKCANFHCHG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MNOOMFIAFPF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.op_type != ::protobuf::EnumOrUnknown::new(super::FNCFIHAFGGN::FNCFIHAFGGN::FNCFIHAFGGN_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.op_type))?;
         }
         if self.MPKCANFHCHG != 0 {
-            os.write_uint32(14, self.MPKCANFHCHG)?;
+            os.write_uint32(8, self.MPKCANFHCHG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MNOOMFIAFPF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MNOOMFIAFPF.proto\x1a\x11FNCFIHAFGGN.proto\"V\n\x0bMNOOMFIAFPF\x12\
-    %\n\x07op_type\x18\x01\x20\x01(\x0e2\x0c.FNCFIHAFGGNR\x06opType\x12\x20\
-    \n\x0bMPKCANFHCHG\x18\x0e\x20\x01(\rR\x0bMPKCANFHCHGb\x06proto3\
+    %\n\x07op_type\x18\x02\x20\x01(\x0e2\x0c.FNCFIHAFGGNR\x06opType\x12\x20\
+    \n\x0bMPKCANFHCHG\x18\x08\x20\x01(\rR\x0bMPKCANFHCHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

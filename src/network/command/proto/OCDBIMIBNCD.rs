@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCDBIMIBNCD {
     // message fields
-    // @@protoc_insertion_point(field:OCDBIMIBNCD.POHBLAMKNJH)
-    pub POHBLAMKNJH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OCDBIMIBNCD.LEIJJGDJECI)
     pub LEIJJGDJECI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OCDBIMIBNCD.POHBLAMKNJH)
+    pub POHBLAMKNJH: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OCDBIMIBNCD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OCDBIMIBNCD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POHBLAMKNJH",
-            |m: &OCDBIMIBNCD| { &m.POHBLAMKNJH },
-            |m: &mut OCDBIMIBNCD| { &mut m.POHBLAMKNJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LEIJJGDJECI",
             |m: &OCDBIMIBNCD| { &m.LEIJJGDJECI },
             |m: &mut OCDBIMIBNCD| { &mut m.LEIJJGDJECI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "POHBLAMKNJH",
+            |m: &OCDBIMIBNCD| { &m.POHBLAMKNJH },
+            |m: &mut OCDBIMIBNCD| { &mut m.POHBLAMKNJH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OCDBIMIBNCD>(
             "OCDBIMIBNCD",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for OCDBIMIBNCD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.POHBLAMKNJH)?;
-                },
-                104 => {
-                    self.POHBLAMKNJH.push(is.read_uint32()?);
-                },
-                50 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.LEIJJGDJECI)?;
                 },
-                48 => {
+                80 => {
                     self.LEIJJGDJECI.push(is.read_uint32()?);
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.POHBLAMKNJH)?;
+                },
+                120 => {
+                    self.POHBLAMKNJH.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for OCDBIMIBNCD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.POHBLAMKNJH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.LEIJJGDJECI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LEIJJGDJECI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.POHBLAMKNJH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.POHBLAMKNJH)?;
-        os.write_repeated_packed_uint32(6, &self.LEIJJGDJECI)?;
+        os.write_repeated_packed_uint32(10, &self.LEIJJGDJECI)?;
+        os.write_repeated_packed_uint32(15, &self.POHBLAMKNJH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for OCDBIMIBNCD {
     }
 
     fn clear(&mut self) {
-        self.POHBLAMKNJH.clear();
         self.LEIJJGDJECI.clear();
+        self.POHBLAMKNJH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OCDBIMIBNCD {
         static instance: OCDBIMIBNCD = OCDBIMIBNCD {
-            POHBLAMKNJH: ::std::vec::Vec::new(),
             LEIJJGDJECI: ::std::vec::Vec::new(),
+            POHBLAMKNJH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for OCDBIMIBNCD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OCDBIMIBNCD.proto\"Q\n\x0bOCDBIMIBNCD\x12\x20\n\x0bPOHBLAMKNJH\x18\
-    \r\x20\x03(\rR\x0bPOHBLAMKNJH\x12\x20\n\x0bLEIJJGDJECI\x18\x06\x20\x03(\
-    \rR\x0bLEIJJGDJECIb\x06proto3\
+    \n\x11OCDBIMIBNCD.proto\"Q\n\x0bOCDBIMIBNCD\x12\x20\n\x0bLEIJJGDJECI\x18\
+    \n\x20\x03(\rR\x0bLEIJJGDJECI\x12\x20\n\x0bPOHBLAMKNJH\x18\x0f\x20\x03(\
+    \rR\x0bPOHBLAMKNJHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

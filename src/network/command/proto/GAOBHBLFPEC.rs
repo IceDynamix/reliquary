@@ -30,14 +30,12 @@ pub struct GAOBHBLFPEC {
     // message fields
     // @@protoc_insertion_point(field:GAOBHBLFPEC.OFHBBKOKANF)
     pub OFHBBKOKANF: u32,
+    // @@protoc_insertion_point(field:GAOBHBLFPEC.GBIEAMKLONK)
+    pub GBIEAMKLONK: u32,
     // @@protoc_insertion_point(field:GAOBHBLFPEC.DBHOIDLKMAB)
     pub DBHOIDLKMAB: u32,
     // @@protoc_insertion_point(field:GAOBHBLFPEC.LKHAIEIDAJL)
     pub LKHAIEIDAJL: u32,
-    // @@protoc_insertion_point(field:GAOBHBLFPEC.IJJLKIMGELO)
-    pub IJJLKIMGELO: u32,
-    // @@protoc_insertion_point(field:GAOBHBLFPEC.GBIEAMKLONK)
-    pub GBIEAMKLONK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GAOBHBLFPEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,12 +53,17 @@ impl GAOBHBLFPEC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFHBBKOKANF",
             |m: &GAOBHBLFPEC| { &m.OFHBBKOKANF },
             |m: &mut GAOBHBLFPEC| { &mut m.OFHBBKOKANF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GBIEAMKLONK",
+            |m: &GAOBHBLFPEC| { &m.GBIEAMKLONK },
+            |m: &mut GAOBHBLFPEC| { &mut m.GBIEAMKLONK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DBHOIDLKMAB",
@@ -71,16 +74,6 @@ impl GAOBHBLFPEC {
             "LKHAIEIDAJL",
             |m: &GAOBHBLFPEC| { &m.LKHAIEIDAJL },
             |m: &mut GAOBHBLFPEC| { &mut m.LKHAIEIDAJL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJJLKIMGELO",
-            |m: &GAOBHBLFPEC| { &m.IJJLKIMGELO },
-            |m: &mut GAOBHBLFPEC| { &mut m.IJJLKIMGELO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBIEAMKLONK",
-            |m: &GAOBHBLFPEC| { &m.GBIEAMKLONK },
-            |m: &mut GAOBHBLFPEC| { &mut m.GBIEAMKLONK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GAOBHBLFPEC>(
             "GAOBHBLFPEC",
@@ -100,20 +93,17 @@ impl ::protobuf::Message for GAOBHBLFPEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.OFHBBKOKANF = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
+                    self.GBIEAMKLONK = is.read_uint32()?;
+                },
+                64 => {
                     self.DBHOIDLKMAB = is.read_uint32()?;
                 },
-                40 => {
+                80 => {
                     self.LKHAIEIDAJL = is.read_uint32()?;
-                },
-                120 => {
-                    self.IJJLKIMGELO = is.read_uint32()?;
-                },
-                8 => {
-                    self.GBIEAMKLONK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +118,16 @@ impl ::protobuf::Message for GAOBHBLFPEC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OFHBBKOKANF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OFHBBKOKANF);
-        }
-        if self.DBHOIDLKMAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DBHOIDLKMAB);
-        }
-        if self.LKHAIEIDAJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LKHAIEIDAJL);
-        }
-        if self.IJJLKIMGELO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IJJLKIMGELO);
+            my_size += ::protobuf::rt::uint32_size(5, self.OFHBBKOKANF);
         }
         if self.GBIEAMKLONK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GBIEAMKLONK);
+            my_size += ::protobuf::rt::uint32_size(6, self.GBIEAMKLONK);
+        }
+        if self.DBHOIDLKMAB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DBHOIDLKMAB);
+        }
+        if self.LKHAIEIDAJL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LKHAIEIDAJL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +136,16 @@ impl ::protobuf::Message for GAOBHBLFPEC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OFHBBKOKANF != 0 {
-            os.write_uint32(6, self.OFHBBKOKANF)?;
-        }
-        if self.DBHOIDLKMAB != 0 {
-            os.write_uint32(7, self.DBHOIDLKMAB)?;
-        }
-        if self.LKHAIEIDAJL != 0 {
-            os.write_uint32(5, self.LKHAIEIDAJL)?;
-        }
-        if self.IJJLKIMGELO != 0 {
-            os.write_uint32(15, self.IJJLKIMGELO)?;
+            os.write_uint32(5, self.OFHBBKOKANF)?;
         }
         if self.GBIEAMKLONK != 0 {
-            os.write_uint32(1, self.GBIEAMKLONK)?;
+            os.write_uint32(6, self.GBIEAMKLONK)?;
+        }
+        if self.DBHOIDLKMAB != 0 {
+            os.write_uint32(8, self.DBHOIDLKMAB)?;
+        }
+        if self.LKHAIEIDAJL != 0 {
+            os.write_uint32(10, self.LKHAIEIDAJL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +165,18 @@ impl ::protobuf::Message for GAOBHBLFPEC {
 
     fn clear(&mut self) {
         self.OFHBBKOKANF = 0;
+        self.GBIEAMKLONK = 0;
         self.DBHOIDLKMAB = 0;
         self.LKHAIEIDAJL = 0;
-        self.IJJLKIMGELO = 0;
-        self.GBIEAMKLONK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GAOBHBLFPEC {
         static instance: GAOBHBLFPEC = GAOBHBLFPEC {
             OFHBBKOKANF: 0,
+            GBIEAMKLONK: 0,
             DBHOIDLKMAB: 0,
             LKHAIEIDAJL: 0,
-            IJJLKIMGELO: 0,
-            GBIEAMKLONK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for GAOBHBLFPEC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GAOBHBLFPEC.proto\"\xb7\x01\n\x0bGAOBHBLFPEC\x12\x20\n\x0bOFHBBKOK\
-    ANF\x18\x06\x20\x01(\rR\x0bOFHBBKOKANF\x12\x20\n\x0bDBHOIDLKMAB\x18\x07\
-    \x20\x01(\rR\x0bDBHOIDLKMAB\x12\x20\n\x0bLKHAIEIDAJL\x18\x05\x20\x01(\rR\
-    \x0bLKHAIEIDAJL\x12\x20\n\x0bIJJLKIMGELO\x18\x0f\x20\x01(\rR\x0bIJJLKIMG\
-    ELO\x12\x20\n\x0bGBIEAMKLONK\x18\x01\x20\x01(\rR\x0bGBIEAMKLONKb\x06prot\
-    o3\
+    \n\x11GAOBHBLFPEC.proto\"\x95\x01\n\x0bGAOBHBLFPEC\x12\x20\n\x0bOFHBBKOK\
+    ANF\x18\x05\x20\x01(\rR\x0bOFHBBKOKANF\x12\x20\n\x0bGBIEAMKLONK\x18\x06\
+    \x20\x01(\rR\x0bGBIEAMKLONK\x12\x20\n\x0bDBHOIDLKMAB\x18\x08\x20\x01(\rR\
+    \x0bDBHOIDLKMAB\x12\x20\n\x0bLKHAIEIDAJL\x18\n\x20\x01(\rR\x0bLKHAIEIDAJ\
+    Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

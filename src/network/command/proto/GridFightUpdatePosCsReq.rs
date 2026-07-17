@@ -72,7 +72,7 @@ impl ::protobuf::Message for GridFightUpdatePosCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                26 => {
                     self.AAKDHMHCMLP.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GridFightUpdatePosCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.AAKDHMHCMLP {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightUpdatePosCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGridFightUpdatePosCsReq.proto\x1a\x11MHEGMHKHAAD.proto\"I\n\x17Gri\
-    dFightUpdatePosCsReq\x12.\n\x0bAAKDHMHCMLP\x18\x05\x20\x03(\x0b2\x0c.MHE\
+    dFightUpdatePosCsReq\x12.\n\x0bAAKDHMHCMLP\x18\x03\x20\x03(\x0b2\x0c.MHE\
     GMHKHAADR\x0bAAKDHMHCMLPb\x06proto3\
 ";
 

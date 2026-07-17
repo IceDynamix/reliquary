@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdActiveType {
     // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_NLCDGIPGFDJ)
     JGJCDABBNIJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_HHHDNIMNPKN)
-    JGJCDABBNIJ_HHHDNIMNPKN = 9552,
-    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_IHNCNPFIIBD)
-    JGJCDABBNIJ_IHNCNPFIIBD = 9570,
+    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_ADHCFEAOLBE)
+    JGJCDABBNIJ_ADHCFEAOLBE = 9558,
     // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_AOIDPACHIMG)
     JGJCDABBNIJ_AOIDPACHIMG = 9568,
-    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_ADHCFEAOLBE)
-    JGJCDABBNIJ_ADHCFEAOLBE = 9556,
+    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_IHNCNPFIIBD)
+    JGJCDABBNIJ_IHNCNPFIIBD = 9562,
     // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_DPNIGHKMDGA)
-    JGJCDABBNIJ_DPNIGHKMDGA = 9566,
+    JGJCDABBNIJ_DPNIGHKMDGA = 9553,
+    // @@protoc_insertion_point(enum_value:CmdActiveType.JGJCDABBNIJ_HHHDNIMNPKN)
+    JGJCDABBNIJ_HHHDNIMNPKN = 9552,
 }
 
 impl ::protobuf::Enum for CmdActiveType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdActiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdActiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_NLCDGIPGFDJ),
-            9552 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN),
-            9570 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD),
+            9558 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE),
             9568 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG),
-            9556 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE),
-            9566 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA),
+            9562 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD),
+            9553 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA),
+            9552 => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdActiveType {
     fn from_str(str: &str) -> ::std::option::Option<CmdActiveType> {
         match str {
             "JGJCDABBNIJ_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_NLCDGIPGFDJ),
-            "JGJCDABBNIJ_HHHDNIMNPKN" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN),
-            "JGJCDABBNIJ_IHNCNPFIIBD" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD),
-            "JGJCDABBNIJ_AOIDPACHIMG" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG),
             "JGJCDABBNIJ_ADHCFEAOLBE" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE),
+            "JGJCDABBNIJ_AOIDPACHIMG" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG),
+            "JGJCDABBNIJ_IHNCNPFIIBD" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD),
             "JGJCDABBNIJ_DPNIGHKMDGA" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA),
+            "JGJCDABBNIJ_HHHDNIMNPKN" => ::std::option::Option::Some(CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdActiveType] = &[
         CmdActiveType::JGJCDABBNIJ_NLCDGIPGFDJ,
-        CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN,
-        CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD,
-        CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG,
         CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE,
+        CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG,
+        CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD,
         CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA,
+        CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdActiveType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdActiveType::JGJCDABBNIJ_NLCDGIPGFDJ => 0,
-            CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN => 1,
-            CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD => 2,
-            CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG => 3,
-            CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE => 4,
-            CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA => 5,
+            CmdActiveType::JGJCDABBNIJ_ADHCFEAOLBE => 1,
+            CmdActiveType::JGJCDABBNIJ_AOIDPACHIMG => 2,
+            CmdActiveType::JGJCDABBNIJ_IHNCNPFIIBD => 3,
+            CmdActiveType::JGJCDABBNIJ_DPNIGHKMDGA => 4,
+            CmdActiveType::JGJCDABBNIJ_HHHDNIMNPKN => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdActiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13CmdActiveType.proto*\xc2\x01\n\rCmdActiveType\x12\x1b\n\x17JGJCDAB\
-    BNIJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGJCDABBNIJ_HHHDNIMNPKN\x10\xd0J\x12\
-    \x1c\n\x17JGJCDABBNIJ_IHNCNPFIIBD\x10\xe2J\x12\x1c\n\x17JGJCDABBNIJ_AOID\
-    PACHIMG\x10\xe0J\x12\x1c\n\x17JGJCDABBNIJ_ADHCFEAOLBE\x10\xd4J\x12\x1c\n\
-    \x17JGJCDABBNIJ_DPNIGHKMDGA\x10\xdeJb\x06proto3\
+    BNIJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGJCDABBNIJ_ADHCFEAOLBE\x10\xd6J\x12\
+    \x1c\n\x17JGJCDABBNIJ_AOIDPACHIMG\x10\xe0J\x12\x1c\n\x17JGJCDABBNIJ_IHNC\
+    NPFIIBD\x10\xdaJ\x12\x1c\n\x17JGJCDABBNIJ_DPNIGHKMDGA\x10\xd1J\x12\x1c\n\
+    \x17JGJCDABBNIJ_HHHDNIMNPKN\x10\xd0Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

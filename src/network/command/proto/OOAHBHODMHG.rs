@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OOAHBHODMHG {
     // message fields
+    // @@protoc_insertion_point(field:OOAHBHODMHG.count)
+    pub count: u32,
     // @@protoc_insertion_point(field:OOAHBHODMHG.HBONKLEOEEI)
     pub HBONKLEOEEI: u32,
     // @@protoc_insertion_point(field:OOAHBHODMHG.LALGADHLMCB)
     pub LALGADHLMCB: u32,
-    // @@protoc_insertion_point(field:OOAHBHODMHG.count)
-    pub count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OOAHBHODMHG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl OOAHBHODMHG {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "count",
+            |m: &OOAHBHODMHG| { &m.count },
+            |m: &mut OOAHBHODMHG| { &mut m.count },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBONKLEOEEI",
             |m: &OOAHBHODMHG| { &m.HBONKLEOEEI },
             |m: &mut OOAHBHODMHG| { &mut m.HBONKLEOEEI },
@@ -62,11 +67,6 @@ impl OOAHBHODMHG {
             "LALGADHLMCB",
             |m: &OOAHBHODMHG| { &m.LALGADHLMCB },
             |m: &mut OOAHBHODMHG| { &mut m.LALGADHLMCB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "count",
-            |m: &OOAHBHODMHG| { &m.count },
-            |m: &mut OOAHBHODMHG| { &mut m.count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OOAHBHODMHG>(
             "OOAHBHODMHG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OOAHBHODMHG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
+                    self.count = is.read_uint32()?;
+                },
+                72 => {
                     self.HBONKLEOEEI = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.LALGADHLMCB = is.read_uint32()?;
-                },
-                8 => {
-                    self.count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OOAHBHODMHG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.count != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.count);
+        }
         if self.HBONKLEOEEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HBONKLEOEEI);
+            my_size += ::protobuf::rt::uint32_size(9, self.HBONKLEOEEI);
         }
         if self.LALGADHLMCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LALGADHLMCB);
-        }
-        if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.count);
+            my_size += ::protobuf::rt::uint32_size(12, self.LALGADHLMCB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OOAHBHODMHG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.count != 0 {
+            os.write_uint32(7, self.count)?;
+        }
         if self.HBONKLEOEEI != 0 {
-            os.write_uint32(2, self.HBONKLEOEEI)?;
+            os.write_uint32(9, self.HBONKLEOEEI)?;
         }
         if self.LALGADHLMCB != 0 {
-            os.write_uint32(15, self.LALGADHLMCB)?;
-        }
-        if self.count != 0 {
-            os.write_uint32(1, self.count)?;
+            os.write_uint32(12, self.LALGADHLMCB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for OOAHBHODMHG {
     }
 
     fn clear(&mut self) {
+        self.count = 0;
         self.HBONKLEOEEI = 0;
         self.LALGADHLMCB = 0;
-        self.count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OOAHBHODMHG {
         static instance: OOAHBHODMHG = OOAHBHODMHG {
+            count: 0,
             HBONKLEOEEI: 0,
             LALGADHLMCB: 0,
-            count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for OOAHBHODMHG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OOAHBHODMHG.proto\"g\n\x0bOOAHBHODMHG\x12\x20\n\x0bHBONKLEOEEI\x18\
-    \x02\x20\x01(\rR\x0bHBONKLEOEEI\x12\x20\n\x0bLALGADHLMCB\x18\x0f\x20\x01\
-    (\rR\x0bLALGADHLMCB\x12\x14\n\x05count\x18\x01\x20\x01(\rR\x05countb\x06\
+    \n\x11OOAHBHODMHG.proto\"g\n\x0bOOAHBHODMHG\x12\x14\n\x05count\x18\x07\
+    \x20\x01(\rR\x05count\x12\x20\n\x0bHBONKLEOEEI\x18\t\x20\x01(\rR\x0bHBON\
+    KLEOEEI\x12\x20\n\x0bLALGADHLMCB\x18\x0c\x20\x01(\rR\x0bLALGADHLMCBb\x06\
     proto3\
 ";
 

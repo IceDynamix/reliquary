@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMACHAFCGNI {
     // message fields
-    // @@protoc_insertion_point(field:NMACHAFCGNI.NDLIKNEKDLL)
-    pub NDLIKNEKDLL: ::protobuf::MessageField<super::IDJALKEGPLI::IDJALKEGPLI>,
+    // @@protoc_insertion_point(field:NMACHAFCGNI.ALJNIHNLNMA)
+    pub ALJNIHNLNMA: u32,
+    // @@protoc_insertion_point(field:NMACHAFCGNI.basic)
+    pub basic: ::protobuf::MessageField<super::IDJALKEGPLI::IDJALKEGPLI>,
     // @@protoc_insertion_point(field:NMACHAFCGNI.MFPOKNMFNGM)
     pub MFPOKNMFNGM: u32,
     // @@protoc_insertion_point(field:NMACHAFCGNI.stage_id)
@@ -51,12 +53,17 @@ impl NMACHAFCGNI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALJNIHNLNMA",
+            |m: &NMACHAFCGNI| { &m.ALJNIHNLNMA },
+            |m: &mut NMACHAFCGNI| { &mut m.ALJNIHNLNMA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IDJALKEGPLI::IDJALKEGPLI>(
-            "NDLIKNEKDLL",
-            |m: &NMACHAFCGNI| { &m.NDLIKNEKDLL },
-            |m: &mut NMACHAFCGNI| { &mut m.NDLIKNEKDLL },
+            "basic",
+            |m: &NMACHAFCGNI| { &m.basic },
+            |m: &mut NMACHAFCGNI| { &mut m.basic },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MFPOKNMFNGM",
@@ -86,13 +93,16 @@ impl ::protobuf::Message for NMACHAFCGNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDLIKNEKDLL)?;
+                8 => {
+                    self.ALJNIHNLNMA = is.read_uint32()?;
                 },
-                16 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic)?;
+                },
+                64 => {
                     self.MFPOKNMFNGM = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +117,18 @@ impl ::protobuf::Message for NMACHAFCGNI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
+        if self.ALJNIHNLNMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ALJNIHNLNMA);
+        }
+        if let Some(v) = self.basic.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.MFPOKNMFNGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MFPOKNMFNGM);
+            my_size += ::protobuf::rt::uint32_size(8, self.MFPOKNMFNGM);
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +136,17 @@ impl ::protobuf::Message for NMACHAFCGNI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.ALJNIHNLNMA != 0 {
+            os.write_uint32(1, self.ALJNIHNLNMA)?;
+        }
+        if let Some(v) = self.basic.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.MFPOKNMFNGM != 0 {
-            os.write_uint32(2, self.MFPOKNMFNGM)?;
+            os.write_uint32(8, self.MFPOKNMFNGM)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(11, self.stage_id)?;
+            os.write_uint32(10, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +165,8 @@ impl ::protobuf::Message for NMACHAFCGNI {
     }
 
     fn clear(&mut self) {
-        self.NDLIKNEKDLL.clear();
+        self.ALJNIHNLNMA = 0;
+        self.basic.clear();
         self.MFPOKNMFNGM = 0;
         self.stage_id = 0;
         self.special_fields.clear();
@@ -157,7 +174,8 @@ impl ::protobuf::Message for NMACHAFCGNI {
 
     fn default_instance() -> &'static NMACHAFCGNI {
         static instance: NMACHAFCGNI = NMACHAFCGNI {
-            NDLIKNEKDLL: ::protobuf::MessageField::none(),
+            ALJNIHNLNMA: 0,
+            basic: ::protobuf::MessageField::none(),
             MFPOKNMFNGM: 0,
             stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,10 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for NMACHAFCGNI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMACHAFCGNI.proto\x1a\x11IDJALKEGPLI.proto\"z\n\x0bNMACHAFCGNI\x12\
-    .\n\x0bNDLIKNEKDLL\x18\r\x20\x01(\x0b2\x0c.IDJALKEGPLIR\x0bNDLIKNEKDLL\
-    \x12\x20\n\x0bMFPOKNMFNGM\x18\x02\x20\x01(\rR\x0bMFPOKNMFNGM\x12\x19\n\
-    \x08stage_id\x18\x0b\x20\x01(\rR\x07stageIdb\x06proto3\
+    \n\x11NMACHAFCGNI.proto\x1a\x11IDJALKEGPLI.proto\"\x90\x01\n\x0bNMACHAFC\
+    GNI\x12\x20\n\x0bALJNIHNLNMA\x18\x01\x20\x01(\rR\x0bALJNIHNLNMA\x12\"\n\
+    \x05basic\x18\x07\x20\x01(\x0b2\x0c.IDJALKEGPLIR\x05basic\x12\x20\n\x0bM\
+    FPOKNMFNGM\x18\x08\x20\x01(\rR\x0bMFPOKNMFNGM\x12\x19\n\x08stage_id\x18\
+    \n\x20\x01(\rR\x07stageIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

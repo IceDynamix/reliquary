@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OCKCHBDFGNL {
     // message fields
-    // @@protoc_insertion_point(field:OCKCHBDFGNL.HJMDNLBNPNA)
-    pub HJMDNLBNPNA: ::std::vec::Vec<super::NKDNFDCFNCP::NKDNFDCFNCP>,
     // @@protoc_insertion_point(field:OCKCHBDFGNL.time)
     pub time: u64,
+    // @@protoc_insertion_point(field:OCKCHBDFGNL.HJMDNLBNPNA)
+    pub HJMDNLBNPNA: ::std::vec::Vec<super::NKDNFDCFNCP::NKDNFDCFNCP>,
     // special fields
     // @@protoc_insertion_point(special_field:OCKCHBDFGNL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OCKCHBDFGNL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HJMDNLBNPNA",
-            |m: &OCKCHBDFGNL| { &m.HJMDNLBNPNA },
-            |m: &mut OCKCHBDFGNL| { &mut m.HJMDNLBNPNA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
             |m: &OCKCHBDFGNL| { &m.time },
             |m: &mut OCKCHBDFGNL| { &mut m.time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HJMDNLBNPNA",
+            |m: &OCKCHBDFGNL| { &m.HJMDNLBNPNA },
+            |m: &mut OCKCHBDFGNL| { &mut m.HJMDNLBNPNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OCKCHBDFGNL>(
             "OCKCHBDFGNL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OCKCHBDFGNL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.HJMDNLBNPNA.push(is.read_message()?);
-                },
-                48 => {
+                24 => {
                     self.time = is.read_uint64()?;
+                },
+                90 => {
+                    self.HJMDNLBNPNA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for OCKCHBDFGNL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.time != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.time);
+        }
         for value in &self.HJMDNLBNPNA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.time != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.time);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HJMDNLBNPNA {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.time != 0 {
-            os.write_uint64(6, self.time)?;
+            os.write_uint64(3, self.time)?;
         }
+        for v in &self.HJMDNLBNPNA {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OCKCHBDFGNL {
     }
 
     fn clear(&mut self) {
-        self.HJMDNLBNPNA.clear();
         self.time = 0;
+        self.HJMDNLBNPNA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OCKCHBDFGNL {
         static instance: OCKCHBDFGNL = OCKCHBDFGNL {
-            HJMDNLBNPNA: ::std::vec::Vec::new(),
             time: 0,
+            HJMDNLBNPNA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for OCKCHBDFGNL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCKCHBDFGNL.proto\x1a\x11NKDNFDCFNCP.proto\"Q\n\x0bOCKCHBDFGNL\x12\
-    .\n\x0bHJMDNLBNPNA\x18\x05\x20\x03(\x0b2\x0c.NKDNFDCFNCPR\x0bHJMDNLBNPNA\
-    \x12\x12\n\x04time\x18\x06\x20\x01(\x04R\x04timeb\x06proto3\
+    \x12\n\x04time\x18\x03\x20\x01(\x04R\x04time\x12.\n\x0bHJMDNLBNPNA\x18\
+    \x0b\x20\x03(\x0b2\x0c.NKDNFDCFNCPR\x0bHJMDNLBNPNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

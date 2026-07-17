@@ -30,10 +30,10 @@ pub struct EBBOJACNHEC {
     // message fields
     // @@protoc_insertion_point(field:EBBOJACNHEC.OEEDPJHLPHL)
     pub OEEDPJHLPHL: bool,
-    // @@protoc_insertion_point(field:EBBOJACNHEC.LHLKJIDFLIN)
-    pub LHLKJIDFLIN: u32,
     // @@protoc_insertion_point(field:EBBOJACNHEC.GHEHGIOAGDG)
     pub GHEHGIOAGDG: u32,
+    // @@protoc_insertion_point(field:EBBOJACNHEC.LHLKJIDFLIN)
+    pub LHLKJIDFLIN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EBBOJACNHEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl EBBOJACNHEC {
             |m: &mut EBBOJACNHEC| { &mut m.OEEDPJHLPHL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHLKJIDFLIN",
-            |m: &EBBOJACNHEC| { &m.LHLKJIDFLIN },
-            |m: &mut EBBOJACNHEC| { &mut m.LHLKJIDFLIN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHEHGIOAGDG",
             |m: &EBBOJACNHEC| { &m.GHEHGIOAGDG },
             |m: &mut EBBOJACNHEC| { &mut m.GHEHGIOAGDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHLKJIDFLIN",
+            |m: &EBBOJACNHEC| { &m.LHLKJIDFLIN },
+            |m: &mut EBBOJACNHEC| { &mut m.LHLKJIDFLIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EBBOJACNHEC>(
             "EBBOJACNHEC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EBBOJACNHEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.OEEDPJHLPHL = is.read_bool()?;
                 },
-                8 => {
-                    self.LHLKJIDFLIN = is.read_uint32()?;
-                },
-                80 => {
+                72 => {
                     self.GHEHGIOAGDG = is.read_uint32()?;
+                },
+                120 => {
+                    self.LHLKJIDFLIN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EBBOJACNHEC {
         if self.OEEDPJHLPHL != false {
             my_size += 1 + 1;
         }
-        if self.LHLKJIDFLIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHLKJIDFLIN);
-        }
         if self.GHEHGIOAGDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GHEHGIOAGDG);
+            my_size += ::protobuf::rt::uint32_size(9, self.GHEHGIOAGDG);
+        }
+        if self.LHLKJIDFLIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LHLKJIDFLIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EBBOJACNHEC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OEEDPJHLPHL != false {
-            os.write_bool(8, self.OEEDPJHLPHL)?;
-        }
-        if self.LHLKJIDFLIN != 0 {
-            os.write_uint32(1, self.LHLKJIDFLIN)?;
+            os.write_bool(6, self.OEEDPJHLPHL)?;
         }
         if self.GHEHGIOAGDG != 0 {
-            os.write_uint32(10, self.GHEHGIOAGDG)?;
+            os.write_uint32(9, self.GHEHGIOAGDG)?;
+        }
+        if self.LHLKJIDFLIN != 0 {
+            os.write_uint32(15, self.LHLKJIDFLIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EBBOJACNHEC {
 
     fn clear(&mut self) {
         self.OEEDPJHLPHL = false;
-        self.LHLKJIDFLIN = 0;
         self.GHEHGIOAGDG = 0;
+        self.LHLKJIDFLIN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EBBOJACNHEC {
         static instance: EBBOJACNHEC = EBBOJACNHEC {
             OEEDPJHLPHL: false,
-            LHLKJIDFLIN: 0,
             GHEHGIOAGDG: 0,
+            LHLKJIDFLIN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for EBBOJACNHEC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EBBOJACNHEC.proto\"s\n\x0bEBBOJACNHEC\x12\x20\n\x0bOEEDPJHLPHL\x18\
-    \x08\x20\x01(\x08R\x0bOEEDPJHLPHL\x12\x20\n\x0bLHLKJIDFLIN\x18\x01\x20\
-    \x01(\rR\x0bLHLKJIDFLIN\x12\x20\n\x0bGHEHGIOAGDG\x18\n\x20\x01(\rR\x0bGH\
-    EHGIOAGDGb\x06proto3\
+    \x06\x20\x01(\x08R\x0bOEEDPJHLPHL\x12\x20\n\x0bGHEHGIOAGDG\x18\t\x20\x01\
+    (\rR\x0bGHEHGIOAGDG\x12\x20\n\x0bLHLKJIDFLIN\x18\x0f\x20\x01(\rR\x0bLHLK\
+    JIDFLINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

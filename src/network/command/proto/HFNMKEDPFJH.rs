@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HFNMKEDPFJH {
     // message fields
-    // @@protoc_insertion_point(field:HFNMKEDPFJH.PPCKLBHFCCA)
-    pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
-    // @@protoc_insertion_point(field:HFNMKEDPFJH.BFLLJJBHLDF)
-    pub BFLLJJBHLDF: ::protobuf::MessageField<super::DFEGGFFOMKI::DFEGGFFOMKI>,
-    // @@protoc_insertion_point(field:HFNMKEDPFJH.DAOMHGBDEJH)
-    pub DAOMHGBDEJH: bool,
-    // @@protoc_insertion_point(field:HFNMKEDPFJH.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:HFNMKEDPFJH.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:HFNMKEDPFJH.DDCLCNPONOH)
-    pub DDCLCNPONOH: u32,
+    // @@protoc_insertion_point(field:HFNMKEDPFJH.add_coin)
+    pub add_coin: u32,
+    // @@protoc_insertion_point(field:HFNMKEDPFJH.DAOMHGBDEJH)
+    pub DAOMHGBDEJH: bool,
+    // @@protoc_insertion_point(field:HFNMKEDPFJH.BFLLJJBHLDF)
+    pub BFLLJJBHLDF: ::protobuf::MessageField<super::DFEGGFFOMKI::DFEGGFFOMKI>,
+    // @@protoc_insertion_point(field:HFNMKEDPFJH.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:HFNMKEDPFJH.cur_hp)
     pub cur_hp: u32,
+    // @@protoc_insertion_point(field:HFNMKEDPFJH.PPCKLBHFCCA)
+    pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
     // special fields
     // @@protoc_insertion_point(special_field:HFNMKEDPFJH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,10 +61,20 @@ impl HFNMKEDPFJH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPCKLBHFCCA",
-            |m: &HFNMKEDPFJH| { &m.PPCKLBHFCCA },
-            |m: &mut HFNMKEDPFJH| { &mut m.PPCKLBHFCCA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &HFNMKEDPFJH| { &m.retcode },
+            |m: &mut HFNMKEDPFJH| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "add_coin",
+            |m: &HFNMKEDPFJH| { &m.add_coin },
+            |m: &mut HFNMKEDPFJH| { &mut m.add_coin },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DAOMHGBDEJH",
+            |m: &HFNMKEDPFJH| { &m.DAOMHGBDEJH },
+            |m: &mut HFNMKEDPFJH| { &mut m.DAOMHGBDEJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFEGGFFOMKI::DFEGGFFOMKI>(
             "BFLLJJBHLDF",
@@ -72,29 +82,19 @@ impl HFNMKEDPFJH {
             |m: &mut HFNMKEDPFJH| { &mut m.BFLLJJBHLDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAOMHGBDEJH",
-            |m: &HFNMKEDPFJH| { &m.DAOMHGBDEJH },
-            |m: &mut HFNMKEDPFJH| { &mut m.DAOMHGBDEJH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &HFNMKEDPFJH| { &m.is_win },
             |m: &mut HFNMKEDPFJH| { &mut m.is_win },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &HFNMKEDPFJH| { &m.retcode },
-            |m: &mut HFNMKEDPFJH| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDCLCNPONOH",
-            |m: &HFNMKEDPFJH| { &m.DDCLCNPONOH },
-            |m: &mut HFNMKEDPFJH| { &mut m.DDCLCNPONOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_hp",
             |m: &HFNMKEDPFJH| { &m.cur_hp },
             |m: &mut HFNMKEDPFJH| { &mut m.cur_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPCKLBHFCCA",
+            |m: &HFNMKEDPFJH| { &m.PPCKLBHFCCA },
+            |m: &mut HFNMKEDPFJH| { &mut m.PPCKLBHFCCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HFNMKEDPFJH>(
             "HFNMKEDPFJH",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for HFNMKEDPFJH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.PPCKLBHFCCA.push(is.read_message()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
-                },
                 8 => {
-                    self.DAOMHGBDEJH = is.read_bool()?;
-                },
-                96 => {
-                    self.is_win = is.read_bool()?;
-                },
-                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.DDCLCNPONOH = is.read_uint32()?;
+                24 => {
+                    self.add_coin = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
+                    self.DAOMHGBDEJH = is.read_bool()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
+                },
+                80 => {
+                    self.is_win = is.read_bool()?;
+                },
+                96 => {
                     self.cur_hp = is.read_uint32()?;
+                },
+                122 => {
+                    self.PPCKLBHFCCA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,56 +147,56 @@ impl ::protobuf::Message for HFNMKEDPFJH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PPCKLBHFCCA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.add_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.add_coin);
         }
         if self.DAOMHGBDEJH != false {
             my_size += 1 + 1;
         }
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DDCLCNPONOH);
-        }
         if self.cur_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.cur_hp);
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_hp);
         }
+        for value in &self.PPCKLBHFCCA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PPCKLBHFCCA {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.add_coin != 0 {
+            os.write_uint32(3, self.add_coin)?;
         }
         if self.DAOMHGBDEJH != false {
-            os.write_bool(1, self.DAOMHGBDEJH)?;
+            os.write_bool(4, self.DAOMHGBDEJH)?;
+        }
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.is_win != false {
-            os.write_bool(12, self.is_win)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.DDCLCNPONOH != 0 {
-            os.write_uint32(14, self.DDCLCNPONOH)?;
+            os.write_bool(10, self.is_win)?;
         }
         if self.cur_hp != 0 {
-            os.write_uint32(6, self.cur_hp)?;
+            os.write_uint32(12, self.cur_hp)?;
         }
+        for v in &self.PPCKLBHFCCA {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for HFNMKEDPFJH {
     }
 
     fn clear(&mut self) {
-        self.PPCKLBHFCCA.clear();
-        self.BFLLJJBHLDF.clear();
-        self.DAOMHGBDEJH = false;
-        self.is_win = false;
         self.retcode = 0;
-        self.DDCLCNPONOH = 0;
+        self.add_coin = 0;
+        self.DAOMHGBDEJH = false;
+        self.BFLLJJBHLDF.clear();
+        self.is_win = false;
         self.cur_hp = 0;
+        self.PPCKLBHFCCA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HFNMKEDPFJH {
         static instance: HFNMKEDPFJH = HFNMKEDPFJH {
-            PPCKLBHFCCA: ::std::vec::Vec::new(),
-            BFLLJJBHLDF: ::protobuf::MessageField::none(),
-            DAOMHGBDEJH: false,
-            is_win: false,
             retcode: 0,
-            DDCLCNPONOH: 0,
+            add_coin: 0,
+            DAOMHGBDEJH: false,
+            BFLLJJBHLDF: ::protobuf::MessageField::none(),
+            is_win: false,
             cur_hp: 0,
+            PPCKLBHFCCA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for HFNMKEDPFJH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFNMKEDPFJH.proto\x1a\x11DFEGGFFOMKI.proto\x1a\x11OGGELMMFPKP.prot\
-    o\"\xf9\x01\n\x0bHFNMKEDPFJH\x12.\n\x0bPPCKLBHFCCA\x18\x07\x20\x03(\x0b2\
-    \x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\x12.\n\x0bBFLLJJBHLDF\x18\n\x20\x01(\
-    \x0b2\x0c.DFEGGFFOMKIR\x0bBFLLJJBHLDF\x12\x20\n\x0bDAOMHGBDEJH\x18\x01\
-    \x20\x01(\x08R\x0bDAOMHGBDEJH\x12\x15\n\x06is_win\x18\x0c\x20\x01(\x08R\
-    \x05isWin\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bDDCLCNPONOH\x18\x0e\x20\x01(\rR\x0bDDCLCNPONOH\x12\x15\n\x06cur_hp\
-    \x18\x06\x20\x01(\rR\x05curHpb\x06proto3\
+    o\"\xf2\x01\n\x0bHFNMKEDPFJH\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcode\x12\x19\n\x08add_coin\x18\x03\x20\x01(\rR\x07addCoin\x12\x20\
+    \n\x0bDAOMHGBDEJH\x18\x04\x20\x01(\x08R\x0bDAOMHGBDEJH\x12.\n\x0bBFLLJJB\
+    HLDF\x18\t\x20\x01(\x0b2\x0c.DFEGGFFOMKIR\x0bBFLLJJBHLDF\x12\x15\n\x06is\
+    _win\x18\n\x20\x01(\x08R\x05isWin\x12\x15\n\x06cur_hp\x18\x0c\x20\x01(\r\
+    R\x05curHp\x12.\n\x0bPPCKLBHFCCA\x18\x0f\x20\x03(\x0b2\x0c.OGGELMMFPKPR\
+    \x0bPPCKLBHFCCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

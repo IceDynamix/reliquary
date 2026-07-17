@@ -86,16 +86,16 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.JALHKMEOOPN)?;
                 },
-                64 => {
+                40 => {
                     self.JALHKMEOOPN.push(is.read_uint32()?);
                 },
-                90 => {
+                58 => {
                     self.OKFMBDEECCH.push(is.read_string()?);
                 },
-                32 => {
+                64 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JALHKMEOOPN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.JALHKMEOOPN);
         for value in &self.OKFMBDEECCH {
-            my_size += ::protobuf::rt::string_size(11, &value);
+            my_size += ::protobuf::rt::string_size(7, &value);
         };
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(8, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for PIMFFPGEPIO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.JALHKMEOOPN)?;
+        os.write_repeated_packed_uint32(5, &self.JALHKMEOOPN)?;
         for v in &self.OKFMBDEECCH {
-            os.write_string(11, &v)?;
+            os.write_string(7, &v)?;
         };
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BMHIHBHECKD::BMHIHBHECKD::BMHIHBHECKD_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for PIMFFPGEPIO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIMFFPGEPIO.proto\x1a\x11BMHIHBHECKD.proto\"s\n\x0bPIMFFPGEPIO\x12\
-    \x20\n\x0bJALHKMEOOPN\x18\x08\x20\x03(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOK\
-    FMBDEECCH\x18\x0b\x20\x03(\tR\x0bOKFMBDEECCH\x12\x20\n\x04type\x18\x04\
+    \x20\n\x0bJALHKMEOOPN\x18\x05\x20\x03(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bOK\
+    FMBDEECCH\x18\x07\x20\x03(\tR\x0bOKFMBDEECCH\x12\x20\n\x04type\x18\x08\
     \x20\x01(\x0e2\x0c.BMHIHBHECKDR\x04typeb\x06proto3\
 ";
 

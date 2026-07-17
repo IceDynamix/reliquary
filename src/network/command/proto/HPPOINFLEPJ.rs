@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HPPOINFLEPJ {
     // message fields
-    // @@protoc_insertion_point(field:HPPOINFLEPJ.relic_ids)
-    pub relic_ids: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HPPOINFLEPJ.NFMKOFNEKLA)
-    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::RelicPresetPlanSourceType::RelicPresetPlanSourceType>,
     // @@protoc_insertion_point(field:HPPOINFLEPJ.LLJJCOOKANH)
     pub LLJJCOOKANH: ::protobuf::EnumOrUnknown<super::FDJKLJGDCID::FDJKLJGDCID>,
+    // @@protoc_insertion_point(field:HPPOINFLEPJ.relic_ids)
+    pub relic_ids: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HPPOINFLEPJ.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::RelicPresetPlanSourceType::RelicPresetPlanSourceType>,
     // special fields
     // @@protoc_insertion_point(special_field:HPPOINFLEPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl HPPOINFLEPJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLJJCOOKANH",
+            |m: &HPPOINFLEPJ| { &m.LLJJCOOKANH },
+            |m: &mut HPPOINFLEPJ| { &mut m.LLJJCOOKANH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
             |m: &HPPOINFLEPJ| { &m.relic_ids },
             |m: &mut HPPOINFLEPJ| { &mut m.relic_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFMKOFNEKLA",
-            |m: &HPPOINFLEPJ| { &m.NFMKOFNEKLA },
-            |m: &mut HPPOINFLEPJ| { &mut m.NFMKOFNEKLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLJJCOOKANH",
-            |m: &HPPOINFLEPJ| { &m.LLJJCOOKANH },
-            |m: &mut HPPOINFLEPJ| { &mut m.LLJJCOOKANH },
+            "source_type",
+            |m: &HPPOINFLEPJ| { &m.source_type },
+            |m: &mut HPPOINFLEPJ| { &mut m.source_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPPOINFLEPJ>(
             "HPPOINFLEPJ",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for HPPOINFLEPJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                8 => {
+                    self.LLJJCOOKANH = is.read_enum_or_unknown()?;
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                88 => {
+                32 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
-                },
                 96 => {
-                    self.LLJJCOOKANH = is.read_enum_or_unknown()?;
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for HPPOINFLEPJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.relic_ids);
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.NFMKOFNEKLA.value());
-        }
         if self.LLJJCOOKANH != ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.LLJJCOOKANH.value());
+            my_size += ::protobuf::rt::int32_size(1, self.LLJJCOOKANH.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.relic_ids);
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.source_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for HPPOINFLEPJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.relic_ids)?;
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
-        }
         if self.LLJJCOOKANH != ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.LLJJCOOKANH))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.LLJJCOOKANH))?;
+        }
+        os.write_repeated_packed_uint32(4, &self.relic_ids)?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for HPPOINFLEPJ {
     }
 
     fn clear(&mut self) {
-        self.relic_ids.clear();
-        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ);
         self.LLJJCOOKANH = ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ);
+        self.relic_ids.clear();
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HPPOINFLEPJ {
         static instance: HPPOINFLEPJ = HPPOINFLEPJ {
-            relic_ids: ::std::vec::Vec::new(),
-            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             LLJJCOOKANH: ::protobuf::EnumOrUnknown::from_i32(0),
+            relic_ids: ::std::vec::Vec::new(),
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for HPPOINFLEPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HPPOINFLEPJ.proto\x1a\x11FDJKLJGDCID.proto\x1a\x1fRelicPresetPlanS\
-    ourceType.proto\"\x98\x01\n\x0bHPPOINFLEPJ\x12\x1b\n\trelic_ids\x18\x0b\
-    \x20\x03(\rR\x08relicIds\x12<\n\x0bNFMKOFNEKLA\x18\r\x20\x01(\x0e2\x1a.R\
-    elicPresetPlanSourceTypeR\x0bNFMKOFNEKLA\x12.\n\x0bLLJJCOOKANH\x18\x0c\
-    \x20\x01(\x0e2\x0c.FDJKLJGDCIDR\x0bLLJJCOOKANHb\x06proto3\
+    ourceType.proto\"\x97\x01\n\x0bHPPOINFLEPJ\x12.\n\x0bLLJJCOOKANH\x18\x01\
+    \x20\x01(\x0e2\x0c.FDJKLJGDCIDR\x0bLLJJCOOKANH\x12\x1b\n\trelic_ids\x18\
+    \x04\x20\x03(\rR\x08relicIds\x12;\n\x0bsource_type\x18\x0c\x20\x01(\x0e2\
+    \x1a.RelicPresetPlanSourceTypeR\nsourceTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

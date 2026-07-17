@@ -28,12 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AJAOJOEAGML {
     // message fields
-    // @@protoc_insertion_point(field:AJAOJOEAGML.NOEPBNMJFGL)
-    pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AJAOJOEAGML.MFEODNJNGDP)
     pub MFEODNJNGDP: ::protobuf::MessageField<super::KCMFAIBMOHB::KCMFAIBMOHB>,
-    // @@protoc_insertion_point(field:AJAOJOEAGML.unfinished_story_line_id_list)
-    pub unfinished_story_line_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AJAOJOEAGML.retcode)
     pub retcode: u32,
     // special fields
@@ -53,22 +49,12 @@ impl AJAOJOEAGML {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NOEPBNMJFGL",
-            |m: &AJAOJOEAGML| { &m.NOEPBNMJFGL },
-            |m: &mut AJAOJOEAGML| { &mut m.NOEPBNMJFGL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCMFAIBMOHB::KCMFAIBMOHB>(
             "MFEODNJNGDP",
             |m: &AJAOJOEAGML| { &m.MFEODNJNGDP },
             |m: &mut AJAOJOEAGML| { &mut m.MFEODNJNGDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unfinished_story_line_id_list",
-            |m: &AJAOJOEAGML| { &m.unfinished_story_line_id_list },
-            |m: &mut AJAOJOEAGML| { &mut m.unfinished_story_line_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,22 +79,10 @@ impl ::protobuf::Message for AJAOJOEAGML {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
-                },
-                40 => {
-                    self.NOEPBNMJFGL.push(is.read_uint32()?);
-                },
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFEODNJNGDP)?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
-                },
-                16 => {
-                    self.unfinished_story_line_id_list.push(is.read_uint32()?);
-                },
-                72 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -123,14 +97,12 @@ impl ::protobuf::Message for AJAOJOEAGML {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NOEPBNMJFGL);
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.unfinished_story_line_id_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,13 +110,11 @@ impl ::protobuf::Message for AJAOJOEAGML {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.NOEPBNMJFGL)?;
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        os.write_repeated_packed_uint32(2, &self.unfinished_story_line_id_list)?;
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +133,14 @@ impl ::protobuf::Message for AJAOJOEAGML {
     }
 
     fn clear(&mut self) {
-        self.NOEPBNMJFGL.clear();
         self.MFEODNJNGDP.clear();
-        self.unfinished_story_line_id_list.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AJAOJOEAGML {
         static instance: AJAOJOEAGML = AJAOJOEAGML {
-            NOEPBNMJFGL: ::std::vec::Vec::new(),
             MFEODNJNGDP: ::protobuf::MessageField::none(),
-            unfinished_story_line_id_list: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,12 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AJAOJOEAGML {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AJAOJOEAGML.proto\x1a\x11KCMFAIBMOHB.proto\"\xbb\x01\n\x0bAJAOJOEA\
-    GML\x12\x20\n\x0bNOEPBNMJFGL\x18\x05\x20\x03(\rR\x0bNOEPBNMJFGL\x12.\n\
-    \x0bMFEODNJNGDP\x18\n\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\x0bMFEODNJNGDP\x12@\
-    \n\x1dunfinished_story_line_id_list\x18\x02\x20\x03(\rR\x19unfinishedSto\
-    ryLineIdList\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto\
-    3\
+    \n\x11AJAOJOEAGML.proto\x1a\x11KCMFAIBMOHB.proto\"W\n\x0bAJAOJOEAGML\x12\
+    .\n\x0bMFEODNJNGDP\x18\n\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\x0bMFEODNJNGDP\
+    \x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct DressSpecialEquipCsReq {
     // message fields
     // @@protoc_insertion_point(field:DressSpecialEquipCsReq.COLOHMBFKIH)
-    pub COLOHMBFKIH: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    pub COLOHMBFKIH: ::std::vec::Vec<super::KVP::KVP>,
     // special fields
     // @@protoc_insertion_point(special_field:DressSpecialEquipCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for DressSpecialEquipCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                66 => {
                     self.COLOHMBFKIH.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DressSpecialEquipCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.COLOHMBFKIH {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for DressSpecialEquipCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cDressSpecialEquipCsReq.proto\x1a\x11APAMFCKFHLL.proto\"H\n\x16Dres\
-    sSpecialEquipCsReq\x12.\n\x0bCOLOHMBFKIH\x18\t\x20\x03(\x0b2\x0c.APAMFCK\
-    FHLLR\x0bCOLOHMBFKIHb\x06proto3\
+    \n\x1cDressSpecialEquipCsReq.proto\x1a\tKVP.proto\"@\n\x16DressSpecialEq\
+    uipCsReq\x12&\n\x0bCOLOHMBFKIH\x18\x08\x20\x03(\x0b2\x04.KVPR\x0bCOLOHMB\
+    FKIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DressSpecialEquipCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

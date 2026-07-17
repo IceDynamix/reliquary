@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPGJPLMHKFL {
     // message fields
-    // @@protoc_insertion_point(field:LPGJPLMHKFL.NJIFEDNDMFO)
-    pub NJIFEDNDMFO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LPGJPLMHKFL.MDKFLGDEJCN)
     pub MDKFLGDEJCN: u32,
+    // @@protoc_insertion_point(field:LPGJPLMHKFL.NJIFEDNDMFO)
+    pub NJIFEDNDMFO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LPGJPLMHKFL.DHJANOFGDNP)
     pub DHJANOFGDNP: u32,
     // special fields
@@ -53,15 +53,15 @@ impl LPGJPLMHKFL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJIFEDNDMFO",
-            |m: &LPGJPLMHKFL| { &m.NJIFEDNDMFO },
-            |m: &mut LPGJPLMHKFL| { &mut m.NJIFEDNDMFO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MDKFLGDEJCN",
             |m: &LPGJPLMHKFL| { &m.MDKFLGDEJCN },
             |m: &mut LPGJPLMHKFL| { &mut m.MDKFLGDEJCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NJIFEDNDMFO",
+            |m: &LPGJPLMHKFL| { &m.NJIFEDNDMFO },
+            |m: &mut LPGJPLMHKFL| { &mut m.NJIFEDNDMFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHJANOFGDNP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LPGJPLMHKFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.MDKFLGDEJCN = is.read_uint32()?;
+                },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.NJIFEDNDMFO)?;
                 },
                 16 => {
                     self.NJIFEDNDMFO.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.MDKFLGDEJCN = is.read_uint32()?;
                 },
                 24 => {
                     self.DHJANOFGDNP = is.read_uint32()?;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LPGJPLMHKFL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NJIFEDNDMFO);
         if self.MDKFLGDEJCN != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.MDKFLGDEJCN);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NJIFEDNDMFO);
         if self.DHJANOFGDNP != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.DHJANOFGDNP);
         }
@@ -123,10 +123,10 @@ impl ::protobuf::Message for LPGJPLMHKFL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.NJIFEDNDMFO)?;
         if self.MDKFLGDEJCN != 0 {
             os.write_uint32(1, self.MDKFLGDEJCN)?;
         }
+        os.write_repeated_packed_uint32(2, &self.NJIFEDNDMFO)?;
         if self.DHJANOFGDNP != 0 {
             os.write_uint32(3, self.DHJANOFGDNP)?;
         }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for LPGJPLMHKFL {
     }
 
     fn clear(&mut self) {
-        self.NJIFEDNDMFO.clear();
         self.MDKFLGDEJCN = 0;
+        self.NJIFEDNDMFO.clear();
         self.DHJANOFGDNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPGJPLMHKFL {
         static instance: LPGJPLMHKFL = LPGJPLMHKFL {
-            NJIFEDNDMFO: ::std::vec::Vec::new(),
             MDKFLGDEJCN: 0,
+            NJIFEDNDMFO: ::std::vec::Vec::new(),
             DHJANOFGDNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for LPGJPLMHKFL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LPGJPLMHKFL.proto\"s\n\x0bLPGJPLMHKFL\x12\x20\n\x0bNJIFEDNDMFO\x18\
-    \x02\x20\x03(\rR\x0bNJIFEDNDMFO\x12\x20\n\x0bMDKFLGDEJCN\x18\x01\x20\x01\
-    (\rR\x0bMDKFLGDEJCN\x12\x20\n\x0bDHJANOFGDNP\x18\x03\x20\x01(\rR\x0bDHJA\
+    \n\x11LPGJPLMHKFL.proto\"s\n\x0bLPGJPLMHKFL\x12\x20\n\x0bMDKFLGDEJCN\x18\
+    \x01\x20\x01(\rR\x0bMDKFLGDEJCN\x12\x20\n\x0bNJIFEDNDMFO\x18\x02\x20\x03\
+    (\rR\x0bNJIFEDNDMFO\x12\x20\n\x0bDHJANOFGDNP\x18\x03\x20\x01(\rR\x0bDHJA\
     NOFGDNPb\x06proto3\
 ";
 

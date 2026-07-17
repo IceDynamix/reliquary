@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GMBMNFLMKPI {
     // message fields
     // @@protoc_insertion_point(field:GMBMNFLMKPI.LMICDNNABNM)
-    pub LMICDNNABNM: ::protobuf::EnumOrUnknown<super::GGNKDLAHAGH::GGNKDLAHAGH>,
+    pub LMICDNNABNM: ::protobuf::EnumOrUnknown<super::GridFightLockType::GridFightLockType>,
     // @@protoc_insertion_point(field:GMBMNFLMKPI.IBCPAKJAPFF)
-    pub IBCPAKJAPFF: ::protobuf::EnumOrUnknown<super::KMJNPEMPNMC::KMJNPEMPNMC>,
+    pub IBCPAKJAPFF: ::protobuf::EnumOrUnknown<super::GridFightLockReason::GridFightLockReason>,
     // special fields
     // @@protoc_insertion_point(special_field:GMBMNFLMKPI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                80 => {
                     self.LMICDNNABNM = is.read_enum_or_unknown()?;
                 },
-                40 => {
+                96 => {
                     self.IBCPAKJAPFF = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::GGNKDLAHAGH::GGNKDLAHAGH::GGNKDLAHAGH_EAJGHKNNJBB) {
-            my_size += ::protobuf::rt::int32_size(4, self.LMICDNNABNM.value());
+        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GGNKDLAHAGH_EAJGHKNNJBB) {
+            my_size += ::protobuf::rt::int32_size(10, self.LMICDNNABNM.value());
         }
-        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::KMJNPEMPNMC::KMJNPEMPNMC::KMJNPEMPNMC_NEELHDGILED) {
-            my_size += ::protobuf::rt::int32_size(5, self.IBCPAKJAPFF.value());
+        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::KMJNPEMPNMC_NEELHDGILED) {
+            my_size += ::protobuf::rt::int32_size(12, self.IBCPAKJAPFF.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::GGNKDLAHAGH::GGNKDLAHAGH::GGNKDLAHAGH_EAJGHKNNJBB) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.LMICDNNABNM))?;
+        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GGNKDLAHAGH_EAJGHKNNJBB) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.LMICDNNABNM))?;
         }
-        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::KMJNPEMPNMC::KMJNPEMPNMC::KMJNPEMPNMC_NEELHDGILED) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.IBCPAKJAPFF))?;
+        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::KMJNPEMPNMC_NEELHDGILED) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.IBCPAKJAPFF))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,8 +132,8 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     }
 
     fn clear(&mut self) {
-        self.LMICDNNABNM = ::protobuf::EnumOrUnknown::new(super::GGNKDLAHAGH::GGNKDLAHAGH::GGNKDLAHAGH_EAJGHKNNJBB);
-        self.IBCPAKJAPFF = ::protobuf::EnumOrUnknown::new(super::KMJNPEMPNMC::KMJNPEMPNMC::KMJNPEMPNMC_NEELHDGILED);
+        self.LMICDNNABNM = ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GGNKDLAHAGH_EAJGHKNNJBB);
+        self.IBCPAKJAPFF = ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::KMJNPEMPNMC_NEELHDGILED);
         self.special_fields.clear();
     }
 
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GMBMNFLMKPI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GMBMNFLMKPI.proto\x1a\x11GGNKDLAHAGH.proto\x1a\x11KMJNPEMPNMC.prot\
-    o\"m\n\x0bGMBMNFLMKPI\x12.\n\x0bLMICDNNABNM\x18\x04\x20\x01(\x0e2\x0c.GG\
-    NKDLAHAGHR\x0bLMICDNNABNM\x12.\n\x0bIBCPAKJAPFF\x18\x05\x20\x01(\x0e2\
-    \x0c.KMJNPEMPNMCR\x0bIBCPAKJAPFFb\x06proto3\
+    \n\x11GMBMNFLMKPI.proto\x1a\x19GridFightLockReason.proto\x1a\x17GridFigh\
+    tLockType.proto\"{\n\x0bGMBMNFLMKPI\x124\n\x0bLMICDNNABNM\x18\n\x20\x01(\
+    \x0e2\x12.GridFightLockTypeR\x0bLMICDNNABNM\x126\n\x0bIBCPAKJAPFF\x18\
+    \x0c\x20\x01(\x0e2\x14.GridFightLockReasonR\x0bIBCPAKJAPFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,8 +186,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GGNKDLAHAGH::file_descriptor().clone());
-            deps.push(super::KMJNPEMPNMC::file_descriptor().clone());
+            deps.push(super::GridFightLockReason::file_descriptor().clone());
+            deps.push(super::GridFightLockType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GMBMNFLMKPI::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

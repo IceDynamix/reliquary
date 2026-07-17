@@ -30,8 +30,8 @@ pub struct BAEFMEJJIBI {
     // message fields
     // @@protoc_insertion_point(field:BAEFMEJJIBI.CEAMLKCMMGD)
     pub CEAMLKCMMGD: u32,
-    // @@protoc_insertion_point(field:BAEFMEJJIBI.pos_index)
-    pub pos_index: ::protobuf::EnumOrUnknown<super::GBAEPOLFFMG::GBAEPOLFFMG>,
+    // @@protoc_insertion_point(field:BAEFMEJJIBI.pos)
+    pub pos: ::protobuf::EnumOrUnknown<super::GBAEPOLFFMG::GBAEPOLFFMG>,
     // special fields
     // @@protoc_insertion_point(special_field:BAEFMEJJIBI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl BAEFMEJJIBI {
             |m: &mut BAEFMEJJIBI| { &mut m.CEAMLKCMMGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "pos_index",
-            |m: &BAEFMEJJIBI| { &m.pos_index },
-            |m: &mut BAEFMEJJIBI| { &mut m.pos_index },
+            "pos",
+            |m: &BAEFMEJJIBI| { &m.pos },
+            |m: &mut BAEFMEJJIBI| { &mut m.pos },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAEFMEJJIBI>(
             "BAEFMEJJIBI",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BAEFMEJJIBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                48 => {
                     self.CEAMLKCMMGD = is.read_uint32()?;
                 },
-                120 => {
-                    self.pos_index = is.read_enum_or_unknown()?;
+                88 => {
+                    self.pos = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BAEFMEJJIBI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CEAMLKCMMGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CEAMLKCMMGD);
+            my_size += ::protobuf::rt::uint32_size(6, self.CEAMLKCMMGD);
         }
-        if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(15, self.pos_index.value());
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(11, self.pos.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BAEFMEJJIBI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CEAMLKCMMGD != 0 {
-            os.write_uint32(14, self.CEAMLKCMMGD)?;
+            os.write_uint32(6, self.CEAMLKCMMGD)?;
         }
-        if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.pos_index))?;
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.pos))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for BAEFMEJJIBI {
 
     fn clear(&mut self) {
         self.CEAMLKCMMGD = 0;
-        self.pos_index = ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ);
+        self.pos = ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAEFMEJJIBI {
         static instance: BAEFMEJJIBI = BAEFMEJJIBI {
             CEAMLKCMMGD: 0,
-            pos_index: ::protobuf::EnumOrUnknown::from_i32(0),
+            pos: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BAEFMEJJIBI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAEFMEJJIBI.proto\x1a\x11GBAEPOLFFMG.proto\"Z\n\x0bBAEFMEJJIBI\x12\
-    \x20\n\x0bCEAMLKCMMGD\x18\x0e\x20\x01(\rR\x0bCEAMLKCMMGD\x12)\n\tpos_ind\
-    ex\x18\x0f\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x08posIndexb\x06proto3\
+    \n\x11BAEFMEJJIBI.proto\x1a\x11GBAEPOLFFMG.proto\"O\n\x0bBAEFMEJJIBI\x12\
+    \x20\n\x0bCEAMLKCMMGD\x18\x06\x20\x01(\rR\x0bCEAMLKCMMGD\x12\x1e\n\x03po\
+    s\x18\x0b\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x03posb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

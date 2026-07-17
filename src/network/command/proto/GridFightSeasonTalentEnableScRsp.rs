@@ -79,7 +79,7 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 104 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.CKHCLKOALKE != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.CKHCLKOALKE);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.CKHCLKOALKE != 0 {
             os.write_uint32(13, self.CKHCLKOALKE)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSeasonTalentEnableScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GridFightSeasonTalentEnableScRsp.proto\"^\n\x20GridFightSeasonTalentE\
-    nableScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\
+    nableScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\
     \x0bCKHCLKOALKE\x18\r\x20\x01(\rR\x0bCKHCLKOALKEb\x06proto3\
 ";
 

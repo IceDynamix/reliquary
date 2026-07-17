@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AIMNHEHKIMI {
     // message fields
-    // @@protoc_insertion_point(field:AIMNHEHKIMI.BAGMMONIIGK)
-    pub BAGMMONIIGK: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:AIMNHEHKIMI.DJMPADMMPAN)
     pub DJMPADMMPAN: u32,
-    // @@protoc_insertion_point(field:AIMNHEHKIMI.OAEFICOLFIG)
-    pub OAEFICOLFIG: u32,
-    // @@protoc_insertion_point(field:AIMNHEHKIMI.HMHEDCCLDGB)
-    pub HMHEDCCLDGB: u32,
     // @@protoc_insertion_point(field:AIMNHEHKIMI.AFOHLIOKLAA)
     pub AFOHLIOKLAA: u32,
+    // @@protoc_insertion_point(field:AIMNHEHKIMI.OAEFICOLFIG)
+    pub OAEFICOLFIG: u32,
+    // @@protoc_insertion_point(field:AIMNHEHKIMI.BAGMMONIIGK)
+    pub BAGMMONIIGK: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
+    // @@protoc_insertion_point(field:AIMNHEHKIMI.HMHEDCCLDGB)
+    pub HMHEDCCLDGB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AIMNHEHKIMI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl AIMNHEHKIMI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
-            "BAGMMONIIGK",
-            |m: &AIMNHEHKIMI| { &m.BAGMMONIIGK },
-            |m: &mut AIMNHEHKIMI| { &mut m.BAGMMONIIGK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DJMPADMMPAN",
             |m: &AIMNHEHKIMI| { &m.DJMPADMMPAN },
             |m: &mut AIMNHEHKIMI| { &mut m.DJMPADMMPAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFOHLIOKLAA",
+            |m: &AIMNHEHKIMI| { &m.AFOHLIOKLAA },
+            |m: &mut AIMNHEHKIMI| { &mut m.AFOHLIOKLAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OAEFICOLFIG",
             |m: &AIMNHEHKIMI| { &m.OAEFICOLFIG },
             |m: &mut AIMNHEHKIMI| { &mut m.OAEFICOLFIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
+            "BAGMMONIIGK",
+            |m: &AIMNHEHKIMI| { &m.BAGMMONIIGK },
+            |m: &mut AIMNHEHKIMI| { &mut m.BAGMMONIIGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HMHEDCCLDGB",
             |m: &AIMNHEHKIMI| { &m.HMHEDCCLDGB },
             |m: &mut AIMNHEHKIMI| { &mut m.HMHEDCCLDGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFOHLIOKLAA",
-            |m: &AIMNHEHKIMI| { &m.AFOHLIOKLAA },
-            |m: &mut AIMNHEHKIMI| { &mut m.AFOHLIOKLAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AIMNHEHKIMI>(
             "AIMNHEHKIMI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.DJMPADMMPAN = is.read_uint32()?;
+                },
+                64 => {
+                    self.AFOHLIOKLAA = is.read_uint32()?;
+                },
+                80 => {
+                    self.OAEFICOLFIG = is.read_uint32()?;
+                },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAGMMONIIGK)?;
                 },
-                16 => {
-                    self.DJMPADMMPAN = is.read_uint32()?;
-                },
-                40 => {
-                    self.OAEFICOLFIG = is.read_uint32()?;
-                },
                 120 => {
                     self.HMHEDCCLDGB = is.read_uint32()?;
-                },
-                96 => {
-                    self.AFOHLIOKLAA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DJMPADMMPAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DJMPADMMPAN);
+        }
+        if self.AFOHLIOKLAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AFOHLIOKLAA);
+        }
+        if self.OAEFICOLFIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.OAEFICOLFIG);
+        }
         if let Some(v) = self.BAGMMONIIGK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DJMPADMMPAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DJMPADMMPAN);
-        }
-        if self.OAEFICOLFIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OAEFICOLFIG);
-        }
         if self.HMHEDCCLDGB != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.HMHEDCCLDGB);
-        }
-        if self.AFOHLIOKLAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AFOHLIOKLAA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DJMPADMMPAN != 0 {
+            os.write_uint32(3, self.DJMPADMMPAN)?;
+        }
+        if self.AFOHLIOKLAA != 0 {
+            os.write_uint32(8, self.AFOHLIOKLAA)?;
+        }
+        if self.OAEFICOLFIG != 0 {
+            os.write_uint32(10, self.OAEFICOLFIG)?;
+        }
         if let Some(v) = self.BAGMMONIIGK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.DJMPADMMPAN != 0 {
-            os.write_uint32(2, self.DJMPADMMPAN)?;
-        }
-        if self.OAEFICOLFIG != 0 {
-            os.write_uint32(5, self.OAEFICOLFIG)?;
-        }
         if self.HMHEDCCLDGB != 0 {
             os.write_uint32(15, self.HMHEDCCLDGB)?;
-        }
-        if self.AFOHLIOKLAA != 0 {
-            os.write_uint32(12, self.AFOHLIOKLAA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     }
 
     fn clear(&mut self) {
-        self.BAGMMONIIGK.clear();
         self.DJMPADMMPAN = 0;
-        self.OAEFICOLFIG = 0;
-        self.HMHEDCCLDGB = 0;
         self.AFOHLIOKLAA = 0;
+        self.OAEFICOLFIG = 0;
+        self.BAGMMONIIGK.clear();
+        self.HMHEDCCLDGB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIMNHEHKIMI {
         static instance: AIMNHEHKIMI = AIMNHEHKIMI {
-            BAGMMONIIGK: ::protobuf::MessageField::none(),
             DJMPADMMPAN: 0,
-            OAEFICOLFIG: 0,
-            HMHEDCCLDGB: 0,
             AFOHLIOKLAA: 0,
+            OAEFICOLFIG: 0,
+            BAGMMONIIGK: ::protobuf::MessageField::none(),
+            HMHEDCCLDGB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for AIMNHEHKIMI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIMNHEHKIMI.proto\x1a\x11NCFKHDIKCNI.proto\"\xc5\x01\n\x0bAIMNHEHK\
-    IMI\x12.\n\x0bBAGMMONIIGK\x18\x0b\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bBAGM\
-    MONIIGK\x12\x20\n\x0bDJMPADMMPAN\x18\x02\x20\x01(\rR\x0bDJMPADMMPAN\x12\
-    \x20\n\x0bOAEFICOLFIG\x18\x05\x20\x01(\rR\x0bOAEFICOLFIG\x12\x20\n\x0bHM\
-    HEDCCLDGB\x18\x0f\x20\x01(\rR\x0bHMHEDCCLDGB\x12\x20\n\x0bAFOHLIOKLAA\
-    \x18\x0c\x20\x01(\rR\x0bAFOHLIOKLAAb\x06proto3\
+    IMI\x12\x20\n\x0bDJMPADMMPAN\x18\x03\x20\x01(\rR\x0bDJMPADMMPAN\x12\x20\
+    \n\x0bAFOHLIOKLAA\x18\x08\x20\x01(\rR\x0bAFOHLIOKLAA\x12\x20\n\x0bOAEFIC\
+    OLFIG\x18\n\x20\x01(\rR\x0bOAEFICOLFIG\x12.\n\x0bBAGMMONIIGK\x18\x0b\x20\
+    \x01(\x0b2\x0c.NCFKHDIKCNIR\x0bBAGMMONIIGK\x12\x20\n\x0bHMHEDCCLDGB\x18\
+    \x0f\x20\x01(\rR\x0bHMHEDCCLDGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,30 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAlleyInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.EEAACLBJODA)
-    pub EEAACLBJODA: ::protobuf::MessageField<super::PICDJHEPJLC::PICDJHEPJLC>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.AMHAEPILIKF)
-    pub AMHAEPILIKF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.KENFKICLMGJ)
-    pub KENFKICLMGJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.LAANLLFBLDP)
-    pub LAANLLFBLDP: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.BECKKLBMFHK)
-    pub BECKKLBMFHK: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.NFJKAILEFAD)
-    pub NFJKAILEFAD: ::protobuf::MessageField<super::GDGEIAHNDAD::GDGEIAHNDAD>,
     // @@protoc_insertion_point(field:GetAlleyInfoScRsp.HAMAOOBGMLO)
     pub HAMAOOBGMLO: ::protobuf::MessageField<super::KPBAIEMEFFH::KPBAIEMEFFH>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.PMIFFBHOOOO)
-    pub PMIFFBHOOOO: ::std::vec::Vec<super::CEKIFBMPEFH::CEKIFBMPEFH>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.cur_fund)
-    pub cur_fund: u32,
     // @@protoc_insertion_point(field:GetAlleyInfoScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.EEMCOEHGBAJ)
-    pub EEMCOEHGBAJ: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.cur_fund)
+    pub cur_fund: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.EEAACLBJODA)
+    pub EEAACLBJODA: ::protobuf::MessageField<super::PICDJHEPJLC::PICDJHEPJLC>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.KENFKICLMGJ)
+    pub KENFKICLMGJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.PMIFFBHOOOO)
+    pub PMIFFBHOOOO: ::std::vec::Vec<super::CEKIFBMPEFH::CEKIFBMPEFH>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.AMHAEPILIKF)
+    pub AMHAEPILIKF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.NFJKAILEFAD)
+    pub NFJKAILEFAD: ::protobuf::MessageField<super::GDGEIAHNDAD::GDGEIAHNDAD>,
     // @@protoc_insertion_point(field:GetAlleyInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.LAANLLFBLDP)
+    pub LAANLLFBLDP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAlleyInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -69,52 +65,12 @@ impl GetAlleyInfoScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(12);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PICDJHEPJLC::PICDJHEPJLC>(
-            "EEAACLBJODA",
-            |m: &GetAlleyInfoScRsp| { &m.EEAACLBJODA },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.EEAACLBJODA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AMHAEPILIKF",
-            |m: &GetAlleyInfoScRsp| { &m.AMHAEPILIKF },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.AMHAEPILIKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KENFKICLMGJ",
-            |m: &GetAlleyInfoScRsp| { &m.KENFKICLMGJ },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.KENFKICLMGJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LAANLLFBLDP",
-            |m: &GetAlleyInfoScRsp| { &m.LAANLLFBLDP },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.LAANLLFBLDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "BECKKLBMFHK",
-            |m: &GetAlleyInfoScRsp| { &m.BECKKLBMFHK },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.BECKKLBMFHK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDGEIAHNDAD::GDGEIAHNDAD>(
-            "NFJKAILEFAD",
-            |m: &GetAlleyInfoScRsp| { &m.NFJKAILEFAD },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.NFJKAILEFAD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPBAIEMEFFH::KPBAIEMEFFH>(
             "HAMAOOBGMLO",
             |m: &GetAlleyInfoScRsp| { &m.HAMAOOBGMLO },
             |m: &mut GetAlleyInfoScRsp| { &mut m.HAMAOOBGMLO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PMIFFBHOOOO",
-            |m: &GetAlleyInfoScRsp| { &m.PMIFFBHOOOO },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.PMIFFBHOOOO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_fund",
-            |m: &GetAlleyInfoScRsp| { &m.cur_fund },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.cur_fund },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -122,14 +78,44 @@ impl GetAlleyInfoScRsp {
             |m: &mut GetAlleyInfoScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEMCOEHGBAJ",
-            |m: &GetAlleyInfoScRsp| { &m.EEMCOEHGBAJ },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.EEMCOEHGBAJ },
+            "cur_fund",
+            |m: &GetAlleyInfoScRsp| { &m.cur_fund },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.cur_fund },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PICDJHEPJLC::PICDJHEPJLC>(
+            "EEAACLBJODA",
+            |m: &GetAlleyInfoScRsp| { &m.EEAACLBJODA },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.EEAACLBJODA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KENFKICLMGJ",
+            |m: &GetAlleyInfoScRsp| { &m.KENFKICLMGJ },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.KENFKICLMGJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PMIFFBHOOOO",
+            |m: &GetAlleyInfoScRsp| { &m.PMIFFBHOOOO },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.PMIFFBHOOOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AMHAEPILIKF",
+            |m: &GetAlleyInfoScRsp| { &m.AMHAEPILIKF },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.AMHAEPILIKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDGEIAHNDAD::GDGEIAHNDAD>(
+            "NFJKAILEFAD",
+            |m: &GetAlleyInfoScRsp| { &m.NFJKAILEFAD },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.NFJKAILEFAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAlleyInfoScRsp| { &m.retcode },
             |m: &mut GetAlleyInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LAANLLFBLDP",
+            |m: &GetAlleyInfoScRsp| { &m.LAANLLFBLDP },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.LAANLLFBLDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAlleyInfoScRsp>(
             "GetAlleyInfoScRsp",
@@ -149,62 +135,44 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEAACLBJODA)?;
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AMHAEPILIKF)?;
-                },
-                72 => {
-                    self.AMHAEPILIKF.push(is.read_uint32()?);
-                },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KENFKICLMGJ)?;
-                },
-                88 => {
-                    self.KENFKICLMGJ.push(is.read_uint32()?);
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LAANLLFBLDP)?;
-                },
-                80 => {
-                    self.LAANLLFBLDP.push(is.read_uint32()?);
-                },
-                18 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.BECKKLBMFHK.insert(key, value);
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJKAILEFAD)?;
-                },
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HAMAOOBGMLO)?;
                 },
-                114 => {
-                    self.PMIFFBHOOOO.push(is.read_message()?);
-                },
-                64 => {
-                    self.cur_fund = is.read_uint32()?;
-                },
-                96 => {
+                16 => {
                     self.level = is.read_uint32()?;
                 },
-                104 => {
-                    self.EEMCOEHGBAJ = is.read_uint32()?;
+                24 => {
+                    self.cur_fund = is.read_uint32()?;
                 },
-                120 => {
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EEAACLBJODA)?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KENFKICLMGJ)?;
+                },
+                40 => {
+                    self.KENFKICLMGJ.push(is.read_uint32()?);
+                },
+                50 => {
+                    self.PMIFFBHOOOO.push(is.read_message()?);
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AMHAEPILIKF)?;
+                },
+                64 => {
+                    self.AMHAEPILIKF.push(is.read_uint32()?);
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFJKAILEFAD)?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LAANLLFBLDP)?;
+                },
+                112 => {
+                    self.LAANLLFBLDP.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -218,85 +186,64 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EEAACLBJODA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.AMHAEPILIKF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KENFKICLMGJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LAANLLFBLDP);
-        for (k, v) in &self.BECKKLBMFHK {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if let Some(v) = self.NFJKAILEFAD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.HAMAOOBGMLO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        }
+        if self.cur_fund != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.cur_fund);
+        }
+        if let Some(v) = self.EEAACLBJODA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KENFKICLMGJ);
         for value in &self.PMIFFBHOOOO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.cur_fund != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_fund);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level);
-        }
-        if self.EEMCOEHGBAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EEMCOEHGBAJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.AMHAEPILIKF);
+        if let Some(v) = self.NFJKAILEFAD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.LAANLLFBLDP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EEAACLBJODA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.AMHAEPILIKF)?;
-        os.write_repeated_packed_uint32(11, &self.KENFKICLMGJ)?;
-        os.write_repeated_packed_uint32(10, &self.LAANLLFBLDP)?;
-        for (k, v) in &self.BECKKLBMFHK {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
-        if let Some(v) = self.NFJKAILEFAD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if let Some(v) = self.HAMAOOBGMLO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        for v in &self.PMIFFBHOOOO {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.cur_fund != 0 {
-            os.write_uint32(8, self.cur_fund)?;
-        }
         if self.level != 0 {
-            os.write_uint32(12, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
-        if self.EEMCOEHGBAJ != 0 {
-            os.write_uint32(13, self.EEMCOEHGBAJ)?;
+        if self.cur_fund != 0 {
+            os.write_uint32(3, self.cur_fund)?;
+        }
+        if let Some(v) = self.EEAACLBJODA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.KENFKICLMGJ)?;
+        for v in &self.PMIFFBHOOOO {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        os.write_repeated_packed_uint32(8, &self.AMHAEPILIKF)?;
+        if let Some(v) = self.NFJKAILEFAD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
+        os.write_repeated_packed_uint32(14, &self.LAANLLFBLDP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -314,24 +261,34 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.EEAACLBJODA.clear();
-        self.AMHAEPILIKF.clear();
-        self.KENFKICLMGJ.clear();
-        self.LAANLLFBLDP.clear();
-        self.BECKKLBMFHK.clear();
-        self.NFJKAILEFAD.clear();
         self.HAMAOOBGMLO.clear();
-        self.PMIFFBHOOOO.clear();
-        self.cur_fund = 0;
         self.level = 0;
-        self.EEMCOEHGBAJ = 0;
+        self.cur_fund = 0;
+        self.EEAACLBJODA.clear();
+        self.KENFKICLMGJ.clear();
+        self.PMIFFBHOOOO.clear();
+        self.AMHAEPILIKF.clear();
+        self.NFJKAILEFAD.clear();
         self.retcode = 0;
+        self.LAANLLFBLDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAlleyInfoScRsp {
-        static instance: ::protobuf::rt::Lazy<GetAlleyInfoScRsp> = ::protobuf::rt::Lazy::new();
-        instance.get(GetAlleyInfoScRsp::new)
+        static instance: GetAlleyInfoScRsp = GetAlleyInfoScRsp {
+            HAMAOOBGMLO: ::protobuf::MessageField::none(),
+            level: 0,
+            cur_fund: 0,
+            EEAACLBJODA: ::protobuf::MessageField::none(),
+            KENFKICLMGJ: ::std::vec::Vec::new(),
+            PMIFFBHOOOO: ::std::vec::Vec::new(),
+            AMHAEPILIKF: ::std::vec::Vec::new(),
+            NFJKAILEFAD: ::protobuf::MessageField::none(),
+            retcode: 0,
+            LAANLLFBLDP: ::std::vec::Vec::new(),
+            special_fields: ::protobuf::SpecialFields::new(),
+        };
+        &instance
     }
 }
 
@@ -354,21 +311,17 @@ impl ::protobuf::reflect::ProtobufValue for GetAlleyInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetAlleyInfoScRsp.proto\x1a\x11CEKIFBMPEFH.proto\x1a\x11GDGEIAHNDA\
-    D.proto\x1a\x11KPBAIEMEFFH.proto\x1a\x11PICDJHEPJLC.proto\"\xad\x04\n\
-    \x11GetAlleyInfoScRsp\x12.\n\x0bEEAACLBJODA\x18\x03\x20\x01(\x0b2\x0c.PI\
-    CDJHEPJLCR\x0bEEAACLBJODA\x12\x20\n\x0bAMHAEPILIKF\x18\t\x20\x03(\rR\x0b\
-    AMHAEPILIKF\x12\x20\n\x0bKENFKICLMGJ\x18\x0b\x20\x03(\rR\x0bKENFKICLMGJ\
-    \x12\x20\n\x0bLAANLLFBLDP\x18\n\x20\x03(\rR\x0bLAANLLFBLDP\x12E\n\x0bBEC\
-    KKLBMFHK\x18\x02\x20\x03(\x0b2#.GetAlleyInfoScRsp.BECKKLBMFHKEntryR\x0bB\
-    ECKKLBMFHK\x12.\n\x0bNFJKAILEFAD\x18\x05\x20\x01(\x0b2\x0c.GDGEIAHNDADR\
-    \x0bNFJKAILEFAD\x12.\n\x0bHAMAOOBGMLO\x18\x01\x20\x01(\x0b2\x0c.KPBAIEME\
-    FFHR\x0bHAMAOOBGMLO\x12.\n\x0bPMIFFBHOOOO\x18\x0e\x20\x03(\x0b2\x0c.CEKI\
-    FBMPEFHR\x0bPMIFFBHOOOO\x12\x19\n\x08cur_fund\x18\x08\x20\x01(\rR\x07cur\
-    Fund\x12\x14\n\x05level\x18\x0c\x20\x01(\rR\x05level\x12\x20\n\x0bEEMCOE\
-    HGBAJ\x18\r\x20\x01(\rR\x0bEEMCOEHGBAJ\x12\x18\n\x07retcode\x18\x0f\x20\
-    \x01(\rR\x07retcode\x1a>\n\x10BECKKLBMFHKEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    D.proto\x1a\x11KPBAIEMEFFH.proto\x1a\x11PICDJHEPJLC.proto\"\x84\x03\n\
+    \x11GetAlleyInfoScRsp\x12.\n\x0bHAMAOOBGMLO\x18\x01\x20\x01(\x0b2\x0c.KP\
+    BAIEMEFFHR\x0bHAMAOOBGMLO\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05leve\
+    l\x12\x19\n\x08cur_fund\x18\x03\x20\x01(\rR\x07curFund\x12.\n\x0bEEAACLB\
+    JODA\x18\x04\x20\x01(\x0b2\x0c.PICDJHEPJLCR\x0bEEAACLBJODA\x12\x20\n\x0b\
+    KENFKICLMGJ\x18\x05\x20\x03(\rR\x0bKENFKICLMGJ\x12.\n\x0bPMIFFBHOOOO\x18\
+    \x06\x20\x03(\x0b2\x0c.CEKIFBMPEFHR\x0bPMIFFBHOOOO\x12\x20\n\x0bAMHAEPIL\
+    IKF\x18\x08\x20\x03(\rR\x0bAMHAEPILIKF\x12.\n\x0bNFJKAILEFAD\x18\t\x20\
+    \x01(\x0b2\x0c.GDGEIAHNDADR\x0bNFJKAILEFAD\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bLAANLLFBLDP\x18\x0e\x20\x03(\rR\x0b\
+    LAANLLFBLDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

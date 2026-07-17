@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightTraitUpdateCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GridFightTraitUpdateCsReq.trait_id)
-    pub trait_id: u32,
     // @@protoc_insertion_point(field:GridFightTraitUpdateCsReq.effect_id)
     pub effect_id: u32,
+    // @@protoc_insertion_point(field:GridFightTraitUpdateCsReq.trait_id)
+    pub trait_id: u32,
     // message oneof groups
     pub NEBNJDMFELO: ::std::option::Option<grid_fight_trait_update_cs_req::NEBNJDMFELO>,
     // special fields
@@ -50,7 +50,7 @@ impl GridFightTraitUpdateCsReq {
         ::std::default::Default::default()
     }
 
-    // .GPCFHMLMDHC FFBEPFLBHPL = 40;
+    // .GPCFHMLMDHC FFBEPFLBHPL = 897;
 
     pub fn FFBEPFLBHPL(&self) -> &super::GPCFHMLMDHC::GPCFHMLMDHC {
         match self.NEBNJDMFELO {
@@ -99,7 +99,7 @@ impl GridFightTraitUpdateCsReq {
         }
     }
 
-    // .AFPJPEABFKH JLCLHAKNMLL = 1902;
+    // .AFPJPEABFKH JLCLHAKNMLL = 1879;
 
     pub fn JLCLHAKNMLL(&self) -> &super::AFPJPEABFKH::AFPJPEABFKH {
         match self.NEBNJDMFELO {
@@ -148,18 +148,67 @@ impl GridFightTraitUpdateCsReq {
         }
     }
 
+    // .MHKNPBJDFIC LFIDNOAECMN = 1854;
+
+    pub fn LFIDNOAECMN(&self) -> &super::MHKNPBJDFIC::MHKNPBJDFIC {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(ref v)) => v,
+            _ => <super::MHKNPBJDFIC::MHKNPBJDFIC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LFIDNOAECMN(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
+    }
+
+    pub fn has_LFIDNOAECMN(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LFIDNOAECMN(&mut self, v: super::MHKNPBJDFIC::MHKNPBJDFIC) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LFIDNOAECMN(&mut self) -> &mut super::MHKNPBJDFIC::MHKNPBJDFIC {
+        if let ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(_)) = self.NEBNJDMFELO {
+        } else {
+            self.NEBNJDMFELO = ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(super::MHKNPBJDFIC::MHKNPBJDFIC::new()));
+        }
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LFIDNOAECMN(&mut self) -> super::MHKNPBJDFIC::MHKNPBJDFIC {
+        if self.has_LFIDNOAECMN() {
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::MHKNPBJDFIC::MHKNPBJDFIC::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trait_id",
-            |m: &GridFightTraitUpdateCsReq| { &m.trait_id },
-            |m: &mut GridFightTraitUpdateCsReq| { &mut m.trait_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "effect_id",
             |m: &GridFightTraitUpdateCsReq| { &m.effect_id },
             |m: &mut GridFightTraitUpdateCsReq| { &mut m.effect_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trait_id",
+            |m: &GridFightTraitUpdateCsReq| { &m.trait_id },
+            |m: &mut GridFightTraitUpdateCsReq| { &mut m.trait_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GPCFHMLMDHC::GPCFHMLMDHC>(
             "FFBEPFLBHPL",
@@ -174,6 +223,13 @@ impl GridFightTraitUpdateCsReq {
             GridFightTraitUpdateCsReq::JLCLHAKNMLL,
             GridFightTraitUpdateCsReq::mut_JLCLHAKNMLL,
             GridFightTraitUpdateCsReq::set_JLCLHAKNMLL,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MHKNPBJDFIC::MHKNPBJDFIC>(
+            "LFIDNOAECMN",
+            GridFightTraitUpdateCsReq::has_LFIDNOAECMN,
+            GridFightTraitUpdateCsReq::LFIDNOAECMN,
+            GridFightTraitUpdateCsReq::mut_LFIDNOAECMN,
+            GridFightTraitUpdateCsReq::set_LFIDNOAECMN,
         ));
         oneofs.push(grid_fight_trait_update_cs_req::NEBNJDMFELO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightTraitUpdateCsReq>(
@@ -194,17 +250,20 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.trait_id = is.read_uint32()?;
-                },
-                96 => {
+                64 => {
                     self.effect_id = is.read_uint32()?;
                 },
-                322 => {
+                96 => {
+                    self.trait_id = is.read_uint32()?;
+                },
+                7178 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::FFBEPFLBHPL(is.read_message()?));
                 },
-                15218 => {
+                15034 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::JLCLHAKNMLL(is.read_message()?));
+                },
+                14834 => {
+                    self.NEBNJDMFELO = ::std::option::Option::Some(grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -218,11 +277,11 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.trait_id);
-        }
         if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.effect_id);
+        }
+        if self.trait_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.trait_id);
         }
         if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
@@ -231,6 +290,10 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &grid_fight_trait_update_cs_req::NEBNJDMFELO::JLCLHAKNMLL(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -242,19 +305,22 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.trait_id != 0 {
-            os.write_uint32(14, self.trait_id)?;
-        }
         if self.effect_id != 0 {
-            os.write_uint32(12, self.effect_id)?;
+            os.write_uint32(8, self.effect_id)?;
+        }
+        if self.trait_id != 0 {
+            os.write_uint32(12, self.trait_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
                 &grid_fight_trait_update_cs_req::NEBNJDMFELO::FFBEPFLBHPL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(40, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(897, v, os)?;
                 },
                 &grid_fight_trait_update_cs_req::NEBNJDMFELO::JLCLHAKNMLL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1902, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1879, v, os)?;
+                },
+                &grid_fight_trait_update_cs_req::NEBNJDMFELO::LFIDNOAECMN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1854, v, os)?;
                 },
             };
         }
@@ -275,8 +341,9 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
     }
 
     fn clear(&mut self) {
-        self.trait_id = 0;
         self.effect_id = 0;
+        self.trait_id = 0;
+        self.NEBNJDMFELO = ::std::option::Option::None;
         self.NEBNJDMFELO = ::std::option::Option::None;
         self.NEBNJDMFELO = ::std::option::Option::None;
         self.special_fields.clear();
@@ -284,8 +351,8 @@ impl ::protobuf::Message for GridFightTraitUpdateCsReq {
 
     fn default_instance() -> &'static GridFightTraitUpdateCsReq {
         static instance: GridFightTraitUpdateCsReq = GridFightTraitUpdateCsReq {
-            trait_id: 0,
             effect_id: 0,
+            trait_id: 0,
             NEBNJDMFELO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -321,6 +388,8 @@ pub mod grid_fight_trait_update_cs_req {
         FFBEPFLBHPL(super::super::GPCFHMLMDHC::GPCFHMLMDHC),
         // @@protoc_insertion_point(oneof_field:GridFightTraitUpdateCsReq.JLCLHAKNMLL)
         JLCLHAKNMLL(super::super::AFPJPEABFKH::AFPJPEABFKH),
+        // @@protoc_insertion_point(oneof_field:GridFightTraitUpdateCsReq.LFIDNOAECMN)
+        LFIDNOAECMN(super::super::MHKNPBJDFIC::MHKNPBJDFIC),
     }
 
     impl ::protobuf::Oneof for NEBNJDMFELO {
@@ -342,11 +411,13 @@ pub mod grid_fight_trait_update_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGridFightTraitUpdateCsReq.proto\x1a\x11AFPJPEABFKH.proto\x1a\x11GP\
-    CFHMLMDHC.proto\"\xc7\x01\n\x19GridFightTraitUpdateCsReq\x12\x19\n\x08tr\
-    ait_id\x18\x0e\x20\x01(\rR\x07traitId\x12\x1b\n\teffect_id\x18\x0c\x20\
-    \x01(\rR\x08effectId\x120\n\x0bFFBEPFLBHPL\x18(\x20\x01(\x0b2\x0c.GPCFHM\
-    LMDHCH\0R\x0bFFBEPFLBHPL\x121\n\x0bJLCLHAKNMLL\x18\xee\x0e\x20\x01(\x0b2\
-    \x0c.AFPJPEABFKHH\0R\x0bJLCLHAKNMLLB\r\n\x0bNEBNJDMFELOb\x06proto3\
+    CFHMLMDHC.proto\x1a\x11MHKNPBJDFIC.proto\"\xfb\x01\n\x19GridFightTraitUp\
+    dateCsReq\x12\x1b\n\teffect_id\x18\x08\x20\x01(\rR\x08effectId\x12\x19\n\
+    \x08trait_id\x18\x0c\x20\x01(\rR\x07traitId\x121\n\x0bFFBEPFLBHPL\x18\
+    \x81\x07\x20\x01(\x0b2\x0c.GPCFHMLMDHCH\0R\x0bFFBEPFLBHPL\x121\n\x0bJLCL\
+    HAKNMLL\x18\xd7\x0e\x20\x01(\x0b2\x0c.AFPJPEABFKHH\0R\x0bJLCLHAKNMLL\x12\
+    1\n\x0bLFIDNOAECMN\x18\xbe\x0e\x20\x01(\x0b2\x0c.MHKNPBJDFICH\0R\x0bLFID\
+    NOAECMNB\r\n\x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -363,9 +434,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::AFPJPEABFKH::file_descriptor().clone());
             deps.push(super::GPCFHMLMDHC::file_descriptor().clone());
+            deps.push(super::MHKNPBJDFIC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightTraitUpdateCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

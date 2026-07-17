@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartTrackPhotoStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.FPPECOIAHEP)
-    pub FPPECOIAHEP: u32,
+    // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.trans_no)
+    pub trans_no: u32,
     // @@protoc_insertion_point(field:StartTrackPhotoStageScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl StartTrackPhotoStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPPECOIAHEP",
-            |m: &StartTrackPhotoStageScRsp| { &m.FPPECOIAHEP },
-            |m: &mut StartTrackPhotoStageScRsp| { &mut m.FPPECOIAHEP },
+            "trans_no",
+            |m: &StartTrackPhotoStageScRsp| { &m.trans_no },
+            |m: &mut StartTrackPhotoStageScRsp| { &mut m.trans_no },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.FPPECOIAHEP = is.read_uint32()?;
+                24 => {
+                    self.trans_no = is.read_uint32()?;
                 },
-                8 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FPPECOIAHEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FPPECOIAHEP);
+        if self.trans_no != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.trans_no);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FPPECOIAHEP != 0 {
-            os.write_uint32(10, self.FPPECOIAHEP)?;
+        if self.trans_no != 0 {
+            os.write_uint32(3, self.trans_no)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for StartTrackPhotoStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.FPPECOIAHEP = 0;
+        self.trans_no = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartTrackPhotoStageScRsp {
         static instance: StartTrackPhotoStageScRsp = StartTrackPhotoStageScRsp {
-            FPPECOIAHEP: 0,
+            trans_no: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for StartTrackPhotoStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fStartTrackPhotoStageScRsp.proto\"W\n\x19StartTrackPhotoStageScRsp\
-    \x12\x20\n\x0bFPPECOIAHEP\x18\n\x20\x01(\rR\x0bFPPECOIAHEP\x12\x18\n\x07\
-    retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1fStartTrackPhotoStageScRsp.proto\"P\n\x19StartTrackPhotoStageScRsp\
+    \x12\x19\n\x08trans_no\x18\x03\x20\x01(\rR\x07transNo\x12\x18\n\x07retco\
+    de\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

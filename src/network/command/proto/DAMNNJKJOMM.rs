@@ -32,10 +32,10 @@ pub struct DAMNNJKJOMM {
     pub first_lineup: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DAMNNJKJOMM.second_lineup)
     pub second_lineup: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DAMNNJKJOMM.DLCJLOIMKOJ)
-    pub DLCJLOIMKOJ: u32,
     // @@protoc_insertion_point(field:DAMNNJKJOMM.DHMEBODOJMI)
     pub DHMEBODOJMI: u32,
+    // @@protoc_insertion_point(field:DAMNNJKJOMM.DLCJLOIMKOJ)
+    pub DLCJLOIMKOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DAMNNJKJOMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl DAMNNJKJOMM {
             |m: &mut DAMNNJKJOMM| { &mut m.second_lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLCJLOIMKOJ",
-            |m: &DAMNNJKJOMM| { &m.DLCJLOIMKOJ },
-            |m: &mut DAMNNJKJOMM| { &mut m.DLCJLOIMKOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHMEBODOJMI",
             |m: &DAMNNJKJOMM| { &m.DHMEBODOJMI },
             |m: &mut DAMNNJKJOMM| { &mut m.DHMEBODOJMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLCJLOIMKOJ",
+            |m: &DAMNNJKJOMM| { &m.DLCJLOIMKOJ },
+            |m: &mut DAMNNJKJOMM| { &mut m.DLCJLOIMKOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DAMNNJKJOMM>(
             "DAMNNJKJOMM",
@@ -105,11 +105,11 @@ impl ::protobuf::Message for DAMNNJKJOMM {
                 16 => {
                     self.second_lineup.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.DLCJLOIMKOJ = is.read_uint32()?;
-                },
                 24 => {
                     self.DHMEBODOJMI = is.read_uint32()?;
+                },
+                32 => {
+                    self.DLCJLOIMKOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -125,11 +125,11 @@ impl ::protobuf::Message for DAMNNJKJOMM {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.first_lineup);
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.second_lineup);
-        if self.DLCJLOIMKOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DLCJLOIMKOJ);
-        }
         if self.DHMEBODOJMI != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.DHMEBODOJMI);
+        }
+        if self.DLCJLOIMKOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DLCJLOIMKOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -139,11 +139,11 @@ impl ::protobuf::Message for DAMNNJKJOMM {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.first_lineup)?;
         os.write_repeated_packed_uint32(2, &self.second_lineup)?;
-        if self.DLCJLOIMKOJ != 0 {
-            os.write_uint32(4, self.DLCJLOIMKOJ)?;
-        }
         if self.DHMEBODOJMI != 0 {
             os.write_uint32(3, self.DHMEBODOJMI)?;
+        }
+        if self.DLCJLOIMKOJ != 0 {
+            os.write_uint32(4, self.DLCJLOIMKOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for DAMNNJKJOMM {
     fn clear(&mut self) {
         self.first_lineup.clear();
         self.second_lineup.clear();
-        self.DLCJLOIMKOJ = 0;
         self.DHMEBODOJMI = 0;
+        self.DLCJLOIMKOJ = 0;
         self.special_fields.clear();
     }
 
@@ -173,8 +173,8 @@ impl ::protobuf::Message for DAMNNJKJOMM {
         static instance: DAMNNJKJOMM = DAMNNJKJOMM {
             first_lineup: ::std::vec::Vec::new(),
             second_lineup: ::std::vec::Vec::new(),
-            DLCJLOIMKOJ: 0,
             DHMEBODOJMI: 0,
+            DLCJLOIMKOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for DAMNNJKJOMM {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DAMNNJKJOMM.proto\"\x99\x01\n\x0bDAMNNJKJOMM\x12!\n\x0cfirst_lineu\
     p\x18\x01\x20\x03(\rR\x0bfirstLineup\x12#\n\rsecond_lineup\x18\x02\x20\
-    \x03(\rR\x0csecondLineup\x12\x20\n\x0bDLCJLOIMKOJ\x18\x04\x20\x01(\rR\
-    \x0bDLCJLOIMKOJ\x12\x20\n\x0bDHMEBODOJMI\x18\x03\x20\x01(\rR\x0bDHMEBODO\
-    JMIb\x06proto3\
+    \x03(\rR\x0csecondLineup\x12\x20\n\x0bDHMEBODOJMI\x18\x03\x20\x01(\rR\
+    \x0bDHMEBODOJMI\x12\x20\n\x0bDLCJLOIMKOJ\x18\x04\x20\x01(\rR\x0bDLCJLOIM\
+    KOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,12 +30,10 @@ pub struct MOOKMKEKMKC {
     // message fields
     // @@protoc_insertion_point(field:MOOKMKEKMKC.PEGDMOMCFAD)
     pub PEGDMOMCFAD: ::std::collections::HashMap<u32, bool>,
-    // @@protoc_insertion_point(field:MOOKMKEKMKC.ADLKMLFOFPF)
-    pub ADLKMLFOFPF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MOOKMKEKMKC.BILCGENIGJM)
     pub BILCGENIGJM: ::std::vec::Vec<super::HGCIAPKELAF::HGCIAPKELAF>,
-    // @@protoc_insertion_point(field:MOOKMKEKMKC.OOBPJHMDENG)
-    pub OOBPJHMDENG: ::protobuf::EnumOrUnknown<super::ChessRogueNousDicePhase::ChessRogueNousDicePhase>,
+    // @@protoc_insertion_point(field:MOOKMKEKMKC.ADLKMLFOFPF)
+    pub ADLKMLFOFPF: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MOOKMKEKMKC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,7 +51,7 @@ impl MOOKMKEKMKC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "PEGDMOMCFAD",
@@ -61,19 +59,14 @@ impl MOOKMKEKMKC {
             |m: &mut MOOKMKEKMKC| { &mut m.PEGDMOMCFAD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ADLKMLFOFPF",
-            |m: &MOOKMKEKMKC| { &m.ADLKMLFOFPF },
-            |m: &mut MOOKMKEKMKC| { &mut m.ADLKMLFOFPF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BILCGENIGJM",
             |m: &MOOKMKEKMKC| { &m.BILCGENIGJM },
             |m: &mut MOOKMKEKMKC| { &mut m.BILCGENIGJM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOBPJHMDENG",
-            |m: &MOOKMKEKMKC| { &m.OOBPJHMDENG },
-            |m: &mut MOOKMKEKMKC| { &mut m.OOBPJHMDENG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ADLKMLFOFPF",
+            |m: &MOOKMKEKMKC| { &m.ADLKMLFOFPF },
+            |m: &mut MOOKMKEKMKC| { &mut m.ADLKMLFOFPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MOOKMKEKMKC>(
             "MOOKMKEKMKC",
@@ -93,7 +86,7 @@ impl ::protobuf::Message for MOOKMKEKMKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,17 +101,14 @@ impl ::protobuf::Message for MOOKMKEKMKC {
                     is.pop_limit(old_limit);
                     self.PEGDMOMCFAD.insert(key, value);
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ADLKMLFOFPF)?;
-                },
-                16 => {
-                    self.ADLKMLFOFPF.push(is.read_uint32()?);
-                },
-                10 => {
+                42 => {
                     self.BILCGENIGJM.push(is.read_message()?);
                 },
-                56 => {
-                    self.OOBPJHMDENG = is.read_enum_or_unknown()?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ADLKMLFOFPF)?;
+                },
+                48 => {
+                    self.ADLKMLFOFPF.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,14 +128,11 @@ impl ::protobuf::Message for MOOKMKEKMKC {
             entry_size += 1 + 1;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ADLKMLFOFPF);
         for value in &self.BILCGENIGJM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OOBPJHMDENG != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::PKCGJHNMLPK_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(7, self.OOBPJHMDENG.value());
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.ADLKMLFOFPF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -156,18 +143,15 @@ impl ::protobuf::Message for MOOKMKEKMKC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += 1 + 1;
-            os.write_raw_varint32(26)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_bool(2, *v)?;
         };
-        os.write_repeated_packed_uint32(2, &self.ADLKMLFOFPF)?;
         for v in &self.BILCGENIGJM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.OOBPJHMDENG != ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::PKCGJHNMLPK_NLCDGIPGFDJ) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.OOBPJHMDENG))?;
-        }
+        os.write_repeated_packed_uint32(6, &self.ADLKMLFOFPF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -186,9 +170,8 @@ impl ::protobuf::Message for MOOKMKEKMKC {
 
     fn clear(&mut self) {
         self.PEGDMOMCFAD.clear();
-        self.ADLKMLFOFPF.clear();
         self.BILCGENIGJM.clear();
-        self.OOBPJHMDENG = ::protobuf::EnumOrUnknown::new(super::ChessRogueNousDicePhase::ChessRogueNousDicePhase::PKCGJHNMLPK_NLCDGIPGFDJ);
+        self.ADLKMLFOFPF.clear();
         self.special_fields.clear();
     }
 
@@ -216,14 +199,13 @@ impl ::protobuf::reflect::ProtobufValue for MOOKMKEKMKC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOOKMKEKMKC.proto\x1a\x1dChessRogueNousDicePhase.proto\x1a\x11HGCI\
-    APKELAF.proto\"\x9c\x02\n\x0bMOOKMKEKMKC\x12?\n\x0bPEGDMOMCFAD\x18\x03\
-    \x20\x03(\x0b2\x1d.MOOKMKEKMKC.PEGDMOMCFADEntryR\x0bPEGDMOMCFAD\x12\x20\
-    \n\x0bADLKMLFOFPF\x18\x02\x20\x03(\rR\x0bADLKMLFOFPF\x12.\n\x0bBILCGENIG\
-    JM\x18\x01\x20\x03(\x0b2\x0c.HGCIAPKELAFR\x0bBILCGENIGJM\x12:\n\x0bOOBPJ\
-    HMDENG\x18\x07\x20\x01(\x0e2\x18.ChessRogueNousDicePhaseR\x0bOOBPJHMDENG\
-    \x1a>\n\x10PEGDMOMCFADEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\
-    \x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\x01b\x06proto3\
+    \n\x11MOOKMKEKMKC.proto\x1a\x11HGCIAPKELAF.proto\"\xe0\x01\n\x0bMOOKMKEK\
+    MKC\x12?\n\x0bPEGDMOMCFAD\x18\x01\x20\x03(\x0b2\x1d.MOOKMKEKMKC.PEGDMOMC\
+    FADEntryR\x0bPEGDMOMCFAD\x12.\n\x0bBILCGENIGJM\x18\x05\x20\x03(\x0b2\x0c\
+    .HGCIAPKELAFR\x0bBILCGENIGJM\x12\x20\n\x0bADLKMLFOFPF\x18\x06\x20\x03(\r\
+    R\x0bADLKMLFOFPF\x1a>\n\x10PEGDMOMCFADEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x08R\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -240,8 +222,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ChessRogueNousDicePhase::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::HGCIAPKELAF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MOOKMKEKMKC::generated_message_descriptor_data());

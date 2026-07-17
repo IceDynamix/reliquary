@@ -27,9 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:MusicRhythmDataCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmDataCsReq {
-    // message fields
-    // @@protoc_insertion_point(field:MusicRhythmDataCsReq.player_data)
-    pub player_data: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,13 +44,8 @@ impl MusicRhythmDataCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "player_data",
-            |m: &MusicRhythmDataCsReq| { &m.player_data },
-            |m: &mut MusicRhythmDataCsReq| { &mut m.player_data },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmDataCsReq>(
             "MusicRhythmDataCsReq",
             fields,
@@ -72,9 +64,6 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.player_data = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -87,18 +76,12 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.player_data != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.player_data);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.player_data != 0 {
-            os.write_uint32(7, self.player_data)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,13 +99,11 @@ impl ::protobuf::Message for MusicRhythmDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.player_data = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmDataCsReq {
         static instance: MusicRhythmDataCsReq = MusicRhythmDataCsReq {
-            player_data: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +128,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmDataCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aMusicRhythmDataCsReq.proto\"7\n\x14MusicRhythmDataCsReq\x12\x1f\n\
-    \x0bplayer_data\x18\x07\x20\x01(\rR\nplayerDatab\x06proto3\
+    \n\x1aMusicRhythmDataCsReq.proto\"\x16\n\x14MusicRhythmDataCsReqb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

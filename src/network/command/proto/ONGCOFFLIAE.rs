@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONGCOFFLIAE {
     // message fields
-    // @@protoc_insertion_point(field:ONGCOFFLIAE.PPCKLBHFCCA)
-    pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
-    // @@protoc_insertion_point(field:ONGCOFFLIAE.IGEHHFIGBAI)
-    pub IGEHHFIGBAI: u32,
-    // @@protoc_insertion_point(field:ONGCOFFLIAE.DDCLCNPONOH)
-    pub DDCLCNPONOH: u32,
-    // @@protoc_insertion_point(field:ONGCOFFLIAE.is_win)
-    pub is_win: bool,
+    // @@protoc_insertion_point(field:ONGCOFFLIAE.add_coin)
+    pub add_coin: u32,
+    // @@protoc_insertion_point(field:ONGCOFFLIAE.soldier_dead_cnt)
+    pub soldier_dead_cnt: u32,
     // @@protoc_insertion_point(field:ONGCOFFLIAE.GDIMKFNECOK)
     pub GDIMKFNECOK: u32,
+    // @@protoc_insertion_point(field:ONGCOFFLIAE.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:ONGCOFFLIAE.PPCKLBHFCCA)
+    pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
     // special fields
     // @@protoc_insertion_point(special_field:ONGCOFFLIAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl ONGCOFFLIAE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPCKLBHFCCA",
-            |m: &ONGCOFFLIAE| { &m.PPCKLBHFCCA },
-            |m: &mut ONGCOFFLIAE| { &mut m.PPCKLBHFCCA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "add_coin",
+            |m: &ONGCOFFLIAE| { &m.add_coin },
+            |m: &mut ONGCOFFLIAE| { &mut m.add_coin },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGEHHFIGBAI",
-            |m: &ONGCOFFLIAE| { &m.IGEHHFIGBAI },
-            |m: &mut ONGCOFFLIAE| { &mut m.IGEHHFIGBAI },
+            "soldier_dead_cnt",
+            |m: &ONGCOFFLIAE| { &m.soldier_dead_cnt },
+            |m: &mut ONGCOFFLIAE| { &mut m.soldier_dead_cnt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDCLCNPONOH",
-            |m: &ONGCOFFLIAE| { &m.DDCLCNPONOH },
-            |m: &mut ONGCOFFLIAE| { &mut m.DDCLCNPONOH },
+            "GDIMKFNECOK",
+            |m: &ONGCOFFLIAE| { &m.GDIMKFNECOK },
+            |m: &mut ONGCOFFLIAE| { &mut m.GDIMKFNECOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ONGCOFFLIAE| { &m.is_win },
             |m: &mut ONGCOFFLIAE| { &mut m.is_win },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDIMKFNECOK",
-            |m: &ONGCOFFLIAE| { &m.GDIMKFNECOK },
-            |m: &mut ONGCOFFLIAE| { &mut m.GDIMKFNECOK },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPCKLBHFCCA",
+            |m: &ONGCOFFLIAE| { &m.PPCKLBHFCCA },
+            |m: &mut ONGCOFFLIAE| { &mut m.PPCKLBHFCCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ONGCOFFLIAE>(
             "ONGCOFFLIAE",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ONGCOFFLIAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.PPCKLBHFCCA.push(is.read_message()?);
+                24 => {
+                    self.add_coin = is.read_uint32()?;
                 },
-                88 => {
-                    self.IGEHHFIGBAI = is.read_uint32()?;
+                64 => {
+                    self.soldier_dead_cnt = is.read_uint32()?;
                 },
-                80 => {
-                    self.DDCLCNPONOH = is.read_uint32()?;
+                96 => {
+                    self.GDIMKFNECOK = is.read_uint32()?;
                 },
-                56 => {
+                104 => {
                     self.is_win = is.read_bool()?;
                 },
-                24 => {
-                    self.GDIMKFNECOK = is.read_uint32()?;
+                114 => {
+                    self.PPCKLBHFCCA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for ONGCOFFLIAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PPCKLBHFCCA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.IGEHHFIGBAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IGEHHFIGBAI);
+        if self.add_coin != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.add_coin);
         }
-        if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DDCLCNPONOH);
+        if self.soldier_dead_cnt != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.soldier_dead_cnt);
+        }
+        if self.GDIMKFNECOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GDIMKFNECOK);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.GDIMKFNECOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GDIMKFNECOK);
-        }
+        for value in &self.PPCKLBHFCCA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PPCKLBHFCCA {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if self.IGEHHFIGBAI != 0 {
-            os.write_uint32(11, self.IGEHHFIGBAI)?;
+        if self.add_coin != 0 {
+            os.write_uint32(3, self.add_coin)?;
         }
-        if self.DDCLCNPONOH != 0 {
-            os.write_uint32(10, self.DDCLCNPONOH)?;
-        }
-        if self.is_win != false {
-            os.write_bool(7, self.is_win)?;
+        if self.soldier_dead_cnt != 0 {
+            os.write_uint32(8, self.soldier_dead_cnt)?;
         }
         if self.GDIMKFNECOK != 0 {
-            os.write_uint32(3, self.GDIMKFNECOK)?;
+            os.write_uint32(12, self.GDIMKFNECOK)?;
         }
+        if self.is_win != false {
+            os.write_bool(13, self.is_win)?;
+        }
+        for v in &self.PPCKLBHFCCA {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for ONGCOFFLIAE {
     }
 
     fn clear(&mut self) {
-        self.PPCKLBHFCCA.clear();
-        self.IGEHHFIGBAI = 0;
-        self.DDCLCNPONOH = 0;
-        self.is_win = false;
+        self.add_coin = 0;
+        self.soldier_dead_cnt = 0;
         self.GDIMKFNECOK = 0;
+        self.is_win = false;
+        self.PPCKLBHFCCA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONGCOFFLIAE {
         static instance: ONGCOFFLIAE = ONGCOFFLIAE {
-            PPCKLBHFCCA: ::std::vec::Vec::new(),
-            IGEHHFIGBAI: 0,
-            DDCLCNPONOH: 0,
-            is_win: false,
+            add_coin: 0,
+            soldier_dead_cnt: 0,
             GDIMKFNECOK: 0,
+            is_win: false,
+            PPCKLBHFCCA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for ONGCOFFLIAE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONGCOFFLIAE.proto\x1a\x11OGGELMMFPKP.proto\"\xba\x01\n\x0bONGCOFFL\
-    IAE\x12.\n\x0bPPCKLBHFCCA\x18\t\x20\x03(\x0b2\x0c.OGGELMMFPKPR\x0bPPCKLB\
-    HFCCA\x12\x20\n\x0bIGEHHFIGBAI\x18\x0b\x20\x01(\rR\x0bIGEHHFIGBAI\x12\
-    \x20\n\x0bDDCLCNPONOH\x18\n\x20\x01(\rR\x0bDDCLCNPONOH\x12\x15\n\x06is_w\
-    in\x18\x07\x20\x01(\x08R\x05isWin\x12\x20\n\x0bGDIMKFNECOK\x18\x03\x20\
-    \x01(\rR\x0bGDIMKFNECOKb\x06proto3\
+    \n\x11ONGCOFFLIAE.proto\x1a\x11OGGELMMFPKP.proto\"\xbb\x01\n\x0bONGCOFFL\
+    IAE\x12\x19\n\x08add_coin\x18\x03\x20\x01(\rR\x07addCoin\x12(\n\x10soldi\
+    er_dead_cnt\x18\x08\x20\x01(\rR\x0esoldierDeadCnt\x12\x20\n\x0bGDIMKFNEC\
+    OK\x18\x0c\x20\x01(\rR\x0bGDIMKFNECOK\x12\x15\n\x06is_win\x18\r\x20\x01(\
+    \x08R\x05isWin\x12.\n\x0bPPCKLBHFCCA\x18\x0e\x20\x03(\x0b2\x0c.OGGELMMFP\
+    KPR\x0bPPCKLBHFCCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

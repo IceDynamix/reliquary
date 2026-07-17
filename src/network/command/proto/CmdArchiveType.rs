@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdArchiveType {
     // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_NLCDGIPGFDJ)
     MFJDGMGKMDJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_IHKIOOMDMND)
-    MFJDGMGKMDJ_IHKIOOMDMND = 2373,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_PEPICAPCDKF)
-    MFJDGMGKMDJ_PEPICAPCDKF = 2327,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_HNJKGIBFMIP)
-    MFJDGMGKMDJ_HNJKGIBFMIP = 2303,
+    MFJDGMGKMDJ_PEPICAPCDKF = 2358,
     // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_BMEBIAJFADB)
-    MFJDGMGKMDJ_BMEBIAJFADB = 2380,
+    MFJDGMGKMDJ_BMEBIAJFADB = 2393,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_HNJKGIBFMIP)
+    MFJDGMGKMDJ_HNJKGIBFMIP = 2378,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.MFJDGMGKMDJ_IHKIOOMDMND)
+    MFJDGMGKMDJ_IHKIOOMDMND = 2325,
 }
 
 impl ::protobuf::Enum for CmdArchiveType {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CmdArchiveType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdArchiveType> {
         match value {
             0 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_NLCDGIPGFDJ),
-            2373 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND),
-            2327 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF),
-            2303 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP),
-            2380 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB),
+            2358 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF),
+            2393 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB),
+            2378 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP),
+            2325 => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for CmdArchiveType {
     fn from_str(str: &str) -> ::std::option::Option<CmdArchiveType> {
         match str {
             "MFJDGMGKMDJ_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_NLCDGIPGFDJ),
-            "MFJDGMGKMDJ_IHKIOOMDMND" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND),
             "MFJDGMGKMDJ_PEPICAPCDKF" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF),
-            "MFJDGMGKMDJ_HNJKGIBFMIP" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP),
             "MFJDGMGKMDJ_BMEBIAJFADB" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB),
+            "MFJDGMGKMDJ_HNJKGIBFMIP" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP),
+            "MFJDGMGKMDJ_IHKIOOMDMND" => ::std::option::Option::Some(CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdArchiveType] = &[
         CmdArchiveType::MFJDGMGKMDJ_NLCDGIPGFDJ,
-        CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND,
         CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF,
-        CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP,
         CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB,
+        CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP,
+        CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for CmdArchiveType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdArchiveType::MFJDGMGKMDJ_NLCDGIPGFDJ => 0,
-            CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND => 1,
-            CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF => 2,
+            CmdArchiveType::MFJDGMGKMDJ_PEPICAPCDKF => 1,
+            CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB => 2,
             CmdArchiveType::MFJDGMGKMDJ_HNJKGIBFMIP => 3,
-            CmdArchiveType::MFJDGMGKMDJ_BMEBIAJFADB => 4,
+            CmdArchiveType::MFJDGMGKMDJ_IHKIOOMDMND => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,10 +109,10 @@ impl CmdArchiveType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdArchiveType.proto*\xa5\x01\n\x0eCmdArchiveType\x12\x1b\n\x17MFJ\
-    DGMGKMDJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFJDGMGKMDJ_IHKIOOMDMND\x10\xc5\
-    \x12\x12\x1c\n\x17MFJDGMGKMDJ_PEPICAPCDKF\x10\x97\x12\x12\x1c\n\x17MFJDG\
-    MGKMDJ_HNJKGIBFMIP\x10\xff\x11\x12\x1c\n\x17MFJDGMGKMDJ_BMEBIAJFADB\x10\
-    \xcc\x12b\x06proto3\
+    DGMGKMDJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFJDGMGKMDJ_PEPICAPCDKF\x10\xb6\
+    \x12\x12\x1c\n\x17MFJDGMGKMDJ_BMEBIAJFADB\x10\xd9\x12\x12\x1c\n\x17MFJDG\
+    MGKMDJ_HNJKGIBFMIP\x10\xca\x12\x12\x1c\n\x17MFJDGMGKMDJ_IHKIOOMDMND\x10\
+    \x95\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDailyActiveInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.daily_active_level_list)
-    pub daily_active_level_list: ::std::vec::Vec<super::DailyActivityInfo::DailyActivityInfo>,
     // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.daily_active_quest_id_list)
     pub daily_active_quest_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.daily_active_level_list)
+    pub daily_active_level_list: ::std::vec::Vec<super::DailyActivityInfo::DailyActivityInfo>,
     // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.daily_active_point)
     pub daily_active_point: u32,
+    // @@protoc_insertion_point(field:GetDailyActiveInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetDailyActiveInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GetDailyActiveInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "daily_active_level_list",
-            |m: &GetDailyActiveInfoScRsp| { &m.daily_active_level_list },
-            |m: &mut GetDailyActiveInfoScRsp| { &mut m.daily_active_level_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "daily_active_quest_id_list",
             |m: &GetDailyActiveInfoScRsp| { &m.daily_active_quest_id_list },
             |m: &mut GetDailyActiveInfoScRsp| { &mut m.daily_active_quest_id_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetDailyActiveInfoScRsp| { &m.retcode },
-            |m: &mut GetDailyActiveInfoScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "daily_active_level_list",
+            |m: &GetDailyActiveInfoScRsp| { &m.daily_active_level_list },
+            |m: &mut GetDailyActiveInfoScRsp| { &mut m.daily_active_level_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "daily_active_point",
             |m: &GetDailyActiveInfoScRsp| { &m.daily_active_point },
             |m: &mut GetDailyActiveInfoScRsp| { &mut m.daily_active_point },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetDailyActiveInfoScRsp| { &m.retcode },
+            |m: &mut GetDailyActiveInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDailyActiveInfoScRsp>(
             "GetDailyActiveInfoScRsp",
@@ -94,19 +94,19 @@ impl ::protobuf::Message for GetDailyActiveInfoScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    self.daily_active_level_list.push(is.read_message()?);
-                },
-                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.daily_active_quest_id_list)?;
                 },
-                24 => {
+                56 => {
                     self.daily_active_quest_id_list.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
+                66 => {
+                    self.daily_active_level_list.push(is.read_message()?);
+                },
+                88 => {
+                    self.daily_active_point = is.read_uint32()?;
                 },
                 112 => {
-                    self.daily_active_point = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for GetDailyActiveInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.daily_active_quest_id_list);
         for value in &self.daily_active_level_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.daily_active_quest_id_list);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if self.daily_active_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.daily_active_point);
+            my_size += ::protobuf::rt::uint32_size(11, self.daily_active_point);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for GetDailyActiveInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(7, &self.daily_active_quest_id_list)?;
         for v in &self.daily_active_level_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        os.write_repeated_packed_uint32(3, &self.daily_active_quest_id_list)?;
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if self.daily_active_point != 0 {
-            os.write_uint32(14, self.daily_active_point)?;
+            os.write_uint32(11, self.daily_active_point)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for GetDailyActiveInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.daily_active_level_list.clear();
         self.daily_active_quest_id_list.clear();
-        self.retcode = 0;
+        self.daily_active_level_list.clear();
         self.daily_active_point = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDailyActiveInfoScRsp {
         static instance: GetDailyActiveInfoScRsp = GetDailyActiveInfoScRsp {
-            daily_active_level_list: ::std::vec::Vec::new(),
             daily_active_quest_id_list: ::std::vec::Vec::new(),
-            retcode: 0,
+            daily_active_level_list: ::std::vec::Vec::new(),
             daily_active_point: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for GetDailyActiveInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetDailyActiveInfoScRsp.proto\x1a\x17DailyActivityInfo.proto\"\xe8\
-    \x01\n\x17GetDailyActiveInfoScRsp\x12I\n\x17daily_active_level_list\x18\
-    \x07\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelList\x12:\n\
-    \x1adaily_active_quest_id_list\x18\x03\x20\x03(\rR\x16dailyActiveQuestId\
-    List\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12,\n\x12daily\
-    _active_point\x18\x0e\x20\x01(\rR\x10dailyActivePointb\x06proto3\
+    \x01\n\x17GetDailyActiveInfoScRsp\x12:\n\x1adaily_active_quest_id_list\
+    \x18\x07\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_le\
+    vel_list\x18\x08\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLeve\
+    lList\x12,\n\x12daily_active_point\x18\x0b\x20\x01(\rR\x10dailyActivePoi\
+    nt\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

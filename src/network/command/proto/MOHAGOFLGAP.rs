@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOHAGOFLGAP {
     // message fields
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.IJKOMIKFKEK)
-    pub IJKOMIKFKEK: ::std::string::String,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.nickname)
     pub nickname: ::std::string::String,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.icon)
+    pub icon: u32,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.platform)
+    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
+    // @@protoc_insertion_point(field:MOHAGOFLGAP.IJKOMIKFKEK)
+    pub IJKOMIKFKEK: ::std::string::String,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.EBMNJMIKNPP)
     pub EBMNJMIKNPP: ::std::string::String,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.version)
     pub version: u64,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.MJPKBIGCFOM)
-    pub MJPKBIGCFOM: u32,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.OCLBMMNNMFC)
     pub OCLBMMNNMFC: bool,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:MOHAGOFLGAP.platform)
-    pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
     // @@protoc_insertion_point(field:MOHAGOFLGAP.MIDBIPHKLJO)
     pub MIDBIPHKLJO: u32,
     // special fields
@@ -68,14 +68,34 @@ impl MOHAGOFLGAP {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IJKOMIKFKEK",
-            |m: &MOHAGOFLGAP| { &m.IJKOMIKFKEK },
-            |m: &mut MOHAGOFLGAP| { &mut m.IJKOMIKFKEK },
+            "uid",
+            |m: &MOHAGOFLGAP| { &m.uid },
+            |m: &mut MOHAGOFLGAP| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &MOHAGOFLGAP| { &m.level },
+            |m: &mut MOHAGOFLGAP| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "nickname",
             |m: &MOHAGOFLGAP| { &m.nickname },
             |m: &mut MOHAGOFLGAP| { &mut m.nickname },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "icon",
+            |m: &MOHAGOFLGAP| { &m.icon },
+            |m: &mut MOHAGOFLGAP| { &mut m.icon },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "platform",
+            |m: &MOHAGOFLGAP| { &m.platform },
+            |m: &mut MOHAGOFLGAP| { &mut m.platform },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJKOMIKFKEK",
+            |m: &MOHAGOFLGAP| { &m.IJKOMIKFKEK },
+            |m: &mut MOHAGOFLGAP| { &mut m.IJKOMIKFKEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EBMNJMIKNPP",
@@ -88,29 +108,9 @@ impl MOHAGOFLGAP {
             |m: &mut MOHAGOFLGAP| { &mut m.version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJPKBIGCFOM",
-            |m: &MOHAGOFLGAP| { &m.MJPKBIGCFOM },
-            |m: &mut MOHAGOFLGAP| { &mut m.MJPKBIGCFOM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &MOHAGOFLGAP| { &m.uid },
-            |m: &mut MOHAGOFLGAP| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OCLBMMNNMFC",
             |m: &MOHAGOFLGAP| { &m.OCLBMMNNMFC },
             |m: &mut MOHAGOFLGAP| { &mut m.OCLBMMNNMFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &MOHAGOFLGAP| { &m.level },
-            |m: &mut MOHAGOFLGAP| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &MOHAGOFLGAP| { &m.platform },
-            |m: &mut MOHAGOFLGAP| { &mut m.platform },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MIDBIPHKLJO",
@@ -135,11 +135,23 @@ impl ::protobuf::Message for MOHAGOFLGAP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.IJKOMIKFKEK = is.read_string()?;
+                8 => {
+                    self.uid = is.read_uint32()?;
+                },
+                16 => {
+                    self.level = is.read_uint32()?;
                 },
                 26 => {
                     self.nickname = is.read_string()?;
+                },
+                32 => {
+                    self.icon = is.read_uint32()?;
+                },
+                40 => {
+                    self.platform = is.read_enum_or_unknown()?;
+                },
+                50 => {
+                    self.IJKOMIKFKEK = is.read_string()?;
                 },
                 58 => {
                     self.EBMNJMIKNPP = is.read_string()?;
@@ -147,20 +159,8 @@ impl ::protobuf::Message for MOHAGOFLGAP {
                 64 => {
                     self.version = is.read_uint64()?;
                 },
-                32 => {
-                    self.MJPKBIGCFOM = is.read_uint32()?;
-                },
-                8 => {
-                    self.uid = is.read_uint32()?;
-                },
                 72 => {
                     self.OCLBMMNNMFC = is.read_bool()?;
-                },
-                16 => {
-                    self.level = is.read_uint32()?;
-                },
-                40 => {
-                    self.platform = is.read_enum_or_unknown()?;
                 },
                 80 => {
                     self.MIDBIPHKLJO = is.read_uint32()?;
@@ -177,11 +177,23 @@ impl ::protobuf::Message for MOHAGOFLGAP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.IJKOMIKFKEK.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.IJKOMIKFKEK);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if !self.nickname.is_empty() {
             my_size += ::protobuf::rt::string_size(3, &self.nickname);
+        }
+        if self.icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.icon);
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(5, self.platform.value());
+        }
+        if !self.IJKOMIKFKEK.is_empty() {
+            my_size += ::protobuf::rt::string_size(6, &self.IJKOMIKFKEK);
         }
         if !self.EBMNJMIKNPP.is_empty() {
             my_size += ::protobuf::rt::string_size(7, &self.EBMNJMIKNPP);
@@ -189,20 +201,8 @@ impl ::protobuf::Message for MOHAGOFLGAP {
         if self.version != 0 {
             my_size += ::protobuf::rt::uint64_size(8, self.version);
         }
-        if self.MJPKBIGCFOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MJPKBIGCFOM);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
-        }
         if self.OCLBMMNNMFC != false {
             my_size += 1 + 1;
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(5, self.platform.value());
         }
         if self.MIDBIPHKLJO != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.MIDBIPHKLJO);
@@ -213,11 +213,23 @@ impl ::protobuf::Message for MOHAGOFLGAP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.IJKOMIKFKEK.is_empty() {
-            os.write_string(6, &self.IJKOMIKFKEK)?;
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(2, self.level)?;
         }
         if !self.nickname.is_empty() {
             os.write_string(3, &self.nickname)?;
+        }
+        if self.icon != 0 {
+            os.write_uint32(4, self.icon)?;
+        }
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
+        if !self.IJKOMIKFKEK.is_empty() {
+            os.write_string(6, &self.IJKOMIKFKEK)?;
         }
         if !self.EBMNJMIKNPP.is_empty() {
             os.write_string(7, &self.EBMNJMIKNPP)?;
@@ -225,20 +237,8 @@ impl ::protobuf::Message for MOHAGOFLGAP {
         if self.version != 0 {
             os.write_uint64(8, self.version)?;
         }
-        if self.MJPKBIGCFOM != 0 {
-            os.write_uint32(4, self.MJPKBIGCFOM)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
-        }
         if self.OCLBMMNNMFC != false {
             os.write_bool(9, self.OCLBMMNNMFC)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(2, self.level)?;
-        }
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.platform))?;
         }
         if self.MIDBIPHKLJO != 0 {
             os.write_uint32(10, self.MIDBIPHKLJO)?;
@@ -260,30 +260,30 @@ impl ::protobuf::Message for MOHAGOFLGAP {
     }
 
     fn clear(&mut self) {
-        self.IJKOMIKFKEK.clear();
+        self.uid = 0;
+        self.level = 0;
         self.nickname.clear();
+        self.icon = 0;
+        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
+        self.IJKOMIKFKEK.clear();
         self.EBMNJMIKNPP.clear();
         self.version = 0;
-        self.MJPKBIGCFOM = 0;
-        self.uid = 0;
         self.OCLBMMNNMFC = false;
-        self.level = 0;
-        self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
         self.MIDBIPHKLJO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MOHAGOFLGAP {
         static instance: MOHAGOFLGAP = MOHAGOFLGAP {
-            IJKOMIKFKEK: ::std::string::String::new(),
+            uid: 0,
+            level: 0,
             nickname: ::std::string::String::new(),
+            icon: 0,
+            platform: ::protobuf::EnumOrUnknown::from_i32(0),
+            IJKOMIKFKEK: ::std::string::String::new(),
             EBMNJMIKNPP: ::std::string::String::new(),
             version: 0,
-            MJPKBIGCFOM: 0,
-            uid: 0,
             OCLBMMNNMFC: false,
-            level: 0,
-            platform: ::protobuf::EnumOrUnknown::from_i32(0),
             MIDBIPHKLJO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -309,16 +309,15 @@ impl ::protobuf::reflect::ProtobufValue for MOHAGOFLGAP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOHAGOFLGAP.proto\x1a\x12PlatformType.proto\"\xc0\x02\n\x0bMOHAGOF\
-    LGAP\x12\x20\n\x0bIJKOMIKFKEK\x18\x06\x20\x01(\tR\x0bIJKOMIKFKEK\x12\x1a\
-    \n\x08nickname\x18\x03\x20\x01(\tR\x08nickname\x12\x20\n\x0bEBMNJMIKNPP\
-    \x18\x07\x20\x01(\tR\x0bEBMNJMIKNPP\x12\x18\n\x07version\x18\x08\x20\x01\
-    (\x04R\x07version\x12\x20\n\x0bMJPKBIGCFOM\x18\x04\x20\x01(\rR\x0bMJPKBI\
-    GCFOM\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bOCLBMMNNM\
-    FC\x18\t\x20\x01(\x08R\x0bOCLBMMNNMFC\x12\x14\n\x05level\x18\x02\x20\x01\
-    (\rR\x05level\x12)\n\x08platform\x18\x05\x20\x01(\x0e2\r.PlatformTypeR\
-    \x08platform\x12\x20\n\x0bMIDBIPHKLJO\x18\n\x20\x01(\rR\x0bMIDBIPHKLJOb\
-    \x06proto3\
+    \n\x11MOHAGOFLGAP.proto\x1a\x12PlatformType.proto\"\xb2\x02\n\x0bMOHAGOF\
+    LGAP\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x14\n\x05level\x18\
+    \x02\x20\x01(\rR\x05level\x12\x1a\n\x08nickname\x18\x03\x20\x01(\tR\x08n\
+    ickname\x12\x12\n\x04icon\x18\x04\x20\x01(\rR\x04icon\x12)\n\x08platform\
+    \x18\x05\x20\x01(\x0e2\r.PlatformTypeR\x08platform\x12\x20\n\x0bIJKOMIKF\
+    KEK\x18\x06\x20\x01(\tR\x0bIJKOMIKFKEK\x12\x20\n\x0bEBMNJMIKNPP\x18\x07\
+    \x20\x01(\tR\x0bEBMNJMIKNPP\x12\x18\n\x07version\x18\x08\x20\x01(\x04R\
+    \x07version\x12\x20\n\x0bOCLBMMNNMFC\x18\t\x20\x01(\x08R\x0bOCLBMMNNMFC\
+    \x12\x20\n\x0bMIDBIPHKLJO\x18\n\x20\x01(\rR\x0bMIDBIPHKLJOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

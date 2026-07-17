@@ -30,12 +30,12 @@ pub struct MIPDJDJLGPL {
     // message fields
     // @@protoc_insertion_point(field:MIPDJDJLGPL.EMOHLJHPOPC)
     pub EMOHLJHPOPC: u32,
-    // @@protoc_insertion_point(field:MIPDJDJLGPL.section_id)
-    pub section_id: u32,
-    // @@protoc_insertion_point(field:MIPDJDJLGPL.CJCCMAACJDB)
-    pub CJCCMAACJDB: u32,
     // @@protoc_insertion_point(field:MIPDJDJLGPL.DCAHJELNJNP)
     pub DCAHJELNJNP: u32,
+    // @@protoc_insertion_point(field:MIPDJDJLGPL.section_id)
+    pub section_id: u32,
+    // @@protoc_insertion_point(field:MIPDJDJLGPL.node_type)
+    pub node_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MIPDJDJLGPL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl MIPDJDJLGPL {
             |m: &mut MIPDJDJLGPL| { &mut m.EMOHLJHPOPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DCAHJELNJNP",
+            |m: &MIPDJDJLGPL| { &m.DCAHJELNJNP },
+            |m: &mut MIPDJDJLGPL| { &mut m.DCAHJELNJNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "section_id",
             |m: &MIPDJDJLGPL| { &m.section_id },
             |m: &mut MIPDJDJLGPL| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJCCMAACJDB",
-            |m: &MIPDJDJLGPL| { &m.CJCCMAACJDB },
-            |m: &mut MIPDJDJLGPL| { &mut m.CJCCMAACJDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCAHJELNJNP",
-            |m: &MIPDJDJLGPL| { &m.DCAHJELNJNP },
-            |m: &mut MIPDJDJLGPL| { &mut m.DCAHJELNJNP },
+            "node_type",
+            |m: &MIPDJDJLGPL| { &m.node_type },
+            |m: &mut MIPDJDJLGPL| { &mut m.node_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MIPDJDJLGPL>(
             "MIPDJDJLGPL",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for MIPDJDJLGPL {
                 8 => {
                     self.EMOHLJHPOPC = is.read_uint32()?;
                 },
+                16 => {
+                    self.DCAHJELNJNP = is.read_uint32()?;
+                },
                 24 => {
                     self.section_id = is.read_uint32()?;
                 },
                 32 => {
-                    self.CJCCMAACJDB = is.read_uint32()?;
-                },
-                16 => {
-                    self.DCAHJELNJNP = is.read_uint32()?;
+                    self.node_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for MIPDJDJLGPL {
         if self.EMOHLJHPOPC != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.EMOHLJHPOPC);
         }
+        if self.DCAHJELNJNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DCAHJELNJNP);
+        }
         if self.section_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.section_id);
         }
-        if self.CJCCMAACJDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CJCCMAACJDB);
-        }
-        if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DCAHJELNJNP);
+        if self.node_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.node_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for MIPDJDJLGPL {
         if self.EMOHLJHPOPC != 0 {
             os.write_uint32(1, self.EMOHLJHPOPC)?;
         }
+        if self.DCAHJELNJNP != 0 {
+            os.write_uint32(2, self.DCAHJELNJNP)?;
+        }
         if self.section_id != 0 {
             os.write_uint32(3, self.section_id)?;
         }
-        if self.CJCCMAACJDB != 0 {
-            os.write_uint32(4, self.CJCCMAACJDB)?;
-        }
-        if self.DCAHJELNJNP != 0 {
-            os.write_uint32(2, self.DCAHJELNJNP)?;
+        if self.node_type != 0 {
+            os.write_uint32(4, self.node_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for MIPDJDJLGPL {
 
     fn clear(&mut self) {
         self.EMOHLJHPOPC = 0;
-        self.section_id = 0;
-        self.CJCCMAACJDB = 0;
         self.DCAHJELNJNP = 0;
+        self.section_id = 0;
+        self.node_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MIPDJDJLGPL {
         static instance: MIPDJDJLGPL = MIPDJDJLGPL {
             EMOHLJHPOPC: 0,
-            section_id: 0,
-            CJCCMAACJDB: 0,
             DCAHJELNJNP: 0,
+            section_id: 0,
+            node_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for MIPDJDJLGPL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MIPDJDJLGPL.proto\"\x92\x01\n\x0bMIPDJDJLGPL\x12\x20\n\x0bEMOHLJHP\
-    OPC\x18\x01\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x1d\n\nsection_id\x18\x03\x20\
-    \x01(\rR\tsectionId\x12\x20\n\x0bCJCCMAACJDB\x18\x04\x20\x01(\rR\x0bCJCC\
-    MAACJDB\x12\x20\n\x0bDCAHJELNJNP\x18\x02\x20\x01(\rR\x0bDCAHJELNJNPb\x06\
-    proto3\
+    \n\x11MIPDJDJLGPL.proto\"\x8d\x01\n\x0bMIPDJDJLGPL\x12\x20\n\x0bEMOHLJHP\
+    OPC\x18\x01\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x20\n\x0bDCAHJELNJNP\x18\x02\
+    \x20\x01(\rR\x0bDCAHJELNJNP\x12\x1d\n\nsection_id\x18\x03\x20\x01(\rR\ts\
+    ectionId\x12\x1b\n\tnode_type\x18\x04\x20\x01(\rR\x08nodeTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

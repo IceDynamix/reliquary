@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFBHKJLJJBJ {
     // message fields
-    // @@protoc_insertion_point(field:BFBHKJLJJBJ.MFLEPLDCJBC)
-    pub MFLEPLDCJBC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:BFBHKJLJJBJ.NOPDGKNKEEH)
     pub NOPDGKNKEEH: u64,
+    // @@protoc_insertion_point(field:BFBHKJLJJBJ.MFLEPLDCJBC)
+    pub MFLEPLDCJBC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:BFBHKJLJJBJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BFBHKJLJJBJ {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFLEPLDCJBC",
-            |m: &BFBHKJLJJBJ| { &m.MFLEPLDCJBC },
-            |m: &mut BFBHKJLJJBJ| { &mut m.MFLEPLDCJBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOPDGKNKEEH",
             |m: &BFBHKJLJJBJ| { &m.NOPDGKNKEEH },
             |m: &mut BFBHKJLJJBJ| { &mut m.NOPDGKNKEEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFLEPLDCJBC",
+            |m: &BFBHKJLJJBJ| { &m.MFLEPLDCJBC },
+            |m: &mut BFBHKJLJJBJ| { &mut m.MFLEPLDCJBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BFBHKJLJJBJ>(
             "BFBHKJLJJBJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MFLEPLDCJBC = is.read_enum_or_unknown()?;
-                },
                 8 => {
                     self.NOPDGKNKEEH = is.read_uint64()?;
+                },
+                16 => {
+                    self.MFLEPLDCJBC = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.MFLEPLDCJBC.value());
-        }
         if self.NOPDGKNKEEH != 0 {
             my_size += ::protobuf::rt::uint64_size(1, self.NOPDGKNKEEH);
+        }
+        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(2, self.MFLEPLDCJBC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MFLEPLDCJBC))?;
-        }
         if self.NOPDGKNKEEH != 0 {
             os.write_uint64(1, self.NOPDGKNKEEH)?;
+        }
+        if self.MFLEPLDCJBC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.MFLEPLDCJBC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BFBHKJLJJBJ {
     }
 
     fn clear(&mut self) {
-        self.MFLEPLDCJBC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
         self.NOPDGKNKEEH = 0;
+        self.MFLEPLDCJBC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFBHKJLJJBJ {
         static instance: BFBHKJLJJBJ = BFBHKJLJJBJ {
-            MFLEPLDCJBC: ::protobuf::EnumOrUnknown::from_i32(0),
             NOPDGKNKEEH: 0,
+            MFLEPLDCJBC: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BFBHKJLJJBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFBHKJLJJBJ.proto\x1a\x13FightGameMode.proto\"a\n\x0bBFBHKJLJJBJ\
-    \x120\n\x0bMFLEPLDCJBC\x18\x02\x20\x01(\x0e2\x0e.FightGameModeR\x0bMFLEP\
-    LDCJBC\x12\x20\n\x0bNOPDGKNKEEH\x18\x01\x20\x01(\x04R\x0bNOPDGKNKEEHb\
+    \x12\x20\n\x0bNOPDGKNKEEH\x18\x01\x20\x01(\x04R\x0bNOPDGKNKEEH\x120\n\
+    \x0bMFLEPLDCJBC\x18\x02\x20\x01(\x0e2\x0e.FightGameModeR\x0bMFLEPLDCJBCb\
     \x06proto3\
 ";
 

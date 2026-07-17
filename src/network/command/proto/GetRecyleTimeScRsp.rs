@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                50 => {
                     self.NAJFMIIFIEC.push(is.read_message()?);
                 },
-                32 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetRecyleTimeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.NAJFMIIFIEC {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetRecyleTimeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetRecyleTimeScRsp.proto\x1a\x11BKGPJOBNMKJ.proto\"^\n\x12GetRecyl\
-    eTimeScRsp\x12.\n\x0bNAJFMIIFIEC\x18\t\x20\x03(\x0b2\x0c.BKGPJOBNMKJR\
-    \x0bNAJFMIIFIEC\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06\
+    eTimeScRsp\x12.\n\x0bNAJFMIIFIEC\x18\x06\x20\x03(\x0b2\x0c.BKGPJOBNMKJR\
+    \x0bNAJFMIIFIEC\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06\
     proto3\
 ";
 

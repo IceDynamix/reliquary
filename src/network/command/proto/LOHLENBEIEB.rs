@@ -28,16 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LOHLENBEIEB {
     // message fields
-    // @@protoc_insertion_point(field:LOHLENBEIEB.KKKIONIDKFA)
-    pub KKKIONIDKFA: bool,
-    // @@protoc_insertion_point(field:LOHLENBEIEB.AFDNFCBCFBF)
-    pub AFDNFCBCFBF: f32,
     // @@protoc_insertion_point(field:LOHLENBEIEB.MNLINFEODPJ)
     pub MNLINFEODPJ: i32,
-    // @@protoc_insertion_point(field:LOHLENBEIEB.rogue_dialogue_event_id)
-    pub rogue_dialogue_event_id: u32,
-    // @@protoc_insertion_point(field:LOHLENBEIEB.arg_id)
-    pub arg_id: u32,
+    // @@protoc_insertion_point(field:LOHLENBEIEB.ratio)
+    pub ratio: f32,
+    // @@protoc_insertion_point(field:LOHLENBEIEB.is_valid)
+    pub is_valid: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LOHLENBEIEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,32 +51,22 @@ impl LOHLENBEIEB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKKIONIDKFA",
-            |m: &LOHLENBEIEB| { &m.KKKIONIDKFA },
-            |m: &mut LOHLENBEIEB| { &mut m.KKKIONIDKFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFDNFCBCFBF",
-            |m: &LOHLENBEIEB| { &m.AFDNFCBCFBF },
-            |m: &mut LOHLENBEIEB| { &mut m.AFDNFCBCFBF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MNLINFEODPJ",
             |m: &LOHLENBEIEB| { &m.MNLINFEODPJ },
             |m: &mut LOHLENBEIEB| { &mut m.MNLINFEODPJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rogue_dialogue_event_id",
-            |m: &LOHLENBEIEB| { &m.rogue_dialogue_event_id },
-            |m: &mut LOHLENBEIEB| { &mut m.rogue_dialogue_event_id },
+            "ratio",
+            |m: &LOHLENBEIEB| { &m.ratio },
+            |m: &mut LOHLENBEIEB| { &mut m.ratio },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "arg_id",
-            |m: &LOHLENBEIEB| { &m.arg_id },
-            |m: &mut LOHLENBEIEB| { &mut m.arg_id },
+            "is_valid",
+            |m: &LOHLENBEIEB| { &m.is_valid },
+            |m: &mut LOHLENBEIEB| { &mut m.is_valid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LOHLENBEIEB>(
             "LOHLENBEIEB",
@@ -101,19 +87,13 @@ impl ::protobuf::Message for LOHLENBEIEB {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.KKKIONIDKFA = is.read_bool()?;
-                },
-                61 => {
-                    self.AFDNFCBCFBF = is.read_float()?;
-                },
-                48 => {
                     self.MNLINFEODPJ = is.read_int32()?;
                 },
-                64 => {
-                    self.rogue_dialogue_event_id = is.read_uint32()?;
+                61 => {
+                    self.ratio = is.read_float()?;
                 },
-                120 => {
-                    self.arg_id = is.read_uint32()?;
+                112 => {
+                    self.is_valid = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +107,14 @@ impl ::protobuf::Message for LOHLENBEIEB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KKKIONIDKFA != false {
-            my_size += 1 + 1;
+        if self.MNLINFEODPJ != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.MNLINFEODPJ);
         }
-        if self.AFDNFCBCFBF != 0. {
+        if self.ratio != 0. {
             my_size += 1 + 4;
         }
-        if self.MNLINFEODPJ != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.MNLINFEODPJ);
-        }
-        if self.rogue_dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.rogue_dialogue_event_id);
-        }
-        if self.arg_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.arg_id);
+        if self.is_valid != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +122,14 @@ impl ::protobuf::Message for LOHLENBEIEB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KKKIONIDKFA != false {
-            os.write_bool(1, self.KKKIONIDKFA)?;
-        }
-        if self.AFDNFCBCFBF != 0. {
-            os.write_float(7, self.AFDNFCBCFBF)?;
-        }
         if self.MNLINFEODPJ != 0 {
-            os.write_int32(6, self.MNLINFEODPJ)?;
+            os.write_int32(1, self.MNLINFEODPJ)?;
         }
-        if self.rogue_dialogue_event_id != 0 {
-            os.write_uint32(8, self.rogue_dialogue_event_id)?;
+        if self.ratio != 0. {
+            os.write_float(7, self.ratio)?;
         }
-        if self.arg_id != 0 {
-            os.write_uint32(15, self.arg_id)?;
+        if self.is_valid != false {
+            os.write_bool(14, self.is_valid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +148,17 @@ impl ::protobuf::Message for LOHLENBEIEB {
     }
 
     fn clear(&mut self) {
-        self.KKKIONIDKFA = false;
-        self.AFDNFCBCFBF = 0.;
         self.MNLINFEODPJ = 0;
-        self.rogue_dialogue_event_id = 0;
-        self.arg_id = 0;
+        self.ratio = 0.;
+        self.is_valid = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LOHLENBEIEB {
         static instance: LOHLENBEIEB = LOHLENBEIEB {
-            KKKIONIDKFA: false,
-            AFDNFCBCFBF: 0.,
             MNLINFEODPJ: 0,
-            rogue_dialogue_event_id: 0,
-            arg_id: 0,
+            ratio: 0.,
+            is_valid: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LOHLENBEIEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LOHLENBEIEB.proto\"\xc1\x01\n\x0bLOHLENBEIEB\x12\x20\n\x0bKKKIONID\
-    KFA\x18\x01\x20\x01(\x08R\x0bKKKIONIDKFA\x12\x20\n\x0bAFDNFCBCFBF\x18\
-    \x07\x20\x01(\x02R\x0bAFDNFCBCFBF\x12\x20\n\x0bMNLINFEODPJ\x18\x06\x20\
-    \x01(\x05R\x0bMNLINFEODPJ\x125\n\x17rogue_dialogue_event_id\x18\x08\x20\
-    \x01(\rR\x14rogueDialogueEventId\x12\x15\n\x06arg_id\x18\x0f\x20\x01(\rR\
-    \x05argIdb\x06proto3\
+    \n\x11LOHLENBEIEB.proto\"`\n\x0bLOHLENBEIEB\x12\x20\n\x0bMNLINFEODPJ\x18\
+    \x01\x20\x01(\x05R\x0bMNLINFEODPJ\x12\x14\n\x05ratio\x18\x07\x20\x01(\
+    \x02R\x05ratio\x12\x19\n\x08is_valid\x18\x0e\x20\x01(\x08R\x07isValidb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONKHCFLOELJ {
     // message fields
-    // @@protoc_insertion_point(field:ONKHCFLOELJ.HLCPFLOPGBM)
-    pub HLCPFLOPGBM: ::protobuf::MessageField<super::KOFMGCNIMIN::KOFMGCNIMIN>,
-    // @@protoc_insertion_point(field:ONKHCFLOELJ.BJIBCOHEGIJ)
-    pub BJIBCOHEGIJ: u32,
     // @@protoc_insertion_point(field:ONKHCFLOELJ.BKCNAAMGHKJ)
     pub BKCNAAMGHKJ: bool,
     // special fields
@@ -51,18 +47,8 @@ impl ONKHCFLOELJ {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOFMGCNIMIN::KOFMGCNIMIN>(
-            "HLCPFLOPGBM",
-            |m: &ONKHCFLOELJ| { &m.HLCPFLOPGBM },
-            |m: &mut ONKHCFLOELJ| { &mut m.HLCPFLOPGBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJIBCOHEGIJ",
-            |m: &ONKHCFLOELJ| { &m.BJIBCOHEGIJ },
-            |m: &mut ONKHCFLOELJ| { &mut m.BJIBCOHEGIJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BKCNAAMGHKJ",
             |m: &ONKHCFLOELJ| { &m.BKCNAAMGHKJ },
@@ -86,13 +72,7 @@ impl ::protobuf::Message for ONKHCFLOELJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLCPFLOPGBM)?;
-                },
-                104 => {
-                    self.BJIBCOHEGIJ = is.read_uint32()?;
-                },
-                40 => {
+                112 => {
                     self.BKCNAAMGHKJ = is.read_bool()?;
                 },
                 tag => {
@@ -107,13 +87,6 @@ impl ::protobuf::Message for ONKHCFLOELJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HLCPFLOPGBM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BJIBCOHEGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BJIBCOHEGIJ);
-        }
         if self.BKCNAAMGHKJ != false {
             my_size += 1 + 1;
         }
@@ -123,14 +96,8 @@ impl ::protobuf::Message for ONKHCFLOELJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HLCPFLOPGBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.BJIBCOHEGIJ != 0 {
-            os.write_uint32(13, self.BJIBCOHEGIJ)?;
-        }
         if self.BKCNAAMGHKJ != false {
-            os.write_bool(5, self.BKCNAAMGHKJ)?;
+            os.write_bool(14, self.BKCNAAMGHKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +116,12 @@ impl ::protobuf::Message for ONKHCFLOELJ {
     }
 
     fn clear(&mut self) {
-        self.HLCPFLOPGBM.clear();
-        self.BJIBCOHEGIJ = 0;
         self.BKCNAAMGHKJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ONKHCFLOELJ {
         static instance: ONKHCFLOELJ = ONKHCFLOELJ {
-            HLCPFLOPGBM: ::protobuf::MessageField::none(),
-            BJIBCOHEGIJ: 0,
             BKCNAAMGHKJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for ONKHCFLOELJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ONKHCFLOELJ.proto\x1a\x11KOFMGCNIMIN.proto\"\x81\x01\n\x0bONKHCFLO\
-    ELJ\x12.\n\x0bHLCPFLOPGBM\x18\x0c\x20\x01(\x0b2\x0c.KOFMGCNIMINR\x0bHLCP\
-    FLOPGBM\x12\x20\n\x0bBJIBCOHEGIJ\x18\r\x20\x01(\rR\x0bBJIBCOHEGIJ\x12\
-    \x20\n\x0bBKCNAAMGHKJ\x18\x05\x20\x01(\x08R\x0bBKCNAAMGHKJb\x06proto3\
+    \n\x11ONKHCFLOELJ.proto\"/\n\x0bONKHCFLOELJ\x12\x20\n\x0bBKCNAAMGHKJ\x18\
+    \x0e\x20\x01(\x08R\x0bBKCNAAMGHKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,8 +165,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KOFMGCNIMIN::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ONKHCFLOELJ::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

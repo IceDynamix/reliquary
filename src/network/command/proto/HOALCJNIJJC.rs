@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOALCJNIJJC {
     // message fields
-    // @@protoc_insertion_point(field:HOALCJNIJJC.display_value)
-    pub display_value: u32,
+    // @@protoc_insertion_point(field:HOALCJNIJJC.param)
+    pub param: u32,
     // @@protoc_insertion_point(field:HOALCJNIJJC.event_id)
     pub event_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl HOALCJNIJJC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_value",
-            |m: &HOALCJNIJJC| { &m.display_value },
-            |m: &mut HOALCJNIJJC| { &mut m.display_value },
+            "param",
+            |m: &HOALCJNIJJC| { &m.param },
+            |m: &mut HOALCJNIJJC| { &mut m.param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for HOALCJNIJJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.display_value = is.read_uint32()?;
+                88 => {
+                    self.param = is.read_uint32()?;
                 },
                 120 => {
                     self.event_id = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for HOALCJNIJJC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.display_value);
+        if self.param != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.param);
         }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.event_id);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for HOALCJNIJJC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.display_value != 0 {
-            os.write_uint32(8, self.display_value)?;
+        if self.param != 0 {
+            os.write_uint32(11, self.param)?;
         }
         if self.event_id != 0 {
             os.write_uint32(15, self.event_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for HOALCJNIJJC {
     }
 
     fn clear(&mut self) {
-        self.display_value = 0;
+        self.param = 0;
         self.event_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOALCJNIJJC {
         static instance: HOALCJNIJJC = HOALCJNIJJC {
-            display_value: 0,
+            param: 0,
             event_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HOALCJNIJJC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HOALCJNIJJC.proto\"M\n\x0bHOALCJNIJJC\x12#\n\rdisplay_value\x18\
-    \x08\x20\x01(\rR\x0cdisplayValue\x12\x19\n\x08event_id\x18\x0f\x20\x01(\
-    \rR\x07eventIdb\x06proto3\
+    \n\x11HOALCJNIJJC.proto\">\n\x0bHOALCJNIJJC\x12\x14\n\x05param\x18\x0b\
+    \x20\x01(\rR\x05param\x12\x19\n\x08event_id\x18\x0f\x20\x01(\rR\x07event\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

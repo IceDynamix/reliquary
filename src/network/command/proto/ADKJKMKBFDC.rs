@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ADKJKMKBFDC {
     // message fields
-    // @@protoc_insertion_point(field:ADKJKMKBFDC.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
     // @@protoc_insertion_point(field:ADKJKMKBFDC.EEJCPNAEKLJ)
     pub EEJCPNAEKLJ: u32,
     // @@protoc_insertion_point(field:ADKJKMKBFDC.round_count)
     pub round_count: u32,
     // @@protoc_insertion_point(field:ADKJKMKBFDC.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:ADKJKMKBFDC.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
     // special fields
     // @@protoc_insertion_point(special_field:ADKJKMKBFDC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl ADKJKMKBFDC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_list",
-            |m: &ADKJKMKBFDC| { &m.lineup_list },
-            |m: &mut ADKJKMKBFDC| { &mut m.lineup_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EEJCPNAEKLJ",
             |m: &ADKJKMKBFDC| { &m.EEJCPNAEKLJ },
@@ -74,6 +69,11 @@ impl ADKJKMKBFDC {
             "level",
             |m: &ADKJKMKBFDC| { &m.level },
             |m: &mut ADKJKMKBFDC| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_list",
+            |m: &ADKJKMKBFDC| { &m.lineup_list },
+            |m: &mut ADKJKMKBFDC| { &mut m.lineup_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ADKJKMKBFDC>(
             "ADKJKMKBFDC",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ADKJKMKBFDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.lineup_list.push(is.read_message()?);
-                },
-                64 => {
+                8 => {
                     self.EEJCPNAEKLJ = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.round_count = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.level = is.read_uint32()?;
+                },
+                114 => {
+                    self.lineup_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for ADKJKMKBFDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EEJCPNAEKLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EEJCPNAEKLJ);
+        }
+        if self.round_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.round_count);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EEJCPNAEKLJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EEJCPNAEKLJ);
-        }
-        if self.round_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.round_count);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EEJCPNAEKLJ != 0 {
+            os.write_uint32(1, self.EEJCPNAEKLJ)?;
+        }
+        if self.round_count != 0 {
+            os.write_uint32(3, self.round_count)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
+        }
         for v in &self.lineup_list {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        if self.EEJCPNAEKLJ != 0 {
-            os.write_uint32(8, self.EEJCPNAEKLJ)?;
-        }
-        if self.round_count != 0 {
-            os.write_uint32(10, self.round_count)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(15, self.level)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ADKJKMKBFDC {
     }
 
     fn clear(&mut self) {
-        self.lineup_list.clear();
         self.EEJCPNAEKLJ = 0;
         self.round_count = 0;
         self.level = 0;
+        self.lineup_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ADKJKMKBFDC {
         static instance: ADKJKMKBFDC = ADKJKMKBFDC {
-            lineup_list: ::std::vec::Vec::new(),
             EEJCPNAEKLJ: 0,
             round_count: 0,
             level: 0,
+            lineup_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for ADKJKMKBFDC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ADKJKMKBFDC.proto\x1a\x19ChallengeLineupList.proto\"\x9d\x01\n\x0b\
-    ADKJKMKBFDC\x125\n\x0blineup_list\x18\x0e\x20\x03(\x0b2\x14.ChallengeLin\
-    eupListR\nlineupList\x12\x20\n\x0bEEJCPNAEKLJ\x18\x08\x20\x01(\rR\x0bEEJ\
-    CPNAEKLJ\x12\x1f\n\x0bround_count\x18\n\x20\x01(\rR\nroundCount\x12\x14\
-    \n\x05level\x18\x0f\x20\x01(\rR\x05levelb\x06proto3\
+    ADKJKMKBFDC\x12\x20\n\x0bEEJCPNAEKLJ\x18\x01\x20\x01(\rR\x0bEEJCPNAEKLJ\
+    \x12\x1f\n\x0bround_count\x18\x03\x20\x01(\rR\nroundCount\x12\x14\n\x05l\
+    evel\x18\r\x20\x01(\rR\x05level\x125\n\x0blineup_list\x18\x0e\x20\x03(\
+    \x0b2\x14.ChallengeLineupListR\nlineupListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

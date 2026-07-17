@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NIALCDGNNLC {
     // message fields
-    // @@protoc_insertion_point(field:NIALCDGNNLC.KPKEBLOEFCP)
-    pub KPKEBLOEFCP: u32,
     // @@protoc_insertion_point(field:NIALCDGNNLC.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:NIALCDGNNLC.KPKEBLOEFCP)
+    pub KPKEBLOEFCP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NIALCDGNNLC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NIALCDGNNLC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPKEBLOEFCP",
-            |m: &NIALCDGNNLC| { &m.KPKEBLOEFCP },
-            |m: &mut NIALCDGNNLC| { &mut m.KPKEBLOEFCP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &NIALCDGNNLC| { &m.retcode },
             |m: &mut NIALCDGNNLC| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPKEBLOEFCP",
+            |m: &NIALCDGNNLC| { &m.KPKEBLOEFCP },
+            |m: &mut NIALCDGNNLC| { &mut m.KPKEBLOEFCP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIALCDGNNLC>(
             "NIALCDGNNLC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NIALCDGNNLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KPKEBLOEFCP = is.read_uint32()?;
-                },
-                8 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.KPKEBLOEFCP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NIALCDGNNLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KPKEBLOEFCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KPKEBLOEFCP);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.KPKEBLOEFCP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KPKEBLOEFCP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NIALCDGNNLC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KPKEBLOEFCP != 0 {
-            os.write_uint32(15, self.KPKEBLOEFCP)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.KPKEBLOEFCP != 0 {
+            os.write_uint32(10, self.KPKEBLOEFCP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NIALCDGNNLC {
     }
 
     fn clear(&mut self) {
-        self.KPKEBLOEFCP = 0;
         self.retcode = 0;
+        self.KPKEBLOEFCP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIALCDGNNLC {
         static instance: NIALCDGNNLC = NIALCDGNNLC {
-            KPKEBLOEFCP: 0,
             retcode: 0,
+            KPKEBLOEFCP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for NIALCDGNNLC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NIALCDGNNLC.proto\"I\n\x0bNIALCDGNNLC\x12\x20\n\x0bKPKEBLOEFCP\x18\
-    \x0f\x20\x01(\rR\x0bKPKEBLOEFCP\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x11NIALCDGNNLC.proto\"I\n\x0bNIALCDGNNLC\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bKPKEBLOEFCP\x18\n\x20\x01(\rR\x0bKP\
+    KEBLOEFCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMEMKFNABGG {
     // message fields
-    // @@protoc_insertion_point(field:AMEMKFNABGG.ILOLFNPALJH)
-    pub ILOLFNPALJH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:AMEMKFNABGG.ODHIDLBAPIG)
-    pub ODHIDLBAPIG: u32,
     // @@protoc_insertion_point(field:AMEMKFNABGG.GNLMBJCPING)
     pub GNLMBJCPING: bool,
+    // @@protoc_insertion_point(field:AMEMKFNABGG.ILOLFNPALJH)
+    pub ILOLFNPALJH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AMEMKFNABGG.PIKBPDAMGML)
     pub PIKBPDAMGML: u32,
+    // @@protoc_insertion_point(field:AMEMKFNABGG.ODHIDLBAPIG)
+    pub ODHIDLBAPIG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AMEMKFNABGG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl AMEMKFNABGG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNLMBJCPING",
+            |m: &AMEMKFNABGG| { &m.GNLMBJCPING },
+            |m: &mut AMEMKFNABGG| { &mut m.GNLMBJCPING },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ILOLFNPALJH",
             |m: &AMEMKFNABGG| { &m.ILOLFNPALJH },
             |m: &mut AMEMKFNABGG| { &mut m.ILOLFNPALJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODHIDLBAPIG",
-            |m: &AMEMKFNABGG| { &m.ODHIDLBAPIG },
-            |m: &mut AMEMKFNABGG| { &mut m.ODHIDLBAPIG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNLMBJCPING",
-            |m: &AMEMKFNABGG| { &m.GNLMBJCPING },
-            |m: &mut AMEMKFNABGG| { &mut m.GNLMBJCPING },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIKBPDAMGML",
             |m: &AMEMKFNABGG| { &m.PIKBPDAMGML },
             |m: &mut AMEMKFNABGG| { &mut m.PIKBPDAMGML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODHIDLBAPIG",
+            |m: &AMEMKFNABGG| { &m.ODHIDLBAPIG },
+            |m: &mut AMEMKFNABGG| { &mut m.ODHIDLBAPIG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMEMKFNABGG>(
             "AMEMKFNABGG",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for AMEMKFNABGG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.GNLMBJCPING = is.read_bool()?;
+                },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.ILOLFNPALJH)?;
                 },
                 16 => {
                     self.ILOLFNPALJH.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.ODHIDLBAPIG = is.read_uint32()?;
-                },
-                8 => {
-                    self.GNLMBJCPING = is.read_bool()?;
-                },
                 24 => {
                     self.PIKBPDAMGML = is.read_uint32()?;
+                },
+                32 => {
+                    self.ODHIDLBAPIG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for AMEMKFNABGG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ILOLFNPALJH);
-        if self.ODHIDLBAPIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ODHIDLBAPIG);
-        }
         if self.GNLMBJCPING != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ILOLFNPALJH);
         if self.PIKBPDAMGML != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.PIKBPDAMGML);
+        }
+        if self.ODHIDLBAPIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ODHIDLBAPIG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for AMEMKFNABGG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.ILOLFNPALJH)?;
-        if self.ODHIDLBAPIG != 0 {
-            os.write_uint32(4, self.ODHIDLBAPIG)?;
-        }
         if self.GNLMBJCPING != false {
             os.write_bool(1, self.GNLMBJCPING)?;
         }
+        os.write_repeated_packed_uint32(2, &self.ILOLFNPALJH)?;
         if self.PIKBPDAMGML != 0 {
             os.write_uint32(3, self.PIKBPDAMGML)?;
+        }
+        if self.ODHIDLBAPIG != 0 {
+            os.write_uint32(4, self.ODHIDLBAPIG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for AMEMKFNABGG {
     }
 
     fn clear(&mut self) {
-        self.ILOLFNPALJH.clear();
-        self.ODHIDLBAPIG = 0;
         self.GNLMBJCPING = false;
+        self.ILOLFNPALJH.clear();
         self.PIKBPDAMGML = 0;
+        self.ODHIDLBAPIG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMEMKFNABGG {
         static instance: AMEMKFNABGG = AMEMKFNABGG {
-            ILOLFNPALJH: ::std::vec::Vec::new(),
-            ODHIDLBAPIG: 0,
             GNLMBJCPING: false,
+            ILOLFNPALJH: ::std::vec::Vec::new(),
             PIKBPDAMGML: 0,
+            ODHIDLBAPIG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for AMEMKFNABGG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMEMKFNABGG.proto\"\x95\x01\n\x0bAMEMKFNABGG\x12\x20\n\x0bILOLFNPA\
-    LJH\x18\x02\x20\x03(\rR\x0bILOLFNPALJH\x12\x20\n\x0bODHIDLBAPIG\x18\x04\
-    \x20\x01(\rR\x0bODHIDLBAPIG\x12\x20\n\x0bGNLMBJCPING\x18\x01\x20\x01(\
-    \x08R\x0bGNLMBJCPING\x12\x20\n\x0bPIKBPDAMGML\x18\x03\x20\x01(\rR\x0bPIK\
-    BPDAMGMLb\x06proto3\
+    \n\x11AMEMKFNABGG.proto\"\x95\x01\n\x0bAMEMKFNABGG\x12\x20\n\x0bGNLMBJCP\
+    ING\x18\x01\x20\x01(\x08R\x0bGNLMBJCPING\x12\x20\n\x0bILOLFNPALJH\x18\
+    \x02\x20\x03(\rR\x0bILOLFNPALJH\x12\x20\n\x0bPIKBPDAMGML\x18\x03\x20\x01\
+    (\rR\x0bPIKBPDAMGML\x12\x20\n\x0bODHIDLBAPIG\x18\x04\x20\x01(\rR\x0bODHI\
+    DLBAPIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

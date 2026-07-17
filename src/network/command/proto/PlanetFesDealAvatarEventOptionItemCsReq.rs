@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.MLKBOBIEAPL = is.read_bool()?;
                 },
-                48 => {
+                104 => {
                     self.HLLIBEEKFII = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
             my_size += 1 + 1;
         }
         if self.HLLIBEEKFII != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HLLIBEEKFII);
+            my_size += ::protobuf::rt::uint32_size(13, self.HLLIBEEKFII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MLKBOBIEAPL != false {
-            os.write_bool(10, self.MLKBOBIEAPL)?;
+            os.write_bool(6, self.MLKBOBIEAPL)?;
         }
         if self.HLLIBEEKFII != 0 {
-            os.write_uint32(6, self.HLLIBEEKFII)?;
+            os.write_uint32(13, self.HLLIBEEKFII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDealAvatarEventOptionItemCs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-PlanetFesDealAvatarEventOptionItemCsReq.proto\"m\n'PlanetFesDealAvata\
-    rEventOptionItemCsReq\x12\x20\n\x0bMLKBOBIEAPL\x18\n\x20\x01(\x08R\x0bML\
-    KBOBIEAPL\x12\x20\n\x0bHLLIBEEKFII\x18\x06\x20\x01(\rR\x0bHLLIBEEKFIIb\
+    rEventOptionItemCsReq\x12\x20\n\x0bMLKBOBIEAPL\x18\x06\x20\x01(\x08R\x0b\
+    MLKBOBIEAPL\x12\x20\n\x0bHLLIBEEKFII\x18\r\x20\x01(\rR\x0bHLLIBEEKFIIb\
     \x06proto3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KJAMNAOLOLL {
     // message fields
-    // @@protoc_insertion_point(field:KJAMNAOLOLL.LJHGIFGINOL)
-    pub LJHGIFGINOL: u32,
     // @@protoc_insertion_point(field:KJAMNAOLOLL.MBBGFJGCHGE)
     pub MBBGFJGCHGE: u32,
+    // @@protoc_insertion_point(field:KJAMNAOLOLL.LJHGIFGINOL)
+    pub LJHGIFGINOL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KJAMNAOLOLL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KJAMNAOLOLL {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHGIFGINOL",
-            |m: &KJAMNAOLOLL| { &m.LJHGIFGINOL },
-            |m: &mut KJAMNAOLOLL| { &mut m.LJHGIFGINOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBBGFJGCHGE",
             |m: &KJAMNAOLOLL| { &m.MBBGFJGCHGE },
             |m: &mut KJAMNAOLOLL| { &mut m.MBBGFJGCHGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJHGIFGINOL",
+            |m: &KJAMNAOLOLL| { &m.LJHGIFGINOL },
+            |m: &mut KJAMNAOLOLL| { &mut m.LJHGIFGINOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KJAMNAOLOLL>(
             "KJAMNAOLOLL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KJAMNAOLOLL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.LJHGIFGINOL = is.read_uint32()?;
-                },
                 8 => {
                     self.MBBGFJGCHGE = is.read_uint32()?;
+                },
+                96 => {
+                    self.LJHGIFGINOL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KJAMNAOLOLL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJHGIFGINOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LJHGIFGINOL);
-        }
         if self.MBBGFJGCHGE != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.MBBGFJGCHGE);
+        }
+        if self.LJHGIFGINOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LJHGIFGINOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KJAMNAOLOLL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJHGIFGINOL != 0 {
-            os.write_uint32(3, self.LJHGIFGINOL)?;
-        }
         if self.MBBGFJGCHGE != 0 {
             os.write_uint32(1, self.MBBGFJGCHGE)?;
+        }
+        if self.LJHGIFGINOL != 0 {
+            os.write_uint32(12, self.LJHGIFGINOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KJAMNAOLOLL {
     }
 
     fn clear(&mut self) {
-        self.LJHGIFGINOL = 0;
         self.MBBGFJGCHGE = 0;
+        self.LJHGIFGINOL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KJAMNAOLOLL {
         static instance: KJAMNAOLOLL = KJAMNAOLOLL {
-            LJHGIFGINOL: 0,
             MBBGFJGCHGE: 0,
+            LJHGIFGINOL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KJAMNAOLOLL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KJAMNAOLOLL.proto\"Q\n\x0bKJAMNAOLOLL\x12\x20\n\x0bLJHGIFGINOL\x18\
-    \x03\x20\x01(\rR\x0bLJHGIFGINOL\x12\x20\n\x0bMBBGFJGCHGE\x18\x01\x20\x01\
-    (\rR\x0bMBBGFJGCHGEb\x06proto3\
+    \n\x11KJAMNAOLOLL.proto\"Q\n\x0bKJAMNAOLOLL\x12\x20\n\x0bMBBGFJGCHGE\x18\
+    \x01\x20\x01(\rR\x0bMBBGFJGCHGE\x12\x20\n\x0bLJHGIFGINOL\x18\x0c\x20\x01\
+    (\rR\x0bLJHGIFGINOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

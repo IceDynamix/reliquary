@@ -79,10 +79,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                80 => {
                     self.tutorial_id = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.HFIBLHAFONM = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.tutorial_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.tutorial_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.tutorial_id);
         }
         if self.HFIBLHAFONM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.HFIBLHAFONM.value());
+            my_size += ::protobuf::rt::int32_size(11, self.HFIBLHAFONM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FinishTutorialCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.tutorial_id != 0 {
-            os.write_uint32(14, self.tutorial_id)?;
+            os.write_uint32(10, self.tutorial_id)?;
         }
         if self.HFIBLHAFONM != ::protobuf::EnumOrUnknown::new(super::TutorialFinishType::TutorialFinishType::CEBJAAAIPDA_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.HFIBLHAFONM))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.HFIBLHAFONM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FinishTutorialCsReq.proto\x1a\x18TutorialFinishType.proto\"m\n\x13\
-    FinishTutorialCsReq\x12\x1f\n\x0btutorial_id\x18\x0e\x20\x01(\rR\ntutori\
-    alId\x125\n\x0bHFIBLHAFONM\x18\t\x20\x01(\x0e2\x13.TutorialFinishTypeR\
+    FinishTutorialCsReq\x12\x1f\n\x0btutorial_id\x18\n\x20\x01(\rR\ntutorial\
+    Id\x125\n\x0bHFIBLHAFONM\x18\x0b\x20\x01(\x0e2\x13.TutorialFinishTypeR\
     \x0bHFIBLHAFONMb\x06proto3\
 ";
 

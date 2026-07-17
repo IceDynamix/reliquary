@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLIFOLCEMIN {
     // message fields
-    // @@protoc_insertion_point(field:GLIFOLCEMIN.KEJGCDOGEDD)
-    pub KEJGCDOGEDD: u32,
     // @@protoc_insertion_point(field:GLIFOLCEMIN.PIFOEGCGKLC)
     pub PIFOEGCGKLC: u32,
+    // @@protoc_insertion_point(field:GLIFOLCEMIN.KEJGCDOGEDD)
+    pub KEJGCDOGEDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GLIFOLCEMIN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GLIFOLCEMIN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEJGCDOGEDD",
-            |m: &GLIFOLCEMIN| { &m.KEJGCDOGEDD },
-            |m: &mut GLIFOLCEMIN| { &mut m.KEJGCDOGEDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIFOEGCGKLC",
             |m: &GLIFOLCEMIN| { &m.PIFOEGCGKLC },
             |m: &mut GLIFOLCEMIN| { &mut m.PIFOEGCGKLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KEJGCDOGEDD",
+            |m: &GLIFOLCEMIN| { &m.KEJGCDOGEDD },
+            |m: &mut GLIFOLCEMIN| { &mut m.KEJGCDOGEDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GLIFOLCEMIN>(
             "GLIFOLCEMIN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.KEJGCDOGEDD = is.read_uint32()?;
-                },
-                24 => {
+                88 => {
                     self.PIFOEGCGKLC = is.read_uint32()?;
+                },
+                120 => {
+                    self.KEJGCDOGEDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KEJGCDOGEDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KEJGCDOGEDD);
-        }
         if self.PIFOEGCGKLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PIFOEGCGKLC);
+            my_size += ::protobuf::rt::uint32_size(11, self.PIFOEGCGKLC);
+        }
+        if self.KEJGCDOGEDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KEJGCDOGEDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KEJGCDOGEDD != 0 {
-            os.write_uint32(12, self.KEJGCDOGEDD)?;
-        }
         if self.PIFOEGCGKLC != 0 {
-            os.write_uint32(3, self.PIFOEGCGKLC)?;
+            os.write_uint32(11, self.PIFOEGCGKLC)?;
+        }
+        if self.KEJGCDOGEDD != 0 {
+            os.write_uint32(15, self.KEJGCDOGEDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GLIFOLCEMIN {
     }
 
     fn clear(&mut self) {
-        self.KEJGCDOGEDD = 0;
         self.PIFOEGCGKLC = 0;
+        self.KEJGCDOGEDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GLIFOLCEMIN {
         static instance: GLIFOLCEMIN = GLIFOLCEMIN {
-            KEJGCDOGEDD: 0,
             PIFOEGCGKLC: 0,
+            KEJGCDOGEDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GLIFOLCEMIN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLIFOLCEMIN.proto\"Q\n\x0bGLIFOLCEMIN\x12\x20\n\x0bKEJGCDOGEDD\x18\
-    \x0c\x20\x01(\rR\x0bKEJGCDOGEDD\x12\x20\n\x0bPIFOEGCGKLC\x18\x03\x20\x01\
-    (\rR\x0bPIFOEGCGKLCb\x06proto3\
+    \n\x11GLIFOLCEMIN.proto\"Q\n\x0bGLIFOLCEMIN\x12\x20\n\x0bPIFOEGCGKLC\x18\
+    \x0b\x20\x01(\rR\x0bPIFOEGCGKLC\x12\x20\n\x0bKEJGCDOGEDD\x18\x0f\x20\x01\
+    (\rR\x0bKEJGCDOGEDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

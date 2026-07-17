@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
-                120 => {
+                72 => {
                     self.kick_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(15, self.kick_type.value());
+            my_size += ::protobuf::rt::int32_size(9, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.kick_type != ::protobuf::EnumOrUnknown::new(super::KickType::KickType::KICK_SQUEEZED) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerSqueezedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cPlayerSqueezedScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x0eKickTyp\
-    e.proto\"k\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x07\x20\
-    \x01(\x0b2\n.BlackInfoR\tblackInfo\x12&\n\tkick_type\x18\x0f\x20\x01(\
-    \x0e2\t.KickTypeR\x08kickTypeb\x06proto3\
+    e.proto\"k\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x08\x20\
+    \x01(\x0b2\n.BlackInfoR\tblackInfo\x12&\n\tkick_type\x18\t\x20\x01(\x0e2\
+    \t.KickTypeR\x08kickTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OJHHHPLBIEJ {
     // message fields
+    // @@protoc_insertion_point(field:OJHHHPLBIEJ.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::AetherAvatarInfo::AetherAvatarInfo>,
     // @@protoc_insertion_point(field:OJHHHPLBIEJ.monster_wave_list)
     pub monster_wave_list: ::std::vec::Vec<super::BattleMonsterWave::BattleMonsterWave>,
     // @@protoc_insertion_point(field:OJHHHPLBIEJ.buff_list)
     pub buff_list: ::std::vec::Vec<super::BattleBuff::BattleBuff>,
-    // @@protoc_insertion_point(field:OJHHHPLBIEJ.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::AetherAvatarInfo::AetherAvatarInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:OJHHHPLBIEJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl OJHHHPLBIEJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &OJHHHPLBIEJ| { &m.avatar_list },
+            |m: &mut OJHHHPLBIEJ| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_wave_list",
             |m: &OJHHHPLBIEJ| { &m.monster_wave_list },
             |m: &mut OJHHHPLBIEJ| { &mut m.monster_wave_list },
@@ -62,11 +67,6 @@ impl OJHHHPLBIEJ {
             "buff_list",
             |m: &OJHHHPLBIEJ| { &m.buff_list },
             |m: &mut OJHHHPLBIEJ| { &mut m.buff_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &OJHHHPLBIEJ| { &m.avatar_list },
-            |m: &mut OJHHHPLBIEJ| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OJHHHPLBIEJ>(
             "OJHHHPLBIEJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OJHHHPLBIEJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
                 18 => {
                     self.monster_wave_list.push(is.read_message()?);
                 },
                 26 => {
                     self.buff_list.push(is.read_message()?);
-                },
-                10 => {
-                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for OJHHHPLBIEJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.monster_wave_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.buff_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for OJHHHPLBIEJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         for v in &self.monster_wave_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.buff_list {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for OJHHHPLBIEJ {
     }
 
     fn clear(&mut self) {
+        self.avatar_list.clear();
         self.monster_wave_list.clear();
         self.buff_list.clear();
-        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OJHHHPLBIEJ {
         static instance: OJHHHPLBIEJ = OJHHHPLBIEJ {
+            avatar_list: ::std::vec::Vec::new(),
             monster_wave_list: ::std::vec::Vec::new(),
             buff_list: ::std::vec::Vec::new(),
-            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,11 +187,11 @@ impl ::protobuf::reflect::ProtobufValue for OJHHHPLBIEJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJHHHPLBIEJ.proto\x1a\x16AetherAvatarInfo.proto\x1a\x10BattleBuff.\
-    proto\x1a\x17BattleMonsterWave.proto\"\xab\x01\n\x0bOJHHHPLBIEJ\x12>\n\
-    \x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWaveR\x0fmo\
-    nsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleBuffR\
-    \x08buffList\x122\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\x11.AetherAvata\
-    rInfoR\navatarListb\x06proto3\
+    proto\x1a\x17BattleMonsterWave.proto\"\xab\x01\n\x0bOJHHHPLBIEJ\x122\n\
+    \x0bavatar_list\x18\x01\x20\x03(\x0b2\x11.AetherAvatarInfoR\navatarList\
+    \x12>\n\x11monster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWave\
+    R\x0fmonsterWaveList\x12(\n\tbuff_list\x18\x03\x20\x03(\x0b2\x0b.BattleB\
+    uffR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

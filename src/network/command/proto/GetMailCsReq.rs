@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMailCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMailCsReq.NPAFMEBNFOB)
-    pub NPAFMEBNFOB: u32,
+    // @@protoc_insertion_point(field:GetMailCsReq.start)
+    pub start: u32,
     // @@protoc_insertion_point(field:GetMailCsReq.HFKFNFKIEON)
     pub HFKFNFKIEON: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetMailCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPAFMEBNFOB",
-            |m: &GetMailCsReq| { &m.NPAFMEBNFOB },
-            |m: &mut GetMailCsReq| { &mut m.NPAFMEBNFOB },
+            "start",
+            |m: &GetMailCsReq| { &m.start },
+            |m: &mut GetMailCsReq| { &mut m.start },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HFKFNFKIEON",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMailCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.NPAFMEBNFOB = is.read_uint32()?;
+                8 => {
+                    self.start = is.read_uint32()?;
                 },
-                16 => {
+                120 => {
                     self.HFKFNFKIEON = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetMailCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPAFMEBNFOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NPAFMEBNFOB);
+        if self.start != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.start);
         }
         if self.HFKFNFKIEON != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HFKFNFKIEON);
+            my_size += ::protobuf::rt::uint32_size(15, self.HFKFNFKIEON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPAFMEBNFOB != 0 {
-            os.write_uint32(13, self.NPAFMEBNFOB)?;
+        if self.start != 0 {
+            os.write_uint32(1, self.start)?;
         }
         if self.HFKFNFKIEON != 0 {
-            os.write_uint32(2, self.HFKFNFKIEON)?;
+            os.write_uint32(15, self.HFKFNFKIEON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GetMailCsReq {
     }
 
     fn clear(&mut self) {
-        self.NPAFMEBNFOB = 0;
+        self.start = 0;
         self.HFKFNFKIEON = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMailCsReq {
         static instance: GetMailCsReq = GetMailCsReq {
-            NPAFMEBNFOB: 0,
+            start: 0,
             HFKFNFKIEON: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetMailCsReq.proto\"R\n\x0cGetMailCsReq\x12\x20\n\x0bNPAFMEBNFOB\
-    \x18\r\x20\x01(\rR\x0bNPAFMEBNFOB\x12\x20\n\x0bHFKFNFKIEON\x18\x02\x20\
-    \x01(\rR\x0bHFKFNFKIEONb\x06proto3\
+    \n\x12GetMailCsReq.proto\"F\n\x0cGetMailCsReq\x12\x14\n\x05start\x18\x01\
+    \x20\x01(\rR\x05start\x12\x20\n\x0bHFKFNFKIEON\x18\x0f\x20\x01(\rR\x0bHF\
+    KFNFKIEONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for JKLCLLAFHOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGACFLNJLCK)?;
                 },
-                34 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKMLKGOOAMK)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for JKLCLLAFHOC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MGACFLNJLCK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.MKMLKGOOAMK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for JKLCLLAFHOC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKLCLLAFHOC.proto\x1a\x11DFKMNLIJMFB.proto\x1a\x11JECIOGKPHFN.prot\
-    o\"m\n\x0bJKLCLLAFHOC\x12.\n\x0bMGACFLNJLCK\x18\x08\x20\x01(\x0b2\x0c.DF\
-    KMNLIJMFBR\x0bMGACFLNJLCK\x12.\n\x0bMKMLKGOOAMK\x18\x04\x20\x01(\x0b2\
-    \x0c.JECIOGKPHFNR\x0bMKMLKGOOAMKb\x06proto3\
+    o\"m\n\x0bJKLCLLAFHOC\x12.\n\x0bMGACFLNJLCK\x18\x02\x20\x01(\x0b2\x0c.DF\
+    KMNLIJMFBR\x0bMGACFLNJLCK\x12.\n\x0bMKMLKGOOAMK\x18\n\x20\x01(\x0b2\x0c.\
+    JECIOGKPHFNR\x0bMKMLKGOOAMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

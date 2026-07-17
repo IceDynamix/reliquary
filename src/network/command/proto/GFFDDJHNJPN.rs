@@ -79,10 +79,10 @@ impl ::protobuf::Message for GFFDDJHNJPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.level = is.read_uint32()?;
                 },
-                80 => {
+                40 => {
                     self.queue_position = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GFFDDJHNJPN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(1, self.level);
         }
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(5, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GFFDDJHNJPN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(1, self.level)?;
         }
         if self.queue_position != 0 {
-            os.write_uint32(10, self.queue_position)?;
+            os.write_uint32(5, self.queue_position)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GFFDDJHNJPN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFFDDJHNJPN.proto\"J\n\x0bGFFDDJHNJPN\x12\x14\n\x05level\x18\x02\
-    \x20\x01(\rR\x05level\x12%\n\x0equeue_position\x18\n\x20\x01(\rR\rqueueP\
-    ositionb\x06proto3\
+    \n\x11GFFDDJHNJPN.proto\"J\n\x0bGFFDDJHNJPN\x12\x14\n\x05level\x18\x01\
+    \x20\x01(\rR\x05level\x12%\n\x0equeue_position\x18\x05\x20\x01(\rR\rqueu\
+    ePositionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

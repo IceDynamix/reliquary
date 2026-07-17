@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DNDMLICBKEF {
     // message fields
-    // @@protoc_insertion_point(field:DNDMLICBKEF.LLNICHDDIAN)
-    pub LLNICHDDIAN: ::std::vec::Vec<super::PAIJCBOKIFO::PAIJCBOKIFO>,
-    // @@protoc_insertion_point(field:DNDMLICBKEF.map_id)
-    pub map_id: u32,
-    // @@protoc_insertion_point(field:DNDMLICBKEF.area_id)
-    pub area_id: u32,
-    // @@protoc_insertion_point(field:DNDMLICBKEF.HPKMGKPPELC)
-    pub HPKMGKPPELC: u32,
     // @@protoc_insertion_point(field:DNDMLICBKEF.ANHDBMOPGDC)
     pub ANHDBMOPGDC: u32,
+    // @@protoc_insertion_point(field:DNDMLICBKEF.HPKMGKPPELC)
+    pub HPKMGKPPELC: u32,
+    // @@protoc_insertion_point(field:DNDMLICBKEF.LLNICHDDIAN)
+    pub LLNICHDDIAN: ::std::vec::Vec<super::PAIJCBOKIFO::PAIJCBOKIFO>,
+    // @@protoc_insertion_point(field:DNDMLICBKEF.area_id)
+    pub area_id: u32,
+    // @@protoc_insertion_point(field:DNDMLICBKEF.map_id)
+    pub map_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DNDMLICBKEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,20 @@ impl DNDMLICBKEF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANHDBMOPGDC",
+            |m: &DNDMLICBKEF| { &m.ANHDBMOPGDC },
+            |m: &mut DNDMLICBKEF| { &mut m.ANHDBMOPGDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HPKMGKPPELC",
+            |m: &DNDMLICBKEF| { &m.HPKMGKPPELC },
+            |m: &mut DNDMLICBKEF| { &mut m.HPKMGKPPELC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LLNICHDDIAN",
             |m: &DNDMLICBKEF| { &m.LLNICHDDIAN },
             |m: &mut DNDMLICBKEF| { &mut m.LLNICHDDIAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &DNDMLICBKEF| { &m.map_id },
-            |m: &mut DNDMLICBKEF| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -73,14 +78,9 @@ impl DNDMLICBKEF {
             |m: &mut DNDMLICBKEF| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPKMGKPPELC",
-            |m: &DNDMLICBKEF| { &m.HPKMGKPPELC },
-            |m: &mut DNDMLICBKEF| { &mut m.HPKMGKPPELC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANHDBMOPGDC",
-            |m: &DNDMLICBKEF| { &m.ANHDBMOPGDC },
-            |m: &mut DNDMLICBKEF| { &mut m.ANHDBMOPGDC },
+            "map_id",
+            |m: &DNDMLICBKEF| { &m.map_id },
+            |m: &mut DNDMLICBKEF| { &mut m.map_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DNDMLICBKEF>(
             "DNDMLICBKEF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DNDMLICBKEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.LLNICHDDIAN.push(is.read_message()?);
+                56 => {
+                    self.ANHDBMOPGDC = is.read_uint32()?;
                 },
-                80 => {
-                    self.map_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                16 => {
+                88 => {
                     self.HPKMGKPPELC = is.read_uint32()?;
                 },
-                24 => {
-                    self.ANHDBMOPGDC = is.read_uint32()?;
+                98 => {
+                    self.LLNICHDDIAN.push(is.read_message()?);
+                },
+                104 => {
+                    self.area_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.map_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for DNDMLICBKEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ANHDBMOPGDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ANHDBMOPGDC);
+        }
+        if self.HPKMGKPPELC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HPKMGKPPELC);
+        }
         for value in &self.LLNICHDDIAN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.map_id);
-        }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
         }
-        if self.HPKMGKPPELC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HPKMGKPPELC);
-        }
-        if self.ANHDBMOPGDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ANHDBMOPGDC);
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for DNDMLICBKEF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LLNICHDDIAN {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.map_id != 0 {
-            os.write_uint32(10, self.map_id)?;
-        }
-        if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
+        if self.ANHDBMOPGDC != 0 {
+            os.write_uint32(7, self.ANHDBMOPGDC)?;
         }
         if self.HPKMGKPPELC != 0 {
-            os.write_uint32(2, self.HPKMGKPPELC)?;
+            os.write_uint32(11, self.HPKMGKPPELC)?;
         }
-        if self.ANHDBMOPGDC != 0 {
-            os.write_uint32(3, self.ANHDBMOPGDC)?;
+        for v in &self.LLNICHDDIAN {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.area_id != 0 {
+            os.write_uint32(13, self.area_id)?;
+        }
+        if self.map_id != 0 {
+            os.write_uint32(15, self.map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for DNDMLICBKEF {
     }
 
     fn clear(&mut self) {
-        self.LLNICHDDIAN.clear();
-        self.map_id = 0;
-        self.area_id = 0;
-        self.HPKMGKPPELC = 0;
         self.ANHDBMOPGDC = 0;
+        self.HPKMGKPPELC = 0;
+        self.LLNICHDDIAN.clear();
+        self.area_id = 0;
+        self.map_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DNDMLICBKEF {
         static instance: DNDMLICBKEF = DNDMLICBKEF {
-            LLNICHDDIAN: ::std::vec::Vec::new(),
-            map_id: 0,
-            area_id: 0,
-            HPKMGKPPELC: 0,
             ANHDBMOPGDC: 0,
+            HPKMGKPPELC: 0,
+            LLNICHDDIAN: ::std::vec::Vec::new(),
+            area_id: 0,
+            map_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for DNDMLICBKEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DNDMLICBKEF.proto\x1a\x11PAIJCBOKIFO.proto\"\xb1\x01\n\x0bDNDMLICB\
-    KEF\x12.\n\x0bLLNICHDDIAN\x18\x05\x20\x03(\x0b2\x0c.PAIJCBOKIFOR\x0bLLNI\
-    CHDDIAN\x12\x15\n\x06map_id\x18\n\x20\x01(\rR\x05mapId\x12\x17\n\x07area\
-    _id\x18\x06\x20\x01(\rR\x06areaId\x12\x20\n\x0bHPKMGKPPELC\x18\x02\x20\
-    \x01(\rR\x0bHPKMGKPPELC\x12\x20\n\x0bANHDBMOPGDC\x18\x03\x20\x01(\rR\x0b\
-    ANHDBMOPGDCb\x06proto3\
+    KEF\x12\x20\n\x0bANHDBMOPGDC\x18\x07\x20\x01(\rR\x0bANHDBMOPGDC\x12\x20\
+    \n\x0bHPKMGKPPELC\x18\x0b\x20\x01(\rR\x0bHPKMGKPPELC\x12.\n\x0bLLNICHDDI\
+    AN\x18\x0c\x20\x03(\x0b2\x0c.PAIJCBOKIFOR\x0bLLNICHDDIAN\x12\x17\n\x07ar\
+    ea_id\x18\r\x20\x01(\rR\x06areaId\x12\x15\n\x06map_id\x18\x0f\x20\x01(\r\
+    R\x05mapIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

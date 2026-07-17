@@ -30,8 +30,6 @@ pub struct OHHHCKCFPIG {
     // message fields
     // @@protoc_insertion_point(field:OHHHCKCFPIG.DPOKBJGLKNN)
     pub DPOKBJGLKNN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OHHHCKCFPIG.ELANIEEANDI)
-    pub ELANIEEANDI: ::std::vec::Vec<super::JHBOOCGAKCM::JHBOOCGAKCM>,
     // special fields
     // @@protoc_insertion_point(special_field:OHHHCKCFPIG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl OHHHCKCFPIG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DPOKBJGLKNN",
             |m: &OHHHCKCFPIG| { &m.DPOKBJGLKNN },
             |m: &mut OHHHCKCFPIG| { &mut m.DPOKBJGLKNN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ELANIEEANDI",
-            |m: &OHHHCKCFPIG| { &m.ELANIEEANDI },
-            |m: &mut OHHHCKCFPIG| { &mut m.ELANIEEANDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHHHCKCFPIG>(
             "OHHHCKCFPIG",
@@ -79,14 +72,11 @@ impl ::protobuf::Message for OHHHCKCFPIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.DPOKBJGLKNN)?;
                 },
-                120 => {
+                8 => {
                     self.DPOKBJGLKNN.push(is.read_uint32()?);
-                },
-                82 => {
-                    self.ELANIEEANDI.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +90,14 @@ impl ::protobuf::Message for OHHHCKCFPIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DPOKBJGLKNN);
-        for value in &self.ELANIEEANDI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.DPOKBJGLKNN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.DPOKBJGLKNN)?;
-        for v in &self.ELANIEEANDI {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
+        os.write_repeated_packed_uint32(1, &self.DPOKBJGLKNN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,14 +116,12 @@ impl ::protobuf::Message for OHHHCKCFPIG {
 
     fn clear(&mut self) {
         self.DPOKBJGLKNN.clear();
-        self.ELANIEEANDI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHHHCKCFPIG {
         static instance: OHHHCKCFPIG = OHHHCKCFPIG {
             DPOKBJGLKNN: ::std::vec::Vec::new(),
-            ELANIEEANDI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for OHHHCKCFPIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHHHCKCFPIG.proto\x1a\x11JHBOOCGAKCM.proto\"_\n\x0bOHHHCKCFPIG\x12\
-    \x20\n\x0bDPOKBJGLKNN\x18\x0f\x20\x03(\rR\x0bDPOKBJGLKNN\x12.\n\x0bELANI\
-    EEANDI\x18\n\x20\x03(\x0b2\x0c.JHBOOCGAKCMR\x0bELANIEEANDIb\x06proto3\
+    \n\x11OHHHCKCFPIG.proto\"/\n\x0bOHHHCKCFPIG\x12\x20\n\x0bDPOKBJGLKNN\x18\
+    \x01\x20\x03(\rR\x0bDPOKBJGLKNNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -184,8 +164,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JHBOOCGAKCM::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OHHHCKCFPIG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

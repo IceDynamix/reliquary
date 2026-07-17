@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOMMPJIOPGI {
     // message fields
-    // @@protoc_insertion_point(field:HOMMPJIOPGI.CBLOAJFJKKI)
-    pub CBLOAJFJKKI: ::std::vec::Vec<super::DKPHAFPGDLO::DKPHAFPGDLO>,
-    // @@protoc_insertion_point(field:HOMMPJIOPGI.score_id)
-    pub score_id: u32,
     // @@protoc_insertion_point(field:HOMMPJIOPGI.wave)
     pub wave: u32,
+    // @@protoc_insertion_point(field:HOMMPJIOPGI.score_id)
+    pub score_id: u32,
     // @@protoc_insertion_point(field:HOMMPJIOPGI.GMKFBAMNDEA)
     pub GMKFBAMNDEA: u32,
-    // @@protoc_insertion_point(field:HOMMPJIOPGI.PNJEGPAFNCI)
-    pub PNJEGPAFNCI: f32,
+    // @@protoc_insertion_point(field:HOMMPJIOPGI.CBLOAJFJKKI)
+    pub CBLOAJFJKKI: ::std::vec::Vec<super::DKPHAFPGDLO::DKPHAFPGDLO>,
+    // @@protoc_insertion_point(field:HOMMPJIOPGI.delay)
+    pub delay: f32,
     // special fields
     // @@protoc_insertion_point(special_field:HOMMPJIOPGI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl HOMMPJIOPGI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CBLOAJFJKKI",
-            |m: &HOMMPJIOPGI| { &m.CBLOAJFJKKI },
-            |m: &mut HOMMPJIOPGI| { &mut m.CBLOAJFJKKI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "wave",
+            |m: &HOMMPJIOPGI| { &m.wave },
+            |m: &mut HOMMPJIOPGI| { &mut m.wave },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -68,19 +68,19 @@ impl HOMMPJIOPGI {
             |m: &mut HOMMPJIOPGI| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &HOMMPJIOPGI| { &m.wave },
-            |m: &mut HOMMPJIOPGI| { &mut m.wave },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMKFBAMNDEA",
             |m: &HOMMPJIOPGI| { &m.GMKFBAMNDEA },
             |m: &mut HOMMPJIOPGI| { &mut m.GMKFBAMNDEA },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CBLOAJFJKKI",
+            |m: &HOMMPJIOPGI| { &m.CBLOAJFJKKI },
+            |m: &mut HOMMPJIOPGI| { &mut m.CBLOAJFJKKI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJEGPAFNCI",
-            |m: &HOMMPJIOPGI| { &m.PNJEGPAFNCI },
-            |m: &mut HOMMPJIOPGI| { &mut m.PNJEGPAFNCI },
+            "delay",
+            |m: &HOMMPJIOPGI| { &m.delay },
+            |m: &mut HOMMPJIOPGI| { &mut m.delay },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HOMMPJIOPGI>(
             "HOMMPJIOPGI",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for HOMMPJIOPGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.CBLOAJFJKKI.push(is.read_message()?);
+                8 => {
+                    self.wave = is.read_uint32()?;
                 },
                 16 => {
                     self.score_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.wave = is.read_uint32()?;
-                },
                 24 => {
                     self.GMKFBAMNDEA = is.read_uint32()?;
                 },
+                34 => {
+                    self.CBLOAJFJKKI.push(is.read_message()?);
+                },
                 45 => {
-                    self.PNJEGPAFNCI = is.read_float()?;
+                    self.delay = is.read_float()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for HOMMPJIOPGI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CBLOAJFJKKI {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
-        }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.wave);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
         }
         if self.GMKFBAMNDEA != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.GMKFBAMNDEA);
         }
-        if self.PNJEGPAFNCI != 0. {
+        for value in &self.CBLOAJFJKKI {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.delay != 0. {
             my_size += 1 + 4;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -149,20 +149,20 @@ impl ::protobuf::Message for HOMMPJIOPGI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CBLOAJFJKKI {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.score_id != 0 {
-            os.write_uint32(2, self.score_id)?;
-        }
         if self.wave != 0 {
             os.write_uint32(1, self.wave)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(2, self.score_id)?;
         }
         if self.GMKFBAMNDEA != 0 {
             os.write_uint32(3, self.GMKFBAMNDEA)?;
         }
-        if self.PNJEGPAFNCI != 0. {
-            os.write_float(5, self.PNJEGPAFNCI)?;
+        for v in &self.CBLOAJFJKKI {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if self.delay != 0. {
+            os.write_float(5, self.delay)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for HOMMPJIOPGI {
     }
 
     fn clear(&mut self) {
-        self.CBLOAJFJKKI.clear();
-        self.score_id = 0;
         self.wave = 0;
+        self.score_id = 0;
         self.GMKFBAMNDEA = 0;
-        self.PNJEGPAFNCI = 0.;
+        self.CBLOAJFJKKI.clear();
+        self.delay = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOMMPJIOPGI {
         static instance: HOMMPJIOPGI = HOMMPJIOPGI {
-            CBLOAJFJKKI: ::std::vec::Vec::new(),
-            score_id: 0,
             wave: 0,
+            score_id: 0,
             GMKFBAMNDEA: 0,
-            PNJEGPAFNCI: 0.,
+            CBLOAJFJKKI: ::std::vec::Vec::new(),
+            delay: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for HOMMPJIOPGI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HOMMPJIOPGI.proto\x1a\x11DKPHAFPGDLO.proto\"\xb0\x01\n\x0bHOMMPJIO\
-    PGI\x12.\n\x0bCBLOAJFJKKI\x18\x04\x20\x03(\x0b2\x0c.DKPHAFPGDLOR\x0bCBLO\
-    AJFJKKI\x12\x19\n\x08score_id\x18\x02\x20\x01(\rR\x07scoreId\x12\x12\n\
-    \x04wave\x18\x01\x20\x01(\rR\x04wave\x12\x20\n\x0bGMKFBAMNDEA\x18\x03\
-    \x20\x01(\rR\x0bGMKFBAMNDEA\x12\x20\n\x0bPNJEGPAFNCI\x18\x05\x20\x01(\
-    \x02R\x0bPNJEGPAFNCIb\x06proto3\
+    \n\x11HOMMPJIOPGI.proto\x1a\x11DKPHAFPGDLO.proto\"\xa4\x01\n\x0bHOMMPJIO\
+    PGI\x12\x12\n\x04wave\x18\x01\x20\x01(\rR\x04wave\x12\x19\n\x08score_id\
+    \x18\x02\x20\x01(\rR\x07scoreId\x12\x20\n\x0bGMKFBAMNDEA\x18\x03\x20\x01\
+    (\rR\x0bGMKFBAMNDEA\x12.\n\x0bCBLOAJFJKKI\x18\x04\x20\x03(\x0b2\x0c.DKPH\
+    AFPGDLOR\x0bCBLOAJFJKKI\x12\x14\n\x05delay\x18\x05\x20\x01(\x02R\x05dela\
+    yb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

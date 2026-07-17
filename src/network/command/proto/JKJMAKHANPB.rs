@@ -72,7 +72,7 @@ impl ::protobuf::Message for JKJMAKHANPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     self.stop_desc = is.read_string()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for JKJMAKHANPB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.stop_desc.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.stop_desc);
+            my_size += ::protobuf::rt::string_size(2, &self.stop_desc);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for JKJMAKHANPB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.stop_desc.is_empty() {
-            os.write_string(7, &self.stop_desc)?;
+            os.write_string(2, &self.stop_desc)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for JKJMAKHANPB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JKJMAKHANPB.proto\"*\n\x0bJKJMAKHANPB\x12\x1b\n\tstop_desc\x18\x07\
+    \n\x11JKJMAKHANPB.proto\"*\n\x0bJKJMAKHANPB\x12\x1b\n\tstop_desc\x18\x02\
     \x20\x01(\tR\x08stopDescb\x06proto3\
 ";
 

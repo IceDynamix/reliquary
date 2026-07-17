@@ -29,36 +29,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRelicSmartWearType {
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_NLCDGIPGFDJ)
     HLACKPFNIBD_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_FCMMDJEHHFP)
-    HLACKPFNIBD_FCMMDJEHHFP = 8255,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_JKGDFMABJAJ)
-    HLACKPFNIBD_JKGDFMABJAJ = 8253,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_PGDKLOECDJF)
-    HLACKPFNIBD_PGDKLOECDJF = 8265,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_KAJELKNPMLF)
-    HLACKPFNIBD_KAJELKNPMLF = 8262,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_EOKEKMFPINF)
-    HLACKPFNIBD_EOKEKMFPINF = 8258,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_CPJHDNNAIDP)
-    HLACKPFNIBD_CPJHDNNAIDP = 8269,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_LIBFBFHOONI)
+    HLACKPFNIBD_LIBFBFHOONI = 8254,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_EHDHHNNJBML)
+    HLACKPFNIBD_EHDHHNNJBML = 8256,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_MPHCKAJIMDK)
-    HLACKPFNIBD_MPHCKAJIMDK = 8256,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_GDCIJLJGNEB)
-    HLACKPFNIBD_GDCIJLJGNEB = 8266,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_MMBGLIDPBIB)
-    HLACKPFNIBD_MMBGLIDPBIB = 8252,
+    HLACKPFNIBD_MPHCKAJIMDK = 8258,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_FOAGMJKPMPG)
     HLACKPFNIBD_FOAGMJKPMPG = 8268,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_GLNCPBGNDIG)
-    HLACKPFNIBD_GLNCPBGNDIG = 8267,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_EHDHHNNJBML)
-    HLACKPFNIBD_EHDHHNNJBML = 8251,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_CPKIJENBJIC)
-    HLACKPFNIBD_CPKIJENBJIC = 8263,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_LIBFBFHOONI)
-    HLACKPFNIBD_LIBFBFHOONI = 8264,
+    HLACKPFNIBD_CPKIJENBJIC = 8269,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_GLNCPBGNDIG)
+    HLACKPFNIBD_GLNCPBGNDIG = 8251,
     // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_BPJHENLKJPL)
-    HLACKPFNIBD_BPJHENLKJPL = 8270,
+    HLACKPFNIBD_BPJHENLKJPL = 8262,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_JKGDFMABJAJ)
+    HLACKPFNIBD_JKGDFMABJAJ = 8259,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_KAJELKNPMLF)
+    HLACKPFNIBD_KAJELKNPMLF = 8255,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_MMBGLIDPBIB)
+    HLACKPFNIBD_MMBGLIDPBIB = 8252,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_FCMMDJEHHFP)
+    HLACKPFNIBD_FCMMDJEHHFP = 8266,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_EOKEKMFPINF)
+    HLACKPFNIBD_EOKEKMFPINF = 8270,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_PGDKLOECDJF)
+    HLACKPFNIBD_PGDKLOECDJF = 8264,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_CPJHDNNAIDP)
+    HLACKPFNIBD_CPJHDNNAIDP = 8267,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.HLACKPFNIBD_GDCIJLJGNEB)
+    HLACKPFNIBD_GDCIJLJGNEB = 8253,
 }
 
 impl ::protobuf::Enum for CmdRelicSmartWearType {
@@ -71,21 +71,21 @@ impl ::protobuf::Enum for CmdRelicSmartWearType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRelicSmartWearType> {
         match value {
             0 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_NLCDGIPGFDJ),
-            8255 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP),
-            8253 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ),
-            8265 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF),
-            8262 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF),
-            8258 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF),
-            8269 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP),
-            8256 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK),
-            8266 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB),
-            8252 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB),
+            8254 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI),
+            8256 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML),
+            8258 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK),
             8268 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG),
-            8267 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG),
-            8251 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML),
-            8263 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC),
-            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI),
-            8270 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL),
+            8269 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC),
+            8251 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG),
+            8262 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL),
+            8259 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ),
+            8255 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF),
+            8252 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB),
+            8266 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP),
+            8270 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF),
+            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF),
+            8267 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP),
+            8253 => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB),
             _ => ::std::option::Option::None
         }
     }
@@ -93,42 +93,42 @@ impl ::protobuf::Enum for CmdRelicSmartWearType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRelicSmartWearType> {
         match str {
             "HLACKPFNIBD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_NLCDGIPGFDJ),
-            "HLACKPFNIBD_FCMMDJEHHFP" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP),
-            "HLACKPFNIBD_JKGDFMABJAJ" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ),
-            "HLACKPFNIBD_PGDKLOECDJF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF),
-            "HLACKPFNIBD_KAJELKNPMLF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF),
-            "HLACKPFNIBD_EOKEKMFPINF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF),
-            "HLACKPFNIBD_CPJHDNNAIDP" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP),
-            "HLACKPFNIBD_MPHCKAJIMDK" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK),
-            "HLACKPFNIBD_GDCIJLJGNEB" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB),
-            "HLACKPFNIBD_MMBGLIDPBIB" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB),
-            "HLACKPFNIBD_FOAGMJKPMPG" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG),
-            "HLACKPFNIBD_GLNCPBGNDIG" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG),
-            "HLACKPFNIBD_EHDHHNNJBML" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML),
-            "HLACKPFNIBD_CPKIJENBJIC" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC),
             "HLACKPFNIBD_LIBFBFHOONI" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI),
+            "HLACKPFNIBD_EHDHHNNJBML" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML),
+            "HLACKPFNIBD_MPHCKAJIMDK" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK),
+            "HLACKPFNIBD_FOAGMJKPMPG" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG),
+            "HLACKPFNIBD_CPKIJENBJIC" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC),
+            "HLACKPFNIBD_GLNCPBGNDIG" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG),
             "HLACKPFNIBD_BPJHENLKJPL" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL),
+            "HLACKPFNIBD_JKGDFMABJAJ" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ),
+            "HLACKPFNIBD_KAJELKNPMLF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF),
+            "HLACKPFNIBD_MMBGLIDPBIB" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB),
+            "HLACKPFNIBD_FCMMDJEHHFP" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP),
+            "HLACKPFNIBD_EOKEKMFPINF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF),
+            "HLACKPFNIBD_PGDKLOECDJF" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF),
+            "HLACKPFNIBD_CPJHDNNAIDP" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP),
+            "HLACKPFNIBD_GDCIJLJGNEB" => ::std::option::Option::Some(CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRelicSmartWearType] = &[
         CmdRelicSmartWearType::HLACKPFNIBD_NLCDGIPGFDJ,
-        CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP,
-        CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ,
-        CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF,
-        CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF,
-        CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF,
-        CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP,
-        CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK,
-        CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB,
-        CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB,
-        CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG,
-        CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG,
-        CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML,
-        CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC,
         CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI,
+        CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML,
+        CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK,
+        CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG,
+        CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC,
+        CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG,
         CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL,
+        CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ,
+        CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF,
+        CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB,
+        CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP,
+        CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF,
+        CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF,
+        CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP,
+        CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB,
     ];
 }
 
@@ -141,21 +141,21 @@ impl ::protobuf::EnumFull for CmdRelicSmartWearType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRelicSmartWearType::HLACKPFNIBD_NLCDGIPGFDJ => 0,
-            CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP => 1,
-            CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ => 2,
-            CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF => 3,
-            CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF => 4,
-            CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF => 5,
-            CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP => 6,
-            CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK => 7,
-            CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB => 8,
-            CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB => 9,
-            CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG => 10,
-            CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG => 11,
-            CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML => 12,
-            CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC => 13,
-            CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI => 14,
-            CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL => 15,
+            CmdRelicSmartWearType::HLACKPFNIBD_LIBFBFHOONI => 1,
+            CmdRelicSmartWearType::HLACKPFNIBD_EHDHHNNJBML => 2,
+            CmdRelicSmartWearType::HLACKPFNIBD_MPHCKAJIMDK => 3,
+            CmdRelicSmartWearType::HLACKPFNIBD_FOAGMJKPMPG => 4,
+            CmdRelicSmartWearType::HLACKPFNIBD_CPKIJENBJIC => 5,
+            CmdRelicSmartWearType::HLACKPFNIBD_GLNCPBGNDIG => 6,
+            CmdRelicSmartWearType::HLACKPFNIBD_BPJHENLKJPL => 7,
+            CmdRelicSmartWearType::HLACKPFNIBD_JKGDFMABJAJ => 8,
+            CmdRelicSmartWearType::HLACKPFNIBD_KAJELKNPMLF => 9,
+            CmdRelicSmartWearType::HLACKPFNIBD_MMBGLIDPBIB => 10,
+            CmdRelicSmartWearType::HLACKPFNIBD_FCMMDJEHHFP => 11,
+            CmdRelicSmartWearType::HLACKPFNIBD_EOKEKMFPINF => 12,
+            CmdRelicSmartWearType::HLACKPFNIBD_PGDKLOECDJF => 13,
+            CmdRelicSmartWearType::HLACKPFNIBD_CPJHDNNAIDP => 14,
+            CmdRelicSmartWearType::HLACKPFNIBD_GDCIJLJGNEB => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -175,17 +175,17 @@ impl CmdRelicSmartWearType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bCmdRelicSmartWearType.proto*\xf6\x03\n\x15CmdRelicSmartWearType\
-    \x12\x1b\n\x17HLACKPFNIBD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17HLACKPFNIBD_FCM\
-    MDJEHHFP\x10\xbf@\x12\x1c\n\x17HLACKPFNIBD_JKGDFMABJAJ\x10\xbd@\x12\x1c\
-    \n\x17HLACKPFNIBD_PGDKLOECDJF\x10\xc9@\x12\x1c\n\x17HLACKPFNIBD_KAJELKNP\
-    MLF\x10\xc6@\x12\x1c\n\x17HLACKPFNIBD_EOKEKMFPINF\x10\xc2@\x12\x1c\n\x17\
-    HLACKPFNIBD_CPJHDNNAIDP\x10\xcd@\x12\x1c\n\x17HLACKPFNIBD_MPHCKAJIMDK\
-    \x10\xc0@\x12\x1c\n\x17HLACKPFNIBD_GDCIJLJGNEB\x10\xca@\x12\x1c\n\x17HLA\
-    CKPFNIBD_MMBGLIDPBIB\x10\xbc@\x12\x1c\n\x17HLACKPFNIBD_FOAGMJKPMPG\x10\
-    \xcc@\x12\x1c\n\x17HLACKPFNIBD_GLNCPBGNDIG\x10\xcb@\x12\x1c\n\x17HLACKPF\
-    NIBD_EHDHHNNJBML\x10\xbb@\x12\x1c\n\x17HLACKPFNIBD_CPKIJENBJIC\x10\xc7@\
-    \x12\x1c\n\x17HLACKPFNIBD_LIBFBFHOONI\x10\xc8@\x12\x1c\n\x17HLACKPFNIBD_\
-    BPJHENLKJPL\x10\xce@b\x06proto3\
+    \x12\x1b\n\x17HLACKPFNIBD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17HLACKPFNIBD_LIB\
+    FBFHOONI\x10\xbe@\x12\x1c\n\x17HLACKPFNIBD_EHDHHNNJBML\x10\xc0@\x12\x1c\
+    \n\x17HLACKPFNIBD_MPHCKAJIMDK\x10\xc2@\x12\x1c\n\x17HLACKPFNIBD_FOAGMJKP\
+    MPG\x10\xcc@\x12\x1c\n\x17HLACKPFNIBD_CPKIJENBJIC\x10\xcd@\x12\x1c\n\x17\
+    HLACKPFNIBD_GLNCPBGNDIG\x10\xbb@\x12\x1c\n\x17HLACKPFNIBD_BPJHENLKJPL\
+    \x10\xc6@\x12\x1c\n\x17HLACKPFNIBD_JKGDFMABJAJ\x10\xc3@\x12\x1c\n\x17HLA\
+    CKPFNIBD_KAJELKNPMLF\x10\xbf@\x12\x1c\n\x17HLACKPFNIBD_MMBGLIDPBIB\x10\
+    \xbc@\x12\x1c\n\x17HLACKPFNIBD_FCMMDJEHHFP\x10\xca@\x12\x1c\n\x17HLACKPF\
+    NIBD_EOKEKMFPINF\x10\xce@\x12\x1c\n\x17HLACKPFNIBD_PGDKLOECDJF\x10\xc8@\
+    \x12\x1c\n\x17HLACKPFNIBD_CPJHDNNAIDP\x10\xcb@\x12\x1c\n\x17HLACKPFNIBD_\
+    GDCIJLJGNEB\x10\xbd@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

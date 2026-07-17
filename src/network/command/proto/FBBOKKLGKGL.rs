@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FBBOKKLGKGL {
     // message fields
-    // @@protoc_insertion_point(field:FBBOKKLGKGL.DIFIEHPCDGO)
-    pub DIFIEHPCDGO: u32,
-    // @@protoc_insertion_point(field:FBBOKKLGKGL.DOFNEAPHMKH)
-    pub DOFNEAPHMKH: bool,
-    // @@protoc_insertion_point(field:FBBOKKLGKGL.JOFCOODPIDL)
-    pub JOFCOODPIDL: u32,
     // @@protoc_insertion_point(field:FBBOKKLGKGL.LFCDPDDGFCB)
     pub LFCDPDDGFCB: u32,
+    // @@protoc_insertion_point(field:FBBOKKLGKGL.DOFNEAPHMKH)
+    pub DOFNEAPHMKH: bool,
+    // @@protoc_insertion_point(field:FBBOKKLGKGL.DIFIEHPCDGO)
+    pub DIFIEHPCDGO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FBBOKKLGKGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,12 +51,12 @@ impl FBBOKKLGKGL {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIFIEHPCDGO",
-            |m: &FBBOKKLGKGL| { &m.DIFIEHPCDGO },
-            |m: &mut FBBOKKLGKGL| { &mut m.DIFIEHPCDGO },
+            "LFCDPDDGFCB",
+            |m: &FBBOKKLGKGL| { &m.LFCDPDDGFCB },
+            |m: &mut FBBOKKLGKGL| { &mut m.LFCDPDDGFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOFNEAPHMKH",
@@ -66,14 +64,9 @@ impl FBBOKKLGKGL {
             |m: &mut FBBOKKLGKGL| { &mut m.DOFNEAPHMKH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOFCOODPIDL",
-            |m: &FBBOKKLGKGL| { &m.JOFCOODPIDL },
-            |m: &mut FBBOKKLGKGL| { &mut m.JOFCOODPIDL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFCDPDDGFCB",
-            |m: &FBBOKKLGKGL| { &m.LFCDPDDGFCB },
-            |m: &mut FBBOKKLGKGL| { &mut m.LFCDPDDGFCB },
+            "DIFIEHPCDGO",
+            |m: &FBBOKKLGKGL| { &m.DIFIEHPCDGO },
+            |m: &mut FBBOKKLGKGL| { &mut m.DIFIEHPCDGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FBBOKKLGKGL>(
             "FBBOKKLGKGL",
@@ -93,17 +86,14 @@ impl ::protobuf::Message for FBBOKKLGKGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.DIFIEHPCDGO = is.read_uint32()?;
+                8 => {
+                    self.LFCDPDDGFCB = is.read_uint32()?;
                 },
-                104 => {
+                16 => {
                     self.DOFNEAPHMKH = is.read_bool()?;
                 },
-                120 => {
-                    self.JOFCOODPIDL = is.read_uint32()?;
-                },
-                48 => {
-                    self.LFCDPDDGFCB = is.read_uint32()?;
+                72 => {
+                    self.DIFIEHPCDGO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +107,14 @@ impl ::protobuf::Message for FBBOKKLGKGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DIFIEHPCDGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DIFIEHPCDGO);
+        if self.LFCDPDDGFCB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LFCDPDDGFCB);
         }
         if self.DOFNEAPHMKH != false {
             my_size += 1 + 1;
         }
-        if self.JOFCOODPIDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JOFCOODPIDL);
-        }
-        if self.LFCDPDDGFCB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LFCDPDDGFCB);
+        if self.DIFIEHPCDGO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DIFIEHPCDGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +122,14 @@ impl ::protobuf::Message for FBBOKKLGKGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DIFIEHPCDGO != 0 {
-            os.write_uint32(11, self.DIFIEHPCDGO)?;
+        if self.LFCDPDDGFCB != 0 {
+            os.write_uint32(1, self.LFCDPDDGFCB)?;
         }
         if self.DOFNEAPHMKH != false {
-            os.write_bool(13, self.DOFNEAPHMKH)?;
+            os.write_bool(2, self.DOFNEAPHMKH)?;
         }
-        if self.JOFCOODPIDL != 0 {
-            os.write_uint32(15, self.JOFCOODPIDL)?;
-        }
-        if self.LFCDPDDGFCB != 0 {
-            os.write_uint32(6, self.LFCDPDDGFCB)?;
+        if self.DIFIEHPCDGO != 0 {
+            os.write_uint32(9, self.DIFIEHPCDGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +148,17 @@ impl ::protobuf::Message for FBBOKKLGKGL {
     }
 
     fn clear(&mut self) {
-        self.DIFIEHPCDGO = 0;
-        self.DOFNEAPHMKH = false;
-        self.JOFCOODPIDL = 0;
         self.LFCDPDDGFCB = 0;
+        self.DOFNEAPHMKH = false;
+        self.DIFIEHPCDGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FBBOKKLGKGL {
         static instance: FBBOKKLGKGL = FBBOKKLGKGL {
-            DIFIEHPCDGO: 0,
-            DOFNEAPHMKH: false,
-            JOFCOODPIDL: 0,
             LFCDPDDGFCB: 0,
+            DOFNEAPHMKH: false,
+            DIFIEHPCDGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FBBOKKLGKGL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FBBOKKLGKGL.proto\"\x95\x01\n\x0bFBBOKKLGKGL\x12\x20\n\x0bDIFIEHPC\
-    DGO\x18\x0b\x20\x01(\rR\x0bDIFIEHPCDGO\x12\x20\n\x0bDOFNEAPHMKH\x18\r\
-    \x20\x01(\x08R\x0bDOFNEAPHMKH\x12\x20\n\x0bJOFCOODPIDL\x18\x0f\x20\x01(\
-    \rR\x0bJOFCOODPIDL\x12\x20\n\x0bLFCDPDDGFCB\x18\x06\x20\x01(\rR\x0bLFCDP\
-    DDGFCBb\x06proto3\
+    \n\x11FBBOKKLGKGL.proto\"s\n\x0bFBBOKKLGKGL\x12\x20\n\x0bLFCDPDDGFCB\x18\
+    \x01\x20\x01(\rR\x0bLFCDPDDGFCB\x12\x20\n\x0bDOFNEAPHMKH\x18\x02\x20\x01\
+    (\x08R\x0bDOFNEAPHMKH\x12\x20\n\x0bDIFIEHPCDGO\x18\t\x20\x01(\rR\x0bDIFI\
+    EHPCDGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

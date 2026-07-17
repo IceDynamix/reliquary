@@ -45,7 +45,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         ::std::default::Default::default()
     }
 
-    // .MNGNLOCLNOF target_none = 13;
+    // .MNGNLOCLNOF target_none = 15;
 
     pub fn target_none(&self) -> &super::MNGNLOCLNOF::MNGNLOCLNOF {
         match self.target_impl {
@@ -94,7 +94,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .FEIJPEJBDDH target_coin = 5;
+    // .FEIJPEJBDDH target_coin = 12;
 
     pub fn target_coin(&self) -> &super::FEIJPEJBDDH::FEIJPEJBDDH {
         match self.target_impl {
@@ -143,7 +143,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .JMPNGBAILBG target_miracle = 3;
+    // .JMPNGBAILBG target_miracle = 6;
 
     pub fn target_miracle(&self) -> &super::JMPNGBAILBG::JMPNGBAILBG {
         match self.target_impl {
@@ -192,7 +192,7 @@ impl RogueAdventureRoomGameplayWolfGunTarget {
         }
     }
 
-    // .FENFEHCCOCA target_ruanmei = 12;
+    // .FENFEHCCOCA target_ruanmei = 5;
 
     pub fn target_ruanmei(&self) -> &super::FENFEHCCOCA::FENFEHCCOCA {
         match self.target_impl {
@@ -291,16 +291,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                122 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(is.read_message()?));
                 },
-                42 => {
+                98 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(is.read_message()?));
                 },
-                26 => {
+                50 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(is.read_message()?));
                 },
-                98 => {
+                42 => {
                     self.target_impl = ::std::option::Option::Some(rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(is.read_message()?));
                 },
                 tag => {
@@ -344,16 +344,16 @@ impl ::protobuf::Message for RogueAdventureRoomGameplayWolfGunTarget {
         if let ::std::option::Option::Some(ref v) = self.target_impl {
             match v {
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetNone(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetCoin(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetMiracle(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &rogue_adventure_room_gameplay_wolf_gun_target::Target_impl::TargetRuanmei(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -445,10 +445,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n-RogueAdventureRoomGameplayWolfGunTarget.proto\x1a\x11FEIJPEJBDDH.prot\
     o\x1a\x11FENFEHCCOCA.proto\x1a\x11JMPNGBAILBG.proto\x1a\x11MNGNLOCLNOF.p\
     roto\"\x88\x02\n'RogueAdventureRoomGameplayWolfGunTarget\x12/\n\x0btarge\
-    t_none\x18\r\x20\x01(\x0b2\x0c.MNGNLOCLNOFH\0R\ntargetNone\x12/\n\x0btar\
-    get_coin\x18\x05\x20\x01(\x0b2\x0c.FEIJPEJBDDHH\0R\ntargetCoin\x125\n\
-    \x0etarget_miracle\x18\x03\x20\x01(\x0b2\x0c.JMPNGBAILBGH\0R\rtargetMira\
-    cle\x125\n\x0etarget_ruanmei\x18\x0c\x20\x01(\x0b2\x0c.FENFEHCCOCAH\0R\r\
+    t_none\x18\x0f\x20\x01(\x0b2\x0c.MNGNLOCLNOFH\0R\ntargetNone\x12/\n\x0bt\
+    arget_coin\x18\x0c\x20\x01(\x0b2\x0c.FEIJPEJBDDHH\0R\ntargetCoin\x125\n\
+    \x0etarget_miracle\x18\x06\x20\x01(\x0b2\x0c.JMPNGBAILBGH\0R\rtargetMira\
+    cle\x125\n\x0etarget_ruanmei\x18\x05\x20\x01(\x0b2\x0c.FENFEHCCOCAH\0R\r\
     targetRuanmeiB\r\n\x0btarget_implb\x06proto3\
 ";
 

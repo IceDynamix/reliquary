@@ -30,8 +30,6 @@ pub struct AetherDivideSpiritExpUpScRsp {
     // message fields
     // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.IAGNGEGKDOL)
     pub IAGNGEGKDOL: ::protobuf::MessageField<super::GHBICGMEFPL::GHBICGMEFPL>,
-    // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.NCAOMBHCGNA)
-    pub NCAOMBHCGNA: u32,
     // @@protoc_insertion_point(field:AetherDivideSpiritExpUpScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,17 +49,12 @@ impl AetherDivideSpiritExpUpScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GHBICGMEFPL::GHBICGMEFPL>(
             "IAGNGEGKDOL",
             |m: &AetherDivideSpiritExpUpScRsp| { &m.IAGNGEGKDOL },
             |m: &mut AetherDivideSpiritExpUpScRsp| { &mut m.IAGNGEGKDOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCAOMBHCGNA",
-            |m: &AetherDivideSpiritExpUpScRsp| { &m.NCAOMBHCGNA },
-            |m: &mut AetherDivideSpiritExpUpScRsp| { &mut m.NCAOMBHCGNA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +79,10 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAGNGEGKDOL)?;
                 },
-                88 => {
-                    self.NCAOMBHCGNA = is.read_uint32()?;
-                },
-                112 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +101,8 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NCAOMBHCGNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NCAOMBHCGNA);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +111,10 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IAGNGEGKDOL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if self.NCAOMBHCGNA != 0 {
-            os.write_uint32(11, self.NCAOMBHCGNA)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +134,6 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
 
     fn clear(&mut self) {
         self.IAGNGEGKDOL.clear();
-        self.NCAOMBHCGNA = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -158,7 +141,6 @@ impl ::protobuf::Message for AetherDivideSpiritExpUpScRsp {
     fn default_instance() -> &'static AetherDivideSpiritExpUpScRsp {
         static instance: AetherDivideSpiritExpUpScRsp = AetherDivideSpiritExpUpScRsp {
             IAGNGEGKDOL: ::protobuf::MessageField::none(),
-            NCAOMBHCGNA: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritExpUpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"AetherDivideSpiritExpUpScRsp.proto\x1a\x11GHBICGMEFPL.proto\"\x8a\
-    \x01\n\x1cAetherDivideSpiritExpUpScRsp\x12.\n\x0bIAGNGEGKDOL\x18\x02\x20\
-    \x01(\x0b2\x0c.GHBICGMEFPLR\x0bIAGNGEGKDOL\x12\x20\n\x0bNCAOMBHCGNA\x18\
-    \x0b\x20\x01(\rR\x0bNCAOMBHCGNA\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
+    \n\"AetherDivideSpiritExpUpScRsp.proto\x1a\x11GHBICGMEFPL.proto\"h\n\x1c\
+    AetherDivideSpiritExpUpScRsp\x12.\n\x0bIAGNGEGKDOL\x18\n\x20\x01(\x0b2\
+    \x0c.GHBICGMEFPLR\x0bIAGNGEGKDOL\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

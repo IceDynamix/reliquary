@@ -79,13 +79,13 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.LDBMBPBGFHK)?;
                 },
-                40 => {
+                16 => {
                     self.LDBMBPBGFHK.push(is.read_uint32()?);
                 },
-                112 => {
+                120 => {
                     self.is_locked = is.read_bool()?;
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.LDBMBPBGFHK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LDBMBPBGFHK);
         if self.is_locked != false {
             my_size += 1 + 1;
         }
@@ -110,9 +110,9 @@ impl ::protobuf::Message for LockEquipmentCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.LDBMBPBGFHK)?;
+        os.write_repeated_packed_uint32(2, &self.LDBMBPBGFHK)?;
         if self.is_locked != false {
-            os.write_bool(14, self.is_locked)?;
+            os.write_bool(15, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for LockEquipmentCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LockEquipmentCsReq.proto\"S\n\x12LockEquipmentCsReq\x12\x20\n\x0bL\
-    DBMBPBGFHK\x18\x05\x20\x03(\rR\x0bLDBMBPBGFHK\x12\x1b\n\tis_locked\x18\
-    \x0e\x20\x01(\x08R\x08isLockedb\x06proto3\
+    DBMBPBGFHK\x18\x02\x20\x03(\rR\x0bLDBMBPBGFHK\x12\x1b\n\tis_locked\x18\
+    \x0f\x20\x01(\x08R\x08isLockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

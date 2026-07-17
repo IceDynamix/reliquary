@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMJHAHOLEGH {
     // message fields
-    // @@protoc_insertion_point(field:BMJHAHOLEGH.panel_id)
-    pub panel_id: u32,
     // @@protoc_insertion_point(field:BMJHAHOLEGH.NEKCONMFFFE)
     pub NEKCONMFFFE: u32,
-    // @@protoc_insertion_point(field:BMJHAHOLEGH.AADNIFFHHDD)
-    pub AADNIFFHHDD: u32,
     // @@protoc_insertion_point(field:BMJHAHOLEGH.KFBIODICKGC)
     pub KFBIODICKGC: u32,
+    // @@protoc_insertion_point(field:BMJHAHOLEGH.panel_id)
+    pub panel_id: u32,
+    // @@protoc_insertion_point(field:BMJHAHOLEGH.total_count)
+    pub total_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BMJHAHOLEGH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl BMJHAHOLEGH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &BMJHAHOLEGH| { &m.panel_id },
-            |m: &mut BMJHAHOLEGH| { &mut m.panel_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NEKCONMFFFE",
             |m: &BMJHAHOLEGH| { &m.NEKCONMFFFE },
             |m: &mut BMJHAHOLEGH| { &mut m.NEKCONMFFFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AADNIFFHHDD",
-            |m: &BMJHAHOLEGH| { &m.AADNIFFHHDD },
-            |m: &mut BMJHAHOLEGH| { &mut m.AADNIFFHHDD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFBIODICKGC",
             |m: &BMJHAHOLEGH| { &m.KFBIODICKGC },
             |m: &mut BMJHAHOLEGH| { &mut m.KFBIODICKGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &BMJHAHOLEGH| { &m.panel_id },
+            |m: &mut BMJHAHOLEGH| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_count",
+            |m: &BMJHAHOLEGH| { &m.total_count },
+            |m: &mut BMJHAHOLEGH| { &mut m.total_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMJHAHOLEGH>(
             "BMJHAHOLEGH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BMJHAHOLEGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.NEKCONMFFFE = is.read_uint32()?;
                 },
                 32 => {
-                    self.AADNIFFHHDD = is.read_uint32()?;
-                },
-                96 => {
                     self.KFBIODICKGC = is.read_uint32()?;
+                },
+                80 => {
+                    self.panel_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.total_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for BMJHAHOLEGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.panel_id);
-        }
         if self.NEKCONMFFFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NEKCONMFFFE);
-        }
-        if self.AADNIFFHHDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.AADNIFFHHDD);
+            my_size += ::protobuf::rt::uint32_size(1, self.NEKCONMFFFE);
         }
         if self.KFBIODICKGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KFBIODICKGC);
+            my_size += ::protobuf::rt::uint32_size(4, self.KFBIODICKGC);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.panel_id);
+        }
+        if self.total_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.total_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BMJHAHOLEGH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(9, self.panel_id)?;
-        }
         if self.NEKCONMFFFE != 0 {
-            os.write_uint32(11, self.NEKCONMFFFE)?;
-        }
-        if self.AADNIFFHHDD != 0 {
-            os.write_uint32(4, self.AADNIFFHHDD)?;
+            os.write_uint32(1, self.NEKCONMFFFE)?;
         }
         if self.KFBIODICKGC != 0 {
-            os.write_uint32(12, self.KFBIODICKGC)?;
+            os.write_uint32(4, self.KFBIODICKGC)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(10, self.panel_id)?;
+        }
+        if self.total_count != 0 {
+            os.write_uint32(15, self.total_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for BMJHAHOLEGH {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
         self.NEKCONMFFFE = 0;
-        self.AADNIFFHHDD = 0;
         self.KFBIODICKGC = 0;
+        self.panel_id = 0;
+        self.total_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMJHAHOLEGH {
         static instance: BMJHAHOLEGH = BMJHAHOLEGH {
-            panel_id: 0,
             NEKCONMFFFE: 0,
-            AADNIFFHHDD: 0,
             KFBIODICKGC: 0,
+            panel_id: 0,
+            total_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for BMJHAHOLEGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BMJHAHOLEGH.proto\"\x8e\x01\n\x0bBMJHAHOLEGH\x12\x19\n\x08panel_id\
-    \x18\t\x20\x01(\rR\x07panelId\x12\x20\n\x0bNEKCONMFFFE\x18\x0b\x20\x01(\
-    \rR\x0bNEKCONMFFFE\x12\x20\n\x0bAADNIFFHHDD\x18\x04\x20\x01(\rR\x0bAADNI\
-    FFHHDD\x12\x20\n\x0bKFBIODICKGC\x18\x0c\x20\x01(\rR\x0bKFBIODICKGCb\x06p\
-    roto3\
+    \n\x11BMJHAHOLEGH.proto\"\x8d\x01\n\x0bBMJHAHOLEGH\x12\x20\n\x0bNEKCONMF\
+    FFE\x18\x01\x20\x01(\rR\x0bNEKCONMFFFE\x12\x20\n\x0bKFBIODICKGC\x18\x04\
+    \x20\x01(\rR\x0bKFBIODICKGC\x12\x19\n\x08panel_id\x18\n\x20\x01(\rR\x07p\
+    anelId\x12\x1f\n\x0btotal_count\x18\x0f\x20\x01(\rR\ntotalCountb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

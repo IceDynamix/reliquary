@@ -30,10 +30,10 @@ pub struct SetRogueCollectionCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetRogueCollectionCsReq.NPICFPDAPAF)
     pub NPICFPDAPAF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SetRogueCollectionCsReq.NEKJDKDAMKF)
-    pub NEKJDKDAMKF: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::MIGPNAOGHEP::MIGPNAOGHEP>>,
     // @@protoc_insertion_point(field:SetRogueCollectionCsReq.MFMPDDCGGMN)
     pub MFMPDDCGGMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetRogueCollectionCsReq.NEKJDKDAMKF)
+    pub NEKJDKDAMKF: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::MIGPNAOGHEP::MIGPNAOGHEP>>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueCollectionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SetRogueCollectionCsReq {
             |m: &mut SetRogueCollectionCsReq| { &mut m.NPICFPDAPAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NEKJDKDAMKF",
-            |m: &SetRogueCollectionCsReq| { &m.NEKJDKDAMKF },
-            |m: &mut SetRogueCollectionCsReq| { &mut m.NEKJDKDAMKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MFMPDDCGGMN",
             |m: &SetRogueCollectionCsReq| { &m.MFMPDDCGGMN },
             |m: &mut SetRogueCollectionCsReq| { &mut m.MFMPDDCGGMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NEKJDKDAMKF",
+            |m: &SetRogueCollectionCsReq| { &m.NEKJDKDAMKF },
+            |m: &mut SetRogueCollectionCsReq| { &mut m.NEKJDKDAMKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueCollectionCsReq>(
             "SetRogueCollectionCsReq",
@@ -86,23 +86,23 @@ impl ::protobuf::Message for SetRogueCollectionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.NPICFPDAPAF)?;
                 },
-                112 => {
+                8 => {
                     self.NPICFPDAPAF.push(is.read_uint32()?);
                 },
-                24 => {
-                    self.NEKJDKDAMKF.push(is.read_enum_or_unknown()?);
-                },
-                26 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.NEKJDKDAMKF)?
-                },
-                42 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.MFMPDDCGGMN)?;
                 },
-                40 => {
+                32 => {
                     self.MFMPDDCGGMN.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.NEKJDKDAMKF.push(is.read_enum_or_unknown()?);
+                },
+                66 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.NEKJDKDAMKF)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,18 +116,18 @@ impl ::protobuf::Message for SetRogueCollectionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NPICFPDAPAF);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(3, &self.NEKJDKDAMKF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.MFMPDDCGGMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NPICFPDAPAF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.MFMPDDCGGMN);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.NEKJDKDAMKF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.NPICFPDAPAF)?;
-        os.write_repeated_packed_enum_or_unknown(3, &self.NEKJDKDAMKF)?;
-        os.write_repeated_packed_uint32(5, &self.MFMPDDCGGMN)?;
+        os.write_repeated_packed_uint32(1, &self.NPICFPDAPAF)?;
+        os.write_repeated_packed_uint32(4, &self.MFMPDDCGGMN)?;
+        os.write_repeated_packed_enum_or_unknown(8, &self.NEKJDKDAMKF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,16 +146,16 @@ impl ::protobuf::Message for SetRogueCollectionCsReq {
 
     fn clear(&mut self) {
         self.NPICFPDAPAF.clear();
-        self.NEKJDKDAMKF.clear();
         self.MFMPDDCGGMN.clear();
+        self.NEKJDKDAMKF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueCollectionCsReq {
         static instance: SetRogueCollectionCsReq = SetRogueCollectionCsReq {
             NPICFPDAPAF: ::std::vec::Vec::new(),
-            NEKJDKDAMKF: ::std::vec::Vec::new(),
             MFMPDDCGGMN: ::std::vec::Vec::new(),
+            NEKJDKDAMKF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -181,10 +181,10 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueCollectionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueCollectionCsReq.proto\x1a\x11MIGPNAOGHEP.proto\"\x8d\x01\n\
-    \x17SetRogueCollectionCsReq\x12\x20\n\x0bNPICFPDAPAF\x18\x0e\x20\x03(\rR\
-    \x0bNPICFPDAPAF\x12.\n\x0bNEKJDKDAMKF\x18\x03\x20\x03(\x0e2\x0c.MIGPNAOG\
-    HEPR\x0bNEKJDKDAMKF\x12\x20\n\x0bMFMPDDCGGMN\x18\x05\x20\x03(\rR\x0bMFMP\
-    DDCGGMNb\x06proto3\
+    \x17SetRogueCollectionCsReq\x12\x20\n\x0bNPICFPDAPAF\x18\x01\x20\x03(\rR\
+    \x0bNPICFPDAPAF\x12\x20\n\x0bMFMPDDCGGMN\x18\x04\x20\x03(\rR\x0bMFMPDDCG\
+    GMN\x12.\n\x0bNEKJDKDAMKF\x18\x08\x20\x03(\x0e2\x0c.MIGPNAOGHEPR\x0bNEKJ\
+    DKDAMKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

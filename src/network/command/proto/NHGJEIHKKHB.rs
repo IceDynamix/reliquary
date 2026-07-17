@@ -30,12 +30,12 @@ pub struct NHGJEIHKKHB {
     // message fields
     // @@protoc_insertion_point(field:NHGJEIHKKHB.buff_list)
     pub buff_list: ::std::vec::Vec<super::BPHIKPCNBHM::BPHIKPCNBHM>,
-    // @@protoc_insertion_point(field:NHGJEIHKKHB.PMIFFBHOOOO)
-    pub PMIFFBHOOOO: ::std::vec::Vec<super::NMHMGHEHHCM::NMHMGHEHHCM>,
-    // @@protoc_insertion_point(field:NHGJEIHKKHB.MAJGMMCOCIG)
-    pub MAJGMMCOCIG: ::std::vec::Vec<super::CIGDBCKOFBN::CIGDBCKOFBN>,
     // @@protoc_insertion_point(field:NHGJEIHKKHB.JHEHAIBMNNF)
     pub JHEHAIBMNNF: ::std::vec::Vec<super::NMDKHGGGMBC::NMDKHGGGMBC>,
+    // @@protoc_insertion_point(field:NHGJEIHKKHB.MAJGMMCOCIG)
+    pub MAJGMMCOCIG: ::std::vec::Vec<super::CIGDBCKOFBN::CIGDBCKOFBN>,
+    // @@protoc_insertion_point(field:NHGJEIHKKHB.PMIFFBHOOOO)
+    pub PMIFFBHOOOO: ::std::vec::Vec<super::NMHMGHEHHCM::NMHMGHEHHCM>,
     // special fields
     // @@protoc_insertion_point(special_field:NHGJEIHKKHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl NHGJEIHKKHB {
             |m: &mut NHGJEIHKKHB| { &mut m.buff_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PMIFFBHOOOO",
-            |m: &NHGJEIHKKHB| { &m.PMIFFBHOOOO },
-            |m: &mut NHGJEIHKKHB| { &mut m.PMIFFBHOOOO },
+            "JHEHAIBMNNF",
+            |m: &NHGJEIHKKHB| { &m.JHEHAIBMNNF },
+            |m: &mut NHGJEIHKKHB| { &mut m.JHEHAIBMNNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MAJGMMCOCIG",
@@ -71,9 +71,9 @@ impl NHGJEIHKKHB {
             |m: &mut NHGJEIHKKHB| { &mut m.MAJGMMCOCIG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JHEHAIBMNNF",
-            |m: &NHGJEIHKKHB| { &m.JHEHAIBMNNF },
-            |m: &mut NHGJEIHKKHB| { &mut m.JHEHAIBMNNF },
+            "PMIFFBHOOOO",
+            |m: &NHGJEIHKKHB| { &m.PMIFFBHOOOO },
+            |m: &mut NHGJEIHKKHB| { &mut m.PMIFFBHOOOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NHGJEIHKKHB>(
             "NHGJEIHKKHB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NHGJEIHKKHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                74 => {
                     self.buff_list.push(is.read_message()?);
-                },
-                106 => {
-                    self.PMIFFBHOOOO.push(is.read_message()?);
-                },
-                26 => {
-                    self.MAJGMMCOCIG.push(is.read_message()?);
                 },
                 82 => {
                     self.JHEHAIBMNNF.push(is.read_message()?);
+                },
+                114 => {
+                    self.MAJGMMCOCIG.push(is.read_message()?);
+                },
+                122 => {
+                    self.PMIFFBHOOOO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,7 +121,7 @@ impl ::protobuf::Message for NHGJEIHKKHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PMIFFBHOOOO {
+        for value in &self.JHEHAIBMNNF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -129,7 +129,7 @@ impl ::protobuf::Message for NHGJEIHKKHB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.JHEHAIBMNNF {
+        for value in &self.PMIFFBHOOOO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -140,16 +140,16 @@ impl ::protobuf::Message for NHGJEIHKKHB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        for v in &self.PMIFFBHOOOO {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        for v in &self.MAJGMMCOCIG {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for v in &self.JHEHAIBMNNF {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.MAJGMMCOCIG {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        for v in &self.PMIFFBHOOOO {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +169,18 @@ impl ::protobuf::Message for NHGJEIHKKHB {
 
     fn clear(&mut self) {
         self.buff_list.clear();
-        self.PMIFFBHOOOO.clear();
-        self.MAJGMMCOCIG.clear();
         self.JHEHAIBMNNF.clear();
+        self.MAJGMMCOCIG.clear();
+        self.PMIFFBHOOOO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NHGJEIHKKHB {
         static instance: NHGJEIHKKHB = NHGJEIHKKHB {
             buff_list: ::std::vec::Vec::new(),
-            PMIFFBHOOOO: ::std::vec::Vec::new(),
-            MAJGMMCOCIG: ::std::vec::Vec::new(),
             JHEHAIBMNNF: ::std::vec::Vec::new(),
+            MAJGMMCOCIG: ::std::vec::Vec::new(),
+            PMIFFBHOOOO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -207,11 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for NHGJEIHKKHB {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NHGJEIHKKHB.proto\x1a\x11BPHIKPCNBHM.proto\x1a\x11CIGDBCKOFBN.prot\
     o\x1a\x11NMDKHGGGMBC.proto\x1a\x11NMHMGHEHHCM.proto\"\xc8\x01\n\x0bNHGJE\
-    IHKKHB\x12)\n\tbuff_list\x18\x01\x20\x03(\x0b2\x0c.BPHIKPCNBHMR\x08buffL\
-    ist\x12.\n\x0bPMIFFBHOOOO\x18\r\x20\x03(\x0b2\x0c.NMHMGHEHHCMR\x0bPMIFFB\
-    HOOOO\x12.\n\x0bMAJGMMCOCIG\x18\x03\x20\x03(\x0b2\x0c.CIGDBCKOFBNR\x0bMA\
-    JGMMCOCIG\x12.\n\x0bJHEHAIBMNNF\x18\n\x20\x03(\x0b2\x0c.NMDKHGGGMBCR\x0b\
-    JHEHAIBMNNFb\x06proto3\
+    IHKKHB\x12)\n\tbuff_list\x18\t\x20\x03(\x0b2\x0c.BPHIKPCNBHMR\x08buffLis\
+    t\x12.\n\x0bJHEHAIBMNNF\x18\n\x20\x03(\x0b2\x0c.NMDKHGGGMBCR\x0bJHEHAIBM\
+    NNF\x12.\n\x0bMAJGMMCOCIG\x18\x0e\x20\x03(\x0b2\x0c.CIGDBCKOFBNR\x0bMAJG\
+    MMCOCIG\x12.\n\x0bPMIFFBHOOOO\x18\x0f\x20\x03(\x0b2\x0c.NMHMGHEHHCMR\x0b\
+    PMIFFBHOOOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

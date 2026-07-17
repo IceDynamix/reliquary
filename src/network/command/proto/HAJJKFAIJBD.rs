@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HAJJKFAIJBD {
     // message fields
-    // @@protoc_insertion_point(field:HAJJKFAIJBD.NLFCABFPJHD)
-    pub NLFCABFPJHD: ::protobuf::MessageField<super::NKGAIPKINJE::NKGAIPKINJE>,
     // @@protoc_insertion_point(field:HAJJKFAIJBD.BHPCOAPAGMA)
     pub BHPCOAPAGMA: bool,
+    // @@protoc_insertion_point(field:HAJJKFAIJBD.item)
+    pub item: ::protobuf::MessageField<super::NKGAIPKINJE::NKGAIPKINJE>,
     // message oneof groups
     pub PIEPADODEDD: ::std::option::Option<hajjkfaijbd::PIEPADODEDD>,
     // special fields
@@ -75,7 +75,7 @@ impl HAJJKFAIJBD {
         self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::ELGOLPLGFKJ(v))
     }
 
-    // bool DAJHCEKHNBH = 10;
+    // bool DAJHCEKHNBH = 15;
 
     pub fn DAJHCEKHNBH(&self) -> bool {
         match self.PIEPADODEDD {
@@ -103,15 +103,15 @@ impl HAJJKFAIJBD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKGAIPKINJE::NKGAIPKINJE>(
-            "NLFCABFPJHD",
-            |m: &HAJJKFAIJBD| { &m.NLFCABFPJHD },
-            |m: &mut HAJJKFAIJBD| { &mut m.NLFCABFPJHD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BHPCOAPAGMA",
             |m: &HAJJKFAIJBD| { &m.BHPCOAPAGMA },
             |m: &mut HAJJKFAIJBD| { &mut m.BHPCOAPAGMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKGAIPKINJE::NKGAIPKINJE>(
+            "item",
+            |m: &HAJJKFAIJBD| { &m.item },
+            |m: &mut HAJJKFAIJBD| { &mut m.item },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "ELGOLPLGFKJ",
@@ -144,16 +144,16 @@ impl ::protobuf::Message for HAJJKFAIJBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLFCABFPJHD)?;
-                },
-                8 => {
+                48 => {
                     self.BHPCOAPAGMA = is.read_bool()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item)?;
                 },
                 64 => {
                     self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::ELGOLPLGFKJ(is.read_uint32()?));
                 },
-                80 => {
+                120 => {
                     self.PIEPADODEDD = ::std::option::Option::Some(hajjkfaijbd::PIEPADODEDD::DAJHCEKHNBH(is.read_bool()?));
                 },
                 tag => {
@@ -168,12 +168,12 @@ impl ::protobuf::Message for HAJJKFAIJBD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NLFCABFPJHD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.BHPCOAPAGMA != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.item.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let ::std::option::Option::Some(ref v) = self.PIEPADODEDD {
             match v {
@@ -191,11 +191,11 @@ impl ::protobuf::Message for HAJJKFAIJBD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NLFCABFPJHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.BHPCOAPAGMA != false {
-            os.write_bool(1, self.BHPCOAPAGMA)?;
+            os.write_bool(6, self.BHPCOAPAGMA)?;
+        }
+        if let Some(v) = self.item.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.PIEPADODEDD {
             match v {
@@ -203,7 +203,7 @@ impl ::protobuf::Message for HAJJKFAIJBD {
                     os.write_uint32(8, v)?;
                 },
                 &hajjkfaijbd::PIEPADODEDD::DAJHCEKHNBH(v) => {
-                    os.write_bool(10, v)?;
+                    os.write_bool(15, v)?;
                 },
             };
         }
@@ -224,8 +224,8 @@ impl ::protobuf::Message for HAJJKFAIJBD {
     }
 
     fn clear(&mut self) {
-        self.NLFCABFPJHD.clear();
         self.BHPCOAPAGMA = false;
+        self.item.clear();
         self.PIEPADODEDD = ::std::option::Option::None;
         self.PIEPADODEDD = ::std::option::Option::None;
         self.special_fields.clear();
@@ -233,8 +233,8 @@ impl ::protobuf::Message for HAJJKFAIJBD {
 
     fn default_instance() -> &'static HAJJKFAIJBD {
         static instance: HAJJKFAIJBD = HAJJKFAIJBD {
-            NLFCABFPJHD: ::protobuf::MessageField::none(),
             BHPCOAPAGMA: false,
+            item: ::protobuf::MessageField::none(),
             PIEPADODEDD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -290,12 +290,12 @@ pub mod hajjkfaijbd {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HAJJKFAIJBD.proto\x1a\x11NKGAIPKINJE.proto\"\xb6\x01\n\x0bHAJJKFAI\
-    JBD\x12.\n\x0bNLFCABFPJHD\x18\x0f\x20\x01(\x0b2\x0c.NKGAIPKINJER\x0bNLFC\
-    ABFPJHD\x12\x20\n\x0bBHPCOAPAGMA\x18\x01\x20\x01(\x08R\x0bBHPCOAPAGMA\
-    \x12\"\n\x0bELGOLPLGFKJ\x18\x08\x20\x01(\rH\0R\x0bELGOLPLGFKJ\x12\"\n\
-    \x0bDAJHCEKHNBH\x18\n\x20\x01(\x08H\0R\x0bDAJHCEKHNBHB\r\n\x0bPIEPADODED\
-    Db\x06proto3\
+    \n\x11HAJJKFAIJBD.proto\x1a\x11NKGAIPKINJE.proto\"\xa8\x01\n\x0bHAJJKFAI\
+    JBD\x12\x20\n\x0bBHPCOAPAGMA\x18\x06\x20\x01(\x08R\x0bBHPCOAPAGMA\x12\
+    \x20\n\x04item\x18\x0c\x20\x01(\x0b2\x0c.NKGAIPKINJER\x04item\x12\"\n\
+    \x0bELGOLPLGFKJ\x18\x08\x20\x01(\rH\0R\x0bELGOLPLGFKJ\x12\"\n\x0bDAJHCEK\
+    HNBH\x18\x0f\x20\x01(\x08H\0R\x0bDAJHCEKHNBHB\r\n\x0bPIEPADODEDDb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

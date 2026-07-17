@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeAvatarRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeAvatarRsp.MLFLPFMLKNF)
-    pub MLFLPFMLKNF: ::protobuf::MessageField<super::DiceCombatAvatar::DiceCombatAvatar>,
+    // @@protoc_insertion_point(field:UpgradeAvatarRsp.avatar)
+    pub avatar: ::protobuf::MessageField<super::DiceCombatAvatar::DiceCombatAvatar>,
     // @@protoc_insertion_point(field:UpgradeAvatarRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl UpgradeAvatarRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DiceCombatAvatar::DiceCombatAvatar>(
-            "MLFLPFMLKNF",
-            |m: &UpgradeAvatarRsp| { &m.MLFLPFMLKNF },
-            |m: &mut UpgradeAvatarRsp| { &mut m.MLFLPFMLKNF },
+            "avatar",
+            |m: &UpgradeAvatarRsp| { &m.avatar },
+            |m: &mut UpgradeAvatarRsp| { &mut m.avatar },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for UpgradeAvatarRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MLFLPFMLKNF)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.avatar)?;
                 },
-                112 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for UpgradeAvatarRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MLFLPFMLKNF.as_ref() {
+        if let Some(v) = self.avatar.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UpgradeAvatarRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MLFLPFMLKNF.as_ref() {
+        if let Some(v) = self.avatar.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for UpgradeAvatarRsp {
     }
 
     fn clear(&mut self) {
-        self.MLFLPFMLKNF.clear();
+        self.avatar.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeAvatarRsp {
         static instance: UpgradeAvatarRsp = UpgradeAvatarRsp {
-            MLFLPFMLKNF: ::protobuf::MessageField::none(),
+            avatar: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeAvatarRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16UpgradeAvatarRsp.proto\x1a\x16DiceCombatAvatar.proto\"a\n\x10Upgra\
-    deAvatarRsp\x123\n\x0bMLFLPFMLKNF\x18\x06\x20\x01(\x0b2\x11.DiceCombatAv\
-    atarR\x0bMLFLPFMLKNF\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\
-    b\x06proto3\
+    \n\x16UpgradeAvatarRsp.proto\x1a\x16DiceCombatAvatar.proto\"W\n\x10Upgra\
+    deAvatarRsp\x12)\n\x06avatar\x18\x06\x20\x01(\x0b2\x11.DiceCombatAvatarR\
+    \x06avatar\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

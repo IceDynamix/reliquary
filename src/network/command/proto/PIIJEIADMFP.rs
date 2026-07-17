@@ -72,7 +72,7 @@ impl ::protobuf::Message for PIIJEIADMFP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                72 => {
                     self.PBJJAHKLNAA = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PIIJEIADMFP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PBJJAHKLNAA != false {
-            os.write_bool(7, self.PBJJAHKLNAA)?;
+            os.write_bool(9, self.PBJJAHKLNAA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PIIJEIADMFP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PIIJEIADMFP.proto\"/\n\x0bPIIJEIADMFP\x12\x20\n\x0bPBJJAHKLNAA\x18\
-    \x07\x20\x01(\x08R\x0bPBJJAHKLNAAb\x06proto3\
+    \t\x20\x01(\x08R\x0bPBJJAHKLNAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

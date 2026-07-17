@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AOFMDLLDIHG {
     // message fields
-    // @@protoc_insertion_point(field:AOFMDLLDIHG.battle_target_list)
-    pub battle_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AOFMDLLDIHG.skill_id)
     pub skill_id: u32,
-    // @@protoc_insertion_point(field:AOFMDLLDIHG.PNJEGPAFNCI)
-    pub PNJEGPAFNCI: f64,
+    // @@protoc_insertion_point(field:AOFMDLLDIHG.delay)
+    pub delay: f64,
+    // @@protoc_insertion_point(field:AOFMDLLDIHG.battle_target_list)
+    pub battle_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AOFMDLLDIHG.damage)
     pub damage: f64,
     // special fields
@@ -55,20 +55,20 @@ impl AOFMDLLDIHG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_target_list",
-            |m: &AOFMDLLDIHG| { &m.battle_target_list },
-            |m: &mut AOFMDLLDIHG| { &mut m.battle_target_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
             |m: &AOFMDLLDIHG| { &m.skill_id },
             |m: &mut AOFMDLLDIHG| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PNJEGPAFNCI",
-            |m: &AOFMDLLDIHG| { &m.PNJEGPAFNCI },
-            |m: &mut AOFMDLLDIHG| { &mut m.PNJEGPAFNCI },
+            "delay",
+            |m: &AOFMDLLDIHG| { &m.delay },
+            |m: &mut AOFMDLLDIHG| { &mut m.delay },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_target_list",
+            |m: &AOFMDLLDIHG| { &m.battle_target_list },
+            |m: &mut AOFMDLLDIHG| { &mut m.battle_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for AOFMDLLDIHG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.skill_id = is.read_uint32()?;
+                },
+                17 => {
+                    self.delay = is.read_double()?;
+                },
                 26 => {
                     is.read_repeated_packed_uint32_into(&mut self.battle_target_list)?;
                 },
                 24 => {
                     self.battle_target_list.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.skill_id = is.read_uint32()?;
-                },
-                17 => {
-                    self.PNJEGPAFNCI = is.read_double()?;
                 },
                 33 => {
                     self.damage = is.read_double()?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for AOFMDLLDIHG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.battle_target_list);
         if self.skill_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
         }
-        if self.PNJEGPAFNCI != 0. {
+        if self.delay != 0. {
             my_size += 1 + 8;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.battle_target_list);
         if self.damage != 0. {
             my_size += 1 + 8;
         }
@@ -136,13 +136,13 @@ impl ::protobuf::Message for AOFMDLLDIHG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.battle_target_list)?;
         if self.skill_id != 0 {
             os.write_uint32(1, self.skill_id)?;
         }
-        if self.PNJEGPAFNCI != 0. {
-            os.write_double(2, self.PNJEGPAFNCI)?;
+        if self.delay != 0. {
+            os.write_double(2, self.delay)?;
         }
+        os.write_repeated_packed_uint32(3, &self.battle_target_list)?;
         if self.damage != 0. {
             os.write_double(4, self.damage)?;
         }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for AOFMDLLDIHG {
     }
 
     fn clear(&mut self) {
-        self.battle_target_list.clear();
         self.skill_id = 0;
-        self.PNJEGPAFNCI = 0.;
+        self.delay = 0.;
+        self.battle_target_list.clear();
         self.damage = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AOFMDLLDIHG {
         static instance: AOFMDLLDIHG = AOFMDLLDIHG {
-            battle_target_list: ::std::vec::Vec::new(),
             skill_id: 0,
-            PNJEGPAFNCI: 0.,
+            delay: 0.,
+            battle_target_list: ::std::vec::Vec::new(),
             damage: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for AOFMDLLDIHG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOFMDLLDIHG.proto\"\x90\x01\n\x0bAOFMDLLDIHG\x12,\n\x12battle_targ\
-    et_list\x18\x03\x20\x03(\rR\x10battleTargetList\x12\x19\n\x08skill_id\
-    \x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bPNJEGPAFNCI\x18\x02\x20\x01\
-    (\x01R\x0bPNJEGPAFNCI\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damag\
-    eb\x06proto3\
+    \n\x11AOFMDLLDIHG.proto\"\x84\x01\n\x0bAOFMDLLDIHG\x12\x19\n\x08skill_id\
+    \x18\x01\x20\x01(\rR\x07skillId\x12\x14\n\x05delay\x18\x02\x20\x01(\x01R\
+    \x05delay\x12,\n\x12battle_target_list\x18\x03\x20\x03(\rR\x10battleTarg\
+    etList\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damageb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

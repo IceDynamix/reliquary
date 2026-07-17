@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODNBCBEINNC {
     // message fields
-    // @@protoc_insertion_point(field:ODNBCBEINNC.EEPIDJJJMAH)
-    pub EEPIDJJJMAH: u32,
-    // @@protoc_insertion_point(field:ODNBCBEINNC.room_id)
-    pub room_id: u32,
-    // @@protoc_insertion_point(field:ODNBCBEINNC.LHLKJIDFLIN)
-    pub LHLKJIDFLIN: u32,
-    // @@protoc_insertion_point(field:ODNBCBEINNC.status)
-    pub status: ::protobuf::EnumOrUnknown<super::IIAOGEIADGA::IIAOGEIADGA>,
     // @@protoc_insertion_point(field:ODNBCBEINNC.GHEHGIOAGDG)
     pub GHEHGIOAGDG: u32,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.LHLKJIDFLIN)
+    pub LHLKJIDFLIN: u32,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.room_id)
+    pub room_id: u32,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.status)
+    pub status: ::protobuf::EnumOrUnknown<super::IIAOGEIADGA::IIAOGEIADGA>,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.EEPIDJJJMAH)
+    pub EEPIDJJJMAH: u32,
     // @@protoc_insertion_point(field:ODNBCBEINNC.FIADMEPDAOG)
     pub FIADMEPDAOG: ::protobuf::MessageField<super::ELHLCFBPAMO::ELHLCFBPAMO>,
     // special fields
@@ -60,14 +60,9 @@ impl ODNBCBEINNC {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEPIDJJJMAH",
-            |m: &ODNBCBEINNC| { &m.EEPIDJJJMAH },
-            |m: &mut ODNBCBEINNC| { &mut m.EEPIDJJJMAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &ODNBCBEINNC| { &m.room_id },
-            |m: &mut ODNBCBEINNC| { &mut m.room_id },
+            "GHEHGIOAGDG",
+            |m: &ODNBCBEINNC| { &m.GHEHGIOAGDG },
+            |m: &mut ODNBCBEINNC| { &mut m.GHEHGIOAGDG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHLKJIDFLIN",
@@ -75,14 +70,19 @@ impl ODNBCBEINNC {
             |m: &mut ODNBCBEINNC| { &mut m.LHLKJIDFLIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_id",
+            |m: &ODNBCBEINNC| { &m.room_id },
+            |m: &mut ODNBCBEINNC| { &mut m.room_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &ODNBCBEINNC| { &m.status },
             |m: &mut ODNBCBEINNC| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHEHGIOAGDG",
-            |m: &ODNBCBEINNC| { &m.GHEHGIOAGDG },
-            |m: &mut ODNBCBEINNC| { &mut m.GHEHGIOAGDG },
+            "EEPIDJJJMAH",
+            |m: &ODNBCBEINNC| { &m.EEPIDJJJMAH },
+            |m: &mut ODNBCBEINNC| { &mut m.EEPIDJJJMAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELHLCFBPAMO::ELHLCFBPAMO>(
             "FIADMEPDAOG",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for ODNBCBEINNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.EEPIDJJJMAH = is.read_uint32()?;
+                16 => {
+                    self.GHEHGIOAGDG = is.read_uint32()?;
                 },
-                72 => {
+                24 => {
+                    self.LHLKJIDFLIN = is.read_uint32()?;
+                },
+                56 => {
                     self.room_id = is.read_uint32()?;
                 },
                 80 => {
-                    self.LHLKJIDFLIN = is.read_uint32()?;
-                },
-                16 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                112 => {
-                    self.GHEHGIOAGDG = is.read_uint32()?;
+                96 => {
+                    self.EEPIDJJJMAH = is.read_uint32()?;
                 },
-                90 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIADMEPDAOG)?;
                 },
                 tag => {
@@ -137,20 +137,20 @@ impl ::protobuf::Message for ODNBCBEINNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EEPIDJJJMAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EEPIDJJJMAH);
-        }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.room_id);
+        if self.GHEHGIOAGDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GHEHGIOAGDG);
         }
         if self.LHLKJIDFLIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LHLKJIDFLIN);
+            my_size += ::protobuf::rt::uint32_size(3, self.LHLKJIDFLIN);
+        }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.status.value());
+            my_size += ::protobuf::rt::int32_size(10, self.status.value());
         }
-        if self.GHEHGIOAGDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GHEHGIOAGDG);
+        if self.EEPIDJJJMAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.EEPIDJJJMAH);
         }
         if let Some(v) = self.FIADMEPDAOG.as_ref() {
             let len = v.compute_size();
@@ -162,23 +162,23 @@ impl ::protobuf::Message for ODNBCBEINNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EEPIDJJJMAH != 0 {
-            os.write_uint32(1, self.EEPIDJJJMAH)?;
-        }
-        if self.room_id != 0 {
-            os.write_uint32(9, self.room_id)?;
+        if self.GHEHGIOAGDG != 0 {
+            os.write_uint32(2, self.GHEHGIOAGDG)?;
         }
         if self.LHLKJIDFLIN != 0 {
-            os.write_uint32(10, self.LHLKJIDFLIN)?;
+            os.write_uint32(3, self.LHLKJIDFLIN)?;
+        }
+        if self.room_id != 0 {
+            os.write_uint32(7, self.room_id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
-        if self.GHEHGIOAGDG != 0 {
-            os.write_uint32(14, self.GHEHGIOAGDG)?;
+        if self.EEPIDJJJMAH != 0 {
+            os.write_uint32(12, self.EEPIDJJJMAH)?;
         }
         if let Some(v) = self.FIADMEPDAOG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for ODNBCBEINNC {
     }
 
     fn clear(&mut self) {
-        self.EEPIDJJJMAH = 0;
-        self.room_id = 0;
-        self.LHLKJIDFLIN = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ);
         self.GHEHGIOAGDG = 0;
+        self.LHLKJIDFLIN = 0;
+        self.room_id = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ);
+        self.EEPIDJJJMAH = 0;
         self.FIADMEPDAOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODNBCBEINNC {
         static instance: ODNBCBEINNC = ODNBCBEINNC {
-            EEPIDJJJMAH: 0,
-            room_id: 0,
-            LHLKJIDFLIN: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             GHEHGIOAGDG: 0,
+            LHLKJIDFLIN: 0,
+            room_id: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            EEPIDJJJMAH: 0,
             FIADMEPDAOG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for ODNBCBEINNC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ODNBCBEINNC.proto\x1a\x11ELHLCFBPAMO.proto\x1a\x11IIAOGEIADGA.prot\
-    o\"\xe2\x01\n\x0bODNBCBEINNC\x12\x20\n\x0bEEPIDJJJMAH\x18\x01\x20\x01(\r\
-    R\x0bEEPIDJJJMAH\x12\x17\n\x07room_id\x18\t\x20\x01(\rR\x06roomId\x12\
-    \x20\n\x0bLHLKJIDFLIN\x18\n\x20\x01(\rR\x0bLHLKJIDFLIN\x12$\n\x06status\
-    \x18\x02\x20\x01(\x0e2\x0c.IIAOGEIADGAR\x06status\x12\x20\n\x0bGHEHGIOAG\
-    DG\x18\x0e\x20\x01(\rR\x0bGHEHGIOAGDG\x12.\n\x0bFIADMEPDAOG\x18\x0b\x20\
+    o\"\xe2\x01\n\x0bODNBCBEINNC\x12\x20\n\x0bGHEHGIOAGDG\x18\x02\x20\x01(\r\
+    R\x0bGHEHGIOAGDG\x12\x20\n\x0bLHLKJIDFLIN\x18\x03\x20\x01(\rR\x0bLHLKJID\
+    FLIN\x12\x17\n\x07room_id\x18\x07\x20\x01(\rR\x06roomId\x12$\n\x06status\
+    \x18\n\x20\x01(\x0e2\x0c.IIAOGEIADGAR\x06status\x12\x20\n\x0bEEPIDJJJMAH\
+    \x18\x0c\x20\x01(\rR\x0bEEPIDJJJMAH\x12.\n\x0bFIADMEPDAOG\x18\x01\x20\
     \x01(\x0b2\x0c.ELHLCFBPAMOR\x0bFIADMEPDAOGb\x06proto3\
 ";
 

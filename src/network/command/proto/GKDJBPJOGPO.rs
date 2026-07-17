@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKDJBPJOGPO {
     // message fields
-    // @@protoc_insertion_point(field:GKDJBPJOGPO.room_id)
-    pub room_id: u32,
     // @@protoc_insertion_point(field:GKDJBPJOGPO.IHAOMLEPHOM)
     pub IHAOMLEPHOM: u32,
     // special fields
@@ -49,13 +47,8 @@ impl GKDJBPJOGPO {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &GKDJBPJOGPO| { &m.room_id },
-            |m: &mut GKDJBPJOGPO| { &mut m.room_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHAOMLEPHOM",
             |m: &GKDJBPJOGPO| { &m.IHAOMLEPHOM },
@@ -79,10 +72,7 @@ impl ::protobuf::Message for GKDJBPJOGPO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.room_id = is.read_uint32()?;
-                },
-                48 => {
+                56 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +87,8 @@ impl ::protobuf::Message for GKDJBPJOGPO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.room_id);
-        }
         if self.IHAOMLEPHOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IHAOMLEPHOM);
+            my_size += ::protobuf::rt::uint32_size(7, self.IHAOMLEPHOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +96,8 @@ impl ::protobuf::Message for GKDJBPJOGPO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_id != 0 {
-            os.write_uint32(2, self.room_id)?;
-        }
         if self.IHAOMLEPHOM != 0 {
-            os.write_uint32(6, self.IHAOMLEPHOM)?;
+            os.write_uint32(7, self.IHAOMLEPHOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +116,12 @@ impl ::protobuf::Message for GKDJBPJOGPO {
     }
 
     fn clear(&mut self) {
-        self.room_id = 0;
         self.IHAOMLEPHOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKDJBPJOGPO {
         static instance: GKDJBPJOGPO = GKDJBPJOGPO {
-            room_id: 0,
             IHAOMLEPHOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GKDJBPJOGPO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKDJBPJOGPO.proto\"H\n\x0bGKDJBPJOGPO\x12\x17\n\x07room_id\x18\x02\
-    \x20\x01(\rR\x06roomId\x12\x20\n\x0bIHAOMLEPHOM\x18\x06\x20\x01(\rR\x0bI\
-    HAOMLEPHOMb\x06proto3\
+    \n\x11GKDJBPJOGPO.proto\"/\n\x0bGKDJBPJOGPO\x12\x20\n\x0bIHAOMLEPHOM\x18\
+    \x07\x20\x01(\rR\x0bIHAOMLEPHOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

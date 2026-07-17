@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChessRogueSubStoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishChessRogueSubStoryScRsp.HONCDMKPBEG)
-    pub HONCDMKPBEG: u32,
     // @@protoc_insertion_point(field:FinishChessRogueSubStoryScRsp.KPDLMKFLJAI)
     pub KPDLMKFLJAI: u32,
     // @@protoc_insertion_point(field:FinishChessRogueSubStoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueSubStoryScRsp.HONCDMKPBEG)
+    pub HONCDMKPBEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChessRogueSubStoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl FinishChessRogueSubStoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HONCDMKPBEG",
-            |m: &FinishChessRogueSubStoryScRsp| { &m.HONCDMKPBEG },
-            |m: &mut FinishChessRogueSubStoryScRsp| { &mut m.HONCDMKPBEG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KPDLMKFLJAI",
             |m: &FinishChessRogueSubStoryScRsp| { &m.KPDLMKFLJAI },
             |m: &mut FinishChessRogueSubStoryScRsp| { &mut m.KPDLMKFLJAI },
@@ -67,6 +62,11 @@ impl FinishChessRogueSubStoryScRsp {
             "retcode",
             |m: &FinishChessRogueSubStoryScRsp| { &m.retcode },
             |m: &mut FinishChessRogueSubStoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HONCDMKPBEG",
+            |m: &FinishChessRogueSubStoryScRsp| { &m.HONCDMKPBEG },
+            |m: &mut FinishChessRogueSubStoryScRsp| { &mut m.HONCDMKPBEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChessRogueSubStoryScRsp>(
             "FinishChessRogueSubStoryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.HONCDMKPBEG = is.read_uint32()?;
-                },
-                16 => {
+                80 => {
                     self.KPDLMKFLJAI = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.HONCDMKPBEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HONCDMKPBEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HONCDMKPBEG);
-        }
         if self.KPDLMKFLJAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KPDLMKFLJAI);
+            my_size += ::protobuf::rt::uint32_size(10, self.KPDLMKFLJAI);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.HONCDMKPBEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HONCDMKPBEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HONCDMKPBEG != 0 {
-            os.write_uint32(9, self.HONCDMKPBEG)?;
-        }
         if self.KPDLMKFLJAI != 0 {
-            os.write_uint32(2, self.KPDLMKFLJAI)?;
+            os.write_uint32(10, self.KPDLMKFLJAI)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.HONCDMKPBEG != 0 {
+            os.write_uint32(15, self.HONCDMKPBEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FinishChessRogueSubStoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.HONCDMKPBEG = 0;
         self.KPDLMKFLJAI = 0;
         self.retcode = 0;
+        self.HONCDMKPBEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChessRogueSubStoryScRsp {
         static instance: FinishChessRogueSubStoryScRsp = FinishChessRogueSubStoryScRsp {
-            HONCDMKPBEG: 0,
             KPDLMKFLJAI: 0,
             retcode: 0,
+            HONCDMKPBEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueSubStoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#FinishChessRogueSubStoryScRsp.proto\"}\n\x1dFinishChessRogueSubStoryS\
-    cRsp\x12\x20\n\x0bHONCDMKPBEG\x18\t\x20\x01(\rR\x0bHONCDMKPBEG\x12\x20\n\
-    \x0bKPDLMKFLJAI\x18\x02\x20\x01(\rR\x0bKPDLMKFLJAI\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    cRsp\x12\x20\n\x0bKPDLMKFLJAI\x18\n\x20\x01(\rR\x0bKPDLMKFLJAI\x12\x18\n\
+    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bHONCDMKPBEG\x18\
+    \x0f\x20\x01(\rR\x0bHONCDMKPBEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

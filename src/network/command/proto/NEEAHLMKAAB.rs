@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NEEAHLMKAAB {
     // message fields
-    // @@protoc_insertion_point(field:NEEAHLMKAAB.IEPAPOPIFHH)
-    pub IEPAPOPIFHH: u64,
     // @@protoc_insertion_point(field:NEEAHLMKAAB.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
-    // @@protoc_insertion_point(field:NEEAHLMKAAB.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
     // @@protoc_insertion_point(field:NEEAHLMKAAB.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:NEEAHLMKAAB.max_level)
+    pub max_level: u32,
+    // @@protoc_insertion_point(field:NEEAHLMKAAB.IEPAPOPIFHH)
+    pub IEPAPOPIFHH: u64,
     // special fields
     // @@protoc_insertion_point(special_field:NEEAHLMKAAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl NEEAHLMKAAB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IEPAPOPIFHH",
-            |m: &NEEAHLMKAAB| { &m.IEPAPOPIFHH },
-            |m: &mut NEEAHLMKAAB| { &mut m.IEPAPOPIFHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFCNALJDHMP",
             |m: &NEEAHLMKAAB| { &m.BFCNALJDHMP },
             |m: &mut NEEAHLMKAAB| { &mut m.BFCNALJDHMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &NEEAHLMKAAB| { &m.HCBADDHNIDG },
-            |m: &mut NEEAHLMKAAB| { &mut m.HCBADDHNIDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &NEEAHLMKAAB| { &m.level },
             |m: &mut NEEAHLMKAAB| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_level",
+            |m: &NEEAHLMKAAB| { &m.max_level },
+            |m: &mut NEEAHLMKAAB| { &mut m.max_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IEPAPOPIFHH",
+            |m: &NEEAHLMKAAB| { &m.IEPAPOPIFHH },
+            |m: &mut NEEAHLMKAAB| { &mut m.IEPAPOPIFHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NEEAHLMKAAB>(
             "NEEAHLMKAAB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IEPAPOPIFHH = is.read_uint64()?;
-                },
-                64 => {
+                16 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
                 },
-                56 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
-                },
-                16 => {
+                64 => {
                     self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.max_level = is.read_uint32()?;
+                },
+                112 => {
+                    self.IEPAPOPIFHH = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IEPAPOPIFHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.IEPAPOPIFHH);
-        }
         if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BFCNALJDHMP);
-        }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(2, self.BFCNALJDHMP);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.max_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.max_level);
+        }
+        if self.IEPAPOPIFHH != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.IEPAPOPIFHH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IEPAPOPIFHH != 0 {
-            os.write_uint64(5, self.IEPAPOPIFHH)?;
-        }
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(8, self.BFCNALJDHMP)?;
-        }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(7, self.HCBADDHNIDG)?;
+            os.write_uint32(2, self.BFCNALJDHMP)?;
         }
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(8, self.level)?;
+        }
+        if self.max_level != 0 {
+            os.write_uint32(13, self.max_level)?;
+        }
+        if self.IEPAPOPIFHH != 0 {
+            os.write_uint64(14, self.IEPAPOPIFHH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     }
 
     fn clear(&mut self) {
-        self.IEPAPOPIFHH = 0;
         self.BFCNALJDHMP = 0;
-        self.HCBADDHNIDG = 0;
         self.level = 0;
+        self.max_level = 0;
+        self.IEPAPOPIFHH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEEAHLMKAAB {
         static instance: NEEAHLMKAAB = NEEAHLMKAAB {
-            IEPAPOPIFHH: 0,
             BFCNALJDHMP: 0,
-            HCBADDHNIDG: 0,
             level: 0,
+            max_level: 0,
+            IEPAPOPIFHH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for NEEAHLMKAAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NEEAHLMKAAB.proto\"\x89\x01\n\x0bNEEAHLMKAAB\x12\x20\n\x0bIEPAPOPI\
-    FHH\x18\x05\x20\x01(\x04R\x0bIEPAPOPIFHH\x12\x20\n\x0bBFCNALJDHMP\x18\
-    \x08\x20\x01(\rR\x0bBFCNALJDHMP\x12\x20\n\x0bHCBADDHNIDG\x18\x07\x20\x01\
-    (\rR\x0bHCBADDHNIDG\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05levelb\x06\
-    proto3\
+    \n\x11NEEAHLMKAAB.proto\"\x84\x01\n\x0bNEEAHLMKAAB\x12\x20\n\x0bBFCNALJD\
+    HMP\x18\x02\x20\x01(\rR\x0bBFCNALJDHMP\x12\x14\n\x05level\x18\x08\x20\
+    \x01(\rR\x05level\x12\x1b\n\tmax_level\x18\r\x20\x01(\rR\x08maxLevel\x12\
+    \x20\n\x0bIEPAPOPIFHH\x18\x0e\x20\x01(\x04R\x0bIEPAPOPIFHHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

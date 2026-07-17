@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdBenefitV2ActivityType {
     // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_NLCDGIPGFDJ)
     BNDFIJKMBHE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_NDGINIGLHFG)
-    BNDFIJKMBHE_NDGINIGLHFG = 9829,
+    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_DIPCCGHFJAA)
+    BNDFIJKMBHE_DIPCCGHFJAA = 9825,
+    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_JGAJJBNCIKK)
+    BNDFIJKMBHE_JGAJJBNCIKK = 9826,
+    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_MOHCJNIMHJM)
+    BNDFIJKMBHE_MOHCJNIMHJM = 9823,
+    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_DGDFAKFHKFA)
+    BNDFIJKMBHE_DGDFAKFHKFA = 9821,
     // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_NIJIGHHGKIO)
     BNDFIJKMBHE_NIJIGHHGKIO = 9824,
-    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_MOHCJNIMHJM)
-    BNDFIJKMBHE_MOHCJNIMHJM = 9822,
-    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_DIPCCGHFJAA)
-    BNDFIJKMBHE_DIPCCGHFJAA = 9830,
-    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_JGAJJBNCIKK)
-    BNDFIJKMBHE_JGAJJBNCIKK = 9821,
-    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_DGDFAKFHKFA)
-    BNDFIJKMBHE_DGDFAKFHKFA = 9828,
+    // @@protoc_insertion_point(enum_value:CmdBenefitV2ActivityType.BNDFIJKMBHE_NDGINIGLHFG)
+    BNDFIJKMBHE_NDGINIGLHFG = 9830,
 }
 
 impl ::protobuf::Enum for CmdBenefitV2ActivityType {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CmdBenefitV2ActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdBenefitV2ActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NLCDGIPGFDJ),
-            9829 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG),
+            9825 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA),
+            9826 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK),
+            9823 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM),
+            9821 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA),
             9824 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO),
-            9822 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM),
-            9830 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA),
-            9821 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK),
-            9828 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA),
+            9830 => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for CmdBenefitV2ActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdBenefitV2ActivityType> {
         match str {
             "BNDFIJKMBHE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NLCDGIPGFDJ),
-            "BNDFIJKMBHE_NDGINIGLHFG" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG),
-            "BNDFIJKMBHE_NIJIGHHGKIO" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO),
-            "BNDFIJKMBHE_MOHCJNIMHJM" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM),
             "BNDFIJKMBHE_DIPCCGHFJAA" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA),
             "BNDFIJKMBHE_JGAJJBNCIKK" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK),
+            "BNDFIJKMBHE_MOHCJNIMHJM" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM),
             "BNDFIJKMBHE_DGDFAKFHKFA" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA),
+            "BNDFIJKMBHE_NIJIGHHGKIO" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO),
+            "BNDFIJKMBHE_NDGINIGLHFG" => ::std::option::Option::Some(CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBenefitV2ActivityType] = &[
         CmdBenefitV2ActivityType::BNDFIJKMBHE_NLCDGIPGFDJ,
-        CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG,
-        CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO,
-        CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM,
         CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA,
         CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK,
+        CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM,
         CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA,
+        CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO,
+        CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for CmdBenefitV2ActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdBenefitV2ActivityType::BNDFIJKMBHE_NLCDGIPGFDJ => 0,
-            CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG => 1,
-            CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO => 2,
+            CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA => 1,
+            CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK => 2,
             CmdBenefitV2ActivityType::BNDFIJKMBHE_MOHCJNIMHJM => 3,
-            CmdBenefitV2ActivityType::BNDFIJKMBHE_DIPCCGHFJAA => 4,
-            CmdBenefitV2ActivityType::BNDFIJKMBHE_JGAJJBNCIKK => 5,
-            CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA => 6,
+            CmdBenefitV2ActivityType::BNDFIJKMBHE_DGDFAKFHKFA => 4,
+            CmdBenefitV2ActivityType::BNDFIJKMBHE_NIJIGHHGKIO => 5,
+            CmdBenefitV2ActivityType::BNDFIJKMBHE_NDGINIGLHFG => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -122,10 +122,10 @@ impl CmdBenefitV2ActivityType {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCmdBenefitV2ActivityType.proto*\xeb\x01\n\x18CmdBenefitV2ActivityT\
     ype\x12\x1b\n\x17BNDFIJKMBHE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BNDFIJKMBHE_\
-    NDGINIGLHFG\x10\xe5L\x12\x1c\n\x17BNDFIJKMBHE_NIJIGHHGKIO\x10\xe0L\x12\
-    \x1c\n\x17BNDFIJKMBHE_MOHCJNIMHJM\x10\xdeL\x12\x1c\n\x17BNDFIJKMBHE_DIPC\
-    CGHFJAA\x10\xe6L\x12\x1c\n\x17BNDFIJKMBHE_JGAJJBNCIKK\x10\xddL\x12\x1c\n\
-    \x17BNDFIJKMBHE_DGDFAKFHKFA\x10\xe4Lb\x06proto3\
+    DIPCCGHFJAA\x10\xe1L\x12\x1c\n\x17BNDFIJKMBHE_JGAJJBNCIKK\x10\xe2L\x12\
+    \x1c\n\x17BNDFIJKMBHE_MOHCJNIMHJM\x10\xdfL\x12\x1c\n\x17BNDFIJKMBHE_DGDF\
+    AKFHKFA\x10\xddL\x12\x1c\n\x17BNDFIJKMBHE_NIJIGHHGKIO\x10\xe0L\x12\x1c\n\
+    \x17BNDFIJKMBHE_NDGINIGLHFG\x10\xe6Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

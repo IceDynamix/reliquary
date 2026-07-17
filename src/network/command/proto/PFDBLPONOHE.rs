@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFDBLPONOHE {
     // message fields
-    // @@protoc_insertion_point(field:PFDBLPONOHE.POOEMJLCDHB)
-    pub POOEMJLCDHB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PFDBLPONOHE.GBKIBFJCPAL)
-    pub GBKIBFJCPAL: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::PJCMNENIEHH::PJCMNENIEHH>>,
     // @@protoc_insertion_point(field:PFDBLPONOHE.avatar_id_list)
     pub avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PFDBLPONOHE.GBKIBFJCPAL)
+    pub GBKIBFJCPAL: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::PJCMNENIEHH::PJCMNENIEHH>>,
+    // @@protoc_insertion_point(field:PFDBLPONOHE.POOEMJLCDHB)
+    pub POOEMJLCDHB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:PFDBLPONOHE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl PFDBLPONOHE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POOEMJLCDHB",
-            |m: &PFDBLPONOHE| { &m.POOEMJLCDHB },
-            |m: &mut PFDBLPONOHE| { &mut m.POOEMJLCDHB },
+            "avatar_id_list",
+            |m: &PFDBLPONOHE| { &m.avatar_id_list },
+            |m: &mut PFDBLPONOHE| { &mut m.avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GBKIBFJCPAL",
@@ -64,9 +64,9 @@ impl PFDBLPONOHE {
             |m: &mut PFDBLPONOHE| { &mut m.GBKIBFJCPAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_id_list",
-            |m: &PFDBLPONOHE| { &m.avatar_id_list },
-            |m: &mut PFDBLPONOHE| { &mut m.avatar_id_list },
+            "POOEMJLCDHB",
+            |m: &PFDBLPONOHE| { &m.POOEMJLCDHB },
+            |m: &mut PFDBLPONOHE| { &mut m.POOEMJLCDHB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PFDBLPONOHE>(
             "PFDBLPONOHE",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for PFDBLPONOHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.POOEMJLCDHB)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                24 => {
-                    self.POOEMJLCDHB.push(is.read_uint32()?);
+                8 => {
+                    self.avatar_id_list.push(is.read_uint32()?);
                 },
                 16 => {
                     self.GBKIBFJCPAL.push(is.read_enum_or_unknown()?);
@@ -98,11 +98,11 @@ impl ::protobuf::Message for PFDBLPONOHE {
                 18 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.GBKIBFJCPAL)?
                 },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.POOEMJLCDHB)?;
                 },
-                8 => {
-                    self.avatar_id_list.push(is.read_uint32()?);
+                24 => {
+                    self.POOEMJLCDHB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,18 +116,18 @@ impl ::protobuf::Message for PFDBLPONOHE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.POOEMJLCDHB);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(2, &self.GBKIBFJCPAL);
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(2, &self.GBKIBFJCPAL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.POOEMJLCDHB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.POOEMJLCDHB)?;
-        os.write_repeated_packed_enum_or_unknown(2, &self.GBKIBFJCPAL)?;
         os.write_repeated_packed_uint32(1, &self.avatar_id_list)?;
+        os.write_repeated_packed_enum_or_unknown(2, &self.GBKIBFJCPAL)?;
+        os.write_repeated_packed_uint32(3, &self.POOEMJLCDHB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -145,17 +145,17 @@ impl ::protobuf::Message for PFDBLPONOHE {
     }
 
     fn clear(&mut self) {
-        self.POOEMJLCDHB.clear();
-        self.GBKIBFJCPAL.clear();
         self.avatar_id_list.clear();
+        self.GBKIBFJCPAL.clear();
+        self.POOEMJLCDHB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PFDBLPONOHE {
         static instance: PFDBLPONOHE = PFDBLPONOHE {
-            POOEMJLCDHB: ::std::vec::Vec::new(),
-            GBKIBFJCPAL: ::std::vec::Vec::new(),
             avatar_id_list: ::std::vec::Vec::new(),
+            GBKIBFJCPAL: ::std::vec::Vec::new(),
+            POOEMJLCDHB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -181,9 +181,9 @@ impl ::protobuf::reflect::ProtobufValue for PFDBLPONOHE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFDBLPONOHE.proto\x1a\x11PJCMNENIEHH.proto\"\x85\x01\n\x0bPFDBLPON\
-    OHE\x12\x20\n\x0bPOOEMJLCDHB\x18\x03\x20\x03(\rR\x0bPOOEMJLCDHB\x12.\n\
+    OHE\x12$\n\x0eavatar_id_list\x18\x01\x20\x03(\rR\x0cavatarIdList\x12.\n\
     \x0bGBKIBFJCPAL\x18\x02\x20\x03(\x0e2\x0c.PJCMNENIEHHR\x0bGBKIBFJCPAL\
-    \x12$\n\x0eavatar_id_list\x18\x01\x20\x03(\rR\x0cavatarIdListb\x06proto3\
+    \x12\x20\n\x0bPOOEMJLCDHB\x18\x03\x20\x03(\rR\x0bPOOEMJLCDHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

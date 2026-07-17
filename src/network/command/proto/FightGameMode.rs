@@ -45,6 +45,8 @@ pub enum FightGameMode {
     FJPMJPEKLJL_FBPGILKIGBE = 7,
     // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_MKHLALNLOLA)
     FJPMJPEKLJL_MKHLALNLOLA = 8,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_AAHDLLNEJEL)
+    FJPMJPEKLJL_AAHDLLNEJEL = 9,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -65,6 +67,7 @@ impl ::protobuf::Enum for FightGameMode {
             6 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE),
             7 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_FBPGILKIGBE),
             8 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_MKHLALNLOLA),
+            9 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_AAHDLLNEJEL),
             _ => ::std::option::Option::None
         }
     }
@@ -80,6 +83,7 @@ impl ::protobuf::Enum for FightGameMode {
             "FJPMJPEKLJL_BLBMAPAMFHE" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE),
             "FJPMJPEKLJL_FBPGILKIGBE" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_FBPGILKIGBE),
             "FJPMJPEKLJL_MKHLALNLOLA" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_MKHLALNLOLA),
+            "FJPMJPEKLJL_AAHDLLNEJEL" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_AAHDLLNEJEL),
             _ => ::std::option::Option::None
         }
     }
@@ -94,6 +98,7 @@ impl ::protobuf::Enum for FightGameMode {
         FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE,
         FightGameMode::FJPMJPEKLJL_FBPGILKIGBE,
         FightGameMode::FJPMJPEKLJL_MKHLALNLOLA,
+        FightGameMode::FJPMJPEKLJL_AAHDLLNEJEL,
     ];
 }
 
@@ -122,13 +127,14 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*\x94\x02\n\rFightGameMode\x12\x1b\n\x17FJPMJPE\
+    \n\x13FightGameMode.proto*\xb1\x02\n\rFightGameMode\x12\x1b\n\x17FJPMJPE\
     KLJL_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17FJPMJPEKLJL_EAMCPOPPHEN\x10\x01\x12\
     \x1b\n\x17FJPMJPEKLJL_KPEKNPODEKJ\x10\x02\x12\x1b\n\x17FJPMJPEKLJL_NHAAD\
     PKOCMK\x10\x03\x12\x1b\n\x17FJPMJPEKLJL_GCMNKEJIMFI\x10\x04\x12\x1b\n\
     \x17FJPMJPEKLJL_BBEAIOOHDBE\x10\x05\x12\x1b\n\x17FJPMJPEKLJL_BLBMAPAMFHE\
     \x10\x06\x12\x1b\n\x17FJPMJPEKLJL_FBPGILKIGBE\x10\x07\x12\x1b\n\x17FJPMJ\
-    PEKLJL_MKHLALNLOLA\x10\x08b\x06proto3\
+    PEKLJL_MKHLALNLOLA\x10\x08\x12\x1b\n\x17FJPMJPEKLJL_AAHDLLNEJEL\x10\tb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OHABCOEGDEH {
     // message fields
-    // @@protoc_insertion_point(field:OHABCOEGDEH.EJNBHKGOEKI)
-    pub EJNBHKGOEKI: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
+    // @@protoc_insertion_point(field:OHABCOEGDEH.business_day)
+    pub business_day: u32,
     // @@protoc_insertion_point(field:OHABCOEGDEH.FIHPPANOOFL)
     pub FIHPPANOOFL: ::std::vec::Vec<super::GLECNCOBKCJ::GLECNCOBKCJ>,
     // @@protoc_insertion_point(field:OHABCOEGDEH.FDGKBOIEHBD)
     pub FDGKBOIEHBD: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:OHABCOEGDEH.NMLFCGHPGEL)
     pub NMLFCGHPGEL: u32,
+    // @@protoc_insertion_point(field:OHABCOEGDEH.EJNBHKGOEKI)
+    pub EJNBHKGOEKI: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:OHABCOEGDEH.CANDCMOCAFH)
     pub CANDCMOCAFH: bool,
-    // @@protoc_insertion_point(field:OHABCOEGDEH.LFKDANGNJIM)
-    pub LFKDANGNJIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OHABCOEGDEH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,10 +59,10 @@ impl OHABCOEGDEH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
-            "EJNBHKGOEKI",
-            |m: &OHABCOEGDEH| { &m.EJNBHKGOEKI },
-            |m: &mut OHABCOEGDEH| { &mut m.EJNBHKGOEKI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "business_day",
+            |m: &OHABCOEGDEH| { &m.business_day },
+            |m: &mut OHABCOEGDEH| { &mut m.business_day },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FIHPPANOOFL",
@@ -79,15 +79,15 @@ impl OHABCOEGDEH {
             |m: &OHABCOEGDEH| { &m.NMLFCGHPGEL },
             |m: &mut OHABCOEGDEH| { &mut m.NMLFCGHPGEL },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
+            "EJNBHKGOEKI",
+            |m: &OHABCOEGDEH| { &m.EJNBHKGOEKI },
+            |m: &mut OHABCOEGDEH| { &mut m.EJNBHKGOEKI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CANDCMOCAFH",
             |m: &OHABCOEGDEH| { &m.CANDCMOCAFH },
             |m: &mut OHABCOEGDEH| { &mut m.CANDCMOCAFH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFKDANGNJIM",
-            |m: &OHABCOEGDEH| { &m.LFKDANGNJIM },
-            |m: &mut OHABCOEGDEH| { &mut m.LFKDANGNJIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHABCOEGDEH>(
             "OHABCOEGDEH",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for OHABCOEGDEH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJNBHKGOEKI)?;
+                16 => {
+                    self.business_day = is.read_uint32()?;
                 },
-                42 => {
+                74 => {
                     self.FIHPPANOOFL.push(is.read_message()?);
                 },
-                98 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDGKBOIEHBD)?;
                 },
-                72 => {
+                88 => {
                     self.NMLFCGHPGEL = is.read_uint32()?;
                 },
-                48 => {
-                    self.CANDCMOCAFH = is.read_bool()?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJNBHKGOEKI)?;
                 },
-                8 => {
-                    self.LFKDANGNJIM = is.read_uint32()?;
+                104 => {
+                    self.CANDCMOCAFH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,9 +137,8 @@ impl ::protobuf::Message for OHABCOEGDEH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EJNBHKGOEKI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.business_day != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.business_day);
         }
         for value in &self.FIHPPANOOFL {
             let len = value.compute_size();
@@ -150,13 +149,14 @@ impl ::protobuf::Message for OHABCOEGDEH {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.NMLFCGHPGEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NMLFCGHPGEL);
+            my_size += ::protobuf::rt::uint32_size(11, self.NMLFCGHPGEL);
+        }
+        if let Some(v) = self.EJNBHKGOEKI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.CANDCMOCAFH != false {
             my_size += 1 + 1;
-        }
-        if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LFKDANGNJIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,23 +164,23 @@ impl ::protobuf::Message for OHABCOEGDEH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EJNBHKGOEKI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.business_day != 0 {
+            os.write_uint32(2, self.business_day)?;
         }
         for v in &self.FIHPPANOOFL {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if let Some(v) = self.FDGKBOIEHBD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.NMLFCGHPGEL != 0 {
-            os.write_uint32(9, self.NMLFCGHPGEL)?;
+            os.write_uint32(11, self.NMLFCGHPGEL)?;
+        }
+        if let Some(v) = self.EJNBHKGOEKI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.CANDCMOCAFH != false {
-            os.write_bool(6, self.CANDCMOCAFH)?;
-        }
-        if self.LFKDANGNJIM != 0 {
-            os.write_uint32(1, self.LFKDANGNJIM)?;
+            os.write_bool(13, self.CANDCMOCAFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,23 +199,23 @@ impl ::protobuf::Message for OHABCOEGDEH {
     }
 
     fn clear(&mut self) {
-        self.EJNBHKGOEKI.clear();
+        self.business_day = 0;
         self.FIHPPANOOFL.clear();
         self.FDGKBOIEHBD.clear();
         self.NMLFCGHPGEL = 0;
+        self.EJNBHKGOEKI.clear();
         self.CANDCMOCAFH = false;
-        self.LFKDANGNJIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHABCOEGDEH {
         static instance: OHABCOEGDEH = OHABCOEGDEH {
-            EJNBHKGOEKI: ::protobuf::MessageField::none(),
+            business_day: 0,
             FIHPPANOOFL: ::std::vec::Vec::new(),
             FDGKBOIEHBD: ::protobuf::MessageField::none(),
             NMLFCGHPGEL: 0,
+            EJNBHKGOEKI: ::protobuf::MessageField::none(),
             CANDCMOCAFH: false,
-            LFKDANGNJIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,13 +241,13 @@ impl ::protobuf::reflect::ProtobufValue for OHABCOEGDEH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OHABCOEGDEH.proto\x1a\x11GLECNCOBKCJ.proto\x1a\x11NCFKHDIKCNI.prot\
-    o\"\x83\x02\n\x0bOHABCOEGDEH\x12.\n\x0bEJNBHKGOEKI\x18\r\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\x0bEJNBHKGOEKI\x12.\n\x0bFIHPPANOOFL\x18\x05\x20\x03(\
-    \x0b2\x0c.GLECNCOBKCJR\x0bFIHPPANOOFL\x12.\n\x0bFDGKBOIEHBD\x18\x0c\x20\
-    \x01(\x0b2\x0c.NCFKHDIKCNIR\x0bFDGKBOIEHBD\x12\x20\n\x0bNMLFCGHPGEL\x18\
-    \t\x20\x01(\rR\x0bNMLFCGHPGEL\x12\x20\n\x0bCANDCMOCAFH\x18\x06\x20\x01(\
-    \x08R\x0bCANDCMOCAFH\x12\x20\n\x0bLFKDANGNJIM\x18\x01\x20\x01(\rR\x0bLFK\
-    DANGNJIMb\x06proto3\
+    o\"\x84\x02\n\x0bOHABCOEGDEH\x12!\n\x0cbusiness_day\x18\x02\x20\x01(\rR\
+    \x0bbusinessDay\x12.\n\x0bFIHPPANOOFL\x18\t\x20\x03(\x0b2\x0c.GLECNCOBKC\
+    JR\x0bFIHPPANOOFL\x12.\n\x0bFDGKBOIEHBD\x18\n\x20\x01(\x0b2\x0c.NCFKHDIK\
+    CNIR\x0bFDGKBOIEHBD\x12\x20\n\x0bNMLFCGHPGEL\x18\x0b\x20\x01(\rR\x0bNMLF\
+    CGHPGEL\x12.\n\x0bEJNBHKGOEKI\x18\x0c\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0b\
+    EJNBHKGOEKI\x12\x20\n\x0bCANDCMOCAFH\x18\r\x20\x01(\x08R\x0bCANDCMOCAFHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

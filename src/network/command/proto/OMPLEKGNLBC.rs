@@ -30,10 +30,10 @@ pub struct OMPLEKGNLBC {
     // message fields
     // @@protoc_insertion_point(field:OMPLEKGNLBC.FMCGHNLBIKP)
     pub FMCGHNLBIKP: ::std::vec::Vec<super::OBDBODNJACD::OBDBODNJACD>,
-    // @@protoc_insertion_point(field:OMPLEKGNLBC.KPMKNBNOAFP)
-    pub KPMKNBNOAFP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OMPLEKGNLBC.PCKLCAEDJPC)
     pub PCKLCAEDJPC: bool,
+    // @@protoc_insertion_point(field:OMPLEKGNLBC.KPMKNBNOAFP)
+    pub KPMKNBNOAFP: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OMPLEKGNLBC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl OMPLEKGNLBC {
             |m: &OMPLEKGNLBC| { &m.FMCGHNLBIKP },
             |m: &mut OMPLEKGNLBC| { &mut m.FMCGHNLBIKP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KPMKNBNOAFP",
-            |m: &OMPLEKGNLBC| { &m.KPMKNBNOAFP },
-            |m: &mut OMPLEKGNLBC| { &mut m.KPMKNBNOAFP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PCKLCAEDJPC",
             |m: &OMPLEKGNLBC| { &m.PCKLCAEDJPC },
             |m: &mut OMPLEKGNLBC| { &mut m.PCKLCAEDJPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KPMKNBNOAFP",
+            |m: &OMPLEKGNLBC| { &m.KPMKNBNOAFP },
+            |m: &mut OMPLEKGNLBC| { &mut m.KPMKNBNOAFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OMPLEKGNLBC>(
             "OMPLEKGNLBC",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for OMPLEKGNLBC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.FMCGHNLBIKP.push(is.read_message()?);
                 },
-                10 => {
+                40 => {
+                    self.PCKLCAEDJPC = is.read_bool()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.KPMKNBNOAFP)?;
                 },
-                8 => {
+                120 => {
                     self.KPMKNBNOAFP.push(is.read_uint32()?);
-                },
-                16 => {
-                    self.PCKLCAEDJPC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -114,10 +114,10 @@ impl ::protobuf::Message for OMPLEKGNLBC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KPMKNBNOAFP);
         if self.PCKLCAEDJPC != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KPMKNBNOAFP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for OMPLEKGNLBC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FMCGHNLBIKP {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(1, &self.KPMKNBNOAFP)?;
         if self.PCKLCAEDJPC != false {
-            os.write_bool(2, self.PCKLCAEDJPC)?;
+            os.write_bool(5, self.PCKLCAEDJPC)?;
         }
+        os.write_repeated_packed_uint32(15, &self.KPMKNBNOAFP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for OMPLEKGNLBC {
 
     fn clear(&mut self) {
         self.FMCGHNLBIKP.clear();
-        self.KPMKNBNOAFP.clear();
         self.PCKLCAEDJPC = false;
+        self.KPMKNBNOAFP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMPLEKGNLBC {
         static instance: OMPLEKGNLBC = OMPLEKGNLBC {
             FMCGHNLBIKP: ::std::vec::Vec::new(),
-            KPMKNBNOAFP: ::std::vec::Vec::new(),
             PCKLCAEDJPC: false,
+            KPMKNBNOAFP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for OMPLEKGNLBC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OMPLEKGNLBC.proto\x1a\x11OBDBODNJACD.proto\"\x81\x01\n\x0bOMPLEKGN\
-    LBC\x12.\n\x0bFMCGHNLBIKP\x18\n\x20\x03(\x0b2\x0c.OBDBODNJACDR\x0bFMCGHN\
-    LBIKP\x12\x20\n\x0bKPMKNBNOAFP\x18\x01\x20\x03(\rR\x0bKPMKNBNOAFP\x12\
-    \x20\n\x0bPCKLCAEDJPC\x18\x02\x20\x01(\x08R\x0bPCKLCAEDJPCb\x06proto3\
+    LBC\x12.\n\x0bFMCGHNLBIKP\x18\x01\x20\x03(\x0b2\x0c.OBDBODNJACDR\x0bFMCG\
+    HNLBIKP\x12\x20\n\x0bPCKLCAEDJPC\x18\x05\x20\x01(\x08R\x0bPCKLCAEDJPC\
+    \x12\x20\n\x0bKPMKNBNOAFP\x18\x0f\x20\x03(\rR\x0bKPMKNBNOAFPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

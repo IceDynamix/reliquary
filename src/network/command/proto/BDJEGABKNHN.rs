@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BDJEGABKNHN {
     // message fields
-    // @@protoc_insertion_point(field:BDJEGABKNHN.PPHEKHLLFHC)
-    pub PPHEKHLLFHC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BDJEGABKNHN.ICAOKNPHKGN)
     pub ICAOKNPHKGN: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:BDJEGABKNHN.PPHEKHLLFHC)
+    pub PPHEKHLLFHC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:BDJEGABKNHN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BDJEGABKNHN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PPHEKHLLFHC",
-            |m: &BDJEGABKNHN| { &m.PPHEKHLLFHC },
-            |m: &mut BDJEGABKNHN| { &mut m.PPHEKHLLFHC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "ICAOKNPHKGN",
             |m: &BDJEGABKNHN| { &m.ICAOKNPHKGN },
             |m: &mut BDJEGABKNHN| { &mut m.ICAOKNPHKGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PPHEKHLLFHC",
+            |m: &BDJEGABKNHN| { &m.PPHEKHLLFHC },
+            |m: &mut BDJEGABKNHN| { &mut m.PPHEKHLLFHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BDJEGABKNHN>(
             "BDJEGABKNHN",
@@ -79,13 +79,7 @@ impl ::protobuf::Message for BDJEGABKNHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PPHEKHLLFHC)?;
-                },
-                112 => {
-                    self.PPHEKHLLFHC.push(is.read_uint32()?);
-                },
-                18 => {
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -100,6 +94,12 @@ impl ::protobuf::Message for BDJEGABKNHN {
                     is.pop_limit(old_limit);
                     self.ICAOKNPHKGN.insert(key, value);
                 },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PPHEKHLLFHC)?;
+                },
+                72 => {
+                    self.PPHEKHLLFHC.push(is.read_uint32()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -112,29 +112,29 @@ impl ::protobuf::Message for BDJEGABKNHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.PPHEKHLLFHC);
         for (k, v) in &self.ICAOKNPHKGN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PPHEKHLLFHC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.PPHEKHLLFHC)?;
         for (k, v) in &self.ICAOKNPHKGN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        os.write_repeated_packed_uint32(9, &self.PPHEKHLLFHC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,8 +152,8 @@ impl ::protobuf::Message for BDJEGABKNHN {
     }
 
     fn clear(&mut self) {
-        self.PPHEKHLLFHC.clear();
         self.ICAOKNPHKGN.clear();
+        self.PPHEKHLLFHC.clear();
         self.special_fields.clear();
     }
 
@@ -181,11 +181,11 @@ impl ::protobuf::reflect::ProtobufValue for BDJEGABKNHN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BDJEGABKNHN.proto\"\xb0\x01\n\x0bBDJEGABKNHN\x12\x20\n\x0bPPHEKHLL\
-    FHC\x18\x0e\x20\x03(\rR\x0bPPHEKHLLFHC\x12?\n\x0bICAOKNPHKGN\x18\x02\x20\
-    \x03(\x0b2\x1d.BDJEGABKNHN.ICAOKNPHKGNEntryR\x0bICAOKNPHKGN\x1a>\n\x10IC\
-    AOKNPHKGNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05\
-    value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11BDJEGABKNHN.proto\"\xb0\x01\n\x0bBDJEGABKNHN\x12?\n\x0bICAOKNPHKGN\
+    \x18\x05\x20\x03(\x0b2\x1d.BDJEGABKNHN.ICAOKNPHKGNEntryR\x0bICAOKNPHKGN\
+    \x12\x20\n\x0bPPHEKHLLFHC\x18\t\x20\x03(\rR\x0bPPHEKHLLFHC\x1a>\n\x10ICA\
+    OKNPHKGNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

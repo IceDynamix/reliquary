@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GFGEMCJLGPP {
     // message fields
-    // @@protoc_insertion_point(field:GFGEMCJLGPP.BGJAEJKJCFP)
-    pub BGJAEJKJCFP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GFGEMCJLGPP.IFMCCMLCBGP)
     pub IFMCCMLCBGP: u32,
+    // @@protoc_insertion_point(field:GFGEMCJLGPP.BGJAEJKJCFP)
+    pub BGJAEJKJCFP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GFGEMCJLGPP.content_id)
     pub content_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl GFGEMCJLGPP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BGJAEJKJCFP",
-            |m: &GFGEMCJLGPP| { &m.BGJAEJKJCFP },
-            |m: &mut GFGEMCJLGPP| { &mut m.BGJAEJKJCFP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFMCCMLCBGP",
             |m: &GFGEMCJLGPP| { &m.IFMCCMLCBGP },
             |m: &mut GFGEMCJLGPP| { &mut m.IFMCCMLCBGP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BGJAEJKJCFP",
+            |m: &GFGEMCJLGPP| { &m.BGJAEJKJCFP },
+            |m: &mut GFGEMCJLGPP| { &mut m.BGJAEJKJCFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "content_id",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for GFGEMCJLGPP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BGJAEJKJCFP)?;
-                },
-                24 => {
-                    self.BGJAEJKJCFP.push(is.read_uint32()?);
-                },
-                88 => {
+                64 => {
                     self.IFMCCMLCBGP = is.read_uint32()?;
                 },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BGJAEJKJCFP)?;
+                },
                 80 => {
+                    self.BGJAEJKJCFP.push(is.read_uint32()?);
+                },
+                96 => {
                     self.content_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for GFGEMCJLGPP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BGJAEJKJCFP);
         if self.IFMCCMLCBGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IFMCCMLCBGP);
+            my_size += ::protobuf::rt::uint32_size(8, self.IFMCCMLCBGP);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.BGJAEJKJCFP);
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for GFGEMCJLGPP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.BGJAEJKJCFP)?;
         if self.IFMCCMLCBGP != 0 {
-            os.write_uint32(11, self.IFMCCMLCBGP)?;
+            os.write_uint32(8, self.IFMCCMLCBGP)?;
         }
+        os.write_repeated_packed_uint32(10, &self.BGJAEJKJCFP)?;
         if self.content_id != 0 {
-            os.write_uint32(10, self.content_id)?;
+            os.write_uint32(12, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for GFGEMCJLGPP {
     }
 
     fn clear(&mut self) {
-        self.BGJAEJKJCFP.clear();
         self.IFMCCMLCBGP = 0;
+        self.BGJAEJKJCFP.clear();
         self.content_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GFGEMCJLGPP {
         static instance: GFGEMCJLGPP = GFGEMCJLGPP {
-            BGJAEJKJCFP: ::std::vec::Vec::new(),
             IFMCCMLCBGP: 0,
+            BGJAEJKJCFP: ::std::vec::Vec::new(),
             content_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for GFGEMCJLGPP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFGEMCJLGPP.proto\"p\n\x0bGFGEMCJLGPP\x12\x20\n\x0bBGJAEJKJCFP\x18\
-    \x03\x20\x03(\rR\x0bBGJAEJKJCFP\x12\x20\n\x0bIFMCCMLCBGP\x18\x0b\x20\x01\
-    (\rR\x0bIFMCCMLCBGP\x12\x1d\n\ncontent_id\x18\n\x20\x01(\rR\tcontentIdb\
+    \n\x11GFGEMCJLGPP.proto\"p\n\x0bGFGEMCJLGPP\x12\x20\n\x0bIFMCCMLCBGP\x18\
+    \x08\x20\x01(\rR\x0bIFMCCMLCBGP\x12\x20\n\x0bBGJAEJKJCFP\x18\n\x20\x03(\
+    \rR\x0bBGJAEJKJCFP\x12\x1d\n\ncontent_id\x18\x0c\x20\x01(\rR\tcontentIdb\
     \x06proto3\
 ";
 

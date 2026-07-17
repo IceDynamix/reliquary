@@ -28,16 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EFDAIBDBFEA {
     // message fields
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.HFCJPCKONIF)
-    pub HFCJPCKONIF: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.NPHAJEKCBKF)
-    pub NPHAJEKCBKF: u32,
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.AADNIFFHHDD)
-    pub AADNIFFHHDD: u32,
-    // @@protoc_insertion_point(field:EFDAIBDBFEA.LJCEOGPOGBE)
-    pub LJCEOGPOGBE: u32,
     // @@protoc_insertion_point(field:EFDAIBDBFEA.DGGCFDKJDPO)
     pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:EFDAIBDBFEA.LJCEOGPOGBE)
+    pub LJCEOGPOGBE: u32,
+    // @@protoc_insertion_point(field:EFDAIBDBFEA.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
+    // @@protoc_insertion_point(field:EFDAIBDBFEA.total_count)
+    pub total_count: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EFDAIBDBFEA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,22 +53,12 @@ impl EFDAIBDBFEA {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "HFCJPCKONIF",
-            |m: &EFDAIBDBFEA| { &m.HFCJPCKONIF },
-            |m: &mut EFDAIBDBFEA| { &mut m.HFCJPCKONIF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPHAJEKCBKF",
-            |m: &EFDAIBDBFEA| { &m.NPHAJEKCBKF },
-            |m: &mut EFDAIBDBFEA| { &mut m.NPHAJEKCBKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AADNIFFHHDD",
-            |m: &EFDAIBDBFEA| { &m.AADNIFFHHDD },
-            |m: &mut EFDAIBDBFEA| { &mut m.AADNIFFHHDD },
+            "DGGCFDKJDPO",
+            |m: &EFDAIBDBFEA| { &m.DGGCFDKJDPO },
+            |m: &mut EFDAIBDBFEA| { &mut m.DGGCFDKJDPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJCEOGPOGBE",
@@ -78,9 +66,14 @@ impl EFDAIBDBFEA {
             |m: &mut EFDAIBDBFEA| { &mut m.LJCEOGPOGBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGGCFDKJDPO",
-            |m: &EFDAIBDBFEA| { &m.DGGCFDKJDPO },
-            |m: &mut EFDAIBDBFEA| { &mut m.DGGCFDKJDPO },
+            "NPHAJEKCBKF",
+            |m: &EFDAIBDBFEA| { &m.NPHAJEKCBKF },
+            |m: &mut EFDAIBDBFEA| { &mut m.NPHAJEKCBKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_count",
+            |m: &EFDAIBDBFEA| { &m.total_count },
+            |m: &mut EFDAIBDBFEA| { &mut m.total_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EFDAIBDBFEA>(
             "EFDAIBDBFEA",
@@ -100,32 +93,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.HFCJPCKONIF.insert(key, value);
+                16 => {
+                    self.DGGCFDKJDPO = is.read_uint32()?;
                 },
-                8 => {
-                    self.NPHAJEKCBKF = is.read_uint32()?;
-                },
-                56 => {
-                    self.AADNIFFHHDD = is.read_uint32()?;
-                },
-                120 => {
+                32 => {
                     self.LJCEOGPOGBE = is.read_uint32()?;
                 },
-                48 => {
-                    self.DGGCFDKJDPO = is.read_uint32()?;
+                80 => {
+                    self.NPHAJEKCBKF = is.read_uint32()?;
+                },
+                88 => {
+                    self.total_count = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -139,23 +117,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.HFCJPCKONIF {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NPHAJEKCBKF);
-        }
-        if self.AADNIFFHHDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AADNIFFHHDD);
+        if self.DGGCFDKJDPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DGGCFDKJDPO);
         }
         if self.LJCEOGPOGBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.LJCEOGPOGBE);
+            my_size += ::protobuf::rt::uint32_size(4, self.LJCEOGPOGBE);
         }
-        if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DGGCFDKJDPO);
+        if self.NPHAJEKCBKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.NPHAJEKCBKF);
+        }
+        if self.total_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.total_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,26 +135,17 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.HFCJPCKONIF {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
-        if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(1, self.NPHAJEKCBKF)?;
-        }
-        if self.AADNIFFHHDD != 0 {
-            os.write_uint32(7, self.AADNIFFHHDD)?;
+        if self.DGGCFDKJDPO != 0 {
+            os.write_uint32(2, self.DGGCFDKJDPO)?;
         }
         if self.LJCEOGPOGBE != 0 {
-            os.write_uint32(15, self.LJCEOGPOGBE)?;
+            os.write_uint32(4, self.LJCEOGPOGBE)?;
         }
-        if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(6, self.DGGCFDKJDPO)?;
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(10, self.NPHAJEKCBKF)?;
+        }
+        if self.total_count != 0 {
+            os.write_uint32(11, self.total_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -201,17 +164,22 @@ impl ::protobuf::Message for EFDAIBDBFEA {
     }
 
     fn clear(&mut self) {
-        self.HFCJPCKONIF.clear();
-        self.NPHAJEKCBKF = 0;
-        self.AADNIFFHHDD = 0;
-        self.LJCEOGPOGBE = 0;
         self.DGGCFDKJDPO = 0;
+        self.LJCEOGPOGBE = 0;
+        self.NPHAJEKCBKF = 0;
+        self.total_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EFDAIBDBFEA {
-        static instance: ::protobuf::rt::Lazy<EFDAIBDBFEA> = ::protobuf::rt::Lazy::new();
-        instance.get(EFDAIBDBFEA::new)
+        static instance: EFDAIBDBFEA = EFDAIBDBFEA {
+            DGGCFDKJDPO: 0,
+            LJCEOGPOGBE: 0,
+            NPHAJEKCBKF: 0,
+            total_count: 0,
+            special_fields: ::protobuf::SpecialFields::new(),
+        };
+        &instance
     }
 }
 
@@ -233,14 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for EFDAIBDBFEA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EFDAIBDBFEA.proto\"\x96\x02\n\x0bEFDAIBDBFEA\x12?\n\x0bHFCJPCKONIF\
-    \x18\n\x20\x03(\x0b2\x1d.EFDAIBDBFEA.HFCJPCKONIFEntryR\x0bHFCJPCKONIF\
-    \x12\x20\n\x0bNPHAJEKCBKF\x18\x01\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x20\n\
-    \x0bAADNIFFHHDD\x18\x07\x20\x01(\rR\x0bAADNIFFHHDD\x12\x20\n\x0bLJCEOGPO\
-    GBE\x18\x0f\x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bDGGCFDKJDPO\x18\x06\
-    \x20\x01(\rR\x0bDGGCFDKJDPO\x1a>\n\x10HFCJPCKONIFEntry\x12\x10\n\x03key\
-    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
-    lue:\x028\x01b\x06proto3\
+    \n\x11EFDAIBDBFEA.proto\"\x94\x01\n\x0bEFDAIBDBFEA\x12\x20\n\x0bDGGCFDKJ\
+    DPO\x18\x02\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bLJCEOGPOGBE\x18\x04\
+    \x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bNPHAJEKCBKF\x18\n\x20\x01(\rR\
+    \x0bNPHAJEKCBKF\x12\x1f\n\x0btotal_count\x18\x0b\x20\x01(\rR\ntotalCount\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

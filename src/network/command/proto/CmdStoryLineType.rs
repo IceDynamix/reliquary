@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdStoryLineType {
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_NLCDGIPGFDJ)
     ALMBGGJDJBJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_GGCEHNECGME)
-    ALMBGGJDJBJ_GGCEHNECGME = 6203,
-    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_ENFDDEPECJC)
-    ALMBGGJDJBJ_ENFDDEPECJC = 6273,
-    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_DFIHCMLNFNH)
-    ALMBGGJDJBJ_DFIHCMLNFNH = 6280,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_CLJOALCHHGE)
-    ALMBGGJDJBJ_CLJOALCHHGE = 6213,
+    ALMBGGJDJBJ_CLJOALCHHGE = 6281,
+    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_DFIHCMLNFNH)
+    ALMBGGJDJBJ_DFIHCMLNFNH = 6293,
+    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_ENFDDEPECJC)
+    ALMBGGJDJBJ_ENFDDEPECJC = 6225,
     // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_KOPAFCJLIKC)
-    ALMBGGJDJBJ_KOPAFCJLIKC = 6215,
+    ALMBGGJDJBJ_KOPAFCJLIKC = 6286,
+    // @@protoc_insertion_point(enum_value:CmdStoryLineType.ALMBGGJDJBJ_GGCEHNECGME)
+    ALMBGGJDJBJ_GGCEHNECGME = 6278,
 }
 
 impl ::protobuf::Enum for CmdStoryLineType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdStoryLineType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdStoryLineType> {
         match value {
             0 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_NLCDGIPGFDJ),
-            6203 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME),
-            6273 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC),
-            6280 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH),
-            6213 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE),
-            6215 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC),
+            6281 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE),
+            6293 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH),
+            6225 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC),
+            6286 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC),
+            6278 => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for CmdStoryLineType {
     fn from_str(str: &str) -> ::std::option::Option<CmdStoryLineType> {
         match str {
             "ALMBGGJDJBJ_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_NLCDGIPGFDJ),
-            "ALMBGGJDJBJ_GGCEHNECGME" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME),
-            "ALMBGGJDJBJ_ENFDDEPECJC" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC),
-            "ALMBGGJDJBJ_DFIHCMLNFNH" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH),
             "ALMBGGJDJBJ_CLJOALCHHGE" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE),
+            "ALMBGGJDJBJ_DFIHCMLNFNH" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH),
+            "ALMBGGJDJBJ_ENFDDEPECJC" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC),
             "ALMBGGJDJBJ_KOPAFCJLIKC" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC),
+            "ALMBGGJDJBJ_GGCEHNECGME" => ::std::option::Option::Some(CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdStoryLineType] = &[
         CmdStoryLineType::ALMBGGJDJBJ_NLCDGIPGFDJ,
-        CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME,
-        CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC,
-        CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH,
         CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE,
+        CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH,
+        CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC,
         CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC,
+        CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for CmdStoryLineType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdStoryLineType::ALMBGGJDJBJ_NLCDGIPGFDJ => 0,
-            CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME => 1,
-            CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC => 2,
-            CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH => 3,
-            CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE => 4,
-            CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC => 5,
+            CmdStoryLineType::ALMBGGJDJBJ_CLJOALCHHGE => 1,
+            CmdStoryLineType::ALMBGGJDJBJ_DFIHCMLNFNH => 2,
+            CmdStoryLineType::ALMBGGJDJBJ_ENFDDEPECJC => 3,
+            CmdStoryLineType::ALMBGGJDJBJ_KOPAFCJLIKC => 4,
+            CmdStoryLineType::ALMBGGJDJBJ_GGCEHNECGME => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl CmdStoryLineType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CmdStoryLineType.proto*\xc5\x01\n\x10CmdStoryLineType\x12\x1b\n\
-    \x17ALMBGGJDJBJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ALMBGGJDJBJ_GGCEHNECGME\
-    \x10\xbb0\x12\x1c\n\x17ALMBGGJDJBJ_ENFDDEPECJC\x10\x811\x12\x1c\n\x17ALM\
-    BGGJDJBJ_DFIHCMLNFNH\x10\x881\x12\x1c\n\x17ALMBGGJDJBJ_CLJOALCHHGE\x10\
-    \xc50\x12\x1c\n\x17ALMBGGJDJBJ_KOPAFCJLIKC\x10\xc70b\x06proto3\
+    \x17ALMBGGJDJBJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ALMBGGJDJBJ_CLJOALCHHGE\
+    \x10\x891\x12\x1c\n\x17ALMBGGJDJBJ_DFIHCMLNFNH\x10\x951\x12\x1c\n\x17ALM\
+    BGGJDJBJ_ENFDDEPECJC\x10\xd10\x12\x1c\n\x17ALMBGGJDJBJ_KOPAFCJLIKC\x10\
+    \x8e1\x12\x1c\n\x17ALMBGGJDJBJ_GGCEHNECGME\x10\x861b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

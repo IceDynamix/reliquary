@@ -79,10 +79,10 @@ impl ::protobuf::Message for FBFBMMAAFCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.NBPFMFMKJHI = is.read_uint32()?;
                 },
-                32 => {
+                120 => {
                     self.EMFCEMPHOPI = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FBFBMMAAFCP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NBPFMFMKJHI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NBPFMFMKJHI);
+            my_size += ::protobuf::rt::uint32_size(12, self.NBPFMFMKJHI);
         }
         if self.EMFCEMPHOPI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EMFCEMPHOPI);
+            my_size += ::protobuf::rt::uint32_size(15, self.EMFCEMPHOPI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FBFBMMAAFCP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NBPFMFMKJHI != 0 {
-            os.write_uint32(15, self.NBPFMFMKJHI)?;
+            os.write_uint32(12, self.NBPFMFMKJHI)?;
         }
         if self.EMFCEMPHOPI != 0 {
-            os.write_uint32(4, self.EMFCEMPHOPI)?;
+            os.write_uint32(15, self.EMFCEMPHOPI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FBFBMMAAFCP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FBFBMMAAFCP.proto\"Q\n\x0bFBFBMMAAFCP\x12\x20\n\x0bNBPFMFMKJHI\x18\
-    \x0f\x20\x01(\rR\x0bNBPFMFMKJHI\x12\x20\n\x0bEMFCEMPHOPI\x18\x04\x20\x01\
+    \x0c\x20\x01(\rR\x0bNBPFMFMKJHI\x12\x20\n\x0bEMFCEMPHOPI\x18\x0f\x20\x01\
     (\rR\x0bEMFCEMPHOPIb\x06proto3\
 ";
 

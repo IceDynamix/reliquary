@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOIFLHMPBIF {
     // message fields
-    // @@protoc_insertion_point(field:EOIFLHMPBIF.GHNJCLNKGHH)
-    pub GHNJCLNKGHH: ::protobuf::EnumOrUnknown<super::MMFOGJPOHGJ::MMFOGJPOHGJ>,
+    // @@protoc_insertion_point(field:EOIFLHMPBIF.owner_type)
+    pub owner_type: ::protobuf::EnumOrUnknown<super::MMFOGJPOHGJ::MMFOGJPOHGJ>,
     // @@protoc_insertion_point(field:EOIFLHMPBIF.GAHFPGCPAJA)
     pub GAHFPGCPAJA: u64,
     // special fields
@@ -52,9 +52,9 @@ impl EOIFLHMPBIF {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHNJCLNKGHH",
-            |m: &EOIFLHMPBIF| { &m.GHNJCLNKGHH },
-            |m: &mut EOIFLHMPBIF| { &mut m.GHNJCLNKGHH },
+            "owner_type",
+            |m: &EOIFLHMPBIF| { &m.owner_type },
+            |m: &mut EOIFLHMPBIF| { &mut m.owner_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GAHFPGCPAJA",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for EOIFLHMPBIF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
+                    self.owner_type = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                88 => {
                     self.GAHFPGCPAJA = is.read_uint64()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EOIFLHMPBIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(3, self.GHNJCLNKGHH.value());
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(3, self.owner_type.value());
         }
         if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.GAHFPGCPAJA);
+            my_size += ::protobuf::rt::uint64_size(11, self.GAHFPGCPAJA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EOIFLHMPBIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.owner_type))?;
         }
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint64(15, self.GAHFPGCPAJA)?;
+            os.write_uint64(11, self.GAHFPGCPAJA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for EOIFLHMPBIF {
     }
 
     fn clear(&mut self) {
-        self.GHNJCLNKGHH = ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ);
+        self.owner_type = ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ);
         self.GAHFPGCPAJA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOIFLHMPBIF {
         static instance: EOIFLHMPBIF = EOIFLHMPBIF {
-            GHNJCLNKGHH: ::protobuf::EnumOrUnknown::from_i32(0),
+            owner_type: ::protobuf::EnumOrUnknown::from_i32(0),
             GAHFPGCPAJA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for EOIFLHMPBIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EOIFLHMPBIF.proto\x1a\x11MMFOGJPOHGJ.proto\"_\n\x0bEOIFLHMPBIF\x12\
-    .\n\x0bGHNJCLNKGHH\x18\x03\x20\x01(\x0e2\x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\
-    \x12\x20\n\x0bGAHFPGCPAJA\x18\x0f\x20\x01(\x04R\x0bGAHFPGCPAJAb\x06proto\
+    \n\x11EOIFLHMPBIF.proto\x1a\x11MMFOGJPOHGJ.proto\"\\\n\x0bEOIFLHMPBIF\
+    \x12+\n\nowner_type\x18\x03\x20\x01(\x0e2\x0c.MMFOGJPOHGJR\townerType\
+    \x12\x20\n\x0bGAHFPGCPAJA\x18\x0b\x20\x01(\x04R\x0bGAHFPGCPAJAb\x06proto\
     3\
 ";
 

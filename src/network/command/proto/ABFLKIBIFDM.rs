@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ABFLKIBIFDM {
     // message fields
-    // @@protoc_insertion_point(field:ABFLKIBIFDM.AEPMEGILLOJ)
-    pub AEPMEGILLOJ: f64,
-    // @@protoc_insertion_point(field:ABFLKIBIFDM.HIFNHNLNDPN)
-    pub HIFNHNLNDPN: f64,
     // @@protoc_insertion_point(field:ABFLKIBIFDM.JEOFBDLFCOL)
     pub JEOFBDLFCOL: u32,
-    // @@protoc_insertion_point(field:ABFLKIBIFDM.IBNLKOLLPJH)
-    pub IBNLKOLLPJH: u32,
+    // @@protoc_insertion_point(field:ABFLKIBIFDM.HIFNHNLNDPN)
+    pub HIFNHNLNDPN: f64,
     // @@protoc_insertion_point(field:ABFLKIBIFDM.JGFKNDMDHHP)
     pub JGFKNDMDHHP: f64,
     // @@protoc_insertion_point(field:ABFLKIBIFDM.wave)
     pub wave: u32,
+    // @@protoc_insertion_point(field:ABFLKIBIFDM.IBNLKOLLPJH)
+    pub IBNLKOLLPJH: u32,
+    // @@protoc_insertion_point(field:ABFLKIBIFDM.AEPMEGILLOJ)
+    pub AEPMEGILLOJ: f64,
     // @@protoc_insertion_point(field:ABFLKIBIFDM.MINCPOKEPDP)
     pub MINCPOKEPDP: f64,
     // special fields
@@ -62,24 +62,14 @@ impl ABFLKIBIFDM {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEPMEGILLOJ",
-            |m: &ABFLKIBIFDM| { &m.AEPMEGILLOJ },
-            |m: &mut ABFLKIBIFDM| { &mut m.AEPMEGILLOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIFNHNLNDPN",
-            |m: &ABFLKIBIFDM| { &m.HIFNHNLNDPN },
-            |m: &mut ABFLKIBIFDM| { &mut m.HIFNHNLNDPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JEOFBDLFCOL",
             |m: &ABFLKIBIFDM| { &m.JEOFBDLFCOL },
             |m: &mut ABFLKIBIFDM| { &mut m.JEOFBDLFCOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBNLKOLLPJH",
-            |m: &ABFLKIBIFDM| { &m.IBNLKOLLPJH },
-            |m: &mut ABFLKIBIFDM| { &mut m.IBNLKOLLPJH },
+            "HIFNHNLNDPN",
+            |m: &ABFLKIBIFDM| { &m.HIFNHNLNDPN },
+            |m: &mut ABFLKIBIFDM| { &mut m.HIFNHNLNDPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JGFKNDMDHHP",
@@ -90,6 +80,16 @@ impl ABFLKIBIFDM {
             "wave",
             |m: &ABFLKIBIFDM| { &m.wave },
             |m: &mut ABFLKIBIFDM| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IBNLKOLLPJH",
+            |m: &ABFLKIBIFDM| { &m.IBNLKOLLPJH },
+            |m: &mut ABFLKIBIFDM| { &mut m.IBNLKOLLPJH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AEPMEGILLOJ",
+            |m: &ABFLKIBIFDM| { &m.AEPMEGILLOJ },
+            |m: &mut ABFLKIBIFDM| { &mut m.AEPMEGILLOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MINCPOKEPDP",
@@ -114,23 +114,23 @@ impl ::protobuf::Message for ABFLKIBIFDM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                49 => {
-                    self.AEPMEGILLOJ = is.read_double()?;
-                },
-                17 => {
-                    self.HIFNHNLNDPN = is.read_double()?;
-                },
                 8 => {
                     self.JEOFBDLFCOL = is.read_uint32()?;
                 },
-                40 => {
-                    self.IBNLKOLLPJH = is.read_uint32()?;
+                17 => {
+                    self.HIFNHNLNDPN = is.read_double()?;
                 },
                 25 => {
                     self.JGFKNDMDHHP = is.read_double()?;
                 },
                 32 => {
                     self.wave = is.read_uint32()?;
+                },
+                40 => {
+                    self.IBNLKOLLPJH = is.read_uint32()?;
+                },
+                49 => {
+                    self.AEPMEGILLOJ = is.read_double()?;
                 },
                 57 => {
                     self.MINCPOKEPDP = is.read_double()?;
@@ -147,23 +147,23 @@ impl ::protobuf::Message for ABFLKIBIFDM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AEPMEGILLOJ != 0. {
-            my_size += 1 + 8;
-        }
-        if self.HIFNHNLNDPN != 0. {
-            my_size += 1 + 8;
-        }
         if self.JEOFBDLFCOL != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.JEOFBDLFCOL);
         }
-        if self.IBNLKOLLPJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IBNLKOLLPJH);
+        if self.HIFNHNLNDPN != 0. {
+            my_size += 1 + 8;
         }
         if self.JGFKNDMDHHP != 0. {
             my_size += 1 + 8;
         }
         if self.wave != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.wave);
+        }
+        if self.IBNLKOLLPJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IBNLKOLLPJH);
+        }
+        if self.AEPMEGILLOJ != 0. {
+            my_size += 1 + 8;
         }
         if self.MINCPOKEPDP != 0. {
             my_size += 1 + 8;
@@ -174,23 +174,23 @@ impl ::protobuf::Message for ABFLKIBIFDM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AEPMEGILLOJ != 0. {
-            os.write_double(6, self.AEPMEGILLOJ)?;
-        }
-        if self.HIFNHNLNDPN != 0. {
-            os.write_double(2, self.HIFNHNLNDPN)?;
-        }
         if self.JEOFBDLFCOL != 0 {
             os.write_uint32(1, self.JEOFBDLFCOL)?;
         }
-        if self.IBNLKOLLPJH != 0 {
-            os.write_uint32(5, self.IBNLKOLLPJH)?;
+        if self.HIFNHNLNDPN != 0. {
+            os.write_double(2, self.HIFNHNLNDPN)?;
         }
         if self.JGFKNDMDHHP != 0. {
             os.write_double(3, self.JGFKNDMDHHP)?;
         }
         if self.wave != 0 {
             os.write_uint32(4, self.wave)?;
+        }
+        if self.IBNLKOLLPJH != 0 {
+            os.write_uint32(5, self.IBNLKOLLPJH)?;
+        }
+        if self.AEPMEGILLOJ != 0. {
+            os.write_double(6, self.AEPMEGILLOJ)?;
         }
         if self.MINCPOKEPDP != 0. {
             os.write_double(7, self.MINCPOKEPDP)?;
@@ -212,24 +212,24 @@ impl ::protobuf::Message for ABFLKIBIFDM {
     }
 
     fn clear(&mut self) {
-        self.AEPMEGILLOJ = 0.;
-        self.HIFNHNLNDPN = 0.;
         self.JEOFBDLFCOL = 0;
-        self.IBNLKOLLPJH = 0;
+        self.HIFNHNLNDPN = 0.;
         self.JGFKNDMDHHP = 0.;
         self.wave = 0;
+        self.IBNLKOLLPJH = 0;
+        self.AEPMEGILLOJ = 0.;
         self.MINCPOKEPDP = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ABFLKIBIFDM {
         static instance: ABFLKIBIFDM = ABFLKIBIFDM {
-            AEPMEGILLOJ: 0.,
-            HIFNHNLNDPN: 0.,
             JEOFBDLFCOL: 0,
-            IBNLKOLLPJH: 0,
+            HIFNHNLNDPN: 0.,
             JGFKNDMDHHP: 0.,
             wave: 0,
+            IBNLKOLLPJH: 0,
+            AEPMEGILLOJ: 0.,
             MINCPOKEPDP: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -255,12 +255,12 @@ impl ::protobuf::reflect::ProtobufValue for ABFLKIBIFDM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABFLKIBIFDM.proto\"\xed\x01\n\x0bABFLKIBIFDM\x12\x20\n\x0bAEPMEGIL\
-    LOJ\x18\x06\x20\x01(\x01R\x0bAEPMEGILLOJ\x12\x20\n\x0bHIFNHNLNDPN\x18\
-    \x02\x20\x01(\x01R\x0bHIFNHNLNDPN\x12\x20\n\x0bJEOFBDLFCOL\x18\x01\x20\
-    \x01(\rR\x0bJEOFBDLFCOL\x12\x20\n\x0bIBNLKOLLPJH\x18\x05\x20\x01(\rR\x0b\
-    IBNLKOLLPJH\x12\x20\n\x0bJGFKNDMDHHP\x18\x03\x20\x01(\x01R\x0bJGFKNDMDHH\
-    P\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04wave\x12\x20\n\x0bMINCPOKEPDP\
+    \n\x11ABFLKIBIFDM.proto\"\xed\x01\n\x0bABFLKIBIFDM\x12\x20\n\x0bJEOFBDLF\
+    COL\x18\x01\x20\x01(\rR\x0bJEOFBDLFCOL\x12\x20\n\x0bHIFNHNLNDPN\x18\x02\
+    \x20\x01(\x01R\x0bHIFNHNLNDPN\x12\x20\n\x0bJGFKNDMDHHP\x18\x03\x20\x01(\
+    \x01R\x0bJGFKNDMDHHP\x12\x12\n\x04wave\x18\x04\x20\x01(\rR\x04wave\x12\
+    \x20\n\x0bIBNLKOLLPJH\x18\x05\x20\x01(\rR\x0bIBNLKOLLPJH\x12\x20\n\x0bAE\
+    PMEGILLOJ\x18\x06\x20\x01(\x01R\x0bAEPMEGILLOJ\x12\x20\n\x0bMINCPOKEPDP\
     \x18\x07\x20\x01(\x01R\x0bMINCPOKEPDPb\x06proto3\
 ";
 

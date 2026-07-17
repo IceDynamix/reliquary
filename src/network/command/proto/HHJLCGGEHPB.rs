@@ -32,8 +32,6 @@ pub struct HHJLCGGEHPB {
     pub CILGIDDHODG: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // @@protoc_insertion_point(field:HHJLCGGEHPB.PLPPPCEPBDO)
     pub PLPPPCEPBDO: u32,
-    // @@protoc_insertion_point(field:HHJLCGGEHPB.NPAIFCLAPNH)
-    pub NPAIFCLAPNH: i64,
     // @@protoc_insertion_point(field:HHJLCGGEHPB.KFACPOBAAGM)
     pub KFACPOBAAGM: i64,
     // special fields
@@ -53,7 +51,7 @@ impl HHJLCGGEHPB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
             "CILGIDDHODG",
@@ -64,11 +62,6 @@ impl HHJLCGGEHPB {
             "PLPPPCEPBDO",
             |m: &HHJLCGGEHPB| { &m.PLPPPCEPBDO },
             |m: &mut HHJLCGGEHPB| { &mut m.PLPPPCEPBDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPAIFCLAPNH",
-            |m: &HHJLCGGEHPB| { &m.NPAIFCLAPNH },
-            |m: &mut HHJLCGGEHPB| { &mut m.NPAIFCLAPNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KFACPOBAAGM",
@@ -96,13 +89,10 @@ impl ::protobuf::Message for HHJLCGGEHPB {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CILGIDDHODG)?;
                 },
-                56 => {
+                32 => {
                     self.PLPPPCEPBDO = is.read_uint32()?;
                 },
                 104 => {
-                    self.NPAIFCLAPNH = is.read_int64()?;
-                },
-                88 => {
                     self.KFACPOBAAGM = is.read_int64()?;
                 },
                 tag => {
@@ -122,13 +112,10 @@ impl ::protobuf::Message for HHJLCGGEHPB {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.PLPPPCEPBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PLPPPCEPBDO);
-        }
-        if self.NPAIFCLAPNH != 0 {
-            my_size += ::protobuf::rt::int64_size(13, self.NPAIFCLAPNH);
+            my_size += ::protobuf::rt::uint32_size(4, self.PLPPPCEPBDO);
         }
         if self.KFACPOBAAGM != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.KFACPOBAAGM);
+            my_size += ::protobuf::rt::int64_size(13, self.KFACPOBAAGM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -140,13 +127,10 @@ impl ::protobuf::Message for HHJLCGGEHPB {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.PLPPPCEPBDO != 0 {
-            os.write_uint32(7, self.PLPPPCEPBDO)?;
-        }
-        if self.NPAIFCLAPNH != 0 {
-            os.write_int64(13, self.NPAIFCLAPNH)?;
+            os.write_uint32(4, self.PLPPPCEPBDO)?;
         }
         if self.KFACPOBAAGM != 0 {
-            os.write_int64(11, self.KFACPOBAAGM)?;
+            os.write_int64(13, self.KFACPOBAAGM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +151,6 @@ impl ::protobuf::Message for HHJLCGGEHPB {
     fn clear(&mut self) {
         self.CILGIDDHODG.clear();
         self.PLPPPCEPBDO = 0;
-        self.NPAIFCLAPNH = 0;
         self.KFACPOBAAGM = 0;
         self.special_fields.clear();
     }
@@ -176,7 +159,6 @@ impl ::protobuf::Message for HHJLCGGEHPB {
         static instance: HHJLCGGEHPB = HHJLCGGEHPB {
             CILGIDDHODG: ::protobuf::MessageField::none(),
             PLPPPCEPBDO: 0,
-            NPAIFCLAPNH: 0,
             KFACPOBAAGM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for HHJLCGGEHPB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HHJLCGGEHPB.proto\x1a\x16PlayerSimpleInfo.proto\"\xa8\x01\n\x0bHHJ\
+    \n\x11HHJLCGGEHPB.proto\x1a\x16PlayerSimpleInfo.proto\"\x86\x01\n\x0bHHJ\
     LCGGEHPB\x123\n\x0bCILGIDDHODG\x18\x01\x20\x01(\x0b2\x11.PlayerSimpleInf\
-    oR\x0bCILGIDDHODG\x12\x20\n\x0bPLPPPCEPBDO\x18\x07\x20\x01(\rR\x0bPLPPPC\
-    EPBDO\x12\x20\n\x0bNPAIFCLAPNH\x18\r\x20\x01(\x03R\x0bNPAIFCLAPNH\x12\
-    \x20\n\x0bKFACPOBAAGM\x18\x0b\x20\x01(\x03R\x0bKFACPOBAAGMb\x06proto3\
+    oR\x0bCILGIDDHODG\x12\x20\n\x0bPLPPPCEPBDO\x18\x04\x20\x01(\rR\x0bPLPPPC\
+    EPBDO\x12\x20\n\x0bKFACPOBAAGM\x18\r\x20\x01(\x03R\x0bKFACPOBAAGMb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

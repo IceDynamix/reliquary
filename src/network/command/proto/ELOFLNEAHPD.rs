@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ELOFLNEAHPD {
     // message fields
-    // @@protoc_insertion_point(field:ELOFLNEAHPD.grid_fight_trait_info)
-    pub grid_fight_trait_info: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ELOFLNEAHPD.BPFJDLHFEKG)
     pub BPFJDLHFEKG: ::std::vec::Vec<super::ENIDJAFECBD::ENIDJAFECBD>,
+    // @@protoc_insertion_point(field:ELOFLNEAHPD.grid_fight_trait_info)
+    pub grid_fight_trait_info: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ELOFLNEAHPD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ELOFLNEAHPD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_trait_info",
-            |m: &ELOFLNEAHPD| { &m.grid_fight_trait_info },
-            |m: &mut ELOFLNEAHPD| { &mut m.grid_fight_trait_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BPFJDLHFEKG",
             |m: &ELOFLNEAHPD| { &m.BPFJDLHFEKG },
             |m: &mut ELOFLNEAHPD| { &mut m.BPFJDLHFEKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_trait_info",
+            |m: &ELOFLNEAHPD| { &m.grid_fight_trait_info },
+            |m: &mut ELOFLNEAHPD| { &mut m.grid_fight_trait_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ELOFLNEAHPD>(
             "ELOFLNEAHPD",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for ELOFLNEAHPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                66 => {
+                    self.BPFJDLHFEKG.push(is.read_message()?);
+                },
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_trait_info)?;
                 },
-                48 => {
+                80 => {
                     self.grid_fight_trait_info.push(is.read_uint32()?);
-                },
-                90 => {
-                    self.BPFJDLHFEKG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for ELOFLNEAHPD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.grid_fight_trait_info);
         for value in &self.BPFJDLHFEKG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.grid_fight_trait_info);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.grid_fight_trait_info)?;
         for v in &self.BPFJDLHFEKG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        os.write_repeated_packed_uint32(10, &self.grid_fight_trait_info)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ELOFLNEAHPD {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_trait_info.clear();
         self.BPFJDLHFEKG.clear();
+        self.grid_fight_trait_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ELOFLNEAHPD {
         static instance: ELOFLNEAHPD = ELOFLNEAHPD {
-            grid_fight_trait_info: ::std::vec::Vec::new(),
             BPFJDLHFEKG: ::std::vec::Vec::new(),
+            grid_fight_trait_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ELOFLNEAHPD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ELOFLNEAHPD.proto\x1a\x11ENIDJAFECBD.proto\"p\n\x0bELOFLNEAHPD\x12\
-    1\n\x15grid_fight_trait_info\x18\x06\x20\x03(\rR\x12gridFightTraitInfo\
-    \x12.\n\x0bBPFJDLHFEKG\x18\x0b\x20\x03(\x0b2\x0c.ENIDJAFECBDR\x0bBPFJDLH\
-    FEKGb\x06proto3\
+    .\n\x0bBPFJDLHFEKG\x18\x08\x20\x03(\x0b2\x0c.ENIDJAFECBDR\x0bBPFJDLHFEKG\
+    \x121\n\x15grid_fight_trait_info\x18\n\x20\x03(\rR\x12gridFightTraitInfo\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

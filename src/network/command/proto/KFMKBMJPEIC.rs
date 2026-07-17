@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KFMKBMJPEIC {
     // message fields
+    // @@protoc_insertion_point(field:KFMKBMJPEIC.DNNCAGJIOAP)
+    pub DNNCAGJIOAP: u32,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.IHCDDIPNJKO)
     pub IHCDDIPNJKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KFMKBMJPEIC.grid_fight_equipment_list)
+    pub grid_fight_equipment_list: ::std::vec::Vec<super::BattleGridFightEquipInfo::BattleGridFightEquipInfo>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.BANBECDCDHG)
     pub BANBECDCDHG: ::std::collections::HashMap<::std::string::String, i32>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.POJGKJENENA)
     pub POJGKJENENA: ::std::vec::Vec<super::FHCEIOHLADG::FHCEIOHLADG>,
-    // @@protoc_insertion_point(field:KFMKBMJPEIC.grid_fight_equipment_list)
-    pub grid_fight_equipment_list: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
-    // @@protoc_insertion_point(field:KFMKBMJPEIC.DNNCAGJIOAP)
-    pub DNNCAGJIOAP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KFMKBMJPEIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,20 @@ impl KFMKBMJPEIC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DNNCAGJIOAP",
+            |m: &KFMKBMJPEIC| { &m.DNNCAGJIOAP },
+            |m: &mut KFMKBMJPEIC| { &mut m.DNNCAGJIOAP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHCDDIPNJKO",
             |m: &KFMKBMJPEIC| { &m.IHCDDIPNJKO },
             |m: &mut KFMKBMJPEIC| { &mut m.IHCDDIPNJKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_equipment_list",
+            |m: &KFMKBMJPEIC| { &m.grid_fight_equipment_list },
+            |m: &mut KFMKBMJPEIC| { &mut m.grid_fight_equipment_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BANBECDCDHG",
@@ -71,16 +81,6 @@ impl KFMKBMJPEIC {
             "POJGKJENENA",
             |m: &KFMKBMJPEIC| { &m.POJGKJENENA },
             |m: &mut KFMKBMJPEIC| { &mut m.POJGKJENENA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_equipment_list",
-            |m: &KFMKBMJPEIC| { &m.grid_fight_equipment_list },
-            |m: &mut KFMKBMJPEIC| { &mut m.grid_fight_equipment_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNNCAGJIOAP",
-            |m: &KFMKBMJPEIC| { &m.DNNCAGJIOAP },
-            |m: &mut KFMKBMJPEIC| { &mut m.DNNCAGJIOAP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KFMKBMJPEIC>(
             "KFMKBMJPEIC",
@@ -100,11 +100,17 @@ impl ::protobuf::Message for KFMKBMJPEIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.DNNCAGJIOAP = is.read_uint32()?;
+                },
                 18 => {
                     is.read_repeated_packed_uint32_into(&mut self.IHCDDIPNJKO)?;
                 },
                 16 => {
                     self.IHCDDIPNJKO.push(is.read_uint32()?);
+                },
+                26 => {
+                    self.grid_fight_equipment_list.push(is.read_message()?);
                 },
                 34 => {
                     let len = is.read_raw_varint32()?;
@@ -124,12 +130,6 @@ impl ::protobuf::Message for KFMKBMJPEIC {
                 42 => {
                     self.POJGKJENENA.push(is.read_message()?);
                 },
-                26 => {
-                    self.grid_fight_equipment_list.push(is.read_message()?);
-                },
-                8 => {
-                    self.DNNCAGJIOAP = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -142,7 +142,14 @@ impl ::protobuf::Message for KFMKBMJPEIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DNNCAGJIOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DNNCAGJIOAP);
+        }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IHCDDIPNJKO);
+        for value in &self.grid_fight_equipment_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -153,20 +160,19 @@ impl ::protobuf::Message for KFMKBMJPEIC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.grid_fight_equipment_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.DNNCAGJIOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DNNCAGJIOAP);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DNNCAGJIOAP != 0 {
+            os.write_uint32(1, self.DNNCAGJIOAP)?;
+        }
         os.write_repeated_packed_uint32(2, &self.IHCDDIPNJKO)?;
+        for v in &self.grid_fight_equipment_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
@@ -179,12 +185,6 @@ impl ::protobuf::Message for KFMKBMJPEIC {
         for v in &self.POJGKJENENA {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        for v in &self.grid_fight_equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.DNNCAGJIOAP != 0 {
-            os.write_uint32(1, self.DNNCAGJIOAP)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -202,11 +202,11 @@ impl ::protobuf::Message for KFMKBMJPEIC {
     }
 
     fn clear(&mut self) {
+        self.DNNCAGJIOAP = 0;
         self.IHCDDIPNJKO.clear();
+        self.grid_fight_equipment_list.clear();
         self.BANBECDCDHG.clear();
         self.POJGKJENENA.clear();
-        self.grid_fight_equipment_list.clear();
-        self.DNNCAGJIOAP = 0;
         self.special_fields.clear();
     }
 
@@ -234,15 +234,16 @@ impl ::protobuf::reflect::ProtobufValue for KFMKBMJPEIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KFMKBMJPEIC.proto\x1a\x11ACFLKPFDHIM.proto\x1a\x11FHCEIOHLADG.prot\
-    o\"\xcb\x02\n\x0bKFMKBMJPEIC\x12\x20\n\x0bIHCDDIPNJKO\x18\x02\x20\x03(\r\
-    R\x0bIHCDDIPNJKO\x12?\n\x0bBANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJ\
-    PEIC.BANBECDCDHGEntryR\x0bBANBECDCDHG\x12.\n\x0bPOJGKJENENA\x18\x05\x20\
-    \x03(\x0b2\x0c.FHCEIOHLADGR\x0bPOJGKJENENA\x12G\n\x19grid_fight_equipmen\
-    t_list\x18\x03\x20\x03(\x0b2\x0c.ACFLKPFDHIMR\x16gridFightEquipmentList\
-    \x12\x20\n\x0bDNNCAGJIOAP\x18\x01\x20\x01(\rR\x0bDNNCAGJIOAP\x1a>\n\x10B\
-    ANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
+    \n\x11KFMKBMJPEIC.proto\x1a\x1eBattleGridFightEquipInfo.proto\x1a\x11FHC\
+    EIOHLADG.proto\"\xd8\x02\n\x0bKFMKBMJPEIC\x12\x20\n\x0bDNNCAGJIOAP\x18\
+    \x01\x20\x01(\rR\x0bDNNCAGJIOAP\x12\x20\n\x0bIHCDDIPNJKO\x18\x02\x20\x03\
+    (\rR\x0bIHCDDIPNJKO\x12T\n\x19grid_fight_equipment_list\x18\x03\x20\x03(\
+    \x0b2\x19.BattleGridFightEquipInfoR\x16gridFightEquipmentList\x12?\n\x0b\
+    BANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJPEIC.BANBECDCDHGEntryR\x0bB\
+    ANBECDCDHG\x12.\n\x0bPOJGKJENENA\x18\x05\x20\x03(\x0b2\x0c.FHCEIOHLADGR\
+    \x0bPOJGKJENENA\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -260,7 +261,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ACFLKPFDHIM::file_descriptor().clone());
+            deps.push(super::BattleGridFightEquipInfo::file_descriptor().clone());
             deps.push(super::FHCEIOHLADG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KFMKBMJPEIC::generated_message_descriptor_data());

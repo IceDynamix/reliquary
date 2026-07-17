@@ -72,7 +72,7 @@ impl ::protobuf::Message for MatchPlayDataChangeNtf {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KMCDHFGJFNJ)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MatchPlayDataChangeNtf {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KMCDHFGJFNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MatchPlayDataChangeNtf {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMatchPlayDataChangeNtf.proto\x1a\x11PNEGDOHOLDN.proto\"H\n\x16Matc\
-    hPlayDataChangeNtf\x12.\n\x0bKMCDHFGJFNJ\x18\r\x20\x01(\x0b2\x0c.PNEGDOH\
-    OLDNR\x0bKMCDHFGJFNJb\x06proto3\
+    hPlayDataChangeNtf\x12.\n\x0bKMCDHFGJFNJ\x18\x05\x20\x01(\x0b2\x0c.PNEGD\
+    OHOLDNR\x0bKMCDHFGJFNJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

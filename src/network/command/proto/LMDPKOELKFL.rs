@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LMDPKOELKFL {
     // message fields
+    // @@protoc_insertion_point(field:LMDPKOELKFL.ABFCDBOCMCF)
+    pub ABFCDBOCMCF: bool,
     // @@protoc_insertion_point(field:LMDPKOELKFL.return_item_list)
     pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:LMDPKOELKFL.relic_ids)
     pub relic_ids: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LMDPKOELKFL.ABFCDBOCMCF)
-    pub ABFCDBOCMCF: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LMDPKOELKFL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl LMDPKOELKFL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABFCDBOCMCF",
+            |m: &LMDPKOELKFL| { &m.ABFCDBOCMCF },
+            |m: &mut LMDPKOELKFL| { &mut m.ABFCDBOCMCF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "return_item_list",
             |m: &LMDPKOELKFL| { &m.return_item_list },
@@ -62,11 +67,6 @@ impl LMDPKOELKFL {
             "relic_ids",
             |m: &LMDPKOELKFL| { &m.relic_ids },
             |m: &mut LMDPKOELKFL| { &mut m.relic_ids },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABFCDBOCMCF",
-            |m: &LMDPKOELKFL| { &m.ABFCDBOCMCF },
-            |m: &mut LMDPKOELKFL| { &mut m.ABFCDBOCMCF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMDPKOELKFL>(
             "LMDPKOELKFL",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for LMDPKOELKFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
-                },
-                80 => {
-                    self.relic_ids.push(is.read_uint32()?);
-                },
                 8 => {
                     self.ABFCDBOCMCF = is.read_bool()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
+                },
+                112 => {
+                    self.relic_ids.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for LMDPKOELKFL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ABFCDBOCMCF != false {
+            my_size += 1 + 1;
+        }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.relic_ids);
-        if self.ABFCDBOCMCF != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.relic_ids);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.relic_ids)?;
         if self.ABFCDBOCMCF != false {
             os.write_bool(1, self.ABFCDBOCMCF)?;
         }
+        if let Some(v) = self.return_item_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.relic_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for LMDPKOELKFL {
     }
 
     fn clear(&mut self) {
+        self.ABFCDBOCMCF = false;
         self.return_item_list.clear();
         self.relic_ids.clear();
-        self.ABFCDBOCMCF = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMDPKOELKFL {
         static instance: LMDPKOELKFL = LMDPKOELKFL {
+            ABFCDBOCMCF: false,
             return_item_list: ::protobuf::MessageField::none(),
             relic_ids: ::std::vec::Vec::new(),
-            ABFCDBOCMCF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LMDPKOELKFL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMDPKOELKFL.proto\x1a\x0eItemList.proto\"\x81\x01\n\x0bLMDPKOELKFL\
-    \x123\n\x10return_item_list\x18\r\x20\x01(\x0b2\t.ItemListR\x0ereturnIte\
-    mList\x12\x1b\n\trelic_ids\x18\n\x20\x03(\rR\x08relicIds\x12\x20\n\x0bAB\
-    FCDBOCMCF\x18\x01\x20\x01(\x08R\x0bABFCDBOCMCFb\x06proto3\
+    \x12\x20\n\x0bABFCDBOCMCF\x18\x01\x20\x01(\x08R\x0bABFCDBOCMCF\x123\n\
+    \x10return_item_list\x18\x05\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\
+    \x12\x1b\n\trelic_ids\x18\x0e\x20\x03(\rR\x08relicIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

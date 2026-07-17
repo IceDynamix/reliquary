@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JOGCCINEHFJ {
     // message fields
-    // @@protoc_insertion_point(field:JOGCCINEHFJ.monster_list)
-    pub monster_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JOGCCINEHFJ.affix_id)
-    pub affix_id: u32,
-    // @@protoc_insertion_point(field:JOGCCINEHFJ.unique_id)
-    pub unique_id: u32,
-    // @@protoc_insertion_point(field:JOGCCINEHFJ.FNIAOAOBKBA)
-    pub FNIAOAOBKBA: bool,
     // @@protoc_insertion_point(field:JOGCCINEHFJ.DIHFBELJFIA)
     pub DIHFBELJFIA: bool,
+    // @@protoc_insertion_point(field:JOGCCINEHFJ.monster_list)
+    pub monster_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JOGCCINEHFJ.unique_id)
+    pub unique_id: u32,
+    // @@protoc_insertion_point(field:JOGCCINEHFJ.affix_id)
+    pub affix_id: u32,
+    // @@protoc_insertion_point(field:JOGCCINEHFJ.FNIAOAOBKBA)
+    pub FNIAOAOBKBA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JOGCCINEHFJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,15 @@ impl JOGCCINEHFJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIHFBELJFIA",
+            |m: &JOGCCINEHFJ| { &m.DIHFBELJFIA },
+            |m: &mut JOGCCINEHFJ| { &mut m.DIHFBELJFIA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_list",
             |m: &JOGCCINEHFJ| { &m.monster_list },
             |m: &mut JOGCCINEHFJ| { &mut m.monster_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "affix_id",
-            |m: &JOGCCINEHFJ| { &m.affix_id },
-            |m: &mut JOGCCINEHFJ| { &mut m.affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -73,14 +73,14 @@ impl JOGCCINEHFJ {
             |m: &mut JOGCCINEHFJ| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "affix_id",
+            |m: &JOGCCINEHFJ| { &m.affix_id },
+            |m: &mut JOGCCINEHFJ| { &mut m.affix_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FNIAOAOBKBA",
             |m: &JOGCCINEHFJ| { &m.FNIAOAOBKBA },
             |m: &mut JOGCCINEHFJ| { &mut m.FNIAOAOBKBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIHFBELJFIA",
-            |m: &JOGCCINEHFJ| { &m.DIHFBELJFIA },
-            |m: &mut JOGCCINEHFJ| { &mut m.DIHFBELJFIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JOGCCINEHFJ>(
             "JOGCCINEHFJ",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for JOGCCINEHFJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                40 => {
+                    self.DIHFBELJFIA = is.read_bool()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.monster_list)?;
                 },
-                8 => {
+                56 => {
                     self.monster_list.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.affix_id = is.read_uint32()?;
-                },
-                24 => {
+                80 => {
                     self.unique_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.affix_id = is.read_uint32()?;
                 },
                 96 => {
                     self.FNIAOAOBKBA = is.read_bool()?;
-                },
-                88 => {
-                    self.DIHFBELJFIA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for JOGCCINEHFJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.monster_list);
-        if self.affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.affix_id);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
-        }
-        if self.FNIAOAOBKBA != false {
+        if self.DIHFBELJFIA != false {
             my_size += 1 + 1;
         }
-        if self.DIHFBELJFIA != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.monster_list);
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
+        }
+        if self.affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.affix_id);
+        }
+        if self.FNIAOAOBKBA != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -149,18 +149,18 @@ impl ::protobuf::Message for JOGCCINEHFJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.monster_list)?;
-        if self.affix_id != 0 {
-            os.write_uint32(9, self.affix_id)?;
+        if self.DIHFBELJFIA != false {
+            os.write_bool(5, self.DIHFBELJFIA)?;
         }
+        os.write_repeated_packed_uint32(7, &self.monster_list)?;
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(10, self.unique_id)?;
+        }
+        if self.affix_id != 0 {
+            os.write_uint32(11, self.affix_id)?;
         }
         if self.FNIAOAOBKBA != false {
             os.write_bool(12, self.FNIAOAOBKBA)?;
-        }
-        if self.DIHFBELJFIA != false {
-            os.write_bool(11, self.DIHFBELJFIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for JOGCCINEHFJ {
     }
 
     fn clear(&mut self) {
-        self.monster_list.clear();
-        self.affix_id = 0;
-        self.unique_id = 0;
-        self.FNIAOAOBKBA = false;
         self.DIHFBELJFIA = false;
+        self.monster_list.clear();
+        self.unique_id = 0;
+        self.affix_id = 0;
+        self.FNIAOAOBKBA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JOGCCINEHFJ {
         static instance: JOGCCINEHFJ = JOGCCINEHFJ {
-            monster_list: ::std::vec::Vec::new(),
-            affix_id: 0,
-            unique_id: 0,
-            FNIAOAOBKBA: false,
             DIHFBELJFIA: false,
+            monster_list: ::std::vec::Vec::new(),
+            unique_id: 0,
+            affix_id: 0,
+            FNIAOAOBKBA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,11 @@ impl ::protobuf::reflect::ProtobufValue for JOGCCINEHFJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JOGCCINEHFJ.proto\"\xac\x01\n\x0bJOGCCINEHFJ\x12!\n\x0cmonster_lis\
-    t\x18\x01\x20\x03(\rR\x0bmonsterList\x12\x19\n\x08affix_id\x18\t\x20\x01\
-    (\rR\x07affixId\x12\x1b\n\tunique_id\x18\x03\x20\x01(\rR\x08uniqueId\x12\
-    \x20\n\x0bFNIAOAOBKBA\x18\x0c\x20\x01(\x08R\x0bFNIAOAOBKBA\x12\x20\n\x0b\
-    DIHFBELJFIA\x18\x0b\x20\x01(\x08R\x0bDIHFBELJFIAb\x06proto3\
+    \n\x11JOGCCINEHFJ.proto\"\xac\x01\n\x0bJOGCCINEHFJ\x12\x20\n\x0bDIHFBELJ\
+    FIA\x18\x05\x20\x01(\x08R\x0bDIHFBELJFIA\x12!\n\x0cmonster_list\x18\x07\
+    \x20\x03(\rR\x0bmonsterList\x12\x1b\n\tunique_id\x18\n\x20\x01(\rR\x08un\
+    iqueId\x12\x19\n\x08affix_id\x18\x0b\x20\x01(\rR\x07affixId\x12\x20\n\
+    \x0bFNIAOAOBKBA\x18\x0c\x20\x01(\x08R\x0bFNIAOAOBKBAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

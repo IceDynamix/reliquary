@@ -72,7 +72,7 @@ impl ::protobuf::Message for CFHEKNFNMIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                64 => {
                     self.is_locked = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for CFHEKNFNMIP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_locked != false {
-            os.write_bool(15, self.is_locked)?;
+            os.write_bool(8, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for CFHEKNFNMIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CFHEKNFNMIP.proto\"*\n\x0bCFHEKNFNMIP\x12\x1b\n\tis_locked\x18\x0f\
+    \n\x11CFHEKNFNMIP.proto\"*\n\x0bCFHEKNFNMIP\x12\x1b\n\tis_locked\x18\x08\
     \x20\x01(\x08R\x08isLockedb\x06proto3\
 ";
 

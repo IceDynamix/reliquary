@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdElationActivityType {
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_NLCDGIPGFDJ)
     GFOCDHFMBBC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_FAGCDJLHAAE)
-    GFOCDHFMBBC_FAGCDJLHAAE = 9109,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_AECKJFFELBJ)
-    GFOCDHFMBBC_AECKJFFELBJ = 9110,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_ELNGDMKBHIE)
     GFOCDHFMBBC_ELNGDMKBHIE = 9104,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_GMCIMIMJNKC)
-    GFOCDHFMBBC_GMCIMIMJNKC = 9102,
+    GFOCDHFMBBC_GMCIMIMJNKC = 9103,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_AECKJFFELBJ)
+    GFOCDHFMBBC_AECKJFFELBJ = 9105,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_FAGCDJLHAAE)
+    GFOCDHFMBBC_FAGCDJLHAAE = 9110,
     // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_NLNGGABBEEK)
-    GFOCDHFMBBC_NLNGGABBEEK = 9108,
+    GFOCDHFMBBC_NLNGGABBEEK = 9101,
 }
 
 impl ::protobuf::Enum for CmdElationActivityType {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for CmdElationActivityType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdElationActivityType> {
         match value {
             0 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ),
-            9109 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
-            9110 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
             9104 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE),
-            9102 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC),
-            9108 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK),
+            9103 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC),
+            9105 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
+            9110 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
+            9101 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK),
             _ => ::std::option::Option::None
         }
     }
@@ -63,10 +63,10 @@ impl ::protobuf::Enum for CmdElationActivityType {
     fn from_str(str: &str) -> ::std::option::Option<CmdElationActivityType> {
         match str {
             "GFOCDHFMBBC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ),
-            "GFOCDHFMBBC_FAGCDJLHAAE" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
-            "GFOCDHFMBBC_AECKJFFELBJ" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
             "GFOCDHFMBBC_ELNGDMKBHIE" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE),
             "GFOCDHFMBBC_GMCIMIMJNKC" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC),
+            "GFOCDHFMBBC_AECKJFFELBJ" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
+            "GFOCDHFMBBC_FAGCDJLHAAE" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
             "GFOCDHFMBBC_NLNGGABBEEK" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK),
             _ => ::std::option::Option::None
         }
@@ -74,10 +74,10 @@ impl ::protobuf::Enum for CmdElationActivityType {
 
     const VALUES: &'static [CmdElationActivityType] = &[
         CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ,
-        CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE,
-        CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ,
         CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE,
         CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC,
+        CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ,
+        CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE,
         CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK,
     ];
 }
@@ -91,10 +91,10 @@ impl ::protobuf::EnumFull for CmdElationActivityType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ => 0,
-            CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE => 1,
-            CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ => 2,
-            CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE => 3,
-            CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC => 4,
+            CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE => 1,
+            CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC => 2,
+            CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ => 3,
+            CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE => 4,
             CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK => 5,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -115,10 +115,10 @@ impl CmdElationActivityType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdElationActivityType.proto*\xcb\x01\n\x16CmdElationActivityType\
-    \x12\x1b\n\x17GFOCDHFMBBC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GFOCDHFMBBC_FAG\
-    CDJLHAAE\x10\x95G\x12\x1c\n\x17GFOCDHFMBBC_AECKJFFELBJ\x10\x96G\x12\x1c\
-    \n\x17GFOCDHFMBBC_ELNGDMKBHIE\x10\x90G\x12\x1c\n\x17GFOCDHFMBBC_GMCIMIMJ\
-    NKC\x10\x8eG\x12\x1c\n\x17GFOCDHFMBBC_NLNGGABBEEK\x10\x94Gb\x06proto3\
+    \x12\x1b\n\x17GFOCDHFMBBC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GFOCDHFMBBC_ELN\
+    GDMKBHIE\x10\x90G\x12\x1c\n\x17GFOCDHFMBBC_GMCIMIMJNKC\x10\x8fG\x12\x1c\
+    \n\x17GFOCDHFMBBC_AECKJFFELBJ\x10\x91G\x12\x1c\n\x17GFOCDHFMBBC_FAGCDJLH\
+    AAE\x10\x96G\x12\x1c\n\x17GFOCDHFMBBC_NLNGGABBEEK\x10\x8dGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

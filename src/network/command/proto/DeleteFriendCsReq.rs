@@ -79,10 +79,10 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.LMHDOMCMGNL = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DeleteFriendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
         if self.LMHDOMCMGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LMHDOMCMGNL);
+            my_size += ::protobuf::rt::uint32_size(9, self.LMHDOMCMGNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DeleteFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
+            os.write_uint32(6, self.uid)?;
         }
         if self.LMHDOMCMGNL != 0 {
-            os.write_uint32(4, self.LMHDOMCMGNL)?;
+            os.write_uint32(9, self.LMHDOMCMGNL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DeleteFriendCsReq.proto\"G\n\x11DeleteFriendCsReq\x12\x10\n\x03uid\
-    \x18\x01\x20\x01(\rR\x03uid\x12\x20\n\x0bLMHDOMCMGNL\x18\x04\x20\x01(\rR\
+    \x18\x06\x20\x01(\rR\x03uid\x12\x20\n\x0bLMHDOMCMGNL\x18\t\x20\x01(\rR\
     \x0bLMHDOMCMGNLb\x06proto3\
 ";
 

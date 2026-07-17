@@ -79,10 +79,10 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     self.DGBEOGGJLOO.push(is.read_message()?);
                 },
-                10 => {
+                82 => {
                     self.EGDNFKHLKKE.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for MonopolyEventLoadUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DGBEOGGJLOO {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.EGDNFKHLKKE {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyEventLoadUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyEventLoadUpdateScNotify.proto\x1a\x11EIDFCGLODFB.proto\"\x81\
-    \x01\n\x1fMonopolyEventLoadUpdateScNotify\x12.\n\x0bDGBEOGGJLOO\x18\x08\
+    \x01\n\x1fMonopolyEventLoadUpdateScNotify\x12.\n\x0bDGBEOGGJLOO\x18\x06\
     \x20\x03(\x0b2\x0c.EIDFCGLODFBR\x0bDGBEOGGJLOO\x12.\n\x0bEGDNFKHLKKE\x18\
-    \x01\x20\x03(\x0b2\x0c.EIDFCGLODFBR\x0bEGDNFKHLKKEb\x06proto3\
+    \n\x20\x03(\x0b2\x0c.EIDFCGLODFBR\x0bEGDNFKHLKKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

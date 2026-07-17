@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                18 => {
                     self.BINKDPMJLFG.push(is.read_message()?);
                 },
-                72 => {
+                96 => {
                     self.GEAJILJKBIK = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.GEAJILJKBIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GEAJILJKBIK);
+            my_size += ::protobuf::rt::uint32_size(12, self.GEAJILJKBIK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SwordTrainingActionTurnSettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BINKDPMJLFG {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.GEAJILJKBIK != 0 {
-            os.write_uint32(9, self.GEAJILJKBIK)?;
+            os.write_uint32(12, self.GEAJILJKBIK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingActionTurnSettleScNotif
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+SwordTrainingActionTurnSettleScNotify.proto\x1a\x11LBBGLAHFJKN.proto\
     \"y\n%SwordTrainingActionTurnSettleScNotify\x12.\n\x0bBINKDPMJLFG\x18\
-    \x0c\x20\x03(\x0b2\x0c.LBBGLAHFJKNR\x0bBINKDPMJLFG\x12\x20\n\x0bGEAJILJK\
-    BIK\x18\t\x20\x01(\rR\x0bGEAJILJKBIKb\x06proto3\
+    \x02\x20\x03(\x0b2\x0c.LBBGLAHFJKNR\x0bBINKDPMJLFG\x12\x20\n\x0bGEAJILJK\
+    BIK\x18\x0c\x20\x01(\rR\x0bGEAJILJKBIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

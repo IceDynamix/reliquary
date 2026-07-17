@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CDMPJODLBEE {
     // message fields
-    // @@protoc_insertion_point(field:CDMPJODLBEE.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // @@protoc_insertion_point(field:CDMPJODLBEE.type)
     pub type_: ::protobuf::EnumOrUnknown<super::AABGIFAEEEK::AABGIFAEEEK>,
     // @@protoc_insertion_point(field:CDMPJODLBEE.id)
     pub id: u32,
+    // @@protoc_insertion_point(field:CDMPJODLBEE.sp_bar)
+    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:CDMPJODLBEE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl CDMPJODLBEE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &CDMPJODLBEE| { &m.sp_bar },
-            |m: &mut CDMPJODLBEE| { &mut m.sp_bar },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &CDMPJODLBEE| { &m.type_ },
@@ -67,6 +62,11 @@ impl CDMPJODLBEE {
             "id",
             |m: &CDMPJODLBEE| { &m.id },
             |m: &mut CDMPJODLBEE| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
+            "sp_bar",
+            |m: &CDMPJODLBEE| { &m.sp_bar },
+            |m: &mut CDMPJODLBEE| { &mut m.sp_bar },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CDMPJODLBEE>(
             "CDMPJODLBEE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CDMPJODLBEE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
-                },
                 8 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 16 => {
                     self.id = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for CDMPJODLBEE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.sp_bar.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::AABGIFAEEEK::AABGIFAEEEK::AABGIFAEEEK_OCAJFLCAMNA) {
             my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.id);
+        }
+        if let Some(v) = self.sp_bar.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for CDMPJODLBEE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::AABGIFAEEEK::AABGIFAEEEK::AABGIFAEEEK_OCAJFLCAMNA) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         if self.id != 0 {
             os.write_uint32(2, self.id)?;
+        }
+        if let Some(v) = self.sp_bar.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for CDMPJODLBEE {
     }
 
     fn clear(&mut self) {
-        self.sp_bar.clear();
         self.type_ = ::protobuf::EnumOrUnknown::new(super::AABGIFAEEEK::AABGIFAEEEK::AABGIFAEEEK_OCAJFLCAMNA);
         self.id = 0;
+        self.sp_bar.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CDMPJODLBEE {
         static instance: CDMPJODLBEE = CDMPJODLBEE {
-            sp_bar: ::protobuf::MessageField::none(),
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
             id: 0,
+            sp_bar: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for CDMPJODLBEE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CDMPJODLBEE.proto\x1a\x11AABGIFAEEEK.proto\x1a\x0fSpBarInfo.proto\
-    \"b\n\x0bCDMPJODLBEE\x12!\n\x06sp_bar\x18\x03\x20\x01(\x0b2\n.SpBarInfoR\
-    \x05spBar\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c.AABGIFAEEEKR\x04ty\
-    pe\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02idb\x06proto3\
+    \"b\n\x0bCDMPJODLBEE\x12\x20\n\x04type\x18\x01\x20\x01(\x0e2\x0c.AABGIFA\
+    EEEKR\x04type\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12!\n\x06sp_bar\
+    \x18\x03\x20\x01(\x0b2\n.SpBarInfoR\x05spBarb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

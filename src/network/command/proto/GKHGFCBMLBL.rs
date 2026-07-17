@@ -30,26 +30,24 @@ pub struct GKHGFCBMLBL {
     // message fields
     // @@protoc_insertion_point(field:GKHGFCBMLBL.LHPNJLBPACA)
     pub LHPNJLBPACA: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.record_info)
-    pub record_info: ::protobuf::MessageField<super::KCOEJJKGNIG::KCOEJJKGNIG>,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.FGOBDCENKOB)
-    pub FGOBDCENKOB: ::protobuf::MessageField<super::PHINPOJOJGD::PHINPOJOJGD>,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.MHPHDCFKMLF)
-    pub MHPHDCFKMLF: u32,
     // @@protoc_insertion_point(field:GKHGFCBMLBL.GEBGGMAGDJB)
     pub GEBGGMAGDJB: u32,
+    // @@protoc_insertion_point(field:GKHGFCBMLBL.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:GKHGFCBMLBL.GHCBFCIGIBF)
     pub GHCBFCIGIBF: u32,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.area_id)
-    pub area_id: u32,
     // @@protoc_insertion_point(field:GKHGFCBMLBL.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:GKHGFCBMLBL.HEOMALBNJLL)
-    pub HEOMALBNJLL: u32,
+    // @@protoc_insertion_point(field:GKHGFCBMLBL.MHPHDCFKMLF)
+    pub MHPHDCFKMLF: u32,
     // @@protoc_insertion_point(field:GKHGFCBMLBL.GMIIMAHLIJF)
     pub GMIIMAHLIJF: u32,
+    // @@protoc_insertion_point(field:GKHGFCBMLBL.record_info)
+    pub record_info: ::protobuf::MessageField<super::KCOEJJKGNIG::KCOEJJKGNIG>,
+    // @@protoc_insertion_point(field:GKHGFCBMLBL.area_id)
+    pub area_id: u32,
+    // @@protoc_insertion_point(field:GKHGFCBMLBL.HEOMALBNJLL)
+    pub HEOMALBNJLL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GKHGFCBMLBL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,32 +65,12 @@ impl GKHGFCBMLBL {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(11);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "LHPNJLBPACA",
             |m: &GKHGFCBMLBL| { &m.LHPNJLBPACA },
             |m: &mut GKHGFCBMLBL| { &mut m.LHPNJLBPACA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCOEJJKGNIG::KCOEJJKGNIG>(
-            "record_info",
-            |m: &GKHGFCBMLBL| { &m.record_info },
-            |m: &mut GKHGFCBMLBL| { &mut m.record_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PHINPOJOJGD::PHINPOJOJGD>(
-            "FGOBDCENKOB",
-            |m: &GKHGFCBMLBL| { &m.FGOBDCENKOB },
-            |m: &mut GKHGFCBMLBL| { &mut m.FGOBDCENKOB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &GKHGFCBMLBL| { &m.is_win },
-            |m: &mut GKHGFCBMLBL| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHPHDCFKMLF",
-            |m: &GKHGFCBMLBL| { &m.MHPHDCFKMLF },
-            |m: &mut GKHGFCBMLBL| { &mut m.MHPHDCFKMLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GEBGGMAGDJB",
@@ -100,14 +78,14 @@ impl GKHGFCBMLBL {
             |m: &mut GKHGFCBMLBL| { &mut m.GEBGGMAGDJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &GKHGFCBMLBL| { &m.is_win },
+            |m: &mut GKHGFCBMLBL| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHCBFCIGIBF",
             |m: &GKHGFCBMLBL| { &m.GHCBFCIGIBF },
             |m: &mut GKHGFCBMLBL| { &mut m.GHCBFCIGIBF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &GKHGFCBMLBL| { &m.area_id },
-            |m: &mut GKHGFCBMLBL| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -115,14 +93,29 @@ impl GKHGFCBMLBL {
             |m: &mut GKHGFCBMLBL| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEOMALBNJLL",
-            |m: &GKHGFCBMLBL| { &m.HEOMALBNJLL },
-            |m: &mut GKHGFCBMLBL| { &mut m.HEOMALBNJLL },
+            "MHPHDCFKMLF",
+            |m: &GKHGFCBMLBL| { &m.MHPHDCFKMLF },
+            |m: &mut GKHGFCBMLBL| { &mut m.MHPHDCFKMLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GMIIMAHLIJF",
             |m: &GKHGFCBMLBL| { &m.GMIIMAHLIJF },
             |m: &mut GKHGFCBMLBL| { &mut m.GMIIMAHLIJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCOEJJKGNIG::KCOEJJKGNIG>(
+            "record_info",
+            |m: &GKHGFCBMLBL| { &m.record_info },
+            |m: &mut GKHGFCBMLBL| { &mut m.record_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &GKHGFCBMLBL| { &m.area_id },
+            |m: &mut GKHGFCBMLBL| { &mut m.area_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HEOMALBNJLL",
+            |m: &GKHGFCBMLBL| { &m.HEOMALBNJLL },
+            |m: &mut GKHGFCBMLBL| { &mut m.HEOMALBNJLL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKHGFCBMLBL>(
             "GKHGFCBMLBL",
@@ -145,35 +138,32 @@ impl ::protobuf::Message for GKHGFCBMLBL {
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHPNJLBPACA)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGOBDCENKOB)?;
-                },
-                8 => {
-                    self.is_win = is.read_bool()?;
-                },
-                96 => {
-                    self.MHPHDCFKMLF = is.read_uint32()?;
-                },
-                88 => {
+                72 => {
                     self.GEBGGMAGDJB = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
+                    self.is_win = is.read_bool()?;
+                },
+                88 => {
                     self.GHCBFCIGIBF = is.read_uint32()?;
                 },
-                8768 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                32 => {
+                96 => {
                     self.score_id = is.read_uint32()?;
                 },
-                5712 => {
-                    self.HEOMALBNJLL = is.read_uint32()?;
+                104 => {
+                    self.MHPHDCFKMLF = is.read_uint32()?;
                 },
-                80 => {
+                112 => {
                     self.GMIIMAHLIJF = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
+                },
+                232 => {
+                    self.area_id = is.read_uint32()?;
+                },
+                8584 => {
+                    self.HEOMALBNJLL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -191,37 +181,33 @@ impl ::protobuf::Message for GKHGFCBMLBL {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.record_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.FGOBDCENKOB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.GEBGGMAGDJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GEBGGMAGDJB);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.MHPHDCFKMLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MHPHDCFKMLF);
-        }
-        if self.GEBGGMAGDJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GEBGGMAGDJB);
-        }
         if self.GHCBFCIGIBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GHCBFCIGIBF);
-        }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1096, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.GHCBFCIGIBF);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.score_id);
         }
-        if self.HEOMALBNJLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(714, self.HEOMALBNJLL);
+        if self.MHPHDCFKMLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MHPHDCFKMLF);
         }
         if self.GMIIMAHLIJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GMIIMAHLIJF);
+            my_size += ::protobuf::rt::uint32_size(14, self.GMIIMAHLIJF);
+        }
+        if let Some(v) = self.record_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(29, self.area_id);
+        }
+        if self.HEOMALBNJLL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1073, self.HEOMALBNJLL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -232,35 +218,32 @@ impl ::protobuf::Message for GKHGFCBMLBL {
         if let Some(v) = self.LHPNJLBPACA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.FGOBDCENKOB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.GEBGGMAGDJB != 0 {
+            os.write_uint32(9, self.GEBGGMAGDJB)?;
         }
         if self.is_win != false {
-            os.write_bool(1, self.is_win)?;
-        }
-        if self.MHPHDCFKMLF != 0 {
-            os.write_uint32(12, self.MHPHDCFKMLF)?;
-        }
-        if self.GEBGGMAGDJB != 0 {
-            os.write_uint32(11, self.GEBGGMAGDJB)?;
+            os.write_bool(10, self.is_win)?;
         }
         if self.GHCBFCIGIBF != 0 {
-            os.write_uint32(8, self.GHCBFCIGIBF)?;
-        }
-        if self.area_id != 0 {
-            os.write_uint32(1096, self.area_id)?;
+            os.write_uint32(11, self.GHCBFCIGIBF)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
+            os.write_uint32(12, self.score_id)?;
         }
-        if self.HEOMALBNJLL != 0 {
-            os.write_uint32(714, self.HEOMALBNJLL)?;
+        if self.MHPHDCFKMLF != 0 {
+            os.write_uint32(13, self.MHPHDCFKMLF)?;
         }
         if self.GMIIMAHLIJF != 0 {
-            os.write_uint32(10, self.GMIIMAHLIJF)?;
+            os.write_uint32(14, self.GMIIMAHLIJF)?;
+        }
+        if let Some(v) = self.record_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(29, self.area_id)?;
+        }
+        if self.HEOMALBNJLL != 0 {
+            os.write_uint32(1073, self.HEOMALBNJLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -280,32 +263,30 @@ impl ::protobuf::Message for GKHGFCBMLBL {
 
     fn clear(&mut self) {
         self.LHPNJLBPACA.clear();
-        self.record_info.clear();
-        self.FGOBDCENKOB.clear();
-        self.is_win = false;
-        self.MHPHDCFKMLF = 0;
         self.GEBGGMAGDJB = 0;
+        self.is_win = false;
         self.GHCBFCIGIBF = 0;
-        self.area_id = 0;
         self.score_id = 0;
-        self.HEOMALBNJLL = 0;
+        self.MHPHDCFKMLF = 0;
         self.GMIIMAHLIJF = 0;
+        self.record_info.clear();
+        self.area_id = 0;
+        self.HEOMALBNJLL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKHGFCBMLBL {
         static instance: GKHGFCBMLBL = GKHGFCBMLBL {
             LHPNJLBPACA: ::protobuf::MessageField::none(),
-            record_info: ::protobuf::MessageField::none(),
-            FGOBDCENKOB: ::protobuf::MessageField::none(),
-            is_win: false,
-            MHPHDCFKMLF: 0,
             GEBGGMAGDJB: 0,
+            is_win: false,
             GHCBFCIGIBF: 0,
-            area_id: 0,
             score_id: 0,
-            HEOMALBNJLL: 0,
+            MHPHDCFKMLF: 0,
             GMIIMAHLIJF: 0,
+            record_info: ::protobuf::MessageField::none(),
+            area_id: 0,
+            HEOMALBNJLL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -330,18 +311,16 @@ impl ::protobuf::reflect::ProtobufValue for GKHGFCBMLBL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKHGFCBMLBL.proto\x1a\x0eItemList.proto\x1a\x11KCOEJJKGNIG.proto\
-    \x1a\x11PHINPOJOJGD.proto\"\x90\x03\n\x0bGKHGFCBMLBL\x12+\n\x0bLHPNJLBPA\
-    CA\x18\x07\x20\x01(\x0b2\t.ItemListR\x0bLHPNJLBPACA\x12-\n\x0brecord_inf\
-    o\x18\t\x20\x01(\x0b2\x0c.KCOEJJKGNIGR\nrecordInfo\x12.\n\x0bFGOBDCENKOB\
-    \x18\x0e\x20\x01(\x0b2\x0c.PHINPOJOJGDR\x0bFGOBDCENKOB\x12\x15\n\x06is_w\
-    in\x18\x01\x20\x01(\x08R\x05isWin\x12\x20\n\x0bMHPHDCFKMLF\x18\x0c\x20\
-    \x01(\rR\x0bMHPHDCFKMLF\x12\x20\n\x0bGEBGGMAGDJB\x18\x0b\x20\x01(\rR\x0b\
-    GEBGGMAGDJB\x12\x20\n\x0bGHCBFCIGIBF\x18\x08\x20\x01(\rR\x0bGHCBFCIGIBF\
-    \x12\x18\n\x07area_id\x18\xc8\x08\x20\x01(\rR\x06areaId\x12\x19\n\x08sco\
-    re_id\x18\x04\x20\x01(\rR\x07scoreId\x12!\n\x0bHEOMALBNJLL\x18\xca\x05\
-    \x20\x01(\rR\x0bHEOMALBNJLL\x12\x20\n\x0bGMIIMAHLIJF\x18\n\x20\x01(\rR\
-    \x0bGMIIMAHLIJFb\x06proto3\
+    \n\x11GKHGFCBMLBL.proto\x1a\x0eItemList.proto\x1a\x11KCOEJJKGNIG.proto\"\
+    \xdf\x02\n\x0bGKHGFCBMLBL\x12+\n\x0bLHPNJLBPACA\x18\x07\x20\x01(\x0b2\t.\
+    ItemListR\x0bLHPNJLBPACA\x12\x20\n\x0bGEBGGMAGDJB\x18\t\x20\x01(\rR\x0bG\
+    EBGGMAGDJB\x12\x15\n\x06is_win\x18\n\x20\x01(\x08R\x05isWin\x12\x20\n\
+    \x0bGHCBFCIGIBF\x18\x0b\x20\x01(\rR\x0bGHCBFCIGIBF\x12\x19\n\x08score_id\
+    \x18\x0c\x20\x01(\rR\x07scoreId\x12\x20\n\x0bMHPHDCFKMLF\x18\r\x20\x01(\
+    \rR\x0bMHPHDCFKMLF\x12\x20\n\x0bGMIIMAHLIJF\x18\x0e\x20\x01(\rR\x0bGMIIM\
+    AHLIJF\x12-\n\x0brecord_info\x18\x0f\x20\x01(\x0b2\x0c.KCOEJJKGNIGR\nrec\
+    ordInfo\x12\x17\n\x07area_id\x18\x1d\x20\x01(\rR\x06areaId\x12!\n\x0bHEO\
+    MALBNJLL\x18\xb1\x08\x20\x01(\rR\x0bHEOMALBNJLLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -358,10 +337,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
             deps.push(super::KCOEJJKGNIG::file_descriptor().clone());
-            deps.push(super::PHINPOJOJGD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GKHGFCBMLBL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,9 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:PLHPJCKDEDI)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PLHPJCKDEDI {
-    // message fields
-    // @@protoc_insertion_point(field:PLHPJCKDEDI.player_data)
-    pub player_data: i32,
     // special fields
     // @@protoc_insertion_point(special_field:PLHPJCKDEDI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,13 +44,8 @@ impl PLHPJCKDEDI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "player_data",
-            |m: &PLHPJCKDEDI| { &m.player_data },
-            |m: &mut PLHPJCKDEDI| { &mut m.player_data },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PLHPJCKDEDI>(
             "PLHPJCKDEDI",
             fields,
@@ -72,9 +64,6 @@ impl ::protobuf::Message for PLHPJCKDEDI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.player_data = is.read_int32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -87,18 +76,12 @@ impl ::protobuf::Message for PLHPJCKDEDI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.player_data != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.player_data);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.player_data != 0 {
-            os.write_int32(13, self.player_data)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,13 +99,11 @@ impl ::protobuf::Message for PLHPJCKDEDI {
     }
 
     fn clear(&mut self) {
-        self.player_data = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PLHPJCKDEDI {
         static instance: PLHPJCKDEDI = PLHPJCKDEDI {
-            player_data: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +128,7 @@ impl ::protobuf::reflect::ProtobufValue for PLHPJCKDEDI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PLHPJCKDEDI.proto\".\n\x0bPLHPJCKDEDI\x12\x1f\n\x0bplayer_data\x18\
-    \r\x20\x01(\x05R\nplayerDatab\x06proto3\
+    \n\x11PLHPJCKDEDI.proto\"\r\n\x0bPLHPJCKDEDIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

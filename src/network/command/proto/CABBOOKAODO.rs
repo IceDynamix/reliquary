@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CABBOOKAODO {
     // message fields
-    // @@protoc_insertion_point(field:CABBOOKAODO.relic_ids)
-    pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CABBOOKAODO.AEONNKANGCE)
     pub AEONNKANGCE: ::protobuf::MessageField<super::ONFLANPGHHL::ONFLANPGHHL>,
+    // @@protoc_insertion_point(field:CABBOOKAODO.relic_ids)
+    pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CABBOOKAODO.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl CABBOOKAODO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "relic_ids",
-            |m: &CABBOOKAODO| { &m.relic_ids },
-            |m: &mut CABBOOKAODO| { &mut m.relic_ids },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONFLANPGHHL::ONFLANPGHHL>(
             "AEONNKANGCE",
             |m: &CABBOOKAODO| { &m.AEONNKANGCE },
             |m: &mut CABBOOKAODO| { &mut m.AEONNKANGCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "relic_ids",
+            |m: &CABBOOKAODO| { &m.relic_ids },
+            |m: &mut CABBOOKAODO| { &mut m.relic_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for CABBOOKAODO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
-                },
-                40 => {
-                    self.relic_ids.push(is.read_uint32()?);
-                },
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEONNKANGCE)?;
                 },
-                120 => {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
+                },
+                80 => {
+                    self.relic_ids.push(is.read_uint32()?);
+                },
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,13 +110,13 @@ impl ::protobuf::Message for CABBOOKAODO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.relic_ids);
         if let Some(v) = self.AEONNKANGCE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.relic_ids);
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for CABBOOKAODO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.relic_ids)?;
         if let Some(v) = self.AEONNKANGCE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
+        os.write_repeated_packed_uint32(10, &self.relic_ids)?;
         if self.avatar_id != 0 {
-            os.write_uint32(15, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CABBOOKAODO {
     }
 
     fn clear(&mut self) {
-        self.relic_ids.clear();
         self.AEONNKANGCE.clear();
+        self.relic_ids.clear();
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CABBOOKAODO {
         static instance: CABBOOKAODO = CABBOOKAODO {
-            relic_ids: ::std::vec::Vec::new(),
             AEONNKANGCE: ::protobuf::MessageField::none(),
+            relic_ids: ::std::vec::Vec::new(),
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CABBOOKAODO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CABBOOKAODO.proto\x1a\x11ONFLANPGHHL.proto\"w\n\x0bCABBOOKAODO\x12\
-    \x1b\n\trelic_ids\x18\x05\x20\x03(\rR\x08relicIds\x12.\n\x0bAEONNKANGCE\
-    \x18\r\x20\x01(\x0b2\x0c.ONFLANPGHHLR\x0bAEONNKANGCE\x12\x1b\n\tavatar_i\
-    d\x18\x0f\x20\x01(\rR\x08avatarIdb\x06proto3\
+    .\n\x0bAEONNKANGCE\x18\x03\x20\x01(\x0b2\x0c.ONFLANPGHHLR\x0bAEONNKANGCE\
+    \x12\x1b\n\trelic_ids\x18\n\x20\x03(\rR\x08relicIds\x12\x1b\n\tavatar_id\
+    \x18\r\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

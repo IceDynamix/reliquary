@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IEFICANECDH {
     // message fields
-    // @@protoc_insertion_point(field:IEFICANECDH.CENIOBBIJMF)
-    pub CENIOBBIJMF: ::protobuf::MessageField<super::IIMHLPBEDDH::IIMHLPBEDDH>,
-    // @@protoc_insertion_point(field:IEFICANECDH.gacha_random)
-    pub gacha_random: u32,
     // @@protoc_insertion_point(field:IEFICANECDH.NDNHCFBFPMH)
     pub NDNHCFBFPMH: u32,
+    // @@protoc_insertion_point(field:IEFICANECDH.gacha_random)
+    pub gacha_random: u32,
+    // @@protoc_insertion_point(field:IEFICANECDH.CENIOBBIJMF)
+    pub CENIOBBIJMF: ::protobuf::MessageField<super::IIMHLPBEDDH::IIMHLPBEDDH>,
     // special fields
     // @@protoc_insertion_point(special_field:IEFICANECDH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl IEFICANECDH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIMHLPBEDDH::IIMHLPBEDDH>(
-            "CENIOBBIJMF",
-            |m: &IEFICANECDH| { &m.CENIOBBIJMF },
-            |m: &mut IEFICANECDH| { &mut m.CENIOBBIJMF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDNHCFBFPMH",
+            |m: &IEFICANECDH| { &m.NDNHCFBFPMH },
+            |m: &mut IEFICANECDH| { &mut m.NDNHCFBFPMH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_random",
             |m: &IEFICANECDH| { &m.gacha_random },
             |m: &mut IEFICANECDH| { &mut m.gacha_random },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDNHCFBFPMH",
-            |m: &IEFICANECDH| { &m.NDNHCFBFPMH },
-            |m: &mut IEFICANECDH| { &mut m.NDNHCFBFPMH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IIMHLPBEDDH::IIMHLPBEDDH>(
+            "CENIOBBIJMF",
+            |m: &IEFICANECDH| { &m.CENIOBBIJMF },
+            |m: &mut IEFICANECDH| { &mut m.CENIOBBIJMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IEFICANECDH>(
             "IEFICANECDH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IEFICANECDH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CENIOBBIJMF)?;
+                16 => {
+                    self.NDNHCFBFPMH = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.gacha_random = is.read_uint32()?;
                 },
-                72 => {
-                    self.NDNHCFBFPMH = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CENIOBBIJMF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for IEFICANECDH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NDNHCFBFPMH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.NDNHCFBFPMH);
+        }
+        if self.gacha_random != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.gacha_random);
+        }
         if let Some(v) = self.CENIOBBIJMF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.gacha_random);
-        }
-        if self.NDNHCFBFPMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NDNHCFBFPMH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for IEFICANECDH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CENIOBBIJMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.NDNHCFBFPMH != 0 {
+            os.write_uint32(2, self.NDNHCFBFPMH)?;
         }
         if self.gacha_random != 0 {
-            os.write_uint32(8, self.gacha_random)?;
+            os.write_uint32(6, self.gacha_random)?;
         }
-        if self.NDNHCFBFPMH != 0 {
-            os.write_uint32(9, self.NDNHCFBFPMH)?;
+        if let Some(v) = self.CENIOBBIJMF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for IEFICANECDH {
     }
 
     fn clear(&mut self) {
-        self.CENIOBBIJMF.clear();
-        self.gacha_random = 0;
         self.NDNHCFBFPMH = 0;
+        self.gacha_random = 0;
+        self.CENIOBBIJMF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IEFICANECDH {
         static instance: IEFICANECDH = IEFICANECDH {
-            CENIOBBIJMF: ::protobuf::MessageField::none(),
-            gacha_random: 0,
             NDNHCFBFPMH: 0,
+            gacha_random: 0,
+            CENIOBBIJMF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for IEFICANECDH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IEFICANECDH.proto\x1a\x11IIMHLPBEDDH.proto\"\x82\x01\n\x0bIEFICANE\
-    CDH\x12.\n\x0bCENIOBBIJMF\x18\x01\x20\x01(\x0b2\x0c.IIMHLPBEDDHR\x0bCENI\
-    OBBIJMF\x12!\n\x0cgacha_random\x18\x08\x20\x01(\rR\x0bgachaRandom\x12\
-    \x20\n\x0bNDNHCFBFPMH\x18\t\x20\x01(\rR\x0bNDNHCFBFPMHb\x06proto3\
+    CDH\x12\x20\n\x0bNDNHCFBFPMH\x18\x02\x20\x01(\rR\x0bNDNHCFBFPMH\x12!\n\
+    \x0cgacha_random\x18\x06\x20\x01(\rR\x0bgachaRandom\x12.\n\x0bCENIOBBIJM\
+    F\x18\r\x20\x01(\x0b2\x0c.IIMHLPBEDDHR\x0bCENIOBBIJMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

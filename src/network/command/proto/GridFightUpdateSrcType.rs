@@ -95,6 +95,12 @@ pub enum GridFightUpdateSrcType {
     JJDFGMMMCMI_FFKPFGFJCEL = 32,
     // @@protoc_insertion_point(enum_value:GridFightUpdateSrcType.JJDFGMMMCMI_NOKDKPGNPKK)
     JJDFGMMMCMI_NOKDKPGNPKK = 33,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateSrcType.JJDFGMMMCMI_JNGKOHJPIHK)
+    JJDFGMMMCMI_JNGKOHJPIHK = 34,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateSrcType.JJDFGMMMCMI_DMJNOEIGDPA)
+    JJDFGMMMCMI_DMJNOEIGDPA = 35,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateSrcType.JJDFGMMMCMI_IOCFCLMNGDA)
+    JJDFGMMMCMI_IOCFCLMNGDA = 36,
 }
 
 impl ::protobuf::Enum for GridFightUpdateSrcType {
@@ -140,6 +146,9 @@ impl ::protobuf::Enum for GridFightUpdateSrcType {
             31 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_EBMEIFGBJIM),
             32 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_FFKPFGFJCEL),
             33 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_NOKDKPGNPKK),
+            34 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_JNGKOHJPIHK),
+            35 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_DMJNOEIGDPA),
+            36 => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_IOCFCLMNGDA),
             _ => ::std::option::Option::None
         }
     }
@@ -180,6 +189,9 @@ impl ::protobuf::Enum for GridFightUpdateSrcType {
             "JJDFGMMMCMI_EBMEIFGBJIM" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_EBMEIFGBJIM),
             "JJDFGMMMCMI_FFKPFGFJCEL" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_FFKPFGFJCEL),
             "JJDFGMMMCMI_NOKDKPGNPKK" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_NOKDKPGNPKK),
+            "JJDFGMMMCMI_JNGKOHJPIHK" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_JNGKOHJPIHK),
+            "JJDFGMMMCMI_DMJNOEIGDPA" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_DMJNOEIGDPA),
+            "JJDFGMMMCMI_IOCFCLMNGDA" => ::std::option::Option::Some(GridFightUpdateSrcType::JJDFGMMMCMI_IOCFCLMNGDA),
             _ => ::std::option::Option::None
         }
     }
@@ -219,6 +231,9 @@ impl ::protobuf::Enum for GridFightUpdateSrcType {
         GridFightUpdateSrcType::JJDFGMMMCMI_EBMEIFGBJIM,
         GridFightUpdateSrcType::JJDFGMMMCMI_FFKPFGFJCEL,
         GridFightUpdateSrcType::JJDFGMMMCMI_NOKDKPGNPKK,
+        GridFightUpdateSrcType::JJDFGMMMCMI_JNGKOHJPIHK,
+        GridFightUpdateSrcType::JJDFGMMMCMI_DMJNOEIGDPA,
+        GridFightUpdateSrcType::JJDFGMMMCMI_IOCFCLMNGDA,
     ];
 }
 
@@ -247,7 +262,7 @@ impl GridFightUpdateSrcType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGridFightUpdateSrcType.proto*\xf2\x07\n\x16GridFightUpdateSrcType\
+    \n\x1cGridFightUpdateSrcType.proto*\xc9\x08\n\x16GridFightUpdateSrcType\
     \x12\x1b\n\x17JJDFGMMMCMI_CMOALMGLKIE\x10\0\x12\x1b\n\x17JJDFGMMMCMI_DBI\
     EKOMKBIN\x10\x01\x12\x1b\n\x17JJDFGMMMCMI_NFEGHCIANJO\x10\x02\x12\x1b\n\
     \x17JJDFGMMMCMI_OIEEJKMJMDL\x10\x03\x12\x1b\n\x17JJDFGMMMCMI_EJLJOJFECPM\
@@ -269,7 +284,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     IGCGEC\x10\x1c\x12\x1b\n\x17JJDFGMMMCMI_ECJPFOHNEDE\x10\x1d\x12\x1b\n\
     \x17JJDFGMMMCMI_IMDOPABAGGA\x10\x1e\x12\x1b\n\x17JJDFGMMMCMI_EBMEIFGBJIM\
     \x10\x1f\x12\x1b\n\x17JJDFGMMMCMI_FFKPFGFJCEL\x10\x20\x12\x1b\n\x17JJDFG\
-    MMMCMI_NOKDKPGNPKK\x10!b\x06proto3\
+    MMMCMI_NOKDKPGNPKK\x10!\x12\x1b\n\x17JJDFGMMMCMI_JNGKOHJPIHK\x10\"\x12\
+    \x1b\n\x17JJDFGMMMCMI_DMJNOEIGDPA\x10#\x12\x1b\n\x17JJDFGMMMCMI_IOCFCLMN\
+    GDA\x10$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

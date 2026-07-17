@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DGKLPPLJBNB {
     // message fields
-    // @@protoc_insertion_point(field:DGKLPPLJBNB.status)
-    pub status: ::protobuf::EnumOrUnknown<super::LBPLJCHEJOK::LBPLJCHEJOK>,
-    // @@protoc_insertion_point(field:DGKLPPLJBNB.EFCAJENMLKA)
-    pub EFCAJENMLKA: u32,
     // @@protoc_insertion_point(field:DGKLPPLJBNB.CNFGOHFPLGO)
     pub CNFGOHFPLGO: u32,
+    // @@protoc_insertion_point(field:DGKLPPLJBNB.EFCAJENMLKA)
+    pub EFCAJENMLKA: u32,
+    // @@protoc_insertion_point(field:DGKLPPLJBNB.status)
+    pub status: ::protobuf::EnumOrUnknown<super::LBPLJCHEJOK::LBPLJCHEJOK>,
     // special fields
     // @@protoc_insertion_point(special_field:DGKLPPLJBNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl DGKLPPLJBNB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &DGKLPPLJBNB| { &m.status },
-            |m: &mut DGKLPPLJBNB| { &mut m.status },
+            "CNFGOHFPLGO",
+            |m: &DGKLPPLJBNB| { &m.CNFGOHFPLGO },
+            |m: &mut DGKLPPLJBNB| { &mut m.CNFGOHFPLGO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EFCAJENMLKA",
@@ -64,9 +64,9 @@ impl DGKLPPLJBNB {
             |m: &mut DGKLPPLJBNB| { &mut m.EFCAJENMLKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CNFGOHFPLGO",
-            |m: &DGKLPPLJBNB| { &m.CNFGOHFPLGO },
-            |m: &mut DGKLPPLJBNB| { &mut m.CNFGOHFPLGO },
+            "status",
+            |m: &DGKLPPLJBNB| { &m.status },
+            |m: &mut DGKLPPLJBNB| { &mut m.status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DGKLPPLJBNB>(
             "DGKLPPLJBNB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                24 => {
-                    self.EFCAJENMLKA = is.read_uint32()?;
+                8 => {
+                    self.CNFGOHFPLGO = is.read_uint32()?;
                 },
                 80 => {
-                    self.CNFGOHFPLGO = is.read_uint32()?;
+                    self.EFCAJENMLKA = is.read_uint32()?;
+                },
+                88 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            my_size += ::protobuf::rt::int32_size(8, self.status.value());
+        if self.CNFGOHFPLGO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CNFGOHFPLGO);
         }
         if self.EFCAJENMLKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EFCAJENMLKA);
+            my_size += ::protobuf::rt::uint32_size(10, self.EFCAJENMLKA);
         }
-        if self.CNFGOHFPLGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CNFGOHFPLGO);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.CNFGOHFPLGO != 0 {
+            os.write_uint32(1, self.CNFGOHFPLGO)?;
         }
         if self.EFCAJENMLKA != 0 {
-            os.write_uint32(3, self.EFCAJENMLKA)?;
+            os.write_uint32(10, self.EFCAJENMLKA)?;
         }
-        if self.CNFGOHFPLGO != 0 {
-            os.write_uint32(10, self.CNFGOHFPLGO)?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG);
-        self.EFCAJENMLKA = 0;
         self.CNFGOHFPLGO = 0;
+        self.EFCAJENMLKA = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DGKLPPLJBNB {
         static instance: DGKLPPLJBNB = DGKLPPLJBNB {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
-            EFCAJENMLKA: 0,
             CNFGOHFPLGO: 0,
+            EFCAJENMLKA: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DGKLPPLJBNB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DGKLPPLJBNB.proto\x1a\x11LBPLJCHEJOK.proto\"w\n\x0bDGKLPPLJBNB\x12\
-    $\n\x06status\x18\x08\x20\x01(\x0e2\x0c.LBPLJCHEJOKR\x06status\x12\x20\n\
-    \x0bEFCAJENMLKA\x18\x03\x20\x01(\rR\x0bEFCAJENMLKA\x12\x20\n\x0bCNFGOHFP\
-    LGO\x18\n\x20\x01(\rR\x0bCNFGOHFPLGOb\x06proto3\
+    \x20\n\x0bCNFGOHFPLGO\x18\x01\x20\x01(\rR\x0bCNFGOHFPLGO\x12\x20\n\x0bEF\
+    CAJENMLKA\x18\n\x20\x01(\rR\x0bEFCAJENMLKA\x12$\n\x06status\x18\x0b\x20\
+    \x01(\x0e2\x0c.LBPLJCHEJOKR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

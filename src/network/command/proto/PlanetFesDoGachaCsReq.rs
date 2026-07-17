@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDoGachaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDoGachaCsReq.gacha_count)
-    pub gacha_count: u32,
     // @@protoc_insertion_point(field:PlanetFesDoGachaCsReq.gacha_id)
     pub gacha_id: u32,
+    // @@protoc_insertion_point(field:PlanetFesDoGachaCsReq.gacha_count)
+    pub gacha_count: u32,
     // @@protoc_insertion_point(field:PlanetFesDoGachaCsReq.simulate_magic)
     pub simulate_magic: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PlanetFesDoGachaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gacha_count",
-            |m: &PlanetFesDoGachaCsReq| { &m.gacha_count },
-            |m: &mut PlanetFesDoGachaCsReq| { &mut m.gacha_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_id",
             |m: &PlanetFesDoGachaCsReq| { &m.gacha_id },
             |m: &mut PlanetFesDoGachaCsReq| { &mut m.gacha_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gacha_count",
+            |m: &PlanetFesDoGachaCsReq| { &m.gacha_count },
+            |m: &mut PlanetFesDoGachaCsReq| { &mut m.gacha_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "simulate_magic",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for PlanetFesDoGachaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.gacha_count = is.read_uint32()?;
-                },
-                16 => {
+                8 => {
                     self.gacha_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.gacha_count = is.read_uint32()?;
                 },
                 96 => {
                     self.simulate_magic = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for PlanetFesDoGachaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.gacha_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.gacha_count);
-        }
         if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.gacha_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.gacha_id);
+        }
+        if self.gacha_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.gacha_count);
         }
         if self.simulate_magic != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.simulate_magic);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for PlanetFesDoGachaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.gacha_count != 0 {
-            os.write_uint32(6, self.gacha_count)?;
-        }
         if self.gacha_id != 0 {
-            os.write_uint32(2, self.gacha_id)?;
+            os.write_uint32(1, self.gacha_id)?;
+        }
+        if self.gacha_count != 0 {
+            os.write_uint32(3, self.gacha_count)?;
         }
         if self.simulate_magic != 0 {
             os.write_uint32(12, self.simulate_magic)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PlanetFesDoGachaCsReq {
     }
 
     fn clear(&mut self) {
-        self.gacha_count = 0;
         self.gacha_id = 0;
+        self.gacha_count = 0;
         self.simulate_magic = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDoGachaCsReq {
         static instance: PlanetFesDoGachaCsReq = PlanetFesDoGachaCsReq {
-            gacha_count: 0,
             gacha_id: 0,
+            gacha_count: 0,
             simulate_magic: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDoGachaCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlanetFesDoGachaCsReq.proto\"z\n\x15PlanetFesDoGachaCsReq\x12\x1f\
-    \n\x0bgacha_count\x18\x06\x20\x01(\rR\ngachaCount\x12\x19\n\x08gacha_id\
-    \x18\x02\x20\x01(\rR\x07gachaId\x12%\n\x0esimulate_magic\x18\x0c\x20\x01\
-    (\rR\rsimulateMagicb\x06proto3\
+    \n\x1bPlanetFesDoGachaCsReq.proto\"z\n\x15PlanetFesDoGachaCsReq\x12\x19\
+    \n\x08gacha_id\x18\x01\x20\x01(\rR\x07gachaId\x12\x1f\n\x0bgacha_count\
+    \x18\x03\x20\x01(\rR\ngachaCount\x12%\n\x0esimulate_magic\x18\x0c\x20\
+    \x01(\rR\rsimulateMagicb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for LeaveRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.is_save = is.read_bool()?;
                 },
-                16 => {
+                72 => {
                     self.raid_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for LeaveRaidCsReq {
             my_size += 1 + 1;
         }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.raid_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LeaveRaidCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_save != false {
-            os.write_bool(6, self.is_save)?;
+            os.write_bool(4, self.is_save)?;
         }
         if self.raid_id != 0 {
-            os.write_uint32(2, self.raid_id)?;
+            os.write_uint32(9, self.raid_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LeaveRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LeaveRaidCsReq.proto\"B\n\x0eLeaveRaidCsReq\x12\x17\n\x07is_save\
-    \x18\x06\x20\x01(\x08R\x06isSave\x12\x17\n\x07raid_id\x18\x02\x20\x01(\r\
-    R\x06raidIdb\x06proto3\
+    \x18\x04\x20\x01(\x08R\x06isSave\x12\x17\n\x07raid_id\x18\t\x20\x01(\rR\
+    \x06raidIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

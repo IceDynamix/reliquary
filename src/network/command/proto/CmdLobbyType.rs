@@ -29,52 +29,50 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdLobbyType {
     // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_NLCDGIPGFDJ)
     MFAHJPCHPIN_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PPMLDMMDPCK)
-    MFAHJPCHPIN_PPMLDMMDPCK = 7382,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OPELNAJOBHP)
-    MFAHJPCHPIN_OPELNAJOBHP = 7384,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CLJBPFPJJIK)
-    MFAHJPCHPIN_CLJBPFPJJIK = 7358,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_JEBLFCMDDMD)
-    MFAHJPCHPIN_JEBLFCMDDMD = 7357,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_HCAGJGCDPON)
-    MFAHJPCHPIN_HCAGJGCDPON = 7373,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_APHHBOJIFDC)
-    MFAHJPCHPIN_APHHBOJIFDC = 7359,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CIJEGGADKJK)
-    MFAHJPCHPIN_CIJEGGADKJK = 7356,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CGNHPMEHMMF)
-    MFAHJPCHPIN_CGNHPMEHMMF = 7355,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_MCBNPGCBMOK)
-    MFAHJPCHPIN_MCBNPGCBMOK = 7353,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OJNIMDFCMAM)
-    MFAHJPCHPIN_OJNIMDFCMAM = 7366,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_KCIIOPIKCMN)
-    MFAHJPCHPIN_KCIIOPIKCMN = 7392,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_ACOHEGOOIJA)
-    MFAHJPCHPIN_ACOHEGOOIJA = 7377,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_MHKIHNGPLNA)
-    MFAHJPCHPIN_MHKIHNGPLNA = 7390,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_NCACLCLAGPM)
-    MFAHJPCHPIN_NCACLCLAGPM = 7391,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_ILBHOGLEIAG)
-    MFAHJPCHPIN_ILBHOGLEIAG = 7369,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_BOJKKDBEFNL)
-    MFAHJPCHPIN_BOJKKDBEFNL = 7371,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PMBEKLJENGI)
-    MFAHJPCHPIN_PMBEKLJENGI = 7394,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OAOAGMHHEOB)
-    MFAHJPCHPIN_OAOAGMHHEOB = 7393,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CNLPNHLGIBG)
-    MFAHJPCHPIN_CNLPNHLGIBG = 7395,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_GFEEMPEJIMH)
-    MFAHJPCHPIN_GFEEMPEJIMH = 7370,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PFHPPNDDCDN)
-    MFAHJPCHPIN_PFHPPNDDCDN = 7388,
-    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_HKGPMMJLLCP)
-    MFAHJPCHPIN_HKGPMMJLLCP = 7379,
+    MFAHJPCHPIN_KCIIOPIKCMN = 7373,
     // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PJJBGLIJHIJ)
-    MFAHJPCHPIN_PJJBGLIJHIJ = 7362,
+    MFAHJPCHPIN_PJJBGLIJHIJ = 7365,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_APHHBOJIFDC)
+    MFAHJPCHPIN_APHHBOJIFDC = 7360,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_ILBHOGLEIAG)
+    MFAHJPCHPIN_ILBHOGLEIAG = 7353,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_HKGPMMJLLCP)
+    MFAHJPCHPIN_HKGPMMJLLCP = 7371,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PMBEKLJENGI)
+    MFAHJPCHPIN_PMBEKLJENGI = 7369,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OPELNAJOBHP)
+    MFAHJPCHPIN_OPELNAJOBHP = 7370,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_JEBLFCMDDMD)
+    MFAHJPCHPIN_JEBLFCMDDMD = 7387,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CNLPNHLGIBG)
+    MFAHJPCHPIN_CNLPNHLGIBG = 7357,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_GFEEMPEJIMH)
+    MFAHJPCHPIN_GFEEMPEJIMH = 7385,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_MHKIHNGPLNA)
+    MFAHJPCHPIN_MHKIHNGPLNA = 7379,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PFHPPNDDCDN)
+    MFAHJPCHPIN_PFHPPNDDCDN = 7364,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_MCBNPGCBMOK)
+    MFAHJPCHPIN_MCBNPGCBMOK = 7352,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OJNIMDFCMAM)
+    MFAHJPCHPIN_OJNIMDFCMAM = 7358,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CGNHPMEHMMF)
+    MFAHJPCHPIN_CGNHPMEHMMF = 7383,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_CIJEGGADKJK)
+    MFAHJPCHPIN_CIJEGGADKJK = 7363,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_HCAGJGCDPON)
+    MFAHJPCHPIN_HCAGJGCDPON = 7394,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_PPMLDMMDPCK)
+    MFAHJPCHPIN_PPMLDMMDPCK = 7359,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_NCACLCLAGPM)
+    MFAHJPCHPIN_NCACLCLAGPM = 7368,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_OAOAGMHHEOB)
+    MFAHJPCHPIN_OAOAGMHHEOB = 7374,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_BOJKKDBEFNL)
+    MFAHJPCHPIN_BOJKKDBEFNL = 7367,
+    // @@protoc_insertion_point(enum_value:CmdLobbyType.MFAHJPCHPIN_ACOHEGOOIJA)
+    MFAHJPCHPIN_ACOHEGOOIJA = 7398,
 }
 
 impl ::protobuf::Enum for CmdLobbyType {
@@ -87,29 +85,28 @@ impl ::protobuf::Enum for CmdLobbyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdLobbyType> {
         match value {
             0 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NLCDGIPGFDJ),
-            7382 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK),
-            7384 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP),
-            7358 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CLJBPFPJJIK),
-            7357 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD),
-            7373 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON),
-            7359 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC),
-            7356 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK),
-            7355 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF),
-            7353 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK),
-            7366 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM),
-            7392 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN),
-            7377 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA),
-            7390 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA),
-            7391 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM),
-            7369 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG),
-            7371 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL),
-            7394 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI),
-            7393 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB),
-            7395 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG),
-            7370 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH),
-            7388 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN),
-            7379 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP),
-            7362 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ),
+            7373 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN),
+            7365 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ),
+            7360 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC),
+            7353 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG),
+            7371 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP),
+            7369 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI),
+            7370 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP),
+            7387 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD),
+            7357 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG),
+            7385 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH),
+            7379 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA),
+            7364 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN),
+            7352 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK),
+            7358 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM),
+            7383 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF),
+            7363 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK),
+            7394 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON),
+            7359 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK),
+            7368 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM),
+            7374 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB),
+            7367 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL),
+            7398 => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA),
             _ => ::std::option::Option::None
         }
     }
@@ -117,58 +114,56 @@ impl ::protobuf::Enum for CmdLobbyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdLobbyType> {
         match str {
             "MFAHJPCHPIN_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NLCDGIPGFDJ),
-            "MFAHJPCHPIN_PPMLDMMDPCK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK),
-            "MFAHJPCHPIN_OPELNAJOBHP" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP),
-            "MFAHJPCHPIN_CLJBPFPJJIK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CLJBPFPJJIK),
-            "MFAHJPCHPIN_JEBLFCMDDMD" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD),
-            "MFAHJPCHPIN_HCAGJGCDPON" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON),
-            "MFAHJPCHPIN_APHHBOJIFDC" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC),
-            "MFAHJPCHPIN_CIJEGGADKJK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK),
-            "MFAHJPCHPIN_CGNHPMEHMMF" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF),
-            "MFAHJPCHPIN_MCBNPGCBMOK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK),
-            "MFAHJPCHPIN_OJNIMDFCMAM" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM),
             "MFAHJPCHPIN_KCIIOPIKCMN" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN),
-            "MFAHJPCHPIN_ACOHEGOOIJA" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA),
-            "MFAHJPCHPIN_MHKIHNGPLNA" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA),
-            "MFAHJPCHPIN_NCACLCLAGPM" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM),
+            "MFAHJPCHPIN_PJJBGLIJHIJ" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ),
+            "MFAHJPCHPIN_APHHBOJIFDC" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC),
             "MFAHJPCHPIN_ILBHOGLEIAG" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG),
-            "MFAHJPCHPIN_BOJKKDBEFNL" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL),
+            "MFAHJPCHPIN_HKGPMMJLLCP" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP),
             "MFAHJPCHPIN_PMBEKLJENGI" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI),
-            "MFAHJPCHPIN_OAOAGMHHEOB" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB),
+            "MFAHJPCHPIN_OPELNAJOBHP" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP),
+            "MFAHJPCHPIN_JEBLFCMDDMD" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD),
             "MFAHJPCHPIN_CNLPNHLGIBG" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG),
             "MFAHJPCHPIN_GFEEMPEJIMH" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH),
+            "MFAHJPCHPIN_MHKIHNGPLNA" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA),
             "MFAHJPCHPIN_PFHPPNDDCDN" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN),
-            "MFAHJPCHPIN_HKGPMMJLLCP" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP),
-            "MFAHJPCHPIN_PJJBGLIJHIJ" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ),
+            "MFAHJPCHPIN_MCBNPGCBMOK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK),
+            "MFAHJPCHPIN_OJNIMDFCMAM" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM),
+            "MFAHJPCHPIN_CGNHPMEHMMF" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF),
+            "MFAHJPCHPIN_CIJEGGADKJK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK),
+            "MFAHJPCHPIN_HCAGJGCDPON" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON),
+            "MFAHJPCHPIN_PPMLDMMDPCK" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK),
+            "MFAHJPCHPIN_NCACLCLAGPM" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM),
+            "MFAHJPCHPIN_OAOAGMHHEOB" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB),
+            "MFAHJPCHPIN_BOJKKDBEFNL" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL),
+            "MFAHJPCHPIN_ACOHEGOOIJA" => ::std::option::Option::Some(CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLobbyType] = &[
         CmdLobbyType::MFAHJPCHPIN_NLCDGIPGFDJ,
-        CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK,
-        CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP,
-        CmdLobbyType::MFAHJPCHPIN_CLJBPFPJJIK,
-        CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD,
-        CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON,
-        CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC,
-        CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK,
-        CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF,
-        CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK,
-        CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM,
         CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN,
-        CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA,
-        CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA,
-        CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM,
+        CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ,
+        CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC,
         CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG,
-        CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL,
+        CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP,
         CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI,
-        CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB,
+        CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP,
+        CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD,
         CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG,
         CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH,
+        CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA,
         CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN,
-        CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP,
-        CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ,
+        CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK,
+        CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM,
+        CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF,
+        CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK,
+        CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON,
+        CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK,
+        CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM,
+        CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB,
+        CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL,
+        CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA,
     ];
 }
 
@@ -181,29 +176,28 @@ impl ::protobuf::EnumFull for CmdLobbyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdLobbyType::MFAHJPCHPIN_NLCDGIPGFDJ => 0,
-            CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK => 1,
-            CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP => 2,
-            CmdLobbyType::MFAHJPCHPIN_CLJBPFPJJIK => 3,
-            CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD => 4,
-            CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON => 5,
-            CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC => 6,
-            CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK => 7,
-            CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF => 8,
-            CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK => 9,
-            CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM => 10,
-            CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN => 11,
-            CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA => 12,
-            CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA => 13,
-            CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM => 14,
-            CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG => 15,
-            CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL => 16,
-            CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI => 17,
-            CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB => 18,
-            CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG => 19,
-            CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH => 20,
-            CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN => 21,
-            CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP => 22,
-            CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ => 23,
+            CmdLobbyType::MFAHJPCHPIN_KCIIOPIKCMN => 1,
+            CmdLobbyType::MFAHJPCHPIN_PJJBGLIJHIJ => 2,
+            CmdLobbyType::MFAHJPCHPIN_APHHBOJIFDC => 3,
+            CmdLobbyType::MFAHJPCHPIN_ILBHOGLEIAG => 4,
+            CmdLobbyType::MFAHJPCHPIN_HKGPMMJLLCP => 5,
+            CmdLobbyType::MFAHJPCHPIN_PMBEKLJENGI => 6,
+            CmdLobbyType::MFAHJPCHPIN_OPELNAJOBHP => 7,
+            CmdLobbyType::MFAHJPCHPIN_JEBLFCMDDMD => 8,
+            CmdLobbyType::MFAHJPCHPIN_CNLPNHLGIBG => 9,
+            CmdLobbyType::MFAHJPCHPIN_GFEEMPEJIMH => 10,
+            CmdLobbyType::MFAHJPCHPIN_MHKIHNGPLNA => 11,
+            CmdLobbyType::MFAHJPCHPIN_PFHPPNDDCDN => 12,
+            CmdLobbyType::MFAHJPCHPIN_MCBNPGCBMOK => 13,
+            CmdLobbyType::MFAHJPCHPIN_OJNIMDFCMAM => 14,
+            CmdLobbyType::MFAHJPCHPIN_CGNHPMEHMMF => 15,
+            CmdLobbyType::MFAHJPCHPIN_CIJEGGADKJK => 16,
+            CmdLobbyType::MFAHJPCHPIN_HCAGJGCDPON => 17,
+            CmdLobbyType::MFAHJPCHPIN_PPMLDMMDPCK => 18,
+            CmdLobbyType::MFAHJPCHPIN_NCACLCLAGPM => 19,
+            CmdLobbyType::MFAHJPCHPIN_OAOAGMHHEOB => 20,
+            CmdLobbyType::MFAHJPCHPIN_BOJKKDBEFNL => 21,
+            CmdLobbyType::MFAHJPCHPIN_ACOHEGOOIJA => 22,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -222,23 +216,22 @@ impl CmdLobbyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdLobbyType.proto*\xdd\x05\n\x0cCmdLobbyType\x12\x1b\n\x17MFAHJPC\
-    HPIN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFAHJPCHPIN_PPMLDMMDPCK\x10\xd69\x12\
-    \x1c\n\x17MFAHJPCHPIN_OPELNAJOBHP\x10\xd89\x12\x1c\n\x17MFAHJPCHPIN_CLJB\
-    PFPJJIK\x10\xbe9\x12\x1c\n\x17MFAHJPCHPIN_JEBLFCMDDMD\x10\xbd9\x12\x1c\n\
-    \x17MFAHJPCHPIN_HCAGJGCDPON\x10\xcd9\x12\x1c\n\x17MFAHJPCHPIN_APHHBOJIFD\
-    C\x10\xbf9\x12\x1c\n\x17MFAHJPCHPIN_CIJEGGADKJK\x10\xbc9\x12\x1c\n\x17MF\
-    AHJPCHPIN_CGNHPMEHMMF\x10\xbb9\x12\x1c\n\x17MFAHJPCHPIN_MCBNPGCBMOK\x10\
-    \xb99\x12\x1c\n\x17MFAHJPCHPIN_OJNIMDFCMAM\x10\xc69\x12\x1c\n\x17MFAHJPC\
-    HPIN_KCIIOPIKCMN\x10\xe09\x12\x1c\n\x17MFAHJPCHPIN_ACOHEGOOIJA\x10\xd19\
-    \x12\x1c\n\x17MFAHJPCHPIN_MHKIHNGPLNA\x10\xde9\x12\x1c\n\x17MFAHJPCHPIN_\
-    NCACLCLAGPM\x10\xdf9\x12\x1c\n\x17MFAHJPCHPIN_ILBHOGLEIAG\x10\xc99\x12\
-    \x1c\n\x17MFAHJPCHPIN_BOJKKDBEFNL\x10\xcb9\x12\x1c\n\x17MFAHJPCHPIN_PMBE\
-    KLJENGI\x10\xe29\x12\x1c\n\x17MFAHJPCHPIN_OAOAGMHHEOB\x10\xe19\x12\x1c\n\
-    \x17MFAHJPCHPIN_CNLPNHLGIBG\x10\xe39\x12\x1c\n\x17MFAHJPCHPIN_GFEEMPEJIM\
-    H\x10\xca9\x12\x1c\n\x17MFAHJPCHPIN_PFHPPNDDCDN\x10\xdc9\x12\x1c\n\x17MF\
-    AHJPCHPIN_HKGPMMJLLCP\x10\xd39\x12\x1c\n\x17MFAHJPCHPIN_PJJBGLIJHIJ\x10\
-    \xc29b\x06proto3\
+    \n\x12CmdLobbyType.proto*\xbf\x05\n\x0cCmdLobbyType\x12\x1b\n\x17MFAHJPC\
+    HPIN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFAHJPCHPIN_KCIIOPIKCMN\x10\xcd9\x12\
+    \x1c\n\x17MFAHJPCHPIN_PJJBGLIJHIJ\x10\xc59\x12\x1c\n\x17MFAHJPCHPIN_APHH\
+    BOJIFDC\x10\xc09\x12\x1c\n\x17MFAHJPCHPIN_ILBHOGLEIAG\x10\xb99\x12\x1c\n\
+    \x17MFAHJPCHPIN_HKGPMMJLLCP\x10\xcb9\x12\x1c\n\x17MFAHJPCHPIN_PMBEKLJENG\
+    I\x10\xc99\x12\x1c\n\x17MFAHJPCHPIN_OPELNAJOBHP\x10\xca9\x12\x1c\n\x17MF\
+    AHJPCHPIN_JEBLFCMDDMD\x10\xdb9\x12\x1c\n\x17MFAHJPCHPIN_CNLPNHLGIBG\x10\
+    \xbd9\x12\x1c\n\x17MFAHJPCHPIN_GFEEMPEJIMH\x10\xd99\x12\x1c\n\x17MFAHJPC\
+    HPIN_MHKIHNGPLNA\x10\xd39\x12\x1c\n\x17MFAHJPCHPIN_PFHPPNDDCDN\x10\xc49\
+    \x12\x1c\n\x17MFAHJPCHPIN_MCBNPGCBMOK\x10\xb89\x12\x1c\n\x17MFAHJPCHPIN_\
+    OJNIMDFCMAM\x10\xbe9\x12\x1c\n\x17MFAHJPCHPIN_CGNHPMEHMMF\x10\xd79\x12\
+    \x1c\n\x17MFAHJPCHPIN_CIJEGGADKJK\x10\xc39\x12\x1c\n\x17MFAHJPCHPIN_HCAG\
+    JGCDPON\x10\xe29\x12\x1c\n\x17MFAHJPCHPIN_PPMLDMMDPCK\x10\xbf9\x12\x1c\n\
+    \x17MFAHJPCHPIN_NCACLCLAGPM\x10\xc89\x12\x1c\n\x17MFAHJPCHPIN_OAOAGMHHEO\
+    B\x10\xce9\x12\x1c\n\x17MFAHJPCHPIN_BOJKKDBEFNL\x10\xc79\x12\x1c\n\x17MF\
+    AHJPCHPIN_ACOHEGOOIJA\x10\xe69b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

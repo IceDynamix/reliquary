@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMCNDLNONMO {
     // message fields
-    // @@protoc_insertion_point(field:BMCNDLNONMO.OOPCPMANCBO)
-    pub OOPCPMANCBO: ::protobuf::MessageField<super::KIJEFIIBBGG::KIJEFIIBBGG>,
-    // @@protoc_insertion_point(field:BMCNDLNONMO.NFMKOFNEKLA)
-    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // @@protoc_insertion_point(field:BMCNDLNONMO.FCHLCANJIGL)
     pub FCHLCANJIGL: u64,
+    // @@protoc_insertion_point(field:BMCNDLNONMO.OOPCPMANCBO)
+    pub OOPCPMANCBO: ::protobuf::MessageField<super::KIJEFIIBBGG::KIJEFIIBBGG>,
+    // @@protoc_insertion_point(field:BMCNDLNONMO.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::RogueModifierSourceType::RogueModifierSourceType>,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<bmcndlnonmo::KKNBOACNCON>,
     // special fields
@@ -52,7 +52,7 @@ impl BMCNDLNONMO {
         ::std::default::Default::default()
     }
 
-    // .FGHIMGPGBNF NLGJFIGPENF = 9;
+    // .FGHIMGPGBNF NLGJFIGPENF = 11;
 
     pub fn NLGJFIGPENF(&self) -> &super::FGHIMGPGBNF::FGHIMGPGBNF {
         match self.KKNBOACNCON {
@@ -101,7 +101,7 @@ impl BMCNDLNONMO {
         }
     }
 
-    // .AIBNHPAGDOL LEJPOHHGBMB = 8;
+    // .AIBNHPAGDOL LEJPOHHGBMB = 15;
 
     pub fn LEJPOHHGBMB(&self) -> &super::AIBNHPAGDOL::AIBNHPAGDOL {
         match self.KKNBOACNCON {
@@ -150,7 +150,7 @@ impl BMCNDLNONMO {
         }
     }
 
-    // .HFJKOCDOAEH GGJOKFEOEBK = 2;
+    // .HFJKOCDOAEH GGJOKFEOEBK = 1;
 
     pub fn GGJOKFEOEBK(&self) -> &super::HFJKOCDOAEH::HFJKOCDOAEH {
         match self.KKNBOACNCON {
@@ -202,20 +202,20 @@ impl BMCNDLNONMO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FCHLCANJIGL",
+            |m: &BMCNDLNONMO| { &m.FCHLCANJIGL },
+            |m: &mut BMCNDLNONMO| { &mut m.FCHLCANJIGL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIJEFIIBBGG::KIJEFIIBBGG>(
             "OOPCPMANCBO",
             |m: &BMCNDLNONMO| { &m.OOPCPMANCBO },
             |m: &mut BMCNDLNONMO| { &mut m.OOPCPMANCBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFMKOFNEKLA",
-            |m: &BMCNDLNONMO| { &m.NFMKOFNEKLA },
-            |m: &mut BMCNDLNONMO| { &mut m.NFMKOFNEKLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCHLCANJIGL",
-            |m: &BMCNDLNONMO| { &m.FCHLCANJIGL },
-            |m: &mut BMCNDLNONMO| { &mut m.FCHLCANJIGL },
+            "source_type",
+            |m: &BMCNDLNONMO| { &m.source_type },
+            |m: &mut BMCNDLNONMO| { &mut m.source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FGHIMGPGBNF::FGHIMGPGBNF>(
             "NLGJFIGPENF",
@@ -257,22 +257,22 @@ impl ::protobuf::Message for BMCNDLNONMO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
-                },
-                8 => {
-                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
-                },
-                32 => {
+                64 => {
                     self.FCHLCANJIGL = is.read_uint64()?;
                 },
-                74 => {
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
+                },
+                112 => {
+                    self.source_type = is.read_enum_or_unknown()?;
+                },
+                90 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(is.read_message()?));
                 },
-                66 => {
+                122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(is.read_message()?));
                 },
-                18 => {
+                10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(bmcndlnonmo::KKNBOACNCON::GGJOKFEOEBK(is.read_message()?));
                 },
                 tag => {
@@ -287,15 +287,15 @@ impl ::protobuf::Message for BMCNDLNONMO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FCHLCANJIGL != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.FCHLCANJIGL);
+        }
         if let Some(v) = self.OOPCPMANCBO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
-            my_size += ::protobuf::rt::int32_size(1, self.NFMKOFNEKLA.value());
-        }
-        if self.FCHLCANJIGL != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.FCHLCANJIGL);
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
+            my_size += ::protobuf::rt::int32_size(14, self.source_type.value());
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -319,25 +319,25 @@ impl ::protobuf::Message for BMCNDLNONMO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OOPCPMANCBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
-        }
         if self.FCHLCANJIGL != 0 {
-            os.write_uint64(4, self.FCHLCANJIGL)?;
+            os.write_uint64(8, self.FCHLCANJIGL)?;
+        }
+        if let Some(v) = self.OOPCPMANCBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &bmcndlnonmo::KKNBOACNCON::NLGJFIGPENF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
                 &bmcndlnonmo::KKNBOACNCON::LEJPOHHGBMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &bmcndlnonmo::KKNBOACNCON::GGJOKFEOEBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
             };
         }
@@ -358,9 +358,9 @@ impl ::protobuf::Message for BMCNDLNONMO {
     }
 
     fn clear(&mut self) {
-        self.OOPCPMANCBO.clear();
-        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA);
         self.FCHLCANJIGL = 0;
+        self.OOPCPMANCBO.clear();
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::AMEIKAGDIFC_PBGOAOGCPLA);
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -369,9 +369,9 @@ impl ::protobuf::Message for BMCNDLNONMO {
 
     fn default_instance() -> &'static BMCNDLNONMO {
         static instance: BMCNDLNONMO = BMCNDLNONMO {
-            OOPCPMANCBO: ::protobuf::MessageField::none(),
-            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             FCHLCANJIGL: 0,
+            OOPCPMANCBO: ::protobuf::MessageField::none(),
+            source_type: ::protobuf::EnumOrUnknown::from_i32(0),
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -431,14 +431,14 @@ pub mod bmcndlnonmo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMCNDLNONMO.proto\x1a\x11AIBNHPAGDOL.proto\x1a\x11FGHIMGPGBNF.prot\
     o\x1a\x11HFJKOCDOAEH.proto\x1a\x11KIJEFIIBBGG.proto\x1a\x1dRogueModifier\
-    SourceType.proto\"\xc0\x02\n\x0bBMCNDLNONMO\x12.\n\x0bOOPCPMANCBO\x18\
-    \x03\x20\x01(\x0b2\x0c.KIJEFIIBBGGR\x0bOOPCPMANCBO\x12:\n\x0bNFMKOFNEKLA\
-    \x18\x01\x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0bNFMKOFNEKLA\x12\
-    \x20\n\x0bFCHLCANJIGL\x18\x04\x20\x01(\x04R\x0bFCHLCANJIGL\x120\n\x0bNLG\
-    JFIGPENF\x18\t\x20\x01(\x0b2\x0c.FGHIMGPGBNFH\0R\x0bNLGJFIGPENF\x120\n\
-    \x0bLEJPOHHGBMB\x18\x08\x20\x01(\x0b2\x0c.AIBNHPAGDOLH\0R\x0bLEJPOHHGBMB\
-    \x120\n\x0bGGJOKFEOEBK\x18\x02\x20\x01(\x0b2\x0c.HFJKOCDOAEHH\0R\x0bGGJO\
-    KFEOEBKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    SourceType.proto\"\xbf\x02\n\x0bBMCNDLNONMO\x12\x20\n\x0bFCHLCANJIGL\x18\
+    \x08\x20\x01(\x04R\x0bFCHLCANJIGL\x12.\n\x0bOOPCPMANCBO\x18\x0c\x20\x01(\
+    \x0b2\x0c.KIJEFIIBBGGR\x0bOOPCPMANCBO\x129\n\x0bsource_type\x18\x0e\x20\
+    \x01(\x0e2\x18.RogueModifierSourceTypeR\nsourceType\x120\n\x0bNLGJFIGPEN\
+    F\x18\x0b\x20\x01(\x0b2\x0c.FGHIMGPGBNFH\0R\x0bNLGJFIGPENF\x120\n\x0bLEJ\
+    POHHGBMB\x18\x0f\x20\x01(\x0b2\x0c.AIBNHPAGDOLH\0R\x0bLEJPOHHGBMB\x120\n\
+    \x0bGGJOKFEOEBK\x18\x01\x20\x01(\x0b2\x0c.HFJKOCDOAEHH\0R\x0bGGJOKFEOEBK\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

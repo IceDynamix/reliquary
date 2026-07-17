@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                88 => {
                     self.PLJPIPDFAHA = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PLJPIPDFAHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PLJPIPDFAHA);
+            my_size += ::protobuf::rt::uint32_size(11, self.PLJPIPDFAHA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PLJPIPDFAHA != 0 {
-            os.write_uint32(6, self.PLJPIPDFAHA)?;
+            os.write_uint32(11, self.PLJPIPDFAHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournTitanUpdateTitanBlessProgr
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n5RogueTournTitanUpdateTitanBlessProgressScNotify.proto\"S\n/RogueTourn\
-    TitanUpdateTitanBlessProgressScNotify\x12\x20\n\x0bPLJPIPDFAHA\x18\x06\
+    TitanUpdateTitanBlessProgressScNotify\x12\x20\n\x0bPLJPIPDFAHA\x18\x0b\
     \x20\x01(\rR\x0bPLJPIPDFAHAb\x06proto3\
 ";
 

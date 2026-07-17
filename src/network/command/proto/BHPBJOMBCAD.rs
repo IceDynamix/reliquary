@@ -86,13 +86,13 @@ impl ::protobuf::Message for BHPBJOMBCAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     self.IJKIBLJEGGE.push(is.read_message()?);
                 },
-                96 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.NOALGKCLDHF = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for BHPBJOMBCAD {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         if self.NOALGKCLDHF != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for BHPBJOMBCAD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IJKIBLJEGGE {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.group_id != 0 {
-            os.write_uint32(12, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         if self.NOALGKCLDHF != false {
-            os.write_bool(5, self.NOALGKCLDHF)?;
+            os.write_bool(13, self.NOALGKCLDHF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BHPBJOMBCAD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHPBJOMBCAD.proto\x1a\x11NEJPAGJBMDA.proto\"z\n\x0bBHPBJOMBCAD\x12\
-    .\n\x0bIJKIBLJEGGE\x18\x08\x20\x03(\x0b2\x0c.NEJPAGJBMDAR\x0bIJKIBLJEGGE\
-    \x12\x19\n\x08group_id\x18\x0c\x20\x01(\rR\x07groupId\x12\x20\n\x0bNOALG\
-    KCLDHF\x18\x05\x20\x01(\x08R\x0bNOALGKCLDHFb\x06proto3\
+    .\n\x0bIJKIBLJEGGE\x18\x02\x20\x03(\x0b2\x0c.NEJPAGJBMDAR\x0bIJKIBLJEGGE\
+    \x12\x19\n\x08group_id\x18\x04\x20\x01(\rR\x07groupId\x12\x20\n\x0bNOALG\
+    KCLDHF\x18\r\x20\x01(\x08R\x0bNOALGKCLDHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

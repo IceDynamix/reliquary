@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGEDFOBAEBC {
     // message fields
-    // @@protoc_insertion_point(field:PGEDFOBAEBC.OMFGAABELHE)
-    pub OMFGAABELHE: u32,
     // @@protoc_insertion_point(field:PGEDFOBAEBC.PLFMKDOCPLP)
     pub PLFMKDOCPLP: u32,
+    // @@protoc_insertion_point(field:PGEDFOBAEBC.OMFGAABELHE)
+    pub OMFGAABELHE: u32,
     // @@protoc_insertion_point(field:PGEDFOBAEBC.FCFLEFOKLFD)
     pub FCFLEFOKLFD: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PGEDFOBAEBC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMFGAABELHE",
-            |m: &PGEDFOBAEBC| { &m.OMFGAABELHE },
-            |m: &mut PGEDFOBAEBC| { &mut m.OMFGAABELHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLFMKDOCPLP",
             |m: &PGEDFOBAEBC| { &m.PLFMKDOCPLP },
             |m: &mut PGEDFOBAEBC| { &mut m.PLFMKDOCPLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMFGAABELHE",
+            |m: &PGEDFOBAEBC| { &m.OMFGAABELHE },
+            |m: &mut PGEDFOBAEBC| { &mut m.OMFGAABELHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FCFLEFOKLFD",
@@ -87,10 +87,10 @@ impl ::protobuf::Message for PGEDFOBAEBC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 72 => {
-                    self.OMFGAABELHE = is.read_uint32()?;
-                },
-                64 => {
                     self.PLFMKDOCPLP = is.read_uint32()?;
+                },
+                96 => {
+                    self.OMFGAABELHE = is.read_uint32()?;
                 },
                 120 => {
                     self.FCFLEFOKLFD = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for PGEDFOBAEBC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OMFGAABELHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OMFGAABELHE);
-        }
         if self.PLFMKDOCPLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PLFMKDOCPLP);
+            my_size += ::protobuf::rt::uint32_size(9, self.PLFMKDOCPLP);
+        }
+        if self.OMFGAABELHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OMFGAABELHE);
         }
         if self.FCFLEFOKLFD != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.FCFLEFOKLFD);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for PGEDFOBAEBC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OMFGAABELHE != 0 {
-            os.write_uint32(9, self.OMFGAABELHE)?;
-        }
         if self.PLFMKDOCPLP != 0 {
-            os.write_uint32(8, self.PLFMKDOCPLP)?;
+            os.write_uint32(9, self.PLFMKDOCPLP)?;
+        }
+        if self.OMFGAABELHE != 0 {
+            os.write_uint32(12, self.OMFGAABELHE)?;
         }
         if self.FCFLEFOKLFD != 0 {
             os.write_uint32(15, self.FCFLEFOKLFD)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PGEDFOBAEBC {
     }
 
     fn clear(&mut self) {
-        self.OMFGAABELHE = 0;
         self.PLFMKDOCPLP = 0;
+        self.OMFGAABELHE = 0;
         self.FCFLEFOKLFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGEDFOBAEBC {
         static instance: PGEDFOBAEBC = PGEDFOBAEBC {
-            OMFGAABELHE: 0,
             PLFMKDOCPLP: 0,
+            OMFGAABELHE: 0,
             FCFLEFOKLFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PGEDFOBAEBC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGEDFOBAEBC.proto\"s\n\x0bPGEDFOBAEBC\x12\x20\n\x0bOMFGAABELHE\x18\
-    \t\x20\x01(\rR\x0bOMFGAABELHE\x12\x20\n\x0bPLFMKDOCPLP\x18\x08\x20\x01(\
-    \rR\x0bPLFMKDOCPLP\x12\x20\n\x0bFCFLEFOKLFD\x18\x0f\x20\x01(\rR\x0bFCFLE\
+    \n\x11PGEDFOBAEBC.proto\"s\n\x0bPGEDFOBAEBC\x12\x20\n\x0bPLFMKDOCPLP\x18\
+    \t\x20\x01(\rR\x0bPLFMKDOCPLP\x12\x20\n\x0bOMFGAABELHE\x18\x0c\x20\x01(\
+    \rR\x0bOMFGAABELHE\x12\x20\n\x0bFCFLEFOKLFD\x18\x0f\x20\x01(\rR\x0bFCFLE\
     FOKLFDb\x06proto3\
 ";
 

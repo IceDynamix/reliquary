@@ -79,10 +79,10 @@ impl ::protobuf::Message for ContentPackageData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.content_package_list.push(is.read_message()?);
                 },
-                96 => {
+                120 => {
                     self.cur_content_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ContentPackageData {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.cur_content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.cur_content_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.cur_content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ContentPackageData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.content_package_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.cur_content_id != 0 {
-            os.write_uint32(12, self.cur_content_id)?;
+            os.write_uint32(15, self.cur_content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ContentPackageData.proto\x1a\x18ContentPackageInfo.proto\"\x81\x01\
-    \n\x12ContentPackageData\x12E\n\x14content_package_list\x18\x02\x20\x03(\
+    \n\x12ContentPackageData\x12E\n\x14content_package_list\x18\x01\x20\x03(\
     \x0b2\x13.ContentPackageInfoR\x12contentPackageList\x12$\n\x0ecur_conten\
-    t_id\x18\x0c\x20\x01(\rR\x0ccurContentIdb\x06proto3\
+    t_id\x18\x0f\x20\x01(\rR\x0ccurContentIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

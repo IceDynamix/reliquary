@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueCollectionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.DPIKOCFILGP)
-    pub DPIKOCFILGP: ::std::vec::Vec<super::NPAJHGDEIDJ::NPAJHGDEIDJ>,
-    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.CEPDOBEIEFG)
-    pub CEPDOBEIEFG: ::std::vec::Vec<super::JMJEIBGACMD::JMJEIBGACMD>,
     // @@protoc_insertion_point(field:SetRogueCollectionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.CEPDOBEIEFG)
+    pub CEPDOBEIEFG: ::std::vec::Vec<super::JMJEIBGACMD::JMJEIBGACMD>,
+    // @@protoc_insertion_point(field:SetRogueCollectionScRsp.DPIKOCFILGP)
+    pub DPIKOCFILGP: ::std::vec::Vec<super::NPAJHGDEIDJ::NPAJHGDEIDJ>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueCollectionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SetRogueCollectionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DPIKOCFILGP",
-            |m: &SetRogueCollectionScRsp| { &m.DPIKOCFILGP },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.DPIKOCFILGP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetRogueCollectionScRsp| { &m.retcode },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CEPDOBEIEFG",
             |m: &SetRogueCollectionScRsp| { &m.CEPDOBEIEFG },
             |m: &mut SetRogueCollectionScRsp| { &mut m.CEPDOBEIEFG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetRogueCollectionScRsp| { &m.retcode },
-            |m: &mut SetRogueCollectionScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DPIKOCFILGP",
+            |m: &SetRogueCollectionScRsp| { &m.DPIKOCFILGP },
+            |m: &mut SetRogueCollectionScRsp| { &mut m.DPIKOCFILGP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueCollectionScRsp>(
             "SetRogueCollectionScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.DPIKOCFILGP.push(is.read_message()?);
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                50 => {
                     self.CEPDOBEIEFG.push(is.read_message()?);
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                58 => {
+                    self.DPIKOCFILGP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DPIKOCFILGP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         for value in &self.CEPDOBEIEFG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
+        for value in &self.DPIKOCFILGP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DPIKOCFILGP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        for v in &self.CEPDOBEIEFG {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
+        for v in &self.CEPDOBEIEFG {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.DPIKOCFILGP {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     }
 
     fn clear(&mut self) {
-        self.DPIKOCFILGP.clear();
-        self.CEPDOBEIEFG.clear();
         self.retcode = 0;
+        self.CEPDOBEIEFG.clear();
+        self.DPIKOCFILGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueCollectionScRsp {
         static instance: SetRogueCollectionScRsp = SetRogueCollectionScRsp {
-            DPIKOCFILGP: ::std::vec::Vec::new(),
-            CEPDOBEIEFG: ::std::vec::Vec::new(),
             retcode: 0,
+            CEPDOBEIEFG: ::std::vec::Vec::new(),
+            DPIKOCFILGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueCollectionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueCollectionScRsp.proto\x1a\x11JMJEIBGACMD.proto\x1a\x11NPAJ\
-    HGDEIDJ.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12.\n\x0bDPIKOCFIL\
-    GP\x18\t\x20\x03(\x0b2\x0c.NPAJHGDEIDJR\x0bDPIKOCFILGP\x12.\n\x0bCEPDOBE\
-    IEFG\x18\x0e\x20\x03(\x0b2\x0c.JMJEIBGACMDR\x0bCEPDOBEIEFG\x12\x18\n\x07\
-    retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    HGDEIDJ.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12\x18\n\x07retcod\
+    e\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bCEPDOBEIEFG\x18\x06\x20\x03(\
+    \x0b2\x0c.JMJEIBGACMDR\x0bCEPDOBEIEFG\x12.\n\x0bDPIKOCFILGP\x18\x07\x20\
+    \x03(\x0b2\x0c.NPAJHGDEIDJR\x0bDPIKOCFILGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

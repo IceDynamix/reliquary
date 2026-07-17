@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AIIGHJEIGHE {
     // message fields
-    // @@protoc_insertion_point(field:AIIGHJEIGHE.lineup)
-    pub lineup: ::protobuf::MessageField<super::ChallengeLineupList::ChallengeLineupList>,
     // @@protoc_insertion_point(field:AIIGHJEIGHE.stage_index)
     pub stage_index: u32,
+    // @@protoc_insertion_point(field:AIIGHJEIGHE.lineup)
+    pub lineup: ::protobuf::MessageField<super::ChallengeLineupList::ChallengeLineupList>,
     // @@protoc_insertion_point(field:AIIGHJEIGHE.buff_id)
     pub buff_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl AIIGHJEIGHE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeLineupList::ChallengeLineupList>(
-            "lineup",
-            |m: &AIIGHJEIGHE| { &m.lineup },
-            |m: &mut AIIGHJEIGHE| { &mut m.lineup },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_index",
             |m: &AIIGHJEIGHE| { &m.stage_index },
             |m: &mut AIIGHJEIGHE| { &mut m.stage_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeLineupList::ChallengeLineupList>(
+            "lineup",
+            |m: &AIIGHJEIGHE| { &m.lineup },
+            |m: &mut AIIGHJEIGHE| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for AIIGHJEIGHE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
                 8 => {
                     self.stage_index = is.read_uint32()?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 24 => {
                     self.buff_id = is.read_uint32()?;
@@ -107,12 +107,12 @@ impl ::protobuf::Message for AIIGHJEIGHE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.stage_index);
+        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.stage_index);
         }
         if self.buff_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.buff_id);
@@ -123,11 +123,11 @@ impl ::protobuf::Message for AIIGHJEIGHE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
         if self.stage_index != 0 {
             os.write_uint32(1, self.stage_index)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.buff_id != 0 {
             os.write_uint32(3, self.buff_id)?;
@@ -149,16 +149,16 @@ impl ::protobuf::Message for AIIGHJEIGHE {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
         self.stage_index = 0;
+        self.lineup.clear();
         self.buff_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AIIGHJEIGHE {
         static instance: AIIGHJEIGHE = AIIGHJEIGHE {
-            lineup: ::protobuf::MessageField::none(),
             stage_index: 0,
+            lineup: ::protobuf::MessageField::none(),
             buff_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for AIIGHJEIGHE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIIGHJEIGHE.proto\x1a\x19ChallengeLineupList.proto\"u\n\x0bAIIGHJE\
-    IGHE\x12,\n\x06lineup\x18\x02\x20\x01(\x0b2\x14.ChallengeLineupListR\x06\
-    lineup\x12\x1f\n\x0bstage_index\x18\x01\x20\x01(\rR\nstageIndex\x12\x17\
+    IGHE\x12\x1f\n\x0bstage_index\x18\x01\x20\x01(\rR\nstageIndex\x12,\n\x06\
+    lineup\x18\x02\x20\x01(\x0b2\x14.ChallengeLineupListR\x06lineup\x12\x17\
     \n\x07buff_id\x18\x03\x20\x01(\rR\x06buffIdb\x06proto3\
 ";
 

@@ -32,8 +32,8 @@ pub struct LJKFPPDFHMH {
     pub KLAJGAKAFCP: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
     // @@protoc_insertion_point(field:LJKFPPDFHMH.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:LJKFPPDFHMH.FEBKMOCOJLE)
-    pub FEBKMOCOJLE: bool,
+    // @@protoc_insertion_point(field:LJKFPPDFHMH.is_open)
+    pub is_open: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LJKFPPDFHMH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl LJKFPPDFHMH {
             |m: &mut LJKFPPDFHMH| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEBKMOCOJLE",
-            |m: &LJKFPPDFHMH| { &m.FEBKMOCOJLE },
-            |m: &mut LJKFPPDFHMH| { &mut m.FEBKMOCOJLE },
+            "is_open",
+            |m: &LJKFPPDFHMH| { &m.is_open },
+            |m: &mut LJKFPPDFHMH| { &mut m.is_open },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LJKFPPDFHMH>(
             "LJKFPPDFHMH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LJKFPPDFHMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.FEBKMOCOJLE = is.read_bool()?;
+                88 => {
+                    self.is_open = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,12 +108,12 @@ impl ::protobuf::Message for LJKFPPDFHMH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.KLAJGAKAFCP.value());
+            my_size += ::protobuf::rt::int32_size(1, self.KLAJGAKAFCP.value());
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.FEBKMOCOJLE != false {
+        if self.is_open != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,13 +123,13 @@ impl ::protobuf::Message for LJKFPPDFHMH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if self.FEBKMOCOJLE != false {
-            os.write_bool(5, self.FEBKMOCOJLE)?;
+        if self.is_open != false {
+            os.write_bool(11, self.is_open)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,7 +150,7 @@ impl ::protobuf::Message for LJKFPPDFHMH {
     fn clear(&mut self) {
         self.KLAJGAKAFCP = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::FHLEKKNDBBE_NLCDGIPGFDJ);
         self.retcode = 0;
-        self.FEBKMOCOJLE = false;
+        self.is_open = false;
         self.special_fields.clear();
     }
 
@@ -158,7 +158,7 @@ impl ::protobuf::Message for LJKFPPDFHMH {
         static instance: LJKFPPDFHMH = LJKFPPDFHMH {
             KLAJGAKAFCP: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
-            FEBKMOCOJLE: false,
+            is_open: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LJKFPPDFHMH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LJKFPPDFHMH.proto\x1a\x14TurnFoodSwitch.proto\"|\n\x0bLJKFPPDFHMH\
-    \x121\n\x0bKLAJGAKAFCP\x18\x0c\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bKLAJ\
-    GAKAFCP\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bFEBKMOCOJLE\x18\x05\x20\x01(\x08R\x0bFEBKMOCOJLEb\x06proto3\
+    \n\x11LJKFPPDFHMH.proto\x1a\x14TurnFoodSwitch.proto\"s\n\x0bLJKFPPDFHMH\
+    \x121\n\x0bKLAJGAKAFCP\x18\x01\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bKLAJ\
+    GAKAFCP\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x17\n\
+    \x07is_open\x18\x0b\x20\x01(\x08R\x06isOpenb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

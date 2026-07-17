@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OPAOIBLFJOM {
     // message fields
-    // @@protoc_insertion_point(field:OPAOIBLFJOM.PBAPICNDIDN)
-    pub PBAPICNDIDN: ::protobuf::MessageField<super::PKBDAKMLDMC::PKBDAKMLDMC>,
     // @@protoc_insertion_point(field:OPAOIBLFJOM.LLCPOHADBKB)
     pub LLCPOHADBKB: ::protobuf::MessageField<super::IPGIJFNAFLC::IPGIJFNAFLC>,
+    // @@protoc_insertion_point(field:OPAOIBLFJOM.PBAPICNDIDN)
+    pub PBAPICNDIDN: ::protobuf::MessageField<super::PKBDAKMLDMC::PKBDAKMLDMC>,
     // special fields
     // @@protoc_insertion_point(special_field:OPAOIBLFJOM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OPAOIBLFJOM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKBDAKMLDMC::PKBDAKMLDMC>(
-            "PBAPICNDIDN",
-            |m: &OPAOIBLFJOM| { &m.PBAPICNDIDN },
-            |m: &mut OPAOIBLFJOM| { &mut m.PBAPICNDIDN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGIJFNAFLC::IPGIJFNAFLC>(
             "LLCPOHADBKB",
             |m: &OPAOIBLFJOM| { &m.LLCPOHADBKB },
             |m: &mut OPAOIBLFJOM| { &mut m.LLCPOHADBKB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKBDAKMLDMC::PKBDAKMLDMC>(
+            "PBAPICNDIDN",
+            |m: &OPAOIBLFJOM| { &m.PBAPICNDIDN },
+            |m: &mut OPAOIBLFJOM| { &mut m.PBAPICNDIDN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPAOIBLFJOM>(
             "OPAOIBLFJOM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OPAOIBLFJOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBAPICNDIDN)?;
-                },
-                74 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLCPOHADBKB)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBAPICNDIDN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OPAOIBLFJOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PBAPICNDIDN.as_ref() {
+        if let Some(v) = self.LLCPOHADBKB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LLCPOHADBKB.as_ref() {
+        if let Some(v) = self.PBAPICNDIDN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OPAOIBLFJOM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PBAPICNDIDN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if let Some(v) = self.LLCPOHADBKB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.PBAPICNDIDN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for OPAOIBLFJOM {
     }
 
     fn clear(&mut self) {
-        self.PBAPICNDIDN.clear();
         self.LLCPOHADBKB.clear();
+        self.PBAPICNDIDN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPAOIBLFJOM {
         static instance: OPAOIBLFJOM = OPAOIBLFJOM {
-            PBAPICNDIDN: ::protobuf::MessageField::none(),
             LLCPOHADBKB: ::protobuf::MessageField::none(),
+            PBAPICNDIDN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for OPAOIBLFJOM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OPAOIBLFJOM.proto\x1a\x11IPGIJFNAFLC.proto\x1a\x11PKBDAKMLDMC.prot\
-    o\"m\n\x0bOPAOIBLFJOM\x12.\n\x0bPBAPICNDIDN\x18\x0f\x20\x01(\x0b2\x0c.PK\
-    BDAKMLDMCR\x0bPBAPICNDIDN\x12.\n\x0bLLCPOHADBKB\x18\t\x20\x01(\x0b2\x0c.\
-    IPGIJFNAFLCR\x0bLLCPOHADBKBb\x06proto3\
+    o\"m\n\x0bOPAOIBLFJOM\x12.\n\x0bLLCPOHADBKB\x18\x01\x20\x01(\x0b2\x0c.IP\
+    GIJFNAFLCR\x0bLLCPOHADBKB\x12.\n\x0bPBAPICNDIDN\x18\x02\x20\x01(\x0b2\
+    \x0c.PKBDAKMLDMCR\x0bPBAPICNDIDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

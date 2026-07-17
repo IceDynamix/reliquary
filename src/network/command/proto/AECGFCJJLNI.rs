@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AECGFCJJLNI {
     // message fields
-    // @@protoc_insertion_point(field:AECGFCJJLNI.JPPLNIDDLBH)
-    pub JPPLNIDDLBH: ::protobuf::MessageField<super::KPPJOPMMLOA::KPPJOPMMLOA>,
-    // @@protoc_insertion_point(field:AECGFCJJLNI.ELOCBJMJHBH)
-    pub ELOCBJMJHBH: bool,
     // @@protoc_insertion_point(field:AECGFCJJLNI.NAFOFIPMOGM)
     pub NAFOFIPMOGM: u32,
+    // @@protoc_insertion_point(field:AECGFCJJLNI.ELOCBJMJHBH)
+    pub ELOCBJMJHBH: bool,
+    // @@protoc_insertion_point(field:AECGFCJJLNI.JPPLNIDDLBH)
+    pub JPPLNIDDLBH: ::protobuf::MessageField<super::KPPJOPMMLOA::KPPJOPMMLOA>,
     // special fields
     // @@protoc_insertion_point(special_field:AECGFCJJLNI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl AECGFCJJLNI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPPJOPMMLOA::KPPJOPMMLOA>(
-            "JPPLNIDDLBH",
-            |m: &AECGFCJJLNI| { &m.JPPLNIDDLBH },
-            |m: &mut AECGFCJJLNI| { &mut m.JPPLNIDDLBH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NAFOFIPMOGM",
+            |m: &AECGFCJJLNI| { &m.NAFOFIPMOGM },
+            |m: &mut AECGFCJJLNI| { &mut m.NAFOFIPMOGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELOCBJMJHBH",
             |m: &AECGFCJJLNI| { &m.ELOCBJMJHBH },
             |m: &mut AECGFCJJLNI| { &mut m.ELOCBJMJHBH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NAFOFIPMOGM",
-            |m: &AECGFCJJLNI| { &m.NAFOFIPMOGM },
-            |m: &mut AECGFCJJLNI| { &mut m.NAFOFIPMOGM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPPJOPMMLOA::KPPJOPMMLOA>(
+            "JPPLNIDDLBH",
+            |m: &AECGFCJJLNI| { &m.JPPLNIDDLBH },
+            |m: &mut AECGFCJJLNI| { &mut m.JPPLNIDDLBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AECGFCJJLNI>(
             "AECGFCJJLNI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AECGFCJJLNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPPLNIDDLBH)?;
+                8 => {
+                    self.NAFOFIPMOGM = is.read_uint32()?;
                 },
                 16 => {
                     self.ELOCBJMJHBH = is.read_bool()?;
                 },
-                8 => {
-                    self.NAFOFIPMOGM = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPPLNIDDLBH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for AECGFCJJLNI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JPPLNIDDLBH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.NAFOFIPMOGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.NAFOFIPMOGM);
         }
         if self.ELOCBJMJHBH != false {
             my_size += 1 + 1;
         }
-        if self.NAFOFIPMOGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NAFOFIPMOGM);
+        if let Some(v) = self.JPPLNIDDLBH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for AECGFCJJLNI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JPPLNIDDLBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.NAFOFIPMOGM != 0 {
+            os.write_uint32(1, self.NAFOFIPMOGM)?;
         }
         if self.ELOCBJMJHBH != false {
             os.write_bool(2, self.ELOCBJMJHBH)?;
         }
-        if self.NAFOFIPMOGM != 0 {
-            os.write_uint32(1, self.NAFOFIPMOGM)?;
+        if let Some(v) = self.JPPLNIDDLBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for AECGFCJJLNI {
     }
 
     fn clear(&mut self) {
-        self.JPPLNIDDLBH.clear();
-        self.ELOCBJMJHBH = false;
         self.NAFOFIPMOGM = 0;
+        self.ELOCBJMJHBH = false;
+        self.JPPLNIDDLBH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AECGFCJJLNI {
         static instance: AECGFCJJLNI = AECGFCJJLNI {
-            JPPLNIDDLBH: ::protobuf::MessageField::none(),
-            ELOCBJMJHBH: false,
             NAFOFIPMOGM: 0,
+            ELOCBJMJHBH: false,
+            JPPLNIDDLBH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for AECGFCJJLNI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AECGFCJJLNI.proto\x1a\x11KPPJOPMMLOA.proto\"\x81\x01\n\x0bAECGFCJJ\
-    LNI\x12.\n\x0bJPPLNIDDLBH\x18\x03\x20\x01(\x0b2\x0c.KPPJOPMMLOAR\x0bJPPL\
-    NIDDLBH\x12\x20\n\x0bELOCBJMJHBH\x18\x02\x20\x01(\x08R\x0bELOCBJMJHBH\
-    \x12\x20\n\x0bNAFOFIPMOGM\x18\x01\x20\x01(\rR\x0bNAFOFIPMOGMb\x06proto3\
+    LNI\x12\x20\n\x0bNAFOFIPMOGM\x18\x01\x20\x01(\rR\x0bNAFOFIPMOGM\x12\x20\
+    \n\x0bELOCBJMJHBH\x18\x02\x20\x01(\x08R\x0bELOCBJMJHBH\x12.\n\x0bJPPLNID\
+    DLBH\x18\x03\x20\x01(\x0b2\x0c.KPPJOPMMLOAR\x0bJPPLNIDDLBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

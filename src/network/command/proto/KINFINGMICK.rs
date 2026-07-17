@@ -79,10 +79,10 @@ impl ::protobuf::Message for KINFINGMICK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.PIFNIJHPLJC = is.read_uint32()?;
                 },
-                96 => {
+                64 => {
                     self.OBJCJGPIHAD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KINFINGMICK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PIFNIJHPLJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PIFNIJHPLJC);
+            my_size += ::protobuf::rt::uint32_size(4, self.PIFNIJHPLJC);
         }
         if self.OBJCJGPIHAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OBJCJGPIHAD);
+            my_size += ::protobuf::rt::uint32_size(8, self.OBJCJGPIHAD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KINFINGMICK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PIFNIJHPLJC != 0 {
-            os.write_uint32(1, self.PIFNIJHPLJC)?;
+            os.write_uint32(4, self.PIFNIJHPLJC)?;
         }
         if self.OBJCJGPIHAD != 0 {
-            os.write_uint32(12, self.OBJCJGPIHAD)?;
+            os.write_uint32(8, self.OBJCJGPIHAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for KINFINGMICK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KINFINGMICK.proto\"Q\n\x0bKINFINGMICK\x12\x20\n\x0bPIFNIJHPLJC\x18\
-    \x01\x20\x01(\rR\x0bPIFNIJHPLJC\x12\x20\n\x0bOBJCJGPIHAD\x18\x0c\x20\x01\
+    \x04\x20\x01(\rR\x0bPIFNIJHPLJC\x12\x20\n\x0bOBJCJGPIHAD\x18\x08\x20\x01\
     (\rR\x0bOBJCJGPIHADb\x06proto3\
 ";
 

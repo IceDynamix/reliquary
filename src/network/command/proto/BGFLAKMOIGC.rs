@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BGFLAKMOIGC {
     // message fields
-    // @@protoc_insertion_point(field:BGFLAKMOIGC.JJMKAHIBDBH)
-    pub JJMKAHIBDBH: bool,
     // @@protoc_insertion_point(field:BGFLAKMOIGC.AMICPGOIHLL)
     pub AMICPGOIHLL: bool,
+    // @@protoc_insertion_point(field:BGFLAKMOIGC.JJMKAHIBDBH)
+    pub JJMKAHIBDBH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:BGFLAKMOIGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BGFLAKMOIGC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJMKAHIBDBH",
-            |m: &BGFLAKMOIGC| { &m.JJMKAHIBDBH },
-            |m: &mut BGFLAKMOIGC| { &mut m.JJMKAHIBDBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMICPGOIHLL",
             |m: &BGFLAKMOIGC| { &m.AMICPGOIHLL },
             |m: &mut BGFLAKMOIGC| { &mut m.AMICPGOIHLL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JJMKAHIBDBH",
+            |m: &BGFLAKMOIGC| { &m.JJMKAHIBDBH },
+            |m: &mut BGFLAKMOIGC| { &mut m.JJMKAHIBDBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BGFLAKMOIGC>(
             "BGFLAKMOIGC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BGFLAKMOIGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JJMKAHIBDBH = is.read_bool()?;
-                },
-                16 => {
+                72 => {
                     self.AMICPGOIHLL = is.read_bool()?;
+                },
+                112 => {
+                    self.JJMKAHIBDBH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for BGFLAKMOIGC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JJMKAHIBDBH != false {
+        if self.AMICPGOIHLL != false {
             my_size += 1 + 1;
         }
-        if self.AMICPGOIHLL != false {
+        if self.JJMKAHIBDBH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BGFLAKMOIGC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JJMKAHIBDBH != false {
-            os.write_bool(4, self.JJMKAHIBDBH)?;
-        }
         if self.AMICPGOIHLL != false {
-            os.write_bool(2, self.AMICPGOIHLL)?;
+            os.write_bool(9, self.AMICPGOIHLL)?;
+        }
+        if self.JJMKAHIBDBH != false {
+            os.write_bool(14, self.JJMKAHIBDBH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BGFLAKMOIGC {
     }
 
     fn clear(&mut self) {
-        self.JJMKAHIBDBH = false;
         self.AMICPGOIHLL = false;
+        self.JJMKAHIBDBH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BGFLAKMOIGC {
         static instance: BGFLAKMOIGC = BGFLAKMOIGC {
-            JJMKAHIBDBH: false,
             AMICPGOIHLL: false,
+            JJMKAHIBDBH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BGFLAKMOIGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BGFLAKMOIGC.proto\"Q\n\x0bBGFLAKMOIGC\x12\x20\n\x0bJJMKAHIBDBH\x18\
-    \x04\x20\x01(\x08R\x0bJJMKAHIBDBH\x12\x20\n\x0bAMICPGOIHLL\x18\x02\x20\
-    \x01(\x08R\x0bAMICPGOIHLLb\x06proto3\
+    \n\x11BGFLAKMOIGC.proto\"Q\n\x0bBGFLAKMOIGC\x12\x20\n\x0bAMICPGOIHLL\x18\
+    \t\x20\x01(\x08R\x0bAMICPGOIHLL\x12\x20\n\x0bJJMKAHIBDBH\x18\x0e\x20\x01\
+    (\x08R\x0bJJMKAHIBDBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

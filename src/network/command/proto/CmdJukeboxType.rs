@@ -29,22 +29,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdJukeboxType {
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_NLCDGIPGFDJ)
     ONBKHMHLADC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_JHFCHFCMBPE)
-    ONBKHMHLADC_JHFCHFCMBPE = 3173,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_DGDJPGMNDCD)
-    ONBKHMHLADC_DGDJPGMNDCD = 3113,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_JDOHJBCOMKN)
-    ONBKHMHLADC_JDOHJBCOMKN = 3115,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_OJDLNPGPCJN)
-    ONBKHMHLADC_OJDLNPGPCJN = 3136,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_CAJLLEGDCJM)
-    ONBKHMHLADC_CAJLLEGDCJM = 3127,
+    ONBKHMHLADC_JDOHJBCOMKN = 3186,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_AEOGKBPOCEF)
-    ONBKHMHLADC_AEOGKBPOCEF = 3180,
+    ONBKHMHLADC_AEOGKBPOCEF = 3193,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_CKILMDLNFAP)
-    ONBKHMHLADC_CKILMDLNFAP = 3181,
+    ONBKHMHLADC_CKILMDLNFAP = 3147,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_OJDLNPGPCJN)
+    ONBKHMHLADC_OJDLNPGPCJN = 3188,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_DGDJPGMNDCD)
+    ONBKHMHLADC_DGDJPGMNDCD = 3181,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_JHFCHFCMBPE)
+    ONBKHMHLADC_JHFCHFCMBPE = 3125,
     // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_PFFBINHIPPN)
-    ONBKHMHLADC_PFFBINHIPPN = 3103,
+    ONBKHMHLADC_PFFBINHIPPN = 3178,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_CAJLLEGDCJM)
+    ONBKHMHLADC_CAJLLEGDCJM = 3158,
 }
 
 impl ::protobuf::Enum for CmdJukeboxType {
@@ -57,14 +57,14 @@ impl ::protobuf::Enum for CmdJukeboxType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdJukeboxType> {
         match value {
             0 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ),
-            3173 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
-            3113 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
-            3115 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN),
-            3136 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
-            3127 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
-            3180 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF),
-            3181 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP),
-            3103 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN),
+            3186 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN),
+            3193 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF),
+            3147 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP),
+            3188 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
+            3181 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
+            3125 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
+            3178 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN),
+            3158 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
             _ => ::std::option::Option::None
         }
     }
@@ -72,28 +72,28 @@ impl ::protobuf::Enum for CmdJukeboxType {
     fn from_str(str: &str) -> ::std::option::Option<CmdJukeboxType> {
         match str {
             "ONBKHMHLADC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ),
-            "ONBKHMHLADC_JHFCHFCMBPE" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
-            "ONBKHMHLADC_DGDJPGMNDCD" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
             "ONBKHMHLADC_JDOHJBCOMKN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN),
-            "ONBKHMHLADC_OJDLNPGPCJN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
-            "ONBKHMHLADC_CAJLLEGDCJM" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
             "ONBKHMHLADC_AEOGKBPOCEF" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF),
             "ONBKHMHLADC_CKILMDLNFAP" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP),
+            "ONBKHMHLADC_OJDLNPGPCJN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
+            "ONBKHMHLADC_DGDJPGMNDCD" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
+            "ONBKHMHLADC_JHFCHFCMBPE" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
             "ONBKHMHLADC_PFFBINHIPPN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN),
+            "ONBKHMHLADC_CAJLLEGDCJM" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdJukeboxType] = &[
         CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ,
-        CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE,
-        CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD,
         CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN,
-        CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN,
-        CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM,
         CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF,
         CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP,
+        CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN,
+        CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD,
+        CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE,
         CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN,
+        CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM,
     ];
 }
 
@@ -106,14 +106,14 @@ impl ::protobuf::EnumFull for CmdJukeboxType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ => 0,
-            CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE => 1,
-            CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD => 2,
-            CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN => 3,
+            CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN => 1,
+            CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF => 2,
+            CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP => 3,
             CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN => 4,
-            CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM => 5,
-            CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF => 6,
-            CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP => 7,
-            CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN => 8,
+            CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD => 5,
+            CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE => 6,
+            CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN => 7,
+            CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,12 +133,12 @@ impl CmdJukeboxType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdJukeboxType.proto*\x9d\x02\n\x0eCmdJukeboxType\x12\x1b\n\x17ONB\
-    KHMHLADC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONBKHMHLADC_JHFCHFCMBPE\x10\xe5\
-    \x18\x12\x1c\n\x17ONBKHMHLADC_DGDJPGMNDCD\x10\xa9\x18\x12\x1c\n\x17ONBKH\
-    MHLADC_JDOHJBCOMKN\x10\xab\x18\x12\x1c\n\x17ONBKHMHLADC_OJDLNPGPCJN\x10\
-    \xc0\x18\x12\x1c\n\x17ONBKHMHLADC_CAJLLEGDCJM\x10\xb7\x18\x12\x1c\n\x17O\
-    NBKHMHLADC_AEOGKBPOCEF\x10\xec\x18\x12\x1c\n\x17ONBKHMHLADC_CKILMDLNFAP\
-    \x10\xed\x18\x12\x1c\n\x17ONBKHMHLADC_PFFBINHIPPN\x10\x9f\x18b\x06proto3\
+    KHMHLADC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONBKHMHLADC_JDOHJBCOMKN\x10\xf2\
+    \x18\x12\x1c\n\x17ONBKHMHLADC_AEOGKBPOCEF\x10\xf9\x18\x12\x1c\n\x17ONBKH\
+    MHLADC_CKILMDLNFAP\x10\xcb\x18\x12\x1c\n\x17ONBKHMHLADC_OJDLNPGPCJN\x10\
+    \xf4\x18\x12\x1c\n\x17ONBKHMHLADC_DGDJPGMNDCD\x10\xed\x18\x12\x1c\n\x17O\
+    NBKHMHLADC_JHFCHFCMBPE\x10\xb5\x18\x12\x1c\n\x17ONBKHMHLADC_PFFBINHIPPN\
+    \x10\xea\x18\x12\x1c\n\x17ONBKHMHLADC_CAJLLEGDCJM\x10\xd6\x18b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

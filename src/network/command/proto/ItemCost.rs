@@ -45,7 +45,7 @@ impl ItemCost {
         ::std::default::Default::default()
     }
 
-    // .PileItem pile_item = 4;
+    // .PileItem pile_item = 10;
 
     pub fn pile_item(&self) -> &super::PileItem::PileItem {
         match self.item {
@@ -119,7 +119,7 @@ impl ItemCost {
         self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(v))
     }
 
-    // uint32 relic_unique_id = 7;
+    // uint32 relic_unique_id = 9;
 
     pub fn relic_unique_id(&self) -> u32 {
         match self.item {
@@ -185,13 +185,13 @@ impl ::protobuf::Message for ItemCost {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                82 => {
                     self.item = ::std::option::Option::Some(item_cost::Item::PileItem(is.read_message()?));
                 },
                 40 => {
                     self.item = ::std::option::Option::Some(item_cost::Item::EquipmentUniqueId(is.read_uint32()?));
                 },
-                56 => {
+                72 => {
                     self.item = ::std::option::Option::Some(item_cost::Item::RelicUniqueId(is.read_uint32()?));
                 },
                 tag => {
@@ -216,7 +216,7 @@ impl ::protobuf::Message for ItemCost {
                     my_size += ::protobuf::rt::uint32_size(5, v);
                 },
                 &item_cost::Item::RelicUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(7, v);
+                    my_size += ::protobuf::rt::uint32_size(9, v);
                 },
             };
         }
@@ -229,13 +229,13 @@ impl ::protobuf::Message for ItemCost {
         if let ::std::option::Option::Some(ref v) = self.item {
             match v {
                 &item_cost::Item::PileItem(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &item_cost::Item::EquipmentUniqueId(v) => {
                     os.write_uint32(5, v)?;
                 },
                 &item_cost::Item::RelicUniqueId(v) => {
-                    os.write_uint32(7, v)?;
+                    os.write_uint32(9, v)?;
                 },
             };
         }
@@ -322,10 +322,10 @@ pub mod item_cost {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eItemCost.proto\x1a\x0ePileItem.proto\"\x98\x01\n\x08ItemCost\x12(\
-    \n\tpile_item\x18\x04\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\
-    \x13equipment_unique_id\x18\x05\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\
-    \n\x0frelic_unique_id\x18\x07\x20\x01(\rH\0R\rrelicUniqueIdB\x06\n\x04it\
-    emb\x06proto3\
+    \n\tpile_item\x18\n\x20\x01(\x0b2\t.PileItemH\0R\x08pileItem\x120\n\x13e\
+    quipment_unique_id\x18\x05\x20\x01(\rH\0R\x11equipmentUniqueId\x12(\n\
+    \x0frelic_unique_id\x18\t\x20\x01(\rH\0R\rrelicUniqueIdB\x06\n\x04itemb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

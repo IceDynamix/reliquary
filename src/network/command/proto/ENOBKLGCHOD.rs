@@ -30,12 +30,10 @@ pub struct ENOBKLGCHOD {
     // message fields
     // @@protoc_insertion_point(field:ENOBKLGCHOD.NOEPBNMJFGL)
     pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ENOBKLGCHOD.MFEODNJNGDP)
-    pub MFEODNJNGDP: ::protobuf::MessageField<super::KCMFAIBMOHB::KCMFAIBMOHB>,
-    // @@protoc_insertion_point(field:ENOBKLGCHOD.GOFLIGGNHNE)
-    pub GOFLIGGNHNE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ENOBKLGCHOD.unfinished_story_line_id_list)
     pub unfinished_story_line_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ENOBKLGCHOD.MFEODNJNGDP)
+    pub MFEODNJNGDP: ::protobuf::MessageField<super::KCMFAIBMOHB::KCMFAIBMOHB>,
     // special fields
     // @@protoc_insertion_point(special_field:ENOBKLGCHOD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,27 +51,22 @@ impl ENOBKLGCHOD {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NOEPBNMJFGL",
             |m: &ENOBKLGCHOD| { &m.NOEPBNMJFGL },
             |m: &mut ENOBKLGCHOD| { &mut m.NOEPBNMJFGL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCMFAIBMOHB::KCMFAIBMOHB>(
-            "MFEODNJNGDP",
-            |m: &ENOBKLGCHOD| { &m.MFEODNJNGDP },
-            |m: &mut ENOBKLGCHOD| { &mut m.MFEODNJNGDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GOFLIGGNHNE",
-            |m: &ENOBKLGCHOD| { &m.GOFLIGGNHNE },
-            |m: &mut ENOBKLGCHOD| { &mut m.GOFLIGGNHNE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unfinished_story_line_id_list",
             |m: &ENOBKLGCHOD| { &m.unfinished_story_line_id_list },
             |m: &mut ENOBKLGCHOD| { &mut m.unfinished_story_line_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KCMFAIBMOHB::KCMFAIBMOHB>(
+            "MFEODNJNGDP",
+            |m: &ENOBKLGCHOD| { &m.MFEODNJNGDP },
+            |m: &mut ENOBKLGCHOD| { &mut m.MFEODNJNGDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENOBKLGCHOD>(
             "ENOBKLGCHOD",
@@ -93,26 +86,20 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                112 => {
+                40 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFEODNJNGDP)?;
-                },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GOFLIGGNHNE)?;
-                },
-                120 => {
-                    self.GOFLIGGNHNE.push(is.read_uint32()?);
-                },
-                74 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
                 },
-                72 => {
+                64 => {
                     self.unfinished_story_line_id_list.push(is.read_uint32()?);
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFEODNJNGDP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,25 +113,23 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.unfinished_story_line_id_list);
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.GOFLIGGNHNE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.unfinished_story_line_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(5, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(8, &self.unfinished_story_line_id_list)?;
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        os.write_repeated_packed_uint32(15, &self.GOFLIGGNHNE)?;
-        os.write_repeated_packed_uint32(9, &self.unfinished_story_line_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,18 +148,16 @@ impl ::protobuf::Message for ENOBKLGCHOD {
 
     fn clear(&mut self) {
         self.NOEPBNMJFGL.clear();
-        self.MFEODNJNGDP.clear();
-        self.GOFLIGGNHNE.clear();
         self.unfinished_story_line_id_list.clear();
+        self.MFEODNJNGDP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENOBKLGCHOD {
         static instance: ENOBKLGCHOD = ENOBKLGCHOD {
             NOEPBNMJFGL: ::std::vec::Vec::new(),
-            MFEODNJNGDP: ::protobuf::MessageField::none(),
-            GOFLIGGNHNE: ::std::vec::Vec::new(),
             unfinished_story_line_id_list: ::std::vec::Vec::new(),
+            MFEODNJNGDP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -199,12 +182,11 @@ impl ::protobuf::reflect::ProtobufValue for ENOBKLGCHOD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ENOBKLGCHOD.proto\x1a\x11KCMFAIBMOHB.proto\"\xc3\x01\n\x0bENOBKLGC\
-    HOD\x12\x20\n\x0bNOEPBNMJFGL\x18\x0e\x20\x03(\rR\x0bNOEPBNMJFGL\x12.\n\
-    \x0bMFEODNJNGDP\x18\x0b\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\x0bMFEODNJNGDP\
-    \x12\x20\n\x0bGOFLIGGNHNE\x18\x0f\x20\x03(\rR\x0bGOFLIGGNHNE\x12@\n\x1du\
-    nfinished_story_line_id_list\x18\t\x20\x03(\rR\x19unfinishedStoryLineIdL\
-    istb\x06proto3\
+    \n\x11ENOBKLGCHOD.proto\x1a\x11KCMFAIBMOHB.proto\"\xa1\x01\n\x0bENOBKLGC\
+    HOD\x12\x20\n\x0bNOEPBNMJFGL\x18\x05\x20\x03(\rR\x0bNOEPBNMJFGL\x12@\n\
+    \x1dunfinished_story_line_id_list\x18\x08\x20\x03(\rR\x19unfinishedStory\
+    LineIdList\x12.\n\x0bMFEODNJNGDP\x18\t\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\
+    \x0bMFEODNJNGDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

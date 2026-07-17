@@ -29,44 +29,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdWolfBroType {
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NLCDGIPGFDJ)
     DPDIGMLGDOI_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_INPEBLCNDMA)
-    DPDIGMLGDOI_INPEBLCNDMA = 6520,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NCJOMMAINOC)
-    DPDIGMLGDOI_NCJOMMAINOC = 6538,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_MGMMPODDKBK)
-    DPDIGMLGDOI_MGMMPODDKBK = 6523,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_AEOJKFFBNME)
-    DPDIGMLGDOI_AEOJKFFBNME = 6543,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NDODPFHIFND)
-    DPDIGMLGDOI_NDODPFHIFND = 6503,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_IHFDKCPLIPE)
-    DPDIGMLGDOI_IHFDKCPLIPE = 6529,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_HPHNFDIPEIE)
-    DPDIGMLGDOI_HPHNFDIPEIE = 6534,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_ECKPMIBOCAM)
-    DPDIGMLGDOI_ECKPMIBOCAM = 6519,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_DCDMEIGBHMD)
-    DPDIGMLGDOI_DCDMEIGBHMD = 6507,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_LMLKFMGOLEI)
-    DPDIGMLGDOI_LMLKFMGOLEI = 6540,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_JDKHJJNOOGL)
-    DPDIGMLGDOI_JDKHJJNOOGL = 6521,
+    DPDIGMLGDOI_DCDMEIGBHMD = 6537,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NEOHOJBGGIC)
-    DPDIGMLGDOI_NEOHOJBGGIC = 6545,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NBFIFCBOGNO)
-    DPDIGMLGDOI_NBFIFCBOGNO = 6505,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NLOHHNGFENG)
-    DPDIGMLGDOI_NLOHHNGFENG = 6544,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_MPMBJANKEKM)
-    DPDIGMLGDOI_MPMBJANKEKM = 6509,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_EAFBKBGOHBO)
-    DPDIGMLGDOI_EAFBKBGOHBO = 6527,
-    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_BJEGLBIJMIM)
-    DPDIGMLGDOI_BJEGLBIJMIM = 6532,
+    DPDIGMLGDOI_NEOHOJBGGIC = 6507,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_FMECIELENAK)
-    DPDIGMLGDOI_FMECIELENAK = 6508,
+    DPDIGMLGDOI_FMECIELENAK = 6506,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_AEOJKFFBNME)
+    DPDIGMLGDOI_AEOJKFFBNME = 6524,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_BJEGLBIJMIM)
+    DPDIGMLGDOI_BJEGLBIJMIM = 6509,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_HPHNFDIPEIE)
+    DPDIGMLGDOI_HPHNFDIPEIE = 6520,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_LMLKFMGOLEI)
+    DPDIGMLGDOI_LMLKFMGOLEI = 6529,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_MGMMPODDKBK)
+    DPDIGMLGDOI_MGMMPODDKBK = 6544,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NCJOMMAINOC)
+    DPDIGMLGDOI_NCJOMMAINOC = 6514,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_EAFBKBGOHBO)
+    DPDIGMLGDOI_EAFBKBGOHBO = 6548,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_ECKPMIBOCAM)
+    DPDIGMLGDOI_ECKPMIBOCAM = 6503,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NDODPFHIFND)
+    DPDIGMLGDOI_NDODPFHIFND = 6502,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_IHFDKCPLIPE)
+    DPDIGMLGDOI_IHFDKCPLIPE = 6521,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_INPEBLCNDMA)
+    DPDIGMLGDOI_INPEBLCNDMA = 6535,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NBFIFCBOGNO)
+    DPDIGMLGDOI_NBFIFCBOGNO = 6533,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_MPMBJANKEKM)
+    DPDIGMLGDOI_MPMBJANKEKM = 6510,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_JDKHJJNOOGL)
+    DPDIGMLGDOI_JDKHJJNOOGL = 6517,
+    // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_NLOHHNGFENG)
+    DPDIGMLGDOI_NLOHHNGFENG = 6519,
     // @@protoc_insertion_point(enum_value:CmdWolfBroType.DPDIGMLGDOI_GJGEEPPBGCN)
-    DPDIGMLGDOI_GJGEEPPBGCN = 6542,
+    DPDIGMLGDOI_GJGEEPPBGCN = 6523,
 }
 
 impl ::protobuf::Enum for CmdWolfBroType {
@@ -79,25 +79,25 @@ impl ::protobuf::Enum for CmdWolfBroType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdWolfBroType> {
         match value {
             0 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLCDGIPGFDJ),
-            6520 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA),
-            6538 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC),
-            6523 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK),
-            6543 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_AEOJKFFBNME),
-            6503 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND),
-            6529 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE),
-            6534 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE),
-            6519 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM),
-            6507 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD),
-            6540 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI),
-            6521 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL),
-            6545 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC),
-            6505 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO),
-            6544 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG),
-            6509 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM),
-            6527 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO),
-            6532 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM),
-            6508 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK),
-            6542 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_GJGEEPPBGCN),
+            6537 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD),
+            6507 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC),
+            6506 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK),
+            6524 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_AEOJKFFBNME),
+            6509 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM),
+            6520 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE),
+            6529 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI),
+            6544 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK),
+            6514 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC),
+            6548 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO),
+            6503 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM),
+            6502 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND),
+            6521 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE),
+            6535 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA),
+            6533 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO),
+            6510 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM),
+            6517 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL),
+            6519 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG),
+            6523 => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_GJGEEPPBGCN),
             _ => ::std::option::Option::None
         }
     }
@@ -105,24 +105,24 @@ impl ::protobuf::Enum for CmdWolfBroType {
     fn from_str(str: &str) -> ::std::option::Option<CmdWolfBroType> {
         match str {
             "DPDIGMLGDOI_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLCDGIPGFDJ),
-            "DPDIGMLGDOI_INPEBLCNDMA" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA),
-            "DPDIGMLGDOI_NCJOMMAINOC" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC),
-            "DPDIGMLGDOI_MGMMPODDKBK" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK),
+            "DPDIGMLGDOI_DCDMEIGBHMD" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD),
+            "DPDIGMLGDOI_NEOHOJBGGIC" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC),
+            "DPDIGMLGDOI_FMECIELENAK" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK),
             "DPDIGMLGDOI_AEOJKFFBNME" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_AEOJKFFBNME),
+            "DPDIGMLGDOI_BJEGLBIJMIM" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM),
+            "DPDIGMLGDOI_HPHNFDIPEIE" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE),
+            "DPDIGMLGDOI_LMLKFMGOLEI" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI),
+            "DPDIGMLGDOI_MGMMPODDKBK" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK),
+            "DPDIGMLGDOI_NCJOMMAINOC" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC),
+            "DPDIGMLGDOI_EAFBKBGOHBO" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO),
+            "DPDIGMLGDOI_ECKPMIBOCAM" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM),
             "DPDIGMLGDOI_NDODPFHIFND" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND),
             "DPDIGMLGDOI_IHFDKCPLIPE" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE),
-            "DPDIGMLGDOI_HPHNFDIPEIE" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE),
-            "DPDIGMLGDOI_ECKPMIBOCAM" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM),
-            "DPDIGMLGDOI_DCDMEIGBHMD" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD),
-            "DPDIGMLGDOI_LMLKFMGOLEI" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI),
-            "DPDIGMLGDOI_JDKHJJNOOGL" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL),
-            "DPDIGMLGDOI_NEOHOJBGGIC" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC),
+            "DPDIGMLGDOI_INPEBLCNDMA" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA),
             "DPDIGMLGDOI_NBFIFCBOGNO" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO),
-            "DPDIGMLGDOI_NLOHHNGFENG" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG),
             "DPDIGMLGDOI_MPMBJANKEKM" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM),
-            "DPDIGMLGDOI_EAFBKBGOHBO" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO),
-            "DPDIGMLGDOI_BJEGLBIJMIM" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM),
-            "DPDIGMLGDOI_FMECIELENAK" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK),
+            "DPDIGMLGDOI_JDKHJJNOOGL" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL),
+            "DPDIGMLGDOI_NLOHHNGFENG" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG),
             "DPDIGMLGDOI_GJGEEPPBGCN" => ::std::option::Option::Some(CmdWolfBroType::DPDIGMLGDOI_GJGEEPPBGCN),
             _ => ::std::option::Option::None
         }
@@ -130,24 +130,24 @@ impl ::protobuf::Enum for CmdWolfBroType {
 
     const VALUES: &'static [CmdWolfBroType] = &[
         CmdWolfBroType::DPDIGMLGDOI_NLCDGIPGFDJ,
-        CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA,
-        CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC,
-        CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK,
+        CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD,
+        CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC,
+        CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK,
         CmdWolfBroType::DPDIGMLGDOI_AEOJKFFBNME,
+        CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM,
+        CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE,
+        CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI,
+        CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK,
+        CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC,
+        CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO,
+        CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM,
         CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND,
         CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE,
-        CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE,
-        CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM,
-        CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD,
-        CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI,
-        CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL,
-        CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC,
+        CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA,
         CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO,
-        CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG,
         CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM,
-        CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO,
-        CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM,
-        CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK,
+        CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL,
+        CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG,
         CmdWolfBroType::DPDIGMLGDOI_GJGEEPPBGCN,
     ];
 }
@@ -161,24 +161,24 @@ impl ::protobuf::EnumFull for CmdWolfBroType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdWolfBroType::DPDIGMLGDOI_NLCDGIPGFDJ => 0,
-            CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA => 1,
-            CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC => 2,
-            CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK => 3,
+            CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD => 1,
+            CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC => 2,
+            CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK => 3,
             CmdWolfBroType::DPDIGMLGDOI_AEOJKFFBNME => 4,
-            CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND => 5,
-            CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE => 6,
-            CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE => 7,
-            CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM => 8,
-            CmdWolfBroType::DPDIGMLGDOI_DCDMEIGBHMD => 9,
-            CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI => 10,
-            CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL => 11,
-            CmdWolfBroType::DPDIGMLGDOI_NEOHOJBGGIC => 12,
-            CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO => 13,
-            CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG => 14,
-            CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM => 15,
-            CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO => 16,
-            CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM => 17,
-            CmdWolfBroType::DPDIGMLGDOI_FMECIELENAK => 18,
+            CmdWolfBroType::DPDIGMLGDOI_BJEGLBIJMIM => 5,
+            CmdWolfBroType::DPDIGMLGDOI_HPHNFDIPEIE => 6,
+            CmdWolfBroType::DPDIGMLGDOI_LMLKFMGOLEI => 7,
+            CmdWolfBroType::DPDIGMLGDOI_MGMMPODDKBK => 8,
+            CmdWolfBroType::DPDIGMLGDOI_NCJOMMAINOC => 9,
+            CmdWolfBroType::DPDIGMLGDOI_EAFBKBGOHBO => 10,
+            CmdWolfBroType::DPDIGMLGDOI_ECKPMIBOCAM => 11,
+            CmdWolfBroType::DPDIGMLGDOI_NDODPFHIFND => 12,
+            CmdWolfBroType::DPDIGMLGDOI_IHFDKCPLIPE => 13,
+            CmdWolfBroType::DPDIGMLGDOI_INPEBLCNDMA => 14,
+            CmdWolfBroType::DPDIGMLGDOI_NBFIFCBOGNO => 15,
+            CmdWolfBroType::DPDIGMLGDOI_MPMBJANKEKM => 16,
+            CmdWolfBroType::DPDIGMLGDOI_JDKHJJNOOGL => 17,
+            CmdWolfBroType::DPDIGMLGDOI_NLOHHNGFENG => 18,
             CmdWolfBroType::DPDIGMLGDOI_GJGEEPPBGCN => 19,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -199,19 +199,19 @@ impl CmdWolfBroType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14CmdWolfBroType.proto*\xe7\x04\n\x0eCmdWolfBroType\x12\x1b\n\x17DPD\
-    IGMLGDOI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17DPDIGMLGDOI_INPEBLCNDMA\x10\xf82\
-    \x12\x1c\n\x17DPDIGMLGDOI_NCJOMMAINOC\x10\x8a3\x12\x1c\n\x17DPDIGMLGDOI_\
-    MGMMPODDKBK\x10\xfb2\x12\x1c\n\x17DPDIGMLGDOI_AEOJKFFBNME\x10\x8f3\x12\
-    \x1c\n\x17DPDIGMLGDOI_NDODPFHIFND\x10\xe72\x12\x1c\n\x17DPDIGMLGDOI_IHFD\
-    KCPLIPE\x10\x813\x12\x1c\n\x17DPDIGMLGDOI_HPHNFDIPEIE\x10\x863\x12\x1c\n\
-    \x17DPDIGMLGDOI_ECKPMIBOCAM\x10\xf72\x12\x1c\n\x17DPDIGMLGDOI_DCDMEIGBHM\
-    D\x10\xeb2\x12\x1c\n\x17DPDIGMLGDOI_LMLKFMGOLEI\x10\x8c3\x12\x1c\n\x17DP\
-    DIGMLGDOI_JDKHJJNOOGL\x10\xf92\x12\x1c\n\x17DPDIGMLGDOI_NEOHOJBGGIC\x10\
-    \x913\x12\x1c\n\x17DPDIGMLGDOI_NBFIFCBOGNO\x10\xe92\x12\x1c\n\x17DPDIGML\
-    GDOI_NLOHHNGFENG\x10\x903\x12\x1c\n\x17DPDIGMLGDOI_MPMBJANKEKM\x10\xed2\
-    \x12\x1c\n\x17DPDIGMLGDOI_EAFBKBGOHBO\x10\xff2\x12\x1c\n\x17DPDIGMLGDOI_\
-    BJEGLBIJMIM\x10\x843\x12\x1c\n\x17DPDIGMLGDOI_FMECIELENAK\x10\xec2\x12\
-    \x1c\n\x17DPDIGMLGDOI_GJGEEPPBGCN\x10\x8e3b\x06proto3\
+    IGMLGDOI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17DPDIGMLGDOI_DCDMEIGBHMD\x10\x893\
+    \x12\x1c\n\x17DPDIGMLGDOI_NEOHOJBGGIC\x10\xeb2\x12\x1c\n\x17DPDIGMLGDOI_\
+    FMECIELENAK\x10\xea2\x12\x1c\n\x17DPDIGMLGDOI_AEOJKFFBNME\x10\xfc2\x12\
+    \x1c\n\x17DPDIGMLGDOI_BJEGLBIJMIM\x10\xed2\x12\x1c\n\x17DPDIGMLGDOI_HPHN\
+    FDIPEIE\x10\xf82\x12\x1c\n\x17DPDIGMLGDOI_LMLKFMGOLEI\x10\x813\x12\x1c\n\
+    \x17DPDIGMLGDOI_MGMMPODDKBK\x10\x903\x12\x1c\n\x17DPDIGMLGDOI_NCJOMMAINO\
+    C\x10\xf22\x12\x1c\n\x17DPDIGMLGDOI_EAFBKBGOHBO\x10\x943\x12\x1c\n\x17DP\
+    DIGMLGDOI_ECKPMIBOCAM\x10\xe72\x12\x1c\n\x17DPDIGMLGDOI_NDODPFHIFND\x10\
+    \xe62\x12\x1c\n\x17DPDIGMLGDOI_IHFDKCPLIPE\x10\xf92\x12\x1c\n\x17DPDIGML\
+    GDOI_INPEBLCNDMA\x10\x873\x12\x1c\n\x17DPDIGMLGDOI_NBFIFCBOGNO\x10\x853\
+    \x12\x1c\n\x17DPDIGMLGDOI_MPMBJANKEKM\x10\xee2\x12\x1c\n\x17DPDIGMLGDOI_\
+    JDKHJJNOOGL\x10\xf52\x12\x1c\n\x17DPDIGMLGDOI_NLOHHNGFENG\x10\xf72\x12\
+    \x1c\n\x17DPDIGMLGDOI_GJGEEPPBGCN\x10\xfb2b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

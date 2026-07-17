@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LNGLLJKNKHG {
     // message fields
-    // @@protoc_insertion_point(field:LNGLLJKNKHG.IHBOHKKCGCP)
-    pub IHBOHKKCGCP: ::protobuf::MessageField<super::IPGIJFNAFLC::IPGIJFNAFLC>,
     // @@protoc_insertion_point(field:LNGLLJKNKHG.EAFFACCBAAA)
     pub EAFFACCBAAA: u32,
     // @@protoc_insertion_point(field:LNGLLJKNKHG.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:LNGLLJKNKHG.IHBOHKKCGCP)
+    pub IHBOHKKCGCP: ::protobuf::MessageField<super::IPGIJFNAFLC::IPGIJFNAFLC>,
     // @@protoc_insertion_point(field:LNGLLJKNKHG.BDCNNNNLLHJ)
     pub BDCNNNNLLHJ: bool,
     // special fields
@@ -55,11 +55,6 @@ impl LNGLLJKNKHG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGIJFNAFLC::IPGIJFNAFLC>(
-            "IHBOHKKCGCP",
-            |m: &LNGLLJKNKHG| { &m.IHBOHKKCGCP },
-            |m: &mut LNGLLJKNKHG| { &mut m.IHBOHKKCGCP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAFFACCBAAA",
             |m: &LNGLLJKNKHG| { &m.EAFFACCBAAA },
@@ -69,6 +64,11 @@ impl LNGLLJKNKHG {
             "retcode",
             |m: &LNGLLJKNKHG| { &m.retcode },
             |m: &mut LNGLLJKNKHG| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGIJFNAFLC::IPGIJFNAFLC>(
+            "IHBOHKKCGCP",
+            |m: &LNGLLJKNKHG| { &m.IHBOHKKCGCP },
+            |m: &mut LNGLLJKNKHG| { &mut m.IHBOHKKCGCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BDCNNNNLLHJ",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LNGLLJKNKHG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHBOHKKCGCP)?;
-                },
-                104 => {
+                8 => {
                     self.EAFFACCBAAA = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHBOHKKCGCP)?;
+                },
+                112 => {
                     self.BDCNNNNLLHJ = is.read_bool()?;
                 },
                 tag => {
@@ -117,15 +117,15 @@ impl ::protobuf::Message for LNGLLJKNKHG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EAFFACCBAAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EAFFACCBAAA);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         if let Some(v) = self.IHBOHKKCGCP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.EAFFACCBAAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EAFFACCBAAA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.BDCNNNNLLHJ != false {
             my_size += 1 + 1;
@@ -136,17 +136,17 @@ impl ::protobuf::Message for LNGLLJKNKHG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IHBOHKKCGCP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if self.EAFFACCBAAA != 0 {
-            os.write_uint32(13, self.EAFFACCBAAA)?;
+            os.write_uint32(1, self.EAFFACCBAAA)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.IHBOHKKCGCP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.BDCNNNNLLHJ != false {
-            os.write_bool(12, self.BDCNNNNLLHJ)?;
+            os.write_bool(14, self.BDCNNNNLLHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for LNGLLJKNKHG {
     }
 
     fn clear(&mut self) {
-        self.IHBOHKKCGCP.clear();
         self.EAFFACCBAAA = 0;
         self.retcode = 0;
+        self.IHBOHKKCGCP.clear();
         self.BDCNNNNLLHJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LNGLLJKNKHG {
         static instance: LNGLLJKNKHG = LNGLLJKNKHG {
-            IHBOHKKCGCP: ::protobuf::MessageField::none(),
             EAFFACCBAAA: 0,
             retcode: 0,
+            IHBOHKKCGCP: ::protobuf::MessageField::none(),
             BDCNNNNLLHJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for LNGLLJKNKHG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LNGLLJKNKHG.proto\x1a\x11IPGIJFNAFLC.proto\"\x9b\x01\n\x0bLNGLLJKN\
-    KHG\x12.\n\x0bIHBOHKKCGCP\x18\t\x20\x01(\x0b2\x0c.IPGIJFNAFLCR\x0bIHBOHK\
-    KCGCP\x12\x20\n\x0bEAFFACCBAAA\x18\r\x20\x01(\rR\x0bEAFFACCBAAA\x12\x18\
-    \n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bBDCNNNNLLHJ\
-    \x18\x0c\x20\x01(\x08R\x0bBDCNNNNLLHJb\x06proto3\
+    KHG\x12\x20\n\x0bEAFFACCBAAA\x18\x01\x20\x01(\rR\x0bEAFFACCBAAA\x12\x18\
+    \n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bIHBOHKKCGCP\x18\
+    \x0b\x20\x01(\x0b2\x0c.IPGIJFNAFLCR\x0bIHBOHKKCGCP\x12\x20\n\x0bBDCNNNNL\
+    LHJ\x18\x0e\x20\x01(\x08R\x0bBDCNNNNLLHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

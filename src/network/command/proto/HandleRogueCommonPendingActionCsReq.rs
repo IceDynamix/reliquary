@@ -48,7 +48,7 @@ impl HandleRogueCommonPendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .BPLNKHGAILK OPDCGJEKEKP = 1251;
+    // .BPLNKHGAILK OPDCGJEKEKP = 137;
 
     pub fn OPDCGJEKEKP(&self) -> &super::BPLNKHGAILK::BPLNKHGAILK {
         match self.KKNBOACNCON {
@@ -97,7 +97,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .NMMLEBEEJLB HKNPLHMLINB = 1346;
+    // .NMMLEBEEJLB HKNPLHMLINB = 239;
 
     pub fn HKNPLHMLINB(&self) -> &super::NMMLEBEEJLB::NMMLEBEEJLB {
         match self.KKNBOACNCON {
@@ -146,7 +146,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AEJLPCAIODP ILLBNBMCMPF = 147;
+    // .AEJLPCAIODP ILLBNBMCMPF = 280;
 
     pub fn ILLBNBMCMPF(&self) -> &super::AEJLPCAIODP::AEJLPCAIODP {
         match self.KKNBOACNCON {
@@ -195,7 +195,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .DEMENEAAGAA DFKJOGGFDHD = 1162;
+    // .DEMENEAAGAA DFKJOGGFDHD = 1141;
 
     pub fn DFKJOGGFDHD(&self) -> &super::DEMENEAAGAA::DEMENEAAGAA {
         match self.KKNBOACNCON {
@@ -244,7 +244,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .PJMEDBOACGL HDNGLMGCHEK = 938;
+    // .PJMEDBOACGL HDNGLMGCHEK = 1212;
 
     pub fn HDNGLMGCHEK(&self) -> &super::PJMEDBOACGL::PJMEDBOACGL {
         match self.KKNBOACNCON {
@@ -293,7 +293,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JINFLJMPPHN JOGGLMMCMFH = 1849;
+    // .JINFLJMPPHN JOGGLMMCMFH = 1883;
 
     pub fn JOGGLMMCMFH(&self) -> &super::JINFLJMPPHN::JINFLJMPPHN {
         match self.KKNBOACNCON {
@@ -342,7 +342,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .LDFJBLDICPJ OMAKKKMNCJH = 1833;
+    // .LDFJBLDICPJ OMAKKKMNCJH = 1597;
 
     pub fn OMAKKKMNCJH(&self) -> &super::LDFJBLDICPJ::LDFJBLDICPJ {
         match self.KKNBOACNCON {
@@ -391,7 +391,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .BFAMBJHPNGE CAELBFPKNDN = 1277;
+    // .BFAMBJHPNGE CAELBFPKNDN = 1599;
 
     pub fn CAELBFPKNDN(&self) -> &super::BFAMBJHPNGE::BFAMBJHPNGE {
         match self.KKNBOACNCON {
@@ -440,7 +440,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .KPDALNGIDAG EGOFFKFONDP = 941;
+    // .KPDALNGIDAG EGOFFKFONDP = 1768;
 
     pub fn EGOFFKFONDP(&self) -> &super::KPDALNGIDAG::KPDALNGIDAG {
         match self.KKNBOACNCON {
@@ -489,7 +489,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JEKGAINCPNH HFMOJHNMNJN = 1062;
+    // .JEKGAINCPNH HFMOJHNMNJN = 1186;
 
     pub fn HFMOJHNMNJN(&self) -> &super::JEKGAINCPNH::JEKGAINCPNH {
         match self.KKNBOACNCON {
@@ -538,7 +538,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .KIHMNMMJIDL GANJIGMPDNL = 881;
+    // .KIHMNMMJIDL GANJIGMPDNL = 1191;
 
     pub fn GANJIGMPDNL(&self) -> &super::KIHMNMMJIDL::KIHMNMMJIDL {
         match self.KKNBOACNCON {
@@ -587,7 +587,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .CHEPPLBNOFF BAALMNPNGLO = 1770;
+    // .CHEPPLBNOFF BAALMNPNGLO = 1744;
 
     pub fn BAALMNPNGLO(&self) -> &super::CHEPPLBNOFF::CHEPPLBNOFF {
         match self.KKNBOACNCON {
@@ -636,7 +636,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AOMOENMNCNB EBLALPNFHFM = 105;
+    // .AOMOENMNCNB EBLALPNFHFM = 734;
 
     pub fn EBLALPNFHFM(&self) -> &super::AOMOENMNCNB::AOMOENMNCNB {
         match self.KKNBOACNCON {
@@ -685,7 +685,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .CIBMBDDOGBH GFILIMKPCDM = 1857;
+    // .CIBMBDDOGBH GFILIMKPCDM = 1694;
 
     pub fn GFILIMKPCDM(&self) -> &super::CIBMBDDOGBH::CIBMBDDOGBH {
         match self.KKNBOACNCON {
@@ -734,7 +734,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .PIJDFMAJMFD MLBEKIDDGOD = 1626;
+    // .PIJDFMAJMFD MLBEKIDDGOD = 399;
 
     pub fn MLBEKIDDGOD(&self) -> &super::PIJDFMAJMFD::PIJDFMAJMFD {
         match self.KKNBOACNCON {
@@ -783,7 +783,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .CHDPILMCJNP HPBIAGDDEHN = 306;
+    // .CHDPILMCJNP HPBIAGDDEHN = 731;
 
     pub fn HPBIAGDDEHN(&self) -> &super::CHDPILMCJNP::CHDPILMCJNP {
         match self.KKNBOACNCON {
@@ -832,7 +832,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IGODPKFLDNE NBCHIIFMCNC = 849;
+    // .IGODPKFLDNE NBCHIIFMCNC = 251;
 
     pub fn NBCHIIFMCNC(&self) -> &super::IGODPKFLDNE::IGODPKFLDNE {
         match self.KKNBOACNCON {
@@ -881,7 +881,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .HELGMBBOGMJ EMEFJODMAOI = 1172;
+    // .HELGMBBOGMJ EMEFJODMAOI = 1533;
 
     pub fn EMEFJODMAOI(&self) -> &super::HELGMBBOGMJ::HELGMBBOGMJ {
         match self.KKNBOACNCON {
@@ -930,7 +930,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .GDIKLACNOEJ CFCBJDKKCMB = 1321;
+    // .GDIKLACNOEJ CFCBJDKKCMB = 1148;
 
     pub fn CFCBJDKKCMB(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
         match self.KKNBOACNCON {
@@ -979,7 +979,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JHBEOHDMHDA CAPLDJMOIPB = 662;
+    // .JHBEOHDMHDA CAPLDJMOIPB = 221;
 
     pub fn CAPLDJMOIPB(&self) -> &super::JHBEOHDMHDA::JHBEOHDMHDA {
         match self.KKNBOACNCON {
@@ -1028,7 +1028,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .IHOFKNBNNLB MNLHCHKLEOG = 778;
+    // .IHOFKNBNNLB MNLHCHKLEOG = 668;
 
     pub fn MNLHCHKLEOG(&self) -> &super::IHOFKNBNNLB::IHOFKNBNNLB {
         match self.KKNBOACNCON {
@@ -1077,154 +1077,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .GDIKLACNOEJ ECDMNJMBFAF = 1389;
-
-    pub fn ECDMNJMBFAF(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(ref v)) => v,
-            _ => <super::GDIKLACNOEJ::GDIKLACNOEJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ECDMNJMBFAF(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_ECDMNJMBFAF(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ECDMNJMBFAF(&mut self, v: super::GDIKLACNOEJ::GDIKLACNOEJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ECDMNJMBFAF(&mut self) -> &mut super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(super::GDIKLACNOEJ::GDIKLACNOEJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ECDMNJMBFAF(&mut self) -> super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if self.has_ECDMNJMBFAF() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GDIKLACNOEJ::GDIKLACNOEJ::new()
-        }
-    }
-
-    // .GDIKLACNOEJ DCEGCNCJJOJ = 156;
-
-    pub fn DCEGCNCJJOJ(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(ref v)) => v,
-            _ => <super::GDIKLACNOEJ::GDIKLACNOEJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DCEGCNCJJOJ(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_DCEGCNCJJOJ(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DCEGCNCJJOJ(&mut self, v: super::GDIKLACNOEJ::GDIKLACNOEJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DCEGCNCJJOJ(&mut self) -> &mut super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(super::GDIKLACNOEJ::GDIKLACNOEJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DCEGCNCJJOJ(&mut self) -> super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if self.has_DCEGCNCJJOJ() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GDIKLACNOEJ::GDIKLACNOEJ::new()
-        }
-    }
-
-    // .GDIKLACNOEJ IACFKAODFEN = 199;
-
-    pub fn IACFKAODFEN(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(ref v)) => v,
-            _ => <super::GDIKLACNOEJ::GDIKLACNOEJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_IACFKAODFEN(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_IACFKAODFEN(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IACFKAODFEN(&mut self, v: super::GDIKLACNOEJ::GDIKLACNOEJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_IACFKAODFEN(&mut self) -> &mut super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(super::GDIKLACNOEJ::GDIKLACNOEJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_IACFKAODFEN(&mut self) -> super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if self.has_IACFKAODFEN() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GDIKLACNOEJ::GDIKLACNOEJ::new()
-        }
-    }
-
-    // .AHNLMMFHOME EGIIEHODAEJ = 595;
+    // .AHNLMMFHOME EGIIEHODAEJ = 1545;
 
     pub fn EGIIEHODAEJ(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
         match self.KKNBOACNCON {
@@ -1273,7 +1126,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AHNLMMFHOME NNPLAAIBOGB = 214;
+    // .AHNLMMFHOME NNPLAAIBOGB = 1397;
 
     pub fn NNPLAAIBOGB(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
         match self.KKNBOACNCON {
@@ -1322,7 +1175,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .AHNLMMFHOME AHKBAEIMCNM = 934;
+    // .AHNLMMFHOME AHKBAEIMCNM = 1949;
 
     pub fn AHKBAEIMCNM(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
         match self.KKNBOACNCON {
@@ -1371,7 +1224,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .GJIHIMKICLG LJJNMMGJGNA = 2002;
+    // .GJIHIMKICLG LJJNMMGJGNA = 1946;
 
     pub fn LJJNMMGJGNA(&self) -> &super::GJIHIMKICLG::GJIHIMKICLG {
         match self.KKNBOACNCON {
@@ -1420,56 +1273,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .GJIHIMKICLG FIGNFBLJDCH = 710;
-
-    pub fn FIGNFBLJDCH(&self) -> &super::GJIHIMKICLG::GJIHIMKICLG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(ref v)) => v,
-            _ => <super::GJIHIMKICLG::GJIHIMKICLG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_FIGNFBLJDCH(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_FIGNFBLJDCH(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FIGNFBLJDCH(&mut self, v: super::GJIHIMKICLG::GJIHIMKICLG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_FIGNFBLJDCH(&mut self) -> &mut super::GJIHIMKICLG::GJIHIMKICLG {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(super::GJIHIMKICLG::GJIHIMKICLG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_FIGNFBLJDCH(&mut self) -> super::GJIHIMKICLG::GJIHIMKICLG {
-        if self.has_FIGNFBLJDCH() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GJIHIMKICLG::GJIHIMKICLG::new()
-        }
-    }
-
-    // .MCFEKKMFEHA LEGOBNMKHCO = 767;
+    // .MCFEKKMFEHA LEGOBNMKHCO = 1679;
 
     pub fn LEGOBNMKHCO(&self) -> &super::MCFEKKMFEHA::MCFEKKMFEHA {
         match self.KKNBOACNCON {
@@ -1518,7 +1322,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .EKIFAOJKOCL LOGMGHBMHPE = 1093;
+    // .EKIFAOJKOCL LOGMGHBMHPE = 1757;
 
     pub fn LOGMGHBMHPE(&self) -> &super::EKIFAOJKOCL::EKIFAOJKOCL {
         match self.KKNBOACNCON {
@@ -1567,7 +1371,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .APOKGADPHDC CGEHCAIKAPJ = 1274;
+    // .APOKGADPHDC CGEHCAIKAPJ = 860;
 
     pub fn CGEHCAIKAPJ(&self) -> &super::APOKGADPHDC::APOKGADPHDC {
         match self.KKNBOACNCON {
@@ -1616,7 +1420,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .ALMGFDOPLGA OPJONHEBIBG = 913;
+    // .ALMGFDOPLGA OPJONHEBIBG = 278;
 
     pub fn OPJONHEBIBG(&self) -> &super::ALMGFDOPLGA::ALMGFDOPLGA {
         match self.KKNBOACNCON {
@@ -1665,7 +1469,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .CLMPCCGCADK AIJHFPCFPDM = 555;
+    // .CLMPCCGCADK AIJHFPCFPDM = 1375;
 
     pub fn AIJHFPCFPDM(&self) -> &super::CLMPCCGCADK::CLMPCCGCADK {
         match self.KKNBOACNCON {
@@ -1714,7 +1518,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .JKLLLNDHJHI GCBFCJIHNFC = 434;
+    // .JKLLLNDHJHI GCBFCJIHNFC = 878;
 
     pub fn GCBFCJIHNFC(&self) -> &super::JKLLLNDHJHI::JKLLLNDHJHI {
         match self.KKNBOACNCON {
@@ -1763,7 +1567,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .BOHAJCPBBJI NFMAAGNLALA = 1465;
+    // .BOHAJCPBBJI NFMAAGNLALA = 879;
 
     pub fn NFMAAGNLALA(&self) -> &super::BOHAJCPBBJI::BOHAJCPBBJI {
         match self.KKNBOACNCON {
@@ -1812,7 +1616,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .OGPOHFPHEOB IACMGHACKDA = 47;
+    // .OGPOHFPHEOB IACMGHACKDA = 1358;
 
     pub fn IACMGHACKDA(&self) -> &super::OGPOHFPHEOB::OGPOHFPHEOB {
         match self.KKNBOACNCON {
@@ -1861,7 +1665,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .PIBOMOCKACA CNGCLILLDJG = 1491;
+    // .PIBOMOCKACA CNGCLILLDJG = 641;
 
     pub fn CNGCLILLDJG(&self) -> &super::PIBOMOCKACA::PIBOMOCKACA {
         match self.KKNBOACNCON {
@@ -1910,7 +1714,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .EBOLNPIMDAL FNGLOCNBCOJ = 30442;
+    // .EBOLNPIMDAL FNGLOCNBCOJ = 244760;
 
     pub fn FNGLOCNBCOJ(&self) -> &super::EBOLNPIMDAL::EBOLNPIMDAL {
         match self.KKNBOACNCON {
@@ -1959,7 +1763,7 @@ impl HandleRogueCommonPendingActionCsReq {
         }
     }
 
-    // .MHLLNFJHMEK PDAEHMFKEOF = 160633;
+    // .MHLLNFJHMEK PDAEHMFKEOF = 257315;
 
     pub fn PDAEHMFKEOF(&self) -> &super::MHLLNFJHMEK::MHLLNFJHMEK {
         match self.KKNBOACNCON {
@@ -2009,7 +1813,7 @@ impl HandleRogueCommonPendingActionCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(41);
+        let mut fields = ::std::vec::Vec::with_capacity(37);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BFNEPPCNOOI",
@@ -2163,27 +1967,6 @@ impl HandleRogueCommonPendingActionCsReq {
             HandleRogueCommonPendingActionCsReq::mut_MNLHCHKLEOG,
             HandleRogueCommonPendingActionCsReq::set_MNLHCHKLEOG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GDIKLACNOEJ::GDIKLACNOEJ>(
-            "ECDMNJMBFAF",
-            HandleRogueCommonPendingActionCsReq::has_ECDMNJMBFAF,
-            HandleRogueCommonPendingActionCsReq::ECDMNJMBFAF,
-            HandleRogueCommonPendingActionCsReq::mut_ECDMNJMBFAF,
-            HandleRogueCommonPendingActionCsReq::set_ECDMNJMBFAF,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GDIKLACNOEJ::GDIKLACNOEJ>(
-            "DCEGCNCJJOJ",
-            HandleRogueCommonPendingActionCsReq::has_DCEGCNCJJOJ,
-            HandleRogueCommonPendingActionCsReq::DCEGCNCJJOJ,
-            HandleRogueCommonPendingActionCsReq::mut_DCEGCNCJJOJ,
-            HandleRogueCommonPendingActionCsReq::set_DCEGCNCJJOJ,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GDIKLACNOEJ::GDIKLACNOEJ>(
-            "IACFKAODFEN",
-            HandleRogueCommonPendingActionCsReq::has_IACFKAODFEN,
-            HandleRogueCommonPendingActionCsReq::IACFKAODFEN,
-            HandleRogueCommonPendingActionCsReq::mut_IACFKAODFEN,
-            HandleRogueCommonPendingActionCsReq::set_IACFKAODFEN,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHNLMMFHOME::AHNLMMFHOME>(
             "EGIIEHODAEJ",
             HandleRogueCommonPendingActionCsReq::has_EGIIEHODAEJ,
@@ -2211,13 +1994,6 @@ impl HandleRogueCommonPendingActionCsReq {
             HandleRogueCommonPendingActionCsReq::LJJNMMGJGNA,
             HandleRogueCommonPendingActionCsReq::mut_LJJNMMGJGNA,
             HandleRogueCommonPendingActionCsReq::set_LJJNMMGJGNA,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJIHIMKICLG::GJIHIMKICLG>(
-            "FIGNFBLJDCH",
-            HandleRogueCommonPendingActionCsReq::has_FIGNFBLJDCH,
-            HandleRogueCommonPendingActionCsReq::FIGNFBLJDCH,
-            HandleRogueCommonPendingActionCsReq::mut_FIGNFBLJDCH,
-            HandleRogueCommonPendingActionCsReq::set_FIGNFBLJDCH,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCFEKKMFEHA::MCFEKKMFEHA>(
             "LEGOBNMKHCO",
@@ -2315,127 +2091,115 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.BFNEPPCNOOI = is.read_uint32()?;
                 },
-                10010 => {
+                1098 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OPDCGJEKEKP(is.read_message()?));
                 },
-                10770 => {
+                1914 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HKNPLHMLINB(is.read_message()?));
                 },
-                1178 => {
+                2242 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ILLBNBMCMPF(is.read_message()?));
                 },
-                9298 => {
+                9130 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DFKJOGGFDHD(is.read_message()?));
                 },
-                7506 => {
+                9698 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HDNGLMGCHEK(is.read_message()?));
                 },
-                14794 => {
+                15066 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::JOGGLMMCMFH(is.read_message()?));
                 },
-                14666 => {
+                12778 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OMAKKKMNCJH(is.read_message()?));
                 },
-                10218 => {
+                12794 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CAELBFPKNDN(is.read_message()?));
                 },
-                7530 => {
+                14146 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EGOFFKFONDP(is.read_message()?));
                 },
-                8498 => {
+                9490 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HFMOJHNMNJN(is.read_message()?));
                 },
-                7050 => {
+                9530 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GANJIGMPDNL(is.read_message()?));
                 },
-                14162 => {
+                13954 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::BAALMNPNGLO(is.read_message()?));
                 },
-                842 => {
+                5874 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EBLALPNFHFM(is.read_message()?));
                 },
-                14858 => {
+                13554 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GFILIMKPCDM(is.read_message()?));
                 },
-                13010 => {
+                3194 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::MLBEKIDDGOD(is.read_message()?));
                 },
-                2450 => {
+                5850 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HPBIAGDDEHN(is.read_message()?));
                 },
-                6794 => {
+                2010 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NBCHIIFMCNC(is.read_message()?));
                 },
-                9378 => {
+                12266 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EMEFJODMAOI(is.read_message()?));
                 },
-                10570 => {
+                9186 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CFCBJDKKCMB(is.read_message()?));
                 },
-                5298 => {
+                1770 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CAPLDJMOIPB(is.read_message()?));
                 },
-                6226 => {
+                5346 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::MNLHCHKLEOG(is.read_message()?));
                 },
-                11114 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(is.read_message()?));
-                },
-                1250 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(is.read_message()?));
-                },
-                1594 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(is.read_message()?));
-                },
-                4762 => {
+                12362 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EGIIEHODAEJ(is.read_message()?));
                 },
-                1714 => {
+                11178 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NNPLAAIBOGB(is.read_message()?));
                 },
-                7474 => {
+                15594 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::AHKBAEIMCNM(is.read_message()?));
                 },
-                16018 => {
+                15570 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LJJNMMGJGNA(is.read_message()?));
                 },
-                5682 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(is.read_message()?));
-                },
-                6138 => {
+                13434 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LEGOBNMKHCO(is.read_message()?));
                 },
-                8746 => {
+                14058 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LOGMGHBMHPE(is.read_message()?));
                 },
-                10194 => {
+                6882 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CGEHCAIKAPJ(is.read_message()?));
                 },
-                7306 => {
+                2226 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OPJONHEBIBG(is.read_message()?));
                 },
-                4442 => {
+                11002 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::AIJHFPCFPDM(is.read_message()?));
                 },
-                3474 => {
+                7026 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GCBFCJIHNFC(is.read_message()?));
                 },
-                11722 => {
+                7034 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NFMAAGNLALA(is.read_message()?));
                 },
-                378 => {
+                10866 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACMGHACKDA(is.read_message()?));
                 },
-                11930 => {
+                5130 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CNGCLILLDJG(is.read_message()?));
                 },
-                243538 => {
+                1958082 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FNGLOCNBCOJ(is.read_message()?));
                 },
-                1285066 => {
+                2058522 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_cs_req::KKNBOACNCON::PDAEHMFKEOF(is.read_message()?));
                 },
                 tag => {
@@ -2451,7 +2215,7 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFNEPPCNOOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.BFNEPPCNOOI);
+            my_size += ::protobuf::rt::uint32_size(8, self.BFNEPPCNOOI);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -2539,18 +2303,6 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -2564,10 +2316,6 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2624,129 +2372,117 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFNEPPCNOOI != 0 {
-            os.write_uint32(4, self.BFNEPPCNOOI)?;
+            os.write_uint32(8, self.BFNEPPCNOOI)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OPDCGJEKEKP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1251, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(137, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HKNPLHMLINB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1346, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(239, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ILLBNBMCMPF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(147, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(280, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DFKJOGGFDHD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1162, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1141, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HDNGLMGCHEK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(938, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1212, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::JOGGLMMCMFH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1849, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1883, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OMAKKKMNCJH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1833, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1597, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CAELBFPKNDN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1277, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1599, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EGOFFKFONDP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(941, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1768, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HFMOJHNMNJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1062, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1186, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GANJIGMPDNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(881, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1191, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::BAALMNPNGLO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1770, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1744, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EBLALPNFHFM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(105, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(734, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GFILIMKPCDM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1857, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1694, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::MLBEKIDDGOD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1626, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(399, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::HPBIAGDDEHN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(306, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(731, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NBCHIIFMCNC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(849, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(251, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EMEFJODMAOI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1172, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1533, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CFCBJDKKCMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1321, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1148, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CAPLDJMOIPB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(662, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(221, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::MNLHCHKLEOG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(778, v, os)?;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::ECDMNJMBFAF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1389, v, os)?;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::DCEGCNCJJOJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(156, v, os)?;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACFKAODFEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(199, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(668, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(595, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1545, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NNPLAAIBOGB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(214, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1397, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::AHKBAEIMCNM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(934, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1949, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2002, v, os)?;
-                },
-                &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FIGNFBLJDCH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(710, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1946, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LEGOBNMKHCO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(767, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1679, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::LOGMGHBMHPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1093, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1757, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CGEHCAIKAPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1274, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(860, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::OPJONHEBIBG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(913, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(278, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::AIJHFPCFPDM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(555, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1375, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::GCBFCJIHNFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(434, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(878, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::NFMAAGNLALA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1465, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(879, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::IACMGHACKDA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(47, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1358, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::CNGCLILLDJG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1491, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(641, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::FNGLOCNBCOJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(30442, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(244760, v, os)?;
                 },
                 &handle_rogue_common_pending_action_cs_req::KKNBOACNCON::PDAEHMFKEOF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(160633, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(257315, v, os)?;
                 },
             };
         }
@@ -2768,10 +2504,6 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionCsReq {
 
     fn clear(&mut self) {
         self.BFNEPPCNOOI = 0;
-        self.KKNBOACNCON = ::std::option::Option::None;
-        self.KKNBOACNCON = ::std::option::Option::None;
-        self.KKNBOACNCON = ::std::option::Option::None;
-        self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -2887,12 +2619,6 @@ pub mod handle_rogue_common_pending_action_cs_req {
         CAPLDJMOIPB(super::super::JHBEOHDMHDA::JHBEOHDMHDA),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.MNLHCHKLEOG)
         MNLHCHKLEOG(super::super::IHOFKNBNNLB::IHOFKNBNNLB),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.ECDMNJMBFAF)
-        ECDMNJMBFAF(super::super::GDIKLACNOEJ::GDIKLACNOEJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.DCEGCNCJJOJ)
-        DCEGCNCJJOJ(super::super::GDIKLACNOEJ::GDIKLACNOEJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.IACFKAODFEN)
-        IACFKAODFEN(super::super::GDIKLACNOEJ::GDIKLACNOEJ),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.EGIIEHODAEJ)
         EGIIEHODAEJ(super::super::AHNLMMFHOME::AHNLMMFHOME),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.NNPLAAIBOGB)
@@ -2901,8 +2627,6 @@ pub mod handle_rogue_common_pending_action_cs_req {
         AHKBAEIMCNM(super::super::AHNLMMFHOME::AHNLMMFHOME),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.LJJNMMGJGNA)
         LJJNMMGJGNA(super::super::GJIHIMKICLG::GJIHIMKICLG),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.FIGNFBLJDCH)
-        FIGNFBLJDCH(super::super::GJIHIMKICLG::GJIHIMKICLG),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.LEGOBNMKHCO)
         LEGOBNMKHCO(super::super::MCFEKKMFEHA::MCFEKKMFEHA),
         // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionCsReq.LOGMGHBMHPE)
@@ -2957,55 +2681,51 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11KIHMNMMJIDL.proto\x1a\x11KPDALNGIDAG.proto\x1a\x11LDFJBLDICPJ\
     .proto\x1a\x11MCFEKKMFEHA.proto\x1a\x11MHLLNFJHMEK.proto\x1a\x11NMMLEBEE\
     JLB.proto\x1a\x11OGPOHFPHEOB.proto\x1a\x11PIBOMOCKACA.proto\x1a\x11PIJDF\
-    MAJMFD.proto\x1a\x11PJMEDBOACGL.proto\"\xce\x10\n#HandleRogueCommonPendi\
-    ngActionCsReq\x12\x20\n\x0bBFNEPPCNOOI\x18\x04\x20\x01(\rR\x0bBFNEPPCNOO\
-    I\x121\n\x0bOPDCGJEKEKP\x18\xe3\t\x20\x01(\x0b2\x0c.BPLNKHGAILKH\0R\x0bO\
-    PDCGJEKEKP\x121\n\x0bHKNPLHMLINB\x18\xc2\n\x20\x01(\x0b2\x0c.NMMLEBEEJLB\
-    H\0R\x0bHKNPLHMLINB\x121\n\x0bILLBNBMCMPF\x18\x93\x01\x20\x01(\x0b2\x0c.\
-    AEJLPCAIODPH\0R\x0bILLBNBMCMPF\x121\n\x0bDFKJOGGFDHD\x18\x8a\t\x20\x01(\
-    \x0b2\x0c.DEMENEAAGAAH\0R\x0bDFKJOGGFDHD\x121\n\x0bHDNGLMGCHEK\x18\xaa\
-    \x07\x20\x01(\x0b2\x0c.PJMEDBOACGLH\0R\x0bHDNGLMGCHEK\x121\n\x0bJOGGLMMC\
-    MFH\x18\xb9\x0e\x20\x01(\x0b2\x0c.JINFLJMPPHNH\0R\x0bJOGGLMMCMFH\x121\n\
-    \x0bOMAKKKMNCJH\x18\xa9\x0e\x20\x01(\x0b2\x0c.LDFJBLDICPJH\0R\x0bOMAKKKM\
-    NCJH\x121\n\x0bCAELBFPKNDN\x18\xfd\t\x20\x01(\x0b2\x0c.BFAMBJHPNGEH\0R\
-    \x0bCAELBFPKNDN\x121\n\x0bEGOFFKFONDP\x18\xad\x07\x20\x01(\x0b2\x0c.KPDA\
-    LNGIDAGH\0R\x0bEGOFFKFONDP\x121\n\x0bHFMOJHNMNJN\x18\xa6\x08\x20\x01(\
-    \x0b2\x0c.JEKGAINCPNHH\0R\x0bHFMOJHNMNJN\x121\n\x0bGANJIGMPDNL\x18\xf1\
-    \x06\x20\x01(\x0b2\x0c.KIHMNMMJIDLH\0R\x0bGANJIGMPDNL\x121\n\x0bBAALMNPN\
-    GLO\x18\xea\r\x20\x01(\x0b2\x0c.CHEPPLBNOFFH\0R\x0bBAALMNPNGLO\x120\n\
-    \x0bEBLALPNFHFM\x18i\x20\x01(\x0b2\x0c.AOMOENMNCNBH\0R\x0bEBLALPNFHFM\
-    \x121\n\x0bGFILIMKPCDM\x18\xc1\x0e\x20\x01(\x0b2\x0c.CIBMBDDOGBHH\0R\x0b\
-    GFILIMKPCDM\x121\n\x0bMLBEKIDDGOD\x18\xda\x0c\x20\x01(\x0b2\x0c.PIJDFMAJ\
-    MFDH\0R\x0bMLBEKIDDGOD\x121\n\x0bHPBIAGDDEHN\x18\xb2\x02\x20\x01(\x0b2\
-    \x0c.CHDPILMCJNPH\0R\x0bHPBIAGDDEHN\x121\n\x0bNBCHIIFMCNC\x18\xd1\x06\
-    \x20\x01(\x0b2\x0c.IGODPKFLDNEH\0R\x0bNBCHIIFMCNC\x121\n\x0bEMEFJODMAOI\
-    \x18\x94\t\x20\x01(\x0b2\x0c.HELGMBBOGMJH\0R\x0bEMEFJODMAOI\x121\n\x0bCF\
-    CBJDKKCMB\x18\xa9\n\x20\x01(\x0b2\x0c.GDIKLACNOEJH\0R\x0bCFCBJDKKCMB\x12\
-    1\n\x0bCAPLDJMOIPB\x18\x96\x05\x20\x01(\x0b2\x0c.JHBEOHDMHDAH\0R\x0bCAPL\
-    DJMOIPB\x121\n\x0bMNLHCHKLEOG\x18\x8a\x06\x20\x01(\x0b2\x0c.IHOFKNBNNLBH\
-    \0R\x0bMNLHCHKLEOG\x121\n\x0bECDMNJMBFAF\x18\xed\n\x20\x01(\x0b2\x0c.GDI\
-    KLACNOEJH\0R\x0bECDMNJMBFAF\x121\n\x0bDCEGCNCJJOJ\x18\x9c\x01\x20\x01(\
-    \x0b2\x0c.GDIKLACNOEJH\0R\x0bDCEGCNCJJOJ\x121\n\x0bIACFKAODFEN\x18\xc7\
-    \x01\x20\x01(\x0b2\x0c.GDIKLACNOEJH\0R\x0bIACFKAODFEN\x121\n\x0bEGIIEHOD\
-    AEJ\x18\xd3\x04\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bEGIIEHODAEJ\x121\n\
-    \x0bNNPLAAIBOGB\x18\xd6\x01\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bNNPLAAI\
-    BOGB\x121\n\x0bAHKBAEIMCNM\x18\xa6\x07\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\
-    \x0bAHKBAEIMCNM\x121\n\x0bLJJNMMGJGNA\x18\xd2\x0f\x20\x01(\x0b2\x0c.GJIH\
-    IMKICLGH\0R\x0bLJJNMMGJGNA\x121\n\x0bFIGNFBLJDCH\x18\xc6\x05\x20\x01(\
-    \x0b2\x0c.GJIHIMKICLGH\0R\x0bFIGNFBLJDCH\x121\n\x0bLEGOBNMKHCO\x18\xff\
-    \x05\x20\x01(\x0b2\x0c.MCFEKKMFEHAH\0R\x0bLEGOBNMKHCO\x121\n\x0bLOGMGHBM\
-    HPE\x18\xc5\x08\x20\x01(\x0b2\x0c.EKIFAOJKOCLH\0R\x0bLOGMGHBMHPE\x121\n\
-    \x0bCGEHCAIKAPJ\x18\xfa\t\x20\x01(\x0b2\x0c.APOKGADPHDCH\0R\x0bCGEHCAIKA\
-    PJ\x121\n\x0bOPJONHEBIBG\x18\x91\x07\x20\x01(\x0b2\x0c.ALMGFDOPLGAH\0R\
-    \x0bOPJONHEBIBG\x121\n\x0bAIJHFPCFPDM\x18\xab\x04\x20\x01(\x0b2\x0c.CLMP\
-    CCGCADKH\0R\x0bAIJHFPCFPDM\x121\n\x0bGCBFCJIHNFC\x18\xb2\x03\x20\x01(\
-    \x0b2\x0c.JKLLLNDHJHIH\0R\x0bGCBFCJIHNFC\x121\n\x0bNFMAAGNLALA\x18\xb9\
-    \x0b\x20\x01(\x0b2\x0c.BOHAJCPBBJIH\0R\x0bNFMAAGNLALA\x120\n\x0bIACMGHAC\
-    KDA\x18/\x20\x01(\x0b2\x0c.OGPOHFPHEOBH\0R\x0bIACMGHACKDA\x121\n\x0bCNGC\
-    LILLDJG\x18\xd3\x0b\x20\x01(\x0b2\x0c.PIBOMOCKACAH\0R\x0bCNGCLILLDJG\x12\
-    2\n\x0bFNGLOCNBCOJ\x18\xea\xed\x01\x20\x01(\x0b2\x0c.EBOLNPIMDALH\0R\x0b\
-    FNGLOCNBCOJ\x122\n\x0bPDAEHMFKEOF\x18\xf9\xe6\t\x20\x01(\x0b2\x0c.MHLLNF\
-    JHMEKH\0R\x0bPDAEHMFKEOFB\r\n\x0bKKNBOACNCONb\x06proto3\
+    MAJMFD.proto\x1a\x11PJMEDBOACGL.proto\"\x84\x0f\n#HandleRogueCommonPendi\
+    ngActionCsReq\x12\x20\n\x0bBFNEPPCNOOI\x18\x08\x20\x01(\rR\x0bBFNEPPCNOO\
+    I\x121\n\x0bOPDCGJEKEKP\x18\x89\x01\x20\x01(\x0b2\x0c.BPLNKHGAILKH\0R\
+    \x0bOPDCGJEKEKP\x121\n\x0bHKNPLHMLINB\x18\xef\x01\x20\x01(\x0b2\x0c.NMML\
+    EBEEJLBH\0R\x0bHKNPLHMLINB\x121\n\x0bILLBNBMCMPF\x18\x98\x02\x20\x01(\
+    \x0b2\x0c.AEJLPCAIODPH\0R\x0bILLBNBMCMPF\x121\n\x0bDFKJOGGFDHD\x18\xf5\
+    \x08\x20\x01(\x0b2\x0c.DEMENEAAGAAH\0R\x0bDFKJOGGFDHD\x121\n\x0bHDNGLMGC\
+    HEK\x18\xbc\t\x20\x01(\x0b2\x0c.PJMEDBOACGLH\0R\x0bHDNGLMGCHEK\x121\n\
+    \x0bJOGGLMMCMFH\x18\xdb\x0e\x20\x01(\x0b2\x0c.JINFLJMPPHNH\0R\x0bJOGGLMM\
+    CMFH\x121\n\x0bOMAKKKMNCJH\x18\xbd\x0c\x20\x01(\x0b2\x0c.LDFJBLDICPJH\0R\
+    \x0bOMAKKKMNCJH\x121\n\x0bCAELBFPKNDN\x18\xbf\x0c\x20\x01(\x0b2\x0c.BFAM\
+    BJHPNGEH\0R\x0bCAELBFPKNDN\x121\n\x0bEGOFFKFONDP\x18\xe8\r\x20\x01(\x0b2\
+    \x0c.KPDALNGIDAGH\0R\x0bEGOFFKFONDP\x121\n\x0bHFMOJHNMNJN\x18\xa2\t\x20\
+    \x01(\x0b2\x0c.JEKGAINCPNHH\0R\x0bHFMOJHNMNJN\x121\n\x0bGANJIGMPDNL\x18\
+    \xa7\t\x20\x01(\x0b2\x0c.KIHMNMMJIDLH\0R\x0bGANJIGMPDNL\x121\n\x0bBAALMN\
+    PNGLO\x18\xd0\r\x20\x01(\x0b2\x0c.CHEPPLBNOFFH\0R\x0bBAALMNPNGLO\x121\n\
+    \x0bEBLALPNFHFM\x18\xde\x05\x20\x01(\x0b2\x0c.AOMOENMNCNBH\0R\x0bEBLALPN\
+    FHFM\x121\n\x0bGFILIMKPCDM\x18\x9e\r\x20\x01(\x0b2\x0c.CIBMBDDOGBHH\0R\
+    \x0bGFILIMKPCDM\x121\n\x0bMLBEKIDDGOD\x18\x8f\x03\x20\x01(\x0b2\x0c.PIJD\
+    FMAJMFDH\0R\x0bMLBEKIDDGOD\x121\n\x0bHPBIAGDDEHN\x18\xdb\x05\x20\x01(\
+    \x0b2\x0c.CHDPILMCJNPH\0R\x0bHPBIAGDDEHN\x121\n\x0bNBCHIIFMCNC\x18\xfb\
+    \x01\x20\x01(\x0b2\x0c.IGODPKFLDNEH\0R\x0bNBCHIIFMCNC\x121\n\x0bEMEFJODM\
+    AOI\x18\xfd\x0b\x20\x01(\x0b2\x0c.HELGMBBOGMJH\0R\x0bEMEFJODMAOI\x121\n\
+    \x0bCFCBJDKKCMB\x18\xfc\x08\x20\x01(\x0b2\x0c.GDIKLACNOEJH\0R\x0bCFCBJDK\
+    KCMB\x121\n\x0bCAPLDJMOIPB\x18\xdd\x01\x20\x01(\x0b2\x0c.JHBEOHDMHDAH\0R\
+    \x0bCAPLDJMOIPB\x121\n\x0bMNLHCHKLEOG\x18\x9c\x05\x20\x01(\x0b2\x0c.IHOF\
+    KNBNNLBH\0R\x0bMNLHCHKLEOG\x121\n\x0bEGIIEHODAEJ\x18\x89\x0c\x20\x01(\
+    \x0b2\x0c.AHNLMMFHOMEH\0R\x0bEGIIEHODAEJ\x121\n\x0bNNPLAAIBOGB\x18\xf5\n\
+    \x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bNNPLAAIBOGB\x121\n\x0bAHKBAEIMCNM\
+    \x18\x9d\x0f\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bAHKBAEIMCNM\x121\n\x0b\
+    LJJNMMGJGNA\x18\x9a\x0f\x20\x01(\x0b2\x0c.GJIHIMKICLGH\0R\x0bLJJNMMGJGNA\
+    \x121\n\x0bLEGOBNMKHCO\x18\x8f\r\x20\x01(\x0b2\x0c.MCFEKKMFEHAH\0R\x0bLE\
+    GOBNMKHCO\x121\n\x0bLOGMGHBMHPE\x18\xdd\r\x20\x01(\x0b2\x0c.EKIFAOJKOCLH\
+    \0R\x0bLOGMGHBMHPE\x121\n\x0bCGEHCAIKAPJ\x18\xdc\x06\x20\x01(\x0b2\x0c.A\
+    POKGADPHDCH\0R\x0bCGEHCAIKAPJ\x121\n\x0bOPJONHEBIBG\x18\x96\x02\x20\x01(\
+    \x0b2\x0c.ALMGFDOPLGAH\0R\x0bOPJONHEBIBG\x121\n\x0bAIJHFPCFPDM\x18\xdf\n\
+    \x20\x01(\x0b2\x0c.CLMPCCGCADKH\0R\x0bAIJHFPCFPDM\x121\n\x0bGCBFCJIHNFC\
+    \x18\xee\x06\x20\x01(\x0b2\x0c.JKLLLNDHJHIH\0R\x0bGCBFCJIHNFC\x121\n\x0b\
+    NFMAAGNLALA\x18\xef\x06\x20\x01(\x0b2\x0c.BOHAJCPBBJIH\0R\x0bNFMAAGNLALA\
+    \x121\n\x0bIACMGHACKDA\x18\xce\n\x20\x01(\x0b2\x0c.OGPOHFPHEOBH\0R\x0bIA\
+    CMGHACKDA\x121\n\x0bCNGCLILLDJG\x18\x81\x05\x20\x01(\x0b2\x0c.PIBOMOCKAC\
+    AH\0R\x0bCNGCLILLDJG\x122\n\x0bFNGLOCNBCOJ\x18\x98\xf8\x0e\x20\x01(\x0b2\
+    \x0c.EBOLNPIMDALH\0R\x0bFNGLOCNBCOJ\x122\n\x0bPDAEHMFKEOF\x18\xa3\xda\
+    \x0f\x20\x01(\x0b2\x0c.MHLLNFJHMEKH\0R\x0bPDAEHMFKEOFB\r\n\x0bKKNBOACNCO\
+    Nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

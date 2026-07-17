@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DLBGONGJBNC {
     // message fields
-    // @@protoc_insertion_point(field:DLBGONGJBNC.ODFEDCPLNEM)
-    pub ODFEDCPLNEM: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.FMEHKPKHGJA)
     pub FMEHKPKHGJA: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.DGGCFDKJDPO)
     pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:DLBGONGJBNC.ODFEDCPLNEM)
+    pub ODFEDCPLNEM: u32,
     // @@protoc_insertion_point(field:DLBGONGJBNC.PNGHFKLCNBE)
     pub PNGHFKLCNBE: u32,
     // special fields
@@ -56,11 +56,6 @@ impl DLBGONGJBNC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODFEDCPLNEM",
-            |m: &DLBGONGJBNC| { &m.ODFEDCPLNEM },
-            |m: &mut DLBGONGJBNC| { &mut m.ODFEDCPLNEM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FMEHKPKHGJA",
             |m: &DLBGONGJBNC| { &m.FMEHKPKHGJA },
             |m: &mut DLBGONGJBNC| { &mut m.FMEHKPKHGJA },
@@ -69,6 +64,11 @@ impl DLBGONGJBNC {
             "DGGCFDKJDPO",
             |m: &DLBGONGJBNC| { &m.DGGCFDKJDPO },
             |m: &mut DLBGONGJBNC| { &mut m.DGGCFDKJDPO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODFEDCPLNEM",
+            |m: &DLBGONGJBNC| { &m.ODFEDCPLNEM },
+            |m: &mut DLBGONGJBNC| { &mut m.ODFEDCPLNEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PNGHFKLCNBE",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for DLBGONGJBNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ODFEDCPLNEM = is.read_uint32()?;
-                },
-                120 => {
+                48 => {
                     self.FMEHKPKHGJA = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.DGGCFDKJDPO = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
+                    self.ODFEDCPLNEM = is.read_uint32()?;
+                },
+                96 => {
                     self.PNGHFKLCNBE = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for DLBGONGJBNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODFEDCPLNEM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ODFEDCPLNEM);
-        }
         if self.FMEHKPKHGJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FMEHKPKHGJA);
+            my_size += ::protobuf::rt::uint32_size(6, self.FMEHKPKHGJA);
         }
         if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DGGCFDKJDPO);
+            my_size += ::protobuf::rt::uint32_size(9, self.DGGCFDKJDPO);
+        }
+        if self.ODFEDCPLNEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.ODFEDCPLNEM);
         }
         if self.PNGHFKLCNBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PNGHFKLCNBE);
+            my_size += ::protobuf::rt::uint32_size(12, self.PNGHFKLCNBE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for DLBGONGJBNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODFEDCPLNEM != 0 {
-            os.write_uint32(3, self.ODFEDCPLNEM)?;
-        }
         if self.FMEHKPKHGJA != 0 {
-            os.write_uint32(15, self.FMEHKPKHGJA)?;
+            os.write_uint32(6, self.FMEHKPKHGJA)?;
         }
         if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(7, self.DGGCFDKJDPO)?;
+            os.write_uint32(9, self.DGGCFDKJDPO)?;
+        }
+        if self.ODFEDCPLNEM != 0 {
+            os.write_uint32(10, self.ODFEDCPLNEM)?;
         }
         if self.PNGHFKLCNBE != 0 {
-            os.write_uint32(13, self.PNGHFKLCNBE)?;
+            os.write_uint32(12, self.PNGHFKLCNBE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for DLBGONGJBNC {
     }
 
     fn clear(&mut self) {
-        self.ODFEDCPLNEM = 0;
         self.FMEHKPKHGJA = 0;
         self.DGGCFDKJDPO = 0;
+        self.ODFEDCPLNEM = 0;
         self.PNGHFKLCNBE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DLBGONGJBNC {
         static instance: DLBGONGJBNC = DLBGONGJBNC {
-            ODFEDCPLNEM: 0,
             FMEHKPKHGJA: 0,
             DGGCFDKJDPO: 0,
+            ODFEDCPLNEM: 0,
             PNGHFKLCNBE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DLBGONGJBNC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DLBGONGJBNC.proto\"\x95\x01\n\x0bDLBGONGJBNC\x12\x20\n\x0bODFEDCPL\
-    NEM\x18\x03\x20\x01(\rR\x0bODFEDCPLNEM\x12\x20\n\x0bFMEHKPKHGJA\x18\x0f\
-    \x20\x01(\rR\x0bFMEHKPKHGJA\x12\x20\n\x0bDGGCFDKJDPO\x18\x07\x20\x01(\rR\
-    \x0bDGGCFDKJDPO\x12\x20\n\x0bPNGHFKLCNBE\x18\r\x20\x01(\rR\x0bPNGHFKLCNB\
-    Eb\x06proto3\
+    \n\x11DLBGONGJBNC.proto\"\x95\x01\n\x0bDLBGONGJBNC\x12\x20\n\x0bFMEHKPKH\
+    GJA\x18\x06\x20\x01(\rR\x0bFMEHKPKHGJA\x12\x20\n\x0bDGGCFDKJDPO\x18\t\
+    \x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bODFEDCPLNEM\x18\n\x20\x01(\rR\
+    \x0bODFEDCPLNEM\x12\x20\n\x0bPNGHFKLCNBE\x18\x0c\x20\x01(\rR\x0bPNGHFKLC\
+    NBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

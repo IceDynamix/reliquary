@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BLPLICDMFEL {
     // message fields
-    // @@protoc_insertion_point(field:BLPLICDMFEL.PEPOGGNCGLD)
-    pub PEPOGGNCGLD: ::std::vec::Vec<super::MJEIKNGOCJO::MJEIKNGOCJO>,
     // @@protoc_insertion_point(field:BLPLICDMFEL.floor_id)
     pub floor_id: u32,
+    // @@protoc_insertion_point(field:BLPLICDMFEL.PEPOGGNCGLD)
+    pub PEPOGGNCGLD: ::std::vec::Vec<super::MJEIKNGOCJO::MJEIKNGOCJO>,
     // special fields
     // @@protoc_insertion_point(special_field:BLPLICDMFEL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl BLPLICDMFEL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PEPOGGNCGLD",
-            |m: &BLPLICDMFEL| { &m.PEPOGGNCGLD },
-            |m: &mut BLPLICDMFEL| { &mut m.PEPOGGNCGLD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
             |m: &BLPLICDMFEL| { &m.floor_id },
             |m: &mut BLPLICDMFEL| { &mut m.floor_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PEPOGGNCGLD",
+            |m: &BLPLICDMFEL| { &m.PEPOGGNCGLD },
+            |m: &mut BLPLICDMFEL| { &mut m.PEPOGGNCGLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BLPLICDMFEL>(
             "BLPLICDMFEL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BLPLICDMFEL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.PEPOGGNCGLD.push(is.read_message()?);
-                },
-                48 => {
+                80 => {
                     self.floor_id = is.read_uint32()?;
+                },
+                114 => {
+                    self.PEPOGGNCGLD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for BLPLICDMFEL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.floor_id);
+        }
         for value in &self.PEPOGGNCGLD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.floor_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PEPOGGNCGLD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         if self.floor_id != 0 {
-            os.write_uint32(6, self.floor_id)?;
+            os.write_uint32(10, self.floor_id)?;
         }
+        for v in &self.PEPOGGNCGLD {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for BLPLICDMFEL {
     }
 
     fn clear(&mut self) {
-        self.PEPOGGNCGLD.clear();
         self.floor_id = 0;
+        self.PEPOGGNCGLD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BLPLICDMFEL {
         static instance: BLPLICDMFEL = BLPLICDMFEL {
-            PEPOGGNCGLD: ::std::vec::Vec::new(),
             floor_id: 0,
+            PEPOGGNCGLD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for BLPLICDMFEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BLPLICDMFEL.proto\x1a\x11MJEIKNGOCJO.proto\"X\n\x0bBLPLICDMFEL\x12\
-    .\n\x0bPEPOGGNCGLD\x18\r\x20\x03(\x0b2\x0c.MJEIKNGOCJOR\x0bPEPOGGNCGLD\
-    \x12\x19\n\x08floor_id\x18\x06\x20\x01(\rR\x07floorIdb\x06proto3\
+    \x19\n\x08floor_id\x18\n\x20\x01(\rR\x07floorId\x12.\n\x0bPEPOGGNCGLD\
+    \x18\x0e\x20\x03(\x0b2\x0c.MJEIKNGOCJOR\x0bPEPOGGNCGLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

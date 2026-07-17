@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFightActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.FALBALFNOFF)
-    pub FALBALFNOFF: ::std::vec::Vec<super::CDABDPPPHBN::CDABDPPPHBN>,
-    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.EDGPAOJEENN)
-    pub EDGPAOJEENN: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.world_level)
     pub world_level: u32,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.FALBALFNOFF)
+    pub FALBALFNOFF: ::std::vec::Vec<super::CDABDPPPHBN::CDABDPPPHBN>,
     // @@protoc_insertion_point(field:GetFightActivityDataScRsp.CFDBDGEFJJN)
     pub CFDBDGEFJJN: bool,
+    // @@protoc_insertion_point(field:GetFightActivityDataScRsp.EDGPAOJEENN)
+    pub EDGPAOJEENN: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFightActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,16 +57,6 @@ impl GetFightActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FALBALFNOFF",
-            |m: &GetFightActivityDataScRsp| { &m.FALBALFNOFF },
-            |m: &mut GetFightActivityDataScRsp| { &mut m.FALBALFNOFF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "EDGPAOJEENN",
-            |m: &GetFightActivityDataScRsp| { &m.EDGPAOJEENN },
-            |m: &mut GetFightActivityDataScRsp| { &mut m.EDGPAOJEENN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
             |m: &GetFightActivityDataScRsp| { &m.world_level },
@@ -77,10 +67,20 @@ impl GetFightActivityDataScRsp {
             |m: &GetFightActivityDataScRsp| { &m.retcode },
             |m: &mut GetFightActivityDataScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FALBALFNOFF",
+            |m: &GetFightActivityDataScRsp| { &m.FALBALFNOFF },
+            |m: &mut GetFightActivityDataScRsp| { &mut m.FALBALFNOFF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CFDBDGEFJJN",
             |m: &GetFightActivityDataScRsp| { &m.CFDBDGEFJJN },
             |m: &mut GetFightActivityDataScRsp| { &mut m.CFDBDGEFJJN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "EDGPAOJEENN",
+            |m: &GetFightActivityDataScRsp| { &m.EDGPAOJEENN },
+            |m: &mut GetFightActivityDataScRsp| { &mut m.EDGPAOJEENN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFightActivityDataScRsp>(
             "GetFightActivityDataScRsp",
@@ -100,10 +100,19 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                16 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                74 => {
                     self.FALBALFNOFF.push(is.read_message()?);
                 },
-                90 => {
+                80 => {
+                    self.CFDBDGEFJJN = is.read_bool()?;
+                },
+                122 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -118,15 +127,6 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
                     is.pop_limit(old_limit);
                     self.EDGPAOJEENN.insert(key, value);
                 },
-                16 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                24 => {
-                    self.CFDBDGEFJJN = is.read_bool()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -139,52 +139,52 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         for value in &self.FALBALFNOFF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.CFDBDGEFJJN != false {
+            my_size += 1 + 1;
+        }
         for (k, v) in &self.EDGPAOJEENN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if self.CFDBDGEFJJN != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FALBALFNOFF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for (k, v) in &self.EDGPAOJEENN {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
         if self.world_level != 0 {
             os.write_uint32(2, self.world_level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
+        for v in &self.FALBALFNOFF {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         if self.CFDBDGEFJJN != false {
-            os.write_bool(3, self.CFDBDGEFJJN)?;
+            os.write_bool(10, self.CFDBDGEFJJN)?;
         }
+        for (k, v) in &self.EDGPAOJEENN {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(122)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -202,11 +202,11 @@ impl ::protobuf::Message for GetFightActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.FALBALFNOFF.clear();
-        self.EDGPAOJEENN.clear();
         self.world_level = 0;
         self.retcode = 0;
+        self.FALBALFNOFF.clear();
         self.CFDBDGEFJJN = false;
+        self.EDGPAOJEENN.clear();
         self.special_fields.clear();
     }
 
@@ -235,14 +235,14 @@ impl ::protobuf::reflect::ProtobufValue for GetFightActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFightActivityDataScRsp.proto\x1a\x11CDABDPPPHBN.proto\"\xb7\x02\
-    \n\x19GetFightActivityDataScRsp\x12.\n\x0bFALBALFNOFF\x18\x06\x20\x03(\
-    \x0b2\x0c.CDABDPPPHBNR\x0bFALBALFNOFF\x12M\n\x0bEDGPAOJEENN\x18\x0b\x20\
-    \x03(\x0b2+.GetFightActivityDataScRsp.EDGPAOJEENNEntryR\x0bEDGPAOJEENN\
-    \x12\x1f\n\x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x12\x18\n\x07r\
-    etcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bCFDBDGEFJJN\x18\x03\
-    \x20\x01(\x08R\x0bCFDBDGEFJJN\x1a>\n\x10EDGPAOJEENNEntry\x12\x10\n\x03ke\
-    y\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05v\
-    alue:\x028\x01b\x06proto3\
+    \n\x19GetFightActivityDataScRsp\x12\x1f\n\x0bworld_level\x18\x02\x20\x01\
+    (\rR\nworldLevel\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bFALBALFNOFF\x18\t\x20\x03(\x0b2\x0c.CDABDPPPHBNR\x0bFALBALFNOFF\
+    \x12\x20\n\x0bCFDBDGEFJJN\x18\n\x20\x01(\x08R\x0bCFDBDGEFJJN\x12M\n\x0bE\
+    DGPAOJEENN\x18\x0f\x20\x03(\x0b2+.GetFightActivityDataScRsp.EDGPAOJEENNE\
+    ntryR\x0bEDGPAOJEENN\x1a>\n\x10EDGPAOJEENNEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
+    8\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

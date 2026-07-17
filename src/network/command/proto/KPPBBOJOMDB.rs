@@ -30,8 +30,8 @@ pub struct KPPBBOJOMDB {
     // message fields
     // @@protoc_insertion_point(field:KPPBBOJOMDB.PHPNBFLILFL)
     pub PHPNBFLILFL: u32,
-    // @@protoc_insertion_point(field:KPPBBOJOMDB.OOMBNFMJLEO)
-    pub OOMBNFMJLEO: u32,
+    // @@protoc_insertion_point(field:KPPBBOJOMDB.category)
+    pub category: u32,
     // @@protoc_insertion_point(field:KPPBBOJOMDB.OMHHOADFMLI)
     pub OMHHOADFMLI: u32,
     // @@protoc_insertion_point(field:KPPBBOJOMDB.level)
@@ -61,9 +61,9 @@ impl KPPBBOJOMDB {
             |m: &mut KPPBBOJOMDB| { &mut m.PHPNBFLILFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOMBNFMJLEO",
-            |m: &KPPBBOJOMDB| { &m.OOMBNFMJLEO },
-            |m: &mut KPPBBOJOMDB| { &mut m.OOMBNFMJLEO },
+            "category",
+            |m: &KPPBBOJOMDB| { &m.category },
+            |m: &mut KPPBBOJOMDB| { &mut m.category },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OMHHOADFMLI",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for KPPBBOJOMDB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                16 => {
                     self.PHPNBFLILFL = is.read_uint32()?;
                 },
-                8 => {
-                    self.OOMBNFMJLEO = is.read_uint32()?;
-                },
                 72 => {
+                    self.category = is.read_uint32()?;
+                },
+                88 => {
                     self.OMHHOADFMLI = is.read_uint32()?;
                 },
-                32 => {
+                112 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -118,16 +118,16 @@ impl ::protobuf::Message for KPPBBOJOMDB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PHPNBFLILFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PHPNBFLILFL);
+            my_size += ::protobuf::rt::uint32_size(2, self.PHPNBFLILFL);
         }
-        if self.OOMBNFMJLEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OOMBNFMJLEO);
+        if self.category != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.category);
         }
         if self.OMHHOADFMLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OMHHOADFMLI);
+            my_size += ::protobuf::rt::uint32_size(11, self.OMHHOADFMLI);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.level);
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for KPPBBOJOMDB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PHPNBFLILFL != 0 {
-            os.write_uint32(12, self.PHPNBFLILFL)?;
+            os.write_uint32(2, self.PHPNBFLILFL)?;
         }
-        if self.OOMBNFMJLEO != 0 {
-            os.write_uint32(1, self.OOMBNFMJLEO)?;
+        if self.category != 0 {
+            os.write_uint32(9, self.category)?;
         }
         if self.OMHHOADFMLI != 0 {
-            os.write_uint32(9, self.OMHHOADFMLI)?;
+            os.write_uint32(11, self.OMHHOADFMLI)?;
         }
         if self.level != 0 {
-            os.write_uint32(4, self.level)?;
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::Message for KPPBBOJOMDB {
 
     fn clear(&mut self) {
         self.PHPNBFLILFL = 0;
-        self.OOMBNFMJLEO = 0;
+        self.category = 0;
         self.OMHHOADFMLI = 0;
         self.level = 0;
         self.special_fields.clear();
@@ -174,7 +174,7 @@ impl ::protobuf::Message for KPPBBOJOMDB {
     fn default_instance() -> &'static KPPBBOJOMDB {
         static instance: KPPBBOJOMDB = KPPBBOJOMDB {
             PHPNBFLILFL: 0,
-            OOMBNFMJLEO: 0,
+            category: 0,
             OMHHOADFMLI: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for KPPBBOJOMDB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPPBBOJOMDB.proto\"\x89\x01\n\x0bKPPBBOJOMDB\x12\x20\n\x0bPHPNBFLI\
-    LFL\x18\x0c\x20\x01(\rR\x0bPHPNBFLILFL\x12\x20\n\x0bOOMBNFMJLEO\x18\x01\
-    \x20\x01(\rR\x0bOOMBNFMJLEO\x12\x20\n\x0bOMHHOADFMLI\x18\t\x20\x01(\rR\
-    \x0bOMHHOADFMLI\x12\x14\n\x05level\x18\x04\x20\x01(\rR\x05levelb\x06prot\
-    o3\
+    \n\x11KPPBBOJOMDB.proto\"\x83\x01\n\x0bKPPBBOJOMDB\x12\x20\n\x0bPHPNBFLI\
+    LFL\x18\x02\x20\x01(\rR\x0bPHPNBFLILFL\x12\x1a\n\x08category\x18\t\x20\
+    \x01(\rR\x08category\x12\x20\n\x0bOMHHOADFMLI\x18\x0b\x20\x01(\rR\x0bOMH\
+    HOADFMLI\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

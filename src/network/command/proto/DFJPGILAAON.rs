@@ -30,14 +30,14 @@ pub struct DFJPGILAAON {
     // message fields
     // @@protoc_insertion_point(field:DFJPGILAAON.ECIOKDDBEPN)
     pub ECIOKDDBEPN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DFJPGILAAON.KMADACHJHJC)
-    pub KMADACHJHJC: u32,
     // @@protoc_insertion_point(field:DFJPGILAAON.PDHDOHAIJKD)
     pub PDHDOHAIJKD: u32,
     // @@protoc_insertion_point(field:DFJPGILAAON.HCCKHLMLENE)
     pub HCCKHLMLENE: u32,
     // @@protoc_insertion_point(field:DFJPGILAAON.DALCMIELFDD)
     pub DALCMIELFDD: u32,
+    // @@protoc_insertion_point(field:DFJPGILAAON.KMADACHJHJC)
+    pub KMADACHJHJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DFJPGILAAON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,11 +63,6 @@ impl DFJPGILAAON {
             |m: &mut DFJPGILAAON| { &mut m.ECIOKDDBEPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMADACHJHJC",
-            |m: &DFJPGILAAON| { &m.KMADACHJHJC },
-            |m: &mut DFJPGILAAON| { &mut m.KMADACHJHJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDHDOHAIJKD",
             |m: &DFJPGILAAON| { &m.PDHDOHAIJKD },
             |m: &mut DFJPGILAAON| { &mut m.PDHDOHAIJKD },
@@ -81,6 +76,11 @@ impl DFJPGILAAON {
             "DALCMIELFDD",
             |m: &DFJPGILAAON| { &m.DALCMIELFDD },
             |m: &mut DFJPGILAAON| { &mut m.DALCMIELFDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KMADACHJHJC",
+            |m: &DFJPGILAAON| { &m.KMADACHJHJC },
+            |m: &mut DFJPGILAAON| { &mut m.KMADACHJHJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFJPGILAAON>(
             "DFJPGILAAON",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for DFJPGILAAON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.ECIOKDDBEPN)?;
                 },
-                104 => {
+                32 => {
                     self.ECIOKDDBEPN.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.KMADACHJHJC = is.read_uint32()?;
                 },
                 48 => {
                     self.PDHDOHAIJKD = is.read_uint32()?;
                 },
-                40 => {
+                88 => {
                     self.HCCKHLMLENE = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.DALCMIELFDD = is.read_uint32()?;
+                },
+                120 => {
+                    self.KMADACHJHJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for DFJPGILAAON {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.ECIOKDDBEPN);
-        if self.KMADACHJHJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.KMADACHJHJC);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.ECIOKDDBEPN);
         if self.PDHDOHAIJKD != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.PDHDOHAIJKD);
         }
         if self.HCCKHLMLENE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HCCKHLMLENE);
+            my_size += ::protobuf::rt::uint32_size(11, self.HCCKHLMLENE);
         }
         if self.DALCMIELFDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DALCMIELFDD);
+            my_size += ::protobuf::rt::uint32_size(12, self.DALCMIELFDD);
+        }
+        if self.KMADACHJHJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.KMADACHJHJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for DFJPGILAAON {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.ECIOKDDBEPN)?;
-        if self.KMADACHJHJC != 0 {
-            os.write_uint32(12, self.KMADACHJHJC)?;
-        }
+        os.write_repeated_packed_uint32(4, &self.ECIOKDDBEPN)?;
         if self.PDHDOHAIJKD != 0 {
             os.write_uint32(6, self.PDHDOHAIJKD)?;
         }
         if self.HCCKHLMLENE != 0 {
-            os.write_uint32(5, self.HCCKHLMLENE)?;
+            os.write_uint32(11, self.HCCKHLMLENE)?;
         }
         if self.DALCMIELFDD != 0 {
-            os.write_uint32(7, self.DALCMIELFDD)?;
+            os.write_uint32(12, self.DALCMIELFDD)?;
+        }
+        if self.KMADACHJHJC != 0 {
+            os.write_uint32(15, self.KMADACHJHJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,20 +180,20 @@ impl ::protobuf::Message for DFJPGILAAON {
 
     fn clear(&mut self) {
         self.ECIOKDDBEPN.clear();
-        self.KMADACHJHJC = 0;
         self.PDHDOHAIJKD = 0;
         self.HCCKHLMLENE = 0;
         self.DALCMIELFDD = 0;
+        self.KMADACHJHJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFJPGILAAON {
         static instance: DFJPGILAAON = DFJPGILAAON {
             ECIOKDDBEPN: ::std::vec::Vec::new(),
-            KMADACHJHJC: 0,
             PDHDOHAIJKD: 0,
             HCCKHLMLENE: 0,
             DALCMIELFDD: 0,
+            KMADACHJHJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,10 +219,10 @@ impl ::protobuf::reflect::ProtobufValue for DFJPGILAAON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DFJPGILAAON.proto\"\xb7\x01\n\x0bDFJPGILAAON\x12\x20\n\x0bECIOKDDB\
-    EPN\x18\r\x20\x03(\rR\x0bECIOKDDBEPN\x12\x20\n\x0bKMADACHJHJC\x18\x0c\
-    \x20\x01(\rR\x0bKMADACHJHJC\x12\x20\n\x0bPDHDOHAIJKD\x18\x06\x20\x01(\rR\
-    \x0bPDHDOHAIJKD\x12\x20\n\x0bHCCKHLMLENE\x18\x05\x20\x01(\rR\x0bHCCKHLML\
-    ENE\x12\x20\n\x0bDALCMIELFDD\x18\x07\x20\x01(\rR\x0bDALCMIELFDDb\x06prot\
+    EPN\x18\x04\x20\x03(\rR\x0bECIOKDDBEPN\x12\x20\n\x0bPDHDOHAIJKD\x18\x06\
+    \x20\x01(\rR\x0bPDHDOHAIJKD\x12\x20\n\x0bHCCKHLMLENE\x18\x0b\x20\x01(\rR\
+    \x0bHCCKHLMLENE\x12\x20\n\x0bDALCMIELFDD\x18\x0c\x20\x01(\rR\x0bDALCMIEL\
+    FDD\x12\x20\n\x0bKMADACHJHJC\x18\x0f\x20\x01(\rR\x0bKMADACHJHJCb\x06prot\
     o3\
 ";
 

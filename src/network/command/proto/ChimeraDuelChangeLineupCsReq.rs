@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelChangeLineupCsReq {
     // message fields
+    // @@protoc_insertion_point(field:ChimeraDuelChangeLineupCsReq.ALJOJIDAAPC)
+    pub ALJOJIDAAPC: u32,
     // @@protoc_insertion_point(field:ChimeraDuelChangeLineupCsReq.AJFJLCKPNAM)
     pub AJFJLCKPNAM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChimeraDuelChangeLineupCsReq.GIECFFNDLEB)
     pub GIECFFNDLEB: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelChangeLineupCsReq.ALJOJIDAAPC)
-    pub ALJOJIDAAPC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelChangeLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl ChimeraDuelChangeLineupCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALJOJIDAAPC",
+            |m: &ChimeraDuelChangeLineupCsReq| { &m.ALJOJIDAAPC },
+            |m: &mut ChimeraDuelChangeLineupCsReq| { &mut m.ALJOJIDAAPC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AJFJLCKPNAM",
             |m: &ChimeraDuelChangeLineupCsReq| { &m.AJFJLCKPNAM },
@@ -62,11 +67,6 @@ impl ChimeraDuelChangeLineupCsReq {
             "GIECFFNDLEB",
             |m: &ChimeraDuelChangeLineupCsReq| { &m.GIECFFNDLEB },
             |m: &mut ChimeraDuelChangeLineupCsReq| { &mut m.GIECFFNDLEB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALJOJIDAAPC",
-            |m: &ChimeraDuelChangeLineupCsReq| { &m.ALJOJIDAAPC },
-            |m: &mut ChimeraDuelChangeLineupCsReq| { &mut m.ALJOJIDAAPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelChangeLineupCsReq>(
             "ChimeraDuelChangeLineupCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                16 => {
+                    self.ALJOJIDAAPC = is.read_uint32()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.AJFJLCKPNAM)?;
                 },
-                120 => {
+                24 => {
                     self.AJFJLCKPNAM.push(is.read_uint32()?);
                 },
-                40 => {
+                120 => {
                     self.GIECFFNDLEB = is.read_uint32()?;
-                },
-                48 => {
-                    self.ALJOJIDAAPC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.AJFJLCKPNAM);
-        if self.GIECFFNDLEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GIECFFNDLEB);
-        }
         if self.ALJOJIDAAPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.ALJOJIDAAPC);
+            my_size += ::protobuf::rt::uint32_size(2, self.ALJOJIDAAPC);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AJFJLCKPNAM);
+        if self.GIECFFNDLEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.GIECFFNDLEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.AJFJLCKPNAM)?;
-        if self.GIECFFNDLEB != 0 {
-            os.write_uint32(5, self.GIECFFNDLEB)?;
-        }
         if self.ALJOJIDAAPC != 0 {
-            os.write_uint32(6, self.ALJOJIDAAPC)?;
+            os.write_uint32(2, self.ALJOJIDAAPC)?;
+        }
+        os.write_repeated_packed_uint32(3, &self.AJFJLCKPNAM)?;
+        if self.GIECFFNDLEB != 0 {
+            os.write_uint32(15, self.GIECFFNDLEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupCsReq {
     }
 
     fn clear(&mut self) {
+        self.ALJOJIDAAPC = 0;
         self.AJFJLCKPNAM.clear();
         self.GIECFFNDLEB = 0;
-        self.ALJOJIDAAPC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelChangeLineupCsReq {
         static instance: ChimeraDuelChangeLineupCsReq = ChimeraDuelChangeLineupCsReq {
+            ALJOJIDAAPC: 0,
             AJFJLCKPNAM: ::std::vec::Vec::new(),
             GIECFFNDLEB: 0,
-            ALJOJIDAAPC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelChangeLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ChimeraDuelChangeLineupCsReq.proto\"\x84\x01\n\x1cChimeraDuelChangeL\
-    ineupCsReq\x12\x20\n\x0bAJFJLCKPNAM\x18\x0f\x20\x03(\rR\x0bAJFJLCKPNAM\
-    \x12\x20\n\x0bGIECFFNDLEB\x18\x05\x20\x01(\rR\x0bGIECFFNDLEB\x12\x20\n\
-    \x0bALJOJIDAAPC\x18\x06\x20\x01(\rR\x0bALJOJIDAAPCb\x06proto3\
+    ineupCsReq\x12\x20\n\x0bALJOJIDAAPC\x18\x02\x20\x01(\rR\x0bALJOJIDAAPC\
+    \x12\x20\n\x0bAJFJLCKPNAM\x18\x03\x20\x03(\rR\x0bAJFJLCKPNAM\x12\x20\n\
+    \x0bGIECFFNDLEB\x18\x0f\x20\x01(\rR\x0bGIECFFNDLEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

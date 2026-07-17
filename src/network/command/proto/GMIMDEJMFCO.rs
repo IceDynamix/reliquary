@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GMIMDEJMFCO {
     // message fields
-    // @@protoc_insertion_point(field:GMIMDEJMFCO.CCOIOAHMPDN)
-    pub CCOIOAHMPDN: ::protobuf::MessageField<super::MGGBPKANFOA::MGGBPKANFOA>,
+    // @@protoc_insertion_point(field:GMIMDEJMFCO.global_blackboard)
+    pub global_blackboard: ::protobuf::MessageField<super::MGGBPKANFOA::MGGBPKANFOA>,
     // @@protoc_insertion_point(field:GMIMDEJMFCO.GMALFEABLNG)
     pub GMALFEABLNG: ::std::vec::Vec<super::LGEFLGJIGIJ::LGEFLGJIGIJ>,
     // special fields
@@ -52,9 +52,9 @@ impl GMIMDEJMFCO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MGGBPKANFOA::MGGBPKANFOA>(
-            "CCOIOAHMPDN",
-            |m: &GMIMDEJMFCO| { &m.CCOIOAHMPDN },
-            |m: &mut GMIMDEJMFCO| { &mut m.CCOIOAHMPDN },
+            "global_blackboard",
+            |m: &GMIMDEJMFCO| { &m.global_blackboard },
+            |m: &mut GMIMDEJMFCO| { &mut m.global_blackboard },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GMALFEABLNG",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCOIOAHMPDN)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.global_blackboard)?;
                 },
-                26 => {
+                90 => {
                     self.GMALFEABLNG.push(is.read_message()?);
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.CCOIOAHMPDN.as_ref() {
+        if let Some(v) = self.global_blackboard.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CCOIOAHMPDN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.global_blackboard.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         for v in &self.GMALFEABLNG {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     }
 
     fn clear(&mut self) {
-        self.CCOIOAHMPDN.clear();
+        self.global_blackboard.clear();
         self.GMALFEABLNG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GMIMDEJMFCO {
         static instance: GMIMDEJMFCO = GMIMDEJMFCO {
-            CCOIOAHMPDN: ::protobuf::MessageField::none(),
+            global_blackboard: ::protobuf::MessageField::none(),
             GMALFEABLNG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GMIMDEJMFCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMIMDEJMFCO.proto\x1a\x11LGEFLGJIGIJ.proto\x1a\x11MGGBPKANFOA.prot\
-    o\"m\n\x0bGMIMDEJMFCO\x12.\n\x0bCCOIOAHMPDN\x18\x01\x20\x01(\x0b2\x0c.MG\
-    GBPKANFOAR\x0bCCOIOAHMPDN\x12.\n\x0bGMALFEABLNG\x18\x03\x20\x03(\x0b2\
-    \x0c.LGEFLGJIGIJR\x0bGMALFEABLNGb\x06proto3\
+    o\"x\n\x0bGMIMDEJMFCO\x129\n\x11global_blackboard\x18\x07\x20\x01(\x0b2\
+    \x0c.MGGBPKANFOAR\x10globalBlackboard\x12.\n\x0bGMALFEABLNG\x18\x0b\x20\
+    \x03(\x0b2\x0c.LGEFLGJIGIJR\x0bGMALFEABLNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

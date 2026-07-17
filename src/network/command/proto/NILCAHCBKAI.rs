@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NILCAHCBKAI {
     // message fields
-    // @@protoc_insertion_point(field:NILCAHCBKAI.PGHCLDFGPOA)
-    pub PGHCLDFGPOA: ::std::vec::Vec<super::IGGFCPNDMPN::IGGFCPNDMPN>,
-    // @@protoc_insertion_point(field:NILCAHCBKAI.APGBCDJHPGL)
-    pub APGBCDJHPGL: ::std::vec::Vec<super::EBNKDHCIJPH::EBNKDHCIJPH>,
     // @@protoc_insertion_point(field:NILCAHCBKAI.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:NILCAHCBKAI.PGHCLDFGPOA)
+    pub PGHCLDFGPOA: ::std::vec::Vec<super::IGGFCPNDMPN::IGGFCPNDMPN>,
     // @@protoc_insertion_point(field:NILCAHCBKAI.FOGCAJJOMMK)
     pub FOGCAJJOMMK: u32,
+    // @@protoc_insertion_point(field:NILCAHCBKAI.APGBCDJHPGL)
+    pub APGBCDJHPGL: ::std::vec::Vec<super::EBNKDHCIJPH::EBNKDHCIJPH>,
     // special fields
     // @@protoc_insertion_point(special_field:NILCAHCBKAI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl NILCAHCBKAI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PGHCLDFGPOA",
-            |m: &NILCAHCBKAI| { &m.PGHCLDFGPOA },
-            |m: &mut NILCAHCBKAI| { &mut m.PGHCLDFGPOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "APGBCDJHPGL",
-            |m: &NILCAHCBKAI| { &m.APGBCDJHPGL },
-            |m: &mut NILCAHCBKAI| { &mut m.APGBCDJHPGL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &NILCAHCBKAI| { &m.retcode },
             |m: &mut NILCAHCBKAI| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PGHCLDFGPOA",
+            |m: &NILCAHCBKAI| { &m.PGHCLDFGPOA },
+            |m: &mut NILCAHCBKAI| { &mut m.PGHCLDFGPOA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FOGCAJJOMMK",
             |m: &NILCAHCBKAI| { &m.FOGCAJJOMMK },
             |m: &mut NILCAHCBKAI| { &mut m.FOGCAJJOMMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "APGBCDJHPGL",
+            |m: &NILCAHCBKAI| { &m.APGBCDJHPGL },
+            |m: &mut NILCAHCBKAI| { &mut m.APGBCDJHPGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NILCAHCBKAI>(
             "NILCAHCBKAI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NILCAHCBKAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.PGHCLDFGPOA.push(is.read_message()?);
-                },
-                98 => {
-                    self.APGBCDJHPGL.push(is.read_message()?);
-                },
-                112 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                42 => {
+                    self.PGHCLDFGPOA.push(is.read_message()?);
+                },
+                48 => {
                     self.FOGCAJJOMMK = is.read_uint32()?;
+                },
+                114 => {
+                    self.APGBCDJHPGL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for NILCAHCBKAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         for value in &self.PGHCLDFGPOA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.FOGCAJJOMMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FOGCAJJOMMK);
+        }
         for value in &self.APGBCDJHPGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.FOGCAJJOMMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FOGCAJJOMMK);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PGHCLDFGPOA {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        for v in &self.APGBCDJHPGL {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
+        for v in &self.PGHCLDFGPOA {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         if self.FOGCAJJOMMK != 0 {
-            os.write_uint32(7, self.FOGCAJJOMMK)?;
+            os.write_uint32(6, self.FOGCAJJOMMK)?;
         }
+        for v in &self.APGBCDJHPGL {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for NILCAHCBKAI {
     }
 
     fn clear(&mut self) {
-        self.PGHCLDFGPOA.clear();
-        self.APGBCDJHPGL.clear();
         self.retcode = 0;
+        self.PGHCLDFGPOA.clear();
         self.FOGCAJJOMMK = 0;
+        self.APGBCDJHPGL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NILCAHCBKAI {
         static instance: NILCAHCBKAI = NILCAHCBKAI {
-            PGHCLDFGPOA: ::std::vec::Vec::new(),
-            APGBCDJHPGL: ::std::vec::Vec::new(),
             retcode: 0,
+            PGHCLDFGPOA: ::std::vec::Vec::new(),
             FOGCAJJOMMK: 0,
+            APGBCDJHPGL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for NILCAHCBKAI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NILCAHCBKAI.proto\x1a\x11EBNKDHCIJPH.proto\x1a\x11IGGFCPNDMPN.prot\
-    o\"\xa9\x01\n\x0bNILCAHCBKAI\x12.\n\x0bPGHCLDFGPOA\x18\x03\x20\x03(\x0b2\
-    \x0c.IGGFCPNDMPNR\x0bPGHCLDFGPOA\x12.\n\x0bAPGBCDJHPGL\x18\x0c\x20\x03(\
-    \x0b2\x0c.EBNKDHCIJPHR\x0bAPGBCDJHPGL\x12\x18\n\x07retcode\x18\x0e\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bFOGCAJJOMMK\x18\x07\x20\x01(\rR\x0bFOGC\
-    AJJOMMKb\x06proto3\
+    o\"\xa9\x01\n\x0bNILCAHCBKAI\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\
+    \x07retcode\x12.\n\x0bPGHCLDFGPOA\x18\x05\x20\x03(\x0b2\x0c.IGGFCPNDMPNR\
+    \x0bPGHCLDFGPOA\x12\x20\n\x0bFOGCAJJOMMK\x18\x06\x20\x01(\rR\x0bFOGCAJJO\
+    MMK\x12.\n\x0bAPGBCDJHPGL\x18\x0e\x20\x03(\x0b2\x0c.EBNKDHCIJPHR\x0bAPGB\
+    CDJHPGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

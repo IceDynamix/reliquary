@@ -30,12 +30,12 @@ pub struct NIHKHKONHPN {
     // message fields
     // @@protoc_insertion_point(field:NIHKHKONHPN.CPOHGLHEOLG)
     pub CPOHGLHEOLG: ::protobuf::MessageField<super::FHBDPOJEEMJ::FHBDPOJEEMJ>,
+    // @@protoc_insertion_point(field:NIHKHKONHPN.LGIPILAKIKB)
+    pub LGIPILAKIKB: u32,
     // @@protoc_insertion_point(field:NIHKHKONHPN.FNCIOCCACMD)
     pub FNCIOCCACMD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NIHKHKONHPN.LEOPMIGFDLK)
     pub LEOPMIGFDLK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:NIHKHKONHPN.LGIPILAKIKB)
-    pub LGIPILAKIKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NIHKHKONHPN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl NIHKHKONHPN {
             |m: &NIHKHKONHPN| { &m.CPOHGLHEOLG },
             |m: &mut NIHKHKONHPN| { &mut m.CPOHGLHEOLG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LGIPILAKIKB",
+            |m: &NIHKHKONHPN| { &m.LGIPILAKIKB },
+            |m: &mut NIHKHKONHPN| { &mut m.LGIPILAKIKB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FNCIOCCACMD",
             |m: &NIHKHKONHPN| { &m.FNCIOCCACMD },
@@ -69,11 +74,6 @@ impl NIHKHKONHPN {
             "LEOPMIGFDLK",
             |m: &NIHKHKONHPN| { &m.LEOPMIGFDLK },
             |m: &mut NIHKHKONHPN| { &mut m.LEOPMIGFDLK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGIPILAKIKB",
-            |m: &NIHKHKONHPN| { &m.LGIPILAKIKB },
-            |m: &mut NIHKHKONHPN| { &mut m.LGIPILAKIKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIHKHKONHPN>(
             "NIHKHKONHPN",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for NIHKHKONHPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPOHGLHEOLG)?;
                 },
-                26 => {
+                88 => {
+                    self.LGIPILAKIKB = is.read_uint32()?;
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.FNCIOCCACMD)?;
                 },
-                24 => {
+                104 => {
                     self.FNCIOCCACMD.push(is.read_uint32()?);
                 },
-                82 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.LEOPMIGFDLK)?;
                 },
-                80 => {
+                120 => {
                     self.LEOPMIGFDLK.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.LGIPILAKIKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,11 +127,11 @@ impl ::protobuf::Message for NIHKHKONHPN {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.FNCIOCCACMD);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LEOPMIGFDLK);
         if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LGIPILAKIKB);
+            my_size += ::protobuf::rt::uint32_size(11, self.LGIPILAKIKB);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.FNCIOCCACMD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.LEOPMIGFDLK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -139,13 +139,13 @@ impl ::protobuf::Message for NIHKHKONHPN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CPOHGLHEOLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        os.write_repeated_packed_uint32(3, &self.FNCIOCCACMD)?;
-        os.write_repeated_packed_uint32(10, &self.LEOPMIGFDLK)?;
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(13, self.LGIPILAKIKB)?;
+            os.write_uint32(11, self.LGIPILAKIKB)?;
         }
+        os.write_repeated_packed_uint32(13, &self.FNCIOCCACMD)?;
+        os.write_repeated_packed_uint32(15, &self.LEOPMIGFDLK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,18 +164,18 @@ impl ::protobuf::Message for NIHKHKONHPN {
 
     fn clear(&mut self) {
         self.CPOHGLHEOLG.clear();
+        self.LGIPILAKIKB = 0;
         self.FNCIOCCACMD.clear();
         self.LEOPMIGFDLK.clear();
-        self.LGIPILAKIKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NIHKHKONHPN {
         static instance: NIHKHKONHPN = NIHKHKONHPN {
             CPOHGLHEOLG: ::protobuf::MessageField::none(),
+            LGIPILAKIKB: 0,
             FNCIOCCACMD: ::std::vec::Vec::new(),
             LEOPMIGFDLK: ::std::vec::Vec::new(),
-            LGIPILAKIKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for NIHKHKONHPN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NIHKHKONHPN.proto\x1a\x11FHBDPOJEEMJ.proto\"\xa3\x01\n\x0bNIHKHKON\
-    HPN\x12.\n\x0bCPOHGLHEOLG\x18\x0b\x20\x01(\x0b2\x0c.FHBDPOJEEMJR\x0bCPOH\
-    GLHEOLG\x12\x20\n\x0bFNCIOCCACMD\x18\x03\x20\x03(\rR\x0bFNCIOCCACMD\x12\
-    \x20\n\x0bLEOPMIGFDLK\x18\n\x20\x03(\rR\x0bLEOPMIGFDLK\x12\x20\n\x0bLGIP\
-    ILAKIKB\x18\r\x20\x01(\rR\x0bLGIPILAKIKBb\x06proto3\
+    HPN\x12.\n\x0bCPOHGLHEOLG\x18\n\x20\x01(\x0b2\x0c.FHBDPOJEEMJR\x0bCPOHGL\
+    HEOLG\x12\x20\n\x0bLGIPILAKIKB\x18\x0b\x20\x01(\rR\x0bLGIPILAKIKB\x12\
+    \x20\n\x0bFNCIOCCACMD\x18\r\x20\x03(\rR\x0bFNCIOCCACMD\x12\x20\n\x0bLEOP\
+    MIGFDLK\x18\x0f\x20\x03(\rR\x0bLEOPMIGFDLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

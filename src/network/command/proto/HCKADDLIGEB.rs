@@ -30,8 +30,8 @@ pub struct HCKADDLIGEB {
     // message fields
     // @@protoc_insertion_point(field:HCKADDLIGEB.stop_desc)
     pub stop_desc: ::std::string::String,
-    // @@protoc_insertion_point(field:HCKADDLIGEB.unk1)
-    pub unk1: u32,
+    // @@protoc_insertion_point(field:HCKADDLIGEB.HAAFJLKHCKF)
+    pub HAAFJLKHCKF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HCKADDLIGEB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl HCKADDLIGEB {
             |m: &mut HCKADDLIGEB| { &mut m.stop_desc },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk1",
-            |m: &HCKADDLIGEB| { &m.unk1 },
-            |m: &mut HCKADDLIGEB| { &mut m.unk1 },
+            "HAAFJLKHCKF",
+            |m: &HCKADDLIGEB| { &m.HAAFJLKHCKF },
+            |m: &mut HCKADDLIGEB| { &mut m.HAAFJLKHCKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HCKADDLIGEB>(
             "HCKADDLIGEB",
@@ -83,7 +83,7 @@ impl ::protobuf::Message for HCKADDLIGEB {
                     self.stop_desc = is.read_string()?;
                 },
                 16 => {
-                    self.unk1 = is.read_uint32()?;
+                    self.HAAFJLKHCKF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for HCKADDLIGEB {
         if !self.stop_desc.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.stop_desc);
         }
-        if self.unk1 != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unk1);
+        if self.HAAFJLKHCKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HAAFJLKHCKF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for HCKADDLIGEB {
         if !self.stop_desc.is_empty() {
             os.write_string(1, &self.stop_desc)?;
         }
-        if self.unk1 != 0 {
-            os.write_uint32(2, self.unk1)?;
+        if self.HAAFJLKHCKF != 0 {
+            os.write_uint32(2, self.HAAFJLKHCKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for HCKADDLIGEB {
 
     fn clear(&mut self) {
         self.stop_desc.clear();
-        self.unk1 = 0;
+        self.HAAFJLKHCKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HCKADDLIGEB {
         static instance: HCKADDLIGEB = HCKADDLIGEB {
             stop_desc: ::std::string::String::new(),
-            unk1: 0,
+            HAAFJLKHCKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for HCKADDLIGEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HCKADDLIGEB.proto\">\n\x0bHCKADDLIGEB\x12\x1b\n\tstop_desc\x18\x01\
-    \x20\x01(\tR\x08stopDesc\x12\x12\n\x04unk1\x18\x02\x20\x01(\rR\x04unk1b\
-    \x06proto3\
+    \n\x11HCKADDLIGEB.proto\"L\n\x0bHCKADDLIGEB\x12\x1b\n\tstop_desc\x18\x01\
+    \x20\x01(\tR\x08stopDesc\x12\x20\n\x0bHAAFJLKHCKF\x18\x02\x20\x01(\rR\
+    \x0bHAAFJLKHCKFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

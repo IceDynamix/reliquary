@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:GroupSnapshot.active_submission_list)
-    pub active_submission_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GroupSnapshot.active_mcv_key_list)
-    pub active_mcv_key_list: ::std::vec::Vec<super::ActiveMCVKeySnapshot::ActiveMCVKeySnapshot>,
-    // @@protoc_insertion_point(field:GroupSnapshot.property_map)
-    pub property_map: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:GroupSnapshot.entity_list)
-    pub entity_list: ::std::vec::Vec<super::EntitySnapshot::EntitySnapshot>,
     // @@protoc_insertion_point(field:GroupSnapshot.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:GroupSnapshot.group_state)
     pub group_state: u32,
+    // @@protoc_insertion_point(field:GroupSnapshot.entity_list)
+    pub entity_list: ::std::vec::Vec<super::EntitySnapshot::EntitySnapshot>,
+    // @@protoc_insertion_point(field:GroupSnapshot.property_map)
+    pub property_map: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:GroupSnapshot.active_submission_list)
+    pub active_submission_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GroupSnapshot.active_mcv_key_list)
+    pub active_mcv_key_list: ::std::vec::Vec<super::ActiveMCVKeySnapshot::ActiveMCVKeySnapshot>,
     // special fields
     // @@protoc_insertion_point(special_field:GroupSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,26 +59,6 @@ impl GroupSnapshot {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "active_submission_list",
-            |m: &GroupSnapshot| { &m.active_submission_list },
-            |m: &mut GroupSnapshot| { &mut m.active_submission_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "active_mcv_key_list",
-            |m: &GroupSnapshot| { &m.active_mcv_key_list },
-            |m: &mut GroupSnapshot| { &mut m.active_mcv_key_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "property_map",
-            |m: &GroupSnapshot| { &m.property_map },
-            |m: &mut GroupSnapshot| { &mut m.property_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "entity_list",
-            |m: &GroupSnapshot| { &m.entity_list },
-            |m: &mut GroupSnapshot| { &mut m.entity_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &GroupSnapshot| { &m.group_id },
@@ -88,6 +68,26 @@ impl GroupSnapshot {
             "group_state",
             |m: &GroupSnapshot| { &m.group_state },
             |m: &mut GroupSnapshot| { &mut m.group_state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "entity_list",
+            |m: &GroupSnapshot| { &m.entity_list },
+            |m: &mut GroupSnapshot| { &mut m.entity_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "property_map",
+            |m: &GroupSnapshot| { &m.property_map },
+            |m: &mut GroupSnapshot| { &mut m.property_map },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "active_submission_list",
+            |m: &GroupSnapshot| { &m.active_submission_list },
+            |m: &mut GroupSnapshot| { &mut m.active_submission_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "active_mcv_key_list",
+            |m: &GroupSnapshot| { &m.active_mcv_key_list },
+            |m: &mut GroupSnapshot| { &mut m.active_mcv_key_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupSnapshot>(
             "GroupSnapshot",
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GroupSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.active_submission_list)?;
+                8 => {
+                    self.group_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.active_submission_list.push(is.read_uint32()?);
+                16 => {
+                    self.group_state = is.read_uint32()?;
                 },
-                50 => {
-                    self.active_mcv_key_list.push(is.read_message()?);
+                26 => {
+                    self.entity_list.push(is.read_message()?);
                 },
                 34 => {
                     let len = is.read_raw_varint32()?;
@@ -131,14 +131,14 @@ impl ::protobuf::Message for GroupSnapshot {
                     is.pop_limit(old_limit);
                     self.property_map.insert(key, value);
                 },
-                26 => {
-                    self.entity_list.push(is.read_message()?);
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.active_submission_list)?;
                 },
-                8 => {
-                    self.group_id = is.read_uint32()?;
+                40 => {
+                    self.active_submission_list.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.group_state = is.read_uint32()?;
+                50 => {
+                    self.active_mcv_key_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -152,8 +152,13 @@ impl ::protobuf::Message for GroupSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.active_submission_list);
-        for value in &self.active_mcv_key_list {
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+        }
+        if self.group_state != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.group_state);
+        }
+        for value in &self.entity_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -163,25 +168,25 @@ impl ::protobuf::Message for GroupSnapshot {
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        for value in &self.entity_list {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.active_submission_list);
+        for value in &self.active_mcv_key_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
-        }
-        if self.group_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.group_state);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.active_submission_list)?;
-        for v in &self.active_mcv_key_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.group_id != 0 {
+            os.write_uint32(1, self.group_id)?;
+        }
+        if self.group_state != 0 {
+            os.write_uint32(2, self.group_state)?;
+        }
+        for v in &self.entity_list {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for (k, v) in &self.property_map {
             let mut entry_size = 0;
@@ -192,15 +197,10 @@ impl ::protobuf::Message for GroupSnapshot {
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        for v in &self.entity_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        os.write_repeated_packed_uint32(5, &self.active_submission_list)?;
+        for v in &self.active_mcv_key_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
-        }
-        if self.group_state != 0 {
-            os.write_uint32(2, self.group_state)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -218,12 +218,12 @@ impl ::protobuf::Message for GroupSnapshot {
     }
 
     fn clear(&mut self) {
-        self.active_submission_list.clear();
-        self.active_mcv_key_list.clear();
-        self.property_map.clear();
-        self.entity_list.clear();
         self.group_id = 0;
         self.group_state = 0;
+        self.entity_list.clear();
+        self.property_map.clear();
+        self.active_submission_list.clear();
+        self.active_mcv_key_list.clear();
         self.special_fields.clear();
     }
 
@@ -252,13 +252,13 @@ impl ::protobuf::reflect::ProtobufValue for GroupSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13GroupSnapshot.proto\x1a\x1aActiveMCVKeySnapshot.proto\x1a\x14Entit\
-    ySnapshot.proto\"\xfd\x02\n\rGroupSnapshot\x124\n\x16active_submission_l\
-    ist\x18\x05\x20\x03(\rR\x14activeSubmissionList\x12D\n\x13active_mcv_key\
-    _list\x18\x06\x20\x03(\x0b2\x15.ActiveMCVKeySnapshotR\x10activeMcvKeyLis\
-    t\x12B\n\x0cproperty_map\x18\x04\x20\x03(\x0b2\x1f.GroupSnapshot.Propert\
-    yMapEntryR\x0bpropertyMap\x120\n\x0bentity_list\x18\x03\x20\x03(\x0b2\
-    \x0f.EntitySnapshotR\nentityList\x12\x19\n\x08group_id\x18\x01\x20\x01(\
-    \rR\x07groupId\x12\x1f\n\x0bgroup_state\x18\x02\x20\x01(\rR\ngroupState\
+    ySnapshot.proto\"\xfd\x02\n\rGroupSnapshot\x12\x19\n\x08group_id\x18\x01\
+    \x20\x01(\rR\x07groupId\x12\x1f\n\x0bgroup_state\x18\x02\x20\x01(\rR\ngr\
+    oupState\x120\n\x0bentity_list\x18\x03\x20\x03(\x0b2\x0f.EntitySnapshotR\
+    \nentityList\x12B\n\x0cproperty_map\x18\x04\x20\x03(\x0b2\x1f.GroupSnaps\
+    hot.PropertyMapEntryR\x0bpropertyMap\x124\n\x16active_submission_list\
+    \x18\x05\x20\x03(\rR\x14activeSubmissionList\x12D\n\x13active_mcv_key_li\
+    st\x18\x06\x20\x03(\x0b2\x15.ActiveMCVKeySnapshotR\x10activeMcvKeyList\
     \x1a>\n\x10PropertyMapEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\
     \x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
 ";

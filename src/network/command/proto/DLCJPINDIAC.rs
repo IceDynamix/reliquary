@@ -50,7 +50,7 @@ impl DLCJPINDIAC {
         ::std::default::Default::default()
     }
 
-    // .DGLBOFKGGLL BJKBADEMEOE = 10;
+    // .DGLBOFKGGLL BJKBADEMEOE = 15;
 
     pub fn BJKBADEMEOE(&self) -> &super::DGLBOFKGGLL::DGLBOFKGGLL {
         match self.KKNBOACNCON {
@@ -99,7 +99,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .PLICOOFLBIB KCICNNFJEAC = 5;
+    // .PLICOOFLBIB KCICNNFJEAC = 1;
 
     pub fn KCICNNFJEAC(&self) -> &super::PLICOOFLBIB::PLICOOFLBIB {
         match self.KKNBOACNCON {
@@ -148,7 +148,7 @@ impl DLCJPINDIAC {
         }
     }
 
-    // .BCKBEMGGGIF LENBIENEFIB = 7;
+    // .BCKBEMGGGIF LENBIENEFIB = 11;
 
     pub fn LENBIENEFIB(&self) -> &super::BCKBEMGGGIF::BCKBEMGGGIF {
         match self.KKNBOACNCON {
@@ -197,8 +197,57 @@ impl DLCJPINDIAC {
         }
     }
 
+    // .GKJHNGLHOBA ONNAKPKDLHO = 3;
+
+    pub fn ONNAKPKDLHO(&self) -> &super::GKJHNGLHOBA::GKJHNGLHOBA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v)) => v,
+            _ => <super::GKJHNGLHOBA::GKJHNGLHOBA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ONNAKPKDLHO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_ONNAKPKDLHO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ONNAKPKDLHO(&mut self, v: super::GKJHNGLHOBA::GKJHNGLHOBA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ONNAKPKDLHO(&mut self) -> &mut super::GKJHNGLHOBA::GKJHNGLHOBA {
+        if let ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(super::GKJHNGLHOBA::GKJHNGLHOBA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ONNAKPKDLHO(&mut self) -> super::GKJHNGLHOBA::GKJHNGLHOBA {
+        if self.has_ONNAKPKDLHO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GKJHNGLHOBA::GKJHNGLHOBA::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PPOAGPGEAFH",
@@ -231,6 +280,13 @@ impl DLCJPINDIAC {
             DLCJPINDIAC::mut_LENBIENEFIB,
             DLCJPINDIAC::set_LENBIENEFIB,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKJHNGLHOBA::GKJHNGLHOBA>(
+            "ONNAKPKDLHO",
+            DLCJPINDIAC::has_ONNAKPKDLHO,
+            DLCJPINDIAC::ONNAKPKDLHO,
+            DLCJPINDIAC::mut_ONNAKPKDLHO,
+            DLCJPINDIAC::set_ONNAKPKDLHO,
+        ));
         oneofs.push(dlcjpindiac::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DLCJPINDIAC>(
             "DLCJPINDIAC",
@@ -250,20 +306,23 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                56 => {
                     self.PPOAGPGEAFH = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.uid = is.read_uint32()?;
                 },
-                82 => {
+                122 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::BJKBADEMEOE(is.read_message()?));
                 },
-                42 => {
+                10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(is.read_message()?));
                 },
-                58 => {
+                90 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::LENBIENEFIB(is.read_message()?));
+                },
+                26 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -278,10 +337,10 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PPOAGPGEAFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PPOAGPGEAFH);
+            my_size += ::protobuf::rt::uint32_size(7, self.PPOAGPGEAFH);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
+            my_size += ::protobuf::rt::uint32_size(10, self.uid);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
@@ -294,6 +353,10 @@ impl ::protobuf::Message for DLCJPINDIAC {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &dlcjpindiac::KKNBOACNCON::LENBIENEFIB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -306,21 +369,24 @@ impl ::protobuf::Message for DLCJPINDIAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PPOAGPGEAFH != 0 {
-            os.write_uint32(9, self.PPOAGPGEAFH)?;
+            os.write_uint32(7, self.PPOAGPGEAFH)?;
         }
         if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
+            os.write_uint32(10, self.uid)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &dlcjpindiac::KKNBOACNCON::BJKBADEMEOE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::KCICNNFJEAC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
                 &dlcjpindiac::KKNBOACNCON::LENBIENEFIB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &dlcjpindiac::KKNBOACNCON::ONNAKPKDLHO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
             };
         }
@@ -343,6 +409,7 @@ impl ::protobuf::Message for DLCJPINDIAC {
     fn clear(&mut self) {
         self.PPOAGPGEAFH = 0;
         self.uid = 0;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -390,6 +457,8 @@ pub mod dlcjpindiac {
         KCICNNFJEAC(super::super::PLICOOFLBIB::PLICOOFLBIB),
         // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.LENBIENEFIB)
         LENBIENEFIB(super::super::BCKBEMGGGIF::BCKBEMGGGIF),
+        // @@protoc_insertion_point(oneof_field:DLCJPINDIAC.ONNAKPKDLHO)
+        ONNAKPKDLHO(super::super::GKJHNGLHOBA::GKJHNGLHOBA),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -411,12 +480,14 @@ pub mod dlcjpindiac {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DLCJPINDIAC.proto\x1a\x11BCKBEMGGGIF.proto\x1a\x11DGLBOFKGGLL.prot\
-    o\x1a\x11PLICOOFLBIB.proto\"\xe6\x01\n\x0bDLCJPINDIAC\x12\x20\n\x0bPPOAG\
-    PGEAFH\x18\t\x20\x01(\rR\x0bPPOAGPGEAFH\x12\x10\n\x03uid\x18\x08\x20\x01\
-    (\rR\x03uid\x120\n\x0bBJKBADEMEOE\x18\n\x20\x01(\x0b2\x0c.DGLBOFKGGLLH\0\
-    R\x0bBJKBADEMEOE\x120\n\x0bKCICNNFJEAC\x18\x05\x20\x01(\x0b2\x0c.PLICOOF\
-    LBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bLENBIENEFIB\x18\x07\x20\x01(\x0b2\x0c.\
-    BCKBEMGGGIFH\0R\x0bLENBIENEFIBB\r\n\x0bKKNBOACNCONb\x06proto3\
+    o\x1a\x11GKJHNGLHOBA.proto\x1a\x11PLICOOFLBIB.proto\"\x98\x02\n\x0bDLCJP\
+    INDIAC\x12\x20\n\x0bPPOAGPGEAFH\x18\x07\x20\x01(\rR\x0bPPOAGPGEAFH\x12\
+    \x10\n\x03uid\x18\n\x20\x01(\rR\x03uid\x120\n\x0bBJKBADEMEOE\x18\x0f\x20\
+    \x01(\x0b2\x0c.DGLBOFKGGLLH\0R\x0bBJKBADEMEOE\x120\n\x0bKCICNNFJEAC\x18\
+    \x01\x20\x01(\x0b2\x0c.PLICOOFLBIBH\0R\x0bKCICNNFJEAC\x120\n\x0bLENBIENE\
+    FIB\x18\x0b\x20\x01(\x0b2\x0c.BCKBEMGGGIFH\0R\x0bLENBIENEFIB\x120\n\x0bO\
+    NNAKPKDLHO\x18\x03\x20\x01(\x0b2\x0c.GKJHNGLHOBAH\0R\x0bONNAKPKDLHOB\r\n\
+    \x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -433,9 +504,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::BCKBEMGGGIF::file_descriptor().clone());
             deps.push(super::DGLBOFKGGLL::file_descriptor().clone());
+            deps.push(super::GKJHNGLHOBA::file_descriptor().clone());
             deps.push(super::PLICOOFLBIB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DLCJPINDIAC::generated_message_descriptor_data());

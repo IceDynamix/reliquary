@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HIDPFIAALLB {
     // message fields
-    // @@protoc_insertion_point(field:HIDPFIAALLB.ODCOPMFBHNK)
-    pub ODCOPMFBHNK: ::std::vec::Vec<super::LNDNIBFBGAC::LNDNIBFBGAC>,
-    // @@protoc_insertion_point(field:HIDPFIAALLB.JJMAINNIJKO)
-    pub JJMAINNIJKO: bool,
     // @@protoc_insertion_point(field:HIDPFIAALLB.is_win)
     pub is_win: bool,
-    // @@protoc_insertion_point(field:HIDPFIAALLB.FDKPCNBCGEG)
-    pub FDKPCNBCGEG: u32,
+    // @@protoc_insertion_point(field:HIDPFIAALLB.is_friend)
+    pub is_friend: bool,
     // @@protoc_insertion_point(field:HIDPFIAALLB.LHNIIOHNIFL)
     pub LHNIIOHNIFL: ::protobuf::EnumOrUnknown<super::HEJPHKGCNBA::HEJPHKGCNBA>,
-    // @@protoc_insertion_point(field:HIDPFIAALLB.ILKMDMAHPIL)
-    pub ILKMDMAHPIL: i32,
+    // @@protoc_insertion_point(field:HIDPFIAALLB.add_score)
+    pub add_score: i32,
     // @@protoc_insertion_point(field:HIDPFIAALLB.BIEPFFBBJHG)
     pub BIEPFFBBJHG: u32,
+    // @@protoc_insertion_point(field:HIDPFIAALLB.ODCOPMFBHNK)
+    pub ODCOPMFBHNK: ::std::vec::Vec<super::LNDNIBFBGAC::LNDNIBFBGAC>,
+    // @@protoc_insertion_point(field:HIDPFIAALLB.FDKPCNBCGEG)
+    pub FDKPCNBCGEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HIDPFIAALLB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,15 @@ impl HIDPFIAALLB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ODCOPMFBHNK",
-            |m: &HIDPFIAALLB| { &m.ODCOPMFBHNK },
-            |m: &mut HIDPFIAALLB| { &mut m.ODCOPMFBHNK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJMAINNIJKO",
-            |m: &HIDPFIAALLB| { &m.JJMAINNIJKO },
-            |m: &mut HIDPFIAALLB| { &mut m.JJMAINNIJKO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &HIDPFIAALLB| { &m.is_win },
             |m: &mut HIDPFIAALLB| { &mut m.is_win },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDKPCNBCGEG",
-            |m: &HIDPFIAALLB| { &m.FDKPCNBCGEG },
-            |m: &mut HIDPFIAALLB| { &mut m.FDKPCNBCGEG },
+            "is_friend",
+            |m: &HIDPFIAALLB| { &m.is_friend },
+            |m: &mut HIDPFIAALLB| { &mut m.is_friend },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHNIIOHNIFL",
@@ -87,14 +77,24 @@ impl HIDPFIAALLB {
             |m: &mut HIDPFIAALLB| { &mut m.LHNIIOHNIFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILKMDMAHPIL",
-            |m: &HIDPFIAALLB| { &m.ILKMDMAHPIL },
-            |m: &mut HIDPFIAALLB| { &mut m.ILKMDMAHPIL },
+            "add_score",
+            |m: &HIDPFIAALLB| { &m.add_score },
+            |m: &mut HIDPFIAALLB| { &mut m.add_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIEPFFBBJHG",
             |m: &HIDPFIAALLB| { &m.BIEPFFBBJHG },
             |m: &mut HIDPFIAALLB| { &mut m.BIEPFFBBJHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ODCOPMFBHNK",
+            |m: &HIDPFIAALLB| { &m.ODCOPMFBHNK },
+            |m: &mut HIDPFIAALLB| { &mut m.ODCOPMFBHNK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDKPCNBCGEG",
+            |m: &HIDPFIAALLB| { &m.FDKPCNBCGEG },
+            |m: &mut HIDPFIAALLB| { &mut m.FDKPCNBCGEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HIDPFIAALLB>(
             "HIDPFIAALLB",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for HIDPFIAALLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.is_win = is.read_bool()?;
+                },
+                16 => {
+                    self.is_friend = is.read_bool()?;
+                },
+                64 => {
+                    self.LHNIIOHNIFL = is.read_enum_or_unknown()?;
+                },
+                72 => {
+                    self.add_score = is.read_int32()?;
+                },
+                96 => {
+                    self.BIEPFFBBJHG = is.read_uint32()?;
+                },
                 114 => {
                     self.ODCOPMFBHNK.push(is.read_message()?);
                 },
-                32 => {
-                    self.JJMAINNIJKO = is.read_bool()?;
-                },
-                80 => {
-                    self.is_win = is.read_bool()?;
-                },
-                56 => {
+                120 => {
                     self.FDKPCNBCGEG = is.read_uint32()?;
-                },
-                72 => {
-                    self.LHNIIOHNIFL = is.read_enum_or_unknown()?;
-                },
-                104 => {
-                    self.ILKMDMAHPIL = is.read_int32()?;
-                },
-                88 => {
-                    self.BIEPFFBBJHG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for HIDPFIAALLB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        if self.is_friend != false {
+            my_size += 1 + 1;
+        }
+        if self.LHNIIOHNIFL != ::protobuf::EnumOrUnknown::new(super::HEJPHKGCNBA::HEJPHKGCNBA::HEJPHKGCNBA_MHFPHNMDBPD) {
+            my_size += ::protobuf::rt::int32_size(8, self.LHNIIOHNIFL.value());
+        }
+        if self.add_score != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.add_score);
+        }
+        if self.BIEPFFBBJHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BIEPFFBBJHG);
+        }
         for value in &self.ODCOPMFBHNK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JJMAINNIJKO != false {
-            my_size += 1 + 1;
-        }
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
         if self.FDKPCNBCGEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FDKPCNBCGEG);
-        }
-        if self.LHNIIOHNIFL != ::protobuf::EnumOrUnknown::new(super::HEJPHKGCNBA::HEJPHKGCNBA::HEJPHKGCNBA_MHFPHNMDBPD) {
-            my_size += ::protobuf::rt::int32_size(9, self.LHNIIOHNIFL.value());
-        }
-        if self.ILKMDMAHPIL != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.ILKMDMAHPIL);
-        }
-        if self.BIEPFFBBJHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BIEPFFBBJHG);
+            my_size += ::protobuf::rt::uint32_size(15, self.FDKPCNBCGEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for HIDPFIAALLB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_win != false {
+            os.write_bool(1, self.is_win)?;
+        }
+        if self.is_friend != false {
+            os.write_bool(2, self.is_friend)?;
+        }
+        if self.LHNIIOHNIFL != ::protobuf::EnumOrUnknown::new(super::HEJPHKGCNBA::HEJPHKGCNBA::HEJPHKGCNBA_MHFPHNMDBPD) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.LHNIIOHNIFL))?;
+        }
+        if self.add_score != 0 {
+            os.write_int32(9, self.add_score)?;
+        }
+        if self.BIEPFFBBJHG != 0 {
+            os.write_uint32(12, self.BIEPFFBBJHG)?;
+        }
         for v in &self.ODCOPMFBHNK {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        if self.JJMAINNIJKO != false {
-            os.write_bool(4, self.JJMAINNIJKO)?;
-        }
-        if self.is_win != false {
-            os.write_bool(10, self.is_win)?;
-        }
         if self.FDKPCNBCGEG != 0 {
-            os.write_uint32(7, self.FDKPCNBCGEG)?;
-        }
-        if self.LHNIIOHNIFL != ::protobuf::EnumOrUnknown::new(super::HEJPHKGCNBA::HEJPHKGCNBA::HEJPHKGCNBA_MHFPHNMDBPD) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.LHNIIOHNIFL))?;
-        }
-        if self.ILKMDMAHPIL != 0 {
-            os.write_int32(13, self.ILKMDMAHPIL)?;
-        }
-        if self.BIEPFFBBJHG != 0 {
-            os.write_uint32(11, self.BIEPFFBBJHG)?;
+            os.write_uint32(15, self.FDKPCNBCGEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for HIDPFIAALLB {
     }
 
     fn clear(&mut self) {
-        self.ODCOPMFBHNK.clear();
-        self.JJMAINNIJKO = false;
         self.is_win = false;
-        self.FDKPCNBCGEG = 0;
+        self.is_friend = false;
         self.LHNIIOHNIFL = ::protobuf::EnumOrUnknown::new(super::HEJPHKGCNBA::HEJPHKGCNBA::HEJPHKGCNBA_MHFPHNMDBPD);
-        self.ILKMDMAHPIL = 0;
+        self.add_score = 0;
         self.BIEPFFBBJHG = 0;
+        self.ODCOPMFBHNK.clear();
+        self.FDKPCNBCGEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HIDPFIAALLB {
         static instance: HIDPFIAALLB = HIDPFIAALLB {
-            ODCOPMFBHNK: ::std::vec::Vec::new(),
-            JJMAINNIJKO: false,
             is_win: false,
-            FDKPCNBCGEG: 0,
+            is_friend: false,
             LHNIIOHNIFL: ::protobuf::EnumOrUnknown::from_i32(0),
-            ILKMDMAHPIL: 0,
+            add_score: 0,
             BIEPFFBBJHG: 0,
+            ODCOPMFBHNK: ::std::vec::Vec::new(),
+            FDKPCNBCGEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,13 @@ impl ::protobuf::reflect::ProtobufValue for HIDPFIAALLB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HIDPFIAALLB.proto\x1a\x11HEJPHKGCNBA.proto\x1a\x11LNDNIBFBGAC.prot\
-    o\"\x8c\x02\n\x0bHIDPFIAALLB\x12.\n\x0bODCOPMFBHNK\x18\x0e\x20\x03(\x0b2\
-    \x0c.LNDNIBFBGACR\x0bODCOPMFBHNK\x12\x20\n\x0bJJMAINNIJKO\x18\x04\x20\
-    \x01(\x08R\x0bJJMAINNIJKO\x12\x15\n\x06is_win\x18\n\x20\x01(\x08R\x05isW\
-    in\x12\x20\n\x0bFDKPCNBCGEG\x18\x07\x20\x01(\rR\x0bFDKPCNBCGEG\x12.\n\
-    \x0bLHNIIOHNIFL\x18\t\x20\x01(\x0e2\x0c.HEJPHKGCNBAR\x0bLHNIIOHNIFL\x12\
-    \x20\n\x0bILKMDMAHPIL\x18\r\x20\x01(\x05R\x0bILKMDMAHPIL\x12\x20\n\x0bBI\
-    EPFFBBJHG\x18\x0b\x20\x01(\rR\x0bBIEPFFBBJHGb\x06proto3\
+    o\"\x82\x02\n\x0bHIDPFIAALLB\x12\x15\n\x06is_win\x18\x01\x20\x01(\x08R\
+    \x05isWin\x12\x1b\n\tis_friend\x18\x02\x20\x01(\x08R\x08isFriend\x12.\n\
+    \x0bLHNIIOHNIFL\x18\x08\x20\x01(\x0e2\x0c.HEJPHKGCNBAR\x0bLHNIIOHNIFL\
+    \x12\x1b\n\tadd_score\x18\t\x20\x01(\x05R\x08addScore\x12\x20\n\x0bBIEPF\
+    FBBJHG\x18\x0c\x20\x01(\rR\x0bBIEPFFBBJHG\x12.\n\x0bODCOPMFBHNK\x18\x0e\
+    \x20\x03(\x0b2\x0c.LNDNIBFBGACR\x0bODCOPMFBHNK\x12\x20\n\x0bFDKPCNBCGEG\
+    \x18\x0f\x20\x01(\rR\x0bFDKPCNBCGEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

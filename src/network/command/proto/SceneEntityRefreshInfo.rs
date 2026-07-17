@@ -45,7 +45,7 @@ impl SceneEntityRefreshInfo {
         ::std::default::Default::default()
     }
 
-    // .SceneEntityInfo add_entity = 13;
+    // .SceneEntityInfo add_entity = 6;
 
     pub fn add_entity(&self) -> &super::SceneEntityInfo::SceneEntityInfo {
         match self.refresh_type {
@@ -94,7 +94,7 @@ impl SceneEntityRefreshInfo {
         }
     }
 
-    // uint32 delete_entity = 11;
+    // uint32 delete_entity = 5;
 
     pub fn delete_entity(&self) -> u32 {
         match self.refresh_type {
@@ -185,10 +185,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::AddEntity(is.read_message()?));
                 },
-                88 => {
+                40 => {
                     self.refresh_type = ::std::option::Option::Some(scene_entity_refresh_info::Refresh_type::DeleteEntity(is.read_uint32()?));
                 },
                 112 => {
@@ -213,7 +213,7 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(5, v);
                 },
                 &scene_entity_refresh_info::Refresh_type::BEEANADAHPL(v) => {
                     my_size += ::protobuf::rt::uint32_size(14, v);
@@ -229,10 +229,10 @@ impl ::protobuf::Message for SceneEntityRefreshInfo {
         if let ::std::option::Option::Some(ref v) = self.refresh_type {
             match v {
                 &scene_entity_refresh_info::Refresh_type::AddEntity(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &scene_entity_refresh_info::Refresh_type::DeleteEntity(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(5, v)?;
                 },
                 &scene_entity_refresh_info::Refresh_type::BEEANADAHPL(v) => {
                     os.write_uint32(14, v)?;
@@ -322,8 +322,8 @@ pub mod scene_entity_refresh_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSceneEntityRefreshInfo.proto\x1a\x15SceneEntityInfo.proto\"\xa6\
-    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\r\x20\x01(\x0b2\
-    \x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x0b\x20\
+    \x01\n\x16SceneEntityRefreshInfo\x121\n\nadd_entity\x18\x06\x20\x01(\x0b\
+    2\x10.SceneEntityInfoH\0R\taddEntity\x12%\n\rdelete_entity\x18\x05\x20\
     \x01(\rH\0R\x0cdeleteEntity\x12\"\n\x0bBEEANADAHPL\x18\x0e\x20\x01(\rH\0\
     R\x0bBEEANADAHPLB\x0e\n\x0crefresh_typeb\x06proto3\
 ";

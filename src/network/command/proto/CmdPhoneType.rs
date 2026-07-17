@@ -29,28 +29,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPhoneType {
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_NLCDGIPGFDJ)
     JADIINBLALB_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_IMJKPOEDFDH)
-    JADIINBLALB_IMJKPOEDFDH = 5103,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_LBBFEOIBHGK)
-    JADIINBLALB_LBBFEOIBHGK = 5113,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_FMGAHJHKACP)
-    JADIINBLALB_FMGAHJHKACP = 5127,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_HFCGJMALAFG)
-    JADIINBLALB_HFCGJMALAFG = 5180,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_HAGCKNHKEOG)
-    JADIINBLALB_HAGCKNHKEOG = 5110,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_LEFONMLBIGB)
-    JADIINBLALB_LEFONMLBIGB = 5187,
+    JADIINBLALB_LBBFEOIBHGK = 5181,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_IMJKPOEDFDH)
+    JADIINBLALB_IMJKPOEDFDH = 5178,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_INBLCJJGMKJ)
-    JADIINBLALB_INBLCJJGMKJ = 5173,
-    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_INODKICNKCI)
-    JADIINBLALB_INODKICNKCI = 5129,
+    JADIINBLALB_INBLCJJGMKJ = 5125,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_LEFONMLBIGB)
+    JADIINBLALB_LEFONMLBIGB = 5113,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_EHJLKMMHGFM)
-    JADIINBLALB_EHJLKMMHGFM = 5115,
+    JADIINBLALB_EHJLKMMHGFM = 5186,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_HAGCKNHKEOG)
+    JADIINBLALB_HAGCKNHKEOG = 5126,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_HFCGJMALAFG)
+    JADIINBLALB_HFCGJMALAFG = 5193,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_HBHECCOIPBC)
-    JADIINBLALB_HBHECCOIPBC = 5136,
+    JADIINBLALB_HBHECCOIPBC = 5188,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_INODKICNKCI)
+    JADIINBLALB_INODKICNKCI = 5171,
     // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_GJHBHLCAFPG)
-    JADIINBLALB_GJHBHLCAFPG = 5181,
+    JADIINBLALB_GJHBHLCAFPG = 5147,
+    // @@protoc_insertion_point(enum_value:CmdPhoneType.JADIINBLALB_FMGAHJHKACP)
+    JADIINBLALB_FMGAHJHKACP = 5158,
 }
 
 impl ::protobuf::Enum for CmdPhoneType {
@@ -63,17 +63,17 @@ impl ::protobuf::Enum for CmdPhoneType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPhoneType> {
         match value {
             0 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_NLCDGIPGFDJ),
-            5103 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_IMJKPOEDFDH),
-            5113 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LBBFEOIBHGK),
-            5127 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_FMGAHJHKACP),
-            5180 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HFCGJMALAFG),
-            5110 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HAGCKNHKEOG),
-            5187 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LEFONMLBIGB),
-            5173 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INBLCJJGMKJ),
-            5129 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INODKICNKCI),
-            5115 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_EHJLKMMHGFM),
-            5136 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HBHECCOIPBC),
-            5181 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_GJHBHLCAFPG),
+            5181 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LBBFEOIBHGK),
+            5178 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_IMJKPOEDFDH),
+            5125 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INBLCJJGMKJ),
+            5113 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LEFONMLBIGB),
+            5186 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_EHJLKMMHGFM),
+            5126 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HAGCKNHKEOG),
+            5193 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HFCGJMALAFG),
+            5188 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HBHECCOIPBC),
+            5171 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INODKICNKCI),
+            5147 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_GJHBHLCAFPG),
+            5158 => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_FMGAHJHKACP),
             _ => ::std::option::Option::None
         }
     }
@@ -81,34 +81,34 @@ impl ::protobuf::Enum for CmdPhoneType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPhoneType> {
         match str {
             "JADIINBLALB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_NLCDGIPGFDJ),
-            "JADIINBLALB_IMJKPOEDFDH" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_IMJKPOEDFDH),
             "JADIINBLALB_LBBFEOIBHGK" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LBBFEOIBHGK),
-            "JADIINBLALB_FMGAHJHKACP" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_FMGAHJHKACP),
-            "JADIINBLALB_HFCGJMALAFG" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HFCGJMALAFG),
-            "JADIINBLALB_HAGCKNHKEOG" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HAGCKNHKEOG),
-            "JADIINBLALB_LEFONMLBIGB" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LEFONMLBIGB),
+            "JADIINBLALB_IMJKPOEDFDH" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_IMJKPOEDFDH),
             "JADIINBLALB_INBLCJJGMKJ" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INBLCJJGMKJ),
-            "JADIINBLALB_INODKICNKCI" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INODKICNKCI),
+            "JADIINBLALB_LEFONMLBIGB" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_LEFONMLBIGB),
             "JADIINBLALB_EHJLKMMHGFM" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_EHJLKMMHGFM),
+            "JADIINBLALB_HAGCKNHKEOG" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HAGCKNHKEOG),
+            "JADIINBLALB_HFCGJMALAFG" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HFCGJMALAFG),
             "JADIINBLALB_HBHECCOIPBC" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_HBHECCOIPBC),
+            "JADIINBLALB_INODKICNKCI" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_INODKICNKCI),
             "JADIINBLALB_GJHBHLCAFPG" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_GJHBHLCAFPG),
+            "JADIINBLALB_FMGAHJHKACP" => ::std::option::Option::Some(CmdPhoneType::JADIINBLALB_FMGAHJHKACP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPhoneType] = &[
         CmdPhoneType::JADIINBLALB_NLCDGIPGFDJ,
-        CmdPhoneType::JADIINBLALB_IMJKPOEDFDH,
         CmdPhoneType::JADIINBLALB_LBBFEOIBHGK,
-        CmdPhoneType::JADIINBLALB_FMGAHJHKACP,
-        CmdPhoneType::JADIINBLALB_HFCGJMALAFG,
-        CmdPhoneType::JADIINBLALB_HAGCKNHKEOG,
-        CmdPhoneType::JADIINBLALB_LEFONMLBIGB,
+        CmdPhoneType::JADIINBLALB_IMJKPOEDFDH,
         CmdPhoneType::JADIINBLALB_INBLCJJGMKJ,
-        CmdPhoneType::JADIINBLALB_INODKICNKCI,
+        CmdPhoneType::JADIINBLALB_LEFONMLBIGB,
         CmdPhoneType::JADIINBLALB_EHJLKMMHGFM,
+        CmdPhoneType::JADIINBLALB_HAGCKNHKEOG,
+        CmdPhoneType::JADIINBLALB_HFCGJMALAFG,
         CmdPhoneType::JADIINBLALB_HBHECCOIPBC,
+        CmdPhoneType::JADIINBLALB_INODKICNKCI,
         CmdPhoneType::JADIINBLALB_GJHBHLCAFPG,
+        CmdPhoneType::JADIINBLALB_FMGAHJHKACP,
     ];
 }
 
@@ -121,17 +121,17 @@ impl ::protobuf::EnumFull for CmdPhoneType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPhoneType::JADIINBLALB_NLCDGIPGFDJ => 0,
-            CmdPhoneType::JADIINBLALB_IMJKPOEDFDH => 1,
-            CmdPhoneType::JADIINBLALB_LBBFEOIBHGK => 2,
-            CmdPhoneType::JADIINBLALB_FMGAHJHKACP => 3,
-            CmdPhoneType::JADIINBLALB_HFCGJMALAFG => 4,
-            CmdPhoneType::JADIINBLALB_HAGCKNHKEOG => 5,
-            CmdPhoneType::JADIINBLALB_LEFONMLBIGB => 6,
-            CmdPhoneType::JADIINBLALB_INBLCJJGMKJ => 7,
-            CmdPhoneType::JADIINBLALB_INODKICNKCI => 8,
-            CmdPhoneType::JADIINBLALB_EHJLKMMHGFM => 9,
-            CmdPhoneType::JADIINBLALB_HBHECCOIPBC => 10,
-            CmdPhoneType::JADIINBLALB_GJHBHLCAFPG => 11,
+            CmdPhoneType::JADIINBLALB_LBBFEOIBHGK => 1,
+            CmdPhoneType::JADIINBLALB_IMJKPOEDFDH => 2,
+            CmdPhoneType::JADIINBLALB_INBLCJJGMKJ => 3,
+            CmdPhoneType::JADIINBLALB_LEFONMLBIGB => 4,
+            CmdPhoneType::JADIINBLALB_EHJLKMMHGFM => 5,
+            CmdPhoneType::JADIINBLALB_HAGCKNHKEOG => 6,
+            CmdPhoneType::JADIINBLALB_HFCGJMALAFG => 7,
+            CmdPhoneType::JADIINBLALB_HBHECCOIPBC => 8,
+            CmdPhoneType::JADIINBLALB_INODKICNKCI => 9,
+            CmdPhoneType::JADIINBLALB_GJHBHLCAFPG => 10,
+            CmdPhoneType::JADIINBLALB_FMGAHJHKACP => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -151,14 +151,14 @@ impl CmdPhoneType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12CmdPhoneType.proto*\xf5\x02\n\x0cCmdPhoneType\x12\x1b\n\x17JADIINB\
-    LALB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JADIINBLALB_IMJKPOEDFDH\x10\xef'\x12\
-    \x1c\n\x17JADIINBLALB_LBBFEOIBHGK\x10\xf9'\x12\x1c\n\x17JADIINBLALB_FMGA\
-    HJHKACP\x10\x87(\x12\x1c\n\x17JADIINBLALB_HFCGJMALAFG\x10\xbc(\x12\x1c\n\
-    \x17JADIINBLALB_HAGCKNHKEOG\x10\xf6'\x12\x1c\n\x17JADIINBLALB_LEFONMLBIG\
-    B\x10\xc3(\x12\x1c\n\x17JADIINBLALB_INBLCJJGMKJ\x10\xb5(\x12\x1c\n\x17JA\
-    DIINBLALB_INODKICNKCI\x10\x89(\x12\x1c\n\x17JADIINBLALB_EHJLKMMHGFM\x10\
-    \xfb'\x12\x1c\n\x17JADIINBLALB_HBHECCOIPBC\x10\x90(\x12\x1c\n\x17JADIINB\
-    LALB_GJHBHLCAFPG\x10\xbd(b\x06proto3\
+    LALB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JADIINBLALB_LBBFEOIBHGK\x10\xbd(\x12\
+    \x1c\n\x17JADIINBLALB_IMJKPOEDFDH\x10\xba(\x12\x1c\n\x17JADIINBLALB_INBL\
+    CJJGMKJ\x10\x85(\x12\x1c\n\x17JADIINBLALB_LEFONMLBIGB\x10\xf9'\x12\x1c\n\
+    \x17JADIINBLALB_EHJLKMMHGFM\x10\xc2(\x12\x1c\n\x17JADIINBLALB_HAGCKNHKEO\
+    G\x10\x86(\x12\x1c\n\x17JADIINBLALB_HFCGJMALAFG\x10\xc9(\x12\x1c\n\x17JA\
+    DIINBLALB_HBHECCOIPBC\x10\xc4(\x12\x1c\n\x17JADIINBLALB_INODKICNKCI\x10\
+    \xb3(\x12\x1c\n\x17JADIINBLALB_GJHBHLCAFPG\x10\x9b(\x12\x1c\n\x17JADIINB\
+    LALB_FMGAHJHKACP\x10\xa6(b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

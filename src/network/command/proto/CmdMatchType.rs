@@ -30,19 +30,17 @@ pub enum CmdMatchType {
     // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_NLCDGIPGFDJ)
     OJCIGGAFGPN_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_OBHHEJONGKJ)
-    OJCIGGAFGPN_OBHHEJONGKJ = 7342,
+    OJCIGGAFGPN_OBHHEJONGKJ = 7323,
     // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_PFNIJFANCIE)
-    OJCIGGAFGPN_PFNIJFANCIE = 7319,
-    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_BNLDENNEOIP)
-    OJCIGGAFGPN_BNLDENNEOIP = 7344,
-    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_JFMFEFGAIBK)
-    OJCIGGAFGPN_JFMFEFGAIBK = 7332,
-    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_HNAJMPLBNLF)
-    OJCIGGAFGPN_HNAJMPLBNLF = 7323,
-    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_AMBKBNMKIGP)
-    OJCIGGAFGPN_AMBKBNMKIGP = 7327,
+    OJCIGGAFGPN_PFNIJFANCIE = 7303,
     // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_KMDMCLGPIBC)
-    OJCIGGAFGPN_KMDMCLGPIBC = 7307,
+    OJCIGGAFGPN_KMDMCLGPIBC = 7337,
+    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_AMBKBNMKIGP)
+    OJCIGGAFGPN_AMBKBNMKIGP = 7348,
+    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_JFMFEFGAIBK)
+    OJCIGGAFGPN_JFMFEFGAIBK = 7309,
+    // @@protoc_insertion_point(enum_value:CmdMatchType.OJCIGGAFGPN_HNAJMPLBNLF)
+    OJCIGGAFGPN_HNAJMPLBNLF = 7344,
 }
 
 impl ::protobuf::Enum for CmdMatchType {
@@ -55,13 +53,12 @@ impl ::protobuf::Enum for CmdMatchType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMatchType> {
         match value {
             0 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_NLCDGIPGFDJ),
-            7342 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_OBHHEJONGKJ),
-            7319 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_PFNIJFANCIE),
-            7344 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_BNLDENNEOIP),
-            7332 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK),
-            7323 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF),
-            7327 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP),
-            7307 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC),
+            7323 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_OBHHEJONGKJ),
+            7303 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_PFNIJFANCIE),
+            7337 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC),
+            7348 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP),
+            7309 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK),
+            7344 => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF),
             _ => ::std::option::Option::None
         }
     }
@@ -71,11 +68,10 @@ impl ::protobuf::Enum for CmdMatchType {
             "OJCIGGAFGPN_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_NLCDGIPGFDJ),
             "OJCIGGAFGPN_OBHHEJONGKJ" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_OBHHEJONGKJ),
             "OJCIGGAFGPN_PFNIJFANCIE" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_PFNIJFANCIE),
-            "OJCIGGAFGPN_BNLDENNEOIP" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_BNLDENNEOIP),
+            "OJCIGGAFGPN_KMDMCLGPIBC" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC),
+            "OJCIGGAFGPN_AMBKBNMKIGP" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP),
             "OJCIGGAFGPN_JFMFEFGAIBK" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK),
             "OJCIGGAFGPN_HNAJMPLBNLF" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF),
-            "OJCIGGAFGPN_AMBKBNMKIGP" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP),
-            "OJCIGGAFGPN_KMDMCLGPIBC" => ::std::option::Option::Some(CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC),
             _ => ::std::option::Option::None
         }
     }
@@ -84,11 +80,10 @@ impl ::protobuf::Enum for CmdMatchType {
         CmdMatchType::OJCIGGAFGPN_NLCDGIPGFDJ,
         CmdMatchType::OJCIGGAFGPN_OBHHEJONGKJ,
         CmdMatchType::OJCIGGAFGPN_PFNIJFANCIE,
-        CmdMatchType::OJCIGGAFGPN_BNLDENNEOIP,
+        CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC,
+        CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP,
         CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK,
         CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF,
-        CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP,
-        CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC,
     ];
 }
 
@@ -103,11 +98,10 @@ impl ::protobuf::EnumFull for CmdMatchType {
             CmdMatchType::OJCIGGAFGPN_NLCDGIPGFDJ => 0,
             CmdMatchType::OJCIGGAFGPN_OBHHEJONGKJ => 1,
             CmdMatchType::OJCIGGAFGPN_PFNIJFANCIE => 2,
-            CmdMatchType::OJCIGGAFGPN_BNLDENNEOIP => 3,
-            CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK => 4,
-            CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF => 5,
-            CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP => 6,
-            CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC => 7,
+            CmdMatchType::OJCIGGAFGPN_KMDMCLGPIBC => 3,
+            CmdMatchType::OJCIGGAFGPN_AMBKBNMKIGP => 4,
+            CmdMatchType::OJCIGGAFGPN_JFMFEFGAIBK => 5,
+            CmdMatchType::OJCIGGAFGPN_HNAJMPLBNLF => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -126,12 +120,12 @@ impl CmdMatchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdMatchType.proto*\xfd\x01\n\x0cCmdMatchType\x12\x1b\n\x17OJCIGGA\
-    FGPN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OJCIGGAFGPN_OBHHEJONGKJ\x10\xae9\x12\
-    \x1c\n\x17OJCIGGAFGPN_PFNIJFANCIE\x10\x979\x12\x1c\n\x17OJCIGGAFGPN_BNLD\
-    ENNEOIP\x10\xb09\x12\x1c\n\x17OJCIGGAFGPN_JFMFEFGAIBK\x10\xa49\x12\x1c\n\
-    \x17OJCIGGAFGPN_HNAJMPLBNLF\x10\x9b9\x12\x1c\n\x17OJCIGGAFGPN_AMBKBNMKIG\
-    P\x10\x9f9\x12\x1c\n\x17OJCIGGAFGPN_KMDMCLGPIBC\x10\x8b9b\x06proto3\
+    \n\x12CmdMatchType.proto*\xdf\x01\n\x0cCmdMatchType\x12\x1b\n\x17OJCIGGA\
+    FGPN_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OJCIGGAFGPN_OBHHEJONGKJ\x10\x9b9\x12\
+    \x1c\n\x17OJCIGGAFGPN_PFNIJFANCIE\x10\x879\x12\x1c\n\x17OJCIGGAFGPN_KMDM\
+    CLGPIBC\x10\xa99\x12\x1c\n\x17OJCIGGAFGPN_AMBKBNMKIGP\x10\xb49\x12\x1c\n\
+    \x17OJCIGGAFGPN_JFMFEFGAIBK\x10\x8d9\x12\x1c\n\x17OJCIGGAFGPN_HNAJMPLBNL\
+    F\x10\xb09b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

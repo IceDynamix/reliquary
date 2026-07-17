@@ -30,8 +30,6 @@ pub struct IMHOJPDMOJI {
     // message fields
     // @@protoc_insertion_point(field:IMHOJPDMOJI.HBJIJHHMEGO)
     pub HBJIJHHMEGO: u32,
-    // @@protoc_insertion_point(field:IMHOJPDMOJI.MCBACMOADPH)
-    pub MCBACMOADPH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IMHOJPDMOJI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl IMHOJPDMOJI {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HBJIJHHMEGO",
             |m: &IMHOJPDMOJI| { &m.HBJIJHHMEGO },
             |m: &mut IMHOJPDMOJI| { &mut m.HBJIJHHMEGO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MCBACMOADPH",
-            |m: &IMHOJPDMOJI| { &m.MCBACMOADPH },
-            |m: &mut IMHOJPDMOJI| { &mut m.MCBACMOADPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IMHOJPDMOJI>(
             "IMHOJPDMOJI",
@@ -79,11 +72,8 @@ impl ::protobuf::Message for IMHOJPDMOJI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.HBJIJHHMEGO = is.read_uint32()?;
-                },
-                88 => {
-                    self.MCBACMOADPH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +88,7 @@ impl ::protobuf::Message for IMHOJPDMOJI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HBJIJHHMEGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HBJIJHHMEGO);
-        }
-        if self.MCBACMOADPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MCBACMOADPH);
+            my_size += ::protobuf::rt::uint32_size(7, self.HBJIJHHMEGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +97,7 @@ impl ::protobuf::Message for IMHOJPDMOJI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HBJIJHHMEGO != 0 {
-            os.write_uint32(8, self.HBJIJHHMEGO)?;
-        }
-        if self.MCBACMOADPH != 0 {
-            os.write_uint32(11, self.MCBACMOADPH)?;
+            os.write_uint32(7, self.HBJIJHHMEGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +117,12 @@ impl ::protobuf::Message for IMHOJPDMOJI {
 
     fn clear(&mut self) {
         self.HBJIJHHMEGO = 0;
-        self.MCBACMOADPH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IMHOJPDMOJI {
         static instance: IMHOJPDMOJI = IMHOJPDMOJI {
             HBJIJHHMEGO: 0,
-            MCBACMOADPH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for IMHOJPDMOJI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IMHOJPDMOJI.proto\"Q\n\x0bIMHOJPDMOJI\x12\x20\n\x0bHBJIJHHMEGO\x18\
-    \x08\x20\x01(\rR\x0bHBJIJHHMEGO\x12\x20\n\x0bMCBACMOADPH\x18\x0b\x20\x01\
-    (\rR\x0bMCBACMOADPHb\x06proto3\
+    \n\x11IMHOJPDMOJI.proto\"/\n\x0bIMHOJPDMOJI\x12\x20\n\x0bHBJIJHHMEGO\x18\
+    \x07\x20\x01(\rR\x0bHBJIJHHMEGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

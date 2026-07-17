@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDoGachaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.LGPDNIGJEKP)
-    pub LGPDNIGJEKP: ::std::vec::Vec<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
-    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.gacha_id)
-    pub gacha_id: u32,
     // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.gacha_id)
+    pub gacha_id: u32,
+    // @@protoc_insertion_point(field:PlanetFesDoGachaScRsp.LGPDNIGJEKP)
+    pub LGPDNIGJEKP: ::std::vec::Vec<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
     // message oneof groups
     pub BNJPPHJNKHF: ::std::option::Option<planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF>,
     // special fields
@@ -52,7 +52,7 @@ impl PlanetFesDoGachaScRsp {
         ::std::default::Default::default()
     }
 
-    // .NGHCOJCMJOK EHLPJELJJOO = 6;
+    // .NGHCOJCMJOK EHLPJELJJOO = 2;
 
     pub fn EHLPJELJJOO(&self) -> &super::NGHCOJCMJOK::NGHCOJCMJOK {
         match self.BNJPPHJNKHF {
@@ -101,7 +101,7 @@ impl PlanetFesDoGachaScRsp {
         }
     }
 
-    // .NDPJHJOAOJE FFBDKNIHNEL = 8;
+    // .NDPJHJOAOJE FFBDKNIHNEL = 7;
 
     pub fn FFBDKNIHNEL(&self) -> &super::NDPJHJOAOJE::NDPJHJOAOJE {
         match self.BNJPPHJNKHF {
@@ -153,20 +153,20 @@ impl PlanetFesDoGachaScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGPDNIGJEKP",
-            |m: &PlanetFesDoGachaScRsp| { &m.LGPDNIGJEKP },
-            |m: &mut PlanetFesDoGachaScRsp| { &mut m.LGPDNIGJEKP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PlanetFesDoGachaScRsp| { &m.retcode },
+            |m: &mut PlanetFesDoGachaScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_id",
             |m: &PlanetFesDoGachaScRsp| { &m.gacha_id },
             |m: &mut PlanetFesDoGachaScRsp| { &mut m.gacha_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PlanetFesDoGachaScRsp| { &m.retcode },
-            |m: &mut PlanetFesDoGachaScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LGPDNIGJEKP",
+            |m: &PlanetFesDoGachaScRsp| { &m.LGPDNIGJEKP },
+            |m: &mut PlanetFesDoGachaScRsp| { &mut m.LGPDNIGJEKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NGHCOJCMJOK::NGHCOJCMJOK>(
             "EHLPJELJJOO",
@@ -201,19 +201,19 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.LGPDNIGJEKP.push(is.read_message()?);
-                },
-                88 => {
-                    self.gacha_id = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    self.BNJPPHJNKHF = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::EHLPJELJJOO(is.read_message()?));
+                24 => {
+                    self.gacha_id = is.read_uint32()?;
                 },
                 66 => {
+                    self.LGPDNIGJEKP.push(is.read_message()?);
+                },
+                18 => {
+                    self.BNJPPHJNKHF = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::EHLPJELJJOO(is.read_message()?));
+                },
+                58 => {
                     self.BNJPPHJNKHF = ::std::option::Option::Some(planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::FFBDKNIHNEL(is.read_message()?));
                 },
                 tag => {
@@ -228,16 +228,16 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.gacha_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.gacha_id);
+        }
         for value in &self.LGPDNIGJEKP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.gacha_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.gacha_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         if let ::std::option::Option::Some(ref v) = self.BNJPPHJNKHF {
             match v {
                 &planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::EHLPJELJJOO(ref v) => {
@@ -256,22 +256,22 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LGPDNIGJEKP {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.gacha_id != 0 {
-            os.write_uint32(11, self.gacha_id)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
+        if self.gacha_id != 0 {
+            os.write_uint32(3, self.gacha_id)?;
+        }
+        for v in &self.LGPDNIGJEKP {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         if let ::std::option::Option::Some(ref v) = self.BNJPPHJNKHF {
             match v {
                 &planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::EHLPJELJJOO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &planet_fes_do_gacha_sc_rsp::BNJPPHJNKHF::FFBDKNIHNEL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
             };
         }
@@ -292,9 +292,9 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
     }
 
     fn clear(&mut self) {
-        self.LGPDNIGJEKP.clear();
-        self.gacha_id = 0;
         self.retcode = 0;
+        self.gacha_id = 0;
+        self.LGPDNIGJEKP.clear();
         self.BNJPPHJNKHF = ::std::option::Option::None;
         self.BNJPPHJNKHF = ::std::option::Option::None;
         self.special_fields.clear();
@@ -302,9 +302,9 @@ impl ::protobuf::Message for PlanetFesDoGachaScRsp {
 
     fn default_instance() -> &'static PlanetFesDoGachaScRsp {
         static instance: PlanetFesDoGachaScRsp = PlanetFesDoGachaScRsp {
-            LGPDNIGJEKP: ::std::vec::Vec::new(),
-            gacha_id: 0,
             retcode: 0,
+            gacha_id: 0,
+            LGPDNIGJEKP: ::std::vec::Vec::new(),
             BNJPPHJNKHF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -362,11 +362,11 @@ pub mod planet_fes_do_gacha_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPlanetFesDoGachaScRsp.proto\x1a\x11FMKMEFMOJGJ.proto\x1a\x11NDPJHJ\
     OAOJE.proto\x1a\x11NGHCOJCMJOK.proto\"\xef\x01\n\x15PlanetFesDoGachaScRs\
-    p\x12.\n\x0bLGPDNIGJEKP\x18\x07\x20\x03(\x0b2\x0c.FMKMEFMOJGJR\x0bLGPDNI\
-    GJEKP\x12\x19\n\x08gacha_id\x18\x0b\x20\x01(\rR\x07gachaId\x12\x18\n\x07\
-    retcode\x18\x0e\x20\x01(\rR\x07retcode\x120\n\x0bEHLPJELJJOO\x18\x06\x20\
+    p\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x19\n\x08gacha\
+    _id\x18\x03\x20\x01(\rR\x07gachaId\x12.\n\x0bLGPDNIGJEKP\x18\x08\x20\x03\
+    (\x0b2\x0c.FMKMEFMOJGJR\x0bLGPDNIGJEKP\x120\n\x0bEHLPJELJJOO\x18\x02\x20\
     \x01(\x0b2\x0c.NGHCOJCMJOKH\0R\x0bEHLPJELJJOO\x120\n\x0bFFBDKNIHNEL\x18\
-    \x08\x20\x01(\x0b2\x0c.NDPJHJOAOJEH\0R\x0bFFBDKNIHNELB\r\n\x0bBNJPPHJNKH\
+    \x07\x20\x01(\x0b2\x0c.NDPJHJOAOJEH\0R\x0bFFBDKNIHNELB\r\n\x0bBNJPPHJNKH\
     Fb\x06proto3\
 ";
 

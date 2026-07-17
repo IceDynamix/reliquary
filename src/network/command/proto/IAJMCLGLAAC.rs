@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IAJMCLGLAAC {
     // message fields
-    // @@protoc_insertion_point(field:IAJMCLGLAAC.friend_recommend_list)
-    pub friend_recommend_list: ::std::vec::Vec<super::FHHGBMIEBOE::FHHGBMIEBOE>,
-    // @@protoc_insertion_point(field:IAJMCLGLAAC.DPHAJPEADAF)
-    pub DPHAJPEADAF: u32,
     // @@protoc_insertion_point(field:IAJMCLGLAAC.PHOKGKFBHJF)
     pub PHOKGKFBHJF: u32,
     // @@protoc_insertion_point(field:IAJMCLGLAAC.PHHMKHNPJJK)
     pub PHHMKHNPJJK: u32,
+    // @@protoc_insertion_point(field:IAJMCLGLAAC.friend_recommend_list)
+    pub friend_recommend_list: ::std::vec::Vec<super::FHHGBMIEBOE::FHHGBMIEBOE>,
+    // @@protoc_insertion_point(field:IAJMCLGLAAC.DPHAJPEADAF)
+    pub DPHAJPEADAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IAJMCLGLAAC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,16 +55,6 @@ impl IAJMCLGLAAC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "friend_recommend_list",
-            |m: &IAJMCLGLAAC| { &m.friend_recommend_list },
-            |m: &mut IAJMCLGLAAC| { &mut m.friend_recommend_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPHAJPEADAF",
-            |m: &IAJMCLGLAAC| { &m.DPHAJPEADAF },
-            |m: &mut IAJMCLGLAAC| { &mut m.DPHAJPEADAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PHOKGKFBHJF",
             |m: &IAJMCLGLAAC| { &m.PHOKGKFBHJF },
@@ -74,6 +64,16 @@ impl IAJMCLGLAAC {
             "PHHMKHNPJJK",
             |m: &IAJMCLGLAAC| { &m.PHHMKHNPJJK },
             |m: &mut IAJMCLGLAAC| { &mut m.PHHMKHNPJJK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "friend_recommend_list",
+            |m: &IAJMCLGLAAC| { &m.friend_recommend_list },
+            |m: &mut IAJMCLGLAAC| { &mut m.friend_recommend_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DPHAJPEADAF",
+            |m: &IAJMCLGLAAC| { &m.DPHAJPEADAF },
+            |m: &mut IAJMCLGLAAC| { &mut m.DPHAJPEADAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IAJMCLGLAAC>(
             "IAJMCLGLAAC",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.friend_recommend_list.push(is.read_message()?);
-                },
-                72 => {
-                    self.DPHAJPEADAF = is.read_uint32()?;
-                },
                 8 => {
                     self.PHOKGKFBHJF = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.PHHMKHNPJJK = is.read_uint32()?;
+                },
+                66 => {
+                    self.friend_recommend_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.DPHAJPEADAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PHOKGKFBHJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PHOKGKFBHJF);
+        }
+        if self.PHHMKHNPJJK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PHHMKHNPJJK);
+        }
         for value in &self.friend_recommend_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.DPHAJPEADAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DPHAJPEADAF);
-        }
-        if self.PHOKGKFBHJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PHOKGKFBHJF);
-        }
-        if self.PHHMKHNPJJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PHHMKHNPJJK);
+            my_size += ::protobuf::rt::uint32_size(10, self.DPHAJPEADAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.friend_recommend_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.DPHAJPEADAF != 0 {
-            os.write_uint32(9, self.DPHAJPEADAF)?;
-        }
         if self.PHOKGKFBHJF != 0 {
             os.write_uint32(1, self.PHOKGKFBHJF)?;
         }
         if self.PHHMKHNPJJK != 0 {
-            os.write_uint32(6, self.PHHMKHNPJJK)?;
+            os.write_uint32(2, self.PHHMKHNPJJK)?;
+        }
+        for v in &self.friend_recommend_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.DPHAJPEADAF != 0 {
+            os.write_uint32(10, self.DPHAJPEADAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     }
 
     fn clear(&mut self) {
-        self.friend_recommend_list.clear();
-        self.DPHAJPEADAF = 0;
         self.PHOKGKFBHJF = 0;
         self.PHHMKHNPJJK = 0;
+        self.friend_recommend_list.clear();
+        self.DPHAJPEADAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IAJMCLGLAAC {
         static instance: IAJMCLGLAAC = IAJMCLGLAAC {
-            friend_recommend_list: ::std::vec::Vec::new(),
-            DPHAJPEADAF: 0,
             PHOKGKFBHJF: 0,
             PHHMKHNPJJK: 0,
+            friend_recommend_list: ::std::vec::Vec::new(),
+            DPHAJPEADAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for IAJMCLGLAAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IAJMCLGLAAC.proto\x1a\x11FHHGBMIEBOE.proto\"\xb5\x01\n\x0bIAJMCLGL\
-    AAC\x12@\n\x15friend_recommend_list\x18\x04\x20\x03(\x0b2\x0c.FHHGBMIEBO\
-    ER\x13friendRecommendList\x12\x20\n\x0bDPHAJPEADAF\x18\t\x20\x01(\rR\x0b\
-    DPHAJPEADAF\x12\x20\n\x0bPHOKGKFBHJF\x18\x01\x20\x01(\rR\x0bPHOKGKFBHJF\
-    \x12\x20\n\x0bPHHMKHNPJJK\x18\x06\x20\x01(\rR\x0bPHHMKHNPJJKb\x06proto3\
+    AAC\x12\x20\n\x0bPHOKGKFBHJF\x18\x01\x20\x01(\rR\x0bPHOKGKFBHJF\x12\x20\
+    \n\x0bPHHMKHNPJJK\x18\x02\x20\x01(\rR\x0bPHHMKHNPJJK\x12@\n\x15friend_re\
+    commend_list\x18\x08\x20\x03(\x0b2\x0c.FHHGBMIEBOER\x13friendRecommendLi\
+    st\x12\x20\n\x0bDPHAJPEADAF\x18\n\x20\x01(\rR\x0bDPHAJPEADAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
                     self.is_meet = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(6, self.DOOACEHOPEE);
         }
         if self.is_meet != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DEFFFLGJAEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(10, self.DOOACEHOPEE)?;
+            os.write_uint32(6, self.DOOACEHOPEE)?;
         }
         if self.is_meet != false {
-            os.write_bool(15, self.is_meet)?;
+            os.write_bool(7, self.is_meet)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DEFFFLGJAEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEFFFLGJAEM.proto\"H\n\x0bDEFFFLGJAEM\x12\x20\n\x0bDOOACEHOPEE\x18\
-    \n\x20\x01(\rR\x0bDOOACEHOPEE\x12\x17\n\x07is_meet\x18\x0f\x20\x01(\x08R\
-    \x06isMeetb\x06proto3\
+    \x06\x20\x01(\rR\x0bDOOACEHOPEE\x12\x17\n\x07is_meet\x18\x07\x20\x01(\
+    \x08R\x06isMeetb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

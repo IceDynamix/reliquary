@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HPGIGMPBIBO {
     // message fields
-    // @@protoc_insertion_point(field:HPGIGMPBIBO.AJHCNDDFMJO)
-    pub AJHCNDDFMJO: ::std::string::String,
-    // @@protoc_insertion_point(field:HPGIGMPBIBO.BKIIJELPNPL)
-    pub BKIIJELPNPL: ::std::string::String,
-    // @@protoc_insertion_point(field:HPGIGMPBIBO.FGNFDGAKKAP)
-    pub FGNFDGAKKAP: u64,
-    // @@protoc_insertion_point(field:HPGIGMPBIBO.HPGJPOFOOPM)
-    pub HPGJPOFOOPM: u32,
     // @@protoc_insertion_point(field:HPGIGMPBIBO.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:HPGIGMPBIBO.fight_token)
+    pub fight_token: ::std::string::String,
+    // @@protoc_insertion_point(field:HPGIGMPBIBO.port)
+    pub port: u32,
+    // @@protoc_insertion_point(field:HPGIGMPBIBO.gate_server_address)
+    pub gate_server_address: ::std::string::String,
+    // @@protoc_insertion_point(field:HPGIGMPBIBO.FGNFDGAKKAP)
+    pub FGNFDGAKKAP: u64,
     // special fields
     // @@protoc_insertion_point(special_field:HPGIGMPBIBO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl HPGIGMPBIBO {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJHCNDDFMJO",
-            |m: &HPGIGMPBIBO| { &m.AJHCNDDFMJO },
-            |m: &mut HPGIGMPBIBO| { &mut m.AJHCNDDFMJO },
+            "retcode",
+            |m: &HPGIGMPBIBO| { &m.retcode },
+            |m: &mut HPGIGMPBIBO| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKIIJELPNPL",
-            |m: &HPGIGMPBIBO| { &m.BKIIJELPNPL },
-            |m: &mut HPGIGMPBIBO| { &mut m.BKIIJELPNPL },
+            "fight_token",
+            |m: &HPGIGMPBIBO| { &m.fight_token },
+            |m: &mut HPGIGMPBIBO| { &mut m.fight_token },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "port",
+            |m: &HPGIGMPBIBO| { &m.port },
+            |m: &mut HPGIGMPBIBO| { &mut m.port },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "gate_server_address",
+            |m: &HPGIGMPBIBO| { &m.gate_server_address },
+            |m: &mut HPGIGMPBIBO| { &mut m.gate_server_address },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FGNFDGAKKAP",
             |m: &HPGIGMPBIBO| { &m.FGNFDGAKKAP },
             |m: &mut HPGIGMPBIBO| { &mut m.FGNFDGAKKAP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HPGJPOFOOPM",
-            |m: &HPGIGMPBIBO| { &m.HPGJPOFOOPM },
-            |m: &mut HPGIGMPBIBO| { &mut m.HPGJPOFOOPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &HPGIGMPBIBO| { &m.retcode },
-            |m: &mut HPGIGMPBIBO| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HPGIGMPBIBO>(
             "HPGIGMPBIBO",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for HPGIGMPBIBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.AJHCNDDFMJO = is.read_string()?;
-                },
-                50 => {
-                    self.BKIIJELPNPL = is.read_string()?;
-                },
-                112 => {
-                    self.FGNFDGAKKAP = is.read_uint64()?;
-                },
-                72 => {
-                    self.HPGJPOFOOPM = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                82 => {
+                    self.fight_token = is.read_string()?;
+                },
+                96 => {
+                    self.port = is.read_uint32()?;
+                },
+                114 => {
+                    self.gate_server_address = is.read_string()?;
+                },
+                120 => {
+                    self.FGNFDGAKKAP = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for HPGIGMPBIBO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.AJHCNDDFMJO.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.AJHCNDDFMJO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if !self.BKIIJELPNPL.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.BKIIJELPNPL);
+        if !self.fight_token.is_empty() {
+            my_size += ::protobuf::rt::string_size(10, &self.fight_token);
+        }
+        if self.port != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.port);
+        }
+        if !self.gate_server_address.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.gate_server_address);
         }
         if self.FGNFDGAKKAP != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.FGNFDGAKKAP);
-        }
-        if self.HPGJPOFOOPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.HPGJPOFOOPM);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint64_size(15, self.FGNFDGAKKAP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for HPGIGMPBIBO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.AJHCNDDFMJO.is_empty() {
-            os.write_string(2, &self.AJHCNDDFMJO)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
-        if !self.BKIIJELPNPL.is_empty() {
-            os.write_string(6, &self.BKIIJELPNPL)?;
+        if !self.fight_token.is_empty() {
+            os.write_string(10, &self.fight_token)?;
+        }
+        if self.port != 0 {
+            os.write_uint32(12, self.port)?;
+        }
+        if !self.gate_server_address.is_empty() {
+            os.write_string(14, &self.gate_server_address)?;
         }
         if self.FGNFDGAKKAP != 0 {
-            os.write_uint64(14, self.FGNFDGAKKAP)?;
-        }
-        if self.HPGJPOFOOPM != 0 {
-            os.write_uint32(9, self.HPGJPOFOOPM)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint64(15, self.FGNFDGAKKAP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for HPGIGMPBIBO {
     }
 
     fn clear(&mut self) {
-        self.AJHCNDDFMJO.clear();
-        self.BKIIJELPNPL.clear();
-        self.FGNFDGAKKAP = 0;
-        self.HPGJPOFOOPM = 0;
         self.retcode = 0;
+        self.fight_token.clear();
+        self.port = 0;
+        self.gate_server_address.clear();
+        self.FGNFDGAKKAP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HPGIGMPBIBO {
         static instance: HPGIGMPBIBO = HPGIGMPBIBO {
-            AJHCNDDFMJO: ::std::string::String::new(),
-            BKIIJELPNPL: ::std::string::String::new(),
-            FGNFDGAKKAP: 0,
-            HPGJPOFOOPM: 0,
             retcode: 0,
+            fight_token: ::std::string::String::new(),
+            port: 0,
+            gate_server_address: ::std::string::String::new(),
+            FGNFDGAKKAP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for HPGIGMPBIBO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HPGIGMPBIBO.proto\"\xaf\x01\n\x0bHPGIGMPBIBO\x12\x20\n\x0bAJHCNDDF\
-    MJO\x18\x02\x20\x01(\tR\x0bAJHCNDDFMJO\x12\x20\n\x0bBKIIJELPNPL\x18\x06\
-    \x20\x01(\tR\x0bBKIIJELPNPL\x12\x20\n\x0bFGNFDGAKKAP\x18\x0e\x20\x01(\
-    \x04R\x0bFGNFDGAKKAP\x12\x20\n\x0bHPGJPOFOOPM\x18\t\x20\x01(\rR\x0bHPGJP\
-    OFOOPM\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x11HPGIGMPBIBO.proto\"\xae\x01\n\x0bHPGIGMPBIBO\x12\x18\n\x07retcode\
+    \x18\x04\x20\x01(\rR\x07retcode\x12\x1f\n\x0bfight_token\x18\n\x20\x01(\
+    \tR\nfightToken\x12\x12\n\x04port\x18\x0c\x20\x01(\rR\x04port\x12.\n\x13\
+    gate_server_address\x18\x0e\x20\x01(\tR\x11gateServerAddress\x12\x20\n\
+    \x0bFGNFDGAKKAP\x18\x0f\x20\x01(\x04R\x0bFGNFDGAKKAPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

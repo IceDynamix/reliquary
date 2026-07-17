@@ -29,172 +29,172 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdMonopolyType {
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NLCDGIPGFDJ)
     IOBAOPKJMAK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_MEPENIFDMKC)
-    IOBAOPKJMAK_MEPENIFDMKC = 7082,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_AOFHPBPLAJK)
-    IOBAOPKJMAK_AOFHPBPLAJK = 7001,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DONOLKALNDI)
-    IOBAOPKJMAK_DONOLKALNDI = 7037,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLEBNFCENMO)
-    IOBAOPKJMAK_BLEBNFCENMO = 7054,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GCJFLEPEKPJ)
-    IOBAOPKJMAK_GCJFLEPEKPJ = 7018,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PEFECHJNJJG)
-    IOBAOPKJMAK_PEFECHJNJJG = 7055,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EBJFJPEFNFA)
-    IOBAOPKJMAK_EBJFJPEFNFA = 7057,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JEEJIMKDLFO)
-    IOBAOPKJMAK_JEEJIMKDLFO = 7067,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DHGAMPOLNPE)
-    IOBAOPKJMAK_DHGAMPOLNPE = 7007,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IKOKKJHKBML)
-    IOBAOPKJMAK_IKOKKJHKBML = 7028,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JEIKABLOFPP)
-    IOBAOPKJMAK_JEIKABLOFPP = 7072,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EAHFGFAICAL)
-    IOBAOPKJMAK_EAHFGFAICAL = 7059,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HLKHJHFBEPD)
-    IOBAOPKJMAK_HLKHJHFBEPD = 7003,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FJODJAIJIHH)
-    IOBAOPKJMAK_FJODJAIJIHH = 7026,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IHDEEBJAFGE)
-    IOBAOPKJMAK_IHDEEBJAFGE = 7066,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JGFFAKIOHJO)
-    IOBAOPKJMAK_JGFFAKIOHJO = 7061,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HODOMHJKAFO)
-    IOBAOPKJMAK_HODOMHJKAFO = 7035,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GNCOLNKIPDK)
-    IOBAOPKJMAK_GNCOLNKIPDK = 7076,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EMJBHJJADMA)
-    IOBAOPKJMAK_EMJBHJJADMA = 7008,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LOFIBLEIGHK)
-    IOBAOPKJMAK_LOFIBLEIGHK = 7010,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JLBBGECBOEE)
-    IOBAOPKJMAK_JLBBGECBOEE = 7022,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DBHDCJKKCAC)
-    IOBAOPKJMAK_DBHDCJKKCAC = 7089,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GLECHOAGJCF)
-    IOBAOPKJMAK_GLECHOAGJCF = 7005,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PDOPBLCLAPP)
-    IOBAOPKJMAK_PDOPBLCLAPP = 7032,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NHOLIOOLLDE)
-    IOBAOPKJMAK_NHOLIOOLLDE = 7080,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CEHIPNEEEPN)
-    IOBAOPKJMAK_CEHIPNEEEPN = 7043,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PEFJHJAJECJ)
-    IOBAOPKJMAK_PEFJHJAJECJ = 7020,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FKIJMOAPJDP)
-    IOBAOPKJMAK_FKIJMOAPJDP = 7065,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BPIIMEDDOLO)
-    IOBAOPKJMAK_BPIIMEDDOLO = 7040,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ALIHGKILONE)
-    IOBAOPKJMAK_ALIHGKILONE = 7086,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LMDNMBLANAB)
-    IOBAOPKJMAK_LMDNMBLANAB = 7090,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LIFHGBDGMLO)
-    IOBAOPKJMAK_LIFHGBDGMLO = 7092,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IBMJIIDIOBC)
-    IOBAOPKJMAK_IBMJIIDIOBC = 7056,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LHFNKIEFNMG)
-    IOBAOPKJMAK_LHFNKIEFNMG = 7025,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BIMKJEONDAJ)
-    IOBAOPKJMAK_BIMKJEONDAJ = 7063,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NGMPOPPBPAD)
-    IOBAOPKJMAK_NGMPOPPBPAD = 7011,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HIPOGNHBDOK)
-    IOBAOPKJMAK_HIPOGNHBDOK = 7034,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLFJPAKHCJP)
-    IOBAOPKJMAK_BLFJPAKHCJP = 7085,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCHIBDHODJL)
-    IOBAOPKJMAK_JCHIBDHODJL = 7038,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_MCBBINJHOON)
-    IOBAOPKJMAK_MCBBINJHOON = 7053,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PPBDBMMLOHL)
-    IOBAOPKJMAK_PPBDBMMLOHL = 7091,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EOFBLKGCBLL)
-    IOBAOPKJMAK_EOFBLKGCBLL = 7023,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CPNANLNEKGM)
-    IOBAOPKJMAK_CPNANLNEKGM = 7074,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DEOEOPHAAED)
-    IOBAOPKJMAK_DEOEOPHAAED = 7078,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JPMKKMGPEDP)
-    IOBAOPKJMAK_JPMKKMGPEDP = 7084,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NOCJMPCELIP)
-    IOBAOPKJMAK_NOCJMPCELIP = 7097,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DPGDKBMMMLA)
-    IOBAOPKJMAK_DPGDKBMMMLA = 7015,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LJFJDMBEJDA)
-    IOBAOPKJMAK_LJFJDMBEJDA = 7013,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_AFJOPPLFCHO)
-    IOBAOPKJMAK_AFJOPPLFCHO = 7021,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_AOOGIEOGAIK)
-    IOBAOPKJMAK_AOOGIEOGAIK = 7052,
+    IOBAOPKJMAK_AOFHPBPLAJK = 7043,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EIFFMMGLFGN)
-    IOBAOPKJMAK_EIFFMMGLFGN = 7024,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ONAFLGDCCNE)
-    IOBAOPKJMAK_ONAFLGDCCNE = 7075,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IBGMDOKIMJG)
-    IOBAOPKJMAK_IBGMDOKIMJG = 7016,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HEBEHIEILIH)
-    IOBAOPKJMAK_HEBEHIEILIH = 7046,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DJBOCCHNIGE)
-    IOBAOPKJMAK_DJBOCCHNIGE = 7042,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_OGLGOPGGFFF)
-    IOBAOPKJMAK_OGLGOPGGFFF = 7029,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_KOAJGFCLOBK)
-    IOBAOPKJMAK_KOAJGFCLOBK = 7087,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HKPOJOABGNI)
-    IOBAOPKJMAK_HKPOJOABGNI = 7068,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PBHPECJEMDL)
-    IOBAOPKJMAK_PBHPECJEMDL = 7009,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLGGIJFJOFK)
-    IOBAOPKJMAK_BLGGIJFJOFK = 7070,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCNMDDPDHGC)
-    IOBAOPKJMAK_JCNMDDPDHGC = 7058,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GOFJHGJPAHN)
-    IOBAOPKJMAK_GOFJHGJPAHN = 7093,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ACMDMDHFBJH)
-    IOBAOPKJMAK_ACMDMDHFBJH = 7064,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LBHLKHEKIDN)
-    IOBAOPKJMAK_LBHLKHEKIDN = 7048,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CDIMMIDDCOI)
-    IOBAOPKJMAK_CDIMMIDDCOI = 7099,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PLINPFHHDJF)
-    IOBAOPKJMAK_PLINPFHHDJF = 7083,
+    IOBAOPKJMAK_EIFFMMGLFGN = 7045,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NOMICNNKBGJ)
-    IOBAOPKJMAK_NOMICNNKBGJ = 7079,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_OBMJPNJELGK)
-    IOBAOPKJMAK_OBMJPNJELGK = 7049,
+    IOBAOPKJMAK_NOMICNNKBGJ = 7059,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PEFECHJNJJG)
+    IOBAOPKJMAK_PEFECHJNJJG = 7003,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HODOMHJKAFO)
+    IOBAOPKJMAK_HODOMHJKAFO = 7012,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCNMDDPDHGC)
+    IOBAOPKJMAK_JCNMDDPDHGC = 7098,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HIPOGNHBDOK)
+    IOBAOPKJMAK_HIPOGNHBDOK = 7028,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCMALMBKBCN)
+    IOBAOPKJMAK_JCMALMBKBCN = 7005,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IBMJIIDIOBC)
+    IOBAOPKJMAK_IBMJIIDIOBC = 7079,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IHDEEBJAFGE)
+    IOBAOPKJMAK_IHDEEBJAFGE = 7021,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GLECHOAGJCF)
+    IOBAOPKJMAK_GLECHOAGJCF = 7075,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DBHDCJKKCAC)
+    IOBAOPKJMAK_DBHDCJKKCAC = 7074,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GCJFLEPEKPJ)
+    IOBAOPKJMAK_GCJFLEPEKPJ = 7051,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_KOAJGFCLOBK)
+    IOBAOPKJMAK_KOAJGFCLOBK = 7013,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LIFHGBDGMLO)
+    IOBAOPKJMAK_LIFHGBDGMLO = 7084,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LMDNMBLANAB)
+    IOBAOPKJMAK_LMDNMBLANAB = 7094,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_AOOGIEOGAIK)
+    IOBAOPKJMAK_AOOGIEOGAIK = 7030,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NOCJMPCELIP)
+    IOBAOPKJMAK_NOCJMPCELIP = 7083,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NHOLIOOLLDE)
+    IOBAOPKJMAK_NHOLIOOLLDE = 7093,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JEIKABLOFPP)
+    IOBAOPKJMAK_JEIKABLOFPP = 7085,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_MCBBINJHOON)
+    IOBAOPKJMAK_MCBBINJHOON = 7015,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_OKNLKIJDGGJ)
-    IOBAOPKJMAK_OKNLKIJDGGJ = 7044,
+    IOBAOPKJMAK_OKNLKIJDGGJ = 7032,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GNCOLNKIPDK)
+    IOBAOPKJMAK_GNCOLNKIPDK = 7011,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EAHFGFAICAL)
+    IOBAOPKJMAK_EAHFGFAICAL = 7072,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BAAOFCJKCOL)
+    IOBAOPKJMAK_BAAOFCJKCOL = 7095,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLGGIJFJOFK)
+    IOBAOPKJMAK_BLGGIJFJOFK = 7087,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CDIMMIDDCOI)
+    IOBAOPKJMAK_CDIMMIDDCOI = 7096,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JLBBGECBOEE)
+    IOBAOPKJMAK_JLBBGECBOEE = 7060,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ACMDMDHFBJH)
+    IOBAOPKJMAK_ACMDMDHFBJH = 7090,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JMDKFJHGHIP)
+    IOBAOPKJMAK_JMDKFJHGHIP = 7046,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_OGLGOPGGFFF)
+    IOBAOPKJMAK_OGLGOPGGFFF = 7071,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EOFBLKGCBLL)
+    IOBAOPKJMAK_EOFBLKGCBLL = 7006,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GICPENPOELE)
+    IOBAOPKJMAK_GICPENPOELE = 7055,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EBJFJPEFNFA)
+    IOBAOPKJMAK_EBJFJPEFNFA = 7068,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IBGMDOKIMJG)
+    IOBAOPKJMAK_IBGMDOKIMJG = 7035,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JGFFAKIOHJO)
+    IOBAOPKJMAK_JGFFAKIOHJO = 7048,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LBHLKHEKIDN)
+    IOBAOPKJMAK_LBHLKHEKIDN = 7042,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PEFJHJAJECJ)
+    IOBAOPKJMAK_PEFJHJAJECJ = 7034,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HBEPBGMKHKC)
     IOBAOPKJMAK_HBEPBGMKHKC = 7002,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HEBEHIEILIH)
+    IOBAOPKJMAK_HEBEHIEILIH = 7017,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PDOPBLCLAPP)
+    IOBAOPKJMAK_PDOPBLCLAPP = 7073,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IFIBKCOOIHK)
-    IOBAOPKJMAK_IFIBKCOOIHK = 7014,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BAAOFCJKCOL)
-    IOBAOPKJMAK_BAAOFCJKCOL = 7069,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GICPENPOELE)
-    IOBAOPKJMAK_GICPENPOELE = 7096,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JMDKFJHGHIP)
-    IOBAOPKJMAK_JMDKFJHGHIP = 7045,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCMALMBKBCN)
-    IOBAOPKJMAK_JCMALMBKBCN = 7030,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ADHLGBEANKN)
-    IOBAOPKJMAK_ADHLGBEANKN = 7027,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LNCPEJACMNJ)
-    IOBAOPKJMAK_LNCPEJACMNJ = 7071,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JIBOBDNHAGH)
-    IOBAOPKJMAK_JIBOBDNHAGH = 7017,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NPCLKIMCEEO)
-    IOBAOPKJMAK_NPCLKIMCEEO = 7041,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PHOBNFIPNOO)
-    IOBAOPKJMAK_PHOBNFIPNOO = 7081,
-    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FDOAMKDLAPP)
-    IOBAOPKJMAK_FDOAMKDLAPP = 7098,
+    IOBAOPKJMAK_IFIBKCOOIHK = 7044,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DHGAMPOLNPE)
+    IOBAOPKJMAK_DHGAMPOLNPE = 7031,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BGLDMCKBAKE)
-    IOBAOPKJMAK_BGLDMCKBAKE = 7047,
+    IOBAOPKJMAK_BGLDMCKBAKE = 7009,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HKPOJOABGNI)
+    IOBAOPKJMAK_HKPOJOABGNI = 7001,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LNCPEJACMNJ)
+    IOBAOPKJMAK_LNCPEJACMNJ = 7069,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PLINPFHHDJF)
+    IOBAOPKJMAK_PLINPFHHDJF = 7038,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ONAFLGDCCNE)
+    IOBAOPKJMAK_ONAFLGDCCNE = 7097,
     // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JKJLAPCIDFG)
-    IOBAOPKJMAK_JKJLAPCIDFG = 7073,
+    IOBAOPKJMAK_JKJLAPCIDFG = 7025,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NGMPOPPBPAD)
+    IOBAOPKJMAK_NGMPOPPBPAD = 7023,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PHOBNFIPNOO)
+    IOBAOPKJMAK_PHOBNFIPNOO = 7047,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLEBNFCENMO)
+    IOBAOPKJMAK_BLEBNFCENMO = 7033,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_HLKHJHFBEPD)
+    IOBAOPKJMAK_HLKHJHFBEPD = 7078,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_GOFJHGJPAHN)
+    IOBAOPKJMAK_GOFJHGJPAHN = 7066,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BPIIMEDDOLO)
+    IOBAOPKJMAK_BPIIMEDDOLO = 7057,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BIMKJEONDAJ)
+    IOBAOPKJMAK_BIMKJEONDAJ = 7018,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PBHPECJEMDL)
+    IOBAOPKJMAK_PBHPECJEMDL = 7039,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JPMKKMGPEDP)
+    IOBAOPKJMAK_JPMKKMGPEDP = 7024,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FKIJMOAPJDP)
+    IOBAOPKJMAK_FKIJMOAPJDP = 7007,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ADHLGBEANKN)
+    IOBAOPKJMAK_ADHLGBEANKN = 7058,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LJFJDMBEJDA)
+    IOBAOPKJMAK_LJFJDMBEJDA = 7081,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DPGDKBMMMLA)
+    IOBAOPKJMAK_DPGDKBMMMLA = 7086,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_NPCLKIMCEEO)
+    IOBAOPKJMAK_NPCLKIMCEEO = 7037,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DONOLKALNDI)
+    IOBAOPKJMAK_DONOLKALNDI = 7019,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DEOEOPHAAED)
+    IOBAOPKJMAK_DEOEOPHAAED = 7065,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_IKOKKJHKBML)
+    IOBAOPKJMAK_IKOKKJHKBML = 7010,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CPNANLNEKGM)
+    IOBAOPKJMAK_CPNANLNEKGM = 7080,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_BLFJPAKHCJP)
+    IOBAOPKJMAK_BLFJPAKHCJP = 7063,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FJODJAIJIHH)
+    IOBAOPKJMAK_FJODJAIJIHH = 7082,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_FDOAMKDLAPP)
+    IOBAOPKJMAK_FDOAMKDLAPP = 7091,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_AFJOPPLFCHO)
+    IOBAOPKJMAK_AFJOPPLFCHO = 7100,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JIBOBDNHAGH)
+    IOBAOPKJMAK_JIBOBDNHAGH = 7053,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_OBMJPNJELGK)
+    IOBAOPKJMAK_OBMJPNJELGK = 7041,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_EMJBHJJADMA)
+    IOBAOPKJMAK_EMJBHJJADMA = 7064,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JEEJIMKDLFO)
+    IOBAOPKJMAK_JEEJIMKDLFO = 7029,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_MEPENIFDMKC)
+    IOBAOPKJMAK_MEPENIFDMKC = 7049,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_DJBOCCHNIGE)
+    IOBAOPKJMAK_DJBOCCHNIGE = 7004,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LOFIBLEIGHK)
+    IOBAOPKJMAK_LOFIBLEIGHK = 7026,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_CEHIPNEEEPN)
+    IOBAOPKJMAK_CEHIPNEEEPN = 7062,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_ALIHGKILONE)
+    IOBAOPKJMAK_ALIHGKILONE = 7070,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_PPBDBMMLOHL)
+    IOBAOPKJMAK_PPBDBMMLOHL = 7016,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_LHFNKIEFNMG)
+    IOBAOPKJMAK_LHFNKIEFNMG = 7077,
+    // @@protoc_insertion_point(enum_value:CmdMonopolyType.IOBAOPKJMAK_JCHIBDHODJL)
+    IOBAOPKJMAK_JCHIBDHODJL = 7036,
 }
 
 impl ::protobuf::Enum for CmdMonopolyType {
@@ -207,89 +207,89 @@ impl ::protobuf::Enum for CmdMonopolyType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdMonopolyType> {
         match value {
             0 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NLCDGIPGFDJ),
-            7082 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC),
-            7001 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK),
-            7037 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI),
-            7054 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO),
-            7018 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ),
-            7055 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG),
-            7057 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA),
-            7067 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO),
-            7007 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE),
-            7028 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML),
-            7072 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP),
-            7059 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL),
-            7003 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD),
-            7026 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH),
-            7066 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE),
-            7061 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO),
-            7035 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO),
-            7076 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK),
-            7008 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA),
-            7010 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK),
-            7022 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE),
-            7089 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC),
-            7005 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF),
-            7032 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP),
-            7080 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE),
-            7043 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN),
-            7020 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ),
-            7065 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP),
-            7040 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO),
-            7086 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE),
-            7090 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB),
-            7092 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO),
-            7056 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC),
-            7025 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG),
-            7063 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ),
-            7011 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD),
-            7034 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK),
-            7085 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP),
-            7038 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL),
-            7053 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON),
-            7091 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL),
-            7023 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL),
-            7074 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM),
-            7078 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED),
-            7084 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP),
-            7097 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP),
-            7015 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA),
-            7013 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA),
-            7021 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO),
-            7052 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK),
-            7024 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN),
-            7075 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE),
-            7016 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG),
-            7046 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH),
-            7042 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE),
-            7029 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF),
-            7087 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK),
-            7068 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI),
-            7009 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL),
-            7070 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK),
-            7058 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC),
-            7093 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN),
-            7064 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH),
-            7048 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN),
-            7099 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI),
-            7083 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF),
-            7079 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ),
-            7049 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK),
-            7044 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ),
+            7043 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK),
+            7045 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN),
+            7059 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ),
+            7003 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG),
+            7012 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO),
+            7098 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC),
+            7028 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK),
+            7005 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN),
+            7079 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC),
+            7021 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE),
+            7075 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF),
+            7074 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC),
+            7051 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ),
+            7013 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK),
+            7084 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO),
+            7094 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB),
+            7030 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK),
+            7083 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP),
+            7093 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE),
+            7085 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP),
+            7015 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON),
+            7032 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ),
+            7011 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK),
+            7072 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL),
+            7095 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL),
+            7087 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK),
+            7096 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI),
+            7060 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE),
+            7090 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH),
+            7046 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP),
+            7071 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF),
+            7006 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL),
+            7055 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE),
+            7068 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA),
+            7035 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG),
+            7048 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO),
+            7042 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN),
+            7034 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ),
             7002 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC),
-            7014 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK),
-            7069 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL),
-            7096 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE),
-            7045 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP),
-            7030 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN),
-            7027 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN),
-            7071 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ),
-            7017 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH),
-            7041 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO),
-            7081 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO),
-            7098 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP),
-            7047 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE),
-            7073 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG),
+            7017 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH),
+            7073 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP),
+            7044 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK),
+            7031 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE),
+            7009 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE),
+            7001 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI),
+            7069 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ),
+            7038 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF),
+            7097 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE),
+            7025 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG),
+            7023 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD),
+            7047 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO),
+            7033 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO),
+            7078 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD),
+            7066 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN),
+            7057 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO),
+            7018 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ),
+            7039 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL),
+            7024 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP),
+            7007 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP),
+            7058 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN),
+            7081 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA),
+            7086 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA),
+            7037 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO),
+            7019 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI),
+            7065 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED),
+            7010 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML),
+            7080 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM),
+            7063 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP),
+            7082 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH),
+            7091 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP),
+            7100 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO),
+            7053 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH),
+            7041 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK),
+            7064 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA),
+            7029 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO),
+            7049 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC),
+            7004 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE),
+            7026 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK),
+            7062 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN),
+            7070 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE),
+            7016 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL),
+            7077 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG),
+            7036 => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL),
             _ => ::std::option::Option::None
         }
     }
@@ -297,178 +297,178 @@ impl ::protobuf::Enum for CmdMonopolyType {
     fn from_str(str: &str) -> ::std::option::Option<CmdMonopolyType> {
         match str {
             "IOBAOPKJMAK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NLCDGIPGFDJ),
-            "IOBAOPKJMAK_MEPENIFDMKC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC),
             "IOBAOPKJMAK_AOFHPBPLAJK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK),
-            "IOBAOPKJMAK_DONOLKALNDI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI),
-            "IOBAOPKJMAK_BLEBNFCENMO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO),
-            "IOBAOPKJMAK_GCJFLEPEKPJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ),
-            "IOBAOPKJMAK_PEFECHJNJJG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG),
-            "IOBAOPKJMAK_EBJFJPEFNFA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA),
-            "IOBAOPKJMAK_JEEJIMKDLFO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO),
-            "IOBAOPKJMAK_DHGAMPOLNPE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE),
-            "IOBAOPKJMAK_IKOKKJHKBML" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML),
-            "IOBAOPKJMAK_JEIKABLOFPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP),
-            "IOBAOPKJMAK_EAHFGFAICAL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL),
-            "IOBAOPKJMAK_HLKHJHFBEPD" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD),
-            "IOBAOPKJMAK_FJODJAIJIHH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH),
-            "IOBAOPKJMAK_IHDEEBJAFGE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE),
-            "IOBAOPKJMAK_JGFFAKIOHJO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO),
-            "IOBAOPKJMAK_HODOMHJKAFO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO),
-            "IOBAOPKJMAK_GNCOLNKIPDK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK),
-            "IOBAOPKJMAK_EMJBHJJADMA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA),
-            "IOBAOPKJMAK_LOFIBLEIGHK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK),
-            "IOBAOPKJMAK_JLBBGECBOEE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE),
-            "IOBAOPKJMAK_DBHDCJKKCAC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC),
-            "IOBAOPKJMAK_GLECHOAGJCF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF),
-            "IOBAOPKJMAK_PDOPBLCLAPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP),
-            "IOBAOPKJMAK_NHOLIOOLLDE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE),
-            "IOBAOPKJMAK_CEHIPNEEEPN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN),
-            "IOBAOPKJMAK_PEFJHJAJECJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ),
-            "IOBAOPKJMAK_FKIJMOAPJDP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP),
-            "IOBAOPKJMAK_BPIIMEDDOLO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO),
-            "IOBAOPKJMAK_ALIHGKILONE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE),
-            "IOBAOPKJMAK_LMDNMBLANAB" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB),
-            "IOBAOPKJMAK_LIFHGBDGMLO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO),
-            "IOBAOPKJMAK_IBMJIIDIOBC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC),
-            "IOBAOPKJMAK_LHFNKIEFNMG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG),
-            "IOBAOPKJMAK_BIMKJEONDAJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ),
-            "IOBAOPKJMAK_NGMPOPPBPAD" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD),
-            "IOBAOPKJMAK_HIPOGNHBDOK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK),
-            "IOBAOPKJMAK_BLFJPAKHCJP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP),
-            "IOBAOPKJMAK_JCHIBDHODJL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL),
-            "IOBAOPKJMAK_MCBBINJHOON" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON),
-            "IOBAOPKJMAK_PPBDBMMLOHL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL),
-            "IOBAOPKJMAK_EOFBLKGCBLL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL),
-            "IOBAOPKJMAK_CPNANLNEKGM" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM),
-            "IOBAOPKJMAK_DEOEOPHAAED" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED),
-            "IOBAOPKJMAK_JPMKKMGPEDP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP),
-            "IOBAOPKJMAK_NOCJMPCELIP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP),
-            "IOBAOPKJMAK_DPGDKBMMMLA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA),
-            "IOBAOPKJMAK_LJFJDMBEJDA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA),
-            "IOBAOPKJMAK_AFJOPPLFCHO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO),
-            "IOBAOPKJMAK_AOOGIEOGAIK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK),
             "IOBAOPKJMAK_EIFFMMGLFGN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN),
-            "IOBAOPKJMAK_ONAFLGDCCNE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE),
-            "IOBAOPKJMAK_IBGMDOKIMJG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG),
-            "IOBAOPKJMAK_HEBEHIEILIH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH),
-            "IOBAOPKJMAK_DJBOCCHNIGE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE),
-            "IOBAOPKJMAK_OGLGOPGGFFF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF),
-            "IOBAOPKJMAK_KOAJGFCLOBK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK),
-            "IOBAOPKJMAK_HKPOJOABGNI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI),
-            "IOBAOPKJMAK_PBHPECJEMDL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL),
-            "IOBAOPKJMAK_BLGGIJFJOFK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK),
-            "IOBAOPKJMAK_JCNMDDPDHGC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC),
-            "IOBAOPKJMAK_GOFJHGJPAHN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN),
-            "IOBAOPKJMAK_ACMDMDHFBJH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH),
-            "IOBAOPKJMAK_LBHLKHEKIDN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN),
-            "IOBAOPKJMAK_CDIMMIDDCOI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI),
-            "IOBAOPKJMAK_PLINPFHHDJF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF),
             "IOBAOPKJMAK_NOMICNNKBGJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ),
-            "IOBAOPKJMAK_OBMJPNJELGK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK),
-            "IOBAOPKJMAK_OKNLKIJDGGJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ),
-            "IOBAOPKJMAK_HBEPBGMKHKC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC),
-            "IOBAOPKJMAK_IFIBKCOOIHK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK),
-            "IOBAOPKJMAK_BAAOFCJKCOL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL),
-            "IOBAOPKJMAK_GICPENPOELE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE),
-            "IOBAOPKJMAK_JMDKFJHGHIP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP),
+            "IOBAOPKJMAK_PEFECHJNJJG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG),
+            "IOBAOPKJMAK_HODOMHJKAFO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO),
+            "IOBAOPKJMAK_JCNMDDPDHGC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC),
+            "IOBAOPKJMAK_HIPOGNHBDOK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK),
             "IOBAOPKJMAK_JCMALMBKBCN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN),
-            "IOBAOPKJMAK_ADHLGBEANKN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN),
-            "IOBAOPKJMAK_LNCPEJACMNJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ),
-            "IOBAOPKJMAK_JIBOBDNHAGH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH),
-            "IOBAOPKJMAK_NPCLKIMCEEO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO),
-            "IOBAOPKJMAK_PHOBNFIPNOO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO),
-            "IOBAOPKJMAK_FDOAMKDLAPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP),
+            "IOBAOPKJMAK_IBMJIIDIOBC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC),
+            "IOBAOPKJMAK_IHDEEBJAFGE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE),
+            "IOBAOPKJMAK_GLECHOAGJCF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF),
+            "IOBAOPKJMAK_DBHDCJKKCAC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC),
+            "IOBAOPKJMAK_GCJFLEPEKPJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ),
+            "IOBAOPKJMAK_KOAJGFCLOBK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK),
+            "IOBAOPKJMAK_LIFHGBDGMLO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO),
+            "IOBAOPKJMAK_LMDNMBLANAB" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB),
+            "IOBAOPKJMAK_AOOGIEOGAIK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK),
+            "IOBAOPKJMAK_NOCJMPCELIP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP),
+            "IOBAOPKJMAK_NHOLIOOLLDE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE),
+            "IOBAOPKJMAK_JEIKABLOFPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP),
+            "IOBAOPKJMAK_MCBBINJHOON" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON),
+            "IOBAOPKJMAK_OKNLKIJDGGJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ),
+            "IOBAOPKJMAK_GNCOLNKIPDK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK),
+            "IOBAOPKJMAK_EAHFGFAICAL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL),
+            "IOBAOPKJMAK_BAAOFCJKCOL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL),
+            "IOBAOPKJMAK_BLGGIJFJOFK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK),
+            "IOBAOPKJMAK_CDIMMIDDCOI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI),
+            "IOBAOPKJMAK_JLBBGECBOEE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE),
+            "IOBAOPKJMAK_ACMDMDHFBJH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH),
+            "IOBAOPKJMAK_JMDKFJHGHIP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP),
+            "IOBAOPKJMAK_OGLGOPGGFFF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF),
+            "IOBAOPKJMAK_EOFBLKGCBLL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL),
+            "IOBAOPKJMAK_GICPENPOELE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE),
+            "IOBAOPKJMAK_EBJFJPEFNFA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA),
+            "IOBAOPKJMAK_IBGMDOKIMJG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG),
+            "IOBAOPKJMAK_JGFFAKIOHJO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO),
+            "IOBAOPKJMAK_LBHLKHEKIDN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN),
+            "IOBAOPKJMAK_PEFJHJAJECJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ),
+            "IOBAOPKJMAK_HBEPBGMKHKC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC),
+            "IOBAOPKJMAK_HEBEHIEILIH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH),
+            "IOBAOPKJMAK_PDOPBLCLAPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP),
+            "IOBAOPKJMAK_IFIBKCOOIHK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK),
+            "IOBAOPKJMAK_DHGAMPOLNPE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE),
             "IOBAOPKJMAK_BGLDMCKBAKE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE),
+            "IOBAOPKJMAK_HKPOJOABGNI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI),
+            "IOBAOPKJMAK_LNCPEJACMNJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ),
+            "IOBAOPKJMAK_PLINPFHHDJF" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF),
+            "IOBAOPKJMAK_ONAFLGDCCNE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE),
             "IOBAOPKJMAK_JKJLAPCIDFG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG),
+            "IOBAOPKJMAK_NGMPOPPBPAD" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD),
+            "IOBAOPKJMAK_PHOBNFIPNOO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO),
+            "IOBAOPKJMAK_BLEBNFCENMO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO),
+            "IOBAOPKJMAK_HLKHJHFBEPD" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD),
+            "IOBAOPKJMAK_GOFJHGJPAHN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN),
+            "IOBAOPKJMAK_BPIIMEDDOLO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO),
+            "IOBAOPKJMAK_BIMKJEONDAJ" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ),
+            "IOBAOPKJMAK_PBHPECJEMDL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL),
+            "IOBAOPKJMAK_JPMKKMGPEDP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP),
+            "IOBAOPKJMAK_FKIJMOAPJDP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP),
+            "IOBAOPKJMAK_ADHLGBEANKN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN),
+            "IOBAOPKJMAK_LJFJDMBEJDA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA),
+            "IOBAOPKJMAK_DPGDKBMMMLA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA),
+            "IOBAOPKJMAK_NPCLKIMCEEO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO),
+            "IOBAOPKJMAK_DONOLKALNDI" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI),
+            "IOBAOPKJMAK_DEOEOPHAAED" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED),
+            "IOBAOPKJMAK_IKOKKJHKBML" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML),
+            "IOBAOPKJMAK_CPNANLNEKGM" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM),
+            "IOBAOPKJMAK_BLFJPAKHCJP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP),
+            "IOBAOPKJMAK_FJODJAIJIHH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH),
+            "IOBAOPKJMAK_FDOAMKDLAPP" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP),
+            "IOBAOPKJMAK_AFJOPPLFCHO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO),
+            "IOBAOPKJMAK_JIBOBDNHAGH" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH),
+            "IOBAOPKJMAK_OBMJPNJELGK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK),
+            "IOBAOPKJMAK_EMJBHJJADMA" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA),
+            "IOBAOPKJMAK_JEEJIMKDLFO" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO),
+            "IOBAOPKJMAK_MEPENIFDMKC" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC),
+            "IOBAOPKJMAK_DJBOCCHNIGE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE),
+            "IOBAOPKJMAK_LOFIBLEIGHK" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK),
+            "IOBAOPKJMAK_CEHIPNEEEPN" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN),
+            "IOBAOPKJMAK_ALIHGKILONE" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE),
+            "IOBAOPKJMAK_PPBDBMMLOHL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL),
+            "IOBAOPKJMAK_LHFNKIEFNMG" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG),
+            "IOBAOPKJMAK_JCHIBDHODJL" => ::std::option::Option::Some(CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMonopolyType] = &[
         CmdMonopolyType::IOBAOPKJMAK_NLCDGIPGFDJ,
-        CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC,
         CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK,
-        CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI,
-        CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO,
-        CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ,
-        CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG,
-        CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA,
-        CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO,
-        CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE,
-        CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML,
-        CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP,
-        CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL,
-        CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD,
-        CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH,
-        CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE,
-        CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO,
-        CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO,
-        CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK,
-        CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA,
-        CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK,
-        CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE,
-        CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC,
-        CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF,
-        CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP,
-        CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE,
-        CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN,
-        CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ,
-        CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP,
-        CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO,
-        CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE,
-        CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB,
-        CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO,
-        CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC,
-        CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG,
-        CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ,
-        CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD,
-        CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK,
-        CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP,
-        CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL,
-        CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON,
-        CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL,
-        CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL,
-        CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM,
-        CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED,
-        CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP,
-        CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP,
-        CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA,
-        CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA,
-        CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO,
-        CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK,
         CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN,
-        CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE,
-        CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG,
-        CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH,
-        CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE,
-        CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF,
-        CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK,
-        CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI,
-        CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL,
-        CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK,
-        CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC,
-        CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN,
-        CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH,
-        CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN,
-        CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI,
-        CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF,
         CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ,
-        CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK,
-        CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ,
-        CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC,
-        CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK,
-        CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL,
-        CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE,
-        CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP,
+        CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG,
+        CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO,
+        CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC,
+        CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK,
         CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN,
-        CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN,
-        CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ,
-        CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH,
-        CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO,
-        CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO,
-        CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP,
+        CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC,
+        CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE,
+        CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF,
+        CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC,
+        CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ,
+        CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK,
+        CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO,
+        CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB,
+        CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK,
+        CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP,
+        CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE,
+        CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP,
+        CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON,
+        CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ,
+        CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK,
+        CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL,
+        CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL,
+        CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK,
+        CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI,
+        CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE,
+        CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH,
+        CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP,
+        CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF,
+        CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL,
+        CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE,
+        CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA,
+        CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG,
+        CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO,
+        CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN,
+        CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ,
+        CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC,
+        CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH,
+        CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP,
+        CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK,
+        CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE,
         CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE,
+        CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI,
+        CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ,
+        CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF,
+        CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE,
         CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG,
+        CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD,
+        CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO,
+        CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO,
+        CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD,
+        CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN,
+        CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO,
+        CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ,
+        CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL,
+        CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP,
+        CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP,
+        CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN,
+        CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA,
+        CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA,
+        CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO,
+        CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI,
+        CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED,
+        CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML,
+        CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM,
+        CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP,
+        CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH,
+        CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP,
+        CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO,
+        CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH,
+        CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK,
+        CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA,
+        CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO,
+        CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC,
+        CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE,
+        CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK,
+        CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN,
+        CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE,
+        CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL,
+        CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG,
+        CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL,
     ];
 }
 
@@ -481,89 +481,89 @@ impl ::protobuf::EnumFull for CmdMonopolyType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdMonopolyType::IOBAOPKJMAK_NLCDGIPGFDJ => 0,
-            CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC => 1,
-            CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK => 2,
-            CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI => 3,
-            CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO => 4,
-            CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ => 5,
-            CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG => 6,
-            CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA => 7,
-            CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO => 8,
-            CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE => 9,
-            CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML => 10,
-            CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP => 11,
-            CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL => 12,
-            CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD => 13,
-            CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH => 14,
-            CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE => 15,
-            CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO => 16,
-            CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO => 17,
-            CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK => 18,
-            CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA => 19,
-            CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK => 20,
-            CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE => 21,
-            CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC => 22,
-            CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF => 23,
-            CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP => 24,
-            CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE => 25,
-            CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN => 26,
-            CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ => 27,
-            CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP => 28,
-            CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO => 29,
-            CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE => 30,
-            CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB => 31,
-            CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO => 32,
-            CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC => 33,
-            CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG => 34,
-            CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ => 35,
-            CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD => 36,
-            CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK => 37,
-            CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP => 38,
-            CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL => 39,
-            CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON => 40,
-            CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL => 41,
-            CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL => 42,
-            CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM => 43,
-            CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED => 44,
-            CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP => 45,
-            CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP => 46,
-            CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA => 47,
-            CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA => 48,
-            CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO => 49,
-            CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK => 50,
-            CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN => 51,
-            CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE => 52,
-            CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG => 53,
-            CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH => 54,
-            CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE => 55,
-            CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF => 56,
-            CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK => 57,
-            CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI => 58,
-            CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL => 59,
-            CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK => 60,
-            CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC => 61,
-            CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN => 62,
-            CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH => 63,
-            CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN => 64,
-            CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI => 65,
-            CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF => 66,
-            CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ => 67,
-            CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK => 68,
-            CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ => 69,
-            CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC => 70,
-            CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK => 71,
-            CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL => 72,
-            CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE => 73,
-            CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP => 74,
-            CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN => 75,
-            CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN => 76,
-            CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ => 77,
-            CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH => 78,
-            CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO => 79,
-            CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO => 80,
-            CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP => 81,
-            CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE => 82,
-            CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG => 83,
+            CmdMonopolyType::IOBAOPKJMAK_AOFHPBPLAJK => 1,
+            CmdMonopolyType::IOBAOPKJMAK_EIFFMMGLFGN => 2,
+            CmdMonopolyType::IOBAOPKJMAK_NOMICNNKBGJ => 3,
+            CmdMonopolyType::IOBAOPKJMAK_PEFECHJNJJG => 4,
+            CmdMonopolyType::IOBAOPKJMAK_HODOMHJKAFO => 5,
+            CmdMonopolyType::IOBAOPKJMAK_JCNMDDPDHGC => 6,
+            CmdMonopolyType::IOBAOPKJMAK_HIPOGNHBDOK => 7,
+            CmdMonopolyType::IOBAOPKJMAK_JCMALMBKBCN => 8,
+            CmdMonopolyType::IOBAOPKJMAK_IBMJIIDIOBC => 9,
+            CmdMonopolyType::IOBAOPKJMAK_IHDEEBJAFGE => 10,
+            CmdMonopolyType::IOBAOPKJMAK_GLECHOAGJCF => 11,
+            CmdMonopolyType::IOBAOPKJMAK_DBHDCJKKCAC => 12,
+            CmdMonopolyType::IOBAOPKJMAK_GCJFLEPEKPJ => 13,
+            CmdMonopolyType::IOBAOPKJMAK_KOAJGFCLOBK => 14,
+            CmdMonopolyType::IOBAOPKJMAK_LIFHGBDGMLO => 15,
+            CmdMonopolyType::IOBAOPKJMAK_LMDNMBLANAB => 16,
+            CmdMonopolyType::IOBAOPKJMAK_AOOGIEOGAIK => 17,
+            CmdMonopolyType::IOBAOPKJMAK_NOCJMPCELIP => 18,
+            CmdMonopolyType::IOBAOPKJMAK_NHOLIOOLLDE => 19,
+            CmdMonopolyType::IOBAOPKJMAK_JEIKABLOFPP => 20,
+            CmdMonopolyType::IOBAOPKJMAK_MCBBINJHOON => 21,
+            CmdMonopolyType::IOBAOPKJMAK_OKNLKIJDGGJ => 22,
+            CmdMonopolyType::IOBAOPKJMAK_GNCOLNKIPDK => 23,
+            CmdMonopolyType::IOBAOPKJMAK_EAHFGFAICAL => 24,
+            CmdMonopolyType::IOBAOPKJMAK_BAAOFCJKCOL => 25,
+            CmdMonopolyType::IOBAOPKJMAK_BLGGIJFJOFK => 26,
+            CmdMonopolyType::IOBAOPKJMAK_CDIMMIDDCOI => 27,
+            CmdMonopolyType::IOBAOPKJMAK_JLBBGECBOEE => 28,
+            CmdMonopolyType::IOBAOPKJMAK_ACMDMDHFBJH => 29,
+            CmdMonopolyType::IOBAOPKJMAK_JMDKFJHGHIP => 30,
+            CmdMonopolyType::IOBAOPKJMAK_OGLGOPGGFFF => 31,
+            CmdMonopolyType::IOBAOPKJMAK_EOFBLKGCBLL => 32,
+            CmdMonopolyType::IOBAOPKJMAK_GICPENPOELE => 33,
+            CmdMonopolyType::IOBAOPKJMAK_EBJFJPEFNFA => 34,
+            CmdMonopolyType::IOBAOPKJMAK_IBGMDOKIMJG => 35,
+            CmdMonopolyType::IOBAOPKJMAK_JGFFAKIOHJO => 36,
+            CmdMonopolyType::IOBAOPKJMAK_LBHLKHEKIDN => 37,
+            CmdMonopolyType::IOBAOPKJMAK_PEFJHJAJECJ => 38,
+            CmdMonopolyType::IOBAOPKJMAK_HBEPBGMKHKC => 39,
+            CmdMonopolyType::IOBAOPKJMAK_HEBEHIEILIH => 40,
+            CmdMonopolyType::IOBAOPKJMAK_PDOPBLCLAPP => 41,
+            CmdMonopolyType::IOBAOPKJMAK_IFIBKCOOIHK => 42,
+            CmdMonopolyType::IOBAOPKJMAK_DHGAMPOLNPE => 43,
+            CmdMonopolyType::IOBAOPKJMAK_BGLDMCKBAKE => 44,
+            CmdMonopolyType::IOBAOPKJMAK_HKPOJOABGNI => 45,
+            CmdMonopolyType::IOBAOPKJMAK_LNCPEJACMNJ => 46,
+            CmdMonopolyType::IOBAOPKJMAK_PLINPFHHDJF => 47,
+            CmdMonopolyType::IOBAOPKJMAK_ONAFLGDCCNE => 48,
+            CmdMonopolyType::IOBAOPKJMAK_JKJLAPCIDFG => 49,
+            CmdMonopolyType::IOBAOPKJMAK_NGMPOPPBPAD => 50,
+            CmdMonopolyType::IOBAOPKJMAK_PHOBNFIPNOO => 51,
+            CmdMonopolyType::IOBAOPKJMAK_BLEBNFCENMO => 52,
+            CmdMonopolyType::IOBAOPKJMAK_HLKHJHFBEPD => 53,
+            CmdMonopolyType::IOBAOPKJMAK_GOFJHGJPAHN => 54,
+            CmdMonopolyType::IOBAOPKJMAK_BPIIMEDDOLO => 55,
+            CmdMonopolyType::IOBAOPKJMAK_BIMKJEONDAJ => 56,
+            CmdMonopolyType::IOBAOPKJMAK_PBHPECJEMDL => 57,
+            CmdMonopolyType::IOBAOPKJMAK_JPMKKMGPEDP => 58,
+            CmdMonopolyType::IOBAOPKJMAK_FKIJMOAPJDP => 59,
+            CmdMonopolyType::IOBAOPKJMAK_ADHLGBEANKN => 60,
+            CmdMonopolyType::IOBAOPKJMAK_LJFJDMBEJDA => 61,
+            CmdMonopolyType::IOBAOPKJMAK_DPGDKBMMMLA => 62,
+            CmdMonopolyType::IOBAOPKJMAK_NPCLKIMCEEO => 63,
+            CmdMonopolyType::IOBAOPKJMAK_DONOLKALNDI => 64,
+            CmdMonopolyType::IOBAOPKJMAK_DEOEOPHAAED => 65,
+            CmdMonopolyType::IOBAOPKJMAK_IKOKKJHKBML => 66,
+            CmdMonopolyType::IOBAOPKJMAK_CPNANLNEKGM => 67,
+            CmdMonopolyType::IOBAOPKJMAK_BLFJPAKHCJP => 68,
+            CmdMonopolyType::IOBAOPKJMAK_FJODJAIJIHH => 69,
+            CmdMonopolyType::IOBAOPKJMAK_FDOAMKDLAPP => 70,
+            CmdMonopolyType::IOBAOPKJMAK_AFJOPPLFCHO => 71,
+            CmdMonopolyType::IOBAOPKJMAK_JIBOBDNHAGH => 72,
+            CmdMonopolyType::IOBAOPKJMAK_OBMJPNJELGK => 73,
+            CmdMonopolyType::IOBAOPKJMAK_EMJBHJJADMA => 74,
+            CmdMonopolyType::IOBAOPKJMAK_JEEJIMKDLFO => 75,
+            CmdMonopolyType::IOBAOPKJMAK_MEPENIFDMKC => 76,
+            CmdMonopolyType::IOBAOPKJMAK_DJBOCCHNIGE => 77,
+            CmdMonopolyType::IOBAOPKJMAK_LOFIBLEIGHK => 78,
+            CmdMonopolyType::IOBAOPKJMAK_CEHIPNEEEPN => 79,
+            CmdMonopolyType::IOBAOPKJMAK_ALIHGKILONE => 80,
+            CmdMonopolyType::IOBAOPKJMAK_PPBDBMMLOHL => 81,
+            CmdMonopolyType::IOBAOPKJMAK_LHFNKIEFNMG => 82,
+            CmdMonopolyType::IOBAOPKJMAK_JCHIBDHODJL => 83,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -583,60 +583,60 @@ impl CmdMonopolyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdMonopolyType.proto*\xe8\x13\n\x0fCmdMonopolyType\x12\x1b\n\x17I\
-    OBAOPKJMAK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IOBAOPKJMAK_MEPENIFDMKC\x10\
-    \xaa7\x12\x1c\n\x17IOBAOPKJMAK_AOFHPBPLAJK\x10\xd96\x12\x1c\n\x17IOBAOPK\
-    JMAK_DONOLKALNDI\x10\xfd6\x12\x1c\n\x17IOBAOPKJMAK_BLEBNFCENMO\x10\x8e7\
-    \x12\x1c\n\x17IOBAOPKJMAK_GCJFLEPEKPJ\x10\xea6\x12\x1c\n\x17IOBAOPKJMAK_\
-    PEFECHJNJJG\x10\x8f7\x12\x1c\n\x17IOBAOPKJMAK_EBJFJPEFNFA\x10\x917\x12\
-    \x1c\n\x17IOBAOPKJMAK_JEEJIMKDLFO\x10\x9b7\x12\x1c\n\x17IOBAOPKJMAK_DHGA\
-    MPOLNPE\x10\xdf6\x12\x1c\n\x17IOBAOPKJMAK_IKOKKJHKBML\x10\xf46\x12\x1c\n\
-    \x17IOBAOPKJMAK_JEIKABLOFPP\x10\xa07\x12\x1c\n\x17IOBAOPKJMAK_EAHFGFAICA\
-    L\x10\x937\x12\x1c\n\x17IOBAOPKJMAK_HLKHJHFBEPD\x10\xdb6\x12\x1c\n\x17IO\
-    BAOPKJMAK_FJODJAIJIHH\x10\xf26\x12\x1c\n\x17IOBAOPKJMAK_IHDEEBJAFGE\x10\
-    \x9a7\x12\x1c\n\x17IOBAOPKJMAK_JGFFAKIOHJO\x10\x957\x12\x1c\n\x17IOBAOPK\
-    JMAK_HODOMHJKAFO\x10\xfb6\x12\x1c\n\x17IOBAOPKJMAK_GNCOLNKIPDK\x10\xa47\
-    \x12\x1c\n\x17IOBAOPKJMAK_EMJBHJJADMA\x10\xe06\x12\x1c\n\x17IOBAOPKJMAK_\
-    LOFIBLEIGHK\x10\xe26\x12\x1c\n\x17IOBAOPKJMAK_JLBBGECBOEE\x10\xee6\x12\
-    \x1c\n\x17IOBAOPKJMAK_DBHDCJKKCAC\x10\xb17\x12\x1c\n\x17IOBAOPKJMAK_GLEC\
-    HOAGJCF\x10\xdd6\x12\x1c\n\x17IOBAOPKJMAK_PDOPBLCLAPP\x10\xf86\x12\x1c\n\
-    \x17IOBAOPKJMAK_NHOLIOOLLDE\x10\xa87\x12\x1c\n\x17IOBAOPKJMAK_CEHIPNEEEP\
-    N\x10\x837\x12\x1c\n\x17IOBAOPKJMAK_PEFJHJAJECJ\x10\xec6\x12\x1c\n\x17IO\
-    BAOPKJMAK_FKIJMOAPJDP\x10\x997\x12\x1c\n\x17IOBAOPKJMAK_BPIIMEDDOLO\x10\
-    \x807\x12\x1c\n\x17IOBAOPKJMAK_ALIHGKILONE\x10\xae7\x12\x1c\n\x17IOBAOPK\
-    JMAK_LMDNMBLANAB\x10\xb27\x12\x1c\n\x17IOBAOPKJMAK_LIFHGBDGMLO\x10\xb47\
-    \x12\x1c\n\x17IOBAOPKJMAK_IBMJIIDIOBC\x10\x907\x12\x1c\n\x17IOBAOPKJMAK_\
-    LHFNKIEFNMG\x10\xf16\x12\x1c\n\x17IOBAOPKJMAK_BIMKJEONDAJ\x10\x977\x12\
-    \x1c\n\x17IOBAOPKJMAK_NGMPOPPBPAD\x10\xe36\x12\x1c\n\x17IOBAOPKJMAK_HIPO\
-    GNHBDOK\x10\xfa6\x12\x1c\n\x17IOBAOPKJMAK_BLFJPAKHCJP\x10\xad7\x12\x1c\n\
-    \x17IOBAOPKJMAK_JCHIBDHODJL\x10\xfe6\x12\x1c\n\x17IOBAOPKJMAK_MCBBINJHOO\
-    N\x10\x8d7\x12\x1c\n\x17IOBAOPKJMAK_PPBDBMMLOHL\x10\xb37\x12\x1c\n\x17IO\
-    BAOPKJMAK_EOFBLKGCBLL\x10\xef6\x12\x1c\n\x17IOBAOPKJMAK_CPNANLNEKGM\x10\
-    \xa27\x12\x1c\n\x17IOBAOPKJMAK_DEOEOPHAAED\x10\xa67\x12\x1c\n\x17IOBAOPK\
-    JMAK_JPMKKMGPEDP\x10\xac7\x12\x1c\n\x17IOBAOPKJMAK_NOCJMPCELIP\x10\xb97\
-    \x12\x1c\n\x17IOBAOPKJMAK_DPGDKBMMMLA\x10\xe76\x12\x1c\n\x17IOBAOPKJMAK_\
-    LJFJDMBEJDA\x10\xe56\x12\x1c\n\x17IOBAOPKJMAK_AFJOPPLFCHO\x10\xed6\x12\
-    \x1c\n\x17IOBAOPKJMAK_AOOGIEOGAIK\x10\x8c7\x12\x1c\n\x17IOBAOPKJMAK_EIFF\
-    MMGLFGN\x10\xf06\x12\x1c\n\x17IOBAOPKJMAK_ONAFLGDCCNE\x10\xa37\x12\x1c\n\
-    \x17IOBAOPKJMAK_IBGMDOKIMJG\x10\xe86\x12\x1c\n\x17IOBAOPKJMAK_HEBEHIEILI\
-    H\x10\x867\x12\x1c\n\x17IOBAOPKJMAK_DJBOCCHNIGE\x10\x827\x12\x1c\n\x17IO\
-    BAOPKJMAK_OGLGOPGGFFF\x10\xf56\x12\x1c\n\x17IOBAOPKJMAK_KOAJGFCLOBK\x10\
-    \xaf7\x12\x1c\n\x17IOBAOPKJMAK_HKPOJOABGNI\x10\x9c7\x12\x1c\n\x17IOBAOPK\
-    JMAK_PBHPECJEMDL\x10\xe16\x12\x1c\n\x17IOBAOPKJMAK_BLGGIJFJOFK\x10\x9e7\
-    \x12\x1c\n\x17IOBAOPKJMAK_JCNMDDPDHGC\x10\x927\x12\x1c\n\x17IOBAOPKJMAK_\
-    GOFJHGJPAHN\x10\xb57\x12\x1c\n\x17IOBAOPKJMAK_ACMDMDHFBJH\x10\x987\x12\
-    \x1c\n\x17IOBAOPKJMAK_LBHLKHEKIDN\x10\x887\x12\x1c\n\x17IOBAOPKJMAK_CDIM\
-    MIDDCOI\x10\xbb7\x12\x1c\n\x17IOBAOPKJMAK_PLINPFHHDJF\x10\xab7\x12\x1c\n\
-    \x17IOBAOPKJMAK_NOMICNNKBGJ\x10\xa77\x12\x1c\n\x17IOBAOPKJMAK_OBMJPNJELG\
-    K\x10\x897\x12\x1c\n\x17IOBAOPKJMAK_OKNLKIJDGGJ\x10\x847\x12\x1c\n\x17IO\
-    BAOPKJMAK_HBEPBGMKHKC\x10\xda6\x12\x1c\n\x17IOBAOPKJMAK_IFIBKCOOIHK\x10\
-    \xe66\x12\x1c\n\x17IOBAOPKJMAK_BAAOFCJKCOL\x10\x9d7\x12\x1c\n\x17IOBAOPK\
-    JMAK_GICPENPOELE\x10\xb87\x12\x1c\n\x17IOBAOPKJMAK_JMDKFJHGHIP\x10\x857\
-    \x12\x1c\n\x17IOBAOPKJMAK_JCMALMBKBCN\x10\xf66\x12\x1c\n\x17IOBAOPKJMAK_\
-    ADHLGBEANKN\x10\xf36\x12\x1c\n\x17IOBAOPKJMAK_LNCPEJACMNJ\x10\x9f7\x12\
-    \x1c\n\x17IOBAOPKJMAK_JIBOBDNHAGH\x10\xe96\x12\x1c\n\x17IOBAOPKJMAK_NPCL\
-    KIMCEEO\x10\x817\x12\x1c\n\x17IOBAOPKJMAK_PHOBNFIPNOO\x10\xa97\x12\x1c\n\
-    \x17IOBAOPKJMAK_FDOAMKDLAPP\x10\xba7\x12\x1c\n\x17IOBAOPKJMAK_BGLDMCKBAK\
-    E\x10\x877\x12\x1c\n\x17IOBAOPKJMAK_JKJLAPCIDFG\x10\xa17b\x06proto3\
+    OBAOPKJMAK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IOBAOPKJMAK_AOFHPBPLAJK\x10\
+    \x837\x12\x1c\n\x17IOBAOPKJMAK_EIFFMMGLFGN\x10\x857\x12\x1c\n\x17IOBAOPK\
+    JMAK_NOMICNNKBGJ\x10\x937\x12\x1c\n\x17IOBAOPKJMAK_PEFECHJNJJG\x10\xdb6\
+    \x12\x1c\n\x17IOBAOPKJMAK_HODOMHJKAFO\x10\xe46\x12\x1c\n\x17IOBAOPKJMAK_\
+    JCNMDDPDHGC\x10\xba7\x12\x1c\n\x17IOBAOPKJMAK_HIPOGNHBDOK\x10\xf46\x12\
+    \x1c\n\x17IOBAOPKJMAK_JCMALMBKBCN\x10\xdd6\x12\x1c\n\x17IOBAOPKJMAK_IBMJ\
+    IIDIOBC\x10\xa77\x12\x1c\n\x17IOBAOPKJMAK_IHDEEBJAFGE\x10\xed6\x12\x1c\n\
+    \x17IOBAOPKJMAK_GLECHOAGJCF\x10\xa37\x12\x1c\n\x17IOBAOPKJMAK_DBHDCJKKCA\
+    C\x10\xa27\x12\x1c\n\x17IOBAOPKJMAK_GCJFLEPEKPJ\x10\x8b7\x12\x1c\n\x17IO\
+    BAOPKJMAK_KOAJGFCLOBK\x10\xe56\x12\x1c\n\x17IOBAOPKJMAK_LIFHGBDGMLO\x10\
+    \xac7\x12\x1c\n\x17IOBAOPKJMAK_LMDNMBLANAB\x10\xb67\x12\x1c\n\x17IOBAOPK\
+    JMAK_AOOGIEOGAIK\x10\xf66\x12\x1c\n\x17IOBAOPKJMAK_NOCJMPCELIP\x10\xab7\
+    \x12\x1c\n\x17IOBAOPKJMAK_NHOLIOOLLDE\x10\xb57\x12\x1c\n\x17IOBAOPKJMAK_\
+    JEIKABLOFPP\x10\xad7\x12\x1c\n\x17IOBAOPKJMAK_MCBBINJHOON\x10\xe76\x12\
+    \x1c\n\x17IOBAOPKJMAK_OKNLKIJDGGJ\x10\xf86\x12\x1c\n\x17IOBAOPKJMAK_GNCO\
+    LNKIPDK\x10\xe36\x12\x1c\n\x17IOBAOPKJMAK_EAHFGFAICAL\x10\xa07\x12\x1c\n\
+    \x17IOBAOPKJMAK_BAAOFCJKCOL\x10\xb77\x12\x1c\n\x17IOBAOPKJMAK_BLGGIJFJOF\
+    K\x10\xaf7\x12\x1c\n\x17IOBAOPKJMAK_CDIMMIDDCOI\x10\xb87\x12\x1c\n\x17IO\
+    BAOPKJMAK_JLBBGECBOEE\x10\x947\x12\x1c\n\x17IOBAOPKJMAK_ACMDMDHFBJH\x10\
+    \xb27\x12\x1c\n\x17IOBAOPKJMAK_JMDKFJHGHIP\x10\x867\x12\x1c\n\x17IOBAOPK\
+    JMAK_OGLGOPGGFFF\x10\x9f7\x12\x1c\n\x17IOBAOPKJMAK_EOFBLKGCBLL\x10\xde6\
+    \x12\x1c\n\x17IOBAOPKJMAK_GICPENPOELE\x10\x8f7\x12\x1c\n\x17IOBAOPKJMAK_\
+    EBJFJPEFNFA\x10\x9c7\x12\x1c\n\x17IOBAOPKJMAK_IBGMDOKIMJG\x10\xfb6\x12\
+    \x1c\n\x17IOBAOPKJMAK_JGFFAKIOHJO\x10\x887\x12\x1c\n\x17IOBAOPKJMAK_LBHL\
+    KHEKIDN\x10\x827\x12\x1c\n\x17IOBAOPKJMAK_PEFJHJAJECJ\x10\xfa6\x12\x1c\n\
+    \x17IOBAOPKJMAK_HBEPBGMKHKC\x10\xda6\x12\x1c\n\x17IOBAOPKJMAK_HEBEHIEILI\
+    H\x10\xe96\x12\x1c\n\x17IOBAOPKJMAK_PDOPBLCLAPP\x10\xa17\x12\x1c\n\x17IO\
+    BAOPKJMAK_IFIBKCOOIHK\x10\x847\x12\x1c\n\x17IOBAOPKJMAK_DHGAMPOLNPE\x10\
+    \xf76\x12\x1c\n\x17IOBAOPKJMAK_BGLDMCKBAKE\x10\xe16\x12\x1c\n\x17IOBAOPK\
+    JMAK_HKPOJOABGNI\x10\xd96\x12\x1c\n\x17IOBAOPKJMAK_LNCPEJACMNJ\x10\x9d7\
+    \x12\x1c\n\x17IOBAOPKJMAK_PLINPFHHDJF\x10\xfe6\x12\x1c\n\x17IOBAOPKJMAK_\
+    ONAFLGDCCNE\x10\xb97\x12\x1c\n\x17IOBAOPKJMAK_JKJLAPCIDFG\x10\xf16\x12\
+    \x1c\n\x17IOBAOPKJMAK_NGMPOPPBPAD\x10\xef6\x12\x1c\n\x17IOBAOPKJMAK_PHOB\
+    NFIPNOO\x10\x877\x12\x1c\n\x17IOBAOPKJMAK_BLEBNFCENMO\x10\xf96\x12\x1c\n\
+    \x17IOBAOPKJMAK_HLKHJHFBEPD\x10\xa67\x12\x1c\n\x17IOBAOPKJMAK_GOFJHGJPAH\
+    N\x10\x9a7\x12\x1c\n\x17IOBAOPKJMAK_BPIIMEDDOLO\x10\x917\x12\x1c\n\x17IO\
+    BAOPKJMAK_BIMKJEONDAJ\x10\xea6\x12\x1c\n\x17IOBAOPKJMAK_PBHPECJEMDL\x10\
+    \xff6\x12\x1c\n\x17IOBAOPKJMAK_JPMKKMGPEDP\x10\xf06\x12\x1c\n\x17IOBAOPK\
+    JMAK_FKIJMOAPJDP\x10\xdf6\x12\x1c\n\x17IOBAOPKJMAK_ADHLGBEANKN\x10\x927\
+    \x12\x1c\n\x17IOBAOPKJMAK_LJFJDMBEJDA\x10\xa97\x12\x1c\n\x17IOBAOPKJMAK_\
+    DPGDKBMMMLA\x10\xae7\x12\x1c\n\x17IOBAOPKJMAK_NPCLKIMCEEO\x10\xfd6\x12\
+    \x1c\n\x17IOBAOPKJMAK_DONOLKALNDI\x10\xeb6\x12\x1c\n\x17IOBAOPKJMAK_DEOE\
+    OPHAAED\x10\x997\x12\x1c\n\x17IOBAOPKJMAK_IKOKKJHKBML\x10\xe26\x12\x1c\n\
+    \x17IOBAOPKJMAK_CPNANLNEKGM\x10\xa87\x12\x1c\n\x17IOBAOPKJMAK_BLFJPAKHCJ\
+    P\x10\x977\x12\x1c\n\x17IOBAOPKJMAK_FJODJAIJIHH\x10\xaa7\x12\x1c\n\x17IO\
+    BAOPKJMAK_FDOAMKDLAPP\x10\xb37\x12\x1c\n\x17IOBAOPKJMAK_AFJOPPLFCHO\x10\
+    \xbc7\x12\x1c\n\x17IOBAOPKJMAK_JIBOBDNHAGH\x10\x8d7\x12\x1c\n\x17IOBAOPK\
+    JMAK_OBMJPNJELGK\x10\x817\x12\x1c\n\x17IOBAOPKJMAK_EMJBHJJADMA\x10\x987\
+    \x12\x1c\n\x17IOBAOPKJMAK_JEEJIMKDLFO\x10\xf56\x12\x1c\n\x17IOBAOPKJMAK_\
+    MEPENIFDMKC\x10\x897\x12\x1c\n\x17IOBAOPKJMAK_DJBOCCHNIGE\x10\xdc6\x12\
+    \x1c\n\x17IOBAOPKJMAK_LOFIBLEIGHK\x10\xf26\x12\x1c\n\x17IOBAOPKJMAK_CEHI\
+    PNEEEPN\x10\x967\x12\x1c\n\x17IOBAOPKJMAK_ALIHGKILONE\x10\x9e7\x12\x1c\n\
+    \x17IOBAOPKJMAK_PPBDBMMLOHL\x10\xe86\x12\x1c\n\x17IOBAOPKJMAK_LHFNKIEFNM\
+    G\x10\xa57\x12\x1c\n\x17IOBAOPKJMAK_JCHIBDHODJL\x10\xfc6b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

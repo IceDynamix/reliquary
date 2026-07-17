@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OFDMHDODALP {
     // message fields
-    // @@protoc_insertion_point(field:OFDMHDODALP.LFPABLEIKKE)
-    pub LFPABLEIKKE: u32,
     // @@protoc_insertion_point(field:OFDMHDODALP.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:OFDMHDODALP.LFPABLEIKKE)
+    pub LFPABLEIKKE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OFDMHDODALP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl OFDMHDODALP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFPABLEIKKE",
-            |m: &OFDMHDODALP| { &m.LFPABLEIKKE },
-            |m: &mut OFDMHDODALP| { &mut m.LFPABLEIKKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &OFDMHDODALP| { &m.retcode },
             |m: &mut OFDMHDODALP| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFPABLEIKKE",
+            |m: &OFDMHDODALP| { &m.LFPABLEIKKE },
+            |m: &mut OFDMHDODALP| { &mut m.LFPABLEIKKE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OFDMHDODALP>(
             "OFDMHDODALP",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OFDMHDODALP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.LFPABLEIKKE = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                32 => {
+                    self.LFPABLEIKKE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for OFDMHDODALP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LFPABLEIKKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LFPABLEIKKE);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.LFPABLEIKKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LFPABLEIKKE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for OFDMHDODALP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LFPABLEIKKE != 0 {
-            os.write_uint32(11, self.LFPABLEIKKE)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
+        }
+        if self.LFPABLEIKKE != 0 {
+            os.write_uint32(4, self.LFPABLEIKKE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for OFDMHDODALP {
     }
 
     fn clear(&mut self) {
-        self.LFPABLEIKKE = 0;
         self.retcode = 0;
+        self.LFPABLEIKKE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OFDMHDODALP {
         static instance: OFDMHDODALP = OFDMHDODALP {
-            LFPABLEIKKE: 0,
             retcode: 0,
+            LFPABLEIKKE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for OFDMHDODALP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OFDMHDODALP.proto\"I\n\x0bOFDMHDODALP\x12\x20\n\x0bLFPABLEIKKE\x18\
-    \x0b\x20\x01(\rR\x0bLFPABLEIKKE\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n\x11OFDMHDODALP.proto\"I\n\x0bOFDMHDODALP\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bLFPABLEIKKE\x18\x04\x20\x01(\rR\x0b\
+    LFPABLEIKKEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

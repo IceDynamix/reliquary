@@ -29,144 +29,140 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdPlayerType {
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_NLCDGIPGFDJ)
     KIDBFKJEJJD_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KOKCPOPBBCD)
-    KIDBFKJEJJD_KOKCPOPBBCD = 52,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AIHKMIKNPOH)
-    KIDBFKJEJJD_AIHKMIKNPOH = 13,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DHHMBIGPPFB)
-    KIDBFKJEJJD_DHHMBIGPPFB = 6,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JHFOOFEBNEL)
-    KIDBFKJEJJD_JHFOOFEBNEL = 87,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLAAGBFPKPH)
-    KIDBFKJEJJD_HLAAGBFPKPH = 98,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AGHGBNPIOGK)
-    KIDBFKJEJJD_AGHGBNPIOGK = 9,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JGLNKENAIEB)
-    KIDBFKJEJJD_JGLNKENAIEB = 44,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLOMOECMLPH)
-    KIDBFKJEJJD_CLOMOECMLPH = 11,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOGHFIAJIHP)
-    KIDBFKJEJJD_DOGHFIAJIHP = 57,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KPALKJHKPED)
-    KIDBFKJEJJD_KPALKJHKPED = 35,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KCCMJKHJMAB)
-    KIDBFKJEJJD_KCCMJKHJMAB = 64,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GNAOLJNMAFC)
-    KIDBFKJEJJD_GNAOLJNMAFC = 75,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LHBKEJCGNCF)
-    KIDBFKJEJJD_LHBKEJCGNCF = 88,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLPDFGFMCBK)
-    KIDBFKJEJJD_BLPDFGFMCBK = 31,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ECHEKPDIPPA)
-    KIDBFKJEJJD_ECHEKPDIPPA = 68,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLKKHFGJEOL)
-    KIDBFKJEJJD_HLKKHFGJEOL = 78,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HONJDBCACEB)
-    KIDBFKJEJJD_HONJDBCACEB = 26,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AFKIMICKEDM)
-    KIDBFKJEJJD_AFKIMICKEDM = 42,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OPFIKLLIHBH)
-    KIDBFKJEJJD_OPFIKLLIHBH = 53,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_POACPAFBFKJ)
-    KIDBFKJEJJD_POACPAFBFKJ = 43,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GONKEIBLBOI)
-    KIDBFKJEJJD_GONKEIBLBOI = 41,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CFMGLJJOJDJ)
-    KIDBFKJEJJD_CFMGLJJOJDJ = 93,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PCMLAHACMPO)
-    KIDBFKJEJJD_PCMLAHACMPO = 89,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FPHMFIPGANO)
-    KIDBFKJEJJD_FPHMFIPGANO = 55,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PFAAOODLAPI)
-    KIDBFKJEJJD_PFAAOODLAPI = 8,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOPJENGCOAN)
-    KIDBFKJEJJD_DOPJENGCOAN = 69,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JFLKFMHCFFF)
-    KIDBFKJEJJD_JFLKFMHCFFF = 23,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IBPHMNFDGCA)
-    KIDBFKJEJJD_IBPHMNFDGCA = 29,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BBECFFBPOGG)
-    KIDBFKJEJJD_BBECFFBPOGG = 45,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLLKMJKMNIG)
-    KIDBFKJEJJD_BLLKMJKMNIG = 37,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IPDCEJGOFKI)
-    KIDBFKJEJJD_IPDCEJGOFKI = 77,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BCOPKPAPNAI)
-    KIDBFKJEJJD_BCOPKPAPNAI = 36,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CAEEPLEGLCK)
-    KIDBFKJEJJD_CAEEPLEGLCK = 5,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FFLOLBNNBJJ)
-    KIDBFKJEJJD_FFLOLBNNBJJ = 71,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ONNNLNCMMGJ)
-    KIDBFKJEJJD_ONNNLNCMMGJ = 27,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCFLGBJENJD)
-    KIDBFKJEJJD_MCFLGBJENJD = 79,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLHGHKAAEIJ)
-    KIDBFKJEJJD_CLHGHKAAEIJ = 16,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PJMINBJDKCC)
-    KIDBFKJEJJD_PJMINBJDKCC = 59,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KGCPBEOGMOP)
-    KIDBFKJEJJD_KGCPBEOGMOP = 66,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FCNEJBELPDL)
-    KIDBFKJEJJD_FCNEJBELPDL = 24,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MKHNJMFNPBB)
-    KIDBFKJEJJD_MKHNJMFNPBB = 14,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OFIEPOPANGH)
-    KIDBFKJEJJD_OFIEPOPANGH = 38,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KNINELEBJDE)
-    KIDBFKJEJJD_KNINELEBJDE = 51,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MLGEKIJAIBO)
-    KIDBFKJEJJD_MLGEKIJAIBO = 60,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DHJCKFJCFIJ)
-    KIDBFKJEJJD_DHJCKFJCFIJ = 95,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LDFPOBPPCIH)
-    KIDBFKJEJJD_LDFPOBPPCIH = 76,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KLNEFLGGGIL)
-    KIDBFKJEJJD_KLNEFLGGGIL = 3,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BFMIAMIHIED)
-    KIDBFKJEJJD_BFMIAMIHIED = 30,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CBPDMEEEOJP)
-    KIDBFKJEJJD_CBPDMEEEOJP = 63,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCOKJKLKHDL)
-    KIDBFKJEJJD_MCOKJKLKHDL = 90,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JIIJIOKAAOH)
-    KIDBFKJEJJD_JIIJIOKAAOH = 49,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OAMNNICMJLH)
-    KIDBFKJEJJD_OAMNNICMJLH = 40,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HDDNALCIJDE)
-    KIDBFKJEJJD_HDDNALCIJDE = 58,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CJOBOBANBOA)
-    KIDBFKJEJJD_CJOBOBANBOA = 80,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KJLKLPLIFDK)
-    KIDBFKJEJJD_KJLKLPLIFDK = 39,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_EEMJCDKIJOP)
-    KIDBFKJEJJD_EEMJCDKIJOP = 97,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IKANNBLIACL)
-    KIDBFKJEJJD_IKANNBLIACL = 86,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GKDOBOKBGPK)
-    KIDBFKJEJJD_GKDOBOKBGPK = 61,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DGKKANKIDLG)
-    KIDBFKJEJJD_DGKKANKIDLG = 81,
+    KIDBFKJEJJD_HDDNALCIJDE = 98,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ONNNLNCMMGJ)
+    KIDBFKJEJJD_ONNNLNCMMGJ = 58,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BCOPKPAPNAI)
+    KIDBFKJEJJD_BCOPKPAPNAI = 88,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LLGMMAPJDLI)
-    KIDBFKJEJJD_LLGMMAPJDLI = 4,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PBPJJFPBHHK)
-    KIDBFKJEJJD_PBPJJFPBHHK = 10,
+    KIDBFKJEJJD_LLGMMAPJDLI = 56,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DHHMBIGPPFB)
+    KIDBFKJEJJD_DHHMBIGPPFB = 52,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DGKKANKIDLG)
+    KIDBFKJEJJD_DGKKANKIDLG = 47,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MKHNJMFNPBB)
+    KIDBFKJEJJD_MKHNJMFNPBB = 44,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KJLKLPLIFDK)
+    KIDBFKJEJJD_KJLKLPLIFDK = 14,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOPJENGCOAN)
+    KIDBFKJEJJD_DOPJENGCOAN = 95,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ABAKFMHMHPD)
-    KIDBFKJEJJD_ABAKFMHMHPD = 50,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JPADFDNCDAO)
-    KIDBFKJEJJD_JPADFDNCDAO = 100,
+    KIDBFKJEJJD_ABAKFMHMHPD = 67,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BFMIAMIHIED)
+    KIDBFKJEJJD_BFMIAMIHIED = 5,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_COENAOLHFEL)
-    KIDBFKJEJJD_COENAOLHFEL = 17,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PPBANCPJPHG)
-    KIDBFKJEJJD_PPBANCPJPHG = 83,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CEDFKEJBCCJ)
-    KIDBFKJEJJD_CEDFKEJBCCJ = 18,
+    KIDBFKJEJJD_COENAOLHFEL = 53,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PJMINBJDKCC)
+    KIDBFKJEJJD_PJMINBJDKCC = 72,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HJAIHJAHMKN)
-    KIDBFKJEJJD_HJAIHJAHMKN = 48,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LAKJLNGMLPC)
-    KIDBFKJEJJD_LAKJLNGMLPC = 34,
+    KIDBFKJEJJD_HJAIHJAHMKN = 42,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLKKHFGJEOL)
+    KIDBFKJEJJD_HLKKHFGJEOL = 65,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IPDCEJGOFKI)
+    KIDBFKJEJJD_IPDCEJGOFKI = 76,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AFKIMICKEDM)
+    KIDBFKJEJJD_AFKIMICKEDM = 4,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JPADFDNCDAO)
+    KIDBFKJEJJD_JPADFDNCDAO = 20,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CBPDMEEEOJP)
+    KIDBFKJEJJD_CBPDMEEEOJP = 18,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AIHKMIKNPOH)
+    KIDBFKJEJJD_AIHKMIKNPOH = 81,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PCMLAHACMPO)
+    KIDBFKJEJJD_PCMLAHACMPO = 74,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PPBANCPJPHG)
+    KIDBFKJEJJD_PPBANCPJPHG = 38,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AGHGBNPIOGK)
+    KIDBFKJEJJD_AGHGBNPIOGK = 39,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BBECFFBPOGG)
+    KIDBFKJEJJD_BBECFFBPOGG = 46,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KCCMJKHJMAB)
+    KIDBFKJEJJD_KCCMJKHJMAB = 90,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OAMNNICMJLH)
+    KIDBFKJEJJD_OAMNNICMJLH = 57,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OFIEPOPANGH)
+    KIDBFKJEJJD_OFIEPOPANGH = 36,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GKDOBOKBGPK)
+    KIDBFKJEJJD_GKDOBOKBGPK = 48,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KLNEFLGGGIL)
+    KIDBFKJEJJD_KLNEFLGGGIL = 78,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCFLGBJENJD)
+    KIDBFKJEJJD_MCFLGBJENJD = 59,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IBPHMNFDGCA)
+    KIDBFKJEJJD_IBPHMNFDGCA = 71,
     // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JBHLDLGENMB)
-    KIDBFKJEJJD_JBHLDLGENMB = 73,
+    KIDBFKJEJJD_JBHLDLGENMB = 25,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LAKJLNGMLPC)
+    KIDBFKJEJJD_LAKJLNGMLPC = 28,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KPALKJHKPED)
+    KIDBFKJEJJD_KPALKJHKPED = 12,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CJOBOBANBOA)
+    KIDBFKJEJJD_CJOBOBANBOA = 93,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CEDFKEJBCCJ)
+    KIDBFKJEJJD_CEDFKEJBCCJ = 51,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FFLOLBNNBJJ)
+    KIDBFKJEJJD_FFLOLBNNBJJ = 69,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PBPJJFPBHHK)
+    KIDBFKJEJJD_PBPJJFPBHHK = 26,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OPFIKLLIHBH)
+    KIDBFKJEJJD_OPFIKLLIHBH = 15,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HONJDBCACEB)
+    KIDBFKJEJJD_HONJDBCACEB = 82,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KGCPBEOGMOP)
+    KIDBFKJEJJD_KGCPBEOGMOP = 21,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLAAGBFPKPH)
+    KIDBFKJEJJD_HLAAGBFPKPH = 91,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLOMOECMLPH)
+    KIDBFKJEJJD_CLOMOECMLPH = 23,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FPHMFIPGANO)
+    KIDBFKJEJJD_FPHMFIPGANO = 3,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CFMGLJJOJDJ)
+    KIDBFKJEJJD_CFMGLJJOJDJ = 66,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JIIJIOKAAOH)
+    KIDBFKJEJJD_JIIJIOKAAOH = 41,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CAEEPLEGLCK)
+    KIDBFKJEJJD_CAEEPLEGLCK = 75,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JFLKFMHCFFF)
+    KIDBFKJEJJD_JFLKFMHCFFF = 6,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_POACPAFBFKJ)
+    KIDBFKJEJJD_POACPAFBFKJ = 62,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GONKEIBLBOI)
+    KIDBFKJEJJD_GONKEIBLBOI = 37,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PFAAOODLAPI)
+    KIDBFKJEJJD_PFAAOODLAPI = 64,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GNAOLJNMAFC)
+    KIDBFKJEJJD_GNAOLJNMAFC = 97,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JHFOOFEBNEL)
+    KIDBFKJEJJD_JHFOOFEBNEL = 13,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_EEMJCDKIJOP)
+    KIDBFKJEJJD_EEMJCDKIJOP = 83,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MLGEKIJAIBO)
+    KIDBFKJEJJD_MLGEKIJAIBO = 54,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LDFPOBPPCIH)
+    KIDBFKJEJJD_LDFPOBPPCIH = 11,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JGLNKENAIEB)
+    KIDBFKJEJJD_JGLNKENAIEB = 32,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IKANNBLIACL)
+    KIDBFKJEJJD_IKANNBLIACL = 70,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLHGHKAAEIJ)
+    KIDBFKJEJJD_CLHGHKAAEIJ = 35,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCOKJKLKHDL)
+    KIDBFKJEJJD_MCOKJKLKHDL = 94,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOGHFIAJIHP)
+    KIDBFKJEJJD_DOGHFIAJIHP = 68,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLLKMJKMNIG)
+    KIDBFKJEJJD_BLLKMJKMNIG = 19,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ECHEKPDIPPA)
+    KIDBFKJEJJD_ECHEKPDIPPA = 1,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LHBKEJCGNCF)
+    KIDBFKJEJJD_LHBKEJCGNCF = 89,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KOKCPOPBBCD)
+    KIDBFKJEJJD_KOKCPOPBBCD = 30,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLPDFGFMCBK)
+    KIDBFKJEJJD_BLPDFGFMCBK = 27,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FCNEJBELPDL)
+    KIDBFKJEJJD_FCNEJBELPDL = 45,
 }
 
 impl ::protobuf::Enum for CmdPlayerType {
@@ -179,75 +175,73 @@ impl ::protobuf::Enum for CmdPlayerType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerType> {
         match value {
             0 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ),
-            52 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
-            13 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
-            6 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB),
-            87 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
-            98 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
-            9 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
-            44 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
-            11 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
-            57 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
-            35 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
-            64 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
-            75 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
-            88 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
-            31 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
-            68 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
-            78 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL),
-            26 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
-            42 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM),
-            53 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH),
-            43 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ),
-            41 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI),
-            93 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
-            89 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
-            55 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
-            8 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI),
-            69 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
-            23 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
-            29 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
-            45 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
-            37 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
-            77 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
-            36 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
-            5 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
-            71 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
-            27 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
-            79 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
-            16 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
-            59 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
-            66 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
-            24 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
-            14 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
-            38 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
-            51 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE),
-            60 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
-            95 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ),
-            76 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
-            3 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
-            30 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
-            63 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
-            90 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
-            49 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
-            40 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
-            58 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
-            80 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
-            39 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
-            97 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP),
-            86 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL),
-            61 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
-            81 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
-            4 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
-            10 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
-            50 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
-            100 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
-            17 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
-            83 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
-            18 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
-            48 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
-            34 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
-            73 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
+            98 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
+            58 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
+            88 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
+            56 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
+            52 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB),
+            47 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
+            44 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
+            14 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
+            95 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
+            67 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
+            5 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
+            53 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
+            72 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
+            42 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
+            65 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL),
+            76 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
+            4 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM),
+            20 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
+            18 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
+            81 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
+            74 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
+            38 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
+            39 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
+            46 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
+            90 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
+            57 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
+            36 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
+            48 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
+            78 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
+            59 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
+            71 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
+            25 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
+            28 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
+            12 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
+            93 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
+            51 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
+            69 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
+            26 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
+            15 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH),
+            82 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
+            21 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
+            91 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
+            23 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
+            3 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
+            66 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
+            41 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
+            75 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
+            6 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
+            62 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ),
+            37 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI),
+            64 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI),
+            97 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
+            13 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
+            83 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP),
+            54 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
+            11 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
+            32 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
+            70 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL),
+            35 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
+            94 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
+            68 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
+            19 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
+            1 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
+            89 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
+            30 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
+            27 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
+            45 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
             _ => ::std::option::Option::None
         }
     }
@@ -255,150 +249,146 @@ impl ::protobuf::Enum for CmdPlayerType {
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerType> {
         match str {
             "KIDBFKJEJJD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ),
-            "KIDBFKJEJJD_KOKCPOPBBCD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
-            "KIDBFKJEJJD_AIHKMIKNPOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
+            "KIDBFKJEJJD_HDDNALCIJDE" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
+            "KIDBFKJEJJD_ONNNLNCMMGJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
+            "KIDBFKJEJJD_BCOPKPAPNAI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
+            "KIDBFKJEJJD_LLGMMAPJDLI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
             "KIDBFKJEJJD_DHHMBIGPPFB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB),
-            "KIDBFKJEJJD_JHFOOFEBNEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
-            "KIDBFKJEJJD_HLAAGBFPKPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
-            "KIDBFKJEJJD_AGHGBNPIOGK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
-            "KIDBFKJEJJD_JGLNKENAIEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
-            "KIDBFKJEJJD_CLOMOECMLPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
-            "KIDBFKJEJJD_DOGHFIAJIHP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
-            "KIDBFKJEJJD_KPALKJHKPED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
-            "KIDBFKJEJJD_KCCMJKHJMAB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
-            "KIDBFKJEJJD_GNAOLJNMAFC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
-            "KIDBFKJEJJD_LHBKEJCGNCF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
-            "KIDBFKJEJJD_BLPDFGFMCBK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
-            "KIDBFKJEJJD_ECHEKPDIPPA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
+            "KIDBFKJEJJD_DGKKANKIDLG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
+            "KIDBFKJEJJD_MKHNJMFNPBB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
+            "KIDBFKJEJJD_KJLKLPLIFDK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
+            "KIDBFKJEJJD_DOPJENGCOAN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
+            "KIDBFKJEJJD_ABAKFMHMHPD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
+            "KIDBFKJEJJD_BFMIAMIHIED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
+            "KIDBFKJEJJD_COENAOLHFEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
+            "KIDBFKJEJJD_PJMINBJDKCC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
+            "KIDBFKJEJJD_HJAIHJAHMKN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
             "KIDBFKJEJJD_HLKKHFGJEOL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL),
-            "KIDBFKJEJJD_HONJDBCACEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
+            "KIDBFKJEJJD_IPDCEJGOFKI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
             "KIDBFKJEJJD_AFKIMICKEDM" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM),
+            "KIDBFKJEJJD_JPADFDNCDAO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
+            "KIDBFKJEJJD_CBPDMEEEOJP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
+            "KIDBFKJEJJD_AIHKMIKNPOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
+            "KIDBFKJEJJD_PCMLAHACMPO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
+            "KIDBFKJEJJD_PPBANCPJPHG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
+            "KIDBFKJEJJD_AGHGBNPIOGK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
+            "KIDBFKJEJJD_BBECFFBPOGG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
+            "KIDBFKJEJJD_KCCMJKHJMAB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
+            "KIDBFKJEJJD_OAMNNICMJLH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
+            "KIDBFKJEJJD_OFIEPOPANGH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
+            "KIDBFKJEJJD_GKDOBOKBGPK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
+            "KIDBFKJEJJD_KLNEFLGGGIL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
+            "KIDBFKJEJJD_MCFLGBJENJD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
+            "KIDBFKJEJJD_IBPHMNFDGCA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
+            "KIDBFKJEJJD_JBHLDLGENMB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
+            "KIDBFKJEJJD_LAKJLNGMLPC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
+            "KIDBFKJEJJD_KPALKJHKPED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
+            "KIDBFKJEJJD_CJOBOBANBOA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
+            "KIDBFKJEJJD_CEDFKEJBCCJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
+            "KIDBFKJEJJD_FFLOLBNNBJJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
+            "KIDBFKJEJJD_PBPJJFPBHHK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
             "KIDBFKJEJJD_OPFIKLLIHBH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH),
+            "KIDBFKJEJJD_HONJDBCACEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
+            "KIDBFKJEJJD_KGCPBEOGMOP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
+            "KIDBFKJEJJD_HLAAGBFPKPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
+            "KIDBFKJEJJD_CLOMOECMLPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
+            "KIDBFKJEJJD_FPHMFIPGANO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
+            "KIDBFKJEJJD_CFMGLJJOJDJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
+            "KIDBFKJEJJD_JIIJIOKAAOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
+            "KIDBFKJEJJD_CAEEPLEGLCK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
+            "KIDBFKJEJJD_JFLKFMHCFFF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
             "KIDBFKJEJJD_POACPAFBFKJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ),
             "KIDBFKJEJJD_GONKEIBLBOI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI),
-            "KIDBFKJEJJD_CFMGLJJOJDJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
-            "KIDBFKJEJJD_PCMLAHACMPO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
-            "KIDBFKJEJJD_FPHMFIPGANO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
             "KIDBFKJEJJD_PFAAOODLAPI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI),
-            "KIDBFKJEJJD_DOPJENGCOAN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
-            "KIDBFKJEJJD_JFLKFMHCFFF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
-            "KIDBFKJEJJD_IBPHMNFDGCA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
-            "KIDBFKJEJJD_BBECFFBPOGG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
-            "KIDBFKJEJJD_BLLKMJKMNIG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
-            "KIDBFKJEJJD_IPDCEJGOFKI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
-            "KIDBFKJEJJD_BCOPKPAPNAI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
-            "KIDBFKJEJJD_CAEEPLEGLCK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
-            "KIDBFKJEJJD_FFLOLBNNBJJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
-            "KIDBFKJEJJD_ONNNLNCMMGJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
-            "KIDBFKJEJJD_MCFLGBJENJD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
-            "KIDBFKJEJJD_CLHGHKAAEIJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
-            "KIDBFKJEJJD_PJMINBJDKCC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
-            "KIDBFKJEJJD_KGCPBEOGMOP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
-            "KIDBFKJEJJD_FCNEJBELPDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
-            "KIDBFKJEJJD_MKHNJMFNPBB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
-            "KIDBFKJEJJD_OFIEPOPANGH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
-            "KIDBFKJEJJD_KNINELEBJDE" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE),
-            "KIDBFKJEJJD_MLGEKIJAIBO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
-            "KIDBFKJEJJD_DHJCKFJCFIJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ),
-            "KIDBFKJEJJD_LDFPOBPPCIH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
-            "KIDBFKJEJJD_KLNEFLGGGIL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
-            "KIDBFKJEJJD_BFMIAMIHIED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
-            "KIDBFKJEJJD_CBPDMEEEOJP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
-            "KIDBFKJEJJD_MCOKJKLKHDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
-            "KIDBFKJEJJD_JIIJIOKAAOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
-            "KIDBFKJEJJD_OAMNNICMJLH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
-            "KIDBFKJEJJD_HDDNALCIJDE" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
-            "KIDBFKJEJJD_CJOBOBANBOA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
-            "KIDBFKJEJJD_KJLKLPLIFDK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
+            "KIDBFKJEJJD_GNAOLJNMAFC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
+            "KIDBFKJEJJD_JHFOOFEBNEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
             "KIDBFKJEJJD_EEMJCDKIJOP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP),
+            "KIDBFKJEJJD_MLGEKIJAIBO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
+            "KIDBFKJEJJD_LDFPOBPPCIH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
+            "KIDBFKJEJJD_JGLNKENAIEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
             "KIDBFKJEJJD_IKANNBLIACL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL),
-            "KIDBFKJEJJD_GKDOBOKBGPK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
-            "KIDBFKJEJJD_DGKKANKIDLG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
-            "KIDBFKJEJJD_LLGMMAPJDLI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
-            "KIDBFKJEJJD_PBPJJFPBHHK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
-            "KIDBFKJEJJD_ABAKFMHMHPD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
-            "KIDBFKJEJJD_JPADFDNCDAO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
-            "KIDBFKJEJJD_COENAOLHFEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
-            "KIDBFKJEJJD_PPBANCPJPHG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
-            "KIDBFKJEJJD_CEDFKEJBCCJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
-            "KIDBFKJEJJD_HJAIHJAHMKN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
-            "KIDBFKJEJJD_LAKJLNGMLPC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
-            "KIDBFKJEJJD_JBHLDLGENMB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
+            "KIDBFKJEJJD_CLHGHKAAEIJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
+            "KIDBFKJEJJD_MCOKJKLKHDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
+            "KIDBFKJEJJD_DOGHFIAJIHP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
+            "KIDBFKJEJJD_BLLKMJKMNIG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
+            "KIDBFKJEJJD_ECHEKPDIPPA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
+            "KIDBFKJEJJD_LHBKEJCGNCF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
+            "KIDBFKJEJJD_KOKCPOPBBCD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
+            "KIDBFKJEJJD_BLPDFGFMCBK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
+            "KIDBFKJEJJD_FCNEJBELPDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerType] = &[
         CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ,
-        CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD,
-        CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH,
+        CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE,
+        CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ,
+        CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI,
+        CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI,
         CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB,
-        CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL,
-        CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH,
-        CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK,
-        CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB,
-        CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH,
-        CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP,
-        CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED,
-        CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB,
-        CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC,
-        CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF,
-        CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK,
-        CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA,
+        CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG,
+        CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB,
+        CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK,
+        CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN,
+        CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD,
+        CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED,
+        CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL,
+        CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC,
+        CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN,
         CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL,
-        CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB,
+        CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI,
         CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM,
+        CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO,
+        CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP,
+        CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH,
+        CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO,
+        CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG,
+        CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK,
+        CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG,
+        CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB,
+        CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH,
+        CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH,
+        CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK,
+        CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL,
+        CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD,
+        CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA,
+        CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB,
+        CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC,
+        CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED,
+        CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA,
+        CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ,
+        CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ,
+        CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK,
         CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH,
+        CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB,
+        CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP,
+        CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH,
+        CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH,
+        CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO,
+        CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ,
+        CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH,
+        CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK,
+        CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF,
         CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ,
         CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI,
-        CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ,
-        CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO,
-        CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO,
         CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI,
-        CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN,
-        CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF,
-        CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA,
-        CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG,
-        CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG,
-        CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI,
-        CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI,
-        CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK,
-        CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ,
-        CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ,
-        CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD,
-        CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ,
-        CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC,
-        CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP,
-        CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL,
-        CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB,
-        CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH,
-        CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE,
-        CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO,
-        CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ,
-        CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH,
-        CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL,
-        CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED,
-        CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP,
-        CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL,
-        CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH,
-        CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH,
-        CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE,
-        CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA,
-        CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK,
+        CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC,
+        CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL,
         CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP,
+        CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO,
+        CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH,
+        CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB,
         CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL,
-        CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK,
-        CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG,
-        CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI,
-        CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK,
-        CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD,
-        CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO,
-        CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL,
-        CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG,
-        CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ,
-        CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN,
-        CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC,
-        CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB,
+        CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ,
+        CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL,
+        CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP,
+        CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG,
+        CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA,
+        CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF,
+        CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD,
+        CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK,
+        CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL,
     ];
 }
 
@@ -411,75 +401,73 @@ impl ::protobuf::EnumFull for CmdPlayerType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ => 0,
-            CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD => 1,
-            CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH => 2,
-            CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB => 3,
-            CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL => 4,
-            CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH => 5,
-            CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK => 6,
-            CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB => 7,
-            CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH => 8,
-            CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP => 9,
-            CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED => 10,
-            CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB => 11,
-            CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC => 12,
-            CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF => 13,
-            CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK => 14,
-            CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA => 15,
-            CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL => 16,
-            CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB => 17,
-            CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM => 18,
-            CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH => 19,
-            CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ => 20,
-            CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI => 21,
-            CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ => 22,
-            CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO => 23,
-            CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO => 24,
-            CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI => 25,
-            CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN => 26,
-            CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF => 27,
-            CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA => 28,
-            CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG => 29,
-            CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG => 30,
-            CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI => 31,
-            CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI => 32,
-            CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK => 33,
-            CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ => 34,
-            CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ => 35,
-            CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD => 36,
-            CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ => 37,
-            CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC => 38,
-            CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP => 39,
-            CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL => 40,
-            CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB => 41,
-            CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH => 42,
-            CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE => 43,
-            CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO => 44,
-            CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ => 45,
-            CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH => 46,
-            CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL => 47,
-            CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED => 48,
-            CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP => 49,
-            CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL => 50,
-            CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH => 51,
-            CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH => 52,
-            CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE => 53,
-            CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA => 54,
-            CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK => 55,
-            CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP => 56,
-            CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL => 57,
-            CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK => 58,
-            CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG => 59,
-            CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI => 60,
-            CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK => 61,
-            CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD => 62,
-            CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO => 63,
-            CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL => 64,
-            CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG => 65,
-            CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ => 66,
-            CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN => 67,
-            CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC => 68,
-            CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB => 69,
+            CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE => 1,
+            CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ => 2,
+            CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI => 3,
+            CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI => 4,
+            CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB => 5,
+            CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG => 6,
+            CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB => 7,
+            CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK => 8,
+            CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN => 9,
+            CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD => 10,
+            CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED => 11,
+            CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL => 12,
+            CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC => 13,
+            CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN => 14,
+            CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL => 15,
+            CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI => 16,
+            CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM => 17,
+            CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO => 18,
+            CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP => 19,
+            CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH => 20,
+            CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO => 21,
+            CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG => 22,
+            CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK => 23,
+            CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG => 24,
+            CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB => 25,
+            CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH => 26,
+            CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH => 27,
+            CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK => 28,
+            CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL => 29,
+            CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD => 30,
+            CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA => 31,
+            CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB => 32,
+            CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC => 33,
+            CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED => 34,
+            CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA => 35,
+            CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ => 36,
+            CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ => 37,
+            CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK => 38,
+            CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH => 39,
+            CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB => 40,
+            CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP => 41,
+            CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH => 42,
+            CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH => 43,
+            CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO => 44,
+            CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ => 45,
+            CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH => 46,
+            CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK => 47,
+            CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF => 48,
+            CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ => 49,
+            CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI => 50,
+            CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI => 51,
+            CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC => 52,
+            CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL => 53,
+            CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP => 54,
+            CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO => 55,
+            CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH => 56,
+            CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB => 57,
+            CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL => 58,
+            CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ => 59,
+            CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL => 60,
+            CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP => 61,
+            CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG => 62,
+            CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA => 63,
+            CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF => 64,
+            CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD => 65,
+            CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK => 66,
+            CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL => 67,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -498,49 +486,48 @@ impl CmdPlayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdPlayerType.proto*\xfd\x0f\n\rCmdPlayerType\x12\x1b\n\x17KIDBFKJ\
-    EJJD_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17KIDBFKJEJJD_KOKCPOPBBCD\x104\x12\x1b\
-    \n\x17KIDBFKJEJJD_AIHKMIKNPOH\x10\r\x12\x1b\n\x17KIDBFKJEJJD_DHHMBIGPPFB\
-    \x10\x06\x12\x1b\n\x17KIDBFKJEJJD_JHFOOFEBNEL\x10W\x12\x1b\n\x17KIDBFKJE\
-    JJD_HLAAGBFPKPH\x10b\x12\x1b\n\x17KIDBFKJEJJD_AGHGBNPIOGK\x10\t\x12\x1b\
-    \n\x17KIDBFKJEJJD_JGLNKENAIEB\x10,\x12\x1b\n\x17KIDBFKJEJJD_CLOMOECMLPH\
-    \x10\x0b\x12\x1b\n\x17KIDBFKJEJJD_DOGHFIAJIHP\x109\x12\x1b\n\x17KIDBFKJE\
-    JJD_KPALKJHKPED\x10#\x12\x1b\n\x17KIDBFKJEJJD_KCCMJKHJMAB\x10@\x12\x1b\n\
-    \x17KIDBFKJEJJD_GNAOLJNMAFC\x10K\x12\x1b\n\x17KIDBFKJEJJD_LHBKEJCGNCF\
-    \x10X\x12\x1b\n\x17KIDBFKJEJJD_BLPDFGFMCBK\x10\x1f\x12\x1b\n\x17KIDBFKJE\
-    JJD_ECHEKPDIPPA\x10D\x12\x1b\n\x17KIDBFKJEJJD_HLKKHFGJEOL\x10N\x12\x1b\n\
-    \x17KIDBFKJEJJD_HONJDBCACEB\x10\x1a\x12\x1b\n\x17KIDBFKJEJJD_AFKIMICKEDM\
-    \x10*\x12\x1b\n\x17KIDBFKJEJJD_OPFIKLLIHBH\x105\x12\x1b\n\x17KIDBFKJEJJD\
-    _POACPAFBFKJ\x10+\x12\x1b\n\x17KIDBFKJEJJD_GONKEIBLBOI\x10)\x12\x1b\n\
-    \x17KIDBFKJEJJD_CFMGLJJOJDJ\x10]\x12\x1b\n\x17KIDBFKJEJJD_PCMLAHACMPO\
-    \x10Y\x12\x1b\n\x17KIDBFKJEJJD_FPHMFIPGANO\x107\x12\x1b\n\x17KIDBFKJEJJD\
-    _PFAAOODLAPI\x10\x08\x12\x1b\n\x17KIDBFKJEJJD_DOPJENGCOAN\x10E\x12\x1b\n\
-    \x17KIDBFKJEJJD_JFLKFMHCFFF\x10\x17\x12\x1b\n\x17KIDBFKJEJJD_IBPHMNFDGCA\
-    \x10\x1d\x12\x1b\n\x17KIDBFKJEJJD_BBECFFBPOGG\x10-\x12\x1b\n\x17KIDBFKJE\
-    JJD_BLLKMJKMNIG\x10%\x12\x1b\n\x17KIDBFKJEJJD_IPDCEJGOFKI\x10M\x12\x1b\n\
-    \x17KIDBFKJEJJD_BCOPKPAPNAI\x10$\x12\x1b\n\x17KIDBFKJEJJD_CAEEPLEGLCK\
-    \x10\x05\x12\x1b\n\x17KIDBFKJEJJD_FFLOLBNNBJJ\x10G\x12\x1b\n\x17KIDBFKJE\
-    JJD_ONNNLNCMMGJ\x10\x1b\x12\x1b\n\x17KIDBFKJEJJD_MCFLGBJENJD\x10O\x12\
-    \x1b\n\x17KIDBFKJEJJD_CLHGHKAAEIJ\x10\x10\x12\x1b\n\x17KIDBFKJEJJD_PJMIN\
-    BJDKCC\x10;\x12\x1b\n\x17KIDBFKJEJJD_KGCPBEOGMOP\x10B\x12\x1b\n\x17KIDBF\
-    KJEJJD_FCNEJBELPDL\x10\x18\x12\x1b\n\x17KIDBFKJEJJD_MKHNJMFNPBB\x10\x0e\
-    \x12\x1b\n\x17KIDBFKJEJJD_OFIEPOPANGH\x10&\x12\x1b\n\x17KIDBFKJEJJD_KNIN\
-    ELEBJDE\x103\x12\x1b\n\x17KIDBFKJEJJD_MLGEKIJAIBO\x10<\x12\x1b\n\x17KIDB\
-    FKJEJJD_DHJCKFJCFIJ\x10_\x12\x1b\n\x17KIDBFKJEJJD_LDFPOBPPCIH\x10L\x12\
-    \x1b\n\x17KIDBFKJEJJD_KLNEFLGGGIL\x10\x03\x12\x1b\n\x17KIDBFKJEJJD_BFMIA\
-    MIHIED\x10\x1e\x12\x1b\n\x17KIDBFKJEJJD_CBPDMEEEOJP\x10?\x12\x1b\n\x17KI\
-    DBFKJEJJD_MCOKJKLKHDL\x10Z\x12\x1b\n\x17KIDBFKJEJJD_JIIJIOKAAOH\x101\x12\
-    \x1b\n\x17KIDBFKJEJJD_OAMNNICMJLH\x10(\x12\x1b\n\x17KIDBFKJEJJD_HDDNALCI\
-    JDE\x10:\x12\x1b\n\x17KIDBFKJEJJD_CJOBOBANBOA\x10P\x12\x1b\n\x17KIDBFKJE\
-    JJD_KJLKLPLIFDK\x10'\x12\x1b\n\x17KIDBFKJEJJD_EEMJCDKIJOP\x10a\x12\x1b\n\
-    \x17KIDBFKJEJJD_IKANNBLIACL\x10V\x12\x1b\n\x17KIDBFKJEJJD_GKDOBOKBGPK\
-    \x10=\x12\x1b\n\x17KIDBFKJEJJD_DGKKANKIDLG\x10Q\x12\x1b\n\x17KIDBFKJEJJD\
-    _LLGMMAPJDLI\x10\x04\x12\x1b\n\x17KIDBFKJEJJD_PBPJJFPBHHK\x10\n\x12\x1b\
-    \n\x17KIDBFKJEJJD_ABAKFMHMHPD\x102\x12\x1b\n\x17KIDBFKJEJJD_JPADFDNCDAO\
-    \x10d\x12\x1b\n\x17KIDBFKJEJJD_COENAOLHFEL\x10\x11\x12\x1b\n\x17KIDBFKJE\
-    JJD_PPBANCPJPHG\x10S\x12\x1b\n\x17KIDBFKJEJJD_CEDFKEJBCCJ\x10\x12\x12\
-    \x1b\n\x17KIDBFKJEJJD_HJAIHJAHMKN\x100\x12\x1b\n\x17KIDBFKJEJJD_LAKJLNGM\
-    LPC\x10\"\x12\x1b\n\x17KIDBFKJEJJD_JBHLDLGENMB\x10Ib\x06proto3\
+    \n\x13CmdPlayerType.proto*\xc3\x0f\n\rCmdPlayerType\x12\x1b\n\x17KIDBFKJ\
+    EJJD_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17KIDBFKJEJJD_HDDNALCIJDE\x10b\x12\x1b\
+    \n\x17KIDBFKJEJJD_ONNNLNCMMGJ\x10:\x12\x1b\n\x17KIDBFKJEJJD_BCOPKPAPNAI\
+    \x10X\x12\x1b\n\x17KIDBFKJEJJD_LLGMMAPJDLI\x108\x12\x1b\n\x17KIDBFKJEJJD\
+    _DHHMBIGPPFB\x104\x12\x1b\n\x17KIDBFKJEJJD_DGKKANKIDLG\x10/\x12\x1b\n\
+    \x17KIDBFKJEJJD_MKHNJMFNPBB\x10,\x12\x1b\n\x17KIDBFKJEJJD_KJLKLPLIFDK\
+    \x10\x0e\x12\x1b\n\x17KIDBFKJEJJD_DOPJENGCOAN\x10_\x12\x1b\n\x17KIDBFKJE\
+    JJD_ABAKFMHMHPD\x10C\x12\x1b\n\x17KIDBFKJEJJD_BFMIAMIHIED\x10\x05\x12\
+    \x1b\n\x17KIDBFKJEJJD_COENAOLHFEL\x105\x12\x1b\n\x17KIDBFKJEJJD_PJMINBJD\
+    KCC\x10H\x12\x1b\n\x17KIDBFKJEJJD_HJAIHJAHMKN\x10*\x12\x1b\n\x17KIDBFKJE\
+    JJD_HLKKHFGJEOL\x10A\x12\x1b\n\x17KIDBFKJEJJD_IPDCEJGOFKI\x10L\x12\x1b\n\
+    \x17KIDBFKJEJJD_AFKIMICKEDM\x10\x04\x12\x1b\n\x17KIDBFKJEJJD_JPADFDNCDAO\
+    \x10\x14\x12\x1b\n\x17KIDBFKJEJJD_CBPDMEEEOJP\x10\x12\x12\x1b\n\x17KIDBF\
+    KJEJJD_AIHKMIKNPOH\x10Q\x12\x1b\n\x17KIDBFKJEJJD_PCMLAHACMPO\x10J\x12\
+    \x1b\n\x17KIDBFKJEJJD_PPBANCPJPHG\x10&\x12\x1b\n\x17KIDBFKJEJJD_AGHGBNPI\
+    OGK\x10'\x12\x1b\n\x17KIDBFKJEJJD_BBECFFBPOGG\x10.\x12\x1b\n\x17KIDBFKJE\
+    JJD_KCCMJKHJMAB\x10Z\x12\x1b\n\x17KIDBFKJEJJD_OAMNNICMJLH\x109\x12\x1b\n\
+    \x17KIDBFKJEJJD_OFIEPOPANGH\x10$\x12\x1b\n\x17KIDBFKJEJJD_GKDOBOKBGPK\
+    \x100\x12\x1b\n\x17KIDBFKJEJJD_KLNEFLGGGIL\x10N\x12\x1b\n\x17KIDBFKJEJJD\
+    _MCFLGBJENJD\x10;\x12\x1b\n\x17KIDBFKJEJJD_IBPHMNFDGCA\x10G\x12\x1b\n\
+    \x17KIDBFKJEJJD_JBHLDLGENMB\x10\x19\x12\x1b\n\x17KIDBFKJEJJD_LAKJLNGMLPC\
+    \x10\x1c\x12\x1b\n\x17KIDBFKJEJJD_KPALKJHKPED\x10\x0c\x12\x1b\n\x17KIDBF\
+    KJEJJD_CJOBOBANBOA\x10]\x12\x1b\n\x17KIDBFKJEJJD_CEDFKEJBCCJ\x103\x12\
+    \x1b\n\x17KIDBFKJEJJD_FFLOLBNNBJJ\x10E\x12\x1b\n\x17KIDBFKJEJJD_PBPJJFPB\
+    HHK\x10\x1a\x12\x1b\n\x17KIDBFKJEJJD_OPFIKLLIHBH\x10\x0f\x12\x1b\n\x17KI\
+    DBFKJEJJD_HONJDBCACEB\x10R\x12\x1b\n\x17KIDBFKJEJJD_KGCPBEOGMOP\x10\x15\
+    \x12\x1b\n\x17KIDBFKJEJJD_HLAAGBFPKPH\x10[\x12\x1b\n\x17KIDBFKJEJJD_CLOM\
+    OECMLPH\x10\x17\x12\x1b\n\x17KIDBFKJEJJD_FPHMFIPGANO\x10\x03\x12\x1b\n\
+    \x17KIDBFKJEJJD_CFMGLJJOJDJ\x10B\x12\x1b\n\x17KIDBFKJEJJD_JIIJIOKAAOH\
+    \x10)\x12\x1b\n\x17KIDBFKJEJJD_CAEEPLEGLCK\x10K\x12\x1b\n\x17KIDBFKJEJJD\
+    _JFLKFMHCFFF\x10\x06\x12\x1b\n\x17KIDBFKJEJJD_POACPAFBFKJ\x10>\x12\x1b\n\
+    \x17KIDBFKJEJJD_GONKEIBLBOI\x10%\x12\x1b\n\x17KIDBFKJEJJD_PFAAOODLAPI\
+    \x10@\x12\x1b\n\x17KIDBFKJEJJD_GNAOLJNMAFC\x10a\x12\x1b\n\x17KIDBFKJEJJD\
+    _JHFOOFEBNEL\x10\r\x12\x1b\n\x17KIDBFKJEJJD_EEMJCDKIJOP\x10S\x12\x1b\n\
+    \x17KIDBFKJEJJD_MLGEKIJAIBO\x106\x12\x1b\n\x17KIDBFKJEJJD_LDFPOBPPCIH\
+    \x10\x0b\x12\x1b\n\x17KIDBFKJEJJD_JGLNKENAIEB\x10\x20\x12\x1b\n\x17KIDBF\
+    KJEJJD_IKANNBLIACL\x10F\x12\x1b\n\x17KIDBFKJEJJD_CLHGHKAAEIJ\x10#\x12\
+    \x1b\n\x17KIDBFKJEJJD_MCOKJKLKHDL\x10^\x12\x1b\n\x17KIDBFKJEJJD_DOGHFIAJ\
+    IHP\x10D\x12\x1b\n\x17KIDBFKJEJJD_BLLKMJKMNIG\x10\x13\x12\x1b\n\x17KIDBF\
+    KJEJJD_ECHEKPDIPPA\x10\x01\x12\x1b\n\x17KIDBFKJEJJD_LHBKEJCGNCF\x10Y\x12\
+    \x1b\n\x17KIDBFKJEJJD_KOKCPOPBBCD\x10\x1e\x12\x1b\n\x17KIDBFKJEJJD_BLPDF\
+    GFMCBK\x10\x1b\x12\x1b\n\x17KIDBFKJEJJD_FCNEJBELPDL\x10-b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AKHEOAIPAPA {
     // message fields
-    // @@protoc_insertion_point(field:AKHEOAIPAPA.source)
-    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
-    // @@protoc_insertion_point(field:AKHEOAIPAPA.CPLFBOBLFMC)
-    pub CPLFBOBLFMC: f64,
     // @@protoc_insertion_point(field:AKHEOAIPAPA.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:AKHEOAIPAPA.GOKKLNBMLCA)
-    pub GOKKLNBMLCA: ::protobuf::EnumOrUnknown<super::GLBAOKOHKCF::GLBAOKOHKCF>,
     // @@protoc_insertion_point(field:AKHEOAIPAPA.OJMOBAEEMAP)
     pub OJMOBAEEMAP: f64,
+    // @@protoc_insertion_point(field:AKHEOAIPAPA.CPLFBOBLFMC)
+    pub CPLFBOBLFMC: f64,
+    // @@protoc_insertion_point(field:AKHEOAIPAPA.source)
+    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
+    // @@protoc_insertion_point(field:AKHEOAIPAPA.GOKKLNBMLCA)
+    pub GOKKLNBMLCA: ::protobuf::EnumOrUnknown<super::GLBAOKOHKCF::GLBAOKOHKCF>,
     // special fields
     // @@protoc_insertion_point(special_field:AKHEOAIPAPA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl AKHEOAIPAPA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
-            "source",
-            |m: &AKHEOAIPAPA| { &m.source },
-            |m: &mut AKHEOAIPAPA| { &mut m.source },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CPLFBOBLFMC",
-            |m: &AKHEOAIPAPA| { &m.CPLFBOBLFMC },
-            |m: &mut AKHEOAIPAPA| { &mut m.CPLFBOBLFMC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &AKHEOAIPAPA| { &m.unique_id },
             |m: &mut AKHEOAIPAPA| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOKKLNBMLCA",
-            |m: &AKHEOAIPAPA| { &m.GOKKLNBMLCA },
-            |m: &mut AKHEOAIPAPA| { &mut m.GOKKLNBMLCA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OJMOBAEEMAP",
             |m: &AKHEOAIPAPA| { &m.OJMOBAEEMAP },
             |m: &mut AKHEOAIPAPA| { &mut m.OJMOBAEEMAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CPLFBOBLFMC",
+            |m: &AKHEOAIPAPA| { &m.CPLFBOBLFMC },
+            |m: &mut AKHEOAIPAPA| { &mut m.CPLFBOBLFMC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
+            "source",
+            |m: &AKHEOAIPAPA| { &m.source },
+            |m: &mut AKHEOAIPAPA| { &mut m.source },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GOKKLNBMLCA",
+            |m: &AKHEOAIPAPA| { &m.GOKKLNBMLCA },
+            |m: &mut AKHEOAIPAPA| { &mut m.GOKKLNBMLCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AKHEOAIPAPA>(
             "AKHEOAIPAPA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for AKHEOAIPAPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
-                },
-                33 => {
-                    self.CPLFBOBLFMC = is.read_double()?;
-                },
-                8 => {
+                16 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.GOKKLNBMLCA = is.read_enum_or_unknown()?;
-                },
-                65 => {
+                25 => {
                     self.OJMOBAEEMAP = is.read_double()?;
+                },
+                41 => {
+                    self.CPLFBOBLFMC = is.read_double()?;
+                },
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
+                },
+                80 => {
+                    self.GOKKLNBMLCA = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for AKHEOAIPAPA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.source.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
+        }
+        if self.OJMOBAEEMAP != 0. {
+            my_size += 1 + 8;
         }
         if self.CPLFBOBLFMC != 0. {
             my_size += 1 + 8;
         }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.unique_id);
+        if let Some(v) = self.source.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.GOKKLNBMLCA != ::protobuf::EnumOrUnknown::new(super::GLBAOKOHKCF::GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.GOKKLNBMLCA.value());
-        }
-        if self.OJMOBAEEMAP != 0. {
-            my_size += 1 + 8;
+            my_size += ::protobuf::rt::int32_size(10, self.GOKKLNBMLCA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for AKHEOAIPAPA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.CPLFBOBLFMC != 0. {
-            os.write_double(4, self.CPLFBOBLFMC)?;
-        }
         if self.unique_id != 0 {
-            os.write_uint32(1, self.unique_id)?;
-        }
-        if self.GOKKLNBMLCA != ::protobuf::EnumOrUnknown::new(super::GLBAOKOHKCF::GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.GOKKLNBMLCA))?;
+            os.write_uint32(2, self.unique_id)?;
         }
         if self.OJMOBAEEMAP != 0. {
-            os.write_double(8, self.OJMOBAEEMAP)?;
+            os.write_double(3, self.OJMOBAEEMAP)?;
+        }
+        if self.CPLFBOBLFMC != 0. {
+            os.write_double(5, self.CPLFBOBLFMC)?;
+        }
+        if let Some(v) = self.source.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.GOKKLNBMLCA != ::protobuf::EnumOrUnknown::new(super::GLBAOKOHKCF::GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GOKKLNBMLCA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for AKHEOAIPAPA {
     }
 
     fn clear(&mut self) {
-        self.source.clear();
-        self.CPLFBOBLFMC = 0.;
         self.unique_id = 0;
-        self.GOKKLNBMLCA = ::protobuf::EnumOrUnknown::new(super::GLBAOKOHKCF::GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ);
         self.OJMOBAEEMAP = 0.;
+        self.CPLFBOBLFMC = 0.;
+        self.source.clear();
+        self.GOKKLNBMLCA = ::protobuf::EnumOrUnknown::new(super::GLBAOKOHKCF::GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AKHEOAIPAPA {
         static instance: AKHEOAIPAPA = AKHEOAIPAPA {
-            source: ::protobuf::MessageField::none(),
-            CPLFBOBLFMC: 0.,
             unique_id: 0,
-            GOKKLNBMLCA: ::protobuf::EnumOrUnknown::from_i32(0),
             OJMOBAEEMAP: 0.,
+            CPLFBOBLFMC: 0.,
+            source: ::protobuf::MessageField::none(),
+            GOKKLNBMLCA: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for AKHEOAIPAPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AKHEOAIPAPA.proto\x1a\x11GLBAOKOHKCF.proto\x1a\x11JLPEICPFLMC.prot\
-    o\"\xc4\x01\n\x0bAKHEOAIPAPA\x12$\n\x06source\x18\r\x20\x01(\x0b2\x0c.JL\
-    PEICPFLMCR\x06source\x12\x20\n\x0bCPLFBOBLFMC\x18\x04\x20\x01(\x01R\x0bC\
-    PLFBOBLFMC\x12\x1b\n\tunique_id\x18\x01\x20\x01(\rR\x08uniqueId\x12.\n\
-    \x0bGOKKLNBMLCA\x18\x05\x20\x01(\x0e2\x0c.GLBAOKOHKCFR\x0bGOKKLNBMLCA\
-    \x12\x20\n\x0bOJMOBAEEMAP\x18\x08\x20\x01(\x01R\x0bOJMOBAEEMAPb\x06proto\
-    3\
+    o\"\xc4\x01\n\x0bAKHEOAIPAPA\x12\x1b\n\tunique_id\x18\x02\x20\x01(\rR\
+    \x08uniqueId\x12\x20\n\x0bOJMOBAEEMAP\x18\x03\x20\x01(\x01R\x0bOJMOBAEEM\
+    AP\x12\x20\n\x0bCPLFBOBLFMC\x18\x05\x20\x01(\x01R\x0bCPLFBOBLFMC\x12$\n\
+    \x06source\x18\x08\x20\x01(\x0b2\x0c.JLPEICPFLMCR\x06source\x12.\n\x0bGO\
+    KKLNBMLCA\x18\n\x20\x01(\x0e2\x0c.GLBAOKOHKCFR\x0bGOKKLNBMLCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GEEPIPMBGJD {
     // message fields
+    // @@protoc_insertion_point(field:GEEPIPMBGJD.GCDGGBLOJIC)
+    pub GCDGGBLOJIC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GEEPIPMBGJD.JOOEEKMDAEO)
     pub JOOEEKMDAEO: ::protobuf::MessageField<super::CABCPFKAOPP::CABCPFKAOPP>,
     // @@protoc_insertion_point(field:GEEPIPMBGJD.NFPADEPIKML)
     pub NFPADEPIKML: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GEEPIPMBGJD.GCDGGBLOJIC)
-    pub GCDGGBLOJIC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GEEPIPMBGJD.OEKIFIKBMFI)
-    pub OEKIFIKBMFI: u32,
     // @@protoc_insertion_point(field:GEEPIPMBGJD.KDIDDHIDNCG)
     pub KDIDDHIDNCG: u32,
+    // @@protoc_insertion_point(field:GEEPIPMBGJD.OEKIFIKBMFI)
+    pub OEKIFIKBMFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GEEPIPMBGJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,6 +57,11 @@ impl GEEPIPMBGJD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GCDGGBLOJIC",
+            |m: &GEEPIPMBGJD| { &m.GCDGGBLOJIC },
+            |m: &mut GEEPIPMBGJD| { &mut m.GCDGGBLOJIC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CABCPFKAOPP::CABCPFKAOPP>(
             "JOOEEKMDAEO",
             |m: &GEEPIPMBGJD| { &m.JOOEEKMDAEO },
@@ -67,20 +72,15 @@ impl GEEPIPMBGJD {
             |m: &GEEPIPMBGJD| { &m.NFPADEPIKML },
             |m: &mut GEEPIPMBGJD| { &mut m.NFPADEPIKML },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GCDGGBLOJIC",
-            |m: &GEEPIPMBGJD| { &m.GCDGGBLOJIC },
-            |m: &mut GEEPIPMBGJD| { &mut m.GCDGGBLOJIC },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KDIDDHIDNCG",
+            |m: &GEEPIPMBGJD| { &m.KDIDDHIDNCG },
+            |m: &mut GEEPIPMBGJD| { &mut m.KDIDDHIDNCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OEKIFIKBMFI",
             |m: &GEEPIPMBGJD| { &m.OEKIFIKBMFI },
             |m: &mut GEEPIPMBGJD| { &mut m.OEKIFIKBMFI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDIDDHIDNCG",
-            |m: &GEEPIPMBGJD| { &m.KDIDDHIDNCG },
-            |m: &mut GEEPIPMBGJD| { &mut m.KDIDDHIDNCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GEEPIPMBGJD>(
             "GEEPIPMBGJD",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for GEEPIPMBGJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JOOEEKMDAEO)?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NFPADEPIKML)?;
-                },
-                48 => {
-                    self.NFPADEPIKML.push(is.read_uint32()?);
-                },
-                74 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.GCDGGBLOJIC)?;
                 },
-                72 => {
+                24 => {
                     self.GCDGGBLOJIC.push(is.read_uint32()?);
                 },
-                56 => {
-                    self.OEKIFIKBMFI = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JOOEEKMDAEO)?;
                 },
-                8 => {
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NFPADEPIKML)?;
+                },
+                56 => {
+                    self.NFPADEPIKML.push(is.read_uint32()?);
+                },
+                64 => {
                     self.KDIDDHIDNCG = is.read_uint32()?;
+                },
+                96 => {
+                    self.OEKIFIKBMFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,17 +133,17 @@ impl ::protobuf::Message for GEEPIPMBGJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.GCDGGBLOJIC);
         if let Some(v) = self.JOOEEKMDAEO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.NFPADEPIKML);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.GCDGGBLOJIC);
-        if self.OEKIFIKBMFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OEKIFIKBMFI);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NFPADEPIKML);
         if self.KDIDDHIDNCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KDIDDHIDNCG);
+            my_size += ::protobuf::rt::uint32_size(8, self.KDIDDHIDNCG);
+        }
+        if self.OEKIFIKBMFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OEKIFIKBMFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GEEPIPMBGJD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.GCDGGBLOJIC)?;
         if let Some(v) = self.JOOEEKMDAEO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        os.write_repeated_packed_uint32(6, &self.NFPADEPIKML)?;
-        os.write_repeated_packed_uint32(9, &self.GCDGGBLOJIC)?;
-        if self.OEKIFIKBMFI != 0 {
-            os.write_uint32(7, self.OEKIFIKBMFI)?;
-        }
+        os.write_repeated_packed_uint32(7, &self.NFPADEPIKML)?;
         if self.KDIDDHIDNCG != 0 {
-            os.write_uint32(1, self.KDIDDHIDNCG)?;
+            os.write_uint32(8, self.KDIDDHIDNCG)?;
+        }
+        if self.OEKIFIKBMFI != 0 {
+            os.write_uint32(12, self.OEKIFIKBMFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for GEEPIPMBGJD {
     }
 
     fn clear(&mut self) {
+        self.GCDGGBLOJIC.clear();
         self.JOOEEKMDAEO.clear();
         self.NFPADEPIKML.clear();
-        self.GCDGGBLOJIC.clear();
-        self.OEKIFIKBMFI = 0;
         self.KDIDDHIDNCG = 0;
+        self.OEKIFIKBMFI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GEEPIPMBGJD {
         static instance: GEEPIPMBGJD = GEEPIPMBGJD {
+            GCDGGBLOJIC: ::std::vec::Vec::new(),
             JOOEEKMDAEO: ::protobuf::MessageField::none(),
             NFPADEPIKML: ::std::vec::Vec::new(),
-            GCDGGBLOJIC: ::std::vec::Vec::new(),
-            OEKIFIKBMFI: 0,
             KDIDDHIDNCG: 0,
+            OEKIFIKBMFI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for GEEPIPMBGJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEEPIPMBGJD.proto\x1a\x11CABCPFKAOPP.proto\"\xc5\x01\n\x0bGEEPIPMB\
-    GJD\x12.\n\x0bJOOEEKMDAEO\x18\r\x20\x01(\x0b2\x0c.CABCPFKAOPPR\x0bJOOEEK\
-    MDAEO\x12\x20\n\x0bNFPADEPIKML\x18\x06\x20\x03(\rR\x0bNFPADEPIKML\x12\
-    \x20\n\x0bGCDGGBLOJIC\x18\t\x20\x03(\rR\x0bGCDGGBLOJIC\x12\x20\n\x0bOEKI\
-    FIKBMFI\x18\x07\x20\x01(\rR\x0bOEKIFIKBMFI\x12\x20\n\x0bKDIDDHIDNCG\x18\
-    \x01\x20\x01(\rR\x0bKDIDDHIDNCGb\x06proto3\
+    GJD\x12\x20\n\x0bGCDGGBLOJIC\x18\x03\x20\x03(\rR\x0bGCDGGBLOJIC\x12.\n\
+    \x0bJOOEEKMDAEO\x18\x05\x20\x01(\x0b2\x0c.CABCPFKAOPPR\x0bJOOEEKMDAEO\
+    \x12\x20\n\x0bNFPADEPIKML\x18\x07\x20\x03(\rR\x0bNFPADEPIKML\x12\x20\n\
+    \x0bKDIDDHIDNCG\x18\x08\x20\x01(\rR\x0bKDIDDHIDNCG\x12\x20\n\x0bOEKIFIKB\
+    MFI\x18\x0c\x20\x01(\rR\x0bOEKIFIKBMFIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

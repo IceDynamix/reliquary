@@ -28,30 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PIMNGBAMMAM {
     // message fields
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.buff_list)
-    pub buff_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.LLMLOGNFFCD)
-    pub LLMLOGNFFCD: bool,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.NNKBNJKNDKC)
-    pub NNKBNJKNDKC: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.GAENFKKAKOI)
-    pub GAENFKKAKOI: u64,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.CKLCDAGMFKP)
-    pub CKLCDAGMFKP: u64,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.HKOMBPALIPN)
-    pub HKOMBPALIPN: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.ILLEDJLNGNF)
-    pub ILLEDJLNGNF: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.AFPHLNMGPHK)
-    pub AFPHLNMGPHK: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.monster_battle_type)
+    pub monster_battle_type: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.room_uid)
+    pub room_uid: u64,
     // @@protoc_insertion_point(field:PIMNGBAMMAM.level_id)
     pub level_id: u32,
     // @@protoc_insertion_point(field:PIMNGBAMMAM.GNAMNBDIEKG)
     pub GNAMNBDIEKG: u32,
-    // @@protoc_insertion_point(field:PIMNGBAMMAM.monster_battle_type)
-    pub monster_battle_type: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.LLMLOGNFFCD)
+    pub LLMLOGNFFCD: bool,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.AFPHLNMGPHK)
+    pub AFPHLNMGPHK: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.GAENFKKAKOI)
+    pub GAENFKKAKOI: u64,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.ILLEDJLNGNF)
+    pub ILLEDJLNGNF: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.HKOMBPALIPN)
+    pub HKOMBPALIPN: u32,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.buff_list)
+    pub buff_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PIMNGBAMMAM.NNKBNJKNDKC)
+    pub NNKBNJKNDKC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PIMNGBAMMAM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,50 +71,15 @@ impl PIMNGBAMMAM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &PIMNGBAMMAM| { &m.buff_list },
-            |m: &mut PIMNGBAMMAM| { &mut m.buff_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "monster_battle_type",
+            |m: &PIMNGBAMMAM| { &m.monster_battle_type },
+            |m: &mut PIMNGBAMMAM| { &mut m.monster_battle_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLMLOGNFFCD",
-            |m: &PIMNGBAMMAM| { &m.LLMLOGNFFCD },
-            |m: &mut PIMNGBAMMAM| { &mut m.LLMLOGNFFCD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNKBNJKNDKC",
-            |m: &PIMNGBAMMAM| { &m.NNKBNJKNDKC },
-            |m: &mut PIMNGBAMMAM| { &mut m.NNKBNJKNDKC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAENFKKAKOI",
-            |m: &PIMNGBAMMAM| { &m.GAENFKKAKOI },
-            |m: &mut PIMNGBAMMAM| { &mut m.GAENFKKAKOI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &PIMNGBAMMAM| { &m.rank },
-            |m: &mut PIMNGBAMMAM| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKLCDAGMFKP",
-            |m: &PIMNGBAMMAM| { &m.CKLCDAGMFKP },
-            |m: &mut PIMNGBAMMAM| { &mut m.CKLCDAGMFKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKOMBPALIPN",
-            |m: &PIMNGBAMMAM| { &m.HKOMBPALIPN },
-            |m: &mut PIMNGBAMMAM| { &mut m.HKOMBPALIPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILLEDJLNGNF",
-            |m: &PIMNGBAMMAM| { &m.ILLEDJLNGNF },
-            |m: &mut PIMNGBAMMAM| { &mut m.ILLEDJLNGNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFPHLNMGPHK",
-            |m: &PIMNGBAMMAM| { &m.AFPHLNMGPHK },
-            |m: &mut PIMNGBAMMAM| { &mut m.AFPHLNMGPHK },
+            "room_uid",
+            |m: &PIMNGBAMMAM| { &m.room_uid },
+            |m: &mut PIMNGBAMMAM| { &mut m.room_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -127,9 +92,44 @@ impl PIMNGBAMMAM {
             |m: &mut PIMNGBAMMAM| { &mut m.GNAMNBDIEKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "monster_battle_type",
-            |m: &PIMNGBAMMAM| { &m.monster_battle_type },
-            |m: &mut PIMNGBAMMAM| { &mut m.monster_battle_type },
+            "LLMLOGNFFCD",
+            |m: &PIMNGBAMMAM| { &m.LLMLOGNFFCD },
+            |m: &mut PIMNGBAMMAM| { &mut m.LLMLOGNFFCD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFPHLNMGPHK",
+            |m: &PIMNGBAMMAM| { &m.AFPHLNMGPHK },
+            |m: &mut PIMNGBAMMAM| { &mut m.AFPHLNMGPHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &PIMNGBAMMAM| { &m.rank },
+            |m: &mut PIMNGBAMMAM| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAENFKKAKOI",
+            |m: &PIMNGBAMMAM| { &m.GAENFKKAKOI },
+            |m: &mut PIMNGBAMMAM| { &mut m.GAENFKKAKOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ILLEDJLNGNF",
+            |m: &PIMNGBAMMAM| { &m.ILLEDJLNGNF },
+            |m: &mut PIMNGBAMMAM| { &mut m.ILLEDJLNGNF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HKOMBPALIPN",
+            |m: &PIMNGBAMMAM| { &m.HKOMBPALIPN },
+            |m: &mut PIMNGBAMMAM| { &mut m.HKOMBPALIPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &PIMNGBAMMAM| { &m.buff_list },
+            |m: &mut PIMNGBAMMAM| { &mut m.buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NNKBNJKNDKC",
+            |m: &PIMNGBAMMAM| { &m.NNKBNJKNDKC },
+            |m: &mut PIMNGBAMMAM| { &mut m.NNKBNJKNDKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PIMNGBAMMAM>(
             "PIMNGBAMMAM",
@@ -149,35 +149,11 @@ impl ::protobuf::Message for PIMNGBAMMAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
-                },
-                88 => {
-                    self.buff_list.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.LLMLOGNFFCD = is.read_bool()?;
-                },
-                96 => {
-                    self.NNKBNJKNDKC = is.read_uint32()?;
-                },
-                64 => {
-                    self.GAENFKKAKOI = is.read_uint64()?;
-                },
-                56 => {
-                    self.rank = is.read_uint32()?;
+                8 => {
+                    self.monster_battle_type = is.read_uint32()?;
                 },
                 16 => {
-                    self.CKLCDAGMFKP = is.read_uint64()?;
-                },
-                80 => {
-                    self.HKOMBPALIPN = is.read_uint32()?;
-                },
-                72 => {
-                    self.ILLEDJLNGNF = is.read_uint32()?;
-                },
-                48 => {
-                    self.AFPHLNMGPHK = is.read_uint32()?;
+                    self.room_uid = is.read_uint64()?;
                 },
                 24 => {
                     self.level_id = is.read_uint32()?;
@@ -185,8 +161,32 @@ impl ::protobuf::Message for PIMNGBAMMAM {
                 32 => {
                     self.GNAMNBDIEKG = is.read_uint32()?;
                 },
-                8 => {
-                    self.monster_battle_type = is.read_uint32()?;
+                40 => {
+                    self.LLMLOGNFFCD = is.read_bool()?;
+                },
+                48 => {
+                    self.AFPHLNMGPHK = is.read_uint32()?;
+                },
+                56 => {
+                    self.rank = is.read_uint32()?;
+                },
+                64 => {
+                    self.GAENFKKAKOI = is.read_uint64()?;
+                },
+                72 => {
+                    self.ILLEDJLNGNF = is.read_uint32()?;
+                },
+                80 => {
+                    self.HKOMBPALIPN = is.read_uint32()?;
+                },
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.buff_list)?;
+                },
+                88 => {
+                    self.buff_list.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.NNKBNJKNDKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -200,30 +200,11 @@ impl ::protobuf::Message for PIMNGBAMMAM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.buff_list);
-        if self.LLMLOGNFFCD != false {
-            my_size += 1 + 1;
+        if self.monster_battle_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
         }
-        if self.NNKBNJKNDKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NNKBNJKNDKC);
-        }
-        if self.GAENFKKAKOI != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.GAENFKKAKOI);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.rank);
-        }
-        if self.CKLCDAGMFKP != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.CKLCDAGMFKP);
-        }
-        if self.HKOMBPALIPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HKOMBPALIPN);
-        }
-        if self.ILLEDJLNGNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ILLEDJLNGNF);
-        }
-        if self.AFPHLNMGPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AFPHLNMGPHK);
+        if self.room_uid != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.room_uid);
         }
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level_id);
@@ -231,8 +212,27 @@ impl ::protobuf::Message for PIMNGBAMMAM {
         if self.GNAMNBDIEKG != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.GNAMNBDIEKG);
         }
-        if self.monster_battle_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.monster_battle_type);
+        if self.LLMLOGNFFCD != false {
+            my_size += 1 + 1;
+        }
+        if self.AFPHLNMGPHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.AFPHLNMGPHK);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.rank);
+        }
+        if self.GAENFKKAKOI != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.GAENFKKAKOI);
+        }
+        if self.ILLEDJLNGNF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ILLEDJLNGNF);
+        }
+        if self.HKOMBPALIPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.HKOMBPALIPN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.buff_list);
+        if self.NNKBNJKNDKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NNKBNJKNDKC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -240,30 +240,11 @@ impl ::protobuf::Message for PIMNGBAMMAM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.buff_list)?;
-        if self.LLMLOGNFFCD != false {
-            os.write_bool(5, self.LLMLOGNFFCD)?;
+        if self.monster_battle_type != 0 {
+            os.write_uint32(1, self.monster_battle_type)?;
         }
-        if self.NNKBNJKNDKC != 0 {
-            os.write_uint32(12, self.NNKBNJKNDKC)?;
-        }
-        if self.GAENFKKAKOI != 0 {
-            os.write_uint64(8, self.GAENFKKAKOI)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(7, self.rank)?;
-        }
-        if self.CKLCDAGMFKP != 0 {
-            os.write_uint64(2, self.CKLCDAGMFKP)?;
-        }
-        if self.HKOMBPALIPN != 0 {
-            os.write_uint32(10, self.HKOMBPALIPN)?;
-        }
-        if self.ILLEDJLNGNF != 0 {
-            os.write_uint32(9, self.ILLEDJLNGNF)?;
-        }
-        if self.AFPHLNMGPHK != 0 {
-            os.write_uint32(6, self.AFPHLNMGPHK)?;
+        if self.room_uid != 0 {
+            os.write_uint64(2, self.room_uid)?;
         }
         if self.level_id != 0 {
             os.write_uint32(3, self.level_id)?;
@@ -271,8 +252,27 @@ impl ::protobuf::Message for PIMNGBAMMAM {
         if self.GNAMNBDIEKG != 0 {
             os.write_uint32(4, self.GNAMNBDIEKG)?;
         }
-        if self.monster_battle_type != 0 {
-            os.write_uint32(1, self.monster_battle_type)?;
+        if self.LLMLOGNFFCD != false {
+            os.write_bool(5, self.LLMLOGNFFCD)?;
+        }
+        if self.AFPHLNMGPHK != 0 {
+            os.write_uint32(6, self.AFPHLNMGPHK)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(7, self.rank)?;
+        }
+        if self.GAENFKKAKOI != 0 {
+            os.write_uint64(8, self.GAENFKKAKOI)?;
+        }
+        if self.ILLEDJLNGNF != 0 {
+            os.write_uint32(9, self.ILLEDJLNGNF)?;
+        }
+        if self.HKOMBPALIPN != 0 {
+            os.write_uint32(10, self.HKOMBPALIPN)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.buff_list)?;
+        if self.NNKBNJKNDKC != 0 {
+            os.write_uint32(12, self.NNKBNJKNDKC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -291,35 +291,35 @@ impl ::protobuf::Message for PIMNGBAMMAM {
     }
 
     fn clear(&mut self) {
-        self.buff_list.clear();
-        self.LLMLOGNFFCD = false;
-        self.NNKBNJKNDKC = 0;
-        self.GAENFKKAKOI = 0;
-        self.rank = 0;
-        self.CKLCDAGMFKP = 0;
-        self.HKOMBPALIPN = 0;
-        self.ILLEDJLNGNF = 0;
-        self.AFPHLNMGPHK = 0;
+        self.monster_battle_type = 0;
+        self.room_uid = 0;
         self.level_id = 0;
         self.GNAMNBDIEKG = 0;
-        self.monster_battle_type = 0;
+        self.LLMLOGNFFCD = false;
+        self.AFPHLNMGPHK = 0;
+        self.rank = 0;
+        self.GAENFKKAKOI = 0;
+        self.ILLEDJLNGNF = 0;
+        self.HKOMBPALIPN = 0;
+        self.buff_list.clear();
+        self.NNKBNJKNDKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PIMNGBAMMAM {
         static instance: PIMNGBAMMAM = PIMNGBAMMAM {
-            buff_list: ::std::vec::Vec::new(),
-            LLMLOGNFFCD: false,
-            NNKBNJKNDKC: 0,
-            GAENFKKAKOI: 0,
-            rank: 0,
-            CKLCDAGMFKP: 0,
-            HKOMBPALIPN: 0,
-            ILLEDJLNGNF: 0,
-            AFPHLNMGPHK: 0,
+            monster_battle_type: 0,
+            room_uid: 0,
             level_id: 0,
             GNAMNBDIEKG: 0,
-            monster_battle_type: 0,
+            LLMLOGNFFCD: false,
+            AFPHLNMGPHK: 0,
+            rank: 0,
+            GAENFKKAKOI: 0,
+            ILLEDJLNGNF: 0,
+            HKOMBPALIPN: 0,
+            buff_list: ::std::vec::Vec::new(),
+            NNKBNJKNDKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -344,17 +344,17 @@ impl ::protobuf::reflect::ProtobufValue for PIMNGBAMMAM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PIMNGBAMMAM.proto\"\x99\x03\n\x0bPIMNGBAMMAM\x12\x1b\n\tbuff_list\
-    \x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bLLMLOGNFFCD\x18\x05\x20\
-    \x01(\x08R\x0bLLMLOGNFFCD\x12\x20\n\x0bNNKBNJKNDKC\x18\x0c\x20\x01(\rR\
-    \x0bNNKBNJKNDKC\x12\x20\n\x0bGAENFKKAKOI\x18\x08\x20\x01(\x04R\x0bGAENFK\
-    KAKOI\x12\x12\n\x04rank\x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bCKLCDAG\
-    MFKP\x18\x02\x20\x01(\x04R\x0bCKLCDAGMFKP\x12\x20\n\x0bHKOMBPALIPN\x18\n\
-    \x20\x01(\rR\x0bHKOMBPALIPN\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\
-    \x0bILLEDJLNGNF\x12\x20\n\x0bAFPHLNMGPHK\x18\x06\x20\x01(\rR\x0bAFPHLNMG\
-    PHK\x12\x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelId\x12\x20\n\x0bGN\
-    AMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIEKG\x12.\n\x13monster_battle_ty\
-    pe\x18\x01\x20\x01(\rR\x11monsterBattleTypeb\x06proto3\
+    \n\x11PIMNGBAMMAM.proto\"\x92\x03\n\x0bPIMNGBAMMAM\x12.\n\x13monster_bat\
+    tle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x19\n\x08room_uid\
+    \x18\x02\x20\x01(\x04R\x07roomUid\x12\x19\n\x08level_id\x18\x03\x20\x01(\
+    \rR\x07levelId\x12\x20\n\x0bGNAMNBDIEKG\x18\x04\x20\x01(\rR\x0bGNAMNBDIE\
+    KG\x12\x20\n\x0bLLMLOGNFFCD\x18\x05\x20\x01(\x08R\x0bLLMLOGNFFCD\x12\x20\
+    \n\x0bAFPHLNMGPHK\x18\x06\x20\x01(\rR\x0bAFPHLNMGPHK\x12\x12\n\x04rank\
+    \x18\x07\x20\x01(\rR\x04rank\x12\x20\n\x0bGAENFKKAKOI\x18\x08\x20\x01(\
+    \x04R\x0bGAENFKKAKOI\x12\x20\n\x0bILLEDJLNGNF\x18\t\x20\x01(\rR\x0bILLED\
+    JLNGNF\x12\x20\n\x0bHKOMBPALIPN\x18\n\x20\x01(\rR\x0bHKOMBPALIPN\x12\x1b\
+    \n\tbuff_list\x18\x0b\x20\x03(\rR\x08buffList\x12\x20\n\x0bNNKBNJKNDKC\
+    \x18\x0c\x20\x01(\rR\x0bNNKBNJKNDKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

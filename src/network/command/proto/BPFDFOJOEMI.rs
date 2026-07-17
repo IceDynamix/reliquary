@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPFDFOJOEMI {
     // message fields
+    // @@protoc_insertion_point(field:BPFDFOJOEMI.percent)
+    pub percent: u32,
     // @@protoc_insertion_point(field:BPFDFOJOEMI.LBDLAACOCCN)
     pub LBDLAACOCCN: u32,
-    // @@protoc_insertion_point(field:BPFDFOJOEMI.MINCCILIJNN)
-    pub MINCCILIJNN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BPFDFOJOEMI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BPFDFOJOEMI {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "percent",
+            |m: &BPFDFOJOEMI| { &m.percent },
+            |m: &mut BPFDFOJOEMI| { &mut m.percent },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LBDLAACOCCN",
             |m: &BPFDFOJOEMI| { &m.LBDLAACOCCN },
             |m: &mut BPFDFOJOEMI| { &mut m.LBDLAACOCCN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MINCCILIJNN",
-            |m: &BPFDFOJOEMI| { &m.MINCCILIJNN },
-            |m: &mut BPFDFOJOEMI| { &mut m.MINCCILIJNN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPFDFOJOEMI>(
             "BPFDFOJOEMI",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BPFDFOJOEMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.LBDLAACOCCN = is.read_uint32()?;
+                16 => {
+                    self.percent = is.read_uint32()?;
                 },
-                112 => {
-                    self.MINCCILIJNN = is.read_uint32()?;
+                48 => {
+                    self.LBDLAACOCCN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BPFDFOJOEMI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LBDLAACOCCN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LBDLAACOCCN);
+        if self.percent != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.percent);
         }
-        if self.MINCCILIJNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MINCCILIJNN);
+        if self.LBDLAACOCCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LBDLAACOCCN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BPFDFOJOEMI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LBDLAACOCCN != 0 {
-            os.write_uint32(5, self.LBDLAACOCCN)?;
+        if self.percent != 0 {
+            os.write_uint32(2, self.percent)?;
         }
-        if self.MINCCILIJNN != 0 {
-            os.write_uint32(14, self.MINCCILIJNN)?;
+        if self.LBDLAACOCCN != 0 {
+            os.write_uint32(6, self.LBDLAACOCCN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BPFDFOJOEMI {
     }
 
     fn clear(&mut self) {
+        self.percent = 0;
         self.LBDLAACOCCN = 0;
-        self.MINCCILIJNN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPFDFOJOEMI {
         static instance: BPFDFOJOEMI = BPFDFOJOEMI {
+            percent: 0,
             LBDLAACOCCN: 0,
-            MINCCILIJNN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BPFDFOJOEMI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPFDFOJOEMI.proto\"Q\n\x0bBPFDFOJOEMI\x12\x20\n\x0bLBDLAACOCCN\x18\
-    \x05\x20\x01(\rR\x0bLBDLAACOCCN\x12\x20\n\x0bMINCCILIJNN\x18\x0e\x20\x01\
-    (\rR\x0bMINCCILIJNNb\x06proto3\
+    \n\x11BPFDFOJOEMI.proto\"I\n\x0bBPFDFOJOEMI\x12\x18\n\x07percent\x18\x02\
+    \x20\x01(\rR\x07percent\x12\x20\n\x0bLBDLAACOCCN\x18\x06\x20\x01(\rR\x0b\
+    LBDLAACOCCNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

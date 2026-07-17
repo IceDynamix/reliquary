@@ -79,10 +79,10 @@ impl ::protobuf::Message for HNPHLAHJPOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.DAEMEBCKHIK = is.read_uint32()?;
                 },
-                32 => {
+                40 => {
                     self.PLPJNCDKMAD = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HNPHLAHJPOB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DAEMEBCKHIK);
+            my_size += ::protobuf::rt::uint32_size(1, self.DAEMEBCKHIK);
         }
         if self.PLPJNCDKMAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PLPJNCDKMAD);
+            my_size += ::protobuf::rt::uint32_size(5, self.PLPJNCDKMAD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HNPHLAHJPOB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(8, self.DAEMEBCKHIK)?;
+            os.write_uint32(1, self.DAEMEBCKHIK)?;
         }
         if self.PLPJNCDKMAD != 0 {
-            os.write_uint32(4, self.PLPJNCDKMAD)?;
+            os.write_uint32(5, self.PLPJNCDKMAD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HNPHLAHJPOB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HNPHLAHJPOB.proto\"Q\n\x0bHNPHLAHJPOB\x12\x20\n\x0bDAEMEBCKHIK\x18\
-    \x08\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bPLPJNCDKMAD\x18\x04\x20\x01\
+    \x01\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bPLPJNCDKMAD\x18\x05\x20\x01\
     (\rR\x0bPLPJNCDKMADb\x06proto3\
 ";
 

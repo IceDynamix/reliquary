@@ -72,7 +72,7 @@ impl ::protobuf::Message for ConfirmChallengeTierceStageSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                112 => {
                     self.IOBCIMIPEOM = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ConfirmChallengeTierceStageSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IOBCIMIPEOM != false {
-            os.write_bool(11, self.IOBCIMIPEOM)?;
+            os.write_bool(14, self.IOBCIMIPEOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmChallengeTierceStageSettleCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,ConfirmChallengeTierceStageSettleCsReq.proto\"J\n&ConfirmChallengeTie\
-    rceStageSettleCsReq\x12\x20\n\x0bIOBCIMIPEOM\x18\x0b\x20\x01(\x08R\x0bIO\
+    rceStageSettleCsReq\x12\x20\n\x0bIOBCIMIPEOM\x18\x0e\x20\x01(\x08R\x0bIO\
     BCIMIPEOMb\x06proto3\
 ";
 

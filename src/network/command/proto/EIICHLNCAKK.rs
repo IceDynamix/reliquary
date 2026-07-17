@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EIICHLNCAKK {
     // message fields
-    // @@protoc_insertion_point(field:EIICHLNCAKK.CNIMHMAPDII)
-    pub CNIMHMAPDII: ::std::vec::Vec<super::ABMNFJJDDOE::ABMNFJJDDOE>,
     // @@protoc_insertion_point(field:EIICHLNCAKK.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:EIICHLNCAKK.CNIMHMAPDII)
+    pub CNIMHMAPDII: ::std::vec::Vec<super::ABMNFJJDDOE::ABMNFJJDDOE>,
     // @@protoc_insertion_point(field:EIICHLNCAKK.HPJAAOPDIOL)
     pub HPJAAOPDIOL: u32,
     // @@protoc_insertion_point(field:EIICHLNCAKK.JFCLHPFCMHP)
@@ -55,15 +55,15 @@ impl EIICHLNCAKK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CNIMHMAPDII",
-            |m: &EIICHLNCAKK| { &m.CNIMHMAPDII },
-            |m: &mut EIICHLNCAKK| { &mut m.CNIMHMAPDII },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
             |m: &EIICHLNCAKK| { &m.avatar_id },
             |m: &mut EIICHLNCAKK| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CNIMHMAPDII",
+            |m: &EIICHLNCAKK| { &m.CNIMHMAPDII },
+            |m: &mut EIICHLNCAKK| { &mut m.CNIMHMAPDII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HPJAAOPDIOL",
@@ -93,11 +93,11 @@ impl ::protobuf::Message for EIICHLNCAKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.CNIMHMAPDII.push(is.read_message()?);
-                },
                 8 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                18 => {
+                    self.CNIMHMAPDII.push(is.read_message()?);
                 },
                 24 => {
                     self.HPJAAOPDIOL = is.read_uint32()?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for EIICHLNCAKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
         for value in &self.CNIMHMAPDII {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
-        }
         if self.HPJAAOPDIOL != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.HPJAAOPDIOL);
         }
@@ -136,12 +136,12 @@ impl ::protobuf::Message for EIICHLNCAKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CNIMHMAPDII {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
         }
+        for v in &self.CNIMHMAPDII {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         if self.HPJAAOPDIOL != 0 {
             os.write_uint32(3, self.HPJAAOPDIOL)?;
         }
@@ -165,8 +165,8 @@ impl ::protobuf::Message for EIICHLNCAKK {
     }
 
     fn clear(&mut self) {
-        self.CNIMHMAPDII.clear();
         self.avatar_id = 0;
+        self.CNIMHMAPDII.clear();
         self.HPJAAOPDIOL = 0;
         self.JFCLHPFCMHP = 0;
         self.special_fields.clear();
@@ -174,8 +174,8 @@ impl ::protobuf::Message for EIICHLNCAKK {
 
     fn default_instance() -> &'static EIICHLNCAKK {
         static instance: EIICHLNCAKK = EIICHLNCAKK {
-            CNIMHMAPDII: ::std::vec::Vec::new(),
             avatar_id: 0,
+            CNIMHMAPDII: ::std::vec::Vec::new(),
             HPJAAOPDIOL: 0,
             JFCLHPFCMHP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -203,8 +203,8 @@ impl ::protobuf::reflect::ProtobufValue for EIICHLNCAKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIICHLNCAKK.proto\x1a\x11ABMNFJJDDOE.proto\"\x9e\x01\n\x0bEIICHLNC\
-    AKK\x12.\n\x0bCNIMHMAPDII\x18\x02\x20\x03(\x0b2\x0c.ABMNFJJDDOER\x0bCNIM\
-    HMAPDII\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\
+    AKK\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12.\n\x0bCNIMH\
+    MAPDII\x18\x02\x20\x03(\x0b2\x0c.ABMNFJJDDOER\x0bCNIMHMAPDII\x12\x20\n\
     \x0bHPJAAOPDIOL\x18\x03\x20\x01(\rR\x0bHPJAAOPDIOL\x12\x20\n\x0bJFCLHPFC\
     MHP\x18\x04\x20\x01(\rR\x0bJFCLHPFCMHPb\x06proto3\
 ";

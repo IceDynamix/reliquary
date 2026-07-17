@@ -45,7 +45,7 @@ impl EAFHBODFEKM {
         ::std::default::Default::default()
     }
 
-    // bool CNMAFMEKADJ = 476;
+    // bool CNMAFMEKADJ = 1829;
 
     pub fn CNMAFMEKADJ(&self) -> bool {
         match self.GBGKEJPFEIL {
@@ -70,7 +70,7 @@ impl EAFHBODFEKM {
         self.GBGKEJPFEIL = ::std::option::Option::Some(eafhbodfekm::GBGKEJPFEIL::CNMAFMEKADJ(v))
     }
 
-    // .GLNJKGOGKKL BDHBFFEOPFG = 987;
+    // .GLNJKGOGKKL BDHBFFEOPFG = 378;
 
     pub fn BDHBFFEOPFG(&self) -> &super::GLNJKGOGKKL::GLNJKGOGKKL {
         match self.GBGKEJPFEIL {
@@ -119,7 +119,7 @@ impl EAFHBODFEKM {
         }
     }
 
-    // .GLNJKGOGKKL DLDGBIBHDKM = 18;
+    // .GLNJKGOGKKL DLDGBIBHDKM = 279;
 
     pub fn DLDGBIBHDKM(&self) -> &super::GLNJKGOGKKL::GLNJKGOGKKL {
         match self.GBGKEJPFEIL {
@@ -210,13 +210,13 @@ impl ::protobuf::Message for EAFHBODFEKM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                3808 => {
+                14632 => {
                     self.GBGKEJPFEIL = ::std::option::Option::Some(eafhbodfekm::GBGKEJPFEIL::CNMAFMEKADJ(is.read_bool()?));
                 },
-                7898 => {
+                3026 => {
                     self.GBGKEJPFEIL = ::std::option::Option::Some(eafhbodfekm::GBGKEJPFEIL::BDHBFFEOPFG(is.read_message()?));
                 },
-                146 => {
+                2234 => {
                     self.GBGKEJPFEIL = ::std::option::Option::Some(eafhbodfekm::GBGKEJPFEIL::DLDGBIBHDKM(is.read_message()?));
                 },
                 tag => {
@@ -255,13 +255,13 @@ impl ::protobuf::Message for EAFHBODFEKM {
         if let ::std::option::Option::Some(ref v) = self.GBGKEJPFEIL {
             match v {
                 &eafhbodfekm::GBGKEJPFEIL::CNMAFMEKADJ(v) => {
-                    os.write_bool(476, v)?;
+                    os.write_bool(1829, v)?;
                 },
                 &eafhbodfekm::GBGKEJPFEIL::BDHBFFEOPFG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(987, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(378, v, os)?;
                 },
                 &eafhbodfekm::GBGKEJPFEIL::DLDGBIBHDKM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(279, v, os)?;
                 },
             };
         }
@@ -347,11 +347,11 @@ pub mod eafhbodfekm {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EAFHBODFEKM.proto\x1a\x11GLNJKGOGKKL.proto\"\xa6\x01\n\x0bEAFHBODF\
-    EKM\x12#\n\x0bCNMAFMEKADJ\x18\xdc\x03\x20\x01(\x08H\0R\x0bCNMAFMEKADJ\
-    \x121\n\x0bBDHBFFEOPFG\x18\xdb\x07\x20\x01(\x0b2\x0c.GLNJKGOGKKLH\0R\x0b\
-    BDHBFFEOPFG\x120\n\x0bDLDGBIBHDKM\x18\x12\x20\x01(\x0b2\x0c.GLNJKGOGKKLH\
-    \0R\x0bDLDGBIBHDKMB\r\n\x0bGBGKEJPFEILb\x06proto3\
+    \n\x11EAFHBODFEKM.proto\x1a\x11GLNJKGOGKKL.proto\"\xa7\x01\n\x0bEAFHBODF\
+    EKM\x12#\n\x0bCNMAFMEKADJ\x18\xa5\x0e\x20\x01(\x08H\0R\x0bCNMAFMEKADJ\
+    \x121\n\x0bBDHBFFEOPFG\x18\xfa\x02\x20\x01(\x0b2\x0c.GLNJKGOGKKLH\0R\x0b\
+    BDHBFFEOPFG\x121\n\x0bDLDGBIBHDKM\x18\x97\x02\x20\x01(\x0b2\x0c.GLNJKGOG\
+    KKLH\0R\x0bDLDGBIBHDKMB\r\n\x0bGBGKEJPFEILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

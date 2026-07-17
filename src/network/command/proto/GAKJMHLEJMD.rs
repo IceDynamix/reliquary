@@ -30,8 +30,6 @@ pub struct GAKJMHLEJMD {
     // message fields
     // @@protoc_insertion_point(field:GAKJMHLEJMD.HCBJONGPJFD)
     pub HCBJONGPJFD: ::std::vec::Vec<super::HEGGPIEGBIN::HEGGPIEGBIN>,
-    // @@protoc_insertion_point(field:GAKJMHLEJMD.LBIPPBPPLPC)
-    pub LBIPPBPPLPC: ::protobuf::MessageField<super::FDECDCEDPNM::FDECDCEDPNM>,
     // special fields
     // @@protoc_insertion_point(special_field:GAKJMHLEJMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl GAKJMHLEJMD {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HCBJONGPJFD",
             |m: &GAKJMHLEJMD| { &m.HCBJONGPJFD },
             |m: &mut GAKJMHLEJMD| { &mut m.HCBJONGPJFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FDECDCEDPNM::FDECDCEDPNM>(
-            "LBIPPBPPLPC",
-            |m: &GAKJMHLEJMD| { &m.LBIPPBPPLPC },
-            |m: &mut GAKJMHLEJMD| { &mut m.LBIPPBPPLPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GAKJMHLEJMD>(
             "GAKJMHLEJMD",
@@ -79,11 +72,8 @@ impl ::protobuf::Message for GAKJMHLEJMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     self.HCBJONGPJFD.push(is.read_message()?);
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LBIPPBPPLPC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,10 +91,6 @@ impl ::protobuf::Message for GAKJMHLEJMD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.LBIPPBPPLPC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,11 +98,8 @@ impl ::protobuf::Message for GAKJMHLEJMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.HCBJONGPJFD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if let Some(v) = self.LBIPPBPPLPC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -135,14 +118,12 @@ impl ::protobuf::Message for GAKJMHLEJMD {
 
     fn clear(&mut self) {
         self.HCBJONGPJFD.clear();
-        self.LBIPPBPPLPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GAKJMHLEJMD {
         static instance: GAKJMHLEJMD = GAKJMHLEJMD {
             HCBJONGPJFD: ::std::vec::Vec::new(),
-            LBIPPBPPLPC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GAKJMHLEJMD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GAKJMHLEJMD.proto\x1a\x11FDECDCEDPNM.proto\x1a\x11HEGGPIEGBIN.prot\
-    o\"m\n\x0bGAKJMHLEJMD\x12.\n\x0bHCBJONGPJFD\x18\x03\x20\x03(\x0b2\x0c.HE\
-    GGPIEGBINR\x0bHCBJONGPJFD\x12.\n\x0bLBIPPBPPLPC\x18\x0f\x20\x01(\x0b2\
-    \x0c.FDECDCEDPNMR\x0bLBIPPBPPLPCb\x06proto3\
+    \n\x11GAKJMHLEJMD.proto\x1a\x11HEGGPIEGBIN.proto\"=\n\x0bGAKJMHLEJMD\x12\
+    .\n\x0bHCBJONGPJFD\x18\x01\x20\x03(\x0b2\x0c.HEGGPIEGBINR\x0bHCBJONGPJFD\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,8 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FDECDCEDPNM::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::HEGGPIEGBIN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GAKJMHLEJMD::generated_message_descriptor_data());

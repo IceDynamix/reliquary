@@ -28,14 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AGEOGDOGDMM {
     // message fields
-    // @@protoc_insertion_point(field:AGEOGDOGDMM.HMPGJCAIPDL)
-    pub HMPGJCAIPDL: u32,
     // @@protoc_insertion_point(field:AGEOGDOGDMM.rogue_money)
     pub rogue_money: u32,
-    // @@protoc_insertion_point(field:AGEOGDOGDMM.OMJHLDAKCBC)
-    pub OMJHLDAKCBC: u32,
-    // @@protoc_insertion_point(field:AGEOGDOGDMM.DGEPIKMIHCA)
-    pub DGEPIKMIHCA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AGEOGDOGDMM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,27 +47,12 @@ impl AGEOGDOGDMM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HMPGJCAIPDL",
-            |m: &AGEOGDOGDMM| { &m.HMPGJCAIPDL },
-            |m: &mut AGEOGDOGDMM| { &mut m.HMPGJCAIPDL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_money",
             |m: &AGEOGDOGDMM| { &m.rogue_money },
             |m: &mut AGEOGDOGDMM| { &mut m.rogue_money },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMJHLDAKCBC",
-            |m: &AGEOGDOGDMM| { &m.OMJHLDAKCBC },
-            |m: &mut AGEOGDOGDMM| { &mut m.OMJHLDAKCBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DGEPIKMIHCA",
-            |m: &AGEOGDOGDMM| { &m.DGEPIKMIHCA },
-            |m: &mut AGEOGDOGDMM| { &mut m.DGEPIKMIHCA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AGEOGDOGDMM>(
             "AGEOGDOGDMM",
@@ -93,17 +72,8 @@ impl ::protobuf::Message for AGEOGDOGDMM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.HMPGJCAIPDL = is.read_uint32()?;
-                },
                 104 => {
                     self.rogue_money = is.read_uint32()?;
-                },
-                48 => {
-                    self.OMJHLDAKCBC = is.read_uint32()?;
-                },
-                80 => {
-                    self.DGEPIKMIHCA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +87,8 @@ impl ::protobuf::Message for AGEOGDOGDMM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HMPGJCAIPDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HMPGJCAIPDL);
-        }
         if self.rogue_money != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.rogue_money);
-        }
-        if self.OMJHLDAKCBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OMJHLDAKCBC);
-        }
-        if self.DGEPIKMIHCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DGEPIKMIHCA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +96,8 @@ impl ::protobuf::Message for AGEOGDOGDMM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HMPGJCAIPDL != 0 {
-            os.write_uint32(5, self.HMPGJCAIPDL)?;
-        }
         if self.rogue_money != 0 {
             os.write_uint32(13, self.rogue_money)?;
-        }
-        if self.OMJHLDAKCBC != 0 {
-            os.write_uint32(6, self.OMJHLDAKCBC)?;
-        }
-        if self.DGEPIKMIHCA != 0 {
-            os.write_uint32(10, self.DGEPIKMIHCA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +116,13 @@ impl ::protobuf::Message for AGEOGDOGDMM {
     }
 
     fn clear(&mut self) {
-        self.HMPGJCAIPDL = 0;
         self.rogue_money = 0;
-        self.OMJHLDAKCBC = 0;
-        self.DGEPIKMIHCA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AGEOGDOGDMM {
         static instance: AGEOGDOGDMM = AGEOGDOGDMM {
-            HMPGJCAIPDL: 0,
             rogue_money: 0,
-            OMJHLDAKCBC: 0,
-            DGEPIKMIHCA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for AGEOGDOGDMM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AGEOGDOGDMM.proto\"\x94\x01\n\x0bAGEOGDOGDMM\x12\x20\n\x0bHMPGJCAI\
-    PDL\x18\x05\x20\x01(\rR\x0bHMPGJCAIPDL\x12\x1f\n\x0brogue_money\x18\r\
-    \x20\x01(\rR\nrogueMoney\x12\x20\n\x0bOMJHLDAKCBC\x18\x06\x20\x01(\rR\
-    \x0bOMJHLDAKCBC\x12\x20\n\x0bDGEPIKMIHCA\x18\n\x20\x01(\rR\x0bDGEPIKMIHC\
-    Ab\x06proto3\
+    \n\x11AGEOGDOGDMM.proto\".\n\x0bAGEOGDOGDMM\x12\x1f\n\x0brogue_money\x18\
+    \r\x20\x01(\rR\nrogueMoneyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

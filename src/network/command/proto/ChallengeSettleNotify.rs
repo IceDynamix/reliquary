@@ -28,26 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeSettleNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.max_level)
-    pub max_level: ::protobuf::MessageField<super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.KDIDCCOOJJC)
     pub KDIDCCOOJJC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.cur_challenge)
-    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_score)
-    pub challenge_score: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.star)
+    pub star: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.max_level)
+    pub max_level: ::protobuf::MessageField<super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.score_two)
     pub score_two: u32,
     // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.JIJBNNANAGP)
-    pub JIJBNNANAGP: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.star)
-    pub star: u32,
-    // @@protoc_insertion_point(field:ChallengeSettleNotify.is_win)
-    pub is_win: bool,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.challenge_score)
+    pub challenge_score: u32,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChallengeSettleNotify.cur_challenge)
+    pub cur_challenge: ::protobuf::MessageField<super::CurChallenge::CurChallenge>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeSettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,32 +63,27 @@ impl ChallengeSettleNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>(
-            "max_level",
-            |m: &ChallengeSettleNotify| { &m.max_level },
-            |m: &mut ChallengeSettleNotify| { &mut m.max_level },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KDIDCCOOJJC",
             |m: &ChallengeSettleNotify| { &m.KDIDCCOOJJC },
             |m: &mut ChallengeSettleNotify| { &mut m.KDIDCCOOJJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurChallenge::CurChallenge>(
-            "cur_challenge",
-            |m: &ChallengeSettleNotify| { &m.cur_challenge },
-            |m: &mut ChallengeSettleNotify| { &mut m.cur_challenge },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "star",
+            |m: &ChallengeSettleNotify| { &m.star },
+            |m: &mut ChallengeSettleNotify| { &mut m.star },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &ChallengeSettleNotify| { &m.reward },
-            |m: &mut ChallengeSettleNotify| { &mut m.reward },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeHistoryMaxLevel::ChallengeHistoryMaxLevel>(
+            "max_level",
+            |m: &ChallengeSettleNotify| { &m.max_level },
+            |m: &mut ChallengeSettleNotify| { &mut m.max_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_score",
-            |m: &ChallengeSettleNotify| { &m.challenge_score },
-            |m: &mut ChallengeSettleNotify| { &mut m.challenge_score },
+            "is_win",
+            |m: &ChallengeSettleNotify| { &m.is_win },
+            |m: &mut ChallengeSettleNotify| { &mut m.is_win },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_two",
@@ -103,19 +96,19 @@ impl ChallengeSettleNotify {
             |m: &mut ChallengeSettleNotify| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JIJBNNANAGP",
-            |m: &ChallengeSettleNotify| { &m.JIJBNNANAGP },
-            |m: &mut ChallengeSettleNotify| { &mut m.JIJBNNANAGP },
+            "challenge_score",
+            |m: &ChallengeSettleNotify| { &m.challenge_score },
+            |m: &mut ChallengeSettleNotify| { &mut m.challenge_score },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "star",
-            |m: &ChallengeSettleNotify| { &m.star },
-            |m: &mut ChallengeSettleNotify| { &mut m.star },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &ChallengeSettleNotify| { &m.reward },
+            |m: &mut ChallengeSettleNotify| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &ChallengeSettleNotify| { &m.is_win },
-            |m: &mut ChallengeSettleNotify| { &mut m.is_win },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurChallenge::CurChallenge>(
+            "cur_challenge",
+            |m: &ChallengeSettleNotify| { &m.cur_challenge },
+            |m: &mut ChallengeSettleNotify| { &mut m.cur_challenge },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeSettleNotify>(
             "ChallengeSettleNotify",
@@ -135,38 +128,35 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.max_level)?;
-                },
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.KDIDCCOOJJC)?;
                 },
-                16 => {
+                8 => {
                     self.KDIDCCOOJJC.push(is.read_uint32()?);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                8 => {
-                    self.challenge_score = is.read_uint32()?;
-                },
-                72 => {
-                    self.score_two = is.read_uint32()?;
-                },
-                24 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.JIJBNNANAGP = is.read_uint32()?;
-                },
-                48 => {
+                16 => {
                     self.star = is.read_uint32()?;
                 },
-                88 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.max_level)?;
+                },
+                56 => {
                     self.is_win = is.read_bool()?;
+                },
+                64 => {
+                    self.score_two = is.read_uint32()?;
+                },
+                72 => {
+                    self.challenge_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.challenge_score = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_challenge)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -180,36 +170,33 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KDIDCCOOJJC);
+        if self.star != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.star);
+        }
         if let Some(v) = self.max_level.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.KDIDCCOOJJC);
-        if let Some(v) = self.cur_challenge.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        if self.score_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.score_two);
+        }
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.challenge_id);
+        }
+        if self.challenge_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.challenge_score);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.challenge_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.challenge_score);
-        }
-        if self.score_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.score_two);
-        }
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.challenge_id);
-        }
-        if self.JIJBNNANAGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JIJBNNANAGP);
-        }
-        if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.star);
-        }
-        if self.is_win != false {
-            my_size += 1 + 1;
+        if let Some(v) = self.cur_challenge.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -217,33 +204,30 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.max_level.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        os.write_repeated_packed_uint32(2, &self.KDIDCCOOJJC)?;
-        if let Some(v) = self.cur_challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.challenge_score != 0 {
-            os.write_uint32(1, self.challenge_score)?;
-        }
-        if self.score_two != 0 {
-            os.write_uint32(9, self.score_two)?;
-        }
-        if self.challenge_id != 0 {
-            os.write_uint32(3, self.challenge_id)?;
-        }
-        if self.JIJBNNANAGP != 0 {
-            os.write_uint32(8, self.JIJBNNANAGP)?;
-        }
+        os.write_repeated_packed_uint32(1, &self.KDIDCCOOJJC)?;
         if self.star != 0 {
-            os.write_uint32(6, self.star)?;
+            os.write_uint32(2, self.star)?;
+        }
+        if let Some(v) = self.max_level.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.is_win != false {
-            os.write_bool(11, self.is_win)?;
+            os.write_bool(7, self.is_win)?;
+        }
+        if self.score_two != 0 {
+            os.write_uint32(8, self.score_two)?;
+        }
+        if self.challenge_id != 0 {
+            os.write_uint32(9, self.challenge_id)?;
+        }
+        if self.challenge_score != 0 {
+            os.write_uint32(12, self.challenge_score)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.cur_challenge.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,31 +246,29 @@ impl ::protobuf::Message for ChallengeSettleNotify {
     }
 
     fn clear(&mut self) {
-        self.max_level.clear();
         self.KDIDCCOOJJC.clear();
-        self.cur_challenge.clear();
-        self.reward.clear();
-        self.challenge_score = 0;
+        self.star = 0;
+        self.max_level.clear();
+        self.is_win = false;
         self.score_two = 0;
         self.challenge_id = 0;
-        self.JIJBNNANAGP = 0;
-        self.star = 0;
-        self.is_win = false;
+        self.challenge_score = 0;
+        self.reward.clear();
+        self.cur_challenge.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeSettleNotify {
         static instance: ChallengeSettleNotify = ChallengeSettleNotify {
-            max_level: ::protobuf::MessageField::none(),
             KDIDCCOOJJC: ::std::vec::Vec::new(),
-            cur_challenge: ::protobuf::MessageField::none(),
-            reward: ::protobuf::MessageField::none(),
-            challenge_score: 0,
+            star: 0,
+            max_level: ::protobuf::MessageField::none(),
+            is_win: false,
             score_two: 0,
             challenge_id: 0,
-            JIJBNNANAGP: 0,
-            star: 0,
-            is_win: false,
+            challenge_score: 0,
+            reward: ::protobuf::MessageField::none(),
+            cur_challenge: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -312,16 +294,16 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeSettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bChallengeSettleNotify.proto\x1a\x1eChallengeHistoryMaxLevel.proto\
-    \x1a\x12CurChallenge.proto\x1a\x0eItemList.proto\"\xfe\x02\n\x15Challeng\
-    eSettleNotify\x126\n\tmax_level\x18\x0e\x20\x01(\x0b2\x19.ChallengeHisto\
-    ryMaxLevelR\x08maxLevel\x12\x20\n\x0bKDIDCCOOJJC\x18\x02\x20\x03(\rR\x0b\
-    KDIDCCOOJJC\x122\n\rcur_challenge\x18\r\x20\x01(\x0b2\r.CurChallengeR\
-    \x0ccurChallenge\x12!\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06r\
-    eward\x12'\n\x0fchallenge_score\x18\x01\x20\x01(\rR\x0echallengeScore\
-    \x12\x1b\n\tscore_two\x18\t\x20\x01(\rR\x08scoreTwo\x12!\n\x0cchallenge_\
-    id\x18\x03\x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bJIJBNNANAGP\x18\x08\
-    \x20\x01(\rR\x0bJIJBNNANAGP\x12\x12\n\x04star\x18\x06\x20\x01(\rR\x04sta\
-    r\x12\x15\n\x06is_win\x18\x0b\x20\x01(\x08R\x05isWinb\x06proto3\
+    \x1a\x12CurChallenge.proto\x1a\x0eItemList.proto\"\xdc\x02\n\x15Challeng\
+    eSettleNotify\x12\x20\n\x0bKDIDCCOOJJC\x18\x01\x20\x03(\rR\x0bKDIDCCOOJJ\
+    C\x12\x12\n\x04star\x18\x02\x20\x01(\rR\x04star\x126\n\tmax_level\x18\
+    \x06\x20\x01(\x0b2\x19.ChallengeHistoryMaxLevelR\x08maxLevel\x12\x15\n\
+    \x06is_win\x18\x07\x20\x01(\x08R\x05isWin\x12\x1b\n\tscore_two\x18\x08\
+    \x20\x01(\rR\x08scoreTwo\x12!\n\x0cchallenge_id\x18\t\x20\x01(\rR\x0bcha\
+    llengeId\x12'\n\x0fchallenge_score\x18\x0c\x20\x01(\rR\x0echallengeScore\
+    \x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x122\n\rcu\
+    r_challenge\x18\x0f\x20\x01(\x0b2\r.CurChallengeR\x0ccurChallengeb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

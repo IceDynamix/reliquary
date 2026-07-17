@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DCEPBLJKNNE {
     // message fields
+    // @@protoc_insertion_point(field:DCEPBLJKNNE.LIAGGDDILGO)
+    pub LIAGGDDILGO: i32,
     // @@protoc_insertion_point(field:DCEPBLJKNNE.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:DCEPBLJKNNE.JFIGNBBLCIM)
     pub JFIGNBBLCIM: u32,
-    // @@protoc_insertion_point(field:DCEPBLJKNNE.LIAGGDDILGO)
-    pub LIAGGDDILGO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:DCEPBLJKNNE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl DCEPBLJKNNE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIAGGDDILGO",
+            |m: &DCEPBLJKNNE| { &m.LIAGGDDILGO },
+            |m: &mut DCEPBLJKNNE| { &mut m.LIAGGDDILGO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
             |m: &DCEPBLJKNNE| { &m.cost_data },
@@ -62,11 +67,6 @@ impl DCEPBLJKNNE {
             "JFIGNBBLCIM",
             |m: &DCEPBLJKNNE| { &m.JFIGNBBLCIM },
             |m: &mut DCEPBLJKNNE| { &mut m.JFIGNBBLCIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIAGGDDILGO",
-            |m: &DCEPBLJKNNE| { &m.LIAGGDDILGO },
-            |m: &mut DCEPBLJKNNE| { &mut m.LIAGGDDILGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DCEPBLJKNNE>(
             "DCEPBLJKNNE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DCEPBLJKNNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                16 => {
+                    self.LIAGGDDILGO = is.read_int32()?;
+                },
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                56 => {
+                120 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
-                },
-                104 => {
-                    self.LIAGGDDILGO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for DCEPBLJKNNE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LIAGGDDILGO != 0 {
+            my_size += ::protobuf::rt::int32_size(2, self.LIAGGDDILGO);
+        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JFIGNBBLCIM);
-        }
-        if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::uint32_size(15, self.JFIGNBBLCIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for DCEPBLJKNNE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LIAGGDDILGO != 0 {
+            os.write_int32(2, self.LIAGGDDILGO)?;
+        }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(7, self.JFIGNBBLCIM)?;
-        }
-        if self.LIAGGDDILGO != 0 {
-            os.write_int32(13, self.LIAGGDDILGO)?;
+            os.write_uint32(15, self.JFIGNBBLCIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for DCEPBLJKNNE {
     }
 
     fn clear(&mut self) {
+        self.LIAGGDDILGO = 0;
         self.cost_data.clear();
         self.JFIGNBBLCIM = 0;
-        self.LIAGGDDILGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DCEPBLJKNNE {
         static instance: DCEPBLJKNNE = DCEPBLJKNNE {
+            LIAGGDDILGO: 0,
             cost_data: ::protobuf::MessageField::none(),
             JFIGNBBLCIM: 0,
-            LIAGGDDILGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for DCEPBLJKNNE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DCEPBLJKNNE.proto\x1a\x12ItemCostData.proto\"}\n\x0bDCEPBLJKNNE\
-    \x12*\n\tcost_data\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    \x20\n\x0bJFIGNBBLCIM\x18\x07\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\n\x0bLI\
-    AGGDDILGO\x18\r\x20\x01(\x05R\x0bLIAGGDDILGOb\x06proto3\
+    \x12\x20\n\x0bLIAGGDDILGO\x18\x02\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tc\
+    ost_data\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\x0b\
+    JFIGNBBLCIM\x18\x0f\x20\x01(\rR\x0bJFIGNBBLCIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IHBMPCIIGJD {
     // message fields
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.buff_list)
-    pub buff_list: ::std::vec::Vec<super::KMCCCOKIOFD::KMCCCOKIOFD>,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.DBMFBJCHNKN)
+    pub DBMFBJCHNKN: bool,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.can_interact)
+    pub can_interact: bool,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.GDNEHLEOMOM)
     pub GDNEHLEOMOM: u32,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.OHCCEFIALGL)
     pub OHCCEFIALGL: u32,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.BBBINMPJCGI)
     pub BBBINMPJCGI: bool,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.MNAOCHOKFFJ)
-    pub MNAOCHOKFFJ: bool,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.AALCCPJCBME)
-    pub AALCCPJCBME: bool,
-    // @@protoc_insertion_point(field:IHBMPCIIGJD.DBMFBJCHNKN)
-    pub DBMFBJCHNKN: bool,
     // @@protoc_insertion_point(field:IHBMPCIIGJD.EILBAOLILAM)
     pub EILBAOLILAM: u32,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.is_locked)
+    pub is_locked: bool,
+    // @@protoc_insertion_point(field:IHBMPCIIGJD.buff_list)
+    pub buff_list: ::std::vec::Vec<super::KMCCCOKIOFD::KMCCCOKIOFD>,
     // special fields
     // @@protoc_insertion_point(special_field:IHBMPCIIGJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,10 +63,15 @@ impl IHBMPCIIGJD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &IHBMPCIIGJD| { &m.buff_list },
-            |m: &mut IHBMPCIIGJD| { &mut m.buff_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBMFBJCHNKN",
+            |m: &IHBMPCIIGJD| { &m.DBMFBJCHNKN },
+            |m: &mut IHBMPCIIGJD| { &mut m.DBMFBJCHNKN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "can_interact",
+            |m: &IHBMPCIIGJD| { &m.can_interact },
+            |m: &mut IHBMPCIIGJD| { &mut m.can_interact },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GDNEHLEOMOM",
@@ -84,24 +89,19 @@ impl IHBMPCIIGJD {
             |m: &mut IHBMPCIIGJD| { &mut m.BBBINMPJCGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNAOCHOKFFJ",
-            |m: &IHBMPCIIGJD| { &m.MNAOCHOKFFJ },
-            |m: &mut IHBMPCIIGJD| { &mut m.MNAOCHOKFFJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AALCCPJCBME",
-            |m: &IHBMPCIIGJD| { &m.AALCCPJCBME },
-            |m: &mut IHBMPCIIGJD| { &mut m.AALCCPJCBME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBMFBJCHNKN",
-            |m: &IHBMPCIIGJD| { &m.DBMFBJCHNKN },
-            |m: &mut IHBMPCIIGJD| { &mut m.DBMFBJCHNKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EILBAOLILAM",
             |m: &IHBMPCIIGJD| { &m.EILBAOLILAM },
             |m: &mut IHBMPCIIGJD| { &mut m.EILBAOLILAM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_locked",
+            |m: &IHBMPCIIGJD| { &m.is_locked },
+            |m: &mut IHBMPCIIGJD| { &mut m.is_locked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &IHBMPCIIGJD| { &m.buff_list },
+            |m: &mut IHBMPCIIGJD| { &mut m.buff_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IHBMPCIIGJD>(
             "IHBMPCIIGJD",
@@ -121,29 +121,29 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                11170 => {
-                    self.buff_list.push(is.read_message()?);
-                },
-                88 => {
-                    self.GDNEHLEOMOM = is.read_uint32()?;
-                },
-                40 => {
-                    self.OHCCEFIALGL = is.read_uint32()?;
-                },
-                56 => {
-                    self.BBBINMPJCGI = is.read_bool()?;
-                },
-                80 => {
-                    self.MNAOCHOKFFJ = is.read_bool()?;
-                },
                 8 => {
-                    self.AALCCPJCBME = is.read_bool()?;
-                },
-                16 => {
                     self.DBMFBJCHNKN = is.read_bool()?;
                 },
-                120 => {
+                32 => {
+                    self.can_interact = is.read_bool()?;
+                },
+                40 => {
+                    self.GDNEHLEOMOM = is.read_uint32()?;
+                },
+                48 => {
+                    self.OHCCEFIALGL = is.read_uint32()?;
+                },
+                64 => {
+                    self.BBBINMPJCGI = is.read_bool()?;
+                },
+                72 => {
                     self.EILBAOLILAM = is.read_uint32()?;
+                },
+                96 => {
+                    self.is_locked = is.read_bool()?;
+                },
+                12546 => {
+                    self.buff_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,61 +157,61 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.buff_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.DBMFBJCHNKN != false {
+            my_size += 1 + 1;
+        }
+        if self.can_interact != false {
+            my_size += 1 + 1;
+        }
         if self.GDNEHLEOMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GDNEHLEOMOM);
+            my_size += ::protobuf::rt::uint32_size(5, self.GDNEHLEOMOM);
         }
         if self.OHCCEFIALGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OHCCEFIALGL);
+            my_size += ::protobuf::rt::uint32_size(6, self.OHCCEFIALGL);
         }
         if self.BBBINMPJCGI != false {
             my_size += 1 + 1;
         }
-        if self.MNAOCHOKFFJ != false {
-            my_size += 1 + 1;
-        }
-        if self.AALCCPJCBME != false {
-            my_size += 1 + 1;
-        }
-        if self.DBMFBJCHNKN != false {
-            my_size += 1 + 1;
-        }
         if self.EILBAOLILAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EILBAOLILAM);
+            my_size += ::protobuf::rt::uint32_size(9, self.EILBAOLILAM);
         }
+        if self.is_locked != false {
+            my_size += 1 + 1;
+        }
+        for value in &self.buff_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1396, v, os)?;
-        };
+        if self.DBMFBJCHNKN != false {
+            os.write_bool(1, self.DBMFBJCHNKN)?;
+        }
+        if self.can_interact != false {
+            os.write_bool(4, self.can_interact)?;
+        }
         if self.GDNEHLEOMOM != 0 {
-            os.write_uint32(11, self.GDNEHLEOMOM)?;
+            os.write_uint32(5, self.GDNEHLEOMOM)?;
         }
         if self.OHCCEFIALGL != 0 {
-            os.write_uint32(5, self.OHCCEFIALGL)?;
+            os.write_uint32(6, self.OHCCEFIALGL)?;
         }
         if self.BBBINMPJCGI != false {
-            os.write_bool(7, self.BBBINMPJCGI)?;
-        }
-        if self.MNAOCHOKFFJ != false {
-            os.write_bool(10, self.MNAOCHOKFFJ)?;
-        }
-        if self.AALCCPJCBME != false {
-            os.write_bool(1, self.AALCCPJCBME)?;
-        }
-        if self.DBMFBJCHNKN != false {
-            os.write_bool(2, self.DBMFBJCHNKN)?;
+            os.write_bool(8, self.BBBINMPJCGI)?;
         }
         if self.EILBAOLILAM != 0 {
-            os.write_uint32(15, self.EILBAOLILAM)?;
+            os.write_uint32(9, self.EILBAOLILAM)?;
         }
+        if self.is_locked != false {
+            os.write_bool(12, self.is_locked)?;
+        }
+        for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(1568, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -229,27 +229,27 @@ impl ::protobuf::Message for IHBMPCIIGJD {
     }
 
     fn clear(&mut self) {
-        self.buff_list.clear();
+        self.DBMFBJCHNKN = false;
+        self.can_interact = false;
         self.GDNEHLEOMOM = 0;
         self.OHCCEFIALGL = 0;
         self.BBBINMPJCGI = false;
-        self.MNAOCHOKFFJ = false;
-        self.AALCCPJCBME = false;
-        self.DBMFBJCHNKN = false;
         self.EILBAOLILAM = 0;
+        self.is_locked = false;
+        self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IHBMPCIIGJD {
         static instance: IHBMPCIIGJD = IHBMPCIIGJD {
-            buff_list: ::std::vec::Vec::new(),
+            DBMFBJCHNKN: false,
+            can_interact: false,
             GDNEHLEOMOM: 0,
             OHCCEFIALGL: 0,
             BBBINMPJCGI: false,
-            MNAOCHOKFFJ: false,
-            AALCCPJCBME: false,
-            DBMFBJCHNKN: false,
             EILBAOLILAM: 0,
+            is_locked: false,
+            buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -274,15 +274,15 @@ impl ::protobuf::reflect::ProtobufValue for IHBMPCIIGJD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IHBMPCIIGJD.proto\x1a\x11KMCCCOKIOFD.proto\"\xa7\x02\n\x0bIHBMPCII\
-    GJD\x12*\n\tbuff_list\x18\xf4\n\x20\x03(\x0b2\x0c.KMCCCOKIOFDR\x08buffLi\
-    st\x12\x20\n\x0bGDNEHLEOMOM\x18\x0b\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\
-    \x0bOHCCEFIALGL\x18\x05\x20\x01(\rR\x0bOHCCEFIALGL\x12\x20\n\x0bBBBINMPJ\
-    CGI\x18\x07\x20\x01(\x08R\x0bBBBINMPJCGI\x12\x20\n\x0bMNAOCHOKFFJ\x18\n\
-    \x20\x01(\x08R\x0bMNAOCHOKFFJ\x12\x20\n\x0bAALCCPJCBME\x18\x01\x20\x01(\
-    \x08R\x0bAALCCPJCBME\x12\x20\n\x0bDBMFBJCHNKN\x18\x02\x20\x01(\x08R\x0bD\
-    BMFBJCHNKN\x12\x20\n\x0bEILBAOLILAM\x18\x0f\x20\x01(\rR\x0bEILBAOLILAMb\
-    \x06proto3\
+    \n\x11IHBMPCIIGJD.proto\x1a\x11KMCCCOKIOFD.proto\"\xa3\x02\n\x0bIHBMPCII\
+    GJD\x12\x20\n\x0bDBMFBJCHNKN\x18\x01\x20\x01(\x08R\x0bDBMFBJCHNKN\x12!\n\
+    \x0ccan_interact\x18\x04\x20\x01(\x08R\x0bcanInteract\x12\x20\n\x0bGDNEH\
+    LEOMOM\x18\x05\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\x0bOHCCEFIALGL\x18\
+    \x06\x20\x01(\rR\x0bOHCCEFIALGL\x12\x20\n\x0bBBBINMPJCGI\x18\x08\x20\x01\
+    (\x08R\x0bBBBINMPJCGI\x12\x20\n\x0bEILBAOLILAM\x18\t\x20\x01(\rR\x0bEILB\
+    AOLILAM\x12\x1b\n\tis_locked\x18\x0c\x20\x01(\x08R\x08isLocked\x12*\n\tb\
+    uff_list\x18\xa0\x0c\x20\x03(\x0b2\x0c.KMCCCOKIOFDR\x08buffListb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

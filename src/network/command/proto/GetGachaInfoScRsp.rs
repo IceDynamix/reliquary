@@ -28,10 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetGachaInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetGachaInfoScRsp.gacha_info_list)
-    pub gacha_info_list: ::std::vec::Vec<super::GachaInfo::GachaInfo>,
-    // @@protoc_insertion_point(field:GetGachaInfoScRsp.AKMDBPNEHDE)
-    pub AKMDBPNEHDE: ::std::vec::Vec<super::NEIMLKNMDBM::NEIMLKNMDBM>,
     // @@protoc_insertion_point(field:GetGachaInfoScRsp.GPNLDDLBOLM)
     pub GPNLDDLBOLM: u32,
     // @@protoc_insertion_point(field:GetGachaInfoScRsp.OGMPKDHKPAJ)
@@ -40,6 +36,10 @@ pub struct GetGachaInfoScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetGachaInfoScRsp.KKKNJDBNJPM)
     pub KKKNJDBNJPM: u32,
+    // @@protoc_insertion_point(field:GetGachaInfoScRsp.AKMDBPNEHDE)
+    pub AKMDBPNEHDE: ::std::vec::Vec<super::NEIMLKNMDBM::NEIMLKNMDBM>,
+    // @@protoc_insertion_point(field:GetGachaInfoScRsp.gacha_info_list)
+    pub gacha_info_list: ::std::vec::Vec<super::GachaInfo::GachaInfo>,
     // @@protoc_insertion_point(field:GetGachaInfoScRsp.gacha_random)
     pub gacha_random: u32,
     // special fields
@@ -61,16 +61,6 @@ impl GetGachaInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "gacha_info_list",
-            |m: &GetGachaInfoScRsp| { &m.gacha_info_list },
-            |m: &mut GetGachaInfoScRsp| { &mut m.gacha_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AKMDBPNEHDE",
-            |m: &GetGachaInfoScRsp| { &m.AKMDBPNEHDE },
-            |m: &mut GetGachaInfoScRsp| { &mut m.AKMDBPNEHDE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GPNLDDLBOLM",
             |m: &GetGachaInfoScRsp| { &m.GPNLDDLBOLM },
@@ -90,6 +80,16 @@ impl GetGachaInfoScRsp {
             "KKKNJDBNJPM",
             |m: &GetGachaInfoScRsp| { &m.KKKNJDBNJPM },
             |m: &mut GetGachaInfoScRsp| { &mut m.KKKNJDBNJPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AKMDBPNEHDE",
+            |m: &GetGachaInfoScRsp| { &m.AKMDBPNEHDE },
+            |m: &mut GetGachaInfoScRsp| { &mut m.AKMDBPNEHDE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "gacha_info_list",
+            |m: &GetGachaInfoScRsp| { &m.gacha_info_list },
+            |m: &mut GetGachaInfoScRsp| { &mut m.gacha_info_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_random",
@@ -114,25 +114,25 @@ impl ::protobuf::Message for GetGachaInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.gacha_info_list.push(is.read_message()?);
+                8 => {
+                    self.GPNLDDLBOLM = is.read_uint32()?;
+                },
+                24 => {
+                    self.OGMPKDHKPAJ = is.read_uint32()?;
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                72 => {
+                    self.KKKNJDBNJPM = is.read_uint32()?;
                 },
                 106 => {
                     self.AKMDBPNEHDE.push(is.read_message()?);
                 },
-                32 => {
-                    self.GPNLDDLBOLM = is.read_uint32()?;
+                114 => {
+                    self.gacha_info_list.push(is.read_message()?);
                 },
-                96 => {
-                    self.OGMPKDHKPAJ = is.read_uint32()?;
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                8 => {
-                    self.KKKNJDBNJPM = is.read_uint32()?;
-                },
-                80 => {
+                120 => {
                     self.gacha_random = is.read_uint32()?;
                 },
                 tag => {
@@ -147,28 +147,28 @@ impl ::protobuf::Message for GetGachaInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.gacha_info_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.GPNLDDLBOLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GPNLDDLBOLM);
+        }
+        if self.OGMPKDHKPAJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OGMPKDHKPAJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.KKKNJDBNJPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KKKNJDBNJPM);
+        }
         for value in &self.AKMDBPNEHDE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GPNLDDLBOLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GPNLDDLBOLM);
-        }
-        if self.OGMPKDHKPAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OGMPKDHKPAJ);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        if self.KKKNJDBNJPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KKKNJDBNJPM);
-        }
+        for value in &self.gacha_info_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(15, self.gacha_random);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,26 +176,26 @@ impl ::protobuf::Message for GetGachaInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.gacha_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
+        if self.GPNLDDLBOLM != 0 {
+            os.write_uint32(1, self.GPNLDDLBOLM)?;
+        }
+        if self.OGMPKDHKPAJ != 0 {
+            os.write_uint32(3, self.OGMPKDHKPAJ)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.KKKNJDBNJPM != 0 {
+            os.write_uint32(9, self.KKKNJDBNJPM)?;
+        }
         for v in &self.AKMDBPNEHDE {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.GPNLDDLBOLM != 0 {
-            os.write_uint32(4, self.GPNLDDLBOLM)?;
-        }
-        if self.OGMPKDHKPAJ != 0 {
-            os.write_uint32(12, self.OGMPKDHKPAJ)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        if self.KKKNJDBNJPM != 0 {
-            os.write_uint32(1, self.KKKNJDBNJPM)?;
-        }
+        for v in &self.gacha_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         if self.gacha_random != 0 {
-            os.write_uint32(10, self.gacha_random)?;
+            os.write_uint32(15, self.gacha_random)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,24 +214,24 @@ impl ::protobuf::Message for GetGachaInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.gacha_info_list.clear();
-        self.AKMDBPNEHDE.clear();
         self.GPNLDDLBOLM = 0;
         self.OGMPKDHKPAJ = 0;
         self.retcode = 0;
         self.KKKNJDBNJPM = 0;
+        self.AKMDBPNEHDE.clear();
+        self.gacha_info_list.clear();
         self.gacha_random = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetGachaInfoScRsp {
         static instance: GetGachaInfoScRsp = GetGachaInfoScRsp {
-            gacha_info_list: ::std::vec::Vec::new(),
-            AKMDBPNEHDE: ::std::vec::Vec::new(),
             GPNLDDLBOLM: 0,
             OGMPKDHKPAJ: 0,
             retcode: 0,
             KKKNJDBNJPM: 0,
+            AKMDBPNEHDE: ::std::vec::Vec::new(),
+            gacha_info_list: ::std::vec::Vec::new(),
             gacha_random: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for GetGachaInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetGachaInfoScRsp.proto\x1a\x0fGachaInfo.proto\x1a\x11NEIMLKNMDBM.\
-    proto\"\x9a\x02\n\x11GetGachaInfoScRsp\x122\n\x0fgacha_info_list\x18\x03\
-    \x20\x03(\x0b2\n.GachaInfoR\rgachaInfoList\x12.\n\x0bAKMDBPNEHDE\x18\r\
-    \x20\x03(\x0b2\x0c.NEIMLKNMDBMR\x0bAKMDBPNEHDE\x12\x20\n\x0bGPNLDDLBOLM\
-    \x18\x04\x20\x01(\rR\x0bGPNLDDLBOLM\x12\x20\n\x0bOGMPKDHKPAJ\x18\x0c\x20\
-    \x01(\rR\x0bOGMPKDHKPAJ\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcod\
-    e\x12\x20\n\x0bKKKNJDBNJPM\x18\x01\x20\x01(\rR\x0bKKKNJDBNJPM\x12!\n\x0c\
-    gacha_random\x18\n\x20\x01(\rR\x0bgachaRandomb\x06proto3\
+    proto\"\x9a\x02\n\x11GetGachaInfoScRsp\x12\x20\n\x0bGPNLDDLBOLM\x18\x01\
+    \x20\x01(\rR\x0bGPNLDDLBOLM\x12\x20\n\x0bOGMPKDHKPAJ\x18\x03\x20\x01(\rR\
+    \x0bOGMPKDHKPAJ\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bKKKNJDBNJPM\x18\t\x20\x01(\rR\x0bKKKNJDBNJPM\x12.\n\x0bAKMDBPN\
+    EHDE\x18\r\x20\x03(\x0b2\x0c.NEIMLKNMDBMR\x0bAKMDBPNEHDE\x122\n\x0fgacha\
+    _info_list\x18\x0e\x20\x03(\x0b2\n.GachaInfoR\rgachaInfoList\x12!\n\x0cg\
+    acha_random\x18\x0f\x20\x01(\rR\x0bgachaRandomb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

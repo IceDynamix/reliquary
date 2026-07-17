@@ -79,10 +79,10 @@ impl ::protobuf::Message for MarkAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                64 => {
                     self.is_marked = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MarkAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
         }
         if self.is_marked != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MarkAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(3, self.avatar_id)?;
+            os.write_uint32(2, self.avatar_id)?;
         }
         if self.is_marked != false {
-            os.write_bool(7, self.is_marked)?;
+            os.write_bool(8, self.is_marked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for MarkAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MarkAvatarCsReq.proto\"K\n\x0fMarkAvatarCsReq\x12\x1b\n\tavatar_id\
-    \x18\x03\x20\x01(\rR\x08avatarId\x12\x1b\n\tis_marked\x18\x07\x20\x01(\
+    \x18\x02\x20\x01(\rR\x08avatarId\x12\x1b\n\tis_marked\x18\x08\x20\x01(\
     \x08R\x08isMarkedb\x06proto3\
 ";
 

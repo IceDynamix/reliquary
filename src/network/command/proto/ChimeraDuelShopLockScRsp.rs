@@ -50,7 +50,7 @@ impl ChimeraDuelShopLockScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 NDJGKJMPPHJ = 11;
+    // uint32 NDJGKJMPPHJ = 4;
 
     pub fn NDJGKJMPPHJ(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -75,7 +75,7 @@ impl ChimeraDuelShopLockScRsp {
         self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v))
     }
 
-    // uint32 AGBAIFPNKII = 6;
+    // uint32 AGBAIFPNKII = 3;
 
     pub fn AGBAIFPNKII(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -144,16 +144,16 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.is_locked = is.read_bool()?;
                 },
-                72 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(is.read_uint32()?));
                 },
-                48 => {
+                24 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(is.read_uint32()?));
                 },
                 tag => {
@@ -172,15 +172,15 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                    my_size += ::protobuf::rt::uint32_size(3, v);
                 },
             };
         }
@@ -191,18 +191,18 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_locked != false {
-            os.write_bool(2, self.is_locked)?;
+            os.write_bool(1, self.is_locked)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    os.write_uint32(6, v)?;
+                    os.write_uint32(3, v)?;
                 },
             };
         }
@@ -290,10 +290,10 @@ pub mod chimera_duel_shop_lock_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDuelShopLockScRsp.proto\"\xa8\x01\n\x18ChimeraDuelShopLockS\
-    cRsp\x12\x1b\n\tis_locked\x18\x02\x20\x01(\x08R\x08isLocked\x12\x18\n\
-    \x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\"\n\x0bNDJGKJMPPHJ\x18\x0b\
-    \x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x06\x20\x01(\r\
-    H\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
+    cRsp\x12\x1b\n\tis_locked\x18\x01\x20\x01(\x08R\x08isLocked\x12\x18\n\
+    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\"\n\x0bNDJGKJMPPHJ\x18\
+    \x04\x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x03\x20\
+    \x01(\rH\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CICLCCFLALE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MonopolyConditionUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CICLCCFLALE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyConditionUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%MonopolyConditionUpdateScNotify.proto\x1a\x11CCMCKOKEJNI.proto\"Q\n\
-    \x1fMonopolyConditionUpdateScNotify\x12.\n\x0bCICLCCFLALE\x18\x08\x20\
+    \x1fMonopolyConditionUpdateScNotify\x12.\n\x0bCICLCCFLALE\x18\x04\x20\
     \x01(\x0b2\x0c.CCMCKOKEJNIR\x0bCICLCCFLALEb\x06proto3\
 ";
 

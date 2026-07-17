@@ -72,7 +72,7 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                80 => {
                     self.LNOCOOCMNCI = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LNOCOOCMNCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LNOCOOCMNCI);
+            my_size += ::protobuf::rt::uint32_size(10, self.LNOCOOCMNCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SubmitMaterialSubmitActivityMaterialCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LNOCOOCMNCI != 0 {
-            os.write_uint32(11, self.LNOCOOCMNCI)?;
+            os.write_uint32(10, self.LNOCOOCMNCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SubmitMaterialSubmitActivityMaterial
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/SubmitMaterialSubmitActivityMaterialCsReq.proto\"M\n)SubmitMaterialSu\
-    bmitActivityMaterialCsReq\x12\x20\n\x0bLNOCOOCMNCI\x18\x0b\x20\x01(\rR\
-    \x0bLNOCOOCMNCIb\x06proto3\
+    bmitActivityMaterialCsReq\x12\x20\n\x0bLNOCOOCMNCI\x18\n\x20\x01(\rR\x0b\
+    LNOCOOCMNCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

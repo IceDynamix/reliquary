@@ -86,10 +86,10 @@ impl ::protobuf::Message for GKCNOIGHOPM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.LHHJFMMCBAF = is.read_uint32()?;
                 },
-                16 => {
+                48 => {
                     self.MBNBCPEAALJ = is.read_uint32()?;
                 },
                 104 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GKCNOIGHOPM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LHHJFMMCBAF);
+            my_size += ::protobuf::rt::uint32_size(3, self.LHHJFMMCBAF);
         }
         if self.MBNBCPEAALJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MBNBCPEAALJ);
+            my_size += ::protobuf::rt::uint32_size(6, self.MBNBCPEAALJ);
         }
         if self.CBNKDHIHECO != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.CBNKDHIHECO);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for GKCNOIGHOPM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(6, self.LHHJFMMCBAF)?;
+            os.write_uint32(3, self.LHHJFMMCBAF)?;
         }
         if self.MBNBCPEAALJ != 0 {
-            os.write_uint32(2, self.MBNBCPEAALJ)?;
+            os.write_uint32(6, self.MBNBCPEAALJ)?;
         }
         if self.CBNKDHIHECO != 0 {
             os.write_uint32(13, self.CBNKDHIHECO)?;
@@ -184,7 +184,7 @@ impl ::protobuf::reflect::ProtobufValue for GKCNOIGHOPM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GKCNOIGHOPM.proto\"s\n\x0bGKCNOIGHOPM\x12\x20\n\x0bLHHJFMMCBAF\x18\
-    \x06\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\n\x0bMBNBCPEAALJ\x18\x02\x20\x01\
+    \x03\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\n\x0bMBNBCPEAALJ\x18\x06\x20\x01\
     (\rR\x0bMBNBCPEAALJ\x12\x20\n\x0bCBNKDHIHECO\x18\r\x20\x01(\rR\x0bCBNKDH\
     IHECOb\x06proto3\
 ";

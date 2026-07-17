@@ -86,22 +86,22 @@ impl ::protobuf::Message for DPAJAECBCPA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.HBEHCHBCBPG)?;
                 },
-                8 => {
+                56 => {
                     self.HBEHCHBCBPG.push(is.read_uint32()?);
                 },
-                90 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.IAEAJKJDCHO)?;
                 },
-                88 => {
+                64 => {
                     self.IAEAJKJDCHO.push(is.read_uint32()?);
                 },
-                64 => {
+                112 => {
                     self.CMNOBDCMGHE.push(is.read_enum_or_unknown()?);
                 },
-                66 => {
+                114 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.CMNOBDCMGHE)?
                 },
                 tag => {
@@ -116,18 +116,18 @@ impl ::protobuf::Message for DPAJAECBCPA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HBEHCHBCBPG);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.IAEAJKJDCHO);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.CMNOBDCMGHE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.HBEHCHBCBPG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.IAEAJKJDCHO);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(14, &self.CMNOBDCMGHE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.HBEHCHBCBPG)?;
-        os.write_repeated_packed_uint32(11, &self.IAEAJKJDCHO)?;
-        os.write_repeated_packed_enum_or_unknown(8, &self.CMNOBDCMGHE)?;
+        os.write_repeated_packed_uint32(7, &self.HBEHCHBCBPG)?;
+        os.write_repeated_packed_uint32(8, &self.IAEAJKJDCHO)?;
+        os.write_repeated_packed_enum_or_unknown(14, &self.CMNOBDCMGHE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,9 +181,9 @@ impl ::protobuf::reflect::ProtobufValue for DPAJAECBCPA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DPAJAECBCPA.proto\x1a\x20LimaoNewsOfficeSurveyState.proto\"\x90\
-    \x01\n\x0bDPAJAECBCPA\x12\x20\n\x0bHBEHCHBCBPG\x18\x01\x20\x03(\rR\x0bHB\
-    EHCHBCBPG\x12\x20\n\x0bIAEAJKJDCHO\x18\x0b\x20\x03(\rR\x0bIAEAJKJDCHO\
-    \x12=\n\x0bCMNOBDCMGHE\x18\x08\x20\x03(\x0e2\x1b.LimaoNewsOfficeSurveySt\
+    \x01\n\x0bDPAJAECBCPA\x12\x20\n\x0bHBEHCHBCBPG\x18\x07\x20\x03(\rR\x0bHB\
+    EHCHBCBPG\x12\x20\n\x0bIAEAJKJDCHO\x18\x08\x20\x03(\rR\x0bIAEAJKJDCHO\
+    \x12=\n\x0bCMNOBDCMGHE\x18\x0e\x20\x03(\x0e2\x1b.LimaoNewsOfficeSurveySt\
     ateR\x0bCMNOBDCMGHEb\x06proto3\
 ";
 

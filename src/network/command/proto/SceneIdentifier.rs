@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneIdentifier {
     // message fields
-    // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
-    pub game_story_line_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
     pub floor_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.content_id)
     pub content_id: u32,
+    // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
+    pub game_story_line_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.teleport_info)
     pub teleport_info: ::protobuf::MessageField<super::TeleportInfo::TeleportInfo>,
     // special fields
@@ -56,11 +56,6 @@ impl SceneIdentifier {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &SceneIdentifier| { &m.game_story_line_id },
-            |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
             |m: &SceneIdentifier| { &m.floor_id },
             |m: &mut SceneIdentifier| { &mut m.floor_id },
@@ -69,6 +64,11 @@ impl SceneIdentifier {
             "content_id",
             |m: &SceneIdentifier| { &m.content_id },
             |m: &mut SceneIdentifier| { &mut m.content_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_story_line_id",
+            |m: &SceneIdentifier| { &m.game_story_line_id },
+            |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TeleportInfo::TeleportInfo>(
             "teleport_info",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SceneIdentifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.game_story_line_id = is.read_uint32()?;
-                },
-                24 => {
+                8 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.content_id = is.read_uint32()?;
                 },
-                6794 => {
+                88 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                8282 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.teleport_info)?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for SceneIdentifier {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.game_story_line_id);
-        }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.floor_id);
         }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.content_id);
+        }
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.game_story_line_id);
         }
         if let Some(v) = self.teleport_info.as_ref() {
             let len = v.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SceneIdentifier {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.game_story_line_id != 0 {
-            os.write_uint32(8, self.game_story_line_id)?;
-        }
         if self.floor_id != 0 {
-            os.write_uint32(3, self.floor_id)?;
+            os.write_uint32(1, self.floor_id)?;
         }
         if self.content_id != 0 {
-            os.write_uint32(4, self.content_id)?;
+            os.write_uint32(2, self.content_id)?;
+        }
+        if self.game_story_line_id != 0 {
+            os.write_uint32(11, self.game_story_line_id)?;
         }
         if let Some(v) = self.teleport_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(849, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1035, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for SceneIdentifier {
     }
 
     fn clear(&mut self) {
-        self.game_story_line_id = 0;
         self.floor_id = 0;
         self.content_id = 0;
+        self.game_story_line_id = 0;
         self.teleport_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneIdentifier {
         static instance: SceneIdentifier = SceneIdentifier {
-            game_story_line_id: 0,
             floor_id: 0,
             content_id: 0,
+            game_story_line_id: 0,
             teleport_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneIdentifier {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneIdentifier.proto\x1a\x12TeleportInfo.proto\"\xad\x01\n\x0fSce\
-    neIdentifier\x12+\n\x12game_story_line_id\x18\x08\x20\x01(\rR\x0fgameSto\
-    ryLineId\x12\x19\n\x08floor_id\x18\x03\x20\x01(\rR\x07floorId\x12\x1d\n\
-    \ncontent_id\x18\x04\x20\x01(\rR\tcontentId\x123\n\rteleport_info\x18\
-    \xd1\x06\x20\x01(\x0b2\r.TeleportInfoR\x0cteleportInfob\x06proto3\
+    neIdentifier\x12\x19\n\x08floor_id\x18\x01\x20\x01(\rR\x07floorId\x12\
+    \x1d\n\ncontent_id\x18\x02\x20\x01(\rR\tcontentId\x12+\n\x12game_story_l\
+    ine_id\x18\x0b\x20\x01(\rR\x0fgameStoryLineId\x123\n\rteleport_info\x18\
+    \x8b\x08\x20\x01(\x0b2\r.TeleportInfoR\x0cteleportInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

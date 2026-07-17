@@ -96,10 +96,10 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.basic_info)?;
                 },
-                114 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDJHMFAGEOA)?;
                 },
-                48 => {
+                88 => {
                     self.HDHIFJNJOBK = is.read_uint32()?;
                 },
                 104 => {
@@ -126,7 +126,7 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.HDHIFJNJOBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HDHIFJNJOBK);
+            my_size += ::protobuf::rt::uint32_size(11, self.HDHIFJNJOBK);
         }
         if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PFIPEIGDLLK_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(13, self.HCEENPENFGI.value());
@@ -141,10 +141,10 @@ impl ::protobuf::Message for JEIAEAEGEBJ {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.FDJHMFAGEOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.HDHIFJNJOBK != 0 {
-            os.write_uint32(6, self.HDHIFJNJOBK)?;
+            os.write_uint32(11, self.HDHIFJNJOBK)?;
         }
         if self.HCEENPENFGI != ::protobuf::EnumOrUnknown::new(super::PunkLordAttackerStatus::PunkLordAttackerStatus::PFIPEIGDLLK_NLCDGIPGFDJ) {
             os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.HCEENPENFGI))?;
@@ -206,8 +206,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JEIAEAEGEBJ.proto\x1a\x11GMDHIALLILJ.proto\x1a\x1cPunkLordAttacker\
     Status.proto\x1a\x1ePunkLordMonsterBasicInfo.proto\"\xd4\x01\n\x0bJEIAEA\
     EGEBJ\x128\n\nbasic_info\x18\x01\x20\x01(\x0b2\x19.PunkLordMonsterBasicI\
-    nfoR\tbasicInfo\x12.\n\x0bFDJHMFAGEOA\x18\x0e\x20\x01(\x0b2\x0c.GMDHIALL\
-    ILJR\x0bFDJHMFAGEOA\x12\x20\n\x0bHDHIFJNJOBK\x18\x06\x20\x01(\rR\x0bHDHI\
+    nfoR\tbasicInfo\x12.\n\x0bFDJHMFAGEOA\x18\x04\x20\x01(\x0b2\x0c.GMDHIALL\
+    ILJR\x0bFDJHMFAGEOA\x12\x20\n\x0bHDHIFJNJOBK\x18\x0b\x20\x01(\rR\x0bHDHI\
     FJNJOBK\x129\n\x0bHCEENPENFGI\x18\r\x20\x01(\x0e2\x17.PunkLordAttackerSt\
     atusR\x0bHCEENPENFGIb\x06proto3\
 ";

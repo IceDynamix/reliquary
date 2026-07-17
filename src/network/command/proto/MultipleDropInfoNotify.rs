@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultipleDropInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultipleDropInfoNotify.FAFFFJGJHHC)
-    pub FAFFFJGJHHC: ::std::vec::Vec<super::BMJHAHOLEGH::BMJHAHOLEGH>,
     // @@protoc_insertion_point(field:MultipleDropInfoNotify.JGALOGDBCKI)
     pub JGALOGDBCKI: ::std::vec::Vec<super::GCLPBMPOHLI::GCLPBMPOHLI>,
     // @@protoc_insertion_point(field:MultipleDropInfoNotify.MOPAGKNEMOD)
     pub MOPAGKNEMOD: ::std::vec::Vec<super::NGLOBFBCGBB::NGLOBFBCGBB>,
+    // @@protoc_insertion_point(field:MultipleDropInfoNotify.FAFFFJGJHHC)
+    pub FAFFFJGJHHC: ::std::vec::Vec<super::BMJHAHOLEGH::BMJHAHOLEGH>,
     // special fields
     // @@protoc_insertion_point(special_field:MultipleDropInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl MultipleDropInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FAFFFJGJHHC",
-            |m: &MultipleDropInfoNotify| { &m.FAFFFJGJHHC },
-            |m: &mut MultipleDropInfoNotify| { &mut m.FAFFFJGJHHC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JGALOGDBCKI",
             |m: &MultipleDropInfoNotify| { &m.JGALOGDBCKI },
             |m: &mut MultipleDropInfoNotify| { &mut m.JGALOGDBCKI },
@@ -67,6 +62,11 @@ impl MultipleDropInfoNotify {
             "MOPAGKNEMOD",
             |m: &MultipleDropInfoNotify| { &m.MOPAGKNEMOD },
             |m: &mut MultipleDropInfoNotify| { &mut m.MOPAGKNEMOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FAFFFJGJHHC",
+            |m: &MultipleDropInfoNotify| { &m.FAFFFJGJHHC },
+            |m: &mut MultipleDropInfoNotify| { &mut m.FAFFFJGJHHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultipleDropInfoNotify>(
             "MultipleDropInfoNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.FAFFFJGJHHC.push(is.read_message()?);
-                },
-                98 => {
+                58 => {
                     self.JGALOGDBCKI.push(is.read_message()?);
                 },
-                122 => {
+                82 => {
                     self.MOPAGKNEMOD.push(is.read_message()?);
+                },
+                106 => {
+                    self.FAFFFJGJHHC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FAFFFJGJHHC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.JGALOGDBCKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.MOPAGKNEMOD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.FAFFFJGJHHC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FAFFFJGJHHC {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         for v in &self.JGALOGDBCKI {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.MOPAGKNEMOD {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        };
+        for v in &self.FAFFFJGJHHC {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.FAFFFJGJHHC.clear();
         self.JGALOGDBCKI.clear();
         self.MOPAGKNEMOD.clear();
+        self.FAFFFJGJHHC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultipleDropInfoNotify {
         static instance: MultipleDropInfoNotify = MultipleDropInfoNotify {
-            FAFFFJGJHHC: ::std::vec::Vec::new(),
             JGALOGDBCKI: ::std::vec::Vec::new(),
             MOPAGKNEMOD: ::std::vec::Vec::new(),
+            FAFFFJGJHHC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for MultipleDropInfoNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMultipleDropInfoNotify.proto\x1a\x11BMJHAHOLEGH.proto\x1a\x11GCLPB\
     MPOHLI.proto\x1a\x11NGLOBFBCGBB.proto\"\xa8\x01\n\x16MultipleDropInfoNot\
-    ify\x12.\n\x0bFAFFFJGJHHC\x18\t\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJ\
-    GJHHC\x12.\n\x0bJGALOGDBCKI\x18\x0c\x20\x03(\x0b2\x0c.GCLPBMPOHLIR\x0bJG\
-    ALOGDBCKI\x12.\n\x0bMOPAGKNEMOD\x18\x0f\x20\x03(\x0b2\x0c.NGLOBFBCGBBR\
-    \x0bMOPAGKNEMODb\x06proto3\
+    ify\x12.\n\x0bJGALOGDBCKI\x18\x07\x20\x03(\x0b2\x0c.GCLPBMPOHLIR\x0bJGAL\
+    OGDBCKI\x12.\n\x0bMOPAGKNEMOD\x18\n\x20\x03(\x0b2\x0c.NGLOBFBCGBBR\x0bMO\
+    PAGKNEMOD\x12.\n\x0bFAFFFJGJHHC\x18\r\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0b\
+    FAFFFJGJHHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

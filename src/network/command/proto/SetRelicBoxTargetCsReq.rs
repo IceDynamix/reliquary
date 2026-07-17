@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRelicBoxTargetCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetRelicBoxTargetCsReq.MCLLALGABAB)
-    pub MCLLALGABAB: ::protobuf::MessageField<super::HGABLJFOKDG::HGABLJFOKDG>,
+    // @@protoc_insertion_point(field:SetRelicBoxTargetCsReq.target)
+    pub target: ::protobuf::MessageField<super::HGABLJFOKDG::HGABLJFOKDG>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRelicBoxTargetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SetRelicBoxTargetCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGABLJFOKDG::HGABLJFOKDG>(
-            "MCLLALGABAB",
-            |m: &SetRelicBoxTargetCsReq| { &m.MCLLALGABAB },
-            |m: &mut SetRelicBoxTargetCsReq| { &mut m.MCLLALGABAB },
+            "target",
+            |m: &SetRelicBoxTargetCsReq| { &m.target },
+            |m: &mut SetRelicBoxTargetCsReq| { &mut m.target },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRelicBoxTargetCsReq>(
             "SetRelicBoxTargetCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCLLALGABAB)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.target)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MCLLALGABAB.as_ref() {
+        if let Some(v) = self.target.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MCLLALGABAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.target.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
     }
 
     fn clear(&mut self) {
-        self.MCLLALGABAB.clear();
+        self.target.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRelicBoxTargetCsReq {
         static instance: SetRelicBoxTargetCsReq = SetRelicBoxTargetCsReq {
-            MCLLALGABAB: ::protobuf::MessageField::none(),
+            target: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SetRelicBoxTargetCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSetRelicBoxTargetCsReq.proto\x1a\x11HGABLJFOKDG.proto\"H\n\x16SetR\
-    elicBoxTargetCsReq\x12.\n\x0bMCLLALGABAB\x18\x0c\x20\x01(\x0b2\x0c.HGABL\
-    JFOKDGR\x0bMCLLALGABABb\x06proto3\
+    \n\x1cSetRelicBoxTargetCsReq.proto\x1a\x11HGABLJFOKDG.proto\">\n\x16SetR\
+    elicBoxTargetCsReq\x12$\n\x06target\x18\x07\x20\x01(\x0b2\x0c.HGABLJFOKD\
+    GR\x06targetb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

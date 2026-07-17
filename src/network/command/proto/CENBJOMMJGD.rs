@@ -30,8 +30,8 @@ pub struct CENBJOMMJGD {
     // message fields
     // @@protoc_insertion_point(field:CENBJOMMJGD.item_count)
     pub item_count: u32,
-    // @@protoc_insertion_point(field:CENBJOMMJGD.LINLNNHIBAK)
-    pub LINLNNHIBAK: u32,
+    // @@protoc_insertion_point(field:CENBJOMMJGD.item_type)
+    pub item_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CENBJOMMJGD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl CENBJOMMJGD {
             |m: &mut CENBJOMMJGD| { &mut m.item_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LINLNNHIBAK",
-            |m: &CENBJOMMJGD| { &m.LINLNNHIBAK },
-            |m: &mut CENBJOMMJGD| { &mut m.LINLNNHIBAK },
+            "item_type",
+            |m: &CENBJOMMJGD| { &m.item_type },
+            |m: &mut CENBJOMMJGD| { &mut m.item_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CENBJOMMJGD>(
             "CENBJOMMJGD",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for CENBJOMMJGD {
                 8 => {
                     self.item_count = is.read_uint32()?;
                 },
-                32 => {
-                    self.LINLNNHIBAK = is.read_uint32()?;
+                112 => {
+                    self.item_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for CENBJOMMJGD {
         if self.item_count != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.item_count);
         }
-        if self.LINLNNHIBAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LINLNNHIBAK);
+        if self.item_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.item_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for CENBJOMMJGD {
         if self.item_count != 0 {
             os.write_uint32(1, self.item_count)?;
         }
-        if self.LINLNNHIBAK != 0 {
-            os.write_uint32(4, self.LINLNNHIBAK)?;
+        if self.item_type != 0 {
+            os.write_uint32(14, self.item_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for CENBJOMMJGD {
 
     fn clear(&mut self) {
         self.item_count = 0;
-        self.LINLNNHIBAK = 0;
+        self.item_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CENBJOMMJGD {
         static instance: CENBJOMMJGD = CENBJOMMJGD {
             item_count: 0,
-            LINLNNHIBAK: 0,
+            item_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CENBJOMMJGD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CENBJOMMJGD.proto\"N\n\x0bCENBJOMMJGD\x12\x1d\n\nitem_count\x18\
-    \x01\x20\x01(\rR\titemCount\x12\x20\n\x0bLINLNNHIBAK\x18\x04\x20\x01(\rR\
-    \x0bLINLNNHIBAKb\x06proto3\
+    \n\x11CENBJOMMJGD.proto\"I\n\x0bCENBJOMMJGD\x12\x1d\n\nitem_count\x18\
+    \x01\x20\x01(\rR\titemCount\x12\x1b\n\titem_type\x18\x0e\x20\x01(\rR\x08\
+    itemTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

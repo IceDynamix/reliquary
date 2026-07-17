@@ -28,12 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGCPLLJLHFF {
     // message fields
-    // @@protoc_insertion_point(field:LGCPLLJLHFF.buff_list)
-    pub buff_list: ::std::vec::Vec<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
-    // @@protoc_insertion_point(field:LGCPLLJLHFF.MAJGMMCOCIG)
-    pub MAJGMMCOCIG: ::std::vec::Vec<super::KOFMGCNIMIN::KOFMGCNIMIN>,
     // @@protoc_insertion_point(field:LGCPLLJLHFF.item_value)
     pub item_value: u32,
+    // @@protoc_insertion_point(field:LGCPLLJLHFF.buff_list)
+    pub buff_list: ::std::vec::Vec<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
     // special fields
     // @@protoc_insertion_point(special_field:LGCPLLJLHFF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +49,17 @@ impl LGCPLLJLHFF {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "buff_list",
-            |m: &LGCPLLJLHFF| { &m.buff_list },
-            |m: &mut LGCPLLJLHFF| { &mut m.buff_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MAJGMMCOCIG",
-            |m: &LGCPLLJLHFF| { &m.MAJGMMCOCIG },
-            |m: &mut LGCPLLJLHFF| { &mut m.MAJGMMCOCIG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &LGCPLLJLHFF| { &m.item_value },
             |m: &mut LGCPLLJLHFF| { &mut m.item_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "buff_list",
+            |m: &LGCPLLJLHFF| { &m.buff_list },
+            |m: &mut LGCPLLJLHFF| { &mut m.buff_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGCPLLJLHFF>(
             "LGCPLLJLHFF",
@@ -86,14 +79,11 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.buff_list.push(is.read_message()?);
-                },
-                26 => {
-                    self.MAJGMMCOCIG.push(is.read_message()?);
-                },
-                104 => {
+                48 => {
                     self.item_value = is.read_uint32()?;
+                },
+                66 => {
+                    self.buff_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +97,25 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.item_value);
+        }
         for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.MAJGMMCOCIG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.item_value);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        for v in &self.MAJGMMCOCIG {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
         if self.item_value != 0 {
-            os.write_uint32(13, self.item_value)?;
+            os.write_uint32(6, self.item_value)?;
         }
+        for v in &self.buff_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +133,15 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     }
 
     fn clear(&mut self) {
-        self.buff_list.clear();
-        self.MAJGMMCOCIG.clear();
         self.item_value = 0;
+        self.buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGCPLLJLHFF {
         static instance: LGCPLLJLHFF = LGCPLLJLHFF {
-            buff_list: ::std::vec::Vec::new(),
-            MAJGMMCOCIG: ::std::vec::Vec::new(),
             item_value: 0,
+            buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for LGCPLLJLHFF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LGCPLLJLHFF.proto\x1a\x11KJAMNOGFAMJ.proto\x1a\x11KOFMGCNIMIN.prot\
-    o\"\x87\x01\n\x0bLGCPLLJLHFF\x12)\n\tbuff_list\x18\x01\x20\x03(\x0b2\x0c\
-    .KJAMNOGFAMJR\x08buffList\x12.\n\x0bMAJGMMCOCIG\x18\x03\x20\x03(\x0b2\
-    \x0c.KOFMGCNIMINR\x0bMAJGMMCOCIG\x12\x1d\n\nitem_value\x18\r\x20\x01(\rR\
-    \titemValueb\x06proto3\
+    \n\x11LGCPLLJLHFF.proto\x1a\x11KJAMNOGFAMJ.proto\"W\n\x0bLGCPLLJLHFF\x12\
+    \x1d\n\nitem_value\x18\x06\x20\x01(\rR\titemValue\x12)\n\tbuff_list\x18\
+    \x08\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x08buffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,9 +185,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::KJAMNOGFAMJ::file_descriptor().clone());
-            deps.push(super::KOFMGCNIMIN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LGCPLLJLHFF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

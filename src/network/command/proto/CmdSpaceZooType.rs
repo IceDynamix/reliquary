@@ -29,36 +29,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdSpaceZooType {
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_NLCDGIPGFDJ)
     LPMAENKEEHO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_GIMMMBGKIKL)
-    LPMAENKEEHO_GIMMMBGKIKL = 6710,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_DPOBLEPFJDJ)
-    LPMAENKEEHO_DPOBLEPFJDJ = 6712,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_BMPNHEMOEKI)
-    LPMAENKEEHO_BMPNHEMOEKI = 6773,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_HFBJHFGODGB)
-    LPMAENKEEHO_HFBJHFGODGB = 6780,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AJHLBBKCFFK)
-    LPMAENKEEHO_AJHLBBKCFFK = 6713,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_KCMOAOLIPGN)
-    LPMAENKEEHO_KCMOAOLIPGN = 6783,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_MKKIOPMCMHB)
-    LPMAENKEEHO_MKKIOPMCMHB = 6727,
+    LPMAENKEEHO_HFBJHFGODGB = 6793,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_HCNDNIGALBB)
-    LPMAENKEEHO_HCNDNIGALBB = 6787,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_FMNIDGBDCDO)
-    LPMAENKEEHO_FMNIDGBDCDO = 6715,
+    LPMAENKEEHO_HCNDNIGALBB = 6713,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_DPOBLEPFJDJ)
+    LPMAENKEEHO_DPOBLEPFJDJ = 6740,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_DPLPKPEFDCC)
-    LPMAENKEEHO_DPLPKPEFDCC = 6754,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_ENEKOFGHHGG)
-    LPMAENKEEHO_ENEKOFGHHGG = 6781,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AOJDJHDIFIP)
-    LPMAENKEEHO_AOJDJHDIFIP = 6736,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_JKILIBCLKPK)
-    LPMAENKEEHO_JKILIBCLKPK = 6729,
+    LPMAENKEEHO_DPLPKPEFDCC = 6733,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_MKKIOPMCMHB)
+    LPMAENKEEHO_MKKIOPMCMHB = 6758,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_CADJHIFNINP)
-    LPMAENKEEHO_CADJHIFNINP = 6703,
+    LPMAENKEEHO_CADJHIFNINP = 6778,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_ENEKOFGHHGG)
+    LPMAENKEEHO_ENEKOFGHHGG = 6747,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_BMPNHEMOEKI)
+    LPMAENKEEHO_BMPNHEMOEKI = 6725,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AJHLBBKCFFK)
+    LPMAENKEEHO_AJHLBBKCFFK = 6781,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_JKILIBCLKPK)
+    LPMAENKEEHO_JKILIBCLKPK = 6771,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_KCMOAOLIPGN)
+    LPMAENKEEHO_KCMOAOLIPGN = 6738,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AOJDJHDIFIP)
+    LPMAENKEEHO_AOJDJHDIFIP = 6788,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_FMNIDGBDCDO)
+    LPMAENKEEHO_FMNIDGBDCDO = 6786,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_GIMMMBGKIKL)
+    LPMAENKEEHO_GIMMMBGKIKL = 6726,
     // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_KKHDJGCHKHG)
-    LPMAENKEEHO_KKHDJGCHKHG = 6709,
+    LPMAENKEEHO_KKHDJGCHKHG = 6739,
 }
 
 impl ::protobuf::Enum for CmdSpaceZooType {
@@ -71,21 +71,21 @@ impl ::protobuf::Enum for CmdSpaceZooType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdSpaceZooType> {
         match value {
             0 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ),
-            6710 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
-            6712 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
-            6773 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
-            6780 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB),
-            6713 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
-            6783 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
-            6727 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
-            6787 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB),
-            6715 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
-            6754 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC),
-            6781 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
-            6736 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
-            6729 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
-            6703 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP),
-            6709 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG),
+            6793 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB),
+            6713 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB),
+            6740 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
+            6733 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC),
+            6758 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
+            6778 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP),
+            6747 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
+            6725 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
+            6781 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
+            6771 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
+            6738 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
+            6788 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
+            6786 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
+            6726 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
+            6739 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG),
             _ => ::std::option::Option::None
         }
     }
@@ -93,20 +93,20 @@ impl ::protobuf::Enum for CmdSpaceZooType {
     fn from_str(str: &str) -> ::std::option::Option<CmdSpaceZooType> {
         match str {
             "LPMAENKEEHO_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ),
-            "LPMAENKEEHO_GIMMMBGKIKL" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
-            "LPMAENKEEHO_DPOBLEPFJDJ" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
-            "LPMAENKEEHO_BMPNHEMOEKI" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
             "LPMAENKEEHO_HFBJHFGODGB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB),
-            "LPMAENKEEHO_AJHLBBKCFFK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
-            "LPMAENKEEHO_KCMOAOLIPGN" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
-            "LPMAENKEEHO_MKKIOPMCMHB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
             "LPMAENKEEHO_HCNDNIGALBB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB),
-            "LPMAENKEEHO_FMNIDGBDCDO" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
+            "LPMAENKEEHO_DPOBLEPFJDJ" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
             "LPMAENKEEHO_DPLPKPEFDCC" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC),
-            "LPMAENKEEHO_ENEKOFGHHGG" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
-            "LPMAENKEEHO_AOJDJHDIFIP" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
-            "LPMAENKEEHO_JKILIBCLKPK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
+            "LPMAENKEEHO_MKKIOPMCMHB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
             "LPMAENKEEHO_CADJHIFNINP" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP),
+            "LPMAENKEEHO_ENEKOFGHHGG" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
+            "LPMAENKEEHO_BMPNHEMOEKI" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
+            "LPMAENKEEHO_AJHLBBKCFFK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
+            "LPMAENKEEHO_JKILIBCLKPK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
+            "LPMAENKEEHO_KCMOAOLIPGN" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
+            "LPMAENKEEHO_AOJDJHDIFIP" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
+            "LPMAENKEEHO_FMNIDGBDCDO" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
+            "LPMAENKEEHO_GIMMMBGKIKL" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
             "LPMAENKEEHO_KKHDJGCHKHG" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG),
             _ => ::std::option::Option::None
         }
@@ -114,20 +114,20 @@ impl ::protobuf::Enum for CmdSpaceZooType {
 
     const VALUES: &'static [CmdSpaceZooType] = &[
         CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ,
-        CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL,
-        CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ,
-        CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI,
         CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB,
-        CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK,
-        CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN,
-        CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB,
         CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB,
-        CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO,
+        CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ,
         CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC,
-        CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG,
-        CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP,
-        CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK,
+        CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB,
         CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP,
+        CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG,
+        CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI,
+        CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK,
+        CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK,
+        CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN,
+        CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP,
+        CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO,
+        CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL,
         CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG,
     ];
 }
@@ -141,20 +141,20 @@ impl ::protobuf::EnumFull for CmdSpaceZooType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ => 0,
-            CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL => 1,
-            CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ => 2,
-            CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI => 3,
-            CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB => 4,
-            CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK => 5,
-            CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN => 6,
-            CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB => 7,
-            CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB => 8,
-            CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO => 9,
-            CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC => 10,
-            CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG => 11,
+            CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB => 1,
+            CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB => 2,
+            CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ => 3,
+            CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC => 4,
+            CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB => 5,
+            CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP => 6,
+            CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG => 7,
+            CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI => 8,
+            CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK => 9,
+            CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK => 10,
+            CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN => 11,
             CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP => 12,
-            CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK => 13,
-            CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP => 14,
+            CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO => 13,
+            CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL => 14,
             CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG => 15,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -175,17 +175,17 @@ impl CmdSpaceZooType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15CmdSpaceZooType.proto*\xf0\x03\n\x0fCmdSpaceZooType\x12\x1b\n\x17L\
-    PMAENKEEHO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LPMAENKEEHO_GIMMMBGKIKL\x10\
-    \xb64\x12\x1c\n\x17LPMAENKEEHO_DPOBLEPFJDJ\x10\xb84\x12\x1c\n\x17LPMAENK\
-    EEHO_BMPNHEMOEKI\x10\xf54\x12\x1c\n\x17LPMAENKEEHO_HFBJHFGODGB\x10\xfc4\
-    \x12\x1c\n\x17LPMAENKEEHO_AJHLBBKCFFK\x10\xb94\x12\x1c\n\x17LPMAENKEEHO_\
-    KCMOAOLIPGN\x10\xff4\x12\x1c\n\x17LPMAENKEEHO_MKKIOPMCMHB\x10\xc74\x12\
-    \x1c\n\x17LPMAENKEEHO_HCNDNIGALBB\x10\x835\x12\x1c\n\x17LPMAENKEEHO_FMNI\
-    DGBDCDO\x10\xbb4\x12\x1c\n\x17LPMAENKEEHO_DPLPKPEFDCC\x10\xe24\x12\x1c\n\
-    \x17LPMAENKEEHO_ENEKOFGHHGG\x10\xfd4\x12\x1c\n\x17LPMAENKEEHO_AOJDJHDIFI\
-    P\x10\xd04\x12\x1c\n\x17LPMAENKEEHO_JKILIBCLKPK\x10\xc94\x12\x1c\n\x17LP\
-    MAENKEEHO_CADJHIFNINP\x10\xaf4\x12\x1c\n\x17LPMAENKEEHO_KKHDJGCHKHG\x10\
-    \xb54b\x06proto3\
+    PMAENKEEHO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LPMAENKEEHO_HFBJHFGODGB\x10\
+    \x895\x12\x1c\n\x17LPMAENKEEHO_HCNDNIGALBB\x10\xb94\x12\x1c\n\x17LPMAENK\
+    EEHO_DPOBLEPFJDJ\x10\xd44\x12\x1c\n\x17LPMAENKEEHO_DPLPKPEFDCC\x10\xcd4\
+    \x12\x1c\n\x17LPMAENKEEHO_MKKIOPMCMHB\x10\xe64\x12\x1c\n\x17LPMAENKEEHO_\
+    CADJHIFNINP\x10\xfa4\x12\x1c\n\x17LPMAENKEEHO_ENEKOFGHHGG\x10\xdb4\x12\
+    \x1c\n\x17LPMAENKEEHO_BMPNHEMOEKI\x10\xc54\x12\x1c\n\x17LPMAENKEEHO_AJHL\
+    BBKCFFK\x10\xfd4\x12\x1c\n\x17LPMAENKEEHO_JKILIBCLKPK\x10\xf34\x12\x1c\n\
+    \x17LPMAENKEEHO_KCMOAOLIPGN\x10\xd24\x12\x1c\n\x17LPMAENKEEHO_AOJDJHDIFI\
+    P\x10\x845\x12\x1c\n\x17LPMAENKEEHO_FMNIDGBDCDO\x10\x825\x12\x1c\n\x17LP\
+    MAENKEEHO_GIMMMBGKIKL\x10\xc64\x12\x1c\n\x17LPMAENKEEHO_KKHDJGCHKHG\x10\
+    \xd34b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

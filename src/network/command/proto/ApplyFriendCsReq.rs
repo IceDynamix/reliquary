@@ -79,10 +79,10 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                104 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                120 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ApplyFriendCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.source.value());
+            my_size += ::protobuf::rt::int32_size(13, self.source.value());
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+            my_size += ::protobuf::rt::uint32_size(15, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ApplyFriendCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.source != ::protobuf::EnumOrUnknown::new(super::FriendApplySource::FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.source))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
+            os.write_uint32(15, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ApplyFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16ApplyFriendCsReq.proto\x1a\x17FriendApplySource.proto\"P\n\x10Appl\
-    yFriendCsReq\x12*\n\x06source\x18\t\x20\x01(\x0e2\x12.FriendApplySourceR\
-    \x06source\x12\x10\n\x03uid\x18\x01\x20\x01(\rR\x03uidb\x06proto3\
+    yFriendCsReq\x12*\n\x06source\x18\r\x20\x01(\x0e2\x12.FriendApplySourceR\
+    \x06source\x12\x10\n\x03uid\x18\x0f\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

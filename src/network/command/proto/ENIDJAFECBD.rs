@@ -79,10 +79,10 @@ impl ::protobuf::Message for ENIDJAFECBD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.BKFICFMMGIN = is.read_uint32()?;
                 },
-                16 => {
+                88 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ENIDJAFECBD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BKFICFMMGIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BKFICFMMGIN);
+            my_size += ::protobuf::rt::uint32_size(5, self.BKFICFMMGIN);
         }
         if self.is_taken_reward != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ENIDJAFECBD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BKFICFMMGIN != 0 {
-            os.write_uint32(3, self.BKFICFMMGIN)?;
+            os.write_uint32(5, self.BKFICFMMGIN)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(2, self.is_taken_reward)?;
+            os.write_bool(11, self.is_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ENIDJAFECBD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENIDJAFECBD.proto\"W\n\x0bENIDJAFECBD\x12\x20\n\x0bBKFICFMMGIN\x18\
-    \x03\x20\x01(\rR\x0bBKFICFMMGIN\x12&\n\x0fis_taken_reward\x18\x02\x20\
+    \x05\x20\x01(\rR\x0bBKFICFMMGIN\x12&\n\x0fis_taken_reward\x18\x0b\x20\
     \x01(\x08R\risTakenRewardb\x06proto3\
 ";
 

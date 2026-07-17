@@ -30,8 +30,6 @@ pub struct ChessRogueSelectCellCsReq {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.IHAOMLEPHOM)
     pub IHAOMLEPHOM: u32,
-    // @@protoc_insertion_point(field:ChessRogueSelectCellCsReq.LOFMJHJOELO)
-    pub LOFMJHJOELO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSelectCellCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +47,12 @@ impl ChessRogueSelectCellCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IHAOMLEPHOM",
             |m: &ChessRogueSelectCellCsReq| { &m.IHAOMLEPHOM },
             |m: &mut ChessRogueSelectCellCsReq| { &mut m.IHAOMLEPHOM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOFMJHJOELO",
-            |m: &ChessRogueSelectCellCsReq| { &m.LOFMJHJOELO },
-            |m: &mut ChessRogueSelectCellCsReq| { &mut m.LOFMJHJOELO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSelectCellCsReq>(
             "ChessRogueSelectCellCsReq",
@@ -82,9 +75,6 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
                 16 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
-                80 => {
-                    self.LOFMJHJOELO = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -100,9 +90,6 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
         if self.IHAOMLEPHOM != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.IHAOMLEPHOM);
         }
-        if self.LOFMJHJOELO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LOFMJHJOELO);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +98,6 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHAOMLEPHOM != 0 {
             os.write_uint32(2, self.IHAOMLEPHOM)?;
-        }
-        if self.LOFMJHJOELO != 0 {
-            os.write_uint32(10, self.LOFMJHJOELO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +117,12 @@ impl ::protobuf::Message for ChessRogueSelectCellCsReq {
 
     fn clear(&mut self) {
         self.IHAOMLEPHOM = 0;
-        self.LOFMJHJOELO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSelectCellCsReq {
         static instance: ChessRogueSelectCellCsReq = ChessRogueSelectCellCsReq {
             IHAOMLEPHOM: 0,
-            LOFMJHJOELO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSelectCellCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fChessRogueSelectCellCsReq.proto\"_\n\x19ChessRogueSelectCellCsReq\
-    \x12\x20\n\x0bIHAOMLEPHOM\x18\x02\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x20\n\
-    \x0bLOFMJHJOELO\x18\n\x20\x01(\rR\x0bLOFMJHJOELOb\x06proto3\
+    \n\x1fChessRogueSelectCellCsReq.proto\"=\n\x19ChessRogueSelectCellCsReq\
+    \x12\x20\n\x0bIHAOMLEPHOM\x18\x02\x20\x01(\rR\x0bIHAOMLEPHOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

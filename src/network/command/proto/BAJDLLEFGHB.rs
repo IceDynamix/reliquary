@@ -30,14 +30,10 @@ pub struct BAJDLLEFGHB {
     // message fields
     // @@protoc_insertion_point(field:BAJDLLEFGHB.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:BAJDLLEFGHB.DIEIIAILHHE)
-    pub DIEIIAILHHE: bool,
-    // @@protoc_insertion_point(field:BAJDLLEFGHB.LHDHJFPMCJK)
-    pub LHDHJFPMCJK: u32,
-    // @@protoc_insertion_point(field:BAJDLLEFGHB.LIAGGDDILGO)
-    pub LIAGGDDILGO: i32,
     // @@protoc_insertion_point(field:BAJDLLEFGHB.JFIGNBBLCIM)
     pub JFIGNBBLCIM: u32,
+    // @@protoc_insertion_point(field:BAJDLLEFGHB.LIAGGDDILGO)
+    pub LIAGGDDILGO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:BAJDLLEFGHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,7 +51,7 @@ impl BAJDLLEFGHB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
@@ -63,24 +59,14 @@ impl BAJDLLEFGHB {
             |m: &mut BAJDLLEFGHB| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DIEIIAILHHE",
-            |m: &BAJDLLEFGHB| { &m.DIEIIAILHHE },
-            |m: &mut BAJDLLEFGHB| { &mut m.DIEIIAILHHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHDHJFPMCJK",
-            |m: &BAJDLLEFGHB| { &m.LHDHJFPMCJK },
-            |m: &mut BAJDLLEFGHB| { &mut m.LHDHJFPMCJK },
+            "JFIGNBBLCIM",
+            |m: &BAJDLLEFGHB| { &m.JFIGNBBLCIM },
+            |m: &mut BAJDLLEFGHB| { &mut m.JFIGNBBLCIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LIAGGDDILGO",
             |m: &BAJDLLEFGHB| { &m.LIAGGDDILGO },
             |m: &mut BAJDLLEFGHB| { &mut m.LIAGGDDILGO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFIGNBBLCIM",
-            |m: &BAJDLLEFGHB| { &m.JFIGNBBLCIM },
-            |m: &mut BAJDLLEFGHB| { &mut m.JFIGNBBLCIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BAJDLLEFGHB>(
             "BAJDLLEFGHB",
@@ -100,20 +86,14 @@ impl ::protobuf::Message for BAJDLLEFGHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                64 => {
-                    self.DIEIIAILHHE = is.read_bool()?;
-                },
-                104 => {
-                    self.LHDHJFPMCJK = is.read_uint32()?;
-                },
-                40 => {
-                    self.LIAGGDDILGO = is.read_int32()?;
-                },
-                88 => {
+                24 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
+                },
+                112 => {
+                    self.LIAGGDDILGO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,17 +111,11 @@ impl ::protobuf::Message for BAJDLLEFGHB {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DIEIIAILHHE != false {
-            my_size += 1 + 1;
-        }
-        if self.LHDHJFPMCJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LHDHJFPMCJK);
+        if self.JFIGNBBLCIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JFIGNBBLCIM);
         }
         if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.LIAGGDDILGO);
-        }
-        if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JFIGNBBLCIM);
+            my_size += ::protobuf::rt::int32_size(14, self.LIAGGDDILGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +124,13 @@ impl ::protobuf::Message for BAJDLLEFGHB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if self.DIEIIAILHHE != false {
-            os.write_bool(8, self.DIEIIAILHHE)?;
-        }
-        if self.LHDHJFPMCJK != 0 {
-            os.write_uint32(13, self.LHDHJFPMCJK)?;
-        }
-        if self.LIAGGDDILGO != 0 {
-            os.write_int32(5, self.LIAGGDDILGO)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(11, self.JFIGNBBLCIM)?;
+            os.write_uint32(3, self.JFIGNBBLCIM)?;
+        }
+        if self.LIAGGDDILGO != 0 {
+            os.write_int32(14, self.LIAGGDDILGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +150,16 @@ impl ::protobuf::Message for BAJDLLEFGHB {
 
     fn clear(&mut self) {
         self.cost_data.clear();
-        self.DIEIIAILHHE = false;
-        self.LHDHJFPMCJK = 0;
-        self.LIAGGDDILGO = 0;
         self.JFIGNBBLCIM = 0;
+        self.LIAGGDDILGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BAJDLLEFGHB {
         static instance: BAJDLLEFGHB = BAJDLLEFGHB {
             cost_data: ::protobuf::MessageField::none(),
-            DIEIIAILHHE: false,
-            LHDHJFPMCJK: 0,
-            LIAGGDDILGO: 0,
             JFIGNBBLCIM: 0,
+            LIAGGDDILGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BAJDLLEFGHB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BAJDLLEFGHB.proto\x1a\x12ItemCostData.proto\"\xc1\x01\n\x0bBAJDLLE\
-    FGHB\x12*\n\tcost_data\x18\x07\x20\x01(\x0b2\r.ItemCostDataR\x08costData\
-    \x12\x20\n\x0bDIEIIAILHHE\x18\x08\x20\x01(\x08R\x0bDIEIIAILHHE\x12\x20\n\
-    \x0bLHDHJFPMCJK\x18\r\x20\x01(\rR\x0bLHDHJFPMCJK\x12\x20\n\x0bLIAGGDDILG\
-    O\x18\x05\x20\x01(\x05R\x0bLIAGGDDILGO\x12\x20\n\x0bJFIGNBBLCIM\x18\x0b\
-    \x20\x01(\rR\x0bJFIGNBBLCIMb\x06proto3\
+    \n\x11BAJDLLEFGHB.proto\x1a\x12ItemCostData.proto\"}\n\x0bBAJDLLEFGHB\
+    \x12*\n\tcost_data\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bJFIGNBBLCIM\x18\x03\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\n\x0bLI\
+    AGGDDILGO\x18\x0e\x20\x01(\x05R\x0bLIAGGDDILGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

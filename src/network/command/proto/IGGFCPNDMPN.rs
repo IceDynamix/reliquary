@@ -45,7 +45,7 @@ impl IGGFCPNDMPN {
         ::std::default::Default::default()
     }
 
-    // .LJGKDEKCHPJ AONEJBHFKMO = 1;
+    // .LJGKDEKCHPJ AONEJBHFKMO = 10;
 
     pub fn AONEJBHFKMO(&self) -> &super::LJGKDEKCHPJ::LJGKDEKCHPJ {
         match self.BNJPPHJNKHF {
@@ -94,7 +94,7 @@ impl IGGFCPNDMPN {
         }
     }
 
-    // uint32 BKJFBHANFLC = 8;
+    // uint32 BKJFBHANFLC = 2;
 
     pub fn BKJFBHANFLC(&self) -> u32 {
         match self.BNJPPHJNKHF {
@@ -154,10 +154,10 @@ impl ::protobuf::Message for IGGFCPNDMPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                82 => {
                     self.BNJPPHJNKHF = ::std::option::Option::Some(iggfcpndmpn::BNJPPHJNKHF::AONEJBHFKMO(is.read_message()?));
                 },
-                64 => {
+                16 => {
                     self.BNJPPHJNKHF = ::std::option::Option::Some(iggfcpndmpn::BNJPPHJNKHF::BKJFBHANFLC(is.read_uint32()?));
                 },
                 tag => {
@@ -179,7 +179,7 @@ impl ::protobuf::Message for IGGFCPNDMPN {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &iggfcpndmpn::BNJPPHJNKHF::BKJFBHANFLC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
             };
         }
@@ -192,10 +192,10 @@ impl ::protobuf::Message for IGGFCPNDMPN {
         if let ::std::option::Option::Some(ref v) = self.BNJPPHJNKHF {
             match v {
                 &iggfcpndmpn::BNJPPHJNKHF::AONEJBHFKMO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &iggfcpndmpn::BNJPPHJNKHF::BKJFBHANFLC(v) => {
-                    os.write_uint32(8, v)?;
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -279,9 +279,9 @@ pub mod iggfcpndmpn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IGGFCPNDMPN.proto\x1a\x11LJGKDEKCHPJ.proto\"r\n\x0bIGGFCPNDMPN\x12\
-    0\n\x0bAONEJBHFKMO\x18\x01\x20\x01(\x0b2\x0c.LJGKDEKCHPJH\0R\x0bAONEJBHF\
-    KMO\x12\"\n\x0bBKJFBHANFLC\x18\x08\x20\x01(\rH\0R\x0bBKJFBHANFLCB\r\n\
-    \x0bBNJPPHJNKHFb\x06proto3\
+    0\n\x0bAONEJBHFKMO\x18\n\x20\x01(\x0b2\x0c.LJGKDEKCHPJH\0R\x0bAONEJBHFKM\
+    O\x12\"\n\x0bBKJFBHANFLC\x18\x02\x20\x01(\rH\0R\x0bBKJFBHANFLCB\r\n\x0bB\
+    NJPPHJNKHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

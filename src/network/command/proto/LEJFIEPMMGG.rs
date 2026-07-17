@@ -32,8 +32,8 @@ pub struct LEJFIEPMMGG {
     pub IFJIHNBDNGN: ::std::vec::Vec<super::CBDMGEGELFM::CBDMGEGELFM>,
     // @@protoc_insertion_point(field:LEJFIEPMMGG.KAHMGPGPOII)
     pub KAHMGPGPOII: u32,
-    // @@protoc_insertion_point(field:LEJFIEPMMGG.HNLJIPAOEGB)
-    pub HNLJIPAOEGB: bool,
+    // @@protoc_insertion_point(field:LEJFIEPMMGG.is_activated)
+    pub is_activated: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LEJFIEPMMGG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl LEJFIEPMMGG {
             |m: &mut LEJFIEPMMGG| { &mut m.KAHMGPGPOII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNLJIPAOEGB",
-            |m: &LEJFIEPMMGG| { &m.HNLJIPAOEGB },
-            |m: &mut LEJFIEPMMGG| { &mut m.HNLJIPAOEGB },
+            "is_activated",
+            |m: &LEJFIEPMMGG| { &m.is_activated },
+            |m: &mut LEJFIEPMMGG| { &mut m.is_activated },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEJFIEPMMGG>(
             "LEJFIEPMMGG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LEJFIEPMMGG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                34 => {
                     self.IFJIHNBDNGN.push(is.read_message()?);
                 },
-                64 => {
+                88 => {
                     self.KAHMGPGPOII = is.read_uint32()?;
                 },
-                48 => {
-                    self.HNLJIPAOEGB = is.read_bool()?;
+                96 => {
+                    self.is_activated = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -112,9 +112,9 @@ impl ::protobuf::Message for LEJFIEPMMGG {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.KAHMGPGPOII != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KAHMGPGPOII);
+            my_size += ::protobuf::rt::uint32_size(11, self.KAHMGPGPOII);
         }
-        if self.HNLJIPAOEGB != false {
+        if self.is_activated != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LEJFIEPMMGG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IFJIHNBDNGN {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.KAHMGPGPOII != 0 {
-            os.write_uint32(8, self.KAHMGPGPOII)?;
+            os.write_uint32(11, self.KAHMGPGPOII)?;
         }
-        if self.HNLJIPAOEGB != false {
-            os.write_bool(6, self.HNLJIPAOEGB)?;
+        if self.is_activated != false {
+            os.write_bool(12, self.is_activated)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for LEJFIEPMMGG {
     fn clear(&mut self) {
         self.IFJIHNBDNGN.clear();
         self.KAHMGPGPOII = 0;
-        self.HNLJIPAOEGB = false;
+        self.is_activated = false;
         self.special_fields.clear();
     }
 
@@ -159,7 +159,7 @@ impl ::protobuf::Message for LEJFIEPMMGG {
         static instance: LEJFIEPMMGG = LEJFIEPMMGG {
             IFJIHNBDNGN: ::std::vec::Vec::new(),
             KAHMGPGPOII: 0,
-            HNLJIPAOEGB: false,
+            is_activated: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for LEJFIEPMMGG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LEJFIEPMMGG.proto\x1a\x11CBDMGEGELFM.proto\"\x81\x01\n\x0bLEJFIEPM\
-    MGG\x12.\n\x0bIFJIHNBDNGN\x18\x0f\x20\x03(\x0b2\x0c.CBDMGEGELFMR\x0bIFJI\
-    HNBDNGN\x12\x20\n\x0bKAHMGPGPOII\x18\x08\x20\x01(\rR\x0bKAHMGPGPOII\x12\
-    \x20\n\x0bHNLJIPAOEGB\x18\x06\x20\x01(\x08R\x0bHNLJIPAOEGBb\x06proto3\
+    \n\x11LEJFIEPMMGG.proto\x1a\x11CBDMGEGELFM.proto\"\x82\x01\n\x0bLEJFIEPM\
+    MGG\x12.\n\x0bIFJIHNBDNGN\x18\x04\x20\x03(\x0b2\x0c.CBDMGEGELFMR\x0bIFJI\
+    HNBDNGN\x12\x20\n\x0bKAHMGPGPOII\x18\x0b\x20\x01(\rR\x0bKAHMGPGPOII\x12!\
+    \n\x0cis_activated\x18\x0c\x20\x01(\x08R\x0bisActivatedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                18 => {
                     self.FIHPPANOOFL.push(is.read_message()?);
                 },
-                64 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlanetFesGetAvatarStatScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FIHPPANOOFL {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetAvatarStatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesGetAvatarStatScRsp.proto\x1a\x11GLECNCOBKCJ.proto\"g\n\x1bPl\
-    anetFesGetAvatarStatScRsp\x12.\n\x0bFIHPPANOOFL\x18\x0f\x20\x03(\x0b2\
-    \x0c.GLECNCOBKCJR\x0bFIHPPANOOFL\x12\x18\n\x07retcode\x18\x08\x20\x01(\r\
+    anetFesGetAvatarStatScRsp\x12.\n\x0bFIHPPANOOFL\x18\x02\x20\x03(\x0b2\
+    \x0c.GLECNCOBKCJR\x0bFIHPPANOOFL\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
     R\x07retcodeb\x06proto3\
 ";
 

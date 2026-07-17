@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPLHNOPDKHI {
     // message fields
-    // @@protoc_insertion_point(field:LPLHNOPDKHI.GFKAFIFMHNF)
-    pub GFKAFIFMHNF: ::std::vec::Vec<super::AKMCODLAEKI::AKMCODLAEKI>,
-    // @@protoc_insertion_point(field:LPLHNOPDKHI.GHNJCLNKGHH)
-    pub GHNJCLNKGHH: ::protobuf::EnumOrUnknown<super::MMFOGJPOHGJ::MMFOGJPOHGJ>,
     // @@protoc_insertion_point(field:LPLHNOPDKHI.GAHFPGCPAJA)
     pub GAHFPGCPAJA: u64,
+    // @@protoc_insertion_point(field:LPLHNOPDKHI.GFKAFIFMHNF)
+    pub GFKAFIFMHNF: ::std::vec::Vec<super::AKMCODLAEKI::AKMCODLAEKI>,
+    // @@protoc_insertion_point(field:LPLHNOPDKHI.owner_type)
+    pub owner_type: ::protobuf::EnumOrUnknown<super::MMFOGJPOHGJ::MMFOGJPOHGJ>,
     // special fields
     // @@protoc_insertion_point(special_field:LPLHNOPDKHI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl LPLHNOPDKHI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAHFPGCPAJA",
+            |m: &LPLHNOPDKHI| { &m.GAHFPGCPAJA },
+            |m: &mut LPLHNOPDKHI| { &mut m.GAHFPGCPAJA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GFKAFIFMHNF",
             |m: &LPLHNOPDKHI| { &m.GFKAFIFMHNF },
             |m: &mut LPLHNOPDKHI| { &mut m.GFKAFIFMHNF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GHNJCLNKGHH",
-            |m: &LPLHNOPDKHI| { &m.GHNJCLNKGHH },
-            |m: &mut LPLHNOPDKHI| { &mut m.GHNJCLNKGHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAHFPGCPAJA",
-            |m: &LPLHNOPDKHI| { &m.GAHFPGCPAJA },
-            |m: &mut LPLHNOPDKHI| { &mut m.GAHFPGCPAJA },
+            "owner_type",
+            |m: &LPLHNOPDKHI| { &m.owner_type },
+            |m: &mut LPLHNOPDKHI| { &mut m.owner_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LPLHNOPDKHI>(
             "LPLHNOPDKHI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LPLHNOPDKHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                48 => {
+                    self.GAHFPGCPAJA = is.read_uint64()?;
+                },
+                98 => {
                     self.GFKAFIFMHNF.push(is.read_message()?);
                 },
-                56 => {
-                    self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
-                },
                 104 => {
-                    self.GAHFPGCPAJA = is.read_uint64()?;
+                    self.owner_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for LPLHNOPDKHI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GAHFPGCPAJA != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.GAHFPGCPAJA);
+        }
         for value in &self.GFKAFIFMHNF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(7, self.GHNJCLNKGHH.value());
-        }
-        if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.GAHFPGCPAJA);
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.owner_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for LPLHNOPDKHI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GFKAFIFMHNF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
-        }
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint64(13, self.GAHFPGCPAJA)?;
+            os.write_uint64(6, self.GAHFPGCPAJA)?;
+        }
+        for v in &self.GFKAFIFMHNF {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.owner_type != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.owner_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for LPLHNOPDKHI {
     }
 
     fn clear(&mut self) {
-        self.GFKAFIFMHNF.clear();
-        self.GHNJCLNKGHH = ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ);
         self.GAHFPGCPAJA = 0;
+        self.GFKAFIFMHNF.clear();
+        self.owner_type = ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPLHNOPDKHI {
         static instance: LPLHNOPDKHI = LPLHNOPDKHI {
-            GFKAFIFMHNF: ::std::vec::Vec::new(),
-            GHNJCLNKGHH: ::protobuf::EnumOrUnknown::from_i32(0),
             GAHFPGCPAJA: 0,
+            GFKAFIFMHNF: ::std::vec::Vec::new(),
+            owner_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for LPLHNOPDKHI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPLHNOPDKHI.proto\x1a\x11AKMCODLAEKI.proto\x1a\x11MMFOGJPOHGJ.prot\
-    o\"\x8f\x01\n\x0bLPLHNOPDKHI\x12.\n\x0bGFKAFIFMHNF\x18\x03\x20\x03(\x0b2\
-    \x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12.\n\x0bGHNJCLNKGHH\x18\x07\x20\x01(\
-    \x0e2\x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\x12\x20\n\x0bGAHFPGCPAJA\x18\r\x20\
-    \x01(\x04R\x0bGAHFPGCPAJAb\x06proto3\
+    o\"\x8c\x01\n\x0bLPLHNOPDKHI\x12\x20\n\x0bGAHFPGCPAJA\x18\x06\x20\x01(\
+    \x04R\x0bGAHFPGCPAJA\x12.\n\x0bGFKAFIFMHNF\x18\x0c\x20\x03(\x0b2\x0c.AKM\
+    CODLAEKIR\x0bGFKAFIFMHNF\x12+\n\nowner_type\x18\r\x20\x01(\x0e2\x0c.MMFO\
+    GJPOHGJR\townerTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChallengeTierceControllerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetChallengeTierceControllerScRsp.challenge_tierce_info)
-    pub challenge_tierce_info: ::protobuf::MessageField<super::ChallengeTierceChallengeInfo::ChallengeTierceChallengeInfo>,
-    // @@protoc_insertion_point(field:GetChallengeTierceControllerScRsp.record_info)
-    pub record_info: ::protobuf::MessageField<super::ChallengeTierceRecordInfo::ChallengeTierceRecordInfo>,
     // @@protoc_insertion_point(field:GetChallengeTierceControllerScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetChallengeTierceControllerScRsp.challenge_tierce_info)
+    pub challenge_tierce_info: ::protobuf::MessageField<super::ChallengeTierceChallengeInfo::ChallengeTierceChallengeInfo>,
+    // @@protoc_insertion_point(field:GetChallengeTierceControllerScRsp.OHPGEHKFABM)
+    pub OHPGEHKFABM: ::protobuf::MessageField<super::ChallengeTierceRecordInfo::ChallengeTierceRecordInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetChallengeTierceControllerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetChallengeTierceControllerScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetChallengeTierceControllerScRsp| { &m.retcode },
+            |m: &mut GetChallengeTierceControllerScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeTierceChallengeInfo::ChallengeTierceChallengeInfo>(
             "challenge_tierce_info",
             |m: &GetChallengeTierceControllerScRsp| { &m.challenge_tierce_info },
             |m: &mut GetChallengeTierceControllerScRsp| { &mut m.challenge_tierce_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeTierceRecordInfo::ChallengeTierceRecordInfo>(
-            "record_info",
-            |m: &GetChallengeTierceControllerScRsp| { &m.record_info },
-            |m: &mut GetChallengeTierceControllerScRsp| { &mut m.record_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetChallengeTierceControllerScRsp| { &m.retcode },
-            |m: &mut GetChallengeTierceControllerScRsp| { &mut m.retcode },
+            "OHPGEHKFABM",
+            |m: &GetChallengeTierceControllerScRsp| { &m.OHPGEHKFABM },
+            |m: &mut GetChallengeTierceControllerScRsp| { &mut m.OHPGEHKFABM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChallengeTierceControllerScRsp>(
             "GetChallengeTierceControllerScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetChallengeTierceControllerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.challenge_tierce_info)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
-                },
-                120 => {
-                    self.retcode = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHPGEHKFABM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for GetChallengeTierceControllerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
         if let Some(v) = self.challenge_tierce_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.record_info.as_ref() {
+        if let Some(v) = self.OHPGEHKFABM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetChallengeTierceControllerScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.challenge_tierce_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if let Some(v) = self.challenge_tierce_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if let Some(v) = self.OHPGEHKFABM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetChallengeTierceControllerScRsp {
     }
 
     fn clear(&mut self) {
-        self.challenge_tierce_info.clear();
-        self.record_info.clear();
         self.retcode = 0;
+        self.challenge_tierce_info.clear();
+        self.OHPGEHKFABM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChallengeTierceControllerScRsp {
         static instance: GetChallengeTierceControllerScRsp = GetChallengeTierceControllerScRsp {
-            challenge_tierce_info: ::protobuf::MessageField::none(),
-            record_info: ::protobuf::MessageField::none(),
             retcode: 0,
+            challenge_tierce_info: ::protobuf::MessageField::none(),
+            OHPGEHKFABM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,11 +186,11 @@ impl ::protobuf::reflect::ProtobufValue for GetChallengeTierceControllerScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetChallengeTierceControllerScRsp.proto\x1a\"ChallengeTierceChallenge\
-    Info.proto\x1a\x1fChallengeTierceRecordInfo.proto\"\xcd\x01\n!GetChallen\
-    geTierceControllerScRsp\x12Q\n\x15challenge_tierce_info\x18\x03\x20\x01(\
-    \x0b2\x1d.ChallengeTierceChallengeInfoR\x13challengeTierceInfo\x12;\n\
-    \x0brecord_info\x18\x04\x20\x01(\x0b2\x1a.ChallengeTierceRecordInfoR\nre\
-    cordInfo\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    Info.proto\x1a\x1fChallengeTierceRecordInfo.proto\"\xce\x01\n!GetChallen\
+    geTierceControllerScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retc\
+    ode\x12Q\n\x15challenge_tierce_info\x18\x0c\x20\x01(\x0b2\x1d.ChallengeT\
+    ierceChallengeInfoR\x13challengeTierceInfo\x12<\n\x0bOHPGEHKFABM\x18\x0f\
+    \x20\x01(\x0b2\x1a.ChallengeTierceRecordInfoR\x0bOHPGEHKFABMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

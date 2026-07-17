@@ -30,10 +30,10 @@ pub struct SceneCheckpoingRefreshCsReq {
     // message fields
     // @@protoc_insertion_point(field:SceneCheckpoingRefreshCsReq.prop_entity_id)
     pub prop_entity_id: u32,
-    // @@protoc_insertion_point(field:SceneCheckpoingRefreshCsReq.plane_id)
-    pub plane_id: u32,
     // @@protoc_insertion_point(field:SceneCheckpoingRefreshCsReq.floor_id)
     pub floor_id: u32,
+    // @@protoc_insertion_point(field:SceneCheckpoingRefreshCsReq.plane_id)
+    pub plane_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneCheckpoingRefreshCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SceneCheckpoingRefreshCsReq {
             |m: &mut SceneCheckpoingRefreshCsReq| { &mut m.prop_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &SceneCheckpoingRefreshCsReq| { &m.plane_id },
-            |m: &mut SceneCheckpoingRefreshCsReq| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
             |m: &SceneCheckpoingRefreshCsReq| { &m.floor_id },
             |m: &mut SceneCheckpoingRefreshCsReq| { &mut m.floor_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &SceneCheckpoingRefreshCsReq| { &m.plane_id },
+            |m: &mut SceneCheckpoingRefreshCsReq| { &mut m.plane_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneCheckpoingRefreshCsReq>(
             "SceneCheckpoingRefreshCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SceneCheckpoingRefreshCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                112 => {
+                80 => {
                     self.floor_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.plane_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SceneCheckpoingRefreshCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.prop_entity_id);
-        }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.prop_entity_id);
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.floor_id);
+        }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.plane_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SceneCheckpoingRefreshCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.prop_entity_id != 0 {
-            os.write_uint32(5, self.prop_entity_id)?;
-        }
-        if self.plane_id != 0 {
-            os.write_uint32(7, self.plane_id)?;
+            os.write_uint32(2, self.prop_entity_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(14, self.floor_id)?;
+            os.write_uint32(10, self.floor_id)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(12, self.plane_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SceneCheckpoingRefreshCsReq {
 
     fn clear(&mut self) {
         self.prop_entity_id = 0;
-        self.plane_id = 0;
         self.floor_id = 0;
+        self.plane_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneCheckpoingRefreshCsReq {
         static instance: SceneCheckpoingRefreshCsReq = SceneCheckpoingRefreshCsReq {
             prop_entity_id: 0,
-            plane_id: 0,
             floor_id: 0,
+            plane_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCheckpoingRefreshCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SceneCheckpoingRefreshCsReq.proto\"y\n\x1bSceneCheckpoingRefreshCsReq\
-    \x12$\n\x0eprop_entity_id\x18\x05\x20\x01(\rR\x0cpropEntityId\x12\x19\n\
-    \x08plane_id\x18\x07\x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\
-    \x0e\x20\x01(\rR\x07floorIdb\x06proto3\
+    \x12$\n\x0eprop_entity_id\x18\x02\x20\x01(\rR\x0cpropEntityId\x12\x19\n\
+    \x08floor_id\x18\n\x20\x01(\rR\x07floorId\x12\x19\n\x08plane_id\x18\x0c\
+    \x20\x01(\rR\x07planeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

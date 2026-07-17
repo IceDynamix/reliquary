@@ -29,24 +29,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CmdRogueEndlessType {
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_MOLJCEFGPLL)
     LBADGLCGAOG_MOLJCEFGPLL = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HDENEHNNIFK)
-    LBADGLCGAOG_HDENEHNNIFK = 6010,
-    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HLKMGBJHBFN)
-    LBADGLCGAOG_HLKMGBJHBFN = 6001,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_EPNDKNDBPAE)
-    LBADGLCGAOG_EPNDKNDBPAE = 6006,
+    LBADGLCGAOG_EPNDKNDBPAE = 6002,
+    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HLKMGBJHBFN)
+    LBADGLCGAOG_HLKMGBJHBFN = 6006,
+    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HDENEHNNIFK)
+    LBADGLCGAOG_HDENEHNNIFK = 6005,
+    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HMCCOEAGDHH)
+    LBADGLCGAOG_HMCCOEAGDHH = 6003,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_AFJHANHHHGK)
     LBADGLCGAOG_AFJHANHHHGK = 6004,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_AHHDIBJJOBH)
-    LBADGLCGAOG_AHHDIBJJOBH = 6009,
-    // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_HMCCOEAGDHH)
-    LBADGLCGAOG_HMCCOEAGDHH = 6002,
+    LBADGLCGAOG_AHHDIBJJOBH = 6010,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_KGOKBDFJCFO)
-    LBADGLCGAOG_KGOKBDFJCFO = 6007,
+    LBADGLCGAOG_KGOKBDFJCFO = 6009,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_KOMHEMEDOLP)
-    LBADGLCGAOG_KOMHEMEDOLP = 6008,
+    LBADGLCGAOG_KOMHEMEDOLP = 6001,
     // @@protoc_insertion_point(enum_value:CmdRogueEndlessType.LBADGLCGAOG_PEFHADFKMAJ)
-    LBADGLCGAOG_PEFHADFKMAJ = 6003,
+    LBADGLCGAOG_PEFHADFKMAJ = 6008,
 }
 
 impl ::protobuf::Enum for CmdRogueEndlessType {
@@ -59,15 +59,15 @@ impl ::protobuf::Enum for CmdRogueEndlessType {
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueEndlessType> {
         match value {
             0 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_MOLJCEFGPLL),
-            6010 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK),
-            6001 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN),
-            6006 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE),
+            6002 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE),
+            6006 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN),
+            6005 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK),
+            6003 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH),
             6004 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_AFJHANHHHGK),
-            6009 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH),
-            6002 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH),
-            6007 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KGOKBDFJCFO),
-            6008 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KOMHEMEDOLP),
-            6003 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_PEFHADFKMAJ),
+            6010 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH),
+            6009 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KGOKBDFJCFO),
+            6001 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KOMHEMEDOLP),
+            6008 => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_PEFHADFKMAJ),
             _ => ::std::option::Option::None
         }
     }
@@ -75,12 +75,12 @@ impl ::protobuf::Enum for CmdRogueEndlessType {
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueEndlessType> {
         match str {
             "LBADGLCGAOG_MOLJCEFGPLL" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_MOLJCEFGPLL),
-            "LBADGLCGAOG_HDENEHNNIFK" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK),
-            "LBADGLCGAOG_HLKMGBJHBFN" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN),
             "LBADGLCGAOG_EPNDKNDBPAE" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE),
+            "LBADGLCGAOG_HLKMGBJHBFN" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN),
+            "LBADGLCGAOG_HDENEHNNIFK" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK),
+            "LBADGLCGAOG_HMCCOEAGDHH" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH),
             "LBADGLCGAOG_AFJHANHHHGK" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_AFJHANHHHGK),
             "LBADGLCGAOG_AHHDIBJJOBH" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH),
-            "LBADGLCGAOG_HMCCOEAGDHH" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH),
             "LBADGLCGAOG_KGOKBDFJCFO" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KGOKBDFJCFO),
             "LBADGLCGAOG_KOMHEMEDOLP" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_KOMHEMEDOLP),
             "LBADGLCGAOG_PEFHADFKMAJ" => ::std::option::Option::Some(CmdRogueEndlessType::LBADGLCGAOG_PEFHADFKMAJ),
@@ -90,12 +90,12 @@ impl ::protobuf::Enum for CmdRogueEndlessType {
 
     const VALUES: &'static [CmdRogueEndlessType] = &[
         CmdRogueEndlessType::LBADGLCGAOG_MOLJCEFGPLL,
-        CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK,
-        CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN,
         CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE,
+        CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN,
+        CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK,
+        CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH,
         CmdRogueEndlessType::LBADGLCGAOG_AFJHANHHHGK,
         CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH,
-        CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH,
         CmdRogueEndlessType::LBADGLCGAOG_KGOKBDFJCFO,
         CmdRogueEndlessType::LBADGLCGAOG_KOMHEMEDOLP,
         CmdRogueEndlessType::LBADGLCGAOG_PEFHADFKMAJ,
@@ -111,12 +111,12 @@ impl ::protobuf::EnumFull for CmdRogueEndlessType {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CmdRogueEndlessType::LBADGLCGAOG_MOLJCEFGPLL => 0,
-            CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK => 1,
+            CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE => 1,
             CmdRogueEndlessType::LBADGLCGAOG_HLKMGBJHBFN => 2,
-            CmdRogueEndlessType::LBADGLCGAOG_EPNDKNDBPAE => 3,
-            CmdRogueEndlessType::LBADGLCGAOG_AFJHANHHHGK => 4,
-            CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH => 5,
-            CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH => 6,
+            CmdRogueEndlessType::LBADGLCGAOG_HDENEHNNIFK => 3,
+            CmdRogueEndlessType::LBADGLCGAOG_HMCCOEAGDHH => 4,
+            CmdRogueEndlessType::LBADGLCGAOG_AFJHANHHHGK => 5,
+            CmdRogueEndlessType::LBADGLCGAOG_AHHDIBJJOBH => 6,
             CmdRogueEndlessType::LBADGLCGAOG_KGOKBDFJCFO => 7,
             CmdRogueEndlessType::LBADGLCGAOG_KOMHEMEDOLP => 8,
             CmdRogueEndlessType::LBADGLCGAOG_PEFHADFKMAJ => 9,
@@ -139,13 +139,13 @@ impl CmdRogueEndlessType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CmdRogueEndlessType.proto*\xc0\x02\n\x13CmdRogueEndlessType\x12\
-    \x1b\n\x17LBADGLCGAOG_MOLJCEFGPLL\x10\0\x12\x1c\n\x17LBADGLCGAOG_HDENEHN\
-    NIFK\x10\xfa.\x12\x1c\n\x17LBADGLCGAOG_HLKMGBJHBFN\x10\xf1.\x12\x1c\n\
-    \x17LBADGLCGAOG_EPNDKNDBPAE\x10\xf6.\x12\x1c\n\x17LBADGLCGAOG_AFJHANHHHG\
-    K\x10\xf4.\x12\x1c\n\x17LBADGLCGAOG_AHHDIBJJOBH\x10\xf9.\x12\x1c\n\x17LB\
-    ADGLCGAOG_HMCCOEAGDHH\x10\xf2.\x12\x1c\n\x17LBADGLCGAOG_KGOKBDFJCFO\x10\
-    \xf7.\x12\x1c\n\x17LBADGLCGAOG_KOMHEMEDOLP\x10\xf8.\x12\x1c\n\x17LBADGLC\
-    GAOG_PEFHADFKMAJ\x10\xf3.b\x06proto3\
+    \x1b\n\x17LBADGLCGAOG_MOLJCEFGPLL\x10\0\x12\x1c\n\x17LBADGLCGAOG_EPNDKND\
+    BPAE\x10\xf2.\x12\x1c\n\x17LBADGLCGAOG_HLKMGBJHBFN\x10\xf6.\x12\x1c\n\
+    \x17LBADGLCGAOG_HDENEHNNIFK\x10\xf5.\x12\x1c\n\x17LBADGLCGAOG_HMCCOEAGDH\
+    H\x10\xf3.\x12\x1c\n\x17LBADGLCGAOG_AFJHANHHHGK\x10\xf4.\x12\x1c\n\x17LB\
+    ADGLCGAOG_AHHDIBJJOBH\x10\xfa.\x12\x1c\n\x17LBADGLCGAOG_KGOKBDFJCFO\x10\
+    \xf9.\x12\x1c\n\x17LBADGLCGAOG_KOMHEMEDOLP\x10\xf1.\x12\x1c\n\x17LBADGLC\
+    GAOG_PEFHADFKMAJ\x10\xf8.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

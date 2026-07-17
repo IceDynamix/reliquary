@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGGGHFDBCFN {
     // message fields
-    // @@protoc_insertion_point(field:LGGGHFDBCFN.FDGJLMMEAOF)
-    pub FDGJLMMEAOF: u32,
     // @@protoc_insertion_point(field:LGGGHFDBCFN.KBDOBOODPAK)
     pub KBDOBOODPAK: u32,
     // @@protoc_insertion_point(field:LGGGHFDBCFN.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:LGGGHFDBCFN.has_passed)
     pub has_passed: bool,
+    // @@protoc_insertion_point(field:LGGGHFDBCFN.FDGJLMMEAOF)
+    pub FDGJLMMEAOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LGGGHFDBCFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl LGGGHFDBCFN {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDGJLMMEAOF",
-            |m: &LGGGHFDBCFN| { &m.FDGJLMMEAOF },
-            |m: &mut LGGGHFDBCFN| { &mut m.FDGJLMMEAOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KBDOBOODPAK",
             |m: &LGGGHFDBCFN| { &m.KBDOBOODPAK },
             |m: &mut LGGGHFDBCFN| { &mut m.KBDOBOODPAK },
@@ -74,6 +69,11 @@ impl LGGGHFDBCFN {
             "has_passed",
             |m: &LGGGHFDBCFN| { &m.has_passed },
             |m: &mut LGGGHFDBCFN| { &mut m.has_passed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDGJLMMEAOF",
+            |m: &LGGGHFDBCFN| { &m.FDGJLMMEAOF },
+            |m: &mut LGGGHFDBCFN| { &mut m.FDGJLMMEAOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGGGHFDBCFN>(
             "LGGGHFDBCFN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LGGGHFDBCFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FDGJLMMEAOF = is.read_uint32()?;
-                },
-                104 => {
+                16 => {
                     self.KBDOBOODPAK = is.read_uint32()?;
                 },
                 48 => {
                     self.progress = is.read_uint32()?;
                 },
-                8 => {
+                72 => {
                     self.has_passed = is.read_bool()?;
+                },
+                104 => {
+                    self.FDGJLMMEAOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,11 +117,8 @@ impl ::protobuf::Message for LGGGHFDBCFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FDGJLMMEAOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FDGJLMMEAOF);
-        }
         if self.KBDOBOODPAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KBDOBOODPAK);
+            my_size += ::protobuf::rt::uint32_size(2, self.KBDOBOODPAK);
         }
         if self.progress != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.progress);
@@ -129,23 +126,26 @@ impl ::protobuf::Message for LGGGHFDBCFN {
         if self.has_passed != false {
             my_size += 1 + 1;
         }
+        if self.FDGJLMMEAOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FDGJLMMEAOF);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FDGJLMMEAOF != 0 {
-            os.write_uint32(4, self.FDGJLMMEAOF)?;
-        }
         if self.KBDOBOODPAK != 0 {
-            os.write_uint32(13, self.KBDOBOODPAK)?;
+            os.write_uint32(2, self.KBDOBOODPAK)?;
         }
         if self.progress != 0 {
             os.write_uint32(6, self.progress)?;
         }
         if self.has_passed != false {
-            os.write_bool(1, self.has_passed)?;
+            os.write_bool(9, self.has_passed)?;
+        }
+        if self.FDGJLMMEAOF != 0 {
+            os.write_uint32(13, self.FDGJLMMEAOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for LGGGHFDBCFN {
     }
 
     fn clear(&mut self) {
-        self.FDGJLMMEAOF = 0;
         self.KBDOBOODPAK = 0;
         self.progress = 0;
         self.has_passed = false;
+        self.FDGJLMMEAOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGGGHFDBCFN {
         static instance: LGGGHFDBCFN = LGGGHFDBCFN {
-            FDGJLMMEAOF: 0,
             KBDOBOODPAK: 0,
             progress: 0,
             has_passed: false,
+            FDGJLMMEAOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for LGGGHFDBCFN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LGGGHFDBCFN.proto\"\x8c\x01\n\x0bLGGGHFDBCFN\x12\x20\n\x0bFDGJLMME\
-    AOF\x18\x04\x20\x01(\rR\x0bFDGJLMMEAOF\x12\x20\n\x0bKBDOBOODPAK\x18\r\
-    \x20\x01(\rR\x0bKBDOBOODPAK\x12\x1a\n\x08progress\x18\x06\x20\x01(\rR\
-    \x08progress\x12\x1d\n\nhas_passed\x18\x01\x20\x01(\x08R\thasPassedb\x06\
-    proto3\
+    \n\x11LGGGHFDBCFN.proto\"\x8c\x01\n\x0bLGGGHFDBCFN\x12\x20\n\x0bKBDOBOOD\
+    PAK\x18\x02\x20\x01(\rR\x0bKBDOBOODPAK\x12\x1a\n\x08progress\x18\x06\x20\
+    \x01(\rR\x08progress\x12\x1d\n\nhas_passed\x18\t\x20\x01(\x08R\thasPasse\
+    d\x12\x20\n\x0bFDGJLMMEAOF\x18\r\x20\x01(\rR\x0bFDGJLMMEAOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
