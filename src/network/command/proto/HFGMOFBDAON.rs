@@ -79,10 +79,10 @@ impl ::protobuf::Message for HFGMOFBDAON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                34 => {
                     self.JLOMBBAKBME.push(is.read_message()?);
                 },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for HFGMOFBDAON {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HFGMOFBDAON {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.JLOMBBAKBME {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HFGMOFBDAON {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HFGMOFBDAON.proto\x1a\x11IFAHFGFFPEF.proto\"W\n\x0bHFGMOFBDAON\x12\
-    .\n\x0bJLOMBBAKBME\x18\x02\x20\x03(\x0b2\x0c.IFAHFGFFPEFR\x0bJLOMBBAKBME\
-    \x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    .\n\x0bJLOMBBAKBME\x18\x04\x20\x03(\x0b2\x0c.IFAHFGFFPEFR\x0bJLOMBBAKBME\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

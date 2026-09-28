@@ -79,16 +79,16 @@ impl ::protobuf::Message for ODHJEDHKHOD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.BIMFEAHDMIK)?;
                 },
-                24 => {
+                8 => {
                     self.BIMFEAHDMIK.push(is.read_uint32()?);
                 },
-                42 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.NMMCOBBKKHA)?;
                 },
-                40 => {
+                72 => {
                     self.NMMCOBBKKHA.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for ODHJEDHKHOD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BIMFEAHDMIK);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NMMCOBBKKHA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BIMFEAHDMIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NMMCOBBKKHA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.BIMFEAHDMIK)?;
-        os.write_repeated_packed_uint32(5, &self.NMMCOBBKKHA)?;
+        os.write_repeated_packed_uint32(1, &self.BIMFEAHDMIK)?;
+        os.write_repeated_packed_uint32(9, &self.NMMCOBBKKHA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for ODHJEDHKHOD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ODHJEDHKHOD.proto\"Q\n\x0bODHJEDHKHOD\x12\x20\n\x0bBIMFEAHDMIK\x18\
-    \x03\x20\x03(\rR\x0bBIMFEAHDMIK\x12\x20\n\x0bNMMCOBBKKHA\x18\x05\x20\x03\
-    (\rR\x0bNMMCOBBKKHAb\x06proto3\
+    \x01\x20\x03(\rR\x0bBIMFEAHDMIK\x12\x20\n\x0bNMMCOBBKKHA\x18\t\x20\x03(\
+    \rR\x0bNMMCOBBKKHAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

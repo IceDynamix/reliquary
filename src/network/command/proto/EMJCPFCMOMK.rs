@@ -72,10 +72,10 @@ impl ::protobuf::Message for EMJCPFCMOMK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.CPIKEIGHMGB)?;
                 },
-                64 => {
+                96 => {
                     self.CPIKEIGHMGB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for EMJCPFCMOMK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.CPIKEIGHMGB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.CPIKEIGHMGB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.CPIKEIGHMGB)?;
+        os.write_repeated_packed_uint32(12, &self.CPIKEIGHMGB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for EMJCPFCMOMK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EMJCPFCMOMK.proto\"/\n\x0bEMJCPFCMOMK\x12\x20\n\x0bCPIKEIGHMGB\x18\
-    \x08\x20\x03(\rR\x0bCPIKEIGHMGBb\x06proto3\
+    \x0c\x20\x03(\rR\x0bCPIKEIGHMGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

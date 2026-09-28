@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.DDNKHDIKAEL = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetFriendRecommendListInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DDNKHDIKAEL != false {
-            os.write_bool(5, self.DDNKHDIKAEL)?;
+            os.write_bool(4, self.DDNKHDIKAEL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendListInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetFriendRecommendListInfoCsReq.proto\"C\n\x1fGetFriendRecommendListI\
-    nfoCsReq\x12\x20\n\x0bDDNKHDIKAEL\x18\x05\x20\x01(\x08R\x0bDDNKHDIKAELb\
+    nfoCsReq\x12\x20\n\x0bDDNKHDIKAEL\x18\x04\x20\x01(\x08R\x0bDDNKHDIKAELb\
     \x06proto3\
 ";
 

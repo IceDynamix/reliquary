@@ -30,10 +30,10 @@ pub struct TravelBrochureSelectMessageScRsp {
     // message fields
     // @@protoc_insertion_point(field:TravelBrochureSelectMessageScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TravelBrochureSelectMessageScRsp.EDLLNJIEFBO)
-    pub EDLLNJIEFBO: ::protobuf::MessageField<super::KJMKOJEHMII::KJMKOJEHMII>,
     // @@protoc_insertion_point(field:TravelBrochureSelectMessageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TravelBrochureSelectMessageScRsp.EDLLNJIEFBO)
+    pub EDLLNJIEFBO: ::protobuf::MessageField<super::KJMKOJEHMII::KJMKOJEHMII>,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureSelectMessageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TravelBrochureSelectMessageScRsp {
             |m: &TravelBrochureSelectMessageScRsp| { &m.reward },
             |m: &mut TravelBrochureSelectMessageScRsp| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJMKOJEHMII::KJMKOJEHMII>(
-            "EDLLNJIEFBO",
-            |m: &TravelBrochureSelectMessageScRsp| { &m.EDLLNJIEFBO },
-            |m: &mut TravelBrochureSelectMessageScRsp| { &mut m.EDLLNJIEFBO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TravelBrochureSelectMessageScRsp| { &m.retcode },
             |m: &mut TravelBrochureSelectMessageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJMKOJEHMII::KJMKOJEHMII>(
+            "EDLLNJIEFBO",
+            |m: &TravelBrochureSelectMessageScRsp| { &m.EDLLNJIEFBO },
+            |m: &mut TravelBrochureSelectMessageScRsp| { &mut m.EDLLNJIEFBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureSelectMessageScRsp>(
             "TravelBrochureSelectMessageScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TravelBrochureSelectMessageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDLLNJIEFBO)?;
-                },
-                120 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDLLNJIEFBO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for TravelBrochureSelectMessageScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         if let Some(v) = self.EDLLNJIEFBO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for TravelBrochureSelectMessageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.EDLLNJIEFBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
+        }
+        if let Some(v) = self.EDLLNJIEFBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for TravelBrochureSelectMessageScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.EDLLNJIEFBO.clear();
         self.retcode = 0;
+        self.EDLLNJIEFBO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureSelectMessageScRsp {
         static instance: TravelBrochureSelectMessageScRsp = TravelBrochureSelectMessageScRsp {
             reward: ::protobuf::MessageField::none(),
-            EDLLNJIEFBO: ::protobuf::MessageField::none(),
             retcode: 0,
+            EDLLNJIEFBO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSelectMessageScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TravelBrochureSelectMessageScRsp.proto\x1a\x0eItemList.proto\x1a\x11K\
     JMKOJEHMII.proto\"\x8f\x01\n\x20TravelBrochureSelectMessageScRsp\x12!\n\
-    \x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bEDLLNJIEF\
-    BO\x18\r\x20\x01(\x0b2\x0c.KJMKOJEHMIIR\x0bEDLLNJIEFBO\x12\x18\n\x07retc\
-    ode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x06reward\x18\x06\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retc\
+    ode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bEDLLNJIEFBO\x18\x0f\x20\x01(\
+    \x0b2\x0c.KJMKOJEHMIIR\x0bEDLLNJIEFBOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JKLCLLAFHOC {
     // message fields
-    // @@protoc_insertion_point(field:JKLCLLAFHOC.MKMLKGOOAMK)
-    pub MKMLKGOOAMK: ::protobuf::MessageField<super::JECIOGKPHFN::JECIOGKPHFN>,
     // @@protoc_insertion_point(field:JKLCLLAFHOC.MGACFLNJLCK)
     pub MGACFLNJLCK: ::protobuf::MessageField<super::DFKMNLIJMFB::DFKMNLIJMFB>,
+    // @@protoc_insertion_point(field:JKLCLLAFHOC.MKMLKGOOAMK)
+    pub MKMLKGOOAMK: ::protobuf::MessageField<super::JECIOGKPHFN::JECIOGKPHFN>,
     // special fields
     // @@protoc_insertion_point(special_field:JKLCLLAFHOC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl JKLCLLAFHOC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JECIOGKPHFN::JECIOGKPHFN>(
-            "MKMLKGOOAMK",
-            |m: &JKLCLLAFHOC| { &m.MKMLKGOOAMK },
-            |m: &mut JKLCLLAFHOC| { &mut m.MKMLKGOOAMK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFKMNLIJMFB::DFKMNLIJMFB>(
             "MGACFLNJLCK",
             |m: &JKLCLLAFHOC| { &m.MGACFLNJLCK },
             |m: &mut JKLCLLAFHOC| { &mut m.MGACFLNJLCK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JECIOGKPHFN::JECIOGKPHFN>(
+            "MKMLKGOOAMK",
+            |m: &JKLCLLAFHOC| { &m.MKMLKGOOAMK },
+            |m: &mut JKLCLLAFHOC| { &mut m.MKMLKGOOAMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JKLCLLAFHOC>(
             "JKLCLLAFHOC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for JKLCLLAFHOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKMLKGOOAMK)?;
-                },
-                122 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MGACFLNJLCK)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKMLKGOOAMK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for JKLCLLAFHOC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MKMLKGOOAMK.as_ref() {
+        if let Some(v) = self.MGACFLNJLCK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.MGACFLNJLCK.as_ref() {
+        if let Some(v) = self.MKMLKGOOAMK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for JKLCLLAFHOC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MKMLKGOOAMK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
         if let Some(v) = self.MGACFLNJLCK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.MKMLKGOOAMK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for JKLCLLAFHOC {
     }
 
     fn clear(&mut self) {
-        self.MKMLKGOOAMK.clear();
         self.MGACFLNJLCK.clear();
+        self.MKMLKGOOAMK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JKLCLLAFHOC {
         static instance: JKLCLLAFHOC = JKLCLLAFHOC {
-            MKMLKGOOAMK: ::protobuf::MessageField::none(),
             MGACFLNJLCK: ::protobuf::MessageField::none(),
+            MKMLKGOOAMK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for JKLCLLAFHOC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKLCLLAFHOC.proto\x1a\x11DFKMNLIJMFB.proto\x1a\x11JECIOGKPHFN.prot\
-    o\"m\n\x0bJKLCLLAFHOC\x12.\n\x0bMKMLKGOOAMK\x18\t\x20\x01(\x0b2\x0c.JECI\
-    OGKPHFNR\x0bMKMLKGOOAMK\x12.\n\x0bMGACFLNJLCK\x18\x0f\x20\x01(\x0b2\x0c.\
-    DFKMNLIJMFBR\x0bMGACFLNJLCKb\x06proto3\
+    o\"m\n\x0bJKLCLLAFHOC\x12.\n\x0bMGACFLNJLCK\x18\x06\x20\x01(\x0b2\x0c.DF\
+    KMNLIJMFBR\x0bMGACFLNJLCK\x12.\n\x0bMKMLKGOOAMK\x18\x0b\x20\x01(\x0b2\
+    \x0c.JECIOGKPHFNR\x0bMKMLKGOOAMKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

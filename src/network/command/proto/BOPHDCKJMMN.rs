@@ -79,10 +79,10 @@ impl ::protobuf::Message for BOPHDCKJMMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.CKKDAEMFDPA = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
                     self.APAKCBFMCAB = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BOPHDCKJMMN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CKKDAEMFDPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.CKKDAEMFDPA);
+            my_size += ::protobuf::rt::uint32_size(3, self.CKKDAEMFDPA);
         }
         if self.APAKCBFMCAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.APAKCBFMCAB);
+            my_size += ::protobuf::rt::uint32_size(4, self.APAKCBFMCAB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BOPHDCKJMMN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CKKDAEMFDPA != 0 {
-            os.write_uint32(4, self.CKKDAEMFDPA)?;
+            os.write_uint32(3, self.CKKDAEMFDPA)?;
         }
         if self.APAKCBFMCAB != 0 {
-            os.write_uint32(11, self.APAKCBFMCAB)?;
+            os.write_uint32(4, self.APAKCBFMCAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for BOPHDCKJMMN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BOPHDCKJMMN.proto\"Q\n\x0bBOPHDCKJMMN\x12\x20\n\x0bCKKDAEMFDPA\x18\
-    \x04\x20\x01(\rR\x0bCKKDAEMFDPA\x12\x20\n\x0bAPAKCBFMCAB\x18\x0b\x20\x01\
+    \x03\x20\x01(\rR\x0bCKKDAEMFDPA\x12\x20\n\x0bAPAKCBFMCAB\x18\x04\x20\x01\
     (\rR\x0bAPAKCBFMCABb\x06proto3\
 ";
 

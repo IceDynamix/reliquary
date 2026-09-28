@@ -31,6 +31,10 @@ pub enum MFPDAKOIOED {
     MFPDAKOIOED_KCOCMMIACMB = 0,
     // @@protoc_insertion_point(enum_value:MFPDAKOIOED.MFPDAKOIOED_FLMPFOFPAGB)
     MFPDAKOIOED_FLMPFOFPAGB = 1,
+    // @@protoc_insertion_point(enum_value:MFPDAKOIOED.MFPDAKOIOED_BJAFPGEDNEM)
+    MFPDAKOIOED_BJAFPGEDNEM = 2,
+    // @@protoc_insertion_point(enum_value:MFPDAKOIOED.MFPDAKOIOED_LKKNMKEIBEJ)
+    MFPDAKOIOED_LKKNMKEIBEJ = 3,
 }
 
 impl ::protobuf::Enum for MFPDAKOIOED {
@@ -44,6 +48,8 @@ impl ::protobuf::Enum for MFPDAKOIOED {
         match value {
             0 => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_KCOCMMIACMB),
             1 => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_FLMPFOFPAGB),
+            2 => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_BJAFPGEDNEM),
+            3 => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_LKKNMKEIBEJ),
             _ => ::std::option::Option::None
         }
     }
@@ -52,6 +58,8 @@ impl ::protobuf::Enum for MFPDAKOIOED {
         match str {
             "MFPDAKOIOED_KCOCMMIACMB" => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_KCOCMMIACMB),
             "MFPDAKOIOED_FLMPFOFPAGB" => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_FLMPFOFPAGB),
+            "MFPDAKOIOED_BJAFPGEDNEM" => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_BJAFPGEDNEM),
+            "MFPDAKOIOED_LKKNMKEIBEJ" => ::std::option::Option::Some(MFPDAKOIOED::MFPDAKOIOED_LKKNMKEIBEJ),
             _ => ::std::option::Option::None
         }
     }
@@ -59,6 +67,8 @@ impl ::protobuf::Enum for MFPDAKOIOED {
     const VALUES: &'static [MFPDAKOIOED] = &[
         MFPDAKOIOED::MFPDAKOIOED_KCOCMMIACMB,
         MFPDAKOIOED::MFPDAKOIOED_FLMPFOFPAGB,
+        MFPDAKOIOED::MFPDAKOIOED_BJAFPGEDNEM,
+        MFPDAKOIOED::MFPDAKOIOED_LKKNMKEIBEJ,
     ];
 }
 
@@ -87,8 +97,10 @@ impl MFPDAKOIOED {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MFPDAKOIOED.proto*G\n\x0bMFPDAKOIOED\x12\x1b\n\x17MFPDAKOIOED_KCOC\
-    MMIACMB\x10\0\x12\x1b\n\x17MFPDAKOIOED_FLMPFOFPAGB\x10\x01b\x06proto3\
+    \n\x11MFPDAKOIOED.proto*\x81\x01\n\x0bMFPDAKOIOED\x12\x1b\n\x17MFPDAKOIO\
+    ED_KCOCMMIACMB\x10\0\x12\x1b\n\x17MFPDAKOIOED_FLMPFOFPAGB\x10\x01\x12\
+    \x1b\n\x17MFPDAKOIOED_BJAFPGEDNEM\x10\x02\x12\x1b\n\x17MFPDAKOIOED_LKKNM\
+    KEIBEJ\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

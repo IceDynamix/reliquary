@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     self.IOOIIKICFHE.push(is.read_message()?);
                 },
-                64 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.IOOIIKICFHE {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendDungeonInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFriendDungeonInfoScRsp.proto\x1a\x11OCBPHIBFFAC.proto\"e\n\x19G\
-    etFriendDungeonInfoScRsp\x12.\n\x0bIOOIIKICFHE\x18\x02\x20\x03(\x0b2\x0c\
-    .OCBPHIBFFACR\x0bIOOIIKICFHE\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    etFriendDungeonInfoScRsp\x12.\n\x0bIOOIIKICFHE\x18\n\x20\x03(\x0b2\x0c.O\
+    CBPHIBFFACR\x0bIOOIIKICFHE\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07ret\
+    codeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

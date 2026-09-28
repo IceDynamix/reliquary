@@ -72,7 +72,7 @@ impl ::protobuf::Message for TakeChallengeCumulativeRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for TakeChallengeCumulativeRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TakeChallengeCumulativeRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.group_id != 0 {
-            os.write_uint32(1, self.group_id)?;
+            os.write_uint32(9, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengeCumulativeRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TakeChallengeCumulativeRewardCsReq.proto\"?\n\"TakeChallengeCumulativ\
-    eRewardCsReq\x12\x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupIdb\x06pr\
-    oto3\
+    eRewardCsReq\x12\x19\n\x08group_id\x18\t\x20\x01(\rR\x07groupIdb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

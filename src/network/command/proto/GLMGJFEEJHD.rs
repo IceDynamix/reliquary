@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GLMGJFEEJHD {
     // message fields
-    // @@protoc_insertion_point(field:GLMGJFEEJHD.config_id)
-    pub config_id: u32,
-    // @@protoc_insertion_point(field:GLMGJFEEJHD.AFDNFCBCFBF)
-    pub AFDNFCBCFBF: u32,
     // @@protoc_insertion_point(field:GLMGJFEEJHD.BAJHKGJPFED)
     pub BAJHKGJPFED: u32,
+    // @@protoc_insertion_point(field:GLMGJFEEJHD.AFDNFCBCFBF)
+    pub AFDNFCBCFBF: u32,
+    // @@protoc_insertion_point(field:GLMGJFEEJHD.config_id)
+    pub config_id: u32,
     // message oneof groups
     pub JMPNIHHAMPH: ::std::option::Option<glmgjfeejhd::JMPNIHHAMPH>,
     // special fields
@@ -52,56 +52,7 @@ impl GLMGJFEEJHD {
         ::std::default::Default::default()
     }
 
-    // .KDPGIMOOLON AGLMEDOBMAL = 7;
-
-    pub fn AGLMEDOBMAL(&self) -> &super::KDPGIMOOLON::KDPGIMOOLON {
-        match self.JMPNIHHAMPH {
-            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v)) => v,
-            _ => <super::KDPGIMOOLON::KDPGIMOOLON as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_AGLMEDOBMAL(&mut self) {
-        self.JMPNIHHAMPH = ::std::option::Option::None;
-    }
-
-    pub fn has_AGLMEDOBMAL(&self) -> bool {
-        match self.JMPNIHHAMPH {
-            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AGLMEDOBMAL(&mut self, v: super::KDPGIMOOLON::KDPGIMOOLON) {
-        self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_AGLMEDOBMAL(&mut self) -> &mut super::KDPGIMOOLON::KDPGIMOOLON {
-        if let ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(_)) = self.JMPNIHHAMPH {
-        } else {
-            self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(super::KDPGIMOOLON::KDPGIMOOLON::new()));
-        }
-        match self.JMPNIHHAMPH {
-            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_AGLMEDOBMAL(&mut self) -> super::KDPGIMOOLON::KDPGIMOOLON {
-        if self.has_AGLMEDOBMAL() {
-            match self.JMPNIHHAMPH.take() {
-                ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::KDPGIMOOLON::KDPGIMOOLON::new()
-        }
-    }
-
-    // .JGKNADEDNHB LOCHFJEECKL = 2;
+    // .JGKNADEDNHB LOCHFJEECKL = 3;
 
     pub fn LOCHFJEECKL(&self) -> &super::JGKNADEDNHB::JGKNADEDNHB {
         match self.JMPNIHHAMPH {
@@ -150,7 +101,56 @@ impl GLMGJFEEJHD {
         }
     }
 
-    // .LOEBAOEFMDC COKLIDDAEOH = 12;
+    // .KDPGIMOOLON AGLMEDOBMAL = 6;
+
+    pub fn AGLMEDOBMAL(&self) -> &super::KDPGIMOOLON::KDPGIMOOLON {
+        match self.JMPNIHHAMPH {
+            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v)) => v,
+            _ => <super::KDPGIMOOLON::KDPGIMOOLON as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AGLMEDOBMAL(&mut self) {
+        self.JMPNIHHAMPH = ::std::option::Option::None;
+    }
+
+    pub fn has_AGLMEDOBMAL(&self) -> bool {
+        match self.JMPNIHHAMPH {
+            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AGLMEDOBMAL(&mut self, v: super::KDPGIMOOLON::KDPGIMOOLON) {
+        self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AGLMEDOBMAL(&mut self) -> &mut super::KDPGIMOOLON::KDPGIMOOLON {
+        if let ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(_)) = self.JMPNIHHAMPH {
+        } else {
+            self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(super::KDPGIMOOLON::KDPGIMOOLON::new()));
+        }
+        match self.JMPNIHHAMPH {
+            ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AGLMEDOBMAL(&mut self) -> super::KDPGIMOOLON::KDPGIMOOLON {
+        if self.has_AGLMEDOBMAL() {
+            match self.JMPNIHHAMPH.take() {
+                ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KDPGIMOOLON::KDPGIMOOLON::new()
+        }
+    }
+
+    // .LOEBAOEFMDC COKLIDDAEOH = 10;
 
     pub fn COKLIDDAEOH(&self) -> &super::LOEBAOEFMDC::LOEBAOEFMDC {
         match self.JMPNIHHAMPH {
@@ -203,9 +203,9 @@ impl GLMGJFEEJHD {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &GLMGJFEEJHD| { &m.config_id },
-            |m: &mut GLMGJFEEJHD| { &mut m.config_id },
+            "BAJHKGJPFED",
+            |m: &GLMGJFEEJHD| { &m.BAJHKGJPFED },
+            |m: &mut GLMGJFEEJHD| { &mut m.BAJHKGJPFED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFDNFCBCFBF",
@@ -213,16 +213,9 @@ impl GLMGJFEEJHD {
             |m: &mut GLMGJFEEJHD| { &mut m.AFDNFCBCFBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BAJHKGJPFED",
-            |m: &GLMGJFEEJHD| { &m.BAJHKGJPFED },
-            |m: &mut GLMGJFEEJHD| { &mut m.BAJHKGJPFED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KDPGIMOOLON::KDPGIMOOLON>(
-            "AGLMEDOBMAL",
-            GLMGJFEEJHD::has_AGLMEDOBMAL,
-            GLMGJFEEJHD::AGLMEDOBMAL,
-            GLMGJFEEJHD::mut_AGLMEDOBMAL,
-            GLMGJFEEJHD::set_AGLMEDOBMAL,
+            "config_id",
+            |m: &GLMGJFEEJHD| { &m.config_id },
+            |m: &mut GLMGJFEEJHD| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JGKNADEDNHB::JGKNADEDNHB>(
             "LOCHFJEECKL",
@@ -230,6 +223,13 @@ impl GLMGJFEEJHD {
             GLMGJFEEJHD::LOCHFJEECKL,
             GLMGJFEEJHD::mut_LOCHFJEECKL,
             GLMGJFEEJHD::set_LOCHFJEECKL,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KDPGIMOOLON::KDPGIMOOLON>(
+            "AGLMEDOBMAL",
+            GLMGJFEEJHD::has_AGLMEDOBMAL,
+            GLMGJFEEJHD::AGLMEDOBMAL,
+            GLMGJFEEJHD::mut_AGLMEDOBMAL,
+            GLMGJFEEJHD::set_AGLMEDOBMAL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LOEBAOEFMDC::LOEBAOEFMDC>(
             "COKLIDDAEOH",
@@ -257,22 +257,22 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                104 => {
-                    self.AFDNFCBCFBF = is.read_uint32()?;
-                },
-                112 => {
+                8 => {
                     self.BAJHKGJPFED = is.read_uint32()?;
                 },
-                58 => {
-                    self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(is.read_message()?));
+                40 => {
+                    self.AFDNFCBCFBF = is.read_uint32()?;
                 },
-                18 => {
+                120 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                26 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(is.read_message()?));
                 },
-                98 => {
+                50 => {
+                    self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(is.read_message()?));
+                },
+                82 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(glmgjfeejhd::JMPNIHHAMPH::COKLIDDAEOH(is.read_message()?));
                 },
                 tag => {
@@ -287,22 +287,22 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.config_id);
+        if self.BAJHKGJPFED != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BAJHKGJPFED);
         }
         if self.AFDNFCBCFBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFDNFCBCFBF);
+            my_size += ::protobuf::rt::uint32_size(5, self.AFDNFCBCFBF);
         }
-        if self.BAJHKGJPFED != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BAJHKGJPFED);
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.config_id);
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
-                &glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
+                &glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(ref v) => {
+                &glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -318,25 +318,25 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.config_id != 0 {
-            os.write_uint32(10, self.config_id)?;
+        if self.BAJHKGJPFED != 0 {
+            os.write_uint32(1, self.BAJHKGJPFED)?;
         }
         if self.AFDNFCBCFBF != 0 {
-            os.write_uint32(13, self.AFDNFCBCFBF)?;
+            os.write_uint32(5, self.AFDNFCBCFBF)?;
         }
-        if self.BAJHKGJPFED != 0 {
-            os.write_uint32(14, self.BAJHKGJPFED)?;
+        if self.config_id != 0 {
+            os.write_uint32(15, self.config_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
-                &glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-                },
                 &glmgjfeejhd::JMPNIHHAMPH::LOCHFJEECKL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &glmgjfeejhd::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
                 &glmgjfeejhd::JMPNIHHAMPH::COKLIDDAEOH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -357,9 +357,9 @@ impl ::protobuf::Message for GLMGJFEEJHD {
     }
 
     fn clear(&mut self) {
-        self.config_id = 0;
-        self.AFDNFCBCFBF = 0;
         self.BAJHKGJPFED = 0;
+        self.AFDNFCBCFBF = 0;
+        self.config_id = 0;
         self.JMPNIHHAMPH = ::std::option::Option::None;
         self.JMPNIHHAMPH = ::std::option::Option::None;
         self.JMPNIHHAMPH = ::std::option::Option::None;
@@ -368,9 +368,9 @@ impl ::protobuf::Message for GLMGJFEEJHD {
 
     fn default_instance() -> &'static GLMGJFEEJHD {
         static instance: GLMGJFEEJHD = GLMGJFEEJHD {
-            config_id: 0,
-            AFDNFCBCFBF: 0,
             BAJHKGJPFED: 0,
+            AFDNFCBCFBF: 0,
+            config_id: 0,
             JMPNIHHAMPH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -402,10 +402,10 @@ pub mod glmgjfeejhd {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:GLMGJFEEJHD.JMPNIHHAMPH)
     pub enum JMPNIHHAMPH {
-        // @@protoc_insertion_point(oneof_field:GLMGJFEEJHD.AGLMEDOBMAL)
-        AGLMEDOBMAL(super::super::KDPGIMOOLON::KDPGIMOOLON),
         // @@protoc_insertion_point(oneof_field:GLMGJFEEJHD.LOCHFJEECKL)
         LOCHFJEECKL(super::super::JGKNADEDNHB::JGKNADEDNHB),
+        // @@protoc_insertion_point(oneof_field:GLMGJFEEJHD.AGLMEDOBMAL)
+        AGLMEDOBMAL(super::super::KDPGIMOOLON::KDPGIMOOLON),
         // @@protoc_insertion_point(oneof_field:GLMGJFEEJHD.COKLIDDAEOH)
         COKLIDDAEOH(super::super::LOEBAOEFMDC::LOEBAOEFMDC),
     }
@@ -429,13 +429,13 @@ pub mod glmgjfeejhd {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLMGJFEEJHD.proto\x1a\x11JGKNADEDNHB.proto\x1a\x11KDPGIMOOLON.prot\
-    o\x1a\x11LOEBAOEFMDC.proto\"\x93\x02\n\x0bGLMGJFEEJHD\x12\x1b\n\tconfig_\
-    id\x18\n\x20\x01(\rR\x08configId\x12\x20\n\x0bAFDNFCBCFBF\x18\r\x20\x01(\
-    \rR\x0bAFDNFCBCFBF\x12\x20\n\x0bBAJHKGJPFED\x18\x0e\x20\x01(\rR\x0bBAJHK\
-    GJPFED\x120\n\x0bAGLMEDOBMAL\x18\x07\x20\x01(\x0b2\x0c.KDPGIMOOLONH\0R\
-    \x0bAGLMEDOBMAL\x120\n\x0bLOCHFJEECKL\x18\x02\x20\x01(\x0b2\x0c.JGKNADED\
-    NHBH\0R\x0bLOCHFJEECKL\x120\n\x0bCOKLIDDAEOH\x18\x0c\x20\x01(\x0b2\x0c.L\
-    OEBAOEFMDCH\0R\x0bCOKLIDDAEOHB\r\n\x0bJMPNIHHAMPHb\x06proto3\
+    o\x1a\x11LOEBAOEFMDC.proto\"\x93\x02\n\x0bGLMGJFEEJHD\x12\x20\n\x0bBAJHK\
+    GJPFED\x18\x01\x20\x01(\rR\x0bBAJHKGJPFED\x12\x20\n\x0bAFDNFCBCFBF\x18\
+    \x05\x20\x01(\rR\x0bAFDNFCBCFBF\x12\x1b\n\tconfig_id\x18\x0f\x20\x01(\rR\
+    \x08configId\x120\n\x0bLOCHFJEECKL\x18\x03\x20\x01(\x0b2\x0c.JGKNADEDNHB\
+    H\0R\x0bLOCHFJEECKL\x120\n\x0bAGLMEDOBMAL\x18\x06\x20\x01(\x0b2\x0c.KDPG\
+    IMOOLONH\0R\x0bAGLMEDOBMAL\x120\n\x0bCOKLIDDAEOH\x18\n\x20\x01(\x0b2\x0c\
+    .LOEBAOEFMDCH\0R\x0bCOKLIDDAEOHB\r\n\x0bJMPNIHHAMPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

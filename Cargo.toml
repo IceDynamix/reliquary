@@ -15,6 +15,7 @@ network = ["kcp", "base64", "etherparse", "rand_mt", "protobuf"]
 resource = ["reliquary-proc-macro", "twox-hash", "serde", "serde_json"]
 proto-limited = []
 proto-rqa = []
+proto-auth = []
 
 [dependencies]
 base64 = { version = "0.22", optional = true }

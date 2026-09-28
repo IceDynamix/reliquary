@@ -79,13 +79,13 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.PGFFGKDOPGM)?;
                 },
-                64 => {
+                24 => {
                     self.PGFFGKDOPGM.push(is.read_uint32()?);
                 },
-                112 => {
+                32 => {
                     self.CMEKNAJONPH = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PGFFGKDOPGM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.PGFFGKDOPGM);
         if self.CMEKNAJONPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CMEKNAJONPH);
+            my_size += ::protobuf::rt::uint32_size(4, self.CMEKNAJONPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for GCFGCHAMNOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.PGFFGKDOPGM)?;
+        os.write_repeated_packed_uint32(3, &self.PGFFGKDOPGM)?;
         if self.CMEKNAJONPH != 0 {
-            os.write_uint32(14, self.CMEKNAJONPH)?;
+            os.write_uint32(4, self.CMEKNAJONPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for GCFGCHAMNOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GCFGCHAMNOL.proto\"Q\n\x0bGCFGCHAMNOL\x12\x20\n\x0bPGFFGKDOPGM\x18\
-    \x08\x20\x03(\rR\x0bPGFFGKDOPGM\x12\x20\n\x0bCMEKNAJONPH\x18\x0e\x20\x01\
+    \x03\x20\x03(\rR\x0bPGFFGKDOPGM\x12\x20\n\x0bCMEKNAJONPH\x18\x04\x20\x01\
     (\rR\x0bCMEKNAJONPHb\x06proto3\
 ";
 

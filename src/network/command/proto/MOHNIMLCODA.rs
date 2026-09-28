@@ -41,8 +41,8 @@ pub enum MOHNIMLCODA {
     MOHNIMLCODA_EGCGFGDILBC = 5,
     // @@protoc_insertion_point(enum_value:MOHNIMLCODA.MOHNIMLCODA_KEEIBDBEJLH)
     MOHNIMLCODA_KEEIBDBEJLH = 6,
-    // @@protoc_insertion_point(enum_value:MOHNIMLCODA.MOHNIMLCODA_level)
-    MOHNIMLCODA_level = 7,
+    // @@protoc_insertion_point(enum_value:MOHNIMLCODA.MOHNIMLCODA_AAGKEBFHLMC)
+    MOHNIMLCODA_AAGKEBFHLMC = 7,
     // @@protoc_insertion_point(enum_value:MOHNIMLCODA.MOHNIMLCODA_DIMIFCJPHME)
     MOHNIMLCODA_DIMIFCJPHME = 8,
     // @@protoc_insertion_point(enum_value:MOHNIMLCODA.MOHNIMLCODA_PEEDCBADBHJ)
@@ -65,7 +65,7 @@ impl ::protobuf::Enum for MOHNIMLCODA {
             4 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_MAIBAOAOGID),
             5 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_EGCGFGDILBC),
             6 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_KEEIBDBEJLH),
-            7 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_level),
+            7 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_AAGKEBFHLMC),
             8 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_DIMIFCJPHME),
             9 => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_PEEDCBADBHJ),
             _ => ::std::option::Option::None
@@ -81,7 +81,7 @@ impl ::protobuf::Enum for MOHNIMLCODA {
             "MOHNIMLCODA_MAIBAOAOGID" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_MAIBAOAOGID),
             "MOHNIMLCODA_EGCGFGDILBC" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_EGCGFGDILBC),
             "MOHNIMLCODA_KEEIBDBEJLH" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_KEEIBDBEJLH),
-            "MOHNIMLCODA_level" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_level),
+            "MOHNIMLCODA_AAGKEBFHLMC" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_AAGKEBFHLMC),
             "MOHNIMLCODA_DIMIFCJPHME" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_DIMIFCJPHME),
             "MOHNIMLCODA_PEEDCBADBHJ" => ::std::option::Option::Some(MOHNIMLCODA::MOHNIMLCODA_PEEDCBADBHJ),
             _ => ::std::option::Option::None
@@ -96,7 +96,7 @@ impl ::protobuf::Enum for MOHNIMLCODA {
         MOHNIMLCODA::MOHNIMLCODA_MAIBAOAOGID,
         MOHNIMLCODA::MOHNIMLCODA_EGCGFGDILBC,
         MOHNIMLCODA::MOHNIMLCODA_KEEIBDBEJLH,
-        MOHNIMLCODA::MOHNIMLCODA_level,
+        MOHNIMLCODA::MOHNIMLCODA_AAGKEBFHLMC,
         MOHNIMLCODA::MOHNIMLCODA_DIMIFCJPHME,
         MOHNIMLCODA::MOHNIMLCODA_PEEDCBADBHJ,
     ];
@@ -127,14 +127,14 @@ impl MOHNIMLCODA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MOHNIMLCODA.proto*\xa9\x02\n\x0bMOHNIMLCODA\x12\x1b\n\x17MOHNIMLCO\
+    \n\x11MOHNIMLCODA.proto*\xaf\x02\n\x0bMOHNIMLCODA\x12\x1b\n\x17MOHNIMLCO\
     DA_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17MOHNIMLCODA_DMJKCOJLFCL\x10\x01\x12\
     \x1b\n\x17MOHNIMLCODA_ANEIGHKMJKB\x10\x02\x12\x1b\n\x17MOHNIMLCODA_MGMPD\
     HKJFIM\x10\x03\x12\x1b\n\x17MOHNIMLCODA_MAIBAOAOGID\x10\x04\x12\x1b\n\
     \x17MOHNIMLCODA_EGCGFGDILBC\x10\x05\x12\x1b\n\x17MOHNIMLCODA_KEEIBDBEJLH\
-    \x10\x06\x12\x15\n\x11MOHNIMLCODA_level\x10\x07\x12\x1b\n\x17MOHNIMLCODA\
-    _DIMIFCJPHME\x10\x08\x12\x1b\n\x17MOHNIMLCODA_PEEDCBADBHJ\x10\tb\x06prot\
-    o3\
+    \x10\x06\x12\x1b\n\x17MOHNIMLCODA_AAGKEBFHLMC\x10\x07\x12\x1b\n\x17MOHNI\
+    MLCODA_DIMIFCJPHME\x10\x08\x12\x1b\n\x17MOHNIMLCODA_PEEDCBADBHJ\x10\tb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

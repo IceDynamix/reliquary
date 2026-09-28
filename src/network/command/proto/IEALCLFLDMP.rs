@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IEALCLFLDMP {
     // message fields
-    // @@protoc_insertion_point(field:IEALCLFLDMP.COOMKNFDNLH)
-    pub COOMKNFDNLH: ::std::vec::Vec<super::GOCNLGIDBLM::GOCNLGIDBLM>,
-    // @@protoc_insertion_point(field:IEALCLFLDMP.JAJNHOKCAHH)
-    pub JAJNHOKCAHH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IEALCLFLDMP.LLBJAJNCEAL)
     pub LLBJAJNCEAL: ::protobuf::EnumOrUnknown<super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType>,
+    // @@protoc_insertion_point(field:IEALCLFLDMP.JAJNHOKCAHH)
+    pub JAJNHOKCAHH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:IEALCLFLDMP.COOMKNFDNLH)
+    pub COOMKNFDNLH: ::std::vec::Vec<super::GOCNLGIDBLM::GOCNLGIDBLM>,
     // special fields
     // @@protoc_insertion_point(special_field:IEALCLFLDMP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl IEALCLFLDMP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "COOMKNFDNLH",
-            |m: &IEALCLFLDMP| { &m.COOMKNFDNLH },
-            |m: &mut IEALCLFLDMP| { &mut m.COOMKNFDNLH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLBJAJNCEAL",
+            |m: &IEALCLFLDMP| { &m.LLBJAJNCEAL },
+            |m: &mut IEALCLFLDMP| { &mut m.LLBJAJNCEAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JAJNHOKCAHH",
             |m: &IEALCLFLDMP| { &m.JAJNHOKCAHH },
             |m: &mut IEALCLFLDMP| { &mut m.JAJNHOKCAHH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLBJAJNCEAL",
-            |m: &IEALCLFLDMP| { &m.LLBJAJNCEAL },
-            |m: &mut IEALCLFLDMP| { &mut m.LLBJAJNCEAL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "COOMKNFDNLH",
+            |m: &IEALCLFLDMP| { &m.COOMKNFDNLH },
+            |m: &mut IEALCLFLDMP| { &mut m.COOMKNFDNLH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IEALCLFLDMP>(
             "IEALCLFLDMP",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for IEALCLFLDMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.COOMKNFDNLH.push(is.read_message()?);
+                8 => {
+                    self.LLBJAJNCEAL = is.read_enum_or_unknown()?;
                 },
-                66 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.JAJNHOKCAHH)?;
                 },
-                64 => {
+                56 => {
                     self.JAJNHOKCAHH.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.LLBJAJNCEAL = is.read_enum_or_unknown()?;
+                74 => {
+                    self.COOMKNFDNLH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for IEALCLFLDMP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LLBJAJNCEAL != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None) {
+            my_size += ::protobuf::rt::int32_size(1, self.LLBJAJNCEAL.value());
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JAJNHOKCAHH);
         for value in &self.COOMKNFDNLH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JAJNHOKCAHH);
-        if self.LLBJAJNCEAL != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None) {
-            my_size += ::protobuf::rt::int32_size(14, self.LLBJAJNCEAL.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.COOMKNFDNLH {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
-        os.write_repeated_packed_uint32(8, &self.JAJNHOKCAHH)?;
         if self.LLBJAJNCEAL != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.LLBJAJNCEAL))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.LLBJAJNCEAL))?;
         }
+        os.write_repeated_packed_uint32(7, &self.JAJNHOKCAHH)?;
+        for v in &self.COOMKNFDNLH {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for IEALCLFLDMP {
     }
 
     fn clear(&mut self) {
-        self.COOMKNFDNLH.clear();
-        self.JAJNHOKCAHH.clear();
         self.LLBJAJNCEAL = ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_None);
+        self.JAJNHOKCAHH.clear();
+        self.COOMKNFDNLH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IEALCLFLDMP {
         static instance: IEALCLFLDMP = IEALCLFLDMP {
-            COOMKNFDNLH: ::std::vec::Vec::new(),
-            JAJNHOKCAHH: ::std::vec::Vec::new(),
             LLBJAJNCEAL: ::protobuf::EnumOrUnknown::from_i32(0),
+            JAJNHOKCAHH: ::std::vec::Vec::new(),
+            COOMKNFDNLH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for IEALCLFLDMP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IEALCLFLDMP.proto\x1a\x11GOCNLGIDBLM.proto\x1a!SwordTrainingDailyP\
-    haseType.proto\"\x9f\x01\n\x0bIEALCLFLDMP\x12.\n\x0bCOOMKNFDNLH\x18\x03\
-    \x20\x03(\x0b2\x0c.GOCNLGIDBLMR\x0bCOOMKNFDNLH\x12\x20\n\x0bJAJNHOKCAHH\
-    \x18\x08\x20\x03(\rR\x0bJAJNHOKCAHH\x12>\n\x0bLLBJAJNCEAL\x18\x0e\x20\
-    \x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bLLBJAJNCEALb\x06proto3\
+    haseType.proto\"\x9f\x01\n\x0bIEALCLFLDMP\x12>\n\x0bLLBJAJNCEAL\x18\x01\
+    \x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bLLBJAJNCEAL\x12\x20\n\
+    \x0bJAJNHOKCAHH\x18\x07\x20\x03(\rR\x0bJAJNHOKCAHH\x12.\n\x0bCOOMKNFDNLH\
+    \x18\t\x20\x03(\x0b2\x0c.GOCNLGIDBLMR\x0bCOOMKNFDNLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

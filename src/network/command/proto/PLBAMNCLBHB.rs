@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PLBAMNCLBHB {
     // message fields
-    // @@protoc_insertion_point(field:PLBAMNCLBHB.MALDOMHPILM)
-    pub MALDOMHPILM: ::std::vec::Vec<super::DNLKMHLAPHC::DNLKMHLAPHC>,
     // @@protoc_insertion_point(field:PLBAMNCLBHB.NBMNPGKEIIH)
     pub NBMNPGKEIIH: u32,
+    // @@protoc_insertion_point(field:PLBAMNCLBHB.MALDOMHPILM)
+    pub MALDOMHPILM: ::std::vec::Vec<super::DNLKMHLAPHC::DNLKMHLAPHC>,
     // @@protoc_insertion_point(field:PLBAMNCLBHB.HIKMFMJCNKP)
     pub HIKMFMJCNKP: bool,
     // @@protoc_insertion_point(field:PLBAMNCLBHB.HIILDALHIMD)
@@ -55,15 +55,15 @@ impl PLBAMNCLBHB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MALDOMHPILM",
-            |m: &PLBAMNCLBHB| { &m.MALDOMHPILM },
-            |m: &mut PLBAMNCLBHB| { &mut m.MALDOMHPILM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NBMNPGKEIIH",
             |m: &PLBAMNCLBHB| { &m.NBMNPGKEIIH },
             |m: &mut PLBAMNCLBHB| { &mut m.NBMNPGKEIIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MALDOMHPILM",
+            |m: &PLBAMNCLBHB| { &m.MALDOMHPILM },
+            |m: &mut PLBAMNCLBHB| { &mut m.MALDOMHPILM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HIKMFMJCNKP",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.MALDOMHPILM.push(is.read_message()?);
-                },
-                80 => {
+                40 => {
                     self.NBMNPGKEIIH = is.read_uint32()?;
                 },
-                88 => {
+                90 => {
+                    self.MALDOMHPILM.push(is.read_message()?);
+                },
+                112 => {
                     self.HIKMFMJCNKP = is.read_bool()?;
                 },
-                106 => {
+                122 => {
                     self.HIILDALHIMD.push(is.read_message()?);
                 },
                 tag => {
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NBMNPGKEIIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NBMNPGKEIIH);
+        }
         for value in &self.MALDOMHPILM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NBMNPGKEIIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NBMNPGKEIIH);
-        }
         if self.HIKMFMJCNKP != false {
             my_size += 1 + 1;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MALDOMHPILM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.NBMNPGKEIIH != 0 {
-            os.write_uint32(10, self.NBMNPGKEIIH)?;
+            os.write_uint32(5, self.NBMNPGKEIIH)?;
         }
+        for v in &self.MALDOMHPILM {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         if self.HIKMFMJCNKP != false {
-            os.write_bool(11, self.HIKMFMJCNKP)?;
+            os.write_bool(14, self.HIKMFMJCNKP)?;
         }
         for v in &self.HIILDALHIMD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for PLBAMNCLBHB {
     }
 
     fn clear(&mut self) {
-        self.MALDOMHPILM.clear();
         self.NBMNPGKEIIH = 0;
+        self.MALDOMHPILM.clear();
         self.HIKMFMJCNKP = false;
         self.HIILDALHIMD.clear();
         self.special_fields.clear();
@@ -175,8 +175,8 @@ impl ::protobuf::Message for PLBAMNCLBHB {
 
     fn default_instance() -> &'static PLBAMNCLBHB {
         static instance: PLBAMNCLBHB = PLBAMNCLBHB {
-            MALDOMHPILM: ::std::vec::Vec::new(),
             NBMNPGKEIIH: 0,
+            MALDOMHPILM: ::std::vec::Vec::new(),
             HIKMFMJCNKP: false,
             HIILDALHIMD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for PLBAMNCLBHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLBAMNCLBHB.proto\x1a\x11DNLKMHLAPHC.proto\x1a\x11MMBBHFNJILI.prot\
-    o\"\xb1\x01\n\x0bPLBAMNCLBHB\x12.\n\x0bMALDOMHPILM\x18\x01\x20\x03(\x0b2\
-    \x0c.DNLKMHLAPHCR\x0bMALDOMHPILM\x12\x20\n\x0bNBMNPGKEIIH\x18\n\x20\x01(\
-    \rR\x0bNBMNPGKEIIH\x12\x20\n\x0bHIKMFMJCNKP\x18\x0b\x20\x01(\x08R\x0bHIK\
-    MFMJCNKP\x12.\n\x0bHIILDALHIMD\x18\r\x20\x03(\x0b2\x0c.MMBBHFNJILIR\x0bH\
-    IILDALHIMDb\x06proto3\
+    o\"\xb1\x01\n\x0bPLBAMNCLBHB\x12\x20\n\x0bNBMNPGKEIIH\x18\x05\x20\x01(\r\
+    R\x0bNBMNPGKEIIH\x12.\n\x0bMALDOMHPILM\x18\x0b\x20\x03(\x0b2\x0c.DNLKMHL\
+    APHCR\x0bMALDOMHPILM\x12\x20\n\x0bHIKMFMJCNKP\x18\x0e\x20\x01(\x08R\x0bH\
+    IKMFMJCNKP\x12.\n\x0bHIILDALHIMD\x18\x0f\x20\x03(\x0b2\x0c.MMBBHFNJILIR\
+    \x0bHIILDALHIMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

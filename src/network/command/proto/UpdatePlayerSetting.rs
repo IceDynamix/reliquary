@@ -45,7 +45,7 @@ impl UpdatePlayerSetting {
         ::std::default::Default::default()
     }
 
-    // bool AACOEHCFNDB = 3;
+    // bool AACOEHCFNDB = 2;
 
     pub fn AACOEHCFNDB(&self) -> bool {
         match self.BKAGLMFNKKA {
@@ -70,107 +70,7 @@ impl UpdatePlayerSetting {
         self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::AACOEHCFNDB(v))
     }
 
-    // bool DGCNHMIHFJB = 10;
-
-    pub fn DGCNHMIHFJB(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_DGCNHMIHFJB(&mut self) {
-        self.BKAGLMFNKKA = ::std::option::Option::None;
-    }
-
-    pub fn has_DGCNHMIHFJB(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DGCNHMIHFJB(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v))
-    }
-
-    // bool FDHEPCKLCAM = 5;
-
-    pub fn FDHEPCKLCAM(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_FDHEPCKLCAM(&mut self) {
-        self.BKAGLMFNKKA = ::std::option::Option::None;
-    }
-
-    pub fn has_FDHEPCKLCAM(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FDHEPCKLCAM(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v))
-    }
-
-    // bool DCJECFMMIBC = 4;
-
-    pub fn DCJECFMMIBC(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_DCJECFMMIBC(&mut self) {
-        self.BKAGLMFNKKA = ::std::option::Option::None;
-    }
-
-    pub fn has_DCJECFMMIBC(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DCJECFMMIBC(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v))
-    }
-
-    // bool IOJEAOCOBBF = 7;
-
-    pub fn IOJEAOCOBBF(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_IOJEAOCOBBF(&mut self) {
-        self.BKAGLMFNKKA = ::std::option::Option::None;
-    }
-
-    pub fn has_IOJEAOCOBBF(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IOJEAOCOBBF(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v))
-    }
-
-    // bool PFBHGAHAFMD = 1;
+    // bool PFBHGAHAFMD = 3;
 
     pub fn PFBHGAHAFMD(&self) -> bool {
         match self.BKAGLMFNKKA {
@@ -195,32 +95,57 @@ impl UpdatePlayerSetting {
         self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::PFBHGAHAFMD(v))
     }
 
-    // bool GNFDDPEMMFN = 9;
+    // bool DCJECFMMIBC = 7;
 
-    pub fn GNFDDPEMMFN(&self) -> bool {
+    pub fn DCJECFMMIBC(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v)) => v,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_GNFDDPEMMFN(&mut self) {
+    pub fn clear_DCJECFMMIBC(&mut self) {
         self.BKAGLMFNKKA = ::std::option::Option::None;
     }
 
-    pub fn has_GNFDDPEMMFN(&self) -> bool {
+    pub fn has_DCJECFMMIBC(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(..)) => true,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_GNFDDPEMMFN(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v))
+    pub fn set_DCJECFMMIBC(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v))
     }
 
-    // bool MAKOLELFLFH = 14;
+    // bool FDHEPCKLCAM = 8;
+
+    pub fn FDHEPCKLCAM(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_FDHEPCKLCAM(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_FDHEPCKLCAM(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FDHEPCKLCAM(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v))
+    }
+
+    // bool MAKOLELFLFH = 9;
 
     pub fn MAKOLELFLFH(&self) -> bool {
         match self.BKAGLMFNKKA {
@@ -245,32 +170,7 @@ impl UpdatePlayerSetting {
         self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::MAKOLELFLFH(v))
     }
 
-    // bool NJAKOMDMFJD = 15;
-
-    pub fn NJAKOMDMFJD(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v)) => v,
-            _ => false,
-        }
-    }
-
-    pub fn clear_NJAKOMDMFJD(&mut self) {
-        self.BKAGLMFNKKA = ::std::option::Option::None;
-    }
-
-    pub fn has_NJAKOMDMFJD(&self) -> bool {
-        match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NJAKOMDMFJD(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v))
-    }
-
-    // .PNOLLIAKGDB OJPAODIHAJE = 11;
+    // .PNOLLIAKGDB OJPAODIHAJE = 10;
 
     pub fn OJPAODIHAJE(&self) -> &super::PNOLLIAKGDB::PNOLLIAKGDB {
         match self.BKAGLMFNKKA {
@@ -319,57 +219,107 @@ impl UpdatePlayerSetting {
         }
     }
 
-    // bool BOMGNMDOGLM = 1075;
+    // bool IOJEAOCOBBF = 11;
 
-    pub fn BOMGNMDOGLM(&self) -> bool {
+    pub fn IOJEAOCOBBF(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v)) => v,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_BOMGNMDOGLM(&mut self) {
+    pub fn clear_IOJEAOCOBBF(&mut self) {
         self.BKAGLMFNKKA = ::std::option::Option::None;
     }
 
-    pub fn has_BOMGNMDOGLM(&self) -> bool {
+    pub fn has_IOJEAOCOBBF(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(..)) => true,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BOMGNMDOGLM(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v))
+    pub fn set_IOJEAOCOBBF(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v))
     }
 
-    // bool BBEEBBIDJHE = 173;
+    // bool GNFDDPEMMFN = 13;
 
-    pub fn BBEEBBIDJHE(&self) -> bool {
+    pub fn GNFDDPEMMFN(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v)) => v,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_BBEEBBIDJHE(&mut self) {
+    pub fn clear_GNFDDPEMMFN(&mut self) {
         self.BKAGLMFNKKA = ::std::option::Option::None;
     }
 
-    pub fn has_BBEEBBIDJHE(&self) -> bool {
+    pub fn has_GNFDDPEMMFN(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(..)) => true,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BBEEBBIDJHE(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v))
+    pub fn set_GNFDDPEMMFN(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v))
     }
 
-    // bool HGPFFGKNPFB = 363;
+    // bool NJAKOMDMFJD = 14;
+
+    pub fn NJAKOMDMFJD(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_NJAKOMDMFJD(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_NJAKOMDMFJD(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NJAKOMDMFJD(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v))
+    }
+
+    // bool DGCNHMIHFJB = 15;
+
+    pub fn DGCNHMIHFJB(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_DGCNHMIHFJB(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_DGCNHMIHFJB(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DGCNHMIHFJB(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v))
+    }
+
+    // bool HGPFFGKNPFB = 380;
 
     pub fn HGPFFGKNPFB(&self) -> bool {
         match self.BKAGLMFNKKA {
@@ -394,32 +344,106 @@ impl UpdatePlayerSetting {
         self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::HGPFFGKNPFB(v))
     }
 
-    // bool LNGHIJGFDKP = 117;
+    // bool BOMGNMDOGLM = 497;
 
-    pub fn LNGHIJGFDKP(&self) -> bool {
+    pub fn BOMGNMDOGLM(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v)) => v,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_LNGHIJGFDKP(&mut self) {
+    pub fn clear_BOMGNMDOGLM(&mut self) {
         self.BKAGLMFNKKA = ::std::option::Option::None;
     }
 
-    pub fn has_LNGHIJGFDKP(&self) -> bool {
+    pub fn has_BOMGNMDOGLM(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(..)) => true,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LNGHIJGFDKP(&mut self, v: bool) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v))
+    pub fn set_BOMGNMDOGLM(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v))
     }
 
-    // bool GOKFNGFFMOB = 816;
+    // bool BBEEBBIDJHE = 555;
+
+    pub fn BBEEBBIDJHE(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_BBEEBBIDJHE(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_BBEEBBIDJHE(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BBEEBBIDJHE(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v))
+    }
+
+    // .APAMFCKFHLL EGLOIFDIDPK = 670;
+
+    pub fn EGLOIFDIDPK(&self) -> &super::APAMFCKFHLL::APAMFCKFHLL {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref v)) => v,
+            _ => <super::APAMFCKFHLL::APAMFCKFHLL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EGLOIFDIDPK(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_EGLOIFDIDPK(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EGLOIFDIDPK(&mut self, v: super::APAMFCKFHLL::APAMFCKFHLL) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EGLOIFDIDPK(&mut self) -> &mut super::APAMFCKFHLL::APAMFCKFHLL {
+        if let ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(_)) = self.BKAGLMFNKKA {
+        } else {
+            self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(super::APAMFCKFHLL::APAMFCKFHLL::new()));
+        }
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EGLOIFDIDPK(&mut self) -> super::APAMFCKFHLL::APAMFCKFHLL {
+        if self.has_EGLOIFDIDPK() {
+            match self.BKAGLMFNKKA.take() {
+                ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::APAMFCKFHLL::APAMFCKFHLL::new()
+        }
+    }
+
+    // bool GOKFNGFFMOB = 800;
 
     pub fn GOKFNGFFMOB(&self) -> bool {
         match self.BKAGLMFNKKA {
@@ -444,7 +468,32 @@ impl UpdatePlayerSetting {
         self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(v))
     }
 
-    // .JPGACKPLGCD CMFCOOEEECB = 568;
+    // bool LNGHIJGFDKP = 1448;
+
+    pub fn LNGHIJGFDKP(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v)) => v,
+            _ => false,
+        }
+    }
+
+    pub fn clear_LNGHIJGFDKP(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
+    }
+
+    pub fn has_LNGHIJGFDKP(&self) -> bool {
+        match self.BKAGLMFNKKA {
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LNGHIJGFDKP(&mut self, v: bool) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v))
+    }
+
+    // .JPGACKPLGCD CMFCOOEEECB = 1660;
 
     pub fn CMFCOOEEECB(&self) -> &super::JPGACKPLGCD::JPGACKPLGCD {
         match self.BKAGLMFNKKA {
@@ -493,57 +542,57 @@ impl UpdatePlayerSetting {
         }
     }
 
-    // .KVP EGLOIFDIDPK = 1757;
+    // .LJFJOGEEGPJ ANKIDJJINEI = 1808;
 
-    pub fn EGLOIFDIDPK(&self) -> &super::KVP::KVP {
+    pub fn ANKIDJJINEI(&self) -> &super::LJFJOGEEGPJ::LJFJOGEEGPJ {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref v)) => v,
-            _ => <super::KVP::KVP as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(ref v)) => v,
+            _ => <super::LJFJOGEEGPJ::LJFJOGEEGPJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_EGLOIFDIDPK(&mut self) {
+    pub fn clear_ANKIDJJINEI(&mut self) {
         self.BKAGLMFNKKA = ::std::option::Option::None;
     }
 
-    pub fn has_EGLOIFDIDPK(&self) -> bool {
+    pub fn has_ANKIDJJINEI(&self) -> bool {
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(..)) => true,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_EGLOIFDIDPK(&mut self, v: super::KVP::KVP) {
-        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(v))
+    pub fn set_ANKIDJJINEI(&mut self, v: super::LJFJOGEEGPJ::LJFJOGEEGPJ) {
+        self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EGLOIFDIDPK(&mut self) -> &mut super::KVP::KVP {
-        if let ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(_)) = self.BKAGLMFNKKA {
+    pub fn mut_ANKIDJJINEI(&mut self) -> &mut super::LJFJOGEEGPJ::LJFJOGEEGPJ {
+        if let ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(_)) = self.BKAGLMFNKKA {
         } else {
-            self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(super::KVP::KVP::new()));
+            self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(super::LJFJOGEEGPJ::LJFJOGEEGPJ::new()));
         }
         match self.BKAGLMFNKKA {
-            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref mut v)) => v,
+            ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_EGLOIFDIDPK(&mut self) -> super::KVP::KVP {
-        if self.has_EGLOIFDIDPK() {
+    pub fn take_ANKIDJJINEI(&mut self) -> super::LJFJOGEEGPJ::LJFJOGEEGPJ {
+        if self.has_ANKIDJJINEI() {
             match self.BKAGLMFNKKA.take() {
-                ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(v)) => v,
+                ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KVP::KVP::new()
+            super::LJFJOGEEGPJ::LJFJOGEEGPJ::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(17);
+        let mut fields = ::std::vec::Vec::with_capacity(18);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "AACOEHCFNDB",
@@ -552,16 +601,10 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::set_AACOEHCFNDB,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "DGCNHMIHFJB",
-            UpdatePlayerSetting::has_DGCNHMIHFJB,
-            UpdatePlayerSetting::DGCNHMIHFJB,
-            UpdatePlayerSetting::set_DGCNHMIHFJB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FDHEPCKLCAM",
-            UpdatePlayerSetting::has_FDHEPCKLCAM,
-            UpdatePlayerSetting::FDHEPCKLCAM,
-            UpdatePlayerSetting::set_FDHEPCKLCAM,
+            "PFBHGAHAFMD",
+            UpdatePlayerSetting::has_PFBHGAHAFMD,
+            UpdatePlayerSetting::PFBHGAHAFMD,
+            UpdatePlayerSetting::set_PFBHGAHAFMD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "DCJECFMMIBC",
@@ -570,16 +613,29 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::set_DCJECFMMIBC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "FDHEPCKLCAM",
+            UpdatePlayerSetting::has_FDHEPCKLCAM,
+            UpdatePlayerSetting::FDHEPCKLCAM,
+            UpdatePlayerSetting::set_FDHEPCKLCAM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "MAKOLELFLFH",
+            UpdatePlayerSetting::has_MAKOLELFLFH,
+            UpdatePlayerSetting::MAKOLELFLFH,
+            UpdatePlayerSetting::set_MAKOLELFLFH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PNOLLIAKGDB::PNOLLIAKGDB>(
+            "OJPAODIHAJE",
+            UpdatePlayerSetting::has_OJPAODIHAJE,
+            UpdatePlayerSetting::OJPAODIHAJE,
+            UpdatePlayerSetting::mut_OJPAODIHAJE,
+            UpdatePlayerSetting::set_OJPAODIHAJE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "IOJEAOCOBBF",
             UpdatePlayerSetting::has_IOJEAOCOBBF,
             UpdatePlayerSetting::IOJEAOCOBBF,
             UpdatePlayerSetting::set_IOJEAOCOBBF,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PFBHGAHAFMD",
-            UpdatePlayerSetting::has_PFBHGAHAFMD,
-            UpdatePlayerSetting::PFBHGAHAFMD,
-            UpdatePlayerSetting::set_PFBHGAHAFMD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "GNFDDPEMMFN",
@@ -588,23 +644,22 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::set_GNFDDPEMMFN,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MAKOLELFLFH",
-            UpdatePlayerSetting::has_MAKOLELFLFH,
-            UpdatePlayerSetting::MAKOLELFLFH,
-            UpdatePlayerSetting::set_MAKOLELFLFH,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "NJAKOMDMFJD",
             UpdatePlayerSetting::has_NJAKOMDMFJD,
             UpdatePlayerSetting::NJAKOMDMFJD,
             UpdatePlayerSetting::set_NJAKOMDMFJD,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PNOLLIAKGDB::PNOLLIAKGDB>(
-            "OJPAODIHAJE",
-            UpdatePlayerSetting::has_OJPAODIHAJE,
-            UpdatePlayerSetting::OJPAODIHAJE,
-            UpdatePlayerSetting::mut_OJPAODIHAJE,
-            UpdatePlayerSetting::set_OJPAODIHAJE,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "DGCNHMIHFJB",
+            UpdatePlayerSetting::has_DGCNHMIHFJB,
+            UpdatePlayerSetting::DGCNHMIHFJB,
+            UpdatePlayerSetting::set_DGCNHMIHFJB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "HGPFFGKNPFB",
+            UpdatePlayerSetting::has_HGPFFGKNPFB,
+            UpdatePlayerSetting::HGPFFGKNPFB,
+            UpdatePlayerSetting::set_HGPFFGKNPFB,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "BOMGNMDOGLM",
@@ -618,23 +673,24 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::BBEEBBIDJHE,
             UpdatePlayerSetting::set_BBEEBBIDJHE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "HGPFFGKNPFB",
-            UpdatePlayerSetting::has_HGPFFGKNPFB,
-            UpdatePlayerSetting::HGPFFGKNPFB,
-            UpdatePlayerSetting::set_HGPFFGKNPFB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "LNGHIJGFDKP",
-            UpdatePlayerSetting::has_LNGHIJGFDKP,
-            UpdatePlayerSetting::LNGHIJGFDKP,
-            UpdatePlayerSetting::set_LNGHIJGFDKP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APAMFCKFHLL::APAMFCKFHLL>(
+            "EGLOIFDIDPK",
+            UpdatePlayerSetting::has_EGLOIFDIDPK,
+            UpdatePlayerSetting::EGLOIFDIDPK,
+            UpdatePlayerSetting::mut_EGLOIFDIDPK,
+            UpdatePlayerSetting::set_EGLOIFDIDPK,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "GOKFNGFFMOB",
             UpdatePlayerSetting::has_GOKFNGFFMOB,
             UpdatePlayerSetting::GOKFNGFFMOB,
             UpdatePlayerSetting::set_GOKFNGFFMOB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "LNGHIJGFDKP",
+            UpdatePlayerSetting::has_LNGHIJGFDKP,
+            UpdatePlayerSetting::LNGHIJGFDKP,
+            UpdatePlayerSetting::set_LNGHIJGFDKP,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JPGACKPLGCD::JPGACKPLGCD>(
             "CMFCOOEEECB",
@@ -643,12 +699,12 @@ impl UpdatePlayerSetting {
             UpdatePlayerSetting::mut_CMFCOOEEECB,
             UpdatePlayerSetting::set_CMFCOOEEECB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KVP::KVP>(
-            "EGLOIFDIDPK",
-            UpdatePlayerSetting::has_EGLOIFDIDPK,
-            UpdatePlayerSetting::EGLOIFDIDPK,
-            UpdatePlayerSetting::mut_EGLOIFDIDPK,
-            UpdatePlayerSetting::set_EGLOIFDIDPK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJFJOGEEGPJ::LJFJOGEEGPJ>(
+            "ANKIDJJINEI",
+            UpdatePlayerSetting::has_ANKIDJJINEI,
+            UpdatePlayerSetting::ANKIDJJINEI,
+            UpdatePlayerSetting::mut_ANKIDJJINEI,
+            UpdatePlayerSetting::set_ANKIDJJINEI,
         ));
         oneofs.push(update_player_setting::BKAGLMFNKKA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayerSetting>(
@@ -669,56 +725,59 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::AACOEHCFNDB(is.read_bool()?));
                 },
-                80 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(is.read_bool()?));
-                },
-                40 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(is.read_bool()?));
-                },
-                32 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(is.read_bool()?));
-                },
-                56 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(is.read_bool()?));
-                },
-                8 => {
+                24 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::PFBHGAHAFMD(is.read_bool()?));
                 },
+                56 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(is.read_bool()?));
+                },
+                64 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(is.read_bool()?));
+                },
                 72 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::MAKOLELFLFH(is.read_bool()?));
+                },
+                82 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::OJPAODIHAJE(is.read_message()?));
+                },
+                88 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(is.read_bool()?));
+                },
+                104 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(is.read_bool()?));
                 },
                 112 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::MAKOLELFLFH(is.read_bool()?));
-                },
-                120 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(is.read_bool()?));
                 },
-                90 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::OJPAODIHAJE(is.read_message()?));
+                120 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(is.read_bool()?));
                 },
-                8600 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(is.read_bool()?));
-                },
-                1384 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(is.read_bool()?));
-                },
-                2904 => {
+                3040 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::HGPFFGKNPFB(is.read_bool()?));
                 },
-                936 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(is.read_bool()?));
+                3976 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(is.read_bool()?));
                 },
-                6528 => {
+                4440 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(is.read_bool()?));
+                },
+                5362 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(is.read_message()?));
+                },
+                6400 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(is.read_bool()?));
                 },
-                4546 => {
+                11584 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(is.read_bool()?));
+                },
+                13282 => {
                     self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::CMFCOOEEECB(is.read_message()?));
                 },
-                14058 => {
-                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(is.read_message()?));
+                14466 => {
+                    self.BKAGLMFNKKA = ::std::option::Option::Some(update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -737,33 +796,36 @@ impl ::protobuf::Message for UpdatePlayerSetting {
                 &update_player_setting::BKAGLMFNKKA::AACOEHCFNDB(v) => {
                     my_size += 1 + 1;
                 },
-                &update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v) => {
+                &update_player_setting::BKAGLMFNKKA::PFBHGAHAFMD(v) => {
                     my_size += 1 + 1;
                 },
                 &update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v) => {
                     my_size += 1 + 1;
                 },
-                &update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::BKAGLMFNKKA::PFBHGAHAFMD(v) => {
-                    my_size += 1 + 1;
-                },
-                &update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v) => {
+                &update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v) => {
                     my_size += 1 + 1;
                 },
                 &update_player_setting::BKAGLMFNKKA::MAKOLELFLFH(v) => {
                     my_size += 1 + 1;
                 },
-                &update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v) => {
-                    my_size += 1 + 1;
-                },
                 &update_player_setting::BKAGLMFNKKA::OJPAODIHAJE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v) => {
+                    my_size += 1 + 1;
+                },
+                &update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v) => {
+                    my_size += 1 + 1;
+                },
+                &update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v) => {
+                    my_size += 1 + 1;
+                },
+                &update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v) => {
+                    my_size += 1 + 1;
+                },
+                &update_player_setting::BKAGLMFNKKA::HGPFFGKNPFB(v) => {
+                    my_size += 2 + 1;
                 },
                 &update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v) => {
                     my_size += 2 + 1;
@@ -771,20 +833,21 @@ impl ::protobuf::Message for UpdatePlayerSetting {
                 &update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v) => {
                     my_size += 2 + 1;
                 },
-                &update_player_setting::BKAGLMFNKKA::HGPFFGKNPFB(v) => {
+                &update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(v) => {
                     my_size += 2 + 1;
                 },
                 &update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v) => {
-                    my_size += 2 + 1;
-                },
-                &update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(v) => {
                     my_size += 2 + 1;
                 },
                 &update_player_setting::BKAGLMFNKKA::CMFCOOEEECB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref v) => {
+                &update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -799,55 +862,58 @@ impl ::protobuf::Message for UpdatePlayerSetting {
         if let ::std::option::Option::Some(ref v) = self.BKAGLMFNKKA {
             match v {
                 &update_player_setting::BKAGLMFNKKA::AACOEHCFNDB(v) => {
-                    os.write_bool(3, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v) => {
-                    os.write_bool(10, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v) => {
-                    os.write_bool(5, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v) => {
-                    os.write_bool(4, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v) => {
-                    os.write_bool(7, v)?;
+                    os.write_bool(2, v)?;
                 },
                 &update_player_setting::BKAGLMFNKKA::PFBHGAHAFMD(v) => {
-                    os.write_bool(1, v)?;
+                    os.write_bool(3, v)?;
                 },
-                &update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v) => {
-                    os.write_bool(9, v)?;
+                &update_player_setting::BKAGLMFNKKA::DCJECFMMIBC(v) => {
+                    os.write_bool(7, v)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::FDHEPCKLCAM(v) => {
+                    os.write_bool(8, v)?;
                 },
                 &update_player_setting::BKAGLMFNKKA::MAKOLELFLFH(v) => {
-                    os.write_bool(14, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v) => {
-                    os.write_bool(15, v)?;
+                    os.write_bool(9, v)?;
                 },
                 &update_player_setting::BKAGLMFNKKA::OJPAODIHAJE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v) => {
-                    os.write_bool(1075, v)?;
+                &update_player_setting::BKAGLMFNKKA::IOJEAOCOBBF(v) => {
+                    os.write_bool(11, v)?;
                 },
-                &update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v) => {
-                    os.write_bool(173, v)?;
+                &update_player_setting::BKAGLMFNKKA::GNFDDPEMMFN(v) => {
+                    os.write_bool(13, v)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::NJAKOMDMFJD(v) => {
+                    os.write_bool(14, v)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::DGCNHMIHFJB(v) => {
+                    os.write_bool(15, v)?;
                 },
                 &update_player_setting::BKAGLMFNKKA::HGPFFGKNPFB(v) => {
-                    os.write_bool(363, v)?;
+                    os.write_bool(380, v)?;
                 },
-                &update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v) => {
-                    os.write_bool(117, v)?;
+                &update_player_setting::BKAGLMFNKKA::BOMGNMDOGLM(v) => {
+                    os.write_bool(497, v)?;
                 },
-                &update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(v) => {
-                    os.write_bool(816, v)?;
-                },
-                &update_player_setting::BKAGLMFNKKA::CMFCOOEEECB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(568, v, os)?;
+                &update_player_setting::BKAGLMFNKKA::BBEEBBIDJHE(v) => {
+                    os.write_bool(555, v)?;
                 },
                 &update_player_setting::BKAGLMFNKKA::EGLOIFDIDPK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1757, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(670, v, os)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::GOKFNGFFMOB(v) => {
+                    os.write_bool(800, v)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::LNGHIJGFDKP(v) => {
+                    os.write_bool(1448, v)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::CMFCOOEEECB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1660, v, os)?;
+                },
+                &update_player_setting::BKAGLMFNKKA::ANKIDJJINEI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1808, v, os)?;
                 },
             };
         }
@@ -868,6 +934,7 @@ impl ::protobuf::Message for UpdatePlayerSetting {
     }
 
     fn clear(&mut self) {
+        self.BKAGLMFNKKA = ::std::option::Option::None;
         self.BKAGLMFNKKA = ::std::option::Option::None;
         self.BKAGLMFNKKA = ::std::option::Option::None;
         self.BKAGLMFNKKA = ::std::option::Option::None;
@@ -923,38 +990,40 @@ pub mod update_player_setting {
     pub enum BKAGLMFNKKA {
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.AACOEHCFNDB)
         AACOEHCFNDB(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.DGCNHMIHFJB)
-        DGCNHMIHFJB(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.FDHEPCKLCAM)
-        FDHEPCKLCAM(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.DCJECFMMIBC)
-        DCJECFMMIBC(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.IOJEAOCOBBF)
-        IOJEAOCOBBF(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.PFBHGAHAFMD)
         PFBHGAHAFMD(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.GNFDDPEMMFN)
-        GNFDDPEMMFN(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.DCJECFMMIBC)
+        DCJECFMMIBC(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.FDHEPCKLCAM)
+        FDHEPCKLCAM(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.MAKOLELFLFH)
         MAKOLELFLFH(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.NJAKOMDMFJD)
-        NJAKOMDMFJD(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.OJPAODIHAJE)
         OJPAODIHAJE(super::super::PNOLLIAKGDB::PNOLLIAKGDB),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.IOJEAOCOBBF)
+        IOJEAOCOBBF(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.GNFDDPEMMFN)
+        GNFDDPEMMFN(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.NJAKOMDMFJD)
+        NJAKOMDMFJD(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.DGCNHMIHFJB)
+        DGCNHMIHFJB(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.HGPFFGKNPFB)
+        HGPFFGKNPFB(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.BOMGNMDOGLM)
         BOMGNMDOGLM(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.BBEEBBIDJHE)
         BBEEBBIDJHE(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.HGPFFGKNPFB)
-        HGPFFGKNPFB(bool),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.LNGHIJGFDKP)
-        LNGHIJGFDKP(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.EGLOIFDIDPK)
+        EGLOIFDIDPK(super::super::APAMFCKFHLL::APAMFCKFHLL),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.GOKFNGFFMOB)
         GOKFNGFFMOB(bool),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.LNGHIJGFDKP)
+        LNGHIJGFDKP(bool),
         // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.CMFCOOEEECB)
         CMFCOOEEECB(super::super::JPGACKPLGCD::JPGACKPLGCD),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.EGLOIFDIDPK)
-        EGLOIFDIDPK(super::super::KVP::KVP),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayerSetting.ANKIDJJINEI)
+        ANKIDJJINEI(super::super::LJFJOGEEGPJ::LJFJOGEEGPJ),
     }
 
     impl ::protobuf::Oneof for BKAGLMFNKKA {
@@ -975,24 +1044,26 @@ pub mod update_player_setting {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19UpdatePlayerSetting.proto\x1a\x11JPGACKPLGCD.proto\x1a\tKVP.proto\
-    \x1a\x11PNOLLIAKGDB.proto\"\xb0\x05\n\x13UpdatePlayerSetting\x12\"\n\x0b\
-    AACOEHCFNDB\x18\x03\x20\x01(\x08H\0R\x0bAACOEHCFNDB\x12\"\n\x0bDGCNHMIHF\
-    JB\x18\n\x20\x01(\x08H\0R\x0bDGCNHMIHFJB\x12\"\n\x0bFDHEPCKLCAM\x18\x05\
-    \x20\x01(\x08H\0R\x0bFDHEPCKLCAM\x12\"\n\x0bDCJECFMMIBC\x18\x04\x20\x01(\
-    \x08H\0R\x0bDCJECFMMIBC\x12\"\n\x0bIOJEAOCOBBF\x18\x07\x20\x01(\x08H\0R\
-    \x0bIOJEAOCOBBF\x12\"\n\x0bPFBHGAHAFMD\x18\x01\x20\x01(\x08H\0R\x0bPFBHG\
-    AHAFMD\x12\"\n\x0bGNFDDPEMMFN\x18\t\x20\x01(\x08H\0R\x0bGNFDDPEMMFN\x12\
-    \"\n\x0bMAKOLELFLFH\x18\x0e\x20\x01(\x08H\0R\x0bMAKOLELFLFH\x12\"\n\x0bN\
-    JAKOMDMFJD\x18\x0f\x20\x01(\x08H\0R\x0bNJAKOMDMFJD\x120\n\x0bOJPAODIHAJE\
-    \x18\x0b\x20\x01(\x0b2\x0c.PNOLLIAKGDBH\0R\x0bOJPAODIHAJE\x12#\n\x0bBOMG\
-    NMDOGLM\x18\xb3\x08\x20\x01(\x08H\0R\x0bBOMGNMDOGLM\x12#\n\x0bBBEEBBIDJH\
-    E\x18\xad\x01\x20\x01(\x08H\0R\x0bBBEEBBIDJHE\x12#\n\x0bHGPFFGKNPFB\x18\
-    \xeb\x02\x20\x01(\x08H\0R\x0bHGPFFGKNPFB\x12\"\n\x0bLNGHIJGFDKP\x18u\x20\
-    \x01(\x08H\0R\x0bLNGHIJGFDKP\x12#\n\x0bGOKFNGFFMOB\x18\xb0\x06\x20\x01(\
-    \x08H\0R\x0bGOKFNGFFMOB\x121\n\x0bCMFCOOEEECB\x18\xb8\x04\x20\x01(\x0b2\
-    \x0c.JPGACKPLGCDH\0R\x0bCMFCOOEEECB\x12)\n\x0bEGLOIFDIDPK\x18\xdd\r\x20\
-    \x01(\x0b2\x04.KVPH\0R\x0bEGLOIFDIDPKB\r\n\x0bBKAGLMFNKKAb\x06proto3\
+    \n\x19UpdatePlayerSetting.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11JPGACKPL\
+    GCD.proto\x1a\x11LJFJOGEEGPJ.proto\x1a\x11PNOLLIAKGDB.proto\"\xec\x05\n\
+    \x13UpdatePlayerSetting\x12\"\n\x0bAACOEHCFNDB\x18\x02\x20\x01(\x08H\0R\
+    \x0bAACOEHCFNDB\x12\"\n\x0bPFBHGAHAFMD\x18\x03\x20\x01(\x08H\0R\x0bPFBHG\
+    AHAFMD\x12\"\n\x0bDCJECFMMIBC\x18\x07\x20\x01(\x08H\0R\x0bDCJECFMMIBC\
+    \x12\"\n\x0bFDHEPCKLCAM\x18\x08\x20\x01(\x08H\0R\x0bFDHEPCKLCAM\x12\"\n\
+    \x0bMAKOLELFLFH\x18\t\x20\x01(\x08H\0R\x0bMAKOLELFLFH\x120\n\x0bOJPAODIH\
+    AJE\x18\n\x20\x01(\x0b2\x0c.PNOLLIAKGDBH\0R\x0bOJPAODIHAJE\x12\"\n\x0bIO\
+    JEAOCOBBF\x18\x0b\x20\x01(\x08H\0R\x0bIOJEAOCOBBF\x12\"\n\x0bGNFDDPEMMFN\
+    \x18\r\x20\x01(\x08H\0R\x0bGNFDDPEMMFN\x12\"\n\x0bNJAKOMDMFJD\x18\x0e\
+    \x20\x01(\x08H\0R\x0bNJAKOMDMFJD\x12\"\n\x0bDGCNHMIHFJB\x18\x0f\x20\x01(\
+    \x08H\0R\x0bDGCNHMIHFJB\x12#\n\x0bHGPFFGKNPFB\x18\xfc\x02\x20\x01(\x08H\
+    \0R\x0bHGPFFGKNPFB\x12#\n\x0bBOMGNMDOGLM\x18\xf1\x03\x20\x01(\x08H\0R\
+    \x0bBOMGNMDOGLM\x12#\n\x0bBBEEBBIDJHE\x18\xab\x04\x20\x01(\x08H\0R\x0bBB\
+    EEBBIDJHE\x121\n\x0bEGLOIFDIDPK\x18\x9e\x05\x20\x01(\x0b2\x0c.APAMFCKFHL\
+    LH\0R\x0bEGLOIFDIDPK\x12#\n\x0bGOKFNGFFMOB\x18\xa0\x06\x20\x01(\x08H\0R\
+    \x0bGOKFNGFFMOB\x12#\n\x0bLNGHIJGFDKP\x18\xa8\x0b\x20\x01(\x08H\0R\x0bLN\
+    GHIJGFDKP\x121\n\x0bCMFCOOEEECB\x18\xfc\x0c\x20\x01(\x0b2\x0c.JPGACKPLGC\
+    DH\0R\x0bCMFCOOEEECB\x121\n\x0bANKIDJJINEI\x18\x90\x0e\x20\x01(\x0b2\x0c\
+    .LJFJOGEEGPJH\0R\x0bANKIDJJINEIB\r\n\x0bBKAGLMFNKKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1009,9 +1080,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
+            let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             deps.push(super::JPGACKPLGCD::file_descriptor().clone());
-            deps.push(super::KVP::file_descriptor().clone());
+            deps.push(super::LJFJOGEEGPJ::file_descriptor().clone());
             deps.push(super::PNOLLIAKGDB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePlayerSetting::generated_message_descriptor_data());

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GANGPHPGFCL {
     // message fields
-    // @@protoc_insertion_point(field:GANGPHPGFCL.FNJNKKMNKIM)
-    pub FNJNKKMNKIM: ::std::vec::Vec<super::H_6946c5e1::H_6946c5e1>,
     // @@protoc_insertion_point(field:GANGPHPGFCL.NKBIDLBLONC)
-    pub NKBIDLBLONC: ::protobuf::MessageField<super::H_4142a2dd::H_4142a2dd>,
+    pub NKBIDLBLONC: ::protobuf::MessageField<super::BHBAILHMCOI::BHBAILHMCOI>,
+    // @@protoc_insertion_point(field:GANGPHPGFCL.FNJNKKMNKIM)
+    pub FNJNKKMNKIM: ::std::vec::Vec<super::LHLMPOHKPKG::LHLMPOHKPKG>,
     // special fields
     // @@protoc_insertion_point(special_field:GANGPHPGFCL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GANGPHPGFCL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHBAILHMCOI::BHBAILHMCOI>(
+            "NKBIDLBLONC",
+            |m: &GANGPHPGFCL| { &m.NKBIDLBLONC },
+            |m: &mut GANGPHPGFCL| { &mut m.NKBIDLBLONC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FNJNKKMNKIM",
             |m: &GANGPHPGFCL| { &m.FNJNKKMNKIM },
             |m: &mut GANGPHPGFCL| { &mut m.FNJNKKMNKIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_4142a2dd::H_4142a2dd>(
-            "NKBIDLBLONC",
-            |m: &GANGPHPGFCL| { &m.NKBIDLBLONC },
-            |m: &mut GANGPHPGFCL| { &mut m.NKBIDLBLONC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GANGPHPGFCL>(
             "GANGPHPGFCL",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GANGPHPGFCL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.FNJNKKMNKIM.push(is.read_message()?);
-                },
-                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NKBIDLBLONC)?;
+                },
+                98 => {
+                    self.FNJNKKMNKIM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for GANGPHPGFCL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FNJNKKMNKIM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.NKBIDLBLONC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.FNJNKKMNKIM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FNJNKKMNKIM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if let Some(v) = self.NKBIDLBLONC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
+        for v in &self.FNJNKKMNKIM {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GANGPHPGFCL {
     }
 
     fn clear(&mut self) {
-        self.FNJNKKMNKIM.clear();
         self.NKBIDLBLONC.clear();
+        self.FNJNKKMNKIM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GANGPHPGFCL {
         static instance: GANGPHPGFCL = GANGPHPGFCL {
-            FNJNKKMNKIM: ::std::vec::Vec::new(),
             NKBIDLBLONC: ::protobuf::MessageField::none(),
+            FNJNKKMNKIM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,10 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GANGPHPGFCL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GANGPHPGFCL.proto\x1a\x10H_4142a2dd.proto\x1a\x10H_6946c5e1.proto\
-    \"k\n\x0bGANGPHPGFCL\x12-\n\x0bFNJNKKMNKIM\x18\x01\x20\x03(\x0b2\x0b.H_6\
-    946c5e1R\x0bFNJNKKMNKIM\x12-\n\x0bNKBIDLBLONC\x18\x05\x20\x01(\x0b2\x0b.\
-    H_4142a2ddR\x0bNKBIDLBLONCb\x06proto3\
+    \n\x11GANGPHPGFCL.proto\x1a\x11BHBAILHMCOI.proto\x1a\x11LHLMPOHKPKG.prot\
+    o\"m\n\x0bGANGPHPGFCL\x12.\n\x0bNKBIDLBLONC\x18\x01\x20\x01(\x0b2\x0c.BH\
+    BAILHMCOIR\x0bNKBIDLBLONC\x12.\n\x0bFNJNKKMNKIM\x18\x0c\x20\x03(\x0b2\
+    \x0c.LHLMPOHKPKGR\x0bFNJNKKMNKIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,8 +188,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_4142a2dd::file_descriptor().clone());
-            deps.push(super::H_6946c5e1::file_descriptor().clone());
+            deps.push(super::BHBAILHMCOI::file_descriptor().clone());
+            deps.push(super::LHLMPOHKPKG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GANGPHPGFCL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

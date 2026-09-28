@@ -79,7 +79,7 @@ impl ::protobuf::Message for DelMailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 82 => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DelMailScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -111,7 +111,7 @@ impl ::protobuf::Message for DelMailScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_repeated_packed_uint32(10, &self.id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for DelMailScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12DelMailScRsp.proto\"A\n\x0cDelMailScRsp\x12\x18\n\x07retcode\x18\
-    \x07\x20\x01(\rR\x07retcode\x12\x17\n\x07id_list\x18\n\x20\x03(\rR\x06id\
+    \x04\x20\x01(\rR\x07retcode\x12\x17\n\x07id_list\x18\n\x20\x03(\rR\x06id\
     Listb\x06proto3\
 ";
 

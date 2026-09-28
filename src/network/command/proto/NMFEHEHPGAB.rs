@@ -30,10 +30,10 @@ pub struct NMFEHEHPGAB {
     // message fields
     // @@protoc_insertion_point(field:NMFEHEHPGAB.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:NMFEHEHPGAB.MBDKAJBEPPF)
-    pub MBDKAJBEPPF: u32,
     // @@protoc_insertion_point(field:NMFEHEHPGAB.MGCACGFLKEK)
     pub MGCACGFLKEK: u32,
+    // @@protoc_insertion_point(field:NMFEHEHPGAB.MBDKAJBEPPF)
+    pub MBDKAJBEPPF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NMFEHEHPGAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl NMFEHEHPGAB {
             |m: &mut NMFEHEHPGAB| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBDKAJBEPPF",
-            |m: &NMFEHEHPGAB| { &m.MBDKAJBEPPF },
-            |m: &mut NMFEHEHPGAB| { &mut m.MBDKAJBEPPF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGCACGFLKEK",
             |m: &NMFEHEHPGAB| { &m.MGCACGFLKEK },
             |m: &mut NMFEHEHPGAB| { &mut m.MGCACGFLKEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBDKAJBEPPF",
+            |m: &NMFEHEHPGAB| { &m.MBDKAJBEPPF },
+            |m: &mut NMFEHEHPGAB| { &mut m.MBDKAJBEPPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMFEHEHPGAB>(
             "NMFEHEHPGAB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for NMFEHEHPGAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.area_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.MBDKAJBEPPF = is.read_uint32()?;
-                },
-                104 => {
+                40 => {
                     self.MGCACGFLKEK = is.read_uint32()?;
+                },
+                80 => {
+                    self.MBDKAJBEPPF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for NMFEHEHPGAB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.area_id);
-        }
-        if self.MBDKAJBEPPF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MBDKAJBEPPF);
+            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
         if self.MGCACGFLKEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MGCACGFLKEK);
+            my_size += ::protobuf::rt::uint32_size(5, self.MGCACGFLKEK);
+        }
+        if self.MBDKAJBEPPF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MBDKAJBEPPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for NMFEHEHPGAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(5, self.area_id)?;
-        }
-        if self.MBDKAJBEPPF != 0 {
-            os.write_uint32(11, self.MBDKAJBEPPF)?;
+            os.write_uint32(4, self.area_id)?;
         }
         if self.MGCACGFLKEK != 0 {
-            os.write_uint32(13, self.MGCACGFLKEK)?;
+            os.write_uint32(5, self.MGCACGFLKEK)?;
+        }
+        if self.MBDKAJBEPPF != 0 {
+            os.write_uint32(10, self.MBDKAJBEPPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for NMFEHEHPGAB {
 
     fn clear(&mut self) {
         self.area_id = 0;
-        self.MBDKAJBEPPF = 0;
         self.MGCACGFLKEK = 0;
+        self.MBDKAJBEPPF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMFEHEHPGAB {
         static instance: NMFEHEHPGAB = NMFEHEHPGAB {
             area_id: 0,
-            MBDKAJBEPPF: 0,
             MGCACGFLKEK: 0,
+            MBDKAJBEPPF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for NMFEHEHPGAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMFEHEHPGAB.proto\"j\n\x0bNMFEHEHPGAB\x12\x17\n\x07area_id\x18\x05\
-    \x20\x01(\rR\x06areaId\x12\x20\n\x0bMBDKAJBEPPF\x18\x0b\x20\x01(\rR\x0bM\
-    BDKAJBEPPF\x12\x20\n\x0bMGCACGFLKEK\x18\r\x20\x01(\rR\x0bMGCACGFLKEKb\
+    \n\x11NMFEHEHPGAB.proto\"j\n\x0bNMFEHEHPGAB\x12\x17\n\x07area_id\x18\x04\
+    \x20\x01(\rR\x06areaId\x12\x20\n\x0bMGCACGFLKEK\x18\x05\x20\x01(\rR\x0bM\
+    GCACGFLKEK\x12\x20\n\x0bMBDKAJBEPPF\x18\n\x20\x01(\rR\x0bMBDKAJBEPPFb\
     \x06proto3\
 ";
 

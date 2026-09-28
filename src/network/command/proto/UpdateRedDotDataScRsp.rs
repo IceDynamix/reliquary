@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateRedDotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.FDEAKDCDGML)
-    pub FDEAKDCDGML: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.panel_id)
+    pub panel_id: u32,
     // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.group_id)
     pub group_id: u32,
     // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.panel_id)
-    pub panel_id: u32,
+    // @@protoc_insertion_point(field:UpdateRedDotDataScRsp.FDEAKDCDGML)
+    pub FDEAKDCDGML: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateRedDotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl UpdateRedDotDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDEAKDCDGML",
-            |m: &UpdateRedDotDataScRsp| { &m.FDEAKDCDGML },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.FDEAKDCDGML },
+            "panel_id",
+            |m: &UpdateRedDotDataScRsp| { &m.panel_id },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.panel_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -71,9 +71,9 @@ impl UpdateRedDotDataScRsp {
             |m: &mut UpdateRedDotDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &UpdateRedDotDataScRsp| { &m.panel_id },
-            |m: &mut UpdateRedDotDataScRsp| { &mut m.panel_id },
+            "FDEAKDCDGML",
+            |m: &UpdateRedDotDataScRsp| { &m.FDEAKDCDGML },
+            |m: &mut UpdateRedDotDataScRsp| { &mut m.FDEAKDCDGML },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateRedDotDataScRsp>(
             "UpdateRedDotDataScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FDEAKDCDGML = is.read_uint32()?;
+                16 => {
+                    self.panel_id = is.read_uint32()?;
                 },
-                80 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
                 },
-                96 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
-                    self.panel_id = is.read_uint32()?;
+                112 => {
+                    self.FDEAKDCDGML = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FDEAKDCDGML != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FDEAKDCDGML);
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.panel_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.panel_id);
+        if self.FDEAKDCDGML != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.FDEAKDCDGML);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FDEAKDCDGML != 0 {
-            os.write_uint32(4, self.FDEAKDCDGML)?;
+        if self.panel_id != 0 {
+            os.write_uint32(2, self.panel_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.panel_id != 0 {
-            os.write_uint32(13, self.panel_id)?;
+        if self.FDEAKDCDGML != 0 {
+            os.write_uint32(14, self.FDEAKDCDGML)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for UpdateRedDotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.FDEAKDCDGML = 0;
+        self.panel_id = 0;
         self.group_id = 0;
         self.retcode = 0;
-        self.panel_id = 0;
+        self.FDEAKDCDGML = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateRedDotDataScRsp {
         static instance: UpdateRedDotDataScRsp = UpdateRedDotDataScRsp {
-            FDEAKDCDGML: 0,
+            panel_id: 0,
             group_id: 0,
             retcode: 0,
-            panel_id: 0,
+            FDEAKDCDGML: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateRedDotDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateRedDotDataScRsp.proto\"\x89\x01\n\x15UpdateRedDotDataScRsp\
-    \x12\x20\n\x0bFDEAKDCDGML\x18\x04\x20\x01(\rR\x0bFDEAKDCDGML\x12\x19\n\
-    \x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcode\x12\x19\n\x08panel_id\x18\r\x20\x01(\rR\x07panel\
-    Idb\x06proto3\
+    \x12\x19\n\x08panel_id\x18\x02\x20\x01(\rR\x07panelId\x12\x19\n\x08group\
+    _id\x18\x04\x20\x01(\rR\x07groupId\x12\x18\n\x07retcode\x18\x05\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bFDEAKDCDGML\x18\x0e\x20\x01(\rR\x0bFDEAKDCDG\
+    MLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

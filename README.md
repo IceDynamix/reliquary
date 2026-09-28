@@ -4,8 +4,8 @@ a library to parse network packets from a certain turn based anime game!
 
 | module       | purpose                                              |
 | ------------ | ---------------------------------------------------- |
-| `network`  | parse bytes into network packets and parse protobufs |
-| `resource` | look up network packet resource ids from SRD         |
+| `network`    | parse bytes into network packets and parse protobufs |
+| `resource`   | look up network packet resource ids from SRD         |
 
 > [!WARNING]
 > Many field names are obfuscated due to lacking a good name translation source for v2.6+
@@ -29,14 +29,15 @@ for documentation, use `cargo doc`
 
 ## feature flags
 
-| feature           | effect                                                                                                            | default |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| `network`       | includes the`network` module                                                                                    | yes     |
-| `resource`      | includes the`resource` module                                                                                   | yes     |
-| `proto-limited` | removes all protos except for the ones required to decrypt the packets                                            |         |
-| `proto-rqa`     | removes all protos that are not relevant for[reliquary-archiver](https://github.com/IceDynamix/reliquary-archiver) |         |
+| feature           | effect                                                                                                             | default |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------ | ------- |
+| `network`         | includes the`network` module                                                                                       | yes     |
+| `resource`        | includes the`resource` module                                                                                      | yes     |
+| `proto-limited`   | keeps only the protos that are required to decrypt the packets                                                     |         |
+| `proto-rqa`       | keeps only the protos that are relevant for[reliquary-archiver](https://github.com/IceDynamix/reliquary-archiver)  |         |
+| `proto-auth`      | keeps only the protos that are relevant for pull history / jade income                                             |         |
 
-`proto-*` features depend on `network` and are mutually exclusive
+`proto-*` features depend on `network`
 
 ## codegen
 
@@ -49,26 +50,27 @@ in the generated protobuf types, hence the major version bumps.
 
 | package version | game version |
 | --------------- | ------------ |
-| `2.0.0`       | `2.3`      |
-| `3.1.0`       | `2.4`      |
-| `4.0.0`       | `2.5`      |
-| `5.1.0`       | `2.6`      |
-| `6.2.1`       | `2.7`      |
-| `7.0.0`       | `3.0`      |
-| `8.1.0`       | `3.1`      |
-| `10.2.0`      | `3.2`      |
-| `11.0.2`      | `3.3`      |
-| `12.0.1`      | `3.4`      |
-| `13.1.0`      | `3.5`      |
-| `14.0.0`      | `3.6`      |
-| `15.0.0`      | `3.7`      |
-| `17.0.0`      | `3.8`      |
-| `18.0.1`      | `4.0`      |
-| `19.0.0`      | `4.1`      |
-| `20.1.0`      | `4.2`      |
-| `21.0.0`      | `4.3`      |
-| `22.0.0`      | `4.4`      |
-| `23.0.0`      | `4.5`      |
+| `2.0.0`         | `2.3`        |
+| `3.1.0`         | `2.4`        |
+| `4.0.0`         | `2.5`        |
+| `5.1.0`         | `2.6`        |
+| `6.2.1`         | `2.7`        |
+| `7.0.0`         | `3.0`        |
+| `8.1.0`         | `3.1`        |
+| `10.2.0`        | `3.2`        |
+| `11.0.2`        | `3.3`        |
+| `12.0.1`        | `3.4`        |
+| `13.1.0`        | `3.5`        |
+| `14.0.0`        | `3.6`        |
+| `15.0.0`        | `3.7`        |
+| `17.0.0`        | `3.8`        |
+| `18.0.1`        | `4.0`        |
+| `19.0.0`        | `4.1`        |
+| `20.1.0`        | `4.2`        |
+| `21.0.0`        | `4.3`        |
+| `22.0.0`        | `4.4`        |
+| `23.0.0`        | `4.5`        |
+| `24.0.0`        | `4.6`        |
 
 ## related
 

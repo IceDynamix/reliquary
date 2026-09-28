@@ -47,8 +47,8 @@ pub enum PlayingState {
     PlayingState_PlayingRogueMagic = 8,
     // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_PlayingChallengePeak)
     PlayingState_PlayingChallengePeak = 9,
-    // @@protoc_insertion_point(enum_value:PlayingState.H_6d9e5383)
-    H_6d9e5383 = 10,
+    // @@protoc_insertion_point(enum_value:PlayingState.H_0cea80f1)
+    H_0cea80f1 = 10,
 }
 
 impl ::protobuf::Enum for PlayingState {
@@ -70,7 +70,7 @@ impl ::protobuf::Enum for PlayingState {
             7 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueTourn),
             8 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueMagic),
             9 => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengePeak),
-            10 => ::std::option::Option::Some(PlayingState::H_6d9e5383),
+            10 => ::std::option::Option::Some(PlayingState::H_0cea80f1),
             _ => ::std::option::Option::None
         }
     }
@@ -87,7 +87,7 @@ impl ::protobuf::Enum for PlayingState {
             "PlayingState_PlayingRogueTourn" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueTourn),
             "PlayingState_PlayingRogueMagic" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingRogueMagic),
             "PlayingState_PlayingChallengePeak" => ::std::option::Option::Some(PlayingState::PlayingState_PlayingChallengePeak),
-            "H_6d9e5383" => ::std::option::Option::Some(PlayingState::H_6d9e5383),
+            "H_0cea80f1" => ::std::option::Option::Some(PlayingState::H_0cea80f1),
             _ => ::std::option::Option::None
         }
     }
@@ -103,7 +103,7 @@ impl ::protobuf::Enum for PlayingState {
         PlayingState::PlayingState_PlayingRogueTourn,
         PlayingState::PlayingState_PlayingRogueMagic,
         PlayingState::PlayingState_PlayingChallengePeak,
-        PlayingState::H_6d9e5383,
+        PlayingState::H_0cea80f1,
     ];
 }
 
@@ -139,7 +139,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x04\x12&\n\"PlayingState_PlayingChallengeStory\x10\x05\x12%\n!PlayingSt\
     ate_PlayingChallengeBoss\x10\x06\x12\"\n\x1ePlayingState_PlayingRogueTou\
     rn\x10\x07\x12\"\n\x1ePlayingState_PlayingRogueMagic\x10\x08\x12%\n!Play\
-    ingState_PlayingChallengePeak\x10\t\x12\x0e\n\nH_6d9e5383\x10\nb\x06prot\
+    ingState_PlayingChallengePeak\x10\t\x12\x0e\n\nH_0cea80f1\x10\nb\x06prot\
     o3\
 ";
 

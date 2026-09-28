@@ -540,20 +540,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .LLJJGILGNEO dice_combat_v_2_begin = 261;
+    // .LLJJGILGNEO dice_combat_v2_begin = 261;
 
-    pub fn dice_combat_v_2_begin(&self) -> &super::LLJJGILGNEO::LLJJGILGNEO {
+    pub fn dice_combat_v2_begin(&self) -> &super::LLJJGILGNEO::LLJJGILGNEO {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(ref v)) => v,
             _ => <super::LLJJGILGNEO::LLJJGILGNEO as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_begin(&mut self) {
+    pub fn clear_dice_combat_v2_begin(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_begin(&self) -> bool {
+    pub fn has_dice_combat_v2_begin(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(..)) => true,
             _ => false,
@@ -561,12 +561,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_begin(&mut self, v: super::LLJJGILGNEO::LLJJGILGNEO) {
+    pub fn set_dice_combat_v2_begin(&mut self, v: super::LLJJGILGNEO::LLJJGILGNEO) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_begin(&mut self) -> &mut super::LLJJGILGNEO::LLJJGILGNEO {
+    pub fn mut_dice_combat_v2_begin(&mut self) -> &mut super::LLJJGILGNEO::LLJJGILGNEO {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(super::LLJJGILGNEO::LLJJGILGNEO::new()));
@@ -578,8 +578,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_begin(&mut self) -> super::LLJJGILGNEO::LLJJGILGNEO {
-        if self.has_dice_combat_v_2_begin() {
+    pub fn take_dice_combat_v2_begin(&mut self) -> super::LLJJGILGNEO::LLJJGILGNEO {
+        if self.has_dice_combat_v2_begin() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2Begin(v)) => v,
                 _ => panic!(),
@@ -589,20 +589,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .HPOLJGDGOEI dice_combat_v_2_end = 262;
+    // .HPOLJGDGOEI dice_combat_v2_end = 262;
 
-    pub fn dice_combat_v_2_end(&self) -> &super::HPOLJGDGOEI::HPOLJGDGOEI {
+    pub fn dice_combat_v2_end(&self) -> &super::HPOLJGDGOEI::HPOLJGDGOEI {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(ref v)) => v,
             _ => <super::HPOLJGDGOEI::HPOLJGDGOEI as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_end(&mut self) {
+    pub fn clear_dice_combat_v2_end(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_end(&self) -> bool {
+    pub fn has_dice_combat_v2_end(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(..)) => true,
             _ => false,
@@ -610,12 +610,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_end(&mut self, v: super::HPOLJGDGOEI::HPOLJGDGOEI) {
+    pub fn set_dice_combat_v2_end(&mut self, v: super::HPOLJGDGOEI::HPOLJGDGOEI) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_end(&mut self) -> &mut super::HPOLJGDGOEI::HPOLJGDGOEI {
+    pub fn mut_dice_combat_v2_end(&mut self) -> &mut super::HPOLJGDGOEI::HPOLJGDGOEI {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(super::HPOLJGDGOEI::HPOLJGDGOEI::new()));
@@ -627,8 +627,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_end(&mut self) -> super::HPOLJGDGOEI::HPOLJGDGOEI {
-        if self.has_dice_combat_v_2_end() {
+    pub fn take_dice_combat_v2_end(&mut self) -> super::HPOLJGDGOEI::HPOLJGDGOEI {
+        if self.has_dice_combat_v2_end() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2End(v)) => v,
                 _ => panic!(),
@@ -638,20 +638,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .IEMBKIAENOA dice_combat_v_2_turn_end = 263;
+    // .IEMBKIAENOA dice_combat_v2_turn_end = 263;
 
-    pub fn dice_combat_v_2_turn_end(&self) -> &super::IEMBKIAENOA::IEMBKIAENOA {
+    pub fn dice_combat_v2_turn_end(&self) -> &super::IEMBKIAENOA::IEMBKIAENOA {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(ref v)) => v,
             _ => <super::IEMBKIAENOA::IEMBKIAENOA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_turn_end(&mut self) {
+    pub fn clear_dice_combat_v2_turn_end(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_turn_end(&self) -> bool {
+    pub fn has_dice_combat_v2_turn_end(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(..)) => true,
             _ => false,
@@ -659,12 +659,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_turn_end(&mut self, v: super::IEMBKIAENOA::IEMBKIAENOA) {
+    pub fn set_dice_combat_v2_turn_end(&mut self, v: super::IEMBKIAENOA::IEMBKIAENOA) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_turn_end(&mut self) -> &mut super::IEMBKIAENOA::IEMBKIAENOA {
+    pub fn mut_dice_combat_v2_turn_end(&mut self) -> &mut super::IEMBKIAENOA::IEMBKIAENOA {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(super::IEMBKIAENOA::IEMBKIAENOA::new()));
@@ -676,8 +676,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_turn_end(&mut self) -> super::IEMBKIAENOA::IEMBKIAENOA {
-        if self.has_dice_combat_v_2_turn_end() {
+    pub fn take_dice_combat_v2_turn_end(&mut self) -> super::IEMBKIAENOA::IEMBKIAENOA {
+        if self.has_dice_combat_v2_turn_end() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TurnEnd(v)) => v,
                 _ => panic!(),
@@ -687,20 +687,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .PNGGKFFJILG dice_combat_v_2_tactics_point_change = 264;
+    // .PNGGKFFJILG dice_combat_v2_tactics_point_change = 264;
 
-    pub fn dice_combat_v_2_tactics_point_change(&self) -> &super::PNGGKFFJILG::PNGGKFFJILG {
+    pub fn dice_combat_v2_tactics_point_change(&self) -> &super::PNGGKFFJILG::PNGGKFFJILG {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(ref v)) => v,
             _ => <super::PNGGKFFJILG::PNGGKFFJILG as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_tactics_point_change(&mut self) {
+    pub fn clear_dice_combat_v2_tactics_point_change(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_tactics_point_change(&self) -> bool {
+    pub fn has_dice_combat_v2_tactics_point_change(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(..)) => true,
             _ => false,
@@ -708,12 +708,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_tactics_point_change(&mut self, v: super::PNGGKFFJILG::PNGGKFFJILG) {
+    pub fn set_dice_combat_v2_tactics_point_change(&mut self, v: super::PNGGKFFJILG::PNGGKFFJILG) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_tactics_point_change(&mut self) -> &mut super::PNGGKFFJILG::PNGGKFFJILG {
+    pub fn mut_dice_combat_v2_tactics_point_change(&mut self) -> &mut super::PNGGKFFJILG::PNGGKFFJILG {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(super::PNGGKFFJILG::PNGGKFFJILG::new()));
@@ -725,8 +725,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_tactics_point_change(&mut self) -> super::PNGGKFFJILG::PNGGKFFJILG {
-        if self.has_dice_combat_v_2_tactics_point_change() {
+    pub fn take_dice_combat_v2_tactics_point_change(&mut self) -> super::PNGGKFFJILG::PNGGKFFJILG {
+        if self.has_dice_combat_v2_tactics_point_change() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsPointChange(v)) => v,
                 _ => panic!(),
@@ -736,20 +736,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .KNMGHLJKBDA dice_combat_v_2_tactics_card_change = 265;
+    // .KNMGHLJKBDA dice_combat_v2_tactics_card_change = 265;
 
-    pub fn dice_combat_v_2_tactics_card_change(&self) -> &super::KNMGHLJKBDA::KNMGHLJKBDA {
+    pub fn dice_combat_v2_tactics_card_change(&self) -> &super::KNMGHLJKBDA::KNMGHLJKBDA {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(ref v)) => v,
             _ => <super::KNMGHLJKBDA::KNMGHLJKBDA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_tactics_card_change(&mut self) {
+    pub fn clear_dice_combat_v2_tactics_card_change(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_tactics_card_change(&self) -> bool {
+    pub fn has_dice_combat_v2_tactics_card_change(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(..)) => true,
             _ => false,
@@ -757,12 +757,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_tactics_card_change(&mut self, v: super::KNMGHLJKBDA::KNMGHLJKBDA) {
+    pub fn set_dice_combat_v2_tactics_card_change(&mut self, v: super::KNMGHLJKBDA::KNMGHLJKBDA) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_tactics_card_change(&mut self) -> &mut super::KNMGHLJKBDA::KNMGHLJKBDA {
+    pub fn mut_dice_combat_v2_tactics_card_change(&mut self) -> &mut super::KNMGHLJKBDA::KNMGHLJKBDA {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(super::KNMGHLJKBDA::KNMGHLJKBDA::new()));
@@ -774,8 +774,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_tactics_card_change(&mut self) -> super::KNMGHLJKBDA::KNMGHLJKBDA {
-        if self.has_dice_combat_v_2_tactics_card_change() {
+    pub fn take_dice_combat_v2_tactics_card_change(&mut self) -> super::KNMGHLJKBDA::KNMGHLJKBDA {
+        if self.has_dice_combat_v2_tactics_card_change() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2TacticsCardChange(v)) => v,
                 _ => panic!(),
@@ -785,20 +785,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .INHMDFDBGCL dice_combat_v_2_dice_change_request = 266;
+    // .INHMDFDBGCL dice_combat_v2_dice_change_request = 266;
 
-    pub fn dice_combat_v_2_dice_change_request(&self) -> &super::INHMDFDBGCL::INHMDFDBGCL {
+    pub fn dice_combat_v2_dice_change_request(&self) -> &super::INHMDFDBGCL::INHMDFDBGCL {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(ref v)) => v,
             _ => <super::INHMDFDBGCL::INHMDFDBGCL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_dice_change_request(&mut self) {
+    pub fn clear_dice_combat_v2_dice_change_request(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_dice_change_request(&self) -> bool {
+    pub fn has_dice_combat_v2_dice_change_request(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(..)) => true,
             _ => false,
@@ -806,12 +806,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_dice_change_request(&mut self, v: super::INHMDFDBGCL::INHMDFDBGCL) {
+    pub fn set_dice_combat_v2_dice_change_request(&mut self, v: super::INHMDFDBGCL::INHMDFDBGCL) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_dice_change_request(&mut self) -> &mut super::INHMDFDBGCL::INHMDFDBGCL {
+    pub fn mut_dice_combat_v2_dice_change_request(&mut self) -> &mut super::INHMDFDBGCL::INHMDFDBGCL {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(super::INHMDFDBGCL::INHMDFDBGCL::new()));
@@ -823,8 +823,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_dice_change_request(&mut self) -> super::INHMDFDBGCL::INHMDFDBGCL {
-        if self.has_dice_combat_v_2_dice_change_request() {
+    pub fn take_dice_combat_v2_dice_change_request(&mut self) -> super::INHMDFDBGCL::INHMDFDBGCL {
+        if self.has_dice_combat_v2_dice_change_request() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChangeRequest(v)) => v,
                 _ => panic!(),
@@ -834,20 +834,20 @@ impl BKFDFLNHKIF {
         }
     }
 
-    // .JEHPGCEIHDF dice_combat_v_2_dice_change = 267;
+    // .JEHPGCEIHDF dice_combat_v2_dice_change = 267;
 
-    pub fn dice_combat_v_2_dice_change(&self) -> &super::JEHPGCEIHDF::JEHPGCEIHDF {
+    pub fn dice_combat_v2_dice_change(&self) -> &super::JEHPGCEIHDF::JEHPGCEIHDF {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(ref v)) => v,
             _ => <super::JEHPGCEIHDF::JEHPGCEIHDF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_dice_combat_v_2_dice_change(&mut self) {
+    pub fn clear_dice_combat_v2_dice_change(&mut self) {
         self.PAFLKJACEDD = ::std::option::Option::None;
     }
 
-    pub fn has_dice_combat_v_2_dice_change(&self) -> bool {
+    pub fn has_dice_combat_v2_dice_change(&self) -> bool {
         match self.PAFLKJACEDD {
             ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(..)) => true,
             _ => false,
@@ -855,12 +855,12 @@ impl BKFDFLNHKIF {
     }
 
     // Param is passed by value, moved
-    pub fn set_dice_combat_v_2_dice_change(&mut self, v: super::JEHPGCEIHDF::JEHPGCEIHDF) {
+    pub fn set_dice_combat_v2_dice_change(&mut self, v: super::JEHPGCEIHDF::JEHPGCEIHDF) {
         self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_dice_combat_v_2_dice_change(&mut self) -> &mut super::JEHPGCEIHDF::JEHPGCEIHDF {
+    pub fn mut_dice_combat_v2_dice_change(&mut self) -> &mut super::JEHPGCEIHDF::JEHPGCEIHDF {
         if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(_)) = self.PAFLKJACEDD {
         } else {
             self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(super::JEHPGCEIHDF::JEHPGCEIHDF::new()));
@@ -872,8 +872,8 @@ impl BKFDFLNHKIF {
     }
 
     // Take field
-    pub fn take_dice_combat_v_2_dice_change(&mut self) -> super::JEHPGCEIHDF::JEHPGCEIHDF {
-        if self.has_dice_combat_v_2_dice_change() {
+    pub fn take_dice_combat_v2_dice_change(&mut self) -> super::JEHPGCEIHDF::JEHPGCEIHDF {
+        if self.has_dice_combat_v2_dice_change() {
             match self.PAFLKJACEDD.take() {
                 ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::DiceCombatV2DiceChange(v)) => v,
                 _ => panic!(),
@@ -981,8 +981,253 @@ impl BKFDFLNHKIF {
         }
     }
 
+    // .DLEIPLCFMHK marble_coop_boss_begin = 280;
+
+    pub fn marble_coop_boss_begin(&self) -> &super::DLEIPLCFMHK::DLEIPLCFMHK {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(ref v)) => v,
+            _ => <super::DLEIPLCFMHK::DLEIPLCFMHK as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_marble_coop_boss_begin(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_marble_coop_boss_begin(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_marble_coop_boss_begin(&mut self, v: super::DLEIPLCFMHK::DLEIPLCFMHK) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_marble_coop_boss_begin(&mut self) -> &mut super::DLEIPLCFMHK::DLEIPLCFMHK {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(super::DLEIPLCFMHK::DLEIPLCFMHK::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_marble_coop_boss_begin(&mut self) -> super::DLEIPLCFMHK::DLEIPLCFMHK {
+        if self.has_marble_coop_boss_begin() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DLEIPLCFMHK::DLEIPLCFMHK::new()
+        }
+    }
+
+    // .GKCKIOJHFIL marble_coop_boss_end = 281;
+
+    pub fn marble_coop_boss_end(&self) -> &super::GKCKIOJHFIL::GKCKIOJHFIL {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(ref v)) => v,
+            _ => <super::GKCKIOJHFIL::GKCKIOJHFIL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_marble_coop_boss_end(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_marble_coop_boss_end(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_marble_coop_boss_end(&mut self, v: super::GKCKIOJHFIL::GKCKIOJHFIL) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_marble_coop_boss_end(&mut self) -> &mut super::GKCKIOJHFIL::GKCKIOJHFIL {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(super::GKCKIOJHFIL::GKCKIOJHFIL::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_marble_coop_boss_end(&mut self) -> super::GKCKIOJHFIL::GKCKIOJHFIL {
+        if self.has_marble_coop_boss_end() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GKCKIOJHFIL::GKCKIOJHFIL::new()
+        }
+    }
+
+    // .MCHAMBDHPEN marble_coop_boss_round_begin = 282;
+
+    pub fn marble_coop_boss_round_begin(&self) -> &super::MCHAMBDHPEN::MCHAMBDHPEN {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(ref v)) => v,
+            _ => <super::MCHAMBDHPEN::MCHAMBDHPEN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_marble_coop_boss_round_begin(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_marble_coop_boss_round_begin(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_marble_coop_boss_round_begin(&mut self, v: super::MCHAMBDHPEN::MCHAMBDHPEN) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_marble_coop_boss_round_begin(&mut self) -> &mut super::MCHAMBDHPEN::MCHAMBDHPEN {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(super::MCHAMBDHPEN::MCHAMBDHPEN::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_marble_coop_boss_round_begin(&mut self) -> super::MCHAMBDHPEN::MCHAMBDHPEN {
+        if self.has_marble_coop_boss_round_begin() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::MCHAMBDHPEN::MCHAMBDHPEN::new()
+        }
+    }
+
+    // .FEEGOKGAJEH marble_coop_boss_round_end = 283;
+
+    pub fn marble_coop_boss_round_end(&self) -> &super::FEEGOKGAJEH::FEEGOKGAJEH {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(ref v)) => v,
+            _ => <super::FEEGOKGAJEH::FEEGOKGAJEH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_marble_coop_boss_round_end(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_marble_coop_boss_round_end(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_marble_coop_boss_round_end(&mut self, v: super::FEEGOKGAJEH::FEEGOKGAJEH) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_marble_coop_boss_round_end(&mut self) -> &mut super::FEEGOKGAJEH::FEEGOKGAJEH {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(super::FEEGOKGAJEH::FEEGOKGAJEH::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_marble_coop_boss_round_end(&mut self) -> super::FEEGOKGAJEH::FEEGOKGAJEH {
+        if self.has_marble_coop_boss_round_end() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::FEEGOKGAJEH::FEEGOKGAJEH::new()
+        }
+    }
+
+    // .DFDBFKBNGIH marble_coop_boss_turn = 284;
+
+    pub fn marble_coop_boss_turn(&self) -> &super::DFDBFKBNGIH::DFDBFKBNGIH {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(ref v)) => v,
+            _ => <super::DFDBFKBNGIH::DFDBFKBNGIH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_marble_coop_boss_turn(&mut self) {
+        self.PAFLKJACEDD = ::std::option::Option::None;
+    }
+
+    pub fn has_marble_coop_boss_turn(&self) -> bool {
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_marble_coop_boss_turn(&mut self, v: super::DFDBFKBNGIH::DFDBFKBNGIH) {
+        self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_marble_coop_boss_turn(&mut self) -> &mut super::DFDBFKBNGIH::DFDBFKBNGIH {
+        if let ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(_)) = self.PAFLKJACEDD {
+        } else {
+            self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(super::DFDBFKBNGIH::DFDBFKBNGIH::new()));
+        }
+        match self.PAFLKJACEDD {
+            ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_marble_coop_boss_turn(&mut self) -> super::DFDBFKBNGIH::DFDBFKBNGIH {
+        if self.has_marble_coop_boss_turn() {
+            match self.PAFLKJACEDD.take() {
+                ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DFDBFKBNGIH::DFDBFKBNGIH::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(21);
+        let mut fields = ::std::vec::Vec::with_capacity(26);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
@@ -1065,53 +1310,53 @@ impl BKFDFLNHKIF {
             BKFDFLNHKIF::set_dice_combat_end,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LLJJGILGNEO::LLJJGILGNEO>(
-            "dice_combat_v_2_begin",
-            BKFDFLNHKIF::has_dice_combat_v_2_begin,
-            BKFDFLNHKIF::dice_combat_v_2_begin,
-            BKFDFLNHKIF::mut_dice_combat_v_2_begin,
-            BKFDFLNHKIF::set_dice_combat_v_2_begin,
+            "dice_combat_v2_begin",
+            BKFDFLNHKIF::has_dice_combat_v2_begin,
+            BKFDFLNHKIF::dice_combat_v2_begin,
+            BKFDFLNHKIF::mut_dice_combat_v2_begin,
+            BKFDFLNHKIF::set_dice_combat_v2_begin,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HPOLJGDGOEI::HPOLJGDGOEI>(
-            "dice_combat_v_2_end",
-            BKFDFLNHKIF::has_dice_combat_v_2_end,
-            BKFDFLNHKIF::dice_combat_v_2_end,
-            BKFDFLNHKIF::mut_dice_combat_v_2_end,
-            BKFDFLNHKIF::set_dice_combat_v_2_end,
+            "dice_combat_v2_end",
+            BKFDFLNHKIF::has_dice_combat_v2_end,
+            BKFDFLNHKIF::dice_combat_v2_end,
+            BKFDFLNHKIF::mut_dice_combat_v2_end,
+            BKFDFLNHKIF::set_dice_combat_v2_end,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IEMBKIAENOA::IEMBKIAENOA>(
-            "dice_combat_v_2_turn_end",
-            BKFDFLNHKIF::has_dice_combat_v_2_turn_end,
-            BKFDFLNHKIF::dice_combat_v_2_turn_end,
-            BKFDFLNHKIF::mut_dice_combat_v_2_turn_end,
-            BKFDFLNHKIF::set_dice_combat_v_2_turn_end,
+            "dice_combat_v2_turn_end",
+            BKFDFLNHKIF::has_dice_combat_v2_turn_end,
+            BKFDFLNHKIF::dice_combat_v2_turn_end,
+            BKFDFLNHKIF::mut_dice_combat_v2_turn_end,
+            BKFDFLNHKIF::set_dice_combat_v2_turn_end,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PNGGKFFJILG::PNGGKFFJILG>(
-            "dice_combat_v_2_tactics_point_change",
-            BKFDFLNHKIF::has_dice_combat_v_2_tactics_point_change,
-            BKFDFLNHKIF::dice_combat_v_2_tactics_point_change,
-            BKFDFLNHKIF::mut_dice_combat_v_2_tactics_point_change,
-            BKFDFLNHKIF::set_dice_combat_v_2_tactics_point_change,
+            "dice_combat_v2_tactics_point_change",
+            BKFDFLNHKIF::has_dice_combat_v2_tactics_point_change,
+            BKFDFLNHKIF::dice_combat_v2_tactics_point_change,
+            BKFDFLNHKIF::mut_dice_combat_v2_tactics_point_change,
+            BKFDFLNHKIF::set_dice_combat_v2_tactics_point_change,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KNMGHLJKBDA::KNMGHLJKBDA>(
-            "dice_combat_v_2_tactics_card_change",
-            BKFDFLNHKIF::has_dice_combat_v_2_tactics_card_change,
-            BKFDFLNHKIF::dice_combat_v_2_tactics_card_change,
-            BKFDFLNHKIF::mut_dice_combat_v_2_tactics_card_change,
-            BKFDFLNHKIF::set_dice_combat_v_2_tactics_card_change,
+            "dice_combat_v2_tactics_card_change",
+            BKFDFLNHKIF::has_dice_combat_v2_tactics_card_change,
+            BKFDFLNHKIF::dice_combat_v2_tactics_card_change,
+            BKFDFLNHKIF::mut_dice_combat_v2_tactics_card_change,
+            BKFDFLNHKIF::set_dice_combat_v2_tactics_card_change,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::INHMDFDBGCL::INHMDFDBGCL>(
-            "dice_combat_v_2_dice_change_request",
-            BKFDFLNHKIF::has_dice_combat_v_2_dice_change_request,
-            BKFDFLNHKIF::dice_combat_v_2_dice_change_request,
-            BKFDFLNHKIF::mut_dice_combat_v_2_dice_change_request,
-            BKFDFLNHKIF::set_dice_combat_v_2_dice_change_request,
+            "dice_combat_v2_dice_change_request",
+            BKFDFLNHKIF::has_dice_combat_v2_dice_change_request,
+            BKFDFLNHKIF::dice_combat_v2_dice_change_request,
+            BKFDFLNHKIF::mut_dice_combat_v2_dice_change_request,
+            BKFDFLNHKIF::set_dice_combat_v2_dice_change_request,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JEHPGCEIHDF::JEHPGCEIHDF>(
-            "dice_combat_v_2_dice_change",
-            BKFDFLNHKIF::has_dice_combat_v_2_dice_change,
-            BKFDFLNHKIF::dice_combat_v_2_dice_change,
-            BKFDFLNHKIF::mut_dice_combat_v_2_dice_change,
-            BKFDFLNHKIF::set_dice_combat_v_2_dice_change,
+            "dice_combat_v2_dice_change",
+            BKFDFLNHKIF::has_dice_combat_v2_dice_change,
+            BKFDFLNHKIF::dice_combat_v2_dice_change,
+            BKFDFLNHKIF::mut_dice_combat_v2_dice_change,
+            BKFDFLNHKIF::set_dice_combat_v2_dice_change,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LPEHILMMINA::LPEHILMMINA>(
             "team_towers_pvp_start",
@@ -1126,6 +1371,41 @@ impl BKFDFLNHKIF {
             BKFDFLNHKIF::team_towers_pvp_end,
             BKFDFLNHKIF::mut_team_towers_pvp_end,
             BKFDFLNHKIF::set_team_towers_pvp_end,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DLEIPLCFMHK::DLEIPLCFMHK>(
+            "marble_coop_boss_begin",
+            BKFDFLNHKIF::has_marble_coop_boss_begin,
+            BKFDFLNHKIF::marble_coop_boss_begin,
+            BKFDFLNHKIF::mut_marble_coop_boss_begin,
+            BKFDFLNHKIF::set_marble_coop_boss_begin,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKCKIOJHFIL::GKCKIOJHFIL>(
+            "marble_coop_boss_end",
+            BKFDFLNHKIF::has_marble_coop_boss_end,
+            BKFDFLNHKIF::marble_coop_boss_end,
+            BKFDFLNHKIF::mut_marble_coop_boss_end,
+            BKFDFLNHKIF::set_marble_coop_boss_end,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCHAMBDHPEN::MCHAMBDHPEN>(
+            "marble_coop_boss_round_begin",
+            BKFDFLNHKIF::has_marble_coop_boss_round_begin,
+            BKFDFLNHKIF::marble_coop_boss_round_begin,
+            BKFDFLNHKIF::mut_marble_coop_boss_round_begin,
+            BKFDFLNHKIF::set_marble_coop_boss_round_begin,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FEEGOKGAJEH::FEEGOKGAJEH>(
+            "marble_coop_boss_round_end",
+            BKFDFLNHKIF::has_marble_coop_boss_round_end,
+            BKFDFLNHKIF::marble_coop_boss_round_end,
+            BKFDFLNHKIF::mut_marble_coop_boss_round_end,
+            BKFDFLNHKIF::set_marble_coop_boss_round_end,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DFDBFKBNGIH::DFDBFKBNGIH>(
+            "marble_coop_boss_turn",
+            BKFDFLNHKIF::has_marble_coop_boss_turn,
+            BKFDFLNHKIF::marble_coop_boss_turn,
+            BKFDFLNHKIF::mut_marble_coop_boss_turn,
+            BKFDFLNHKIF::set_marble_coop_boss_turn,
         ));
         oneofs.push(bkfdflnhkif::PAFLKJACEDD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKFDFLNHKIF>(
@@ -1208,6 +1488,21 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                 },
                 2154 => {
                     self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(is.read_message()?));
+                },
+                2242 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(is.read_message()?));
+                },
+                2250 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(is.read_message()?));
+                },
+                2258 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(is.read_message()?));
+                },
+                2266 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(is.read_message()?));
+                },
+                2274 => {
+                    self.PAFLKJACEDD = ::std::option::Option::Some(bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -1305,6 +1600,26 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -1378,6 +1693,21 @@ impl ::protobuf::Message for BKFDFLNHKIF {
                 &bkfdflnhkif::PAFLKJACEDD::TeamTowersPvpEnd(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(269, v, os)?;
                 },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossBegin(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(280, v, os)?;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossEnd(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(281, v, os)?;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundBegin(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(282, v, os)?;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossRoundEnd(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(283, v, os)?;
+                },
+                &bkfdflnhkif::PAFLKJACEDD::MarbleCoopBossTurn(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(284, v, os)?;
+                },
             };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -1399,6 +1729,11 @@ impl ::protobuf::Message for BKFDFLNHKIF {
     fn clear(&mut self) {
         self.queue_position = 0;
         self.ICBFDMNNENI = 0;
+        self.PAFLKJACEDD = ::std::option::Option::None;
+        self.PAFLKJACEDD = ::std::option::Option::None;
+        self.PAFLKJACEDD = ::std::option::Option::None;
+        self.PAFLKJACEDD = ::std::option::Option::None;
+        self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
         self.PAFLKJACEDD = ::std::option::Option::None;
@@ -1476,24 +1811,34 @@ pub mod bkfdflnhkif {
         DiceCombatTurnEnd(super::super::NINLEFEPGCC::NINLEFEPGCC),
         // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_end)
         DiceCombatEnd(super::super::KKOKOAJBHFN::KKOKOAJBHFN),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_begin)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_begin)
         DiceCombatV2Begin(super::super::LLJJGILGNEO::LLJJGILGNEO),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_end)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_end)
         DiceCombatV2End(super::super::HPOLJGDGOEI::HPOLJGDGOEI),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_turn_end)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_turn_end)
         DiceCombatV2TurnEnd(super::super::IEMBKIAENOA::IEMBKIAENOA),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_tactics_point_change)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_tactics_point_change)
         DiceCombatV2TacticsPointChange(super::super::PNGGKFFJILG::PNGGKFFJILG),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_tactics_card_change)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_tactics_card_change)
         DiceCombatV2TacticsCardChange(super::super::KNMGHLJKBDA::KNMGHLJKBDA),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_dice_change_request)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_dice_change_request)
         DiceCombatV2DiceChangeRequest(super::super::INHMDFDBGCL::INHMDFDBGCL),
-        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v_2_dice_change)
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.dice_combat_v2_dice_change)
         DiceCombatV2DiceChange(super::super::JEHPGCEIHDF::JEHPGCEIHDF),
         // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.team_towers_pvp_start)
         TeamTowersPvpStart(super::super::LPEHILMMINA::LPEHILMMINA),
         // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.team_towers_pvp_end)
         TeamTowersPvpEnd(super::super::HCHDLMIOOIP::HCHDLMIOOIP),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.marble_coop_boss_begin)
+        MarbleCoopBossBegin(super::super::DLEIPLCFMHK::DLEIPLCFMHK),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.marble_coop_boss_end)
+        MarbleCoopBossEnd(super::super::GKCKIOJHFIL::GKCKIOJHFIL),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.marble_coop_boss_round_begin)
+        MarbleCoopBossRoundBegin(super::super::MCHAMBDHPEN::MCHAMBDHPEN),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.marble_coop_boss_round_end)
+        MarbleCoopBossRoundEnd(super::super::FEEGOKGAJEH::FEEGOKGAJEH),
+        // @@protoc_insertion_point(oneof_field:BKFDFLNHKIF.marble_coop_boss_turn)
+        MarbleCoopBossTurn(super::super::DFDBFKBNGIH::DFDBFKBNGIH),
     }
 
     impl ::protobuf::Oneof for PAFLKJACEDD {
@@ -1514,43 +1859,52 @@ pub mod bkfdflnhkif {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BKFDFLNHKIF.proto\x1a\x11CJOCEJLPADK.proto\x1a\x11FLOICBDOCNJ.prot\
-    o\x1a\x11HCHDLMIOOIP.proto\x1a\x11HPOLJGDGOEI.proto\x1a\x11IEMBKIAENOA.p\
-    roto\x1a\x11IIPAHEHJJJL.proto\x1a\x11INHMDFDBGCL.proto\x1a\x11JEHPGCEIHD\
-    F.proto\x1a\x11JPAHFFFCIIK.proto\x1a\x11KKOKOAJBHFN.proto\x1a\x11KMGDCCN\
-    NGEE.proto\x1a\x11KNMGHLJKBDA.proto\x1a\x11LLJJGILGNEO.proto\x1a\x11LOKP\
-    JGLJIIH.proto\x1a\x11LPEHILMMINA.proto\x1a\x11NINLEFEPGCC.proto\x1a\x11P\
-    IMNGBAMMAM.proto\x1a\x11PJENKHDODKA.proto\x1a\x11PNGGKFFJILG.proto\"\x9b\
-    \x0b\n\x0bBKFDFLNHKIF\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueu\
-    ePosition\x12\x20\n\x0bICBFDMNNENI\x18\x02\x20\x01(\rR\x0bICBFDMNNENI\
-    \x12:\n\x11marble_game_begin\x18e\x20\x01(\x0b2\x0c.CJOCEJLPADKH\0R\x0fm\
-    arbleGameBegin\x126\n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c.KMGDCCNN\
-    GEEH\0R\rmarbleGameEnd\x12:\n\x11marble_game_round\x18g\x20\x01(\x0b2\
-    \x0c.LOKPJGLJIIHH\0R\x0fmarbleGameRound\x128\n\x10marble_game_turn\x18h\
-    \x20\x01(\x0b2\x0c.PIMNGBAMMAMH\0R\x0emarbleGameTurn\x12F\n\x17cake_race\
-    _section_begin\x18\xc9\x01\x20\x01(\x0b2\x0c.PJENKHDODKAH\0R\x14cakeRace\
-    SectionBegin\x12B\n\x15cake_race_section_end\x18\xca\x01\x20\x01(\x0b2\
-    \x0c.FLOICBDOCNJH\0R\x12cakeRaceSectionEnd\x12Q\n\x1dcake_race_room_sect\
-    ion_settle\x18\xcb\x01\x20\x01(\x0b2\x0c.IIPAHEHJJJLH\0R\x19cakeRaceRoom\
-    SectionSettle\x12;\n\x11dice_combat_begin\x18\xfb\x01\x20\x01(\x0b2\x0c.\
-    JPAHFFFCIIKH\0R\x0fdiceCombatBegin\x12@\n\x14dice_combat_turn_end\x18\
-    \xfc\x01\x20\x01(\x0b2\x0c.NINLEFEPGCCH\0R\x11diceCombatTurnEnd\x127\n\
-    \x0fdice_combat_end\x18\xfd\x01\x20\x01(\x0b2\x0c.KKOKOAJBHFNH\0R\rdiceC\
-    ombatEnd\x12A\n\x15dice_combat_v_2_begin\x18\x85\x02\x20\x01(\x0b2\x0c.L\
-    LJJGILGNEOH\0R\x11diceCombatV2Begin\x12=\n\x13dice_combat_v_2_end\x18\
-    \x86\x02\x20\x01(\x0b2\x0c.HPOLJGDGOEIH\0R\x0fdiceCombatV2End\x12F\n\x18\
-    dice_combat_v_2_turn_end\x18\x87\x02\x20\x01(\x0b2\x0c.IEMBKIAENOAH\0R\
-    \x13diceCombatV2TurnEnd\x12]\n$dice_combat_v_2_tactics_point_change\x18\
-    \x88\x02\x20\x01(\x0b2\x0c.PNGGKFFJILGH\0R\x1ediceCombatV2TacticsPointCh\
-    ange\x12[\n#dice_combat_v_2_tactics_card_change\x18\x89\x02\x20\x01(\x0b\
-    2\x0c.KNMGHLJKBDAH\0R\x1ddiceCombatV2TacticsCardChange\x12[\n#dice_comba\
-    t_v_2_dice_change_request\x18\x8a\x02\x20\x01(\x0b2\x0c.INHMDFDBGCLH\0R\
-    \x1ddiceCombatV2DiceChangeRequest\x12L\n\x1bdice_combat_v_2_dice_change\
-    \x18\x8b\x02\x20\x01(\x0b2\x0c.JEHPGCEIHDFH\0R\x16diceCombatV2DiceChange\
-    \x12B\n\x15team_towers_pvp_start\x18\x8c\x02\x20\x01(\x0b2\x0c.LPEHILMMI\
-    NAH\0R\x12teamTowersPvpStart\x12>\n\x13team_towers_pvp_end\x18\x8d\x02\
-    \x20\x01(\x0b2\x0c.HCHDLMIOOIPH\0R\x10teamTowersPvpEndB\r\n\x0bPAFLKJACE\
-    DDb\x06proto3\
+    \n\x11BKFDFLNHKIF.proto\x1a\x11CJOCEJLPADK.proto\x1a\x11DFDBFKBNGIH.prot\
+    o\x1a\x11DLEIPLCFMHK.proto\x1a\x11FEEGOKGAJEH.proto\x1a\x11FLOICBDOCNJ.p\
+    roto\x1a\x11GKCKIOJHFIL.proto\x1a\x11HCHDLMIOOIP.proto\x1a\x11HPOLJGDGOE\
+    I.proto\x1a\x11IEMBKIAENOA.proto\x1a\x11IIPAHEHJJJL.proto\x1a\x11INHMDFD\
+    BGCL.proto\x1a\x11JEHPGCEIHDF.proto\x1a\x11JPAHFFFCIIK.proto\x1a\x11KKOK\
+    OAJBHFN.proto\x1a\x11KMGDCCNNGEE.proto\x1a\x11KNMGHLJKBDA.proto\x1a\x11L\
+    LJJGILGNEO.proto\x1a\x11LOKPJGLJIIH.proto\x1a\x11LPEHILMMINA.proto\x1a\
+    \x11MCHAMBDHPEN.proto\x1a\x11NINLEFEPGCC.proto\x1a\x11PIMNGBAMMAM.proto\
+    \x1a\x11PJENKHDODKA.proto\x1a\x11PNGGKFFJILG.proto\"\xfe\r\n\x0bBKFDFLNH\
+    KIF\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueuePosition\x12\x20\
+    \n\x0bICBFDMNNENI\x18\x02\x20\x01(\rR\x0bICBFDMNNENI\x12:\n\x11marble_ga\
+    me_begin\x18e\x20\x01(\x0b2\x0c.CJOCEJLPADKH\0R\x0fmarbleGameBegin\x126\
+    \n\x0fmarble_game_end\x18f\x20\x01(\x0b2\x0c.KMGDCCNNGEEH\0R\rmarbleGame\
+    End\x12:\n\x11marble_game_round\x18g\x20\x01(\x0b2\x0c.LOKPJGLJIIHH\0R\
+    \x0fmarbleGameRound\x128\n\x10marble_game_turn\x18h\x20\x01(\x0b2\x0c.PI\
+    MNGBAMMAMH\0R\x0emarbleGameTurn\x12F\n\x17cake_race_section_begin\x18\
+    \xc9\x01\x20\x01(\x0b2\x0c.PJENKHDODKAH\0R\x14cakeRaceSectionBegin\x12B\
+    \n\x15cake_race_section_end\x18\xca\x01\x20\x01(\x0b2\x0c.FLOICBDOCNJH\0\
+    R\x12cakeRaceSectionEnd\x12Q\n\x1dcake_race_room_section_settle\x18\xcb\
+    \x01\x20\x01(\x0b2\x0c.IIPAHEHJJJLH\0R\x19cakeRaceRoomSectionSettle\x12;\
+    \n\x11dice_combat_begin\x18\xfb\x01\x20\x01(\x0b2\x0c.JPAHFFFCIIKH\0R\
+    \x0fdiceCombatBegin\x12@\n\x14dice_combat_turn_end\x18\xfc\x01\x20\x01(\
+    \x0b2\x0c.NINLEFEPGCCH\0R\x11diceCombatTurnEnd\x127\n\x0fdice_combat_end\
+    \x18\xfd\x01\x20\x01(\x0b2\x0c.KKOKOAJBHFNH\0R\rdiceCombatEnd\x12@\n\x14\
+    dice_combat_v2_begin\x18\x85\x02\x20\x01(\x0b2\x0c.LLJJGILGNEOH\0R\x11di\
+    ceCombatV2Begin\x12<\n\x12dice_combat_v2_end\x18\x86\x02\x20\x01(\x0b2\
+    \x0c.HPOLJGDGOEIH\0R\x0fdiceCombatV2End\x12E\n\x17dice_combat_v2_turn_en\
+    d\x18\x87\x02\x20\x01(\x0b2\x0c.IEMBKIAENOAH\0R\x13diceCombatV2TurnEnd\
+    \x12\\\n#dice_combat_v2_tactics_point_change\x18\x88\x02\x20\x01(\x0b2\
+    \x0c.PNGGKFFJILGH\0R\x1ediceCombatV2TacticsPointChange\x12Z\n\"dice_comb\
+    at_v2_tactics_card_change\x18\x89\x02\x20\x01(\x0b2\x0c.KNMGHLJKBDAH\0R\
+    \x1ddiceCombatV2TacticsCardChange\x12Z\n\"dice_combat_v2_dice_change_req\
+    uest\x18\x8a\x02\x20\x01(\x0b2\x0c.INHMDFDBGCLH\0R\x1ddiceCombatV2DiceCh\
+    angeRequest\x12K\n\x1adice_combat_v2_dice_change\x18\x8b\x02\x20\x01(\
+    \x0b2\x0c.JEHPGCEIHDFH\0R\x16diceCombatV2DiceChange\x12B\n\x15team_tower\
+    s_pvp_start\x18\x8c\x02\x20\x01(\x0b2\x0c.LPEHILMMINAH\0R\x12teamTowersP\
+    vpStart\x12>\n\x13team_towers_pvp_end\x18\x8d\x02\x20\x01(\x0b2\x0c.HCHD\
+    LMIOOIPH\0R\x10teamTowersPvpEnd\x12D\n\x16marble_coop_boss_begin\x18\x98\
+    \x02\x20\x01(\x0b2\x0c.DLEIPLCFMHKH\0R\x13marbleCoopBossBegin\x12@\n\x14\
+    marble_coop_boss_end\x18\x99\x02\x20\x01(\x0b2\x0c.GKCKIOJHFILH\0R\x11ma\
+    rbleCoopBossEnd\x12O\n\x1cmarble_coop_boss_round_begin\x18\x9a\x02\x20\
+    \x01(\x0b2\x0c.MCHAMBDHPENH\0R\x18marbleCoopBossRoundBegin\x12K\n\x1amar\
+    ble_coop_boss_round_end\x18\x9b\x02\x20\x01(\x0b2\x0c.FEEGOKGAJEHH\0R\
+    \x16marbleCoopBossRoundEnd\x12B\n\x15marble_coop_boss_turn\x18\x9c\x02\
+    \x20\x01(\x0b2\x0c.DFDBFKBNGIHH\0R\x12marbleCoopBossTurnB\r\n\x0bPAFLKJA\
+    CEDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1567,9 +1921,13 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(19);
+            let mut deps = ::std::vec::Vec::with_capacity(24);
             deps.push(super::CJOCEJLPADK::file_descriptor().clone());
+            deps.push(super::DFDBFKBNGIH::file_descriptor().clone());
+            deps.push(super::DLEIPLCFMHK::file_descriptor().clone());
+            deps.push(super::FEEGOKGAJEH::file_descriptor().clone());
             deps.push(super::FLOICBDOCNJ::file_descriptor().clone());
+            deps.push(super::GKCKIOJHFIL::file_descriptor().clone());
             deps.push(super::HCHDLMIOOIP::file_descriptor().clone());
             deps.push(super::HPOLJGDGOEI::file_descriptor().clone());
             deps.push(super::IEMBKIAENOA::file_descriptor().clone());
@@ -1583,6 +1941,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::LLJJGILGNEO::file_descriptor().clone());
             deps.push(super::LOKPJGLJIIH::file_descriptor().clone());
             deps.push(super::LPEHILMMINA::file_descriptor().clone());
+            deps.push(super::MCHAMBDHPEN::file_descriptor().clone());
             deps.push(super::NINLEFEPGCC::file_descriptor().clone());
             deps.push(super::PIMNGBAMMAM::file_descriptor().clone());
             deps.push(super::PJENKHDODKA::file_descriptor().clone());

@@ -79,13 +79,13 @@ impl ::protobuf::Message for GILBMELHGCB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.JMMBAALIOJL)?;
                 },
-                48 => {
+                56 => {
                     self.JMMBAALIOJL.push(is.read_uint32()?);
                 },
-                72 => {
+                96 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for GILBMELHGCB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JMMBAALIOJL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JMMBAALIOJL);
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for GILBMELHGCB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.JMMBAALIOJL)?;
+        os.write_repeated_packed_uint32(7, &self.JMMBAALIOJL)?;
         if self.stage_id != 0 {
-            os.write_uint32(9, self.stage_id)?;
+            os.write_uint32(12, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GILBMELHGCB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GILBMELHGCB.proto\"J\n\x0bGILBMELHGCB\x12\x20\n\x0bJMMBAALIOJL\x18\
-    \x06\x20\x03(\rR\x0bJMMBAALIOJL\x12\x19\n\x08stage_id\x18\t\x20\x01(\rR\
-    \x07stageIdb\x06proto3\
+    \x07\x20\x03(\rR\x0bJMMBAALIOJL\x12\x19\n\x08stage_id\x18\x0c\x20\x01(\r\
+    R\x07stageIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

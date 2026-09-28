@@ -72,7 +72,7 @@ impl ::protobuf::Message for GetSecretKeyInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                90 => {
                     self.CILHEPFKKNI = is.read_bytes()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for GetSecretKeyInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.CILHEPFKKNI.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(9, &self.CILHEPFKKNI);
+            my_size += ::protobuf::rt::bytes_size(11, &self.CILHEPFKKNI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetSecretKeyInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.CILHEPFKKNI.is_empty() {
-            os.write_bytes(9, &self.CILHEPFKKNI)?;
+            os.write_bytes(11, &self.CILHEPFKKNI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetSecretKeyInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetSecretKeyInfoCsReq.proto\"9\n\x15GetSecretKeyInfoCsReq\x12\x20\
-    \n\x0bCILHEPFKKNI\x18\t\x20\x01(\x0cR\x0bCILHEPFKKNIb\x06proto3\
+    \n\x0bCILHEPFKKNI\x18\x0b\x20\x01(\x0cR\x0bCILHEPFKKNIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

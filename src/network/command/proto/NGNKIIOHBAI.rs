@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NGNKIIOHBAI {
     // message fields
-    // @@protoc_insertion_point(field:NGNKIIOHBAI.OLPPMEAMFFO)
-    pub OLPPMEAMFFO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NGNKIIOHBAI.effect_id)
     pub effect_id: u32,
+    // @@protoc_insertion_point(field:NGNKIIOHBAI.OLPPMEAMFFO)
+    pub OLPPMEAMFFO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NGNKIIOHBAI.trait_id)
     pub trait_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl NGNKIIOHBAI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OLPPMEAMFFO",
-            |m: &NGNKIIOHBAI| { &m.OLPPMEAMFFO },
-            |m: &mut NGNKIIOHBAI| { &mut m.OLPPMEAMFFO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "effect_id",
             |m: &NGNKIIOHBAI| { &m.effect_id },
             |m: &mut NGNKIIOHBAI| { &mut m.effect_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OLPPMEAMFFO",
+            |m: &NGNKIIOHBAI| { &m.OLPPMEAMFFO },
+            |m: &mut NGNKIIOHBAI| { &mut m.OLPPMEAMFFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_id",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OLPPMEAMFFO)?;
-                },
-                8 => {
-                    self.OLPPMEAMFFO.push(is.read_uint32()?);
-                },
-                40 => {
+                48 => {
                     self.effect_id = is.read_uint32()?;
                 },
-                48 => {
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OLPPMEAMFFO)?;
+                },
+                112 => {
+                    self.OLPPMEAMFFO.push(is.read_uint32()?);
+                },
+                120 => {
                     self.trait_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OLPPMEAMFFO);
         if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.effect_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.OLPPMEAMFFO);
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.OLPPMEAMFFO)?;
         if self.effect_id != 0 {
-            os.write_uint32(5, self.effect_id)?;
+            os.write_uint32(6, self.effect_id)?;
         }
+        os.write_repeated_packed_uint32(14, &self.OLPPMEAMFFO)?;
         if self.trait_id != 0 {
-            os.write_uint32(6, self.trait_id)?;
+            os.write_uint32(15, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for NGNKIIOHBAI {
     }
 
     fn clear(&mut self) {
-        self.OLPPMEAMFFO.clear();
         self.effect_id = 0;
+        self.OLPPMEAMFFO.clear();
         self.trait_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NGNKIIOHBAI {
         static instance: NGNKIIOHBAI = NGNKIIOHBAI {
-            OLPPMEAMFFO: ::std::vec::Vec::new(),
             effect_id: 0,
+            OLPPMEAMFFO: ::std::vec::Vec::new(),
             trait_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for NGNKIIOHBAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NGNKIIOHBAI.proto\"g\n\x0bNGNKIIOHBAI\x12\x20\n\x0bOLPPMEAMFFO\x18\
-    \x01\x20\x03(\rR\x0bOLPPMEAMFFO\x12\x1b\n\teffect_id\x18\x05\x20\x01(\rR\
-    \x08effectId\x12\x19\n\x08trait_id\x18\x06\x20\x01(\rR\x07traitIdb\x06pr\
-    oto3\
+    \n\x11NGNKIIOHBAI.proto\"g\n\x0bNGNKIIOHBAI\x12\x1b\n\teffect_id\x18\x06\
+    \x20\x01(\rR\x08effectId\x12\x20\n\x0bOLPPMEAMFFO\x18\x0e\x20\x03(\rR\
+    \x0bOLPPMEAMFFO\x12\x19\n\x08trait_id\x18\x0f\x20\x01(\rR\x07traitIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

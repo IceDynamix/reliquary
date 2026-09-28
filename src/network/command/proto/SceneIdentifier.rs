@@ -30,10 +30,10 @@ pub struct SceneIdentifier {
     // message fields
     // @@protoc_insertion_point(field:SceneIdentifier.content_id)
     pub content_id: u32,
-    // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
-    pub game_story_line_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
     pub floor_id: u32,
+    // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
+    pub game_story_line_id: u32,
     // message oneof groups
     pub teleport_nigger: ::std::option::Option<scene_identifier::Teleport_nigger>,
     // special fields
@@ -52,52 +52,52 @@ impl SceneIdentifier {
         ::std::default::Default::default()
     }
 
-    // .TeleportInfo teleport_info = 1871;
+    // .OENPFHDKPNJ MDAIDPPKOPO = 1733;
 
-    pub fn teleport_info(&self) -> &super::TeleportInfo::TeleportInfo {
+    pub fn MDAIDPPKOPO(&self) -> &super::OENPFHDKPNJ::OENPFHDKPNJ {
         match self.teleport_nigger {
-            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(ref v)) => v,
-            _ => <super::TeleportInfo::TeleportInfo as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(ref v)) => v,
+            _ => <super::OENPFHDKPNJ::OENPFHDKPNJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_teleport_info(&mut self) {
+    pub fn clear_MDAIDPPKOPO(&mut self) {
         self.teleport_nigger = ::std::option::Option::None;
     }
 
-    pub fn has_teleport_info(&self) -> bool {
+    pub fn has_MDAIDPPKOPO(&self) -> bool {
         match self.teleport_nigger {
-            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(..)) => true,
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_teleport_info(&mut self, v: super::TeleportInfo::TeleportInfo) {
-        self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(v))
+    pub fn set_MDAIDPPKOPO(&mut self, v: super::OENPFHDKPNJ::OENPFHDKPNJ) {
+        self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_teleport_info(&mut self) -> &mut super::TeleportInfo::TeleportInfo {
-        if let ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(_)) = self.teleport_nigger {
+    pub fn mut_MDAIDPPKOPO(&mut self) -> &mut super::OENPFHDKPNJ::OENPFHDKPNJ {
+        if let ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(_)) = self.teleport_nigger {
         } else {
-            self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(super::TeleportInfo::TeleportInfo::new()));
+            self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(super::OENPFHDKPNJ::OENPFHDKPNJ::new()));
         }
         match self.teleport_nigger {
-            ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(ref mut v)) => v,
+            ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_teleport_info(&mut self) -> super::TeleportInfo::TeleportInfo {
-        if self.has_teleport_info() {
+    pub fn take_MDAIDPPKOPO(&mut self) -> super::OENPFHDKPNJ::OENPFHDKPNJ {
+        if self.has_MDAIDPPKOPO() {
             match self.teleport_nigger.take() {
-                ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(v)) => v,
+                ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::TeleportInfo::TeleportInfo::new()
+            super::OENPFHDKPNJ::OENPFHDKPNJ::new()
         }
     }
 
@@ -110,21 +110,21 @@ impl SceneIdentifier {
             |m: &mut SceneIdentifier| { &mut m.content_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &SceneIdentifier| { &m.game_story_line_id },
-            |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
             |m: &SceneIdentifier| { &m.floor_id },
             |m: &mut SceneIdentifier| { &mut m.floor_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::TeleportInfo::TeleportInfo>(
-            "teleport_info",
-            SceneIdentifier::has_teleport_info,
-            SceneIdentifier::teleport_info,
-            SceneIdentifier::mut_teleport_info,
-            SceneIdentifier::set_teleport_info,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "game_story_line_id",
+            |m: &SceneIdentifier| { &m.game_story_line_id },
+            |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OENPFHDKPNJ::OENPFHDKPNJ>(
+            "MDAIDPPKOPO",
+            SceneIdentifier::has_MDAIDPPKOPO,
+            SceneIdentifier::MDAIDPPKOPO,
+            SceneIdentifier::mut_MDAIDPPKOPO,
+            SceneIdentifier::set_MDAIDPPKOPO,
         ));
         oneofs.push(scene_identifier::Teleport_nigger::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneIdentifier>(
@@ -148,14 +148,14 @@ impl ::protobuf::Message for SceneIdentifier {
                 24 => {
                     self.content_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.game_story_line_id = is.read_uint32()?;
-                },
-                96 => {
+                56 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                14970 => {
-                    self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::TeleportInfo(is.read_message()?));
+                96 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                13866 => {
+                    self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -172,15 +172,15 @@ impl ::protobuf::Message for SceneIdentifier {
         if self.content_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.content_id);
         }
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.game_story_line_id);
-        }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.floor_id);
+        }
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.game_story_line_id);
         }
         if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
             match v {
-                &scene_identifier::Teleport_nigger::TeleportInfo(ref v) => {
+                &scene_identifier::Teleport_nigger::MDAIDPPKOPO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -195,16 +195,16 @@ impl ::protobuf::Message for SceneIdentifier {
         if self.content_id != 0 {
             os.write_uint32(3, self.content_id)?;
         }
-        if self.game_story_line_id != 0 {
-            os.write_uint32(10, self.game_story_line_id)?;
-        }
         if self.floor_id != 0 {
-            os.write_uint32(12, self.floor_id)?;
+            os.write_uint32(7, self.floor_id)?;
+        }
+        if self.game_story_line_id != 0 {
+            os.write_uint32(12, self.game_story_line_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
             match v {
-                &scene_identifier::Teleport_nigger::TeleportInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1871, v, os)?;
+                &scene_identifier::Teleport_nigger::MDAIDPPKOPO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
                 },
             };
         }
@@ -226,8 +226,8 @@ impl ::protobuf::Message for SceneIdentifier {
 
     fn clear(&mut self) {
         self.content_id = 0;
-        self.game_story_line_id = 0;
         self.floor_id = 0;
+        self.game_story_line_id = 0;
         self.teleport_nigger = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -235,8 +235,8 @@ impl ::protobuf::Message for SceneIdentifier {
     fn default_instance() -> &'static SceneIdentifier {
         static instance: SceneIdentifier = SceneIdentifier {
             content_id: 0,
-            game_story_line_id: 0,
             floor_id: 0,
+            game_story_line_id: 0,
             teleport_nigger: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -268,8 +268,8 @@ pub mod scene_identifier {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:SceneIdentifier.teleport_nigger)
     pub enum Teleport_nigger {
-        // @@protoc_insertion_point(oneof_field:SceneIdentifier.teleport_info)
-        TeleportInfo(super::super::TeleportInfo::TeleportInfo),
+        // @@protoc_insertion_point(oneof_field:SceneIdentifier.MDAIDPPKOPO)
+        MDAIDPPKOPO(super::super::OENPFHDKPNJ::OENPFHDKPNJ),
     }
 
     impl ::protobuf::Oneof for Teleport_nigger {
@@ -290,12 +290,12 @@ pub mod scene_identifier {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15SceneIdentifier.proto\x1a\x12TeleportInfo.proto\"\xc2\x01\n\x0fSce\
-    neIdentifier\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\tcontentId\x12+\n\
-    \x12game_story_line_id\x18\n\x20\x01(\rR\x0fgameStoryLineId\x12\x19\n\
-    \x08floor_id\x18\x0c\x20\x01(\rR\x07floorId\x125\n\rteleport_info\x18\
-    \xcf\x0e\x20\x01(\x0b2\r.TeleportInfoH\0R\x0cteleportInfoB\x11\n\x0ftele\
-    port_niggerb\x06proto3\
+    \n\x15SceneIdentifier.proto\x1a\x11OENPFHDKPNJ.proto\"\xbe\x01\n\x0fScen\
+    eIdentifier\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\tcontentId\x12\x19\
+    \n\x08floor_id\x18\x07\x20\x01(\rR\x07floorId\x12+\n\x12game_story_line_\
+    id\x18\x0c\x20\x01(\rR\x0fgameStoryLineId\x121\n\x0bMDAIDPPKOPO\x18\xc5\
+    \r\x20\x01(\x0b2\x0c.OENPFHDKPNJH\0R\x0bMDAIDPPKOPOB\x11\n\x0fteleport_n\
+    iggerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -313,7 +313,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::TeleportInfo::file_descriptor().clone());
+            deps.push(super::OENPFHDKPNJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneIdentifier::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

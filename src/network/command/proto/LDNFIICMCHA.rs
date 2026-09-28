@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LDNFIICMCHA {
     // message fields
+    // @@protoc_insertion_point(field:LDNFIICMCHA.DBODGPBOIHC)
+    pub DBODGPBOIHC: bool,
     // @@protoc_insertion_point(field:LDNFIICMCHA.KNDHHAJMBGB)
     pub KNDHHAJMBGB: u64,
     // @@protoc_insertion_point(field:LDNFIICMCHA.DIILKEEGLOJ)
     pub DIILKEEGLOJ: ::std::vec::Vec<super::AKHEOAIPAPA::AKHEOAIPAPA>,
     // @@protoc_insertion_point(field:LDNFIICMCHA.IEPAPOPIFHH)
     pub IEPAPOPIFHH: u64,
-    // @@protoc_insertion_point(field:LDNFIICMCHA.DBODGPBOIHC)
-    pub DBODGPBOIHC: bool,
-    // @@protoc_insertion_point(field:LDNFIICMCHA.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:LDNFIICMCHA.HCBADDHNIDG)
     pub HCBADDHNIDG: u32,
     // @@protoc_insertion_point(field:LDNFIICMCHA.KAJOFKIEKNH)
     pub KAJOFKIEKNH: ::std::vec::Vec<super::GACKCPEPDAF::GACKCPEPDAF>,
+    // @@protoc_insertion_point(field:LDNFIICMCHA.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LDNFIICMCHA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,6 +62,11 @@ impl LDNFIICMCHA {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DBODGPBOIHC",
+            |m: &LDNFIICMCHA| { &m.DBODGPBOIHC },
+            |m: &mut LDNFIICMCHA| { &mut m.DBODGPBOIHC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KNDHHAJMBGB",
             |m: &LDNFIICMCHA| { &m.KNDHHAJMBGB },
             |m: &mut LDNFIICMCHA| { &mut m.KNDHHAJMBGB },
@@ -77,16 +82,6 @@ impl LDNFIICMCHA {
             |m: &mut LDNFIICMCHA| { &mut m.IEPAPOPIFHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DBODGPBOIHC",
-            |m: &LDNFIICMCHA| { &m.DBODGPBOIHC },
-            |m: &mut LDNFIICMCHA| { &mut m.DBODGPBOIHC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &LDNFIICMCHA| { &m.level },
-            |m: &mut LDNFIICMCHA| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HCBADDHNIDG",
             |m: &LDNFIICMCHA| { &m.HCBADDHNIDG },
             |m: &mut LDNFIICMCHA| { &mut m.HCBADDHNIDG },
@@ -95,6 +90,11 @@ impl LDNFIICMCHA {
             "KAJOFKIEKNH",
             |m: &LDNFIICMCHA| { &m.KAJOFKIEKNH },
             |m: &mut LDNFIICMCHA| { &mut m.KAJOFKIEKNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &LDNFIICMCHA| { &m.level },
+            |m: &mut LDNFIICMCHA| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LDNFIICMCHA>(
             "LDNFIICMCHA",
@@ -114,7 +114,10 @@ impl ::protobuf::Message for LDNFIICMCHA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
+                    self.DBODGPBOIHC = is.read_bool()?;
+                },
+                32 => {
                     self.KNDHHAJMBGB = is.read_uint64()?;
                 },
                 50 => {
@@ -124,16 +127,13 @@ impl ::protobuf::Message for LDNFIICMCHA {
                     self.IEPAPOPIFHH = is.read_uint64()?;
                 },
                 72 => {
-                    self.DBODGPBOIHC = is.read_bool()?;
-                },
-                80 => {
-                    self.level = is.read_uint32()?;
-                },
-                112 => {
                     self.HCBADDHNIDG = is.read_uint32()?;
                 },
-                122 => {
+                90 => {
                     self.KAJOFKIEKNH.push(is.read_message()?);
+                },
+                104 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,8 +147,11 @@ impl ::protobuf::Message for LDNFIICMCHA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.DBODGPBOIHC != false {
+            my_size += 1 + 1;
+        }
         if self.KNDHHAJMBGB != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.KNDHHAJMBGB);
+            my_size += ::protobuf::rt::uint64_size(4, self.KNDHHAJMBGB);
         }
         for value in &self.DIILKEEGLOJ {
             let len = value.compute_size();
@@ -157,27 +160,27 @@ impl ::protobuf::Message for LDNFIICMCHA {
         if self.IEPAPOPIFHH != 0 {
             my_size += ::protobuf::rt::uint64_size(7, self.IEPAPOPIFHH);
         }
-        if self.DBODGPBOIHC != false {
-            my_size += 1 + 1;
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
-        }
         if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(9, self.HCBADDHNIDG);
         }
         for value in &self.KAJOFKIEKNH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.DBODGPBOIHC != false {
+            os.write_bool(2, self.DBODGPBOIHC)?;
+        }
         if self.KNDHHAJMBGB != 0 {
-            os.write_uint64(1, self.KNDHHAJMBGB)?;
+            os.write_uint64(4, self.KNDHHAJMBGB)?;
         }
         for v in &self.DIILKEEGLOJ {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
@@ -185,18 +188,15 @@ impl ::protobuf::Message for LDNFIICMCHA {
         if self.IEPAPOPIFHH != 0 {
             os.write_uint64(7, self.IEPAPOPIFHH)?;
         }
-        if self.DBODGPBOIHC != false {
-            os.write_bool(9, self.DBODGPBOIHC)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(10, self.level)?;
-        }
         if self.HCBADDHNIDG != 0 {
-            os.write_uint32(14, self.HCBADDHNIDG)?;
+            os.write_uint32(9, self.HCBADDHNIDG)?;
         }
         for v in &self.KAJOFKIEKNH {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.level != 0 {
+            os.write_uint32(13, self.level)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for LDNFIICMCHA {
     }
 
     fn clear(&mut self) {
+        self.DBODGPBOIHC = false;
         self.KNDHHAJMBGB = 0;
         self.DIILKEEGLOJ.clear();
         self.IEPAPOPIFHH = 0;
-        self.DBODGPBOIHC = false;
-        self.level = 0;
         self.HCBADDHNIDG = 0;
         self.KAJOFKIEKNH.clear();
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LDNFIICMCHA {
         static instance: LDNFIICMCHA = LDNFIICMCHA {
+            DBODGPBOIHC: false,
             KNDHHAJMBGB: 0,
             DIILKEEGLOJ: ::std::vec::Vec::new(),
             IEPAPOPIFHH: 0,
-            DBODGPBOIHC: false,
-            level: 0,
             HCBADDHNIDG: 0,
             KAJOFKIEKNH: ::std::vec::Vec::new(),
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,13 +258,13 @@ impl ::protobuf::reflect::ProtobufValue for LDNFIICMCHA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LDNFIICMCHA.proto\x1a\x11AKHEOAIPAPA.proto\x1a\x11GACKCPEPDAF.prot\
-    o\"\x8b\x02\n\x0bLDNFIICMCHA\x12\x20\n\x0bKNDHHAJMBGB\x18\x01\x20\x01(\
-    \x04R\x0bKNDHHAJMBGB\x12.\n\x0bDIILKEEGLOJ\x18\x06\x20\x03(\x0b2\x0c.AKH\
-    EOAIPAPAR\x0bDIILKEEGLOJ\x12\x20\n\x0bIEPAPOPIFHH\x18\x07\x20\x01(\x04R\
-    \x0bIEPAPOPIFHH\x12\x20\n\x0bDBODGPBOIHC\x18\t\x20\x01(\x08R\x0bDBODGPBO\
-    IHC\x12\x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12\x20\n\x0bHCBADDHNI\
-    DG\x18\x0e\x20\x01(\rR\x0bHCBADDHNIDG\x12.\n\x0bKAJOFKIEKNH\x18\x0f\x20\
-    \x03(\x0b2\x0c.GACKCPEPDAFR\x0bKAJOFKIEKNHb\x06proto3\
+    o\"\x8b\x02\n\x0bLDNFIICMCHA\x12\x20\n\x0bDBODGPBOIHC\x18\x02\x20\x01(\
+    \x08R\x0bDBODGPBOIHC\x12\x20\n\x0bKNDHHAJMBGB\x18\x04\x20\x01(\x04R\x0bK\
+    NDHHAJMBGB\x12.\n\x0bDIILKEEGLOJ\x18\x06\x20\x03(\x0b2\x0c.AKHEOAIPAPAR\
+    \x0bDIILKEEGLOJ\x12\x20\n\x0bIEPAPOPIFHH\x18\x07\x20\x01(\x04R\x0bIEPAPO\
+    PIFHH\x12\x20\n\x0bHCBADDHNIDG\x18\t\x20\x01(\rR\x0bHCBADDHNIDG\x12.\n\
+    \x0bKAJOFKIEKNH\x18\x0b\x20\x03(\x0b2\x0c.GACKCPEPDAFR\x0bKAJOFKIEKNH\
+    \x12\x14\n\x05level\x18\r\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

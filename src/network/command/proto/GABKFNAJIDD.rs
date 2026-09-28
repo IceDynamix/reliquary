@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GABKFNAJIDD {
     // message fields
-    // @@protoc_insertion_point(field:GABKFNAJIDD.NPHAJEKCBKF)
-    pub NPHAJEKCBKF: u32,
+    // @@protoc_insertion_point(field:GABKFNAJIDD.BNCALAMGIOC)
+    pub BNCALAMGIOC: i64,
     // @@protoc_insertion_point(field:GABKFNAJIDD.is_marked)
     pub is_marked: bool,
     // @@protoc_insertion_point(field:GABKFNAJIDD.name)
     pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:GABKFNAJIDD.LJKNDCIOOCG)
-    pub LJKNDCIOOCG: ::protobuf::MessageField<super::BNAILMNNGIF::BNAILMNNGIF>,
-    // @@protoc_insertion_point(field:GABKFNAJIDD.BNCALAMGIOC)
-    pub BNCALAMGIOC: i64,
     // @@protoc_insertion_point(field:GABKFNAJIDD.MJPKBIGCFOM)
     pub MJPKBIGCFOM: ::protobuf::MessageField<super::KJDLIPEIAAK::KJDLIPEIAAK>,
+    // @@protoc_insertion_point(field:GABKFNAJIDD.LJKNDCIOOCG)
+    pub LJKNDCIOOCG: ::protobuf::MessageField<super::BNAILMNNGIF::BNAILMNNGIF>,
+    // @@protoc_insertion_point(field:GABKFNAJIDD.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
     // @@protoc_insertion_point(field:GABKFNAJIDD.GFEENEDNJGF)
     pub GFEENEDNJGF: u32,
     // special fields
@@ -62,9 +62,9 @@ impl GABKFNAJIDD {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPHAJEKCBKF",
-            |m: &GABKFNAJIDD| { &m.NPHAJEKCBKF },
-            |m: &mut GABKFNAJIDD| { &mut m.NPHAJEKCBKF },
+            "BNCALAMGIOC",
+            |m: &GABKFNAJIDD| { &m.BNCALAMGIOC },
+            |m: &mut GABKFNAJIDD| { &mut m.BNCALAMGIOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_marked",
@@ -76,20 +76,20 @@ impl GABKFNAJIDD {
             |m: &GABKFNAJIDD| { &m.name },
             |m: &mut GABKFNAJIDD| { &mut m.name },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJDLIPEIAAK::KJDLIPEIAAK>(
+            "MJPKBIGCFOM",
+            |m: &GABKFNAJIDD| { &m.MJPKBIGCFOM },
+            |m: &mut GABKFNAJIDD| { &mut m.MJPKBIGCFOM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNAILMNNGIF::BNAILMNNGIF>(
             "LJKNDCIOOCG",
             |m: &GABKFNAJIDD| { &m.LJKNDCIOOCG },
             |m: &mut GABKFNAJIDD| { &mut m.LJKNDCIOOCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNCALAMGIOC",
-            |m: &GABKFNAJIDD| { &m.BNCALAMGIOC },
-            |m: &mut GABKFNAJIDD| { &mut m.BNCALAMGIOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJDLIPEIAAK::KJDLIPEIAAK>(
-            "MJPKBIGCFOM",
-            |m: &GABKFNAJIDD| { &m.MJPKBIGCFOM },
-            |m: &mut GABKFNAJIDD| { &mut m.MJPKBIGCFOM },
+            "NPHAJEKCBKF",
+            |m: &GABKFNAJIDD| { &m.NPHAJEKCBKF },
+            |m: &mut GABKFNAJIDD| { &mut m.NPHAJEKCBKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GFEENEDNJGF",
@@ -114,23 +114,23 @@ impl ::protobuf::Message for GABKFNAJIDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.NPHAJEKCBKF = is.read_uint32()?;
+                16 => {
+                    self.BNCALAMGIOC = is.read_int64()?;
                 },
-                24 => {
+                32 => {
                     self.is_marked = is.read_bool()?;
                 },
                 58 => {
                     self.name = is.read_string()?;
                 },
-                82 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MJPKBIGCFOM)?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJKNDCIOOCG)?;
                 },
-                88 => {
-                    self.BNCALAMGIOC = is.read_int64()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MJPKBIGCFOM)?;
+                112 => {
+                    self.NPHAJEKCBKF = is.read_uint32()?;
                 },
                 120 => {
                     self.GFEENEDNJGF = is.read_uint32()?;
@@ -147,8 +147,8 @@ impl ::protobuf::Message for GABKFNAJIDD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NPHAJEKCBKF);
+        if self.BNCALAMGIOC != 0 {
+            my_size += ::protobuf::rt::int64_size(2, self.BNCALAMGIOC);
         }
         if self.is_marked != false {
             my_size += 1 + 1;
@@ -156,16 +156,16 @@ impl ::protobuf::Message for GABKFNAJIDD {
         if !self.name.is_empty() {
             my_size += ::protobuf::rt::string_size(7, &self.name);
         }
+        if let Some(v) = self.MJPKBIGCFOM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if let Some(v) = self.LJKNDCIOOCG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BNCALAMGIOC != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.BNCALAMGIOC);
-        }
-        if let Some(v) = self.MJPKBIGCFOM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.NPHAJEKCBKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NPHAJEKCBKF);
         }
         if self.GFEENEDNJGF != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.GFEENEDNJGF);
@@ -176,23 +176,23 @@ impl ::protobuf::Message for GABKFNAJIDD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(1, self.NPHAJEKCBKF)?;
+        if self.BNCALAMGIOC != 0 {
+            os.write_int64(2, self.BNCALAMGIOC)?;
         }
         if self.is_marked != false {
-            os.write_bool(3, self.is_marked)?;
+            os.write_bool(4, self.is_marked)?;
         }
         if !self.name.is_empty() {
             os.write_string(7, &self.name)?;
         }
-        if let Some(v) = self.LJKNDCIOOCG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.BNCALAMGIOC != 0 {
-            os.write_int64(11, self.BNCALAMGIOC)?;
-        }
         if let Some(v) = self.MJPKBIGCFOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.LJKNDCIOOCG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(14, self.NPHAJEKCBKF)?;
         }
         if self.GFEENEDNJGF != 0 {
             os.write_uint32(15, self.GFEENEDNJGF)?;
@@ -214,24 +214,24 @@ impl ::protobuf::Message for GABKFNAJIDD {
     }
 
     fn clear(&mut self) {
-        self.NPHAJEKCBKF = 0;
+        self.BNCALAMGIOC = 0;
         self.is_marked = false;
         self.name.clear();
-        self.LJKNDCIOOCG.clear();
-        self.BNCALAMGIOC = 0;
         self.MJPKBIGCFOM.clear();
+        self.LJKNDCIOOCG.clear();
+        self.NPHAJEKCBKF = 0;
         self.GFEENEDNJGF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GABKFNAJIDD {
         static instance: GABKFNAJIDD = GABKFNAJIDD {
-            NPHAJEKCBKF: 0,
+            BNCALAMGIOC: 0,
             is_marked: false,
             name: ::std::string::String::new(),
-            LJKNDCIOOCG: ::protobuf::MessageField::none(),
-            BNCALAMGIOC: 0,
             MJPKBIGCFOM: ::protobuf::MessageField::none(),
+            LJKNDCIOOCG: ::protobuf::MessageField::none(),
+            NPHAJEKCBKF: 0,
             GFEENEDNJGF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -258,12 +258,12 @@ impl ::protobuf::reflect::ProtobufValue for GABKFNAJIDD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GABKFNAJIDD.proto\x1a\x11BNAILMNNGIF.proto\x1a\x11KJDLIPEIAAK.prot\
-    o\"\x84\x02\n\x0bGABKFNAJIDD\x12\x20\n\x0bNPHAJEKCBKF\x18\x01\x20\x01(\r\
-    R\x0bNPHAJEKCBKF\x12\x1b\n\tis_marked\x18\x03\x20\x01(\x08R\x08isMarked\
-    \x12\x12\n\x04name\x18\x07\x20\x01(\tR\x04name\x12.\n\x0bLJKNDCIOOCG\x18\
-    \n\x20\x01(\x0b2\x0c.BNAILMNNGIFR\x0bLJKNDCIOOCG\x12\x20\n\x0bBNCALAMGIO\
-    C\x18\x0b\x20\x01(\x03R\x0bBNCALAMGIOC\x12.\n\x0bMJPKBIGCFOM\x18\x0e\x20\
-    \x01(\x0b2\x0c.KJDLIPEIAAKR\x0bMJPKBIGCFOM\x12\x20\n\x0bGFEENEDNJGF\x18\
+    o\"\x84\x02\n\x0bGABKFNAJIDD\x12\x20\n\x0bBNCALAMGIOC\x18\x02\x20\x01(\
+    \x03R\x0bBNCALAMGIOC\x12\x1b\n\tis_marked\x18\x04\x20\x01(\x08R\x08isMar\
+    ked\x12\x12\n\x04name\x18\x07\x20\x01(\tR\x04name\x12.\n\x0bMJPKBIGCFOM\
+    \x18\t\x20\x01(\x0b2\x0c.KJDLIPEIAAKR\x0bMJPKBIGCFOM\x12.\n\x0bLJKNDCIOO\
+    CG\x18\r\x20\x01(\x0b2\x0c.BNAILMNNGIFR\x0bLJKNDCIOOCG\x12\x20\n\x0bNPHA\
+    JEKCBKF\x18\x0e\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x20\n\x0bGFEENEDNJGF\x18\
     \x0f\x20\x01(\rR\x0bGFEENEDNJGFb\x06proto3\
 ";
 

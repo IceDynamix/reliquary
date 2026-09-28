@@ -29,10 +29,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum EFDHFOEMKHH {
     // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_NLCDGIPGFDJ)
     EFDHFOEMKHH_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_GDINFMFDOPD)
-    EFDHFOEMKHH_GDINFMFDOPD = 9479,
     // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_DLDAICAFMPP)
-    EFDHFOEMKHH_DLDAICAFMPP = 9474,
+    EFDHFOEMKHH_DLDAICAFMPP = 9473,
+    // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_GDINFMFDOPD)
+    EFDHFOEMKHH_GDINFMFDOPD = 9472,
 }
 
 impl ::protobuf::Enum for EFDHFOEMKHH {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for EFDHFOEMKHH {
     fn from_i32(value: i32) -> ::std::option::Option<EFDHFOEMKHH> {
         match value {
             0 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_NLCDGIPGFDJ),
-            9479 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
-            9474 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP),
+            9473 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP),
+            9472 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
             _ => ::std::option::Option::None
         }
     }
@@ -54,16 +54,16 @@ impl ::protobuf::Enum for EFDHFOEMKHH {
     fn from_str(str: &str) -> ::std::option::Option<EFDHFOEMKHH> {
         match str {
             "EFDHFOEMKHH_NLCDGIPGFDJ" => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_NLCDGIPGFDJ),
-            "EFDHFOEMKHH_GDINFMFDOPD" => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
             "EFDHFOEMKHH_DLDAICAFMPP" => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP),
+            "EFDHFOEMKHH_GDINFMFDOPD" => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [EFDHFOEMKHH] = &[
         EFDHFOEMKHH::EFDHFOEMKHH_NLCDGIPGFDJ,
-        EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD,
         EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP,
+        EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD,
     ];
 }
 
@@ -76,8 +76,8 @@ impl ::protobuf::EnumFull for EFDHFOEMKHH {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             EFDHFOEMKHH::EFDHFOEMKHH_NLCDGIPGFDJ => 0,
-            EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD => 1,
-            EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP => 2,
+            EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP => 1,
+            EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,8 +97,8 @@ impl EFDHFOEMKHH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EFDHFOEMKHH.proto*f\n\x0bEFDHFOEMKHH\x12\x1b\n\x17EFDHFOEMKHH_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17EFDHFOEMKHH_GDINFMFDOPD\x10\x87J\x12\x1c\n\
-    \x17EFDHFOEMKHH_DLDAICAFMPP\x10\x82Jb\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17EFDHFOEMKHH_DLDAICAFMPP\x10\x81J\x12\x1c\n\
+    \x17EFDHFOEMKHH_GDINFMFDOPD\x10\x80Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

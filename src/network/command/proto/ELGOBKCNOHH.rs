@@ -32,10 +32,10 @@ pub struct ELGOBKCNOHH {
     pub LJCEOGPOGBE: u32,
     // @@protoc_insertion_point(field:ELGOBKCNOHH.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
-    // @@protoc_insertion_point(field:ELGOBKCNOHH.GCIHGKCJOGB)
-    pub GCIHGKCJOGB: bool,
     // @@protoc_insertion_point(field:ELGOBKCNOHH.KINNMAGDDJJ)
     pub KINNMAGDDJJ: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:ELGOBKCNOHH.GCIHGKCJOGB)
+    pub GCIHGKCJOGB: bool,
     // @@protoc_insertion_point(field:ELGOBKCNOHH.BELPGDAGFIH)
     pub BELPGDAGFIH: bool,
     // special fields
@@ -67,15 +67,15 @@ impl ELGOBKCNOHH {
             |m: &ELGOBKCNOHH| { &m.cost_data },
             |m: &mut ELGOBKCNOHH| { &mut m.cost_data },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCIHGKCJOGB",
-            |m: &ELGOBKCNOHH| { &m.GCIHGKCJOGB },
-            |m: &mut ELGOBKCNOHH| { &mut m.GCIHGKCJOGB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "KINNMAGDDJJ",
             |m: &ELGOBKCNOHH| { &m.KINNMAGDDJJ },
             |m: &mut ELGOBKCNOHH| { &mut m.KINNMAGDDJJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCIHGKCJOGB",
+            |m: &ELGOBKCNOHH| { &m.GCIHGKCJOGB },
+            |m: &mut ELGOBKCNOHH| { &mut m.GCIHGKCJOGB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BELPGDAGFIH",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for ELGOBKCNOHH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.LJCEOGPOGBE = is.read_uint32()?;
                 },
-                34 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                80 => {
-                    self.GCIHGKCJOGB = is.read_bool()?;
-                },
-                90 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KINNMAGDDJJ)?;
                 },
-                96 => {
+                56 => {
+                    self.GCIHGKCJOGB = is.read_bool()?;
+                },
+                112 => {
                     self.BELPGDAGFIH = is.read_bool()?;
                 },
                 tag => {
@@ -128,18 +128,18 @@ impl ::protobuf::Message for ELGOBKCNOHH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LJCEOGPOGBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LJCEOGPOGBE);
+            my_size += ::protobuf::rt::uint32_size(2, self.LJCEOGPOGBE);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GCIHGKCJOGB != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.KINNMAGDDJJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.GCIHGKCJOGB != false {
+            my_size += 1 + 1;
         }
         if self.BELPGDAGFIH != false {
             my_size += 1 + 1;
@@ -151,19 +151,19 @@ impl ::protobuf::Message for ELGOBKCNOHH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LJCEOGPOGBE != 0 {
-            os.write_uint32(3, self.LJCEOGPOGBE)?;
+            os.write_uint32(2, self.LJCEOGPOGBE)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.GCIHGKCJOGB != false {
-            os.write_bool(10, self.GCIHGKCJOGB)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.KINNMAGDDJJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.GCIHGKCJOGB != false {
+            os.write_bool(7, self.GCIHGKCJOGB)?;
         }
         if self.BELPGDAGFIH != false {
-            os.write_bool(12, self.BELPGDAGFIH)?;
+            os.write_bool(14, self.BELPGDAGFIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::Message for ELGOBKCNOHH {
     fn clear(&mut self) {
         self.LJCEOGPOGBE = 0;
         self.cost_data.clear();
-        self.GCIHGKCJOGB = false;
         self.KINNMAGDDJJ.clear();
+        self.GCIHGKCJOGB = false;
         self.BELPGDAGFIH = false;
         self.special_fields.clear();
     }
@@ -194,8 +194,8 @@ impl ::protobuf::Message for ELGOBKCNOHH {
         static instance: ELGOBKCNOHH = ELGOBKCNOHH {
             LJCEOGPOGBE: 0,
             cost_data: ::protobuf::MessageField::none(),
-            GCIHGKCJOGB: false,
             KINNMAGDDJJ: ::protobuf::MessageField::none(),
+            GCIHGKCJOGB: false,
             BELPGDAGFIH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for ELGOBKCNOHH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ELGOBKCNOHH.proto\x1a\x12ItemCostData.proto\"\xd0\x01\n\x0bELGOBKC\
-    NOHH\x12\x20\n\x0bLJCEOGPOGBE\x18\x03\x20\x01(\rR\x0bLJCEOGPOGBE\x12*\n\
-    \tcost_data\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\x20\n\
-    \x0bGCIHGKCJOGB\x18\n\x20\x01(\x08R\x0bGCIHGKCJOGB\x12/\n\x0bKINNMAGDDJJ\
-    \x18\x0b\x20\x01(\x0b2\r.ItemCostDataR\x0bKINNMAGDDJJ\x12\x20\n\x0bBELPG\
-    DAGFIH\x18\x0c\x20\x01(\x08R\x0bBELPGDAGFIHb\x06proto3\
+    NOHH\x12\x20\n\x0bLJCEOGPOGBE\x18\x02\x20\x01(\rR\x0bLJCEOGPOGBE\x12*\n\
+    \tcost_data\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12/\n\x0b\
+    KINNMAGDDJJ\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0bKINNMAGDDJJ\x12\x20\
+    \n\x0bGCIHGKCJOGB\x18\x07\x20\x01(\x08R\x0bGCIHGKCJOGB\x12\x20\n\x0bBELP\
+    GDAGFIH\x18\x0e\x20\x01(\x08R\x0bBELPGDAGFIHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HKNBLADLAAE {
     // message fields
-    // @@protoc_insertion_point(field:HKNBLADLAAE.event_id)
-    pub event_id: u32,
     // @@protoc_insertion_point(field:HKNBLADLAAE.HAFOKMHCGFM)
     pub HAFOKMHCGFM: u32,
+    // @@protoc_insertion_point(field:HKNBLADLAAE.event_id)
+    pub event_id: u32,
     // @@protoc_insertion_point(field:HKNBLADLAAE.MIPKOFFGPFA)
     pub MIPKOFFGPFA: u32,
     // special fields
@@ -54,14 +54,14 @@ impl HKNBLADLAAE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &HKNBLADLAAE| { &m.event_id },
-            |m: &mut HKNBLADLAAE| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HAFOKMHCGFM",
             |m: &HKNBLADLAAE| { &m.HAFOKMHCGFM },
             |m: &mut HKNBLADLAAE| { &mut m.HAFOKMHCGFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &HKNBLADLAAE| { &m.event_id },
+            |m: &mut HKNBLADLAAE| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MIPKOFFGPFA",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for HKNBLADLAAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.event_id = is.read_uint32()?;
-                },
-                40 => {
+                56 => {
                     self.HAFOKMHCGFM = is.read_uint32()?;
+                },
+                96 => {
+                    self.event_id = is.read_uint32()?;
                 },
                 120 => {
                     self.MIPKOFFGPFA = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for HKNBLADLAAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.event_id);
-        }
         if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HAFOKMHCGFM);
+            my_size += ::protobuf::rt::uint32_size(7, self.HAFOKMHCGFM);
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.event_id);
         }
         if self.MIPKOFFGPFA != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.MIPKOFFGPFA);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for HKNBLADLAAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.event_id != 0 {
-            os.write_uint32(1, self.event_id)?;
-        }
         if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(5, self.HAFOKMHCGFM)?;
+            os.write_uint32(7, self.HAFOKMHCGFM)?;
+        }
+        if self.event_id != 0 {
+            os.write_uint32(12, self.event_id)?;
         }
         if self.MIPKOFFGPFA != 0 {
             os.write_uint32(15, self.MIPKOFFGPFA)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for HKNBLADLAAE {
     }
 
     fn clear(&mut self) {
-        self.event_id = 0;
         self.HAFOKMHCGFM = 0;
+        self.event_id = 0;
         self.MIPKOFFGPFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HKNBLADLAAE {
         static instance: HKNBLADLAAE = HKNBLADLAAE {
-            event_id: 0,
             HAFOKMHCGFM: 0,
+            event_id: 0,
             MIPKOFFGPFA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for HKNBLADLAAE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HKNBLADLAAE.proto\"l\n\x0bHKNBLADLAAE\x12\x19\n\x08event_id\x18\
-    \x01\x20\x01(\rR\x07eventId\x12\x20\n\x0bHAFOKMHCGFM\x18\x05\x20\x01(\rR\
-    \x0bHAFOKMHCGFM\x12\x20\n\x0bMIPKOFFGPFA\x18\x0f\x20\x01(\rR\x0bMIPKOFFG\
-    PFAb\x06proto3\
+    \n\x11HKNBLADLAAE.proto\"l\n\x0bHKNBLADLAAE\x12\x20\n\x0bHAFOKMHCGFM\x18\
+    \x07\x20\x01(\rR\x0bHAFOKMHCGFM\x12\x19\n\x08event_id\x18\x0c\x20\x01(\r\
+    R\x07eventId\x12\x20\n\x0bMIPKOFFGPFA\x18\x0f\x20\x01(\rR\x0bMIPKOFFGPFA\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

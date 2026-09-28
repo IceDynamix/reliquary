@@ -45,105 +45,7 @@ impl GBKOBPDKFOA {
         ::std::default::Default::default()
     }
 
-    // .GJJNNBKCJKF FNJBFPALOAO = 4;
-
-    pub fn FNJBFPALOAO(&self) -> &super::GJJNNBKCJKF::GJJNNBKCJKF {
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v)) => v,
-            _ => <super::GJJNNBKCJKF::GJJNNBKCJKF as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_FNJBFPALOAO(&mut self) {
-        self.FJIANHMABAB = ::std::option::Option::None;
-    }
-
-    pub fn has_FNJBFPALOAO(&self) -> bool {
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FNJBFPALOAO(&mut self, v: super::GJJNNBKCJKF::GJJNNBKCJKF) {
-        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_FNJBFPALOAO(&mut self) -> &mut super::GJJNNBKCJKF::GJJNNBKCJKF {
-        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(_)) = self.FJIANHMABAB {
-        } else {
-            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(super::GJJNNBKCJKF::GJJNNBKCJKF::new()));
-        }
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_FNJBFPALOAO(&mut self) -> super::GJJNNBKCJKF::GJJNNBKCJKF {
-        if self.has_FNJBFPALOAO() {
-            match self.FJIANHMABAB.take() {
-                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GJJNNBKCJKF::GJJNNBKCJKF::new()
-        }
-    }
-
-    // .NJPJKJBMKGB PAGPNOKLNOM = 15;
-
-    pub fn PAGPNOKLNOM(&self) -> &super::NJPJKJBMKGB::NJPJKJBMKGB {
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v)) => v,
-            _ => <super::NJPJKJBMKGB::NJPJKJBMKGB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_PAGPNOKLNOM(&mut self) {
-        self.FJIANHMABAB = ::std::option::Option::None;
-    }
-
-    pub fn has_PAGPNOKLNOM(&self) -> bool {
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_PAGPNOKLNOM(&mut self, v: super::NJPJKJBMKGB::NJPJKJBMKGB) {
-        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_PAGPNOKLNOM(&mut self) -> &mut super::NJPJKJBMKGB::NJPJKJBMKGB {
-        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(_)) = self.FJIANHMABAB {
-        } else {
-            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(super::NJPJKJBMKGB::NJPJKJBMKGB::new()));
-        }
-        match self.FJIANHMABAB {
-            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_PAGPNOKLNOM(&mut self) -> super::NJPJKJBMKGB::NJPJKJBMKGB {
-        if self.has_PAGPNOKLNOM() {
-            match self.FJIANHMABAB.take() {
-                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::NJPJKJBMKGB::NJPJKJBMKGB::new()
-        }
-    }
-
-    // .HOKMNINJPBP LCMADDIMION = 11;
+    // .HOKMNINJPBP LCMADDIMION = 2;
 
     pub fn LCMADDIMION(&self) -> &super::HOKMNINJPBP::HOKMNINJPBP {
         match self.FJIANHMABAB {
@@ -192,15 +94,113 @@ impl GBKOBPDKFOA {
         }
     }
 
+    // .NJPJKJBMKGB PAGPNOKLNOM = 10;
+
+    pub fn PAGPNOKLNOM(&self) -> &super::NJPJKJBMKGB::NJPJKJBMKGB {
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v)) => v,
+            _ => <super::NJPJKJBMKGB::NJPJKJBMKGB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_PAGPNOKLNOM(&mut self) {
+        self.FJIANHMABAB = ::std::option::Option::None;
+    }
+
+    pub fn has_PAGPNOKLNOM(&self) -> bool {
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_PAGPNOKLNOM(&mut self, v: super::NJPJKJBMKGB::NJPJKJBMKGB) {
+        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_PAGPNOKLNOM(&mut self) -> &mut super::NJPJKJBMKGB::NJPJKJBMKGB {
+        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(_)) = self.FJIANHMABAB {
+        } else {
+            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(super::NJPJKJBMKGB::NJPJKJBMKGB::new()));
+        }
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_PAGPNOKLNOM(&mut self) -> super::NJPJKJBMKGB::NJPJKJBMKGB {
+        if self.has_PAGPNOKLNOM() {
+            match self.FJIANHMABAB.take() {
+                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NJPJKJBMKGB::NJPJKJBMKGB::new()
+        }
+    }
+
+    // .GJJNNBKCJKF FNJBFPALOAO = 14;
+
+    pub fn FNJBFPALOAO(&self) -> &super::GJJNNBKCJKF::GJJNNBKCJKF {
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v)) => v,
+            _ => <super::GJJNNBKCJKF::GJJNNBKCJKF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_FNJBFPALOAO(&mut self) {
+        self.FJIANHMABAB = ::std::option::Option::None;
+    }
+
+    pub fn has_FNJBFPALOAO(&self) -> bool {
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FNJBFPALOAO(&mut self, v: super::GJJNNBKCJKF::GJJNNBKCJKF) {
+        self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_FNJBFPALOAO(&mut self) -> &mut super::GJJNNBKCJKF::GJJNNBKCJKF {
+        if let ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(_)) = self.FJIANHMABAB {
+        } else {
+            self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(super::GJJNNBKCJKF::GJJNNBKCJKF::new()));
+        }
+        match self.FJIANHMABAB {
+            ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_FNJBFPALOAO(&mut self) -> super::GJJNNBKCJKF::GJJNNBKCJKF {
+        if self.has_FNJBFPALOAO() {
+            match self.FJIANHMABAB.take() {
+                ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GJJNNBKCJKF::GJJNNBKCJKF::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJJNNBKCJKF::GJJNNBKCJKF>(
-            "FNJBFPALOAO",
-            GBKOBPDKFOA::has_FNJBFPALOAO,
-            GBKOBPDKFOA::FNJBFPALOAO,
-            GBKOBPDKFOA::mut_FNJBFPALOAO,
-            GBKOBPDKFOA::set_FNJBFPALOAO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HOKMNINJPBP::HOKMNINJPBP>(
+            "LCMADDIMION",
+            GBKOBPDKFOA::has_LCMADDIMION,
+            GBKOBPDKFOA::LCMADDIMION,
+            GBKOBPDKFOA::mut_LCMADDIMION,
+            GBKOBPDKFOA::set_LCMADDIMION,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NJPJKJBMKGB::NJPJKJBMKGB>(
             "PAGPNOKLNOM",
@@ -209,12 +209,12 @@ impl GBKOBPDKFOA {
             GBKOBPDKFOA::mut_PAGPNOKLNOM,
             GBKOBPDKFOA::set_PAGPNOKLNOM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HOKMNINJPBP::HOKMNINJPBP>(
-            "LCMADDIMION",
-            GBKOBPDKFOA::has_LCMADDIMION,
-            GBKOBPDKFOA::LCMADDIMION,
-            GBKOBPDKFOA::mut_LCMADDIMION,
-            GBKOBPDKFOA::set_LCMADDIMION,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJJNNBKCJKF::GJJNNBKCJKF>(
+            "FNJBFPALOAO",
+            GBKOBPDKFOA::has_FNJBFPALOAO,
+            GBKOBPDKFOA::FNJBFPALOAO,
+            GBKOBPDKFOA::mut_FNJBFPALOAO,
+            GBKOBPDKFOA::set_FNJBFPALOAO,
         ));
         oneofs.push(gbkobpdkfoa::FJIANHMABAB::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GBKOBPDKFOA>(
@@ -235,14 +235,14 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(is.read_message()?));
+                18 => {
+                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(is.read_message()?));
                 },
-                122 => {
+                82 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(is.read_message()?));
                 },
-                90 => {
-                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(is.read_message()?));
+                114 => {
+                    self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -258,7 +258,7 @@ impl ::protobuf::Message for GBKOBPDKFOA {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
-                &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
+                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -266,7 +266,7 @@ impl ::protobuf::Message for GBKOBPDKFOA {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
+                &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -280,14 +280,14 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
-                &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -347,12 +347,12 @@ pub mod gbkobpdkfoa {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:GBKOBPDKFOA.FJIANHMABAB)
     pub enum FJIANHMABAB {
-        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.FNJBFPALOAO)
-        FNJBFPALOAO(super::super::GJJNNBKCJKF::GJJNNBKCJKF),
-        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.PAGPNOKLNOM)
-        PAGPNOKLNOM(super::super::NJPJKJBMKGB::NJPJKJBMKGB),
         // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.LCMADDIMION)
         LCMADDIMION(super::super::HOKMNINJPBP::HOKMNINJPBP),
+        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.PAGPNOKLNOM)
+        PAGPNOKLNOM(super::super::NJPJKJBMKGB::NJPJKJBMKGB),
+        // @@protoc_insertion_point(oneof_field:GBKOBPDKFOA.FNJBFPALOAO)
+        FNJBFPALOAO(super::super::GJJNNBKCJKF::GJJNNBKCJKF),
     }
 
     impl ::protobuf::Oneof for FJIANHMABAB {
@@ -374,11 +374,11 @@ pub mod gbkobpdkfoa {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBKOBPDKFOA.proto\x1a\x11GJJNNBKCJKF.proto\x1a\x11HOKMNINJPBP.prot\
-    o\x1a\x11NJPJKJBMKGB.proto\"\xb2\x01\n\x0bGBKOBPDKFOA\x120\n\x0bFNJBFPAL\
-    OAO\x18\x04\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\x120\n\x0bP\
-    AGPNOKLNOM\x18\x0f\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\
-    \n\x0bLCMADDIMION\x18\x0b\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMI\
-    ONB\r\n\x0bFJIANHMABABb\x06proto3\
+    o\x1a\x11NJPJKJBMKGB.proto\"\xb2\x01\n\x0bGBKOBPDKFOA\x120\n\x0bLCMADDIM\
+    ION\x18\x02\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMION\x120\n\x0bP\
+    AGPNOKLNOM\x18\n\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\n\
+    \x0bFNJBFPALOAO\x18\x0e\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\
+    B\r\n\x0bFJIANHMABABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

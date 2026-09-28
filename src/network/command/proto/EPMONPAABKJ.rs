@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EPMONPAABKJ {
     // message fields
-    // @@protoc_insertion_point(field:EPMONPAABKJ.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:EPMONPAABKJ.CBGODLHCLPK)
     pub CBGODLHCLPK: u32,
     // @@protoc_insertion_point(field:EPMONPAABKJ.BOGIJENAEHJ)
     pub BOGIJENAEHJ: u32,
+    // @@protoc_insertion_point(field:EPMONPAABKJ.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EPMONPAABKJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl EPMONPAABKJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EPMONPAABKJ| { &m.retcode },
-            |m: &mut EPMONPAABKJ| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBGODLHCLPK",
             |m: &EPMONPAABKJ| { &m.CBGODLHCLPK },
             |m: &mut EPMONPAABKJ| { &mut m.CBGODLHCLPK },
@@ -67,6 +62,11 @@ impl EPMONPAABKJ {
             "BOGIJENAEHJ",
             |m: &EPMONPAABKJ| { &m.BOGIJENAEHJ },
             |m: &mut EPMONPAABKJ| { &mut m.BOGIJENAEHJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EPMONPAABKJ| { &m.retcode },
+            |m: &mut EPMONPAABKJ| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EPMONPAABKJ>(
             "EPMONPAABKJ",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for EPMONPAABKJ {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                40 => {
                     self.CBGODLHCLPK = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.BOGIJENAEHJ = is.read_uint32()?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EPMONPAABKJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
         if self.CBGODLHCLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CBGODLHCLPK);
+            my_size += ::protobuf::rt::uint32_size(2, self.CBGODLHCLPK);
         }
         if self.BOGIJENAEHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BOGIJENAEHJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.BOGIJENAEHJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EPMONPAABKJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
         if self.CBGODLHCLPK != 0 {
-            os.write_uint32(5, self.CBGODLHCLPK)?;
+            os.write_uint32(2, self.CBGODLHCLPK)?;
         }
         if self.BOGIJENAEHJ != 0 {
-            os.write_uint32(6, self.BOGIJENAEHJ)?;
+            os.write_uint32(4, self.BOGIJENAEHJ)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EPMONPAABKJ {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.CBGODLHCLPK = 0;
         self.BOGIJENAEHJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EPMONPAABKJ {
         static instance: EPMONPAABKJ = EPMONPAABKJ {
-            retcode: 0,
             CBGODLHCLPK: 0,
             BOGIJENAEHJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for EPMONPAABKJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EPMONPAABKJ.proto\"k\n\x0bEPMONPAABKJ\x12\x18\n\x07retcode\x18\x02\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bCBGODLHCLPK\x18\x05\x20\x01(\rR\x0b\
-    CBGODLHCLPK\x12\x20\n\x0bBOGIJENAEHJ\x18\x06\x20\x01(\rR\x0bBOGIJENAEHJb\
+    \n\x11EPMONPAABKJ.proto\"k\n\x0bEPMONPAABKJ\x12\x20\n\x0bCBGODLHCLPK\x18\
+    \x02\x20\x01(\rR\x0bCBGODLHCLPK\x12\x20\n\x0bBOGIJENAEHJ\x18\x04\x20\x01\
+    (\rR\x0bBOGIJENAEHJ\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

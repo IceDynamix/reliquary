@@ -79,13 +79,13 @@ impl ::protobuf::Message for NPNAEPOKPNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FOCNBOANONM)?;
                 },
-                58 => {
+                98 => {
                     is.read_repeated_packed_float_into(&mut self.LIAMHNFAPNL)?;
                 },
-                61 => {
+                101 => {
                     self.LIAMHNFAPNL.push(is.read_float()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for NPNAEPOKPNE {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_float_size(7, &self.LIAMHNFAPNL);
+        my_size += ::protobuf::rt::vec_packed_float_size(12, &self.LIAMHNFAPNL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for NPNAEPOKPNE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.FOCNBOANONM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        os.write_repeated_packed_float(7, &self.LIAMHNFAPNL)?;
+        os.write_repeated_packed_float(12, &self.LIAMHNFAPNL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NPNAEPOKPNE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPNAEPOKPNE.proto\x1a\x11OPOCANGAEHJ.proto\"_\n\x0bNPNAEPOKPNE\x12\
-    .\n\x0bFOCNBOANONM\x18\x03\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x0bFOCNBOANONM\
-    \x12\x20\n\x0bLIAMHNFAPNL\x18\x07\x20\x03(\x02R\x0bLIAMHNFAPNLb\x06proto\
+    .\n\x0bFOCNBOANONM\x18\n\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x0bFOCNBOANONM\
+    \x12\x20\n\x0bLIAMHNFAPNL\x18\x0c\x20\x03(\x02R\x0bLIAMHNFAPNLb\x06proto\
     3\
 ";
 

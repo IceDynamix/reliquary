@@ -30,10 +30,10 @@ pub struct TakeRechargeGiftRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeRechargeGiftRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeRechargeGiftRewardScRsp.KJBDNIIBGNE)
-    pub KJBDNIIBGNE: ::protobuf::MessageField<super::JBNGCJJDLHL::JBNGCJJDLHL>,
     // @@protoc_insertion_point(field:TakeRechargeGiftRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeRechargeGiftRewardScRsp.KJBDNIIBGNE)
+    pub KJBDNIIBGNE: ::protobuf::MessageField<super::JBNGCJJDLHL::JBNGCJJDLHL>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRechargeGiftRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl TakeRechargeGiftRewardScRsp {
             |m: &TakeRechargeGiftRewardScRsp| { &m.reward },
             |m: &mut TakeRechargeGiftRewardScRsp| { &mut m.reward },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBNGCJJDLHL::JBNGCJJDLHL>(
-            "KJBDNIIBGNE",
-            |m: &TakeRechargeGiftRewardScRsp| { &m.KJBDNIIBGNE },
-            |m: &mut TakeRechargeGiftRewardScRsp| { &mut m.KJBDNIIBGNE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeRechargeGiftRewardScRsp| { &m.retcode },
             |m: &mut TakeRechargeGiftRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBNGCJJDLHL::JBNGCJJDLHL>(
+            "KJBDNIIBGNE",
+            |m: &TakeRechargeGiftRewardScRsp| { &m.KJBDNIIBGNE },
+            |m: &mut TakeRechargeGiftRewardScRsp| { &mut m.KJBDNIIBGNE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRechargeGiftRewardScRsp>(
             "TakeRechargeGiftRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeRechargeGiftRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJBDNIIBGNE)?;
-                },
-                96 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJBDNIIBGNE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for TakeRechargeGiftRewardScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         if let Some(v) = self.KJBDNIIBGNE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for TakeRechargeGiftRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.KJBDNIIBGNE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.KJBDNIIBGNE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for TakeRechargeGiftRewardScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.KJBDNIIBGNE.clear();
         self.retcode = 0;
+        self.KJBDNIIBGNE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRechargeGiftRewardScRsp {
         static instance: TakeRechargeGiftRewardScRsp = TakeRechargeGiftRewardScRsp {
             reward: ::protobuf::MessageField::none(),
-            KJBDNIIBGNE: ::protobuf::MessageField::none(),
             retcode: 0,
+            KJBDNIIBGNE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeRechargeGiftRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!TakeRechargeGiftRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11JBNGCJ\
     JDLHL.proto\"\x8a\x01\n\x1bTakeRechargeGiftRewardScRsp\x12!\n\x06reward\
-    \x18\x06\x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bKJBDNIIBGNE\x18\t\
-    \x20\x01(\x0b2\x0c.JBNGCJJDLHLR\x0bKJBDNIIBGNE\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x18\t\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\x0b\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bKJBDNIIBGNE\x18\x0c\x20\x01(\x0b2\x0c.\
+    JBNGCJJDLHLR\x0bKJBDNIIBGNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

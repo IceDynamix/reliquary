@@ -79,10 +79,10 @@ impl ::protobuf::Message for MCDBJHOCGHI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.BJDOINAHDLN = is.read_bool()?;
                 },
-                64 => {
+                104 => {
                     self.trait_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MCDBJHOCGHI {
             my_size += 1 + 1;
         }
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MCDBJHOCGHI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BJDOINAHDLN != false {
-            os.write_bool(1, self.BJDOINAHDLN)?;
+            os.write_bool(8, self.BJDOINAHDLN)?;
         }
         if self.trait_id != 0 {
-            os.write_uint32(8, self.trait_id)?;
+            os.write_uint32(13, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MCDBJHOCGHI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCDBJHOCGHI.proto\"J\n\x0bMCDBJHOCGHI\x12\x20\n\x0bBJDOINAHDLN\x18\
-    \x01\x20\x01(\x08R\x0bBJDOINAHDLN\x12\x19\n\x08trait_id\x18\x08\x20\x01(\
-    \rR\x07traitIdb\x06proto3\
+    \x08\x20\x01(\x08R\x0bBJDOINAHDLN\x12\x19\n\x08trait_id\x18\r\x20\x01(\r\
+    R\x07traitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

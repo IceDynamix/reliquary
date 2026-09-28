@@ -30,9 +30,9 @@ pub enum MENMKJOIJBE {
     // @@protoc_insertion_point(enum_value:MENMKJOIJBE.MENMKJOIJBE_NLCDGIPGFDJ)
     MENMKJOIJBE_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:MENMKJOIJBE.MENMKJOIJBE_HLBDJCCBNJP)
-    MENMKJOIJBE_HLBDJCCBNJP = 1132,
+    MENMKJOIJBE_HLBDJCCBNJP = 1134,
     // @@protoc_insertion_point(enum_value:MENMKJOIJBE.MENMKJOIJBE_OCEIGENBHHG)
-    MENMKJOIJBE_OCEIGENBHHG = 1113,
+    MENMKJOIJBE_OCEIGENBHHG = 1125,
 }
 
 impl ::protobuf::Enum for MENMKJOIJBE {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for MENMKJOIJBE {
     fn from_i32(value: i32) -> ::std::option::Option<MENMKJOIJBE> {
         match value {
             0 => ::std::option::Option::Some(MENMKJOIJBE::MENMKJOIJBE_NLCDGIPGFDJ),
-            1132 => ::std::option::Option::Some(MENMKJOIJBE::MENMKJOIJBE_HLBDJCCBNJP),
-            1113 => ::std::option::Option::Some(MENMKJOIJBE::MENMKJOIJBE_OCEIGENBHHG),
+            1134 => ::std::option::Option::Some(MENMKJOIJBE::MENMKJOIJBE_HLBDJCCBNJP),
+            1125 => ::std::option::Option::Some(MENMKJOIJBE::MENMKJOIJBE_OCEIGENBHHG),
             _ => ::std::option::Option::None
         }
     }
@@ -97,8 +97,8 @@ impl MENMKJOIJBE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MENMKJOIJBE.proto*f\n\x0bMENMKJOIJBE\x12\x1b\n\x17MENMKJOIJBE_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17MENMKJOIJBE_HLBDJCCBNJP\x10\xec\x08\x12\x1c\n\
-    \x17MENMKJOIJBE_OCEIGENBHHG\x10\xd9\x08b\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17MENMKJOIJBE_HLBDJCCBNJP\x10\xee\x08\x12\x1c\n\
+    \x17MENMKJOIJBE_OCEIGENBHHG\x10\xe5\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

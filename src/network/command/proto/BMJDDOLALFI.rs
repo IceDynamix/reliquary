@@ -79,10 +79,10 @@ impl ::protobuf::Message for BMJDDOLALFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                64 => {
                     self.count = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.ENBEGMDIFKN = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BMJDDOLALFI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.count != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.count);
+            my_size += ::protobuf::rt::uint32_size(8, self.count);
         }
         if self.ENBEGMDIFKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ENBEGMDIFKN);
+            my_size += ::protobuf::rt::uint32_size(9, self.ENBEGMDIFKN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BMJDDOLALFI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.count != 0 {
-            os.write_uint32(2, self.count)?;
+            os.write_uint32(8, self.count)?;
         }
         if self.ENBEGMDIFKN != 0 {
-            os.write_uint32(11, self.ENBEGMDIFKN)?;
+            os.write_uint32(9, self.ENBEGMDIFKN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BMJDDOLALFI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BMJDDOLALFI.proto\"E\n\x0bBMJDDOLALFI\x12\x14\n\x05count\x18\x02\
-    \x20\x01(\rR\x05count\x12\x20\n\x0bENBEGMDIFKN\x18\x0b\x20\x01(\rR\x0bEN\
-    BEGMDIFKNb\x06proto3\
+    \n\x11BMJDDOLALFI.proto\"E\n\x0bBMJDDOLALFI\x12\x14\n\x05count\x18\x08\
+    \x20\x01(\rR\x05count\x12\x20\n\x0bENBEGMDIFKN\x18\t\x20\x01(\rR\x0bENBE\
+    GMDIFKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

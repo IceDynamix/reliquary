@@ -30,7 +30,7 @@ pub enum PNDNCHEGFEL {
     // @@protoc_insertion_point(enum_value:PNDNCHEGFEL.PNDNCHEGFEL_KBNNEJKNKBH)
     PNDNCHEGFEL_KBNNEJKNKBH = 0,
     // @@protoc_insertion_point(enum_value:PNDNCHEGFEL.PNDNCHEGFEL_JDGJIBOEKFK)
-    PNDNCHEGFEL_JDGJIBOEKFK = 10129,
+    PNDNCHEGFEL_JDGJIBOEKFK = 10122,
 }
 
 impl ::protobuf::Enum for PNDNCHEGFEL {
@@ -43,7 +43,7 @@ impl ::protobuf::Enum for PNDNCHEGFEL {
     fn from_i32(value: i32) -> ::std::option::Option<PNDNCHEGFEL> {
         match value {
             0 => ::std::option::Option::Some(PNDNCHEGFEL::PNDNCHEGFEL_KBNNEJKNKBH),
-            10129 => ::std::option::Option::Some(PNDNCHEGFEL::PNDNCHEGFEL_JDGJIBOEKFK),
+            10122 => ::std::option::Option::Some(PNDNCHEGFEL::PNDNCHEGFEL_JDGJIBOEKFK),
             _ => ::std::option::Option::None
         }
     }
@@ -91,7 +91,7 @@ impl PNDNCHEGFEL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNDNCHEGFEL.proto*H\n\x0bPNDNCHEGFEL\x12\x1b\n\x17PNDNCHEGFEL_KBNN\
-    EJKNKBH\x10\0\x12\x1c\n\x17PNDNCHEGFEL_JDGJIBOEKFK\x10\x91Ob\x06proto3\
+    EJKNKBH\x10\0\x12\x1c\n\x17PNDNCHEGFEL_JDGJIBOEKFK\x10\x8aOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ILKADBIDKAA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                8 => {
                     self.GCBDPAFMKAN = is.read_uint32()?;
                 },
-                104 => {
+                24 => {
                     self.OKPLPEELPBC = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ILKADBIDKAA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GCBDPAFMKAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GCBDPAFMKAN);
+            my_size += ::protobuf::rt::uint32_size(1, self.GCBDPAFMKAN);
         }
         if self.OKPLPEELPBC != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ILKADBIDKAA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GCBDPAFMKAN != 0 {
-            os.write_uint32(9, self.GCBDPAFMKAN)?;
+            os.write_uint32(1, self.GCBDPAFMKAN)?;
         }
         if self.OKPLPEELPBC != false {
-            os.write_bool(13, self.OKPLPEELPBC)?;
+            os.write_bool(3, self.OKPLPEELPBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ILKADBIDKAA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ILKADBIDKAA.proto\"Q\n\x0bILKADBIDKAA\x12\x20\n\x0bGCBDPAFMKAN\x18\
-    \t\x20\x01(\rR\x0bGCBDPAFMKAN\x12\x20\n\x0bOKPLPEELPBC\x18\r\x20\x01(\
-    \x08R\x0bOKPLPEELPBCb\x06proto3\
+    \x01\x20\x01(\rR\x0bGCBDPAFMKAN\x12\x20\n\x0bOKPLPEELPBC\x18\x03\x20\x01\
+    (\x08R\x0bOKPLPEELPBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

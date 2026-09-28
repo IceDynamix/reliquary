@@ -79,10 +79,10 @@ impl ::protobuf::Message for JFJDMGOMJOF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGOCFEINBIN)?;
                 },
-                96 => {
+                64 => {
                     self.JNIEIKOKBGK = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for JFJDMGOMJOF {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.JNIEIKOKBGK != ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD) {
-            my_size += ::protobuf::rt::int32_size(12, self.JNIEIKOKBGK.value());
+            my_size += ::protobuf::rt::int32_size(8, self.JNIEIKOKBGK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JFJDMGOMJOF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KGOCFEINBIN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.JNIEIKOKBGK != ::protobuf::EnumOrUnknown::new(super::ABLCCPHIOMI::ABLCCPHIOMI::ABLCCPHIOMI_KFIKMPOPBFD) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.JNIEIKOKBGK))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.JNIEIKOKBGK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JFJDMGOMJOF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JFJDMGOMJOF.proto\x1a\x11ABLCCPHIOMI.proto\x1a\x11IPGIJFNAFLC.prot\
-    o\"m\n\x0bJFJDMGOMJOF\x12.\n\x0bKGOCFEINBIN\x18\x07\x20\x01(\x0b2\x0c.IP\
-    GIJFNAFLCR\x0bKGOCFEINBIN\x12.\n\x0bJNIEIKOKBGK\x18\x0c\x20\x01(\x0e2\
+    o\"m\n\x0bJFJDMGOMJOF\x12.\n\x0bKGOCFEINBIN\x18\x02\x20\x01(\x0b2\x0c.IP\
+    GIJFNAFLCR\x0bKGOCFEINBIN\x12.\n\x0bJNIEIKOKBGK\x18\x08\x20\x01(\x0e2\
     \x0c.ABLCCPHIOMIR\x0bJNIEIKOKBGKb\x06proto3\
 ";
 

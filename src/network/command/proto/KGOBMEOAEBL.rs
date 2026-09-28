@@ -72,7 +72,7 @@ impl ::protobuf::Message for KGOBMEOAEBL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.ONDCOEBNAPJ = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for KGOBMEOAEBL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ONDCOEBNAPJ != false {
-            os.write_bool(10, self.ONDCOEBNAPJ)?;
+            os.write_bool(8, self.ONDCOEBNAPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for KGOBMEOAEBL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KGOBMEOAEBL.proto\"/\n\x0bKGOBMEOAEBL\x12\x20\n\x0bONDCOEBNAPJ\x18\
-    \n\x20\x01(\x08R\x0bONDCOEBNAPJb\x06proto3\
+    \x08\x20\x01(\x08R\x0bONDCOEBNAPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

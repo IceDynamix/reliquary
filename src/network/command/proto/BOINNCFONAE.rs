@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BOINNCFONAE {
     // message fields
-    // @@protoc_insertion_point(field:BOINNCFONAE.MNHPDBEDJLB)
-    pub MNHPDBEDJLB: u32,
-    // @@protoc_insertion_point(field:BOINNCFONAE.CJPDGBPLFIG)
-    pub CJPDGBPLFIG: u32,
     // @@protoc_insertion_point(field:BOINNCFONAE.DHJANOFGDNP)
     pub DHJANOFGDNP: u64,
     // @@protoc_insertion_point(field:BOINNCFONAE.IBGMBIILIPB)
     pub IBGMBIILIPB: ::std::vec::Vec<super::HDLCAPDIKJI::HDLCAPDIKJI>,
+    // @@protoc_insertion_point(field:BOINNCFONAE.CJPDGBPLFIG)
+    pub CJPDGBPLFIG: u32,
     // @@protoc_insertion_point(field:BOINNCFONAE.IPDDIKPHGPE)
     pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
+    // @@protoc_insertion_point(field:BOINNCFONAE.MNHPDBEDJLB)
+    pub MNHPDBEDJLB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BOINNCFONAE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,16 +58,6 @@ impl BOINNCFONAE {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNHPDBEDJLB",
-            |m: &BOINNCFONAE| { &m.MNHPDBEDJLB },
-            |m: &mut BOINNCFONAE| { &mut m.MNHPDBEDJLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJPDGBPLFIG",
-            |m: &BOINNCFONAE| { &m.CJPDGBPLFIG },
-            |m: &mut BOINNCFONAE| { &mut m.CJPDGBPLFIG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHJANOFGDNP",
             |m: &BOINNCFONAE| { &m.DHJANOFGDNP },
             |m: &mut BOINNCFONAE| { &mut m.DHJANOFGDNP },
@@ -78,9 +68,19 @@ impl BOINNCFONAE {
             |m: &mut BOINNCFONAE| { &mut m.IBGMBIILIPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJPDGBPLFIG",
+            |m: &BOINNCFONAE| { &m.CJPDGBPLFIG },
+            |m: &mut BOINNCFONAE| { &mut m.CJPDGBPLFIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPDDIKPHGPE",
             |m: &BOINNCFONAE| { &m.IPDDIKPHGPE },
             |m: &mut BOINNCFONAE| { &mut m.IPDDIKPHGPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MNHPDBEDJLB",
+            |m: &BOINNCFONAE| { &m.MNHPDBEDJLB },
+            |m: &mut BOINNCFONAE| { &mut m.MNHPDBEDJLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BOINNCFONAE>(
             "BOINNCFONAE",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for BOINNCFONAE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MNHPDBEDJLB = is.read_uint32()?;
-                },
-                40 => {
-                    self.CJPDGBPLFIG = is.read_uint32()?;
-                },
-                96 => {
+                16 => {
                     self.DHJANOFGDNP = is.read_uint64()?;
                 },
-                106 => {
+                42 => {
                     self.IBGMBIILIPB.push(is.read_message()?);
                 },
-                112 => {
+                48 => {
+                    self.CJPDGBPLFIG = is.read_uint32()?;
+                },
+                56 => {
                     self.IPDDIKPHGPE = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.MNHPDBEDJLB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for BOINNCFONAE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNHPDBEDJLB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MNHPDBEDJLB);
-        }
-        if self.CJPDGBPLFIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CJPDGBPLFIG);
-        }
         if self.DHJANOFGDNP != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.DHJANOFGDNP);
+            my_size += ::protobuf::rt::uint64_size(2, self.DHJANOFGDNP);
         }
         for value in &self.IBGMBIILIPB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.CJPDGBPLFIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.CJPDGBPLFIG);
+        }
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            my_size += ::protobuf::rt::int32_size(14, self.IPDDIKPHGPE.value());
+            my_size += ::protobuf::rt::int32_size(7, self.IPDDIKPHGPE.value());
+        }
+        if self.MNHPDBEDJLB != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MNHPDBEDJLB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for BOINNCFONAE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNHPDBEDJLB != 0 {
-            os.write_uint32(1, self.MNHPDBEDJLB)?;
-        }
-        if self.CJPDGBPLFIG != 0 {
-            os.write_uint32(5, self.CJPDGBPLFIG)?;
-        }
         if self.DHJANOFGDNP != 0 {
-            os.write_uint64(12, self.DHJANOFGDNP)?;
+            os.write_uint64(2, self.DHJANOFGDNP)?;
         }
         for v in &self.IBGMBIILIPB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.CJPDGBPLFIG != 0 {
+            os.write_uint32(6, self.CJPDGBPLFIG)?;
+        }
         if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
+        }
+        if self.MNHPDBEDJLB != 0 {
+            os.write_uint32(14, self.MNHPDBEDJLB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for BOINNCFONAE {
     }
 
     fn clear(&mut self) {
-        self.MNHPDBEDJLB = 0;
-        self.CJPDGBPLFIG = 0;
         self.DHJANOFGDNP = 0;
         self.IBGMBIILIPB.clear();
+        self.CJPDGBPLFIG = 0;
         self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
+        self.MNHPDBEDJLB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BOINNCFONAE {
         static instance: BOINNCFONAE = BOINNCFONAE {
-            MNHPDBEDJLB: 0,
-            CJPDGBPLFIG: 0,
             DHJANOFGDNP: 0,
             IBGMBIILIPB: ::std::vec::Vec::new(),
+            CJPDGBPLFIG: 0,
             IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
+            MNHPDBEDJLB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for BOINNCFONAE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BOINNCFONAE.proto\x1a\x11DILHPBMCOFK.proto\x1a\x11HDLCAPDIKJI.prot\
-    o\"\xd3\x01\n\x0bBOINNCFONAE\x12\x20\n\x0bMNHPDBEDJLB\x18\x01\x20\x01(\r\
-    R\x0bMNHPDBEDJLB\x12\x20\n\x0bCJPDGBPLFIG\x18\x05\x20\x01(\rR\x0bCJPDGBP\
-    LFIG\x12\x20\n\x0bDHJANOFGDNP\x18\x0c\x20\x01(\x04R\x0bDHJANOFGDNP\x12.\
-    \n\x0bIBGMBIILIPB\x18\r\x20\x03(\x0b2\x0c.HDLCAPDIKJIR\x0bIBGMBIILIPB\
-    \x12.\n\x0bIPDDIKPHGPE\x18\x0e\x20\x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDDIKP\
-    HGPEb\x06proto3\
+    o\"\xd3\x01\n\x0bBOINNCFONAE\x12\x20\n\x0bDHJANOFGDNP\x18\x02\x20\x01(\
+    \x04R\x0bDHJANOFGDNP\x12.\n\x0bIBGMBIILIPB\x18\x05\x20\x03(\x0b2\x0c.HDL\
+    CAPDIKJIR\x0bIBGMBIILIPB\x12\x20\n\x0bCJPDGBPLFIG\x18\x06\x20\x01(\rR\
+    \x0bCJPDGBPLFIG\x12.\n\x0bIPDDIKPHGPE\x18\x07\x20\x01(\x0e2\x0c.DILHPBMC\
+    OFKR\x0bIPDDIKPHGPE\x12\x20\n\x0bMNHPDBEDJLB\x18\x0e\x20\x01(\rR\x0bMNHP\
+    DBEDJLBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

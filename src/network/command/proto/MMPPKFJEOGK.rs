@@ -72,7 +72,7 @@ impl ::protobuf::Message for MMPPKFJEOGK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.EGBFNFCEPHD = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for MMPPKFJEOGK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EGBFNFCEPHD != ::protobuf::EnumOrUnknown::new(super::EMFDLPNOGOH::EMFDLPNOGOH::EMFDLPNOGOH_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.EGBFNFCEPHD.value());
+            my_size += ::protobuf::rt::int32_size(9, self.EGBFNFCEPHD.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for MMPPKFJEOGK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EGBFNFCEPHD != ::protobuf::EnumOrUnknown::new(super::EMFDLPNOGOH::EMFDLPNOGOH::EMFDLPNOGOH_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.EGBFNFCEPHD))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.EGBFNFCEPHD))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for MMPPKFJEOGK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMPPKFJEOGK.proto\x1a\x11EMFDLPNOGOH.proto\"=\n\x0bMMPPKFJEOGK\x12\
-    .\n\x0bEGBFNFCEPHD\x18\x0c\x20\x01(\x0e2\x0c.EMFDLPNOGOHR\x0bEGBFNFCEPHD\
-    b\x06proto3\
+    .\n\x0bEGBFNFCEPHD\x18\t\x20\x01(\x0e2\x0c.EMFDLPNOGOHR\x0bEGBFNFCEPHDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

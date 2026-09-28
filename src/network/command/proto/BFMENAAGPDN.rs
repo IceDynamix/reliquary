@@ -28,26 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BFMENAAGPDN {
     // message fields
-    // @@protoc_insertion_point(field:BFMENAAGPDN.HLAIOEJBEPG)
-    pub HLAIOEJBEPG: u32,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.take_reward_level_list)
-    pub take_reward_level_list: ::std::vec::Vec<super::CBCPODHJFJD::CBCPODHJFJD>,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.EMOHLJHPOPC)
-    pub EMOHLJHPOPC: u32,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.ODLCDAGDNDE)
-    pub ODLCDAGDNDE: bool,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.ODLGMLCLMMP)
-    pub ODLGMLCLMMP: ::std::vec::Vec<super::DDBHIOHEHHC::DDBHIOHEHHC>,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.FBNBPPHOGLI)
-    pub FBNBPPHOGLI: u64,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.HCDLPKAGAKO)
-    pub HCDLPKAGAKO: u32,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::JHKFCANMFOE::JHKFCANMFOE>,
     // @@protoc_insertion_point(field:BFMENAAGPDN.EOJNPEPDECF)
     pub EOJNPEPDECF: u32,
-    // @@protoc_insertion_point(field:BFMENAAGPDN.NNOPJBCHMGG)
-    pub NNOPJBCHMGG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.HCDLPKAGAKO)
+    pub HCDLPKAGAKO: u32,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.ODLCDAGDNDE)
+    pub ODLCDAGDNDE: bool,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::JHKFCANMFOE::JHKFCANMFOE>,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.EMOHLJHPOPC)
+    pub EMOHLJHPOPC: u32,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.FBNBPPHOGLI)
+    pub FBNBPPHOGLI: u64,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.HLAIOEJBEPG)
+    pub HLAIOEJBEPG: u32,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.ODLGMLCLMMP)
+    pub ODLGMLCLMMP: ::std::vec::Vec<super::DDBHIOHEHHC::DDBHIOHEHHC>,
+    // @@protoc_insertion_point(field:BFMENAAGPDN.take_reward_level_list)
+    pub take_reward_level_list: ::std::vec::Vec<super::CBCPODHJFJD::CBCPODHJFJD>,
     // special fields
     // @@protoc_insertion_point(special_field:BFMENAAGPDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,22 +63,17 @@ impl BFMENAAGPDN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLAIOEJBEPG",
-            |m: &BFMENAAGPDN| { &m.HLAIOEJBEPG },
-            |m: &mut BFMENAAGPDN| { &mut m.HLAIOEJBEPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "take_reward_level_list",
-            |m: &BFMENAAGPDN| { &m.take_reward_level_list },
-            |m: &mut BFMENAAGPDN| { &mut m.take_reward_level_list },
+            "EOJNPEPDECF",
+            |m: &BFMENAAGPDN| { &m.EOJNPEPDECF },
+            |m: &mut BFMENAAGPDN| { &mut m.EOJNPEPDECF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMOHLJHPOPC",
-            |m: &BFMENAAGPDN| { &m.EMOHLJHPOPC },
-            |m: &mut BFMENAAGPDN| { &mut m.EMOHLJHPOPC },
+            "HCDLPKAGAKO",
+            |m: &BFMENAAGPDN| { &m.HCDLPKAGAKO },
+            |m: &mut BFMENAAGPDN| { &mut m.HCDLPKAGAKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ODLCDAGDNDE",
@@ -88,9 +81,14 @@ impl BFMENAAGPDN {
             |m: &mut BFMENAAGPDN| { &mut m.ODLCDAGDNDE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ODLGMLCLMMP",
-            |m: &BFMENAAGPDN| { &m.ODLGMLCLMMP },
-            |m: &mut BFMENAAGPDN| { &mut m.ODLGMLCLMMP },
+            "avatar_list",
+            |m: &BFMENAAGPDN| { &m.avatar_list },
+            |m: &mut BFMENAAGPDN| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMOHLJHPOPC",
+            |m: &BFMENAAGPDN| { &m.EMOHLJHPOPC },
+            |m: &mut BFMENAAGPDN| { &mut m.EMOHLJHPOPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FBNBPPHOGLI",
@@ -98,24 +96,19 @@ impl BFMENAAGPDN {
             |m: &mut BFMENAAGPDN| { &mut m.FBNBPPHOGLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCDLPKAGAKO",
-            |m: &BFMENAAGPDN| { &m.HCDLPKAGAKO },
-            |m: &mut BFMENAAGPDN| { &mut m.HCDLPKAGAKO },
+            "HLAIOEJBEPG",
+            |m: &BFMENAAGPDN| { &m.HLAIOEJBEPG },
+            |m: &mut BFMENAAGPDN| { &mut m.HLAIOEJBEPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &BFMENAAGPDN| { &m.avatar_list },
-            |m: &mut BFMENAAGPDN| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOJNPEPDECF",
-            |m: &BFMENAAGPDN| { &m.EOJNPEPDECF },
-            |m: &mut BFMENAAGPDN| { &mut m.EOJNPEPDECF },
+            "ODLGMLCLMMP",
+            |m: &BFMENAAGPDN| { &m.ODLGMLCLMMP },
+            |m: &mut BFMENAAGPDN| { &mut m.ODLGMLCLMMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NNOPJBCHMGG",
-            |m: &BFMENAAGPDN| { &m.NNOPJBCHMGG },
-            |m: &mut BFMENAAGPDN| { &mut m.NNOPJBCHMGG },
+            "take_reward_level_list",
+            |m: &BFMENAAGPDN| { &m.take_reward_level_list },
+            |m: &mut BFMENAAGPDN| { &mut m.take_reward_level_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BFMENAAGPDN>(
             "BFMENAAGPDN",
@@ -136,37 +129,31 @@ impl ::protobuf::Message for BFMENAAGPDN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.HLAIOEJBEPG = is.read_uint32()?;
+                    self.EOJNPEPDECF = is.read_uint32()?;
                 },
-                18 => {
-                    self.take_reward_level_list.push(is.read_message()?);
+                24 => {
+                    self.HCDLPKAGAKO = is.read_uint32()?;
                 },
-                40 => {
-                    self.EMOHLJHPOPC = is.read_uint32()?;
-                },
-                48 => {
+                32 => {
                     self.ODLCDAGDNDE = is.read_bool()?;
                 },
-                58 => {
-                    self.ODLGMLCLMMP.push(is.read_message()?);
+                50 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                56 => {
+                    self.EMOHLJHPOPC = is.read_uint32()?;
                 },
                 64 => {
                     self.FBNBPPHOGLI = is.read_uint64()?;
                 },
-                80 => {
-                    self.HCDLPKAGAKO = is.read_uint32()?;
+                72 => {
+                    self.HLAIOEJBEPG = is.read_uint32()?;
                 },
-                90 => {
-                    self.avatar_list.push(is.read_message()?);
+                82 => {
+                    self.ODLGMLCLMMP.push(is.read_message()?);
                 },
-                104 => {
-                    self.EOJNPEPDECF = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NNOPJBCHMGG)?;
-                },
-                112 => {
-                    self.NNOPJBCHMGG.push(is.read_uint32()?);
+                106 => {
+                    self.take_reward_level_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -180,71 +167,69 @@ impl ::protobuf::Message for BFMENAAGPDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLAIOEJBEPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HLAIOEJBEPG);
+        if self.EOJNPEPDECF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EOJNPEPDECF);
         }
-        for value in &self.take_reward_level_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.EMOHLJHPOPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EMOHLJHPOPC);
+        if self.HCDLPKAGAKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HCDLPKAGAKO);
         }
         if self.ODLCDAGDNDE != false {
             my_size += 1 + 1;
-        }
-        for value in &self.ODLGMLCLMMP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.FBNBPPHOGLI != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.FBNBPPHOGLI);
-        }
-        if self.HCDLPKAGAKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HCDLPKAGAKO);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EOJNPEPDECF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EOJNPEPDECF);
+        if self.EMOHLJHPOPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EMOHLJHPOPC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NNOPJBCHMGG);
+        if self.FBNBPPHOGLI != 0 {
+            my_size += ::protobuf::rt::uint64_size(8, self.FBNBPPHOGLI);
+        }
+        if self.HLAIOEJBEPG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.HLAIOEJBEPG);
+        }
+        for value in &self.ODLGMLCLMMP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.take_reward_level_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLAIOEJBEPG != 0 {
-            os.write_uint32(1, self.HLAIOEJBEPG)?;
+        if self.EOJNPEPDECF != 0 {
+            os.write_uint32(1, self.EOJNPEPDECF)?;
         }
-        for v in &self.take_reward_level_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if self.EMOHLJHPOPC != 0 {
-            os.write_uint32(5, self.EMOHLJHPOPC)?;
+        if self.HCDLPKAGAKO != 0 {
+            os.write_uint32(3, self.HCDLPKAGAKO)?;
         }
         if self.ODLCDAGDNDE != false {
-            os.write_bool(6, self.ODLCDAGDNDE)?;
+            os.write_bool(4, self.ODLCDAGDNDE)?;
         }
-        for v in &self.ODLGMLCLMMP {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
+        if self.EMOHLJHPOPC != 0 {
+            os.write_uint32(7, self.EMOHLJHPOPC)?;
+        }
         if self.FBNBPPHOGLI != 0 {
             os.write_uint64(8, self.FBNBPPHOGLI)?;
         }
-        if self.HCDLPKAGAKO != 0 {
-            os.write_uint32(10, self.HCDLPKAGAKO)?;
+        if self.HLAIOEJBEPG != 0 {
+            os.write_uint32(9, self.HLAIOEJBEPG)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.ODLGMLCLMMP {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.EOJNPEPDECF != 0 {
-            os.write_uint32(13, self.EOJNPEPDECF)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.NNOPJBCHMGG)?;
+        for v in &self.take_reward_level_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -262,31 +247,29 @@ impl ::protobuf::Message for BFMENAAGPDN {
     }
 
     fn clear(&mut self) {
-        self.HLAIOEJBEPG = 0;
-        self.take_reward_level_list.clear();
-        self.EMOHLJHPOPC = 0;
-        self.ODLCDAGDNDE = false;
-        self.ODLGMLCLMMP.clear();
-        self.FBNBPPHOGLI = 0;
-        self.HCDLPKAGAKO = 0;
-        self.avatar_list.clear();
         self.EOJNPEPDECF = 0;
-        self.NNOPJBCHMGG.clear();
+        self.HCDLPKAGAKO = 0;
+        self.ODLCDAGDNDE = false;
+        self.avatar_list.clear();
+        self.EMOHLJHPOPC = 0;
+        self.FBNBPPHOGLI = 0;
+        self.HLAIOEJBEPG = 0;
+        self.ODLGMLCLMMP.clear();
+        self.take_reward_level_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BFMENAAGPDN {
         static instance: BFMENAAGPDN = BFMENAAGPDN {
-            HLAIOEJBEPG: 0,
-            take_reward_level_list: ::std::vec::Vec::new(),
-            EMOHLJHPOPC: 0,
-            ODLCDAGDNDE: false,
-            ODLGMLCLMMP: ::std::vec::Vec::new(),
-            FBNBPPHOGLI: 0,
-            HCDLPKAGAKO: 0,
-            avatar_list: ::std::vec::Vec::new(),
             EOJNPEPDECF: 0,
-            NNOPJBCHMGG: ::std::vec::Vec::new(),
+            HCDLPKAGAKO: 0,
+            ODLCDAGDNDE: false,
+            avatar_list: ::std::vec::Vec::new(),
+            EMOHLJHPOPC: 0,
+            FBNBPPHOGLI: 0,
+            HLAIOEJBEPG: 0,
+            ODLGMLCLMMP: ::std::vec::Vec::new(),
+            take_reward_level_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -312,17 +295,16 @@ impl ::protobuf::reflect::ProtobufValue for BFMENAAGPDN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BFMENAAGPDN.proto\x1a\x11CBCPODHJFJD.proto\x1a\x11DDBHIOHEHHC.prot\
-    o\x1a\x11JHKFCANMFOE.proto\"\x9d\x03\n\x0bBFMENAAGPDN\x12\x20\n\x0bHLAIO\
-    EJBEPG\x18\x01\x20\x01(\rR\x0bHLAIOEJBEPG\x12A\n\x16take_reward_level_li\
-    st\x18\x02\x20\x03(\x0b2\x0c.CBCPODHJFJDR\x13takeRewardLevelList\x12\x20\
-    \n\x0bEMOHLJHPOPC\x18\x05\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x20\n\x0bODLCDA\
-    GDNDE\x18\x06\x20\x01(\x08R\x0bODLCDAGDNDE\x12.\n\x0bODLGMLCLMMP\x18\x07\
-    \x20\x03(\x0b2\x0c.DDBHIOHEHHCR\x0bODLGMLCLMMP\x12\x20\n\x0bFBNBPPHOGLI\
-    \x18\x08\x20\x01(\x04R\x0bFBNBPPHOGLI\x12\x20\n\x0bHCDLPKAGAKO\x18\n\x20\
-    \x01(\rR\x0bHCDLPKAGAKO\x12-\n\x0bavatar_list\x18\x0b\x20\x03(\x0b2\x0c.\
-    JHKFCANMFOER\navatarList\x12\x20\n\x0bEOJNPEPDECF\x18\r\x20\x01(\rR\x0bE\
-    OJNPEPDECF\x12\x20\n\x0bNNOPJBCHMGG\x18\x0e\x20\x03(\rR\x0bNNOPJBCHMGGb\
-    \x06proto3\
+    o\x1a\x11JHKFCANMFOE.proto\"\xfb\x02\n\x0bBFMENAAGPDN\x12\x20\n\x0bEOJNP\
+    EPDECF\x18\x01\x20\x01(\rR\x0bEOJNPEPDECF\x12\x20\n\x0bHCDLPKAGAKO\x18\
+    \x03\x20\x01(\rR\x0bHCDLPKAGAKO\x12\x20\n\x0bODLCDAGDNDE\x18\x04\x20\x01\
+    (\x08R\x0bODLCDAGDNDE\x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\x0c.JH\
+    KFCANMFOER\navatarList\x12\x20\n\x0bEMOHLJHPOPC\x18\x07\x20\x01(\rR\x0bE\
+    MOHLJHPOPC\x12\x20\n\x0bFBNBPPHOGLI\x18\x08\x20\x01(\x04R\x0bFBNBPPHOGLI\
+    \x12\x20\n\x0bHLAIOEJBEPG\x18\t\x20\x01(\rR\x0bHLAIOEJBEPG\x12.\n\x0bODL\
+    GMLCLMMP\x18\n\x20\x03(\x0b2\x0c.DDBHIOHEHHCR\x0bODLGMLCLMMP\x12A\n\x16t\
+    ake_reward_level_list\x18\r\x20\x03(\x0b2\x0c.CBCPODHJFJDR\x13takeReward\
+    LevelListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

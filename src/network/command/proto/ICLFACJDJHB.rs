@@ -79,10 +79,10 @@ impl ::protobuf::Message for ICLFACJDJHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                40 => {
                     self.level = is.read_uint32()?;
                 },
-                72 => {
+                64 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ICLFACJDJHB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.skill_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ICLFACJDJHB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(5, self.level)?;
         }
         if self.skill_id != 0 {
-            os.write_uint32(9, self.skill_id)?;
+            os.write_uint32(8, self.skill_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ICLFACJDJHB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ICLFACJDJHB.proto\">\n\x0bICLFACJDJHB\x12\x14\n\x05level\x18\x08\
-    \x20\x01(\rR\x05level\x12\x19\n\x08skill_id\x18\t\x20\x01(\rR\x07skillId\
-    b\x06proto3\
+    \n\x11ICLFACJDJHB.proto\">\n\x0bICLFACJDJHB\x12\x14\n\x05level\x18\x05\
+    \x20\x01(\rR\x05level\x12\x19\n\x08skill_id\x18\x08\x20\x01(\rR\x07skill\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

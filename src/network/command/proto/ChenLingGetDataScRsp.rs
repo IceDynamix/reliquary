@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingGetDataScRsp.KFAIGIIPLOF)
-    pub KFAIGIIPLOF: ::protobuf::MessageField<super::BDOEDOEBFAJ::BDOEDOEBFAJ>,
-    // @@protoc_insertion_point(field:ChenLingGetDataScRsp.GDHOLMIBAEA)
-    pub GDHOLMIBAEA: u32,
     // @@protoc_insertion_point(field:ChenLingGetDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChenLingGetDataScRsp.GDHOLMIBAEA)
+    pub GDHOLMIBAEA: u32,
     // @@protoc_insertion_point(field:ChenLingGetDataScRsp.IMNNAENHBMA)
     pub IMNNAENHBMA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChenLingGetDataScRsp.DJOLGKGKCHE)
     pub DJOLGKGKCHE: ::protobuf::MessageField<super::FDDNKPJEMJE::FDDNKPJEMJE>,
+    // @@protoc_insertion_point(field:ChenLingGetDataScRsp.KFAIGIIPLOF)
+    pub KFAIGIIPLOF: ::protobuf::MessageField<super::BDOEDOEBFAJ::BDOEDOEBFAJ>,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl ChenLingGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDOEDOEBFAJ::BDOEDOEBFAJ>(
-            "KFAIGIIPLOF",
-            |m: &ChenLingGetDataScRsp| { &m.KFAIGIIPLOF },
-            |m: &mut ChenLingGetDataScRsp| { &mut m.KFAIGIIPLOF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ChenLingGetDataScRsp| { &m.retcode },
+            |m: &mut ChenLingGetDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GDHOLMIBAEA",
             |m: &ChenLingGetDataScRsp| { &m.GDHOLMIBAEA },
             |m: &mut ChenLingGetDataScRsp| { &mut m.GDHOLMIBAEA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ChenLingGetDataScRsp| { &m.retcode },
-            |m: &mut ChenLingGetDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IMNNAENHBMA",
@@ -81,6 +76,11 @@ impl ChenLingGetDataScRsp {
             "DJOLGKGKCHE",
             |m: &ChenLingGetDataScRsp| { &m.DJOLGKGKCHE },
             |m: &mut ChenLingGetDataScRsp| { &mut m.DJOLGKGKCHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BDOEDOEBFAJ::BDOEDOEBFAJ>(
+            "KFAIGIIPLOF",
+            |m: &ChenLingGetDataScRsp| { &m.KFAIGIIPLOF },
+            |m: &mut ChenLingGetDataScRsp| { &mut m.KFAIGIIPLOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingGetDataScRsp>(
             "ChenLingGetDataScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for ChenLingGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFAIGIIPLOF)?;
-                },
-                64 => {
-                    self.GDHOLMIBAEA = is.read_uint32()?;
-                },
-                72 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                48 => {
+                    self.GDHOLMIBAEA = is.read_uint32()?;
+                },
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.IMNNAENHBMA)?;
                 },
-                104 => {
+                80 => {
                     self.IMNNAENHBMA.push(is.read_uint32()?);
                 },
-                122 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJOLGKGKCHE)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFAIGIIPLOF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for ChenLingGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KFAIGIIPLOF.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.GDHOLMIBAEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GDHOLMIBAEA);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IMNNAENHBMA);
+        if let Some(v) = self.DJOLGKGKCHE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GDHOLMIBAEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GDHOLMIBAEA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.IMNNAENHBMA);
-        if let Some(v) = self.DJOLGKGKCHE.as_ref() {
+        if let Some(v) = self.KFAIGIIPLOF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -151,17 +151,17 @@ impl ::protobuf::Message for ChenLingGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KFAIGIIPLOF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         if self.GDHOLMIBAEA != 0 {
-            os.write_uint32(8, self.GDHOLMIBAEA)?;
+            os.write_uint32(6, self.GDHOLMIBAEA)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.IMNNAENHBMA)?;
+        os.write_repeated_packed_uint32(10, &self.IMNNAENHBMA)?;
         if let Some(v) = self.DJOLGKGKCHE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.KFAIGIIPLOF.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -181,21 +181,21 @@ impl ::protobuf::Message for ChenLingGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.KFAIGIIPLOF.clear();
-        self.GDHOLMIBAEA = 0;
         self.retcode = 0;
+        self.GDHOLMIBAEA = 0;
         self.IMNNAENHBMA.clear();
         self.DJOLGKGKCHE.clear();
+        self.KFAIGIIPLOF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingGetDataScRsp {
         static instance: ChenLingGetDataScRsp = ChenLingGetDataScRsp {
-            KFAIGIIPLOF: ::protobuf::MessageField::none(),
-            GDHOLMIBAEA: 0,
             retcode: 0,
+            GDHOLMIBAEA: 0,
             IMNNAENHBMA: ::std::vec::Vec::new(),
             DJOLGKGKCHE: ::protobuf::MessageField::none(),
+            KFAIGIIPLOF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChenLingGetDataScRsp.proto\x1a\x11BDOEDOEBFAJ.proto\x1a\x11FDDNKPJ\
-    EMJE.proto\"\xd4\x01\n\x14ChenLingGetDataScRsp\x12.\n\x0bKFAIGIIPLOF\x18\
-    \x05\x20\x01(\x0b2\x0c.BDOEDOEBFAJR\x0bKFAIGIIPLOF\x12\x20\n\x0bGDHOLMIB\
-    AEA\x18\x08\x20\x01(\rR\x0bGDHOLMIBAEA\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bIMNNAENHBMA\x18\r\x20\x03(\rR\x0bIMNNAE\
-    NHBMA\x12.\n\x0bDJOLGKGKCHE\x18\x0f\x20\x01(\x0b2\x0c.FDDNKPJEMJER\x0bDJ\
-    OLGKGKCHEb\x06proto3\
+    EMJE.proto\"\xd4\x01\n\x14ChenLingGetDataScRsp\x12\x18\n\x07retcode\x18\
+    \x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bGDHOLMIBAEA\x18\x06\x20\x01(\rR\
+    \x0bGDHOLMIBAEA\x12\x20\n\x0bIMNNAENHBMA\x18\n\x20\x03(\rR\x0bIMNNAENHBM\
+    A\x12.\n\x0bDJOLGKGKCHE\x18\x0e\x20\x01(\x0b2\x0c.FDDNKPJEMJER\x0bDJOLGK\
+    GKCHE\x12.\n\x0bKFAIGIIPLOF\x18\x0f\x20\x01(\x0b2\x0c.BDOEDOEBFAJR\x0bKF\
+    AIGIIPLOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for EPELDFBCCEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.BGFFICLCKHE = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EPELDFBCCEK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BGFFICLCKHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BGFFICLCKHE);
+            my_size += ::protobuf::rt::uint32_size(4, self.BGFFICLCKHE);
         }
         if self.NALMBOOCCIN != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.NALMBOOCCIN);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EPELDFBCCEK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BGFFICLCKHE != 0 {
-            os.write_uint32(3, self.BGFFICLCKHE)?;
+            os.write_uint32(4, self.BGFFICLCKHE)?;
         }
         if self.NALMBOOCCIN != 0 {
             os.write_uint32(6, self.NALMBOOCCIN)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EPELDFBCCEK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPELDFBCCEK.proto\"Q\n\x0bEPELDFBCCEK\x12\x20\n\x0bBGFFICLCKHE\x18\
-    \x03\x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\x0bNALMBOOCCIN\x18\x06\x20\x01\
+    \x04\x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\x0bNALMBOOCCIN\x18\x06\x20\x01\
     (\rR\x0bNALMBOOCCINb\x06proto3\
 ";
 

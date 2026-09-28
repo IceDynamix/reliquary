@@ -50,56 +50,7 @@ impl LEGNLMENMJK {
         ::std::default::Default::default()
     }
 
-    // .LDNFIICMCHA MLIGAFABJDP = 4;
-
-    pub fn MLIGAFABJDP(&self) -> &super::LDNFIICMCHA::LDNFIICMCHA {
-        match self.NPFEGGMNBOC {
-            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v)) => v,
-            _ => <super::LDNFIICMCHA::LDNFIICMCHA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MLIGAFABJDP(&mut self) {
-        self.NPFEGGMNBOC = ::std::option::Option::None;
-    }
-
-    pub fn has_MLIGAFABJDP(&self) -> bool {
-        match self.NPFEGGMNBOC {
-            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MLIGAFABJDP(&mut self, v: super::LDNFIICMCHA::LDNFIICMCHA) {
-        self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MLIGAFABJDP(&mut self) -> &mut super::LDNFIICMCHA::LDNFIICMCHA {
-        if let ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(_)) = self.NPFEGGMNBOC {
-        } else {
-            self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(super::LDNFIICMCHA::LDNFIICMCHA::new()));
-        }
-        match self.NPFEGGMNBOC {
-            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MLIGAFABJDP(&mut self) -> super::LDNFIICMCHA::LDNFIICMCHA {
-        if self.has_MLIGAFABJDP() {
-            match self.NPFEGGMNBOC.take() {
-                ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::LDNFIICMCHA::LDNFIICMCHA::new()
-        }
-    }
-
-    // .GKNOCNDPAJA BLLCMLBDLPC = 15;
+    // .GKNOCNDPAJA BLLCMLBDLPC = 4;
 
     pub fn BLLCMLBDLPC(&self) -> &super::GKNOCNDPAJA::GKNOCNDPAJA {
         match self.NPFEGGMNBOC {
@@ -148,6 +99,55 @@ impl LEGNLMENMJK {
         }
     }
 
+    // .LDNFIICMCHA MLIGAFABJDP = 13;
+
+    pub fn MLIGAFABJDP(&self) -> &super::LDNFIICMCHA::LDNFIICMCHA {
+        match self.NPFEGGMNBOC {
+            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v)) => v,
+            _ => <super::LDNFIICMCHA::LDNFIICMCHA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MLIGAFABJDP(&mut self) {
+        self.NPFEGGMNBOC = ::std::option::Option::None;
+    }
+
+    pub fn has_MLIGAFABJDP(&self) -> bool {
+        match self.NPFEGGMNBOC {
+            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MLIGAFABJDP(&mut self, v: super::LDNFIICMCHA::LDNFIICMCHA) {
+        self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MLIGAFABJDP(&mut self) -> &mut super::LDNFIICMCHA::LDNFIICMCHA {
+        if let ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(_)) = self.NPFEGGMNBOC {
+        } else {
+            self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(super::LDNFIICMCHA::LDNFIICMCHA::new()));
+        }
+        match self.NPFEGGMNBOC {
+            ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MLIGAFABJDP(&mut self) -> super::LDNFIICMCHA::LDNFIICMCHA {
+        if self.has_MLIGAFABJDP() {
+            match self.NPFEGGMNBOC.take() {
+                ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LDNFIICMCHA::LDNFIICMCHA::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -161,19 +161,19 @@ impl LEGNLMENMJK {
             |m: &LEGNLMENMJK| { &m.unique_id },
             |m: &mut LEGNLMENMJK| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDNFIICMCHA::LDNFIICMCHA>(
-            "MLIGAFABJDP",
-            LEGNLMENMJK::has_MLIGAFABJDP,
-            LEGNLMENMJK::MLIGAFABJDP,
-            LEGNLMENMJK::mut_MLIGAFABJDP,
-            LEGNLMENMJK::set_MLIGAFABJDP,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKNOCNDPAJA::GKNOCNDPAJA>(
             "BLLCMLBDLPC",
             LEGNLMENMJK::has_BLLCMLBDLPC,
             LEGNLMENMJK::BLLCMLBDLPC,
             LEGNLMENMJK::mut_BLLCMLBDLPC,
             LEGNLMENMJK::set_BLLCMLBDLPC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDNFIICMCHA::LDNFIICMCHA>(
+            "MLIGAFABJDP",
+            LEGNLMENMJK::has_MLIGAFABJDP,
+            LEGNLMENMJK::MLIGAFABJDP,
+            LEGNLMENMJK::mut_MLIGAFABJDP,
+            LEGNLMENMJK::set_MLIGAFABJDP,
         ));
         oneofs.push(legnlmenmjk::NPFEGGMNBOC::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEGNLMENMJK>(
@@ -194,17 +194,17 @@ impl ::protobuf::Message for LEGNLMENMJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.card_id = is.read_uint32()?;
                 },
-                96 => {
+                64 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 34 => {
-                    self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(is.read_message()?));
-                },
-                122 => {
                     self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(is.read_message()?));
+                },
+                106 => {
+                    self.NPFEGGMNBOC = ::std::option::Option::Some(legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -219,18 +219,18 @@ impl ::protobuf::Message for LEGNLMENMJK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.card_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.card_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.card_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.NPFEGGMNBOC {
             match v {
-                &legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v) => {
+                &legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(ref v) => {
+                &legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -243,18 +243,18 @@ impl ::protobuf::Message for LEGNLMENMJK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.card_id != 0 {
-            os.write_uint32(1, self.card_id)?;
+            os.write_uint32(7, self.card_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(12, self.unique_id)?;
+            os.write_uint32(8, self.unique_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.NPFEGGMNBOC {
             match v {
-                &legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v) => {
+                &legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
-                &legnlmenmjk::NPFEGGMNBOC::BLLCMLBDLPC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &legnlmenmjk::NPFEGGMNBOC::MLIGAFABJDP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -317,10 +317,10 @@ pub mod legnlmenmjk {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:LEGNLMENMJK.NPFEGGMNBOC)
     pub enum NPFEGGMNBOC {
-        // @@protoc_insertion_point(oneof_field:LEGNLMENMJK.MLIGAFABJDP)
-        MLIGAFABJDP(super::super::LDNFIICMCHA::LDNFIICMCHA),
         // @@protoc_insertion_point(oneof_field:LEGNLMENMJK.BLLCMLBDLPC)
         BLLCMLBDLPC(super::super::GKNOCNDPAJA::GKNOCNDPAJA),
+        // @@protoc_insertion_point(oneof_field:LEGNLMENMJK.MLIGAFABJDP)
+        MLIGAFABJDP(super::super::LDNFIICMCHA::LDNFIICMCHA),
     }
 
     impl ::protobuf::Oneof for NPFEGGMNBOC {
@@ -342,11 +342,11 @@ pub mod legnlmenmjk {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LEGNLMENMJK.proto\x1a\x11GKNOCNDPAJA.proto\x1a\x11LDNFIICMCHA.prot\
-    o\"\xb6\x01\n\x0bLEGNLMENMJK\x12\x17\n\x07card_id\x18\x01\x20\x01(\rR\
-    \x06cardId\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\rR\x08uniqueId\x120\n\
-    \x0bMLIGAFABJDP\x18\x04\x20\x01(\x0b2\x0c.LDNFIICMCHAH\0R\x0bMLIGAFABJDP\
-    \x120\n\x0bBLLCMLBDLPC\x18\x0f\x20\x01(\x0b2\x0c.GKNOCNDPAJAH\0R\x0bBLLC\
-    MLBDLPCB\r\n\x0bNPFEGGMNBOCb\x06proto3\
+    o\"\xb6\x01\n\x0bLEGNLMENMJK\x12\x17\n\x07card_id\x18\x07\x20\x01(\rR\
+    \x06cardId\x12\x1b\n\tunique_id\x18\x08\x20\x01(\rR\x08uniqueId\x120\n\
+    \x0bBLLCMLBDLPC\x18\x04\x20\x01(\x0b2\x0c.GKNOCNDPAJAH\0R\x0bBLLCMLBDLPC\
+    \x120\n\x0bMLIGAFABJDP\x18\r\x20\x01(\x0b2\x0c.LDNFIICMCHAH\0R\x0bMLIGAF\
+    ABJDPB\r\n\x0bNPFEGGMNBOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

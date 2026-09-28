@@ -79,7 +79,7 @@ impl ::protobuf::Message for EDGEHPFOKBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.cnt = is.read_uint32()?;
                 },
                 48 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EDGEHPFOKBH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(2, self.cnt);
         }
         if self.ACPKAOIIEHJ != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.ACPKAOIIEHJ);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EDGEHPFOKBH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cnt != 0 {
-            os.write_uint32(4, self.cnt)?;
+            os.write_uint32(2, self.cnt)?;
         }
         if self.ACPKAOIIEHJ != 0 {
             os.write_uint32(6, self.ACPKAOIIEHJ)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for EDGEHPFOKBH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDGEHPFOKBH.proto\"A\n\x0bEDGEHPFOKBH\x12\x10\n\x03cnt\x18\x04\x20\
+    \n\x11EDGEHPFOKBH.proto\"A\n\x0bEDGEHPFOKBH\x12\x10\n\x03cnt\x18\x02\x20\
     \x01(\rR\x03cnt\x12\x20\n\x0bACPKAOIIEHJ\x18\x06\x20\x01(\rR\x0bACPKAOII\
     EHJb\x06proto3\
 ";

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PKBDAKMLDMC {
     // message fields
+    // @@protoc_insertion_point(field:PKBDAKMLDMC.GNABNEDKPHH)
+    pub GNABNEDKPHH: ::std::vec::Vec<super::DFLIHGGNBDB::DFLIHGGNBDB>,
+    // @@protoc_insertion_point(field:PKBDAKMLDMC.MMLNAMPFAKA)
+    pub MMLNAMPFAKA: u32,
     // @@protoc_insertion_point(field:PKBDAKMLDMC.DGKLOCJHKNH)
     pub DGKLOCJHKNH: ::std::vec::Vec<super::JFJDMGOMJOF::JFJDMGOMJOF>,
     // @@protoc_insertion_point(field:PKBDAKMLDMC.use_item_id)
     pub use_item_id: u32,
-    // @@protoc_insertion_point(field:PKBDAKMLDMC.MMLNAMPFAKA)
-    pub MMLNAMPFAKA: u32,
-    // @@protoc_insertion_point(field:PKBDAKMLDMC.GNABNEDKPHH)
-    pub GNABNEDKPHH: ::std::vec::Vec<super::DFLIHGGNBDB::DFLIHGGNBDB>,
     // special fields
     // @@protoc_insertion_point(special_field:PKBDAKMLDMC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl PKBDAKMLDMC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GNABNEDKPHH",
+            |m: &PKBDAKMLDMC| { &m.GNABNEDKPHH },
+            |m: &mut PKBDAKMLDMC| { &mut m.GNABNEDKPHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMLNAMPFAKA",
+            |m: &PKBDAKMLDMC| { &m.MMLNAMPFAKA },
+            |m: &mut PKBDAKMLDMC| { &mut m.MMLNAMPFAKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DGKLOCJHKNH",
             |m: &PKBDAKMLDMC| { &m.DGKLOCJHKNH },
             |m: &mut PKBDAKMLDMC| { &mut m.DGKLOCJHKNH },
@@ -64,16 +74,6 @@ impl PKBDAKMLDMC {
             "use_item_id",
             |m: &PKBDAKMLDMC| { &m.use_item_id },
             |m: &mut PKBDAKMLDMC| { &mut m.use_item_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMLNAMPFAKA",
-            |m: &PKBDAKMLDMC| { &m.MMLNAMPFAKA },
-            |m: &mut PKBDAKMLDMC| { &mut m.MMLNAMPFAKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GNABNEDKPHH",
-            |m: &PKBDAKMLDMC| { &m.GNABNEDKPHH },
-            |m: &mut PKBDAKMLDMC| { &mut m.GNABNEDKPHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PKBDAKMLDMC>(
             "PKBDAKMLDMC",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PKBDAKMLDMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.DGKLOCJHKNH.push(is.read_message()?);
+                42 => {
+                    self.GNABNEDKPHH.push(is.read_message()?);
                 },
-                48 => {
-                    self.use_item_id = is.read_uint32()?;
-                },
-                88 => {
+                64 => {
                     self.MMLNAMPFAKA = is.read_uint32()?;
                 },
-                98 => {
-                    self.GNABNEDKPHH.push(is.read_message()?);
+                74 => {
+                    self.DGKLOCJHKNH.push(is.read_message()?);
+                },
+                80 => {
+                    self.use_item_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,38 +117,38 @@ impl ::protobuf::Message for PKBDAKMLDMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.GNABNEDKPHH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.MMLNAMPFAKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MMLNAMPFAKA);
+        }
         for value in &self.DGKLOCJHKNH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.use_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.use_item_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.use_item_id);
         }
-        if self.MMLNAMPFAKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MMLNAMPFAKA);
-        }
-        for value in &self.GNABNEDKPHH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.GNABNEDKPHH {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.MMLNAMPFAKA != 0 {
+            os.write_uint32(8, self.MMLNAMPFAKA)?;
+        }
         for v in &self.DGKLOCJHKNH {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.use_item_id != 0 {
-            os.write_uint32(6, self.use_item_id)?;
+            os.write_uint32(10, self.use_item_id)?;
         }
-        if self.MMLNAMPFAKA != 0 {
-            os.write_uint32(11, self.MMLNAMPFAKA)?;
-        }
-        for v in &self.GNABNEDKPHH {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,19 +166,19 @@ impl ::protobuf::Message for PKBDAKMLDMC {
     }
 
     fn clear(&mut self) {
+        self.GNABNEDKPHH.clear();
+        self.MMLNAMPFAKA = 0;
         self.DGKLOCJHKNH.clear();
         self.use_item_id = 0;
-        self.MMLNAMPFAKA = 0;
-        self.GNABNEDKPHH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PKBDAKMLDMC {
         static instance: PKBDAKMLDMC = PKBDAKMLDMC {
+            GNABNEDKPHH: ::std::vec::Vec::new(),
+            MMLNAMPFAKA: 0,
             DGKLOCJHKNH: ::std::vec::Vec::new(),
             use_item_id: 0,
-            MMLNAMPFAKA: 0,
-            GNABNEDKPHH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for PKBDAKMLDMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKBDAKMLDMC.proto\x1a\x11DFLIHGGNBDB.proto\x1a\x11JFJDMGOMJOF.prot\
-    o\"\xaf\x01\n\x0bPKBDAKMLDMC\x12.\n\x0bDGKLOCJHKNH\x18\x01\x20\x03(\x0b2\
-    \x0c.JFJDMGOMJOFR\x0bDGKLOCJHKNH\x12\x1e\n\x0buse_item_id\x18\x06\x20\
-    \x01(\rR\tuseItemId\x12\x20\n\x0bMMLNAMPFAKA\x18\x0b\x20\x01(\rR\x0bMMLN\
-    AMPFAKA\x12.\n\x0bGNABNEDKPHH\x18\x0c\x20\x03(\x0b2\x0c.DFLIHGGNBDBR\x0b\
-    GNABNEDKPHHb\x06proto3\
+    o\"\xaf\x01\n\x0bPKBDAKMLDMC\x12.\n\x0bGNABNEDKPHH\x18\x05\x20\x03(\x0b2\
+    \x0c.DFLIHGGNBDBR\x0bGNABNEDKPHH\x12\x20\n\x0bMMLNAMPFAKA\x18\x08\x20\
+    \x01(\rR\x0bMMLNAMPFAKA\x12.\n\x0bDGKLOCJHKNH\x18\t\x20\x03(\x0b2\x0c.JF\
+    JDMGOMJOFR\x0bDGKLOCJHKNH\x12\x1e\n\x0buse_item_id\x18\n\x20\x01(\rR\tus\
+    eItemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

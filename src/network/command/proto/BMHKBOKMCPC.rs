@@ -30,10 +30,10 @@ pub struct BMHKBOKMCPC {
     // message fields
     // @@protoc_insertion_point(field:BMHKBOKMCPC.CCGBOIFFDLD)
     pub CCGBOIFFDLD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BMHKBOKMCPC.IIOAEDEGEFE)
-    pub IIOAEDEGEFE: ::protobuf::MessageField<super::HEBIIBBMNKG::HEBIIBBMNKG>,
     // @@protoc_insertion_point(field:BMHKBOKMCPC.BNFDBMMLEIG)
     pub BNFDBMMLEIG: u32,
+    // @@protoc_insertion_point(field:BMHKBOKMCPC.IIOAEDEGEFE)
+    pub IIOAEDEGEFE: ::protobuf::MessageField<super::HEBIIBBMNKG::HEBIIBBMNKG>,
     // special fields
     // @@protoc_insertion_point(special_field:BMHKBOKMCPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl BMHKBOKMCPC {
             |m: &BMHKBOKMCPC| { &m.CCGBOIFFDLD },
             |m: &mut BMHKBOKMCPC| { &mut m.CCGBOIFFDLD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEBIIBBMNKG::HEBIIBBMNKG>(
-            "IIOAEDEGEFE",
-            |m: &BMHKBOKMCPC| { &m.IIOAEDEGEFE },
-            |m: &mut BMHKBOKMCPC| { &mut m.IIOAEDEGEFE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BNFDBMMLEIG",
             |m: &BMHKBOKMCPC| { &m.BNFDBMMLEIG },
             |m: &mut BMHKBOKMCPC| { &mut m.BNFDBMMLEIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEBIIBBMNKG::HEBIIBBMNKG>(
+            "IIOAEDEGEFE",
+            |m: &BMHKBOKMCPC| { &m.IIOAEDEGEFE },
+            |m: &mut BMHKBOKMCPC| { &mut m.IIOAEDEGEFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMHKBOKMCPC>(
             "BMHKBOKMCPC",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for BMHKBOKMCPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.CCGBOIFFDLD)?;
                 },
-                32 => {
+                24 => {
                     self.CCGBOIFFDLD.push(is.read_uint32()?);
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIOAEDEGEFE)?;
                 },
                 88 => {
                     self.BNFDBMMLEIG = is.read_uint32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIOAEDEGEFE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for BMHKBOKMCPC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.CCGBOIFFDLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CCGBOIFFDLD);
+        if self.BNFDBMMLEIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BNFDBMMLEIG);
+        }
         if let Some(v) = self.IIOAEDEGEFE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.BNFDBMMLEIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BNFDBMMLEIG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for BMHKBOKMCPC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.CCGBOIFFDLD)?;
-        if let Some(v) = self.IIOAEDEGEFE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.CCGBOIFFDLD)?;
         if self.BNFDBMMLEIG != 0 {
             os.write_uint32(11, self.BNFDBMMLEIG)?;
+        }
+        if let Some(v) = self.IIOAEDEGEFE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BMHKBOKMCPC {
 
     fn clear(&mut self) {
         self.CCGBOIFFDLD.clear();
-        self.IIOAEDEGEFE.clear();
         self.BNFDBMMLEIG = 0;
+        self.IIOAEDEGEFE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMHKBOKMCPC {
         static instance: BMHKBOKMCPC = BMHKBOKMCPC {
             CCGBOIFFDLD: ::std::vec::Vec::new(),
-            IIOAEDEGEFE: ::protobuf::MessageField::none(),
             BNFDBMMLEIG: 0,
+            IIOAEDEGEFE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for BMHKBOKMCPC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMHKBOKMCPC.proto\x1a\x11HEBIIBBMNKG.proto\"\x81\x01\n\x0bBMHKBOKM\
-    CPC\x12\x20\n\x0bCCGBOIFFDLD\x18\x04\x20\x03(\rR\x0bCCGBOIFFDLD\x12.\n\
-    \x0bIIOAEDEGEFE\x18\x05\x20\x01(\x0b2\x0c.HEBIIBBMNKGR\x0bIIOAEDEGEFE\
-    \x12\x20\n\x0bBNFDBMMLEIG\x18\x0b\x20\x01(\rR\x0bBNFDBMMLEIGb\x06proto3\
+    CPC\x12\x20\n\x0bCCGBOIFFDLD\x18\x03\x20\x03(\rR\x0bCCGBOIFFDLD\x12\x20\
+    \n\x0bBNFDBMMLEIG\x18\x0b\x20\x01(\rR\x0bBNFDBMMLEIG\x12.\n\x0bIIOAEDEGE\
+    FE\x18\x0c\x20\x01(\x0b2\x0c.HEBIIBBMNKGR\x0bIIOAEDEGEFEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

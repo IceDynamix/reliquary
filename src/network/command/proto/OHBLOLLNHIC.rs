@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OHBLOLLNHIC {
     // message fields
-    // @@protoc_insertion_point(field:OHBLOLLNHIC.HOHDOFKJJDJ)
-    pub HOHDOFKJJDJ: u32,
     // @@protoc_insertion_point(field:OHBLOLLNHIC.role_id)
     pub role_id: u32,
-    // @@protoc_insertion_point(field:OHBLOLLNHIC.trait_id)
-    pub trait_id: u32,
     // @@protoc_insertion_point(field:OHBLOLLNHIC.ANDIPJEDGMG)
     pub ANDIPJEDGMG: bool,
+    // @@protoc_insertion_point(field:OHBLOLLNHIC.HOHDOFKJJDJ)
+    pub HOHDOFKJJDJ: u32,
+    // @@protoc_insertion_point(field:OHBLOLLNHIC.trait_id)
+    pub trait_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:OHBLOLLNHIC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl OHBLOLLNHIC {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOHDOFKJJDJ",
-            |m: &OHBLOLLNHIC| { &m.HOHDOFKJJDJ },
-            |m: &mut OHBLOLLNHIC| { &mut m.HOHDOFKJJDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_id",
             |m: &OHBLOLLNHIC| { &m.role_id },
             |m: &mut OHBLOLLNHIC| { &mut m.role_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trait_id",
-            |m: &OHBLOLLNHIC| { &m.trait_id },
-            |m: &mut OHBLOLLNHIC| { &mut m.trait_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANDIPJEDGMG",
             |m: &OHBLOLLNHIC| { &m.ANDIPJEDGMG },
             |m: &mut OHBLOLLNHIC| { &mut m.ANDIPJEDGMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HOHDOFKJJDJ",
+            |m: &OHBLOLLNHIC| { &m.HOHDOFKJJDJ },
+            |m: &mut OHBLOLLNHIC| { &mut m.HOHDOFKJJDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trait_id",
+            |m: &OHBLOLLNHIC| { &m.trait_id },
+            |m: &mut OHBLOLLNHIC| { &mut m.trait_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHBLOLLNHIC>(
             "OHBLOLLNHIC",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for OHBLOLLNHIC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.HOHDOFKJJDJ = is.read_uint32()?;
-                },
-                72 => {
+                8 => {
                     self.role_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.trait_id = is.read_uint32()?;
+                64 => {
+                    self.ANDIPJEDGMG = is.read_bool()?;
+                },
+                96 => {
+                    self.HOHDOFKJJDJ = is.read_uint32()?;
                 },
                 104 => {
-                    self.ANDIPJEDGMG = is.read_bool()?;
+                    self.trait_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for OHBLOLLNHIC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOHDOFKJJDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HOHDOFKJJDJ);
-        }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.role_id);
-        }
-        if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.role_id);
         }
         if self.ANDIPJEDGMG != false {
             my_size += 1 + 1;
+        }
+        if self.HOHDOFKJJDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.HOHDOFKJJDJ);
+        }
+        if self.trait_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for OHBLOLLNHIC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOHDOFKJJDJ != 0 {
-            os.write_uint32(8, self.HOHDOFKJJDJ)?;
-        }
         if self.role_id != 0 {
-            os.write_uint32(9, self.role_id)?;
-        }
-        if self.trait_id != 0 {
-            os.write_uint32(11, self.trait_id)?;
+            os.write_uint32(1, self.role_id)?;
         }
         if self.ANDIPJEDGMG != false {
-            os.write_bool(13, self.ANDIPJEDGMG)?;
+            os.write_bool(8, self.ANDIPJEDGMG)?;
+        }
+        if self.HOHDOFKJJDJ != 0 {
+            os.write_uint32(12, self.HOHDOFKJJDJ)?;
+        }
+        if self.trait_id != 0 {
+            os.write_uint32(13, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for OHBLOLLNHIC {
     }
 
     fn clear(&mut self) {
-        self.HOHDOFKJJDJ = 0;
         self.role_id = 0;
-        self.trait_id = 0;
         self.ANDIPJEDGMG = false;
+        self.HOHDOFKJJDJ = 0;
+        self.trait_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHBLOLLNHIC {
         static instance: OHBLOLLNHIC = OHBLOLLNHIC {
-            HOHDOFKJJDJ: 0,
             role_id: 0,
-            trait_id: 0,
             ANDIPJEDGMG: false,
+            HOHDOFKJJDJ: 0,
+            trait_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for OHBLOLLNHIC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHBLOLLNHIC.proto\"\x85\x01\n\x0bOHBLOLLNHIC\x12\x20\n\x0bHOHDOFKJ\
-    JDJ\x18\x08\x20\x01(\rR\x0bHOHDOFKJJDJ\x12\x17\n\x07role_id\x18\t\x20\
-    \x01(\rR\x06roleId\x12\x19\n\x08trait_id\x18\x0b\x20\x01(\rR\x07traitId\
-    \x12\x20\n\x0bANDIPJEDGMG\x18\r\x20\x01(\x08R\x0bANDIPJEDGMGb\x06proto3\
+    \n\x11OHBLOLLNHIC.proto\"\x85\x01\n\x0bOHBLOLLNHIC\x12\x17\n\x07role_id\
+    \x18\x01\x20\x01(\rR\x06roleId\x12\x20\n\x0bANDIPJEDGMG\x18\x08\x20\x01(\
+    \x08R\x0bANDIPJEDGMG\x12\x20\n\x0bHOHDOFKJJDJ\x18\x0c\x20\x01(\rR\x0bHOH\
+    DOFKJJDJ\x12\x19\n\x08trait_id\x18\r\x20\x01(\rR\x07traitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

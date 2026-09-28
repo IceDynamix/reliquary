@@ -45,7 +45,7 @@ impl ANMDOACPHMN {
         ::std::default::Default::default()
     }
 
-    // .BDPHJAEBKAD POOGLPNNDAB = 10;
+    // .BDPHJAEBKAD POOGLPNNDAB = 4;
 
     pub fn POOGLPNNDAB(&self) -> &super::BDPHJAEBKAD::BDPHJAEBKAD {
         match self.KKNBOACNCON {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for ANMDOACPHMN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                34 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for ANMDOACPHMN {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &anmdoacphmn::KKNBOACNCON::POOGLPNNDAB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -236,8 +236,8 @@ pub mod anmdoacphmn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ANMDOACPHMN.proto\x1a\x11BDPHJAEBKAD.proto\"N\n\x0bANMDOACPHMN\x12\
-    0\n\x0bPOOGLPNNDAB\x18\n\x20\x01(\x0b2\x0c.BDPHJAEBKADH\0R\x0bPOOGLPNNDA\
-    BB\r\n\x0bKKNBOACNCONb\x06proto3\
+    0\n\x0bPOOGLPNNDAB\x18\x04\x20\x01(\x0b2\x0c.BDPHJAEBKADH\0R\x0bPOOGLPNN\
+    DABB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

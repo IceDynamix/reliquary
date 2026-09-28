@@ -34,12 +34,12 @@ pub struct PEOKJEOOOJD {
     pub OPNPMBJDKNB: u32,
     // @@protoc_insertion_point(field:PEOKJEOOOJD.NEDGGMGMLGO)
     pub NEDGGMGMLGO: u32,
+    // @@protoc_insertion_point(field:PEOKJEOOOJD.BIEPFFBBJHG)
+    pub BIEPFFBBJHG: u32,
     // @@protoc_insertion_point(field:PEOKJEOOOJD.DPDNPCBNENI)
     pub DPDNPCBNENI: u32,
     // @@protoc_insertion_point(field:PEOKJEOOOJD.EKKLCBKNAED)
     pub EKKLCBKNAED: u32,
-    // @@protoc_insertion_point(field:PEOKJEOOOJD.BIEPFFBBJHG)
-    pub BIEPFFBBJHG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PEOKJEOOOJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,6 +75,11 @@ impl PEOKJEOOOJD {
             |m: &mut PEOKJEOOOJD| { &mut m.NEDGGMGMLGO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIEPFFBBJHG",
+            |m: &PEOKJEOOOJD| { &m.BIEPFFBBJHG },
+            |m: &mut PEOKJEOOOJD| { &mut m.BIEPFFBBJHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DPDNPCBNENI",
             |m: &PEOKJEOOOJD| { &m.DPDNPCBNENI },
             |m: &mut PEOKJEOOOJD| { &mut m.DPDNPCBNENI },
@@ -83,11 +88,6 @@ impl PEOKJEOOOJD {
             "EKKLCBKNAED",
             |m: &PEOKJEOOOJD| { &m.EKKLCBKNAED },
             |m: &mut PEOKJEOOOJD| { &mut m.EKKLCBKNAED },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BIEPFFBBJHG",
-            |m: &PEOKJEOOOJD| { &m.BIEPFFBBJHG },
-            |m: &mut PEOKJEOOOJD| { &mut m.BIEPFFBBJHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PEOKJEOOOJD>(
             "PEOKJEOOOJD",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for PEOKJEOOOJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.MMCPICGKOGD = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.OPNPMBJDKNB = is.read_uint32()?;
                 },
-                104 => {
+                112 => {
                     self.NEDGGMGMLGO = is.read_uint32()?;
                 },
-                3288 => {
+                2072 => {
+                    self.BIEPFFBBJHG = is.read_uint32()?;
+                },
+                6584 => {
                     self.DPDNPCBNENI = is.read_uint32()?;
                 },
-                5672 => {
+                9568 => {
                     self.EKKLCBKNAED = is.read_uint32()?;
-                },
-                7440 => {
-                    self.BIEPFFBBJHG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -138,22 +138,22 @@ impl ::protobuf::Message for PEOKJEOOOJD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMCPICGKOGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MMCPICGKOGD);
+            my_size += ::protobuf::rt::uint32_size(10, self.MMCPICGKOGD);
         }
         if self.OPNPMBJDKNB != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OPNPMBJDKNB);
+            my_size += ::protobuf::rt::uint32_size(11, self.OPNPMBJDKNB);
         }
         if self.NEDGGMGMLGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NEDGGMGMLGO);
-        }
-        if self.DPDNPCBNENI != 0 {
-            my_size += ::protobuf::rt::uint32_size(411, self.DPDNPCBNENI);
-        }
-        if self.EKKLCBKNAED != 0 {
-            my_size += ::protobuf::rt::uint32_size(709, self.EKKLCBKNAED);
+            my_size += ::protobuf::rt::uint32_size(14, self.NEDGGMGMLGO);
         }
         if self.BIEPFFBBJHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(930, self.BIEPFFBBJHG);
+            my_size += ::protobuf::rt::uint32_size(259, self.BIEPFFBBJHG);
+        }
+        if self.DPDNPCBNENI != 0 {
+            my_size += ::protobuf::rt::uint32_size(823, self.DPDNPCBNENI);
+        }
+        if self.EKKLCBKNAED != 0 {
+            my_size += ::protobuf::rt::uint32_size(1196, self.EKKLCBKNAED);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,22 +162,22 @@ impl ::protobuf::Message for PEOKJEOOOJD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMCPICGKOGD != 0 {
-            os.write_uint32(1, self.MMCPICGKOGD)?;
+            os.write_uint32(10, self.MMCPICGKOGD)?;
         }
         if self.OPNPMBJDKNB != 0 {
-            os.write_uint32(10, self.OPNPMBJDKNB)?;
+            os.write_uint32(11, self.OPNPMBJDKNB)?;
         }
         if self.NEDGGMGMLGO != 0 {
-            os.write_uint32(13, self.NEDGGMGMLGO)?;
-        }
-        if self.DPDNPCBNENI != 0 {
-            os.write_uint32(411, self.DPDNPCBNENI)?;
-        }
-        if self.EKKLCBKNAED != 0 {
-            os.write_uint32(709, self.EKKLCBKNAED)?;
+            os.write_uint32(14, self.NEDGGMGMLGO)?;
         }
         if self.BIEPFFBBJHG != 0 {
-            os.write_uint32(930, self.BIEPFFBBJHG)?;
+            os.write_uint32(259, self.BIEPFFBBJHG)?;
+        }
+        if self.DPDNPCBNENI != 0 {
+            os.write_uint32(823, self.DPDNPCBNENI)?;
+        }
+        if self.EKKLCBKNAED != 0 {
+            os.write_uint32(1196, self.EKKLCBKNAED)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,9 +199,9 @@ impl ::protobuf::Message for PEOKJEOOOJD {
         self.MMCPICGKOGD = 0;
         self.OPNPMBJDKNB = 0;
         self.NEDGGMGMLGO = 0;
+        self.BIEPFFBBJHG = 0;
         self.DPDNPCBNENI = 0;
         self.EKKLCBKNAED = 0;
-        self.BIEPFFBBJHG = 0;
         self.special_fields.clear();
     }
 
@@ -210,9 +210,9 @@ impl ::protobuf::Message for PEOKJEOOOJD {
             MMCPICGKOGD: 0,
             OPNPMBJDKNB: 0,
             NEDGGMGMLGO: 0,
+            BIEPFFBBJHG: 0,
             DPDNPCBNENI: 0,
             EKKLCBKNAED: 0,
-            BIEPFFBBJHG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,11 +238,11 @@ impl ::protobuf::reflect::ProtobufValue for PEOKJEOOOJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PEOKJEOOOJD.proto\"\xdc\x01\n\x0bPEOKJEOOOJD\x12\x20\n\x0bMMCPICGK\
-    OGD\x18\x01\x20\x01(\rR\x0bMMCPICGKOGD\x12\x20\n\x0bOPNPMBJDKNB\x18\n\
-    \x20\x01(\rR\x0bOPNPMBJDKNB\x12\x20\n\x0bNEDGGMGMLGO\x18\r\x20\x01(\rR\
-    \x0bNEDGGMGMLGO\x12!\n\x0bDPDNPCBNENI\x18\x9b\x03\x20\x01(\rR\x0bDPDNPCB\
-    NENI\x12!\n\x0bEKKLCBKNAED\x18\xc5\x05\x20\x01(\rR\x0bEKKLCBKNAED\x12!\n\
-    \x0bBIEPFFBBJHG\x18\xa2\x07\x20\x01(\rR\x0bBIEPFFBBJHGb\x06proto3\
+    OGD\x18\n\x20\x01(\rR\x0bMMCPICGKOGD\x12\x20\n\x0bOPNPMBJDKNB\x18\x0b\
+    \x20\x01(\rR\x0bOPNPMBJDKNB\x12\x20\n\x0bNEDGGMGMLGO\x18\x0e\x20\x01(\rR\
+    \x0bNEDGGMGMLGO\x12!\n\x0bBIEPFFBBJHG\x18\x83\x02\x20\x01(\rR\x0bBIEPFFB\
+    BJHG\x12!\n\x0bDPDNPCBNENI\x18\xb7\x06\x20\x01(\rR\x0bDPDNPCBNENI\x12!\n\
+    \x0bEKKLCBKNAED\x18\xac\t\x20\x01(\rR\x0bEKKLCBKNAEDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JGKNADEDNHB {
     // message fields
-    // @@protoc_insertion_point(field:JGKNADEDNHB.AHAPDFNPICG)
-    pub AHAPDFNPICG: u32,
-    // @@protoc_insertion_point(field:JGKNADEDNHB.HDAKGBMLKKI)
-    pub HDAKGBMLKKI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:JGKNADEDNHB.KPGNEABOECG)
-    pub KPGNEABOECG: u32,
     // @@protoc_insertion_point(field:JGKNADEDNHB.KOMEOMHBCEC)
     pub KOMEOMHBCEC: u32,
     // @@protoc_insertion_point(field:JGKNADEDNHB.OLGHCHMMMIA)
     pub OLGHCHMMMIA: ::std::vec::Vec<super::NNDKLIBALLC::NNDKLIBALLC>,
+    // @@protoc_insertion_point(field:JGKNADEDNHB.KPGNEABOECG)
+    pub KPGNEABOECG: u32,
     // @@protoc_insertion_point(field:JGKNADEDNHB.GHKNBIOFLGA)
     pub GHKNBIOFLGA: u32,
+    // @@protoc_insertion_point(field:JGKNADEDNHB.HDAKGBMLKKI)
+    pub HDAKGBMLKKI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JGKNADEDNHB.AHAPDFNPICG)
+    pub AHAPDFNPICG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JGKNADEDNHB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,21 +60,6 @@ impl JGKNADEDNHB {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHAPDFNPICG",
-            |m: &JGKNADEDNHB| { &m.AHAPDFNPICG },
-            |m: &mut JGKNADEDNHB| { &mut m.AHAPDFNPICG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HDAKGBMLKKI",
-            |m: &JGKNADEDNHB| { &m.HDAKGBMLKKI },
-            |m: &mut JGKNADEDNHB| { &mut m.HDAKGBMLKKI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KPGNEABOECG",
-            |m: &JGKNADEDNHB| { &m.KPGNEABOECG },
-            |m: &mut JGKNADEDNHB| { &mut m.KPGNEABOECG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KOMEOMHBCEC",
             |m: &JGKNADEDNHB| { &m.KOMEOMHBCEC },
             |m: &mut JGKNADEDNHB| { &mut m.KOMEOMHBCEC },
@@ -85,9 +70,24 @@ impl JGKNADEDNHB {
             |m: &mut JGKNADEDNHB| { &mut m.OLGHCHMMMIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPGNEABOECG",
+            |m: &JGKNADEDNHB| { &m.KPGNEABOECG },
+            |m: &mut JGKNADEDNHB| { &mut m.KPGNEABOECG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GHKNBIOFLGA",
             |m: &JGKNADEDNHB| { &m.GHKNBIOFLGA },
             |m: &mut JGKNADEDNHB| { &mut m.GHKNBIOFLGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HDAKGBMLKKI",
+            |m: &JGKNADEDNHB| { &m.HDAKGBMLKKI },
+            |m: &mut JGKNADEDNHB| { &mut m.HDAKGBMLKKI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AHAPDFNPICG",
+            |m: &JGKNADEDNHB| { &m.AHAPDFNPICG },
+            |m: &mut JGKNADEDNHB| { &mut m.AHAPDFNPICG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JGKNADEDNHB>(
             "JGKNADEDNHB",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for JGKNADEDNHB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.AHAPDFNPICG = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HDAKGBMLKKI)?;
-                },
-                48 => {
-                    self.HDAKGBMLKKI.push(is.read_uint32()?);
-                },
-                72 => {
-                    self.KPGNEABOECG = is.read_uint32()?;
-                },
-                80 => {
+                24 => {
                     self.KOMEOMHBCEC = is.read_uint32()?;
                 },
-                114 => {
+                34 => {
                     self.OLGHCHMMMIA.push(is.read_message()?);
                 },
-                120 => {
+                64 => {
+                    self.KPGNEABOECG = is.read_uint32()?;
+                },
+                96 => {
                     self.GHKNBIOFLGA = is.read_uint32()?;
+                },
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HDAKGBMLKKI)?;
+                },
+                112 => {
+                    self.HDAKGBMLKKI.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.AHAPDFNPICG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,22 +140,22 @@ impl ::protobuf::Message for JGKNADEDNHB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AHAPDFNPICG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AHAPDFNPICG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HDAKGBMLKKI);
-        if self.KPGNEABOECG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.KPGNEABOECG);
-        }
         if self.KOMEOMHBCEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KOMEOMHBCEC);
+            my_size += ::protobuf::rt::uint32_size(3, self.KOMEOMHBCEC);
         }
         for value in &self.OLGHCHMMMIA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.KPGNEABOECG != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KPGNEABOECG);
+        }
         if self.GHKNBIOFLGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GHKNBIOFLGA);
+            my_size += ::protobuf::rt::uint32_size(12, self.GHKNBIOFLGA);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HDAKGBMLKKI);
+        if self.AHAPDFNPICG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.AHAPDFNPICG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,21 +163,21 @@ impl ::protobuf::Message for JGKNADEDNHB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AHAPDFNPICG != 0 {
-            os.write_uint32(5, self.AHAPDFNPICG)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.HDAKGBMLKKI)?;
-        if self.KPGNEABOECG != 0 {
-            os.write_uint32(9, self.KPGNEABOECG)?;
-        }
         if self.KOMEOMHBCEC != 0 {
-            os.write_uint32(10, self.KOMEOMHBCEC)?;
+            os.write_uint32(3, self.KOMEOMHBCEC)?;
         }
         for v in &self.OLGHCHMMMIA {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.KPGNEABOECG != 0 {
+            os.write_uint32(8, self.KPGNEABOECG)?;
+        }
         if self.GHKNBIOFLGA != 0 {
-            os.write_uint32(15, self.GHKNBIOFLGA)?;
+            os.write_uint32(12, self.GHKNBIOFLGA)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.HDAKGBMLKKI)?;
+        if self.AHAPDFNPICG != 0 {
+            os.write_uint32(15, self.AHAPDFNPICG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for JGKNADEDNHB {
     }
 
     fn clear(&mut self) {
-        self.AHAPDFNPICG = 0;
-        self.HDAKGBMLKKI.clear();
-        self.KPGNEABOECG = 0;
         self.KOMEOMHBCEC = 0;
         self.OLGHCHMMMIA.clear();
+        self.KPGNEABOECG = 0;
         self.GHKNBIOFLGA = 0;
+        self.HDAKGBMLKKI.clear();
+        self.AHAPDFNPICG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGKNADEDNHB {
         static instance: JGKNADEDNHB = JGKNADEDNHB {
-            AHAPDFNPICG: 0,
-            HDAKGBMLKKI: ::std::vec::Vec::new(),
-            KPGNEABOECG: 0,
             KOMEOMHBCEC: 0,
             OLGHCHMMMIA: ::std::vec::Vec::new(),
+            KPGNEABOECG: 0,
             GHKNBIOFLGA: 0,
+            HDAKGBMLKKI: ::std::vec::Vec::new(),
+            AHAPDFNPICG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for JGKNADEDNHB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGKNADEDNHB.proto\x1a\x11NNDKLIBALLC.proto\"\xe7\x01\n\x0bJGKNADED\
-    NHB\x12\x20\n\x0bAHAPDFNPICG\x18\x05\x20\x01(\rR\x0bAHAPDFNPICG\x12\x20\
-    \n\x0bHDAKGBMLKKI\x18\x06\x20\x03(\rR\x0bHDAKGBMLKKI\x12\x20\n\x0bKPGNEA\
-    BOECG\x18\t\x20\x01(\rR\x0bKPGNEABOECG\x12\x20\n\x0bKOMEOMHBCEC\x18\n\
-    \x20\x01(\rR\x0bKOMEOMHBCEC\x12.\n\x0bOLGHCHMMMIA\x18\x0e\x20\x03(\x0b2\
-    \x0c.NNDKLIBALLCR\x0bOLGHCHMMMIA\x12\x20\n\x0bGHKNBIOFLGA\x18\x0f\x20\
-    \x01(\rR\x0bGHKNBIOFLGAb\x06proto3\
+    NHB\x12\x20\n\x0bKOMEOMHBCEC\x18\x03\x20\x01(\rR\x0bKOMEOMHBCEC\x12.\n\
+    \x0bOLGHCHMMMIA\x18\x04\x20\x03(\x0b2\x0c.NNDKLIBALLCR\x0bOLGHCHMMMIA\
+    \x12\x20\n\x0bKPGNEABOECG\x18\x08\x20\x01(\rR\x0bKPGNEABOECG\x12\x20\n\
+    \x0bGHKNBIOFLGA\x18\x0c\x20\x01(\rR\x0bGHKNBIOFLGA\x12\x20\n\x0bHDAKGBML\
+    KKI\x18\x0e\x20\x03(\rR\x0bHDAKGBMLKKI\x12\x20\n\x0bAHAPDFNPICG\x18\x0f\
+    \x20\x01(\rR\x0bAHAPDFNPICGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CIKPBGDIABO)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.CIKPBGDIABO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncMuseumRandomEventStartScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(SyncMuseumRandomEventStartScNotify.proto\x1a\x11FFEEHEBBLCI.proto\"T\
-    \n\"SyncMuseumRandomEventStartScNotify\x12.\n\x0bCIKPBGDIABO\x18\x08\x20\
+    \n\"SyncMuseumRandomEventStartScNotify\x12.\n\x0bCIKPBGDIABO\x18\x0f\x20\
     \x01(\x0b2\x0c.FFEEHEBBLCIR\x0bCIKPBGDIABOb\x06proto3\
 ";
 

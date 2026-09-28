@@ -52,7 +52,7 @@ impl FriendChallengeClearanceInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 1364;
+    // .ChallengeStatistics challenge_default = 173;
 
     pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
         match self.EDKOHAAMONH {
@@ -101,7 +101,7 @@ impl FriendChallengeClearanceInfo {
         }
     }
 
-    // .ChallengeStoryStatistics challenge_story = 37;
+    // .ChallengeStoryStatistics challenge_story = 759;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.EDKOHAAMONH {
@@ -150,7 +150,7 @@ impl FriendChallengeClearanceInfo {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 513;
+    // .ChallengeBossStatistics challenge_boss = 1549;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
         match self.EDKOHAAMONH {
@@ -257,22 +257,22 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEGBIPBAFBP)?;
                 },
-                64 => {
+                80 => {
                     self.group_id = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.LMPPDGOFOMF = is.read_uint32()?;
                 },
-                10914 => {
+                1386 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(is.read_message()?));
                 },
-                298 => {
+                6074 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeStory(is.read_message()?));
                 },
-                4106 => {
+                12394 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeBoss(is.read_message()?));
                 },
                 tag => {
@@ -292,10 +292,10 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
         }
         if self.LMPPDGOFOMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LMPPDGOFOMF);
+            my_size += ::protobuf::rt::uint32_size(12, self.LMPPDGOFOMF);
         }
         if let ::std::option::Option::Some(ref v) = self.EDKOHAAMONH {
             match v {
@@ -320,24 +320,24 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MEGBIPBAFBP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(8, self.group_id)?;
+            os.write_uint32(10, self.group_id)?;
         }
         if self.LMPPDGOFOMF != 0 {
-            os.write_uint32(13, self.LMPPDGOFOMF)?;
+            os.write_uint32(12, self.LMPPDGOFOMF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EDKOHAAMONH {
             match v {
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1364, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(173, v, os)?;
                 },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(37, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(759, v, os)?;
                 },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(513, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1549, v, os)?;
                 },
             };
         }
@@ -431,15 +431,15 @@ pub mod friend_challenge_clearance_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FriendChallengeClearanceInfo.proto\x1a\x11BBBIAPEHABA.proto\x1a\x1dC\
     hallengeBossStatistics.proto\x1a\x19ChallengeStatistics.proto\x1a\x1eCha\
-    llengeStoryStatistics.proto\"\xea\x02\n\x1cFriendChallengeClearanceInfo\
-    \x12.\n\x0bMEGBIPBAFBP\x18\x03\x20\x01(\x0b2\x0c.BBBIAPEHABAR\x0bMEGBIPB\
-    AFBP\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\x07groupId\x12\x20\n\x0bL\
-    MPPDGOFOMF\x18\r\x20\x01(\rR\x0bLMPPDGOFOMF\x12D\n\x11challenge_default\
-    \x18\xd4\n\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10challengeDefault\
-    \x12D\n\x0fchallenge_story\x18%\x20\x01(\x0b2\x19.ChallengeStoryStatisti\
-    csH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\x18\x81\x04\x20\x01(\
-    \x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBossB\r\n\x0bEDKOHAAMONH\
-    b\x06proto3\
+    llengeStoryStatistics.proto\"\xeb\x02\n\x1cFriendChallengeClearanceInfo\
+    \x12.\n\x0bMEGBIPBAFBP\x18\t\x20\x01(\x0b2\x0c.BBBIAPEHABAR\x0bMEGBIPBAF\
+    BP\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x20\n\x0bLMPPD\
+    GOFOMF\x18\x0c\x20\x01(\rR\x0bLMPPDGOFOMF\x12D\n\x11challenge_default\
+    \x18\xad\x01\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10challengeDefau\
+    lt\x12E\n\x0fchallenge_story\x18\xf7\x05\x20\x01(\x0b2\x19.ChallengeStor\
+    yStatisticsH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\x18\x8d\x0c\
+    \x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBossB\r\n\x0bED\
+    KOHAAMONHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

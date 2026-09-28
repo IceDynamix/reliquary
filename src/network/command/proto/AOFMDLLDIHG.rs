@@ -36,6 +36,8 @@ pub struct AOFMDLLDIHG {
     pub battle_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AOFMDLLDIHG.damage)
     pub damage: f64,
+    // @@protoc_insertion_point(field:AOFMDLLDIHG.LHJMDKJDGAH)
+    pub LHJMDKJDGAH: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AOFMDLLDIHG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,7 +55,7 @@ impl AOFMDLLDIHG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -74,6 +76,11 @@ impl AOFMDLLDIHG {
             "damage",
             |m: &AOFMDLLDIHG| { &m.damage },
             |m: &mut AOFMDLLDIHG| { &mut m.damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHJMDKJDGAH",
+            |m: &AOFMDLLDIHG| { &m.LHJMDKJDGAH },
+            |m: &mut AOFMDLLDIHG| { &mut m.LHJMDKJDGAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AOFMDLLDIHG>(
             "AOFMDLLDIHG",
@@ -108,6 +115,9 @@ impl ::protobuf::Message for AOFMDLLDIHG {
                 33 => {
                     self.damage = is.read_double()?;
                 },
+                41 => {
+                    self.LHJMDKJDGAH = is.read_double()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -130,6 +140,9 @@ impl ::protobuf::Message for AOFMDLLDIHG {
         if self.damage != 0. {
             my_size += 1 + 8;
         }
+        if self.LHJMDKJDGAH != 0. {
+            my_size += 1 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -145,6 +158,9 @@ impl ::protobuf::Message for AOFMDLLDIHG {
         os.write_repeated_packed_uint32(3, &self.battle_target_list)?;
         if self.damage != 0. {
             os.write_double(4, self.damage)?;
+        }
+        if self.LHJMDKJDGAH != 0. {
+            os.write_double(5, self.LHJMDKJDGAH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,6 +183,7 @@ impl ::protobuf::Message for AOFMDLLDIHG {
         self.PNJEGPAFNCI = 0.;
         self.battle_target_list.clear();
         self.damage = 0.;
+        self.LHJMDKJDGAH = 0.;
         self.special_fields.clear();
     }
 
@@ -176,6 +193,7 @@ impl ::protobuf::Message for AOFMDLLDIHG {
             PNJEGPAFNCI: 0.,
             battle_target_list: ::std::vec::Vec::new(),
             damage: 0.,
+            LHJMDKJDGAH: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for AOFMDLLDIHG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AOFMDLLDIHG.proto\"\x90\x01\n\x0bAOFMDLLDIHG\x12\x19\n\x08skill_id\
+    \n\x11AOFMDLLDIHG.proto\"\xb2\x01\n\x0bAOFMDLLDIHG\x12\x19\n\x08skill_id\
     \x18\x01\x20\x01(\rR\x07skillId\x12\x20\n\x0bPNJEGPAFNCI\x18\x02\x20\x01\
     (\x01R\x0bPNJEGPAFNCI\x12,\n\x12battle_target_list\x18\x03\x20\x03(\rR\
     \x10battleTargetList\x12\x16\n\x06damage\x18\x04\x20\x01(\x01R\x06damage\
-    b\x06proto3\
+    \x12\x20\n\x0bLHJMDKJDGAH\x18\x05\x20\x01(\x01R\x0bLHJMDKJDGAHb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

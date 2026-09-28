@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetBenefitActivityInfo {
     // message fields
+    // @@protoc_insertion_point(field:GetBenefitActivityInfo.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetBenefitActivityInfo.HNFFFDEGOEB)
     pub HNFFFDEGOEB: ::std::vec::Vec<super::BenefitData::BenefitData>,
     // @@protoc_insertion_point(field:GetBenefitActivityInfo.GHHLLCEMAOP)
     pub GHHLLCEMAOP: bool,
-    // @@protoc_insertion_point(field:GetBenefitActivityInfo.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetBenefitActivityInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl GetBenefitActivityInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetBenefitActivityInfo| { &m.retcode },
+            |m: &mut GetBenefitActivityInfo| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HNFFFDEGOEB",
             |m: &GetBenefitActivityInfo| { &m.HNFFFDEGOEB },
@@ -62,11 +67,6 @@ impl GetBenefitActivityInfo {
             "GHHLLCEMAOP",
             |m: &GetBenefitActivityInfo| { &m.GHHLLCEMAOP },
             |m: &mut GetBenefitActivityInfo| { &mut m.GHHLLCEMAOP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetBenefitActivityInfo| { &m.retcode },
-            |m: &mut GetBenefitActivityInfo| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetBenefitActivityInfo>(
             "GetBenefitActivityInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetBenefitActivityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                80 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                114 => {
                     self.HNFFFDEGOEB.push(is.read_message()?);
                 },
-                24 => {
-                    self.GHHLLCEMAOP = is.read_bool()?;
-                },
                 120 => {
-                    self.retcode = is.read_uint32()?;
+                    self.GHHLLCEMAOP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for GetBenefitActivityInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         for value in &self.HNFFFDEGOEB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -114,23 +117,20 @@ impl ::protobuf::Message for GetBenefitActivityInfo {
         if self.GHHLLCEMAOP != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
+        }
         for v in &self.HNFFFDEGOEB {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.GHHLLCEMAOP != false {
-            os.write_bool(3, self.GHHLLCEMAOP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_bool(15, self.GHHLLCEMAOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetBenefitActivityInfo {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.HNFFFDEGOEB.clear();
         self.GHHLLCEMAOP = false;
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetBenefitActivityInfo {
         static instance: GetBenefitActivityInfo = GetBenefitActivityInfo {
+            retcode: 0,
             HNFFFDEGOEB: ::std::vec::Vec::new(),
             GHHLLCEMAOP: false,
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetBenefitActivityInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetBenefitActivityInfo.proto\x1a\x11BenefitData.proto\"\x84\x01\n\
-    \x16GetBenefitActivityInfo\x12.\n\x0bHNFFFDEGOEB\x18\x02\x20\x03(\x0b2\
-    \x0c.BenefitDataR\x0bHNFFFDEGOEB\x12\x20\n\x0bGHHLLCEMAOP\x18\x03\x20\
-    \x01(\x08R\x0bGHHLLCEMAOP\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07re\
-    tcodeb\x06proto3\
+    \x16GetBenefitActivityInfo\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07ret\
+    code\x12.\n\x0bHNFFFDEGOEB\x18\x0e\x20\x03(\x0b2\x0c.BenefitDataR\x0bHNF\
+    FFDEGOEB\x12\x20\n\x0bGHHLLCEMAOP\x18\x0f\x20\x01(\x08R\x0bGHHLLCEMAOPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

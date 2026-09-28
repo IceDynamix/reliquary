@@ -86,10 +86,10 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                50 => {
                     self.MOPAGKNEMOD.push(is.read_message()?);
                 },
                 106 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         for value in &self.MOPAGKNEMOD {
             let len = value.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for GetMultipleDropInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         for v in &self.MOPAGKNEMOD {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.FAFFFJGJHHC {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -187,7 +187,7 @@ impl ::protobuf::reflect::ProtobufValue for GetMultipleDropInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetMultipleDropInfoScRsp.proto\x1a\x11BMJHAHOLEGH.proto\x1a\x11NGL\
     OBFBCGBB.proto\"\x94\x01\n\x18GetMultipleDropInfoScRsp\x12\x18\n\x07retc\
-    ode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bMOPAGKNEMOD\x18\x0c\x20\x03\
+    ode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bMOPAGKNEMOD\x18\x06\x20\x03\
     (\x0b2\x0c.NGLOBFBCGBBR\x0bMOPAGKNEMOD\x12.\n\x0bFAFFFJGJHHC\x18\r\x20\
     \x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJGJHHCb\x06proto3\
 ";

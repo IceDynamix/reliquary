@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BJLNEBBMMOE {
     // message fields
-    // @@protoc_insertion_point(field:BJLNEBBMMOE.NIOFIOOGKLD)
-    pub NIOFIOOGKLD: u32,
     // @@protoc_insertion_point(field:BJLNEBBMMOE.PDFJMFBHPFC)
     pub PDFJMFBHPFC: u32,
+    // @@protoc_insertion_point(field:BJLNEBBMMOE.NIOFIOOGKLD)
+    pub NIOFIOOGKLD: u32,
     // @@protoc_insertion_point(field:BJLNEBBMMOE.DOFNEAPHMKH)
     pub DOFNEAPHMKH: bool,
     // special fields
@@ -54,14 +54,14 @@ impl BJLNEBBMMOE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIOFIOOGKLD",
-            |m: &BJLNEBBMMOE| { &m.NIOFIOOGKLD },
-            |m: &mut BJLNEBBMMOE| { &mut m.NIOFIOOGKLD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PDFJMFBHPFC",
             |m: &BJLNEBBMMOE| { &m.PDFJMFBHPFC },
             |m: &mut BJLNEBBMMOE| { &mut m.PDFJMFBHPFC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NIOFIOOGKLD",
+            |m: &BJLNEBBMMOE| { &m.NIOFIOOGKLD },
+            |m: &mut BJLNEBBMMOE| { &mut m.NIOFIOOGKLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOFNEAPHMKH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BJLNEBBMMOE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NIOFIOOGKLD = is.read_uint32()?;
-                },
                 32 => {
                     self.PDFJMFBHPFC = is.read_uint32()?;
                 },
-                48 => {
+                64 => {
+                    self.NIOFIOOGKLD = is.read_uint32()?;
+                },
+                120 => {
                     self.DOFNEAPHMKH = is.read_bool()?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for BJLNEBBMMOE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NIOFIOOGKLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NIOFIOOGKLD);
-        }
         if self.PDFJMFBHPFC != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.PDFJMFBHPFC);
+        }
+        if self.NIOFIOOGKLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NIOFIOOGKLD);
         }
         if self.DOFNEAPHMKH != false {
             my_size += 1 + 1;
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BJLNEBBMMOE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NIOFIOOGKLD != 0 {
-            os.write_uint32(2, self.NIOFIOOGKLD)?;
-        }
         if self.PDFJMFBHPFC != 0 {
             os.write_uint32(4, self.PDFJMFBHPFC)?;
         }
+        if self.NIOFIOOGKLD != 0 {
+            os.write_uint32(8, self.NIOFIOOGKLD)?;
+        }
         if self.DOFNEAPHMKH != false {
-            os.write_bool(6, self.DOFNEAPHMKH)?;
+            os.write_bool(15, self.DOFNEAPHMKH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for BJLNEBBMMOE {
     }
 
     fn clear(&mut self) {
-        self.NIOFIOOGKLD = 0;
         self.PDFJMFBHPFC = 0;
+        self.NIOFIOOGKLD = 0;
         self.DOFNEAPHMKH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BJLNEBBMMOE {
         static instance: BJLNEBBMMOE = BJLNEBBMMOE {
-            NIOFIOOGKLD: 0,
             PDFJMFBHPFC: 0,
+            NIOFIOOGKLD: 0,
             DOFNEAPHMKH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BJLNEBBMMOE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BJLNEBBMMOE.proto\"s\n\x0bBJLNEBBMMOE\x12\x20\n\x0bNIOFIOOGKLD\x18\
-    \x02\x20\x01(\rR\x0bNIOFIOOGKLD\x12\x20\n\x0bPDFJMFBHPFC\x18\x04\x20\x01\
-    (\rR\x0bPDFJMFBHPFC\x12\x20\n\x0bDOFNEAPHMKH\x18\x06\x20\x01(\x08R\x0bDO\
+    \n\x11BJLNEBBMMOE.proto\"s\n\x0bBJLNEBBMMOE\x12\x20\n\x0bPDFJMFBHPFC\x18\
+    \x04\x20\x01(\rR\x0bPDFJMFBHPFC\x12\x20\n\x0bNIOFIOOGKLD\x18\x08\x20\x01\
+    (\rR\x0bNIOFIOOGKLD\x12\x20\n\x0bDOFNEAPHMKH\x18\x0f\x20\x01(\x08R\x0bDO\
     FNEAPHMKHb\x06proto3\
 ";
 

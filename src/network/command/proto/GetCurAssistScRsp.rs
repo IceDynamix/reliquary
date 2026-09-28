@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurAssistScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetCurAssistScRsp.ODHMGPNECFO)
+    pub ODHMGPNECFO: ::protobuf::MessageField<super::HCBHBJEOCHL::HCBHBJEOCHL>,
     // @@protoc_insertion_point(field:GetCurAssistScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetCurAssistScRsp.ODHMGPNECFO)
-    pub ODHMGPNECFO: ::protobuf::MessageField<super::PlayerAssistInfo::PlayerAssistInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurAssistScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetCurAssistScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HCBHBJEOCHL::HCBHBJEOCHL>(
+            "ODHMGPNECFO",
+            |m: &GetCurAssistScRsp| { &m.ODHMGPNECFO },
+            |m: &mut GetCurAssistScRsp| { &mut m.ODHMGPNECFO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetCurAssistScRsp| { &m.retcode },
             |m: &mut GetCurAssistScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerAssistInfo::PlayerAssistInfo>(
-            "ODHMGPNECFO",
-            |m: &GetCurAssistScRsp| { &m.ODHMGPNECFO },
-            |m: &mut GetCurAssistScRsp| { &mut m.ODHMGPNECFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurAssistScRsp>(
             "GetCurAssistScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                122 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODHMGPNECFO)?;
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if let Some(v) = self.ODHMGPNECFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if let Some(v) = self.ODHMGPNECFO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.ODHMGPNECFO.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurAssistScRsp {
         static instance: GetCurAssistScRsp = GetCurAssistScRsp {
-            retcode: 0,
             ODHMGPNECFO: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetCurAssistScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetCurAssistScRsp.proto\x1a\x16PlayerAssistInfo.proto\"b\n\x11GetC\
-    urAssistScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x123\n\
-    \x0bODHMGPNECFO\x18\x0f\x20\x01(\x0b2\x11.PlayerAssistInfoR\x0bODHMGPNEC\
-    FOb\x06proto3\
+    \n\x17GetCurAssistScRsp.proto\x1a\x11HCBHBJEOCHL.proto\"]\n\x11GetCurAss\
+    istScRsp\x12.\n\x0bODHMGPNECFO\x18\x02\x20\x01(\x0b2\x0c.HCBHBJEOCHLR\
+    \x0bODHMGPNECFO\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PlayerAssistInfo::file_descriptor().clone());
+            deps.push(super::HCBHBJEOCHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetCurAssistScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

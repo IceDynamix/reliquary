@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIFCAIEDOLK {
     // message fields
-    // @@protoc_insertion_point(field:CIFCAIEDOLK.JPPAGGPJOMO)
-    pub JPPAGGPJOMO: u32,
     // @@protoc_insertion_point(field:CIFCAIEDOLK.EGDEKFJJNEP)
     pub EGDEKFJJNEP: u32,
+    // @@protoc_insertion_point(field:CIFCAIEDOLK.JPPAGGPJOMO)
+    pub JPPAGGPJOMO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CIFCAIEDOLK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CIFCAIEDOLK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPPAGGPJOMO",
-            |m: &CIFCAIEDOLK| { &m.JPPAGGPJOMO },
-            |m: &mut CIFCAIEDOLK| { &mut m.JPPAGGPJOMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGDEKFJJNEP",
             |m: &CIFCAIEDOLK| { &m.EGDEKFJJNEP },
             |m: &mut CIFCAIEDOLK| { &mut m.EGDEKFJJNEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPPAGGPJOMO",
+            |m: &CIFCAIEDOLK| { &m.JPPAGGPJOMO },
+            |m: &mut CIFCAIEDOLK| { &mut m.JPPAGGPJOMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIFCAIEDOLK>(
             "CIFCAIEDOLK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CIFCAIEDOLK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.JPPAGGPJOMO = is.read_uint32()?;
-                },
-                96 => {
+                16 => {
                     self.EGDEKFJJNEP = is.read_uint32()?;
+                },
+                64 => {
+                    self.JPPAGGPJOMO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CIFCAIEDOLK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JPPAGGPJOMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JPPAGGPJOMO);
-        }
         if self.EGDEKFJJNEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.EGDEKFJJNEP);
+            my_size += ::protobuf::rt::uint32_size(2, self.EGDEKFJJNEP);
+        }
+        if self.JPPAGGPJOMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JPPAGGPJOMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CIFCAIEDOLK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JPPAGGPJOMO != 0 {
-            os.write_uint32(6, self.JPPAGGPJOMO)?;
-        }
         if self.EGDEKFJJNEP != 0 {
-            os.write_uint32(12, self.EGDEKFJJNEP)?;
+            os.write_uint32(2, self.EGDEKFJJNEP)?;
+        }
+        if self.JPPAGGPJOMO != 0 {
+            os.write_uint32(8, self.JPPAGGPJOMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CIFCAIEDOLK {
     }
 
     fn clear(&mut self) {
-        self.JPPAGGPJOMO = 0;
         self.EGDEKFJJNEP = 0;
+        self.JPPAGGPJOMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIFCAIEDOLK {
         static instance: CIFCAIEDOLK = CIFCAIEDOLK {
-            JPPAGGPJOMO: 0,
             EGDEKFJJNEP: 0,
+            JPPAGGPJOMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CIFCAIEDOLK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CIFCAIEDOLK.proto\"Q\n\x0bCIFCAIEDOLK\x12\x20\n\x0bJPPAGGPJOMO\x18\
-    \x06\x20\x01(\rR\x0bJPPAGGPJOMO\x12\x20\n\x0bEGDEKFJJNEP\x18\x0c\x20\x01\
-    (\rR\x0bEGDEKFJJNEPb\x06proto3\
+    \n\x11CIFCAIEDOLK.proto\"Q\n\x0bCIFCAIEDOLK\x12\x20\n\x0bEGDEKFJJNEP\x18\
+    \x02\x20\x01(\rR\x0bEGDEKFJJNEP\x12\x20\n\x0bJPPAGGPJOMO\x18\x08\x20\x01\
+    (\rR\x0bJPPAGGPJOMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

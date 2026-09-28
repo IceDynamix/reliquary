@@ -86,10 +86,10 @@ impl ::protobuf::Message for LuckyKoiInfoList {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                34 => {
                     self.LHAPDMPPOMP = is.read_string()?;
                 },
-                104 => {
+                64 => {
                     self.head_icon = is.read_uint32()?;
                 },
                 122 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for LuckyKoiInfoList {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.LHAPDMPPOMP.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.LHAPDMPPOMP);
+            my_size += ::protobuf::rt::string_size(4, &self.LHAPDMPPOMP);
         }
         if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.head_icon);
+            my_size += ::protobuf::rt::uint32_size(8, self.head_icon);
         }
         if !self.ELBEDNGJKDD.is_empty() {
             my_size += ::protobuf::rt::string_size(15, &self.ELBEDNGJKDD);
@@ -123,10 +123,10 @@ impl ::protobuf::Message for LuckyKoiInfoList {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.LHAPDMPPOMP.is_empty() {
-            os.write_string(7, &self.LHAPDMPPOMP)?;
+            os.write_string(4, &self.LHAPDMPPOMP)?;
         }
         if self.head_icon != 0 {
-            os.write_uint32(13, self.head_icon)?;
+            os.write_uint32(8, self.head_icon)?;
         }
         if !self.ELBEDNGJKDD.is_empty() {
             os.write_string(15, &self.ELBEDNGJKDD)?;
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LuckyKoiInfoList {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16LuckyKoiInfoList.proto\"s\n\x10LuckyKoiInfoList\x12\x20\n\x0bLHAPD\
-    MPPOMP\x18\x07\x20\x01(\tR\x0bLHAPDMPPOMP\x12\x1b\n\thead_icon\x18\r\x20\
-    \x01(\rR\x08headIcon\x12\x20\n\x0bELBEDNGJKDD\x18\x0f\x20\x01(\tR\x0bELB\
-    EDNGJKDDb\x06proto3\
+    MPPOMP\x18\x04\x20\x01(\tR\x0bLHAPDMPPOMP\x12\x1b\n\thead_icon\x18\x08\
+    \x20\x01(\rR\x08headIcon\x12\x20\n\x0bELBEDNGJKDD\x18\x0f\x20\x01(\tR\
+    \x0bELBEDNGJKDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

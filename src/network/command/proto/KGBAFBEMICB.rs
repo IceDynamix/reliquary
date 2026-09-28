@@ -82,7 +82,7 @@ impl ::protobuf::Message for KGBAFBEMICB {
                 24 => {
                     self.AACGBEBGDPE = is.read_uint32()?;
                 },
-                112 => {
+                96 => {
                     self.MNDCIBFEJOP = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for KGBAFBEMICB {
             os.write_uint32(3, self.AACGBEBGDPE)?;
         }
         if self.MNDCIBFEJOP != false {
-            os.write_bool(14, self.MNDCIBFEJOP)?;
+            os.write_bool(12, self.MNDCIBFEJOP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for KGBAFBEMICB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KGBAFBEMICB.proto\"Q\n\x0bKGBAFBEMICB\x12\x20\n\x0bAACGBEBGDPE\x18\
-    \x03\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bMNDCIBFEJOP\x18\x0e\x20\x01\
+    \x03\x20\x01(\rR\x0bAACGBEBGDPE\x12\x20\n\x0bMNDCIBFEJOP\x18\x0c\x20\x01\
     (\x08R\x0bMNDCIBFEJOPb\x06proto3\
 ";
 

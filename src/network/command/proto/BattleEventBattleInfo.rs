@@ -34,6 +34,18 @@ pub struct BattleEventBattleInfo {
     pub status: ::protobuf::MessageField<super::BattleEventProperty::BattleEventProperty>,
     // @@protoc_insertion_point(field:BattleEventBattleInfo.skill_info)
     pub skill_info: ::std::vec::Vec<super::AOFMDLLDIHG::AOFMDLLDIHG>,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.NEMOMKPCCMG)
+    pub NEMOMKPCCMG: f64,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.LIOCBCEJAIF)
+    pub LIOCBCEJAIF: f64,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.total_damage)
+    pub total_damage: f64,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.GPPOHBEGNNO)
+    pub GPPOHBEGNNO: f64,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.DOGFPDEIECH)
+    pub DOGFPDEIECH: f64,
+    // @@protoc_insertion_point(field:BattleEventBattleInfo.DHHEBNINHDE)
+    pub DHHEBNINHDE: f64,
     // special fields
     // @@protoc_insertion_point(special_field:BattleEventBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +63,7 @@ impl BattleEventBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_event_id",
@@ -67,6 +79,36 @@ impl BattleEventBattleInfo {
             "skill_info",
             |m: &BattleEventBattleInfo| { &m.skill_info },
             |m: &mut BattleEventBattleInfo| { &mut m.skill_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEMOMKPCCMG",
+            |m: &BattleEventBattleInfo| { &m.NEMOMKPCCMG },
+            |m: &mut BattleEventBattleInfo| { &mut m.NEMOMKPCCMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIOCBCEJAIF",
+            |m: &BattleEventBattleInfo| { &m.LIOCBCEJAIF },
+            |m: &mut BattleEventBattleInfo| { &mut m.LIOCBCEJAIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_damage",
+            |m: &BattleEventBattleInfo| { &m.total_damage },
+            |m: &mut BattleEventBattleInfo| { &mut m.total_damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPPOHBEGNNO",
+            |m: &BattleEventBattleInfo| { &m.GPPOHBEGNNO },
+            |m: &mut BattleEventBattleInfo| { &mut m.GPPOHBEGNNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOGFPDEIECH",
+            |m: &BattleEventBattleInfo| { &m.DOGFPDEIECH },
+            |m: &mut BattleEventBattleInfo| { &mut m.DOGFPDEIECH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DHHEBNINHDE",
+            |m: &BattleEventBattleInfo| { &m.DHHEBNINHDE },
+            |m: &mut BattleEventBattleInfo| { &mut m.DHHEBNINHDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleEventBattleInfo>(
             "BattleEventBattleInfo",
@@ -95,6 +137,24 @@ impl ::protobuf::Message for BattleEventBattleInfo {
                 26 => {
                     self.skill_info.push(is.read_message()?);
                 },
+                33 => {
+                    self.NEMOMKPCCMG = is.read_double()?;
+                },
+                41 => {
+                    self.LIOCBCEJAIF = is.read_double()?;
+                },
+                49 => {
+                    self.total_damage = is.read_double()?;
+                },
+                57 => {
+                    self.GPPOHBEGNNO = is.read_double()?;
+                },
+                65 => {
+                    self.DOGFPDEIECH = is.read_double()?;
+                },
+                73 => {
+                    self.DHHEBNINHDE = is.read_double()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -118,6 +178,24 @@ impl ::protobuf::Message for BattleEventBattleInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NEMOMKPCCMG != 0. {
+            my_size += 1 + 8;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            my_size += 1 + 8;
+        }
+        if self.total_damage != 0. {
+            my_size += 1 + 8;
+        }
+        if self.GPPOHBEGNNO != 0. {
+            my_size += 1 + 8;
+        }
+        if self.DOGFPDEIECH != 0. {
+            my_size += 1 + 8;
+        }
+        if self.DHHEBNINHDE != 0. {
+            my_size += 1 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -133,6 +211,24 @@ impl ::protobuf::Message for BattleEventBattleInfo {
         for v in &self.skill_info {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.NEMOMKPCCMG != 0. {
+            os.write_double(4, self.NEMOMKPCCMG)?;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            os.write_double(5, self.LIOCBCEJAIF)?;
+        }
+        if self.total_damage != 0. {
+            os.write_double(6, self.total_damage)?;
+        }
+        if self.GPPOHBEGNNO != 0. {
+            os.write_double(7, self.GPPOHBEGNNO)?;
+        }
+        if self.DOGFPDEIECH != 0. {
+            os.write_double(8, self.DOGFPDEIECH)?;
+        }
+        if self.DHHEBNINHDE != 0. {
+            os.write_double(9, self.DHHEBNINHDE)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,6 +249,12 @@ impl ::protobuf::Message for BattleEventBattleInfo {
         self.battle_event_id = 0;
         self.status.clear();
         self.skill_info.clear();
+        self.NEMOMKPCCMG = 0.;
+        self.LIOCBCEJAIF = 0.;
+        self.total_damage = 0.;
+        self.GPPOHBEGNNO = 0.;
+        self.DOGFPDEIECH = 0.;
+        self.DHHEBNINHDE = 0.;
         self.special_fields.clear();
     }
 
@@ -161,6 +263,12 @@ impl ::protobuf::Message for BattleEventBattleInfo {
             battle_event_id: 0,
             status: ::protobuf::MessageField::none(),
             skill_info: ::std::vec::Vec::new(),
+            NEMOMKPCCMG: 0.,
+            LIOCBCEJAIF: 0.,
+            total_damage: 0.,
+            GPPOHBEGNNO: 0.,
+            DOGFPDEIECH: 0.,
+            DHHEBNINHDE: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +294,15 @@ impl ::protobuf::reflect::ProtobufValue for BattleEventBattleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bBattleEventBattleInfo.proto\x1a\x11AOFMDLLDIHG.proto\x1a\x19Battle\
-    EventProperty.proto\"\x9a\x01\n\x15BattleEventBattleInfo\x12&\n\x0fbattl\
+    EventProperty.proto\"\xe7\x02\n\x15BattleEventBattleInfo\x12&\n\x0fbattl\
     e_event_id\x18\x01\x20\x01(\rR\rbattleEventId\x12,\n\x06status\x18\x02\
     \x20\x01(\x0b2\x14.BattleEventPropertyR\x06status\x12+\n\nskill_info\x18\
-    \x03\x20\x03(\x0b2\x0c.AOFMDLLDIHGR\tskillInfob\x06proto3\
+    \x03\x20\x03(\x0b2\x0c.AOFMDLLDIHGR\tskillInfo\x12\x20\n\x0bNEMOMKPCCMG\
+    \x18\x04\x20\x01(\x01R\x0bNEMOMKPCCMG\x12\x20\n\x0bLIOCBCEJAIF\x18\x05\
+    \x20\x01(\x01R\x0bLIOCBCEJAIF\x12!\n\x0ctotal_damage\x18\x06\x20\x01(\
+    \x01R\x0btotalDamage\x12\x20\n\x0bGPPOHBEGNNO\x18\x07\x20\x01(\x01R\x0bG\
+    PPOHBEGNNO\x12\x20\n\x0bDOGFPDEIECH\x18\x08\x20\x01(\x01R\x0bDOGFPDEIECH\
+    \x12\x20\n\x0bDHHEBNINHDE\x18\t\x20\x01(\x01R\x0bDHHEBNINHDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for FinishTutorialScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.tutorial)?;
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for FinishTutorialScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.tutorial.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishTutorialScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19FinishTutorialScRsp.proto\x1a\x0eTutorial.proto\"V\n\x13FinishTuto\
-    rialScRsp\x12%\n\x08tutorial\x18\t\x20\x01(\x0b2\t.TutorialR\x08tutorial\
-    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    rialScRsp\x12%\n\x08tutorial\x18\x08\x20\x01(\x0b2\t.TutorialR\x08tutori\
+    al\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

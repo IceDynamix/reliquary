@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DFEGGFFOMKI {
     // message fields
-    // @@protoc_insertion_point(field:DFEGGFFOMKI.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::CNEEMBBNNBO::CNEEMBBNNBO>,
-    // @@protoc_insertion_point(field:DFEGGFFOMKI.wave)
-    pub wave: u32,
     // @@protoc_insertion_point(field:DFEGGFFOMKI.PPCKLBHFCCA)
     pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
-    // @@protoc_insertion_point(field:DFEGGFFOMKI.stage_id)
-    pub stage_id: u32,
     // @@protoc_insertion_point(field:DFEGGFFOMKI.cur_hp)
     pub cur_hp: u32,
     // @@protoc_insertion_point(field:DFEGGFFOMKI.max_hp)
     pub max_hp: u32,
+    // @@protoc_insertion_point(field:DFEGGFFOMKI.wave)
+    pub wave: u32,
+    // @@protoc_insertion_point(field:DFEGGFFOMKI.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::CNEEMBBNNBO::CNEEMBBNNBO>,
+    // @@protoc_insertion_point(field:DFEGGFFOMKI.stage_id)
+    pub stage_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DFEGGFFOMKI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,10 @@ impl DFEGGFFOMKI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &DFEGGFFOMKI| { &m.reason },
-            |m: &mut DFEGGFFOMKI| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "wave",
-            |m: &DFEGGFFOMKI| { &m.wave },
-            |m: &mut DFEGGFFOMKI| { &mut m.wave },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PPCKLBHFCCA",
             |m: &DFEGGFFOMKI| { &m.PPCKLBHFCCA },
             |m: &mut DFEGGFFOMKI| { &mut m.PPCKLBHFCCA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &DFEGGFFOMKI| { &m.stage_id },
-            |m: &mut DFEGGFFOMKI| { &mut m.stage_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_hp",
@@ -88,6 +73,21 @@ impl DFEGGFFOMKI {
             "max_hp",
             |m: &DFEGGFFOMKI| { &m.max_hp },
             |m: &mut DFEGGFFOMKI| { &mut m.max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "wave",
+            |m: &DFEGGFFOMKI| { &m.wave },
+            |m: &mut DFEGGFFOMKI| { &mut m.wave },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &DFEGGFFOMKI| { &m.reason },
+            |m: &mut DFEGGFFOMKI| { &mut m.reason },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &DFEGGFFOMKI| { &m.stage_id },
+            |m: &mut DFEGGFFOMKI| { &mut m.stage_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DFEGGFFOMKI>(
             "DFEGGFFOMKI",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for DFEGGFFOMKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                16 => {
-                    self.wave = is.read_uint32()?;
-                },
-                50 => {
+                34 => {
                     self.PPCKLBHFCCA.push(is.read_message()?);
                 },
-                64 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                80 => {
+                56 => {
                     self.cur_hp = is.read_uint32()?;
                 },
-                120 => {
+                64 => {
                     self.max_hp = is.read_uint32()?;
+                },
+                80 => {
+                    self.wave = is.read_uint32()?;
+                },
+                88 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                120 => {
+                    self.stage_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for DFEGGFFOMKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(1, self.reason.value());
-        }
-        if self.wave != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.wave);
-        }
         for value in &self.PPCKLBHFCCA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.stage_id);
-        }
         if self.cur_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cur_hp);
+            my_size += ::protobuf::rt::uint32_size(7, self.cur_hp);
         }
         if self.max_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.max_hp);
+            my_size += ::protobuf::rt::uint32_size(8, self.max_hp);
+        }
+        if self.wave != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.wave);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for DFEGGFFOMKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.wave != 0 {
-            os.write_uint32(2, self.wave)?;
-        }
         for v in &self.PPCKLBHFCCA {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.stage_id != 0 {
-            os.write_uint32(8, self.stage_id)?;
-        }
         if self.cur_hp != 0 {
-            os.write_uint32(10, self.cur_hp)?;
+            os.write_uint32(7, self.cur_hp)?;
         }
         if self.max_hp != 0 {
-            os.write_uint32(15, self.max_hp)?;
+            os.write_uint32(8, self.max_hp)?;
+        }
+        if self.wave != 0 {
+            os.write_uint32(10, self.wave)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(15, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for DFEGGFFOMKI {
     }
 
     fn clear(&mut self) {
-        self.reason = ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ);
-        self.wave = 0;
         self.PPCKLBHFCCA.clear();
-        self.stage_id = 0;
         self.cur_hp = 0;
         self.max_hp = 0;
+        self.wave = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::CNEEMBBNNBO::CNEEMBBNNBO::CNEEMBBNNBO_NLCDGIPGFDJ);
+        self.stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DFEGGFFOMKI {
         static instance: DFEGGFFOMKI = DFEGGFFOMKI {
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            wave: 0,
             PPCKLBHFCCA: ::std::vec::Vec::new(),
-            stage_id: 0,
             cur_hp: 0,
             max_hp: 0,
+            wave: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
+            stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for DFEGGFFOMKI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DFEGGFFOMKI.proto\x1a\x11CNEEMBBNNBO.proto\x1a\x11OGGELMMFPKP.prot\
-    o\"\xc0\x01\n\x0bDFEGGFFOMKI\x12$\n\x06reason\x18\x01\x20\x01(\x0e2\x0c.\
-    CNEEMBBNNBOR\x06reason\x12\x12\n\x04wave\x18\x02\x20\x01(\rR\x04wave\x12\
-    .\n\x0bPPCKLBHFCCA\x18\x06\x20\x03(\x0b2\x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\
-    \x12\x19\n\x08stage_id\x18\x08\x20\x01(\rR\x07stageId\x12\x15\n\x06cur_h\
-    p\x18\n\x20\x01(\rR\x05curHp\x12\x15\n\x06max_hp\x18\x0f\x20\x01(\rR\x05\
-    maxHpb\x06proto3\
+    o\"\xc0\x01\n\x0bDFEGGFFOMKI\x12.\n\x0bPPCKLBHFCCA\x18\x04\x20\x03(\x0b2\
+    \x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\x12\x15\n\x06cur_hp\x18\x07\x20\x01(\rR\
+    \x05curHp\x12\x15\n\x06max_hp\x18\x08\x20\x01(\rR\x05maxHp\x12\x12\n\x04\
+    wave\x18\n\x20\x01(\rR\x04wave\x12$\n\x06reason\x18\x0b\x20\x01(\x0e2\
+    \x0c.CNEEMBBNNBOR\x06reason\x12\x19\n\x08stage_id\x18\x0f\x20\x01(\rR\
+    \x07stageIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

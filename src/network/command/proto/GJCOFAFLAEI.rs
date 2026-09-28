@@ -31,8 +31,8 @@ pub enum GJCOFAFLAEI {
     GJCOFAFLAEI_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:GJCOFAFLAEI.GJCOFAFLAEI_NCMIMMDPHFM)
     GJCOFAFLAEI_NCMIMMDPHFM = 1,
-    // @@protoc_insertion_point(enum_value:GJCOFAFLAEI.GJCOFAFLAEI_role_star)
-    GJCOFAFLAEI_role_star = 2,
+    // @@protoc_insertion_point(enum_value:GJCOFAFLAEI.GJCOFAFLAEI_BDCOFIOCJFO)
+    GJCOFAFLAEI_BDCOFIOCJFO = 2,
     // @@protoc_insertion_point(enum_value:GJCOFAFLAEI.GJCOFAFLAEI_MCMDKGEANNA)
     GJCOFAFLAEI_MCMDKGEANNA = 3,
     // @@protoc_insertion_point(enum_value:GJCOFAFLAEI.GJCOFAFLAEI_LBGJHODBAEA)
@@ -50,7 +50,7 @@ impl ::protobuf::Enum for GJCOFAFLAEI {
         match value {
             0 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ),
             1 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_NCMIMMDPHFM),
-            2 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_role_star),
+            2 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_BDCOFIOCJFO),
             3 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_MCMDKGEANNA),
             4 => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_LBGJHODBAEA),
             _ => ::std::option::Option::None
@@ -61,7 +61,7 @@ impl ::protobuf::Enum for GJCOFAFLAEI {
         match str {
             "GJCOFAFLAEI_NLCDGIPGFDJ" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ),
             "GJCOFAFLAEI_NCMIMMDPHFM" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_NCMIMMDPHFM),
-            "GJCOFAFLAEI_role_star" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_role_star),
+            "GJCOFAFLAEI_BDCOFIOCJFO" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_BDCOFIOCJFO),
             "GJCOFAFLAEI_MCMDKGEANNA" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_MCMDKGEANNA),
             "GJCOFAFLAEI_LBGJHODBAEA" => ::std::option::Option::Some(GJCOFAFLAEI::GJCOFAFLAEI_LBGJHODBAEA),
             _ => ::std::option::Option::None
@@ -71,7 +71,7 @@ impl ::protobuf::Enum for GJCOFAFLAEI {
     const VALUES: &'static [GJCOFAFLAEI] = &[
         GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ,
         GJCOFAFLAEI::GJCOFAFLAEI_NCMIMMDPHFM,
-        GJCOFAFLAEI::GJCOFAFLAEI_role_star,
+        GJCOFAFLAEI::GJCOFAFLAEI_BDCOFIOCJFO,
         GJCOFAFLAEI::GJCOFAFLAEI_MCMDKGEANNA,
         GJCOFAFLAEI::GJCOFAFLAEI_LBGJHODBAEA,
     ];
@@ -102,10 +102,10 @@ impl GJCOFAFLAEI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GJCOFAFLAEI.proto*\x9c\x01\n\x0bGJCOFAFLAEI\x12\x1b\n\x17GJCOFAFLA\
+    \n\x11GJCOFAFLAEI.proto*\x9e\x01\n\x0bGJCOFAFLAEI\x12\x1b\n\x17GJCOFAFLA\
     EI_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17GJCOFAFLAEI_NCMIMMDPHFM\x10\x01\x12\
-    \x19\n\x15GJCOFAFLAEI_role_star\x10\x02\x12\x1b\n\x17GJCOFAFLAEI_MCMDKGE\
-    ANNA\x10\x03\x12\x1b\n\x17GJCOFAFLAEI_LBGJHODBAEA\x10\x04b\x06proto3\
+    \x1b\n\x17GJCOFAFLAEI_BDCOFIOCJFO\x10\x02\x12\x1b\n\x17GJCOFAFLAEI_MCMDK\
+    GEANNA\x10\x03\x12\x1b\n\x17GJCOFAFLAEI_LBGJHODBAEA\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

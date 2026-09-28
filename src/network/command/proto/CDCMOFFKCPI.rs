@@ -86,13 +86,13 @@ impl ::protobuf::Message for CDCMOFFKCPI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.GLABGHEAGMI = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
                     self.event_id = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.BIOFDPICHLC = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for CDCMOFFKCPI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GLABGHEAGMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GLABGHEAGMI);
+            my_size += ::protobuf::rt::uint32_size(1, self.GLABGHEAGMI);
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.event_id);
         }
         if self.BIOFDPICHLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BIOFDPICHLC);
+            my_size += ::protobuf::rt::uint32_size(9, self.BIOFDPICHLC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CDCMOFFKCPI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GLABGHEAGMI != 0 {
-            os.write_uint32(4, self.GLABGHEAGMI)?;
+            os.write_uint32(1, self.GLABGHEAGMI)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(13, self.event_id)?;
+            os.write_uint32(7, self.event_id)?;
         }
         if self.BIOFDPICHLC != 0 {
-            os.write_uint32(14, self.BIOFDPICHLC)?;
+            os.write_uint32(9, self.BIOFDPICHLC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for CDCMOFFKCPI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CDCMOFFKCPI.proto\"l\n\x0bCDCMOFFKCPI\x12\x20\n\x0bGLABGHEAGMI\x18\
-    \x04\x20\x01(\rR\x0bGLABGHEAGMI\x12\x19\n\x08event_id\x18\r\x20\x01(\rR\
-    \x07eventId\x12\x20\n\x0bBIOFDPICHLC\x18\x0e\x20\x01(\rR\x0bBIOFDPICHLCb\
+    \x01\x20\x01(\rR\x0bGLABGHEAGMI\x12\x19\n\x08event_id\x18\x07\x20\x01(\r\
+    R\x07eventId\x12\x20\n\x0bBIOFDPICHLC\x18\t\x20\x01(\rR\x0bBIOFDPICHLCb\
     \x06proto3\
 ";
 

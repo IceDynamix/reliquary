@@ -82,7 +82,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
-                112 => {
+                88 => {
                     self.interact_id = is.read_uint64()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.interact_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.interact_id);
+            my_size += ::protobuf::rt::uint64_size(11, self.interact_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.interact_id != 0 {
-            os.write_uint64(14, self.interact_id)?;
+            os.write_uint64(11, self.interact_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"s\n\x15Gr\
     oupStateChangeCsReq\x129\n\x10group_state_info\x18\x01\x20\x01(\x0b2\x0f\
-    .GroupStateInfoR\x0egroupStateInfo\x12\x1f\n\x0binteract_id\x18\x0e\x20\
+    .GroupStateInfoR\x0egroupStateInfo\x12\x1f\n\x0binteract_id\x18\x0b\x20\
     \x01(\x04R\ninteractIdb\x06proto3\
 ";
 

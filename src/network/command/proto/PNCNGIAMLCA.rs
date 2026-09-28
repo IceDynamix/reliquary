@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PNCNGIAMLCA {
     // message fields
-    // @@protoc_insertion_point(field:PNCNGIAMLCA.AJFJLCKPNAM)
-    pub AJFJLCKPNAM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PNCNGIAMLCA.BCGOAIPKGIK)
     pub BCGOAIPKGIK: ::std::vec::Vec<super::NHDGNBKBNDB::NHDGNBKBNDB>,
+    // @@protoc_insertion_point(field:PNCNGIAMLCA.AJFJLCKPNAM)
+    pub AJFJLCKPNAM: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PNCNGIAMLCA.IPINHNFCIOE)
     pub IPINHNFCIOE: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PNCNGIAMLCA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJFJLCKPNAM",
-            |m: &PNCNGIAMLCA| { &m.AJFJLCKPNAM },
-            |m: &mut PNCNGIAMLCA| { &mut m.AJFJLCKPNAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BCGOAIPKGIK",
             |m: &PNCNGIAMLCA| { &m.BCGOAIPKGIK },
             |m: &mut PNCNGIAMLCA| { &mut m.BCGOAIPKGIK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AJFJLCKPNAM",
+            |m: &PNCNGIAMLCA| { &m.AJFJLCKPNAM },
+            |m: &mut PNCNGIAMLCA| { &mut m.AJFJLCKPNAM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IPINHNFCIOE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PNCNGIAMLCA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                58 => {
+                    self.BCGOAIPKGIK.push(is.read_message()?);
+                },
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.AJFJLCKPNAM)?;
                 },
-                32 => {
+                72 => {
                     self.AJFJLCKPNAM.push(is.read_uint32()?);
-                },
-                66 => {
-                    self.BCGOAIPKGIK.push(is.read_message()?);
                 },
                 96 => {
                     self.IPINHNFCIOE = is.read_uint32()?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PNCNGIAMLCA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.AJFJLCKPNAM);
         for value in &self.BCGOAIPKGIK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.AJFJLCKPNAM);
         if self.IPINHNFCIOE != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.IPINHNFCIOE);
         }
@@ -124,10 +124,10 @@ impl ::protobuf::Message for PNCNGIAMLCA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.AJFJLCKPNAM)?;
         for v in &self.BCGOAIPKGIK {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        os.write_repeated_packed_uint32(9, &self.AJFJLCKPNAM)?;
         if self.IPINHNFCIOE != 0 {
             os.write_uint32(12, self.IPINHNFCIOE)?;
         }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PNCNGIAMLCA {
     }
 
     fn clear(&mut self) {
-        self.AJFJLCKPNAM.clear();
         self.BCGOAIPKGIK.clear();
+        self.AJFJLCKPNAM.clear();
         self.IPINHNFCIOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNCNGIAMLCA {
         static instance: PNCNGIAMLCA = PNCNGIAMLCA {
-            AJFJLCKPNAM: ::std::vec::Vec::new(),
             BCGOAIPKGIK: ::std::vec::Vec::new(),
+            AJFJLCKPNAM: ::std::vec::Vec::new(),
             IPINHNFCIOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PNCNGIAMLCA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNCNGIAMLCA.proto\x1a\x11NHDGNBKBNDB.proto\"\x81\x01\n\x0bPNCNGIAM\
-    LCA\x12\x20\n\x0bAJFJLCKPNAM\x18\x04\x20\x03(\rR\x0bAJFJLCKPNAM\x12.\n\
-    \x0bBCGOAIPKGIK\x18\x08\x20\x03(\x0b2\x0c.NHDGNBKBNDBR\x0bBCGOAIPKGIK\
-    \x12\x20\n\x0bIPINHNFCIOE\x18\x0c\x20\x01(\rR\x0bIPINHNFCIOEb\x06proto3\
+    LCA\x12.\n\x0bBCGOAIPKGIK\x18\x07\x20\x03(\x0b2\x0c.NHDGNBKBNDBR\x0bBCGO\
+    AIPKGIK\x12\x20\n\x0bAJFJLCKPNAM\x18\t\x20\x03(\rR\x0bAJFJLCKPNAM\x12\
+    \x20\n\x0bIPINHNFCIOE\x18\x0c\x20\x01(\rR\x0bIPINHNFCIOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

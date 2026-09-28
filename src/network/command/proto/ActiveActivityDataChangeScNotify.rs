@@ -72,7 +72,7 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ANFFLNDCGLG)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.ANFFLNDCGLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ActiveActivityDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&ActiveActivityDataChangeScNotify.proto\x1a\x18ActiveActivityData.prot\
-    o\"Y\n\x20ActiveActivityDataChangeScNotify\x125\n\x0bANFFLNDCGLG\x18\x0f\
+    o\"Y\n\x20ActiveActivityDataChangeScNotify\x125\n\x0bANFFLNDCGLG\x18\x05\
     \x20\x01(\x0b2\x13.ActiveActivityDataR\x0bANFFLNDCGLGb\x06proto3\
 ";
 

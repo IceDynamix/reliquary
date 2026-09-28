@@ -79,7 +79,7 @@ impl ::protobuf::Message for FIIJNPBFJBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,7 +94,7 @@ impl ::protobuf::Message for FIIJNPBFJBG {
                     is.pop_limit(old_limit);
                     self.POCKGKDFLKK.insert(key, value);
                 },
-                88 => {
+                96 => {
                     self.IFLJPNDPDOA = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for FIIJNPBFJBG {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.IFLJPNDPDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IFLJPNDPDOA);
+            my_size += ::protobuf::rt::uint32_size(12, self.IFLJPNDPDOA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,13 +128,13 @@ impl ::protobuf::Message for FIIJNPBFJBG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
         if self.IFLJPNDPDOA != 0 {
-            os.write_uint32(11, self.IFLJPNDPDOA)?;
+            os.write_uint32(12, self.IFLJPNDPDOA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for FIIJNPBFJBG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FIIJNPBFJBG.proto\"\xb0\x01\n\x0bFIIJNPBFJBG\x12?\n\x0bPOCKGKDFLKK\
-    \x18\n\x20\x03(\x0b2\x1d.FIIJNPBFJBG.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\
-    \x12\x20\n\x0bIFLJPNDPDOA\x18\x0b\x20\x01(\rR\x0bIFLJPNDPDOA\x1a>\n\x10P\
+    \x18\x05\x20\x03(\x0b2\x1d.FIIJNPBFJBG.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\
+    \x12\x20\n\x0bIFLJPNDPDOA\x18\x0c\x20\x01(\rR\x0bIFLJPNDPDOA\x1a>\n\x10P\
     OCKGKDFLKKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\
     \x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

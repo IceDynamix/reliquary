@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CCGJDDBKIDE {
     // message fields
-    // @@protoc_insertion_point(field:CCGJDDBKIDE.IMJBFLJPMJB)
-    pub IMJBFLJPMJB: u32,
     // @@protoc_insertion_point(field:CCGJDDBKIDE.type)
     pub type_: ::protobuf::EnumOrUnknown<ccgjddbkide::oakdcenfilp::BBFEFIPJMEB>,
+    // @@protoc_insertion_point(field:CCGJDDBKIDE.IMJBFLJPMJB)
+    pub IMJBFLJPMJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CCGJDDBKIDE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CCGJDDBKIDE {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMJBFLJPMJB",
-            |m: &CCGJDDBKIDE| { &m.IMJBFLJPMJB },
-            |m: &mut CCGJDDBKIDE| { &mut m.IMJBFLJPMJB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &CCGJDDBKIDE| { &m.type_ },
             |m: &mut CCGJDDBKIDE| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IMJBFLJPMJB",
+            |m: &CCGJDDBKIDE| { &m.IMJBFLJPMJB },
+            |m: &mut CCGJDDBKIDE| { &mut m.IMJBFLJPMJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CCGJDDBKIDE>(
             "CCGJDDBKIDE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.IMJBFLJPMJB = is.read_uint32()?;
-                },
-                96 => {
+                48 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                64 => {
+                    self.IMJBFLJPMJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IMJBFLJPMJB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IMJBFLJPMJB);
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
-            my_size += ::protobuf::rt::int32_size(12, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(6, self.type_.value());
+        }
+        if self.IMJBFLJPMJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.IMJBFLJPMJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IMJBFLJPMJB != 0 {
-            os.write_uint32(11, self.IMJBFLJPMJB)?;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if self.IMJBFLJPMJB != 0 {
+            os.write_uint32(8, self.IMJBFLJPMJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CCGJDDBKIDE {
     }
 
     fn clear(&mut self) {
-        self.IMJBFLJPMJB = 0;
         self.type_ = ::protobuf::EnumOrUnknown::new(ccgjddbkide::oakdcenfilp::BBFEFIPJMEB::BBFEFIPJMEB_OHDJNICJKLK);
+        self.IMJBFLJPMJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CCGJDDBKIDE {
         static instance: CCGJDDBKIDE = CCGJDDBKIDE {
-            IMJBFLJPMJB: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            IMJBFLJPMJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -342,10 +342,10 @@ pub mod ccgjddbkide {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCGJDDBKIDE.proto\x1a\x11BBFEFIPJMEB.proto\"\xde\x01\n\x0bCCGJDDBK\
-    IDE\x12\x20\n\x0bIMJBFLJPMJB\x18\x0b\x20\x01(\rR\x0bIMJBFLJPMJB\x128\n\
-    \x04type\x18\x0c\x20\x01(\x0e2$.CCGJDDBKIDE.OAKDCENFILP.BBFEFIPJMEBR\x04\
-    type\x1as\n\x0bOAKDCENFILP\"d\n\x0bBBFEFIPJMEB\x12\x1b\n\x17BBFEFIPJMEB_\
-    OHDJNICJKLK\x10\0\x12\x1b\n\x17BBFEFIPJMEB_NCBOLDFDGNL\x10\x01\x12\x1b\n\
+    IDE\x128\n\x04type\x18\x06\x20\x01(\x0e2$.CCGJDDBKIDE.OAKDCENFILP.BBFEFI\
+    PJMEBR\x04type\x12\x20\n\x0bIMJBFLJPMJB\x18\x08\x20\x01(\rR\x0bIMJBFLJPM\
+    JB\x1as\n\x0bOAKDCENFILP\"d\n\x0bBBFEFIPJMEB\x12\x1b\n\x17BBFEFIPJMEB_OH\
+    DJNICJKLK\x10\0\x12\x1b\n\x17BBFEFIPJMEB_NCBOLDFDGNL\x10\x01\x12\x1b\n\
     \x17BBFEFIPJMEB_EKGPCJLBINA\x10\x02b\x06proto3\
 ";
 

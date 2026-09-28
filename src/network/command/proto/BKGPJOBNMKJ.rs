@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BKGPJOBNMKJ {
     // message fields
-    // @@protoc_insertion_point(field:BKGPJOBNMKJ.num)
-    pub num: u32,
     // @@protoc_insertion_point(field:BKGPJOBNMKJ.tid)
     pub tid: u32,
     // @@protoc_insertion_point(field:BKGPJOBNMKJ.expire_time)
     pub expire_time: u64,
+    // @@protoc_insertion_point(field:BKGPJOBNMKJ.num)
+    pub num: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BKGPJOBNMKJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl BKGPJOBNMKJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num",
-            |m: &BKGPJOBNMKJ| { &m.num },
-            |m: &mut BKGPJOBNMKJ| { &mut m.num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "tid",
             |m: &BKGPJOBNMKJ| { &m.tid },
             |m: &mut BKGPJOBNMKJ| { &mut m.tid },
@@ -67,6 +62,11 @@ impl BKGPJOBNMKJ {
             "expire_time",
             |m: &BKGPJOBNMKJ| { &m.expire_time },
             |m: &mut BKGPJOBNMKJ| { &mut m.expire_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "num",
+            |m: &BKGPJOBNMKJ| { &m.num },
+            |m: &mut BKGPJOBNMKJ| { &mut m.num },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BKGPJOBNMKJ>(
             "BKGPJOBNMKJ",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.num = is.read_uint32()?;
-                },
-                56 => {
+                40 => {
                     self.tid = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.expire_time = is.read_uint64()?;
+                },
+                72 => {
+                    self.num = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.num);
-        }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.tid);
+            my_size += ::protobuf::rt::uint32_size(5, self.tid);
         }
         if self.expire_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.expire_time);
+            my_size += ::protobuf::rt::uint64_size(8, self.expire_time);
+        }
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.num != 0 {
-            os.write_uint32(4, self.num)?;
-        }
         if self.tid != 0 {
-            os.write_uint32(7, self.tid)?;
+            os.write_uint32(5, self.tid)?;
         }
         if self.expire_time != 0 {
-            os.write_uint64(14, self.expire_time)?;
+            os.write_uint64(8, self.expire_time)?;
+        }
+        if self.num != 0 {
+            os.write_uint32(9, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BKGPJOBNMKJ {
     }
 
     fn clear(&mut self) {
-        self.num = 0;
         self.tid = 0;
         self.expire_time = 0;
+        self.num = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BKGPJOBNMKJ {
         static instance: BKGPJOBNMKJ = BKGPJOBNMKJ {
-            num: 0,
             tid: 0,
             expire_time: 0,
+            num: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BKGPJOBNMKJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BKGPJOBNMKJ.proto\"R\n\x0bBKGPJOBNMKJ\x12\x10\n\x03num\x18\x04\x20\
-    \x01(\rR\x03num\x12\x10\n\x03tid\x18\x07\x20\x01(\rR\x03tid\x12\x1f\n\
-    \x0bexpire_time\x18\x0e\x20\x01(\x04R\nexpireTimeb\x06proto3\
+    \n\x11BKGPJOBNMKJ.proto\"R\n\x0bBKGPJOBNMKJ\x12\x10\n\x03tid\x18\x05\x20\
+    \x01(\rR\x03tid\x12\x1f\n\x0bexpire_time\x18\x08\x20\x01(\x04R\nexpireTi\
+    me\x12\x10\n\x03num\x18\t\x20\x01(\rR\x03numb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

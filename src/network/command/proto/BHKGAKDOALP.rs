@@ -30,7 +30,7 @@ pub enum BHKGAKDOALP {
     // @@protoc_insertion_point(enum_value:BHKGAKDOALP.BHKGAKDOALP_GGKMFAFOINP)
     BHKGAKDOALP_GGKMFAFOINP = 0,
     // @@protoc_insertion_point(enum_value:BHKGAKDOALP.BHKGAKDOALP_HPLPMDEJOJK)
-    BHKGAKDOALP_HPLPMDEJOJK = 9839,
+    BHKGAKDOALP_HPLPMDEJOJK = 9832,
 }
 
 impl ::protobuf::Enum for BHKGAKDOALP {
@@ -43,7 +43,7 @@ impl ::protobuf::Enum for BHKGAKDOALP {
     fn from_i32(value: i32) -> ::std::option::Option<BHKGAKDOALP> {
         match value {
             0 => ::std::option::Option::Some(BHKGAKDOALP::BHKGAKDOALP_GGKMFAFOINP),
-            9839 => ::std::option::Option::Some(BHKGAKDOALP::BHKGAKDOALP_HPLPMDEJOJK),
+            9832 => ::std::option::Option::Some(BHKGAKDOALP::BHKGAKDOALP_HPLPMDEJOJK),
             _ => ::std::option::Option::None
         }
     }
@@ -91,7 +91,7 @@ impl BHKGAKDOALP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHKGAKDOALP.proto*H\n\x0bBHKGAKDOALP\x12\x1b\n\x17BHKGAKDOALP_GGKM\
-    FAFOINP\x10\0\x12\x1c\n\x17BHKGAKDOALP_HPLPMDEJOJK\x10\xefLb\x06proto3\
+    FAFOINP\x10\0\x12\x1c\n\x17BHKGAKDOALP_HPLPMDEJOJK\x10\xe8Lb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

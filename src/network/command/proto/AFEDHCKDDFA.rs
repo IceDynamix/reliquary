@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AFEDHCKDDFA {
     // message fields
-    // @@protoc_insertion_point(field:AFEDHCKDDFA.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:AFEDHCKDDFA.type)
     pub type_: ::protobuf::EnumOrUnknown<super::NAOCMAOJECF::NAOCMAOJECF>,
+    // @@protoc_insertion_point(field:AFEDHCKDDFA.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:AFEDHCKDDFA.AAGAFBJHOKK)
     pub AAGAFBJHOKK: bool,
     // special fields
@@ -54,14 +54,14 @@ impl AFEDHCKDDFA {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &AFEDHCKDDFA| { &m.id },
-            |m: &mut AFEDHCKDDFA| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &AFEDHCKDDFA| { &m.type_ },
             |m: &mut AFEDHCKDDFA| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &AFEDHCKDDFA| { &m.id },
+            |m: &mut AFEDHCKDDFA| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AAGAFBJHOKK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for AFEDHCKDDFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.id = is.read_uint32()?;
-                },
-                64 => {
+                24 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                64 => {
+                    self.id = is.read_uint32()?;
+                },
+                112 => {
                     self.AAGAFBJHOKK = is.read_bool()?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for AFEDHCKDDFA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::NAOCMAOJECF::NAOCMAOJECF::NAOCMAOJECF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.type_.value());
+            my_size += ::protobuf::rt::int32_size(3, self.type_.value());
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if self.AAGAFBJHOKK != false {
             my_size += 1 + 1;
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AFEDHCKDDFA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(7, self.id)?;
-        }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::NAOCMAOJECF::NAOCMAOJECF::NAOCMAOJECF_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if self.id != 0 {
+            os.write_uint32(8, self.id)?;
         }
         if self.AAGAFBJHOKK != false {
-            os.write_bool(12, self.AAGAFBJHOKK)?;
+            os.write_bool(14, self.AAGAFBJHOKK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for AFEDHCKDDFA {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.type_ = ::protobuf::EnumOrUnknown::new(super::NAOCMAOJECF::NAOCMAOJECF::NAOCMAOJECF_NLCDGIPGFDJ);
+        self.id = 0;
         self.AAGAFBJHOKK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AFEDHCKDDFA {
         static instance: AFEDHCKDDFA = AFEDHCKDDFA {
-            id: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            id: 0,
             AAGAFBJHOKK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AFEDHCKDDFA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AFEDHCKDDFA.proto\x1a\x11NAOCMAOJECF.proto\"a\n\x0bAFEDHCKDDFA\x12\
-    \x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12\x20\n\x04type\x18\x08\x20\x01\
-    (\x0e2\x0c.NAOCMAOJECFR\x04type\x12\x20\n\x0bAAGAFBJHOKK\x18\x0c\x20\x01\
-    (\x08R\x0bAAGAFBJHOKKb\x06proto3\
+    \x20\n\x04type\x18\x03\x20\x01(\x0e2\x0c.NAOCMAOJECFR\x04type\x12\x0e\n\
+    \x02id\x18\x08\x20\x01(\rR\x02id\x12\x20\n\x0bAAGAFBJHOKK\x18\x0e\x20\
+    \x01(\x08R\x0bAAGAFBJHOKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

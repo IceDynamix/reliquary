@@ -30,12 +30,12 @@ pub struct NGIOBCJINOG {
     // message fields
     // @@protoc_insertion_point(field:NGIOBCJINOG.KNKFPENAPBF)
     pub KNKFPENAPBF: i32,
-    // @@protoc_insertion_point(field:NGIOBCJINOG.unique_id)
-    pub unique_id: u64,
-    // @@protoc_insertion_point(field:NGIOBCJINOG.NMELCPIOKNO)
-    pub NMELCPIOKNO: u32,
     // @@protoc_insertion_point(field:NGIOBCJINOG.APHMBADNMPH)
     pub APHMBADNMPH: i32,
+    // @@protoc_insertion_point(field:NGIOBCJINOG.NMELCPIOKNO)
+    pub NMELCPIOKNO: u32,
+    // @@protoc_insertion_point(field:NGIOBCJINOG.unique_id)
+    pub unique_id: u64,
     // @@protoc_insertion_point(field:NGIOBCJINOG.item_id)
     pub item_id: u32,
     // @@protoc_insertion_point(field:NGIOBCJINOG.EPLJKOLIPCI)
@@ -65,9 +65,9 @@ impl NGIOBCJINOG {
             |m: &mut NGIOBCJINOG| { &mut m.KNKFPENAPBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &NGIOBCJINOG| { &m.unique_id },
-            |m: &mut NGIOBCJINOG| { &mut m.unique_id },
+            "APHMBADNMPH",
+            |m: &NGIOBCJINOG| { &m.APHMBADNMPH },
+            |m: &mut NGIOBCJINOG| { &mut m.APHMBADNMPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMELCPIOKNO",
@@ -75,9 +75,9 @@ impl NGIOBCJINOG {
             |m: &mut NGIOBCJINOG| { &mut m.NMELCPIOKNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APHMBADNMPH",
-            |m: &NGIOBCJINOG| { &m.APHMBADNMPH },
-            |m: &mut NGIOBCJINOG| { &mut m.APHMBADNMPH },
+            "unique_id",
+            |m: &NGIOBCJINOG| { &m.unique_id },
+            |m: &mut NGIOBCJINOG| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for NGIOBCJINOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.KNKFPENAPBF = is.read_int32()?;
                 },
-                16 => {
-                    self.unique_id = is.read_uint64()?;
-                },
-                24 => {
-                    self.NMELCPIOKNO = is.read_uint32()?;
-                },
-                88 => {
+                40 => {
                     self.APHMBADNMPH = is.read_int32()?;
                 },
-                96 => {
+                48 => {
+                    self.NMELCPIOKNO = is.read_uint32()?;
+                },
+                56 => {
+                    self.unique_id = is.read_uint64()?;
+                },
+                88 => {
                     self.item_id = is.read_uint32()?;
                 },
-                104 => {
+                112 => {
                     self.EPLJKOLIPCI = is.read_uint32()?;
                 },
                 tag => {
@@ -138,22 +138,22 @@ impl ::protobuf::Message for NGIOBCJINOG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KNKFPENAPBF != 0 {
-            my_size += ::protobuf::rt::int32_size(1, self.KNKFPENAPBF);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.unique_id);
-        }
-        if self.NMELCPIOKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NMELCPIOKNO);
+            my_size += ::protobuf::rt::int32_size(2, self.KNKFPENAPBF);
         }
         if self.APHMBADNMPH != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.APHMBADNMPH);
+            my_size += ::protobuf::rt::int32_size(5, self.APHMBADNMPH);
+        }
+        if self.NMELCPIOKNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NMELCPIOKNO);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.unique_id);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_id);
         }
         if self.EPLJKOLIPCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EPLJKOLIPCI);
+            my_size += ::protobuf::rt::uint32_size(14, self.EPLJKOLIPCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,22 +162,22 @@ impl ::protobuf::Message for NGIOBCJINOG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KNKFPENAPBF != 0 {
-            os.write_int32(1, self.KNKFPENAPBF)?;
-        }
-        if self.unique_id != 0 {
-            os.write_uint64(2, self.unique_id)?;
-        }
-        if self.NMELCPIOKNO != 0 {
-            os.write_uint32(3, self.NMELCPIOKNO)?;
+            os.write_int32(2, self.KNKFPENAPBF)?;
         }
         if self.APHMBADNMPH != 0 {
-            os.write_int32(11, self.APHMBADNMPH)?;
+            os.write_int32(5, self.APHMBADNMPH)?;
+        }
+        if self.NMELCPIOKNO != 0 {
+            os.write_uint32(6, self.NMELCPIOKNO)?;
+        }
+        if self.unique_id != 0 {
+            os.write_uint64(7, self.unique_id)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(12, self.item_id)?;
+            os.write_uint32(11, self.item_id)?;
         }
         if self.EPLJKOLIPCI != 0 {
-            os.write_uint32(13, self.EPLJKOLIPCI)?;
+            os.write_uint32(14, self.EPLJKOLIPCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,9 +197,9 @@ impl ::protobuf::Message for NGIOBCJINOG {
 
     fn clear(&mut self) {
         self.KNKFPENAPBF = 0;
-        self.unique_id = 0;
-        self.NMELCPIOKNO = 0;
         self.APHMBADNMPH = 0;
+        self.NMELCPIOKNO = 0;
+        self.unique_id = 0;
         self.item_id = 0;
         self.EPLJKOLIPCI = 0;
         self.special_fields.clear();
@@ -208,9 +208,9 @@ impl ::protobuf::Message for NGIOBCJINOG {
     fn default_instance() -> &'static NGIOBCJINOG {
         static instance: NGIOBCJINOG = NGIOBCJINOG {
             KNKFPENAPBF: 0,
-            unique_id: 0,
-            NMELCPIOKNO: 0,
             APHMBADNMPH: 0,
+            NMELCPIOKNO: 0,
+            unique_id: 0,
             item_id: 0,
             EPLJKOLIPCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -238,11 +238,11 @@ impl ::protobuf::reflect::ProtobufValue for NGIOBCJINOG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGIOBCJINOG.proto\"\xcb\x01\n\x0bNGIOBCJINOG\x12\x20\n\x0bKNKFPENA\
-    PBF\x18\x01\x20\x01(\x05R\x0bKNKFPENAPBF\x12\x1b\n\tunique_id\x18\x02\
-    \x20\x01(\x04R\x08uniqueId\x12\x20\n\x0bNMELCPIOKNO\x18\x03\x20\x01(\rR\
-    \x0bNMELCPIOKNO\x12\x20\n\x0bAPHMBADNMPH\x18\x0b\x20\x01(\x05R\x0bAPHMBA\
-    DNMPH\x12\x17\n\x07item_id\x18\x0c\x20\x01(\rR\x06itemId\x12\x20\n\x0bEP\
-    LJKOLIPCI\x18\r\x20\x01(\rR\x0bEPLJKOLIPCIb\x06proto3\
+    PBF\x18\x02\x20\x01(\x05R\x0bKNKFPENAPBF\x12\x20\n\x0bAPHMBADNMPH\x18\
+    \x05\x20\x01(\x05R\x0bAPHMBADNMPH\x12\x20\n\x0bNMELCPIOKNO\x18\x06\x20\
+    \x01(\rR\x0bNMELCPIOKNO\x12\x1b\n\tunique_id\x18\x07\x20\x01(\x04R\x08un\
+    iqueId\x12\x17\n\x07item_id\x18\x0b\x20\x01(\rR\x06itemId\x12\x20\n\x0bE\
+    PLJKOLIPCI\x18\x0e\x20\x01(\rR\x0bEPLJKOLIPCIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

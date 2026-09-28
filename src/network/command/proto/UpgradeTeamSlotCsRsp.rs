@@ -89,10 +89,10 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
                 16 => {
                     self.level = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.JIGOOAEFDPP = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if self.JIGOOAEFDPP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JIGOOAEFDPP);
+            my_size += ::protobuf::rt::uint32_size(3, self.JIGOOAEFDPP);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
             os.write_uint32(2, self.level)?;
         }
         if self.JIGOOAEFDPP != 0 {
-            os.write_uint32(4, self.JIGOOAEFDPP)?;
+            os.write_uint32(3, self.JIGOOAEFDPP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeTeamSlotCsRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUpgradeTeamSlotCsRsp.proto\"h\n\x14UpgradeTeamSlotCsRsp\x12\x14\n\
-    \x05level\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bJIGOOAEFDPP\x18\x04\
-    \x20\x01(\rR\x0bJIGOOAEFDPP\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07\
-    retcodeb\x06proto3\
+    \x05level\x18\x02\x20\x01(\rR\x05level\x12\x20\n\x0bJIGOOAEFDPP\x18\x03\
+    \x20\x01(\rR\x0bJIGOOAEFDPP\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for EnterStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 114 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EnterStageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if !self.CCPKFOKOLJB.is_empty() {
             my_size += ::protobuf::rt::string_size(14, &self.CCPKFOKOLJB);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EnterStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if !self.CCPKFOKOLJB.is_empty() {
             os.write_string(14, &self.CCPKFOKOLJB)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EnterStageScRsp.proto\"M\n\x0fEnterStageScRsp\x12\x18\n\x07retcode\
-    \x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bCCPKFOKOLJB\x18\x0e\x20\x01\
+    \x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bCCPKFOKOLJB\x18\x0e\x20\x01\
     (\tR\x0bCCPKFOKOLJBb\x06proto3\
 ";
 

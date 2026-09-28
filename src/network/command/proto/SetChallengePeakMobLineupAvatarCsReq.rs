@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetChallengePeakMobLineupAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                74 => {
                     self.lineup_list.push(is.read_message()?);
                 },
-                112 => {
+                104 => {
                     self.peak_group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for SetChallengePeakMobLineupAvatarCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.peak_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.peak_group_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.peak_group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetChallengePeakMobLineupAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.peak_group_id != 0 {
-            os.write_uint32(14, self.peak_group_id)?;
+            os.write_uint32(13, self.peak_group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for SetChallengePeakMobLineupAvatarCsReq
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SetChallengePeakMobLineupAvatarCsReq.proto\x1a\x19ChallengePeakLineup\
     .proto\"\x81\x01\n$SetChallengePeakMobLineupAvatarCsReq\x125\n\x0blineup\
-    _list\x18\x05\x20\x03(\x0b2\x14.ChallengePeakLineupR\nlineupList\x12\"\n\
-    \rpeak_group_id\x18\x0e\x20\x01(\rR\x0bpeakGroupIdb\x06proto3\
+    _list\x18\t\x20\x03(\x0b2\x14.ChallengePeakLineupR\nlineupList\x12\"\n\r\
+    peak_group_id\x18\r\x20\x01(\rR\x0bpeakGroupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

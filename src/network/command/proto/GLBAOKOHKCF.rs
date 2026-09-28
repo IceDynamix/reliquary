@@ -31,8 +31,8 @@ pub enum GLBAOKOHKCF {
     GLBAOKOHKCF_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:GLBAOKOHKCF.GLBAOKOHKCF_COJOIFPPCIJ)
     GLBAOKOHKCF_COJOIFPPCIJ = 2,
-    // @@protoc_insertion_point(enum_value:GLBAOKOHKCF.GLBAOKOHKCF_hp)
-    GLBAOKOHKCF_hp = 3,
+    // @@protoc_insertion_point(enum_value:GLBAOKOHKCF.GLBAOKOHKCF_AMMPNOLLCIN)
+    GLBAOKOHKCF_AMMPNOLLCIN = 3,
     // @@protoc_insertion_point(enum_value:GLBAOKOHKCF.GLBAOKOHKCF_OGGGLOEIOMM)
     GLBAOKOHKCF_OGGGLOEIOMM = 4,
     // @@protoc_insertion_point(enum_value:GLBAOKOHKCF.GLBAOKOHKCF_CCPLGNNIOCO)
@@ -54,7 +54,7 @@ impl ::protobuf::Enum for GLBAOKOHKCF {
         match value {
             0 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ),
             2 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_COJOIFPPCIJ),
-            3 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_hp),
+            3 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_AMMPNOLLCIN),
             4 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_OGGGLOEIOMM),
             5 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_CCPLGNNIOCO),
             6 => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_DGOMNKGLABB),
@@ -67,7 +67,7 @@ impl ::protobuf::Enum for GLBAOKOHKCF {
         match str {
             "GLBAOKOHKCF_NLCDGIPGFDJ" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ),
             "GLBAOKOHKCF_COJOIFPPCIJ" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_COJOIFPPCIJ),
-            "GLBAOKOHKCF_hp" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_hp),
+            "GLBAOKOHKCF_AMMPNOLLCIN" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_AMMPNOLLCIN),
             "GLBAOKOHKCF_OGGGLOEIOMM" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_OGGGLOEIOMM),
             "GLBAOKOHKCF_CCPLGNNIOCO" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_CCPLGNNIOCO),
             "GLBAOKOHKCF_DGOMNKGLABB" => ::std::option::Option::Some(GLBAOKOHKCF::GLBAOKOHKCF_DGOMNKGLABB),
@@ -79,7 +79,7 @@ impl ::protobuf::Enum for GLBAOKOHKCF {
     const VALUES: &'static [GLBAOKOHKCF] = &[
         GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ,
         GLBAOKOHKCF::GLBAOKOHKCF_COJOIFPPCIJ,
-        GLBAOKOHKCF::GLBAOKOHKCF_hp,
+        GLBAOKOHKCF::GLBAOKOHKCF_AMMPNOLLCIN,
         GLBAOKOHKCF::GLBAOKOHKCF_OGGGLOEIOMM,
         GLBAOKOHKCF::GLBAOKOHKCF_CCPLGNNIOCO,
         GLBAOKOHKCF::GLBAOKOHKCF_DGOMNKGLABB,
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for GLBAOKOHKCF {
         let index = match self {
             GLBAOKOHKCF::GLBAOKOHKCF_NLCDGIPGFDJ => 0,
             GLBAOKOHKCF::GLBAOKOHKCF_COJOIFPPCIJ => 1,
-            GLBAOKOHKCF::GLBAOKOHKCF_hp => 2,
+            GLBAOKOHKCF::GLBAOKOHKCF_AMMPNOLLCIN => 2,
             GLBAOKOHKCF::GLBAOKOHKCF_OGGGLOEIOMM => 3,
             GLBAOKOHKCF::GLBAOKOHKCF_CCPLGNNIOCO => 4,
             GLBAOKOHKCF::GLBAOKOHKCF_DGOMNKGLABB => 5,
@@ -120,12 +120,12 @@ impl GLBAOKOHKCF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GLBAOKOHKCF.proto*\xcf\x01\n\x0bGLBAOKOHKCF\x12\x1b\n\x17GLBAOKOHK\
+    \n\x11GLBAOKOHKCF.proto*\xd8\x01\n\x0bGLBAOKOHKCF\x12\x1b\n\x17GLBAOKOHK\
     CF_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17GLBAOKOHKCF_COJOIFPPCIJ\x10\x02\x12\
-    \x12\n\x0eGLBAOKOHKCF_hp\x10\x03\x12\x1b\n\x17GLBAOKOHKCF_OGGGLOEIOMM\
-    \x10\x04\x12\x1b\n\x17GLBAOKOHKCF_CCPLGNNIOCO\x10\x05\x12\x1b\n\x17GLBAO\
-    KOHKCF_DGOMNKGLABB\x10\x06\x12\x1b\n\x17GLBAOKOHKCF_PAIEELDAADP\x10\x07b\
-    \x06proto3\
+    \x1b\n\x17GLBAOKOHKCF_AMMPNOLLCIN\x10\x03\x12\x1b\n\x17GLBAOKOHKCF_OGGGL\
+    OEIOMM\x10\x04\x12\x1b\n\x17GLBAOKOHKCF_CCPLGNNIOCO\x10\x05\x12\x1b\n\
+    \x17GLBAOKOHKCF_DGOMNKGLABB\x10\x06\x12\x1b\n\x17GLBAOKOHKCF_PAIEELDAADP\
+    \x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

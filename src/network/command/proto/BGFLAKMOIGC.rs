@@ -79,10 +79,10 @@ impl ::protobuf::Message for BGFLAKMOIGC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.JJMKAHIBDBH = is.read_bool()?;
                 },
-                24 => {
+                112 => {
                     self.AMICPGOIHLL = is.read_bool()?;
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BGFLAKMOIGC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JJMKAHIBDBH != false {
-            os.write_bool(1, self.JJMKAHIBDBH)?;
+            os.write_bool(10, self.JJMKAHIBDBH)?;
         }
         if self.AMICPGOIHLL != false {
-            os.write_bool(3, self.AMICPGOIHLL)?;
+            os.write_bool(14, self.AMICPGOIHLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BGFLAKMOIGC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BGFLAKMOIGC.proto\"Q\n\x0bBGFLAKMOIGC\x12\x20\n\x0bJJMKAHIBDBH\x18\
-    \x01\x20\x01(\x08R\x0bJJMKAHIBDBH\x12\x20\n\x0bAMICPGOIHLL\x18\x03\x20\
-    \x01(\x08R\x0bAMICPGOIHLLb\x06proto3\
+    \n\x20\x01(\x08R\x0bJJMKAHIBDBH\x12\x20\n\x0bAMICPGOIHLL\x18\x0e\x20\x01\
+    (\x08R\x0bAMICPGOIHLLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

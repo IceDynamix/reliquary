@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GBFDMFJKOOP {
     // message fields
+    // @@protoc_insertion_point(field:GBFDMFJKOOP.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:GBFDMFJKOOP.state)
+    pub state: ::protobuf::EnumOrUnknown<super::NHHJAONHDDG::NHHJAONHDDG>,
     // @@protoc_insertion_point(field:GBFDMFJKOOP.hp)
     pub hp: u32,
     // @@protoc_insertion_point(field:GBFDMFJKOOP.IFOCJCOCDBH)
     pub IFOCJCOCDBH: u32,
-    // @@protoc_insertion_point(field:GBFDMFJKOOP.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:GBFDMFJKOOP.item_list)
-    pub item_list: ::std::vec::Vec<super::DLBGONGJBNC::DLBGONGJBNC>,
     // @@protoc_insertion_point(field:GBFDMFJKOOP.BPBMJBIDIIC)
     pub BPBMJBIDIIC: u32,
-    // @@protoc_insertion_point(field:GBFDMFJKOOP.state)
-    pub state: ::protobuf::EnumOrUnknown<super::NHHJAONHDDG::NHHJAONHDDG>,
+    // @@protoc_insertion_point(field:GBFDMFJKOOP.item_list)
+    pub item_list: ::std::vec::Vec<super::DLBGONGJBNC::DLBGONGJBNC>,
     // special fields
     // @@protoc_insertion_point(special_field:GBFDMFJKOOP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,16 @@ impl GBFDMFJKOOP {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &GBFDMFJKOOP| { &m.score_id },
+            |m: &mut GBFDMFJKOOP| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &GBFDMFJKOOP| { &m.state },
+            |m: &mut GBFDMFJKOOP| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
             |m: &GBFDMFJKOOP| { &m.hp },
             |m: &mut GBFDMFJKOOP| { &mut m.hp },
@@ -70,24 +80,14 @@ impl GBFDMFJKOOP {
             |m: &mut GBFDMFJKOOP| { &mut m.IFOCJCOCDBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &GBFDMFJKOOP| { &m.score_id },
-            |m: &mut GBFDMFJKOOP| { &mut m.score_id },
+            "BPBMJBIDIIC",
+            |m: &GBFDMFJKOOP| { &m.BPBMJBIDIIC },
+            |m: &mut GBFDMFJKOOP| { &mut m.BPBMJBIDIIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "item_list",
             |m: &GBFDMFJKOOP| { &m.item_list },
             |m: &mut GBFDMFJKOOP| { &mut m.item_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPBMJBIDIIC",
-            |m: &GBFDMFJKOOP| { &m.BPBMJBIDIIC },
-            |m: &mut GBFDMFJKOOP| { &mut m.BPBMJBIDIIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &GBFDMFJKOOP| { &m.state },
-            |m: &mut GBFDMFJKOOP| { &mut m.state },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GBFDMFJKOOP>(
             "GBFDMFJKOOP",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GBFDMFJKOOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.hp = is.read_uint32()?;
-                },
                 16 => {
-                    self.IFOCJCOCDBH = is.read_uint32()?;
-                },
-                32 => {
                     self.score_id = is.read_uint32()?;
                 },
-                66 => {
-                    self.item_list.push(is.read_message()?);
+                24 => {
+                    self.state = is.read_enum_or_unknown()?;
                 },
                 80 => {
+                    self.hp = is.read_uint32()?;
+                },
+                88 => {
+                    self.IFOCJCOCDBH = is.read_uint32()?;
+                },
+                104 => {
                     self.BPBMJBIDIIC = is.read_uint32()?;
                 },
-                112 => {
-                    self.state = is.read_enum_or_unknown()?;
+                122 => {
+                    self.item_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,49 +137,49 @@ impl ::protobuf::Message for GBFDMFJKOOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
+        }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN) {
+            my_size += ::protobuf::rt::int32_size(3, self.state.value());
+        }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.hp);
+            my_size += ::protobuf::rt::uint32_size(10, self.hp);
         }
         if self.IFOCJCOCDBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IFOCJCOCDBH);
+            my_size += ::protobuf::rt::uint32_size(11, self.IFOCJCOCDBH);
         }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
+        if self.BPBMJBIDIIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BPBMJBIDIIC);
         }
         for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BPBMJBIDIIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BPBMJBIDIIC);
-        }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN) {
-            my_size += ::protobuf::rt::int32_size(14, self.state.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.hp != 0 {
-            os.write_uint32(1, self.hp)?;
-        }
-        if self.IFOCJCOCDBH != 0 {
-            os.write_uint32(2, self.IFOCJCOCDBH)?;
-        }
         if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
-        }
-        for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.BPBMJBIDIIC != 0 {
-            os.write_uint32(10, self.BPBMJBIDIIC)?;
+            os.write_uint32(2, self.score_id)?;
         }
         if self.state != ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.state))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
+        if self.hp != 0 {
+            os.write_uint32(10, self.hp)?;
+        }
+        if self.IFOCJCOCDBH != 0 {
+            os.write_uint32(11, self.IFOCJCOCDBH)?;
+        }
+        if self.BPBMJBIDIIC != 0 {
+            os.write_uint32(13, self.BPBMJBIDIIC)?;
+        }
+        for v in &self.item_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +197,23 @@ impl ::protobuf::Message for GBFDMFJKOOP {
     }
 
     fn clear(&mut self) {
+        self.score_id = 0;
+        self.state = ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN);
         self.hp = 0;
         self.IFOCJCOCDBH = 0;
-        self.score_id = 0;
-        self.item_list.clear();
         self.BPBMJBIDIIC = 0;
-        self.state = ::protobuf::EnumOrUnknown::new(super::NHHJAONHDDG::NHHJAONHDDG::NHHJAONHDDG_LCNJHOKLMPN);
+        self.item_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GBFDMFJKOOP {
         static instance: GBFDMFJKOOP = GBFDMFJKOOP {
+            score_id: 0,
+            state: ::protobuf::EnumOrUnknown::from_i32(0),
             hp: 0,
             IFOCJCOCDBH: 0,
-            score_id: 0,
-            item_list: ::std::vec::Vec::new(),
             BPBMJBIDIIC: 0,
-            state: ::protobuf::EnumOrUnknown::from_i32(0),
+            item_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for GBFDMFJKOOP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBFDMFJKOOP.proto\x1a\x11DLBGONGJBNC.proto\x1a\x11NHHJAONHDDG.prot\
-    o\"\xcb\x01\n\x0bGBFDMFJKOOP\x12\x0e\n\x02hp\x18\x01\x20\x01(\rR\x02hp\
-    \x12\x20\n\x0bIFOCJCOCDBH\x18\x02\x20\x01(\rR\x0bIFOCJCOCDBH\x12\x19\n\
-    \x08score_id\x18\x04\x20\x01(\rR\x07scoreId\x12)\n\titem_list\x18\x08\
-    \x20\x03(\x0b2\x0c.DLBGONGJBNCR\x08itemList\x12\x20\n\x0bBPBMJBIDIIC\x18\
-    \n\x20\x01(\rR\x0bBPBMJBIDIIC\x12\"\n\x05state\x18\x0e\x20\x01(\x0e2\x0c\
-    .NHHJAONHDDGR\x05stateb\x06proto3\
+    o\"\xcb\x01\n\x0bGBFDMFJKOOP\x12\x19\n\x08score_id\x18\x02\x20\x01(\rR\
+    \x07scoreId\x12\"\n\x05state\x18\x03\x20\x01(\x0e2\x0c.NHHJAONHDDGR\x05s\
+    tate\x12\x0e\n\x02hp\x18\n\x20\x01(\rR\x02hp\x12\x20\n\x0bIFOCJCOCDBH\
+    \x18\x0b\x20\x01(\rR\x0bIFOCJCOCDBH\x12\x20\n\x0bBPBMJBIDIIC\x18\r\x20\
+    \x01(\rR\x0bBPBMJBIDIIC\x12)\n\titem_list\x18\x0f\x20\x03(\x0b2\x0c.DLBG\
+    ONGJBNCR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

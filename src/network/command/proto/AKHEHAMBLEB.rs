@@ -79,10 +79,10 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                96 => {
                     self.KAHFEFACFIE = is.read_int64()?;
                 },
-                48 => {
+                104 => {
                     self.IFEPJHGNCOI = is.read_int64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AKHEHAMBLEB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KAHFEFACFIE != 0 {
-            my_size += ::protobuf::rt::int64_size(4, self.KAHFEFACFIE);
+            my_size += ::protobuf::rt::int64_size(12, self.KAHFEFACFIE);
         }
         if self.IFEPJHGNCOI != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.IFEPJHGNCOI);
+            my_size += ::protobuf::rt::int64_size(13, self.IFEPJHGNCOI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AKHEHAMBLEB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KAHFEFACFIE != 0 {
-            os.write_int64(4, self.KAHFEFACFIE)?;
+            os.write_int64(12, self.KAHFEFACFIE)?;
         }
         if self.IFEPJHGNCOI != 0 {
-            os.write_int64(6, self.IFEPJHGNCOI)?;
+            os.write_int64(13, self.IFEPJHGNCOI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AKHEHAMBLEB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AKHEHAMBLEB.proto\"Q\n\x0bAKHEHAMBLEB\x12\x20\n\x0bKAHFEFACFIE\x18\
-    \x04\x20\x01(\x03R\x0bKAHFEFACFIE\x12\x20\n\x0bIFEPJHGNCOI\x18\x06\x20\
-    \x01(\x03R\x0bIFEPJHGNCOIb\x06proto3\
+    \x0c\x20\x01(\x03R\x0bKAHFEFACFIE\x12\x20\n\x0bIFEPJHGNCOI\x18\r\x20\x01\
+    (\x03R\x0bIFEPJHGNCOIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

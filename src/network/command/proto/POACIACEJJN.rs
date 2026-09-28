@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct POACIACEJJN {
     // message fields
-    // @@protoc_insertion_point(field:POACIACEJJN.DKCMMMPNEME)
-    pub DKCMMMPNEME: ::std::vec::Vec<super::KGHDDIBDABP::KGHDDIBDABP>,
     // @@protoc_insertion_point(field:POACIACEJJN.LCJFDCHINHL)
     pub LCJFDCHINHL: ::std::vec::Vec<super::DMOJMNKOILL::DMOJMNKOILL>,
+    // @@protoc_insertion_point(field:POACIACEJJN.DKCMMMPNEME)
+    pub DKCMMMPNEME: ::std::vec::Vec<super::KGHDDIBDABP::KGHDDIBDABP>,
     // special fields
     // @@protoc_insertion_point(special_field:POACIACEJJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl POACIACEJJN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DKCMMMPNEME",
-            |m: &POACIACEJJN| { &m.DKCMMMPNEME },
-            |m: &mut POACIACEJJN| { &mut m.DKCMMMPNEME },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LCJFDCHINHL",
             |m: &POACIACEJJN| { &m.LCJFDCHINHL },
             |m: &mut POACIACEJJN| { &mut m.LCJFDCHINHL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DKCMMMPNEME",
+            |m: &POACIACEJJN| { &m.DKCMMMPNEME },
+            |m: &mut POACIACEJJN| { &mut m.DKCMMMPNEME },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<POACIACEJJN>(
             "POACIACEJJN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for POACIACEJJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                50 => {
+                    self.LCJFDCHINHL.push(is.read_message()?);
+                },
                 74 => {
                     self.DKCMMMPNEME.push(is.read_message()?);
-                },
-                122 => {
-                    self.LCJFDCHINHL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for POACIACEJJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DKCMMMPNEME {
+        for value in &self.LCJFDCHINHL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.LCJFDCHINHL {
+        for value in &self.DKCMMMPNEME {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,11 +111,11 @@ impl ::protobuf::Message for POACIACEJJN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.LCJFDCHINHL {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         for v in &self.DKCMMMPNEME {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        for v in &self.LCJFDCHINHL {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for POACIACEJJN {
     }
 
     fn clear(&mut self) {
-        self.DKCMMMPNEME.clear();
         self.LCJFDCHINHL.clear();
+        self.DKCMMMPNEME.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static POACIACEJJN {
         static instance: POACIACEJJN = POACIACEJJN {
-            DKCMMMPNEME: ::std::vec::Vec::new(),
             LCJFDCHINHL: ::std::vec::Vec::new(),
+            DKCMMMPNEME: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for POACIACEJJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POACIACEJJN.proto\x1a\x11DMOJMNKOILL.proto\x1a\x11KGHDDIBDABP.prot\
-    o\"m\n\x0bPOACIACEJJN\x12.\n\x0bDKCMMMPNEME\x18\t\x20\x03(\x0b2\x0c.KGHD\
-    DIBDABPR\x0bDKCMMMPNEME\x12.\n\x0bLCJFDCHINHL\x18\x0f\x20\x03(\x0b2\x0c.\
-    DMOJMNKOILLR\x0bLCJFDCHINHLb\x06proto3\
+    o\"m\n\x0bPOACIACEJJN\x12.\n\x0bLCJFDCHINHL\x18\x06\x20\x03(\x0b2\x0c.DM\
+    OJMNKOILLR\x0bLCJFDCHINHL\x12.\n\x0bDKCMMMPNEME\x18\t\x20\x03(\x0b2\x0c.\
+    KGHDDIBDABPR\x0bDKCMMMPNEMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

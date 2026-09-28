@@ -79,10 +79,10 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
                     self.stop_begin_time = is.read_int64()?;
                 },
-                80 => {
+                88 => {
                     self.stop_end_time = is.read_int64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stop_begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.stop_begin_time);
+            my_size += ::protobuf::rt::int64_size(7, self.stop_begin_time);
         }
         if self.stop_end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.stop_end_time);
+            my_size += ::protobuf::rt::int64_size(11, self.stop_end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RegionStopScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stop_begin_time != 0 {
-            os.write_int64(6, self.stop_begin_time)?;
+            os.write_int64(7, self.stop_begin_time)?;
         }
         if self.stop_end_time != 0 {
-            os.write_int64(10, self.stop_end_time)?;
+            os.write_int64(11, self.stop_end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RegionStopScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18RegionStopScNotify.proto\"`\n\x12RegionStopScNotify\x12&\n\x0fstop\
-    _begin_time\x18\x06\x20\x01(\x03R\rstopBeginTime\x12\"\n\rstop_end_time\
-    \x18\n\x20\x01(\x03R\x0bstopEndTimeb\x06proto3\
+    _begin_time\x18\x07\x20\x01(\x03R\rstopBeginTime\x12\"\n\rstop_end_time\
+    \x18\x0b\x20\x01(\x03R\x0bstopEndTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

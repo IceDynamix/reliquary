@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum JHHIAPCKHNP {
     // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_NLCDGIPGFDJ)
     JHHIAPCKHNP_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_KFHAMKCADGC)
-    JHHIAPCKHNP_KFHAMKCADGC = 3083,
     // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_MIHEMCONFHP)
-    JHHIAPCKHNP_MIHEMCONFHP = 3081,
-    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_IHPLLMHHMAB)
-    JHHIAPCKHNP_IHPLLMHHMAB = 3024,
-    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_AGLKDJBDJIE)
-    JHHIAPCKHNP_AGLKDJBDJIE = 3078,
-    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_ALNLCNAFKNH)
-    JHHIAPCKHNP_ALNLCNAFKNH = 3019,
+    JHHIAPCKHNP_MIHEMCONFHP = 3083,
     // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_HFFOHGAKFGJ)
-    JHHIAPCKHNP_HFFOHGAKFGJ = 3044,
+    JHHIAPCKHNP_HFFOHGAKFGJ = 3060,
     // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_KKMEJJDIHJA)
-    JHHIAPCKHNP_KKMEJJDIHJA = 3032,
+    JHHIAPCKHNP_KKMEJJDIHJA = 3034,
+    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_KFHAMKCADGC)
+    JHHIAPCKHNP_KFHAMKCADGC = 3058,
+    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_IHPLLMHHMAB)
+    JHHIAPCKHNP_IHPLLMHHMAB = 3056,
+    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_ALNLCNAFKNH)
+    JHHIAPCKHNP_ALNLCNAFKNH = 3016,
+    // @@protoc_insertion_point(enum_value:JHHIAPCKHNP.JHHIAPCKHNP_AGLKDJBDJIE)
+    JHHIAPCKHNP_AGLKDJBDJIE = 3075,
 }
 
 impl ::protobuf::Enum for JHHIAPCKHNP {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for JHHIAPCKHNP {
     fn from_i32(value: i32) -> ::std::option::Option<JHHIAPCKHNP> {
         match value {
             0 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_NLCDGIPGFDJ),
-            3083 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC),
-            3081 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP),
-            3024 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB),
-            3078 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE),
-            3019 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH),
-            3044 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ),
-            3032 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA),
+            3083 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP),
+            3060 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ),
+            3034 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA),
+            3058 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC),
+            3056 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB),
+            3016 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH),
+            3075 => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for JHHIAPCKHNP {
     fn from_str(str: &str) -> ::std::option::Option<JHHIAPCKHNP> {
         match str {
             "JHHIAPCKHNP_NLCDGIPGFDJ" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_NLCDGIPGFDJ),
-            "JHHIAPCKHNP_KFHAMKCADGC" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC),
             "JHHIAPCKHNP_MIHEMCONFHP" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP),
-            "JHHIAPCKHNP_IHPLLMHHMAB" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB),
-            "JHHIAPCKHNP_AGLKDJBDJIE" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE),
-            "JHHIAPCKHNP_ALNLCNAFKNH" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH),
             "JHHIAPCKHNP_HFFOHGAKFGJ" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ),
             "JHHIAPCKHNP_KKMEJJDIHJA" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA),
+            "JHHIAPCKHNP_KFHAMKCADGC" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC),
+            "JHHIAPCKHNP_IHPLLMHHMAB" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB),
+            "JHHIAPCKHNP_ALNLCNAFKNH" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH),
+            "JHHIAPCKHNP_AGLKDJBDJIE" => ::std::option::Option::Some(JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [JHHIAPCKHNP] = &[
         JHHIAPCKHNP::JHHIAPCKHNP_NLCDGIPGFDJ,
-        JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC,
         JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP,
-        JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB,
-        JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE,
-        JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH,
         JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ,
         JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA,
+        JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC,
+        JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB,
+        JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH,
+        JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for JHHIAPCKHNP {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             JHHIAPCKHNP::JHHIAPCKHNP_NLCDGIPGFDJ => 0,
-            JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC => 1,
-            JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP => 2,
-            JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB => 3,
-            JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE => 4,
-            JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH => 5,
-            JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ => 6,
-            JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA => 7,
+            JHHIAPCKHNP::JHHIAPCKHNP_MIHEMCONFHP => 1,
+            JHHIAPCKHNP::JHHIAPCKHNP_HFFOHGAKFGJ => 2,
+            JHHIAPCKHNP::JHHIAPCKHNP_KKMEJJDIHJA => 3,
+            JHHIAPCKHNP::JHHIAPCKHNP_KFHAMKCADGC => 4,
+            JHHIAPCKHNP::JHHIAPCKHNP_IHPLLMHHMAB => 5,
+            JHHIAPCKHNP::JHHIAPCKHNP_ALNLCNAFKNH => 6,
+            JHHIAPCKHNP::JHHIAPCKHNP_AGLKDJBDJIE => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl JHHIAPCKHNP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JHHIAPCKHNP.proto*\xfc\x01\n\x0bJHHIAPCKHNP\x12\x1b\n\x17JHHIAPCKH\
-    NP_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JHHIAPCKHNP_KFHAMKCADGC\x10\x8b\x18\
-    \x12\x1c\n\x17JHHIAPCKHNP_MIHEMCONFHP\x10\x89\x18\x12\x1c\n\x17JHHIAPCKH\
-    NP_IHPLLMHHMAB\x10\xd0\x17\x12\x1c\n\x17JHHIAPCKHNP_AGLKDJBDJIE\x10\x86\
-    \x18\x12\x1c\n\x17JHHIAPCKHNP_ALNLCNAFKNH\x10\xcb\x17\x12\x1c\n\x17JHHIA\
-    PCKHNP_HFFOHGAKFGJ\x10\xe4\x17\x12\x1c\n\x17JHHIAPCKHNP_KKMEJJDIHJA\x10\
-    \xd8\x17b\x06proto3\
+    NP_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JHHIAPCKHNP_MIHEMCONFHP\x10\x8b\x18\
+    \x12\x1c\n\x17JHHIAPCKHNP_HFFOHGAKFGJ\x10\xf4\x17\x12\x1c\n\x17JHHIAPCKH\
+    NP_KKMEJJDIHJA\x10\xda\x17\x12\x1c\n\x17JHHIAPCKHNP_KFHAMKCADGC\x10\xf2\
+    \x17\x12\x1c\n\x17JHHIAPCKHNP_IHPLLMHHMAB\x10\xf0\x17\x12\x1c\n\x17JHHIA\
+    PCKHNP_ALNLCNAFKNH\x10\xc8\x17\x12\x1c\n\x17JHHIAPCKHNP_AGLKDJBDJIE\x10\
+    \x83\x18b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

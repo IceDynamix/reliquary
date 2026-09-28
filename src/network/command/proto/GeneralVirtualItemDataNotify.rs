@@ -79,10 +79,10 @@ impl ::protobuf::Message for GeneralVirtualItemDataNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                56 => {
                     self.EBLPGLFJNEL = is.read_bool()?;
                 },
-                122 => {
+                90 => {
                     self.FCNBHBHMFMC.push(is.read_message()?);
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GeneralVirtualItemDataNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBLPGLFJNEL != false {
-            os.write_bool(9, self.EBLPGLFJNEL)?;
+            os.write_bool(7, self.EBLPGLFJNEL)?;
         }
         for v in &self.FCNBHBHMFMC {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GeneralVirtualItemDataNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GeneralVirtualItemDataNotify.proto\x1a\x0ePileItem.proto\"m\n\x1cGen\
-    eralVirtualItemDataNotify\x12\x20\n\x0bEBLPGLFJNEL\x18\t\x20\x01(\x08R\
-    \x0bEBLPGLFJNEL\x12+\n\x0bFCNBHBHMFMC\x18\x0f\x20\x03(\x0b2\t.PileItemR\
+    eralVirtualItemDataNotify\x12\x20\n\x0bEBLPGLFJNEL\x18\x07\x20\x01(\x08R\
+    \x0bEBLPGLFJNEL\x12+\n\x0bFCNBHBHMFMC\x18\x0b\x20\x03(\x0b2\t.PileItemR\
     \x0bFCNBHBHMFMCb\x06proto3\
 ";
 

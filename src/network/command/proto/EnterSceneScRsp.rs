@@ -30,12 +30,12 @@ pub struct EnterSceneScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterSceneScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterSceneScRsp.is_over_map)
-    pub is_over_map: bool,
     // @@protoc_insertion_point(field:EnterSceneScRsp.scene_identifier)
     pub scene_identifier: ::protobuf::MessageField<super::SceneIdentifier::SceneIdentifier>,
     // @@protoc_insertion_point(field:EnterSceneScRsp.is_close_map)
     pub is_close_map: bool,
+    // @@protoc_insertion_point(field:EnterSceneScRsp.is_over_map)
+    pub is_over_map: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EnterSceneScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl EnterSceneScRsp {
             |m: &EnterSceneScRsp| { &m.retcode },
             |m: &mut EnterSceneScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_over_map",
-            |m: &EnterSceneScRsp| { &m.is_over_map },
-            |m: &mut EnterSceneScRsp| { &mut m.is_over_map },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneIdentifier::SceneIdentifier>(
             "scene_identifier",
             |m: &EnterSceneScRsp| { &m.scene_identifier },
@@ -74,6 +69,11 @@ impl EnterSceneScRsp {
             "is_close_map",
             |m: &EnterSceneScRsp| { &m.is_close_map },
             |m: &mut EnterSceneScRsp| { &mut m.is_close_map },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_over_map",
+            |m: &EnterSceneScRsp| { &m.is_over_map },
+            |m: &mut EnterSceneScRsp| { &mut m.is_over_map },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterSceneScRsp>(
             "EnterSceneScRsp",
@@ -96,14 +96,14 @@ impl ::protobuf::Message for EnterSceneScRsp {
                 16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.is_over_map = is.read_bool()?;
-                },
-                82 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene_identifier)?;
                 },
-                120 => {
+                48 => {
                     self.is_close_map = is.read_bool()?;
+                },
+                88 => {
+                    self.is_over_map = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,14 +120,14 @@ impl ::protobuf::Message for EnterSceneScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if self.is_over_map != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.scene_identifier.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.is_close_map != false {
+            my_size += 1 + 1;
+        }
+        if self.is_over_map != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -139,14 +139,14 @@ impl ::protobuf::Message for EnterSceneScRsp {
         if self.retcode != 0 {
             os.write_uint32(2, self.retcode)?;
         }
-        if self.is_over_map != false {
-            os.write_bool(5, self.is_over_map)?;
-        }
         if let Some(v) = self.scene_identifier.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.is_close_map != false {
-            os.write_bool(15, self.is_close_map)?;
+            os.write_bool(6, self.is_close_map)?;
+        }
+        if self.is_over_map != false {
+            os.write_bool(11, self.is_over_map)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for EnterSceneScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.is_over_map = false;
         self.scene_identifier.clear();
         self.is_close_map = false;
+        self.is_over_map = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterSceneScRsp {
         static instance: EnterSceneScRsp = EnterSceneScRsp {
             retcode: 0,
-            is_over_map: false,
             scene_identifier: ::protobuf::MessageField::none(),
             is_close_map: false,
+            is_over_map: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterSceneScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EnterSceneScRsp.proto\x1a\x15SceneIdentifier.proto\"\xaa\x01\n\x0f\
-    EnterSceneScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\
-    \x1e\n\x0bis_over_map\x18\x05\x20\x01(\x08R\tisOverMap\x12;\n\x10scene_i\
-    dentifier\x18\n\x20\x01(\x0b2\x10.SceneIdentifierR\x0fsceneIdentifier\
-    \x12\x20\n\x0cis_close_map\x18\x0f\x20\x01(\x08R\nisCloseMapb\x06proto3\
+    EnterSceneScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12;\
+    \n\x10scene_identifier\x18\x03\x20\x01(\x0b2\x10.SceneIdentifierR\x0fsce\
+    neIdentifier\x12\x20\n\x0cis_close_map\x18\x06\x20\x01(\x08R\nisCloseMap\
+    \x12\x1e\n\x0bis_over_map\x18\x0b\x20\x01(\x08R\tisOverMapb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,19 +86,19 @@ impl ::protobuf::Message for MKDHPOGEDOP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.JCCJOKFFILL)?;
                 },
-                24 => {
+                32 => {
                     self.JCCJOKFFILL.push(is.read_uint32()?);
                 },
-                66 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.JABKAKDONEA)?;
                 },
-                64 => {
+                48 => {
                     self.JABKAKDONEA.push(is.read_uint32()?);
                 },
-                88 => {
+                80 => {
                     self.PEOENEFLMBK = is.read_uint32()?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for MKDHPOGEDOP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.JCCJOKFFILL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JABKAKDONEA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JCCJOKFFILL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JABKAKDONEA);
         if self.PEOENEFLMBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.PEOENEFLMBK);
+            my_size += ::protobuf::rt::uint32_size(10, self.PEOENEFLMBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for MKDHPOGEDOP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.JCCJOKFFILL)?;
-        os.write_repeated_packed_uint32(8, &self.JABKAKDONEA)?;
+        os.write_repeated_packed_uint32(4, &self.JCCJOKFFILL)?;
+        os.write_repeated_packed_uint32(6, &self.JABKAKDONEA)?;
         if self.PEOENEFLMBK != 0 {
-            os.write_uint32(11, self.PEOENEFLMBK)?;
+            os.write_uint32(10, self.PEOENEFLMBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for MKDHPOGEDOP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MKDHPOGEDOP.proto\"s\n\x0bMKDHPOGEDOP\x12\x20\n\x0bJCCJOKFFILL\x18\
-    \x03\x20\x03(\rR\x0bJCCJOKFFILL\x12\x20\n\x0bJABKAKDONEA\x18\x08\x20\x03\
-    (\rR\x0bJABKAKDONEA\x12\x20\n\x0bPEOENEFLMBK\x18\x0b\x20\x01(\rR\x0bPEOE\
-    NEFLMBKb\x06proto3\
+    \x04\x20\x03(\rR\x0bJCCJOKFFILL\x12\x20\n\x0bJABKAKDONEA\x18\x06\x20\x03\
+    (\rR\x0bJABKAKDONEA\x12\x20\n\x0bPEOENEFLMBK\x18\n\x20\x01(\rR\x0bPEOENE\
+    FLMBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

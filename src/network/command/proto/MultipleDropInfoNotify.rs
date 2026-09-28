@@ -86,10 +86,10 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                42 => {
                     self.FAFFFJGJHHC.push(is.read_message()?);
                 },
-                66 => {
+                90 => {
                     self.JGALOGDBCKI.push(is.read_message()?);
                 },
                 122 => {
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MultipleDropInfoNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FAFFFJGJHHC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         for v in &self.JGALOGDBCKI {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         for v in &self.MOPAGKNEMOD {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -188,8 +188,8 @@ impl ::protobuf::reflect::ProtobufValue for MultipleDropInfoNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMultipleDropInfoNotify.proto\x1a\x11BMJHAHOLEGH.proto\x1a\x11GCLPB\
     MPOHLI.proto\x1a\x11NGLOBFBCGBB.proto\"\xa8\x01\n\x16MultipleDropInfoNot\
-    ify\x12.\n\x0bFAFFFJGJHHC\x18\x06\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFF\
-    FJGJHHC\x12.\n\x0bJGALOGDBCKI\x18\x08\x20\x03(\x0b2\x0c.GCLPBMPOHLIR\x0b\
+    ify\x12.\n\x0bFAFFFJGJHHC\x18\x05\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFF\
+    FJGJHHC\x12.\n\x0bJGALOGDBCKI\x18\x0b\x20\x03(\x0b2\x0c.GCLPBMPOHLIR\x0b\
     JGALOGDBCKI\x12.\n\x0bMOPAGKNEMOD\x18\x0f\x20\x03(\x0b2\x0c.NGLOBFBCGBBR\
     \x0bMOPAGKNEMODb\x06proto3\
 ";

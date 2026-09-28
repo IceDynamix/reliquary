@@ -86,13 +86,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.gacha_random = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.roll_shop_id = is.read_uint32()?;
                 },
-                88 => {
+                112 => {
                     self.gacha_count = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(6, self.gacha_random);
         }
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.roll_shop_id);
         }
         if self.gacha_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.gacha_count);
+            my_size += ::protobuf::rt::uint32_size(14, self.gacha_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DoGachaInRollShopCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.gacha_random != 0 {
-            os.write_uint32(1, self.gacha_random)?;
+            os.write_uint32(6, self.gacha_random)?;
         }
         if self.roll_shop_id != 0 {
-            os.write_uint32(5, self.roll_shop_id)?;
+            os.write_uint32(13, self.roll_shop_id)?;
         }
         if self.gacha_count != 0 {
-            os.write_uint32(11, self.gacha_count)?;
+            os.write_uint32(14, self.gacha_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDoGachaInRollShopCsReq.proto\"~\n\x16DoGachaInRollShopCsReq\x12!\n\
-    \x0cgacha_random\x18\x01\x20\x01(\rR\x0bgachaRandom\x12\x20\n\x0croll_sh\
-    op_id\x18\x05\x20\x01(\rR\nrollShopId\x12\x1f\n\x0bgacha_count\x18\x0b\
-    \x20\x01(\rR\ngachaCountb\x06proto3\
+    \x0cgacha_random\x18\x06\x20\x01(\rR\x0bgachaRandom\x12\x20\n\x0croll_sh\
+    op_id\x18\r\x20\x01(\rR\nrollShopId\x12\x1f\n\x0bgacha_count\x18\x0e\x20\
+    \x01(\rR\ngachaCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

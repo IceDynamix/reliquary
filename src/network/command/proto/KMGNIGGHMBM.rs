@@ -29,12 +29,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum KMGNIGGHMBM {
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_NLCDGIPGFDJ)
     KMGNIGGHMBM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_MCKELFANPPI)
-    KMGNIGGHMBM_MCKELFANPPI = 4029,
-    // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_GOFMDEDHENA)
-    KMGNIGGHMBM_GOFMDEDHENA = 4013,
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_HNHCOMDJGJI)
-    KMGNIGGHMBM_HNHCOMDJGJI = 4032,
+    KMGNIGGHMBM_HNHCOMDJGJI = 4034,
+    // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_MCKELFANPPI)
+    KMGNIGGHMBM_MCKELFANPPI = 4005,
+    // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_GOFMDEDHENA)
+    KMGNIGGHMBM_GOFMDEDHENA = 4025,
 }
 
 impl ::protobuf::Enum for KMGNIGGHMBM {
@@ -47,9 +47,9 @@ impl ::protobuf::Enum for KMGNIGGHMBM {
     fn from_i32(value: i32) -> ::std::option::Option<KMGNIGGHMBM> {
         match value {
             0 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_NLCDGIPGFDJ),
-            4029 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI),
-            4013 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA),
-            4032 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
+            4034 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
+            4005 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI),
+            4025 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA),
             _ => ::std::option::Option::None
         }
     }
@@ -57,18 +57,18 @@ impl ::protobuf::Enum for KMGNIGGHMBM {
     fn from_str(str: &str) -> ::std::option::Option<KMGNIGGHMBM> {
         match str {
             "KMGNIGGHMBM_NLCDGIPGFDJ" => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_NLCDGIPGFDJ),
+            "KMGNIGGHMBM_HNHCOMDJGJI" => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
             "KMGNIGGHMBM_MCKELFANPPI" => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI),
             "KMGNIGGHMBM_GOFMDEDHENA" => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA),
-            "KMGNIGGHMBM_HNHCOMDJGJI" => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [KMGNIGGHMBM] = &[
         KMGNIGGHMBM::KMGNIGGHMBM_NLCDGIPGFDJ,
+        KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI,
         KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI,
         KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA,
-        KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI,
     ];
 }
 
@@ -81,9 +81,9 @@ impl ::protobuf::EnumFull for KMGNIGGHMBM {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             KMGNIGGHMBM::KMGNIGGHMBM_NLCDGIPGFDJ => 0,
-            KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI => 1,
-            KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA => 2,
-            KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI => 3,
+            KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI => 1,
+            KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI => 2,
+            KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA => 3,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,9 +103,9 @@ impl KMGNIGGHMBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KMGNIGGHMBM.proto*\x84\x01\n\x0bKMGNIGGHMBM\x12\x1b\n\x17KMGNIGGHM\
-    BM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_MCKELFANPPI\x10\xbd\x1f\
-    \x12\x1c\n\x17KMGNIGGHMBM_GOFMDEDHENA\x10\xad\x1f\x12\x1c\n\x17KMGNIGGHM\
-    BM_HNHCOMDJGJI\x10\xc0\x1fb\x06proto3\
+    BM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_HNHCOMDJGJI\x10\xc2\x1f\
+    \x12\x1c\n\x17KMGNIGGHMBM_MCKELFANPPI\x10\xa5\x1f\x12\x1c\n\x17KMGNIGGHM\
+    BM_GOFMDEDHENA\x10\xb9\x1fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

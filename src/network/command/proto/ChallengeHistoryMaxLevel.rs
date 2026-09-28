@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeHistoryMaxLevel {
     // message fields
+    // @@protoc_insertion_point(field:ChallengeHistoryMaxLevel.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:ChallengeHistoryMaxLevel.HNHCFJJNJCE)
     pub HNHCFJJNJCE: bool,
     // @@protoc_insertion_point(field:ChallengeHistoryMaxLevel.reward_display_type)
     pub reward_display_type: u32,
-    // @@protoc_insertion_point(field:ChallengeHistoryMaxLevel.level)
-    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeHistoryMaxLevel.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl ChallengeHistoryMaxLevel {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &ChallengeHistoryMaxLevel| { &m.level },
+            |m: &mut ChallengeHistoryMaxLevel| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HNHCFJJNJCE",
             |m: &ChallengeHistoryMaxLevel| { &m.HNHCFJJNJCE },
             |m: &mut ChallengeHistoryMaxLevel| { &mut m.HNHCFJJNJCE },
@@ -62,11 +67,6 @@ impl ChallengeHistoryMaxLevel {
             "reward_display_type",
             |m: &ChallengeHistoryMaxLevel| { &m.reward_display_type },
             |m: &mut ChallengeHistoryMaxLevel| { &mut m.reward_display_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &ChallengeHistoryMaxLevel| { &m.level },
-            |m: &mut ChallengeHistoryMaxLevel| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeHistoryMaxLevel>(
             "ChallengeHistoryMaxLevel",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.HNHCFJJNJCE = is.read_bool()?;
+                24 => {
+                    self.level = is.read_uint32()?;
                 },
                 32 => {
-                    self.reward_display_type = is.read_uint32()?;
+                    self.HNHCFJJNJCE = is.read_bool()?;
                 },
-                80 => {
-                    self.level = is.read_uint32()?;
+                48 => {
+                    self.reward_display_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
+        }
         if self.HNHCFJJNJCE != false {
             my_size += 1 + 1;
         }
         if self.reward_display_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.reward_display_type);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level);
+            my_size += ::protobuf::rt::uint32_size(6, self.reward_display_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.level != 0 {
+            os.write_uint32(3, self.level)?;
+        }
         if self.HNHCFJJNJCE != false {
-            os.write_bool(2, self.HNHCFJJNJCE)?;
+            os.write_bool(4, self.HNHCFJJNJCE)?;
         }
         if self.reward_display_type != 0 {
-            os.write_uint32(4, self.reward_display_type)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(10, self.level)?;
+            os.write_uint32(6, self.reward_display_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ChallengeHistoryMaxLevel {
     }
 
     fn clear(&mut self) {
+        self.level = 0;
         self.HNHCFJJNJCE = false;
         self.reward_display_type = 0;
-        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeHistoryMaxLevel {
         static instance: ChallengeHistoryMaxLevel = ChallengeHistoryMaxLevel {
+            level: 0,
             HNHCFJJNJCE: false,
             reward_display_type: 0,
-            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeHistoryMaxLevel {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChallengeHistoryMaxLevel.proto\"\x82\x01\n\x18ChallengeHistoryMaxL\
-    evel\x12\x20\n\x0bHNHCFJJNJCE\x18\x02\x20\x01(\x08R\x0bHNHCFJJNJCE\x12.\
-    \n\x13reward_display_type\x18\x04\x20\x01(\rR\x11rewardDisplayType\x12\
-    \x14\n\x05level\x18\n\x20\x01(\rR\x05levelb\x06proto3\
+    evel\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x20\n\x0bHNHCFJ\
+    JNJCE\x18\x04\x20\x01(\x08R\x0bHNHCFJJNJCE\x12.\n\x13reward_display_type\
+    \x18\x06\x20\x01(\rR\x11rewardDisplayTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

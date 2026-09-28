@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CLHIJOAKJCE {
     // message fields
-    // @@protoc_insertion_point(field:CLHIJOAKJCE.IAMOMGNBDOO)
-    pub IAMOMGNBDOO: u32,
     // @@protoc_insertion_point(field:CLHIJOAKJCE.DOHOFAOLNGE)
     pub DOHOFAOLNGE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CLHIJOAKJCE.IAMOMGNBDOO)
+    pub IAMOMGNBDOO: u32,
     // @@protoc_insertion_point(field:CLHIJOAKJCE.CCGBOIFFDLD)
     pub CCGBOIFFDLD: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl CLHIJOAKJCE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAMOMGNBDOO",
-            |m: &CLHIJOAKJCE| { &m.IAMOMGNBDOO },
-            |m: &mut CLHIJOAKJCE| { &mut m.IAMOMGNBDOO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DOHOFAOLNGE",
             |m: &CLHIJOAKJCE| { &m.DOHOFAOLNGE },
             |m: &mut CLHIJOAKJCE| { &mut m.DOHOFAOLNGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAMOMGNBDOO",
+            |m: &CLHIJOAKJCE| { &m.IAMOMGNBDOO },
+            |m: &mut CLHIJOAKJCE| { &mut m.IAMOMGNBDOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CCGBOIFFDLD",
@@ -86,19 +86,19 @@ impl ::protobuf::Message for CLHIJOAKJCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.IAMOMGNBDOO = is.read_uint32()?;
-                },
-                42 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.DOHOFAOLNGE)?;
                 },
-                40 => {
+                56 => {
                     self.DOHOFAOLNGE.push(is.read_uint32()?);
                 },
-                74 => {
+                72 => {
+                    self.IAMOMGNBDOO = is.read_uint32()?;
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.CCGBOIFFDLD)?;
                 },
-                72 => {
+                120 => {
                     self.CCGBOIFFDLD.push(is.read_uint32()?);
                 },
                 tag => {
@@ -113,22 +113,22 @@ impl ::protobuf::Message for CLHIJOAKJCE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DOHOFAOLNGE);
         if self.IAMOMGNBDOO != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IAMOMGNBDOO);
+            my_size += ::protobuf::rt::uint32_size(9, self.IAMOMGNBDOO);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.DOHOFAOLNGE);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CCGBOIFFDLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.CCGBOIFFDLD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(7, &self.DOHOFAOLNGE)?;
         if self.IAMOMGNBDOO != 0 {
-            os.write_uint32(3, self.IAMOMGNBDOO)?;
+            os.write_uint32(9, self.IAMOMGNBDOO)?;
         }
-        os.write_repeated_packed_uint32(5, &self.DOHOFAOLNGE)?;
-        os.write_repeated_packed_uint32(9, &self.CCGBOIFFDLD)?;
+        os.write_repeated_packed_uint32(15, &self.CCGBOIFFDLD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -146,16 +146,16 @@ impl ::protobuf::Message for CLHIJOAKJCE {
     }
 
     fn clear(&mut self) {
-        self.IAMOMGNBDOO = 0;
         self.DOHOFAOLNGE.clear();
+        self.IAMOMGNBDOO = 0;
         self.CCGBOIFFDLD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CLHIJOAKJCE {
         static instance: CLHIJOAKJCE = CLHIJOAKJCE {
-            IAMOMGNBDOO: 0,
             DOHOFAOLNGE: ::std::vec::Vec::new(),
+            IAMOMGNBDOO: 0,
             CCGBOIFFDLD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -181,10 +181,10 @@ impl ::protobuf::reflect::ProtobufValue for CLHIJOAKJCE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CLHIJOAKJCE.proto\"s\n\x0bCLHIJOAKJCE\x12\x20\n\x0bIAMOMGNBDOO\x18\
-    \x03\x20\x01(\rR\x0bIAMOMGNBDOO\x12\x20\n\x0bDOHOFAOLNGE\x18\x05\x20\x03\
-    (\rR\x0bDOHOFAOLNGE\x12\x20\n\x0bCCGBOIFFDLD\x18\t\x20\x03(\rR\x0bCCGBOI\
-    FFDLDb\x06proto3\
+    \n\x11CLHIJOAKJCE.proto\"s\n\x0bCLHIJOAKJCE\x12\x20\n\x0bDOHOFAOLNGE\x18\
+    \x07\x20\x03(\rR\x0bDOHOFAOLNGE\x12\x20\n\x0bIAMOMGNBDOO\x18\t\x20\x01(\
+    \rR\x0bIAMOMGNBDOO\x12\x20\n\x0bCCGBOIFFDLD\x18\x0f\x20\x03(\rR\x0bCCGBO\
+    IFFDLDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

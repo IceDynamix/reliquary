@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum MMLAPDEBFJM {
     // @@protoc_insertion_point(enum_value:MMLAPDEBFJM.MMLAPDEBFJM_NLCDGIPGFDJ)
     MMLAPDEBFJM_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:MMLAPDEBFJM.MMLAPDEBFJM_reward)
-    MMLAPDEBFJM_reward = 1,
+    // @@protoc_insertion_point(enum_value:MMLAPDEBFJM.MMLAPDEBFJM_ENGHMIAMPLG)
+    MMLAPDEBFJM_ENGHMIAMPLG = 1,
     // @@protoc_insertion_point(enum_value:MMLAPDEBFJM.MMLAPDEBFJM_IEIKAPNDPCI)
     MMLAPDEBFJM_IEIKAPNDPCI = 2,
 }
@@ -45,7 +45,7 @@ impl ::protobuf::Enum for MMLAPDEBFJM {
     fn from_i32(value: i32) -> ::std::option::Option<MMLAPDEBFJM> {
         match value {
             0 => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_reward),
+            1 => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_ENGHMIAMPLG),
             2 => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_IEIKAPNDPCI),
             _ => ::std::option::Option::None
         }
@@ -54,7 +54,7 @@ impl ::protobuf::Enum for MMLAPDEBFJM {
     fn from_str(str: &str) -> ::std::option::Option<MMLAPDEBFJM> {
         match str {
             "MMLAPDEBFJM_NLCDGIPGFDJ" => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ),
-            "MMLAPDEBFJM_reward" => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_reward),
+            "MMLAPDEBFJM_ENGHMIAMPLG" => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_ENGHMIAMPLG),
             "MMLAPDEBFJM_IEIKAPNDPCI" => ::std::option::Option::Some(MMLAPDEBFJM::MMLAPDEBFJM_IEIKAPNDPCI),
             _ => ::std::option::Option::None
         }
@@ -62,7 +62,7 @@ impl ::protobuf::Enum for MMLAPDEBFJM {
 
     const VALUES: &'static [MMLAPDEBFJM] = &[
         MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ,
-        MMLAPDEBFJM::MMLAPDEBFJM_reward,
+        MMLAPDEBFJM::MMLAPDEBFJM_ENGHMIAMPLG,
         MMLAPDEBFJM::MMLAPDEBFJM_IEIKAPNDPCI,
     ];
 }
@@ -92,9 +92,9 @@ impl MMLAPDEBFJM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MMLAPDEBFJM.proto*_\n\x0bMMLAPDEBFJM\x12\x1b\n\x17MMLAPDEBFJM_NLCD\
-    GIPGFDJ\x10\0\x12\x16\n\x12MMLAPDEBFJM_reward\x10\x01\x12\x1b\n\x17MMLAP\
-    DEBFJM_IEIKAPNDPCI\x10\x02b\x06proto3\
+    \n\x11MMLAPDEBFJM.proto*d\n\x0bMMLAPDEBFJM\x12\x1b\n\x17MMLAPDEBFJM_NLCD\
+    GIPGFDJ\x10\0\x12\x1b\n\x17MMLAPDEBFJM_ENGHMIAMPLG\x10\x01\x12\x1b\n\x17\
+    MMLAPDEBFJM_IEIKAPNDPCI\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

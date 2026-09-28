@@ -79,10 +79,10 @@ impl ::protobuf::Message for EPHFHKDJKMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                104 => {
                     self.JGCCIMMEDIJ = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.APHIOEALOGI = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EPHFHKDJKMD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JGCCIMMEDIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JGCCIMMEDIJ);
+            my_size += ::protobuf::rt::uint32_size(13, self.JGCCIMMEDIJ);
         }
         if self.APHIOEALOGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.APHIOEALOGI);
+            my_size += ::protobuf::rt::uint32_size(15, self.APHIOEALOGI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EPHFHKDJKMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JGCCIMMEDIJ != 0 {
-            os.write_uint32(7, self.JGCCIMMEDIJ)?;
+            os.write_uint32(13, self.JGCCIMMEDIJ)?;
         }
         if self.APHIOEALOGI != 0 {
-            os.write_uint32(12, self.APHIOEALOGI)?;
+            os.write_uint32(15, self.APHIOEALOGI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EPHFHKDJKMD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPHFHKDJKMD.proto\"Q\n\x0bEPHFHKDJKMD\x12\x20\n\x0bJGCCIMMEDIJ\x18\
-    \x07\x20\x01(\rR\x0bJGCCIMMEDIJ\x12\x20\n\x0bAPHIOEALOGI\x18\x0c\x20\x01\
-    (\rR\x0bAPHIOEALOGIb\x06proto3\
+    \r\x20\x01(\rR\x0bJGCCIMMEDIJ\x12\x20\n\x0bAPHIOEALOGI\x18\x0f\x20\x01(\
+    \rR\x0bAPHIOEALOGIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

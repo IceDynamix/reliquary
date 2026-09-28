@@ -79,10 +79,10 @@ impl ::protobuf::Message for GAGGCODGDLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.time = is.read_int64()?;
                 },
-                120 => {
+                56 => {
                     self.prop_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GAGGCODGDLB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.time);
+            my_size += ::protobuf::rt::int64_size(2, self.time);
         }
         if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.prop_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.prop_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GAGGCODGDLB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.time != 0 {
-            os.write_int64(7, self.time)?;
+            os.write_int64(2, self.time)?;
         }
         if self.prop_id != 0 {
-            os.write_uint32(15, self.prop_id)?;
+            os.write_uint32(7, self.prop_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GAGGCODGDLB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GAGGCODGDLB.proto\":\n\x0bGAGGCODGDLB\x12\x12\n\x04time\x18\x07\
-    \x20\x01(\x03R\x04time\x12\x17\n\x07prop_id\x18\x0f\x20\x01(\rR\x06propI\
+    \n\x11GAGGCODGDLB.proto\":\n\x0bGAGGCODGDLB\x12\x12\n\x04time\x18\x02\
+    \x20\x01(\x03R\x04time\x12\x17\n\x07prop_id\x18\x07\x20\x01(\rR\x06propI\
     db\x06proto3\
 ";
 

@@ -61,8 +61,8 @@ pub enum BCAMANFJINC {
     BCAMANFJINC_AEHHIPFDNFJ = 15,
     // @@protoc_insertion_point(enum_value:BCAMANFJINC.BCAMANFJINC_KHBEOADDIFM)
     BCAMANFJINC_KHBEOADDIFM = 16,
-    // @@protoc_insertion_point(enum_value:BCAMANFJINC.BCAMANFJINC_action)
-    BCAMANFJINC_action = 17,
+    // @@protoc_insertion_point(enum_value:BCAMANFJINC.BCAMANFJINC_ENGGCENAFPM)
+    BCAMANFJINC_ENGGCENAFPM = 17,
     // @@protoc_insertion_point(enum_value:BCAMANFJINC.BCAMANFJINC_DACEMIDFHOG)
     BCAMANFJINC_DACEMIDFHOG = 18,
     // @@protoc_insertion_point(enum_value:BCAMANFJINC.BCAMANFJINC_OIKFFLEHFCN)
@@ -101,7 +101,7 @@ impl ::protobuf::Enum for BCAMANFJINC {
             14 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KPCEJLILHMO),
             15 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_AEHHIPFDNFJ),
             16 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KHBEOADDIFM),
-            17 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_action),
+            17 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_ENGGCENAFPM),
             18 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_DACEMIDFHOG),
             19 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_OIKFFLEHFCN),
             20 => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KEJCJJHDKJB),
@@ -130,7 +130,7 @@ impl ::protobuf::Enum for BCAMANFJINC {
             "BCAMANFJINC_KPCEJLILHMO" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KPCEJLILHMO),
             "BCAMANFJINC_AEHHIPFDNFJ" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_AEHHIPFDNFJ),
             "BCAMANFJINC_KHBEOADDIFM" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KHBEOADDIFM),
-            "BCAMANFJINC_action" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_action),
+            "BCAMANFJINC_ENGGCENAFPM" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_ENGGCENAFPM),
             "BCAMANFJINC_DACEMIDFHOG" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_DACEMIDFHOG),
             "BCAMANFJINC_OIKFFLEHFCN" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_OIKFFLEHFCN),
             "BCAMANFJINC_KEJCJJHDKJB" => ::std::option::Option::Some(BCAMANFJINC::BCAMANFJINC_KEJCJJHDKJB),
@@ -158,7 +158,7 @@ impl ::protobuf::Enum for BCAMANFJINC {
         BCAMANFJINC::BCAMANFJINC_KPCEJLILHMO,
         BCAMANFJINC::BCAMANFJINC_AEHHIPFDNFJ,
         BCAMANFJINC::BCAMANFJINC_KHBEOADDIFM,
-        BCAMANFJINC::BCAMANFJINC_action,
+        BCAMANFJINC::BCAMANFJINC_ENGGCENAFPM,
         BCAMANFJINC::BCAMANFJINC_DACEMIDFHOG,
         BCAMANFJINC::BCAMANFJINC_OIKFFLEHFCN,
         BCAMANFJINC::BCAMANFJINC_KEJCJJHDKJB,
@@ -192,7 +192,7 @@ impl BCAMANFJINC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCAMANFJINC.proto*\xa3\x05\n\x0bBCAMANFJINC\x12\x1b\n\x17BCAMANFJI\
+    \n\x11BCAMANFJINC.proto*\xa8\x05\n\x0bBCAMANFJINC\x12\x1b\n\x17BCAMANFJI\
     NC_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17BCAMANFJINC_MLIGAFABJDP\x10\x01\x12\
     \x1b\n\x17BCAMANFJINC_BLLCMLBDLPC\x10\x02\x12\x1b\n\x17BCAMANFJINC_MEBGA\
     CKEOOG\x10\x03\x12\x1b\n\x17BCAMANFJINC_GHPKFACFMML\x10\x04\x12\x1b\n\
@@ -203,11 +203,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     MFOBLAFN\x10\x0b\x12\x1b\n\x17BCAMANFJINC_LIJMDJDFIIC\x10\x0c\x12\x1b\n\
     \x17BCAMANFJINC_JHGMHCJOKNA\x10\r\x12\x1b\n\x17BCAMANFJINC_KPCEJLILHMO\
     \x10\x0e\x12\x1b\n\x17BCAMANFJINC_AEHHIPFDNFJ\x10\x0f\x12\x1b\n\x17BCAMA\
-    NFJINC_KHBEOADDIFM\x10\x10\x12\x16\n\x12BCAMANFJINC_action\x10\x11\x12\
-    \x1b\n\x17BCAMANFJINC_DACEMIDFHOG\x10\x12\x12\x1b\n\x17BCAMANFJINC_OIKFF\
-    LEHFCN\x10\x13\x12\x1b\n\x17BCAMANFJINC_KEJCJJHDKJB\x10\x14\x12\x1b\n\
-    \x17BCAMANFJINC_EIIJCLPCFLM\x10\x15\x12\x1b\n\x17BCAMANFJINC_NKJFKBBDDEO\
-    \x10\x16b\x06proto3\
+    NFJINC_KHBEOADDIFM\x10\x10\x12\x1b\n\x17BCAMANFJINC_ENGGCENAFPM\x10\x11\
+    \x12\x1b\n\x17BCAMANFJINC_DACEMIDFHOG\x10\x12\x12\x1b\n\x17BCAMANFJINC_O\
+    IKFFLEHFCN\x10\x13\x12\x1b\n\x17BCAMANFJINC_KEJCJJHDKJB\x10\x14\x12\x1b\
+    \n\x17BCAMANFJINC_EIIJCLPCFLM\x10\x15\x12\x1b\n\x17BCAMANFJINC_NKJFKBBDD\
+    EO\x10\x16b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

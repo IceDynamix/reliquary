@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReportPlayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReportPlayerCsReq.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:ReportPlayerCsReq.IMNOJNCGGNI)
     pub IMNOJNCGGNI: ::std::string::String,
     // @@protoc_insertion_point(field:ReportPlayerCsReq.OLLBLNAGMPC)
     pub OLLBLNAGMPC: u32,
+    // @@protoc_insertion_point(field:ReportPlayerCsReq.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReportPlayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl ReportPlayerCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &ReportPlayerCsReq| { &m.uid },
-            |m: &mut ReportPlayerCsReq| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IMNOJNCGGNI",
             |m: &ReportPlayerCsReq| { &m.IMNOJNCGGNI },
             |m: &mut ReportPlayerCsReq| { &mut m.IMNOJNCGGNI },
@@ -67,6 +62,11 @@ impl ReportPlayerCsReq {
             "OLLBLNAGMPC",
             |m: &ReportPlayerCsReq| { &m.OLLBLNAGMPC },
             |m: &mut ReportPlayerCsReq| { &mut m.OLLBLNAGMPC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &ReportPlayerCsReq| { &m.uid },
+            |m: &mut ReportPlayerCsReq| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReportPlayerCsReq>(
             "ReportPlayerCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.uid = is.read_uint32()?;
-                },
-                58 => {
+                34 => {
                     self.IMNOJNCGGNI = is.read_string()?;
                 },
-                72 => {
+                80 => {
                     self.OLLBLNAGMPC = is.read_uint32()?;
+                },
+                88 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.uid);
-        }
         if !self.IMNOJNCGGNI.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.IMNOJNCGGNI);
+            my_size += ::protobuf::rt::string_size(4, &self.IMNOJNCGGNI);
         }
         if self.OLLBLNAGMPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OLLBLNAGMPC);
+            my_size += ::protobuf::rt::uint32_size(10, self.OLLBLNAGMPC);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(3, self.uid)?;
-        }
         if !self.IMNOJNCGGNI.is_empty() {
-            os.write_string(7, &self.IMNOJNCGGNI)?;
+            os.write_string(4, &self.IMNOJNCGGNI)?;
         }
         if self.OLLBLNAGMPC != 0 {
-            os.write_uint32(9, self.OLLBLNAGMPC)?;
+            os.write_uint32(10, self.OLLBLNAGMPC)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(11, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ReportPlayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
         self.IMNOJNCGGNI.clear();
         self.OLLBLNAGMPC = 0;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReportPlayerCsReq {
         static instance: ReportPlayerCsReq = ReportPlayerCsReq {
-            uid: 0,
             IMNOJNCGGNI: ::std::string::String::new(),
             OLLBLNAGMPC: 0,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for ReportPlayerCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17ReportPlayerCsReq.proto\"i\n\x11ReportPlayerCsReq\x12\x10\n\x03uid\
-    \x18\x03\x20\x01(\rR\x03uid\x12\x20\n\x0bIMNOJNCGGNI\x18\x07\x20\x01(\tR\
-    \x0bIMNOJNCGGNI\x12\x20\n\x0bOLLBLNAGMPC\x18\t\x20\x01(\rR\x0bOLLBLNAGMP\
-    Cb\x06proto3\
+    \n\x17ReportPlayerCsReq.proto\"i\n\x11ReportPlayerCsReq\x12\x20\n\x0bIMN\
+    OJNCGGNI\x18\x04\x20\x01(\tR\x0bIMNOJNCGGNI\x12\x20\n\x0bOLLBLNAGMPC\x18\
+    \n\x20\x01(\rR\x0bOLLBLNAGMPC\x12\x10\n\x03uid\x18\x0b\x20\x01(\rR\x03ui\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

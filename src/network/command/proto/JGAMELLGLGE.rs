@@ -72,7 +72,7 @@ impl ::protobuf::Message for JGAMELLGLGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NJDCPMENIFG)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for JGAMELLGLGE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.NJDCPMENIFG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for JGAMELLGLGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGAMELLGLGE.proto\x1a\x11JOLAHHGIFHA.proto\"=\n\x0bJGAMELLGLGE\x12\
-    .\n\x0bNJDCPMENIFG\x18\x04\x20\x01(\x0b2\x0c.JOLAHHGIFHAR\x0bNJDCPMENIFG\
+    .\n\x0bNJDCPMENIFG\x18\x07\x20\x01(\x0b2\x0c.JOLAHHGIFHAR\x0bNJDCPMENIFG\
     b\x06proto3\
 ";
 

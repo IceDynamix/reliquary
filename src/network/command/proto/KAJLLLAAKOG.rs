@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KAJLLLAAKOG {
     // message fields
-    // @@protoc_insertion_point(field:KAJLLLAAKOG.CJBINCOKFPO)
-    pub CJBINCOKFPO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KAJLLLAAKOG.BFNINELCBCN)
     pub BFNINELCBCN: ::std::vec::Vec<super::AGPKFBLGDIH::AGPKFBLGDIH>,
+    // @@protoc_insertion_point(field:KAJLLLAAKOG.CJBINCOKFPO)
+    pub CJBINCOKFPO: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KAJLLLAAKOG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KAJLLLAAKOG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CJBINCOKFPO",
-            |m: &KAJLLLAAKOG| { &m.CJBINCOKFPO },
-            |m: &mut KAJLLLAAKOG| { &mut m.CJBINCOKFPO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BFNINELCBCN",
             |m: &KAJLLLAAKOG| { &m.BFNINELCBCN },
             |m: &mut KAJLLLAAKOG| { &mut m.BFNINELCBCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CJBINCOKFPO",
+            |m: &KAJLLLAAKOG| { &m.CJBINCOKFPO },
+            |m: &mut KAJLLLAAKOG| { &mut m.CJBINCOKFPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KAJLLLAAKOG>(
             "KAJLLLAAKOG",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for KAJLLLAAKOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                42 => {
+                    self.BFNINELCBCN.push(is.read_message()?);
+                },
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.CJBINCOKFPO)?;
                 },
-                80 => {
+                64 => {
                     self.CJBINCOKFPO.push(is.read_uint32()?);
-                },
-                90 => {
-                    self.BFNINELCBCN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,21 +100,21 @@ impl ::protobuf::Message for KAJLLLAAKOG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.CJBINCOKFPO);
         for value in &self.BFNINELCBCN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.CJBINCOKFPO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.CJBINCOKFPO)?;
         for v in &self.BFNINELCBCN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        os.write_repeated_packed_uint32(8, &self.CJBINCOKFPO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KAJLLLAAKOG {
     }
 
     fn clear(&mut self) {
-        self.CJBINCOKFPO.clear();
         self.BFNINELCBCN.clear();
+        self.CJBINCOKFPO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KAJLLLAAKOG {
         static instance: KAJLLLAAKOG = KAJLLLAAKOG {
-            CJBINCOKFPO: ::std::vec::Vec::new(),
             BFNINELCBCN: ::std::vec::Vec::new(),
+            CJBINCOKFPO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for KAJLLLAAKOG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KAJLLLAAKOG.proto\x1a\x11AGPKFBLGDIH.proto\"_\n\x0bKAJLLLAAKOG\x12\
-    \x20\n\x0bCJBINCOKFPO\x18\n\x20\x03(\rR\x0bCJBINCOKFPO\x12.\n\x0bBFNINEL\
-    CBCN\x18\x0b\x20\x03(\x0b2\x0c.AGPKFBLGDIHR\x0bBFNINELCBCNb\x06proto3\
+    .\n\x0bBFNINELCBCN\x18\x05\x20\x03(\x0b2\x0c.AGPKFBLGDIHR\x0bBFNINELCBCN\
+    \x12\x20\n\x0bCJBINCOKFPO\x18\x08\x20\x03(\rR\x0bCJBINCOKFPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

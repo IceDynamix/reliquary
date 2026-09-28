@@ -45,7 +45,7 @@ impl JPGKBLDLADF {
         ::std::default::Default::default()
     }
 
-    // uint32 AOKPCNJJBAO = 6;
+    // uint32 AOKPCNJJBAO = 4;
 
     pub fn AOKPCNJJBAO(&self) -> u32 {
         match self.MNLCHEJKDHO {
@@ -70,12 +70,12 @@ impl JPGKBLDLADF {
         self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v))
     }
 
-    // .H_8ae9d1e6 KBBOAJPMNCN = 2;
+    // .GEPAFBJBGBH KBBOAJPMNCN = 13;
 
-    pub fn KBBOAJPMNCN(&self) -> &super::H_8ae9d1e6::H_8ae9d1e6 {
+    pub fn KBBOAJPMNCN(&self) -> &super::GEPAFBJBGBH::GEPAFBJBGBH {
         match self.MNLCHEJKDHO {
             ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v)) => v,
-            _ => <super::H_8ae9d1e6::H_8ae9d1e6 as ::protobuf::Message>::default_instance(),
+            _ => <super::GEPAFBJBGBH::GEPAFBJBGBH as ::protobuf::Message>::default_instance(),
         }
     }
 
@@ -91,15 +91,15 @@ impl JPGKBLDLADF {
     }
 
     // Param is passed by value, moved
-    pub fn set_KBBOAJPMNCN(&mut self, v: super::H_8ae9d1e6::H_8ae9d1e6) {
+    pub fn set_KBBOAJPMNCN(&mut self, v: super::GEPAFBJBGBH::GEPAFBJBGBH) {
         self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KBBOAJPMNCN(&mut self) -> &mut super::H_8ae9d1e6::H_8ae9d1e6 {
+    pub fn mut_KBBOAJPMNCN(&mut self) -> &mut super::GEPAFBJBGBH::GEPAFBJBGBH {
         if let ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(_)) = self.MNLCHEJKDHO {
         } else {
-            self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(super::H_8ae9d1e6::H_8ae9d1e6::new()));
+            self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(super::GEPAFBJBGBH::GEPAFBJBGBH::new()));
         }
         match self.MNLCHEJKDHO {
             ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref mut v)) => v,
@@ -108,14 +108,14 @@ impl JPGKBLDLADF {
     }
 
     // Take field
-    pub fn take_KBBOAJPMNCN(&mut self) -> super::H_8ae9d1e6::H_8ae9d1e6 {
+    pub fn take_KBBOAJPMNCN(&mut self) -> super::GEPAFBJBGBH::GEPAFBJBGBH {
         if self.has_KBBOAJPMNCN() {
             match self.MNLCHEJKDHO.take() {
                 ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::H_8ae9d1e6::H_8ae9d1e6::new()
+            super::GEPAFBJBGBH::GEPAFBJBGBH::new()
         }
     }
 
@@ -153,7 +153,7 @@ impl JPGKBLDLADF {
             JPGKBLDLADF::AOKPCNJJBAO,
             JPGKBLDLADF::set_AOKPCNJJBAO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::H_8ae9d1e6::H_8ae9d1e6>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GEPAFBJBGBH::GEPAFBJBGBH>(
             "KBBOAJPMNCN",
             JPGKBLDLADF::has_KBBOAJPMNCN,
             JPGKBLDLADF::KBBOAJPMNCN,
@@ -185,10 +185,10 @@ impl ::protobuf::Message for JPGKBLDLADF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(is.read_uint32()?));
                 },
-                18 => {
+                106 => {
                     self.MNLCHEJKDHO = ::std::option::Option::Some(jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(is.read_message()?));
                 },
                 120 => {
@@ -209,7 +209,7 @@ impl ::protobuf::Message for JPGKBLDLADF {
         if let ::std::option::Option::Some(ref v) = self.MNLCHEJKDHO {
             match v {
                 &jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v) => {
                     let len = v.compute_size();
@@ -229,10 +229,10 @@ impl ::protobuf::Message for JPGKBLDLADF {
         if let ::std::option::Option::Some(ref v) = self.MNLCHEJKDHO {
             match v {
                 &jpgkbldladf::MNLCHEJKDHO::AOKPCNJJBAO(v) => {
-                    os.write_uint32(6, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &jpgkbldladf::MNLCHEJKDHO::KBBOAJPMNCN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &jpgkbldladf::MNLCHEJKDHO::CEPEHNEOIOH(v) => {
                     os.write_uint32(15, v)?;
@@ -298,7 +298,7 @@ pub mod jpgkbldladf {
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.AOKPCNJJBAO)
         AOKPCNJJBAO(u32),
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.KBBOAJPMNCN)
-        KBBOAJPMNCN(super::super::H_8ae9d1e6::H_8ae9d1e6),
+        KBBOAJPMNCN(super::super::GEPAFBJBGBH::GEPAFBJBGBH),
         // @@protoc_insertion_point(oneof_field:JPGKBLDLADF.CEPEHNEOIOH)
         CEPEHNEOIOH(u32),
     }
@@ -321,9 +321,9 @@ pub mod jpgkbldladf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPGKBLDLADF.proto\x1a\x10H_8ae9d1e6.proto\"\x95\x01\n\x0bJPGKBLDLA\
-    DF\x12\"\n\x0bAOKPCNJJBAO\x18\x06\x20\x01(\rH\0R\x0bAOKPCNJJBAO\x12/\n\
-    \x0bKBBOAJPMNCN\x18\x02\x20\x01(\x0b2\x0b.H_8ae9d1e6H\0R\x0bKBBOAJPMNCN\
+    \n\x11JPGKBLDLADF.proto\x1a\x11GEPAFBJBGBH.proto\"\x96\x01\n\x0bJPGKBLDL\
+    ADF\x12\"\n\x0bAOKPCNJJBAO\x18\x04\x20\x01(\rH\0R\x0bAOKPCNJJBAO\x120\n\
+    \x0bKBBOAJPMNCN\x18\r\x20\x01(\x0b2\x0c.GEPAFBJBGBHH\0R\x0bKBBOAJPMNCN\
     \x12\"\n\x0bCEPEHNEOIOH\x18\x0f\x20\x01(\rH\0R\x0bCEPEHNEOIOHB\r\n\x0bMN\
     LCHEJKDHOb\x06proto3\
 ";
@@ -343,7 +343,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_8ae9d1e6::file_descriptor().clone());
+            deps.push(super::GEPAFBJBGBH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JPGKBLDLADF::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

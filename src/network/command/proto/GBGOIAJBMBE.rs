@@ -33,6 +33,8 @@ pub enum GBGOIAJBMBE {
     GBGOIAJBMBE_BLCFFEHJCAK = 1,
     // @@protoc_insertion_point(enum_value:GBGOIAJBMBE.GBGOIAJBMBE_EPIIPAEPNDE)
     GBGOIAJBMBE_EPIIPAEPNDE = 2,
+    // @@protoc_insertion_point(enum_value:GBGOIAJBMBE.GBGOIAJBMBE_HJLAPCCANEO)
+    GBGOIAJBMBE_HJLAPCCANEO = 3,
 }
 
 impl ::protobuf::Enum for GBGOIAJBMBE {
@@ -47,6 +49,7 @@ impl ::protobuf::Enum for GBGOIAJBMBE {
             0 => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_FBMLGFKDPDP),
             1 => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_BLCFFEHJCAK),
             2 => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_EPIIPAEPNDE),
+            3 => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_HJLAPCCANEO),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +59,7 @@ impl ::protobuf::Enum for GBGOIAJBMBE {
             "GBGOIAJBMBE_FBMLGFKDPDP" => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_FBMLGFKDPDP),
             "GBGOIAJBMBE_BLCFFEHJCAK" => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_BLCFFEHJCAK),
             "GBGOIAJBMBE_EPIIPAEPNDE" => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_EPIIPAEPNDE),
+            "GBGOIAJBMBE_HJLAPCCANEO" => ::std::option::Option::Some(GBGOIAJBMBE::GBGOIAJBMBE_HJLAPCCANEO),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +68,7 @@ impl ::protobuf::Enum for GBGOIAJBMBE {
         GBGOIAJBMBE::GBGOIAJBMBE_FBMLGFKDPDP,
         GBGOIAJBMBE::GBGOIAJBMBE_BLCFFEHJCAK,
         GBGOIAJBMBE::GBGOIAJBMBE_EPIIPAEPNDE,
+        GBGOIAJBMBE::GBGOIAJBMBE_HJLAPCCANEO,
     ];
 }
 
@@ -92,9 +97,10 @@ impl GBGOIAJBMBE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GBGOIAJBMBE.proto*d\n\x0bGBGOIAJBMBE\x12\x1b\n\x17GBGOIAJBMBE_FBML\
-    GFKDPDP\x10\0\x12\x1b\n\x17GBGOIAJBMBE_BLCFFEHJCAK\x10\x01\x12\x1b\n\x17\
-    GBGOIAJBMBE_EPIIPAEPNDE\x10\x02b\x06proto3\
+    \n\x11GBGOIAJBMBE.proto*\x81\x01\n\x0bGBGOIAJBMBE\x12\x1b\n\x17GBGOIAJBM\
+    BE_FBMLGFKDPDP\x10\0\x12\x1b\n\x17GBGOIAJBMBE_BLCFFEHJCAK\x10\x01\x12\
+    \x1b\n\x17GBGOIAJBMBE_EPIIPAEPNDE\x10\x02\x12\x1b\n\x17GBGOIAJBMBE_HJLAP\
+    CCANEO\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

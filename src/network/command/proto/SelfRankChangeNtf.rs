@@ -79,10 +79,10 @@ impl ::protobuf::Message for SelfRankChangeNtf {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                50 => {
+                114 => {
                     self.MLPHLIHFGKG.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SelfRankChangeNtf {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            my_size += ::protobuf::rt::int32_size(5, self.GJNMHILINHC.value());
+            my_size += ::protobuf::rt::int32_size(13, self.GJNMHILINHC.value());
         }
         for value in &self.MLPHLIHFGKG {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SelfRankChangeNtf {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
         for v in &self.MLPHLIHFGKG {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SelfRankChangeNtf {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SelfRankChangeNtf.proto\x1a\x11DLCJPINDIAC.proto\x1a\x13FightGameM\
-    ode.proto\"u\n\x11SelfRankChangeNtf\x120\n\x0bGJNMHILINHC\x18\x05\x20\
-    \x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x12.\n\x0bMLPHLIHFGKG\x18\
-    \x06\x20\x03(\x0b2\x0c.DLCJPINDIACR\x0bMLPHLIHFGKGb\x06proto3\
+    ode.proto\"u\n\x11SelfRankChangeNtf\x120\n\x0bGJNMHILINHC\x18\r\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x12.\n\x0bMLPHLIHFGKG\x18\x0e\
+    \x20\x03(\x0b2\x0c.DLCJPINDIACR\x0bMLPHLIHFGKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

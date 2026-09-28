@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LKFFMLJMGOB {
     // message fields
-    // @@protoc_insertion_point(field:LKFFMLJMGOB.MNCFOGJECMF)
-    pub MNCFOGJECMF: u32,
     // @@protoc_insertion_point(field:LKFFMLJMGOB.AJAFEEAOBLC)
     pub AJAFEEAOBLC: u32,
+    // @@protoc_insertion_point(field:LKFFMLJMGOB.MNCFOGJECMF)
+    pub MNCFOGJECMF: u32,
     // @@protoc_insertion_point(field:LKFFMLJMGOB.CBPGJAFAHFC)
     pub CBPGJAFAHFC: i32,
     // special fields
@@ -54,14 +54,14 @@ impl LKFFMLJMGOB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNCFOGJECMF",
-            |m: &LKFFMLJMGOB| { &m.MNCFOGJECMF },
-            |m: &mut LKFFMLJMGOB| { &mut m.MNCFOGJECMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AJAFEEAOBLC",
             |m: &LKFFMLJMGOB| { &m.AJAFEEAOBLC },
             |m: &mut LKFFMLJMGOB| { &mut m.AJAFEEAOBLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MNCFOGJECMF",
+            |m: &LKFFMLJMGOB| { &m.MNCFOGJECMF },
+            |m: &mut LKFFMLJMGOB| { &mut m.MNCFOGJECMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBPGJAFAHFC",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LKFFMLJMGOB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MNCFOGJECMF = is.read_uint32()?;
-                },
-                16 => {
+                48 => {
                     self.AJAFEEAOBLC = is.read_uint32()?;
                 },
-                32 => {
+                80 => {
+                    self.MNCFOGJECMF = is.read_uint32()?;
+                },
+                96 => {
                     self.CBPGJAFAHFC = is.read_int32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for LKFFMLJMGOB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MNCFOGJECMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MNCFOGJECMF);
-        }
         if self.AJAFEEAOBLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AJAFEEAOBLC);
+            my_size += ::protobuf::rt::uint32_size(6, self.AJAFEEAOBLC);
+        }
+        if self.MNCFOGJECMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.MNCFOGJECMF);
         }
         if self.CBPGJAFAHFC != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.CBPGJAFAHFC);
+            my_size += ::protobuf::rt::int32_size(12, self.CBPGJAFAHFC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for LKFFMLJMGOB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MNCFOGJECMF != 0 {
-            os.write_uint32(1, self.MNCFOGJECMF)?;
-        }
         if self.AJAFEEAOBLC != 0 {
-            os.write_uint32(2, self.AJAFEEAOBLC)?;
+            os.write_uint32(6, self.AJAFEEAOBLC)?;
+        }
+        if self.MNCFOGJECMF != 0 {
+            os.write_uint32(10, self.MNCFOGJECMF)?;
         }
         if self.CBPGJAFAHFC != 0 {
-            os.write_int32(4, self.CBPGJAFAHFC)?;
+            os.write_int32(12, self.CBPGJAFAHFC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LKFFMLJMGOB {
     }
 
     fn clear(&mut self) {
-        self.MNCFOGJECMF = 0;
         self.AJAFEEAOBLC = 0;
+        self.MNCFOGJECMF = 0;
         self.CBPGJAFAHFC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LKFFMLJMGOB {
         static instance: LKFFMLJMGOB = LKFFMLJMGOB {
-            MNCFOGJECMF: 0,
             AJAFEEAOBLC: 0,
+            MNCFOGJECMF: 0,
             CBPGJAFAHFC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for LKFFMLJMGOB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LKFFMLJMGOB.proto\"s\n\x0bLKFFMLJMGOB\x12\x20\n\x0bMNCFOGJECMF\x18\
-    \x01\x20\x01(\rR\x0bMNCFOGJECMF\x12\x20\n\x0bAJAFEEAOBLC\x18\x02\x20\x01\
-    (\rR\x0bAJAFEEAOBLC\x12\x20\n\x0bCBPGJAFAHFC\x18\x04\x20\x01(\x05R\x0bCB\
-    PGJAFAHFCb\x06proto3\
+    \n\x11LKFFMLJMGOB.proto\"s\n\x0bLKFFMLJMGOB\x12\x20\n\x0bAJAFEEAOBLC\x18\
+    \x06\x20\x01(\rR\x0bAJAFEEAOBLC\x12\x20\n\x0bMNCFOGJECMF\x18\n\x20\x01(\
+    \rR\x0bMNCFOGJECMF\x12\x20\n\x0bCBPGJAFAHFC\x18\x0c\x20\x01(\x05R\x0bCBP\
+    GJAFAHFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

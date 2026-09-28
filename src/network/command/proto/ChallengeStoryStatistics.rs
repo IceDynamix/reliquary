@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeStoryStatistics {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeStoryStatistics.PPBHLLOJNEK)
-    pub PPBHLLOJNEK: ::protobuf::MessageField<super::EIKPHEMHIOH::EIKPHEMHIOH>,
     // @@protoc_insertion_point(field:ChallengeStoryStatistics.record_id)
     pub record_id: u32,
+    // @@protoc_insertion_point(field:ChallengeStoryStatistics.PPBHLLOJNEK)
+    pub PPBHLLOJNEK: ::protobuf::MessageField<super::EIKPHEMHIOH::EIKPHEMHIOH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeStoryStatistics.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChallengeStoryStatistics {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIKPHEMHIOH::EIKPHEMHIOH>(
-            "PPBHLLOJNEK",
-            |m: &ChallengeStoryStatistics| { &m.PPBHLLOJNEK },
-            |m: &mut ChallengeStoryStatistics| { &mut m.PPBHLLOJNEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "record_id",
             |m: &ChallengeStoryStatistics| { &m.record_id },
             |m: &mut ChallengeStoryStatistics| { &mut m.record_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIKPHEMHIOH::EIKPHEMHIOH>(
+            "PPBHLLOJNEK",
+            |m: &ChallengeStoryStatistics| { &m.PPBHLLOJNEK },
+            |m: &mut ChallengeStoryStatistics| { &mut m.PPBHLLOJNEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeStoryStatistics>(
             "ChallengeStoryStatistics",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPBHLLOJNEK)?;
-                },
-                104 => {
+                48 => {
                     self.record_id = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPBHLLOJNEK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.record_id);
+        }
         if let Some(v) = self.PPBHLLOJNEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.record_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PPBHLLOJNEK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.record_id != 0 {
-            os.write_uint32(13, self.record_id)?;
+            os.write_uint32(6, self.record_id)?;
+        }
+        if let Some(v) = self.PPBHLLOJNEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     }
 
     fn clear(&mut self) {
-        self.PPBHLLOJNEK.clear();
         self.record_id = 0;
+        self.PPBHLLOJNEK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeStoryStatistics {
         static instance: ChallengeStoryStatistics = ChallengeStoryStatistics {
-            PPBHLLOJNEK: ::protobuf::MessageField::none(),
             record_id: 0,
+            PPBHLLOJNEK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryStatistics {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChallengeStoryStatistics.proto\x1a\x11EIKPHEMHIOH.proto\"g\n\x18Ch\
-    allengeStoryStatistics\x12.\n\x0bPPBHLLOJNEK\x18\x07\x20\x01(\x0b2\x0c.E\
-    IKPHEMHIOHR\x0bPPBHLLOJNEK\x12\x1b\n\trecord_id\x18\r\x20\x01(\rR\x08rec\
-    ordIdb\x06proto3\
+    allengeStoryStatistics\x12\x1b\n\trecord_id\x18\x06\x20\x01(\rR\x08recor\
+    dId\x12.\n\x0bPPBHLLOJNEK\x18\t\x20\x01(\x0b2\x0c.EIKPHEMHIOHR\x0bPPBHLL\
+    OJNEKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

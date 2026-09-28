@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AiPamSendMsgScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AiPamSendMsgScRsp.BDPIMPJOJBK)
-    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // @@protoc_insertion_point(field:AiPamSendMsgScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:AiPamSendMsgScRsp.BDPIMPJOJBK)
+    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamSendMsgScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AiPamSendMsgScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BDPIMPJOJBK",
-            |m: &AiPamSendMsgScRsp| { &m.BDPIMPJOJBK },
-            |m: &mut AiPamSendMsgScRsp| { &mut m.BDPIMPJOJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AiPamSendMsgScRsp| { &m.retcode },
             |m: &mut AiPamSendMsgScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDPIMPJOJBK",
+            |m: &AiPamSendMsgScRsp| { &m.BDPIMPJOJBK },
+            |m: &mut AiPamSendMsgScRsp| { &mut m.BDPIMPJOJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamSendMsgScRsp>(
             "AiPamSendMsgScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
-                },
-                64 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(2, self.BDPIMPJOJBK.value());
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.BDPIMPJOJBK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
+        }
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     }
 
     fn clear(&mut self) {
-        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.retcode = 0;
+        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamSendMsgScRsp {
         static instance: AiPamSendMsgScRsp = AiPamSendMsgScRsp {
-            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
+            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AiPamSendMsgScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AiPamSendMsgScRsp.proto\x1a\x11FKNKNLGMACL.proto\"]\n\x11AiPamSend\
-    MsgScRsp\x12.\n\x0bBDPIMPJOJBK\x18\x02\x20\x01(\x0e2\x0c.FKNKNLGMACLR\
-    \x0bBDPIMPJOJBK\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    MsgScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bB\
+    DPIMPJOJBK\x18\r\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBKb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

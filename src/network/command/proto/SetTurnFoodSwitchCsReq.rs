@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                112 => {
                     self.FEBKMOCOJLE = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            my_size += ::protobuf::rt::int32_size(2, self.KLAJGAKAFCP.value());
+            my_size += ::protobuf::rt::int32_size(6, self.KLAJGAKAFCP.value());
         }
         if self.FEBKMOCOJLE != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
         }
         if self.FEBKMOCOJLE != false {
-            os.write_bool(8, self.FEBKMOCOJLE)?;
+            os.write_bool(14, self.FEBKMOCOJLE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
-    etTurnFoodSwitchCsReq\x121\n\x0bKLAJGAKAFCP\x18\x02\x20\x01(\x0e2\x0f.Tu\
-    rnFoodSwitchR\x0bKLAJGAKAFCP\x12\x20\n\x0bFEBKMOCOJLE\x18\x08\x20\x01(\
+    etTurnFoodSwitchCsReq\x121\n\x0bKLAJGAKAFCP\x18\x06\x20\x01(\x0e2\x0f.Tu\
+    rnFoodSwitchR\x0bKLAJGAKAFCP\x12\x20\n\x0bFEBKMOCOJLE\x18\x0e\x20\x01(\
     \x08R\x0bFEBKMOCOJLEb\x06proto3\
 ";
 

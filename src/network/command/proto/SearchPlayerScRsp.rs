@@ -30,10 +30,10 @@ pub struct SearchPlayerScRsp {
     // message fields
     // @@protoc_insertion_point(field:SearchPlayerScRsp.result_uid_list)
     pub result_uid_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SearchPlayerScRsp.simple_info_list)
-    pub simple_info_list: ::std::vec::Vec<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // @@protoc_insertion_point(field:SearchPlayerScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SearchPlayerScRsp.simple_info_list)
+    pub simple_info_list: ::std::vec::Vec<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:SearchPlayerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl SearchPlayerScRsp {
             |m: &SearchPlayerScRsp| { &m.result_uid_list },
             |m: &mut SearchPlayerScRsp| { &mut m.result_uid_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "simple_info_list",
-            |m: &SearchPlayerScRsp| { &m.simple_info_list },
-            |m: &mut SearchPlayerScRsp| { &mut m.simple_info_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SearchPlayerScRsp| { &m.retcode },
             |m: &mut SearchPlayerScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "simple_info_list",
+            |m: &SearchPlayerScRsp| { &m.simple_info_list },
+            |m: &mut SearchPlayerScRsp| { &mut m.simple_info_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SearchPlayerScRsp>(
             "SearchPlayerScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.result_uid_list)?;
                 },
-                56 => {
+                16 => {
                     self.result_uid_list.push(is.read_uint32()?);
                 },
-                74 => {
-                    self.simple_info_list.push(is.read_message()?);
-                },
-                104 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    self.simple_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for SearchPlayerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.result_uid_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.result_uid_list);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         for value in &self.simple_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.result_uid_list)?;
-        for v in &self.simple_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
+        os.write_repeated_packed_uint32(2, &self.result_uid_list)?;
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
+        for v in &self.simple_info_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SearchPlayerScRsp {
 
     fn clear(&mut self) {
         self.result_uid_list.clear();
-        self.simple_info_list.clear();
         self.retcode = 0;
+        self.simple_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SearchPlayerScRsp {
         static instance: SearchPlayerScRsp = SearchPlayerScRsp {
             result_uid_list: ::std::vec::Vec::new(),
-            simple_info_list: ::std::vec::Vec::new(),
             retcode: 0,
+            simple_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SearchPlayerScRsp.proto\x1a\x16PlayerSimpleInfo.proto\"\x92\x01\n\
-    \x11SearchPlayerScRsp\x12&\n\x0fresult_uid_list\x18\x07\x20\x03(\rR\rres\
-    ultUidList\x12;\n\x10simple_info_list\x18\t\x20\x03(\x0b2\x11.PlayerSimp\
-    leInfoR\x0esimpleInfoList\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \x11SearchPlayerScRsp\x12&\n\x0fresult_uid_list\x18\x02\x20\x03(\rR\rres\
+    ultUidList\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12;\n\
+    \x10simple_info_list\x18\x07\x20\x03(\x0b2\x11.PlayerSimpleInfoR\x0esimp\
+    leInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

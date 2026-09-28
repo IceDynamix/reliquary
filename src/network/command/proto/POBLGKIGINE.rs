@@ -32,6 +32,8 @@ pub struct POBLGKIGINE {
     pub PLIDNBMCIJH: u32,
     // @@protoc_insertion_point(field:POBLGKIGINE.player_info)
     pub player_info: ::std::vec::Vec<super::JBJNJPAOCDA::JBJNJPAOCDA>,
+    // @@protoc_insertion_point(field:POBLGKIGINE.DLKOEIANIMK)
+    pub DLKOEIANIMK: u32,
     // message oneof groups
     pub CBCJBNGJPDJ: ::std::option::Option<poblgkigine::CBCJBNGJPDJ>,
     // special fields
@@ -50,7 +52,7 @@ impl POBLGKIGINE {
         ::std::default::Default::default()
     }
 
-    // .PBMDEBCGNMD LNMGOFCOMED = 1092;
+    // .PBMDEBCGNMD LNMGOFCOMED = 100;
 
     pub fn LNMGOFCOMED(&self) -> &super::PBMDEBCGNMD::PBMDEBCGNMD {
         match self.CBCJBNGJPDJ {
@@ -99,8 +101,57 @@ impl POBLGKIGINE {
         }
     }
 
+    // .LLKIFBFCMLK MAGDHGMLLKG = 101;
+
+    pub fn MAGDHGMLLKG(&self) -> &super::LLKIFBFCMLK::LLKIFBFCMLK {
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(ref v)) => v,
+            _ => <super::LLKIFBFCMLK::LLKIFBFCMLK as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MAGDHGMLLKG(&mut self) {
+        self.CBCJBNGJPDJ = ::std::option::Option::None;
+    }
+
+    pub fn has_MAGDHGMLLKG(&self) -> bool {
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MAGDHGMLLKG(&mut self, v: super::LLKIFBFCMLK::LLKIFBFCMLK) {
+        self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MAGDHGMLLKG(&mut self) -> &mut super::LLKIFBFCMLK::LLKIFBFCMLK {
+        if let ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(_)) = self.CBCJBNGJPDJ {
+        } else {
+            self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(super::LLKIFBFCMLK::LLKIFBFCMLK::new()));
+        }
+        match self.CBCJBNGJPDJ {
+            ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MAGDHGMLLKG(&mut self) -> super::LLKIFBFCMLK::LLKIFBFCMLK {
+        if self.has_MAGDHGMLLKG() {
+            match self.CBCJBNGJPDJ.take() {
+                ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LLKIFBFCMLK::LLKIFBFCMLK::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLIDNBMCIJH",
@@ -112,12 +163,24 @@ impl POBLGKIGINE {
             |m: &POBLGKIGINE| { &m.player_info },
             |m: &mut POBLGKIGINE| { &mut m.player_info },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLKOEIANIMK",
+            |m: &POBLGKIGINE| { &m.DLKOEIANIMK },
+            |m: &mut POBLGKIGINE| { &mut m.DLKOEIANIMK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PBMDEBCGNMD::PBMDEBCGNMD>(
             "LNMGOFCOMED",
             POBLGKIGINE::has_LNMGOFCOMED,
             POBLGKIGINE::LNMGOFCOMED,
             POBLGKIGINE::mut_LNMGOFCOMED,
             POBLGKIGINE::set_LNMGOFCOMED,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LLKIFBFCMLK::LLKIFBFCMLK>(
+            "MAGDHGMLLKG",
+            POBLGKIGINE::has_MAGDHGMLLKG,
+            POBLGKIGINE::MAGDHGMLLKG,
+            POBLGKIGINE::mut_MAGDHGMLLKG,
+            POBLGKIGINE::set_MAGDHGMLLKG,
         ));
         oneofs.push(poblgkigine::CBCJBNGJPDJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<POBLGKIGINE>(
@@ -138,14 +201,20 @@ impl ::protobuf::Message for POBLGKIGINE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                90 => {
+                18 => {
                     self.player_info.push(is.read_message()?);
                 },
-                8738 => {
+                24 => {
+                    self.DLKOEIANIMK = is.read_uint32()?;
+                },
+                802 => {
                     self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(is.read_message()?));
+                },
+                810 => {
+                    self.CBCJBNGJPDJ = ::std::option::Option::Some(poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -160,15 +229,22 @@ impl ::protobuf::Message for POBLGKIGINE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PLIDNBMCIJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PLIDNBMCIJH);
+            my_size += ::protobuf::rt::uint32_size(1, self.PLIDNBMCIJH);
         }
         for value in &self.player_info {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.DLKOEIANIMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DLKOEIANIMK);
+        }
         if let ::std::option::Option::Some(ref v) = self.CBCJBNGJPDJ {
             match v {
                 &poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -181,15 +257,21 @@ impl ::protobuf::Message for POBLGKIGINE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PLIDNBMCIJH != 0 {
-            os.write_uint32(3, self.PLIDNBMCIJH)?;
+            os.write_uint32(1, self.PLIDNBMCIJH)?;
         }
         for v in &self.player_info {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.DLKOEIANIMK != 0 {
+            os.write_uint32(3, self.DLKOEIANIMK)?;
+        }
         if let ::std::option::Option::Some(ref v) = self.CBCJBNGJPDJ {
             match v {
                 &poblgkigine::CBCJBNGJPDJ::LNMGOFCOMED(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1092, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(100, v, os)?;
+                },
+                &poblgkigine::CBCJBNGJPDJ::MAGDHGMLLKG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
             };
         }
@@ -212,6 +294,8 @@ impl ::protobuf::Message for POBLGKIGINE {
     fn clear(&mut self) {
         self.PLIDNBMCIJH = 0;
         self.player_info.clear();
+        self.DLKOEIANIMK = 0;
+        self.CBCJBNGJPDJ = ::std::option::Option::None;
         self.CBCJBNGJPDJ = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -220,6 +304,7 @@ impl ::protobuf::Message for POBLGKIGINE {
         static instance: POBLGKIGINE = POBLGKIGINE {
             PLIDNBMCIJH: 0,
             player_info: ::std::vec::Vec::new(),
+            DLKOEIANIMK: 0,
             CBCJBNGJPDJ: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -253,6 +338,8 @@ pub mod poblgkigine {
     pub enum CBCJBNGJPDJ {
         // @@protoc_insertion_point(oneof_field:POBLGKIGINE.LNMGOFCOMED)
         LNMGOFCOMED(super::super::PBMDEBCGNMD::PBMDEBCGNMD),
+        // @@protoc_insertion_point(oneof_field:POBLGKIGINE.MAGDHGMLLKG)
+        MAGDHGMLLKG(super::super::LLKIFBFCMLK::LLKIFBFCMLK),
     }
 
     impl ::protobuf::Oneof for CBCJBNGJPDJ {
@@ -273,11 +360,13 @@ pub mod poblgkigine {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11POBLGKIGINE.proto\x1a\x11JBJNJPAOCDA.proto\x1a\x11PBMDEBCGNMD.prot\
-    o\"\xa0\x01\n\x0bPOBLGKIGINE\x12\x20\n\x0bPLIDNBMCIJH\x18\x03\x20\x01(\r\
-    R\x0bPLIDNBMCIJH\x12-\n\x0bplayer_info\x18\x0b\x20\x03(\x0b2\x0c.JBJNJPA\
-    OCDAR\nplayerInfo\x121\n\x0bLNMGOFCOMED\x18\xc4\x08\x20\x01(\x0b2\x0c.PB\
-    MDEBCGNMDH\0R\x0bLNMGOFCOMEDB\r\n\x0bCBCJBNGJPDJb\x06proto3\
+    \n\x11POBLGKIGINE.proto\x1a\x11JBJNJPAOCDA.proto\x1a\x11LLKIFBFCMLK.prot\
+    o\x1a\x11PBMDEBCGNMD.proto\"\xf3\x01\n\x0bPOBLGKIGINE\x12\x20\n\x0bPLIDN\
+    BMCIJH\x18\x01\x20\x01(\rR\x0bPLIDNBMCIJH\x12-\n\x0bplayer_info\x18\x02\
+    \x20\x03(\x0b2\x0c.JBJNJPAOCDAR\nplayerInfo\x12\x20\n\x0bDLKOEIANIMK\x18\
+    \x03\x20\x01(\rR\x0bDLKOEIANIMK\x120\n\x0bLNMGOFCOMED\x18d\x20\x01(\x0b2\
+    \x0c.PBMDEBCGNMDH\0R\x0bLNMGOFCOMED\x120\n\x0bMAGDHGMLLKG\x18e\x20\x01(\
+    \x0b2\x0c.LLKIFBFCMLKH\0R\x0bMAGDHGMLLKGB\r\n\x0bCBCJBNGJPDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -294,8 +383,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::JBJNJPAOCDA::file_descriptor().clone());
+            deps.push(super::LLKIFBFCMLK::file_descriptor().clone());
             deps.push(super::PBMDEBCGNMD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(POBLGKIGINE::generated_message_descriptor_data());

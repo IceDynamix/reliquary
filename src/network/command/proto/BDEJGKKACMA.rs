@@ -29,8 +29,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum BDEJGKKACMA {
     // @@protoc_insertion_point(enum_value:BDEJGKKACMA.BDEJGKKACMA_NLCDGIPGFDJ)
     BDEJGKKACMA_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:BDEJGKKACMA.BDEJGKKACMA_hp)
-    BDEJGKKACMA_hp = 1,
+    // @@protoc_insertion_point(enum_value:BDEJGKKACMA.BDEJGKKACMA_AMMPNOLLCIN)
+    BDEJGKKACMA_AMMPNOLLCIN = 1,
     // @@protoc_insertion_point(enum_value:BDEJGKKACMA.BDEJGKKACMA_COJOIFPPCIJ)
     BDEJGKKACMA_COJOIFPPCIJ = 2,
 }
@@ -45,7 +45,7 @@ impl ::protobuf::Enum for BDEJGKKACMA {
     fn from_i32(value: i32) -> ::std::option::Option<BDEJGKKACMA> {
         match value {
             0 => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_hp),
+            1 => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_AMMPNOLLCIN),
             2 => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_COJOIFPPCIJ),
             _ => ::std::option::Option::None
         }
@@ -54,7 +54,7 @@ impl ::protobuf::Enum for BDEJGKKACMA {
     fn from_str(str: &str) -> ::std::option::Option<BDEJGKKACMA> {
         match str {
             "BDEJGKKACMA_NLCDGIPGFDJ" => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ),
-            "BDEJGKKACMA_hp" => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_hp),
+            "BDEJGKKACMA_AMMPNOLLCIN" => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_AMMPNOLLCIN),
             "BDEJGKKACMA_COJOIFPPCIJ" => ::std::option::Option::Some(BDEJGKKACMA::BDEJGKKACMA_COJOIFPPCIJ),
             _ => ::std::option::Option::None
         }
@@ -62,7 +62,7 @@ impl ::protobuf::Enum for BDEJGKKACMA {
 
     const VALUES: &'static [BDEJGKKACMA] = &[
         BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ,
-        BDEJGKKACMA::BDEJGKKACMA_hp,
+        BDEJGKKACMA::BDEJGKKACMA_AMMPNOLLCIN,
         BDEJGKKACMA::BDEJGKKACMA_COJOIFPPCIJ,
     ];
 }
@@ -92,9 +92,9 @@ impl BDEJGKKACMA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BDEJGKKACMA.proto*[\n\x0bBDEJGKKACMA\x12\x1b\n\x17BDEJGKKACMA_NLCD\
-    GIPGFDJ\x10\0\x12\x12\n\x0eBDEJGKKACMA_hp\x10\x01\x12\x1b\n\x17BDEJGKKAC\
-    MA_COJOIFPPCIJ\x10\x02b\x06proto3\
+    \n\x11BDEJGKKACMA.proto*d\n\x0bBDEJGKKACMA\x12\x1b\n\x17BDEJGKKACMA_NLCD\
+    GIPGFDJ\x10\0\x12\x1b\n\x17BDEJGKKACMA_AMMPNOLLCIN\x10\x01\x12\x1b\n\x17\
+    BDEJGKKACMA_COJOIFPPCIJ\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

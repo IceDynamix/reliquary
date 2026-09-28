@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIPBHLBFDAH {
     // message fields
-    // @@protoc_insertion_point(field:GIPBHLBFDAH.DMNEACGEHEC)
-    pub DMNEACGEHEC: bool,
-    // @@protoc_insertion_point(field:GIPBHLBFDAH.DCAHJELNJNP)
-    pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:GIPBHLBFDAH.NGBJMEHDKHN)
     pub NGBJMEHDKHN: u32,
-    // @@protoc_insertion_point(field:GIPBHLBFDAH.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:GIPBHLBFDAH.HGPKMHFPMBJ)
-    pub HGPKMHFPMBJ: bool,
     // @@protoc_insertion_point(field:GIPBHLBFDAH.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:GIPBHLBFDAH.DCAHJELNJNP)
+    pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:GIPBHLBFDAH.script_id)
     pub script_id: u32,
+    // @@protoc_insertion_point(field:GIPBHLBFDAH.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:GIPBHLBFDAH.DMNEACGEHEC)
+    pub DMNEACGEHEC: bool,
+    // @@protoc_insertion_point(field:GIPBHLBFDAH.HGPKMHFPMBJ)
+    pub HGPKMHFPMBJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GIPBHLBFDAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,29 +62,9 @@ impl GIPBHLBFDAH {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DMNEACGEHEC",
-            |m: &GIPBHLBFDAH| { &m.DMNEACGEHEC },
-            |m: &mut GIPBHLBFDAH| { &mut m.DMNEACGEHEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCAHJELNJNP",
-            |m: &GIPBHLBFDAH| { &m.DCAHJELNJNP },
-            |m: &mut GIPBHLBFDAH| { &mut m.DCAHJELNJNP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NGBJMEHDKHN",
             |m: &GIPBHLBFDAH| { &m.NGBJMEHDKHN },
             |m: &mut GIPBHLBFDAH| { &mut m.NGBJMEHDKHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &GIPBHLBFDAH| { &m.reward },
-            |m: &mut GIPBHLBFDAH| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HGPKMHFPMBJ",
-            |m: &GIPBHLBFDAH| { &m.HGPKMHFPMBJ },
-            |m: &mut GIPBHLBFDAH| { &mut m.HGPKMHFPMBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -92,9 +72,29 @@ impl GIPBHLBFDAH {
             |m: &mut GIPBHLBFDAH| { &mut m.progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DCAHJELNJNP",
+            |m: &GIPBHLBFDAH| { &m.DCAHJELNJNP },
+            |m: &mut GIPBHLBFDAH| { &mut m.DCAHJELNJNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "script_id",
             |m: &GIPBHLBFDAH| { &m.script_id },
             |m: &mut GIPBHLBFDAH| { &mut m.script_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &GIPBHLBFDAH| { &m.reward },
+            |m: &mut GIPBHLBFDAH| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DMNEACGEHEC",
+            |m: &GIPBHLBFDAH| { &m.DMNEACGEHEC },
+            |m: &mut GIPBHLBFDAH| { &mut m.DMNEACGEHEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HGPKMHFPMBJ",
+            |m: &GIPBHLBFDAH| { &m.HGPKMHFPMBJ },
+            |m: &mut GIPBHLBFDAH| { &mut m.HGPKMHFPMBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIPBHLBFDAH>(
             "GIPBHLBFDAH",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for GIPBHLBFDAH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.DMNEACGEHEC = is.read_bool()?;
-                },
-                32 => {
-                    self.DCAHJELNJNP = is.read_uint32()?;
-                },
-                40 => {
                     self.NGBJMEHDKHN = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                80 => {
-                    self.HGPKMHFPMBJ = is.read_bool()?;
-                },
-                88 => {
+                32 => {
                     self.progress = is.read_uint32()?;
                 },
-                104 => {
+                56 => {
+                    self.DCAHJELNJNP = is.read_uint32()?;
+                },
+                72 => {
                     self.script_id = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                96 => {
+                    self.DMNEACGEHEC = is.read_bool()?;
+                },
+                112 => {
+                    self.HGPKMHFPMBJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for GIPBHLBFDAH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DMNEACGEHEC != false {
-            my_size += 1 + 1;
+        if self.NGBJMEHDKHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.NGBJMEHDKHN);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
         if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DCAHJELNJNP);
+            my_size += ::protobuf::rt::uint32_size(7, self.DCAHJELNJNP);
         }
-        if self.NGBJMEHDKHN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NGBJMEHDKHN);
+        if self.script_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.script_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HGPKMHFPMBJ != false {
+        if self.DMNEACGEHEC != false {
             my_size += 1 + 1;
         }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
-        }
-        if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.script_id);
+        if self.HGPKMHFPMBJ != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for GIPBHLBFDAH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DMNEACGEHEC != false {
-            os.write_bool(3, self.DMNEACGEHEC)?;
-        }
-        if self.DCAHJELNJNP != 0 {
-            os.write_uint32(4, self.DCAHJELNJNP)?;
-        }
         if self.NGBJMEHDKHN != 0 {
-            os.write_uint32(5, self.NGBJMEHDKHN)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.HGPKMHFPMBJ != false {
-            os.write_bool(10, self.HGPKMHFPMBJ)?;
+            os.write_uint32(3, self.NGBJMEHDKHN)?;
         }
         if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+            os.write_uint32(4, self.progress)?;
+        }
+        if self.DCAHJELNJNP != 0 {
+            os.write_uint32(7, self.DCAHJELNJNP)?;
         }
         if self.script_id != 0 {
-            os.write_uint32(13, self.script_id)?;
+            os.write_uint32(9, self.script_id)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.DMNEACGEHEC != false {
+            os.write_bool(12, self.DMNEACGEHEC)?;
+        }
+        if self.HGPKMHFPMBJ != false {
+            os.write_bool(14, self.HGPKMHFPMBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for GIPBHLBFDAH {
     }
 
     fn clear(&mut self) {
-        self.DMNEACGEHEC = false;
-        self.DCAHJELNJNP = 0;
         self.NGBJMEHDKHN = 0;
-        self.reward.clear();
-        self.HGPKMHFPMBJ = false;
         self.progress = 0;
+        self.DCAHJELNJNP = 0;
         self.script_id = 0;
+        self.reward.clear();
+        self.DMNEACGEHEC = false;
+        self.HGPKMHFPMBJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIPBHLBFDAH {
         static instance: GIPBHLBFDAH = GIPBHLBFDAH {
-            DMNEACGEHEC: false,
-            DCAHJELNJNP: 0,
             NGBJMEHDKHN: 0,
-            reward: ::protobuf::MessageField::none(),
-            HGPKMHFPMBJ: false,
             progress: 0,
+            DCAHJELNJNP: 0,
             script_id: 0,
+            reward: ::protobuf::MessageField::none(),
+            DMNEACGEHEC: false,
+            HGPKMHFPMBJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,12 +257,12 @@ impl ::protobuf::reflect::ProtobufValue for GIPBHLBFDAH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GIPBHLBFDAH.proto\x1a\x0eItemList.proto\"\xf1\x01\n\x0bGIPBHLBFDAH\
-    \x12\x20\n\x0bDMNEACGEHEC\x18\x03\x20\x01(\x08R\x0bDMNEACGEHEC\x12\x20\n\
-    \x0bDCAHJELNJNP\x18\x04\x20\x01(\rR\x0bDCAHJELNJNP\x12\x20\n\x0bNGBJMEHD\
-    KHN\x18\x05\x20\x01(\rR\x0bNGBJMEHDKHN\x12!\n\x06reward\x18\x06\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x12\x20\n\x0bHGPKMHFPMBJ\x18\n\x20\x01(\x08R\
-    \x0bHGPKMHFPMBJ\x12\x1a\n\x08progress\x18\x0b\x20\x01(\rR\x08progress\
-    \x12\x1b\n\tscript_id\x18\r\x20\x01(\rR\x08scriptIdb\x06proto3\
+    \x12\x20\n\x0bNGBJMEHDKHN\x18\x03\x20\x01(\rR\x0bNGBJMEHDKHN\x12\x1a\n\
+    \x08progress\x18\x04\x20\x01(\rR\x08progress\x12\x20\n\x0bDCAHJELNJNP\
+    \x18\x07\x20\x01(\rR\x0bDCAHJELNJNP\x12\x1b\n\tscript_id\x18\t\x20\x01(\
+    \rR\x08scriptId\x12!\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\x06re\
+    ward\x12\x20\n\x0bDMNEACGEHEC\x18\x0c\x20\x01(\x08R\x0bDMNEACGEHEC\x12\
+    \x20\n\x0bHGPKMHFPMBJ\x18\x0e\x20\x01(\x08R\x0bHGPKMHFPMBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

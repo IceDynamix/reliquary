@@ -28,12 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPetDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetPetDataScRsp.MPJNPINHCJL)
+    pub MPJNPINHCJL: ::std::vec::Vec<super::JGDOHOFOFOF::JGDOHOFOFOF>,
     // @@protoc_insertion_point(field:GetPetDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPetDataScRsp.cur_pet_id)
-    pub cur_pet_id: u32,
-    // @@protoc_insertion_point(field:GetPetDataScRsp.unlocked_pet_id)
-    pub unlocked_pet_id: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPetDataScRsp.HCAKDJMKDJP)
+    pub HCAKDJMKDJP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPetDataScRsp.PLKBLNMOOPH)
+    pub PLKBLNMOOPH: ::protobuf::MessageField<super::EHDNPMEKPCA::EHDNPMEKPCA>,
+    // @@protoc_insertion_point(field:GetPetDataScRsp.LCFKGCJCHBO)
+    pub LCFKGCJCHBO: ::protobuf::MessageField<super::CMBGLKEMOGF::CMBGLKEMOGF>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +55,32 @@ impl GetPetDataScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MPJNPINHCJL",
+            |m: &GetPetDataScRsp| { &m.MPJNPINHCJL },
+            |m: &mut GetPetDataScRsp| { &mut m.MPJNPINHCJL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetPetDataScRsp| { &m.retcode },
             |m: &mut GetPetDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_pet_id",
-            |m: &GetPetDataScRsp| { &m.cur_pet_id },
-            |m: &mut GetPetDataScRsp| { &mut m.cur_pet_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "unlocked_pet_id",
-            |m: &GetPetDataScRsp| { &m.unlocked_pet_id },
-            |m: &mut GetPetDataScRsp| { &mut m.unlocked_pet_id },
+            "HCAKDJMKDJP",
+            |m: &GetPetDataScRsp| { &m.HCAKDJMKDJP },
+            |m: &mut GetPetDataScRsp| { &mut m.HCAKDJMKDJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHDNPMEKPCA::EHDNPMEKPCA>(
+            "PLKBLNMOOPH",
+            |m: &GetPetDataScRsp| { &m.PLKBLNMOOPH },
+            |m: &mut GetPetDataScRsp| { &mut m.PLKBLNMOOPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CMBGLKEMOGF::CMBGLKEMOGF>(
+            "LCFKGCJCHBO",
+            |m: &GetPetDataScRsp| { &m.LCFKGCJCHBO },
+            |m: &mut GetPetDataScRsp| { &mut m.LCFKGCJCHBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPetDataScRsp>(
             "GetPetDataScRsp",
@@ -86,17 +100,23 @@ impl ::protobuf::Message for GetPetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                26 => {
+                    self.MPJNPINHCJL.push(is.read_message()?);
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
-                    self.cur_pet_id = is.read_uint32()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HCAKDJMKDJP)?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unlocked_pet_id)?;
+                80 => {
+                    self.HCAKDJMKDJP.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.unlocked_pet_id.push(is.read_uint32()?);
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLKBLNMOOPH)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LCFKGCJCHBO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +130,41 @@ impl ::protobuf::Message for GetPetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.MPJNPINHCJL {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.cur_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.cur_pet_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HCAKDJMKDJP);
+        if let Some(v) = self.PLKBLNMOOPH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.unlocked_pet_id);
+        if let Some(v) = self.LCFKGCJCHBO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.MPJNPINHCJL {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.cur_pet_id != 0 {
-            os.write_uint32(13, self.cur_pet_id)?;
+        os.write_repeated_packed_uint32(10, &self.HCAKDJMKDJP)?;
+        if let Some(v) = self.PLKBLNMOOPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.unlocked_pet_id)?;
+        if let Some(v) = self.LCFKGCJCHBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +182,21 @@ impl ::protobuf::Message for GetPetDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.MPJNPINHCJL.clear();
         self.retcode = 0;
-        self.cur_pet_id = 0;
-        self.unlocked_pet_id.clear();
+        self.HCAKDJMKDJP.clear();
+        self.PLKBLNMOOPH.clear();
+        self.LCFKGCJCHBO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPetDataScRsp {
         static instance: GetPetDataScRsp = GetPetDataScRsp {
+            MPJNPINHCJL: ::std::vec::Vec::new(),
             retcode: 0,
-            cur_pet_id: 0,
-            unlocked_pet_id: ::std::vec::Vec::new(),
+            HCAKDJMKDJP: ::std::vec::Vec::new(),
+            PLKBLNMOOPH: ::protobuf::MessageField::none(),
+            LCFKGCJCHBO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for GetPetDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15GetPetDataScRsp.proto\"q\n\x0fGetPetDataScRsp\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12\x1c\n\ncur_pet_id\x18\r\x20\x01(\rR\
-    \x08curPetId\x12&\n\x0funlocked_pet_id\x18\x0e\x20\x03(\rR\runlockedPetI\
-    db\x06proto3\
+    \n\x15GetPetDataScRsp.proto\x1a\x11CMBGLKEMOGF.proto\x1a\x11EHDNPMEKPCA.\
+    proto\x1a\x11JGDOHOFOFOF.proto\"\xdd\x01\n\x0fGetPetDataScRsp\x12.\n\x0b\
+    MPJNPINHCJL\x18\x03\x20\x03(\x0b2\x0c.JGDOHOFOFOFR\x0bMPJNPINHCJL\x12\
+    \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bHCAKDJMKDJP\
+    \x18\n\x20\x03(\rR\x0bHCAKDJMKDJP\x12.\n\x0bPLKBLNMOOPH\x18\x0b\x20\x01(\
+    \x0b2\x0c.EHDNPMEKPCAR\x0bPLKBLNMOOPH\x12.\n\x0bLCFKGCJCHBO\x18\x0c\x20\
+    \x01(\x0b2\x0c.CMBGLKEMOGFR\x0bLCFKGCJCHBOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -202,7 +244,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::CMBGLKEMOGF::file_descriptor().clone());
+            deps.push(super::EHDNPMEKPCA::file_descriptor().clone());
+            deps.push(super::JGDOHOFOFOF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPetDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

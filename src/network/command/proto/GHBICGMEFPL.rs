@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GHBICGMEFPL {
     // message fields
-    // @@protoc_insertion_point(field:GHBICGMEFPL.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
-    // @@protoc_insertion_point(field:GHBICGMEFPL.EKKHLMEKJMK)
-    pub EKKHLMEKJMK: u32,
     // @@protoc_insertion_point(field:GHBICGMEFPL.promotion)
     pub promotion: u32,
+    // @@protoc_insertion_point(field:GHBICGMEFPL.EKKHLMEKJMK)
+    pub EKKHLMEKJMK: u32,
+    // @@protoc_insertion_point(field:GHBICGMEFPL.sp_bar)
+    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // @@protoc_insertion_point(field:GHBICGMEFPL.APGDJGPGGMO)
     pub APGDJGPGGMO: u32,
-    // @@protoc_insertion_point(field:GHBICGMEFPL.LICLEEICAOE)
-    pub LICLEEICAOE: ::std::vec::Vec<super::POPJNEHGMIH::POPJNEHGMIH>,
     // @@protoc_insertion_point(field:GHBICGMEFPL.exp)
     pub exp: u32,
+    // @@protoc_insertion_point(field:GHBICGMEFPL.LICLEEICAOE)
+    pub LICLEEICAOE: ::std::vec::Vec<super::POPJNEHGMIH::POPJNEHGMIH>,
     // special fields
     // @@protoc_insertion_point(special_field:GHBICGMEFPL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl GHBICGMEFPL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &GHBICGMEFPL| { &m.sp_bar },
-            |m: &mut GHBICGMEFPL| { &mut m.sp_bar },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKKHLMEKJMK",
-            |m: &GHBICGMEFPL| { &m.EKKHLMEKJMK },
-            |m: &mut GHBICGMEFPL| { &mut m.EKKHLMEKJMK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
             |m: &GHBICGMEFPL| { &m.promotion },
             |m: &mut GHBICGMEFPL| { &mut m.promotion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EKKHLMEKJMK",
+            |m: &GHBICGMEFPL| { &m.EKKHLMEKJMK },
+            |m: &mut GHBICGMEFPL| { &mut m.EKKHLMEKJMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
+            "sp_bar",
+            |m: &GHBICGMEFPL| { &m.sp_bar },
+            |m: &mut GHBICGMEFPL| { &mut m.sp_bar },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "APGDJGPGGMO",
             |m: &GHBICGMEFPL| { &m.APGDJGPGGMO },
             |m: &mut GHBICGMEFPL| { &mut m.APGDJGPGGMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LICLEEICAOE",
-            |m: &GHBICGMEFPL| { &m.LICLEEICAOE },
-            |m: &mut GHBICGMEFPL| { &mut m.LICLEEICAOE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
             |m: &GHBICGMEFPL| { &m.exp },
             |m: &mut GHBICGMEFPL| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LICLEEICAOE",
+            |m: &GHBICGMEFPL| { &m.LICLEEICAOE },
+            |m: &mut GHBICGMEFPL| { &mut m.LICLEEICAOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GHBICGMEFPL>(
             "GHBICGMEFPL",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GHBICGMEFPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
-                },
-                40 => {
-                    self.EKKHLMEKJMK = is.read_uint32()?;
-                },
-                48 => {
+                24 => {
                     self.promotion = is.read_uint32()?;
                 },
-                64 => {
+                32 => {
+                    self.EKKHLMEKJMK = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
+                },
+                80 => {
                     self.APGDJGPGGMO = is.read_uint32()?;
                 },
-                98 => {
-                    self.LICLEEICAOE.push(is.read_message()?);
-                },
-                120 => {
+                88 => {
                     self.exp = is.read_uint32()?;
+                },
+                106 => {
+                    self.LICLEEICAOE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,50 +137,50 @@ impl ::protobuf::Message for GHBICGMEFPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.promotion);
+        }
+        if self.EKKHLMEKJMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.EKKHLMEKJMK);
+        }
         if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.EKKHLMEKJMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EKKHLMEKJMK);
-        }
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.promotion);
-        }
         if self.APGDJGPGGMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.APGDJGPGGMO);
+            my_size += ::protobuf::rt::uint32_size(10, self.APGDJGPGGMO);
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.exp);
         }
         for value in &self.LICLEEICAOE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.promotion != 0 {
+            os.write_uint32(3, self.promotion)?;
         }
         if self.EKKHLMEKJMK != 0 {
-            os.write_uint32(5, self.EKKHLMEKJMK)?;
+            os.write_uint32(4, self.EKKHLMEKJMK)?;
         }
-        if self.promotion != 0 {
-            os.write_uint32(6, self.promotion)?;
+        if let Some(v) = self.sp_bar.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.APGDJGPGGMO != 0 {
-            os.write_uint32(8, self.APGDJGPGGMO)?;
+            os.write_uint32(10, self.APGDJGPGGMO)?;
+        }
+        if self.exp != 0 {
+            os.write_uint32(11, self.exp)?;
         }
         for v in &self.LICLEEICAOE {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for GHBICGMEFPL {
     }
 
     fn clear(&mut self) {
-        self.sp_bar.clear();
-        self.EKKHLMEKJMK = 0;
         self.promotion = 0;
+        self.EKKHLMEKJMK = 0;
+        self.sp_bar.clear();
         self.APGDJGPGGMO = 0;
-        self.LICLEEICAOE.clear();
         self.exp = 0;
+        self.LICLEEICAOE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GHBICGMEFPL {
         static instance: GHBICGMEFPL = GHBICGMEFPL {
-            sp_bar: ::protobuf::MessageField::none(),
-            EKKHLMEKJMK: 0,
             promotion: 0,
+            EKKHLMEKJMK: 0,
+            sp_bar: ::protobuf::MessageField::none(),
             APGDJGPGGMO: 0,
-            LICLEEICAOE: ::std::vec::Vec::new(),
             exp: 0,
+            LICLEEICAOE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for GHBICGMEFPL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GHBICGMEFPL.proto\x1a\x11POPJNEHGMIH.proto\x1a\x0fSpBarInfo.proto\
-    \"\xd4\x01\n\x0bGHBICGMEFPL\x12!\n\x06sp_bar\x18\x04\x20\x01(\x0b2\n.SpB\
-    arInfoR\x05spBar\x12\x20\n\x0bEKKHLMEKJMK\x18\x05\x20\x01(\rR\x0bEKKHLME\
-    KJMK\x12\x1c\n\tpromotion\x18\x06\x20\x01(\rR\tpromotion\x12\x20\n\x0bAP\
-    GDJGPGGMO\x18\x08\x20\x01(\rR\x0bAPGDJGPGGMO\x12.\n\x0bLICLEEICAOE\x18\
-    \x0c\x20\x03(\x0b2\x0c.POPJNEHGMIHR\x0bLICLEEICAOE\x12\x10\n\x03exp\x18\
-    \x0f\x20\x01(\rR\x03expb\x06proto3\
+    \"\xd4\x01\n\x0bGHBICGMEFPL\x12\x1c\n\tpromotion\x18\x03\x20\x01(\rR\tpr\
+    omotion\x12\x20\n\x0bEKKHLMEKJMK\x18\x04\x20\x01(\rR\x0bEKKHLMEKJMK\x12!\
+    \n\x06sp_bar\x18\x06\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\x0bAP\
+    GDJGPGGMO\x18\n\x20\x01(\rR\x0bAPGDJGPGGMO\x12\x10\n\x03exp\x18\x0b\x20\
+    \x01(\rR\x03exp\x12.\n\x0bLICLEEICAOE\x18\r\x20\x03(\x0b2\x0c.POPJNEHGMI\
+    HR\x0bLICLEEICAOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

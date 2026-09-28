@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct HKGJBAGOHFH {
     // message fields
     // @@protoc_insertion_point(field:HKGJBAGOHFH.LKHLOHPHAOD)
-    pub LKHLOHPHAOD: ::std::vec::Vec<super::KVP::KVP>,
+    pub LKHLOHPHAOD: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:HKGJBAGOHFH.LEJEECMJIPD)
-    pub LEJEECMJIPD: ::std::vec::Vec<super::KVP::KVP>,
+    pub LEJEECMJIPD: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // special fields
     // @@protoc_insertion_point(special_field:HKGJBAGOHFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for HKGJBAGOHFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     self.LKHLOHPHAOD.push(is.read_message()?);
                 },
-                50 => {
+                106 => {
                     self.LEJEECMJIPD.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for HKGJBAGOHFH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LKHLOHPHAOD {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         for v in &self.LEJEECMJIPD {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for HKGJBAGOHFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HKGJBAGOHFH.proto\x1a\tKVP.proto\"]\n\x0bHKGJBAGOHFH\x12&\n\x0bLKH\
-    LOHPHAOD\x18\x04\x20\x03(\x0b2\x04.KVPR\x0bLKHLOHPHAOD\x12&\n\x0bLEJEECM\
-    JIPD\x18\x06\x20\x03(\x0b2\x04.KVPR\x0bLEJEECMJIPDb\x06proto3\
+    \n\x11HKGJBAGOHFH.proto\x1a\x11APAMFCKFHLL.proto\"m\n\x0bHKGJBAGOHFH\x12\
+    .\n\x0bLKHLOHPHAOD\x18\x06\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bLKHLOHPHAOD\
+    \x12.\n\x0bLEJEECMJIPD\x18\r\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bLEJEECMJI\
+    PDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KVP::file_descriptor().clone());
+            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HKGJBAGOHFH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

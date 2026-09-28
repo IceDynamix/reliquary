@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ModifyRelicFilterPlanScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.NPHAJEKCBKF)
-    pub NPHAJEKCBKF: u32,
     // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.BNCALAMGIOC)
     pub BNCALAMGIOC: i64,
+    // @@protoc_insertion_point(field:ModifyRelicFilterPlanScRsp.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
     // message oneof groups
     pub KKNBOACNCON: ::std::option::Option<modify_relic_filter_plan_sc_rsp::KKNBOACNCON>,
     // special fields
@@ -52,7 +52,7 @@ impl ModifyRelicFilterPlanScRsp {
         ::std::default::Default::default()
     }
 
-    // string name = 11;
+    // string name = 2;
 
     pub fn name(&self) -> &str {
         match self.KKNBOACNCON {
@@ -101,7 +101,7 @@ impl ModifyRelicFilterPlanScRsp {
         }
     }
 
-    // .KJDLIPEIAAK MJPKBIGCFOM = 5;
+    // .KJDLIPEIAAK MJPKBIGCFOM = 10;
 
     pub fn MJPKBIGCFOM(&self) -> &super::KJDLIPEIAAK::KJDLIPEIAAK {
         match self.KKNBOACNCON {
@@ -150,7 +150,7 @@ impl ModifyRelicFilterPlanScRsp {
         }
     }
 
-    // .BNAILMNNGIF LJKNDCIOOCG = 1;
+    // .BNAILMNNGIF LJKNDCIOOCG = 12;
 
     pub fn LJKNDCIOOCG(&self) -> &super::BNAILMNNGIF::BNAILMNNGIF {
         match self.KKNBOACNCON {
@@ -203,11 +203,6 @@ impl ModifyRelicFilterPlanScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPHAJEKCBKF",
-            |m: &ModifyRelicFilterPlanScRsp| { &m.NPHAJEKCBKF },
-            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.NPHAJEKCBKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ModifyRelicFilterPlanScRsp| { &m.retcode },
             |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.retcode },
@@ -216,6 +211,11 @@ impl ModifyRelicFilterPlanScRsp {
             "BNCALAMGIOC",
             |m: &ModifyRelicFilterPlanScRsp| { &m.BNCALAMGIOC },
             |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.BNCALAMGIOC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NPHAJEKCBKF",
+            |m: &ModifyRelicFilterPlanScRsp| { &m.NPHAJEKCBKF },
+            |m: &mut ModifyRelicFilterPlanScRsp| { &mut m.NPHAJEKCBKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "name",
@@ -256,22 +256,22 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NPHAJEKCBKF = is.read_uint32()?;
-                },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.BNCALAMGIOC = is.read_int64()?;
                 },
-                90 => {
+                120 => {
+                    self.NPHAJEKCBKF = is.read_uint32()?;
+                },
+                18 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::KKNBOACNCON::Name(is.read_string()?));
                 },
-                42 => {
+                82 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::KKNBOACNCON::MJPKBIGCFOM(is.read_message()?));
                 },
-                10 => {
+                98 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(modify_relic_filter_plan_sc_rsp::KKNBOACNCON::LJKNDCIOOCG(is.read_message()?));
                 },
                 tag => {
@@ -286,19 +286,19 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NPHAJEKCBKF);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.BNCALAMGIOC != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.BNCALAMGIOC);
+            my_size += ::protobuf::rt::int64_size(14, self.BNCALAMGIOC);
+        }
+        if self.NPHAJEKCBKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NPHAJEKCBKF);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &modify_relic_filter_plan_sc_rsp::KKNBOACNCON::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(11, &v);
+                    my_size += ::protobuf::rt::string_size(2, &v);
                 },
                 &modify_relic_filter_plan_sc_rsp::KKNBOACNCON::MJPKBIGCFOM(ref v) => {
                     let len = v.compute_size();
@@ -316,25 +316,25 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(9, self.NPHAJEKCBKF)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.BNCALAMGIOC != 0 {
-            os.write_int64(12, self.BNCALAMGIOC)?;
+            os.write_int64(14, self.BNCALAMGIOC)?;
+        }
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(15, self.NPHAJEKCBKF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &modify_relic_filter_plan_sc_rsp::KKNBOACNCON::Name(ref v) => {
-                    os.write_string(11, v)?;
+                    os.write_string(2, v)?;
                 },
                 &modify_relic_filter_plan_sc_rsp::KKNBOACNCON::MJPKBIGCFOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &modify_relic_filter_plan_sc_rsp::KKNBOACNCON::LJKNDCIOOCG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -355,9 +355,9 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
     }
 
     fn clear(&mut self) {
-        self.NPHAJEKCBKF = 0;
         self.retcode = 0;
         self.BNCALAMGIOC = 0;
+        self.NPHAJEKCBKF = 0;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
@@ -366,9 +366,9 @@ impl ::protobuf::Message for ModifyRelicFilterPlanScRsp {
 
     fn default_instance() -> &'static ModifyRelicFilterPlanScRsp {
         static instance: ModifyRelicFilterPlanScRsp = ModifyRelicFilterPlanScRsp {
-            NPHAJEKCBKF: 0,
             retcode: 0,
             BNCALAMGIOC: 0,
+            NPHAJEKCBKF: 0,
             KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -427,12 +427,12 @@ pub mod modify_relic_filter_plan_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ModifyRelicFilterPlanScRsp.proto\x1a\x11BNAILMNNGIF.proto\x1a\x11K\
-    JDLIPEIAAK.proto\"\x83\x02\n\x1aModifyRelicFilterPlanScRsp\x12\x20\n\x0b\
-    NPHAJEKCBKF\x18\t\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bBNCALAMGIOC\x18\x0c\x20\x01(\x03R\
-    \x0bBNCALAMGIOC\x12\x14\n\x04name\x18\x0b\x20\x01(\tH\0R\x04name\x120\n\
-    \x0bMJPKBIGCFOM\x18\x05\x20\x01(\x0b2\x0c.KJDLIPEIAAKH\0R\x0bMJPKBIGCFOM\
-    \x120\n\x0bLJKNDCIOOCG\x18\x01\x20\x01(\x0b2\x0c.BNAILMNNGIFH\0R\x0bLJKN\
+    JDLIPEIAAK.proto\"\x83\x02\n\x1aModifyRelicFilterPlanScRsp\x12\x18\n\x07\
+    retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bBNCALAMGIOC\x18\x0e\
+    \x20\x01(\x03R\x0bBNCALAMGIOC\x12\x20\n\x0bNPHAJEKCBKF\x18\x0f\x20\x01(\
+    \rR\x0bNPHAJEKCBKF\x12\x14\n\x04name\x18\x02\x20\x01(\tH\0R\x04name\x120\
+    \n\x0bMJPKBIGCFOM\x18\n\x20\x01(\x0b2\x0c.KJDLIPEIAAKH\0R\x0bMJPKBIGCFOM\
+    \x120\n\x0bLJKNDCIOOCG\x18\x0c\x20\x01(\x0b2\x0c.BNAILMNNGIFH\0R\x0bLJKN\
     DCIOOCGB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 

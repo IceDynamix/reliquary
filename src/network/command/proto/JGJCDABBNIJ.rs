@@ -30,15 +30,15 @@ pub enum JGJCDABBNIJ {
     // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_NLCDGIPGFDJ)
     JGJCDABBNIJ_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_ADHCFEAOLBE)
-    JGJCDABBNIJ_ADHCFEAOLBE = 9564,
-    // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_DPNIGHKMDGA)
-    JGJCDABBNIJ_DPNIGHKMDGA = 9565,
-    // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_HHHDNIMNPKN)
-    JGJCDABBNIJ_HHHDNIMNPKN = 9562,
+    JGJCDABBNIJ_ADHCFEAOLBE = 9566,
     // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_IHNCNPFIIBD)
-    JGJCDABBNIJ_IHNCNPFIIBD = 9554,
+    JGJCDABBNIJ_IHNCNPFIIBD = 9558,
+    // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_DPNIGHKMDGA)
+    JGJCDABBNIJ_DPNIGHKMDGA = 9567,
+    // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_HHHDNIMNPKN)
+    JGJCDABBNIJ_HHHDNIMNPKN = 9554,
     // @@protoc_insertion_point(enum_value:JGJCDABBNIJ.JGJCDABBNIJ_AOIDPACHIMG)
-    JGJCDABBNIJ_AOIDPACHIMG = 9552,
+    JGJCDABBNIJ_AOIDPACHIMG = 9560,
 }
 
 impl ::protobuf::Enum for JGJCDABBNIJ {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for JGJCDABBNIJ {
     fn from_i32(value: i32) -> ::std::option::Option<JGJCDABBNIJ> {
         match value {
             0 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_NLCDGIPGFDJ),
-            9564 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_ADHCFEAOLBE),
-            9565 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA),
-            9562 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN),
-            9554 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD),
-            9552 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_AOIDPACHIMG),
+            9566 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_ADHCFEAOLBE),
+            9558 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD),
+            9567 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA),
+            9554 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN),
+            9560 => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_AOIDPACHIMG),
             _ => ::std::option::Option::None
         }
     }
@@ -64,9 +64,9 @@ impl ::protobuf::Enum for JGJCDABBNIJ {
         match str {
             "JGJCDABBNIJ_NLCDGIPGFDJ" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_NLCDGIPGFDJ),
             "JGJCDABBNIJ_ADHCFEAOLBE" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_ADHCFEAOLBE),
+            "JGJCDABBNIJ_IHNCNPFIIBD" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD),
             "JGJCDABBNIJ_DPNIGHKMDGA" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA),
             "JGJCDABBNIJ_HHHDNIMNPKN" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN),
-            "JGJCDABBNIJ_IHNCNPFIIBD" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD),
             "JGJCDABBNIJ_AOIDPACHIMG" => ::std::option::Option::Some(JGJCDABBNIJ::JGJCDABBNIJ_AOIDPACHIMG),
             _ => ::std::option::Option::None
         }
@@ -75,9 +75,9 @@ impl ::protobuf::Enum for JGJCDABBNIJ {
     const VALUES: &'static [JGJCDABBNIJ] = &[
         JGJCDABBNIJ::JGJCDABBNIJ_NLCDGIPGFDJ,
         JGJCDABBNIJ::JGJCDABBNIJ_ADHCFEAOLBE,
+        JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD,
         JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA,
         JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN,
-        JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD,
         JGJCDABBNIJ::JGJCDABBNIJ_AOIDPACHIMG,
     ];
 }
@@ -92,9 +92,9 @@ impl ::protobuf::EnumFull for JGJCDABBNIJ {
         let index = match self {
             JGJCDABBNIJ::JGJCDABBNIJ_NLCDGIPGFDJ => 0,
             JGJCDABBNIJ::JGJCDABBNIJ_ADHCFEAOLBE => 1,
-            JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA => 2,
-            JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN => 3,
-            JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD => 4,
+            JGJCDABBNIJ::JGJCDABBNIJ_IHNCNPFIIBD => 2,
+            JGJCDABBNIJ::JGJCDABBNIJ_DPNIGHKMDGA => 3,
+            JGJCDABBNIJ::JGJCDABBNIJ_HHHDNIMNPKN => 4,
             JGJCDABBNIJ::JGJCDABBNIJ_AOIDPACHIMG => 5,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -115,10 +115,10 @@ impl JGJCDABBNIJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGJCDABBNIJ.proto*\xc0\x01\n\x0bJGJCDABBNIJ\x12\x1b\n\x17JGJCDABBN\
-    IJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGJCDABBNIJ_ADHCFEAOLBE\x10\xdcJ\x12\
-    \x1c\n\x17JGJCDABBNIJ_DPNIGHKMDGA\x10\xddJ\x12\x1c\n\x17JGJCDABBNIJ_HHHD\
-    NIMNPKN\x10\xdaJ\x12\x1c\n\x17JGJCDABBNIJ_IHNCNPFIIBD\x10\xd2J\x12\x1c\n\
-    \x17JGJCDABBNIJ_AOIDPACHIMG\x10\xd0Jb\x06proto3\
+    IJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JGJCDABBNIJ_ADHCFEAOLBE\x10\xdeJ\x12\
+    \x1c\n\x17JGJCDABBNIJ_IHNCNPFIIBD\x10\xd6J\x12\x1c\n\x17JGJCDABBNIJ_DPNI\
+    GHKMDGA\x10\xdfJ\x12\x1c\n\x17JGJCDABBNIJ_HHHDNIMNPKN\x10\xd2J\x12\x1c\n\
+    \x17JGJCDABBNIJ_AOIDPACHIMG\x10\xd8Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

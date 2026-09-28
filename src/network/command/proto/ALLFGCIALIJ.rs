@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ALLFGCIALIJ {
     // message fields
-    // @@protoc_insertion_point(field:ALLFGCIALIJ.H_7e8b12bb)
-    pub H_7e8b12bb: ::std::vec::Vec<super::EMHEOJNCGFH::EMHEOJNCGFH>,
     // @@protoc_insertion_point(field:ALLFGCIALIJ.JNBIALMKFCL)
     pub JNBIALMKFCL: u32,
+    // @@protoc_insertion_point(field:ALLFGCIALIJ.H_76492770)
+    pub H_76492770: ::std::vec::Vec<super::EMHEOJNCGFH::EMHEOJNCGFH>,
     // special fields
     // @@protoc_insertion_point(special_field:ALLFGCIALIJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ALLFGCIALIJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_7e8b12bb",
-            |m: &ALLFGCIALIJ| { &m.H_7e8b12bb },
-            |m: &mut ALLFGCIALIJ| { &mut m.H_7e8b12bb },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNBIALMKFCL",
             |m: &ALLFGCIALIJ| { &m.JNBIALMKFCL },
             |m: &mut ALLFGCIALIJ| { &mut m.JNBIALMKFCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_76492770",
+            |m: &ALLFGCIALIJ| { &m.H_76492770 },
+            |m: &mut ALLFGCIALIJ| { &mut m.H_76492770 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ALLFGCIALIJ>(
             "ALLFGCIALIJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ALLFGCIALIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.H_7e8b12bb.push(is.read_message()?);
-                },
-                96 => {
+                64 => {
                     self.JNBIALMKFCL = is.read_uint32()?;
+                },
+                90 => {
+                    self.H_76492770.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for ALLFGCIALIJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.H_7e8b12bb {
+        if self.JNBIALMKFCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JNBIALMKFCL);
+        }
+        for value in &self.H_76492770 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JNBIALMKFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JNBIALMKFCL);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.H_7e8b12bb {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.JNBIALMKFCL != 0 {
-            os.write_uint32(12, self.JNBIALMKFCL)?;
+            os.write_uint32(8, self.JNBIALMKFCL)?;
         }
+        for v in &self.H_76492770 {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ALLFGCIALIJ {
     }
 
     fn clear(&mut self) {
-        self.H_7e8b12bb.clear();
         self.JNBIALMKFCL = 0;
+        self.H_76492770.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ALLFGCIALIJ {
         static instance: ALLFGCIALIJ = ALLFGCIALIJ {
-            H_7e8b12bb: ::std::vec::Vec::new(),
             JNBIALMKFCL: 0,
+            H_76492770: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ALLFGCIALIJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ALLFGCIALIJ.proto\x1a\x11EMHEOJNCGFH.proto\"\\\n\x0bALLFGCIALIJ\
-    \x12+\n\nH_7e8b12bb\x18\x01\x20\x03(\x0b2\x0c.EMHEOJNCGFHR\tH7e8b12bb\
-    \x12\x20\n\x0bJNBIALMKFCL\x18\x0c\x20\x01(\rR\x0bJNBIALMKFCLb\x06proto3\
+    \x12\x20\n\x0bJNBIALMKFCL\x18\x08\x20\x01(\rR\x0bJNBIALMKFCL\x12+\n\nH_7\
+    6492770\x18\x0b\x20\x03(\x0b2\x0c.EMHEOJNCGFHR\tH76492770b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

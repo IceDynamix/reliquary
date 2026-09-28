@@ -48,56 +48,7 @@ impl CELLCCKJIGL {
         ::std::default::Default::default()
     }
 
-    // .GFHCKBHCNDF DCCILJIBPNK = 279;
-
-    pub fn DCCILJIBPNK(&self) -> &super::GFHCKBHCNDF::GFHCKBHCNDF {
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v)) => v,
-            _ => <super::GFHCKBHCNDF::GFHCKBHCNDF as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DCCILJIBPNK(&mut self) {
-        self.EBFMCHOOAOG = ::std::option::Option::None;
-    }
-
-    pub fn has_DCCILJIBPNK(&self) -> bool {
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DCCILJIBPNK(&mut self, v: super::GFHCKBHCNDF::GFHCKBHCNDF) {
-        self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DCCILJIBPNK(&mut self) -> &mut super::GFHCKBHCNDF::GFHCKBHCNDF {
-        if let ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(_)) = self.EBFMCHOOAOG {
-        } else {
-            self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(super::GFHCKBHCNDF::GFHCKBHCNDF::new()));
-        }
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DCCILJIBPNK(&mut self) -> super::GFHCKBHCNDF::GFHCKBHCNDF {
-        if self.has_DCCILJIBPNK() {
-            match self.EBFMCHOOAOG.take() {
-                ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GFHCKBHCNDF::GFHCKBHCNDF::new()
-        }
-    }
-
-    // .AMBAFEMGGLD FHEOAODACLK = 211;
+    // .AMBAFEMGGLD FHEOAODACLK = 121;
 
     pub fn FHEOAODACLK(&self) -> &super::AMBAFEMGGLD::AMBAFEMGGLD {
         match self.EBFMCHOOAOG {
@@ -146,56 +97,7 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .HIDPFIAALLB NLEOMLNOKCC = 301;
-
-    pub fn NLEOMLNOKCC(&self) -> &super::HIDPFIAALLB::HIDPFIAALLB {
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v)) => v,
-            _ => <super::HIDPFIAALLB::HIDPFIAALLB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NLEOMLNOKCC(&mut self) {
-        self.EBFMCHOOAOG = ::std::option::Option::None;
-    }
-
-    pub fn has_NLEOMLNOKCC(&self) -> bool {
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NLEOMLNOKCC(&mut self, v: super::HIDPFIAALLB::HIDPFIAALLB) {
-        self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NLEOMLNOKCC(&mut self) -> &mut super::HIDPFIAALLB::HIDPFIAALLB {
-        if let ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(_)) = self.EBFMCHOOAOG {
-        } else {
-            self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(super::HIDPFIAALLB::HIDPFIAALLB::new()));
-        }
-        match self.EBFMCHOOAOG {
-            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NLEOMLNOKCC(&mut self) -> super::HIDPFIAALLB::HIDPFIAALLB {
-        if self.has_NLEOMLNOKCC() {
-            match self.EBFMCHOOAOG.take() {
-                ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HIDPFIAALLB::HIDPFIAALLB::new()
-        }
-    }
-
-    // .MBDOBECHOJA KNBGBCEBLDF = 167;
+    // .MBDOBECHOJA KNBGBCEBLDF = 626;
 
     pub fn KNBGBCEBLDF(&self) -> &super::MBDOBECHOJA::MBDOBECHOJA {
         match self.EBFMCHOOAOG {
@@ -244,7 +146,56 @@ impl CELLCCKJIGL {
         }
     }
 
-    // .PLAGFACLPDL NDJKPABPJHO = 683;
+    // .HIDPFIAALLB NLEOMLNOKCC = 888;
+
+    pub fn NLEOMLNOKCC(&self) -> &super::HIDPFIAALLB::HIDPFIAALLB {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v)) => v,
+            _ => <super::HIDPFIAALLB::HIDPFIAALLB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NLEOMLNOKCC(&mut self) {
+        self.EBFMCHOOAOG = ::std::option::Option::None;
+    }
+
+    pub fn has_NLEOMLNOKCC(&self) -> bool {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NLEOMLNOKCC(&mut self, v: super::HIDPFIAALLB::HIDPFIAALLB) {
+        self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NLEOMLNOKCC(&mut self) -> &mut super::HIDPFIAALLB::HIDPFIAALLB {
+        if let ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(_)) = self.EBFMCHOOAOG {
+        } else {
+            self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(super::HIDPFIAALLB::HIDPFIAALLB::new()));
+        }
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NLEOMLNOKCC(&mut self) -> super::HIDPFIAALLB::HIDPFIAALLB {
+        if self.has_NLEOMLNOKCC() {
+            match self.EBFMCHOOAOG.take() {
+                ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HIDPFIAALLB::HIDPFIAALLB::new()
+        }
+    }
+
+    // .PLAGFACLPDL NDJKPABPJHO = 926;
 
     pub fn NDJKPABPJHO(&self) -> &super::PLAGFACLPDL::PLAGFACLPDL {
         match self.EBFMCHOOAOG {
@@ -293,20 +244,111 @@ impl CELLCCKJIGL {
         }
     }
 
+    // .DOIPOJANKGI LFDODCBOFDK = 954;
+
+    pub fn LFDODCBOFDK(&self) -> &super::DOIPOJANKGI::DOIPOJANKGI {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(ref v)) => v,
+            _ => <super::DOIPOJANKGI::DOIPOJANKGI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LFDODCBOFDK(&mut self) {
+        self.EBFMCHOOAOG = ::std::option::Option::None;
+    }
+
+    pub fn has_LFDODCBOFDK(&self) -> bool {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LFDODCBOFDK(&mut self, v: super::DOIPOJANKGI::DOIPOJANKGI) {
+        self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LFDODCBOFDK(&mut self) -> &mut super::DOIPOJANKGI::DOIPOJANKGI {
+        if let ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(_)) = self.EBFMCHOOAOG {
+        } else {
+            self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(super::DOIPOJANKGI::DOIPOJANKGI::new()));
+        }
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LFDODCBOFDK(&mut self) -> super::DOIPOJANKGI::DOIPOJANKGI {
+        if self.has_LFDODCBOFDK() {
+            match self.EBFMCHOOAOG.take() {
+                ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DOIPOJANKGI::DOIPOJANKGI::new()
+        }
+    }
+
+    // .GFHCKBHCNDF DCCILJIBPNK = 1000;
+
+    pub fn DCCILJIBPNK(&self) -> &super::GFHCKBHCNDF::GFHCKBHCNDF {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v)) => v,
+            _ => <super::GFHCKBHCNDF::GFHCKBHCNDF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DCCILJIBPNK(&mut self) {
+        self.EBFMCHOOAOG = ::std::option::Option::None;
+    }
+
+    pub fn has_DCCILJIBPNK(&self) -> bool {
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DCCILJIBPNK(&mut self, v: super::GFHCKBHCNDF::GFHCKBHCNDF) {
+        self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DCCILJIBPNK(&mut self) -> &mut super::GFHCKBHCNDF::GFHCKBHCNDF {
+        if let ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(_)) = self.EBFMCHOOAOG {
+        } else {
+            self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(super::GFHCKBHCNDF::GFHCKBHCNDF::new()));
+        }
+        match self.EBFMCHOOAOG {
+            ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DCCILJIBPNK(&mut self) -> super::GFHCKBHCNDF::GFHCKBHCNDF {
+        if self.has_DCCILJIBPNK() {
+            match self.EBFMCHOOAOG.take() {
+                ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GFHCKBHCNDF::GFHCKBHCNDF::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NMNKDOOKMPC",
             |m: &CELLCCKJIGL| { &m.NMNKDOOKMPC },
             |m: &mut CELLCCKJIGL| { &mut m.NMNKDOOKMPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GFHCKBHCNDF::GFHCKBHCNDF>(
-            "DCCILJIBPNK",
-            CELLCCKJIGL::has_DCCILJIBPNK,
-            CELLCCKJIGL::DCCILJIBPNK,
-            CELLCCKJIGL::mut_DCCILJIBPNK,
-            CELLCCKJIGL::set_DCCILJIBPNK,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AMBAFEMGGLD::AMBAFEMGGLD>(
             "FHEOAODACLK",
@@ -315,13 +357,6 @@ impl CELLCCKJIGL {
             CELLCCKJIGL::mut_FHEOAODACLK,
             CELLCCKJIGL::set_FHEOAODACLK,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HIDPFIAALLB::HIDPFIAALLB>(
-            "NLEOMLNOKCC",
-            CELLCCKJIGL::has_NLEOMLNOKCC,
-            CELLCCKJIGL::NLEOMLNOKCC,
-            CELLCCKJIGL::mut_NLEOMLNOKCC,
-            CELLCCKJIGL::set_NLEOMLNOKCC,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MBDOBECHOJA::MBDOBECHOJA>(
             "KNBGBCEBLDF",
             CELLCCKJIGL::has_KNBGBCEBLDF,
@@ -329,12 +364,33 @@ impl CELLCCKJIGL {
             CELLCCKJIGL::mut_KNBGBCEBLDF,
             CELLCCKJIGL::set_KNBGBCEBLDF,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HIDPFIAALLB::HIDPFIAALLB>(
+            "NLEOMLNOKCC",
+            CELLCCKJIGL::has_NLEOMLNOKCC,
+            CELLCCKJIGL::NLEOMLNOKCC,
+            CELLCCKJIGL::mut_NLEOMLNOKCC,
+            CELLCCKJIGL::set_NLEOMLNOKCC,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PLAGFACLPDL::PLAGFACLPDL>(
             "NDJKPABPJHO",
             CELLCCKJIGL::has_NDJKPABPJHO,
             CELLCCKJIGL::NDJKPABPJHO,
             CELLCCKJIGL::mut_NDJKPABPJHO,
             CELLCCKJIGL::set_NDJKPABPJHO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DOIPOJANKGI::DOIPOJANKGI>(
+            "LFDODCBOFDK",
+            CELLCCKJIGL::has_LFDODCBOFDK,
+            CELLCCKJIGL::LFDODCBOFDK,
+            CELLCCKJIGL::mut_LFDODCBOFDK,
+            CELLCCKJIGL::set_LFDODCBOFDK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GFHCKBHCNDF::GFHCKBHCNDF>(
+            "DCCILJIBPNK",
+            CELLCCKJIGL::has_DCCILJIBPNK,
+            CELLCCKJIGL::DCCILJIBPNK,
+            CELLCCKJIGL::mut_DCCILJIBPNK,
+            CELLCCKJIGL::set_DCCILJIBPNK,
         ));
         oneofs.push(cellcckjigl::EBFMCHOOAOG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CELLCCKJIGL>(
@@ -355,23 +411,26 @@ impl ::protobuf::Message for CELLCCKJIGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                56 => {
                     self.NMNKDOOKMPC = is.read_uint32()?;
                 },
-                2234 => {
-                    self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(is.read_message()?));
-                },
-                1690 => {
+                970 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::FHEOAODACLK(is.read_message()?));
                 },
-                2410 => {
-                    self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(is.read_message()?));
-                },
-                1338 => {
+                5010 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::KNBGBCEBLDF(is.read_message()?));
                 },
-                5466 => {
+                7106 => {
+                    self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(is.read_message()?));
+                },
+                7410 => {
                     self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::NDJKPABPJHO(is.read_message()?));
+                },
+                7634 => {
+                    self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(is.read_message()?));
+                },
+                8002 => {
+                    self.EBFMCHOOAOG = ::std::option::Option::Some(cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -386,19 +445,11 @@ impl ::protobuf::Message for CELLCCKJIGL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NMNKDOOKMPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NMNKDOOKMPC);
+            my_size += ::protobuf::rt::uint32_size(7, self.NMNKDOOKMPC);
         }
         if let ::std::option::Option::Some(ref v) = self.EBFMCHOOAOG {
             match v {
-                &cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &cellcckjigl::EBFMCHOOAOG::FHEOAODACLK(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -406,7 +457,19 @@ impl ::protobuf::Message for CELLCCKJIGL {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
                 &cellcckjigl::EBFMCHOOAOG::NDJKPABPJHO(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -419,24 +482,27 @@ impl ::protobuf::Message for CELLCCKJIGL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NMNKDOOKMPC != 0 {
-            os.write_uint32(14, self.NMNKDOOKMPC)?;
+            os.write_uint32(7, self.NMNKDOOKMPC)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EBFMCHOOAOG {
             match v {
-                &cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(279, v, os)?;
-                },
                 &cellcckjigl::EBFMCHOOAOG::FHEOAODACLK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(211, v, os)?;
-                },
-                &cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(301, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(121, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::KNBGBCEBLDF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(167, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(626, v, os)?;
+                },
+                &cellcckjigl::EBFMCHOOAOG::NLEOMLNOKCC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(888, v, os)?;
                 },
                 &cellcckjigl::EBFMCHOOAOG::NDJKPABPJHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(683, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(926, v, os)?;
+                },
+                &cellcckjigl::EBFMCHOOAOG::LFDODCBOFDK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(954, v, os)?;
+                },
+                &cellcckjigl::EBFMCHOOAOG::DCCILJIBPNK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1000, v, os)?;
                 },
             };
         }
@@ -458,6 +524,7 @@ impl ::protobuf::Message for CELLCCKJIGL {
 
     fn clear(&mut self) {
         self.NMNKDOOKMPC = 0;
+        self.EBFMCHOOAOG = ::std::option::Option::None;
         self.EBFMCHOOAOG = ::std::option::Option::None;
         self.EBFMCHOOAOG = ::std::option::Option::None;
         self.EBFMCHOOAOG = ::std::option::Option::None;
@@ -500,16 +567,18 @@ pub mod cellcckjigl {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:CELLCCKJIGL.EBFMCHOOAOG)
     pub enum EBFMCHOOAOG {
-        // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.DCCILJIBPNK)
-        DCCILJIBPNK(super::super::GFHCKBHCNDF::GFHCKBHCNDF),
         // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.FHEOAODACLK)
         FHEOAODACLK(super::super::AMBAFEMGGLD::AMBAFEMGGLD),
-        // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.NLEOMLNOKCC)
-        NLEOMLNOKCC(super::super::HIDPFIAALLB::HIDPFIAALLB),
         // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.KNBGBCEBLDF)
         KNBGBCEBLDF(super::super::MBDOBECHOJA::MBDOBECHOJA),
+        // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.NLEOMLNOKCC)
+        NLEOMLNOKCC(super::super::HIDPFIAALLB::HIDPFIAALLB),
         // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.NDJKPABPJHO)
         NDJKPABPJHO(super::super::PLAGFACLPDL::PLAGFACLPDL),
+        // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.LFDODCBOFDK)
+        LFDODCBOFDK(super::super::DOIPOJANKGI::DOIPOJANKGI),
+        // @@protoc_insertion_point(oneof_field:CELLCCKJIGL.DCCILJIBPNK)
+        DCCILJIBPNK(super::super::GFHCKBHCNDF::GFHCKBHCNDF),
     }
 
     impl ::protobuf::Oneof for EBFMCHOOAOG {
@@ -530,16 +599,17 @@ pub mod cellcckjigl {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CELLCCKJIGL.proto\x1a\x11AMBAFEMGGLD.proto\x1a\x11GFHCKBHCNDF.prot\
-    o\x1a\x11HIDPFIAALLB.proto\x1a\x11MBDOBECHOJA.proto\x1a\x11PLAGFACLPDL.p\
-    roto\"\xbd\x02\n\x0bCELLCCKJIGL\x12\x20\n\x0bNMNKDOOKMPC\x18\x0e\x20\x01\
-    (\rR\x0bNMNKDOOKMPC\x121\n\x0bDCCILJIBPNK\x18\x97\x02\x20\x01(\x0b2\x0c.\
-    GFHCKBHCNDFH\0R\x0bDCCILJIBPNK\x121\n\x0bFHEOAODACLK\x18\xd3\x01\x20\x01\
-    (\x0b2\x0c.AMBAFEMGGLDH\0R\x0bFHEOAODACLK\x121\n\x0bNLEOMLNOKCC\x18\xad\
-    \x02\x20\x01(\x0b2\x0c.HIDPFIAALLBH\0R\x0bNLEOMLNOKCC\x121\n\x0bKNBGBCEB\
-    LDF\x18\xa7\x01\x20\x01(\x0b2\x0c.MBDOBECHOJAH\0R\x0bKNBGBCEBLDF\x121\n\
-    \x0bNDJKPABPJHO\x18\xab\x05\x20\x01(\x0b2\x0c.PLAGFACLPDLH\0R\x0bNDJKPAB\
-    PJHOB\r\n\x0bEBFMCHOOAOGb\x06proto3\
+    \n\x11CELLCCKJIGL.proto\x1a\x11AMBAFEMGGLD.proto\x1a\x11DOIPOJANKGI.prot\
+    o\x1a\x11GFHCKBHCNDF.proto\x1a\x11HIDPFIAALLB.proto\x1a\x11MBDOBECHOJA.p\
+    roto\x1a\x11PLAGFACLPDL.proto\"\xef\x02\n\x0bCELLCCKJIGL\x12\x20\n\x0bNM\
+    NKDOOKMPC\x18\x07\x20\x01(\rR\x0bNMNKDOOKMPC\x120\n\x0bFHEOAODACLK\x18y\
+    \x20\x01(\x0b2\x0c.AMBAFEMGGLDH\0R\x0bFHEOAODACLK\x121\n\x0bKNBGBCEBLDF\
+    \x18\xf2\x04\x20\x01(\x0b2\x0c.MBDOBECHOJAH\0R\x0bKNBGBCEBLDF\x121\n\x0b\
+    NLEOMLNOKCC\x18\xf8\x06\x20\x01(\x0b2\x0c.HIDPFIAALLBH\0R\x0bNLEOMLNOKCC\
+    \x121\n\x0bNDJKPABPJHO\x18\x9e\x07\x20\x01(\x0b2\x0c.PLAGFACLPDLH\0R\x0b\
+    NDJKPABPJHO\x121\n\x0bLFDODCBOFDK\x18\xba\x07\x20\x01(\x0b2\x0c.DOIPOJAN\
+    KGIH\0R\x0bLFDODCBOFDK\x121\n\x0bDCCILJIBPNK\x18\xe8\x07\x20\x01(\x0b2\
+    \x0c.GFHCKBHCNDFH\0R\x0bDCCILJIBPNKB\r\n\x0bEBFMCHOOAOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -556,8 +626,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(5);
+            let mut deps = ::std::vec::Vec::with_capacity(6);
             deps.push(super::AMBAFEMGGLD::file_descriptor().clone());
+            deps.push(super::DOIPOJANKGI::file_descriptor().clone());
             deps.push(super::GFHCKBHCNDF::file_descriptor().clone());
             deps.push(super::HIDPFIAALLB::file_descriptor().clone());
             deps.push(super::MBDOBECHOJA::file_descriptor().clone());

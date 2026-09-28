@@ -49,6 +49,8 @@ pub enum FriendApplySource {
     FriendApplySource_DiceCombatV2 = 9,
     // @@protoc_insertion_point(enum_value:FriendApplySource.FriendApplySource_RecentVisitor)
     FriendApplySource_RecentVisitor = 10,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_JNLIOGAONMA)
+    HPEKGMDHFLO_JNLIOGAONMA = 11,
 }
 
 impl ::protobuf::Enum for FriendApplySource {
@@ -71,6 +73,7 @@ impl ::protobuf::Enum for FriendApplySource {
             8 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Roaming),
             9 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_DiceCombatV2),
             10 => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecentVisitor),
+            11 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JNLIOGAONMA),
             _ => ::std::option::Option::None
         }
     }
@@ -88,6 +91,7 @@ impl ::protobuf::Enum for FriendApplySource {
             "FriendApplySource_Roaming" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_Roaming),
             "FriendApplySource_DiceCombatV2" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_DiceCombatV2),
             "FriendApplySource_RecentVisitor" => ::std::option::Option::Some(FriendApplySource::FriendApplySource_RecentVisitor),
+            "HPEKGMDHFLO_JNLIOGAONMA" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JNLIOGAONMA),
             _ => ::std::option::Option::None
         }
     }
@@ -104,6 +108,7 @@ impl ::protobuf::Enum for FriendApplySource {
         FriendApplySource::FriendApplySource_Roaming,
         FriendApplySource::FriendApplySource_DiceCombatV2,
         FriendApplySource::FriendApplySource_RecentVisitor,
+        FriendApplySource::HPEKGMDHFLO_JNLIOGAONMA,
     ];
 }
 
@@ -132,7 +137,7 @@ impl FriendApplySource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FriendApplySource.proto*\x82\x03\n\x11FriendApplySource\x12\x1a\n\
+    \n\x17FriendApplySource.proto*\x9f\x03\n\x11FriendApplySource\x12\x1a\n\
     \x16FriendApplySource_None\x10\0\x12\x1c\n\x18FriendApplySource_Search\
     \x10\x01\x12\x1f\n\x1bFriendApplySource_Recommend\x10\x02\x12\x1c\n\x18F\
     riendApplySource_Assist\x10\x03\x12%\n!FriendApplySource_RecommendAssist\
@@ -140,7 +145,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     endApplySource_AssistReward\x10\x06\x12\x20\n\x1cFriendApplySource_Socia\
     lPlay\x10\x07\x12\x1d\n\x19FriendApplySource_Roaming\x10\x08\x12\"\n\x1e\
     FriendApplySource_DiceCombatV2\x10\t\x12#\n\x1fFriendApplySource_RecentV\
-    isitor\x10\nb\x06proto3\
+    isitor\x10\n\x12\x1b\n\x17HPEKGMDHFLO_JNLIOGAONMA\x10\x0bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

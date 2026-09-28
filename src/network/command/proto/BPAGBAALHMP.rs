@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPAGBAALHMP {
     // message fields
+    // @@protoc_insertion_point(field:BPAGBAALHMP.EGKNHHFDJHM)
+    pub EGKNHHFDJHM: u32,
     // @@protoc_insertion_point(field:BPAGBAALHMP.level)
     pub level: u32,
     // @@protoc_insertion_point(field:BPAGBAALHMP.BLMAEGGMCHJ)
     pub BLMAEGGMCHJ: u32,
     // @@protoc_insertion_point(field:BPAGBAALHMP.is_perfect)
     pub is_perfect: bool,
-    // @@protoc_insertion_point(field:BPAGBAALHMP.EGKNHHFDJHM)
-    pub EGKNHHFDJHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BPAGBAALHMP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,11 @@ impl BPAGBAALHMP {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGKNHHFDJHM",
+            |m: &BPAGBAALHMP| { &m.EGKNHHFDJHM },
+            |m: &mut BPAGBAALHMP| { &mut m.EGKNHHFDJHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &BPAGBAALHMP| { &m.level },
             |m: &mut BPAGBAALHMP| { &mut m.level },
@@ -69,11 +74,6 @@ impl BPAGBAALHMP {
             "is_perfect",
             |m: &BPAGBAALHMP| { &m.is_perfect },
             |m: &mut BPAGBAALHMP| { &mut m.is_perfect },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGKNHHFDJHM",
-            |m: &BPAGBAALHMP| { &m.EGKNHHFDJHM },
-            |m: &mut BPAGBAALHMP| { &mut m.EGKNHHFDJHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPAGBAALHMP>(
             "BPAGBAALHMP",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BPAGBAALHMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.EGKNHHFDJHM = is.read_uint32()?;
+                },
                 24 => {
                     self.level = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
                     self.BLMAEGGMCHJ = is.read_uint32()?;
                 },
                 80 => {
                     self.is_perfect = is.read_bool()?;
-                },
-                112 => {
-                    self.EGKNHHFDJHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for BPAGBAALHMP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EGKNHHFDJHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EGKNHHFDJHM);
+        }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         if self.BLMAEGGMCHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BLMAEGGMCHJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.BLMAEGGMCHJ);
         }
         if self.is_perfect != false {
             my_size += 1 + 1;
-        }
-        if self.EGKNHHFDJHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EGKNHHFDJHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for BPAGBAALHMP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EGKNHHFDJHM != 0 {
+            os.write_uint32(1, self.EGKNHHFDJHM)?;
+        }
         if self.level != 0 {
             os.write_uint32(3, self.level)?;
         }
         if self.BLMAEGGMCHJ != 0 {
-            os.write_uint32(9, self.BLMAEGGMCHJ)?;
+            os.write_uint32(4, self.BLMAEGGMCHJ)?;
         }
         if self.is_perfect != false {
             os.write_bool(10, self.is_perfect)?;
-        }
-        if self.EGKNHHFDJHM != 0 {
-            os.write_uint32(14, self.EGKNHHFDJHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for BPAGBAALHMP {
     }
 
     fn clear(&mut self) {
+        self.EGKNHHFDJHM = 0;
         self.level = 0;
         self.BLMAEGGMCHJ = 0;
         self.is_perfect = false;
-        self.EGKNHHFDJHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPAGBAALHMP {
         static instance: BPAGBAALHMP = BPAGBAALHMP {
+            EGKNHHFDJHM: 0,
             level: 0,
             BLMAEGGMCHJ: 0,
             is_perfect: false,
-            EGKNHHFDJHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for BPAGBAALHMP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BPAGBAALHMP.proto\"\x86\x01\n\x0bBPAGBAALHMP\x12\x14\n\x05level\
-    \x18\x03\x20\x01(\rR\x05level\x12\x20\n\x0bBLMAEGGMCHJ\x18\t\x20\x01(\rR\
-    \x0bBLMAEGGMCHJ\x12\x1d\n\nis_perfect\x18\n\x20\x01(\x08R\tisPerfect\x12\
-    \x20\n\x0bEGKNHHFDJHM\x18\x0e\x20\x01(\rR\x0bEGKNHHFDJHMb\x06proto3\
+    \n\x11BPAGBAALHMP.proto\"\x86\x01\n\x0bBPAGBAALHMP\x12\x20\n\x0bEGKNHHFD\
+    JHM\x18\x01\x20\x01(\rR\x0bEGKNHHFDJHM\x12\x14\n\x05level\x18\x03\x20\
+    \x01(\rR\x05level\x12\x20\n\x0bBLMAEGGMCHJ\x18\x04\x20\x01(\rR\x0bBLMAEG\
+    GMCHJ\x12\x1d\n\nis_perfect\x18\n\x20\x01(\x08R\tisPerfectb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

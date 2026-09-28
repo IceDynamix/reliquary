@@ -45,7 +45,7 @@ impl MBPDIPLJMKN {
         ::std::default::Default::default()
     }
 
-    // .ELGLKEAPLGM GGMPEGMEHPD = 5;
+    // .ELGLKEAPLGM GGMPEGMEHPD = 6;
 
     pub fn GGMPEGMEHPD(&self) -> &super::ELGLKEAPLGM::ELGLKEAPLGM {
         match self.OFJBCEDFLKL {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for MBPDIPLJMKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     self.OFJBCEDFLKL = ::std::option::Option::Some(mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for MBPDIPLJMKN {
         if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
             match v {
                 &mbpdipljmkn::OFJBCEDFLKL::GGMPEGMEHPD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -236,7 +236,7 @@ pub mod mbpdipljmkn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MBPDIPLJMKN.proto\x1a\x11ELGLKEAPLGM.proto\"N\n\x0bMBPDIPLJMKN\x12\
-    0\n\x0bGGMPEGMEHPD\x18\x05\x20\x01(\x0b2\x0c.ELGLKEAPLGMH\0R\x0bGGMPEGME\
+    0\n\x0bGGMPEGMEHPD\x18\x06\x20\x01(\x0b2\x0c.ELGLKEAPLGMH\0R\x0bGGMPEGME\
     HPDB\r\n\x0bOFJBCEDFLKLb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GKCNOIGHOPM {
     // message fields
+    // @@protoc_insertion_point(field:GKCNOIGHOPM.MBNBCPEAALJ)
+    pub MBNBCPEAALJ: u32,
     // @@protoc_insertion_point(field:GKCNOIGHOPM.LHHJFMMCBAF)
     pub LHHJFMMCBAF: u32,
     // @@protoc_insertion_point(field:GKCNOIGHOPM.CBNKDHIHECO)
     pub CBNKDHIHECO: u32,
-    // @@protoc_insertion_point(field:GKCNOIGHOPM.MBNBCPEAALJ)
-    pub MBNBCPEAALJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GKCNOIGHOPM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl GKCNOIGHOPM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBNBCPEAALJ",
+            |m: &GKCNOIGHOPM| { &m.MBNBCPEAALJ },
+            |m: &mut GKCNOIGHOPM| { &mut m.MBNBCPEAALJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LHHJFMMCBAF",
             |m: &GKCNOIGHOPM| { &m.LHHJFMMCBAF },
             |m: &mut GKCNOIGHOPM| { &mut m.LHHJFMMCBAF },
@@ -62,11 +67,6 @@ impl GKCNOIGHOPM {
             "CBNKDHIHECO",
             |m: &GKCNOIGHOPM| { &m.CBNKDHIHECO },
             |m: &mut GKCNOIGHOPM| { &mut m.CBNKDHIHECO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBNBCPEAALJ",
-            |m: &GKCNOIGHOPM| { &m.MBNBCPEAALJ },
-            |m: &mut GKCNOIGHOPM| { &mut m.MBNBCPEAALJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GKCNOIGHOPM>(
             "GKCNOIGHOPM",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for GKCNOIGHOPM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
+                    self.MBNBCPEAALJ = is.read_uint32()?;
+                },
+                96 => {
                     self.LHHJFMMCBAF = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.CBNKDHIHECO = is.read_uint32()?;
-                },
-                104 => {
-                    self.MBNBCPEAALJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GKCNOIGHOPM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MBNBCPEAALJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MBNBCPEAALJ);
+        }
         if self.LHHJFMMCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHHJFMMCBAF);
+            my_size += ::protobuf::rt::uint32_size(12, self.LHHJFMMCBAF);
         }
         if self.CBNKDHIHECO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CBNKDHIHECO);
-        }
-        if self.MBNBCPEAALJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MBNBCPEAALJ);
+            my_size += ::protobuf::rt::uint32_size(15, self.CBNKDHIHECO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GKCNOIGHOPM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.MBNBCPEAALJ != 0 {
+            os.write_uint32(1, self.MBNBCPEAALJ)?;
+        }
         if self.LHHJFMMCBAF != 0 {
-            os.write_uint32(1, self.LHHJFMMCBAF)?;
+            os.write_uint32(12, self.LHHJFMMCBAF)?;
         }
         if self.CBNKDHIHECO != 0 {
-            os.write_uint32(10, self.CBNKDHIHECO)?;
-        }
-        if self.MBNBCPEAALJ != 0 {
-            os.write_uint32(13, self.MBNBCPEAALJ)?;
+            os.write_uint32(15, self.CBNKDHIHECO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GKCNOIGHOPM {
     }
 
     fn clear(&mut self) {
+        self.MBNBCPEAALJ = 0;
         self.LHHJFMMCBAF = 0;
         self.CBNKDHIHECO = 0;
-        self.MBNBCPEAALJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GKCNOIGHOPM {
         static instance: GKCNOIGHOPM = GKCNOIGHOPM {
+            MBNBCPEAALJ: 0,
             LHHJFMMCBAF: 0,
             CBNKDHIHECO: 0,
-            MBNBCPEAALJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for GKCNOIGHOPM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GKCNOIGHOPM.proto\"s\n\x0bGKCNOIGHOPM\x12\x20\n\x0bLHHJFMMCBAF\x18\
-    \x01\x20\x01(\rR\x0bLHHJFMMCBAF\x12\x20\n\x0bCBNKDHIHECO\x18\n\x20\x01(\
-    \rR\x0bCBNKDHIHECO\x12\x20\n\x0bMBNBCPEAALJ\x18\r\x20\x01(\rR\x0bMBNBCPE\
-    AALJb\x06proto3\
+    \n\x11GKCNOIGHOPM.proto\"s\n\x0bGKCNOIGHOPM\x12\x20\n\x0bMBNBCPEAALJ\x18\
+    \x01\x20\x01(\rR\x0bMBNBCPEAALJ\x12\x20\n\x0bLHHJFMMCBAF\x18\x0c\x20\x01\
+    (\rR\x0bLHHJFMMCBAF\x12\x20\n\x0bCBNKDHIHECO\x18\x0f\x20\x01(\rR\x0bCBNK\
+    DHIHECOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

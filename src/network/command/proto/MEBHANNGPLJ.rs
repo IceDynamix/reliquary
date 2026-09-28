@@ -41,6 +41,8 @@ pub enum MEBHANNGPLJ {
     MEBHANNGPLJ_LNDPEIKNLAF = 5,
     // @@protoc_insertion_point(enum_value:MEBHANNGPLJ.MEBHANNGPLJ_OCNKGOMPLJO)
     MEBHANNGPLJ_OCNKGOMPLJO = 6,
+    // @@protoc_insertion_point(enum_value:MEBHANNGPLJ.MEBHANNGPLJ_KAENADLJABK)
+    MEBHANNGPLJ_KAENADLJABK = 7,
 }
 
 impl ::protobuf::Enum for MEBHANNGPLJ {
@@ -59,6 +61,7 @@ impl ::protobuf::Enum for MEBHANNGPLJ {
             4 => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_EIMNKKEFOBC),
             5 => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_LNDPEIKNLAF),
             6 => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_OCNKGOMPLJO),
+            7 => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_KAENADLJABK),
             _ => ::std::option::Option::None
         }
     }
@@ -72,6 +75,7 @@ impl ::protobuf::Enum for MEBHANNGPLJ {
             "MEBHANNGPLJ_EIMNKKEFOBC" => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_EIMNKKEFOBC),
             "MEBHANNGPLJ_LNDPEIKNLAF" => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_LNDPEIKNLAF),
             "MEBHANNGPLJ_OCNKGOMPLJO" => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_OCNKGOMPLJO),
+            "MEBHANNGPLJ_KAENADLJABK" => ::std::option::Option::Some(MEBHANNGPLJ::MEBHANNGPLJ_KAENADLJABK),
             _ => ::std::option::Option::None
         }
     }
@@ -84,6 +88,7 @@ impl ::protobuf::Enum for MEBHANNGPLJ {
         MEBHANNGPLJ::MEBHANNGPLJ_EIMNKKEFOBC,
         MEBHANNGPLJ::MEBHANNGPLJ_LNDPEIKNLAF,
         MEBHANNGPLJ::MEBHANNGPLJ_OCNKGOMPLJO,
+        MEBHANNGPLJ::MEBHANNGPLJ_KAENADLJABK,
     ];
 }
 
@@ -112,12 +117,12 @@ impl MEBHANNGPLJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11MEBHANNGPLJ.proto*\xd8\x01\n\x0bMEBHANNGPLJ\x12\x1b\n\x17MEBHANNGP\
+    \n\x11MEBHANNGPLJ.proto*\xf5\x01\n\x0bMEBHANNGPLJ\x12\x1b\n\x17MEBHANNGP\
     LJ_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17MEBHANNGPLJ_CHEJBPEKAGA\x10\x01\x12\
     \x1b\n\x17MEBHANNGPLJ_DHFGMBGOKNC\x10\x02\x12\x1b\n\x17MEBHANNGPLJ_BFEAJ\
     GDDGKL\x10\x03\x12\x1b\n\x17MEBHANNGPLJ_EIMNKKEFOBC\x10\x04\x12\x1b\n\
     \x17MEBHANNGPLJ_LNDPEIKNLAF\x10\x05\x12\x1b\n\x17MEBHANNGPLJ_OCNKGOMPLJO\
-    \x10\x06b\x06proto3\
+    \x10\x06\x12\x1b\n\x17MEBHANNGPLJ_KAENADLJABK\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

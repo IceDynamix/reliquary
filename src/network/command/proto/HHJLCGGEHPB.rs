@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HHJLCGGEHPB {
     // message fields
-    // @@protoc_insertion_point(field:HHJLCGGEHPB.CILGIDDHODG)
-    pub CILGIDDHODG: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // @@protoc_insertion_point(field:HHJLCGGEHPB.PLPPPCEPBDO)
     pub PLPPPCEPBDO: u32,
     // @@protoc_insertion_point(field:HHJLCGGEHPB.KFACPOBAAGM)
     pub KFACPOBAAGM: i64,
+    // @@protoc_insertion_point(field:HHJLCGGEHPB.CILGIDDHODG)
+    pub CILGIDDHODG: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:HHJLCGGEHPB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl HHJLCGGEHPB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "CILGIDDHODG",
-            |m: &HHJLCGGEHPB| { &m.CILGIDDHODG },
-            |m: &mut HHJLCGGEHPB| { &mut m.CILGIDDHODG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLPPPCEPBDO",
             |m: &HHJLCGGEHPB| { &m.PLPPPCEPBDO },
@@ -67,6 +62,11 @@ impl HHJLCGGEHPB {
             "KFACPOBAAGM",
             |m: &HHJLCGGEHPB| { &m.KFACPOBAAGM },
             |m: &mut HHJLCGGEHPB| { &mut m.KFACPOBAAGM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "CILGIDDHODG",
+            |m: &HHJLCGGEHPB| { &m.CILGIDDHODG },
+            |m: &mut HHJLCGGEHPB| { &mut m.CILGIDDHODG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HHJLCGGEHPB>(
             "HHJLCGGEHPB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HHJLCGGEHPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CILGIDDHODG)?;
-                },
-                80 => {
+                8 => {
                     self.PLPPPCEPBDO = is.read_uint32()?;
                 },
-                96 => {
+                56 => {
                     self.KFACPOBAAGM = is.read_int64()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CILGIDDHODG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for HHJLCGGEHPB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PLPPPCEPBDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PLPPPCEPBDO);
+        }
+        if self.KFACPOBAAGM != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.KFACPOBAAGM);
+        }
         if let Some(v) = self.CILGIDDHODG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.PLPPPCEPBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PLPPPCEPBDO);
-        }
-        if self.KFACPOBAAGM != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.KFACPOBAAGM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for HHJLCGGEHPB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.CILGIDDHODG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if self.PLPPPCEPBDO != 0 {
-            os.write_uint32(10, self.PLPPPCEPBDO)?;
+            os.write_uint32(1, self.PLPPPCEPBDO)?;
         }
         if self.KFACPOBAAGM != 0 {
-            os.write_int64(12, self.KFACPOBAAGM)?;
+            os.write_int64(7, self.KFACPOBAAGM)?;
+        }
+        if let Some(v) = self.CILGIDDHODG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for HHJLCGGEHPB {
     }
 
     fn clear(&mut self) {
-        self.CILGIDDHODG.clear();
         self.PLPPPCEPBDO = 0;
         self.KFACPOBAAGM = 0;
+        self.CILGIDDHODG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HHJLCGGEHPB {
         static instance: HHJLCGGEHPB = HHJLCGGEHPB {
-            CILGIDDHODG: ::protobuf::MessageField::none(),
             PLPPPCEPBDO: 0,
             KFACPOBAAGM: 0,
+            CILGIDDHODG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for HHJLCGGEHPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HHJLCGGEHPB.proto\x1a\x16PlayerSimpleInfo.proto\"\x86\x01\n\x0bHHJ\
-    LCGGEHPB\x123\n\x0bCILGIDDHODG\x18\x06\x20\x01(\x0b2\x11.PlayerSimpleInf\
-    oR\x0bCILGIDDHODG\x12\x20\n\x0bPLPPPCEPBDO\x18\n\x20\x01(\rR\x0bPLPPPCEP\
-    BDO\x12\x20\n\x0bKFACPOBAAGM\x18\x0c\x20\x01(\x03R\x0bKFACPOBAAGMb\x06pr\
-    oto3\
+    LCGGEHPB\x12\x20\n\x0bPLPPPCEPBDO\x18\x01\x20\x01(\rR\x0bPLPPPCEPBDO\x12\
+    \x20\n\x0bKFACPOBAAGM\x18\x07\x20\x01(\x03R\x0bKFACPOBAAGM\x123\n\x0bCIL\
+    GIDDHODG\x18\x0e\x20\x01(\x0b2\x11.PlayerSimpleInfoR\x0bCILGIDDHODGb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MINFCKLKLNJ)?;
                 },
-                120 => {
+                72 => {
                     self.difficulty_level = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.difficulty_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.difficulty_level);
+            my_size += ::protobuf::rt::uint32_size(9, self.difficulty_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChessRogueLayerSettlement {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MINFCKLKLNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.difficulty_level != 0 {
-            os.write_uint32(15, self.difficulty_level)?;
+            os.write_uint32(9, self.difficulty_level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueLayerSettlement {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueLayerSettlement.proto\x1a\x11OGHPKFMNNHL.proto\"v\n\x19C\
-    hessRogueLayerSettlement\x12.\n\x0bMINFCKLKLNJ\x18\x08\x20\x01(\x0b2\x0c\
-    .OGHPKFMNNHLR\x0bMINFCKLKLNJ\x12)\n\x10difficulty_level\x18\x0f\x20\x01(\
-    \rR\x0fdifficultyLevelb\x06proto3\
+    hessRogueLayerSettlement\x12.\n\x0bMINFCKLKLNJ\x18\x06\x20\x01(\x0b2\x0c\
+    .OGHPKFMNNHLR\x0bMINFCKLKLNJ\x12)\n\x10difficulty_level\x18\t\x20\x01(\r\
+    R\x0fdifficultyLevelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

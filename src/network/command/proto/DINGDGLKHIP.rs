@@ -79,10 +79,10 @@ impl ::protobuf::Message for DINGDGLKHIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.HOKEFMONOPG = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DINGDGLKHIP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
         }
         if self.HOKEFMONOPG != ::protobuf::EnumOrUnknown::new(super::BEAIKEEANDP::BEAIKEEANDP::BEAIKEEANDP_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(12, self.HOKEFMONOPG.value());
+            my_size += ::protobuf::rt::int32_size(6, self.HOKEFMONOPG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DINGDGLKHIP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(8, self.avatar_id)?;
+            os.write_uint32(2, self.avatar_id)?;
         }
         if self.HOKEFMONOPG != ::protobuf::EnumOrUnknown::new(super::BEAIKEEANDP::BEAIKEEANDP::BEAIKEEANDP_NLCDGIPGFDJ) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.HOKEFMONOPG))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.HOKEFMONOPG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DINGDGLKHIP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DINGDGLKHIP.proto\x1a\x11BEAIKEEANDP.proto\"Z\n\x0bDINGDGLKHIP\x12\
-    \x1b\n\tavatar_id\x18\x08\x20\x01(\rR\x08avatarId\x12.\n\x0bHOKEFMONOPG\
-    \x18\x0c\x20\x01(\x0e2\x0c.BEAIKEEANDPR\x0bHOKEFMONOPGb\x06proto3\
+    \x1b\n\tavatar_id\x18\x02\x20\x01(\rR\x08avatarId\x12.\n\x0bHOKEFMONOPG\
+    \x18\x06\x20\x01(\x0e2\x0c.BEAIKEEANDPR\x0bHOKEFMONOPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

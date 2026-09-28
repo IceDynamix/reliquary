@@ -79,7 +79,7 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
                 98 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if let Some(v) = self.IDCMACCPCBH.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for RogueMagicEnterLayerScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
         if let Some(v) = self.IDCMACCPCBH.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterLayerScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueMagicEnterLayerScRsp.proto\x1a\x11EEILAINOLPO.proto\"e\n\x19R\
-    ogueMagicEnterLayerScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07ret\
+    ogueMagicEnterLayerScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07ret\
     code\x12.\n\x0bIDCMACCPCBH\x18\x0c\x20\x01(\x0b2\x0c.EEILAINOLPOR\x0bIDC\
     MACCPCBHb\x06proto3\
 ";

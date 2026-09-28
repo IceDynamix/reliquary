@@ -79,7 +79,7 @@ impl ::protobuf::Message for PPDLOPCHFDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 72 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for PPDLOPCHFDG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.EMOHLJHPOPC != 0 {
             os.write_uint32(9, self.EMOHLJHPOPC)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for PPDLOPCHFDG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PPDLOPCHFDG.proto\x1a\x11JHKFCANMFOE.proto\"^\n\x0bPPDLOPCHFDG\x12\
-    -\n\x0bavatar_list\x18\x04\x20\x03(\x0b2\x0c.JHKFCANMFOER\navatarList\
+    -\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\x0c.JHKFCANMFOER\navatarList\
     \x12\x20\n\x0bEMOHLJHPOPC\x18\t\x20\x01(\rR\x0bEMOHLJHPOPCb\x06proto3\
 ";
 

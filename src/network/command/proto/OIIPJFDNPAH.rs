@@ -30,10 +30,10 @@ pub struct OIIPJFDNPAH {
     // message fields
     // @@protoc_insertion_point(field:OIIPJFDNPAH.OFOKOHGPEDO)
     pub OFOKOHGPEDO: ::std::vec::Vec<super::CLLBJDEJFNF::CLLBJDEJFNF>,
-    // @@protoc_insertion_point(field:OIIPJFDNPAH.POLMJFIKNHN)
-    pub POLMJFIKNHN: ::std::vec::Vec<super::POFNNGOCEOK::POFNNGOCEOK>,
     // @@protoc_insertion_point(field:OIIPJFDNPAH.GOEJIMNENDC)
     pub GOEJIMNENDC: ::std::vec::Vec<super::AreaDynamicInfo::AreaDynamicInfo>,
+    // @@protoc_insertion_point(field:OIIPJFDNPAH.POLMJFIKNHN)
+    pub POLMJFIKNHN: ::std::vec::Vec<super::POFNNGOCEOK::POFNNGOCEOK>,
     // special fields
     // @@protoc_insertion_point(special_field:OIIPJFDNPAH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl OIIPJFDNPAH {
             |m: &mut OIIPJFDNPAH| { &mut m.OFOKOHGPEDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POLMJFIKNHN",
-            |m: &OIIPJFDNPAH| { &m.POLMJFIKNHN },
-            |m: &mut OIIPJFDNPAH| { &mut m.POLMJFIKNHN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GOEJIMNENDC",
             |m: &OIIPJFDNPAH| { &m.GOEJIMNENDC },
             |m: &mut OIIPJFDNPAH| { &mut m.GOEJIMNENDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "POLMJFIKNHN",
+            |m: &OIIPJFDNPAH| { &m.POLMJFIKNHN },
+            |m: &mut OIIPJFDNPAH| { &mut m.POLMJFIKNHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIIPJFDNPAH>(
             "OIIPJFDNPAH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OIIPJFDNPAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.OFOKOHGPEDO.push(is.read_message()?);
                 },
-                58 => {
-                    self.POLMJFIKNHN.push(is.read_message()?);
-                },
-                66 => {
+                50 => {
                     self.GOEJIMNENDC.push(is.read_message()?);
+                },
+                74 => {
+                    self.POLMJFIKNHN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for OIIPJFDNPAH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.POLMJFIKNHN {
+        for value in &self.GOEJIMNENDC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.GOEJIMNENDC {
+        for value in &self.POLMJFIKNHN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -126,13 +126,13 @@ impl ::protobuf::Message for OIIPJFDNPAH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.OFOKOHGPEDO {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.POLMJFIKNHN {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         for v in &self.GOEJIMNENDC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        for v in &self.POLMJFIKNHN {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,16 +152,16 @@ impl ::protobuf::Message for OIIPJFDNPAH {
 
     fn clear(&mut self) {
         self.OFOKOHGPEDO.clear();
-        self.POLMJFIKNHN.clear();
         self.GOEJIMNENDC.clear();
+        self.POLMJFIKNHN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OIIPJFDNPAH {
         static instance: OIIPJFDNPAH = OIIPJFDNPAH {
             OFOKOHGPEDO: ::std::vec::Vec::new(),
-            POLMJFIKNHN: ::std::vec::Vec::new(),
             GOEJIMNENDC: ::std::vec::Vec::new(),
+            POLMJFIKNHN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for OIIPJFDNPAH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIIPJFDNPAH.proto\x1a\x15AreaDynamicInfo.proto\x1a\x11CLLBJDEJFNF.\
     proto\x1a\x11POFNNGOCEOK.proto\"\xa1\x01\n\x0bOIIPJFDNPAH\x12.\n\x0bOFOK\
-    OHGPEDO\x18\x02\x20\x03(\x0b2\x0c.CLLBJDEJFNFR\x0bOFOKOHGPEDO\x12.\n\x0b\
-    POLMJFIKNHN\x18\x07\x20\x03(\x0b2\x0c.POFNNGOCEOKR\x0bPOLMJFIKNHN\x122\n\
-    \x0bGOEJIMNENDC\x18\x08\x20\x03(\x0b2\x10.AreaDynamicInfoR\x0bGOEJIMNEND\
-    Cb\x06proto3\
+    OHGPEDO\x18\x01\x20\x03(\x0b2\x0c.CLLBJDEJFNFR\x0bOFOKOHGPEDO\x122\n\x0b\
+    GOEJIMNENDC\x18\x06\x20\x03(\x0b2\x10.AreaDynamicInfoR\x0bGOEJIMNENDC\
+    \x12.\n\x0bPOLMJFIKNHN\x18\t\x20\x03(\x0b2\x0c.POFNNGOCEOKR\x0bPOLMJFIKN\
+    HNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

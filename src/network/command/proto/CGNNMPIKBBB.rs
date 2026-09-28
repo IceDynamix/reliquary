@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CGNNMPIKBBB {
     // message fields
-    // @@protoc_insertion_point(field:CGNNMPIKBBB.end_time)
-    pub end_time: i64,
     // @@protoc_insertion_point(field:CGNNMPIKBBB.LJNGPCKPJLF)
     pub LJNGPCKPJLF: u32,
     // @@protoc_insertion_point(field:CGNNMPIKBBB.begin_time)
     pub begin_time: i64,
+    // @@protoc_insertion_point(field:CGNNMPIKBBB.end_time)
+    pub end_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:CGNNMPIKBBB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl CGNNMPIKBBB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &CGNNMPIKBBB| { &m.end_time },
-            |m: &mut CGNNMPIKBBB| { &mut m.end_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJNGPCKPJLF",
             |m: &CGNNMPIKBBB| { &m.LJNGPCKPJLF },
             |m: &mut CGNNMPIKBBB| { &mut m.LJNGPCKPJLF },
@@ -67,6 +62,11 @@ impl CGNNMPIKBBB {
             "begin_time",
             |m: &CGNNMPIKBBB| { &m.begin_time },
             |m: &mut CGNNMPIKBBB| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &CGNNMPIKBBB| { &m.end_time },
+            |m: &mut CGNNMPIKBBB| { &mut m.end_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CGNNMPIKBBB>(
             "CGNNMPIKBBB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CGNNMPIKBBB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.end_time = is.read_int64()?;
-                },
-                88 => {
+                24 => {
                     self.LJNGPCKPJLF = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
                     self.begin_time = is.read_int64()?;
+                },
+                88 => {
+                    self.end_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CGNNMPIKBBB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.end_time);
-        }
         if self.LJNGPCKPJLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LJNGPCKPJLF);
+            my_size += ::protobuf::rt::uint32_size(3, self.LJNGPCKPJLF);
         }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(9, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CGNNMPIKBBB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_time != 0 {
-            os.write_int64(8, self.end_time)?;
-        }
         if self.LJNGPCKPJLF != 0 {
-            os.write_uint32(11, self.LJNGPCKPJLF)?;
+            os.write_uint32(3, self.LJNGPCKPJLF)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(14, self.begin_time)?;
+            os.write_int64(9, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(11, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CGNNMPIKBBB {
     }
 
     fn clear(&mut self) {
-        self.end_time = 0;
         self.LJNGPCKPJLF = 0;
         self.begin_time = 0;
+        self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CGNNMPIKBBB {
         static instance: CGNNMPIKBBB = CGNNMPIKBBB {
-            end_time: 0,
             LJNGPCKPJLF: 0,
             begin_time: 0,
+            end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CGNNMPIKBBB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CGNNMPIKBBB.proto\"i\n\x0bCGNNMPIKBBB\x12\x19\n\x08end_time\x18\
-    \x08\x20\x01(\x03R\x07endTime\x12\x20\n\x0bLJNGPCKPJLF\x18\x0b\x20\x01(\
-    \rR\x0bLJNGPCKPJLF\x12\x1d\n\nbegin_time\x18\x0e\x20\x01(\x03R\tbeginTim\
-    eb\x06proto3\
+    \n\x11CGNNMPIKBBB.proto\"i\n\x0bCGNNMPIKBBB\x12\x20\n\x0bLJNGPCKPJLF\x18\
+    \x03\x20\x01(\rR\x0bLJNGPCKPJLF\x12\x1d\n\nbegin_time\x18\t\x20\x01(\x03\
+    R\tbeginTime\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x03R\x07endTimeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

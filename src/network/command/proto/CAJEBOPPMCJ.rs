@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CAJEBOPPMCJ {
     // message fields
-    // @@protoc_insertion_point(field:CAJEBOPPMCJ.KANBKLFCCMB)
-    pub KANBKLFCCMB: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
-    // @@protoc_insertion_point(field:CAJEBOPPMCJ.ALAJJMKOMML)
-    pub ALAJJMKOMML: bool,
-    // @@protoc_insertion_point(field:CAJEBOPPMCJ.area_id)
-    pub area_id: u32,
-    // @@protoc_insertion_point(field:CAJEBOPPMCJ.NHDLEFAAPOB)
-    pub NHDLEFAAPOB: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
     // @@protoc_insertion_point(field:CAJEBOPPMCJ.KNDHMNBIIDF)
     pub KNDHMNBIIDF: u32,
+    // @@protoc_insertion_point(field:CAJEBOPPMCJ.KANBKLFCCMB)
+    pub KANBKLFCCMB: ::protobuf::EnumOrUnknown<super::RogueAreaStatus::RogueAreaStatus>,
     // @@protoc_insertion_point(field:CAJEBOPPMCJ.map_id)
     pub map_id: u32,
+    // @@protoc_insertion_point(field:CAJEBOPPMCJ.ALAJJMKOMML)
+    pub ALAJJMKOMML: bool,
+    // @@protoc_insertion_point(field:CAJEBOPPMCJ.NHDLEFAAPOB)
+    pub NHDLEFAAPOB: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:CAJEBOPPMCJ.area_id)
+    pub area_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CAJEBOPPMCJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,9 +60,19 @@ impl CAJEBOPPMCJ {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KNDHMNBIIDF",
+            |m: &CAJEBOPPMCJ| { &m.KNDHMNBIIDF },
+            |m: &mut CAJEBOPPMCJ| { &mut m.KNDHMNBIIDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KANBKLFCCMB",
             |m: &CAJEBOPPMCJ| { &m.KANBKLFCCMB },
             |m: &mut CAJEBOPPMCJ| { &mut m.KANBKLFCCMB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "map_id",
+            |m: &CAJEBOPPMCJ| { &m.map_id },
+            |m: &mut CAJEBOPPMCJ| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALAJJMKOMML",
@@ -70,24 +80,14 @@ impl CAJEBOPPMCJ {
             |m: &mut CAJEBOPPMCJ| { &mut m.ALAJJMKOMML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &CAJEBOPPMCJ| { &m.area_id },
-            |m: &mut CAJEBOPPMCJ| { &mut m.area_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NHDLEFAAPOB",
             |m: &CAJEBOPPMCJ| { &m.NHDLEFAAPOB },
             |m: &mut CAJEBOPPMCJ| { &mut m.NHDLEFAAPOB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNDHMNBIIDF",
-            |m: &CAJEBOPPMCJ| { &m.KNDHMNBIIDF },
-            |m: &mut CAJEBOPPMCJ| { &mut m.KNDHMNBIIDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &CAJEBOPPMCJ| { &m.map_id },
-            |m: &mut CAJEBOPPMCJ| { &mut m.map_id },
+            "area_id",
+            |m: &CAJEBOPPMCJ| { &m.area_id },
+            |m: &mut CAJEBOPPMCJ| { &mut m.area_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CAJEBOPPMCJ>(
             "CAJEBOPPMCJ",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for CAJEBOPPMCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.KANBKLFCCMB = is.read_enum_or_unknown()?;
-                },
-                32 => {
-                    self.ALAJJMKOMML = is.read_bool()?;
-                },
-                48 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.NHDLEFAAPOB = is.read_enum_or_unknown()?;
-                },
-                80 => {
+                8 => {
                     self.KNDHMNBIIDF = is.read_uint32()?;
                 },
-                120 => {
+                32 => {
+                    self.KANBKLFCCMB = is.read_enum_or_unknown()?;
+                },
+                72 => {
                     self.map_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.ALAJJMKOMML = is.read_bool()?;
+                },
+                96 => {
+                    self.NHDLEFAAPOB = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for CAJEBOPPMCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KNDHMNBIIDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KNDHMNBIIDF);
+        }
         if self.KANBKLFCCMB != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::RogueAreaStatus_Lock) {
-            my_size += ::protobuf::rt::int32_size(3, self.KANBKLFCCMB.value());
+            my_size += ::protobuf::rt::int32_size(4, self.KANBKLFCCMB.value());
+        }
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.map_id);
         }
         if self.ALAJJMKOMML != false {
             my_size += 1 + 1;
         }
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
-        }
         if self.NHDLEFAAPOB != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
-            my_size += ::protobuf::rt::int32_size(8, self.NHDLEFAAPOB.value());
+            my_size += ::protobuf::rt::int32_size(12, self.NHDLEFAAPOB.value());
         }
-        if self.KNDHMNBIIDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KNDHMNBIIDF);
-        }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.map_id);
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for CAJEBOPPMCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KANBKLFCCMB != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::RogueAreaStatus_Lock) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.KANBKLFCCMB))?;
-        }
-        if self.ALAJJMKOMML != false {
-            os.write_bool(4, self.ALAJJMKOMML)?;
-        }
-        if self.area_id != 0 {
-            os.write_uint32(6, self.area_id)?;
-        }
-        if self.NHDLEFAAPOB != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NHDLEFAAPOB))?;
-        }
         if self.KNDHMNBIIDF != 0 {
-            os.write_uint32(10, self.KNDHMNBIIDF)?;
+            os.write_uint32(1, self.KNDHMNBIIDF)?;
+        }
+        if self.KANBKLFCCMB != ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::RogueAreaStatus_Lock) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.KANBKLFCCMB))?;
         }
         if self.map_id != 0 {
-            os.write_uint32(15, self.map_id)?;
+            os.write_uint32(9, self.map_id)?;
+        }
+        if self.ALAJJMKOMML != false {
+            os.write_bool(10, self.ALAJJMKOMML)?;
+        }
+        if self.NHDLEFAAPOB != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NHDLEFAAPOB))?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(13, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for CAJEBOPPMCJ {
     }
 
     fn clear(&mut self) {
-        self.KANBKLFCCMB = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::RogueAreaStatus_Lock);
-        self.ALAJJMKOMML = false;
-        self.area_id = 0;
-        self.NHDLEFAAPOB = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None);
         self.KNDHMNBIIDF = 0;
+        self.KANBKLFCCMB = ::protobuf::EnumOrUnknown::new(super::RogueAreaStatus::RogueAreaStatus::RogueAreaStatus_Lock);
         self.map_id = 0;
+        self.ALAJJMKOMML = false;
+        self.NHDLEFAAPOB = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None);
+        self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CAJEBOPPMCJ {
         static instance: CAJEBOPPMCJ = CAJEBOPPMCJ {
-            KANBKLFCCMB: ::protobuf::EnumOrUnknown::from_i32(0),
-            ALAJJMKOMML: false,
-            area_id: 0,
-            NHDLEFAAPOB: ::protobuf::EnumOrUnknown::from_i32(0),
             KNDHMNBIIDF: 0,
+            KANBKLFCCMB: ::protobuf::EnumOrUnknown::from_i32(0),
             map_id: 0,
+            ALAJJMKOMML: false,
+            NHDLEFAAPOB: ::protobuf::EnumOrUnknown::from_i32(0),
+            area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for CAJEBOPPMCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CAJEBOPPMCJ.proto\x1a\x15RogueAreaStatus.proto\x1a\x11RogueStatus.\
-    proto\"\xe5\x01\n\x0bCAJEBOPPMCJ\x122\n\x0bKANBKLFCCMB\x18\x03\x20\x01(\
-    \x0e2\x10.RogueAreaStatusR\x0bKANBKLFCCMB\x12\x20\n\x0bALAJJMKOMML\x18\
-    \x04\x20\x01(\x08R\x0bALAJJMKOMML\x12\x17\n\x07area_id\x18\x06\x20\x01(\
-    \rR\x06areaId\x12.\n\x0bNHDLEFAAPOB\x18\x08\x20\x01(\x0e2\x0c.RogueStatu\
-    sR\x0bNHDLEFAAPOB\x12\x20\n\x0bKNDHMNBIIDF\x18\n\x20\x01(\rR\x0bKNDHMNBI\
-    IDF\x12\x15\n\x06map_id\x18\x0f\x20\x01(\rR\x05mapIdb\x06proto3\
+    proto\"\xe5\x01\n\x0bCAJEBOPPMCJ\x12\x20\n\x0bKNDHMNBIIDF\x18\x01\x20\
+    \x01(\rR\x0bKNDHMNBIIDF\x122\n\x0bKANBKLFCCMB\x18\x04\x20\x01(\x0e2\x10.\
+    RogueAreaStatusR\x0bKANBKLFCCMB\x12\x15\n\x06map_id\x18\t\x20\x01(\rR\
+    \x05mapId\x12\x20\n\x0bALAJJMKOMML\x18\n\x20\x01(\x08R\x0bALAJJMKOMML\
+    \x12.\n\x0bNHDLEFAAPOB\x18\x0c\x20\x01(\x0e2\x0c.RogueStatusR\x0bNHDLEFA\
+    APOB\x12\x17\n\x07area_id\x18\r\x20\x01(\rR\x06areaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

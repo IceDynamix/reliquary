@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PCBOLEAFMDN {
     // message fields
-    // @@protoc_insertion_point(field:PCBOLEAFMDN.HAKLMIAENCF)
-    pub HAKLMIAENCF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PCBOLEAFMDN.NGBAKCIGBMN)
+    pub NGBAKCIGBMN: u32,
     // @@protoc_insertion_point(field:PCBOLEAFMDN.DEFHFAGLMLC)
     pub DEFHFAGLMLC: u32,
-    // @@protoc_insertion_point(field:PCBOLEAFMDN.GNJGPFDKLBH)
-    pub GNJGPFDKLBH: ::std::vec::Vec<super::MAFDLBFIJMB::MAFDLBFIJMB>,
-    // @@protoc_insertion_point(field:PCBOLEAFMDN.FOLMLBOLGEM)
-    pub FOLMLBOLGEM: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PCBOLEAFMDN.CIFFLEBCFGK)
-    pub CIFFLEBCFGK: u32,
     // @@protoc_insertion_point(field:PCBOLEAFMDN.PGGOOINMOLF)
     pub PGGOOINMOLF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PCBOLEAFMDN.FGLEKNDHMKN)
     pub FGLEKNDHMKN: u32,
+    // @@protoc_insertion_point(field:PCBOLEAFMDN.CIFFLEBCFGK)
+    pub CIFFLEBCFGK: u32,
+    // @@protoc_insertion_point(field:PCBOLEAFMDN.FOLMLBOLGEM)
+    pub FOLMLBOLGEM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PCBOLEAFMDN.HAKLMIAENCF)
+    pub HAKLMIAENCF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PCBOLEAFMDN.GNJGPFDKLBH)
+    pub GNJGPFDKLBH: ::std::vec::Vec<super::MAFDLBFIJMB::MAFDLBFIJMB>,
     // @@protoc_insertion_point(field:PCBOLEAFMDN.AAIMONALOPD)
-    pub AAIMONALOPD: ::protobuf::MessageField<super::ChimeraDuelPlayerRankData::ChimeraDuelPlayerRankData>,
-    // @@protoc_insertion_point(field:PCBOLEAFMDN.NGBAKCIGBMN)
-    pub NGBAKCIGBMN: u32,
+    pub AAIMONALOPD: ::protobuf::MessageField<super::NEBJABOEDND::NEBJABOEDND>,
     // special fields
     // @@protoc_insertion_point(special_field:PCBOLEAFMDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,30 +65,15 @@ impl PCBOLEAFMDN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HAKLMIAENCF",
-            |m: &PCBOLEAFMDN| { &m.HAKLMIAENCF },
-            |m: &mut PCBOLEAFMDN| { &mut m.HAKLMIAENCF },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGBAKCIGBMN",
+            |m: &PCBOLEAFMDN| { &m.NGBAKCIGBMN },
+            |m: &mut PCBOLEAFMDN| { &mut m.NGBAKCIGBMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DEFHFAGLMLC",
             |m: &PCBOLEAFMDN| { &m.DEFHFAGLMLC },
             |m: &mut PCBOLEAFMDN| { &mut m.DEFHFAGLMLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GNJGPFDKLBH",
-            |m: &PCBOLEAFMDN| { &m.GNJGPFDKLBH },
-            |m: &mut PCBOLEAFMDN| { &mut m.GNJGPFDKLBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FOLMLBOLGEM",
-            |m: &PCBOLEAFMDN| { &m.FOLMLBOLGEM },
-            |m: &mut PCBOLEAFMDN| { &mut m.FOLMLBOLGEM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CIFFLEBCFGK",
-            |m: &PCBOLEAFMDN| { &m.CIFFLEBCFGK },
-            |m: &mut PCBOLEAFMDN| { &mut m.CIFFLEBCFGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PGGOOINMOLF",
@@ -100,15 +85,30 @@ impl PCBOLEAFMDN {
             |m: &PCBOLEAFMDN| { &m.FGLEKNDHMKN },
             |m: &mut PCBOLEAFMDN| { &mut m.FGLEKNDHMKN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChimeraDuelPlayerRankData::ChimeraDuelPlayerRankData>(
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CIFFLEBCFGK",
+            |m: &PCBOLEAFMDN| { &m.CIFFLEBCFGK },
+            |m: &mut PCBOLEAFMDN| { &mut m.CIFFLEBCFGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FOLMLBOLGEM",
+            |m: &PCBOLEAFMDN| { &m.FOLMLBOLGEM },
+            |m: &mut PCBOLEAFMDN| { &mut m.FOLMLBOLGEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HAKLMIAENCF",
+            |m: &PCBOLEAFMDN| { &m.HAKLMIAENCF },
+            |m: &mut PCBOLEAFMDN| { &mut m.HAKLMIAENCF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GNJGPFDKLBH",
+            |m: &PCBOLEAFMDN| { &m.GNJGPFDKLBH },
+            |m: &mut PCBOLEAFMDN| { &mut m.GNJGPFDKLBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NEBJABOEDND::NEBJABOEDND>(
             "AAIMONALOPD",
             |m: &PCBOLEAFMDN| { &m.AAIMONALOPD },
             |m: &mut PCBOLEAFMDN| { &mut m.AAIMONALOPD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGBAKCIGBMN",
-            |m: &PCBOLEAFMDN| { &m.NGBAKCIGBMN },
-            |m: &mut PCBOLEAFMDN| { &mut m.NGBAKCIGBMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PCBOLEAFMDN>(
             "PCBOLEAFMDN",
@@ -128,41 +128,41 @@ impl ::protobuf::Message for PCBOLEAFMDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HAKLMIAENCF)?;
-                },
-                16 => {
-                    self.HAKLMIAENCF.push(is.read_uint32()?);
+                32 => {
+                    self.NGBAKCIGBMN = is.read_uint32()?;
                 },
                 40 => {
                     self.DEFHFAGLMLC = is.read_uint32()?;
                 },
-                50 => {
-                    self.GNJGPFDKLBH.push(is.read_message()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.PGGOOINMOLF)?;
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FOLMLBOLGEM)?;
+                64 => {
+                    self.PGGOOINMOLF.push(is.read_uint32()?);
                 },
-                56 => {
-                    self.FOLMLBOLGEM.push(is.read_uint32()?);
+                72 => {
+                    self.FGLEKNDHMKN = is.read_uint32()?;
                 },
                 80 => {
                     self.CIFFLEBCFGK = is.read_uint32()?;
                 },
                 90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PGGOOINMOLF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.FOLMLBOLGEM)?;
                 },
                 88 => {
-                    self.PGGOOINMOLF.push(is.read_uint32()?);
+                    self.FOLMLBOLGEM.push(is.read_uint32()?);
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HAKLMIAENCF)?;
                 },
                 96 => {
-                    self.FGLEKNDHMKN = is.read_uint32()?;
+                    self.HAKLMIAENCF.push(is.read_uint32()?);
                 },
-                106 => {
+                114 => {
+                    self.GNJGPFDKLBH.push(is.read_message()?);
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AAIMONALOPD)?;
-                },
-                112 => {
-                    self.NGBAKCIGBMN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -176,28 +176,28 @@ impl ::protobuf::Message for PCBOLEAFMDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HAKLMIAENCF);
+        if self.NGBAKCIGBMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NGBAKCIGBMN);
+        }
         if self.DEFHFAGLMLC != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.DEFHFAGLMLC);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PGGOOINMOLF);
+        if self.FGLEKNDHMKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FGLEKNDHMKN);
+        }
+        if self.CIFFLEBCFGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CIFFLEBCFGK);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.FOLMLBOLGEM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.HAKLMIAENCF);
         for value in &self.GNJGPFDKLBH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.FOLMLBOLGEM);
-        if self.CIFFLEBCFGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CIFFLEBCFGK);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.PGGOOINMOLF);
-        if self.FGLEKNDHMKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FGLEKNDHMKN);
-        }
         if let Some(v) = self.AAIMONALOPD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NGBAKCIGBMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NGBAKCIGBMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -205,26 +205,26 @@ impl ::protobuf::Message for PCBOLEAFMDN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.HAKLMIAENCF)?;
+        if self.NGBAKCIGBMN != 0 {
+            os.write_uint32(4, self.NGBAKCIGBMN)?;
+        }
         if self.DEFHFAGLMLC != 0 {
             os.write_uint32(5, self.DEFHFAGLMLC)?;
         }
-        for v in &self.GNJGPFDKLBH {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        os.write_repeated_packed_uint32(7, &self.FOLMLBOLGEM)?;
+        os.write_repeated_packed_uint32(8, &self.PGGOOINMOLF)?;
+        if self.FGLEKNDHMKN != 0 {
+            os.write_uint32(9, self.FGLEKNDHMKN)?;
+        }
         if self.CIFFLEBCFGK != 0 {
             os.write_uint32(10, self.CIFFLEBCFGK)?;
         }
-        os.write_repeated_packed_uint32(11, &self.PGGOOINMOLF)?;
-        if self.FGLEKNDHMKN != 0 {
-            os.write_uint32(12, self.FGLEKNDHMKN)?;
-        }
+        os.write_repeated_packed_uint32(11, &self.FOLMLBOLGEM)?;
+        os.write_repeated_packed_uint32(12, &self.HAKLMIAENCF)?;
+        for v in &self.GNJGPFDKLBH {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         if let Some(v) = self.AAIMONALOPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.NGBAKCIGBMN != 0 {
-            os.write_uint32(14, self.NGBAKCIGBMN)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -243,29 +243,29 @@ impl ::protobuf::Message for PCBOLEAFMDN {
     }
 
     fn clear(&mut self) {
-        self.HAKLMIAENCF.clear();
+        self.NGBAKCIGBMN = 0;
         self.DEFHFAGLMLC = 0;
-        self.GNJGPFDKLBH.clear();
-        self.FOLMLBOLGEM.clear();
-        self.CIFFLEBCFGK = 0;
         self.PGGOOINMOLF.clear();
         self.FGLEKNDHMKN = 0;
+        self.CIFFLEBCFGK = 0;
+        self.FOLMLBOLGEM.clear();
+        self.HAKLMIAENCF.clear();
+        self.GNJGPFDKLBH.clear();
         self.AAIMONALOPD.clear();
-        self.NGBAKCIGBMN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PCBOLEAFMDN {
         static instance: PCBOLEAFMDN = PCBOLEAFMDN {
-            HAKLMIAENCF: ::std::vec::Vec::new(),
+            NGBAKCIGBMN: 0,
             DEFHFAGLMLC: 0,
-            GNJGPFDKLBH: ::std::vec::Vec::new(),
-            FOLMLBOLGEM: ::std::vec::Vec::new(),
-            CIFFLEBCFGK: 0,
             PGGOOINMOLF: ::std::vec::Vec::new(),
             FGLEKNDHMKN: 0,
+            CIFFLEBCFGK: 0,
+            FOLMLBOLGEM: ::std::vec::Vec::new(),
+            HAKLMIAENCF: ::std::vec::Vec::new(),
+            GNJGPFDKLBH: ::std::vec::Vec::new(),
             AAIMONALOPD: ::protobuf::MessageField::none(),
-            NGBAKCIGBMN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -290,16 +290,16 @@ impl ::protobuf::reflect::ProtobufValue for PCBOLEAFMDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PCBOLEAFMDN.proto\x1a\x1fChimeraDuelPlayerRankData.proto\x1a\x11MA\
-    FDLBFIJMB.proto\"\xe9\x02\n\x0bPCBOLEAFMDN\x12\x20\n\x0bHAKLMIAENCF\x18\
-    \x02\x20\x03(\rR\x0bHAKLMIAENCF\x12\x20\n\x0bDEFHFAGLMLC\x18\x05\x20\x01\
-    (\rR\x0bDEFHFAGLMLC\x12.\n\x0bGNJGPFDKLBH\x18\x06\x20\x03(\x0b2\x0c.MAFD\
-    LBFIJMBR\x0bGNJGPFDKLBH\x12\x20\n\x0bFOLMLBOLGEM\x18\x07\x20\x03(\rR\x0b\
-    FOLMLBOLGEM\x12\x20\n\x0bCIFFLEBCFGK\x18\n\x20\x01(\rR\x0bCIFFLEBCFGK\
-    \x12\x20\n\x0bPGGOOINMOLF\x18\x0b\x20\x03(\rR\x0bPGGOOINMOLF\x12\x20\n\
-    \x0bFGLEKNDHMKN\x18\x0c\x20\x01(\rR\x0bFGLEKNDHMKN\x12<\n\x0bAAIMONALOPD\
-    \x18\r\x20\x01(\x0b2\x1a.ChimeraDuelPlayerRankDataR\x0bAAIMONALOPD\x12\
-    \x20\n\x0bNGBAKCIGBMN\x18\x0e\x20\x01(\rR\x0bNGBAKCIGBMNb\x06proto3\
+    \n\x11PCBOLEAFMDN.proto\x1a\x11MAFDLBFIJMB.proto\x1a\x11NEBJABOEDND.prot\
+    o\"\xdb\x02\n\x0bPCBOLEAFMDN\x12\x20\n\x0bNGBAKCIGBMN\x18\x04\x20\x01(\r\
+    R\x0bNGBAKCIGBMN\x12\x20\n\x0bDEFHFAGLMLC\x18\x05\x20\x01(\rR\x0bDEFHFAG\
+    LMLC\x12\x20\n\x0bPGGOOINMOLF\x18\x08\x20\x03(\rR\x0bPGGOOINMOLF\x12\x20\
+    \n\x0bFGLEKNDHMKN\x18\t\x20\x01(\rR\x0bFGLEKNDHMKN\x12\x20\n\x0bCIFFLEBC\
+    FGK\x18\n\x20\x01(\rR\x0bCIFFLEBCFGK\x12\x20\n\x0bFOLMLBOLGEM\x18\x0b\
+    \x20\x03(\rR\x0bFOLMLBOLGEM\x12\x20\n\x0bHAKLMIAENCF\x18\x0c\x20\x03(\rR\
+    \x0bHAKLMIAENCF\x12.\n\x0bGNJGPFDKLBH\x18\x0e\x20\x03(\x0b2\x0c.MAFDLBFI\
+    JMBR\x0bGNJGPFDKLBH\x12.\n\x0bAAIMONALOPD\x18\x0f\x20\x01(\x0b2\x0c.NEBJ\
+    ABOEDNDR\x0bAAIMONALOPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -317,8 +317,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ChimeraDuelPlayerRankData::file_descriptor().clone());
             deps.push(super::MAFDLBFIJMB::file_descriptor().clone());
+            deps.push(super::NEBJABOEDND::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PCBOLEAFMDN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum GJPPDNGGKCC {
     // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_NLCDGIPGFDJ)
     GJPPDNGGKCC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_HMHLNKIKKHG)
-    GJPPDNGGKCC_HMHLNKIKKHG = 5729,
-    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_DLAEKJKFPJO)
-    GJPPDNGGKCC_DLAEKJKFPJO = 5778,
-    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_GGMOCMBGFAJ)
-    GJPPDNGGKCC_GGMOCMBGFAJ = 5732,
     // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_DNAPAEJPILD)
-    GJPPDNGGKCC_DNAPAEJPILD = 5744,
+    GJPPDNGGKCC_DNAPAEJPILD = 5760,
+    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_GGMOCMBGFAJ)
+    GJPPDNGGKCC_GGMOCMBGFAJ = 5734,
     // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_LGCCILOHONJ)
-    GJPPDNGGKCC_LGCCILOHONJ = 5713,
+    GJPPDNGGKCC_LGCCILOHONJ = 5725,
+    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_HMHLNKIKKHG)
+    GJPPDNGGKCC_HMHLNKIKKHG = 5705,
+    // @@protoc_insertion_point(enum_value:GJPPDNGGKCC.GJPPDNGGKCC_DLAEKJKFPJO)
+    GJPPDNGGKCC_DLAEKJKFPJO = 5775,
 }
 
 impl ::protobuf::Enum for GJPPDNGGKCC {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for GJPPDNGGKCC {
     fn from_i32(value: i32) -> ::std::option::Option<GJPPDNGGKCC> {
         match value {
             0 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_NLCDGIPGFDJ),
-            5729 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG),
-            5778 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO),
-            5732 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ),
-            5744 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD),
-            5713 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ),
+            5760 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD),
+            5734 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ),
+            5725 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ),
+            5705 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG),
+            5775 => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for GJPPDNGGKCC {
     fn from_str(str: &str) -> ::std::option::Option<GJPPDNGGKCC> {
         match str {
             "GJPPDNGGKCC_NLCDGIPGFDJ" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_NLCDGIPGFDJ),
+            "GJPPDNGGKCC_DNAPAEJPILD" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD),
+            "GJPPDNGGKCC_GGMOCMBGFAJ" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ),
+            "GJPPDNGGKCC_LGCCILOHONJ" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ),
             "GJPPDNGGKCC_HMHLNKIKKHG" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG),
             "GJPPDNGGKCC_DLAEKJKFPJO" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO),
-            "GJPPDNGGKCC_GGMOCMBGFAJ" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ),
-            "GJPPDNGGKCC_DNAPAEJPILD" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD),
-            "GJPPDNGGKCC_LGCCILOHONJ" => ::std::option::Option::Some(GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GJPPDNGGKCC] = &[
         GJPPDNGGKCC::GJPPDNGGKCC_NLCDGIPGFDJ,
+        GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD,
+        GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ,
+        GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ,
         GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG,
         GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO,
-        GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ,
-        GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD,
-        GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for GJPPDNGGKCC {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             GJPPDNGGKCC::GJPPDNGGKCC_NLCDGIPGFDJ => 0,
-            GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG => 1,
-            GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO => 2,
-            GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ => 3,
-            GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD => 4,
-            GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ => 5,
+            GJPPDNGGKCC::GJPPDNGGKCC_DNAPAEJPILD => 1,
+            GJPPDNGGKCC::GJPPDNGGKCC_GGMOCMBGFAJ => 2,
+            GJPPDNGGKCC::GJPPDNGGKCC_LGCCILOHONJ => 3,
+            GJPPDNGGKCC::GJPPDNGGKCC_HMHLNKIKKHG => 4,
+            GJPPDNGGKCC::GJPPDNGGKCC_DLAEKJKFPJO => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl GJPPDNGGKCC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GJPPDNGGKCC.proto*\xc0\x01\n\x0bGJPPDNGGKCC\x12\x1b\n\x17GJPPDNGGK\
-    CC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJPPDNGGKCC_HMHLNKIKKHG\x10\xe1,\x12\
-    \x1c\n\x17GJPPDNGGKCC_DLAEKJKFPJO\x10\x92-\x12\x1c\n\x17GJPPDNGGKCC_GGMO\
-    CMBGFAJ\x10\xe4,\x12\x1c\n\x17GJPPDNGGKCC_DNAPAEJPILD\x10\xf0,\x12\x1c\n\
-    \x17GJPPDNGGKCC_LGCCILOHONJ\x10\xd1,b\x06proto3\
+    CC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJPPDNGGKCC_DNAPAEJPILD\x10\x80-\x12\
+    \x1c\n\x17GJPPDNGGKCC_GGMOCMBGFAJ\x10\xe6,\x12\x1c\n\x17GJPPDNGGKCC_LGCC\
+    ILOHONJ\x10\xdd,\x12\x1c\n\x17GJPPDNGGKCC_HMHLNKIKKHG\x10\xc9,\x12\x1c\n\
+    \x17GJPPDNGGKCC_DLAEKJKFPJO\x10\x8f-b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

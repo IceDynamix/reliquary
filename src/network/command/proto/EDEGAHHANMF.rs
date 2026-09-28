@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDEGAHHANMF {
     // message fields
-    // @@protoc_insertion_point(field:EDEGAHHANMF.MBHJNPEILCL)
-    pub MBHJNPEILCL: u32,
-    // @@protoc_insertion_point(field:EDEGAHHANMF.OPENPJJLADD)
-    pub OPENPJJLADD: u32,
-    // @@protoc_insertion_point(field:EDEGAHHANMF.LCDDMLIMAGA)
-    pub LCDDMLIMAGA: u32,
-    // @@protoc_insertion_point(field:EDEGAHHANMF.IGENPDKHDMC)
-    pub IGENPDKHDMC: u32,
     // @@protoc_insertion_point(field:EDEGAHHANMF.PLKAGMLBCDG)
     pub PLKAGMLBCDG: u32,
+    // @@protoc_insertion_point(field:EDEGAHHANMF.MBHJNPEILCL)
+    pub MBHJNPEILCL: u32,
+    // @@protoc_insertion_point(field:EDEGAHHANMF.IGENPDKHDMC)
+    pub IGENPDKHDMC: u32,
+    // @@protoc_insertion_point(field:EDEGAHHANMF.LCDDMLIMAGA)
+    pub LCDDMLIMAGA: u32,
+    // @@protoc_insertion_point(field:EDEGAHHANMF.OPENPJJLADD)
+    pub OPENPJJLADD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EDEGAHHANMF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,14 @@ impl EDEGAHHANMF {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PLKAGMLBCDG",
+            |m: &EDEGAHHANMF| { &m.PLKAGMLBCDG },
+            |m: &mut EDEGAHHANMF| { &mut m.PLKAGMLBCDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBHJNPEILCL",
             |m: &EDEGAHHANMF| { &m.MBHJNPEILCL },
             |m: &mut EDEGAHHANMF| { &mut m.MBHJNPEILCL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPENPJJLADD",
-            |m: &EDEGAHHANMF| { &m.OPENPJJLADD },
-            |m: &mut EDEGAHHANMF| { &mut m.OPENPJJLADD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCDDMLIMAGA",
-            |m: &EDEGAHHANMF| { &m.LCDDMLIMAGA },
-            |m: &mut EDEGAHHANMF| { &mut m.LCDDMLIMAGA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGENPDKHDMC",
@@ -78,9 +73,14 @@ impl EDEGAHHANMF {
             |m: &mut EDEGAHHANMF| { &mut m.IGENPDKHDMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLKAGMLBCDG",
-            |m: &EDEGAHHANMF| { &m.PLKAGMLBCDG },
-            |m: &mut EDEGAHHANMF| { &mut m.PLKAGMLBCDG },
+            "LCDDMLIMAGA",
+            |m: &EDEGAHHANMF| { &m.LCDDMLIMAGA },
+            |m: &mut EDEGAHHANMF| { &mut m.LCDDMLIMAGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPENPJJLADD",
+            |m: &EDEGAHHANMF| { &m.OPENPJJLADD },
+            |m: &mut EDEGAHHANMF| { &mut m.OPENPJJLADD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EDEGAHHANMF>(
             "EDEGAHHANMF",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EDEGAHHANMF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
+                    self.PLKAGMLBCDG = is.read_uint32()?;
+                },
+                40 => {
                     self.MBHJNPEILCL = is.read_uint32()?;
                 },
-                72 => {
-                    self.OPENPJJLADD = is.read_uint32()?;
-                },
-                80 => {
-                    self.LCDDMLIMAGA = is.read_uint32()?;
-                },
-                96 => {
+                64 => {
                     self.IGENPDKHDMC = is.read_uint32()?;
                 },
-                104 => {
-                    self.PLKAGMLBCDG = is.read_uint32()?;
+                112 => {
+                    self.LCDDMLIMAGA = is.read_uint32()?;
+                },
+                120 => {
+                    self.OPENPJJLADD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for EDEGAHHANMF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.PLKAGMLBCDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PLKAGMLBCDG);
+        }
         if self.MBHJNPEILCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MBHJNPEILCL);
-        }
-        if self.OPENPJJLADD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OPENPJJLADD);
-        }
-        if self.LCDDMLIMAGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LCDDMLIMAGA);
+            my_size += ::protobuf::rt::uint32_size(5, self.MBHJNPEILCL);
         }
         if self.IGENPDKHDMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IGENPDKHDMC);
+            my_size += ::protobuf::rt::uint32_size(8, self.IGENPDKHDMC);
         }
-        if self.PLKAGMLBCDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PLKAGMLBCDG);
+        if self.LCDDMLIMAGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LCDDMLIMAGA);
+        }
+        if self.OPENPJJLADD != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.OPENPJJLADD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for EDEGAHHANMF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.PLKAGMLBCDG != 0 {
+            os.write_uint32(3, self.PLKAGMLBCDG)?;
+        }
         if self.MBHJNPEILCL != 0 {
-            os.write_uint32(2, self.MBHJNPEILCL)?;
-        }
-        if self.OPENPJJLADD != 0 {
-            os.write_uint32(9, self.OPENPJJLADD)?;
-        }
-        if self.LCDDMLIMAGA != 0 {
-            os.write_uint32(10, self.LCDDMLIMAGA)?;
+            os.write_uint32(5, self.MBHJNPEILCL)?;
         }
         if self.IGENPDKHDMC != 0 {
-            os.write_uint32(12, self.IGENPDKHDMC)?;
+            os.write_uint32(8, self.IGENPDKHDMC)?;
         }
-        if self.PLKAGMLBCDG != 0 {
-            os.write_uint32(13, self.PLKAGMLBCDG)?;
+        if self.LCDDMLIMAGA != 0 {
+            os.write_uint32(14, self.LCDDMLIMAGA)?;
+        }
+        if self.OPENPJJLADD != 0 {
+            os.write_uint32(15, self.OPENPJJLADD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for EDEGAHHANMF {
     }
 
     fn clear(&mut self) {
-        self.MBHJNPEILCL = 0;
-        self.OPENPJJLADD = 0;
-        self.LCDDMLIMAGA = 0;
-        self.IGENPDKHDMC = 0;
         self.PLKAGMLBCDG = 0;
+        self.MBHJNPEILCL = 0;
+        self.IGENPDKHDMC = 0;
+        self.LCDDMLIMAGA = 0;
+        self.OPENPJJLADD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDEGAHHANMF {
         static instance: EDEGAHHANMF = EDEGAHHANMF {
-            MBHJNPEILCL: 0,
-            OPENPJJLADD: 0,
-            LCDDMLIMAGA: 0,
-            IGENPDKHDMC: 0,
             PLKAGMLBCDG: 0,
+            MBHJNPEILCL: 0,
+            IGENPDKHDMC: 0,
+            LCDDMLIMAGA: 0,
+            OPENPJJLADD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for EDEGAHHANMF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDEGAHHANMF.proto\"\xb7\x01\n\x0bEDEGAHHANMF\x12\x20\n\x0bMBHJNPEI\
-    LCL\x18\x02\x20\x01(\rR\x0bMBHJNPEILCL\x12\x20\n\x0bOPENPJJLADD\x18\t\
-    \x20\x01(\rR\x0bOPENPJJLADD\x12\x20\n\x0bLCDDMLIMAGA\x18\n\x20\x01(\rR\
-    \x0bLCDDMLIMAGA\x12\x20\n\x0bIGENPDKHDMC\x18\x0c\x20\x01(\rR\x0bIGENPDKH\
-    DMC\x12\x20\n\x0bPLKAGMLBCDG\x18\r\x20\x01(\rR\x0bPLKAGMLBCDGb\x06proto3\
+    \n\x11EDEGAHHANMF.proto\"\xb7\x01\n\x0bEDEGAHHANMF\x12\x20\n\x0bPLKAGMLB\
+    CDG\x18\x03\x20\x01(\rR\x0bPLKAGMLBCDG\x12\x20\n\x0bMBHJNPEILCL\x18\x05\
+    \x20\x01(\rR\x0bMBHJNPEILCL\x12\x20\n\x0bIGENPDKHDMC\x18\x08\x20\x01(\rR\
+    \x0bIGENPDKHDMC\x12\x20\n\x0bLCDDMLIMAGA\x18\x0e\x20\x01(\rR\x0bLCDDMLIM\
+    AGA\x12\x20\n\x0bOPENPJJLADD\x18\x0f\x20\x01(\rR\x0bOPENPJJLADDb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

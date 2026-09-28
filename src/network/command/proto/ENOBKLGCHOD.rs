@@ -92,13 +92,13 @@ impl ::protobuf::Message for ENOBKLGCHOD {
                 8 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
-                90 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
                 },
-                88 => {
+                32 => {
                     self.unfinished_story_line_id_list.push(is.read_uint32()?);
                 },
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFEODNJNGDP)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ENOBKLGCHOD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NOEPBNMJFGL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.unfinished_story_line_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.unfinished_story_line_id_list);
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -126,9 +126,9 @@ impl ::protobuf::Message for ENOBKLGCHOD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.NOEPBNMJFGL)?;
-        os.write_repeated_packed_uint32(11, &self.unfinished_story_line_id_list)?;
+        os.write_repeated_packed_uint32(4, &self.unfinished_story_line_id_list)?;
         if let Some(v) = self.MFEODNJNGDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for ENOBKLGCHOD {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENOBKLGCHOD.proto\x1a\x11KCMFAIBMOHB.proto\"\xa1\x01\n\x0bENOBKLGC\
     HOD\x12\x20\n\x0bNOEPBNMJFGL\x18\x01\x20\x03(\rR\x0bNOEPBNMJFGL\x12@\n\
-    \x1dunfinished_story_line_id_list\x18\x0b\x20\x03(\rR\x19unfinishedStory\
-    LineIdList\x12.\n\x0bMFEODNJNGDP\x18\x0c\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\
+    \x1dunfinished_story_line_id_list\x18\x04\x20\x03(\rR\x19unfinishedStory\
+    LineIdList\x12.\n\x0bMFEODNJNGDP\x18\t\x20\x01(\x0b2\x0c.KCMFAIBMOHBR\
     \x0bMFEODNJNGDPb\x06proto3\
 ";
 

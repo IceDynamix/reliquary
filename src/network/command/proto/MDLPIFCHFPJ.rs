@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MDLPIFCHFPJ {
     // message fields
-    // @@protoc_insertion_point(field:MDLPIFCHFPJ.JCOBJAMPOAL)
-    pub JCOBJAMPOAL: ::protobuf::MessageField<super::FDBDLBAPDBE::FDBDLBAPDBE>,
     // @@protoc_insertion_point(field:MDLPIFCHFPJ.INJEKPLHPIF)
     pub INJEKPLHPIF: u32,
+    // @@protoc_insertion_point(field:MDLPIFCHFPJ.JCOBJAMPOAL)
+    pub JCOBJAMPOAL: ::protobuf::MessageField<super::FDBDLBAPDBE::FDBDLBAPDBE>,
     // special fields
     // @@protoc_insertion_point(special_field:MDLPIFCHFPJ.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MDLPIFCHFPJ {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FDBDLBAPDBE::FDBDLBAPDBE>(
-            "JCOBJAMPOAL",
-            |m: &MDLPIFCHFPJ| { &m.JCOBJAMPOAL },
-            |m: &mut MDLPIFCHFPJ| { &mut m.JCOBJAMPOAL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "INJEKPLHPIF",
             |m: &MDLPIFCHFPJ| { &m.INJEKPLHPIF },
             |m: &mut MDLPIFCHFPJ| { &mut m.INJEKPLHPIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FDBDLBAPDBE::FDBDLBAPDBE>(
+            "JCOBJAMPOAL",
+            |m: &MDLPIFCHFPJ| { &m.JCOBJAMPOAL },
+            |m: &mut MDLPIFCHFPJ| { &mut m.JCOBJAMPOAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MDLPIFCHFPJ>(
             "MDLPIFCHFPJ",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MDLPIFCHFPJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCOBJAMPOAL)?;
-                },
-                96 => {
+                56 => {
                     self.INJEKPLHPIF = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JCOBJAMPOAL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MDLPIFCHFPJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.INJEKPLHPIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.INJEKPLHPIF);
+        }
         if let Some(v) = self.JCOBJAMPOAL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.INJEKPLHPIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.INJEKPLHPIF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MDLPIFCHFPJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JCOBJAMPOAL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if self.INJEKPLHPIF != 0 {
-            os.write_uint32(12, self.INJEKPLHPIF)?;
+            os.write_uint32(7, self.INJEKPLHPIF)?;
+        }
+        if let Some(v) = self.JCOBJAMPOAL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MDLPIFCHFPJ {
     }
 
     fn clear(&mut self) {
-        self.JCOBJAMPOAL.clear();
         self.INJEKPLHPIF = 0;
+        self.JCOBJAMPOAL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MDLPIFCHFPJ {
         static instance: MDLPIFCHFPJ = MDLPIFCHFPJ {
-            JCOBJAMPOAL: ::protobuf::MessageField::none(),
             INJEKPLHPIF: 0,
+            JCOBJAMPOAL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MDLPIFCHFPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MDLPIFCHFPJ.proto\x1a\x11FDBDLBAPDBE.proto\"_\n\x0bMDLPIFCHFPJ\x12\
-    .\n\x0bJCOBJAMPOAL\x18\x07\x20\x01(\x0b2\x0c.FDBDLBAPDBER\x0bJCOBJAMPOAL\
-    \x12\x20\n\x0bINJEKPLHPIF\x18\x0c\x20\x01(\rR\x0bINJEKPLHPIFb\x06proto3\
+    \x20\n\x0bINJEKPLHPIF\x18\x07\x20\x01(\rR\x0bINJEKPLHPIF\x12.\n\x0bJCOBJ\
+    AMPOAL\x18\t\x20\x01(\x0b2\x0c.FDBDLBAPDBER\x0bJCOBJAMPOALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGiveCardPieceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.teleport_id)
-    pub teleport_id: u32,
     // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.JEAGHJHMCEN)
     pub JEAGHJHMCEN: i64,
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.JAKKDGHLJPH)
-    pub JAKKDGHLJPH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.CBMBOBNCKMO)
     pub CBMBOBNCKMO: u64,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.teleport_id)
+    pub teleport_id: u32,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.JAKKDGHLJPH)
+    pub JAKKDGHLJPH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -58,24 +58,24 @@ impl PlanetFesGiveCardPieceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "teleport_id",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.teleport_id },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.teleport_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JEAGHJHMCEN",
             |m: &PlanetFesGiveCardPieceScRsp| { &m.JEAGHJHMCEN },
             |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.JEAGHJHMCEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JAKKDGHLJPH",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.JAKKDGHLJPH },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.JAKKDGHLJPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CBMBOBNCKMO",
             |m: &PlanetFesGiveCardPieceScRsp| { &m.CBMBOBNCKMO },
             |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.CBMBOBNCKMO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "teleport_id",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.teleport_id },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.teleport_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JAKKDGHLJPH",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.JAKKDGHLJPH },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.JAKKDGHLJPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.teleport_id = is.read_uint32()?;
-                },
                 16 => {
                     self.JEAGHJHMCEN = is.read_int64()?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JAKKDGHLJPH)?;
-                },
-                64 => {
-                    self.JAKKDGHLJPH.push(is.read_uint32()?);
-                },
-                96 => {
+                56 => {
                     self.CBMBOBNCKMO = is.read_uint64()?;
                 },
-                112 => {
+                64 => {
+                    self.teleport_id = is.read_uint32()?;
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JAKKDGHLJPH)?;
+                },
+                72 => {
+                    self.JAKKDGHLJPH.push(is.read_uint32()?);
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -130,18 +130,18 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.teleport_id);
-        }
         if self.JEAGHJHMCEN != 0 {
             my_size += ::protobuf::rt::int64_size(2, self.JEAGHJHMCEN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JAKKDGHLJPH);
         if self.CBMBOBNCKMO != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.CBMBOBNCKMO);
+            my_size += ::protobuf::rt::uint64_size(7, self.CBMBOBNCKMO);
         }
+        if self.teleport_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.teleport_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JAKKDGHLJPH);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.teleport_id != 0 {
-            os.write_uint32(1, self.teleport_id)?;
-        }
         if self.JEAGHJHMCEN != 0 {
             os.write_int64(2, self.JEAGHJHMCEN)?;
         }
-        os.write_repeated_packed_uint32(8, &self.JAKKDGHLJPH)?;
         if self.CBMBOBNCKMO != 0 {
-            os.write_uint64(12, self.CBMBOBNCKMO)?;
+            os.write_uint64(7, self.CBMBOBNCKMO)?;
         }
+        if self.teleport_id != 0 {
+            os.write_uint32(8, self.teleport_id)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.JAKKDGHLJPH)?;
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,20 +179,20 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     }
 
     fn clear(&mut self) {
-        self.teleport_id = 0;
         self.JEAGHJHMCEN = 0;
-        self.JAKKDGHLJPH.clear();
         self.CBMBOBNCKMO = 0;
+        self.teleport_id = 0;
+        self.JAKKDGHLJPH.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGiveCardPieceScRsp {
         static instance: PlanetFesGiveCardPieceScRsp = PlanetFesGiveCardPieceScRsp {
-            teleport_id: 0,
             JEAGHJHMCEN: 0,
-            JAKKDGHLJPH: ::std::vec::Vec::new(),
             CBMBOBNCKMO: 0,
+            teleport_id: 0,
+            JAKKDGHLJPH: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -219,10 +219,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGiveCardPieceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesGiveCardPieceScRsp.proto\"\xbe\x01\n\x1bPlanetFesGiveCardPie\
-    ceScRsp\x12\x1f\n\x0bteleport_id\x18\x01\x20\x01(\rR\nteleportId\x12\x20\
-    \n\x0bJEAGHJHMCEN\x18\x02\x20\x01(\x03R\x0bJEAGHJHMCEN\x12\x20\n\x0bJAKK\
-    DGHLJPH\x18\x08\x20\x03(\rR\x0bJAKKDGHLJPH\x12\x20\n\x0bCBMBOBNCKMO\x18\
-    \x0c\x20\x01(\x04R\x0bCBMBOBNCKMO\x12\x18\n\x07retcode\x18\x0e\x20\x01(\
+    ceScRsp\x12\x20\n\x0bJEAGHJHMCEN\x18\x02\x20\x01(\x03R\x0bJEAGHJHMCEN\
+    \x12\x20\n\x0bCBMBOBNCKMO\x18\x07\x20\x01(\x04R\x0bCBMBOBNCKMO\x12\x1f\n\
+    \x0bteleport_id\x18\x08\x20\x01(\rR\nteleportId\x12\x20\n\x0bJAKKDGHLJPH\
+    \x18\t\x20\x03(\rR\x0bJAKKDGHLJPH\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
     \rR\x07retcodeb\x06proto3\
 ";
 

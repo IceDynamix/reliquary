@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct CKPOBLIFMGN {
     // message fields
     // @@protoc_insertion_point(field:CKPOBLIFMGN.MHFHLBHFIBC)
-    pub MHFHLBHFIBC: ::protobuf::MessageField<super::H_7ea7c866::H_7ea7c866>,
+    pub MHFHLBHFIBC: ::protobuf::MessageField<super::FMNKKAMOHEE::FMNKKAMOHEE>,
     // special fields
     // @@protoc_insertion_point(special_field:CKPOBLIFMGN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl CKPOBLIFMGN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_7ea7c866::H_7ea7c866>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FMNKKAMOHEE::FMNKKAMOHEE>(
             "MHFHLBHFIBC",
             |m: &CKPOBLIFMGN| { &m.MHFHLBHFIBC },
             |m: &mut CKPOBLIFMGN| { &mut m.MHFHLBHFIBC },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for CKPOBLIFMGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MHFHLBHFIBC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CKPOBLIFMGN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MHFHLBHFIBC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for CKPOBLIFMGN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKPOBLIFMGN.proto\x1a\x10H_7ea7c866.proto\"<\n\x0bCKPOBLIFMGN\x12-\
-    \n\x0bMHFHLBHFIBC\x18\r\x20\x01(\x0b2\x0b.H_7ea7c866R\x0bMHFHLBHFIBCb\
-    \x06proto3\
+    \n\x11CKPOBLIFMGN.proto\x1a\x11FMNKKAMOHEE.proto\"=\n\x0bCKPOBLIFMGN\x12\
+    .\n\x0bMHFHLBHFIBC\x18\x06\x20\x01(\x0b2\x0c.FMNKKAMOHEER\x0bMHFHLBHFIBC\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_7ea7c866::file_descriptor().clone());
+            deps.push(super::FMNKKAMOHEE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CKPOBLIFMGN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

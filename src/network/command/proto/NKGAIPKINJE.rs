@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NKGAIPKINJE {
     // message fields
-    // @@protoc_insertion_point(field:NKGAIPKINJE.type)
-    pub type_: u32,
     // @@protoc_insertion_point(field:NKGAIPKINJE.ONHHLCKNHHH)
     pub ONHHLCKNHHH: ::protobuf::MessageField<super::KIAKKNFLEPN::KIAKKNFLEPN>,
+    // @@protoc_insertion_point(field:NKGAIPKINJE.type)
+    pub type_: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NKGAIPKINJE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NKGAIPKINJE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &NKGAIPKINJE| { &m.type_ },
-            |m: &mut NKGAIPKINJE| { &mut m.type_ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIAKKNFLEPN::KIAKKNFLEPN>(
             "ONHHLCKNHHH",
             |m: &NKGAIPKINJE| { &m.ONHHLCKNHHH },
             |m: &mut NKGAIPKINJE| { &mut m.ONHHLCKNHHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &NKGAIPKINJE| { &m.type_ },
+            |m: &mut NKGAIPKINJE| { &mut m.type_ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NKGAIPKINJE>(
             "NKGAIPKINJE",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NKGAIPKINJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.type_ = is.read_uint32()?;
-                },
-                90 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONHHLCKNHHH)?;
+                },
+                56 => {
+                    self.type_ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for NKGAIPKINJE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.type_);
-        }
         if let Some(v) = self.ONHHLCKNHHH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.type_ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.type_);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for NKGAIPKINJE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != 0 {
-            os.write_uint32(2, self.type_)?;
-        }
         if let Some(v) = self.ONHHLCKNHHH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.type_ != 0 {
+            os.write_uint32(7, self.type_)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for NKGAIPKINJE {
     }
 
     fn clear(&mut self) {
-        self.type_ = 0;
         self.ONHHLCKNHHH.clear();
+        self.type_ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NKGAIPKINJE {
         static instance: NKGAIPKINJE = NKGAIPKINJE {
-            type_: 0,
             ONHHLCKNHHH: ::protobuf::MessageField::none(),
+            type_: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for NKGAIPKINJE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NKGAIPKINJE.proto\x1a\x11KIAKKNFLEPN.proto\"Q\n\x0bNKGAIPKINJE\x12\
-    \x12\n\x04type\x18\x02\x20\x01(\rR\x04type\x12.\n\x0bONHHLCKNHHH\x18\x0b\
-    \x20\x01(\x0b2\x0c.KIAKKNFLEPNR\x0bONHHLCKNHHHb\x06proto3\
+    .\n\x0bONHHLCKNHHH\x18\x06\x20\x01(\x0b2\x0c.KIAKKNFLEPNR\x0bONHHLCKNHHH\
+    \x12\x12\n\x04type\x18\x07\x20\x01(\rR\x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

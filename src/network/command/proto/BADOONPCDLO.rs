@@ -30,10 +30,10 @@ pub struct BADOONPCDLO {
     // message fields
     // @@protoc_insertion_point(field:BADOONPCDLO.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:BADOONPCDLO.time)
-    pub time: u32,
     // @@protoc_insertion_point(field:BADOONPCDLO.AJGOLAKNGPA)
     pub AJGOLAKNGPA: bool,
+    // @@protoc_insertion_point(field:BADOONPCDLO.time)
+    pub time: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BADOONPCDLO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl BADOONPCDLO {
             |m: &mut BADOONPCDLO| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "time",
-            |m: &BADOONPCDLO| { &m.time },
-            |m: &mut BADOONPCDLO| { &mut m.time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AJGOLAKNGPA",
             |m: &BADOONPCDLO| { &m.AJGOLAKNGPA },
             |m: &mut BADOONPCDLO| { &mut m.AJGOLAKNGPA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "time",
+            |m: &BADOONPCDLO| { &m.time },
+            |m: &mut BADOONPCDLO| { &mut m.time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BADOONPCDLO>(
             "BADOONPCDLO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BADOONPCDLO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.level_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.time = is.read_uint32()?;
-                },
-                112 => {
+                48 => {
                     self.AJGOLAKNGPA = is.read_bool()?;
+                },
+                64 => {
+                    self.time = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for BADOONPCDLO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level_id);
-        }
-        if self.time != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.time);
+            my_size += ::protobuf::rt::uint32_size(4, self.level_id);
         }
         if self.AJGOLAKNGPA != false {
             my_size += 1 + 1;
+        }
+        if self.time != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for BADOONPCDLO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level_id != 0 {
-            os.write_uint32(5, self.level_id)?;
-        }
-        if self.time != 0 {
-            os.write_uint32(9, self.time)?;
+            os.write_uint32(4, self.level_id)?;
         }
         if self.AJGOLAKNGPA != false {
-            os.write_bool(14, self.AJGOLAKNGPA)?;
+            os.write_bool(6, self.AJGOLAKNGPA)?;
+        }
+        if self.time != 0 {
+            os.write_uint32(8, self.time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BADOONPCDLO {
 
     fn clear(&mut self) {
         self.level_id = 0;
-        self.time = 0;
         self.AJGOLAKNGPA = false;
+        self.time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BADOONPCDLO {
         static instance: BADOONPCDLO = BADOONPCDLO {
             level_id: 0,
-            time: 0,
             AJGOLAKNGPA: false,
+            time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for BADOONPCDLO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BADOONPCDLO.proto\"^\n\x0bBADOONPCDLO\x12\x19\n\x08level_id\x18\
-    \x05\x20\x01(\rR\x07levelId\x12\x12\n\x04time\x18\t\x20\x01(\rR\x04time\
-    \x12\x20\n\x0bAJGOLAKNGPA\x18\x0e\x20\x01(\x08R\x0bAJGOLAKNGPAb\x06proto\
-    3\
+    \x04\x20\x01(\rR\x07levelId\x12\x20\n\x0bAJGOLAKNGPA\x18\x06\x20\x01(\
+    \x08R\x0bAJGOLAKNGPA\x12\x12\n\x04time\x18\x08\x20\x01(\rR\x04timeb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

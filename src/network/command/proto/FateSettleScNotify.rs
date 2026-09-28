@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateSettleScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FateSettleScNotify.LNBBPPKLBFA)
-    pub LNBBPPKLBFA: ::protobuf::MessageField<super::HJFCEEBAGMF::HJFCEEBAGMF>,
     // @@protoc_insertion_point(field:FateSettleScNotify.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:FateSettleScNotify.LNBBPPKLBFA)
+    pub LNBBPPKLBFA: ::protobuf::MessageField<super::HJFCEEBAGMF::HJFCEEBAGMF>,
     // @@protoc_insertion_point(field:FateSettleScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -53,15 +53,15 @@ impl FateSettleScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HJFCEEBAGMF::HJFCEEBAGMF>(
-            "LNBBPPKLBFA",
-            |m: &FateSettleScNotify| { &m.LNBBPPKLBFA },
-            |m: &mut FateSettleScNotify| { &mut m.LNBBPPKLBFA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &FateSettleScNotify| { &m.score_id },
             |m: &mut FateSettleScNotify| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HJFCEEBAGMF::HJFCEEBAGMF>(
+            "LNBBPPKLBFA",
+            |m: &FateSettleScNotify| { &m.LNBBPPKLBFA },
+            |m: &mut FateSettleScNotify| { &mut m.LNBBPPKLBFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FateSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNBBPPKLBFA)?;
-                },
-                64 => {
+                16 => {
                     self.score_id = is.read_uint32()?;
                 },
-                74 => {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNBBPPKLBFA)?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -107,12 +107,12 @@ impl ::protobuf::Message for FateSettleScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
+        }
         if let Some(v) = self.LNBBPPKLBFA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -124,14 +124,14 @@ impl ::protobuf::Message for FateSettleScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LNBBPPKLBFA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.score_id != 0 {
-            os.write_uint32(8, self.score_id)?;
+            os.write_uint32(2, self.score_id)?;
+        }
+        if let Some(v) = self.LNBBPPKLBFA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for FateSettleScNotify {
     }
 
     fn clear(&mut self) {
-        self.LNBBPPKLBFA.clear();
         self.score_id = 0;
+        self.LNBBPPKLBFA.clear();
         self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateSettleScNotify {
         static instance: FateSettleScNotify = FateSettleScNotify {
-            LNBBPPKLBFA: ::protobuf::MessageField::none(),
             score_id: 0,
+            LNBBPPKLBFA: ::protobuf::MessageField::none(),
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for FateSettleScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FateSettleScNotify.proto\x1a\x11HJFCEEBAGMF.proto\x1a\x0eItemList.\
-    proto\"\x82\x01\n\x12FateSettleScNotify\x12.\n\x0bLNBBPPKLBFA\x18\x01\
-    \x20\x01(\x0b2\x0c.HJFCEEBAGMFR\x0bLNBBPPKLBFA\x12\x19\n\x08score_id\x18\
-    \x08\x20\x01(\rR\x07scoreId\x12!\n\x06reward\x18\t\x20\x01(\x0b2\t.ItemL\
-    istR\x06rewardb\x06proto3\
+    proto\"\x82\x01\n\x12FateSettleScNotify\x12\x19\n\x08score_id\x18\x02\
+    \x20\x01(\rR\x07scoreId\x12.\n\x0bLNBBPPKLBFA\x18\x05\x20\x01(\x0b2\x0c.\
+    HJFCEEBAGMFR\x0bLNBBPPKLBFA\x12!\n\x06reward\x18\x0e\x20\x01(\x0b2\t.Ite\
+    mListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct IAJMCLGLAAC {
     // message fields
     // @@protoc_insertion_point(field:IAJMCLGLAAC.PHHMKHNPJJK)
     pub PHHMKHNPJJK: u32,
-    // @@protoc_insertion_point(field:IAJMCLGLAAC.friend_recommend_list)
-    pub friend_recommend_list: ::std::vec::Vec<super::FHHGBMIEBOE::FHHGBMIEBOE>,
     // @@protoc_insertion_point(field:IAJMCLGLAAC.PHOKGKFBHJF)
     pub PHOKGKFBHJF: u32,
+    // @@protoc_insertion_point(field:IAJMCLGLAAC.friend_recommend_list)
+    pub friend_recommend_list: ::std::vec::Vec<super::FHHGBMIEBOE::FHHGBMIEBOE>,
     // @@protoc_insertion_point(field:IAJMCLGLAAC.DPHAJPEADAF)
     pub DPHAJPEADAF: u32,
     // special fields
@@ -60,15 +60,15 @@ impl IAJMCLGLAAC {
             |m: &IAJMCLGLAAC| { &m.PHHMKHNPJJK },
             |m: &mut IAJMCLGLAAC| { &mut m.PHHMKHNPJJK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "friend_recommend_list",
-            |m: &IAJMCLGLAAC| { &m.friend_recommend_list },
-            |m: &mut IAJMCLGLAAC| { &mut m.friend_recommend_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PHOKGKFBHJF",
             |m: &IAJMCLGLAAC| { &m.PHOKGKFBHJF },
             |m: &mut IAJMCLGLAAC| { &mut m.PHOKGKFBHJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "friend_recommend_list",
+            |m: &IAJMCLGLAAC| { &m.friend_recommend_list },
+            |m: &mut IAJMCLGLAAC| { &mut m.friend_recommend_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DPHAJPEADAF",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.PHHMKHNPJJK = is.read_uint32()?;
                 },
-                58 => {
-                    self.friend_recommend_list.push(is.read_message()?);
-                },
-                64 => {
+                80 => {
                     self.PHOKGKFBHJF = is.read_uint32()?;
                 },
-                96 => {
+                106 => {
+                    self.friend_recommend_list.push(is.read_message()?);
+                },
+                120 => {
                     self.DPHAJPEADAF = is.read_uint32()?;
                 },
                 tag => {
@@ -118,17 +118,17 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PHHMKHNPJJK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PHHMKHNPJJK);
+            my_size += ::protobuf::rt::uint32_size(1, self.PHHMKHNPJJK);
+        }
+        if self.PHOKGKFBHJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.PHOKGKFBHJF);
         }
         for value in &self.friend_recommend_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PHOKGKFBHJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PHOKGKFBHJF);
-        }
         if self.DPHAJPEADAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DPHAJPEADAF);
+            my_size += ::protobuf::rt::uint32_size(15, self.DPHAJPEADAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for IAJMCLGLAAC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PHHMKHNPJJK != 0 {
-            os.write_uint32(6, self.PHHMKHNPJJK)?;
+            os.write_uint32(1, self.PHHMKHNPJJK)?;
+        }
+        if self.PHOKGKFBHJF != 0 {
+            os.write_uint32(10, self.PHOKGKFBHJF)?;
         }
         for v in &self.friend_recommend_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.PHOKGKFBHJF != 0 {
-            os.write_uint32(8, self.PHOKGKFBHJF)?;
-        }
         if self.DPHAJPEADAF != 0 {
-            os.write_uint32(12, self.DPHAJPEADAF)?;
+            os.write_uint32(15, self.DPHAJPEADAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for IAJMCLGLAAC {
 
     fn clear(&mut self) {
         self.PHHMKHNPJJK = 0;
-        self.friend_recommend_list.clear();
         self.PHOKGKFBHJF = 0;
+        self.friend_recommend_list.clear();
         self.DPHAJPEADAF = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for IAJMCLGLAAC {
     fn default_instance() -> &'static IAJMCLGLAAC {
         static instance: IAJMCLGLAAC = IAJMCLGLAAC {
             PHHMKHNPJJK: 0,
-            friend_recommend_list: ::std::vec::Vec::new(),
             PHOKGKFBHJF: 0,
+            friend_recommend_list: ::std::vec::Vec::new(),
             DPHAJPEADAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for IAJMCLGLAAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IAJMCLGLAAC.proto\x1a\x11FHHGBMIEBOE.proto\"\xb5\x01\n\x0bIAJMCLGL\
-    AAC\x12\x20\n\x0bPHHMKHNPJJK\x18\x06\x20\x01(\rR\x0bPHHMKHNPJJK\x12@\n\
-    \x15friend_recommend_list\x18\x07\x20\x03(\x0b2\x0c.FHHGBMIEBOER\x13frie\
-    ndRecommendList\x12\x20\n\x0bPHOKGKFBHJF\x18\x08\x20\x01(\rR\x0bPHOKGKFB\
-    HJF\x12\x20\n\x0bDPHAJPEADAF\x18\x0c\x20\x01(\rR\x0bDPHAJPEADAFb\x06prot\
-    o3\
+    AAC\x12\x20\n\x0bPHHMKHNPJJK\x18\x01\x20\x01(\rR\x0bPHHMKHNPJJK\x12\x20\
+    \n\x0bPHOKGKFBHJF\x18\n\x20\x01(\rR\x0bPHOKGKFBHJF\x12@\n\x15friend_reco\
+    mmend_list\x18\r\x20\x03(\x0b2\x0c.FHHGBMIEBOER\x13friendRecommendList\
+    \x12\x20\n\x0bDPHAJPEADAF\x18\x0f\x20\x01(\rR\x0bDPHAJPEADAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

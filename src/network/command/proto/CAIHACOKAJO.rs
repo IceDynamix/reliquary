@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CAIHACOKAJO {
     // message fields
-    // @@protoc_insertion_point(field:CAIHACOKAJO.ELMCGFMGILI)
-    pub ELMCGFMGILI: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:CAIHACOKAJO.ODOBGIEGGEO)
     pub ODOBGIEGGEO: u32,
     // @@protoc_insertion_point(field:CAIHACOKAJO.AEGPLACJFIO)
     pub AEGPLACJFIO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CAIHACOKAJO.ELMCGFMGILI)
+    pub ELMCGFMGILI: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:CAIHACOKAJO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl CAIHACOKAJO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ELMCGFMGILI",
-            |m: &CAIHACOKAJO| { &m.ELMCGFMGILI },
-            |m: &mut CAIHACOKAJO| { &mut m.ELMCGFMGILI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ODOBGIEGGEO",
             |m: &CAIHACOKAJO| { &m.ODOBGIEGGEO },
@@ -67,6 +62,11 @@ impl CAIHACOKAJO {
             "AEGPLACJFIO",
             |m: &CAIHACOKAJO| { &m.AEGPLACJFIO },
             |m: &mut CAIHACOKAJO| { &mut m.AEGPLACJFIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "ELMCGFMGILI",
+            |m: &CAIHACOKAJO| { &m.ELMCGFMGILI },
+            |m: &mut CAIHACOKAJO| { &mut m.ELMCGFMGILI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CAIHACOKAJO>(
             "CAIHACOKAJO",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for CAIHACOKAJO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELMCGFMGILI)?;
-                },
-                64 => {
+                8 => {
                     self.ODOBGIEGGEO = is.read_uint32()?;
                 },
-                98 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.AEGPLACJFIO)?;
                 },
-                96 => {
+                24 => {
                     self.AEGPLACJFIO.push(is.read_uint32()?);
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELMCGFMGILI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,27 +110,27 @@ impl ::protobuf::Message for CAIHACOKAJO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ODOBGIEGGEO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ODOBGIEGGEO);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AEGPLACJFIO);
         if let Some(v) = self.ELMCGFMGILI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.ODOBGIEGGEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ODOBGIEGGEO);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.AEGPLACJFIO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ELMCGFMGILI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.ODOBGIEGGEO != 0 {
-            os.write_uint32(8, self.ODOBGIEGGEO)?;
+            os.write_uint32(1, self.ODOBGIEGGEO)?;
         }
-        os.write_repeated_packed_uint32(12, &self.AEGPLACJFIO)?;
+        os.write_repeated_packed_uint32(3, &self.AEGPLACJFIO)?;
+        if let Some(v) = self.ELMCGFMGILI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,17 +148,17 @@ impl ::protobuf::Message for CAIHACOKAJO {
     }
 
     fn clear(&mut self) {
-        self.ELMCGFMGILI.clear();
         self.ODOBGIEGGEO = 0;
         self.AEGPLACJFIO.clear();
+        self.ELMCGFMGILI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CAIHACOKAJO {
         static instance: CAIHACOKAJO = CAIHACOKAJO {
-            ELMCGFMGILI: ::protobuf::MessageField::none(),
             ODOBGIEGGEO: 0,
             AEGPLACJFIO: ::std::vec::Vec::new(),
+            ELMCGFMGILI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for CAIHACOKAJO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CAIHACOKAJO.proto\x1a\x0eItemList.proto\"~\n\x0bCAIHACOKAJO\x12+\n\
-    \x0bELMCGFMGILI\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bELMCGFMGILI\x12\x20\
-    \n\x0bODOBGIEGGEO\x18\x08\x20\x01(\rR\x0bODOBGIEGGEO\x12\x20\n\x0bAEGPLA\
-    CJFIO\x18\x0c\x20\x03(\rR\x0bAEGPLACJFIOb\x06proto3\
+    \n\x11CAIHACOKAJO.proto\x1a\x0eItemList.proto\"~\n\x0bCAIHACOKAJO\x12\
+    \x20\n\x0bODOBGIEGGEO\x18\x01\x20\x01(\rR\x0bODOBGIEGGEO\x12\x20\n\x0bAE\
+    GPLACJFIO\x18\x03\x20\x03(\rR\x0bAEGPLACJFIO\x12+\n\x0bELMCGFMGILI\x18\r\
+    \x20\x01(\x0b2\t.ItemListR\x0bELMCGFMGILIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

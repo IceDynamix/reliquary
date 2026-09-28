@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KDPGIMOOLON {
     // message fields
-    // @@protoc_insertion_point(field:KDPGIMOOLON.KNJMPBHKHCJ)
-    pub KNJMPBHKHCJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KDPGIMOOLON.JKOOLMNHPHI)
-    pub JKOOLMNHPHI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.PEDFLGGDHDP)
     pub PEDFLGGDHDP: u32,
+    // @@protoc_insertion_point(field:KDPGIMOOLON.KNJMPBHKHCJ)
+    pub KNJMPBHKHCJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.PGMHMPEHPHP)
     pub PGMHMPEHPHP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KDPGIMOOLON.BDEFAFFDBCC)
     pub BDEFAFFDBCC: bool,
+    // @@protoc_insertion_point(field:KDPGIMOOLON.JKOOLMNHPHI)
+    pub JKOOLMNHPHI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KDPGIMOOLON.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl KDPGIMOOLON {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KNJMPBHKHCJ",
-            |m: &KDPGIMOOLON| { &m.KNJMPBHKHCJ },
-            |m: &mut KDPGIMOOLON| { &mut m.KNJMPBHKHCJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKOOLMNHPHI",
-            |m: &KDPGIMOOLON| { &m.JKOOLMNHPHI },
-            |m: &mut KDPGIMOOLON| { &mut m.JKOOLMNHPHI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PEDFLGGDHDP",
             |m: &KDPGIMOOLON| { &m.PEDFLGGDHDP },
             |m: &mut KDPGIMOOLON| { &mut m.PEDFLGGDHDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KNJMPBHKHCJ",
+            |m: &KDPGIMOOLON| { &m.KNJMPBHKHCJ },
+            |m: &mut KDPGIMOOLON| { &mut m.KNJMPBHKHCJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PGMHMPEHPHP",
@@ -81,6 +76,11 @@ impl KDPGIMOOLON {
             "BDEFAFFDBCC",
             |m: &KDPGIMOOLON| { &m.BDEFAFFDBCC },
             |m: &mut KDPGIMOOLON| { &mut m.BDEFAFFDBCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JKOOLMNHPHI",
+            |m: &KDPGIMOOLON| { &m.JKOOLMNHPHI },
+            |m: &mut KDPGIMOOLON| { &mut m.JKOOLMNHPHI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KDPGIMOOLON>(
             "KDPGIMOOLON",
@@ -100,6 +100,9 @@ impl ::protobuf::Message for KDPGIMOOLON {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.PEDFLGGDHDP = is.read_uint32()?;
+                },
                 42 => {
                     is.read_repeated_packed_uint32_into(&mut self.KNJMPBHKHCJ)?;
                 },
@@ -107,22 +110,19 @@ impl ::protobuf::Message for KDPGIMOOLON {
                     self.KNJMPBHKHCJ.push(is.read_uint32()?);
                 },
                 50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JKOOLMNHPHI)?;
-                },
-                48 => {
-                    self.JKOOLMNHPHI.push(is.read_uint32()?);
-                },
-                64 => {
-                    self.PEDFLGGDHDP = is.read_uint32()?;
-                },
-                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.PGMHMPEHPHP)?;
                 },
-                72 => {
+                48 => {
                     self.PGMHMPEHPHP.push(is.read_uint32()?);
                 },
-                104 => {
+                64 => {
                     self.BDEFAFFDBCC = is.read_bool()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JKOOLMNHPHI)?;
+                },
+                120 => {
+                    self.JKOOLMNHPHI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -136,30 +136,30 @@ impl ::protobuf::Message for KDPGIMOOLON {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KNJMPBHKHCJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JKOOLMNHPHI);
         if self.PEDFLGGDHDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PEDFLGGDHDP);
+            my_size += ::protobuf::rt::uint32_size(1, self.PEDFLGGDHDP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.PGMHMPEHPHP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KNJMPBHKHCJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.PGMHMPEHPHP);
         if self.BDEFAFFDBCC != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.JKOOLMNHPHI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.KNJMPBHKHCJ)?;
-        os.write_repeated_packed_uint32(6, &self.JKOOLMNHPHI)?;
         if self.PEDFLGGDHDP != 0 {
-            os.write_uint32(8, self.PEDFLGGDHDP)?;
+            os.write_uint32(1, self.PEDFLGGDHDP)?;
         }
-        os.write_repeated_packed_uint32(9, &self.PGMHMPEHPHP)?;
+        os.write_repeated_packed_uint32(5, &self.KNJMPBHKHCJ)?;
+        os.write_repeated_packed_uint32(6, &self.PGMHMPEHPHP)?;
         if self.BDEFAFFDBCC != false {
-            os.write_bool(13, self.BDEFAFFDBCC)?;
+            os.write_bool(8, self.BDEFAFFDBCC)?;
         }
+        os.write_repeated_packed_uint32(15, &self.JKOOLMNHPHI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -177,21 +177,21 @@ impl ::protobuf::Message for KDPGIMOOLON {
     }
 
     fn clear(&mut self) {
-        self.KNJMPBHKHCJ.clear();
-        self.JKOOLMNHPHI.clear();
         self.PEDFLGGDHDP = 0;
+        self.KNJMPBHKHCJ.clear();
         self.PGMHMPEHPHP.clear();
         self.BDEFAFFDBCC = false;
+        self.JKOOLMNHPHI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KDPGIMOOLON {
         static instance: KDPGIMOOLON = KDPGIMOOLON {
-            KNJMPBHKHCJ: ::std::vec::Vec::new(),
-            JKOOLMNHPHI: ::std::vec::Vec::new(),
             PEDFLGGDHDP: 0,
+            KNJMPBHKHCJ: ::std::vec::Vec::new(),
             PGMHMPEHPHP: ::std::vec::Vec::new(),
             BDEFAFFDBCC: false,
+            JKOOLMNHPHI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -216,11 +216,12 @@ impl ::protobuf::reflect::ProtobufValue for KDPGIMOOLON {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KDPGIMOOLON.proto\"\xb7\x01\n\x0bKDPGIMOOLON\x12\x20\n\x0bKNJMPBHK\
-    HCJ\x18\x05\x20\x03(\rR\x0bKNJMPBHKHCJ\x12\x20\n\x0bJKOOLMNHPHI\x18\x06\
-    \x20\x03(\rR\x0bJKOOLMNHPHI\x12\x20\n\x0bPEDFLGGDHDP\x18\x08\x20\x01(\rR\
-    \x0bPEDFLGGDHDP\x12\x20\n\x0bPGMHMPEHPHP\x18\t\x20\x03(\rR\x0bPGMHMPEHPH\
-    P\x12\x20\n\x0bBDEFAFFDBCC\x18\r\x20\x01(\x08R\x0bBDEFAFFDBCCb\x06proto3\
+    \n\x11KDPGIMOOLON.proto\"\xb7\x01\n\x0bKDPGIMOOLON\x12\x20\n\x0bPEDFLGGD\
+    HDP\x18\x01\x20\x01(\rR\x0bPEDFLGGDHDP\x12\x20\n\x0bKNJMPBHKHCJ\x18\x05\
+    \x20\x03(\rR\x0bKNJMPBHKHCJ\x12\x20\n\x0bPGMHMPEHPHP\x18\x06\x20\x03(\rR\
+    \x0bPGMHMPEHPHP\x12\x20\n\x0bBDEFAFFDBCC\x18\x08\x20\x01(\x08R\x0bBDEFAF\
+    FDBCC\x12\x20\n\x0bJKOOLMNHPHI\x18\x0f\x20\x03(\rR\x0bJKOOLMNHPHIb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

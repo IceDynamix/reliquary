@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMEJEFBKPCH {
     // message fields
-    // @@protoc_insertion_point(field:AMEJEFBKPCH.KFNMIEMBJGD)
-    pub KFNMIEMBJGD: ::std::vec::Vec<super::MDJAPHPOABA::MDJAPHPOABA>,
-    // @@protoc_insertion_point(field:AMEJEFBKPCH.event_id)
-    pub event_id: u32,
     // @@protoc_insertion_point(field:AMEJEFBKPCH.LAOACNPDOLD)
     pub LAOACNPDOLD: ::protobuf::EnumOrUnknown<super::LHLBGJLFFKK::LHLBGJLFFKK>,
+    // @@protoc_insertion_point(field:AMEJEFBKPCH.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:AMEJEFBKPCH.KFNMIEMBJGD)
+    pub KFNMIEMBJGD: ::std::vec::Vec<super::MDJAPHPOABA::MDJAPHPOABA>,
     // special fields
     // @@protoc_insertion_point(special_field:AMEJEFBKPCH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl AMEJEFBKPCH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KFNMIEMBJGD",
-            |m: &AMEJEFBKPCH| { &m.KFNMIEMBJGD },
-            |m: &mut AMEJEFBKPCH| { &mut m.KFNMIEMBJGD },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LAOACNPDOLD",
+            |m: &AMEJEFBKPCH| { &m.LAOACNPDOLD },
+            |m: &mut AMEJEFBKPCH| { &mut m.LAOACNPDOLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
             |m: &AMEJEFBKPCH| { &m.event_id },
             |m: &mut AMEJEFBKPCH| { &mut m.event_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &AMEJEFBKPCH| { &m.LAOACNPDOLD },
-            |m: &mut AMEJEFBKPCH| { &mut m.LAOACNPDOLD },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KFNMIEMBJGD",
+            |m: &AMEJEFBKPCH| { &m.KFNMIEMBJGD },
+            |m: &mut AMEJEFBKPCH| { &mut m.KFNMIEMBJGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMEJEFBKPCH>(
             "AMEJEFBKPCH",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AMEJEFBKPCH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.KFNMIEMBJGD.push(is.read_message()?);
+                32 => {
+                    self.LAOACNPDOLD = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                64 => {
                     self.event_id = is.read_uint32()?;
                 },
-                120 => {
-                    self.LAOACNPDOLD = is.read_enum_or_unknown()?;
+                122 => {
+                    self.KFNMIEMBJGD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for AMEJEFBKPCH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LAOACNPDOLD != ::protobuf::EnumOrUnknown::new(super::LHLBGJLFFKK::LHLBGJLFFKK::LHLBGJLFFKK_KGHKHLKDEBK) {
+            my_size += ::protobuf::rt::int32_size(4, self.LAOACNPDOLD.value());
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.event_id);
+        }
         for value in &self.KFNMIEMBJGD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.event_id);
-        }
-        if self.LAOACNPDOLD != ::protobuf::EnumOrUnknown::new(super::LHLBGJLFFKK::LHLBGJLFFKK::LHLBGJLFFKK_KGHKHLKDEBK) {
-            my_size += ::protobuf::rt::int32_size(15, self.LAOACNPDOLD.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KFNMIEMBJGD {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        if self.event_id != 0 {
-            os.write_uint32(7, self.event_id)?;
-        }
         if self.LAOACNPDOLD != ::protobuf::EnumOrUnknown::new(super::LHLBGJLFFKK::LHLBGJLFFKK::LHLBGJLFFKK_KGHKHLKDEBK) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.LAOACNPDOLD))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.LAOACNPDOLD))?;
         }
+        if self.event_id != 0 {
+            os.write_uint32(8, self.event_id)?;
+        }
+        for v in &self.KFNMIEMBJGD {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for AMEJEFBKPCH {
     }
 
     fn clear(&mut self) {
-        self.KFNMIEMBJGD.clear();
-        self.event_id = 0;
         self.LAOACNPDOLD = ::protobuf::EnumOrUnknown::new(super::LHLBGJLFFKK::LHLBGJLFFKK::LHLBGJLFFKK_KGHKHLKDEBK);
+        self.event_id = 0;
+        self.KFNMIEMBJGD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMEJEFBKPCH {
         static instance: AMEJEFBKPCH = AMEJEFBKPCH {
-            KFNMIEMBJGD: ::std::vec::Vec::new(),
-            event_id: 0,
             LAOACNPDOLD: ::protobuf::EnumOrUnknown::from_i32(0),
+            event_id: 0,
+            KFNMIEMBJGD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for AMEJEFBKPCH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AMEJEFBKPCH.proto\x1a\x11LHLBGJLFFKK.proto\x1a\x11MDJAPHPOABA.prot\
-    o\"\x88\x01\n\x0bAMEJEFBKPCH\x12.\n\x0bKFNMIEMBJGD\x18\x01\x20\x03(\x0b2\
-    \x0c.MDJAPHPOABAR\x0bKFNMIEMBJGD\x12\x19\n\x08event_id\x18\x07\x20\x01(\
-    \rR\x07eventId\x12.\n\x0bLAOACNPDOLD\x18\x0f\x20\x01(\x0e2\x0c.LHLBGJLFF\
-    KKR\x0bLAOACNPDOLDb\x06proto3\
+    o\"\x88\x01\n\x0bAMEJEFBKPCH\x12.\n\x0bLAOACNPDOLD\x18\x04\x20\x01(\x0e2\
+    \x0c.LHLBGJLFFKKR\x0bLAOACNPDOLD\x12\x19\n\x08event_id\x18\x08\x20\x01(\
+    \rR\x07eventId\x12.\n\x0bKFNMIEMBJGD\x18\x0f\x20\x03(\x0b2\x0c.MDJAPHPOA\
+    BAR\x0bKFNMIEMBJGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

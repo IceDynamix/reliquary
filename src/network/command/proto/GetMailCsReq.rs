@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMailCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.NPAFMEBNFOB = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
                     self.HFKFNFKIEON = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GetMailCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NPAFMEBNFOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NPAFMEBNFOB);
+            my_size += ::protobuf::rt::uint32_size(4, self.NPAFMEBNFOB);
         }
         if self.HFKFNFKIEON != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HFKFNFKIEON);
+            my_size += ::protobuf::rt::uint32_size(9, self.HFKFNFKIEON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GetMailCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NPAFMEBNFOB != 0 {
-            os.write_uint32(6, self.NPAFMEBNFOB)?;
+            os.write_uint32(4, self.NPAFMEBNFOB)?;
         }
         if self.HFKFNFKIEON != 0 {
-            os.write_uint32(12, self.HFKFNFKIEON)?;
+            os.write_uint32(9, self.HFKFNFKIEON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for GetMailCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GetMailCsReq.proto\"R\n\x0cGetMailCsReq\x12\x20\n\x0bNPAFMEBNFOB\
-    \x18\x06\x20\x01(\rR\x0bNPAFMEBNFOB\x12\x20\n\x0bHFKFNFKIEON\x18\x0c\x20\
+    \x18\x04\x20\x01(\rR\x0bNPAFMEBNFOB\x12\x20\n\x0bHFKFNFKIEON\x18\t\x20\
     \x01(\rR\x0bHFKFNFKIEONb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for LHNMDFOPMKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_data)?;
                 },
-                50 => {
+                66 => {
                     self.BLDMFDKDJDM = is.read_string()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for LHNMDFOPMKN {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if !self.BLDMFDKDJDM.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.BLDMFDKDJDM);
+            my_size += ::protobuf::rt::string_size(8, &self.BLDMFDKDJDM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LHNMDFOPMKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.return_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if !self.BLDMFDKDJDM.is_empty() {
-            os.write_string(6, &self.BLDMFDKDJDM)?;
+            os.write_string(8, &self.BLDMFDKDJDM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LHNMDFOPMKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHNMDFOPMKN.proto\x1a\x11JFCPFBLKJAB.proto\"^\n\x0bLHNMDFOPMKN\x12\
-    -\n\x0breturn_data\x18\x01\x20\x01(\x0b2\x0c.JFCPFBLKJABR\nreturnData\
-    \x12\x20\n\x0bBLDMFDKDJDM\x18\x06\x20\x01(\tR\x0bBLDMFDKDJDMb\x06proto3\
+    -\n\x0breturn_data\x18\x03\x20\x01(\x0b2\x0c.JFCPFBLKJABR\nreturnData\
+    \x12\x20\n\x0bBLDMFDKDJDM\x18\x08\x20\x01(\tR\x0bBLDMFDKDJDMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

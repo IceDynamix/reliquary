@@ -79,10 +79,10 @@ impl ::protobuf::Message for DFFLMEMFPLM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
                 },
-                42 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.DJNOLLDHPHJ)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for DFFLMEMFPLM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BFCNALJDHMP);
+            my_size += ::protobuf::rt::uint32_size(6, self.BFCNALJDHMP);
         }
         if let Some(v) = self.DJNOLLDHPHJ.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for DFFLMEMFPLM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(2, self.BFCNALJDHMP)?;
+            os.write_uint32(6, self.BFCNALJDHMP)?;
         }
         if let Some(v) = self.DJNOLLDHPHJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for DFFLMEMFPLM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DFFLMEMFPLM.proto\x1a\x11PFPPACPMFDJ.proto\"_\n\x0bDFFLMEMFPLM\x12\
-    \x20\n\x0bBFCNALJDHMP\x18\x02\x20\x01(\rR\x0bBFCNALJDHMP\x12.\n\x0bDJNOL\
-    LDHPHJ\x18\x05\x20\x01(\x0b2\x0c.PFPPACPMFDJR\x0bDJNOLLDHPHJb\x06proto3\
+    \x20\n\x0bBFCNALJDHMP\x18\x06\x20\x01(\rR\x0bBFCNALJDHMP\x12.\n\x0bDJNOL\
+    LDHPHJ\x18\t\x20\x01(\x0b2\x0c.PFPPACPMFDJR\x0bDJNOLLDHPHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

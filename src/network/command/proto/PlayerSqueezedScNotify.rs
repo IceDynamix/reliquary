@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.black_info)?;
                 },
-                88 => {
+                104 => {
                     self.kick_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.kick_type != ::protobuf::EnumOrUnknown::new(player_squeezed_sc_notify::KickType::KICK_SQUEEZED) {
-            my_size += ::protobuf::rt::int32_size(11, self.kick_type.value());
+            my_size += ::protobuf::rt::int32_size(13, self.kick_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for PlayerSqueezedScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.black_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.kick_type != ::protobuf::EnumOrUnknown::new(player_squeezed_sc_notify::KickType::KICK_SQUEEZED) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.kick_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -252,10 +252,10 @@ pub mod player_squeezed_sc_notify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cPlayerSqueezedScNotify.proto\x1a\x0fBlackInfo.proto\x1a\x0eKickTyp\
-    e.proto\"\x90\x02\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x01\
-    \x20\x01(\x0b2\n.BlackInfoR\tblackInfo\x12=\n\tkick_type\x18\x0b\x20\x01\
-    (\x0e2\x20.PlayerSqueezedScNotify.KickTypeR\x08kickType\"\x8b\x01\n\x08K\
-    ickType\x12\x11\n\rKICK_SQUEEZED\x10\0\x12\x0e\n\nKICK_BLACK\x10\x01\x12\
+    e.proto\"\x90\x02\n\x16PlayerSqueezedScNotify\x12)\n\nblack_info\x18\x03\
+    \x20\x01(\x0b2\n.BlackInfoR\tblackInfo\x12=\n\tkick_type\x18\r\x20\x01(\
+    \x0e2\x20.PlayerSqueezedScNotify.KickTypeR\x08kickType\"\x8b\x01\n\x08Ki\
+    ckType\x12\x11\n\rKICK_SQUEEZED\x10\0\x12\x0e\n\nKICK_BLACK\x10\x01\x12\
     \x13\n\x0fKICK_CHANGE_PWD\x10\x02\x12\x1c\n\x18KICK_LOGIN_WHITE_TIMEOUT\
     \x10\x03\x12\x19\n\x15KICK_ACE_ANTI_CHEATER\x10\x04\x12\x0e\n\nKICK_BY_G\
     M\x10\x05b\x06proto3\

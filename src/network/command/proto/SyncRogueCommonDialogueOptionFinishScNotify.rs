@@ -86,13 +86,13 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.AIAFEKGBFIF = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.HAFOKMHCGFM = is.read_uint32()?;
                 },
-                114 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJPGAOHGEBH)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AIAFEKGBFIF != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AIAFEKGBFIF);
+            my_size += ::protobuf::rt::uint32_size(2, self.AIAFEKGBFIF);
         }
         if self.HAFOKMHCGFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HAFOKMHCGFM);
+            my_size += ::protobuf::rt::uint32_size(6, self.HAFOKMHCGFM);
         }
         if let Some(v) = self.FJPGAOHGEBH.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SyncRogueCommonDialogueOptionFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AIAFEKGBFIF != 0 {
-            os.write_uint32(3, self.AIAFEKGBFIF)?;
+            os.write_uint32(2, self.AIAFEKGBFIF)?;
         }
         if self.HAFOKMHCGFM != 0 {
-            os.write_uint32(8, self.HAFOKMHCGFM)?;
+            os.write_uint32(6, self.HAFOKMHCGFM)?;
         }
         if let Some(v) = self.FJPGAOHGEBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueOptionFinishS
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1SyncRogueCommonDialogueOptionFinishScNotify.proto\x1a\x11KDODFHMDAJI.\
     proto\"\xa1\x01\n+SyncRogueCommonDialogueOptionFinishScNotify\x12\x20\n\
-    \x0bAIAFEKGBFIF\x18\x03\x20\x01(\rR\x0bAIAFEKGBFIF\x12\x20\n\x0bHAFOKMHC\
-    GFM\x18\x08\x20\x01(\rR\x0bHAFOKMHCGFM\x12.\n\x0bFJPGAOHGEBH\x18\x0e\x20\
+    \x0bAIAFEKGBFIF\x18\x02\x20\x01(\rR\x0bAIAFEKGBFIF\x12\x20\n\x0bHAFOKMHC\
+    GFM\x18\x06\x20\x01(\rR\x0bHAFOKMHCGFM\x12.\n\x0bFJPGAOHGEBH\x18\x0b\x20\
     \x01(\x0b2\x0c.KDODFHMDAJIR\x0bFJPGAOHGEBHb\x06proto3\
 ";
 

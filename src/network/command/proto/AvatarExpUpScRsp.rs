@@ -82,7 +82,7 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
                 56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                122 => {
                     self.return_item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for AvatarExpUpScRsp {
             os.write_uint32(7, self.retcode)?;
         }
         for v in &self.return_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for AvatarExpUpScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarExpUpScRsp.proto\x1a\x0ePileItem.proto\"a\n\x10AvatarExpUpSc\
     Rsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x123\n\x10return\
-    _item_list\x18\r\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListb\x06proto3\
+    _item_list\x18\x0f\x20\x03(\x0b2\t.PileItemR\x0ereturnItemListb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

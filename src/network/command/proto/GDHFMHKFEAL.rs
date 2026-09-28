@@ -31,7 +31,7 @@ pub struct GDHFMHKFEAL {
     // @@protoc_insertion_point(field:GDHFMHKFEAL.FKNNKCKLFMD)
     pub FKNNKCKLFMD: u32,
     // @@protoc_insertion_point(field:GDHFMHKFEAL.NMGIABHIJJB)
-    pub NMGIABHIJJB: ::protobuf::MessageField<super::H_cb5e278e::H_cb5e278e>,
+    pub NMGIABHIJJB: ::protobuf::MessageField<super::H_1253c083::H_1253c083>,
     // special fields
     // @@protoc_insertion_point(special_field:GDHFMHKFEAL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl GDHFMHKFEAL {
             |m: &GDHFMHKFEAL| { &m.FKNNKCKLFMD },
             |m: &mut GDHFMHKFEAL| { &mut m.FKNNKCKLFMD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_cb5e278e::H_cb5e278e>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_1253c083::H_1253c083>(
             "NMGIABHIJJB",
             |m: &GDHFMHKFEAL| { &m.NMGIABHIJJB },
             |m: &mut GDHFMHKFEAL| { &mut m.NMGIABHIJJB },
@@ -82,7 +82,7 @@ impl ::protobuf::Message for GDHFMHKFEAL {
                 8 => {
                     self.FKNNKCKLFMD = is.read_uint32()?;
                 },
-                114 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMGIABHIJJB)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GDHFMHKFEAL {
             os.write_uint32(1, self.FKNNKCKLFMD)?;
         }
         if let Some(v) = self.NMGIABHIJJB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GDHFMHKFEAL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GDHFMHKFEAL.proto\x1a\x10H_cb5e278e.proto\"^\n\x0bGDHFMHKFEAL\x12\
+    \n\x11GDHFMHKFEAL.proto\x1a\x10H_1253c083.proto\"^\n\x0bGDHFMHKFEAL\x12\
     \x20\n\x0bFKNNKCKLFMD\x18\x01\x20\x01(\rR\x0bFKNNKCKLFMD\x12-\n\x0bNMGIA\
-    BHIJJB\x18\x0e\x20\x01(\x0b2\x0b.H_cb5e278eR\x0bNMGIABHIJJBb\x06proto3\
+    BHIJJB\x18\x02\x20\x01(\x0b2\x0b.H_1253c083R\x0bNMGIABHIJJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_cb5e278e::file_descriptor().clone());
+            deps.push(super::H_1253c083::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GDHFMHKFEAL::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

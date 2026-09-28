@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KDANACKPJIP {
     // message fields
-    // @@protoc_insertion_point(field:KDANACKPJIP.JHMNIGAGOCK)
-    pub JHMNIGAGOCK: u32,
     // @@protoc_insertion_point(field:KDANACKPJIP.CCOOCEEAKFI)
     pub CCOOCEEAKFI: u32,
     // @@protoc_insertion_point(field:KDANACKPJIP.JBGENFIKGGF)
     pub JBGENFIKGGF: u32,
+    // @@protoc_insertion_point(field:KDANACKPJIP.JHMNIGAGOCK)
+    pub JHMNIGAGOCK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KDANACKPJIP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl KDANACKPJIP {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHMNIGAGOCK",
-            |m: &KDANACKPJIP| { &m.JHMNIGAGOCK },
-            |m: &mut KDANACKPJIP| { &mut m.JHMNIGAGOCK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CCOOCEEAKFI",
             |m: &KDANACKPJIP| { &m.CCOOCEEAKFI },
             |m: &mut KDANACKPJIP| { &mut m.CCOOCEEAKFI },
@@ -67,6 +62,11 @@ impl KDANACKPJIP {
             "JBGENFIKGGF",
             |m: &KDANACKPJIP| { &m.JBGENFIKGGF },
             |m: &mut KDANACKPJIP| { &mut m.JBGENFIKGGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JHMNIGAGOCK",
+            |m: &KDANACKPJIP| { &m.JHMNIGAGOCK },
+            |m: &mut KDANACKPJIP| { &mut m.JHMNIGAGOCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KDANACKPJIP>(
             "KDANACKPJIP",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KDANACKPJIP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JHMNIGAGOCK = is.read_uint32()?;
-                },
                 56 => {
                     self.CCOOCEEAKFI = is.read_uint32()?;
                 },
                 112 => {
                     self.JBGENFIKGGF = is.read_uint32()?;
+                },
+                120 => {
+                    self.JHMNIGAGOCK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KDANACKPJIP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JHMNIGAGOCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JHMNIGAGOCK);
-        }
         if self.CCOOCEEAKFI != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.CCOOCEEAKFI);
         }
         if self.JBGENFIKGGF != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.JBGENFIKGGF);
+        }
+        if self.JHMNIGAGOCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.JHMNIGAGOCK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KDANACKPJIP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JHMNIGAGOCK != 0 {
-            os.write_uint32(4, self.JHMNIGAGOCK)?;
-        }
         if self.CCOOCEEAKFI != 0 {
             os.write_uint32(7, self.CCOOCEEAKFI)?;
         }
         if self.JBGENFIKGGF != 0 {
             os.write_uint32(14, self.JBGENFIKGGF)?;
+        }
+        if self.JHMNIGAGOCK != 0 {
+            os.write_uint32(15, self.JHMNIGAGOCK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KDANACKPJIP {
     }
 
     fn clear(&mut self) {
-        self.JHMNIGAGOCK = 0;
         self.CCOOCEEAKFI = 0;
         self.JBGENFIKGGF = 0;
+        self.JHMNIGAGOCK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KDANACKPJIP {
         static instance: KDANACKPJIP = KDANACKPJIP {
-            JHMNIGAGOCK: 0,
             CCOOCEEAKFI: 0,
             JBGENFIKGGF: 0,
+            JHMNIGAGOCK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KDANACKPJIP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KDANACKPJIP.proto\"s\n\x0bKDANACKPJIP\x12\x20\n\x0bJHMNIGAGOCK\x18\
-    \x04\x20\x01(\rR\x0bJHMNIGAGOCK\x12\x20\n\x0bCCOOCEEAKFI\x18\x07\x20\x01\
-    (\rR\x0bCCOOCEEAKFI\x12\x20\n\x0bJBGENFIKGGF\x18\x0e\x20\x01(\rR\x0bJBGE\
-    NFIKGGFb\x06proto3\
+    \n\x11KDANACKPJIP.proto\"s\n\x0bKDANACKPJIP\x12\x20\n\x0bCCOOCEEAKFI\x18\
+    \x07\x20\x01(\rR\x0bCCOOCEEAKFI\x12\x20\n\x0bJBGENFIKGGF\x18\x0e\x20\x01\
+    (\rR\x0bJBGENFIKGGF\x12\x20\n\x0bJHMNIGAGOCK\x18\x0f\x20\x01(\rR\x0bJHMN\
+    IGAGOCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

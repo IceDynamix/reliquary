@@ -79,10 +79,10 @@ impl ::protobuf::Message for DECHJACNLGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                40 => {
                     self.BJBALPKFELE = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.monster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DECHJACNLGP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BJBALPKFELE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BJBALPKFELE);
+            my_size += ::protobuf::rt::uint32_size(5, self.BJBALPKFELE);
         }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.monster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DECHJACNLGP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BJBALPKFELE != 0 {
-            os.write_uint32(2, self.BJBALPKFELE)?;
+            os.write_uint32(5, self.BJBALPKFELE)?;
         }
         if self.monster_id != 0 {
-            os.write_uint32(9, self.monster_id)?;
+            os.write_uint32(7, self.monster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DECHJACNLGP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DECHJACNLGP.proto\"N\n\x0bDECHJACNLGP\x12\x20\n\x0bBJBALPKFELE\x18\
-    \x02\x20\x01(\rR\x0bBJBALPKFELE\x12\x1d\n\nmonster_id\x18\t\x20\x01(\rR\
-    \tmonsterIdb\x06proto3\
+    \x05\x20\x01(\rR\x0bBJBALPKFELE\x12\x1d\n\nmonster_id\x18\x07\x20\x01(\r\
+    R\tmonsterIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

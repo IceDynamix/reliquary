@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NFKCMMEAIDN {
     // message fields
-    // @@protoc_insertion_point(field:NFKCMMEAIDN.lineup_tierce_list)
-    pub lineup_tierce_list: ::std::vec::Vec<super::LineupTierce::LineupTierce>,
     // @@protoc_insertion_point(field:NFKCMMEAIDN.challenge_id)
     pub challenge_id: u32,
+    // @@protoc_insertion_point(field:NFKCMMEAIDN.lineup_tierce_list)
+    pub lineup_tierce_list: ::std::vec::Vec<super::LineupTierce::LineupTierce>,
     // special fields
     // @@protoc_insertion_point(special_field:NFKCMMEAIDN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl NFKCMMEAIDN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_tierce_list",
-            |m: &NFKCMMEAIDN| { &m.lineup_tierce_list },
-            |m: &mut NFKCMMEAIDN| { &mut m.lineup_tierce_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &NFKCMMEAIDN| { &m.challenge_id },
             |m: &mut NFKCMMEAIDN| { &mut m.challenge_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_tierce_list",
+            |m: &NFKCMMEAIDN| { &m.lineup_tierce_list },
+            |m: &mut NFKCMMEAIDN| { &mut m.lineup_tierce_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NFKCMMEAIDN>(
             "NFKCMMEAIDN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NFKCMMEAIDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.lineup_tierce_list.push(is.read_message()?);
-                },
-                120 => {
+                8 => {
                     self.challenge_id = is.read_uint32()?;
+                },
+                122 => {
+                    self.lineup_tierce_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for NFKCMMEAIDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.challenge_id);
+        }
         for value in &self.lineup_tierce_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.lineup_tierce_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.challenge_id != 0 {
-            os.write_uint32(15, self.challenge_id)?;
+            os.write_uint32(1, self.challenge_id)?;
         }
+        for v in &self.lineup_tierce_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for NFKCMMEAIDN {
     }
 
     fn clear(&mut self) {
-        self.lineup_tierce_list.clear();
         self.challenge_id = 0;
+        self.lineup_tierce_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NFKCMMEAIDN {
         static instance: NFKCMMEAIDN = NFKCMMEAIDN {
-            lineup_tierce_list: ::std::vec::Vec::new(),
             challenge_id: 0,
+            lineup_tierce_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for NFKCMMEAIDN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NFKCMMEAIDN.proto\x1a\x12LineupTierce.proto\"m\n\x0bNFKCMMEAIDN\
-    \x12;\n\x12lineup_tierce_list\x18\t\x20\x03(\x0b2\r.LineupTierceR\x10lin\
-    eupTierceList\x12!\n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bchallengeIdb\
-    \x06proto3\
+    \x12!\n\x0cchallenge_id\x18\x01\x20\x01(\rR\x0bchallengeId\x12;\n\x12lin\
+    eup_tierce_list\x18\x0f\x20\x03(\x0b2\r.LineupTierceR\x10lineupTierceLis\
+    tb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

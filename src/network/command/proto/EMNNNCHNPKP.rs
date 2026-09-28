@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EMNNNCHNPKP {
     // message fields
-    // @@protoc_insertion_point(field:EMNNNCHNPKP.OPMGDNNAEJF)
-    pub OPMGDNNAEJF: ::protobuf::MessageField<super::JBCHHGDHKIG::JBCHHGDHKIG>,
     // @@protoc_insertion_point(field:EMNNNCHNPKP.BIACKLBMMAP)
     pub BIACKLBMMAP: u32,
+    // @@protoc_insertion_point(field:EMNNNCHNPKP.OPMGDNNAEJF)
+    pub OPMGDNNAEJF: ::protobuf::MessageField<super::JBCHHGDHKIG::JBCHHGDHKIG>,
     // @@protoc_insertion_point(field:EMNNNCHNPKP.item_id)
     pub item_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl EMNNNCHNPKP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBCHHGDHKIG::JBCHHGDHKIG>(
-            "OPMGDNNAEJF",
-            |m: &EMNNNCHNPKP| { &m.OPMGDNNAEJF },
-            |m: &mut EMNNNCHNPKP| { &mut m.OPMGDNNAEJF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BIACKLBMMAP",
             |m: &EMNNNCHNPKP| { &m.BIACKLBMMAP },
             |m: &mut EMNNNCHNPKP| { &mut m.BIACKLBMMAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBCHHGDHKIG::JBCHHGDHKIG>(
+            "OPMGDNNAEJF",
+            |m: &EMNNNCHNPKP| { &m.OPMGDNNAEJF },
+            |m: &mut EMNNNCHNPKP| { &mut m.OPMGDNNAEJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EMNNNCHNPKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPMGDNNAEJF)?;
-                },
-                64 => {
+                24 => {
                     self.BIACKLBMMAP = is.read_uint32()?;
                 },
-                80 => {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPMGDNNAEJF)?;
+                },
+                120 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for EMNNNCHNPKP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BIACKLBMMAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BIACKLBMMAP);
+        }
         if let Some(v) = self.OPMGDNNAEJF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BIACKLBMMAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BIACKLBMMAP);
-        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EMNNNCHNPKP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.BIACKLBMMAP != 0 {
-            os.write_uint32(8, self.BIACKLBMMAP)?;
+            os.write_uint32(3, self.BIACKLBMMAP)?;
+        }
+        if let Some(v) = self.OPMGDNNAEJF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
+            os.write_uint32(15, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EMNNNCHNPKP {
     }
 
     fn clear(&mut self) {
-        self.OPMGDNNAEJF.clear();
         self.BIACKLBMMAP = 0;
+        self.OPMGDNNAEJF.clear();
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EMNNNCHNPKP {
         static instance: EMNNNCHNPKP = EMNNNCHNPKP {
-            OPMGDNNAEJF: ::protobuf::MessageField::none(),
             BIACKLBMMAP: 0,
+            OPMGDNNAEJF: ::protobuf::MessageField::none(),
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for EMNNNCHNPKP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EMNNNCHNPKP.proto\x1a\x11JBCHHGDHKIG.proto\"x\n\x0bEMNNNCHNPKP\x12\
-    .\n\x0bOPMGDNNAEJF\x18\x04\x20\x01(\x0b2\x0c.JBCHHGDHKIGR\x0bOPMGDNNAEJF\
-    \x12\x20\n\x0bBIACKLBMMAP\x18\x08\x20\x01(\rR\x0bBIACKLBMMAP\x12\x17\n\
-    \x07item_id\x18\n\x20\x01(\rR\x06itemIdb\x06proto3\
+    \x20\n\x0bBIACKLBMMAP\x18\x03\x20\x01(\rR\x0bBIACKLBMMAP\x12.\n\x0bOPMGD\
+    NNAEJF\x18\n\x20\x01(\x0b2\x0c.JBCHHGDHKIGR\x0bOPMGDNNAEJF\x12\x17\n\x07\
+    item_id\x18\x0f\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,9 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:RecallPetCsReq)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RecallPetCsReq {
-    // message fields
-    // @@protoc_insertion_point(field:RecallPetCsReq.summoned_pet_id)
-    pub summoned_pet_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RecallPetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,13 +44,8 @@ impl RecallPetCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "summoned_pet_id",
-            |m: &RecallPetCsReq| { &m.summoned_pet_id },
-            |m: &mut RecallPetCsReq| { &mut m.summoned_pet_id },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RecallPetCsReq>(
             "RecallPetCsReq",
             fields,
@@ -72,9 +64,6 @@ impl ::protobuf::Message for RecallPetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.summoned_pet_id = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -87,18 +76,12 @@ impl ::protobuf::Message for RecallPetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.summoned_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.summoned_pet_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.summoned_pet_id != 0 {
-            os.write_uint32(7, self.summoned_pet_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,13 +99,11 @@ impl ::protobuf::Message for RecallPetCsReq {
     }
 
     fn clear(&mut self) {
-        self.summoned_pet_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RecallPetCsReq {
         static instance: RecallPetCsReq = RecallPetCsReq {
-            summoned_pet_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +128,7 @@ impl ::protobuf::reflect::ProtobufValue for RecallPetCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14RecallPetCsReq.proto\"8\n\x0eRecallPetCsReq\x12&\n\x0fsummoned_pet\
-    _id\x18\x07\x20\x01(\rR\rsummonedPetIdb\x06proto3\
+    \n\x14RecallPetCsReq.proto\"\x10\n\x0eRecallPetCsReqb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

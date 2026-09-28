@@ -79,7 +79,7 @@ impl ::protobuf::Message for CAEFBGAFKHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for CAEFBGAFKHD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(9, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(8, self.avatar_type.value());
         }
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.avatar_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CAEFBGAFKHD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.avatar_id != 0 {
             os.write_uint32(15, self.avatar_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CAEFBGAFKHD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CAEFBGAFKHD.proto\x1a\x10AvatarType.proto\"X\n\x0bCAEFBGAFKHD\x12,\
-    \n\x0bavatar_type\x18\t\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
+    \n\x0bavatar_type\x18\x08\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
     \x1b\n\tavatar_id\x18\x0f\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 

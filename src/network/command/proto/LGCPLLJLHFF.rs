@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LGCPLLJLHFF {
     // message fields
-    // @@protoc_insertion_point(field:LGCPLLJLHFF.item_value)
-    pub item_value: u32,
     // @@protoc_insertion_point(field:LGCPLLJLHFF.buff_list)
     pub buff_list: ::std::vec::Vec<super::KJAMNOGFAMJ::KJAMNOGFAMJ>,
+    // @@protoc_insertion_point(field:LGCPLLJLHFF.item_value)
+    pub item_value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LGCPLLJLHFF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl LGCPLLJLHFF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_value",
-            |m: &LGCPLLJLHFF| { &m.item_value },
-            |m: &mut LGCPLLJLHFF| { &mut m.item_value },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "buff_list",
             |m: &LGCPLLJLHFF| { &m.buff_list },
             |m: &mut LGCPLLJLHFF| { &mut m.buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_value",
+            |m: &LGCPLLJLHFF| { &m.item_value },
+            |m: &mut LGCPLLJLHFF| { &mut m.item_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LGCPLLJLHFF>(
             "LGCPLLJLHFF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.item_value = is.read_uint32()?;
-                },
-                122 => {
+                10 => {
                     self.buff_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.item_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.item_value);
-        }
         for value in &self.buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.item_value);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_value != 0 {
-            os.write_uint32(11, self.item_value)?;
-        }
         for v in &self.buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.item_value != 0 {
+            os.write_uint32(10, self.item_value)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for LGCPLLJLHFF {
     }
 
     fn clear(&mut self) {
-        self.item_value = 0;
         self.buff_list.clear();
+        self.item_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LGCPLLJLHFF {
         static instance: LGCPLLJLHFF = LGCPLLJLHFF {
-            item_value: 0,
             buff_list: ::std::vec::Vec::new(),
+            item_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for LGCPLLJLHFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGCPLLJLHFF.proto\x1a\x11KJAMNOGFAMJ.proto\"W\n\x0bLGCPLLJLHFF\x12\
-    \x1d\n\nitem_value\x18\x0b\x20\x01(\rR\titemValue\x12)\n\tbuff_list\x18\
-    \x0f\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x08buffListb\x06proto3\
+    )\n\tbuff_list\x18\x01\x20\x03(\x0b2\x0c.KJAMNOGFAMJR\x08buffList\x12\
+    \x1d\n\nitem_value\x18\n\x20\x01(\rR\titemValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

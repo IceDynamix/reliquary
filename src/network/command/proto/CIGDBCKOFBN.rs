@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CIGDBCKOFBN {
     // message fields
-    // @@protoc_insertion_point(field:CIGDBCKOFBN.NPNMLPNBHDP)
-    pub NPNMLPNBHDP: u32,
     // @@protoc_insertion_point(field:CIGDBCKOFBN.ALAJJMKOMML)
     pub ALAJJMKOMML: bool,
+    // @@protoc_insertion_point(field:CIGDBCKOFBN.NPNMLPNBHDP)
+    pub NPNMLPNBHDP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CIGDBCKOFBN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CIGDBCKOFBN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPNMLPNBHDP",
-            |m: &CIGDBCKOFBN| { &m.NPNMLPNBHDP },
-            |m: &mut CIGDBCKOFBN| { &mut m.NPNMLPNBHDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ALAJJMKOMML",
             |m: &CIGDBCKOFBN| { &m.ALAJJMKOMML },
             |m: &mut CIGDBCKOFBN| { &mut m.ALAJJMKOMML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NPNMLPNBHDP",
+            |m: &CIGDBCKOFBN| { &m.NPNMLPNBHDP },
+            |m: &mut CIGDBCKOFBN| { &mut m.NPNMLPNBHDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CIGDBCKOFBN>(
             "CIGDBCKOFBN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CIGDBCKOFBN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NPNMLPNBHDP = is.read_uint32()?;
-                },
-                72 => {
+                32 => {
                     self.ALAJJMKOMML = is.read_bool()?;
+                },
+                80 => {
+                    self.NPNMLPNBHDP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CIGDBCKOFBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPNMLPNBHDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.NPNMLPNBHDP);
-        }
         if self.ALAJJMKOMML != false {
             my_size += 1 + 1;
+        }
+        if self.NPNMLPNBHDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.NPNMLPNBHDP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CIGDBCKOFBN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPNMLPNBHDP != 0 {
-            os.write_uint32(2, self.NPNMLPNBHDP)?;
-        }
         if self.ALAJJMKOMML != false {
-            os.write_bool(9, self.ALAJJMKOMML)?;
+            os.write_bool(4, self.ALAJJMKOMML)?;
+        }
+        if self.NPNMLPNBHDP != 0 {
+            os.write_uint32(10, self.NPNMLPNBHDP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CIGDBCKOFBN {
     }
 
     fn clear(&mut self) {
-        self.NPNMLPNBHDP = 0;
         self.ALAJJMKOMML = false;
+        self.NPNMLPNBHDP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CIGDBCKOFBN {
         static instance: CIGDBCKOFBN = CIGDBCKOFBN {
-            NPNMLPNBHDP: 0,
             ALAJJMKOMML: false,
+            NPNMLPNBHDP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CIGDBCKOFBN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CIGDBCKOFBN.proto\"Q\n\x0bCIGDBCKOFBN\x12\x20\n\x0bNPNMLPNBHDP\x18\
-    \x02\x20\x01(\rR\x0bNPNMLPNBHDP\x12\x20\n\x0bALAJJMKOMML\x18\t\x20\x01(\
-    \x08R\x0bALAJJMKOMMLb\x06proto3\
+    \n\x11CIGDBCKOFBN.proto\"Q\n\x0bCIGDBCKOFBN\x12\x20\n\x0bALAJJMKOMML\x18\
+    \x04\x20\x01(\x08R\x0bALAJJMKOMML\x12\x20\n\x0bNPNMLPNBHDP\x18\n\x20\x01\
+    (\rR\x0bNPNMLPNBHDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

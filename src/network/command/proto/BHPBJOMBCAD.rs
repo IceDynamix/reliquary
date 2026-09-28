@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BHPBJOMBCAD {
     // message fields
-    // @@protoc_insertion_point(field:BHPBJOMBCAD.IJKIBLJEGGE)
-    pub IJKIBLJEGGE: ::std::vec::Vec<super::NEJPAGJBMDA::NEJPAGJBMDA>,
     // @@protoc_insertion_point(field:BHPBJOMBCAD.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:BHPBJOMBCAD.IJKIBLJEGGE)
+    pub IJKIBLJEGGE: ::std::vec::Vec<super::NEJPAGJBMDA::NEJPAGJBMDA>,
     // @@protoc_insertion_point(field:BHPBJOMBCAD.NOALGKCLDHF)
     pub NOALGKCLDHF: bool,
     // special fields
@@ -53,15 +53,15 @@ impl BHPBJOMBCAD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IJKIBLJEGGE",
-            |m: &BHPBJOMBCAD| { &m.IJKIBLJEGGE },
-            |m: &mut BHPBJOMBCAD| { &mut m.IJKIBLJEGGE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &BHPBJOMBCAD| { &m.group_id },
             |m: &mut BHPBJOMBCAD| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IJKIBLJEGGE",
+            |m: &BHPBJOMBCAD| { &m.IJKIBLJEGGE },
+            |m: &mut BHPBJOMBCAD| { &mut m.IJKIBLJEGGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NOALGKCLDHF",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BHPBJOMBCAD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.IJKIBLJEGGE.push(is.read_message()?);
-                },
-                80 => {
+                8 => {
                     self.group_id = is.read_uint32()?;
                 },
-                88 => {
+                26 => {
+                    self.IJKIBLJEGGE.push(is.read_message()?);
+                },
+                40 => {
                     self.NOALGKCLDHF = is.read_bool()?;
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for BHPBJOMBCAD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.group_id);
+        }
         for value in &self.IJKIBLJEGGE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
-        }
         if self.NOALGKCLDHF != false {
             my_size += 1 + 1;
         }
@@ -123,14 +123,14 @@ impl ::protobuf::Message for BHPBJOMBCAD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IJKIBLJEGGE {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
+            os.write_uint32(1, self.group_id)?;
         }
+        for v in &self.IJKIBLJEGGE {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
         if self.NOALGKCLDHF != false {
-            os.write_bool(11, self.NOALGKCLDHF)?;
+            os.write_bool(5, self.NOALGKCLDHF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BHPBJOMBCAD {
     }
 
     fn clear(&mut self) {
-        self.IJKIBLJEGGE.clear();
         self.group_id = 0;
+        self.IJKIBLJEGGE.clear();
         self.NOALGKCLDHF = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BHPBJOMBCAD {
         static instance: BHPBJOMBCAD = BHPBJOMBCAD {
-            IJKIBLJEGGE: ::std::vec::Vec::new(),
             group_id: 0,
+            IJKIBLJEGGE: ::std::vec::Vec::new(),
             NOALGKCLDHF: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BHPBJOMBCAD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BHPBJOMBCAD.proto\x1a\x11NEJPAGJBMDA.proto\"z\n\x0bBHPBJOMBCAD\x12\
-    .\n\x0bIJKIBLJEGGE\x18\x04\x20\x03(\x0b2\x0c.NEJPAGJBMDAR\x0bIJKIBLJEGGE\
-    \x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x20\n\x0bNOALGKC\
-    LDHF\x18\x0b\x20\x01(\x08R\x0bNOALGKCLDHFb\x06proto3\
+    \x19\n\x08group_id\x18\x01\x20\x01(\rR\x07groupId\x12.\n\x0bIJKIBLJEGGE\
+    \x18\x03\x20\x03(\x0b2\x0c.NEJPAGJBMDAR\x0bIJKIBLJEGGE\x12\x20\n\x0bNOAL\
+    GKCLDHF\x18\x05\x20\x01(\x08R\x0bNOALGKCLDHFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

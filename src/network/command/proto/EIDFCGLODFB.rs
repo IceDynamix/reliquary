@@ -32,10 +32,10 @@ pub struct EIDFCGLODFB {
     pub IHAOMLEPHOM: u32,
     // @@protoc_insertion_point(field:EIDFCGLODFB.map_id)
     pub map_id: u32,
-    // @@protoc_insertion_point(field:EIDFCGLODFB.PIJJDFCBMPG)
-    pub PIJJDFCBMPG: ::protobuf::EnumOrUnknown<super::NADDHEILBBN::NADDHEILBBN>,
     // @@protoc_insertion_point(field:EIDFCGLODFB.BPKMKFLDCAI)
     pub BPKMKFLDCAI: bool,
+    // @@protoc_insertion_point(field:EIDFCGLODFB.PIJJDFCBMPG)
+    pub PIJJDFCBMPG: ::protobuf::EnumOrUnknown<super::NADDHEILBBN::NADDHEILBBN>,
     // special fields
     // @@protoc_insertion_point(special_field:EIDFCGLODFB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl EIDFCGLODFB {
             |m: &mut EIDFCGLODFB| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIJJDFCBMPG",
-            |m: &EIDFCGLODFB| { &m.PIJJDFCBMPG },
-            |m: &mut EIDFCGLODFB| { &mut m.PIJJDFCBMPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BPKMKFLDCAI",
             |m: &EIDFCGLODFB| { &m.BPKMKFLDCAI },
             |m: &mut EIDFCGLODFB| { &mut m.BPKMKFLDCAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PIJJDFCBMPG",
+            |m: &EIDFCGLODFB| { &m.PIJJDFCBMPG },
+            |m: &mut EIDFCGLODFB| { &mut m.PIJJDFCBMPG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EIDFCGLODFB>(
             "EIDFCGLODFB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EIDFCGLODFB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.IHAOMLEPHOM = is.read_uint32()?;
                 },
-                56 => {
+                16 => {
                     self.map_id = is.read_uint32()?;
                 },
-                80 => {
-                    self.PIJJDFCBMPG = is.read_enum_or_unknown()?;
-                },
-                104 => {
+                72 => {
                     self.BPKMKFLDCAI = is.read_bool()?;
+                },
+                120 => {
+                    self.PIJJDFCBMPG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for EIDFCGLODFB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHAOMLEPHOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.IHAOMLEPHOM);
+            my_size += ::protobuf::rt::uint32_size(1, self.IHAOMLEPHOM);
         }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.map_id);
-        }
-        if self.PIJJDFCBMPG != ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH) {
-            my_size += ::protobuf::rt::int32_size(10, self.PIJJDFCBMPG.value());
+            my_size += ::protobuf::rt::uint32_size(2, self.map_id);
         }
         if self.BPKMKFLDCAI != false {
             my_size += 1 + 1;
+        }
+        if self.PIJJDFCBMPG != ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH) {
+            my_size += ::protobuf::rt::int32_size(15, self.PIJJDFCBMPG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for EIDFCGLODFB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHAOMLEPHOM != 0 {
-            os.write_uint32(3, self.IHAOMLEPHOM)?;
+            os.write_uint32(1, self.IHAOMLEPHOM)?;
         }
         if self.map_id != 0 {
-            os.write_uint32(7, self.map_id)?;
-        }
-        if self.PIJJDFCBMPG != ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.PIJJDFCBMPG))?;
+            os.write_uint32(2, self.map_id)?;
         }
         if self.BPKMKFLDCAI != false {
-            os.write_bool(13, self.BPKMKFLDCAI)?;
+            os.write_bool(9, self.BPKMKFLDCAI)?;
+        }
+        if self.PIJJDFCBMPG != ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.PIJJDFCBMPG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for EIDFCGLODFB {
     fn clear(&mut self) {
         self.IHAOMLEPHOM = 0;
         self.map_id = 0;
-        self.PIJJDFCBMPG = ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH);
         self.BPKMKFLDCAI = false;
+        self.PIJJDFCBMPG = ::protobuf::EnumOrUnknown::new(super::NADDHEILBBN::NADDHEILBBN::NADDHEILBBN_BPOCOHFIAOH);
         self.special_fields.clear();
     }
 
@@ -175,8 +175,8 @@ impl ::protobuf::Message for EIDFCGLODFB {
         static instance: EIDFCGLODFB = EIDFCGLODFB {
             IHAOMLEPHOM: 0,
             map_id: 0,
-            PIJJDFCBMPG: ::protobuf::EnumOrUnknown::from_i32(0),
             BPKMKFLDCAI: false,
+            PIJJDFCBMPG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for EIDFCGLODFB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EIDFCGLODFB.proto\x1a\x11NADDHEILBBN.proto\"\x98\x01\n\x0bEIDFCGLO\
-    DFB\x12\x20\n\x0bIHAOMLEPHOM\x18\x03\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x15\
-    \n\x06map_id\x18\x07\x20\x01(\rR\x05mapId\x12.\n\x0bPIJJDFCBMPG\x18\n\
-    \x20\x01(\x0e2\x0c.NADDHEILBBNR\x0bPIJJDFCBMPG\x12\x20\n\x0bBPKMKFLDCAI\
-    \x18\r\x20\x01(\x08R\x0bBPKMKFLDCAIb\x06proto3\
+    DFB\x12\x20\n\x0bIHAOMLEPHOM\x18\x01\x20\x01(\rR\x0bIHAOMLEPHOM\x12\x15\
+    \n\x06map_id\x18\x02\x20\x01(\rR\x05mapId\x12\x20\n\x0bBPKMKFLDCAI\x18\t\
+    \x20\x01(\x08R\x0bBPKMKFLDCAI\x12.\n\x0bPIJJDFCBMPG\x18\x0f\x20\x01(\x0e\
+    2\x0c.NADDHEILBBNR\x0bPIJJDFCBMPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

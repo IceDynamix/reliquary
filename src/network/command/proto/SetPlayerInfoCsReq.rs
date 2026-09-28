@@ -30,10 +30,10 @@ pub struct SetPlayerInfoCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetPlayerInfoCsReq.is_modify)
     pub is_modify: bool,
-    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.nickname)
-    pub nickname: ::std::string::String,
     // @@protoc_insertion_point(field:SetPlayerInfoCsReq.gender)
     pub gender: ::protobuf::EnumOrUnknown<super::Gender::Gender>,
+    // @@protoc_insertion_point(field:SetPlayerInfoCsReq.nickname)
+    pub nickname: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:SetPlayerInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SetPlayerInfoCsReq {
             |m: &mut SetPlayerInfoCsReq| { &mut m.is_modify },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &SetPlayerInfoCsReq| { &m.nickname },
-            |m: &mut SetPlayerInfoCsReq| { &mut m.nickname },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gender",
             |m: &SetPlayerInfoCsReq| { &m.gender },
             |m: &mut SetPlayerInfoCsReq| { &mut m.gender },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &SetPlayerInfoCsReq| { &m.nickname },
+            |m: &mut SetPlayerInfoCsReq| { &mut m.nickname },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetPlayerInfoCsReq>(
             "SetPlayerInfoCsReq",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
                 24 => {
                     self.is_modify = is.read_bool()?;
                 },
-                34 => {
-                    self.nickname = is.read_string()?;
-                },
-                120 => {
+                80 => {
                     self.gender = is.read_enum_or_unknown()?;
+                },
+                98 => {
+                    self.nickname = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
         if self.is_modify != false {
             my_size += 1 + 1;
         }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.nickname);
-        }
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::Gender_None) {
-            my_size += ::protobuf::rt::int32_size(15, self.gender.value());
+            my_size += ::protobuf::rt::int32_size(10, self.gender.value());
+        }
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.nickname);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
         if self.is_modify != false {
             os.write_bool(3, self.is_modify)?;
         }
-        if !self.nickname.is_empty() {
-            os.write_string(4, &self.nickname)?;
-        }
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::Gender_None) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(12, &self.nickname)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
 
     fn clear(&mut self) {
         self.is_modify = false;
-        self.nickname.clear();
         self.gender = ::protobuf::EnumOrUnknown::new(super::Gender::Gender::Gender_None);
+        self.nickname.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerInfoCsReq {
         static instance: SetPlayerInfoCsReq = SetPlayerInfoCsReq {
             is_modify: false,
-            nickname: ::std::string::String::new(),
             gender: ::protobuf::EnumOrUnknown::from_i32(0),
+            nickname: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetPlayerInfoCsReq.proto\x1a\x0cGender.proto\"n\n\x12SetPlayerInfo\
-    CsReq\x12\x1b\n\tis_modify\x18\x03\x20\x01(\x08R\x08isModify\x12\x1a\n\
-    \x08nickname\x18\x04\x20\x01(\tR\x08nickname\x12\x1f\n\x06gender\x18\x0f\
-    \x20\x01(\x0e2\x07.GenderR\x06genderb\x06proto3\
+    CsReq\x12\x1b\n\tis_modify\x18\x03\x20\x01(\x08R\x08isModify\x12\x1f\n\
+    \x06gender\x18\n\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x1a\n\x08nickna\
+    me\x18\x0c\x20\x01(\tR\x08nicknameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

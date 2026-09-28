@@ -45,7 +45,7 @@ impl COOIDLLFFIJ {
         ::std::default::Default::default()
     }
 
-    // uint32 KNILAKJMEEP = 3;
+    // uint32 KNILAKJMEEP = 4;
 
     pub fn KNILAKJMEEP(&self) -> u32 {
         match self.AJOABBCKHCK {
@@ -70,7 +70,7 @@ impl COOIDLLFFIJ {
         self.AJOABBCKHCK = ::std::option::Option::Some(cooidllffij::AJOABBCKHCK::KNILAKJMEEP(v))
     }
 
-    // uint32 PGGDEHKKINP = 12;
+    // uint32 PGGDEHKKINP = 6;
 
     pub fn PGGDEHKKINP(&self) -> u32 {
         match self.AJOABBCKHCK {
@@ -129,10 +129,10 @@ impl ::protobuf::Message for COOIDLLFFIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.AJOABBCKHCK = ::std::option::Option::Some(cooidllffij::AJOABBCKHCK::KNILAKJMEEP(is.read_uint32()?));
                 },
-                96 => {
+                48 => {
                     self.AJOABBCKHCK = ::std::option::Option::Some(cooidllffij::AJOABBCKHCK::PGGDEHKKINP(is.read_uint32()?));
                 },
                 tag => {
@@ -150,10 +150,10 @@ impl ::protobuf::Message for COOIDLLFFIJ {
         if let ::std::option::Option::Some(ref v) = self.AJOABBCKHCK {
             match v {
                 &cooidllffij::AJOABBCKHCK::KNILAKJMEEP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(3, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &cooidllffij::AJOABBCKHCK::PGGDEHKKINP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(6, v);
                 },
             };
         }
@@ -166,10 +166,10 @@ impl ::protobuf::Message for COOIDLLFFIJ {
         if let ::std::option::Option::Some(ref v) = self.AJOABBCKHCK {
             match v {
                 &cooidllffij::AJOABBCKHCK::KNILAKJMEEP(v) => {
-                    os.write_uint32(3, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &cooidllffij::AJOABBCKHCK::PGGDEHKKINP(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(6, v)?;
                 },
             };
         }
@@ -253,7 +253,7 @@ pub mod cooidllffij {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11COOIDLLFFIJ.proto\"d\n\x0bCOOIDLLFFIJ\x12\"\n\x0bKNILAKJMEEP\x18\
-    \x03\x20\x01(\rH\0R\x0bKNILAKJMEEP\x12\"\n\x0bPGGDEHKKINP\x18\x0c\x20\
+    \x04\x20\x01(\rH\0R\x0bKNILAKJMEEP\x12\"\n\x0bPGGDEHKKINP\x18\x06\x20\
     \x01(\rH\0R\x0bPGGDEHKKINPB\r\n\x0bAJOABBCKHCKb\x06proto3\
 ";
 

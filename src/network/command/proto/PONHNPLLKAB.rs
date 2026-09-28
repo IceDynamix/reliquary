@@ -31,8 +31,8 @@ pub enum PONHNPLLKAB {
     PONHNPLLKAB_GAJGBBFELEL = 0,
     // @@protoc_insertion_point(enum_value:PONHNPLLKAB.PONHNPLLKAB_BFADFAELKLJ)
     PONHNPLLKAB_BFADFAELKLJ = 1,
-    // @@protoc_insertion_point(enum_value:PONHNPLLKAB.PONHNPLLKAB_has_recommand)
-    PONHNPLLKAB_has_recommand = 2,
+    // @@protoc_insertion_point(enum_value:PONHNPLLKAB.PONHNPLLKAB_MOKNCFJICIC)
+    PONHNPLLKAB_MOKNCFJICIC = 2,
 }
 
 impl ::protobuf::Enum for PONHNPLLKAB {
@@ -46,7 +46,7 @@ impl ::protobuf::Enum for PONHNPLLKAB {
         match value {
             0 => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL),
             1 => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_BFADFAELKLJ),
-            2 => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_has_recommand),
+            2 => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_MOKNCFJICIC),
             _ => ::std::option::Option::None
         }
     }
@@ -55,7 +55,7 @@ impl ::protobuf::Enum for PONHNPLLKAB {
         match str {
             "PONHNPLLKAB_GAJGBBFELEL" => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL),
             "PONHNPLLKAB_BFADFAELKLJ" => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_BFADFAELKLJ),
-            "PONHNPLLKAB_has_recommand" => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_has_recommand),
+            "PONHNPLLKAB_MOKNCFJICIC" => ::std::option::Option::Some(PONHNPLLKAB::PONHNPLLKAB_MOKNCFJICIC),
             _ => ::std::option::Option::None
         }
     }
@@ -63,7 +63,7 @@ impl ::protobuf::Enum for PONHNPLLKAB {
     const VALUES: &'static [PONHNPLLKAB] = &[
         PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL,
         PONHNPLLKAB::PONHNPLLKAB_BFADFAELKLJ,
-        PONHNPLLKAB::PONHNPLLKAB_has_recommand,
+        PONHNPLLKAB::PONHNPLLKAB_MOKNCFJICIC,
     ];
 }
 
@@ -92,9 +92,9 @@ impl PONHNPLLKAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PONHNPLLKAB.proto*f\n\x0bPONHNPLLKAB\x12\x1b\n\x17PONHNPLLKAB_GAJG\
-    BBFELEL\x10\0\x12\x1b\n\x17PONHNPLLKAB_BFADFAELKLJ\x10\x01\x12\x1d\n\x19\
-    PONHNPLLKAB_has_recommand\x10\x02b\x06proto3\
+    \n\x11PONHNPLLKAB.proto*d\n\x0bPONHNPLLKAB\x12\x1b\n\x17PONHNPLLKAB_GAJG\
+    BBFELEL\x10\0\x12\x1b\n\x17PONHNPLLKAB_BFADFAELKLJ\x10\x01\x12\x1b\n\x17\
+    PONHNPLLKAB_MOKNCFJICIC\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                16 => {
                     self.EFCAJENMLKA = is.read_uint32()?;
                 },
-                80 => {
+                24 => {
                     self.CNFGOHFPLGO = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for DGKLPPLJBNB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EFCAJENMLKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EFCAJENMLKA);
+            my_size += ::protobuf::rt::uint32_size(2, self.EFCAJENMLKA);
         }
         if self.CNFGOHFPLGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CNFGOHFPLGO);
+            my_size += ::protobuf::rt::uint32_size(3, self.CNFGOHFPLGO);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
+            my_size += ::protobuf::rt::int32_size(6, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DGKLPPLJBNB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EFCAJENMLKA != 0 {
-            os.write_uint32(9, self.EFCAJENMLKA)?;
+            os.write_uint32(2, self.EFCAJENMLKA)?;
         }
         if self.CNFGOHFPLGO != 0 {
-            os.write_uint32(10, self.CNFGOHFPLGO)?;
+            os.write_uint32(3, self.CNFGOHFPLGO)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::LBPLJCHEJOK::LBPLJCHEJOK::LBPLJCHEJOK_NDDPEJHPLHG) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DGKLPPLJBNB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DGKLPPLJBNB.proto\x1a\x11LBPLJCHEJOK.proto\"w\n\x0bDGKLPPLJBNB\x12\
-    \x20\n\x0bEFCAJENMLKA\x18\t\x20\x01(\rR\x0bEFCAJENMLKA\x12\x20\n\x0bCNFG\
-    OHFPLGO\x18\n\x20\x01(\rR\x0bCNFGOHFPLGO\x12$\n\x06status\x18\x0f\x20\
-    \x01(\x0e2\x0c.LBPLJCHEJOKR\x06statusb\x06proto3\
+    \x20\n\x0bEFCAJENMLKA\x18\x02\x20\x01(\rR\x0bEFCAJENMLKA\x12\x20\n\x0bCN\
+    FGOHFPLGO\x18\x03\x20\x01(\rR\x0bCNFGOHFPLGO\x12$\n\x06status\x18\x06\
+    \x20\x01(\x0e2\x0c.LBPLJCHEJOKR\x06statusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

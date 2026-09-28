@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum MFJDGMGKMDJ {
     // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_NLCDGIPGFDJ)
     MFJDGMGKMDJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_BMEBIAJFADB)
-    MFJDGMGKMDJ_BMEBIAJFADB = 2329,
     // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_PEPICAPCDKF)
-    MFJDGMGKMDJ_PEPICAPCDKF = 2378,
-    // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_IHKIOOMDMND)
-    MFJDGMGKMDJ_IHKIOOMDMND = 2332,
+    MFJDGMGKMDJ_PEPICAPCDKF = 2375,
+    // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_BMEBIAJFADB)
+    MFJDGMGKMDJ_BMEBIAJFADB = 2305,
     // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_HNJKGIBFMIP)
-    MFJDGMGKMDJ_HNJKGIBFMIP = 2313,
+    MFJDGMGKMDJ_HNJKGIBFMIP = 2325,
+    // @@protoc_insertion_point(enum_value:MFJDGMGKMDJ.MFJDGMGKMDJ_IHKIOOMDMND)
+    MFJDGMGKMDJ_IHKIOOMDMND = 2334,
 }
 
 impl ::protobuf::Enum for MFJDGMGKMDJ {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for MFJDGMGKMDJ {
     fn from_i32(value: i32) -> ::std::option::Option<MFJDGMGKMDJ> {
         match value {
             0 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_NLCDGIPGFDJ),
-            2329 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB),
-            2378 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF),
-            2332 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND),
-            2313 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP),
+            2375 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF),
+            2305 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB),
+            2325 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP),
+            2334 => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for MFJDGMGKMDJ {
     fn from_str(str: &str) -> ::std::option::Option<MFJDGMGKMDJ> {
         match str {
             "MFJDGMGKMDJ_NLCDGIPGFDJ" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_NLCDGIPGFDJ),
-            "MFJDGMGKMDJ_BMEBIAJFADB" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB),
             "MFJDGMGKMDJ_PEPICAPCDKF" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF),
-            "MFJDGMGKMDJ_IHKIOOMDMND" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND),
+            "MFJDGMGKMDJ_BMEBIAJFADB" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB),
             "MFJDGMGKMDJ_HNJKGIBFMIP" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP),
+            "MFJDGMGKMDJ_IHKIOOMDMND" => ::std::option::Option::Some(MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MFJDGMGKMDJ] = &[
         MFJDGMGKMDJ::MFJDGMGKMDJ_NLCDGIPGFDJ,
-        MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB,
         MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF,
-        MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND,
+        MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB,
         MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP,
+        MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for MFJDGMGKMDJ {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             MFJDGMGKMDJ::MFJDGMGKMDJ_NLCDGIPGFDJ => 0,
-            MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB => 1,
-            MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF => 2,
-            MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND => 3,
-            MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP => 4,
+            MFJDGMGKMDJ::MFJDGMGKMDJ_PEPICAPCDKF => 1,
+            MFJDGMGKMDJ::MFJDGMGKMDJ_BMEBIAJFADB => 2,
+            MFJDGMGKMDJ::MFJDGMGKMDJ_HNJKGIBFMIP => 3,
+            MFJDGMGKMDJ::MFJDGMGKMDJ_IHKIOOMDMND => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl MFJDGMGKMDJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MFJDGMGKMDJ.proto*\xa2\x01\n\x0bMFJDGMGKMDJ\x12\x1b\n\x17MFJDGMGKM\
-    DJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFJDGMGKMDJ_BMEBIAJFADB\x10\x99\x12\
-    \x12\x1c\n\x17MFJDGMGKMDJ_PEPICAPCDKF\x10\xca\x12\x12\x1c\n\x17MFJDGMGKM\
-    DJ_IHKIOOMDMND\x10\x9c\x12\x12\x1c\n\x17MFJDGMGKMDJ_HNJKGIBFMIP\x10\x89\
+    DJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MFJDGMGKMDJ_PEPICAPCDKF\x10\xc7\x12\
+    \x12\x1c\n\x17MFJDGMGKMDJ_BMEBIAJFADB\x10\x81\x12\x12\x1c\n\x17MFJDGMGKM\
+    DJ_HNJKGIBFMIP\x10\x95\x12\x12\x1c\n\x17MFJDGMGKMDJ_IHKIOOMDMND\x10\x9e\
     \x12b\x06proto3\
 ";
 

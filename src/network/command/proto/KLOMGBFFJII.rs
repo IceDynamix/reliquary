@@ -30,15 +30,15 @@ pub enum KLOMGBFFJII {
     // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_NLCDGIPGFDJ)
     KLOMGBFFJII_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_GBNHCNHFGJH)
-    KLOMGBFFJII_GBNHCNHFGJH = 7163,
-    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_MEECLAKOPJD)
-    KLOMGBFFJII_MEECLAKOPJD = 7162,
-    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_FONHJMCBCBK)
-    KLOMGBFFJII_FONHJMCBCBK = 7166,
-    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_FCIBBMDNOGM)
-    KLOMGBFFJII_FCIBBMDNOGM = 7164,
+    KLOMGBFFJII_GBNHCNHFGJH = 7169,
     // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_PLEIMCMLAHB)
-    KLOMGBFFJII_PLEIMCMLAHB = 7169,
+    KLOMGBFFJII_PLEIMCMLAHB = 7162,
+    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_FONHJMCBCBK)
+    KLOMGBFFJII_FONHJMCBCBK = 7164,
+    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_MEECLAKOPJD)
+    KLOMGBFFJII_MEECLAKOPJD = 7170,
+    // @@protoc_insertion_point(enum_value:KLOMGBFFJII.KLOMGBFFJII_FCIBBMDNOGM)
+    KLOMGBFFJII_FCIBBMDNOGM = 7163,
 }
 
 impl ::protobuf::Enum for KLOMGBFFJII {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for KLOMGBFFJII {
     fn from_i32(value: i32) -> ::std::option::Option<KLOMGBFFJII> {
         match value {
             0 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_NLCDGIPGFDJ),
-            7163 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_GBNHCNHFGJH),
-            7162 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD),
-            7166 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK),
-            7164 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM),
-            7169 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB),
+            7169 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_GBNHCNHFGJH),
+            7162 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB),
+            7164 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK),
+            7170 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD),
+            7163 => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM),
             _ => ::std::option::Option::None
         }
     }
@@ -64,10 +64,10 @@ impl ::protobuf::Enum for KLOMGBFFJII {
         match str {
             "KLOMGBFFJII_NLCDGIPGFDJ" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_NLCDGIPGFDJ),
             "KLOMGBFFJII_GBNHCNHFGJH" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_GBNHCNHFGJH),
-            "KLOMGBFFJII_MEECLAKOPJD" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD),
-            "KLOMGBFFJII_FONHJMCBCBK" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK),
-            "KLOMGBFFJII_FCIBBMDNOGM" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM),
             "KLOMGBFFJII_PLEIMCMLAHB" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB),
+            "KLOMGBFFJII_FONHJMCBCBK" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK),
+            "KLOMGBFFJII_MEECLAKOPJD" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD),
+            "KLOMGBFFJII_FCIBBMDNOGM" => ::std::option::Option::Some(KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM),
             _ => ::std::option::Option::None
         }
     }
@@ -75,10 +75,10 @@ impl ::protobuf::Enum for KLOMGBFFJII {
     const VALUES: &'static [KLOMGBFFJII] = &[
         KLOMGBFFJII::KLOMGBFFJII_NLCDGIPGFDJ,
         KLOMGBFFJII::KLOMGBFFJII_GBNHCNHFGJH,
-        KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD,
-        KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK,
-        KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM,
         KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB,
+        KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK,
+        KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD,
+        KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM,
     ];
 }
 
@@ -92,10 +92,10 @@ impl ::protobuf::EnumFull for KLOMGBFFJII {
         let index = match self {
             KLOMGBFFJII::KLOMGBFFJII_NLCDGIPGFDJ => 0,
             KLOMGBFFJII::KLOMGBFFJII_GBNHCNHFGJH => 1,
-            KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD => 2,
+            KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB => 2,
             KLOMGBFFJII::KLOMGBFFJII_FONHJMCBCBK => 3,
-            KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM => 4,
-            KLOMGBFFJII::KLOMGBFFJII_PLEIMCMLAHB => 5,
+            KLOMGBFFJII::KLOMGBFFJII_MEECLAKOPJD => 4,
+            KLOMGBFFJII::KLOMGBFFJII_FCIBBMDNOGM => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl KLOMGBFFJII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KLOMGBFFJII.proto*\xc0\x01\n\x0bKLOMGBFFJII\x12\x1b\n\x17KLOMGBFFJ\
-    II_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KLOMGBFFJII_GBNHCNHFGJH\x10\xfb7\x12\
-    \x1c\n\x17KLOMGBFFJII_MEECLAKOPJD\x10\xfa7\x12\x1c\n\x17KLOMGBFFJII_FONH\
-    JMCBCBK\x10\xfe7\x12\x1c\n\x17KLOMGBFFJII_FCIBBMDNOGM\x10\xfc7\x12\x1c\n\
-    \x17KLOMGBFFJII_PLEIMCMLAHB\x10\x818b\x06proto3\
+    II_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KLOMGBFFJII_GBNHCNHFGJH\x10\x818\x12\
+    \x1c\n\x17KLOMGBFFJII_PLEIMCMLAHB\x10\xfa7\x12\x1c\n\x17KLOMGBFFJII_FONH\
+    JMCBCBK\x10\xfc7\x12\x1c\n\x17KLOMGBFFJII_MEECLAKOPJD\x10\x828\x12\x1c\n\
+    \x17KLOMGBFFJII_FCIBBMDNOGM\x10\xfb7b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

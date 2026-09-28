@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EBOLNPIMDAL {
     // message fields
-    // @@protoc_insertion_point(field:EBOLNPIMDAL.NGJJMOIAJKO)
-    pub NGJJMOIAJKO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:EBOLNPIMDAL.is_win)
     pub is_win: bool,
+    // @@protoc_insertion_point(field:EBOLNPIMDAL.NGJJMOIAJKO)
+    pub NGJJMOIAJKO: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:EBOLNPIMDAL.battle_event_id)
     pub battle_event_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl EBOLNPIMDAL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "NGJJMOIAJKO",
-            |m: &EBOLNPIMDAL| { &m.NGJJMOIAJKO },
-            |m: &mut EBOLNPIMDAL| { &mut m.NGJJMOIAJKO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &EBOLNPIMDAL| { &m.is_win },
             |m: &mut EBOLNPIMDAL| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NGJJMOIAJKO",
+            |m: &EBOLNPIMDAL| { &m.NGJJMOIAJKO },
+            |m: &mut EBOLNPIMDAL| { &mut m.NGJJMOIAJKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_event_id",
@@ -86,7 +86,10 @@ impl ::protobuf::Message for EBOLNPIMDAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                72 => {
+                    self.is_win = is.read_bool()?;
+                },
+                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -101,10 +104,7 @@ impl ::protobuf::Message for EBOLNPIMDAL {
                     is.pop_limit(old_limit);
                     self.NGJJMOIAJKO.insert(key, value);
                 },
-                40 => {
-                    self.is_win = is.read_bool()?;
-                },
-                80 => {
+                96 => {
                     self.battle_event_id = is.read_uint32()?;
                 },
                 tag => {
@@ -119,17 +119,17 @@ impl ::protobuf::Message for EBOLNPIMDAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
         for (k, v) in &self.NGJJMOIAJKO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
         if self.battle_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.battle_event_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.battle_event_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,20 +137,20 @@ impl ::protobuf::Message for EBOLNPIMDAL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_win != false {
+            os.write_bool(9, self.is_win)?;
+        }
         for (k, v) in &self.NGJJMOIAJKO {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
+            os.write_raw_varint32(82)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.is_win != false {
-            os.write_bool(5, self.is_win)?;
-        }
         if self.battle_event_id != 0 {
-            os.write_uint32(10, self.battle_event_id)?;
+            os.write_uint32(12, self.battle_event_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,8 +169,8 @@ impl ::protobuf::Message for EBOLNPIMDAL {
     }
 
     fn clear(&mut self) {
-        self.NGJJMOIAJKO.clear();
         self.is_win = false;
+        self.NGJJMOIAJKO.clear();
         self.battle_event_id = 0;
         self.special_fields.clear();
     }
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for EBOLNPIMDAL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EBOLNPIMDAL.proto\"\xcd\x01\n\x0bEBOLNPIMDAL\x12?\n\x0bNGJJMOIAJKO\
-    \x18\x02\x20\x03(\x0b2\x1d.EBOLNPIMDAL.NGJJMOIAJKOEntryR\x0bNGJJMOIAJKO\
-    \x12\x15\n\x06is_win\x18\x05\x20\x01(\x08R\x05isWin\x12&\n\x0fbattle_eve\
-    nt_id\x18\n\x20\x01(\rR\rbattleEventId\x1a>\n\x10NGJJMOIAJKOEntry\x12\
+    \n\x11EBOLNPIMDAL.proto\"\xcd\x01\n\x0bEBOLNPIMDAL\x12\x15\n\x06is_win\
+    \x18\t\x20\x01(\x08R\x05isWin\x12?\n\x0bNGJJMOIAJKO\x18\n\x20\x03(\x0b2\
+    \x1d.EBOLNPIMDAL.NGJJMOIAJKOEntryR\x0bNGJJMOIAJKO\x12&\n\x0fbattle_event\
+    _id\x18\x0c\x20\x01(\rR\rbattleEventId\x1a>\n\x10NGJJMOIAJKOEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

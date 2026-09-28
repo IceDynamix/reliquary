@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JJIJAMHKNGO {
     // message fields
-    // @@protoc_insertion_point(field:JJIJAMHKNGO.GLEJFCIOMKC)
-    pub GLEJFCIOMKC: bool,
-    // @@protoc_insertion_point(field:JJIJAMHKNGO.EECIJBLGLNG)
-    pub EECIJBLGLNG: u32,
     // @@protoc_insertion_point(field:JJIJAMHKNGO.CJPDGBPLFIG)
     pub CJPDGBPLFIG: u32,
+    // @@protoc_insertion_point(field:JJIJAMHKNGO.EECIJBLGLNG)
+    pub EECIJBLGLNG: u32,
+    // @@protoc_insertion_point(field:JJIJAMHKNGO.GLEJFCIOMKC)
+    pub GLEJFCIOMKC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:JJIJAMHKNGO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl JJIJAMHKNGO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLEJFCIOMKC",
-            |m: &JJIJAMHKNGO| { &m.GLEJFCIOMKC },
-            |m: &mut JJIJAMHKNGO| { &mut m.GLEJFCIOMKC },
+            "CJPDGBPLFIG",
+            |m: &JJIJAMHKNGO| { &m.CJPDGBPLFIG },
+            |m: &mut JJIJAMHKNGO| { &mut m.CJPDGBPLFIG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EECIJBLGLNG",
@@ -64,9 +64,9 @@ impl JJIJAMHKNGO {
             |m: &mut JJIJAMHKNGO| { &mut m.EECIJBLGLNG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJPDGBPLFIG",
-            |m: &JJIJAMHKNGO| { &m.CJPDGBPLFIG },
-            |m: &mut JJIJAMHKNGO| { &mut m.CJPDGBPLFIG },
+            "GLEJFCIOMKC",
+            |m: &JJIJAMHKNGO| { &m.GLEJFCIOMKC },
+            |m: &mut JJIJAMHKNGO| { &mut m.GLEJFCIOMKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JJIJAMHKNGO>(
             "JJIJAMHKNGO",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JJIJAMHKNGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.GLEJFCIOMKC = is.read_bool()?;
+                72 => {
+                    self.CJPDGBPLFIG = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.EECIJBLGLNG = is.read_uint32()?;
                 },
-                120 => {
-                    self.CJPDGBPLFIG = is.read_uint32()?;
+                104 => {
+                    self.GLEJFCIOMKC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JJIJAMHKNGO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GLEJFCIOMKC != false {
-            my_size += 1 + 1;
+        if self.CJPDGBPLFIG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CJPDGBPLFIG);
         }
         if self.EECIJBLGLNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EECIJBLGLNG);
+            my_size += ::protobuf::rt::uint32_size(12, self.EECIJBLGLNG);
         }
-        if self.CJPDGBPLFIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CJPDGBPLFIG);
+        if self.GLEJFCIOMKC != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JJIJAMHKNGO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GLEJFCIOMKC != false {
-            os.write_bool(6, self.GLEJFCIOMKC)?;
+        if self.CJPDGBPLFIG != 0 {
+            os.write_uint32(9, self.CJPDGBPLFIG)?;
         }
         if self.EECIJBLGLNG != 0 {
-            os.write_uint32(13, self.EECIJBLGLNG)?;
+            os.write_uint32(12, self.EECIJBLGLNG)?;
         }
-        if self.CJPDGBPLFIG != 0 {
-            os.write_uint32(15, self.CJPDGBPLFIG)?;
+        if self.GLEJFCIOMKC != false {
+            os.write_bool(13, self.GLEJFCIOMKC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JJIJAMHKNGO {
     }
 
     fn clear(&mut self) {
-        self.GLEJFCIOMKC = false;
-        self.EECIJBLGLNG = 0;
         self.CJPDGBPLFIG = 0;
+        self.EECIJBLGLNG = 0;
+        self.GLEJFCIOMKC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JJIJAMHKNGO {
         static instance: JJIJAMHKNGO = JJIJAMHKNGO {
-            GLEJFCIOMKC: false,
-            EECIJBLGLNG: 0,
             CJPDGBPLFIG: 0,
+            EECIJBLGLNG: 0,
+            GLEJFCIOMKC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for JJIJAMHKNGO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JJIJAMHKNGO.proto\"s\n\x0bJJIJAMHKNGO\x12\x20\n\x0bGLEJFCIOMKC\x18\
-    \x06\x20\x01(\x08R\x0bGLEJFCIOMKC\x12\x20\n\x0bEECIJBLGLNG\x18\r\x20\x01\
-    (\rR\x0bEECIJBLGLNG\x12\x20\n\x0bCJPDGBPLFIG\x18\x0f\x20\x01(\rR\x0bCJPD\
-    GBPLFIGb\x06proto3\
+    \n\x11JJIJAMHKNGO.proto\"s\n\x0bJJIJAMHKNGO\x12\x20\n\x0bCJPDGBPLFIG\x18\
+    \t\x20\x01(\rR\x0bCJPDGBPLFIG\x12\x20\n\x0bEECIJBLGLNG\x18\x0c\x20\x01(\
+    \rR\x0bEECIJBLGLNG\x12\x20\n\x0bGLEJFCIOMKC\x18\r\x20\x01(\x08R\x0bGLEJF\
+    CIOMKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -72,7 +72,7 @@ impl ::protobuf::Message for KNLJDBNOPKD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PNJMDOFOEEE)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for KNLJDBNOPKD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PNJMDOFOEEE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for KNLJDBNOPKD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KNLJDBNOPKD.proto\x1a\x11GCJCLFOLBPP.proto\"=\n\x0bKNLJDBNOPKD\x12\
-    .\n\x0bPNJMDOFOEEE\x18\r\x20\x01(\x0b2\x0c.GCJCLFOLBPPR\x0bPNJMDOFOEEEb\
-    \x06proto3\
+    .\n\x0bPNJMDOFOEEE\x18\x07\x20\x01(\x0b2\x0c.GCJCLFOLBPPR\x0bPNJMDOFOEEE\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

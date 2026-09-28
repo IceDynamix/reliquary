@@ -30,10 +30,10 @@ pub struct ChenLingFesLevelEndScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChenLingFesLevelEndScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingFesLevelEndScRsp.EHIHHFMGNHH)
-    pub EHIHHFMGNHH: ::protobuf::MessageField<super::DMHADFNOIGP::DMHADFNOIGP>,
     // @@protoc_insertion_point(field:ChenLingFesLevelEndScRsp.level_id)
     pub level_id: u32,
+    // @@protoc_insertion_point(field:ChenLingFesLevelEndScRsp.EHIHHFMGNHH)
+    pub EHIHHFMGNHH: ::protobuf::MessageField<super::DMHADFNOIGP::DMHADFNOIGP>,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingFesLevelEndScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl ChenLingFesLevelEndScRsp {
             |m: &ChenLingFesLevelEndScRsp| { &m.retcode },
             |m: &mut ChenLingFesLevelEndScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMHADFNOIGP::DMHADFNOIGP>(
-            "EHIHHFMGNHH",
-            |m: &ChenLingFesLevelEndScRsp| { &m.EHIHHFMGNHH },
-            |m: &mut ChenLingFesLevelEndScRsp| { &mut m.EHIHHFMGNHH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
             |m: &ChenLingFesLevelEndScRsp| { &m.level_id },
             |m: &mut ChenLingFesLevelEndScRsp| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMHADFNOIGP::DMHADFNOIGP>(
+            "EHIHHFMGNHH",
+            |m: &ChenLingFesLevelEndScRsp| { &m.EHIHHFMGNHH },
+            |m: &mut ChenLingFesLevelEndScRsp| { &mut m.EHIHHFMGNHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingFesLevelEndScRsp>(
             "ChenLingFesLevelEndScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChenLingFesLevelEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHIHHFMGNHH)?;
-                },
-                120 => {
+                104 => {
                     self.level_id = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHIHHFMGNHH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for ChenLingFesLevelEndScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level_id);
         }
         if let Some(v) = self.EHIHHFMGNHH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for ChenLingFesLevelEndScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if let Some(v) = self.EHIHHFMGNHH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(15, self.level_id)?;
+            os.write_uint32(13, self.level_id)?;
+        }
+        if let Some(v) = self.EHIHHFMGNHH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for ChenLingFesLevelEndScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.EHIHHFMGNHH.clear();
         self.level_id = 0;
+        self.EHIHHFMGNHH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingFesLevelEndScRsp {
         static instance: ChenLingFesLevelEndScRsp = ChenLingFesLevelEndScRsp {
             retcode: 0,
-            EHIHHFMGNHH: ::protobuf::MessageField::none(),
             level_id: 0,
+            EHIHHFMGNHH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingFesLevelEndScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChenLingFesLevelEndScRsp.proto\x1a\x11DMHADFNOIGP.proto\"\x7f\n\
-    \x18ChenLingFesLevelEndScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bEHIHHFMGNHH\x18\r\x20\x01(\x0b2\x0c.DMHADFNOIGPR\
-    \x0bEHIHHFMGNHH\x12\x19\n\x08level_id\x18\x0f\x20\x01(\rR\x07levelIdb\
+    \x18ChenLingFesLevelEndScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcode\x12\x19\n\x08level_id\x18\r\x20\x01(\rR\x07levelId\x12.\n\
+    \x0bEHIHHFMGNHH\x18\x0f\x20\x01(\x0b2\x0c.DMHADFNOIGPR\x0bEHIHHFMGNHHb\
     \x06proto3\
 ";
 

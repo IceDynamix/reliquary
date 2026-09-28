@@ -100,19 +100,19 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.AFOHLIOKLAA = is.read_uint32()?;
                 },
-                18 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAGMMONIIGK)?;
                 },
-                24 => {
+                48 => {
                     self.OAEFICOLFIG = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.HMHEDCCLDGB = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.DJMPADMMPAN = is.read_uint32()?;
                 },
                 tag => {
@@ -128,20 +128,20 @@ impl ::protobuf::Message for AIMNHEHKIMI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AFOHLIOKLAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.AFOHLIOKLAA);
+            my_size += ::protobuf::rt::uint32_size(2, self.AFOHLIOKLAA);
         }
         if let Some(v) = self.BAGMMONIIGK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.OAEFICOLFIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OAEFICOLFIG);
+            my_size += ::protobuf::rt::uint32_size(6, self.OAEFICOLFIG);
         }
         if self.HMHEDCCLDGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HMHEDCCLDGB);
+            my_size += ::protobuf::rt::uint32_size(7, self.HMHEDCCLDGB);
         }
         if self.DJMPADMMPAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DJMPADMMPAN);
+            my_size += ::protobuf::rt::uint32_size(8, self.DJMPADMMPAN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for AIMNHEHKIMI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AFOHLIOKLAA != 0 {
-            os.write_uint32(1, self.AFOHLIOKLAA)?;
+            os.write_uint32(2, self.AFOHLIOKLAA)?;
         }
         if let Some(v) = self.BAGMMONIIGK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.OAEFICOLFIG != 0 {
-            os.write_uint32(3, self.OAEFICOLFIG)?;
+            os.write_uint32(6, self.OAEFICOLFIG)?;
         }
         if self.HMHEDCCLDGB != 0 {
-            os.write_uint32(6, self.HMHEDCCLDGB)?;
+            os.write_uint32(7, self.HMHEDCCLDGB)?;
         }
         if self.DJMPADMMPAN != 0 {
-            os.write_uint32(10, self.DJMPADMMPAN)?;
+            os.write_uint32(8, self.DJMPADMMPAN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for AIMNHEHKIMI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIMNHEHKIMI.proto\x1a\x11NCFKHDIKCNI.proto\"\xc5\x01\n\x0bAIMNHEHK\
-    IMI\x12\x20\n\x0bAFOHLIOKLAA\x18\x01\x20\x01(\rR\x0bAFOHLIOKLAA\x12.\n\
-    \x0bBAGMMONIIGK\x18\x02\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bBAGMMONIIGK\
-    \x12\x20\n\x0bOAEFICOLFIG\x18\x03\x20\x01(\rR\x0bOAEFICOLFIG\x12\x20\n\
-    \x0bHMHEDCCLDGB\x18\x06\x20\x01(\rR\x0bHMHEDCCLDGB\x12\x20\n\x0bDJMPADMM\
-    PAN\x18\n\x20\x01(\rR\x0bDJMPADMMPANb\x06proto3\
+    IMI\x12\x20\n\x0bAFOHLIOKLAA\x18\x02\x20\x01(\rR\x0bAFOHLIOKLAA\x12.\n\
+    \x0bBAGMMONIIGK\x18\x04\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bBAGMMONIIGK\
+    \x12\x20\n\x0bOAEFICOLFIG\x18\x06\x20\x01(\rR\x0bOAEFICOLFIG\x12\x20\n\
+    \x0bHMHEDCCLDGB\x18\x07\x20\x01(\rR\x0bHMHEDCCLDGB\x12\x20\n\x0bDJMPADMM\
+    PAN\x18\x08\x20\x01(\rR\x0bDJMPADMMPANb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

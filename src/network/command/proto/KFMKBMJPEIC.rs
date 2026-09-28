@@ -32,8 +32,8 @@ pub struct KFMKBMJPEIC {
     pub DNNCAGJIOAP: u32,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.IHCDDIPNJKO)
     pub IHCDDIPNJKO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KFMKBMJPEIC.H_7e8b12bb)
-    pub H_7e8b12bb: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
+    // @@protoc_insertion_point(field:KFMKBMJPEIC.H_76492770)
+    pub H_76492770: ::std::vec::Vec<super::ACFLKPFDHIM::ACFLKPFDHIM>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.BANBECDCDHG)
     pub BANBECDCDHG: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:KFMKBMJPEIC.POJGKJENENA)
@@ -68,9 +68,9 @@ impl KFMKBMJPEIC {
             |m: &mut KFMKBMJPEIC| { &mut m.IHCDDIPNJKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_7e8b12bb",
-            |m: &KFMKBMJPEIC| { &m.H_7e8b12bb },
-            |m: &mut KFMKBMJPEIC| { &mut m.H_7e8b12bb },
+            "H_76492770",
+            |m: &KFMKBMJPEIC| { &m.H_76492770 },
+            |m: &mut KFMKBMJPEIC| { &mut m.H_76492770 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BANBECDCDHG",
@@ -110,7 +110,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
                     self.IHCDDIPNJKO.push(is.read_uint32()?);
                 },
                 26 => {
-                    self.H_7e8b12bb.push(is.read_message()?);
+                    self.H_76492770.push(is.read_message()?);
                 },
                 34 => {
                     let len = is.read_raw_varint32()?;
@@ -146,7 +146,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
             my_size += ::protobuf::rt::uint32_size(1, self.DNNCAGJIOAP);
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IHCDDIPNJKO);
-        for value in &self.H_7e8b12bb {
+        for value in &self.H_76492770 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -170,7 +170,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
             os.write_uint32(1, self.DNNCAGJIOAP)?;
         }
         os.write_repeated_packed_uint32(2, &self.IHCDDIPNJKO)?;
-        for v in &self.H_7e8b12bb {
+        for v in &self.H_76492770 {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for (k, v) in &self.BANBECDCDHG {
@@ -204,7 +204,7 @@ impl ::protobuf::Message for KFMKBMJPEIC {
     fn clear(&mut self) {
         self.DNNCAGJIOAP = 0;
         self.IHCDDIPNJKO.clear();
-        self.H_7e8b12bb.clear();
+        self.H_76492770.clear();
         self.BANBECDCDHG.clear();
         self.POJGKJENENA.clear();
         self.special_fields.clear();
@@ -237,8 +237,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFMKBMJPEIC.proto\x1a\x11ACFLKPFDHIM.proto\x1a\x11FHCEIOHLADG.prot\
     o\"\xaf\x02\n\x0bKFMKBMJPEIC\x12\x20\n\x0bDNNCAGJIOAP\x18\x01\x20\x01(\r\
     R\x0bDNNCAGJIOAP\x12\x20\n\x0bIHCDDIPNJKO\x18\x02\x20\x03(\rR\x0bIHCDDIP\
-    NJKO\x12+\n\nH_7e8b12bb\x18\x03\x20\x03(\x0b2\x0c.ACFLKPFDHIMR\tH7e8b12b\
-    b\x12?\n\x0bBANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJPEIC.BANBECDCDH\
+    NJKO\x12+\n\nH_76492770\x18\x03\x20\x03(\x0b2\x0c.ACFLKPFDHIMR\tH7649277\
+    0\x12?\n\x0bBANBECDCDHG\x18\x04\x20\x03(\x0b2\x1d.KFMKBMJPEIC.BANBECDCDH\
     GEntryR\x0bBANBECDCDHG\x12.\n\x0bPOJGKJENENA\x18\x05\x20\x03(\x0b2\x0c.F\
     HCEIOHLADGR\x0bPOJGKJENENA\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\
     \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\

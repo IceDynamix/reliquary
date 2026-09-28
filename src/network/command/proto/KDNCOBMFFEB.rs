@@ -31,8 +31,8 @@ pub enum KDNCOBMFFEB {
     KDNCOBMFFEB_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:KDNCOBMFFEB.KDNCOBMFFEB_BDOEMDGHHEP)
     KDNCOBMFFEB_BDOEMDGHHEP = 1,
-    // @@protoc_insertion_point(enum_value:KDNCOBMFFEB.KDNCOBMFFEB_stop_desc)
-    KDNCOBMFFEB_stop_desc = 2,
+    // @@protoc_insertion_point(enum_value:KDNCOBMFFEB.KDNCOBMFFEB_MOHFKJKKEEC)
+    KDNCOBMFFEB_MOHFKJKKEEC = 2,
     // @@protoc_insertion_point(enum_value:KDNCOBMFFEB.KDNCOBMFFEB_LMJCPMFPHLK)
     KDNCOBMFFEB_LMJCPMFPHLK = 3,
     // @@protoc_insertion_point(enum_value:KDNCOBMFFEB.KDNCOBMFFEB_FHDMHKOMEFO)
@@ -52,7 +52,7 @@ impl ::protobuf::Enum for KDNCOBMFFEB {
         match value {
             0 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ),
             1 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_BDOEMDGHHEP),
-            2 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_stop_desc),
+            2 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_MOHFKJKKEEC),
             3 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_LMJCPMFPHLK),
             4 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_FHDMHKOMEFO),
             5 => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_FCKIHKAIIIJ),
@@ -64,7 +64,7 @@ impl ::protobuf::Enum for KDNCOBMFFEB {
         match str {
             "KDNCOBMFFEB_NLCDGIPGFDJ" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ),
             "KDNCOBMFFEB_BDOEMDGHHEP" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_BDOEMDGHHEP),
-            "KDNCOBMFFEB_stop_desc" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_stop_desc),
+            "KDNCOBMFFEB_MOHFKJKKEEC" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_MOHFKJKKEEC),
             "KDNCOBMFFEB_LMJCPMFPHLK" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_LMJCPMFPHLK),
             "KDNCOBMFFEB_FHDMHKOMEFO" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_FHDMHKOMEFO),
             "KDNCOBMFFEB_FCKIHKAIIIJ" => ::std::option::Option::Some(KDNCOBMFFEB::KDNCOBMFFEB_FCKIHKAIIIJ),
@@ -75,7 +75,7 @@ impl ::protobuf::Enum for KDNCOBMFFEB {
     const VALUES: &'static [KDNCOBMFFEB] = &[
         KDNCOBMFFEB::KDNCOBMFFEB_NLCDGIPGFDJ,
         KDNCOBMFFEB::KDNCOBMFFEB_BDOEMDGHHEP,
-        KDNCOBMFFEB::KDNCOBMFFEB_stop_desc,
+        KDNCOBMFFEB::KDNCOBMFFEB_MOHFKJKKEEC,
         KDNCOBMFFEB::KDNCOBMFFEB_LMJCPMFPHLK,
         KDNCOBMFFEB::KDNCOBMFFEB_FHDMHKOMEFO,
         KDNCOBMFFEB::KDNCOBMFFEB_FCKIHKAIIIJ,
@@ -107,11 +107,11 @@ impl KDNCOBMFFEB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KDNCOBMFFEB.proto*\xb9\x01\n\x0bKDNCOBMFFEB\x12\x1b\n\x17KDNCOBMFF\
+    \n\x11KDNCOBMFFEB.proto*\xbb\x01\n\x0bKDNCOBMFFEB\x12\x1b\n\x17KDNCOBMFF\
     EB_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17KDNCOBMFFEB_BDOEMDGHHEP\x10\x01\x12\
-    \x19\n\x15KDNCOBMFFEB_stop_desc\x10\x02\x12\x1b\n\x17KDNCOBMFFEB_LMJCPMF\
-    PHLK\x10\x03\x12\x1b\n\x17KDNCOBMFFEB_FHDMHKOMEFO\x10\x04\x12\x1b\n\x17K\
-    DNCOBMFFEB_FCKIHKAIIIJ\x10\x05b\x06proto3\
+    \x1b\n\x17KDNCOBMFFEB_MOHFKJKKEEC\x10\x02\x12\x1b\n\x17KDNCOBMFFEB_LMJCP\
+    MFPHLK\x10\x03\x12\x1b\n\x17KDNCOBMFFEB_FHDMHKOMEFO\x10\x04\x12\x1b\n\
+    \x17KDNCOBMFFEB_FCKIHKAIIIJ\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,13 +79,13 @@ impl ::protobuf::Message for NDPJHJOAOJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HMMBBENHIFE)?;
                 },
-                114 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.EPBJNIFHBLE)?;
                 },
-                112 => {
+                88 => {
                     self.EPBJNIFHBLE.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for NDPJHJOAOJE {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.EPBJNIFHBLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EPBJNIFHBLE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for NDPJHJOAOJE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.HMMBBENHIFE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.EPBJNIFHBLE)?;
+        os.write_repeated_packed_uint32(11, &self.EPBJNIFHBLE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NDPJHJOAOJE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NDPJHJOAOJE.proto\x1a\x11IKMLLJNNKJB.proto\"_\n\x0bNDPJHJOAOJE\x12\
-    .\n\x0bHMMBBENHIFE\x18\x07\x20\x01(\x0b2\x0c.IKMLLJNNKJBR\x0bHMMBBENHIFE\
-    \x12\x20\n\x0bEPBJNIFHBLE\x18\x0e\x20\x03(\rR\x0bEPBJNIFHBLEb\x06proto3\
+    .\n\x0bHMMBBENHIFE\x18\x05\x20\x01(\x0b2\x0c.IKMLLJNNKJBR\x0bHMMBBENHIFE\
+    \x12\x20\n\x0bEPBJNIFHBLE\x18\x0b\x20\x03(\rR\x0bEPBJNIFHBLEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

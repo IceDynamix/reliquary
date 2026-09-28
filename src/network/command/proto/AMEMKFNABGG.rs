@@ -36,6 +36,8 @@ pub struct AMEMKFNABGG {
     pub PIKBPDAMGML: u32,
     // @@protoc_insertion_point(field:AMEMKFNABGG.ODHIDLBAPIG)
     pub ODHIDLBAPIG: u32,
+    // @@protoc_insertion_point(field:AMEMKFNABGG.HEDHGPKEGBI)
+    pub HEDHGPKEGBI: ::std::collections::HashMap<u32, u64>,
     // special fields
     // @@protoc_insertion_point(special_field:AMEMKFNABGG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,7 +55,7 @@ impl AMEMKFNABGG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNLMBJCPING",
@@ -74,6 +76,11 @@ impl AMEMKFNABGG {
             "ODHIDLBAPIG",
             |m: &AMEMKFNABGG| { &m.ODHIDLBAPIG },
             |m: &mut AMEMKFNABGG| { &mut m.ODHIDLBAPIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "HEDHGPKEGBI",
+            |m: &AMEMKFNABGG| { &m.HEDHGPKEGBI },
+            |m: &mut AMEMKFNABGG| { &mut m.HEDHGPKEGBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AMEMKFNABGG>(
             "AMEMKFNABGG",
@@ -108,6 +115,21 @@ impl ::protobuf::Message for AMEMKFNABGG {
                 32 => {
                     self.ODHIDLBAPIG = is.read_uint32()?;
                 },
+                42 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint64()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.HEDHGPKEGBI.insert(key, value);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -130,6 +152,12 @@ impl ::protobuf::Message for AMEMKFNABGG {
         if self.ODHIDLBAPIG != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.ODHIDLBAPIG);
         }
+        for (k, v) in &self.HEDHGPKEGBI {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint64_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -146,6 +174,15 @@ impl ::protobuf::Message for AMEMKFNABGG {
         if self.ODHIDLBAPIG != 0 {
             os.write_uint32(4, self.ODHIDLBAPIG)?;
         }
+        for (k, v) in &self.HEDHGPKEGBI {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint64_size(2, *v);
+            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint64(2, *v)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -167,18 +204,13 @@ impl ::protobuf::Message for AMEMKFNABGG {
         self.ILOLFNPALJH.clear();
         self.PIKBPDAMGML = 0;
         self.ODHIDLBAPIG = 0;
+        self.HEDHGPKEGBI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AMEMKFNABGG {
-        static instance: AMEMKFNABGG = AMEMKFNABGG {
-            GNLMBJCPING: false,
-            ILOLFNPALJH: ::std::vec::Vec::new(),
-            PIKBPDAMGML: 0,
-            ODHIDLBAPIG: 0,
-            special_fields: ::protobuf::SpecialFields::new(),
-        };
-        &instance
+        static instance: ::protobuf::rt::Lazy<AMEMKFNABGG> = ::protobuf::rt::Lazy::new();
+        instance.get(AMEMKFNABGG::new)
     }
 }
 
@@ -200,11 +232,14 @@ impl ::protobuf::reflect::ProtobufValue for AMEMKFNABGG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMEMKFNABGG.proto\"\x95\x01\n\x0bAMEMKFNABGG\x12\x20\n\x0bGNLMBJCP\
+    \n\x11AMEMKFNABGG.proto\"\x96\x02\n\x0bAMEMKFNABGG\x12\x20\n\x0bGNLMBJCP\
     ING\x18\x01\x20\x01(\x08R\x0bGNLMBJCPING\x12\x20\n\x0bILOLFNPALJH\x18\
     \x02\x20\x03(\rR\x0bILOLFNPALJH\x12\x20\n\x0bPIKBPDAMGML\x18\x03\x20\x01\
     (\rR\x0bPIKBPDAMGML\x12\x20\n\x0bODHIDLBAPIG\x18\x04\x20\x01(\rR\x0bODHI\
-    DLBAPIGb\x06proto3\
+    DLBAPIG\x12?\n\x0bHEDHGPKEGBI\x18\x05\x20\x03(\x0b2\x1d.AMEMKFNABGG.HEDH\
+    GPKEGBIEntryR\x0bHEDHGPKEGBI\x1a>\n\x10HEDHGPKEGBIEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x04R\x05\
+    value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

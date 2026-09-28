@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EndDungeonScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EndDungeonScRsp.EICEKDBENKM)
-    pub EICEKDBENKM: u32,
     // @@protoc_insertion_point(field:EndDungeonScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:EndDungeonScRsp.DHBKGOFBMIM)
-    pub DHBKGOFBMIM: u32,
     // @@protoc_insertion_point(field:EndDungeonScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:EndDungeonScRsp.DHBKGOFBMIM)
+    pub DHBKGOFBMIM: u32,
+    // @@protoc_insertion_point(field:EndDungeonScRsp.EICEKDBENKM)
+    pub EICEKDBENKM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EndDungeonScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl EndDungeonScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EICEKDBENKM",
-            |m: &EndDungeonScRsp| { &m.EICEKDBENKM },
-            |m: &mut EndDungeonScRsp| { &mut m.EICEKDBENKM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &EndDungeonScRsp| { &m.reward },
             |m: &mut EndDungeonScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EndDungeonScRsp| { &m.retcode },
+            |m: &mut EndDungeonScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHBKGOFBMIM",
@@ -71,9 +71,9 @@ impl EndDungeonScRsp {
             |m: &mut EndDungeonScRsp| { &mut m.DHBKGOFBMIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EndDungeonScRsp| { &m.retcode },
-            |m: &mut EndDungeonScRsp| { &mut m.retcode },
+            "EICEKDBENKM",
+            |m: &EndDungeonScRsp| { &m.EICEKDBENKM },
+            |m: &mut EndDungeonScRsp| { &mut m.EICEKDBENKM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EndDungeonScRsp>(
             "EndDungeonScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EndDungeonScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.EICEKDBENKM = is.read_uint32()?;
-                },
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                48 => {
-                    self.DHBKGOFBMIM = is.read_uint32()?;
-                },
                 64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.DHBKGOFBMIM = is.read_uint32()?;
+                },
+                120 => {
+                    self.EICEKDBENKM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for EndDungeonScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EICEKDBENKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EICEKDBENKM);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DHBKGOFBMIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DHBKGOFBMIM);
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.DHBKGOFBMIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DHBKGOFBMIM);
+        }
+        if self.EICEKDBENKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.EICEKDBENKM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for EndDungeonScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EICEKDBENKM != 0 {
-            os.write_uint32(1, self.EICEKDBENKM)?;
-        }
         if let Some(v) = self.reward.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.DHBKGOFBMIM != 0 {
-            os.write_uint32(6, self.DHBKGOFBMIM)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
+        }
+        if self.DHBKGOFBMIM != 0 {
+            os.write_uint32(13, self.DHBKGOFBMIM)?;
+        }
+        if self.EICEKDBENKM != 0 {
+            os.write_uint32(15, self.EICEKDBENKM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for EndDungeonScRsp {
     }
 
     fn clear(&mut self) {
-        self.EICEKDBENKM = 0;
         self.reward.clear();
-        self.DHBKGOFBMIM = 0;
         self.retcode = 0;
+        self.DHBKGOFBMIM = 0;
+        self.EICEKDBENKM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EndDungeonScRsp {
         static instance: EndDungeonScRsp = EndDungeonScRsp {
-            EICEKDBENKM: 0,
             reward: ::protobuf::MessageField::none(),
-            DHBKGOFBMIM: 0,
             retcode: 0,
+            DHBKGOFBMIM: 0,
+            EICEKDBENKM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for EndDungeonScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15EndDungeonScRsp.proto\x1a\x0eItemList.proto\"\x92\x01\n\x0fEndDung\
-    eonScRsp\x12\x20\n\x0bEICEKDBENKM\x18\x01\x20\x01(\rR\x0bEICEKDBENKM\x12\
-    !\n\x06reward\x18\x05\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bD\
-    HBKGOFBMIM\x18\x06\x20\x01(\rR\x0bDHBKGOFBMIM\x12\x18\n\x07retcode\x18\
-    \x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    eonScRsp\x12!\n\x06reward\x18\x05\x20\x01(\x0b2\t.ItemListR\x06reward\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bDHBKGO\
+    FBMIM\x18\r\x20\x01(\rR\x0bDHBKGOFBMIM\x12\x20\n\x0bEICEKDBENKM\x18\x0f\
+    \x20\x01(\rR\x0bEICEKDBENKMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

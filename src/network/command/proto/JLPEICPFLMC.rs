@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JLPEICPFLMC {
     // message fields
-    // @@protoc_insertion_point(field:JLPEICPFLMC.NFMKOFNEKLA)
-    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::BCAMANFJINC::BCAMANFJINC>,
     // @@protoc_insertion_point(field:JLPEICPFLMC.BNEFLBPCPOI)
     pub BNEFLBPCPOI: u64,
+    // @@protoc_insertion_point(field:JLPEICPFLMC.NFMKOFNEKLA)
+    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::BCAMANFJINC::BCAMANFJINC>,
     // message oneof groups
     pub KLLMJCCOMNF: ::std::option::Option<jlpeicpflmc::KLLMJCCOMNF>,
     // special fields
@@ -48,106 +48,6 @@ impl<'a> ::std::default::Default for &'a JLPEICPFLMC {
 impl JLPEICPFLMC {
     pub fn new() -> JLPEICPFLMC {
         ::std::default::Default::default()
-    }
-
-    // uint32 BFCNALJDHMP = 1;
-
-    pub fn BFCNALJDHMP(&self) -> u32 {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_BFCNALJDHMP(&mut self) {
-        self.KLLMJCCOMNF = ::std::option::Option::None;
-    }
-
-    pub fn has_BFCNALJDHMP(&self) -> bool {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BFCNALJDHMP(&mut self, v: u32) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v))
-    }
-
-    // uint32 HPDFGFBLDOG = 12;
-
-    pub fn HPDFGFBLDOG(&self) -> u32 {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_HPDFGFBLDOG(&mut self) {
-        self.KLLMJCCOMNF = ::std::option::Option::None;
-    }
-
-    pub fn has_HPDFGFBLDOG(&self) -> bool {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HPDFGFBLDOG(&mut self, v: u32) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v))
-    }
-
-    // uint32 GCPPLLLHBBJ = 8;
-
-    pub fn GCPPLLLHBBJ(&self) -> u32 {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_GCPPLLLHBBJ(&mut self) {
-        self.KLLMJCCOMNF = ::std::option::Option::None;
-    }
-
-    pub fn has_GCPPLLLHBBJ(&self) -> bool {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GCPPLLLHBBJ(&mut self, v: u32) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v))
-    }
-
-    // uint32 DJODEIMGKGK = 13;
-
-    pub fn DJODEIMGKGK(&self) -> u32 {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_DJODEIMGKGK(&mut self) {
-        self.KLLMJCCOMNF = ::std::option::Option::None;
-    }
-
-    pub fn has_DJODEIMGKGK(&self) -> bool {
-        match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DJODEIMGKGK(&mut self, v: u32) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v))
     }
 
     // uint32 PBHFMIIIPBD = 3;
@@ -175,57 +75,107 @@ impl JLPEICPFLMC {
         self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::PBHFMIIIPBD(v))
     }
 
-    // uint64 CHFNDAGCEBK = 859;
+    // uint32 DJODEIMGKGK = 7;
 
-    pub fn CHFNDAGCEBK(&self) -> u64 {
+    pub fn DJODEIMGKGK(&self) -> u32 {
         match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v)) => v,
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_CHFNDAGCEBK(&mut self) {
+    pub fn clear_DJODEIMGKGK(&mut self) {
         self.KLLMJCCOMNF = ::std::option::Option::None;
     }
 
-    pub fn has_CHFNDAGCEBK(&self) -> bool {
+    pub fn has_DJODEIMGKGK(&self) -> bool {
         match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(..)) => true,
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CHFNDAGCEBK(&mut self, v: u64) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v))
+    pub fn set_DJODEIMGKGK(&mut self, v: u32) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v))
     }
 
-    // uint32 LEEMKAMANJN = 1892;
+    // uint32 GCPPLLLHBBJ = 9;
 
-    pub fn LEEMKAMANJN(&self) -> u32 {
+    pub fn GCPPLLLHBBJ(&self) -> u32 {
         match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v)) => v,
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_LEEMKAMANJN(&mut self) {
+    pub fn clear_GCPPLLLHBBJ(&mut self) {
         self.KLLMJCCOMNF = ::std::option::Option::None;
     }
 
-    pub fn has_LEEMKAMANJN(&self) -> bool {
+    pub fn has_GCPPLLLHBBJ(&self) -> bool {
         match self.KLLMJCCOMNF {
-            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(..)) => true,
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LEEMKAMANJN(&mut self, v: u32) {
-        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v))
+    pub fn set_GCPPLLLHBBJ(&mut self, v: u32) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v))
     }
 
-    // uint32 NKDDBPGDAEE = 1078;
+    // uint32 BFCNALJDHMP = 10;
+
+    pub fn BFCNALJDHMP(&self) -> u32 {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_BFCNALJDHMP(&mut self) {
+        self.KLLMJCCOMNF = ::std::option::Option::None;
+    }
+
+    pub fn has_BFCNALJDHMP(&self) -> bool {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BFCNALJDHMP(&mut self, v: u32) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v))
+    }
+
+    // uint32 HPDFGFBLDOG = 13;
+
+    pub fn HPDFGFBLDOG(&self) -> u32 {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_HPDFGFBLDOG(&mut self) {
+        self.KLLMJCCOMNF = ::std::option::Option::None;
+    }
+
+    pub fn has_HPDFGFBLDOG(&self) -> bool {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HPDFGFBLDOG(&mut self, v: u32) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v))
+    }
+
+    // uint32 NKDDBPGDAEE = 139;
 
     pub fn NKDDBPGDAEE(&self) -> u32 {
         match self.KLLMJCCOMNF {
@@ -250,7 +200,7 @@ impl JLPEICPFLMC {
         self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::NKDDBPGDAEE(v))
     }
 
-    // uint32 EFEENOFADFC = 1559;
+    // uint32 EFEENOFADFC = 202;
 
     pub fn EFEENOFADFC(&self) -> u32 {
         match self.KLLMJCCOMNF {
@@ -275,7 +225,57 @@ impl JLPEICPFLMC {
         self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::EFEENOFADFC(v))
     }
 
-    // .PFPPACPMFDJ DJNOLLDHPHJ = 722;
+    // uint64 CHFNDAGCEBK = 455;
+
+    pub fn CHFNDAGCEBK(&self) -> u64 {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_CHFNDAGCEBK(&mut self) {
+        self.KLLMJCCOMNF = ::std::option::Option::None;
+    }
+
+    pub fn has_CHFNDAGCEBK(&self) -> bool {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CHFNDAGCEBK(&mut self, v: u64) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v))
+    }
+
+    // uint32 LEEMKAMANJN = 1052;
+
+    pub fn LEEMKAMANJN(&self) -> u32 {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_LEEMKAMANJN(&mut self) {
+        self.KLLMJCCOMNF = ::std::option::Option::None;
+    }
+
+    pub fn has_LEEMKAMANJN(&self) -> bool {
+        match self.KLLMJCCOMNF {
+            ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LEEMKAMANJN(&mut self, v: u32) {
+        self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v))
+    }
+
+    // .PFPPACPMFDJ DJNOLLDHPHJ = 1084;
 
     pub fn DJNOLLDHPHJ(&self) -> &super::PFPPACPMFDJ::PFPPACPMFDJ {
         match self.KLLMJCCOMNF {
@@ -328,14 +328,32 @@ impl JLPEICPFLMC {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BNEFLBPCPOI",
+            |m: &JLPEICPFLMC| { &m.BNEFLBPCPOI },
+            |m: &mut JLPEICPFLMC| { &mut m.BNEFLBPCPOI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NFMKOFNEKLA",
             |m: &JLPEICPFLMC| { &m.NFMKOFNEKLA },
             |m: &mut JLPEICPFLMC| { &mut m.NFMKOFNEKLA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BNEFLBPCPOI",
-            |m: &JLPEICPFLMC| { &m.BNEFLBPCPOI },
-            |m: &mut JLPEICPFLMC| { &mut m.BNEFLBPCPOI },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "PBHFMIIIPBD",
+            JLPEICPFLMC::has_PBHFMIIIPBD,
+            JLPEICPFLMC::PBHFMIIIPBD,
+            JLPEICPFLMC::set_PBHFMIIIPBD,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "DJODEIMGKGK",
+            JLPEICPFLMC::has_DJODEIMGKGK,
+            JLPEICPFLMC::DJODEIMGKGK,
+            JLPEICPFLMC::set_DJODEIMGKGK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "GCPPLLLHBBJ",
+            JLPEICPFLMC::has_GCPPLLLHBBJ,
+            JLPEICPFLMC::GCPPLLLHBBJ,
+            JLPEICPFLMC::set_GCPPLLLHBBJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "BFCNALJDHMP",
@@ -350,22 +368,16 @@ impl JLPEICPFLMC {
             JLPEICPFLMC::set_HPDFGFBLDOG,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "GCPPLLLHBBJ",
-            JLPEICPFLMC::has_GCPPLLLHBBJ,
-            JLPEICPFLMC::GCPPLLLHBBJ,
-            JLPEICPFLMC::set_GCPPLLLHBBJ,
+            "NKDDBPGDAEE",
+            JLPEICPFLMC::has_NKDDBPGDAEE,
+            JLPEICPFLMC::NKDDBPGDAEE,
+            JLPEICPFLMC::set_NKDDBPGDAEE,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "DJODEIMGKGK",
-            JLPEICPFLMC::has_DJODEIMGKGK,
-            JLPEICPFLMC::DJODEIMGKGK,
-            JLPEICPFLMC::set_DJODEIMGKGK,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PBHFMIIIPBD",
-            JLPEICPFLMC::has_PBHFMIIIPBD,
-            JLPEICPFLMC::PBHFMIIIPBD,
-            JLPEICPFLMC::set_PBHFMIIIPBD,
+            "EFEENOFADFC",
+            JLPEICPFLMC::has_EFEENOFADFC,
+            JLPEICPFLMC::EFEENOFADFC,
+            JLPEICPFLMC::set_EFEENOFADFC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "CHFNDAGCEBK",
@@ -378,18 +390,6 @@ impl JLPEICPFLMC {
             JLPEICPFLMC::has_LEEMKAMANJN,
             JLPEICPFLMC::LEEMKAMANJN,
             JLPEICPFLMC::set_LEEMKAMANJN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NKDDBPGDAEE",
-            JLPEICPFLMC::has_NKDDBPGDAEE,
-            JLPEICPFLMC::NKDDBPGDAEE,
-            JLPEICPFLMC::set_NKDDBPGDAEE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "EFEENOFADFC",
-            JLPEICPFLMC::has_EFEENOFADFC,
-            JLPEICPFLMC::EFEENOFADFC,
-            JLPEICPFLMC::set_EFEENOFADFC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PFPPACPMFDJ::PFPPACPMFDJ>(
             "DJNOLLDHPHJ",
@@ -417,40 +417,40 @@ impl ::protobuf::Message for JLPEICPFLMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
-                },
-                40 => {
+                16 => {
                     self.BNEFLBPCPOI = is.read_uint64()?;
                 },
-                8 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(is.read_uint32()?));
-                },
-                96 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(is.read_uint32()?));
-                },
-                64 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(is.read_uint32()?));
-                },
-                104 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(is.read_uint32()?));
+                112 => {
+                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
                 24 => {
                     self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::PBHFMIIIPBD(is.read_uint32()?));
                 },
-                6872 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(is.read_uint64()?));
+                56 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(is.read_uint32()?));
                 },
-                15136 => {
-                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(is.read_uint32()?));
+                72 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(is.read_uint32()?));
                 },
-                8624 => {
+                80 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(is.read_uint32()?));
+                },
+                104 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(is.read_uint32()?));
+                },
+                1112 => {
                     self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::NKDDBPGDAEE(is.read_uint32()?));
                 },
-                12472 => {
+                1616 => {
                     self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::EFEENOFADFC(is.read_uint32()?));
                 },
-                5778 => {
+                3640 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(is.read_uint64()?));
+                },
+                8416 => {
+                    self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(is.read_uint32()?));
+                },
+                8674 => {
                     self.KLLMJCCOMNF = ::std::option::Option::Some(jlpeicpflmc::KLLMJCCOMNF::DJNOLLDHPHJ(is.read_message()?));
                 },
                 tag => {
@@ -465,40 +465,40 @@ impl ::protobuf::Message for JLPEICPFLMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.NFMKOFNEKLA.value());
-        }
         if self.BNEFLBPCPOI != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.BNEFLBPCPOI);
+            my_size += ::protobuf::rt::uint64_size(2, self.BNEFLBPCPOI);
+        }
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(14, self.NFMKOFNEKLA.value());
         }
         if let ::std::option::Option::Some(ref v) = self.KLLMJCCOMNF {
             match v {
-                &jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(8, v);
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
-                },
                 &jlpeicpflmc::KLLMJCCOMNF::PBHFMIIIPBD(v) => {
                     my_size += ::protobuf::rt::uint32_size(3, v);
                 },
-                &jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v) => {
-                    my_size += ::protobuf::rt::uint64_size(859, v);
+                &jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v) => {
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
-                &jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1892, v);
+                &jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v) => {
+                    my_size += ::protobuf::rt::uint32_size(9, v);
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v) => {
+                    my_size += ::protobuf::rt::uint32_size(10, v);
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v) => {
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::NKDDBPGDAEE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1078, v);
+                    my_size += ::protobuf::rt::uint32_size(139, v);
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::EFEENOFADFC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1559, v);
+                    my_size += ::protobuf::rt::uint32_size(202, v);
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v) => {
+                    my_size += ::protobuf::rt::uint64_size(455, v);
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1052, v);
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::DJNOLLDHPHJ(ref v) => {
                     let len = v.compute_size();
@@ -512,43 +512,43 @@ impl ::protobuf::Message for JLPEICPFLMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
-        }
         if self.BNEFLBPCPOI != 0 {
-            os.write_uint64(5, self.BNEFLBPCPOI)?;
+            os.write_uint64(2, self.BNEFLBPCPOI)?;
+        }
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
         }
         if let ::std::option::Option::Some(ref v) = self.KLLMJCCOMNF {
             match v {
-                &jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v) => {
-                    os.write_uint32(1, v)?;
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v) => {
-                    os.write_uint32(12, v)?;
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v) => {
-                    os.write_uint32(8, v)?;
-                },
-                &jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v) => {
-                    os.write_uint32(13, v)?;
-                },
                 &jlpeicpflmc::KLLMJCCOMNF::PBHFMIIIPBD(v) => {
                     os.write_uint32(3, v)?;
                 },
-                &jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v) => {
-                    os.write_uint64(859, v)?;
+                &jlpeicpflmc::KLLMJCCOMNF::DJODEIMGKGK(v) => {
+                    os.write_uint32(7, v)?;
                 },
-                &jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v) => {
-                    os.write_uint32(1892, v)?;
+                &jlpeicpflmc::KLLMJCCOMNF::GCPPLLLHBBJ(v) => {
+                    os.write_uint32(9, v)?;
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::BFCNALJDHMP(v) => {
+                    os.write_uint32(10, v)?;
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::HPDFGFBLDOG(v) => {
+                    os.write_uint32(13, v)?;
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::NKDDBPGDAEE(v) => {
-                    os.write_uint32(1078, v)?;
+                    os.write_uint32(139, v)?;
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::EFEENOFADFC(v) => {
-                    os.write_uint32(1559, v)?;
+                    os.write_uint32(202, v)?;
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::CHFNDAGCEBK(v) => {
+                    os.write_uint64(455, v)?;
+                },
+                &jlpeicpflmc::KLLMJCCOMNF::LEEMKAMANJN(v) => {
+                    os.write_uint32(1052, v)?;
                 },
                 &jlpeicpflmc::KLLMJCCOMNF::DJNOLLDHPHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(722, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1084, v, os)?;
                 },
             };
         }
@@ -569,8 +569,8 @@ impl ::protobuf::Message for JLPEICPFLMC {
     }
 
     fn clear(&mut self) {
-        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ);
         self.BNEFLBPCPOI = 0;
+        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::BCAMANFJINC::BCAMANFJINC::BCAMANFJINC_NLCDGIPGFDJ);
         self.KLLMJCCOMNF = ::std::option::Option::None;
         self.KLLMJCCOMNF = ::std::option::Option::None;
         self.KLLMJCCOMNF = ::std::option::Option::None;
@@ -586,8 +586,8 @@ impl ::protobuf::Message for JLPEICPFLMC {
 
     fn default_instance() -> &'static JLPEICPFLMC {
         static instance: JLPEICPFLMC = JLPEICPFLMC {
-            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             BNEFLBPCPOI: 0,
+            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
             KLLMJCCOMNF: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -619,24 +619,24 @@ pub mod jlpeicpflmc {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:JLPEICPFLMC.KLLMJCCOMNF)
     pub enum KLLMJCCOMNF {
+        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.PBHFMIIIPBD)
+        PBHFMIIIPBD(u32),
+        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.DJODEIMGKGK)
+        DJODEIMGKGK(u32),
+        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.GCPPLLLHBBJ)
+        GCPPLLLHBBJ(u32),
         // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.BFCNALJDHMP)
         BFCNALJDHMP(u32),
         // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.HPDFGFBLDOG)
         HPDFGFBLDOG(u32),
-        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.GCPPLLLHBBJ)
-        GCPPLLLHBBJ(u32),
-        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.DJODEIMGKGK)
-        DJODEIMGKGK(u32),
-        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.PBHFMIIIPBD)
-        PBHFMIIIPBD(u32),
-        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.CHFNDAGCEBK)
-        CHFNDAGCEBK(u64),
-        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.LEEMKAMANJN)
-        LEEMKAMANJN(u32),
         // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.NKDDBPGDAEE)
         NKDDBPGDAEE(u32),
         // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.EFEENOFADFC)
         EFEENOFADFC(u32),
+        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.CHFNDAGCEBK)
+        CHFNDAGCEBK(u64),
+        // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.LEEMKAMANJN)
+        LEEMKAMANJN(u32),
         // @@protoc_insertion_point(oneof_field:JLPEICPFLMC.DJNOLLDHPHJ)
         DJNOLLDHPHJ(super::super::PFPPACPMFDJ::PFPPACPMFDJ),
     }
@@ -660,18 +660,18 @@ pub mod jlpeicpflmc {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JLPEICPFLMC.proto\x1a\x11BCAMANFJINC.proto\x1a\x11PFPPACPMFDJ.prot\
-    o\"\xe9\x03\n\x0bJLPEICPFLMC\x12.\n\x0bNFMKOFNEKLA\x18\x04\x20\x01(\x0e2\
-    \x0c.BCAMANFJINCR\x0bNFMKOFNEKLA\x12\x20\n\x0bBNEFLBPCPOI\x18\x05\x20\
-    \x01(\x04R\x0bBNEFLBPCPOI\x12\"\n\x0bBFCNALJDHMP\x18\x01\x20\x01(\rH\0R\
-    \x0bBFCNALJDHMP\x12\"\n\x0bHPDFGFBLDOG\x18\x0c\x20\x01(\rH\0R\x0bHPDFGFB\
-    LDOG\x12\"\n\x0bGCPPLLLHBBJ\x18\x08\x20\x01(\rH\0R\x0bGCPPLLLHBBJ\x12\"\
-    \n\x0bDJODEIMGKGK\x18\r\x20\x01(\rH\0R\x0bDJODEIMGKGK\x12\"\n\x0bPBHFMII\
-    IPBD\x18\x03\x20\x01(\rH\0R\x0bPBHFMIIIPBD\x12#\n\x0bCHFNDAGCEBK\x18\xdb\
-    \x06\x20\x01(\x04H\0R\x0bCHFNDAGCEBK\x12#\n\x0bLEEMKAMANJN\x18\xe4\x0e\
-    \x20\x01(\rH\0R\x0bLEEMKAMANJN\x12#\n\x0bNKDDBPGDAEE\x18\xb6\x08\x20\x01\
-    (\rH\0R\x0bNKDDBPGDAEE\x12#\n\x0bEFEENOFADFC\x18\x97\x0c\x20\x01(\rH\0R\
-    \x0bEFEENOFADFC\x121\n\x0bDJNOLLDHPHJ\x18\xd2\x05\x20\x01(\x0b2\x0c.PFPP\
-    ACPMFDJH\0R\x0bDJNOLLDHPHJB\r\n\x0bKLLMJCCOMNFb\x06proto3\
+    o\"\xe9\x03\n\x0bJLPEICPFLMC\x12\x20\n\x0bBNEFLBPCPOI\x18\x02\x20\x01(\
+    \x04R\x0bBNEFLBPCPOI\x12.\n\x0bNFMKOFNEKLA\x18\x0e\x20\x01(\x0e2\x0c.BCA\
+    MANFJINCR\x0bNFMKOFNEKLA\x12\"\n\x0bPBHFMIIIPBD\x18\x03\x20\x01(\rH\0R\
+    \x0bPBHFMIIIPBD\x12\"\n\x0bDJODEIMGKGK\x18\x07\x20\x01(\rH\0R\x0bDJODEIM\
+    GKGK\x12\"\n\x0bGCPPLLLHBBJ\x18\t\x20\x01(\rH\0R\x0bGCPPLLLHBBJ\x12\"\n\
+    \x0bBFCNALJDHMP\x18\n\x20\x01(\rH\0R\x0bBFCNALJDHMP\x12\"\n\x0bHPDFGFBLD\
+    OG\x18\r\x20\x01(\rH\0R\x0bHPDFGFBLDOG\x12#\n\x0bNKDDBPGDAEE\x18\x8b\x01\
+    \x20\x01(\rH\0R\x0bNKDDBPGDAEE\x12#\n\x0bEFEENOFADFC\x18\xca\x01\x20\x01\
+    (\rH\0R\x0bEFEENOFADFC\x12#\n\x0bCHFNDAGCEBK\x18\xc7\x03\x20\x01(\x04H\0\
+    R\x0bCHFNDAGCEBK\x12#\n\x0bLEEMKAMANJN\x18\x9c\x08\x20\x01(\rH\0R\x0bLEE\
+    MKAMANJN\x121\n\x0bDJNOLLDHPHJ\x18\xbc\x08\x20\x01(\x0b2\x0c.PFPPACPMFDJ\
+    H\0R\x0bDJNOLLDHPHJB\r\n\x0bKLLMJCCOMNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

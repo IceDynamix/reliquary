@@ -30,10 +30,10 @@ pub struct SetTurnFoodSwitchScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.KLAJGAKAFCP)
     pub KLAJGAKAFCP: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.FEBKMOCOJLE)
     pub FEBKMOCOJLE: bool,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetTurnFoodSwitchScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SetTurnFoodSwitchScRsp {
             |m: &mut SetTurnFoodSwitchScRsp| { &mut m.KLAJGAKAFCP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetTurnFoodSwitchScRsp| { &m.retcode },
-            |m: &mut SetTurnFoodSwitchScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FEBKMOCOJLE",
             |m: &SetTurnFoodSwitchScRsp| { &m.FEBKMOCOJLE },
             |m: &mut SetTurnFoodSwitchScRsp| { &mut m.FEBKMOCOJLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetTurnFoodSwitchScRsp| { &m.retcode },
+            |m: &mut SetTurnFoodSwitchScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTurnFoodSwitchScRsp>(
             "SetTurnFoodSwitchScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
+                32 => {
                     self.FEBKMOCOJLE = is.read_bool()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.KLAJGAKAFCP.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::int32_size(2, self.KLAJGAKAFCP.value());
         }
         if self.FEBKMOCOJLE != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
         }
         if self.FEBKMOCOJLE != false {
-            os.write_bool(14, self.FEBKMOCOJLE)?;
+            os.write_bool(4, self.FEBKMOCOJLE)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SetTurnFoodSwitchScRsp {
 
     fn clear(&mut self) {
         self.KLAJGAKAFCP = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None);
-        self.retcode = 0;
         self.FEBKMOCOJLE = false;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTurnFoodSwitchScRsp {
         static instance: SetTurnFoodSwitchScRsp = SetTurnFoodSwitchScRsp {
             KLAJGAKAFCP: ::protobuf::EnumOrUnknown::from_i32(0),
-            retcode: 0,
             FEBKMOCOJLE: false,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchScRsp.proto\x1a\x14TurnFoodSwitch.proto\"\x87\x01\
-    \n\x16SetTurnFoodSwitchScRsp\x121\n\x0bKLAJGAKAFCP\x18\x01\x20\x01(\x0e2\
-    \x0f.TurnFoodSwitchR\x0bKLAJGAKAFCP\x12\x18\n\x07retcode\x18\x03\x20\x01\
-    (\rR\x07retcode\x12\x20\n\x0bFEBKMOCOJLE\x18\x0e\x20\x01(\x08R\x0bFEBKMO\
-    COJLEb\x06proto3\
+    \n\x16SetTurnFoodSwitchScRsp\x121\n\x0bKLAJGAKAFCP\x18\x02\x20\x01(\x0e2\
+    \x0f.TurnFoodSwitchR\x0bKLAJGAKAFCP\x12\x20\n\x0bFEBKMOCOJLE\x18\x04\x20\
+    \x01(\x08R\x0bFEBKMOCOJLE\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

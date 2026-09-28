@@ -79,7 +79,7 @@ impl ::protobuf::Message for AIGEDICFHCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.IMGLLIBJAPC = is.read_uint32()?;
                 },
                 88 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AIGEDICFHCE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IMGLLIBJAPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IMGLLIBJAPC);
+            my_size += ::protobuf::rt::uint32_size(6, self.IMGLLIBJAPC);
         }
         if self.is_win != false {
             my_size += 1 + 1;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AIGEDICFHCE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IMGLLIBJAPC != 0 {
-            os.write_uint32(4, self.IMGLLIBJAPC)?;
+            os.write_uint32(6, self.IMGLLIBJAPC)?;
         }
         if self.is_win != false {
             os.write_bool(11, self.is_win)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AIGEDICFHCE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIGEDICFHCE.proto\"F\n\x0bAIGEDICFHCE\x12\x20\n\x0bIMGLLIBJAPC\x18\
-    \x04\x20\x01(\rR\x0bIMGLLIBJAPC\x12\x15\n\x06is_win\x18\x0b\x20\x01(\x08\
+    \x06\x20\x01(\rR\x0bIMGLLIBJAPC\x12\x15\n\x06is_win\x18\x0b\x20\x01(\x08\
     R\x05isWinb\x06proto3\
 ";
 

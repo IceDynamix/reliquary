@@ -79,7 +79,7 @@ impl ::protobuf::Message for FateStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
                 },
                 88 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for FateStartScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(11, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for FateStartScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14FateStartScRsp.proto\x1a\x11BFBCEOICLAB.proto\"Z\n\x0eFateStartScR\
-    sp\x12.\n\x0bOEIBHLMDJKA\x18\x02\x20\x01(\x0b2\x0c.BFBCEOICLABR\x0bOEIBH\
+    sp\x12.\n\x0bOEIBHLMDJKA\x18\x08\x20\x01(\x0b2\x0c.BFBCEOICLABR\x0bOEIBH\
     LMDJKA\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

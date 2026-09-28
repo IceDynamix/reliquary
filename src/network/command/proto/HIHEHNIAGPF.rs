@@ -82,7 +82,7 @@ impl ::protobuf::Message for HIHEHNIAGPF {
                 32 => {
                     self.progress = is.read_uint32()?;
                 },
-                88 => {
+                56 => {
                     self.FBDENECLHIH = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for HIHEHNIAGPF {
             my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
         if self.FBDENECLHIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FBDENECLHIH);
+            my_size += ::protobuf::rt::uint32_size(7, self.FBDENECLHIH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for HIHEHNIAGPF {
             os.write_uint32(4, self.progress)?;
         }
         if self.FBDENECLHIH != 0 {
-            os.write_uint32(11, self.FBDENECLHIH)?;
+            os.write_uint32(7, self.FBDENECLHIH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HIHEHNIAGPF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HIHEHNIAGPF.proto\"K\n\x0bHIHEHNIAGPF\x12\x1a\n\x08progress\x18\
-    \x04\x20\x01(\rR\x08progress\x12\x20\n\x0bFBDENECLHIH\x18\x0b\x20\x01(\r\
+    \x04\x20\x01(\rR\x08progress\x12\x20\n\x0bFBDENECLHIH\x18\x07\x20\x01(\r\
     R\x0bFBDENECLHIHb\x06proto3\
 ";
 

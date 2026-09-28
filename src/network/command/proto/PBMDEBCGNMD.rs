@@ -30,10 +30,10 @@ pub struct PBMDEBCGNMD {
     // message fields
     // @@protoc_insertion_point(field:PBMDEBCGNMD.IKJNIKIGFLF)
     pub IKJNIKIGFLF: ::protobuf::MessageField<super::MNCBEDBDDHL::MNCBEDBDDHL>,
-    // @@protoc_insertion_point(field:PBMDEBCGNMD.DLKOEIANIMK)
-    pub DLKOEIANIMK: u32,
     // @@protoc_insertion_point(field:PBMDEBCGNMD.PKHFMJDNKOE)
     pub PKHFMJDNKOE: ::protobuf::MessageField<super::JPAOIPLDKHB::JPAOIPLDKHB>,
+    // @@protoc_insertion_point(field:PBMDEBCGNMD.KABGCGENKLK)
+    pub KABGCGENKLK: ::protobuf::MessageField<super::CGLJLBDFNBK::CGLJLBDFNBK>,
     // special fields
     // @@protoc_insertion_point(special_field:PBMDEBCGNMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PBMDEBCGNMD {
             |m: &PBMDEBCGNMD| { &m.IKJNIKIGFLF },
             |m: &mut PBMDEBCGNMD| { &mut m.IKJNIKIGFLF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLKOEIANIMK",
-            |m: &PBMDEBCGNMD| { &m.DLKOEIANIMK },
-            |m: &mut PBMDEBCGNMD| { &mut m.DLKOEIANIMK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JPAOIPLDKHB::JPAOIPLDKHB>(
             "PKHFMJDNKOE",
             |m: &PBMDEBCGNMD| { &m.PKHFMJDNKOE },
             |m: &mut PBMDEBCGNMD| { &mut m.PKHFMJDNKOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGLJLBDFNBK::CGLJLBDFNBK>(
+            "KABGCGENKLK",
+            |m: &PBMDEBCGNMD| { &m.KABGCGENKLK },
+            |m: &mut PBMDEBCGNMD| { &mut m.KABGCGENKLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PBMDEBCGNMD>(
             "PBMDEBCGNMD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PBMDEBCGNMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKJNIKIGFLF)?;
                 },
-                56 => {
-                    self.DLKOEIANIMK = is.read_uint32()?;
-                },
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKHFMJDNKOE)?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KABGCGENKLK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,10 +111,11 @@ impl ::protobuf::Message for PBMDEBCGNMD {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.DLKOEIANIMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DLKOEIANIMK);
-        }
         if let Some(v) = self.PKHFMJDNKOE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.KABGCGENKLK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,13 +126,13 @@ impl ::protobuf::Message for PBMDEBCGNMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IKJNIKIGFLF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.DLKOEIANIMK != 0 {
-            os.write_uint32(7, self.DLKOEIANIMK)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if let Some(v) = self.PKHFMJDNKOE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.KABGCGENKLK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +152,16 @@ impl ::protobuf::Message for PBMDEBCGNMD {
 
     fn clear(&mut self) {
         self.IKJNIKIGFLF.clear();
-        self.DLKOEIANIMK = 0;
         self.PKHFMJDNKOE.clear();
+        self.KABGCGENKLK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PBMDEBCGNMD {
         static instance: PBMDEBCGNMD = PBMDEBCGNMD {
             IKJNIKIGFLF: ::protobuf::MessageField::none(),
-            DLKOEIANIMK: 0,
             PKHFMJDNKOE: ::protobuf::MessageField::none(),
+            KABGCGENKLK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for PBMDEBCGNMD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PBMDEBCGNMD.proto\x1a\x11JPAOIPLDKHB.proto\x1a\x11MNCBEDBDDHL.prot\
-    o\"\x8f\x01\n\x0bPBMDEBCGNMD\x12.\n\x0bIKJNIKIGFLF\x18\x06\x20\x01(\x0b2\
-    \x0c.MNCBEDBDDHLR\x0bIKJNIKIGFLF\x12\x20\n\x0bDLKOEIANIMK\x18\x07\x20\
-    \x01(\rR\x0bDLKOEIANIMK\x12.\n\x0bPKHFMJDNKOE\x18\x0b\x20\x01(\x0b2\x0c.\
-    JPAOIPLDKHBR\x0bPKHFMJDNKOEb\x06proto3\
+    \n\x11PBMDEBCGNMD.proto\x1a\x11CGLJLBDFNBK.proto\x1a\x11JPAOIPLDKHB.prot\
+    o\x1a\x11MNCBEDBDDHL.proto\"\x9d\x01\n\x0bPBMDEBCGNMD\x12.\n\x0bIKJNIKIG\
+    FLF\x18\x01\x20\x01(\x0b2\x0c.MNCBEDBDDHLR\x0bIKJNIKIGFLF\x12.\n\x0bPKHF\
+    MJDNKOE\x18\x02\x20\x01(\x0b2\x0c.JPAOIPLDKHBR\x0bPKHFMJDNKOE\x12.\n\x0b\
+    KABGCGENKLK\x18\x04\x20\x01(\x0b2\x0c.CGLJLBDFNBKR\x0bKABGCGENKLKb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +208,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::CGLJLBDFNBK::file_descriptor().clone());
             deps.push(super::JPAOIPLDKHB::file_descriptor().clone());
             deps.push(super::MNCBEDBDDHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

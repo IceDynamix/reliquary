@@ -86,13 +86,13 @@ impl ::protobuf::Message for DDHIEONLIIL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.HEMOHFJJMJG = is.read_uint64()?;
                 },
-                96 => {
+                16 => {
                     self.DDKGKOFAGMH = is.read_bool()?;
                 },
-                120 => {
+                40 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
                 tag => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for DDHIEONLIIL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HEMOHFJJMJG != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.HEMOHFJJMJG);
+            my_size += ::protobuf::rt::uint64_size(1, self.HEMOHFJJMJG);
         }
         if self.DDKGKOFAGMH != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DDHIEONLIIL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HEMOHFJJMJG != 0 {
-            os.write_uint64(6, self.HEMOHFJJMJG)?;
+            os.write_uint64(1, self.HEMOHFJJMJG)?;
         }
         if self.DDKGKOFAGMH != false {
-            os.write_bool(12, self.DDKGKOFAGMH)?;
+            os.write_bool(2, self.DDKGKOFAGMH)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(15, self.is_taken_reward)?;
+            os.write_bool(5, self.is_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for DDHIEONLIIL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DDHIEONLIIL.proto\"y\n\x0bDDHIEONLIIL\x12\x20\n\x0bHEMOHFJJMJG\x18\
-    \x06\x20\x01(\x04R\x0bHEMOHFJJMJG\x12\x20\n\x0bDDKGKOFAGMH\x18\x0c\x20\
-    \x01(\x08R\x0bDDKGKOFAGMH\x12&\n\x0fis_taken_reward\x18\x0f\x20\x01(\x08\
+    \x01\x20\x01(\x04R\x0bHEMOHFJJMJG\x12\x20\n\x0bDDKGKOFAGMH\x18\x02\x20\
+    \x01(\x08R\x0bDDKGKOFAGMH\x12&\n\x0fis_taken_reward\x18\x05\x20\x01(\x08\
     R\risTakenRewardb\x06proto3\
 ";
 

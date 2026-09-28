@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum FNMAMNLNKKJ {
     // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_NLCDGIPGFDJ)
     FNMAMNLNKKJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_LPMCPJPLCGP)
-    FNMAMNLNKKJ_LPMCPJPLCGP = 7552,
     // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_KOHIOJDEEPP)
-    FNMAMNLNKKJ_KOHIOJDEEPP = 7556,
-    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_MPKMCEPGOGC)
-    FNMAMNLNKKJ_MPKMCEPGOGC = 7554,
-    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_EIJFJJKKELI)
-    FNMAMNLNKKJ_EIJFJJKKELI = 7553,
-    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_OKGOCHLFHAK)
-    FNMAMNLNKKJ_OKGOCHLFHAK = 7558,
-    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_JJGIAHBHDIP)
-    FNMAMNLNKKJ_JJGIAHBHDIP = 7559,
+    FNMAMNLNKKJ_KOHIOJDEEPP = 7554,
     // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_NOHJMHABGPF)
-    FNMAMNLNKKJ_NOHJMHABGPF = 7551,
+    FNMAMNLNKKJ_NOHJMHABGPF = 7558,
+    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_EIJFJJKKELI)
+    FNMAMNLNKKJ_EIJFJJKKELI = 7559,
+    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_OKGOCHLFHAK)
+    FNMAMNLNKKJ_OKGOCHLFHAK = 7555,
+    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_MPKMCEPGOGC)
+    FNMAMNLNKKJ_MPKMCEPGOGC = 7553,
+    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_JJGIAHBHDIP)
+    FNMAMNLNKKJ_JJGIAHBHDIP = 7552,
+    // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_LPMCPJPLCGP)
+    FNMAMNLNKKJ_LPMCPJPLCGP = 7560,
     // @@protoc_insertion_point(enum_value:FNMAMNLNKKJ.FNMAMNLNKKJ_BJEBNCHPLJF)
     FNMAMNLNKKJ_BJEBNCHPLJF = 7557,
 }
@@ -57,13 +57,13 @@ impl ::protobuf::Enum for FNMAMNLNKKJ {
     fn from_i32(value: i32) -> ::std::option::Option<FNMAMNLNKKJ> {
         match value {
             0 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NLCDGIPGFDJ),
-            7552 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP),
-            7556 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP),
-            7554 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC),
-            7553 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI),
-            7558 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK),
-            7559 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_JJGIAHBHDIP),
-            7551 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF),
+            7554 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP),
+            7558 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF),
+            7559 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI),
+            7555 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK),
+            7553 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC),
+            7552 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_JJGIAHBHDIP),
+            7560 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP),
             7557 => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_BJEBNCHPLJF),
             _ => ::std::option::Option::None
         }
@@ -72,13 +72,13 @@ impl ::protobuf::Enum for FNMAMNLNKKJ {
     fn from_str(str: &str) -> ::std::option::Option<FNMAMNLNKKJ> {
         match str {
             "FNMAMNLNKKJ_NLCDGIPGFDJ" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NLCDGIPGFDJ),
-            "FNMAMNLNKKJ_LPMCPJPLCGP" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP),
             "FNMAMNLNKKJ_KOHIOJDEEPP" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP),
-            "FNMAMNLNKKJ_MPKMCEPGOGC" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC),
+            "FNMAMNLNKKJ_NOHJMHABGPF" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF),
             "FNMAMNLNKKJ_EIJFJJKKELI" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI),
             "FNMAMNLNKKJ_OKGOCHLFHAK" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK),
+            "FNMAMNLNKKJ_MPKMCEPGOGC" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC),
             "FNMAMNLNKKJ_JJGIAHBHDIP" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_JJGIAHBHDIP),
-            "FNMAMNLNKKJ_NOHJMHABGPF" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF),
+            "FNMAMNLNKKJ_LPMCPJPLCGP" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP),
             "FNMAMNLNKKJ_BJEBNCHPLJF" => ::std::option::Option::Some(FNMAMNLNKKJ::FNMAMNLNKKJ_BJEBNCHPLJF),
             _ => ::std::option::Option::None
         }
@@ -86,13 +86,13 @@ impl ::protobuf::Enum for FNMAMNLNKKJ {
 
     const VALUES: &'static [FNMAMNLNKKJ] = &[
         FNMAMNLNKKJ::FNMAMNLNKKJ_NLCDGIPGFDJ,
-        FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP,
         FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP,
-        FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC,
+        FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF,
         FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI,
         FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK,
+        FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC,
         FNMAMNLNKKJ::FNMAMNLNKKJ_JJGIAHBHDIP,
-        FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF,
+        FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP,
         FNMAMNLNKKJ::FNMAMNLNKKJ_BJEBNCHPLJF,
     ];
 }
@@ -106,13 +106,13 @@ impl ::protobuf::EnumFull for FNMAMNLNKKJ {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             FNMAMNLNKKJ::FNMAMNLNKKJ_NLCDGIPGFDJ => 0,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP => 1,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP => 2,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC => 3,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI => 4,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK => 5,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_KOHIOJDEEPP => 1,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF => 2,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_EIJFJJKKELI => 3,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_OKGOCHLFHAK => 4,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_MPKMCEPGOGC => 5,
             FNMAMNLNKKJ::FNMAMNLNKKJ_JJGIAHBHDIP => 6,
-            FNMAMNLNKKJ::FNMAMNLNKKJ_NOHJMHABGPF => 7,
+            FNMAMNLNKKJ::FNMAMNLNKKJ_LPMCPJPLCGP => 7,
             FNMAMNLNKKJ::FNMAMNLNKKJ_BJEBNCHPLJF => 8,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -133,11 +133,11 @@ impl FNMAMNLNKKJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FNMAMNLNKKJ.proto*\x9a\x02\n\x0bFNMAMNLNKKJ\x12\x1b\n\x17FNMAMNLNK\
-    KJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FNMAMNLNKKJ_LPMCPJPLCGP\x10\x80;\x12\
-    \x1c\n\x17FNMAMNLNKKJ_KOHIOJDEEPP\x10\x84;\x12\x1c\n\x17FNMAMNLNKKJ_MPKM\
-    CEPGOGC\x10\x82;\x12\x1c\n\x17FNMAMNLNKKJ_EIJFJJKKELI\x10\x81;\x12\x1c\n\
-    \x17FNMAMNLNKKJ_OKGOCHLFHAK\x10\x86;\x12\x1c\n\x17FNMAMNLNKKJ_JJGIAHBHDI\
-    P\x10\x87;\x12\x1c\n\x17FNMAMNLNKKJ_NOHJMHABGPF\x10\xff:\x12\x1c\n\x17FN\
+    KJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FNMAMNLNKKJ_KOHIOJDEEPP\x10\x82;\x12\
+    \x1c\n\x17FNMAMNLNKKJ_NOHJMHABGPF\x10\x86;\x12\x1c\n\x17FNMAMNLNKKJ_EIJF\
+    JJKKELI\x10\x87;\x12\x1c\n\x17FNMAMNLNKKJ_OKGOCHLFHAK\x10\x83;\x12\x1c\n\
+    \x17FNMAMNLNKKJ_MPKMCEPGOGC\x10\x81;\x12\x1c\n\x17FNMAMNLNKKJ_JJGIAHBHDI\
+    P\x10\x80;\x12\x1c\n\x17FNMAMNLNKKJ_LPMCPJPLCGP\x10\x88;\x12\x1c\n\x17FN\
     MAMNLNKKJ_BJEBNCHPLJF\x10\x85;b\x06proto3\
 ";
 

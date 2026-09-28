@@ -72,7 +72,7 @@ impl ::protobuf::Message for AJDPPONBABG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGDCDJDBCCN)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AJDPPONBABG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.GGDCDJDBCCN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for AJDPPONBABG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AJDPPONBABG.proto\x1a\x0cVector.proto\"8\n\x0bAJDPPONBABG\x12)\n\
-    \x0bGGDCDJDBCCN\x18\r\x20\x01(\x0b2\x07.VectorR\x0bGGDCDJDBCCNb\x06proto\
-    3\
+    \x0bGGDCDJDBCCN\x18\x06\x20\x01(\x0b2\x07.VectorR\x0bGGDCDJDBCCNb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

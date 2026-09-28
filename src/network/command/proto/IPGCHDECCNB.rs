@@ -30,10 +30,10 @@ pub struct IPGCHDECCNB {
     // message fields
     // @@protoc_insertion_point(field:IPGCHDECCNB.PIJBIFAIFOA)
     pub PIJBIFAIFOA: u32,
-    // @@protoc_insertion_point(field:IPGCHDECCNB.CJCCMAACJDB)
-    pub CJCCMAACJDB: u32,
     // @@protoc_insertion_point(field:IPGCHDECCNB.CLBEEGLKMIM)
     pub CLBEEGLKMIM: u32,
+    // @@protoc_insertion_point(field:IPGCHDECCNB.CJCCMAACJDB)
+    pub CJCCMAACJDB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IPGCHDECCNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl IPGCHDECCNB {
             |m: &mut IPGCHDECCNB| { &mut m.PIJBIFAIFOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJCCMAACJDB",
-            |m: &IPGCHDECCNB| { &m.CJCCMAACJDB },
-            |m: &mut IPGCHDECCNB| { &mut m.CJCCMAACJDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CLBEEGLKMIM",
             |m: &IPGCHDECCNB| { &m.CLBEEGLKMIM },
             |m: &mut IPGCHDECCNB| { &mut m.CLBEEGLKMIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJCCMAACJDB",
+            |m: &IPGCHDECCNB| { &m.CJCCMAACJDB },
+            |m: &mut IPGCHDECCNB| { &mut m.CJCCMAACJDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IPGCHDECCNB>(
             "IPGCHDECCNB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IPGCHDECCNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.PIJBIFAIFOA = is.read_uint32()?;
                 },
-                88 => {
-                    self.CJCCMAACJDB = is.read_uint32()?;
-                },
-                96 => {
+                64 => {
                     self.CLBEEGLKMIM = is.read_uint32()?;
+                },
+                112 => {
+                    self.CJCCMAACJDB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for IPGCHDECCNB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PIJBIFAIFOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PIJBIFAIFOA);
-        }
-        if self.CJCCMAACJDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CJCCMAACJDB);
+            my_size += ::protobuf::rt::uint32_size(3, self.PIJBIFAIFOA);
         }
         if self.CLBEEGLKMIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CLBEEGLKMIM);
+            my_size += ::protobuf::rt::uint32_size(8, self.CLBEEGLKMIM);
+        }
+        if self.CJCCMAACJDB != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CJCCMAACJDB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for IPGCHDECCNB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PIJBIFAIFOA != 0 {
-            os.write_uint32(6, self.PIJBIFAIFOA)?;
-        }
-        if self.CJCCMAACJDB != 0 {
-            os.write_uint32(11, self.CJCCMAACJDB)?;
+            os.write_uint32(3, self.PIJBIFAIFOA)?;
         }
         if self.CLBEEGLKMIM != 0 {
-            os.write_uint32(12, self.CLBEEGLKMIM)?;
+            os.write_uint32(8, self.CLBEEGLKMIM)?;
+        }
+        if self.CJCCMAACJDB != 0 {
+            os.write_uint32(14, self.CJCCMAACJDB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for IPGCHDECCNB {
 
     fn clear(&mut self) {
         self.PIJBIFAIFOA = 0;
-        self.CJCCMAACJDB = 0;
         self.CLBEEGLKMIM = 0;
+        self.CJCCMAACJDB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IPGCHDECCNB {
         static instance: IPGCHDECCNB = IPGCHDECCNB {
             PIJBIFAIFOA: 0,
-            CJCCMAACJDB: 0,
             CLBEEGLKMIM: 0,
+            CJCCMAACJDB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for IPGCHDECCNB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IPGCHDECCNB.proto\"s\n\x0bIPGCHDECCNB\x12\x20\n\x0bPIJBIFAIFOA\x18\
-    \x06\x20\x01(\rR\x0bPIJBIFAIFOA\x12\x20\n\x0bCJCCMAACJDB\x18\x0b\x20\x01\
-    (\rR\x0bCJCCMAACJDB\x12\x20\n\x0bCLBEEGLKMIM\x18\x0c\x20\x01(\rR\x0bCLBE\
-    EGLKMIMb\x06proto3\
+    \x03\x20\x01(\rR\x0bPIJBIFAIFOA\x12\x20\n\x0bCLBEEGLKMIM\x18\x08\x20\x01\
+    (\rR\x0bCLBEEGLKMIM\x12\x20\n\x0bCJCCMAACJDB\x18\x0e\x20\x01(\rR\x0bCJCC\
+    MAACJDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

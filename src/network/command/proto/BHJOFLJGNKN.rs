@@ -33,8 +33,8 @@ pub enum BHJOFLJGNKN {
     BHJOFLJGNKN_LENEGHPPELE = 1,
     // @@protoc_insertion_point(enum_value:BHJOFLJGNKN.BHJOFLJGNKN_LIDKLOCCDGI)
     BHJOFLJGNKN_LIDKLOCCDGI = 2,
-    // @@protoc_insertion_point(enum_value:BHJOFLJGNKN.BHJOFLJGNKN_action)
-    BHJOFLJGNKN_action = 3,
+    // @@protoc_insertion_point(enum_value:BHJOFLJGNKN.BHJOFLJGNKN_ENGGCENAFPM)
+    BHJOFLJGNKN_ENGGCENAFPM = 3,
     // @@protoc_insertion_point(enum_value:BHJOFLJGNKN.BHJOFLJGNKN_OFPLODJBGMG)
     BHJOFLJGNKN_OFPLODJBGMG = 4,
     // @@protoc_insertion_point(enum_value:BHJOFLJGNKN.BHJOFLJGNKN_DDGDJCKKHPH)
@@ -57,7 +57,7 @@ impl ::protobuf::Enum for BHJOFLJGNKN {
             0 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_NLCDGIPGFDJ),
             1 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_LENEGHPPELE),
             2 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_LIDKLOCCDGI),
-            3 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_action),
+            3 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_ENGGCENAFPM),
             4 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_OFPLODJBGMG),
             5 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_DDGDJCKKHPH),
             6 => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_DDBIJDILDJL),
@@ -71,7 +71,7 @@ impl ::protobuf::Enum for BHJOFLJGNKN {
             "BHJOFLJGNKN_NLCDGIPGFDJ" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_NLCDGIPGFDJ),
             "BHJOFLJGNKN_LENEGHPPELE" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_LENEGHPPELE),
             "BHJOFLJGNKN_LIDKLOCCDGI" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_LIDKLOCCDGI),
-            "BHJOFLJGNKN_action" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_action),
+            "BHJOFLJGNKN_ENGGCENAFPM" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_ENGGCENAFPM),
             "BHJOFLJGNKN_OFPLODJBGMG" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_OFPLODJBGMG),
             "BHJOFLJGNKN_DDGDJCKKHPH" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_DDGDJCKKHPH),
             "BHJOFLJGNKN_DDBIJDILDJL" => ::std::option::Option::Some(BHJOFLJGNKN::BHJOFLJGNKN_DDBIJDILDJL),
@@ -84,7 +84,7 @@ impl ::protobuf::Enum for BHJOFLJGNKN {
         BHJOFLJGNKN::BHJOFLJGNKN_NLCDGIPGFDJ,
         BHJOFLJGNKN::BHJOFLJGNKN_LENEGHPPELE,
         BHJOFLJGNKN::BHJOFLJGNKN_LIDKLOCCDGI,
-        BHJOFLJGNKN::BHJOFLJGNKN_action,
+        BHJOFLJGNKN::BHJOFLJGNKN_ENGGCENAFPM,
         BHJOFLJGNKN::BHJOFLJGNKN_OFPLODJBGMG,
         BHJOFLJGNKN::BHJOFLJGNKN_DDGDJCKKHPH,
         BHJOFLJGNKN::BHJOFLJGNKN_DDBIJDILDJL,
@@ -117,12 +117,12 @@ impl BHJOFLJGNKN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BHJOFLJGNKN.proto*\xf0\x01\n\x0bBHJOFLJGNKN\x12\x1b\n\x17BHJOFLJGN\
+    \n\x11BHJOFLJGNKN.proto*\xf5\x01\n\x0bBHJOFLJGNKN\x12\x1b\n\x17BHJOFLJGN\
     KN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17BHJOFLJGNKN_LENEGHPPELE\x10\x01\x12\
-    \x1b\n\x17BHJOFLJGNKN_LIDKLOCCDGI\x10\x02\x12\x16\n\x12BHJOFLJGNKN_actio\
-    n\x10\x03\x12\x1b\n\x17BHJOFLJGNKN_OFPLODJBGMG\x10\x04\x12\x1b\n\x17BHJO\
-    FLJGNKN_DDGDJCKKHPH\x10\x05\x12\x1b\n\x17BHJOFLJGNKN_DDBIJDILDJL\x10\x06\
-    \x12\x1b\n\x17BHJOFLJGNKN_NCLBFAALLFJ\x10\x07b\x06proto3\
+    \x1b\n\x17BHJOFLJGNKN_LIDKLOCCDGI\x10\x02\x12\x1b\n\x17BHJOFLJGNKN_ENGGC\
+    ENAFPM\x10\x03\x12\x1b\n\x17BHJOFLJGNKN_OFPLODJBGMG\x10\x04\x12\x1b\n\
+    \x17BHJOFLJGNKN_DDGDJCKKHPH\x10\x05\x12\x1b\n\x17BHJOFLJGNKN_DDBIJDILDJL\
+    \x10\x06\x12\x1b\n\x17BHJOFLJGNKN_NCLBFAALLFJ\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

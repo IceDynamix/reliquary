@@ -86,13 +86,13 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                74 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JENKGODEIOM)?;
                 },
-                96 => {
+                104 => {
                     self.IKDEIJCEDIO = is.read_uint32()?;
                 },
                 tag => {
@@ -108,14 +108,14 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PLIDNBMCIJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PLIDNBMCIJH);
+            my_size += ::protobuf::rt::uint32_size(2, self.PLIDNBMCIJH);
         }
         if let Some(v) = self.JENKGODEIOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.IKDEIJCEDIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IKDEIJCEDIO);
+            my_size += ::protobuf::rt::uint32_size(13, self.IKDEIJCEDIO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PLIDNBMCIJH != 0 {
-            os.write_uint32(5, self.PLIDNBMCIJH)?;
+            os.write_uint32(2, self.PLIDNBMCIJH)?;
         }
         if let Some(v) = self.JENKGODEIOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.IKDEIJCEDIO != 0 {
-            os.write_uint32(12, self.IKDEIJCEDIO)?;
+            os.write_uint32(13, self.IKDEIJCEDIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayRoomPlayerMoveScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SocialPlayRoomPlayerMoveScNotify.proto\x1a\x11MHNNEFBOPIE.proto\"\x96\
     \x01\n\x20SocialPlayRoomPlayerMoveScNotify\x12\x20\n\x0bPLIDNBMCIJH\x18\
-    \x05\x20\x01(\rR\x0bPLIDNBMCIJH\x12.\n\x0bJENKGODEIOM\x18\t\x20\x01(\x0b\
-    2\x0c.MHNNEFBOPIER\x0bJENKGODEIOM\x12\x20\n\x0bIKDEIJCEDIO\x18\x0c\x20\
+    \x02\x20\x01(\rR\x0bPLIDNBMCIJH\x12.\n\x0bJENKGODEIOM\x18\x05\x20\x01(\
+    \x0b2\x0c.MHNNEFBOPIER\x0bJENKGODEIOM\x12\x20\n\x0bIKDEIJCEDIO\x18\r\x20\
     \x01(\rR\x0bIKDEIJCEDIOb\x06proto3\
 ";
 

@@ -30,10 +30,10 @@ pub struct DCDMPLJNBJC {
     // message fields
     // @@protoc_insertion_point(field:DCDMPLJNBJC.GEPHKCPLAJF)
     pub GEPHKCPLAJF: u32,
-    // @@protoc_insertion_point(field:DCDMPLJNBJC.NDGKLBDHJKB)
-    pub NDGKLBDHJKB: u32,
     // @@protoc_insertion_point(field:DCDMPLJNBJC.DOFNEAPHMKH)
     pub DOFNEAPHMKH: bool,
+    // @@protoc_insertion_point(field:DCDMPLJNBJC.NDGKLBDHJKB)
+    pub NDGKLBDHJKB: u32,
     // @@protoc_insertion_point(field:DCDMPLJNBJC.KABCGHCPEBG)
     pub KABCGHCPEBG: u32,
     // special fields
@@ -61,14 +61,14 @@ impl DCDMPLJNBJC {
             |m: &mut DCDMPLJNBJC| { &mut m.GEPHKCPLAJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDGKLBDHJKB",
-            |m: &DCDMPLJNBJC| { &m.NDGKLBDHJKB },
-            |m: &mut DCDMPLJNBJC| { &mut m.NDGKLBDHJKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOFNEAPHMKH",
             |m: &DCDMPLJNBJC| { &m.DOFNEAPHMKH },
             |m: &mut DCDMPLJNBJC| { &mut m.DOFNEAPHMKH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDGKLBDHJKB",
+            |m: &DCDMPLJNBJC| { &m.NDGKLBDHJKB },
+            |m: &mut DCDMPLJNBJC| { &mut m.NDGKLBDHJKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KABCGHCPEBG",
@@ -93,14 +93,14 @@ impl ::protobuf::Message for DCDMPLJNBJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.GEPHKCPLAJF = is.read_uint32()?;
                 },
-                48 => {
-                    self.NDGKLBDHJKB = is.read_uint32()?;
-                },
-                80 => {
+                64 => {
                     self.DOFNEAPHMKH = is.read_bool()?;
+                },
+                88 => {
+                    self.NDGKLBDHJKB = is.read_uint32()?;
                 },
                 120 => {
                     self.KABCGHCPEBG = is.read_uint32()?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for DCDMPLJNBJC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GEPHKCPLAJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GEPHKCPLAJF);
-        }
-        if self.NDGKLBDHJKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NDGKLBDHJKB);
+            my_size += ::protobuf::rt::uint32_size(3, self.GEPHKCPLAJF);
         }
         if self.DOFNEAPHMKH != false {
             my_size += 1 + 1;
+        }
+        if self.NDGKLBDHJKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NDGKLBDHJKB);
         }
         if self.KABCGHCPEBG != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.KABCGHCPEBG);
@@ -136,13 +136,13 @@ impl ::protobuf::Message for DCDMPLJNBJC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GEPHKCPLAJF != 0 {
-            os.write_uint32(4, self.GEPHKCPLAJF)?;
-        }
-        if self.NDGKLBDHJKB != 0 {
-            os.write_uint32(6, self.NDGKLBDHJKB)?;
+            os.write_uint32(3, self.GEPHKCPLAJF)?;
         }
         if self.DOFNEAPHMKH != false {
-            os.write_bool(10, self.DOFNEAPHMKH)?;
+            os.write_bool(8, self.DOFNEAPHMKH)?;
+        }
+        if self.NDGKLBDHJKB != 0 {
+            os.write_uint32(11, self.NDGKLBDHJKB)?;
         }
         if self.KABCGHCPEBG != 0 {
             os.write_uint32(15, self.KABCGHCPEBG)?;
@@ -165,8 +165,8 @@ impl ::protobuf::Message for DCDMPLJNBJC {
 
     fn clear(&mut self) {
         self.GEPHKCPLAJF = 0;
-        self.NDGKLBDHJKB = 0;
         self.DOFNEAPHMKH = false;
+        self.NDGKLBDHJKB = 0;
         self.KABCGHCPEBG = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for DCDMPLJNBJC {
     fn default_instance() -> &'static DCDMPLJNBJC {
         static instance: DCDMPLJNBJC = DCDMPLJNBJC {
             GEPHKCPLAJF: 0,
-            NDGKLBDHJKB: 0,
             DOFNEAPHMKH: false,
+            NDGKLBDHJKB: 0,
             KABCGHCPEBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for DCDMPLJNBJC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DCDMPLJNBJC.proto\"\x95\x01\n\x0bDCDMPLJNBJC\x12\x20\n\x0bGEPHKCPL\
-    AJF\x18\x04\x20\x01(\rR\x0bGEPHKCPLAJF\x12\x20\n\x0bNDGKLBDHJKB\x18\x06\
-    \x20\x01(\rR\x0bNDGKLBDHJKB\x12\x20\n\x0bDOFNEAPHMKH\x18\n\x20\x01(\x08R\
-    \x0bDOFNEAPHMKH\x12\x20\n\x0bKABCGHCPEBG\x18\x0f\x20\x01(\rR\x0bKABCGHCP\
-    EBGb\x06proto3\
+    AJF\x18\x03\x20\x01(\rR\x0bGEPHKCPLAJF\x12\x20\n\x0bDOFNEAPHMKH\x18\x08\
+    \x20\x01(\x08R\x0bDOFNEAPHMKH\x12\x20\n\x0bNDGKLBDHJKB\x18\x0b\x20\x01(\
+    \rR\x0bNDGKLBDHJKB\x12\x20\n\x0bKABCGHCPEBG\x18\x0f\x20\x01(\rR\x0bKABCG\
+    HCPEBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

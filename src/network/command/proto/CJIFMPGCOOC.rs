@@ -45,7 +45,7 @@ impl CJIFMPGCOOC {
         ::std::default::Default::default()
     }
 
-    // .DLDPJEILCDB HKBJLGHEKBI = 3;
+    // .DLDPJEILCDB HKBJLGHEKBI = 13;
 
     pub fn HKBJLGHEKBI(&self) -> &super::DLDPJEILCDB::DLDPJEILCDB {
         match self.OLAFHJFACAD {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for CJIFMPGCOOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                106 => {
                     self.OLAFHJFACAD = ::std::option::Option::Some(cjifmpgcooc::OLAFHJFACAD::HKBJLGHEKBI(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for CJIFMPGCOOC {
         if let ::std::option::Option::Some(ref v) = self.OLAFHJFACAD {
             match v {
                 &cjifmpgcooc::OLAFHJFACAD::HKBJLGHEKBI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -236,8 +236,8 @@ pub mod cjifmpgcooc {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CJIFMPGCOOC.proto\x1a\x11DLDPJEILCDB.proto\"N\n\x0bCJIFMPGCOOC\x12\
-    0\n\x0bHKBJLGHEKBI\x18\x03\x20\x01(\x0b2\x0c.DLDPJEILCDBH\0R\x0bHKBJLGHE\
-    KBIB\r\n\x0bOLAFHJFACADb\x06proto3\
+    0\n\x0bHKBJLGHEKBI\x18\r\x20\x01(\x0b2\x0c.DLDPJEILCDBH\0R\x0bHKBJLGHEKB\
+    IB\r\n\x0bOLAFHJFACADb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

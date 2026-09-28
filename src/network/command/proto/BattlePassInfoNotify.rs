@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattlePassInfoNotify {
     // message fields
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.PDODOAOHMAC)
+    pub PDODOAOHMAC: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.AIMGGFNLIEK)
+    pub AIMGGFNLIEK: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.ICPCCGPEJMP)
+    pub ICPCCGPEJMP: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.CHJKOFANIKA)
+    pub CHJKOFANIKA: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.exp)
+    pub exp: u32,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.DAFMMPKFOEA)
-    pub DAFMMPKFOEA: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.OKPOHIHPOKI)
     pub OKPOHIHPOKI: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.DELEGHOCLMO)
     pub DELEGHOCLMO: ::protobuf::EnumOrUnknown<super::BpTierType::BpTierType>,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.CBLNJDCICBC)
-    pub CBLNJDCICBC: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.POJDILFNJAH)
-    pub POJDILFNJAH: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.AIMGGFNLIEK)
-    pub AIMGGFNLIEK: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.CHJKOFANIKA)
-    pub CHJKOFANIKA: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.ICPCCGPEJMP)
-    pub ICPCCGPEJMP: u64,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.exp)
-    pub exp: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.NJDCMGOJOLE)
-    pub NJDCMGOJOLE: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.DAFMMPKFOEA)
+    pub DAFMMPKFOEA: u64,
     // @@protoc_insertion_point(field:BattlePassInfoNotify.AECHNDNNMLF)
     pub AECHNDNNMLF: u32,
-    // @@protoc_insertion_point(field:BattlePassInfoNotify.PDODOAOHMAC)
-    pub PDODOAOHMAC: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.POJDILFNJAH)
+    pub POJDILFNJAH: u32,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.NJDCMGOJOLE)
+    pub NJDCMGOJOLE: u64,
+    // @@protoc_insertion_point(field:BattlePassInfoNotify.CBLNJDCICBC)
+    pub CBLNJDCICBC: u64,
     // special fields
     // @@protoc_insertion_point(special_field:BattlePassInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -74,14 +74,34 @@ impl BattlePassInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDODOAOHMAC",
+            |m: &BattlePassInfoNotify| { &m.PDODOAOHMAC },
+            |m: &mut BattlePassInfoNotify| { &mut m.PDODOAOHMAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIMGGFNLIEK",
+            |m: &BattlePassInfoNotify| { &m.AIMGGFNLIEK },
+            |m: &mut BattlePassInfoNotify| { &mut m.AIMGGFNLIEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ICPCCGPEJMP",
+            |m: &BattlePassInfoNotify| { &m.ICPCCGPEJMP },
+            |m: &mut BattlePassInfoNotify| { &mut m.ICPCCGPEJMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CHJKOFANIKA",
+            |m: &BattlePassInfoNotify| { &m.CHJKOFANIKA },
+            |m: &mut BattlePassInfoNotify| { &mut m.CHJKOFANIKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &BattlePassInfoNotify| { &m.exp },
+            |m: &mut BattlePassInfoNotify| { &mut m.exp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &BattlePassInfoNotify| { &m.level },
             |m: &mut BattlePassInfoNotify| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAFMMPKFOEA",
-            |m: &BattlePassInfoNotify| { &m.DAFMMPKFOEA },
-            |m: &mut BattlePassInfoNotify| { &mut m.DAFMMPKFOEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OKPOHIHPOKI",
@@ -94,39 +114,9 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.DELEGHOCLMO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBLNJDCICBC",
-            |m: &BattlePassInfoNotify| { &m.CBLNJDCICBC },
-            |m: &mut BattlePassInfoNotify| { &mut m.CBLNJDCICBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POJDILFNJAH",
-            |m: &BattlePassInfoNotify| { &m.POJDILFNJAH },
-            |m: &mut BattlePassInfoNotify| { &mut m.POJDILFNJAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIMGGFNLIEK",
-            |m: &BattlePassInfoNotify| { &m.AIMGGFNLIEK },
-            |m: &mut BattlePassInfoNotify| { &mut m.AIMGGFNLIEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHJKOFANIKA",
-            |m: &BattlePassInfoNotify| { &m.CHJKOFANIKA },
-            |m: &mut BattlePassInfoNotify| { &mut m.CHJKOFANIKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICPCCGPEJMP",
-            |m: &BattlePassInfoNotify| { &m.ICPCCGPEJMP },
-            |m: &mut BattlePassInfoNotify| { &mut m.ICPCCGPEJMP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &BattlePassInfoNotify| { &m.exp },
-            |m: &mut BattlePassInfoNotify| { &mut m.exp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJDCMGOJOLE",
-            |m: &BattlePassInfoNotify| { &m.NJDCMGOJOLE },
-            |m: &mut BattlePassInfoNotify| { &mut m.NJDCMGOJOLE },
+            "DAFMMPKFOEA",
+            |m: &BattlePassInfoNotify| { &m.DAFMMPKFOEA },
+            |m: &mut BattlePassInfoNotify| { &mut m.DAFMMPKFOEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AECHNDNNMLF",
@@ -134,9 +124,19 @@ impl BattlePassInfoNotify {
             |m: &mut BattlePassInfoNotify| { &mut m.AECHNDNNMLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDODOAOHMAC",
-            |m: &BattlePassInfoNotify| { &m.PDODOAOHMAC },
-            |m: &mut BattlePassInfoNotify| { &mut m.PDODOAOHMAC },
+            "POJDILFNJAH",
+            |m: &BattlePassInfoNotify| { &m.POJDILFNJAH },
+            |m: &mut BattlePassInfoNotify| { &mut m.POJDILFNJAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NJDCMGOJOLE",
+            |m: &BattlePassInfoNotify| { &m.NJDCMGOJOLE },
+            |m: &mut BattlePassInfoNotify| { &mut m.NJDCMGOJOLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBLNJDCICBC",
+            |m: &BattlePassInfoNotify| { &m.CBLNJDCICBC },
+            |m: &mut BattlePassInfoNotify| { &mut m.CBLNJDCICBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattlePassInfoNotify>(
             "BattlePassInfoNotify",
@@ -157,43 +157,43 @@ impl ::protobuf::Message for BattlePassInfoNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.level = is.read_uint32()?;
+                    self.PDODOAOHMAC = is.read_uint64()?;
                 },
                 16 => {
-                    self.DAFMMPKFOEA = is.read_uint64()?;
-                },
-                32 => {
-                    self.OKPOHIHPOKI = is.read_uint64()?;
-                },
-                40 => {
-                    self.DELEGHOCLMO = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.CBLNJDCICBC = is.read_uint64()?;
-                },
-                64 => {
-                    self.POJDILFNJAH = is.read_uint32()?;
-                },
-                72 => {
                     self.AIMGGFNLIEK = is.read_uint64()?;
                 },
-                80 => {
-                    self.CHJKOFANIKA = is.read_uint64()?;
-                },
-                88 => {
+                32 => {
                     self.ICPCCGPEJMP = is.read_uint64()?;
                 },
-                96 => {
+                48 => {
+                    self.CHJKOFANIKA = is.read_uint64()?;
+                },
+                56 => {
                     self.exp = is.read_uint32()?;
                 },
-                104 => {
-                    self.NJDCMGOJOLE = is.read_uint64()?;
+                64 => {
+                    self.level = is.read_uint32()?;
                 },
-                112 => {
+                72 => {
+                    self.OKPOHIHPOKI = is.read_uint64()?;
+                },
+                80 => {
+                    self.DELEGHOCLMO = is.read_enum_or_unknown()?;
+                },
+                88 => {
+                    self.DAFMMPKFOEA = is.read_uint64()?;
+                },
+                96 => {
                     self.AECHNDNNMLF = is.read_uint32()?;
                 },
+                104 => {
+                    self.POJDILFNJAH = is.read_uint32()?;
+                },
+                112 => {
+                    self.NJDCMGOJOLE = is.read_uint64()?;
+                },
                 120 => {
-                    self.PDODOAOHMAC = is.read_uint64()?;
+                    self.CBLNJDCICBC = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -207,44 +207,44 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.level);
-        }
-        if self.DAFMMPKFOEA != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.DAFMMPKFOEA);
-        }
-        if self.OKPOHIHPOKI != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.OKPOHIHPOKI);
-        }
-        if self.DELEGHOCLMO != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BpTierType_None) {
-            my_size += ::protobuf::rt::int32_size(5, self.DELEGHOCLMO.value());
-        }
-        if self.CBLNJDCICBC != 0 {
-            my_size += ::protobuf::rt::uint64_size(7, self.CBLNJDCICBC);
-        }
-        if self.POJDILFNJAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.POJDILFNJAH);
+        if self.PDODOAOHMAC != 0 {
+            my_size += ::protobuf::rt::uint64_size(1, self.PDODOAOHMAC);
         }
         if self.AIMGGFNLIEK != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.AIMGGFNLIEK);
-        }
-        if self.CHJKOFANIKA != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.CHJKOFANIKA);
+            my_size += ::protobuf::rt::uint64_size(2, self.AIMGGFNLIEK);
         }
         if self.ICPCCGPEJMP != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.ICPCCGPEJMP);
+            my_size += ::protobuf::rt::uint64_size(4, self.ICPCCGPEJMP);
+        }
+        if self.CHJKOFANIKA != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.CHJKOFANIKA);
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.exp);
+            my_size += ::protobuf::rt::uint32_size(7, self.exp);
         }
-        if self.NJDCMGOJOLE != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.NJDCMGOJOLE);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
+        }
+        if self.OKPOHIHPOKI != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.OKPOHIHPOKI);
+        }
+        if self.DELEGHOCLMO != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BpTierType_None) {
+            my_size += ::protobuf::rt::int32_size(10, self.DELEGHOCLMO.value());
+        }
+        if self.DAFMMPKFOEA != 0 {
+            my_size += ::protobuf::rt::uint64_size(11, self.DAFMMPKFOEA);
         }
         if self.AECHNDNNMLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AECHNDNNMLF);
+            my_size += ::protobuf::rt::uint32_size(12, self.AECHNDNNMLF);
         }
-        if self.PDODOAOHMAC != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.PDODOAOHMAC);
+        if self.POJDILFNJAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.POJDILFNJAH);
+        }
+        if self.NJDCMGOJOLE != 0 {
+            my_size += ::protobuf::rt::uint64_size(14, self.NJDCMGOJOLE);
+        }
+        if self.CBLNJDCICBC != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.CBLNJDCICBC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -252,44 +252,44 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(1, self.level)?;
-        }
-        if self.DAFMMPKFOEA != 0 {
-            os.write_uint64(2, self.DAFMMPKFOEA)?;
-        }
-        if self.OKPOHIHPOKI != 0 {
-            os.write_uint64(4, self.OKPOHIHPOKI)?;
-        }
-        if self.DELEGHOCLMO != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BpTierType_None) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.DELEGHOCLMO))?;
-        }
-        if self.CBLNJDCICBC != 0 {
-            os.write_uint64(7, self.CBLNJDCICBC)?;
-        }
-        if self.POJDILFNJAH != 0 {
-            os.write_uint32(8, self.POJDILFNJAH)?;
+        if self.PDODOAOHMAC != 0 {
+            os.write_uint64(1, self.PDODOAOHMAC)?;
         }
         if self.AIMGGFNLIEK != 0 {
-            os.write_uint64(9, self.AIMGGFNLIEK)?;
-        }
-        if self.CHJKOFANIKA != 0 {
-            os.write_uint64(10, self.CHJKOFANIKA)?;
+            os.write_uint64(2, self.AIMGGFNLIEK)?;
         }
         if self.ICPCCGPEJMP != 0 {
-            os.write_uint64(11, self.ICPCCGPEJMP)?;
+            os.write_uint64(4, self.ICPCCGPEJMP)?;
+        }
+        if self.CHJKOFANIKA != 0 {
+            os.write_uint64(6, self.CHJKOFANIKA)?;
         }
         if self.exp != 0 {
-            os.write_uint32(12, self.exp)?;
+            os.write_uint32(7, self.exp)?;
         }
-        if self.NJDCMGOJOLE != 0 {
-            os.write_uint64(13, self.NJDCMGOJOLE)?;
+        if self.level != 0 {
+            os.write_uint32(8, self.level)?;
+        }
+        if self.OKPOHIHPOKI != 0 {
+            os.write_uint64(9, self.OKPOHIHPOKI)?;
+        }
+        if self.DELEGHOCLMO != ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BpTierType_None) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.DELEGHOCLMO))?;
+        }
+        if self.DAFMMPKFOEA != 0 {
+            os.write_uint64(11, self.DAFMMPKFOEA)?;
         }
         if self.AECHNDNNMLF != 0 {
-            os.write_uint32(14, self.AECHNDNNMLF)?;
+            os.write_uint32(12, self.AECHNDNNMLF)?;
         }
-        if self.PDODOAOHMAC != 0 {
-            os.write_uint64(15, self.PDODOAOHMAC)?;
+        if self.POJDILFNJAH != 0 {
+            os.write_uint32(13, self.POJDILFNJAH)?;
+        }
+        if self.NJDCMGOJOLE != 0 {
+            os.write_uint64(14, self.NJDCMGOJOLE)?;
+        }
+        if self.CBLNJDCICBC != 0 {
+            os.write_uint64(15, self.CBLNJDCICBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -308,37 +308,37 @@ impl ::protobuf::Message for BattlePassInfoNotify {
     }
 
     fn clear(&mut self) {
+        self.PDODOAOHMAC = 0;
+        self.AIMGGFNLIEK = 0;
+        self.ICPCCGPEJMP = 0;
+        self.CHJKOFANIKA = 0;
+        self.exp = 0;
         self.level = 0;
-        self.DAFMMPKFOEA = 0;
         self.OKPOHIHPOKI = 0;
         self.DELEGHOCLMO = ::protobuf::EnumOrUnknown::new(super::BpTierType::BpTierType::BpTierType_None);
-        self.CBLNJDCICBC = 0;
-        self.POJDILFNJAH = 0;
-        self.AIMGGFNLIEK = 0;
-        self.CHJKOFANIKA = 0;
-        self.ICPCCGPEJMP = 0;
-        self.exp = 0;
-        self.NJDCMGOJOLE = 0;
+        self.DAFMMPKFOEA = 0;
         self.AECHNDNNMLF = 0;
-        self.PDODOAOHMAC = 0;
+        self.POJDILFNJAH = 0;
+        self.NJDCMGOJOLE = 0;
+        self.CBLNJDCICBC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattlePassInfoNotify {
         static instance: BattlePassInfoNotify = BattlePassInfoNotify {
+            PDODOAOHMAC: 0,
+            AIMGGFNLIEK: 0,
+            ICPCCGPEJMP: 0,
+            CHJKOFANIKA: 0,
+            exp: 0,
             level: 0,
-            DAFMMPKFOEA: 0,
             OKPOHIHPOKI: 0,
             DELEGHOCLMO: ::protobuf::EnumOrUnknown::from_i32(0),
-            CBLNJDCICBC: 0,
-            POJDILFNJAH: 0,
-            AIMGGFNLIEK: 0,
-            CHJKOFANIKA: 0,
-            ICPCCGPEJMP: 0,
-            exp: 0,
-            NJDCMGOJOLE: 0,
+            DAFMMPKFOEA: 0,
             AECHNDNNMLF: 0,
-            PDODOAOHMAC: 0,
+            POJDILFNJAH: 0,
+            NJDCMGOJOLE: 0,
+            CBLNJDCICBC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -364,18 +364,18 @@ impl ::protobuf::reflect::ProtobufValue for BattlePassInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBattlePassInfoNotify.proto\x1a\x10BpTierType.proto\"\xc1\x03\n\x14\
-    BattlePassInfoNotify\x12\x14\n\x05level\x18\x01\x20\x01(\rR\x05level\x12\
-    \x20\n\x0bDAFMMPKFOEA\x18\x02\x20\x01(\x04R\x0bDAFMMPKFOEA\x12\x20\n\x0b\
-    OKPOHIHPOKI\x18\x04\x20\x01(\x04R\x0bOKPOHIHPOKI\x12-\n\x0bDELEGHOCLMO\
-    \x18\x05\x20\x01(\x0e2\x0b.BpTierTypeR\x0bDELEGHOCLMO\x12\x20\n\x0bCBLNJ\
-    DCICBC\x18\x07\x20\x01(\x04R\x0bCBLNJDCICBC\x12\x20\n\x0bPOJDILFNJAH\x18\
-    \x08\x20\x01(\rR\x0bPOJDILFNJAH\x12\x20\n\x0bAIMGGFNLIEK\x18\t\x20\x01(\
-    \x04R\x0bAIMGGFNLIEK\x12\x20\n\x0bCHJKOFANIKA\x18\n\x20\x01(\x04R\x0bCHJ\
-    KOFANIKA\x12\x20\n\x0bICPCCGPEJMP\x18\x0b\x20\x01(\x04R\x0bICPCCGPEJMP\
-    \x12\x10\n\x03exp\x18\x0c\x20\x01(\rR\x03exp\x12\x20\n\x0bNJDCMGOJOLE\
-    \x18\r\x20\x01(\x04R\x0bNJDCMGOJOLE\x12\x20\n\x0bAECHNDNNMLF\x18\x0e\x20\
-    \x01(\rR\x0bAECHNDNNMLF\x12\x20\n\x0bPDODOAOHMAC\x18\x0f\x20\x01(\x04R\
-    \x0bPDODOAOHMACb\x06proto3\
+    BattlePassInfoNotify\x12\x20\n\x0bPDODOAOHMAC\x18\x01\x20\x01(\x04R\x0bP\
+    DODOAOHMAC\x12\x20\n\x0bAIMGGFNLIEK\x18\x02\x20\x01(\x04R\x0bAIMGGFNLIEK\
+    \x12\x20\n\x0bICPCCGPEJMP\x18\x04\x20\x01(\x04R\x0bICPCCGPEJMP\x12\x20\n\
+    \x0bCHJKOFANIKA\x18\x06\x20\x01(\x04R\x0bCHJKOFANIKA\x12\x10\n\x03exp\
+    \x18\x07\x20\x01(\rR\x03exp\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05le\
+    vel\x12\x20\n\x0bOKPOHIHPOKI\x18\t\x20\x01(\x04R\x0bOKPOHIHPOKI\x12-\n\
+    \x0bDELEGHOCLMO\x18\n\x20\x01(\x0e2\x0b.BpTierTypeR\x0bDELEGHOCLMO\x12\
+    \x20\n\x0bDAFMMPKFOEA\x18\x0b\x20\x01(\x04R\x0bDAFMMPKFOEA\x12\x20\n\x0b\
+    AECHNDNNMLF\x18\x0c\x20\x01(\rR\x0bAECHNDNNMLF\x12\x20\n\x0bPOJDILFNJAH\
+    \x18\r\x20\x01(\rR\x0bPOJDILFNJAH\x12\x20\n\x0bNJDCMGOJOLE\x18\x0e\x20\
+    \x01(\x04R\x0bNJDCMGOJOLE\x12\x20\n\x0bCBLNJDCICBC\x18\x0f\x20\x01(\x04R\
+    \x0bCBLNJDCICBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

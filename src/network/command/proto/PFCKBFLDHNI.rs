@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PFCKBFLDHNI {
     // message fields
-    // @@protoc_insertion_point(field:PFCKBFLDHNI.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:PFCKBFLDHNI.relic_ids)
     pub relic_ids: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PFCKBFLDHNI.unique_id)
+    pub unique_id: u32,
     // @@protoc_insertion_point(field:PFCKBFLDHNI.name)
     pub name: ::std::string::String,
     // @@protoc_insertion_point(field:PFCKBFLDHNI.avatar_id)
@@ -57,15 +57,15 @@ impl PFCKBFLDHNI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &PFCKBFLDHNI| { &m.unique_id },
-            |m: &mut PFCKBFLDHNI| { &mut m.unique_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
             |m: &PFCKBFLDHNI| { &m.relic_ids },
             |m: &mut PFCKBFLDHNI| { &mut m.relic_ids },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &PFCKBFLDHNI| { &m.unique_id },
+            |m: &mut PFCKBFLDHNI| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
@@ -100,22 +100,22 @@ impl ::protobuf::Message for PFCKBFLDHNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.unique_id = is.read_uint32()?;
-                },
-                26 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                24 => {
+                32 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
-                82 => {
+                56 => {
+                    self.unique_id = is.read_uint32()?;
+                },
+                66 => {
                     self.name = is.read_string()?;
                 },
-                96 => {
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                112 => {
+                96 => {
                     self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -130,18 +130,18 @@ impl ::protobuf::Message for PFCKBFLDHNI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.relic_ids);
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.relic_ids);
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.name);
+            my_size += ::protobuf::rt::string_size(8, &self.name);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::RelicPresetPlanSourceType_None) {
-            my_size += ::protobuf::rt::int32_size(14, self.NFMKOFNEKLA.value());
+            my_size += ::protobuf::rt::int32_size(12, self.NFMKOFNEKLA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for PFCKBFLDHNI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(4, &self.relic_ids)?;
         if self.unique_id != 0 {
-            os.write_uint32(2, self.unique_id)?;
+            os.write_uint32(7, self.unique_id)?;
         }
-        os.write_repeated_packed_uint32(3, &self.relic_ids)?;
         if !self.name.is_empty() {
-            os.write_string(10, &self.name)?;
+            os.write_string(8, &self.name)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(12, self.avatar_id)?;
+            os.write_uint32(9, self.avatar_id)?;
         }
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::RelicPresetPlanSourceType_None) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,8 +179,8 @@ impl ::protobuf::Message for PFCKBFLDHNI {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
         self.relic_ids.clear();
+        self.unique_id = 0;
         self.name.clear();
         self.avatar_id = 0;
         self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::RelicPresetPlanSourceType_None);
@@ -189,8 +189,8 @@ impl ::protobuf::Message for PFCKBFLDHNI {
 
     fn default_instance() -> &'static PFCKBFLDHNI {
         static instance: PFCKBFLDHNI = PFCKBFLDHNI {
-            unique_id: 0,
             relic_ids: ::std::vec::Vec::new(),
+            unique_id: 0,
             name: ::std::string::String::new(),
             avatar_id: 0,
             NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
@@ -219,10 +219,10 @@ impl ::protobuf::reflect::ProtobufValue for PFCKBFLDHNI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PFCKBFLDHNI.proto\x1a\x1fRelicPresetPlanSourceType.proto\"\xb6\x01\
-    \n\x0bPFCKBFLDHNI\x12\x1b\n\tunique_id\x18\x02\x20\x01(\rR\x08uniqueId\
-    \x12\x1b\n\trelic_ids\x18\x03\x20\x03(\rR\x08relicIds\x12\x12\n\x04name\
-    \x18\n\x20\x01(\tR\x04name\x12\x1b\n\tavatar_id\x18\x0c\x20\x01(\rR\x08a\
-    vatarId\x12<\n\x0bNFMKOFNEKLA\x18\x0e\x20\x01(\x0e2\x1a.RelicPresetPlanS\
+    \n\x0bPFCKBFLDHNI\x12\x1b\n\trelic_ids\x18\x04\x20\x03(\rR\x08relicIds\
+    \x12\x1b\n\tunique_id\x18\x07\x20\x01(\rR\x08uniqueId\x12\x12\n\x04name\
+    \x18\x08\x20\x01(\tR\x04name\x12\x1b\n\tavatar_id\x18\t\x20\x01(\rR\x08a\
+    vatarId\x12<\n\x0bNFMKOFNEKLA\x18\x0c\x20\x01(\x0e2\x1a.RelicPresetPlanS\
     ourceTypeR\x0bNFMKOFNEKLAb\x06proto3\
 ";
 

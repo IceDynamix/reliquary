@@ -79,10 +79,10 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.dialogue_id = is.read_uint32()?;
                 },
-                96 => {
+                104 => {
                     self.GDPHOIMONLN = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dialogue_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dialogue_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.dialogue_id);
         }
         if self.GDPHOIMONLN != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HeartDialDialogueInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dialogue_id != 0 {
-            os.write_uint32(2, self.dialogue_id)?;
+            os.write_uint32(9, self.dialogue_id)?;
         }
         if self.GDPHOIMONLN != false {
-            os.write_bool(12, self.GDPHOIMONLN)?;
+            os.write_bool(13, self.GDPHOIMONLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for HeartDialDialogueInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bHeartDialDialogueInfo.proto\"Z\n\x15HeartDialDialogueInfo\x12\x1f\
-    \n\x0bdialogue_id\x18\x02\x20\x01(\rR\ndialogueId\x12\x20\n\x0bGDPHOIMON\
-    LN\x18\x0c\x20\x01(\x08R\x0bGDPHOIMONLNb\x06proto3\
+    \n\x0bdialogue_id\x18\t\x20\x01(\rR\ndialogueId\x12\x20\n\x0bGDPHOIMONLN\
+    \x18\r\x20\x01(\x08R\x0bGDPHOIMONLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

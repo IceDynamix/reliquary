@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEINLELLFLF {
     // message fields
-    // @@protoc_insertion_point(field:CEINLELLFLF.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
     // @@protoc_insertion_point(field:CEINLELLFLF.ACDPGFLDFHK)
     pub ACDPGFLDFHK: u32,
+    // @@protoc_insertion_point(field:CEINLELLFLF.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
     // special fields
     // @@protoc_insertion_point(special_field:CEINLELLFLF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CEINLELLFLF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &CEINLELLFLF| { &m.avatar_list },
-            |m: &mut CEINLELLFLF| { &mut m.avatar_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ACDPGFLDFHK",
             |m: &CEINLELLFLF| { &m.ACDPGFLDFHK },
             |m: &mut CEINLELLFLF| { &mut m.ACDPGFLDFHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &CEINLELLFLF| { &m.avatar_list },
+            |m: &mut CEINLELLFLF| { &mut m.avatar_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEINLELLFLF>(
             "CEINLELLFLF",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CEINLELLFLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                112 => {
+                32 => {
                     self.ACDPGFLDFHK = is.read_uint32()?;
+                },
+                98 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for CEINLELLFLF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.ACDPGFLDFHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ACDPGFLDFHK);
+        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.ACDPGFLDFHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ACDPGFLDFHK);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.ACDPGFLDFHK != 0 {
-            os.write_uint32(14, self.ACDPGFLDFHK)?;
+            os.write_uint32(4, self.ACDPGFLDFHK)?;
         }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CEINLELLFLF {
     }
 
     fn clear(&mut self) {
-        self.avatar_list.clear();
         self.ACDPGFLDFHK = 0;
+        self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEINLELLFLF {
         static instance: CEINLELLFLF = CEINLELLFLF {
-            avatar_list: ::std::vec::Vec::new(),
             ACDPGFLDFHK: 0,
+            avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for CEINLELLFLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEINLELLFLF.proto\x1a\x12AvatarLineup.proto\"_\n\x0bCEINLELLFLF\
-    \x12.\n\x0bavatar_list\x18\t\x20\x03(\x0b2\r.AvatarLineupR\navatarList\
-    \x12\x20\n\x0bACDPGFLDFHK\x18\x0e\x20\x01(\rR\x0bACDPGFLDFHKb\x06proto3\
+    \x12\x20\n\x0bACDPGFLDFHK\x18\x04\x20\x01(\rR\x0bACDPGFLDFHK\x12.\n\x0ba\
+    vatar_list\x18\x0c\x20\x03(\x0b2\r.AvatarLineupR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

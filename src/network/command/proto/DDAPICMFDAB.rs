@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DDAPICMFDAB {
     // message fields
+    // @@protoc_insertion_point(field:DDAPICMFDAB.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:DDAPICMFDAB.KBLBFGANMPJ)
     pub KBLBFGANMPJ: bool,
     // @@protoc_insertion_point(field:DDAPICMFDAB.CBGODLHCLPK)
     pub CBGODLHCLPK: u32,
-    // @@protoc_insertion_point(field:DDAPICMFDAB.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DDAPICMFDAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl DDAPICMFDAB {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &DDAPICMFDAB| { &m.retcode },
+            |m: &mut DDAPICMFDAB| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KBLBFGANMPJ",
             |m: &DDAPICMFDAB| { &m.KBLBFGANMPJ },
             |m: &mut DDAPICMFDAB| { &mut m.KBLBFGANMPJ },
@@ -62,11 +67,6 @@ impl DDAPICMFDAB {
             "CBGODLHCLPK",
             |m: &DDAPICMFDAB| { &m.CBGODLHCLPK },
             |m: &mut DDAPICMFDAB| { &mut m.CBGODLHCLPK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DDAPICMFDAB| { &m.retcode },
-            |m: &mut DDAPICMFDAB| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DDAPICMFDAB>(
             "DDAPICMFDAB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for DDAPICMFDAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                48 => {
                     self.KBLBFGANMPJ = is.read_bool()?;
                 },
-                72 => {
+                64 => {
                     self.CBGODLHCLPK = is.read_uint32()?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for DDAPICMFDAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
         if self.KBLBFGANMPJ != false {
             my_size += 1 + 1;
         }
         if self.CBGODLHCLPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CBGODLHCLPK);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.CBGODLHCLPK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for DDAPICMFDAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
+        }
         if self.KBLBFGANMPJ != false {
-            os.write_bool(2, self.KBLBFGANMPJ)?;
+            os.write_bool(6, self.KBLBFGANMPJ)?;
         }
         if self.CBGODLHCLPK != 0 {
-            os.write_uint32(9, self.CBGODLHCLPK)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.CBGODLHCLPK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for DDAPICMFDAB {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.KBLBFGANMPJ = false;
         self.CBGODLHCLPK = 0;
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DDAPICMFDAB {
         static instance: DDAPICMFDAB = DDAPICMFDAB {
+            retcode: 0,
             KBLBFGANMPJ: false,
             CBGODLHCLPK: 0,
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for DDAPICMFDAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DDAPICMFDAB.proto\"k\n\x0bDDAPICMFDAB\x12\x20\n\x0bKBLBFGANMPJ\x18\
-    \x02\x20\x01(\x08R\x0bKBLBFGANMPJ\x12\x20\n\x0bCBGODLHCLPK\x18\t\x20\x01\
-    (\rR\x0bCBGODLHCLPK\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x11DDAPICMFDAB.proto\"k\n\x0bDDAPICMFDAB\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bKBLBFGANMPJ\x18\x06\x20\x01(\x08R\
+    \x0bKBLBFGANMPJ\x12\x20\n\x0bCBGODLHCLPK\x18\x08\x20\x01(\rR\x0bCBGODLHC\
+    LPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

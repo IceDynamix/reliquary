@@ -30,10 +30,10 @@ pub struct TakeRogueEndlessActivityAllBonusRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityAllBonusRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeRogueEndlessActivityAllBonusRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityAllBonusRewardScRsp.CHIAFOOAIBK)
     pub CHIAFOOAIBK: u32,
+    // @@protoc_insertion_point(field:TakeRogueEndlessActivityAllBonusRewardScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeRogueEndlessActivityAllBonusRewardScRsp.IEPPNGMCKJH)
     pub IEPPNGMCKJH: ::std::vec::Vec<u32>,
     // special fields
@@ -61,14 +61,14 @@ impl TakeRogueEndlessActivityAllBonusRewardScRsp {
             |m: &mut TakeRogueEndlessActivityAllBonusRewardScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeRogueEndlessActivityAllBonusRewardScRsp| { &m.retcode },
-            |m: &mut TakeRogueEndlessActivityAllBonusRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CHIAFOOAIBK",
             |m: &TakeRogueEndlessActivityAllBonusRewardScRsp| { &m.CHIAFOOAIBK },
             |m: &mut TakeRogueEndlessActivityAllBonusRewardScRsp| { &mut m.CHIAFOOAIBK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeRogueEndlessActivityAllBonusRewardScRsp| { &m.retcode },
+            |m: &mut TakeRogueEndlessActivityAllBonusRewardScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IEPPNGMCKJH",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for TakeRogueEndlessActivityAllBonusRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                24 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 48 => {
                     self.CHIAFOOAIBK = is.read_uint32()?;
                 },
-                74 => {
+                104 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.IEPPNGMCKJH)?;
                 },
-                72 => {
+                112 => {
                     self.IEPPNGMCKJH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TakeRogueEndlessActivityAllBonusRewardScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
         if self.CHIAFOOAIBK != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.CHIAFOOAIBK);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IEPPNGMCKJH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.IEPPNGMCKJH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,15 +138,15 @@ impl ::protobuf::Message for TakeRogueEndlessActivityAllBonusRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.CHIAFOOAIBK != 0 {
             os.write_uint32(6, self.CHIAFOOAIBK)?;
         }
-        os.write_repeated_packed_uint32(9, &self.IEPPNGMCKJH)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(14, &self.IEPPNGMCKJH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::Message for TakeRogueEndlessActivityAllBonusRewardScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.retcode = 0;
         self.CHIAFOOAIBK = 0;
+        self.retcode = 0;
         self.IEPPNGMCKJH.clear();
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for TakeRogueEndlessActivityAllBonusRewardScRsp {
     fn default_instance() -> &'static TakeRogueEndlessActivityAllBonusRewardScRsp {
         static instance: TakeRogueEndlessActivityAllBonusRewardScRsp = TakeRogueEndlessActivityAllBonusRewardScRsp {
             reward: ::protobuf::MessageField::none(),
-            retcode: 0,
             CHIAFOOAIBK: 0,
+            retcode: 0,
             IEPPNGMCKJH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueEndlessActivityAllBonusRewa
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n1TakeRogueEndlessActivityAllBonusRewardScRsp.proto\x1a\x0eItemList.pro\
     to\"\xae\x01\n+TakeRogueEndlessActivityAllBonusRewardScRsp\x12!\n\x06rew\
-    ard\x18\x01\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\
-    \x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bCHIAFOOAIBK\x18\x06\x20\x01(\rR\
-    \x0bCHIAFOOAIBK\x12\x20\n\x0bIEPPNGMCKJH\x18\t\x20\x03(\rR\x0bIEPPNGMCKJ\
-    Hb\x06proto3\
+    ard\x18\x04\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bCHIAFOOAIBK\
+    \x18\x06\x20\x01(\rR\x0bCHIAFOOAIBK\x12\x18\n\x07retcode\x18\r\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x0bIEPPNGMCKJH\x18\x0e\x20\x03(\rR\x0bIEPPNGMCK\
+    JHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

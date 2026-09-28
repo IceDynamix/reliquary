@@ -45,56 +45,7 @@ impl MAEEIBPEOFN {
         ::std::default::Default::default()
     }
 
-    // .PIACCCGNOOF BACBKGJJOGA = 3;
-
-    pub fn BACBKGJJOGA(&self) -> &super::PIACCCGNOOF::PIACCCGNOOF {
-        match self.PGNIENCDODA {
-            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v)) => v,
-            _ => <super::PIACCCGNOOF::PIACCCGNOOF as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_BACBKGJJOGA(&mut self) {
-        self.PGNIENCDODA = ::std::option::Option::None;
-    }
-
-    pub fn has_BACBKGJJOGA(&self) -> bool {
-        match self.PGNIENCDODA {
-            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BACBKGJJOGA(&mut self, v: super::PIACCCGNOOF::PIACCCGNOOF) {
-        self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_BACBKGJJOGA(&mut self) -> &mut super::PIACCCGNOOF::PIACCCGNOOF {
-        if let ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(_)) = self.PGNIENCDODA {
-        } else {
-            self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(super::PIACCCGNOOF::PIACCCGNOOF::new()));
-        }
-        match self.PGNIENCDODA {
-            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_BACBKGJJOGA(&mut self) -> super::PIACCCGNOOF::PIACCCGNOOF {
-        if self.has_BACBKGJJOGA() {
-            match self.PGNIENCDODA.take() {
-                ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PIACCCGNOOF::PIACCCGNOOF::new()
-        }
-    }
-
-    // .BPOKOPCGMAJ CNKCDGOJGJH = 1;
+    // .BPOKOPCGMAJ CNKCDGOJGJH = 10;
 
     pub fn CNKCDGOJGJH(&self) -> &super::BPOKOPCGMAJ::BPOKOPCGMAJ {
         match self.PGNIENCDODA {
@@ -143,22 +94,71 @@ impl MAEEIBPEOFN {
         }
     }
 
+    // .PIACCCGNOOF BACBKGJJOGA = 11;
+
+    pub fn BACBKGJJOGA(&self) -> &super::PIACCCGNOOF::PIACCCGNOOF {
+        match self.PGNIENCDODA {
+            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v)) => v,
+            _ => <super::PIACCCGNOOF::PIACCCGNOOF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BACBKGJJOGA(&mut self) {
+        self.PGNIENCDODA = ::std::option::Option::None;
+    }
+
+    pub fn has_BACBKGJJOGA(&self) -> bool {
+        match self.PGNIENCDODA {
+            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BACBKGJJOGA(&mut self, v: super::PIACCCGNOOF::PIACCCGNOOF) {
+        self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BACBKGJJOGA(&mut self) -> &mut super::PIACCCGNOOF::PIACCCGNOOF {
+        if let ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(_)) = self.PGNIENCDODA {
+        } else {
+            self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(super::PIACCCGNOOF::PIACCCGNOOF::new()));
+        }
+        match self.PGNIENCDODA {
+            ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BACBKGJJOGA(&mut self) -> super::PIACCCGNOOF::PIACCCGNOOF {
+        if self.has_BACBKGJJOGA() {
+            match self.PGNIENCDODA.take() {
+                ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PIACCCGNOOF::PIACCCGNOOF::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIACCCGNOOF::PIACCCGNOOF>(
-            "BACBKGJJOGA",
-            MAEEIBPEOFN::has_BACBKGJJOGA,
-            MAEEIBPEOFN::BACBKGJJOGA,
-            MAEEIBPEOFN::mut_BACBKGJJOGA,
-            MAEEIBPEOFN::set_BACBKGJJOGA,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BPOKOPCGMAJ::BPOKOPCGMAJ>(
             "CNKCDGOJGJH",
             MAEEIBPEOFN::has_CNKCDGOJGJH,
             MAEEIBPEOFN::CNKCDGOJGJH,
             MAEEIBPEOFN::mut_CNKCDGOJGJH,
             MAEEIBPEOFN::set_CNKCDGOJGJH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIACCCGNOOF::PIACCCGNOOF>(
+            "BACBKGJJOGA",
+            MAEEIBPEOFN::has_BACBKGJJOGA,
+            MAEEIBPEOFN::BACBKGJJOGA,
+            MAEEIBPEOFN::mut_BACBKGJJOGA,
+            MAEEIBPEOFN::set_BACBKGJJOGA,
         ));
         oneofs.push(maeeibpeofn::PGNIENCDODA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAEEIBPEOFN>(
@@ -179,11 +179,11 @@ impl ::protobuf::Message for MAEEIBPEOFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(is.read_message()?));
-                },
-                10 => {
+                82 => {
                     self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(is.read_message()?));
+                },
+                90 => {
+                    self.PGNIENCDODA = ::std::option::Option::Some(maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -199,11 +199,11 @@ impl ::protobuf::Message for MAEEIBPEOFN {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
-                &maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v) => {
+                &maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(ref v) => {
+                &maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -217,11 +217,11 @@ impl ::protobuf::Message for MAEEIBPEOFN {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.PGNIENCDODA {
             match v {
-                &maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-                },
                 &maeeibpeofn::PGNIENCDODA::CNKCDGOJGJH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                },
+                &maeeibpeofn::PGNIENCDODA::BACBKGJJOGA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
                 },
             };
         }
@@ -280,10 +280,10 @@ pub mod maeeibpeofn {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:MAEEIBPEOFN.PGNIENCDODA)
     pub enum PGNIENCDODA {
-        // @@protoc_insertion_point(oneof_field:MAEEIBPEOFN.BACBKGJJOGA)
-        BACBKGJJOGA(super::super::PIACCCGNOOF::PIACCCGNOOF),
         // @@protoc_insertion_point(oneof_field:MAEEIBPEOFN.CNKCDGOJGJH)
         CNKCDGOJGJH(super::super::BPOKOPCGMAJ::BPOKOPCGMAJ),
+        // @@protoc_insertion_point(oneof_field:MAEEIBPEOFN.BACBKGJJOGA)
+        BACBKGJJOGA(super::super::PIACCCGNOOF::PIACCCGNOOF),
     }
 
     impl ::protobuf::Oneof for PGNIENCDODA {
@@ -305,9 +305,9 @@ pub mod maeeibpeofn {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAEEIBPEOFN.proto\x1a\x11BPOKOPCGMAJ.proto\x1a\x11PIACCCGNOOF.prot\
-    o\"\x80\x01\n\x0bMAEEIBPEOFN\x120\n\x0bBACBKGJJOGA\x18\x03\x20\x01(\x0b2\
-    \x0c.PIACCCGNOOFH\0R\x0bBACBKGJJOGA\x120\n\x0bCNKCDGOJGJH\x18\x01\x20\
-    \x01(\x0b2\x0c.BPOKOPCGMAJH\0R\x0bCNKCDGOJGJHB\r\n\x0bPGNIENCDODAb\x06pr\
+    o\"\x80\x01\n\x0bMAEEIBPEOFN\x120\n\x0bCNKCDGOJGJH\x18\n\x20\x01(\x0b2\
+    \x0c.BPOKOPCGMAJH\0R\x0bCNKCDGOJGJH\x120\n\x0bBACBKGJJOGA\x18\x0b\x20\
+    \x01(\x0b2\x0c.PIACCCGNOOFH\0R\x0bBACBKGJJOGAB\r\n\x0bPGNIENCDODAb\x06pr\
     oto3\
 ";
 

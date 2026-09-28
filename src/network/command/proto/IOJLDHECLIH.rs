@@ -79,10 +79,10 @@ impl ::protobuf::Message for IOJLDHECLIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.time = is.read_int64()?;
                 },
-                104 => {
+                96 => {
                     self.diy_dynamic_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IOJLDHECLIH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.time != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.time);
+            my_size += ::protobuf::rt::int64_size(6, self.time);
         }
         if self.diy_dynamic_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.diy_dynamic_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.diy_dynamic_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IOJLDHECLIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.time != 0 {
-            os.write_int64(2, self.time)?;
+            os.write_int64(6, self.time)?;
         }
         if self.diy_dynamic_id != 0 {
-            os.write_uint32(13, self.diy_dynamic_id)?;
+            os.write_uint32(12, self.diy_dynamic_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for IOJLDHECLIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11IOJLDHECLIH.proto\"G\n\x0bIOJLDHECLIH\x12\x12\n\x04time\x18\x02\
-    \x20\x01(\x03R\x04time\x12$\n\x0ediy_dynamic_id\x18\r\x20\x01(\rR\x0cdiy\
-    DynamicIdb\x06proto3\
+    \n\x11IOJLDHECLIH.proto\"G\n\x0bIOJLDHECLIH\x12\x12\n\x04time\x18\x06\
+    \x20\x01(\x03R\x04time\x12$\n\x0ediy_dynamic_id\x18\x0c\x20\x01(\rR\x0cd\
+    iyDynamicIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

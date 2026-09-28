@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HEHOBDGMMJM {
     // message fields
-    // @@protoc_insertion_point(field:HEHOBDGMMJM.H_a1f84e9a)
-    pub H_a1f84e9a: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HEHOBDGMMJM.H_4ebfc4ff)
+    pub H_4ebfc4ff: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HEHOBDGMMJM.trait_id)
     pub trait_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl HEHOBDGMMJM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_a1f84e9a",
-            |m: &HEHOBDGMMJM| { &m.H_a1f84e9a },
-            |m: &mut HEHOBDGMMJM| { &mut m.H_a1f84e9a },
+            "H_4ebfc4ff",
+            |m: &HEHOBDGMMJM| { &m.H_4ebfc4ff },
+            |m: &mut HEHOBDGMMJM| { &mut m.H_4ebfc4ff },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_id",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_a1f84e9a)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_4ebfc4ff)?;
                 },
-                24 => {
-                    self.H_a1f84e9a.push(is.read_uint32()?);
+                48 => {
+                    self.H_4ebfc4ff.push(is.read_uint32()?);
                 },
-                64 => {
+                96 => {
                     self.trait_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.H_a1f84e9a);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.H_4ebfc4ff);
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.H_a1f84e9a)?;
+        os.write_repeated_packed_uint32(6, &self.H_4ebfc4ff)?;
         if self.trait_id != 0 {
-            os.write_uint32(8, self.trait_id)?;
+            os.write_uint32(12, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +131,14 @@ impl ::protobuf::Message for HEHOBDGMMJM {
     }
 
     fn clear(&mut self) {
-        self.H_a1f84e9a.clear();
+        self.H_4ebfc4ff.clear();
         self.trait_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HEHOBDGMMJM {
         static instance: HEHOBDGMMJM = HEHOBDGMMJM {
-            H_a1f84e9a: ::std::vec::Vec::new(),
+            H_4ebfc4ff: ::std::vec::Vec::new(),
             trait_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for HEHOBDGMMJM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HEHOBDGMMJM.proto\"G\n\x0bHEHOBDGMMJM\x12\x1d\n\nH_a1f84e9a\x18\
-    \x03\x20\x03(\rR\tHA1f84e9a\x12\x19\n\x08trait_id\x18\x08\x20\x01(\rR\
+    \n\x11HEHOBDGMMJM.proto\"G\n\x0bHEHOBDGMMJM\x12\x1d\n\nH_4ebfc4ff\x18\
+    \x06\x20\x03(\rR\tH4ebfc4ff\x12\x19\n\x08trait_id\x18\x0c\x20\x01(\rR\
     \x07traitIdb\x06proto3\
 ";
 

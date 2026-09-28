@@ -82,7 +82,7 @@ impl ::protobuf::Message for BDPHJAEBKAD {
                 40 => {
                     self.NFGNOCBCKID = is.read_uint32()?;
                 },
-                58 => {
+                98 => {
                     self.battle_target_list.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for BDPHJAEBKAD {
             os.write_uint32(5, self.NFGNOCBCKID)?;
         }
         for v in &self.battle_target_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for BDPHJAEBKAD {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BDPHJAEBKAD.proto\x1a-RogueAdventureRoomGameplayWolfGunTarget.prot\
     o\"\x87\x01\n\x0bBDPHJAEBKAD\x12\x20\n\x0bNFGNOCBCKID\x18\x05\x20\x01(\r\
-    R\x0bNFGNOCBCKID\x12V\n\x12battle_target_list\x18\x07\x20\x03(\x0b2(.Rog\
+    R\x0bNFGNOCBCKID\x12V\n\x12battle_target_list\x18\x0c\x20\x03(\x0b2(.Rog\
     ueAdventureRoomGameplayWolfGunTargetR\x10battleTargetListb\x06proto3\
 ";
 

@@ -86,13 +86,13 @@ impl ::protobuf::Message for EBBOJACNHEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.LHLKJIDFLIN = is.read_uint32()?;
                 },
-                80 => {
+                72 => {
                     self.GHEHGIOAGDG = is.read_uint32()?;
                 },
-                96 => {
+                120 => {
                     self.OEEDPJHLPHL = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for EBBOJACNHEC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LHLKJIDFLIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LHLKJIDFLIN);
+            my_size += ::protobuf::rt::uint32_size(3, self.LHLKJIDFLIN);
         }
         if self.GHEHGIOAGDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.GHEHGIOAGDG);
+            my_size += ::protobuf::rt::uint32_size(9, self.GHEHGIOAGDG);
         }
         if self.OEEDPJHLPHL != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EBBOJACNHEC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LHLKJIDFLIN != 0 {
-            os.write_uint32(6, self.LHLKJIDFLIN)?;
+            os.write_uint32(3, self.LHLKJIDFLIN)?;
         }
         if self.GHEHGIOAGDG != 0 {
-            os.write_uint32(10, self.GHEHGIOAGDG)?;
+            os.write_uint32(9, self.GHEHGIOAGDG)?;
         }
         if self.OEEDPJHLPHL != false {
-            os.write_bool(12, self.OEEDPJHLPHL)?;
+            os.write_bool(15, self.OEEDPJHLPHL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for EBBOJACNHEC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EBBOJACNHEC.proto\"s\n\x0bEBBOJACNHEC\x12\x20\n\x0bLHLKJIDFLIN\x18\
-    \x06\x20\x01(\rR\x0bLHLKJIDFLIN\x12\x20\n\x0bGHEHGIOAGDG\x18\n\x20\x01(\
-    \rR\x0bGHEHGIOAGDG\x12\x20\n\x0bOEEDPJHLPHL\x18\x0c\x20\x01(\x08R\x0bOEE\
+    \x03\x20\x01(\rR\x0bLHLKJIDFLIN\x12\x20\n\x0bGHEHGIOAGDG\x18\t\x20\x01(\
+    \rR\x0bGHEHGIOAGDG\x12\x20\n\x0bOEEDPJHLPHL\x18\x0f\x20\x01(\x08R\x0bOEE\
     DPJHLPHLb\x06proto3\
 ";
 

@@ -86,13 +86,13 @@ impl ::protobuf::Message for FinishQuestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                56 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.prop_id = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FinishQuestCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.quest_id);
         }
         if self.prop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.prop_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.prop_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FinishQuestCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.quest_id != 0 {
-            os.write_uint32(1, self.quest_id)?;
+            os.write_uint32(7, self.quest_id)?;
         }
         if self.prop_id != 0 {
-            os.write_uint32(5, self.prop_id)?;
+            os.write_uint32(8, self.prop_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(7, self.group_id)?;
+            os.write_uint32(11, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishQuestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16FinishQuestCsReq.proto\"a\n\x10FinishQuestCsReq\x12\x19\n\x08quest\
-    _id\x18\x01\x20\x01(\rR\x07questId\x12\x17\n\x07prop_id\x18\x05\x20\x01(\
-    \rR\x06propId\x12\x19\n\x08group_id\x18\x07\x20\x01(\rR\x07groupIdb\x06p\
+    _id\x18\x07\x20\x01(\rR\x07questId\x12\x17\n\x07prop_id\x18\x08\x20\x01(\
+    \rR\x06propId\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07groupIdb\x06p\
     roto3\
 ";
 

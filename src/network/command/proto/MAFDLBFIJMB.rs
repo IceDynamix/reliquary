@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MAFDLBFIJMB {
     // message fields
-    // @@protoc_insertion_point(field:MAFDLBFIJMB.slot)
-    pub slot: u32,
     // @@protoc_insertion_point(field:MAFDLBFIJMB.lineup)
     pub lineup: ::protobuf::MessageField<super::PNCNGIAMLCA::PNCNGIAMLCA>,
+    // @@protoc_insertion_point(field:MAFDLBFIJMB.slot)
+    pub slot: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MAFDLBFIJMB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MAFDLBFIJMB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &MAFDLBFIJMB| { &m.slot },
-            |m: &mut MAFDLBFIJMB| { &mut m.slot },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNCNGIAMLCA::PNCNGIAMLCA>(
             "lineup",
             |m: &MAFDLBFIJMB| { &m.lineup },
             |m: &mut MAFDLBFIJMB| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &MAFDLBFIJMB| { &m.slot },
+            |m: &mut MAFDLBFIJMB| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MAFDLBFIJMB>(
             "MAFDLBFIJMB",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MAFDLBFIJMB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.slot = is.read_uint32()?;
-                },
-                98 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                120 => {
+                    self.slot = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MAFDLBFIJMB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.slot);
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MAFDLBFIJMB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.slot != 0 {
-            os.write_uint32(5, self.slot)?;
-        }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.slot != 0 {
+            os.write_uint32(15, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MAFDLBFIJMB {
     }
 
     fn clear(&mut self) {
-        self.slot = 0;
         self.lineup.clear();
+        self.slot = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MAFDLBFIJMB {
         static instance: MAFDLBFIJMB = MAFDLBFIJMB {
-            slot: 0,
             lineup: ::protobuf::MessageField::none(),
+            slot: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MAFDLBFIJMB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MAFDLBFIJMB.proto\x1a\x11PNCNGIAMLCA.proto\"G\n\x0bMAFDLBFIJMB\x12\
-    \x12\n\x04slot\x18\x05\x20\x01(\rR\x04slot\x12$\n\x06lineup\x18\x0c\x20\
-    \x01(\x0b2\x0c.PNCNGIAMLCAR\x06lineupb\x06proto3\
+    $\n\x06lineup\x18\n\x20\x01(\x0b2\x0c.PNCNGIAMLCAR\x06lineup\x12\x12\n\
+    \x04slot\x18\x0f\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

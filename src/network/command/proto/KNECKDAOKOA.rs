@@ -30,10 +30,10 @@ pub struct KNECKDAOKOA {
     // message fields
     // @@protoc_insertion_point(field:KNECKDAOKOA.item_value)
     pub item_value: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
-    // @@protoc_insertion_point(field:KNECKDAOKOA.GJPLOMMEBGM)
-    pub GJPLOMMEBGM: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:KNECKDAOKOA.item_list)
     pub item_list: ::std::vec::Vec<super::FMKMEFMOJGJ::FMKMEFMOJGJ>,
+    // @@protoc_insertion_point(field:KNECKDAOKOA.GJPLOMMEBGM)
+    pub GJPLOMMEBGM: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // special fields
     // @@protoc_insertion_point(special_field:KNECKDAOKOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl KNECKDAOKOA {
             |m: &KNECKDAOKOA| { &m.item_value },
             |m: &mut KNECKDAOKOA| { &mut m.item_value },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
-            "GJPLOMMEBGM",
-            |m: &KNECKDAOKOA| { &m.GJPLOMMEBGM },
-            |m: &mut KNECKDAOKOA| { &mut m.GJPLOMMEBGM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "item_list",
             |m: &KNECKDAOKOA| { &m.item_list },
             |m: &mut KNECKDAOKOA| { &mut m.item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
+            "GJPLOMMEBGM",
+            |m: &KNECKDAOKOA| { &m.GJPLOMMEBGM },
+            |m: &mut KNECKDAOKOA| { &mut m.GJPLOMMEBGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KNECKDAOKOA>(
             "KNECKDAOKOA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KNECKDAOKOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_value)?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJPLOMMEBGM)?;
-                },
-                106 => {
+                42 => {
                     self.item_list.push(is.read_message()?);
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJPLOMMEBGM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,14 +111,14 @@ impl ::protobuf::Message for KNECKDAOKOA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GJPLOMMEBGM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.item_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.GJPLOMMEBGM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -126,14 +126,14 @@ impl ::protobuf::Message for KNECKDAOKOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_value.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.GJPLOMMEBGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if let Some(v) = self.GJPLOMMEBGM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -152,16 +152,16 @@ impl ::protobuf::Message for KNECKDAOKOA {
 
     fn clear(&mut self) {
         self.item_value.clear();
-        self.GJPLOMMEBGM.clear();
         self.item_list.clear();
+        self.GJPLOMMEBGM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KNECKDAOKOA {
         static instance: KNECKDAOKOA = KNECKDAOKOA {
             item_value: ::protobuf::MessageField::none(),
-            GJPLOMMEBGM: ::protobuf::MessageField::none(),
             item_list: ::std::vec::Vec::new(),
+            GJPLOMMEBGM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for KNECKDAOKOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KNECKDAOKOA.proto\x1a\x11FMKMEFMOJGJ.proto\x1a\x11NCFKHDIKCNI.prot\
-    o\"\x95\x01\n\x0bKNECKDAOKOA\x12+\n\nitem_value\x18\x01\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\titemValue\x12.\n\x0bGJPLOMMEBGM\x18\x04\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\x0bGJPLOMMEBGM\x12)\n\titem_list\x18\r\x20\x03(\x0b2\
-    \x0c.FMKMEFMOJGJR\x08itemListb\x06proto3\
+    o\"\x95\x01\n\x0bKNECKDAOKOA\x12+\n\nitem_value\x18\x03\x20\x01(\x0b2\
+    \x0c.NCFKHDIKCNIR\titemValue\x12)\n\titem_list\x18\x05\x20\x03(\x0b2\x0c\
+    .FMKMEFMOJGJR\x08itemList\x12.\n\x0bGJPLOMMEBGM\x18\x0b\x20\x01(\x0b2\
+    \x0c.NCFKHDIKCNIR\x0bGJPLOMMEBGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

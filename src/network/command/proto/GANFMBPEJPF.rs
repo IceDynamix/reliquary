@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GANFMBPEJPF {
     // message fields
-    // @@protoc_insertion_point(field:GANFMBPEJPF.JFHKJOGEOND)
-    pub JFHKJOGEOND: ::std::vec::Vec<super::DIKBPKAKENO::DIKBPKAKENO>,
-    // @@protoc_insertion_point(field:GANFMBPEJPF.CEPDOBEIEFG)
-    pub CEPDOBEIEFG: ::std::vec::Vec<super::JMJEIBGACMD::JMJEIBGACMD>,
     // @@protoc_insertion_point(field:GANFMBPEJPF.PAKECMNPEJJ)
     pub PAKECMNPEJJ: ::std::vec::Vec<super::DGKLPPLJBNB::DGKLPPLJBNB>,
+    // @@protoc_insertion_point(field:GANFMBPEJPF.CEPDOBEIEFG)
+    pub CEPDOBEIEFG: ::std::vec::Vec<super::JMJEIBGACMD::JMJEIBGACMD>,
+    // @@protoc_insertion_point(field:GANFMBPEJPF.JFHKJOGEOND)
+    pub JFHKJOGEOND: ::std::vec::Vec<super::DIKBPKAKENO::DIKBPKAKENO>,
     // @@protoc_insertion_point(field:GANFMBPEJPF.DPIKOCFILGP)
     pub DPIKOCFILGP: ::std::vec::Vec<super::NPAJHGDEIDJ::NPAJHGDEIDJ>,
     // special fields
@@ -56,9 +56,9 @@ impl GANFMBPEJPF {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JFHKJOGEOND",
-            |m: &GANFMBPEJPF| { &m.JFHKJOGEOND },
-            |m: &mut GANFMBPEJPF| { &mut m.JFHKJOGEOND },
+            "PAKECMNPEJJ",
+            |m: &GANFMBPEJPF| { &m.PAKECMNPEJJ },
+            |m: &mut GANFMBPEJPF| { &mut m.PAKECMNPEJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CEPDOBEIEFG",
@@ -66,9 +66,9 @@ impl GANFMBPEJPF {
             |m: &mut GANFMBPEJPF| { &mut m.CEPDOBEIEFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAKECMNPEJJ",
-            |m: &GANFMBPEJPF| { &m.PAKECMNPEJJ },
-            |m: &mut GANFMBPEJPF| { &mut m.PAKECMNPEJJ },
+            "JFHKJOGEOND",
+            |m: &GANFMBPEJPF| { &m.JFHKJOGEOND },
+            |m: &mut GANFMBPEJPF| { &mut m.JFHKJOGEOND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DPIKOCFILGP",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for GANFMBPEJPF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    self.JFHKJOGEOND.push(is.read_message()?);
-                },
-                34 => {
-                    self.CEPDOBEIEFG.push(is.read_message()?);
-                },
-                42 => {
                     self.PAKECMNPEJJ.push(is.read_message()?);
                 },
-                106 => {
+                50 => {
+                    self.CEPDOBEIEFG.push(is.read_message()?);
+                },
+                58 => {
+                    self.JFHKJOGEOND.push(is.read_message()?);
+                },
+                90 => {
                     self.DPIKOCFILGP.push(is.read_message()?);
                 },
                 tag => {
@@ -117,7 +117,7 @@ impl ::protobuf::Message for GANFMBPEJPF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JFHKJOGEOND {
+        for value in &self.PAKECMNPEJJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,7 +125,7 @@ impl ::protobuf::Message for GANFMBPEJPF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PAKECMNPEJJ {
+        for value in &self.JFHKJOGEOND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -139,17 +139,17 @@ impl ::protobuf::Message for GANFMBPEJPF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JFHKJOGEOND {
+        for v in &self.PAKECMNPEJJ {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         for v in &self.CEPDOBEIEFG {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.PAKECMNPEJJ {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.JFHKJOGEOND {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.DPIKOCFILGP {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,18 +168,18 @@ impl ::protobuf::Message for GANFMBPEJPF {
     }
 
     fn clear(&mut self) {
-        self.JFHKJOGEOND.clear();
-        self.CEPDOBEIEFG.clear();
         self.PAKECMNPEJJ.clear();
+        self.CEPDOBEIEFG.clear();
+        self.JFHKJOGEOND.clear();
         self.DPIKOCFILGP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GANFMBPEJPF {
         static instance: GANFMBPEJPF = GANFMBPEJPF {
-            JFHKJOGEOND: ::std::vec::Vec::new(),
-            CEPDOBEIEFG: ::std::vec::Vec::new(),
             PAKECMNPEJJ: ::std::vec::Vec::new(),
+            CEPDOBEIEFG: ::std::vec::Vec::new(),
+            JFHKJOGEOND: ::std::vec::Vec::new(),
             DPIKOCFILGP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -207,11 +207,11 @@ impl ::protobuf::reflect::ProtobufValue for GANFMBPEJPF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GANFMBPEJPF.proto\x1a\x11DGKLPPLJBNB.proto\x1a\x11DIKBPKAKENO.prot\
     o\x1a\x11JMJEIBGACMD.proto\x1a\x11NPAJHGDEIDJ.proto\"\xcd\x01\n\x0bGANFM\
-    BPEJPF\x12.\n\x0bJFHKJOGEOND\x18\x02\x20\x03(\x0b2\x0c.DIKBPKAKENOR\x0bJ\
-    FHKJOGEOND\x12.\n\x0bCEPDOBEIEFG\x18\x04\x20\x03(\x0b2\x0c.JMJEIBGACMDR\
-    \x0bCEPDOBEIEFG\x12.\n\x0bPAKECMNPEJJ\x18\x05\x20\x03(\x0b2\x0c.DGKLPPLJ\
-    BNBR\x0bPAKECMNPEJJ\x12.\n\x0bDPIKOCFILGP\x18\r\x20\x03(\x0b2\x0c.NPAJHG\
-    DEIDJR\x0bDPIKOCFILGPb\x06proto3\
+    BPEJPF\x12.\n\x0bPAKECMNPEJJ\x18\x02\x20\x03(\x0b2\x0c.DGKLPPLJBNBR\x0bP\
+    AKECMNPEJJ\x12.\n\x0bCEPDOBEIEFG\x18\x06\x20\x03(\x0b2\x0c.JMJEIBGACMDR\
+    \x0bCEPDOBEIEFG\x12.\n\x0bJFHKJOGEOND\x18\x07\x20\x03(\x0b2\x0c.DIKBPKAK\
+    ENOR\x0bJFHKJOGEOND\x12.\n\x0bDPIKOCFILGP\x18\x0b\x20\x03(\x0b2\x0c.NPAJ\
+    HGDEIDJR\x0bDPIKOCFILGPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

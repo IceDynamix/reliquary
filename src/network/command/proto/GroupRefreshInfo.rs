@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupRefreshInfo {
     // message fields
-    // @@protoc_insertion_point(field:GroupRefreshInfo.state)
-    pub state: u32,
-    // @@protoc_insertion_point(field:GroupRefreshInfo.group_id)
-    pub group_id: u32,
-    // @@protoc_insertion_point(field:GroupRefreshInfo.CDMKBCHLPAB)
-    pub CDMKBCHLPAB: ::std::vec::Vec<super::AKEKCKDIHLA::AKEKCKDIHLA>,
     // @@protoc_insertion_point(field:GroupRefreshInfo.group_info)
     pub group_info: ::protobuf::MessageField<super::SceneEntityGroupInfo::SceneEntityGroupInfo>,
     // @@protoc_insertion_point(field:GroupRefreshInfo.refresh_type)
     pub refresh_type: ::protobuf::EnumOrUnknown<super::SceneGroupRefreshType::SceneGroupRefreshType>,
     // @@protoc_insertion_point(field:GroupRefreshInfo.refresh_entity)
     pub refresh_entity: ::std::vec::Vec<super::SceneEntityRefreshInfo::SceneEntityRefreshInfo>,
+    // @@protoc_insertion_point(field:GroupRefreshInfo.state)
+    pub state: u32,
+    // @@protoc_insertion_point(field:GroupRefreshInfo.CDMKBCHLPAB)
+    pub CDMKBCHLPAB: ::std::vec::Vec<super::AKEKCKDIHLA::AKEKCKDIHLA>,
+    // @@protoc_insertion_point(field:GroupRefreshInfo.group_id)
+    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GroupRefreshInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,21 +59,6 @@ impl GroupRefreshInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "state",
-            |m: &GroupRefreshInfo| { &m.state },
-            |m: &mut GroupRefreshInfo| { &mut m.state },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &GroupRefreshInfo| { &m.group_id },
-            |m: &mut GroupRefreshInfo| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CDMKBCHLPAB",
-            |m: &GroupRefreshInfo| { &m.CDMKBCHLPAB },
-            |m: &mut GroupRefreshInfo| { &mut m.CDMKBCHLPAB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneEntityGroupInfo::SceneEntityGroupInfo>(
             "group_info",
             |m: &GroupRefreshInfo| { &m.group_info },
@@ -88,6 +73,21 @@ impl GroupRefreshInfo {
             "refresh_entity",
             |m: &GroupRefreshInfo| { &m.refresh_entity },
             |m: &mut GroupRefreshInfo| { &mut m.refresh_entity },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "state",
+            |m: &GroupRefreshInfo| { &m.state },
+            |m: &mut GroupRefreshInfo| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CDMKBCHLPAB",
+            |m: &GroupRefreshInfo| { &m.CDMKBCHLPAB },
+            |m: &mut GroupRefreshInfo| { &mut m.CDMKBCHLPAB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &GroupRefreshInfo| { &m.group_id },
+            |m: &mut GroupRefreshInfo| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupRefreshInfo>(
             "GroupRefreshInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GroupRefreshInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.state = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_info)?;
                 },
-                32 => {
-                    self.group_id = is.read_uint32()?;
+                24 => {
+                    self.refresh_type = is.read_enum_or_unknown()?;
+                },
+                50 => {
+                    self.refresh_entity.push(is.read_message()?);
+                },
+                56 => {
+                    self.state = is.read_uint32()?;
                 },
                 66 => {
                     self.CDMKBCHLPAB.push(is.read_message()?);
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_info)?;
-                },
                 80 => {
-                    self.refresh_type = is.read_enum_or_unknown()?;
-                },
-                106 => {
-                    self.refresh_entity.push(is.read_message()?);
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,51 +137,51 @@ impl ::protobuf::Message for GroupRefreshInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.state);
-        }
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
-        }
-        for value in &self.CDMKBCHLPAB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.group_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.refresh_type.value());
+            my_size += ::protobuf::rt::int32_size(3, self.refresh_type.value());
         }
         for value in &self.refresh_entity {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.state != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.state);
+        }
+        for value in &self.CDMKBCHLPAB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.state != 0 {
-            os.write_uint32(2, self.state)?;
+        if let Some(v) = self.group_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+        if self.refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.refresh_type))?;
+        }
+        for v in &self.refresh_entity {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.state != 0 {
+            os.write_uint32(7, self.state)?;
         }
         for v in &self.CDMKBCHLPAB {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if let Some(v) = self.group_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.group_id != 0 {
+            os.write_uint32(10, self.group_id)?;
         }
-        if self.refresh_type != ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.refresh_type))?;
-        }
-        for v in &self.refresh_entity {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -199,23 +199,23 @@ impl ::protobuf::Message for GroupRefreshInfo {
     }
 
     fn clear(&mut self) {
-        self.state = 0;
-        self.group_id = 0;
-        self.CDMKBCHLPAB.clear();
         self.group_info.clear();
         self.refresh_type = ::protobuf::EnumOrUnknown::new(super::SceneGroupRefreshType::SceneGroupRefreshType::SCENE_GROUP_REFRESH_TYPE_NONE);
         self.refresh_entity.clear();
+        self.state = 0;
+        self.CDMKBCHLPAB.clear();
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupRefreshInfo {
         static instance: GroupRefreshInfo = GroupRefreshInfo {
-            state: 0,
-            group_id: 0,
-            CDMKBCHLPAB: ::std::vec::Vec::new(),
             group_info: ::protobuf::MessageField::none(),
             refresh_type: ::protobuf::EnumOrUnknown::from_i32(0),
             refresh_entity: ::std::vec::Vec::new(),
+            state: 0,
+            CDMKBCHLPAB: ::std::vec::Vec::new(),
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -242,13 +242,13 @@ impl ::protobuf::reflect::ProtobufValue for GroupRefreshInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GroupRefreshInfo.proto\x1a\x11AKEKCKDIHLA.proto\x1a\x1aSceneEntity\
     GroupInfo.proto\x1a\x1cSceneEntityRefreshInfo.proto\x1a\x1bSceneGroupRef\
-    reshType.proto\"\xa4\x02\n\x10GroupRefreshInfo\x12\x14\n\x05state\x18\
-    \x02\x20\x01(\rR\x05state\x12\x19\n\x08group_id\x18\x04\x20\x01(\rR\x07g\
-    roupId\x12.\n\x0bCDMKBCHLPAB\x18\x08\x20\x03(\x0b2\x0c.AKEKCKDIHLAR\x0bC\
-    DMKBCHLPAB\x124\n\ngroup_info\x18\t\x20\x01(\x0b2\x15.SceneEntityGroupIn\
-    foR\tgroupInfo\x129\n\x0crefresh_type\x18\n\x20\x01(\x0e2\x16.SceneGroup\
-    RefreshTypeR\x0brefreshType\x12>\n\x0erefresh_entity\x18\r\x20\x03(\x0b2\
-    \x17.SceneEntityRefreshInfoR\rrefreshEntityb\x06proto3\
+    reshType.proto\"\xa4\x02\n\x10GroupRefreshInfo\x124\n\ngroup_info\x18\
+    \x01\x20\x01(\x0b2\x15.SceneEntityGroupInfoR\tgroupInfo\x129\n\x0crefres\
+    h_type\x18\x03\x20\x01(\x0e2\x16.SceneGroupRefreshTypeR\x0brefreshType\
+    \x12>\n\x0erefresh_entity\x18\x06\x20\x03(\x0b2\x17.SceneEntityRefreshIn\
+    foR\rrefreshEntity\x12\x14\n\x05state\x18\x07\x20\x01(\rR\x05state\x12.\
+    \n\x0bCDMKBCHLPAB\x18\x08\x20\x03(\x0b2\x0c.AKEKCKDIHLAR\x0bCDMKBCHLPAB\
+    \x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

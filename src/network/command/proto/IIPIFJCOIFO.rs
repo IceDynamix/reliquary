@@ -72,7 +72,7 @@ impl ::protobuf::Message for IIPIFJCOIFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJJGPDNKMJH)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for IIPIFJCOIFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PJJGPDNKMJH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for IIPIFJCOIFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IIPIFJCOIFO.proto\x1a\x11HGPBONMLNAJ.proto\"=\n\x0bIIPIFJCOIFO\x12\
-    .\n\x0bPJJGPDNKMJH\x18\x02\x20\x01(\x0b2\x0c.HGPBONMLNAJR\x0bPJJGPDNKMJH\
-    b\x06proto3\
+    .\n\x0bPJJGPDNKMJH\x18\t\x20\x01(\x0b2\x0c.HGPBONMLNAJR\x0bPJJGPDNKMJHb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

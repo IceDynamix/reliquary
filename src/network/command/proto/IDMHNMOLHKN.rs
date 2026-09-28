@@ -30,10 +30,10 @@ pub struct IDMHNMOLHKN {
     // message fields
     // @@protoc_insertion_point(field:IDMHNMOLHKN.GHNJCLNKGHH)
     pub GHNJCLNKGHH: ::protobuf::EnumOrUnknown<super::MMFOGJPOHGJ::MMFOGJPOHGJ>,
-    // @@protoc_insertion_point(field:IDMHNMOLHKN.GAHFPGCPAJA)
-    pub GAHFPGCPAJA: u64,
     // @@protoc_insertion_point(field:IDMHNMOLHKN.GFKAFIFMHNF)
     pub GFKAFIFMHNF: ::std::vec::Vec<super::AKMCODLAEKI::AKMCODLAEKI>,
+    // @@protoc_insertion_point(field:IDMHNMOLHKN.GAHFPGCPAJA)
+    pub GAHFPGCPAJA: u64,
     // special fields
     // @@protoc_insertion_point(special_field:IDMHNMOLHKN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl IDMHNMOLHKN {
             |m: &IDMHNMOLHKN| { &m.GHNJCLNKGHH },
             |m: &mut IDMHNMOLHKN| { &mut m.GHNJCLNKGHH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GAHFPGCPAJA",
-            |m: &IDMHNMOLHKN| { &m.GAHFPGCPAJA },
-            |m: &mut IDMHNMOLHKN| { &mut m.GAHFPGCPAJA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "GFKAFIFMHNF",
             |m: &IDMHNMOLHKN| { &m.GFKAFIFMHNF },
             |m: &mut IDMHNMOLHKN| { &mut m.GFKAFIFMHNF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GAHFPGCPAJA",
+            |m: &IDMHNMOLHKN| { &m.GAHFPGCPAJA },
+            |m: &mut IDMHNMOLHKN| { &mut m.GAHFPGCPAJA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IDMHNMOLHKN>(
             "IDMHNMOLHKN",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for IDMHNMOLHKN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                48 => {
                     self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
                 },
-                48 => {
-                    self.GAHFPGCPAJA = is.read_uint64()?;
-                },
-                122 => {
+                74 => {
                     self.GFKAFIFMHNF.push(is.read_message()?);
+                },
+                80 => {
+                    self.GAHFPGCPAJA = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,15 +108,15 @@ impl ::protobuf::Message for IDMHNMOLHKN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.GHNJCLNKGHH.value());
-        }
-        if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.GAHFPGCPAJA);
+            my_size += ::protobuf::rt::int32_size(6, self.GHNJCLNKGHH.value());
         }
         for value in &self.GFKAFIFMHNF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GAHFPGCPAJA != 0 {
+            my_size += ::protobuf::rt::uint64_size(10, self.GAHFPGCPAJA);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,14 +124,14 @@ impl ::protobuf::Message for IDMHNMOLHKN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
-        }
-        if self.GAHFPGCPAJA != 0 {
-            os.write_uint64(6, self.GAHFPGCPAJA)?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
         }
         for v in &self.GFKAFIFMHNF {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        if self.GAHFPGCPAJA != 0 {
+            os.write_uint64(10, self.GAHFPGCPAJA)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,16 +150,16 @@ impl ::protobuf::Message for IDMHNMOLHKN {
 
     fn clear(&mut self) {
         self.GHNJCLNKGHH = ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ);
-        self.GAHFPGCPAJA = 0;
         self.GFKAFIFMHNF.clear();
+        self.GAHFPGCPAJA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IDMHNMOLHKN {
         static instance: IDMHNMOLHKN = IDMHNMOLHKN {
             GHNJCLNKGHH: ::protobuf::EnumOrUnknown::from_i32(0),
-            GAHFPGCPAJA: 0,
             GFKAFIFMHNF: ::std::vec::Vec::new(),
+            GAHFPGCPAJA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for IDMHNMOLHKN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IDMHNMOLHKN.proto\x1a\x11AKMCODLAEKI.proto\x1a\x11MMFOGJPOHGJ.prot\
-    o\"\x8f\x01\n\x0bIDMHNMOLHKN\x12.\n\x0bGHNJCLNKGHH\x18\x04\x20\x01(\x0e2\
-    \x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\x12\x20\n\x0bGAHFPGCPAJA\x18\x06\x20\
-    \x01(\x04R\x0bGAHFPGCPAJA\x12.\n\x0bGFKAFIFMHNF\x18\x0f\x20\x03(\x0b2\
-    \x0c.AKMCODLAEKIR\x0bGFKAFIFMHNFb\x06proto3\
+    o\"\x8f\x01\n\x0bIDMHNMOLHKN\x12.\n\x0bGHNJCLNKGHH\x18\x06\x20\x01(\x0e2\
+    \x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\x12.\n\x0bGFKAFIFMHNF\x18\t\x20\x03(\
+    \x0b2\x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12\x20\n\x0bGAHFPGCPAJA\x18\n\x20\
+    \x01(\x04R\x0bGAHFPGCPAJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

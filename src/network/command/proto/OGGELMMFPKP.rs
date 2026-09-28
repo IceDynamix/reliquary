@@ -79,10 +79,10 @@ impl ::protobuf::Message for OGGELMMFPKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                25 => {
+                49 => {
                     self.damage = is.read_double()?;
                 },
-                56 => {
+                88 => {
                     self.config_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for OGGELMMFPKP {
             my_size += 1 + 8;
         }
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.config_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OGGELMMFPKP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.damage != 0. {
-            os.write_double(3, self.damage)?;
+            os.write_double(6, self.damage)?;
         }
         if self.config_id != 0 {
-            os.write_uint32(7, self.config_id)?;
+            os.write_uint32(11, self.config_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for OGGELMMFPKP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OGGELMMFPKP.proto\"B\n\x0bOGGELMMFPKP\x12\x16\n\x06damage\x18\x03\
-    \x20\x01(\x01R\x06damage\x12\x1b\n\tconfig_id\x18\x07\x20\x01(\rR\x08con\
+    \n\x11OGGELMMFPKP.proto\"B\n\x0bOGGELMMFPKP\x12\x16\n\x06damage\x18\x06\
+    \x20\x01(\x01R\x06damage\x12\x1b\n\tconfig_id\x18\x0b\x20\x01(\rR\x08con\
     figIdb\x06proto3\
 ";
 

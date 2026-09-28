@@ -82,7 +82,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
                 16 => {
                     self.item_id = is.read_uint32()?;
                 },
-                72 => {
+                40 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
             my_size += ::protobuf::rt::uint32_size(2, self.item_id);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.slot);
+            my_size += ::protobuf::rt::uint32_size(5, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for POPJNEHGMIH {
             os.write_uint32(2, self.item_id)?;
         }
         if self.slot != 0 {
-            os.write_uint32(9, self.slot)?;
+            os.write_uint32(5, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for POPJNEHGMIH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POPJNEHGMIH.proto\":\n\x0bPOPJNEHGMIH\x12\x17\n\x07item_id\x18\x02\
-    \x20\x01(\rR\x06itemId\x12\x12\n\x04slot\x18\t\x20\x01(\rR\x04slotb\x06p\
-    roto3\
+    \x20\x01(\rR\x06itemId\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slotb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

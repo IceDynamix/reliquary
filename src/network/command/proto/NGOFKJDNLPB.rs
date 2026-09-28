@@ -82,7 +82,7 @@ impl ::protobuf::Message for NGOFKJDNLPB {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
+                112 => {
                     self.DABECDOKHLL = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for NGOFKJDNLPB {
             my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         if self.DABECDOKHLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DABECDOKHLL);
+            my_size += ::protobuf::rt::uint32_size(14, self.DABECDOKHLL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for NGOFKJDNLPB {
             os.write_uint32(3, self.retcode)?;
         }
         if self.DABECDOKHLL != 0 {
-            os.write_uint32(4, self.DABECDOKHLL)?;
+            os.write_uint32(14, self.DABECDOKHLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NGOFKJDNLPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGOFKJDNLPB.proto\"I\n\x0bNGOFKJDNLPB\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bDABECDOKHLL\x18\x04\x20\x01(\rR\x0b\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bDABECDOKHLL\x18\x0e\x20\x01(\rR\x0b\
     DABECDOKHLLb\x06proto3\
 ";
 

@@ -197,52 +197,52 @@ impl LobbyGameExtInfo {
         }
     }
 
-    // .H_ed720ad5 H_4fb8c684 = 1004;
+    // .H_a819471c H_5f484477 = 1004;
 
-    pub fn H_4fb8c684(&self) -> &super::H_ed720ad5::H_ed720ad5 {
+    pub fn H_5f484477(&self) -> &super::H_a819471c::H_a819471c {
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v)) => v,
-            _ => <super::H_ed720ad5::H_ed720ad5 as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(ref v)) => v,
+            _ => <super::H_a819471c::H_a819471c as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_H_4fb8c684(&mut self) {
+    pub fn clear_H_5f484477(&mut self) {
         self.APEMJMHJHKD = ::std::option::Option::None;
     }
 
-    pub fn has_H_4fb8c684(&self) -> bool {
+    pub fn has_H_5f484477(&self) -> bool {
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(..)) => true,
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_H_4fb8c684(&mut self, v: super::H_ed720ad5::H_ed720ad5) {
-        self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(v))
+    pub fn set_H_5f484477(&mut self, v: super::H_a819471c::H_a819471c) {
+        self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_H_4fb8c684(&mut self) -> &mut super::H_ed720ad5::H_ed720ad5 {
-        if let ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(_)) = self.APEMJMHJHKD {
+    pub fn mut_H_5f484477(&mut self) -> &mut super::H_a819471c::H_a819471c {
+        if let ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(_)) = self.APEMJMHJHKD {
         } else {
-            self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(super::H_ed720ad5::H_ed720ad5::new()));
+            self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(super::H_a819471c::H_a819471c::new()));
         }
         match self.APEMJMHJHKD {
-            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref mut v)) => v,
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_H_4fb8c684(&mut self) -> super::H_ed720ad5::H_ed720ad5 {
-        if self.has_H_4fb8c684() {
+    pub fn take_H_5f484477(&mut self) -> super::H_a819471c::H_a819471c {
+        if self.has_H_5f484477() {
             match self.APEMJMHJHKD.take() {
-                ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(v)) => v,
+                ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::H_ed720ad5::H_ed720ad5::new()
+            super::H_a819471c::H_a819471c::new()
         }
     }
 
@@ -344,8 +344,57 @@ impl LobbyGameExtInfo {
         }
     }
 
+    // .KEIDHKJDDJF ICGJCKLHLAB = 1007;
+
+    pub fn ICGJCKLHLAB(&self) -> &super::KEIDHKJDDJF::KEIDHKJDDJF {
+        match self.APEMJMHJHKD {
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(ref v)) => v,
+            _ => <super::KEIDHKJDDJF::KEIDHKJDDJF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ICGJCKLHLAB(&mut self) {
+        self.APEMJMHJHKD = ::std::option::Option::None;
+    }
+
+    pub fn has_ICGJCKLHLAB(&self) -> bool {
+        match self.APEMJMHJHKD {
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ICGJCKLHLAB(&mut self, v: super::KEIDHKJDDJF::KEIDHKJDDJF) {
+        self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ICGJCKLHLAB(&mut self) -> &mut super::KEIDHKJDDJF::KEIDHKJDDJF {
+        if let ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(_)) = self.APEMJMHJHKD {
+        } else {
+            self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(super::KEIDHKJDDJF::KEIDHKJDDJF::new()));
+        }
+        match self.APEMJMHJHKD {
+            ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ICGJCKLHLAB(&mut self) -> super::KEIDHKJDDJF::KEIDHKJDDJF {
+        if self.has_ICGJCKLHLAB() {
+            match self.APEMJMHJHKD.take() {
+                ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KEIDHKJDDJF::KEIDHKJDDJF::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(8);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MLAFBFEBNHB",
@@ -378,12 +427,12 @@ impl LobbyGameExtInfo {
             LobbyGameExtInfo::mut_PHIBAOMGNOH,
             LobbyGameExtInfo::set_PHIBAOMGNOH,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::H_ed720ad5::H_ed720ad5>(
-            "H_4fb8c684",
-            LobbyGameExtInfo::has_H_4fb8c684,
-            LobbyGameExtInfo::H_4fb8c684,
-            LobbyGameExtInfo::mut_H_4fb8c684,
-            LobbyGameExtInfo::set_H_4fb8c684,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::H_a819471c::H_a819471c>(
+            "H_5f484477",
+            LobbyGameExtInfo::has_H_5f484477,
+            LobbyGameExtInfo::H_5f484477,
+            LobbyGameExtInfo::mut_H_5f484477,
+            LobbyGameExtInfo::set_H_5f484477,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IPIJFDIPNDE::IPIJFDIPNDE>(
             "GOKJCFBPHCJ",
@@ -398,6 +447,13 @@ impl LobbyGameExtInfo {
             LobbyGameExtInfo::MPNPIIHHFPN,
             LobbyGameExtInfo::mut_MPNPIIHHFPN,
             LobbyGameExtInfo::set_MPNPIIHHFPN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KEIDHKJDDJF::KEIDHKJDDJF>(
+            "ICGJCKLHLAB",
+            LobbyGameExtInfo::has_ICGJCKLHLAB,
+            LobbyGameExtInfo::ICGJCKLHLAB,
+            LobbyGameExtInfo::mut_ICGJCKLHLAB,
+            LobbyGameExtInfo::set_ICGJCKLHLAB,
         ));
         oneofs.push(lobby_game_ext_info::APEMJMHJHKD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyGameExtInfo>(
@@ -434,13 +490,16 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                     self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::PHIBAOMGNOH(is.read_message()?));
                 },
                 8034 => {
-                    self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(is.read_message()?));
+                    self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::H5f484477(is.read_message()?));
                 },
                 8042 => {
                     self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::GOKJCFBPHCJ(is.read_message()?));
                 },
                 8050 => {
                     self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::MPNPIIHHFPN(is.read_message()?));
+                },
+                8058 => {
+                    self.APEMJMHJHKD = ::std::option::Option::Some(lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -474,7 +533,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v) => {
+                &lobby_game_ext_info::APEMJMHJHKD::H5f484477(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -483,6 +542,10 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &lobby_game_ext_info::APEMJMHJHKD::MPNPIIHHFPN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -511,7 +574,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                 &lobby_game_ext_info::APEMJMHJHKD::PHIBAOMGNOH(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1003, v, os)?;
                 },
-                &lobby_game_ext_info::APEMJMHJHKD::H4fb8c684(ref v) => {
+                &lobby_game_ext_info::APEMJMHJHKD::H5f484477(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1004, v, os)?;
                 },
                 &lobby_game_ext_info::APEMJMHJHKD::GOKJCFBPHCJ(ref v) => {
@@ -519,6 +582,9 @@ impl ::protobuf::Message for LobbyGameExtInfo {
                 },
                 &lobby_game_ext_info::APEMJMHJHKD::MPNPIIHHFPN(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1006, v, os)?;
+                },
+                &lobby_game_ext_info::APEMJMHJHKD::ICGJCKLHLAB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1007, v, os)?;
                 },
             };
         }
@@ -541,6 +607,7 @@ impl ::protobuf::Message for LobbyGameExtInfo {
     fn clear(&mut self) {
         self.MLAFBFEBNHB.clear();
         self.ELJECOAKNOF = false;
+        self.APEMJMHJHKD = ::std::option::Option::None;
         self.APEMJMHJHKD = ::std::option::Option::None;
         self.APEMJMHJHKD = ::std::option::Option::None;
         self.APEMJMHJHKD = ::std::option::Option::None;
@@ -591,12 +658,14 @@ pub mod lobby_game_ext_info {
         LobbyMarbleInfo(super::super::LobbyMarbleInfo::LobbyMarbleInfo),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.PHIBAOMGNOH)
         PHIBAOMGNOH(super::super::JMFPICAMLIG::JMFPICAMLIG),
-        // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.H_4fb8c684)
-        H4fb8c684(super::super::H_ed720ad5::H_ed720ad5),
+        // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.H_5f484477)
+        H5f484477(super::super::H_a819471c::H_a819471c),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.GOKJCFBPHCJ)
         GOKJCFBPHCJ(super::super::IPIJFDIPNDE::IPIJFDIPNDE),
         // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.MPNPIIHHFPN)
         MPNPIIHHFPN(super::super::PCBLIKPEEJA::PCBLIKPEEJA),
+        // @@protoc_insertion_point(oneof_field:LobbyGameExtInfo.ICGJCKLHLAB)
+        ICGJCKLHLAB(super::super::KEIDHKJDDJF::KEIDHKJDDJF),
     }
 
     impl ::protobuf::Oneof for APEMJMHJHKD {
@@ -617,19 +686,20 @@ pub mod lobby_game_ext_info {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16LobbyGameExtInfo.proto\x1a\x10H_ed720ad5.proto\x1a\x11IPIJFDIPNDE.\
-    proto\x1a\x11JMFPICAMLIG.proto\x1a\x15LobbyMarbleInfo.proto\x1a\x14Lobby\
-    MarchInfo.proto\x1a\x11PCBLIKPEEJA.proto\"\xac\x03\n\x10LobbyGameExtInfo\
-    \x12\x20\n\x0bMLAFBFEBNHB\x18\x01\x20\x03(\tR\x0bMLAFBFEBNHB\x12\x20\n\
-    \x0bELJECOAKNOF\x18\x02\x20\x01(\x08R\x0bELJECOAKNOF\x12<\n\x10lobby_mar\
-    ch_info\x18\xe9\x07\x20\x01(\x0b2\x0f.LobbyMarchInfoH\0R\x0elobbyMarchIn\
-    fo\x12?\n\x11lobby_marble_info\x18\xea\x07\x20\x01(\x0b2\x10.LobbyMarble\
-    InfoH\0R\x0flobbyMarbleInfo\x121\n\x0bPHIBAOMGNOH\x18\xeb\x07\x20\x01(\
-    \x0b2\x0c.JMFPICAMLIGH\0R\x0bPHIBAOMGNOH\x12-\n\nH_4fb8c684\x18\xec\x07\
-    \x20\x01(\x0b2\x0b.H_ed720ad5H\0R\tH4fb8c684\x121\n\x0bGOKJCFBPHCJ\x18\
-    \xed\x07\x20\x01(\x0b2\x0c.IPIJFDIPNDEH\0R\x0bGOKJCFBPHCJ\x121\n\x0bMPNP\
-    IIHHFPN\x18\xee\x07\x20\x01(\x0b2\x0c.PCBLIKPEEJAH\0R\x0bMPNPIIHHFPNB\r\
-    \n\x0bAPEMJMHJHKDb\x06proto3\
+    \n\x16LobbyGameExtInfo.proto\x1a\x10H_a819471c.proto\x1a\x11IPIJFDIPNDE.\
+    proto\x1a\x11JMFPICAMLIG.proto\x1a\x11KEIDHKJDDJF.proto\x1a\x15LobbyMarb\
+    leInfo.proto\x1a\x14LobbyMarchInfo.proto\x1a\x11PCBLIKPEEJA.proto\"\xdf\
+    \x03\n\x10LobbyGameExtInfo\x12\x20\n\x0bMLAFBFEBNHB\x18\x01\x20\x03(\tR\
+    \x0bMLAFBFEBNHB\x12\x20\n\x0bELJECOAKNOF\x18\x02\x20\x01(\x08R\x0bELJECO\
+    AKNOF\x12<\n\x10lobby_march_info\x18\xe9\x07\x20\x01(\x0b2\x0f.LobbyMarc\
+    hInfoH\0R\x0elobbyMarchInfo\x12?\n\x11lobby_marble_info\x18\xea\x07\x20\
+    \x01(\x0b2\x10.LobbyMarbleInfoH\0R\x0flobbyMarbleInfo\x121\n\x0bPHIBAOMG\
+    NOH\x18\xeb\x07\x20\x01(\x0b2\x0c.JMFPICAMLIGH\0R\x0bPHIBAOMGNOH\x12-\n\
+    \nH_5f484477\x18\xec\x07\x20\x01(\x0b2\x0b.H_a819471cH\0R\tH5f484477\x12\
+    1\n\x0bGOKJCFBPHCJ\x18\xed\x07\x20\x01(\x0b2\x0c.IPIJFDIPNDEH\0R\x0bGOKJ\
+    CFBPHCJ\x121\n\x0bMPNPIIHHFPN\x18\xee\x07\x20\x01(\x0b2\x0c.PCBLIKPEEJAH\
+    \0R\x0bMPNPIIHHFPN\x121\n\x0bICGJCKLHLAB\x18\xef\x07\x20\x01(\x0b2\x0c.K\
+    EIDHKJDDJFH\0R\x0bICGJCKLHLABB\r\n\x0bAPEMJMHJHKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -646,10 +716,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::H_ed720ad5::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(7);
+            deps.push(super::H_a819471c::file_descriptor().clone());
             deps.push(super::IPIJFDIPNDE::file_descriptor().clone());
             deps.push(super::JMFPICAMLIG::file_descriptor().clone());
+            deps.push(super::KEIDHKJDDJF::file_descriptor().clone());
             deps.push(super::LobbyMarbleInfo::file_descriptor().clone());
             deps.push(super::LobbyMarchInfo::file_descriptor().clone());
             deps.push(super::PCBLIKPEEJA::file_descriptor().clone());

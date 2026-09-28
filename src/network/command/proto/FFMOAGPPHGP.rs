@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FFMOAGPPHGP {
     // message fields
-    // @@protoc_insertion_point(field:FFMOAGPPHGP.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // @@protoc_insertion_point(field:FFMOAGPPHGP.KHJKDLNAMIP)
     pub KHJKDLNAMIP: u32,
+    // @@protoc_insertion_point(field:FFMOAGPPHGP.sp_bar)
+    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
     // @@protoc_insertion_point(field:FFMOAGPPHGP.avatar_id)
     pub avatar_id: u32,
     // @@protoc_insertion_point(field:FFMOAGPPHGP.avatar_type)
@@ -57,15 +57,15 @@ impl FFMOAGPPHGP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &FFMOAGPPHGP| { &m.sp_bar },
-            |m: &mut FFMOAGPPHGP| { &mut m.sp_bar },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KHJKDLNAMIP",
             |m: &FFMOAGPPHGP| { &m.KHJKDLNAMIP },
             |m: &mut FFMOAGPPHGP| { &mut m.KHJKDLNAMIP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
+            "sp_bar",
+            |m: &FFMOAGPPHGP| { &m.sp_bar },
+            |m: &mut FFMOAGPPHGP| { &mut m.sp_bar },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for FFMOAGPPHGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
-                },
-                80 => {
+                16 => {
                     self.KHJKDLNAMIP = is.read_uint32()?;
                 },
-                96 => {
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
+                },
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.avatar_type = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.hp = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for FFMOAGPPHGP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KHJKDLNAMIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KHJKDLNAMIP);
+        }
         if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KHJKDLNAMIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.KHJKDLNAMIP);
-        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
         if self.avatar_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_type);
+            my_size += ::protobuf::rt::uint32_size(11, self.avatar_type);
         }
         if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.hp);
+            my_size += ::protobuf::rt::uint32_size(13, self.hp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for FFMOAGPPHGP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.KHJKDLNAMIP != 0 {
-            os.write_uint32(10, self.KHJKDLNAMIP)?;
+            os.write_uint32(2, self.KHJKDLNAMIP)?;
+        }
+        if let Some(v) = self.sp_bar.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(12, self.avatar_id)?;
+            os.write_uint32(9, self.avatar_id)?;
         }
         if self.avatar_type != 0 {
-            os.write_uint32(13, self.avatar_type)?;
+            os.write_uint32(11, self.avatar_type)?;
         }
         if self.hp != 0 {
-            os.write_uint32(15, self.hp)?;
+            os.write_uint32(13, self.hp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,8 +181,8 @@ impl ::protobuf::Message for FFMOAGPPHGP {
     }
 
     fn clear(&mut self) {
-        self.sp_bar.clear();
         self.KHJKDLNAMIP = 0;
+        self.sp_bar.clear();
         self.avatar_id = 0;
         self.avatar_type = 0;
         self.hp = 0;
@@ -191,8 +191,8 @@ impl ::protobuf::Message for FFMOAGPPHGP {
 
     fn default_instance() -> &'static FFMOAGPPHGP {
         static instance: FFMOAGPPHGP = FFMOAGPPHGP {
-            sp_bar: ::protobuf::MessageField::none(),
             KHJKDLNAMIP: 0,
+            sp_bar: ::protobuf::MessageField::none(),
             avatar_id: 0,
             avatar_type: 0,
             hp: 0,
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for FFMOAGPPHGP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFMOAGPPHGP.proto\x1a\x0fSpBarInfo.proto\"\xa0\x01\n\x0bFFMOAGPPHG\
-    P\x12!\n\x06sp_bar\x18\x05\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\
-    \x0bKHJKDLNAMIP\x18\n\x20\x01(\rR\x0bKHJKDLNAMIP\x12\x1b\n\tavatar_id\
-    \x18\x0c\x20\x01(\rR\x08avatarId\x12\x1f\n\x0bavatar_type\x18\r\x20\x01(\
-    \rR\navatarType\x12\x0e\n\x02hp\x18\x0f\x20\x01(\rR\x02hpb\x06proto3\
+    P\x12\x20\n\x0bKHJKDLNAMIP\x18\x02\x20\x01(\rR\x0bKHJKDLNAMIP\x12!\n\x06\
+    sp_bar\x18\x06\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x1b\n\tavatar_id\
+    \x18\t\x20\x01(\rR\x08avatarId\x12\x1f\n\x0bavatar_type\x18\x0b\x20\x01(\
+    \rR\navatarType\x12\x0e\n\x02hp\x18\r\x20\x01(\rR\x02hpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonActionResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.BEBEEMKOBNN)
-    pub BEBEEMKOBNN: ::protobuf::EnumOrUnknown<super::DICEONDKEFF::DICEONDKEFF>,
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.CLGGKLNPLCK)
-    pub CLGGKLNPLCK: ::std::vec::Vec<super::MAOKMPOELCO::MAOKMPOELCO>,
     // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.DLOJFEEHLIJ)
     pub DLOJFEEHLIJ: u32,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.BEBEEMKOBNN)
+    pub BEBEEMKOBNN: ::protobuf::EnumOrUnknown<super::DICEONDKEFF::DICEONDKEFF>,
     // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.KCLBFINDGNA)
     pub KCLBFINDGNA: ::std::vec::Vec<super::ACMKPNMKOKH::ACMKPNMKOKH>,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.CLGGKLNPLCK)
+    pub CLGGKLNPLCK: ::std::vec::Vec<super::MAOKMPOELCO::MAOKMPOELCO>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl SyncRogueCommonActionResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLOJFEEHLIJ",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.DLOJFEEHLIJ },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.DLOJFEEHLIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEBEEMKOBNN",
             |m: &SyncRogueCommonActionResultScNotify| { &m.BEBEEMKOBNN },
             |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.BEBEEMKOBNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLGGKLNPLCK",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.CLGGKLNPLCK },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.CLGGKLNPLCK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLOJFEEHLIJ",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.DLOJFEEHLIJ },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.DLOJFEEHLIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KCLBFINDGNA",
             |m: &SyncRogueCommonActionResultScNotify| { &m.KCLBFINDGNA },
             |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.KCLBFINDGNA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CLGGKLNPLCK",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.CLGGKLNPLCK },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.CLGGKLNPLCK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonActionResultScNotify>(
             "SyncRogueCommonActionResultScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.BEBEEMKOBNN = is.read_enum_or_unknown()?;
-                },
-                66 => {
-                    self.CLGGKLNPLCK.push(is.read_message()?);
-                },
-                104 => {
+                8 => {
                     self.DLOJFEEHLIJ = is.read_uint32()?;
                 },
-                122 => {
+                32 => {
+                    self.BEBEEMKOBNN = is.read_enum_or_unknown()?;
+                },
+                90 => {
                     self.KCLBFINDGNA.push(is.read_message()?);
+                },
+                122 => {
+                    self.CLGGKLNPLCK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(3, self.BEBEEMKOBNN.value());
+        if self.DLOJFEEHLIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.DLOJFEEHLIJ);
         }
-        for value in &self.CLGGKLNPLCK {
+        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.BEBEEMKOBNN.value());
+        }
+        for value in &self.KCLBFINDGNA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.DLOJFEEHLIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DLOJFEEHLIJ);
-        }
-        for value in &self.KCLBFINDGNA {
+        for value in &self.CLGGKLNPLCK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -137,16 +137,16 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BEBEEMKOBNN))?;
-        }
-        for v in &self.CLGGKLNPLCK {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.DLOJFEEHLIJ != 0 {
-            os.write_uint32(13, self.DLOJFEEHLIJ)?;
+            os.write_uint32(1, self.DLOJFEEHLIJ)?;
+        }
+        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BEBEEMKOBNN))?;
         }
         for v in &self.KCLBFINDGNA {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.CLGGKLNPLCK {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -166,19 +166,19 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.BEBEEMKOBNN = ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ);
-        self.CLGGKLNPLCK.clear();
         self.DLOJFEEHLIJ = 0;
+        self.BEBEEMKOBNN = ::protobuf::EnumOrUnknown::new(super::DICEONDKEFF::DICEONDKEFF::DICEONDKEFF_NLCDGIPGFDJ);
         self.KCLBFINDGNA.clear();
+        self.CLGGKLNPLCK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonActionResultScNotify {
         static instance: SyncRogueCommonActionResultScNotify = SyncRogueCommonActionResultScNotify {
-            BEBEEMKOBNN: ::protobuf::EnumOrUnknown::from_i32(0),
-            CLGGKLNPLCK: ::std::vec::Vec::new(),
             DLOJFEEHLIJ: 0,
+            BEBEEMKOBNN: ::protobuf::EnumOrUnknown::from_i32(0),
             KCLBFINDGNA: ::std::vec::Vec::new(),
+            CLGGKLNPLCK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,11 +205,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonActionResultScNotify 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SyncRogueCommonActionResultScNotify.proto\x1a\x11ACMKPNMKOKH.proto\
     \x1a\x11DICEONDKEFF.proto\x1a\x11MAOKMPOELCO.proto\"\xd7\x01\n#SyncRogue\
-    CommonActionResultScNotify\x12.\n\x0bBEBEEMKOBNN\x18\x03\x20\x01(\x0e2\
-    \x0c.DICEONDKEFFR\x0bBEBEEMKOBNN\x12.\n\x0bCLGGKLNPLCK\x18\x08\x20\x03(\
-    \x0b2\x0c.MAOKMPOELCOR\x0bCLGGKLNPLCK\x12\x20\n\x0bDLOJFEEHLIJ\x18\r\x20\
-    \x01(\rR\x0bDLOJFEEHLIJ\x12.\n\x0bKCLBFINDGNA\x18\x0f\x20\x03(\x0b2\x0c.\
-    ACMKPNMKOKHR\x0bKCLBFINDGNAb\x06proto3\
+    CommonActionResultScNotify\x12\x20\n\x0bDLOJFEEHLIJ\x18\x01\x20\x01(\rR\
+    \x0bDLOJFEEHLIJ\x12.\n\x0bBEBEEMKOBNN\x18\x04\x20\x01(\x0e2\x0c.DICEONDK\
+    EFFR\x0bBEBEEMKOBNN\x12.\n\x0bKCLBFINDGNA\x18\x0b\x20\x03(\x0b2\x0c.ACMK\
+    PNMKOKHR\x0bKCLBFINDGNA\x12.\n\x0bCLGGKLNPLCK\x18\x0f\x20\x03(\x0b2\x0c.\
+    MAOKMPOELCOR\x0bCLGGKLNPLCKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

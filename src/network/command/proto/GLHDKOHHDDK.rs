@@ -30,9 +30,9 @@ pub enum GLHDKOHHDDK {
     // @@protoc_insertion_point(enum_value:GLHDKOHHDDK.GLHDKOHHDDK_NLCDGIPGFDJ)
     GLHDKOHHDDK_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:GLHDKOHHDDK.GLHDKOHHDDK_CMGJOLOLINK)
-    GLHDKOHHDDK_CMGJOLOLINK = 3513,
+    GLHDKOHHDDK_CMGJOLOLINK = 3525,
     // @@protoc_insertion_point(enum_value:GLHDKOHHDDK.GLHDKOHHDDK_IDABMGHDHJH)
-    GLHDKOHHDDK_IDABMGHDHJH = 3532,
+    GLHDKOHHDDK_IDABMGHDHJH = 3534,
 }
 
 impl ::protobuf::Enum for GLHDKOHHDDK {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for GLHDKOHHDDK {
     fn from_i32(value: i32) -> ::std::option::Option<GLHDKOHHDDK> {
         match value {
             0 => ::std::option::Option::Some(GLHDKOHHDDK::GLHDKOHHDDK_NLCDGIPGFDJ),
-            3513 => ::std::option::Option::Some(GLHDKOHHDDK::GLHDKOHHDDK_CMGJOLOLINK),
-            3532 => ::std::option::Option::Some(GLHDKOHHDDK::GLHDKOHHDDK_IDABMGHDHJH),
+            3525 => ::std::option::Option::Some(GLHDKOHHDDK::GLHDKOHHDDK_CMGJOLOLINK),
+            3534 => ::std::option::Option::Some(GLHDKOHHDDK::GLHDKOHHDDK_IDABMGHDHJH),
             _ => ::std::option::Option::None
         }
     }
@@ -97,8 +97,8 @@ impl GLHDKOHHDDK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLHDKOHHDDK.proto*f\n\x0bGLHDKOHHDDK\x12\x1b\n\x17GLHDKOHHDDK_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17GLHDKOHHDDK_CMGJOLOLINK\x10\xb9\x1b\x12\x1c\n\
-    \x17GLHDKOHHDDK_IDABMGHDHJH\x10\xcc\x1bb\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17GLHDKOHHDDK_CMGJOLOLINK\x10\xc5\x1b\x12\x1c\n\
+    \x17GLHDKOHHDDK_IDABMGHDHJH\x10\xce\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

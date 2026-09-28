@@ -89,10 +89,10 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
                 56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                88 => {
+                104 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.slot);
+            my_size += ::protobuf::rt::uint32_size(13, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
             os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.slot != 0 {
-            os.write_uint32(11, self.slot)?;
+            os.write_uint32(13, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSaveFriendPvpLineupScRsp 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)ChimeraDuelSaveFriendPvpLineupScRsp.proto\x1a\x11PNCNGIAMLCA.proto\"y\
     \n#ChimeraDuelSaveFriendPvpLineupScRsp\x12\x18\n\x07retcode\x18\x07\x20\
-    \x01(\rR\x07retcode\x12$\n\x06lineup\x18\t\x20\x01(\x0b2\x0c.PNCNGIAMLCA\
-    R\x06lineup\x12\x12\n\x04slot\x18\x0b\x20\x01(\rR\x04slotb\x06proto3\
+    \x01(\rR\x07retcode\x12$\n\x06lineup\x18\x0b\x20\x01(\x0b2\x0c.PNCNGIAML\
+    CAR\x06lineup\x12\x12\n\x04slot\x18\r\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

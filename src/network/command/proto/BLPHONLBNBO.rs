@@ -79,10 +79,10 @@ impl ::protobuf::Message for BLPHONLBNBO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                72 => {
                     self.PCCCKLNCLHB = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BLPHONLBNBO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PCCCKLNCLHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PCCCKLNCLHB);
+            my_size += ::protobuf::rt::uint32_size(9, self.PCCCKLNCLHB);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BLPHONLBNBO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PCCCKLNCLHB != 0 {
-            os.write_uint32(1, self.PCCCKLNCLHB)?;
+            os.write_uint32(9, self.PCCCKLNCLHB)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(4, self.group_id)?;
+            os.write_uint32(11, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BLPHONLBNBO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BLPHONLBNBO.proto\"J\n\x0bBLPHONLBNBO\x12\x20\n\x0bPCCCKLNCLHB\x18\
-    \x01\x20\x01(\rR\x0bPCCCKLNCLHB\x12\x19\n\x08group_id\x18\x04\x20\x01(\r\
-    R\x07groupIdb\x06proto3\
+    \t\x20\x01(\rR\x0bPCCCKLNCLHB\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\
+    \x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

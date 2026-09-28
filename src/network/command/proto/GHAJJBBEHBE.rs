@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GHAJJBBEHBE {
     // message fields
-    // @@protoc_insertion_point(field:GHAJJBBEHBE.LMHDFOFNFII)
-    pub LMHDFOFNFII: u32,
     // @@protoc_insertion_point(field:GHAJJBBEHBE.BBGHAFGMMNM)
     pub BBGHAFGMMNM: u32,
+    // @@protoc_insertion_point(field:GHAJJBBEHBE.LMHDFOFNFII)
+    pub LMHDFOFNFII: u32,
     // @@protoc_insertion_point(field:GHAJJBBEHBE.OAOPDHLDFIP)
     pub OAOPDHLDFIP: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GHAJJBBEHBE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LMHDFOFNFII",
-            |m: &GHAJJBBEHBE| { &m.LMHDFOFNFII },
-            |m: &mut GHAJJBBEHBE| { &mut m.LMHDFOFNFII },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BBGHAFGMMNM",
             |m: &GHAJJBBEHBE| { &m.BBGHAFGMMNM },
             |m: &mut GHAJJBBEHBE| { &mut m.BBGHAFGMMNM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LMHDFOFNFII",
+            |m: &GHAJJBBEHBE| { &m.LMHDFOFNFII },
+            |m: &mut GHAJJBBEHBE| { &mut m.LMHDFOFNFII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OAOPDHLDFIP",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for GHAJJBBEHBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LMHDFOFNFII = is.read_uint32()?;
-                },
-                48 => {
+                40 => {
                     self.BBGHAFGMMNM = is.read_uint32()?;
+                },
+                96 => {
+                    self.LMHDFOFNFII = is.read_uint32()?;
                 },
                 104 => {
                     self.OAOPDHLDFIP = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GHAJJBBEHBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LMHDFOFNFII != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LMHDFOFNFII);
-        }
         if self.BBGHAFGMMNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.BBGHAFGMMNM);
+            my_size += ::protobuf::rt::uint32_size(5, self.BBGHAFGMMNM);
+        }
+        if self.LMHDFOFNFII != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.LMHDFOFNFII);
         }
         if self.OAOPDHLDFIP != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.OAOPDHLDFIP);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for GHAJJBBEHBE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LMHDFOFNFII != 0 {
-            os.write_uint32(1, self.LMHDFOFNFII)?;
-        }
         if self.BBGHAFGMMNM != 0 {
-            os.write_uint32(6, self.BBGHAFGMMNM)?;
+            os.write_uint32(5, self.BBGHAFGMMNM)?;
+        }
+        if self.LMHDFOFNFII != 0 {
+            os.write_uint32(12, self.LMHDFOFNFII)?;
         }
         if self.OAOPDHLDFIP != 0 {
             os.write_uint32(13, self.OAOPDHLDFIP)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GHAJJBBEHBE {
     }
 
     fn clear(&mut self) {
-        self.LMHDFOFNFII = 0;
         self.BBGHAFGMMNM = 0;
+        self.LMHDFOFNFII = 0;
         self.OAOPDHLDFIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GHAJJBBEHBE {
         static instance: GHAJJBBEHBE = GHAJJBBEHBE {
-            LMHDFOFNFII: 0,
             BBGHAFGMMNM: 0,
+            LMHDFOFNFII: 0,
             OAOPDHLDFIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GHAJJBBEHBE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GHAJJBBEHBE.proto\"s\n\x0bGHAJJBBEHBE\x12\x20\n\x0bLMHDFOFNFII\x18\
-    \x01\x20\x01(\rR\x0bLMHDFOFNFII\x12\x20\n\x0bBBGHAFGMMNM\x18\x06\x20\x01\
-    (\rR\x0bBBGHAFGMMNM\x12\x20\n\x0bOAOPDHLDFIP\x18\r\x20\x01(\rR\x0bOAOPDH\
+    \n\x11GHAJJBBEHBE.proto\"s\n\x0bGHAJJBBEHBE\x12\x20\n\x0bBBGHAFGMMNM\x18\
+    \x05\x20\x01(\rR\x0bBBGHAFGMMNM\x12\x20\n\x0bLMHDFOFNFII\x18\x0c\x20\x01\
+    (\rR\x0bLMHDFOFNFII\x12\x20\n\x0bOAOPDHLDFIP\x18\r\x20\x01(\rR\x0bOAOPDH\
     LDFIPb\x06proto3\
 ";
 

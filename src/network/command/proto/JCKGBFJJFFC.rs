@@ -86,16 +86,16 @@ impl ::protobuf::Message for JCKGBFJJFFC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PAIAEPJIDPE)?;
                 },
-                2168 => {
+                9792 => {
                     self.FCJGHHILDEK = is.read_bool()?;
                 },
-                3370 => {
+                15418 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                3368 => {
+                15416 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -117,7 +117,7 @@ impl ::protobuf::Message for JCKGBFJJFFC {
         if self.FCJGHHILDEK != false {
             my_size += 2 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(421, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1927, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for JCKGBFJJFFC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.PAIAEPJIDPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.FCJGHHILDEK != false {
-            os.write_bool(271, self.FCJGHHILDEK)?;
+            os.write_bool(1224, self.FCJGHHILDEK)?;
         }
-        os.write_repeated_packed_uint32(421, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(1927, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for JCKGBFJJFFC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCKGBFJJFFC.proto\x1a\x11PMMOFOBCINL.proto\"\x93\x01\n\x0bJCKGBFJJ\
-    FFC\x12.\n\x0bPAIAEPJIDPE\x18\x07\x20\x01(\x0b2\x0c.PMMOFOBCINLR\x0bPAIA\
-    EPJIDPE\x12!\n\x0bFCJGHHILDEK\x18\x8f\x02\x20\x01(\x08R\x0bFCJGHHILDEK\
-    \x121\n\x14finished_target_list\x18\xa5\x03\x20\x03(\rR\x12finishedTarge\
-    tListb\x06proto3\
+    FFC\x12.\n\x0bPAIAEPJIDPE\x18\x08\x20\x01(\x0b2\x0c.PMMOFOBCINLR\x0bPAIA\
+    EPJIDPE\x12!\n\x0bFCJGHHILDEK\x18\xc8\t\x20\x01(\x08R\x0bFCJGHHILDEK\x12\
+    1\n\x14finished_target_list\x18\x87\x0f\x20\x03(\rR\x12finishedTargetLis\
+    tb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

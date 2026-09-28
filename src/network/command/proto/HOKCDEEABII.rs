@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HOKCDEEABII {
     // message fields
-    // @@protoc_insertion_point(field:HOKCDEEABII.FJPEIFMFPAN)
-    pub FJPEIFMFPAN: u32,
     // @@protoc_insertion_point(field:HOKCDEEABII.KNMADMBFEDB)
     pub KNMADMBFEDB: ::protobuf::MessageField<super::ECDINHEHKOJ::ECDINHEHKOJ>,
     // @@protoc_insertion_point(field:HOKCDEEABII.IEDKELDFHLP)
     pub IEDKELDFHLP: ::std::vec::Vec<super::CNLAOMCKFKD::CNLAOMCKFKD>,
+    // @@protoc_insertion_point(field:HOKCDEEABII.FJPEIFMFPAN)
+    pub FJPEIFMFPAN: u32,
     // @@protoc_insertion_point(field:HOKCDEEABII.IDCJPIJHNCL)
     pub IDCJPIJHNCL: u32,
     // special fields
@@ -55,11 +55,6 @@ impl HOKCDEEABII {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJPEIFMFPAN",
-            |m: &HOKCDEEABII| { &m.FJPEIFMFPAN },
-            |m: &mut HOKCDEEABII| { &mut m.FJPEIFMFPAN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ECDINHEHKOJ::ECDINHEHKOJ>(
             "KNMADMBFEDB",
             |m: &HOKCDEEABII| { &m.KNMADMBFEDB },
@@ -69,6 +64,11 @@ impl HOKCDEEABII {
             "IEDKELDFHLP",
             |m: &HOKCDEEABII| { &m.IEDKELDFHLP },
             |m: &mut HOKCDEEABII| { &mut m.IEDKELDFHLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJPEIFMFPAN",
+            |m: &HOKCDEEABII| { &m.FJPEIFMFPAN },
+            |m: &mut HOKCDEEABII| { &mut m.FJPEIFMFPAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IDCJPIJHNCL",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for HOKCDEEABII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FJPEIFMFPAN = is.read_uint32()?;
-                },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNMADMBFEDB)?;
                 },
-                90 => {
+                66 => {
                     self.IEDKELDFHLP.push(is.read_message()?);
                 },
-                112 => {
+                72 => {
+                    self.FJPEIFMFPAN = is.read_uint32()?;
+                },
+                80 => {
                     self.IDCJPIJHNCL = is.read_uint32()?;
                 },
                 tag => {
@@ -117,9 +117,6 @@ impl ::protobuf::Message for HOKCDEEABII {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJPEIFMFPAN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FJPEIFMFPAN);
-        }
         if let Some(v) = self.KNMADMBFEDB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -128,8 +125,11 @@ impl ::protobuf::Message for HOKCDEEABII {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.FJPEIFMFPAN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FJPEIFMFPAN);
+        }
         if self.IDCJPIJHNCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IDCJPIJHNCL);
+            my_size += ::protobuf::rt::uint32_size(10, self.IDCJPIJHNCL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for HOKCDEEABII {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJPEIFMFPAN != 0 {
-            os.write_uint32(2, self.FJPEIFMFPAN)?;
-        }
         if let Some(v) = self.KNMADMBFEDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         for v in &self.IEDKELDFHLP {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
+        if self.FJPEIFMFPAN != 0 {
+            os.write_uint32(9, self.FJPEIFMFPAN)?;
+        }
         if self.IDCJPIJHNCL != 0 {
-            os.write_uint32(14, self.IDCJPIJHNCL)?;
+            os.write_uint32(10, self.IDCJPIJHNCL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for HOKCDEEABII {
     }
 
     fn clear(&mut self) {
-        self.FJPEIFMFPAN = 0;
         self.KNMADMBFEDB.clear();
         self.IEDKELDFHLP.clear();
+        self.FJPEIFMFPAN = 0;
         self.IDCJPIJHNCL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HOKCDEEABII {
         static instance: HOKCDEEABII = HOKCDEEABII {
-            FJPEIFMFPAN: 0,
             KNMADMBFEDB: ::protobuf::MessageField::none(),
             IEDKELDFHLP: ::std::vec::Vec::new(),
+            FJPEIFMFPAN: 0,
             IDCJPIJHNCL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for HOKCDEEABII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HOKCDEEABII.proto\x1a\x11CNLAOMCKFKD.proto\x1a\x11ECDINHEHKOJ.prot\
-    o\"\xb1\x01\n\x0bHOKCDEEABII\x12\x20\n\x0bFJPEIFMFPAN\x18\x02\x20\x01(\r\
-    R\x0bFJPEIFMFPAN\x12.\n\x0bKNMADMBFEDB\x18\n\x20\x01(\x0b2\x0c.ECDINHEHK\
-    OJR\x0bKNMADMBFEDB\x12.\n\x0bIEDKELDFHLP\x18\x0b\x20\x03(\x0b2\x0c.CNLAO\
-    MCKFKDR\x0bIEDKELDFHLP\x12\x20\n\x0bIDCJPIJHNCL\x18\x0e\x20\x01(\rR\x0bI\
-    DCJPIJHNCLb\x06proto3\
+    o\"\xb1\x01\n\x0bHOKCDEEABII\x12.\n\x0bKNMADMBFEDB\x18\x05\x20\x01(\x0b2\
+    \x0c.ECDINHEHKOJR\x0bKNMADMBFEDB\x12.\n\x0bIEDKELDFHLP\x18\x08\x20\x03(\
+    \x0b2\x0c.CNLAOMCKFKDR\x0bIEDKELDFHLP\x12\x20\n\x0bFJPEIFMFPAN\x18\t\x20\
+    \x01(\rR\x0bFJPEIFMFPAN\x12\x20\n\x0bIDCJPIJHNCL\x18\n\x20\x01(\rR\x0bID\
+    CJPIJHNCLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

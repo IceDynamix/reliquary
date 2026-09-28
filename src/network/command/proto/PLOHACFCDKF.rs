@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PLOHACFCDKF {
     // message fields
-    // @@protoc_insertion_point(field:PLOHACFCDKF.reward_list)
-    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PLOHACFCDKF.OCJKDCPANJM)
+    pub OCJKDCPANJM: u32,
     // @@protoc_insertion_point(field:PLOHACFCDKF.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:PLOHACFCDKF.MMMADINMHFB)
     pub MMMADINMHFB: u32,
-    // @@protoc_insertion_point(field:PLOHACFCDKF.OCJKDCPANJM)
-    pub OCJKDCPANJM: u32,
+    // @@protoc_insertion_point(field:PLOHACFCDKF.reward_list)
+    pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:PLOHACFCDKF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl PLOHACFCDKF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward_list",
-            |m: &PLOHACFCDKF| { &m.reward_list },
-            |m: &mut PLOHACFCDKF| { &mut m.reward_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OCJKDCPANJM",
+            |m: &PLOHACFCDKF| { &m.OCJKDCPANJM },
+            |m: &mut PLOHACFCDKF| { &mut m.OCJKDCPANJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -70,10 +70,10 @@ impl PLOHACFCDKF {
             |m: &PLOHACFCDKF| { &m.MMMADINMHFB },
             |m: &mut PLOHACFCDKF| { &mut m.MMMADINMHFB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCJKDCPANJM",
-            |m: &PLOHACFCDKF| { &m.OCJKDCPANJM },
-            |m: &mut PLOHACFCDKF| { &mut m.OCJKDCPANJM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward_list",
+            |m: &PLOHACFCDKF| { &m.reward_list },
+            |m: &mut PLOHACFCDKF| { &mut m.reward_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PLOHACFCDKF>(
             "PLOHACFCDKF",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PLOHACFCDKF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
+                24 => {
+                    self.OCJKDCPANJM = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.progress = is.read_uint32()?;
                 },
-                96 => {
+                48 => {
                     self.MMMADINMHFB = is.read_uint32()?;
                 },
-                112 => {
-                    self.OCJKDCPANJM = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for PLOHACFCDKF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OCJKDCPANJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.OCJKDCPANJM);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.progress);
+        }
+        if self.MMMADINMHFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MMMADINMHFB);
+        }
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.progress);
-        }
-        if self.MMMADINMHFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MMMADINMHFB);
-        }
-        if self.OCJKDCPANJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OCJKDCPANJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for PLOHACFCDKF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.OCJKDCPANJM != 0 {
+            os.write_uint32(3, self.OCJKDCPANJM)?;
         }
         if self.progress != 0 {
-            os.write_uint32(11, self.progress)?;
+            os.write_uint32(5, self.progress)?;
         }
         if self.MMMADINMHFB != 0 {
-            os.write_uint32(12, self.MMMADINMHFB)?;
+            os.write_uint32(6, self.MMMADINMHFB)?;
         }
-        if self.OCJKDCPANJM != 0 {
-            os.write_uint32(14, self.OCJKDCPANJM)?;
+        if let Some(v) = self.reward_list.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for PLOHACFCDKF {
     }
 
     fn clear(&mut self) {
-        self.reward_list.clear();
+        self.OCJKDCPANJM = 0;
         self.progress = 0;
         self.MMMADINMHFB = 0;
-        self.OCJKDCPANJM = 0;
+        self.reward_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PLOHACFCDKF {
         static instance: PLOHACFCDKF = PLOHACFCDKF {
-            reward_list: ::protobuf::MessageField::none(),
+            OCJKDCPANJM: 0,
             progress: 0,
             MMMADINMHFB: 0,
-            OCJKDCPANJM: 0,
+            reward_list: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for PLOHACFCDKF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLOHACFCDKF.proto\x1a\x0eItemList.proto\"\x99\x01\n\x0bPLOHACFCDKF\
-    \x12*\n\x0breward_list\x18\x05\x20\x01(\x0b2\t.ItemListR\nrewardList\x12\
-    \x1a\n\x08progress\x18\x0b\x20\x01(\rR\x08progress\x12\x20\n\x0bMMMADINM\
-    HFB\x18\x0c\x20\x01(\rR\x0bMMMADINMHFB\x12\x20\n\x0bOCJKDCPANJM\x18\x0e\
-    \x20\x01(\rR\x0bOCJKDCPANJMb\x06proto3\
+    \x12\x20\n\x0bOCJKDCPANJM\x18\x03\x20\x01(\rR\x0bOCJKDCPANJM\x12\x1a\n\
+    \x08progress\x18\x05\x20\x01(\rR\x08progress\x12\x20\n\x0bMMMADINMHFB\
+    \x18\x06\x20\x01(\rR\x0bMMMADINMHFB\x12*\n\x0breward_list\x18\t\x20\x01(\
+    \x0b2\t.ItemListR\nrewardListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

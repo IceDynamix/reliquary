@@ -86,10 +86,10 @@ impl ::protobuf::Message for GNFDPONFLJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
                 },
-                96 => {
+                104 => {
                     self.LIAGGDDILGO = is.read_int32()?;
                 },
                 114 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GNFDPONFLJD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JFIGNBBLCIM);
+            my_size += ::protobuf::rt::uint32_size(1, self.JFIGNBBLCIM);
         }
         if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(12, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::int32_size(13, self.LIAGGDDILGO);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -124,10 +124,10 @@ impl ::protobuf::Message for GNFDPONFLJD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(3, self.JFIGNBBLCIM)?;
+            os.write_uint32(1, self.JFIGNBBLCIM)?;
         }
         if self.LIAGGDDILGO != 0 {
-            os.write_int32(12, self.LIAGGDDILGO)?;
+            os.write_int32(13, self.LIAGGDDILGO)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GNFDPONFLJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNFDPONFLJD.proto\x1a\x12ItemCostData.proto\"}\n\x0bGNFDPONFLJD\
-    \x12\x20\n\x0bJFIGNBBLCIM\x18\x03\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\n\
-    \x0bLIAGGDDILGO\x18\x0c\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tcost_data\
-    \x18\x0e\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    \x12\x20\n\x0bJFIGNBBLCIM\x18\x01\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\n\
+    \x0bLIAGGDDILGO\x18\r\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tcost_data\x18\
+    \x0e\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

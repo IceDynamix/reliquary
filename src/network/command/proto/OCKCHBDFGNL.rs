@@ -79,10 +79,10 @@ impl ::protobuf::Message for OCKCHBDFGNL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.time = is.read_uint64()?;
                 },
-                106 => {
+                82 => {
                     self.HJMDNLBNPNA.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for OCKCHBDFGNL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.time != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.time);
+            my_size += ::protobuf::rt::uint64_size(2, self.time);
         }
         for value in &self.HJMDNLBNPNA {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for OCKCHBDFGNL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.time != 0 {
-            os.write_uint64(1, self.time)?;
+            os.write_uint64(2, self.time)?;
         }
         for v in &self.HJMDNLBNPNA {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for OCKCHBDFGNL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCKCHBDFGNL.proto\x1a\x11NKDNFDCFNCP.proto\"Q\n\x0bOCKCHBDFGNL\x12\
-    \x12\n\x04time\x18\x01\x20\x01(\x04R\x04time\x12.\n\x0bHJMDNLBNPNA\x18\r\
+    \x12\n\x04time\x18\x02\x20\x01(\x04R\x04time\x12.\n\x0bHJMDNLBNPNA\x18\n\
     \x20\x03(\x0b2\x0c.NKDNFDCFNCPR\x0bHJMDNLBNPNAb\x06proto3\
 ";
 

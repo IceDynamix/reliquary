@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FPDCINMDJCE {
     // message fields
-    // @@protoc_insertion_point(field:FPDCINMDJCE.remark_name)
-    pub remark_name: ::std::string::String,
     // @@protoc_insertion_point(field:FPDCINMDJCE.player_info)
     pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
+    // @@protoc_insertion_point(field:FPDCINMDJCE.remark_name)
+    pub remark_name: ::std::string::String,
     // message oneof groups
     pub KJFEKHDEBIK: ::std::option::Option<fpdcinmdjce::KJFEKHDEBIK>,
     // special fields
@@ -50,56 +50,7 @@ impl FPDCINMDJCE {
         ::std::default::Default::default()
     }
 
-    // .FriendChallengeLineup NHMOPCHJEHN = 9;
-
-    pub fn NHMOPCHJEHN(&self) -> &super::FriendChallengeLineup::FriendChallengeLineup {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v)) => v,
-            _ => <super::FriendChallengeLineup::FriendChallengeLineup as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NHMOPCHJEHN(&mut self) {
-        self.KJFEKHDEBIK = ::std::option::Option::None;
-    }
-
-    pub fn has_NHMOPCHJEHN(&self) -> bool {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NHMOPCHJEHN(&mut self, v: super::FriendChallengeLineup::FriendChallengeLineup) {
-        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NHMOPCHJEHN(&mut self) -> &mut super::FriendChallengeLineup::FriendChallengeLineup {
-        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(_)) = self.KJFEKHDEBIK {
-        } else {
-            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(super::FriendChallengeLineup::FriendChallengeLineup::new()));
-        }
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NHMOPCHJEHN(&mut self) -> super::FriendChallengeLineup::FriendChallengeLineup {
-        if self.has_NHMOPCHJEHN() {
-            match self.KJFEKHDEBIK.take() {
-                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::FriendChallengeLineup::FriendChallengeLineup::new()
-        }
-    }
-
-    // .CJNDCNIJBEI BNAFKMMLGFE = 8;
+    // .CJNDCNIJBEI BNAFKMMLGFE = 4;
 
     pub fn BNAFKMMLGFE(&self) -> &super::CJNDCNIJBEI::CJNDCNIJBEI {
         match self.KJFEKHDEBIK {
@@ -148,105 +99,7 @@ impl FPDCINMDJCE {
         }
     }
 
-    // .MJMGDLJAJCM LMHIOKFMDNE = 11;
-
-    pub fn LMHIOKFMDNE(&self) -> &super::MJMGDLJAJCM::MJMGDLJAJCM {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref v)) => v,
-            _ => <super::MJMGDLJAJCM::MJMGDLJAJCM as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LMHIOKFMDNE(&mut self) {
-        self.KJFEKHDEBIK = ::std::option::Option::None;
-    }
-
-    pub fn has_LMHIOKFMDNE(&self) -> bool {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LMHIOKFMDNE(&mut self, v: super::MJMGDLJAJCM::MJMGDLJAJCM) {
-        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LMHIOKFMDNE(&mut self) -> &mut super::MJMGDLJAJCM::MJMGDLJAJCM {
-        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(_)) = self.KJFEKHDEBIK {
-        } else {
-            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(super::MJMGDLJAJCM::MJMGDLJAJCM::new()));
-        }
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LMHIOKFMDNE(&mut self) -> super::MJMGDLJAJCM::MJMGDLJAJCM {
-        if self.has_LMHIOKFMDNE() {
-            match self.KJFEKHDEBIK.take() {
-                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::MJMGDLJAJCM::MJMGDLJAJCM::new()
-        }
-    }
-
-    // .ChallengePeakBossFriendLineupRecommendation KCNAHJCMNJI = 5;
-
-    pub fn KCNAHJCMNJI(&self) -> &super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref v)) => v,
-            _ => <super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_KCNAHJCMNJI(&mut self) {
-        self.KJFEKHDEBIK = ::std::option::Option::None;
-    }
-
-    pub fn has_KCNAHJCMNJI(&self) -> bool {
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KCNAHJCMNJI(&mut self, v: super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation) {
-        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_KCNAHJCMNJI(&mut self) -> &mut super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
-        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(_)) = self.KJFEKHDEBIK {
-        } else {
-            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation::new()));
-        }
-        match self.KJFEKHDEBIK {
-            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_KCNAHJCMNJI(&mut self) -> super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
-        if self.has_KCNAHJCMNJI() {
-            match self.KJFEKHDEBIK.take() {
-                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation::new()
-        }
-    }
-
-    // .OJJJDPNOKHG NHKCFOALAPD = 6;
+    // .OJJJDPNOKHG NHKCFOALAPD = 7;
 
     pub fn NHKCFOALAPD(&self) -> &super::OJJJDPNOKHG::OJJJDPNOKHG {
         match self.KJFEKHDEBIK {
@@ -295,7 +148,154 @@ impl FPDCINMDJCE {
         }
     }
 
-    // .OFFMDBMMNFM KPPDEMBPEDO = 1731;
+    // .FriendChallengeLineup NHMOPCHJEHN = 11;
+
+    pub fn NHMOPCHJEHN(&self) -> &super::FriendChallengeLineup::FriendChallengeLineup {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v)) => v,
+            _ => <super::FriendChallengeLineup::FriendChallengeLineup as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NHMOPCHJEHN(&mut self) {
+        self.KJFEKHDEBIK = ::std::option::Option::None;
+    }
+
+    pub fn has_NHMOPCHJEHN(&self) -> bool {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NHMOPCHJEHN(&mut self, v: super::FriendChallengeLineup::FriendChallengeLineup) {
+        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NHMOPCHJEHN(&mut self) -> &mut super::FriendChallengeLineup::FriendChallengeLineup {
+        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(_)) = self.KJFEKHDEBIK {
+        } else {
+            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(super::FriendChallengeLineup::FriendChallengeLineup::new()));
+        }
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NHMOPCHJEHN(&mut self) -> super::FriendChallengeLineup::FriendChallengeLineup {
+        if self.has_NHMOPCHJEHN() {
+            match self.KJFEKHDEBIK.take() {
+                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::FriendChallengeLineup::FriendChallengeLineup::new()
+        }
+    }
+
+    // .MJMGDLJAJCM LMHIOKFMDNE = 12;
+
+    pub fn LMHIOKFMDNE(&self) -> &super::MJMGDLJAJCM::MJMGDLJAJCM {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref v)) => v,
+            _ => <super::MJMGDLJAJCM::MJMGDLJAJCM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LMHIOKFMDNE(&mut self) {
+        self.KJFEKHDEBIK = ::std::option::Option::None;
+    }
+
+    pub fn has_LMHIOKFMDNE(&self) -> bool {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LMHIOKFMDNE(&mut self, v: super::MJMGDLJAJCM::MJMGDLJAJCM) {
+        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LMHIOKFMDNE(&mut self) -> &mut super::MJMGDLJAJCM::MJMGDLJAJCM {
+        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(_)) = self.KJFEKHDEBIK {
+        } else {
+            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(super::MJMGDLJAJCM::MJMGDLJAJCM::new()));
+        }
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LMHIOKFMDNE(&mut self) -> super::MJMGDLJAJCM::MJMGDLJAJCM {
+        if self.has_LMHIOKFMDNE() {
+            match self.KJFEKHDEBIK.take() {
+                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::MJMGDLJAJCM::MJMGDLJAJCM::new()
+        }
+    }
+
+    // .ChallengePeakBossFriendLineupRecommendation KCNAHJCMNJI = 14;
+
+    pub fn KCNAHJCMNJI(&self) -> &super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref v)) => v,
+            _ => <super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KCNAHJCMNJI(&mut self) {
+        self.KJFEKHDEBIK = ::std::option::Option::None;
+    }
+
+    pub fn has_KCNAHJCMNJI(&self) -> bool {
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KCNAHJCMNJI(&mut self, v: super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation) {
+        self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KCNAHJCMNJI(&mut self) -> &mut super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
+        if let ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(_)) = self.KJFEKHDEBIK {
+        } else {
+            self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation::new()));
+        }
+        match self.KJFEKHDEBIK {
+            ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KCNAHJCMNJI(&mut self) -> super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation {
+        if self.has_KCNAHJCMNJI() {
+            match self.KJFEKHDEBIK.take() {
+                ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation::new()
+        }
+    }
+
+    // .OFFMDBMMNFM KPPDEMBPEDO = 823;
 
     pub fn KPPDEMBPEDO(&self) -> &super::OFFMDBMMNFM::OFFMDBMMNFM {
         match self.KJFEKHDEBIK {
@@ -347,22 +347,15 @@ impl FPDCINMDJCE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &FPDCINMDJCE| { &m.remark_name },
-            |m: &mut FPDCINMDJCE| { &mut m.remark_name },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
             "player_info",
             |m: &FPDCINMDJCE| { &m.player_info },
             |m: &mut FPDCINMDJCE| { &mut m.player_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FriendChallengeLineup::FriendChallengeLineup>(
-            "NHMOPCHJEHN",
-            FPDCINMDJCE::has_NHMOPCHJEHN,
-            FPDCINMDJCE::NHMOPCHJEHN,
-            FPDCINMDJCE::mut_NHMOPCHJEHN,
-            FPDCINMDJCE::set_NHMOPCHJEHN,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &FPDCINMDJCE| { &m.remark_name },
+            |m: &mut FPDCINMDJCE| { &mut m.remark_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CJNDCNIJBEI::CJNDCNIJBEI>(
             "BNAFKMMLGFE",
@@ -370,6 +363,20 @@ impl FPDCINMDJCE {
             FPDCINMDJCE::BNAFKMMLGFE,
             FPDCINMDJCE::mut_BNAFKMMLGFE,
             FPDCINMDJCE::set_BNAFKMMLGFE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OJJJDPNOKHG::OJJJDPNOKHG>(
+            "NHKCFOALAPD",
+            FPDCINMDJCE::has_NHKCFOALAPD,
+            FPDCINMDJCE::NHKCFOALAPD,
+            FPDCINMDJCE::mut_NHKCFOALAPD,
+            FPDCINMDJCE::set_NHKCFOALAPD,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FriendChallengeLineup::FriendChallengeLineup>(
+            "NHMOPCHJEHN",
+            FPDCINMDJCE::has_NHMOPCHJEHN,
+            FPDCINMDJCE::NHMOPCHJEHN,
+            FPDCINMDJCE::mut_NHMOPCHJEHN,
+            FPDCINMDJCE::set_NHMOPCHJEHN,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MJMGDLJAJCM::MJMGDLJAJCM>(
             "LMHIOKFMDNE",
@@ -384,13 +391,6 @@ impl FPDCINMDJCE {
             FPDCINMDJCE::KCNAHJCMNJI,
             FPDCINMDJCE::mut_KCNAHJCMNJI,
             FPDCINMDJCE::set_KCNAHJCMNJI,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OJJJDPNOKHG::OJJJDPNOKHG>(
-            "NHKCFOALAPD",
-            FPDCINMDJCE::has_NHKCFOALAPD,
-            FPDCINMDJCE::NHKCFOALAPD,
-            FPDCINMDJCE::mut_NHKCFOALAPD,
-            FPDCINMDJCE::set_NHKCFOALAPD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OFFMDBMMNFM::OFFMDBMMNFM>(
             "KPPDEMBPEDO",
@@ -418,28 +418,28 @@ impl ::protobuf::Message for FPDCINMDJCE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.remark_name = is.read_string()?;
-                },
-                114 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
-                74 => {
-                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(is.read_message()?));
+                122 => {
+                    self.remark_name = is.read_string()?;
                 },
-                66 => {
+                34 => {
                     self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::BNAFKMMLGFE(is.read_message()?));
                 },
-                90 => {
-                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(is.read_message()?));
-                },
-                42 => {
-                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(is.read_message()?));
-                },
-                50 => {
+                58 => {
                     self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHKCFOALAPD(is.read_message()?));
                 },
-                13850 => {
+                90 => {
+                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(is.read_message()?));
+                },
+                98 => {
+                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(is.read_message()?));
+                },
+                114 => {
+                    self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(is.read_message()?));
+                },
+                6586 => {
                     self.KJFEKHDEBIK = ::std::option::Option::Some(fpdcinmdjce::KJFEKHDEBIK::KPPDEMBPEDO(is.read_message()?));
                 },
                 tag => {
@@ -454,20 +454,24 @@ impl ::protobuf::Message for FPDCINMDJCE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.remark_name);
-        }
         if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if !self.remark_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.remark_name);
+        }
         if let ::std::option::Option::Some(ref v) = self.KJFEKHDEBIK {
             match v {
-                &fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v) => {
+                &fpdcinmdjce::KJFEKHDEBIK::BNAFKMMLGFE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &fpdcinmdjce::KJFEKHDEBIK::BNAFKMMLGFE(ref v) => {
+                &fpdcinmdjce::KJFEKHDEBIK::NHKCFOALAPD(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -476,10 +480,6 @@ impl ::protobuf::Message for FPDCINMDJCE {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &fpdcinmdjce::KJFEKHDEBIK::NHKCFOALAPD(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -495,31 +495,31 @@ impl ::protobuf::Message for FPDCINMDJCE {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.remark_name.is_empty() {
-            os.write_string(12, &self.remark_name)?;
-        }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if !self.remark_name.is_empty() {
+            os.write_string(15, &self.remark_name)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KJFEKHDEBIK {
             match v {
-                &fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-                },
                 &fpdcinmdjce::KJFEKHDEBIK::BNAFKMMLGFE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-                },
-                &fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
                 &fpdcinmdjce::KJFEKHDEBIK::NHKCFOALAPD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
+                &fpdcinmdjce::KJFEKHDEBIK::NHMOPCHJEHN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                },
+                &fpdcinmdjce::KJFEKHDEBIK::LMHIOKFMDNE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                },
+                &fpdcinmdjce::KJFEKHDEBIK::KCNAHJCMNJI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &fpdcinmdjce::KJFEKHDEBIK::KPPDEMBPEDO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1731, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(823, v, os)?;
                 },
             };
         }
@@ -540,8 +540,8 @@ impl ::protobuf::Message for FPDCINMDJCE {
     }
 
     fn clear(&mut self) {
-        self.remark_name.clear();
         self.player_info.clear();
+        self.remark_name.clear();
         self.KJFEKHDEBIK = ::std::option::Option::None;
         self.KJFEKHDEBIK = ::std::option::Option::None;
         self.KJFEKHDEBIK = ::std::option::Option::None;
@@ -553,8 +553,8 @@ impl ::protobuf::Message for FPDCINMDJCE {
 
     fn default_instance() -> &'static FPDCINMDJCE {
         static instance: FPDCINMDJCE = FPDCINMDJCE {
-            remark_name: ::std::string::String::new(),
             player_info: ::protobuf::MessageField::none(),
+            remark_name: ::std::string::String::new(),
             KJFEKHDEBIK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -586,16 +586,16 @@ pub mod fpdcinmdjce {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FPDCINMDJCE.KJFEKHDEBIK)
     pub enum KJFEKHDEBIK {
-        // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.NHMOPCHJEHN)
-        NHMOPCHJEHN(super::super::FriendChallengeLineup::FriendChallengeLineup),
         // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.BNAFKMMLGFE)
         BNAFKMMLGFE(super::super::CJNDCNIJBEI::CJNDCNIJBEI),
+        // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.NHKCFOALAPD)
+        NHKCFOALAPD(super::super::OJJJDPNOKHG::OJJJDPNOKHG),
+        // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.NHMOPCHJEHN)
+        NHMOPCHJEHN(super::super::FriendChallengeLineup::FriendChallengeLineup),
         // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.LMHIOKFMDNE)
         LMHIOKFMDNE(super::super::MJMGDLJAJCM::MJMGDLJAJCM),
         // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.KCNAHJCMNJI)
         KCNAHJCMNJI(super::super::ChallengePeakBossFriendLineupRecommendation::ChallengePeakBossFriendLineupRecommendation),
-        // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.NHKCFOALAPD)
-        NHKCFOALAPD(super::super::OJJJDPNOKHG::OJJJDPNOKHG),
         // @@protoc_insertion_point(oneof_field:FPDCINMDJCE.KPPDEMBPEDO)
         KPPDEMBPEDO(super::super::OFFMDBMMNFM::OFFMDBMMNFM),
     }
@@ -621,17 +621,17 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FPDCINMDJCE.proto\x1a\x11CJNDCNIJBEI.proto\x1a1ChallengePeakBossFr\
     iendLineupRecommendation.proto\x1a\x1bFriendChallengeLineup.proto\x1a\
     \x11MJMGDLJAJCM.proto\x1a\x11OFFMDBMMNFM.proto\x1a\x11OJJJDPNOKHG.proto\
-    \x1a\x16PlayerSimpleInfo.proto\"\xc8\x03\n\x0bFPDCINMDJCE\x12\x1f\n\x0br\
-    emark_name\x18\x0c\x20\x01(\tR\nremarkName\x122\n\x0bplayer_info\x18\x0e\
-    \x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfo\x12:\n\x0bNHMOPCHJEHN\
-    \x18\t\x20\x01(\x0b2\x16.FriendChallengeLineupH\0R\x0bNHMOPCHJEHN\x120\n\
-    \x0bBNAFKMMLGFE\x18\x08\x20\x01(\x0b2\x0c.CJNDCNIJBEIH\0R\x0bBNAFKMMLGFE\
-    \x120\n\x0bLMHIOKFMDNE\x18\x0b\x20\x01(\x0b2\x0c.MJMGDLJAJCMH\0R\x0bLMHI\
-    OKFMDNE\x12P\n\x0bKCNAHJCMNJI\x18\x05\x20\x01(\x0b2,.ChallengePeakBossFr\
-    iendLineupRecommendationH\0R\x0bKCNAHJCMNJI\x120\n\x0bNHKCFOALAPD\x18\
-    \x06\x20\x01(\x0b2\x0c.OJJJDPNOKHGH\0R\x0bNHKCFOALAPD\x121\n\x0bKPPDEMBP\
-    EDO\x18\xc3\r\x20\x01(\x0b2\x0c.OFFMDBMMNFMH\0R\x0bKPPDEMBPEDOB\r\n\x0bK\
-    JFEKHDEBIKb\x06proto3\
+    \x1a\x16PlayerSimpleInfo.proto\"\xc8\x03\n\x0bFPDCINMDJCE\x122\n\x0bplay\
+    er_info\x18\x03\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfo\x12\x1f\
+    \n\x0bremark_name\x18\x0f\x20\x01(\tR\nremarkName\x120\n\x0bBNAFKMMLGFE\
+    \x18\x04\x20\x01(\x0b2\x0c.CJNDCNIJBEIH\0R\x0bBNAFKMMLGFE\x120\n\x0bNHKC\
+    FOALAPD\x18\x07\x20\x01(\x0b2\x0c.OJJJDPNOKHGH\0R\x0bNHKCFOALAPD\x12:\n\
+    \x0bNHMOPCHJEHN\x18\x0b\x20\x01(\x0b2\x16.FriendChallengeLineupH\0R\x0bN\
+    HMOPCHJEHN\x120\n\x0bLMHIOKFMDNE\x18\x0c\x20\x01(\x0b2\x0c.MJMGDLJAJCMH\
+    \0R\x0bLMHIOKFMDNE\x12P\n\x0bKCNAHJCMNJI\x18\x0e\x20\x01(\x0b2,.Challeng\
+    ePeakBossFriendLineupRecommendationH\0R\x0bKCNAHJCMNJI\x121\n\x0bKPPDEMB\
+    PEDO\x18\xb7\x06\x20\x01(\x0b2\x0c.OFFMDBMMNFMH\0R\x0bKPPDEMBPEDOB\r\n\
+    \x0bKJFEKHDEBIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

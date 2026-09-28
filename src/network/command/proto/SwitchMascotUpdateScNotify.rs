@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                24 => {
                     self.EBLPGLFJNEL = is.read_bool()?;
                 },
-                106 => {
+                98 => {
                     self.JNOEHPJJPOF.push(is.read_message()?);
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SwitchMascotUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EBLPGLFJNEL != false {
-            os.write_bool(7, self.EBLPGLFJNEL)?;
+            os.write_bool(3, self.EBLPGLFJNEL)?;
         }
         for v in &self.JNOEHPJJPOF {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SwitchMascotUpdateScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SwitchMascotUpdateScNotify.proto\x1a\x11BKAHEDAHNHL.proto\"n\n\x1a\
-    SwitchMascotUpdateScNotify\x12\x20\n\x0bEBLPGLFJNEL\x18\x07\x20\x01(\x08\
-    R\x0bEBLPGLFJNEL\x12.\n\x0bJNOEHPJJPOF\x18\r\x20\x03(\x0b2\x0c.BKAHEDAHN\
-    HLR\x0bJNOEHPJJPOFb\x06proto3\
+    SwitchMascotUpdateScNotify\x12\x20\n\x0bEBLPGLFJNEL\x18\x03\x20\x01(\x08\
+    R\x0bEBLPGLFJNEL\x12.\n\x0bJNOEHPJJPOF\x18\x0c\x20\x03(\x0b2\x0c.BKAHEDA\
+    HNHLR\x0bJNOEHPJJPOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -50,7 +50,7 @@ impl ChimeraDuelShopLockScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 NDJGKJMPPHJ = 12;
+    // uint32 NDJGKJMPPHJ = 4;
 
     pub fn NDJGKJMPPHJ(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -75,7 +75,7 @@ impl ChimeraDuelShopLockScRsp {
         self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v))
     }
 
-    // uint32 AGBAIFPNKII = 14;
+    // uint32 AGBAIFPNKII = 5;
 
     pub fn AGBAIFPNKII(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -147,13 +147,13 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.is_locked = is.read_bool()?;
                 },
-                96 => {
+                32 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(is.read_uint32()?));
                 },
-                112 => {
+                40 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(is.read_uint32()?));
                 },
                 tag => {
@@ -177,10 +177,10 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(4, v);
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    my_size += ::protobuf::rt::uint32_size(14, v);
+                    my_size += ::protobuf::rt::uint32_size(5, v);
                 },
             };
         }
@@ -194,15 +194,15 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         if self.is_locked != false {
-            os.write_bool(7, self.is_locked)?;
+            os.write_bool(15, self.is_locked)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::NDJGKJMPPHJ(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(4, v)?;
                 },
                 &chimera_duel_shop_lock_sc_rsp::KKNBOACNCON::AGBAIFPNKII(v) => {
-                    os.write_uint32(14, v)?;
+                    os.write_uint32(5, v)?;
                 },
             };
         }
@@ -291,8 +291,8 @@ pub mod chimera_duel_shop_lock_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDuelShopLockScRsp.proto\"\xa8\x01\n\x18ChimeraDuelShopLockS\
     cRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x1b\n\tis_l\
-    ocked\x18\x07\x20\x01(\x08R\x08isLocked\x12\"\n\x0bNDJGKJMPPHJ\x18\x0c\
-    \x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x0e\x20\x01(\r\
+    ocked\x18\x0f\x20\x01(\x08R\x08isLocked\x12\"\n\x0bNDJGKJMPPHJ\x18\x04\
+    \x20\x01(\rH\0R\x0bNDJGKJMPPHJ\x12\"\n\x0bAGBAIFPNKII\x18\x05\x20\x01(\r\
     H\0R\x0bAGBAIFPNKIIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 

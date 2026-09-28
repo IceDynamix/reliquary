@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ONPOFJPEBMJ {
     // message fields
-    // @@protoc_insertion_point(field:ONPOFJPEBMJ.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
-    // @@protoc_insertion_point(field:ONPOFJPEBMJ.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::FKNGOGLNKIG::FKNGOGLNKIG>,
-    // @@protoc_insertion_point(field:ONPOFJPEBMJ.KENPENNAGLG)
-    pub KENPENNAGLG: bool,
     // @@protoc_insertion_point(field:ONPOFJPEBMJ.EJDMOENBHDP)
     pub EJDMOENBHDP: bool,
     // @@protoc_insertion_point(field:ONPOFJPEBMJ.BJHMFOAGMBF)
     pub BJHMFOAGMBF: u32,
+    // @@protoc_insertion_point(field:ONPOFJPEBMJ.KENPENNAGLG)
+    pub KENPENNAGLG: bool,
+    // @@protoc_insertion_point(field:ONPOFJPEBMJ.status)
+    pub status: ::protobuf::EnumOrUnknown<super::RogueTournLevelStatus::RogueTournLevelStatus>,
+    // @@protoc_insertion_point(field:ONPOFJPEBMJ.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::FKNGOGLNKIG::FKNGOGLNKIG>,
     // @@protoc_insertion_point(field:ONPOFJPEBMJ.NNFFPJOLDHK)
     pub NNFFPJOLDHK: ::std::vec::Vec<super::IJNFOHJGPBC::IJNFOHJGPBC>,
     // message oneof groups
@@ -58,7 +58,7 @@ impl ONPOFJPEBMJ {
         ::std::default::Default::default()
     }
 
-    // .CFOIFHEBCJC FIADMEPDAOG = 9;
+    // .CFOIFHEBCJC FIADMEPDAOG = 13;
 
     pub fn FIADMEPDAOG(&self) -> &super::CFOIFHEBCJC::CFOIFHEBCJC {
         match self.BHGKHELCPGO {
@@ -111,21 +111,6 @@ impl ONPOFJPEBMJ {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &ONPOFJPEBMJ| { &m.status },
-            |m: &mut ONPOFJPEBMJ| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &ONPOFJPEBMJ| { &m.reason },
-            |m: &mut ONPOFJPEBMJ| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KENPENNAGLG",
-            |m: &ONPOFJPEBMJ| { &m.KENPENNAGLG },
-            |m: &mut ONPOFJPEBMJ| { &mut m.KENPENNAGLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EJDMOENBHDP",
             |m: &ONPOFJPEBMJ| { &m.EJDMOENBHDP },
             |m: &mut ONPOFJPEBMJ| { &mut m.EJDMOENBHDP },
@@ -134,6 +119,21 @@ impl ONPOFJPEBMJ {
             "BJHMFOAGMBF",
             |m: &ONPOFJPEBMJ| { &m.BJHMFOAGMBF },
             |m: &mut ONPOFJPEBMJ| { &mut m.BJHMFOAGMBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KENPENNAGLG",
+            |m: &ONPOFJPEBMJ| { &m.KENPENNAGLG },
+            |m: &mut ONPOFJPEBMJ| { &mut m.KENPENNAGLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &ONPOFJPEBMJ| { &m.status },
+            |m: &mut ONPOFJPEBMJ| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &ONPOFJPEBMJ| { &m.reason },
+            |m: &mut ONPOFJPEBMJ| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NNFFPJOLDHK",
@@ -166,25 +166,25 @@ impl ::protobuf::Message for ONPOFJPEBMJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
-                80 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                88 => {
-                    self.KENPENNAGLG = is.read_bool()?;
-                },
-                104 => {
+                32 => {
                     self.EJDMOENBHDP = is.read_bool()?;
                 },
-                112 => {
+                64 => {
                     self.BJHMFOAGMBF = is.read_uint32()?;
                 },
-                122 => {
+                80 => {
+                    self.KENPENNAGLG = is.read_bool()?;
+                },
+                88 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.reason = is.read_enum_or_unknown()?;
+                },
+                114 => {
                     self.NNFFPJOLDHK.push(is.read_message()?);
                 },
-                74 => {
+                106 => {
                     self.BHGKHELCPGO = ::std::option::Option::Some(onpofjpebmj::BHGKHELCPGO::FIADMEPDAOG(is.read_message()?));
                 },
                 tag => {
@@ -199,20 +199,20 @@ impl ::protobuf::Message for ONPOFJPEBMJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.status.value());
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(10, self.reason.value());
-        }
-        if self.KENPENNAGLG != false {
-            my_size += 1 + 1;
-        }
         if self.EJDMOENBHDP != false {
             my_size += 1 + 1;
         }
         if self.BJHMFOAGMBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.BJHMFOAGMBF);
+            my_size += ::protobuf::rt::uint32_size(8, self.BJHMFOAGMBF);
+        }
+        if self.KENPENNAGLG != false {
+            my_size += 1 + 1;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.reason.value());
         }
         for value in &self.NNFFPJOLDHK {
             let len = value.compute_size();
@@ -232,28 +232,28 @@ impl ::protobuf::Message for ONPOFJPEBMJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.KENPENNAGLG != false {
-            os.write_bool(11, self.KENPENNAGLG)?;
-        }
         if self.EJDMOENBHDP != false {
-            os.write_bool(13, self.EJDMOENBHDP)?;
+            os.write_bool(4, self.EJDMOENBHDP)?;
         }
         if self.BJHMFOAGMBF != 0 {
-            os.write_uint32(14, self.BJHMFOAGMBF)?;
+            os.write_uint32(8, self.BJHMFOAGMBF)?;
+        }
+        if self.KENPENNAGLG != false {
+            os.write_bool(10, self.KENPENNAGLG)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         for v in &self.NNFFPJOLDHK {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if let ::std::option::Option::Some(ref v) = self.BHGKHELCPGO {
             match v {
                 &onpofjpebmj::BHGKHELCPGO::FIADMEPDAOG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -274,11 +274,11 @@ impl ::protobuf::Message for ONPOFJPEBMJ {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None);
-        self.reason = ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ);
-        self.KENPENNAGLG = false;
         self.EJDMOENBHDP = false;
         self.BJHMFOAGMBF = 0;
+        self.KENPENNAGLG = false;
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueTournLevelStatus::RogueTournLevelStatus::RogueTournLevelStatus_None);
+        self.reason = ::protobuf::EnumOrUnknown::new(super::FKNGOGLNKIG::FKNGOGLNKIG::FKNGOGLNKIG_NLCDGIPGFDJ);
         self.NNFFPJOLDHK.clear();
         self.BHGKHELCPGO = ::std::option::Option::None;
         self.special_fields.clear();
@@ -286,11 +286,11 @@ impl ::protobuf::Message for ONPOFJPEBMJ {
 
     fn default_instance() -> &'static ONPOFJPEBMJ {
         static instance: ONPOFJPEBMJ = ONPOFJPEBMJ {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            KENPENNAGLG: false,
             EJDMOENBHDP: false,
             BJHMFOAGMBF: 0,
+            KENPENNAGLG: false,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             NNFFPJOLDHK: ::std::vec::Vec::new(),
             BHGKHELCPGO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -347,14 +347,14 @@ pub mod onpofjpebmj {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONPOFJPEBMJ.proto\x1a\x11CFOIFHEBCJC.proto\x1a\x11FKNGOGLNKIG.prot\
     o\x1a\x11IJNFOHJGPBC.proto\x1a\x1bRogueTournLevelStatus.proto\"\xba\x02\
-    \n\x0bONPOFJPEBMJ\x12.\n\x06status\x18\x01\x20\x01(\x0e2\x16.RogueTournL\
-    evelStatusR\x06status\x12$\n\x06reason\x18\n\x20\x01(\x0e2\x0c.FKNGOGLNK\
-    IGR\x06reason\x12\x20\n\x0bKENPENNAGLG\x18\x0b\x20\x01(\x08R\x0bKENPENNA\
-    GLG\x12\x20\n\x0bEJDMOENBHDP\x18\r\x20\x01(\x08R\x0bEJDMOENBHDP\x12\x20\
-    \n\x0bBJHMFOAGMBF\x18\x0e\x20\x01(\rR\x0bBJHMFOAGMBF\x12.\n\x0bNNFFPJOLD\
-    HK\x18\x0f\x20\x03(\x0b2\x0c.IJNFOHJGPBCR\x0bNNFFPJOLDHK\x120\n\x0bFIADM\
-    EPDAOG\x18\t\x20\x01(\x0b2\x0c.CFOIFHEBCJCH\0R\x0bFIADMEPDAOGB\r\n\x0bBH\
-    GKHELCPGOb\x06proto3\
+    \n\x0bONPOFJPEBMJ\x12\x20\n\x0bEJDMOENBHDP\x18\x04\x20\x01(\x08R\x0bEJDM\
+    OENBHDP\x12\x20\n\x0bBJHMFOAGMBF\x18\x08\x20\x01(\rR\x0bBJHMFOAGMBF\x12\
+    \x20\n\x0bKENPENNAGLG\x18\n\x20\x01(\x08R\x0bKENPENNAGLG\x12.\n\x06statu\
+    s\x18\x0b\x20\x01(\x0e2\x16.RogueTournLevelStatusR\x06status\x12$\n\x06r\
+    eason\x18\x0c\x20\x01(\x0e2\x0c.FKNGOGLNKIGR\x06reason\x12.\n\x0bNNFFPJO\
+    LDHK\x18\x0e\x20\x03(\x0b2\x0c.IJNFOHJGPBCR\x0bNNFFPJOLDHK\x120\n\x0bFIA\
+    DMEPDAOG\x18\r\x20\x01(\x0b2\x0c.CFOIFHEBCJCH\0R\x0bFIADMEPDAOGB\r\n\x0b\
+    BHGKHELCPGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

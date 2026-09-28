@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LMDPKOELKFL {
     // message fields
-    // @@protoc_insertion_point(field:LMDPKOELKFL.ABFCDBOCMCF)
-    pub ABFCDBOCMCF: bool,
     // @@protoc_insertion_point(field:LMDPKOELKFL.return_item_list)
     pub return_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:LMDPKOELKFL.ABFCDBOCMCF)
+    pub ABFCDBOCMCF: bool,
     // @@protoc_insertion_point(field:LMDPKOELKFL.relic_ids)
     pub relic_ids: ::std::vec::Vec<u32>,
     // special fields
@@ -53,15 +53,15 @@ impl LMDPKOELKFL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABFCDBOCMCF",
-            |m: &LMDPKOELKFL| { &m.ABFCDBOCMCF },
-            |m: &mut LMDPKOELKFL| { &mut m.ABFCDBOCMCF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "return_item_list",
             |m: &LMDPKOELKFL| { &m.return_item_list },
             |m: &mut LMDPKOELKFL| { &mut m.return_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABFCDBOCMCF",
+            |m: &LMDPKOELKFL| { &m.ABFCDBOCMCF },
+            |m: &mut LMDPKOELKFL| { &mut m.ABFCDBOCMCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for LMDPKOELKFL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.ABFCDBOCMCF = is.read_bool()?;
-                },
-                90 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.return_item_list)?;
                 },
-                114 => {
+                24 => {
+                    self.ABFCDBOCMCF = is.read_bool()?;
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                112 => {
+                104 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
                 tag => {
@@ -110,27 +110,27 @@ impl ::protobuf::Message for LMDPKOELKFL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABFCDBOCMCF != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.return_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.relic_ids);
+        if self.ABFCDBOCMCF != false {
+            my_size += 1 + 1;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.relic_ids);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABFCDBOCMCF != false {
-            os.write_bool(10, self.ABFCDBOCMCF)?;
-        }
         if let Some(v) = self.return_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.relic_ids)?;
+        if self.ABFCDBOCMCF != false {
+            os.write_bool(3, self.ABFCDBOCMCF)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.relic_ids)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -148,16 +148,16 @@ impl ::protobuf::Message for LMDPKOELKFL {
     }
 
     fn clear(&mut self) {
-        self.ABFCDBOCMCF = false;
         self.return_item_list.clear();
+        self.ABFCDBOCMCF = false;
         self.relic_ids.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMDPKOELKFL {
         static instance: LMDPKOELKFL = LMDPKOELKFL {
-            ABFCDBOCMCF: false,
             return_item_list: ::protobuf::MessageField::none(),
+            ABFCDBOCMCF: false,
             relic_ids: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for LMDPKOELKFL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMDPKOELKFL.proto\x1a\x0eItemList.proto\"\x81\x01\n\x0bLMDPKOELKFL\
-    \x12\x20\n\x0bABFCDBOCMCF\x18\n\x20\x01(\x08R\x0bABFCDBOCMCF\x123\n\x10r\
-    eturn_item_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x0ereturnItemList\x12\
-    \x1b\n\trelic_ids\x18\x0e\x20\x03(\rR\x08relicIdsb\x06proto3\
+    \x123\n\x10return_item_list\x18\x02\x20\x01(\x0b2\t.ItemListR\x0ereturnI\
+    temList\x12\x20\n\x0bABFCDBOCMCF\x18\x03\x20\x01(\x08R\x0bABFCDBOCMCF\
+    \x12\x1b\n\trelic_ids\x18\r\x20\x03(\rR\x08relicIdsb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

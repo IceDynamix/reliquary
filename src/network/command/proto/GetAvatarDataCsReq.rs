@@ -79,13 +79,13 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.MGHNIADPNPL = is.read_bool()?;
                 },
-                106 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                104 => {
+                96 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
         if self.MGHNIADPNPL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NOEPBNMJFGL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.NOEPBNMJFGL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for GetAvatarDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MGHNIADPNPL != false {
-            os.write_bool(10, self.MGHNIADPNPL)?;
+            os.write_bool(8, self.MGHNIADPNPL)?;
         }
-        os.write_repeated_packed_uint32(13, &self.NOEPBNMJFGL)?;
+        os.write_repeated_packed_uint32(12, &self.NOEPBNMJFGL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GetAvatarDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GetAvatarDataCsReq.proto\"X\n\x12GetAvatarDataCsReq\x12\x20\n\x0bM\
-    GHNIADPNPL\x18\n\x20\x01(\x08R\x0bMGHNIADPNPL\x12\x20\n\x0bNOEPBNMJFGL\
-    \x18\r\x20\x03(\rR\x0bNOEPBNMJFGLb\x06proto3\
+    GHNIADPNPL\x18\x08\x20\x01(\x08R\x0bMGHNIADPNPL\x12\x20\n\x0bNOEPBNMJFGL\
+    \x18\x0c\x20\x03(\rR\x0bNOEPBNMJFGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

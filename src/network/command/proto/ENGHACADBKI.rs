@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENGHACADBKI {
     // message fields
-    // @@protoc_insertion_point(field:ENGHACADBKI.EGKLFMCHLCO)
-    pub EGKLFMCHLCO: u32,
-    // @@protoc_insertion_point(field:ENGHACADBKI.FMIFPFAHFBL)
-    pub FMIFPFAHFBL: u32,
     // @@protoc_insertion_point(field:ENGHACADBKI.LDMHLKGILOD)
     pub LDMHLKGILOD: u32,
+    // @@protoc_insertion_point(field:ENGHACADBKI.EGKLFMCHLCO)
+    pub EGKLFMCHLCO: u32,
     // @@protoc_insertion_point(field:ENGHACADBKI.FFKDFODDBDN)
     pub FFKDFODDBDN: u32,
+    // @@protoc_insertion_point(field:ENGHACADBKI.FMIFPFAHFBL)
+    pub FMIFPFAHFBL: u32,
     // @@protoc_insertion_point(field:ENGHACADBKI.type)
     pub type_: ::protobuf::EnumOrUnknown<super::EFPHNJOBNOE::EFPHNJOBNOE>,
     // special fields
@@ -58,24 +58,24 @@ impl ENGHACADBKI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGKLFMCHLCO",
-            |m: &ENGHACADBKI| { &m.EGKLFMCHLCO },
-            |m: &mut ENGHACADBKI| { &mut m.EGKLFMCHLCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMIFPFAHFBL",
-            |m: &ENGHACADBKI| { &m.FMIFPFAHFBL },
-            |m: &mut ENGHACADBKI| { &mut m.FMIFPFAHFBL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LDMHLKGILOD",
             |m: &ENGHACADBKI| { &m.LDMHLKGILOD },
             |m: &mut ENGHACADBKI| { &mut m.LDMHLKGILOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EGKLFMCHLCO",
+            |m: &ENGHACADBKI| { &m.EGKLFMCHLCO },
+            |m: &mut ENGHACADBKI| { &mut m.EGKLFMCHLCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FFKDFODDBDN",
             |m: &ENGHACADBKI| { &m.FFKDFODDBDN },
             |m: &mut ENGHACADBKI| { &mut m.FFKDFODDBDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMIFPFAHFBL",
+            |m: &ENGHACADBKI| { &m.FMIFPFAHFBL },
+            |m: &mut ENGHACADBKI| { &mut m.FMIFPFAHFBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
@@ -100,17 +100,17 @@ impl ::protobuf::Message for ENGHACADBKI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.EGKLFMCHLCO = is.read_uint32()?;
-                },
-                56 => {
-                    self.FMIFPFAHFBL = is.read_uint32()?;
-                },
-                72 => {
+                64 => {
                     self.LDMHLKGILOD = is.read_uint32()?;
                 },
-                104 => {
+                72 => {
+                    self.EGKLFMCHLCO = is.read_uint32()?;
+                },
+                80 => {
                     self.FFKDFODDBDN = is.read_uint32()?;
+                },
+                88 => {
+                    self.FMIFPFAHFBL = is.read_uint32()?;
                 },
                 112 => {
                     self.type_ = is.read_enum_or_unknown()?;
@@ -127,17 +127,17 @@ impl ::protobuf::Message for ENGHACADBKI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGKLFMCHLCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EGKLFMCHLCO);
-        }
-        if self.FMIFPFAHFBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FMIFPFAHFBL);
-        }
         if self.LDMHLKGILOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LDMHLKGILOD);
+            my_size += ::protobuf::rt::uint32_size(8, self.LDMHLKGILOD);
+        }
+        if self.EGKLFMCHLCO != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EGKLFMCHLCO);
         }
         if self.FFKDFODDBDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.FFKDFODDBDN);
+            my_size += ::protobuf::rt::uint32_size(10, self.FFKDFODDBDN);
+        }
+        if self.FMIFPFAHFBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FMIFPFAHFBL);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::EFPHNJOBNOE::EFPHNJOBNOE::EFPHNJOBNOE_OMCKGLPAFKD) {
             my_size += ::protobuf::rt::int32_size(14, self.type_.value());
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ENGHACADBKI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGKLFMCHLCO != 0 {
-            os.write_uint32(2, self.EGKLFMCHLCO)?;
-        }
-        if self.FMIFPFAHFBL != 0 {
-            os.write_uint32(7, self.FMIFPFAHFBL)?;
-        }
         if self.LDMHLKGILOD != 0 {
-            os.write_uint32(9, self.LDMHLKGILOD)?;
+            os.write_uint32(8, self.LDMHLKGILOD)?;
+        }
+        if self.EGKLFMCHLCO != 0 {
+            os.write_uint32(9, self.EGKLFMCHLCO)?;
         }
         if self.FFKDFODDBDN != 0 {
-            os.write_uint32(13, self.FFKDFODDBDN)?;
+            os.write_uint32(10, self.FFKDFODDBDN)?;
+        }
+        if self.FMIFPFAHFBL != 0 {
+            os.write_uint32(11, self.FMIFPFAHFBL)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::EFPHNJOBNOE::EFPHNJOBNOE::EFPHNJOBNOE_OMCKGLPAFKD) {
             os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.type_))?;
@@ -180,20 +180,20 @@ impl ::protobuf::Message for ENGHACADBKI {
     }
 
     fn clear(&mut self) {
-        self.EGKLFMCHLCO = 0;
-        self.FMIFPFAHFBL = 0;
         self.LDMHLKGILOD = 0;
+        self.EGKLFMCHLCO = 0;
         self.FFKDFODDBDN = 0;
+        self.FMIFPFAHFBL = 0;
         self.type_ = ::protobuf::EnumOrUnknown::new(super::EFPHNJOBNOE::EFPHNJOBNOE::EFPHNJOBNOE_OMCKGLPAFKD);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENGHACADBKI {
         static instance: ENGHACADBKI = ENGHACADBKI {
-            EGKLFMCHLCO: 0,
-            FMIFPFAHFBL: 0,
             LDMHLKGILOD: 0,
+            EGKLFMCHLCO: 0,
             FFKDFODDBDN: 0,
+            FMIFPFAHFBL: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for ENGHACADBKI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENGHACADBKI.proto\x1a\x11EFPHNJOBNOE.proto\"\xb7\x01\n\x0bENGHACAD\
-    BKI\x12\x20\n\x0bEGKLFMCHLCO\x18\x02\x20\x01(\rR\x0bEGKLFMCHLCO\x12\x20\
-    \n\x0bFMIFPFAHFBL\x18\x07\x20\x01(\rR\x0bFMIFPFAHFBL\x12\x20\n\x0bLDMHLK\
-    GILOD\x18\t\x20\x01(\rR\x0bLDMHLKGILOD\x12\x20\n\x0bFFKDFODDBDN\x18\r\
-    \x20\x01(\rR\x0bFFKDFODDBDN\x12\x20\n\x04type\x18\x0e\x20\x01(\x0e2\x0c.\
+    BKI\x12\x20\n\x0bLDMHLKGILOD\x18\x08\x20\x01(\rR\x0bLDMHLKGILOD\x12\x20\
+    \n\x0bEGKLFMCHLCO\x18\t\x20\x01(\rR\x0bEGKLFMCHLCO\x12\x20\n\x0bFFKDFODD\
+    BDN\x18\n\x20\x01(\rR\x0bFFKDFODDBDN\x12\x20\n\x0bFMIFPFAHFBL\x18\x0b\
+    \x20\x01(\rR\x0bFMIFPFAHFBL\x12\x20\n\x04type\x18\x0e\x20\x01(\x0e2\x0c.\
     EFPHNJOBNOER\x04typeb\x06proto3\
 ";
 

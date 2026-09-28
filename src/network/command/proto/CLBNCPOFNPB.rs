@@ -30,10 +30,10 @@ pub struct CLBNCPOFNPB {
     // message fields
     // @@protoc_insertion_point(field:CLBNCPOFNPB.MCGHFJCBBMK)
     pub MCGHFJCBBMK: u32,
-    // @@protoc_insertion_point(field:CLBNCPOFNPB.GELLJOJMEFP)
-    pub GELLJOJMEFP: u32,
     // @@protoc_insertion_point(field:CLBNCPOFNPB.AOOLKNMJLNI)
     pub AOOLKNMJLNI: u32,
+    // @@protoc_insertion_point(field:CLBNCPOFNPB.GELLJOJMEFP)
+    pub GELLJOJMEFP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CLBNCPOFNPB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl CLBNCPOFNPB {
             |m: &mut CLBNCPOFNPB| { &mut m.MCGHFJCBBMK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GELLJOJMEFP",
-            |m: &CLBNCPOFNPB| { &m.GELLJOJMEFP },
-            |m: &mut CLBNCPOFNPB| { &mut m.GELLJOJMEFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AOOLKNMJLNI",
             |m: &CLBNCPOFNPB| { &m.AOOLKNMJLNI },
             |m: &mut CLBNCPOFNPB| { &mut m.AOOLKNMJLNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GELLJOJMEFP",
+            |m: &CLBNCPOFNPB| { &m.GELLJOJMEFP },
+            |m: &mut CLBNCPOFNPB| { &mut m.GELLJOJMEFP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CLBNCPOFNPB>(
             "CLBNCPOFNPB",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for CLBNCPOFNPB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.MCGHFJCBBMK = is.read_uint32()?;
                 },
-                64 => {
-                    self.GELLJOJMEFP = is.read_uint32()?;
-                },
-                72 => {
+                40 => {
                     self.AOOLKNMJLNI = is.read_uint32()?;
+                },
+                104 => {
+                    self.GELLJOJMEFP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for CLBNCPOFNPB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MCGHFJCBBMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MCGHFJCBBMK);
-        }
-        if self.GELLJOJMEFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GELLJOJMEFP);
+            my_size += ::protobuf::rt::uint32_size(4, self.MCGHFJCBBMK);
         }
         if self.AOOLKNMJLNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AOOLKNMJLNI);
+            my_size += ::protobuf::rt::uint32_size(5, self.AOOLKNMJLNI);
+        }
+        if self.GELLJOJMEFP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GELLJOJMEFP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for CLBNCPOFNPB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MCGHFJCBBMK != 0 {
-            os.write_uint32(1, self.MCGHFJCBBMK)?;
-        }
-        if self.GELLJOJMEFP != 0 {
-            os.write_uint32(8, self.GELLJOJMEFP)?;
+            os.write_uint32(4, self.MCGHFJCBBMK)?;
         }
         if self.AOOLKNMJLNI != 0 {
-            os.write_uint32(9, self.AOOLKNMJLNI)?;
+            os.write_uint32(5, self.AOOLKNMJLNI)?;
+        }
+        if self.GELLJOJMEFP != 0 {
+            os.write_uint32(13, self.GELLJOJMEFP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for CLBNCPOFNPB {
 
     fn clear(&mut self) {
         self.MCGHFJCBBMK = 0;
-        self.GELLJOJMEFP = 0;
         self.AOOLKNMJLNI = 0;
+        self.GELLJOJMEFP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CLBNCPOFNPB {
         static instance: CLBNCPOFNPB = CLBNCPOFNPB {
             MCGHFJCBBMK: 0,
-            GELLJOJMEFP: 0,
             AOOLKNMJLNI: 0,
+            GELLJOJMEFP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for CLBNCPOFNPB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CLBNCPOFNPB.proto\"s\n\x0bCLBNCPOFNPB\x12\x20\n\x0bMCGHFJCBBMK\x18\
-    \x01\x20\x01(\rR\x0bMCGHFJCBBMK\x12\x20\n\x0bGELLJOJMEFP\x18\x08\x20\x01\
-    (\rR\x0bGELLJOJMEFP\x12\x20\n\x0bAOOLKNMJLNI\x18\t\x20\x01(\rR\x0bAOOLKN\
-    MJLNIb\x06proto3\
+    \x04\x20\x01(\rR\x0bMCGHFJCBBMK\x12\x20\n\x0bAOOLKNMJLNI\x18\x05\x20\x01\
+    (\rR\x0bAOOLKNMJLNI\x12\x20\n\x0bGELLJOJMEFP\x18\r\x20\x01(\rR\x0bGELLJO\
+    JMEFPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -187,16 +187,16 @@ pub enum FeatureSwitchType {
     FeatureSwitchType_FeatureSwitchHipplenEffect = 80,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchReplayPerformance)
     FeatureSwitchType_FeatureSwitchReplayPerformance = 81,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_fef37035)
-    H_fef37035 = 82,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_c3ef8ca9)
+    H_c3ef8ca9 = 82,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicBox)
     FeatureSwitchType_FeatureSwitchRelicBox = 83,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_78868128)
-    H_78868128 = 84,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_eb0c1fcf)
-    H_eb0c1fcf = 85,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_e5dfd291)
-    H_e5dfd291 = 86,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_311839b3)
+    H_311839b3 = 84,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_444d22fc)
+    H_444d22fc = 85,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_15466b12)
+    H_15466b12 = 86,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchBanGotoPage)
     FeatureSwitchType_FeatureSwitchBanGotoPage = 87,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck)
@@ -209,8 +209,8 @@ pub enum FeatureSwitchType {
     FeatureSwitchType_FeatureSwitchBattleCheckPass = 91,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle)
     FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle = 92,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_24da5caa)
-    H_24da5caa = 93,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.H_5c171de3)
+    H_5c171de3 = 93,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchSocialPlay)
     FeatureSwitchType_FeatureSwitchSocialPlay = 94,
     // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FeatureSwitchRelicPresetPlanName)
@@ -316,18 +316,18 @@ impl ::protobuf::Enum for FeatureSwitchType {
             79 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen),
             80 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect),
             81 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance),
-            82 => ::std::option::Option::Some(FeatureSwitchType::H_fef37035),
+            82 => ::std::option::Option::Some(FeatureSwitchType::H_c3ef8ca9),
             83 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox),
-            84 => ::std::option::Option::Some(FeatureSwitchType::H_78868128),
-            85 => ::std::option::Option::Some(FeatureSwitchType::H_eb0c1fcf),
-            86 => ::std::option::Option::Some(FeatureSwitchType::H_e5dfd291),
+            84 => ::std::option::Option::Some(FeatureSwitchType::H_311839b3),
+            85 => ::std::option::Option::Some(FeatureSwitchType::H_444d22fc),
+            86 => ::std::option::Option::Some(FeatureSwitchType::H_15466b12),
             87 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage),
             88 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck),
             89 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId),
             90 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam),
             91 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass),
             92 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle),
-            93 => ::std::option::Option::Some(FeatureSwitchType::H_24da5caa),
+            93 => ::std::option::Option::Some(FeatureSwitchType::H_5c171de3),
             94 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay),
             95 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName),
             96 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview),
@@ -421,18 +421,18 @@ impl ::protobuf::Enum for FeatureSwitchType {
             "FeatureSwitchType_FeatureSwitchHipplen" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen),
             "FeatureSwitchType_FeatureSwitchHipplenEffect" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect),
             "FeatureSwitchType_FeatureSwitchReplayPerformance" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance),
-            "H_fef37035" => ::std::option::Option::Some(FeatureSwitchType::H_fef37035),
+            "H_c3ef8ca9" => ::std::option::Option::Some(FeatureSwitchType::H_c3ef8ca9),
             "FeatureSwitchType_FeatureSwitchRelicBox" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox),
-            "H_78868128" => ::std::option::Option::Some(FeatureSwitchType::H_78868128),
-            "H_eb0c1fcf" => ::std::option::Option::Some(FeatureSwitchType::H_eb0c1fcf),
-            "H_e5dfd291" => ::std::option::Option::Some(FeatureSwitchType::H_e5dfd291),
+            "H_311839b3" => ::std::option::Option::Some(FeatureSwitchType::H_311839b3),
+            "H_444d22fc" => ::std::option::Option::Some(FeatureSwitchType::H_444d22fc),
+            "H_15466b12" => ::std::option::Option::Some(FeatureSwitchType::H_15466b12),
             "FeatureSwitchType_FeatureSwitchBanGotoPage" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage),
             "FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck),
             "FeatureSwitchType_FeatureSwitchAvatarSkinId" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId),
             "FeatureSwitchType_FeatureSwitchAiPam" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam),
             "FeatureSwitchType_FeatureSwitchBattleCheckPass" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass),
             "FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle),
-            "H_24da5caa" => ::std::option::Option::Some(FeatureSwitchType::H_24da5caa),
+            "H_5c171de3" => ::std::option::Option::Some(FeatureSwitchType::H_5c171de3),
             "FeatureSwitchType_FeatureSwitchSocialPlay" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay),
             "FeatureSwitchType_FeatureSwitchRelicPresetPlanName" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName),
             "FeatureSwitchType_FeatureSwitchOutfitPreview" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview),
@@ -525,18 +525,18 @@ impl ::protobuf::Enum for FeatureSwitchType {
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance,
-        FeatureSwitchType::H_fef37035,
+        FeatureSwitchType::H_c3ef8ca9,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox,
-        FeatureSwitchType::H_78868128,
-        FeatureSwitchType::H_eb0c1fcf,
-        FeatureSwitchType::H_e5dfd291,
+        FeatureSwitchType::H_311839b3,
+        FeatureSwitchType::H_444d22fc,
+        FeatureSwitchType::H_15466b12,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle,
-        FeatureSwitchType::H_24da5caa,
+        FeatureSwitchType::H_5c171de3,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName,
         FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview,
@@ -635,18 +635,18 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplen => 77,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchHipplenEffect => 78,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchReplayPerformance => 79,
-            FeatureSwitchType::H_fef37035 => 80,
+            FeatureSwitchType::H_c3ef8ca9 => 80,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicBox => 81,
-            FeatureSwitchType::H_78868128 => 82,
-            FeatureSwitchType::H_eb0c1fcf => 83,
-            FeatureSwitchType::H_e5dfd291 => 84,
+            FeatureSwitchType::H_311839b3 => 82,
+            FeatureSwitchType::H_444d22fc => 83,
+            FeatureSwitchType::H_15466b12 => 84,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchBanGotoPage => 85,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck => 86,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchAvatarSkinId => 87,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchAiPam => 88,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchBattleCheckPass => 89,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle => 90,
-            FeatureSwitchType::H_24da5caa => 91,
+            FeatureSwitchType::H_5c171de3 => 91,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchSocialPlay => 92,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchRelicPresetPlanName => 93,
             FeatureSwitchType::FeatureSwitchType_FeatureSwitchOutfitPreview => 94,
@@ -738,14 +738,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     _FeatureSwitchBattleTimeoutLegal\x10N\x12*\n&FeatureSwitchType_FeatureSw\
     itchHipplen\x10O\x120\n,FeatureSwitchType_FeatureSwitchHipplenEffect\x10\
     P\x124\n0FeatureSwitchType_FeatureSwitchReplayPerformance\x10Q\x12\x0e\n\
-    \nH_fef37035\x10R\x12+\n'FeatureSwitchType_FeatureSwitchRelicBox\x10S\
-    \x12\x0e\n\nH_78868128\x10T\x12\x0e\n\nH_eb0c1fcf\x10U\x12\x0e\n\nH_e5df\
-    d291\x10V\x12.\n*FeatureSwitchType_FeatureSwitchBanGotoPage\x10W\x12;\n7\
+    \nH_c3ef8ca9\x10R\x12+\n'FeatureSwitchType_FeatureSwitchRelicBox\x10S\
+    \x12\x0e\n\nH_311839b3\x10T\x12\x0e\n\nH_444d22fc\x10U\x12\x0e\n\nH_1546\
+    6b12\x10V\x12.\n*FeatureSwitchType_FeatureSwitchBanGotoPage\x10W\x12;\n7\
     FeatureSwitchType_FeatureSwitchReportSensitiveWordCheck\x10X\x12/\n+Feat\
     ureSwitchType_FeatureSwitchAvatarSkinId\x10Y\x12(\n$FeatureSwitchType_Fe\
     atureSwitchAiPam\x10Z\x122\n.FeatureSwitchType_FeatureSwitchBattleCheckP\
     ass\x10[\x126\n2FeatureSwitchType_FeatureSwitchIdleLiveCustomTitle\x10\\\
-    \x12\x0e\n\nH_24da5caa\x10]\x12-\n)FeatureSwitchType_FeatureSwitchSocial\
+    \x12\x0e\n\nH_5c171de3\x10]\x12-\n)FeatureSwitchType_FeatureSwitchSocial\
     Play\x10^\x126\n2FeatureSwitchType_FeatureSwitchRelicPresetPlanName\x10_\
     \x120\n,FeatureSwitchType_FeatureSwitchOutfitPreview\x10`\x12=\n9Feature\
     SwitchType_FeatureSwitchRogueProcessorQueueCutting\x10a\x121\n-FeatureSw\

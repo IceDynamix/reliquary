@@ -30,12 +30,12 @@ pub struct NEIMLKNMDBM {
     // message fields
     // @@protoc_insertion_point(field:NEIMLKNMDBM.MMELNCHIDNC)
     pub MMELNCHIDNC: u32,
-    // @@protoc_insertion_point(field:NEIMLKNMDBM.EJGNMCAMELA)
-    pub EJGNMCAMELA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NEIMLKNMDBM.OJNEFBJHCCK)
     pub OJNEFBJHCCK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NEIMLKNMDBM.GFANBHAEKOK)
     pub GFANBHAEKOK: u32,
+    // @@protoc_insertion_point(field:NEIMLKNMDBM.EJGNMCAMELA)
+    pub EJGNMCAMELA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NEIMLKNMDBM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl NEIMLKNMDBM {
             |m: &mut NEIMLKNMDBM| { &mut m.MMELNCHIDNC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EJGNMCAMELA",
-            |m: &NEIMLKNMDBM| { &m.EJGNMCAMELA },
-            |m: &mut NEIMLKNMDBM| { &mut m.EJGNMCAMELA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OJNEFBJHCCK",
             |m: &NEIMLKNMDBM| { &m.OJNEFBJHCCK },
             |m: &mut NEIMLKNMDBM| { &mut m.OJNEFBJHCCK },
@@ -74,6 +69,11 @@ impl NEIMLKNMDBM {
             "GFANBHAEKOK",
             |m: &NEIMLKNMDBM| { &m.GFANBHAEKOK },
             |m: &mut NEIMLKNMDBM| { &mut m.GFANBHAEKOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EJGNMCAMELA",
+            |m: &NEIMLKNMDBM| { &m.EJGNMCAMELA },
+            |m: &mut NEIMLKNMDBM| { &mut m.EJGNMCAMELA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NEIMLKNMDBM>(
             "NEIMLKNMDBM",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for NEIMLKNMDBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
                     self.MMELNCHIDNC = is.read_uint32()?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EJGNMCAMELA)?;
-                },
-                64 => {
-                    self.EJGNMCAMELA.push(is.read_uint32()?);
-                },
-                98 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.OJNEFBJHCCK)?;
                 },
-                96 => {
+                80 => {
                     self.OJNEFBJHCCK.push(is.read_uint32()?);
                 },
-                112 => {
+                96 => {
                     self.GFANBHAEKOK = is.read_uint32()?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EJGNMCAMELA)?;
+                },
+                104 => {
+                    self.EJGNMCAMELA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for NEIMLKNMDBM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMELNCHIDNC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MMELNCHIDNC);
+            my_size += ::protobuf::rt::uint32_size(4, self.MMELNCHIDNC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EJGNMCAMELA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OJNEFBJHCCK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.OJNEFBJHCCK);
         if self.GFANBHAEKOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GFANBHAEKOK);
+            my_size += ::protobuf::rt::uint32_size(12, self.GFANBHAEKOK);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EJGNMCAMELA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,13 +138,13 @@ impl ::protobuf::Message for NEIMLKNMDBM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMELNCHIDNC != 0 {
-            os.write_uint32(7, self.MMELNCHIDNC)?;
+            os.write_uint32(4, self.MMELNCHIDNC)?;
         }
-        os.write_repeated_packed_uint32(8, &self.EJGNMCAMELA)?;
-        os.write_repeated_packed_uint32(12, &self.OJNEFBJHCCK)?;
+        os.write_repeated_packed_uint32(10, &self.OJNEFBJHCCK)?;
         if self.GFANBHAEKOK != 0 {
-            os.write_uint32(14, self.GFANBHAEKOK)?;
+            os.write_uint32(12, self.GFANBHAEKOK)?;
         }
+        os.write_repeated_packed_uint32(13, &self.EJGNMCAMELA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for NEIMLKNMDBM {
 
     fn clear(&mut self) {
         self.MMELNCHIDNC = 0;
-        self.EJGNMCAMELA.clear();
         self.OJNEFBJHCCK.clear();
         self.GFANBHAEKOK = 0;
+        self.EJGNMCAMELA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEIMLKNMDBM {
         static instance: NEIMLKNMDBM = NEIMLKNMDBM {
             MMELNCHIDNC: 0,
-            EJGNMCAMELA: ::std::vec::Vec::new(),
             OJNEFBJHCCK: ::std::vec::Vec::new(),
             GFANBHAEKOK: 0,
+            EJGNMCAMELA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for NEIMLKNMDBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEIMLKNMDBM.proto\"\x95\x01\n\x0bNEIMLKNMDBM\x12\x20\n\x0bMMELNCHI\
-    DNC\x18\x07\x20\x01(\rR\x0bMMELNCHIDNC\x12\x20\n\x0bEJGNMCAMELA\x18\x08\
-    \x20\x03(\rR\x0bEJGNMCAMELA\x12\x20\n\x0bOJNEFBJHCCK\x18\x0c\x20\x03(\rR\
-    \x0bOJNEFBJHCCK\x12\x20\n\x0bGFANBHAEKOK\x18\x0e\x20\x01(\rR\x0bGFANBHAE\
-    KOKb\x06proto3\
+    DNC\x18\x04\x20\x01(\rR\x0bMMELNCHIDNC\x12\x20\n\x0bOJNEFBJHCCK\x18\n\
+    \x20\x03(\rR\x0bOJNEFBJHCCK\x12\x20\n\x0bGFANBHAEKOK\x18\x0c\x20\x01(\rR\
+    \x0bGFANBHAEKOK\x12\x20\n\x0bEJGNMCAMELA\x18\r\x20\x03(\rR\x0bEJGNMCAMEL\
+    Ab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

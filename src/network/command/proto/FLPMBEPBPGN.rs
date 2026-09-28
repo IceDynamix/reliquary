@@ -72,7 +72,7 @@ impl ::protobuf::Message for FLPMBEPBPGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                106 => {
                     self.APHGAEAPLJF.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FLPMBEPBPGN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.APHGAEAPLJF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for FLPMBEPBPGN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLPMBEPBPGN.proto\x1a\x11LMKECAPDMAC.proto\"=\n\x0bFLPMBEPBPGN\x12\
-    .\n\x0bAPHGAEAPLJF\x18\x03\x20\x03(\x0b2\x0c.LMKECAPDMACR\x0bAPHGAEAPLJF\
-    b\x06proto3\
+    .\n\x0bAPHGAEAPLJF\x18\r\x20\x03(\x0b2\x0c.LMKECAPDMACR\x0bAPHGAEAPLJFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

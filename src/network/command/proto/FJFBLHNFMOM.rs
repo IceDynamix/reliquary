@@ -79,10 +79,10 @@ impl ::protobuf::Message for FJFBLHNFMOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.GNACLLNFHFD = is.read_bool()?;
                 },
-                72 => {
+                64 => {
                     self.DFBDPEHAAMG = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FJFBLHNFMOM {
             my_size += 1 + 1;
         }
         if self.DFBDPEHAAMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DFBDPEHAAMG);
+            my_size += ::protobuf::rt::uint32_size(8, self.DFBDPEHAAMG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FJFBLHNFMOM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GNACLLNFHFD != false {
-            os.write_bool(5, self.GNACLLNFHFD)?;
+            os.write_bool(4, self.GNACLLNFHFD)?;
         }
         if self.DFBDPEHAAMG != 0 {
-            os.write_uint32(9, self.DFBDPEHAAMG)?;
+            os.write_uint32(8, self.DFBDPEHAAMG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FJFBLHNFMOM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FJFBLHNFMOM.proto\"Q\n\x0bFJFBLHNFMOM\x12\x20\n\x0bGNACLLNFHFD\x18\
-    \x05\x20\x01(\x08R\x0bGNACLLNFHFD\x12\x20\n\x0bDFBDPEHAAMG\x18\t\x20\x01\
-    (\rR\x0bDFBDPEHAAMGb\x06proto3\
+    \x04\x20\x01(\x08R\x0bGNACLLNFHFD\x12\x20\n\x0bDFBDPEHAAMG\x18\x08\x20\
+    \x01(\rR\x0bDFBDPEHAAMGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

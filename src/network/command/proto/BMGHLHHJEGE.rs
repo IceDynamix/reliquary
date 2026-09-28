@@ -79,10 +79,10 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.LAOACNPDOLD = is.read_uint32()?;
                 },
-                48 => {
+                104 => {
                     self.PPFAEMGDAOF = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BMGHLHHJEGE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LAOACNPDOLD);
+            my_size += ::protobuf::rt::uint32_size(1, self.LAOACNPDOLD);
         }
         if self.PPFAEMGDAOF != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BMGHLHHJEGE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LAOACNPDOLD != 0 {
-            os.write_uint32(2, self.LAOACNPDOLD)?;
+            os.write_uint32(1, self.LAOACNPDOLD)?;
         }
         if self.PPFAEMGDAOF != false {
-            os.write_bool(6, self.PPFAEMGDAOF)?;
+            os.write_bool(13, self.PPFAEMGDAOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for BMGHLHHJEGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMGHLHHJEGE.proto\"Q\n\x0bBMGHLHHJEGE\x12\x20\n\x0bLAOACNPDOLD\x18\
-    \x02\x20\x01(\rR\x0bLAOACNPDOLD\x12\x20\n\x0bPPFAEMGDAOF\x18\x06\x20\x01\
-    (\x08R\x0bPPFAEMGDAOFb\x06proto3\
+    \x01\x20\x01(\rR\x0bLAOACNPDOLD\x12\x20\n\x0bPPFAEMGDAOF\x18\r\x20\x01(\
+    \x08R\x0bPPFAEMGDAOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
