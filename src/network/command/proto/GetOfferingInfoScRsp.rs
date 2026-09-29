@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetOfferingInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                74 => {
                     self.offering_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetOfferingInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         for value in &self.offering_info_list {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetOfferingInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         for v in &self.offering_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetOfferingInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetOfferingInfoScRsp.proto\x1a\x12OfferingInfo.proto\"m\n\x14GetOf\
-    feringInfoScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12;\n\
-    \x12offering_info_list\x18\x0e\x20\x03(\x0b2\r.OfferingInfoR\x10offering\
+    feringInfoScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12;\
+    \n\x12offering_info_list\x18\t\x20\x03(\x0b2\r.OfferingInfoR\x10offering\
     InfoListb\x06proto3\
 ";
 

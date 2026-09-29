@@ -79,7 +79,7 @@ impl ::protobuf::Message for PICDJHEPJLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,7 +94,7 @@ impl ::protobuf::Message for PICDJHEPJLC {
                     is.pop_limit(old_limit);
                     self.PCDFIOCMJFE.insert(key, value);
                 },
-                96 => {
+                72 => {
                     self.LEGCBILEEHK = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for PICDJHEPJLC {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.LEGCBILEEHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LEGCBILEEHK);
+            my_size += ::protobuf::rt::uint32_size(9, self.LEGCBILEEHK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,13 +128,13 @@ impl ::protobuf::Message for PICDJHEPJLC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
         if self.LEGCBILEEHK != 0 {
-            os.write_uint32(12, self.LEGCBILEEHK)?;
+            os.write_uint32(9, self.LEGCBILEEHK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PICDJHEPJLC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PICDJHEPJLC.proto\"\xb0\x01\n\x0bPICDJHEPJLC\x12?\n\x0bPCDFIOCMJFE\
-    \x18\x04\x20\x03(\x0b2\x1d.PICDJHEPJLC.PCDFIOCMJFEEntryR\x0bPCDFIOCMJFE\
-    \x12\x20\n\x0bLEGCBILEEHK\x18\x0c\x20\x01(\rR\x0bLEGCBILEEHK\x1a>\n\x10P\
-    CDFIOCMJFEEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \x18\x06\x20\x03(\x0b2\x1d.PICDJHEPJLC.PCDFIOCMJFEEntryR\x0bPCDFIOCMJFE\
+    \x12\x20\n\x0bLEGCBILEEHK\x18\t\x20\x01(\rR\x0bLEGCBILEEHK\x1a>\n\x10PCD\
+    FIOCMJFEEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OMJGKNJKHCH {
     // message fields
-    // @@protoc_insertion_point(field:OMJGKNJKHCH.NGIBKCODMAL)
-    pub NGIBKCODMAL: i32,
     // @@protoc_insertion_point(field:OMJGKNJKHCH.IGNACLJKFGO)
     pub IGNACLJKFGO: u32,
+    // @@protoc_insertion_point(field:OMJGKNJKHCH.NGIBKCODMAL)
+    pub NGIBKCODMAL: i32,
     // @@protoc_insertion_point(field:OMJGKNJKHCH.JOCCAPDMHGB)
     pub JOCCAPDMHGB: i32,
     // special fields
@@ -54,14 +54,14 @@ impl OMJGKNJKHCH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGIBKCODMAL",
-            |m: &OMJGKNJKHCH| { &m.NGIBKCODMAL },
-            |m: &mut OMJGKNJKHCH| { &mut m.NGIBKCODMAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGNACLJKFGO",
             |m: &OMJGKNJKHCH| { &m.IGNACLJKFGO },
             |m: &mut OMJGKNJKHCH| { &mut m.IGNACLJKFGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGIBKCODMAL",
+            |m: &OMJGKNJKHCH| { &m.NGIBKCODMAL },
+            |m: &mut OMJGKNJKHCH| { &mut m.NGIBKCODMAL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JOCCAPDMHGB",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for OMJGKNJKHCH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.NGIBKCODMAL = is.read_int32()?;
-                },
-                72 => {
                     self.IGNACLJKFGO = is.read_uint32()?;
                 },
-                112 => {
+                24 => {
+                    self.NGIBKCODMAL = is.read_int32()?;
+                },
+                88 => {
                     self.JOCCAPDMHGB = is.read_int32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for OMJGKNJKHCH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NGIBKCODMAL != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.NGIBKCODMAL);
-        }
         if self.IGNACLJKFGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IGNACLJKFGO);
+            my_size += ::protobuf::rt::uint32_size(2, self.IGNACLJKFGO);
+        }
+        if self.NGIBKCODMAL != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.NGIBKCODMAL);
         }
         if self.JOCCAPDMHGB != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.JOCCAPDMHGB);
+            my_size += ::protobuf::rt::int32_size(11, self.JOCCAPDMHGB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for OMJGKNJKHCH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NGIBKCODMAL != 0 {
-            os.write_int32(2, self.NGIBKCODMAL)?;
-        }
         if self.IGNACLJKFGO != 0 {
-            os.write_uint32(9, self.IGNACLJKFGO)?;
+            os.write_uint32(2, self.IGNACLJKFGO)?;
+        }
+        if self.NGIBKCODMAL != 0 {
+            os.write_int32(3, self.NGIBKCODMAL)?;
         }
         if self.JOCCAPDMHGB != 0 {
-            os.write_int32(14, self.JOCCAPDMHGB)?;
+            os.write_int32(11, self.JOCCAPDMHGB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for OMJGKNJKHCH {
     }
 
     fn clear(&mut self) {
-        self.NGIBKCODMAL = 0;
         self.IGNACLJKFGO = 0;
+        self.NGIBKCODMAL = 0;
         self.JOCCAPDMHGB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OMJGKNJKHCH {
         static instance: OMJGKNJKHCH = OMJGKNJKHCH {
-            NGIBKCODMAL: 0,
             IGNACLJKFGO: 0,
+            NGIBKCODMAL: 0,
             JOCCAPDMHGB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for OMJGKNJKHCH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OMJGKNJKHCH.proto\"s\n\x0bOMJGKNJKHCH\x12\x20\n\x0bNGIBKCODMAL\x18\
-    \x02\x20\x01(\x05R\x0bNGIBKCODMAL\x12\x20\n\x0bIGNACLJKFGO\x18\t\x20\x01\
-    (\rR\x0bIGNACLJKFGO\x12\x20\n\x0bJOCCAPDMHGB\x18\x0e\x20\x01(\x05R\x0bJO\
-    CCAPDMHGBb\x06proto3\
+    \n\x11OMJGKNJKHCH.proto\"s\n\x0bOMJGKNJKHCH\x12\x20\n\x0bIGNACLJKFGO\x18\
+    \x02\x20\x01(\rR\x0bIGNACLJKFGO\x12\x20\n\x0bNGIBKCODMAL\x18\x03\x20\x01\
+    (\x05R\x0bNGIBKCODMAL\x12\x20\n\x0bJOCCAPDMHGB\x18\x0b\x20\x01(\x05R\x0b\
+    JOCCAPDMHGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

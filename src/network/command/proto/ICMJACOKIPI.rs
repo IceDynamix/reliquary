@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ICMJACOKIPI {
     // message fields
-    // @@protoc_insertion_point(field:ICMJACOKIPI.INLLMKEDGLC)
-    pub INLLMKEDGLC: u32,
     // @@protoc_insertion_point(field:ICMJACOKIPI.IBECKONIICF)
     pub IBECKONIICF: u32,
+    // @@protoc_insertion_point(field:ICMJACOKIPI.INLLMKEDGLC)
+    pub INLLMKEDGLC: u32,
     // @@protoc_insertion_point(field:ICMJACOKIPI.score_id)
     pub score_id: u32,
     // @@protoc_insertion_point(field:ICMJACOKIPI.stage_index)
@@ -56,14 +56,14 @@ impl ICMJACOKIPI {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INLLMKEDGLC",
-            |m: &ICMJACOKIPI| { &m.INLLMKEDGLC },
-            |m: &mut ICMJACOKIPI| { &mut m.INLLMKEDGLC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IBECKONIICF",
             |m: &ICMJACOKIPI| { &m.IBECKONIICF },
             |m: &mut ICMJACOKIPI| { &mut m.IBECKONIICF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INLLMKEDGLC",
+            |m: &ICMJACOKIPI| { &m.INLLMKEDGLC },
+            |m: &mut ICMJACOKIPI| { &mut m.INLLMKEDGLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ICMJACOKIPI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.INLLMKEDGLC = is.read_uint32()?;
-                },
-                64 => {
+                8 => {
                     self.IBECKONIICF = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
+                    self.INLLMKEDGLC = is.read_uint32()?;
+                },
+                104 => {
                     self.score_id = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.stage_index = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ICMJACOKIPI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INLLMKEDGLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.INLLMKEDGLC);
-        }
         if self.IBECKONIICF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IBECKONIICF);
+            my_size += ::protobuf::rt::uint32_size(1, self.IBECKONIICF);
+        }
+        if self.INLLMKEDGLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.INLLMKEDGLC);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.score_id);
         }
         if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.stage_index);
+            my_size += ::protobuf::rt::uint32_size(14, self.stage_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ICMJACOKIPI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INLLMKEDGLC != 0 {
-            os.write_uint32(7, self.INLLMKEDGLC)?;
-        }
         if self.IBECKONIICF != 0 {
-            os.write_uint32(8, self.IBECKONIICF)?;
+            os.write_uint32(1, self.IBECKONIICF)?;
+        }
+        if self.INLLMKEDGLC != 0 {
+            os.write_uint32(12, self.INLLMKEDGLC)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(9, self.score_id)?;
+            os.write_uint32(13, self.score_id)?;
         }
         if self.stage_index != 0 {
-            os.write_uint32(12, self.stage_index)?;
+            os.write_uint32(14, self.stage_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for ICMJACOKIPI {
     }
 
     fn clear(&mut self) {
-        self.INLLMKEDGLC = 0;
         self.IBECKONIICF = 0;
+        self.INLLMKEDGLC = 0;
         self.score_id = 0;
         self.stage_index = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for ICMJACOKIPI {
 
     fn default_instance() -> &'static ICMJACOKIPI {
         static instance: ICMJACOKIPI = ICMJACOKIPI {
-            INLLMKEDGLC: 0,
             IBECKONIICF: 0,
+            INLLMKEDGLC: 0,
             score_id: 0,
             stage_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for ICMJACOKIPI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ICMJACOKIPI.proto\"\x8d\x01\n\x0bICMJACOKIPI\x12\x20\n\x0bINLLMKED\
-    GLC\x18\x07\x20\x01(\rR\x0bINLLMKEDGLC\x12\x20\n\x0bIBECKONIICF\x18\x08\
-    \x20\x01(\rR\x0bIBECKONIICF\x12\x19\n\x08score_id\x18\t\x20\x01(\rR\x07s\
-    coreId\x12\x1f\n\x0bstage_index\x18\x0c\x20\x01(\rR\nstageIndexb\x06prot\
+    \n\x11ICMJACOKIPI.proto\"\x8d\x01\n\x0bICMJACOKIPI\x12\x20\n\x0bIBECKONI\
+    ICF\x18\x01\x20\x01(\rR\x0bIBECKONIICF\x12\x20\n\x0bINLLMKEDGLC\x18\x0c\
+    \x20\x01(\rR\x0bINLLMKEDGLC\x12\x19\n\x08score_id\x18\r\x20\x01(\rR\x07s\
+    coreId\x12\x1f\n\x0bstage_index\x18\x0e\x20\x01(\rR\nstageIndexb\x06prot\
     o3\
 ";
 

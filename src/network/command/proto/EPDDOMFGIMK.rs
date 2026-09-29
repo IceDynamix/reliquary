@@ -72,7 +72,7 @@ impl ::protobuf::Message for EPDDOMFGIMK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.OPKEHOLONMJ = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for EPDDOMFGIMK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OPKEHOLONMJ != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.OPKEHOLONMJ);
+            my_size += ::protobuf::rt::int32_size(9, self.OPKEHOLONMJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for EPDDOMFGIMK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OPKEHOLONMJ != 0 {
-            os.write_int32(5, self.OPKEHOLONMJ)?;
+            os.write_int32(9, self.OPKEHOLONMJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for EPDDOMFGIMK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EPDDOMFGIMK.proto\"/\n\x0bEPDDOMFGIMK\x12\x20\n\x0bOPKEHOLONMJ\x18\
-    \x05\x20\x01(\x05R\x0bOPKEHOLONMJb\x06proto3\
+    \t\x20\x01(\x05R\x0bOPKEHOLONMJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

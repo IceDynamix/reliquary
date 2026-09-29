@@ -30,12 +30,12 @@ pub struct CMOPLAHDEPN {
     // message fields
     // @@protoc_insertion_point(field:CMOPLAHDEPN.buff_id)
     pub buff_id: u32,
-    // @@protoc_insertion_point(field:CMOPLAHDEPN.stage_index)
-    pub stage_index: u32,
     // @@protoc_insertion_point(field:CMOPLAHDEPN.tierce_avatar_id_list)
     pub tierce_avatar_id_list: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
     // @@protoc_insertion_point(field:CMOPLAHDEPN.peak_avatar_id_list)
     pub peak_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CMOPLAHDEPN.stage_index)
+    pub stage_index: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CMOPLAHDEPN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,11 +60,6 @@ impl CMOPLAHDEPN {
             |m: &CMOPLAHDEPN| { &m.buff_id },
             |m: &mut CMOPLAHDEPN| { &mut m.buff_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_index",
-            |m: &CMOPLAHDEPN| { &m.stage_index },
-            |m: &mut CMOPLAHDEPN| { &mut m.stage_index },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "tierce_avatar_id_list",
             |m: &CMOPLAHDEPN| { &m.tierce_avatar_id_list },
@@ -74,6 +69,11 @@ impl CMOPLAHDEPN {
             "peak_avatar_id_list",
             |m: &CMOPLAHDEPN| { &m.peak_avatar_id_list },
             |m: &mut CMOPLAHDEPN| { &mut m.peak_avatar_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_index",
+            |m: &CMOPLAHDEPN| { &m.stage_index },
+            |m: &mut CMOPLAHDEPN| { &mut m.stage_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CMOPLAHDEPN>(
             "CMOPLAHDEPN",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for CMOPLAHDEPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                48 => {
-                    self.stage_index = is.read_uint32()?;
-                },
-                74 => {
+                50 => {
                     self.tierce_avatar_id_list.push(is.read_message()?);
                 },
-                122 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.peak_avatar_id_list)?;
                 },
-                120 => {
+                80 => {
                     self.peak_avatar_id_list.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.stage_index = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,16 +121,16 @@ impl ::protobuf::Message for CMOPLAHDEPN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.buff_id);
-        }
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.stage_index);
+            my_size += ::protobuf::rt::uint32_size(2, self.buff_id);
         }
         for value in &self.tierce_avatar_id_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.peak_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.peak_avatar_id_list);
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.stage_index);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -138,15 +138,15 @@ impl ::protobuf::Message for CMOPLAHDEPN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.buff_id != 0 {
-            os.write_uint32(1, self.buff_id)?;
-        }
-        if self.stage_index != 0 {
-            os.write_uint32(6, self.stage_index)?;
+            os.write_uint32(2, self.buff_id)?;
         }
         for v in &self.tierce_avatar_id_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(15, &self.peak_avatar_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.peak_avatar_id_list)?;
+        if self.stage_index != 0 {
+            os.write_uint32(13, self.stage_index)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,18 +165,18 @@ impl ::protobuf::Message for CMOPLAHDEPN {
 
     fn clear(&mut self) {
         self.buff_id = 0;
-        self.stage_index = 0;
         self.tierce_avatar_id_list.clear();
         self.peak_avatar_id_list.clear();
+        self.stage_index = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CMOPLAHDEPN {
         static instance: CMOPLAHDEPN = CMOPLAHDEPN {
             buff_id: 0,
-            stage_index: 0,
             tierce_avatar_id_list: ::std::vec::Vec::new(),
             peak_avatar_id_list: ::std::vec::Vec::new(),
+            stage_index: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for CMOPLAHDEPN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CMOPLAHDEPN.proto\x1a\x12AvatarLineup.proto\"\xb8\x01\n\x0bCMOPLAH\
-    DEPN\x12\x17\n\x07buff_id\x18\x01\x20\x01(\rR\x06buffId\x12\x1f\n\x0bsta\
-    ge_index\x18\x06\x20\x01(\rR\nstageIndex\x12@\n\x15tierce_avatar_id_list\
-    \x18\t\x20\x03(\x0b2\r.AvatarLineupR\x12tierceAvatarIdList\x12-\n\x13pea\
-    k_avatar_id_list\x18\x0f\x20\x03(\rR\x10peakAvatarIdListb\x06proto3\
+    DEPN\x12\x17\n\x07buff_id\x18\x02\x20\x01(\rR\x06buffId\x12@\n\x15tierce\
+    _avatar_id_list\x18\x06\x20\x03(\x0b2\r.AvatarLineupR\x12tierceAvatarIdL\
+    ist\x12-\n\x13peak_avatar_id_list\x18\n\x20\x03(\rR\x10peakAvatarIdList\
+    \x12\x1f\n\x0bstage_index\x18\r\x20\x01(\rR\nstageIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

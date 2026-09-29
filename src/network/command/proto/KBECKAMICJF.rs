@@ -79,10 +79,10 @@ impl ::protobuf::Message for KBECKAMICJF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.GNAMNBDIEKG = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KBECKAMICJF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GNAMNBDIEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GNAMNBDIEKG);
+            my_size += ::protobuf::rt::uint32_size(5, self.GNAMNBDIEKG);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KBECKAMICJF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GNAMNBDIEKG != 0 {
-            os.write_uint32(1, self.GNAMNBDIEKG)?;
+            os.write_uint32(5, self.GNAMNBDIEKG)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for KBECKAMICJF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KBECKAMICJF.proto\"I\n\x0bKBECKAMICJF\x12\x20\n\x0bGNAMNBDIEKG\x18\
-    \x01\x20\x01(\rR\x0bGNAMNBDIEKG\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\
+    \x05\x20\x01(\rR\x0bGNAMNBDIEKG\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

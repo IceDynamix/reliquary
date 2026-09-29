@@ -79,10 +79,10 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.MMNJODIJPOE = is.read_enum_or_unknown()?;
                 },
-                88 => {
+                112 => {
                     self.content_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FHLEBDMFCHL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.MMNJODIJPOE.value());
+            my_size += ::protobuf::rt::int32_size(9, self.MMNJODIJPOE.value());
         }
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FHLEBDMFCHL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
         }
         if self.content_id != 0 {
-            os.write_uint32(11, self.content_id)?;
+            os.write_uint32(14, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FHLEBDMFCHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHLEBDMFCHL.proto\x1a\x11LPPKGHJGOCC.proto\"\\\n\x0bFHLEBDMFCHL\
-    \x12.\n\x0bMMNJODIJPOE\x18\x05\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bMMNJODI\
-    JPOE\x12\x1d\n\ncontent_id\x18\x0b\x20\x01(\rR\tcontentIdb\x06proto3\
+    \x12.\n\x0bMMNJODIJPOE\x18\t\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bMMNJODIJP\
+    OE\x12\x1d\n\ncontent_id\x18\x0e\x20\x01(\rR\tcontentIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

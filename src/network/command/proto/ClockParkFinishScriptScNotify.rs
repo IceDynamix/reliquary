@@ -72,7 +72,7 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLEOMLNOKCC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ClockParkFinishScriptScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.NLEOMLNOKCC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkFinishScriptScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ClockParkFinishScriptScNotify.proto\x1a\x11GIPBHLBFDAH.proto\"O\n\x1d\
-    ClockParkFinishScriptScNotify\x12.\n\x0bNLEOMLNOKCC\x18\x04\x20\x01(\x0b\
+    ClockParkFinishScriptScNotify\x12.\n\x0bNLEOMLNOKCC\x18\x0b\x20\x01(\x0b\
     2\x0c.GIPBHLBFDAHR\x0bNLEOMLNOKCCb\x06proto3\
 ";
 

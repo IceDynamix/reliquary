@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MOFKNBAKKDI {
     // message fields
-    // @@protoc_insertion_point(field:MOFKNBAKKDI.FDGKBOIEHBD)
-    pub FDGKBOIEHBD: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
-    // @@protoc_insertion_point(field:MOFKNBAKKDI.IFEPJHGNCOI)
-    pub IFEPJHGNCOI: i64,
-    // @@protoc_insertion_point(field:MOFKNBAKKDI.FLKNHFMNDCE)
-    pub FLKNHFMNDCE: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:MOFKNBAKKDI.CANDCMOCAFH)
-    pub CANDCMOCAFH: bool,
     // @@protoc_insertion_point(field:MOFKNBAKKDI.CKACALMICBH)
     pub CKACALMICBH: ::std::vec::Vec<super::OJHHACMHFKA::OJHHACMHFKA>,
     // @@protoc_insertion_point(field:MOFKNBAKKDI.LFKDANGNJIM)
     pub LFKDANGNJIM: u32,
+    // @@protoc_insertion_point(field:MOFKNBAKKDI.CANDCMOCAFH)
+    pub CANDCMOCAFH: bool,
+    // @@protoc_insertion_point(field:MOFKNBAKKDI.IFEPJHGNCOI)
+    pub IFEPJHGNCOI: i64,
+    // @@protoc_insertion_point(field:MOFKNBAKKDI.FLKNHFMNDCE)
+    pub FLKNHFMNDCE: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:MOFKNBAKKDI.FDGKBOIEHBD)
+    pub FDGKBOIEHBD: ::protobuf::MessageField<super::NCFKHDIKCNI::NCFKHDIKCNI>,
     // @@protoc_insertion_point(field:MOFKNBAKKDI.has_passed)
     pub has_passed: bool,
     // special fields
@@ -61,10 +61,20 @@ impl MOFKNBAKKDI {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
-            "FDGKBOIEHBD",
-            |m: &MOFKNBAKKDI| { &m.FDGKBOIEHBD },
-            |m: &mut MOFKNBAKKDI| { &mut m.FDGKBOIEHBD },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CKACALMICBH",
+            |m: &MOFKNBAKKDI| { &m.CKACALMICBH },
+            |m: &mut MOFKNBAKKDI| { &mut m.CKACALMICBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LFKDANGNJIM",
+            |m: &MOFKNBAKKDI| { &m.LFKDANGNJIM },
+            |m: &mut MOFKNBAKKDI| { &mut m.LFKDANGNJIM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CANDCMOCAFH",
+            |m: &MOFKNBAKKDI| { &m.CANDCMOCAFH },
+            |m: &mut MOFKNBAKKDI| { &mut m.CANDCMOCAFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFEPJHGNCOI",
@@ -76,20 +86,10 @@ impl MOFKNBAKKDI {
             |m: &MOFKNBAKKDI| { &m.FLKNHFMNDCE },
             |m: &mut MOFKNBAKKDI| { &mut m.FLKNHFMNDCE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CANDCMOCAFH",
-            |m: &MOFKNBAKKDI| { &m.CANDCMOCAFH },
-            |m: &mut MOFKNBAKKDI| { &mut m.CANDCMOCAFH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CKACALMICBH",
-            |m: &MOFKNBAKKDI| { &m.CKACALMICBH },
-            |m: &mut MOFKNBAKKDI| { &mut m.CKACALMICBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFKDANGNJIM",
-            |m: &MOFKNBAKKDI| { &m.LFKDANGNJIM },
-            |m: &mut MOFKNBAKKDI| { &mut m.LFKDANGNJIM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
+            "FDGKBOIEHBD",
+            |m: &MOFKNBAKKDI| { &m.FDGKBOIEHBD },
+            |m: &mut MOFKNBAKKDI| { &mut m.FDGKBOIEHBD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
@@ -114,13 +114,19 @@ impl ::protobuf::Message for MOFKNBAKKDI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDGKBOIEHBD)?;
+                18 => {
+                    self.CKACALMICBH.push(is.read_message()?);
                 },
-                40 => {
+                24 => {
+                    self.LFKDANGNJIM = is.read_uint32()?;
+                },
+                32 => {
+                    self.CANDCMOCAFH = is.read_bool()?;
+                },
+                64 => {
                     self.IFEPJHGNCOI = is.read_int64()?;
                 },
-                58 => {
+                74 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -135,16 +141,10 @@ impl ::protobuf::Message for MOFKNBAKKDI {
                     is.pop_limit(old_limit);
                     self.FLKNHFMNDCE.insert(key, value);
                 },
-                72 => {
-                    self.CANDCMOCAFH = is.read_bool()?;
-                },
-                90 => {
-                    self.CKACALMICBH.push(is.read_message()?);
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FDGKBOIEHBD)?;
                 },
                 104 => {
-                    self.LFKDANGNJIM = is.read_uint32()?;
-                },
-                112 => {
                     self.has_passed = is.read_bool()?;
                 },
                 tag => {
@@ -159,12 +159,18 @@ impl ::protobuf::Message for MOFKNBAKKDI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FDGKBOIEHBD.as_ref() {
-            let len = v.compute_size();
+        for value in &self.CKACALMICBH {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.LFKDANGNJIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.LFKDANGNJIM);
+        }
+        if self.CANDCMOCAFH != false {
+            my_size += 1 + 1;
         }
         if self.IFEPJHGNCOI != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.IFEPJHGNCOI);
+            my_size += ::protobuf::rt::int64_size(8, self.IFEPJHGNCOI);
         }
         for (k, v) in &self.FLKNHFMNDCE {
             let mut entry_size = 0;
@@ -172,15 +178,9 @@ impl ::protobuf::Message for MOFKNBAKKDI {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.CANDCMOCAFH != false {
-            my_size += 1 + 1;
-        }
-        for value in &self.CKACALMICBH {
-            let len = value.compute_size();
+        if let Some(v) = self.FDGKBOIEHBD.as_ref() {
+            let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LFKDANGNJIM);
         }
         if self.has_passed != false {
             my_size += 1 + 1;
@@ -191,32 +191,32 @@ impl ::protobuf::Message for MOFKNBAKKDI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FDGKBOIEHBD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.CKACALMICBH {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        if self.LFKDANGNJIM != 0 {
+            os.write_uint32(3, self.LFKDANGNJIM)?;
+        }
+        if self.CANDCMOCAFH != false {
+            os.write_bool(4, self.CANDCMOCAFH)?;
         }
         if self.IFEPJHGNCOI != 0 {
-            os.write_int64(5, self.IFEPJHGNCOI)?;
+            os.write_int64(8, self.IFEPJHGNCOI)?;
         }
         for (k, v) in &self.FLKNHFMNDCE {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(58)?; // Tag.
+            os.write_raw_varint32(74)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.CANDCMOCAFH != false {
-            os.write_bool(9, self.CANDCMOCAFH)?;
-        }
-        for v in &self.CKACALMICBH {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.LFKDANGNJIM != 0 {
-            os.write_uint32(13, self.LFKDANGNJIM)?;
+        if let Some(v) = self.FDGKBOIEHBD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.has_passed != false {
-            os.write_bool(14, self.has_passed)?;
+            os.write_bool(13, self.has_passed)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -235,12 +235,12 @@ impl ::protobuf::Message for MOFKNBAKKDI {
     }
 
     fn clear(&mut self) {
-        self.FDGKBOIEHBD.clear();
-        self.IFEPJHGNCOI = 0;
-        self.FLKNHFMNDCE.clear();
-        self.CANDCMOCAFH = false;
         self.CKACALMICBH.clear();
         self.LFKDANGNJIM = 0;
+        self.CANDCMOCAFH = false;
+        self.IFEPJHGNCOI = 0;
+        self.FLKNHFMNDCE.clear();
+        self.FDGKBOIEHBD.clear();
         self.has_passed = false;
         self.special_fields.clear();
     }
@@ -270,16 +270,16 @@ impl ::protobuf::reflect::ProtobufValue for MOFKNBAKKDI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MOFKNBAKKDI.proto\x1a\x11NCFKHDIKCNI.proto\x1a\x11OJHHACMHFKA.prot\
-    o\"\xf3\x02\n\x0bMOFKNBAKKDI\x12.\n\x0bFDGKBOIEHBD\x18\x04\x20\x01(\x0b2\
-    \x0c.NCFKHDIKCNIR\x0bFDGKBOIEHBD\x12\x20\n\x0bIFEPJHGNCOI\x18\x05\x20\
-    \x01(\x03R\x0bIFEPJHGNCOI\x12?\n\x0bFLKNHFMNDCE\x18\x07\x20\x03(\x0b2\
-    \x1d.MOFKNBAKKDI.FLKNHFMNDCEEntryR\x0bFLKNHFMNDCE\x12\x20\n\x0bCANDCMOCA\
-    FH\x18\t\x20\x01(\x08R\x0bCANDCMOCAFH\x12.\n\x0bCKACALMICBH\x18\x0b\x20\
-    \x03(\x0b2\x0c.OJHHACMHFKAR\x0bCKACALMICBH\x12\x20\n\x0bLFKDANGNJIM\x18\
-    \r\x20\x01(\rR\x0bLFKDANGNJIM\x12\x1d\n\nhas_passed\x18\x0e\x20\x01(\x08\
-    R\thasPassed\x1a>\n\x10FLKNHFMNDCEEntry\x12\x10\n\x03key\x18\x01\x20\x01\
-    (\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\
-    \x06proto3\
+    o\"\xf3\x02\n\x0bMOFKNBAKKDI\x12.\n\x0bCKACALMICBH\x18\x02\x20\x03(\x0b2\
+    \x0c.OJHHACMHFKAR\x0bCKACALMICBH\x12\x20\n\x0bLFKDANGNJIM\x18\x03\x20\
+    \x01(\rR\x0bLFKDANGNJIM\x12\x20\n\x0bCANDCMOCAFH\x18\x04\x20\x01(\x08R\
+    \x0bCANDCMOCAFH\x12\x20\n\x0bIFEPJHGNCOI\x18\x08\x20\x01(\x03R\x0bIFEPJH\
+    GNCOI\x12?\n\x0bFLKNHFMNDCE\x18\t\x20\x03(\x0b2\x1d.MOFKNBAKKDI.FLKNHFMN\
+    DCEEntryR\x0bFLKNHFMNDCE\x12.\n\x0bFDGKBOIEHBD\x18\n\x20\x01(\x0b2\x0c.N\
+    CFKHDIKCNIR\x0bFDGKBOIEHBD\x12\x1d\n\nhas_passed\x18\r\x20\x01(\x08R\tha\
+    sPassed\x1a>\n\x10FLKNHFMNDCEEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

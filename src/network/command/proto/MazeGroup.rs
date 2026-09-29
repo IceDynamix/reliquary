@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeGroup {
     // message fields
-    // @@protoc_insertion_point(field:MazeGroup.LAMIABJFNKI)
-    pub LAMIABJFNKI: bool,
-    // @@protoc_insertion_point(field:MazeGroup.BANBECDCDHG)
-    pub BANBECDCDHG: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:MazeGroup.HBNMKDMGNNM)
-    pub HBNMKDMGNNM: i64,
     // @@protoc_insertion_point(field:MazeGroup.EGEKIHGOBHM)
     pub EGEKIHGOBHM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MazeGroup.BANBECDCDHG)
+    pub BANBECDCDHG: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:MazeGroup.LAMIABJFNKI)
+    pub LAMIABJFNKI: bool,
     // @@protoc_insertion_point(field:MazeGroup.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:MazeGroup.HBNMKDMGNNM)
+    pub HBNMKDMGNNM: i64,
     // special fields
     // @@protoc_insertion_point(special_field:MazeGroup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,10 @@ impl MazeGroup {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAMIABJFNKI",
-            |m: &MazeGroup| { &m.LAMIABJFNKI },
-            |m: &mut MazeGroup| { &mut m.LAMIABJFNKI },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EGEKIHGOBHM",
+            |m: &MazeGroup| { &m.EGEKIHGOBHM },
+            |m: &mut MazeGroup| { &mut m.EGEKIHGOBHM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BANBECDCDHG",
@@ -68,19 +68,19 @@ impl MazeGroup {
             |m: &mut MazeGroup| { &mut m.BANBECDCDHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBNMKDMGNNM",
-            |m: &MazeGroup| { &m.HBNMKDMGNNM },
-            |m: &mut MazeGroup| { &mut m.HBNMKDMGNNM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EGEKIHGOBHM",
-            |m: &MazeGroup| { &m.EGEKIHGOBHM },
-            |m: &mut MazeGroup| { &mut m.EGEKIHGOBHM },
+            "LAMIABJFNKI",
+            |m: &MazeGroup| { &m.LAMIABJFNKI },
+            |m: &mut MazeGroup| { &mut m.LAMIABJFNKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &MazeGroup| { &m.group_id },
             |m: &mut MazeGroup| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HBNMKDMGNNM",
+            |m: &MazeGroup| { &m.HBNMKDMGNNM },
+            |m: &mut MazeGroup| { &mut m.HBNMKDMGNNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MazeGroup>(
             "MazeGroup",
@@ -100,10 +100,13 @@ impl ::protobuf::Message for MazeGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.LAMIABJFNKI = is.read_bool()?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EGEKIHGOBHM)?;
                 },
-                34 => {
+                24 => {
+                    self.EGEKIHGOBHM.push(is.read_uint32()?);
+                },
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -118,17 +121,14 @@ impl ::protobuf::Message for MazeGroup {
                     is.pop_limit(old_limit);
                     self.BANBECDCDHG.insert(key, value);
                 },
-                48 => {
-                    self.HBNMKDMGNNM = is.read_int64()?;
-                },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EGEKIHGOBHM)?;
-                },
                 64 => {
-                    self.EGEKIHGOBHM.push(is.read_uint32()?);
+                    self.LAMIABJFNKI = is.read_bool()?;
                 },
-                88 => {
+                80 => {
                     self.group_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.HBNMKDMGNNM = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -142,21 +142,21 @@ impl ::protobuf::Message for MazeGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LAMIABJFNKI != false {
-            my_size += 1 + 1;
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EGEKIHGOBHM);
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.HBNMKDMGNNM != 0 {
-            my_size += ::protobuf::rt::int64_size(6, self.HBNMKDMGNNM);
+        if self.LAMIABJFNKI != false {
+            my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EGEKIHGOBHM);
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
+        }
+        if self.HBNMKDMGNNM != 0 {
+            my_size += ::protobuf::rt::int64_size(15, self.HBNMKDMGNNM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,24 +164,24 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LAMIABJFNKI != false {
-            os.write_bool(2, self.LAMIABJFNKI)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.EGEKIHGOBHM)?;
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        if self.HBNMKDMGNNM != 0 {
-            os.write_int64(6, self.HBNMKDMGNNM)?;
+        if self.LAMIABJFNKI != false {
+            os.write_bool(8, self.LAMIABJFNKI)?;
         }
-        os.write_repeated_packed_uint32(8, &self.EGEKIHGOBHM)?;
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(10, self.group_id)?;
+        }
+        if self.HBNMKDMGNNM != 0 {
+            os.write_int64(15, self.HBNMKDMGNNM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,11 +200,11 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn clear(&mut self) {
-        self.LAMIABJFNKI = false;
-        self.BANBECDCDHG.clear();
-        self.HBNMKDMGNNM = 0;
         self.EGEKIHGOBHM.clear();
+        self.BANBECDCDHG.clear();
+        self.LAMIABJFNKI = false;
         self.group_id = 0;
+        self.HBNMKDMGNNM = 0;
         self.special_fields.clear();
     }
 
@@ -232,12 +232,12 @@ impl ::protobuf::reflect::ProtobufValue for MazeGroup {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fMazeGroup.proto\"\x8b\x02\n\tMazeGroup\x12\x20\n\x0bLAMIABJFNKI\
-    \x18\x02\x20\x01(\x08R\x0bLAMIABJFNKI\x12=\n\x0bBANBECDCDHG\x18\x04\x20\
-    \x03(\x0b2\x1b.MazeGroup.BANBECDCDHGEntryR\x0bBANBECDCDHG\x12\x20\n\x0bH\
-    BNMKDMGNNM\x18\x06\x20\x01(\x03R\x0bHBNMKDMGNNM\x12\x20\n\x0bEGEKIHGOBHM\
-    \x18\x08\x20\x03(\rR\x0bEGEKIHGOBHM\x12\x19\n\x08group_id\x18\x0b\x20\
-    \x01(\rR\x07groupId\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\
+    \n\x0fMazeGroup.proto\"\x8b\x02\n\tMazeGroup\x12\x20\n\x0bEGEKIHGOBHM\
+    \x18\x03\x20\x03(\rR\x0bEGEKIHGOBHM\x12=\n\x0bBANBECDCDHG\x18\x05\x20\
+    \x03(\x0b2\x1b.MazeGroup.BANBECDCDHGEntryR\x0bBANBECDCDHG\x12\x20\n\x0bL\
+    AMIABJFNKI\x18\x08\x20\x01(\x08R\x0bLAMIABJFNKI\x12\x19\n\x08group_id\
+    \x18\n\x20\x01(\rR\x07groupId\x12\x20\n\x0bHBNMKDMGNNM\x18\x0f\x20\x01(\
+    \x03R\x0bHBNMKDMGNNM\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\
     \x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\x05value:\
     \x028\x01b\x06proto3\
 ";

@@ -82,7 +82,7 @@ impl ::protobuf::Message for PDPKFDOJOFK {
                 48 => {
                     self.CKKDLHLJGMD = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.BGLGKBEKMKH = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for PDPKFDOJOFK {
             my_size += ::protobuf::rt::uint32_size(6, self.CKKDLHLJGMD);
         }
         if self.BGLGKBEKMKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.BGLGKBEKMKH);
+            my_size += ::protobuf::rt::uint32_size(10, self.BGLGKBEKMKH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PDPKFDOJOFK {
             os.write_uint32(6, self.CKKDLHLJGMD)?;
         }
         if self.BGLGKBEKMKH != 0 {
-            os.write_uint32(8, self.BGLGKBEKMKH)?;
+            os.write_uint32(10, self.BGLGKBEKMKH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PDPKFDOJOFK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PDPKFDOJOFK.proto\"Q\n\x0bPDPKFDOJOFK\x12\x20\n\x0bCKKDLHLJGMD\x18\
-    \x06\x20\x01(\rR\x0bCKKDLHLJGMD\x12\x20\n\x0bBGLGKBEKMKH\x18\x08\x20\x01\
-    (\rR\x0bBGLGKBEKMKHb\x06proto3\
+    \x06\x20\x01(\rR\x0bCKKDLHLJGMD\x12\x20\n\x0bBGLGKBEKMKH\x18\n\x20\x01(\
+    \rR\x0bBGLGKBEKMKHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

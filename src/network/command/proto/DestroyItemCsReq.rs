@@ -86,13 +86,13 @@ impl ::protobuf::Message for DestroyItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.ADOIMNBAGKC = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.item_id = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.item_count = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for DestroyItemCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ADOIMNBAGKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADOIMNBAGKC);
+            my_size += ::protobuf::rt::uint32_size(4, self.ADOIMNBAGKC);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         if self.item_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_count);
+            my_size += ::protobuf::rt::uint32_size(11, self.item_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for DestroyItemCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ADOIMNBAGKC != 0 {
-            os.write_uint32(3, self.ADOIMNBAGKC)?;
+            os.write_uint32(4, self.ADOIMNBAGKC)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(8, self.item_id)?;
+            os.write_uint32(6, self.item_id)?;
         }
         if self.item_count != 0 {
-            os.write_uint32(10, self.item_count)?;
+            os.write_uint32(11, self.item_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for DestroyItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DestroyItemCsReq.proto\"l\n\x10DestroyItemCsReq\x12\x20\n\x0bADOIM\
-    NBAGKC\x18\x03\x20\x01(\rR\x0bADOIMNBAGKC\x12\x17\n\x07item_id\x18\x08\
-    \x20\x01(\rR\x06itemId\x12\x1d\n\nitem_count\x18\n\x20\x01(\rR\titemCoun\
-    tb\x06proto3\
+    NBAGKC\x18\x04\x20\x01(\rR\x0bADOIMNBAGKC\x12\x17\n\x07item_id\x18\x06\
+    \x20\x01(\rR\x06itemId\x12\x1d\n\nitem_count\x18\x0b\x20\x01(\rR\titemCo\
+    untb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

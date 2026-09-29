@@ -45,105 +45,7 @@ impl LJGKNFCFLLB {
         ::std::default::Default::default()
     }
 
-    // .BJKPJIBNPHC DEIMCENJPKP = 13;
-
-    pub fn DEIMCENJPKP(&self) -> &super::BJKPJIBNPHC::BJKPJIBNPHC {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v)) => v,
-            _ => <super::BJKPJIBNPHC::BJKPJIBNPHC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DEIMCENJPKP(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_DEIMCENJPKP(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DEIMCENJPKP(&mut self, v: super::BJKPJIBNPHC::BJKPJIBNPHC) {
-        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DEIMCENJPKP(&mut self) -> &mut super::BJKPJIBNPHC::BJKPJIBNPHC {
-        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(super::BJKPJIBNPHC::BJKPJIBNPHC::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DEIMCENJPKP(&mut self) -> super::BJKPJIBNPHC::BJKPJIBNPHC {
-        if self.has_DEIMCENJPKP() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BJKPJIBNPHC::BJKPJIBNPHC::new()
-        }
-    }
-
-    // .FBKIJNOFIAH FNONLFCKDIL = 12;
-
-    pub fn FNONLFCKDIL(&self) -> &super::FBKIJNOFIAH::FBKIJNOFIAH {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v)) => v,
-            _ => <super::FBKIJNOFIAH::FBKIJNOFIAH as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_FNONLFCKDIL(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_FNONLFCKDIL(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FNONLFCKDIL(&mut self, v: super::FBKIJNOFIAH::FBKIJNOFIAH) {
-        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_FNONLFCKDIL(&mut self) -> &mut super::FBKIJNOFIAH::FBKIJNOFIAH {
-        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(super::FBKIJNOFIAH::FBKIJNOFIAH::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_FNONLFCKDIL(&mut self) -> super::FBKIJNOFIAH::FBKIJNOFIAH {
-        if self.has_FNONLFCKDIL() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::FBKIJNOFIAH::FBKIJNOFIAH::new()
-        }
-    }
-
-    // .FBKIJNOFIAH CIDOEGFPHEN = 2;
+    // .FBKIJNOFIAH CIDOEGFPHEN = 1;
 
     pub fn CIDOEGFPHEN(&self) -> &super::FBKIJNOFIAH::FBKIJNOFIAH {
         match self.KKNBOACNCON {
@@ -192,56 +94,56 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // .GIJLACBOPEE HANCFMMMFNF = 5;
+    // .BJKPJIBNPHC DEIMCENJPKP = 2;
 
-    pub fn HANCFMMMFNF(&self) -> &super::GIJLACBOPEE::GIJLACBOPEE {
+    pub fn DEIMCENJPKP(&self) -> &super::BJKPJIBNPHC::BJKPJIBNPHC {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v)) => v,
-            _ => <super::GIJLACBOPEE::GIJLACBOPEE as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v)) => v,
+            _ => <super::BJKPJIBNPHC::BJKPJIBNPHC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HANCFMMMFNF(&mut self) {
+    pub fn clear_DEIMCENJPKP(&mut self) {
         self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_HANCFMMMFNF(&self) -> bool {
+    pub fn has_DEIMCENJPKP(&self) -> bool {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(..)) => true,
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HANCFMMMFNF(&mut self, v: super::GIJLACBOPEE::GIJLACBOPEE) {
-        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(v))
+    pub fn set_DEIMCENJPKP(&mut self, v: super::BJKPJIBNPHC::BJKPJIBNPHC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HANCFMMMFNF(&mut self) -> &mut super::GIJLACBOPEE::GIJLACBOPEE {
-        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(_)) = self.KKNBOACNCON {
+    pub fn mut_DEIMCENJPKP(&mut self) -> &mut super::BJKPJIBNPHC::BJKPJIBNPHC {
+        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(super::GIJLACBOPEE::GIJLACBOPEE::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(super::BJKPJIBNPHC::BJKPJIBNPHC::new()));
         }
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref mut v)) => v,
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HANCFMMMFNF(&mut self) -> super::GIJLACBOPEE::GIJLACBOPEE {
-        if self.has_HANCFMMMFNF() {
+    pub fn take_DEIMCENJPKP(&mut self) -> super::BJKPJIBNPHC::BJKPJIBNPHC {
+        if self.has_DEIMCENJPKP() {
             match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(v)) => v,
+                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GIJLACBOPEE::GIJLACBOPEE::new()
+            super::BJKPJIBNPHC::BJKPJIBNPHC::new()
         }
     }
 
-    // .MCECLBDBENF LMAGJOOLKII = 1;
+    // .MCECLBDBENF LMAGJOOLKII = 3;
 
     pub fn LMAGJOOLKII(&self) -> &super::MCECLBDBENF::MCECLBDBENF {
         match self.KKNBOACNCON {
@@ -290,7 +192,56 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // .JADFEJKNOCO GOLOGIHJOPF = 15;
+    // .FBKIJNOFIAH FNONLFCKDIL = 5;
+
+    pub fn FNONLFCKDIL(&self) -> &super::FBKIJNOFIAH::FBKIJNOFIAH {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v)) => v,
+            _ => <super::FBKIJNOFIAH::FBKIJNOFIAH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_FNONLFCKDIL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_FNONLFCKDIL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FNONLFCKDIL(&mut self, v: super::FBKIJNOFIAH::FBKIJNOFIAH) {
+        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_FNONLFCKDIL(&mut self) -> &mut super::FBKIJNOFIAH::FBKIJNOFIAH {
+        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(super::FBKIJNOFIAH::FBKIJNOFIAH::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_FNONLFCKDIL(&mut self) -> super::FBKIJNOFIAH::FBKIJNOFIAH {
+        if self.has_FNONLFCKDIL() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::FBKIJNOFIAH::FBKIJNOFIAH::new()
+        }
+    }
+
+    // .JADFEJKNOCO GOLOGIHJOPF = 10;
 
     pub fn GOLOGIHJOPF(&self) -> &super::JADFEJKNOCO::JADFEJKNOCO {
         match self.KKNBOACNCON {
@@ -339,7 +290,7 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // .DAEDLFEEGIB FOGBMALOAOK = 10;
+    // .DAEDLFEEGIB FOGBMALOAOK = 12;
 
     pub fn FOGBMALOAOK(&self) -> &super::DAEDLFEEGIB::DAEDLFEEGIB {
         match self.KKNBOACNCON {
@@ -388,7 +339,7 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // uint32 MIFOJPGIFDD = 4;
+    // uint32 MIFOJPGIFDD = 13;
 
     pub fn MIFOJPGIFDD(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -413,32 +364,56 @@ impl LJGKNFCFLLB {
         self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::MIFOJPGIFDD(v))
     }
 
-    // uint32 KPJHKDOMEMJ = 235;
+    // .GIJLACBOPEE HANCFMMMFNF = 14;
 
-    pub fn KPJHKDOMEMJ(&self) -> u32 {
+    pub fn HANCFMMMFNF(&self) -> &super::GIJLACBOPEE::GIJLACBOPEE {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v)) => v,
-            _ => 0,
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v)) => v,
+            _ => <super::GIJLACBOPEE::GIJLACBOPEE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KPJHKDOMEMJ(&mut self) {
+    pub fn clear_HANCFMMMFNF(&mut self) {
         self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_KPJHKDOMEMJ(&self) -> bool {
+    pub fn has_HANCFMMMFNF(&self) -> bool {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(..)) => true,
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KPJHKDOMEMJ(&mut self, v: u32) {
-        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v))
+    pub fn set_HANCFMMMFNF(&mut self, v: super::GIJLACBOPEE::GIJLACBOPEE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(v))
     }
 
-    // .ECPHOKOPKBP KJOAIOHFFMK = 1746;
+    // Mutable pointer to the field.
+    pub fn mut_HANCFMMMFNF(&mut self) -> &mut super::GIJLACBOPEE::GIJLACBOPEE {
+        if let ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(super::GIJLACBOPEE::GIJLACBOPEE::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HANCFMMMFNF(&mut self) -> super::GIJLACBOPEE::GIJLACBOPEE {
+        if self.has_HANCFMMMFNF() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GIJLACBOPEE::GIJLACBOPEE::new()
+        }
+    }
+
+    // .ECPHOKOPKBP KJOAIOHFFMK = 1377;
 
     pub fn KJOAIOHFFMK(&self) -> &super::ECPHOKOPKBP::ECPHOKOPKBP {
         match self.KKNBOACNCON {
@@ -487,7 +462,7 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // .OKOJCBKENEJ GBNOIFNDPJB = 1022;
+    // .OKOJCBKENEJ GBNOIFNDPJB = 1564;
 
     pub fn GBNOIFNDPJB(&self) -> &super::OKOJCBKENEJ::OKOJCBKENEJ {
         match self.KKNBOACNCON {
@@ -536,7 +511,32 @@ impl LJGKNFCFLLB {
         }
     }
 
-    // uint32 KGKJHCBMEFI = 520;
+    // uint32 KPJHKDOMEMJ = 1695;
+
+    pub fn KPJHKDOMEMJ(&self) -> u32 {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_KPJHKDOMEMJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_KPJHKDOMEMJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KPJHKDOMEMJ(&mut self, v: u32) {
+        self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v))
+    }
+
+    // uint32 KGKJHCBMEFI = 1832;
 
     pub fn KGKJHCBMEFI(&self) -> u32 {
         match self.KKNBOACNCON {
@@ -564,20 +564,6 @@ impl LJGKNFCFLLB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BJKPJIBNPHC::BJKPJIBNPHC>(
-            "DEIMCENJPKP",
-            LJGKNFCFLLB::has_DEIMCENJPKP,
-            LJGKNFCFLLB::DEIMCENJPKP,
-            LJGKNFCFLLB::mut_DEIMCENJPKP,
-            LJGKNFCFLLB::set_DEIMCENJPKP,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FBKIJNOFIAH::FBKIJNOFIAH>(
-            "FNONLFCKDIL",
-            LJGKNFCFLLB::has_FNONLFCKDIL,
-            LJGKNFCFLLB::FNONLFCKDIL,
-            LJGKNFCFLLB::mut_FNONLFCKDIL,
-            LJGKNFCFLLB::set_FNONLFCKDIL,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FBKIJNOFIAH::FBKIJNOFIAH>(
             "CIDOEGFPHEN",
             LJGKNFCFLLB::has_CIDOEGFPHEN,
@@ -585,12 +571,12 @@ impl LJGKNFCFLLB {
             LJGKNFCFLLB::mut_CIDOEGFPHEN,
             LJGKNFCFLLB::set_CIDOEGFPHEN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GIJLACBOPEE::GIJLACBOPEE>(
-            "HANCFMMMFNF",
-            LJGKNFCFLLB::has_HANCFMMMFNF,
-            LJGKNFCFLLB::HANCFMMMFNF,
-            LJGKNFCFLLB::mut_HANCFMMMFNF,
-            LJGKNFCFLLB::set_HANCFMMMFNF,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BJKPJIBNPHC::BJKPJIBNPHC>(
+            "DEIMCENJPKP",
+            LJGKNFCFLLB::has_DEIMCENJPKP,
+            LJGKNFCFLLB::DEIMCENJPKP,
+            LJGKNFCFLLB::mut_DEIMCENJPKP,
+            LJGKNFCFLLB::set_DEIMCENJPKP,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCECLBDBENF::MCECLBDBENF>(
             "LMAGJOOLKII",
@@ -598,6 +584,13 @@ impl LJGKNFCFLLB {
             LJGKNFCFLLB::LMAGJOOLKII,
             LJGKNFCFLLB::mut_LMAGJOOLKII,
             LJGKNFCFLLB::set_LMAGJOOLKII,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FBKIJNOFIAH::FBKIJNOFIAH>(
+            "FNONLFCKDIL",
+            LJGKNFCFLLB::has_FNONLFCKDIL,
+            LJGKNFCFLLB::FNONLFCKDIL,
+            LJGKNFCFLLB::mut_FNONLFCKDIL,
+            LJGKNFCFLLB::set_FNONLFCKDIL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JADFEJKNOCO::JADFEJKNOCO>(
             "GOLOGIHJOPF",
@@ -619,11 +612,12 @@ impl LJGKNFCFLLB {
             LJGKNFCFLLB::MIFOJPGIFDD,
             LJGKNFCFLLB::set_MIFOJPGIFDD,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "KPJHKDOMEMJ",
-            LJGKNFCFLLB::has_KPJHKDOMEMJ,
-            LJGKNFCFLLB::KPJHKDOMEMJ,
-            LJGKNFCFLLB::set_KPJHKDOMEMJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GIJLACBOPEE::GIJLACBOPEE>(
+            "HANCFMMMFNF",
+            LJGKNFCFLLB::has_HANCFMMMFNF,
+            LJGKNFCFLLB::HANCFMMMFNF,
+            LJGKNFCFLLB::mut_HANCFMMMFNF,
+            LJGKNFCFLLB::set_HANCFMMMFNF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ECPHOKOPKBP::ECPHOKOPKBP>(
             "KJOAIOHFFMK",
@@ -638,6 +632,12 @@ impl LJGKNFCFLLB {
             LJGKNFCFLLB::GBNOIFNDPJB,
             LJGKNFCFLLB::mut_GBNOIFNDPJB,
             LJGKNFCFLLB::set_GBNOIFNDPJB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "KPJHKDOMEMJ",
+            LJGKNFCFLLB::has_KPJHKDOMEMJ,
+            LJGKNFCFLLB::KPJHKDOMEMJ,
+            LJGKNFCFLLB::set_KPJHKDOMEMJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "KGKJHCBMEFI",
@@ -664,40 +664,40 @@ impl ::protobuf::Message for LJGKNFCFLLB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(is.read_message()?));
-                },
-                98 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(is.read_message()?));
-                },
-                18 => {
+                10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::CIDOEGFPHEN(is.read_message()?));
                 },
-                42 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(is.read_message()?));
+                18 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(is.read_message()?));
                 },
-                10 => {
+                26 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::LMAGJOOLKII(is.read_message()?));
                 },
-                122 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::GOLOGIHJOPF(is.read_message()?));
+                42 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(is.read_message()?));
                 },
                 82 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::GOLOGIHJOPF(is.read_message()?));
+                },
+                98 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::FOGBMALOAOK(is.read_message()?));
                 },
-                32 => {
+                104 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::MIFOJPGIFDD(is.read_uint32()?));
                 },
-                1880 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(is.read_uint32()?));
+                114 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(is.read_message()?));
                 },
-                13970 => {
+                11018 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KJOAIOHFFMK(is.read_message()?));
                 },
-                8178 => {
+                12514 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::GBNOIFNDPJB(is.read_message()?));
                 },
-                4160 => {
+                13560 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(is.read_uint32()?));
+                },
+                14656 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(ljgknfcfllb::KKNBOACNCON::KGKJHCBMEFI(is.read_uint32()?));
                 },
                 tag => {
@@ -714,23 +714,19 @@ impl ::protobuf::Message for LJGKNFCFLLB {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &ljgknfcfllb::KKNBOACNCON::CIDOEGFPHEN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v) => {
+                &ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &ljgknfcfllb::KKNBOACNCON::LMAGJOOLKII(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -743,10 +739,11 @@ impl ::protobuf::Message for LJGKNFCFLLB {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &ljgknfcfllb::KKNBOACNCON::MIFOJPGIFDD(v) => {
-                    my_size += ::protobuf::rt::uint32_size(4, v);
+                    my_size += ::protobuf::rt::uint32_size(13, v);
                 },
-                &ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(235, v);
+                &ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &ljgknfcfllb::KKNBOACNCON::KJOAIOHFFMK(ref v) => {
                     let len = v.compute_size();
@@ -756,8 +753,11 @@ impl ::protobuf::Message for LJGKNFCFLLB {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1695, v);
+                },
                 &ljgknfcfllb::KKNBOACNCON::KGKJHCBMEFI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(520, v);
+                    my_size += ::protobuf::rt::uint32_size(1832, v);
                 },
             };
         }
@@ -769,41 +769,41 @@ impl ::protobuf::Message for LJGKNFCFLLB {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-                },
-                &ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
                 &ljgknfcfllb::KKNBOACNCON::CIDOEGFPHEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-                },
-                &ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
-                &ljgknfcfllb::KKNBOACNCON::LMAGJOOLKII(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &ljgknfcfllb::KKNBOACNCON::GOLOGIHJOPF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &ljgknfcfllb::KKNBOACNCON::DEIMCENJPKP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
-                &ljgknfcfllb::KKNBOACNCON::FOGBMALOAOK(ref v) => {
+                &ljgknfcfllb::KKNBOACNCON::LMAGJOOLKII(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &ljgknfcfllb::KKNBOACNCON::FNONLFCKDIL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &ljgknfcfllb::KKNBOACNCON::GOLOGIHJOPF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &ljgknfcfllb::KKNBOACNCON::MIFOJPGIFDD(v) => {
-                    os.write_uint32(4, v)?;
+                &ljgknfcfllb::KKNBOACNCON::FOGBMALOAOK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
-                &ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v) => {
-                    os.write_uint32(235, v)?;
+                &ljgknfcfllb::KKNBOACNCON::MIFOJPGIFDD(v) => {
+                    os.write_uint32(13, v)?;
+                },
+                &ljgknfcfllb::KKNBOACNCON::HANCFMMMFNF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
                 &ljgknfcfllb::KKNBOACNCON::KJOAIOHFFMK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1746, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1377, v, os)?;
                 },
                 &ljgknfcfllb::KKNBOACNCON::GBNOIFNDPJB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1022, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1564, v, os)?;
+                },
+                &ljgknfcfllb::KKNBOACNCON::KPJHKDOMEMJ(v) => {
+                    os.write_uint32(1695, v)?;
                 },
                 &ljgknfcfllb::KKNBOACNCON::KGKJHCBMEFI(v) => {
-                    os.write_uint32(520, v)?;
+                    os.write_uint32(1832, v)?;
                 },
             };
         }
@@ -872,28 +872,28 @@ pub mod ljgknfcfllb {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:LJGKNFCFLLB.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.DEIMCENJPKP)
-        DEIMCENJPKP(super::super::BJKPJIBNPHC::BJKPJIBNPHC),
-        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.FNONLFCKDIL)
-        FNONLFCKDIL(super::super::FBKIJNOFIAH::FBKIJNOFIAH),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.CIDOEGFPHEN)
         CIDOEGFPHEN(super::super::FBKIJNOFIAH::FBKIJNOFIAH),
-        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.HANCFMMMFNF)
-        HANCFMMMFNF(super::super::GIJLACBOPEE::GIJLACBOPEE),
+        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.DEIMCENJPKP)
+        DEIMCENJPKP(super::super::BJKPJIBNPHC::BJKPJIBNPHC),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.LMAGJOOLKII)
         LMAGJOOLKII(super::super::MCECLBDBENF::MCECLBDBENF),
+        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.FNONLFCKDIL)
+        FNONLFCKDIL(super::super::FBKIJNOFIAH::FBKIJNOFIAH),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.GOLOGIHJOPF)
         GOLOGIHJOPF(super::super::JADFEJKNOCO::JADFEJKNOCO),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.FOGBMALOAOK)
         FOGBMALOAOK(super::super::DAEDLFEEGIB::DAEDLFEEGIB),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.MIFOJPGIFDD)
         MIFOJPGIFDD(u32),
-        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.KPJHKDOMEMJ)
-        KPJHKDOMEMJ(u32),
+        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.HANCFMMMFNF)
+        HANCFMMMFNF(super::super::GIJLACBOPEE::GIJLACBOPEE),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.KJOAIOHFFMK)
         KJOAIOHFFMK(super::super::ECPHOKOPKBP::ECPHOKOPKBP),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.GBNOIFNDPJB)
         GBNOIFNDPJB(super::super::OKOJCBKENEJ::OKOJCBKENEJ),
+        // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.KPJHKDOMEMJ)
+        KPJHKDOMEMJ(u32),
         // @@protoc_insertion_point(oneof_field:LJGKNFCFLLB.KGKJHCBMEFI)
         KGKJHCBMEFI(u32),
     }
@@ -919,20 +919,20 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LJGKNFCFLLB.proto\x1a\x11BJKPJIBNPHC.proto\x1a\x11DAEDLFEEGIB.prot\
     o\x1a\x11ECPHOKOPKBP.proto\x1a\x11FBKIJNOFIAH.proto\x1a\x11GIJLACBOPEE.p\
     roto\x1a\x11JADFEJKNOCO.proto\x1a\x11MCECLBDBENF.proto\x1a\x11OKOJCBKENE\
-    J.proto\"\xce\x04\n\x0bLJGKNFCFLLB\x120\n\x0bDEIMCENJPKP\x18\r\x20\x01(\
-    \x0b2\x0c.BJKPJIBNPHCH\0R\x0bDEIMCENJPKP\x120\n\x0bFNONLFCKDIL\x18\x0c\
-    \x20\x01(\x0b2\x0c.FBKIJNOFIAHH\0R\x0bFNONLFCKDIL\x120\n\x0bCIDOEGFPHEN\
-    \x18\x02\x20\x01(\x0b2\x0c.FBKIJNOFIAHH\0R\x0bCIDOEGFPHEN\x120\n\x0bHANC\
-    FMMMFNF\x18\x05\x20\x01(\x0b2\x0c.GIJLACBOPEEH\0R\x0bHANCFMMMFNF\x120\n\
-    \x0bLMAGJOOLKII\x18\x01\x20\x01(\x0b2\x0c.MCECLBDBENFH\0R\x0bLMAGJOOLKII\
-    \x120\n\x0bGOLOGIHJOPF\x18\x0f\x20\x01(\x0b2\x0c.JADFEJKNOCOH\0R\x0bGOLO\
-    GIHJOPF\x120\n\x0bFOGBMALOAOK\x18\n\x20\x01(\x0b2\x0c.DAEDLFEEGIBH\0R\
-    \x0bFOGBMALOAOK\x12\"\n\x0bMIFOJPGIFDD\x18\x04\x20\x01(\rH\0R\x0bMIFOJPG\
-    IFDD\x12#\n\x0bKPJHKDOMEMJ\x18\xeb\x01\x20\x01(\rH\0R\x0bKPJHKDOMEMJ\x12\
-    1\n\x0bKJOAIOHFFMK\x18\xd2\r\x20\x01(\x0b2\x0c.ECPHOKOPKBPH\0R\x0bKJOAIO\
-    HFFMK\x121\n\x0bGBNOIFNDPJB\x18\xfe\x07\x20\x01(\x0b2\x0c.OKOJCBKENEJH\0\
-    R\x0bGBNOIFNDPJB\x12#\n\x0bKGKJHCBMEFI\x18\x88\x04\x20\x01(\rH\0R\x0bKGK\
-    JHCBMEFIB\r\n\x0bKKNBOACNCONb\x06proto3\
+    J.proto\"\xce\x04\n\x0bLJGKNFCFLLB\x120\n\x0bCIDOEGFPHEN\x18\x01\x20\x01\
+    (\x0b2\x0c.FBKIJNOFIAHH\0R\x0bCIDOEGFPHEN\x120\n\x0bDEIMCENJPKP\x18\x02\
+    \x20\x01(\x0b2\x0c.BJKPJIBNPHCH\0R\x0bDEIMCENJPKP\x120\n\x0bLMAGJOOLKII\
+    \x18\x03\x20\x01(\x0b2\x0c.MCECLBDBENFH\0R\x0bLMAGJOOLKII\x120\n\x0bFNON\
+    LFCKDIL\x18\x05\x20\x01(\x0b2\x0c.FBKIJNOFIAHH\0R\x0bFNONLFCKDIL\x120\n\
+    \x0bGOLOGIHJOPF\x18\n\x20\x01(\x0b2\x0c.JADFEJKNOCOH\0R\x0bGOLOGIHJOPF\
+    \x120\n\x0bFOGBMALOAOK\x18\x0c\x20\x01(\x0b2\x0c.DAEDLFEEGIBH\0R\x0bFOGB\
+    MALOAOK\x12\"\n\x0bMIFOJPGIFDD\x18\r\x20\x01(\rH\0R\x0bMIFOJPGIFDD\x120\
+    \n\x0bHANCFMMMFNF\x18\x0e\x20\x01(\x0b2\x0c.GIJLACBOPEEH\0R\x0bHANCFMMMF\
+    NF\x121\n\x0bKJOAIOHFFMK\x18\xe1\n\x20\x01(\x0b2\x0c.ECPHOKOPKBPH\0R\x0b\
+    KJOAIOHFFMK\x121\n\x0bGBNOIFNDPJB\x18\x9c\x0c\x20\x01(\x0b2\x0c.OKOJCBKE\
+    NEJH\0R\x0bGBNOIFNDPJB\x12#\n\x0bKPJHKDOMEMJ\x18\x9f\r\x20\x01(\rH\0R\
+    \x0bKPJHKDOMEMJ\x12#\n\x0bKGKJHCBMEFI\x18\xa8\x0e\x20\x01(\rH\0R\x0bKGKJ\
+    HCBMEFIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

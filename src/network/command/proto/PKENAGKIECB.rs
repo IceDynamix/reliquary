@@ -79,10 +79,10 @@ impl ::protobuf::Message for PKENAGKIECB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.CLEKAKLPNBP = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.unlock_timestamp = is.read_int64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for PKENAGKIECB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLEKAKLPNBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CLEKAKLPNBP);
+            my_size += ::protobuf::rt::uint32_size(7, self.CLEKAKLPNBP);
         }
         if self.unlock_timestamp != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.unlock_timestamp);
+            my_size += ::protobuf::rt::int64_size(12, self.unlock_timestamp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PKENAGKIECB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLEKAKLPNBP != 0 {
-            os.write_uint32(12, self.CLEKAKLPNBP)?;
+            os.write_uint32(7, self.CLEKAKLPNBP)?;
         }
         if self.unlock_timestamp != 0 {
-            os.write_int64(15, self.unlock_timestamp)?;
+            os.write_int64(12, self.unlock_timestamp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PKENAGKIECB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKENAGKIECB.proto\"Z\n\x0bPKENAGKIECB\x12\x20\n\x0bCLEKAKLPNBP\x18\
-    \x0c\x20\x01(\rR\x0bCLEKAKLPNBP\x12)\n\x10unlock_timestamp\x18\x0f\x20\
+    \x07\x20\x01(\rR\x0bCLEKAKLPNBP\x12)\n\x10unlock_timestamp\x18\x0c\x20\
     \x01(\x03R\x0funlockTimestampb\x06proto3\
 ";
 

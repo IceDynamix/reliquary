@@ -86,13 +86,13 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.FKIIFFFJKJH = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.AJIMPLLIFIE = is.read_uint32()?;
                 },
-                106 => {
+                122 => {
                     self.title = is.read_string()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for IGOGKCCOIIF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FKIIFFFJKJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FKIIFFFJKJH);
+            my_size += ::protobuf::rt::uint32_size(5, self.FKIIFFFJKJH);
         }
         if self.AJIMPLLIFIE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AJIMPLLIFIE);
+            my_size += ::protobuf::rt::uint32_size(12, self.AJIMPLLIFIE);
         }
         if !self.title.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.title);
+            my_size += ::protobuf::rt::string_size(15, &self.title);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for IGOGKCCOIIF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FKIIFFFJKJH != 0 {
-            os.write_uint32(6, self.FKIIFFFJKJH)?;
+            os.write_uint32(5, self.FKIIFFFJKJH)?;
         }
         if self.AJIMPLLIFIE != 0 {
-            os.write_uint32(7, self.AJIMPLLIFIE)?;
+            os.write_uint32(12, self.AJIMPLLIFIE)?;
         }
         if !self.title.is_empty() {
-            os.write_string(13, &self.title)?;
+            os.write_string(15, &self.title)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for IGOGKCCOIIF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IGOGKCCOIIF.proto\"g\n\x0bIGOGKCCOIIF\x12\x20\n\x0bFKIIFFFJKJH\x18\
-    \x06\x20\x01(\rR\x0bFKIIFFFJKJH\x12\x20\n\x0bAJIMPLLIFIE\x18\x07\x20\x01\
-    (\rR\x0bAJIMPLLIFIE\x12\x14\n\x05title\x18\r\x20\x01(\tR\x05titleb\x06pr\
-    oto3\
+    \x05\x20\x01(\rR\x0bFKIIFFFJKJH\x12\x20\n\x0bAJIMPLLIFIE\x18\x0c\x20\x01\
+    (\rR\x0bAJIMPLLIFIE\x12\x14\n\x05title\x18\x0f\x20\x01(\tR\x05titleb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

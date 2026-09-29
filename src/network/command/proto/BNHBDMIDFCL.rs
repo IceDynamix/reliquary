@@ -48,7 +48,7 @@ impl BNHBDMIDFCL {
         ::std::default::Default::default()
     }
 
-    // .JAAJAPNFMGO DOKPHNPNCPN = 661;
+    // .JAAJAPNFMGO DOKPHNPNCPN = 649;
 
     pub fn DOKPHNPNCPN(&self) -> &super::JAAJAPNFMGO::JAAJAPNFMGO {
         match self.CHJNPHDLMKL {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for BNHBDMIDFCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                5290 => {
+                5194 => {
                     self.CHJNPHDLMKL = ::std::option::Option::Some(bnhbdmidfcl::CHJNPHDLMKL::DOKPHNPNCPN(is.read_message()?));
                 },
                 tag => {
@@ -150,7 +150,7 @@ impl ::protobuf::Message for BNHBDMIDFCL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.CHJNPHDLMKL {
             match v {
@@ -167,12 +167,12 @@ impl ::protobuf::Message for BNHBDMIDFCL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(8, self.unique_id)?;
+            os.write_uint32(4, self.unique_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.CHJNPHDLMKL {
             match v {
                 &bnhbdmidfcl::CHJNPHDLMKL::DOKPHNPNCPN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(661, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(649, v, os)?;
                 },
             };
         }
@@ -255,8 +255,8 @@ pub mod bnhbdmidfcl {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BNHBDMIDFCL.proto\x1a\x11JAAJAPNFMGO.proto\"l\n\x0bBNHBDMIDFCL\x12\
-    \x1b\n\tunique_id\x18\x08\x20\x01(\rR\x08uniqueId\x121\n\x0bDOKPHNPNCPN\
-    \x18\x95\x05\x20\x01(\x0b2\x0c.JAAJAPNFMGOH\0R\x0bDOKPHNPNCPNB\r\n\x0bCH\
+    \x1b\n\tunique_id\x18\x04\x20\x01(\rR\x08uniqueId\x121\n\x0bDOKPHNPNCPN\
+    \x18\x89\x05\x20\x01(\x0b2\x0c.JAAJAPNFMGOH\0R\x0bDOKPHNPNCPNB\r\n\x0bCH\
     JNPHDLMKLb\x06proto3\
 ";
 

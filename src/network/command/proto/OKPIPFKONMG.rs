@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OKPIPFKONMG {
     // message fields
-    // @@protoc_insertion_point(field:OKPIPFKONMG.LDHIJAHNEGK)
-    pub LDHIJAHNEGK: ::std::vec::Vec<super::GKFGIMIBBHF::GKFGIMIBBHF>,
-    // @@protoc_insertion_point(field:OKPIPFKONMG.CKHCLKOALKE)
-    pub CKHCLKOALKE: u32,
     // @@protoc_insertion_point(field:OKPIPFKONMG.status)
     pub status: ::protobuf::EnumOrUnknown<super::PONHNPLLKAB::PONHNPLLKAB>,
+    // @@protoc_insertion_point(field:OKPIPFKONMG.CKHCLKOALKE)
+    pub CKHCLKOALKE: u32,
+    // @@protoc_insertion_point(field:OKPIPFKONMG.LDHIJAHNEGK)
+    pub LDHIJAHNEGK: ::std::vec::Vec<super::GKFGIMIBBHF::GKFGIMIBBHF>,
     // special fields
     // @@protoc_insertion_point(special_field:OKPIPFKONMG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl OKPIPFKONMG {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LDHIJAHNEGK",
-            |m: &OKPIPFKONMG| { &m.LDHIJAHNEGK },
-            |m: &mut OKPIPFKONMG| { &mut m.LDHIJAHNEGK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &OKPIPFKONMG| { &m.status },
+            |m: &mut OKPIPFKONMG| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CKHCLKOALKE",
             |m: &OKPIPFKONMG| { &m.CKHCLKOALKE },
             |m: &mut OKPIPFKONMG| { &mut m.CKHCLKOALKE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &OKPIPFKONMG| { &m.status },
-            |m: &mut OKPIPFKONMG| { &mut m.status },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LDHIJAHNEGK",
+            |m: &OKPIPFKONMG| { &m.LDHIJAHNEGK },
+            |m: &mut OKPIPFKONMG| { &mut m.LDHIJAHNEGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OKPIPFKONMG>(
             "OKPIPFKONMG",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for OKPIPFKONMG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.LDHIJAHNEGK.push(is.read_message()?);
+                24 => {
+                    self.status = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                56 => {
                     self.CKHCLKOALKE = is.read_uint32()?;
                 },
-                120 => {
-                    self.status = is.read_enum_or_unknown()?;
+                74 => {
+                    self.LDHIJAHNEGK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for OKPIPFKONMG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PONHNPLLKAB::PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL) {
+            my_size += ::protobuf::rt::int32_size(3, self.status.value());
+        }
+        if self.CKHCLKOALKE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CKHCLKOALKE);
+        }
         for value in &self.LDHIJAHNEGK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CKHCLKOALKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CKHCLKOALKE);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PONHNPLLKAB::PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PONHNPLLKAB::PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.CKHCLKOALKE != 0 {
+            os.write_uint32(7, self.CKHCLKOALKE)?;
+        }
         for v in &self.LDHIJAHNEGK {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.CKHCLKOALKE != 0 {
-            os.write_uint32(10, self.CKHCLKOALKE)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PONHNPLLKAB::PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for OKPIPFKONMG {
     }
 
     fn clear(&mut self) {
-        self.LDHIJAHNEGK.clear();
-        self.CKHCLKOALKE = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::PONHNPLLKAB::PONHNPLLKAB::PONHNPLLKAB_GAJGBBFELEL);
+        self.CKHCLKOALKE = 0;
+        self.LDHIJAHNEGK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OKPIPFKONMG {
         static instance: OKPIPFKONMG = OKPIPFKONMG {
-            LDHIJAHNEGK: ::std::vec::Vec::new(),
-            CKHCLKOALKE: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            CKHCLKOALKE: 0,
+            LDHIJAHNEGK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for OKPIPFKONMG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKPIPFKONMG.proto\x1a\x11GKFGIMIBBHF.proto\x1a\x11PONHNPLLKAB.prot\
-    o\"\x85\x01\n\x0bOKPIPFKONMG\x12.\n\x0bLDHIJAHNEGK\x18\t\x20\x03(\x0b2\
-    \x0c.GKFGIMIBBHFR\x0bLDHIJAHNEGK\x12\x20\n\x0bCKHCLKOALKE\x18\n\x20\x01(\
-    \rR\x0bCKHCLKOALKE\x12$\n\x06status\x18\x0f\x20\x01(\x0e2\x0c.PONHNPLLKA\
-    BR\x06statusb\x06proto3\
+    o\"\x85\x01\n\x0bOKPIPFKONMG\x12$\n\x06status\x18\x03\x20\x01(\x0e2\x0c.\
+    PONHNPLLKABR\x06status\x12\x20\n\x0bCKHCLKOALKE\x18\x07\x20\x01(\rR\x0bC\
+    KHCLKOALKE\x12.\n\x0bLDHIJAHNEGK\x18\t\x20\x03(\x0b2\x0c.GKFGIMIBBHFR\
+    \x0bLDHIJAHNEGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

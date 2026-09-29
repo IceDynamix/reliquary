@@ -79,10 +79,10 @@ impl ::protobuf::Message for FriendHistoryInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                8 => {
                     self.last_send_time = is.read_int64()?;
                 },
-                120 => {
+                64 => {
                     self.contact_side = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for FriendHistoryInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.last_send_time != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.last_send_time);
+            my_size += ::protobuf::rt::int64_size(1, self.last_send_time);
         }
         if self.contact_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.contact_side);
+            my_size += ::protobuf::rt::uint32_size(8, self.contact_side);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FriendHistoryInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.last_send_time != 0 {
-            os.write_int64(12, self.last_send_time)?;
+            os.write_int64(1, self.last_send_time)?;
         }
         if self.contact_side != 0 {
-            os.write_uint32(15, self.contact_side)?;
+            os.write_uint32(8, self.contact_side)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FriendHistoryInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17FriendHistoryInfo.proto\"\\\n\x11FriendHistoryInfo\x12$\n\x0elast_\
-    send_time\x18\x0c\x20\x01(\x03R\x0clastSendTime\x12!\n\x0ccontact_side\
-    \x18\x0f\x20\x01(\rR\x0bcontactSideb\x06proto3\
+    send_time\x18\x01\x20\x01(\x03R\x0clastSendTime\x12!\n\x0ccontact_side\
+    \x18\x08\x20\x01(\rR\x0bcontactSideb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

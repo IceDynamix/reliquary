@@ -79,10 +79,10 @@ impl ::protobuf::Message for EABDMCJDJFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.skill_id = is.read_uint32()?;
                 },
-                16 => {
+                64 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EABDMCJDJFA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.skill_id);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EABDMCJDJFA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.skill_id != 0 {
-            os.write_uint32(1, self.skill_id)?;
+            os.write_uint32(3, self.skill_id)?;
         }
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(8, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EABDMCJDJFA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EABDMCJDJFA.proto\">\n\x0bEABDMCJDJFA\x12\x19\n\x08skill_id\x18\
-    \x01\x20\x01(\rR\x07skillId\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05le\
+    \x03\x20\x01(\rR\x07skillId\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05le\
     velb\x06proto3\
 ";
 

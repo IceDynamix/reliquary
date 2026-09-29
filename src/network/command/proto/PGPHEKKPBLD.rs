@@ -50,7 +50,7 @@ impl PGPHEKKPBLD {
         ::std::default::Default::default()
     }
 
-    // .NMKNOLPFJDN AGLMEDOBMAL = 6;
+    // .NMKNOLPFJDN AGLMEDOBMAL = 5;
 
     pub fn AGLMEDOBMAL(&self) -> &super::NMKNOLPFJDN::NMKNOLPFJDN {
         match self.JMPNIHHAMPH {
@@ -138,13 +138,13 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                64 => {
                     self.DLFHABGGHFF = is.read_uint32()?;
                 },
-                120 => {
+                104 => {
                     self.AFDNFCBCFBF = is.read_uint32()?;
                 },
-                50 => {
+                42 => {
                     self.JMPNIHHAMPH = ::std::option::Option::Some(pgphekkpbld::JMPNIHHAMPH::AGLMEDOBMAL(is.read_message()?));
                 },
                 tag => {
@@ -160,10 +160,10 @@ impl ::protobuf::Message for PGPHEKKPBLD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DLFHABGGHFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DLFHABGGHFF);
+            my_size += ::protobuf::rt::uint32_size(8, self.DLFHABGGHFF);
         }
         if self.AFDNFCBCFBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AFDNFCBCFBF);
+            my_size += ::protobuf::rt::uint32_size(13, self.AFDNFCBCFBF);
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
@@ -180,15 +180,15 @@ impl ::protobuf::Message for PGPHEKKPBLD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DLFHABGGHFF != 0 {
-            os.write_uint32(10, self.DLFHABGGHFF)?;
+            os.write_uint32(8, self.DLFHABGGHFF)?;
         }
         if self.AFDNFCBCFBF != 0 {
-            os.write_uint32(15, self.AFDNFCBCFBF)?;
+            os.write_uint32(13, self.AFDNFCBCFBF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JMPNIHHAMPH {
             match v {
                 &pgphekkpbld::JMPNIHHAMPH::AGLMEDOBMAL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -273,9 +273,9 @@ pub mod pgphekkpbld {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGPHEKKPBLD.proto\x1a\x11NMKNOLPFJDN.proto\"\x92\x01\n\x0bPGPHEKKP\
-    BLD\x12\x20\n\x0bDLFHABGGHFF\x18\n\x20\x01(\rR\x0bDLFHABGGHFF\x12\x20\n\
-    \x0bAFDNFCBCFBF\x18\x0f\x20\x01(\rR\x0bAFDNFCBCFBF\x120\n\x0bAGLMEDOBMAL\
-    \x18\x06\x20\x01(\x0b2\x0c.NMKNOLPFJDNH\0R\x0bAGLMEDOBMALB\r\n\x0bJMPNIH\
+    BLD\x12\x20\n\x0bDLFHABGGHFF\x18\x08\x20\x01(\rR\x0bDLFHABGGHFF\x12\x20\
+    \n\x0bAFDNFCBCFBF\x18\r\x20\x01(\rR\x0bAFDNFCBCFBF\x120\n\x0bAGLMEDOBMAL\
+    \x18\x05\x20\x01(\x0b2\x0c.NMKNOLPFJDNH\0R\x0bAGLMEDOBMALB\r\n\x0bJMPNIH\
     HAMPHb\x06proto3\
 ";
 

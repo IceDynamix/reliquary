@@ -146,6 +146,18 @@ pub struct AvatarBattleInfo {
     pub GEHEJPPCBLK: ::protobuf::MessageField<super::ABDOKOFEHMH::ABDOKOFEHMH>,
     // @@protoc_insertion_point(field:AvatarBattleInfo.OKMHKBOJBOB)
     pub OKMHKBOJBOB: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.NEMOMKPCCMG)
+    pub NEMOMKPCCMG: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.LIOCBCEJAIF)
+    pub LIOCBCEJAIF: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.PCDGLDDDKEC)
+    pub PCDGLDDDKEC: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.LPNGINGOEDF)
+    pub LPNGINGOEDF: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.DFLFMCIIGPK)
+    pub DFLFMCIIGPK: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.EDIODPKDIHP)
+    pub EDIODPKDIHP: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -163,7 +175,7 @@ impl AvatarBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(59);
+        let mut fields = ::std::vec::Vec::with_capacity(65);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
@@ -460,6 +472,36 @@ impl AvatarBattleInfo {
             |m: &AvatarBattleInfo| { &m.OKMHKBOJBOB },
             |m: &mut AvatarBattleInfo| { &mut m.OKMHKBOJBOB },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEMOMKPCCMG",
+            |m: &AvatarBattleInfo| { &m.NEMOMKPCCMG },
+            |m: &mut AvatarBattleInfo| { &mut m.NEMOMKPCCMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIOCBCEJAIF",
+            |m: &AvatarBattleInfo| { &m.LIOCBCEJAIF },
+            |m: &mut AvatarBattleInfo| { &mut m.LIOCBCEJAIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCDGLDDDKEC",
+            |m: &AvatarBattleInfo| { &m.PCDGLDDDKEC },
+            |m: &mut AvatarBattleInfo| { &mut m.PCDGLDDDKEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LPNGINGOEDF",
+            |m: &AvatarBattleInfo| { &m.LPNGINGOEDF },
+            |m: &mut AvatarBattleInfo| { &mut m.LPNGINGOEDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DFLFMCIIGPK",
+            |m: &AvatarBattleInfo| { &m.DFLFMCIIGPK },
+            |m: &mut AvatarBattleInfo| { &mut m.DFLFMCIIGPK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EDIODPKDIHP",
+            |m: &AvatarBattleInfo| { &m.EDIODPKDIHP },
+            |m: &mut AvatarBattleInfo| { &mut m.EDIODPKDIHP },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarBattleInfo>(
             "AvatarBattleInfo",
             fields,
@@ -654,6 +696,24 @@ impl ::protobuf::Message for AvatarBattleInfo {
                 },
                 472 => {
                     self.OKMHKBOJBOB = is.read_uint32()?;
+                },
+                481 => {
+                    self.NEMOMKPCCMG = is.read_double()?;
+                },
+                489 => {
+                    self.LIOCBCEJAIF = is.read_double()?;
+                },
+                497 => {
+                    self.PCDGLDDDKEC = is.read_double()?;
+                },
+                505 => {
+                    self.LPNGINGOEDF = is.read_double()?;
+                },
+                513 => {
+                    self.DFLFMCIIGPK = is.read_double()?;
+                },
+                521 => {
+                    self.EDIODPKDIHP = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -858,6 +918,24 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.OKMHKBOJBOB != 0 {
             my_size += ::protobuf::rt::uint32_size(59, self.OKMHKBOJBOB);
         }
+        if self.NEMOMKPCCMG != 0. {
+            my_size += 2 + 8;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            my_size += 2 + 8;
+        }
+        if self.PCDGLDDDKEC != 0. {
+            my_size += 2 + 8;
+        }
+        if self.LPNGINGOEDF != 0. {
+            my_size += 2 + 8;
+        }
+        if self.DFLFMCIIGPK != 0. {
+            my_size += 2 + 8;
+        }
+        if self.EDIODPKDIHP != 0. {
+            my_size += 2 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -1041,6 +1119,24 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.OKMHKBOJBOB != 0 {
             os.write_uint32(59, self.OKMHKBOJBOB)?;
         }
+        if self.NEMOMKPCCMG != 0. {
+            os.write_double(60, self.NEMOMKPCCMG)?;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            os.write_double(61, self.LIOCBCEJAIF)?;
+        }
+        if self.PCDGLDDDKEC != 0. {
+            os.write_double(62, self.PCDGLDDDKEC)?;
+        }
+        if self.LPNGINGOEDF != 0. {
+            os.write_double(63, self.LPNGINGOEDF)?;
+        }
+        if self.DFLFMCIIGPK != 0. {
+            os.write_double(64, self.DFLFMCIIGPK)?;
+        }
+        if self.EDIODPKDIHP != 0. {
+            os.write_double(65, self.EDIODPKDIHP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -1117,6 +1213,12 @@ impl ::protobuf::Message for AvatarBattleInfo {
         self.FDMEEDEJCCP.clear();
         self.GEHEJPPCBLK.clear();
         self.OKMHKBOJBOB = 0;
+        self.NEMOMKPCCMG = 0.;
+        self.LIOCBCEJAIF = 0.;
+        self.PCDGLDDDKEC = 0.;
+        self.LPNGINGOEDF = 0.;
+        self.DFLFMCIIGPK = 0.;
+        self.EDIODPKDIHP = 0.;
         self.special_fields.clear();
     }
 
@@ -1181,6 +1283,12 @@ impl ::protobuf::Message for AvatarBattleInfo {
             FDMEEDEJCCP: ::protobuf::MessageField::none(),
             GEHEJPPCBLK: ::protobuf::MessageField::none(),
             OKMHKBOJBOB: 0,
+            NEMOMKPCCMG: 0.,
+            LIOCBCEJAIF: 0.,
+            PCDGLDDDKEC: 0.,
+            LPNGINGOEDF: 0.,
+            DFLFMCIIGPK: 0.,
+            EDIODPKDIHP: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -1209,7 +1317,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     eProperty.proto\x1a\x14AvatarProperty.proto\x1a\x15AvatarSkillTree.proto\
     \x1a\x10AvatarType.proto\x1a\x11BattleRelic.proto\x1a\x11CFDHDBNIHPL.pro\
     to\x1a\x11EPNAONKOHBO.proto\x1a\x17EquipmentProperty.proto\x1a\x16SkillU\
-    seProperty.proto\x1a\x11SpAddSource.proto\"\xd4\x12\n\x10AvatarBattleInf\
+    seProperty.proto\x1a\x11SpAddSource.proto\"\xa0\x14\n\x10AvatarBattleInf\
     o\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTyp\
     e\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12!\n\x0cavatar_level\x18\
     \x03\x20\x01(\rR\x0bavatarLevel\x12\x1f\n\x0bavatar_rank\x18\x04\x20\x01\
@@ -1263,7 +1371,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x188\x20\x01(\rR\x0bMEBKILMPMGA\x12.\n\x0bFDMEEDEJCCP\x189\x20\x01(\x0b\
     2\x0c.CFDHDBNIHPLR\x0bFDMEEDEJCCP\x12.\n\x0bGEHEJPPCBLK\x18:\x20\x01(\
     \x0b2\x0c.ABDOKOFEHMHR\x0bGEHEJPPCBLK\x12\x20\n\x0bOKMHKBOJBOB\x18;\x20\
-    \x01(\rR\x0bOKMHKBOJBOBb\x06proto3\
+    \x01(\rR\x0bOKMHKBOJBOB\x12\x20\n\x0bNEMOMKPCCMG\x18<\x20\x01(\x01R\x0bN\
+    EMOMKPCCMG\x12\x20\n\x0bLIOCBCEJAIF\x18=\x20\x01(\x01R\x0bLIOCBCEJAIF\
+    \x12\x20\n\x0bPCDGLDDDKEC\x18>\x20\x01(\x01R\x0bPCDGLDDDKEC\x12\x20\n\
+    \x0bLPNGINGOEDF\x18?\x20\x01(\x01R\x0bLPNGINGOEDF\x12\x20\n\x0bDFLFMCIIG\
+    PK\x18@\x20\x01(\x01R\x0bDFLFMCIIGPK\x12\x20\n\x0bEDIODPKDIHP\x18A\x20\
+    \x01(\x01R\x0bEDIODPKDIHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

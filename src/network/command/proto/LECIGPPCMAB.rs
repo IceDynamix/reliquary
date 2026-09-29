@@ -79,13 +79,13 @@ impl ::protobuf::Message for LECIGPPCMAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                58 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.AOLIEDBCNBN)?;
                 },
-                56 => {
+                48 => {
                     self.AOLIEDBCNBN.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for LECIGPPCMAB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AOLIEDBCNBN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.AOLIEDBCNBN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for LECIGPPCMAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(3, self.interacted_prop_entity_id)?;
+            os.write_uint32(2, self.interacted_prop_entity_id)?;
         }
-        os.write_repeated_packed_uint32(7, &self.AOLIEDBCNBN)?;
+        os.write_repeated_packed_uint32(6, &self.AOLIEDBCNBN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for LECIGPPCMAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LECIGPPCMAB.proto\"j\n\x0bLECIGPPCMAB\x129\n\x19interacted_prop_en\
-    tity_id\x18\x03\x20\x01(\rR\x16interactedPropEntityId\x12\x20\n\x0bAOLIE\
-    DBCNBN\x18\x07\x20\x03(\rR\x0bAOLIEDBCNBNb\x06proto3\
+    tity_id\x18\x02\x20\x01(\rR\x16interactedPropEntityId\x12\x20\n\x0bAOLIE\
+    DBCNBN\x18\x06\x20\x03(\rR\x0bAOLIEDBCNBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

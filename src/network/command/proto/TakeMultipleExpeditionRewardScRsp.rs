@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMultipleExpeditionRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.BJMGDBCHEAN)
-    pub BJMGDBCHEAN: i64,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.NPCMKBNJABA)
     pub NPCMKBNJABA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.BJMGDBCHEAN)
+    pub BJMGDBCHEAN: i64,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.DJOBNPIAEJP)
@@ -55,15 +55,15 @@ impl TakeMultipleExpeditionRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJMGDBCHEAN",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.BJMGDBCHEAN },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.BJMGDBCHEAN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NPCMKBNJABA",
             |m: &TakeMultipleExpeditionRewardScRsp| { &m.NPCMKBNJABA },
             |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.NPCMKBNJABA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJMGDBCHEAN",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.BJMGDBCHEAN },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.BJMGDBCHEAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.BJMGDBCHEAN = is.read_int64()?;
-                },
-                34 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NPCMKBNJABA)?;
                 },
-                32 => {
+                64 => {
                     self.NPCMKBNJABA.push(is.read_uint32()?);
                 },
-                64 => {
+                80 => {
+                    self.BJMGDBCHEAN = is.read_int64()?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                122 => {
                     self.DJOBNPIAEJP.push(is.read_message()?);
                 },
                 tag => {
@@ -120,12 +120,12 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NPCMKBNJABA);
         if self.BJMGDBCHEAN != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.BJMGDBCHEAN);
+            my_size += ::protobuf::rt::int64_size(10, self.BJMGDBCHEAN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.NPCMKBNJABA);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         for value in &self.DJOBNPIAEJP {
             let len = value.compute_size();
@@ -137,15 +137,15 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(8, &self.NPCMKBNJABA)?;
         if self.BJMGDBCHEAN != 0 {
-            os.write_int64(2, self.BJMGDBCHEAN)?;
+            os.write_int64(10, self.BJMGDBCHEAN)?;
         }
-        os.write_repeated_packed_uint32(4, &self.NPCMKBNJABA)?;
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         for v in &self.DJOBNPIAEJP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.BJMGDBCHEAN = 0;
         self.NPCMKBNJABA.clear();
+        self.BJMGDBCHEAN = 0;
         self.retcode = 0;
         self.DJOBNPIAEJP.clear();
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
 
     fn default_instance() -> &'static TakeMultipleExpeditionRewardScRsp {
         static instance: TakeMultipleExpeditionRewardScRsp = TakeMultipleExpeditionRewardScRsp {
-            BJMGDBCHEAN: 0,
             NPCMKBNJABA: ::std::vec::Vec::new(),
+            BJMGDBCHEAN: 0,
             retcode: 0,
             DJOBNPIAEJP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeMultipleExpeditionRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TakeMultipleExpeditionRewardScRsp.proto\x1a\x0eItemList.proto\"\xae\
-    \x01\n!TakeMultipleExpeditionRewardScRsp\x12\x20\n\x0bBJMGDBCHEAN\x18\
-    \x02\x20\x01(\x03R\x0bBJMGDBCHEAN\x12\x20\n\x0bNPCMKBNJABA\x18\x04\x20\
-    \x03(\rR\x0bNPCMKBNJABA\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retc\
-    ode\x12+\n\x0bDJOBNPIAEJP\x18\t\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJP\
-    b\x06proto3\
+    \x01\n!TakeMultipleExpeditionRewardScRsp\x12\x20\n\x0bNPCMKBNJABA\x18\
+    \x08\x20\x03(\rR\x0bNPCMKBNJABA\x12\x20\n\x0bBJMGDBCHEAN\x18\n\x20\x01(\
+    \x03R\x0bBJMGDBCHEAN\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
+    \x12+\n\x0bDJOBNPIAEJP\x18\x0f\x20\x03(\x0b2\t.ItemListR\x0bDJOBNPIAEJPb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

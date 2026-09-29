@@ -45,7 +45,7 @@ impl HMMHDEKAHEA {
         ::std::default::Default::default()
     }
 
-    // bool IHPJDDCIIDB = 10;
+    // bool IHPJDDCIIDB = 5;
 
     pub fn IHPJDDCIIDB(&self) -> bool {
         match self.NEBNJDMFELO {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HMMHDEKAHEA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.NEBNJDMFELO = ::std::option::Option::Some(hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(is.read_bool()?));
                 },
                 tag => {
@@ -129,7 +129,7 @@ impl ::protobuf::Message for HMMHDEKAHEA {
         if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
                 &hmmhdekahea::NEBNJDMFELO::IHPJDDCIIDB(v) => {
-                    os.write_bool(10, v)?;
+                    os.write_bool(5, v)?;
                 },
             };
         }
@@ -209,8 +209,8 @@ pub mod hmmhdekahea {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HMMHDEKAHEA.proto\"@\n\x0bHMMHDEKAHEA\x12\"\n\x0bIHPJDDCIIDB\x18\n\
-    \x20\x01(\x08H\0R\x0bIHPJDDCIIDBB\r\n\x0bNEBNJDMFELOb\x06proto3\
+    \n\x11HMMHDEKAHEA.proto\"@\n\x0bHMMHDEKAHEA\x12\"\n\x0bIHPJDDCIIDB\x18\
+    \x05\x20\x01(\x08H\0R\x0bIHPJDDCIIDBB\r\n\x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

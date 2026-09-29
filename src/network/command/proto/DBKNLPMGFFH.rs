@@ -72,7 +72,7 @@ impl ::protobuf::Message for DBKNLPMGFFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.gold = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for DBKNLPMGFFH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.gold != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.gold);
+            my_size += ::protobuf::rt::uint32_size(11, self.gold);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for DBKNLPMGFFH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.gold != 0 {
-            os.write_uint32(1, self.gold)?;
+            os.write_uint32(11, self.gold)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for DBKNLPMGFFH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DBKNLPMGFFH.proto\"!\n\x0bDBKNLPMGFFH\x12\x12\n\x04gold\x18\x01\
+    \n\x11DBKNLPMGFFH.proto\"!\n\x0bDBKNLPMGFFH\x12\x12\n\x04gold\x18\x0b\
     \x20\x01(\rR\x04goldb\x06proto3\
 ";
 

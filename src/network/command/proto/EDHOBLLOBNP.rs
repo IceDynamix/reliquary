@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EDHOBLLOBNP {
     // message fields
+    // @@protoc_insertion_point(field:EDHOBLLOBNP.NELBBCIGIGF)
+    pub NELBBCIGIGF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EDHOBLLOBNP.index)
     pub index: u32,
     // @@protoc_insertion_point(field:EDHOBLLOBNP.JJPMDBCPJBA)
     pub JJPMDBCPJBA: u32,
-    // @@protoc_insertion_point(field:EDHOBLLOBNP.NELBBCIGIGF)
-    pub NELBBCIGIGF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:EDHOBLLOBNP.OBGMKBIOMKB)
     pub OBGMKBIOMKB: ::std::vec::Vec<u32>,
     // special fields
@@ -55,6 +55,11 @@ impl EDHOBLLOBNP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NELBBCIGIGF",
+            |m: &EDHOBLLOBNP| { &m.NELBBCIGIGF },
+            |m: &mut EDHOBLLOBNP| { &mut m.NELBBCIGIGF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &EDHOBLLOBNP| { &m.index },
@@ -64,11 +69,6 @@ impl EDHOBLLOBNP {
             "JJPMDBCPJBA",
             |m: &EDHOBLLOBNP| { &m.JJPMDBCPJBA },
             |m: &mut EDHOBLLOBNP| { &mut m.JJPMDBCPJBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NELBBCIGIGF",
-            |m: &EDHOBLLOBNP| { &m.NELBBCIGIGF },
-            |m: &mut EDHOBLLOBNP| { &mut m.NELBBCIGIGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OBGMKBIOMKB",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.index = is.read_uint32()?;
-                },
-                32 => {
-                    self.JJPMDBCPJBA = is.read_uint32()?;
-                },
-                58 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.NELBBCIGIGF)?;
                 },
-                56 => {
+                16 => {
                     self.NELBBCIGIGF.push(is.read_uint32()?);
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OBGMKBIOMKB)?;
+                48 => {
+                    self.index = is.read_uint32()?;
                 },
                 88 => {
+                    self.JJPMDBCPJBA = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OBGMKBIOMKB)?;
+                },
+                120 => {
                     self.OBGMKBIOMKB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -123,28 +123,28 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NELBBCIGIGF);
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.index);
+            my_size += ::protobuf::rt::uint32_size(6, self.index);
         }
         if self.JJPMDBCPJBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JJPMDBCPJBA);
+            my_size += ::protobuf::rt::uint32_size(11, self.JJPMDBCPJBA);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.NELBBCIGIGF);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.OBGMKBIOMKB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OBGMKBIOMKB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(2, &self.NELBBCIGIGF)?;
         if self.index != 0 {
-            os.write_uint32(3, self.index)?;
+            os.write_uint32(6, self.index)?;
         }
         if self.JJPMDBCPJBA != 0 {
-            os.write_uint32(4, self.JJPMDBCPJBA)?;
+            os.write_uint32(11, self.JJPMDBCPJBA)?;
         }
-        os.write_repeated_packed_uint32(7, &self.NELBBCIGIGF)?;
-        os.write_repeated_packed_uint32(11, &self.OBGMKBIOMKB)?;
+        os.write_repeated_packed_uint32(15, &self.OBGMKBIOMKB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,18 +162,18 @@ impl ::protobuf::Message for EDHOBLLOBNP {
     }
 
     fn clear(&mut self) {
+        self.NELBBCIGIGF.clear();
         self.index = 0;
         self.JJPMDBCPJBA = 0;
-        self.NELBBCIGIGF.clear();
         self.OBGMKBIOMKB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EDHOBLLOBNP {
         static instance: EDHOBLLOBNP = EDHOBLLOBNP {
+            NELBBCIGIGF: ::std::vec::Vec::new(),
             index: 0,
             JJPMDBCPJBA: 0,
-            NELBBCIGIGF: ::std::vec::Vec::new(),
             OBGMKBIOMKB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for EDHOBLLOBNP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EDHOBLLOBNP.proto\"\x89\x01\n\x0bEDHOBLLOBNP\x12\x14\n\x05index\
-    \x18\x03\x20\x01(\rR\x05index\x12\x20\n\x0bJJPMDBCPJBA\x18\x04\x20\x01(\
-    \rR\x0bJJPMDBCPJBA\x12\x20\n\x0bNELBBCIGIGF\x18\x07\x20\x03(\rR\x0bNELBB\
-    CIGIGF\x12\x20\n\x0bOBGMKBIOMKB\x18\x0b\x20\x03(\rR\x0bOBGMKBIOMKBb\x06p\
-    roto3\
+    \n\x11EDHOBLLOBNP.proto\"\x89\x01\n\x0bEDHOBLLOBNP\x12\x20\n\x0bNELBBCIG\
+    IGF\x18\x02\x20\x03(\rR\x0bNELBBCIGIGF\x12\x14\n\x05index\x18\x06\x20\
+    \x01(\rR\x05index\x12\x20\n\x0bJJPMDBCPJBA\x18\x0b\x20\x01(\rR\x0bJJPMDB\
+    CPJBA\x12\x20\n\x0bOBGMKBIOMKB\x18\x0f\x20\x03(\rR\x0bOBGMKBIOMKBb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

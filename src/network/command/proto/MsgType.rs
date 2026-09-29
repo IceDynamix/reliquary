@@ -49,6 +49,10 @@ pub enum MsgType {
     MsgType_AiPamRelicInterp = 9,
     // @@protoc_insertion_point(enum_value:MsgType.MsgType_AiPamPoke)
     MsgType_AiPamPoke = 10,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_CGMPJEGGEED)
+    MsgType_CGMPJEGGEED = 11,
+    // @@protoc_insertion_point(enum_value:MsgType.MsgType_EJOEHKNHGDM)
+    MsgType_EJOEHKNHGDM = 12,
 }
 
 impl ::protobuf::Enum for MsgType {
@@ -71,6 +75,8 @@ impl ::protobuf::Enum for MsgType {
             8 => ::std::option::Option::Some(MsgType::MsgType_AiPamLineupInterp),
             9 => ::std::option::Option::Some(MsgType::MsgType_AiPamRelicInterp),
             10 => ::std::option::Option::Some(MsgType::MsgType_AiPamPoke),
+            11 => ::std::option::Option::Some(MsgType::MsgType_CGMPJEGGEED),
+            12 => ::std::option::Option::Some(MsgType::MsgType_EJOEHKNHGDM),
             _ => ::std::option::Option::None
         }
     }
@@ -88,6 +94,8 @@ impl ::protobuf::Enum for MsgType {
             "MsgType_AiPamLineupInterp" => ::std::option::Option::Some(MsgType::MsgType_AiPamLineupInterp),
             "MsgType_AiPamRelicInterp" => ::std::option::Option::Some(MsgType::MsgType_AiPamRelicInterp),
             "MsgType_AiPamPoke" => ::std::option::Option::Some(MsgType::MsgType_AiPamPoke),
+            "MsgType_CGMPJEGGEED" => ::std::option::Option::Some(MsgType::MsgType_CGMPJEGGEED),
+            "MsgType_EJOEHKNHGDM" => ::std::option::Option::Some(MsgType::MsgType_EJOEHKNHGDM),
             _ => ::std::option::Option::None
         }
     }
@@ -104,6 +112,8 @@ impl ::protobuf::Enum for MsgType {
         MsgType::MsgType_AiPamLineupInterp,
         MsgType::MsgType_AiPamRelicInterp,
         MsgType::MsgType_AiPamPoke,
+        MsgType::MsgType_CGMPJEGGEED,
+        MsgType::MsgType_EJOEHKNHGDM,
     ];
 }
 
@@ -132,13 +142,15 @@ impl MsgType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rMsgType.proto*\x9d\x02\n\x07MsgType\x12\x10\n\x0cMsgType_None\x10\0\
+    \n\rMsgType.proto*\xcf\x02\n\x07MsgType\x12\x10\n\x0cMsgType_None\x10\0\
     \x12\x16\n\x12MsgType_CustomText\x10\x01\x12\x11\n\rMsgType_Emoji\x10\
     \x02\x12\x12\n\x0eMsgType_Invite\x10\x03\x12\x15\n\x11MsgType_PlanetFes\
     \x10\x04\x12\x1d\n\x19MsgType_AiPamFunctionCall\x10\x05\x12\x17\n\x13Msg\
     Type_UrlCitation\x10\x06\x12\x1e\n\x1aMsgType_AiPamQuickFunction\x10\x07\
     \x12\x1d\n\x19MsgType_AiPamLineupInterp\x10\x08\x12\x1c\n\x18MsgType_AiP\
-    amRelicInterp\x10\t\x12\x15\n\x11MsgType_AiPamPoke\x10\nb\x06proto3\
+    amRelicInterp\x10\t\x12\x15\n\x11MsgType_AiPamPoke\x10\n\x12\x17\n\x13Ms\
+    gType_CGMPJEGGEED\x10\x0b\x12\x17\n\x13MsgType_EJOEHKNHGDM\x10\x0cb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

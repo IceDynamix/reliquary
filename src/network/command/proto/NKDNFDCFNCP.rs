@@ -79,10 +79,10 @@ impl ::protobuf::Message for NKDNFDCFNCP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                26 => {
                     self.HJLENJODAMN.push(is.read_message()?);
                 },
-                74 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMOKFKBAEII)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for NKDNFDCFNCP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.HJLENJODAMN {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if let Some(v) = self.FMOKFKBAEII.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for NKDNFDCFNCP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NKDNFDCFNCP.proto\x1a\x0ePileItem.proto\"g\n\x0bNKDNFDCFNCP\x12+\n\
-    \x0bHJLENJODAMN\x18\x08\x20\x03(\x0b2\t.PileItemR\x0bHJLENJODAMN\x12+\n\
-    \x0bFMOKFKBAEII\x18\t\x20\x01(\x0b2\t.PileItemR\x0bFMOKFKBAEIIb\x06proto\
-    3\
+    \x0bHJLENJODAMN\x18\x03\x20\x03(\x0b2\t.PileItemR\x0bHJLENJODAMN\x12+\n\
+    \x0bFMOKFKBAEII\x18\x08\x20\x01(\x0b2\t.PileItemR\x0bFMOKFKBAEIIb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

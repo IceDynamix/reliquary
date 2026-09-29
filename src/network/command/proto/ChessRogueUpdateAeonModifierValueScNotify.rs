@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateAeonModifierValueScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.FJCIKNAKJOG)
-    pub FJCIKNAKJOG: i32,
     // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.AFEMBLFCCCH)
     pub AFEMBLFCCCH: u32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.FJCIKNAKJOG)
+    pub FJCIKNAKJOG: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateAeonModifierValueScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChessRogueUpdateAeonModifierValueScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJCIKNAKJOG",
-            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.FJCIKNAKJOG },
-            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.FJCIKNAKJOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFEMBLFCCCH",
             |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.AFEMBLFCCCH },
             |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.AFEMBLFCCCH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJCIKNAKJOG",
+            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.FJCIKNAKJOG },
+            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.FJCIKNAKJOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateAeonModifierValueScNotify>(
             "ChessRogueUpdateAeonModifierValueScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FJCIKNAKJOG = is.read_int32()?;
-                },
-                64 => {
+                72 => {
                     self.AFEMBLFCCCH = is.read_uint32()?;
+                },
+                120 => {
+                    self.FJCIKNAKJOG = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJCIKNAKJOG != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.FJCIKNAKJOG);
-        }
         if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.AFEMBLFCCCH);
+            my_size += ::protobuf::rt::uint32_size(9, self.AFEMBLFCCCH);
+        }
+        if self.FJCIKNAKJOG != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.FJCIKNAKJOG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJCIKNAKJOG != 0 {
-            os.write_int32(2, self.FJCIKNAKJOG)?;
-        }
         if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(8, self.AFEMBLFCCCH)?;
+            os.write_uint32(9, self.AFEMBLFCCCH)?;
+        }
+        if self.FJCIKNAKJOG != 0 {
+            os.write_int32(15, self.FJCIKNAKJOG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn clear(&mut self) {
-        self.FJCIKNAKJOG = 0;
         self.AFEMBLFCCCH = 0;
+        self.FJCIKNAKJOG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateAeonModifierValueScNotify {
         static instance: ChessRogueUpdateAeonModifierValueScNotify = ChessRogueUpdateAeonModifierValueScNotify {
-            FJCIKNAKJOG: 0,
             AFEMBLFCCCH: 0,
+            FJCIKNAKJOG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAeonModifierValueScN
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAeonModifierValueScNotify.proto\"o\n)ChessRogueUpdate\
-    AeonModifierValueScNotify\x12\x20\n\x0bFJCIKNAKJOG\x18\x02\x20\x01(\x05R\
-    \x0bFJCIKNAKJOG\x12\x20\n\x0bAFEMBLFCCCH\x18\x08\x20\x01(\rR\x0bAFEMBLFC\
-    CCHb\x06proto3\
+    AeonModifierValueScNotify\x12\x20\n\x0bAFEMBLFCCCH\x18\t\x20\x01(\rR\x0b\
+    AFEMBLFCCCH\x12\x20\n\x0bFJCIKNAKJOG\x18\x0f\x20\x01(\x05R\x0bFJCIKNAKJO\
+    Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

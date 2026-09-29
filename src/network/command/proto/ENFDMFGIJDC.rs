@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ENFDMFGIJDC {
     // message fields
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.EBCLHMBBAEH)
-    pub EBCLHMBBAEH: ::protobuf::MessageField<super::LIKNJLCIAGI::LIKNJLCIAGI>,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.AEKJCKODEFP)
-    pub AEKJCKODEFP: i32,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.config_id)
-    pub config_id: u32,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.ELFFJOOPKJJ)
-    pub ELFFJOOPKJJ: u32,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.interact_id)
-    pub interact_id: u32,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.MFPJBEAFFLG)
-    pub MFPJBEAFFLG: i32,
     // @@protoc_insertion_point(field:ENFDMFGIJDC.NGICBOPFBJF)
     pub NGICBOPFBJF: i32,
-    // @@protoc_insertion_point(field:ENFDMFGIJDC.MAKKJMNDDDN)
-    pub MAKKJMNDDDN: ::protobuf::MessageField<super::LIKNJLCIAGI::LIKNJLCIAGI>,
     // @@protoc_insertion_point(field:ENFDMFGIJDC.MOBCPDJGEFK)
     pub MOBCPDJGEFK: u32,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.ELFFJOOPKJJ)
+    pub ELFFJOOPKJJ: u32,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.config_id)
+    pub config_id: u32,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.interact_id)
+    pub interact_id: u32,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.AEKJCKODEFP)
+    pub AEKJCKODEFP: i32,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.MAKKJMNDDDN)
+    pub MAKKJMNDDDN: ::protobuf::MessageField<super::LIKNJLCIAGI::LIKNJLCIAGI>,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.EBCLHMBBAEH)
+    pub EBCLHMBBAEH: ::protobuf::MessageField<super::LIKNJLCIAGI::LIKNJLCIAGI>,
+    // @@protoc_insertion_point(field:ENFDMFGIJDC.MFPJBEAFFLG)
+    pub MFPJBEAFFLG: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ENFDMFGIJDC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,20 +65,15 @@ impl ENFDMFGIJDC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIKNJLCIAGI::LIKNJLCIAGI>(
-            "EBCLHMBBAEH",
-            |m: &ENFDMFGIJDC| { &m.EBCLHMBBAEH },
-            |m: &mut ENFDMFGIJDC| { &mut m.EBCLHMBBAEH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NGICBOPFBJF",
+            |m: &ENFDMFGIJDC| { &m.NGICBOPFBJF },
+            |m: &mut ENFDMFGIJDC| { &mut m.NGICBOPFBJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AEKJCKODEFP",
-            |m: &ENFDMFGIJDC| { &m.AEKJCKODEFP },
-            |m: &mut ENFDMFGIJDC| { &mut m.AEKJCKODEFP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &ENFDMFGIJDC| { &m.config_id },
-            |m: &mut ENFDMFGIJDC| { &mut m.config_id },
+            "MOBCPDJGEFK",
+            |m: &ENFDMFGIJDC| { &m.MOBCPDJGEFK },
+            |m: &mut ENFDMFGIJDC| { &mut m.MOBCPDJGEFK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ELFFJOOPKJJ",
@@ -86,29 +81,34 @@ impl ENFDMFGIJDC {
             |m: &mut ENFDMFGIJDC| { &mut m.ELFFJOOPKJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &ENFDMFGIJDC| { &m.config_id },
+            |m: &mut ENFDMFGIJDC| { &mut m.config_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interact_id",
             |m: &ENFDMFGIJDC| { &m.interact_id },
             |m: &mut ENFDMFGIJDC| { &mut m.interact_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFPJBEAFFLG",
-            |m: &ENFDMFGIJDC| { &m.MFPJBEAFFLG },
-            |m: &mut ENFDMFGIJDC| { &mut m.MFPJBEAFFLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGICBOPFBJF",
-            |m: &ENFDMFGIJDC| { &m.NGICBOPFBJF },
-            |m: &mut ENFDMFGIJDC| { &mut m.NGICBOPFBJF },
+            "AEKJCKODEFP",
+            |m: &ENFDMFGIJDC| { &m.AEKJCKODEFP },
+            |m: &mut ENFDMFGIJDC| { &mut m.AEKJCKODEFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIKNJLCIAGI::LIKNJLCIAGI>(
             "MAKKJMNDDDN",
             |m: &ENFDMFGIJDC| { &m.MAKKJMNDDDN },
             |m: &mut ENFDMFGIJDC| { &mut m.MAKKJMNDDDN },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIKNJLCIAGI::LIKNJLCIAGI>(
+            "EBCLHMBBAEH",
+            |m: &ENFDMFGIJDC| { &m.EBCLHMBBAEH },
+            |m: &mut ENFDMFGIJDC| { &mut m.EBCLHMBBAEH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MOBCPDJGEFK",
-            |m: &ENFDMFGIJDC| { &m.MOBCPDJGEFK },
-            |m: &mut ENFDMFGIJDC| { &mut m.MOBCPDJGEFK },
+            "MFPJBEAFFLG",
+            |m: &ENFDMFGIJDC| { &m.MFPJBEAFFLG },
+            |m: &mut ENFDMFGIJDC| { &mut m.MFPJBEAFFLG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ENFDMFGIJDC>(
             "ENFDMFGIJDC",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for ENFDMFGIJDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EBCLHMBBAEH)?;
+                8 => {
+                    self.NGICBOPFBJF = is.read_int32()?;
                 },
-                32 => {
-                    self.AEKJCKODEFP = is.read_int32()?;
+                16 => {
+                    self.MOBCPDJGEFK = is.read_uint32()?;
                 },
-                48 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                56 => {
+                24 => {
                     self.ELFFJOOPKJJ = is.read_uint32()?;
                 },
-                64 => {
-                    self.interact_id = is.read_uint32()?;
+                32 => {
+                    self.config_id = is.read_uint32()?;
                 },
                 72 => {
-                    self.MFPJBEAFFLG = is.read_int32()?;
+                    self.interact_id = is.read_uint32()?;
                 },
                 88 => {
-                    self.NGICBOPFBJF = is.read_int32()?;
+                    self.AEKJCKODEFP = is.read_int32()?;
                 },
                 106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MAKKJMNDDDN)?;
                 },
-                112 => {
-                    self.MOBCPDJGEFK = is.read_uint32()?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EBCLHMBBAEH)?;
+                },
+                120 => {
+                    self.MFPJBEAFFLG = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,34 +167,34 @@ impl ::protobuf::Message for ENFDMFGIJDC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EBCLHMBBAEH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.NGICBOPFBJF != 0 {
+            my_size += ::protobuf::rt::int32_size(1, self.NGICBOPFBJF);
         }
-        if self.AEKJCKODEFP != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.AEKJCKODEFP);
-        }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.config_id);
+        if self.MOBCPDJGEFK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.MOBCPDJGEFK);
         }
         if self.ELFFJOOPKJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ELFFJOOPKJJ);
+            my_size += ::protobuf::rt::uint32_size(3, self.ELFFJOOPKJJ);
+        }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.config_id);
         }
         if self.interact_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.interact_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.interact_id);
         }
-        if self.MFPJBEAFFLG != 0 {
-            my_size += ::protobuf::rt::int32_size(9, self.MFPJBEAFFLG);
-        }
-        if self.NGICBOPFBJF != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.NGICBOPFBJF);
+        if self.AEKJCKODEFP != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.AEKJCKODEFP);
         }
         if let Some(v) = self.MAKKJMNDDDN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.MOBCPDJGEFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.MOBCPDJGEFK);
+        if let Some(v) = self.EBCLHMBBAEH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.MFPJBEAFFLG != 0 {
+            my_size += ::protobuf::rt::int32_size(15, self.MFPJBEAFFLG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -202,32 +202,32 @@ impl ::protobuf::Message for ENFDMFGIJDC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EBCLHMBBAEH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.NGICBOPFBJF != 0 {
+            os.write_int32(1, self.NGICBOPFBJF)?;
         }
-        if self.AEKJCKODEFP != 0 {
-            os.write_int32(4, self.AEKJCKODEFP)?;
-        }
-        if self.config_id != 0 {
-            os.write_uint32(6, self.config_id)?;
+        if self.MOBCPDJGEFK != 0 {
+            os.write_uint32(2, self.MOBCPDJGEFK)?;
         }
         if self.ELFFJOOPKJJ != 0 {
-            os.write_uint32(7, self.ELFFJOOPKJJ)?;
+            os.write_uint32(3, self.ELFFJOOPKJJ)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(4, self.config_id)?;
         }
         if self.interact_id != 0 {
-            os.write_uint32(8, self.interact_id)?;
+            os.write_uint32(9, self.interact_id)?;
         }
-        if self.MFPJBEAFFLG != 0 {
-            os.write_int32(9, self.MFPJBEAFFLG)?;
-        }
-        if self.NGICBOPFBJF != 0 {
-            os.write_int32(11, self.NGICBOPFBJF)?;
+        if self.AEKJCKODEFP != 0 {
+            os.write_int32(11, self.AEKJCKODEFP)?;
         }
         if let Some(v) = self.MAKKJMNDDDN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if self.MOBCPDJGEFK != 0 {
-            os.write_uint32(14, self.MOBCPDJGEFK)?;
+        if let Some(v) = self.EBCLHMBBAEH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if self.MFPJBEAFFLG != 0 {
+            os.write_int32(15, self.MFPJBEAFFLG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -246,29 +246,29 @@ impl ::protobuf::Message for ENFDMFGIJDC {
     }
 
     fn clear(&mut self) {
-        self.EBCLHMBBAEH.clear();
-        self.AEKJCKODEFP = 0;
-        self.config_id = 0;
-        self.ELFFJOOPKJJ = 0;
-        self.interact_id = 0;
-        self.MFPJBEAFFLG = 0;
         self.NGICBOPFBJF = 0;
-        self.MAKKJMNDDDN.clear();
         self.MOBCPDJGEFK = 0;
+        self.ELFFJOOPKJJ = 0;
+        self.config_id = 0;
+        self.interact_id = 0;
+        self.AEKJCKODEFP = 0;
+        self.MAKKJMNDDDN.clear();
+        self.EBCLHMBBAEH.clear();
+        self.MFPJBEAFFLG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ENFDMFGIJDC {
         static instance: ENFDMFGIJDC = ENFDMFGIJDC {
-            EBCLHMBBAEH: ::protobuf::MessageField::none(),
-            AEKJCKODEFP: 0,
-            config_id: 0,
-            ELFFJOOPKJJ: 0,
-            interact_id: 0,
-            MFPJBEAFFLG: 0,
             NGICBOPFBJF: 0,
-            MAKKJMNDDDN: ::protobuf::MessageField::none(),
             MOBCPDJGEFK: 0,
+            ELFFJOOPKJJ: 0,
+            config_id: 0,
+            interact_id: 0,
+            AEKJCKODEFP: 0,
+            MAKKJMNDDDN: ::protobuf::MessageField::none(),
+            EBCLHMBBAEH: ::protobuf::MessageField::none(),
+            MFPJBEAFFLG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -294,14 +294,14 @@ impl ::protobuf::reflect::ProtobufValue for ENFDMFGIJDC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ENFDMFGIJDC.proto\x1a\x11LIKNJLCIAGI.proto\"\xd5\x02\n\x0bENFDMFGI\
-    JDC\x12.\n\x0bEBCLHMBBAEH\x18\x02\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x0bEBCL\
-    HMBBAEH\x12\x20\n\x0bAEKJCKODEFP\x18\x04\x20\x01(\x05R\x0bAEKJCKODEFP\
-    \x12\x1b\n\tconfig_id\x18\x06\x20\x01(\rR\x08configId\x12\x20\n\x0bELFFJ\
-    OOPKJJ\x18\x07\x20\x01(\rR\x0bELFFJOOPKJJ\x12\x1f\n\x0binteract_id\x18\
-    \x08\x20\x01(\rR\ninteractId\x12\x20\n\x0bMFPJBEAFFLG\x18\t\x20\x01(\x05\
-    R\x0bMFPJBEAFFLG\x12\x20\n\x0bNGICBOPFBJF\x18\x0b\x20\x01(\x05R\x0bNGICB\
-    OPFBJF\x12.\n\x0bMAKKJMNDDDN\x18\r\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x0bMAK\
-    KJMNDDDN\x12\x20\n\x0bMOBCPDJGEFK\x18\x0e\x20\x01(\rR\x0bMOBCPDJGEFKb\
+    JDC\x12\x20\n\x0bNGICBOPFBJF\x18\x01\x20\x01(\x05R\x0bNGICBOPFBJF\x12\
+    \x20\n\x0bMOBCPDJGEFK\x18\x02\x20\x01(\rR\x0bMOBCPDJGEFK\x12\x20\n\x0bEL\
+    FFJOOPKJJ\x18\x03\x20\x01(\rR\x0bELFFJOOPKJJ\x12\x1b\n\tconfig_id\x18\
+    \x04\x20\x01(\rR\x08configId\x12\x1f\n\x0binteract_id\x18\t\x20\x01(\rR\
+    \ninteractId\x12\x20\n\x0bAEKJCKODEFP\x18\x0b\x20\x01(\x05R\x0bAEKJCKODE\
+    FP\x12.\n\x0bMAKKJMNDDDN\x18\r\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x0bMAKKJMN\
+    DDDN\x12.\n\x0bEBCLHMBBAEH\x18\x0e\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x0bEBC\
+    LHMBBAEH\x12\x20\n\x0bMFPJBEAFFLG\x18\x0f\x20\x01(\x05R\x0bMFPJBEAFFLGb\
     \x06proto3\
 ";
 

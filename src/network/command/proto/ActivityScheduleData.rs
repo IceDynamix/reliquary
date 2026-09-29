@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActivityScheduleData {
     // message fields
-    // @@protoc_insertion_point(field:ActivityScheduleData.activity_id)
-    pub activity_id: u32,
-    // @@protoc_insertion_point(field:ActivityScheduleData.begin_time)
-    pub begin_time: i64,
     // @@protoc_insertion_point(field:ActivityScheduleData.panel_id)
     pub panel_id: u32,
     // @@protoc_insertion_point(field:ActivityScheduleData.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:ActivityScheduleData.begin_time)
+    pub begin_time: i64,
+    // @@protoc_insertion_point(field:ActivityScheduleData.activity_id)
+    pub activity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ActivityScheduleData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl ActivityScheduleData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "activity_id",
-            |m: &ActivityScheduleData| { &m.activity_id },
-            |m: &mut ActivityScheduleData| { &mut m.activity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &ActivityScheduleData| { &m.begin_time },
-            |m: &mut ActivityScheduleData| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "panel_id",
             |m: &ActivityScheduleData| { &m.panel_id },
             |m: &mut ActivityScheduleData| { &mut m.panel_id },
@@ -74,6 +64,16 @@ impl ActivityScheduleData {
             "end_time",
             |m: &ActivityScheduleData| { &m.end_time },
             |m: &mut ActivityScheduleData| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &ActivityScheduleData| { &m.begin_time },
+            |m: &mut ActivityScheduleData| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "activity_id",
+            |m: &ActivityScheduleData| { &m.activity_id },
+            |m: &mut ActivityScheduleData| { &mut m.activity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActivityScheduleData>(
             "ActivityScheduleData",
@@ -94,16 +94,16 @@ impl ::protobuf::Message for ActivityScheduleData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.activity_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.begin_time = is.read_int64()?;
-                },
-                104 => {
                     self.panel_id = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
                     self.end_time = is.read_int64()?;
+                },
+                24 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                88 => {
+                    self.activity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ActivityScheduleData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.activity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.activity_id);
-        }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.begin_time);
-        }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.panel_id);
         }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.end_time);
+            my_size += ::protobuf::rt::int64_size(2, self.end_time);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.begin_time);
+        }
+        if self.activity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.activity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ActivityScheduleData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.activity_id != 0 {
-            os.write_uint32(1, self.activity_id)?;
-        }
-        if self.begin_time != 0 {
-            os.write_int64(8, self.begin_time)?;
-        }
         if self.panel_id != 0 {
-            os.write_uint32(13, self.panel_id)?;
+            os.write_uint32(1, self.panel_id)?;
         }
         if self.end_time != 0 {
-            os.write_int64(15, self.end_time)?;
+            os.write_int64(2, self.end_time)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(3, self.begin_time)?;
+        }
+        if self.activity_id != 0 {
+            os.write_uint32(11, self.activity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ActivityScheduleData {
     }
 
     fn clear(&mut self) {
-        self.activity_id = 0;
-        self.begin_time = 0;
         self.panel_id = 0;
         self.end_time = 0;
+        self.begin_time = 0;
+        self.activity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActivityScheduleData {
         static instance: ActivityScheduleData = ActivityScheduleData {
-            activity_id: 0,
-            begin_time: 0,
             panel_id: 0,
             end_time: 0,
+            begin_time: 0,
+            activity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for ActivityScheduleData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aActivityScheduleData.proto\"\x8c\x01\n\x14ActivityScheduleData\x12\
-    \x1f\n\x0bactivity_id\x18\x01\x20\x01(\rR\nactivityId\x12\x1d\n\nbegin_t\
-    ime\x18\x08\x20\x01(\x03R\tbeginTime\x12\x19\n\x08panel_id\x18\r\x20\x01\
-    (\rR\x07panelId\x12\x19\n\x08end_time\x18\x0f\x20\x01(\x03R\x07endTimeb\
-    \x06proto3\
+    \x19\n\x08panel_id\x18\x01\x20\x01(\rR\x07panelId\x12\x19\n\x08end_time\
+    \x18\x02\x20\x01(\x03R\x07endTime\x12\x1d\n\nbegin_time\x18\x03\x20\x01(\
+    \x03R\tbeginTime\x12\x1f\n\x0bactivity_id\x18\x0b\x20\x01(\rR\nactivityI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

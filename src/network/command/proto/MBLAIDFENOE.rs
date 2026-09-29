@@ -86,13 +86,13 @@ impl ::protobuf::Message for MBLAIDFENOE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
-                88 => {
+                48 => {
                     self.exp = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.NCHBLJHJNID = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for MBLAIDFENOE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.NFMKOFNEKLA.value());
+            my_size += ::protobuf::rt::int32_size(4, self.NFMKOFNEKLA.value());
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.exp);
+            my_size += ::protobuf::rt::uint32_size(6, self.exp);
         }
         if self.NCHBLJHJNID != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.NCHBLJHJNID);
+            my_size += ::protobuf::rt::uint32_size(14, self.NCHBLJHJNID);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MBLAIDFENOE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::GJCOFAFLAEI::GJCOFAFLAEI::GJCOFAFLAEI_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
         }
         if self.exp != 0 {
-            os.write_uint32(11, self.exp)?;
+            os.write_uint32(6, self.exp)?;
         }
         if self.NCHBLJHJNID != 0 {
-            os.write_uint32(15, self.NCHBLJHJNID)?;
+            os.write_uint32(14, self.NCHBLJHJNID)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MBLAIDFENOE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MBLAIDFENOE.proto\x1a\x11GJCOFAFLAEI.proto\"q\n\x0bMBLAIDFENOE\x12\
-    .\n\x0bNFMKOFNEKLA\x18\x05\x20\x01(\x0e2\x0c.GJCOFAFLAEIR\x0bNFMKOFNEKLA\
-    \x12\x10\n\x03exp\x18\x0b\x20\x01(\rR\x03exp\x12\x20\n\x0bNCHBLJHJNID\
-    \x18\x0f\x20\x01(\rR\x0bNCHBLJHJNIDb\x06proto3\
+    .\n\x0bNFMKOFNEKLA\x18\x04\x20\x01(\x0e2\x0c.GJCOFAFLAEIR\x0bNFMKOFNEKLA\
+    \x12\x10\n\x03exp\x18\x06\x20\x01(\rR\x03exp\x12\x20\n\x0bNCHBLJHJNID\
+    \x18\x0e\x20\x01(\rR\x0bNCHBLJHJNIDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

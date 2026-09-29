@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MotionInfo {
     // message fields
-    // @@protoc_insertion_point(field:MotionInfo.pos_index)
-    pub pos_index: ::protobuf::MessageField<super::Vector::Vector>,
     // @@protoc_insertion_point(field:MotionInfo.rot_index)
     pub rot_index: ::protobuf::MessageField<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:MotionInfo.pos_index)
+    pub pos_index: ::protobuf::MessageField<super::Vector::Vector>,
     // special fields
     // @@protoc_insertion_point(special_field:MotionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MotionInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
-            "pos_index",
-            |m: &MotionInfo| { &m.pos_index },
-            |m: &mut MotionInfo| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
             "rot_index",
             |m: &MotionInfo| { &m.rot_index },
             |m: &mut MotionInfo| { &mut m.rot_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::Vector::Vector>(
+            "pos_index",
+            |m: &MotionInfo| { &m.pos_index },
+            |m: &mut MotionInfo| { &mut m.pos_index },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MotionInfo>(
             "MotionInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MotionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rot_index)?;
+                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos_index)?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rot_index)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MotionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.pos_index.as_ref() {
+        if let Some(v) = self.rot_index.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.rot_index.as_ref() {
+        if let Some(v) = self.pos_index.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for MotionInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.rot_index.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         if let Some(v) = self.pos_index.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.rot_index.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for MotionInfo {
     }
 
     fn clear(&mut self) {
-        self.pos_index.clear();
         self.rot_index.clear();
+        self.pos_index.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MotionInfo {
         static instance: MotionInfo = MotionInfo {
-            pos_index: ::protobuf::MessageField::none(),
             rot_index: ::protobuf::MessageField::none(),
+            pos_index: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MotionInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10MotionInfo.proto\x1a\x0cVector.proto\"X\n\nMotionInfo\x12$\n\tpos_\
-    index\x18\x02\x20\x01(\x0b2\x07.VectorR\x08posIndex\x12$\n\trot_index\
-    \x18\x05\x20\x01(\x0b2\x07.VectorR\x08rotIndexb\x06proto3\
+    \n\x10MotionInfo.proto\x1a\x0cVector.proto\"X\n\nMotionInfo\x12$\n\trot_\
+    index\x18\x01\x20\x01(\x0b2\x07.VectorR\x08rotIndex\x12$\n\tpos_index\
+    \x18\x02\x20\x01(\x0b2\x07.VectorR\x08posIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

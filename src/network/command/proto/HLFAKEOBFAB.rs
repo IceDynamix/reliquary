@@ -86,13 +86,13 @@ impl ::protobuf::Message for HLFAKEOBFAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.HJMACPMOINC = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.PBMAHOJBAGG = is.read_uint32()?;
                 },
-                40 => {
+                64 => {
                     self.AFEMBLFCCCH = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HLFAKEOBFAB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HJMACPMOINC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HJMACPMOINC);
+            my_size += ::protobuf::rt::uint32_size(1, self.HJMACPMOINC);
         }
         if self.PBMAHOJBAGG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PBMAHOJBAGG);
+            my_size += ::protobuf::rt::uint32_size(2, self.PBMAHOJBAGG);
         }
         if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AFEMBLFCCCH);
+            my_size += ::protobuf::rt::uint32_size(8, self.AFEMBLFCCCH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HLFAKEOBFAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HJMACPMOINC != 0 {
-            os.write_uint32(3, self.HJMACPMOINC)?;
+            os.write_uint32(1, self.HJMACPMOINC)?;
         }
         if self.PBMAHOJBAGG != 0 {
-            os.write_uint32(4, self.PBMAHOJBAGG)?;
+            os.write_uint32(2, self.PBMAHOJBAGG)?;
         }
         if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(5, self.AFEMBLFCCCH)?;
+            os.write_uint32(8, self.AFEMBLFCCCH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for HLFAKEOBFAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLFAKEOBFAB.proto\"s\n\x0bHLFAKEOBFAB\x12\x20\n\x0bHJMACPMOINC\x18\
-    \x03\x20\x01(\rR\x0bHJMACPMOINC\x12\x20\n\x0bPBMAHOJBAGG\x18\x04\x20\x01\
-    (\rR\x0bPBMAHOJBAGG\x12\x20\n\x0bAFEMBLFCCCH\x18\x05\x20\x01(\rR\x0bAFEM\
+    \x01\x20\x01(\rR\x0bHJMACPMOINC\x12\x20\n\x0bPBMAHOJBAGG\x18\x02\x20\x01\
+    (\rR\x0bPBMAHOJBAGG\x12\x20\n\x0bAFEMBLFCCCH\x18\x08\x20\x01(\rR\x0bAFEM\
     BLFCCCHb\x06proto3\
 ";
 

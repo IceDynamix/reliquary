@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GPHMAJPGGEK {
     // message fields
-    // @@protoc_insertion_point(field:GPHMAJPGGEK.EBFHIDKDJOB)
-    pub EBFHIDKDJOB: ::std::vec::Vec<super::OCBPJLLLJGO::OCBPJLLLJGO>,
     // @@protoc_insertion_point(field:GPHMAJPGGEK.IHKCHDJEJGJ)
     pub IHKCHDJEJGJ: ::std::vec::Vec<super::OKCCLEEPELM::OKCCLEEPELM>,
+    // @@protoc_insertion_point(field:GPHMAJPGGEK.EBFHIDKDJOB)
+    pub EBFHIDKDJOB: ::std::vec::Vec<super::OCBPJLLLJGO::OCBPJLLLJGO>,
     // special fields
     // @@protoc_insertion_point(special_field:GPHMAJPGGEK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GPHMAJPGGEK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBFHIDKDJOB",
-            |m: &GPHMAJPGGEK| { &m.EBFHIDKDJOB },
-            |m: &mut GPHMAJPGGEK| { &mut m.EBFHIDKDJOB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHKCHDJEJGJ",
             |m: &GPHMAJPGGEK| { &m.IHKCHDJEJGJ },
             |m: &mut GPHMAJPGGEK| { &mut m.IHKCHDJEJGJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EBFHIDKDJOB",
+            |m: &GPHMAJPGGEK| { &m.EBFHIDKDJOB },
+            |m: &mut GPHMAJPGGEK| { &mut m.EBFHIDKDJOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GPHMAJPGGEK>(
             "GPHMAJPGGEK",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GPHMAJPGGEK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
-                    self.EBFHIDKDJOB.push(is.read_message()?);
+                    self.IHKCHDJEJGJ.push(is.read_message()?);
                 },
                 106 => {
-                    self.IHKCHDJEJGJ.push(is.read_message()?);
+                    self.EBFHIDKDJOB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GPHMAJPGGEK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.EBFHIDKDJOB {
+        for value in &self.IHKCHDJEJGJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.IHKCHDJEJGJ {
+        for value in &self.EBFHIDKDJOB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GPHMAJPGGEK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.EBFHIDKDJOB {
+        for v in &self.IHKCHDJEJGJ {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        for v in &self.IHKCHDJEJGJ {
+        for v in &self.EBFHIDKDJOB {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GPHMAJPGGEK {
     }
 
     fn clear(&mut self) {
-        self.EBFHIDKDJOB.clear();
         self.IHKCHDJEJGJ.clear();
+        self.EBFHIDKDJOB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GPHMAJPGGEK {
         static instance: GPHMAJPGGEK = GPHMAJPGGEK {
-            EBFHIDKDJOB: ::std::vec::Vec::new(),
             IHKCHDJEJGJ: ::std::vec::Vec::new(),
+            EBFHIDKDJOB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GPHMAJPGGEK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GPHMAJPGGEK.proto\x1a\x11OCBPJLLLJGO.proto\x1a\x11OKCCLEEPELM.prot\
-    o\"m\n\x0bGPHMAJPGGEK\x12.\n\x0bEBFHIDKDJOB\x18\x05\x20\x03(\x0b2\x0c.OC\
-    BPJLLLJGOR\x0bEBFHIDKDJOB\x12.\n\x0bIHKCHDJEJGJ\x18\r\x20\x03(\x0b2\x0c.\
-    OKCCLEEPELMR\x0bIHKCHDJEJGJb\x06proto3\
+    o\"m\n\x0bGPHMAJPGGEK\x12.\n\x0bIHKCHDJEJGJ\x18\x05\x20\x03(\x0b2\x0c.OK\
+    CCLEEPELMR\x0bIHKCHDJEJGJ\x12.\n\x0bEBFHIDKDJOB\x18\r\x20\x03(\x0b2\x0c.\
+    OCBPJLLLJGOR\x0bEBFHIDKDJOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

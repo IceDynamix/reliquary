@@ -86,10 +86,10 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.DPIKOCFILGP.push(is.read_message()?);
                 },
-                80 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 122 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         for value in &self.CEPDOBEIEFG {
             let len = value.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for SetRogueCollectionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DPIKOCFILGP {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         for v in &self.CEPDOBEIEFG {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueCollectionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueCollectionScRsp.proto\x1a\x11JMJEIBGACMD.proto\x1a\x11NPAJ\
     HGDEIDJ.proto\"\x93\x01\n\x17SetRogueCollectionScRsp\x12.\n\x0bDPIKOCFIL\
-    GP\x18\x02\x20\x03(\x0b2\x0c.NPAJHGDEIDJR\x0bDPIKOCFILGP\x12\x18\n\x07re\
-    tcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bCEPDOBEIEFG\x18\x0f\x20\x03\
-    (\x0b2\x0c.JMJEIBGACMDR\x0bCEPDOBEIEFGb\x06proto3\
+    GP\x18\x01\x20\x03(\x0b2\x0c.NPAJHGDEIDJR\x0bDPIKOCFILGP\x12\x18\n\x07re\
+    tcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bCEPDOBEIEFG\x18\x0f\x20\
+    \x03(\x0b2\x0c.JMJEIBGACMDR\x0bCEPDOBEIEFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

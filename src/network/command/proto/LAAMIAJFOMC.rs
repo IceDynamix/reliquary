@@ -82,7 +82,7 @@ impl ::protobuf::Message for LAAMIAJFOMC {
                 64 => {
                     self.affix_id = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.PNJCLPNFIGA = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for LAAMIAJFOMC {
             os.write_uint32(8, self.affix_id)?;
         }
         if self.PNJCLPNFIGA != false {
-            os.write_bool(9, self.PNJCLPNFIGA)?;
+            os.write_bool(12, self.PNJCLPNFIGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LAAMIAJFOMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LAAMIAJFOMC.proto\"J\n\x0bLAAMIAJFOMC\x12\x19\n\x08affix_id\x18\
-    \x08\x20\x01(\rR\x07affixId\x12\x20\n\x0bPNJCLPNFIGA\x18\t\x20\x01(\x08R\
-    \x0bPNJCLPNFIGAb\x06proto3\
+    \x08\x20\x01(\rR\x07affixId\x12\x20\n\x0bPNJCLPNFIGA\x18\x0c\x20\x01(\
+    \x08R\x0bPNJCLPNFIGAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

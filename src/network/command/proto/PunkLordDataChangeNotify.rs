@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordDataChangeNotify {
     // message fields
+    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.BPCOIOLGEMK)
+    pub BPCOIOLGEMK: u32,
     // @@protoc_insertion_point(field:PunkLordDataChangeNotify.MGBHJPPJHEA)
     pub MGBHJPPJHEA: u32,
     // @@protoc_insertion_point(field:PunkLordDataChangeNotify.GIIIFDGFJPG)
     pub GIIIFDGFJPG: u32,
-    // @@protoc_insertion_point(field:PunkLordDataChangeNotify.BPCOIOLGEMK)
-    pub BPCOIOLGEMK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordDataChangeNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl PunkLordDataChangeNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPCOIOLGEMK",
+            |m: &PunkLordDataChangeNotify| { &m.BPCOIOLGEMK },
+            |m: &mut PunkLordDataChangeNotify| { &mut m.BPCOIOLGEMK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MGBHJPPJHEA",
             |m: &PunkLordDataChangeNotify| { &m.MGBHJPPJHEA },
             |m: &mut PunkLordDataChangeNotify| { &mut m.MGBHJPPJHEA },
@@ -62,11 +67,6 @@ impl PunkLordDataChangeNotify {
             "GIIIFDGFJPG",
             |m: &PunkLordDataChangeNotify| { &m.GIIIFDGFJPG },
             |m: &mut PunkLordDataChangeNotify| { &mut m.GIIIFDGFJPG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BPCOIOLGEMK",
-            |m: &PunkLordDataChangeNotify| { &m.BPCOIOLGEMK },
-            |m: &mut PunkLordDataChangeNotify| { &mut m.BPCOIOLGEMK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordDataChangeNotify>(
             "PunkLordDataChangeNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                56 => {
+                    self.BPCOIOLGEMK = is.read_uint32()?;
+                },
+                64 => {
                     self.MGBHJPPJHEA = is.read_uint32()?;
                 },
                 72 => {
                     self.GIIIFDGFJPG = is.read_uint32()?;
-                },
-                120 => {
-                    self.BPCOIOLGEMK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BPCOIOLGEMK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.BPCOIOLGEMK);
+        }
         if self.MGBHJPPJHEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MGBHJPPJHEA);
+            my_size += ::protobuf::rt::uint32_size(8, self.MGBHJPPJHEA);
         }
         if self.GIIIFDGFJPG != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.GIIIFDGFJPG);
-        }
-        if self.BPCOIOLGEMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BPCOIOLGEMK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BPCOIOLGEMK != 0 {
+            os.write_uint32(7, self.BPCOIOLGEMK)?;
+        }
         if self.MGBHJPPJHEA != 0 {
-            os.write_uint32(6, self.MGBHJPPJHEA)?;
+            os.write_uint32(8, self.MGBHJPPJHEA)?;
         }
         if self.GIIIFDGFJPG != 0 {
             os.write_uint32(9, self.GIIIFDGFJPG)?;
-        }
-        if self.BPCOIOLGEMK != 0 {
-            os.write_uint32(15, self.BPCOIOLGEMK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PunkLordDataChangeNotify {
     }
 
     fn clear(&mut self) {
+        self.BPCOIOLGEMK = 0;
         self.MGBHJPPJHEA = 0;
         self.GIIIFDGFJPG = 0;
-        self.BPCOIOLGEMK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordDataChangeNotify {
         static instance: PunkLordDataChangeNotify = PunkLordDataChangeNotify {
+            BPCOIOLGEMK: 0,
             MGBHJPPJHEA: 0,
             GIIIFDGFJPG: 0,
-            BPCOIOLGEMK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordDataChangeNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordDataChangeNotify.proto\"\x80\x01\n\x18PunkLordDataChangeNo\
-    tify\x12\x20\n\x0bMGBHJPPJHEA\x18\x06\x20\x01(\rR\x0bMGBHJPPJHEA\x12\x20\
-    \n\x0bGIIIFDGFJPG\x18\t\x20\x01(\rR\x0bGIIIFDGFJPG\x12\x20\n\x0bBPCOIOLG\
-    EMK\x18\x0f\x20\x01(\rR\x0bBPCOIOLGEMKb\x06proto3\
+    tify\x12\x20\n\x0bBPCOIOLGEMK\x18\x07\x20\x01(\rR\x0bBPCOIOLGEMK\x12\x20\
+    \n\x0bMGBHJPPJHEA\x18\x08\x20\x01(\rR\x0bMGBHJPPJHEA\x12\x20\n\x0bGIIIFD\
+    GFJPG\x18\t\x20\x01(\rR\x0bGIIIFDGFJPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

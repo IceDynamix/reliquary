@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournQueryScRsp.PHGJIJELKDB)
-    pub PHGJIJELKDB: ::protobuf::MessageField<super::PFLOIHLLMEE::PFLOIHLLMEE>,
-    // @@protoc_insertion_point(field:RogueTournQueryScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RogueTournQueryScRsp.LFLCDNGALME)
     pub LFLCDNGALME: ::protobuf::MessageField<super::KIKEAJJLAMH::KIKEAJJLAMH>,
+    // @@protoc_insertion_point(field:RogueTournQueryScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueTournQueryScRsp.PHGJIJELKDB)
+    pub PHGJIJELKDB: ::protobuf::MessageField<super::PFLOIHLLMEE::PFLOIHLLMEE>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueTournQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFLOIHLLMEE::PFLOIHLLMEE>(
-            "PHGJIJELKDB",
-            |m: &RogueTournQueryScRsp| { &m.PHGJIJELKDB },
-            |m: &mut RogueTournQueryScRsp| { &mut m.PHGJIJELKDB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIKEAJJLAMH::KIKEAJJLAMH>(
+            "LFLCDNGALME",
+            |m: &RogueTournQueryScRsp| { &m.LFLCDNGALME },
+            |m: &mut RogueTournQueryScRsp| { &mut m.LFLCDNGALME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournQueryScRsp| { &m.retcode },
             |m: &mut RogueTournQueryScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KIKEAJJLAMH::KIKEAJJLAMH>(
-            "LFLCDNGALME",
-            |m: &RogueTournQueryScRsp| { &m.LFLCDNGALME },
-            |m: &mut RogueTournQueryScRsp| { &mut m.LFLCDNGALME },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PFLOIHLLMEE::PFLOIHLLMEE>(
+            "PHGJIJELKDB",
+            |m: &RogueTournQueryScRsp| { &m.PHGJIJELKDB },
+            |m: &mut RogueTournQueryScRsp| { &mut m.PHGJIJELKDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournQueryScRsp>(
             "RogueTournQueryScRsp",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
                 },
-                64 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PHGJIJELKDB.as_ref() {
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
+        if let Some(v) = self.PHGJIJELKDB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PHGJIJELKDB.as_ref() {
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.LFLCDNGALME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.PHGJIJELKDB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for RogueTournQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.PHGJIJELKDB.clear();
-        self.retcode = 0;
         self.LFLCDNGALME.clear();
+        self.retcode = 0;
+        self.PHGJIJELKDB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournQueryScRsp {
         static instance: RogueTournQueryScRsp = RogueTournQueryScRsp {
-            PHGJIJELKDB: ::protobuf::MessageField::none(),
-            retcode: 0,
             LFLCDNGALME: ::protobuf::MessageField::none(),
+            retcode: 0,
+            PHGJIJELKDB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournQueryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueTournQueryScRsp.proto\x1a\x11KIKEAJJLAMH.proto\x1a\x11PFLOIHL\
-    LMEE.proto\"\x90\x01\n\x14RogueTournQueryScRsp\x12.\n\x0bPHGJIJELKDB\x18\
-    \x01\x20\x01(\x0b2\x0c.PFLOIHLLMEER\x0bPHGJIJELKDB\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bLFLCDNGALME\x18\x0b\x20\x01(\
-    \x0b2\x0c.KIKEAJJLAMHR\x0bLFLCDNGALMEb\x06proto3\
+    LMEE.proto\"\x90\x01\n\x14RogueTournQueryScRsp\x12.\n\x0bLFLCDNGALME\x18\
+    \x01\x20\x01(\x0b2\x0c.KIKEAJJLAMHR\x0bLFLCDNGALME\x12\x18\n\x07retcode\
+    \x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bPHGJIJELKDB\x18\x05\x20\x01(\
+    \x0b2\x0c.PFLOIHLLMEER\x0bPHGJIJELKDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

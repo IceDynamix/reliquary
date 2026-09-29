@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.ADBGHKBGGJM = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ADBGHKBGGJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ADBGHKBGGJM);
+            my_size += ::protobuf::rt::uint32_size(9, self.ADBGHKBGGJM);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ADBGHKBGGJM != 0 {
-            os.write_uint32(3, self.ADBGHKBGGJM)?;
+            os.write_uint32(9, self.ADBGHKBGGJM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingActivatedPrivilegeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ChenLingActivatedPrivilegeScRsp.proto\"]\n\x1fChenLingActivatedPrivil\
-    egeScRsp\x12\x20\n\x0bADBGHKBGGJM\x18\x03\x20\x01(\rR\x0bADBGHKBGGJM\x12\
-    \x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    egeScRsp\x12\x20\n\x0bADBGHKBGGJM\x18\t\x20\x01(\rR\x0bADBGHKBGGJM\x12\
+    \x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

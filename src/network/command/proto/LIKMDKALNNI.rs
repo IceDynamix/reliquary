@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum LIKMDKALNNI {
     // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_NLCDGIPGFDJ)
     LIKMDKALNNI_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_NJMBOIMIKOD)
-    LIKMDKALNNI_NJMBOIMIKOD = 8135,
     // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_BEGEEPLAAPL)
-    LIKMDKALNNI_BEGEEPLAAPL = 8132,
-    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_JBGKHBDHFDD)
-    LIKMDKALNNI_JBGKHBDHFDD = 8134,
-    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_ACDGHHDMCAL)
-    LIKMDKALNNI_ACDGHHDMCAL = 8124,
+    LIKMDKALNNI_BEGEEPLAAPL = 8124,
     // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_ADPIFEFKCAD)
-    LIKMDKALNNI_ADPIFEFKCAD = 8122,
+    LIKMDKALNNI_ADPIFEFKCAD = 8130,
+    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_JBGKHBDHFDD)
+    LIKMDKALNNI_JBGKHBDHFDD = 8136,
+    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_NJMBOIMIKOD)
+    LIKMDKALNNI_NJMBOIMIKOD = 8137,
+    // @@protoc_insertion_point(enum_value:LIKMDKALNNI.LIKMDKALNNI_ACDGHHDMCAL)
+    LIKMDKALNNI_ACDGHHDMCAL = 8128,
 }
 
 impl ::protobuf::Enum for LIKMDKALNNI {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for LIKMDKALNNI {
     fn from_i32(value: i32) -> ::std::option::Option<LIKMDKALNNI> {
         match value {
             0 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NLCDGIPGFDJ),
-            8135 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD),
-            8132 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL),
-            8134 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD),
-            8124 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL),
-            8122 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD),
+            8124 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL),
+            8130 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD),
+            8136 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD),
+            8137 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD),
+            8128 => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for LIKMDKALNNI {
     fn from_str(str: &str) -> ::std::option::Option<LIKMDKALNNI> {
         match str {
             "LIKMDKALNNI_NLCDGIPGFDJ" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NLCDGIPGFDJ),
-            "LIKMDKALNNI_NJMBOIMIKOD" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD),
             "LIKMDKALNNI_BEGEEPLAAPL" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL),
-            "LIKMDKALNNI_JBGKHBDHFDD" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD),
-            "LIKMDKALNNI_ACDGHHDMCAL" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL),
             "LIKMDKALNNI_ADPIFEFKCAD" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD),
+            "LIKMDKALNNI_JBGKHBDHFDD" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD),
+            "LIKMDKALNNI_NJMBOIMIKOD" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD),
+            "LIKMDKALNNI_ACDGHHDMCAL" => ::std::option::Option::Some(LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LIKMDKALNNI] = &[
         LIKMDKALNNI::LIKMDKALNNI_NLCDGIPGFDJ,
-        LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD,
         LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL,
-        LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD,
-        LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL,
         LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD,
+        LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD,
+        LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD,
+        LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for LIKMDKALNNI {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             LIKMDKALNNI::LIKMDKALNNI_NLCDGIPGFDJ => 0,
-            LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD => 1,
-            LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL => 2,
+            LIKMDKALNNI::LIKMDKALNNI_BEGEEPLAAPL => 1,
+            LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD => 2,
             LIKMDKALNNI::LIKMDKALNNI_JBGKHBDHFDD => 3,
-            LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL => 4,
-            LIKMDKALNNI::LIKMDKALNNI_ADPIFEFKCAD => 5,
+            LIKMDKALNNI::LIKMDKALNNI_NJMBOIMIKOD => 4,
+            LIKMDKALNNI::LIKMDKALNNI_ACDGHHDMCAL => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl LIKMDKALNNI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LIKMDKALNNI.proto*\xc0\x01\n\x0bLIKMDKALNNI\x12\x1b\n\x17LIKMDKALN\
-    NI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIKMDKALNNI_NJMBOIMIKOD\x10\xc7?\x12\
-    \x1c\n\x17LIKMDKALNNI_BEGEEPLAAPL\x10\xc4?\x12\x1c\n\x17LIKMDKALNNI_JBGK\
-    HBDHFDD\x10\xc6?\x12\x1c\n\x17LIKMDKALNNI_ACDGHHDMCAL\x10\xbc?\x12\x1c\n\
-    \x17LIKMDKALNNI_ADPIFEFKCAD\x10\xba?b\x06proto3\
+    NI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LIKMDKALNNI_BEGEEPLAAPL\x10\xbc?\x12\
+    \x1c\n\x17LIKMDKALNNI_ADPIFEFKCAD\x10\xc2?\x12\x1c\n\x17LIKMDKALNNI_JBGK\
+    HBDHFDD\x10\xc8?\x12\x1c\n\x17LIKMDKALNNI_NJMBOIMIKOD\x10\xc9?\x12\x1c\n\
+    \x17LIKMDKALNNI_ACDGHHDMCAL\x10\xc0?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct StartChallengePeakCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartChallengePeakCsReq.peak_avatar_id_list)
     pub peak_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartChallengePeakCsReq.peak_id)
-    pub peak_id: u32,
     // @@protoc_insertion_point(field:StartChallengePeakCsReq.boss_buff_id)
     pub boss_buff_id: u32,
+    // @@protoc_insertion_point(field:StartChallengePeakCsReq.peak_id)
+    pub peak_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartChallengePeakCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl StartChallengePeakCsReq {
             |m: &mut StartChallengePeakCsReq| { &mut m.peak_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_id",
-            |m: &StartChallengePeakCsReq| { &m.peak_id },
-            |m: &mut StartChallengePeakCsReq| { &mut m.peak_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "boss_buff_id",
             |m: &StartChallengePeakCsReq| { &m.boss_buff_id },
             |m: &mut StartChallengePeakCsReq| { &mut m.boss_buff_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "peak_id",
+            |m: &StartChallengePeakCsReq| { &m.peak_id },
+            |m: &mut StartChallengePeakCsReq| { &mut m.peak_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartChallengePeakCsReq>(
             "StartChallengePeakCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for StartChallengePeakCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.peak_avatar_id_list)?;
                 },
-                56 => {
+                40 => {
                     self.peak_avatar_id_list.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.peak_id = is.read_uint32()?;
-                },
-                120 => {
+                56 => {
                     self.boss_buff_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.peak_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for StartChallengePeakCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.peak_avatar_id_list);
-        if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.peak_id);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.peak_avatar_id_list);
         if self.boss_buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.boss_buff_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.boss_buff_id);
+        }
+        if self.peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.peak_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for StartChallengePeakCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.peak_avatar_id_list)?;
-        if self.peak_id != 0 {
-            os.write_uint32(9, self.peak_id)?;
-        }
+        os.write_repeated_packed_uint32(5, &self.peak_avatar_id_list)?;
         if self.boss_buff_id != 0 {
-            os.write_uint32(15, self.boss_buff_id)?;
+            os.write_uint32(7, self.boss_buff_id)?;
+        }
+        if self.peak_id != 0 {
+            os.write_uint32(13, self.peak_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for StartChallengePeakCsReq {
 
     fn clear(&mut self) {
         self.peak_avatar_id_list.clear();
-        self.peak_id = 0;
         self.boss_buff_id = 0;
+        self.peak_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengePeakCsReq {
         static instance: StartChallengePeakCsReq = StartChallengePeakCsReq {
             peak_avatar_id_list: ::std::vec::Vec::new(),
-            peak_id: 0,
             boss_buff_id: 0,
+            peak_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengePeakCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dStartChallengePeakCsReq.proto\"\x83\x01\n\x17StartChallengePeakCsR\
-    eq\x12-\n\x13peak_avatar_id_list\x18\x07\x20\x03(\rR\x10peakAvatarIdList\
-    \x12\x17\n\x07peak_id\x18\t\x20\x01(\rR\x06peakId\x12\x20\n\x0cboss_buff\
-    _id\x18\x0f\x20\x01(\rR\nbossBuffIdb\x06proto3\
+    eq\x12-\n\x13peak_avatar_id_list\x18\x05\x20\x03(\rR\x10peakAvatarIdList\
+    \x12\x20\n\x0cboss_buff_id\x18\x07\x20\x01(\rR\nbossBuffId\x12\x17\n\x07\
+    peak_id\x18\r\x20\x01(\rR\x06peakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

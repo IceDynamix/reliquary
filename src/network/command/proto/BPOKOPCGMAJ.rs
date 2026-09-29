@@ -72,7 +72,7 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.IFLBAAABKAI = is.read_int32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IFLBAAABKAI != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.IFLBAAABKAI);
+            my_size += ::protobuf::rt::int32_size(11, self.IFLBAAABKAI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for BPOKOPCGMAJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IFLBAAABKAI != 0 {
-            os.write_int32(15, self.IFLBAAABKAI)?;
+            os.write_int32(11, self.IFLBAAABKAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for BPOKOPCGMAJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPOKOPCGMAJ.proto\"/\n\x0bBPOKOPCGMAJ\x12\x20\n\x0bIFLBAAABKAI\x18\
-    \x0f\x20\x01(\x05R\x0bIFLBAAABKAIb\x06proto3\
+    \x0b\x20\x01(\x05R\x0bIFLBAAABKAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

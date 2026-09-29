@@ -29,20 +29,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum OKPCOBCMOFF {
     // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_NLCDGIPGFDJ)
     OKPCOBCMOFF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_CCMNFGHDCDO)
-    OKPCOBCMOFF_CCMNFGHDCDO = 2533,
-    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_OLCHGINAEIG)
-    OKPCOBCMOFF_OLCHGINAEIG = 2549,
     // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_CHEPKADENJL)
-    OKPCOBCMOFF_CHEPKADENJL = 2531,
-    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_MKBNPFGGANC)
-    OKPCOBCMOFF_MKBNPFGGANC = 2525,
-    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_KDNHLKEOHHA)
-    OKPCOBCMOFF_KDNHLKEOHHA = 2537,
+    OKPCOBCMOFF_CHEPKADENJL = 2506,
     // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_DFJDNLNFKLG)
-    OKPCOBCMOFF_DFJDNLNFKLG = 2514,
+    OKPCOBCMOFF_DFJDNLNFKLG = 2526,
     // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_ECHFAEDEFLG)
-    OKPCOBCMOFF_ECHFAEDEFLG = 2536,
+    OKPCOBCMOFF_ECHFAEDEFLG = 2525,
+    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_CCMNFGHDCDO)
+    OKPCOBCMOFF_CCMNFGHDCDO = 2523,
+    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_KDNHLKEOHHA)
+    OKPCOBCMOFF_KDNHLKEOHHA = 2534,
+    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_MKBNPFGGANC)
+    OKPCOBCMOFF_MKBNPFGGANC = 2518,
+    // @@protoc_insertion_point(enum_value:OKPCOBCMOFF.OKPCOBCMOFF_OLCHGINAEIG)
+    OKPCOBCMOFF_OLCHGINAEIG = 2502,
 }
 
 impl ::protobuf::Enum for OKPCOBCMOFF {
@@ -55,13 +55,13 @@ impl ::protobuf::Enum for OKPCOBCMOFF {
     fn from_i32(value: i32) -> ::std::option::Option<OKPCOBCMOFF> {
         match value {
             0 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_NLCDGIPGFDJ),
-            2533 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO),
-            2549 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG),
-            2531 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL),
-            2525 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC),
-            2537 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA),
-            2514 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG),
-            2536 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG),
+            2506 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL),
+            2526 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG),
+            2525 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG),
+            2523 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO),
+            2534 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA),
+            2518 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC),
+            2502 => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG),
             _ => ::std::option::Option::None
         }
     }
@@ -69,26 +69,26 @@ impl ::protobuf::Enum for OKPCOBCMOFF {
     fn from_str(str: &str) -> ::std::option::Option<OKPCOBCMOFF> {
         match str {
             "OKPCOBCMOFF_NLCDGIPGFDJ" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_NLCDGIPGFDJ),
-            "OKPCOBCMOFF_CCMNFGHDCDO" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO),
-            "OKPCOBCMOFF_OLCHGINAEIG" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG),
             "OKPCOBCMOFF_CHEPKADENJL" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL),
-            "OKPCOBCMOFF_MKBNPFGGANC" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC),
-            "OKPCOBCMOFF_KDNHLKEOHHA" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA),
             "OKPCOBCMOFF_DFJDNLNFKLG" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG),
             "OKPCOBCMOFF_ECHFAEDEFLG" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG),
+            "OKPCOBCMOFF_CCMNFGHDCDO" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO),
+            "OKPCOBCMOFF_KDNHLKEOHHA" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA),
+            "OKPCOBCMOFF_MKBNPFGGANC" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC),
+            "OKPCOBCMOFF_OLCHGINAEIG" => ::std::option::Option::Some(OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [OKPCOBCMOFF] = &[
         OKPCOBCMOFF::OKPCOBCMOFF_NLCDGIPGFDJ,
-        OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO,
-        OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG,
         OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL,
-        OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC,
-        OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA,
         OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG,
         OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG,
+        OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO,
+        OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA,
+        OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC,
+        OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG,
     ];
 }
 
@@ -101,13 +101,13 @@ impl ::protobuf::EnumFull for OKPCOBCMOFF {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             OKPCOBCMOFF::OKPCOBCMOFF_NLCDGIPGFDJ => 0,
-            OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO => 1,
-            OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG => 2,
-            OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL => 3,
-            OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC => 4,
+            OKPCOBCMOFF::OKPCOBCMOFF_CHEPKADENJL => 1,
+            OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG => 2,
+            OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG => 3,
+            OKPCOBCMOFF::OKPCOBCMOFF_CCMNFGHDCDO => 4,
             OKPCOBCMOFF::OKPCOBCMOFF_KDNHLKEOHHA => 5,
-            OKPCOBCMOFF::OKPCOBCMOFF_DFJDNLNFKLG => 6,
-            OKPCOBCMOFF::OKPCOBCMOFF_ECHFAEDEFLG => 7,
+            OKPCOBCMOFF::OKPCOBCMOFF_MKBNPFGGANC => 6,
+            OKPCOBCMOFF::OKPCOBCMOFF_OLCHGINAEIG => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,12 +127,12 @@ impl OKPCOBCMOFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OKPCOBCMOFF.proto*\xfc\x01\n\x0bOKPCOBCMOFF\x12\x1b\n\x17OKPCOBCMO\
-    FF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OKPCOBCMOFF_CCMNFGHDCDO\x10\xe5\x13\
-    \x12\x1c\n\x17OKPCOBCMOFF_OLCHGINAEIG\x10\xf5\x13\x12\x1c\n\x17OKPCOBCMO\
-    FF_CHEPKADENJL\x10\xe3\x13\x12\x1c\n\x17OKPCOBCMOFF_MKBNPFGGANC\x10\xdd\
-    \x13\x12\x1c\n\x17OKPCOBCMOFF_KDNHLKEOHHA\x10\xe9\x13\x12\x1c\n\x17OKPCO\
-    BCMOFF_DFJDNLNFKLG\x10\xd2\x13\x12\x1c\n\x17OKPCOBCMOFF_ECHFAEDEFLG\x10\
-    \xe8\x13b\x06proto3\
+    FF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OKPCOBCMOFF_CHEPKADENJL\x10\xca\x13\
+    \x12\x1c\n\x17OKPCOBCMOFF_DFJDNLNFKLG\x10\xde\x13\x12\x1c\n\x17OKPCOBCMO\
+    FF_ECHFAEDEFLG\x10\xdd\x13\x12\x1c\n\x17OKPCOBCMOFF_CCMNFGHDCDO\x10\xdb\
+    \x13\x12\x1c\n\x17OKPCOBCMOFF_KDNHLKEOHHA\x10\xe6\x13\x12\x1c\n\x17OKPCO\
+    BCMOFF_MKBNPFGGANC\x10\xd6\x13\x12\x1c\n\x17OKPCOBCMOFF_OLCHGINAEIG\x10\
+    \xc6\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

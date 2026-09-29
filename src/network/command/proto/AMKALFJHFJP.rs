@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AMKALFJHFJP {
     // message fields
-    // @@protoc_insertion_point(field:AMKALFJHFJP.BPDDBKGDMDD)
-    pub BPDDBKGDMDD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AMKALFJHFJP.LIFJCJKNKNJ)
     pub LIFJCJKNKNJ: u32,
+    // @@protoc_insertion_point(field:AMKALFJHFJP.BPDDBKGDMDD)
+    pub BPDDBKGDMDD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AMKALFJHFJP.LGIPILAKIKB)
     pub LGIPILAKIKB: u32,
     // @@protoc_insertion_point(field:AMKALFJHFJP.FAHAMJFPMMI)
@@ -55,15 +55,15 @@ impl AMKALFJHFJP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BPDDBKGDMDD",
-            |m: &AMKALFJHFJP| { &m.BPDDBKGDMDD },
-            |m: &mut AMKALFJHFJP| { &mut m.BPDDBKGDMDD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LIFJCJKNKNJ",
             |m: &AMKALFJHFJP| { &m.LIFJCJKNKNJ },
             |m: &mut AMKALFJHFJP| { &mut m.LIFJCJKNKNJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BPDDBKGDMDD",
+            |m: &AMKALFJHFJP| { &m.BPDDBKGDMDD },
+            |m: &mut AMKALFJHFJP| { &mut m.BPDDBKGDMDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LGIPILAKIKB",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for AMKALFJHFJP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                16 => {
+                    self.LIFJCJKNKNJ = is.read_uint32()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.BPDDBKGDMDD)?;
                 },
-                8 => {
+                24 => {
                     self.BPDDBKGDMDD.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.LIFJCJKNKNJ = is.read_uint32()?;
                 },
                 56 => {
                     self.LGIPILAKIKB = is.read_uint32()?;
                 },
-                80 => {
+                64 => {
                     self.FAHAMJFPMMI = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for AMKALFJHFJP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BPDDBKGDMDD);
         if self.LIFJCJKNKNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LIFJCJKNKNJ);
+            my_size += ::protobuf::rt::uint32_size(2, self.LIFJCJKNKNJ);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.BPDDBKGDMDD);
         if self.LGIPILAKIKB != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.LGIPILAKIKB);
         }
         if self.FAHAMJFPMMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FAHAMJFPMMI);
+            my_size += ::protobuf::rt::uint32_size(8, self.FAHAMJFPMMI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for AMKALFJHFJP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.BPDDBKGDMDD)?;
         if self.LIFJCJKNKNJ != 0 {
-            os.write_uint32(5, self.LIFJCJKNKNJ)?;
+            os.write_uint32(2, self.LIFJCJKNKNJ)?;
         }
+        os.write_repeated_packed_uint32(3, &self.BPDDBKGDMDD)?;
         if self.LGIPILAKIKB != 0 {
             os.write_uint32(7, self.LGIPILAKIKB)?;
         }
         if self.FAHAMJFPMMI != 0 {
-            os.write_uint32(10, self.FAHAMJFPMMI)?;
+            os.write_uint32(8, self.FAHAMJFPMMI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,8 +163,8 @@ impl ::protobuf::Message for AMKALFJHFJP {
     }
 
     fn clear(&mut self) {
-        self.BPDDBKGDMDD.clear();
         self.LIFJCJKNKNJ = 0;
+        self.BPDDBKGDMDD.clear();
         self.LGIPILAKIKB = 0;
         self.FAHAMJFPMMI = 0;
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for AMKALFJHFJP {
 
     fn default_instance() -> &'static AMKALFJHFJP {
         static instance: AMKALFJHFJP = AMKALFJHFJP {
-            BPDDBKGDMDD: ::std::vec::Vec::new(),
             LIFJCJKNKNJ: 0,
+            BPDDBKGDMDD: ::std::vec::Vec::new(),
             LGIPILAKIKB: 0,
             FAHAMJFPMMI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for AMKALFJHFJP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AMKALFJHFJP.proto\"\x95\x01\n\x0bAMKALFJHFJP\x12\x20\n\x0bBPDDBKGD\
-    MDD\x18\x01\x20\x03(\rR\x0bBPDDBKGDMDD\x12\x20\n\x0bLIFJCJKNKNJ\x18\x05\
-    \x20\x01(\rR\x0bLIFJCJKNKNJ\x12\x20\n\x0bLGIPILAKIKB\x18\x07\x20\x01(\rR\
-    \x0bLGIPILAKIKB\x12\x20\n\x0bFAHAMJFPMMI\x18\n\x20\x01(\rR\x0bFAHAMJFPMM\
-    Ib\x06proto3\
+    \n\x11AMKALFJHFJP.proto\"\x95\x01\n\x0bAMKALFJHFJP\x12\x20\n\x0bLIFJCJKN\
+    KNJ\x18\x02\x20\x01(\rR\x0bLIFJCJKNKNJ\x12\x20\n\x0bBPDDBKGDMDD\x18\x03\
+    \x20\x03(\rR\x0bBPDDBKGDMDD\x12\x20\n\x0bLGIPILAKIKB\x18\x07\x20\x01(\rR\
+    \x0bLGIPILAKIKB\x12\x20\n\x0bFAHAMJFPMMI\x18\x08\x20\x01(\rR\x0bFAHAMJFP\
+    MMIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

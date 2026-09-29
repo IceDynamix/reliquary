@@ -30,12 +30,12 @@ pub struct LFOCLBEMIEM {
     // message fields
     // @@protoc_insertion_point(field:LFOCLBEMIEM.section_id)
     pub section_id: u32,
-    // @@protoc_insertion_point(field:LFOCLBEMIEM.DCAHJELNJNP)
-    pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:LFOCLBEMIEM.CJCCMAACJDB)
     pub CJCCMAACJDB: u32,
     // @@protoc_insertion_point(field:LFOCLBEMIEM.ELPODIAAGEK)
     pub ELPODIAAGEK: u32,
+    // @@protoc_insertion_point(field:LFOCLBEMIEM.DCAHJELNJNP)
+    pub DCAHJELNJNP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LFOCLBEMIEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl LFOCLBEMIEM {
             |m: &mut LFOCLBEMIEM| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCAHJELNJNP",
-            |m: &LFOCLBEMIEM| { &m.DCAHJELNJNP },
-            |m: &mut LFOCLBEMIEM| { &mut m.DCAHJELNJNP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CJCCMAACJDB",
             |m: &LFOCLBEMIEM| { &m.CJCCMAACJDB },
             |m: &mut LFOCLBEMIEM| { &mut m.CJCCMAACJDB },
@@ -74,6 +69,11 @@ impl LFOCLBEMIEM {
             "ELPODIAAGEK",
             |m: &LFOCLBEMIEM| { &m.ELPODIAAGEK },
             |m: &mut LFOCLBEMIEM| { &mut m.ELPODIAAGEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DCAHJELNJNP",
+            |m: &LFOCLBEMIEM| { &m.DCAHJELNJNP },
+            |m: &mut LFOCLBEMIEM| { &mut m.DCAHJELNJNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LFOCLBEMIEM>(
             "LFOCLBEMIEM",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LFOCLBEMIEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.section_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.DCAHJELNJNP = is.read_uint32()?;
-                },
-                104 => {
+                72 => {
                     self.CJCCMAACJDB = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.ELPODIAAGEK = is.read_uint32()?;
+                },
+                96 => {
+                    self.DCAHJELNJNP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for LFOCLBEMIEM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.section_id);
-        }
-        if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DCAHJELNJNP);
+            my_size += ::protobuf::rt::uint32_size(2, self.section_id);
         }
         if self.CJCCMAACJDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CJCCMAACJDB);
+            my_size += ::protobuf::rt::uint32_size(9, self.CJCCMAACJDB);
         }
         if self.ELPODIAAGEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ELPODIAAGEK);
+            my_size += ::protobuf::rt::uint32_size(10, self.ELPODIAAGEK);
+        }
+        if self.DCAHJELNJNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DCAHJELNJNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for LFOCLBEMIEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.section_id != 0 {
-            os.write_uint32(5, self.section_id)?;
-        }
-        if self.DCAHJELNJNP != 0 {
-            os.write_uint32(7, self.DCAHJELNJNP)?;
+            os.write_uint32(2, self.section_id)?;
         }
         if self.CJCCMAACJDB != 0 {
-            os.write_uint32(13, self.CJCCMAACJDB)?;
+            os.write_uint32(9, self.CJCCMAACJDB)?;
         }
         if self.ELPODIAAGEK != 0 {
-            os.write_uint32(15, self.ELPODIAAGEK)?;
+            os.write_uint32(10, self.ELPODIAAGEK)?;
+        }
+        if self.DCAHJELNJNP != 0 {
+            os.write_uint32(12, self.DCAHJELNJNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for LFOCLBEMIEM {
 
     fn clear(&mut self) {
         self.section_id = 0;
-        self.DCAHJELNJNP = 0;
         self.CJCCMAACJDB = 0;
         self.ELPODIAAGEK = 0;
+        self.DCAHJELNJNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LFOCLBEMIEM {
         static instance: LFOCLBEMIEM = LFOCLBEMIEM {
             section_id: 0,
-            DCAHJELNJNP: 0,
             CJCCMAACJDB: 0,
             ELPODIAAGEK: 0,
+            DCAHJELNJNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LFOCLBEMIEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LFOCLBEMIEM.proto\"\x92\x01\n\x0bLFOCLBEMIEM\x12\x1d\n\nsection_id\
-    \x18\x05\x20\x01(\rR\tsectionId\x12\x20\n\x0bDCAHJELNJNP\x18\x07\x20\x01\
-    (\rR\x0bDCAHJELNJNP\x12\x20\n\x0bCJCCMAACJDB\x18\r\x20\x01(\rR\x0bCJCCMA\
-    ACJDB\x12\x20\n\x0bELPODIAAGEK\x18\x0f\x20\x01(\rR\x0bELPODIAAGEKb\x06pr\
-    oto3\
+    \x18\x02\x20\x01(\rR\tsectionId\x12\x20\n\x0bCJCCMAACJDB\x18\t\x20\x01(\
+    \rR\x0bCJCCMAACJDB\x12\x20\n\x0bELPODIAAGEK\x18\n\x20\x01(\rR\x0bELPODIA\
+    AGEK\x12\x20\n\x0bDCAHJELNJNP\x18\x0c\x20\x01(\rR\x0bDCAHJELNJNPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

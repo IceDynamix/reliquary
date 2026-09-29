@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HBFODNLIBFI {
     // message fields
-    // @@protoc_insertion_point(field:HBFODNLIBFI.JALHKMEOOPN)
-    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:HBFODNLIBFI.ECGDECADBDO)
     pub ECGDECADBDO: u32,
     // @@protoc_insertion_point(field:HBFODNLIBFI.JENKDACFCDO)
     pub JENKDACFCDO: u32,
+    // @@protoc_insertion_point(field:HBFODNLIBFI.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:HBFODNLIBFI.AHDCGHABALN)
     pub AHDCGHABALN: bool,
     // special fields
@@ -56,11 +56,6 @@ impl HBFODNLIBFI {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &HBFODNLIBFI| { &m.JALHKMEOOPN },
-            |m: &mut HBFODNLIBFI| { &mut m.JALHKMEOOPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ECGDECADBDO",
             |m: &HBFODNLIBFI| { &m.ECGDECADBDO },
             |m: &mut HBFODNLIBFI| { &mut m.ECGDECADBDO },
@@ -69,6 +64,11 @@ impl HBFODNLIBFI {
             "JENKDACFCDO",
             |m: &HBFODNLIBFI| { &m.JENKDACFCDO },
             |m: &mut HBFODNLIBFI| { &mut m.JENKDACFCDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JALHKMEOOPN",
+            |m: &HBFODNLIBFI| { &m.JALHKMEOOPN },
+            |m: &mut HBFODNLIBFI| { &mut m.JALHKMEOOPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHDCGHABALN",
@@ -93,14 +93,14 @@ impl ::protobuf::Message for HBFODNLIBFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.JALHKMEOOPN = is.read_uint32()?;
-                },
-                64 => {
+                72 => {
                     self.ECGDECADBDO = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.JENKDACFCDO = is.read_uint32()?;
+                },
+                112 => {
+                    self.JALHKMEOOPN = is.read_uint32()?;
                 },
                 120 => {
                     self.AHDCGHABALN = is.read_bool()?;
@@ -117,14 +117,14 @@ impl ::protobuf::Message for HBFODNLIBFI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JALHKMEOOPN);
-        }
         if self.ECGDECADBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ECGDECADBDO);
+            my_size += ::protobuf::rt::uint32_size(9, self.ECGDECADBDO);
         }
         if self.JENKDACFCDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JENKDACFCDO);
+            my_size += ::protobuf::rt::uint32_size(11, self.JENKDACFCDO);
+        }
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JALHKMEOOPN);
         }
         if self.AHDCGHABALN != false {
             my_size += 1 + 1;
@@ -135,14 +135,14 @@ impl ::protobuf::Message for HBFODNLIBFI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JALHKMEOOPN != 0 {
-            os.write_uint32(6, self.JALHKMEOOPN)?;
-        }
         if self.ECGDECADBDO != 0 {
-            os.write_uint32(8, self.ECGDECADBDO)?;
+            os.write_uint32(9, self.ECGDECADBDO)?;
         }
         if self.JENKDACFCDO != 0 {
-            os.write_uint32(13, self.JENKDACFCDO)?;
+            os.write_uint32(11, self.JENKDACFCDO)?;
+        }
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(14, self.JALHKMEOOPN)?;
         }
         if self.AHDCGHABALN != false {
             os.write_bool(15, self.AHDCGHABALN)?;
@@ -164,18 +164,18 @@ impl ::protobuf::Message for HBFODNLIBFI {
     }
 
     fn clear(&mut self) {
-        self.JALHKMEOOPN = 0;
         self.ECGDECADBDO = 0;
         self.JENKDACFCDO = 0;
+        self.JALHKMEOOPN = 0;
         self.AHDCGHABALN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HBFODNLIBFI {
         static instance: HBFODNLIBFI = HBFODNLIBFI {
-            JALHKMEOOPN: 0,
             ECGDECADBDO: 0,
             JENKDACFCDO: 0,
+            JALHKMEOOPN: 0,
             AHDCGHABALN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for HBFODNLIBFI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HBFODNLIBFI.proto\"\x95\x01\n\x0bHBFODNLIBFI\x12\x20\n\x0bJALHKMEO\
-    OPN\x18\x06\x20\x01(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bECGDECADBDO\x18\x08\
-    \x20\x01(\rR\x0bECGDECADBDO\x12\x20\n\x0bJENKDACFCDO\x18\r\x20\x01(\rR\
-    \x0bJENKDACFCDO\x12\x20\n\x0bAHDCGHABALN\x18\x0f\x20\x01(\x08R\x0bAHDCGH\
+    \n\x11HBFODNLIBFI.proto\"\x95\x01\n\x0bHBFODNLIBFI\x12\x20\n\x0bECGDECAD\
+    BDO\x18\t\x20\x01(\rR\x0bECGDECADBDO\x12\x20\n\x0bJENKDACFCDO\x18\x0b\
+    \x20\x01(\rR\x0bJENKDACFCDO\x12\x20\n\x0bJALHKMEOOPN\x18\x0e\x20\x01(\rR\
+    \x0bJALHKMEOOPN\x12\x20\n\x0bAHDCGHABALN\x18\x0f\x20\x01(\x08R\x0bAHDCGH\
     ABALNb\x06proto3\
 ";
 

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GIIEKGHDHJP {
     // message fields
-    // @@protoc_insertion_point(field:GIIEKGHDHJP.GGEBFLNKAKN)
-    pub GGEBFLNKAKN: u32,
     // @@protoc_insertion_point(field:GIIEKGHDHJP.CCGBOIFFDLD)
     pub CCGBOIFFDLD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GIIEKGHDHJP.DABECDOKHLL)
     pub DABECDOKHLL: u32,
     // @@protoc_insertion_point(field:GIIEKGHDHJP.GJEAIKIINML)
     pub GJEAIKIINML: u32,
+    // @@protoc_insertion_point(field:GIIEKGHDHJP.GGEBFLNKAKN)
+    pub GGEBFLNKAKN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GIIEKGHDHJP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl GIIEKGHDHJP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGEBFLNKAKN",
-            |m: &GIIEKGHDHJP| { &m.GGEBFLNKAKN },
-            |m: &mut GIIEKGHDHJP| { &mut m.GGEBFLNKAKN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CCGBOIFFDLD",
             |m: &GIIEKGHDHJP| { &m.CCGBOIFFDLD },
@@ -74,6 +69,11 @@ impl GIIEKGHDHJP {
             "GJEAIKIINML",
             |m: &GIIEKGHDHJP| { &m.GJEAIKIINML },
             |m: &mut GIIEKGHDHJP| { &mut m.GJEAIKIINML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GGEBFLNKAKN",
+            |m: &GIIEKGHDHJP| { &m.GGEBFLNKAKN },
+            |m: &mut GIIEKGHDHJP| { &mut m.GGEBFLNKAKN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GIIEKGHDHJP>(
             "GIIEKGHDHJP",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GIIEKGHDHJP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GGEBFLNKAKN = is.read_uint32()?;
-                },
-                58 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.CCGBOIFFDLD)?;
                 },
-                56 => {
+                24 => {
                     self.CCGBOIFFDLD.push(is.read_uint32()?);
                 },
-                64 => {
+                32 => {
                     self.DABECDOKHLL = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.GJEAIKIINML = is.read_uint32()?;
+                },
+                96 => {
+                    self.GGEBFLNKAKN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for GIIEKGHDHJP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GGEBFLNKAKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GGEBFLNKAKN);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CCGBOIFFDLD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CCGBOIFFDLD);
         if self.DABECDOKHLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DABECDOKHLL);
+            my_size += ::protobuf::rt::uint32_size(4, self.DABECDOKHLL);
         }
         if self.GJEAIKIINML != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GJEAIKIINML);
+            my_size += ::protobuf::rt::uint32_size(6, self.GJEAIKIINML);
+        }
+        if self.GGEBFLNKAKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.GGEBFLNKAKN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GIIEKGHDHJP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GGEBFLNKAKN != 0 {
-            os.write_uint32(4, self.GGEBFLNKAKN)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.CCGBOIFFDLD)?;
+        os.write_repeated_packed_uint32(3, &self.CCGBOIFFDLD)?;
         if self.DABECDOKHLL != 0 {
-            os.write_uint32(8, self.DABECDOKHLL)?;
+            os.write_uint32(4, self.DABECDOKHLL)?;
         }
         if self.GJEAIKIINML != 0 {
-            os.write_uint32(15, self.GJEAIKIINML)?;
+            os.write_uint32(6, self.GJEAIKIINML)?;
+        }
+        if self.GGEBFLNKAKN != 0 {
+            os.write_uint32(12, self.GGEBFLNKAKN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for GIIEKGHDHJP {
     }
 
     fn clear(&mut self) {
-        self.GGEBFLNKAKN = 0;
         self.CCGBOIFFDLD.clear();
         self.DABECDOKHLL = 0;
         self.GJEAIKIINML = 0;
+        self.GGEBFLNKAKN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GIIEKGHDHJP {
         static instance: GIIEKGHDHJP = GIIEKGHDHJP {
-            GGEBFLNKAKN: 0,
             CCGBOIFFDLD: ::std::vec::Vec::new(),
             DABECDOKHLL: 0,
             GJEAIKIINML: 0,
+            GGEBFLNKAKN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for GIIEKGHDHJP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GIIEKGHDHJP.proto\"\x95\x01\n\x0bGIIEKGHDHJP\x12\x20\n\x0bGGEBFLNK\
-    AKN\x18\x04\x20\x01(\rR\x0bGGEBFLNKAKN\x12\x20\n\x0bCCGBOIFFDLD\x18\x07\
-    \x20\x03(\rR\x0bCCGBOIFFDLD\x12\x20\n\x0bDABECDOKHLL\x18\x08\x20\x01(\rR\
-    \x0bDABECDOKHLL\x12\x20\n\x0bGJEAIKIINML\x18\x0f\x20\x01(\rR\x0bGJEAIKII\
-    NMLb\x06proto3\
+    \n\x11GIIEKGHDHJP.proto\"\x95\x01\n\x0bGIIEKGHDHJP\x12\x20\n\x0bCCGBOIFF\
+    DLD\x18\x03\x20\x03(\rR\x0bCCGBOIFFDLD\x12\x20\n\x0bDABECDOKHLL\x18\x04\
+    \x20\x01(\rR\x0bDABECDOKHLL\x12\x20\n\x0bGJEAIKIINML\x18\x06\x20\x01(\rR\
+    \x0bGJEAIKIINML\x12\x20\n\x0bGGEBFLNKAKN\x18\x0c\x20\x01(\rR\x0bGGEBFLNK\
+    AKNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

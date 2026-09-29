@@ -79,10 +79,10 @@ impl ::protobuf::Message for NBNLDHBELLO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.APAKCBFMCAB = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.role_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NBNLDHBELLO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.APAKCBFMCAB != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.APAKCBFMCAB);
+            my_size += ::protobuf::rt::uint32_size(6, self.APAKCBFMCAB);
         }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NBNLDHBELLO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.APAKCBFMCAB != 0 {
-            os.write_uint32(1, self.APAKCBFMCAB)?;
+            os.write_uint32(6, self.APAKCBFMCAB)?;
         }
         if self.role_id != 0 {
-            os.write_uint32(9, self.role_id)?;
+            os.write_uint32(13, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NBNLDHBELLO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NBNLDHBELLO.proto\"H\n\x0bNBNLDHBELLO\x12\x20\n\x0bAPAKCBFMCAB\x18\
-    \x01\x20\x01(\rR\x0bAPAKCBFMCAB\x12\x17\n\x07role_id\x18\t\x20\x01(\rR\
+    \x06\x20\x01(\rR\x0bAPAKCBFMCAB\x12\x17\n\x07role_id\x18\r\x20\x01(\rR\
     \x06roleIdb\x06proto3\
 ";
 

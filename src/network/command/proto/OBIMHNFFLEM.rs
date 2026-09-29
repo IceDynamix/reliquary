@@ -33,7 +33,7 @@ pub struct OBIMHNFFLEM {
     // @@protoc_insertion_point(field:OBIMHNFFLEM.switch_list)
     pub switch_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:OBIMHNFFLEM.trait_effect_level_reward)
-    pub trait_effect_level_reward: ::std::collections::HashMap<u32, super::H_cb5e278e::H_cb5e278e>,
+    pub trait_effect_level_reward: ::std::collections::HashMap<u32, super::H_1253c083::H_1253c083>,
     // special fields
     // @@protoc_insertion_point(special_field:OBIMHNFFLEM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -200,13 +200,13 @@ impl ::protobuf::reflect::ProtobufValue for OBIMHNFFLEM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OBIMHNFFLEM.proto\x1a\x10H_cb5e278e.proto\"\x88\x02\n\x0bOBIMHNFFL\
+    \n\x11OBIMHNFFLEM.proto\x1a\x10H_1253c083.proto\"\x88\x02\n\x0bOBIMHNFFL\
     EM\x12\x1b\n\teffect_id\x18\x01\x20\x01(\rR\x08effectId\x12\x1f\n\x0bswi\
     tch_list\x18\x02\x20\x03(\rR\nswitchList\x12c\n\x19trait_effect_level_re\
     ward\x18\x05\x20\x03(\x0b2(.OBIMHNFFLEM.TraitEffectLevelRewardEntryR\x16\
     traitEffectLevelReward\x1aV\n\x1bTraitEffectLevelRewardEntry\x12\x10\n\
     \x03key\x18\x01\x20\x01(\rR\x03key\x12!\n\x05value\x18\x02\x20\x01(\x0b2\
-    \x0b.H_cb5e278eR\x05value:\x028\x01b\x06proto3\
+    \x0b.H_1253c083R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_cb5e278e::file_descriptor().clone());
+            deps.push(super::H_1253c083::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OBIMHNFFLEM::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

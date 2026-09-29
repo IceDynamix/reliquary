@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct B51RacingGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:B51RacingGetDataScRsp.MBFOPKLNEDB)
     pub MBFOPKLNEDB: u32,
-    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.ALAAKIADLBN)
-    pub ALAAKIADLBN: ::protobuf::MessageField<super::GIIEKGHDHJP::GIIEKGHDHJP>,
     // @@protoc_insertion_point(field:B51RacingGetDataScRsp.FNIAAEAFGDE)
     pub FNIAAEAFGDE: ::protobuf::MessageField<super::OADGBFHDCDE::OADGBFHDCDE>,
-    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.OCDLPDDMCLP)
-    pub OCDLPDDMCLP: ::protobuf::MessageField<super::GIIHHKDLOBA::GIIHHKDLOBA>,
+    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.ALAAKIADLBN)
+    pub ALAAKIADLBN: ::protobuf::MessageField<super::GIIEKGHDHJP::GIIEKGHDHJP>,
     // @@protoc_insertion_point(field:B51RacingGetDataScRsp.BNOBEGBNFMJ)
     pub BNOBEGBNFMJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:B51RacingGetDataScRsp.OCDLPDDMCLP)
+    pub OCDLPDDMCLP: ::protobuf::MessageField<super::GIIHHKDLOBA::GIIHHKDLOBA>,
     // special fields
     // @@protoc_insertion_point(special_field:B51RacingGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl B51RacingGetDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &B51RacingGetDataScRsp| { &m.retcode },
-            |m: &mut B51RacingGetDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MBFOPKLNEDB",
             |m: &B51RacingGetDataScRsp| { &m.MBFOPKLNEDB },
             |m: &mut B51RacingGetDataScRsp| { &mut m.MBFOPKLNEDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIIEKGHDHJP::GIIEKGHDHJP>(
-            "ALAAKIADLBN",
-            |m: &B51RacingGetDataScRsp| { &m.ALAAKIADLBN },
-            |m: &mut B51RacingGetDataScRsp| { &mut m.ALAAKIADLBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OADGBFHDCDE::OADGBFHDCDE>(
             "FNIAAEAFGDE",
             |m: &B51RacingGetDataScRsp| { &m.FNIAAEAFGDE },
             |m: &mut B51RacingGetDataScRsp| { &mut m.FNIAAEAFGDE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIIHHKDLOBA::GIIHHKDLOBA>(
-            "OCDLPDDMCLP",
-            |m: &B51RacingGetDataScRsp| { &m.OCDLPDDMCLP },
-            |m: &mut B51RacingGetDataScRsp| { &mut m.OCDLPDDMCLP },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &B51RacingGetDataScRsp| { &m.retcode },
+            |m: &mut B51RacingGetDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIIEKGHDHJP::GIIEKGHDHJP>(
+            "ALAAKIADLBN",
+            |m: &B51RacingGetDataScRsp| { &m.ALAAKIADLBN },
+            |m: &mut B51RacingGetDataScRsp| { &mut m.ALAAKIADLBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BNOBEGBNFMJ",
             |m: &B51RacingGetDataScRsp| { &m.BNOBEGBNFMJ },
             |m: &mut B51RacingGetDataScRsp| { &mut m.BNOBEGBNFMJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIIHHKDLOBA::GIIHHKDLOBA>(
+            "OCDLPDDMCLP",
+            |m: &B51RacingGetDataScRsp| { &m.OCDLPDDMCLP },
+            |m: &mut B51RacingGetDataScRsp| { &mut m.OCDLPDDMCLP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<B51RacingGetDataScRsp>(
             "B51RacingGetDataScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for B51RacingGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.MBFOPKLNEDB = is.read_uint32()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALAAKIADLBN)?;
-                },
-                98 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FNIAAEAFGDE)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCDLPDDMCLP)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALAAKIADLBN)?;
+                },
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.BNOBEGBNFMJ)?;
                 },
-                120 => {
+                104 => {
                     self.BNOBEGBNFMJ.push(is.read_uint32()?);
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCDLPDDMCLP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,47 +140,47 @@ impl ::protobuf::Message for B51RacingGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         if self.MBFOPKLNEDB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MBFOPKLNEDB);
-        }
-        if let Some(v) = self.ALAAKIADLBN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(1, self.MBFOPKLNEDB);
         }
         if let Some(v) = self.FNIAAEAFGDE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if let Some(v) = self.ALAAKIADLBN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.BNOBEGBNFMJ);
         if let Some(v) = self.OCDLPDDMCLP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.BNOBEGBNFMJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
         if self.MBFOPKLNEDB != 0 {
-            os.write_uint32(6, self.MBFOPKLNEDB)?;
-        }
-        if let Some(v) = self.ALAAKIADLBN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            os.write_uint32(1, self.MBFOPKLNEDB)?;
         }
         if let Some(v) = self.FNIAAEAFGDE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
+        if let Some(v) = self.ALAAKIADLBN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        os.write_repeated_packed_uint32(13, &self.BNOBEGBNFMJ)?;
         if let Some(v) = self.OCDLPDDMCLP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        os.write_repeated_packed_uint32(15, &self.BNOBEGBNFMJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for B51RacingGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.MBFOPKLNEDB = 0;
-        self.ALAAKIADLBN.clear();
         self.FNIAAEAFGDE.clear();
-        self.OCDLPDDMCLP.clear();
+        self.retcode = 0;
+        self.ALAAKIADLBN.clear();
         self.BNOBEGBNFMJ.clear();
+        self.OCDLPDDMCLP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static B51RacingGetDataScRsp {
         static instance: B51RacingGetDataScRsp = B51RacingGetDataScRsp {
-            retcode: 0,
             MBFOPKLNEDB: 0,
-            ALAAKIADLBN: ::protobuf::MessageField::none(),
             FNIAAEAFGDE: ::protobuf::MessageField::none(),
-            OCDLPDDMCLP: ::protobuf::MessageField::none(),
+            retcode: 0,
+            ALAAKIADLBN: ::protobuf::MessageField::none(),
             BNOBEGBNFMJ: ::std::vec::Vec::new(),
+            OCDLPDDMCLP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for B51RacingGetDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bB51RacingGetDataScRsp.proto\x1a\x11GIIEKGHDHJP.proto\x1a\x11GIIHHK\
     DLOBA.proto\x1a\x11OADGBFHDCDE.proto\"\x85\x02\n\x15B51RacingGetDataScRs\
-    p\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bMBFOP\
-    KLNEDB\x18\x06\x20\x01(\rR\x0bMBFOPKLNEDB\x12.\n\x0bALAAKIADLBN\x18\t\
-    \x20\x01(\x0b2\x0c.GIIEKGHDHJPR\x0bALAAKIADLBN\x12.\n\x0bFNIAAEAFGDE\x18\
-    \x0c\x20\x01(\x0b2\x0c.OADGBFHDCDER\x0bFNIAAEAFGDE\x12.\n\x0bOCDLPDDMCLP\
-    \x18\r\x20\x01(\x0b2\x0c.GIIHHKDLOBAR\x0bOCDLPDDMCLP\x12\x20\n\x0bBNOBEG\
-    BNFMJ\x18\x0f\x20\x03(\rR\x0bBNOBEGBNFMJb\x06proto3\
+    p\x12\x20\n\x0bMBFOPKLNEDB\x18\x01\x20\x01(\rR\x0bMBFOPKLNEDB\x12.\n\x0b\
+    FNIAAEAFGDE\x18\x03\x20\x01(\x0b2\x0c.OADGBFHDCDER\x0bFNIAAEAFGDE\x12\
+    \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bALAAKIADLBN\x18\
+    \x0b\x20\x01(\x0b2\x0c.GIIEKGHDHJPR\x0bALAAKIADLBN\x12\x20\n\x0bBNOBEGBN\
+    FMJ\x18\r\x20\x03(\rR\x0bBNOBEGBNFMJ\x12.\n\x0bOCDLPDDMCLP\x18\x0f\x20\
+    \x01(\x0b2\x0c.GIIHHKDLOBAR\x0bOCDLPDDMCLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

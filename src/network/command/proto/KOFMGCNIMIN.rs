@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KOFMGCNIMIN {
     // message fields
-    // @@protoc_insertion_point(field:KOFMGCNIMIN.LJCEOGPOGBE)
-    pub LJCEOGPOGBE: u32,
     // @@protoc_insertion_point(field:KOFMGCNIMIN.DGGCFDKJDPO)
     pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:KOFMGCNIMIN.LJCEOGPOGBE)
+    pub LJCEOGPOGBE: u32,
     // @@protoc_insertion_point(field:KOFMGCNIMIN.AADNIFFHHDD)
     pub AADNIFFHHDD: u32,
     // special fields
@@ -54,14 +54,14 @@ impl KOFMGCNIMIN {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJCEOGPOGBE",
-            |m: &KOFMGCNIMIN| { &m.LJCEOGPOGBE },
-            |m: &mut KOFMGCNIMIN| { &mut m.LJCEOGPOGBE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DGGCFDKJDPO",
             |m: &KOFMGCNIMIN| { &m.DGGCFDKJDPO },
             |m: &mut KOFMGCNIMIN| { &mut m.DGGCFDKJDPO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJCEOGPOGBE",
+            |m: &KOFMGCNIMIN| { &m.LJCEOGPOGBE },
+            |m: &mut KOFMGCNIMIN| { &mut m.LJCEOGPOGBE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AADNIFFHHDD",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.LJCEOGPOGBE = is.read_uint32()?;
-                },
-                104 => {
+                8 => {
                     self.DGGCFDKJDPO = is.read_uint32()?;
                 },
-                120 => {
+                16 => {
+                    self.LJCEOGPOGBE = is.read_uint32()?;
+                },
+                32 => {
                     self.AADNIFFHHDD = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJCEOGPOGBE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LJCEOGPOGBE);
-        }
         if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DGGCFDKJDPO);
+            my_size += ::protobuf::rt::uint32_size(1, self.DGGCFDKJDPO);
+        }
+        if self.LJCEOGPOGBE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LJCEOGPOGBE);
         }
         if self.AADNIFFHHDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AADNIFFHHDD);
+            my_size += ::protobuf::rt::uint32_size(4, self.AADNIFFHHDD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJCEOGPOGBE != 0 {
-            os.write_uint32(8, self.LJCEOGPOGBE)?;
-        }
         if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(13, self.DGGCFDKJDPO)?;
+            os.write_uint32(1, self.DGGCFDKJDPO)?;
+        }
+        if self.LJCEOGPOGBE != 0 {
+            os.write_uint32(2, self.LJCEOGPOGBE)?;
         }
         if self.AADNIFFHHDD != 0 {
-            os.write_uint32(15, self.AADNIFFHHDD)?;
+            os.write_uint32(4, self.AADNIFFHHDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for KOFMGCNIMIN {
     }
 
     fn clear(&mut self) {
-        self.LJCEOGPOGBE = 0;
         self.DGGCFDKJDPO = 0;
+        self.LJCEOGPOGBE = 0;
         self.AADNIFFHHDD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KOFMGCNIMIN {
         static instance: KOFMGCNIMIN = KOFMGCNIMIN {
-            LJCEOGPOGBE: 0,
             DGGCFDKJDPO: 0,
+            LJCEOGPOGBE: 0,
             AADNIFFHHDD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KOFMGCNIMIN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KOFMGCNIMIN.proto\"s\n\x0bKOFMGCNIMIN\x12\x20\n\x0bLJCEOGPOGBE\x18\
-    \x08\x20\x01(\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bDGGCFDKJDPO\x18\r\x20\x01(\
-    \rR\x0bDGGCFDKJDPO\x12\x20\n\x0bAADNIFFHHDD\x18\x0f\x20\x01(\rR\x0bAADNI\
-    FFHHDDb\x06proto3\
+    \n\x11KOFMGCNIMIN.proto\"s\n\x0bKOFMGCNIMIN\x12\x20\n\x0bDGGCFDKJDPO\x18\
+    \x01\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bLJCEOGPOGBE\x18\x02\x20\x01\
+    (\rR\x0bLJCEOGPOGBE\x12\x20\n\x0bAADNIFFHHDD\x18\x04\x20\x01(\rR\x0bAADN\
+    IFFHHDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

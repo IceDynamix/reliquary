@@ -96,13 +96,13 @@ impl ::protobuf::Message for GLECNCOBKCJ {
                 8 => {
                     self.LKBHAFLMOLA = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                96 => {
+                56 => {
                     self.PKJHFPFOABL = is.read_uint32()?;
                 },
-                122 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFDJOCBMLCI)?;
                 },
                 tag => {
@@ -121,10 +121,10 @@ impl ::protobuf::Message for GLECNCOBKCJ {
             my_size += ::protobuf::rt::uint32_size(1, self.LKBHAFLMOLA);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
         }
         if self.PKJHFPFOABL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.PKJHFPFOABL);
+            my_size += ::protobuf::rt::uint32_size(7, self.PKJHFPFOABL);
         }
         if let Some(v) = self.NFDJOCBMLCI.as_ref() {
             let len = v.compute_size();
@@ -140,13 +140,13 @@ impl ::protobuf::Message for GLECNCOBKCJ {
             os.write_uint32(1, self.LKBHAFLMOLA)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(4, self.avatar_id)?;
+            os.write_uint32(3, self.avatar_id)?;
         }
         if self.PKJHFPFOABL != 0 {
-            os.write_uint32(12, self.PKJHFPFOABL)?;
+            os.write_uint32(7, self.PKJHFPFOABL)?;
         }
         if let Some(v) = self.NFDJOCBMLCI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -204,8 +204,8 @@ impl ::protobuf::reflect::ProtobufValue for GLECNCOBKCJ {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GLECNCOBKCJ.proto\x1a\x11NCFKHDIKCNI.proto\"\x9e\x01\n\x0bGLECNCOB\
     KCJ\x12\x20\n\x0bLKBHAFLMOLA\x18\x01\x20\x01(\rR\x0bLKBHAFLMOLA\x12\x1b\
-    \n\tavatar_id\x18\x04\x20\x01(\rR\x08avatarId\x12\x20\n\x0bPKJHFPFOABL\
-    \x18\x0c\x20\x01(\rR\x0bPKJHFPFOABL\x12.\n\x0bNFDJOCBMLCI\x18\x0f\x20\
+    \n\tavatar_id\x18\x03\x20\x01(\rR\x08avatarId\x12\x20\n\x0bPKJHFPFOABL\
+    \x18\x07\x20\x01(\rR\x0bPKJHFPFOABL\x12.\n\x0bNFDJOCBMLCI\x18\x08\x20\
     \x01(\x0b2\x0c.NCFKHDIKCNIR\x0bNFDJOCBMLCIb\x06proto3\
 ";
 

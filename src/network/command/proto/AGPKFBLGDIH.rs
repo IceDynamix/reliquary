@@ -31,7 +31,7 @@ pub struct AGPKFBLGDIH {
     // @@protoc_insertion_point(field:AGPKFBLGDIH.trait_id)
     pub trait_id: u32,
     // @@protoc_insertion_point(field:AGPKFBLGDIH.KBGAPHFIPJF)
-    pub KBGAPHFIPJF: ::std::vec::Vec<super::ActiveTraitSourceList::ActiveTraitSourceList>,
+    pub KBGAPHFIPJF: ::std::vec::Vec<super::PLMAMHBLJKP::PLMAMHBLJKP>,
     // special fields
     // @@protoc_insertion_point(special_field:AGPKFBLGDIH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for AGPKFBLGDIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                40 => {
                     self.trait_id = is.read_uint32()?;
                 },
-                122 => {
+                90 => {
                     self.KBGAPHFIPJF.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AGPKFBLGDIH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.trait_id);
         }
         for value in &self.KBGAPHFIPJF {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AGPKFBLGDIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.trait_id != 0 {
-            os.write_uint32(12, self.trait_id)?;
+            os.write_uint32(5, self.trait_id)?;
         }
         for v in &self.KBGAPHFIPJF {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AGPKFBLGDIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AGPKFBLGDIH.proto\x1a\x1bActiveTraitSourceList.proto\"b\n\x0bAGPKF\
-    BLGDIH\x12\x19\n\x08trait_id\x18\x0c\x20\x01(\rR\x07traitId\x128\n\x0bKB\
-    GAPHFIPJF\x18\x0f\x20\x03(\x0b2\x16.ActiveTraitSourceListR\x0bKBGAPHFIPJ\
-    Fb\x06proto3\
+    \n\x11AGPKFBLGDIH.proto\x1a\x11PLMAMHBLJKP.proto\"X\n\x0bAGPKFBLGDIH\x12\
+    \x19\n\x08trait_id\x18\x05\x20\x01(\rR\x07traitId\x12.\n\x0bKBGAPHFIPJF\
+    \x18\x0b\x20\x03(\x0b2\x0c.PLMAMHBLJKPR\x0bKBGAPHFIPJFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ActiveTraitSourceList::file_descriptor().clone());
+            deps.push(super::PLMAMHBLJKP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AGPKFBLGDIH::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

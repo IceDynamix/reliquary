@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMKNANGPDGH {
     // message fields
+    // @@protoc_insertion_point(field:BMKNANGPDGH.HCDLPKAGAKO)
+    pub HCDLPKAGAKO: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.EMOHLJHPOPC)
     pub EMOHLJHPOPC: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.HLAIOEJBEPG)
     pub HLAIOEJBEPG: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::ONKDAPOKGAC::ONKDAPOKGAC>,
-    // @@protoc_insertion_point(field:BMKNANGPDGH.HCDLPKAGAKO)
-    pub HCDLPKAGAKO: u32,
     // @@protoc_insertion_point(field:BMKNANGPDGH.EOJNPEPDECF)
     pub EOJNPEPDECF: u32,
     // special fields
@@ -58,6 +58,11 @@ impl BMKNANGPDGH {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCDLPKAGAKO",
+            |m: &BMKNANGPDGH| { &m.HCDLPKAGAKO },
+            |m: &mut BMKNANGPDGH| { &mut m.HCDLPKAGAKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EMOHLJHPOPC",
             |m: &BMKNANGPDGH| { &m.EMOHLJHPOPC },
             |m: &mut BMKNANGPDGH| { &mut m.EMOHLJHPOPC },
@@ -71,11 +76,6 @@ impl BMKNANGPDGH {
             "avatar_list",
             |m: &BMKNANGPDGH| { &m.avatar_list },
             |m: &mut BMKNANGPDGH| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCDLPKAGAKO",
-            |m: &BMKNANGPDGH| { &m.HCDLPKAGAKO },
-            |m: &mut BMKNANGPDGH| { &mut m.HCDLPKAGAKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EOJNPEPDECF",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for BMKNANGPDGH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.EMOHLJHPOPC = is.read_uint32()?;
-                },
-                16 => {
-                    self.HLAIOEJBEPG = is.read_uint32()?;
-                },
-                90 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                112 => {
                     self.HCDLPKAGAKO = is.read_uint32()?;
                 },
-                120 => {
+                24 => {
+                    self.EMOHLJHPOPC = is.read_uint32()?;
+                },
+                48 => {
+                    self.HLAIOEJBEPG = is.read_uint32()?;
+                },
+                66 => {
+                    self.avatar_list.push(is.read_message()?);
+                },
+                72 => {
                     self.EOJNPEPDECF = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for BMKNANGPDGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HCDLPKAGAKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HCDLPKAGAKO);
+        }
         if self.EMOHLJHPOPC != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EMOHLJHPOPC);
+            my_size += ::protobuf::rt::uint32_size(3, self.EMOHLJHPOPC);
         }
         if self.HLAIOEJBEPG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.HLAIOEJBEPG);
+            my_size += ::protobuf::rt::uint32_size(6, self.HLAIOEJBEPG);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HCDLPKAGAKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HCDLPKAGAKO);
-        }
         if self.EOJNPEPDECF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EOJNPEPDECF);
+            my_size += ::protobuf::rt::uint32_size(9, self.EOJNPEPDECF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for BMKNANGPDGH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HCDLPKAGAKO != 0 {
+            os.write_uint32(1, self.HCDLPKAGAKO)?;
+        }
         if self.EMOHLJHPOPC != 0 {
-            os.write_uint32(1, self.EMOHLJHPOPC)?;
+            os.write_uint32(3, self.EMOHLJHPOPC)?;
         }
         if self.HLAIOEJBEPG != 0 {
-            os.write_uint32(2, self.HLAIOEJBEPG)?;
+            os.write_uint32(6, self.HLAIOEJBEPG)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.HCDLPKAGAKO != 0 {
-            os.write_uint32(14, self.HCDLPKAGAKO)?;
-        }
         if self.EOJNPEPDECF != 0 {
-            os.write_uint32(15, self.EOJNPEPDECF)?;
+            os.write_uint32(9, self.EOJNPEPDECF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for BMKNANGPDGH {
     }
 
     fn clear(&mut self) {
+        self.HCDLPKAGAKO = 0;
         self.EMOHLJHPOPC = 0;
         self.HLAIOEJBEPG = 0;
         self.avatar_list.clear();
-        self.HCDLPKAGAKO = 0;
         self.EOJNPEPDECF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMKNANGPDGH {
         static instance: BMKNANGPDGH = BMKNANGPDGH {
+            HCDLPKAGAKO: 0,
             EMOHLJHPOPC: 0,
             HLAIOEJBEPG: 0,
             avatar_list: ::std::vec::Vec::new(),
-            HCDLPKAGAKO: 0,
             EOJNPEPDECF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for BMKNANGPDGH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMKNANGPDGH.proto\x1a\x11ONKDAPOKGAC.proto\"\xc4\x01\n\x0bBMKNANGP\
-    DGH\x12\x20\n\x0bEMOHLJHPOPC\x18\x01\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x20\
-    \n\x0bHLAIOEJBEPG\x18\x02\x20\x01(\rR\x0bHLAIOEJBEPG\x12-\n\x0bavatar_li\
-    st\x18\x0b\x20\x03(\x0b2\x0c.ONKDAPOKGACR\navatarList\x12\x20\n\x0bHCDLP\
-    KAGAKO\x18\x0e\x20\x01(\rR\x0bHCDLPKAGAKO\x12\x20\n\x0bEOJNPEPDECF\x18\
-    \x0f\x20\x01(\rR\x0bEOJNPEPDECFb\x06proto3\
+    DGH\x12\x20\n\x0bHCDLPKAGAKO\x18\x01\x20\x01(\rR\x0bHCDLPKAGAKO\x12\x20\
+    \n\x0bEMOHLJHPOPC\x18\x03\x20\x01(\rR\x0bEMOHLJHPOPC\x12\x20\n\x0bHLAIOE\
+    JBEPG\x18\x06\x20\x01(\rR\x0bHLAIOEJBEPG\x12-\n\x0bavatar_list\x18\x08\
+    \x20\x03(\x0b2\x0c.ONKDAPOKGACR\navatarList\x12\x20\n\x0bEOJNPEPDECF\x18\
+    \t\x20\x01(\rR\x0bEOJNPEPDECFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

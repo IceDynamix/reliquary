@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PGMIABHEJNB {
     // message fields
-    // @@protoc_insertion_point(field:PGMIABHEJNB.DAEMEBCKHIK)
-    pub DAEMEBCKHIK: u32,
-    // @@protoc_insertion_point(field:PGMIABHEJNB.NAENAEGAEAF)
-    pub NAENAEGAEAF: u32,
-    // @@protoc_insertion_point(field:PGMIABHEJNB.ODBKCIBGLLP)
-    pub ODBKCIBGLLP: bool,
     // @@protoc_insertion_point(field:PGMIABHEJNB.ICCMIEHKDAO)
     pub ICCMIEHKDAO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PGMIABHEJNB.ODBKCIBGLLP)
+    pub ODBKCIBGLLP: bool,
+    // @@protoc_insertion_point(field:PGMIABHEJNB.NAENAEGAEAF)
+    pub NAENAEGAEAF: u32,
+    // @@protoc_insertion_point(field:PGMIABHEJNB.DAEMEBCKHIK)
+    pub DAEMEBCKHIK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PGMIABHEJNB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,15 @@ impl PGMIABHEJNB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ICCMIEHKDAO",
+            |m: &PGMIABHEJNB| { &m.ICCMIEHKDAO },
+            |m: &mut PGMIABHEJNB| { &mut m.ICCMIEHKDAO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAEMEBCKHIK",
-            |m: &PGMIABHEJNB| { &m.DAEMEBCKHIK },
-            |m: &mut PGMIABHEJNB| { &mut m.DAEMEBCKHIK },
+            "ODBKCIBGLLP",
+            |m: &PGMIABHEJNB| { &m.ODBKCIBGLLP },
+            |m: &mut PGMIABHEJNB| { &mut m.ODBKCIBGLLP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NAENAEGAEAF",
@@ -66,14 +71,9 @@ impl PGMIABHEJNB {
             |m: &mut PGMIABHEJNB| { &mut m.NAENAEGAEAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODBKCIBGLLP",
-            |m: &PGMIABHEJNB| { &m.ODBKCIBGLLP },
-            |m: &mut PGMIABHEJNB| { &mut m.ODBKCIBGLLP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ICCMIEHKDAO",
-            |m: &PGMIABHEJNB| { &m.ICCMIEHKDAO },
-            |m: &mut PGMIABHEJNB| { &mut m.ICCMIEHKDAO },
+            "DAEMEBCKHIK",
+            |m: &PGMIABHEJNB| { &m.DAEMEBCKHIK },
+            |m: &mut PGMIABHEJNB| { &mut m.DAEMEBCKHIK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PGMIABHEJNB>(
             "PGMIABHEJNB",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for PGMIABHEJNB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.DAEMEBCKHIK = is.read_uint32()?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ICCMIEHKDAO)?;
                 },
-                48 => {
-                    self.NAENAEGAEAF = is.read_uint32()?;
+                40 => {
+                    self.ICCMIEHKDAO.push(is.read_uint32()?);
                 },
                 56 => {
                     self.ODBKCIBGLLP = is.read_bool()?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ICCMIEHKDAO)?;
+                88 => {
+                    self.NAENAEGAEAF = is.read_uint32()?;
                 },
-                72 => {
-                    self.ICCMIEHKDAO.push(is.read_uint32()?);
+                104 => {
+                    self.DAEMEBCKHIK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for PGMIABHEJNB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DAEMEBCKHIK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.DAEMEBCKHIK);
-        }
-        if self.NAENAEGAEAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NAENAEGAEAF);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.ICCMIEHKDAO);
         if self.ODBKCIBGLLP != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.ICCMIEHKDAO);
+        if self.NAENAEGAEAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.NAENAEGAEAF);
+        }
+        if self.DAEMEBCKHIK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DAEMEBCKHIK);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DAEMEBCKHIK != 0 {
-            os.write_uint32(5, self.DAEMEBCKHIK)?;
-        }
-        if self.NAENAEGAEAF != 0 {
-            os.write_uint32(6, self.NAENAEGAEAF)?;
-        }
+        os.write_repeated_packed_uint32(5, &self.ICCMIEHKDAO)?;
         if self.ODBKCIBGLLP != false {
             os.write_bool(7, self.ODBKCIBGLLP)?;
         }
-        os.write_repeated_packed_uint32(9, &self.ICCMIEHKDAO)?;
+        if self.NAENAEGAEAF != 0 {
+            os.write_uint32(11, self.NAENAEGAEAF)?;
+        }
+        if self.DAEMEBCKHIK != 0 {
+            os.write_uint32(13, self.DAEMEBCKHIK)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for PGMIABHEJNB {
     }
 
     fn clear(&mut self) {
-        self.DAEMEBCKHIK = 0;
-        self.NAENAEGAEAF = 0;
-        self.ODBKCIBGLLP = false;
         self.ICCMIEHKDAO.clear();
+        self.ODBKCIBGLLP = false;
+        self.NAENAEGAEAF = 0;
+        self.DAEMEBCKHIK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGMIABHEJNB {
         static instance: PGMIABHEJNB = PGMIABHEJNB {
-            DAEMEBCKHIK: 0,
-            NAENAEGAEAF: 0,
-            ODBKCIBGLLP: false,
             ICCMIEHKDAO: ::std::vec::Vec::new(),
+            ODBKCIBGLLP: false,
+            NAENAEGAEAF: 0,
+            DAEMEBCKHIK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for PGMIABHEJNB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PGMIABHEJNB.proto\"\x95\x01\n\x0bPGMIABHEJNB\x12\x20\n\x0bDAEMEBCK\
-    HIK\x18\x05\x20\x01(\rR\x0bDAEMEBCKHIK\x12\x20\n\x0bNAENAEGAEAF\x18\x06\
-    \x20\x01(\rR\x0bNAENAEGAEAF\x12\x20\n\x0bODBKCIBGLLP\x18\x07\x20\x01(\
-    \x08R\x0bODBKCIBGLLP\x12\x20\n\x0bICCMIEHKDAO\x18\t\x20\x03(\rR\x0bICCMI\
-    EHKDAOb\x06proto3\
+    \n\x11PGMIABHEJNB.proto\"\x95\x01\n\x0bPGMIABHEJNB\x12\x20\n\x0bICCMIEHK\
+    DAO\x18\x05\x20\x03(\rR\x0bICCMIEHKDAO\x12\x20\n\x0bODBKCIBGLLP\x18\x07\
+    \x20\x01(\x08R\x0bODBKCIBGLLP\x12\x20\n\x0bNAENAEGAEAF\x18\x0b\x20\x01(\
+    \rR\x0bNAENAEGAEAF\x12\x20\n\x0bDAEMEBCKHIK\x18\r\x20\x01(\rR\x0bDAEMEBC\
+    KHIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

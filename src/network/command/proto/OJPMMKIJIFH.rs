@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OJPMMKIJIFH {
     // message fields
+    // @@protoc_insertion_point(field:OJPMMKIJIFH.LIAGGDDILGO)
+    pub LIAGGDDILGO: i32,
     // @@protoc_insertion_point(field:OJPMMKIJIFH.PKAMBCBEKME)
     pub PKAMBCBEKME: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OJPMMKIJIFH.BHPELIMODBC)
     pub BHPELIMODBC: ::std::collections::HashMap<u32, super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:OJPMMKIJIFH.JFIGNBBLCIM)
     pub JFIGNBBLCIM: u32,
-    // @@protoc_insertion_point(field:OJPMMKIJIFH.LIAGGDDILGO)
-    pub LIAGGDDILGO: i32,
     // special fields
     // @@protoc_insertion_point(special_field:OJPMMKIJIFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,6 +55,11 @@ impl OJPMMKIJIFH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIAGGDDILGO",
+            |m: &OJPMMKIJIFH| { &m.LIAGGDDILGO },
+            |m: &mut OJPMMKIJIFH| { &mut m.LIAGGDDILGO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "PKAMBCBEKME",
             |m: &OJPMMKIJIFH| { &m.PKAMBCBEKME },
@@ -69,11 +74,6 @@ impl OJPMMKIJIFH {
             "JFIGNBBLCIM",
             |m: &OJPMMKIJIFH| { &m.JFIGNBBLCIM },
             |m: &mut OJPMMKIJIFH| { &mut m.JFIGNBBLCIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIAGGDDILGO",
-            |m: &OJPMMKIJIFH| { &m.LIAGGDDILGO },
-            |m: &mut OJPMMKIJIFH| { &mut m.LIAGGDDILGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OJPMMKIJIFH>(
             "OJPMMKIJIFH",
@@ -93,10 +93,13 @@ impl ::protobuf::Message for OJPMMKIJIFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                40 => {
+                    self.LIAGGDDILGO = is.read_int32()?;
+                },
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PKAMBCBEKME)?;
                 },
-                34 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -111,11 +114,8 @@ impl ::protobuf::Message for OJPMMKIJIFH {
                     is.pop_limit(old_limit);
                     self.BHPELIMODBC.insert(key, value);
                 },
-                56 => {
+                120 => {
                     self.JFIGNBBLCIM = is.read_uint32()?;
-                },
-                88 => {
-                    self.LIAGGDDILGO = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -129,6 +129,9 @@ impl ::protobuf::Message for OJPMMKIJIFH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LIAGGDDILGO != 0 {
+            my_size += ::protobuf::rt::int32_size(5, self.LIAGGDDILGO);
+        }
         if let Some(v) = self.PKAMBCBEKME.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -141,10 +144,7 @@ impl ::protobuf::Message for OJPMMKIJIFH {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JFIGNBBLCIM);
-        }
-        if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::uint32_size(15, self.JFIGNBBLCIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -152,24 +152,24 @@ impl ::protobuf::Message for OJPMMKIJIFH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.LIAGGDDILGO != 0 {
+            os.write_int32(5, self.LIAGGDDILGO)?;
+        }
         if let Some(v) = self.PKAMBCBEKME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         for (k, v) in &self.BHPELIMODBC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(7, self.JFIGNBBLCIM)?;
-        }
-        if self.LIAGGDDILGO != 0 {
-            os.write_int32(11, self.LIAGGDDILGO)?;
+            os.write_uint32(15, self.JFIGNBBLCIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,10 +188,10 @@ impl ::protobuf::Message for OJPMMKIJIFH {
     }
 
     fn clear(&mut self) {
+        self.LIAGGDDILGO = 0;
         self.PKAMBCBEKME.clear();
         self.BHPELIMODBC.clear();
         self.JFIGNBBLCIM = 0;
-        self.LIAGGDDILGO = 0;
         self.special_fields.clear();
     }
 
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for OJPMMKIJIFH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJPMMKIJIFH.proto\x1a\x12ItemCostData.proto\"\x92\x02\n\x0bOJPMMKI\
-    JIFH\x12/\n\x0bPKAMBCBEKME\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x0bPKAM\
-    BCBEKME\x12?\n\x0bBHPELIMODBC\x18\x04\x20\x03(\x0b2\x1d.OJPMMKIJIFH.BHPE\
-    LIMODBCEntryR\x0bBHPELIMODBC\x12\x20\n\x0bJFIGNBBLCIM\x18\x07\x20\x01(\r\
-    R\x0bJFIGNBBLCIM\x12\x20\n\x0bLIAGGDDILGO\x18\x0b\x20\x01(\x05R\x0bLIAGG\
-    DDILGO\x1aM\n\x10BHPELIMODBCEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    JIFH\x12\x20\n\x0bLIAGGDDILGO\x18\x05\x20\x01(\x05R\x0bLIAGGDDILGO\x12/\
+    \n\x0bPKAMBCBEKME\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x0bPKAMBCBEKME\
+    \x12?\n\x0bBHPELIMODBC\x18\r\x20\x03(\x0b2\x1d.OJPMMKIJIFH.BHPELIMODBCEn\
+    tryR\x0bBHPELIMODBC\x12\x20\n\x0bJFIGNBBLCIM\x18\x0f\x20\x01(\rR\x0bJFIG\
+    NBBLCIM\x1aM\n\x10BHPELIMODBCEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
     \x03key\x12#\n\x05value\x18\x02\x20\x01(\x0b2\r.ItemCostDataR\x05value:\
     \x028\x01b\x06proto3\
 ";

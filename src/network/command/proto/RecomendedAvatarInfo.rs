@@ -86,16 +86,16 @@ impl ::protobuf::Message for RecomendedAvatarInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.recommend_avatar_id = is.read_uint32()?;
                 },
-                48 => {
+                32 => {
                     self.relic_set_id = is.read_uint32()?;
                 },
-                122 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_id_list)?;
                 },
-                120 => {
+                56 => {
                     self.avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -111,12 +111,12 @@ impl ::protobuf::Message for RecomendedAvatarInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.recommend_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.recommend_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.recommend_avatar_id);
         }
         if self.relic_set_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.relic_set_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.relic_set_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for RecomendedAvatarInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.recommend_avatar_id != 0 {
-            os.write_uint32(4, self.recommend_avatar_id)?;
+            os.write_uint32(1, self.recommend_avatar_id)?;
         }
         if self.relic_set_id != 0 {
-            os.write_uint32(6, self.relic_set_id)?;
+            os.write_uint32(4, self.relic_set_id)?;
         }
-        os.write_repeated_packed_uint32(15, &self.avatar_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for RecomendedAvatarInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRecomendedAvatarInfo.proto\"\x8e\x01\n\x14RecomendedAvatarInfo\x12\
-    .\n\x13recommend_avatar_id\x18\x04\x20\x01(\rR\x11recommendAvatarId\x12\
-    \x20\n\x0crelic_set_id\x18\x06\x20\x01(\rR\nrelicSetId\x12$\n\x0eavatar_\
-    id_list\x18\x0f\x20\x03(\rR\x0cavatarIdListb\x06proto3\
+    .\n\x13recommend_avatar_id\x18\x01\x20\x01(\rR\x11recommendAvatarId\x12\
+    \x20\n\x0crelic_set_id\x18\x04\x20\x01(\rR\nrelicSetId\x12$\n\x0eavatar_\
+    id_list\x18\x07\x20\x03(\rR\x0cavatarIdListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

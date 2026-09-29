@@ -30,14 +30,14 @@ pub struct LPADDGPLIKK {
     // message fields
     // @@protoc_insertion_point(field:LPADDGPLIKK.NMMCOBBKKHA)
     pub NMMCOBBKKHA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LPADDGPLIKK.LONFKFCFDND)
+    pub LONFKFCFDND: ::std::vec::Vec<super::BDJLHJDPEEK::BDJLHJDPEEK>,
+    // @@protoc_insertion_point(field:LPADDGPLIKK.BIMFEAHDMIK)
+    pub BIMFEAHDMIK: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LPADDGPLIKK.MKJDMNAEAED)
     pub MKJDMNAEAED: u32,
     // @@protoc_insertion_point(field:LPADDGPLIKK.AMOABLICEDP)
     pub AMOABLICEDP: u32,
-    // @@protoc_insertion_point(field:LPADDGPLIKK.BIMFEAHDMIK)
-    pub BIMFEAHDMIK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LPADDGPLIKK.LONFKFCFDND)
-    pub LONFKFCFDND: ::std::vec::Vec<super::BDJLHJDPEEK::BDJLHJDPEEK>,
     // @@protoc_insertion_point(field:LPADDGPLIKK.PJOAKLHHCNI)
     pub PJOAKLHHCNI: u32,
     // special fields
@@ -64,6 +64,16 @@ impl LPADDGPLIKK {
             |m: &LPADDGPLIKK| { &m.NMMCOBBKKHA },
             |m: &mut LPADDGPLIKK| { &mut m.NMMCOBBKKHA },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LONFKFCFDND",
+            |m: &LPADDGPLIKK| { &m.LONFKFCFDND },
+            |m: &mut LPADDGPLIKK| { &mut m.LONFKFCFDND },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BIMFEAHDMIK",
+            |m: &LPADDGPLIKK| { &m.BIMFEAHDMIK },
+            |m: &mut LPADDGPLIKK| { &mut m.BIMFEAHDMIK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MKJDMNAEAED",
             |m: &LPADDGPLIKK| { &m.MKJDMNAEAED },
@@ -73,16 +83,6 @@ impl LPADDGPLIKK {
             "AMOABLICEDP",
             |m: &LPADDGPLIKK| { &m.AMOABLICEDP },
             |m: &mut LPADDGPLIKK| { &mut m.AMOABLICEDP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIMFEAHDMIK",
-            |m: &LPADDGPLIKK| { &m.BIMFEAHDMIK },
-            |m: &mut LPADDGPLIKK| { &mut m.BIMFEAHDMIK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LONFKFCFDND",
-            |m: &LPADDGPLIKK| { &m.LONFKFCFDND },
-            |m: &mut LPADDGPLIKK| { &mut m.LONFKFCFDND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PJOAKLHHCNI",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for LPADDGPLIKK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.NMMCOBBKKHA)?;
                 },
-                16 => {
+                8 => {
                     self.NMMCOBBKKHA.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.MKJDMNAEAED = is.read_uint32()?;
+                18 => {
+                    self.LONFKFCFDND.push(is.read_message()?);
                 },
-                40 => {
-                    self.AMOABLICEDP = is.read_uint32()?;
-                },
-                58 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.BIMFEAHDMIK)?;
                 },
-                56 => {
+                32 => {
                     self.BIMFEAHDMIK.push(is.read_uint32()?);
                 },
-                66 => {
-                    self.LONFKFCFDND.push(is.read_message()?);
+                56 => {
+                    self.MKJDMNAEAED = is.read_uint32()?;
+                },
+                72 => {
+                    self.AMOABLICEDP = is.read_uint32()?;
                 },
                 104 => {
                     self.PJOAKLHHCNI = is.read_uint32()?;
@@ -143,18 +143,18 @@ impl ::protobuf::Message for LPADDGPLIKK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NMMCOBBKKHA);
-        if self.MKJDMNAEAED != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MKJDMNAEAED);
-        }
-        if self.AMOABLICEDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AMOABLICEDP);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BIMFEAHDMIK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NMMCOBBKKHA);
         for value in &self.LONFKFCFDND {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.BIMFEAHDMIK);
+        if self.MKJDMNAEAED != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MKJDMNAEAED);
+        }
+        if self.AMOABLICEDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.AMOABLICEDP);
+        }
         if self.PJOAKLHHCNI != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.PJOAKLHHCNI);
         }
@@ -164,17 +164,17 @@ impl ::protobuf::Message for LPADDGPLIKK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.NMMCOBBKKHA)?;
+        os.write_repeated_packed_uint32(1, &self.NMMCOBBKKHA)?;
+        for v in &self.LONFKFCFDND {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        os.write_repeated_packed_uint32(4, &self.BIMFEAHDMIK)?;
         if self.MKJDMNAEAED != 0 {
-            os.write_uint32(4, self.MKJDMNAEAED)?;
+            os.write_uint32(7, self.MKJDMNAEAED)?;
         }
         if self.AMOABLICEDP != 0 {
-            os.write_uint32(5, self.AMOABLICEDP)?;
+            os.write_uint32(9, self.AMOABLICEDP)?;
         }
-        os.write_repeated_packed_uint32(7, &self.BIMFEAHDMIK)?;
-        for v in &self.LONFKFCFDND {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.PJOAKLHHCNI != 0 {
             os.write_uint32(13, self.PJOAKLHHCNI)?;
         }
@@ -196,10 +196,10 @@ impl ::protobuf::Message for LPADDGPLIKK {
 
     fn clear(&mut self) {
         self.NMMCOBBKKHA.clear();
+        self.LONFKFCFDND.clear();
+        self.BIMFEAHDMIK.clear();
         self.MKJDMNAEAED = 0;
         self.AMOABLICEDP = 0;
-        self.BIMFEAHDMIK.clear();
-        self.LONFKFCFDND.clear();
         self.PJOAKLHHCNI = 0;
         self.special_fields.clear();
     }
@@ -207,10 +207,10 @@ impl ::protobuf::Message for LPADDGPLIKK {
     fn default_instance() -> &'static LPADDGPLIKK {
         static instance: LPADDGPLIKK = LPADDGPLIKK {
             NMMCOBBKKHA: ::std::vec::Vec::new(),
+            LONFKFCFDND: ::std::vec::Vec::new(),
+            BIMFEAHDMIK: ::std::vec::Vec::new(),
             MKJDMNAEAED: 0,
             AMOABLICEDP: 0,
-            BIMFEAHDMIK: ::std::vec::Vec::new(),
-            LONFKFCFDND: ::std::vec::Vec::new(),
             PJOAKLHHCNI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for LPADDGPLIKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPADDGPLIKK.proto\x1a\x11BDJLHJDPEEK.proto\"\xe7\x01\n\x0bLPADDGPL\
-    IKK\x12\x20\n\x0bNMMCOBBKKHA\x18\x02\x20\x03(\rR\x0bNMMCOBBKKHA\x12\x20\
-    \n\x0bMKJDMNAEAED\x18\x04\x20\x01(\rR\x0bMKJDMNAEAED\x12\x20\n\x0bAMOABL\
-    ICEDP\x18\x05\x20\x01(\rR\x0bAMOABLICEDP\x12\x20\n\x0bBIMFEAHDMIK\x18\
-    \x07\x20\x03(\rR\x0bBIMFEAHDMIK\x12.\n\x0bLONFKFCFDND\x18\x08\x20\x03(\
-    \x0b2\x0c.BDJLHJDPEEKR\x0bLONFKFCFDND\x12\x20\n\x0bPJOAKLHHCNI\x18\r\x20\
+    IKK\x12\x20\n\x0bNMMCOBBKKHA\x18\x01\x20\x03(\rR\x0bNMMCOBBKKHA\x12.\n\
+    \x0bLONFKFCFDND\x18\x02\x20\x03(\x0b2\x0c.BDJLHJDPEEKR\x0bLONFKFCFDND\
+    \x12\x20\n\x0bBIMFEAHDMIK\x18\x04\x20\x03(\rR\x0bBIMFEAHDMIK\x12\x20\n\
+    \x0bMKJDMNAEAED\x18\x07\x20\x01(\rR\x0bMKJDMNAEAED\x12\x20\n\x0bAMOABLIC\
+    EDP\x18\t\x20\x01(\rR\x0bAMOABLICEDP\x12\x20\n\x0bPJOAKLHHCNI\x18\r\x20\
     \x01(\rR\x0bPJOAKLHHCNIb\x06proto3\
 ";
 

@@ -86,10 +86,10 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                106 => {
                     self.secret_rsp = is.read_bytes()?;
                 },
                 122 => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if !self.secret_rsp.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(4, &self.secret_rsp);
+            my_size += ::protobuf::rt::bytes_size(13, &self.secret_rsp);
         }
         for value in &self.secret_info {
             let len = value.compute_size();
@@ -124,10 +124,10 @@ impl ::protobuf::Message for GetSecretKeyInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if !self.secret_rsp.is_empty() {
-            os.write_bytes(4, &self.secret_rsp)?;
+            os.write_bytes(13, &self.secret_rsp)?;
         }
         for v in &self.secret_info {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -185,10 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetSecretKeyInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetSecretKeyInfoScRsp.proto\x1a\x13SecretKeyInfo.proto\"\x81\x01\n\
-    \x15GetSecretKeyInfoScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07re\
-    tcode\x12\x1d\n\nsecret_rsp\x18\x04\x20\x01(\x0cR\tsecretRsp\x12/\n\x0bs\
-    ecret_info\x18\x0f\x20\x03(\x0b2\x0e.SecretKeyInfoR\nsecretInfob\x06prot\
-    o3\
+    \x15GetSecretKeyInfoScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07re\
+    tcode\x12\x1d\n\nsecret_rsp\x18\r\x20\x01(\x0cR\tsecretRsp\x12/\n\x0bsec\
+    ret_info\x18\x0f\x20\x03(\x0b2\x0e.SecretKeyInfoR\nsecretInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

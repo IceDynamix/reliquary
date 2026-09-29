@@ -79,13 +79,13 @@ impl ::protobuf::Message for NGEBIKIHIDD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.LGIPILAKIKB = is.read_uint32()?;
                 },
-                66 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.BGAFHIOEHFH)?;
                 },
-                64 => {
+                80 => {
                     self.BGAFHIOEHFH.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for NGEBIKIHIDD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LGIPILAKIKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LGIPILAKIKB);
+            my_size += ::protobuf::rt::uint32_size(7, self.LGIPILAKIKB);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.BGAFHIOEHFH);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.BGAFHIOEHFH);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NGEBIKIHIDD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LGIPILAKIKB != 0 {
-            os.write_uint32(3, self.LGIPILAKIKB)?;
+            os.write_uint32(7, self.LGIPILAKIKB)?;
         }
-        os.write_repeated_packed_uint32(8, &self.BGAFHIOEHFH)?;
+        os.write_repeated_packed_uint32(10, &self.BGAFHIOEHFH)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for NGEBIKIHIDD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGEBIKIHIDD.proto\"Q\n\x0bNGEBIKIHIDD\x12\x20\n\x0bLGIPILAKIKB\x18\
-    \x03\x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\n\x0bBGAFHIOEHFH\x18\x08\x20\x03\
-    (\rR\x0bBGAFHIOEHFHb\x06proto3\
+    \x07\x20\x01(\rR\x0bLGIPILAKIKB\x12\x20\n\x0bBGAFHIOEHFH\x18\n\x20\x03(\
+    \rR\x0bBGAFHIOEHFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

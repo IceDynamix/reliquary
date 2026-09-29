@@ -86,13 +86,13 @@ impl ::protobuf::Message for JBCHHGDHKIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.z = is.read_int32()?;
                 },
-                48 => {
+                32 => {
                     self.y = is.read_int32()?;
                 },
-                56 => {
+                64 => {
                     self.x = is.read_int32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for JBCHHGDHKIG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.z != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.z);
+            my_size += ::protobuf::rt::int32_size(3, self.z);
         }
         if self.y != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.y);
+            my_size += ::protobuf::rt::int32_size(4, self.y);
         }
         if self.x != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.x);
+            my_size += ::protobuf::rt::int32_size(8, self.x);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for JBCHHGDHKIG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.z != 0 {
-            os.write_int32(4, self.z)?;
+            os.write_int32(3, self.z)?;
         }
         if self.y != 0 {
-            os.write_int32(6, self.y)?;
+            os.write_int32(4, self.y)?;
         }
         if self.x != 0 {
-            os.write_int32(7, self.x)?;
+            os.write_int32(8, self.x)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for JBCHHGDHKIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JBCHHGDHKIG.proto\"7\n\x0bJBCHHGDHKIG\x12\x0c\n\x01z\x18\x04\x20\
-    \x01(\x05R\x01z\x12\x0c\n\x01y\x18\x06\x20\x01(\x05R\x01y\x12\x0c\n\x01x\
-    \x18\x07\x20\x01(\x05R\x01xb\x06proto3\
+    \n\x11JBCHHGDHKIG.proto\"7\n\x0bJBCHHGDHKIG\x12\x0c\n\x01z\x18\x03\x20\
+    \x01(\x05R\x01z\x12\x0c\n\x01y\x18\x04\x20\x01(\x05R\x01y\x12\x0c\n\x01x\
+    \x18\x08\x20\x01(\x05R\x01xb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

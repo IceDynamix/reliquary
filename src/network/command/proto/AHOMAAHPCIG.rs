@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AHOMAAHPCIG {
     // message fields
-    // @@protoc_insertion_point(field:AHOMAAHPCIG.DAPJMJMGCFC)
-    pub DAPJMJMGCFC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:AHOMAAHPCIG.EKJDLEFFGHD)
     pub EKJDLEFFGHD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AHOMAAHPCIG.DAPJMJMGCFC)
+    pub DAPJMJMGCFC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:AHOMAAHPCIG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AHOMAAHPCIG {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DAPJMJMGCFC",
-            |m: &AHOMAAHPCIG| { &m.DAPJMJMGCFC },
-            |m: &mut AHOMAAHPCIG| { &mut m.DAPJMJMGCFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EKJDLEFFGHD",
             |m: &AHOMAAHPCIG| { &m.EKJDLEFFGHD },
             |m: &mut AHOMAAHPCIG| { &mut m.EKJDLEFFGHD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DAPJMJMGCFC",
+            |m: &AHOMAAHPCIG| { &m.DAPJMJMGCFC },
+            |m: &mut AHOMAAHPCIG| { &mut m.DAPJMJMGCFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AHOMAAHPCIG>(
             "AHOMAAHPCIG",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DAPJMJMGCFC)?;
-                },
-                16 => {
-                    self.DAPJMJMGCFC.push(is.read_uint32()?);
-                },
-                90 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.EKJDLEFFGHD)?;
                 },
-                88 => {
+                40 => {
                     self.EKJDLEFFGHD.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DAPJMJMGCFC)?;
+                },
+                48 => {
+                    self.DAPJMJMGCFC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DAPJMJMGCFC);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.EKJDLEFFGHD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EKJDLEFFGHD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DAPJMJMGCFC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.DAPJMJMGCFC)?;
-        os.write_repeated_packed_uint32(11, &self.EKJDLEFFGHD)?;
+        os.write_repeated_packed_uint32(5, &self.EKJDLEFFGHD)?;
+        os.write_repeated_packed_uint32(6, &self.DAPJMJMGCFC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for AHOMAAHPCIG {
     }
 
     fn clear(&mut self) {
-        self.DAPJMJMGCFC.clear();
         self.EKJDLEFFGHD.clear();
+        self.DAPJMJMGCFC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AHOMAAHPCIG {
         static instance: AHOMAAHPCIG = AHOMAAHPCIG {
-            DAPJMJMGCFC: ::std::vec::Vec::new(),
             EKJDLEFFGHD: ::std::vec::Vec::new(),
+            DAPJMJMGCFC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for AHOMAAHPCIG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11AHOMAAHPCIG.proto\"Q\n\x0bAHOMAAHPCIG\x12\x20\n\x0bDAPJMJMGCFC\x18\
-    \x02\x20\x03(\rR\x0bDAPJMJMGCFC\x12\x20\n\x0bEKJDLEFFGHD\x18\x0b\x20\x03\
-    (\rR\x0bEKJDLEFFGHDb\x06proto3\
+    \n\x11AHOMAAHPCIG.proto\"Q\n\x0bAHOMAAHPCIG\x12\x20\n\x0bEKJDLEFFGHD\x18\
+    \x05\x20\x03(\rR\x0bEKJDLEFFGHD\x12\x20\n\x0bDAPJMJMGCFC\x18\x06\x20\x03\
+    (\rR\x0bDAPJMJMGCFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

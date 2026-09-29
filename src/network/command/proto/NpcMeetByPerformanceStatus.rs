@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcMeetByPerformanceStatus {
     // message fields
-    // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.OKPLPEELPBC)
-    pub OKPLPEELPBC: bool,
     // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.performance_id)
     pub performance_id: u32,
+    // @@protoc_insertion_point(field:NpcMeetByPerformanceStatus.OKPLPEELPBC)
+    pub OKPLPEELPBC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:NpcMeetByPerformanceStatus.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NpcMeetByPerformanceStatus {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKPLPEELPBC",
-            |m: &NpcMeetByPerformanceStatus| { &m.OKPLPEELPBC },
-            |m: &mut NpcMeetByPerformanceStatus| { &mut m.OKPLPEELPBC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "performance_id",
             |m: &NpcMeetByPerformanceStatus| { &m.performance_id },
             |m: &mut NpcMeetByPerformanceStatus| { &mut m.performance_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKPLPEELPBC",
+            |m: &NpcMeetByPerformanceStatus| { &m.OKPLPEELPBC },
+            |m: &mut NpcMeetByPerformanceStatus| { &mut m.OKPLPEELPBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcMeetByPerformanceStatus>(
             "NpcMeetByPerformanceStatus",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OKPLPEELPBC = is.read_bool()?;
-                },
-                72 => {
+                24 => {
                     self.performance_id = is.read_uint32()?;
+                },
+                48 => {
+                    self.OKPLPEELPBC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.performance_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.performance_id);
+        }
         if self.OKPLPEELPBC != false {
             my_size += 1 + 1;
-        }
-        if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.performance_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKPLPEELPBC != false {
-            os.write_bool(1, self.OKPLPEELPBC)?;
-        }
         if self.performance_id != 0 {
-            os.write_uint32(9, self.performance_id)?;
+            os.write_uint32(3, self.performance_id)?;
+        }
+        if self.OKPLPEELPBC != false {
+            os.write_bool(6, self.OKPLPEELPBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NpcMeetByPerformanceStatus {
     }
 
     fn clear(&mut self) {
-        self.OKPLPEELPBC = false;
         self.performance_id = 0;
+        self.OKPLPEELPBC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcMeetByPerformanceStatus {
         static instance: NpcMeetByPerformanceStatus = NpcMeetByPerformanceStatus {
-            OKPLPEELPBC: false,
             performance_id: 0,
+            OKPLPEELPBC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NpcMeetByPerformanceStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20NpcMeetByPerformanceStatus.proto\"e\n\x1aNpcMeetByPerformanceStatu\
-    s\x12\x20\n\x0bOKPLPEELPBC\x18\x01\x20\x01(\x08R\x0bOKPLPEELPBC\x12%\n\
-    \x0eperformance_id\x18\t\x20\x01(\rR\rperformanceIdb\x06proto3\
+    s\x12%\n\x0eperformance_id\x18\x03\x20\x01(\rR\rperformanceId\x12\x20\n\
+    \x0bOKPLPEELPBC\x18\x06\x20\x01(\x08R\x0bOKPLPEELPBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

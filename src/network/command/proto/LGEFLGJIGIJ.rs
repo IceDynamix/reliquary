@@ -86,13 +86,13 @@ impl ::protobuf::Message for LGEFLGJIGIJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.GFKAFIFMHNF.push(is.read_message()?);
                 },
-                64 => {
+                56 => {
                     self.GAHFPGCPAJA = is.read_uint64()?;
                 },
-                104 => {
+                72 => {
                     self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for LGEFLGJIGIJ {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.GAHFPGCPAJA);
+            my_size += ::protobuf::rt::uint64_size(7, self.GAHFPGCPAJA);
         }
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.GHNJCLNKGHH.value());
+            my_size += ::protobuf::rt::int32_size(9, self.GHNJCLNKGHH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for LGEFLGJIGIJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.GFKAFIFMHNF {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint64(8, self.GAHFPGCPAJA)?;
+            os.write_uint64(7, self.GAHFPGCPAJA)?;
         }
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for LGEFLGJIGIJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LGEFLGJIGIJ.proto\x1a\x11AKMCODLAEKI.proto\x1a\x11MMFOGJPOHGJ.prot\
-    o\"\x8f\x01\n\x0bLGEFLGJIGIJ\x12.\n\x0bGFKAFIFMHNF\x18\x02\x20\x03(\x0b2\
-    \x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12\x20\n\x0bGAHFPGCPAJA\x18\x08\x20\
-    \x01(\x04R\x0bGAHFPGCPAJA\x12.\n\x0bGHNJCLNKGHH\x18\r\x20\x01(\x0e2\x0c.\
+    o\"\x8f\x01\n\x0bLGEFLGJIGIJ\x12.\n\x0bGFKAFIFMHNF\x18\x01\x20\x03(\x0b2\
+    \x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12\x20\n\x0bGAHFPGCPAJA\x18\x07\x20\
+    \x01(\x04R\x0bGAHFPGCPAJA\x12.\n\x0bGHNJCLNKGHH\x18\t\x20\x01(\x0e2\x0c.\
     MMFOGJPOHGJR\x0bGHNJCLNKGHHb\x06proto3\
 ";
 

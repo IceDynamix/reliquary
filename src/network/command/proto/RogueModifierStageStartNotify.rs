@@ -72,7 +72,7 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
-            my_size += ::protobuf::rt::int32_size(6, self.NFMKOFNEKLA.value());
+            my_size += ::protobuf::rt::int32_size(4, self.NFMKOFNEKLA.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for RogueModifierStageStartNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RogueModifierSourceType::RogueModifierSourceType::RogueModifierSourceType_RogueModifierSourceNone) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierStageStartNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#RogueModifierStageStartNotify.proto\x1a\x1dRogueModifierSourceType.pr\
-    oto\"[\n\x1dRogueModifierStageStartNotify\x12:\n\x0bNFMKOFNEKLA\x18\x06\
+    oto\"[\n\x1dRogueModifierStageStartNotify\x12:\n\x0bNFMKOFNEKLA\x18\x04\
     \x20\x01(\x0e2\x18.RogueModifierSourceTypeR\x0bNFMKOFNEKLAb\x06proto3\
 ";
 

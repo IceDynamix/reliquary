@@ -48,56 +48,7 @@ impl LBBNBAEKGCJ {
         ::std::default::Default::default()
     }
 
-    // .IEALCLFLDMP NMIJKPKNPLE = 5;
-
-    pub fn NMIJKPKNPLE(&self) -> &super::IEALCLFLDMP::IEALCLFLDMP {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v)) => v,
-            _ => <super::IEALCLFLDMP::IEALCLFLDMP as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NMIJKPKNPLE(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_NMIJKPKNPLE(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NMIJKPKNPLE(&mut self, v: super::IEALCLFLDMP::IEALCLFLDMP) {
-        self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NMIJKPKNPLE(&mut self) -> &mut super::IEALCLFLDMP::IEALCLFLDMP {
-        if let ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(super::IEALCLFLDMP::IEALCLFLDMP::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NMIJKPKNPLE(&mut self) -> super::IEALCLFLDMP::IEALCLFLDMP {
-        if self.has_NMIJKPKNPLE() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::IEALCLFLDMP::IEALCLFLDMP::new()
-        }
-    }
-
-    // .KLNGFBHIADA FKPDOHGKJJK = 9;
+    // .KLNGFBHIADA FKPDOHGKJJK = 3;
 
     pub fn FKPDOHGKJJK(&self) -> &super::KLNGFBHIADA::KLNGFBHIADA {
         match self.KKNBOACNCON {
@@ -146,6 +97,55 @@ impl LBBNBAEKGCJ {
         }
     }
 
+    // .IEALCLFLDMP NMIJKPKNPLE = 13;
+
+    pub fn NMIJKPKNPLE(&self) -> &super::IEALCLFLDMP::IEALCLFLDMP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v)) => v,
+            _ => <super::IEALCLFLDMP::IEALCLFLDMP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NMIJKPKNPLE(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_NMIJKPKNPLE(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NMIJKPKNPLE(&mut self, v: super::IEALCLFLDMP::IEALCLFLDMP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NMIJKPKNPLE(&mut self) -> &mut super::IEALCLFLDMP::IEALCLFLDMP {
+        if let ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(super::IEALCLFLDMP::IEALCLFLDMP::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NMIJKPKNPLE(&mut self) -> super::IEALCLFLDMP::IEALCLFLDMP {
+        if self.has_NMIJKPKNPLE() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IEALCLFLDMP::IEALCLFLDMP::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -154,19 +154,19 @@ impl LBBNBAEKGCJ {
             |m: &LBBNBAEKGCJ| { &m.AFPHLNMGPHK },
             |m: &mut LBBNBAEKGCJ| { &mut m.AFPHLNMGPHK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IEALCLFLDMP::IEALCLFLDMP>(
-            "NMIJKPKNPLE",
-            LBBNBAEKGCJ::has_NMIJKPKNPLE,
-            LBBNBAEKGCJ::NMIJKPKNPLE,
-            LBBNBAEKGCJ::mut_NMIJKPKNPLE,
-            LBBNBAEKGCJ::set_NMIJKPKNPLE,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KLNGFBHIADA::KLNGFBHIADA>(
             "FKPDOHGKJJK",
             LBBNBAEKGCJ::has_FKPDOHGKJJK,
             LBBNBAEKGCJ::FKPDOHGKJJK,
             LBBNBAEKGCJ::mut_FKPDOHGKJJK,
             LBBNBAEKGCJ::set_FKPDOHGKJJK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IEALCLFLDMP::IEALCLFLDMP>(
+            "NMIJKPKNPLE",
+            LBBNBAEKGCJ::has_NMIJKPKNPLE,
+            LBBNBAEKGCJ::NMIJKPKNPLE,
+            LBBNBAEKGCJ::mut_NMIJKPKNPLE,
+            LBBNBAEKGCJ::set_NMIJKPKNPLE,
         ));
         oneofs.push(lbbnbaekgcj::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LBBNBAEKGCJ>(
@@ -187,14 +187,14 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                6768 => {
+                2800 => {
                     self.AFPHLNMGPHK = is.read_uint32()?;
                 },
-                42 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(is.read_message()?));
-                },
-                74 => {
+                26 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(is.read_message()?));
+                },
+                106 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -209,15 +209,15 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.AFPHLNMGPHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(846, self.AFPHLNMGPHK);
+            my_size += ::protobuf::rt::uint32_size(350, self.AFPHLNMGPHK);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v) => {
+                &lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(ref v) => {
+                &lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -230,15 +230,15 @@ impl ::protobuf::Message for LBBNBAEKGCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AFPHLNMGPHK != 0 {
-            os.write_uint32(846, self.AFPHLNMGPHK)?;
+            os.write_uint32(350, self.AFPHLNMGPHK)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-                },
                 &lbbnbaekgcj::KKNBOACNCON::FKPDOHGKJJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &lbbnbaekgcj::KKNBOACNCON::NMIJKPKNPLE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -299,10 +299,10 @@ pub mod lbbnbaekgcj {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:LBBNBAEKGCJ.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:LBBNBAEKGCJ.NMIJKPKNPLE)
-        NMIJKPKNPLE(super::super::IEALCLFLDMP::IEALCLFLDMP),
         // @@protoc_insertion_point(oneof_field:LBBNBAEKGCJ.FKPDOHGKJJK)
         FKPDOHGKJJK(super::super::KLNGFBHIADA::KLNGFBHIADA),
+        // @@protoc_insertion_point(oneof_field:LBBNBAEKGCJ.NMIJKPKNPLE)
+        NMIJKPKNPLE(super::super::IEALCLFLDMP::IEALCLFLDMP),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -324,10 +324,10 @@ pub mod lbbnbaekgcj {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LBBNBAEKGCJ.proto\x1a\x11IEALCLFLDMP.proto\x1a\x11KLNGFBHIADA.prot\
-    o\"\xa3\x01\n\x0bLBBNBAEKGCJ\x12!\n\x0bAFPHLNMGPHK\x18\xce\x06\x20\x01(\
-    \rR\x0bAFPHLNMGPHK\x120\n\x0bNMIJKPKNPLE\x18\x05\x20\x01(\x0b2\x0c.IEALC\
-    LFLDMPH\0R\x0bNMIJKPKNPLE\x120\n\x0bFKPDOHGKJJK\x18\t\x20\x01(\x0b2\x0c.\
-    KLNGFBHIADAH\0R\x0bFKPDOHGKJJKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    o\"\xa3\x01\n\x0bLBBNBAEKGCJ\x12!\n\x0bAFPHLNMGPHK\x18\xde\x02\x20\x01(\
+    \rR\x0bAFPHLNMGPHK\x120\n\x0bFKPDOHGKJJK\x18\x03\x20\x01(\x0b2\x0c.KLNGF\
+    BHIADAH\0R\x0bFKPDOHGKJJK\x120\n\x0bNMIJKPKNPLE\x18\r\x20\x01(\x0b2\x0c.\
+    IEALCLFLDMPH\0R\x0bNMIJKPKNPLEB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

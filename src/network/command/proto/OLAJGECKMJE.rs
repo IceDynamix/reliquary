@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum OLAJGECKMJE {
     // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_NLCDGIPGFDJ)
     OLAJGECKMJE_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_score_id)
-    OLAJGECKMJE_score_id = 1,
+    // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_MNAKIEOGPDK)
+    OLAJGECKMJE_MNAKIEOGPDK = 1,
     // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_MCMDKGEANNA)
     OLAJGECKMJE_MCMDKGEANNA = 2,
     // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_EJDAGOOKBLG)
     OLAJGECKMJE_EJDAGOOKBLG = 3,
-    // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_challenge_score)
-    OLAJGECKMJE_challenge_score = 4,
+    // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_DDMIBECOBLL)
+    OLAJGECKMJE_DDMIBECOBLL = 4,
     // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_AMEABNLMMGB)
     OLAJGECKMJE_AMEABNLMMGB = 5,
     // @@protoc_insertion_point(enum_value:OLAJGECKMJE.OLAJGECKMJE_FBCAELMEIDP)
@@ -53,10 +53,10 @@ impl ::protobuf::Enum for OLAJGECKMJE {
     fn from_i32(value: i32) -> ::std::option::Option<OLAJGECKMJE> {
         match value {
             0 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_NLCDGIPGFDJ),
-            1 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_score_id),
+            1 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_MNAKIEOGPDK),
             2 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_MCMDKGEANNA),
             3 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_EJDAGOOKBLG),
-            4 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_challenge_score),
+            4 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_DDMIBECOBLL),
             5 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_AMEABNLMMGB),
             6 => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_FBCAELMEIDP),
             _ => ::std::option::Option::None
@@ -66,10 +66,10 @@ impl ::protobuf::Enum for OLAJGECKMJE {
     fn from_str(str: &str) -> ::std::option::Option<OLAJGECKMJE> {
         match str {
             "OLAJGECKMJE_NLCDGIPGFDJ" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_NLCDGIPGFDJ),
-            "OLAJGECKMJE_score_id" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_score_id),
+            "OLAJGECKMJE_MNAKIEOGPDK" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_MNAKIEOGPDK),
             "OLAJGECKMJE_MCMDKGEANNA" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_MCMDKGEANNA),
             "OLAJGECKMJE_EJDAGOOKBLG" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_EJDAGOOKBLG),
-            "OLAJGECKMJE_challenge_score" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_challenge_score),
+            "OLAJGECKMJE_DDMIBECOBLL" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_DDMIBECOBLL),
             "OLAJGECKMJE_AMEABNLMMGB" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_AMEABNLMMGB),
             "OLAJGECKMJE_FBCAELMEIDP" => ::std::option::Option::Some(OLAJGECKMJE::OLAJGECKMJE_FBCAELMEIDP),
             _ => ::std::option::Option::None
@@ -78,10 +78,10 @@ impl ::protobuf::Enum for OLAJGECKMJE {
 
     const VALUES: &'static [OLAJGECKMJE] = &[
         OLAJGECKMJE::OLAJGECKMJE_NLCDGIPGFDJ,
-        OLAJGECKMJE::OLAJGECKMJE_score_id,
+        OLAJGECKMJE::OLAJGECKMJE_MNAKIEOGPDK,
         OLAJGECKMJE::OLAJGECKMJE_MCMDKGEANNA,
         OLAJGECKMJE::OLAJGECKMJE_EJDAGOOKBLG,
-        OLAJGECKMJE::OLAJGECKMJE_challenge_score,
+        OLAJGECKMJE::OLAJGECKMJE_DDMIBECOBLL,
         OLAJGECKMJE::OLAJGECKMJE_AMEABNLMMGB,
         OLAJGECKMJE::OLAJGECKMJE_FBCAELMEIDP,
     ];
@@ -112,12 +112,12 @@ impl OLAJGECKMJE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OLAJGECKMJE.proto*\xd9\x01\n\x0bOLAJGECKMJE\x12\x1b\n\x17OLAJGECKM\
-    JE_NLCDGIPGFDJ\x10\0\x12\x18\n\x14OLAJGECKMJE_score_id\x10\x01\x12\x1b\n\
-    \x17OLAJGECKMJE_MCMDKGEANNA\x10\x02\x12\x1b\n\x17OLAJGECKMJE_EJDAGOOKBLG\
-    \x10\x03\x12\x1f\n\x1bOLAJGECKMJE_challenge_score\x10\x04\x12\x1b\n\x17O\
-    LAJGECKMJE_AMEABNLMMGB\x10\x05\x12\x1b\n\x17OLAJGECKMJE_FBCAELMEIDP\x10\
-    \x06b\x06proto3\
+    \n\x11OLAJGECKMJE.proto*\xd8\x01\n\x0bOLAJGECKMJE\x12\x1b\n\x17OLAJGECKM\
+    JE_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17OLAJGECKMJE_MNAKIEOGPDK\x10\x01\x12\
+    \x1b\n\x17OLAJGECKMJE_MCMDKGEANNA\x10\x02\x12\x1b\n\x17OLAJGECKMJE_EJDAG\
+    OOKBLG\x10\x03\x12\x1b\n\x17OLAJGECKMJE_DDMIBECOBLL\x10\x04\x12\x1b\n\
+    \x17OLAJGECKMJE_AMEABNLMMGB\x10\x05\x12\x1b\n\x17OLAJGECKMJE_FBCAELMEIDP\
+    \x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

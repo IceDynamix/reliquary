@@ -18,31 +18,31 @@
 #![allow(unused_results)]
 #![allow(unused_mut)]
 
-//! Generated file from `SelectPhoneCaseCsReq.proto`
+//! Generated file from `SelectPhoneCaseCSReq.proto`
 
 /// Generated files are compatible only with the same version
 /// of protobuf runtime.
 const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 
-// @@protoc_insertion_point(message:SelectPhoneCaseCsReq)
+// @@protoc_insertion_point(message:SelectPhoneCaseCSReq)
 #[derive(PartialEq,Clone,Default,Debug)]
-pub struct SelectPhoneCaseCsReq {
+pub struct SelectPhoneCaseCSReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectPhoneCaseCsReq.phone_case_id)
+    // @@protoc_insertion_point(field:SelectPhoneCaseCSReq.phone_case_id)
     pub phone_case_id: u32,
     // special fields
-    // @@protoc_insertion_point(special_field:SelectPhoneCaseCsReq.special_fields)
+    // @@protoc_insertion_point(special_field:SelectPhoneCaseCSReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
-impl<'a> ::std::default::Default for &'a SelectPhoneCaseCsReq {
-    fn default() -> &'a SelectPhoneCaseCsReq {
-        <SelectPhoneCaseCsReq as ::protobuf::Message>::default_instance()
+impl<'a> ::std::default::Default for &'a SelectPhoneCaseCSReq {
+    fn default() -> &'a SelectPhoneCaseCSReq {
+        <SelectPhoneCaseCSReq as ::protobuf::Message>::default_instance()
     }
 }
 
-impl SelectPhoneCaseCsReq {
-    pub fn new() -> SelectPhoneCaseCsReq {
+impl SelectPhoneCaseCSReq {
+    pub fn new() -> SelectPhoneCaseCSReq {
         ::std::default::Default::default()
     }
 
@@ -51,19 +51,19 @@ impl SelectPhoneCaseCsReq {
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "phone_case_id",
-            |m: &SelectPhoneCaseCsReq| { &m.phone_case_id },
-            |m: &mut SelectPhoneCaseCsReq| { &mut m.phone_case_id },
+            |m: &SelectPhoneCaseCSReq| { &m.phone_case_id },
+            |m: &mut SelectPhoneCaseCSReq| { &mut m.phone_case_id },
         ));
-        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPhoneCaseCsReq>(
-            "SelectPhoneCaseCsReq",
+        ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPhoneCaseCSReq>(
+            "SelectPhoneCaseCSReq",
             fields,
             oneofs,
         )
     }
 }
 
-impl ::protobuf::Message for SelectPhoneCaseCsReq {
-    const NAME: &'static str = "SelectPhoneCaseCsReq";
+impl ::protobuf::Message for SelectPhoneCaseCSReq {
+    const NAME: &'static str = "SelectPhoneCaseCSReq";
 
     fn is_initialized(&self) -> bool {
         true
@@ -72,7 +72,7 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                32 => {
                     self.phone_case_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.phone_case_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.phone_case_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.phone_case_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.phone_case_id != 0 {
-            os.write_uint32(10, self.phone_case_id)?;
+            os.write_uint32(4, self.phone_case_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -111,8 +111,8 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
         &mut self.special_fields
     }
 
-    fn new() -> SelectPhoneCaseCsReq {
-        SelectPhoneCaseCsReq::new()
+    fn new() -> SelectPhoneCaseCSReq {
+        SelectPhoneCaseCSReq::new()
     }
 
     fn clear(&mut self) {
@@ -120,8 +120,8 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
         self.special_fields.clear();
     }
 
-    fn default_instance() -> &'static SelectPhoneCaseCsReq {
-        static instance: SelectPhoneCaseCsReq = SelectPhoneCaseCsReq {
+    fn default_instance() -> &'static SelectPhoneCaseCSReq {
+        static instance: SelectPhoneCaseCSReq = SelectPhoneCaseCSReq {
             phone_case_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -129,26 +129,26 @@ impl ::protobuf::Message for SelectPhoneCaseCsReq {
     }
 }
 
-impl ::protobuf::MessageFull for SelectPhoneCaseCsReq {
+impl ::protobuf::MessageFull for SelectPhoneCaseCSReq {
     fn descriptor() -> ::protobuf::reflect::MessageDescriptor {
         static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::MessageDescriptor> = ::protobuf::rt::Lazy::new();
-        descriptor.get(|| file_descriptor().message_by_package_relative_name("SelectPhoneCaseCsReq").unwrap()).clone()
+        descriptor.get(|| file_descriptor().message_by_package_relative_name("SelectPhoneCaseCSReq").unwrap()).clone()
     }
 }
 
-impl ::std::fmt::Display for SelectPhoneCaseCsReq {
+impl ::std::fmt::Display for SelectPhoneCaseCSReq {
     fn fmt(&self, f: &mut ::std::fmt::Formatter<'_>) -> ::std::fmt::Result {
         ::protobuf::text_format::fmt(self, f)
     }
 }
 
-impl ::protobuf::reflect::ProtobufValue for SelectPhoneCaseCsReq {
+impl ::protobuf::reflect::ProtobufValue for SelectPhoneCaseCSReq {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSelectPhoneCaseCsReq.proto\":\n\x14SelectPhoneCaseCsReq\x12\"\n\rp\
-    hone_case_id\x18\n\x20\x01(\rR\x0bphoneCaseIdb\x06proto3\
+    \n\x1aSelectPhoneCaseCSReq.proto\":\n\x14SelectPhoneCaseCSReq\x12\"\n\rp\
+    hone_case_id\x18\x04\x20\x01(\rR\x0bphoneCaseIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
-            messages.push(SelectPhoneCaseCsReq::generated_message_descriptor_data());
+            messages.push(SelectPhoneCaseCSReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);
             ::protobuf::reflect::GeneratedFileDescriptor::new_generated(
                 file_descriptor_proto(),

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAssistHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.LLIPLPNDIMC)
-    pub LLIPLPNDIMC: u32,
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.OFEKHCHHOFD)
-    pub OFEKHCHHOFD: u32,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.EFONJLMDFIH)
     pub EFONJLMDFIH: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.OFEKHCHHOFD)
+    pub OFEKHCHHOFD: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.LLIPLPNDIMC)
+    pub LLIPLPNDIMC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAssistHistoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,9 @@ impl GetAssistHistoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLIPLPNDIMC",
-            |m: &GetAssistHistoryScRsp| { &m.LLIPLPNDIMC },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.LLIPLPNDIMC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetAssistHistoryScRsp| { &m.retcode },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.retcode },
+            "EFONJLMDFIH",
+            |m: &GetAssistHistoryScRsp| { &m.EFONJLMDFIH },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.EFONJLMDFIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFEKHCHHOFD",
@@ -71,9 +66,14 @@ impl GetAssistHistoryScRsp {
             |m: &mut GetAssistHistoryScRsp| { &mut m.OFEKHCHHOFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFONJLMDFIH",
-            |m: &GetAssistHistoryScRsp| { &m.EFONJLMDFIH },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.EFONJLMDFIH },
+            "retcode",
+            |m: &GetAssistHistoryScRsp| { &m.retcode },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLIPLPNDIMC",
+            |m: &GetAssistHistoryScRsp| { &m.LLIPLPNDIMC },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.LLIPLPNDIMC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAssistHistoryScRsp>(
             "GetAssistHistoryScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.EFONJLMDFIH = is.read_uint32()?;
+                },
                 48 => {
-                    self.LLIPLPNDIMC = is.read_uint32()?;
-                },
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
                     self.OFEKHCHHOFD = is.read_uint32()?;
                 },
-                120 => {
-                    self.EFONJLMDFIH = is.read_uint32()?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.LLIPLPNDIMC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LLIPLPNDIMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LLIPLPNDIMC);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.EFONJLMDFIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EFONJLMDFIH);
         }
         if self.OFEKHCHHOFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OFEKHCHHOFD);
+            my_size += ::protobuf::rt::uint32_size(6, self.OFEKHCHHOFD);
         }
-        if self.EFONJLMDFIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EFONJLMDFIH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.LLIPLPNDIMC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LLIPLPNDIMC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LLIPLPNDIMC != 0 {
-            os.write_uint32(6, self.LLIPLPNDIMC)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.EFONJLMDFIH != 0 {
+            os.write_uint32(2, self.EFONJLMDFIH)?;
         }
         if self.OFEKHCHHOFD != 0 {
-            os.write_uint32(13, self.OFEKHCHHOFD)?;
+            os.write_uint32(6, self.OFEKHCHHOFD)?;
         }
-        if self.EFONJLMDFIH != 0 {
-            os.write_uint32(15, self.EFONJLMDFIH)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.LLIPLPNDIMC != 0 {
+            os.write_uint32(10, self.LLIPLPNDIMC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.LLIPLPNDIMC = 0;
-        self.retcode = 0;
-        self.OFEKHCHHOFD = 0;
         self.EFONJLMDFIH = 0;
+        self.OFEKHCHHOFD = 0;
+        self.retcode = 0;
+        self.LLIPLPNDIMC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAssistHistoryScRsp {
         static instance: GetAssistHistoryScRsp = GetAssistHistoryScRsp {
-            LLIPLPNDIMC: 0,
-            retcode: 0,
-            OFEKHCHHOFD: 0,
             EFONJLMDFIH: 0,
+            OFEKHCHHOFD: 0,
+            retcode: 0,
+            LLIPLPNDIMC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetAssistHistoryScRsp.proto\"\x97\x01\n\x15GetAssistHistoryScRsp\
-    \x12\x20\n\x0bLLIPLPNDIMC\x18\x06\x20\x01(\rR\x0bLLIPLPNDIMC\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bOFEKHCHHOFD\x18\
-    \r\x20\x01(\rR\x0bOFEKHCHHOFD\x12\x20\n\x0bEFONJLMDFIH\x18\x0f\x20\x01(\
-    \rR\x0bEFONJLMDFIHb\x06proto3\
+    \x12\x20\n\x0bEFONJLMDFIH\x18\x02\x20\x01(\rR\x0bEFONJLMDFIH\x12\x20\n\
+    \x0bOFEKHCHHOFD\x18\x06\x20\x01(\rR\x0bOFEKHCHHOFD\x12\x18\n\x07retcode\
+    \x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bLLIPLPNDIMC\x18\n\x20\x01(\rR\
+    \x0bLLIPLPNDIMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

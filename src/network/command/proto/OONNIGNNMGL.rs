@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OONNIGNNMGL {
     // message fields
-    // @@protoc_insertion_point(field:OONNIGNNMGL.ODLCDAGDNDE)
-    pub ODLCDAGDNDE: bool,
     // @@protoc_insertion_point(field:OONNIGNNMGL.CFHMMIFLAKP)
     pub CFHMMIFLAKP: ::protobuf::MessageField<super::JMGLAJFHNIM::JMGLAJFHNIM>,
+    // @@protoc_insertion_point(field:OONNIGNNMGL.ODLCDAGDNDE)
+    pub ODLCDAGDNDE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OONNIGNNMGL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl OONNIGNNMGL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODLCDAGDNDE",
-            |m: &OONNIGNNMGL| { &m.ODLCDAGDNDE },
-            |m: &mut OONNIGNNMGL| { &mut m.ODLCDAGDNDE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMGLAJFHNIM::JMGLAJFHNIM>(
             "CFHMMIFLAKP",
             |m: &OONNIGNNMGL| { &m.CFHMMIFLAKP },
             |m: &mut OONNIGNNMGL| { &mut m.CFHMMIFLAKP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODLCDAGDNDE",
+            |m: &OONNIGNNMGL| { &m.ODLCDAGDNDE },
+            |m: &mut OONNIGNNMGL| { &mut m.ODLCDAGDNDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OONNIGNNMGL>(
             "OONNIGNNMGL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OONNIGNNMGL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ODLCDAGDNDE = is.read_bool()?;
-                },
-                106 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFHMMIFLAKP)?;
+                },
+                96 => {
+                    self.ODLCDAGDNDE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OONNIGNNMGL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODLCDAGDNDE != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.CFHMMIFLAKP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.ODLCDAGDNDE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OONNIGNNMGL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODLCDAGDNDE != false {
-            os.write_bool(3, self.ODLCDAGDNDE)?;
-        }
         if let Some(v) = self.CFHMMIFLAKP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.ODLCDAGDNDE != false {
+            os.write_bool(12, self.ODLCDAGDNDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for OONNIGNNMGL {
     }
 
     fn clear(&mut self) {
-        self.ODLCDAGDNDE = false;
         self.CFHMMIFLAKP.clear();
+        self.ODLCDAGDNDE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OONNIGNNMGL {
         static instance: OONNIGNNMGL = OONNIGNNMGL {
-            ODLCDAGDNDE: false,
             CFHMMIFLAKP: ::protobuf::MessageField::none(),
+            ODLCDAGDNDE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for OONNIGNNMGL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OONNIGNNMGL.proto\x1a\x11JMGLAJFHNIM.proto\"_\n\x0bOONNIGNNMGL\x12\
-    \x20\n\x0bODLCDAGDNDE\x18\x03\x20\x01(\x08R\x0bODLCDAGDNDE\x12.\n\x0bCFH\
-    MMIFLAKP\x18\r\x20\x01(\x0b2\x0c.JMGLAJFHNIMR\x0bCFHMMIFLAKPb\x06proto3\
+    .\n\x0bCFHMMIFLAKP\x18\x07\x20\x01(\x0b2\x0c.JMGLAJFHNIMR\x0bCFHMMIFLAKP\
+    \x12\x20\n\x0bODLCDAGDNDE\x18\x0c\x20\x01(\x08R\x0bODLCDAGDNDEb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

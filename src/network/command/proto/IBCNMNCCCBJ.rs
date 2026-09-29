@@ -79,10 +79,10 @@ impl ::protobuf::Message for IBCNMNCCCBJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.HEJANCCDGAP = is.read_uint32()?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for IBCNMNCCCBJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HEJANCCDGAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HEJANCCDGAP);
+            my_size += ::protobuf::rt::uint32_size(5, self.HEJANCCDGAP);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for IBCNMNCCCBJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HEJANCCDGAP != 0 {
-            os.write_uint32(1, self.HEJANCCDGAP)?;
+            os.write_uint32(5, self.HEJANCCDGAP)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for IBCNMNCCCBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBCNMNCCCBJ.proto\x1a\x0eItemList.proto\"R\n\x0bIBCNMNCCCBJ\x12\
-    \x20\n\x0bHEJANCCDGAP\x18\x01\x20\x01(\rR\x0bHEJANCCDGAP\x12!\n\x06rewar\
-    d\x18\x08\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    \x20\n\x0bHEJANCCDGAP\x18\x05\x20\x01(\rR\x0bHEJANCCDGAP\x12!\n\x06rewar\
+    d\x18\t\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

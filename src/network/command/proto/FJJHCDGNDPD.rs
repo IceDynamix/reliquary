@@ -79,16 +79,16 @@ impl ::protobuf::Message for FJJHCDGNDPD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.ACCKECIHCGJ)?;
                 },
-                64 => {
+                8 => {
                     self.ACCKECIHCGJ.push(is.read_uint32()?);
                 },
-                74 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.JJOJFFAOEDI)?;
                 },
-                72 => {
+                88 => {
                     self.JJOJFFAOEDI.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for FJJHCDGNDPD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.ACCKECIHCGJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JJOJFFAOEDI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.ACCKECIHCGJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.JJOJFFAOEDI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.ACCKECIHCGJ)?;
-        os.write_repeated_packed_uint32(9, &self.JJOJFFAOEDI)?;
+        os.write_repeated_packed_uint32(1, &self.ACCKECIHCGJ)?;
+        os.write_repeated_packed_uint32(11, &self.JJOJFFAOEDI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for FJJHCDGNDPD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FJJHCDGNDPD.proto\"Q\n\x0bFJJHCDGNDPD\x12\x20\n\x0bACCKECIHCGJ\x18\
-    \x08\x20\x03(\rR\x0bACCKECIHCGJ\x12\x20\n\x0bJJOJFFAOEDI\x18\t\x20\x03(\
-    \rR\x0bJJOJFFAOEDIb\x06proto3\
+    \x01\x20\x03(\rR\x0bACCKECIHCGJ\x12\x20\n\x0bJJOJFFAOEDI\x18\x0b\x20\x03\
+    (\rR\x0bJJOJFFAOEDIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

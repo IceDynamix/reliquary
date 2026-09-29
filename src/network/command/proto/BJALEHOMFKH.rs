@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BJALEHOMFKH {
     // message fields
-    // @@protoc_insertion_point(field:BJALEHOMFKH.trait_id)
-    pub trait_id: u32,
     // @@protoc_insertion_point(field:BJALEHOMFKH.effect_id)
     pub effect_id: u32,
+    // @@protoc_insertion_point(field:BJALEHOMFKH.trait_id)
+    pub trait_id: u32,
     // @@protoc_insertion_point(field:BJALEHOMFKH.OLPPMEAMFFO)
     pub OLPPMEAMFFO: ::std::vec::Vec<u32>,
     // special fields
@@ -54,14 +54,14 @@ impl BJALEHOMFKH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trait_id",
-            |m: &BJALEHOMFKH| { &m.trait_id },
-            |m: &mut BJALEHOMFKH| { &mut m.trait_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "effect_id",
             |m: &BJALEHOMFKH| { &m.effect_id },
             |m: &mut BJALEHOMFKH| { &mut m.effect_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trait_id",
+            |m: &BJALEHOMFKH| { &m.trait_id },
+            |m: &mut BJALEHOMFKH| { &mut m.trait_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OLPPMEAMFFO",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for BJALEHOMFKH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.trait_id = is.read_uint32()?;
-                },
-                32 => {
+                56 => {
                     self.effect_id = is.read_uint32()?;
                 },
-                50 => {
+                72 => {
+                    self.trait_id = is.read_uint32()?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.OLPPMEAMFFO)?;
                 },
-                48 => {
+                96 => {
                     self.OLPPMEAMFFO.push(is.read_uint32()?);
                 },
                 tag => {
@@ -110,26 +110,26 @@ impl ::protobuf::Message for BJALEHOMFKH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.trait_id);
-        }
         if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.effect_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.OLPPMEAMFFO);
+        if self.trait_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.trait_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OLPPMEAMFFO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.trait_id != 0 {
-            os.write_uint32(1, self.trait_id)?;
-        }
         if self.effect_id != 0 {
-            os.write_uint32(4, self.effect_id)?;
+            os.write_uint32(7, self.effect_id)?;
         }
-        os.write_repeated_packed_uint32(6, &self.OLPPMEAMFFO)?;
+        if self.trait_id != 0 {
+            os.write_uint32(9, self.trait_id)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.OLPPMEAMFFO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for BJALEHOMFKH {
     }
 
     fn clear(&mut self) {
-        self.trait_id = 0;
         self.effect_id = 0;
+        self.trait_id = 0;
         self.OLPPMEAMFFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BJALEHOMFKH {
         static instance: BJALEHOMFKH = BJALEHOMFKH {
-            trait_id: 0,
             effect_id: 0,
+            trait_id: 0,
             OLPPMEAMFFO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for BJALEHOMFKH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BJALEHOMFKH.proto\"g\n\x0bBJALEHOMFKH\x12\x19\n\x08trait_id\x18\
-    \x01\x20\x01(\rR\x07traitId\x12\x1b\n\teffect_id\x18\x04\x20\x01(\rR\x08\
-    effectId\x12\x20\n\x0bOLPPMEAMFFO\x18\x06\x20\x03(\rR\x0bOLPPMEAMFFOb\
-    \x06proto3\
+    \n\x11BJALEHOMFKH.proto\"g\n\x0bBJALEHOMFKH\x12\x1b\n\teffect_id\x18\x07\
+    \x20\x01(\rR\x08effectId\x12\x19\n\x08trait_id\x18\t\x20\x01(\rR\x07trai\
+    tId\x12\x20\n\x0bOLPPMEAMFFO\x18\x0c\x20\x03(\rR\x0bOLPPMEAMFFOb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

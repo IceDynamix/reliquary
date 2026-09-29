@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LPIHJBELIBN {
     // message fields
-    // @@protoc_insertion_point(field:LPIHJBELIBN.OHPGEHKFABM)
-    pub OHPGEHKFABM: ::protobuf::MessageField<super::KOBALACAPKF::KOBALACAPKF>,
     // @@protoc_insertion_point(field:LPIHJBELIBN.cur_tierce_challenge)
     pub cur_tierce_challenge: ::protobuf::MessageField<super::CurTierceChallenge::CurTierceChallenge>,
+    // @@protoc_insertion_point(field:LPIHJBELIBN.OHPGEHKFABM)
+    pub OHPGEHKFABM: ::protobuf::MessageField<super::KOBALACAPKF::KOBALACAPKF>,
     // @@protoc_insertion_point(field:LPIHJBELIBN.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl LPIHJBELIBN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOBALACAPKF::KOBALACAPKF>(
-            "OHPGEHKFABM",
-            |m: &LPIHJBELIBN| { &m.OHPGEHKFABM },
-            |m: &mut LPIHJBELIBN| { &mut m.OHPGEHKFABM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CurTierceChallenge::CurTierceChallenge>(
             "cur_tierce_challenge",
             |m: &LPIHJBELIBN| { &m.cur_tierce_challenge },
             |m: &mut LPIHJBELIBN| { &mut m.cur_tierce_challenge },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KOBALACAPKF::KOBALACAPKF>(
+            "OHPGEHKFABM",
+            |m: &LPIHJBELIBN| { &m.OHPGEHKFABM },
+            |m: &mut LPIHJBELIBN| { &mut m.OHPGEHKFABM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,10 +87,10 @@ impl ::protobuf::Message for LPIHJBELIBN {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHPGEHKFABM)?;
-                },
-                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cur_tierce_challenge)?;
+                },
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHPGEHKFABM)?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for LPIHJBELIBN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OHPGEHKFABM.as_ref() {
+        if let Some(v) = self.cur_tierce_challenge.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.cur_tierce_challenge.as_ref() {
+        if let Some(v) = self.OHPGEHKFABM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,11 +124,11 @@ impl ::protobuf::Message for LPIHJBELIBN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OHPGEHKFABM.as_ref() {
+        if let Some(v) = self.cur_tierce_challenge.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.cur_tierce_challenge.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.OHPGEHKFABM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
@@ -150,16 +150,16 @@ impl ::protobuf::Message for LPIHJBELIBN {
     }
 
     fn clear(&mut self) {
-        self.OHPGEHKFABM.clear();
         self.cur_tierce_challenge.clear();
+        self.OHPGEHKFABM.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LPIHJBELIBN {
         static instance: LPIHJBELIBN = LPIHJBELIBN {
-            OHPGEHKFABM: ::protobuf::MessageField::none(),
             cur_tierce_challenge: ::protobuf::MessageField::none(),
+            OHPGEHKFABM: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for LPIHJBELIBN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPIHJBELIBN.proto\x1a\x18CurTierceChallenge.proto\x1a\x11KOBALACAP\
-    KF.proto\"\x9e\x01\n\x0bLPIHJBELIBN\x12.\n\x0bOHPGEHKFABM\x18\x03\x20\
-    \x01(\x0b2\x0c.KOBALACAPKFR\x0bOHPGEHKFABM\x12E\n\x14cur_tierce_challeng\
-    e\x18\t\x20\x01(\x0b2\x13.CurTierceChallengeR\x12curTierceChallenge\x12\
-    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    KF.proto\"\x9e\x01\n\x0bLPIHJBELIBN\x12E\n\x14cur_tierce_challenge\x18\
+    \x03\x20\x01(\x0b2\x13.CurTierceChallengeR\x12curTierceChallenge\x12.\n\
+    \x0bOHPGEHKFABM\x18\x04\x20\x01(\x0b2\x0c.KOBALACAPKFR\x0bOHPGEHKFABM\
+    \x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

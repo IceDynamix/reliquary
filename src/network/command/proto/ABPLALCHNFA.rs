@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ABPLALCHNFA {
     // message fields
-    // @@protoc_insertion_point(field:ABPLALCHNFA.H_a81ca1a4)
-    pub H_a81ca1a4: ::protobuf::EnumOrUnknown<super::H_605c56e4::H_605c56e4>,
     // @@protoc_insertion_point(field:ABPLALCHNFA.OOEOCGLLHFO)
     pub OOEOCGLLHFO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ABPLALCHNFA.H_89ed1041)
+    pub H_89ed1041: ::protobuf::EnumOrUnknown<super::H_367cf1ee::H_367cf1ee>,
     // @@protoc_insertion_point(field:ABPLALCHNFA.JKPJFKCBIEM)
-    pub JKPJFKCBIEM: ::std::vec::Vec<super::H_3b6ee654::H_3b6ee654>,
+    pub JKPJFKCBIEM: ::std::vec::Vec<super::KFNCAIHIHCM::KFNCAIHIHCM>,
     // special fields
     // @@protoc_insertion_point(special_field:ABPLALCHNFA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,15 +53,15 @@ impl ABPLALCHNFA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_a81ca1a4",
-            |m: &ABPLALCHNFA| { &m.H_a81ca1a4 },
-            |m: &mut ABPLALCHNFA| { &mut m.H_a81ca1a4 },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OOEOCGLLHFO",
             |m: &ABPLALCHNFA| { &m.OOEOCGLLHFO },
             |m: &mut ABPLALCHNFA| { &mut m.OOEOCGLLHFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "H_89ed1041",
+            |m: &ABPLALCHNFA| { &m.H_89ed1041 },
+            |m: &mut ABPLALCHNFA| { &mut m.H_89ed1041 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JKPJFKCBIEM",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for ABPLALCHNFA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.H_a81ca1a4 = is.read_enum_or_unknown()?;
-                },
-                74 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.OOEOCGLLHFO)?;
                 },
-                72 => {
+                8 => {
                     self.OOEOCGLLHFO.push(is.read_uint32()?);
                 },
-                106 => {
+                16 => {
+                    self.H_89ed1041 = is.read_enum_or_unknown()?;
+                },
+                74 => {
                     self.JKPJFKCBIEM.push(is.read_message()?);
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ABPLALCHNFA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.H_a81ca1a4 != ::protobuf::EnumOrUnknown::new(super::H_605c56e4::H_605c56e4::H_b3a4f1ff) {
-            my_size += ::protobuf::rt::int32_size(5, self.H_a81ca1a4.value());
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OOEOCGLLHFO);
+        if self.H_89ed1041 != ::protobuf::EnumOrUnknown::new(super::H_367cf1ee::H_367cf1ee::H_438c4400) {
+            my_size += ::protobuf::rt::int32_size(2, self.H_89ed1041.value());
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OOEOCGLLHFO);
         for value in &self.JKPJFKCBIEM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,12 +124,12 @@ impl ::protobuf::Message for ABPLALCHNFA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.H_a81ca1a4 != ::protobuf::EnumOrUnknown::new(super::H_605c56e4::H_605c56e4::H_b3a4f1ff) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.H_a81ca1a4))?;
+        os.write_repeated_packed_uint32(1, &self.OOEOCGLLHFO)?;
+        if self.H_89ed1041 != ::protobuf::EnumOrUnknown::new(super::H_367cf1ee::H_367cf1ee::H_438c4400) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.H_89ed1041))?;
         }
-        os.write_repeated_packed_uint32(9, &self.OOEOCGLLHFO)?;
         for v in &self.JKPJFKCBIEM {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for ABPLALCHNFA {
     }
 
     fn clear(&mut self) {
-        self.H_a81ca1a4 = ::protobuf::EnumOrUnknown::new(super::H_605c56e4::H_605c56e4::H_b3a4f1ff);
         self.OOEOCGLLHFO.clear();
+        self.H_89ed1041 = ::protobuf::EnumOrUnknown::new(super::H_367cf1ee::H_367cf1ee::H_438c4400);
         self.JKPJFKCBIEM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ABPLALCHNFA {
         static instance: ABPLALCHNFA = ABPLALCHNFA {
-            H_a81ca1a4: ::protobuf::EnumOrUnknown::from_i32(0),
             OOEOCGLLHFO: ::std::vec::Vec::new(),
+            H_89ed1041: ::protobuf::EnumOrUnknown::from_i32(0),
             JKPJFKCBIEM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for ABPLALCHNFA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABPLALCHNFA.proto\x1a\x10H_3b6ee654.proto\x1a\x10H_605c56e4.proto\
-    \"\x8a\x01\n\x0bABPLALCHNFA\x12*\n\nH_a81ca1a4\x18\x05\x20\x01(\x0e2\x0b\
-    .H_605c56e4R\tHA81ca1a4\x12\x20\n\x0bOOEOCGLLHFO\x18\t\x20\x03(\rR\x0bOO\
-    EOCGLLHFO\x12-\n\x0bJKPJFKCBIEM\x18\r\x20\x03(\x0b2\x0b.H_3b6ee654R\x0bJ\
-    KPJFKCBIEMb\x06proto3\
+    \n\x11ABPLALCHNFA.proto\x1a\x10H_367cf1ee.proto\x1a\x11KFNCAIHIHCM.proto\
+    \"\x8b\x01\n\x0bABPLALCHNFA\x12\x20\n\x0bOOEOCGLLHFO\x18\x01\x20\x03(\rR\
+    \x0bOOEOCGLLHFO\x12*\n\nH_89ed1041\x18\x02\x20\x01(\x0e2\x0b.H_367cf1eeR\
+    \tH89ed1041\x12.\n\x0bJKPJFKCBIEM\x18\t\x20\x03(\x0b2\x0c.KFNCAIHIHCMR\
+    \x0bJKPJFKCBIEMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,8 +205,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_3b6ee654::file_descriptor().clone());
-            deps.push(super::H_605c56e4::file_descriptor().clone());
+            deps.push(super::H_367cf1ee::file_descriptor().clone());
+            deps.push(super::KFNCAIHIHCM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ABPLALCHNFA::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

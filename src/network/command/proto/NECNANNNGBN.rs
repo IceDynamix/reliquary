@@ -79,10 +79,10 @@ impl ::protobuf::Message for NECNANNNGBN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.DCDOELCPOHB = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.DOHLBHLLAFO = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NECNANNNGBN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCDOELCPOHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DCDOELCPOHB);
+            my_size += ::protobuf::rt::uint32_size(5, self.DCDOELCPOHB);
         }
         if self.DOHLBHLLAFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DOHLBHLLAFO);
+            my_size += ::protobuf::rt::uint32_size(10, self.DOHLBHLLAFO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NECNANNNGBN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCDOELCPOHB != 0 {
-            os.write_uint32(3, self.DCDOELCPOHB)?;
+            os.write_uint32(5, self.DCDOELCPOHB)?;
         }
         if self.DOHLBHLLAFO != 0 {
-            os.write_uint32(13, self.DOHLBHLLAFO)?;
+            os.write_uint32(10, self.DOHLBHLLAFO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NECNANNNGBN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NECNANNNGBN.proto\"Q\n\x0bNECNANNNGBN\x12\x20\n\x0bDCDOELCPOHB\x18\
-    \x03\x20\x01(\rR\x0bDCDOELCPOHB\x12\x20\n\x0bDOHLBHLLAFO\x18\r\x20\x01(\
+    \x05\x20\x01(\rR\x0bDCDOELCPOHB\x12\x20\n\x0bDOHLBHLLAFO\x18\n\x20\x01(\
     \rR\x0bDOHLBHLLAFOb\x06proto3\
 ";
 

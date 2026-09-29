@@ -30,10 +30,10 @@ pub struct RogueMagicQueryScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueMagicQueryScRsp.LFLCDNGALME)
     pub LFLCDNGALME: ::protobuf::MessageField<super::CILKBJMGNGL::CILKBJMGNGL>,
-    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:RogueMagicQueryScRsp.PHGJIJELKDB)
     pub PHGJIJELKDB: ::protobuf::MessageField<super::GCBCKOKEAJH::GCBCKOKEAJH>,
+    // @@protoc_insertion_point(field:RogueMagicQueryScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl RogueMagicQueryScRsp {
             |m: &RogueMagicQueryScRsp| { &m.LFLCDNGALME },
             |m: &mut RogueMagicQueryScRsp| { &mut m.LFLCDNGALME },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueMagicQueryScRsp| { &m.retcode },
-            |m: &mut RogueMagicQueryScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCBCKOKEAJH::GCBCKOKEAJH>(
             "PHGJIJELKDB",
             |m: &RogueMagicQueryScRsp| { &m.PHGJIJELKDB },
             |m: &mut RogueMagicQueryScRsp| { &mut m.PHGJIJELKDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RogueMagicQueryScRsp| { &m.retcode },
+            |m: &mut RogueMagicQueryScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicQueryScRsp>(
             "RogueMagicQueryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
                 },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                122 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PHGJIJELKDB)?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if let Some(v) = self.PHGJIJELKDB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LFLCDNGALME.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.PHGJIJELKDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for RogueMagicQueryScRsp {
 
     fn clear(&mut self) {
         self.LFLCDNGALME.clear();
-        self.retcode = 0;
         self.PHGJIJELKDB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicQueryScRsp {
         static instance: RogueMagicQueryScRsp = RogueMagicQueryScRsp {
             LFLCDNGALME: ::protobuf::MessageField::none(),
-            retcode: 0,
             PHGJIJELKDB: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicQueryScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aRogueMagicQueryScRsp.proto\x1a\x11CILKBJMGNGL.proto\x1a\x11GCBCKOK\
     EAJH.proto\"\x90\x01\n\x14RogueMagicQueryScRsp\x12.\n\x0bLFLCDNGALME\x18\
-    \x08\x20\x01(\x0b2\x0c.CILKBJMGNGLR\x0bLFLCDNGALME\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bPHGJIJELKDB\x18\x0f\x20\x01(\x0b\
-    2\x0c.GCBCKOKEAJHR\x0bPHGJIJELKDBb\x06proto3\
+    \x06\x20\x01(\x0b2\x0c.CILKBJMGNGLR\x0bLFLCDNGALME\x12.\n\x0bPHGJIJELKDB\
+    \x18\x0b\x20\x01(\x0b2\x0c.GCBCKOKEAJHR\x0bPHGJIJELKDB\x12\x18\n\x07retc\
+    ode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

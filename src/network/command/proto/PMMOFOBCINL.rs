@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PMMOFOBCINL {
     // message fields
-    // @@protoc_insertion_point(field:PMMOFOBCINL.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:PMMOFOBCINL.lineup)
-    pub lineup: ::protobuf::MessageField<super::GLLFJFJBIBC::GLLFJFJBIBC>,
-    // @@protoc_insertion_point(field:PMMOFOBCINL.IBECKONIICF)
-    pub IBECKONIICF: u32,
-    // @@protoc_insertion_point(field:PMMOFOBCINL.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:PMMOFOBCINL.INLLMKEDGLC)
-    pub INLLMKEDGLC: u32,
-    // @@protoc_insertion_point(field:PMMOFOBCINL.stage_index)
-    pub stage_index: u32,
     // @@protoc_insertion_point(field:PMMOFOBCINL.battle_target_list)
     pub battle_target_list: ::std::vec::Vec<super::BattleTarget::BattleTarget>,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.IBECKONIICF)
+    pub IBECKONIICF: u32,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.stage_index)
+    pub stage_index: u32,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.INLLMKEDGLC)
+    pub INLLMKEDGLC: u32,
+    // @@protoc_insertion_point(field:PMMOFOBCINL.lineup)
+    pub lineup: ::protobuf::MessageField<super::GLLFJFJBIBC::GLLFJFJBIBC>,
     // special fields
     // @@protoc_insertion_point(special_field:PMMOFOBCINL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,10 @@ impl PMMOFOBCINL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &PMMOFOBCINL| { &m.score_id },
-            |m: &mut PMMOFOBCINL| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLLFJFJBIBC::GLLFJFJBIBC>(
-            "lineup",
-            |m: &PMMOFOBCINL| { &m.lineup },
-            |m: &mut PMMOFOBCINL| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IBECKONIICF",
-            |m: &PMMOFOBCINL| { &m.IBECKONIICF },
-            |m: &mut PMMOFOBCINL| { &mut m.IBECKONIICF },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_target_list",
+            |m: &PMMOFOBCINL| { &m.battle_target_list },
+            |m: &mut PMMOFOBCINL| { &mut m.battle_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_status",
@@ -82,19 +72,29 @@ impl PMMOFOBCINL {
             |m: &mut PMMOFOBCINL| { &mut m.end_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INLLMKEDGLC",
-            |m: &PMMOFOBCINL| { &m.INLLMKEDGLC },
-            |m: &mut PMMOFOBCINL| { &mut m.INLLMKEDGLC },
+            "IBECKONIICF",
+            |m: &PMMOFOBCINL| { &m.IBECKONIICF },
+            |m: &mut PMMOFOBCINL| { &mut m.IBECKONIICF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_index",
             |m: &PMMOFOBCINL| { &m.stage_index },
             |m: &mut PMMOFOBCINL| { &mut m.stage_index },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_target_list",
-            |m: &PMMOFOBCINL| { &m.battle_target_list },
-            |m: &mut PMMOFOBCINL| { &mut m.battle_target_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &PMMOFOBCINL| { &m.score_id },
+            |m: &mut PMMOFOBCINL| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "INLLMKEDGLC",
+            |m: &PMMOFOBCINL| { &m.INLLMKEDGLC },
+            |m: &mut PMMOFOBCINL| { &mut m.INLLMKEDGLC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLLFJFJBIBC::GLLFJFJBIBC>(
+            "lineup",
+            |m: &PMMOFOBCINL| { &m.lineup },
+            |m: &mut PMMOFOBCINL| { &mut m.lineup },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PMMOFOBCINL>(
             "PMMOFOBCINL",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for PMMOFOBCINL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.score_id = is.read_uint32()?;
-                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                    self.battle_target_list.push(is.read_message()?);
+                },
+                24 => {
+                    self.end_status = is.read_enum_or_unknown()?;
                 },
                 40 => {
                     self.IBECKONIICF = is.read_uint32()?;
                 },
-                88 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                104 => {
-                    self.INLLMKEDGLC = is.read_uint32()?;
-                },
-                112 => {
+                72 => {
                     self.stage_index = is.read_uint32()?;
                 },
+                80 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.INLLMKEDGLC = is.read_uint32()?;
+                },
                 122 => {
-                    self.battle_target_list.push(is.read_message()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,56 +147,56 @@ impl ::protobuf::Message for PMMOFOBCINL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.battle_target_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(3, self.end_status.value());
+        }
+        if self.IBECKONIICF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.IBECKONIICF);
+        }
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.stage_index);
+        }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+        }
+        if self.INLLMKEDGLC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.INLLMKEDGLC);
         }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IBECKONIICF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IBECKONIICF);
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(11, self.end_status.value());
-        }
-        if self.INLLMKEDGLC != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.INLLMKEDGLC);
-        }
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.stage_index);
-        }
-        for value in &self.battle_target_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.score_id != 0 {
-            os.write_uint32(1, self.score_id)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
+        for v in &self.battle_target_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
         }
         if self.IBECKONIICF != 0 {
             os.write_uint32(5, self.IBECKONIICF)?;
         }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        if self.stage_index != 0 {
+            os.write_uint32(9, self.stage_index)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(10, self.score_id)?;
         }
         if self.INLLMKEDGLC != 0 {
-            os.write_uint32(13, self.INLLMKEDGLC)?;
+            os.write_uint32(11, self.INLLMKEDGLC)?;
         }
-        if self.stage_index != 0 {
-            os.write_uint32(14, self.stage_index)?;
-        }
-        for v in &self.battle_target_list {
+        if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for PMMOFOBCINL {
     }
 
     fn clear(&mut self) {
-        self.score_id = 0;
-        self.lineup.clear();
-        self.IBECKONIICF = 0;
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.INLLMKEDGLC = 0;
-        self.stage_index = 0;
         self.battle_target_list.clear();
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.IBECKONIICF = 0;
+        self.stage_index = 0;
+        self.score_id = 0;
+        self.INLLMKEDGLC = 0;
+        self.lineup.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PMMOFOBCINL {
         static instance: PMMOFOBCINL = PMMOFOBCINL {
-            score_id: 0,
-            lineup: ::protobuf::MessageField::none(),
-            IBECKONIICF: 0,
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            INLLMKEDGLC: 0,
-            stage_index: 0,
             battle_target_list: ::std::vec::Vec::new(),
+            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            IBECKONIICF: 0,
+            stage_index: 0,
+            score_id: 0,
+            INLLMKEDGLC: 0,
+            lineup: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,14 +258,14 @@ impl ::protobuf::reflect::ProtobufValue for PMMOFOBCINL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PMMOFOBCINL.proto\x1a\x15BattleEndStatus.proto\x1a\x12BattleTarget\
-    .proto\x1a\x11GLLFJFJBIBC.proto\"\xa1\x02\n\x0bPMMOFOBCINL\x12\x19\n\x08\
-    score_id\x18\x01\x20\x01(\rR\x07scoreId\x12$\n\x06lineup\x18\x02\x20\x01\
-    (\x0b2\x0c.GLLFJFJBIBCR\x06lineup\x12\x20\n\x0bIBECKONIICF\x18\x05\x20\
-    \x01(\rR\x0bIBECKONIICF\x12/\n\nend_status\x18\x0b\x20\x01(\x0e2\x10.Bat\
-    tleEndStatusR\tendStatus\x12\x20\n\x0bINLLMKEDGLC\x18\r\x20\x01(\rR\x0bI\
-    NLLMKEDGLC\x12\x1f\n\x0bstage_index\x18\x0e\x20\x01(\rR\nstageIndex\x12;\
-    \n\x12battle_target_list\x18\x0f\x20\x03(\x0b2\r.BattleTargetR\x10battle\
-    TargetListb\x06proto3\
+    .proto\x1a\x11GLLFJFJBIBC.proto\"\xa1\x02\n\x0bPMMOFOBCINL\x12;\n\x12bat\
+    tle_target_list\x18\x02\x20\x03(\x0b2\r.BattleTargetR\x10battleTargetLis\
+    t\x12/\n\nend_status\x18\x03\x20\x01(\x0e2\x10.BattleEndStatusR\tendStat\
+    us\x12\x20\n\x0bIBECKONIICF\x18\x05\x20\x01(\rR\x0bIBECKONIICF\x12\x1f\n\
+    \x0bstage_index\x18\t\x20\x01(\rR\nstageIndex\x12\x19\n\x08score_id\x18\
+    \n\x20\x01(\rR\x07scoreId\x12\x20\n\x0bINLLMKEDGLC\x18\x0b\x20\x01(\rR\
+    \x0bINLLMKEDGLC\x12$\n\x06lineup\x18\x0f\x20\x01(\x0b2\x0c.GLLFJFJBIBCR\
+    \x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

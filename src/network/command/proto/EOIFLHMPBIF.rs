@@ -82,7 +82,7 @@ impl ::protobuf::Message for EOIFLHMPBIF {
                 40 => {
                     self.GAHFPGCPAJA = is.read_uint64()?;
                 },
-                120 => {
+                88 => {
                     self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for EOIFLHMPBIF {
             my_size += ::protobuf::rt::uint64_size(5, self.GAHFPGCPAJA);
         }
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(15, self.GHNJCLNKGHH.value());
+            my_size += ::protobuf::rt::int32_size(11, self.GHNJCLNKGHH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for EOIFLHMPBIF {
             os.write_uint64(5, self.GAHFPGCPAJA)?;
         }
         if self.GHNJCLNKGHH != ::protobuf::EnumOrUnknown::new(super::MMFOGJPOHGJ::MMFOGJPOHGJ::MMFOGJPOHGJ_NLCDGIPGFDJ) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for EOIFLHMPBIF {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EOIFLHMPBIF.proto\x1a\x11MMFOGJPOHGJ.proto\"_\n\x0bEOIFLHMPBIF\x12\
     \x20\n\x0bGAHFPGCPAJA\x18\x05\x20\x01(\x04R\x0bGAHFPGCPAJA\x12.\n\x0bGHN\
-    JCLNKGHH\x18\x0f\x20\x01(\x0e2\x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHHb\x06proto\
+    JCLNKGHH\x18\x0b\x20\x01(\x0e2\x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHHb\x06proto\
     3\
 ";
 

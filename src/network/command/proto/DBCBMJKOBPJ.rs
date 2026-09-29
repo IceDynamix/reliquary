@@ -43,7 +43,7 @@ pub struct DBCBMJKOBPJ {
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.EEIPNLJNJAL)
     pub EEIPNLJNJAL: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.PMCEKILFBIO)
-    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_9412efba::H_9412efba>,
+    pub PMCEKILFBIO: ::protobuf::MessageField<super::H_f8ce37f4::H_f8ce37f4>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.DFABBGKGDEI)
     pub DFABBGKGDEI: ::protobuf::MessageField<super::KIAICMELIMM::KIAICMELIMM>,
     // @@protoc_insertion_point(field:DBCBMJKOBPJ.battle_rogue_magic_info)
@@ -108,7 +108,7 @@ impl DBCBMJKOBPJ {
             |m: &DBCBMJKOBPJ| { &m.EEIPNLJNJAL },
             |m: &mut DBCBMJKOBPJ| { &mut m.EEIPNLJNJAL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_9412efba::H_9412efba>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_f8ce37f4::H_f8ce37f4>(
             "PMCEKILFBIO",
             |m: &DBCBMJKOBPJ| { &m.PMCEKILFBIO },
             |m: &mut DBCBMJKOBPJ| { &mut m.PMCEKILFBIO },
@@ -385,7 +385,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBCBMJKOBPJ.proto\x1a\x12BattleAvatar.proto\x1a\x10BattleBuff.prot\
     o\x1a\x17BattleMonsterWave.proto\x1a\x1aBattleRogueMagicInfo.proto\x1a\
     \x16BattleTargetList.proto\x1a\x11EDCFKACPFNB.proto\x1a\x11GLIBGKGGEJL.p\
-    roto\x1a\x10H_9412efba.proto\x1a\x11KIAICMELIMM.proto\x1a\x11OJCBOMCCPDB\
+    roto\x1a\x10H_f8ce37f4.proto\x1a\x11KIAICMELIMM.proto\x1a\x11OJCBOMCCPDB\
     .proto\x1a\x11PKPFAHEBJIO.proto\"\x90\x06\n\x0bDBCBMJKOBPJ\x12.\n\x0bava\
     tar_list\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\navatarList\x12>\n\x11mon\
     ster_wave_list\x18\x02\x20\x03(\x0b2\x12.BattleMonsterWaveR\x0fmonsterWa\
@@ -395,7 +395,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     R\x10battleTargetInfo\x12.\n\x0bFGOAKDCBIOE\x18\n\x20\x01(\x0b2\x0c.EDCF\
     KACPFNBR\x0bFGOAKDCBIOE\x12/\n\x0bEEIPNLJNJAL\x18\x0b\x20\x03(\x0b2\r.Ba\
     ttleAvatarR\x0bEEIPNLJNJAL\x12-\n\x0bPMCEKILFBIO\x18\x0c\x20\x01(\x0b2\
-    \x0b.H_9412efbaR\x0bPMCEKILFBIO\x12.\n\x0bDFABBGKGDEI\x18\r\x20\x01(\x0b\
+    \x0b.H_f8ce37f4R\x0bPMCEKILFBIO\x12.\n\x0bDFABBGKGDEI\x18\r\x20\x01(\x0b\
     2\x0c.KIAICMELIMMR\x0bDFABBGKGDEI\x12L\n\x17battle_rogue_magic_info\x18\
     \x0e\x20\x01(\x0b2\x15.BattleRogueMagicInfoR\x14battleRogueMagicInfo\x12\
     .\n\x0bLDPLAOHNLAP\x18\x0f\x20\x01(\x0b2\x0c.PKPFAHEBJIOR\x0bLDPLAOHNLAP\
@@ -428,7 +428,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleTargetList::file_descriptor().clone());
             deps.push(super::EDCFKACPFNB::file_descriptor().clone());
             deps.push(super::GLIBGKGGEJL::file_descriptor().clone());
-            deps.push(super::H_9412efba::file_descriptor().clone());
+            deps.push(super::H_f8ce37f4::file_descriptor().clone());
             deps.push(super::KIAICMELIMM::file_descriptor().clone());
             deps.push(super::OJCBOMCCPDB::file_descriptor().clone());
             deps.push(super::PKPFAHEBJIO::file_descriptor().clone());

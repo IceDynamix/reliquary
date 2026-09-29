@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IFAHFGFFPEF {
     // message fields
-    // @@protoc_insertion_point(field:IFAHFGFFPEF.challenge_id)
-    pub challenge_id: u32,
     // @@protoc_insertion_point(field:IFAHFGFFPEF.FCJGHHILDEK)
     pub FCJGHHILDEK: bool,
+    // @@protoc_insertion_point(field:IFAHFGFFPEF.HGKCEEOONGA)
+    pub HGKCEEOONGA: ::std::vec::Vec<super::PMMOFOBCINL::PMMOFOBCINL>,
+    // @@protoc_insertion_point(field:IFAHFGFFPEF.MOGEEAJCFNO)
+    pub MOGEEAJCFNO: ::std::vec::Vec<super::CMOPLAHDEPN::CMOPLAHDEPN>,
     // @@protoc_insertion_point(field:IFAHFGFFPEF.BHNPINIMMHG)
     pub BHNPINIMMHG: ::protobuf::MessageField<super::OLOFPKHFPJL::OLOFPKHFPJL>,
     // @@protoc_insertion_point(field:IFAHFGFFPEF.finished_target_list)
     pub finished_target_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IFAHFGFFPEF.MOGEEAJCFNO)
-    pub MOGEEAJCFNO: ::std::vec::Vec<super::CMOPLAHDEPN::CMOPLAHDEPN>,
-    // @@protoc_insertion_point(field:IFAHFGFFPEF.HGKCEEOONGA)
-    pub HGKCEEOONGA: ::std::vec::Vec<super::PMMOFOBCINL::PMMOFOBCINL>,
+    // @@protoc_insertion_point(field:IFAHFGFFPEF.challenge_id)
+    pub challenge_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IFAHFGFFPEF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,19 @@ impl IFAHFGFFPEF {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &IFAHFGFFPEF| { &m.challenge_id },
-            |m: &mut IFAHFGFFPEF| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "FCJGHHILDEK",
             |m: &IFAHFGFFPEF| { &m.FCJGHHILDEK },
             |m: &mut IFAHFGFFPEF| { &mut m.FCJGHHILDEK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HGKCEEOONGA",
+            |m: &IFAHFGFFPEF| { &m.HGKCEEOONGA },
+            |m: &mut IFAHFGFFPEF| { &mut m.HGKCEEOONGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MOGEEAJCFNO",
+            |m: &IFAHFGFFPEF| { &m.MOGEEAJCFNO },
+            |m: &mut IFAHFGFFPEF| { &mut m.MOGEEAJCFNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLOFPKHFPJL::OLOFPKHFPJL>(
             "BHNPINIMMHG",
@@ -79,15 +84,10 @@ impl IFAHFGFFPEF {
             |m: &IFAHFGFFPEF| { &m.finished_target_list },
             |m: &mut IFAHFGFFPEF| { &mut m.finished_target_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MOGEEAJCFNO",
-            |m: &IFAHFGFFPEF| { &m.MOGEEAJCFNO },
-            |m: &mut IFAHFGFFPEF| { &mut m.MOGEEAJCFNO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGKCEEOONGA",
-            |m: &IFAHFGFFPEF| { &m.HGKCEEOONGA },
-            |m: &mut IFAHFGFFPEF| { &mut m.HGKCEEOONGA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_id",
+            |m: &IFAHFGFFPEF| { &m.challenge_id },
+            |m: &mut IFAHFGFFPEF| { &mut m.challenge_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IFAHFGFFPEF>(
             "IFAHFGFFPEF",
@@ -108,25 +108,25 @@ impl ::protobuf::Message for IFAHFGFFPEF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                24 => {
                     self.FCJGHHILDEK = is.read_bool()?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHNPINIMMHG)?;
+                18 => {
+                    self.HGKCEEOONGA.push(is.read_message()?);
                 },
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
-                },
-                88 => {
-                    self.finished_target_list.push(is.read_uint32()?);
-                },
-                106 => {
+                34 => {
                     self.MOGEEAJCFNO.push(is.read_message()?);
                 },
-                122 => {
-                    self.HGKCEEOONGA.push(is.read_message()?);
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHNPINIMMHG)?;
+                },
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                },
+                64 => {
+                    self.finished_target_list.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,47 +140,47 @@ impl ::protobuf::Message for IFAHFGFFPEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.challenge_id);
-        }
         if self.FCJGHHILDEK != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.BHNPINIMMHG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.finished_target_list);
-        for value in &self.MOGEEAJCFNO {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.HGKCEEOONGA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.MOGEEAJCFNO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.BHNPINIMMHG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.finished_target_list);
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.challenge_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.challenge_id != 0 {
-            os.write_uint32(1, self.challenge_id)?;
-        }
         if self.FCJGHHILDEK != false {
-            os.write_bool(3, self.FCJGHHILDEK)?;
+            os.write_bool(1, self.FCJGHHILDEK)?;
         }
-        if let Some(v) = self.BHNPINIMMHG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        os.write_repeated_packed_uint32(11, &self.finished_target_list)?;
-        for v in &self.MOGEEAJCFNO {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
         for v in &self.HGKCEEOONGA {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        for v in &self.MOGEEAJCFNO {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if let Some(v) = self.BHNPINIMMHG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        os.write_repeated_packed_uint32(8, &self.finished_target_list)?;
+        if self.challenge_id != 0 {
+            os.write_uint32(11, self.challenge_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -198,23 +198,23 @@ impl ::protobuf::Message for IFAHFGFFPEF {
     }
 
     fn clear(&mut self) {
-        self.challenge_id = 0;
         self.FCJGHHILDEK = false;
+        self.HGKCEEOONGA.clear();
+        self.MOGEEAJCFNO.clear();
         self.BHNPINIMMHG.clear();
         self.finished_target_list.clear();
-        self.MOGEEAJCFNO.clear();
-        self.HGKCEEOONGA.clear();
+        self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IFAHFGFFPEF {
         static instance: IFAHFGFFPEF = IFAHFGFFPEF {
-            challenge_id: 0,
             FCJGHHILDEK: false,
+            HGKCEEOONGA: ::std::vec::Vec::new(),
+            MOGEEAJCFNO: ::std::vec::Vec::new(),
             BHNPINIMMHG: ::protobuf::MessageField::none(),
             finished_target_list: ::std::vec::Vec::new(),
-            MOGEEAJCFNO: ::std::vec::Vec::new(),
-            HGKCEEOONGA: ::std::vec::Vec::new(),
+            challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for IFAHFGFFPEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IFAHFGFFPEF.proto\x1a\x11CMOPLAHDEPN.proto\x1a\x11OLOFPKHFPJL.prot\
-    o\x1a\x11PMMOFOBCINL.proto\"\x94\x02\n\x0bIFAHFGFFPEF\x12!\n\x0cchalleng\
-    e_id\x18\x01\x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bFCJGHHILDEK\x18\x03\
-    \x20\x01(\x08R\x0bFCJGHHILDEK\x12.\n\x0bBHNPINIMMHG\x18\n\x20\x01(\x0b2\
-    \x0c.OLOFPKHFPJLR\x0bBHNPINIMMHG\x120\n\x14finished_target_list\x18\x0b\
-    \x20\x03(\rR\x12finishedTargetList\x12.\n\x0bMOGEEAJCFNO\x18\r\x20\x03(\
-    \x0b2\x0c.CMOPLAHDEPNR\x0bMOGEEAJCFNO\x12.\n\x0bHGKCEEOONGA\x18\x0f\x20\
-    \x03(\x0b2\x0c.PMMOFOBCINLR\x0bHGKCEEOONGAb\x06proto3\
+    o\x1a\x11PMMOFOBCINL.proto\"\x94\x02\n\x0bIFAHFGFFPEF\x12\x20\n\x0bFCJGH\
+    HILDEK\x18\x01\x20\x01(\x08R\x0bFCJGHHILDEK\x12.\n\x0bHGKCEEOONGA\x18\
+    \x02\x20\x03(\x0b2\x0c.PMMOFOBCINLR\x0bHGKCEEOONGA\x12.\n\x0bMOGEEAJCFNO\
+    \x18\x04\x20\x03(\x0b2\x0c.CMOPLAHDEPNR\x0bMOGEEAJCFNO\x12.\n\x0bBHNPINI\
+    MMHG\x18\x06\x20\x01(\x0b2\x0c.OLOFPKHFPJLR\x0bBHNPINIMMHG\x120\n\x14fin\
+    ished_target_list\x18\x08\x20\x03(\rR\x12finishedTargetList\x12!\n\x0cch\
+    allenge_id\x18\x0b\x20\x01(\rR\x0bchallengeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

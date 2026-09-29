@@ -30,15 +30,15 @@ pub enum LCNKHDAOMKM {
     // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_NLCDGIPGFDJ)
     LCNKHDAOMKM_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_MCNFOCKIPJE)
-    LCNKHDAOMKM_MCNFOCKIPJE = 8182,
+    LCNKHDAOMKM_MCNFOCKIPJE = 8190,
     // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_LKCNJILIMFK)
-    LCNKHDAOMKM_LKCNJILIMFK = 8195,
-    // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_ALNPOCFENNI)
-    LCNKHDAOMKM_ALNPOCFENNI = 8184,
+    LCNKHDAOMKM_LKCNJILIMFK = 8197,
     // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_BOKHFIIFNOK)
-    LCNKHDAOMKM_BOKHFIIFNOK = 8192,
+    LCNKHDAOMKM_BOKHFIIFNOK = 8184,
+    // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_ALNPOCFENNI)
+    LCNKHDAOMKM_ALNPOCFENNI = 8188,
     // @@protoc_insertion_point(enum_value:LCNKHDAOMKM.LCNKHDAOMKM_GBKFEPPMDJG)
-    LCNKHDAOMKM_GBKFEPPMDJG = 8194,
+    LCNKHDAOMKM_GBKFEPPMDJG = 8196,
 }
 
 impl ::protobuf::Enum for LCNKHDAOMKM {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for LCNKHDAOMKM {
     fn from_i32(value: i32) -> ::std::option::Option<LCNKHDAOMKM> {
         match value {
             0 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_NLCDGIPGFDJ),
-            8182 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_MCNFOCKIPJE),
-            8195 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_LKCNJILIMFK),
-            8184 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI),
-            8192 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK),
-            8194 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_GBKFEPPMDJG),
+            8190 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_MCNFOCKIPJE),
+            8197 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_LKCNJILIMFK),
+            8184 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK),
+            8188 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI),
+            8196 => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_GBKFEPPMDJG),
             _ => ::std::option::Option::None
         }
     }
@@ -65,8 +65,8 @@ impl ::protobuf::Enum for LCNKHDAOMKM {
             "LCNKHDAOMKM_NLCDGIPGFDJ" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_NLCDGIPGFDJ),
             "LCNKHDAOMKM_MCNFOCKIPJE" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_MCNFOCKIPJE),
             "LCNKHDAOMKM_LKCNJILIMFK" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_LKCNJILIMFK),
-            "LCNKHDAOMKM_ALNPOCFENNI" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI),
             "LCNKHDAOMKM_BOKHFIIFNOK" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK),
+            "LCNKHDAOMKM_ALNPOCFENNI" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI),
             "LCNKHDAOMKM_GBKFEPPMDJG" => ::std::option::Option::Some(LCNKHDAOMKM::LCNKHDAOMKM_GBKFEPPMDJG),
             _ => ::std::option::Option::None
         }
@@ -76,8 +76,8 @@ impl ::protobuf::Enum for LCNKHDAOMKM {
         LCNKHDAOMKM::LCNKHDAOMKM_NLCDGIPGFDJ,
         LCNKHDAOMKM::LCNKHDAOMKM_MCNFOCKIPJE,
         LCNKHDAOMKM::LCNKHDAOMKM_LKCNJILIMFK,
-        LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI,
         LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK,
+        LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI,
         LCNKHDAOMKM::LCNKHDAOMKM_GBKFEPPMDJG,
     ];
 }
@@ -93,8 +93,8 @@ impl ::protobuf::EnumFull for LCNKHDAOMKM {
             LCNKHDAOMKM::LCNKHDAOMKM_NLCDGIPGFDJ => 0,
             LCNKHDAOMKM::LCNKHDAOMKM_MCNFOCKIPJE => 1,
             LCNKHDAOMKM::LCNKHDAOMKM_LKCNJILIMFK => 2,
-            LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI => 3,
-            LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK => 4,
+            LCNKHDAOMKM::LCNKHDAOMKM_BOKHFIIFNOK => 3,
+            LCNKHDAOMKM::LCNKHDAOMKM_ALNPOCFENNI => 4,
             LCNKHDAOMKM::LCNKHDAOMKM_GBKFEPPMDJG => 5,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -115,10 +115,10 @@ impl LCNKHDAOMKM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LCNKHDAOMKM.proto*\xc0\x01\n\x0bLCNKHDAOMKM\x12\x1b\n\x17LCNKHDAOM\
-    KM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCNKHDAOMKM_MCNFOCKIPJE\x10\xf6?\x12\
-    \x1c\n\x17LCNKHDAOMKM_LKCNJILIMFK\x10\x83@\x12\x1c\n\x17LCNKHDAOMKM_ALNP\
-    OCFENNI\x10\xf8?\x12\x1c\n\x17LCNKHDAOMKM_BOKHFIIFNOK\x10\x80@\x12\x1c\n\
-    \x17LCNKHDAOMKM_GBKFEPPMDJG\x10\x82@b\x06proto3\
+    KM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LCNKHDAOMKM_MCNFOCKIPJE\x10\xfe?\x12\
+    \x1c\n\x17LCNKHDAOMKM_LKCNJILIMFK\x10\x85@\x12\x1c\n\x17LCNKHDAOMKM_BOKH\
+    FIIFNOK\x10\xf8?\x12\x1c\n\x17LCNKHDAOMKM_ALNPOCFENNI\x10\xfc?\x12\x1c\n\
+    \x17LCNKHDAOMKM_GBKFEPPMDJG\x10\x84@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

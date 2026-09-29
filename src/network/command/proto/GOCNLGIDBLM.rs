@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GOCNLGIDBLM {
     // message fields
-    // @@protoc_insertion_point(field:GOCNLGIDBLM.JALHKMEOOPN)
-    pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:GOCNLGIDBLM.AMNDNDNPLCA)
     pub AMNDNDNPLCA: u32,
+    // @@protoc_insertion_point(field:GOCNLGIDBLM.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GOCNLGIDBLM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GOCNLGIDBLM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &GOCNLGIDBLM| { &m.JALHKMEOOPN },
-            |m: &mut GOCNLGIDBLM| { &mut m.JALHKMEOOPN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMNDNDNPLCA",
             |m: &GOCNLGIDBLM| { &m.AMNDNDNPLCA },
             |m: &mut GOCNLGIDBLM| { &mut m.AMNDNDNPLCA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JALHKMEOOPN",
+            |m: &GOCNLGIDBLM| { &m.JALHKMEOOPN },
+            |m: &mut GOCNLGIDBLM| { &mut m.JALHKMEOOPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GOCNLGIDBLM>(
             "GOCNLGIDBLM",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for GOCNLGIDBLM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.JALHKMEOOPN = is.read_uint32()?;
-                },
-                80 => {
                     self.AMNDNDNPLCA = is.read_uint32()?;
+                },
+                96 => {
+                    self.JALHKMEOOPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GOCNLGIDBLM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JALHKMEOOPN);
-        }
         if self.AMNDNDNPLCA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.AMNDNDNPLCA);
+            my_size += ::protobuf::rt::uint32_size(5, self.AMNDNDNPLCA);
+        }
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JALHKMEOOPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GOCNLGIDBLM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JALHKMEOOPN != 0 {
-            os.write_uint32(5, self.JALHKMEOOPN)?;
-        }
         if self.AMNDNDNPLCA != 0 {
-            os.write_uint32(10, self.AMNDNDNPLCA)?;
+            os.write_uint32(5, self.AMNDNDNPLCA)?;
+        }
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(12, self.JALHKMEOOPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GOCNLGIDBLM {
     }
 
     fn clear(&mut self) {
-        self.JALHKMEOOPN = 0;
         self.AMNDNDNPLCA = 0;
+        self.JALHKMEOOPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GOCNLGIDBLM {
         static instance: GOCNLGIDBLM = GOCNLGIDBLM {
-            JALHKMEOOPN: 0,
             AMNDNDNPLCA: 0,
+            JALHKMEOOPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GOCNLGIDBLM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GOCNLGIDBLM.proto\"Q\n\x0bGOCNLGIDBLM\x12\x20\n\x0bJALHKMEOOPN\x18\
-    \x05\x20\x01(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bAMNDNDNPLCA\x18\n\x20\x01(\
-    \rR\x0bAMNDNDNPLCAb\x06proto3\
+    \n\x11GOCNLGIDBLM.proto\"Q\n\x0bGOCNLGIDBLM\x12\x20\n\x0bAMNDNDNPLCA\x18\
+    \x05\x20\x01(\rR\x0bAMNDNDNPLCA\x12\x20\n\x0bJALHKMEOOPN\x18\x0c\x20\x01\
+    (\rR\x0bJALHKMEOOPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,16 +30,16 @@ pub struct ClockParkGetInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.HPEKLHNPDAJ)
     pub HPEKLHNPDAJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.LNKAKGOCAOF)
-    pub LNKAKGOCAOF: u32,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.DCGDHFJLHCN)
-    pub DCGDHFJLHCN: ::std::vec::Vec<super::DEGFFGKMFJJ::DEGFFGKMFJJ>,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.CDGICHDIIHH)
     pub CDGICHDIIHH: u32,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.LNKAKGOCAOF)
+    pub LNKAKGOCAOF: u32,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.DCGDHFJLHCN)
+    pub DCGDHFJLHCN: ::std::vec::Vec<super::DEGFFGKMFJJ::DEGFFGKMFJJ>,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkGetInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,14 @@ impl ClockParkGetInfoScRsp {
             |m: &mut ClockParkGetInfoScRsp| { &mut m.HPEKLHNPDAJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDGICHDIIHH",
+            |m: &ClockParkGetInfoScRsp| { &m.CDGICHDIIHH },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.CDGICHDIIHH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNKAKGOCAOF",
             |m: &ClockParkGetInfoScRsp| { &m.LNKAKGOCAOF },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.LNKAKGOCAOF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ClockParkGetInfoScRsp| { &m.retcode },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DCGDHFJLHCN",
@@ -80,14 +80,14 @@ impl ClockParkGetInfoScRsp {
             |m: &mut ClockParkGetInfoScRsp| { &mut m.DCGDHFJLHCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDGICHDIIHH",
-            |m: &ClockParkGetInfoScRsp| { &m.CDGICHDIIHH },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.CDGICHDIIHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &ClockParkGetInfoScRsp| { &m.progress },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ClockParkGetInfoScRsp| { &m.retcode },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkGetInfoScRsp>(
             "ClockParkGetInfoScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.HPEKLHNPDAJ)?;
                 },
-                16 => {
+                8 => {
                     self.HPEKLHNPDAJ.push(is.read_uint32()?);
                 },
-                40 => {
+                16 => {
+                    self.CDGICHDIIHH = is.read_uint32()?;
+                },
+                32 => {
                     self.LNKAKGOCAOF = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
+                50 => {
                     self.DCGDHFJLHCN.push(is.read_message()?);
                 },
                 80 => {
-                    self.CDGICHDIIHH = is.read_uint32()?;
-                },
-                104 => {
                     self.progress = is.read_uint32()?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,22 +140,22 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HPEKLHNPDAJ);
-        if self.LNKAKGOCAOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LNKAKGOCAOF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HPEKLHNPDAJ);
+        if self.CDGICHDIIHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CDGICHDIIHH);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.LNKAKGOCAOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LNKAKGOCAOF);
         }
         for value in &self.DCGDHFJLHCN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CDGICHDIIHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CDGICHDIIHH);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.progress);
+            my_size += ::protobuf::rt::uint32_size(10, self.progress);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,21 +163,21 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.HPEKLHNPDAJ)?;
-        if self.LNKAKGOCAOF != 0 {
-            os.write_uint32(5, self.LNKAKGOCAOF)?;
+        os.write_repeated_packed_uint32(1, &self.HPEKLHNPDAJ)?;
+        if self.CDGICHDIIHH != 0 {
+            os.write_uint32(2, self.CDGICHDIIHH)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+        if self.LNKAKGOCAOF != 0 {
+            os.write_uint32(4, self.LNKAKGOCAOF)?;
         }
         for v in &self.DCGDHFJLHCN {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.CDGICHDIIHH != 0 {
-            os.write_uint32(10, self.CDGICHDIIHH)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(13, self.progress)?;
+            os.write_uint32(10, self.progress)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,22 +197,22 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
 
     fn clear(&mut self) {
         self.HPEKLHNPDAJ.clear();
-        self.LNKAKGOCAOF = 0;
-        self.retcode = 0;
-        self.DCGDHFJLHCN.clear();
         self.CDGICHDIIHH = 0;
+        self.LNKAKGOCAOF = 0;
+        self.DCGDHFJLHCN.clear();
         self.progress = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkGetInfoScRsp {
         static instance: ClockParkGetInfoScRsp = ClockParkGetInfoScRsp {
             HPEKLHNPDAJ: ::std::vec::Vec::new(),
-            LNKAKGOCAOF: 0,
-            retcode: 0,
-            DCGDHFJLHCN: ::std::vec::Vec::new(),
             CDGICHDIIHH: 0,
+            LNKAKGOCAOF: 0,
+            DCGDHFJLHCN: ::std::vec::Vec::new(),
             progress: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkGetInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bClockParkGetInfoScRsp.proto\x1a\x11DEGFFGKMFJJ.proto\"\xe3\x01\n\
-    \x15ClockParkGetInfoScRsp\x12\x20\n\x0bHPEKLHNPDAJ\x18\x02\x20\x03(\rR\
-    \x0bHPEKLHNPDAJ\x12\x20\n\x0bLNKAKGOCAOF\x18\x05\x20\x01(\rR\x0bLNKAKGOC\
-    AOF\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bDCGDHF\
-    JLHCN\x18\t\x20\x03(\x0b2\x0c.DEGFFGKMFJJR\x0bDCGDHFJLHCN\x12\x20\n\x0bC\
-    DGICHDIIHH\x18\n\x20\x01(\rR\x0bCDGICHDIIHH\x12\x1a\n\x08progress\x18\r\
-    \x20\x01(\rR\x08progressb\x06proto3\
+    \x15ClockParkGetInfoScRsp\x12\x20\n\x0bHPEKLHNPDAJ\x18\x01\x20\x03(\rR\
+    \x0bHPEKLHNPDAJ\x12\x20\n\x0bCDGICHDIIHH\x18\x02\x20\x01(\rR\x0bCDGICHDI\
+    IHH\x12\x20\n\x0bLNKAKGOCAOF\x18\x04\x20\x01(\rR\x0bLNKAKGOCAOF\x12.\n\
+    \x0bDCGDHFJLHCN\x18\x06\x20\x03(\x0b2\x0c.DEGFFGKMFJJR\x0bDCGDHFJLHCN\
+    \x12\x1a\n\x08progress\x18\n\x20\x01(\rR\x08progress\x12\x18\n\x07retcod\
+    e\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

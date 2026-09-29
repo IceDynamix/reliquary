@@ -79,10 +79,10 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.GGIGDJPFBBP)?;
                 },
-                40 => {
+                56 => {
                     self.GGIGDJPFBBP.push(is.read_uint32()?);
                 },
                 104 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GGIGDJPFBBP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GGIGDJPFBBP);
         if self.NPPKABBJCMI != false {
             my_size += 1 + 1;
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for DeleteRelicFilterPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.GGIGDJPFBBP)?;
+        os.write_repeated_packed_uint32(7, &self.GGIGDJPFBBP)?;
         if self.NPPKABBJCMI != false {
             os.write_bool(13, self.NPPKABBJCMI)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for DeleteRelicFilterPlanCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20DeleteRelicFilterPlanCsReq.proto\"`\n\x1aDeleteRelicFilterPlanCsRe\
-    q\x12\x20\n\x0bGGIGDJPFBBP\x18\x05\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x20\n\
+    q\x12\x20\n\x0bGGIGDJPFBBP\x18\x07\x20\x03(\rR\x0bGGIGDJPFBBP\x12\x20\n\
     \x0bNPPKABBJCMI\x18\r\x20\x01(\x08R\x0bNPPKABBJCMIb\x06proto3\
 ";
 

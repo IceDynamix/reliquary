@@ -79,10 +79,10 @@ impl ::protobuf::Message for MMBBHFNJILI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                40 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OJEANDPABHC)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for MMBBHFNJILI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
         }
         if let Some(v) = self.OJEANDPABHC.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MMBBHFNJILI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(2, self.unique_id)?;
+            os.write_uint32(5, self.unique_id)?;
         }
         if let Some(v) = self.OJEANDPABHC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for MMBBHFNJILI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MMBBHFNJILI.proto\x1a\x11OKCCLEEPELM.proto\"Z\n\x0bMMBBHFNJILI\x12\
-    \x1b\n\tunique_id\x18\x02\x20\x01(\rR\x08uniqueId\x12.\n\x0bOJEANDPABHC\
-    \x18\x08\x20\x01(\x0b2\x0c.OKCCLEEPELMR\x0bOJEANDPABHCb\x06proto3\
+    \x1b\n\tunique_id\x18\x05\x20\x01(\rR\x08uniqueId\x12.\n\x0bOJEANDPABHC\
+    \x18\t\x20\x01(\x0b2\x0c.OKCCLEEPELMR\x0bOJEANDPABHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

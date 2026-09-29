@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BenefitData {
     // message fields
-    // @@protoc_insertion_point(field:BenefitData.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:BenefitData.status)
-    pub status: u32,
     // @@protoc_insertion_point(field:BenefitData.JALHKMEOOPN)
     pub JALHKMEOOPN: u32,
+    // @@protoc_insertion_point(field:BenefitData.status)
+    pub status: u32,
     // @@protoc_insertion_point(field:BenefitData.EABKOHGCHFP)
     pub EABKOHGCHFP: ::protobuf::MessageField<super::OPGKKPEDKCL::OPGKKPEDKCL>,
+    // @@protoc_insertion_point(field:BenefitData.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BenefitData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl BenefitData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &BenefitData| { &m.level },
-            |m: &mut BenefitData| { &mut m.level },
+            "JALHKMEOOPN",
+            |m: &BenefitData| { &m.JALHKMEOOPN },
+            |m: &mut BenefitData| { &mut m.JALHKMEOOPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &BenefitData| { &m.status },
             |m: &mut BenefitData| { &mut m.status },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JALHKMEOOPN",
-            |m: &BenefitData| { &m.JALHKMEOOPN },
-            |m: &mut BenefitData| { &mut m.JALHKMEOOPN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPGKKPEDKCL::OPGKKPEDKCL>(
             "EABKOHGCHFP",
             |m: &BenefitData| { &m.EABKOHGCHFP },
             |m: &mut BenefitData| { &mut m.EABKOHGCHFP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &BenefitData| { &m.level },
+            |m: &mut BenefitData| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BenefitData>(
             "BenefitData",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BenefitData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.level = is.read_uint32()?;
-                },
-                56 => {
-                    self.status = is.read_uint32()?;
-                },
-                88 => {
+                64 => {
                     self.JALHKMEOOPN = is.read_uint32()?;
                 },
-                114 => {
+                80 => {
+                    self.status = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EABKOHGCHFP)?;
+                },
+                112 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for BenefitData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JALHKMEOOPN);
         }
         if self.status != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.status);
-        }
-        if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JALHKMEOOPN);
+            my_size += ::protobuf::rt::uint32_size(10, self.status);
         }
         if let Some(v) = self.EABKOHGCHFP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for BenefitData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(8, self.JALHKMEOOPN)?;
         }
         if self.status != 0 {
-            os.write_uint32(7, self.status)?;
-        }
-        if self.JALHKMEOOPN != 0 {
-            os.write_uint32(11, self.JALHKMEOOPN)?;
+            os.write_uint32(10, self.status)?;
         }
         if let Some(v) = self.EABKOHGCHFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(14, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BenefitData {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.status = 0;
         self.JALHKMEOOPN = 0;
+        self.status = 0;
         self.EABKOHGCHFP.clear();
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BenefitData {
         static instance: BenefitData = BenefitData {
-            level: 0,
-            status: 0,
             JALHKMEOOPN: 0,
+            status: 0,
             EABKOHGCHFP: ::protobuf::MessageField::none(),
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BenefitData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BenefitData.proto\x1a\x11OPGKKPEDKCL.proto\"\x8d\x01\n\x0bBenefitD\
-    ata\x12\x14\n\x05level\x18\x03\x20\x01(\rR\x05level\x12\x16\n\x06status\
-    \x18\x07\x20\x01(\rR\x06status\x12\x20\n\x0bJALHKMEOOPN\x18\x0b\x20\x01(\
-    \rR\x0bJALHKMEOOPN\x12.\n\x0bEABKOHGCHFP\x18\x0e\x20\x01(\x0b2\x0c.OPGKK\
-    PEDKCLR\x0bEABKOHGCHFPb\x06proto3\
+    ata\x12\x20\n\x0bJALHKMEOOPN\x18\x08\x20\x01(\rR\x0bJALHKMEOOPN\x12\x16\
+    \n\x06status\x18\n\x20\x01(\rR\x06status\x12.\n\x0bEABKOHGCHFP\x18\r\x20\
+    \x01(\x0b2\x0c.OPGKKPEDKCLR\x0bEABKOHGCHFP\x12\x14\n\x05level\x18\x0e\
+    \x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

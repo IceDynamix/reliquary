@@ -88,6 +88,18 @@ pub struct MonsterBattleInfo {
     pub AHKJLOJDNIC: ::protobuf::EnumOrUnknown<super::NLNEBDEEONP::NLNEBDEEONP>,
     // @@protoc_insertion_point(field:MonsterBattleInfo.FAGBLGNJGDN)
     pub FAGBLGNJGDN: bool,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.JFFBHFJMIOK)
+    pub JFFBHFJMIOK: u32,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.NEMOMKPCCMG)
+    pub NEMOMKPCCMG: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.BPGHHDNMHKM)
+    pub BPGHHDNMHKM: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.PPOINPPCJLE)
+    pub PPOINPPCJLE: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.JLHEPCCCCEH)
+    pub JLHEPCCCCEH: f64,
+    // @@protoc_insertion_point(field:MonsterBattleInfo.CFGOFGLKEOF)
+    pub CFGOFGLKEOF: f64,
     // special fields
     // @@protoc_insertion_point(special_field:MonsterBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -105,7 +117,7 @@ impl MonsterBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(30);
+        let mut fields = ::std::vec::Vec::with_capacity(36);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -257,6 +269,36 @@ impl MonsterBattleInfo {
             |m: &MonsterBattleInfo| { &m.FAGBLGNJGDN },
             |m: &mut MonsterBattleInfo| { &mut m.FAGBLGNJGDN },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFFBHFJMIOK",
+            |m: &MonsterBattleInfo| { &m.JFFBHFJMIOK },
+            |m: &mut MonsterBattleInfo| { &mut m.JFFBHFJMIOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEMOMKPCCMG",
+            |m: &MonsterBattleInfo| { &m.NEMOMKPCCMG },
+            |m: &mut MonsterBattleInfo| { &mut m.NEMOMKPCCMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BPGHHDNMHKM",
+            |m: &MonsterBattleInfo| { &m.BPGHHDNMHKM },
+            |m: &mut MonsterBattleInfo| { &mut m.BPGHHDNMHKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PPOINPPCJLE",
+            |m: &MonsterBattleInfo| { &m.PPOINPPCJLE },
+            |m: &mut MonsterBattleInfo| { &mut m.PPOINPPCJLE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLHEPCCCCEH",
+            |m: &MonsterBattleInfo| { &m.JLHEPCCCCEH },
+            |m: &mut MonsterBattleInfo| { &mut m.JLHEPCCCCEH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFGOFGLKEOF",
+            |m: &MonsterBattleInfo| { &m.CFGOFGLKEOF },
+            |m: &mut MonsterBattleInfo| { &mut m.CFGOFGLKEOF },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonsterBattleInfo>(
             "MonsterBattleInfo",
             fields,
@@ -365,6 +407,24 @@ impl ::protobuf::Message for MonsterBattleInfo {
                 256 => {
                     self.FAGBLGNJGDN = is.read_bool()?;
                 },
+                264 => {
+                    self.JFFBHFJMIOK = is.read_uint32()?;
+                },
+                273 => {
+                    self.NEMOMKPCCMG = is.read_double()?;
+                },
+                281 => {
+                    self.BPGHHDNMHKM = is.read_double()?;
+                },
+                289 => {
+                    self.PPOINPPCJLE = is.read_double()?;
+                },
+                297 => {
+                    self.JLHEPCCCCEH = is.read_double()?;
+                },
+                305 => {
+                    self.CFGOFGLKEOF = is.read_double()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -472,6 +532,24 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.FAGBLGNJGDN != false {
             my_size += 2 + 1;
         }
+        if self.JFFBHFJMIOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(33, self.JFFBHFJMIOK);
+        }
+        if self.NEMOMKPCCMG != 0. {
+            my_size += 2 + 8;
+        }
+        if self.BPGHHDNMHKM != 0. {
+            my_size += 2 + 8;
+        }
+        if self.PPOINPPCJLE != 0. {
+            my_size += 2 + 8;
+        }
+        if self.JLHEPCCCCEH != 0. {
+            my_size += 2 + 8;
+        }
+        if self.CFGOFGLKEOF != 0. {
+            my_size += 2 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -568,6 +646,24 @@ impl ::protobuf::Message for MonsterBattleInfo {
         if self.FAGBLGNJGDN != false {
             os.write_bool(32, self.FAGBLGNJGDN)?;
         }
+        if self.JFFBHFJMIOK != 0 {
+            os.write_uint32(33, self.JFFBHFJMIOK)?;
+        }
+        if self.NEMOMKPCCMG != 0. {
+            os.write_double(34, self.NEMOMKPCCMG)?;
+        }
+        if self.BPGHHDNMHKM != 0. {
+            os.write_double(35, self.BPGHHDNMHKM)?;
+        }
+        if self.PPOINPPCJLE != 0. {
+            os.write_double(36, self.PPOINPPCJLE)?;
+        }
+        if self.JLHEPCCCCEH != 0. {
+            os.write_double(37, self.JLHEPCCCCEH)?;
+        }
+        if self.CFGOFGLKEOF != 0. {
+            os.write_double(38, self.CFGOFGLKEOF)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -615,6 +711,12 @@ impl ::protobuf::Message for MonsterBattleInfo {
         self.IBENGEOJFOJ = 0.;
         self.AHKJLOJDNIC = ::protobuf::EnumOrUnknown::new(super::NLNEBDEEONP::NLNEBDEEONP::NLNEBDEEONP_HHDDIFHGNHD);
         self.FAGBLGNJGDN = false;
+        self.JFFBHFJMIOK = 0;
+        self.NEMOMKPCCMG = 0.;
+        self.BPGHHDNMHKM = 0.;
+        self.PPOINPPCJLE = 0.;
+        self.JLHEPCCCCEH = 0.;
+        self.CFGOFGLKEOF = 0.;
         self.special_fields.clear();
     }
 
@@ -650,6 +752,12 @@ impl ::protobuf::Message for MonsterBattleInfo {
             IBENGEOJFOJ: 0.,
             AHKJLOJDNIC: ::protobuf::EnumOrUnknown::from_i32(0),
             FAGBLGNJGDN: false,
+            JFFBHFJMIOK: 0,
+            NEMOMKPCCMG: 0.,
+            BPGHHDNMHKM: 0.,
+            PPOINPPCJLE: 0.,
+            JLHEPCCCCEH: 0.,
+            CFGOFGLKEOF: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -677,8 +785,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17MonsterBattleInfo.proto\x1a\x11AOFMDLLDIHG.proto\x1a\x1aAttackDama\
     geProperty.proto\x1a\x11CKCDIAAFICJ.proto\x1a\x11HDFAPKLGEFM.proto\x1a\
     \x11IGMOKOENLDK.proto\x1a\x11KPOIEOPCEJL.proto\x1a\x11NLNEBDEEONP.proto\
-    \x1a\x16SkillUseProperty.proto\"\xff\x08\n\x11MonsterBattleInfo\x12\x1b\
-    \n\tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\
+    \x1a\x16SkillUseProperty.proto\"\xcb\n\n\x11MonsterBattleInfo\x12\x1b\n\
+    \tentity_id\x18\x01\x20\x01(\rR\x08entityId\x12\x1d\n\nmonster_id\x18\
     \x02\x20\x01(\rR\tmonsterId\x12\x20\n\x0bPKFMOFPMBBJ\x18\x03\x20\x01(\rR\
     \x0bPKFMOFPMBBJ\x12\x20\n\x0bNCKAICABJIK\x18\x04\x20\x01(\rR\x0bNCKAICAB\
     JIK\x12.\n\x0bCIHAPGPNCMI\x18\x05\x20\x01(\x0b2\x0c.IGMOKOENLDKR\x0bCIHA\
@@ -704,7 +812,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12\x20\n\x0bNCDGNNJABJJ\x18\x1d\x20\x01(\x01R\x0bNCDGNNJABJJ\x12\x20\n\
     \x0bIBENGEOJFOJ\x18\x1e\x20\x01(\x01R\x0bIBENGEOJFOJ\x12.\n\x0bAHKJLOJDN\
     IC\x18\x1f\x20\x01(\x0e2\x0c.NLNEBDEEONPR\x0bAHKJLOJDNIC\x12\x20\n\x0bFA\
-    GBLGNJGDN\x18\x20\x20\x01(\x08R\x0bFAGBLGNJGDNb\x06proto3\
+    GBLGNJGDN\x18\x20\x20\x01(\x08R\x0bFAGBLGNJGDN\x12\x20\n\x0bJFFBHFJMIOK\
+    \x18!\x20\x01(\rR\x0bJFFBHFJMIOK\x12\x20\n\x0bNEMOMKPCCMG\x18\"\x20\x01(\
+    \x01R\x0bNEMOMKPCCMG\x12\x20\n\x0bBPGHHDNMHKM\x18#\x20\x01(\x01R\x0bBPGH\
+    HDNMHKM\x12\x20\n\x0bPPOINPPCJLE\x18$\x20\x01(\x01R\x0bPPOINPPCJLE\x12\
+    \x20\n\x0bJLHEPCCCCEH\x18%\x20\x01(\x01R\x0bJLHEPCCCCEH\x12\x20\n\x0bCFG\
+    OFGLKEOF\x18&\x20\x01(\x01R\x0bCFGOFGLKEOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

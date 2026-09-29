@@ -46,6 +46,8 @@ pub struct SkillUseProperty {
     pub GGDBMJGBDMA: u32,
     // @@protoc_insertion_point(field:SkillUseProperty.BJGNKIPLNBA)
     pub BJGNKIPLNBA: u32,
+    // @@protoc_insertion_point(field:SkillUseProperty.LIDFGAEGJIK)
+    pub LIDFGAEGJIK: f64,
     // special fields
     // @@protoc_insertion_point(special_field:SkillUseProperty.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,7 +65,7 @@ impl SkillUseProperty {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -110,6 +112,11 @@ impl SkillUseProperty {
             |m: &SkillUseProperty| { &m.BJGNKIPLNBA },
             |m: &mut SkillUseProperty| { &mut m.BJGNKIPLNBA },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIDFGAEGJIK",
+            |m: &SkillUseProperty| { &m.LIDFGAEGJIK },
+            |m: &mut SkillUseProperty| { &mut m.LIDFGAEGJIK },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SkillUseProperty>(
             "SkillUseProperty",
             fields,
@@ -155,6 +162,9 @@ impl ::protobuf::Message for SkillUseProperty {
                 72 => {
                     self.BJGNKIPLNBA = is.read_uint32()?;
                 },
+                81 => {
+                    self.LIDFGAEGJIK = is.read_double()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -194,6 +204,9 @@ impl ::protobuf::Message for SkillUseProperty {
         if self.BJGNKIPLNBA != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.BJGNKIPLNBA);
         }
+        if self.LIDFGAEGJIK != 0. {
+            my_size += 1 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -227,6 +240,9 @@ impl ::protobuf::Message for SkillUseProperty {
         if self.BJGNKIPLNBA != 0 {
             os.write_uint32(9, self.BJGNKIPLNBA)?;
         }
+        if self.LIDFGAEGJIK != 0. {
+            os.write_double(10, self.LIDFGAEGJIK)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -253,6 +269,7 @@ impl ::protobuf::Message for SkillUseProperty {
         self.CFFFAPJGGCB = 0.;
         self.GGDBMJGBDMA = 0;
         self.BJGNKIPLNBA = 0;
+        self.LIDFGAEGJIK = 0.;
         self.special_fields.clear();
     }
 
@@ -267,6 +284,7 @@ impl ::protobuf::Message for SkillUseProperty {
             CFFFAPJGGCB: 0.,
             GGDBMJGBDMA: 0,
             BJGNKIPLNBA: 0,
+            LIDFGAEGJIK: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -291,7 +309,7 @@ impl ::protobuf::reflect::ProtobufValue for SkillUseProperty {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16SkillUseProperty.proto\"\xbf\x02\n\x10SkillUseProperty\x12\x19\n\
+    \n\x16SkillUseProperty.proto\"\xe1\x02\n\x10SkillUseProperty\x12\x19\n\
     \x08skill_id\x18\x01\x20\x01(\rR\x07skillId\x12\x1d\n\nskill_type\x18\
     \x02\x20\x01(\tR\tskillType\x12\x1f\n\x0bskill_level\x18\x03\x20\x01(\rR\
     \nskillLevel\x12&\n\x0fskill_use_count\x18\x04\x20\x01(\rR\rskillUseCoun\
@@ -299,7 +317,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0bCIDJHAOBNMF\x18\x06\x20\x01(\x01R\x0bCIDJHAOBNMF\x12\x20\n\x0bCFFF\
     APJGGCB\x18\x07\x20\x01(\x01R\x0bCFFFAPJGGCB\x12\x20\n\x0bGGDBMJGBDMA\
     \x18\x08\x20\x01(\rR\x0bGGDBMJGBDMA\x12\x20\n\x0bBJGNKIPLNBA\x18\t\x20\
-    \x01(\rR\x0bBJGNKIPLNBAb\x06proto3\
+    \x01(\rR\x0bBJGNKIPLNBA\x12\x20\n\x0bLIDFGAEGJIK\x18\n\x20\x01(\x01R\x0b\
+    LIDFGAEGJIKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for NENHKMEFAEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                120 => {
                     self.BCAKPNCHIIJ = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NENHKMEFAEC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            my_size += ::protobuf::rt::int32_size(2, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(6, self.reason.value());
         }
         if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BCAKPNCHIIJ);
+            my_size += ::protobuf::rt::uint32_size(15, self.BCAKPNCHIIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NENHKMEFAEC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(7, self.BCAKPNCHIIJ)?;
+            os.write_uint32(15, self.BCAKPNCHIIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NENHKMEFAEC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NENHKMEFAEC.proto\x1a\x11NPPEMMILLCO.proto\"U\n\x0bNENHKMEFAEC\x12\
-    $\n\x06reason\x18\x02\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\x12\x20\n\
-    \x0bBCAKPNCHIIJ\x18\x07\x20\x01(\rR\x0bBCAKPNCHIIJb\x06proto3\
+    $\n\x06reason\x18\x06\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\x12\x20\n\
+    \x0bBCAKPNCHIIJ\x18\x0f\x20\x01(\rR\x0bBCAKPNCHIIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

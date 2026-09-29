@@ -79,7 +79,7 @@ impl ::protobuf::Message for EAJEMNNNEBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.script_id = is.read_uint32()?;
                 },
                 96 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EAJEMNNNEBM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.script_id);
         }
         if self.LLIOEMOBFGD != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.LLIOEMOBFGD);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for EAJEMNNNEBM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.script_id != 0 {
-            os.write_uint32(1, self.script_id)?;
+            os.write_uint32(6, self.script_id)?;
         }
         if self.LLIOEMOBFGD != 0 {
             os.write_uint32(12, self.LLIOEMOBFGD)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for EAJEMNNNEBM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EAJEMNNNEBM.proto\"L\n\x0bEAJEMNNNEBM\x12\x1b\n\tscript_id\x18\x01\
+    \n\x11EAJEMNNNEBM.proto\"L\n\x0bEAJEMNNNEBM\x12\x1b\n\tscript_id\x18\x06\
     \x20\x01(\rR\x08scriptId\x12\x20\n\x0bLLIOEMOBFGD\x18\x0c\x20\x01(\rR\
     \x0bLLIOEMOBFGDb\x06proto3\
 ";

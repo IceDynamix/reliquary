@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KDFPANILFOH {
     // message fields
-    // @@protoc_insertion_point(field:KDFPANILFOH.motion)
-    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
-    // @@protoc_insertion_point(field:KDFPANILFOH.KEKFKKANACK)
-    pub KEKFKKANACK: bool,
     // @@protoc_insertion_point(field:KDFPANILFOH.PAOEJKABFEP)
     pub PAOEJKABFEP: ::std::vec::Vec<super::Vector::Vector>,
+    // @@protoc_insertion_point(field:KDFPANILFOH.KEKFKKANACK)
+    pub KEKFKKANACK: bool,
+    // @@protoc_insertion_point(field:KDFPANILFOH.motion)
+    pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:KDFPANILFOH.CHCOPKAKBNO)
     pub CHCOPKAKBNO: u32,
     // special fields
@@ -55,20 +55,20 @@ impl KDFPANILFOH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &KDFPANILFOH| { &m.motion },
-            |m: &mut KDFPANILFOH| { &mut m.motion },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PAOEJKABFEP",
+            |m: &KDFPANILFOH| { &m.PAOEJKABFEP },
+            |m: &mut KDFPANILFOH| { &mut m.PAOEJKABFEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KEKFKKANACK",
             |m: &KDFPANILFOH| { &m.KEKFKKANACK },
             |m: &mut KDFPANILFOH| { &mut m.KEKFKKANACK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAOEJKABFEP",
-            |m: &KDFPANILFOH| { &m.PAOEJKABFEP },
-            |m: &mut KDFPANILFOH| { &mut m.PAOEJKABFEP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &KDFPANILFOH| { &m.motion },
+            |m: &mut KDFPANILFOH| { &mut m.motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CHCOPKAKBNO",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for KDFPANILFOH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                    self.PAOEJKABFEP.push(is.read_message()?);
                 },
                 32 => {
                     self.KEKFKKANACK = is.read_bool()?;
                 },
-                42 => {
-                    self.PAOEJKABFEP.push(is.read_message()?);
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                56 => {
+                64 => {
                     self.CHCOPKAKBNO = is.read_uint32()?;
                 },
                 tag => {
@@ -117,19 +117,19 @@ impl ::protobuf::Message for KDFPANILFOH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.motion.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.KEKFKKANACK != false {
-            my_size += 1 + 1;
-        }
         for value in &self.PAOEJKABFEP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.KEKFKKANACK != false {
+            my_size += 1 + 1;
+        }
+        if let Some(v) = self.motion.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.CHCOPKAKBNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CHCOPKAKBNO);
+            my_size += ::protobuf::rt::uint32_size(8, self.CHCOPKAKBNO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for KDFPANILFOH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.motion.as_ref() {
+        for v in &self.PAOEJKABFEP {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
+        };
         if self.KEKFKKANACK != false {
             os.write_bool(4, self.KEKFKKANACK)?;
         }
-        for v in &self.PAOEJKABFEP {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
         if self.CHCOPKAKBNO != 0 {
-            os.write_uint32(7, self.CHCOPKAKBNO)?;
+            os.write_uint32(8, self.CHCOPKAKBNO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for KDFPANILFOH {
     }
 
     fn clear(&mut self) {
-        self.motion.clear();
-        self.KEKFKKANACK = false;
         self.PAOEJKABFEP.clear();
+        self.KEKFKKANACK = false;
+        self.motion.clear();
         self.CHCOPKAKBNO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KDFPANILFOH {
         static instance: KDFPANILFOH = KDFPANILFOH {
-            motion: ::protobuf::MessageField::none(),
-            KEKFKKANACK: false,
             PAOEJKABFEP: ::std::vec::Vec::new(),
+            KEKFKKANACK: false,
+            motion: ::protobuf::MessageField::none(),
             CHCOPKAKBNO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,11 +204,11 @@ impl ::protobuf::reflect::ProtobufValue for KDFPANILFOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KDFPANILFOH.proto\x1a\x10MotionInfo.proto\x1a\x0cVector.proto\"\
-    \xa1\x01\n\x0bKDFPANILFOH\x12#\n\x06motion\x18\x01\x20\x01(\x0b2\x0b.Mot\
-    ionInfoR\x06motion\x12\x20\n\x0bKEKFKKANACK\x18\x04\x20\x01(\x08R\x0bKEK\
-    FKKANACK\x12)\n\x0bPAOEJKABFEP\x18\x05\x20\x03(\x0b2\x07.VectorR\x0bPAOE\
-    JKABFEP\x12\x20\n\x0bCHCOPKAKBNO\x18\x07\x20\x01(\rR\x0bCHCOPKAKBNOb\x06\
-    proto3\
+    \xa1\x01\n\x0bKDFPANILFOH\x12)\n\x0bPAOEJKABFEP\x18\x01\x20\x03(\x0b2\
+    \x07.VectorR\x0bPAOEJKABFEP\x12\x20\n\x0bKEKFKKANACK\x18\x04\x20\x01(\
+    \x08R\x0bKEKFKKANACK\x12#\n\x06motion\x18\x06\x20\x01(\x0b2\x0b.MotionIn\
+    foR\x06motion\x12\x20\n\x0bCHCOPKAKBNO\x18\x08\x20\x01(\rR\x0bCHCOPKAKBN\
+    Ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GMIMDEJMFCO {
     // message fields
-    // @@protoc_insertion_point(field:GMIMDEJMFCO.GMALFEABLNG)
-    pub GMALFEABLNG: ::std::vec::Vec<super::LGEFLGJIGIJ::LGEFLGJIGIJ>,
     // @@protoc_insertion_point(field:GMIMDEJMFCO.CCOIOAHMPDN)
     pub CCOIOAHMPDN: ::protobuf::MessageField<super::MGGBPKANFOA::MGGBPKANFOA>,
+    // @@protoc_insertion_point(field:GMIMDEJMFCO.GMALFEABLNG)
+    pub GMALFEABLNG: ::std::vec::Vec<super::LGEFLGJIGIJ::LGEFLGJIGIJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GMIMDEJMFCO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GMIMDEJMFCO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMALFEABLNG",
-            |m: &GMIMDEJMFCO| { &m.GMALFEABLNG },
-            |m: &mut GMIMDEJMFCO| { &mut m.GMALFEABLNG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MGGBPKANFOA::MGGBPKANFOA>(
             "CCOIOAHMPDN",
             |m: &GMIMDEJMFCO| { &m.CCOIOAHMPDN },
             |m: &mut GMIMDEJMFCO| { &mut m.CCOIOAHMPDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GMALFEABLNG",
+            |m: &GMIMDEJMFCO| { &m.GMALFEABLNG },
+            |m: &mut GMIMDEJMFCO| { &mut m.GMALFEABLNG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GMIMDEJMFCO>(
             "GMIMDEJMFCO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.GMALFEABLNG.push(is.read_message()?);
-                },
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCOIOAHMPDN)?;
+                },
+                74 => {
+                    self.GMALFEABLNG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GMALFEABLNG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.CCOIOAHMPDN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.GMALFEABLNG {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GMALFEABLNG {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if let Some(v) = self.CCOIOAHMPDN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
+        for v in &self.GMALFEABLNG {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GMIMDEJMFCO {
     }
 
     fn clear(&mut self) {
-        self.GMALFEABLNG.clear();
         self.CCOIOAHMPDN.clear();
+        self.GMALFEABLNG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GMIMDEJMFCO {
         static instance: GMIMDEJMFCO = GMIMDEJMFCO {
-            GMALFEABLNG: ::std::vec::Vec::new(),
             CCOIOAHMPDN: ::protobuf::MessageField::none(),
+            GMALFEABLNG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for GMIMDEJMFCO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GMIMDEJMFCO.proto\x1a\x11LGEFLGJIGIJ.proto\x1a\x11MGGBPKANFOA.prot\
-    o\"m\n\x0bGMIMDEJMFCO\x12.\n\x0bGMALFEABLNG\x18\n\x20\x03(\x0b2\x0c.LGEF\
-    LGJIGIJR\x0bGMALFEABLNG\x12.\n\x0bCCOIOAHMPDN\x18\x0c\x20\x01(\x0b2\x0c.\
-    MGGBPKANFOAR\x0bCCOIOAHMPDNb\x06proto3\
+    o\"m\n\x0bGMIMDEJMFCO\x12.\n\x0bCCOIOAHMPDN\x18\x05\x20\x01(\x0b2\x0c.MG\
+    GBPKANFOAR\x0bCCOIOAHMPDN\x12.\n\x0bGMALFEABLNG\x18\t\x20\x03(\x0b2\x0c.\
+    LGEFLGJIGIJR\x0bGMALFEABLNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

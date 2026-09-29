@@ -33,7 +33,7 @@ pub struct NIEGDAPHKGC {
     // @@protoc_insertion_point(field:NIEGDAPHKGC.KOJFHFAKKFO)
     pub KOJFHFAKKFO: u32,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.trait_effect_list)
-    pub trait_effect_list: ::std::vec::Vec<super::H_9610c635::H_9610c635>,
+    pub trait_effect_list: ::std::vec::Vec<super::H_f0728c95::H_f0728c95>,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.KOJMGCBLKKA)
     pub KOJMGCBLKKA: ::std::vec::Vec<super::MHFNFINKJKP::MHFNFINKJKP>,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.BPJKHDNBPOE)
@@ -239,10 +239,10 @@ impl ::protobuf::reflect::ProtobufValue for NIEGDAPHKGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NIEGDAPHKGC.proto\x1a\x10H_9610c635.proto\x1a\x11MHFNFINKJKP.proto\
+    \n\x11NIEGDAPHKGC.proto\x1a\x10H_f0728c95.proto\x1a\x11MHFNFINKJKP.proto\
     \"\xf7\x01\n\x0bNIEGDAPHKGC\x12\x19\n\x08trait_id\x18\x01\x20\x01(\rR\
     \x07traitId\x12\x20\n\x0bKOJFHFAKKFO\x18\x02\x20\x01(\rR\x0bKOJFHFAKKFO\
-    \x127\n\x11trait_effect_list\x18\x03\x20\x03(\x0b2\x0b.H_9610c635R\x0ftr\
+    \x127\n\x11trait_effect_list\x18\x03\x20\x03(\x0b2\x0b.H_f0728c95R\x0ftr\
     aitEffectList\x12.\n\x0bKOJMGCBLKKA\x18\x05\x20\x03(\x0b2\x0c.MHFNFINKJK\
     PR\x0bKOJMGCBLKKA\x12\x20\n\x0bBPJKHDNBPOE\x18\x06\x20\x01(\rR\x0bBPJKHD\
     NBPOE\x12\x20\n\x0bAFKKLDMAEDJ\x18\x07\x20\x01(\rR\x0bAFKKLDMAEDJb\x06pr\
@@ -264,7 +264,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_9610c635::file_descriptor().clone());
+            deps.push(super::H_f0728c95::file_descriptor().clone());
             deps.push(super::MHFNFINKJKP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NIEGDAPHKGC::generated_message_descriptor_data());

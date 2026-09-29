@@ -79,10 +79,10 @@ impl ::protobuf::Message for CEDCMIMKJHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.FEBKMOCOJLE = is.read_bool()?;
                 },
-                112 => {
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CEDCMIMKJHK {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CEDCMIMKJHK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FEBKMOCOJLE != false {
-            os.write_bool(6, self.FEBKMOCOJLE)?;
+            os.write_bool(4, self.FEBKMOCOJLE)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for CEDCMIMKJHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CEDCMIMKJHK.proto\"L\n\x0bCEDCMIMKJHK\x12\x20\n\x0bFEBKMOCOJLE\x18\
-    \x06\x20\x01(\x08R\x0bFEBKMOCOJLE\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\
+    \x04\x20\x01(\x08R\x0bFEBKMOCOJLE\x12\x1b\n\tavatar_id\x18\x07\x20\x01(\
     \rR\x08avatarIdb\x06proto3\
 ";
 

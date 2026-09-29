@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KMCCCOKIOFD {
     // message fields
-    // @@protoc_insertion_point(field:KMCCCOKIOFD.GDNEHLEOMOM)
-    pub GDNEHLEOMOM: u32,
-    // @@protoc_insertion_point(field:KMCCCOKIOFD.EGKLFMCHLCO)
-    pub EGKLFMCHLCO: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.JBGENFIKGGF)
     pub JBGENFIKGGF: u32,
+    // @@protoc_insertion_point(field:KMCCCOKIOFD.EGKLFMCHLCO)
+    pub EGKLFMCHLCO: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.buff_id)
     pub buff_id: u32,
     // @@protoc_insertion_point(field:KMCCCOKIOFD.FBNBPPHOGLI)
     pub FBNBPPHOGLI: u32,
+    // @@protoc_insertion_point(field:KMCCCOKIOFD.GDNEHLEOMOM)
+    pub GDNEHLEOMOM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KMCCCOKIOFD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,19 +58,14 @@ impl KMCCCOKIOFD {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDNEHLEOMOM",
-            |m: &KMCCCOKIOFD| { &m.GDNEHLEOMOM },
-            |m: &mut KMCCCOKIOFD| { &mut m.GDNEHLEOMOM },
+            "JBGENFIKGGF",
+            |m: &KMCCCOKIOFD| { &m.JBGENFIKGGF },
+            |m: &mut KMCCCOKIOFD| { &mut m.JBGENFIKGGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGKLFMCHLCO",
             |m: &KMCCCOKIOFD| { &m.EGKLFMCHLCO },
             |m: &mut KMCCCOKIOFD| { &mut m.EGKLFMCHLCO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBGENFIKGGF",
-            |m: &KMCCCOKIOFD| { &m.JBGENFIKGGF },
-            |m: &mut KMCCCOKIOFD| { &mut m.JBGENFIKGGF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -81,6 +76,11 @@ impl KMCCCOKIOFD {
             "FBNBPPHOGLI",
             |m: &KMCCCOKIOFD| { &m.FBNBPPHOGLI },
             |m: &mut KMCCCOKIOFD| { &mut m.FBNBPPHOGLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDNEHLEOMOM",
+            |m: &KMCCCOKIOFD| { &m.GDNEHLEOMOM },
+            |m: &mut KMCCCOKIOFD| { &mut m.GDNEHLEOMOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KMCCCOKIOFD>(
             "KMCCCOKIOFD",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.GDNEHLEOMOM = is.read_uint32()?;
-                },
-                40 => {
-                    self.EGKLFMCHLCO = is.read_uint32()?;
-                },
-                48 => {
+                24 => {
                     self.JBGENFIKGGF = is.read_uint32()?;
                 },
-                64 => {
-                    self.buff_id = is.read_uint32()?;
+                56 => {
+                    self.EGKLFMCHLCO = is.read_uint32()?;
                 },
                 72 => {
+                    self.buff_id = is.read_uint32()?;
+                },
+                80 => {
                     self.FBNBPPHOGLI = is.read_uint32()?;
+                },
+                120 => {
+                    self.GDNEHLEOMOM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GDNEHLEOMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GDNEHLEOMOM);
+        if self.JBGENFIKGGF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JBGENFIKGGF);
         }
         if self.EGKLFMCHLCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EGKLFMCHLCO);
-        }
-        if self.JBGENFIKGGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.JBGENFIKGGF);
+            my_size += ::protobuf::rt::uint32_size(7, self.EGKLFMCHLCO);
         }
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.buff_id);
         }
         if self.FBNBPPHOGLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.FBNBPPHOGLI);
+            my_size += ::protobuf::rt::uint32_size(10, self.FBNBPPHOGLI);
+        }
+        if self.GDNEHLEOMOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.GDNEHLEOMOM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GDNEHLEOMOM != 0 {
-            os.write_uint32(1, self.GDNEHLEOMOM)?;
+        if self.JBGENFIKGGF != 0 {
+            os.write_uint32(3, self.JBGENFIKGGF)?;
         }
         if self.EGKLFMCHLCO != 0 {
-            os.write_uint32(5, self.EGKLFMCHLCO)?;
-        }
-        if self.JBGENFIKGGF != 0 {
-            os.write_uint32(6, self.JBGENFIKGGF)?;
+            os.write_uint32(7, self.EGKLFMCHLCO)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(8, self.buff_id)?;
+            os.write_uint32(9, self.buff_id)?;
         }
         if self.FBNBPPHOGLI != 0 {
-            os.write_uint32(9, self.FBNBPPHOGLI)?;
+            os.write_uint32(10, self.FBNBPPHOGLI)?;
+        }
+        if self.GDNEHLEOMOM != 0 {
+            os.write_uint32(15, self.GDNEHLEOMOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for KMCCCOKIOFD {
     }
 
     fn clear(&mut self) {
-        self.GDNEHLEOMOM = 0;
-        self.EGKLFMCHLCO = 0;
         self.JBGENFIKGGF = 0;
+        self.EGKLFMCHLCO = 0;
         self.buff_id = 0;
         self.FBNBPPHOGLI = 0;
+        self.GDNEHLEOMOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KMCCCOKIOFD {
         static instance: KMCCCOKIOFD = KMCCCOKIOFD {
-            GDNEHLEOMOM: 0,
-            EGKLFMCHLCO: 0,
             JBGENFIKGGF: 0,
+            EGKLFMCHLCO: 0,
             buff_id: 0,
             FBNBPPHOGLI: 0,
+            GDNEHLEOMOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for KMCCCOKIOFD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KMCCCOKIOFD.proto\"\xae\x01\n\x0bKMCCCOKIOFD\x12\x20\n\x0bGDNEHLEO\
-    MOM\x18\x01\x20\x01(\rR\x0bGDNEHLEOMOM\x12\x20\n\x0bEGKLFMCHLCO\x18\x05\
-    \x20\x01(\rR\x0bEGKLFMCHLCO\x12\x20\n\x0bJBGENFIKGGF\x18\x06\x20\x01(\rR\
-    \x0bJBGENFIKGGF\x12\x17\n\x07buff_id\x18\x08\x20\x01(\rR\x06buffId\x12\
-    \x20\n\x0bFBNBPPHOGLI\x18\t\x20\x01(\rR\x0bFBNBPPHOGLIb\x06proto3\
+    \n\x11KMCCCOKIOFD.proto\"\xae\x01\n\x0bKMCCCOKIOFD\x12\x20\n\x0bJBGENFIK\
+    GGF\x18\x03\x20\x01(\rR\x0bJBGENFIKGGF\x12\x20\n\x0bEGKLFMCHLCO\x18\x07\
+    \x20\x01(\rR\x0bEGKLFMCHLCO\x12\x17\n\x07buff_id\x18\t\x20\x01(\rR\x06bu\
+    ffId\x12\x20\n\x0bFBNBPPHOGLI\x18\n\x20\x01(\rR\x0bFBNBPPHOGLI\x12\x20\n\
+    \x0bGDNEHLEOMOM\x18\x0f\x20\x01(\rR\x0bGDNEHLEOMOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

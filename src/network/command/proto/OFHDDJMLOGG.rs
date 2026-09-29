@@ -30,7 +30,7 @@ pub enum OFHDDJMLOGG {
     // @@protoc_insertion_point(enum_value:OFHDDJMLOGG.OFHDDJMLOGG_LIDGOKIFPOJ)
     OFHDDJMLOGG_LIDGOKIFPOJ = 0,
     // @@protoc_insertion_point(enum_value:OFHDDJMLOGG.OFHDDJMLOGG_LMDPMECFOGM)
-    OFHDDJMLOGG_LMDPMECFOGM = 632,
+    OFHDDJMLOGG_LMDPMECFOGM = 634,
 }
 
 impl ::protobuf::Enum for OFHDDJMLOGG {
@@ -43,7 +43,7 @@ impl ::protobuf::Enum for OFHDDJMLOGG {
     fn from_i32(value: i32) -> ::std::option::Option<OFHDDJMLOGG> {
         match value {
             0 => ::std::option::Option::Some(OFHDDJMLOGG::OFHDDJMLOGG_LIDGOKIFPOJ),
-            632 => ::std::option::Option::Some(OFHDDJMLOGG::OFHDDJMLOGG_LMDPMECFOGM),
+            634 => ::std::option::Option::Some(OFHDDJMLOGG::OFHDDJMLOGG_LMDPMECFOGM),
             _ => ::std::option::Option::None
         }
     }
@@ -91,7 +91,7 @@ impl OFHDDJMLOGG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFHDDJMLOGG.proto*H\n\x0bOFHDDJMLOGG\x12\x1b\n\x17OFHDDJMLOGG_LIDG\
-    OKIFPOJ\x10\0\x12\x1c\n\x17OFHDDJMLOGG_LMDPMECFOGM\x10\xf8\x04b\x06proto\
+    OKIFPOJ\x10\0\x12\x1c\n\x17OFHDDJMLOGG_LMDPMECFOGM\x10\xfa\x04b\x06proto\
     3\
 ";
 

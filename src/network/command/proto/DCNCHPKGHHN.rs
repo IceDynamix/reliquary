@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DCNCHPKGHHN {
     // message fields
-    // @@protoc_insertion_point(field:DCNCHPKGHHN.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:DCNCHPKGHHN.BJPFPIACAKB)
-    pub BJPFPIACAKB: u32,
     // @@protoc_insertion_point(field:DCNCHPKGHHN.GNAMNBDIEKG)
     pub GNAMNBDIEKG: u32,
     // @@protoc_insertion_point(field:DCNCHPKGHHN.IPMHDPKNJLI)
     pub IPMHDPKNJLI: u32,
+    // @@protoc_insertion_point(field:DCNCHPKGHHN.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:DCNCHPKGHHN.BJPFPIACAKB)
+    pub BJPFPIACAKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DCNCHPKGHHN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl DCNCHPKGHHN {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DCNCHPKGHHN| { &m.retcode },
-            |m: &mut DCNCHPKGHHN| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJPFPIACAKB",
-            |m: &DCNCHPKGHHN| { &m.BJPFPIACAKB },
-            |m: &mut DCNCHPKGHHN| { &mut m.BJPFPIACAKB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNAMNBDIEKG",
             |m: &DCNCHPKGHHN| { &m.GNAMNBDIEKG },
             |m: &mut DCNCHPKGHHN| { &mut m.GNAMNBDIEKG },
@@ -74,6 +64,16 @@ impl DCNCHPKGHHN {
             "IPMHDPKNJLI",
             |m: &DCNCHPKGHHN| { &m.IPMHDPKNJLI },
             |m: &mut DCNCHPKGHHN| { &mut m.IPMHDPKNJLI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &DCNCHPKGHHN| { &m.retcode },
+            |m: &mut DCNCHPKGHHN| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BJPFPIACAKB",
+            |m: &DCNCHPKGHHN| { &m.BJPFPIACAKB },
+            |m: &mut DCNCHPKGHHN| { &mut m.BJPFPIACAKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DCNCHPKGHHN>(
             "DCNCHPKGHHN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for DCNCHPKGHHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                16 => {
-                    self.BJPFPIACAKB = is.read_uint32()?;
-                },
-                24 => {
+                56 => {
                     self.GNAMNBDIEKG = is.read_uint32()?;
                 },
-                64 => {
+                80 => {
                     self.IPMHDPKNJLI = is.read_uint32()?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                104 => {
+                    self.BJPFPIACAKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for DCNCHPKGHHN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if self.BJPFPIACAKB != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BJPFPIACAKB);
-        }
         if self.GNAMNBDIEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GNAMNBDIEKG);
+            my_size += ::protobuf::rt::uint32_size(7, self.GNAMNBDIEKG);
         }
         if self.IPMHDPKNJLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IPMHDPKNJLI);
+            my_size += ::protobuf::rt::uint32_size(10, self.IPMHDPKNJLI);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.BJPFPIACAKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.BJPFPIACAKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for DCNCHPKGHHN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
-        if self.BJPFPIACAKB != 0 {
-            os.write_uint32(2, self.BJPFPIACAKB)?;
-        }
         if self.GNAMNBDIEKG != 0 {
-            os.write_uint32(3, self.GNAMNBDIEKG)?;
+            os.write_uint32(7, self.GNAMNBDIEKG)?;
         }
         if self.IPMHDPKNJLI != 0 {
-            os.write_uint32(8, self.IPMHDPKNJLI)?;
+            os.write_uint32(10, self.IPMHDPKNJLI)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.BJPFPIACAKB != 0 {
+            os.write_uint32(13, self.BJPFPIACAKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for DCNCHPKGHHN {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.BJPFPIACAKB = 0;
         self.GNAMNBDIEKG = 0;
         self.IPMHDPKNJLI = 0;
+        self.retcode = 0;
+        self.BJPFPIACAKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DCNCHPKGHHN {
         static instance: DCNCHPKGHHN = DCNCHPKGHHN {
-            retcode: 0,
-            BJPFPIACAKB: 0,
             GNAMNBDIEKG: 0,
             IPMHDPKNJLI: 0,
+            retcode: 0,
+            BJPFPIACAKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DCNCHPKGHHN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DCNCHPKGHHN.proto\"\x8d\x01\n\x0bDCNCHPKGHHN\x12\x18\n\x07retcode\
-    \x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bBJPFPIACAKB\x18\x02\x20\x01\
-    (\rR\x0bBJPFPIACAKB\x12\x20\n\x0bGNAMNBDIEKG\x18\x03\x20\x01(\rR\x0bGNAM\
-    NBDIEKG\x12\x20\n\x0bIPMHDPKNJLI\x18\x08\x20\x01(\rR\x0bIPMHDPKNJLIb\x06\
-    proto3\
+    \n\x11DCNCHPKGHHN.proto\"\x8d\x01\n\x0bDCNCHPKGHHN\x12\x20\n\x0bGNAMNBDI\
+    EKG\x18\x07\x20\x01(\rR\x0bGNAMNBDIEKG\x12\x20\n\x0bIPMHDPKNJLI\x18\n\
+    \x20\x01(\rR\x0bIPMHDPKNJLI\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bBJPFPIACAKB\x18\r\x20\x01(\rR\x0bBJPFPIACAKBb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PCGMJHKDCOG {
     // message fields
-    // @@protoc_insertion_point(field:PCGMJHKDCOG.IHJJKABIEPC)
-    pub IHJJKABIEPC: ::std::vec::Vec<super::KVP::KVP>,
-    // @@protoc_insertion_point(field:PCGMJHKDCOG.H_7e8b12bb)
-    pub H_7e8b12bb: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
+    // @@protoc_insertion_point(field:PCGMJHKDCOG.H_76492770)
+    pub H_76492770: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
     // @@protoc_insertion_point(field:PCGMJHKDCOG.KIDBGNPHGBI)
     pub KIDBGNPHGBI: ::std::vec::Vec<super::CBNNMKNBLDI::CBNNMKNBLDI>,
+    // @@protoc_insertion_point(field:PCGMJHKDCOG.IHJJKABIEPC)
+    pub IHJJKABIEPC: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:PCGMJHKDCOG.OILPEBPLDBG)
     pub OILPEBPLDBG: ::std::vec::Vec<u32>,
     // special fields
@@ -56,19 +56,19 @@ impl PCGMJHKDCOG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IHJJKABIEPC",
-            |m: &PCGMJHKDCOG| { &m.IHJJKABIEPC },
-            |m: &mut PCGMJHKDCOG| { &mut m.IHJJKABIEPC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_7e8b12bb",
-            |m: &PCGMJHKDCOG| { &m.H_7e8b12bb },
-            |m: &mut PCGMJHKDCOG| { &mut m.H_7e8b12bb },
+            "H_76492770",
+            |m: &PCGMJHKDCOG| { &m.H_76492770 },
+            |m: &mut PCGMJHKDCOG| { &mut m.H_76492770 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KIDBGNPHGBI",
             |m: &PCGMJHKDCOG| { &m.KIDBGNPHGBI },
             |m: &mut PCGMJHKDCOG| { &mut m.KIDBGNPHGBI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IHJJKABIEPC",
+            |m: &PCGMJHKDCOG| { &m.IHJJKABIEPC },
+            |m: &mut PCGMJHKDCOG| { &mut m.IHJJKABIEPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OILPEBPLDBG",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.IHJJKABIEPC.push(is.read_message()?);
+                58 => {
+                    self.H_76492770.push(is.read_message()?);
                 },
-                18 => {
-                    self.H_7e8b12bb.push(is.read_message()?);
-                },
-                42 => {
+                98 => {
                     self.KIDBGNPHGBI.push(is.read_message()?);
                 },
-                66 => {
+                106 => {
+                    self.IHJJKABIEPC.push(is.read_message()?);
+                },
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.OILPEBPLDBG)?;
                 },
-                64 => {
+                120 => {
                     self.OILPEBPLDBG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -120,11 +120,7 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IHJJKABIEPC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.H_7e8b12bb {
+        for value in &self.H_76492770 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -132,23 +128,27 @@ impl ::protobuf::Message for PCGMJHKDCOG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.OILPEBPLDBG);
+        for value in &self.IHJJKABIEPC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OILPEBPLDBG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IHJJKABIEPC {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        for v in &self.H_7e8b12bb {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.H_76492770 {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         for v in &self.KIDBGNPHGBI {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        os.write_repeated_packed_uint32(8, &self.OILPEBPLDBG)?;
+        for v in &self.IHJJKABIEPC {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        os.write_repeated_packed_uint32(15, &self.OILPEBPLDBG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,18 +166,18 @@ impl ::protobuf::Message for PCGMJHKDCOG {
     }
 
     fn clear(&mut self) {
-        self.IHJJKABIEPC.clear();
-        self.H_7e8b12bb.clear();
+        self.H_76492770.clear();
         self.KIDBGNPHGBI.clear();
+        self.IHJJKABIEPC.clear();
         self.OILPEBPLDBG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PCGMJHKDCOG {
         static instance: PCGMJHKDCOG = PCGMJHKDCOG {
-            IHJJKABIEPC: ::std::vec::Vec::new(),
-            H_7e8b12bb: ::std::vec::Vec::new(),
+            H_76492770: ::std::vec::Vec::new(),
             KIDBGNPHGBI: ::std::vec::Vec::new(),
+            IHJJKABIEPC: ::std::vec::Vec::new(),
             OILPEBPLDBG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for PCGMJHKDCOG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PCGMJHKDCOG.proto\x1a\x11CBNNMKNBLDI.proto\x1a\tKVP.proto\"\xb4\
-    \x01\n\x0bPCGMJHKDCOG\x12&\n\x0bIHJJKABIEPC\x18\x01\x20\x03(\x0b2\x04.KV\
-    PR\x0bIHJJKABIEPC\x12+\n\nH_7e8b12bb\x18\x02\x20\x03(\x0b2\x0c.CBNNMKNBL\
-    DIR\tH7e8b12bb\x12.\n\x0bKIDBGNPHGBI\x18\x05\x20\x03(\x0b2\x0c.CBNNMKNBL\
-    DIR\x0bKIDBGNPHGBI\x12\x20\n\x0bOILPEBPLDBG\x18\x08\x20\x03(\rR\x0bOILPE\
-    BPLDBGb\x06proto3\
+    \n\x11PCGMJHKDCOG.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11CBNNMKNBLDI.prot\
+    o\"\xbc\x01\n\x0bPCGMJHKDCOG\x12+\n\nH_76492770\x18\x07\x20\x03(\x0b2\
+    \x0c.CBNNMKNBLDIR\tH76492770\x12.\n\x0bKIDBGNPHGBI\x18\x0c\x20\x03(\x0b2\
+    \x0c.CBNNMKNBLDIR\x0bKIDBGNPHGBI\x12.\n\x0bIHJJKABIEPC\x18\r\x20\x03(\
+    \x0b2\x0c.APAMFCKFHLLR\x0bIHJJKABIEPC\x12\x20\n\x0bOILPEBPLDBG\x18\x0f\
+    \x20\x03(\rR\x0bOILPEBPLDBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             deps.push(super::CBNNMKNBLDI::file_descriptor().clone());
-            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PCGMJHKDCOG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

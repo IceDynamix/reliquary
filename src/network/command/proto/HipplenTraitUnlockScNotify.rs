@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HipplenTraitUnlockScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HipplenTraitUnlockScNotify.H_ee2da162)
-    pub H_ee2da162: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HipplenTraitUnlockScNotify.H_9f60ad73)
+    pub H_9f60ad73: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:HipplenTraitUnlockScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl HipplenTraitUnlockScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_ee2da162",
-            |m: &HipplenTraitUnlockScNotify| { &m.H_ee2da162 },
-            |m: &mut HipplenTraitUnlockScNotify| { &mut m.H_ee2da162 },
+            "H_9f60ad73",
+            |m: &HipplenTraitUnlockScNotify| { &m.H_9f60ad73 },
+            |m: &mut HipplenTraitUnlockScNotify| { &mut m.H_9f60ad73 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HipplenTraitUnlockScNotify>(
             "HipplenTraitUnlockScNotify",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for HipplenTraitUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_ee2da162)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_9f60ad73)?;
                 },
-                120 => {
-                    self.H_ee2da162.push(is.read_uint32()?);
+                24 => {
+                    self.H_9f60ad73.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for HipplenTraitUnlockScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.H_ee2da162);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.H_9f60ad73);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.H_ee2da162)?;
+        os.write_repeated_packed_uint32(3, &self.H_9f60ad73)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for HipplenTraitUnlockScNotify {
     }
 
     fn clear(&mut self) {
-        self.H_ee2da162.clear();
+        self.H_9f60ad73.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HipplenTraitUnlockScNotify {
         static instance: HipplenTraitUnlockScNotify = HipplenTraitUnlockScNotify {
-            H_ee2da162: ::std::vec::Vec::new(),
+            H_9f60ad73: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for HipplenTraitUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20HipplenTraitUnlockScNotify.proto\";\n\x1aHipplenTraitUnlockScNotif\
-    y\x12\x1d\n\nH_ee2da162\x18\x0f\x20\x03(\rR\tHEe2da162b\x06proto3\
+    y\x12\x1d\n\nH_9f60ad73\x18\x03\x20\x03(\rR\tH9f60ad73b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct GetFiveDimMoneyScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFiveDimMoneyScRsp.GJHKPIGEIIO)
     pub GJHKPIGEIIO: u32,
-    // @@protoc_insertion_point(field:GetFiveDimMoneyScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetFiveDimMoneyScRsp.JIDCDLCBKHG)
     pub JIDCDLCBKHG: u32,
+    // @@protoc_insertion_point(field:GetFiveDimMoneyScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFiveDimMoneyScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GetFiveDimMoneyScRsp {
             |m: &mut GetFiveDimMoneyScRsp| { &mut m.GJHKPIGEIIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetFiveDimMoneyScRsp| { &m.retcode },
-            |m: &mut GetFiveDimMoneyScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JIDCDLCBKHG",
             |m: &GetFiveDimMoneyScRsp| { &m.JIDCDLCBKHG },
             |m: &mut GetFiveDimMoneyScRsp| { &mut m.JIDCDLCBKHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetFiveDimMoneyScRsp| { &m.retcode },
+            |m: &mut GetFiveDimMoneyScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFiveDimMoneyScRsp>(
             "GetFiveDimMoneyScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetFiveDimMoneyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
                     self.GJHKPIGEIIO = is.read_uint32()?;
                 },
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
+                56 => {
                     self.JIDCDLCBKHG = is.read_uint32()?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GetFiveDimMoneyScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GJHKPIGEIIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.GJHKPIGEIIO);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.GJHKPIGEIIO);
         }
         if self.JIDCDLCBKHG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JIDCDLCBKHG);
+            my_size += ::protobuf::rt::uint32_size(7, self.JIDCDLCBKHG);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GetFiveDimMoneyScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GJHKPIGEIIO != 0 {
-            os.write_uint32(8, self.GJHKPIGEIIO)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.GJHKPIGEIIO)?;
         }
         if self.JIDCDLCBKHG != 0 {
-            os.write_uint32(13, self.JIDCDLCBKHG)?;
+            os.write_uint32(7, self.JIDCDLCBKHG)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetFiveDimMoneyScRsp {
 
     fn clear(&mut self) {
         self.GJHKPIGEIIO = 0;
-        self.retcode = 0;
         self.JIDCDLCBKHG = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFiveDimMoneyScRsp {
         static instance: GetFiveDimMoneyScRsp = GetFiveDimMoneyScRsp {
             GJHKPIGEIIO: 0,
-            retcode: 0,
             JIDCDLCBKHG: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFiveDimMoneyScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGetFiveDimMoneyScRsp.proto\"t\n\x14GetFiveDimMoneyScRsp\x12\x20\n\
-    \x0bGJHKPIGEIIO\x18\x08\x20\x01(\rR\x0bGJHKPIGEIIO\x12\x18\n\x07retcode\
-    \x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bJIDCDLCBKHG\x18\r\x20\x01(\
-    \rR\x0bJIDCDLCBKHGb\x06proto3\
+    \x0bGJHKPIGEIIO\x18\x04\x20\x01(\rR\x0bGJHKPIGEIIO\x12\x20\n\x0bJIDCDLCB\
+    KHG\x18\x07\x20\x01(\rR\x0bJIDCDLCBKHG\x12\x18\n\x07retcode\x18\x0e\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct PNLLCBKLBLE {
     // message fields
     // @@protoc_insertion_point(field:PNLLCBKLBLE.LNLOHDJIFPK)
     pub LNLOHDJIFPK: u32,
-    // @@protoc_insertion_point(field:PNLLCBKLBLE.LONFKFCFDND)
-    pub LONFKFCFDND: ::protobuf::MessageField<super::IEDLKIGJLEM::IEDLKIGJLEM>,
     // @@protoc_insertion_point(field:PNLLCBKLBLE.DOFBGHGHDJA)
     pub DOFBGHGHDJA: bool,
+    // @@protoc_insertion_point(field:PNLLCBKLBLE.LONFKFCFDND)
+    pub LONFKFCFDND: ::protobuf::MessageField<super::IEDLKIGJLEM::IEDLKIGJLEM>,
     // special fields
     // @@protoc_insertion_point(special_field:PNLLCBKLBLE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PNLLCBKLBLE {
             |m: &PNLLCBKLBLE| { &m.LNLOHDJIFPK },
             |m: &mut PNLLCBKLBLE| { &mut m.LNLOHDJIFPK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IEDLKIGJLEM::IEDLKIGJLEM>(
-            "LONFKFCFDND",
-            |m: &PNLLCBKLBLE| { &m.LONFKFCFDND },
-            |m: &mut PNLLCBKLBLE| { &mut m.LONFKFCFDND },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOFBGHGHDJA",
             |m: &PNLLCBKLBLE| { &m.DOFBGHGHDJA },
             |m: &mut PNLLCBKLBLE| { &mut m.DOFBGHGHDJA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IEDLKIGJLEM::IEDLKIGJLEM>(
+            "LONFKFCFDND",
+            |m: &PNLLCBKLBLE| { &m.LONFKFCFDND },
+            |m: &mut PNLLCBKLBLE| { &mut m.LONFKFCFDND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PNLLCBKLBLE>(
             "PNLLCBKLBLE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PNLLCBKLBLE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.LNLOHDJIFPK = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LONFKFCFDND)?;
-                },
-                104 => {
+                96 => {
                     self.DOFBGHGHDJA = is.read_bool()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LONFKFCFDND)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PNLLCBKLBLE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LNLOHDJIFPK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LNLOHDJIFPK);
+            my_size += ::protobuf::rt::uint32_size(1, self.LNLOHDJIFPK);
+        }
+        if self.DOFBGHGHDJA != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.LONFKFCFDND.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DOFBGHGHDJA != false {
-            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PNLLCBKLBLE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LNLOHDJIFPK != 0 {
-            os.write_uint32(4, self.LNLOHDJIFPK)?;
-        }
-        if let Some(v) = self.LONFKFCFDND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            os.write_uint32(1, self.LNLOHDJIFPK)?;
         }
         if self.DOFBGHGHDJA != false {
-            os.write_bool(13, self.DOFBGHGHDJA)?;
+            os.write_bool(12, self.DOFBGHGHDJA)?;
+        }
+        if let Some(v) = self.LONFKFCFDND.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for PNLLCBKLBLE {
 
     fn clear(&mut self) {
         self.LNLOHDJIFPK = 0;
-        self.LONFKFCFDND.clear();
         self.DOFBGHGHDJA = false;
+        self.LONFKFCFDND.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PNLLCBKLBLE {
         static instance: PNLLCBKLBLE = PNLLCBKLBLE {
             LNLOHDJIFPK: 0,
-            LONFKFCFDND: ::protobuf::MessageField::none(),
             DOFBGHGHDJA: false,
+            LONFKFCFDND: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PNLLCBKLBLE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PNLLCBKLBLE.proto\x1a\x11IEDLKIGJLEM.proto\"\x81\x01\n\x0bPNLLCBKL\
-    BLE\x12\x20\n\x0bLNLOHDJIFPK\x18\x04\x20\x01(\rR\x0bLNLOHDJIFPK\x12.\n\
-    \x0bLONFKFCFDND\x18\x06\x20\x01(\x0b2\x0c.IEDLKIGJLEMR\x0bLONFKFCFDND\
-    \x12\x20\n\x0bDOFBGHGHDJA\x18\r\x20\x01(\x08R\x0bDOFBGHGHDJAb\x06proto3\
+    BLE\x12\x20\n\x0bLNLOHDJIFPK\x18\x01\x20\x01(\rR\x0bLNLOHDJIFPK\x12\x20\
+    \n\x0bDOFBGHGHDJA\x18\x0c\x20\x01(\x08R\x0bDOFBGHGHDJA\x12.\n\x0bLONFKFC\
+    FDND\x18\x0e\x20\x01(\x0b2\x0c.IEDLKIGJLEMR\x0bLONFKFCFDNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

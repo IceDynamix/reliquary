@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainCakeCatchSearchScRsp {
     // message fields
+    // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.CEMFBJPOLNP)
+    pub CEMFBJPOLNP: ::std::vec::Vec<super::PJFIMFJPMCN::PJFIMFJPMCN>,
     // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.PCPDHEIEJFO)
     pub PCPDHEIEJFO: u32,
+    // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.NIELDCLPOLA)
     pub NIELDCLPOLA: ::protobuf::MessageField<super::JOFHMCJPBCE::JOFHMCJPBCE>,
     // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.GINENNKGDMG)
     pub GINENNKGDMG: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.CEMFBJPOLNP)
-    pub CEMFBJPOLNP: ::std::vec::Vec<super::PJFIMFJPMCN::PJFIMFJPMCN>,
-    // @@protoc_insertion_point(field:TrainCakeCatchSearchScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainCakeCatchSearchScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,10 +57,20 @@ impl TrainCakeCatchSearchScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CEMFBJPOLNP",
+            |m: &TrainCakeCatchSearchScRsp| { &m.CEMFBJPOLNP },
+            |m: &mut TrainCakeCatchSearchScRsp| { &mut m.CEMFBJPOLNP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PCPDHEIEJFO",
             |m: &TrainCakeCatchSearchScRsp| { &m.PCPDHEIEJFO },
             |m: &mut TrainCakeCatchSearchScRsp| { &mut m.PCPDHEIEJFO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TrainCakeCatchSearchScRsp| { &m.retcode },
+            |m: &mut TrainCakeCatchSearchScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JOFHMCJPBCE::JOFHMCJPBCE>(
             "NIELDCLPOLA",
@@ -71,16 +81,6 @@ impl TrainCakeCatchSearchScRsp {
             "GINENNKGDMG",
             |m: &TrainCakeCatchSearchScRsp| { &m.GINENNKGDMG },
             |m: &mut TrainCakeCatchSearchScRsp| { &mut m.GINENNKGDMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEMFBJPOLNP",
-            |m: &TrainCakeCatchSearchScRsp| { &m.CEMFBJPOLNP },
-            |m: &mut TrainCakeCatchSearchScRsp| { &mut m.CEMFBJPOLNP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TrainCakeCatchSearchScRsp| { &m.retcode },
-            |m: &mut TrainCakeCatchSearchScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainCakeCatchSearchScRsp>(
             "TrainCakeCatchSearchScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for TrainCakeCatchSearchScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.PCPDHEIEJFO = is.read_uint32()?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIELDCLPOLA)?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GINENNKGDMG)?;
-                },
-                40 => {
-                    self.GINENNKGDMG.push(is.read_uint32()?);
-                },
-                66 => {
+                10 => {
                     self.CEMFBJPOLNP.push(is.read_message()?);
                 },
-                96 => {
+                16 => {
+                    self.PCPDHEIEJFO = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NIELDCLPOLA)?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GINENNKGDMG)?;
+                },
+                120 => {
+                    self.GINENNKGDMG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,40 +130,40 @@ impl ::protobuf::Message for TrainCakeCatchSearchScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.CEMFBJPOLNP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.PCPDHEIEJFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PCPDHEIEJFO);
+            my_size += ::protobuf::rt::uint32_size(2, self.PCPDHEIEJFO);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if let Some(v) = self.NIELDCLPOLA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GINENNKGDMG);
-        for value in &self.CEMFBJPOLNP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.GINENNKGDMG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.CEMFBJPOLNP {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         if self.PCPDHEIEJFO != 0 {
-            os.write_uint32(1, self.PCPDHEIEJFO)?;
+            os.write_uint32(2, self.PCPDHEIEJFO)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.NIELDCLPOLA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        os.write_repeated_packed_uint32(5, &self.GINENNKGDMG)?;
-        for v in &self.CEMFBJPOLNP {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
+        os.write_repeated_packed_uint32(15, &self.GINENNKGDMG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for TrainCakeCatchSearchScRsp {
     }
 
     fn clear(&mut self) {
+        self.CEMFBJPOLNP.clear();
         self.PCPDHEIEJFO = 0;
+        self.retcode = 0;
         self.NIELDCLPOLA.clear();
         self.GINENNKGDMG.clear();
-        self.CEMFBJPOLNP.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainCakeCatchSearchScRsp {
         static instance: TrainCakeCatchSearchScRsp = TrainCakeCatchSearchScRsp {
+            CEMFBJPOLNP: ::std::vec::Vec::new(),
             PCPDHEIEJFO: 0,
+            retcode: 0,
             NIELDCLPOLA: ::protobuf::MessageField::none(),
             GINENNKGDMG: ::std::vec::Vec::new(),
-            CEMFBJPOLNP: ::std::vec::Vec::new(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for TrainCakeCatchSearchScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fTrainCakeCatchSearchScRsp.proto\x1a\x11JOFHMCJPBCE.proto\x1a\x11PJ\
-    FIMFJPMCN.proto\"\xd9\x01\n\x19TrainCakeCatchSearchScRsp\x12\x20\n\x0bPC\
-    PDHEIEJFO\x18\x01\x20\x01(\rR\x0bPCPDHEIEJFO\x12.\n\x0bNIELDCLPOLA\x18\
-    \x02\x20\x01(\x0b2\x0c.JOFHMCJPBCER\x0bNIELDCLPOLA\x12\x20\n\x0bGINENNKG\
-    DMG\x18\x05\x20\x03(\rR\x0bGINENNKGDMG\x12.\n\x0bCEMFBJPOLNP\x18\x08\x20\
-    \x03(\x0b2\x0c.PJFIMFJPMCNR\x0bCEMFBJPOLNP\x12\x18\n\x07retcode\x18\x0c\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    FIMFJPMCN.proto\"\xd9\x01\n\x19TrainCakeCatchSearchScRsp\x12.\n\x0bCEMFB\
+    JPOLNP\x18\x01\x20\x03(\x0b2\x0c.PJFIMFJPMCNR\x0bCEMFBJPOLNP\x12\x20\n\
+    \x0bPCPDHEIEJFO\x18\x02\x20\x01(\rR\x0bPCPDHEIEJFO\x12\x18\n\x07retcode\
+    \x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bNIELDCLPOLA\x18\x07\x20\x01(\
+    \x0b2\x0c.JOFHMCJPBCER\x0bNIELDCLPOLA\x12\x20\n\x0bGINENNKGDMG\x18\x0f\
+    \x20\x03(\rR\x0bGINENNKGDMGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

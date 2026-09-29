@@ -511,8 +511,106 @@ impl ChatData {
         }
     }
 
+    // .PJLMOOPKHEM MHGBFFHGFKP = 111;
+
+    pub fn MHGBFFHGFKP(&self) -> &super::PJLMOOPKHEM::PJLMOOPKHEM {
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(ref v)) => v,
+            _ => <super::PJLMOOPKHEM::PJLMOOPKHEM as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MHGBFFHGFKP(&mut self) {
+        self.extend_type = ::std::option::Option::None;
+    }
+
+    pub fn has_MHGBFFHGFKP(&self) -> bool {
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MHGBFFHGFKP(&mut self, v: super::PJLMOOPKHEM::PJLMOOPKHEM) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MHGBFFHGFKP(&mut self) -> &mut super::PJLMOOPKHEM::PJLMOOPKHEM {
+        if let ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(_)) = self.extend_type {
+        } else {
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(super::PJLMOOPKHEM::PJLMOOPKHEM::new()));
+        }
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MHGBFFHGFKP(&mut self) -> super::PJLMOOPKHEM::PJLMOOPKHEM {
+        if self.has_MHGBFFHGFKP() {
+            match self.extend_type.take() {
+                ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PJLMOOPKHEM::PJLMOOPKHEM::new()
+        }
+    }
+
+    // .LJMGDJBLLKC BALFEMJCMPK = 112;
+
+    pub fn BALFEMJCMPK(&self) -> &super::LJMGDJBLLKC::LJMGDJBLLKC {
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(ref v)) => v,
+            _ => <super::LJMGDJBLLKC::LJMGDJBLLKC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BALFEMJCMPK(&mut self) {
+        self.extend_type = ::std::option::Option::None;
+    }
+
+    pub fn has_BALFEMJCMPK(&self) -> bool {
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BALFEMJCMPK(&mut self, v: super::LJMGDJBLLKC::LJMGDJBLLKC) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BALFEMJCMPK(&mut self) -> &mut super::LJMGDJBLLKC::LJMGDJBLLKC {
+        if let ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(_)) = self.extend_type {
+        } else {
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(super::LJMGDJBLLKC::LJMGDJBLLKC::new()));
+        }
+        match self.extend_type {
+            ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BALFEMJCMPK(&mut self) -> super::LJMGDJBLLKC::LJMGDJBLLKC {
+        if self.has_BALFEMJCMPK() {
+            match self.extend_type.take() {
+                ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LJMGDJBLLKC::LJMGDJBLLKC::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(10);
+        let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ECCKHOLLPPC::ECCKHOLLPPC>(
             "NPBOINAPJJE",
@@ -582,6 +680,20 @@ impl ChatData {
             ChatData::mut_HJADNIAAMGJ,
             ChatData::set_HJADNIAAMGJ,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PJLMOOPKHEM::PJLMOOPKHEM>(
+            "MHGBFFHGFKP",
+            ChatData::has_MHGBFFHGFKP,
+            ChatData::MHGBFFHGFKP,
+            ChatData::mut_MHGBFFHGFKP,
+            ChatData::set_MHGBFFHGFKP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJMGDJBLLKC::LJMGDJBLLKC>(
+            "BALFEMJCMPK",
+            ChatData::has_BALFEMJCMPK,
+            ChatData::BALFEMJCMPK,
+            ChatData::mut_BALFEMJCMPK,
+            ChatData::set_BALFEMJCMPK,
+        ));
         oneofs.push(chat_data::Extend_type::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChatData>(
             "ChatData",
@@ -630,6 +742,12 @@ impl ::protobuf::Message for ChatData {
                 },
                 882 => {
                     self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(is.read_message()?));
+                },
+                890 => {
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MHGBFFHGFKP(is.read_message()?));
+                },
+                898 => {
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BALFEMJCMPK(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -683,6 +801,14 @@ impl ::protobuf::Message for ChatData {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &chat_data::Extend_type::MHGBFFHGFKP(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &chat_data::Extend_type::BALFEMJCMPK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -723,6 +849,12 @@ impl ::protobuf::Message for ChatData {
                 &chat_data::Extend_type::HJADNIAAMGJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(110, v, os)?;
                 },
+                &chat_data::Extend_type::MHGBFFHGFKP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(111, v, os)?;
+                },
+                &chat_data::Extend_type::BALFEMJCMPK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(112, v, os)?;
+                },
             };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -742,6 +874,8 @@ impl ::protobuf::Message for ChatData {
     }
 
     fn clear(&mut self) {
+        self.extend_type = ::std::option::Option::None;
+        self.extend_type = ::std::option::Option::None;
         self.extend_type = ::std::option::Option::None;
         self.extend_type = ::std::option::Option::None;
         self.extend_type = ::std::option::Option::None;
@@ -808,6 +942,10 @@ pub mod chat_data {
         BCLPAMNPHNP(super::super::OPLFDAGPBEI::OPLFDAGPBEI),
         // @@protoc_insertion_point(oneof_field:ChatData.HJADNIAAMGJ)
         HJADNIAAMGJ(super::super::HCKADDLIGEB::HCKADDLIGEB),
+        // @@protoc_insertion_point(oneof_field:ChatData.MHGBFFHGFKP)
+        MHGBFFHGFKP(super::super::PJLMOOPKHEM::PJLMOOPKHEM),
+        // @@protoc_insertion_point(oneof_field:ChatData.BALFEMJCMPK)
+        BALFEMJCMPK(super::super::LJMGDJBLLKC::LJMGDJBLLKC),
     }
 
     impl ::protobuf::Oneof for Extend_type {
@@ -830,18 +968,21 @@ pub mod chat_data {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x0eChatData.proto\x1a\x11ECCKHOLLPPC.proto\x1a\x11GCBHOIJLBFL.proto\
     \x1a\x11HCKADDLIGEB.proto\x1a\x11IDLACKBINMC.proto\x1a\x11IGCHDHFMPBJ.pr\
-    oto\x1a\x11NDDOMFBJMKE.proto\x1a\x11OPLFDAGPBEI.proto\x1a\x11PELDIEOMMDM\
-    .proto\"\xeb\x03\n\x08ChatData\x120\n\x0bNPBOINAPJJE\x18e\x20\x01(\x0b2\
-    \x0c.ECCKHOLLPPCH\0R\x0bNPBOINAPJJE\x120\n\x0bIBJBFODFIMN\x18f\x20\x01(\
-    \x0b2\x0c.NDDOMFBJMKEH\0R\x0bIBJBFODFIMN\x12#\n\x0cmessage_text\x18g\x20\
-    \x01(\tH\0R\x0bmessageText\x12\x1b\n\x08extra_id\x18h\x20\x01(\rH\0R\x07\
-    extraId\x120\n\x0bIALHIFELMGE\x18i\x20\x01(\x0b2\x0c.GCBHOIJLBFLH\0R\x0b\
-    IALHIFELMGE\x120\n\x0bADBNPHDPPIH\x18j\x20\x01(\x0b2\x0c.IDLACKBINMCH\0R\
-    \x0bADBNPHDPPIH\x120\n\x0bLPLCDCIFOOK\x18k\x20\x01(\x0b2\x0c.IGCHDHFMPBJ\
-    H\0R\x0bLPLCDCIFOOK\x120\n\x0bNLHJFKGNAMB\x18l\x20\x01(\x0b2\x0c.PELDIEO\
-    MMDMH\0R\x0bNLHJFKGNAMB\x120\n\x0bBCLPAMNPHNP\x18m\x20\x01(\x0b2\x0c.OPL\
-    FDAGPBEIH\0R\x0bBCLPAMNPHNP\x120\n\x0bHJADNIAAMGJ\x18n\x20\x01(\x0b2\x0c\
-    .HCKADDLIGEBH\0R\x0bHJADNIAAMGJB\r\n\x0bextend_typeb\x06proto3\
+    oto\x1a\x11LJMGDJBLLKC.proto\x1a\x11NDDOMFBJMKE.proto\x1a\x11OPLFDAGPBEI\
+    .proto\x1a\x11PELDIEOMMDM.proto\x1a\x11PJLMOOPKHEM.proto\"\xcf\x04\n\x08\
+    ChatData\x120\n\x0bNPBOINAPJJE\x18e\x20\x01(\x0b2\x0c.ECCKHOLLPPCH\0R\
+    \x0bNPBOINAPJJE\x120\n\x0bIBJBFODFIMN\x18f\x20\x01(\x0b2\x0c.NDDOMFBJMKE\
+    H\0R\x0bIBJBFODFIMN\x12#\n\x0cmessage_text\x18g\x20\x01(\tH\0R\x0bmessag\
+    eText\x12\x1b\n\x08extra_id\x18h\x20\x01(\rH\0R\x07extraId\x120\n\x0bIAL\
+    HIFELMGE\x18i\x20\x01(\x0b2\x0c.GCBHOIJLBFLH\0R\x0bIALHIFELMGE\x120\n\
+    \x0bADBNPHDPPIH\x18j\x20\x01(\x0b2\x0c.IDLACKBINMCH\0R\x0bADBNPHDPPIH\
+    \x120\n\x0bLPLCDCIFOOK\x18k\x20\x01(\x0b2\x0c.IGCHDHFMPBJH\0R\x0bLPLCDCI\
+    FOOK\x120\n\x0bNLHJFKGNAMB\x18l\x20\x01(\x0b2\x0c.PELDIEOMMDMH\0R\x0bNLH\
+    JFKGNAMB\x120\n\x0bBCLPAMNPHNP\x18m\x20\x01(\x0b2\x0c.OPLFDAGPBEIH\0R\
+    \x0bBCLPAMNPHNP\x120\n\x0bHJADNIAAMGJ\x18n\x20\x01(\x0b2\x0c.HCKADDLIGEB\
+    H\0R\x0bHJADNIAAMGJ\x120\n\x0bMHGBFFHGFKP\x18o\x20\x01(\x0b2\x0c.PJLMOOP\
+    KHEMH\0R\x0bMHGBFFHGFKP\x120\n\x0bBALFEMJCMPK\x18p\x20\x01(\x0b2\x0c.LJM\
+    GDJBLLKCH\0R\x0bBALFEMJCMPKB\r\n\x0bextend_typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -858,15 +999,17 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(8);
+            let mut deps = ::std::vec::Vec::with_capacity(10);
             deps.push(super::ECCKHOLLPPC::file_descriptor().clone());
             deps.push(super::GCBHOIJLBFL::file_descriptor().clone());
             deps.push(super::HCKADDLIGEB::file_descriptor().clone());
             deps.push(super::IDLACKBINMC::file_descriptor().clone());
             deps.push(super::IGCHDHFMPBJ::file_descriptor().clone());
+            deps.push(super::LJMGDJBLLKC::file_descriptor().clone());
             deps.push(super::NDDOMFBJMKE::file_descriptor().clone());
             deps.push(super::OPLFDAGPBEI::file_descriptor().clone());
             deps.push(super::PELDIEOMMDM::file_descriptor().clone());
+            deps.push(super::PJLMOOPKHEM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChatData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

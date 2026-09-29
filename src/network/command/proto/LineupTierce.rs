@@ -79,10 +79,10 @@ impl ::protobuf::Message for LineupTierce {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                34 => {
                     self.tierce_avatar_id_list.push(is.read_message()?);
                 },
-                120 => {
+                48 => {
                     self.buff_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for LineupTierce {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.buff_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for LineupTierce {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.tierce_avatar_id_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.buff_id != 0 {
-            os.write_uint32(15, self.buff_id)?;
+            os.write_uint32(6, self.buff_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for LineupTierce {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12LineupTierce.proto\x1a\x12AvatarLineup.proto\"i\n\x0cLineupTierce\
-    \x12@\n\x15tierce_avatar_id_list\x18\r\x20\x03(\x0b2\r.AvatarLineupR\x12\
-    tierceAvatarIdList\x12\x17\n\x07buff_id\x18\x0f\x20\x01(\rR\x06buffIdb\
-    \x06proto3\
+    \x12@\n\x15tierce_avatar_id_list\x18\x04\x20\x03(\x0b2\r.AvatarLineupR\
+    \x12tierceAvatarIdList\x12\x17\n\x07buff_id\x18\x06\x20\x01(\rR\x06buffI\
+    db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

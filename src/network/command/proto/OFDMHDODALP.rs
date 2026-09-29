@@ -79,10 +79,10 @@ impl ::protobuf::Message for OFDMHDODALP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                8 => {
                     self.LFPABLEIKKE = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OFDMHDODALP {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LFPABLEIKKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LFPABLEIKKE);
+            my_size += ::protobuf::rt::uint32_size(1, self.LFPABLEIKKE);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OFDMHDODALP {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LFPABLEIKKE != 0 {
-            os.write_uint32(5, self.LFPABLEIKKE)?;
+            os.write_uint32(1, self.LFPABLEIKKE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for OFDMHDODALP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFDMHDODALP.proto\"I\n\x0bOFDMHDODALP\x12\x20\n\x0bLFPABLEIKKE\x18\
-    \x05\x20\x01(\rR\x0bLFPABLEIKKE\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\
+    \x01\x20\x01(\rR\x0bLFPABLEIKKE\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
     \x07retcodeb\x06proto3\
 ";
 

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct POFNNGOCEOK {
     // message fields
-    // @@protoc_insertion_point(field:POFNNGOCEOK.KAMOPEEBOHJ)
-    pub KAMOPEEBOHJ: i64,
-    // @@protoc_insertion_point(field:POFNNGOCEOK.dice_slot_id)
-    pub dice_slot_id: u32,
     // @@protoc_insertion_point(field:POFNNGOCEOK.EIKLMFPMJJD)
     pub EIKLMFPMJJD: u32,
+    // @@protoc_insertion_point(field:POFNNGOCEOK.dice_slot_id)
+    pub dice_slot_id: u32,
+    // @@protoc_insertion_point(field:POFNNGOCEOK.KAMOPEEBOHJ)
+    pub KAMOPEEBOHJ: i64,
     // special fields
     // @@protoc_insertion_point(special_field:POFNNGOCEOK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl POFNNGOCEOK {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KAMOPEEBOHJ",
-            |m: &POFNNGOCEOK| { &m.KAMOPEEBOHJ },
-            |m: &mut POFNNGOCEOK| { &mut m.KAMOPEEBOHJ },
+            "EIKLMFPMJJD",
+            |m: &POFNNGOCEOK| { &m.EIKLMFPMJJD },
+            |m: &mut POFNNGOCEOK| { &mut m.EIKLMFPMJJD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dice_slot_id",
@@ -64,9 +64,9 @@ impl POFNNGOCEOK {
             |m: &mut POFNNGOCEOK| { &mut m.dice_slot_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EIKLMFPMJJD",
-            |m: &POFNNGOCEOK| { &m.EIKLMFPMJJD },
-            |m: &mut POFNNGOCEOK| { &mut m.EIKLMFPMJJD },
+            "KAMOPEEBOHJ",
+            |m: &POFNNGOCEOK| { &m.KAMOPEEBOHJ },
+            |m: &mut POFNNGOCEOK| { &mut m.KAMOPEEBOHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<POFNNGOCEOK>(
             "POFNNGOCEOK",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for POFNNGOCEOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.KAMOPEEBOHJ = is.read_int64()?;
+                16 => {
+                    self.EIKLMFPMJJD = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.dice_slot_id = is.read_uint32()?;
                 },
-                72 => {
-                    self.EIKLMFPMJJD = is.read_uint32()?;
+                96 => {
+                    self.KAMOPEEBOHJ = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for POFNNGOCEOK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KAMOPEEBOHJ != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.KAMOPEEBOHJ);
+        if self.EIKLMFPMJJD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EIKLMFPMJJD);
         }
         if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.dice_slot_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.dice_slot_id);
         }
-        if self.EIKLMFPMJJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EIKLMFPMJJD);
+        if self.KAMOPEEBOHJ != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.KAMOPEEBOHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for POFNNGOCEOK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KAMOPEEBOHJ != 0 {
-            os.write_int64(3, self.KAMOPEEBOHJ)?;
+        if self.EIKLMFPMJJD != 0 {
+            os.write_uint32(2, self.EIKLMFPMJJD)?;
         }
         if self.dice_slot_id != 0 {
-            os.write_uint32(6, self.dice_slot_id)?;
+            os.write_uint32(7, self.dice_slot_id)?;
         }
-        if self.EIKLMFPMJJD != 0 {
-            os.write_uint32(9, self.EIKLMFPMJJD)?;
+        if self.KAMOPEEBOHJ != 0 {
+            os.write_int64(12, self.KAMOPEEBOHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for POFNNGOCEOK {
     }
 
     fn clear(&mut self) {
-        self.KAMOPEEBOHJ = 0;
-        self.dice_slot_id = 0;
         self.EIKLMFPMJJD = 0;
+        self.dice_slot_id = 0;
+        self.KAMOPEEBOHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static POFNNGOCEOK {
         static instance: POFNNGOCEOK = POFNNGOCEOK {
-            KAMOPEEBOHJ: 0,
-            dice_slot_id: 0,
             EIKLMFPMJJD: 0,
+            dice_slot_id: 0,
+            KAMOPEEBOHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for POFNNGOCEOK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11POFNNGOCEOK.proto\"s\n\x0bPOFNNGOCEOK\x12\x20\n\x0bKAMOPEEBOHJ\x18\
-    \x03\x20\x01(\x03R\x0bKAMOPEEBOHJ\x12\x20\n\x0cdice_slot_id\x18\x06\x20\
-    \x01(\rR\ndiceSlotId\x12\x20\n\x0bEIKLMFPMJJD\x18\t\x20\x01(\rR\x0bEIKLM\
-    FPMJJDb\x06proto3\
+    \n\x11POFNNGOCEOK.proto\"s\n\x0bPOFNNGOCEOK\x12\x20\n\x0bEIKLMFPMJJD\x18\
+    \x02\x20\x01(\rR\x0bEIKLMFPMJJD\x12\x20\n\x0cdice_slot_id\x18\x07\x20\
+    \x01(\rR\ndiceSlotId\x12\x20\n\x0bKAMOPEEBOHJ\x18\x0c\x20\x01(\x03R\x0bK\
+    AMOPEEBOHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

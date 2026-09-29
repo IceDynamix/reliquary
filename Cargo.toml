@@ -3,7 +3,7 @@ members = ["reliquary-proc-macro"]
 
 [package]
 name = "reliquary"
-version = "23.0.0"
+version = "24.0.0"
 edition = "2024"
 license = "MIT"
 
@@ -15,6 +15,7 @@ network = ["kcp", "base64", "etherparse", "rand_mt", "protobuf"]
 resource = ["reliquary-proc-macro", "twox-hash", "serde", "serde_json"]
 proto-limited = []
 proto-rqa = []
+proto-auth = []
 
 [dependencies]
 base64 = { version = "0.22", optional = true }

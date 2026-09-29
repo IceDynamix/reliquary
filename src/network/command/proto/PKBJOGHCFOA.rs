@@ -30,10 +30,10 @@ pub struct PKBJOGHCFOA {
     // message fields
     // @@protoc_insertion_point(field:PKBJOGHCFOA.KHEFAHCPHBL)
     pub KHEFAHCPHBL: ::protobuf::MessageField<super::FOJDKLCHCKG::FOJDKLCHCKG>,
-    // @@protoc_insertion_point(field:PKBJOGHCFOA.DFLEOIGPLNM)
-    pub DFLEOIGPLNM: ::std::vec::Vec<super::LMLNNHKJEIP::LMLNNHKJEIP>,
     // @@protoc_insertion_point(field:PKBJOGHCFOA.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PKBJOGHCFOA.DFLEOIGPLNM)
+    pub DFLEOIGPLNM: ::std::vec::Vec<super::LMLNNHKJEIP::LMLNNHKJEIP>,
     // special fields
     // @@protoc_insertion_point(special_field:PKBJOGHCFOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PKBJOGHCFOA {
             |m: &PKBJOGHCFOA| { &m.KHEFAHCPHBL },
             |m: &mut PKBJOGHCFOA| { &mut m.KHEFAHCPHBL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DFLEOIGPLNM",
-            |m: &PKBJOGHCFOA| { &m.DFLEOIGPLNM },
-            |m: &mut PKBJOGHCFOA| { &mut m.DFLEOIGPLNM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PKBJOGHCFOA| { &m.retcode },
             |m: &mut PKBJOGHCFOA| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DFLEOIGPLNM",
+            |m: &PKBJOGHCFOA| { &m.DFLEOIGPLNM },
+            |m: &mut PKBJOGHCFOA| { &mut m.DFLEOIGPLNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PKBJOGHCFOA>(
             "PKBJOGHCFOA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PKBJOGHCFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHEFAHCPHBL)?;
                 },
-                58 => {
-                    self.DFLEOIGPLNM.push(is.read_message()?);
-                },
-                72 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    self.DFLEOIGPLNM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for PKBJOGHCFOA {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         for value in &self.DFLEOIGPLNM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,14 +125,14 @@ impl ::protobuf::Message for PKBJOGHCFOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.KHEFAHCPHBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         for v in &self.DFLEOIGPLNM {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -151,16 +151,16 @@ impl ::protobuf::Message for PKBJOGHCFOA {
 
     fn clear(&mut self) {
         self.KHEFAHCPHBL.clear();
-        self.DFLEOIGPLNM.clear();
         self.retcode = 0;
+        self.DFLEOIGPLNM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PKBJOGHCFOA {
         static instance: PKBJOGHCFOA = PKBJOGHCFOA {
             KHEFAHCPHBL: ::protobuf::MessageField::none(),
-            DFLEOIGPLNM: ::std::vec::Vec::new(),
             retcode: 0,
+            DFLEOIGPLNM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for PKBJOGHCFOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PKBJOGHCFOA.proto\x1a\x11FOJDKLCHCKG.proto\x1a\x11LMLNNHKJEIP.prot\
-    o\"\x87\x01\n\x0bPKBJOGHCFOA\x12.\n\x0bKHEFAHCPHBL\x18\x03\x20\x01(\x0b2\
-    \x0c.FOJDKLCHCKGR\x0bKHEFAHCPHBL\x12.\n\x0bDFLEOIGPLNM\x18\x07\x20\x03(\
-    \x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\x12\x18\n\x07retcode\x18\t\x20\x01\
-    (\rR\x07retcodeb\x06proto3\
+    o\"\x87\x01\n\x0bPKBJOGHCFOA\x12.\n\x0bKHEFAHCPHBL\x18\x08\x20\x01(\x0b2\
+    \x0c.FOJDKLCHCKGR\x0bKHEFAHCPHBL\x12\x18\n\x07retcode\x18\x0b\x20\x01(\r\
+    R\x07retcode\x12.\n\x0bDFLEOIGPLNM\x18\r\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\
+    \x0bDFLEOIGPLNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

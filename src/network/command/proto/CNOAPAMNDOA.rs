@@ -86,13 +86,13 @@ impl ::protobuf::Message for CNOAPAMNDOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                10 => {
                     self.LFJLNAHJNBE.push(is.read_message()?);
                 },
-                34 => {
+                98 => {
                     self.KGOEHKJIONM.push(is.read_message()?);
                 },
-                96 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for CNOAPAMNDOA {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for CNOAPAMNDOA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LFJLNAHJNBE {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         for v in &self.KGOEHKJIONM {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for CNOAPAMNDOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CNOAPAMNDOA.proto\x1a\x11LHCOHLJIAII.proto\x1a\x11NBNLDHBELLO.prot\
-    o\"\x87\x01\n\x0bCNOAPAMNDOA\x12.\n\x0bLFJLNAHJNBE\x18\x03\x20\x03(\x0b2\
-    \x0c.NBNLDHBELLOR\x0bLFJLNAHJNBE\x12.\n\x0bKGOEHKJIONM\x18\x04\x20\x03(\
-    \x0b2\x0c.LHCOHLJIAIIR\x0bKGOEHKJIONM\x12\x18\n\x07retcode\x18\x0c\x20\
+    o\"\x87\x01\n\x0bCNOAPAMNDOA\x12.\n\x0bLFJLNAHJNBE\x18\x01\x20\x03(\x0b2\
+    \x0c.NBNLDHBELLOR\x0bLFJLNAHJNBE\x12.\n\x0bKGOEHKJIONM\x18\x0c\x20\x03(\
+    \x0b2\x0c.LHCOHLJIAIIR\x0bKGOEHKJIONM\x12\x18\n\x07retcode\x18\x0f\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 

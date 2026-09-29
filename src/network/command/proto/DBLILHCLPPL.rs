@@ -30,10 +30,10 @@ pub struct DBLILHCLPPL {
     // message fields
     // @@protoc_insertion_point(field:DBLILHCLPPL.item_list)
     pub item_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:DBLILHCLPPL.unique_id)
-    pub unique_id: u32,
     // @@protoc_insertion_point(field:DBLILHCLPPL.DNNCAGJIOAP)
     pub DNNCAGJIOAP: u32,
+    // @@protoc_insertion_point(field:DBLILHCLPPL.unique_id)
+    pub unique_id: u32,
     // @@protoc_insertion_point(field:DBLILHCLPPL.PKKAJKHKBMN)
     pub PKKAJKHKBMN: bool,
     // @@protoc_insertion_point(field:DBLILHCLPPL.DLPCPDGEADG)
@@ -65,14 +65,14 @@ impl DBLILHCLPPL {
             |m: &mut DBLILHCLPPL| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unique_id",
-            |m: &DBLILHCLPPL| { &m.unique_id },
-            |m: &mut DBLILHCLPPL| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DNNCAGJIOAP",
             |m: &DBLILHCLPPL| { &m.DNNCAGJIOAP },
             |m: &mut DBLILHCLPPL| { &mut m.DNNCAGJIOAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unique_id",
+            |m: &DBLILHCLPPL| { &m.unique_id },
+            |m: &mut DBLILHCLPPL| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PKKAJKHKBMN",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for DBLILHCLPPL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.item_list)?;
                 },
-                8 => {
+                16 => {
                     self.item_list.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.DNNCAGJIOAP = is.read_uint32()?;
                 },
                 56 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.DNNCAGJIOAP = is.read_uint32()?;
-                },
                 72 => {
                     self.PKKAJKHKBMN = is.read_bool()?;
                 },
-                106 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.DLPCPDGEADG)?;
                 },
-                104 => {
+                88 => {
                     self.DLPCPDGEADG.push(is.read_uint32()?);
                 },
                 120 => {
@@ -143,17 +143,17 @@ impl ::protobuf::Message for DBLILHCLPPL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.item_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.item_list);
+        if self.DNNCAGJIOAP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DNNCAGJIOAP);
+        }
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
-        }
-        if self.DNNCAGJIOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DNNCAGJIOAP);
         }
         if self.PKKAJKHKBMN != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DLPCPDGEADG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.DLPCPDGEADG);
         if self.BBMELNJBGAL != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.BBMELNJBGAL);
         }
@@ -163,17 +163,17 @@ impl ::protobuf::Message for DBLILHCLPPL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.item_list)?;
+        os.write_repeated_packed_uint32(2, &self.item_list)?;
+        if self.DNNCAGJIOAP != 0 {
+            os.write_uint32(4, self.DNNCAGJIOAP)?;
+        }
         if self.unique_id != 0 {
             os.write_uint32(7, self.unique_id)?;
-        }
-        if self.DNNCAGJIOAP != 0 {
-            os.write_uint32(8, self.DNNCAGJIOAP)?;
         }
         if self.PKKAJKHKBMN != false {
             os.write_bool(9, self.PKKAJKHKBMN)?;
         }
-        os.write_repeated_packed_uint32(13, &self.DLPCPDGEADG)?;
+        os.write_repeated_packed_uint32(11, &self.DLPCPDGEADG)?;
         if self.BBMELNJBGAL != 0 {
             os.write_uint32(15, self.BBMELNJBGAL)?;
         }
@@ -195,8 +195,8 @@ impl ::protobuf::Message for DBLILHCLPPL {
 
     fn clear(&mut self) {
         self.item_list.clear();
-        self.unique_id = 0;
         self.DNNCAGJIOAP = 0;
+        self.unique_id = 0;
         self.PKKAJKHKBMN = false;
         self.DLPCPDGEADG.clear();
         self.BBMELNJBGAL = 0;
@@ -206,8 +206,8 @@ impl ::protobuf::Message for DBLILHCLPPL {
     fn default_instance() -> &'static DBLILHCLPPL {
         static instance: DBLILHCLPPL = DBLILHCLPPL {
             item_list: ::std::vec::Vec::new(),
-            unique_id: 0,
             DNNCAGJIOAP: 0,
+            unique_id: 0,
             PKKAJKHKBMN: false,
             DLPCPDGEADG: ::std::vec::Vec::new(),
             BBMELNJBGAL: 0,
@@ -236,11 +236,11 @@ impl ::protobuf::reflect::ProtobufValue for DBLILHCLPPL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DBLILHCLPPL.proto\"\xcf\x01\n\x0bDBLILHCLPPL\x12\x1b\n\titem_list\
-    \x18\x01\x20\x03(\rR\x08itemList\x12\x1b\n\tunique_id\x18\x07\x20\x01(\r\
-    R\x08uniqueId\x12\x20\n\x0bDNNCAGJIOAP\x18\x08\x20\x01(\rR\x0bDNNCAGJIOA\
-    P\x12\x20\n\x0bPKKAJKHKBMN\x18\t\x20\x01(\x08R\x0bPKKAJKHKBMN\x12\x20\n\
-    \x0bDLPCPDGEADG\x18\r\x20\x03(\rR\x0bDLPCPDGEADG\x12\x20\n\x0bBBMELNJBGA\
-    L\x18\x0f\x20\x01(\rR\x0bBBMELNJBGALb\x06proto3\
+    \x18\x02\x20\x03(\rR\x08itemList\x12\x20\n\x0bDNNCAGJIOAP\x18\x04\x20\
+    \x01(\rR\x0bDNNCAGJIOAP\x12\x1b\n\tunique_id\x18\x07\x20\x01(\rR\x08uniq\
+    ueId\x12\x20\n\x0bPKKAJKHKBMN\x18\t\x20\x01(\x08R\x0bPKKAJKHKBMN\x12\x20\
+    \n\x0bDLPCPDGEADG\x18\x0b\x20\x03(\rR\x0bDLPCPDGEADG\x12\x20\n\x0bBBMELN\
+    JBGAL\x18\x0f\x20\x01(\rR\x0bBBMELNJBGALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

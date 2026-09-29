@@ -79,10 +79,10 @@ impl ::protobuf::Message for AGGDDAJLAEB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                104 => {
                     self.INLHPJMOOMO = is.read_uint32()?;
                 },
-                65 => {
+                113 => {
                     self.IDONFFOACIL = is.read_double()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AGGDDAJLAEB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.INLHPJMOOMO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.INLHPJMOOMO);
+            my_size += ::protobuf::rt::uint32_size(13, self.INLHPJMOOMO);
         }
         if self.IDONFFOACIL != 0. {
             my_size += 1 + 8;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AGGDDAJLAEB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.INLHPJMOOMO != 0 {
-            os.write_uint32(5, self.INLHPJMOOMO)?;
+            os.write_uint32(13, self.INLHPJMOOMO)?;
         }
         if self.IDONFFOACIL != 0. {
-            os.write_double(8, self.IDONFFOACIL)?;
+            os.write_double(14, self.IDONFFOACIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AGGDDAJLAEB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AGGDDAJLAEB.proto\"Q\n\x0bAGGDDAJLAEB\x12\x20\n\x0bINLHPJMOOMO\x18\
-    \x05\x20\x01(\rR\x0bINLHPJMOOMO\x12\x20\n\x0bIDONFFOACIL\x18\x08\x20\x01\
-    (\x01R\x0bIDONFFOACILb\x06proto3\
+    \r\x20\x01(\rR\x0bINLHPJMOOMO\x12\x20\n\x0bIDONFFOACIL\x18\x0e\x20\x01(\
+    \x01R\x0bIDONFFOACILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

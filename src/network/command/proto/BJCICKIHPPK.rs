@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum BJCICKIHPPK {
     // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_NLCDGIPGFDJ)
     BJCICKIHPPK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_MANKOBADGIF)
-    BJCICKIHPPK_MANKOBADGIF = 9952,
-    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_AHBAGOLHOKD)
-    BJCICKIHPPK_AHBAGOLHOKD = 9953,
     // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_CLNPCBKKIHF)
-    BJCICKIHPPK_CLNPCBKKIHF = 9970,
-    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_PHIIDKGBFLO)
-    BJCICKIHPPK_PHIIDKGBFLO = 9971,
+    BJCICKIHPPK_CLNPCBKKIHF = 9979,
     // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_GHNJNKLLAAA)
-    BJCICKIHPPK_GHNJNKLLAAA = 9968,
+    BJCICKIHPPK_GHNJNKLLAAA = 9953,
+    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_AHBAGOLHOKD)
+    BJCICKIHPPK_AHBAGOLHOKD = 9963,
+    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_PHIIDKGBFLO)
+    BJCICKIHPPK_PHIIDKGBFLO = 9954,
+    // @@protoc_insertion_point(enum_value:BJCICKIHPPK.BJCICKIHPPK_MANKOBADGIF)
+    BJCICKIHPPK_MANKOBADGIF = 9958,
 }
 
 impl ::protobuf::Enum for BJCICKIHPPK {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for BJCICKIHPPK {
     fn from_i32(value: i32) -> ::std::option::Option<BJCICKIHPPK> {
         match value {
             0 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_NLCDGIPGFDJ),
-            9952 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF),
-            9953 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD),
-            9970 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF),
-            9971 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO),
-            9968 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA),
+            9979 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF),
+            9953 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA),
+            9963 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD),
+            9954 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO),
+            9958 => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF),
             _ => ::std::option::Option::None
         }
     }
@@ -63,22 +63,22 @@ impl ::protobuf::Enum for BJCICKIHPPK {
     fn from_str(str: &str) -> ::std::option::Option<BJCICKIHPPK> {
         match str {
             "BJCICKIHPPK_NLCDGIPGFDJ" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_NLCDGIPGFDJ),
-            "BJCICKIHPPK_MANKOBADGIF" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF),
-            "BJCICKIHPPK_AHBAGOLHOKD" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD),
             "BJCICKIHPPK_CLNPCBKKIHF" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF),
-            "BJCICKIHPPK_PHIIDKGBFLO" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO),
             "BJCICKIHPPK_GHNJNKLLAAA" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA),
+            "BJCICKIHPPK_AHBAGOLHOKD" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD),
+            "BJCICKIHPPK_PHIIDKGBFLO" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO),
+            "BJCICKIHPPK_MANKOBADGIF" => ::std::option::Option::Some(BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BJCICKIHPPK] = &[
         BJCICKIHPPK::BJCICKIHPPK_NLCDGIPGFDJ,
-        BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF,
-        BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD,
         BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF,
-        BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO,
         BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA,
+        BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD,
+        BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO,
+        BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF,
     ];
 }
 
@@ -91,11 +91,11 @@ impl ::protobuf::EnumFull for BJCICKIHPPK {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             BJCICKIHPPK::BJCICKIHPPK_NLCDGIPGFDJ => 0,
-            BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF => 1,
-            BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD => 2,
-            BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF => 3,
+            BJCICKIHPPK::BJCICKIHPPK_CLNPCBKKIHF => 1,
+            BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA => 2,
+            BJCICKIHPPK::BJCICKIHPPK_AHBAGOLHOKD => 3,
             BJCICKIHPPK::BJCICKIHPPK_PHIIDKGBFLO => 4,
-            BJCICKIHPPK::BJCICKIHPPK_GHNJNKLLAAA => 5,
+            BJCICKIHPPK::BJCICKIHPPK_MANKOBADGIF => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl BJCICKIHPPK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BJCICKIHPPK.proto*\xc0\x01\n\x0bBJCICKIHPPK\x12\x1b\n\x17BJCICKIHP\
-    PK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJCICKIHPPK_MANKOBADGIF\x10\xe0M\x12\
-    \x1c\n\x17BJCICKIHPPK_AHBAGOLHOKD\x10\xe1M\x12\x1c\n\x17BJCICKIHPPK_CLNP\
-    CBKKIHF\x10\xf2M\x12\x1c\n\x17BJCICKIHPPK_PHIIDKGBFLO\x10\xf3M\x12\x1c\n\
-    \x17BJCICKIHPPK_GHNJNKLLAAA\x10\xf0Mb\x06proto3\
+    PK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJCICKIHPPK_CLNPCBKKIHF\x10\xfbM\x12\
+    \x1c\n\x17BJCICKIHPPK_GHNJNKLLAAA\x10\xe1M\x12\x1c\n\x17BJCICKIHPPK_AHBA\
+    GOLHOKD\x10\xebM\x12\x1c\n\x17BJCICKIHPPK_PHIIDKGBFLO\x10\xe2M\x12\x1c\n\
+    \x17BJCICKIHPPK_MANKOBADGIF\x10\xe6Mb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

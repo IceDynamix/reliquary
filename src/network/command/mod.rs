@@ -20,74 +20,126 @@ use tracing::{instrument, warn};
 
 pub mod command_id;
 
-#[cfg(all(not(feature = "proto-limited"), not(feature = "proto-rqa")))]
-pub mod proto;
+cfg_select! {
+    any(feature = "proto-limited",feature = "proto-rqa",feature = "proto-auth") => {
+        pub mod proto {
+            #[cfg(feature = "proto-auth")]
+            pub mod GetAuthkeyScRsp;
+            pub mod BlackInfo;
+            pub mod PlayerGetTokenScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Avatar;
+            #[cfg(feature = "proto-rqa")]
+            pub mod AvatarPathData;
+            #[cfg(feature = "proto-rqa")]
+            pub mod AvatarPathSkillTree;
+            #[cfg(feature = "proto-rqa")]
+            pub mod AvatarSync;
+            #[cfg(feature = "proto-rqa")]
+            pub mod DoGachaScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod EquipRelic;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Equipment;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GachaCeiling;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GachaCeilingAvatar;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GachaInfo;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GachaItem;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GetAvatarDataScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GetBagScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GetGachaInfoScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod GroupStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod HeadFrameInfo;
+            #[cfg(feature = "proto-rqa")]
+            pub mod HeadIconData;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Item;
+            #[cfg(feature = "proto-rqa")]
+            pub mod ItemList;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Material;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MessageGroupStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MessageSectionStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Mission;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MissionCustomValue;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MissionStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MissionSync;
+            #[cfg(feature = "proto-rqa")]
+            pub mod PileItem;
+            #[cfg(feature = "proto-rqa")]
+            pub mod PlayerBasicInfo;
+            #[cfg(feature = "proto-rqa")]
+            pub mod PlayerLoginScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod PlayerSyncScNotify;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Quest;
+            #[cfg(feature = "proto-rqa")]
+            pub mod QuestStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod Relic;
+            #[cfg(feature = "proto-rqa")]
+            pub mod RelicAffix;
+            #[cfg(feature = "proto-rqa")]
+            pub mod SectionStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod SetAvatarEnhancedIdScRsp;
+            #[cfg(feature = "proto-rqa")]
+            pub mod SyncStatus;
+            #[cfg(feature = "proto-rqa")]
+            pub mod TurnFoodSwitch;
+            #[cfg(feature = "proto-rqa")]
+            pub mod WaitDelResource;
 
-#[cfg(all(feature = "proto-limited"))]
-pub mod proto {
-    pub mod BlackInfo;
-    pub mod PlayerGetTokenScRsp;
-}
-
-#[cfg(all(feature = "proto-rqa"))]
-pub mod proto {
-    pub mod Avatar;
-    pub mod AvatarPathData;
-    pub mod AvatarPathSkillTree;
-    pub mod AvatarSync;
-    pub mod BasicModuleSync;
-    pub mod BlackInfo;
-    pub mod DoGachaScRsp;
-    pub mod EquipRelic;
-    pub mod Equipment;
-    pub mod GachaCeiling;
-    pub mod GachaCeilingAvatar;
-    pub mod GachaInfo;
-    pub mod GachaItem;
-    pub mod GetAvatarDataScRsp;
-    pub mod GetBagScRsp;
-    pub mod GetGachaInfoScRsp;
-    pub mod GroupStatus;
-    pub mod HeadFrameInfo;
-    pub mod HeadIconData;
-    pub mod Item;
-    pub mod ItemList;
-    pub mod KVP;
-    pub mod Material;
-    pub mod MessageGroupStatus;
-    pub mod MessageSectionStatus;
-    pub mod Mission;
-    pub mod MissionCustomValue;
-    pub mod MissionStatus;
-    pub mod MissionSync;
-    pub mod PileItem;
-    pub mod PlayerBasicInfo;
-    pub mod PlayerBoardModuleSync;
-    pub mod PlayerGetTokenScRsp;
-    pub mod PlayerLoginScRsp;
-    pub mod PlayerSyncScNotify;
-    pub mod Quest;
-    pub mod QuestStatus;
-    pub mod Relic;
-    pub mod RelicAffix;
-    pub mod SectionStatus;
-    pub mod SetAvatarEnhancedIdScRsp;
-    pub mod SyncStatus;
-    pub mod TurnFoodSwitch;
-    pub mod WaitDelResource;
-
-    // Untranslated dependencies
-    pub mod BKGPJOBNMKJ;
-    pub mod CCHMHOONEGG;
-    pub mod CFMDKNCDDAL;
-    pub mod CJLCPMDGIBO;
-    pub mod MJBANFPPEFH;
-    pub mod NEIMLKNMDBM;
-    pub mod NKDNFDCFNCP;
-    pub mod NLLLAAEJOBP;
-    pub mod OCKCHBDFGNL;
-    pub mod ONHKODAFEMH;
-    pub mod PFNHCOJOBKH;
+            // Untranslated dependencies
+            #[cfg(feature = "proto-rqa")]
+            pub mod APAMFCKFHLL;
+            #[cfg(feature = "proto-rqa")]
+            pub mod BKGPJOBNMKJ;
+            #[cfg(feature = "proto-rqa")]
+            pub mod CCHMHOONEGG;
+            #[cfg(feature = "proto-rqa")]
+            pub mod CFMDKNCDDAL;
+            #[cfg(feature = "proto-rqa")]
+            pub mod CJLCPMDGIBO;
+            #[cfg(feature = "proto-rqa")]
+            pub mod IAIDGGGMBPJ;
+            #[cfg(feature = "proto-rqa")]
+            pub mod LHCBKDNHGCG;
+            #[cfg(feature = "proto-rqa")]
+            pub mod MJBANFPPEFH;
+            #[cfg(feature = "proto-rqa")]
+            pub mod NEIMLKNMDBM;
+            #[cfg(feature = "proto-rqa")]
+            pub mod NHGJGMAEBCI;
+            #[cfg(feature = "proto-rqa")]
+            pub mod NKDNFDCFNCP;
+            #[cfg(feature = "proto-rqa")]
+            pub mod NLLLAAEJOBP;
+            #[cfg(feature = "proto-rqa")]
+            pub mod OCKCHBDFGNL;
+            #[cfg(feature = "proto-rqa")]
+            pub mod ONHKODAFEMH;
+            }
+        }
+    _ => {
+        pub mod proto;
+    }
 }
 
 /// Game command header.

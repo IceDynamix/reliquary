@@ -86,13 +86,13 @@ impl ::protobuf::Message for KEHOGIENDKC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.authkey_ver = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                80 => {
                     self.AIBJEFAPGMN = is.read_uint32()?;
                 },
-                104 => {
+                120 => {
                     self.DACCGMCONBP = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for KEHOGIENDKC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(4, self.authkey_ver.value());
+            my_size += ::protobuf::rt::int32_size(5, self.authkey_ver.value());
         }
         if self.AIBJEFAPGMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AIBJEFAPGMN);
+            my_size += ::protobuf::rt::uint32_size(10, self.AIBJEFAPGMN);
         }
         if self.DACCGMCONBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DACCGMCONBP);
+            my_size += ::protobuf::rt::uint32_size(15, self.DACCGMCONBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for KEHOGIENDKC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.authkey_ver != ::protobuf::EnumOrUnknown::new(super::MMLAPDEBFJM::MMLAPDEBFJM::MMLAPDEBFJM_NLCDGIPGFDJ) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.authkey_ver))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.authkey_ver))?;
         }
         if self.AIBJEFAPGMN != 0 {
-            os.write_uint32(9, self.AIBJEFAPGMN)?;
+            os.write_uint32(10, self.AIBJEFAPGMN)?;
         }
         if self.DACCGMCONBP != 0 {
-            os.write_uint32(13, self.DACCGMCONBP)?;
+            os.write_uint32(15, self.DACCGMCONBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for KEHOGIENDKC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KEHOGIENDKC.proto\x1a\x11MMLAPDEBFJM.proto\"\x80\x01\n\x0bKEHOGIEN\
-    DKC\x12-\n\x0bauthkey_ver\x18\x04\x20\x01(\x0e2\x0c.MMLAPDEBFJMR\nauthke\
-    yVer\x12\x20\n\x0bAIBJEFAPGMN\x18\t\x20\x01(\rR\x0bAIBJEFAPGMN\x12\x20\n\
-    \x0bDACCGMCONBP\x18\r\x20\x01(\rR\x0bDACCGMCONBPb\x06proto3\
+    DKC\x12-\n\x0bauthkey_ver\x18\x05\x20\x01(\x0e2\x0c.MMLAPDEBFJMR\nauthke\
+    yVer\x12\x20\n\x0bAIBJEFAPGMN\x18\n\x20\x01(\rR\x0bAIBJEFAPGMN\x12\x20\n\
+    \x0bDACCGMCONBP\x18\x0f\x20\x01(\rR\x0bDACCGMCONBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

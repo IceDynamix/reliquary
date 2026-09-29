@@ -27,13 +27,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:GetMonopolyFriendRankingListScRsp)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMonopolyFriendRankingListScRsp {
-    // message fields
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.BEDHEKAGAPE)
-    pub BEDHEKAGAPE: ::std::vec::Vec<super::BBEPMABCBGF::BBEPMABCBGF>,
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.PONAOKBNIAM)
-    pub PONAOKBNIAM: ::protobuf::MessageField<super::BBEPMABCBGF::BBEPMABCBGF>,
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyFriendRankingListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,23 +44,8 @@ impl GetMonopolyFriendRankingListScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(0);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BEDHEKAGAPE",
-            |m: &GetMonopolyFriendRankingListScRsp| { &m.BEDHEKAGAPE },
-            |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.BEDHEKAGAPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBEPMABCBGF::BBEPMABCBGF>(
-            "PONAOKBNIAM",
-            |m: &GetMonopolyFriendRankingListScRsp| { &m.PONAOKBNIAM },
-            |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.PONAOKBNIAM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMonopolyFriendRankingListScRsp| { &m.retcode },
-            |m: &mut GetMonopolyFriendRankingListScRsp| { &mut m.retcode },
-        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyFriendRankingListScRsp>(
             "GetMonopolyFriendRankingListScRsp",
             fields,
@@ -86,15 +64,6 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.BEDHEKAGAPE.push(is.read_message()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PONAOKBNIAM)?;
-                },
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -107,32 +76,12 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BEDHEKAGAPE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.PONAOKBNIAM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BEDHEKAGAPE {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if let Some(v) = self.PONAOKBNIAM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +99,11 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListScRsp {
     }
 
     fn clear(&mut self) {
-        self.BEDHEKAGAPE.clear();
-        self.PONAOKBNIAM.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyFriendRankingListScRsp {
         static instance: GetMonopolyFriendRankingListScRsp = GetMonopolyFriendRankingListScRsp {
-            BEDHEKAGAPE: ::std::vec::Vec::new(),
-            PONAOKBNIAM: ::protobuf::MessageField::none(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +128,8 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyFriendRankingListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'GetMonopolyFriendRankingListScRsp.proto\x1a\x11BBEPMABCBGF.proto\"\
-    \x9d\x01\n!GetMonopolyFriendRankingListScRsp\x12.\n\x0bBEDHEKAGAPE\x18\
-    \x07\x20\x03(\x0b2\x0c.BBEPMABCBGFR\x0bBEDHEKAGAPE\x12.\n\x0bPONAOKBNIAM\
-    \x18\n\x20\x01(\x0b2\x0c.BBEPMABCBGFR\x0bPONAOKBNIAM\x12\x18\n\x07retcod\
-    e\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n'GetMonopolyFriendRankingListScRsp.proto\"#\n!GetMonopolyFriendRanking\
+    ListScRspb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +146,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BBEPMABCBGF::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(0);
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMonopolyFriendRankingListScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

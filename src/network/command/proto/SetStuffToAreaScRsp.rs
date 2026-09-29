@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetStuffToAreaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos_index)
-    pub pos_index: ::protobuf::EnumOrUnknown<super::GBAEPOLFFMG::GBAEPOLFFMG>,
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.PIKEPJNDJPE)
     pub PIKEPJNDJPE: u32,
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos_index)
+    pub pos_index: ::protobuf::EnumOrUnknown<super::GBAEPOLFFMG::GBAEPOLFFMG>,
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.CEAMLKCMMGD)
     pub CEAMLKCMMGD: u32,
     // special fields
@@ -56,9 +56,9 @@ impl SetStuffToAreaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetStuffToAreaScRsp| { &m.retcode },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.retcode },
+            "PIKEPJNDJPE",
+            |m: &SetStuffToAreaScRsp| { &m.PIKEPJNDJPE },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.PIKEPJNDJPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos_index",
@@ -66,9 +66,9 @@ impl SetStuffToAreaScRsp {
             |m: &mut SetStuffToAreaScRsp| { &mut m.pos_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIKEPJNDJPE",
-            |m: &SetStuffToAreaScRsp| { &m.PIKEPJNDJPE },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.PIKEPJNDJPE },
+            "retcode",
+            |m: &SetStuffToAreaScRsp| { &m.retcode },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CEAMLKCMMGD",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.PIKEPJNDJPE = is.read_uint32()?;
                 },
                 48 => {
                     self.pos_index = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.PIKEPJNDJPE = is.read_uint32()?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                80 => {
+                120 => {
                     self.CEAMLKCMMGD = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.PIKEPJNDJPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PIKEPJNDJPE);
         }
         if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(6, self.pos_index.value());
         }
-        if self.PIKEPJNDJPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.PIKEPJNDJPE);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.CEAMLKCMMGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CEAMLKCMMGD);
+            my_size += ::protobuf::rt::uint32_size(15, self.CEAMLKCMMGD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.PIKEPJNDJPE != 0 {
+            os.write_uint32(3, self.PIKEPJNDJPE)?;
         }
         if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.pos_index))?;
         }
-        if self.PIKEPJNDJPE != 0 {
-            os.write_uint32(9, self.PIKEPJNDJPE)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         if self.CEAMLKCMMGD != 0 {
-            os.write_uint32(10, self.CEAMLKCMMGD)?;
+            os.write_uint32(15, self.CEAMLKCMMGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.pos_index = ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ);
         self.PIKEPJNDJPE = 0;
+        self.pos_index = ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ);
+        self.retcode = 0;
         self.CEAMLKCMMGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetStuffToAreaScRsp {
         static instance: SetStuffToAreaScRsp = SetStuffToAreaScRsp {
-            retcode: 0,
-            pos_index: ::protobuf::EnumOrUnknown::from_i32(0),
             PIKEPJNDJPE: 0,
+            pos_index: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
             CEAMLKCMMGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SetStuffToAreaScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SetStuffToAreaScRsp.proto\x1a\x11GBAEPOLFFMG.proto\"\x9e\x01\n\x13\
-    SetStuffToAreaScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
-    \x12)\n\tpos_index\x18\x06\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x08posIndex\
-    \x12\x20\n\x0bPIKEPJNDJPE\x18\t\x20\x01(\rR\x0bPIKEPJNDJPE\x12\x20\n\x0b\
-    CEAMLKCMMGD\x18\n\x20\x01(\rR\x0bCEAMLKCMMGDb\x06proto3\
+    SetStuffToAreaScRsp\x12\x20\n\x0bPIKEPJNDJPE\x18\x03\x20\x01(\rR\x0bPIKE\
+    PJNDJPE\x12)\n\tpos_index\x18\x06\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x08posI\
+    ndex\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bCE\
+    AMLKCMMGD\x18\x0f\x20\x01(\rR\x0bCEAMLKCMMGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

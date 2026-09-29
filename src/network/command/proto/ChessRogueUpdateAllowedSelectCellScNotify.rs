@@ -82,10 +82,10 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
                 32 => {
                     self.AIHCKNAMPBP = is.read_uint32()?;
                 },
-                114 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.AADAFLKEJGD)?;
                 },
-                112 => {
+                72 => {
                     self.AADAFLKEJGD.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
         if self.AIHCKNAMPBP != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.AIHCKNAMPBP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.AADAFLKEJGD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.AADAFLKEJGD);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
         if self.AIHCKNAMPBP != 0 {
             os.write_uint32(4, self.AIHCKNAMPBP)?;
         }
-        os.write_repeated_packed_uint32(14, &self.AADAFLKEJGD)?;
+        os.write_repeated_packed_uint32(9, &self.AADAFLKEJGD)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAllowedSelectCellScN
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAllowedSelectCellScNotify.proto\"o\n)ChessRogueUpdate\
     AllowedSelectCellScNotify\x12\x20\n\x0bAIHCKNAMPBP\x18\x04\x20\x01(\rR\
-    \x0bAIHCKNAMPBP\x12\x20\n\x0bAADAFLKEJGD\x18\x0e\x20\x03(\rR\x0bAADAFLKE\
-    JGDb\x06proto3\
+    \x0bAIHCKNAMPBP\x12\x20\n\x0bAADAFLKEJGD\x18\t\x20\x03(\rR\x0bAADAFLKEJG\
+    Db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

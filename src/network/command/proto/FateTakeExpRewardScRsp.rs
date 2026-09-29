@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateTakeExpRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FateTakeExpRewardScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FateTakeExpRewardScRsp.HKEFKHJOEPJ)
     pub HKEFKHJOEPJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FateTakeExpRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:FateTakeExpRewardScRsp.HPJMJEAJKAC)
     pub HPJMJEAJKAC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FateTakeExpRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FateTakeExpRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,11 +55,6 @@ impl FateTakeExpRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FateTakeExpRewardScRsp| { &m.retcode },
-            |m: &mut FateTakeExpRewardScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "HKEFKHJOEPJ",
             |m: &FateTakeExpRewardScRsp| { &m.HKEFKHJOEPJ },
@@ -74,6 +69,11 @@ impl FateTakeExpRewardScRsp {
             "HPJMJEAJKAC",
             |m: &FateTakeExpRewardScRsp| { &m.HPJMJEAJKAC },
             |m: &mut FateTakeExpRewardScRsp| { &mut m.HPJMJEAJKAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FateTakeExpRewardScRsp| { &m.retcode },
+            |m: &mut FateTakeExpRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateTakeExpRewardScRsp>(
             "FateTakeExpRewardScRsp",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for FateTakeExpRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                50 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.HKEFKHJOEPJ)?;
                 },
-                48 => {
+                16 => {
                     self.HKEFKHJOEPJ.push(is.read_uint32()?);
                 },
-                74 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                114 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.HPJMJEAJKAC)?;
                 },
-                112 => {
+                88 => {
                     self.HPJMJEAJKAC.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,29 +123,29 @@ impl ::protobuf::Message for FateTakeExpRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HKEFKHJOEPJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HKEFKHJOEPJ);
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HPJMJEAJKAC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.HPJMJEAJKAC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.HKEFKHJOEPJ)?;
+        os.write_repeated_packed_uint32(2, &self.HKEFKHJOEPJ)?;
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        os.write_repeated_packed_uint32(14, &self.HPJMJEAJKAC)?;
+        os.write_repeated_packed_uint32(11, &self.HPJMJEAJKAC)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for FateTakeExpRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.HKEFKHJOEPJ.clear();
         self.reward.clear();
         self.HPJMJEAJKAC.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateTakeExpRewardScRsp {
         static instance: FateTakeExpRewardScRsp = FateTakeExpRewardScRsp {
-            retcode: 0,
             HKEFKHJOEPJ: ::std::vec::Vec::new(),
             reward: ::protobuf::MessageField::none(),
             HPJMJEAJKAC: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FateTakeExpRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFateTakeExpRewardScRsp.proto\x1a\x0eItemList.proto\"\x99\x01\n\x16\
-    FateTakeExpRewardScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retco\
-    de\x12\x20\n\x0bHKEFKHJOEPJ\x18\x06\x20\x03(\rR\x0bHKEFKHJOEPJ\x12!\n\
-    \x06reward\x18\t\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bHPJMJE\
-    AJKAC\x18\x0e\x20\x03(\rR\x0bHPJMJEAJKACb\x06proto3\
+    FateTakeExpRewardScRsp\x12\x20\n\x0bHKEFKHJOEPJ\x18\x02\x20\x03(\rR\x0bH\
+    KEFKHJOEPJ\x12!\n\x06reward\x18\x06\x20\x01(\x0b2\t.ItemListR\x06reward\
+    \x12\x20\n\x0bHPJMJEAJKAC\x18\x0b\x20\x03(\rR\x0bHPJMJEAJKAC\x12\x18\n\
+    \x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

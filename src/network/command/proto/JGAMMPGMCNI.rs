@@ -30,10 +30,10 @@ pub struct JGAMMPGMCNI {
     // message fields
     // @@protoc_insertion_point(field:JGAMMPGMCNI.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:JGAMMPGMCNI.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:JGAMMPGMCNI.JNKLNLKHGBB)
     pub JNKLNLKHGBB: ::protobuf::MessageField<super::FHEGNOPNICH::FHEGNOPNICH>,
+    // @@protoc_insertion_point(field:JGAMMPGMCNI.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:JGAMMPGMCNI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl JGAMMPGMCNI {
             |m: &JGAMMPGMCNI| { &m.scene },
             |m: &mut JGAMMPGMCNI| { &mut m.scene },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &JGAMMPGMCNI| { &m.lineup },
-            |m: &mut JGAMMPGMCNI| { &mut m.lineup },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHEGNOPNICH::FHEGNOPNICH>(
             "JNKLNLKHGBB",
             |m: &JGAMMPGMCNI| { &m.JNKLNLKHGBB },
             |m: &mut JGAMMPGMCNI| { &mut m.JNKLNLKHGBB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup",
+            |m: &JGAMMPGMCNI| { &m.lineup },
+            |m: &mut JGAMMPGMCNI| { &mut m.lineup },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JGAMMPGMCNI>(
             "JGAMMPGMCNI",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JGAMMPGMCNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                106 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNKLNLKHGBB)?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for JGAMMPGMCNI {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.JNKLNLKHGBB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.JNKLNLKHGBB.as_ref() {
+        if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -126,13 +126,13 @@ impl ::protobuf::Message for JGAMMPGMCNI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.JNKLNLKHGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,16 +152,16 @@ impl ::protobuf::Message for JGAMMPGMCNI {
 
     fn clear(&mut self) {
         self.scene.clear();
-        self.lineup.clear();
         self.JNKLNLKHGBB.clear();
+        self.lineup.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGAMMPGMCNI {
         static instance: JGAMMPGMCNI = JGAMMPGMCNI {
             scene: ::protobuf::MessageField::none(),
-            lineup: ::protobuf::MessageField::none(),
             JNKLNLKHGBB: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for JGAMMPGMCNI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGAMMPGMCNI.proto\x1a\x11FHEGNOPNICH.proto\x1a\x10LineupInfo.proto\
     \x1a\x0fSceneInfo.proto\"\x84\x01\n\x0bJGAMMPGMCNI\x12\x20\n\x05scene\
-    \x18\n\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\x0c\x20\
-    \x01(\x0b2\x0b.LineupInfoR\x06lineup\x12.\n\x0bJNKLNLKHGBB\x18\r\x20\x01\
-    (\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBBb\x06proto3\
+    \x18\x06\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12.\n\x0bJNKLNLKHGBB\x18\t\
+    \x20\x01(\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBB\x12#\n\x06lineup\x18\x0b\
+    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

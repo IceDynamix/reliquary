@@ -30,10 +30,10 @@ pub struct TakePunkLordPointRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakePunkLordPointRewardScRsp.LEFJBFMDEGK)
     pub LEFJBFMDEGK: bool,
     // special fields
@@ -60,15 +60,15 @@ impl TakePunkLordPointRewardScRsp {
             |m: &TakePunkLordPointRewardScRsp| { &m.retcode },
             |m: &mut TakePunkLordPointRewardScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakePunkLordPointRewardScRsp| { &m.reward },
-            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &TakePunkLordPointRewardScRsp| { &m.level },
             |m: &mut TakePunkLordPointRewardScRsp| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakePunkLordPointRewardScRsp| { &m.reward },
+            |m: &mut TakePunkLordPointRewardScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LEFJBFMDEGK",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                64 => {
+                88 => {
                     self.level = is.read_uint32()?;
                 },
-                112 => {
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                120 => {
                     self.LEFJBFMDEGK = is.read_bool()?;
                 },
                 tag => {
@@ -118,14 +118,14 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
         }
         if self.LEFJBFMDEGK != false {
             my_size += 1 + 1;
@@ -137,16 +137,16 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(11, self.level)?;
+        }
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.LEFJBFMDEGK != false {
-            os.write_bool(14, self.LEFJBFMDEGK)?;
+            os.write_bool(15, self.LEFJBFMDEGK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.reward.clear();
         self.level = 0;
+        self.reward.clear();
         self.LEFJBFMDEGK = false;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for TakePunkLordPointRewardScRsp {
     fn default_instance() -> &'static TakePunkLordPointRewardScRsp {
         static instance: TakePunkLordPointRewardScRsp = TakePunkLordPointRewardScRsp {
             retcode: 0,
-            reward: ::protobuf::MessageField::none(),
             level: 0,
+            reward: ::protobuf::MessageField::none(),
             LEFJBFMDEGK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for TakePunkLordPointRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakePunkLordPointRewardScRsp.proto\x1a\x0eItemList.proto\"\x93\x01\n\
-    \x1cTakePunkLordPointRewardScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\r\
-    R\x07retcode\x12!\n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06rewar\
-    d\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\x20\n\x0bLEFJBFMDE\
-    GK\x18\x0e\x20\x01(\x08R\x0bLEFJBFMDEGKb\x06proto3\
+    \x1cTakePunkLordPointRewardScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
+    \x07retcode\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12!\n\x06re\
+    ward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bLEFJBFMDEG\
+    K\x18\x0f\x20\x01(\x08R\x0bLEFJBFMDEGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

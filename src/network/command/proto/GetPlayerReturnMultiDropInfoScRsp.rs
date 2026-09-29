@@ -30,10 +30,10 @@ pub struct GetPlayerReturnMultiDropInfoScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.FAFFFJGJHHC)
     pub FAFFFJGJHHC: ::std::vec::Vec<super::BMJHAHOLEGH::BMJHAHOLEGH>,
-    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.HDLIGGEMOKM)
     pub HDLIGGEMOKM: ::protobuf::MessageField<super::GCLPBMPOHLI::GCLPBMPOHLI>,
+    // @@protoc_insertion_point(field:GetPlayerReturnMultiDropInfoScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlayerReturnMultiDropInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl GetPlayerReturnMultiDropInfoScRsp {
             |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.FAFFFJGJHHC },
             |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.FAFFFJGJHHC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.retcode },
-            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCLPBMPOHLI::GCLPBMPOHLI>(
             "HDLIGGEMOKM",
             |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.HDLIGGEMOKM },
             |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.HDLIGGEMOKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetPlayerReturnMultiDropInfoScRsp| { &m.retcode },
+            |m: &mut GetPlayerReturnMultiDropInfoScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlayerReturnMultiDropInfoScRsp>(
             "GetPlayerReturnMultiDropInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                50 => {
                     self.FAFFFJGJHHC.push(is.read_message()?);
-                },
-                32 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDLIGGEMOKM)?;
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,12 +111,12 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if let Some(v) = self.HDLIGGEMOKM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FAFFFJGJHHC {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if let Some(v) = self.HDLIGGEMOKM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for GetPlayerReturnMultiDropInfoScRsp {
 
     fn clear(&mut self) {
         self.FAFFFJGJHHC.clear();
-        self.retcode = 0;
         self.HDLIGGEMOKM.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlayerReturnMultiDropInfoScRsp {
         static instance: GetPlayerReturnMultiDropInfoScRsp = GetPlayerReturnMultiDropInfoScRsp {
             FAFFFJGJHHC: ::std::vec::Vec::new(),
-            retcode: 0,
             HDLIGGEMOKM: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -187,9 +187,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPlayerReturnMultiDropInfoScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetPlayerReturnMultiDropInfoScRsp.proto\x1a\x11BMJHAHOLEGH.proto\x1a\
     \x11GCLPBMPOHLI.proto\"\x9d\x01\n!GetPlayerReturnMultiDropInfoScRsp\x12.\
-    \n\x0bFAFFFJGJHHC\x18\x02\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJGJHHC\
-    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bHDLIGGEMO\
-    KM\x18\x0c\x20\x01(\x0b2\x0c.GCLPBMPOHLIR\x0bHDLIGGEMOKMb\x06proto3\
+    \n\x0bFAFFFJGJHHC\x18\x06\x20\x03(\x0b2\x0c.BMJHAHOLEGHR\x0bFAFFFJGJHHC\
+    \x12.\n\x0bHDLIGGEMOKM\x18\x0c\x20\x01(\x0b2\x0c.GCLPBMPOHLIR\x0bHDLIGGE\
+    MOKM\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,13 +79,13 @@ impl ::protobuf::Message for PDEIEDGCOBA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     self.LNPPFHHACPF.push(is.read_message()?);
                 },
-                42 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.GNNBMNHOIFG)?;
                 },
-                40 => {
+                80 => {
                     self.GNNBMNHOIFG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -104,7 +104,7 @@ impl ::protobuf::Message for PDEIEDGCOBA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GNNBMNHOIFG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.GNNBMNHOIFG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -112,9 +112,9 @@ impl ::protobuf::Message for PDEIEDGCOBA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.LNPPFHHACPF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.GNNBMNHOIFG)?;
+        os.write_repeated_packed_uint32(10, &self.GNNBMNHOIFG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PDEIEDGCOBA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PDEIEDGCOBA.proto\x1a\x11CMKMOIGANHN.proto\"_\n\x0bPDEIEDGCOBA\x12\
-    .\n\x0bLNPPFHHACPF\x18\x03\x20\x03(\x0b2\x0c.CMKMOIGANHNR\x0bLNPPFHHACPF\
-    \x12\x20\n\x0bGNNBMNHOIFG\x18\x05\x20\x03(\rR\x0bGNNBMNHOIFGb\x06proto3\
+    .\n\x0bLNPPFHHACPF\x18\x02\x20\x03(\x0b2\x0c.CMKMOIGANHNR\x0bLNPPFHHACPF\
+    \x12\x20\n\x0bGNNBMNHOIFG\x18\n\x20\x03(\rR\x0bGNNBMNHOIFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

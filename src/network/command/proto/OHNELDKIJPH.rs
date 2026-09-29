@@ -37,8 +37,8 @@ pub enum OHNELDKIJPH {
     OHNELDKIJPH_BCJJMPKJKDL = 3,
     // @@protoc_insertion_point(enum_value:OHNELDKIJPH.OHNELDKIJPH_BJOOAEGMCLD)
     OHNELDKIJPH_BJOOAEGMCLD = 4,
-    // @@protoc_insertion_point(enum_value:OHNELDKIJPH.OHNELDKIJPH_battle_rogue_magic_info)
-    OHNELDKIJPH_battle_rogue_magic_info = 5,
+    // @@protoc_insertion_point(enum_value:OHNELDKIJPH.OHNELDKIJPH_CMDDMNHFABN)
+    OHNELDKIJPH_CMDDMNHFABN = 5,
     // @@protoc_insertion_point(enum_value:OHNELDKIJPH.OHNELDKIJPH_PGMNGFMINBK)
     OHNELDKIJPH_PGMNGFMINBK = 6,
     // @@protoc_insertion_point(enum_value:OHNELDKIJPH.OHNELDKIJPH_PLFMKDOCPLP)
@@ -61,7 +61,7 @@ impl ::protobuf::Enum for OHNELDKIJPH {
             2 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_INNIEFKCKBK),
             3 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_BCJJMPKJKDL),
             4 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_BJOOAEGMCLD),
-            5 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_battle_rogue_magic_info),
+            5 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_CMDDMNHFABN),
             6 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_PGMNGFMINBK),
             7 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_PLFMKDOCPLP),
             8 => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_AHHGKPCKAKM),
@@ -76,7 +76,7 @@ impl ::protobuf::Enum for OHNELDKIJPH {
             "OHNELDKIJPH_INNIEFKCKBK" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_INNIEFKCKBK),
             "OHNELDKIJPH_BCJJMPKJKDL" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_BCJJMPKJKDL),
             "OHNELDKIJPH_BJOOAEGMCLD" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_BJOOAEGMCLD),
-            "OHNELDKIJPH_battle_rogue_magic_info" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_battle_rogue_magic_info),
+            "OHNELDKIJPH_CMDDMNHFABN" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_CMDDMNHFABN),
             "OHNELDKIJPH_PGMNGFMINBK" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_PGMNGFMINBK),
             "OHNELDKIJPH_PLFMKDOCPLP" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_PLFMKDOCPLP),
             "OHNELDKIJPH_AHHGKPCKAKM" => ::std::option::Option::Some(OHNELDKIJPH::OHNELDKIJPH_AHHGKPCKAKM),
@@ -90,7 +90,7 @@ impl ::protobuf::Enum for OHNELDKIJPH {
         OHNELDKIJPH::OHNELDKIJPH_INNIEFKCKBK,
         OHNELDKIJPH::OHNELDKIJPH_BCJJMPKJKDL,
         OHNELDKIJPH::OHNELDKIJPH_BJOOAEGMCLD,
-        OHNELDKIJPH::OHNELDKIJPH_battle_rogue_magic_info,
+        OHNELDKIJPH::OHNELDKIJPH_CMDDMNHFABN,
         OHNELDKIJPH::OHNELDKIJPH_PGMNGFMINBK,
         OHNELDKIJPH::OHNELDKIJPH_PLFMKDOCPLP,
         OHNELDKIJPH::OHNELDKIJPH_AHHGKPCKAKM,
@@ -122,13 +122,13 @@ impl OHNELDKIJPH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHNELDKIJPH.proto*\x9e\x02\n\x0bOHNELDKIJPH\x12\x1b\n\x17OHNELDKIJ\
+    \n\x11OHNELDKIJPH.proto*\x92\x02\n\x0bOHNELDKIJPH\x12\x1b\n\x17OHNELDKIJ\
     PH_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17OHNELDKIJPH_OMJAJHFCBJM\x10\x01\x12\
     \x1b\n\x17OHNELDKIJPH_INNIEFKCKBK\x10\x02\x12\x1b\n\x17OHNELDKIJPH_BCJJM\
-    PKJKDL\x10\x03\x12\x1b\n\x17OHNELDKIJPH_BJOOAEGMCLD\x10\x04\x12'\n#OHNEL\
-    DKIJPH_battle_rogue_magic_info\x10\x05\x12\x1b\n\x17OHNELDKIJPH_PGMNGFMI\
-    NBK\x10\x06\x12\x1b\n\x17OHNELDKIJPH_PLFMKDOCPLP\x10\x07\x12\x1b\n\x17OH\
-    NELDKIJPH_AHHGKPCKAKM\x10\x08b\x06proto3\
+    PKJKDL\x10\x03\x12\x1b\n\x17OHNELDKIJPH_BJOOAEGMCLD\x10\x04\x12\x1b\n\
+    \x17OHNELDKIJPH_CMDDMNHFABN\x10\x05\x12\x1b\n\x17OHNELDKIJPH_PGMNGFMINBK\
+    \x10\x06\x12\x1b\n\x17OHNELDKIJPH_PLFMKDOCPLP\x10\x07\x12\x1b\n\x17OHNEL\
+    DKIJPH_AHHGKPCKAKM\x10\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

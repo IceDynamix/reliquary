@@ -30,15 +30,15 @@ pub enum BJJBIJMNDCA {
     // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_NLCDGIPGFDJ)
     BJJBIJMNDCA_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_NFDAILAEGAA)
-    BJJBIJMNDCA_NFDAILAEGAA = 7152,
-    // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_OAMHFHNBNGK)
-    BJJBIJMNDCA_OAMHFHNBNGK = 7154,
-    // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_JHOLICGFNOB)
-    BJJBIJMNDCA_JHOLICGFNOB = 7153,
+    BJJBIJMNDCA_NFDAILAEGAA = 7160,
     // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_KGEJMFBEJGB)
-    BJJBIJMNDCA_KGEJMFBEJGB = 7159,
+    BJJBIJMNDCA_KGEJMFBEJGB = 7152,
     // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_FNDOIOMCDBE)
-    BJJBIJMNDCA_FNDOIOMCDBE = 7156,
+    BJJBIJMNDCA_FNDOIOMCDBE = 7154,
+    // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_OAMHFHNBNGK)
+    BJJBIJMNDCA_OAMHFHNBNGK = 7153,
+    // @@protoc_insertion_point(enum_value:BJJBIJMNDCA.BJJBIJMNDCA_JHOLICGFNOB)
+    BJJBIJMNDCA_JHOLICGFNOB = 7159,
 }
 
 impl ::protobuf::Enum for BJJBIJMNDCA {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for BJJBIJMNDCA {
     fn from_i32(value: i32) -> ::std::option::Option<BJJBIJMNDCA> {
         match value {
             0 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_NLCDGIPGFDJ),
-            7152 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_NFDAILAEGAA),
-            7154 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK),
-            7153 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB),
-            7159 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB),
-            7156 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE),
+            7160 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_NFDAILAEGAA),
+            7152 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB),
+            7154 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE),
+            7153 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK),
+            7159 => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB),
             _ => ::std::option::Option::None
         }
     }
@@ -64,10 +64,10 @@ impl ::protobuf::Enum for BJJBIJMNDCA {
         match str {
             "BJJBIJMNDCA_NLCDGIPGFDJ" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_NLCDGIPGFDJ),
             "BJJBIJMNDCA_NFDAILAEGAA" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_NFDAILAEGAA),
-            "BJJBIJMNDCA_OAMHFHNBNGK" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK),
-            "BJJBIJMNDCA_JHOLICGFNOB" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB),
             "BJJBIJMNDCA_KGEJMFBEJGB" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB),
             "BJJBIJMNDCA_FNDOIOMCDBE" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE),
+            "BJJBIJMNDCA_OAMHFHNBNGK" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK),
+            "BJJBIJMNDCA_JHOLICGFNOB" => ::std::option::Option::Some(BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB),
             _ => ::std::option::Option::None
         }
     }
@@ -75,10 +75,10 @@ impl ::protobuf::Enum for BJJBIJMNDCA {
     const VALUES: &'static [BJJBIJMNDCA] = &[
         BJJBIJMNDCA::BJJBIJMNDCA_NLCDGIPGFDJ,
         BJJBIJMNDCA::BJJBIJMNDCA_NFDAILAEGAA,
-        BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK,
-        BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB,
         BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB,
         BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE,
+        BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK,
+        BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB,
     ];
 }
 
@@ -92,10 +92,10 @@ impl ::protobuf::EnumFull for BJJBIJMNDCA {
         let index = match self {
             BJJBIJMNDCA::BJJBIJMNDCA_NLCDGIPGFDJ => 0,
             BJJBIJMNDCA::BJJBIJMNDCA_NFDAILAEGAA => 1,
-            BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK => 2,
-            BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB => 3,
-            BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB => 4,
-            BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE => 5,
+            BJJBIJMNDCA::BJJBIJMNDCA_KGEJMFBEJGB => 2,
+            BJJBIJMNDCA::BJJBIJMNDCA_FNDOIOMCDBE => 3,
+            BJJBIJMNDCA::BJJBIJMNDCA_OAMHFHNBNGK => 4,
+            BJJBIJMNDCA::BJJBIJMNDCA_JHOLICGFNOB => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,10 +115,10 @@ impl BJJBIJMNDCA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BJJBIJMNDCA.proto*\xc0\x01\n\x0bBJJBIJMNDCA\x12\x1b\n\x17BJJBIJMND\
-    CA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJJBIJMNDCA_NFDAILAEGAA\x10\xf07\x12\
-    \x1c\n\x17BJJBIJMNDCA_OAMHFHNBNGK\x10\xf27\x12\x1c\n\x17BJJBIJMNDCA_JHOL\
-    ICGFNOB\x10\xf17\x12\x1c\n\x17BJJBIJMNDCA_KGEJMFBEJGB\x10\xf77\x12\x1c\n\
-    \x17BJJBIJMNDCA_FNDOIOMCDBE\x10\xf47b\x06proto3\
+    CA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJJBIJMNDCA_NFDAILAEGAA\x10\xf87\x12\
+    \x1c\n\x17BJJBIJMNDCA_KGEJMFBEJGB\x10\xf07\x12\x1c\n\x17BJJBIJMNDCA_FNDO\
+    IOMCDBE\x10\xf27\x12\x1c\n\x17BJJBIJMNDCA_OAMHFHNBNGK\x10\xf17\x12\x1c\n\
+    \x17BJJBIJMNDCA_JHOLICGFNOB\x10\xf77b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

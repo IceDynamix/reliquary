@@ -59,6 +59,10 @@ pub enum DNLHKFILMLB {
     DNLHKFILMLB_HFEHCCHFODI = 14,
     // @@protoc_insertion_point(enum_value:DNLHKFILMLB.DNLHKFILMLB_MHMIHLMAFJL)
     DNLHKFILMLB_MHMIHLMAFJL = 15,
+    // @@protoc_insertion_point(enum_value:DNLHKFILMLB.DNLHKFILMLB_CPNKAFCFHDE)
+    DNLHKFILMLB_CPNKAFCFHDE = 16,
+    // @@protoc_insertion_point(enum_value:DNLHKFILMLB.DNLHKFILMLB_HDBMGGJMLIN)
+    DNLHKFILMLB_HDBMGGJMLIN = 17,
 }
 
 impl ::protobuf::Enum for DNLHKFILMLB {
@@ -86,6 +90,8 @@ impl ::protobuf::Enum for DNLHKFILMLB {
             13 => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_INCFIPCBFLH),
             14 => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_HFEHCCHFODI),
             15 => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_MHMIHLMAFJL),
+            16 => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_CPNKAFCFHDE),
+            17 => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_HDBMGGJMLIN),
             _ => ::std::option::Option::None
         }
     }
@@ -108,6 +114,8 @@ impl ::protobuf::Enum for DNLHKFILMLB {
             "DNLHKFILMLB_INCFIPCBFLH" => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_INCFIPCBFLH),
             "DNLHKFILMLB_HFEHCCHFODI" => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_HFEHCCHFODI),
             "DNLHKFILMLB_MHMIHLMAFJL" => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_MHMIHLMAFJL),
+            "DNLHKFILMLB_CPNKAFCFHDE" => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_CPNKAFCFHDE),
+            "DNLHKFILMLB_HDBMGGJMLIN" => ::std::option::Option::Some(DNLHKFILMLB::DNLHKFILMLB_HDBMGGJMLIN),
             _ => ::std::option::Option::None
         }
     }
@@ -129,6 +137,8 @@ impl ::protobuf::Enum for DNLHKFILMLB {
         DNLHKFILMLB::DNLHKFILMLB_INCFIPCBFLH,
         DNLHKFILMLB::DNLHKFILMLB_HFEHCCHFODI,
         DNLHKFILMLB::DNLHKFILMLB_MHMIHLMAFJL,
+        DNLHKFILMLB::DNLHKFILMLB_CPNKAFCFHDE,
+        DNLHKFILMLB::DNLHKFILMLB_HDBMGGJMLIN,
     ];
 }
 
@@ -157,7 +167,7 @@ impl DNLHKFILMLB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DNLHKFILMLB.proto*\xdd\x03\n\x0bDNLHKFILMLB\x12\x1b\n\x17DNLHKFILM\
+    \n\x11DNLHKFILMLB.proto*\x97\x04\n\x0bDNLHKFILMLB\x12\x1b\n\x17DNLHKFILM\
     LB_JHICPCLLELB\x10\0\x12\x1b\n\x17DNLHKFILMLB_GOCKJAONOPC\x10\x01\x12\
     \x1b\n\x17DNLHKFILMLB_POFPAAJAFPC\x10\x02\x12\x1b\n\x17DNLHKFILMLB_OENGN\
     IFBPGE\x10\x03\x12\x1b\n\x17DNLHKFILMLB_IDGLNHCHPEB\x10\x04\x12\x1b\n\
@@ -167,7 +177,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12\x1b\n\x17DNLHKFILMLB_GFGCHCLAPOB\x10\n\x12\x1b\n\x17DNLHKFILMLB_EMB\
     PPEMIGAD\x10\x0b\x12\x1b\n\x17DNLHKFILMLB_PPNLKFJAGNC\x10\x0c\x12\x1b\n\
     \x17DNLHKFILMLB_INCFIPCBFLH\x10\r\x12\x1b\n\x17DNLHKFILMLB_HFEHCCHFODI\
-    \x10\x0e\x12\x1b\n\x17DNLHKFILMLB_MHMIHLMAFJL\x10\x0fb\x06proto3\
+    \x10\x0e\x12\x1b\n\x17DNLHKFILMLB_MHMIHLMAFJL\x10\x0f\x12\x1b\n\x17DNLHK\
+    FILMLB_CPNKAFCFHDE\x10\x10\x12\x1b\n\x17DNLHKFILMLB_HDBMGGJMLIN\x10\x11b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

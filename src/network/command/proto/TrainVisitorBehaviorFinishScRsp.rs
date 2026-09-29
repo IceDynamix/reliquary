@@ -30,10 +30,10 @@ pub struct TrainVisitorBehaviorFinishScRsp {
     // message fields
     // @@protoc_insertion_point(field:TrainVisitorBehaviorFinishScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TrainVisitorBehaviorFinishScRsp.DOOACEHOPEE)
-    pub DOOACEHOPEE: u32,
     // @@protoc_insertion_point(field:TrainVisitorBehaviorFinishScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TrainVisitorBehaviorFinishScRsp.DOOACEHOPEE)
+    pub DOOACEHOPEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainVisitorBehaviorFinishScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl TrainVisitorBehaviorFinishScRsp {
             |m: &mut TrainVisitorBehaviorFinishScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOOACEHOPEE",
-            |m: &TrainVisitorBehaviorFinishScRsp| { &m.DOOACEHOPEE },
-            |m: &mut TrainVisitorBehaviorFinishScRsp| { &mut m.DOOACEHOPEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrainVisitorBehaviorFinishScRsp| { &m.retcode },
             |m: &mut TrainVisitorBehaviorFinishScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOOACEHOPEE",
+            |m: &TrainVisitorBehaviorFinishScRsp| { &m.DOOACEHOPEE },
+            |m: &mut TrainVisitorBehaviorFinishScRsp| { &mut m.DOOACEHOPEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainVisitorBehaviorFinishScRsp>(
             "TrainVisitorBehaviorFinishScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TrainVisitorBehaviorFinishScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 104 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for TrainVisitorBehaviorFinishScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
         if self.DOOACEHOPEE != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.DOOACEHOPEE);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for TrainVisitorBehaviorFinishScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
         }
         if self.DOOACEHOPEE != 0 {
             os.write_uint32(13, self.DOOACEHOPEE)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TrainVisitorBehaviorFinishScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.DOOACEHOPEE = 0;
         self.retcode = 0;
+        self.DOOACEHOPEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainVisitorBehaviorFinishScRsp {
         static instance: TrainVisitorBehaviorFinishScRsp = TrainVisitorBehaviorFinishScRsp {
             reward: ::protobuf::MessageField::none(),
-            DOOACEHOPEE: 0,
             retcode: 0,
+            DOOACEHOPEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainVisitorBehaviorFinishScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrainVisitorBehaviorFinishScRsp.proto\x1a\x0eItemList.proto\"\x80\x01\
-    \n\x1fTrainVisitorBehaviorFinishScRsp\x12!\n\x06reward\x18\x07\x20\x01(\
-    \x0b2\t.ItemListR\x06reward\x12\x20\n\x0bDOOACEHOPEE\x18\r\x20\x01(\rR\
-    \x0bDOOACEHOPEE\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x1fTrainVisitorBehaviorFinishScRsp\x12!\n\x06reward\x18\x06\x20\x01(\
+    \x0b2\t.ItemListR\x06reward\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07re\
+    tcode\x12\x20\n\x0bDOOACEHOPEE\x18\r\x20\x01(\rR\x0bDOOACEHOPEEb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

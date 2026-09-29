@@ -72,7 +72,7 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                122 => {
                     self.FGBAPJKDFOC.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AetherDivideSpiritInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FGBAPJKDFOC {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for AetherDivideSpiritInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$AetherDivideSpiritInfoScNotify.proto\x1a\x11GHBICGMEFPL.proto\"P\n\
-    \x1eAetherDivideSpiritInfoScNotify\x12.\n\x0bFGBAPJKDFOC\x18\x08\x20\x03\
+    \x1eAetherDivideSpiritInfoScNotify\x12.\n\x0bFGBAPJKDFOC\x18\x0f\x20\x03\
     (\x0b2\x0c.GHBICGMEFPLR\x0bFGBAPJKDFOCb\x06proto3\
 ";
 

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum APDINKHBHGC {
     // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_NLCDGIPGFDJ)
     APDINKHBHGC_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_DDHLPICBNLN)
-    APDINKHBHGC_DDHLPICBNLN = 2447,
     // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_DFIEHBOAJDG)
-    APDINKHBHGC_DFIEHBOAJDG = 2427,
-    // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_CMNBINBILDO)
-    APDINKHBHGC_CMNBINBILDO = 2414,
+    APDINKHBHGC_DFIEHBOAJDG = 2416,
+    // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_DDHLPICBNLN)
+    APDINKHBHGC_DDHLPICBNLN = 2404,
     // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_CECCNMFJEPB)
-    APDINKHBHGC_CECCNMFJEPB = 2412,
+    APDINKHBHGC_CECCNMFJEPB = 2411,
+    // @@protoc_insertion_point(enum_value:APDINKHBHGC.APDINKHBHGC_CMNBINBILDO)
+    APDINKHBHGC_CMNBINBILDO = 2426,
 }
 
 impl ::protobuf::Enum for APDINKHBHGC {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for APDINKHBHGC {
     fn from_i32(value: i32) -> ::std::option::Option<APDINKHBHGC> {
         match value {
             0 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_NLCDGIPGFDJ),
-            2447 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN),
-            2427 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG),
-            2414 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CMNBINBILDO),
-            2412 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB),
+            2416 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG),
+            2404 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN),
+            2411 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB),
+            2426 => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CMNBINBILDO),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for APDINKHBHGC {
     fn from_str(str: &str) -> ::std::option::Option<APDINKHBHGC> {
         match str {
             "APDINKHBHGC_NLCDGIPGFDJ" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_NLCDGIPGFDJ),
-            "APDINKHBHGC_DDHLPICBNLN" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN),
             "APDINKHBHGC_DFIEHBOAJDG" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG),
-            "APDINKHBHGC_CMNBINBILDO" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CMNBINBILDO),
+            "APDINKHBHGC_DDHLPICBNLN" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN),
             "APDINKHBHGC_CECCNMFJEPB" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB),
+            "APDINKHBHGC_CMNBINBILDO" => ::std::option::Option::Some(APDINKHBHGC::APDINKHBHGC_CMNBINBILDO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [APDINKHBHGC] = &[
         APDINKHBHGC::APDINKHBHGC_NLCDGIPGFDJ,
-        APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN,
         APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG,
-        APDINKHBHGC::APDINKHBHGC_CMNBINBILDO,
+        APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN,
         APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB,
+        APDINKHBHGC::APDINKHBHGC_CMNBINBILDO,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for APDINKHBHGC {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             APDINKHBHGC::APDINKHBHGC_NLCDGIPGFDJ => 0,
-            APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN => 1,
-            APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG => 2,
-            APDINKHBHGC::APDINKHBHGC_CMNBINBILDO => 3,
-            APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB => 4,
+            APDINKHBHGC::APDINKHBHGC_DFIEHBOAJDG => 1,
+            APDINKHBHGC::APDINKHBHGC_DDHLPICBNLN => 2,
+            APDINKHBHGC::APDINKHBHGC_CECCNMFJEPB => 3,
+            APDINKHBHGC::APDINKHBHGC_CMNBINBILDO => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl APDINKHBHGC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11APDINKHBHGC.proto*\xa2\x01\n\x0bAPDINKHBHGC\x12\x1b\n\x17APDINKHBH\
-    GC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APDINKHBHGC_DDHLPICBNLN\x10\x8f\x13\
-    \x12\x1c\n\x17APDINKHBHGC_DFIEHBOAJDG\x10\xfb\x12\x12\x1c\n\x17APDINKHBH\
-    GC_CMNBINBILDO\x10\xee\x12\x12\x1c\n\x17APDINKHBHGC_CECCNMFJEPB\x10\xec\
+    GC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APDINKHBHGC_DFIEHBOAJDG\x10\xf0\x12\
+    \x12\x1c\n\x17APDINKHBHGC_DDHLPICBNLN\x10\xe4\x12\x12\x1c\n\x17APDINKHBH\
+    GC_CECCNMFJEPB\x10\xeb\x12\x12\x1c\n\x17APDINKHBHGC_CMNBINBILDO\x10\xfa\
     \x12b\x06proto3\
 ";
 

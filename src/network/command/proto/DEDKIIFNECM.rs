@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DEDKIIFNECM {
     // message fields
-    // @@protoc_insertion_point(field:DEDKIIFNECM.APHMBADNMPH)
-    pub APHMBADNMPH: i32,
-    // @@protoc_insertion_point(field:DEDKIIFNECM.item_id)
-    pub item_id: u32,
+    // @@protoc_insertion_point(field:DEDKIIFNECM.KNKFPENAPBF)
+    pub KNKFPENAPBF: i32,
     // @@protoc_insertion_point(field:DEDKIIFNECM.EPLJKOLIPCI)
     pub EPLJKOLIPCI: u32,
     // @@protoc_insertion_point(field:DEDKIIFNECM.NMELCPIOKNO)
     pub NMELCPIOKNO: u32,
-    // @@protoc_insertion_point(field:DEDKIIFNECM.KNKFPENAPBF)
-    pub KNKFPENAPBF: i32,
+    // @@protoc_insertion_point(field:DEDKIIFNECM.item_id)
+    pub item_id: u32,
+    // @@protoc_insertion_point(field:DEDKIIFNECM.APHMBADNMPH)
+    pub APHMBADNMPH: i32,
     // special fields
     // @@protoc_insertion_point(special_field:DEDKIIFNECM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl DEDKIIFNECM {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APHMBADNMPH",
-            |m: &DEDKIIFNECM| { &m.APHMBADNMPH },
-            |m: &mut DEDKIIFNECM| { &mut m.APHMBADNMPH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_id",
-            |m: &DEDKIIFNECM| { &m.item_id },
-            |m: &mut DEDKIIFNECM| { &mut m.item_id },
+            "KNKFPENAPBF",
+            |m: &DEDKIIFNECM| { &m.KNKFPENAPBF },
+            |m: &mut DEDKIIFNECM| { &mut m.KNKFPENAPBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EPLJKOLIPCI",
@@ -78,9 +73,14 @@ impl DEDKIIFNECM {
             |m: &mut DEDKIIFNECM| { &mut m.NMELCPIOKNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNKFPENAPBF",
-            |m: &DEDKIIFNECM| { &m.KNKFPENAPBF },
-            |m: &mut DEDKIIFNECM| { &mut m.KNKFPENAPBF },
+            "item_id",
+            |m: &DEDKIIFNECM| { &m.item_id },
+            |m: &mut DEDKIIFNECM| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "APHMBADNMPH",
+            |m: &DEDKIIFNECM| { &m.APHMBADNMPH },
+            |m: &mut DEDKIIFNECM| { &mut m.APHMBADNMPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DEDKIIFNECM>(
             "DEDKIIFNECM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DEDKIIFNECM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.APHMBADNMPH = is.read_int32()?;
+                24 => {
+                    self.KNKFPENAPBF = is.read_int32()?;
                 },
                 32 => {
-                    self.item_id = is.read_uint32()?;
-                },
-                48 => {
                     self.EPLJKOLIPCI = is.read_uint32()?;
                 },
-                80 => {
+                40 => {
                     self.NMELCPIOKNO = is.read_uint32()?;
                 },
-                112 => {
-                    self.KNKFPENAPBF = is.read_int32()?;
+                64 => {
+                    self.item_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.APHMBADNMPH = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for DEDKIIFNECM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APHMBADNMPH != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.APHMBADNMPH);
-        }
-        if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.item_id);
+        if self.KNKFPENAPBF != 0 {
+            my_size += ::protobuf::rt::int32_size(3, self.KNKFPENAPBF);
         }
         if self.EPLJKOLIPCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EPLJKOLIPCI);
+            my_size += ::protobuf::rt::uint32_size(4, self.EPLJKOLIPCI);
         }
         if self.NMELCPIOKNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NMELCPIOKNO);
+            my_size += ::protobuf::rt::uint32_size(5, self.NMELCPIOKNO);
         }
-        if self.KNKFPENAPBF != 0 {
-            my_size += ::protobuf::rt::int32_size(14, self.KNKFPENAPBF);
+        if self.item_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+        }
+        if self.APHMBADNMPH != 0 {
+            my_size += ::protobuf::rt::int32_size(12, self.APHMBADNMPH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for DEDKIIFNECM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APHMBADNMPH != 0 {
-            os.write_int32(2, self.APHMBADNMPH)?;
-        }
-        if self.item_id != 0 {
-            os.write_uint32(4, self.item_id)?;
+        if self.KNKFPENAPBF != 0 {
+            os.write_int32(3, self.KNKFPENAPBF)?;
         }
         if self.EPLJKOLIPCI != 0 {
-            os.write_uint32(6, self.EPLJKOLIPCI)?;
+            os.write_uint32(4, self.EPLJKOLIPCI)?;
         }
         if self.NMELCPIOKNO != 0 {
-            os.write_uint32(10, self.NMELCPIOKNO)?;
+            os.write_uint32(5, self.NMELCPIOKNO)?;
         }
-        if self.KNKFPENAPBF != 0 {
-            os.write_int32(14, self.KNKFPENAPBF)?;
+        if self.item_id != 0 {
+            os.write_uint32(8, self.item_id)?;
+        }
+        if self.APHMBADNMPH != 0 {
+            os.write_int32(12, self.APHMBADNMPH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for DEDKIIFNECM {
     }
 
     fn clear(&mut self) {
-        self.APHMBADNMPH = 0;
-        self.item_id = 0;
+        self.KNKFPENAPBF = 0;
         self.EPLJKOLIPCI = 0;
         self.NMELCPIOKNO = 0;
-        self.KNKFPENAPBF = 0;
+        self.item_id = 0;
+        self.APHMBADNMPH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DEDKIIFNECM {
         static instance: DEDKIIFNECM = DEDKIIFNECM {
-            APHMBADNMPH: 0,
-            item_id: 0,
+            KNKFPENAPBF: 0,
             EPLJKOLIPCI: 0,
             NMELCPIOKNO: 0,
-            KNKFPENAPBF: 0,
+            item_id: 0,
+            APHMBADNMPH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for DEDKIIFNECM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DEDKIIFNECM.proto\"\xae\x01\n\x0bDEDKIIFNECM\x12\x20\n\x0bAPHMBADN\
-    MPH\x18\x02\x20\x01(\x05R\x0bAPHMBADNMPH\x12\x17\n\x07item_id\x18\x04\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bEPLJKOLIPCI\x18\x06\x20\x01(\rR\x0bE\
-    PLJKOLIPCI\x12\x20\n\x0bNMELCPIOKNO\x18\n\x20\x01(\rR\x0bNMELCPIOKNO\x12\
-    \x20\n\x0bKNKFPENAPBF\x18\x0e\x20\x01(\x05R\x0bKNKFPENAPBFb\x06proto3\
+    \n\x11DEDKIIFNECM.proto\"\xae\x01\n\x0bDEDKIIFNECM\x12\x20\n\x0bKNKFPENA\
+    PBF\x18\x03\x20\x01(\x05R\x0bKNKFPENAPBF\x12\x20\n\x0bEPLJKOLIPCI\x18\
+    \x04\x20\x01(\rR\x0bEPLJKOLIPCI\x12\x20\n\x0bNMELCPIOKNO\x18\x05\x20\x01\
+    (\rR\x0bNMELCPIOKNO\x12\x17\n\x07item_id\x18\x08\x20\x01(\rR\x06itemId\
+    \x12\x20\n\x0bAPHMBADNMPH\x18\x0c\x20\x01(\x05R\x0bAPHMBADNMPHb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

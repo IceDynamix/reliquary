@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateShopBuyGoodsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FateShopBuyGoodsScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FateShopBuyGoodsScRsp.COCLMANMAAI)
     pub COCLMANMAAI: u32,
+    // @@protoc_insertion_point(field:FateShopBuyGoodsScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FateShopBuyGoodsScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FateShopBuyGoodsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FateShopBuyGoodsScRsp| { &m.retcode },
-            |m: &mut FateShopBuyGoodsScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "COCLMANMAAI",
             |m: &FateShopBuyGoodsScRsp| { &m.COCLMANMAAI },
             |m: &mut FateShopBuyGoodsScRsp| { &mut m.COCLMANMAAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FateShopBuyGoodsScRsp| { &m.retcode },
+            |m: &mut FateShopBuyGoodsScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateShopBuyGoodsScRsp>(
             "FateShopBuyGoodsScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                104 => {
+                32 => {
                     self.COCLMANMAAI = is.read_uint32()?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         if self.COCLMANMAAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.COCLMANMAAI);
+            my_size += ::protobuf::rt::uint32_size(4, self.COCLMANMAAI);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
         if self.COCLMANMAAI != 0 {
-            os.write_uint32(13, self.COCLMANMAAI)?;
+            os.write_uint32(4, self.COCLMANMAAI)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.COCLMANMAAI = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateShopBuyGoodsScRsp {
         static instance: FateShopBuyGoodsScRsp = FateShopBuyGoodsScRsp {
-            retcode: 0,
             COCLMANMAAI: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FateShopBuyGoodsScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bFateShopBuyGoodsScRsp.proto\"S\n\x15FateShopBuyGoodsScRsp\x12\x18\
-    \n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bCOCLMANMAAI\x18\
-    \r\x20\x01(\rR\x0bCOCLMANMAAIb\x06proto3\
+    \n\x1bFateShopBuyGoodsScRsp.proto\"S\n\x15FateShopBuyGoodsScRsp\x12\x20\
+    \n\x0bCOCLMANMAAI\x18\x04\x20\x01(\rR\x0bCOCLMANMAAI\x12\x18\n\x07retcod\
+    e\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

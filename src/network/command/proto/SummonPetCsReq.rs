@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SummonPetCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SummonPetCsReq.summoned_pet_id)
-    pub summoned_pet_id: u32,
+    // @@protoc_insertion_point(field:SummonPetCsReq.LLGIIPALELD)
+    pub LLGIIPALELD: ::protobuf::EnumOrUnknown<super::EOGNOEJHAGN::EOGNOEJHAGN>,
+    // message oneof groups
+    pub HGEOKHHJAIE: ::std::option::Option<summon_pet_cs_req::HGEOKHHJAIE>,
     // special fields
     // @@protoc_insertion_point(special_field:SummonPetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -46,14 +48,77 @@ impl SummonPetCsReq {
         ::std::default::Default::default()
     }
 
+    // uint32 ODNGMIJLKKA = 1;
+
+    pub fn ODNGMIJLKKA(&self) -> u32 {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_ODNGMIJLKKA(&mut self) {
+        self.HGEOKHHJAIE = ::std::option::Option::None;
+    }
+
+    pub fn has_ODNGMIJLKKA(&self) -> bool {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ODNGMIJLKKA(&mut self, v: u32) {
+        self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v))
+    }
+
+    // uint64 EBAAFDHEPLO = 14;
+
+    pub fn EBAAFDHEPLO(&self) -> u64 {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_EBAAFDHEPLO(&mut self) {
+        self.HGEOKHHJAIE = ::std::option::Option::None;
+    }
+
+    pub fn has_EBAAFDHEPLO(&self) -> bool {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EBAAFDHEPLO(&mut self, v: u64) {
+        self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
-        let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "summoned_pet_id",
-            |m: &SummonPetCsReq| { &m.summoned_pet_id },
-            |m: &mut SummonPetCsReq| { &mut m.summoned_pet_id },
+            "LLGIIPALELD",
+            |m: &SummonPetCsReq| { &m.LLGIIPALELD },
+            |m: &mut SummonPetCsReq| { &mut m.LLGIIPALELD },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "ODNGMIJLKKA",
+            SummonPetCsReq::has_ODNGMIJLKKA,
+            SummonPetCsReq::ODNGMIJLKKA,
+            SummonPetCsReq::set_ODNGMIJLKKA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "EBAAFDHEPLO",
+            SummonPetCsReq::has_EBAAFDHEPLO,
+            SummonPetCsReq::EBAAFDHEPLO,
+            SummonPetCsReq::set_EBAAFDHEPLO,
+        ));
+        oneofs.push(summon_pet_cs_req::HGEOKHHJAIE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SummonPetCsReq>(
             "SummonPetCsReq",
             fields,
@@ -72,8 +137,14 @@ impl ::protobuf::Message for SummonPetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                104 => {
+                    self.LLGIIPALELD = is.read_enum_or_unknown()?;
+                },
+                8 => {
+                    self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(is.read_uint32()?));
+                },
                 112 => {
-                    self.summoned_pet_id = is.read_uint32()?;
+                    self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(is.read_uint64()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +158,18 @@ impl ::protobuf::Message for SummonPetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.summoned_pet_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.summoned_pet_id);
+        if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.LLGIIPALELD.value());
+        }
+        if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
+            match v {
+                &summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1, v);
+                },
+                &summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
+                    my_size += ::protobuf::rt::uint64_size(14, v);
+                },
+            };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +177,18 @@ impl ::protobuf::Message for SummonPetCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.summoned_pet_id != 0 {
-            os.write_uint32(14, self.summoned_pet_id)?;
+        if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.LLGIIPALELD))?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
+            match v {
+                &summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
+                    os.write_uint32(1, v)?;
+                },
+                &summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
+                    os.write_uint64(14, v)?;
+                },
+            };
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +207,16 @@ impl ::protobuf::Message for SummonPetCsReq {
     }
 
     fn clear(&mut self) {
-        self.summoned_pet_id = 0;
+        self.LLGIIPALELD = ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ);
+        self.HGEOKHHJAIE = ::std::option::Option::None;
+        self.HGEOKHHJAIE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SummonPetCsReq {
         static instance: SummonPetCsReq = SummonPetCsReq {
-            summoned_pet_id: 0,
+            LLGIIPALELD: ::protobuf::EnumOrUnknown::from_i32(0),
+            HGEOKHHJAIE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,9 +240,42 @@ impl ::protobuf::reflect::ProtobufValue for SummonPetCsReq {
     type RuntimeType = ::protobuf::reflect::rt::RuntimeTypeMessage<Self>;
 }
 
+/// Nested message and enums of message `SummonPetCsReq`
+pub mod summon_pet_cs_req {
+
+    #[derive(Clone,PartialEq,Debug)]
+    #[non_exhaustive]
+    // @@protoc_insertion_point(oneof:SummonPetCsReq.HGEOKHHJAIE)
+    pub enum HGEOKHHJAIE {
+        // @@protoc_insertion_point(oneof_field:SummonPetCsReq.ODNGMIJLKKA)
+        ODNGMIJLKKA(u32),
+        // @@protoc_insertion_point(oneof_field:SummonPetCsReq.EBAAFDHEPLO)
+        EBAAFDHEPLO(u64),
+    }
+
+    impl ::protobuf::Oneof for HGEOKHHJAIE {
+    }
+
+    impl ::protobuf::OneofFull for HGEOKHHJAIE {
+        fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
+            static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
+            descriptor.get(|| <super::SummonPetCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("HGEOKHHJAIE").unwrap()).clone()
+        }
+    }
+
+    impl HGEOKHHJAIE {
+        pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HGEOKHHJAIE>("HGEOKHHJAIE")
+        }
+    }
+}
+
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14SummonPetCsReq.proto\"8\n\x0eSummonPetCsReq\x12&\n\x0fsummoned_pet\
-    _id\x18\x0e\x20\x01(\rR\rsummonedPetIdb\x06proto3\
+    \n\x14SummonPetCsReq.proto\x1a\x11EOGNOEJHAGN.proto\"\x97\x01\n\x0eSummo\
+    nPetCsReq\x12.\n\x0bLLGIIPALELD\x18\r\x20\x01(\x0e2\x0c.EOGNOEJHAGNR\x0b\
+    LLGIIPALELD\x12\"\n\x0bODNGMIJLKKA\x18\x01\x20\x01(\rH\0R\x0bODNGMIJLKKA\
+    \x12\"\n\x0bEBAAFDHEPLO\x18\x0e\x20\x01(\x04H\0R\x0bEBAAFDHEPLOB\r\n\x0b\
+    HGEOKHHJAIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -165,7 +292,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::EOGNOEJHAGN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SummonPetCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

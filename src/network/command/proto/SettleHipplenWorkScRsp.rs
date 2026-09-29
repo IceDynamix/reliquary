@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SettleHipplenWorkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.IPDLBJHAJOO)
-    pub IPDLBJHAJOO: ::protobuf::MessageField<super::GEFEDOAOKNO::GEFEDOAOKNO>,
     // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.BNIFMIPPIMA)
     pub BNIFMIPPIMA: ::std::vec::Vec<super::ANHJKLLEKKB::ANHJKLLEKKB>,
     // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.NEMFNENACNB)
     pub NEMFNENACNB: ::std::vec::Vec<super::AFEDHCKDDFA::AFEDHCKDDFA>,
+    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.IPDLBJHAJOO)
+    pub IPDLBJHAJOO: ::protobuf::MessageField<super::GEFEDOAOKNO::GEFEDOAOKNO>,
     // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.retcode)
     pub retcode: u32,
     // message oneof groups
@@ -54,7 +54,7 @@ impl SettleHipplenWorkScRsp {
         ::std::default::Default::default()
     }
 
-    // .DMLACLLDCCE HBGCOIAGDIG = 9;
+    // .DMLACLLDCCE HBGCOIAGDIG = 8;
 
     pub fn HBGCOIAGDIG(&self) -> &super::DMLACLLDCCE::DMLACLLDCCE {
         match self.MEJDDIPIEKK {
@@ -103,7 +103,7 @@ impl SettleHipplenWorkScRsp {
         }
     }
 
-    // .LKFFMLJMGOB LONKNKFDPII = 1;
+    // .LKFFMLJMGOB LONKNKFDPII = 14;
 
     pub fn LONKNKFDPII(&self) -> &super::LKFFMLJMGOB::LKFFMLJMGOB {
         match self.MEJDDIPIEKK {
@@ -155,11 +155,6 @@ impl SettleHipplenWorkScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEFEDOAOKNO::GEFEDOAOKNO>(
-            "IPDLBJHAJOO",
-            |m: &SettleHipplenWorkScRsp| { &m.IPDLBJHAJOO },
-            |m: &mut SettleHipplenWorkScRsp| { &mut m.IPDLBJHAJOO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BNIFMIPPIMA",
             |m: &SettleHipplenWorkScRsp| { &m.BNIFMIPPIMA },
@@ -169,6 +164,11 @@ impl SettleHipplenWorkScRsp {
             "NEMFNENACNB",
             |m: &SettleHipplenWorkScRsp| { &m.NEMFNENACNB },
             |m: &mut SettleHipplenWorkScRsp| { &mut m.NEMFNENACNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEFEDOAOKNO::GEFEDOAOKNO>(
+            "IPDLBJHAJOO",
+            |m: &SettleHipplenWorkScRsp| { &m.IPDLBJHAJOO },
+            |m: &mut SettleHipplenWorkScRsp| { &mut m.IPDLBJHAJOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -208,22 +208,22 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IPDLBJHAJOO)?;
-                },
-                98 => {
+                26 => {
                     self.BNIFMIPPIMA.push(is.read_message()?);
                 },
-                106 => {
+                42 => {
                     self.NEMFNENACNB.push(is.read_message()?);
                 },
-                120 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IPDLBJHAJOO)?;
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                66 => {
                     self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(is.read_message()?));
                 },
-                10 => {
+                114 => {
                     self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(is.read_message()?));
                 },
                 tag => {
@@ -238,10 +238,6 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.BNIFMIPPIMA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -250,8 +246,12 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.MEJDDIPIEKK {
             match v {
@@ -271,25 +271,25 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         for v in &self.BNIFMIPPIMA {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.NEMFNENACNB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.MEJDDIPIEKK {
             match v {
                 &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
             };
         }
@@ -310,9 +310,9 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     }
 
     fn clear(&mut self) {
-        self.IPDLBJHAJOO.clear();
         self.BNIFMIPPIMA.clear();
         self.NEMFNENACNB.clear();
+        self.IPDLBJHAJOO.clear();
         self.retcode = 0;
         self.MEJDDIPIEKK = ::std::option::Option::None;
         self.MEJDDIPIEKK = ::std::option::Option::None;
@@ -321,9 +321,9 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
 
     fn default_instance() -> &'static SettleHipplenWorkScRsp {
         static instance: SettleHipplenWorkScRsp = SettleHipplenWorkScRsp {
-            IPDLBJHAJOO: ::protobuf::MessageField::none(),
             BNIFMIPPIMA: ::std::vec::Vec::new(),
             NEMFNENACNB: ::std::vec::Vec::new(),
+            IPDLBJHAJOO: ::protobuf::MessageField::none(),
             retcode: 0,
             MEJDDIPIEKK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -382,14 +382,14 @@ pub mod settle_hipplen_work_sc_rsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSettleHipplenWorkScRsp.proto\x1a\x11AFEDHCKDDFA.proto\x1a\x11ANHJK\
     LLEKKB.proto\x1a\x11DMLACLLDCCE.proto\x1a\x11GEFEDOAOKNO.proto\x1a\x11LK\
-    FFMLJMGOB.proto\"\xb5\x02\n\x16SettleHipplenWorkScRsp\x12.\n\x0bIPDLBJHA\
-    JOO\x18\n\x20\x01(\x0b2\x0c.GEFEDOAOKNOR\x0bIPDLBJHAJOO\x12.\n\x0bBNIFMI\
-    PPIMA\x18\x0c\x20\x03(\x0b2\x0c.ANHJKLLEKKBR\x0bBNIFMIPPIMA\x12.\n\x0bNE\
-    MFNENACNB\x18\r\x20\x03(\x0b2\x0c.AFEDHCKDDFAR\x0bNEMFNENACNB\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x120\n\x0bHBGCOIAGDIG\x18\t\
-    \x20\x01(\x0b2\x0c.DMLACLLDCCEH\0R\x0bHBGCOIAGDIG\x120\n\x0bLONKNKFDPII\
-    \x18\x01\x20\x01(\x0b2\x0c.LKFFMLJMGOBH\0R\x0bLONKNKFDPIIB\r\n\x0bMEJDDI\
-    PIEKKb\x06proto3\
+    FFMLJMGOB.proto\"\xb5\x02\n\x16SettleHipplenWorkScRsp\x12.\n\x0bBNIFMIPP\
+    IMA\x18\x03\x20\x03(\x0b2\x0c.ANHJKLLEKKBR\x0bBNIFMIPPIMA\x12.\n\x0bNEMF\
+    NENACNB\x18\x05\x20\x03(\x0b2\x0c.AFEDHCKDDFAR\x0bNEMFNENACNB\x12.\n\x0b\
+    IPDLBJHAJOO\x18\x07\x20\x01(\x0b2\x0c.GEFEDOAOKNOR\x0bIPDLBJHAJOO\x12\
+    \x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x120\n\x0bHBGCOIAGDIG\x18\
+    \x08\x20\x01(\x0b2\x0c.DMLACLLDCCEH\0R\x0bHBGCOIAGDIG\x120\n\x0bLONKNKFD\
+    PII\x18\x0e\x20\x01(\x0b2\x0c.LKFFMLJMGOBH\0R\x0bLONKNKFDPIIB\r\n\x0bMEJ\
+    DDIPIEKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

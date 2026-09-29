@@ -93,19 +93,19 @@ impl ::protobuf::Message for MEKPDDBLCGK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                32 => {
+                64 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
-                40 => {
+                88 => {
                     self.cycles_used = is.read_uint32()?;
                 },
-                58 => {
+                106 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                120 => {
+                112 => {
                     self.peak_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,16 +120,16 @@ impl ::protobuf::Message for MEKPDDBLCGK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.finished_target_list);
         if self.cycles_used != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cycles_used);
+            my_size += ::protobuf::rt::uint32_size(11, self.cycles_used);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.peak_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.peak_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for MEKPDDBLCGK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(4, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(8, &self.finished_target_list)?;
         if self.cycles_used != 0 {
-            os.write_uint32(5, self.cycles_used)?;
+            os.write_uint32(11, self.cycles_used)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.peak_id != 0 {
-            os.write_uint32(15, self.peak_id)?;
+            os.write_uint32(14, self.peak_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for MEKPDDBLCGK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MEKPDDBLCGK.proto\x1a\x11ABCHBKBKCDF.proto\"\xa8\x01\n\x0bMEKPDDBL\
-    CGK\x120\n\x14finished_target_list\x18\x04\x20\x03(\rR\x12finishedTarget\
-    List\x12\x1f\n\x0bcycles_used\x18\x05\x20\x01(\rR\ncyclesUsed\x12-\n\x0b\
-    avatar_list\x18\x07\x20\x03(\x0b2\x0c.ABCHBKBKCDFR\navatarList\x12\x17\n\
-    \x07peak_id\x18\x0f\x20\x01(\rR\x06peakIdb\x06proto3\
+    CGK\x120\n\x14finished_target_list\x18\x08\x20\x03(\rR\x12finishedTarget\
+    List\x12\x1f\n\x0bcycles_used\x18\x0b\x20\x01(\rR\ncyclesUsed\x12-\n\x0b\
+    avatar_list\x18\r\x20\x03(\x0b2\x0c.ABCHBKBKCDFR\navatarList\x12\x17\n\
+    \x07peak_id\x18\x0e\x20\x01(\rR\x06peakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBossInfo {
     // message fields
-    // @@protoc_insertion_point(field:ChallengeBossInfo.challenge_avatar_equipment_map)
-    pub challenge_avatar_equipment_map: ::std::collections::HashMap<u32, super::ChallengeBossEquipmentInfo::ChallengeBossEquipmentInfo>,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.unk1)
-    pub unk1: bool,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.avatar_lineup_first)
-    pub avatar_lineup_first: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.avatar_lineup_second)
-    pub avatar_lineup_second: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
-    // @@protoc_insertion_point(field:ChallengeBossInfo.challenge_avatar_relic_map)
-    pub challenge_avatar_relic_map: ::std::collections::HashMap<u32, super::ChallengeBossAvatarRelicInfo::ChallengeBossAvatarRelicInfo>,
     // @@protoc_insertion_point(field:ChallengeBossInfo.first_node)
     pub first_node: ::protobuf::MessageField<super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.challenge_avatar_relic_map)
+    pub challenge_avatar_relic_map: ::std::collections::HashMap<u32, super::ChallengeBossAvatarRelicInfo::ChallengeBossAvatarRelicInfo>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.avatar_lineup_second)
+    pub avatar_lineup_second: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.unk1)
+    pub unk1: bool,
     // @@protoc_insertion_point(field:ChallengeBossInfo.second_node)
     pub second_node: ::protobuf::MessageField<super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.avatar_lineup_first)
+    pub avatar_lineup_first: ::std::vec::Vec<super::AvatarLineup::AvatarLineup>,
+    // @@protoc_insertion_point(field:ChallengeBossInfo.challenge_avatar_equipment_map)
+    pub challenge_avatar_equipment_map: ::std::collections::HashMap<u32, super::ChallengeBossEquipmentInfo::ChallengeBossEquipmentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBossInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,40 +61,40 @@ impl ChallengeBossInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "challenge_avatar_equipment_map",
-            |m: &ChallengeBossInfo| { &m.challenge_avatar_equipment_map },
-            |m: &mut ChallengeBossInfo| { &mut m.challenge_avatar_equipment_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk1",
-            |m: &ChallengeBossInfo| { &m.unk1 },
-            |m: &mut ChallengeBossInfo| { &mut m.unk1 },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_lineup_first",
-            |m: &ChallengeBossInfo| { &m.avatar_lineup_first },
-            |m: &mut ChallengeBossInfo| { &mut m.avatar_lineup_first },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_lineup_second",
-            |m: &ChallengeBossInfo| { &m.avatar_lineup_second },
-            |m: &mut ChallengeBossInfo| { &mut m.avatar_lineup_second },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>(
+            "first_node",
+            |m: &ChallengeBossInfo| { &m.first_node },
+            |m: &mut ChallengeBossInfo| { &mut m.first_node },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "challenge_avatar_relic_map",
             |m: &ChallengeBossInfo| { &m.challenge_avatar_relic_map },
             |m: &mut ChallengeBossInfo| { &mut m.challenge_avatar_relic_map },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>(
-            "first_node",
-            |m: &ChallengeBossInfo| { &m.first_node },
-            |m: &mut ChallengeBossInfo| { &mut m.first_node },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_lineup_second",
+            |m: &ChallengeBossInfo| { &m.avatar_lineup_second },
+            |m: &mut ChallengeBossInfo| { &mut m.avatar_lineup_second },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unk1",
+            |m: &ChallengeBossInfo| { &m.unk1 },
+            |m: &mut ChallengeBossInfo| { &mut m.unk1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengeBossSingleNodeInfo::ChallengeBossSingleNodeInfo>(
             "second_node",
             |m: &ChallengeBossInfo| { &m.second_node },
             |m: &mut ChallengeBossInfo| { &mut m.second_node },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_lineup_first",
+            |m: &ChallengeBossInfo| { &m.avatar_lineup_first },
+            |m: &mut ChallengeBossInfo| { &mut m.avatar_lineup_first },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "challenge_avatar_equipment_map",
+            |m: &ChallengeBossInfo| { &m.challenge_avatar_equipment_map },
+            |m: &mut ChallengeBossInfo| { &mut m.challenge_avatar_equipment_map },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBossInfo>(
             "ChallengeBossInfo",
@@ -114,31 +114,10 @@ impl ::protobuf::Message for ChallengeBossInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            18 => value = is.read_message()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.challenge_avatar_equipment_map.insert(key, value);
-                },
-                24 => {
-                    self.unk1 = is.read_bool()?;
-                },
-                34 => {
-                    self.avatar_lineup_first.push(is.read_message()?);
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.first_node)?;
                 },
                 42 => {
-                    self.avatar_lineup_second.push(is.read_message()?);
-                },
-                82 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -153,11 +132,32 @@ impl ::protobuf::Message for ChallengeBossInfo {
                     is.pop_limit(old_limit);
                     self.challenge_avatar_relic_map.insert(key, value);
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.first_node)?;
+                50 => {
+                    self.avatar_lineup_second.push(is.read_message()?);
                 },
-                122 => {
+                56 => {
+                    self.unk1 = is.read_bool()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.second_node)?;
+                },
+                90 => {
+                    self.avatar_lineup_first.push(is.read_message()?);
+                },
+                106 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            18 => value = is.read_message()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.challenge_avatar_equipment_map.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -171,24 +171,10 @@ impl ::protobuf::Message for ChallengeBossInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.challenge_avatar_equipment_map {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
+        if let Some(v) = self.first_node.as_ref() {
             let len = v.compute_size();
-            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        if self.unk1 != false {
-            my_size += 1 + 1;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.avatar_lineup_first {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.avatar_lineup_second {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for (k, v) in &self.challenge_avatar_relic_map {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -196,55 +182,69 @@ impl ::protobuf::Message for ChallengeBossInfo {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.first_node.as_ref() {
-            let len = v.compute_size();
+        for value in &self.avatar_lineup_second {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.unk1 != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.second_node.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.avatar_lineup_first {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for (k, v) in &self.challenge_avatar_equipment_map {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.compute_size();
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.challenge_avatar_equipment_map {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            let len = v.cached_size() as u64;
-            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(10)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
+        if let Some(v) = self.first_node.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        if self.unk1 != false {
-            os.write_bool(3, self.unk1)?;
         }
-        for v in &self.avatar_lineup_first {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        for v in &self.avatar_lineup_second {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         for (k, v) in &self.challenge_avatar_relic_map {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.first_node.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.avatar_lineup_second {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.unk1 != false {
+            os.write_bool(7, self.unk1)?;
         }
         if let Some(v) = self.second_node.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
+        for v in &self.avatar_lineup_first {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for (k, v) in &self.challenge_avatar_equipment_map {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.cached_size() as u64;
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            os.write_raw_varint32(106)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -262,13 +262,13 @@ impl ::protobuf::Message for ChallengeBossInfo {
     }
 
     fn clear(&mut self) {
-        self.challenge_avatar_equipment_map.clear();
-        self.unk1 = false;
-        self.avatar_lineup_first.clear();
-        self.avatar_lineup_second.clear();
-        self.challenge_avatar_relic_map.clear();
         self.first_node.clear();
+        self.challenge_avatar_relic_map.clear();
+        self.avatar_lineup_second.clear();
+        self.unk1 = false;
         self.second_node.clear();
+        self.avatar_lineup_first.clear();
+        self.challenge_avatar_equipment_map.clear();
         self.special_fields.clear();
     }
 
@@ -298,22 +298,22 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBossInfo.proto\x1a\x12AvatarLineup.proto\x1a\"ChallengeBo\
     ssAvatarRelicInfo.proto\x1a\x20ChallengeBossEquipmentInfo.proto\x1a!Chal\
-    lengeBossSingleNodeInfo.proto\"\xe3\x05\n\x11ChallengeBossInfo\x12x\n\
-    \x1echallenge_avatar_equipment_map\x18\x01\x20\x03(\x0b23.ChallengeBossI\
-    nfo.ChallengeAvatarEquipmentMapEntryR\x1bchallengeAvatarEquipmentMap\x12\
-    \x12\n\x04unk1\x18\x03\x20\x01(\x08R\x04unk1\x12=\n\x13avatar_lineup_fir\
-    st\x18\x04\x20\x03(\x0b2\r.AvatarLineupR\x11avatarLineupFirst\x12?\n\x14\
-    avatar_lineup_second\x18\x05\x20\x03(\x0b2\r.AvatarLineupR\x12avatarLine\
-    upSecond\x12l\n\x1achallenge_avatar_relic_map\x18\n\x20\x03(\x0b2/.Chall\
-    engeBossInfo.ChallengeAvatarRelicMapEntryR\x17challengeAvatarRelicMap\
-    \x12;\n\nfirst_node\x18\x0c\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInf\
-    oR\tfirstNode\x12=\n\x0bsecond_node\x18\x0f\x20\x01(\x0b2\x1c.ChallengeB\
-    ossSingleNodeInfoR\nsecondNode\x1ak\n\x20ChallengeAvatarEquipmentMapEntr\
-    y\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x121\n\x05value\x18\x02\
-    \x20\x01(\x0b2\x1b.ChallengeBossEquipmentInfoR\x05value:\x028\x01\x1ai\n\
-    \x1cChallengeAvatarRelicMapEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
-    \x03key\x123\n\x05value\x18\x02\x20\x01(\x0b2\x1d.ChallengeBossAvatarRel\
-    icInfoR\x05value:\x028\x01b\x06proto3\
+    lengeBossSingleNodeInfo.proto\"\xe3\x05\n\x11ChallengeBossInfo\x12;\n\nf\
+    irst_node\x18\x02\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInfoR\tfirstN\
+    ode\x12l\n\x1achallenge_avatar_relic_map\x18\x05\x20\x03(\x0b2/.Challeng\
+    eBossInfo.ChallengeAvatarRelicMapEntryR\x17challengeAvatarRelicMap\x12?\
+    \n\x14avatar_lineup_second\x18\x06\x20\x03(\x0b2\r.AvatarLineupR\x12avat\
+    arLineupSecond\x12\x12\n\x04unk1\x18\x07\x20\x01(\x08R\x04unk1\x12=\n\
+    \x0bsecond_node\x18\t\x20\x01(\x0b2\x1c.ChallengeBossSingleNodeInfoR\nse\
+    condNode\x12=\n\x13avatar_lineup_first\x18\x0b\x20\x03(\x0b2\r.AvatarLin\
+    eupR\x11avatarLineupFirst\x12x\n\x1echallenge_avatar_equipment_map\x18\r\
+    \x20\x03(\x0b23.ChallengeBossInfo.ChallengeAvatarEquipmentMapEntryR\x1bc\
+    hallengeAvatarEquipmentMap\x1ai\n\x1cChallengeAvatarRelicMapEntry\x12\
+    \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x123\n\x05value\x18\x02\x20\x01\
+    (\x0b2\x1d.ChallengeBossAvatarRelicInfoR\x05value:\x028\x01\x1ak\n\x20Ch\
+    allengeAvatarEquipmentMapEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03k\
+    ey\x121\n\x05value\x18\x02\x20\x01(\x0b2\x1b.ChallengeBossEquipmentInfoR\
+    \x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

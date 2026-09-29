@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FGJAKGPJCKB {
     // message fields
-    // @@protoc_insertion_point(field:FGJAKGPJCKB.KMFAPDJCKLF)
-    pub KMFAPDJCKLF: u32,
-    // @@protoc_insertion_point(field:FGJAKGPJCKB.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:FGJAKGPJCKB.ELPDAJBOFEE)
-    pub ELPDAJBOFEE: i32,
-    // @@protoc_insertion_point(field:FGJAKGPJCKB.NICBADCOCBA)
-    pub NICBADCOCBA: u32,
     // @@protoc_insertion_point(field:FGJAKGPJCKB.MHAHLJPLCII)
     pub MHAHLJPLCII: i32,
     // @@protoc_insertion_point(field:FGJAKGPJCKB.JDGMEHCPGLL)
     pub JDGMEHCPGLL: ::std::vec::Vec<super::PNHBCBIDFBE::PNHBCBIDFBE>,
     // @@protoc_insertion_point(field:FGJAKGPJCKB.rank)
     pub rank: u32,
+    // @@protoc_insertion_point(field:FGJAKGPJCKB.KMFAPDJCKLF)
+    pub KMFAPDJCKLF: u32,
+    // @@protoc_insertion_point(field:FGJAKGPJCKB.NICBADCOCBA)
+    pub NICBADCOCBA: u32,
+    // @@protoc_insertion_point(field:FGJAKGPJCKB.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:FGJAKGPJCKB.ELPDAJBOFEE)
+    pub ELPDAJBOFEE: i32,
     // special fields
     // @@protoc_insertion_point(special_field:FGJAKGPJCKB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,26 +62,6 @@ impl FGJAKGPJCKB {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMFAPDJCKLF",
-            |m: &FGJAKGPJCKB| { &m.KMFAPDJCKLF },
-            |m: &mut FGJAKGPJCKB| { &mut m.KMFAPDJCKLF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "score_id",
-            |m: &FGJAKGPJCKB| { &m.score_id },
-            |m: &mut FGJAKGPJCKB| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ELPDAJBOFEE",
-            |m: &FGJAKGPJCKB| { &m.ELPDAJBOFEE },
-            |m: &mut FGJAKGPJCKB| { &mut m.ELPDAJBOFEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NICBADCOCBA",
-            |m: &FGJAKGPJCKB| { &m.NICBADCOCBA },
-            |m: &mut FGJAKGPJCKB| { &mut m.NICBADCOCBA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MHAHLJPLCII",
             |m: &FGJAKGPJCKB| { &m.MHAHLJPLCII },
             |m: &mut FGJAKGPJCKB| { &mut m.MHAHLJPLCII },
@@ -95,6 +75,26 @@ impl FGJAKGPJCKB {
             "rank",
             |m: &FGJAKGPJCKB| { &m.rank },
             |m: &mut FGJAKGPJCKB| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KMFAPDJCKLF",
+            |m: &FGJAKGPJCKB| { &m.KMFAPDJCKLF },
+            |m: &mut FGJAKGPJCKB| { &mut m.KMFAPDJCKLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NICBADCOCBA",
+            |m: &FGJAKGPJCKB| { &m.NICBADCOCBA },
+            |m: &mut FGJAKGPJCKB| { &mut m.NICBADCOCBA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "score_id",
+            |m: &FGJAKGPJCKB| { &m.score_id },
+            |m: &mut FGJAKGPJCKB| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ELPDAJBOFEE",
+            |m: &FGJAKGPJCKB| { &m.ELPDAJBOFEE },
+            |m: &mut FGJAKGPJCKB| { &mut m.ELPDAJBOFEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FGJAKGPJCKB>(
             "FGJAKGPJCKB",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for FGJAKGPJCKB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.KMFAPDJCKLF = is.read_uint32()?;
-                },
-                40 => {
-                    self.score_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.ELPDAJBOFEE = is.read_int32()?;
-                },
-                72 => {
-                    self.NICBADCOCBA = is.read_uint32()?;
-                },
-                80 => {
+                16 => {
                     self.MHAHLJPLCII = is.read_int32()?;
                 },
-                90 => {
+                26 => {
                     self.JDGMEHCPGLL.push(is.read_message()?);
                 },
-                112 => {
+                32 => {
                     self.rank = is.read_uint32()?;
+                },
+                40 => {
+                    self.KMFAPDJCKLF = is.read_uint32()?;
+                },
+                48 => {
+                    self.NICBADCOCBA = is.read_uint32()?;
+                },
+                88 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.ELPDAJBOFEE = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,27 +147,27 @@ impl ::protobuf::Message for FGJAKGPJCKB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMFAPDJCKLF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KMFAPDJCKLF);
-        }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
-        }
-        if self.ELPDAJBOFEE != 0 {
-            my_size += ::protobuf::rt::int32_size(6, self.ELPDAJBOFEE);
-        }
-        if self.NICBADCOCBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NICBADCOCBA);
-        }
         if self.MHAHLJPLCII != 0 {
-            my_size += ::protobuf::rt::int32_size(10, self.MHAHLJPLCII);
+            my_size += ::protobuf::rt::int32_size(2, self.MHAHLJPLCII);
         }
         for value in &self.JDGMEHCPGLL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.rank);
+            my_size += ::protobuf::rt::uint32_size(4, self.rank);
+        }
+        if self.KMFAPDJCKLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.KMFAPDJCKLF);
+        }
+        if self.NICBADCOCBA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NICBADCOCBA);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.score_id);
+        }
+        if self.ELPDAJBOFEE != 0 {
+            my_size += ::protobuf::rt::int32_size(14, self.ELPDAJBOFEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for FGJAKGPJCKB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMFAPDJCKLF != 0 {
-            os.write_uint32(1, self.KMFAPDJCKLF)?;
-        }
-        if self.score_id != 0 {
-            os.write_uint32(5, self.score_id)?;
-        }
-        if self.ELPDAJBOFEE != 0 {
-            os.write_int32(6, self.ELPDAJBOFEE)?;
-        }
-        if self.NICBADCOCBA != 0 {
-            os.write_uint32(9, self.NICBADCOCBA)?;
-        }
         if self.MHAHLJPLCII != 0 {
-            os.write_int32(10, self.MHAHLJPLCII)?;
+            os.write_int32(2, self.MHAHLJPLCII)?;
         }
         for v in &self.JDGMEHCPGLL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.rank != 0 {
-            os.write_uint32(14, self.rank)?;
+            os.write_uint32(4, self.rank)?;
+        }
+        if self.KMFAPDJCKLF != 0 {
+            os.write_uint32(5, self.KMFAPDJCKLF)?;
+        }
+        if self.NICBADCOCBA != 0 {
+            os.write_uint32(6, self.NICBADCOCBA)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(11, self.score_id)?;
+        }
+        if self.ELPDAJBOFEE != 0 {
+            os.write_int32(14, self.ELPDAJBOFEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for FGJAKGPJCKB {
     }
 
     fn clear(&mut self) {
-        self.KMFAPDJCKLF = 0;
-        self.score_id = 0;
-        self.ELPDAJBOFEE = 0;
-        self.NICBADCOCBA = 0;
         self.MHAHLJPLCII = 0;
         self.JDGMEHCPGLL.clear();
         self.rank = 0;
+        self.KMFAPDJCKLF = 0;
+        self.NICBADCOCBA = 0;
+        self.score_id = 0;
+        self.ELPDAJBOFEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FGJAKGPJCKB {
         static instance: FGJAKGPJCKB = FGJAKGPJCKB {
-            KMFAPDJCKLF: 0,
-            score_id: 0,
-            ELPDAJBOFEE: 0,
-            NICBADCOCBA: 0,
             MHAHLJPLCII: 0,
             JDGMEHCPGLL: ::std::vec::Vec::new(),
             rank: 0,
+            KMFAPDJCKLF: 0,
+            NICBADCOCBA: 0,
+            score_id: 0,
+            ELPDAJBOFEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,12 +257,13 @@ impl ::protobuf::reflect::ProtobufValue for FGJAKGPJCKB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGJAKGPJCKB.proto\x1a\x11PNHBCBIDFBE.proto\"\xf4\x01\n\x0bFGJAKGPJ\
-    CKB\x12\x20\n\x0bKMFAPDJCKLF\x18\x01\x20\x01(\rR\x0bKMFAPDJCKLF\x12\x19\
-    \n\x08score_id\x18\x05\x20\x01(\rR\x07scoreId\x12\x20\n\x0bELPDAJBOFEE\
-    \x18\x06\x20\x01(\x05R\x0bELPDAJBOFEE\x12\x20\n\x0bNICBADCOCBA\x18\t\x20\
-    \x01(\rR\x0bNICBADCOCBA\x12\x20\n\x0bMHAHLJPLCII\x18\n\x20\x01(\x05R\x0b\
-    MHAHLJPLCII\x12.\n\x0bJDGMEHCPGLL\x18\x0b\x20\x03(\x0b2\x0c.PNHBCBIDFBER\
-    \x0bJDGMEHCPGLL\x12\x12\n\x04rank\x18\x0e\x20\x01(\rR\x04rankb\x06proto3\
+    CKB\x12\x20\n\x0bMHAHLJPLCII\x18\x02\x20\x01(\x05R\x0bMHAHLJPLCII\x12.\n\
+    \x0bJDGMEHCPGLL\x18\x03\x20\x03(\x0b2\x0c.PNHBCBIDFBER\x0bJDGMEHCPGLL\
+    \x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x20\n\x0bKMFAPDJCKLF\
+    \x18\x05\x20\x01(\rR\x0bKMFAPDJCKLF\x12\x20\n\x0bNICBADCOCBA\x18\x06\x20\
+    \x01(\rR\x0bNICBADCOCBA\x12\x19\n\x08score_id\x18\x0b\x20\x01(\rR\x07sco\
+    reId\x12\x20\n\x0bELPDAJBOFEE\x18\x0e\x20\x01(\x05R\x0bELPDAJBOFEEb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

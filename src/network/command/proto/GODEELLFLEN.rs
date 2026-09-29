@@ -79,7 +79,7 @@ impl ::protobuf::Message for GODEELLFLEN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JMIOMLJDCNN)?;
                 },
                 114 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for GODEELLFLEN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.JMIOMLJDCNN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if let Some(v) = self.ENJMGOJPNOE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for GODEELLFLEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GODEELLFLEN.proto\x1a\x11JECNOELJLKO.proto\"m\n\x0bGODEELLFLEN\x12\
-    .\n\x0bJMIOMLJDCNN\x18\r\x20\x01(\x0b2\x0c.JECNOELJLKOR\x0bJMIOMLJDCNN\
+    .\n\x0bJMIOMLJDCNN\x18\x03\x20\x01(\x0b2\x0c.JECNOELJLKOR\x0bJMIOMLJDCNN\
     \x12.\n\x0bENJMGOJPNOE\x18\x0e\x20\x01(\x0b2\x0c.JECNOELJLKOR\x0bENJMGOJ\
     PNOEb\x06proto3\
 ";

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KLIHJCNOEJP {
     // message fields
-    // @@protoc_insertion_point(field:KLIHJCNOEJP.LLJLCCDDLNI)
-    pub LLJLCCDDLNI: u32,
-    // @@protoc_insertion_point(field:KLIHJCNOEJP.JPDCDKLEIBD)
-    pub JPDCDKLEIBD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KLIHJCNOEJP.EEELJEKNNOG)
     pub EEELJEKNNOG: u32,
-    // @@protoc_insertion_point(field:KLIHJCNOEJP.IGOHOJEJIGP)
-    pub IGOHOJEJIGP: u32,
     // @@protoc_insertion_point(field:KLIHJCNOEJP.NFBJINKLLLK)
     pub NFBJINKLLLK: u32,
+    // @@protoc_insertion_point(field:KLIHJCNOEJP.JPDCDKLEIBD)
+    pub JPDCDKLEIBD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:KLIHJCNOEJP.IGOHOJEJIGP)
+    pub IGOHOJEJIGP: u32,
+    // @@protoc_insertion_point(field:KLIHJCNOEJP.LLJLCCDDLNI)
+    pub LLJLCCDDLNI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KLIHJCNOEJP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,14 @@ impl KLIHJCNOEJP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLJLCCDDLNI",
-            |m: &KLIHJCNOEJP| { &m.LLJLCCDDLNI },
-            |m: &mut KLIHJCNOEJP| { &mut m.LLJLCCDDLNI },
+            "EEELJEKNNOG",
+            |m: &KLIHJCNOEJP| { &m.EEELJEKNNOG },
+            |m: &mut KLIHJCNOEJP| { &mut m.EEELJEKNNOG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFBJINKLLLK",
+            |m: &KLIHJCNOEJP| { &m.NFBJINKLLLK },
+            |m: &mut KLIHJCNOEJP| { &mut m.NFBJINKLLLK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JPDCDKLEIBD",
@@ -68,19 +73,14 @@ impl KLIHJCNOEJP {
             |m: &mut KLIHJCNOEJP| { &mut m.JPDCDKLEIBD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEELJEKNNOG",
-            |m: &KLIHJCNOEJP| { &m.EEELJEKNNOG },
-            |m: &mut KLIHJCNOEJP| { &mut m.EEELJEKNNOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IGOHOJEJIGP",
             |m: &KLIHJCNOEJP| { &m.IGOHOJEJIGP },
             |m: &mut KLIHJCNOEJP| { &mut m.IGOHOJEJIGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFBJINKLLLK",
-            |m: &KLIHJCNOEJP| { &m.NFBJINKLLLK },
-            |m: &mut KLIHJCNOEJP| { &mut m.NFBJINKLLLK },
+            "LLJLCCDDLNI",
+            |m: &KLIHJCNOEJP| { &m.LLJLCCDDLNI },
+            |m: &mut KLIHJCNOEJP| { &mut m.LLJLCCDDLNI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KLIHJCNOEJP>(
             "KLIHJCNOEJP",
@@ -101,22 +101,22 @@ impl ::protobuf::Message for KLIHJCNOEJP {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.LLJLCCDDLNI = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JPDCDKLEIBD)?;
-                },
-                32 => {
-                    self.JPDCDKLEIBD.push(is.read_uint32()?);
-                },
-                64 => {
                     self.EEELJEKNNOG = is.read_uint32()?;
                 },
-                72 => {
+                48 => {
+                    self.NFBJINKLLLK = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JPDCDKLEIBD)?;
+                },
+                56 => {
+                    self.JPDCDKLEIBD.push(is.read_uint32()?);
+                },
+                96 => {
                     self.IGOHOJEJIGP = is.read_uint32()?;
                 },
-                112 => {
-                    self.NFBJINKLLLK = is.read_uint32()?;
+                120 => {
+                    self.LLJLCCDDLNI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for KLIHJCNOEJP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LLJLCCDDLNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LLJLCCDDLNI);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JPDCDKLEIBD);
         if self.EEELJEKNNOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EEELJEKNNOG);
-        }
-        if self.IGOHOJEJIGP != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IGOHOJEJIGP);
+            my_size += ::protobuf::rt::uint32_size(1, self.EEELJEKNNOG);
         }
         if self.NFBJINKLLLK != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NFBJINKLLLK);
+            my_size += ::protobuf::rt::uint32_size(6, self.NFBJINKLLLK);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.JPDCDKLEIBD);
+        if self.IGOHOJEJIGP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.IGOHOJEJIGP);
+        }
+        if self.LLJLCCDDLNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LLJLCCDDLNI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for KLIHJCNOEJP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LLJLCCDDLNI != 0 {
-            os.write_uint32(1, self.LLJLCCDDLNI)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.JPDCDKLEIBD)?;
         if self.EEELJEKNNOG != 0 {
-            os.write_uint32(8, self.EEELJEKNNOG)?;
-        }
-        if self.IGOHOJEJIGP != 0 {
-            os.write_uint32(9, self.IGOHOJEJIGP)?;
+            os.write_uint32(1, self.EEELJEKNNOG)?;
         }
         if self.NFBJINKLLLK != 0 {
-            os.write_uint32(14, self.NFBJINKLLLK)?;
+            os.write_uint32(6, self.NFBJINKLLLK)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.JPDCDKLEIBD)?;
+        if self.IGOHOJEJIGP != 0 {
+            os.write_uint32(12, self.IGOHOJEJIGP)?;
+        }
+        if self.LLJLCCDDLNI != 0 {
+            os.write_uint32(15, self.LLJLCCDDLNI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for KLIHJCNOEJP {
     }
 
     fn clear(&mut self) {
-        self.LLJLCCDDLNI = 0;
-        self.JPDCDKLEIBD.clear();
         self.EEELJEKNNOG = 0;
-        self.IGOHOJEJIGP = 0;
         self.NFBJINKLLLK = 0;
+        self.JPDCDKLEIBD.clear();
+        self.IGOHOJEJIGP = 0;
+        self.LLJLCCDDLNI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KLIHJCNOEJP {
         static instance: KLIHJCNOEJP = KLIHJCNOEJP {
-            LLJLCCDDLNI: 0,
-            JPDCDKLEIBD: ::std::vec::Vec::new(),
             EEELJEKNNOG: 0,
-            IGOHOJEJIGP: 0,
             NFBJINKLLLK: 0,
+            JPDCDKLEIBD: ::std::vec::Vec::new(),
+            IGOHOJEJIGP: 0,
+            LLJLCCDDLNI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,11 +218,12 @@ impl ::protobuf::reflect::ProtobufValue for KLIHJCNOEJP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KLIHJCNOEJP.proto\"\xb7\x01\n\x0bKLIHJCNOEJP\x12\x20\n\x0bLLJLCCDD\
-    LNI\x18\x01\x20\x01(\rR\x0bLLJLCCDDLNI\x12\x20\n\x0bJPDCDKLEIBD\x18\x04\
-    \x20\x03(\rR\x0bJPDCDKLEIBD\x12\x20\n\x0bEEELJEKNNOG\x18\x08\x20\x01(\rR\
-    \x0bEEELJEKNNOG\x12\x20\n\x0bIGOHOJEJIGP\x18\t\x20\x01(\rR\x0bIGOHOJEJIG\
-    P\x12\x20\n\x0bNFBJINKLLLK\x18\x0e\x20\x01(\rR\x0bNFBJINKLLLKb\x06proto3\
+    \n\x11KLIHJCNOEJP.proto\"\xb7\x01\n\x0bKLIHJCNOEJP\x12\x20\n\x0bEEELJEKN\
+    NOG\x18\x01\x20\x01(\rR\x0bEEELJEKNNOG\x12\x20\n\x0bNFBJINKLLLK\x18\x06\
+    \x20\x01(\rR\x0bNFBJINKLLLK\x12\x20\n\x0bJPDCDKLEIBD\x18\x07\x20\x03(\rR\
+    \x0bJPDCDKLEIBD\x12\x20\n\x0bIGOHOJEJIGP\x18\x0c\x20\x01(\rR\x0bIGOHOJEJ\
+    IGP\x12\x20\n\x0bLLJLCCDDLNI\x18\x0f\x20\x01(\rR\x0bLLJLCCDDLNIb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

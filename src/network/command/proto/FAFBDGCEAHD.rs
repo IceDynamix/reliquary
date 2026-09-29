@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FAFBDGCEAHD {
     // message fields
-    // @@protoc_insertion_point(field:FAFBDGCEAHD.trait_id)
-    pub trait_id: u32,
     // @@protoc_insertion_point(field:FAFBDGCEAHD.AFKKLDMAEDJ)
     pub AFKKLDMAEDJ: u32,
+    // @@protoc_insertion_point(field:FAFBDGCEAHD.trait_id)
+    pub trait_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FAFBDGCEAHD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FAFBDGCEAHD {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trait_id",
-            |m: &FAFBDGCEAHD| { &m.trait_id },
-            |m: &mut FAFBDGCEAHD| { &mut m.trait_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFKKLDMAEDJ",
             |m: &FAFBDGCEAHD| { &m.AFKKLDMAEDJ },
             |m: &mut FAFBDGCEAHD| { &mut m.AFKKLDMAEDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "trait_id",
+            |m: &FAFBDGCEAHD| { &m.trait_id },
+            |m: &mut FAFBDGCEAHD| { &mut m.trait_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FAFBDGCEAHD>(
             "FAFBDGCEAHD",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FAFBDGCEAHD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.trait_id = is.read_uint32()?;
-                },
-                40 => {
+                48 => {
                     self.AFKKLDMAEDJ = is.read_uint32()?;
+                },
+                104 => {
+                    self.trait_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FAFBDGCEAHD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.trait_id);
-        }
         if self.AFKKLDMAEDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AFKKLDMAEDJ);
+            my_size += ::protobuf::rt::uint32_size(6, self.AFKKLDMAEDJ);
+        }
+        if self.trait_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.trait_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FAFBDGCEAHD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.trait_id != 0 {
-            os.write_uint32(4, self.trait_id)?;
-        }
         if self.AFKKLDMAEDJ != 0 {
-            os.write_uint32(5, self.AFKKLDMAEDJ)?;
+            os.write_uint32(6, self.AFKKLDMAEDJ)?;
+        }
+        if self.trait_id != 0 {
+            os.write_uint32(13, self.trait_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FAFBDGCEAHD {
     }
 
     fn clear(&mut self) {
-        self.trait_id = 0;
         self.AFKKLDMAEDJ = 0;
+        self.trait_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FAFBDGCEAHD {
         static instance: FAFBDGCEAHD = FAFBDGCEAHD {
-            trait_id: 0,
             AFKKLDMAEDJ: 0,
+            trait_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FAFBDGCEAHD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FAFBDGCEAHD.proto\"J\n\x0bFAFBDGCEAHD\x12\x19\n\x08trait_id\x18\
-    \x04\x20\x01(\rR\x07traitId\x12\x20\n\x0bAFKKLDMAEDJ\x18\x05\x20\x01(\rR\
-    \x0bAFKKLDMAEDJb\x06proto3\
+    \n\x11FAFBDGCEAHD.proto\"J\n\x0bFAFBDGCEAHD\x12\x20\n\x0bAFKKLDMAEDJ\x18\
+    \x06\x20\x01(\rR\x0bAFKKLDMAEDJ\x12\x19\n\x08trait_id\x18\r\x20\x01(\rR\
+    \x07traitIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CFGGOBEDJOK {
     // message fields
-    // @@protoc_insertion_point(field:CFGGOBEDJOK.JFAADMONJNF)
-    pub JFAADMONJNF: u32,
     // @@protoc_insertion_point(field:CFGGOBEDJOK.FLINDJJJFLB)
     pub FLINDJJJFLB: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::CFMDKNCDDAL::CFMDKNCDDAL>>,
+    // @@protoc_insertion_point(field:CFGGOBEDJOK.JFAADMONJNF)
+    pub JFAADMONJNF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CFGGOBEDJOK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CFGGOBEDJOK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFAADMONJNF",
-            |m: &CFGGOBEDJOK| { &m.JFAADMONJNF },
-            |m: &mut CFGGOBEDJOK| { &mut m.JFAADMONJNF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FLINDJJJFLB",
             |m: &CFGGOBEDJOK| { &m.FLINDJJJFLB },
             |m: &mut CFGGOBEDJOK| { &mut m.FLINDJJJFLB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFAADMONJNF",
+            |m: &CFGGOBEDJOK| { &m.JFAADMONJNF },
+            |m: &mut CFGGOBEDJOK| { &mut m.JFAADMONJNF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CFGGOBEDJOK>(
             "CFGGOBEDJOK",
@@ -80,13 +80,13 @@ impl ::protobuf::Message for CFGGOBEDJOK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.JFAADMONJNF = is.read_uint32()?;
-                },
-                40 => {
                     self.FLINDJJJFLB.push(is.read_enum_or_unknown()?);
                 },
-                42 => {
+                34 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.FLINDJJJFLB)?
+                },
+                96 => {
+                    self.JFAADMONJNF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for CFGGOBEDJOK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.FLINDJJJFLB);
         if self.JFAADMONJNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JFAADMONJNF);
+            my_size += ::protobuf::rt::uint32_size(12, self.JFAADMONJNF);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(5, &self.FLINDJJJFLB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_enum_or_unknown(4, &self.FLINDJJJFLB)?;
         if self.JFAADMONJNF != 0 {
-            os.write_uint32(4, self.JFAADMONJNF)?;
+            os.write_uint32(12, self.JFAADMONJNF)?;
         }
-        os.write_repeated_packed_enum_or_unknown(5, &self.FLINDJJJFLB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for CFGGOBEDJOK {
     }
 
     fn clear(&mut self) {
-        self.JFAADMONJNF = 0;
         self.FLINDJJJFLB.clear();
+        self.JFAADMONJNF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CFGGOBEDJOK {
         static instance: CFGGOBEDJOK = CFGGOBEDJOK {
-            JFAADMONJNF: 0,
             FLINDJJJFLB: ::std::vec::Vec::new(),
+            JFAADMONJNF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for CFGGOBEDJOK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CFGGOBEDJOK.proto\x1a\x11CFMDKNCDDAL.proto\"_\n\x0bCFGGOBEDJOK\x12\
-    \x20\n\x0bJFAADMONJNF\x18\x04\x20\x01(\rR\x0bJFAADMONJNF\x12.\n\x0bFLIND\
-    JJJFLB\x18\x05\x20\x03(\x0e2\x0c.CFMDKNCDDALR\x0bFLINDJJJFLBb\x06proto3\
+    .\n\x0bFLINDJJJFLB\x18\x04\x20\x03(\x0e2\x0c.CFMDKNCDDALR\x0bFLINDJJJFLB\
+    \x12\x20\n\x0bJFAADMONJNF\x18\x0c\x20\x01(\rR\x0bJFAADMONJNFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

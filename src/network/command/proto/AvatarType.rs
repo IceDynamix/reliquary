@@ -41,8 +41,8 @@ pub enum AvatarType {
     AvatarType_AvatarAetherDivideType = 5,
     // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarUpgradeAvailableType)
     AvatarType_AvatarUpgradeAvailableType = 6,
-    // @@protoc_insertion_point(enum_value:AvatarType.H_126baada)
-    H_126baada = 7,
+    // @@protoc_insertion_point(enum_value:AvatarType.H_2330fd87)
+    H_2330fd87 = 7,
     // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarFixedPathType)
     AvatarType_AvatarFixedPathType = 8,
     // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_AvatarReturnAssistType)
@@ -65,7 +65,7 @@ impl ::protobuf::Enum for AvatarType {
             4 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAssistType),
             5 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAetherDivideType),
             6 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarUpgradeAvailableType),
-            7 => ::std::option::Option::Some(AvatarType::H_126baada),
+            7 => ::std::option::Option::Some(AvatarType::H_2330fd87),
             8 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFixedPathType),
             9 => ::std::option::Option::Some(AvatarType::AvatarType_AvatarReturnAssistType),
             _ => ::std::option::Option::None
@@ -81,7 +81,7 @@ impl ::protobuf::Enum for AvatarType {
             "AvatarType_AvatarAssistType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAssistType),
             "AvatarType_AvatarAetherDivideType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarAetherDivideType),
             "AvatarType_AvatarUpgradeAvailableType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarUpgradeAvailableType),
-            "H_126baada" => ::std::option::Option::Some(AvatarType::H_126baada),
+            "H_2330fd87" => ::std::option::Option::Some(AvatarType::H_2330fd87),
             "AvatarType_AvatarFixedPathType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarFixedPathType),
             "AvatarType_AvatarReturnAssistType" => ::std::option::Option::Some(AvatarType::AvatarType_AvatarReturnAssistType),
             _ => ::std::option::Option::None
@@ -96,7 +96,7 @@ impl ::protobuf::Enum for AvatarType {
         AvatarType::AvatarType_AvatarAssistType,
         AvatarType::AvatarType_AvatarAetherDivideType,
         AvatarType::AvatarType_AvatarUpgradeAvailableType,
-        AvatarType::H_126baada,
+        AvatarType::H_2330fd87,
         AvatarType::AvatarType_AvatarFixedPathType,
         AvatarType::AvatarType_AvatarReturnAssistType,
     ];
@@ -132,7 +132,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     atarType_AvatarLimitType\x10\x02\x12\x1f\n\x1bAvatarType_AvatarFormalTyp\
     e\x10\x03\x12\x1f\n\x1bAvatarType_AvatarAssistType\x10\x04\x12%\n!Avatar\
     Type_AvatarAetherDivideType\x10\x05\x12)\n%AvatarType_AvatarUpgradeAvail\
-    ableType\x10\x06\x12\x0e\n\nH_126baada\x10\x07\x12\"\n\x1eAvatarType_Ava\
+    ableType\x10\x06\x12\x0e\n\nH_2330fd87\x10\x07\x12\"\n\x1eAvatarType_Ava\
     tarFixedPathType\x10\x08\x12%\n!AvatarType_AvatarReturnAssistType\x10\tb\
     \x06proto3\
 ";

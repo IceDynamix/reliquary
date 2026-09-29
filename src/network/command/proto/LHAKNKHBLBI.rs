@@ -86,10 +86,10 @@ impl ::protobuf::Message for LHAKNKHBLBI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 106 => {
@@ -108,7 +108,7 @@ impl ::protobuf::Message for LHAKNKHBLBI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
@@ -125,10 +125,10 @@ impl ::protobuf::Message for LHAKNKHBLBI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.cur_tierce_challenge.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for LHAKNKHBLBI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHAKNKHBLBI.proto\x1a\x18CurTierceChallenge.proto\x1a\x0fSceneInfo\
-    .proto\"\x90\x01\n\x0bLHAKNKHBLBI\x12\x18\n\x07retcode\x18\x05\x20\x01(\
-    \rR\x07retcode\x12\x20\n\x05scene\x18\x08\x20\x01(\x0b2\n.SceneInfoR\x05\
-    scene\x12E\n\x14cur_tierce_challenge\x18\r\x20\x01(\x0b2\x13.CurTierceCh\
-    allengeR\x12curTierceChallengeb\x06proto3\
+    .proto\"\x90\x01\n\x0bLHAKNKHBLBI\x12\x18\n\x07retcode\x18\x01\x20\x01(\
+    \rR\x07retcode\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.SceneInfoR\x05sc\
+    ene\x12E\n\x14cur_tierce_challenge\x18\r\x20\x01(\x0b2\x13.CurTierceChal\
+    lengeR\x12curTierceChallengeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

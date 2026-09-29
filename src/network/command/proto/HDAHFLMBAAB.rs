@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HDAHFLMBAAB {
     // message fields
+    // @@protoc_insertion_point(field:HDAHFLMBAAB.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:HDAHFLMBAAB.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::MovieRacingType::MovieRacingType>,
     // @@protoc_insertion_point(field:HDAHFLMBAAB.EGKNHHFDJHM)
     pub EGKNHHFDJHM: u32,
     // @@protoc_insertion_point(field:HDAHFLMBAAB.HFENOFPKNPJ)
     pub HFENOFPKNPJ: u32,
-    // @@protoc_insertion_point(field:HDAHFLMBAAB.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::MovieRacingType::MovieRacingType>,
-    // @@protoc_insertion_point(field:HDAHFLMBAAB.level)
-    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HDAHFLMBAAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,16 @@ impl HDAHFLMBAAB {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &HDAHFLMBAAB| { &m.level },
+            |m: &mut HDAHFLMBAAB| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &HDAHFLMBAAB| { &m.type_ },
+            |m: &mut HDAHFLMBAAB| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGKNHHFDJHM",
             |m: &HDAHFLMBAAB| { &m.EGKNHHFDJHM },
             |m: &mut HDAHFLMBAAB| { &mut m.EGKNHHFDJHM },
@@ -64,16 +74,6 @@ impl HDAHFLMBAAB {
             "HFENOFPKNPJ",
             |m: &HDAHFLMBAAB| { &m.HFENOFPKNPJ },
             |m: &mut HDAHFLMBAAB| { &mut m.HFENOFPKNPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &HDAHFLMBAAB| { &m.type_ },
-            |m: &mut HDAHFLMBAAB| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &HDAHFLMBAAB| { &m.level },
-            |m: &mut HDAHFLMBAAB| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HDAHFLMBAAB>(
             "HDAHFLMBAAB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HDAHFLMBAAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.EGKNHHFDJHM = is.read_uint32()?;
-                },
-                96 => {
-                    self.HFENOFPKNPJ = is.read_uint32()?;
+                16 => {
+                    self.level = is.read_uint32()?;
                 },
                 104 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 112 => {
-                    self.level = is.read_uint32()?;
+                    self.EGKNHHFDJHM = is.read_uint32()?;
+                },
+                120 => {
+                    self.HFENOFPKNPJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for HDAHFLMBAAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGKNHHFDJHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EGKNHHFDJHM);
-        }
-        if self.HFENOFPKNPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HFENOFPKNPJ);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MovieRacingType_MovieRacingOverTake) {
             my_size += ::protobuf::rt::int32_size(13, self.type_.value());
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+        if self.EGKNHHFDJHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EGKNHHFDJHM);
+        }
+        if self.HFENOFPKNPJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.HFENOFPKNPJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for HDAHFLMBAAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGKNHHFDJHM != 0 {
-            os.write_uint32(11, self.EGKNHHFDJHM)?;
-        }
-        if self.HFENOFPKNPJ != 0 {
-            os.write_uint32(12, self.HFENOFPKNPJ)?;
+        if self.level != 0 {
+            os.write_uint32(2, self.level)?;
         }
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MovieRacingType_MovieRacingOverTake) {
             os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+        if self.EGKNHHFDJHM != 0 {
+            os.write_uint32(14, self.EGKNHHFDJHM)?;
+        }
+        if self.HFENOFPKNPJ != 0 {
+            os.write_uint32(15, self.HFENOFPKNPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for HDAHFLMBAAB {
     }
 
     fn clear(&mut self) {
+        self.level = 0;
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MovieRacingType_MovieRacingOverTake);
         self.EGKNHHFDJHM = 0;
         self.HFENOFPKNPJ = 0;
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::MovieRacingType::MovieRacingType::MovieRacingType_MovieRacingOverTake);
-        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HDAHFLMBAAB {
         static instance: HDAHFLMBAAB = HDAHFLMBAAB {
+            level: 0,
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             EGKNHHFDJHM: 0,
             HFENOFPKNPJ: 0,
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for HDAHFLMBAAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HDAHFLMBAAB.proto\x1a\x15MovieRacingType.proto\"\x8d\x01\n\x0bHDAH\
-    FLMBAAB\x12\x20\n\x0bEGKNHHFDJHM\x18\x0b\x20\x01(\rR\x0bEGKNHHFDJHM\x12\
-    \x20\n\x0bHFENOFPKNPJ\x18\x0c\x20\x01(\rR\x0bHFENOFPKNPJ\x12$\n\x04type\
-    \x18\r\x20\x01(\x0e2\x10.MovieRacingTypeR\x04type\x12\x14\n\x05level\x18\
-    \x0e\x20\x01(\rR\x05levelb\x06proto3\
+    FLMBAAB\x12\x14\n\x05level\x18\x02\x20\x01(\rR\x05level\x12$\n\x04type\
+    \x18\r\x20\x01(\x0e2\x10.MovieRacingTypeR\x04type\x12\x20\n\x0bEGKNHHFDJ\
+    HM\x18\x0e\x20\x01(\rR\x0bEGKNHHFDJHM\x12\x20\n\x0bHFENOFPKNPJ\x18\x0f\
+    \x20\x01(\rR\x0bHFENOFPKNPJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

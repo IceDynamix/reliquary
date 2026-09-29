@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BigDataAvatarRelicRecommend {
     // message fields
-    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.HBLKPAJPPEC)
-    pub HBLKPAJPPEC: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
     // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.NBINKKOFKED)
     pub NBINKKOFKED: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
-    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.DGBLLLCNKBL)
-    pub DGBLLLCNKBL: ::std::vec::Vec<super::JBGPLPCCDBJ::JBGPLPCCDBJ>,
-    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.JLICEELHEID)
-    pub JLICEELHEID: ::std::vec::Vec<super::JBGPLPCCDBJ::JBGPLPCCDBJ>,
     // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.KLKADPNPNHI)
     pub KLKADPNPNHI: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
-    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.PLJEJGCEKGL)
-    pub PLJEJGCEKGL: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
     // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.JLICEELHEID)
+    pub JLICEELHEID: ::std::vec::Vec<super::JBGPLPCCDBJ::JBGPLPCCDBJ>,
+    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.HBLKPAJPPEC)
+    pub HBLKPAJPPEC: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
+    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.DGBLLLCNKBL)
+    pub DGBLLLCNKBL: ::std::vec::Vec<super::JBGPLPCCDBJ::JBGPLPCCDBJ>,
+    // @@protoc_insertion_point(field:BigDataAvatarRelicRecommend.PLJEJGCEKGL)
+    pub PLJEJGCEKGL: ::std::vec::Vec<super::BPFDFOJOEMI::BPFDFOJOEMI>,
     // special fields
     // @@protoc_insertion_point(special_field:BigDataAvatarRelicRecommend.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,19 +62,19 @@ impl BigDataAvatarRelicRecommend {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HBLKPAJPPEC",
-            |m: &BigDataAvatarRelicRecommend| { &m.HBLKPAJPPEC },
-            |m: &mut BigDataAvatarRelicRecommend| { &mut m.HBLKPAJPPEC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "NBINKKOFKED",
             |m: &BigDataAvatarRelicRecommend| { &m.NBINKKOFKED },
             |m: &mut BigDataAvatarRelicRecommend| { &mut m.NBINKKOFKED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DGBLLLCNKBL",
-            |m: &BigDataAvatarRelicRecommend| { &m.DGBLLLCNKBL },
-            |m: &mut BigDataAvatarRelicRecommend| { &mut m.DGBLLLCNKBL },
+            "KLKADPNPNHI",
+            |m: &BigDataAvatarRelicRecommend| { &m.KLKADPNPNHI },
+            |m: &mut BigDataAvatarRelicRecommend| { &mut m.KLKADPNPNHI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &BigDataAvatarRelicRecommend| { &m.avatar_id },
+            |m: &mut BigDataAvatarRelicRecommend| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JLICEELHEID",
@@ -82,19 +82,19 @@ impl BigDataAvatarRelicRecommend {
             |m: &mut BigDataAvatarRelicRecommend| { &mut m.JLICEELHEID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLKADPNPNHI",
-            |m: &BigDataAvatarRelicRecommend| { &m.KLKADPNPNHI },
-            |m: &mut BigDataAvatarRelicRecommend| { &mut m.KLKADPNPNHI },
+            "HBLKPAJPPEC",
+            |m: &BigDataAvatarRelicRecommend| { &m.HBLKPAJPPEC },
+            |m: &mut BigDataAvatarRelicRecommend| { &mut m.HBLKPAJPPEC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DGBLLLCNKBL",
+            |m: &BigDataAvatarRelicRecommend| { &m.DGBLLLCNKBL },
+            |m: &mut BigDataAvatarRelicRecommend| { &mut m.DGBLLLCNKBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PLJEJGCEKGL",
             |m: &BigDataAvatarRelicRecommend| { &m.PLJEJGCEKGL },
             |m: &mut BigDataAvatarRelicRecommend| { &mut m.PLJEJGCEKGL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &BigDataAvatarRelicRecommend| { &m.avatar_id },
-            |m: &mut BigDataAvatarRelicRecommend| { &mut m.avatar_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BigDataAvatarRelicRecommend>(
             "BigDataAvatarRelicRecommend",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for BigDataAvatarRelicRecommend {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.HBLKPAJPPEC.push(is.read_message()?);
-                },
-                42 => {
+                26 => {
                     self.NBINKKOFKED.push(is.read_message()?);
                 },
-                50 => {
-                    self.DGBLLLCNKBL.push(is.read_message()?);
-                },
-                74 => {
-                    self.JLICEELHEID.push(is.read_message()?);
-                },
-                90 => {
+                34 => {
                     self.KLKADPNPNHI.push(is.read_message()?);
                 },
-                98 => {
-                    self.PLJEJGCEKGL.push(is.read_message()?);
-                },
-                112 => {
+                80 => {
                     self.avatar_id = is.read_uint32()?;
+                },
+                90 => {
+                    self.JLICEELHEID.push(is.read_message()?);
+                },
+                98 => {
+                    self.HBLKPAJPPEC.push(is.read_message()?);
+                },
+                114 => {
+                    self.DGBLLLCNKBL.push(is.read_message()?);
+                },
+                122 => {
+                    self.PLJEJGCEKGL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,19 +147,7 @@ impl ::protobuf::Message for BigDataAvatarRelicRecommend {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HBLKPAJPPEC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.NBINKKOFKED {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.DGBLLLCNKBL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.JLICEELHEID {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -167,40 +155,52 @@ impl ::protobuf::Message for BigDataAvatarRelicRecommend {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+        }
+        for value in &self.JLICEELHEID {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.HBLKPAJPPEC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.DGBLLLCNKBL {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.PLJEJGCEKGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.avatar_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HBLKPAJPPEC {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         for v in &self.NBINKKOFKED {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        for v in &self.DGBLLLCNKBL {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.JLICEELHEID {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.KLKADPNPNHI {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        for v in &self.PLJEJGCEKGL {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
         if self.avatar_id != 0 {
-            os.write_uint32(14, self.avatar_id)?;
+            os.write_uint32(10, self.avatar_id)?;
         }
+        for v in &self.JLICEELHEID {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.HBLKPAJPPEC {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.DGBLLLCNKBL {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        for v in &self.PLJEJGCEKGL {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -218,25 +218,25 @@ impl ::protobuf::Message for BigDataAvatarRelicRecommend {
     }
 
     fn clear(&mut self) {
-        self.HBLKPAJPPEC.clear();
         self.NBINKKOFKED.clear();
-        self.DGBLLLCNKBL.clear();
-        self.JLICEELHEID.clear();
         self.KLKADPNPNHI.clear();
-        self.PLJEJGCEKGL.clear();
         self.avatar_id = 0;
+        self.JLICEELHEID.clear();
+        self.HBLKPAJPPEC.clear();
+        self.DGBLLLCNKBL.clear();
+        self.PLJEJGCEKGL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BigDataAvatarRelicRecommend {
         static instance: BigDataAvatarRelicRecommend = BigDataAvatarRelicRecommend {
-            HBLKPAJPPEC: ::std::vec::Vec::new(),
             NBINKKOFKED: ::std::vec::Vec::new(),
-            DGBLLLCNKBL: ::std::vec::Vec::new(),
-            JLICEELHEID: ::std::vec::Vec::new(),
             KLKADPNPNHI: ::std::vec::Vec::new(),
-            PLJEJGCEKGL: ::std::vec::Vec::new(),
             avatar_id: 0,
+            JLICEELHEID: ::std::vec::Vec::new(),
+            HBLKPAJPPEC: ::std::vec::Vec::new(),
+            DGBLLLCNKBL: ::std::vec::Vec::new(),
+            PLJEJGCEKGL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -262,15 +262,15 @@ impl ::protobuf::reflect::ProtobufValue for BigDataAvatarRelicRecommend {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!BigDataAvatarRelicRecommend.proto\x1a\x11BPFDFOJOEMI.proto\x1a\x11JBG\
-    PLPCCDBJ.proto\"\xda\x02\n\x1bBigDataAvatarRelicRecommend\x12.\n\x0bHBLK\
-    PAJPPEC\x18\x02\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bHBLKPAJPPEC\x12.\n\x0b\
-    NBINKKOFKED\x18\x05\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bNBINKKOFKED\x12.\n\
-    \x0bDGBLLLCNKBL\x18\x06\x20\x03(\x0b2\x0c.JBGPLPCCDBJR\x0bDGBLLLCNKBL\
-    \x12.\n\x0bJLICEELHEID\x18\t\x20\x03(\x0b2\x0c.JBGPLPCCDBJR\x0bJLICEELHE\
-    ID\x12.\n\x0bKLKADPNPNHI\x18\x0b\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bKLKAD\
-    PNPNHI\x12.\n\x0bPLJEJGCEKGL\x18\x0c\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bP\
-    LJEJGCEKGL\x12\x1b\n\tavatar_id\x18\x0e\x20\x01(\rR\x08avatarIdb\x06prot\
-    o3\
+    PLPCCDBJ.proto\"\xda\x02\n\x1bBigDataAvatarRelicRecommend\x12.\n\x0bNBIN\
+    KKOFKED\x18\x03\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bNBINKKOFKED\x12.\n\x0b\
+    KLKADPNPNHI\x18\x04\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bKLKADPNPNHI\x12\
+    \x1b\n\tavatar_id\x18\n\x20\x01(\rR\x08avatarId\x12.\n\x0bJLICEELHEID\
+    \x18\x0b\x20\x03(\x0b2\x0c.JBGPLPCCDBJR\x0bJLICEELHEID\x12.\n\x0bHBLKPAJ\
+    PPEC\x18\x0c\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bHBLKPAJPPEC\x12.\n\x0bDGB\
+    LLLCNKBL\x18\x0e\x20\x03(\x0b2\x0c.JBGPLPCCDBJR\x0bDGBLLLCNKBL\x12.\n\
+    \x0bPLJEJGCEKGL\x18\x0f\x20\x03(\x0b2\x0c.BPFDFOJOEMIR\x0bPLJEJGCEKGLb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

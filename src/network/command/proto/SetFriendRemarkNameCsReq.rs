@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     self.remark_name = is.read_string()?;
                 },
-                40 => {
+                16 => {
                     self.reason = is.read_uint32()?;
                 },
-                120 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.remark_name);
+            my_size += ::protobuf::rt::string_size(1, &self.remark_name);
         }
         if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.reason);
+            my_size += ::protobuf::rt::uint32_size(2, self.reason);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.remark_name.is_empty() {
-            os.write_string(2, &self.remark_name)?;
+            os.write_string(1, &self.remark_name)?;
         }
         if self.reason != 0 {
-            os.write_uint32(5, self.reason)?;
+            os.write_uint32(2, self.reason)?;
         }
         if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+            os.write_uint32(6, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendRemarkNameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetFriendRemarkNameCsReq.proto\"e\n\x18SetFriendRemarkNameCsReq\
-    \x12\x1f\n\x0bremark_name\x18\x02\x20\x01(\tR\nremarkName\x12\x16\n\x06r\
-    eason\x18\x05\x20\x01(\rR\x06reason\x12\x10\n\x03uid\x18\x0f\x20\x01(\rR\
+    \x12\x1f\n\x0bremark_name\x18\x01\x20\x01(\tR\nremarkName\x12\x16\n\x06r\
+    eason\x18\x02\x20\x01(\rR\x06reason\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\
     \x03uidb\x06proto3\
 ";
 

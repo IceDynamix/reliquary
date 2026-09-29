@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAGOHCJGOLC {
     // message fields
-    // @@protoc_insertion_point(field:PAGOHCJGOLC.OKPLPEELPBC)
-    pub OKPLPEELPBC: bool,
-    // @@protoc_insertion_point(field:PAGOHCJGOLC.DOOACEHOPEE)
-    pub DOOACEHOPEE: u32,
     // @@protoc_insertion_point(field:PAGOHCJGOLC.PPFJGJNCOKI)
     pub PPFJGJNCOKI: u32,
+    // @@protoc_insertion_point(field:PAGOHCJGOLC.DOOACEHOPEE)
+    pub DOOACEHOPEE: u32,
+    // @@protoc_insertion_point(field:PAGOHCJGOLC.OKPLPEELPBC)
+    pub OKPLPEELPBC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PAGOHCJGOLC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl PAGOHCJGOLC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKPLPEELPBC",
-            |m: &PAGOHCJGOLC| { &m.OKPLPEELPBC },
-            |m: &mut PAGOHCJGOLC| { &mut m.OKPLPEELPBC },
+            "PPFJGJNCOKI",
+            |m: &PAGOHCJGOLC| { &m.PPFJGJNCOKI },
+            |m: &mut PAGOHCJGOLC| { &mut m.PPFJGJNCOKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOOACEHOPEE",
@@ -64,9 +64,9 @@ impl PAGOHCJGOLC {
             |m: &mut PAGOHCJGOLC| { &mut m.DOOACEHOPEE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PPFJGJNCOKI",
-            |m: &PAGOHCJGOLC| { &m.PPFJGJNCOKI },
-            |m: &mut PAGOHCJGOLC| { &mut m.PPFJGJNCOKI },
+            "OKPLPEELPBC",
+            |m: &PAGOHCJGOLC| { &m.OKPLPEELPBC },
+            |m: &mut PAGOHCJGOLC| { &mut m.OKPLPEELPBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAGOHCJGOLC>(
             "PAGOHCJGOLC",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OKPLPEELPBC = is.read_bool()?;
+                48 => {
+                    self.PPFJGJNCOKI = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
                 120 => {
-                    self.PPFJGJNCOKI = is.read_uint32()?;
+                    self.OKPLPEELPBC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OKPLPEELPBC != false {
-            my_size += 1 + 1;
+        if self.PPFJGJNCOKI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.PPFJGJNCOKI);
         }
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(10, self.DOOACEHOPEE);
         }
-        if self.PPFJGJNCOKI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.PPFJGJNCOKI);
+        if self.OKPLPEELPBC != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKPLPEELPBC != false {
-            os.write_bool(9, self.OKPLPEELPBC)?;
+        if self.PPFJGJNCOKI != 0 {
+            os.write_uint32(6, self.PPFJGJNCOKI)?;
         }
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(11, self.DOOACEHOPEE)?;
+            os.write_uint32(10, self.DOOACEHOPEE)?;
         }
-        if self.PPFJGJNCOKI != 0 {
-            os.write_uint32(15, self.PPFJGJNCOKI)?;
+        if self.OKPLPEELPBC != false {
+            os.write_bool(15, self.OKPLPEELPBC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PAGOHCJGOLC {
     }
 
     fn clear(&mut self) {
-        self.OKPLPEELPBC = false;
-        self.DOOACEHOPEE = 0;
         self.PPFJGJNCOKI = 0;
+        self.DOOACEHOPEE = 0;
+        self.OKPLPEELPBC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAGOHCJGOLC {
         static instance: PAGOHCJGOLC = PAGOHCJGOLC {
-            OKPLPEELPBC: false,
-            DOOACEHOPEE: 0,
             PPFJGJNCOKI: 0,
+            DOOACEHOPEE: 0,
+            OKPLPEELPBC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for PAGOHCJGOLC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PAGOHCJGOLC.proto\"s\n\x0bPAGOHCJGOLC\x12\x20\n\x0bOKPLPEELPBC\x18\
-    \t\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0b\x20\x01\
-    (\rR\x0bDOOACEHOPEE\x12\x20\n\x0bPPFJGJNCOKI\x18\x0f\x20\x01(\rR\x0bPPFJ\
-    GJNCOKIb\x06proto3\
+    \n\x11PAGOHCJGOLC.proto\"s\n\x0bPAGOHCJGOLC\x12\x20\n\x0bPPFJGJNCOKI\x18\
+    \x06\x20\x01(\rR\x0bPPFJGJNCOKI\x12\x20\n\x0bDOOACEHOPEE\x18\n\x20\x01(\
+    \rR\x0bDOOACEHOPEE\x12\x20\n\x0bOKPLPEELPBC\x18\x0f\x20\x01(\x08R\x0bOKP\
+    LPEELPBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HABJHGPFGEB)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for BuyRogueShopBuffScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if let Some(v) = self.HABJHGPFGEB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyRogueShopBuffScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bBuyRogueShopBuffScRsp.proto\x1a\x11DAENHKENJHK.proto\"a\n\x15BuyRo\
     gueShopBuffScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\
-    .\n\x0bHABJHGPFGEB\x18\t\x20\x01(\x0b2\x0c.DAENHKENJHKR\x0bHABJHGPFGEBb\
-    \x06proto3\
+    .\n\x0bHABJHGPFGEB\x18\x07\x20\x01(\x0b2\x0c.DAENHKENJHKR\x0bHABJHGPFGEB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

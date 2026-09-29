@@ -47,6 +47,8 @@ pub enum FightGameMode {
     FightGameMode_DiceCombatV2 = 8,
     // @@protoc_insertion_point(enum_value:FightGameMode.FightGameMode_TeamTowers)
     FightGameMode_TeamTowers = 9,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FightGameMode_JNLIOGAONMA)
+    FightGameMode_JNLIOGAONMA = 10,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -68,6 +70,7 @@ impl ::protobuf::Enum for FightGameMode {
             7 => ::std::option::Option::Some(FightGameMode::FightGameMode_DiceCombat),
             8 => ::std::option::Option::Some(FightGameMode::FightGameMode_DiceCombatV2),
             9 => ::std::option::Option::Some(FightGameMode::FightGameMode_TeamTowers),
+            10 => ::std::option::Option::Some(FightGameMode::FightGameMode_JNLIOGAONMA),
             _ => ::std::option::Option::None
         }
     }
@@ -84,6 +87,7 @@ impl ::protobuf::Enum for FightGameMode {
             "FightGameMode_DiceCombat" => ::std::option::Option::Some(FightGameMode::FightGameMode_DiceCombat),
             "FightGameMode_DiceCombatV2" => ::std::option::Option::Some(FightGameMode::FightGameMode_DiceCombatV2),
             "FightGameMode_TeamTowers" => ::std::option::Option::Some(FightGameMode::FightGameMode_TeamTowers),
+            "FightGameMode_JNLIOGAONMA" => ::std::option::Option::Some(FightGameMode::FightGameMode_JNLIOGAONMA),
             _ => ::std::option::Option::None
         }
     }
@@ -99,6 +103,7 @@ impl ::protobuf::Enum for FightGameMode {
         FightGameMode::FightGameMode_DiceCombat,
         FightGameMode::FightGameMode_DiceCombatV2,
         FightGameMode::FightGameMode_TeamTowers,
+        FightGameMode::FightGameMode_JNLIOGAONMA,
     ];
 }
 
@@ -127,14 +132,14 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*\xb2\x02\n\rFightGameMode\x12\x16\n\x12FightGa\
+    \n\x13FightGameMode.proto*\xd1\x02\n\rFightGameMode\x12\x16\n\x12FightGa\
     meMode_None\x10\0\x12\x18\n\x14FightGameMode_Match3\x10\x01\x12\x18\n\
     \x14FightGameMode_Marble\x10\x02\x12\x1c\n\x18FightGameMode_Match3Solo\
     \x10\x03\x12\x1e\n\x1aFightGameMode_Match3Royale\x10\x04\x12\x1f\n\x1bFi\
     ghtGameMode_MarbleMainsub\x10\x05\x12\x1a\n\x16FightGameMode_CakeRace\
     \x10\x06\x12\x1c\n\x18FightGameMode_DiceCombat\x10\x07\x12\x1e\n\x1aFigh\
     tGameMode_DiceCombatV2\x10\x08\x12\x1c\n\x18FightGameMode_TeamTowers\x10\
-    \tb\x06proto3\
+    \t\x12\x1d\n\x19FightGameMode_JNLIOGAONMA\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

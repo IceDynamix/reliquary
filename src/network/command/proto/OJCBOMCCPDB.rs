@@ -32,14 +32,14 @@ pub struct OJCBOMCCPDB {
     pub OPHONCKPNMG: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.battle_wave_id)
     pub battle_wave_id: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_cccff526)
-    pub H_cccff526: u32,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_4a14c5ec)
+    pub H_4a14c5ec: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.EHNJDIDABHD)
     pub EHNJDIDABHD: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_ee2da162)
-    pub H_ee2da162: ::std::vec::Vec<super::NIEGDAPHKGC::NIEGDAPHKGC>,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_8a3e191f)
-    pub H_8a3e191f: ::std::vec::Vec<super::BJGJBNJDLIK::BJGJBNJDLIK>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_9f60ad73)
+    pub H_9f60ad73: ::std::vec::Vec<super::NIEGDAPHKGC::NIEGDAPHKGC>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_07e2b75b)
+    pub H_07e2b75b: ::std::vec::Vec<super::BJGJBNJDLIK::BJGJBNJDLIK>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.IFIIOIIKJHO)
     pub IFIIOIIKJHO: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.sync_augment_info)
@@ -50,14 +50,14 @@ pub struct OJCBOMCCPDB {
     pub HHEPCDMBJFI: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.LJNGPCKPJLF)
     pub LJNGPCKPJLF: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_482a25fb)
-    pub H_482a25fb: ::std::vec::Vec<super::KHFHMJEMBOF::KHFHMJEMBOF>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_6c400f76)
+    pub H_6c400f76: ::std::vec::Vec<super::KHFHMJEMBOF::KHFHMJEMBOF>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.is_overlock)
     pub is_overlock: bool,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.AACGBEBGDPE)
     pub AACGBEBGDPE: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_f3794d9d)
-    pub H_f3794d9d: ::std::vec::Vec<super::PKDNDNABKII::PKDNDNABKII>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_16c77f78)
+    pub H_16c77f78: ::std::vec::Vec<super::PKDNDNABKII::PKDNDNABKII>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.KCOMPKMJCMC)
     pub KCOMPKMJCMC: ::std::vec::Vec<super::MLCLJKDKCDG::MLCLJKDKCDG>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.LODNFLMBIEH)
@@ -98,9 +98,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.battle_wave_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_cccff526",
-            |m: &OJCBOMCCPDB| { &m.H_cccff526 },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_cccff526 },
+            "H_4a14c5ec",
+            |m: &OJCBOMCCPDB| { &m.H_4a14c5ec },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_4a14c5ec },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EHNJDIDABHD",
@@ -108,14 +108,14 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.EHNJDIDABHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_ee2da162",
-            |m: &OJCBOMCCPDB| { &m.H_ee2da162 },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_ee2da162 },
+            "H_9f60ad73",
+            |m: &OJCBOMCCPDB| { &m.H_9f60ad73 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_9f60ad73 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_8a3e191f",
-            |m: &OJCBOMCCPDB| { &m.H_8a3e191f },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_8a3e191f },
+            "H_07e2b75b",
+            |m: &OJCBOMCCPDB| { &m.H_07e2b75b },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_07e2b75b },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFIIOIIKJHO",
@@ -143,9 +143,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.LJNGPCKPJLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_482a25fb",
-            |m: &OJCBOMCCPDB| { &m.H_482a25fb },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_482a25fb },
+            "H_6c400f76",
+            |m: &OJCBOMCCPDB| { &m.H_6c400f76 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_6c400f76 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_overlock",
@@ -158,9 +158,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.AACGBEBGDPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_f3794d9d",
-            |m: &OJCBOMCCPDB| { &m.H_f3794d9d },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_f3794d9d },
+            "H_16c77f78",
+            |m: &OJCBOMCCPDB| { &m.H_16c77f78 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_16c77f78 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KCOMPKMJCMC",
@@ -212,16 +212,16 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.battle_wave_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.H_cccff526 = is.read_uint32()?;
+                    self.H_4a14c5ec = is.read_uint32()?;
                 },
                 32 => {
                     self.EHNJDIDABHD = is.read_uint32()?;
                 },
                 58 => {
-                    self.H_ee2da162.push(is.read_message()?);
+                    self.H_9f60ad73.push(is.read_message()?);
                 },
                 66 => {
-                    self.H_8a3e191f.push(is.read_message()?);
+                    self.H_07e2b75b.push(is.read_message()?);
                 },
                 72 => {
                     self.IFIIOIIKJHO = is.read_uint32()?;
@@ -239,7 +239,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.LJNGPCKPJLF = is.read_uint32()?;
                 },
                 114 => {
-                    self.H_482a25fb.push(is.read_message()?);
+                    self.H_6c400f76.push(is.read_message()?);
                 },
                 120 => {
                     self.is_overlock = is.read_bool()?;
@@ -248,7 +248,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.AACGBEBGDPE = is.read_uint32()?;
                 },
                 138 => {
-                    self.H_f3794d9d.push(is.read_message()?);
+                    self.H_16c77f78.push(is.read_message()?);
                 },
                 146 => {
                     self.KCOMPKMJCMC.push(is.read_message()?);
@@ -296,17 +296,17 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.battle_wave_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.battle_wave_id);
         }
-        if self.H_cccff526 != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.H_cccff526);
+        if self.H_4a14c5ec != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.H_4a14c5ec);
         }
         if self.EHNJDIDABHD != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.EHNJDIDABHD);
         }
-        for value in &self.H_ee2da162 {
+        for value in &self.H_9f60ad73 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.H_8a3e191f {
+        for value in &self.H_07e2b75b {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -327,7 +327,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.LJNGPCKPJLF != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.LJNGPCKPJLF);
         }
-        for value in &self.H_482a25fb {
+        for value in &self.H_6c400f76 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -337,7 +337,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.AACGBEBGDPE != 0 {
             my_size += ::protobuf::rt::uint32_size(16, self.AACGBEBGDPE);
         }
-        for value in &self.H_f3794d9d {
+        for value in &self.H_16c77f78 {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -372,16 +372,16 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.battle_wave_id != 0 {
             os.write_uint32(2, self.battle_wave_id)?;
         }
-        if self.H_cccff526 != 0 {
-            os.write_uint32(3, self.H_cccff526)?;
+        if self.H_4a14c5ec != 0 {
+            os.write_uint32(3, self.H_4a14c5ec)?;
         }
         if self.EHNJDIDABHD != 0 {
             os.write_uint32(4, self.EHNJDIDABHD)?;
         }
-        for v in &self.H_ee2da162 {
+        for v in &self.H_9f60ad73 {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.H_8a3e191f {
+        for v in &self.H_07e2b75b {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.IFIIOIIKJHO != 0 {
@@ -399,7 +399,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.LJNGPCKPJLF != 0 {
             os.write_uint32(13, self.LJNGPCKPJLF)?;
         }
-        for v in &self.H_482a25fb {
+        for v in &self.H_6c400f76 {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.is_overlock != false {
@@ -408,7 +408,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.AACGBEBGDPE != 0 {
             os.write_uint32(16, self.AACGBEBGDPE)?;
         }
-        for v in &self.H_f3794d9d {
+        for v in &self.H_16c77f78 {
             ::protobuf::rt::write_message_field_with_cached_size(17, v, os)?;
         };
         for v in &self.KCOMPKMJCMC {
@@ -451,19 +451,19 @@ impl ::protobuf::Message for OJCBOMCCPDB {
     fn clear(&mut self) {
         self.OPHONCKPNMG.clear();
         self.battle_wave_id = 0;
-        self.H_cccff526 = 0;
+        self.H_4a14c5ec = 0;
         self.EHNJDIDABHD = 0;
-        self.H_ee2da162.clear();
-        self.H_8a3e191f.clear();
+        self.H_9f60ad73.clear();
+        self.H_07e2b75b.clear();
         self.IFIIOIIKJHO = 0;
         self.sync_augment_info.clear();
         self.IOCKDJCDMAH.clear();
         self.HHEPCDMBJFI = 0;
         self.LJNGPCKPJLF = 0;
-        self.H_482a25fb.clear();
+        self.H_6c400f76.clear();
         self.is_overlock = false;
         self.AACGBEBGDPE = 0;
-        self.H_f3794d9d.clear();
+        self.H_16c77f78.clear();
         self.KCOMPKMJCMC.clear();
         self.LODNFLMBIEH = 0;
         self.POCKGKDFLKK.clear();
@@ -501,19 +501,19 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     proto\x1a\x11MLCLJKDKCDG.proto\x1a\x11NIEGDAPHKGC.proto\x1a\x11PKDNDNABK\
     II.proto\"\x83\x07\n\x0bOJCBOMCCPDB\x12/\n\x0bOPHONCKPNMG\x18\x01\x20\
     \x03(\x0b2\r.BattleAvatarR\x0bOPHONCKPNMG\x12$\n\x0ebattle_wave_id\x18\
-    \x02\x20\x01(\rR\x0cbattleWaveId\x12\x1d\n\nH_cccff526\x18\x03\x20\x01(\
-    \rR\tHCccff526\x12\x20\n\x0bEHNJDIDABHD\x18\x04\x20\x01(\rR\x0bEHNJDIDAB\
-    HD\x12+\n\nH_ee2da162\x18\x07\x20\x03(\x0b2\x0c.NIEGDAPHKGCR\tHEe2da162\
-    \x12+\n\nH_8a3e191f\x18\x08\x20\x03(\x0b2\x0c.BJGJBNJDLIKR\tH8a3e191f\
+    \x02\x20\x01(\rR\x0cbattleWaveId\x12\x1d\n\nH_4a14c5ec\x18\x03\x20\x01(\
+    \rR\tH4a14c5ec\x12\x20\n\x0bEHNJDIDABHD\x18\x04\x20\x01(\rR\x0bEHNJDIDAB\
+    HD\x12+\n\nH_9f60ad73\x18\x07\x20\x03(\x0b2\x0c.NIEGDAPHKGCR\tH9f60ad73\
+    \x12+\n\nH_07e2b75b\x18\x08\x20\x03(\x0b2\x0c.BJGJBNJDLIKR\tH07e2b75b\
     \x12\x20\n\x0bIFIIOIIKJHO\x18\t\x20\x01(\rR\x0bIFIIOIIKJHO\x128\n\x11syn\
     c_augment_info\x18\n\x20\x03(\x0b2\x0c.BGLCGNCLHLJR\x0fsyncAugmentInfo\
     \x12.\n\x0bIOCKDJCDMAH\x18\x0b\x20\x01(\x0b2\x0c.MIPDJDJLGPLR\x0bIOCKDJC\
     DMAH\x12\x20\n\x0bHHEPCDMBJFI\x18\x0c\x20\x01(\rR\x0bHHEPCDMBJFI\x12\x20\
-    \n\x0bLJNGPCKPJLF\x18\r\x20\x01(\rR\x0bLJNGPCKPJLF\x12+\n\nH_482a25fb\
-    \x18\x0e\x20\x03(\x0b2\x0c.KHFHMJEMBOFR\tH482a25fb\x12\x1f\n\x0bis_overl\
+    \n\x0bLJNGPCKPJLF\x18\r\x20\x01(\rR\x0bLJNGPCKPJLF\x12+\n\nH_6c400f76\
+    \x18\x0e\x20\x03(\x0b2\x0c.KHFHMJEMBOFR\tH6c400f76\x12\x1f\n\x0bis_overl\
     ock\x18\x0f\x20\x01(\x08R\nisOverlock\x12\x20\n\x0bAACGBEBGDPE\x18\x10\
-    \x20\x01(\rR\x0bAACGBEBGDPE\x12+\n\nH_f3794d9d\x18\x11\x20\x03(\x0b2\x0c\
-    .PKDNDNABKIIR\tHF3794d9d\x12.\n\x0bKCOMPKMJCMC\x18\x12\x20\x03(\x0b2\x0c\
+    \x20\x01(\rR\x0bAACGBEBGDPE\x12+\n\nH_16c77f78\x18\x11\x20\x03(\x0b2\x0c\
+    .PKDNDNABKIIR\tH16c77f78\x12.\n\x0bKCOMPKMJCMC\x18\x12\x20\x03(\x0b2\x0c\
     .MLCLJKDKCDGR\x0bKCOMPKMJCMC\x12\x20\n\x0bLODNFLMBIEH\x18\x13\x20\x01(\r\
     R\x0bLODNFLMBIEH\x12?\n\x0bPOCKGKDFLKK\x18\x14\x20\x03(\x0b2\x1d.OJCBOMC\
     CPDB.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\x12\x20\n\x0bNFBJINKLLLK\x18\x15\

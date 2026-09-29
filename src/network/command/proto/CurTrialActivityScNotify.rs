@@ -82,7 +82,7 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
                 8 => {
                     self.activity_stage_id = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
             my_size += ::protobuf::rt::uint32_size(1, self.activity_stage_id);
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+            my_size += ::protobuf::rt::int32_size(10, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for CurTrialActivityScNotify {
             os.write_uint32(1, self.activity_stage_id)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::TrialActivityStatus::TrialActivityStatus::TRIAL_ACTIVITY_STATUS_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for CurTrialActivityScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCurTrialActivityScNotify.proto\x1a\x19TrialActivityStatus.proto\"t\
     \n\x18CurTrialActivityScNotify\x12*\n\x11activity_stage_id\x18\x01\x20\
-    \x01(\rR\x0factivityStageId\x12,\n\x06status\x18\t\x20\x01(\x0e2\x14.Tri\
+    \x01(\rR\x0factivityStageId\x12,\n\x06status\x18\n\x20\x01(\x0e2\x14.Tri\
     alActivityStatusR\x06statusb\x06proto3\
 ";
 

@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum GJALOMOKFKK {
     // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_NLCDGIPGFDJ)
     GJALOMOKFKK_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_FBJCPGAIKEA)
-    GJALOMOKFKK_FBJCPGAIKEA = 4944,
-    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_KFNLNJMBIEL)
-    GJALOMOKFKK_KFNLNJMBIEL = 4929,
-    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_BLHBGPFPFGP)
-    GJALOMOKFKK_BLHBGPFPFGP = 4932,
-    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_ILFALHDGNGL)
-    GJALOMOKFKK_ILFALHDGNGL = 4913,
-    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_KMIIDAOKIAL)
-    GJALOMOKFKK_KMIIDAOKIAL = 4978,
     // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_PIEIKABLBGP)
-    GJALOMOKFKK_PIEIKABLBGP = 4919,
+    GJALOMOKFKK_PIEIKABLBGP = 4916,
+    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_FBJCPGAIKEA)
+    GJALOMOKFKK_FBJCPGAIKEA = 4960,
+    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_KFNLNJMBIEL)
+    GJALOMOKFKK_KFNLNJMBIEL = 4905,
+    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_BLHBGPFPFGP)
+    GJALOMOKFKK_BLHBGPFPFGP = 4934,
+    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_ILFALHDGNGL)
+    GJALOMOKFKK_ILFALHDGNGL = 4925,
+    // @@protoc_insertion_point(enum_value:GJALOMOKFKK.GJALOMOKFKK_KMIIDAOKIAL)
+    GJALOMOKFKK_KMIIDAOKIAL = 4975,
 }
 
 impl ::protobuf::Enum for GJALOMOKFKK {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for GJALOMOKFKK {
     fn from_i32(value: i32) -> ::std::option::Option<GJALOMOKFKK> {
         match value {
             0 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_NLCDGIPGFDJ),
-            4944 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA),
-            4929 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL),
-            4932 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP),
-            4913 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL),
-            4978 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL),
-            4919 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP),
+            4916 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP),
+            4960 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA),
+            4905 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL),
+            4934 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP),
+            4925 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL),
+            4975 => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for GJALOMOKFKK {
     fn from_str(str: &str) -> ::std::option::Option<GJALOMOKFKK> {
         match str {
             "GJALOMOKFKK_NLCDGIPGFDJ" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_NLCDGIPGFDJ),
+            "GJALOMOKFKK_PIEIKABLBGP" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP),
             "GJALOMOKFKK_FBJCPGAIKEA" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA),
             "GJALOMOKFKK_KFNLNJMBIEL" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL),
             "GJALOMOKFKK_BLHBGPFPFGP" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP),
             "GJALOMOKFKK_ILFALHDGNGL" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL),
             "GJALOMOKFKK_KMIIDAOKIAL" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL),
-            "GJALOMOKFKK_PIEIKABLBGP" => ::std::option::Option::Some(GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GJALOMOKFKK] = &[
         GJALOMOKFKK::GJALOMOKFKK_NLCDGIPGFDJ,
+        GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP,
         GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA,
         GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL,
         GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP,
         GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL,
         GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL,
-        GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for GJALOMOKFKK {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             GJALOMOKFKK::GJALOMOKFKK_NLCDGIPGFDJ => 0,
-            GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA => 1,
-            GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL => 2,
-            GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP => 3,
-            GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL => 4,
-            GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL => 5,
-            GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP => 6,
+            GJALOMOKFKK::GJALOMOKFKK_PIEIKABLBGP => 1,
+            GJALOMOKFKK::GJALOMOKFKK_FBJCPGAIKEA => 2,
+            GJALOMOKFKK::GJALOMOKFKK_KFNLNJMBIEL => 3,
+            GJALOMOKFKK::GJALOMOKFKK_BLHBGPFPFGP => 4,
+            GJALOMOKFKK::GJALOMOKFKK_ILFALHDGNGL => 5,
+            GJALOMOKFKK::GJALOMOKFKK_KMIIDAOKIAL => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl GJALOMOKFKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GJALOMOKFKK.proto*\xde\x01\n\x0bGJALOMOKFKK\x12\x1b\n\x17GJALOMOKF\
-    KK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJALOMOKFKK_FBJCPGAIKEA\x10\xd0&\x12\
-    \x1c\n\x17GJALOMOKFKK_KFNLNJMBIEL\x10\xc1&\x12\x1c\n\x17GJALOMOKFKK_BLHB\
-    GPFPFGP\x10\xc4&\x12\x1c\n\x17GJALOMOKFKK_ILFALHDGNGL\x10\xb1&\x12\x1c\n\
-    \x17GJALOMOKFKK_KMIIDAOKIAL\x10\xf2&\x12\x1c\n\x17GJALOMOKFKK_PIEIKABLBG\
-    P\x10\xb7&b\x06proto3\
+    KK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJALOMOKFKK_PIEIKABLBGP\x10\xb4&\x12\
+    \x1c\n\x17GJALOMOKFKK_FBJCPGAIKEA\x10\xe0&\x12\x1c\n\x17GJALOMOKFKK_KFNL\
+    NJMBIEL\x10\xa9&\x12\x1c\n\x17GJALOMOKFKK_BLHBGPFPFGP\x10\xc6&\x12\x1c\n\
+    \x17GJALOMOKFKK_ILFALHDGNGL\x10\xbd&\x12\x1c\n\x17GJALOMOKFKK_KMIIDAOKIA\
+    L\x10\xef&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

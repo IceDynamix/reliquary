@@ -79,10 +79,10 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.KCBLNMMHOKG = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.MNCBFLEFJCK = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JFLOHLLMOJK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.KCBLNMMHOKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KCBLNMMHOKG);
+            my_size += ::protobuf::rt::uint32_size(4, self.KCBLNMMHOKG);
         }
         if self.MNCBFLEFJCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MNCBFLEFJCK);
+            my_size += ::protobuf::rt::uint32_size(14, self.MNCBFLEFJCK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JFLOHLLMOJK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.KCBLNMMHOKG != 0 {
-            os.write_uint32(2, self.KCBLNMMHOKG)?;
+            os.write_uint32(4, self.KCBLNMMHOKG)?;
         }
         if self.MNCBFLEFJCK != 0 {
-            os.write_uint32(5, self.MNCBFLEFJCK)?;
+            os.write_uint32(14, self.MNCBFLEFJCK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JFLOHLLMOJK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JFLOHLLMOJK.proto\"Q\n\x0bJFLOHLLMOJK\x12\x20\n\x0bKCBLNMMHOKG\x18\
-    \x02\x20\x01(\rR\x0bKCBLNMMHOKG\x12\x20\n\x0bMNCBFLEFJCK\x18\x05\x20\x01\
+    \x04\x20\x01(\rR\x0bKCBLNMMHOKG\x12\x20\n\x0bMNCBFLEFJCK\x18\x0e\x20\x01\
     (\rR\x0bMNCBFLEFJCKb\x06proto3\
 ";
 

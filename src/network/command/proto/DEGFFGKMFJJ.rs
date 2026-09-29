@@ -79,13 +79,13 @@ impl ::protobuf::Message for DEGFFGKMFJJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.CFJOGMJIHOE)?;
                 },
-                56 => {
+                72 => {
                     self.CFJOGMJIHOE.push(is.read_uint32()?);
                 },
-                104 => {
+                112 => {
                     self.script_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for DEGFFGKMFJJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CFJOGMJIHOE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CFJOGMJIHOE);
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.script_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for DEGFFGKMFJJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.CFJOGMJIHOE)?;
+        os.write_repeated_packed_uint32(9, &self.CFJOGMJIHOE)?;
         if self.script_id != 0 {
-            os.write_uint32(13, self.script_id)?;
+            os.write_uint32(14, self.script_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for DEGFFGKMFJJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEGFFGKMFJJ.proto\"L\n\x0bDEGFFGKMFJJ\x12\x20\n\x0bCFJOGMJIHOE\x18\
-    \x07\x20\x03(\rR\x0bCFJOGMJIHOE\x12\x1b\n\tscript_id\x18\r\x20\x01(\rR\
+    \t\x20\x03(\rR\x0bCFJOGMJIHOE\x12\x1b\n\tscript_id\x18\x0e\x20\x01(\rR\
     \x08scriptIdb\x06proto3\
 ";
 

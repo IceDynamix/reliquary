@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EHPLFHLNMIF {
     // message fields
-    // @@protoc_insertion_point(field:EHPLFHLNMIF.avatar_type)
-    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:EHPLFHLNMIF.damage)
-    pub damage: f64,
     // @@protoc_insertion_point(field:EHPLFHLNMIF.avatar_id)
     pub avatar_id: u32,
+    // @@protoc_insertion_point(field:EHPLFHLNMIF.damage)
+    pub damage: f64,
+    // @@protoc_insertion_point(field:EHPLFHLNMIF.avatar_type)
+    pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
     // special fields
     // @@protoc_insertion_point(special_field:EHPLFHLNMIF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl EHPLFHLNMIF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_type",
-            |m: &EHPLFHLNMIF| { &m.avatar_type },
-            |m: &mut EHPLFHLNMIF| { &mut m.avatar_type },
+            "avatar_id",
+            |m: &EHPLFHLNMIF| { &m.avatar_id },
+            |m: &mut EHPLFHLNMIF| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "damage",
@@ -64,9 +64,9 @@ impl EHPLFHLNMIF {
             |m: &mut EHPLFHLNMIF| { &mut m.damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &EHPLFHLNMIF| { &m.avatar_id },
-            |m: &mut EHPLFHLNMIF| { &mut m.avatar_id },
+            "avatar_type",
+            |m: &EHPLFHLNMIF| { &m.avatar_type },
+            |m: &mut EHPLFHLNMIF| { &mut m.avatar_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EHPLFHLNMIF>(
             "EHPLFHLNMIF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.avatar_type = is.read_enum_or_unknown()?;
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
                 },
-                41 => {
+                17 => {
                     self.damage = is.read_double()?;
                 },
-                104 => {
-                    self.avatar_id = is.read_uint32()?;
+                56 => {
+                    self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(3, self.avatar_type.value());
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
         }
         if self.damage != 0. {
             my_size += 1 + 8;
         }
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
+            my_size += ::protobuf::rt::int32_size(7, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        if self.avatar_id != 0 {
+            os.write_uint32(1, self.avatar_id)?;
         }
         if self.damage != 0. {
-            os.write_double(5, self.damage)?;
+            os.write_double(2, self.damage)?;
         }
-        if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for EHPLFHLNMIF {
     }
 
     fn clear(&mut self) {
-        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
-        self.damage = 0.;
         self.avatar_id = 0;
+        self.damage = 0.;
+        self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EHPLFHLNMIF {
         static instance: EHPLFHLNMIF = EHPLFHLNMIF {
-            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            damage: 0.,
             avatar_id: 0,
+            damage: 0.,
+            avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for EHPLFHLNMIF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11EHPLFHLNMIF.proto\x1a\x10AvatarType.proto\"p\n\x0bEHPLFHLNMIF\x12,\
-    \n\x0bavatar_type\x18\x03\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
-    \x16\n\x06damage\x18\x05\x20\x01(\x01R\x06damage\x12\x1b\n\tavatar_id\
-    \x18\r\x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n\x11EHPLFHLNMIF.proto\x1a\x10AvatarType.proto\"p\n\x0bEHPLFHLNMIF\x12\
+    \x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x16\n\x06damage\
+    \x18\x02\x20\x01(\x01R\x06damage\x12,\n\x0bavatar_type\x18\x07\x20\x01(\
+    \x0e2\x0b.AvatarTypeR\navatarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

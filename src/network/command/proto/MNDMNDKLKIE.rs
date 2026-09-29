@@ -45,7 +45,7 @@ impl MNDMNDKLKIE {
         ::std::default::Default::default()
     }
 
-    // .HNEBODEBELG EIGMKOJOEEI = 876;
+    // .HNEBODEBELG EIGMKOJOEEI = 475;
 
     pub fn EIGMKOJOEEI(&self) -> &super::HNEBODEBELG::HNEBODEBELG {
         match self.teleport_nigger {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for MNDMNDKLKIE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                7010 => {
+                3802 => {
                     self.teleport_nigger = ::std::option::Option::Some(mndmndklkie::Teleport_nigger::EIGMKOJOEEI(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for MNDMNDKLKIE {
         if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
             match v {
                 &mndmndklkie::Teleport_nigger::EIGMKOJOEEI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(876, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(475, v, os)?;
                 },
             };
         }
@@ -236,7 +236,7 @@ pub mod mndmndklkie {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MNDMNDKLKIE.proto\x1a\x11HNEBODEBELG.proto\"S\n\x0bMNDMNDKLKIE\x12\
-    1\n\x0bEIGMKOJOEEI\x18\xec\x06\x20\x01(\x0b2\x0c.HNEBODEBELGH\0R\x0bEIGM\
+    1\n\x0bEIGMKOJOEEI\x18\xdb\x03\x20\x01(\x0b2\x0c.HNEBODEBELGH\0R\x0bEIGM\
     KOJOEEIB\x11\n\x0fteleport_niggerb\x06proto3\
 ";
 

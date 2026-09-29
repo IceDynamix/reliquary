@@ -92,7 +92,7 @@ impl ::protobuf::Message for JEFCEGFBOAF {
                 50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHINOPGCAEE)?;
                 },
-                66 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCKEBLBMBHH)?;
                 },
                 tag => {
@@ -131,7 +131,7 @@ impl ::protobuf::Message for JEFCEGFBOAF {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if let Some(v) = self.CCKEBLBMBHH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,7 +188,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JEFCEGFBOAF.proto\x1a\x11ILMHFEPPKFE.proto\x1a\x11MKDHPOGEDOP.prot\
     o\"\x8f\x01\n\x0bJEFCEGFBOAF\x12\x20\n\x0bGNIFLCBGAAA\x18\x02\x20\x01(\r\
     R\x0bGNIFLCBGAAA\x12.\n\x0bEHINOPGCAEE\x18\x06\x20\x01(\x0b2\x0c.ILMHFEP\
-    PKFER\x0bEHINOPGCAEE\x12.\n\x0bCCKEBLBMBHH\x18\x08\x20\x01(\x0b2\x0c.MKD\
+    PKFER\x0bEHINOPGCAEE\x12.\n\x0bCCKEBLBMBHH\x18\x0b\x20\x01(\x0b2\x0c.MKD\
     HPOGEDOPR\x0bCCKEBLBMBHHb\x06proto3\
 ";
 

@@ -31,6 +31,8 @@ pub enum CBPDACMBHGL {
     CBPDACMBHGL_MMCGPCNJGCC = 0,
     // @@protoc_insertion_point(enum_value:CBPDACMBHGL.CBPDACMBHGL_CLKMDIEEDKJ)
     CBPDACMBHGL_CLKMDIEEDKJ = 1,
+    // @@protoc_insertion_point(enum_value:CBPDACMBHGL.CBPDACMBHGL_BFFIPLJNMLB)
+    CBPDACMBHGL_BFFIPLJNMLB = 2,
 }
 
 impl ::protobuf::Enum for CBPDACMBHGL {
@@ -44,6 +46,7 @@ impl ::protobuf::Enum for CBPDACMBHGL {
         match value {
             0 => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_MMCGPCNJGCC),
             1 => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_CLKMDIEEDKJ),
+            2 => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_BFFIPLJNMLB),
             _ => ::std::option::Option::None
         }
     }
@@ -52,6 +55,7 @@ impl ::protobuf::Enum for CBPDACMBHGL {
         match str {
             "CBPDACMBHGL_MMCGPCNJGCC" => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_MMCGPCNJGCC),
             "CBPDACMBHGL_CLKMDIEEDKJ" => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_CLKMDIEEDKJ),
+            "CBPDACMBHGL_BFFIPLJNMLB" => ::std::option::Option::Some(CBPDACMBHGL::CBPDACMBHGL_BFFIPLJNMLB),
             _ => ::std::option::Option::None
         }
     }
@@ -59,6 +63,7 @@ impl ::protobuf::Enum for CBPDACMBHGL {
     const VALUES: &'static [CBPDACMBHGL] = &[
         CBPDACMBHGL::CBPDACMBHGL_MMCGPCNJGCC,
         CBPDACMBHGL::CBPDACMBHGL_CLKMDIEEDKJ,
+        CBPDACMBHGL::CBPDACMBHGL_BFFIPLJNMLB,
     ];
 }
 
@@ -87,8 +92,9 @@ impl CBPDACMBHGL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CBPDACMBHGL.proto*G\n\x0bCBPDACMBHGL\x12\x1b\n\x17CBPDACMBHGL_MMCG\
-    PCNJGCC\x10\0\x12\x1b\n\x17CBPDACMBHGL_CLKMDIEEDKJ\x10\x01b\x06proto3\
+    \n\x11CBPDACMBHGL.proto*d\n\x0bCBPDACMBHGL\x12\x1b\n\x17CBPDACMBHGL_MMCG\
+    PCNJGCC\x10\0\x12\x1b\n\x17CBPDACMBHGL_CLKMDIEEDKJ\x10\x01\x12\x1b\n\x17\
+    CBPDACMBHGL_BFFIPLJNMLB\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

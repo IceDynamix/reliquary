@@ -72,7 +72,7 @@ impl ::protobuf::Message for EquipmentRecommend {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                82 => {
                     self.equipment_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EquipmentRecommend {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for EquipmentRecommend {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18EquipmentRecommend.proto\x1a\x11BMMHJIFCGNO.proto\"I\n\x12Equipmen\
-    tRecommend\x123\n\x0eequipment_list\x18\x06\x20\x03(\x0b2\x0c.BMMHJIFCGN\
-    OR\requipmentListb\x06proto3\
+    tRecommend\x123\n\x0eequipment_list\x18\n\x20\x03(\x0b2\x0c.BMMHJIFCGNOR\
+    \requipmentListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

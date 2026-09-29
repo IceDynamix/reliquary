@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BBCOLCHCEFP {
     // message fields
-    // @@protoc_insertion_point(field:BBCOLCHCEFP.status)
-    pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:BBCOLCHCEFP.NOEPBNMJFGL)
+    pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BBCOLCHCEFP.map_id)
+    pub map_id: u32,
     // @@protoc_insertion_point(field:BBCOLCHCEFP.unfinished_story_line_id_list)
     pub unfinished_story_line_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BBCOLCHCEFP.PJKMDLCCHHD)
     pub PJKMDLCCHHD: u32,
-    // @@protoc_insertion_point(field:BBCOLCHCEFP.KNDHMNBIIDF)
-    pub KNDHMNBIIDF: u32,
-    // @@protoc_insertion_point(field:BBCOLCHCEFP.NOEPBNMJFGL)
-    pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BBCOLCHCEFP.HAJJBOFCFOO)
     pub HAJJBOFCFOO: ::protobuf::MessageField<super::GMIJHCONFIH::GMIJHCONFIH>,
-    // @@protoc_insertion_point(field:BBCOLCHCEFP.map_id)
-    pub map_id: u32,
+    // @@protoc_insertion_point(field:BBCOLCHCEFP.status)
+    pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
+    // @@protoc_insertion_point(field:BBCOLCHCEFP.KNDHMNBIIDF)
+    pub KNDHMNBIIDF: u32,
     // @@protoc_insertion_point(field:BBCOLCHCEFP.JPKACKNNHCA)
     pub JPKACKNNHCA: ::protobuf::MessageField<super::APNCCNFJBKO::APNCCNFJBKO>,
     // special fields
@@ -63,10 +63,15 @@ impl BBCOLCHCEFP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NOEPBNMJFGL",
+            |m: &BBCOLCHCEFP| { &m.NOEPBNMJFGL },
+            |m: &mut BBCOLCHCEFP| { &mut m.NOEPBNMJFGL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &BBCOLCHCEFP| { &m.status },
-            |m: &mut BBCOLCHCEFP| { &mut m.status },
+            "map_id",
+            |m: &BBCOLCHCEFP| { &m.map_id },
+            |m: &mut BBCOLCHCEFP| { &mut m.map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "unfinished_story_line_id_list",
@@ -78,25 +83,20 @@ impl BBCOLCHCEFP {
             |m: &BBCOLCHCEFP| { &m.PJKMDLCCHHD },
             |m: &mut BBCOLCHCEFP| { &mut m.PJKMDLCCHHD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNDHMNBIIDF",
-            |m: &BBCOLCHCEFP| { &m.KNDHMNBIIDF },
-            |m: &mut BBCOLCHCEFP| { &mut m.KNDHMNBIIDF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NOEPBNMJFGL",
-            |m: &BBCOLCHCEFP| { &m.NOEPBNMJFGL },
-            |m: &mut BBCOLCHCEFP| { &mut m.NOEPBNMJFGL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GMIJHCONFIH::GMIJHCONFIH>(
             "HAJJBOFCFOO",
             |m: &BBCOLCHCEFP| { &m.HAJJBOFCFOO },
             |m: &mut BBCOLCHCEFP| { &mut m.HAJJBOFCFOO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "map_id",
-            |m: &BBCOLCHCEFP| { &m.map_id },
-            |m: &mut BBCOLCHCEFP| { &mut m.map_id },
+            "status",
+            |m: &BBCOLCHCEFP| { &m.status },
+            |m: &mut BBCOLCHCEFP| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KNDHMNBIIDF",
+            |m: &BBCOLCHCEFP| { &m.KNDHMNBIIDF },
+            |m: &mut BBCOLCHCEFP| { &mut m.KNDHMNBIIDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::APNCCNFJBKO::APNCCNFJBKO>(
             "JPKACKNNHCA",
@@ -121,32 +121,32 @@ impl ::protobuf::Message for BBCOLCHCEFP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.status = is.read_enum_or_unknown()?;
-                },
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
-                },
-                16 => {
-                    self.unfinished_story_line_id_list.push(is.read_uint32()?);
-                },
-                24 => {
-                    self.PJKMDLCCHHD = is.read_uint32()?;
-                },
-                56 => {
-                    self.KNDHMNBIIDF = is.read_uint32()?;
-                },
-                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                64 => {
+                16 => {
                     self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
-                90 => {
+                24 => {
+                    self.map_id = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
+                },
+                40 => {
+                    self.unfinished_story_line_id_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.PJKMDLCCHHD = is.read_uint32()?;
+                },
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HAJJBOFCFOO)?;
                 },
-                96 => {
-                    self.map_id = is.read_uint32()?;
+                72 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.KNDHMNBIIDF = is.read_uint32()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JPKACKNNHCA)?;
@@ -163,23 +163,23 @@ impl ::protobuf::Message for BBCOLCHCEFP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
-            my_size += ::protobuf::rt::int32_size(1, self.status.value());
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.NOEPBNMJFGL);
+        if self.map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.map_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.unfinished_story_line_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.unfinished_story_line_id_list);
         if self.PJKMDLCCHHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.PJKMDLCCHHD);
+            my_size += ::protobuf::rt::uint32_size(6, self.PJKMDLCCHHD);
         }
-        if self.KNDHMNBIIDF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KNDHMNBIIDF);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NOEPBNMJFGL);
         if let Some(v) = self.HAJJBOFCFOO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.map_id);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
+            my_size += ::protobuf::rt::int32_size(9, self.status.value());
+        }
+        if self.KNDHMNBIIDF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KNDHMNBIIDF);
         }
         if let Some(v) = self.JPKACKNNHCA.as_ref() {
             let len = v.compute_size();
@@ -191,22 +191,22 @@ impl ::protobuf::Message for BBCOLCHCEFP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        os.write_repeated_packed_uint32(2, &self.NOEPBNMJFGL)?;
+        if self.map_id != 0 {
+            os.write_uint32(3, self.map_id)?;
         }
-        os.write_repeated_packed_uint32(2, &self.unfinished_story_line_id_list)?;
+        os.write_repeated_packed_uint32(5, &self.unfinished_story_line_id_list)?;
         if self.PJKMDLCCHHD != 0 {
-            os.write_uint32(3, self.PJKMDLCCHHD)?;
+            os.write_uint32(6, self.PJKMDLCCHHD)?;
+        }
+        if let Some(v) = self.HAJJBOFCFOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.KNDHMNBIIDF != 0 {
-            os.write_uint32(7, self.KNDHMNBIIDF)?;
-        }
-        os.write_repeated_packed_uint32(8, &self.NOEPBNMJFGL)?;
-        if let Some(v) = self.HAJJBOFCFOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.map_id != 0 {
-            os.write_uint32(12, self.map_id)?;
+            os.write_uint32(13, self.KNDHMNBIIDF)?;
         }
         if let Some(v) = self.JPKACKNNHCA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -228,26 +228,26 @@ impl ::protobuf::Message for BBCOLCHCEFP {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None);
+        self.NOEPBNMJFGL.clear();
+        self.map_id = 0;
         self.unfinished_story_line_id_list.clear();
         self.PJKMDLCCHHD = 0;
-        self.KNDHMNBIIDF = 0;
-        self.NOEPBNMJFGL.clear();
         self.HAJJBOFCFOO.clear();
-        self.map_id = 0;
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_None);
+        self.KNDHMNBIIDF = 0;
         self.JPKACKNNHCA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BBCOLCHCEFP {
         static instance: BBCOLCHCEFP = BBCOLCHCEFP {
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            NOEPBNMJFGL: ::std::vec::Vec::new(),
+            map_id: 0,
             unfinished_story_line_id_list: ::std::vec::Vec::new(),
             PJKMDLCCHHD: 0,
-            KNDHMNBIIDF: 0,
-            NOEPBNMJFGL: ::std::vec::Vec::new(),
             HAJJBOFCFOO: ::protobuf::MessageField::none(),
-            map_id: 0,
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
+            KNDHMNBIIDF: 0,
             JPKACKNNHCA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -274,15 +274,15 @@ impl ::protobuf::reflect::ProtobufValue for BBCOLCHCEFP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BBCOLCHCEFP.proto\x1a\x11APNCCNFJBKO.proto\x1a\x11GMIJHCONFIH.prot\
-    o\x1a\x11RogueStatus.proto\"\xd2\x02\n\x0bBBCOLCHCEFP\x12$\n\x06status\
-    \x18\x01\x20\x01(\x0e2\x0c.RogueStatusR\x06status\x12@\n\x1dunfinished_s\
-    tory_line_id_list\x18\x02\x20\x03(\rR\x19unfinishedStoryLineIdList\x12\
-    \x20\n\x0bPJKMDLCCHHD\x18\x03\x20\x01(\rR\x0bPJKMDLCCHHD\x12\x20\n\x0bKN\
-    DHMNBIIDF\x18\x07\x20\x01(\rR\x0bKNDHMNBIIDF\x12\x20\n\x0bNOEPBNMJFGL\
-    \x18\x08\x20\x03(\rR\x0bNOEPBNMJFGL\x12.\n\x0bHAJJBOFCFOO\x18\x0b\x20\
-    \x01(\x0b2\x0c.GMIJHCONFIHR\x0bHAJJBOFCFOO\x12\x15\n\x06map_id\x18\x0c\
-    \x20\x01(\rR\x05mapId\x12.\n\x0bJPKACKNNHCA\x18\x0f\x20\x01(\x0b2\x0c.AP\
-    NCCNFJBKOR\x0bJPKACKNNHCAb\x06proto3\
+    o\x1a\x11RogueStatus.proto\"\xd2\x02\n\x0bBBCOLCHCEFP\x12\x20\n\x0bNOEPB\
+    NMJFGL\x18\x02\x20\x03(\rR\x0bNOEPBNMJFGL\x12\x15\n\x06map_id\x18\x03\
+    \x20\x01(\rR\x05mapId\x12@\n\x1dunfinished_story_line_id_list\x18\x05\
+    \x20\x03(\rR\x19unfinishedStoryLineIdList\x12\x20\n\x0bPJKMDLCCHHD\x18\
+    \x06\x20\x01(\rR\x0bPJKMDLCCHHD\x12.\n\x0bHAJJBOFCFOO\x18\x07\x20\x01(\
+    \x0b2\x0c.GMIJHCONFIHR\x0bHAJJBOFCFOO\x12$\n\x06status\x18\t\x20\x01(\
+    \x0e2\x0c.RogueStatusR\x06status\x12\x20\n\x0bKNDHMNBIIDF\x18\r\x20\x01(\
+    \rR\x0bKNDHMNBIIDF\x12.\n\x0bJPKACKNNHCA\x18\x0f\x20\x01(\x0b2\x0c.APNCC\
+    NFJBKOR\x0bJPKACKNNHCAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

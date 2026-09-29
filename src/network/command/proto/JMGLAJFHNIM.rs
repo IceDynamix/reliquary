@@ -28,14 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JMGLAJFHNIM {
     // message fields
+    // @@protoc_insertion_point(field:JMGLAJFHNIM.HECCOBFBJFI)
+    pub HECCOBFBJFI: u32,
     // @@protoc_insertion_point(field:JMGLAJFHNIM.map_id)
     pub map_id: u32,
     // @@protoc_insertion_point(field:JMGLAJFHNIM.EPJFNPBFFKD)
     pub EPJFNPBFFKD: ::std::vec::Vec<super::BFMENAAGPDN::BFMENAAGPDN>,
-    // @@protoc_insertion_point(field:JMGLAJFHNIM.HECCOBFBJFI)
-    pub HECCOBFBJFI: u32,
-    // @@protoc_insertion_point(field:JMGLAJFHNIM.ODLGMLCLMMP)
-    pub ODLGMLCLMMP: ::std::vec::Vec<super::DDBHIOHEHHC::DDBHIOHEHHC>,
     // special fields
     // @@protoc_insertion_point(special_field:JMGLAJFHNIM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,8 +51,13 @@ impl JMGLAJFHNIM {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(4);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HECCOBFBJFI",
+            |m: &JMGLAJFHNIM| { &m.HECCOBFBJFI },
+            |m: &mut JMGLAJFHNIM| { &mut m.HECCOBFBJFI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "map_id",
             |m: &JMGLAJFHNIM| { &m.map_id },
@@ -64,16 +67,6 @@ impl JMGLAJFHNIM {
             "EPJFNPBFFKD",
             |m: &JMGLAJFHNIM| { &m.EPJFNPBFFKD },
             |m: &mut JMGLAJFHNIM| { &mut m.EPJFNPBFFKD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HECCOBFBJFI",
-            |m: &JMGLAJFHNIM| { &m.HECCOBFBJFI },
-            |m: &mut JMGLAJFHNIM| { &mut m.HECCOBFBJFI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ODLGMLCLMMP",
-            |m: &JMGLAJFHNIM| { &m.ODLGMLCLMMP },
-            |m: &mut JMGLAJFHNIM| { &mut m.ODLGMLCLMMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JMGLAJFHNIM>(
             "JMGLAJFHNIM",
@@ -93,17 +86,14 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.map_id = is.read_uint32()?;
-                },
-                74 => {
-                    self.EPJFNPBFFKD.push(is.read_message()?);
-                },
-                80 => {
+                24 => {
                     self.HECCOBFBJFI = is.read_uint32()?;
                 },
+                88 => {
+                    self.map_id = is.read_uint32()?;
+                },
                 122 => {
-                    self.ODLGMLCLMMP.push(is.read_message()?);
+                    self.EPJFNPBFFKD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +107,13 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HECCOBFBJFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HECCOBFBJFI);
+        }
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.map_id);
         }
         for value in &self.EPJFNPBFFKD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.HECCOBFBJFI != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HECCOBFBJFI);
-        }
-        for value in &self.ODLGMLCLMMP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -137,16 +123,13 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HECCOBFBJFI != 0 {
+            os.write_uint32(3, self.HECCOBFBJFI)?;
+        }
         if self.map_id != 0 {
-            os.write_uint32(7, self.map_id)?;
+            os.write_uint32(11, self.map_id)?;
         }
         for v in &self.EPJFNPBFFKD {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
-        if self.HECCOBFBJFI != 0 {
-            os.write_uint32(10, self.HECCOBFBJFI)?;
-        }
-        for v in &self.ODLGMLCLMMP {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -166,19 +149,17 @@ impl ::protobuf::Message for JMGLAJFHNIM {
     }
 
     fn clear(&mut self) {
+        self.HECCOBFBJFI = 0;
         self.map_id = 0;
         self.EPJFNPBFFKD.clear();
-        self.HECCOBFBJFI = 0;
-        self.ODLGMLCLMMP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JMGLAJFHNIM {
         static instance: JMGLAJFHNIM = JMGLAJFHNIM {
+            HECCOBFBJFI: 0,
             map_id: 0,
             EPJFNPBFFKD: ::std::vec::Vec::new(),
-            HECCOBFBJFI: 0,
-            ODLGMLCLMMP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for JMGLAJFHNIM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JMGLAJFHNIM.proto\x1a\x11BFMENAAGPDN.proto\x1a\x11DDBHIOHEHHC.prot\
-    o\"\xa6\x01\n\x0bJMGLAJFHNIM\x12\x15\n\x06map_id\x18\x07\x20\x01(\rR\x05\
-    mapId\x12.\n\x0bEPJFNPBFFKD\x18\t\x20\x03(\x0b2\x0c.BFMENAAGPDNR\x0bEPJF\
-    NPBFFKD\x12\x20\n\x0bHECCOBFBJFI\x18\n\x20\x01(\rR\x0bHECCOBFBJFI\x12.\n\
-    \x0bODLGMLCLMMP\x18\x0f\x20\x03(\x0b2\x0c.DDBHIOHEHHCR\x0bODLGMLCLMMPb\
-    \x06proto3\
+    \n\x11JMGLAJFHNIM.proto\x1a\x11BFMENAAGPDN.proto\"v\n\x0bJMGLAJFHNIM\x12\
+    \x20\n\x0bHECCOBFBJFI\x18\x03\x20\x01(\rR\x0bHECCOBFBJFI\x12\x15\n\x06ma\
+    p_id\x18\x0b\x20\x01(\rR\x05mapId\x12.\n\x0bEPJFNPBFFKD\x18\x0f\x20\x03(\
+    \x0b2\x0c.BFMENAAGPDNR\x0bEPJFNPBFFKDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,9 +204,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::BFMENAAGPDN::file_descriptor().clone());
-            deps.push(super::DDBHIOHEHHC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JMGLAJFHNIM::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

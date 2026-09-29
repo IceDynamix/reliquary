@@ -79,10 +79,10 @@ impl ::protobuf::Message for OCGHBANLLOH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.dice_slot_id = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.AMPFBGKHJBF = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OCGHBANLLOH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.dice_slot_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.dice_slot_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.dice_slot_id);
         }
         if self.AMPFBGKHJBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AMPFBGKHJBF);
+            my_size += ::protobuf::rt::uint32_size(14, self.AMPFBGKHJBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OCGHBANLLOH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.dice_slot_id != 0 {
-            os.write_uint32(2, self.dice_slot_id)?;
+            os.write_uint32(3, self.dice_slot_id)?;
         }
         if self.AMPFBGKHJBF != 0 {
-            os.write_uint32(6, self.AMPFBGKHJBF)?;
+            os.write_uint32(14, self.AMPFBGKHJBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for OCGHBANLLOH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OCGHBANLLOH.proto\"Q\n\x0bOCGHBANLLOH\x12\x20\n\x0cdice_slot_id\
-    \x18\x02\x20\x01(\rR\ndiceSlotId\x12\x20\n\x0bAMPFBGKHJBF\x18\x06\x20\
+    \x18\x03\x20\x01(\rR\ndiceSlotId\x12\x20\n\x0bAMPFBGKHJBF\x18\x0e\x20\
     \x01(\rR\x0bAMPFBGKHJBFb\x06proto3\
 ";
 

@@ -82,7 +82,7 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
                 18 => {
                     self.DJOBNPIAEJP.push(is.read_message()?);
                 },
-                104 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,7 +169,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ElfRestaurantTakeVillagerRewardScRsp.proto\x1a\x11PLOHACFCDKF.proto\"\
     p\n$ElfRestaurantTakeVillagerRewardScRsp\x12.\n\x0bDJOBNPIAEJP\x18\x02\
     \x20\x03(\x0b2\x0c.PLOHACFCDKFR\x0bDJOBNPIAEJP\x12\x18\n\x07retcode\x18\
-    \r\x20\x01(\rR\x07retcodeb\x06proto3\
+    \t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

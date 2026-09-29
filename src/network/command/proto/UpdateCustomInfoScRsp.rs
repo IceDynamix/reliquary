@@ -48,7 +48,32 @@ impl UpdateCustomInfoScRsp {
         ::std::default::Default::default()
     }
 
-    // string title = 3;
+    // uint32 AJIMPLLIFIE = 10;
+
+    pub fn AJIMPLLIFIE(&self) -> u32 {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_AJIMPLLIFIE(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+    }
+
+    pub fn has_AJIMPLLIFIE(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AJIMPLLIFIE(&mut self, v: u32) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v))
+    }
+
+    // string title = 12;
 
     pub fn title(&self) -> &str {
         match self.MMCGBGDJIPN {
@@ -97,31 +122,6 @@ impl UpdateCustomInfoScRsp {
         }
     }
 
-    // uint32 AJIMPLLIFIE = 11;
-
-    pub fn AJIMPLLIFIE(&self) -> u32 {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_AJIMPLLIFIE(&mut self) {
-        self.MMCGBGDJIPN = ::std::option::Option::None;
-    }
-
-    pub fn has_AJIMPLLIFIE(&self) -> bool {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AJIMPLLIFIE(&mut self, v: u32) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v))
-    }
-
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -130,17 +130,17 @@ impl UpdateCustomInfoScRsp {
             |m: &UpdateCustomInfoScRsp| { &m.retcode },
             |m: &mut UpdateCustomInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
-            "title",
-            UpdateCustomInfoScRsp::has_title,
-            UpdateCustomInfoScRsp::title,
-            UpdateCustomInfoScRsp::set_title,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "AJIMPLLIFIE",
             UpdateCustomInfoScRsp::has_AJIMPLLIFIE,
             UpdateCustomInfoScRsp::AJIMPLLIFIE,
             UpdateCustomInfoScRsp::set_AJIMPLLIFIE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
+            "title",
+            UpdateCustomInfoScRsp::has_title,
+            UpdateCustomInfoScRsp::title,
+            UpdateCustomInfoScRsp::set_title,
         ));
         oneofs.push(update_custom_info_sc_rsp::MMCGBGDJIPN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateCustomInfoScRsp>(
@@ -161,14 +161,14 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(is.read_string()?));
-                },
-                88 => {
+                80 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
+                },
+                98 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(is.read_string()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -183,15 +183,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
-                    my_size += ::protobuf::rt::string_size(3, &v);
-                },
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                    my_size += ::protobuf::rt::uint32_size(10, v);
+                },
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
+                    my_size += ::protobuf::rt::string_size(12, &v);
                 },
             };
         }
@@ -202,15 +202,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
-                    os.write_string(3, v)?;
-                },
                 &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
-                    os.write_uint32(11, v)?;
+                    os.write_uint32(10, v)?;
+                },
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
+                    os.write_string(12, v)?;
                 },
             };
         }
@@ -271,10 +271,10 @@ pub mod update_custom_info_sc_rsp {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:UpdateCustomInfoScRsp.MMCGBGDJIPN)
     pub enum MMCGBGDJIPN {
-        // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.title)
-        Title(::std::string::String),
         // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.AJIMPLLIFIE)
         AJIMPLLIFIE(u32),
+        // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.title)
+        Title(::std::string::String),
     }
 
     impl ::protobuf::Oneof for MMCGBGDJIPN {
@@ -296,9 +296,9 @@ pub mod update_custom_info_sc_rsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateCustomInfoScRsp.proto\"|\n\x15UpdateCustomInfoScRsp\x12\x18\
-    \n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x16\n\x05title\x18\x03\
-    \x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\x0b\x20\x01(\rH\0R\
-    \x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
+    \n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\"\n\x0bAJIMPLLIFIE\x18\
+    \n\x20\x01(\rH\0R\x0bAJIMPLLIFIE\x12\x16\n\x05title\x18\x0c\x20\x01(\tH\
+    \0R\x05titleB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

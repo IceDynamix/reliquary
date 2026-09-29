@@ -45,32 +45,7 @@ impl FDLGMIIOACH {
         ::std::default::Default::default()
     }
 
-    // uint32 NNDNCAEGDFI = 13;
-
-    pub fn NNDNCAEGDFI(&self) -> u32 {
-        match self.NNIHPHPEGIJ {
-            ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_NNDNCAEGDFI(&mut self) {
-        self.NNIHPHPEGIJ = ::std::option::Option::None;
-    }
-
-    pub fn has_NNDNCAEGDFI(&self) -> bool {
-        match self.NNIHPHPEGIJ {
-            ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NNDNCAEGDFI(&mut self, v: u32) {
-        self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v))
-    }
-
-    // uint32 extra_id = 12;
+    // uint32 extra_id = 2;
 
     pub fn extra_id(&self) -> u32 {
         match self.NNIHPHPEGIJ {
@@ -95,20 +70,45 @@ impl FDLGMIIOACH {
         self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::ExtraId(v))
     }
 
+    // uint32 NNDNCAEGDFI = 9;
+
+    pub fn NNDNCAEGDFI(&self) -> u32 {
+        match self.NNIHPHPEGIJ {
+            ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_NNDNCAEGDFI(&mut self) {
+        self.NNIHPHPEGIJ = ::std::option::Option::None;
+    }
+
+    pub fn has_NNDNCAEGDFI(&self) -> bool {
+        match self.NNIHPHPEGIJ {
+            ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NNDNCAEGDFI(&mut self, v: u32) {
+        self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NNDNCAEGDFI",
-            FDLGMIIOACH::has_NNDNCAEGDFI,
-            FDLGMIIOACH::NNDNCAEGDFI,
-            FDLGMIIOACH::set_NNDNCAEGDFI,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "extra_id",
             FDLGMIIOACH::has_extra_id,
             FDLGMIIOACH::extra_id,
             FDLGMIIOACH::set_extra_id,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "NNDNCAEGDFI",
+            FDLGMIIOACH::has_NNDNCAEGDFI,
+            FDLGMIIOACH::NNDNCAEGDFI,
+            FDLGMIIOACH::set_NNDNCAEGDFI,
         ));
         oneofs.push(fdlgmiioach::NNIHPHPEGIJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FDLGMIIOACH>(
@@ -129,11 +129,11 @@ impl ::protobuf::Message for FDLGMIIOACH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(is.read_uint32()?));
-                },
-                96 => {
+                16 => {
                     self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::ExtraId(is.read_uint32()?));
+                },
+                72 => {
+                    self.NNIHPHPEGIJ = ::std::option::Option::Some(fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -149,11 +149,11 @@ impl ::protobuf::Message for FDLGMIIOACH {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.NNIHPHPEGIJ {
             match v {
-                &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
-                },
                 &fdlgmiioach::NNIHPHPEGIJ::ExtraId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(12, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
+                },
+                &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
+                    my_size += ::protobuf::rt::uint32_size(9, v);
                 },
             };
         }
@@ -165,11 +165,11 @@ impl ::protobuf::Message for FDLGMIIOACH {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.NNIHPHPEGIJ {
             match v {
-                &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
-                    os.write_uint32(13, v)?;
-                },
                 &fdlgmiioach::NNIHPHPEGIJ::ExtraId(v) => {
-                    os.write_uint32(12, v)?;
+                    os.write_uint32(2, v)?;
+                },
+                &fdlgmiioach::NNIHPHPEGIJ::NNDNCAEGDFI(v) => {
+                    os.write_uint32(9, v)?;
                 },
             };
         }
@@ -228,10 +228,10 @@ pub mod fdlgmiioach {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FDLGMIIOACH.NNIHPHPEGIJ)
     pub enum NNIHPHPEGIJ {
-        // @@protoc_insertion_point(oneof_field:FDLGMIIOACH.NNDNCAEGDFI)
-        NNDNCAEGDFI(u32),
         // @@protoc_insertion_point(oneof_field:FDLGMIIOACH.extra_id)
         ExtraId(u32),
+        // @@protoc_insertion_point(oneof_field:FDLGMIIOACH.NNDNCAEGDFI)
+        NNDNCAEGDFI(u32),
     }
 
     impl ::protobuf::Oneof for NNIHPHPEGIJ {
@@ -252,9 +252,9 @@ pub mod fdlgmiioach {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FDLGMIIOACH.proto\"]\n\x0bFDLGMIIOACH\x12\"\n\x0bNNDNCAEGDFI\x18\r\
-    \x20\x01(\rH\0R\x0bNNDNCAEGDFI\x12\x1b\n\x08extra_id\x18\x0c\x20\x01(\rH\
-    \0R\x07extraIdB\r\n\x0bNNIHPHPEGIJb\x06proto3\
+    \n\x11FDLGMIIOACH.proto\"]\n\x0bFDLGMIIOACH\x12\x1b\n\x08extra_id\x18\
+    \x02\x20\x01(\rH\0R\x07extraId\x12\"\n\x0bNNDNCAEGDFI\x18\t\x20\x01(\rH\
+    \0R\x0bNNDNCAEGDFIB\r\n\x0bNNIHPHPEGIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

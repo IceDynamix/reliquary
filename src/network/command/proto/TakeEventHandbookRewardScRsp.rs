@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeEventHandbookRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeEventHandbookRewardScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeEventHandbookRewardScRsp.DBGOOKPHLFD)
     pub DBGOOKPHLFD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeEventHandbookRewardScRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:TakeEventHandbookRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl TakeEventHandbookRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &TakeEventHandbookRewardScRsp| { &m.reward },
-            |m: &mut TakeEventHandbookRewardScRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DBGOOKPHLFD",
             |m: &TakeEventHandbookRewardScRsp| { &m.DBGOOKPHLFD },
             |m: &mut TakeEventHandbookRewardScRsp| { &mut m.DBGOOKPHLFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &TakeEventHandbookRewardScRsp| { &m.reward },
+            |m: &mut TakeEventHandbookRewardScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for TakeEventHandbookRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                34 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.DBGOOKPHLFD)?;
                 },
-                32 => {
+                48 => {
                     self.DBGOOKPHLFD.push(is.read_uint32()?);
                 },
-                104 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -110,13 +110,13 @@ impl ::protobuf::Message for TakeEventHandbookRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DBGOOKPHLFD);
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DBGOOKPHLFD);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for TakeEventHandbookRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(6, &self.DBGOOKPHLFD)?;
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        os.write_repeated_packed_uint32(4, &self.DBGOOKPHLFD)?;
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for TakeEventHandbookRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
         self.DBGOOKPHLFD.clear();
+        self.reward.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeEventHandbookRewardScRsp {
         static instance: TakeEventHandbookRewardScRsp = TakeEventHandbookRewardScRsp {
-            reward: ::protobuf::MessageField::none(),
             DBGOOKPHLFD: ::std::vec::Vec::new(),
+            reward: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeEventHandbookRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeEventHandbookRewardScRsp.proto\x1a\x0eItemList.proto\"}\n\x1cTak\
-    eEventHandbookRewardScRsp\x12!\n\x06reward\x18\x02\x20\x01(\x0b2\t.ItemL\
-    istR\x06reward\x12\x20\n\x0bDBGOOKPHLFD\x18\x04\x20\x03(\rR\x0bDBGOOKPHL\
-    FD\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    eEventHandbookRewardScRsp\x12\x20\n\x0bDBGOOKPHLFD\x18\x06\x20\x03(\rR\
+    \x0bDBGOOKPHLFD\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\x06re\
+    ward\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -96,16 +96,16 @@ impl ::protobuf::Message for NGHCOJCMJOK {
                 18 => {
                     self.HAINMHKIOMJ.push(is.read_message()?);
                 },
-                58 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPOIDCHIMEK)?;
                 },
-                82 => {
+                74 => {
                     self.FAJLFDNKFGJ.push(is.read_message()?);
                 },
-                122 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.BNCOJCEGBPG)?;
                 },
-                120 => {
+                96 => {
                     self.BNCOJCEGBPG.push(is.read_uint32()?);
                 },
                 tag => {
@@ -132,7 +132,7 @@ impl ::protobuf::Message for NGHCOJCMJOK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.BNCOJCEGBPG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.BNCOJCEGBPG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -143,12 +143,12 @@ impl ::protobuf::Message for NGHCOJCMJOK {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if let Some(v) = self.OPOIDCHIMEK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         for v in &self.FAJLFDNKFGJ {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        os.write_repeated_packed_uint32(15, &self.BNCOJCEGBPG)?;
+        os.write_repeated_packed_uint32(12, &self.BNCOJCEGBPG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -206,9 +206,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGHCOJCMJOK.proto\x1a\x11EKPBGMKJGDL.proto\x1a\x11IPMLDNLACFO.prot\
     o\x1a\x11NCFKHDIKCNI.proto\"\xbf\x01\n\x0bNGHCOJCMJOK\x12.\n\x0bHAINMHKI\
     OMJ\x18\x02\x20\x03(\x0b2\x0c.EKPBGMKJGDLR\x0bHAINMHKIOMJ\x12.\n\x0bOPOI\
-    DCHIMEK\x18\x07\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bOPOIDCHIMEK\x12.\n\x0b\
-    FAJLFDNKFGJ\x18\n\x20\x03(\x0b2\x0c.IPMLDNLACFOR\x0bFAJLFDNKFGJ\x12\x20\
-    \n\x0bBNCOJCEGBPG\x18\x0f\x20\x03(\rR\x0bBNCOJCEGBPGb\x06proto3\
+    DCHIMEK\x18\x08\x20\x01(\x0b2\x0c.NCFKHDIKCNIR\x0bOPOIDCHIMEK\x12.\n\x0b\
+    FAJLFDNKFGJ\x18\t\x20\x03(\x0b2\x0c.IPMLDNLACFOR\x0bFAJLFDNKFGJ\x12\x20\
+    \n\x0bBNCOJCEGBPG\x18\x0c\x20\x03(\rR\x0bBNCOJCEGBPGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

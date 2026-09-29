@@ -76,6 +76,12 @@ pub struct BattleAvatarServantInfo {
     pub MEBKILMPMGA: u32,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.GPLELDEIEKO)
     pub GPLELDEIEKO: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.NEMOMKPCCMG)
+    pub NEMOMKPCCMG: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.LIOCBCEJAIF)
+    pub LIOCBCEJAIF: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.DFLFMCIIGPK)
+    pub DFLFMCIIGPK: f64,
     // special fields
     // @@protoc_insertion_point(special_field:BattleAvatarServantInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -93,7 +99,7 @@ impl BattleAvatarServantInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(24);
+        let mut fields = ::std::vec::Vec::with_capacity(27);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -215,6 +221,21 @@ impl BattleAvatarServantInfo {
             |m: &BattleAvatarServantInfo| { &m.GPLELDEIEKO },
             |m: &mut BattleAvatarServantInfo| { &mut m.GPLELDEIEKO },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEMOMKPCCMG",
+            |m: &BattleAvatarServantInfo| { &m.NEMOMKPCCMG },
+            |m: &mut BattleAvatarServantInfo| { &mut m.NEMOMKPCCMG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LIOCBCEJAIF",
+            |m: &BattleAvatarServantInfo| { &m.LIOCBCEJAIF },
+            |m: &mut BattleAvatarServantInfo| { &mut m.LIOCBCEJAIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DFLFMCIIGPK",
+            |m: &BattleAvatarServantInfo| { &m.DFLFMCIIGPK },
+            |m: &mut BattleAvatarServantInfo| { &mut m.DFLFMCIIGPK },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleAvatarServantInfo>(
             "BattleAvatarServantInfo",
             fields,
@@ -305,6 +326,15 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
                 193 => {
                     self.GPLELDEIEKO = is.read_double()?;
                 },
+                201 => {
+                    self.NEMOMKPCCMG = is.read_double()?;
+                },
+                209 => {
+                    self.LIOCBCEJAIF = is.read_double()?;
+                },
+                217 => {
+                    self.DFLFMCIIGPK = is.read_double()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -393,6 +423,15 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.GPLELDEIEKO != 0. {
             my_size += 2 + 8;
         }
+        if self.NEMOMKPCCMG != 0. {
+            my_size += 2 + 8;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            my_size += 2 + 8;
+        }
+        if self.DFLFMCIIGPK != 0. {
+            my_size += 2 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -471,6 +510,15 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.GPLELDEIEKO != 0. {
             os.write_double(24, self.GPLELDEIEKO)?;
         }
+        if self.NEMOMKPCCMG != 0. {
+            os.write_double(25, self.NEMOMKPCCMG)?;
+        }
+        if self.LIOCBCEJAIF != 0. {
+            os.write_double(26, self.LIOCBCEJAIF)?;
+        }
+        if self.DFLFMCIIGPK != 0. {
+            os.write_double(27, self.DFLFMCIIGPK)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -512,6 +560,9 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         self.entity_id = 0;
         self.MEBKILMPMGA = 0;
         self.GPLELDEIEKO = 0.;
+        self.NEMOMKPCCMG = 0.;
+        self.LIOCBCEJAIF = 0.;
+        self.DFLFMCIIGPK = 0.;
         self.special_fields.clear();
     }
 
@@ -541,6 +592,9 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
             entity_id: 0,
             MEBKILMPMGA: 0,
             GPLELDEIEKO: 0.,
+            NEMOMKPCCMG: 0.,
+            LIOCBCEJAIF: 0.,
+            DFLFMCIIGPK: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -566,7 +620,7 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatarServantInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dBattleAvatarServantInfo.proto\x1a\x1aAttackDamageProperty.proto\
-    \x1a\x16SkillUseProperty.proto\"\x83\x08\n\x17BattleAvatarServantInfo\
+    \x1a\x16SkillUseProperty.proto\"\xe9\x08\n\x17BattleAvatarServantInfo\
     \x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bKAAHK\
     LDJPJE\x18\x02\x20\x01(\rR\x0bKAAHKLDJPJE\x12\x1f\n\x0btotal_turns\x18\
     \x03\x20\x01(\rR\ntotalTurns\x12\x20\n\x0bDBJOLLGOGOL\x18\x04\x20\x01(\
@@ -589,7 +643,10 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x01(\rR\x0bJDHDJFCKBGD\x12\x20\n\x0bDIALJMAHFBO\x18\x15\x20\x01(\x01R\
     \x0bDIALJMAHFBO\x12\x1b\n\tentity_id\x18\x16\x20\x01(\rR\x08entityId\x12\
     \x20\n\x0bMEBKILMPMGA\x18\x17\x20\x01(\rR\x0bMEBKILMPMGA\x12\x20\n\x0bGP\
-    LELDEIEKO\x18\x18\x20\x01(\x01R\x0bGPLELDEIEKOb\x06proto3\
+    LELDEIEKO\x18\x18\x20\x01(\x01R\x0bGPLELDEIEKO\x12\x20\n\x0bNEMOMKPCCMG\
+    \x18\x19\x20\x01(\x01R\x0bNEMOMKPCCMG\x12\x20\n\x0bLIOCBCEJAIF\x18\x1a\
+    \x20\x01(\x01R\x0bLIOCBCEJAIF\x12\x20\n\x0bDFLFMCIIGPK\x18\x1b\x20\x01(\
+    \x01R\x0bDFLFMCIIGPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

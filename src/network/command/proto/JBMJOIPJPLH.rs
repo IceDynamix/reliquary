@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JBMJOIPJPLH {
     // message fields
-    // @@protoc_insertion_point(field:JBMJOIPJPLH.DJFGDMIDEHJ)
-    pub DJFGDMIDEHJ: u32,
     // @@protoc_insertion_point(field:JBMJOIPJPLH.OINGNAJMFNL)
     pub OINGNAJMFNL: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
     // @@protoc_insertion_point(field:JBMJOIPJPLH.OFBEDJIAEOA)
     pub OFBEDJIAEOA: u32,
+    // @@protoc_insertion_point(field:JBMJOIPJPLH.DJFGDMIDEHJ)
+    pub DJFGDMIDEHJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JBMJOIPJPLH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl JBMJOIPJPLH {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJFGDMIDEHJ",
-            |m: &JBMJOIPJPLH| { &m.DJFGDMIDEHJ },
-            |m: &mut JBMJOIPJPLH| { &mut m.DJFGDMIDEHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OINGNAJMFNL",
             |m: &JBMJOIPJPLH| { &m.OINGNAJMFNL },
             |m: &mut JBMJOIPJPLH| { &mut m.OINGNAJMFNL },
@@ -67,6 +62,11 @@ impl JBMJOIPJPLH {
             "OFBEDJIAEOA",
             |m: &JBMJOIPJPLH| { &m.OFBEDJIAEOA },
             |m: &mut JBMJOIPJPLH| { &mut m.OFBEDJIAEOA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJFGDMIDEHJ",
+            |m: &JBMJOIPJPLH| { &m.DJFGDMIDEHJ },
+            |m: &mut JBMJOIPJPLH| { &mut m.DJFGDMIDEHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JBMJOIPJPLH>(
             "JBMJOIPJPLH",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for JBMJOIPJPLH {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.DJFGDMIDEHJ = is.read_uint32()?;
-                },
-                80 => {
                     self.OINGNAJMFNL = is.read_enum_or_unknown()?;
                 },
-                88 => {
+                32 => {
                     self.OFBEDJIAEOA = is.read_uint32()?;
+                },
+                120 => {
+                    self.DJFGDMIDEHJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JBMJOIPJPLH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJFGDMIDEHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.DJFGDMIDEHJ);
-        }
         if self.OINGNAJMFNL != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_C) {
-            my_size += ::protobuf::rt::int32_size(10, self.OINGNAJMFNL.value());
+            my_size += ::protobuf::rt::int32_size(3, self.OINGNAJMFNL.value());
         }
         if self.OFBEDJIAEOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.OFBEDJIAEOA);
+            my_size += ::protobuf::rt::uint32_size(4, self.OFBEDJIAEOA);
+        }
+        if self.DJFGDMIDEHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DJFGDMIDEHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for JBMJOIPJPLH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJFGDMIDEHJ != 0 {
-            os.write_uint32(3, self.DJFGDMIDEHJ)?;
-        }
         if self.OINGNAJMFNL != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_C) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.OINGNAJMFNL))?;
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.OINGNAJMFNL))?;
         }
         if self.OFBEDJIAEOA != 0 {
-            os.write_uint32(11, self.OFBEDJIAEOA)?;
+            os.write_uint32(4, self.OFBEDJIAEOA)?;
+        }
+        if self.DJFGDMIDEHJ != 0 {
+            os.write_uint32(15, self.DJFGDMIDEHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for JBMJOIPJPLH {
     }
 
     fn clear(&mut self) {
-        self.DJFGDMIDEHJ = 0;
         self.OINGNAJMFNL = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_C);
         self.OFBEDJIAEOA = 0;
+        self.DJFGDMIDEHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JBMJOIPJPLH {
         static instance: JBMJOIPJPLH = JBMJOIPJPLH {
-            DJFGDMIDEHJ: 0,
             OINGNAJMFNL: ::protobuf::EnumOrUnknown::from_i32(0),
             OFBEDJIAEOA: 0,
+            DJFGDMIDEHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for JBMJOIPJPLH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JBMJOIPJPLH.proto\x1a\x19FeverTimeBattleRank.proto\"\x89\x01\n\x0b\
-    JBMJOIPJPLH\x12\x20\n\x0bDJFGDMIDEHJ\x18\x03\x20\x01(\rR\x0bDJFGDMIDEHJ\
-    \x126\n\x0bOINGNAJMFNL\x18\n\x20\x01(\x0e2\x14.FeverTimeBattleRankR\x0bO\
-    INGNAJMFNL\x12\x20\n\x0bOFBEDJIAEOA\x18\x0b\x20\x01(\rR\x0bOFBEDJIAEOAb\
+    JBMJOIPJPLH\x126\n\x0bOINGNAJMFNL\x18\x03\x20\x01(\x0e2\x14.FeverTimeBat\
+    tleRankR\x0bOINGNAJMFNL\x12\x20\n\x0bOFBEDJIAEOA\x18\x04\x20\x01(\rR\x0b\
+    OFBEDJIAEOA\x12\x20\n\x0bDJFGDMIDEHJ\x18\x0f\x20\x01(\rR\x0bDJFGDMIDEHJb\
     \x06proto3\
 ";
 

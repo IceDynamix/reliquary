@@ -72,7 +72,7 @@ impl ::protobuf::Message for ONKHCFLOELJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.BKCNAAMGHKJ = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ONKHCFLOELJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BKCNAAMGHKJ != false {
-            os.write_bool(5, self.BKCNAAMGHKJ)?;
+            os.write_bool(2, self.BKCNAAMGHKJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ONKHCFLOELJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONKHCFLOELJ.proto\"/\n\x0bONKHCFLOELJ\x12\x20\n\x0bBKCNAAMGHKJ\x18\
-    \x05\x20\x01(\x08R\x0bBKCNAAMGHKJb\x06proto3\
+    \x02\x20\x01(\x08R\x0bBKCNAAMGHKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum ONNDCODLMGD {
     // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_NLCDGIPGFDJ)
     ONNDCODLMGD_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_HIKIBFCIKBA)
-    ONNDCODLMGD_HIKIBFCIKBA = 6944,
-    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_BNAFMMKMELE)
-    ONNDCODLMGD_BNAFMMKMELE = 6952,
-    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_BIHBGPPKCNL)
-    ONNDCODLMGD_BIHBGPPKCNL = 6954,
     // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_LNFHMGKBNEO)
-    ONNDCODLMGD_LNFHMGKBNEO = 6942,
+    ONNDCODLMGD_LNFHMGKBNEO = 6950,
+    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_BNAFMMKMELE)
+    ONNDCODLMGD_BNAFMMKMELE = 6944,
+    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_BIHBGPPKCNL)
+    ONNDCODLMGD_BIHBGPPKCNL = 6956,
+    // @@protoc_insertion_point(enum_value:ONNDCODLMGD.ONNDCODLMGD_HIKIBFCIKBA)
+    ONNDCODLMGD_HIKIBFCIKBA = 6948,
 }
 
 impl ::protobuf::Enum for ONNDCODLMGD {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for ONNDCODLMGD {
     fn from_i32(value: i32) -> ::std::option::Option<ONNDCODLMGD> {
         match value {
             0 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_NLCDGIPGFDJ),
-            6944 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA),
-            6952 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BNAFMMKMELE),
-            6954 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BIHBGPPKCNL),
-            6942 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO),
+            6950 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO),
+            6944 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BNAFMMKMELE),
+            6956 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BIHBGPPKCNL),
+            6948 => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for ONNDCODLMGD {
     fn from_str(str: &str) -> ::std::option::Option<ONNDCODLMGD> {
         match str {
             "ONNDCODLMGD_NLCDGIPGFDJ" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_NLCDGIPGFDJ),
-            "ONNDCODLMGD_HIKIBFCIKBA" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA),
+            "ONNDCODLMGD_LNFHMGKBNEO" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO),
             "ONNDCODLMGD_BNAFMMKMELE" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BNAFMMKMELE),
             "ONNDCODLMGD_BIHBGPPKCNL" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_BIHBGPPKCNL),
-            "ONNDCODLMGD_LNFHMGKBNEO" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO),
+            "ONNDCODLMGD_HIKIBFCIKBA" => ::std::option::Option::Some(ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ONNDCODLMGD] = &[
         ONNDCODLMGD::ONNDCODLMGD_NLCDGIPGFDJ,
-        ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA,
+        ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO,
         ONNDCODLMGD::ONNDCODLMGD_BNAFMMKMELE,
         ONNDCODLMGD::ONNDCODLMGD_BIHBGPPKCNL,
-        ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO,
+        ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for ONNDCODLMGD {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             ONNDCODLMGD::ONNDCODLMGD_NLCDGIPGFDJ => 0,
-            ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA => 1,
+            ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO => 1,
             ONNDCODLMGD::ONNDCODLMGD_BNAFMMKMELE => 2,
             ONNDCODLMGD::ONNDCODLMGD_BIHBGPPKCNL => 3,
-            ONNDCODLMGD::ONNDCODLMGD_LNFHMGKBNEO => 4,
+            ONNDCODLMGD::ONNDCODLMGD_HIKIBFCIKBA => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl ONNDCODLMGD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ONNDCODLMGD.proto*\xa2\x01\n\x0bONNDCODLMGD\x12\x1b\n\x17ONNDCODLM\
-    GD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONNDCODLMGD_HIKIBFCIKBA\x10\xa06\x12\
-    \x1c\n\x17ONNDCODLMGD_BNAFMMKMELE\x10\xa86\x12\x1c\n\x17ONNDCODLMGD_BIHB\
-    GPPKCNL\x10\xaa6\x12\x1c\n\x17ONNDCODLMGD_LNFHMGKBNEO\x10\x9e6b\x06proto\
+    GD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONNDCODLMGD_LNFHMGKBNEO\x10\xa66\x12\
+    \x1c\n\x17ONNDCODLMGD_BNAFMMKMELE\x10\xa06\x12\x1c\n\x17ONNDCODLMGD_BIHB\
+    GPPKCNL\x10\xac6\x12\x1c\n\x17ONNDCODLMGD_HIKIBFCIKBA\x10\xa46b\x06proto\
     3\
 ";
 

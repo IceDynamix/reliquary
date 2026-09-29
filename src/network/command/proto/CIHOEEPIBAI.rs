@@ -81,6 +81,8 @@ pub enum CIHOEEPIBAI {
     CIHOEEPIBAI_HHGCKKDLKCE = 25,
     // @@protoc_insertion_point(enum_value:CIHOEEPIBAI.CIHOEEPIBAI_GHEJGFJDFGE)
     CIHOEEPIBAI_GHEJGFJDFGE = 26,
+    // @@protoc_insertion_point(enum_value:CIHOEEPIBAI.CIHOEEPIBAI_LDJIJAKEFDG)
+    CIHOEEPIBAI_LDJIJAKEFDG = 27,
 }
 
 impl ::protobuf::Enum for CIHOEEPIBAI {
@@ -119,6 +121,7 @@ impl ::protobuf::Enum for CIHOEEPIBAI {
             24 => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_JKBIGFOFALO),
             25 => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_HHGCKKDLKCE),
             26 => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_GHEJGFJDFGE),
+            27 => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_LDJIJAKEFDG),
             _ => ::std::option::Option::None
         }
     }
@@ -152,6 +155,7 @@ impl ::protobuf::Enum for CIHOEEPIBAI {
             "CIHOEEPIBAI_JKBIGFOFALO" => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_JKBIGFOFALO),
             "CIHOEEPIBAI_HHGCKKDLKCE" => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_HHGCKKDLKCE),
             "CIHOEEPIBAI_GHEJGFJDFGE" => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_GHEJGFJDFGE),
+            "CIHOEEPIBAI_LDJIJAKEFDG" => ::std::option::Option::Some(CIHOEEPIBAI::CIHOEEPIBAI_LDJIJAKEFDG),
             _ => ::std::option::Option::None
         }
     }
@@ -184,6 +188,7 @@ impl ::protobuf::Enum for CIHOEEPIBAI {
         CIHOEEPIBAI::CIHOEEPIBAI_JKBIGFOFALO,
         CIHOEEPIBAI::CIHOEEPIBAI_HHGCKKDLKCE,
         CIHOEEPIBAI::CIHOEEPIBAI_GHEJGFJDFGE,
+        CIHOEEPIBAI::CIHOEEPIBAI_LDJIJAKEFDG,
     ];
 }
 
@@ -212,7 +217,7 @@ impl CIHOEEPIBAI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CIHOEEPIBAI.proto*\x9c\x06\n\x0bCIHOEEPIBAI\x12\x1b\n\x17CIHOEEPIB\
+    \n\x11CIHOEEPIBAI.proto*\xb9\x06\n\x0bCIHOEEPIBAI\x12\x1b\n\x17CIHOEEPIB\
     AI_DFPNLDKHGMM\x10\0\x12\x1b\n\x17CIHOEEPIBAI_BJPOPNCPJKB\x10\x01\x12\
     \x1b\n\x17CIHOEEPIBAI_PIEEKEENFAC\x10\x02\x12\x1b\n\x17CIHOEEPIBAI_CENCC\
     GHMEBL\x10\x03\x12\x1b\n\x17CIHOEEPIBAI_FLGFIMKBIPB\x10\x04\x12\x1b\n\
@@ -229,7 +234,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17CIHOEEPIBAI_HMKCHIHCPMN\x10\x15\x12\x1b\n\x17CIHOEEPIBAI_FHNEFOION\
     MB\x10\x16\x12\x1b\n\x17CIHOEEPIBAI_ALOHLIIBCID\x10\x17\x12\x1b\n\x17CIH\
     OEEPIBAI_JKBIGFOFALO\x10\x18\x12\x1b\n\x17CIHOEEPIBAI_HHGCKKDLKCE\x10\
-    \x19\x12\x1b\n\x17CIHOEEPIBAI_GHEJGFJDFGE\x10\x1ab\x06proto3\
+    \x19\x12\x1b\n\x17CIHOEEPIBAI_GHEJGFJDFGE\x10\x1a\x12\x1b\n\x17CIHOEEPIB\
+    AI_LDJIJAKEFDG\x10\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

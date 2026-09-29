@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGCIPBFBNKO {
     // message fields
-    // @@protoc_insertion_point(field:HGCIPBFBNKO.source)
-    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
     // @@protoc_insertion_point(field:HGCIPBFBNKO.config_id)
     pub config_id: u32,
     // @@protoc_insertion_point(field:HGCIPBFBNKO.unique_id)
     pub unique_id: u64,
+    // @@protoc_insertion_point(field:HGCIPBFBNKO.source)
+    pub source: ::protobuf::MessageField<super::JLPEICPFLMC::JLPEICPFLMC>,
     // message oneof groups
     pub AEJNJCELNOE: ::std::option::Option<hgcipbfbnko::AEJNJCELNOE>,
     // special fields
@@ -52,7 +52,7 @@ impl HGCIPBFBNKO {
         ::std::default::Default::default()
     }
 
-    // .JLIFGIMBMBD AENBOONOFLC = 7;
+    // .JLIFGIMBMBD AENBOONOFLC = 6;
 
     pub fn AENBOONOFLC(&self) -> &super::JLIFGIMBMBD::JLIFGIMBMBD {
         match self.AEJNJCELNOE {
@@ -104,11 +104,6 @@ impl HGCIPBFBNKO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
-            "source",
-            |m: &HGCIPBFBNKO| { &m.source },
-            |m: &mut HGCIPBFBNKO| { &mut m.source },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "config_id",
             |m: &HGCIPBFBNKO| { &m.config_id },
@@ -118,6 +113,11 @@ impl HGCIPBFBNKO {
             "unique_id",
             |m: &HGCIPBFBNKO| { &m.unique_id },
             |m: &mut HGCIPBFBNKO| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLPEICPFLMC::JLPEICPFLMC>(
+            "source",
+            |m: &HGCIPBFBNKO| { &m.source },
+            |m: &mut HGCIPBFBNKO| { &mut m.source },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JLIFGIMBMBD::JLIFGIMBMBD>(
             "AENBOONOFLC",
@@ -145,16 +145,16 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
-                },
-                96 => {
+                80 => {
                     self.config_id = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.unique_id = is.read_uint64()?;
                 },
-                58 => {
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
+                },
+                50 => {
                     self.AEJNJCELNOE = ::std::option::Option::Some(hgcipbfbnko::AEJNJCELNOE::AENBOONOFLC(is.read_message()?));
                 },
                 tag => {
@@ -169,15 +169,15 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.config_id);
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.unique_id);
+        }
         if let Some(v) = self.source.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.config_id);
-        }
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.AEJNJCELNOE {
             match v {
@@ -193,19 +193,19 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.config_id != 0 {
-            os.write_uint32(12, self.config_id)?;
+            os.write_uint32(10, self.config_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint64(13, self.unique_id)?;
+            os.write_uint64(12, self.unique_id)?;
+        }
+        if let Some(v) = self.source.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.AEJNJCELNOE {
             match v {
                 &hgcipbfbnko::AEJNJCELNOE::AENBOONOFLC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
             };
         }
@@ -226,18 +226,18 @@ impl ::protobuf::Message for HGCIPBFBNKO {
     }
 
     fn clear(&mut self) {
-        self.source.clear();
         self.config_id = 0;
         self.unique_id = 0;
+        self.source.clear();
         self.AEJNJCELNOE = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGCIPBFBNKO {
         static instance: HGCIPBFBNKO = HGCIPBFBNKO {
-            source: ::protobuf::MessageField::none(),
             config_id: 0,
             unique_id: 0,
+            source: ::protobuf::MessageField::none(),
             AEJNJCELNOE: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -292,11 +292,11 @@ pub mod hgcipbfbnko {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGCIPBFBNKO.proto\x1a\x11JLIFGIMBMBD.proto\x1a\x11JLPEICPFLMC.prot\
-    o\"\xae\x01\n\x0bHGCIPBFBNKO\x12$\n\x06source\x18\x04\x20\x01(\x0b2\x0c.\
-    JLPEICPFLMCR\x06source\x12\x1b\n\tconfig_id\x18\x0c\x20\x01(\rR\x08confi\
-    gId\x12\x1b\n\tunique_id\x18\r\x20\x01(\x04R\x08uniqueId\x120\n\x0bAENBO\
-    ONOFLC\x18\x07\x20\x01(\x0b2\x0c.JLIFGIMBMBDH\0R\x0bAENBOONOFLCB\r\n\x0b\
-    AEJNJCELNOEb\x06proto3\
+    o\"\xae\x01\n\x0bHGCIPBFBNKO\x12\x1b\n\tconfig_id\x18\n\x20\x01(\rR\x08c\
+    onfigId\x12\x1b\n\tunique_id\x18\x0c\x20\x01(\x04R\x08uniqueId\x12$\n\
+    \x06source\x18\x0f\x20\x01(\x0b2\x0c.JLPEICPFLMCR\x06source\x120\n\x0bAE\
+    NBOONOFLC\x18\x06\x20\x01(\x0b2\x0c.JLIFGIMBMBDH\0R\x0bAENBOONOFLCB\r\n\
+    \x0bAEJNJCELNOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

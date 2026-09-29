@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Vector4 {
     // message fields
-    // @@protoc_insertion_point(field:Vector4.x)
-    pub x: f32,
-    // @@protoc_insertion_point(field:Vector4.y)
-    pub y: f32,
     // @@protoc_insertion_point(field:Vector4.z)
     pub z: f32,
+    // @@protoc_insertion_point(field:Vector4.y)
+    pub y: f32,
+    // @@protoc_insertion_point(field:Vector4.x)
+    pub x: f32,
     // @@protoc_insertion_point(field:Vector4.w)
     pub w: f32,
     // special fields
@@ -56,9 +56,9 @@ impl Vector4 {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "x",
-            |m: &Vector4| { &m.x },
-            |m: &mut Vector4| { &mut m.x },
+            "z",
+            |m: &Vector4| { &m.z },
+            |m: &mut Vector4| { &mut m.z },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "y",
@@ -66,9 +66,9 @@ impl Vector4 {
             |m: &mut Vector4| { &mut m.y },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "z",
-            |m: &Vector4| { &m.z },
-            |m: &mut Vector4| { &mut m.z },
+            "x",
+            |m: &Vector4| { &m.x },
+            |m: &mut Vector4| { &mut m.x },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "w",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for Vector4 {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                29 => {
-                    self.x = is.read_float()?;
-                },
-                61 => {
-                    self.y = is.read_float()?;
-                },
-                109 => {
+                21 => {
                     self.z = is.read_float()?;
                 },
-                125 => {
+                45 => {
+                    self.y = is.read_float()?;
+                },
+                77 => {
+                    self.x = is.read_float()?;
+                },
+                101 => {
                     self.w = is.read_float()?;
                 },
                 tag => {
@@ -117,13 +117,13 @@ impl ::protobuf::Message for Vector4 {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.x != 0. {
+        if self.z != 0. {
             my_size += 1 + 4;
         }
         if self.y != 0. {
             my_size += 1 + 4;
         }
-        if self.z != 0. {
+        if self.x != 0. {
             my_size += 1 + 4;
         }
         if self.w != 0. {
@@ -135,17 +135,17 @@ impl ::protobuf::Message for Vector4 {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.x != 0. {
-            os.write_float(3, self.x)?;
+        if self.z != 0. {
+            os.write_float(2, self.z)?;
         }
         if self.y != 0. {
-            os.write_float(7, self.y)?;
+            os.write_float(5, self.y)?;
         }
-        if self.z != 0. {
-            os.write_float(13, self.z)?;
+        if self.x != 0. {
+            os.write_float(9, self.x)?;
         }
         if self.w != 0. {
-            os.write_float(15, self.w)?;
+            os.write_float(12, self.w)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for Vector4 {
     }
 
     fn clear(&mut self) {
-        self.x = 0.;
-        self.y = 0.;
         self.z = 0.;
+        self.y = 0.;
+        self.x = 0.;
         self.w = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Vector4 {
         static instance: Vector4 = Vector4 {
-            x: 0.,
-            y: 0.,
             z: 0.,
+            y: 0.,
+            x: 0.,
             w: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for Vector4 {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rVector4.proto\"A\n\x07Vector4\x12\x0c\n\x01x\x18\x03\x20\x01(\x02R\
-    \x01x\x12\x0c\n\x01y\x18\x07\x20\x01(\x02R\x01y\x12\x0c\n\x01z\x18\r\x20\
-    \x01(\x02R\x01z\x12\x0c\n\x01w\x18\x0f\x20\x01(\x02R\x01wb\x06proto3\
+    \n\rVector4.proto\"A\n\x07Vector4\x12\x0c\n\x01z\x18\x02\x20\x01(\x02R\
+    \x01z\x12\x0c\n\x01y\x18\x05\x20\x01(\x02R\x01y\x12\x0c\n\x01x\x18\t\x20\
+    \x01(\x02R\x01x\x12\x0c\n\x01w\x18\x0c\x20\x01(\x02R\x01wb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

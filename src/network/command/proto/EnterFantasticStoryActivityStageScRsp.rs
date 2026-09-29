@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFantasticStoryActivityStageScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.battle_id)
     pub battle_id: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
-    // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterFantasticStoryActivityStageScRsp.OFHBPNGDEGO)
     pub OFHBPNGDEGO: u32,
     // special fields
@@ -56,6 +56,11 @@ impl EnterFantasticStoryActivityStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EnterFantasticStoryActivityStageScRsp| { &m.retcode },
+            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_id",
             |m: &EnterFantasticStoryActivityStageScRsp| { &m.battle_id },
             |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.battle_id },
@@ -64,11 +69,6 @@ impl EnterFantasticStoryActivityStageScRsp {
             "battle_info",
             |m: &EnterFantasticStoryActivityStageScRsp| { &m.battle_info },
             |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.battle_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterFantasticStoryActivityStageScRsp| { &m.retcode },
-            |m: &mut EnterFantasticStoryActivityStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFHBPNGDEGO",
@@ -93,14 +93,14 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
                     self.battle_id = is.read_uint32()?;
                 },
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 112 => {
                     self.OFHBPNGDEGO = is.read_uint32()?;
@@ -117,15 +117,15 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.battle_id);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.OFHBPNGDEGO != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.OFHBPNGDEGO);
@@ -136,14 +136,14 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
         if self.battle_id != 0 {
-            os.write_uint32(3, self.battle_id)?;
+            os.write_uint32(5, self.battle_id)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.OFHBPNGDEGO != 0 {
             os.write_uint32(14, self.OFHBPNGDEGO)?;
@@ -165,18 +165,18 @@ impl ::protobuf::Message for EnterFantasticStoryActivityStageScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.battle_id = 0;
         self.battle_info.clear();
-        self.retcode = 0;
         self.OFHBPNGDEGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFantasticStoryActivityStageScRsp {
         static instance: EnterFantasticStoryActivityStageScRsp = EnterFantasticStoryActivityStageScRsp {
+            retcode: 0,
             battle_id: 0,
             battle_info: ::protobuf::MessageField::none(),
-            retcode: 0,
             OFHBPNGDEGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFantasticStoryActivityStageScRs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+EnterFantasticStoryActivityStageScRsp.proto\x1a\x15SceneBattleInfo.pr\
-    oto\"\xb3\x01\n%EnterFantasticStoryActivityStageScRsp\x12\x1b\n\tbattle_\
-    id\x18\x03\x20\x01(\rR\x08battleId\x121\n\x0bbattle_info\x18\x05\x20\x01\
-    (\x0b2\x10.SceneBattleInfoR\nbattleInfo\x12\x18\n\x07retcode\x18\n\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bOFHBPNGDEGO\x18\x0e\x20\x01(\rR\x0bOFHB\
-    PNGDEGOb\x06proto3\
+    oto\"\xb3\x01\n%EnterFantasticStoryActivityStageScRsp\x12\x18\n\x07retco\
+    de\x18\x02\x20\x01(\rR\x07retcode\x12\x1b\n\tbattle_id\x18\x05\x20\x01(\
+    \rR\x08battleId\x121\n\x0bbattle_info\x18\n\x20\x01(\x0b2\x10.SceneBattl\
+    eInfoR\nbattleInfo\x12\x20\n\x0bOFHBPNGDEGO\x18\x0e\x20\x01(\rR\x0bOFHBP\
+    NGDEGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for DJODDECFHMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                58 => {
                     self.KJFEFFGPNFF.push(is.read_message()?);
                 },
-                50 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ENFIKCCMHAI)?;
                 },
-                106 => {
+                98 => {
                     self.EMLLEPOADED.push(is.read_message()?);
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for DJODDECFHMC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.KJFEFFGPNFF {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if let Some(v) = self.ENFIKCCMHAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         for v in &self.EMLLEPOADED {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,9 +188,9 @@ impl ::protobuf::reflect::ProtobufValue for DJODDECFHMC {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJODDECFHMC.proto\x1a\x11HMAAICNBKCI.proto\x1a\x11LEJFIEPMMGG.prot\
     o\x1a\x11OMJGKNJKHCH.proto\"\x9d\x01\n\x0bDJODDECFHMC\x12.\n\x0bKJFEFFGP\
-    NFF\x18\x01\x20\x03(\x0b2\x0c.LEJFIEPMMGGR\x0bKJFEFFGPNFF\x12.\n\x0bENFI\
-    KCCMHAI\x18\x06\x20\x01(\x0b2\x0c.HMAAICNBKCIR\x0bENFIKCCMHAI\x12.\n\x0b\
-    EMLLEPOADED\x18\r\x20\x03(\x0b2\x0c.OMJGKNJKHCHR\x0bEMLLEPOADEDb\x06prot\
+    NFF\x18\x07\x20\x03(\x0b2\x0c.LEJFIEPMMGGR\x0bKJFEFFGPNFF\x12.\n\x0bENFI\
+    KCCMHAI\x18\t\x20\x01(\x0b2\x0c.HMAAICNBKCIR\x0bENFIKCCMHAI\x12.\n\x0bEM\
+    LLEPOADED\x18\x0c\x20\x03(\x0b2\x0c.OMJGKNJKHCHR\x0bEMLLEPOADEDb\x06prot\
     o3\
 ";
 

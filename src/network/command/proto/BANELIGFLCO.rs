@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BANELIGFLCO {
     // message fields
-    // @@protoc_insertion_point(field:BANELIGFLCO.CBILPMICEKC)
-    pub CBILPMICEKC: u32,
     // @@protoc_insertion_point(field:BANELIGFLCO.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:BANELIGFLCO.CBILPMICEKC)
+    pub CBILPMICEKC: u32,
     // @@protoc_insertion_point(field:BANELIGFLCO.MFKHDANPCIC)
     pub MFKHDANPCIC: u32,
     // special fields
@@ -54,14 +54,14 @@ impl BANELIGFLCO {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBILPMICEKC",
-            |m: &BANELIGFLCO| { &m.CBILPMICEKC },
-            |m: &mut BANELIGFLCO| { &mut m.CBILPMICEKC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &BANELIGFLCO| { &m.level },
             |m: &mut BANELIGFLCO| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBILPMICEKC",
+            |m: &BANELIGFLCO| { &m.CBILPMICEKC },
+            |m: &mut BANELIGFLCO| { &mut m.CBILPMICEKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MFKHDANPCIC",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BANELIGFLCO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.CBILPMICEKC = is.read_uint32()?;
-                },
-                56 => {
+                24 => {
                     self.level = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
+                    self.CBILPMICEKC = is.read_uint32()?;
+                },
+                88 => {
                     self.MFKHDANPCIC = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BANELIGFLCO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBILPMICEKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.CBILPMICEKC);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
+        }
+        if self.CBILPMICEKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CBILPMICEKC);
         }
         if self.MFKHDANPCIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MFKHDANPCIC);
+            my_size += ::protobuf::rt::uint32_size(11, self.MFKHDANPCIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BANELIGFLCO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBILPMICEKC != 0 {
-            os.write_uint32(6, self.CBILPMICEKC)?;
-        }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(3, self.level)?;
+        }
+        if self.CBILPMICEKC != 0 {
+            os.write_uint32(10, self.CBILPMICEKC)?;
         }
         if self.MFKHDANPCIC != 0 {
-            os.write_uint32(9, self.MFKHDANPCIC)?;
+            os.write_uint32(11, self.MFKHDANPCIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for BANELIGFLCO {
     }
 
     fn clear(&mut self) {
-        self.CBILPMICEKC = 0;
         self.level = 0;
+        self.CBILPMICEKC = 0;
         self.MFKHDANPCIC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BANELIGFLCO {
         static instance: BANELIGFLCO = BANELIGFLCO {
-            CBILPMICEKC: 0,
             level: 0,
+            CBILPMICEKC: 0,
             MFKHDANPCIC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BANELIGFLCO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BANELIGFLCO.proto\"g\n\x0bBANELIGFLCO\x12\x20\n\x0bCBILPMICEKC\x18\
-    \x06\x20\x01(\rR\x0bCBILPMICEKC\x12\x14\n\x05level\x18\x07\x20\x01(\rR\
-    \x05level\x12\x20\n\x0bMFKHDANPCIC\x18\t\x20\x01(\rR\x0bMFKHDANPCICb\x06\
+    \n\x11BANELIGFLCO.proto\"g\n\x0bBANELIGFLCO\x12\x14\n\x05level\x18\x03\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bCBILPMICEKC\x18\n\x20\x01(\rR\x0bCBIL\
+    PMICEKC\x12\x20\n\x0bMFKHDANPCIC\x18\x0b\x20\x01(\rR\x0bMFKHDANPCICb\x06\
     proto3\
 ";
 

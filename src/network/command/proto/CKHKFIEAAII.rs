@@ -47,6 +47,10 @@ pub enum CKHKFIEAAII {
     CKHKFIEAAII_HCEBGAEDPJK = 9,
     // @@protoc_insertion_point(enum_value:CKHKFIEAAII.CKHKFIEAAII_JMAEDENGFDG)
     CKHKFIEAAII_JMAEDENGFDG = 10,
+    // @@protoc_insertion_point(enum_value:CKHKFIEAAII.CKHKFIEAAII_DHHAJAFOGHA)
+    CKHKFIEAAII_DHHAJAFOGHA = 11,
+    // @@protoc_insertion_point(enum_value:CKHKFIEAAII.CKHKFIEAAII_ABCNBMJNEKA)
+    CKHKFIEAAII_ABCNBMJNEKA = 12,
 }
 
 impl ::protobuf::Enum for CKHKFIEAAII {
@@ -68,6 +72,8 @@ impl ::protobuf::Enum for CKHKFIEAAII {
             8 => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_CDLMPBOAIKB),
             9 => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_HCEBGAEDPJK),
             10 => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_JMAEDENGFDG),
+            11 => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_DHHAJAFOGHA),
+            12 => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_ABCNBMJNEKA),
             _ => ::std::option::Option::None
         }
     }
@@ -84,6 +90,8 @@ impl ::protobuf::Enum for CKHKFIEAAII {
             "CKHKFIEAAII_CDLMPBOAIKB" => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_CDLMPBOAIKB),
             "CKHKFIEAAII_HCEBGAEDPJK" => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_HCEBGAEDPJK),
             "CKHKFIEAAII_JMAEDENGFDG" => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_JMAEDENGFDG),
+            "CKHKFIEAAII_DHHAJAFOGHA" => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_DHHAJAFOGHA),
+            "CKHKFIEAAII_ABCNBMJNEKA" => ::std::option::Option::Some(CKHKFIEAAII::CKHKFIEAAII_ABCNBMJNEKA),
             _ => ::std::option::Option::None
         }
     }
@@ -99,6 +107,8 @@ impl ::protobuf::Enum for CKHKFIEAAII {
         CKHKFIEAAII::CKHKFIEAAII_CDLMPBOAIKB,
         CKHKFIEAAII::CKHKFIEAAII_HCEBGAEDPJK,
         CKHKFIEAAII::CKHKFIEAAII_JMAEDENGFDG,
+        CKHKFIEAAII::CKHKFIEAAII_DHHAJAFOGHA,
+        CKHKFIEAAII::CKHKFIEAAII_ABCNBMJNEKA,
     ];
 }
 
@@ -120,6 +130,8 @@ impl ::protobuf::EnumFull for CKHKFIEAAII {
             CKHKFIEAAII::CKHKFIEAAII_CDLMPBOAIKB => 7,
             CKHKFIEAAII::CKHKFIEAAII_HCEBGAEDPJK => 8,
             CKHKFIEAAII::CKHKFIEAAII_JMAEDENGFDG => 9,
+            CKHKFIEAAII::CKHKFIEAAII_DHHAJAFOGHA => 10,
+            CKHKFIEAAII::CKHKFIEAAII_ABCNBMJNEKA => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -138,14 +150,15 @@ impl CKHKFIEAAII {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CKHKFIEAAII.proto*\xaf\x02\n\x0bCKHKFIEAAII\x12\x1b\n\x17CKHKFIEAA\
+    \n\x11CKHKFIEAAII.proto*\xe9\x02\n\x0bCKHKFIEAAII\x12\x1b\n\x17CKHKFIEAA\
     II_FMIEDHLAEDM\x10\0\x12\x1b\n\x17CKHKFIEAAII_HLBJLABHOLB\x10\x01\x12\
     \x1b\n\x17CKHKFIEAAII_HBLHGLLHKHO\x10\x02\x12\x1b\n\x17CKHKFIEAAII_IOGOO\
     KPKJDD\x10\x03\x12\x1b\n\x17CKHKFIEAAII_FOIMHFAEAGI\x10\x04\x12\x1b\n\
     \x17CKHKFIEAAII_DHJDIDMPLPB\x10\x06\x12\x1b\n\x17CKHKFIEAAII_PPNPJLGIAGF\
     \x10\x07\x12\x1b\n\x17CKHKFIEAAII_CDLMPBOAIKB\x10\x08\x12\x1b\n\x17CKHKF\
-    IEAAII_HCEBGAEDPJK\x10\t\x12\x1b\n\x17CKHKFIEAAII_JMAEDENGFDG\x10\nb\x06\
-    proto3\
+    IEAAII_HCEBGAEDPJK\x10\t\x12\x1b\n\x17CKHKFIEAAII_JMAEDENGFDG\x10\n\x12\
+    \x1b\n\x17CKHKFIEAAII_DHHAJAFOGHA\x10\x0b\x12\x1b\n\x17CKHKFIEAAII_ABCNB\
+    MJNEKA\x10\x0cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

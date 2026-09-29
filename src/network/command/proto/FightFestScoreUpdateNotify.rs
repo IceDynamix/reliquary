@@ -79,7 +79,7 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.JODNMFEFPFD = is.read_uint32()?;
                 },
                 56 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JODNMFEFPFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JODNMFEFPFD);
+            my_size += ::protobuf::rt::uint32_size(4, self.JODNMFEFPFD);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.score_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JODNMFEFPFD != 0 {
-            os.write_uint32(2, self.JODNMFEFPFD)?;
+            os.write_uint32(4, self.JODNMFEFPFD)?;
         }
         if self.score_id != 0 {
             os.write_uint32(7, self.score_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FightFestScoreUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FightFestScoreUpdateNotify.proto\"Y\n\x1aFightFestScoreUpdateNotif\
-    y\x12\x20\n\x0bJODNMFEFPFD\x18\x02\x20\x01(\rR\x0bJODNMFEFPFD\x12\x19\n\
+    y\x12\x20\n\x0bJODNMFEFPFD\x18\x04\x20\x01(\rR\x0bJODNMFEFPFD\x12\x19\n\
     \x08score_id\x18\x07\x20\x01(\rR\x07scoreIdb\x06proto3\
 ";
 

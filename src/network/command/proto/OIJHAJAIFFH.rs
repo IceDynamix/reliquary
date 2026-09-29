@@ -34,10 +34,10 @@ pub struct OIJHAJAIFFH {
     pub role_id: u32,
     // @@protoc_insertion_point(field:OIJHAJAIFFH.role_star)
     pub role_star: u32,
-    // @@protoc_insertion_point(field:OIJHAJAIFFH.H_c3f67d36)
-    pub H_c3f67d36: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:OIJHAJAIFFH.H_3e422c2a)
-    pub H_3e422c2a: ::std::collections::HashMap<::std::string::String, u32>,
+    // @@protoc_insertion_point(field:OIJHAJAIFFH.H_e211619c)
+    pub H_e211619c: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:OIJHAJAIFFH.H_873d123e)
+    pub H_873d123e: ::std::collections::HashMap<::std::string::String, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:OIJHAJAIFFH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,14 +73,14 @@ impl OIJHAJAIFFH {
             |m: &mut OIJHAJAIFFH| { &mut m.role_star },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_c3f67d36",
-            |m: &OIJHAJAIFFH| { &m.H_c3f67d36 },
-            |m: &mut OIJHAJAIFFH| { &mut m.H_c3f67d36 },
+            "H_e211619c",
+            |m: &OIJHAJAIFFH| { &m.H_e211619c },
+            |m: &mut OIJHAJAIFFH| { &mut m.H_e211619c },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "H_3e422c2a",
-            |m: &OIJHAJAIFFH| { &m.H_3e422c2a },
-            |m: &mut OIJHAJAIFFH| { &mut m.H_3e422c2a },
+            "H_873d123e",
+            |m: &OIJHAJAIFFH| { &m.H_873d123e },
+            |m: &mut OIJHAJAIFFH| { &mut m.H_873d123e },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OIJHAJAIFFH>(
             "OIJHAJAIFFH",
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OIJHAJAIFFH {
                     self.role_star = is.read_uint32()?;
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_c3f67d36)?;
+                    is.read_repeated_packed_uint32_into(&mut self.H_e211619c)?;
                 },
                 32 => {
-                    self.H_c3f67d36.push(is.read_uint32()?);
+                    self.H_e211619c.push(is.read_uint32()?);
                 },
                 42 => {
                     let len = is.read_raw_varint32()?;
@@ -128,7 +128,7 @@ impl ::protobuf::Message for OIJHAJAIFFH {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.H_3e422c2a.insert(key, value);
+                    self.H_873d123e.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -151,8 +151,8 @@ impl ::protobuf::Message for OIJHAJAIFFH {
         if self.role_star != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.role_star);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.H_c3f67d36);
-        for (k, v) in &self.H_3e422c2a {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.H_e211619c);
+        for (k, v) in &self.H_873d123e {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -173,8 +173,8 @@ impl ::protobuf::Message for OIJHAJAIFFH {
         if self.role_star != 0 {
             os.write_uint32(3, self.role_star)?;
         }
-        os.write_repeated_packed_uint32(4, &self.H_c3f67d36)?;
-        for (k, v) in &self.H_3e422c2a {
+        os.write_repeated_packed_uint32(4, &self.H_e211619c)?;
+        for (k, v) in &self.H_873d123e {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
@@ -203,8 +203,8 @@ impl ::protobuf::Message for OIJHAJAIFFH {
         self.pos_index = 0;
         self.role_id = 0;
         self.role_star = 0;
-        self.H_c3f67d36.clear();
-        self.H_3e422c2a.clear();
+        self.H_e211619c.clear();
+        self.H_873d123e.clear();
         self.special_fields.clear();
     }
 
@@ -235,9 +235,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIJHAJAIFFH.proto\"\xf9\x01\n\x0bOIJHAJAIFFH\x12\x1b\n\tpos_index\
     \x18\x01\x20\x01(\rR\x08posIndex\x12\x17\n\x07role_id\x18\x02\x20\x01(\r\
     R\x06roleId\x12\x1b\n\trole_star\x18\x03\x20\x01(\rR\x08roleStar\x12\x1d\
-    \n\nH_c3f67d36\x18\x04\x20\x03(\rR\tHC3f67d36\x12:\n\nH_3e422c2a\x18\x05\
-    \x20\x03(\x0b2\x1b.OIJHAJAIFFH.H3e422c2aEntryR\tH3e422c2a\x1a<\n\x0eH3e4\
-    22c2aEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05valu\
+    \n\nH_e211619c\x18\x04\x20\x03(\rR\tHE211619c\x12:\n\nH_873d123e\x18\x05\
+    \x20\x03(\x0b2\x1b.OIJHAJAIFFH.H873d123eEntryR\tH873d123e\x1a<\n\x0eH873\
+    d123eEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05valu\
     e\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 

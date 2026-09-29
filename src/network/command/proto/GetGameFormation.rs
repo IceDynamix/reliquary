@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetGameFormation {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.DACKJGDGMLN = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                98 => {
                     self.FEBFMFMLHPO.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetGameFormation {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DACKJGDGMLN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DACKJGDGMLN);
+            my_size += ::protobuf::rt::uint32_size(1, self.DACKJGDGMLN);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         for value in &self.FEBFMFMLHPO {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetGameFormation {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DACKJGDGMLN != 0 {
-            os.write_uint32(7, self.DACKJGDGMLN)?;
+            os.write_uint32(1, self.DACKJGDGMLN)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         for v in &self.FEBFMFMLHPO {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GetGameFormation {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetGameFormation.proto\x1a\x11HENDEHGPKMF.proto\"~\n\x10GetGameFor\
-    mation\x12\x20\n\x0bDACKJGDGMLN\x18\x07\x20\x01(\rR\x0bDACKJGDGMLN\x12\
-    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bFEBFMFMLHPO\
-    \x18\x0e\x20\x03(\x0b2\x0c.HENDEHGPKMFR\x0bFEBFMFMLHPOb\x06proto3\
+    mation\x12\x20\n\x0bDACKJGDGMLN\x18\x01\x20\x01(\rR\x0bDACKJGDGMLN\x12\
+    \x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0bFEBFMFMLHPO\
+    \x18\x0c\x20\x03(\x0b2\x0c.HENDEHGPKMFR\x0bFEBFMFMLHPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

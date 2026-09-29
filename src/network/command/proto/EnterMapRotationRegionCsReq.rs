@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterMapRotationRegionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.JPPMEKJGJFD)
-    pub JPPMEKJGJFD: u32,
-    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.LJHKNKFLGDE)
-    pub LJHKNKFLGDE: u32,
     // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.LJHKNKFLGDE)
+    pub LJHKNKFLGDE: u32,
+    // @@protoc_insertion_point(field:EnterMapRotationRegionCsReq.JPPMEKJGJFD)
+    pub JPPMEKJGJFD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterMapRotationRegionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EnterMapRotationRegionCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JPPMEKJGJFD",
-            |m: &EnterMapRotationRegionCsReq| { &m.JPPMEKJGJFD },
-            |m: &mut EnterMapRotationRegionCsReq| { &mut m.JPPMEKJGJFD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
+            "motion",
+            |m: &EnterMapRotationRegionCsReq| { &m.motion },
+            |m: &mut EnterMapRotationRegionCsReq| { &mut m.motion },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJHKNKFLGDE",
             |m: &EnterMapRotationRegionCsReq| { &m.LJHKNKFLGDE },
             |m: &mut EnterMapRotationRegionCsReq| { &mut m.LJHKNKFLGDE },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
-            "motion",
-            |m: &EnterMapRotationRegionCsReq| { &m.motion },
-            |m: &mut EnterMapRotationRegionCsReq| { &mut m.motion },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JPPMEKJGJFD",
+            |m: &EnterMapRotationRegionCsReq| { &m.JPPMEKJGJFD },
+            |m: &mut EnterMapRotationRegionCsReq| { &mut m.JPPMEKJGJFD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterMapRotationRegionCsReq>(
             "EnterMapRotationRegionCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JPPMEKJGJFD = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                88 => {
+                80 => {
                     self.LJHKNKFLGDE = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                88 => {
+                    self.JPPMEKJGJFD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JPPMEKJGJFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JPPMEKJGJFD);
-        }
-        if self.LJHKNKFLGDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LJHKNKFLGDE);
-        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LJHKNKFLGDE != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LJHKNKFLGDE);
+        }
+        if self.JPPMEKJGJFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JPPMEKJGJFD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JPPMEKJGJFD != 0 {
-            os.write_uint32(3, self.JPPMEKJGJFD)?;
+        if let Some(v) = self.motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.LJHKNKFLGDE != 0 {
-            os.write_uint32(11, self.LJHKNKFLGDE)?;
+            os.write_uint32(10, self.LJHKNKFLGDE)?;
         }
-        if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.JPPMEKJGJFD != 0 {
+            os.write_uint32(11, self.JPPMEKJGJFD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for EnterMapRotationRegionCsReq {
     }
 
     fn clear(&mut self) {
-        self.JPPMEKJGJFD = 0;
-        self.LJHKNKFLGDE = 0;
         self.motion.clear();
+        self.LJHKNKFLGDE = 0;
+        self.JPPMEKJGJFD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterMapRotationRegionCsReq {
         static instance: EnterMapRotationRegionCsReq = EnterMapRotationRegionCsReq {
-            JPPMEKJGJFD: 0,
-            LJHKNKFLGDE: 0,
             motion: ::protobuf::MessageField::none(),
+            LJHKNKFLGDE: 0,
+            JPPMEKJGJFD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterMapRotationRegionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!EnterMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\"\x86\x01\n\
-    \x1bEnterMapRotationRegionCsReq\x12\x20\n\x0bJPPMEKJGJFD\x18\x03\x20\x01\
-    (\rR\x0bJPPMEKJGJFD\x12\x20\n\x0bLJHKNKFLGDE\x18\x0b\x20\x01(\rR\x0bLJHK\
-    NKFLGDE\x12#\n\x06motion\x18\x0e\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\
-    b\x06proto3\
+    \x1bEnterMapRotationRegionCsReq\x12#\n\x06motion\x18\t\x20\x01(\x0b2\x0b\
+    .MotionInfoR\x06motion\x12\x20\n\x0bLJHKNKFLGDE\x18\n\x20\x01(\rR\x0bLJH\
+    KNKFLGDE\x12\x20\n\x0bJPPMEKJGJFD\x18\x0b\x20\x01(\rR\x0bJPPMEKJGJFDb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

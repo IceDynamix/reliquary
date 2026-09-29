@@ -34,8 +34,8 @@ pub struct MHFNFINKJKP {
     pub NKIENAICLGN: ::protobuf::EnumOrUnknown<super::IDDPBEAMDAO::IDDPBEAMDAO>,
     // @@protoc_insertion_point(field:MHFNFINKJKP.NKJPCMPMGPM)
     pub NKJPCMPMGPM: u32,
-    // @@protoc_insertion_point(field:MHFNFINKJKP.H_a81ca1a4)
-    pub H_a81ca1a4: ::protobuf::EnumOrUnknown<super::ABBHAALIBAH::ABBHAALIBAH>,
+    // @@protoc_insertion_point(field:MHFNFINKJKP.H_89ed1041)
+    pub H_89ed1041: ::protobuf::EnumOrUnknown<super::ABBHAALIBAH::ABBHAALIBAH>,
     // special fields
     // @@protoc_insertion_point(special_field:MHFNFINKJKP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,9 +71,9 @@ impl MHFNFINKJKP {
             |m: &mut MHFNFINKJKP| { &mut m.NKJPCMPMGPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_a81ca1a4",
-            |m: &MHFNFINKJKP| { &m.H_a81ca1a4 },
-            |m: &mut MHFNFINKJKP| { &mut m.H_a81ca1a4 },
+            "H_89ed1041",
+            |m: &MHFNFINKJKP| { &m.H_89ed1041 },
+            |m: &mut MHFNFINKJKP| { &mut m.H_89ed1041 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MHFNFINKJKP>(
             "MHFNFINKJKP",
@@ -103,7 +103,7 @@ impl ::protobuf::Message for MHFNFINKJKP {
                     self.NKJPCMPMGPM = is.read_uint32()?;
                 },
                 32 => {
-                    self.H_a81ca1a4 = is.read_enum_or_unknown()?;
+                    self.H_89ed1041 = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -126,8 +126,8 @@ impl ::protobuf::Message for MHFNFINKJKP {
         if self.NKJPCMPMGPM != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.NKJPCMPMGPM);
         }
-        if self.H_a81ca1a4 != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
-            my_size += ::protobuf::rt::int32_size(4, self.H_a81ca1a4.value());
+        if self.H_89ed1041 != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
+            my_size += ::protobuf::rt::int32_size(4, self.H_89ed1041.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -144,8 +144,8 @@ impl ::protobuf::Message for MHFNFINKJKP {
         if self.NKJPCMPMGPM != 0 {
             os.write_uint32(3, self.NKJPCMPMGPM)?;
         }
-        if self.H_a81ca1a4 != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.H_a81ca1a4))?;
+        if self.H_89ed1041 != ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.H_89ed1041))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::Message for MHFNFINKJKP {
         self.CHEEOEHDOBF = 0;
         self.NKIENAICLGN = ::protobuf::EnumOrUnknown::new(super::IDDPBEAMDAO::IDDPBEAMDAO::IDDPBEAMDAO_IIOCEDFJPNH);
         self.NKJPCMPMGPM = 0;
-        self.H_a81ca1a4 = ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE);
+        self.H_89ed1041 = ::protobuf::EnumOrUnknown::new(super::ABBHAALIBAH::ABBHAALIBAH::ABBHAALIBAH_IDIPGIPFJJE);
         self.special_fields.clear();
     }
 
@@ -176,7 +176,7 @@ impl ::protobuf::Message for MHFNFINKJKP {
             CHEEOEHDOBF: 0,
             NKIENAICLGN: ::protobuf::EnumOrUnknown::from_i32(0),
             NKJPCMPMGPM: 0,
-            H_a81ca1a4: ::protobuf::EnumOrUnknown::from_i32(0),
+            H_89ed1041: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,8 +205,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     o\"\xae\x01\n\x0bMHFNFINKJKP\x12\x20\n\x0bCHEEOEHDOBF\x18\x01\x20\x01(\r\
     R\x0bCHEEOEHDOBF\x12.\n\x0bNKIENAICLGN\x18\x02\x20\x01(\x0e2\x0c.IDDPBEA\
     MDAOR\x0bNKIENAICLGN\x12\x20\n\x0bNKJPCMPMGPM\x18\x03\x20\x01(\rR\x0bNKJ\
-    PCMPMGPM\x12+\n\nH_a81ca1a4\x18\x04\x20\x01(\x0e2\x0c.ABBHAALIBAHR\tHA81\
-    ca1a4b\x06proto3\
+    PCMPMGPM\x12+\n\nH_89ed1041\x18\x04\x20\x01(\x0e2\x0c.ABBHAALIBAHR\tH89e\
+    d1041b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

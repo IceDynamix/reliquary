@@ -86,13 +86,13 @@ impl ::protobuf::Message for HGABLJFOKDG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.HDHKAHJBFKD = is.read_enum_or_unknown()?;
                 },
-                80 => {
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                122 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NOAJIGHLIIC)?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for HGABLJFOKDG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HDHKAHJBFKD != ::protobuf::EnumOrUnknown::new(super::JFIIIHFBLPA::JFIIIHFBLPA::JFIIIHFBLPA_NEODNIFGDJC) {
-            my_size += ::protobuf::rt::int32_size(7, self.HDHKAHJBFKD.value());
+            my_size += ::protobuf::rt::int32_size(1, self.HDHKAHJBFKD.value());
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
         if let Some(v) = self.NOAJIGHLIIC.as_ref() {
             let len = v.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for HGABLJFOKDG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HDHKAHJBFKD != ::protobuf::EnumOrUnknown::new(super::JFIIIHFBLPA::JFIIIHFBLPA::JFIIIHFBLPA_NEODNIFGDJC) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.HDHKAHJBFKD))?;
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.HDHKAHJBFKD))?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(10, self.avatar_id)?;
+            os.write_uint32(9, self.avatar_id)?;
         }
         if let Some(v) = self.NOAJIGHLIIC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for HGABLJFOKDG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGABLJFOKDG.proto\x1a\x11JBOAAPIDOIC.proto\x1a\x11JFIIIHFBLPA.prot\
-    o\"\x8a\x01\n\x0bHGABLJFOKDG\x12.\n\x0bHDHKAHJBFKD\x18\x07\x20\x01(\x0e2\
-    \x0c.JFIIIHFBLPAR\x0bHDHKAHJBFKD\x12\x1b\n\tavatar_id\x18\n\x20\x01(\rR\
-    \x08avatarId\x12.\n\x0bNOAJIGHLIIC\x18\x0f\x20\x01(\x0b2\x0c.JBOAAPIDOIC\
-    R\x0bNOAJIGHLIICb\x06proto3\
+    o\"\x8a\x01\n\x0bHGABLJFOKDG\x12.\n\x0bHDHKAHJBFKD\x18\x01\x20\x01(\x0e2\
+    \x0c.JFIIIHFBLPAR\x0bHDHKAHJBFKD\x12\x1b\n\tavatar_id\x18\t\x20\x01(\rR\
+    \x08avatarId\x12.\n\x0bNOAJIGHLIIC\x18\n\x20\x01(\x0b2\x0c.JBOAAPIDOICR\
+    \x0bNOAJIGHLIICb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

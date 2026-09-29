@@ -29,16 +29,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum ALMBGGJDJBJ {
     // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_NLCDGIPGFDJ)
     ALMBGGJDJBJ_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_KOPAFCJLIKC)
-    ALMBGGJDJBJ_KOPAFCJLIKC = 6283,
     // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_ENFDDEPECJC)
-    ALMBGGJDJBJ_ENFDDEPECJC = 6232,
-    // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_GGCEHNECGME)
-    ALMBGGJDJBJ_GGCEHNECGME = 6213,
+    ALMBGGJDJBJ_ENFDDEPECJC = 6234,
+    // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_KOPAFCJLIKC)
+    ALMBGGJDJBJ_KOPAFCJLIKC = 6258,
     // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_DFIHCMLNFNH)
-    ALMBGGJDJBJ_DFIHCMLNFNH = 6229,
+    ALMBGGJDJBJ_DFIHCMLNFNH = 6205,
+    // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_GGCEHNECGME)
+    ALMBGGJDJBJ_GGCEHNECGME = 6225,
     // @@protoc_insertion_point(enum_value:ALMBGGJDJBJ.ALMBGGJDJBJ_CLJOALCHHGE)
-    ALMBGGJDJBJ_CLJOALCHHGE = 6219,
+    ALMBGGJDJBJ_CLJOALCHHGE = 6216,
 }
 
 impl ::protobuf::Enum for ALMBGGJDJBJ {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for ALMBGGJDJBJ {
     fn from_i32(value: i32) -> ::std::option::Option<ALMBGGJDJBJ> {
         match value {
             0 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_NLCDGIPGFDJ),
-            6283 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC),
-            6232 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC),
-            6213 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME),
-            6229 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH),
-            6219 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_CLJOALCHHGE),
+            6234 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC),
+            6258 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC),
+            6205 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH),
+            6225 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME),
+            6216 => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_CLJOALCHHGE),
             _ => ::std::option::Option::None
         }
     }
@@ -63,10 +63,10 @@ impl ::protobuf::Enum for ALMBGGJDJBJ {
     fn from_str(str: &str) -> ::std::option::Option<ALMBGGJDJBJ> {
         match str {
             "ALMBGGJDJBJ_NLCDGIPGFDJ" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_NLCDGIPGFDJ),
-            "ALMBGGJDJBJ_KOPAFCJLIKC" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC),
             "ALMBGGJDJBJ_ENFDDEPECJC" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC),
-            "ALMBGGJDJBJ_GGCEHNECGME" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME),
+            "ALMBGGJDJBJ_KOPAFCJLIKC" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC),
             "ALMBGGJDJBJ_DFIHCMLNFNH" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH),
+            "ALMBGGJDJBJ_GGCEHNECGME" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME),
             "ALMBGGJDJBJ_CLJOALCHHGE" => ::std::option::Option::Some(ALMBGGJDJBJ::ALMBGGJDJBJ_CLJOALCHHGE),
             _ => ::std::option::Option::None
         }
@@ -74,10 +74,10 @@ impl ::protobuf::Enum for ALMBGGJDJBJ {
 
     const VALUES: &'static [ALMBGGJDJBJ] = &[
         ALMBGGJDJBJ::ALMBGGJDJBJ_NLCDGIPGFDJ,
-        ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC,
         ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC,
-        ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME,
+        ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC,
         ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH,
+        ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME,
         ALMBGGJDJBJ::ALMBGGJDJBJ_CLJOALCHHGE,
     ];
 }
@@ -91,10 +91,10 @@ impl ::protobuf::EnumFull for ALMBGGJDJBJ {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             ALMBGGJDJBJ::ALMBGGJDJBJ_NLCDGIPGFDJ => 0,
-            ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC => 1,
-            ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC => 2,
-            ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME => 3,
-            ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH => 4,
+            ALMBGGJDJBJ::ALMBGGJDJBJ_ENFDDEPECJC => 1,
+            ALMBGGJDJBJ::ALMBGGJDJBJ_KOPAFCJLIKC => 2,
+            ALMBGGJDJBJ::ALMBGGJDJBJ_DFIHCMLNFNH => 3,
+            ALMBGGJDJBJ::ALMBGGJDJBJ_GGCEHNECGME => 4,
             ALMBGGJDJBJ::ALMBGGJDJBJ_CLJOALCHHGE => 5,
         };
         Self::enum_descriptor().value_by_index(index)
@@ -115,10 +115,10 @@ impl ALMBGGJDJBJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ALMBGGJDJBJ.proto*\xc0\x01\n\x0bALMBGGJDJBJ\x12\x1b\n\x17ALMBGGJDJ\
-    BJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ALMBGGJDJBJ_KOPAFCJLIKC\x10\x8b1\x12\
-    \x1c\n\x17ALMBGGJDJBJ_ENFDDEPECJC\x10\xd80\x12\x1c\n\x17ALMBGGJDJBJ_GGCE\
-    HNECGME\x10\xc50\x12\x1c\n\x17ALMBGGJDJBJ_DFIHCMLNFNH\x10\xd50\x12\x1c\n\
-    \x17ALMBGGJDJBJ_CLJOALCHHGE\x10\xcb0b\x06proto3\
+    BJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ALMBGGJDJBJ_ENFDDEPECJC\x10\xda0\x12\
+    \x1c\n\x17ALMBGGJDJBJ_KOPAFCJLIKC\x10\xf20\x12\x1c\n\x17ALMBGGJDJBJ_DFIH\
+    CMLNFNH\x10\xbd0\x12\x1c\n\x17ALMBGGJDJBJ_GGCEHNECGME\x10\xd10\x12\x1c\n\
+    \x17ALMBGGJDJBJ_CLJOALCHHGE\x10\xc80b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

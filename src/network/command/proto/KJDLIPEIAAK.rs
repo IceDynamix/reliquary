@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KJDLIPEIAAK {
     // message fields
-    // @@protoc_insertion_point(field:KJDLIPEIAAK.IFONLBKJGFE)
-    pub IFONLBKJGFE: bool,
     // @@protoc_insertion_point(field:KJDLIPEIAAK.OLELCDKLPDK)
     pub OLELCDKLPDK: u32,
+    // @@protoc_insertion_point(field:KJDLIPEIAAK.IFONLBKJGFE)
+    pub IFONLBKJGFE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:KJDLIPEIAAK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl KJDLIPEIAAK {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFONLBKJGFE",
-            |m: &KJDLIPEIAAK| { &m.IFONLBKJGFE },
-            |m: &mut KJDLIPEIAAK| { &mut m.IFONLBKJGFE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLELCDKLPDK",
             |m: &KJDLIPEIAAK| { &m.OLELCDKLPDK },
             |m: &mut KJDLIPEIAAK| { &mut m.OLELCDKLPDK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFONLBKJGFE",
+            |m: &KJDLIPEIAAK| { &m.IFONLBKJGFE },
+            |m: &mut KJDLIPEIAAK| { &mut m.IFONLBKJGFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KJDLIPEIAAK>(
             "KJDLIPEIAAK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for KJDLIPEIAAK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.IFONLBKJGFE = is.read_bool()?;
-                },
-                40 => {
+                48 => {
                     self.OLELCDKLPDK = is.read_uint32()?;
+                },
+                64 => {
+                    self.IFONLBKJGFE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for KJDLIPEIAAK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.OLELCDKLPDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OLELCDKLPDK);
+        }
         if self.IFONLBKJGFE != false {
             my_size += 1 + 1;
-        }
-        if self.OLELCDKLPDK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OLELCDKLPDK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for KJDLIPEIAAK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFONLBKJGFE != false {
-            os.write_bool(1, self.IFONLBKJGFE)?;
-        }
         if self.OLELCDKLPDK != 0 {
-            os.write_uint32(5, self.OLELCDKLPDK)?;
+            os.write_uint32(6, self.OLELCDKLPDK)?;
+        }
+        if self.IFONLBKJGFE != false {
+            os.write_bool(8, self.IFONLBKJGFE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for KJDLIPEIAAK {
     }
 
     fn clear(&mut self) {
-        self.IFONLBKJGFE = false;
         self.OLELCDKLPDK = 0;
+        self.IFONLBKJGFE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KJDLIPEIAAK {
         static instance: KJDLIPEIAAK = KJDLIPEIAAK {
-            IFONLBKJGFE: false,
             OLELCDKLPDK: 0,
+            IFONLBKJGFE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KJDLIPEIAAK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KJDLIPEIAAK.proto\"Q\n\x0bKJDLIPEIAAK\x12\x20\n\x0bIFONLBKJGFE\x18\
-    \x01\x20\x01(\x08R\x0bIFONLBKJGFE\x12\x20\n\x0bOLELCDKLPDK\x18\x05\x20\
-    \x01(\rR\x0bOLELCDKLPDKb\x06proto3\
+    \n\x11KJDLIPEIAAK.proto\"Q\n\x0bKJDLIPEIAAK\x12\x20\n\x0bOLELCDKLPDK\x18\
+    \x06\x20\x01(\rR\x0bOLELCDKLPDK\x12\x20\n\x0bIFONLBKJGFE\x18\x08\x20\x01\
+    (\x08R\x0bIFONLBKJGFEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

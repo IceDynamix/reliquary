@@ -79,10 +79,10 @@ impl ::protobuf::Message for AreaStepInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.GKENFCLLLJC = is.read_uint32()?;
                 },
-                114 => {
+                58 => {
                     self.BKKLGCLOBCD.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AreaStepInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GKENFCLLLJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GKENFCLLLJC);
+            my_size += ::protobuf::rt::uint32_size(3, self.GKENFCLLLJC);
         }
         for value in &self.BKKLGCLOBCD {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AreaStepInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GKENFCLLLJC != 0 {
-            os.write_uint32(4, self.GKENFCLLLJC)?;
+            os.write_uint32(3, self.GKENFCLLLJC)?;
         }
         for v in &self.BKKLGCLOBCD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AreaStepInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AreaStepInfo.proto\x1a\x11IDBCDHIOKEG.proto\"`\n\x0cAreaStepInfo\
-    \x12\x20\n\x0bGKENFCLLLJC\x18\x04\x20\x01(\rR\x0bGKENFCLLLJC\x12.\n\x0bB\
-    KKLGCLOBCD\x18\x0e\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bBKKLGCLOBCDb\x06pro\
+    \x12\x20\n\x0bGKENFCLLLJC\x18\x03\x20\x01(\rR\x0bGKENFCLLLJC\x12.\n\x0bB\
+    KKLGCLOBCD\x18\x07\x20\x03(\x0b2\x0c.IDBCDHIOKEGR\x0bBKKLGCLOBCDb\x06pro\
     to3\
 ";
 

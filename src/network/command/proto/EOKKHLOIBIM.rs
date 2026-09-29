@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EOKKHLOIBIM {
     // message fields
-    // @@protoc_insertion_point(field:EOKKHLOIBIM.HEHIOCEPEAE)
-    pub HEHIOCEPEAE: ::protobuf::MessageField<super::DFFLMEMFPLM::DFFLMEMFPLM>,
     // @@protoc_insertion_point(field:EOKKHLOIBIM.GEOMBJDBHDD)
     pub GEOMBJDBHDD: ::protobuf::MessageField<super::DFFLMEMFPLM::DFFLMEMFPLM>,
+    // @@protoc_insertion_point(field:EOKKHLOIBIM.HEHIOCEPEAE)
+    pub HEHIOCEPEAE: ::protobuf::MessageField<super::DFFLMEMFPLM::DFFLMEMFPLM>,
     // special fields
     // @@protoc_insertion_point(special_field:EOKKHLOIBIM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EOKKHLOIBIM {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFFLMEMFPLM::DFFLMEMFPLM>(
-            "HEHIOCEPEAE",
-            |m: &EOKKHLOIBIM| { &m.HEHIOCEPEAE },
-            |m: &mut EOKKHLOIBIM| { &mut m.HEHIOCEPEAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFFLMEMFPLM::DFFLMEMFPLM>(
             "GEOMBJDBHDD",
             |m: &EOKKHLOIBIM| { &m.GEOMBJDBHDD },
             |m: &mut EOKKHLOIBIM| { &mut m.GEOMBJDBHDD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFFLMEMFPLM::DFFLMEMFPLM>(
+            "HEHIOCEPEAE",
+            |m: &EOKKHLOIBIM| { &m.HEHIOCEPEAE },
+            |m: &mut EOKKHLOIBIM| { &mut m.HEHIOCEPEAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EOKKHLOIBIM>(
             "EOKKHLOIBIM",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EOKKHLOIBIM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEHIOCEPEAE)?;
-                },
-                98 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GEOMBJDBHDD)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEHIOCEPEAE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EOKKHLOIBIM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.HEHIOCEPEAE.as_ref() {
+        if let Some(v) = self.GEOMBJDBHDD.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GEOMBJDBHDD.as_ref() {
+        if let Some(v) = self.HEHIOCEPEAE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for EOKKHLOIBIM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.HEHIOCEPEAE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
         if let Some(v) = self.GEOMBJDBHDD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.HEHIOCEPEAE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for EOKKHLOIBIM {
     }
 
     fn clear(&mut self) {
-        self.HEHIOCEPEAE.clear();
         self.GEOMBJDBHDD.clear();
+        self.HEHIOCEPEAE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EOKKHLOIBIM {
         static instance: EOKKHLOIBIM = EOKKHLOIBIM {
-            HEHIOCEPEAE: ::protobuf::MessageField::none(),
             GEOMBJDBHDD: ::protobuf::MessageField::none(),
+            HEHIOCEPEAE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for EOKKHLOIBIM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EOKKHLOIBIM.proto\x1a\x11DFFLMEMFPLM.proto\"m\n\x0bEOKKHLOIBIM\x12\
-    .\n\x0bHEHIOCEPEAE\x18\n\x20\x01(\x0b2\x0c.DFFLMEMFPLMR\x0bHEHIOCEPEAE\
-    \x12.\n\x0bGEOMBJDBHDD\x18\x0c\x20\x01(\x0b2\x0c.DFFLMEMFPLMR\x0bGEOMBJD\
-    BHDDb\x06proto3\
+    .\n\x0bGEOMBJDBHDD\x18\x08\x20\x01(\x0b2\x0c.DFFLMEMFPLMR\x0bGEOMBJDBHDD\
+    \x12.\n\x0bHEHIOCEPEAE\x18\r\x20\x01(\x0b2\x0c.DFFLMEMFPLMR\x0bHEHIOCEPE\
+    AEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

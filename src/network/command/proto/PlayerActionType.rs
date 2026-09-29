@@ -2167,100 +2167,100 @@ pub enum PlayerActionType {
     PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame = 7206,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange)
     PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange = 7207,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_68286c01)
-    H_68286c01 = 7251,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_c585af9f)
-    H_c585af9f = 7252,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f1b5c5ab)
-    H_f1b5c5ab = 7253,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_6c1c4c2f)
-    H_6c1c4c2f = 7254,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5c0fb240)
-    H_5c0fb240 = 7255,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_b8633faf)
-    H_b8633faf = 7256,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_72b8407e)
-    H_72b8407e = 7257,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_21a6dcf9)
-    H_21a6dcf9 = 7258,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_24249c7b)
-    H_24249c7b = 7259,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_4a203fba)
-    H_4a203fba = 7260,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_88777c0b)
-    H_88777c0b = 7261,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0c57357e)
-    H_0c57357e = 7262,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_ba2a8cec)
-    H_ba2a8cec = 7263,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_29455603)
-    H_29455603 = 7264,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1acb9a50)
-    H_1acb9a50 = 7265,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_70a00719)
-    H_70a00719 = 7266,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_4a9a52d1)
-    H_4a9a52d1 = 7267,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_188c6675)
-    H_188c6675 = 7268,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f0cd30ae)
-    H_f0cd30ae = 7269,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0ef09a2b)
-    H_0ef09a2b = 7270,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_90a3cc0c)
-    H_90a3cc0c = 7271,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1015e989)
-    H_1015e989 = 7272,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5e539b86)
-    H_5e539b86 = 7273,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_49dc71a7)
-    H_49dc71a7 = 7274,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_2594b7a2)
-    H_2594b7a2 = 7275,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1224a868)
-    H_1224a868 = 7276,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_8910a071)
-    H_8910a071 = 7277,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_c1773cdf)
-    H_c1773cdf = 7278,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_43e5abd0)
-    H_43e5abd0 = 7279,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_e5a72344)
-    H_e5a72344 = 7280,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1dc03631)
-    H_1dc03631 = 7281,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_78c3f20f)
-    H_78c3f20f = 7282,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_81e24de9)
-    H_81e24de9 = 7283,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_7804d7f7)
-    H_7804d7f7 = 7284,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_18734592)
-    H_18734592 = 7285,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_aa36cece)
-    H_aa36cece = 7286,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_497730d6)
-    H_497730d6 = 7287,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_73267c71)
-    H_73267c71 = 7288,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_a196af40)
-    H_a196af40 = 7289,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_bc2ee045)
-    H_bc2ee045 = 7290,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f2b3b1e6)
-    H_f2b3b1e6 = 7291,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_9b16622c)
-    H_9b16622c = 7292,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0424e912)
-    H_0424e912 = 7293,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_cc44d6de)
-    H_cc44d6de = 7294,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_224a011e)
-    H_224a011e = 7295,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_07a2c6c8)
-    H_07a2c6c8 = 7296,
-    // @@protoc_insertion_point(enum_value:PlayerActionType.H_a90a81dd)
-    H_a90a81dd = 7297,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_fc2b7c1d)
+    H_fc2b7c1d = 7251,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_cfc5d717)
+    H_cfc5d717 = 7252,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_e66278e1)
+    H_e66278e1 = 7253,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_89594365)
+    H_89594365 = 7254,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_8c3e4604)
+    H_8c3e4604 = 7255,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_4a78bb47)
+    H_4a78bb47 = 7256,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_21381319)
+    H_21381319 = 7257,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_7f0a9488)
+    H_7f0a9488 = 7258,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_9197a9b8)
+    H_9197a9b8 = 7259,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_186a180c)
+    H_186a180c = 7260,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1b5756c1)
+    H_1b5756c1 = 7261,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_51b5dda5)
+    H_51b5dda5 = 7262,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_70739295)
+    H_70739295 = 7263,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_de4022a0)
+    H_de4022a0 = 7264,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_186a86fa)
+    H_186a86fa = 7265,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_20f850d0)
+    H_20f850d0 = 7266,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_eab14553)
+    H_eab14553 = 7267,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5efcf9a6)
+    H_5efcf9a6 = 7268,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_5f82d2eb)
+    H_5f82d2eb = 7269,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_49a3a89f)
+    H_49a3a89f = 7270,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_031e3251)
+    H_031e3251 = 7271,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_bfa5300d)
+    H_bfa5300d = 7272,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_cca61545)
+    H_cca61545 = 7273,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_56b64241)
+    H_56b64241 = 7274,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_0d8fa856)
+    H_0d8fa856 = 7275,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_fe0c75e1)
+    H_fe0c75e1 = 7276,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_2bc1c92f)
+    H_2bc1c92f = 7277,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_be68cc09)
+    H_be68cc09 = 7278,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_9a8e09ed)
+    H_9a8e09ed = 7279,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_d1e5b15f)
+    H_d1e5b15f = 7280,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_1e59c8b7)
+    H_1e59c8b7 = 7281,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_25b897dc)
+    H_25b897dc = 7282,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_755f24ac)
+    H_755f24ac = 7283,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_e3759bfa)
+    H_e3759bfa = 7284,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_dac646e4)
+    H_dac646e4 = 7285,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_7b3ecaa4)
+    H_7b3ecaa4 = 7286,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_135ae65e)
+    H_135ae65e = 7287,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f1eb6f66)
+    H_f1eb6f66 = 7288,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_90aad352)
+    H_90aad352 = 7289,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_720b8507)
+    H_720b8507 = 7290,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_8920a2a3)
+    H_8920a2a3 = 7291,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_f56d6b8a)
+    H_f56d6b8a = 7292,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_6c3a5828)
+    H_6c3a5828 = 7293,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_45bb3b5b)
+    H_45bb3b5b = 7294,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_44625280)
+    H_44625280 = 7295,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_bfa51313)
+    H_bfa51313 = 7296,
+    // @@protoc_insertion_point(enum_value:PlayerActionType.H_9c604d40)
+    H_9c604d40 = 7297,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLocalLegendBattleBegin)
     PlayerActionType_PlayerActionLocalLegendBattleBegin = 7361,
     // @@protoc_insertion_point(enum_value:PlayerActionType.PlayerActionType_PlayerActionLocalLegendBattleEnd)
@@ -3634,53 +3634,53 @@ impl ::protobuf::Enum for PlayerActionType {
             7205 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame),
             7206 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame),
             7207 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange),
-            7251 => ::std::option::Option::Some(PlayerActionType::H_68286c01),
-            7252 => ::std::option::Option::Some(PlayerActionType::H_c585af9f),
-            7253 => ::std::option::Option::Some(PlayerActionType::H_f1b5c5ab),
-            7254 => ::std::option::Option::Some(PlayerActionType::H_6c1c4c2f),
-            7255 => ::std::option::Option::Some(PlayerActionType::H_5c0fb240),
-            7256 => ::std::option::Option::Some(PlayerActionType::H_b8633faf),
-            7257 => ::std::option::Option::Some(PlayerActionType::H_72b8407e),
-            7258 => ::std::option::Option::Some(PlayerActionType::H_21a6dcf9),
-            7259 => ::std::option::Option::Some(PlayerActionType::H_24249c7b),
-            7260 => ::std::option::Option::Some(PlayerActionType::H_4a203fba),
-            7261 => ::std::option::Option::Some(PlayerActionType::H_88777c0b),
-            7262 => ::std::option::Option::Some(PlayerActionType::H_0c57357e),
-            7263 => ::std::option::Option::Some(PlayerActionType::H_ba2a8cec),
-            7264 => ::std::option::Option::Some(PlayerActionType::H_29455603),
-            7265 => ::std::option::Option::Some(PlayerActionType::H_1acb9a50),
-            7266 => ::std::option::Option::Some(PlayerActionType::H_70a00719),
-            7267 => ::std::option::Option::Some(PlayerActionType::H_4a9a52d1),
-            7268 => ::std::option::Option::Some(PlayerActionType::H_188c6675),
-            7269 => ::std::option::Option::Some(PlayerActionType::H_f0cd30ae),
-            7270 => ::std::option::Option::Some(PlayerActionType::H_0ef09a2b),
-            7271 => ::std::option::Option::Some(PlayerActionType::H_90a3cc0c),
-            7272 => ::std::option::Option::Some(PlayerActionType::H_1015e989),
-            7273 => ::std::option::Option::Some(PlayerActionType::H_5e539b86),
-            7274 => ::std::option::Option::Some(PlayerActionType::H_49dc71a7),
-            7275 => ::std::option::Option::Some(PlayerActionType::H_2594b7a2),
-            7276 => ::std::option::Option::Some(PlayerActionType::H_1224a868),
-            7277 => ::std::option::Option::Some(PlayerActionType::H_8910a071),
-            7278 => ::std::option::Option::Some(PlayerActionType::H_c1773cdf),
-            7279 => ::std::option::Option::Some(PlayerActionType::H_43e5abd0),
-            7280 => ::std::option::Option::Some(PlayerActionType::H_e5a72344),
-            7281 => ::std::option::Option::Some(PlayerActionType::H_1dc03631),
-            7282 => ::std::option::Option::Some(PlayerActionType::H_78c3f20f),
-            7283 => ::std::option::Option::Some(PlayerActionType::H_81e24de9),
-            7284 => ::std::option::Option::Some(PlayerActionType::H_7804d7f7),
-            7285 => ::std::option::Option::Some(PlayerActionType::H_18734592),
-            7286 => ::std::option::Option::Some(PlayerActionType::H_aa36cece),
-            7287 => ::std::option::Option::Some(PlayerActionType::H_497730d6),
-            7288 => ::std::option::Option::Some(PlayerActionType::H_73267c71),
-            7289 => ::std::option::Option::Some(PlayerActionType::H_a196af40),
-            7290 => ::std::option::Option::Some(PlayerActionType::H_bc2ee045),
-            7291 => ::std::option::Option::Some(PlayerActionType::H_f2b3b1e6),
-            7292 => ::std::option::Option::Some(PlayerActionType::H_9b16622c),
-            7293 => ::std::option::Option::Some(PlayerActionType::H_0424e912),
-            7294 => ::std::option::Option::Some(PlayerActionType::H_cc44d6de),
-            7295 => ::std::option::Option::Some(PlayerActionType::H_224a011e),
-            7296 => ::std::option::Option::Some(PlayerActionType::H_07a2c6c8),
-            7297 => ::std::option::Option::Some(PlayerActionType::H_a90a81dd),
+            7251 => ::std::option::Option::Some(PlayerActionType::H_fc2b7c1d),
+            7252 => ::std::option::Option::Some(PlayerActionType::H_cfc5d717),
+            7253 => ::std::option::Option::Some(PlayerActionType::H_e66278e1),
+            7254 => ::std::option::Option::Some(PlayerActionType::H_89594365),
+            7255 => ::std::option::Option::Some(PlayerActionType::H_8c3e4604),
+            7256 => ::std::option::Option::Some(PlayerActionType::H_4a78bb47),
+            7257 => ::std::option::Option::Some(PlayerActionType::H_21381319),
+            7258 => ::std::option::Option::Some(PlayerActionType::H_7f0a9488),
+            7259 => ::std::option::Option::Some(PlayerActionType::H_9197a9b8),
+            7260 => ::std::option::Option::Some(PlayerActionType::H_186a180c),
+            7261 => ::std::option::Option::Some(PlayerActionType::H_1b5756c1),
+            7262 => ::std::option::Option::Some(PlayerActionType::H_51b5dda5),
+            7263 => ::std::option::Option::Some(PlayerActionType::H_70739295),
+            7264 => ::std::option::Option::Some(PlayerActionType::H_de4022a0),
+            7265 => ::std::option::Option::Some(PlayerActionType::H_186a86fa),
+            7266 => ::std::option::Option::Some(PlayerActionType::H_20f850d0),
+            7267 => ::std::option::Option::Some(PlayerActionType::H_eab14553),
+            7268 => ::std::option::Option::Some(PlayerActionType::H_5efcf9a6),
+            7269 => ::std::option::Option::Some(PlayerActionType::H_5f82d2eb),
+            7270 => ::std::option::Option::Some(PlayerActionType::H_49a3a89f),
+            7271 => ::std::option::Option::Some(PlayerActionType::H_031e3251),
+            7272 => ::std::option::Option::Some(PlayerActionType::H_bfa5300d),
+            7273 => ::std::option::Option::Some(PlayerActionType::H_cca61545),
+            7274 => ::std::option::Option::Some(PlayerActionType::H_56b64241),
+            7275 => ::std::option::Option::Some(PlayerActionType::H_0d8fa856),
+            7276 => ::std::option::Option::Some(PlayerActionType::H_fe0c75e1),
+            7277 => ::std::option::Option::Some(PlayerActionType::H_2bc1c92f),
+            7278 => ::std::option::Option::Some(PlayerActionType::H_be68cc09),
+            7279 => ::std::option::Option::Some(PlayerActionType::H_9a8e09ed),
+            7280 => ::std::option::Option::Some(PlayerActionType::H_d1e5b15f),
+            7281 => ::std::option::Option::Some(PlayerActionType::H_1e59c8b7),
+            7282 => ::std::option::Option::Some(PlayerActionType::H_25b897dc),
+            7283 => ::std::option::Option::Some(PlayerActionType::H_755f24ac),
+            7284 => ::std::option::Option::Some(PlayerActionType::H_e3759bfa),
+            7285 => ::std::option::Option::Some(PlayerActionType::H_dac646e4),
+            7286 => ::std::option::Option::Some(PlayerActionType::H_7b3ecaa4),
+            7287 => ::std::option::Option::Some(PlayerActionType::H_135ae65e),
+            7288 => ::std::option::Option::Some(PlayerActionType::H_f1eb6f66),
+            7289 => ::std::option::Option::Some(PlayerActionType::H_90aad352),
+            7290 => ::std::option::Option::Some(PlayerActionType::H_720b8507),
+            7291 => ::std::option::Option::Some(PlayerActionType::H_8920a2a3),
+            7292 => ::std::option::Option::Some(PlayerActionType::H_f56d6b8a),
+            7293 => ::std::option::Option::Some(PlayerActionType::H_6c3a5828),
+            7294 => ::std::option::Option::Some(PlayerActionType::H_45bb3b5b),
+            7295 => ::std::option::Option::Some(PlayerActionType::H_44625280),
+            7296 => ::std::option::Option::Some(PlayerActionType::H_bfa51313),
+            7297 => ::std::option::Option::Some(PlayerActionType::H_9c604d40),
             7361 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin),
             7362 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd),
             7351 => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood),
@@ -4903,53 +4903,53 @@ impl ::protobuf::Enum for PlayerActionType {
             "PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame),
             "PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame),
             "PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange),
-            "H_68286c01" => ::std::option::Option::Some(PlayerActionType::H_68286c01),
-            "H_c585af9f" => ::std::option::Option::Some(PlayerActionType::H_c585af9f),
-            "H_f1b5c5ab" => ::std::option::Option::Some(PlayerActionType::H_f1b5c5ab),
-            "H_6c1c4c2f" => ::std::option::Option::Some(PlayerActionType::H_6c1c4c2f),
-            "H_5c0fb240" => ::std::option::Option::Some(PlayerActionType::H_5c0fb240),
-            "H_b8633faf" => ::std::option::Option::Some(PlayerActionType::H_b8633faf),
-            "H_72b8407e" => ::std::option::Option::Some(PlayerActionType::H_72b8407e),
-            "H_21a6dcf9" => ::std::option::Option::Some(PlayerActionType::H_21a6dcf9),
-            "H_24249c7b" => ::std::option::Option::Some(PlayerActionType::H_24249c7b),
-            "H_4a203fba" => ::std::option::Option::Some(PlayerActionType::H_4a203fba),
-            "H_88777c0b" => ::std::option::Option::Some(PlayerActionType::H_88777c0b),
-            "H_0c57357e" => ::std::option::Option::Some(PlayerActionType::H_0c57357e),
-            "H_ba2a8cec" => ::std::option::Option::Some(PlayerActionType::H_ba2a8cec),
-            "H_29455603" => ::std::option::Option::Some(PlayerActionType::H_29455603),
-            "H_1acb9a50" => ::std::option::Option::Some(PlayerActionType::H_1acb9a50),
-            "H_70a00719" => ::std::option::Option::Some(PlayerActionType::H_70a00719),
-            "H_4a9a52d1" => ::std::option::Option::Some(PlayerActionType::H_4a9a52d1),
-            "H_188c6675" => ::std::option::Option::Some(PlayerActionType::H_188c6675),
-            "H_f0cd30ae" => ::std::option::Option::Some(PlayerActionType::H_f0cd30ae),
-            "H_0ef09a2b" => ::std::option::Option::Some(PlayerActionType::H_0ef09a2b),
-            "H_90a3cc0c" => ::std::option::Option::Some(PlayerActionType::H_90a3cc0c),
-            "H_1015e989" => ::std::option::Option::Some(PlayerActionType::H_1015e989),
-            "H_5e539b86" => ::std::option::Option::Some(PlayerActionType::H_5e539b86),
-            "H_49dc71a7" => ::std::option::Option::Some(PlayerActionType::H_49dc71a7),
-            "H_2594b7a2" => ::std::option::Option::Some(PlayerActionType::H_2594b7a2),
-            "H_1224a868" => ::std::option::Option::Some(PlayerActionType::H_1224a868),
-            "H_8910a071" => ::std::option::Option::Some(PlayerActionType::H_8910a071),
-            "H_c1773cdf" => ::std::option::Option::Some(PlayerActionType::H_c1773cdf),
-            "H_43e5abd0" => ::std::option::Option::Some(PlayerActionType::H_43e5abd0),
-            "H_e5a72344" => ::std::option::Option::Some(PlayerActionType::H_e5a72344),
-            "H_1dc03631" => ::std::option::Option::Some(PlayerActionType::H_1dc03631),
-            "H_78c3f20f" => ::std::option::Option::Some(PlayerActionType::H_78c3f20f),
-            "H_81e24de9" => ::std::option::Option::Some(PlayerActionType::H_81e24de9),
-            "H_7804d7f7" => ::std::option::Option::Some(PlayerActionType::H_7804d7f7),
-            "H_18734592" => ::std::option::Option::Some(PlayerActionType::H_18734592),
-            "H_aa36cece" => ::std::option::Option::Some(PlayerActionType::H_aa36cece),
-            "H_497730d6" => ::std::option::Option::Some(PlayerActionType::H_497730d6),
-            "H_73267c71" => ::std::option::Option::Some(PlayerActionType::H_73267c71),
-            "H_a196af40" => ::std::option::Option::Some(PlayerActionType::H_a196af40),
-            "H_bc2ee045" => ::std::option::Option::Some(PlayerActionType::H_bc2ee045),
-            "H_f2b3b1e6" => ::std::option::Option::Some(PlayerActionType::H_f2b3b1e6),
-            "H_9b16622c" => ::std::option::Option::Some(PlayerActionType::H_9b16622c),
-            "H_0424e912" => ::std::option::Option::Some(PlayerActionType::H_0424e912),
-            "H_cc44d6de" => ::std::option::Option::Some(PlayerActionType::H_cc44d6de),
-            "H_224a011e" => ::std::option::Option::Some(PlayerActionType::H_224a011e),
-            "H_07a2c6c8" => ::std::option::Option::Some(PlayerActionType::H_07a2c6c8),
-            "H_a90a81dd" => ::std::option::Option::Some(PlayerActionType::H_a90a81dd),
+            "H_fc2b7c1d" => ::std::option::Option::Some(PlayerActionType::H_fc2b7c1d),
+            "H_cfc5d717" => ::std::option::Option::Some(PlayerActionType::H_cfc5d717),
+            "H_e66278e1" => ::std::option::Option::Some(PlayerActionType::H_e66278e1),
+            "H_89594365" => ::std::option::Option::Some(PlayerActionType::H_89594365),
+            "H_8c3e4604" => ::std::option::Option::Some(PlayerActionType::H_8c3e4604),
+            "H_4a78bb47" => ::std::option::Option::Some(PlayerActionType::H_4a78bb47),
+            "H_21381319" => ::std::option::Option::Some(PlayerActionType::H_21381319),
+            "H_7f0a9488" => ::std::option::Option::Some(PlayerActionType::H_7f0a9488),
+            "H_9197a9b8" => ::std::option::Option::Some(PlayerActionType::H_9197a9b8),
+            "H_186a180c" => ::std::option::Option::Some(PlayerActionType::H_186a180c),
+            "H_1b5756c1" => ::std::option::Option::Some(PlayerActionType::H_1b5756c1),
+            "H_51b5dda5" => ::std::option::Option::Some(PlayerActionType::H_51b5dda5),
+            "H_70739295" => ::std::option::Option::Some(PlayerActionType::H_70739295),
+            "H_de4022a0" => ::std::option::Option::Some(PlayerActionType::H_de4022a0),
+            "H_186a86fa" => ::std::option::Option::Some(PlayerActionType::H_186a86fa),
+            "H_20f850d0" => ::std::option::Option::Some(PlayerActionType::H_20f850d0),
+            "H_eab14553" => ::std::option::Option::Some(PlayerActionType::H_eab14553),
+            "H_5efcf9a6" => ::std::option::Option::Some(PlayerActionType::H_5efcf9a6),
+            "H_5f82d2eb" => ::std::option::Option::Some(PlayerActionType::H_5f82d2eb),
+            "H_49a3a89f" => ::std::option::Option::Some(PlayerActionType::H_49a3a89f),
+            "H_031e3251" => ::std::option::Option::Some(PlayerActionType::H_031e3251),
+            "H_bfa5300d" => ::std::option::Option::Some(PlayerActionType::H_bfa5300d),
+            "H_cca61545" => ::std::option::Option::Some(PlayerActionType::H_cca61545),
+            "H_56b64241" => ::std::option::Option::Some(PlayerActionType::H_56b64241),
+            "H_0d8fa856" => ::std::option::Option::Some(PlayerActionType::H_0d8fa856),
+            "H_fe0c75e1" => ::std::option::Option::Some(PlayerActionType::H_fe0c75e1),
+            "H_2bc1c92f" => ::std::option::Option::Some(PlayerActionType::H_2bc1c92f),
+            "H_be68cc09" => ::std::option::Option::Some(PlayerActionType::H_be68cc09),
+            "H_9a8e09ed" => ::std::option::Option::Some(PlayerActionType::H_9a8e09ed),
+            "H_d1e5b15f" => ::std::option::Option::Some(PlayerActionType::H_d1e5b15f),
+            "H_1e59c8b7" => ::std::option::Option::Some(PlayerActionType::H_1e59c8b7),
+            "H_25b897dc" => ::std::option::Option::Some(PlayerActionType::H_25b897dc),
+            "H_755f24ac" => ::std::option::Option::Some(PlayerActionType::H_755f24ac),
+            "H_e3759bfa" => ::std::option::Option::Some(PlayerActionType::H_e3759bfa),
+            "H_dac646e4" => ::std::option::Option::Some(PlayerActionType::H_dac646e4),
+            "H_7b3ecaa4" => ::std::option::Option::Some(PlayerActionType::H_7b3ecaa4),
+            "H_135ae65e" => ::std::option::Option::Some(PlayerActionType::H_135ae65e),
+            "H_f1eb6f66" => ::std::option::Option::Some(PlayerActionType::H_f1eb6f66),
+            "H_90aad352" => ::std::option::Option::Some(PlayerActionType::H_90aad352),
+            "H_720b8507" => ::std::option::Option::Some(PlayerActionType::H_720b8507),
+            "H_8920a2a3" => ::std::option::Option::Some(PlayerActionType::H_8920a2a3),
+            "H_f56d6b8a" => ::std::option::Option::Some(PlayerActionType::H_f56d6b8a),
+            "H_6c3a5828" => ::std::option::Option::Some(PlayerActionType::H_6c3a5828),
+            "H_45bb3b5b" => ::std::option::Option::Some(PlayerActionType::H_45bb3b5b),
+            "H_44625280" => ::std::option::Option::Some(PlayerActionType::H_44625280),
+            "H_bfa51313" => ::std::option::Option::Some(PlayerActionType::H_bfa51313),
+            "H_9c604d40" => ::std::option::Option::Some(PlayerActionType::H_9c604d40),
             "PlayerActionType_PlayerActionLocalLegendBattleBegin" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin),
             "PlayerActionType_PlayerActionLocalLegendBattleEnd" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd),
             "PlayerActionType_PlayerActionDiceCombatBuyShopGood" => ::std::option::Option::Some(PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood),
@@ -6171,53 +6171,53 @@ impl ::protobuf::Enum for PlayerActionType {
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame,
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame,
         PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange,
-        PlayerActionType::H_68286c01,
-        PlayerActionType::H_c585af9f,
-        PlayerActionType::H_f1b5c5ab,
-        PlayerActionType::H_6c1c4c2f,
-        PlayerActionType::H_5c0fb240,
-        PlayerActionType::H_b8633faf,
-        PlayerActionType::H_72b8407e,
-        PlayerActionType::H_21a6dcf9,
-        PlayerActionType::H_24249c7b,
-        PlayerActionType::H_4a203fba,
-        PlayerActionType::H_88777c0b,
-        PlayerActionType::H_0c57357e,
-        PlayerActionType::H_ba2a8cec,
-        PlayerActionType::H_29455603,
-        PlayerActionType::H_1acb9a50,
-        PlayerActionType::H_70a00719,
-        PlayerActionType::H_4a9a52d1,
-        PlayerActionType::H_188c6675,
-        PlayerActionType::H_f0cd30ae,
-        PlayerActionType::H_0ef09a2b,
-        PlayerActionType::H_90a3cc0c,
-        PlayerActionType::H_1015e989,
-        PlayerActionType::H_5e539b86,
-        PlayerActionType::H_49dc71a7,
-        PlayerActionType::H_2594b7a2,
-        PlayerActionType::H_1224a868,
-        PlayerActionType::H_8910a071,
-        PlayerActionType::H_c1773cdf,
-        PlayerActionType::H_43e5abd0,
-        PlayerActionType::H_e5a72344,
-        PlayerActionType::H_1dc03631,
-        PlayerActionType::H_78c3f20f,
-        PlayerActionType::H_81e24de9,
-        PlayerActionType::H_7804d7f7,
-        PlayerActionType::H_18734592,
-        PlayerActionType::H_aa36cece,
-        PlayerActionType::H_497730d6,
-        PlayerActionType::H_73267c71,
-        PlayerActionType::H_a196af40,
-        PlayerActionType::H_bc2ee045,
-        PlayerActionType::H_f2b3b1e6,
-        PlayerActionType::H_9b16622c,
-        PlayerActionType::H_0424e912,
-        PlayerActionType::H_cc44d6de,
-        PlayerActionType::H_224a011e,
-        PlayerActionType::H_07a2c6c8,
-        PlayerActionType::H_a90a81dd,
+        PlayerActionType::H_fc2b7c1d,
+        PlayerActionType::H_cfc5d717,
+        PlayerActionType::H_e66278e1,
+        PlayerActionType::H_89594365,
+        PlayerActionType::H_8c3e4604,
+        PlayerActionType::H_4a78bb47,
+        PlayerActionType::H_21381319,
+        PlayerActionType::H_7f0a9488,
+        PlayerActionType::H_9197a9b8,
+        PlayerActionType::H_186a180c,
+        PlayerActionType::H_1b5756c1,
+        PlayerActionType::H_51b5dda5,
+        PlayerActionType::H_70739295,
+        PlayerActionType::H_de4022a0,
+        PlayerActionType::H_186a86fa,
+        PlayerActionType::H_20f850d0,
+        PlayerActionType::H_eab14553,
+        PlayerActionType::H_5efcf9a6,
+        PlayerActionType::H_5f82d2eb,
+        PlayerActionType::H_49a3a89f,
+        PlayerActionType::H_031e3251,
+        PlayerActionType::H_bfa5300d,
+        PlayerActionType::H_cca61545,
+        PlayerActionType::H_56b64241,
+        PlayerActionType::H_0d8fa856,
+        PlayerActionType::H_fe0c75e1,
+        PlayerActionType::H_2bc1c92f,
+        PlayerActionType::H_be68cc09,
+        PlayerActionType::H_9a8e09ed,
+        PlayerActionType::H_d1e5b15f,
+        PlayerActionType::H_1e59c8b7,
+        PlayerActionType::H_25b897dc,
+        PlayerActionType::H_755f24ac,
+        PlayerActionType::H_e3759bfa,
+        PlayerActionType::H_dac646e4,
+        PlayerActionType::H_7b3ecaa4,
+        PlayerActionType::H_135ae65e,
+        PlayerActionType::H_f1eb6f66,
+        PlayerActionType::H_90aad352,
+        PlayerActionType::H_720b8507,
+        PlayerActionType::H_8920a2a3,
+        PlayerActionType::H_f56d6b8a,
+        PlayerActionType::H_6c3a5828,
+        PlayerActionType::H_45bb3b5b,
+        PlayerActionType::H_44625280,
+        PlayerActionType::H_bfa51313,
+        PlayerActionType::H_9c604d40,
         PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin,
         PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd,
         PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood,
@@ -7445,53 +7445,53 @@ impl ::protobuf::EnumFull for PlayerActionType {
             PlayerActionType::PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame => 1067,
             PlayerActionType::PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame => 1068,
             PlayerActionType::PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange => 1069,
-            PlayerActionType::H_68286c01 => 1070,
-            PlayerActionType::H_c585af9f => 1071,
-            PlayerActionType::H_f1b5c5ab => 1072,
-            PlayerActionType::H_6c1c4c2f => 1073,
-            PlayerActionType::H_5c0fb240 => 1074,
-            PlayerActionType::H_b8633faf => 1075,
-            PlayerActionType::H_72b8407e => 1076,
-            PlayerActionType::H_21a6dcf9 => 1077,
-            PlayerActionType::H_24249c7b => 1078,
-            PlayerActionType::H_4a203fba => 1079,
-            PlayerActionType::H_88777c0b => 1080,
-            PlayerActionType::H_0c57357e => 1081,
-            PlayerActionType::H_ba2a8cec => 1082,
-            PlayerActionType::H_29455603 => 1083,
-            PlayerActionType::H_1acb9a50 => 1084,
-            PlayerActionType::H_70a00719 => 1085,
-            PlayerActionType::H_4a9a52d1 => 1086,
-            PlayerActionType::H_188c6675 => 1087,
-            PlayerActionType::H_f0cd30ae => 1088,
-            PlayerActionType::H_0ef09a2b => 1089,
-            PlayerActionType::H_90a3cc0c => 1090,
-            PlayerActionType::H_1015e989 => 1091,
-            PlayerActionType::H_5e539b86 => 1092,
-            PlayerActionType::H_49dc71a7 => 1093,
-            PlayerActionType::H_2594b7a2 => 1094,
-            PlayerActionType::H_1224a868 => 1095,
-            PlayerActionType::H_8910a071 => 1096,
-            PlayerActionType::H_c1773cdf => 1097,
-            PlayerActionType::H_43e5abd0 => 1098,
-            PlayerActionType::H_e5a72344 => 1099,
-            PlayerActionType::H_1dc03631 => 1100,
-            PlayerActionType::H_78c3f20f => 1101,
-            PlayerActionType::H_81e24de9 => 1102,
-            PlayerActionType::H_7804d7f7 => 1103,
-            PlayerActionType::H_18734592 => 1104,
-            PlayerActionType::H_aa36cece => 1105,
-            PlayerActionType::H_497730d6 => 1106,
-            PlayerActionType::H_73267c71 => 1107,
-            PlayerActionType::H_a196af40 => 1108,
-            PlayerActionType::H_bc2ee045 => 1109,
-            PlayerActionType::H_f2b3b1e6 => 1110,
-            PlayerActionType::H_9b16622c => 1111,
-            PlayerActionType::H_0424e912 => 1112,
-            PlayerActionType::H_cc44d6de => 1113,
-            PlayerActionType::H_224a011e => 1114,
-            PlayerActionType::H_07a2c6c8 => 1115,
-            PlayerActionType::H_a90a81dd => 1116,
+            PlayerActionType::H_fc2b7c1d => 1070,
+            PlayerActionType::H_cfc5d717 => 1071,
+            PlayerActionType::H_e66278e1 => 1072,
+            PlayerActionType::H_89594365 => 1073,
+            PlayerActionType::H_8c3e4604 => 1074,
+            PlayerActionType::H_4a78bb47 => 1075,
+            PlayerActionType::H_21381319 => 1076,
+            PlayerActionType::H_7f0a9488 => 1077,
+            PlayerActionType::H_9197a9b8 => 1078,
+            PlayerActionType::H_186a180c => 1079,
+            PlayerActionType::H_1b5756c1 => 1080,
+            PlayerActionType::H_51b5dda5 => 1081,
+            PlayerActionType::H_70739295 => 1082,
+            PlayerActionType::H_de4022a0 => 1083,
+            PlayerActionType::H_186a86fa => 1084,
+            PlayerActionType::H_20f850d0 => 1085,
+            PlayerActionType::H_eab14553 => 1086,
+            PlayerActionType::H_5efcf9a6 => 1087,
+            PlayerActionType::H_5f82d2eb => 1088,
+            PlayerActionType::H_49a3a89f => 1089,
+            PlayerActionType::H_031e3251 => 1090,
+            PlayerActionType::H_bfa5300d => 1091,
+            PlayerActionType::H_cca61545 => 1092,
+            PlayerActionType::H_56b64241 => 1093,
+            PlayerActionType::H_0d8fa856 => 1094,
+            PlayerActionType::H_fe0c75e1 => 1095,
+            PlayerActionType::H_2bc1c92f => 1096,
+            PlayerActionType::H_be68cc09 => 1097,
+            PlayerActionType::H_9a8e09ed => 1098,
+            PlayerActionType::H_d1e5b15f => 1099,
+            PlayerActionType::H_1e59c8b7 => 1100,
+            PlayerActionType::H_25b897dc => 1101,
+            PlayerActionType::H_755f24ac => 1102,
+            PlayerActionType::H_e3759bfa => 1103,
+            PlayerActionType::H_dac646e4 => 1104,
+            PlayerActionType::H_7b3ecaa4 => 1105,
+            PlayerActionType::H_135ae65e => 1106,
+            PlayerActionType::H_f1eb6f66 => 1107,
+            PlayerActionType::H_90aad352 => 1108,
+            PlayerActionType::H_720b8507 => 1109,
+            PlayerActionType::H_8920a2a3 => 1110,
+            PlayerActionType::H_f56d6b8a => 1111,
+            PlayerActionType::H_6c3a5828 => 1112,
+            PlayerActionType::H_45bb3b5b => 1113,
+            PlayerActionType::H_44625280 => 1114,
+            PlayerActionType::H_bfa51313 => 1115,
+            PlayerActionType::H_9c604d40 => 1116,
             PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleBegin => 1117,
             PlayerActionType::PlayerActionType_PlayerActionLocalLegendBattleEnd => 1118,
             PlayerActionType::PlayerActionType_PlayerActionDiceCombatBuyShopGood => 1119,
@@ -8655,27 +8655,27 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12<\n7PlayerActionType_PlayerActionMazePuzzleEnterFiveDimGame\x10\xa58\
     \x12<\n7PlayerActionType_PlayerActionMazePuzzleLeaveFiveDimGame\x10\xa68\
     \x12B\n=PlayerActionType_PlayerActionMazePuzzleFiveDimGameSkillChange\
-    \x10\xa78\x12\x0f\n\nH_68286c01\x10\xd38\x12\x0f\n\nH_c585af9f\x10\xd48\
-    \x12\x0f\n\nH_f1b5c5ab\x10\xd58\x12\x0f\n\nH_6c1c4c2f\x10\xd68\x12\x0f\n\
-    \nH_5c0fb240\x10\xd78\x12\x0f\n\nH_b8633faf\x10\xd88\x12\x0f\n\nH_72b840\
-    7e\x10\xd98\x12\x0f\n\nH_21a6dcf9\x10\xda8\x12\x0f\n\nH_24249c7b\x10\xdb\
-    8\x12\x0f\n\nH_4a203fba\x10\xdc8\x12\x0f\n\nH_88777c0b\x10\xdd8\x12\x0f\
-    \n\nH_0c57357e\x10\xde8\x12\x0f\n\nH_ba2a8cec\x10\xdf8\x12\x0f\n\nH_2945\
-    5603\x10\xe08\x12\x0f\n\nH_1acb9a50\x10\xe18\x12\x0f\n\nH_70a00719\x10\
-    \xe28\x12\x0f\n\nH_4a9a52d1\x10\xe38\x12\x0f\n\nH_188c6675\x10\xe48\x12\
-    \x0f\n\nH_f0cd30ae\x10\xe58\x12\x0f\n\nH_0ef09a2b\x10\xe68\x12\x0f\n\nH_\
-    90a3cc0c\x10\xe78\x12\x0f\n\nH_1015e989\x10\xe88\x12\x0f\n\nH_5e539b86\
-    \x10\xe98\x12\x0f\n\nH_49dc71a7\x10\xea8\x12\x0f\n\nH_2594b7a2\x10\xeb8\
-    \x12\x0f\n\nH_1224a868\x10\xec8\x12\x0f\n\nH_8910a071\x10\xed8\x12\x0f\n\
-    \nH_c1773cdf\x10\xee8\x12\x0f\n\nH_43e5abd0\x10\xef8\x12\x0f\n\nH_e5a723\
-    44\x10\xf08\x12\x0f\n\nH_1dc03631\x10\xf18\x12\x0f\n\nH_78c3f20f\x10\xf2\
-    8\x12\x0f\n\nH_81e24de9\x10\xf38\x12\x0f\n\nH_7804d7f7\x10\xf48\x12\x0f\
-    \n\nH_18734592\x10\xf58\x12\x0f\n\nH_aa36cece\x10\xf68\x12\x0f\n\nH_4977\
-    30d6\x10\xf78\x12\x0f\n\nH_73267c71\x10\xf88\x12\x0f\n\nH_a196af40\x10\
-    \xf98\x12\x0f\n\nH_bc2ee045\x10\xfa8\x12\x0f\n\nH_f2b3b1e6\x10\xfb8\x12\
-    \x0f\n\nH_9b16622c\x10\xfc8\x12\x0f\n\nH_0424e912\x10\xfd8\x12\x0f\n\nH_\
-    cc44d6de\x10\xfe8\x12\x0f\n\nH_224a011e\x10\xff8\x12\x0f\n\nH_07a2c6c8\
-    \x10\x809\x12\x0f\n\nH_a90a81dd\x10\x819\x128\n3PlayerActionType_PlayerA\
+    \x10\xa78\x12\x0f\n\nH_fc2b7c1d\x10\xd38\x12\x0f\n\nH_cfc5d717\x10\xd48\
+    \x12\x0f\n\nH_e66278e1\x10\xd58\x12\x0f\n\nH_89594365\x10\xd68\x12\x0f\n\
+    \nH_8c3e4604\x10\xd78\x12\x0f\n\nH_4a78bb47\x10\xd88\x12\x0f\n\nH_213813\
+    19\x10\xd98\x12\x0f\n\nH_7f0a9488\x10\xda8\x12\x0f\n\nH_9197a9b8\x10\xdb\
+    8\x12\x0f\n\nH_186a180c\x10\xdc8\x12\x0f\n\nH_1b5756c1\x10\xdd8\x12\x0f\
+    \n\nH_51b5dda5\x10\xde8\x12\x0f\n\nH_70739295\x10\xdf8\x12\x0f\n\nH_de40\
+    22a0\x10\xe08\x12\x0f\n\nH_186a86fa\x10\xe18\x12\x0f\n\nH_20f850d0\x10\
+    \xe28\x12\x0f\n\nH_eab14553\x10\xe38\x12\x0f\n\nH_5efcf9a6\x10\xe48\x12\
+    \x0f\n\nH_5f82d2eb\x10\xe58\x12\x0f\n\nH_49a3a89f\x10\xe68\x12\x0f\n\nH_\
+    031e3251\x10\xe78\x12\x0f\n\nH_bfa5300d\x10\xe88\x12\x0f\n\nH_cca61545\
+    \x10\xe98\x12\x0f\n\nH_56b64241\x10\xea8\x12\x0f\n\nH_0d8fa856\x10\xeb8\
+    \x12\x0f\n\nH_fe0c75e1\x10\xec8\x12\x0f\n\nH_2bc1c92f\x10\xed8\x12\x0f\n\
+    \nH_be68cc09\x10\xee8\x12\x0f\n\nH_9a8e09ed\x10\xef8\x12\x0f\n\nH_d1e5b1\
+    5f\x10\xf08\x12\x0f\n\nH_1e59c8b7\x10\xf18\x12\x0f\n\nH_25b897dc\x10\xf2\
+    8\x12\x0f\n\nH_755f24ac\x10\xf38\x12\x0f\n\nH_e3759bfa\x10\xf48\x12\x0f\
+    \n\nH_dac646e4\x10\xf58\x12\x0f\n\nH_7b3ecaa4\x10\xf68\x12\x0f\n\nH_135a\
+    e65e\x10\xf78\x12\x0f\n\nH_f1eb6f66\x10\xf88\x12\x0f\n\nH_90aad352\x10\
+    \xf98\x12\x0f\n\nH_720b8507\x10\xfa8\x12\x0f\n\nH_8920a2a3\x10\xfb8\x12\
+    \x0f\n\nH_f56d6b8a\x10\xfc8\x12\x0f\n\nH_6c3a5828\x10\xfd8\x12\x0f\n\nH_\
+    45bb3b5b\x10\xfe8\x12\x0f\n\nH_44625280\x10\xff8\x12\x0f\n\nH_bfa51313\
+    \x10\x809\x12\x0f\n\nH_9c604d40\x10\x819\x128\n3PlayerActionType_PlayerA\
     ctionLocalLegendBattleBegin\x10\xc19\x126\n1PlayerActionType_PlayerActio\
     nLocalLegendBattleEnd\x10\xc29\x127\n2PlayerActionType_PlayerActionDiceC\
     ombatBuyShopGood\x10\xb79\x129\n4PlayerActionType_PlayerActionDiceCombat\

@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AvatarPathData {
     // message fields
-    // @@protoc_insertion_point(field:AvatarPathData.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:AvatarPathData.dressed_skin_id)
-    pub dressed_skin_id: u32,
-    // @@protoc_insertion_point(field:AvatarPathData.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:AvatarPathData.unlock_timestamp)
-    pub unlock_timestamp: u64,
-    // @@protoc_insertion_point(field:AvatarPathData.equip_relic_list)
-    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
-    // @@protoc_insertion_point(field:AvatarPathData.avatar_path_skill_tree)
-    pub avatar_path_skill_tree: ::std::vec::Vec<super::AvatarPathSkillTree::AvatarPathSkillTree>,
     // @@protoc_insertion_point(field:AvatarPathData.skilltree_version)
     pub skilltree_version: u32,
     // @@protoc_insertion_point(field:AvatarPathData.path_equipment_id)
     pub path_equipment_id: u32,
+    // @@protoc_insertion_point(field:AvatarPathData.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:AvatarPathData.avatar_path_skill_tree)
+    pub avatar_path_skill_tree: ::std::vec::Vec<super::AvatarPathSkillTree::AvatarPathSkillTree>,
+    // @@protoc_insertion_point(field:AvatarPathData.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:AvatarPathData.equip_relic_list)
+    pub equip_relic_list: ::std::vec::Vec<super::EquipRelic::EquipRelic>,
+    // @@protoc_insertion_point(field:AvatarPathData.unlock_timestamp)
+    pub unlock_timestamp: u64,
+    // @@protoc_insertion_point(field:AvatarPathData.dressed_skin_id)
+    pub dressed_skin_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarPathData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,36 +64,6 @@ impl AvatarPathData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &AvatarPathData| { &m.avatar_id },
-            |m: &mut AvatarPathData| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dressed_skin_id",
-            |m: &AvatarPathData| { &m.dressed_skin_id },
-            |m: &mut AvatarPathData| { &mut m.dressed_skin_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &AvatarPathData| { &m.rank },
-            |m: &mut AvatarPathData| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unlock_timestamp",
-            |m: &AvatarPathData| { &m.unlock_timestamp },
-            |m: &mut AvatarPathData| { &mut m.unlock_timestamp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equip_relic_list",
-            |m: &AvatarPathData| { &m.equip_relic_list },
-            |m: &mut AvatarPathData| { &mut m.equip_relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_path_skill_tree",
-            |m: &AvatarPathData| { &m.avatar_path_skill_tree },
-            |m: &mut AvatarPathData| { &mut m.avatar_path_skill_tree },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skilltree_version",
             |m: &AvatarPathData| { &m.skilltree_version },
             |m: &mut AvatarPathData| { &mut m.skilltree_version },
@@ -102,6 +72,36 @@ impl AvatarPathData {
             "path_equipment_id",
             |m: &AvatarPathData| { &m.path_equipment_id },
             |m: &mut AvatarPathData| { &mut m.path_equipment_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &AvatarPathData| { &m.avatar_id },
+            |m: &mut AvatarPathData| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_path_skill_tree",
+            |m: &AvatarPathData| { &m.avatar_path_skill_tree },
+            |m: &mut AvatarPathData| { &mut m.avatar_path_skill_tree },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &AvatarPathData| { &m.rank },
+            |m: &mut AvatarPathData| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equip_relic_list",
+            |m: &AvatarPathData| { &m.equip_relic_list },
+            |m: &mut AvatarPathData| { &mut m.equip_relic_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unlock_timestamp",
+            |m: &AvatarPathData| { &m.unlock_timestamp },
+            |m: &mut AvatarPathData| { &mut m.unlock_timestamp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dressed_skin_id",
+            |m: &AvatarPathData| { &m.dressed_skin_id },
+            |m: &mut AvatarPathData| { &mut m.dressed_skin_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarPathData>(
             "AvatarPathData",
@@ -122,28 +122,28 @@ impl ::protobuf::Message for AvatarPathData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.dressed_skin_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.rank = is.read_uint32()?;
-                },
-                40 => {
-                    self.unlock_timestamp = is.read_uint64()?;
-                },
-                82 => {
-                    self.equip_relic_list.push(is.read_message()?);
-                },
-                98 => {
-                    self.avatar_path_skill_tree.push(is.read_message()?);
-                },
-                104 => {
                     self.skilltree_version = is.read_uint32()?;
                 },
-                112 => {
+                16 => {
                     self.path_equipment_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                74 => {
+                    self.avatar_path_skill_tree.push(is.read_message()?);
+                },
+                80 => {
+                    self.rank = is.read_uint32()?;
+                },
+                98 => {
+                    self.equip_relic_list.push(is.read_message()?);
+                },
+                104 => {
+                    self.unlock_timestamp = is.read_uint64()?;
+                },
+                112 => {
+                    self.dressed_skin_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,31 +157,31 @@ impl ::protobuf::Message for AvatarPathData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.skilltree_version != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.skilltree_version);
+        }
+        if self.path_equipment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.path_equipment_id);
+        }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
         }
-        if self.dressed_skin_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.dressed_skin_id);
-        }
+        for value in &self.avatar_path_skill_tree {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.rank);
-        }
-        if self.unlock_timestamp != 0 {
-            my_size += ::protobuf::rt::uint64_size(5, self.unlock_timestamp);
+            my_size += ::protobuf::rt::uint32_size(10, self.rank);
         }
         for value in &self.equip_relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.avatar_path_skill_tree {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.skilltree_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.skilltree_version);
+        if self.unlock_timestamp != 0 {
+            my_size += ::protobuf::rt::uint64_size(13, self.unlock_timestamp);
         }
-        if self.path_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.path_equipment_id);
+        if self.dressed_skin_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.dressed_skin_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -189,29 +189,29 @@ impl ::protobuf::Message for AvatarPathData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
-        }
-        if self.dressed_skin_id != 0 {
-            os.write_uint32(3, self.dressed_skin_id)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(4, self.rank)?;
-        }
-        if self.unlock_timestamp != 0 {
-            os.write_uint64(5, self.unlock_timestamp)?;
-        }
-        for v in &self.equip_relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        for v in &self.avatar_path_skill_tree {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
         if self.skilltree_version != 0 {
-            os.write_uint32(13, self.skilltree_version)?;
+            os.write_uint32(1, self.skilltree_version)?;
         }
         if self.path_equipment_id != 0 {
-            os.write_uint32(14, self.path_equipment_id)?;
+            os.write_uint32(2, self.path_equipment_id)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(3, self.avatar_id)?;
+        }
+        for v in &self.avatar_path_skill_tree {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.rank != 0 {
+            os.write_uint32(10, self.rank)?;
+        }
+        for v in &self.equip_relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.unlock_timestamp != 0 {
+            os.write_uint64(13, self.unlock_timestamp)?;
+        }
+        if self.dressed_skin_id != 0 {
+            os.write_uint32(14, self.dressed_skin_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -230,27 +230,27 @@ impl ::protobuf::Message for AvatarPathData {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.dressed_skin_id = 0;
-        self.rank = 0;
-        self.unlock_timestamp = 0;
-        self.equip_relic_list.clear();
-        self.avatar_path_skill_tree.clear();
         self.skilltree_version = 0;
         self.path_equipment_id = 0;
+        self.avatar_id = 0;
+        self.avatar_path_skill_tree.clear();
+        self.rank = 0;
+        self.equip_relic_list.clear();
+        self.unlock_timestamp = 0;
+        self.dressed_skin_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarPathData {
         static instance: AvatarPathData = AvatarPathData {
-            avatar_id: 0,
-            dressed_skin_id: 0,
-            rank: 0,
-            unlock_timestamp: 0,
-            equip_relic_list: ::std::vec::Vec::new(),
-            avatar_path_skill_tree: ::std::vec::Vec::new(),
             skilltree_version: 0,
             path_equipment_id: 0,
+            avatar_id: 0,
+            avatar_path_skill_tree: ::std::vec::Vec::new(),
+            rank: 0,
+            equip_relic_list: ::std::vec::Vec::new(),
+            unlock_timestamp: 0,
+            dressed_skin_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -276,15 +276,15 @@ impl ::protobuf::reflect::ProtobufValue for AvatarPathData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14AvatarPathData.proto\x1a\x19AvatarPathSkillTree.proto\x1a\x10Equip\
-    Relic.proto\"\xef\x02\n\x0eAvatarPathData\x12\x1b\n\tavatar_id\x18\x01\
-    \x20\x01(\rR\x08avatarId\x12&\n\x0fdressed_skin_id\x18\x03\x20\x01(\rR\r\
-    dressedSkinId\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12)\n\x10un\
-    lock_timestamp\x18\x05\x20\x01(\x04R\x0funlockTimestamp\x125\n\x10equip_\
-    relic_list\x18\n\x20\x03(\x0b2\x0b.EquipRelicR\x0eequipRelicList\x12I\n\
-    \x16avatar_path_skill_tree\x18\x0c\x20\x03(\x0b2\x14.AvatarPathSkillTree\
-    R\x13avatarPathSkillTree\x12+\n\x11skilltree_version\x18\r\x20\x01(\rR\
-    \x10skilltreeVersion\x12*\n\x11path_equipment_id\x18\x0e\x20\x01(\rR\x0f\
-    pathEquipmentIdb\x06proto3\
+    Relic.proto\"\xef\x02\n\x0eAvatarPathData\x12+\n\x11skilltree_version\
+    \x18\x01\x20\x01(\rR\x10skilltreeVersion\x12*\n\x11path_equipment_id\x18\
+    \x02\x20\x01(\rR\x0fpathEquipmentId\x12\x1b\n\tavatar_id\x18\x03\x20\x01\
+    (\rR\x08avatarId\x12I\n\x16avatar_path_skill_tree\x18\t\x20\x03(\x0b2\
+    \x14.AvatarPathSkillTreeR\x13avatarPathSkillTree\x12\x12\n\x04rank\x18\n\
+    \x20\x01(\rR\x04rank\x125\n\x10equip_relic_list\x18\x0c\x20\x03(\x0b2\
+    \x0b.EquipRelicR\x0eequipRelicList\x12)\n\x10unlock_timestamp\x18\r\x20\
+    \x01(\x04R\x0funlockTimestamp\x12&\n\x0fdressed_skin_id\x18\x0e\x20\x01(\
+    \rR\rdressedSkinIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

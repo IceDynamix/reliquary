@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GADFFIFFNHM {
     // message fields
-    // @@protoc_insertion_point(field:GADFFIFFNHM.hp)
-    pub hp: i32,
-    // @@protoc_insertion_point(field:GADFFIFFNHM.CDGNAJDAGKE)
-    pub CDGNAJDAGKE: ::protobuf::MessageField<super::COCHLLCNDJF::COCHLLCNDJF>,
+    // @@protoc_insertion_point(field:GADFFIFFNHM.COJOIFPPCIJ)
+    pub COJOIFPPCIJ: i32,
     // @@protoc_insertion_point(field:GADFFIFFNHM.AMHAJDNFBGC)
     pub AMHAJDNFBGC: bool,
     // @@protoc_insertion_point(field:GADFFIFFNHM.IIELAJFFDPB)
     pub IIELAJFFDPB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GADFFIFFNHM.COJOIFPPCIJ)
-    pub COJOIFPPCIJ: i32,
+    // @@protoc_insertion_point(field:GADFFIFFNHM.hp)
+    pub hp: i32,
+    // @@protoc_insertion_point(field:GADFFIFFNHM.CDGNAJDAGKE)
+    pub CDGNAJDAGKE: ::protobuf::MessageField<super::COCHLLCNDJF::COCHLLCNDJF>,
     // @@protoc_insertion_point(field:GADFFIFFNHM.id)
     pub id: u32,
     // special fields
@@ -60,14 +60,9 @@ impl GADFFIFFNHM {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hp",
-            |m: &GADFFIFFNHM| { &m.hp },
-            |m: &mut GADFFIFFNHM| { &mut m.hp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::COCHLLCNDJF::COCHLLCNDJF>(
-            "CDGNAJDAGKE",
-            |m: &GADFFIFFNHM| { &m.CDGNAJDAGKE },
-            |m: &mut GADFFIFFNHM| { &mut m.CDGNAJDAGKE },
+            "COJOIFPPCIJ",
+            |m: &GADFFIFFNHM| { &m.COJOIFPPCIJ },
+            |m: &mut GADFFIFFNHM| { &mut m.COJOIFPPCIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AMHAJDNFBGC",
@@ -80,9 +75,14 @@ impl GADFFIFFNHM {
             |m: &mut GADFFIFFNHM| { &mut m.IIELAJFFDPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COJOIFPPCIJ",
-            |m: &GADFFIFFNHM| { &m.COJOIFPPCIJ },
-            |m: &mut GADFFIFFNHM| { &mut m.COJOIFPPCIJ },
+            "hp",
+            |m: &GADFFIFFNHM| { &m.hp },
+            |m: &mut GADFFIFFNHM| { &mut m.hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::COCHLLCNDJF::COCHLLCNDJF>(
+            "CDGNAJDAGKE",
+            |m: &GADFFIFFNHM| { &m.CDGNAJDAGKE },
+            |m: &mut GADFFIFFNHM| { &mut m.CDGNAJDAGKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -108,22 +108,22 @@ impl ::protobuf::Message for GADFFIFFNHM {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.hp = is.read_int32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDGNAJDAGKE)?;
+                    self.COJOIFPPCIJ = is.read_int32()?;
                 },
                 48 => {
                     self.AMHAJDNFBGC = is.read_bool()?;
                 },
-                58 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.IIELAJFFDPB)?;
                 },
-                56 => {
+                72 => {
                     self.IIELAJFFDPB.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.COJOIFPPCIJ = is.read_int32()?;
+                80 => {
+                    self.hp = is.read_int32()?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDGNAJDAGKE)?;
                 },
                 104 => {
                     self.id = is.read_uint32()?;
@@ -140,19 +140,19 @@ impl ::protobuf::Message for GADFFIFFNHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::int32_size(4, self.hp);
-        }
-        if let Some(v) = self.CDGNAJDAGKE.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.COJOIFPPCIJ != 0 {
+            my_size += ::protobuf::rt::int32_size(4, self.COJOIFPPCIJ);
         }
         if self.AMHAJDNFBGC != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.IIELAJFFDPB);
-        if self.COJOIFPPCIJ != 0 {
-            my_size += ::protobuf::rt::int32_size(8, self.COJOIFPPCIJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.IIELAJFFDPB);
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.hp);
+        }
+        if let Some(v) = self.CDGNAJDAGKE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.id);
@@ -163,18 +163,18 @@ impl ::protobuf::Message for GADFFIFFNHM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.hp != 0 {
-            os.write_int32(4, self.hp)?;
-        }
-        if let Some(v) = self.CDGNAJDAGKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.COJOIFPPCIJ != 0 {
+            os.write_int32(4, self.COJOIFPPCIJ)?;
         }
         if self.AMHAJDNFBGC != false {
             os.write_bool(6, self.AMHAJDNFBGC)?;
         }
-        os.write_repeated_packed_uint32(7, &self.IIELAJFFDPB)?;
-        if self.COJOIFPPCIJ != 0 {
-            os.write_int32(8, self.COJOIFPPCIJ)?;
+        os.write_repeated_packed_uint32(9, &self.IIELAJFFDPB)?;
+        if self.hp != 0 {
+            os.write_int32(10, self.hp)?;
+        }
+        if let Some(v) = self.CDGNAJDAGKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.id != 0 {
             os.write_uint32(13, self.id)?;
@@ -196,22 +196,22 @@ impl ::protobuf::Message for GADFFIFFNHM {
     }
 
     fn clear(&mut self) {
-        self.hp = 0;
-        self.CDGNAJDAGKE.clear();
+        self.COJOIFPPCIJ = 0;
         self.AMHAJDNFBGC = false;
         self.IIELAJFFDPB.clear();
-        self.COJOIFPPCIJ = 0;
+        self.hp = 0;
+        self.CDGNAJDAGKE.clear();
         self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GADFFIFFNHM {
         static instance: GADFFIFFNHM = GADFFIFFNHM {
-            hp: 0,
-            CDGNAJDAGKE: ::protobuf::MessageField::none(),
+            COJOIFPPCIJ: 0,
             AMHAJDNFBGC: false,
             IIELAJFFDPB: ::std::vec::Vec::new(),
-            COJOIFPPCIJ: 0,
+            hp: 0,
+            CDGNAJDAGKE: ::protobuf::MessageField::none(),
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -238,12 +238,11 @@ impl ::protobuf::reflect::ProtobufValue for GADFFIFFNHM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GADFFIFFNHM.proto\x1a\x11COCHLLCNDJF.proto\"\xc3\x01\n\x0bGADFFIFF\
-    NHM\x12\x0e\n\x02hp\x18\x04\x20\x01(\x05R\x02hp\x12.\n\x0bCDGNAJDAGKE\
-    \x18\x05\x20\x01(\x0b2\x0c.COCHLLCNDJFR\x0bCDGNAJDAGKE\x12\x20\n\x0bAMHA\
-    JDNFBGC\x18\x06\x20\x01(\x08R\x0bAMHAJDNFBGC\x12\x20\n\x0bIIELAJFFDPB\
-    \x18\x07\x20\x03(\rR\x0bIIELAJFFDPB\x12\x20\n\x0bCOJOIFPPCIJ\x18\x08\x20\
-    \x01(\x05R\x0bCOJOIFPPCIJ\x12\x0e\n\x02id\x18\r\x20\x01(\rR\x02idb\x06pr\
-    oto3\
+    NHM\x12\x20\n\x0bCOJOIFPPCIJ\x18\x04\x20\x01(\x05R\x0bCOJOIFPPCIJ\x12\
+    \x20\n\x0bAMHAJDNFBGC\x18\x06\x20\x01(\x08R\x0bAMHAJDNFBGC\x12\x20\n\x0b\
+    IIELAJFFDPB\x18\t\x20\x03(\rR\x0bIIELAJFFDPB\x12\x0e\n\x02hp\x18\n\x20\
+    \x01(\x05R\x02hp\x12.\n\x0bCDGNAJDAGKE\x18\x0c\x20\x01(\x0b2\x0c.COCHLLC\
+    NDJFR\x0bCDGNAJDAGKE\x12\x0e\n\x02id\x18\r\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

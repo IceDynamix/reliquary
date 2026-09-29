@@ -86,13 +86,13 @@ impl ::protobuf::Message for ICKLANINJDB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     self.LNBKFFIDEEJ = is.read_bytes()?;
                 },
-                16 => {
+                64 => {
                     self.OMFPICKPOCP = is.read_uint32()?;
                 },
-                56 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for ICKLANINJDB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.LNBKFFIDEEJ.is_empty() {
-            my_size += ::protobuf::rt::bytes_size(1, &self.LNBKFFIDEEJ);
+            my_size += ::protobuf::rt::bytes_size(3, &self.LNBKFFIDEEJ);
         }
         if self.OMFPICKPOCP != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OMFPICKPOCP);
+            my_size += ::protobuf::rt::uint32_size(8, self.OMFPICKPOCP);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for ICKLANINJDB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.LNBKFFIDEEJ.is_empty() {
-            os.write_bytes(1, &self.LNBKFFIDEEJ)?;
+            os.write_bytes(3, &self.LNBKFFIDEEJ)?;
         }
         if self.OMFPICKPOCP != 0 {
-            os.write_uint32(2, self.OMFPICKPOCP)?;
+            os.write_uint32(8, self.OMFPICKPOCP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for ICKLANINJDB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ICKLANINJDB.proto\"k\n\x0bICKLANINJDB\x12\x20\n\x0bLNBKFFIDEEJ\x18\
-    \x01\x20\x01(\x0cR\x0bLNBKFFIDEEJ\x12\x20\n\x0bOMFPICKPOCP\x18\x02\x20\
-    \x01(\rR\x0bOMFPICKPOCP\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retc\
+    \x03\x20\x01(\x0cR\x0bLNBKFFIDEEJ\x12\x20\n\x0bOMFPICKPOCP\x18\x08\x20\
+    \x01(\rR\x0bOMFPICKPOCP\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retc\
     odeb\x06proto3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for DIJJBADACIH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                88 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                88 => {
+                112 => {
                     self.damage = is.read_uint64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DIJJBADACIH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
         }
         if self.damage != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.damage);
+            my_size += ::protobuf::rt::uint64_size(14, self.damage);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DIJJBADACIH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(9, self.avatar_id)?;
+            os.write_uint32(11, self.avatar_id)?;
         }
         if self.damage != 0 {
-            os.write_uint64(11, self.damage)?;
+            os.write_uint64(14, self.damage)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DIJJBADACIH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DIJJBADACIH.proto\"B\n\x0bDIJJBADACIH\x12\x1b\n\tavatar_id\x18\t\
-    \x20\x01(\rR\x08avatarId\x12\x16\n\x06damage\x18\x0b\x20\x01(\x04R\x06da\
+    \n\x11DIJJBADACIH.proto\"B\n\x0bDIJJBADACIH\x12\x1b\n\tavatar_id\x18\x0b\
+    \x20\x01(\rR\x08avatarId\x12\x16\n\x06damage\x18\x0e\x20\x01(\x04R\x06da\
     mageb\x06proto3\
 ";
 

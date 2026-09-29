@@ -79,7 +79,7 @@ impl ::protobuf::Message for BDJEGABKNHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                34 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,10 +94,10 @@ impl ::protobuf::Message for BDJEGABKNHN {
                     is.pop_limit(old_limit);
                     self.ICAOKNPHKGN.insert(key, value);
                 },
-                106 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.PPHEKHLLFHC)?;
                 },
-                104 => {
+                80 => {
                     self.PPHEKHLLFHC.push(is.read_uint32()?);
                 },
                 tag => {
@@ -118,7 +118,7 @@ impl ::protobuf::Message for BDJEGABKNHN {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PPHEKHLLFHC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.PPHEKHLLFHC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -129,12 +129,12 @@ impl ::protobuf::Message for BDJEGABKNHN {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(34)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(13, &self.PPHEKHLLFHC)?;
+        os.write_repeated_packed_uint32(10, &self.PPHEKHLLFHC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,8 +182,8 @@ impl ::protobuf::reflect::ProtobufValue for BDJEGABKNHN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BDJEGABKNHN.proto\"\xb0\x01\n\x0bBDJEGABKNHN\x12?\n\x0bICAOKNPHKGN\
-    \x18\x06\x20\x03(\x0b2\x1d.BDJEGABKNHN.ICAOKNPHKGNEntryR\x0bICAOKNPHKGN\
-    \x12\x20\n\x0bPPHEKHLLFHC\x18\r\x20\x03(\rR\x0bPPHEKHLLFHC\x1a>\n\x10ICA\
+    \x18\x04\x20\x03(\x0b2\x1d.BDJEGABKNHN.ICAOKNPHKGNEntryR\x0bICAOKNPHKGN\
+    \x12\x20\n\x0bPPHEKHLLFHC\x18\n\x20\x03(\rR\x0bPPHEKHLLFHC\x1a>\n\x10ICA\
     OKNPHKGNEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05v\
     alue\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

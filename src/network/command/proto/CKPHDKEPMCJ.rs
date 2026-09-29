@@ -72,7 +72,7 @@ impl ::protobuf::Message for CKPHDKEPMCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                24 => {
                     self.queue_position = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for CKPHDKEPMCJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(3, self.queue_position);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for CKPHDKEPMCJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(14, self.queue_position)?;
+            os.write_uint32(3, self.queue_position)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for CKPHDKEPMCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CKPHDKEPMCJ.proto\"4\n\x0bCKPHDKEPMCJ\x12%\n\x0equeue_position\x18\
-    \x0e\x20\x01(\rR\rqueuePositionb\x06proto3\
+    \x03\x20\x01(\rR\rqueuePositionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

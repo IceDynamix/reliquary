@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartChallengeTierceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartChallengeTierceCsReq.lineup_tierce_list)
-    pub lineup_tierce_list: ::std::vec::Vec<super::LineupTierce::LineupTierce>,
     // @@protoc_insertion_point(field:StartChallengeTierceCsReq.MPKMIKBFEHG)
     pub MPKMIKBFEHG: bool,
-    // @@protoc_insertion_point(field:StartChallengeTierceCsReq.challenge_id)
-    pub challenge_id: u32,
     // @@protoc_insertion_point(field:StartChallengeTierceCsReq.stage_index)
     pub stage_index: u32,
+    // @@protoc_insertion_point(field:StartChallengeTierceCsReq.lineup_tierce_list)
+    pub lineup_tierce_list: ::std::vec::Vec<super::LineupTierce::LineupTierce>,
+    // @@protoc_insertion_point(field:StartChallengeTierceCsReq.challenge_id)
+    pub challenge_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartChallengeTierceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl StartChallengeTierceCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_tierce_list",
-            |m: &StartChallengeTierceCsReq| { &m.lineup_tierce_list },
-            |m: &mut StartChallengeTierceCsReq| { &mut m.lineup_tierce_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MPKMIKBFEHG",
             |m: &StartChallengeTierceCsReq| { &m.MPKMIKBFEHG },
             |m: &mut StartChallengeTierceCsReq| { &mut m.MPKMIKBFEHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &StartChallengeTierceCsReq| { &m.challenge_id },
-            |m: &mut StartChallengeTierceCsReq| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_index",
             |m: &StartChallengeTierceCsReq| { &m.stage_index },
             |m: &mut StartChallengeTierceCsReq| { &mut m.stage_index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_tierce_list",
+            |m: &StartChallengeTierceCsReq| { &m.lineup_tierce_list },
+            |m: &mut StartChallengeTierceCsReq| { &mut m.lineup_tierce_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_id",
+            |m: &StartChallengeTierceCsReq| { &m.challenge_id },
+            |m: &mut StartChallengeTierceCsReq| { &mut m.challenge_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartChallengeTierceCsReq>(
             "StartChallengeTierceCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for StartChallengeTierceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.lineup_tierce_list.push(is.read_message()?);
-                },
-                32 => {
+                40 => {
                     self.MPKMIKBFEHG = is.read_bool()?;
                 },
-                48 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                88 => {
+                80 => {
                     self.stage_index = is.read_uint32()?;
+                },
+                98 => {
+                    self.lineup_tierce_list.push(is.read_message()?);
+                },
+                120 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for StartChallengeTierceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.MPKMIKBFEHG != false {
+            my_size += 1 + 1;
+        }
+        if self.stage_index != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.stage_index);
+        }
         for value in &self.lineup_tierce_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MPKMIKBFEHG != false {
-            my_size += 1 + 1;
-        }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.challenge_id);
-        }
-        if self.stage_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.stage_index);
+            my_size += ::protobuf::rt::uint32_size(15, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for StartChallengeTierceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.lineup_tierce_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.MPKMIKBFEHG != false {
-            os.write_bool(4, self.MPKMIKBFEHG)?;
-        }
-        if self.challenge_id != 0 {
-            os.write_uint32(6, self.challenge_id)?;
+            os.write_bool(5, self.MPKMIKBFEHG)?;
         }
         if self.stage_index != 0 {
-            os.write_uint32(11, self.stage_index)?;
+            os.write_uint32(10, self.stage_index)?;
+        }
+        for v in &self.lineup_tierce_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.challenge_id != 0 {
+            os.write_uint32(15, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for StartChallengeTierceCsReq {
     }
 
     fn clear(&mut self) {
-        self.lineup_tierce_list.clear();
         self.MPKMIKBFEHG = false;
-        self.challenge_id = 0;
         self.stage_index = 0;
+        self.lineup_tierce_list.clear();
+        self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartChallengeTierceCsReq {
         static instance: StartChallengeTierceCsReq = StartChallengeTierceCsReq {
-            lineup_tierce_list: ::std::vec::Vec::new(),
             MPKMIKBFEHG: false,
-            challenge_id: 0,
             stage_index: 0,
+            lineup_tierce_list: ::std::vec::Vec::new(),
+            challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeTierceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fStartChallengeTierceCsReq.proto\x1a\x12LineupTierce.proto\"\xbe\
-    \x01\n\x19StartChallengeTierceCsReq\x12;\n\x12lineup_tierce_list\x18\x01\
-    \x20\x03(\x0b2\r.LineupTierceR\x10lineupTierceList\x12\x20\n\x0bMPKMIKBF\
-    EHG\x18\x04\x20\x01(\x08R\x0bMPKMIKBFEHG\x12!\n\x0cchallenge_id\x18\x06\
-    \x20\x01(\rR\x0bchallengeId\x12\x1f\n\x0bstage_index\x18\x0b\x20\x01(\rR\
-    \nstageIndexb\x06proto3\
+    \x01\n\x19StartChallengeTierceCsReq\x12\x20\n\x0bMPKMIKBFEHG\x18\x05\x20\
+    \x01(\x08R\x0bMPKMIKBFEHG\x12\x1f\n\x0bstage_index\x18\n\x20\x01(\rR\nst\
+    ageIndex\x12;\n\x12lineup_tierce_list\x18\x0c\x20\x03(\x0b2\r.LineupTier\
+    ceR\x10lineupTierceList\x12!\n\x0cchallenge_id\x18\x0f\x20\x01(\rR\x0bch\
+    allengeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

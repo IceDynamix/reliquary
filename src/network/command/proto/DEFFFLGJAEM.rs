@@ -79,10 +79,10 @@ impl ::protobuf::Message for DEFFFLGJAEM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                88 => {
                     self.OKPLPEELPBC = is.read_bool()?;
                 },
-                120 => {
+                112 => {
                     self.DOOACEHOPEE = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DEFFFLGJAEM {
             my_size += 1 + 1;
         }
         if self.DOOACEHOPEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.DOOACEHOPEE);
+            my_size += ::protobuf::rt::uint32_size(14, self.DOOACEHOPEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DEFFFLGJAEM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OKPLPEELPBC != false {
-            os.write_bool(1, self.OKPLPEELPBC)?;
+            os.write_bool(11, self.OKPLPEELPBC)?;
         }
         if self.DOOACEHOPEE != 0 {
-            os.write_uint32(15, self.DOOACEHOPEE)?;
+            os.write_uint32(14, self.DOOACEHOPEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DEFFFLGJAEM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DEFFFLGJAEM.proto\"Q\n\x0bDEFFFLGJAEM\x12\x20\n\x0bOKPLPEELPBC\x18\
-    \x01\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0f\x20\
+    \x0b\x20\x01(\x08R\x0bOKPLPEELPBC\x12\x20\n\x0bDOOACEHOPEE\x18\x0e\x20\
     \x01(\rR\x0bDOOACEHOPEEb\x06proto3\
 ";
 

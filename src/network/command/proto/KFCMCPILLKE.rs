@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum KFCMCPILLKE {
     // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_HBPEDDCOJDB)
     KFCMCPILLKE_HBPEDDCOJDB = 0,
-    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_IPJFJIHGNEO)
-    KFCMCPILLKE_IPJFJIHGNEO = 9116,
-    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_HMHALMFKEIP)
-    KFCMCPILLKE_HMHALMFKEIP = 9119,
-    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_NBNOMBOHFOJ)
-    KFCMCPILLKE_NBNOMBOHFOJ = 9113,
-    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_PFKNIHCCOCP)
-    KFCMCPILLKE_PFKNIHCCOCP = 9112,
-    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_KLHLLOCNPBB)
-    KFCMCPILLKE_KLHLLOCNPBB = 9114,
     // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_MLGNILOBKGJ)
     KFCMCPILLKE_MLGNILOBKGJ = 9117,
+    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_HMHALMFKEIP)
+    KFCMCPILLKE_HMHALMFKEIP = 9112,
+    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_NBNOMBOHFOJ)
+    KFCMCPILLKE_NBNOMBOHFOJ = 9119,
+    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_KLHLLOCNPBB)
+    KFCMCPILLKE_KLHLLOCNPBB = 9113,
+    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_PFKNIHCCOCP)
+    KFCMCPILLKE_PFKNIHCCOCP = 9120,
+    // @@protoc_insertion_point(enum_value:KFCMCPILLKE.KFCMCPILLKE_IPJFJIHGNEO)
+    KFCMCPILLKE_IPJFJIHGNEO = 9114,
 }
 
 impl ::protobuf::Enum for KFCMCPILLKE {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for KFCMCPILLKE {
     fn from_i32(value: i32) -> ::std::option::Option<KFCMCPILLKE> {
         match value {
             0 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_HBPEDDCOJDB),
-            9116 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO),
-            9119 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_HMHALMFKEIP),
-            9113 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_NBNOMBOHFOJ),
-            9112 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP),
-            9114 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB),
             9117 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ),
+            9112 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_HMHALMFKEIP),
+            9119 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_NBNOMBOHFOJ),
+            9113 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB),
+            9120 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP),
+            9114 => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for KFCMCPILLKE {
     fn from_str(str: &str) -> ::std::option::Option<KFCMCPILLKE> {
         match str {
             "KFCMCPILLKE_HBPEDDCOJDB" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_HBPEDDCOJDB),
-            "KFCMCPILLKE_IPJFJIHGNEO" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO),
+            "KFCMCPILLKE_MLGNILOBKGJ" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ),
             "KFCMCPILLKE_HMHALMFKEIP" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_HMHALMFKEIP),
             "KFCMCPILLKE_NBNOMBOHFOJ" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_NBNOMBOHFOJ),
-            "KFCMCPILLKE_PFKNIHCCOCP" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP),
             "KFCMCPILLKE_KLHLLOCNPBB" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB),
-            "KFCMCPILLKE_MLGNILOBKGJ" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ),
+            "KFCMCPILLKE_PFKNIHCCOCP" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP),
+            "KFCMCPILLKE_IPJFJIHGNEO" => ::std::option::Option::Some(KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [KFCMCPILLKE] = &[
         KFCMCPILLKE::KFCMCPILLKE_HBPEDDCOJDB,
-        KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO,
+        KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ,
         KFCMCPILLKE::KFCMCPILLKE_HMHALMFKEIP,
         KFCMCPILLKE::KFCMCPILLKE_NBNOMBOHFOJ,
-        KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP,
         KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB,
-        KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ,
+        KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP,
+        KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for KFCMCPILLKE {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             KFCMCPILLKE::KFCMCPILLKE_HBPEDDCOJDB => 0,
-            KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO => 1,
+            KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ => 1,
             KFCMCPILLKE::KFCMCPILLKE_HMHALMFKEIP => 2,
             KFCMCPILLKE::KFCMCPILLKE_NBNOMBOHFOJ => 3,
-            KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP => 4,
-            KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB => 5,
-            KFCMCPILLKE::KFCMCPILLKE_MLGNILOBKGJ => 6,
+            KFCMCPILLKE::KFCMCPILLKE_KLHLLOCNPBB => 4,
+            KFCMCPILLKE::KFCMCPILLKE_PFKNIHCCOCP => 5,
+            KFCMCPILLKE::KFCMCPILLKE_IPJFJIHGNEO => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl KFCMCPILLKE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KFCMCPILLKE.proto*\xde\x01\n\x0bKFCMCPILLKE\x12\x1b\n\x17KFCMCPILL\
-    KE_HBPEDDCOJDB\x10\0\x12\x1c\n\x17KFCMCPILLKE_IPJFJIHGNEO\x10\x9cG\x12\
-    \x1c\n\x17KFCMCPILLKE_HMHALMFKEIP\x10\x9fG\x12\x1c\n\x17KFCMCPILLKE_NBNO\
-    MBOHFOJ\x10\x99G\x12\x1c\n\x17KFCMCPILLKE_PFKNIHCCOCP\x10\x98G\x12\x1c\n\
-    \x17KFCMCPILLKE_KLHLLOCNPBB\x10\x9aG\x12\x1c\n\x17KFCMCPILLKE_MLGNILOBKG\
-    J\x10\x9dGb\x06proto3\
+    KE_HBPEDDCOJDB\x10\0\x12\x1c\n\x17KFCMCPILLKE_MLGNILOBKGJ\x10\x9dG\x12\
+    \x1c\n\x17KFCMCPILLKE_HMHALMFKEIP\x10\x98G\x12\x1c\n\x17KFCMCPILLKE_NBNO\
+    MBOHFOJ\x10\x9fG\x12\x1c\n\x17KFCMCPILLKE_KLHLLOCNPBB\x10\x99G\x12\x1c\n\
+    \x17KFCMCPILLKE_PFKNIHCCOCP\x10\xa0G\x12\x1c\n\x17KFCMCPILLKE_IPJFJIHGNE\
+    O\x10\x9aGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

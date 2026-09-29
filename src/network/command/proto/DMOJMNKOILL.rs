@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DMOJMNKOILL {
     // message fields
-    // @@protoc_insertion_point(field:DMOJMNKOILL.IFIGFODOPBB)
-    pub IFIGFODOPBB: bool,
     // @@protoc_insertion_point(field:DMOJMNKOILL.AALCCPJCBME)
     pub AALCCPJCBME: bool,
+    // @@protoc_insertion_point(field:DMOJMNKOILL.IFIGFODOPBB)
+    pub IFIGFODOPBB: bool,
     // @@protoc_insertion_point(field:DMOJMNKOILL.item_id)
     pub item_id: u32,
     // @@protoc_insertion_point(field:DMOJMNKOILL.AGBAIFPNKII)
@@ -56,14 +56,14 @@ impl DMOJMNKOILL {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFIGFODOPBB",
-            |m: &DMOJMNKOILL| { &m.IFIGFODOPBB },
-            |m: &mut DMOJMNKOILL| { &mut m.IFIGFODOPBB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AALCCPJCBME",
             |m: &DMOJMNKOILL| { &m.AALCCPJCBME },
             |m: &mut DMOJMNKOILL| { &mut m.AALCCPJCBME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFIGFODOPBB",
+            |m: &DMOJMNKOILL| { &m.IFIGFODOPBB },
+            |m: &mut DMOJMNKOILL| { &mut m.IFIGFODOPBB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for DMOJMNKOILL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.IFIGFODOPBB = is.read_bool()?;
-                },
-                32 => {
                     self.AALCCPJCBME = is.read_bool()?;
                 },
-                80 => {
+                32 => {
+                    self.IFIGFODOPBB = is.read_bool()?;
+                },
+                64 => {
                     self.item_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.AGBAIFPNKII = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for DMOJMNKOILL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IFIGFODOPBB != false {
-            my_size += 1 + 1;
-        }
         if self.AALCCPJCBME != false {
             my_size += 1 + 1;
         }
+        if self.IFIGFODOPBB != false {
+            my_size += 1 + 1;
+        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
         }
         if self.AGBAIFPNKII != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AGBAIFPNKII);
+            my_size += ::protobuf::rt::uint32_size(11, self.AGBAIFPNKII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for DMOJMNKOILL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFIGFODOPBB != false {
-            os.write_bool(3, self.IFIGFODOPBB)?;
-        }
         if self.AALCCPJCBME != false {
-            os.write_bool(4, self.AALCCPJCBME)?;
+            os.write_bool(3, self.AALCCPJCBME)?;
+        }
+        if self.IFIGFODOPBB != false {
+            os.write_bool(4, self.IFIGFODOPBB)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
+            os.write_uint32(8, self.item_id)?;
         }
         if self.AGBAIFPNKII != 0 {
-            os.write_uint32(13, self.AGBAIFPNKII)?;
+            os.write_uint32(11, self.AGBAIFPNKII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for DMOJMNKOILL {
     }
 
     fn clear(&mut self) {
-        self.IFIGFODOPBB = false;
         self.AALCCPJCBME = false;
+        self.IFIGFODOPBB = false;
         self.item_id = 0;
         self.AGBAIFPNKII = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for DMOJMNKOILL {
 
     fn default_instance() -> &'static DMOJMNKOILL {
         static instance: DMOJMNKOILL = DMOJMNKOILL {
-            IFIGFODOPBB: false,
             AALCCPJCBME: false,
+            IFIGFODOPBB: false,
             item_id: 0,
             AGBAIFPNKII: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DMOJMNKOILL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DMOJMNKOILL.proto\"\x8c\x01\n\x0bDMOJMNKOILL\x12\x20\n\x0bIFIGFODO\
-    PBB\x18\x03\x20\x01(\x08R\x0bIFIGFODOPBB\x12\x20\n\x0bAALCCPJCBME\x18\
-    \x04\x20\x01(\x08R\x0bAALCCPJCBME\x12\x17\n\x07item_id\x18\n\x20\x01(\rR\
-    \x06itemId\x12\x20\n\x0bAGBAIFPNKII\x18\r\x20\x01(\rR\x0bAGBAIFPNKIIb\
-    \x06proto3\
+    \n\x11DMOJMNKOILL.proto\"\x8c\x01\n\x0bDMOJMNKOILL\x12\x20\n\x0bAALCCPJC\
+    BME\x18\x03\x20\x01(\x08R\x0bAALCCPJCBME\x12\x20\n\x0bIFIGFODOPBB\x18\
+    \x04\x20\x01(\x08R\x0bIFIGFODOPBB\x12\x17\n\x07item_id\x18\x08\x20\x01(\
+    \rR\x06itemId\x12\x20\n\x0bAGBAIFPNKII\x18\x0b\x20\x01(\rR\x0bAGBAIFPNKI\
+    Ib\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

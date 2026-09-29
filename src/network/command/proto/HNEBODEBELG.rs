@@ -28,10 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HNEBODEBELG {
     // message fields
-    // @@protoc_insertion_point(field:HNEBODEBELG.IEBNOGOOEMO)
-    pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
     // @@protoc_insertion_point(field:HNEBODEBELG.role_star)
     pub role_star: u32,
+    // @@protoc_insertion_point(field:HNEBODEBELG.ININNFJHJCM)
+    pub ININNFJHJCM: u32,
+    // @@protoc_insertion_point(field:HNEBODEBELG.IEBNOGOOEMO)
+    pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
     // special fields
     // @@protoc_insertion_point(special_field:HNEBODEBELG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +51,22 @@ impl HNEBODEBELG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IEBNOGOOEMO",
-            |m: &HNEBODEBELG| { &m.IEBNOGOOEMO },
-            |m: &mut HNEBODEBELG| { &mut m.IEBNOGOOEMO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_star",
             |m: &HNEBODEBELG| { &m.role_star },
             |m: &mut HNEBODEBELG| { &mut m.role_star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ININNFJHJCM",
+            |m: &HNEBODEBELG| { &m.ININNFJHJCM },
+            |m: &mut HNEBODEBELG| { &mut m.ININNFJHJCM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IEBNOGOOEMO",
+            |m: &HNEBODEBELG| { &m.IEBNOGOOEMO },
+            |m: &mut HNEBODEBELG| { &mut m.IEBNOGOOEMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HNEBODEBELG>(
             "HNEBODEBELG",
@@ -79,11 +86,14 @@ impl ::protobuf::Message for HNEBODEBELG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.IEBNOGOOEMO.push(is.read_message()?);
-                },
-                120 => {
+                64 => {
                     self.role_star = is.read_uint32()?;
+                },
+                88 => {
+                    self.ININNFJHJCM = is.read_uint32()?;
+                },
+                122 => {
+                    self.IEBNOGOOEMO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +107,31 @@ impl ::protobuf::Message for HNEBODEBELG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.role_star);
+        }
+        if self.ININNFJHJCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ININNFJHJCM);
+        }
         for value in &self.IEBNOGOOEMO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.role_star);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IEBNOGOOEMO {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.role_star != 0 {
-            os.write_uint32(15, self.role_star)?;
+            os.write_uint32(8, self.role_star)?;
         }
+        if self.ININNFJHJCM != 0 {
+            os.write_uint32(11, self.ININNFJHJCM)?;
+        }
+        for v in &self.IEBNOGOOEMO {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +149,17 @@ impl ::protobuf::Message for HNEBODEBELG {
     }
 
     fn clear(&mut self) {
-        self.IEBNOGOOEMO.clear();
         self.role_star = 0;
+        self.ININNFJHJCM = 0;
+        self.IEBNOGOOEMO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HNEBODEBELG {
         static instance: HNEBODEBELG = HNEBODEBELG {
-            IEBNOGOOEMO: ::std::vec::Vec::new(),
             role_star: 0,
+            ININNFJHJCM: 0,
+            IEBNOGOOEMO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for HNEBODEBELG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HNEBODEBELG.proto\x1a\x11BCCONKJHDJL.proto\"Z\n\x0bHNEBODEBELG\x12\
-    .\n\x0bIEBNOGOOEMO\x18\x06\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMO\
-    \x12\x1b\n\trole_star\x18\x0f\x20\x01(\rR\x08roleStarb\x06proto3\
+    \n\x11HNEBODEBELG.proto\x1a\x11BCCONKJHDJL.proto\"|\n\x0bHNEBODEBELG\x12\
+    \x1b\n\trole_star\x18\x08\x20\x01(\rR\x08roleStar\x12\x20\n\x0bININNFJHJ\
+    CM\x18\x0b\x20\x01(\rR\x0bININNFJHJCM\x12.\n\x0bIEBNOGOOEMO\x18\x0f\x20\
+    \x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

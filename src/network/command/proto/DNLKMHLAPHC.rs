@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DNLKMHLAPHC {
     // message fields
-    // @@protoc_insertion_point(field:DNLKMHLAPHC.LEDNAHCKMHK)
-    pub LEDNAHCKMHK: ::std::vec::Vec<super::LDKMOFFMGEL::LDKMOFFMGEL>,
-    // @@protoc_insertion_point(field:DNLKMHLAPHC.AJFLAHGJELP)
-    pub AJFLAHGJELP: ::std::vec::Vec<super::OKCCLEEPELM::OKCCLEEPELM>,
-    // @@protoc_insertion_point(field:DNLKMHLAPHC.HCPNPDLJKGF)
-    pub HCPNPDLJKGF: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:DNLKMHLAPHC.OOPCPMANCBO)
     pub OOPCPMANCBO: ::protobuf::MessageField<super::OCBPJLLLJGO::OCBPJLLLJGO>,
+    // @@protoc_insertion_point(field:DNLKMHLAPHC.AJFLAHGJELP)
+    pub AJFLAHGJELP: ::std::vec::Vec<super::OKCCLEEPELM::OKCCLEEPELM>,
+    // @@protoc_insertion_point(field:DNLKMHLAPHC.LEDNAHCKMHK)
+    pub LEDNAHCKMHK: ::std::vec::Vec<super::LDKMOFFMGEL::LDKMOFFMGEL>,
+    // @@protoc_insertion_point(field:DNLKMHLAPHC.HCPNPDLJKGF)
+    pub HCPNPDLJKGF: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:DNLKMHLAPHC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl DNLKMHLAPHC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LEDNAHCKMHK",
-            |m: &DNLKMHLAPHC| { &m.LEDNAHCKMHK },
-            |m: &mut DNLKMHLAPHC| { &mut m.LEDNAHCKMHK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OCBPJLLLJGO::OCBPJLLLJGO>(
+            "OOPCPMANCBO",
+            |m: &DNLKMHLAPHC| { &m.OOPCPMANCBO },
+            |m: &mut DNLKMHLAPHC| { &mut m.OOPCPMANCBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "AJFLAHGJELP",
             |m: &DNLKMHLAPHC| { &m.AJFLAHGJELP },
             |m: &mut DNLKMHLAPHC| { &mut m.AJFLAHGJELP },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LEDNAHCKMHK",
+            |m: &DNLKMHLAPHC| { &m.LEDNAHCKMHK },
+            |m: &mut DNLKMHLAPHC| { &mut m.LEDNAHCKMHK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "HCPNPDLJKGF",
             |m: &DNLKMHLAPHC| { &m.HCPNPDLJKGF },
             |m: &mut DNLKMHLAPHC| { &mut m.HCPNPDLJKGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OCBPJLLLJGO::OCBPJLLLJGO>(
-            "OOPCPMANCBO",
-            |m: &DNLKMHLAPHC| { &m.OOPCPMANCBO },
-            |m: &mut DNLKMHLAPHC| { &mut m.OOPCPMANCBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DNLKMHLAPHC>(
             "DNLKMHLAPHC",
@@ -93,13 +93,16 @@ impl ::protobuf::Message for DNLKMHLAPHC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.LEDNAHCKMHK.push(is.read_message()?);
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
                 },
-                58 => {
+                42 => {
                     self.AJFLAHGJELP.push(is.read_message()?);
                 },
                 74 => {
+                    self.LEDNAHCKMHK.push(is.read_message()?);
+                },
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -114,9 +117,6 @@ impl ::protobuf::Message for DNLKMHLAPHC {
                     is.pop_limit(old_limit);
                     self.HCPNPDLJKGF.insert(key, value);
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOPCPMANCBO)?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -129,11 +129,15 @@ impl ::protobuf::Message for DNLKMHLAPHC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LEDNAHCKMHK {
+        if let Some(v) = self.OOPCPMANCBO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.AJFLAHGJELP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.AJFLAHGJELP {
+        for value in &self.LEDNAHCKMHK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -143,34 +147,30 @@ impl ::protobuf::Message for DNLKMHLAPHC {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.OOPCPMANCBO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LEDNAHCKMHK {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
+        if let Some(v) = self.OOPCPMANCBO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         for v in &self.AJFLAHGJELP {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        for v in &self.LEDNAHCKMHK {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for (k, v) in &self.HCPNPDLJKGF {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(74)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if let Some(v) = self.OOPCPMANCBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -188,10 +188,10 @@ impl ::protobuf::Message for DNLKMHLAPHC {
     }
 
     fn clear(&mut self) {
-        self.LEDNAHCKMHK.clear();
-        self.AJFLAHGJELP.clear();
-        self.HCPNPDLJKGF.clear();
         self.OOPCPMANCBO.clear();
+        self.AJFLAHGJELP.clear();
+        self.LEDNAHCKMHK.clear();
+        self.HCPNPDLJKGF.clear();
         self.special_fields.clear();
     }
 
@@ -220,14 +220,14 @@ impl ::protobuf::reflect::ProtobufValue for DNLKMHLAPHC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DNLKMHLAPHC.proto\x1a\x11LDKMOFFMGEL.proto\x1a\x11OCBPJLLLJGO.prot\
-    o\x1a\x11OKCCLEEPELM.proto\"\x9e\x02\n\x0bDNLKMHLAPHC\x12.\n\x0bLEDNAHCK\
-    MHK\x18\x02\x20\x03(\x0b2\x0c.LDKMOFFMGELR\x0bLEDNAHCKMHK\x12.\n\x0bAJFL\
-    AHGJELP\x18\x07\x20\x03(\x0b2\x0c.OKCCLEEPELMR\x0bAJFLAHGJELP\x12?\n\x0b\
-    HCPNPDLJKGF\x18\t\x20\x03(\x0b2\x1d.DNLKMHLAPHC.HCPNPDLJKGFEntryR\x0bHCP\
-    NPDLJKGF\x12.\n\x0bOOPCPMANCBO\x18\r\x20\x01(\x0b2\x0c.OCBPJLLLJGOR\x0bO\
-    OPCPMANCBO\x1a>\n\x10HCPNPDLJKGFEntry\x12\x10\n\x03key\x18\x01\x20\x01(\
-    \rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\
-    \x06proto3\
+    o\x1a\x11OKCCLEEPELM.proto\"\x9e\x02\n\x0bDNLKMHLAPHC\x12.\n\x0bOOPCPMAN\
+    CBO\x18\x01\x20\x01(\x0b2\x0c.OCBPJLLLJGOR\x0bOOPCPMANCBO\x12.\n\x0bAJFL\
+    AHGJELP\x18\x05\x20\x03(\x0b2\x0c.OKCCLEEPELMR\x0bAJFLAHGJELP\x12.\n\x0b\
+    LEDNAHCKMHK\x18\t\x20\x03(\x0b2\x0c.LDKMOFFMGELR\x0bLEDNAHCKMHK\x12?\n\
+    \x0bHCPNPDLJKGF\x18\x0e\x20\x03(\x0b2\x1d.DNLKMHLAPHC.HCPNPDLJKGFEntryR\
+    \x0bHCPNPDLJKGF\x1a>\n\x10HCPNPDLJKGFEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

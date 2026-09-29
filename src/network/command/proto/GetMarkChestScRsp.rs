@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetMarkChestScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                74 => {
                     self.mark_chest_func_info.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GetMarkChestScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         for value in &self.mark_chest_func_info {
             let len = value.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetMarkChestScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         for v in &self.mark_chest_func_info {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetMarkChestScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetMarkChestScRsp.proto\x1a\x17MarkChestFuncInfo.proto\"r\n\x11Get\
-    MarkChestScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12C\
-    \n\x14mark_chest_func_info\x18\x0b\x20\x03(\x0b2\x12.MarkChestFuncInfoR\
+    MarkChestScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12C\
+    \n\x14mark_chest_func_info\x18\t\x20\x03(\x0b2\x12.MarkChestFuncInfoR\
     \x11markChestFuncInfob\x06proto3\
 ";
 

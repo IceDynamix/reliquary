@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GEKNAKDAMJF {
     // message fields
-    // @@protoc_insertion_point(field:GEKNAKDAMJF.DJOBNPIAEJP)
-    pub DJOBNPIAEJP: ::std::vec::Vec<super::IBCNMNCCCBJ::IBCNMNCCCBJ>,
-    // @@protoc_insertion_point(field:GEKNAKDAMJF.challenge_id)
-    pub challenge_id: u32,
-    // @@protoc_insertion_point(field:GEKNAKDAMJF.EGEHLOPFELK)
-    pub EGEHLOPFELK: ::protobuf::MessageField<super::OLOFPKHFPJL::OLOFPKHFPJL>,
     // @@protoc_insertion_point(field:GEKNAKDAMJF.GBMBAHHDONN)
     pub GBMBAHHDONN: ::std::vec::Vec<super::PMMOFOBCINL::PMMOFOBCINL>,
+    // @@protoc_insertion_point(field:GEKNAKDAMJF.EGEHLOPFELK)
+    pub EGEHLOPFELK: ::protobuf::MessageField<super::OLOFPKHFPJL::OLOFPKHFPJL>,
+    // @@protoc_insertion_point(field:GEKNAKDAMJF.challenge_id)
+    pub challenge_id: u32,
+    // @@protoc_insertion_point(field:GEKNAKDAMJF.DJOBNPIAEJP)
+    pub DJOBNPIAEJP: ::std::vec::Vec<super::IBCNMNCCCBJ::IBCNMNCCCBJ>,
     // @@protoc_insertion_point(field:GEKNAKDAMJF.finished_target_list)
     pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GEKNAKDAMJF.FCJGHHILDEK)
@@ -60,24 +60,24 @@ impl GEKNAKDAMJF {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DJOBNPIAEJP",
-            |m: &GEKNAKDAMJF| { &m.DJOBNPIAEJP },
-            |m: &mut GEKNAKDAMJF| { &mut m.DJOBNPIAEJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "challenge_id",
-            |m: &GEKNAKDAMJF| { &m.challenge_id },
-            |m: &mut GEKNAKDAMJF| { &mut m.challenge_id },
+            "GBMBAHHDONN",
+            |m: &GEKNAKDAMJF| { &m.GBMBAHHDONN },
+            |m: &mut GEKNAKDAMJF| { &mut m.GBMBAHHDONN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLOFPKHFPJL::OLOFPKHFPJL>(
             "EGEHLOPFELK",
             |m: &GEKNAKDAMJF| { &m.EGEHLOPFELK },
             |m: &mut GEKNAKDAMJF| { &mut m.EGEHLOPFELK },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "challenge_id",
+            |m: &GEKNAKDAMJF| { &m.challenge_id },
+            |m: &mut GEKNAKDAMJF| { &mut m.challenge_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GBMBAHHDONN",
-            |m: &GEKNAKDAMJF| { &m.GBMBAHHDONN },
-            |m: &mut GEKNAKDAMJF| { &mut m.GBMBAHHDONN },
+            "DJOBNPIAEJP",
+            |m: &GEKNAKDAMJF| { &m.DJOBNPIAEJP },
+            |m: &mut GEKNAKDAMJF| { &mut m.DJOBNPIAEJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_target_list",
@@ -108,24 +108,24 @@ impl ::protobuf::Message for GEKNAKDAMJF {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    self.DJOBNPIAEJP.push(is.read_message()?);
-                },
-                24 => {
-                    self.challenge_id = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EGEHLOPFELK)?;
-                },
-                106 => {
                     self.GBMBAHHDONN.push(is.read_message()?);
                 },
-                2002 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EGEHLOPFELK)?;
+                },
+                48 => {
+                    self.challenge_id = is.read_uint32()?;
+                },
+                106 => {
+                    self.DJOBNPIAEJP.push(is.read_message()?);
+                },
+                1426 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                2000 => {
+                1424 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
-                9696 => {
+                12800 => {
                     self.FCJGHHILDEK = is.read_bool()?;
                 },
                 tag => {
@@ -140,22 +140,22 @@ impl ::protobuf::Message for GEKNAKDAMJF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DJOBNPIAEJP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.challenge_id);
-        }
-        if let Some(v) = self.EGEHLOPFELK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         for value in &self.GBMBAHHDONN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(250, &self.finished_target_list);
+        if let Some(v) = self.EGEHLOPFELK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.challenge_id);
+        }
+        for value in &self.DJOBNPIAEJP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(178, &self.finished_target_list);
         if self.FCJGHHILDEK != false {
             my_size += 2 + 1;
         }
@@ -165,21 +165,21 @@ impl ::protobuf::Message for GEKNAKDAMJF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DJOBNPIAEJP {
+        for v in &self.GBMBAHHDONN {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.challenge_id != 0 {
-            os.write_uint32(3, self.challenge_id)?;
-        }
         if let Some(v) = self.EGEHLOPFELK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        for v in &self.GBMBAHHDONN {
+        if self.challenge_id != 0 {
+            os.write_uint32(6, self.challenge_id)?;
+        }
+        for v in &self.DJOBNPIAEJP {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        os.write_repeated_packed_uint32(250, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(178, &self.finished_target_list)?;
         if self.FCJGHHILDEK != false {
-            os.write_bool(1212, self.FCJGHHILDEK)?;
+            os.write_bool(1600, self.FCJGHHILDEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,10 +198,10 @@ impl ::protobuf::Message for GEKNAKDAMJF {
     }
 
     fn clear(&mut self) {
-        self.DJOBNPIAEJP.clear();
-        self.challenge_id = 0;
-        self.EGEHLOPFELK.clear();
         self.GBMBAHHDONN.clear();
+        self.EGEHLOPFELK.clear();
+        self.challenge_id = 0;
+        self.DJOBNPIAEJP.clear();
         self.finished_target_list.clear();
         self.FCJGHHILDEK = false;
         self.special_fields.clear();
@@ -209,10 +209,10 @@ impl ::protobuf::Message for GEKNAKDAMJF {
 
     fn default_instance() -> &'static GEKNAKDAMJF {
         static instance: GEKNAKDAMJF = GEKNAKDAMJF {
-            DJOBNPIAEJP: ::std::vec::Vec::new(),
-            challenge_id: 0,
-            EGEHLOPFELK: ::protobuf::MessageField::none(),
             GBMBAHHDONN: ::std::vec::Vec::new(),
+            EGEHLOPFELK: ::protobuf::MessageField::none(),
+            challenge_id: 0,
+            DJOBNPIAEJP: ::std::vec::Vec::new(),
             finished_target_list: ::std::vec::Vec::new(),
             FCJGHHILDEK: false,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -240,13 +240,13 @@ impl ::protobuf::reflect::ProtobufValue for GEKNAKDAMJF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEKNAKDAMJF.proto\x1a\x11IBCNMNCCCBJ.proto\x1a\x11OLOFPKHFPJL.prot\
-    o\x1a\x11PMMOFOBCINL.proto\"\x96\x02\n\x0bGEKNAKDAMJF\x12.\n\x0bDJOBNPIA\
-    EJP\x18\x01\x20\x03(\x0b2\x0c.IBCNMNCCCBJR\x0bDJOBNPIAEJP\x12!\n\x0cchal\
-    lenge_id\x18\x03\x20\x01(\rR\x0bchallengeId\x12.\n\x0bEGEHLOPFELK\x18\
-    \x05\x20\x01(\x0b2\x0c.OLOFPKHFPJLR\x0bEGEHLOPFELK\x12.\n\x0bGBMBAHHDONN\
-    \x18\r\x20\x03(\x0b2\x0c.PMMOFOBCINLR\x0bGBMBAHHDONN\x121\n\x14finished_\
-    target_list\x18\xfa\x01\x20\x03(\rR\x12finishedTargetList\x12!\n\x0bFCJG\
-    HHILDEK\x18\xbc\t\x20\x01(\x08R\x0bFCJGHHILDEKb\x06proto3\
+    o\x1a\x11PMMOFOBCINL.proto\"\x96\x02\n\x0bGEKNAKDAMJF\x12.\n\x0bGBMBAHHD\
+    ONN\x18\x01\x20\x03(\x0b2\x0c.PMMOFOBCINLR\x0bGBMBAHHDONN\x12.\n\x0bEGEH\
+    LOPFELK\x18\x02\x20\x01(\x0b2\x0c.OLOFPKHFPJLR\x0bEGEHLOPFELK\x12!\n\x0c\
+    challenge_id\x18\x06\x20\x01(\rR\x0bchallengeId\x12.\n\x0bDJOBNPIAEJP\
+    \x18\r\x20\x03(\x0b2\x0c.IBCNMNCCCBJR\x0bDJOBNPIAEJP\x121\n\x14finished_\
+    target_list\x18\xb2\x01\x20\x03(\rR\x12finishedTargetList\x12!\n\x0bFCJG\
+    HHILDEK\x18\xc0\x0c\x20\x01(\x08R\x0bFCJGHHILDEKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

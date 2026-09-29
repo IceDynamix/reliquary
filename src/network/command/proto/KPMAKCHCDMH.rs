@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KPMAKCHCDMH {
     // message fields
-    // @@protoc_insertion_point(field:KPMAKCHCDMH.LNOCOOCMNCI)
-    pub LNOCOOCMNCI: u32,
-    // @@protoc_insertion_point(field:KPMAKCHCDMH.is_taken_reward)
-    pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:KPMAKCHCDMH.BAONIPOKCPL)
     pub BAONIPOKCPL: bool,
     // @@protoc_insertion_point(field:KPMAKCHCDMH.panel_id)
     pub panel_id: u32,
+    // @@protoc_insertion_point(field:KPMAKCHCDMH.is_taken_reward)
+    pub is_taken_reward: bool,
+    // @@protoc_insertion_point(field:KPMAKCHCDMH.LNOCOOCMNCI)
+    pub LNOCOOCMNCI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KPMAKCHCDMH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl KPMAKCHCDMH {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNOCOOCMNCI",
-            |m: &KPMAKCHCDMH| { &m.LNOCOOCMNCI },
-            |m: &mut KPMAKCHCDMH| { &mut m.LNOCOOCMNCI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_taken_reward",
-            |m: &KPMAKCHCDMH| { &m.is_taken_reward },
-            |m: &mut KPMAKCHCDMH| { &mut m.is_taken_reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BAONIPOKCPL",
             |m: &KPMAKCHCDMH| { &m.BAONIPOKCPL },
             |m: &mut KPMAKCHCDMH| { &mut m.BAONIPOKCPL },
@@ -74,6 +64,16 @@ impl KPMAKCHCDMH {
             "panel_id",
             |m: &KPMAKCHCDMH| { &m.panel_id },
             |m: &mut KPMAKCHCDMH| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_taken_reward",
+            |m: &KPMAKCHCDMH| { &m.is_taken_reward },
+            |m: &mut KPMAKCHCDMH| { &mut m.is_taken_reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNOCOOCMNCI",
+            |m: &KPMAKCHCDMH| { &m.LNOCOOCMNCI },
+            |m: &mut KPMAKCHCDMH| { &mut m.LNOCOOCMNCI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KPMAKCHCDMH>(
             "KPMAKCHCDMH",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for KPMAKCHCDMH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LNOCOOCMNCI = is.read_uint32()?;
-                },
-                48 => {
-                    self.is_taken_reward = is.read_bool()?;
-                },
                 64 => {
                     self.BAONIPOKCPL = is.read_bool()?;
                 },
-                96 => {
+                72 => {
                     self.panel_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.is_taken_reward = is.read_bool()?;
+                },
+                120 => {
+                    self.LNOCOOCMNCI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for KPMAKCHCDMH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LNOCOOCMNCI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LNOCOOCMNCI);
-        }
-        if self.is_taken_reward != false {
-            my_size += 1 + 1;
-        }
         if self.BAONIPOKCPL != false {
             my_size += 1 + 1;
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.panel_id);
+        }
+        if self.is_taken_reward != false {
+            my_size += 1 + 1;
+        }
+        if self.LNOCOOCMNCI != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LNOCOOCMNCI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for KPMAKCHCDMH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LNOCOOCMNCI != 0 {
-            os.write_uint32(1, self.LNOCOOCMNCI)?;
-        }
-        if self.is_taken_reward != false {
-            os.write_bool(6, self.is_taken_reward)?;
-        }
         if self.BAONIPOKCPL != false {
             os.write_bool(8, self.BAONIPOKCPL)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(12, self.panel_id)?;
+            os.write_uint32(9, self.panel_id)?;
+        }
+        if self.is_taken_reward != false {
+            os.write_bool(13, self.is_taken_reward)?;
+        }
+        if self.LNOCOOCMNCI != 0 {
+            os.write_uint32(15, self.LNOCOOCMNCI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for KPMAKCHCDMH {
     }
 
     fn clear(&mut self) {
-        self.LNOCOOCMNCI = 0;
-        self.is_taken_reward = false;
         self.BAONIPOKCPL = false;
         self.panel_id = 0;
+        self.is_taken_reward = false;
+        self.LNOCOOCMNCI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KPMAKCHCDMH {
         static instance: KPMAKCHCDMH = KPMAKCHCDMH {
-            LNOCOOCMNCI: 0,
-            is_taken_reward: false,
             BAONIPOKCPL: false,
             panel_id: 0,
+            is_taken_reward: false,
+            LNOCOOCMNCI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for KPMAKCHCDMH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KPMAKCHCDMH.proto\"\x94\x01\n\x0bKPMAKCHCDMH\x12\x20\n\x0bLNOCOOCM\
-    NCI\x18\x01\x20\x01(\rR\x0bLNOCOOCMNCI\x12&\n\x0fis_taken_reward\x18\x06\
-    \x20\x01(\x08R\risTakenReward\x12\x20\n\x0bBAONIPOKCPL\x18\x08\x20\x01(\
-    \x08R\x0bBAONIPOKCPL\x12\x19\n\x08panel_id\x18\x0c\x20\x01(\rR\x07panelI\
-    db\x06proto3\
+    \n\x11KPMAKCHCDMH.proto\"\x94\x01\n\x0bKPMAKCHCDMH\x12\x20\n\x0bBAONIPOK\
+    CPL\x18\x08\x20\x01(\x08R\x0bBAONIPOKCPL\x12\x19\n\x08panel_id\x18\t\x20\
+    \x01(\rR\x07panelId\x12&\n\x0fis_taken_reward\x18\r\x20\x01(\x08R\risTak\
+    enReward\x12\x20\n\x0bLNOCOOCMNCI\x18\x0f\x20\x01(\rR\x0bLNOCOOCMNCIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

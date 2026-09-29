@@ -45,56 +45,7 @@ impl ChallengeBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffInfo story_info = 12;
-
-    pub fn story_info(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(ref v)) => v,
-            _ => <super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_story_info(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_story_info(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_story_info(&mut self, v: super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo) {
-        self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_story_info(&mut self) -> &mut super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        if let ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_story_info(&mut self) -> super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        if self.has_story_info() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()
-        }
-    }
-
-    // .ChallengeBossBuffInfo boss_info = 6;
+    // .ChallengeBossBuffInfo boss_info = 5;
 
     pub fn boss_info(&self) -> &super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
         match self.KKNBOACNCON {
@@ -143,22 +94,71 @@ impl ChallengeBuffInfo {
         }
     }
 
+    // .ChallengeStoryBuffInfo story_info = 13;
+
+    pub fn story_info(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(ref v)) => v,
+            _ => <super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_story_info(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_story_info(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_story_info(&mut self, v: super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo) {
+        self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_story_info(&mut self) -> &mut super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        if let ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_story_info(&mut self) -> super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
+        if self.has_story_info() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo>(
-            "story_info",
-            ChallengeBuffInfo::has_story_info,
-            ChallengeBuffInfo::story_info,
-            ChallengeBuffInfo::mut_story_info,
-            ChallengeBuffInfo::set_story_info,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeBossBuffInfo::ChallengeBossBuffInfo>(
             "boss_info",
             ChallengeBuffInfo::has_boss_info,
             ChallengeBuffInfo::boss_info,
             ChallengeBuffInfo::mut_boss_info,
             ChallengeBuffInfo::set_boss_info,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo>(
+            "story_info",
+            ChallengeBuffInfo::has_story_info,
+            ChallengeBuffInfo::story_info,
+            ChallengeBuffInfo::mut_story_info,
+            ChallengeBuffInfo::set_story_info,
         ));
         oneofs.push(challenge_buff_info::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBuffInfo>(
@@ -179,11 +179,11 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(is.read_message()?));
-                },
-                50 => {
+                42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::BossInfo(is.read_message()?));
+                },
+                106 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(challenge_buff_info::KKNBOACNCON::StoryInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -199,11 +199,11 @@ impl ::protobuf::Message for ChallengeBuffInfo {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &challenge_buff_info::KKNBOACNCON::StoryInfo(ref v) => {
+                &challenge_buff_info::KKNBOACNCON::BossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &challenge_buff_info::KKNBOACNCON::BossInfo(ref v) => {
+                &challenge_buff_info::KKNBOACNCON::StoryInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -217,11 +217,11 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &challenge_buff_info::KKNBOACNCON::StoryInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
                 &challenge_buff_info::KKNBOACNCON::BossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+                },
+                &challenge_buff_info::KKNBOACNCON::StoryInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -280,10 +280,10 @@ pub mod challenge_buff_info {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:ChallengeBuffInfo.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.story_info)
-        StoryInfo(super::super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo),
         // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.boss_info)
         BossInfo(super::super::ChallengeBossBuffInfo::ChallengeBossBuffInfo),
+        // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.story_info)
+        StoryInfo(super::super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -305,10 +305,10 @@ pub mod challenge_buff_info {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBuffInfo.proto\x1a\x1bChallengeBossBuffInfo.proto\x1a\x1c\
-    ChallengeStoryBuffInfo.proto\"\x93\x01\n\x11ChallengeBuffInfo\x128\n\nst\
-    ory_info\x18\x0c\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
-    \x125\n\tboss_info\x18\x06\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
-    \x08bossInfoB\r\n\x0bKKNBOACNCONb\x06proto3\
+    ChallengeStoryBuffInfo.proto\"\x93\x01\n\x11ChallengeBuffInfo\x125\n\tbo\
+    ss_info\x18\x05\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\x08bossInfo\
+    \x128\n\nstory_info\x18\r\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\t\
+    storyInfoB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
