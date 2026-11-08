@@ -71,7 +71,8 @@ pub fn derive(input: TokenStream) -> TokenStream {
             pub fn get(&self, #(#get_method_args),*) -> Option<&#struct_name> {
                 let entry = self.0.iter().find(|config| #(#matching)&&*);
                 if entry.is_none() {
-                    tracing::warn!(#warning);
+                    // Callers use lookups to ask "is this a ...?", so a miss is routine
+                    tracing::debug!(#warning);
                 }
                 entry
             }
