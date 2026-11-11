@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ODNBCBEINNC {
     // message fields
-    // @@protoc_insertion_point(field:ODNBCBEINNC.room_id)
-    pub room_id: u32,
     // @@protoc_insertion_point(field:ODNBCBEINNC.status)
     pub status: ::protobuf::EnumOrUnknown<super::IIAOGEIADGA::IIAOGEIADGA>,
-    // @@protoc_insertion_point(field:ODNBCBEINNC.LHLKJIDFLIN)
-    pub LHLKJIDFLIN: u32,
     // @@protoc_insertion_point(field:ODNBCBEINNC.EEPIDJJJMAH)
     pub EEPIDJJJMAH: u32,
     // @@protoc_insertion_point(field:ODNBCBEINNC.GHEHGIOAGDG)
     pub GHEHGIOAGDG: u32,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.room_id)
+    pub room_id: u32,
+    // @@protoc_insertion_point(field:ODNBCBEINNC.LHLKJIDFLIN)
+    pub LHLKJIDFLIN: u32,
     // message oneof groups
     pub BHGKHELCPGO: ::std::option::Option<odnbcbeinnc::BHGKHELCPGO>,
     // special fields
@@ -56,7 +56,7 @@ impl ODNBCBEINNC {
         ::std::default::Default::default()
     }
 
-    // .ELHLCFBPAMO FIADMEPDAOG = 3;
+    // .ELHLCFBPAMO FIADMEPDAOG = 4;
 
     pub fn FIADMEPDAOG(&self) -> &super::ELHLCFBPAMO::ELHLCFBPAMO {
         match self.BHGKHELCPGO {
@@ -109,19 +109,9 @@ impl ODNBCBEINNC {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "room_id",
-            |m: &ODNBCBEINNC| { &m.room_id },
-            |m: &mut ODNBCBEINNC| { &mut m.room_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &ODNBCBEINNC| { &m.status },
             |m: &mut ODNBCBEINNC| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHLKJIDFLIN",
-            |m: &ODNBCBEINNC| { &m.LHLKJIDFLIN },
-            |m: &mut ODNBCBEINNC| { &mut m.LHLKJIDFLIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EEPIDJJJMAH",
@@ -132,6 +122,16 @@ impl ODNBCBEINNC {
             "GHEHGIOAGDG",
             |m: &ODNBCBEINNC| { &m.GHEHGIOAGDG },
             |m: &mut ODNBCBEINNC| { &mut m.GHEHGIOAGDG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "room_id",
+            |m: &ODNBCBEINNC| { &m.room_id },
+            |m: &mut ODNBCBEINNC| { &mut m.room_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHLKJIDFLIN",
+            |m: &ODNBCBEINNC| { &m.LHLKJIDFLIN },
+            |m: &mut ODNBCBEINNC| { &mut m.LHLKJIDFLIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ELHLCFBPAMO::ELHLCFBPAMO>(
             "FIADMEPDAOG",
@@ -159,22 +159,22 @@ impl ::protobuf::Message for ODNBCBEINNC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.room_id = is.read_uint32()?;
-                },
-                40 => {
+                16 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.LHLKJIDFLIN = is.read_uint32()?;
-                },
-                80 => {
+                24 => {
                     self.EEPIDJJJMAH = is.read_uint32()?;
                 },
-                120 => {
+                56 => {
                     self.GHEHGIOAGDG = is.read_uint32()?;
                 },
-                26 => {
+                96 => {
+                    self.room_id = is.read_uint32()?;
+                },
+                104 => {
+                    self.LHLKJIDFLIN = is.read_uint32()?;
+                },
+                34 => {
                     self.BHGKHELCPGO = ::std::option::Option::Some(odnbcbeinnc::BHGKHELCPGO::FIADMEPDAOG(is.read_message()?));
                 },
                 tag => {
@@ -189,20 +189,20 @@ impl ::protobuf::Message for ODNBCBEINNC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.room_id);
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
-        }
-        if self.LHLKJIDFLIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.LHLKJIDFLIN);
+            my_size += ::protobuf::rt::int32_size(2, self.status.value());
         }
         if self.EEPIDJJJMAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.EEPIDJJJMAH);
+            my_size += ::protobuf::rt::uint32_size(3, self.EEPIDJJJMAH);
         }
         if self.GHEHGIOAGDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GHEHGIOAGDG);
+            my_size += ::protobuf::rt::uint32_size(7, self.GHEHGIOAGDG);
+        }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.room_id);
+        }
+        if self.LHLKJIDFLIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LHLKJIDFLIN);
         }
         if let ::std::option::Option::Some(ref v) = self.BHGKHELCPGO {
             match v {
@@ -218,25 +218,25 @@ impl ::protobuf::Message for ODNBCBEINNC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.room_id != 0 {
-            os.write_uint32(1, self.room_id)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
-        }
-        if self.LHLKJIDFLIN != 0 {
-            os.write_uint32(9, self.LHLKJIDFLIN)?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.EEPIDJJJMAH != 0 {
-            os.write_uint32(10, self.EEPIDJJJMAH)?;
+            os.write_uint32(3, self.EEPIDJJJMAH)?;
         }
         if self.GHEHGIOAGDG != 0 {
-            os.write_uint32(15, self.GHEHGIOAGDG)?;
+            os.write_uint32(7, self.GHEHGIOAGDG)?;
+        }
+        if self.room_id != 0 {
+            os.write_uint32(12, self.room_id)?;
+        }
+        if self.LHLKJIDFLIN != 0 {
+            os.write_uint32(13, self.LHLKJIDFLIN)?;
         }
         if let ::std::option::Option::Some(ref v) = self.BHGKHELCPGO {
             match v {
                 &odnbcbeinnc::BHGKHELCPGO::FIADMEPDAOG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -257,22 +257,22 @@ impl ::protobuf::Message for ODNBCBEINNC {
     }
 
     fn clear(&mut self) {
-        self.room_id = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::IIAOGEIADGA::IIAOGEIADGA::IIAOGEIADGA_NLCDGIPGFDJ);
-        self.LHLKJIDFLIN = 0;
         self.EEPIDJJJMAH = 0;
         self.GHEHGIOAGDG = 0;
+        self.room_id = 0;
+        self.LHLKJIDFLIN = 0;
         self.BHGKHELCPGO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ODNBCBEINNC {
         static instance: ODNBCBEINNC = ODNBCBEINNC {
-            room_id: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            LHLKJIDFLIN: 0,
             EEPIDJJJMAH: 0,
             GHEHGIOAGDG: 0,
+            room_id: 0,
+            LHLKJIDFLIN: 0,
             BHGKHELCPGO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -327,11 +327,11 @@ pub mod odnbcbeinnc {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ODNBCBEINNC.proto\x1a\x11ELHLCFBPAMO.proto\x1a\x11IIAOGEIADGA.prot\
-    o\"\xf3\x01\n\x0bODNBCBEINNC\x12\x17\n\x07room_id\x18\x01\x20\x01(\rR\
-    \x06roomId\x12$\n\x06status\x18\x05\x20\x01(\x0e2\x0c.IIAOGEIADGAR\x06st\
-    atus\x12\x20\n\x0bLHLKJIDFLIN\x18\t\x20\x01(\rR\x0bLHLKJIDFLIN\x12\x20\n\
-    \x0bEEPIDJJJMAH\x18\n\x20\x01(\rR\x0bEEPIDJJJMAH\x12\x20\n\x0bGHEHGIOAGD\
-    G\x18\x0f\x20\x01(\rR\x0bGHEHGIOAGDG\x120\n\x0bFIADMEPDAOG\x18\x03\x20\
+    o\"\xf3\x01\n\x0bODNBCBEINNC\x12$\n\x06status\x18\x02\x20\x01(\x0e2\x0c.\
+    IIAOGEIADGAR\x06status\x12\x20\n\x0bEEPIDJJJMAH\x18\x03\x20\x01(\rR\x0bE\
+    EPIDJJJMAH\x12\x20\n\x0bGHEHGIOAGDG\x18\x07\x20\x01(\rR\x0bGHEHGIOAGDG\
+    \x12\x17\n\x07room_id\x18\x0c\x20\x01(\rR\x06roomId\x12\x20\n\x0bLHLKJID\
+    FLIN\x18\r\x20\x01(\rR\x0bLHLKJIDFLIN\x120\n\x0bFIADMEPDAOG\x18\x04\x20\
     \x01(\x0b2\x0c.ELHLCFBPAMOH\0R\x0bFIADMEPDAOGB\r\n\x0bBHGKHELCPGOb\x06pr\
     oto3\
 ";

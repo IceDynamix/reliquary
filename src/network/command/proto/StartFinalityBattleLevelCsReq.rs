@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartFinalityBattleLevelCsReq {
     // message fields
+    // @@protoc_insertion_point(field:StartFinalityBattleLevelCsReq.level_id)
+    pub level_id: u32,
     // @@protoc_insertion_point(field:StartFinalityBattleLevelCsReq.IIDCAINNELL)
     pub IIDCAINNELL: ::std::vec::Vec<super::KPNHGDGLICN::KPNHGDGLICN>,
     // @@protoc_insertion_point(field:StartFinalityBattleLevelCsReq.JGACJDGNBAC)
     pub JGACJDGNBAC: u32,
-    // @@protoc_insertion_point(field:StartFinalityBattleLevelCsReq.level_id)
-    pub level_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartFinalityBattleLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl StartFinalityBattleLevelCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_id",
+            |m: &StartFinalityBattleLevelCsReq| { &m.level_id },
+            |m: &mut StartFinalityBattleLevelCsReq| { &mut m.level_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IIDCAINNELL",
             |m: &StartFinalityBattleLevelCsReq| { &m.IIDCAINNELL },
@@ -62,11 +67,6 @@ impl StartFinalityBattleLevelCsReq {
             "JGACJDGNBAC",
             |m: &StartFinalityBattleLevelCsReq| { &m.JGACJDGNBAC },
             |m: &mut StartFinalityBattleLevelCsReq| { &mut m.JGACJDGNBAC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level_id",
-            |m: &StartFinalityBattleLevelCsReq| { &m.level_id },
-            |m: &mut StartFinalityBattleLevelCsReq| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartFinalityBattleLevelCsReq>(
             "StartFinalityBattleLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartFinalityBattleLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.IIDCAINNELL.push(is.read_message()?);
-                },
-                40 => {
-                    self.JGACJDGNBAC = is.read_uint32()?;
-                },
                 64 => {
                     self.level_id = is.read_uint32()?;
+                },
+                74 => {
+                    self.IIDCAINNELL.push(is.read_message()?);
+                },
+                88 => {
+                    self.JGACJDGNBAC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for StartFinalityBattleLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.level_id);
+        }
         for value in &self.IIDCAINNELL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.JGACJDGNBAC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JGACJDGNBAC);
-        }
-        if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.JGACJDGNBAC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for StartFinalityBattleLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IIDCAINNELL {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if self.JGACJDGNBAC != 0 {
-            os.write_uint32(5, self.JGACJDGNBAC)?;
-        }
         if self.level_id != 0 {
             os.write_uint32(8, self.level_id)?;
+        }
+        for v in &self.IIDCAINNELL {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        if self.JGACJDGNBAC != 0 {
+            os.write_uint32(11, self.JGACJDGNBAC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for StartFinalityBattleLevelCsReq {
     }
 
     fn clear(&mut self) {
+        self.level_id = 0;
         self.IIDCAINNELL.clear();
         self.JGACJDGNBAC = 0;
-        self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartFinalityBattleLevelCsReq {
         static instance: StartFinalityBattleLevelCsReq = StartFinalityBattleLevelCsReq {
+            level_id: 0,
             IIDCAINNELL: ::std::vec::Vec::new(),
             JGACJDGNBAC: 0,
-            level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for StartFinalityBattleLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#StartFinalityBattleLevelCsReq.proto\x1a\x11KPNHGDGLICN.proto\"\x8c\
-    \x01\n\x1dStartFinalityBattleLevelCsReq\x12.\n\x0bIIDCAINNELL\x18\x04\
-    \x20\x03(\x0b2\x0c.KPNHGDGLICNR\x0bIIDCAINNELL\x12\x20\n\x0bJGACJDGNBAC\
-    \x18\x05\x20\x01(\rR\x0bJGACJDGNBAC\x12\x19\n\x08level_id\x18\x08\x20\
-    \x01(\rR\x07levelIdb\x06proto3\
+    \x01\n\x1dStartFinalityBattleLevelCsReq\x12\x19\n\x08level_id\x18\x08\
+    \x20\x01(\rR\x07levelId\x12.\n\x0bIIDCAINNELL\x18\t\x20\x03(\x0b2\x0c.KP\
+    NHGDGLICNR\x0bIIDCAINNELL\x12\x20\n\x0bJGACJDGNBAC\x18\x0b\x20\x01(\rR\
+    \x0bJGACJDGNBACb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

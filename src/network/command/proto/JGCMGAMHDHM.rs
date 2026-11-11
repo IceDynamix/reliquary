@@ -79,10 +79,10 @@ impl ::protobuf::Message for JGCMGAMHDHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                40 => {
                     self.PGGDEHKKINP = is.read_uint32()?;
                 },
-                48 => {
+                56 => {
                     self.EDOGNFCCGPF = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JGCMGAMHDHM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.PGGDEHKKINP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PGGDEHKKINP);
+            my_size += ::protobuf::rt::uint32_size(5, self.PGGDEHKKINP);
         }
         if self.EDOGNFCCGPF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.EDOGNFCCGPF);
+            my_size += ::protobuf::rt::uint32_size(7, self.EDOGNFCCGPF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JGCMGAMHDHM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.PGGDEHKKINP != 0 {
-            os.write_uint32(1, self.PGGDEHKKINP)?;
+            os.write_uint32(5, self.PGGDEHKKINP)?;
         }
         if self.EDOGNFCCGPF != 0 {
-            os.write_uint32(6, self.EDOGNFCCGPF)?;
+            os.write_uint32(7, self.EDOGNFCCGPF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for JGCMGAMHDHM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGCMGAMHDHM.proto\"Q\n\x0bJGCMGAMHDHM\x12\x20\n\x0bPGGDEHKKINP\x18\
-    \x01\x20\x01(\rR\x0bPGGDEHKKINP\x12\x20\n\x0bEDOGNFCCGPF\x18\x06\x20\x01\
+    \x05\x20\x01(\rR\x0bPGGDEHKKINP\x12\x20\n\x0bEDOGNFCCGPF\x18\x07\x20\x01\
     (\rR\x0bEDOGNFCCGPFb\x06proto3\
 ";
 

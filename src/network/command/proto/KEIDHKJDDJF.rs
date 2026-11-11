@@ -32,14 +32,12 @@ pub struct KEIDHKJDDJF {
     pub JPDKFADFGBD: bool,
     // @@protoc_insertion_point(field:KEIDHKJDDJF.JDJHFJKPLCN)
     pub JDJHFJKPLCN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KEIDHKJDDJF.EKCLGFIPDKL)
-    pub EKCLGFIPDKL: u32,
+    // @@protoc_insertion_point(field:KEIDHKJDDJF.end_time)
+    pub end_time: i64,
     // @@protoc_insertion_point(field:KEIDHKJDDJF.FODBOPBEALE)
     pub FODBOPBEALE: ::std::vec::Vec<super::OAAKAIBPENC::OAAKAIBPENC>,
     // @@protoc_insertion_point(field:KEIDHKJDDJF.AKGBJPNGLKP)
     pub AKGBJPNGLKP: ::std::vec::Vec<super::BKLPIMMNFOC::BKLPIMMNFOC>,
-    // @@protoc_insertion_point(field:KEIDHKJDDJF.NFGFFPCCPFJ)
-    pub NFGFFPCCPFJ: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:KEIDHKJDDJF.FMJMODJNKGA)
     pub FMJMODJNKGA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KEIDHKJDDJF.JJDDMGHOKDL)
@@ -61,7 +59,7 @@ impl KEIDHKJDDJF {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(8);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JPDKFADFGBD",
@@ -74,9 +72,9 @@ impl KEIDHKJDDJF {
             |m: &mut KEIDHKJDDJF| { &mut m.JDJHFJKPLCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKCLGFIPDKL",
-            |m: &KEIDHKJDDJF| { &m.EKCLGFIPDKL },
-            |m: &mut KEIDHKJDDJF| { &mut m.EKCLGFIPDKL },
+            "end_time",
+            |m: &KEIDHKJDDJF| { &m.end_time },
+            |m: &mut KEIDHKJDDJF| { &mut m.end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FODBOPBEALE",
@@ -87,11 +85,6 @@ impl KEIDHKJDDJF {
             "AKGBJPNGLKP",
             |m: &KEIDHKJDDJF| { &m.AKGBJPNGLKP },
             |m: &mut KEIDHKJDDJF| { &mut m.AKGBJPNGLKP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFGFFPCCPFJ",
-            |m: &KEIDHKJDDJF| { &m.NFGFFPCCPFJ },
-            |m: &mut KEIDHKJDDJF| { &mut m.NFGFFPCCPFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FMJMODJNKGA",
@@ -131,16 +124,13 @@ impl ::protobuf::Message for KEIDHKJDDJF {
                     self.JDJHFJKPLCN.push(is.read_uint32()?);
                 },
                 24 => {
-                    self.EKCLGFIPDKL = is.read_uint32()?;
+                    self.end_time = is.read_int64()?;
                 },
                 74 => {
                     self.FODBOPBEALE.push(is.read_message()?);
                 },
                 82 => {
                     self.AKGBJPNGLKP.push(is.read_message()?);
-                },
-                90 => {
-                    self.NFGFFPCCPFJ.push(is.read_message()?);
                 },
                 98 => {
                     is.read_repeated_packed_uint32_into(&mut self.FMJMODJNKGA)?;
@@ -167,18 +157,14 @@ impl ::protobuf::Message for KEIDHKJDDJF {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.JDJHFJKPLCN);
-        if self.EKCLGFIPDKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.EKCLGFIPDKL);
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.end_time);
         }
         for value in &self.FODBOPBEALE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.AKGBJPNGLKP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.NFGFFPCCPFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -196,17 +182,14 @@ impl ::protobuf::Message for KEIDHKJDDJF {
             os.write_bool(1, self.JPDKFADFGBD)?;
         }
         os.write_repeated_packed_uint32(2, &self.JDJHFJKPLCN)?;
-        if self.EKCLGFIPDKL != 0 {
-            os.write_uint32(3, self.EKCLGFIPDKL)?;
+        if self.end_time != 0 {
+            os.write_int64(3, self.end_time)?;
         }
         for v in &self.FODBOPBEALE {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for v in &self.AKGBJPNGLKP {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
-        for v in &self.NFGFFPCCPFJ {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_repeated_packed_uint32(12, &self.FMJMODJNKGA)?;
         if self.JJDDMGHOKDL != 0 {
@@ -231,10 +214,9 @@ impl ::protobuf::Message for KEIDHKJDDJF {
     fn clear(&mut self) {
         self.JPDKFADFGBD = false;
         self.JDJHFJKPLCN.clear();
-        self.EKCLGFIPDKL = 0;
+        self.end_time = 0;
         self.FODBOPBEALE.clear();
         self.AKGBJPNGLKP.clear();
-        self.NFGFFPCCPFJ.clear();
         self.FMJMODJNKGA.clear();
         self.JJDDMGHOKDL = 0;
         self.special_fields.clear();
@@ -244,10 +226,9 @@ impl ::protobuf::Message for KEIDHKJDDJF {
         static instance: KEIDHKJDDJF = KEIDHKJDDJF {
             JPDKFADFGBD: false,
             JDJHFJKPLCN: ::std::vec::Vec::new(),
-            EKCLGFIPDKL: 0,
+            end_time: 0,
             FODBOPBEALE: ::std::vec::Vec::new(),
             AKGBJPNGLKP: ::std::vec::Vec::new(),
-            NFGFFPCCPFJ: ::std::vec::Vec::new(),
             FMJMODJNKGA: ::std::vec::Vec::new(),
             JJDDMGHOKDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -274,16 +255,14 @@ impl ::protobuf::reflect::ProtobufValue for KEIDHKJDDJF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KEIDHKJDDJF.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11BKLPIMMNFOC.prot\
-    o\x1a\x11OAAKAIBPENC.proto\"\xc7\x02\n\x0bKEIDHKJDDJF\x12\x20\n\x0bJPDKF\
-    ADFGBD\x18\x01\x20\x01(\x08R\x0bJPDKFADFGBD\x12\x20\n\x0bJDJHFJKPLCN\x18\
-    \x02\x20\x03(\rR\x0bJDJHFJKPLCN\x12\x20\n\x0bEKCLGFIPDKL\x18\x03\x20\x01\
-    (\rR\x0bEKCLGFIPDKL\x12.\n\x0bFODBOPBEALE\x18\t\x20\x03(\x0b2\x0c.OAAKAI\
-    BPENCR\x0bFODBOPBEALE\x12.\n\x0bAKGBJPNGLKP\x18\n\x20\x03(\x0b2\x0c.BKLP\
-    IMMNFOCR\x0bAKGBJPNGLKP\x12.\n\x0bNFGFFPCCPFJ\x18\x0b\x20\x03(\x0b2\x0c.\
-    APAMFCKFHLLR\x0bNFGFFPCCPFJ\x12\x20\n\x0bFMJMODJNKGA\x18\x0c\x20\x03(\rR\
-    \x0bFMJMODJNKGA\x12\x20\n\x0bJJDDMGHOKDL\x18\r\x20\x01(\rR\x0bJJDDMGHOKD\
-    Lb\x06proto3\
+    \n\x11KEIDHKJDDJF.proto\x1a\x11BKLPIMMNFOC.proto\x1a\x11OAAKAIBPENC.prot\
+    o\"\x90\x02\n\x0bKEIDHKJDDJF\x12\x20\n\x0bJPDKFADFGBD\x18\x01\x20\x01(\
+    \x08R\x0bJPDKFADFGBD\x12\x20\n\x0bJDJHFJKPLCN\x18\x02\x20\x03(\rR\x0bJDJ\
+    HFJKPLCN\x12\x19\n\x08end_time\x18\x03\x20\x01(\x03R\x07endTime\x12.\n\
+    \x0bFODBOPBEALE\x18\t\x20\x03(\x0b2\x0c.OAAKAIBPENCR\x0bFODBOPBEALE\x12.\
+    \n\x0bAKGBJPNGLKP\x18\n\x20\x03(\x0b2\x0c.BKLPIMMNFOCR\x0bAKGBJPNGLKP\
+    \x12\x20\n\x0bFMJMODJNKGA\x18\x0c\x20\x03(\rR\x0bFMJMODJNKGA\x12\x20\n\
+    \x0bJJDDMGHOKDL\x18\r\x20\x01(\rR\x0bJJDDMGHOKDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -300,8 +279,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::BKLPIMMNFOC::file_descriptor().clone());
             deps.push(super::OAAKAIBPENC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BlindBoxGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:BlindBoxGetDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:BlindBoxGetDataScRsp.CANDEKPIMCC)
     pub CANDEKPIMCC: u32,
+    // @@protoc_insertion_point(field:BlindBoxGetDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:BlindBoxGetDataScRsp.CEGOIBGJDBO)
     pub CEGOIBGJDBO: ::std::vec::Vec<super::MFCCCIMGMFL::MFCCCIMGMFL>,
     // special fields
@@ -54,14 +54,14 @@ impl BlindBoxGetDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &BlindBoxGetDataScRsp| { &m.retcode },
-            |m: &mut BlindBoxGetDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CANDEKPIMCC",
             |m: &BlindBoxGetDataScRsp| { &m.CANDEKPIMCC },
             |m: &mut BlindBoxGetDataScRsp| { &mut m.CANDEKPIMCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &BlindBoxGetDataScRsp| { &m.retcode },
+            |m: &mut BlindBoxGetDataScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CEGOIBGJDBO",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BlindBoxGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                72 => {
+                48 => {
                     self.CANDEKPIMCC = is.read_uint32()?;
                 },
-                98 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                90 => {
                     self.CEGOIBGJDBO.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for BlindBoxGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if self.CANDEKPIMCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CANDEKPIMCC);
+            my_size += ::protobuf::rt::uint32_size(6, self.CANDEKPIMCC);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         for value in &self.CEGOIBGJDBO {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for BlindBoxGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
         if self.CANDEKPIMCC != 0 {
-            os.write_uint32(9, self.CANDEKPIMCC)?;
+            os.write_uint32(6, self.CANDEKPIMCC)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         for v in &self.CEGOIBGJDBO {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for BlindBoxGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.CANDEKPIMCC = 0;
+        self.retcode = 0;
         self.CEGOIBGJDBO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BlindBoxGetDataScRsp {
         static instance: BlindBoxGetDataScRsp = BlindBoxGetDataScRsp {
-            retcode: 0,
             CANDEKPIMCC: 0,
+            retcode: 0,
             CEGOIBGJDBO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for BlindBoxGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBlindBoxGetDataScRsp.proto\x1a\x11MFCCCIMGMFL.proto\"\x82\x01\n\
-    \x14BlindBoxGetDataScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07ret\
-    code\x12\x20\n\x0bCANDEKPIMCC\x18\t\x20\x01(\rR\x0bCANDEKPIMCC\x12.\n\
-    \x0bCEGOIBGJDBO\x18\x0c\x20\x03(\x0b2\x0c.MFCCCIMGMFLR\x0bCEGOIBGJDBOb\
+    \x14BlindBoxGetDataScRsp\x12\x20\n\x0bCANDEKPIMCC\x18\x06\x20\x01(\rR\
+    \x0bCANDEKPIMCC\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bCEGOIBGJDBO\x18\x0b\x20\x03(\x0b2\x0c.MFCCCIMGMFLR\x0bCEGOIBGJDBOb\
     \x06proto3\
 ";
 

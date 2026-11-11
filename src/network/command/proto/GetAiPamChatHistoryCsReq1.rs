@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAiPamChatHistoryCsReq1 {
     // message fields
+    // @@protoc_insertion_point(field:GetAiPamChatHistoryCsReq1.target_side)
+    pub target_side: u32,
     // @@protoc_insertion_point(field:GetAiPamChatHistoryCsReq1.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetAiPamChatHistoryCsReq1.JPCMGNGNONJ)
     pub JPCMGNGNONJ: ::std::vec::Vec<super::ChatMessageData::ChatMessageData>,
-    // @@protoc_insertion_point(field:GetAiPamChatHistoryCsReq1.target_side)
-    pub target_side: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAiPamChatHistoryCsReq1.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl GetAiPamChatHistoryCsReq1 {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "target_side",
+            |m: &GetAiPamChatHistoryCsReq1| { &m.target_side },
+            |m: &mut GetAiPamChatHistoryCsReq1| { &mut m.target_side },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAiPamChatHistoryCsReq1| { &m.retcode },
             |m: &mut GetAiPamChatHistoryCsReq1| { &mut m.retcode },
@@ -62,11 +67,6 @@ impl GetAiPamChatHistoryCsReq1 {
             "JPCMGNGNONJ",
             |m: &GetAiPamChatHistoryCsReq1| { &m.JPCMGNGNONJ },
             |m: &mut GetAiPamChatHistoryCsReq1| { &mut m.JPCMGNGNONJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "target_side",
-            |m: &GetAiPamChatHistoryCsReq1| { &m.target_side },
-            |m: &mut GetAiPamChatHistoryCsReq1| { &mut m.target_side },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAiPamChatHistoryCsReq1>(
             "GetAiPamChatHistoryCsReq1",
@@ -87,13 +87,13 @@ impl ::protobuf::Message for GetAiPamChatHistoryCsReq1 {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
+                    self.target_side = is.read_uint32()?;
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                106 => {
                     self.JPCMGNGNONJ.push(is.read_message()?);
-                },
-                88 => {
-                    self.target_side = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GetAiPamChatHistoryCsReq1 {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.target_side != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.target_side);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         for value in &self.JPCMGNGNONJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.target_side);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.target_side != 0 {
+            os.write_uint32(2, self.target_side)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         for v in &self.JPCMGNGNONJ {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
-        if self.target_side != 0 {
-            os.write_uint32(11, self.target_side)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetAiPamChatHistoryCsReq1 {
     }
 
     fn clear(&mut self) {
+        self.target_side = 0;
         self.retcode = 0;
         self.JPCMGNGNONJ.clear();
-        self.target_side = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAiPamChatHistoryCsReq1 {
         static instance: GetAiPamChatHistoryCsReq1 = GetAiPamChatHistoryCsReq1 {
+            target_side: 0,
             retcode: 0,
             JPCMGNGNONJ: ::std::vec::Vec::new(),
-            target_side: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamChatHistoryCsReq1 {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetAiPamChatHistoryCsReq1.proto\x1a\x15ChatMessageData.proto\"\x8a\
-    \x01\n\x19GetAiPamChatHistoryCsReq1\x12\x18\n\x07retcode\x18\x02\x20\x01\
-    (\rR\x07retcode\x122\n\x0bJPCMGNGNONJ\x18\x04\x20\x03(\x0b2\x10.ChatMess\
-    ageDataR\x0bJPCMGNGNONJ\x12\x1f\n\x0btarget_side\x18\x0b\x20\x01(\rR\nta\
-    rgetSideb\x06proto3\
+    \x01\n\x19GetAiPamChatHistoryCsReq1\x12\x1f\n\x0btarget_side\x18\x02\x20\
+    \x01(\rR\ntargetSide\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\
+    \x122\n\x0bJPCMGNGNONJ\x18\r\x20\x03(\x0b2\x10.ChatMessageDataR\x0bJPCMG\
+    NGNONJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for BuyShopGoodScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                82 => {
                     self.OPNFOBJOPCB.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for BuyShopGoodScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         for v in &self.OPNFOBJOPCB {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for BuyShopGoodScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16BuyShopGoodScRsp.proto\x1a\x11NJEBDKOJNGA.proto\"\\\n\x10BuyShopGo\
     odScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12.\n\x0bOP\
-    NFOBJOPCB\x18\x0c\x20\x03(\x0b2\x0c.NJEBDKOJNGAR\x0bOPNFOBJOPCBb\x06prot\
-    o3\
+    NFOBJOPCB\x18\n\x20\x03(\x0b2\x0c.NJEBDKOJNGAR\x0bOPNFOBJOPCBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

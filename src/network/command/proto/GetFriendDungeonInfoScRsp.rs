@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendDungeonInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendDungeonInfoScRsp.IOOIIKICFHE)
-    pub IOOIIKICFHE: ::std::vec::Vec<super::OCBPHIBFFAC::OCBPHIBFFAC>,
     // @@protoc_insertion_point(field:GetFriendDungeonInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendDungeonInfoScRsp.IOOIIKICFHE)
+    pub IOOIIKICFHE: ::std::vec::Vec<super::OCBPHIBFFAC::OCBPHIBFFAC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendDungeonInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetFriendDungeonInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IOOIIKICFHE",
-            |m: &GetFriendDungeonInfoScRsp| { &m.IOOIIKICFHE },
-            |m: &mut GetFriendDungeonInfoScRsp| { &mut m.IOOIIKICFHE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendDungeonInfoScRsp| { &m.retcode },
             |m: &mut GetFriendDungeonInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IOOIIKICFHE",
+            |m: &GetFriendDungeonInfoScRsp| { &m.IOOIIKICFHE },
+            |m: &mut GetFriendDungeonInfoScRsp| { &mut m.IOOIIKICFHE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendDungeonInfoScRsp>(
             "GetFriendDungeonInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.IOOIIKICFHE.push(is.read_message()?);
-                },
                 104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    self.IOOIIKICFHE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
         for value in &self.IOOIIKICFHE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IOOIIKICFHE {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        };
         if self.retcode != 0 {
             os.write_uint32(13, self.retcode)?;
         }
+        for v in &self.IOOIIKICFHE {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetFriendDungeonInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.IOOIIKICFHE.clear();
         self.retcode = 0;
+        self.IOOIIKICFHE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendDungeonInfoScRsp {
         static instance: GetFriendDungeonInfoScRsp = GetFriendDungeonInfoScRsp {
-            IOOIIKICFHE: ::std::vec::Vec::new(),
             retcode: 0,
+            IOOIIKICFHE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendDungeonInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFriendDungeonInfoScRsp.proto\x1a\x11OCBPHIBFFAC.proto\"e\n\x19G\
-    etFriendDungeonInfoScRsp\x12.\n\x0bIOOIIKICFHE\x18\n\x20\x03(\x0b2\x0c.O\
-    CBPHIBFFACR\x0bIOOIIKICFHE\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07ret\
-    codeb\x06proto3\
+    etFriendDungeonInfoScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retco\
+    de\x12.\n\x0bIOOIIKICFHE\x18\x0e\x20\x03(\x0b2\x0c.OCBPHIBFFACR\x0bIOOII\
+    KICFHEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

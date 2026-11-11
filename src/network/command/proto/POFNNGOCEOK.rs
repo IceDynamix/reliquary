@@ -86,13 +86,13 @@ impl ::protobuf::Message for POFNNGOCEOK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                48 => {
                     self.EIKLMFPMJJD = is.read_uint32()?;
                 },
                 56 => {
                     self.dice_slot_id = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
                     self.KAMOPEEBOHJ = is.read_int64()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for POFNNGOCEOK {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.EIKLMFPMJJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EIKLMFPMJJD);
+            my_size += ::protobuf::rt::uint32_size(6, self.EIKLMFPMJJD);
         }
         if self.dice_slot_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.dice_slot_id);
         }
         if self.KAMOPEEBOHJ != 0 {
-            my_size += ::protobuf::rt::int64_size(12, self.KAMOPEEBOHJ);
+            my_size += ::protobuf::rt::int64_size(9, self.KAMOPEEBOHJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for POFNNGOCEOK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EIKLMFPMJJD != 0 {
-            os.write_uint32(2, self.EIKLMFPMJJD)?;
+            os.write_uint32(6, self.EIKLMFPMJJD)?;
         }
         if self.dice_slot_id != 0 {
             os.write_uint32(7, self.dice_slot_id)?;
         }
         if self.KAMOPEEBOHJ != 0 {
-            os.write_int64(12, self.KAMOPEEBOHJ)?;
+            os.write_int64(9, self.KAMOPEEBOHJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for POFNNGOCEOK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POFNNGOCEOK.proto\"s\n\x0bPOFNNGOCEOK\x12\x20\n\x0bEIKLMFPMJJD\x18\
-    \x02\x20\x01(\rR\x0bEIKLMFPMJJD\x12\x20\n\x0cdice_slot_id\x18\x07\x20\
-    \x01(\rR\ndiceSlotId\x12\x20\n\x0bKAMOPEEBOHJ\x18\x0c\x20\x01(\x03R\x0bK\
-    AMOPEEBOHJb\x06proto3\
+    \x06\x20\x01(\rR\x0bEIKLMFPMJJD\x12\x20\n\x0cdice_slot_id\x18\x07\x20\
+    \x01(\rR\ndiceSlotId\x12\x20\n\x0bKAMOPEEBOHJ\x18\t\x20\x01(\x03R\x0bKAM\
+    OPEEBOHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

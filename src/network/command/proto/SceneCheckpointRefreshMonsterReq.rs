@@ -86,13 +86,13 @@ impl ::protobuf::Message for SceneCheckpointRefreshMonsterReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.floor_id = is.read_uint32()?;
                 },
-                80 => {
+                56 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SceneCheckpointRefreshMonsterReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.floor_id);
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SceneCheckpointRefreshMonsterReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.floor_id != 0 {
-            os.write_uint32(8, self.floor_id)?;
+            os.write_uint32(6, self.floor_id)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(10, self.plane_id)?;
+            os.write_uint32(7, self.plane_id)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(11, self.prop_entity_id)?;
+            os.write_uint32(9, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SceneCheckpointRefreshMonsterReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SceneCheckpointRefreshMonsterReq.proto\"~\n\x20SceneCheckpointRefresh\
-    MonsterReq\x12\x19\n\x08floor_id\x18\x08\x20\x01(\rR\x07floorId\x12\x19\
-    \n\x08plane_id\x18\n\x20\x01(\rR\x07planeId\x12$\n\x0eprop_entity_id\x18\
-    \x0b\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
+    MonsterReq\x12\x19\n\x08floor_id\x18\x06\x20\x01(\rR\x07floorId\x12\x19\
+    \n\x08plane_id\x18\x07\x20\x01(\rR\x07planeId\x12$\n\x0eprop_entity_id\
+    \x18\t\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for JEEHGNIBIFE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                8 => {
                     self.map_id = is.read_uint32()?;
                 },
-                72 => {
+                16 => {
                     self.APNAFLBGENA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JEEHGNIBIFE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.map_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.map_id);
         }
         if self.APNAFLBGENA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.APNAFLBGENA);
+            my_size += ::protobuf::rt::uint32_size(2, self.APNAFLBGENA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JEEHGNIBIFE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.map_id != 0 {
-            os.write_uint32(8, self.map_id)?;
+            os.write_uint32(1, self.map_id)?;
         }
         if self.APNAFLBGENA != 0 {
-            os.write_uint32(9, self.APNAFLBGENA)?;
+            os.write_uint32(2, self.APNAFLBGENA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for JEEHGNIBIFE {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JEEHGNIBIFE.proto\"F\n\x0bJEEHGNIBIFE\x12\x15\n\x06map_id\x18\x08\
-    \x20\x01(\rR\x05mapId\x12\x20\n\x0bAPNAFLBGENA\x18\t\x20\x01(\rR\x0bAPNA\
-    FLBGENAb\x06proto3\
+    \n\x11JEEHGNIBIFE.proto\"F\n\x0bJEEHGNIBIFE\x12\x15\n\x06map_id\x18\x01\
+    \x20\x01(\rR\x05mapId\x12\x20\n\x0bAPNAFLBGENA\x18\x02\x20\x01(\rR\x0bAP\
+    NAFLBGENAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRankingInfoRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendRankingInfoRsp.GJNMHILINHC)
-    pub GJNMHILINHC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:GetFriendRankingInfoRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendRankingInfoRsp.GJNMHILINHC)
+    pub GJNMHILINHC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:GetFriendRankingInfoRsp.MLPHLIHFGKG)
     pub MLPHLIHFGKG: ::std::vec::Vec<super::DLCJPINDIAC::DLCJPINDIAC>,
     // special fields
@@ -54,14 +54,14 @@ impl GetFriendRankingInfoRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJNMHILINHC",
-            |m: &GetFriendRankingInfoRsp| { &m.GJNMHILINHC },
-            |m: &mut GetFriendRankingInfoRsp| { &mut m.GJNMHILINHC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendRankingInfoRsp| { &m.retcode },
             |m: &mut GetFriendRankingInfoRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GJNMHILINHC",
+            |m: &GetFriendRankingInfoRsp| { &m.GJNMHILINHC },
+            |m: &mut GetFriendRankingInfoRsp| { &mut m.GJNMHILINHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MLPHLIHFGKG",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetFriendRankingInfoRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 24 => {
                     self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                90 => {
+                82 => {
                     self.MLPHLIHFGKG.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GetFriendRankingInfoRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             my_size += ::protobuf::rt::int32_size(3, self.GJNMHILINHC.value());
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         for value in &self.MLPHLIHFGKG {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetFriendRankingInfoRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
         if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
             os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
         for v in &self.MLPHLIHFGKG {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetFriendRankingInfoRsp {
     }
 
     fn clear(&mut self) {
-        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.retcode = 0;
+        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
         self.MLPHLIHFGKG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRankingInfoRsp {
         static instance: GetFriendRankingInfoRsp = GetFriendRankingInfoRsp {
-            GJNMHILINHC: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
+            GJNMHILINHC: ::protobuf::EnumOrUnknown::from_i32(0),
             MLPHLIHFGKG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRankingInfoRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetFriendRankingInfoRsp.proto\x1a\x11DLCJPINDIAC.proto\x1a\x13Figh\
-    tGameMode.proto\"\x95\x01\n\x17GetFriendRankingInfoRsp\x120\n\x0bGJNMHIL\
-    INHC\x18\x03\x20\x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x12\x18\n\
-    \x07retcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bMLPHLIHFGKG\x18\x0b\
-    \x20\x03(\x0b2\x0c.DLCJPINDIACR\x0bMLPHLIHFGKGb\x06proto3\
+    tGameMode.proto\"\x95\x01\n\x17GetFriendRankingInfoRsp\x12\x18\n\x07retc\
+    ode\x18\x02\x20\x01(\rR\x07retcode\x120\n\x0bGJNMHILINHC\x18\x03\x20\x01\
+    (\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x12.\n\x0bMLPHLIHFGKG\x18\n\x20\
+    \x03(\x0b2\x0c.DLCJPINDIACR\x0bMLPHLIHFGKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

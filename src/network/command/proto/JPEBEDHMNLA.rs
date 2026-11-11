@@ -30,14 +30,14 @@ pub struct JPEBEDHMNLA {
     // message fields
     // @@protoc_insertion_point(field:JPEBEDHMNLA.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:JPEBEDHMNLA.level)
-    pub level: u32,
+    // @@protoc_insertion_point(field:JPEBEDHMNLA.H_a45cd9b1)
+    pub H_a45cd9b1: u32,
     // @@protoc_insertion_point(field:JPEBEDHMNLA.pos_index)
     pub pos_index: u32,
-    // @@protoc_insertion_point(field:JPEBEDHMNLA.H_603b4ee2)
-    pub H_603b4ee2: u32,
     // @@protoc_insertion_point(field:JPEBEDHMNLA.CCBIIDDBFGK)
     pub CCBIIDDBFGK: u32,
+    // @@protoc_insertion_point(field:JPEBEDHMNLA.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JPEBEDHMNLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,9 +63,9 @@ impl JPEBEDHMNLA {
             |m: &mut JPEBEDHMNLA| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &JPEBEDHMNLA| { &m.level },
-            |m: &mut JPEBEDHMNLA| { &mut m.level },
+            "H_a45cd9b1",
+            |m: &JPEBEDHMNLA| { &m.H_a45cd9b1 },
+            |m: &mut JPEBEDHMNLA| { &mut m.H_a45cd9b1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos_index",
@@ -73,14 +73,14 @@ impl JPEBEDHMNLA {
             |m: &mut JPEBEDHMNLA| { &mut m.pos_index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_603b4ee2",
-            |m: &JPEBEDHMNLA| { &m.H_603b4ee2 },
-            |m: &mut JPEBEDHMNLA| { &mut m.H_603b4ee2 },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CCBIIDDBFGK",
             |m: &JPEBEDHMNLA| { &m.CCBIIDDBFGK },
             |m: &mut JPEBEDHMNLA| { &mut m.CCBIIDDBFGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &JPEBEDHMNLA| { &m.level },
+            |m: &mut JPEBEDHMNLA| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPEBEDHMNLA>(
             "JPEBEDHMNLA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.level = is.read_uint32()?;
-                },
-                48 => {
-                    self.pos_index = is.read_uint32()?;
-                },
-                72 => {
-                    self.H_603b4ee2 = is.read_uint32()?;
+                56 => {
+                    self.H_a45cd9b1 = is.read_uint32()?;
                 },
                 80 => {
+                    self.pos_index = is.read_uint32()?;
+                },
+                88 => {
                     self.CCBIIDDBFGK = is.read_uint32()?;
+                },
+                120 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for JPEBEDHMNLA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+        if self.H_a45cd9b1 != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.H_a45cd9b1);
         }
         if self.pos_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.pos_index);
-        }
-        if self.H_603b4ee2 != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.H_603b4ee2);
+            my_size += ::protobuf::rt::uint32_size(10, self.pos_index);
         }
         if self.CCBIIDDBFGK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CCBIIDDBFGK);
+            my_size += ::protobuf::rt::uint32_size(11, self.CCBIIDDBFGK);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for JPEBEDHMNLA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(1, self.unique_id)?;
+            os.write_uint32(4, self.unique_id)?;
         }
-        if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+        if self.H_a45cd9b1 != 0 {
+            os.write_uint32(7, self.H_a45cd9b1)?;
         }
         if self.pos_index != 0 {
-            os.write_uint32(6, self.pos_index)?;
-        }
-        if self.H_603b4ee2 != 0 {
-            os.write_uint32(9, self.H_603b4ee2)?;
+            os.write_uint32(10, self.pos_index)?;
         }
         if self.CCBIIDDBFGK != 0 {
-            os.write_uint32(10, self.CCBIIDDBFGK)?;
+            os.write_uint32(11, self.CCBIIDDBFGK)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(15, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for JPEBEDHMNLA {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.level = 0;
+        self.H_a45cd9b1 = 0;
         self.pos_index = 0;
-        self.H_603b4ee2 = 0;
         self.CCBIIDDBFGK = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JPEBEDHMNLA {
         static instance: JPEBEDHMNLA = JPEBEDHMNLA {
             unique_id: 0,
-            level: 0,
+            H_a45cd9b1: 0,
             pos_index: 0,
-            H_603b4ee2: 0,
             CCBIIDDBFGK: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for JPEBEDHMNLA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPEBEDHMNLA.proto\"\x9e\x01\n\x0bJPEBEDHMNLA\x12\x1b\n\tunique_id\
-    \x18\x01\x20\x01(\rR\x08uniqueId\x12\x14\n\x05level\x18\x05\x20\x01(\rR\
-    \x05level\x12\x1b\n\tpos_index\x18\x06\x20\x01(\rR\x08posIndex\x12\x1d\n\
-    \nH_603b4ee2\x18\t\x20\x01(\rR\tH603b4ee2\x12\x20\n\x0bCCBIIDDBFGK\x18\n\
-    \x20\x01(\rR\x0bCCBIIDDBFGKb\x06proto3\
+    \x18\x04\x20\x01(\rR\x08uniqueId\x12\x1d\n\nH_a45cd9b1\x18\x07\x20\x01(\
+    \rR\tHA45cd9b1\x12\x1b\n\tpos_index\x18\n\x20\x01(\rR\x08posIndex\x12\
+    \x20\n\x0bCCBIIDDBFGK\x18\x0b\x20\x01(\rR\x0bCCBIIDDBFGK\x12\x14\n\x05le\
+    vel\x18\x0f\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

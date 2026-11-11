@@ -30,10 +30,10 @@ pub struct RogueTournConfirmSettleCsReq {
     // message fields
     // @@protoc_insertion_point(field:RogueTournConfirmSettleCsReq.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:RogueTournConfirmSettleCsReq.name)
-    pub name: ::std::string::String,
     // @@protoc_insertion_point(field:RogueTournConfirmSettleCsReq.NPHAJEKCBKF)
     pub NPHAJEKCBKF: u32,
+    // @@protoc_insertion_point(field:RogueTournConfirmSettleCsReq.name)
+    pub name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournConfirmSettleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl RogueTournConfirmSettleCsReq {
             |m: &mut RogueTournConfirmSettleCsReq| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &RogueTournConfirmSettleCsReq| { &m.name },
-            |m: &mut RogueTournConfirmSettleCsReq| { &mut m.name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NPHAJEKCBKF",
             |m: &RogueTournConfirmSettleCsReq| { &m.NPHAJEKCBKF },
             |m: &mut RogueTournConfirmSettleCsReq| { &mut m.NPHAJEKCBKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &RogueTournConfirmSettleCsReq| { &m.name },
+            |m: &mut RogueTournConfirmSettleCsReq| { &mut m.name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournConfirmSettleCsReq>(
             "RogueTournConfirmSettleCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                48 => {
                     self.area_id = is.read_uint32()?;
                 },
-                58 => {
-                    self.name = is.read_string()?;
-                },
-                64 => {
+                80 => {
                     self.NPHAJEKCBKF = is.read_uint32()?;
+                },
+                90 => {
+                    self.name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.area_id);
-        }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.name);
+            my_size += ::protobuf::rt::uint32_size(6, self.area_id);
         }
         if self.NPHAJEKCBKF != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NPHAJEKCBKF);
+            my_size += ::protobuf::rt::uint32_size(10, self.NPHAJEKCBKF);
+        }
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.area_id != 0 {
-            os.write_uint32(1, self.area_id)?;
-        }
-        if !self.name.is_empty() {
-            os.write_string(7, &self.name)?;
+            os.write_uint32(6, self.area_id)?;
         }
         if self.NPHAJEKCBKF != 0 {
-            os.write_uint32(8, self.NPHAJEKCBKF)?;
+            os.write_uint32(10, self.NPHAJEKCBKF)?;
+        }
+        if !self.name.is_empty() {
+            os.write_string(11, &self.name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueTournConfirmSettleCsReq {
 
     fn clear(&mut self) {
         self.area_id = 0;
-        self.name.clear();
         self.NPHAJEKCBKF = 0;
+        self.name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournConfirmSettleCsReq {
         static instance: RogueTournConfirmSettleCsReq = RogueTournConfirmSettleCsReq {
             area_id: 0,
-            name: ::std::string::String::new(),
             NPHAJEKCBKF: 0,
+            name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournConfirmSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournConfirmSettleCsReq.proto\"m\n\x1cRogueTournConfirmSettleCs\
-    Req\x12\x17\n\x07area_id\x18\x01\x20\x01(\rR\x06areaId\x12\x12\n\x04name\
-    \x18\x07\x20\x01(\tR\x04name\x12\x20\n\x0bNPHAJEKCBKF\x18\x08\x20\x01(\r\
-    R\x0bNPHAJEKCBKFb\x06proto3\
+    Req\x12\x17\n\x07area_id\x18\x06\x20\x01(\rR\x06areaId\x12\x20\n\x0bNPHA\
+    JEKCBKF\x18\n\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x12\n\x04name\x18\x0b\x20\
+    \x01(\tR\x04nameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

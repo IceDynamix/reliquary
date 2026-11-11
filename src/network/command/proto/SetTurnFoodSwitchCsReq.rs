@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTurnFoodSwitchCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.toggle_on)
+    pub toggle_on: bool,
     // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.KLAJGAKAFCP)
     pub KLAJGAKAFCP: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.FEBKMOCOJLE)
-    pub FEBKMOCOJLE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetTurnFoodSwitchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetTurnFoodSwitchCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "toggle_on",
+            |m: &SetTurnFoodSwitchCsReq| { &m.toggle_on },
+            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.toggle_on },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KLAJGAKAFCP",
             |m: &SetTurnFoodSwitchCsReq| { &m.KLAJGAKAFCP },
             |m: &mut SetTurnFoodSwitchCsReq| { &mut m.KLAJGAKAFCP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEBKMOCOJLE",
-            |m: &SetTurnFoodSwitchCsReq| { &m.FEBKMOCOJLE },
-            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.FEBKMOCOJLE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTurnFoodSwitchCsReq>(
             "SetTurnFoodSwitchCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
+                8 => {
+                    self.toggle_on = is.read_bool()?;
                 },
-                112 => {
-                    self.FEBKMOCOJLE = is.read_bool()?;
+                72 => {
+                    self.KLAJGAKAFCP = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            my_size += ::protobuf::rt::int32_size(6, self.KLAJGAKAFCP.value());
-        }
-        if self.FEBKMOCOJLE != false {
+        if self.toggle_on != false {
             my_size += 1 + 1;
+        }
+        if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
+            my_size += ::protobuf::rt::int32_size(9, self.KLAJGAKAFCP.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
+        if self.toggle_on != false {
+            os.write_bool(1, self.toggle_on)?;
         }
-        if self.FEBKMOCOJLE != false {
-            os.write_bool(14, self.FEBKMOCOJLE)?;
+        if self.KLAJGAKAFCP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.KLAJGAKAFCP))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn clear(&mut self) {
+        self.toggle_on = false;
         self.KLAJGAKAFCP = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_None);
-        self.FEBKMOCOJLE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTurnFoodSwitchCsReq {
         static instance: SetTurnFoodSwitchCsReq = SetTurnFoodSwitchCsReq {
+            toggle_on: false,
             KLAJGAKAFCP: ::protobuf::EnumOrUnknown::from_i32(0),
-            FEBKMOCOJLE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
-    etTurnFoodSwitchCsReq\x121\n\x0bKLAJGAKAFCP\x18\x06\x20\x01(\x0e2\x0f.Tu\
-    rnFoodSwitchR\x0bKLAJGAKAFCP\x12\x20\n\x0bFEBKMOCOJLE\x18\x0e\x20\x01(\
-    \x08R\x0bFEBKMOCOJLEb\x06proto3\
+    \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"h\n\x16S\
+    etTurnFoodSwitchCsReq\x12\x1b\n\ttoggle_on\x18\x01\x20\x01(\x08R\x08togg\
+    leOn\x121\n\x0bKLAJGAKAFCP\x18\t\x20\x01(\x0e2\x0f.TurnFoodSwitchR\x0bKL\
+    AJGAKAFCPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DailyActiveInfoNotify {
     // message fields
-    // @@protoc_insertion_point(field:DailyActiveInfoNotify.daily_active_quest_id_list)
-    pub daily_active_quest_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DailyActiveInfoNotify.daily_active_level_list)
     pub daily_active_level_list: ::std::vec::Vec<super::DailyActivityInfo::DailyActivityInfo>,
+    // @@protoc_insertion_point(field:DailyActiveInfoNotify.daily_active_quest_id_list)
+    pub daily_active_quest_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DailyActiveInfoNotify.daily_active_point)
     pub daily_active_point: u32,
     // special fields
@@ -54,14 +54,14 @@ impl DailyActiveInfoNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "daily_active_quest_id_list",
-            |m: &DailyActiveInfoNotify| { &m.daily_active_quest_id_list },
-            |m: &mut DailyActiveInfoNotify| { &mut m.daily_active_quest_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "daily_active_level_list",
             |m: &DailyActiveInfoNotify| { &m.daily_active_level_list },
             |m: &mut DailyActiveInfoNotify| { &mut m.daily_active_level_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "daily_active_quest_id_list",
+            |m: &DailyActiveInfoNotify| { &m.daily_active_quest_id_list },
+            |m: &mut DailyActiveInfoNotify| { &mut m.daily_active_quest_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "daily_active_point",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.daily_active_quest_id_list)?;
-                },
-                8 => {
-                    self.daily_active_quest_id_list.push(is.read_uint32()?);
-                },
                 18 => {
                     self.daily_active_level_list.push(is.read_message()?);
                 },
-                120 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.daily_active_quest_id_list)?;
+                },
+                32 => {
+                    self.daily_active_quest_id_list.push(is.read_uint32()?);
+                },
+                80 => {
                     self.daily_active_point = is.read_uint32()?;
                 },
                 tag => {
@@ -110,13 +110,13 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.daily_active_quest_id_list);
         for value in &self.daily_active_level_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.daily_active_quest_id_list);
         if self.daily_active_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.daily_active_point);
+            my_size += ::protobuf::rt::uint32_size(10, self.daily_active_point);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.daily_active_quest_id_list)?;
         for v in &self.daily_active_level_list {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        os.write_repeated_packed_uint32(4, &self.daily_active_quest_id_list)?;
         if self.daily_active_point != 0 {
-            os.write_uint32(15, self.daily_active_point)?;
+            os.write_uint32(10, self.daily_active_point)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for DailyActiveInfoNotify {
     }
 
     fn clear(&mut self) {
-        self.daily_active_quest_id_list.clear();
         self.daily_active_level_list.clear();
+        self.daily_active_quest_id_list.clear();
         self.daily_active_point = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DailyActiveInfoNotify {
         static instance: DailyActiveInfoNotify = DailyActiveInfoNotify {
-            daily_active_quest_id_list: ::std::vec::Vec::new(),
             daily_active_level_list: ::std::vec::Vec::new(),
+            daily_active_quest_id_list: ::std::vec::Vec::new(),
             daily_active_point: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for DailyActiveInfoNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bDailyActiveInfoNotify.proto\x1a\x17DailyActivityInfo.proto\"\xcc\
-    \x01\n\x15DailyActiveInfoNotify\x12:\n\x1adaily_active_quest_id_list\x18\
-    \x01\x20\x03(\rR\x16dailyActiveQuestIdList\x12I\n\x17daily_active_level_\
-    list\x18\x02\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelLis\
-    t\x12,\n\x12daily_active_point\x18\x0f\x20\x01(\rR\x10dailyActivePointb\
+    \x01\n\x15DailyActiveInfoNotify\x12I\n\x17daily_active_level_list\x18\
+    \x02\x20\x03(\x0b2\x12.DailyActivityInfoR\x14dailyActiveLevelList\x12:\n\
+    \x1adaily_active_quest_id_list\x18\x04\x20\x03(\rR\x16dailyActiveQuestId\
+    List\x12,\n\x12daily_active_point\x18\n\x20\x01(\rR\x10dailyActivePointb\
     \x06proto3\
 ";
 

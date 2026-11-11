@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HJHMNDBJPND {
     // message fields
-    // @@protoc_insertion_point(field:HJHMNDBJPND.LJDLJKCMIIC)
-    pub LJDLJKCMIIC: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:HJHMNDBJPND.AADNIFFHHDD)
-    pub AADNIFFHHDD: u32,
     // @@protoc_insertion_point(field:HJHMNDBJPND.KAENLKDNOMF)
     pub KAENLKDNOMF: u32,
+    // @@protoc_insertion_point(field:HJHMNDBJPND.LJDLJKCMIIC)
+    pub LJDLJKCMIIC: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:HJHMNDBJPND.DKJEDBHLOPP)
     pub DKJEDBHLOPP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HJHMNDBJPND.AADNIFFHHDD)
+    pub AADNIFFHHDD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HJHMNDBJPND.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl HJHMNDBJPND {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "LJDLJKCMIIC",
-            |m: &HJHMNDBJPND| { &m.LJDLJKCMIIC },
-            |m: &mut HJHMNDBJPND| { &mut m.LJDLJKCMIIC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AADNIFFHHDD",
-            |m: &HJHMNDBJPND| { &m.AADNIFFHHDD },
-            |m: &mut HJHMNDBJPND| { &mut m.AADNIFFHHDD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KAENLKDNOMF",
             |m: &HJHMNDBJPND| { &m.KAENLKDNOMF },
             |m: &mut HJHMNDBJPND| { &mut m.KAENLKDNOMF },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "LJDLJKCMIIC",
+            |m: &HJHMNDBJPND| { &m.LJDLJKCMIIC },
+            |m: &mut HJHMNDBJPND| { &mut m.LJDLJKCMIIC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DKJEDBHLOPP",
             |m: &HJHMNDBJPND| { &m.DKJEDBHLOPP },
             |m: &mut HJHMNDBJPND| { &mut m.DKJEDBHLOPP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AADNIFFHHDD",
+            |m: &HJHMNDBJPND| { &m.AADNIFFHHDD },
+            |m: &mut HJHMNDBJPND| { &mut m.AADNIFFHHDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HJHMNDBJPND>(
             "HJHMNDBJPND",
@@ -93,7 +93,10 @@ impl ::protobuf::Message for HJHMNDBJPND {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                48 => {
+                    self.KAENLKDNOMF = is.read_uint32()?;
+                },
+                58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,17 +111,14 @@ impl ::protobuf::Message for HJHMNDBJPND {
                     is.pop_limit(old_limit);
                     self.LJDLJKCMIIC.insert(key, value);
                 },
-                40 => {
-                    self.AADNIFFHHDD = is.read_uint32()?;
-                },
-                48 => {
-                    self.KAENLKDNOMF = is.read_uint32()?;
-                },
-                58 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.DKJEDBHLOPP)?;
                 },
-                56 => {
+                64 => {
                     self.DKJEDBHLOPP.push(is.read_uint32()?);
+                },
+                120 => {
+                    self.AADNIFFHHDD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -132,41 +132,41 @@ impl ::protobuf::Message for HJHMNDBJPND {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.KAENLKDNOMF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KAENLKDNOMF);
+        }
         for (k, v) in &self.LJDLJKCMIIC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.DKJEDBHLOPP);
         if self.AADNIFFHHDD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AADNIFFHHDD);
+            my_size += ::protobuf::rt::uint32_size(15, self.AADNIFFHHDD);
         }
-        if self.KAENLKDNOMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KAENLKDNOMF);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DKJEDBHLOPP);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KAENLKDNOMF != 0 {
+            os.write_uint32(6, self.KAENLKDNOMF)?;
+        }
         for (k, v) in &self.LJDLJKCMIIC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(18)?; // Tag.
+            os.write_raw_varint32(58)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
+        os.write_repeated_packed_uint32(8, &self.DKJEDBHLOPP)?;
         if self.AADNIFFHHDD != 0 {
-            os.write_uint32(5, self.AADNIFFHHDD)?;
+            os.write_uint32(15, self.AADNIFFHHDD)?;
         }
-        if self.KAENLKDNOMF != 0 {
-            os.write_uint32(6, self.KAENLKDNOMF)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.DKJEDBHLOPP)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -184,10 +184,10 @@ impl ::protobuf::Message for HJHMNDBJPND {
     }
 
     fn clear(&mut self) {
-        self.LJDLJKCMIIC.clear();
-        self.AADNIFFHHDD = 0;
         self.KAENLKDNOMF = 0;
+        self.LJDLJKCMIIC.clear();
         self.DKJEDBHLOPP.clear();
+        self.AADNIFFHHDD = 0;
         self.special_fields.clear();
     }
 
@@ -215,11 +215,11 @@ impl ::protobuf::reflect::ProtobufValue for HJHMNDBJPND {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HJHMNDBJPND.proto\"\xf4\x01\n\x0bHJHMNDBJPND\x12?\n\x0bLJDLJKCMIIC\
-    \x18\x02\x20\x03(\x0b2\x1d.HJHMNDBJPND.LJDLJKCMIICEntryR\x0bLJDLJKCMIIC\
-    \x12\x20\n\x0bAADNIFFHHDD\x18\x05\x20\x01(\rR\x0bAADNIFFHHDD\x12\x20\n\
-    \x0bKAENLKDNOMF\x18\x06\x20\x01(\rR\x0bKAENLKDNOMF\x12\x20\n\x0bDKJEDBHL\
-    OPP\x18\x07\x20\x03(\rR\x0bDKJEDBHLOPP\x1a>\n\x10LJDLJKCMIICEntry\x12\
+    \n\x11HJHMNDBJPND.proto\"\xf4\x01\n\x0bHJHMNDBJPND\x12\x20\n\x0bKAENLKDN\
+    OMF\x18\x06\x20\x01(\rR\x0bKAENLKDNOMF\x12?\n\x0bLJDLJKCMIIC\x18\x07\x20\
+    \x03(\x0b2\x1d.HJHMNDBJPND.LJDLJKCMIICEntryR\x0bLJDLJKCMIIC\x12\x20\n\
+    \x0bDKJEDBHLOPP\x18\x08\x20\x03(\rR\x0bDKJEDBHLOPP\x12\x20\n\x0bAADNIFFH\
+    HDD\x18\x0f\x20\x01(\rR\x0bAADNIFFHHDD\x1a>\n\x10LJDLJKCMIICEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

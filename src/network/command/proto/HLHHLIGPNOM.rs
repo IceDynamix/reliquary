@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HLHHLIGPNOM {
     // message fields
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.source)
-    pub source: ::protobuf::EnumOrUnknown<super::H_8e2db1cf::H_8e2db1cf>,
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.BJDOINAHDLN)
-    pub BJDOINAHDLN: bool,
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.NALMBOOCCIN)
-    pub NALMBOOCCIN: u32,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.BGFFICLCKHE)
     pub BGFFICLCKHE: u32,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.NALMBOOCCIN)
+    pub NALMBOOCCIN: u32,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.BJDOINAHDLN)
+    pub BJDOINAHDLN: bool,
     // @@protoc_insertion_point(field:HLHHLIGPNOM.MCJMHBIECMN)
     pub MCJMHBIECMN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HLHHLIGPNOM.H_e211619c)
-    pub H_e211619c: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.H_7250b503)
+    pub H_7250b503: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HLHHLIGPNOM.source)
+    pub source: ::protobuf::EnumOrUnknown<super::H_5e2a7c90::H_5e2a7c90>,
     // special fields
     // @@protoc_insertion_point(special_field:HLHHLIGPNOM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,9 @@ impl HLHHLIGPNOM {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &HLHHLIGPNOM| { &m.source },
-            |m: &mut HLHHLIGPNOM| { &mut m.source },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJDOINAHDLN",
-            |m: &HLHHLIGPNOM| { &m.BJDOINAHDLN },
-            |m: &mut HLHHLIGPNOM| { &mut m.BJDOINAHDLN },
+            "BGFFICLCKHE",
+            |m: &HLHHLIGPNOM| { &m.BGFFICLCKHE },
+            |m: &mut HLHHLIGPNOM| { &mut m.BGFFICLCKHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "NALMBOOCCIN",
@@ -75,9 +70,9 @@ impl HLHHLIGPNOM {
             |m: &mut HLHHLIGPNOM| { &mut m.NALMBOOCCIN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BGFFICLCKHE",
-            |m: &HLHHLIGPNOM| { &m.BGFFICLCKHE },
-            |m: &mut HLHHLIGPNOM| { &mut m.BGFFICLCKHE },
+            "BJDOINAHDLN",
+            |m: &HLHHLIGPNOM| { &m.BJDOINAHDLN },
+            |m: &mut HLHHLIGPNOM| { &mut m.BJDOINAHDLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "MCJMHBIECMN",
@@ -85,9 +80,14 @@ impl HLHHLIGPNOM {
             |m: &mut HLHHLIGPNOM| { &mut m.MCJMHBIECMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_e211619c",
-            |m: &HLHHLIGPNOM| { &m.H_e211619c },
-            |m: &mut HLHHLIGPNOM| { &mut m.H_e211619c },
+            "H_7250b503",
+            |m: &HLHHLIGPNOM| { &m.H_7250b503 },
+            |m: &mut HLHHLIGPNOM| { &mut m.H_7250b503 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &HLHHLIGPNOM| { &m.source },
+            |m: &mut HLHHLIGPNOM| { &mut m.source },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HLHHLIGPNOM>(
             "HLHHLIGPNOM",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.source = is.read_enum_or_unknown()?;
-                },
-                16 => {
-                    self.BJDOINAHDLN = is.read_bool()?;
-                },
-                32 => {
-                    self.NALMBOOCCIN = is.read_uint32()?;
-                },
-                40 => {
+                24 => {
                     self.BGFFICLCKHE = is.read_uint32()?;
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
+                40 => {
+                    self.NALMBOOCCIN = is.read_uint32()?;
                 },
                 48 => {
-                    self.MCJMHBIECMN.push(is.read_uint32()?);
+                    self.BJDOINAHDLN = is.read_bool()?;
                 },
                 66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_e211619c)?;
+                    is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
                 },
                 64 => {
-                    self.H_e211619c.push(is.read_uint32()?);
+                    self.MCJMHBIECMN.push(is.read_uint32()?);
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_7250b503)?;
+                },
+                72 => {
+                    self.H_7250b503.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,40 +143,40 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b) {
-            my_size += ::protobuf::rt::int32_size(1, self.source.value());
+        if self.BGFFICLCKHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BGFFICLCKHE);
+        }
+        if self.NALMBOOCCIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.NALMBOOCCIN);
         }
         if self.BJDOINAHDLN != false {
             my_size += 1 + 1;
         }
-        if self.NALMBOOCCIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NALMBOOCCIN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.MCJMHBIECMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.H_7250b503);
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e) {
+            my_size += ::protobuf::rt::int32_size(13, self.source.value());
         }
-        if self.BGFFICLCKHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BGFFICLCKHE);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.MCJMHBIECMN);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.H_e211619c);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source != ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.source))?;
-        }
-        if self.BJDOINAHDLN != false {
-            os.write_bool(2, self.BJDOINAHDLN)?;
+        if self.BGFFICLCKHE != 0 {
+            os.write_uint32(3, self.BGFFICLCKHE)?;
         }
         if self.NALMBOOCCIN != 0 {
-            os.write_uint32(4, self.NALMBOOCCIN)?;
+            os.write_uint32(5, self.NALMBOOCCIN)?;
         }
-        if self.BGFFICLCKHE != 0 {
-            os.write_uint32(5, self.BGFFICLCKHE)?;
+        if self.BJDOINAHDLN != false {
+            os.write_bool(6, self.BJDOINAHDLN)?;
         }
-        os.write_repeated_packed_uint32(6, &self.MCJMHBIECMN)?;
-        os.write_repeated_packed_uint32(8, &self.H_e211619c)?;
+        os.write_repeated_packed_uint32(8, &self.MCJMHBIECMN)?;
+        os.write_repeated_packed_uint32(9, &self.H_7250b503)?;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -194,23 +194,23 @@ impl ::protobuf::Message for HLHHLIGPNOM {
     }
 
     fn clear(&mut self) {
-        self.source = ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b);
-        self.BJDOINAHDLN = false;
-        self.NALMBOOCCIN = 0;
         self.BGFFICLCKHE = 0;
+        self.NALMBOOCCIN = 0;
+        self.BJDOINAHDLN = false;
         self.MCJMHBIECMN.clear();
-        self.H_e211619c.clear();
+        self.H_7250b503.clear();
+        self.source = ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HLHHLIGPNOM {
         static instance: HLHHLIGPNOM = HLHHLIGPNOM {
-            source: ::protobuf::EnumOrUnknown::from_i32(0),
-            BJDOINAHDLN: false,
-            NALMBOOCCIN: 0,
             BGFFICLCKHE: 0,
+            NALMBOOCCIN: 0,
+            BJDOINAHDLN: false,
             MCJMHBIECMN: ::std::vec::Vec::new(),
-            H_e211619c: ::std::vec::Vec::new(),
+            H_7250b503: ::std::vec::Vec::new(),
+            source: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -235,13 +235,13 @@ impl ::protobuf::reflect::ProtobufValue for HLHHLIGPNOM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HLHHLIGPNOM.proto\x1a\x10H_8e2db1cf.proto\"\xd9\x01\n\x0bHLHHLIGPN\
-    OM\x12#\n\x06source\x18\x01\x20\x01(\x0e2\x0b.H_8e2db1cfR\x06source\x12\
-    \x20\n\x0bBJDOINAHDLN\x18\x02\x20\x01(\x08R\x0bBJDOINAHDLN\x12\x20\n\x0b\
-    NALMBOOCCIN\x18\x04\x20\x01(\rR\x0bNALMBOOCCIN\x12\x20\n\x0bBGFFICLCKHE\
-    \x18\x05\x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\x0bMCJMHBIECMN\x18\x06\x20\
-    \x03(\rR\x0bMCJMHBIECMN\x12\x1d\n\nH_e211619c\x18\x08\x20\x03(\rR\tHE211\
-    619cb\x06proto3\
+    \n\x11HLHHLIGPNOM.proto\x1a\x10H_5e2a7c90.proto\"\xd9\x01\n\x0bHLHHLIGPN\
+    OM\x12\x20\n\x0bBGFFICLCKHE\x18\x03\x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\
+    \x0bNALMBOOCCIN\x18\x05\x20\x01(\rR\x0bNALMBOOCCIN\x12\x20\n\x0bBJDOINAH\
+    DLN\x18\x06\x20\x01(\x08R\x0bBJDOINAHDLN\x12\x20\n\x0bMCJMHBIECMN\x18\
+    \x08\x20\x03(\rR\x0bMCJMHBIECMN\x12\x1d\n\nH_7250b503\x18\t\x20\x03(\rR\
+    \tH7250b503\x12#\n\x06source\x18\r\x20\x01(\x0e2\x0b.H_5e2a7c90R\x06sour\
+    ceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -259,7 +259,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_8e2db1cf::file_descriptor().clone());
+            deps.push(super::H_5e2a7c90::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HLHHLIGPNOM::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

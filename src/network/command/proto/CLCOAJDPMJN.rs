@@ -32,16 +32,16 @@ pub struct CLCOAJDPMJN {
     pub IKOKEPJGHAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CLCOAJDPMJN.IDIPBEPCIFG)
     pub IDIPBEPCIFG: u32,
-    // @@protoc_insertion_point(field:CLCOAJDPMJN.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:CLCOAJDPMJN.GEPKDDNJING)
-    pub GEPKDDNJING: ::std::vec::Vec<super::MBLAIDFENOE::MBLAIDFENOE>,
-    // @@protoc_insertion_point(field:CLCOAJDPMJN.GEPHKCPLAJF)
-    pub GEPHKCPLAJF: u32,
     // @@protoc_insertion_point(field:CLCOAJDPMJN.is_win)
     pub is_win: bool,
+    // @@protoc_insertion_point(field:CLCOAJDPMJN.GEPHKCPLAJF)
+    pub GEPHKCPLAJF: u32,
     // @@protoc_insertion_point(field:CLCOAJDPMJN.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:CLCOAJDPMJN.GEPKDDNJING)
+    pub GEPKDDNJING: ::std::vec::Vec<super::MBLAIDFENOE::MBLAIDFENOE>,
+    // @@protoc_insertion_point(field:CLCOAJDPMJN.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CLCOAJDPMJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,14 +72,9 @@ impl CLCOAJDPMJN {
             |m: &mut CLCOAJDPMJN| { &mut m.IDIPBEPCIFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &CLCOAJDPMJN| { &m.retcode },
-            |m: &mut CLCOAJDPMJN| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GEPKDDNJING",
-            |m: &CLCOAJDPMJN| { &m.GEPKDDNJING },
-            |m: &mut CLCOAJDPMJN| { &mut m.GEPKDDNJING },
+            "is_win",
+            |m: &CLCOAJDPMJN| { &m.is_win },
+            |m: &mut CLCOAJDPMJN| { &mut m.is_win },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GEPHKCPLAJF",
@@ -87,14 +82,19 @@ impl CLCOAJDPMJN {
             |m: &mut CLCOAJDPMJN| { &mut m.GEPHKCPLAJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &CLCOAJDPMJN| { &m.is_win },
-            |m: &mut CLCOAJDPMJN| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
             |m: &CLCOAJDPMJN| { &m.stage_id },
             |m: &mut CLCOAJDPMJN| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GEPKDDNJING",
+            |m: &CLCOAJDPMJN| { &m.GEPKDDNJING },
+            |m: &mut CLCOAJDPMJN| { &mut m.GEPKDDNJING },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &CLCOAJDPMJN| { &m.retcode },
+            |m: &mut CLCOAJDPMJN| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CLCOAJDPMJN>(
             "CLCOAJDPMJN",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for CLCOAJDPMJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.IKOKEPJGHAF)?;
                 },
-                16 => {
+                8 => {
                     self.IKOKEPJGHAF.push(is.read_uint32()?);
                 },
-                48 => {
+                16 => {
                     self.IDIPBEPCIFG = is.read_uint32()?;
                 },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                72 => {
+                    self.is_win = is.read_bool()?;
                 },
-                66 => {
-                    self.GEPKDDNJING.push(is.read_message()?);
-                },
-                88 => {
+                80 => {
                     self.GEPHKCPLAJF = is.read_uint32()?;
                 },
                 104 => {
-                    self.is_win = is.read_bool()?;
+                    self.stage_id = is.read_uint32()?;
+                },
+                114 => {
+                    self.GEPKDDNJING.push(is.read_message()?);
                 },
                 120 => {
-                    self.stage_id = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,25 +150,25 @@ impl ::protobuf::Message for CLCOAJDPMJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IKOKEPJGHAF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.IKOKEPJGHAF);
         if self.IDIPBEPCIFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.IDIPBEPCIFG);
+            my_size += ::protobuf::rt::uint32_size(2, self.IDIPBEPCIFG);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        if self.GEPHKCPLAJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GEPHKCPLAJF);
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.stage_id);
         }
         for value in &self.GEPKDDNJING {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GEPHKCPLAJF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GEPHKCPLAJF);
-        }
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.stage_id);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,24 +176,24 @@ impl ::protobuf::Message for CLCOAJDPMJN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.IKOKEPJGHAF)?;
+        os.write_repeated_packed_uint32(1, &self.IKOKEPJGHAF)?;
         if self.IDIPBEPCIFG != 0 {
-            os.write_uint32(6, self.IDIPBEPCIFG)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        for v in &self.GEPKDDNJING {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.GEPHKCPLAJF != 0 {
-            os.write_uint32(11, self.GEPHKCPLAJF)?;
+            os.write_uint32(2, self.IDIPBEPCIFG)?;
         }
         if self.is_win != false {
-            os.write_bool(13, self.is_win)?;
+            os.write_bool(9, self.is_win)?;
+        }
+        if self.GEPHKCPLAJF != 0 {
+            os.write_uint32(10, self.GEPHKCPLAJF)?;
         }
         if self.stage_id != 0 {
-            os.write_uint32(15, self.stage_id)?;
+            os.write_uint32(13, self.stage_id)?;
+        }
+        for v in &self.GEPKDDNJING {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,11 +214,11 @@ impl ::protobuf::Message for CLCOAJDPMJN {
     fn clear(&mut self) {
         self.IKOKEPJGHAF.clear();
         self.IDIPBEPCIFG = 0;
-        self.retcode = 0;
-        self.GEPKDDNJING.clear();
-        self.GEPHKCPLAJF = 0;
         self.is_win = false;
+        self.GEPHKCPLAJF = 0;
         self.stage_id = 0;
+        self.GEPKDDNJING.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
@@ -226,11 +226,11 @@ impl ::protobuf::Message for CLCOAJDPMJN {
         static instance: CLCOAJDPMJN = CLCOAJDPMJN {
             IKOKEPJGHAF: ::std::vec::Vec::new(),
             IDIPBEPCIFG: 0,
-            retcode: 0,
-            GEPKDDNJING: ::std::vec::Vec::new(),
-            GEPHKCPLAJF: 0,
             is_win: false,
+            GEPHKCPLAJF: 0,
             stage_id: 0,
+            GEPKDDNJING: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,12 +256,12 @@ impl ::protobuf::reflect::ProtobufValue for CLCOAJDPMJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CLCOAJDPMJN.proto\x1a\x11MBLAIDFENOE.proto\"\xef\x01\n\x0bCLCOAJDP\
-    MJN\x12\x20\n\x0bIKOKEPJGHAF\x18\x02\x20\x03(\rR\x0bIKOKEPJGHAF\x12\x20\
-    \n\x0bIDIPBEPCIFG\x18\x06\x20\x01(\rR\x0bIDIPBEPCIFG\x12\x18\n\x07retcod\
-    e\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bGEPKDDNJING\x18\x08\x20\x03(\
-    \x0b2\x0c.MBLAIDFENOER\x0bGEPKDDNJING\x12\x20\n\x0bGEPHKCPLAJF\x18\x0b\
-    \x20\x01(\rR\x0bGEPHKCPLAJF\x12\x15\n\x06is_win\x18\r\x20\x01(\x08R\x05i\
-    sWin\x12\x19\n\x08stage_id\x18\x0f\x20\x01(\rR\x07stageIdb\x06proto3\
+    MJN\x12\x20\n\x0bIKOKEPJGHAF\x18\x01\x20\x03(\rR\x0bIKOKEPJGHAF\x12\x20\
+    \n\x0bIDIPBEPCIFG\x18\x02\x20\x01(\rR\x0bIDIPBEPCIFG\x12\x15\n\x06is_win\
+    \x18\t\x20\x01(\x08R\x05isWin\x12\x20\n\x0bGEPHKCPLAJF\x18\n\x20\x01(\rR\
+    \x0bGEPHKCPLAJF\x12\x19\n\x08stage_id\x18\r\x20\x01(\rR\x07stageId\x12.\
+    \n\x0bGEPKDDNJING\x18\x0e\x20\x03(\x0b2\x0c.MBLAIDFENOER\x0bGEPKDDNJING\
+    \x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

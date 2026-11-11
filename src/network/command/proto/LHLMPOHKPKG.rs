@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHLMPOHKPKG {
     // message fields
+    // @@protoc_insertion_point(field:LHLMPOHKPKG.section_id)
+    pub section_id: u32,
     // @@protoc_insertion_point(field:LHLMPOHKPKG.DCAHJELNJNP)
     pub DCAHJELNJNP: u32,
     // @@protoc_insertion_point(field:LHLMPOHKPKG.CJCCMAACJDB)
     pub CJCCMAACJDB: u32,
-    // @@protoc_insertion_point(field:LHLMPOHKPKG.section_id)
-    pub section_id: u32,
     // message oneof groups
     pub MMHKPJJNHDK: ::std::option::Option<lhlmpohkpkg::MMHKPJJNHDK>,
     // special fields
@@ -52,7 +52,7 @@ impl LHLMPOHKPKG {
         ::std::default::Default::default()
     }
 
-    // .KEEPBBDICFN GFCEGEPFCDB = 1939;
+    // .KEEPBBDICFN GFCEGEPFCDB = 97;
 
     pub fn GFCEGEPFCDB(&self) -> &super::KEEPBBDICFN::KEEPBBDICFN {
         match self.MMHKPJJNHDK {
@@ -105,6 +105,11 @@ impl LHLMPOHKPKG {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "section_id",
+            |m: &LHLMPOHKPKG| { &m.section_id },
+            |m: &mut LHLMPOHKPKG| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DCAHJELNJNP",
             |m: &LHLMPOHKPKG| { &m.DCAHJELNJNP },
             |m: &mut LHLMPOHKPKG| { &mut m.DCAHJELNJNP },
@@ -113,11 +118,6 @@ impl LHLMPOHKPKG {
             "CJCCMAACJDB",
             |m: &LHLMPOHKPKG| { &m.CJCCMAACJDB },
             |m: &mut LHLMPOHKPKG| { &mut m.CJCCMAACJDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &LHLMPOHKPKG| { &m.section_id },
-            |m: &mut LHLMPOHKPKG| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KEEPBBDICFN::KEEPBBDICFN>(
             "GFCEGEPFCDB",
@@ -146,15 +146,15 @@ impl ::protobuf::Message for LHLMPOHKPKG {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 48 => {
+                    self.section_id = is.read_uint32()?;
+                },
+                56 => {
                     self.DCAHJELNJNP = is.read_uint32()?;
                 },
                 64 => {
                     self.CJCCMAACJDB = is.read_uint32()?;
                 },
-                120 => {
-                    self.section_id = is.read_uint32()?;
-                },
-                15514 => {
+                778 => {
                     self.MMHKPJJNHDK = ::std::option::Option::Some(lhlmpohkpkg::MMHKPJJNHDK::GFCEGEPFCDB(is.read_message()?));
                 },
                 tag => {
@@ -169,14 +169,14 @@ impl ::protobuf::Message for LHLMPOHKPKG {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.section_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.section_id);
+        }
         if self.DCAHJELNJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DCAHJELNJNP);
+            my_size += ::protobuf::rt::uint32_size(7, self.DCAHJELNJNP);
         }
         if self.CJCCMAACJDB != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.CJCCMAACJDB);
-        }
-        if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.section_id);
         }
         if let ::std::option::Option::Some(ref v) = self.MMHKPJJNHDK {
             match v {
@@ -192,19 +192,19 @@ impl ::protobuf::Message for LHLMPOHKPKG {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.section_id != 0 {
+            os.write_uint32(6, self.section_id)?;
+        }
         if self.DCAHJELNJNP != 0 {
-            os.write_uint32(6, self.DCAHJELNJNP)?;
+            os.write_uint32(7, self.DCAHJELNJNP)?;
         }
         if self.CJCCMAACJDB != 0 {
             os.write_uint32(8, self.CJCCMAACJDB)?;
         }
-        if self.section_id != 0 {
-            os.write_uint32(15, self.section_id)?;
-        }
         if let ::std::option::Option::Some(ref v) = self.MMHKPJJNHDK {
             match v {
                 &lhlmpohkpkg::MMHKPJJNHDK::GFCEGEPFCDB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1939, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(97, v, os)?;
                 },
             };
         }
@@ -225,18 +225,18 @@ impl ::protobuf::Message for LHLMPOHKPKG {
     }
 
     fn clear(&mut self) {
+        self.section_id = 0;
         self.DCAHJELNJNP = 0;
         self.CJCCMAACJDB = 0;
-        self.section_id = 0;
         self.MMHKPJJNHDK = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHLMPOHKPKG {
         static instance: LHLMPOHKPKG = LHLMPOHKPKG {
+            section_id: 0,
             DCAHJELNJNP: 0,
             CJCCMAACJDB: 0,
-            section_id: 0,
             MMHKPJJNHDK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -290,12 +290,11 @@ pub mod lhlmpohkpkg {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LHLMPOHKPKG.proto\x1a\x11KEEPBBDICFN.proto\"\xb2\x01\n\x0bLHLMPOHK\
-    PKG\x12\x20\n\x0bDCAHJELNJNP\x18\x06\x20\x01(\rR\x0bDCAHJELNJNP\x12\x20\
-    \n\x0bCJCCMAACJDB\x18\x08\x20\x01(\rR\x0bCJCCMAACJDB\x12\x1d\n\nsection_\
-    id\x18\x0f\x20\x01(\rR\tsectionId\x121\n\x0bGFCEGEPFCDB\x18\x93\x0f\x20\
-    \x01(\x0b2\x0c.KEEPBBDICFNH\0R\x0bGFCEGEPFCDBB\r\n\x0bMMHKPJJNHDKb\x06pr\
-    oto3\
+    \n\x11LHLMPOHKPKG.proto\x1a\x11KEEPBBDICFN.proto\"\xb1\x01\n\x0bLHLMPOHK\
+    PKG\x12\x1d\n\nsection_id\x18\x06\x20\x01(\rR\tsectionId\x12\x20\n\x0bDC\
+    AHJELNJNP\x18\x07\x20\x01(\rR\x0bDCAHJELNJNP\x12\x20\n\x0bCJCCMAACJDB\
+    \x18\x08\x20\x01(\rR\x0bCJCCMAACJDB\x120\n\x0bGFCEGEPFCDB\x18a\x20\x01(\
+    \x0b2\x0c.KEEPBBDICFNH\0R\x0bGFCEGEPFCDBB\r\n\x0bMMHKPJJNHDKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                80 => {
                     self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.BDPIMPJOJBK.value());
+            my_size += ::protobuf::rt::int32_size(10, self.BDPIMPJOJBK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AiPamSendMsgScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AiPamSendMsgScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17AiPamSendMsgScRsp.proto\x1a\x11FKNKNLGMACL.proto\"]\n\x11AiPamSend\
-    MsgScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bB\
-    DPIMPJOJBK\x18\r\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBKb\x06proto\
+    MsgScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bB\
+    DPIMPJOJBK\x18\n\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBKb\x06proto\
     3\
 ";
 

@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.CBMBOBNCKMO = is.read_uint64()?;
                 },
-                40 => {
+                96 => {
                     self.FOGGEJIIJCM = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CBMBOBNCKMO != 0 {
-            my_size += ::protobuf::rt::uint64_size(3, self.CBMBOBNCKMO);
+            my_size += ::protobuf::rt::uint64_size(5, self.CBMBOBNCKMO);
         }
         if self.FOGGEJIIJCM != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CBMBOBNCKMO != 0 {
-            os.write_uint64(3, self.CBMBOBNCKMO)?;
+            os.write_uint64(5, self.CBMBOBNCKMO)?;
         }
         if self.FOGGEJIIJCM != false {
-            os.write_bool(5, self.FOGGEJIIJCM)?;
+            os.write_bool(12, self.FOGGEJIIJCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetOfferedCardPieceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'PlanetFesGetOfferedCardPieceCsReq.proto\"g\n!PlanetFesGetOfferedCardP\
-    ieceCsReq\x12\x20\n\x0bCBMBOBNCKMO\x18\x03\x20\x01(\x04R\x0bCBMBOBNCKMO\
-    \x12\x20\n\x0bFOGGEJIIJCM\x18\x05\x20\x01(\x08R\x0bFOGGEJIIJCMb\x06proto\
+    ieceCsReq\x12\x20\n\x0bCBMBOBNCKMO\x18\x05\x20\x01(\x04R\x0bCBMBOBNCKMO\
+    \x12\x20\n\x0bFOGGEJIIJCM\x18\x0c\x20\x01(\x08R\x0bFOGGEJIIJCMb\x06proto\
     3\
 ";
 

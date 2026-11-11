@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrainPetDiyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IAPPNHBCEKO)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrainPetDiyCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IAPPNHBCEKO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPetDiyCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16TrainPetDiyCsReq.proto\x1a\x11HANFHCOHGBP.proto\"B\n\x10TrainPetDi\
-    yCsReq\x12.\n\x0bIAPPNHBCEKO\x18\x0c\x20\x01(\x0b2\x0c.HANFHCOHGBPR\x0bI\
+    yCsReq\x12.\n\x0bIAPPNHBCEKO\x18\x0b\x20\x01(\x0b2\x0c.HANFHCOHGBPR\x0bI\
     APPNHBCEKOb\x06proto3\
 ";
 

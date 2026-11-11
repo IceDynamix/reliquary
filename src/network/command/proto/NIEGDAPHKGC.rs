@@ -33,13 +33,15 @@ pub struct NIEGDAPHKGC {
     // @@protoc_insertion_point(field:NIEGDAPHKGC.KOJFHFAKKFO)
     pub KOJFHFAKKFO: u32,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.trait_effect_list)
-    pub trait_effect_list: ::std::vec::Vec<super::H_f0728c95::H_f0728c95>,
+    pub trait_effect_list: ::std::vec::Vec<super::H_48df8966::H_48df8966>,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.KOJMGCBLKKA)
     pub KOJMGCBLKKA: ::std::vec::Vec<super::MHFNFINKJKP::MHFNFINKJKP>,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.BPJKHDNBPOE)
     pub BPJKHDNBPOE: u32,
     // @@protoc_insertion_point(field:NIEGDAPHKGC.AFKKLDMAEDJ)
     pub AFKKLDMAEDJ: u32,
+    // @@protoc_insertion_point(field:NIEGDAPHKGC.ADONFGKMCMM)
+    pub ADONFGKMCMM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NIEGDAPHKGC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,7 +59,7 @@ impl NIEGDAPHKGC {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(6);
+        let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_id",
@@ -88,6 +90,11 @@ impl NIEGDAPHKGC {
             "AFKKLDMAEDJ",
             |m: &NIEGDAPHKGC| { &m.AFKKLDMAEDJ },
             |m: &mut NIEGDAPHKGC| { &mut m.AFKKLDMAEDJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ADONFGKMCMM",
+            |m: &NIEGDAPHKGC| { &m.ADONFGKMCMM },
+            |m: &mut NIEGDAPHKGC| { &mut m.ADONFGKMCMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NIEGDAPHKGC>(
             "NIEGDAPHKGC",
@@ -125,6 +132,9 @@ impl ::protobuf::Message for NIEGDAPHKGC {
                 56 => {
                     self.AFKKLDMAEDJ = is.read_uint32()?;
                 },
+                64 => {
+                    self.ADONFGKMCMM = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -157,6 +167,9 @@ impl ::protobuf::Message for NIEGDAPHKGC {
         if self.AFKKLDMAEDJ != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.AFKKLDMAEDJ);
         }
+        if self.ADONFGKMCMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ADONFGKMCMM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -181,6 +194,9 @@ impl ::protobuf::Message for NIEGDAPHKGC {
         if self.AFKKLDMAEDJ != 0 {
             os.write_uint32(7, self.AFKKLDMAEDJ)?;
         }
+        if self.ADONFGKMCMM != 0 {
+            os.write_uint32(8, self.ADONFGKMCMM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -204,6 +220,7 @@ impl ::protobuf::Message for NIEGDAPHKGC {
         self.KOJMGCBLKKA.clear();
         self.BPJKHDNBPOE = 0;
         self.AFKKLDMAEDJ = 0;
+        self.ADONFGKMCMM = 0;
         self.special_fields.clear();
     }
 
@@ -215,6 +232,7 @@ impl ::protobuf::Message for NIEGDAPHKGC {
             KOJMGCBLKKA: ::std::vec::Vec::new(),
             BPJKHDNBPOE: 0,
             AFKKLDMAEDJ: 0,
+            ADONFGKMCMM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for NIEGDAPHKGC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NIEGDAPHKGC.proto\x1a\x10H_f0728c95.proto\x1a\x11MHFNFINKJKP.proto\
-    \"\xf7\x01\n\x0bNIEGDAPHKGC\x12\x19\n\x08trait_id\x18\x01\x20\x01(\rR\
+    \n\x11NIEGDAPHKGC.proto\x1a\x10H_48df8966.proto\x1a\x11MHFNFINKJKP.proto\
+    \"\x99\x02\n\x0bNIEGDAPHKGC\x12\x19\n\x08trait_id\x18\x01\x20\x01(\rR\
     \x07traitId\x12\x20\n\x0bKOJFHFAKKFO\x18\x02\x20\x01(\rR\x0bKOJFHFAKKFO\
-    \x127\n\x11trait_effect_list\x18\x03\x20\x03(\x0b2\x0b.H_f0728c95R\x0ftr\
+    \x127\n\x11trait_effect_list\x18\x03\x20\x03(\x0b2\x0b.H_48df8966R\x0ftr\
     aitEffectList\x12.\n\x0bKOJMGCBLKKA\x18\x05\x20\x03(\x0b2\x0c.MHFNFINKJK\
     PR\x0bKOJMGCBLKKA\x12\x20\n\x0bBPJKHDNBPOE\x18\x06\x20\x01(\rR\x0bBPJKHD\
-    NBPOE\x12\x20\n\x0bAFKKLDMAEDJ\x18\x07\x20\x01(\rR\x0bAFKKLDMAEDJb\x06pr\
-    oto3\
+    NBPOE\x12\x20\n\x0bAFKKLDMAEDJ\x18\x07\x20\x01(\rR\x0bAFKKLDMAEDJ\x12\
+    \x20\n\x0bADONFGKMCMM\x18\x08\x20\x01(\rR\x0bADONFGKMCMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,7 +282,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_f0728c95::file_descriptor().clone());
+            deps.push(super::H_48df8966::file_descriptor().clone());
             deps.push(super::MHFNFINKJKP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NIEGDAPHKGC::generated_message_descriptor_data());

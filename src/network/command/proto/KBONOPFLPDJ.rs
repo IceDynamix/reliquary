@@ -79,10 +79,10 @@ impl ::protobuf::Message for KBONOPFLPDJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                72 => {
                     self.max_score = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.raid_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KBONOPFLPDJ {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(9, self.max_score);
         }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.raid_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KBONOPFLPDJ {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.max_score != 0 {
-            os.write_uint32(3, self.max_score)?;
+            os.write_uint32(9, self.max_score)?;
         }
         if self.raid_id != 0 {
-            os.write_uint32(11, self.raid_id)?;
+            os.write_uint32(12, self.raid_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for KBONOPFLPDJ {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KBONOPFLPDJ.proto\"C\n\x0bKBONOPFLPDJ\x12\x1b\n\tmax_score\x18\x03\
-    \x20\x01(\rR\x08maxScore\x12\x17\n\x07raid_id\x18\x0b\x20\x01(\rR\x06rai\
+    \n\x11KBONOPFLPDJ.proto\"C\n\x0bKBONOPFLPDJ\x12\x1b\n\tmax_score\x18\t\
+    \x20\x01(\rR\x08maxScore\x12\x17\n\x07raid_id\x18\x0c\x20\x01(\rR\x06rai\
     dIdb\x06proto3\
 ";
 

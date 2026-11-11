@@ -79,10 +79,10 @@ impl ::protobuf::Message for HBONEFMPKKO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                48 => {
                     self.MMFGAJNCAOA = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for HBONEFMPKKO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MMFGAJNCAOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MMFGAJNCAOA);
+            my_size += ::protobuf::rt::uint32_size(6, self.MMFGAJNCAOA);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.progress);
+            my_size += ::protobuf::rt::uint32_size(8, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for HBONEFMPKKO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MMFGAJNCAOA != 0 {
-            os.write_uint32(11, self.MMFGAJNCAOA)?;
+            os.write_uint32(6, self.MMFGAJNCAOA)?;
         }
         if self.progress != 0 {
-            os.write_uint32(14, self.progress)?;
+            os.write_uint32(8, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for HBONEFMPKKO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HBONEFMPKKO.proto\"K\n\x0bHBONEFMPKKO\x12\x20\n\x0bMMFGAJNCAOA\x18\
-    \x0b\x20\x01(\rR\x0bMMFGAJNCAOA\x12\x1a\n\x08progress\x18\x0e\x20\x01(\r\
+    \x06\x20\x01(\rR\x0bMMFGAJNCAOA\x12\x1a\n\x08progress\x18\x08\x20\x01(\r\
     R\x08progressb\x06proto3\
 ";
 

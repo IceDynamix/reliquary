@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BlindBoxOpenBoxCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.MFLLLJHBDAI)
-    pub MFLLLJHBDAI: u32,
-    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.simulate_magic)
-    pub simulate_magic: u32,
+    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.GACKJLBPKGD)
+    pub GACKJLBPKGD: u32,
     // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.CANDEKPIMCC)
     pub CANDEKPIMCC: u32,
     // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.BBPMLKCBLKB)
     pub BBPMLKCBLKB: ::protobuf::MessageField<super::AHBLKPAJDPI::AHBLKPAJDPI>,
+    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.MFLLLJHBDAI)
+    pub MFLLLJHBDAI: u32,
     // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.ANMILKKMMIM)
     pub ANMILKKMMIM: u32,
-    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.GACKJLBPKGD)
-    pub GACKJLBPKGD: u32,
+    // @@protoc_insertion_point(field:BlindBoxOpenBoxCsReq.simulate_magic)
+    pub simulate_magic: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BlindBoxOpenBoxCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,14 +60,9 @@ impl BlindBoxOpenBoxCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFLLLJHBDAI",
-            |m: &BlindBoxOpenBoxCsReq| { &m.MFLLLJHBDAI },
-            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.MFLLLJHBDAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "simulate_magic",
-            |m: &BlindBoxOpenBoxCsReq| { &m.simulate_magic },
-            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.simulate_magic },
+            "GACKJLBPKGD",
+            |m: &BlindBoxOpenBoxCsReq| { &m.GACKJLBPKGD },
+            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.GACKJLBPKGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CANDEKPIMCC",
@@ -80,14 +75,19 @@ impl BlindBoxOpenBoxCsReq {
             |m: &mut BlindBoxOpenBoxCsReq| { &mut m.BBPMLKCBLKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFLLLJHBDAI",
+            |m: &BlindBoxOpenBoxCsReq| { &m.MFLLLJHBDAI },
+            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.MFLLLJHBDAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ANMILKKMMIM",
             |m: &BlindBoxOpenBoxCsReq| { &m.ANMILKKMMIM },
             |m: &mut BlindBoxOpenBoxCsReq| { &mut m.ANMILKKMMIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GACKJLBPKGD",
-            |m: &BlindBoxOpenBoxCsReq| { &m.GACKJLBPKGD },
-            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.GACKJLBPKGD },
+            "simulate_magic",
+            |m: &BlindBoxOpenBoxCsReq| { &m.simulate_magic },
+            |m: &mut BlindBoxOpenBoxCsReq| { &mut m.simulate_magic },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BlindBoxOpenBoxCsReq>(
             "BlindBoxOpenBoxCsReq",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for BlindBoxOpenBoxCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MFLLLJHBDAI = is.read_uint32()?;
+                16 => {
+                    self.GACKJLBPKGD = is.read_uint32()?;
                 },
                 32 => {
-                    self.simulate_magic = is.read_uint32()?;
-                },
-                40 => {
                     self.CANDEKPIMCC = is.read_uint32()?;
                 },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BBPMLKCBLKB)?;
+                },
+                48 => {
+                    self.MFLLLJHBDAI = is.read_uint32()?;
                 },
                 96 => {
                     self.ANMILKKMMIM = is.read_uint32()?;
                 },
-                112 => {
-                    self.GACKJLBPKGD = is.read_uint32()?;
+                120 => {
+                    self.simulate_magic = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,24 +137,24 @@ impl ::protobuf::Message for BlindBoxOpenBoxCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFLLLJHBDAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MFLLLJHBDAI);
-        }
-        if self.simulate_magic != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.simulate_magic);
+        if self.GACKJLBPKGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.GACKJLBPKGD);
         }
         if self.CANDEKPIMCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CANDEKPIMCC);
+            my_size += ::protobuf::rt::uint32_size(4, self.CANDEKPIMCC);
         }
         if let Some(v) = self.BBPMLKCBLKB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.MFLLLJHBDAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MFLLLJHBDAI);
+        }
         if self.ANMILKKMMIM != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.ANMILKKMMIM);
         }
-        if self.GACKJLBPKGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GACKJLBPKGD);
+        if self.simulate_magic != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.simulate_magic);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,23 +162,23 @@ impl ::protobuf::Message for BlindBoxOpenBoxCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFLLLJHBDAI != 0 {
-            os.write_uint32(1, self.MFLLLJHBDAI)?;
-        }
-        if self.simulate_magic != 0 {
-            os.write_uint32(4, self.simulate_magic)?;
+        if self.GACKJLBPKGD != 0 {
+            os.write_uint32(2, self.GACKJLBPKGD)?;
         }
         if self.CANDEKPIMCC != 0 {
-            os.write_uint32(5, self.CANDEKPIMCC)?;
+            os.write_uint32(4, self.CANDEKPIMCC)?;
         }
         if let Some(v) = self.BBPMLKCBLKB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.MFLLLJHBDAI != 0 {
+            os.write_uint32(6, self.MFLLLJHBDAI)?;
         }
         if self.ANMILKKMMIM != 0 {
             os.write_uint32(12, self.ANMILKKMMIM)?;
         }
-        if self.GACKJLBPKGD != 0 {
-            os.write_uint32(14, self.GACKJLBPKGD)?;
+        if self.simulate_magic != 0 {
+            os.write_uint32(15, self.simulate_magic)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -197,23 +197,23 @@ impl ::protobuf::Message for BlindBoxOpenBoxCsReq {
     }
 
     fn clear(&mut self) {
-        self.MFLLLJHBDAI = 0;
-        self.simulate_magic = 0;
+        self.GACKJLBPKGD = 0;
         self.CANDEKPIMCC = 0;
         self.BBPMLKCBLKB.clear();
+        self.MFLLLJHBDAI = 0;
         self.ANMILKKMMIM = 0;
-        self.GACKJLBPKGD = 0;
+        self.simulate_magic = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BlindBoxOpenBoxCsReq {
         static instance: BlindBoxOpenBoxCsReq = BlindBoxOpenBoxCsReq {
-            MFLLLJHBDAI: 0,
-            simulate_magic: 0,
+            GACKJLBPKGD: 0,
             CANDEKPIMCC: 0,
             BBPMLKCBLKB: ::protobuf::MessageField::none(),
+            MFLLLJHBDAI: 0,
             ANMILKKMMIM: 0,
-            GACKJLBPKGD: 0,
+            simulate_magic: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,12 +239,12 @@ impl ::protobuf::reflect::ProtobufValue for BlindBoxOpenBoxCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aBlindBoxOpenBoxCsReq.proto\x1a\x11AHBLKPAJDPI.proto\"\xf5\x01\n\
-    \x14BlindBoxOpenBoxCsReq\x12\x20\n\x0bMFLLLJHBDAI\x18\x01\x20\x01(\rR\
-    \x0bMFLLLJHBDAI\x12%\n\x0esimulate_magic\x18\x04\x20\x01(\rR\rsimulateMa\
-    gic\x12\x20\n\x0bCANDEKPIMCC\x18\x05\x20\x01(\rR\x0bCANDEKPIMCC\x12.\n\
-    \x0bBBPMLKCBLKB\x18\n\x20\x01(\x0b2\x0c.AHBLKPAJDPIR\x0bBBPMLKCBLKB\x12\
-    \x20\n\x0bANMILKKMMIM\x18\x0c\x20\x01(\rR\x0bANMILKKMMIM\x12\x20\n\x0bGA\
-    CKJLBPKGD\x18\x0e\x20\x01(\rR\x0bGACKJLBPKGDb\x06proto3\
+    \x14BlindBoxOpenBoxCsReq\x12\x20\n\x0bGACKJLBPKGD\x18\x02\x20\x01(\rR\
+    \x0bGACKJLBPKGD\x12\x20\n\x0bCANDEKPIMCC\x18\x04\x20\x01(\rR\x0bCANDEKPI\
+    MCC\x12.\n\x0bBBPMLKCBLKB\x18\x05\x20\x01(\x0b2\x0c.AHBLKPAJDPIR\x0bBBPM\
+    LKCBLKB\x12\x20\n\x0bMFLLLJHBDAI\x18\x06\x20\x01(\rR\x0bMFLLLJHBDAI\x12\
+    \x20\n\x0bANMILKKMMIM\x18\x0c\x20\x01(\rR\x0bANMILKKMMIM\x12%\n\x0esimul\
+    ate_magic\x18\x0f\x20\x01(\rR\rsimulateMagicb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

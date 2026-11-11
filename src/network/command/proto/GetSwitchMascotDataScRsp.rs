@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchMascotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.NBFJHDJBLCF)
-    pub NBFJHDJBLCF: u32,
     // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.NBFJHDJBLCF)
+    pub NBFJHDJBLCF: u32,
     // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.JNOEHPJJPOF)
     pub JNOEHPJJPOF: ::std::vec::Vec<super::BKAHEDAHNHL::BKAHEDAHNHL>,
     // special fields
@@ -54,14 +54,14 @@ impl GetSwitchMascotDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBFJHDJBLCF",
-            |m: &GetSwitchMascotDataScRsp| { &m.NBFJHDJBLCF },
-            |m: &mut GetSwitchMascotDataScRsp| { &mut m.NBFJHDJBLCF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwitchMascotDataScRsp| { &m.retcode },
             |m: &mut GetSwitchMascotDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NBFJHDJBLCF",
+            |m: &GetSwitchMascotDataScRsp| { &m.NBFJHDJBLCF },
+            |m: &mut GetSwitchMascotDataScRsp| { &mut m.NBFJHDJBLCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "JNOEHPJJPOF",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.NBFJHDJBLCF = is.read_uint32()?;
-                },
-                80 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                64 => {
+                    self.NBFJHDJBLCF = is.read_uint32()?;
+                },
+                74 => {
                     self.JNOEHPJJPOF.push(is.read_message()?);
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NBFJHDJBLCF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.NBFJHDJBLCF);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.NBFJHDJBLCF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NBFJHDJBLCF);
         }
         for value in &self.JNOEHPJJPOF {
             let len = value.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NBFJHDJBLCF != 0 {
-            os.write_uint32(4, self.NBFJHDJBLCF)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.NBFJHDJBLCF != 0 {
+            os.write_uint32(8, self.NBFJHDJBLCF)?;
         }
         for v in &self.JNOEHPJJPOF {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.NBFJHDJBLCF = 0;
         self.retcode = 0;
+        self.NBFJHDJBLCF = 0;
         self.JNOEHPJJPOF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchMascotDataScRsp {
         static instance: GetSwitchMascotDataScRsp = GetSwitchMascotDataScRsp {
-            NBFJHDJBLCF: 0,
             retcode: 0,
+            NBFJHDJBLCF: 0,
             JNOEHPJJPOF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchMascotDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetSwitchMascotDataScRsp.proto\x1a\x11BKAHEDAHNHL.proto\"\x86\x01\
-    \n\x18GetSwitchMascotDataScRsp\x12\x20\n\x0bNBFJHDJBLCF\x18\x04\x20\x01(\
-    \rR\x0bNBFJHDJBLCF\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\
-    .\n\x0bJNOEHPJJPOF\x18\x0c\x20\x03(\x0b2\x0c.BKAHEDAHNHLR\x0bJNOEHPJJPOF\
-    b\x06proto3\
+    \n\x18GetSwitchMascotDataScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\
+    \x07retcode\x12\x20\n\x0bNBFJHDJBLCF\x18\x08\x20\x01(\rR\x0bNBFJHDJBLCF\
+    \x12.\n\x0bJNOEHPJJPOF\x18\t\x20\x03(\x0b2\x0c.BKAHEDAHNHLR\x0bJNOEHPJJP\
+    OFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

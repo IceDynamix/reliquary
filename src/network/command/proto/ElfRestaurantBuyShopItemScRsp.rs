@@ -96,13 +96,13 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemScRsp {
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLAPKNMCIBI)?;
                 },
-                64 => {
+                48 => {
                     self.ICNCMMEEJKM = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.FKMFHAAJMMF)?;
                 },
                 tag => {
@@ -122,10 +122,10 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.ICNCMMEEJKM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ICNCMMEEJKM);
+            my_size += ::protobuf::rt::uint32_size(6, self.ICNCMMEEJKM);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if let Some(v) = self.FKMFHAAJMMF.as_ref() {
             let len = v.compute_size();
@@ -141,13 +141,13 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.ICNCMMEEJKM != 0 {
-            os.write_uint32(8, self.ICNCMMEEJKM)?;
+            os.write_uint32(6, self.ICNCMMEEJKM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if let Some(v) = self.FKMFHAAJMMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -206,9 +206,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ElfRestaurantBuyShopItemScRsp.proto\x1a\x12ItemCostData.proto\x1a\x0e\
     ItemList.proto\"\xb9\x01\n\x1dElfRestaurantBuyShopItemScRsp\x12+\n\x0bGL\
     APKNMCIBI\x18\x05\x20\x01(\x0b2\t.ItemListR\x0bGLAPKNMCIBI\x12\x20\n\x0b\
-    ICNCMMEEJKM\x18\x08\x20\x01(\rR\x0bICNCMMEEJKM\x12\x18\n\x07retcode\x18\
-    \n\x20\x01(\rR\x07retcode\x12/\n\x0bFKMFHAAJMMF\x18\x0c\x20\x01(\x0b2\r.\
-    ItemCostDataR\x0bFKMFHAAJMMFb\x06proto3\
+    ICNCMMEEJKM\x18\x06\x20\x01(\rR\x0bICNCMMEEJKM\x12\x18\n\x07retcode\x18\
+    \x0b\x20\x01(\rR\x07retcode\x12/\n\x0bFKMFHAAJMMF\x18\x0e\x20\x01(\x0b2\
+    \r.ItemCostDataR\x0bFKMFHAAJMMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRecommendListInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendRecommendListInfoScRsp.friend_recommend_list)
-    pub friend_recommend_list: ::std::vec::Vec<super::FriendRecommendInfo::FriendRecommendInfo>,
     // @@protoc_insertion_point(field:GetFriendRecommendListInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetFriendRecommendListInfoScRsp.friend_recommend_list)
+    pub friend_recommend_list: ::std::vec::Vec<super::FriendRecommendInfo::FriendRecommendInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRecommendListInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetFriendRecommendListInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "friend_recommend_list",
-            |m: &GetFriendRecommendListInfoScRsp| { &m.friend_recommend_list },
-            |m: &mut GetFriendRecommendListInfoScRsp| { &mut m.friend_recommend_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendRecommendListInfoScRsp| { &m.retcode },
             |m: &mut GetFriendRecommendListInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "friend_recommend_list",
+            |m: &GetFriendRecommendListInfoScRsp| { &m.friend_recommend_list },
+            |m: &mut GetFriendRecommendListInfoScRsp| { &mut m.friend_recommend_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendRecommendListInfoScRsp>(
             "GetFriendRecommendListInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.friend_recommend_list.push(is.read_message()?);
-                },
-                104 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    self.friend_recommend_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        }
         for value in &self.friend_recommend_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.friend_recommend_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
+        for v in &self.friend_recommend_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetFriendRecommendListInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.friend_recommend_list.clear();
         self.retcode = 0;
+        self.friend_recommend_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRecommendListInfoScRsp {
         static instance: GetFriendRecommendListInfoScRsp = GetFriendRecommendListInfoScRsp {
-            friend_recommend_list: ::std::vec::Vec::new(),
             retcode: 0,
+            friend_recommend_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendListInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GetFriendRecommendListInfoScRsp.proto\x1a\x19FriendRecommendInfo.prot\
-    o\"\x85\x01\n\x1fGetFriendRecommendListInfoScRsp\x12H\n\x15friend_recomm\
-    end_list\x18\x06\x20\x03(\x0b2\x14.FriendRecommendInfoR\x13friendRecomme\
-    ndList\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    o\"\x85\x01\n\x1fGetFriendRecommendListInfoScRsp\x12\x18\n\x07retcode\
+    \x18\x01\x20\x01(\rR\x07retcode\x12H\n\x15friend_recommend_list\x18\x0f\
+    \x20\x03(\x0b2\x14.FriendRecommendInfoR\x13friendRecommendListb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IdleLiveEndDungeonCsReq {
     // message fields
+    // @@protoc_insertion_point(field:IdleLiveEndDungeonCsReq.HNMLBLGGOLB)
+    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // @@protoc_insertion_point(field:IdleLiveEndDungeonCsReq.FEODDIKPAOA)
     pub FEODDIKPAOA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:IdleLiveEndDungeonCsReq.DHLLPOBKLIO)
     pub DHLLPOBKLIO: bool,
-    // @@protoc_insertion_point(field:IdleLiveEndDungeonCsReq.HNMLBLGGOLB)
-    pub HNMLBLGGOLB: ::protobuf::MessageField<super::BIKNPJPLDAO::BIKNPJPLDAO>,
     // special fields
     // @@protoc_insertion_point(special_field:IdleLiveEndDungeonCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl IdleLiveEndDungeonCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
+            "HNMLBLGGOLB",
+            |m: &IdleLiveEndDungeonCsReq| { &m.HNMLBLGGOLB },
+            |m: &mut IdleLiveEndDungeonCsReq| { &mut m.HNMLBLGGOLB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FEODDIKPAOA",
             |m: &IdleLiveEndDungeonCsReq| { &m.FEODDIKPAOA },
@@ -62,11 +67,6 @@ impl IdleLiveEndDungeonCsReq {
             "DHLLPOBKLIO",
             |m: &IdleLiveEndDungeonCsReq| { &m.DHLLPOBKLIO },
             |m: &mut IdleLiveEndDungeonCsReq| { &mut m.DHLLPOBKLIO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BIKNPJPLDAO::BIKNPJPLDAO>(
-            "HNMLBLGGOLB",
-            |m: &IdleLiveEndDungeonCsReq| { &m.HNMLBLGGOLB },
-            |m: &mut IdleLiveEndDungeonCsReq| { &mut m.HNMLBLGGOLB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveEndDungeonCsReq>(
             "IdleLiveEndDungeonCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for IdleLiveEndDungeonCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
+                },
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.FEODDIKPAOA)?;
                 },
-                8 => {
+                96 => {
                     self.FEODDIKPAOA.push(is.read_uint32()?);
                 },
-                32 => {
+                104 => {
                     self.DHLLPOBKLIO = is.read_bool()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HNMLBLGGOLB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for IdleLiveEndDungeonCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.FEODDIKPAOA);
-        if self.DHLLPOBKLIO != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.HNMLBLGGOLB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FEODDIKPAOA);
+        if self.DHLLPOBKLIO != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for IdleLiveEndDungeonCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.FEODDIKPAOA)?;
-        if self.DHLLPOBKLIO != false {
-            os.write_bool(4, self.DHLLPOBKLIO)?;
-        }
         if let Some(v) = self.HNMLBLGGOLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.FEODDIKPAOA)?;
+        if self.DHLLPOBKLIO != false {
+            os.write_bool(13, self.DHLLPOBKLIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for IdleLiveEndDungeonCsReq {
     }
 
     fn clear(&mut self) {
+        self.HNMLBLGGOLB.clear();
         self.FEODDIKPAOA.clear();
         self.DHLLPOBKLIO = false;
-        self.HNMLBLGGOLB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IdleLiveEndDungeonCsReq {
         static instance: IdleLiveEndDungeonCsReq = IdleLiveEndDungeonCsReq {
+            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             FEODDIKPAOA: ::std::vec::Vec::new(),
             DHLLPOBKLIO: false,
-            HNMLBLGGOLB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveEndDungeonCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dIdleLiveEndDungeonCsReq.proto\x1a\x11BIKNPJPLDAO.proto\"\x8d\x01\n\
-    \x17IdleLiveEndDungeonCsReq\x12\x20\n\x0bFEODDIKPAOA\x18\x01\x20\x03(\rR\
-    \x0bFEODDIKPAOA\x12\x20\n\x0bDHLLPOBKLIO\x18\x04\x20\x01(\x08R\x0bDHLLPO\
-    BKLIO\x12.\n\x0bHNMLBLGGOLB\x18\x05\x20\x01(\x0b2\x0c.BIKNPJPLDAOR\x0bHN\
-    MLBLGGOLBb\x06proto3\
+    \x17IdleLiveEndDungeonCsReq\x12.\n\x0bHNMLBLGGOLB\x18\x02\x20\x01(\x0b2\
+    \x0c.BIKNPJPLDAOR\x0bHNMLBLGGOLB\x12\x20\n\x0bFEODDIKPAOA\x18\x0c\x20\
+    \x03(\rR\x0bFEODDIKPAOA\x12\x20\n\x0bDHLLPOBKLIO\x18\r\x20\x01(\x08R\x0b\
+    DHLLPOBKLIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

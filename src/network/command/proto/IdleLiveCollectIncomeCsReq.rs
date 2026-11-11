@@ -82,7 +82,7 @@ impl ::protobuf::Message for IdleLiveCollectIncomeCsReq {
                 48 => {
                     self.ECBJLAKHOCF = is.read_bool()?;
                 },
-                104 => {
+                64 => {
                     self.LOFNHPHCCIL = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for IdleLiveCollectIncomeCsReq {
             my_size += 1 + 1;
         }
         if self.LOFNHPHCCIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LOFNHPHCCIL);
+            my_size += ::protobuf::rt::uint32_size(8, self.LOFNHPHCCIL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for IdleLiveCollectIncomeCsReq {
             os.write_bool(6, self.ECBJLAKHOCF)?;
         }
         if self.LOFNHPHCCIL != 0 {
-            os.write_uint32(13, self.LOFNHPHCCIL)?;
+            os.write_uint32(8, self.LOFNHPHCCIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveCollectIncomeCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20IdleLiveCollectIncomeCsReq.proto\"`\n\x1aIdleLiveCollectIncomeCsRe\
     q\x12\x20\n\x0bECBJLAKHOCF\x18\x06\x20\x01(\x08R\x0bECBJLAKHOCF\x12\x20\
-    \n\x0bLOFNHPHCCIL\x18\r\x20\x01(\rR\x0bLOFNHPHCCILb\x06proto3\
+    \n\x0bLOFNHPHCCIL\x18\x08\x20\x01(\rR\x0bLOFNHPHCCILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

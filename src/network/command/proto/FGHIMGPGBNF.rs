@@ -86,16 +86,16 @@ impl ::protobuf::Message for FGHIMGPGBNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.HELJNHNDCJP = is.read_bool()?;
                 },
-                40 => {
+                24 => {
                     self.FOHIFIMHENN = is.read_uint32()?;
                 },
-                90 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.OGOILMLPDEO)?;
                 },
-                88 => {
+                120 => {
                     self.OGOILMLPDEO.push(is.read_uint32()?);
                 },
                 tag => {
@@ -114,9 +114,9 @@ impl ::protobuf::Message for FGHIMGPGBNF {
             my_size += 1 + 1;
         }
         if self.FOHIFIMHENN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FOHIFIMHENN);
+            my_size += ::protobuf::rt::uint32_size(3, self.FOHIFIMHENN);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.OGOILMLPDEO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OGOILMLPDEO);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -124,12 +124,12 @@ impl ::protobuf::Message for FGHIMGPGBNF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HELJNHNDCJP != false {
-            os.write_bool(4, self.HELJNHNDCJP)?;
+            os.write_bool(2, self.HELJNHNDCJP)?;
         }
         if self.FOHIFIMHENN != 0 {
-            os.write_uint32(5, self.FOHIFIMHENN)?;
+            os.write_uint32(3, self.FOHIFIMHENN)?;
         }
-        os.write_repeated_packed_uint32(11, &self.OGOILMLPDEO)?;
+        os.write_repeated_packed_uint32(15, &self.OGOILMLPDEO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for FGHIMGPGBNF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FGHIMGPGBNF.proto\"s\n\x0bFGHIMGPGBNF\x12\x20\n\x0bHELJNHNDCJP\x18\
-    \x04\x20\x01(\x08R\x0bHELJNHNDCJP\x12\x20\n\x0bFOHIFIMHENN\x18\x05\x20\
-    \x01(\rR\x0bFOHIFIMHENN\x12\x20\n\x0bOGOILMLPDEO\x18\x0b\x20\x03(\rR\x0b\
+    \x02\x20\x01(\x08R\x0bHELJNHNDCJP\x12\x20\n\x0bFOHIFIMHENN\x18\x03\x20\
+    \x01(\rR\x0bFOHIFIMHENN\x12\x20\n\x0bOGOILMLPDEO\x18\x0f\x20\x03(\rR\x0b\
     OGOILMLPDEOb\x06proto3\
 ";
 

@@ -32,10 +32,10 @@ pub struct DiscardRelicCsReq {
     pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.DKPCAIGPHNO)
     pub DKPCAIGPHNO: bool,
-    // @@protoc_insertion_point(field:DiscardRelicCsReq.IFEEJKMACHF)
-    pub IFEEJKMACHF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
     // @@protoc_insertion_point(field:DiscardRelicCsReq.KDGCPMGOPPJ)
     pub KDGCPMGOPPJ: u64,
+    // @@protoc_insertion_point(field:DiscardRelicCsReq.IFEEJKMACHF)
+    pub IFEEJKMACHF: ::protobuf::EnumOrUnknown<super::RelicDiscardType::RelicDiscardType>,
     // special fields
     // @@protoc_insertion_point(special_field:DiscardRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,14 +66,14 @@ impl DiscardRelicCsReq {
             |m: &mut DiscardRelicCsReq| { &mut m.DKPCAIGPHNO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFEEJKMACHF",
-            |m: &DiscardRelicCsReq| { &m.IFEEJKMACHF },
-            |m: &mut DiscardRelicCsReq| { &mut m.IFEEJKMACHF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KDGCPMGOPPJ",
             |m: &DiscardRelicCsReq| { &m.KDGCPMGOPPJ },
             |m: &mut DiscardRelicCsReq| { &mut m.KDGCPMGOPPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFEEJKMACHF",
+            |m: &DiscardRelicCsReq| { &m.IFEEJKMACHF },
+            |m: &mut DiscardRelicCsReq| { &mut m.IFEEJKMACHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DiscardRelicCsReq>(
             "DiscardRelicCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                16 => {
+                40 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
-                32 => {
+                48 => {
                     self.DKPCAIGPHNO = is.read_bool()?;
                 },
-                40 => {
-                    self.IFEEJKMACHF = is.read_enum_or_unknown()?;
-                },
-                80 => {
+                64 => {
                     self.KDGCPMGOPPJ = is.read_uint64()?;
+                },
+                112 => {
+                    self.IFEEJKMACHF = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.relic_ids);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.relic_ids);
         if self.DKPCAIGPHNO != false {
             my_size += 1 + 1;
         }
-        if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single) {
-            my_size += ::protobuf::rt::int32_size(5, self.IFEEJKMACHF.value());
-        }
         if self.KDGCPMGOPPJ != 0 {
-            my_size += ::protobuf::rt::uint64_size(10, self.KDGCPMGOPPJ);
+            my_size += ::protobuf::rt::uint64_size(8, self.KDGCPMGOPPJ);
+        }
+        if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single) {
+            my_size += ::protobuf::rt::int32_size(14, self.IFEEJKMACHF.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.relic_ids)?;
+        os.write_repeated_packed_uint32(5, &self.relic_ids)?;
         if self.DKPCAIGPHNO != false {
-            os.write_bool(4, self.DKPCAIGPHNO)?;
-        }
-        if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.IFEEJKMACHF))?;
+            os.write_bool(6, self.DKPCAIGPHNO)?;
         }
         if self.KDGCPMGOPPJ != 0 {
-            os.write_uint64(10, self.KDGCPMGOPPJ)?;
+            os.write_uint64(8, self.KDGCPMGOPPJ)?;
+        }
+        if self.IFEEJKMACHF != ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IFEEJKMACHF))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for DiscardRelicCsReq {
     fn clear(&mut self) {
         self.relic_ids.clear();
         self.DKPCAIGPHNO = false;
-        self.IFEEJKMACHF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single);
         self.KDGCPMGOPPJ = 0;
+        self.IFEEJKMACHF = ::protobuf::EnumOrUnknown::new(super::RelicDiscardType::RelicDiscardType::RelicDiscardType_Single);
         self.special_fields.clear();
     }
 
@@ -174,8 +174,8 @@ impl ::protobuf::Message for DiscardRelicCsReq {
         static instance: DiscardRelicCsReq = DiscardRelicCsReq {
             relic_ids: ::std::vec::Vec::new(),
             DKPCAIGPHNO: false,
-            IFEEJKMACHF: ::protobuf::EnumOrUnknown::from_i32(0),
             KDGCPMGOPPJ: 0,
+            IFEEJKMACHF: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for DiscardRelicCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DiscardRelicCsReq.proto\x1a\x16RelicDiscardType.proto\"\xa9\x01\n\
-    \x11DiscardRelicCsReq\x12\x1b\n\trelic_ids\x18\x02\x20\x03(\rR\x08relicI\
-    ds\x12\x20\n\x0bDKPCAIGPHNO\x18\x04\x20\x01(\x08R\x0bDKPCAIGPHNO\x123\n\
-    \x0bIFEEJKMACHF\x18\x05\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0bIFEEJKMAC\
-    HF\x12\x20\n\x0bKDGCPMGOPPJ\x18\n\x20\x01(\x04R\x0bKDGCPMGOPPJb\x06proto\
-    3\
+    \x11DiscardRelicCsReq\x12\x1b\n\trelic_ids\x18\x05\x20\x03(\rR\x08relicI\
+    ds\x12\x20\n\x0bDKPCAIGPHNO\x18\x06\x20\x01(\x08R\x0bDKPCAIGPHNO\x12\x20\
+    \n\x0bKDGCPMGOPPJ\x18\x08\x20\x01(\x04R\x0bKDGCPMGOPPJ\x123\n\x0bIFEEJKM\
+    ACHF\x18\x0e\x20\x01(\x0e2\x11.RelicDiscardTypeR\x0bIFEEJKMACHFb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

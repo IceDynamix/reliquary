@@ -30,14 +30,14 @@ pub struct MatchThreeV2PvpFinishScNotify {
     // message fields
     // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.OJNGBIBGHBL)
     pub OJNGBIBGHBL: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.BCAKPNCHIIJ)
-    pub BCAKPNCHIIJ: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
     // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.HKEACDBJCOD)
     pub HKEACDBJCOD: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.BCAKPNCHIIJ)
+    pub BCAKPNCHIIJ: u32,
     // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.JDFPKAMFHAP)
     pub JDFPKAMFHAP: ::protobuf::MessageField<super::LAJGLHCCNED::LAJGLHCCNED>,
+    // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
     // @@protoc_insertion_point(field:MatchThreeV2PvpFinishScNotify.BJBJLBIOPKA)
     pub BJBJLBIOPKA: ::protobuf::MessageField<super::JKEBEAKOHJJ::JKEBEAKOHJJ>,
     // special fields
@@ -65,24 +65,24 @@ impl MatchThreeV2PvpFinishScNotify {
             |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.OJNGBIBGHBL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCAKPNCHIIJ",
-            |m: &MatchThreeV2PvpFinishScNotify| { &m.BCAKPNCHIIJ },
-            |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.BCAKPNCHIIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &MatchThreeV2PvpFinishScNotify| { &m.reason },
-            |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HKEACDBJCOD",
             |m: &MatchThreeV2PvpFinishScNotify| { &m.HKEACDBJCOD },
             |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.HKEACDBJCOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BCAKPNCHIIJ",
+            |m: &MatchThreeV2PvpFinishScNotify| { &m.BCAKPNCHIIJ },
+            |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.BCAKPNCHIIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LAJGLHCCNED::LAJGLHCCNED>(
             "JDFPKAMFHAP",
             |m: &MatchThreeV2PvpFinishScNotify| { &m.JDFPKAMFHAP },
             |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.JDFPKAMFHAP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &MatchThreeV2PvpFinishScNotify| { &m.reason },
+            |m: &mut MatchThreeV2PvpFinishScNotify| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKEBEAKOHJJ::JKEBEAKOHJJ>(
             "BJBJLBIOPKA",
@@ -107,20 +107,20 @@ impl ::protobuf::Message for MatchThreeV2PvpFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.OJNGBIBGHBL = is.read_uint32()?;
                 },
-                56 => {
-                    self.BCAKPNCHIIJ = is.read_uint32()?;
-                },
-                88 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                104 => {
+                72 => {
                     self.HKEACDBJCOD = is.read_enum_or_unknown()?;
                 },
-                114 => {
+                80 => {
+                    self.BCAKPNCHIIJ = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDFPKAMFHAP)?;
+                },
+                112 => {
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJBJLBIOPKA)?;
@@ -138,20 +138,20 @@ impl ::protobuf::Message for MatchThreeV2PvpFinishScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.OJNGBIBGHBL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OJNGBIBGHBL);
-        }
-        if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BCAKPNCHIIJ);
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
+            my_size += ::protobuf::rt::uint32_size(5, self.OJNGBIBGHBL);
         }
         if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            my_size += ::protobuf::rt::int32_size(13, self.HKEACDBJCOD.value());
+            my_size += ::protobuf::rt::int32_size(9, self.HKEACDBJCOD.value());
+        }
+        if self.BCAKPNCHIIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BCAKPNCHIIJ);
         }
         if let Some(v) = self.JDFPKAMFHAP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
+            my_size += ::protobuf::rt::int32_size(14, self.reason.value());
         }
         if let Some(v) = self.BJBJLBIOPKA.as_ref() {
             let len = v.compute_size();
@@ -164,19 +164,19 @@ impl ::protobuf::Message for MatchThreeV2PvpFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.OJNGBIBGHBL != 0 {
-            os.write_uint32(4, self.OJNGBIBGHBL)?;
-        }
-        if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(7, self.BCAKPNCHIIJ)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_uint32(5, self.OJNGBIBGHBL)?;
         }
         if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
+        }
+        if self.BCAKPNCHIIJ != 0 {
+            os.write_uint32(10, self.BCAKPNCHIIJ)?;
         }
         if let Some(v) = self.JDFPKAMFHAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if let Some(v) = self.BJBJLBIOPKA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -199,10 +199,10 @@ impl ::protobuf::Message for MatchThreeV2PvpFinishScNotify {
 
     fn clear(&mut self) {
         self.OJNGBIBGHBL = 0;
-        self.BCAKPNCHIIJ = 0;
-        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.HKEACDBJCOD = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
+        self.BCAKPNCHIIJ = 0;
         self.JDFPKAMFHAP.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.BJBJLBIOPKA.clear();
         self.special_fields.clear();
     }
@@ -210,10 +210,10 @@ impl ::protobuf::Message for MatchThreeV2PvpFinishScNotify {
     fn default_instance() -> &'static MatchThreeV2PvpFinishScNotify {
         static instance: MatchThreeV2PvpFinishScNotify = MatchThreeV2PvpFinishScNotify {
             OJNGBIBGHBL: 0,
-            BCAKPNCHIIJ: 0,
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             HKEACDBJCOD: ::protobuf::EnumOrUnknown::from_i32(0),
+            BCAKPNCHIIJ: 0,
             JDFPKAMFHAP: ::protobuf::MessageField::none(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             BJBJLBIOPKA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -242,11 +242,11 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n#MatchThreeV2PvpFinishScNotify.proto\x1a\x13FightGameMode.proto\x1a\
     \x11JKEBEAKOHJJ.proto\x1a\x11LAJGLHCCNED.proto\x1a\x11NPPEMMILLCO.proto\
     \"\x9b\x02\n\x1dMatchThreeV2PvpFinishScNotify\x12\x20\n\x0bOJNGBIBGHBL\
-    \x18\x04\x20\x01(\rR\x0bOJNGBIBGHBL\x12\x20\n\x0bBCAKPNCHIIJ\x18\x07\x20\
-    \x01(\rR\x0bBCAKPNCHIIJ\x12$\n\x06reason\x18\x0b\x20\x01(\x0e2\x0c.NPPEM\
-    MILLCOR\x06reason\x120\n\x0bHKEACDBJCOD\x18\r\x20\x01(\x0e2\x0e.FightGam\
-    eModeR\x0bHKEACDBJCOD\x12.\n\x0bJDFPKAMFHAP\x18\x0e\x20\x01(\x0b2\x0c.LA\
-    JGLHCCNEDR\x0bJDFPKAMFHAP\x12.\n\x0bBJBJLBIOPKA\x18\x0f\x20\x01(\x0b2\
+    \x18\x05\x20\x01(\rR\x0bOJNGBIBGHBL\x120\n\x0bHKEACDBJCOD\x18\t\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x0bHKEACDBJCOD\x12\x20\n\x0bBCAKPNCHIIJ\x18\n\
+    \x20\x01(\rR\x0bBCAKPNCHIIJ\x12.\n\x0bJDFPKAMFHAP\x18\r\x20\x01(\x0b2\
+    \x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12$\n\x06reason\x18\x0e\x20\x01(\x0e2\
+    \x0c.NPPEMMILLCOR\x06reason\x12.\n\x0bBJBJLBIOPKA\x18\x0f\x20\x01(\x0b2\
     \x0c.JKEBEAKOHJJR\x0bBJBJLBIOPKAb\x06proto3\
 ";
 

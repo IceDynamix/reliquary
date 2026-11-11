@@ -79,10 +79,10 @@ impl ::protobuf::Message for LAAMIAJFOMC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                48 => {
                     self.affix_id = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.PNJCLPNFIGA = is.read_bool()?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for LAAMIAJFOMC {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.affix_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.affix_id);
         }
         if self.PNJCLPNFIGA != false {
             my_size += 1 + 1;
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LAAMIAJFOMC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.affix_id != 0 {
-            os.write_uint32(8, self.affix_id)?;
+            os.write_uint32(6, self.affix_id)?;
         }
         if self.PNJCLPNFIGA != false {
-            os.write_bool(12, self.PNJCLPNFIGA)?;
+            os.write_bool(14, self.PNJCLPNFIGA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for LAAMIAJFOMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LAAMIAJFOMC.proto\"J\n\x0bLAAMIAJFOMC\x12\x19\n\x08affix_id\x18\
-    \x08\x20\x01(\rR\x07affixId\x12\x20\n\x0bPNJCLPNFIGA\x18\x0c\x20\x01(\
+    \x06\x20\x01(\rR\x07affixId\x12\x20\n\x0bPNJCLPNFIGA\x18\x0e\x20\x01(\
     \x08R\x0bPNJCLPNFIGAb\x06proto3\
 ";
 

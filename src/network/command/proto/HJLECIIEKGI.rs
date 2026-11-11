@@ -48,105 +48,7 @@ impl HJLECIIEKGI {
         ::std::default::Default::default()
     }
 
-    // .OGAFHKMJELA AKDJGIJMHPJ = 2019;
-
-    pub fn AKDJGIJMHPJ(&self) -> &super::OGAFHKMJELA::OGAFHKMJELA {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref v)) => v,
-            _ => <super::OGAFHKMJELA::OGAFHKMJELA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_AKDJGIJMHPJ(&mut self) {
-        self.FGLIODAJFML = ::std::option::Option::None;
-    }
-
-    pub fn has_AKDJGIJMHPJ(&self) -> bool {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AKDJGIJMHPJ(&mut self, v: super::OGAFHKMJELA::OGAFHKMJELA) {
-        self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_AKDJGIJMHPJ(&mut self) -> &mut super::OGAFHKMJELA::OGAFHKMJELA {
-        if let ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(_)) = self.FGLIODAJFML {
-        } else {
-            self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(super::OGAFHKMJELA::OGAFHKMJELA::new()));
-        }
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_AKDJGIJMHPJ(&mut self) -> super::OGAFHKMJELA::OGAFHKMJELA {
-        if self.has_AKDJGIJMHPJ() {
-            match self.FGLIODAJFML.take() {
-                ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::OGAFHKMJELA::OGAFHKMJELA::new()
-        }
-    }
-
-    // .JEBGFIJPAPG LGBJDFHBIND = 2030;
-
-    pub fn LGBJDFHBIND(&self) -> &super::JEBGFIJPAPG::JEBGFIJPAPG {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref v)) => v,
-            _ => <super::JEBGFIJPAPG::JEBGFIJPAPG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LGBJDFHBIND(&mut self) {
-        self.FGLIODAJFML = ::std::option::Option::None;
-    }
-
-    pub fn has_LGBJDFHBIND(&self) -> bool {
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LGBJDFHBIND(&mut self, v: super::JEBGFIJPAPG::JEBGFIJPAPG) {
-        self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LGBJDFHBIND(&mut self) -> &mut super::JEBGFIJPAPG::JEBGFIJPAPG {
-        if let ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(_)) = self.FGLIODAJFML {
-        } else {
-            self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(super::JEBGFIJPAPG::JEBGFIJPAPG::new()));
-        }
-        match self.FGLIODAJFML {
-            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LGBJDFHBIND(&mut self) -> super::JEBGFIJPAPG::JEBGFIJPAPG {
-        if self.has_LGBJDFHBIND() {
-            match self.FGLIODAJFML.take() {
-                ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JEBGFIJPAPG::JEBGFIJPAPG::new()
-        }
-    }
-
-    // .AMEJEFBKPCH KLONPDNKBJF = 2043;
+    // .AMEJEFBKPCH KLONPDNKBJF = 719;
 
     pub fn KLONPDNKBJF(&self) -> &super::AMEJEFBKPCH::AMEJEFBKPCH {
         match self.FGLIODAJFML {
@@ -195,6 +97,104 @@ impl HJLECIIEKGI {
         }
     }
 
+    // .OGAFHKMJELA AKDJGIJMHPJ = 1034;
+
+    pub fn AKDJGIJMHPJ(&self) -> &super::OGAFHKMJELA::OGAFHKMJELA {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref v)) => v,
+            _ => <super::OGAFHKMJELA::OGAFHKMJELA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AKDJGIJMHPJ(&mut self) {
+        self.FGLIODAJFML = ::std::option::Option::None;
+    }
+
+    pub fn has_AKDJGIJMHPJ(&self) -> bool {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AKDJGIJMHPJ(&mut self, v: super::OGAFHKMJELA::OGAFHKMJELA) {
+        self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AKDJGIJMHPJ(&mut self) -> &mut super::OGAFHKMJELA::OGAFHKMJELA {
+        if let ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(_)) = self.FGLIODAJFML {
+        } else {
+            self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(super::OGAFHKMJELA::OGAFHKMJELA::new()));
+        }
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AKDJGIJMHPJ(&mut self) -> super::OGAFHKMJELA::OGAFHKMJELA {
+        if self.has_AKDJGIJMHPJ() {
+            match self.FGLIODAJFML.take() {
+                ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::OGAFHKMJELA::OGAFHKMJELA::new()
+        }
+    }
+
+    // .JEBGFIJPAPG LGBJDFHBIND = 1707;
+
+    pub fn LGBJDFHBIND(&self) -> &super::JEBGFIJPAPG::JEBGFIJPAPG {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref v)) => v,
+            _ => <super::JEBGFIJPAPG::JEBGFIJPAPG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LGBJDFHBIND(&mut self) {
+        self.FGLIODAJFML = ::std::option::Option::None;
+    }
+
+    pub fn has_LGBJDFHBIND(&self) -> bool {
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LGBJDFHBIND(&mut self, v: super::JEBGFIJPAPG::JEBGFIJPAPG) {
+        self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LGBJDFHBIND(&mut self) -> &mut super::JEBGFIJPAPG::JEBGFIJPAPG {
+        if let ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(_)) = self.FGLIODAJFML {
+        } else {
+            self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(super::JEBGFIJPAPG::JEBGFIJPAPG::new()));
+        }
+        match self.FGLIODAJFML {
+            ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LGBJDFHBIND(&mut self) -> super::JEBGFIJPAPG::JEBGFIJPAPG {
+        if self.has_LGBJDFHBIND() {
+            match self.FGLIODAJFML.take() {
+                ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JEBGFIJPAPG::JEBGFIJPAPG::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -202,6 +202,13 @@ impl HJLECIIEKGI {
             "queue_position",
             |m: &HJLECIIEKGI| { &m.queue_position },
             |m: &mut HJLECIIEKGI| { &mut m.queue_position },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AMEJEFBKPCH::AMEJEFBKPCH>(
+            "KLONPDNKBJF",
+            HJLECIIEKGI::has_KLONPDNKBJF,
+            HJLECIIEKGI::KLONPDNKBJF,
+            HJLECIIEKGI::mut_KLONPDNKBJF,
+            HJLECIIEKGI::set_KLONPDNKBJF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGAFHKMJELA::OGAFHKMJELA>(
             "AKDJGIJMHPJ",
@@ -216,13 +223,6 @@ impl HJLECIIEKGI {
             HJLECIIEKGI::LGBJDFHBIND,
             HJLECIIEKGI::mut_LGBJDFHBIND,
             HJLECIIEKGI::set_LGBJDFHBIND,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AMEJEFBKPCH::AMEJEFBKPCH>(
-            "KLONPDNKBJF",
-            HJLECIIEKGI::has_KLONPDNKBJF,
-            HJLECIIEKGI::KLONPDNKBJF,
-            HJLECIIEKGI::mut_KLONPDNKBJF,
-            HJLECIIEKGI::set_KLONPDNKBJF,
         ));
         oneofs.push(hjleciiekgi::FGLIODAJFML::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HJLECIIEKGI>(
@@ -243,17 +243,17 @@ impl ::protobuf::Message for HJLECIIEKGI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                104 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                16154 => {
+                5754 => {
+                    self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(is.read_message()?));
+                },
+                8274 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(is.read_message()?));
                 },
-                16242 => {
+                13658 => {
                     self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(is.read_message()?));
-                },
-                16346 => {
-                    self.FGLIODAJFML = ::std::option::Option::Some(hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -268,19 +268,19 @@ impl ::protobuf::Message for HJLECIIEKGI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
+                &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
                 &hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -293,18 +293,18 @@ impl ::protobuf::Message for HJLECIIEKGI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(8, self.queue_position)?;
+            os.write_uint32(13, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.FGLIODAJFML {
             match v {
+                &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(719, v, os)?;
+                },
                 &hjleciiekgi::FGLIODAJFML::AKDJGIJMHPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2019, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1034, v, os)?;
                 },
                 &hjleciiekgi::FGLIODAJFML::LGBJDFHBIND(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2030, v, os)?;
-                },
-                &hjleciiekgi::FGLIODAJFML::KLONPDNKBJF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2043, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1707, v, os)?;
                 },
             };
         }
@@ -366,12 +366,12 @@ pub mod hjleciiekgi {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:HJLECIIEKGI.FGLIODAJFML)
     pub enum FGLIODAJFML {
+        // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.KLONPDNKBJF)
+        KLONPDNKBJF(super::super::AMEJEFBKPCH::AMEJEFBKPCH),
         // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.AKDJGIJMHPJ)
         AKDJGIJMHPJ(super::super::OGAFHKMJELA::OGAFHKMJELA),
         // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.LGBJDFHBIND)
         LGBJDFHBIND(super::super::JEBGFIJPAPG::JEBGFIJPAPG),
-        // @@protoc_insertion_point(oneof_field:HJLECIIEKGI.KLONPDNKBJF)
-        KLONPDNKBJF(super::super::AMEJEFBKPCH::AMEJEFBKPCH),
     }
 
     impl ::protobuf::Oneof for FGLIODAJFML {
@@ -394,11 +394,11 @@ pub mod hjleciiekgi {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HJLECIIEKGI.proto\x1a\x11AMEJEFBKPCH.proto\x1a\x11JEBGFIJPAPG.prot\
     o\x1a\x11OGAFHKMJELA.proto\"\xdc\x01\n\x0bHJLECIIEKGI\x12%\n\x0equeue_po\
-    sition\x18\x08\x20\x01(\rR\rqueuePosition\x121\n\x0bAKDJGIJMHPJ\x18\xe3\
-    \x0f\x20\x01(\x0b2\x0c.OGAFHKMJELAH\0R\x0bAKDJGIJMHPJ\x121\n\x0bLGBJDFHB\
-    IND\x18\xee\x0f\x20\x01(\x0b2\x0c.JEBGFIJPAPGH\0R\x0bLGBJDFHBIND\x121\n\
-    \x0bKLONPDNKBJF\x18\xfb\x0f\x20\x01(\x0b2\x0c.AMEJEFBKPCHH\0R\x0bKLONPDN\
-    KBJFB\r\n\x0bFGLIODAJFMLb\x06proto3\
+    sition\x18\r\x20\x01(\rR\rqueuePosition\x121\n\x0bKLONPDNKBJF\x18\xcf\
+    \x05\x20\x01(\x0b2\x0c.AMEJEFBKPCHH\0R\x0bKLONPDNKBJF\x121\n\x0bAKDJGIJM\
+    HPJ\x18\x8a\x08\x20\x01(\x0b2\x0c.OGAFHKMJELAH\0R\x0bAKDJGIJMHPJ\x121\n\
+    \x0bLGBJDFHBIND\x18\xab\r\x20\x01(\x0b2\x0c.JEBGFIJPAPGH\0R\x0bLGBJDFHBI\
+    NDB\r\n\x0bFGLIODAJFMLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

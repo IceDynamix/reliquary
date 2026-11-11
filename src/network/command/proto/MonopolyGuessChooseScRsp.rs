@@ -82,7 +82,7 @@ impl ::protobuf::Message for MonopolyGuessChooseScRsp {
                 8 => {
                     self.HCFJIJHLJDM = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MonopolyGuessChooseScRsp {
             my_size += ::protobuf::rt::uint32_size(1, self.HCFJIJHLJDM);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for MonopolyGuessChooseScRsp {
             os.write_uint32(1, self.HCFJIJHLJDM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGuessChooseScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMonopolyGuessChooseScRsp.proto\"V\n\x18MonopolyGuessChooseScRsp\
     \x12\x20\n\x0bHCFJIJHLJDM\x18\x01\x20\x01(\rR\x0bHCFJIJHLJDM\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

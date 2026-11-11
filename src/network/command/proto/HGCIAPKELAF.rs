@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGCIAPKELAF {
     // message fields
-    // @@protoc_insertion_point(field:HGCIAPKELAF.PDFAHEKNHNJ)
-    pub PDFAHEKNHNJ: u32,
-    // @@protoc_insertion_point(field:HGCIAPKELAF.MABFMAFCEOA)
-    pub MABFMAFCEOA: u32,
     // @@protoc_insertion_point(field:HGCIAPKELAF.LFLFEKEAOCL)
     pub LFLFEKEAOCL: ::std::vec::Vec<super::OCGHBANLLOH::OCGHBANLLOH>,
+    // @@protoc_insertion_point(field:HGCIAPKELAF.MABFMAFCEOA)
+    pub MABFMAFCEOA: u32,
+    // @@protoc_insertion_point(field:HGCIAPKELAF.PDFAHEKNHNJ)
+    pub PDFAHEKNHNJ: u32,
     // @@protoc_insertion_point(field:HGCIAPKELAF.AHNGMINODKG)
     pub AHNGMINODKG: u32,
     // special fields
@@ -55,20 +55,20 @@ impl HGCIAPKELAF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDFAHEKNHNJ",
-            |m: &HGCIAPKELAF| { &m.PDFAHEKNHNJ },
-            |m: &mut HGCIAPKELAF| { &mut m.PDFAHEKNHNJ },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LFLFEKEAOCL",
+            |m: &HGCIAPKELAF| { &m.LFLFEKEAOCL },
+            |m: &mut HGCIAPKELAF| { &mut m.LFLFEKEAOCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MABFMAFCEOA",
             |m: &HGCIAPKELAF| { &m.MABFMAFCEOA },
             |m: &mut HGCIAPKELAF| { &mut m.MABFMAFCEOA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LFLFEKEAOCL",
-            |m: &HGCIAPKELAF| { &m.LFLFEKEAOCL },
-            |m: &mut HGCIAPKELAF| { &mut m.LFLFEKEAOCL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PDFAHEKNHNJ",
+            |m: &HGCIAPKELAF| { &m.PDFAHEKNHNJ },
+            |m: &mut HGCIAPKELAF| { &mut m.PDFAHEKNHNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AHNGMINODKG",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for HGCIAPKELAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.PDFAHEKNHNJ = is.read_uint32()?;
-                },
-                56 => {
-                    self.MABFMAFCEOA = is.read_uint32()?;
-                },
-                90 => {
+                10 => {
                     self.LFLFEKEAOCL.push(is.read_message()?);
                 },
-                120 => {
+                48 => {
+                    self.MABFMAFCEOA = is.read_uint32()?;
+                },
+                72 => {
+                    self.PDFAHEKNHNJ = is.read_uint32()?;
+                },
+                96 => {
                     self.AHNGMINODKG = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for HGCIAPKELAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PDFAHEKNHNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PDFAHEKNHNJ);
-        }
-        if self.MABFMAFCEOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.MABFMAFCEOA);
-        }
         for value in &self.LFLFEKEAOCL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.MABFMAFCEOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MABFMAFCEOA);
+        }
+        if self.PDFAHEKNHNJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.PDFAHEKNHNJ);
+        }
         if self.AHNGMINODKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AHNGMINODKG);
+            my_size += ::protobuf::rt::uint32_size(12, self.AHNGMINODKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for HGCIAPKELAF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PDFAHEKNHNJ != 0 {
-            os.write_uint32(2, self.PDFAHEKNHNJ)?;
-        }
-        if self.MABFMAFCEOA != 0 {
-            os.write_uint32(7, self.MABFMAFCEOA)?;
-        }
         for v in &self.LFLFEKEAOCL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.MABFMAFCEOA != 0 {
+            os.write_uint32(6, self.MABFMAFCEOA)?;
+        }
+        if self.PDFAHEKNHNJ != 0 {
+            os.write_uint32(9, self.PDFAHEKNHNJ)?;
+        }
         if self.AHNGMINODKG != 0 {
-            os.write_uint32(15, self.AHNGMINODKG)?;
+            os.write_uint32(12, self.AHNGMINODKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for HGCIAPKELAF {
     }
 
     fn clear(&mut self) {
-        self.PDFAHEKNHNJ = 0;
-        self.MABFMAFCEOA = 0;
         self.LFLFEKEAOCL.clear();
+        self.MABFMAFCEOA = 0;
+        self.PDFAHEKNHNJ = 0;
         self.AHNGMINODKG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGCIAPKELAF {
         static instance: HGCIAPKELAF = HGCIAPKELAF {
-            PDFAHEKNHNJ: 0,
-            MABFMAFCEOA: 0,
             LFLFEKEAOCL: ::std::vec::Vec::new(),
+            MABFMAFCEOA: 0,
+            PDFAHEKNHNJ: 0,
             AHNGMINODKG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for HGCIAPKELAF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGCIAPKELAF.proto\x1a\x11OCGHBANLLOH.proto\"\xa3\x01\n\x0bHGCIAPKE\
-    LAF\x12\x20\n\x0bPDFAHEKNHNJ\x18\x02\x20\x01(\rR\x0bPDFAHEKNHNJ\x12\x20\
-    \n\x0bMABFMAFCEOA\x18\x07\x20\x01(\rR\x0bMABFMAFCEOA\x12.\n\x0bLFLFEKEAO\
-    CL\x18\x0b\x20\x03(\x0b2\x0c.OCGHBANLLOHR\x0bLFLFEKEAOCL\x12\x20\n\x0bAH\
-    NGMINODKG\x18\x0f\x20\x01(\rR\x0bAHNGMINODKGb\x06proto3\
+    LAF\x12.\n\x0bLFLFEKEAOCL\x18\x01\x20\x03(\x0b2\x0c.OCGHBANLLOHR\x0bLFLF\
+    EKEAOCL\x12\x20\n\x0bMABFMAFCEOA\x18\x06\x20\x01(\rR\x0bMABFMAFCEOA\x12\
+    \x20\n\x0bPDFAHEKNHNJ\x18\t\x20\x01(\rR\x0bPDFAHEKNHNJ\x12\x20\n\x0bAHNG\
+    MINODKG\x18\x0c\x20\x01(\rR\x0bAHNGMINODKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

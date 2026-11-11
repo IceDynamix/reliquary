@@ -79,10 +79,10 @@ impl ::protobuf::Message for GANGPHPGFCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NKBIDLBLONC)?;
                 },
-                98 => {
+                114 => {
                     self.FNJNKKMNKIM.push(is.read_message()?);
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for GANGPHPGFCL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.NKBIDLBLONC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         for v in &self.FNJNKKMNKIM {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for GANGPHPGFCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GANGPHPGFCL.proto\x1a\x11BHBAILHMCOI.proto\x1a\x11LHLMPOHKPKG.prot\
-    o\"m\n\x0bGANGPHPGFCL\x12.\n\x0bNKBIDLBLONC\x18\x01\x20\x01(\x0b2\x0c.BH\
-    BAILHMCOIR\x0bNKBIDLBLONC\x12.\n\x0bFNJNKKMNKIM\x18\x0c\x20\x03(\x0b2\
+    o\"m\n\x0bGANGPHPGFCL\x12.\n\x0bNKBIDLBLONC\x18\x03\x20\x01(\x0b2\x0c.BH\
+    BAILHMCOIR\x0bNKBIDLBLONC\x12.\n\x0bFNJNKKMNKIM\x18\x0e\x20\x03(\x0b2\
     \x0c.LHLMPOHKPKGR\x0bFNJNKKMNKIMb\x06proto3\
 ";
 

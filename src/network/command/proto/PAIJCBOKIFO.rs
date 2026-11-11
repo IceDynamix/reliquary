@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAIJCBOKIFO {
     // message fields
-    // @@protoc_insertion_point(field:PAIJCBOKIFO.CAGDNHCOCKM)
-    pub CAGDNHCOCKM: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:PAIJCBOKIFO.PGACMFLCDID)
     pub PGACMFLCDID: u32,
     // @@protoc_insertion_point(field:PAIJCBOKIFO.MAJKFIMPOOF)
     pub MAJKFIMPOOF: u32,
+    // @@protoc_insertion_point(field:PAIJCBOKIFO.CAGDNHCOCKM)
+    pub CAGDNHCOCKM: ::protobuf::EnumOrUnknown<super::RogueRoomStatus::RogueRoomStatus>,
     // @@protoc_insertion_point(field:PAIJCBOKIFO.room_id)
     pub room_id: u32,
     // @@protoc_insertion_point(field:PAIJCBOKIFO.FCHHPCIDNGM)
@@ -58,11 +58,6 @@ impl PAIJCBOKIFO {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAGDNHCOCKM",
-            |m: &PAIJCBOKIFO| { &m.CAGDNHCOCKM },
-            |m: &mut PAIJCBOKIFO| { &mut m.CAGDNHCOCKM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PGACMFLCDID",
             |m: &PAIJCBOKIFO| { &m.PGACMFLCDID },
             |m: &mut PAIJCBOKIFO| { &mut m.PGACMFLCDID },
@@ -71,6 +66,11 @@ impl PAIJCBOKIFO {
             "MAJKFIMPOOF",
             |m: &PAIJCBOKIFO| { &m.MAJKFIMPOOF },
             |m: &mut PAIJCBOKIFO| { &mut m.MAJKFIMPOOF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CAGDNHCOCKM",
+            |m: &PAIJCBOKIFO| { &m.CAGDNHCOCKM },
+            |m: &mut PAIJCBOKIFO| { &mut m.CAGDNHCOCKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -100,16 +100,16 @@ impl ::protobuf::Message for PAIJCBOKIFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.CAGDNHCOCKM = is.read_enum_or_unknown()?;
-                },
-                64 => {
+                8 => {
                     self.PGACMFLCDID = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
                     self.MAJKFIMPOOF = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
+                    self.CAGDNHCOCKM = is.read_enum_or_unknown()?;
+                },
+                88 => {
                     self.room_id = is.read_uint32()?;
                 },
                 112 => {
@@ -127,17 +127,17 @@ impl ::protobuf::Message for PAIJCBOKIFO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CAGDNHCOCKM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
-            my_size += ::protobuf::rt::int32_size(3, self.CAGDNHCOCKM.value());
-        }
         if self.PGACMFLCDID != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PGACMFLCDID);
+            my_size += ::protobuf::rt::uint32_size(1, self.PGACMFLCDID);
         }
         if self.MAJKFIMPOOF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MAJKFIMPOOF);
+            my_size += ::protobuf::rt::uint32_size(4, self.MAJKFIMPOOF);
+        }
+        if self.CAGDNHCOCKM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
+            my_size += ::protobuf::rt::int32_size(6, self.CAGDNHCOCKM.value());
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.room_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.room_id);
         }
         if self.FCHHPCIDNGM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
             my_size += ::protobuf::rt::int32_size(14, self.FCHHPCIDNGM.value());
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PAIJCBOKIFO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CAGDNHCOCKM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.CAGDNHCOCKM))?;
-        }
         if self.PGACMFLCDID != 0 {
-            os.write_uint32(8, self.PGACMFLCDID)?;
+            os.write_uint32(1, self.PGACMFLCDID)?;
         }
         if self.MAJKFIMPOOF != 0 {
-            os.write_uint32(11, self.MAJKFIMPOOF)?;
+            os.write_uint32(4, self.MAJKFIMPOOF)?;
+        }
+        if self.CAGDNHCOCKM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.CAGDNHCOCKM))?;
         }
         if self.room_id != 0 {
-            os.write_uint32(13, self.room_id)?;
+            os.write_uint32(11, self.room_id)?;
         }
         if self.FCHHPCIDNGM != ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None) {
             os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.FCHHPCIDNGM))?;
@@ -180,9 +180,9 @@ impl ::protobuf::Message for PAIJCBOKIFO {
     }
 
     fn clear(&mut self) {
-        self.CAGDNHCOCKM = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None);
         self.PGACMFLCDID = 0;
         self.MAJKFIMPOOF = 0;
+        self.CAGDNHCOCKM = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None);
         self.room_id = 0;
         self.FCHHPCIDNGM = ::protobuf::EnumOrUnknown::new(super::RogueRoomStatus::RogueRoomStatus::RogueRoomStatus_None);
         self.special_fields.clear();
@@ -190,9 +190,9 @@ impl ::protobuf::Message for PAIJCBOKIFO {
 
     fn default_instance() -> &'static PAIJCBOKIFO {
         static instance: PAIJCBOKIFO = PAIJCBOKIFO {
-            CAGDNHCOCKM: ::protobuf::EnumOrUnknown::from_i32(0),
             PGACMFLCDID: 0,
             MAJKFIMPOOF: 0,
+            CAGDNHCOCKM: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
             FCHHPCIDNGM: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PAIJCBOKIFO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PAIJCBOKIFO.proto\x1a\x15RogueRoomStatus.proto\"\xd2\x01\n\x0bPAIJ\
-    CBOKIFO\x122\n\x0bCAGDNHCOCKM\x18\x03\x20\x01(\x0e2\x10.RogueRoomStatusR\
-    \x0bCAGDNHCOCKM\x12\x20\n\x0bPGACMFLCDID\x18\x08\x20\x01(\rR\x0bPGACMFLC\
-    DID\x12\x20\n\x0bMAJKFIMPOOF\x18\x0b\x20\x01(\rR\x0bMAJKFIMPOOF\x12\x17\
-    \n\x07room_id\x18\r\x20\x01(\rR\x06roomId\x122\n\x0bFCHHPCIDNGM\x18\x0e\
-    \x20\x01(\x0e2\x10.RogueRoomStatusR\x0bFCHHPCIDNGMb\x06proto3\
+    CBOKIFO\x12\x20\n\x0bPGACMFLCDID\x18\x01\x20\x01(\rR\x0bPGACMFLCDID\x12\
+    \x20\n\x0bMAJKFIMPOOF\x18\x04\x20\x01(\rR\x0bMAJKFIMPOOF\x122\n\x0bCAGDN\
+    HCOCKM\x18\x06\x20\x01(\x0e2\x10.RogueRoomStatusR\x0bCAGDNHCOCKM\x12\x17\
+    \n\x07room_id\x18\x0b\x20\x01(\rR\x06roomId\x122\n\x0bFCHHPCIDNGM\x18\
+    \x0e\x20\x01(\x0e2\x10.RogueRoomStatusR\x0bFCHHPCIDNGMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

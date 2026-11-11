@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAssistHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.EFONJLMDFIH)
-    pub EFONJLMDFIH: u32,
-    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.OFEKHCHHOFD)
-    pub OFEKHCHHOFD: u32,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.OFEKHCHHOFD)
+    pub OFEKHCHHOFD: u32,
+    // @@protoc_insertion_point(field:GetAssistHistoryScRsp.EFONJLMDFIH)
+    pub EFONJLMDFIH: u32,
     // @@protoc_insertion_point(field:GetAssistHistoryScRsp.LLIPLPNDIMC)
     pub LLIPLPNDIMC: u32,
     // special fields
@@ -56,9 +56,9 @@ impl GetAssistHistoryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFONJLMDFIH",
-            |m: &GetAssistHistoryScRsp| { &m.EFONJLMDFIH },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.EFONJLMDFIH },
+            "retcode",
+            |m: &GetAssistHistoryScRsp| { &m.retcode },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OFEKHCHHOFD",
@@ -66,9 +66,9 @@ impl GetAssistHistoryScRsp {
             |m: &mut GetAssistHistoryScRsp| { &mut m.OFEKHCHHOFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetAssistHistoryScRsp| { &m.retcode },
-            |m: &mut GetAssistHistoryScRsp| { &mut m.retcode },
+            "EFONJLMDFIH",
+            |m: &GetAssistHistoryScRsp| { &m.EFONJLMDFIH },
+            |m: &mut GetAssistHistoryScRsp| { &mut m.EFONJLMDFIH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LLIPLPNDIMC",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.EFONJLMDFIH = is.read_uint32()?;
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 48 => {
                     self.OFEKHCHHOFD = is.read_uint32()?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                88 => {
+                    self.EFONJLMDFIH = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.LLIPLPNDIMC = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EFONJLMDFIH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EFONJLMDFIH);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.OFEKHCHHOFD != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.OFEKHCHHOFD);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        if self.EFONJLMDFIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EFONJLMDFIH);
         }
         if self.LLIPLPNDIMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LLIPLPNDIMC);
+            my_size += ::protobuf::rt::uint32_size(13, self.LLIPLPNDIMC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EFONJLMDFIH != 0 {
-            os.write_uint32(2, self.EFONJLMDFIH)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         if self.OFEKHCHHOFD != 0 {
             os.write_uint32(6, self.OFEKHCHHOFD)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+        if self.EFONJLMDFIH != 0 {
+            os.write_uint32(11, self.EFONJLMDFIH)?;
         }
         if self.LLIPLPNDIMC != 0 {
-            os.write_uint32(10, self.LLIPLPNDIMC)?;
+            os.write_uint32(13, self.LLIPLPNDIMC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for GetAssistHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.EFONJLMDFIH = 0;
-        self.OFEKHCHHOFD = 0;
         self.retcode = 0;
+        self.OFEKHCHHOFD = 0;
+        self.EFONJLMDFIH = 0;
         self.LLIPLPNDIMC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAssistHistoryScRsp {
         static instance: GetAssistHistoryScRsp = GetAssistHistoryScRsp {
-            EFONJLMDFIH: 0,
-            OFEKHCHHOFD: 0,
             retcode: 0,
+            OFEKHCHHOFD: 0,
+            EFONJLMDFIH: 0,
             LLIPLPNDIMC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAssistHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetAssistHistoryScRsp.proto\"\x97\x01\n\x15GetAssistHistoryScRsp\
-    \x12\x20\n\x0bEFONJLMDFIH\x18\x02\x20\x01(\rR\x0bEFONJLMDFIH\x12\x20\n\
-    \x0bOFEKHCHHOFD\x18\x06\x20\x01(\rR\x0bOFEKHCHHOFD\x12\x18\n\x07retcode\
-    \x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bLLIPLPNDIMC\x18\n\x20\x01(\rR\
-    \x0bLLIPLPNDIMCb\x06proto3\
+    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\x0bOFEKHC\
+    HHOFD\x18\x06\x20\x01(\rR\x0bOFEKHCHHOFD\x12\x20\n\x0bEFONJLMDFIH\x18\
+    \x0b\x20\x01(\rR\x0bEFONJLMDFIH\x12\x20\n\x0bLLIPLPNDIMC\x18\r\x20\x01(\
+    \rR\x0bLLIPLPNDIMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

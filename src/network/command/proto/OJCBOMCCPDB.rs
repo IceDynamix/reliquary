@@ -32,14 +32,14 @@ pub struct OJCBOMCCPDB {
     pub OPHONCKPNMG: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.battle_wave_id)
     pub battle_wave_id: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_4a14c5ec)
-    pub H_4a14c5ec: u32,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_6111c325)
+    pub H_6111c325: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.EHNJDIDABHD)
     pub EHNJDIDABHD: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_9f60ad73)
-    pub H_9f60ad73: ::std::vec::Vec<super::NIEGDAPHKGC::NIEGDAPHKGC>,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_07e2b75b)
-    pub H_07e2b75b: ::std::vec::Vec<super::BJGJBNJDLIK::BJGJBNJDLIK>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_0b0e9102)
+    pub H_0b0e9102: ::std::vec::Vec<super::NIEGDAPHKGC::NIEGDAPHKGC>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_cbc00ec7)
+    pub H_cbc00ec7: ::std::vec::Vec<super::BJGJBNJDLIK::BJGJBNJDLIK>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.IFIIOIIKJHO)
     pub IFIIOIIKJHO: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.sync_augment_info)
@@ -50,14 +50,14 @@ pub struct OJCBOMCCPDB {
     pub HHEPCDMBJFI: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.LJNGPCKPJLF)
     pub LJNGPCKPJLF: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_6c400f76)
-    pub H_6c400f76: ::std::vec::Vec<super::KHFHMJEMBOF::KHFHMJEMBOF>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_adf92063)
+    pub H_adf92063: ::std::vec::Vec<super::KHFHMJEMBOF::KHFHMJEMBOF>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.is_overlock)
     pub is_overlock: bool,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.AACGBEBGDPE)
     pub AACGBEBGDPE: u32,
-    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_16c77f78)
-    pub H_16c77f78: ::std::vec::Vec<super::PKDNDNABKII::PKDNDNABKII>,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.H_fbf5cb9e)
+    pub H_fbf5cb9e: ::std::vec::Vec<super::PKDNDNABKII::PKDNDNABKII>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.KCOMPKMJCMC)
     pub KCOMPKMJCMC: ::std::vec::Vec<super::MLCLJKDKCDG::MLCLJKDKCDG>,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.LODNFLMBIEH)
@@ -68,6 +68,8 @@ pub struct OJCBOMCCPDB {
     pub NFBJINKLLLK: u32,
     // @@protoc_insertion_point(field:OJCBOMCCPDB.MEHFNAEMMFE)
     pub MEHFNAEMMFE: bool,
+    // @@protoc_insertion_point(field:OJCBOMCCPDB.stage_info)
+    pub stage_info: ::protobuf::MessageField<super::KJFEHJMAIAA::KJFEHJMAIAA>,
     // special fields
     // @@protoc_insertion_point(special_field:OJCBOMCCPDB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -85,7 +87,7 @@ impl OJCBOMCCPDB {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(20);
+        let mut fields = ::std::vec::Vec::with_capacity(21);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OPHONCKPNMG",
@@ -98,9 +100,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.battle_wave_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_4a14c5ec",
-            |m: &OJCBOMCCPDB| { &m.H_4a14c5ec },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_4a14c5ec },
+            "H_6111c325",
+            |m: &OJCBOMCCPDB| { &m.H_6111c325 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_6111c325 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EHNJDIDABHD",
@@ -108,14 +110,14 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.EHNJDIDABHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_9f60ad73",
-            |m: &OJCBOMCCPDB| { &m.H_9f60ad73 },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_9f60ad73 },
+            "H_0b0e9102",
+            |m: &OJCBOMCCPDB| { &m.H_0b0e9102 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_0b0e9102 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_07e2b75b",
-            |m: &OJCBOMCCPDB| { &m.H_07e2b75b },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_07e2b75b },
+            "H_cbc00ec7",
+            |m: &OJCBOMCCPDB| { &m.H_cbc00ec7 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_cbc00ec7 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFIIOIIKJHO",
@@ -143,9 +145,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.LJNGPCKPJLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_6c400f76",
-            |m: &OJCBOMCCPDB| { &m.H_6c400f76 },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_6c400f76 },
+            "H_adf92063",
+            |m: &OJCBOMCCPDB| { &m.H_adf92063 },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_adf92063 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_overlock",
@@ -158,9 +160,9 @@ impl OJCBOMCCPDB {
             |m: &mut OJCBOMCCPDB| { &mut m.AACGBEBGDPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_16c77f78",
-            |m: &OJCBOMCCPDB| { &m.H_16c77f78 },
-            |m: &mut OJCBOMCCPDB| { &mut m.H_16c77f78 },
+            "H_fbf5cb9e",
+            |m: &OJCBOMCCPDB| { &m.H_fbf5cb9e },
+            |m: &mut OJCBOMCCPDB| { &mut m.H_fbf5cb9e },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KCOMPKMJCMC",
@@ -187,6 +189,11 @@ impl OJCBOMCCPDB {
             |m: &OJCBOMCCPDB| { &m.MEHFNAEMMFE },
             |m: &mut OJCBOMCCPDB| { &mut m.MEHFNAEMMFE },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJFEHJMAIAA::KJFEHJMAIAA>(
+            "stage_info",
+            |m: &OJCBOMCCPDB| { &m.stage_info },
+            |m: &mut OJCBOMCCPDB| { &mut m.stage_info },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OJCBOMCCPDB>(
             "OJCBOMCCPDB",
             fields,
@@ -212,16 +219,16 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.battle_wave_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.H_4a14c5ec = is.read_uint32()?;
+                    self.H_6111c325 = is.read_uint32()?;
                 },
                 32 => {
                     self.EHNJDIDABHD = is.read_uint32()?;
                 },
                 58 => {
-                    self.H_9f60ad73.push(is.read_message()?);
+                    self.H_0b0e9102.push(is.read_message()?);
                 },
                 66 => {
-                    self.H_07e2b75b.push(is.read_message()?);
+                    self.H_cbc00ec7.push(is.read_message()?);
                 },
                 72 => {
                     self.IFIIOIIKJHO = is.read_uint32()?;
@@ -239,7 +246,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.LJNGPCKPJLF = is.read_uint32()?;
                 },
                 114 => {
-                    self.H_6c400f76.push(is.read_message()?);
+                    self.H_adf92063.push(is.read_message()?);
                 },
                 120 => {
                     self.is_overlock = is.read_bool()?;
@@ -248,7 +255,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                     self.AACGBEBGDPE = is.read_uint32()?;
                 },
                 138 => {
-                    self.H_16c77f78.push(is.read_message()?);
+                    self.H_fbf5cb9e.push(is.read_message()?);
                 },
                 146 => {
                     self.KCOMPKMJCMC.push(is.read_message()?);
@@ -277,6 +284,9 @@ impl ::protobuf::Message for OJCBOMCCPDB {
                 176 => {
                     self.MEHFNAEMMFE = is.read_bool()?;
                 },
+                186 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -296,17 +306,17 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.battle_wave_id != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.battle_wave_id);
         }
-        if self.H_4a14c5ec != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.H_4a14c5ec);
+        if self.H_6111c325 != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.H_6111c325);
         }
         if self.EHNJDIDABHD != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.EHNJDIDABHD);
         }
-        for value in &self.H_9f60ad73 {
+        for value in &self.H_0b0e9102 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.H_07e2b75b {
+        for value in &self.H_cbc00ec7 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -327,7 +337,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.LJNGPCKPJLF != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.LJNGPCKPJLF);
         }
-        for value in &self.H_6c400f76 {
+        for value in &self.H_adf92063 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -337,7 +347,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.AACGBEBGDPE != 0 {
             my_size += ::protobuf::rt::uint32_size(16, self.AACGBEBGDPE);
         }
-        for value in &self.H_16c77f78 {
+        for value in &self.H_fbf5cb9e {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -360,6 +370,10 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.MEHFNAEMMFE != false {
             my_size += 2 + 1;
         }
+        if let Some(v) = self.stage_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -372,16 +386,16 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.battle_wave_id != 0 {
             os.write_uint32(2, self.battle_wave_id)?;
         }
-        if self.H_4a14c5ec != 0 {
-            os.write_uint32(3, self.H_4a14c5ec)?;
+        if self.H_6111c325 != 0 {
+            os.write_uint32(3, self.H_6111c325)?;
         }
         if self.EHNJDIDABHD != 0 {
             os.write_uint32(4, self.EHNJDIDABHD)?;
         }
-        for v in &self.H_9f60ad73 {
+        for v in &self.H_0b0e9102 {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.H_07e2b75b {
+        for v in &self.H_cbc00ec7 {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.IFIIOIIKJHO != 0 {
@@ -399,7 +413,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.LJNGPCKPJLF != 0 {
             os.write_uint32(13, self.LJNGPCKPJLF)?;
         }
-        for v in &self.H_6c400f76 {
+        for v in &self.H_adf92063 {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         if self.is_overlock != false {
@@ -408,7 +422,7 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.AACGBEBGDPE != 0 {
             os.write_uint32(16, self.AACGBEBGDPE)?;
         }
-        for v in &self.H_16c77f78 {
+        for v in &self.H_fbf5cb9e {
             ::protobuf::rt::write_message_field_with_cached_size(17, v, os)?;
         };
         for v in &self.KCOMPKMJCMC {
@@ -432,6 +446,9 @@ impl ::protobuf::Message for OJCBOMCCPDB {
         if self.MEHFNAEMMFE != false {
             os.write_bool(22, self.MEHFNAEMMFE)?;
         }
+        if let Some(v) = self.stage_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(23, v, os)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -451,24 +468,25 @@ impl ::protobuf::Message for OJCBOMCCPDB {
     fn clear(&mut self) {
         self.OPHONCKPNMG.clear();
         self.battle_wave_id = 0;
-        self.H_4a14c5ec = 0;
+        self.H_6111c325 = 0;
         self.EHNJDIDABHD = 0;
-        self.H_9f60ad73.clear();
-        self.H_07e2b75b.clear();
+        self.H_0b0e9102.clear();
+        self.H_cbc00ec7.clear();
         self.IFIIOIIKJHO = 0;
         self.sync_augment_info.clear();
         self.IOCKDJCDMAH.clear();
         self.HHEPCDMBJFI = 0;
         self.LJNGPCKPJLF = 0;
-        self.H_6c400f76.clear();
+        self.H_adf92063.clear();
         self.is_overlock = false;
         self.AACGBEBGDPE = 0;
-        self.H_16c77f78.clear();
+        self.H_fbf5cb9e.clear();
         self.KCOMPKMJCMC.clear();
         self.LODNFLMBIEH = 0;
         self.POCKGKDFLKK.clear();
         self.NFBJINKLLLK = 0;
         self.MEHFNAEMMFE = false;
+        self.stage_info.clear();
         self.special_fields.clear();
     }
 
@@ -497,30 +515,31 @@ impl ::protobuf::reflect::ProtobufValue for OJCBOMCCPDB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJCBOMCCPDB.proto\x1a\x11BGLCGNCLHLJ.proto\x1a\x11BJGJBNJDLIK.prot\
-    o\x1a\x12BattleAvatar.proto\x1a\x11KHFHMJEMBOF.proto\x1a\x11MIPDJDJLGPL.\
-    proto\x1a\x11MLCLJKDKCDG.proto\x1a\x11NIEGDAPHKGC.proto\x1a\x11PKDNDNABK\
-    II.proto\"\x83\x07\n\x0bOJCBOMCCPDB\x12/\n\x0bOPHONCKPNMG\x18\x01\x20\
-    \x03(\x0b2\r.BattleAvatarR\x0bOPHONCKPNMG\x12$\n\x0ebattle_wave_id\x18\
-    \x02\x20\x01(\rR\x0cbattleWaveId\x12\x1d\n\nH_4a14c5ec\x18\x03\x20\x01(\
-    \rR\tH4a14c5ec\x12\x20\n\x0bEHNJDIDABHD\x18\x04\x20\x01(\rR\x0bEHNJDIDAB\
-    HD\x12+\n\nH_9f60ad73\x18\x07\x20\x03(\x0b2\x0c.NIEGDAPHKGCR\tH9f60ad73\
-    \x12+\n\nH_07e2b75b\x18\x08\x20\x03(\x0b2\x0c.BJGJBNJDLIKR\tH07e2b75b\
-    \x12\x20\n\x0bIFIIOIIKJHO\x18\t\x20\x01(\rR\x0bIFIIOIIKJHO\x128\n\x11syn\
-    c_augment_info\x18\n\x20\x03(\x0b2\x0c.BGLCGNCLHLJR\x0fsyncAugmentInfo\
-    \x12.\n\x0bIOCKDJCDMAH\x18\x0b\x20\x01(\x0b2\x0c.MIPDJDJLGPLR\x0bIOCKDJC\
-    DMAH\x12\x20\n\x0bHHEPCDMBJFI\x18\x0c\x20\x01(\rR\x0bHHEPCDMBJFI\x12\x20\
-    \n\x0bLJNGPCKPJLF\x18\r\x20\x01(\rR\x0bLJNGPCKPJLF\x12+\n\nH_6c400f76\
-    \x18\x0e\x20\x03(\x0b2\x0c.KHFHMJEMBOFR\tH6c400f76\x12\x1f\n\x0bis_overl\
-    ock\x18\x0f\x20\x01(\x08R\nisOverlock\x12\x20\n\x0bAACGBEBGDPE\x18\x10\
-    \x20\x01(\rR\x0bAACGBEBGDPE\x12+\n\nH_16c77f78\x18\x11\x20\x03(\x0b2\x0c\
-    .PKDNDNABKIIR\tH16c77f78\x12.\n\x0bKCOMPKMJCMC\x18\x12\x20\x03(\x0b2\x0c\
-    .MLCLJKDKCDGR\x0bKCOMPKMJCMC\x12\x20\n\x0bLODNFLMBIEH\x18\x13\x20\x01(\r\
-    R\x0bLODNFLMBIEH\x12?\n\x0bPOCKGKDFLKK\x18\x14\x20\x03(\x0b2\x1d.OJCBOMC\
-    CPDB.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\x12\x20\n\x0bNFBJINKLLLK\x18\x15\
-    \x20\x01(\rR\x0bNFBJINKLLLK\x12\x20\n\x0bMEHFNAEMMFE\x18\x16\x20\x01(\
-    \x08R\x0bMEHFNAEMMFE\x1a>\n\x10POCKGKDFLKKEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    o\x1a\x12BattleAvatar.proto\x1a\x11KHFHMJEMBOF.proto\x1a\x11KJFEHJMAIAA.\
+    proto\x1a\x11MIPDJDJLGPL.proto\x1a\x11MLCLJKDKCDG.proto\x1a\x11NIEGDAPHK\
+    GC.proto\x1a\x11PKDNDNABKII.proto\"\xb0\x07\n\x0bOJCBOMCCPDB\x12/\n\x0bO\
+    PHONCKPNMG\x18\x01\x20\x03(\x0b2\r.BattleAvatarR\x0bOPHONCKPNMG\x12$\n\
+    \x0ebattle_wave_id\x18\x02\x20\x01(\rR\x0cbattleWaveId\x12\x1d\n\nH_6111\
+    c325\x18\x03\x20\x01(\rR\tH6111c325\x12\x20\n\x0bEHNJDIDABHD\x18\x04\x20\
+    \x01(\rR\x0bEHNJDIDABHD\x12+\n\nH_0b0e9102\x18\x07\x20\x03(\x0b2\x0c.NIE\
+    GDAPHKGCR\tH0b0e9102\x12+\n\nH_cbc00ec7\x18\x08\x20\x03(\x0b2\x0c.BJGJBN\
+    JDLIKR\tHCbc00ec7\x12\x20\n\x0bIFIIOIIKJHO\x18\t\x20\x01(\rR\x0bIFIIOIIK\
+    JHO\x128\n\x11sync_augment_info\x18\n\x20\x03(\x0b2\x0c.BGLCGNCLHLJR\x0f\
+    syncAugmentInfo\x12.\n\x0bIOCKDJCDMAH\x18\x0b\x20\x01(\x0b2\x0c.MIPDJDJL\
+    GPLR\x0bIOCKDJCDMAH\x12\x20\n\x0bHHEPCDMBJFI\x18\x0c\x20\x01(\rR\x0bHHEP\
+    CDMBJFI\x12\x20\n\x0bLJNGPCKPJLF\x18\r\x20\x01(\rR\x0bLJNGPCKPJLF\x12+\n\
+    \nH_adf92063\x18\x0e\x20\x03(\x0b2\x0c.KHFHMJEMBOFR\tHAdf92063\x12\x1f\n\
+    \x0bis_overlock\x18\x0f\x20\x01(\x08R\nisOverlock\x12\x20\n\x0bAACGBEBGD\
+    PE\x18\x10\x20\x01(\rR\x0bAACGBEBGDPE\x12+\n\nH_fbf5cb9e\x18\x11\x20\x03\
+    (\x0b2\x0c.PKDNDNABKIIR\tHFbf5cb9e\x12.\n\x0bKCOMPKMJCMC\x18\x12\x20\x03\
+    (\x0b2\x0c.MLCLJKDKCDGR\x0bKCOMPKMJCMC\x12\x20\n\x0bLODNFLMBIEH\x18\x13\
+    \x20\x01(\rR\x0bLODNFLMBIEH\x12?\n\x0bPOCKGKDFLKK\x18\x14\x20\x03(\x0b2\
+    \x1d.OJCBOMCCPDB.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\x12\x20\n\x0bNFBJINKLL\
+    LK\x18\x15\x20\x01(\rR\x0bNFBJINKLLLK\x12\x20\n\x0bMEHFNAEMMFE\x18\x16\
+    \x20\x01(\x08R\x0bMEHFNAEMMFE\x12+\n\nstage_info\x18\x17\x20\x01(\x0b2\
+    \x0c.KJFEHJMAIAAR\tstageInfo\x1a>\n\x10POCKGKDFLKKEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
+    lue:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -537,11 +556,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(8);
+            let mut deps = ::std::vec::Vec::with_capacity(9);
             deps.push(super::BGLCGNCLHLJ::file_descriptor().clone());
             deps.push(super::BJGJBNJDLIK::file_descriptor().clone());
             deps.push(super::BattleAvatar::file_descriptor().clone());
             deps.push(super::KHFHMJEMBOF::file_descriptor().clone());
+            deps.push(super::KJFEHJMAIAA::file_descriptor().clone());
             deps.push(super::MIPDJDJLGPL::file_descriptor().clone());
             deps.push(super::MLCLJKDKCDG::file_descriptor().clone());
             deps.push(super::NIEGDAPHKGC::file_descriptor().clone());

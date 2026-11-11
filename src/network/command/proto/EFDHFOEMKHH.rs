@@ -30,9 +30,9 @@ pub enum EFDHFOEMKHH {
     // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_NLCDGIPGFDJ)
     EFDHFOEMKHH_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_DLDAICAFMPP)
-    EFDHFOEMKHH_DLDAICAFMPP = 9473,
+    EFDHFOEMKHH_DLDAICAFMPP = 9476,
     // @@protoc_insertion_point(enum_value:EFDHFOEMKHH.EFDHFOEMKHH_GDINFMFDOPD)
-    EFDHFOEMKHH_GDINFMFDOPD = 9472,
+    EFDHFOEMKHH_GDINFMFDOPD = 9473,
 }
 
 impl ::protobuf::Enum for EFDHFOEMKHH {
@@ -45,8 +45,8 @@ impl ::protobuf::Enum for EFDHFOEMKHH {
     fn from_i32(value: i32) -> ::std::option::Option<EFDHFOEMKHH> {
         match value {
             0 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_NLCDGIPGFDJ),
-            9473 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP),
-            9472 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
+            9476 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_DLDAICAFMPP),
+            9473 => ::std::option::Option::Some(EFDHFOEMKHH::EFDHFOEMKHH_GDINFMFDOPD),
             _ => ::std::option::Option::None
         }
     }
@@ -97,8 +97,8 @@ impl EFDHFOEMKHH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EFDHFOEMKHH.proto*f\n\x0bEFDHFOEMKHH\x12\x1b\n\x17EFDHFOEMKHH_NLCD\
-    GIPGFDJ\x10\0\x12\x1c\n\x17EFDHFOEMKHH_DLDAICAFMPP\x10\x81J\x12\x1c\n\
-    \x17EFDHFOEMKHH_GDINFMFDOPD\x10\x80Jb\x06proto3\
+    GIPGFDJ\x10\0\x12\x1c\n\x17EFDHFOEMKHH_DLDAICAFMPP\x10\x84J\x12\x1c\n\
+    \x17EFDHFOEMKHH_GDINFMFDOPD\x10\x81Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

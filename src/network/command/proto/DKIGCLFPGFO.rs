@@ -79,10 +79,10 @@ impl ::protobuf::Message for DKIGCLFPGFO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                72 => {
                     self.num = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.passenger_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DKIGCLFPGFO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.num);
+            my_size += ::protobuf::rt::uint32_size(9, self.num);
         }
         if self.passenger_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.passenger_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.passenger_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DKIGCLFPGFO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.num != 0 {
-            os.write_uint32(2, self.num)?;
+            os.write_uint32(9, self.num)?;
         }
         if self.passenger_id != 0 {
-            os.write_uint32(12, self.passenger_id)?;
+            os.write_uint32(10, self.passenger_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for DKIGCLFPGFO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11DKIGCLFPGFO.proto\"B\n\x0bDKIGCLFPGFO\x12\x10\n\x03num\x18\x02\x20\
-    \x01(\rR\x03num\x12!\n\x0cpassenger_id\x18\x0c\x20\x01(\rR\x0bpassengerI\
-    db\x06proto3\
+    \n\x11DKIGCLFPGFO.proto\"B\n\x0bDKIGCLFPGFO\x12\x10\n\x03num\x18\t\x20\
+    \x01(\rR\x03num\x12!\n\x0cpassenger_id\x18\n\x20\x01(\rR\x0bpassengerIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

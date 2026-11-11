@@ -94,8 +94,33 @@ impl JPHFANMNHJP {
         }
     }
 
+    // uint32 EEOBGNFGKFN = 2;
+
+    pub fn EEOBGNFGKFN(&self) -> u32 {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_EEOBGNFGKFN(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EEOBGNFGKFN(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EEOBGNFGKFN(&mut self, v: u32) {
+        self.KKNBOACNCON = ::std::option::Option::Some(jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JPAIOFMJEPM::JPAIOFMJEPM>(
             "FECDNCFJGFK",
@@ -103,6 +128,12 @@ impl JPHFANMNHJP {
             JPHFANMNHJP::FECDNCFJGFK,
             JPHFANMNHJP::mut_FECDNCFJGFK,
             JPHFANMNHJP::set_FECDNCFJGFK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "EEOBGNFGKFN",
+            JPHFANMNHJP::has_EEOBGNFGKFN,
+            JPHFANMNHJP::EEOBGNFGKFN,
+            JPHFANMNHJP::set_EEOBGNFGKFN,
         ));
         oneofs.push(jphfanmnhjp::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JPHFANMNHJP>(
@@ -126,6 +157,9 @@ impl ::protobuf::Message for JPHFANMNHJP {
                 10 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(jphfanmnhjp::KKNBOACNCON::FECDNCFJGFK(is.read_message()?));
                 },
+                16 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(is.read_uint32()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -144,6 +178,9 @@ impl ::protobuf::Message for JPHFANMNHJP {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(v) => {
+                    my_size += ::protobuf::rt::uint32_size(2, v);
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -156,6 +193,9 @@ impl ::protobuf::Message for JPHFANMNHJP {
             match v {
                 &jphfanmnhjp::KKNBOACNCON::FECDNCFJGFK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                },
+                &jphfanmnhjp::KKNBOACNCON::EEOBGNFGKFN(v) => {
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -176,6 +216,7 @@ impl ::protobuf::Message for JPHFANMNHJP {
     }
 
     fn clear(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -215,6 +256,8 @@ pub mod jphfanmnhjp {
     pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:JPHFANMNHJP.FECDNCFJGFK)
         FECDNCFJGFK(super::super::JPAIOFMJEPM::JPAIOFMJEPM),
+        // @@protoc_insertion_point(oneof_field:JPHFANMNHJP.EEOBGNFGKFN)
+        EEOBGNFGKFN(u32),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -235,9 +278,10 @@ pub mod jphfanmnhjp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JPHFANMNHJP.proto\x1a\x11JPAIOFMJEPM.proto\"N\n\x0bJPHFANMNHJP\x12\
+    \n\x11JPHFANMNHJP.proto\x1a\x11JPAIOFMJEPM.proto\"r\n\x0bJPHFANMNHJP\x12\
     0\n\x0bFECDNCFJGFK\x18\x01\x20\x01(\x0b2\x0c.JPAIOFMJEPMH\0R\x0bFECDNCFJ\
-    GFKB\r\n\x0bKKNBOACNCONb\x06proto3\
+    GFK\x12\"\n\x0bEEOBGNFGKFN\x18\x02\x20\x01(\rH\0R\x0bEEOBGNFGKFNB\r\n\
+    \x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,10 +79,10 @@ impl ::protobuf::Message for JOHDLJLGNHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                120 => {
+                112 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for JOHDLJLGNHL {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.id);
+            my_size += ::protobuf::rt::uint32_size(14, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for JOHDLJLGNHL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.id != 0 {
-            os.write_uint32(15, self.id)?;
+            os.write_uint32(14, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for JOHDLJLGNHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JOHDLJLGNHL.proto\x1a\x10MotionInfo.proto\"B\n\x0bJOHDLJLGNHL\x12#\
-    \n\x06motion\x18\x03\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x0e\n\
-    \x02id\x18\x0f\x20\x01(\rR\x02idb\x06proto3\
+    \n\x06motion\x18\t\x20\x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x0e\n\x02\
+    id\x18\x0e\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

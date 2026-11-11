@@ -89,7 +89,7 @@ impl ::protobuf::Message for GOLHAKEGKCL {
                 64 => {
                     self.item_id = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.DCPDNBALDOA = is.read_uint32()?;
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GOLHAKEGKCL {
             my_size += ::protobuf::rt::uint32_size(8, self.item_id);
         }
         if self.DCPDNBALDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.DCPDNBALDOA);
+            my_size += ::protobuf::rt::uint32_size(13, self.DCPDNBALDOA);
         }
         if self.HFNNNGHBHGG != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.HFNNNGHBHGG);
@@ -126,7 +126,7 @@ impl ::protobuf::Message for GOLHAKEGKCL {
             os.write_uint32(8, self.item_id)?;
         }
         if self.DCPDNBALDOA != 0 {
-            os.write_uint32(10, self.DCPDNBALDOA)?;
+            os.write_uint32(13, self.DCPDNBALDOA)?;
         }
         if self.HFNNNGHBHGG != 0 {
             os.write_uint32(15, self.HFNNNGHBHGG)?;
@@ -184,7 +184,7 @@ impl ::protobuf::reflect::ProtobufValue for GOLHAKEGKCL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GOLHAKEGKCL.proto\"j\n\x0bGOLHAKEGKCL\x12\x17\n\x07item_id\x18\x08\
-    \x20\x01(\rR\x06itemId\x12\x20\n\x0bDCPDNBALDOA\x18\n\x20\x01(\rR\x0bDCP\
+    \x20\x01(\rR\x06itemId\x12\x20\n\x0bDCPDNBALDOA\x18\r\x20\x01(\rR\x0bDCP\
     DNBALDOA\x12\x20\n\x0bHFNNNGHBHGG\x18\x0f\x20\x01(\rR\x0bHFNNNGHBHGGb\
     \x06proto3\
 ";

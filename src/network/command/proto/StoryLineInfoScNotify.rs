@@ -93,22 +93,22 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.trial_avatar_id_list)?;
                 },
-                24 => {
+                56 => {
                     self.trial_avatar_id_list.push(is.read_uint32()?);
                 },
-                64 => {
+                88 => {
                     self.FDFLHKEDPGC = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.cur_story_line_id = is.read_uint32()?;
                 },
-                90 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.unfinished_story_line_id_list)?;
                 },
-                88 => {
+                120 => {
                     self.unfinished_story_line_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -123,28 +123,28 @@ impl ::protobuf::Message for StoryLineInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.trial_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.trial_avatar_id_list);
         if self.FDFLHKEDPGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FDFLHKEDPGC);
+            my_size += ::protobuf::rt::uint32_size(11, self.FDFLHKEDPGC);
         }
         if self.cur_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.cur_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_story_line_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.unfinished_story_line_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.unfinished_story_line_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.trial_avatar_id_list)?;
+        os.write_repeated_packed_uint32(7, &self.trial_avatar_id_list)?;
         if self.FDFLHKEDPGC != 0 {
-            os.write_uint32(8, self.FDFLHKEDPGC)?;
+            os.write_uint32(11, self.FDFLHKEDPGC)?;
         }
         if self.cur_story_line_id != 0 {
-            os.write_uint32(9, self.cur_story_line_id)?;
+            os.write_uint32(12, self.cur_story_line_id)?;
         }
-        os.write_repeated_packed_uint32(11, &self.unfinished_story_line_id_list)?;
+        os.write_repeated_packed_uint32(15, &self.unfinished_story_line_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for StoryLineInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bStoryLineInfoScNotify.proto\"\xd7\x01\n\x15StoryLineInfoScNotify\
-    \x12/\n\x14trial_avatar_id_list\x18\x03\x20\x03(\rR\x11trialAvatarIdList\
-    \x12\x20\n\x0bFDFLHKEDPGC\x18\x08\x20\x01(\rR\x0bFDFLHKEDPGC\x12)\n\x11c\
-    ur_story_line_id\x18\t\x20\x01(\rR\x0ecurStoryLineId\x12@\n\x1dunfinishe\
-    d_story_line_id_list\x18\x0b\x20\x03(\rR\x19unfinishedStoryLineIdListb\
+    \x12/\n\x14trial_avatar_id_list\x18\x07\x20\x03(\rR\x11trialAvatarIdList\
+    \x12\x20\n\x0bFDFLHKEDPGC\x18\x0b\x20\x01(\rR\x0bFDFLHKEDPGC\x12)\n\x11c\
+    ur_story_line_id\x18\x0c\x20\x01(\rR\x0ecurStoryLineId\x12@\n\x1dunfinis\
+    hed_story_line_id_list\x18\x0f\x20\x03(\rR\x19unfinishedStoryLineIdListb\
     \x06proto3\
 ";
 

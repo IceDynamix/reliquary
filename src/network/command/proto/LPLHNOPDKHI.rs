@@ -89,10 +89,10 @@ impl ::protobuf::Message for LPLHNOPDKHI {
                 16 => {
                     self.GHNJCLNKGHH = is.read_enum_or_unknown()?;
                 },
-                34 => {
+                26 => {
                     self.GFKAFIFMHNF.push(is.read_message()?);
                 },
-                112 => {
+                80 => {
                     self.GAHFPGCPAJA = is.read_uint64()?;
                 },
                 tag => {
@@ -115,7 +115,7 @@ impl ::protobuf::Message for LPLHNOPDKHI {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.GAHFPGCPAJA != 0 {
-            my_size += ::protobuf::rt::uint64_size(14, self.GAHFPGCPAJA);
+            my_size += ::protobuf::rt::uint64_size(10, self.GAHFPGCPAJA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for LPLHNOPDKHI {
             os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.GHNJCLNKGHH))?;
         }
         for v in &self.GFKAFIFMHNF {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         if self.GAHFPGCPAJA != 0 {
-            os.write_uint64(14, self.GAHFPGCPAJA)?;
+            os.write_uint64(10, self.GAHFPGCPAJA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for LPLHNOPDKHI {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPLHNOPDKHI.proto\x1a\x11AKMCODLAEKI.proto\x1a\x11MMFOGJPOHGJ.prot\
     o\"\x8f\x01\n\x0bLPLHNOPDKHI\x12.\n\x0bGHNJCLNKGHH\x18\x02\x20\x01(\x0e2\
-    \x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\x12.\n\x0bGFKAFIFMHNF\x18\x04\x20\x03(\
-    \x0b2\x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12\x20\n\x0bGAHFPGCPAJA\x18\x0e\
-    \x20\x01(\x04R\x0bGAHFPGCPAJAb\x06proto3\
+    \x0c.MMFOGJPOHGJR\x0bGHNJCLNKGHH\x12.\n\x0bGFKAFIFMHNF\x18\x03\x20\x03(\
+    \x0b2\x0c.AKMCODLAEKIR\x0bGFKAFIFMHNF\x12\x20\n\x0bGAHFPGCPAJA\x18\n\x20\
+    \x01(\x04R\x0bGAHFPGCPAJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

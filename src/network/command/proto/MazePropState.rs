@@ -93,13 +93,13 @@ impl ::protobuf::Message for MazePropState {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.state = is.read_uint32()?;
                 },
                 80 => {
                     self.group_id = is.read_uint32()?;
                 },
-                88 => {
+                96 => {
                     self.config_id = is.read_uint32()?;
                 },
                 122 => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for MazePropState {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.state);
+            my_size += ::protobuf::rt::uint32_size(4, self.state);
         }
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.group_id);
         }
         if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.config_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.config_id);
         }
         if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
@@ -137,13 +137,13 @@ impl ::protobuf::Message for MazePropState {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.state != 0 {
-            os.write_uint32(3, self.state)?;
+            os.write_uint32(4, self.state)?;
         }
         if self.group_id != 0 {
             os.write_uint32(10, self.group_id)?;
         }
         if self.config_id != 0 {
-            os.write_uint32(11, self.config_id)?;
+            os.write_uint32(12, self.config_id)?;
         }
         if let Some(v) = self.extra_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -203,8 +203,8 @@ impl ::protobuf::reflect::ProtobufValue for MazePropState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13MazePropState.proto\x1a\x13PropExtraInfo.proto\"\x8c\x01\n\rMazePr\
-    opState\x12\x14\n\x05state\x18\x03\x20\x01(\rR\x05state\x12\x19\n\x08gro\
-    up_id\x18\n\x20\x01(\rR\x07groupId\x12\x1b\n\tconfig_id\x18\x0b\x20\x01(\
+    opState\x12\x14\n\x05state\x18\x04\x20\x01(\rR\x05state\x12\x19\n\x08gro\
+    up_id\x18\n\x20\x01(\rR\x07groupId\x12\x1b\n\tconfig_id\x18\x0c\x20\x01(\
     \rR\x08configId\x12-\n\nextra_info\x18\x0f\x20\x01(\x0b2\x0e.PropExtraIn\
     foR\textraInfob\x06proto3\
 ";

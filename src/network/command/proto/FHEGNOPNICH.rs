@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FHEGNOPNICH {
     // message fields
-    // @@protoc_insertion_point(field:FHEGNOPNICH.COOOMDKGODF)
-    pub COOOMDKGODF: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
     // @@protoc_insertion_point(field:FHEGNOPNICH.LJHKNKFLGDE)
     pub LJHKNKFLGDE: i32,
+    // @@protoc_insertion_point(field:FHEGNOPNICH.energy_info)
+    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
+    // @@protoc_insertion_point(field:FHEGNOPNICH.COOOMDKGODF)
+    pub COOOMDKGODF: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
+    // @@protoc_insertion_point(field:FHEGNOPNICH.EGAGKNADAHJ)
+    pub EGAGKNADAHJ: ::std::vec::Vec<super::ChargerInfo::ChargerInfo>,
     // @@protoc_insertion_point(field:FHEGNOPNICH.MJIPOJPBKNB)
     pub MJIPOJPBKNB: bool,
     // @@protoc_insertion_point(field:FHEGNOPNICH.JPPMEKJGJFD)
     pub JPPMEKJGJFD: u32,
     // @@protoc_insertion_point(field:FHEGNOPNICH.CEDGGDFMILP)
     pub CEDGGDFMILP: ::std::vec::Vec<super::RotaterData::RotaterData>,
-    // @@protoc_insertion_point(field:FHEGNOPNICH.energy_info)
-    pub energy_info: ::protobuf::MessageField<super::RotaterEnergyInfo::RotaterEnergyInfo>,
-    // @@protoc_insertion_point(field:FHEGNOPNICH.EGAGKNADAHJ)
-    pub EGAGKNADAHJ: ::std::vec::Vec<super::ChargerInfo::ChargerInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:FHEGNOPNICH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,15 +61,25 @@ impl FHEGNOPNICH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJHKNKFLGDE",
+            |m: &FHEGNOPNICH| { &m.LJHKNKFLGDE },
+            |m: &mut FHEGNOPNICH| { &mut m.LJHKNKFLGDE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
+            "energy_info",
+            |m: &FHEGNOPNICH| { &m.energy_info },
+            |m: &mut FHEGNOPNICH| { &mut m.energy_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
             "COOOMDKGODF",
             |m: &FHEGNOPNICH| { &m.COOOMDKGODF },
             |m: &mut FHEGNOPNICH| { &mut m.COOOMDKGODF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJHKNKFLGDE",
-            |m: &FHEGNOPNICH| { &m.LJHKNKFLGDE },
-            |m: &mut FHEGNOPNICH| { &mut m.LJHKNKFLGDE },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EGAGKNADAHJ",
+            |m: &FHEGNOPNICH| { &m.EGAGKNADAHJ },
+            |m: &mut FHEGNOPNICH| { &mut m.EGAGKNADAHJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MJIPOJPBKNB",
@@ -85,16 +95,6 @@ impl FHEGNOPNICH {
             "CEDGGDFMILP",
             |m: &FHEGNOPNICH| { &m.CEDGGDFMILP },
             |m: &mut FHEGNOPNICH| { &mut m.CEDGGDFMILP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotaterEnergyInfo::RotaterEnergyInfo>(
-            "energy_info",
-            |m: &FHEGNOPNICH| { &m.energy_info },
-            |m: &mut FHEGNOPNICH| { &mut m.energy_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EGAGKNADAHJ",
-            |m: &FHEGNOPNICH| { &m.EGAGKNADAHJ },
-            |m: &mut FHEGNOPNICH| { &mut m.EGAGKNADAHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FHEGNOPNICH>(
             "FHEGNOPNICH",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for FHEGNOPNICH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COOOMDKGODF)?;
-                },
                 24 => {
                     self.LJHKNKFLGDE = is.read_int32()?;
                 },
-                40 => {
-                    self.MJIPOJPBKNB = is.read_bool()?;
-                },
-                64 => {
-                    self.JPPMEKJGJFD = is.read_uint32()?;
-                },
-                74 => {
-                    self.CEDGGDFMILP.push(is.read_message()?);
-                },
-                82 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.energy_info)?;
                 },
-                122 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COOOMDKGODF)?;
+                },
+                90 => {
                     self.EGAGKNADAHJ.push(is.read_message()?);
+                },
+                96 => {
+                    self.MJIPOJPBKNB = is.read_bool()?;
+                },
+                112 => {
+                    self.JPPMEKJGJFD = is.read_uint32()?;
+                },
+                122 => {
+                    self.CEDGGDFMILP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,28 +147,28 @@ impl ::protobuf::Message for FHEGNOPNICH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.COOOMDKGODF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.LJHKNKFLGDE != 0 {
             my_size += ::protobuf::rt::int32_size(3, self.LJHKNKFLGDE);
         }
-        if self.MJIPOJPBKNB != false {
-            my_size += 1 + 1;
-        }
-        if self.JPPMEKJGJFD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.JPPMEKJGJFD);
-        }
-        for value in &self.CEDGGDFMILP {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.energy_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.COOOMDKGODF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         for value in &self.EGAGKNADAHJ {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.MJIPOJPBKNB != false {
+            my_size += 1 + 1;
+        }
+        if self.JPPMEKJGJFD != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JPPMEKJGJFD);
+        }
+        for value in &self.CEDGGDFMILP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -178,25 +178,25 @@ impl ::protobuf::Message for FHEGNOPNICH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.COOOMDKGODF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.LJHKNKFLGDE != 0 {
             os.write_int32(3, self.LJHKNKFLGDE)?;
         }
-        if self.MJIPOJPBKNB != false {
-            os.write_bool(5, self.MJIPOJPBKNB)?;
-        }
-        if self.JPPMEKJGJFD != 0 {
-            os.write_uint32(8, self.JPPMEKJGJFD)?;
-        }
-        for v in &self.CEDGGDFMILP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if let Some(v) = self.energy_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.COOOMDKGODF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         for v in &self.EGAGKNADAHJ {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        if self.MJIPOJPBKNB != false {
+            os.write_bool(12, self.MJIPOJPBKNB)?;
+        }
+        if self.JPPMEKJGJFD != 0 {
+            os.write_uint32(14, self.JPPMEKJGJFD)?;
+        }
+        for v in &self.CEDGGDFMILP {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -216,25 +216,25 @@ impl ::protobuf::Message for FHEGNOPNICH {
     }
 
     fn clear(&mut self) {
-        self.COOOMDKGODF.clear();
         self.LJHKNKFLGDE = 0;
+        self.energy_info.clear();
+        self.COOOMDKGODF.clear();
+        self.EGAGKNADAHJ.clear();
         self.MJIPOJPBKNB = false;
         self.JPPMEKJGJFD = 0;
         self.CEDGGDFMILP.clear();
-        self.energy_info.clear();
-        self.EGAGKNADAHJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FHEGNOPNICH {
         static instance: FHEGNOPNICH = FHEGNOPNICH {
-            COOOMDKGODF: ::protobuf::MessageField::none(),
             LJHKNKFLGDE: 0,
+            energy_info: ::protobuf::MessageField::none(),
+            COOOMDKGODF: ::protobuf::MessageField::none(),
+            EGAGKNADAHJ: ::std::vec::Vec::new(),
             MJIPOJPBKNB: false,
             JPPMEKJGJFD: 0,
             CEDGGDFMILP: ::std::vec::Vec::new(),
-            energy_info: ::protobuf::MessageField::none(),
-            EGAGKNADAHJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -261,14 +261,14 @@ impl ::protobuf::reflect::ProtobufValue for FHEGNOPNICH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FHEGNOPNICH.proto\x1a\x11ChargerInfo.proto\x1a\x13RotateMapInfo.pr\
     oto\x1a\x11RotaterData.proto\x1a\x17RotaterEnergyInfo.proto\"\xba\x02\n\
-    \x0bFHEGNOPNICH\x120\n\x0bCOOOMDKGODF\x18\x01\x20\x01(\x0b2\x0e.RotateMa\
-    pInfoR\x0bCOOOMDKGODF\x12\x20\n\x0bLJHKNKFLGDE\x18\x03\x20\x01(\x05R\x0b\
-    LJHKNKFLGDE\x12\x20\n\x0bMJIPOJPBKNB\x18\x05\x20\x01(\x08R\x0bMJIPOJPBKN\
-    B\x12\x20\n\x0bJPPMEKJGJFD\x18\x08\x20\x01(\rR\x0bJPPMEKJGJFD\x12.\n\x0b\
-    CEDGGDFMILP\x18\t\x20\x03(\x0b2\x0c.RotaterDataR\x0bCEDGGDFMILP\x123\n\
-    \x0benergy_info\x18\n\x20\x01(\x0b2\x12.RotaterEnergyInfoR\nenergyInfo\
-    \x12.\n\x0bEGAGKNADAHJ\x18\x0f\x20\x03(\x0b2\x0c.ChargerInfoR\x0bEGAGKNA\
-    DAHJb\x06proto3\
+    \x0bFHEGNOPNICH\x12\x20\n\x0bLJHKNKFLGDE\x18\x03\x20\x01(\x05R\x0bLJHKNK\
+    FLGDE\x123\n\x0benergy_info\x18\x08\x20\x01(\x0b2\x12.RotaterEnergyInfoR\
+    \nenergyInfo\x120\n\x0bCOOOMDKGODF\x18\t\x20\x01(\x0b2\x0e.RotateMapInfo\
+    R\x0bCOOOMDKGODF\x12.\n\x0bEGAGKNADAHJ\x18\x0b\x20\x03(\x0b2\x0c.Charger\
+    InfoR\x0bEGAGKNADAHJ\x12\x20\n\x0bMJIPOJPBKNB\x18\x0c\x20\x01(\x08R\x0bM\
+    JIPOJPBKNB\x12\x20\n\x0bJPPMEKJGJFD\x18\x0e\x20\x01(\rR\x0bJPPMEKJGJFD\
+    \x12.\n\x0bCEDGGDFMILP\x18\x0f\x20\x03(\x0b2\x0c.RotaterDataR\x0bCEDGGDF\
+    MILPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

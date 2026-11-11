@@ -33,6 +33,10 @@ pub enum BGMLEJCOFPK {
     BGMLEJCOFPK_ENPLACDLJGA = 1,
     // @@protoc_insertion_point(enum_value:BGMLEJCOFPK.BGMLEJCOFPK_DACEMIDFHOG)
     BGMLEJCOFPK_DACEMIDFHOG = 2,
+    // @@protoc_insertion_point(enum_value:BGMLEJCOFPK.BGMLEJCOFPK_CLKHDBBDHFJ)
+    BGMLEJCOFPK_CLKHDBBDHFJ = 3,
+    // @@protoc_insertion_point(enum_value:BGMLEJCOFPK.BGMLEJCOFPK_NCMIMINMBDM)
+    BGMLEJCOFPK_NCMIMINMBDM = 4,
 }
 
 impl ::protobuf::Enum for BGMLEJCOFPK {
@@ -47,6 +51,8 @@ impl ::protobuf::Enum for BGMLEJCOFPK {
             0 => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_NLCDGIPGFDJ),
             1 => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_ENPLACDLJGA),
             2 => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_DACEMIDFHOG),
+            3 => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_CLKHDBBDHFJ),
+            4 => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_NCMIMINMBDM),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +62,8 @@ impl ::protobuf::Enum for BGMLEJCOFPK {
             "BGMLEJCOFPK_NLCDGIPGFDJ" => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_NLCDGIPGFDJ),
             "BGMLEJCOFPK_ENPLACDLJGA" => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_ENPLACDLJGA),
             "BGMLEJCOFPK_DACEMIDFHOG" => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_DACEMIDFHOG),
+            "BGMLEJCOFPK_CLKHDBBDHFJ" => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_CLKHDBBDHFJ),
+            "BGMLEJCOFPK_NCMIMINMBDM" => ::std::option::Option::Some(BGMLEJCOFPK::BGMLEJCOFPK_NCMIMINMBDM),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +72,8 @@ impl ::protobuf::Enum for BGMLEJCOFPK {
         BGMLEJCOFPK::BGMLEJCOFPK_NLCDGIPGFDJ,
         BGMLEJCOFPK::BGMLEJCOFPK_ENPLACDLJGA,
         BGMLEJCOFPK::BGMLEJCOFPK_DACEMIDFHOG,
+        BGMLEJCOFPK::BGMLEJCOFPK_CLKHDBBDHFJ,
+        BGMLEJCOFPK::BGMLEJCOFPK_NCMIMINMBDM,
     ];
 }
 
@@ -92,9 +102,10 @@ impl BGMLEJCOFPK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BGMLEJCOFPK.proto*d\n\x0bBGMLEJCOFPK\x12\x1b\n\x17BGMLEJCOFPK_NLCD\
-    GIPGFDJ\x10\0\x12\x1b\n\x17BGMLEJCOFPK_ENPLACDLJGA\x10\x01\x12\x1b\n\x17\
-    BGMLEJCOFPK_DACEMIDFHOG\x10\x02b\x06proto3\
+    \n\x11BGMLEJCOFPK.proto*\x9e\x01\n\x0bBGMLEJCOFPK\x12\x1b\n\x17BGMLEJCOF\
+    PK_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17BGMLEJCOFPK_ENPLACDLJGA\x10\x01\x12\
+    \x1b\n\x17BGMLEJCOFPK_DACEMIDFHOG\x10\x02\x12\x1b\n\x17BGMLEJCOFPK_CLKHD\
+    BBDHFJ\x10\x03\x12\x1b\n\x17BGMLEJCOFPK_NCMIMINMBDM\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

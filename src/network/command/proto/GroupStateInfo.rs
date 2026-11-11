@@ -30,10 +30,10 @@ pub struct GroupStateInfo {
     // message fields
     // @@protoc_insertion_point(field:GroupStateInfo.entry_id)
     pub entry_id: u32,
-    // @@protoc_insertion_point(field:GroupStateInfo.GMEHAMCHJBK)
-    pub GMEHAMCHJBK: u32,
     // @@protoc_insertion_point(field:GroupStateInfo.group_id)
     pub group_id: u32,
+    // @@protoc_insertion_point(field:GroupStateInfo.GMEHAMCHJBK)
+    pub GMEHAMCHJBK: u32,
     // @@protoc_insertion_point(field:GroupStateInfo.group_state)
     pub group_state: u32,
     // special fields
@@ -61,14 +61,14 @@ impl GroupStateInfo {
             |m: &mut GroupStateInfo| { &mut m.entry_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GMEHAMCHJBK",
-            |m: &GroupStateInfo| { &m.GMEHAMCHJBK },
-            |m: &mut GroupStateInfo| { &mut m.GMEHAMCHJBK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &GroupStateInfo| { &m.group_id },
             |m: &mut GroupStateInfo| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GMEHAMCHJBK",
+            |m: &GroupStateInfo| { &m.GMEHAMCHJBK },
+            |m: &mut GroupStateInfo| { &mut m.GMEHAMCHJBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_state",
@@ -93,14 +93,14 @@ impl ::protobuf::Message for GroupStateInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                8 => {
                     self.entry_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.GMEHAMCHJBK = is.read_uint32()?;
-                },
-                104 => {
+                32 => {
                     self.group_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.GMEHAMCHJBK = is.read_uint32()?;
                 },
                 120 => {
                     self.group_state = is.read_uint32()?;
@@ -118,13 +118,13 @@ impl ::protobuf::Message for GroupStateInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.entry_id);
-        }
-        if self.GMEHAMCHJBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GMEHAMCHJBK);
+            my_size += ::protobuf::rt::uint32_size(1, self.entry_id);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.group_id);
+        }
+        if self.GMEHAMCHJBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GMEHAMCHJBK);
         }
         if self.group_state != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.group_state);
@@ -136,13 +136,13 @@ impl ::protobuf::Message for GroupStateInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(6, self.entry_id)?;
-        }
-        if self.GMEHAMCHJBK != 0 {
-            os.write_uint32(11, self.GMEHAMCHJBK)?;
+            os.write_uint32(1, self.entry_id)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(13, self.group_id)?;
+            os.write_uint32(4, self.group_id)?;
+        }
+        if self.GMEHAMCHJBK != 0 {
+            os.write_uint32(10, self.GMEHAMCHJBK)?;
         }
         if self.group_state != 0 {
             os.write_uint32(15, self.group_state)?;
@@ -165,8 +165,8 @@ impl ::protobuf::Message for GroupStateInfo {
 
     fn clear(&mut self) {
         self.entry_id = 0;
-        self.GMEHAMCHJBK = 0;
         self.group_id = 0;
+        self.GMEHAMCHJBK = 0;
         self.group_state = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for GroupStateInfo {
     fn default_instance() -> &'static GroupStateInfo {
         static instance: GroupStateInfo = GroupStateInfo {
             entry_id: 0,
-            GMEHAMCHJBK: 0,
             group_id: 0,
+            GMEHAMCHJBK: 0,
             group_state: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14GroupStateInfo.proto\"\x89\x01\n\x0eGroupStateInfo\x12\x19\n\x08en\
-    try_id\x18\x06\x20\x01(\rR\x07entryId\x12\x20\n\x0bGMEHAMCHJBK\x18\x0b\
-    \x20\x01(\rR\x0bGMEHAMCHJBK\x12\x19\n\x08group_id\x18\r\x20\x01(\rR\x07g\
-    roupId\x12\x1f\n\x0bgroup_state\x18\x0f\x20\x01(\rR\ngroupStateb\x06prot\
-    o3\
+    try_id\x18\x01\x20\x01(\rR\x07entryId\x12\x19\n\x08group_id\x18\x04\x20\
+    \x01(\rR\x07groupId\x12\x20\n\x0bGMEHAMCHJBK\x18\n\x20\x01(\rR\x0bGMEHAM\
+    CHJBK\x12\x1f\n\x0bgroup_state\x18\x0f\x20\x01(\rR\ngroupStateb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

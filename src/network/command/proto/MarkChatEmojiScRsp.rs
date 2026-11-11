@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarkChatEmojiScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.extra_id)
-    pub extra_id: u32,
     // @@protoc_insertion_point(field:MarkChatEmojiScRsp.is_remove_id)
     pub is_remove_id: bool,
+    // @@protoc_insertion_point(field:MarkChatEmojiScRsp.extra_id)
+    pub extra_id: u32,
     // @@protoc_insertion_point(field:MarkChatEmojiScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl MarkChatEmojiScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_id",
-            |m: &MarkChatEmojiScRsp| { &m.extra_id },
-            |m: &mut MarkChatEmojiScRsp| { &mut m.extra_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_remove_id",
             |m: &MarkChatEmojiScRsp| { &m.is_remove_id },
             |m: &mut MarkChatEmojiScRsp| { &mut m.is_remove_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_id",
+            |m: &MarkChatEmojiScRsp| { &m.extra_id },
+            |m: &mut MarkChatEmojiScRsp| { &mut m.extra_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.extra_id = is.read_uint32()?;
-                },
-                40 => {
+                64 => {
                     self.is_remove_id = is.read_bool()?;
                 },
-                48 => {
+                72 => {
+                    self.extra_id = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.extra_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.extra_id);
-        }
         if self.is_remove_id != false {
             my_size += 1 + 1;
         }
+        if self.extra_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.extra_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.extra_id != 0 {
-            os.write_uint32(1, self.extra_id)?;
-        }
         if self.is_remove_id != false {
-            os.write_bool(5, self.is_remove_id)?;
+            os.write_bool(8, self.is_remove_id)?;
+        }
+        if self.extra_id != 0 {
+            os.write_uint32(9, self.extra_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for MarkChatEmojiScRsp {
     }
 
     fn clear(&mut self) {
-        self.extra_id = 0;
         self.is_remove_id = false;
+        self.extra_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarkChatEmojiScRsp {
         static instance: MarkChatEmojiScRsp = MarkChatEmojiScRsp {
-            extra_id: 0,
             is_remove_id: false,
+            extra_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for MarkChatEmojiScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarkChatEmojiScRsp.proto\"k\n\x12MarkChatEmojiScRsp\x12\x19\n\x08e\
-    xtra_id\x18\x01\x20\x01(\rR\x07extraId\x12\x20\n\x0cis_remove_id\x18\x05\
-    \x20\x01(\x08R\nisRemoveId\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07r\
-    etcodeb\x06proto3\
+    \n\x18MarkChatEmojiScRsp.proto\"k\n\x12MarkChatEmojiScRsp\x12\x20\n\x0ci\
+    s_remove_id\x18\x08\x20\x01(\x08R\nisRemoveId\x12\x19\n\x08extra_id\x18\
+    \t\x20\x01(\rR\x07extraId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

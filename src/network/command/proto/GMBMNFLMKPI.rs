@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GMBMNFLMKPI {
     // message fields
     // @@protoc_insertion_point(field:GMBMNFLMKPI.IBCPAKJAPFF)
-    pub IBCPAKJAPFF: ::protobuf::EnumOrUnknown<super::H_28210fb5::H_28210fb5>,
+    pub IBCPAKJAPFF: ::protobuf::EnumOrUnknown<super::H_d1c078eb::H_d1c078eb>,
     // @@protoc_insertion_point(field:GMBMNFLMKPI.LMICDNNABNM)
-    pub LMICDNNABNM: ::protobuf::EnumOrUnknown<super::H_c85fbdf4::H_c85fbdf4>,
+    pub LMICDNNABNM: ::protobuf::EnumOrUnknown<super::H_346a4774::H_346a4774>,
     // special fields
     // @@protoc_insertion_point(special_field:GMBMNFLMKPI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                96 => {
                     self.IBCPAKJAPFF = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                120 => {
                     self.LMICDNNABNM = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::H_28210fb5::H_28210fb5::KMJNPEMPNMC_NEELHDGILED) {
-            my_size += ::protobuf::rt::int32_size(9, self.IBCPAKJAPFF.value());
+        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::H_d1c078eb::H_d1c078eb::H_5e74d2b4) {
+            my_size += ::protobuf::rt::int32_size(12, self.IBCPAKJAPFF.value());
         }
-        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::H_c85fbdf4::H_c85fbdf4::GGNKDLAHAGH_EAJGHKNNJBB) {
-            my_size += ::protobuf::rt::int32_size(12, self.LMICDNNABNM.value());
+        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::H_346a4774::H_346a4774::H_2d2d37ba) {
+            my_size += ::protobuf::rt::int32_size(15, self.LMICDNNABNM.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::H_28210fb5::H_28210fb5::KMJNPEMPNMC_NEELHDGILED) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.IBCPAKJAPFF))?;
+        if self.IBCPAKJAPFF != ::protobuf::EnumOrUnknown::new(super::H_d1c078eb::H_d1c078eb::H_5e74d2b4) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.IBCPAKJAPFF))?;
         }
-        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::H_c85fbdf4::H_c85fbdf4::GGNKDLAHAGH_EAJGHKNNJBB) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.LMICDNNABNM))?;
+        if self.LMICDNNABNM != ::protobuf::EnumOrUnknown::new(super::H_346a4774::H_346a4774::H_2d2d37ba) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.LMICDNNABNM))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,8 +132,8 @@ impl ::protobuf::Message for GMBMNFLMKPI {
     }
 
     fn clear(&mut self) {
-        self.IBCPAKJAPFF = ::protobuf::EnumOrUnknown::new(super::H_28210fb5::H_28210fb5::KMJNPEMPNMC_NEELHDGILED);
-        self.LMICDNNABNM = ::protobuf::EnumOrUnknown::new(super::H_c85fbdf4::H_c85fbdf4::GGNKDLAHAGH_EAJGHKNNJBB);
+        self.IBCPAKJAPFF = ::protobuf::EnumOrUnknown::new(super::H_d1c078eb::H_d1c078eb::H_5e74d2b4);
+        self.LMICDNNABNM = ::protobuf::EnumOrUnknown::new(super::H_346a4774::H_346a4774::H_2d2d37ba);
         self.special_fields.clear();
     }
 
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GMBMNFLMKPI {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GMBMNFLMKPI.proto\x1a\x10H_28210fb5.proto\x1a\x10H_c85fbdf4.proto\
-    \"k\n\x0bGMBMNFLMKPI\x12-\n\x0bIBCPAKJAPFF\x18\t\x20\x01(\x0e2\x0b.H_282\
-    10fb5R\x0bIBCPAKJAPFF\x12-\n\x0bLMICDNNABNM\x18\x0c\x20\x01(\x0e2\x0b.H_\
-    c85fbdf4R\x0bLMICDNNABNMb\x06proto3\
+    \n\x11GMBMNFLMKPI.proto\x1a\x10H_346a4774.proto\x1a\x10H_d1c078eb.proto\
+    \"k\n\x0bGMBMNFLMKPI\x12-\n\x0bIBCPAKJAPFF\x18\x0c\x20\x01(\x0e2\x0b.H_d\
+    1c078ebR\x0bIBCPAKJAPFF\x12-\n\x0bLMICDNNABNM\x18\x0f\x20\x01(\x0e2\x0b.\
+    H_346a4774R\x0bLMICDNNABNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,8 +186,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_28210fb5::file_descriptor().clone());
-            deps.push(super::H_c85fbdf4::file_descriptor().clone());
+            deps.push(super::H_346a4774::file_descriptor().clone());
+            deps.push(super::H_d1c078eb::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GMBMNFLMKPI::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

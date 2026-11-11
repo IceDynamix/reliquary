@@ -79,10 +79,10 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.IECKKCHJMLP = is.read_bool()?;
                 },
-                104 => {
+                48 => {
                     self.BAAGDILLLME = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FavourArchiveCsReq {
             my_size += 1 + 1;
         }
         if self.BAAGDILLLME != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BAAGDILLLME);
+            my_size += ::protobuf::rt::uint32_size(6, self.BAAGDILLLME);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for FavourArchiveCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IECKKCHJMLP != false {
-            os.write_bool(10, self.IECKKCHJMLP)?;
+            os.write_bool(3, self.IECKKCHJMLP)?;
         }
         if self.BAAGDILLLME != 0 {
-            os.write_uint32(13, self.BAAGDILLLME)?;
+            os.write_uint32(6, self.BAAGDILLLME)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FavourArchiveCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bI\
-    ECKKCHJMLP\x18\n\x20\x01(\x08R\x0bIECKKCHJMLP\x12\x20\n\x0bBAAGDILLLME\
-    \x18\r\x20\x01(\rR\x0bBAAGDILLLMEb\x06proto3\
+    ECKKCHJMLP\x18\x03\x20\x01(\x08R\x0bIECKKCHJMLP\x12\x20\n\x0bBAAGDILLLME\
+    \x18\x06\x20\x01(\rR\x0bBAAGDILLLMEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

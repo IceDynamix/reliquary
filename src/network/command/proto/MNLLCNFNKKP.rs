@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MNLLCNFNKKP {
     // message fields
-    // @@protoc_insertion_point(field:MNLLCNFNKKP.IMGDMDDKHDL)
-    pub IMGDMDDKHDL: u32,
+    // @@protoc_insertion_point(field:MNLLCNFNKKP.HCMKEFPFEDH)
+    pub HCMKEFPFEDH: bool,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.cost_time)
     pub cost_time: u32,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.FMCCHBBIJKF)
     pub FMCCHBBIJKF: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.GBJEALNCMJC)
     pub GBJEALNCMJC: u32,
-    // @@protoc_insertion_point(field:MNLLCNFNKKP.HCMKEFPFEDH)
-    pub HCMKEFPFEDH: bool,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.IIIAGPNGPJM)
     pub IIIAGPNGPJM: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
+    // @@protoc_insertion_point(field:MNLLCNFNKKP.IMGDMDDKHDL)
+    pub IMGDMDDKHDL: u32,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.page_type)
     pub page_type: u32,
     // @@protoc_insertion_point(field:MNLLCNFNKKP.OFNINJLHHDE)
@@ -64,9 +64,9 @@ impl MNLLCNFNKKP {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMGDMDDKHDL",
-            |m: &MNLLCNFNKKP| { &m.IMGDMDDKHDL },
-            |m: &mut MNLLCNFNKKP| { &mut m.IMGDMDDKHDL },
+            "HCMKEFPFEDH",
+            |m: &MNLLCNFNKKP| { &m.HCMKEFPFEDH },
+            |m: &mut MNLLCNFNKKP| { &mut m.HCMKEFPFEDH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cost_time",
@@ -83,15 +83,15 @@ impl MNLLCNFNKKP {
             |m: &MNLLCNFNKKP| { &m.GBJEALNCMJC },
             |m: &mut MNLLCNFNKKP| { &mut m.GBJEALNCMJC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCMKEFPFEDH",
-            |m: &MNLLCNFNKKP| { &m.HCMKEFPFEDH },
-            |m: &mut MNLLCNFNKKP| { &mut m.HCMKEFPFEDH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IIIAGPNGPJM",
             |m: &MNLLCNFNKKP| { &m.IIIAGPNGPJM },
             |m: &mut MNLLCNFNKKP| { &mut m.IIIAGPNGPJM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IMGDMDDKHDL",
+            |m: &MNLLCNFNKKP| { &m.IMGDMDDKHDL },
+            |m: &mut MNLLCNFNKKP| { &mut m.IMGDMDDKHDL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "page_type",
@@ -121,25 +121,25 @@ impl ::protobuf::Message for MNLLCNFNKKP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.IMGDMDDKHDL = is.read_uint32()?;
-                },
-                40 => {
-                    self.cost_time = is.read_uint32()?;
-                },
-                50 => {
-                    self.FMCCHBBIJKF.push(is.read_message()?);
-                },
-                56 => {
-                    self.GBJEALNCMJC = is.read_uint32()?;
-                },
-                64 => {
+                32 => {
                     self.HCMKEFPFEDH = is.read_bool()?;
                 },
-                74 => {
+                48 => {
+                    self.cost_time = is.read_uint32()?;
+                },
+                58 => {
+                    self.FMCCHBBIJKF.push(is.read_message()?);
+                },
+                80 => {
+                    self.GBJEALNCMJC = is.read_uint32()?;
+                },
+                90 => {
                     self.IIIAGPNGPJM.push(is.read_message()?);
                 },
-                96 => {
+                104 => {
+                    self.IMGDMDDKHDL = is.read_uint32()?;
+                },
+                112 => {
                     self.page_type = is.read_uint32()?;
                 },
                 122 => {
@@ -157,28 +157,28 @@ impl ::protobuf::Message for MNLLCNFNKKP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IMGDMDDKHDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.IMGDMDDKHDL);
+        if self.HCMKEFPFEDH != false {
+            my_size += 1 + 1;
         }
         if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.cost_time);
+            my_size += ::protobuf::rt::uint32_size(6, self.cost_time);
         }
         for value in &self.FMCCHBBIJKF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.GBJEALNCMJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GBJEALNCMJC);
-        }
-        if self.HCMKEFPFEDH != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(10, self.GBJEALNCMJC);
         }
         for value in &self.IIIAGPNGPJM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.IMGDMDDKHDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IMGDMDDKHDL);
+        }
         if self.page_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.page_type);
+            my_size += ::protobuf::rt::uint32_size(14, self.page_type);
         }
         for value in &self.OFNINJLHHDE {
             let len = value.compute_size();
@@ -190,26 +190,26 @@ impl ::protobuf::Message for MNLLCNFNKKP {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IMGDMDDKHDL != 0 {
-            os.write_uint32(1, self.IMGDMDDKHDL)?;
+        if self.HCMKEFPFEDH != false {
+            os.write_bool(4, self.HCMKEFPFEDH)?;
         }
         if self.cost_time != 0 {
-            os.write_uint32(5, self.cost_time)?;
+            os.write_uint32(6, self.cost_time)?;
         }
         for v in &self.FMCCHBBIJKF {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.GBJEALNCMJC != 0 {
-            os.write_uint32(7, self.GBJEALNCMJC)?;
-        }
-        if self.HCMKEFPFEDH != false {
-            os.write_bool(8, self.HCMKEFPFEDH)?;
+            os.write_uint32(10, self.GBJEALNCMJC)?;
         }
         for v in &self.IIIAGPNGPJM {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.IMGDMDDKHDL != 0 {
+            os.write_uint32(13, self.IMGDMDDKHDL)?;
+        }
         if self.page_type != 0 {
-            os.write_uint32(12, self.page_type)?;
+            os.write_uint32(14, self.page_type)?;
         }
         for v in &self.OFNINJLHHDE {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -231,12 +231,12 @@ impl ::protobuf::Message for MNLLCNFNKKP {
     }
 
     fn clear(&mut self) {
-        self.IMGDMDDKHDL = 0;
+        self.HCMKEFPFEDH = false;
         self.cost_time = 0;
         self.FMCCHBBIJKF.clear();
         self.GBJEALNCMJC = 0;
-        self.HCMKEFPFEDH = false;
         self.IIIAGPNGPJM.clear();
+        self.IMGDMDDKHDL = 0;
         self.page_type = 0;
         self.OFNINJLHHDE.clear();
         self.special_fields.clear();
@@ -244,12 +244,12 @@ impl ::protobuf::Message for MNLLCNFNKKP {
 
     fn default_instance() -> &'static MNLLCNFNKKP {
         static instance: MNLLCNFNKKP = MNLLCNFNKKP {
-            IMGDMDDKHDL: 0,
+            HCMKEFPFEDH: false,
             cost_time: 0,
             FMCCHBBIJKF: ::std::vec::Vec::new(),
             GBJEALNCMJC: 0,
-            HCMKEFPFEDH: false,
             IIIAGPNGPJM: ::std::vec::Vec::new(),
+            IMGDMDDKHDL: 0,
             page_type: 0,
             OFNINJLHHDE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -277,14 +277,14 @@ impl ::protobuf::reflect::ProtobufValue for MNLLCNFNKKP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MNLLCNFNKKP.proto\x1a\x11ODLEEMAALIP.proto\"\xbd\x02\n\x0bMNLLCNFN\
-    KKP\x12\x20\n\x0bIMGDMDDKHDL\x18\x01\x20\x01(\rR\x0bIMGDMDDKHDL\x12\x1b\
-    \n\tcost_time\x18\x05\x20\x01(\rR\x08costTime\x12.\n\x0bFMCCHBBIJKF\x18\
-    \x06\x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bFMCCHBBIJKF\x12\x20\n\x0bGBJEALNC\
-    MJC\x18\x07\x20\x01(\rR\x0bGBJEALNCMJC\x12\x20\n\x0bHCMKEFPFEDH\x18\x08\
-    \x20\x01(\x08R\x0bHCMKEFPFEDH\x12.\n\x0bIIIAGPNGPJM\x18\t\x20\x03(\x0b2\
-    \x0c.ODLEEMAALIPR\x0bIIIAGPNGPJM\x12\x1b\n\tpage_type\x18\x0c\x20\x01(\r\
-    R\x08pageType\x12.\n\x0bOFNINJLHHDE\x18\x0f\x20\x03(\x0b2\x0c.ODLEEMAALI\
-    PR\x0bOFNINJLHHDEb\x06proto3\
+    KKP\x12\x20\n\x0bHCMKEFPFEDH\x18\x04\x20\x01(\x08R\x0bHCMKEFPFEDH\x12\
+    \x1b\n\tcost_time\x18\x06\x20\x01(\rR\x08costTime\x12.\n\x0bFMCCHBBIJKF\
+    \x18\x07\x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bFMCCHBBIJKF\x12\x20\n\x0bGBJE\
+    ALNCMJC\x18\n\x20\x01(\rR\x0bGBJEALNCMJC\x12.\n\x0bIIIAGPNGPJM\x18\x0b\
+    \x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bIIIAGPNGPJM\x12\x20\n\x0bIMGDMDDKHDL\
+    \x18\r\x20\x01(\rR\x0bIMGDMDDKHDL\x12\x1b\n\tpage_type\x18\x0e\x20\x01(\
+    \rR\x08pageType\x12.\n\x0bOFNINJLHHDE\x18\x0f\x20\x03(\x0b2\x0c.ODLEEMAA\
+    LIPR\x0bOFNINJLHHDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

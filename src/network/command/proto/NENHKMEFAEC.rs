@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NENHKMEFAEC {
     // message fields
-    // @@protoc_insertion_point(field:NENHKMEFAEC.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
     // @@protoc_insertion_point(field:NENHKMEFAEC.BCAKPNCHIIJ)
     pub BCAKPNCHIIJ: u32,
+    // @@protoc_insertion_point(field:NENHKMEFAEC.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
     // special fields
     // @@protoc_insertion_point(special_field:NENHKMEFAEC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl NENHKMEFAEC {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &NENHKMEFAEC| { &m.reason },
-            |m: &mut NENHKMEFAEC| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BCAKPNCHIIJ",
             |m: &NENHKMEFAEC| { &m.BCAKPNCHIIJ },
             |m: &mut NENHKMEFAEC| { &mut m.BCAKPNCHIIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &NENHKMEFAEC| { &m.reason },
+            |m: &mut NENHKMEFAEC| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NENHKMEFAEC>(
             "NENHKMEFAEC",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for NENHKMEFAEC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                24 => {
+                    self.BCAKPNCHIIJ = is.read_uint32()?;
+                },
                 48 => {
                     self.reason = is.read_enum_or_unknown()?;
-                },
-                120 => {
-                    self.BCAKPNCHIIJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for NENHKMEFAEC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BCAKPNCHIIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.BCAKPNCHIIJ);
+        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
             my_size += ::protobuf::rt::int32_size(6, self.reason.value());
-        }
-        if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BCAKPNCHIIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for NENHKMEFAEC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BCAKPNCHIIJ != 0 {
+            os.write_uint32(3, self.BCAKPNCHIIJ)?;
+        }
         if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
             os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(15, self.BCAKPNCHIIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for NENHKMEFAEC {
     }
 
     fn clear(&mut self) {
-        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.BCAKPNCHIIJ = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NENHKMEFAEC {
         static instance: NENHKMEFAEC = NENHKMEFAEC {
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             BCAKPNCHIIJ: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NENHKMEFAEC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NENHKMEFAEC.proto\x1a\x11NPPEMMILLCO.proto\"U\n\x0bNENHKMEFAEC\x12\
-    $\n\x06reason\x18\x06\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\x12\x20\n\
-    \x0bBCAKPNCHIIJ\x18\x0f\x20\x01(\rR\x0bBCAKPNCHIIJb\x06proto3\
+    \x20\n\x0bBCAKPNCHIIJ\x18\x03\x20\x01(\rR\x0bBCAKPNCHIIJ\x12$\n\x06reaso\
+    n\x18\x06\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

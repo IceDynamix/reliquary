@@ -79,7 +79,7 @@ impl ::protobuf::Message for GFFDDJHNJPN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                56 => {
                     self.level = is.read_uint32()?;
                 },
                 64 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GFFDDJHNJPN {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
         }
         if self.queue_position != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.queue_position);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GFFDDJHNJPN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(7, self.level)?;
         }
         if self.queue_position != 0 {
             os.write_uint32(8, self.queue_position)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for GFFDDJHNJPN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFFDDJHNJPN.proto\"J\n\x0bGFFDDJHNJPN\x12\x14\n\x05level\x18\x05\
+    \n\x11GFFDDJHNJPN.proto\"J\n\x0bGFFDDJHNJPN\x12\x14\n\x05level\x18\x07\
     \x20\x01(\rR\x05level\x12%\n\x0equeue_position\x18\x08\x20\x01(\rR\rqueu\
     ePositionb\x06proto3\
 ";

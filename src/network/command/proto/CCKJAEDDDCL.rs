@@ -45,56 +45,7 @@ impl CCKJAEDDDCL {
         ::std::default::Default::default()
     }
 
-    // .AHLALEEJOEG BBEKBJPHEJK = 1;
-
-    pub fn BBEKBJPHEJK(&self) -> &super::AHLALEEJOEG::AHLALEEJOEG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v)) => v,
-            _ => <super::AHLALEEJOEG::AHLALEEJOEG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_BBEKBJPHEJK(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_BBEKBJPHEJK(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BBEKBJPHEJK(&mut self, v: super::AHLALEEJOEG::AHLALEEJOEG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_BBEKBJPHEJK(&mut self) -> &mut super::AHLALEEJOEG::AHLALEEJOEG {
-        if let ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(super::AHLALEEJOEG::AHLALEEJOEG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_BBEKBJPHEJK(&mut self) -> super::AHLALEEJOEG::AHLALEEJOEG {
-        if self.has_BBEKBJPHEJK() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AHLALEEJOEG::AHLALEEJOEG::new()
-        }
-    }
-
-    // .GANFMBPEJPF ABPOOCOOKCF = 12;
+    // .GANFMBPEJPF ABPOOCOOKCF = 8;
 
     pub fn ABPOOCOOKCF(&self) -> &super::GANFMBPEJPF::GANFMBPEJPF {
         match self.KKNBOACNCON {
@@ -143,7 +94,56 @@ impl CCKJAEDDDCL {
         }
     }
 
-    // .KPIHDPGDMKB BMGOLFNGHGH = 14;
+    // .AHLALEEJOEG BBEKBJPHEJK = 10;
+
+    pub fn BBEKBJPHEJK(&self) -> &super::AHLALEEJOEG::AHLALEEJOEG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v)) => v,
+            _ => <super::AHLALEEJOEG::AHLALEEJOEG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BBEKBJPHEJK(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_BBEKBJPHEJK(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BBEKBJPHEJK(&mut self, v: super::AHLALEEJOEG::AHLALEEJOEG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BBEKBJPHEJK(&mut self) -> &mut super::AHLALEEJOEG::AHLALEEJOEG {
+        if let ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(super::AHLALEEJOEG::AHLALEEJOEG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BBEKBJPHEJK(&mut self) -> super::AHLALEEJOEG::AHLALEEJOEG {
+        if self.has_BBEKBJPHEJK() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AHLALEEJOEG::AHLALEEJOEG::new()
+        }
+    }
+
+    // .KPIHDPGDMKB BMGOLFNGHGH = 13;
 
     pub fn BMGOLFNGHGH(&self) -> &super::KPIHDPGDMKB::KPIHDPGDMKB {
         match self.KKNBOACNCON {
@@ -244,19 +244,19 @@ impl CCKJAEDDDCL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHLALEEJOEG::AHLALEEJOEG>(
-            "BBEKBJPHEJK",
-            CCKJAEDDDCL::has_BBEKBJPHEJK,
-            CCKJAEDDDCL::BBEKBJPHEJK,
-            CCKJAEDDDCL::mut_BBEKBJPHEJK,
-            CCKJAEDDDCL::set_BBEKBJPHEJK,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GANFMBPEJPF::GANFMBPEJPF>(
             "ABPOOCOOKCF",
             CCKJAEDDDCL::has_ABPOOCOOKCF,
             CCKJAEDDDCL::ABPOOCOOKCF,
             CCKJAEDDDCL::mut_ABPOOCOOKCF,
             CCKJAEDDDCL::set_ABPOOCOOKCF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHLALEEJOEG::AHLALEEJOEG>(
+            "BBEKBJPHEJK",
+            CCKJAEDDDCL::has_BBEKBJPHEJK,
+            CCKJAEDDDCL::BBEKBJPHEJK,
+            CCKJAEDDDCL::mut_BBEKBJPHEJK,
+            CCKJAEDDDCL::set_BBEKBJPHEJK,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KPIHDPGDMKB::KPIHDPGDMKB>(
             "BMGOLFNGHGH",
@@ -291,13 +291,13 @@ impl ::protobuf::Message for CCKJAEDDDCL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(is.read_message()?));
-                },
-                98 => {
+                66 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(is.read_message()?));
                 },
-                114 => {
+                82 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(is.read_message()?));
+                },
+                106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(cckjaedddcl::KKNBOACNCON::BMGOLFNGHGH(is.read_message()?));
                 },
                 122 => {
@@ -317,11 +317,11 @@ impl ::protobuf::Message for CCKJAEDDDCL {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v) => {
+                &cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(ref v) => {
+                &cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -343,14 +343,14 @@ impl ::protobuf::Message for CCKJAEDDDCL {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
                 &cckjaedddcl::KKNBOACNCON::ABPOOCOOKCF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+                },
+                &cckjaedddcl::KKNBOACNCON::BBEKBJPHEJK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
                 &cckjaedddcl::KKNBOACNCON::BMGOLFNGHGH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &cckjaedddcl::KKNBOACNCON::MECOEFEJANE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -414,10 +414,10 @@ pub mod cckjaedddcl {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:CCKJAEDDDCL.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:CCKJAEDDDCL.BBEKBJPHEJK)
-        BBEKBJPHEJK(super::super::AHLALEEJOEG::AHLALEEJOEG),
         // @@protoc_insertion_point(oneof_field:CCKJAEDDDCL.ABPOOCOOKCF)
         ABPOOCOOKCF(super::super::GANFMBPEJPF::GANFMBPEJPF),
+        // @@protoc_insertion_point(oneof_field:CCKJAEDDDCL.BBEKBJPHEJK)
+        BBEKBJPHEJK(super::super::AHLALEEJOEG::AHLALEEJOEG),
         // @@protoc_insertion_point(oneof_field:CCKJAEDDDCL.BMGOLFNGHGH)
         BMGOLFNGHGH(super::super::KPIHDPGDMKB::KPIHDPGDMKB),
         // @@protoc_insertion_point(oneof_field:CCKJAEDDDCL.MECOEFEJANE)
@@ -444,11 +444,11 @@ pub mod cckjaedddcl {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCKJAEDDDCL.proto\x1a\x11AHLALEEJOEG.proto\x1a\x11CDDEIPOBBCN.prot\
     o\x1a\x11GANFMBPEJPF.proto\x1a\x11KPIHDPGDMKB.proto\"\xe4\x01\n\x0bCCKJA\
-    EDDDCL\x120\n\x0bBBEKBJPHEJK\x18\x01\x20\x01(\x0b2\x0c.AHLALEEJOEGH\0R\
-    \x0bBBEKBJPHEJK\x120\n\x0bABPOOCOOKCF\x18\x0c\x20\x01(\x0b2\x0c.GANFMBPE\
-    JPFH\0R\x0bABPOOCOOKCF\x120\n\x0bBMGOLFNGHGH\x18\x0e\x20\x01(\x0b2\x0c.K\
-    PIHDPGDMKBH\0R\x0bBMGOLFNGHGH\x120\n\x0bMECOEFEJANE\x18\x0f\x20\x01(\x0b\
-    2\x0c.CDDEIPOBBCNH\0R\x0bMECOEFEJANEB\r\n\x0bKKNBOACNCONb\x06proto3\
+    EDDDCL\x120\n\x0bABPOOCOOKCF\x18\x08\x20\x01(\x0b2\x0c.GANFMBPEJPFH\0R\
+    \x0bABPOOCOOKCF\x120\n\x0bBBEKBJPHEJK\x18\n\x20\x01(\x0b2\x0c.AHLALEEJOE\
+    GH\0R\x0bBBEKBJPHEJK\x120\n\x0bBMGOLFNGHGH\x18\r\x20\x01(\x0b2\x0c.KPIHD\
+    PGDMKBH\0R\x0bBMGOLFNGHGH\x120\n\x0bMECOEFEJANE\x18\x0f\x20\x01(\x0b2\
+    \x0c.CDDEIPOBBCNH\0R\x0bMECOEFEJANEB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

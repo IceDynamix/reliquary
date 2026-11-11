@@ -82,7 +82,7 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
                 24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                106 => {
                     self.challenge_list.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for RaidCollectionDataScRsp {
             os.write_uint32(3, self.retcode)?;
         }
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRaidCollectionDataScRsp.proto\x1a\x11BOPOBHGDIKN.proto\"h\n\x17Rai\
     dCollectionDataScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
-    \x123\n\x0echallenge_list\x18\n\x20\x03(\x0b2\x0c.BOPOBHGDIKNR\rchalleng\
+    \x123\n\x0echallenge_list\x18\r\x20\x03(\x0b2\x0c.BOPOBHGDIKNR\rchalleng\
     eListb\x06proto3\
 ";
 

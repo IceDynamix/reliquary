@@ -72,10 +72,10 @@ impl ::protobuf::Message for JCAHAPMBCOC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.EJHKAHEGCDC)?;
                 },
-                64 => {
+                16 => {
                     self.EJHKAHEGCDC.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for JCAHAPMBCOC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EJHKAHEGCDC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.EJHKAHEGCDC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.EJHKAHEGCDC)?;
+        os.write_repeated_packed_uint32(2, &self.EJHKAHEGCDC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for JCAHAPMBCOC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JCAHAPMBCOC.proto\"/\n\x0bJCAHAPMBCOC\x12\x20\n\x0bEJHKAHEGCDC\x18\
-    \x08\x20\x03(\rR\x0bEJHKAHEGCDCb\x06proto3\
+    \x02\x20\x03(\rR\x0bEJHKAHEGCDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetUnreleasedBlockInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.GCMOKMIEHDB)
+    pub GCMOKMIEHDB: i64,
     // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.KNKGIENCLJJ)
     pub KNKGIENCLJJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.NJIIPBHBEDK)
     pub NJIIPBHBEDK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.GCMOKMIEHDB)
-    pub GCMOKMIEHDB: i64,
     // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -55,6 +55,11 @@ impl GetUnreleasedBlockInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GCMOKMIEHDB",
+            |m: &GetUnreleasedBlockInfoScRsp| { &m.GCMOKMIEHDB },
+            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.GCMOKMIEHDB },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KNKGIENCLJJ",
             |m: &GetUnreleasedBlockInfoScRsp| { &m.KNKGIENCLJJ },
@@ -64,11 +69,6 @@ impl GetUnreleasedBlockInfoScRsp {
             "NJIIPBHBEDK",
             |m: &GetUnreleasedBlockInfoScRsp| { &m.NJIIPBHBEDK },
             |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.NJIIPBHBEDK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCMOKMIEHDB",
-            |m: &GetUnreleasedBlockInfoScRsp| { &m.GCMOKMIEHDB },
-            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.GCMOKMIEHDB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                8 => {
+                    self.GCMOKMIEHDB = is.read_int64()?;
+                },
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.KNKGIENCLJJ)?;
                 },
-                8 => {
+                24 => {
                     self.KNKGIENCLJJ.push(is.read_uint32()?);
                 },
-                42 => {
+                106 => {
                     is.read_repeated_packed_uint32_into(&mut self.NJIIPBHBEDK)?;
                 },
-                40 => {
+                104 => {
                     self.NJIIPBHBEDK.push(is.read_uint32()?);
-                },
-                80 => {
-                    self.GCMOKMIEHDB = is.read_int64()?;
                 },
                 112 => {
                     self.retcode = is.read_uint32()?;
@@ -123,11 +123,11 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KNKGIENCLJJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.NJIIPBHBEDK);
         if self.GCMOKMIEHDB != 0 {
-            my_size += ::protobuf::rt::int64_size(10, self.GCMOKMIEHDB);
+            my_size += ::protobuf::rt::int64_size(1, self.GCMOKMIEHDB);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.KNKGIENCLJJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NJIIPBHBEDK);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
@@ -137,11 +137,11 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.KNKGIENCLJJ)?;
-        os.write_repeated_packed_uint32(5, &self.NJIIPBHBEDK)?;
         if self.GCMOKMIEHDB != 0 {
-            os.write_int64(10, self.GCMOKMIEHDB)?;
+            os.write_int64(1, self.GCMOKMIEHDB)?;
         }
+        os.write_repeated_packed_uint32(3, &self.KNKGIENCLJJ)?;
+        os.write_repeated_packed_uint32(13, &self.NJIIPBHBEDK)?;
         if self.retcode != 0 {
             os.write_uint32(14, self.retcode)?;
         }
@@ -162,18 +162,18 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.GCMOKMIEHDB = 0;
         self.KNKGIENCLJJ.clear();
         self.NJIIPBHBEDK.clear();
-        self.GCMOKMIEHDB = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetUnreleasedBlockInfoScRsp {
         static instance: GetUnreleasedBlockInfoScRsp = GetUnreleasedBlockInfoScRsp {
+            GCMOKMIEHDB: 0,
             KNKGIENCLJJ: ::std::vec::Vec::new(),
             NJIIPBHBEDK: ::std::vec::Vec::new(),
-            GCMOKMIEHDB: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for GetUnreleasedBlockInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetUnreleasedBlockInfoScRsp.proto\"\x9d\x01\n\x1bGetUnreleasedBlockIn\
-    foScRsp\x12\x20\n\x0bKNKGIENCLJJ\x18\x01\x20\x03(\rR\x0bKNKGIENCLJJ\x12\
-    \x20\n\x0bNJIIPBHBEDK\x18\x05\x20\x03(\rR\x0bNJIIPBHBEDK\x12\x20\n\x0bGC\
-    MOKMIEHDB\x18\n\x20\x01(\x03R\x0bGCMOKMIEHDB\x12\x18\n\x07retcode\x18\
-    \x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    foScRsp\x12\x20\n\x0bGCMOKMIEHDB\x18\x01\x20\x01(\x03R\x0bGCMOKMIEHDB\
+    \x12\x20\n\x0bKNKGIENCLJJ\x18\x03\x20\x03(\rR\x0bKNKGIENCLJJ\x12\x20\n\
+    \x0bNJIIPBHBEDK\x18\r\x20\x03(\rR\x0bNJIIPBHBEDK\x12\x18\n\x07retcode\
+    \x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

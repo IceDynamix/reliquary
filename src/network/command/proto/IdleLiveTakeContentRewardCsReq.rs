@@ -79,10 +79,10 @@ impl ::protobuf::Message for IdleLiveTakeContentRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                16 => {
                     self.content_id = is.read_uint32()?;
                 },
-                64 => {
+                88 => {
                     self.MMNJODIJPOE = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for IdleLiveTakeContentRewardCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.content_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.content_id);
         }
         if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(8, self.MMNJODIJPOE.value());
+            my_size += ::protobuf::rt::int32_size(11, self.MMNJODIJPOE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IdleLiveTakeContentRewardCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.content_id != 0 {
-            os.write_uint32(5, self.content_id)?;
+            os.write_uint32(2, self.content_id)?;
         }
         if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveTakeContentRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$IdleLiveTakeContentRewardCsReq.proto\x1a\x11LPPKGHJGOCC.proto\"o\n\
-    \x1eIdleLiveTakeContentRewardCsReq\x12\x1d\n\ncontent_id\x18\x05\x20\x01\
-    (\rR\tcontentId\x12.\n\x0bMMNJODIJPOE\x18\x08\x20\x01(\x0e2\x0c.LPPKGHJG\
+    \x1eIdleLiveTakeContentRewardCsReq\x12\x1d\n\ncontent_id\x18\x02\x20\x01\
+    (\rR\tcontentId\x12.\n\x0bMMNJODIJPOE\x18\x0b\x20\x01(\x0e2\x0c.LPPKGHJG\
     OCCR\x0bMMNJODIJPOEb\x06proto3\
 ";
 

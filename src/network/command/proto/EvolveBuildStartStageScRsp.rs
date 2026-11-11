@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartStageScRsp {
     // message fields
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.AEPNEDJPAGK)
+    pub AEPNEDJPAGK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.OEIBHLMDJKA)
     pub OEIBHLMDJKA: ::protobuf::MessageField<super::LDLCMMOPKNG::LDLCMMOPKNG>,
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.AEPNEDJPAGK)
-    pub AEPNEDJPAGK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl EvolveBuildStartStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
+            "AEPNEDJPAGK",
+            |m: &EvolveBuildStartStageScRsp| { &m.AEPNEDJPAGK },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.AEPNEDJPAGK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EvolveBuildStartStageScRsp| { &m.retcode },
@@ -62,11 +67,6 @@ impl EvolveBuildStartStageScRsp {
             "OEIBHLMDJKA",
             |m: &EvolveBuildStartStageScRsp| { &m.OEIBHLMDJKA },
             |m: &mut EvolveBuildStartStageScRsp| { &mut m.OEIBHLMDJKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "AEPNEDJPAGK",
-            |m: &EvolveBuildStartStageScRsp| { &m.AEPNEDJPAGK },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.AEPNEDJPAGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartStageScRsp>(
             "EvolveBuildStartStageScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
-                },
                 42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEPNEDJPAGK)?;
+                },
+                56 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if let Some(v) = self.AEPNEDJPAGK.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(7, self.retcode)?;
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn clear(&mut self) {
+        self.AEPNEDJPAGK.clear();
         self.retcode = 0;
         self.OEIBHLMDJKA.clear();
-        self.AEPNEDJPAGK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartStageScRsp {
         static instance: EvolveBuildStartStageScRsp = EvolveBuildStartStageScRsp {
+            AEPNEDJPAGK: ::protobuf::MessageField::none(),
             retcode: 0,
             OEIBHLMDJKA: ::protobuf::MessageField::none(),
-            AEPNEDJPAGK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20EvolveBuildStartStageScRsp.proto\x1a\x11LDLCMMOPKNG.proto\x1a\x15S\
-    ceneBattleInfo.proto\"\x9a\x01\n\x1aEvolveBuildStartStageScRsp\x12\x18\n\
-    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bOEIBHLMDJKA\x18\x03\
-    \x20\x01(\x0b2\x0c.LDLCMMOPKNGR\x0bOEIBHLMDJKA\x122\n\x0bAEPNEDJPAGK\x18\
-    \x05\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bAEPNEDJPAGKb\x06proto3\
+    ceneBattleInfo.proto\"\x9a\x01\n\x1aEvolveBuildStartStageScRsp\x122\n\
+    \x0bAEPNEDJPAGK\x18\x05\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bAEPNEDJPAG\
+    K\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bOEIBHLMD\
+    JKA\x18\r\x20\x01(\x0b2\x0c.LDLCMMOPKNGR\x0bOEIBHLMDJKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

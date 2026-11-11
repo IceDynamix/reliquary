@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DCNIDBKPPCK {
     // message fields
-    // @@protoc_insertion_point(field:DCNIDBKPPCK.IKJOGIDIBPK)
-    pub IKJOGIDIBPK: ::std::vec::Vec<u64>,
     // @@protoc_insertion_point(field:DCNIDBKPPCK.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:DCNIDBKPPCK.IKJOGIDIBPK)
+    pub IKJOGIDIBPK: ::std::vec::Vec<u64>,
     // @@protoc_insertion_point(field:DCNIDBKPPCK.BECJDIGOOOF)
     pub BECJDIGOOOF: ::std::vec::Vec<super::NMEGIPHFFDA::NMEGIPHFFDA>,
     // special fields
@@ -53,15 +53,15 @@ impl DCNIDBKPPCK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IKJOGIDIBPK",
-            |m: &DCNIDBKPPCK| { &m.IKJOGIDIBPK },
-            |m: &mut DCNIDBKPPCK| { &mut m.IKJOGIDIBPK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DCNIDBKPPCK| { &m.retcode },
             |m: &mut DCNIDBKPPCK| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IKJOGIDIBPK",
+            |m: &DCNIDBKPPCK| { &m.IKJOGIDIBPK },
+            |m: &mut DCNIDBKPPCK| { &mut m.IKJOGIDIBPK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "BECJDIGOOOF",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for DCNIDBKPPCK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint64_into(&mut self.IKJOGIDIBPK)?;
-                },
-                8 => {
-                    self.IKJOGIDIBPK.push(is.read_uint64()?);
-                },
-                48 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
+                114 => {
+                    is.read_repeated_packed_uint64_into(&mut self.IKJOGIDIBPK)?;
+                },
+                112 => {
+                    self.IKJOGIDIBPK.push(is.read_uint64()?);
+                },
+                122 => {
                     self.BECJDIGOOOF.push(is.read_message()?);
                 },
                 tag => {
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DCNIDBKPPCK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint64_size(1, &self.IKJOGIDIBPK);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
+        my_size += ::protobuf::rt::vec_packed_uint64_size(14, &self.IKJOGIDIBPK);
         for value in &self.BECJDIGOOOF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,12 +124,12 @@ impl ::protobuf::Message for DCNIDBKPPCK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint64(1, &self.IKJOGIDIBPK)?;
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
+        os.write_repeated_packed_uint64(14, &self.IKJOGIDIBPK)?;
         for v in &self.BECJDIGOOOF {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for DCNIDBKPPCK {
     }
 
     fn clear(&mut self) {
-        self.IKJOGIDIBPK.clear();
         self.retcode = 0;
+        self.IKJOGIDIBPK.clear();
         self.BECJDIGOOOF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DCNIDBKPPCK {
         static instance: DCNIDBKPPCK = DCNIDBKPPCK {
-            IKJOGIDIBPK: ::std::vec::Vec::new(),
             retcode: 0,
+            IKJOGIDIBPK: ::std::vec::Vec::new(),
             BECJDIGOOOF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for DCNIDBKPPCK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DCNIDBKPPCK.proto\x1a\x11NMEGIPHFFDA.proto\"y\n\x0bDCNIDBKPPCK\x12\
-    \x20\n\x0bIKJOGIDIBPK\x18\x01\x20\x03(\x04R\x0bIKJOGIDIBPK\x12\x18\n\x07\
-    retcode\x18\x06\x20\x01(\rR\x07retcode\x12.\n\x0bBECJDIGOOOF\x18\t\x20\
+    \x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bIKJOGIDIBPK\
+    \x18\x0e\x20\x03(\x04R\x0bIKJOGIDIBPK\x12.\n\x0bBECJDIGOOOF\x18\x0f\x20\
     \x03(\x0b2\x0c.NMEGIPHFFDAR\x0bBECJDIGOOOFb\x06proto3\
 ";
 

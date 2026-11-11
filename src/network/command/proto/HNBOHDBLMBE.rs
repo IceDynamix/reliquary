@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HNBOHDBLMBE {
     // message fields
+    // @@protoc_insertion_point(field:HNBOHDBLMBE.FDKPCNBCGEG)
+    pub FDKPCNBCGEG: u32,
     // @@protoc_insertion_point(field:HNBOHDBLMBE.KEOKEELBKHI)
     pub KEOKEELBKHI: bool,
     // @@protoc_insertion_point(field:HNBOHDBLMBE.CPECADDMNMC)
     pub CPECADDMNMC: ::std::vec::Vec<super::JOFCAOFIHCD::JOFCAOFIHCD>,
-    // @@protoc_insertion_point(field:HNBOHDBLMBE.FDKPCNBCGEG)
-    pub FDKPCNBCGEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HNBOHDBLMBE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl HNBOHDBLMBE {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FDKPCNBCGEG",
+            |m: &HNBOHDBLMBE| { &m.FDKPCNBCGEG },
+            |m: &mut HNBOHDBLMBE| { &mut m.FDKPCNBCGEG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KEOKEELBKHI",
             |m: &HNBOHDBLMBE| { &m.KEOKEELBKHI },
             |m: &mut HNBOHDBLMBE| { &mut m.KEOKEELBKHI },
@@ -62,11 +67,6 @@ impl HNBOHDBLMBE {
             "CPECADDMNMC",
             |m: &HNBOHDBLMBE| { &m.CPECADDMNMC },
             |m: &mut HNBOHDBLMBE| { &mut m.CPECADDMNMC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDKPCNBCGEG",
-            |m: &HNBOHDBLMBE| { &m.FDKPCNBCGEG },
-            |m: &mut HNBOHDBLMBE| { &mut m.FDKPCNBCGEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HNBOHDBLMBE>(
             "HNBOHDBLMBE",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HNBOHDBLMBE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
+                    self.FDKPCNBCGEG = is.read_uint32()?;
+                },
+                64 => {
                     self.KEOKEELBKHI = is.read_bool()?;
                 },
-                58 => {
+                122 => {
                     self.CPECADDMNMC.push(is.read_message()?);
-                },
-                96 => {
-                    self.FDKPCNBCGEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for HNBOHDBLMBE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FDKPCNBCGEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.FDKPCNBCGEG);
+        }
         if self.KEOKEELBKHI != false {
             my_size += 1 + 1;
         }
@@ -114,24 +117,21 @@ impl ::protobuf::Message for HNBOHDBLMBE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FDKPCNBCGEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FDKPCNBCGEG);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FDKPCNBCGEG != 0 {
+            os.write_uint32(3, self.FDKPCNBCGEG)?;
+        }
         if self.KEOKEELBKHI != false {
-            os.write_bool(6, self.KEOKEELBKHI)?;
+            os.write_bool(8, self.KEOKEELBKHI)?;
         }
         for v in &self.CPECADDMNMC {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.FDKPCNBCGEG != 0 {
-            os.write_uint32(12, self.FDKPCNBCGEG)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for HNBOHDBLMBE {
     }
 
     fn clear(&mut self) {
+        self.FDKPCNBCGEG = 0;
         self.KEOKEELBKHI = false;
         self.CPECADDMNMC.clear();
-        self.FDKPCNBCGEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HNBOHDBLMBE {
         static instance: HNBOHDBLMBE = HNBOHDBLMBE {
+            FDKPCNBCGEG: 0,
             KEOKEELBKHI: false,
             CPECADDMNMC: ::std::vec::Vec::new(),
-            FDKPCNBCGEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for HNBOHDBLMBE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HNBOHDBLMBE.proto\x1a\x11JOFCAOFIHCD.proto\"\x81\x01\n\x0bHNBOHDBL\
-    MBE\x12\x20\n\x0bKEOKEELBKHI\x18\x06\x20\x01(\x08R\x0bKEOKEELBKHI\x12.\n\
-    \x0bCPECADDMNMC\x18\x07\x20\x03(\x0b2\x0c.JOFCAOFIHCDR\x0bCPECADDMNMC\
-    \x12\x20\n\x0bFDKPCNBCGEG\x18\x0c\x20\x01(\rR\x0bFDKPCNBCGEGb\x06proto3\
+    MBE\x12\x20\n\x0bFDKPCNBCGEG\x18\x03\x20\x01(\rR\x0bFDKPCNBCGEG\x12\x20\
+    \n\x0bKEOKEELBKHI\x18\x08\x20\x01(\x08R\x0bKEOKEELBKHI\x12.\n\x0bCPECADD\
+    MNMC\x18\x0f\x20\x03(\x0b2\x0c.JOFCAOFIHCDR\x0bCPECADDMNMCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

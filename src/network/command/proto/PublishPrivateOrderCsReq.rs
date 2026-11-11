@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PublishPrivateOrderCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PublishPrivateOrderCsReq.JDFJJOKDIKC)
-    pub JDFJJOKDIKC: u32,
     // @@protoc_insertion_point(field:PublishPrivateOrderCsReq.JFPABCLOALC)
     pub JFPABCLOALC: u32,
+    // @@protoc_insertion_point(field:PublishPrivateOrderCsReq.JDFJJOKDIKC)
+    pub JDFJJOKDIKC: u32,
     // @@protoc_insertion_point(field:PublishPrivateOrderCsReq.AFFLDMFBGEH)
     pub AFFLDMFBGEH: u64,
     // special fields
@@ -54,14 +54,14 @@ impl PublishPrivateOrderCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JDFJJOKDIKC",
-            |m: &PublishPrivateOrderCsReq| { &m.JDFJJOKDIKC },
-            |m: &mut PublishPrivateOrderCsReq| { &mut m.JDFJJOKDIKC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JFPABCLOALC",
             |m: &PublishPrivateOrderCsReq| { &m.JFPABCLOALC },
             |m: &mut PublishPrivateOrderCsReq| { &mut m.JFPABCLOALC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDFJJOKDIKC",
+            |m: &PublishPrivateOrderCsReq| { &m.JDFJJOKDIKC },
+            |m: &mut PublishPrivateOrderCsReq| { &mut m.JDFJJOKDIKC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AFFLDMFBGEH",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for PublishPrivateOrderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.JDFJJOKDIKC = is.read_uint32()?;
-                },
-                112 => {
+                16 => {
                     self.JFPABCLOALC = is.read_uint32()?;
                 },
-                120 => {
+                24 => {
+                    self.JDFJJOKDIKC = is.read_uint32()?;
+                },
+                40 => {
                     self.AFFLDMFBGEH = is.read_uint64()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PublishPrivateOrderCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JDFJJOKDIKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JDFJJOKDIKC);
-        }
         if self.JFPABCLOALC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JFPABCLOALC);
+            my_size += ::protobuf::rt::uint32_size(2, self.JFPABCLOALC);
+        }
+        if self.JDFJJOKDIKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.JDFJJOKDIKC);
         }
         if self.AFFLDMFBGEH != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.AFFLDMFBGEH);
+            my_size += ::protobuf::rt::uint64_size(5, self.AFFLDMFBGEH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PublishPrivateOrderCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JDFJJOKDIKC != 0 {
-            os.write_uint32(7, self.JDFJJOKDIKC)?;
-        }
         if self.JFPABCLOALC != 0 {
-            os.write_uint32(14, self.JFPABCLOALC)?;
+            os.write_uint32(2, self.JFPABCLOALC)?;
+        }
+        if self.JDFJJOKDIKC != 0 {
+            os.write_uint32(3, self.JDFJJOKDIKC)?;
         }
         if self.AFFLDMFBGEH != 0 {
-            os.write_uint64(15, self.AFFLDMFBGEH)?;
+            os.write_uint64(5, self.AFFLDMFBGEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PublishPrivateOrderCsReq {
     }
 
     fn clear(&mut self) {
-        self.JDFJJOKDIKC = 0;
         self.JFPABCLOALC = 0;
+        self.JDFJJOKDIKC = 0;
         self.AFFLDMFBGEH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PublishPrivateOrderCsReq {
         static instance: PublishPrivateOrderCsReq = PublishPrivateOrderCsReq {
-            JDFJJOKDIKC: 0,
             JFPABCLOALC: 0,
+            JDFJJOKDIKC: 0,
             AFFLDMFBGEH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PublishPrivateOrderCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePublishPrivateOrderCsReq.proto\"\x80\x01\n\x18PublishPrivateOrderC\
-    sReq\x12\x20\n\x0bJDFJJOKDIKC\x18\x07\x20\x01(\rR\x0bJDFJJOKDIKC\x12\x20\
-    \n\x0bJFPABCLOALC\x18\x0e\x20\x01(\rR\x0bJFPABCLOALC\x12\x20\n\x0bAFFLDM\
-    FBGEH\x18\x0f\x20\x01(\x04R\x0bAFFLDMFBGEHb\x06proto3\
+    sReq\x12\x20\n\x0bJFPABCLOALC\x18\x02\x20\x01(\rR\x0bJFPABCLOALC\x12\x20\
+    \n\x0bJDFJJOKDIKC\x18\x03\x20\x01(\rR\x0bJDFJJOKDIKC\x12\x20\n\x0bAFFLDM\
+    FBGEH\x18\x05\x20\x01(\x04R\x0bAFFLDMFBGEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -52,56 +52,7 @@ impl FriendChallengeClearanceInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStatistics challenge_default = 173;
-
-    pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
-        match self.EDKOHAAMONH {
-            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v)) => v,
-            _ => <super::ChallengeStatistics::ChallengeStatistics as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_challenge_default(&mut self) {
-        self.EDKOHAAMONH = ::std::option::Option::None;
-    }
-
-    pub fn has_challenge_default(&self) -> bool {
-        match self.EDKOHAAMONH {
-            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_challenge_default(&mut self, v: super::ChallengeStatistics::ChallengeStatistics) {
-        self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_challenge_default(&mut self) -> &mut super::ChallengeStatistics::ChallengeStatistics {
-        if let ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(_)) = self.EDKOHAAMONH {
-        } else {
-            self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
-        }
-        match self.EDKOHAAMONH {
-            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_challenge_default(&mut self) -> super::ChallengeStatistics::ChallengeStatistics {
-        if self.has_challenge_default() {
-            match self.EDKOHAAMONH.take() {
-                ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ChallengeStatistics::ChallengeStatistics::new()
-        }
-    }
-
-    // .ChallengeStoryStatistics challenge_story = 759;
+    // .ChallengeStoryStatistics challenge_story = 458;
 
     pub fn challenge_story(&self) -> &super::ChallengeStoryStatistics::ChallengeStoryStatistics {
         match self.EDKOHAAMONH {
@@ -150,7 +101,7 @@ impl FriendChallengeClearanceInfo {
         }
     }
 
-    // .ChallengeBossStatistics challenge_boss = 1549;
+    // .ChallengeBossStatistics challenge_boss = 1487;
 
     pub fn challenge_boss(&self) -> &super::ChallengeBossStatistics::ChallengeBossStatistics {
         match self.EDKOHAAMONH {
@@ -199,6 +150,55 @@ impl FriendChallengeClearanceInfo {
         }
     }
 
+    // .ChallengeStatistics challenge_default = 1733;
+
+    pub fn challenge_default(&self) -> &super::ChallengeStatistics::ChallengeStatistics {
+        match self.EDKOHAAMONH {
+            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v)) => v,
+            _ => <super::ChallengeStatistics::ChallengeStatistics as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_challenge_default(&mut self) {
+        self.EDKOHAAMONH = ::std::option::Option::None;
+    }
+
+    pub fn has_challenge_default(&self) -> bool {
+        match self.EDKOHAAMONH {
+            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_challenge_default(&mut self, v: super::ChallengeStatistics::ChallengeStatistics) {
+        self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_challenge_default(&mut self) -> &mut super::ChallengeStatistics::ChallengeStatistics {
+        if let ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(_)) = self.EDKOHAAMONH {
+        } else {
+            self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(super::ChallengeStatistics::ChallengeStatistics::new()));
+        }
+        match self.EDKOHAAMONH {
+            ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_challenge_default(&mut self) -> super::ChallengeStatistics::ChallengeStatistics {
+        if self.has_challenge_default() {
+            match self.EDKOHAAMONH.take() {
+                ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ChallengeStatistics::ChallengeStatistics::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -217,13 +217,6 @@ impl FriendChallengeClearanceInfo {
             |m: &FriendChallengeClearanceInfo| { &m.LMPPDGOFOMF },
             |m: &mut FriendChallengeClearanceInfo| { &mut m.LMPPDGOFOMF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
-            "challenge_default",
-            FriendChallengeClearanceInfo::has_challenge_default,
-            FriendChallengeClearanceInfo::challenge_default,
-            FriendChallengeClearanceInfo::mut_challenge_default,
-            FriendChallengeClearanceInfo::set_challenge_default,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStoryStatistics::ChallengeStoryStatistics>(
             "challenge_story",
             FriendChallengeClearanceInfo::has_challenge_story,
@@ -237,6 +230,13 @@ impl FriendChallengeClearanceInfo {
             FriendChallengeClearanceInfo::challenge_boss,
             FriendChallengeClearanceInfo::mut_challenge_boss,
             FriendChallengeClearanceInfo::set_challenge_boss,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ChallengeStatistics::ChallengeStatistics>(
+            "challenge_default",
+            FriendChallengeClearanceInfo::has_challenge_default,
+            FriendChallengeClearanceInfo::challenge_default,
+            FriendChallengeClearanceInfo::mut_challenge_default,
+            FriendChallengeClearanceInfo::set_challenge_default,
         ));
         oneofs.push(friend_challenge_clearance_info::EDKOHAAMONH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendChallengeClearanceInfo>(
@@ -257,23 +257,23 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MEGBIPBAFBP)?;
                 },
-                80 => {
+                64 => {
                     self.group_id = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.LMPPDGOFOMF = is.read_uint32()?;
                 },
-                1386 => {
-                    self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(is.read_message()?));
-                },
-                6074 => {
+                3666 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeStory(is.read_message()?));
                 },
-                12394 => {
+                11898 => {
                     self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeBoss(is.read_message()?));
+                },
+                13866 => {
+                    self.EDKOHAAMONH = ::std::option::Option::Some(friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -292,22 +292,22 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
         }
         if self.LMPPDGOFOMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LMPPDGOFOMF);
+            my_size += ::protobuf::rt::uint32_size(14, self.LMPPDGOFOMF);
         }
         if let ::std::option::Option::Some(ref v) = self.EDKOHAAMONH {
             match v {
-                &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeStory(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeBoss(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -320,24 +320,24 @@ impl ::protobuf::Message for FriendChallengeClearanceInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MEGBIPBAFBP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(10, self.group_id)?;
+            os.write_uint32(8, self.group_id)?;
         }
         if self.LMPPDGOFOMF != 0 {
-            os.write_uint32(12, self.LMPPDGOFOMF)?;
+            os.write_uint32(14, self.LMPPDGOFOMF)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EDKOHAAMONH {
             match v {
-                &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(173, v, os)?;
-                },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeStory(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(759, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(458, v, os)?;
                 },
                 &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeBoss(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1549, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1487, v, os)?;
+                },
+                &friend_challenge_clearance_info::EDKOHAAMONH::ChallengeDefault(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
                 },
             };
         }
@@ -403,12 +403,12 @@ pub mod friend_challenge_clearance_info {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FriendChallengeClearanceInfo.EDKOHAAMONH)
     pub enum EDKOHAAMONH {
-        // @@protoc_insertion_point(oneof_field:FriendChallengeClearanceInfo.challenge_default)
-        ChallengeDefault(super::super::ChallengeStatistics::ChallengeStatistics),
         // @@protoc_insertion_point(oneof_field:FriendChallengeClearanceInfo.challenge_story)
         ChallengeStory(super::super::ChallengeStoryStatistics::ChallengeStoryStatistics),
         // @@protoc_insertion_point(oneof_field:FriendChallengeClearanceInfo.challenge_boss)
         ChallengeBoss(super::super::ChallengeBossStatistics::ChallengeBossStatistics),
+        // @@protoc_insertion_point(oneof_field:FriendChallengeClearanceInfo.challenge_default)
+        ChallengeDefault(super::super::ChallengeStatistics::ChallengeStatistics),
     }
 
     impl ::protobuf::Oneof for EDKOHAAMONH {
@@ -432,14 +432,14 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FriendChallengeClearanceInfo.proto\x1a\x11BBBIAPEHABA.proto\x1a\x1dC\
     hallengeBossStatistics.proto\x1a\x19ChallengeStatistics.proto\x1a\x1eCha\
     llengeStoryStatistics.proto\"\xeb\x02\n\x1cFriendChallengeClearanceInfo\
-    \x12.\n\x0bMEGBIPBAFBP\x18\t\x20\x01(\x0b2\x0c.BBBIAPEHABAR\x0bMEGBIPBAF\
-    BP\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupId\x12\x20\n\x0bLMPPD\
-    GOFOMF\x18\x0c\x20\x01(\rR\x0bLMPPDGOFOMF\x12D\n\x11challenge_default\
-    \x18\xad\x01\x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10challengeDefau\
-    lt\x12E\n\x0fchallenge_story\x18\xf7\x05\x20\x01(\x0b2\x19.ChallengeStor\
-    yStatisticsH\0R\x0echallengeStory\x12B\n\x0echallenge_boss\x18\x8d\x0c\
-    \x20\x01(\x0b2\x18.ChallengeBossStatisticsH\0R\rchallengeBossB\r\n\x0bED\
-    KOHAAMONHb\x06proto3\
+    \x12.\n\x0bMEGBIPBAFBP\x18\x02\x20\x01(\x0b2\x0c.BBBIAPEHABAR\x0bMEGBIPB\
+    AFBP\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\x07groupId\x12\x20\n\x0bL\
+    MPPDGOFOMF\x18\x0e\x20\x01(\rR\x0bLMPPDGOFOMF\x12E\n\x0fchallenge_story\
+    \x18\xca\x03\x20\x01(\x0b2\x19.ChallengeStoryStatisticsH\0R\x0echallenge\
+    Story\x12B\n\x0echallenge_boss\x18\xcf\x0b\x20\x01(\x0b2\x18.ChallengeBo\
+    ssStatisticsH\0R\rchallengeBoss\x12D\n\x11challenge_default\x18\xc5\r\
+    \x20\x01(\x0b2\x14.ChallengeStatisticsH\0R\x10challengeDefaultB\r\n\x0bE\
+    DKOHAAMONHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

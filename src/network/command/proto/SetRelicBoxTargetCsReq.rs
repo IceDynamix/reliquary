@@ -72,7 +72,7 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCLLALGABAB)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetRelicBoxTargetCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MCLLALGABAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for SetRelicBoxTargetCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetRelicBoxTargetCsReq.proto\x1a\x11HGABLJFOKDG.proto\"H\n\x16SetR\
-    elicBoxTargetCsReq\x12.\n\x0bMCLLALGABAB\x18\t\x20\x01(\x0b2\x0c.HGABLJF\
+    elicBoxTargetCsReq\x12.\n\x0bMCLLALGABAB\x18\n\x20\x01(\x0b2\x0c.HGABLJF\
     OKDGR\x0bMCLLALGABABb\x06proto3\
 ";
 

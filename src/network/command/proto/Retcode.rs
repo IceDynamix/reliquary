@@ -2101,140 +2101,140 @@ pub enum Retcode {
     RET_ELF_RESTAURANT_NO_REWARD = 6849,
     // @@protoc_insertion_point(enum_value:Retcode.RET_ELF_RESTAURANT_NOT_INIT)
     RET_ELF_RESTAURANT_NOT_INIT = 6850,
-    // @@protoc_insertion_point(enum_value:Retcode.H_2c978515)
-    H_2c978515 = 6900,
-    // @@protoc_insertion_point(enum_value:Retcode.H_21760dc8)
-    H_21760dc8 = 6901,
-    // @@protoc_insertion_point(enum_value:Retcode.H_de9defb4)
-    H_de9defb4 = 6902,
-    // @@protoc_insertion_point(enum_value:Retcode.H_39a98c17)
-    H_39a98c17 = 6903,
-    // @@protoc_insertion_point(enum_value:Retcode.H_9990338f)
-    H_9990338f = 6904,
-    // @@protoc_insertion_point(enum_value:Retcode.H_da99b907)
-    H_da99b907 = 6905,
-    // @@protoc_insertion_point(enum_value:Retcode.H_39ccac4c)
-    H_39ccac4c = 6906,
-    // @@protoc_insertion_point(enum_value:Retcode.H_1206b37b)
-    H_1206b37b = 6907,
-    // @@protoc_insertion_point(enum_value:Retcode.H_f0d6261e)
-    H_f0d6261e = 6908,
-    // @@protoc_insertion_point(enum_value:Retcode.H_88b6282b)
-    H_88b6282b = 6909,
-    // @@protoc_insertion_point(enum_value:Retcode.H_ce535870)
-    H_ce535870 = 6910,
-    // @@protoc_insertion_point(enum_value:Retcode.H_b7e6dfbf)
-    H_b7e6dfbf = 6911,
-    // @@protoc_insertion_point(enum_value:Retcode.H_befc7b03)
-    H_befc7b03 = 6912,
-    // @@protoc_insertion_point(enum_value:Retcode.H_75843592)
-    H_75843592 = 6913,
-    // @@protoc_insertion_point(enum_value:Retcode.H_25d42d75)
-    H_25d42d75 = 6914,
-    // @@protoc_insertion_point(enum_value:Retcode.H_7e80fda4)
-    H_7e80fda4 = 6915,
-    // @@protoc_insertion_point(enum_value:Retcode.H_31f8edb0)
-    H_31f8edb0 = 6916,
-    // @@protoc_insertion_point(enum_value:Retcode.H_2717419e)
-    H_2717419e = 6917,
-    // @@protoc_insertion_point(enum_value:Retcode.H_4104b64c)
-    H_4104b64c = 6918,
-    // @@protoc_insertion_point(enum_value:Retcode.H_2ddc5fac)
-    H_2ddc5fac = 6919,
-    // @@protoc_insertion_point(enum_value:Retcode.H_24153bcc)
-    H_24153bcc = 6920,
-    // @@protoc_insertion_point(enum_value:Retcode.H_0ab4d5b0)
-    H_0ab4d5b0 = 6921,
-    // @@protoc_insertion_point(enum_value:Retcode.H_1462b451)
-    H_1462b451 = 6922,
-    // @@protoc_insertion_point(enum_value:Retcode.H_65bf0a12)
-    H_65bf0a12 = 6923,
-    // @@protoc_insertion_point(enum_value:Retcode.H_dd9ac748)
-    H_dd9ac748 = 6924,
-    // @@protoc_insertion_point(enum_value:Retcode.H_ce34be1b)
-    H_ce34be1b = 6925,
-    // @@protoc_insertion_point(enum_value:Retcode.H_b0b5143b)
-    H_b0b5143b = 6926,
-    // @@protoc_insertion_point(enum_value:Retcode.H_d95f769f)
-    H_d95f769f = 6927,
-    // @@protoc_insertion_point(enum_value:Retcode.H_35609ccb)
-    H_35609ccb = 6928,
-    // @@protoc_insertion_point(enum_value:Retcode.H_ec13a00e)
-    H_ec13a00e = 6929,
-    // @@protoc_insertion_point(enum_value:Retcode.H_28254de7)
-    H_28254de7 = 6930,
-    // @@protoc_insertion_point(enum_value:Retcode.H_6dc702e2)
-    H_6dc702e2 = 6931,
-    // @@protoc_insertion_point(enum_value:Retcode.H_8662d9ee)
-    H_8662d9ee = 6932,
-    // @@protoc_insertion_point(enum_value:Retcode.H_906f4c5a)
-    H_906f4c5a = 6933,
-    // @@protoc_insertion_point(enum_value:Retcode.H_0c3ba835)
-    H_0c3ba835 = 6934,
-    // @@protoc_insertion_point(enum_value:Retcode.H_494caabd)
-    H_494caabd = 6935,
-    // @@protoc_insertion_point(enum_value:Retcode.H_77a40f5d)
-    H_77a40f5d = 6936,
-    // @@protoc_insertion_point(enum_value:Retcode.H_20d2a08c)
-    H_20d2a08c = 6937,
-    // @@protoc_insertion_point(enum_value:Retcode.H_ae4f39ad)
-    H_ae4f39ad = 6938,
-    // @@protoc_insertion_point(enum_value:Retcode.H_10e032a5)
-    H_10e032a5 = 6939,
-    // @@protoc_insertion_point(enum_value:Retcode.H_f0879867)
-    H_f0879867 = 6940,
-    // @@protoc_insertion_point(enum_value:Retcode.H_ddf2e148)
-    H_ddf2e148 = 6941,
-    // @@protoc_insertion_point(enum_value:Retcode.H_e1d57893)
-    H_e1d57893 = 6942,
-    // @@protoc_insertion_point(enum_value:Retcode.H_b8d4e597)
-    H_b8d4e597 = 6943,
-    // @@protoc_insertion_point(enum_value:Retcode.H_5e1e74a4)
-    H_5e1e74a4 = 6944,
-    // @@protoc_insertion_point(enum_value:Retcode.H_1a94c8aa)
-    H_1a94c8aa = 6945,
-    // @@protoc_insertion_point(enum_value:Retcode.H_6dfcd366)
-    H_6dfcd366 = 6946,
-    // @@protoc_insertion_point(enum_value:Retcode.H_bebcd34a)
-    H_bebcd34a = 6947,
-    // @@protoc_insertion_point(enum_value:Retcode.H_997753dd)
-    H_997753dd = 6948,
-    // @@protoc_insertion_point(enum_value:Retcode.H_1d700f10)
-    H_1d700f10 = 6949,
-    // @@protoc_insertion_point(enum_value:Retcode.H_948bdd70)
-    H_948bdd70 = 6950,
-    // @@protoc_insertion_point(enum_value:Retcode.H_3b29138a)
-    H_3b29138a = 6951,
-    // @@protoc_insertion_point(enum_value:Retcode.H_2ed1abc4)
-    H_2ed1abc4 = 6952,
-    // @@protoc_insertion_point(enum_value:Retcode.H_928958ed)
-    H_928958ed = 6953,
-    // @@protoc_insertion_point(enum_value:Retcode.H_faf4fb4e)
-    H_faf4fb4e = 6954,
-    // @@protoc_insertion_point(enum_value:Retcode.H_bccee4fd)
-    H_bccee4fd = 6955,
-    // @@protoc_insertion_point(enum_value:Retcode.H_a5c5aa30)
-    H_a5c5aa30 = 6956,
-    // @@protoc_insertion_point(enum_value:Retcode.H_241a3fc5)
-    H_241a3fc5 = 6957,
-    // @@protoc_insertion_point(enum_value:Retcode.H_2b3de94c)
-    H_2b3de94c = 6958,
-    // @@protoc_insertion_point(enum_value:Retcode.H_cdcaca5e)
-    H_cdcaca5e = 6959,
-    // @@protoc_insertion_point(enum_value:Retcode.H_b5795591)
-    H_b5795591 = 6960,
-    // @@protoc_insertion_point(enum_value:Retcode.H_6a41e537)
-    H_6a41e537 = 6961,
-    // @@protoc_insertion_point(enum_value:Retcode.H_134825c4)
-    H_134825c4 = 6962,
-    // @@protoc_insertion_point(enum_value:Retcode.H_618b3e9d)
-    H_618b3e9d = 6963,
-    // @@protoc_insertion_point(enum_value:Retcode.H_5340077f)
-    H_5340077f = 6964,
-    // @@protoc_insertion_point(enum_value:Retcode.H_0bac7f08)
-    H_0bac7f08 = 6965,
-    // @@protoc_insertion_point(enum_value:Retcode.H_cf84e5d1)
-    H_cf84e5d1 = 6966,
+    // @@protoc_insertion_point(enum_value:Retcode.H_53ef06b9)
+    H_53ef06b9 = 6900,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c97bd06b)
+    H_c97bd06b = 6901,
+    // @@protoc_insertion_point(enum_value:Retcode.H_47abcf81)
+    H_47abcf81 = 6902,
+    // @@protoc_insertion_point(enum_value:Retcode.H_b5cd53d1)
+    H_b5cd53d1 = 6903,
+    // @@protoc_insertion_point(enum_value:Retcode.H_edd5e6a1)
+    H_edd5e6a1 = 6904,
+    // @@protoc_insertion_point(enum_value:Retcode.H_7321b016)
+    H_7321b016 = 6905,
+    // @@protoc_insertion_point(enum_value:Retcode.H_6506988d)
+    H_6506988d = 6906,
+    // @@protoc_insertion_point(enum_value:Retcode.H_7e2b436a)
+    H_7e2b436a = 6907,
+    // @@protoc_insertion_point(enum_value:Retcode.H_fcf443e3)
+    H_fcf443e3 = 6908,
+    // @@protoc_insertion_point(enum_value:Retcode.H_58415842)
+    H_58415842 = 6909,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5f17e0a5)
+    H_5f17e0a5 = 6910,
+    // @@protoc_insertion_point(enum_value:Retcode.H_95dddcdb)
+    H_95dddcdb = 6911,
+    // @@protoc_insertion_point(enum_value:Retcode.H_2aa606a9)
+    H_2aa606a9 = 6912,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d1f5bfe0)
+    H_d1f5bfe0 = 6913,
+    // @@protoc_insertion_point(enum_value:Retcode.H_40c97ed4)
+    H_40c97ed4 = 6914,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d580d815)
+    H_d580d815 = 6915,
+    // @@protoc_insertion_point(enum_value:Retcode.H_d62ba846)
+    H_d62ba846 = 6916,
+    // @@protoc_insertion_point(enum_value:Retcode.H_85e53e4e)
+    H_85e53e4e = 6917,
+    // @@protoc_insertion_point(enum_value:Retcode.H_772ebcce)
+    H_772ebcce = 6918,
+    // @@protoc_insertion_point(enum_value:Retcode.H_58f70c34)
+    H_58f70c34 = 6919,
+    // @@protoc_insertion_point(enum_value:Retcode.H_ebb0ea26)
+    H_ebb0ea26 = 6920,
+    // @@protoc_insertion_point(enum_value:Retcode.H_9ff68d69)
+    H_9ff68d69 = 6921,
+    // @@protoc_insertion_point(enum_value:Retcode.H_703996f5)
+    H_703996f5 = 6922,
+    // @@protoc_insertion_point(enum_value:Retcode.H_34a35c3e)
+    H_34a35c3e = 6923,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1bd1f8ba)
+    H_1bd1f8ba = 6924,
+    // @@protoc_insertion_point(enum_value:Retcode.H_84effb49)
+    H_84effb49 = 6925,
+    // @@protoc_insertion_point(enum_value:Retcode.H_b4f568fe)
+    H_b4f568fe = 6926,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1427e829)
+    H_1427e829 = 6927,
+    // @@protoc_insertion_point(enum_value:Retcode.H_4b7e2545)
+    H_4b7e2545 = 6928,
+    // @@protoc_insertion_point(enum_value:Retcode.H_600710e7)
+    H_600710e7 = 6929,
+    // @@protoc_insertion_point(enum_value:Retcode.H_68b4b12f)
+    H_68b4b12f = 6930,
+    // @@protoc_insertion_point(enum_value:Retcode.H_bdb9e3f4)
+    H_bdb9e3f4 = 6931,
+    // @@protoc_insertion_point(enum_value:Retcode.H_ff959560)
+    H_ff959560 = 6932,
+    // @@protoc_insertion_point(enum_value:Retcode.H_49e19c14)
+    H_49e19c14 = 6933,
+    // @@protoc_insertion_point(enum_value:Retcode.H_be4c457c)
+    H_be4c457c = 6934,
+    // @@protoc_insertion_point(enum_value:Retcode.H_dcb8081f)
+    H_dcb8081f = 6935,
+    // @@protoc_insertion_point(enum_value:Retcode.H_81a275e3)
+    H_81a275e3 = 6936,
+    // @@protoc_insertion_point(enum_value:Retcode.H_86432f13)
+    H_86432f13 = 6937,
+    // @@protoc_insertion_point(enum_value:Retcode.H_698ad042)
+    H_698ad042 = 6938,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5964df7d)
+    H_5964df7d = 6939,
+    // @@protoc_insertion_point(enum_value:Retcode.H_11d008f0)
+    H_11d008f0 = 6940,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5a190ba2)
+    H_5a190ba2 = 6941,
+    // @@protoc_insertion_point(enum_value:Retcode.H_7d8c3ea3)
+    H_7d8c3ea3 = 6942,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1d8f263a)
+    H_1d8f263a = 6943,
+    // @@protoc_insertion_point(enum_value:Retcode.H_371511f1)
+    H_371511f1 = 6944,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c7461f2e)
+    H_c7461f2e = 6945,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e790b717)
+    H_e790b717 = 6946,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5aad35cd)
+    H_5aad35cd = 6947,
+    // @@protoc_insertion_point(enum_value:Retcode.H_200196bb)
+    H_200196bb = 6948,
+    // @@protoc_insertion_point(enum_value:Retcode.H_60ee1f3b)
+    H_60ee1f3b = 6949,
+    // @@protoc_insertion_point(enum_value:Retcode.H_6288e1ce)
+    H_6288e1ce = 6950,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5278809d)
+    H_5278809d = 6951,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e2f669e2)
+    H_e2f669e2 = 6952,
+    // @@protoc_insertion_point(enum_value:Retcode.H_a3cc3760)
+    H_a3cc3760 = 6953,
+    // @@protoc_insertion_point(enum_value:Retcode.H_1547c553)
+    H_1547c553 = 6954,
+    // @@protoc_insertion_point(enum_value:Retcode.H_e0a61cae)
+    H_e0a61cae = 6955,
+    // @@protoc_insertion_point(enum_value:Retcode.H_bdc0bfc0)
+    H_bdc0bfc0 = 6956,
+    // @@protoc_insertion_point(enum_value:Retcode.H_5dc24cf0)
+    H_5dc24cf0 = 6957,
+    // @@protoc_insertion_point(enum_value:Retcode.H_dd8fcb59)
+    H_dd8fcb59 = 6958,
+    // @@protoc_insertion_point(enum_value:Retcode.H_901e9649)
+    H_901e9649 = 6959,
+    // @@protoc_insertion_point(enum_value:Retcode.H_8dc589ee)
+    H_8dc589ee = 6960,
+    // @@protoc_insertion_point(enum_value:Retcode.H_f3a235e5)
+    H_f3a235e5 = 6961,
+    // @@protoc_insertion_point(enum_value:Retcode.H_347c363e)
+    H_347c363e = 6962,
+    // @@protoc_insertion_point(enum_value:Retcode.H_dc425de7)
+    H_dc425de7 = 6963,
+    // @@protoc_insertion_point(enum_value:Retcode.H_c1deeb7f)
+    H_c1deeb7f = 6964,
+    // @@protoc_insertion_point(enum_value:Retcode.H_ec3dab80)
+    H_ec3dab80 = 6965,
+    // @@protoc_insertion_point(enum_value:Retcode.H_50fdfb00)
+    H_50fdfb00 = 6966,
     // @@protoc_insertion_point(enum_value:Retcode.RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE)
     RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE = 7001,
     // @@protoc_insertion_point(enum_value:Retcode.RET_HIPPLEN_AGENDA_WORK_CONFLICT)
@@ -3419,73 +3419,73 @@ impl ::protobuf::Enum for Retcode {
             6848 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST),
             6849 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NO_REWARD),
             6850 => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NOT_INIT),
-            6900 => ::std::option::Option::Some(Retcode::H_2c978515),
-            6901 => ::std::option::Option::Some(Retcode::H_21760dc8),
-            6902 => ::std::option::Option::Some(Retcode::H_de9defb4),
-            6903 => ::std::option::Option::Some(Retcode::H_39a98c17),
-            6904 => ::std::option::Option::Some(Retcode::H_9990338f),
-            6905 => ::std::option::Option::Some(Retcode::H_da99b907),
-            6906 => ::std::option::Option::Some(Retcode::H_39ccac4c),
-            6907 => ::std::option::Option::Some(Retcode::H_1206b37b),
-            6908 => ::std::option::Option::Some(Retcode::H_f0d6261e),
-            6909 => ::std::option::Option::Some(Retcode::H_88b6282b),
-            6910 => ::std::option::Option::Some(Retcode::H_ce535870),
-            6911 => ::std::option::Option::Some(Retcode::H_b7e6dfbf),
-            6912 => ::std::option::Option::Some(Retcode::H_befc7b03),
-            6913 => ::std::option::Option::Some(Retcode::H_75843592),
-            6914 => ::std::option::Option::Some(Retcode::H_25d42d75),
-            6915 => ::std::option::Option::Some(Retcode::H_7e80fda4),
-            6916 => ::std::option::Option::Some(Retcode::H_31f8edb0),
-            6917 => ::std::option::Option::Some(Retcode::H_2717419e),
-            6918 => ::std::option::Option::Some(Retcode::H_4104b64c),
-            6919 => ::std::option::Option::Some(Retcode::H_2ddc5fac),
-            6920 => ::std::option::Option::Some(Retcode::H_24153bcc),
-            6921 => ::std::option::Option::Some(Retcode::H_0ab4d5b0),
-            6922 => ::std::option::Option::Some(Retcode::H_1462b451),
-            6923 => ::std::option::Option::Some(Retcode::H_65bf0a12),
-            6924 => ::std::option::Option::Some(Retcode::H_dd9ac748),
-            6925 => ::std::option::Option::Some(Retcode::H_ce34be1b),
-            6926 => ::std::option::Option::Some(Retcode::H_b0b5143b),
-            6927 => ::std::option::Option::Some(Retcode::H_d95f769f),
-            6928 => ::std::option::Option::Some(Retcode::H_35609ccb),
-            6929 => ::std::option::Option::Some(Retcode::H_ec13a00e),
-            6930 => ::std::option::Option::Some(Retcode::H_28254de7),
-            6931 => ::std::option::Option::Some(Retcode::H_6dc702e2),
-            6932 => ::std::option::Option::Some(Retcode::H_8662d9ee),
-            6933 => ::std::option::Option::Some(Retcode::H_906f4c5a),
-            6934 => ::std::option::Option::Some(Retcode::H_0c3ba835),
-            6935 => ::std::option::Option::Some(Retcode::H_494caabd),
-            6936 => ::std::option::Option::Some(Retcode::H_77a40f5d),
-            6937 => ::std::option::Option::Some(Retcode::H_20d2a08c),
-            6938 => ::std::option::Option::Some(Retcode::H_ae4f39ad),
-            6939 => ::std::option::Option::Some(Retcode::H_10e032a5),
-            6940 => ::std::option::Option::Some(Retcode::H_f0879867),
-            6941 => ::std::option::Option::Some(Retcode::H_ddf2e148),
-            6942 => ::std::option::Option::Some(Retcode::H_e1d57893),
-            6943 => ::std::option::Option::Some(Retcode::H_b8d4e597),
-            6944 => ::std::option::Option::Some(Retcode::H_5e1e74a4),
-            6945 => ::std::option::Option::Some(Retcode::H_1a94c8aa),
-            6946 => ::std::option::Option::Some(Retcode::H_6dfcd366),
-            6947 => ::std::option::Option::Some(Retcode::H_bebcd34a),
-            6948 => ::std::option::Option::Some(Retcode::H_997753dd),
-            6949 => ::std::option::Option::Some(Retcode::H_1d700f10),
-            6950 => ::std::option::Option::Some(Retcode::H_948bdd70),
-            6951 => ::std::option::Option::Some(Retcode::H_3b29138a),
-            6952 => ::std::option::Option::Some(Retcode::H_2ed1abc4),
-            6953 => ::std::option::Option::Some(Retcode::H_928958ed),
-            6954 => ::std::option::Option::Some(Retcode::H_faf4fb4e),
-            6955 => ::std::option::Option::Some(Retcode::H_bccee4fd),
-            6956 => ::std::option::Option::Some(Retcode::H_a5c5aa30),
-            6957 => ::std::option::Option::Some(Retcode::H_241a3fc5),
-            6958 => ::std::option::Option::Some(Retcode::H_2b3de94c),
-            6959 => ::std::option::Option::Some(Retcode::H_cdcaca5e),
-            6960 => ::std::option::Option::Some(Retcode::H_b5795591),
-            6961 => ::std::option::Option::Some(Retcode::H_6a41e537),
-            6962 => ::std::option::Option::Some(Retcode::H_134825c4),
-            6963 => ::std::option::Option::Some(Retcode::H_618b3e9d),
-            6964 => ::std::option::Option::Some(Retcode::H_5340077f),
-            6965 => ::std::option::Option::Some(Retcode::H_0bac7f08),
-            6966 => ::std::option::Option::Some(Retcode::H_cf84e5d1),
+            6900 => ::std::option::Option::Some(Retcode::H_53ef06b9),
+            6901 => ::std::option::Option::Some(Retcode::H_c97bd06b),
+            6902 => ::std::option::Option::Some(Retcode::H_47abcf81),
+            6903 => ::std::option::Option::Some(Retcode::H_b5cd53d1),
+            6904 => ::std::option::Option::Some(Retcode::H_edd5e6a1),
+            6905 => ::std::option::Option::Some(Retcode::H_7321b016),
+            6906 => ::std::option::Option::Some(Retcode::H_6506988d),
+            6907 => ::std::option::Option::Some(Retcode::H_7e2b436a),
+            6908 => ::std::option::Option::Some(Retcode::H_fcf443e3),
+            6909 => ::std::option::Option::Some(Retcode::H_58415842),
+            6910 => ::std::option::Option::Some(Retcode::H_5f17e0a5),
+            6911 => ::std::option::Option::Some(Retcode::H_95dddcdb),
+            6912 => ::std::option::Option::Some(Retcode::H_2aa606a9),
+            6913 => ::std::option::Option::Some(Retcode::H_d1f5bfe0),
+            6914 => ::std::option::Option::Some(Retcode::H_40c97ed4),
+            6915 => ::std::option::Option::Some(Retcode::H_d580d815),
+            6916 => ::std::option::Option::Some(Retcode::H_d62ba846),
+            6917 => ::std::option::Option::Some(Retcode::H_85e53e4e),
+            6918 => ::std::option::Option::Some(Retcode::H_772ebcce),
+            6919 => ::std::option::Option::Some(Retcode::H_58f70c34),
+            6920 => ::std::option::Option::Some(Retcode::H_ebb0ea26),
+            6921 => ::std::option::Option::Some(Retcode::H_9ff68d69),
+            6922 => ::std::option::Option::Some(Retcode::H_703996f5),
+            6923 => ::std::option::Option::Some(Retcode::H_34a35c3e),
+            6924 => ::std::option::Option::Some(Retcode::H_1bd1f8ba),
+            6925 => ::std::option::Option::Some(Retcode::H_84effb49),
+            6926 => ::std::option::Option::Some(Retcode::H_b4f568fe),
+            6927 => ::std::option::Option::Some(Retcode::H_1427e829),
+            6928 => ::std::option::Option::Some(Retcode::H_4b7e2545),
+            6929 => ::std::option::Option::Some(Retcode::H_600710e7),
+            6930 => ::std::option::Option::Some(Retcode::H_68b4b12f),
+            6931 => ::std::option::Option::Some(Retcode::H_bdb9e3f4),
+            6932 => ::std::option::Option::Some(Retcode::H_ff959560),
+            6933 => ::std::option::Option::Some(Retcode::H_49e19c14),
+            6934 => ::std::option::Option::Some(Retcode::H_be4c457c),
+            6935 => ::std::option::Option::Some(Retcode::H_dcb8081f),
+            6936 => ::std::option::Option::Some(Retcode::H_81a275e3),
+            6937 => ::std::option::Option::Some(Retcode::H_86432f13),
+            6938 => ::std::option::Option::Some(Retcode::H_698ad042),
+            6939 => ::std::option::Option::Some(Retcode::H_5964df7d),
+            6940 => ::std::option::Option::Some(Retcode::H_11d008f0),
+            6941 => ::std::option::Option::Some(Retcode::H_5a190ba2),
+            6942 => ::std::option::Option::Some(Retcode::H_7d8c3ea3),
+            6943 => ::std::option::Option::Some(Retcode::H_1d8f263a),
+            6944 => ::std::option::Option::Some(Retcode::H_371511f1),
+            6945 => ::std::option::Option::Some(Retcode::H_c7461f2e),
+            6946 => ::std::option::Option::Some(Retcode::H_e790b717),
+            6947 => ::std::option::Option::Some(Retcode::H_5aad35cd),
+            6948 => ::std::option::Option::Some(Retcode::H_200196bb),
+            6949 => ::std::option::Option::Some(Retcode::H_60ee1f3b),
+            6950 => ::std::option::Option::Some(Retcode::H_6288e1ce),
+            6951 => ::std::option::Option::Some(Retcode::H_5278809d),
+            6952 => ::std::option::Option::Some(Retcode::H_e2f669e2),
+            6953 => ::std::option::Option::Some(Retcode::H_a3cc3760),
+            6954 => ::std::option::Option::Some(Retcode::H_1547c553),
+            6955 => ::std::option::Option::Some(Retcode::H_e0a61cae),
+            6956 => ::std::option::Option::Some(Retcode::H_bdc0bfc0),
+            6957 => ::std::option::Option::Some(Retcode::H_5dc24cf0),
+            6958 => ::std::option::Option::Some(Retcode::H_dd8fcb59),
+            6959 => ::std::option::Option::Some(Retcode::H_901e9649),
+            6960 => ::std::option::Option::Some(Retcode::H_8dc589ee),
+            6961 => ::std::option::Option::Some(Retcode::H_f3a235e5),
+            6962 => ::std::option::Option::Some(Retcode::H_347c363e),
+            6963 => ::std::option::Option::Some(Retcode::H_dc425de7),
+            6964 => ::std::option::Option::Some(Retcode::H_c1deeb7f),
+            6965 => ::std::option::Option::Some(Retcode::H_ec3dab80),
+            6966 => ::std::option::Option::Some(Retcode::H_50fdfb00),
             7001 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE),
             7002 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT),
             7003 => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK),
@@ -4597,73 +4597,73 @@ impl ::protobuf::Enum for Retcode {
             "RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST),
             "RET_ELF_RESTAURANT_NO_REWARD" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NO_REWARD),
             "RET_ELF_RESTAURANT_NOT_INIT" => ::std::option::Option::Some(Retcode::RET_ELF_RESTAURANT_NOT_INIT),
-            "H_2c978515" => ::std::option::Option::Some(Retcode::H_2c978515),
-            "H_21760dc8" => ::std::option::Option::Some(Retcode::H_21760dc8),
-            "H_de9defb4" => ::std::option::Option::Some(Retcode::H_de9defb4),
-            "H_39a98c17" => ::std::option::Option::Some(Retcode::H_39a98c17),
-            "H_9990338f" => ::std::option::Option::Some(Retcode::H_9990338f),
-            "H_da99b907" => ::std::option::Option::Some(Retcode::H_da99b907),
-            "H_39ccac4c" => ::std::option::Option::Some(Retcode::H_39ccac4c),
-            "H_1206b37b" => ::std::option::Option::Some(Retcode::H_1206b37b),
-            "H_f0d6261e" => ::std::option::Option::Some(Retcode::H_f0d6261e),
-            "H_88b6282b" => ::std::option::Option::Some(Retcode::H_88b6282b),
-            "H_ce535870" => ::std::option::Option::Some(Retcode::H_ce535870),
-            "H_b7e6dfbf" => ::std::option::Option::Some(Retcode::H_b7e6dfbf),
-            "H_befc7b03" => ::std::option::Option::Some(Retcode::H_befc7b03),
-            "H_75843592" => ::std::option::Option::Some(Retcode::H_75843592),
-            "H_25d42d75" => ::std::option::Option::Some(Retcode::H_25d42d75),
-            "H_7e80fda4" => ::std::option::Option::Some(Retcode::H_7e80fda4),
-            "H_31f8edb0" => ::std::option::Option::Some(Retcode::H_31f8edb0),
-            "H_2717419e" => ::std::option::Option::Some(Retcode::H_2717419e),
-            "H_4104b64c" => ::std::option::Option::Some(Retcode::H_4104b64c),
-            "H_2ddc5fac" => ::std::option::Option::Some(Retcode::H_2ddc5fac),
-            "H_24153bcc" => ::std::option::Option::Some(Retcode::H_24153bcc),
-            "H_0ab4d5b0" => ::std::option::Option::Some(Retcode::H_0ab4d5b0),
-            "H_1462b451" => ::std::option::Option::Some(Retcode::H_1462b451),
-            "H_65bf0a12" => ::std::option::Option::Some(Retcode::H_65bf0a12),
-            "H_dd9ac748" => ::std::option::Option::Some(Retcode::H_dd9ac748),
-            "H_ce34be1b" => ::std::option::Option::Some(Retcode::H_ce34be1b),
-            "H_b0b5143b" => ::std::option::Option::Some(Retcode::H_b0b5143b),
-            "H_d95f769f" => ::std::option::Option::Some(Retcode::H_d95f769f),
-            "H_35609ccb" => ::std::option::Option::Some(Retcode::H_35609ccb),
-            "H_ec13a00e" => ::std::option::Option::Some(Retcode::H_ec13a00e),
-            "H_28254de7" => ::std::option::Option::Some(Retcode::H_28254de7),
-            "H_6dc702e2" => ::std::option::Option::Some(Retcode::H_6dc702e2),
-            "H_8662d9ee" => ::std::option::Option::Some(Retcode::H_8662d9ee),
-            "H_906f4c5a" => ::std::option::Option::Some(Retcode::H_906f4c5a),
-            "H_0c3ba835" => ::std::option::Option::Some(Retcode::H_0c3ba835),
-            "H_494caabd" => ::std::option::Option::Some(Retcode::H_494caabd),
-            "H_77a40f5d" => ::std::option::Option::Some(Retcode::H_77a40f5d),
-            "H_20d2a08c" => ::std::option::Option::Some(Retcode::H_20d2a08c),
-            "H_ae4f39ad" => ::std::option::Option::Some(Retcode::H_ae4f39ad),
-            "H_10e032a5" => ::std::option::Option::Some(Retcode::H_10e032a5),
-            "H_f0879867" => ::std::option::Option::Some(Retcode::H_f0879867),
-            "H_ddf2e148" => ::std::option::Option::Some(Retcode::H_ddf2e148),
-            "H_e1d57893" => ::std::option::Option::Some(Retcode::H_e1d57893),
-            "H_b8d4e597" => ::std::option::Option::Some(Retcode::H_b8d4e597),
-            "H_5e1e74a4" => ::std::option::Option::Some(Retcode::H_5e1e74a4),
-            "H_1a94c8aa" => ::std::option::Option::Some(Retcode::H_1a94c8aa),
-            "H_6dfcd366" => ::std::option::Option::Some(Retcode::H_6dfcd366),
-            "H_bebcd34a" => ::std::option::Option::Some(Retcode::H_bebcd34a),
-            "H_997753dd" => ::std::option::Option::Some(Retcode::H_997753dd),
-            "H_1d700f10" => ::std::option::Option::Some(Retcode::H_1d700f10),
-            "H_948bdd70" => ::std::option::Option::Some(Retcode::H_948bdd70),
-            "H_3b29138a" => ::std::option::Option::Some(Retcode::H_3b29138a),
-            "H_2ed1abc4" => ::std::option::Option::Some(Retcode::H_2ed1abc4),
-            "H_928958ed" => ::std::option::Option::Some(Retcode::H_928958ed),
-            "H_faf4fb4e" => ::std::option::Option::Some(Retcode::H_faf4fb4e),
-            "H_bccee4fd" => ::std::option::Option::Some(Retcode::H_bccee4fd),
-            "H_a5c5aa30" => ::std::option::Option::Some(Retcode::H_a5c5aa30),
-            "H_241a3fc5" => ::std::option::Option::Some(Retcode::H_241a3fc5),
-            "H_2b3de94c" => ::std::option::Option::Some(Retcode::H_2b3de94c),
-            "H_cdcaca5e" => ::std::option::Option::Some(Retcode::H_cdcaca5e),
-            "H_b5795591" => ::std::option::Option::Some(Retcode::H_b5795591),
-            "H_6a41e537" => ::std::option::Option::Some(Retcode::H_6a41e537),
-            "H_134825c4" => ::std::option::Option::Some(Retcode::H_134825c4),
-            "H_618b3e9d" => ::std::option::Option::Some(Retcode::H_618b3e9d),
-            "H_5340077f" => ::std::option::Option::Some(Retcode::H_5340077f),
-            "H_0bac7f08" => ::std::option::Option::Some(Retcode::H_0bac7f08),
-            "H_cf84e5d1" => ::std::option::Option::Some(Retcode::H_cf84e5d1),
+            "H_53ef06b9" => ::std::option::Option::Some(Retcode::H_53ef06b9),
+            "H_c97bd06b" => ::std::option::Option::Some(Retcode::H_c97bd06b),
+            "H_47abcf81" => ::std::option::Option::Some(Retcode::H_47abcf81),
+            "H_b5cd53d1" => ::std::option::Option::Some(Retcode::H_b5cd53d1),
+            "H_edd5e6a1" => ::std::option::Option::Some(Retcode::H_edd5e6a1),
+            "H_7321b016" => ::std::option::Option::Some(Retcode::H_7321b016),
+            "H_6506988d" => ::std::option::Option::Some(Retcode::H_6506988d),
+            "H_7e2b436a" => ::std::option::Option::Some(Retcode::H_7e2b436a),
+            "H_fcf443e3" => ::std::option::Option::Some(Retcode::H_fcf443e3),
+            "H_58415842" => ::std::option::Option::Some(Retcode::H_58415842),
+            "H_5f17e0a5" => ::std::option::Option::Some(Retcode::H_5f17e0a5),
+            "H_95dddcdb" => ::std::option::Option::Some(Retcode::H_95dddcdb),
+            "H_2aa606a9" => ::std::option::Option::Some(Retcode::H_2aa606a9),
+            "H_d1f5bfe0" => ::std::option::Option::Some(Retcode::H_d1f5bfe0),
+            "H_40c97ed4" => ::std::option::Option::Some(Retcode::H_40c97ed4),
+            "H_d580d815" => ::std::option::Option::Some(Retcode::H_d580d815),
+            "H_d62ba846" => ::std::option::Option::Some(Retcode::H_d62ba846),
+            "H_85e53e4e" => ::std::option::Option::Some(Retcode::H_85e53e4e),
+            "H_772ebcce" => ::std::option::Option::Some(Retcode::H_772ebcce),
+            "H_58f70c34" => ::std::option::Option::Some(Retcode::H_58f70c34),
+            "H_ebb0ea26" => ::std::option::Option::Some(Retcode::H_ebb0ea26),
+            "H_9ff68d69" => ::std::option::Option::Some(Retcode::H_9ff68d69),
+            "H_703996f5" => ::std::option::Option::Some(Retcode::H_703996f5),
+            "H_34a35c3e" => ::std::option::Option::Some(Retcode::H_34a35c3e),
+            "H_1bd1f8ba" => ::std::option::Option::Some(Retcode::H_1bd1f8ba),
+            "H_84effb49" => ::std::option::Option::Some(Retcode::H_84effb49),
+            "H_b4f568fe" => ::std::option::Option::Some(Retcode::H_b4f568fe),
+            "H_1427e829" => ::std::option::Option::Some(Retcode::H_1427e829),
+            "H_4b7e2545" => ::std::option::Option::Some(Retcode::H_4b7e2545),
+            "H_600710e7" => ::std::option::Option::Some(Retcode::H_600710e7),
+            "H_68b4b12f" => ::std::option::Option::Some(Retcode::H_68b4b12f),
+            "H_bdb9e3f4" => ::std::option::Option::Some(Retcode::H_bdb9e3f4),
+            "H_ff959560" => ::std::option::Option::Some(Retcode::H_ff959560),
+            "H_49e19c14" => ::std::option::Option::Some(Retcode::H_49e19c14),
+            "H_be4c457c" => ::std::option::Option::Some(Retcode::H_be4c457c),
+            "H_dcb8081f" => ::std::option::Option::Some(Retcode::H_dcb8081f),
+            "H_81a275e3" => ::std::option::Option::Some(Retcode::H_81a275e3),
+            "H_86432f13" => ::std::option::Option::Some(Retcode::H_86432f13),
+            "H_698ad042" => ::std::option::Option::Some(Retcode::H_698ad042),
+            "H_5964df7d" => ::std::option::Option::Some(Retcode::H_5964df7d),
+            "H_11d008f0" => ::std::option::Option::Some(Retcode::H_11d008f0),
+            "H_5a190ba2" => ::std::option::Option::Some(Retcode::H_5a190ba2),
+            "H_7d8c3ea3" => ::std::option::Option::Some(Retcode::H_7d8c3ea3),
+            "H_1d8f263a" => ::std::option::Option::Some(Retcode::H_1d8f263a),
+            "H_371511f1" => ::std::option::Option::Some(Retcode::H_371511f1),
+            "H_c7461f2e" => ::std::option::Option::Some(Retcode::H_c7461f2e),
+            "H_e790b717" => ::std::option::Option::Some(Retcode::H_e790b717),
+            "H_5aad35cd" => ::std::option::Option::Some(Retcode::H_5aad35cd),
+            "H_200196bb" => ::std::option::Option::Some(Retcode::H_200196bb),
+            "H_60ee1f3b" => ::std::option::Option::Some(Retcode::H_60ee1f3b),
+            "H_6288e1ce" => ::std::option::Option::Some(Retcode::H_6288e1ce),
+            "H_5278809d" => ::std::option::Option::Some(Retcode::H_5278809d),
+            "H_e2f669e2" => ::std::option::Option::Some(Retcode::H_e2f669e2),
+            "H_a3cc3760" => ::std::option::Option::Some(Retcode::H_a3cc3760),
+            "H_1547c553" => ::std::option::Option::Some(Retcode::H_1547c553),
+            "H_e0a61cae" => ::std::option::Option::Some(Retcode::H_e0a61cae),
+            "H_bdc0bfc0" => ::std::option::Option::Some(Retcode::H_bdc0bfc0),
+            "H_5dc24cf0" => ::std::option::Option::Some(Retcode::H_5dc24cf0),
+            "H_dd8fcb59" => ::std::option::Option::Some(Retcode::H_dd8fcb59),
+            "H_901e9649" => ::std::option::Option::Some(Retcode::H_901e9649),
+            "H_8dc589ee" => ::std::option::Option::Some(Retcode::H_8dc589ee),
+            "H_f3a235e5" => ::std::option::Option::Some(Retcode::H_f3a235e5),
+            "H_347c363e" => ::std::option::Option::Some(Retcode::H_347c363e),
+            "H_dc425de7" => ::std::option::Option::Some(Retcode::H_dc425de7),
+            "H_c1deeb7f" => ::std::option::Option::Some(Retcode::H_c1deeb7f),
+            "H_ec3dab80" => ::std::option::Option::Some(Retcode::H_ec3dab80),
+            "H_50fdfb00" => ::std::option::Option::Some(Retcode::H_50fdfb00),
             "RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE),
             "RET_HIPPLEN_AGENDA_WORK_CONFLICT" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT),
             "RET_HIPPLEN_AGENDA_ACTION_LACK" => ::std::option::Option::Some(Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK),
@@ -5774,73 +5774,73 @@ impl ::protobuf::Enum for Retcode {
         Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST,
         Retcode::RET_ELF_RESTAURANT_NO_REWARD,
         Retcode::RET_ELF_RESTAURANT_NOT_INIT,
-        Retcode::H_2c978515,
-        Retcode::H_21760dc8,
-        Retcode::H_de9defb4,
-        Retcode::H_39a98c17,
-        Retcode::H_9990338f,
-        Retcode::H_da99b907,
-        Retcode::H_39ccac4c,
-        Retcode::H_1206b37b,
-        Retcode::H_f0d6261e,
-        Retcode::H_88b6282b,
-        Retcode::H_ce535870,
-        Retcode::H_b7e6dfbf,
-        Retcode::H_befc7b03,
-        Retcode::H_75843592,
-        Retcode::H_25d42d75,
-        Retcode::H_7e80fda4,
-        Retcode::H_31f8edb0,
-        Retcode::H_2717419e,
-        Retcode::H_4104b64c,
-        Retcode::H_2ddc5fac,
-        Retcode::H_24153bcc,
-        Retcode::H_0ab4d5b0,
-        Retcode::H_1462b451,
-        Retcode::H_65bf0a12,
-        Retcode::H_dd9ac748,
-        Retcode::H_ce34be1b,
-        Retcode::H_b0b5143b,
-        Retcode::H_d95f769f,
-        Retcode::H_35609ccb,
-        Retcode::H_ec13a00e,
-        Retcode::H_28254de7,
-        Retcode::H_6dc702e2,
-        Retcode::H_8662d9ee,
-        Retcode::H_906f4c5a,
-        Retcode::H_0c3ba835,
-        Retcode::H_494caabd,
-        Retcode::H_77a40f5d,
-        Retcode::H_20d2a08c,
-        Retcode::H_ae4f39ad,
-        Retcode::H_10e032a5,
-        Retcode::H_f0879867,
-        Retcode::H_ddf2e148,
-        Retcode::H_e1d57893,
-        Retcode::H_b8d4e597,
-        Retcode::H_5e1e74a4,
-        Retcode::H_1a94c8aa,
-        Retcode::H_6dfcd366,
-        Retcode::H_bebcd34a,
-        Retcode::H_997753dd,
-        Retcode::H_1d700f10,
-        Retcode::H_948bdd70,
-        Retcode::H_3b29138a,
-        Retcode::H_2ed1abc4,
-        Retcode::H_928958ed,
-        Retcode::H_faf4fb4e,
-        Retcode::H_bccee4fd,
-        Retcode::H_a5c5aa30,
-        Retcode::H_241a3fc5,
-        Retcode::H_2b3de94c,
-        Retcode::H_cdcaca5e,
-        Retcode::H_b5795591,
-        Retcode::H_6a41e537,
-        Retcode::H_134825c4,
-        Retcode::H_618b3e9d,
-        Retcode::H_5340077f,
-        Retcode::H_0bac7f08,
-        Retcode::H_cf84e5d1,
+        Retcode::H_53ef06b9,
+        Retcode::H_c97bd06b,
+        Retcode::H_47abcf81,
+        Retcode::H_b5cd53d1,
+        Retcode::H_edd5e6a1,
+        Retcode::H_7321b016,
+        Retcode::H_6506988d,
+        Retcode::H_7e2b436a,
+        Retcode::H_fcf443e3,
+        Retcode::H_58415842,
+        Retcode::H_5f17e0a5,
+        Retcode::H_95dddcdb,
+        Retcode::H_2aa606a9,
+        Retcode::H_d1f5bfe0,
+        Retcode::H_40c97ed4,
+        Retcode::H_d580d815,
+        Retcode::H_d62ba846,
+        Retcode::H_85e53e4e,
+        Retcode::H_772ebcce,
+        Retcode::H_58f70c34,
+        Retcode::H_ebb0ea26,
+        Retcode::H_9ff68d69,
+        Retcode::H_703996f5,
+        Retcode::H_34a35c3e,
+        Retcode::H_1bd1f8ba,
+        Retcode::H_84effb49,
+        Retcode::H_b4f568fe,
+        Retcode::H_1427e829,
+        Retcode::H_4b7e2545,
+        Retcode::H_600710e7,
+        Retcode::H_68b4b12f,
+        Retcode::H_bdb9e3f4,
+        Retcode::H_ff959560,
+        Retcode::H_49e19c14,
+        Retcode::H_be4c457c,
+        Retcode::H_dcb8081f,
+        Retcode::H_81a275e3,
+        Retcode::H_86432f13,
+        Retcode::H_698ad042,
+        Retcode::H_5964df7d,
+        Retcode::H_11d008f0,
+        Retcode::H_5a190ba2,
+        Retcode::H_7d8c3ea3,
+        Retcode::H_1d8f263a,
+        Retcode::H_371511f1,
+        Retcode::H_c7461f2e,
+        Retcode::H_e790b717,
+        Retcode::H_5aad35cd,
+        Retcode::H_200196bb,
+        Retcode::H_60ee1f3b,
+        Retcode::H_6288e1ce,
+        Retcode::H_5278809d,
+        Retcode::H_e2f669e2,
+        Retcode::H_a3cc3760,
+        Retcode::H_1547c553,
+        Retcode::H_e0a61cae,
+        Retcode::H_bdc0bfc0,
+        Retcode::H_5dc24cf0,
+        Retcode::H_dd8fcb59,
+        Retcode::H_901e9649,
+        Retcode::H_8dc589ee,
+        Retcode::H_f3a235e5,
+        Retcode::H_347c363e,
+        Retcode::H_dc425de7,
+        Retcode::H_c1deeb7f,
+        Retcode::H_ec3dab80,
+        Retcode::H_50fdfb00,
         Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE,
         Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT,
         Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK,
@@ -6957,73 +6957,73 @@ impl ::protobuf::EnumFull for Retcode {
             Retcode::RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST => 1034,
             Retcode::RET_ELF_RESTAURANT_NO_REWARD => 1035,
             Retcode::RET_ELF_RESTAURANT_NOT_INIT => 1036,
-            Retcode::H_2c978515 => 1037,
-            Retcode::H_21760dc8 => 1038,
-            Retcode::H_de9defb4 => 1039,
-            Retcode::H_39a98c17 => 1040,
-            Retcode::H_9990338f => 1041,
-            Retcode::H_da99b907 => 1042,
-            Retcode::H_39ccac4c => 1043,
-            Retcode::H_1206b37b => 1044,
-            Retcode::H_f0d6261e => 1045,
-            Retcode::H_88b6282b => 1046,
-            Retcode::H_ce535870 => 1047,
-            Retcode::H_b7e6dfbf => 1048,
-            Retcode::H_befc7b03 => 1049,
-            Retcode::H_75843592 => 1050,
-            Retcode::H_25d42d75 => 1051,
-            Retcode::H_7e80fda4 => 1052,
-            Retcode::H_31f8edb0 => 1053,
-            Retcode::H_2717419e => 1054,
-            Retcode::H_4104b64c => 1055,
-            Retcode::H_2ddc5fac => 1056,
-            Retcode::H_24153bcc => 1057,
-            Retcode::H_0ab4d5b0 => 1058,
-            Retcode::H_1462b451 => 1059,
-            Retcode::H_65bf0a12 => 1060,
-            Retcode::H_dd9ac748 => 1061,
-            Retcode::H_ce34be1b => 1062,
-            Retcode::H_b0b5143b => 1063,
-            Retcode::H_d95f769f => 1064,
-            Retcode::H_35609ccb => 1065,
-            Retcode::H_ec13a00e => 1066,
-            Retcode::H_28254de7 => 1067,
-            Retcode::H_6dc702e2 => 1068,
-            Retcode::H_8662d9ee => 1069,
-            Retcode::H_906f4c5a => 1070,
-            Retcode::H_0c3ba835 => 1071,
-            Retcode::H_494caabd => 1072,
-            Retcode::H_77a40f5d => 1073,
-            Retcode::H_20d2a08c => 1074,
-            Retcode::H_ae4f39ad => 1075,
-            Retcode::H_10e032a5 => 1076,
-            Retcode::H_f0879867 => 1077,
-            Retcode::H_ddf2e148 => 1078,
-            Retcode::H_e1d57893 => 1079,
-            Retcode::H_b8d4e597 => 1080,
-            Retcode::H_5e1e74a4 => 1081,
-            Retcode::H_1a94c8aa => 1082,
-            Retcode::H_6dfcd366 => 1083,
-            Retcode::H_bebcd34a => 1084,
-            Retcode::H_997753dd => 1085,
-            Retcode::H_1d700f10 => 1086,
-            Retcode::H_948bdd70 => 1087,
-            Retcode::H_3b29138a => 1088,
-            Retcode::H_2ed1abc4 => 1089,
-            Retcode::H_928958ed => 1090,
-            Retcode::H_faf4fb4e => 1091,
-            Retcode::H_bccee4fd => 1092,
-            Retcode::H_a5c5aa30 => 1093,
-            Retcode::H_241a3fc5 => 1094,
-            Retcode::H_2b3de94c => 1095,
-            Retcode::H_cdcaca5e => 1096,
-            Retcode::H_b5795591 => 1097,
-            Retcode::H_6a41e537 => 1098,
-            Retcode::H_134825c4 => 1099,
-            Retcode::H_618b3e9d => 1100,
-            Retcode::H_5340077f => 1101,
-            Retcode::H_0bac7f08 => 1102,
-            Retcode::H_cf84e5d1 => 1103,
+            Retcode::H_53ef06b9 => 1037,
+            Retcode::H_c97bd06b => 1038,
+            Retcode::H_47abcf81 => 1039,
+            Retcode::H_b5cd53d1 => 1040,
+            Retcode::H_edd5e6a1 => 1041,
+            Retcode::H_7321b016 => 1042,
+            Retcode::H_6506988d => 1043,
+            Retcode::H_7e2b436a => 1044,
+            Retcode::H_fcf443e3 => 1045,
+            Retcode::H_58415842 => 1046,
+            Retcode::H_5f17e0a5 => 1047,
+            Retcode::H_95dddcdb => 1048,
+            Retcode::H_2aa606a9 => 1049,
+            Retcode::H_d1f5bfe0 => 1050,
+            Retcode::H_40c97ed4 => 1051,
+            Retcode::H_d580d815 => 1052,
+            Retcode::H_d62ba846 => 1053,
+            Retcode::H_85e53e4e => 1054,
+            Retcode::H_772ebcce => 1055,
+            Retcode::H_58f70c34 => 1056,
+            Retcode::H_ebb0ea26 => 1057,
+            Retcode::H_9ff68d69 => 1058,
+            Retcode::H_703996f5 => 1059,
+            Retcode::H_34a35c3e => 1060,
+            Retcode::H_1bd1f8ba => 1061,
+            Retcode::H_84effb49 => 1062,
+            Retcode::H_b4f568fe => 1063,
+            Retcode::H_1427e829 => 1064,
+            Retcode::H_4b7e2545 => 1065,
+            Retcode::H_600710e7 => 1066,
+            Retcode::H_68b4b12f => 1067,
+            Retcode::H_bdb9e3f4 => 1068,
+            Retcode::H_ff959560 => 1069,
+            Retcode::H_49e19c14 => 1070,
+            Retcode::H_be4c457c => 1071,
+            Retcode::H_dcb8081f => 1072,
+            Retcode::H_81a275e3 => 1073,
+            Retcode::H_86432f13 => 1074,
+            Retcode::H_698ad042 => 1075,
+            Retcode::H_5964df7d => 1076,
+            Retcode::H_11d008f0 => 1077,
+            Retcode::H_5a190ba2 => 1078,
+            Retcode::H_7d8c3ea3 => 1079,
+            Retcode::H_1d8f263a => 1080,
+            Retcode::H_371511f1 => 1081,
+            Retcode::H_c7461f2e => 1082,
+            Retcode::H_e790b717 => 1083,
+            Retcode::H_5aad35cd => 1084,
+            Retcode::H_200196bb => 1085,
+            Retcode::H_60ee1f3b => 1086,
+            Retcode::H_6288e1ce => 1087,
+            Retcode::H_5278809d => 1088,
+            Retcode::H_e2f669e2 => 1089,
+            Retcode::H_a3cc3760 => 1090,
+            Retcode::H_1547c553 => 1091,
+            Retcode::H_e0a61cae => 1092,
+            Retcode::H_bdc0bfc0 => 1093,
+            Retcode::H_5dc24cf0 => 1094,
+            Retcode::H_dd8fcb59 => 1095,
+            Retcode::H_901e9649 => 1096,
+            Retcode::H_8dc589ee => 1097,
+            Retcode::H_f3a235e5 => 1098,
+            Retcode::H_347c363e => 1099,
+            Retcode::H_dc425de7 => 1100,
+            Retcode::H_c1deeb7f => 1101,
+            Retcode::H_ec3dab80 => 1102,
+            Retcode::H_50fdfb00 => 1103,
             Retcode::RET_HIPPLEN_AGENDA_WORK_UNAVAIBLE => 1104,
             Retcode::RET_HIPPLEN_AGENDA_WORK_CONFLICT => 1105,
             Retcode::RET_HIPPLEN_AGENDA_ACTION_LACK => 1106,
@@ -7859,36 +7859,36 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     HOP_ITEM_NOT_EXIST\x10\xbe5\x12-\n(RET_ELF_RESTAURANT_SHOP_ITEM_COUNT_LI\
     MIT\x10\xbf5\x12-\n(RET_ELF_RESTAURANT_TRADE_ORDER_NOT_EXIST\x10\xc05\
     \x12!\n\x1cRET_ELF_RESTAURANT_NO_REWARD\x10\xc15\x12\x20\n\x1bRET_ELF_RE\
-    STAURANT_NOT_INIT\x10\xc25\x12\x0f\n\nH_2c978515\x10\xf45\x12\x0f\n\nH_2\
-    1760dc8\x10\xf55\x12\x0f\n\nH_de9defb4\x10\xf65\x12\x0f\n\nH_39a98c17\
-    \x10\xf75\x12\x0f\n\nH_9990338f\x10\xf85\x12\x0f\n\nH_da99b907\x10\xf95\
-    \x12\x0f\n\nH_39ccac4c\x10\xfa5\x12\x0f\n\nH_1206b37b\x10\xfb5\x12\x0f\n\
-    \nH_f0d6261e\x10\xfc5\x12\x0f\n\nH_88b6282b\x10\xfd5\x12\x0f\n\nH_ce5358\
-    70\x10\xfe5\x12\x0f\n\nH_b7e6dfbf\x10\xff5\x12\x0f\n\nH_befc7b03\x10\x80\
-    6\x12\x0f\n\nH_75843592\x10\x816\x12\x0f\n\nH_25d42d75\x10\x826\x12\x0f\
-    \n\nH_7e80fda4\x10\x836\x12\x0f\n\nH_31f8edb0\x10\x846\x12\x0f\n\nH_2717\
-    419e\x10\x856\x12\x0f\n\nH_4104b64c\x10\x866\x12\x0f\n\nH_2ddc5fac\x10\
-    \x876\x12\x0f\n\nH_24153bcc\x10\x886\x12\x0f\n\nH_0ab4d5b0\x10\x896\x12\
-    \x0f\n\nH_1462b451\x10\x8a6\x12\x0f\n\nH_65bf0a12\x10\x8b6\x12\x0f\n\nH_\
-    dd9ac748\x10\x8c6\x12\x0f\n\nH_ce34be1b\x10\x8d6\x12\x0f\n\nH_b0b5143b\
-    \x10\x8e6\x12\x0f\n\nH_d95f769f\x10\x8f6\x12\x0f\n\nH_35609ccb\x10\x906\
-    \x12\x0f\n\nH_ec13a00e\x10\x916\x12\x0f\n\nH_28254de7\x10\x926\x12\x0f\n\
-    \nH_6dc702e2\x10\x936\x12\x0f\n\nH_8662d9ee\x10\x946\x12\x0f\n\nH_906f4c\
-    5a\x10\x956\x12\x0f\n\nH_0c3ba835\x10\x966\x12\x0f\n\nH_494caabd\x10\x97\
-    6\x12\x0f\n\nH_77a40f5d\x10\x986\x12\x0f\n\nH_20d2a08c\x10\x996\x12\x0f\
-    \n\nH_ae4f39ad\x10\x9a6\x12\x0f\n\nH_10e032a5\x10\x9b6\x12\x0f\n\nH_f087\
-    9867\x10\x9c6\x12\x0f\n\nH_ddf2e148\x10\x9d6\x12\x0f\n\nH_e1d57893\x10\
-    \x9e6\x12\x0f\n\nH_b8d4e597\x10\x9f6\x12\x0f\n\nH_5e1e74a4\x10\xa06\x12\
-    \x0f\n\nH_1a94c8aa\x10\xa16\x12\x0f\n\nH_6dfcd366\x10\xa26\x12\x0f\n\nH_\
-    bebcd34a\x10\xa36\x12\x0f\n\nH_997753dd\x10\xa46\x12\x0f\n\nH_1d700f10\
-    \x10\xa56\x12\x0f\n\nH_948bdd70\x10\xa66\x12\x0f\n\nH_3b29138a\x10\xa76\
-    \x12\x0f\n\nH_2ed1abc4\x10\xa86\x12\x0f\n\nH_928958ed\x10\xa96\x12\x0f\n\
-    \nH_faf4fb4e\x10\xaa6\x12\x0f\n\nH_bccee4fd\x10\xab6\x12\x0f\n\nH_a5c5aa\
-    30\x10\xac6\x12\x0f\n\nH_241a3fc5\x10\xad6\x12\x0f\n\nH_2b3de94c\x10\xae\
-    6\x12\x0f\n\nH_cdcaca5e\x10\xaf6\x12\x0f\n\nH_b5795591\x10\xb06\x12\x0f\
-    \n\nH_6a41e537\x10\xb16\x12\x0f\n\nH_134825c4\x10\xb26\x12\x0f\n\nH_618b\
-    3e9d\x10\xb36\x12\x0f\n\nH_5340077f\x10\xb46\x12\x0f\n\nH_0bac7f08\x10\
-    \xb56\x12\x0f\n\nH_cf84e5d1\x10\xb66\x12&\n!RET_HIPPLEN_AGENDA_WORK_UNAV\
+    STAURANT_NOT_INIT\x10\xc25\x12\x0f\n\nH_53ef06b9\x10\xf45\x12\x0f\n\nH_c\
+    97bd06b\x10\xf55\x12\x0f\n\nH_47abcf81\x10\xf65\x12\x0f\n\nH_b5cd53d1\
+    \x10\xf75\x12\x0f\n\nH_edd5e6a1\x10\xf85\x12\x0f\n\nH_7321b016\x10\xf95\
+    \x12\x0f\n\nH_6506988d\x10\xfa5\x12\x0f\n\nH_7e2b436a\x10\xfb5\x12\x0f\n\
+    \nH_fcf443e3\x10\xfc5\x12\x0f\n\nH_58415842\x10\xfd5\x12\x0f\n\nH_5f17e0\
+    a5\x10\xfe5\x12\x0f\n\nH_95dddcdb\x10\xff5\x12\x0f\n\nH_2aa606a9\x10\x80\
+    6\x12\x0f\n\nH_d1f5bfe0\x10\x816\x12\x0f\n\nH_40c97ed4\x10\x826\x12\x0f\
+    \n\nH_d580d815\x10\x836\x12\x0f\n\nH_d62ba846\x10\x846\x12\x0f\n\nH_85e5\
+    3e4e\x10\x856\x12\x0f\n\nH_772ebcce\x10\x866\x12\x0f\n\nH_58f70c34\x10\
+    \x876\x12\x0f\n\nH_ebb0ea26\x10\x886\x12\x0f\n\nH_9ff68d69\x10\x896\x12\
+    \x0f\n\nH_703996f5\x10\x8a6\x12\x0f\n\nH_34a35c3e\x10\x8b6\x12\x0f\n\nH_\
+    1bd1f8ba\x10\x8c6\x12\x0f\n\nH_84effb49\x10\x8d6\x12\x0f\n\nH_b4f568fe\
+    \x10\x8e6\x12\x0f\n\nH_1427e829\x10\x8f6\x12\x0f\n\nH_4b7e2545\x10\x906\
+    \x12\x0f\n\nH_600710e7\x10\x916\x12\x0f\n\nH_68b4b12f\x10\x926\x12\x0f\n\
+    \nH_bdb9e3f4\x10\x936\x12\x0f\n\nH_ff959560\x10\x946\x12\x0f\n\nH_49e19c\
+    14\x10\x956\x12\x0f\n\nH_be4c457c\x10\x966\x12\x0f\n\nH_dcb8081f\x10\x97\
+    6\x12\x0f\n\nH_81a275e3\x10\x986\x12\x0f\n\nH_86432f13\x10\x996\x12\x0f\
+    \n\nH_698ad042\x10\x9a6\x12\x0f\n\nH_5964df7d\x10\x9b6\x12\x0f\n\nH_11d0\
+    08f0\x10\x9c6\x12\x0f\n\nH_5a190ba2\x10\x9d6\x12\x0f\n\nH_7d8c3ea3\x10\
+    \x9e6\x12\x0f\n\nH_1d8f263a\x10\x9f6\x12\x0f\n\nH_371511f1\x10\xa06\x12\
+    \x0f\n\nH_c7461f2e\x10\xa16\x12\x0f\n\nH_e790b717\x10\xa26\x12\x0f\n\nH_\
+    5aad35cd\x10\xa36\x12\x0f\n\nH_200196bb\x10\xa46\x12\x0f\n\nH_60ee1f3b\
+    \x10\xa56\x12\x0f\n\nH_6288e1ce\x10\xa66\x12\x0f\n\nH_5278809d\x10\xa76\
+    \x12\x0f\n\nH_e2f669e2\x10\xa86\x12\x0f\n\nH_a3cc3760\x10\xa96\x12\x0f\n\
+    \nH_1547c553\x10\xaa6\x12\x0f\n\nH_e0a61cae\x10\xab6\x12\x0f\n\nH_bdc0bf\
+    c0\x10\xac6\x12\x0f\n\nH_5dc24cf0\x10\xad6\x12\x0f\n\nH_dd8fcb59\x10\xae\
+    6\x12\x0f\n\nH_901e9649\x10\xaf6\x12\x0f\n\nH_8dc589ee\x10\xb06\x12\x0f\
+    \n\nH_f3a235e5\x10\xb16\x12\x0f\n\nH_347c363e\x10\xb26\x12\x0f\n\nH_dc42\
+    5de7\x10\xb36\x12\x0f\n\nH_c1deeb7f\x10\xb46\x12\x0f\n\nH_ec3dab80\x10\
+    \xb56\x12\x0f\n\nH_50fdfb00\x10\xb66\x12&\n!RET_HIPPLEN_AGENDA_WORK_UNAV\
     AIBLE\x10\xd96\x12%\n\x20RET_HIPPLEN_AGENDA_WORK_CONFLICT\x10\xda6\x12#\
     \n\x1eRET_HIPPLEN_AGENDA_ACTION_LACK\x10\xdb6\x12#\n\x1eRET_HIPPLEN_AGEN\
     DA_ENERGY_LACK\x10\xdc6\x12*\n%RET_HIPPLEN_AGENDA_NO_WORK_FOR_SETTLE\x10\

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PixAirStartStageScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PixAirStartStageScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:PixAirStartStageScRsp.EMMGHDLIPOH)
     pub EMMGHDLIPOH: bool,
     // @@protoc_insertion_point(field:PixAirStartStageScRsp.MFGMNKMKOON)
     pub MFGMNKMKOON: ::protobuf::MessageField<super::HGNAHHFBMMN::HGNAHHFBMMN>,
-    // @@protoc_insertion_point(field:PixAirStartStageScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PixAirStartStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl PixAirStartStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &PixAirStartStageScRsp| { &m.retcode },
+            |m: &mut PixAirStartStageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EMMGHDLIPOH",
             |m: &PixAirStartStageScRsp| { &m.EMMGHDLIPOH },
             |m: &mut PixAirStartStageScRsp| { &mut m.EMMGHDLIPOH },
@@ -62,11 +67,6 @@ impl PixAirStartStageScRsp {
             "MFGMNKMKOON",
             |m: &PixAirStartStageScRsp| { &m.MFGMNKMKOON },
             |m: &mut PixAirStartStageScRsp| { &mut m.MFGMNKMKOON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PixAirStartStageScRsp| { &m.retcode },
-            |m: &mut PixAirStartStageScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PixAirStartStageScRsp>(
             "PixAirStartStageScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PixAirStartStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                72 => {
                     self.EMMGHDLIPOH = is.read_bool()?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MFGMNKMKOON)?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for PixAirStartStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
         if self.EMMGHDLIPOH != false {
             my_size += 1 + 1;
         }
@@ -114,23 +117,20 @@ impl ::protobuf::Message for PixAirStartStageScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(3, self.retcode)?;
+        }
         if self.EMMGHDLIPOH != false {
-            os.write_bool(6, self.EMMGHDLIPOH)?;
+            os.write_bool(9, self.EMMGHDLIPOH)?;
         }
         if let Some(v) = self.MFGMNKMKOON.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for PixAirStartStageScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.EMMGHDLIPOH = false;
         self.MFGMNKMKOON.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PixAirStartStageScRsp {
         static instance: PixAirStartStageScRsp = PixAirStartStageScRsp {
+            retcode: 0,
             EMMGHDLIPOH: false,
             MFGMNKMKOON: ::protobuf::MessageField::none(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for PixAirStartStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPixAirStartStageScRsp.proto\x1a\x11HGNAHHFBMMN.proto\"\x83\x01\n\
-    \x15PixAirStartStageScRsp\x12\x20\n\x0bEMMGHDLIPOH\x18\x06\x20\x01(\x08R\
-    \x0bEMMGHDLIPOH\x12.\n\x0bMFGMNKMKOON\x18\x0c\x20\x01(\x0b2\x0c.HGNAHHFB\
-    MMNR\x0bMFGMNKMKOON\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
+    \x15PixAirStartStageScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07re\
+    tcode\x12\x20\n\x0bEMMGHDLIPOH\x18\t\x20\x01(\x08R\x0bEMMGHDLIPOH\x12.\n\
+    \x0bMFGMNKMKOON\x18\x0c\x20\x01(\x0b2\x0c.HGNAHHFBMMNR\x0bMFGMNKMKOONb\
     \x06proto3\
 ";
 

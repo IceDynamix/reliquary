@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GNFDPONFLJD {
     // message fields
-    // @@protoc_insertion_point(field:GNFDPONFLJD.JFIGNBBLCIM)
-    pub JFIGNBBLCIM: u32,
-    // @@protoc_insertion_point(field:GNFDPONFLJD.LIAGGDDILGO)
-    pub LIAGGDDILGO: i32,
     // @@protoc_insertion_point(field:GNFDPONFLJD.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:GNFDPONFLJD.LIAGGDDILGO)
+    pub LIAGGDDILGO: i32,
+    // @@protoc_insertion_point(field:GNFDPONFLJD.JFIGNBBLCIM)
+    pub JFIGNBBLCIM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GNFDPONFLJD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GNFDPONFLJD {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFIGNBBLCIM",
-            |m: &GNFDPONFLJD| { &m.JFIGNBBLCIM },
-            |m: &mut GNFDPONFLJD| { &mut m.JFIGNBBLCIM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
+            "cost_data",
+            |m: &GNFDPONFLJD| { &m.cost_data },
+            |m: &mut GNFDPONFLJD| { &mut m.cost_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LIAGGDDILGO",
             |m: &GNFDPONFLJD| { &m.LIAGGDDILGO },
             |m: &mut GNFDPONFLJD| { &mut m.LIAGGDDILGO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
-            "cost_data",
-            |m: &GNFDPONFLJD| { &m.cost_data },
-            |m: &mut GNFDPONFLJD| { &mut m.cost_data },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFIGNBBLCIM",
+            |m: &GNFDPONFLJD| { &m.JFIGNBBLCIM },
+            |m: &mut GNFDPONFLJD| { &mut m.JFIGNBBLCIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GNFDPONFLJD>(
             "GNFDPONFLJD",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GNFDPONFLJD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.JFIGNBBLCIM = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                104 => {
+                48 => {
                     self.LIAGGDDILGO = is.read_int32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
+                88 => {
+                    self.JFIGNBBLCIM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GNFDPONFLJD {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JFIGNBBLCIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JFIGNBBLCIM);
-        }
-        if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(13, self.LIAGGDDILGO);
-        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LIAGGDDILGO != 0 {
+            my_size += ::protobuf::rt::int32_size(6, self.LIAGGDDILGO);
+        }
+        if self.JFIGNBBLCIM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JFIGNBBLCIM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GNFDPONFLJD {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JFIGNBBLCIM != 0 {
-            os.write_uint32(1, self.JFIGNBBLCIM)?;
+        if let Some(v) = self.cost_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.LIAGGDDILGO != 0 {
-            os.write_int32(13, self.LIAGGDDILGO)?;
+            os.write_int32(6, self.LIAGGDDILGO)?;
         }
-        if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.JFIGNBBLCIM != 0 {
+            os.write_uint32(11, self.JFIGNBBLCIM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GNFDPONFLJD {
     }
 
     fn clear(&mut self) {
-        self.JFIGNBBLCIM = 0;
-        self.LIAGGDDILGO = 0;
         self.cost_data.clear();
+        self.LIAGGDDILGO = 0;
+        self.JFIGNBBLCIM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GNFDPONFLJD {
         static instance: GNFDPONFLJD = GNFDPONFLJD {
-            JFIGNBBLCIM: 0,
-            LIAGGDDILGO: 0,
             cost_data: ::protobuf::MessageField::none(),
+            LIAGGDDILGO: 0,
+            JFIGNBBLCIM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for GNFDPONFLJD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GNFDPONFLJD.proto\x1a\x12ItemCostData.proto\"}\n\x0bGNFDPONFLJD\
-    \x12\x20\n\x0bJFIGNBBLCIM\x18\x01\x20\x01(\rR\x0bJFIGNBBLCIM\x12\x20\n\
-    \x0bLIAGGDDILGO\x18\r\x20\x01(\x05R\x0bLIAGGDDILGO\x12*\n\tcost_data\x18\
-    \x0e\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    \x12*\n\tcost_data\x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bLIAGGDDILGO\x18\x06\x20\x01(\x05R\x0bLIAGGDDILGO\x12\x20\n\x0b\
+    JFIGNBBLCIM\x18\x0b\x20\x01(\rR\x0bJFIGNBBLCIMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

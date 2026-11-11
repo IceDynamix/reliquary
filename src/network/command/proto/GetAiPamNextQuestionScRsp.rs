@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                40 => {
                     self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
-                122 => {
+                82 => {
                     self.KDOHKGKBFCH.push(is.read_message()?);
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.BDPIMPJOJBK.value());
+            my_size += ::protobuf::rt::int32_size(5, self.BDPIMPJOJBK.value());
         }
         for value in &self.KDOHKGKBFCH {
             let len = value.compute_size();
@@ -124,13 +124,13 @@ impl ::protobuf::Message for GetAiPamNextQuestionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         for v in &self.KDOHKGKBFCH {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamNextQuestionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetAiPamNextQuestionScRsp.proto\x1a\x11FKNKNLGMACL.proto\x1a\x11NE\
     KAOLPJKEE.proto\"\x95\x01\n\x19GetAiPamNextQuestionScRsp\x12\x18\n\x07re\
-    tcode\x18\x07\x20\x01(\rR\x07retcode\x12.\n\x0bBDPIMPJOJBK\x18\r\x20\x01\
-    (\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12.\n\x0bKDOHKGKBFCH\x18\x0f\x20\
-    \x03(\x0b2\x0c.NEKAOLPJKEER\x0bKDOHKGKBFCHb\x06proto3\
+    tcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bBDPIMPJOJBK\x18\x05\x20\
+    \x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJOJBK\x12.\n\x0bKDOHKGKBFCH\x18\n\
+    \x20\x03(\x0b2\x0c.NEKAOLPJKEER\x0bKDOHKGKBFCHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

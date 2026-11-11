@@ -79,10 +79,10 @@ impl ::protobuf::Message for GBMPOBJDAFF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                64 => {
                     self.reason = is.read_enum_or_unknown()?;
                 },
-                114 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHEFAHCPHBL)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GBMPOBJDAFF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.reason != ::protobuf::EnumOrUnknown::new(super::DIKCFAICOHB::DIKCFAICOHB::DIKCFAICOHB_EJDLGGAGBEA) {
-            my_size += ::protobuf::rt::int32_size(5, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(8, self.reason.value());
         }
         if let Some(v) = self.KHEFAHCPHBL.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GBMPOBJDAFF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.reason != ::protobuf::EnumOrUnknown::new(super::DIKCFAICOHB::DIKCFAICOHB::DIKCFAICOHB_EJDLGGAGBEA) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         if let Some(v) = self.KHEFAHCPHBL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GBMPOBJDAFF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBMPOBJDAFF.proto\x1a\x11DIKCFAICOHB.proto\x1a\x11FOJDKLCHCKG.prot\
-    o\"c\n\x0bGBMPOBJDAFF\x12$\n\x06reason\x18\x05\x20\x01(\x0e2\x0c.DIKCFAI\
-    COHBR\x06reason\x12.\n\x0bKHEFAHCPHBL\x18\x0e\x20\x01(\x0b2\x0c.FOJDKLCH\
-    CKGR\x0bKHEFAHCPHBLb\x06proto3\
+    o\"c\n\x0bGBMPOBJDAFF\x12$\n\x06reason\x18\x08\x20\x01(\x0e2\x0c.DIKCFAI\
+    COHBR\x06reason\x12.\n\x0bKHEFAHCPHBL\x18\n\x20\x01(\x0b2\x0c.FOJDKLCHCK\
+    GR\x0bKHEFAHCPHBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

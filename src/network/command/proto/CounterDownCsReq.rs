@@ -79,10 +79,10 @@ impl ::protobuf::Message for CounterDownCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                24 => {
                     self.DGGCFDKJDPO = is.read_uint32()?;
                 },
-                72 => {
+                88 => {
                     self.BIKALOGMMDA = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for CounterDownCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DGGCFDKJDPO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DGGCFDKJDPO);
+            my_size += ::protobuf::rt::uint32_size(3, self.DGGCFDKJDPO);
         }
         if self.BIKALOGMMDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.BIKALOGMMDA);
+            my_size += ::protobuf::rt::uint32_size(11, self.BIKALOGMMDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CounterDownCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DGGCFDKJDPO != 0 {
-            os.write_uint32(8, self.DGGCFDKJDPO)?;
+            os.write_uint32(3, self.DGGCFDKJDPO)?;
         }
         if self.BIKALOGMMDA != 0 {
-            os.write_uint32(9, self.BIKALOGMMDA)?;
+            os.write_uint32(11, self.BIKALOGMMDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for CounterDownCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16CounterDownCsReq.proto\"V\n\x10CounterDownCsReq\x12\x20\n\x0bDGGCF\
-    DKJDPO\x18\x08\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bBIKALOGMMDA\x18\t\
-    \x20\x01(\rR\x0bBIKALOGMMDAb\x06proto3\
+    DKJDPO\x18\x03\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bBIKALOGMMDA\x18\
+    \x0b\x20\x01(\rR\x0bBIKALOGMMDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

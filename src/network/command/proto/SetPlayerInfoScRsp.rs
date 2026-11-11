@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetPlayerInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.is_modify)
-    pub is_modify: bool,
-    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SetPlayerInfoScRsp.cur_avatar_path)
     pub cur_avatar_path: ::protobuf::EnumOrUnknown<super::MultiPathAvatarType::MultiPathAvatarType>,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SetPlayerInfoScRsp.is_modify)
+    pub is_modify: bool,
     // @@protoc_insertion_point(field:SetPlayerInfoScRsp.set_time)
     pub set_time: i64,
     // special fields
@@ -56,9 +56,9 @@ impl SetPlayerInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_modify",
-            |m: &SetPlayerInfoScRsp| { &m.is_modify },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.is_modify },
+            "cur_avatar_path",
+            |m: &SetPlayerInfoScRsp| { &m.cur_avatar_path },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.cur_avatar_path },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -66,9 +66,9 @@ impl SetPlayerInfoScRsp {
             |m: &mut SetPlayerInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_avatar_path",
-            |m: &SetPlayerInfoScRsp| { &m.cur_avatar_path },
-            |m: &mut SetPlayerInfoScRsp| { &mut m.cur_avatar_path },
+            "is_modify",
+            |m: &SetPlayerInfoScRsp| { &m.is_modify },
+            |m: &mut SetPlayerInfoScRsp| { &mut m.is_modify },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "set_time",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.is_modify = is.read_bool()?;
-                },
-                80 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
+                40 => {
                     self.cur_avatar_path = is.read_enum_or_unknown()?;
                 },
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
                 104 => {
+                    self.is_modify = is.read_bool()?;
+                },
+                112 => {
                     self.set_time = is.read_int64()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
+            my_size += ::protobuf::rt::int32_size(5, self.cur_avatar_path.value());
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         if self.is_modify != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(11, self.cur_avatar_path.value());
-        }
         if self.set_time != 0 {
-            my_size += ::protobuf::rt::int64_size(13, self.set_time);
+            my_size += ::protobuf::rt::int64_size(14, self.set_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_modify != false {
-            os.write_bool(6, self.is_modify)?;
+        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
-        if self.cur_avatar_path != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.cur_avatar_path))?;
+        if self.is_modify != false {
+            os.write_bool(13, self.is_modify)?;
         }
         if self.set_time != 0 {
-            os.write_int64(13, self.set_time)?;
+            os.write_int64(14, self.set_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for SetPlayerInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_modify = false;
-        self.retcode = 0;
         self.cur_avatar_path = ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarType_None);
+        self.retcode = 0;
+        self.is_modify = false;
         self.set_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetPlayerInfoScRsp {
         static instance: SetPlayerInfoScRsp = SetPlayerInfoScRsp {
-            is_modify: false,
-            retcode: 0,
             cur_avatar_path: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
+            is_modify: false,
             set_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetPlayerInfoScRsp.proto\x1a\x19MultiPathAvatarType.proto\"\xa4\
-    \x01\n\x12SetPlayerInfoScRsp\x12\x1b\n\tis_modify\x18\x06\x20\x01(\x08R\
-    \x08isModify\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12<\n\
-    \x0fcur_avatar_path\x18\x0b\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\rcurA\
-    vatarPath\x12\x19\n\x08set_time\x18\r\x20\x01(\x03R\x07setTimeb\x06proto\
-    3\
+    \x01\n\x12SetPlayerInfoScRsp\x12<\n\x0fcur_avatar_path\x18\x05\x20\x01(\
+    \x0e2\x14.MultiPathAvatarTypeR\rcurAvatarPath\x12\x18\n\x07retcode\x18\
+    \x06\x20\x01(\rR\x07retcode\x12\x1b\n\tis_modify\x18\r\x20\x01(\x08R\x08\
+    isModify\x12\x19\n\x08set_time\x18\x0e\x20\x01(\x03R\x07setTimeb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

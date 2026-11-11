@@ -86,19 +86,19 @@ impl ::protobuf::Message for OJJJDPNOKHG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                10 => {
                     self.lineup_list.push(is.read_message()?);
                 },
-                50 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                48 => {
+                16 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
-                90 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.AOLIEDBCNBN)?;
                 },
-                88 => {
+                40 => {
                     self.AOLIEDBCNBN.push(is.read_uint32()?);
                 },
                 tag => {
@@ -117,8 +117,8 @@ impl ::protobuf::Message for OJJJDPNOKHG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.finished_target_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.AOLIEDBCNBN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.AOLIEDBCNBN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -126,10 +126,10 @@ impl ::protobuf::Message for OJJJDPNOKHG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.finished_target_list)?;
-        os.write_repeated_packed_uint32(11, &self.AOLIEDBCNBN)?;
+        os.write_repeated_packed_uint32(2, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(5, &self.AOLIEDBCNBN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for OJJJDPNOKHG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJJJDPNOKHG.proto\x1a\x19ChallengeLineupList.proto\"\x98\x01\n\x0b\
-    OJJJDPNOKHG\x125\n\x0blineup_list\x18\x05\x20\x03(\x0b2\x14.ChallengeLin\
-    eupListR\nlineupList\x120\n\x14finished_target_list\x18\x06\x20\x03(\rR\
-    \x12finishedTargetList\x12\x20\n\x0bAOLIEDBCNBN\x18\x0b\x20\x03(\rR\x0bA\
+    OJJJDPNOKHG\x125\n\x0blineup_list\x18\x01\x20\x03(\x0b2\x14.ChallengeLin\
+    eupListR\nlineupList\x120\n\x14finished_target_list\x18\x02\x20\x03(\rR\
+    \x12finishedTargetList\x12\x20\n\x0bAOLIEDBCNBN\x18\x05\x20\x03(\rR\x0bA\
     OLIEDBCNBNb\x06proto3\
 ";
 

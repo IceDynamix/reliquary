@@ -48,55 +48,6 @@ impl FateHouguSelectReq {
         ::std::default::Default::default()
     }
 
-    // .AFKJKLJJLKN HNPBCGILAJP = 12;
-
-    pub fn HNPBCGILAJP(&self) -> &super::AFKJKLJJLKN::AFKJKLJJLKN {
-        match self.DMNECEKOLAJ {
-            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v)) => v,
-            _ => <super::AFKJKLJJLKN::AFKJKLJJLKN as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_HNPBCGILAJP(&mut self) {
-        self.DMNECEKOLAJ = ::std::option::Option::None;
-    }
-
-    pub fn has_HNPBCGILAJP(&self) -> bool {
-        match self.DMNECEKOLAJ {
-            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HNPBCGILAJP(&mut self, v: super::AFKJKLJJLKN::AFKJKLJJLKN) {
-        self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_HNPBCGILAJP(&mut self) -> &mut super::AFKJKLJJLKN::AFKJKLJJLKN {
-        if let ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(_)) = self.DMNECEKOLAJ {
-        } else {
-            self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(super::AFKJKLJJLKN::AFKJKLJJLKN::new()));
-        }
-        match self.DMNECEKOLAJ {
-            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_HNPBCGILAJP(&mut self) -> super::AFKJKLJJLKN::AFKJKLJJLKN {
-        if self.has_HNPBCGILAJP() {
-            match self.DMNECEKOLAJ.take() {
-                ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AFKJKLJJLKN::AFKJKLJJLKN::new()
-        }
-    }
-
     // .GHAJMKCEEPJ NPBKAADBHHC = 14;
 
     pub fn NPBKAADBHHC(&self) -> &super::GHAJMKCEEPJ::GHAJMKCEEPJ {
@@ -146,6 +97,55 @@ impl FateHouguSelectReq {
         }
     }
 
+    // .AFKJKLJJLKN HNPBCGILAJP = 15;
+
+    pub fn HNPBCGILAJP(&self) -> &super::AFKJKLJJLKN::AFKJKLJJLKN {
+        match self.DMNECEKOLAJ {
+            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v)) => v,
+            _ => <super::AFKJKLJJLKN::AFKJKLJJLKN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HNPBCGILAJP(&mut self) {
+        self.DMNECEKOLAJ = ::std::option::Option::None;
+    }
+
+    pub fn has_HNPBCGILAJP(&self) -> bool {
+        match self.DMNECEKOLAJ {
+            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HNPBCGILAJP(&mut self, v: super::AFKJKLJJLKN::AFKJKLJJLKN) {
+        self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HNPBCGILAJP(&mut self) -> &mut super::AFKJKLJJLKN::AFKJKLJJLKN {
+        if let ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(_)) = self.DMNECEKOLAJ {
+        } else {
+            self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(super::AFKJKLJJLKN::AFKJKLJJLKN::new()));
+        }
+        match self.DMNECEKOLAJ {
+            ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HNPBCGILAJP(&mut self) -> super::AFKJKLJJLKN::AFKJKLJJLKN {
+        if self.has_HNPBCGILAJP() {
+            match self.DMNECEKOLAJ.take() {
+                ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AFKJKLJJLKN::AFKJKLJJLKN::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -154,19 +154,19 @@ impl FateHouguSelectReq {
             |m: &FateHouguSelectReq| { &m.queue_position },
             |m: &mut FateHouguSelectReq| { &mut m.queue_position },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AFKJKLJJLKN::AFKJKLJJLKN>(
-            "HNPBCGILAJP",
-            FateHouguSelectReq::has_HNPBCGILAJP,
-            FateHouguSelectReq::HNPBCGILAJP,
-            FateHouguSelectReq::mut_HNPBCGILAJP,
-            FateHouguSelectReq::set_HNPBCGILAJP,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GHAJMKCEEPJ::GHAJMKCEEPJ>(
             "NPBKAADBHHC",
             FateHouguSelectReq::has_NPBKAADBHHC,
             FateHouguSelectReq::NPBKAADBHHC,
             FateHouguSelectReq::mut_NPBKAADBHHC,
             FateHouguSelectReq::set_NPBKAADBHHC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AFKJKLJJLKN::AFKJKLJJLKN>(
+            "HNPBCGILAJP",
+            FateHouguSelectReq::has_HNPBCGILAJP,
+            FateHouguSelectReq::HNPBCGILAJP,
+            FateHouguSelectReq::mut_HNPBCGILAJP,
+            FateHouguSelectReq::set_HNPBCGILAJP,
         ));
         oneofs.push(fate_hougu_select_req::DMNECEKOLAJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateHouguSelectReq>(
@@ -187,14 +187,14 @@ impl ::protobuf::Message for FateHouguSelectReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                104 => {
                     self.queue_position = is.read_uint32()?;
-                },
-                98 => {
-                    self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(is.read_message()?));
                 },
                 114 => {
                     self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::NPBKAADBHHC(is.read_message()?));
+                },
+                122 => {
+                    self.DMNECEKOLAJ = ::std::option::Option::Some(fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -209,15 +209,15 @@ impl ::protobuf::Message for FateHouguSelectReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
         }
         if let ::std::option::Option::Some(ref v) = self.DMNECEKOLAJ {
             match v {
-                &fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v) => {
+                &fate_hougu_select_req::DMNECEKOLAJ::NPBKAADBHHC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &fate_hougu_select_req::DMNECEKOLAJ::NPBKAADBHHC(ref v) => {
+                &fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -230,15 +230,15 @@ impl ::protobuf::Message for FateHouguSelectReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(8, self.queue_position)?;
+            os.write_uint32(13, self.queue_position)?;
         }
         if let ::std::option::Option::Some(ref v) = self.DMNECEKOLAJ {
             match v {
-                &fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
                 &fate_hougu_select_req::DMNECEKOLAJ::NPBKAADBHHC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                },
+                &fate_hougu_select_req::DMNECEKOLAJ::HNPBCGILAJP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -299,10 +299,10 @@ pub mod fate_hougu_select_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:FateHouguSelectReq.DMNECEKOLAJ)
     pub enum DMNECEKOLAJ {
-        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.HNPBCGILAJP)
-        HNPBCGILAJP(super::super::AFKJKLJJLKN::AFKJKLJJLKN),
         // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.NPBKAADBHHC)
         NPBKAADBHHC(super::super::GHAJMKCEEPJ::GHAJMKCEEPJ),
+        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.HNPBCGILAJP)
+        HNPBCGILAJP(super::super::AFKJKLJJLKN::AFKJKLJJLKN),
     }
 
     impl ::protobuf::Oneof for DMNECEKOLAJ {
@@ -325,10 +325,10 @@ pub mod fate_hougu_select_req {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18FateHouguSelectReq.proto\x1a\x11AFKJKLJJLKN.proto\x1a\x11GHAJMKCEE\
     PJ.proto\"\xae\x01\n\x12FateHouguSelectReq\x12%\n\x0equeue_position\x18\
-    \x08\x20\x01(\rR\rqueuePosition\x120\n\x0bHNPBCGILAJP\x18\x0c\x20\x01(\
-    \x0b2\x0c.AFKJKLJJLKNH\0R\x0bHNPBCGILAJP\x120\n\x0bNPBKAADBHHC\x18\x0e\
-    \x20\x01(\x0b2\x0c.GHAJMKCEEPJH\0R\x0bNPBKAADBHHCB\r\n\x0bDMNECEKOLAJb\
-    \x06proto3\
+    \r\x20\x01(\rR\rqueuePosition\x120\n\x0bNPBKAADBHHC\x18\x0e\x20\x01(\x0b\
+    2\x0c.GHAJMKCEEPJH\0R\x0bNPBKAADBHHC\x120\n\x0bHNPBCGILAJP\x18\x0f\x20\
+    \x01(\x0b2\x0c.AFKJKLJJLKNH\0R\x0bHNPBCGILAJPB\r\n\x0bDMNECEKOLAJb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

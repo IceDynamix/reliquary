@@ -29,14 +29,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum CHLEIBCFDBO {
     // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_NLCDGIPGFDJ)
     CHLEIBCFDBO_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_DDKCNBCOELM)
-    CHLEIBCFDBO_DDKCNBCOELM = 460,
-    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_HBAPBPBKJLL)
-    CHLEIBCFDBO_HBAPBPBKJLL = 416,
-    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_KNFMJKOGEGF)
-    CHLEIBCFDBO_KNFMJKOGEGF = 434,
     // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_HCNHEDFNLJC)
-    CHLEIBCFDBO_HCNHEDFNLJC = 425,
+    CHLEIBCFDBO_HCNHEDFNLJC = 419,
+    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_DDKCNBCOELM)
+    CHLEIBCFDBO_DDKCNBCOELM = 405,
+    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_KNFMJKOGEGF)
+    CHLEIBCFDBO_KNFMJKOGEGF = 474,
+    // @@protoc_insertion_point(enum_value:CHLEIBCFDBO.CHLEIBCFDBO_HBAPBPBKJLL)
+    CHLEIBCFDBO_HBAPBPBKJLL = 471,
 }
 
 impl ::protobuf::Enum for CHLEIBCFDBO {
@@ -49,10 +49,10 @@ impl ::protobuf::Enum for CHLEIBCFDBO {
     fn from_i32(value: i32) -> ::std::option::Option<CHLEIBCFDBO> {
         match value {
             0 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_NLCDGIPGFDJ),
-            460 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM),
-            416 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL),
-            434 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF),
-            425 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC),
+            419 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC),
+            405 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM),
+            474 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF),
+            471 => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL),
             _ => ::std::option::Option::None
         }
     }
@@ -60,20 +60,20 @@ impl ::protobuf::Enum for CHLEIBCFDBO {
     fn from_str(str: &str) -> ::std::option::Option<CHLEIBCFDBO> {
         match str {
             "CHLEIBCFDBO_NLCDGIPGFDJ" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_NLCDGIPGFDJ),
-            "CHLEIBCFDBO_DDKCNBCOELM" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM),
-            "CHLEIBCFDBO_HBAPBPBKJLL" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL),
-            "CHLEIBCFDBO_KNFMJKOGEGF" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF),
             "CHLEIBCFDBO_HCNHEDFNLJC" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC),
+            "CHLEIBCFDBO_DDKCNBCOELM" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM),
+            "CHLEIBCFDBO_KNFMJKOGEGF" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF),
+            "CHLEIBCFDBO_HBAPBPBKJLL" => ::std::option::Option::Some(CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CHLEIBCFDBO] = &[
         CHLEIBCFDBO::CHLEIBCFDBO_NLCDGIPGFDJ,
-        CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM,
-        CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL,
-        CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF,
         CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC,
+        CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM,
+        CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF,
+        CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL,
     ];
 }
 
@@ -86,10 +86,10 @@ impl ::protobuf::EnumFull for CHLEIBCFDBO {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             CHLEIBCFDBO::CHLEIBCFDBO_NLCDGIPGFDJ => 0,
-            CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM => 1,
-            CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL => 2,
+            CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC => 1,
+            CHLEIBCFDBO::CHLEIBCFDBO_DDKCNBCOELM => 2,
             CHLEIBCFDBO::CHLEIBCFDBO_KNFMJKOGEGF => 3,
-            CHLEIBCFDBO::CHLEIBCFDBO_HCNHEDFNLJC => 4,
+            CHLEIBCFDBO::CHLEIBCFDBO_HBAPBPBKJLL => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,9 +109,9 @@ impl CHLEIBCFDBO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CHLEIBCFDBO.proto*\xa2\x01\n\x0bCHLEIBCFDBO\x12\x1b\n\x17CHLEIBCFD\
-    BO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CHLEIBCFDBO_DDKCNBCOELM\x10\xcc\x03\
-    \x12\x1c\n\x17CHLEIBCFDBO_HBAPBPBKJLL\x10\xa0\x03\x12\x1c\n\x17CHLEIBCFD\
-    BO_KNFMJKOGEGF\x10\xb2\x03\x12\x1c\n\x17CHLEIBCFDBO_HCNHEDFNLJC\x10\xa9\
+    BO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CHLEIBCFDBO_HCNHEDFNLJC\x10\xa3\x03\
+    \x12\x1c\n\x17CHLEIBCFDBO_DDKCNBCOELM\x10\x95\x03\x12\x1c\n\x17CHLEIBCFD\
+    BO_KNFMJKOGEGF\x10\xda\x03\x12\x1c\n\x17CHLEIBCFDBO_HBAPBPBKJLL\x10\xd7\
     \x03b\x06proto3\
 ";
 

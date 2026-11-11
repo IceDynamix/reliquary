@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCAJNMLLIED {
     // message fields
-    // @@protoc_insertion_point(field:BCAJNMLLIED.progress)
-    pub progress: u32,
-    // @@protoc_insertion_point(field:BCAJNMLLIED.OLHODIFNABL)
-    pub OLHODIFNABL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BCAJNMLLIED.id)
     pub id: u32,
     // @@protoc_insertion_point(field:BCAJNMLLIED.panel_id)
     pub panel_id: u32,
+    // @@protoc_insertion_point(field:BCAJNMLLIED.OLHODIFNABL)
+    pub OLHODIFNABL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BCAJNMLLIED.progress)
+    pub progress: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BCAJNMLLIED.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,16 +56,6 @@ impl BCAJNMLLIED {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "progress",
-            |m: &BCAJNMLLIED| { &m.progress },
-            |m: &mut BCAJNMLLIED| { &mut m.progress },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OLHODIFNABL",
-            |m: &BCAJNMLLIED| { &m.OLHODIFNABL },
-            |m: &mut BCAJNMLLIED| { &mut m.OLHODIFNABL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &BCAJNMLLIED| { &m.id },
             |m: &mut BCAJNMLLIED| { &mut m.id },
@@ -74,6 +64,16 @@ impl BCAJNMLLIED {
             "panel_id",
             |m: &BCAJNMLLIED| { &m.panel_id },
             |m: &mut BCAJNMLLIED| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OLHODIFNABL",
+            |m: &BCAJNMLLIED| { &m.OLHODIFNABL },
+            |m: &mut BCAJNMLLIED| { &mut m.OLHODIFNABL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "progress",
+            |m: &BCAJNMLLIED| { &m.progress },
+            |m: &mut BCAJNMLLIED| { &mut m.progress },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BCAJNMLLIED>(
             "BCAJNMLLIED",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for BCAJNMLLIED {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.progress = is.read_uint32()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OLHODIFNABL)?;
-                },
-                32 => {
-                    self.OLHODIFNABL.push(is.read_uint32()?);
-                },
-                72 => {
+                64 => {
                     self.id = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.panel_id = is.read_uint32()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OLHODIFNABL)?;
+                },
+                96 => {
+                    self.OLHODIFNABL.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.progress = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for BCAJNMLLIED {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.progress);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.OLHODIFNABL);
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.panel_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OLHODIFNABL);
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for BCAJNMLLIED {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(1, self.progress)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.OLHODIFNABL)?;
         if self.id != 0 {
-            os.write_uint32(9, self.id)?;
+            os.write_uint32(8, self.id)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(12, self.panel_id)?;
+            os.write_uint32(10, self.panel_id)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.OLHODIFNABL)?;
+        if self.progress != 0 {
+            os.write_uint32(14, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for BCAJNMLLIED {
     }
 
     fn clear(&mut self) {
-        self.progress = 0;
-        self.OLHODIFNABL.clear();
         self.id = 0;
         self.panel_id = 0;
+        self.OLHODIFNABL.clear();
+        self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCAJNMLLIED {
         static instance: BCAJNMLLIED = BCAJNMLLIED {
-            progress: 0,
-            OLHODIFNABL: ::std::vec::Vec::new(),
             id: 0,
             panel_id: 0,
+            OLHODIFNABL: ::std::vec::Vec::new(),
+            progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for BCAJNMLLIED {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCAJNMLLIED.proto\"v\n\x0bBCAJNMLLIED\x12\x1a\n\x08progress\x18\
-    \x01\x20\x01(\rR\x08progress\x12\x20\n\x0bOLHODIFNABL\x18\x04\x20\x03(\r\
-    R\x0bOLHODIFNABL\x12\x0e\n\x02id\x18\t\x20\x01(\rR\x02id\x12\x19\n\x08pa\
-    nel_id\x18\x0c\x20\x01(\rR\x07panelIdb\x06proto3\
+    \n\x11BCAJNMLLIED.proto\"v\n\x0bBCAJNMLLIED\x12\x0e\n\x02id\x18\x08\x20\
+    \x01(\rR\x02id\x12\x19\n\x08panel_id\x18\n\x20\x01(\rR\x07panelId\x12\
+    \x20\n\x0bOLHODIFNABL\x18\x0c\x20\x03(\rR\x0bOLHODIFNABL\x12\x1a\n\x08pr\
+    ogress\x18\x0e\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

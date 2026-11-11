@@ -79,10 +79,10 @@ impl ::protobuf::Message for GEPAFBJBGBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.NLIDEKJOFMG = is.read_uint32()?;
                 },
-                24 => {
+                104 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GEPAFBJBGBH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.NLIDEKJOFMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NLIDEKJOFMG);
+            my_size += ::protobuf::rt::uint32_size(4, self.NLIDEKJOFMG);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.progress);
+            my_size += ::protobuf::rt::uint32_size(13, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GEPAFBJBGBH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.NLIDEKJOFMG != 0 {
-            os.write_uint32(1, self.NLIDEKJOFMG)?;
+            os.write_uint32(4, self.NLIDEKJOFMG)?;
         }
         if self.progress != 0 {
-            os.write_uint32(3, self.progress)?;
+            os.write_uint32(13, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GEPAFBJBGBH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GEPAFBJBGBH.proto\"K\n\x0bGEPAFBJBGBH\x12\x20\n\x0bNLIDEKJOFMG\x18\
-    \x01\x20\x01(\rR\x0bNLIDEKJOFMG\x12\x1a\n\x08progress\x18\x03\x20\x01(\r\
-    R\x08progressb\x06proto3\
+    \x04\x20\x01(\rR\x0bNLIDEKJOFMG\x12\x1a\n\x08progress\x18\r\x20\x01(\rR\
+    \x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

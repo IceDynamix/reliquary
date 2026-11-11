@@ -30,12 +30,12 @@ pub struct CNLAOMCKFKD {
     // message fields
     // @@protoc_insertion_point(field:CNLAOMCKFKD.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:CNLAOMCKFKD.NDEBMEGNCKN)
-    pub NDEBMEGNCKN: u32,
     // @@protoc_insertion_point(field:CNLAOMCKFKD.display_value)
     pub display_value: u32,
     // @@protoc_insertion_point(field:CNLAOMCKFKD.GDNEHLEOMOM)
     pub GDNEHLEOMOM: u32,
+    // @@protoc_insertion_point(field:CNLAOMCKFKD.NDEBMEGNCKN)
+    pub NDEBMEGNCKN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CNLAOMCKFKD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl CNLAOMCKFKD {
             |m: &mut CNLAOMCKFKD| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDEBMEGNCKN",
-            |m: &CNLAOMCKFKD| { &m.NDEBMEGNCKN },
-            |m: &mut CNLAOMCKFKD| { &mut m.NDEBMEGNCKN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "display_value",
             |m: &CNLAOMCKFKD| { &m.display_value },
             |m: &mut CNLAOMCKFKD| { &mut m.display_value },
@@ -74,6 +69,11 @@ impl CNLAOMCKFKD {
             "GDNEHLEOMOM",
             |m: &CNLAOMCKFKD| { &m.GDNEHLEOMOM },
             |m: &mut CNLAOMCKFKD| { &mut m.GDNEHLEOMOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NDEBMEGNCKN",
+            |m: &CNLAOMCKFKD| { &m.NDEBMEGNCKN },
+            |m: &mut CNLAOMCKFKD| { &mut m.NDEBMEGNCKN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CNLAOMCKFKD>(
             "CNLAOMCKFKD",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for CNLAOMCKFKD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 48 => {
-                    self.NDEBMEGNCKN = is.read_uint32()?;
-                },
-                88 => {
                     self.display_value = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.GDNEHLEOMOM = is.read_uint32()?;
+                },
+                112 => {
+                    self.NDEBMEGNCKN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for CNLAOMCKFKD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.unique_id);
-        }
-        if self.NDEBMEGNCKN != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NDEBMEGNCKN);
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
         }
         if self.display_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.display_value);
+            my_size += ::protobuf::rt::uint32_size(6, self.display_value);
         }
         if self.GDNEHLEOMOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GDNEHLEOMOM);
+            my_size += ::protobuf::rt::uint32_size(11, self.GDNEHLEOMOM);
+        }
+        if self.NDEBMEGNCKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.NDEBMEGNCKN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for CNLAOMCKFKD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(4, self.unique_id)?;
-        }
-        if self.NDEBMEGNCKN != 0 {
-            os.write_uint32(6, self.NDEBMEGNCKN)?;
+            os.write_uint32(2, self.unique_id)?;
         }
         if self.display_value != 0 {
-            os.write_uint32(11, self.display_value)?;
+            os.write_uint32(6, self.display_value)?;
         }
         if self.GDNEHLEOMOM != 0 {
-            os.write_uint32(14, self.GDNEHLEOMOM)?;
+            os.write_uint32(11, self.GDNEHLEOMOM)?;
+        }
+        if self.NDEBMEGNCKN != 0 {
+            os.write_uint32(14, self.NDEBMEGNCKN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for CNLAOMCKFKD {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.NDEBMEGNCKN = 0;
         self.display_value = 0;
         self.GDNEHLEOMOM = 0;
+        self.NDEBMEGNCKN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CNLAOMCKFKD {
         static instance: CNLAOMCKFKD = CNLAOMCKFKD {
             unique_id: 0,
-            NDEBMEGNCKN: 0,
             display_value: 0,
             GDNEHLEOMOM: 0,
+            NDEBMEGNCKN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for CNLAOMCKFKD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CNLAOMCKFKD.proto\"\x93\x01\n\x0bCNLAOMCKFKD\x12\x1b\n\tunique_id\
-    \x18\x04\x20\x01(\rR\x08uniqueId\x12\x20\n\x0bNDEBMEGNCKN\x18\x06\x20\
-    \x01(\rR\x0bNDEBMEGNCKN\x12#\n\rdisplay_value\x18\x0b\x20\x01(\rR\x0cdis\
-    playValue\x12\x20\n\x0bGDNEHLEOMOM\x18\x0e\x20\x01(\rR\x0bGDNEHLEOMOMb\
-    \x06proto3\
+    \x18\x02\x20\x01(\rR\x08uniqueId\x12#\n\rdisplay_value\x18\x06\x20\x01(\
+    \rR\x0cdisplayValue\x12\x20\n\x0bGDNEHLEOMOM\x18\x0b\x20\x01(\rR\x0bGDNE\
+    HLEOMOM\x12\x20\n\x0bNDEBMEGNCKN\x18\x0e\x20\x01(\rR\x0bNDEBMEGNCKNb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

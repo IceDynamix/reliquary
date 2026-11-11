@@ -79,13 +79,13 @@ impl ::protobuf::Message for HHJANNIGCKM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.EGLLMGLLHDL = is.read_bool()?;
                 },
-                42 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                40 => {
+                88 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for HHJANNIGCKM {
         if self.EGLLMGLLHDL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.finished_target_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for HHJANNIGCKM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.EGLLMGLLHDL != false {
-            os.write_bool(4, self.EGLLMGLLHDL)?;
+            os.write_bool(1, self.EGLLMGLLHDL)?;
         }
-        os.write_repeated_packed_uint32(5, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(11, &self.finished_target_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for HHJANNIGCKM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HHJANNIGCKM.proto\"a\n\x0bHHJANNIGCKM\x12\x20\n\x0bEGLLMGLLHDL\x18\
-    \x04\x20\x01(\x08R\x0bEGLLMGLLHDL\x120\n\x14finished_target_list\x18\x05\
+    \x01\x20\x01(\x08R\x0bEGLLMGLLHDL\x120\n\x14finished_target_list\x18\x0b\
     \x20\x03(\rR\x12finishedTargetListb\x06proto3\
 ";
 

@@ -93,16 +93,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.refresh_trigger = is.read_bool()?;
                 },
-                72 => {
+                16 => {
                     self.trigger_entity_id = is.read_uint32()?;
                 },
-                98 => {
+                34 => {
                     self.trigger_name = is.read_string()?;
                 },
-                104 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -121,13 +121,13 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
             my_size += 1 + 1;
         }
         if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.trigger_entity_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.trigger_entity_id);
         }
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(4, &self.trigger_name);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.refresh_trigger != false {
-            os.write_bool(4, self.refresh_trigger)?;
+            os.write_bool(1, self.refresh_trigger)?;
         }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(9, self.trigger_entity_id)?;
+            os.write_uint32(2, self.trigger_entity_id)?;
         }
         if !self.trigger_name.is_empty() {
-            os.write_string(12, &self.trigger_name)?;
+            os.write_string(4, &self.trigger_name)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientScRsp.proto\"\xaf\x01\n\x1bRefreshTriggerByClie\
-    ntScRsp\x12'\n\x0frefresh_trigger\x18\x04\x20\x01(\x08R\x0erefreshTrigge\
-    r\x12*\n\x11trigger_entity_id\x18\t\x20\x01(\rR\x0ftriggerEntityId\x12!\
-    \n\x0ctrigger_name\x18\x0c\x20\x01(\tR\x0btriggerName\x12\x18\n\x07retco\
-    de\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
+    ntScRsp\x12'\n\x0frefresh_trigger\x18\x01\x20\x01(\x08R\x0erefreshTrigge\
+    r\x12*\n\x11trigger_entity_id\x18\x02\x20\x01(\rR\x0ftriggerEntityId\x12\
+    !\n\x0ctrigger_name\x18\x04\x20\x01(\tR\x0btriggerName\x12\x18\n\x07retc\
+    ode\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

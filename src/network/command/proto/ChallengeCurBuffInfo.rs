@@ -94,7 +94,7 @@ impl ChallengeCurBuffInfo {
         }
     }
 
-    // .ChallengeStoryBuffList cur_story_buffs = 12;
+    // .ChallengeStoryBuffList cur_story_buffs = 10;
 
     pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffList::ChallengeStoryBuffList {
         match self.KKNBOACNCON {
@@ -182,7 +182,7 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
                 42 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(is.read_message()?));
                 },
-                98 => {
+                82 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(is.read_message()?));
                 },
                 tag => {
@@ -221,7 +221,7 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
                 &challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -307,8 +307,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChallengeCurBuffInfo.proto\x1a\x1bChallengeBossBuffList.proto\x1a\
     \x1cChallengeStoryBuffList.proto\"\xa8\x01\n\x14ChallengeCurBuffInfo\x12\
     >\n\x0ecur_boss_buffs\x18\x05\x20\x01(\x0b2\x16.ChallengeBossBuffListH\0\
-    R\x0ccurBossBuffs\x12A\n\x0fcur_story_buffs\x18\x0c\x20\x01(\x0b2\x17.Ch\
-    allengeStoryBuffListH\0R\rcurStoryBuffsB\r\n\x0bKKNBOACNCONb\x06proto3\
+    R\x0ccurBossBuffs\x12A\n\x0fcur_story_buffs\x18\n\x20\x01(\x0b2\x17.Chal\
+    lengeStoryBuffListH\0R\rcurStoryBuffsB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

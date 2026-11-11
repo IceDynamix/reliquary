@@ -79,10 +79,10 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.OJNEFBJHCCK)?;
                 },
-                8 => {
+                40 => {
                     self.OJNEFBJHCCK.push(is.read_uint32()?);
                 },
                 96 => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OJNEFBJHCCK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.OJNEFBJHCCK);
         if self.MAHFOHBJDBH != false {
             my_size += 1 + 1;
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for CNBHPJFFLEF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.OJNEFBJHCCK)?;
+        os.write_repeated_packed_uint32(5, &self.OJNEFBJHCCK)?;
         if self.MAHFOHBJDBH != false {
             os.write_bool(12, self.MAHFOHBJDBH)?;
         }
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for CNBHPJFFLEF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CNBHPJFFLEF.proto\"Q\n\x0bCNBHPJFFLEF\x12\x20\n\x0bOJNEFBJHCCK\x18\
-    \x01\x20\x03(\rR\x0bOJNEFBJHCCK\x12\x20\n\x0bMAHFOHBJDBH\x18\x0c\x20\x01\
+    \x05\x20\x03(\rR\x0bOJNEFBJHCCK\x12\x20\n\x0bMAHFOHBJDBH\x18\x0c\x20\x01\
     (\x08R\x0bMAHFOHBJDBHb\x06proto3\
 ";
 

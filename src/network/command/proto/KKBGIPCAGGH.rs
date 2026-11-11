@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KKBGIPCAGGH {
     // message fields
-    // @@protoc_insertion_point(field:KKBGIPCAGGH.CJADMFDOBAI)
-    pub CJADMFDOBAI: u32,
     // @@protoc_insertion_point(field:KKBGIPCAGGH.monster_wave_list)
     pub monster_wave_list: ::std::vec::Vec<super::PNAKHANCNGK::PNAKHANCNGK>,
-    // @@protoc_insertion_point(field:KKBGIPCAGGH.BOAMLLHPNEC)
-    pub BOAMLLHPNEC: ::protobuf::MessageField<super::H_1253c083::H_1253c083>,
-    // @@protoc_insertion_point(field:KKBGIPCAGGH.IFIIOIIKJHO)
-    pub IFIIOIIKJHO: u32,
     // @@protoc_insertion_point(field:KKBGIPCAGGH.EPPHOFDAEMI)
     pub EPPHOFDAEMI: u32,
+    // @@protoc_insertion_point(field:KKBGIPCAGGH.BOAMLLHPNEC)
+    pub BOAMLLHPNEC: ::protobuf::MessageField<super::H_a2f38409::H_a2f38409>,
+    // @@protoc_insertion_point(field:KKBGIPCAGGH.CJADMFDOBAI)
+    pub CJADMFDOBAI: u32,
+    // @@protoc_insertion_point(field:KKBGIPCAGGH.IFIIOIIKJHO)
+    pub IFIIOIIKJHO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:KKBGIPCAGGH.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl KKBGIPCAGGH {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJADMFDOBAI",
-            |m: &KKBGIPCAGGH| { &m.CJADMFDOBAI },
-            |m: &mut KKBGIPCAGGH| { &mut m.CJADMFDOBAI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_wave_list",
             |m: &KKBGIPCAGGH| { &m.monster_wave_list },
             |m: &mut KKBGIPCAGGH| { &mut m.monster_wave_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_1253c083::H_1253c083>(
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EPPHOFDAEMI",
+            |m: &KKBGIPCAGGH| { &m.EPPHOFDAEMI },
+            |m: &mut KKBGIPCAGGH| { &mut m.EPPHOFDAEMI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_a2f38409::H_a2f38409>(
             "BOAMLLHPNEC",
             |m: &KKBGIPCAGGH| { &m.BOAMLLHPNEC },
             |m: &mut KKBGIPCAGGH| { &mut m.BOAMLLHPNEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJADMFDOBAI",
+            |m: &KKBGIPCAGGH| { &m.CJADMFDOBAI },
+            |m: &mut KKBGIPCAGGH| { &mut m.CJADMFDOBAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IFIIOIIKJHO",
             |m: &KKBGIPCAGGH| { &m.IFIIOIIKJHO },
             |m: &mut KKBGIPCAGGH| { &mut m.IFIIOIIKJHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPPHOFDAEMI",
-            |m: &KKBGIPCAGGH| { &m.EPPHOFDAEMI },
-            |m: &mut KKBGIPCAGGH| { &mut m.EPPHOFDAEMI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKBGIPCAGGH>(
             "KKBGIPCAGGH",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for KKBGIPCAGGH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.CJADMFDOBAI = is.read_uint32()?;
-                },
-                74 => {
+                10 => {
                     self.monster_wave_list.push(is.read_message()?);
                 },
-                82 => {
+                48 => {
+                    self.EPPHOFDAEMI = is.read_uint32()?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BOAMLLHPNEC)?;
                 },
-                104 => {
-                    self.IFIIOIIKJHO = is.read_uint32()?;
+                80 => {
+                    self.CJADMFDOBAI = is.read_uint32()?;
                 },
-                120 => {
-                    self.EPPHOFDAEMI = is.read_uint32()?;
+                88 => {
+                    self.IFIIOIIKJHO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for KKBGIPCAGGH {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CJADMFDOBAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CJADMFDOBAI);
-        }
         for value in &self.monster_wave_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.EPPHOFDAEMI != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EPPHOFDAEMI);
+        }
         if let Some(v) = self.BOAMLLHPNEC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.IFIIOIIKJHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IFIIOIIKJHO);
+        if self.CJADMFDOBAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CJADMFDOBAI);
         }
-        if self.EPPHOFDAEMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EPPHOFDAEMI);
+        if self.IFIIOIIKJHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.IFIIOIIKJHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,20 +150,20 @@ impl ::protobuf::Message for KKBGIPCAGGH {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CJADMFDOBAI != 0 {
-            os.write_uint32(8, self.CJADMFDOBAI)?;
-        }
         for v in &self.monster_wave_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.EPPHOFDAEMI != 0 {
+            os.write_uint32(6, self.EPPHOFDAEMI)?;
+        }
         if let Some(v) = self.BOAMLLHPNEC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.CJADMFDOBAI != 0 {
+            os.write_uint32(10, self.CJADMFDOBAI)?;
         }
         if self.IFIIOIIKJHO != 0 {
-            os.write_uint32(13, self.IFIIOIIKJHO)?;
-        }
-        if self.EPPHOFDAEMI != 0 {
-            os.write_uint32(15, self.EPPHOFDAEMI)?;
+            os.write_uint32(11, self.IFIIOIIKJHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for KKBGIPCAGGH {
     }
 
     fn clear(&mut self) {
-        self.CJADMFDOBAI = 0;
         self.monster_wave_list.clear();
-        self.BOAMLLHPNEC.clear();
-        self.IFIIOIIKJHO = 0;
         self.EPPHOFDAEMI = 0;
+        self.BOAMLLHPNEC.clear();
+        self.CJADMFDOBAI = 0;
+        self.IFIIOIIKJHO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKBGIPCAGGH {
         static instance: KKBGIPCAGGH = KKBGIPCAGGH {
-            CJADMFDOBAI: 0,
             monster_wave_list: ::std::vec::Vec::new(),
-            BOAMLLHPNEC: ::protobuf::MessageField::none(),
-            IFIIOIIKJHO: 0,
             EPPHOFDAEMI: 0,
+            BOAMLLHPNEC: ::protobuf::MessageField::none(),
+            CJADMFDOBAI: 0,
+            IFIIOIIKJHO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for KKBGIPCAGGH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KKBGIPCAGGH.proto\x1a\x10H_1253c083.proto\x1a\x11PNAKHANCNGK.proto\
-    \"\xdc\x01\n\x0bKKBGIPCAGGH\x12\x20\n\x0bCJADMFDOBAI\x18\x08\x20\x01(\rR\
-    \x0bCJADMFDOBAI\x128\n\x11monster_wave_list\x18\t\x20\x03(\x0b2\x0c.PNAK\
-    HANCNGKR\x0fmonsterWaveList\x12-\n\x0bBOAMLLHPNEC\x18\n\x20\x01(\x0b2\
-    \x0b.H_1253c083R\x0bBOAMLLHPNEC\x12\x20\n\x0bIFIIOIIKJHO\x18\r\x20\x01(\
-    \rR\x0bIFIIOIIKJHO\x12\x20\n\x0bEPPHOFDAEMI\x18\x0f\x20\x01(\rR\x0bEPPHO\
-    FDAEMIb\x06proto3\
+    \n\x11KKBGIPCAGGH.proto\x1a\x10H_a2f38409.proto\x1a\x11PNAKHANCNGK.proto\
+    \"\xdc\x01\n\x0bKKBGIPCAGGH\x128\n\x11monster_wave_list\x18\x01\x20\x03(\
+    \x0b2\x0c.PNAKHANCNGKR\x0fmonsterWaveList\x12\x20\n\x0bEPPHOFDAEMI\x18\
+    \x06\x20\x01(\rR\x0bEPPHOFDAEMI\x12-\n\x0bBOAMLLHPNEC\x18\x08\x20\x01(\
+    \x0b2\x0b.H_a2f38409R\x0bBOAMLLHPNEC\x12\x20\n\x0bCJADMFDOBAI\x18\n\x20\
+    \x01(\rR\x0bCJADMFDOBAI\x12\x20\n\x0bIFIIOIIKJHO\x18\x0b\x20\x01(\rR\x0b\
+    IFIIOIIKJHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::H_1253c083::file_descriptor().clone());
+            deps.push(super::H_a2f38409::file_descriptor().clone());
             deps.push(super::PNAKHANCNGK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(KKBGIPCAGGH::generated_message_descriptor_data());

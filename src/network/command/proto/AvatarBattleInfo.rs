@@ -158,6 +158,12 @@ pub struct AvatarBattleInfo {
     pub DFLFMCIIGPK: f64,
     // @@protoc_insertion_point(field:AvatarBattleInfo.EDIODPKDIHP)
     pub EDIODPKDIHP: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.BHFPPGKLCCE)
+    pub BHFPPGKLCCE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.LKLNGCCIMEM)
+    pub LKLNGCCIMEM: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.MMMLNOPAAOP)
+    pub MMMLNOPAAOP: f64,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -175,7 +181,7 @@ impl AvatarBattleInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(65);
+        let mut fields = ::std::vec::Vec::with_capacity(68);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
@@ -502,6 +508,21 @@ impl AvatarBattleInfo {
             |m: &AvatarBattleInfo| { &m.EDIODPKDIHP },
             |m: &mut AvatarBattleInfo| { &mut m.EDIODPKDIHP },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BHFPPGKLCCE",
+            |m: &AvatarBattleInfo| { &m.BHFPPGKLCCE },
+            |m: &mut AvatarBattleInfo| { &mut m.BHFPPGKLCCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKLNGCCIMEM",
+            |m: &AvatarBattleInfo| { &m.LKLNGCCIMEM },
+            |m: &mut AvatarBattleInfo| { &mut m.LKLNGCCIMEM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMMLNOPAAOP",
+            |m: &AvatarBattleInfo| { &m.MMMLNOPAAOP },
+            |m: &mut AvatarBattleInfo| { &mut m.MMMLNOPAAOP },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarBattleInfo>(
             "AvatarBattleInfo",
             fields,
@@ -714,6 +735,18 @@ impl ::protobuf::Message for AvatarBattleInfo {
                 },
                 521 => {
                     self.EDIODPKDIHP = is.read_double()?;
+                },
+                530 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BHFPPGKLCCE)?;
+                },
+                528 => {
+                    self.BHFPPGKLCCE.push(is.read_uint32()?);
+                },
+                536 => {
+                    self.LKLNGCCIMEM = is.read_uint32()?;
+                },
+                545 => {
+                    self.MMMLNOPAAOP = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -936,6 +969,13 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.EDIODPKDIHP != 0. {
             my_size += 2 + 8;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(66, &self.BHFPPGKLCCE);
+        if self.LKLNGCCIMEM != 0 {
+            my_size += ::protobuf::rt::uint32_size(67, self.LKLNGCCIMEM);
+        }
+        if self.MMMLNOPAAOP != 0. {
+            my_size += 2 + 8;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -1137,6 +1177,13 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.EDIODPKDIHP != 0. {
             os.write_double(65, self.EDIODPKDIHP)?;
         }
+        os.write_repeated_packed_uint32(66, &self.BHFPPGKLCCE)?;
+        if self.LKLNGCCIMEM != 0 {
+            os.write_uint32(67, self.LKLNGCCIMEM)?;
+        }
+        if self.MMMLNOPAAOP != 0. {
+            os.write_double(68, self.MMMLNOPAAOP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -1219,6 +1266,9 @@ impl ::protobuf::Message for AvatarBattleInfo {
         self.LPNGINGOEDF = 0.;
         self.DFLFMCIIGPK = 0.;
         self.EDIODPKDIHP = 0.;
+        self.BHFPPGKLCCE.clear();
+        self.LKLNGCCIMEM = 0;
+        self.MMMLNOPAAOP = 0.;
         self.special_fields.clear();
     }
 
@@ -1289,6 +1339,9 @@ impl ::protobuf::Message for AvatarBattleInfo {
             LPNGINGOEDF: 0.,
             DFLFMCIIGPK: 0.,
             EDIODPKDIHP: 0.,
+            BHFPPGKLCCE: ::std::vec::Vec::new(),
+            LKLNGCCIMEM: 0,
+            MMMLNOPAAOP: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -1317,7 +1370,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     eProperty.proto\x1a\x14AvatarProperty.proto\x1a\x15AvatarSkillTree.proto\
     \x1a\x10AvatarType.proto\x1a\x11BattleRelic.proto\x1a\x11CFDHDBNIHPL.pro\
     to\x1a\x11EPNAONKOHBO.proto\x1a\x17EquipmentProperty.proto\x1a\x16SkillU\
-    seProperty.proto\x1a\x11SpAddSource.proto\"\xa0\x14\n\x10AvatarBattleInf\
+    seProperty.proto\x1a\x11SpAddSource.proto\"\x86\x15\n\x10AvatarBattleInf\
     o\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarTyp\
     e\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12!\n\x0cavatar_level\x18\
     \x03\x20\x01(\rR\x0bavatarLevel\x12\x1f\n\x0bavatar_rank\x18\x04\x20\x01\
@@ -1376,7 +1429,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12\x20\n\x0bPCDGLDDDKEC\x18>\x20\x01(\x01R\x0bPCDGLDDDKEC\x12\x20\n\
     \x0bLPNGINGOEDF\x18?\x20\x01(\x01R\x0bLPNGINGOEDF\x12\x20\n\x0bDFLFMCIIG\
     PK\x18@\x20\x01(\x01R\x0bDFLFMCIIGPK\x12\x20\n\x0bEDIODPKDIHP\x18A\x20\
-    \x01(\x01R\x0bEDIODPKDIHPb\x06proto3\
+    \x01(\x01R\x0bEDIODPKDIHP\x12\x20\n\x0bBHFPPGKLCCE\x18B\x20\x03(\rR\x0bB\
+    HFPPGKLCCE\x12\x20\n\x0bLKLNGCCIMEM\x18C\x20\x01(\rR\x0bLKLNGCCIMEM\x12\
+    \x20\n\x0bMMMLNOPAAOP\x18D\x20\x01(\x01R\x0bMMMLNOPAAOPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

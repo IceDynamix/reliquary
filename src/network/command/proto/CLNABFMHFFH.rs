@@ -79,10 +79,10 @@ impl ::protobuf::Message for CLNABFMHFFH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
                     self.BKFONKNLCHP = is.read_bool()?;
                 },
-                96 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for CLNABFMHFFH {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for CLNABFMHFFH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BKFONKNLCHP != false {
-            os.write_bool(4, self.BKFONKNLCHP)?;
+            os.write_bool(2, self.BKFONKNLCHP)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(12, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for CLNABFMHFFH {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CLNABFMHFFH.proto\"L\n\x0bCLNABFMHFFH\x12\x20\n\x0bBKFONKNLCHP\x18\
-    \x04\x20\x01(\x08R\x0bBKFONKNLCHP\x12\x1b\n\tavatar_id\x18\x0c\x20\x01(\
-    \rR\x08avatarIdb\x06proto3\
+    \x02\x20\x01(\x08R\x0bBKFONKNLCHP\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\
+    \x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

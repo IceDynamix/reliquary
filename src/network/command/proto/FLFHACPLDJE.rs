@@ -45,7 +45,7 @@ impl FLFHACPLDJE {
         ::std::default::Default::default()
     }
 
-    // uint32 gold = 10;
+    // uint32 gold = 2;
 
     pub fn gold(&self) -> u32 {
         match self.OFJBCEDFLKL {
@@ -70,7 +70,7 @@ impl FLFHACPLDJE {
         self.OFJBCEDFLKL = ::std::option::Option::Some(flfhacpldje::OFJBCEDFLKL::Gold(v))
     }
 
-    // .PGECGKEKFNC BDPIMPJOJBK = 12;
+    // .PGECGKEKFNC BDPIMPJOJBK = 13;
 
     pub fn BDPIMPJOJBK(&self) -> &super::PGECGKEKFNC::PGECGKEKFNC {
         match self.OFJBCEDFLKL {
@@ -154,10 +154,10 @@ impl ::protobuf::Message for FLFHACPLDJE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                16 => {
                     self.OFJBCEDFLKL = ::std::option::Option::Some(flfhacpldje::OFJBCEDFLKL::Gold(is.read_uint32()?));
                 },
-                98 => {
+                106 => {
                     self.OFJBCEDFLKL = ::std::option::Option::Some(flfhacpldje::OFJBCEDFLKL::BDPIMPJOJBK(is.read_message()?));
                 },
                 tag => {
@@ -175,7 +175,7 @@ impl ::protobuf::Message for FLFHACPLDJE {
         if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
             match v {
                 &flfhacpldje::OFJBCEDFLKL::Gold(v) => {
-                    my_size += ::protobuf::rt::uint32_size(10, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
                 &flfhacpldje::OFJBCEDFLKL::BDPIMPJOJBK(ref v) => {
                     let len = v.compute_size();
@@ -192,10 +192,10 @@ impl ::protobuf::Message for FLFHACPLDJE {
         if let ::std::option::Option::Some(ref v) = self.OFJBCEDFLKL {
             match v {
                 &flfhacpldje::OFJBCEDFLKL::Gold(v) => {
-                    os.write_uint32(10, v)?;
+                    os.write_uint32(2, v)?;
                 },
                 &flfhacpldje::OFJBCEDFLKL::BDPIMPJOJBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
             };
         }
@@ -279,9 +279,9 @@ pub mod flfhacpldje {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLFHACPLDJE.proto\x1a\x11PGECGKEKFNC.proto\"d\n\x0bFLFHACPLDJE\x12\
-    \x14\n\x04gold\x18\n\x20\x01(\rH\0R\x04gold\x120\n\x0bBDPIMPJOJBK\x18\
-    \x0c\x20\x01(\x0b2\x0c.PGECGKEKFNCH\0R\x0bBDPIMPJOJBKB\r\n\x0bOFJBCEDFLK\
-    Lb\x06proto3\
+    \x14\n\x04gold\x18\x02\x20\x01(\rH\0R\x04gold\x120\n\x0bBDPIMPJOJBK\x18\
+    \r\x20\x01(\x0b2\x0c.PGECGKEKFNCH\0R\x0bBDPIMPJOJBKB\r\n\x0bOFJBCEDFLKLb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

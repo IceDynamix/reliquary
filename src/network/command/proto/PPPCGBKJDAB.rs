@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPPCGBKJDAB {
     // message fields
-    // @@protoc_insertion_point(field:PPPCGBKJDAB.AMMPOLONOBC)
-    pub AMMPOLONOBC: u32,
     // @@protoc_insertion_point(field:PPPCGBKJDAB.ACIJFIOJDBP)
     pub ACIJFIOJDBP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PPPCGBKJDAB.AMMPOLONOBC)
+    pub AMMPOLONOBC: u32,
     // @@protoc_insertion_point(field:PPPCGBKJDAB.CIPADGHBJNP)
     pub CIPADGHBJNP: u32,
     // special fields
@@ -53,15 +53,15 @@ impl PPPCGBKJDAB {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMMPOLONOBC",
-            |m: &PPPCGBKJDAB| { &m.AMMPOLONOBC },
-            |m: &mut PPPCGBKJDAB| { &mut m.AMMPOLONOBC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "ACIJFIOJDBP",
             |m: &PPPCGBKJDAB| { &m.ACIJFIOJDBP },
             |m: &mut PPPCGBKJDAB| { &mut m.ACIJFIOJDBP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AMMPOLONOBC",
+            |m: &PPPCGBKJDAB| { &m.AMMPOLONOBC },
+            |m: &mut PPPCGBKJDAB| { &mut m.AMMPOLONOBC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CIPADGHBJNP",
@@ -86,16 +86,16 @@ impl ::protobuf::Message for PPPCGBKJDAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.AMMPOLONOBC = is.read_uint32()?;
-                },
-                90 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.ACIJFIOJDBP)?;
                 },
-                88 => {
+                8 => {
                     self.ACIJFIOJDBP.push(is.read_uint32()?);
                 },
-                112 => {
+                32 => {
+                    self.AMMPOLONOBC = is.read_uint32()?;
+                },
+                64 => {
                     self.CIPADGHBJNP = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for PPPCGBKJDAB {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.ACIJFIOJDBP);
         if self.AMMPOLONOBC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AMMPOLONOBC);
+            my_size += ::protobuf::rt::uint32_size(4, self.AMMPOLONOBC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ACIJFIOJDBP);
         if self.CIPADGHBJNP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CIPADGHBJNP);
+            my_size += ::protobuf::rt::uint32_size(8, self.CIPADGHBJNP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for PPPCGBKJDAB {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(1, &self.ACIJFIOJDBP)?;
         if self.AMMPOLONOBC != 0 {
-            os.write_uint32(7, self.AMMPOLONOBC)?;
+            os.write_uint32(4, self.AMMPOLONOBC)?;
         }
-        os.write_repeated_packed_uint32(11, &self.ACIJFIOJDBP)?;
         if self.CIPADGHBJNP != 0 {
-            os.write_uint32(14, self.CIPADGHBJNP)?;
+            os.write_uint32(8, self.CIPADGHBJNP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,16 +147,16 @@ impl ::protobuf::Message for PPPCGBKJDAB {
     }
 
     fn clear(&mut self) {
-        self.AMMPOLONOBC = 0;
         self.ACIJFIOJDBP.clear();
+        self.AMMPOLONOBC = 0;
         self.CIPADGHBJNP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPPCGBKJDAB {
         static instance: PPPCGBKJDAB = PPPCGBKJDAB {
-            AMMPOLONOBC: 0,
             ACIJFIOJDBP: ::std::vec::Vec::new(),
+            AMMPOLONOBC: 0,
             CIPADGHBJNP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for PPPCGBKJDAB {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PPPCGBKJDAB.proto\"s\n\x0bPPPCGBKJDAB\x12\x20\n\x0bAMMPOLONOBC\x18\
-    \x07\x20\x01(\rR\x0bAMMPOLONOBC\x12\x20\n\x0bACIJFIOJDBP\x18\x0b\x20\x03\
-    (\rR\x0bACIJFIOJDBP\x12\x20\n\x0bCIPADGHBJNP\x18\x0e\x20\x01(\rR\x0bCIPA\
+    \n\x11PPPCGBKJDAB.proto\"s\n\x0bPPPCGBKJDAB\x12\x20\n\x0bACIJFIOJDBP\x18\
+    \x01\x20\x03(\rR\x0bACIJFIOJDBP\x12\x20\n\x0bAMMPOLONOBC\x18\x04\x20\x01\
+    (\rR\x0bAMMPOLONOBC\x12\x20\n\x0bCIPADGHBJNP\x18\x08\x20\x01(\rR\x0bCIPA\
     DGHBJNPb\x06proto3\
 ";
 

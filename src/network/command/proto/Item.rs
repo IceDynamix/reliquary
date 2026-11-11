@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Item {
     // message fields
-    // @@protoc_insertion_point(field:Item.main_affix_id)
-    pub main_affix_id: u32,
-    // @@protoc_insertion_point(field:Item.num)
-    pub num: u32,
     // @@protoc_insertion_point(field:Item.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:Item.rank)
-    pub rank: u32,
+    // @@protoc_insertion_point(field:Item.main_affix_id)
+    pub main_affix_id: u32,
     // @@protoc_insertion_point(field:Item.promotion)
     pub promotion: u32,
     // @@protoc_insertion_point(field:Item.unique_id)
     pub unique_id: u32,
+    // @@protoc_insertion_point(field:Item.num)
+    pub num: u32,
     // @@protoc_insertion_point(field:Item.item_id)
     pub item_id: u32,
+    // @@protoc_insertion_point(field:Item.rank)
+    pub rank: u32,
     // message oneof groups
     pub extra_info: ::std::option::Option<item::Extra_info>,
     // special fields
@@ -60,7 +60,7 @@ impl Item {
         ::std::default::Default::default()
     }
 
-    // .LHCBKDNHGCG blind_box_pet_extra_info = 407;
+    // .LHCBKDNHGCG blind_box_pet_extra_info = 666;
 
     pub fn blind_box_pet_extra_info(&self) -> &super::LHCBKDNHGCG::LHCBKDNHGCG {
         match self.extra_info {
@@ -113,24 +113,14 @@ impl Item {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "main_affix_id",
-            |m: &Item| { &m.main_affix_id },
-            |m: &mut Item| { &mut m.main_affix_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "num",
-            |m: &Item| { &m.num },
-            |m: &mut Item| { &mut m.num },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &Item| { &m.level },
             |m: &mut Item| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &Item| { &m.rank },
-            |m: &mut Item| { &mut m.rank },
+            "main_affix_id",
+            |m: &Item| { &m.main_affix_id },
+            |m: &mut Item| { &mut m.main_affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "promotion",
@@ -143,9 +133,19 @@ impl Item {
             |m: &mut Item| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "num",
+            |m: &Item| { &m.num },
+            |m: &mut Item| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &Item| { &m.item_id },
             |m: &mut Item| { &mut m.item_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &Item| { &m.rank },
+            |m: &mut Item| { &mut m.rank },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LHCBKDNHGCG::LHCBKDNHGCG>(
             "blind_box_pet_extra_info",
@@ -173,28 +173,28 @@ impl ::protobuf::Message for Item {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                16 => {
+                    self.level = is.read_uint32()?;
+                },
+                24 => {
                     self.main_affix_id = is.read_uint32()?;
                 },
                 48 => {
-                    self.num = is.read_uint32()?;
-                },
-                64 => {
-                    self.level = is.read_uint32()?;
-                },
-                72 => {
-                    self.rank = is.read_uint32()?;
-                },
-                96 => {
                     self.promotion = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
+                    self.num = is.read_uint32()?;
+                },
+                96 => {
                     self.item_id = is.read_uint32()?;
                 },
-                3258 => {
+                120 => {
+                    self.rank = is.read_uint32()?;
+                },
+                5330 => {
                     self.extra_info = ::std::option::Option::Some(item::Extra_info::BlindBoxPetExtraInfo(is.read_message()?));
                 },
                 tag => {
@@ -209,26 +209,26 @@ impl ::protobuf::Message for Item {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.main_affix_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.main_affix_id);
-        }
-        if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.num);
-        }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.level);
+            my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.rank);
+        if self.main_affix_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.main_affix_id);
         }
         if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.promotion);
+            my_size += ::protobuf::rt::uint32_size(6, self.promotion);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
+        }
+        if self.num != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.num);
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.item_id);
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.rank);
         }
         if let ::std::option::Option::Some(ref v) = self.extra_info {
             match v {
@@ -244,31 +244,31 @@ impl ::protobuf::Message for Item {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.main_affix_id != 0 {
-            os.write_uint32(4, self.main_affix_id)?;
-        }
-        if self.num != 0 {
-            os.write_uint32(6, self.num)?;
-        }
         if self.level != 0 {
-            os.write_uint32(8, self.level)?;
+            os.write_uint32(2, self.level)?;
         }
-        if self.rank != 0 {
-            os.write_uint32(9, self.rank)?;
+        if self.main_affix_id != 0 {
+            os.write_uint32(3, self.main_affix_id)?;
         }
         if self.promotion != 0 {
-            os.write_uint32(12, self.promotion)?;
+            os.write_uint32(6, self.promotion)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(13, self.unique_id)?;
+            os.write_uint32(8, self.unique_id)?;
+        }
+        if self.num != 0 {
+            os.write_uint32(10, self.num)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(15, self.item_id)?;
+            os.write_uint32(12, self.item_id)?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(15, self.rank)?;
         }
         if let ::std::option::Option::Some(ref v) = self.extra_info {
             match v {
                 &item::Extra_info::BlindBoxPetExtraInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(407, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(666, v, os)?;
                 },
             };
         }
@@ -289,26 +289,26 @@ impl ::protobuf::Message for Item {
     }
 
     fn clear(&mut self) {
-        self.main_affix_id = 0;
-        self.num = 0;
         self.level = 0;
-        self.rank = 0;
+        self.main_affix_id = 0;
         self.promotion = 0;
         self.unique_id = 0;
+        self.num = 0;
         self.item_id = 0;
+        self.rank = 0;
         self.extra_info = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Item {
         static instance: Item = Item {
-            main_affix_id: 0,
-            num: 0,
             level: 0,
-            rank: 0,
+            main_affix_id: 0,
             promotion: 0,
             unique_id: 0,
+            num: 0,
             item_id: 0,
+            rank: 0,
             extra_info: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -362,14 +362,14 @@ pub mod item {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\nItem.proto\x1a\x11LHCBKDNHGCG.proto\"\x91\x02\n\x04Item\x12\"\n\rmai\
-    n_affix_id\x18\x04\x20\x01(\rR\x0bmainAffixId\x12\x10\n\x03num\x18\x06\
-    \x20\x01(\rR\x03num\x12\x14\n\x05level\x18\x08\x20\x01(\rR\x05level\x12\
-    \x12\n\x04rank\x18\t\x20\x01(\rR\x04rank\x12\x1c\n\tpromotion\x18\x0c\
-    \x20\x01(\rR\tpromotion\x12\x1b\n\tunique_id\x18\r\x20\x01(\rR\x08unique\
-    Id\x12\x17\n\x07item_id\x18\x0f\x20\x01(\rR\x06itemId\x12G\n\x18blind_bo\
-    x_pet_extra_info\x18\x97\x03\x20\x01(\x0b2\x0c.LHCBKDNHGCGH\0R\x14blindB\
-    oxPetExtraInfoB\x0c\n\nextra_infob\x06proto3\
+    \n\nItem.proto\x1a\x11LHCBKDNHGCG.proto\"\x91\x02\n\x04Item\x12\x14\n\
+    \x05level\x18\x02\x20\x01(\rR\x05level\x12\"\n\rmain_affix_id\x18\x03\
+    \x20\x01(\rR\x0bmainAffixId\x12\x1c\n\tpromotion\x18\x06\x20\x01(\rR\tpr\
+    omotion\x12\x1b\n\tunique_id\x18\x08\x20\x01(\rR\x08uniqueId\x12\x10\n\
+    \x03num\x18\n\x20\x01(\rR\x03num\x12\x17\n\x07item_id\x18\x0c\x20\x01(\r\
+    R\x06itemId\x12\x12\n\x04rank\x18\x0f\x20\x01(\rR\x04rank\x12G\n\x18blin\
+    d_box_pet_extra_info\x18\x9a\x05\x20\x01(\x0b2\x0c.LHCBKDNHGCGH\0R\x14bl\
+    indBoxPetExtraInfoB\x0c\n\nextra_infob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

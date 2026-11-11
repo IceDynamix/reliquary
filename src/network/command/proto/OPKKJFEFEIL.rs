@@ -79,10 +79,10 @@ impl ::protobuf::Message for OPKKJFEFEIL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.DNBKKDBFFAJ = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                104 => {
                     self.teleport_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for OPKKJFEFEIL {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::LobbyInteractType_None) {
-            my_size += ::protobuf::rt::int32_size(3, self.DNBKKDBFFAJ.value());
+            my_size += ::protobuf::rt::int32_size(4, self.DNBKKDBFFAJ.value());
         }
         if self.teleport_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.teleport_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.teleport_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OPKKJFEFEIL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DNBKKDBFFAJ != ::protobuf::EnumOrUnknown::new(super::LobbyInteractType::LobbyInteractType::LobbyInteractType_None) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.DNBKKDBFFAJ))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.DNBKKDBFFAJ))?;
         }
         if self.teleport_id != 0 {
-            os.write_uint32(7, self.teleport_id)?;
+            os.write_uint32(13, self.teleport_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OPKKJFEFEIL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OPKKJFEFEIL.proto\x1a\x17LobbyInteractType.proto\"d\n\x0bOPKKJFEFE\
-    IL\x124\n\x0bDNBKKDBFFAJ\x18\x03\x20\x01(\x0e2\x12.LobbyInteractTypeR\
-    \x0bDNBKKDBFFAJ\x12\x1f\n\x0bteleport_id\x18\x07\x20\x01(\rR\nteleportId\
-    b\x06proto3\
+    IL\x124\n\x0bDNBKKDBFFAJ\x18\x04\x20\x01(\x0e2\x12.LobbyInteractTypeR\
+    \x0bDNBKKDBFFAJ\x12\x1f\n\x0bteleport_id\x18\r\x20\x01(\rR\nteleportIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

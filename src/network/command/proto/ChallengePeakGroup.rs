@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengePeakGroup {
     // message fields
-    // @@protoc_insertion_point(field:ChallengePeakGroup.obtained_stars)
-    pub obtained_stars: u32,
+    // @@protoc_insertion_point(field:ChallengePeakGroup.taken_star_rewards)
+    pub taken_star_rewards: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengePeakGroup.PAPDCCKPEPK)
     pub PAPDCCKPEPK: ::protobuf::MessageField<super::JFBFFIAOPCC::JFBFFIAOPCC>,
     // @@protoc_insertion_point(field:ChallengePeakGroup.peak_group_id)
     pub peak_group_id: u32,
-    // @@protoc_insertion_point(field:ChallengePeakGroup.taken_star_rewards)
-    pub taken_star_rewards: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengePeakGroup.peaks)
-    pub peaks: ::std::vec::Vec<super::ChallengePeak::ChallengePeak>,
-    // @@protoc_insertion_point(field:ChallengePeakGroup.disable_hard_mode)
-    pub disable_hard_mode: bool,
-    // @@protoc_insertion_point(field:ChallengePeakGroup.peak_boss)
-    pub peak_boss: ::protobuf::MessageField<super::ChallengePeakBoss::ChallengePeakBoss>,
+    // @@protoc_insertion_point(field:ChallengePeakGroup.obtained_stars)
+    pub obtained_stars: u32,
     // @@protoc_insertion_point(field:ChallengePeakGroup.wait_confirm_data)
     pub wait_confirm_data: ::protobuf::MessageField<super::WaitConfirmData::WaitConfirmData>,
+    // @@protoc_insertion_point(field:ChallengePeakGroup.disable_hard_mode)
+    pub disable_hard_mode: bool,
+    // @@protoc_insertion_point(field:ChallengePeakGroup.peaks)
+    pub peaks: ::std::vec::Vec<super::ChallengePeak::ChallengePeak>,
+    // @@protoc_insertion_point(field:ChallengePeakGroup.peak_boss)
+    pub peak_boss: ::protobuf::MessageField<super::ChallengePeakBoss::ChallengePeakBoss>,
     // @@protoc_insertion_point(field:ChallengePeakGroup.count_of_peaks)
     pub count_of_peaks: u32,
     // special fields
@@ -65,10 +65,10 @@ impl ChallengePeakGroup {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "obtained_stars",
-            |m: &ChallengePeakGroup| { &m.obtained_stars },
-            |m: &mut ChallengePeakGroup| { &mut m.obtained_stars },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "taken_star_rewards",
+            |m: &ChallengePeakGroup| { &m.taken_star_rewards },
+            |m: &mut ChallengePeakGroup| { &mut m.taken_star_rewards },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFBFFIAOPCC::JFBFFIAOPCC>(
             "PAPDCCKPEPK",
@@ -80,30 +80,30 @@ impl ChallengePeakGroup {
             |m: &ChallengePeakGroup| { &m.peak_group_id },
             |m: &mut ChallengePeakGroup| { &mut m.peak_group_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "taken_star_rewards",
-            |m: &ChallengePeakGroup| { &m.taken_star_rewards },
-            |m: &mut ChallengePeakGroup| { &mut m.taken_star_rewards },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "obtained_stars",
+            |m: &ChallengePeakGroup| { &m.obtained_stars },
+            |m: &mut ChallengePeakGroup| { &mut m.obtained_stars },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "peaks",
-            |m: &ChallengePeakGroup| { &m.peaks },
-            |m: &mut ChallengePeakGroup| { &mut m.peaks },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::WaitConfirmData::WaitConfirmData>(
+            "wait_confirm_data",
+            |m: &ChallengePeakGroup| { &m.wait_confirm_data },
+            |m: &mut ChallengePeakGroup| { &mut m.wait_confirm_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "disable_hard_mode",
             |m: &ChallengePeakGroup| { &m.disable_hard_mode },
             |m: &mut ChallengePeakGroup| { &mut m.disable_hard_mode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "peaks",
+            |m: &ChallengePeakGroup| { &m.peaks },
+            |m: &mut ChallengePeakGroup| { &mut m.peaks },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengePeakBoss::ChallengePeakBoss>(
             "peak_boss",
             |m: &ChallengePeakGroup| { &m.peak_boss },
             |m: &mut ChallengePeakGroup| { &mut m.peak_boss },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::WaitConfirmData::WaitConfirmData>(
-            "wait_confirm_data",
-            |m: &ChallengePeakGroup| { &m.wait_confirm_data },
-            |m: &mut ChallengePeakGroup| { &mut m.wait_confirm_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "count_of_peaks",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for ChallengePeakGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.obtained_stars = is.read_uint32()?;
-                },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PAPDCCKPEPK)?;
-                },
-                32 => {
-                    self.peak_group_id = is.read_uint32()?;
-                },
-                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_star_rewards)?;
                 },
-                40 => {
+                24 => {
                     self.taken_star_rewards.push(is.read_uint32()?);
                 },
                 50 => {
-                    self.peaks.push(is.read_message()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PAPDCCKPEPK)?;
                 },
-                64 => {
+                56 => {
+                    self.peak_group_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.obtained_stars = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.wait_confirm_data)?;
+                },
+                96 => {
                     self.disable_hard_mode = is.read_bool()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.peak_boss)?;
+                106 => {
+                    self.peaks.push(is.read_message()?);
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.wait_confirm_data)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.peak_boss)?;
                 },
                 120 => {
                     self.count_of_peaks = is.read_uint32()?;
@@ -170,29 +170,29 @@ impl ::protobuf::Message for ChallengePeakGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.obtained_stars != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.obtained_stars);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.taken_star_rewards);
         if let Some(v) = self.PAPDCCKPEPK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.peak_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.peak_group_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.peak_group_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.taken_star_rewards);
+        if self.obtained_stars != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.obtained_stars);
+        }
+        if let Some(v) = self.wait_confirm_data.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.disable_hard_mode != false {
+            my_size += 1 + 1;
+        }
         for value in &self.peaks {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.disable_hard_mode != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.peak_boss.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.wait_confirm_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -205,27 +205,27 @@ impl ::protobuf::Message for ChallengePeakGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.obtained_stars != 0 {
-            os.write_uint32(2, self.obtained_stars)?;
-        }
+        os.write_repeated_packed_uint32(3, &self.taken_star_rewards)?;
         if let Some(v) = self.PAPDCCKPEPK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.peak_group_id != 0 {
-            os.write_uint32(4, self.peak_group_id)?;
+            os.write_uint32(7, self.peak_group_id)?;
         }
-        os.write_repeated_packed_uint32(5, &self.taken_star_rewards)?;
-        for v in &self.peaks {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.disable_hard_mode != false {
-            os.write_bool(8, self.disable_hard_mode)?;
-        }
-        if let Some(v) = self.peak_boss.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.obtained_stars != 0 {
+            os.write_uint32(10, self.obtained_stars)?;
         }
         if let Some(v) = self.wait_confirm_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.disable_hard_mode != false {
+            os.write_bool(12, self.disable_hard_mode)?;
+        }
+        for v in &self.peaks {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if let Some(v) = self.peak_boss.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.count_of_peaks != 0 {
             os.write_uint32(15, self.count_of_peaks)?;
@@ -247,28 +247,28 @@ impl ::protobuf::Message for ChallengePeakGroup {
     }
 
     fn clear(&mut self) {
-        self.obtained_stars = 0;
+        self.taken_star_rewards.clear();
         self.PAPDCCKPEPK.clear();
         self.peak_group_id = 0;
-        self.taken_star_rewards.clear();
-        self.peaks.clear();
-        self.disable_hard_mode = false;
-        self.peak_boss.clear();
+        self.obtained_stars = 0;
         self.wait_confirm_data.clear();
+        self.disable_hard_mode = false;
+        self.peaks.clear();
+        self.peak_boss.clear();
         self.count_of_peaks = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakGroup {
         static instance: ChallengePeakGroup = ChallengePeakGroup {
-            obtained_stars: 0,
+            taken_star_rewards: ::std::vec::Vec::new(),
             PAPDCCKPEPK: ::protobuf::MessageField::none(),
             peak_group_id: 0,
-            taken_star_rewards: ::std::vec::Vec::new(),
-            peaks: ::std::vec::Vec::new(),
-            disable_hard_mode: false,
-            peak_boss: ::protobuf::MessageField::none(),
+            obtained_stars: 0,
             wait_confirm_data: ::protobuf::MessageField::none(),
+            disable_hard_mode: false,
+            peaks: ::std::vec::Vec::new(),
+            peak_boss: ::protobuf::MessageField::none(),
             count_of_peaks: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -296,16 +296,16 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakGroup {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ChallengePeakGroup.proto\x1a\x13ChallengePeak.proto\x1a\x17Challen\
     gePeakBoss.proto\x1a\x11JFBFFIAOPCC.proto\x1a\x15WaitConfirmData.proto\"\
-    \xa4\x03\n\x12ChallengePeakGroup\x12%\n\x0eobtained_stars\x18\x02\x20\
-    \x01(\rR\robtainedStars\x12.\n\x0bPAPDCCKPEPK\x18\x03\x20\x01(\x0b2\x0c.\
-    JFBFFIAOPCCR\x0bPAPDCCKPEPK\x12\"\n\rpeak_group_id\x18\x04\x20\x01(\rR\
-    \x0bpeakGroupId\x12,\n\x12taken_star_rewards\x18\x05\x20\x03(\rR\x10take\
-    nStarRewards\x12$\n\x05peaks\x18\x06\x20\x03(\x0b2\x0e.ChallengePeakR\
-    \x05peaks\x12*\n\x11disable_hard_mode\x18\x08\x20\x01(\x08R\x0fdisableHa\
-    rdMode\x12/\n\tpeak_boss\x18\t\x20\x01(\x0b2\x12.ChallengePeakBossR\x08p\
-    eakBoss\x12<\n\x11wait_confirm_data\x18\x0c\x20\x01(\x0b2\x10.WaitConfir\
-    mDataR\x0fwaitConfirmData\x12$\n\x0ecount_of_peaks\x18\x0f\x20\x01(\rR\
-    \x0ccountOfPeaksb\x06proto3\
+    \xa4\x03\n\x12ChallengePeakGroup\x12,\n\x12taken_star_rewards\x18\x03\
+    \x20\x03(\rR\x10takenStarRewards\x12.\n\x0bPAPDCCKPEPK\x18\x06\x20\x01(\
+    \x0b2\x0c.JFBFFIAOPCCR\x0bPAPDCCKPEPK\x12\"\n\rpeak_group_id\x18\x07\x20\
+    \x01(\rR\x0bpeakGroupId\x12%\n\x0eobtained_stars\x18\n\x20\x01(\rR\robta\
+    inedStars\x12<\n\x11wait_confirm_data\x18\x0b\x20\x01(\x0b2\x10.WaitConf\
+    irmDataR\x0fwaitConfirmData\x12*\n\x11disable_hard_mode\x18\x0c\x20\x01(\
+    \x08R\x0fdisableHardMode\x12$\n\x05peaks\x18\r\x20\x03(\x0b2\x0e.Challen\
+    gePeakR\x05peaks\x12/\n\tpeak_boss\x18\x0e\x20\x01(\x0b2\x12.ChallengePe\
+    akBossR\x08peakBoss\x12$\n\x0ecount_of_peaks\x18\x0f\x20\x01(\rR\x0ccoun\
+    tOfPeaksb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

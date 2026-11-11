@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                104 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                96 => {
+                112 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for GetDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
         }
         if self.is_taken_reward != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GetDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(13, self.avatar_id)?;
         }
         if self.is_taken_reward != false {
-            os.write_bool(12, self.is_taken_reward)?;
+            os.write_bool(14, self.is_taken_reward)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for GetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GetDataScRsp.proto\"m\n\x0cGetDataScRsp\x12\x18\n\x07retcode\x18\
-    \x05\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08\
-    avatarId\x12&\n\x0fis_taken_reward\x18\x0c\x20\x01(\x08R\risTakenRewardb\
+    \x0b\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\r\x20\x01(\rR\x08av\
+    atarId\x12&\n\x0fis_taken_reward\x18\x0e\x20\x01(\x08R\risTakenRewardb\
     \x06proto3\
 ";
 

@@ -72,7 +72,7 @@ impl ::protobuf::Message for ECLKNNECNFK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.MCPIKEHDMND)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ECLKNNECNFK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.MCPIKEHDMND.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ECLKNNECNFK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ECLKNNECNFK.proto\x1a\x11PPGEBEBPMJC.proto\"=\n\x0bECLKNNECNFK\x12\
-    .\n\x0bMCPIKEHDMND\x18\n\x20\x01(\x0b2\x0c.PPGEBEBPMJCR\x0bMCPIKEHDMNDb\
-    \x06proto3\
+    .\n\x0bMCPIKEHDMND\x18\x0b\x20\x01(\x0b2\x0c.PPGEBEBPMJCR\x0bMCPIKEHDMND\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

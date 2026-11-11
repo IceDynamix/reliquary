@@ -48,1575 +48,7 @@ impl RogueBuffDropReq {
         ::std::default::Default::default()
     }
 
-    // .DEMENEAAGAA DFKJOGGFDHD = 51;
-
-    pub fn DFKJOGGFDHD(&self) -> &super::DEMENEAAGAA::DEMENEAAGAA {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v)) => v,
-            _ => <super::DEMENEAAGAA::DEMENEAAGAA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_DFKJOGGFDHD(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_DFKJOGGFDHD(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_DFKJOGGFDHD(&mut self, v: super::DEMENEAAGAA::DEMENEAAGAA) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_DFKJOGGFDHD(&mut self) -> &mut super::DEMENEAAGAA::DEMENEAAGAA {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(super::DEMENEAAGAA::DEMENEAAGAA::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_DFKJOGGFDHD(&mut self) -> super::DEMENEAAGAA::DEMENEAAGAA {
-        if self.has_DFKJOGGFDHD() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::DEMENEAAGAA::DEMENEAAGAA::new()
-        }
-    }
-
-    // .AHNLMMFHOME EGIIEHODAEJ = 66;
-
-    pub fn EGIIEHODAEJ(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v)) => v,
-            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_EGIIEHODAEJ(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_EGIIEHODAEJ(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EGIIEHODAEJ(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_EGIIEHODAEJ(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(super::AHNLMMFHOME::AHNLMMFHOME::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_EGIIEHODAEJ(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
-        if self.has_EGIIEHODAEJ() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AHNLMMFHOME::AHNLMMFHOME::new()
-        }
-    }
-
-    // .EKIFAOJKOCL LOGMGHBMHPE = 225;
-
-    pub fn LOGMGHBMHPE(&self) -> &super::EKIFAOJKOCL::EKIFAOJKOCL {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v)) => v,
-            _ => <super::EKIFAOJKOCL::EKIFAOJKOCL as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LOGMGHBMHPE(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_LOGMGHBMHPE(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LOGMGHBMHPE(&mut self, v: super::EKIFAOJKOCL::EKIFAOJKOCL) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LOGMGHBMHPE(&mut self) -> &mut super::EKIFAOJKOCL::EKIFAOJKOCL {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(super::EKIFAOJKOCL::EKIFAOJKOCL::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LOGMGHBMHPE(&mut self) -> super::EKIFAOJKOCL::EKIFAOJKOCL {
-        if self.has_LOGMGHBMHPE() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EKIFAOJKOCL::EKIFAOJKOCL::new()
-        }
-    }
-
-    // .PJMEDBOACGL HDNGLMGCHEK = 238;
-
-    pub fn HDNGLMGCHEK(&self) -> &super::PJMEDBOACGL::PJMEDBOACGL {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v)) => v,
-            _ => <super::PJMEDBOACGL::PJMEDBOACGL as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_HDNGLMGCHEK(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_HDNGLMGCHEK(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HDNGLMGCHEK(&mut self, v: super::PJMEDBOACGL::PJMEDBOACGL) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_HDNGLMGCHEK(&mut self) -> &mut super::PJMEDBOACGL::PJMEDBOACGL {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(super::PJMEDBOACGL::PJMEDBOACGL::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_HDNGLMGCHEK(&mut self) -> super::PJMEDBOACGL::PJMEDBOACGL {
-        if self.has_HDNGLMGCHEK() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PJMEDBOACGL::PJMEDBOACGL::new()
-        }
-    }
-
-    // .KIHMNMMJIDL GANJIGMPDNL = 354;
-
-    pub fn GANJIGMPDNL(&self) -> &super::KIHMNMMJIDL::KIHMNMMJIDL {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v)) => v,
-            _ => <super::KIHMNMMJIDL::KIHMNMMJIDL as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_GANJIGMPDNL(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_GANJIGMPDNL(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GANJIGMPDNL(&mut self, v: super::KIHMNMMJIDL::KIHMNMMJIDL) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_GANJIGMPDNL(&mut self) -> &mut super::KIHMNMMJIDL::KIHMNMMJIDL {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(super::KIHMNMMJIDL::KIHMNMMJIDL::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_GANJIGMPDNL(&mut self) -> super::KIHMNMMJIDL::KIHMNMMJIDL {
-        if self.has_GANJIGMPDNL() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::KIHMNMMJIDL::KIHMNMMJIDL::new()
-        }
-    }
-
-    // .AHNLMMFHOME AHKBAEIMCNM = 357;
-
-    pub fn AHKBAEIMCNM(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(ref v)) => v,
-            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_AHKBAEIMCNM(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_AHKBAEIMCNM(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AHKBAEIMCNM(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_AHKBAEIMCNM(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(super::AHNLMMFHOME::AHNLMMFHOME::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_AHKBAEIMCNM(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
-        if self.has_AHKBAEIMCNM() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AHNLMMFHOME::AHNLMMFHOME::new()
-        }
-    }
-
-    // .CIBMBDDOGBH GFILIMKPCDM = 394;
-
-    pub fn GFILIMKPCDM(&self) -> &super::CIBMBDDOGBH::CIBMBDDOGBH {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v)) => v,
-            _ => <super::CIBMBDDOGBH::CIBMBDDOGBH as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_GFILIMKPCDM(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_GFILIMKPCDM(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GFILIMKPCDM(&mut self, v: super::CIBMBDDOGBH::CIBMBDDOGBH) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_GFILIMKPCDM(&mut self) -> &mut super::CIBMBDDOGBH::CIBMBDDOGBH {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(super::CIBMBDDOGBH::CIBMBDDOGBH::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_GFILIMKPCDM(&mut self) -> super::CIBMBDDOGBH::CIBMBDDOGBH {
-        if self.has_GFILIMKPCDM() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CIBMBDDOGBH::CIBMBDDOGBH::new()
-        }
-    }
-
-    // .BAFNNCHIALG KFMELLMNDGG = 433;
-
-    pub fn KFMELLMNDGG(&self) -> &super::BAFNNCHIALG::BAFNNCHIALG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v)) => v,
-            _ => <super::BAFNNCHIALG::BAFNNCHIALG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_KFMELLMNDGG(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_KFMELLMNDGG(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_KFMELLMNDGG(&mut self, v: super::BAFNNCHIALG::BAFNNCHIALG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_KFMELLMNDGG(&mut self) -> &mut super::BAFNNCHIALG::BAFNNCHIALG {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(super::BAFNNCHIALG::BAFNNCHIALG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_KFMELLMNDGG(&mut self) -> super::BAFNNCHIALG::BAFNNCHIALG {
-        if self.has_KFMELLMNDGG() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BAFNNCHIALG::BAFNNCHIALG::new()
-        }
-    }
-
-    // .GDIKLACNOEJ CFCBJDKKCMB = 530;
-
-    pub fn CFCBJDKKCMB(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v)) => v,
-            _ => <super::GDIKLACNOEJ::GDIKLACNOEJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_CFCBJDKKCMB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_CFCBJDKKCMB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CFCBJDKKCMB(&mut self, v: super::GDIKLACNOEJ::GDIKLACNOEJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_CFCBJDKKCMB(&mut self) -> &mut super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(super::GDIKLACNOEJ::GDIKLACNOEJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_CFCBJDKKCMB(&mut self) -> super::GDIKLACNOEJ::GDIKLACNOEJ {
-        if self.has_CFCBJDKKCMB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GDIKLACNOEJ::GDIKLACNOEJ::new()
-        }
-    }
-
-    // .IGODPKFLDNE NBCHIIFMCNC = 826;
-
-    pub fn NBCHIIFMCNC(&self) -> &super::IGODPKFLDNE::IGODPKFLDNE {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v)) => v,
-            _ => <super::IGODPKFLDNE::IGODPKFLDNE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NBCHIIFMCNC(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_NBCHIIFMCNC(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NBCHIIFMCNC(&mut self, v: super::IGODPKFLDNE::IGODPKFLDNE) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NBCHIIFMCNC(&mut self) -> &mut super::IGODPKFLDNE::IGODPKFLDNE {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(super::IGODPKFLDNE::IGODPKFLDNE::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NBCHIIFMCNC(&mut self) -> super::IGODPKFLDNE::IGODPKFLDNE {
-        if self.has_NBCHIIFMCNC() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::IGODPKFLDNE::IGODPKFLDNE::new()
-        }
-    }
-
-    // .JKLLLNDHJHI GCBFCJIHNFC = 844;
-
-    pub fn GCBFCJIHNFC(&self) -> &super::JKLLLNDHJHI::JKLLLNDHJHI {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref v)) => v,
-            _ => <super::JKLLLNDHJHI::JKLLLNDHJHI as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_GCBFCJIHNFC(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_GCBFCJIHNFC(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_GCBFCJIHNFC(&mut self, v: super::JKLLLNDHJHI::JKLLLNDHJHI) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_GCBFCJIHNFC(&mut self) -> &mut super::JKLLLNDHJHI::JKLLLNDHJHI {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(super::JKLLLNDHJHI::JKLLLNDHJHI::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_GCBFCJIHNFC(&mut self) -> super::JKLLLNDHJHI::JKLLLNDHJHI {
-        if self.has_GCBFCJIHNFC() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JKLLLNDHJHI::JKLLLNDHJHI::new()
-        }
-    }
-
-    // .NMMLEBEEJLB HKNPLHMLINB = 862;
-
-    pub fn HKNPLHMLINB(&self) -> &super::NMMLEBEEJLB::NMMLEBEEJLB {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v)) => v,
-            _ => <super::NMMLEBEEJLB::NMMLEBEEJLB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_HKNPLHMLINB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_HKNPLHMLINB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HKNPLHMLINB(&mut self, v: super::NMMLEBEEJLB::NMMLEBEEJLB) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_HKNPLHMLINB(&mut self) -> &mut super::NMMLEBEEJLB::NMMLEBEEJLB {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(super::NMMLEBEEJLB::NMMLEBEEJLB::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_HKNPLHMLINB(&mut self) -> super::NMMLEBEEJLB::NMMLEBEEJLB {
-        if self.has_HKNPLHMLINB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::NMMLEBEEJLB::NMMLEBEEJLB::new()
-        }
-    }
-
-    // .GJIHIMKICLG LJJNMMGJGNA = 865;
-
-    pub fn LJJNMMGJGNA(&self) -> &super::GJIHIMKICLG::GJIHIMKICLG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v)) => v,
-            _ => <super::GJIHIMKICLG::GJIHIMKICLG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LJJNMMGJGNA(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_LJJNMMGJGNA(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LJJNMMGJGNA(&mut self, v: super::GJIHIMKICLG::GJIHIMKICLG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LJJNMMGJGNA(&mut self) -> &mut super::GJIHIMKICLG::GJIHIMKICLG {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(super::GJIHIMKICLG::GJIHIMKICLG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LJJNMMGJGNA(&mut self) -> super::GJIHIMKICLG::GJIHIMKICLG {
-        if self.has_LJJNMMGJGNA() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::GJIHIMKICLG::GJIHIMKICLG::new()
-        }
-    }
-
-    // .PIBOMOCKACA CNGCLILLDJG = 871;
-
-    pub fn CNGCLILLDJG(&self) -> &super::PIBOMOCKACA::PIBOMOCKACA {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v)) => v,
-            _ => <super::PIBOMOCKACA::PIBOMOCKACA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_CNGCLILLDJG(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_CNGCLILLDJG(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CNGCLILLDJG(&mut self, v: super::PIBOMOCKACA::PIBOMOCKACA) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_CNGCLILLDJG(&mut self) -> &mut super::PIBOMOCKACA::PIBOMOCKACA {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(super::PIBOMOCKACA::PIBOMOCKACA::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_CNGCLILLDJG(&mut self) -> super::PIBOMOCKACA::PIBOMOCKACA {
-        if self.has_CNGCLILLDJG() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PIBOMOCKACA::PIBOMOCKACA::new()
-        }
-    }
-
-    // .AOMOENMNCNB EBLALPNFHFM = 894;
-
-    pub fn EBLALPNFHFM(&self) -> &super::AOMOENMNCNB::AOMOENMNCNB {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v)) => v,
-            _ => <super::AOMOENMNCNB::AOMOENMNCNB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_EBLALPNFHFM(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_EBLALPNFHFM(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EBLALPNFHFM(&mut self, v: super::AOMOENMNCNB::AOMOENMNCNB) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_EBLALPNFHFM(&mut self) -> &mut super::AOMOENMNCNB::AOMOENMNCNB {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(super::AOMOENMNCNB::AOMOENMNCNB::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_EBLALPNFHFM(&mut self) -> super::AOMOENMNCNB::AOMOENMNCNB {
-        if self.has_EBLALPNFHFM() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AOMOENMNCNB::AOMOENMNCNB::new()
-        }
-    }
-
-    // .BFAMBJHPNGE CAELBFPKNDN = 1005;
-
-    pub fn CAELBFPKNDN(&self) -> &super::BFAMBJHPNGE::BFAMBJHPNGE {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v)) => v,
-            _ => <super::BFAMBJHPNGE::BFAMBJHPNGE as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_CAELBFPKNDN(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_CAELBFPKNDN(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CAELBFPKNDN(&mut self, v: super::BFAMBJHPNGE::BFAMBJHPNGE) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_CAELBFPKNDN(&mut self) -> &mut super::BFAMBJHPNGE::BFAMBJHPNGE {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(super::BFAMBJHPNGE::BFAMBJHPNGE::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_CAELBFPKNDN(&mut self) -> super::BFAMBJHPNGE::BFAMBJHPNGE {
-        if self.has_CAELBFPKNDN() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BFAMBJHPNGE::BFAMBJHPNGE::new()
-        }
-    }
-
-    // .ALMGFDOPLGA OPJONHEBIBG = 1186;
-
-    pub fn OPJONHEBIBG(&self) -> &super::ALMGFDOPLGA::ALMGFDOPLGA {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v)) => v,
-            _ => <super::ALMGFDOPLGA::ALMGFDOPLGA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OPJONHEBIBG(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_OPJONHEBIBG(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OPJONHEBIBG(&mut self, v: super::ALMGFDOPLGA::ALMGFDOPLGA) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OPJONHEBIBG(&mut self) -> &mut super::ALMGFDOPLGA::ALMGFDOPLGA {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(super::ALMGFDOPLGA::ALMGFDOPLGA::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OPJONHEBIBG(&mut self) -> super::ALMGFDOPLGA::ALMGFDOPLGA {
-        if self.has_OPJONHEBIBG() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::ALMGFDOPLGA::ALMGFDOPLGA::new()
-        }
-    }
-
-    // .AHNLMMFHOME NNPLAAIBOGB = 1293;
-
-    pub fn NNPLAAIBOGB(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v)) => v,
-            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NNPLAAIBOGB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_NNPLAAIBOGB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NNPLAAIBOGB(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NNPLAAIBOGB(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(super::AHNLMMFHOME::AHNLMMFHOME::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NNPLAAIBOGB(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
-        if self.has_NNPLAAIBOGB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AHNLMMFHOME::AHNLMMFHOME::new()
-        }
-    }
-
-    // .JINFLJMPPHN JOGGLMMCMFH = 1316;
-
-    pub fn JOGGLMMCMFH(&self) -> &super::JINFLJMPPHN::JINFLJMPPHN {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v)) => v,
-            _ => <super::JINFLJMPPHN::JINFLJMPPHN as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_JOGGLMMCMFH(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_JOGGLMMCMFH(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_JOGGLMMCMFH(&mut self, v: super::JINFLJMPPHN::JINFLJMPPHN) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_JOGGLMMCMFH(&mut self) -> &mut super::JINFLJMPPHN::JINFLJMPPHN {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(super::JINFLJMPPHN::JINFLJMPPHN::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_JOGGLMMCMFH(&mut self) -> super::JINFLJMPPHN::JINFLJMPPHN {
-        if self.has_JOGGLMMCMFH() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JINFLJMPPHN::JINFLJMPPHN::new()
-        }
-    }
-
-    // .OGPOHFPHEOB IACMGHACKDA = 1337;
-
-    pub fn IACMGHACKDA(&self) -> &super::OGPOHFPHEOB::OGPOHFPHEOB {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v)) => v,
-            _ => <super::OGPOHFPHEOB::OGPOHFPHEOB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_IACMGHACKDA(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_IACMGHACKDA(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IACMGHACKDA(&mut self, v: super::OGPOHFPHEOB::OGPOHFPHEOB) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_IACMGHACKDA(&mut self) -> &mut super::OGPOHFPHEOB::OGPOHFPHEOB {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(super::OGPOHFPHEOB::OGPOHFPHEOB::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_IACMGHACKDA(&mut self) -> super::OGPOHFPHEOB::OGPOHFPHEOB {
-        if self.has_IACMGHACKDA() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::OGPOHFPHEOB::OGPOHFPHEOB::new()
-        }
-    }
-
-    // .CLMPCCGCADK AIJHFPCFPDM = 1343;
-
-    pub fn AIJHFPCFPDM(&self) -> &super::CLMPCCGCADK::CLMPCCGCADK {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v)) => v,
-            _ => <super::CLMPCCGCADK::CLMPCCGCADK as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_AIJHFPCFPDM(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_AIJHFPCFPDM(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_AIJHFPCFPDM(&mut self, v: super::CLMPCCGCADK::CLMPCCGCADK) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_AIJHFPCFPDM(&mut self) -> &mut super::CLMPCCGCADK::CLMPCCGCADK {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(super::CLMPCCGCADK::CLMPCCGCADK::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_AIJHFPCFPDM(&mut self) -> super::CLMPCCGCADK::CLMPCCGCADK {
-        if self.has_AIJHFPCFPDM() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CLMPCCGCADK::CLMPCCGCADK::new()
-        }
-    }
-
-    // .IHOFKNBNNLB MNLHCHKLEOG = 1394;
-
-    pub fn MNLHCHKLEOG(&self) -> &super::IHOFKNBNNLB::IHOFKNBNNLB {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v)) => v,
-            _ => <super::IHOFKNBNNLB::IHOFKNBNNLB as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MNLHCHKLEOG(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_MNLHCHKLEOG(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MNLHCHKLEOG(&mut self, v: super::IHOFKNBNNLB::IHOFKNBNNLB) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MNLHCHKLEOG(&mut self) -> &mut super::IHOFKNBNNLB::IHOFKNBNNLB {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(super::IHOFKNBNNLB::IHOFKNBNNLB::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MNLHCHKLEOG(&mut self) -> super::IHOFKNBNNLB::IHOFKNBNNLB {
-        if self.has_MNLHCHKLEOG() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::IHOFKNBNNLB::IHOFKNBNNLB::new()
-        }
-    }
-
-    // .BPLNKHGAILK OPDCGJEKEKP = 1474;
-
-    pub fn OPDCGJEKEKP(&self) -> &super::BPLNKHGAILK::BPLNKHGAILK {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v)) => v,
-            _ => <super::BPLNKHGAILK::BPLNKHGAILK as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OPDCGJEKEKP(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_OPDCGJEKEKP(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OPDCGJEKEKP(&mut self, v: super::BPLNKHGAILK::BPLNKHGAILK) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OPDCGJEKEKP(&mut self) -> &mut super::BPLNKHGAILK::BPLNKHGAILK {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(super::BPLNKHGAILK::BPLNKHGAILK::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OPDCGJEKEKP(&mut self) -> super::BPLNKHGAILK::BPLNKHGAILK {
-        if self.has_OPDCGJEKEKP() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BPLNKHGAILK::BPLNKHGAILK::new()
-        }
-    }
-
-    // .BOHAJCPBBJI NFMAAGNLALA = 1496;
-
-    pub fn NFMAAGNLALA(&self) -> &super::BOHAJCPBBJI::BOHAJCPBBJI {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v)) => v,
-            _ => <super::BOHAJCPBBJI::BOHAJCPBBJI as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NFMAAGNLALA(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_NFMAAGNLALA(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_NFMAAGNLALA(&mut self, v: super::BOHAJCPBBJI::BOHAJCPBBJI) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_NFMAAGNLALA(&mut self) -> &mut super::BOHAJCPBBJI::BOHAJCPBBJI {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(super::BOHAJCPBBJI::BOHAJCPBBJI::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_NFMAAGNLALA(&mut self) -> super::BOHAJCPBBJI::BOHAJCPBBJI {
-        if self.has_NFMAAGNLALA() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BOHAJCPBBJI::BOHAJCPBBJI::new()
-        }
-    }
-
-    // .AEJLPCAIODP ILLBNBMCMPF = 1526;
-
-    pub fn ILLBNBMCMPF(&self) -> &super::AEJLPCAIODP::AEJLPCAIODP {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v)) => v,
-            _ => <super::AEJLPCAIODP::AEJLPCAIODP as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ILLBNBMCMPF(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_ILLBNBMCMPF(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ILLBNBMCMPF(&mut self, v: super::AEJLPCAIODP::AEJLPCAIODP) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ILLBNBMCMPF(&mut self) -> &mut super::AEJLPCAIODP::AEJLPCAIODP {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(super::AEJLPCAIODP::AEJLPCAIODP::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ILLBNBMCMPF(&mut self) -> super::AEJLPCAIODP::AEJLPCAIODP {
-        if self.has_ILLBNBMCMPF() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::AEJLPCAIODP::AEJLPCAIODP::new()
-        }
-    }
-
-    // .KPDALNGIDAG EGOFFKFONDP = 1527;
-
-    pub fn EGOFFKFONDP(&self) -> &super::KPDALNGIDAG::KPDALNGIDAG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v)) => v,
-            _ => <super::KPDALNGIDAG::KPDALNGIDAG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_EGOFFKFONDP(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_EGOFFKFONDP(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EGOFFKFONDP(&mut self, v: super::KPDALNGIDAG::KPDALNGIDAG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_EGOFFKFONDP(&mut self) -> &mut super::KPDALNGIDAG::KPDALNGIDAG {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(super::KPDALNGIDAG::KPDALNGIDAG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_EGOFFKFONDP(&mut self) -> super::KPDALNGIDAG::KPDALNGIDAG {
-        if self.has_EGOFFKFONDP() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::KPDALNGIDAG::KPDALNGIDAG::new()
-        }
-    }
-
-    // .MCFEKKMFEHA LEGOBNMKHCO = 1560;
-
-    pub fn LEGOBNMKHCO(&self) -> &super::MCFEKKMFEHA::MCFEKKMFEHA {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v)) => v,
-            _ => <super::MCFEKKMFEHA::MCFEKKMFEHA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_LEGOBNMKHCO(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_LEGOBNMKHCO(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LEGOBNMKHCO(&mut self, v: super::MCFEKKMFEHA::MCFEKKMFEHA) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_LEGOBNMKHCO(&mut self) -> &mut super::MCFEKKMFEHA::MCFEKKMFEHA {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(super::MCFEKKMFEHA::MCFEKKMFEHA::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_LEGOBNMKHCO(&mut self) -> super::MCFEKKMFEHA::MCFEKKMFEHA {
-        if self.has_LEGOBNMKHCO() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::MCFEKKMFEHA::MCFEKKMFEHA::new()
-        }
-    }
-
-    // .CHEPPLBNOFF BAALMNPNGLO = 1583;
-
-    pub fn BAALMNPNGLO(&self) -> &super::CHEPPLBNOFF::CHEPPLBNOFF {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v)) => v,
-            _ => <super::CHEPPLBNOFF::CHEPPLBNOFF as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_BAALMNPNGLO(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_BAALMNPNGLO(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_BAALMNPNGLO(&mut self, v: super::CHEPPLBNOFF::CHEPPLBNOFF) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_BAALMNPNGLO(&mut self) -> &mut super::CHEPPLBNOFF::CHEPPLBNOFF {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(super::CHEPPLBNOFF::CHEPPLBNOFF::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_BAALMNPNGLO(&mut self) -> super::CHEPPLBNOFF::CHEPPLBNOFF {
-        if self.has_BAALMNPNGLO() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CHEPPLBNOFF::CHEPPLBNOFF::new()
-        }
-    }
-
-    // .CHDPILMCJNP HPBIAGDDEHN = 1693;
-
-    pub fn HPBIAGDDEHN(&self) -> &super::CHDPILMCJNP::CHDPILMCJNP {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(ref v)) => v,
-            _ => <super::CHDPILMCJNP::CHDPILMCJNP as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_HPBIAGDDEHN(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_HPBIAGDDEHN(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_HPBIAGDDEHN(&mut self, v: super::CHDPILMCJNP::CHDPILMCJNP) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_HPBIAGDDEHN(&mut self) -> &mut super::CHDPILMCJNP::CHDPILMCJNP {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(super::CHDPILMCJNP::CHDPILMCJNP::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_HPBIAGDDEHN(&mut self) -> super::CHDPILMCJNP::CHDPILMCJNP {
-        if self.has_HPBIAGDDEHN() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CHDPILMCJNP::CHDPILMCJNP::new()
-        }
-    }
-
-    // .JHBEOHDMHDA CAPLDJMOIPB = 1757;
-
-    pub fn CAPLDJMOIPB(&self) -> &super::JHBEOHDMHDA::JHBEOHDMHDA {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v)) => v,
-            _ => <super::JHBEOHDMHDA::JHBEOHDMHDA as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_CAPLDJMOIPB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_CAPLDJMOIPB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_CAPLDJMOIPB(&mut self, v: super::JHBEOHDMHDA::JHBEOHDMHDA) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_CAPLDJMOIPB(&mut self) -> &mut super::JHBEOHDMHDA::JHBEOHDMHDA {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(super::JHBEOHDMHDA::JHBEOHDMHDA::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_CAPLDJMOIPB(&mut self) -> super::JHBEOHDMHDA::JHBEOHDMHDA {
-        if self.has_CAPLDJMOIPB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::JHBEOHDMHDA::JHBEOHDMHDA::new()
-        }
-    }
-
-    // .PIJDFMAJMFD MLBEKIDDGOD = 1762;
-
-    pub fn MLBEKIDDGOD(&self) -> &super::PIJDFMAJMFD::PIJDFMAJMFD {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref v)) => v,
-            _ => <super::PIJDFMAJMFD::PIJDFMAJMFD as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MLBEKIDDGOD(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_MLBEKIDDGOD(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MLBEKIDDGOD(&mut self, v: super::PIJDFMAJMFD::PIJDFMAJMFD) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MLBEKIDDGOD(&mut self) -> &mut super::PIJDFMAJMFD::PIJDFMAJMFD {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(super::PIJDFMAJMFD::PIJDFMAJMFD::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MLBEKIDDGOD(&mut self) -> super::PIJDFMAJMFD::PIJDFMAJMFD {
-        if self.has_MLBEKIDDGOD() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PIJDFMAJMFD::PIJDFMAJMFD::new()
-        }
-    }
-
-    // .HELGMBBOGMJ EMEFJODMAOI = 1792;
-
-    pub fn EMEFJODMAOI(&self) -> &super::HELGMBBOGMJ::HELGMBBOGMJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref v)) => v,
-            _ => <super::HELGMBBOGMJ::HELGMBBOGMJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_EMEFJODMAOI(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_EMEFJODMAOI(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EMEFJODMAOI(&mut self, v: super::HELGMBBOGMJ::HELGMBBOGMJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_EMEFJODMAOI(&mut self) -> &mut super::HELGMBBOGMJ::HELGMBBOGMJ {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(super::HELGMBBOGMJ::HELGMBBOGMJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_EMEFJODMAOI(&mut self) -> super::HELGMBBOGMJ::HELGMBBOGMJ {
-        if self.has_EMEFJODMAOI() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HELGMBBOGMJ::HELGMBBOGMJ::new()
-        }
-    }
-
-    // .LDFJBLDICPJ OMAKKKMNCJH = 1811;
+    // .LDFJBLDICPJ OMAKKKMNCJH = 30;
 
     pub fn OMAKKKMNCJH(&self) -> &super::LDFJBLDICPJ::LDFJBLDICPJ {
         match self.KKNBOACNCON {
@@ -1665,56 +97,1232 @@ impl RogueBuffDropReq {
         }
     }
 
-    // .APOKGADPHDC CGEHCAIKAPJ = 1939;
+    // .AHNLMMFHOME AHKBAEIMCNM = 83;
 
-    pub fn CGEHCAIKAPJ(&self) -> &super::APOKGADPHDC::APOKGADPHDC {
+    pub fn AHKBAEIMCNM(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref v)) => v,
-            _ => <super::APOKGADPHDC::APOKGADPHDC as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(ref v)) => v,
+            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CGEHCAIKAPJ(&mut self) {
+    pub fn clear_AHKBAEIMCNM(&mut self) {
         self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_CGEHCAIKAPJ(&self) -> bool {
+    pub fn has_AHKBAEIMCNM(&self) -> bool {
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(..)) => true,
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CGEHCAIKAPJ(&mut self, v: super::APOKGADPHDC::APOKGADPHDC) {
-        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(v))
+    pub fn set_AHKBAEIMCNM(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CGEHCAIKAPJ(&mut self) -> &mut super::APOKGADPHDC::APOKGADPHDC {
-        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(_)) = self.KKNBOACNCON {
+    pub fn mut_AHKBAEIMCNM(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(_)) = self.KKNBOACNCON {
         } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(super::APOKGADPHDC::APOKGADPHDC::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(super::AHNLMMFHOME::AHNLMMFHOME::new()));
         }
         match self.KKNBOACNCON {
-            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref mut v)) => v,
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CGEHCAIKAPJ(&mut self) -> super::APOKGADPHDC::APOKGADPHDC {
-        if self.has_CGEHCAIKAPJ() {
+    pub fn take_AHKBAEIMCNM(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
+        if self.has_AHKBAEIMCNM() {
             match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(v)) => v,
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::APOKGADPHDC::APOKGADPHDC::new()
+            super::AHNLMMFHOME::AHNLMMFHOME::new()
         }
     }
 
-    // .JEKGAINCPNH HFMOJHNMNJN = 2045;
+    // .JKLLLNDHJHI GCBFCJIHNFC = 158;
+
+    pub fn GCBFCJIHNFC(&self) -> &super::JKLLLNDHJHI::JKLLLNDHJHI {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref v)) => v,
+            _ => <super::JKLLLNDHJHI::JKLLLNDHJHI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GCBFCJIHNFC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_GCBFCJIHNFC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GCBFCJIHNFC(&mut self, v: super::JKLLLNDHJHI::JKLLLNDHJHI) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GCBFCJIHNFC(&mut self) -> &mut super::JKLLLNDHJHI::JKLLLNDHJHI {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(super::JKLLLNDHJHI::JKLLLNDHJHI::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GCBFCJIHNFC(&mut self) -> super::JKLLLNDHJHI::JKLLLNDHJHI {
+        if self.has_GCBFCJIHNFC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JKLLLNDHJHI::JKLLLNDHJHI::new()
+        }
+    }
+
+    // .CHDPILMCJNP HPBIAGDDEHN = 225;
+
+    pub fn HPBIAGDDEHN(&self) -> &super::CHDPILMCJNP::CHDPILMCJNP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(ref v)) => v,
+            _ => <super::CHDPILMCJNP::CHDPILMCJNP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HPBIAGDDEHN(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_HPBIAGDDEHN(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HPBIAGDDEHN(&mut self, v: super::CHDPILMCJNP::CHDPILMCJNP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HPBIAGDDEHN(&mut self) -> &mut super::CHDPILMCJNP::CHDPILMCJNP {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(super::CHDPILMCJNP::CHDPILMCJNP::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HPBIAGDDEHN(&mut self) -> super::CHDPILMCJNP::CHDPILMCJNP {
+        if self.has_HPBIAGDDEHN() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CHDPILMCJNP::CHDPILMCJNP::new()
+        }
+    }
+
+    // .HELGMBBOGMJ EMEFJODMAOI = 275;
+
+    pub fn EMEFJODMAOI(&self) -> &super::HELGMBBOGMJ::HELGMBBOGMJ {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref v)) => v,
+            _ => <super::HELGMBBOGMJ::HELGMBBOGMJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EMEFJODMAOI(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EMEFJODMAOI(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EMEFJODMAOI(&mut self, v: super::HELGMBBOGMJ::HELGMBBOGMJ) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EMEFJODMAOI(&mut self) -> &mut super::HELGMBBOGMJ::HELGMBBOGMJ {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(super::HELGMBBOGMJ::HELGMBBOGMJ::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EMEFJODMAOI(&mut self) -> super::HELGMBBOGMJ::HELGMBBOGMJ {
+        if self.has_EMEFJODMAOI() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HELGMBBOGMJ::HELGMBBOGMJ::new()
+        }
+    }
+
+    // .PJMEDBOACGL HDNGLMGCHEK = 371;
+
+    pub fn HDNGLMGCHEK(&self) -> &super::PJMEDBOACGL::PJMEDBOACGL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v)) => v,
+            _ => <super::PJMEDBOACGL::PJMEDBOACGL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HDNGLMGCHEK(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_HDNGLMGCHEK(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HDNGLMGCHEK(&mut self, v: super::PJMEDBOACGL::PJMEDBOACGL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HDNGLMGCHEK(&mut self) -> &mut super::PJMEDBOACGL::PJMEDBOACGL {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(super::PJMEDBOACGL::PJMEDBOACGL::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HDNGLMGCHEK(&mut self) -> super::PJMEDBOACGL::PJMEDBOACGL {
+        if self.has_HDNGLMGCHEK() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PJMEDBOACGL::PJMEDBOACGL::new()
+        }
+    }
+
+    // .BAFNNCHIALG KFMELLMNDGG = 397;
+
+    pub fn KFMELLMNDGG(&self) -> &super::BAFNNCHIALG::BAFNNCHIALG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v)) => v,
+            _ => <super::BAFNNCHIALG::BAFNNCHIALG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_KFMELLMNDGG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_KFMELLMNDGG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_KFMELLMNDGG(&mut self, v: super::BAFNNCHIALG::BAFNNCHIALG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_KFMELLMNDGG(&mut self) -> &mut super::BAFNNCHIALG::BAFNNCHIALG {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(super::BAFNNCHIALG::BAFNNCHIALG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_KFMELLMNDGG(&mut self) -> super::BAFNNCHIALG::BAFNNCHIALG {
+        if self.has_KFMELLMNDGG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BAFNNCHIALG::BAFNNCHIALG::new()
+        }
+    }
+
+    // .EKIFAOJKOCL LOGMGHBMHPE = 483;
+
+    pub fn LOGMGHBMHPE(&self) -> &super::EKIFAOJKOCL::EKIFAOJKOCL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v)) => v,
+            _ => <super::EKIFAOJKOCL::EKIFAOJKOCL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LOGMGHBMHPE(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_LOGMGHBMHPE(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LOGMGHBMHPE(&mut self, v: super::EKIFAOJKOCL::EKIFAOJKOCL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LOGMGHBMHPE(&mut self) -> &mut super::EKIFAOJKOCL::EKIFAOJKOCL {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(super::EKIFAOJKOCL::EKIFAOJKOCL::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LOGMGHBMHPE(&mut self) -> super::EKIFAOJKOCL::EKIFAOJKOCL {
+        if self.has_LOGMGHBMHPE() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::EKIFAOJKOCL::EKIFAOJKOCL::new()
+        }
+    }
+
+    // .AOMOENMNCNB EBLALPNFHFM = 485;
+
+    pub fn EBLALPNFHFM(&self) -> &super::AOMOENMNCNB::AOMOENMNCNB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v)) => v,
+            _ => <super::AOMOENMNCNB::AOMOENMNCNB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EBLALPNFHFM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EBLALPNFHFM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EBLALPNFHFM(&mut self, v: super::AOMOENMNCNB::AOMOENMNCNB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EBLALPNFHFM(&mut self) -> &mut super::AOMOENMNCNB::AOMOENMNCNB {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(super::AOMOENMNCNB::AOMOENMNCNB::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EBLALPNFHFM(&mut self) -> super::AOMOENMNCNB::AOMOENMNCNB {
+        if self.has_EBLALPNFHFM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AOMOENMNCNB::AOMOENMNCNB::new()
+        }
+    }
+
+    // .JINFLJMPPHN JOGGLMMCMFH = 520;
+
+    pub fn JOGGLMMCMFH(&self) -> &super::JINFLJMPPHN::JINFLJMPPHN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v)) => v,
+            _ => <super::JINFLJMPPHN::JINFLJMPPHN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_JOGGLMMCMFH(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_JOGGLMMCMFH(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_JOGGLMMCMFH(&mut self, v: super::JINFLJMPPHN::JINFLJMPPHN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_JOGGLMMCMFH(&mut self) -> &mut super::JINFLJMPPHN::JINFLJMPPHN {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(super::JINFLJMPPHN::JINFLJMPPHN::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_JOGGLMMCMFH(&mut self) -> super::JINFLJMPPHN::JINFLJMPPHN {
+        if self.has_JOGGLMMCMFH() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JINFLJMPPHN::JINFLJMPPHN::new()
+        }
+    }
+
+    // .KPDALNGIDAG EGOFFKFONDP = 534;
+
+    pub fn EGOFFKFONDP(&self) -> &super::KPDALNGIDAG::KPDALNGIDAG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v)) => v,
+            _ => <super::KPDALNGIDAG::KPDALNGIDAG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EGOFFKFONDP(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EGOFFKFONDP(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EGOFFKFONDP(&mut self, v: super::KPDALNGIDAG::KPDALNGIDAG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EGOFFKFONDP(&mut self) -> &mut super::KPDALNGIDAG::KPDALNGIDAG {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(super::KPDALNGIDAG::KPDALNGIDAG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EGOFFKFONDP(&mut self) -> super::KPDALNGIDAG::KPDALNGIDAG {
+        if self.has_EGOFFKFONDP() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KPDALNGIDAG::KPDALNGIDAG::new()
+        }
+    }
+
+    // .PIJDFMAJMFD MLBEKIDDGOD = 563;
+
+    pub fn MLBEKIDDGOD(&self) -> &super::PIJDFMAJMFD::PIJDFMAJMFD {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref v)) => v,
+            _ => <super::PIJDFMAJMFD::PIJDFMAJMFD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MLBEKIDDGOD(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_MLBEKIDDGOD(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MLBEKIDDGOD(&mut self, v: super::PIJDFMAJMFD::PIJDFMAJMFD) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MLBEKIDDGOD(&mut self) -> &mut super::PIJDFMAJMFD::PIJDFMAJMFD {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(super::PIJDFMAJMFD::PIJDFMAJMFD::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MLBEKIDDGOD(&mut self) -> super::PIJDFMAJMFD::PIJDFMAJMFD {
+        if self.has_MLBEKIDDGOD() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PIJDFMAJMFD::PIJDFMAJMFD::new()
+        }
+    }
+
+    // .CIBMBDDOGBH GFILIMKPCDM = 674;
+
+    pub fn GFILIMKPCDM(&self) -> &super::CIBMBDDOGBH::CIBMBDDOGBH {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v)) => v,
+            _ => <super::CIBMBDDOGBH::CIBMBDDOGBH as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GFILIMKPCDM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_GFILIMKPCDM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GFILIMKPCDM(&mut self, v: super::CIBMBDDOGBH::CIBMBDDOGBH) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GFILIMKPCDM(&mut self) -> &mut super::CIBMBDDOGBH::CIBMBDDOGBH {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(super::CIBMBDDOGBH::CIBMBDDOGBH::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GFILIMKPCDM(&mut self) -> super::CIBMBDDOGBH::CIBMBDDOGBH {
+        if self.has_GFILIMKPCDM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CIBMBDDOGBH::CIBMBDDOGBH::new()
+        }
+    }
+
+    // .AHNLMMFHOME NNPLAAIBOGB = 764;
+
+    pub fn NNPLAAIBOGB(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v)) => v,
+            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NNPLAAIBOGB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_NNPLAAIBOGB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NNPLAAIBOGB(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NNPLAAIBOGB(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(super::AHNLMMFHOME::AHNLMMFHOME::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NNPLAAIBOGB(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
+        if self.has_NNPLAAIBOGB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AHNLMMFHOME::AHNLMMFHOME::new()
+        }
+    }
+
+    // .JHBEOHDMHDA CAPLDJMOIPB = 811;
+
+    pub fn CAPLDJMOIPB(&self) -> &super::JHBEOHDMHDA::JHBEOHDMHDA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v)) => v,
+            _ => <super::JHBEOHDMHDA::JHBEOHDMHDA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CAPLDJMOIPB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_CAPLDJMOIPB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CAPLDJMOIPB(&mut self, v: super::JHBEOHDMHDA::JHBEOHDMHDA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CAPLDJMOIPB(&mut self) -> &mut super::JHBEOHDMHDA::JHBEOHDMHDA {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(super::JHBEOHDMHDA::JHBEOHDMHDA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CAPLDJMOIPB(&mut self) -> super::JHBEOHDMHDA::JHBEOHDMHDA {
+        if self.has_CAPLDJMOIPB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::JHBEOHDMHDA::JHBEOHDMHDA::new()
+        }
+    }
+
+    // .ALMGFDOPLGA OPJONHEBIBG = 858;
+
+    pub fn OPJONHEBIBG(&self) -> &super::ALMGFDOPLGA::ALMGFDOPLGA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v)) => v,
+            _ => <super::ALMGFDOPLGA::ALMGFDOPLGA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OPJONHEBIBG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_OPJONHEBIBG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OPJONHEBIBG(&mut self, v: super::ALMGFDOPLGA::ALMGFDOPLGA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OPJONHEBIBG(&mut self) -> &mut super::ALMGFDOPLGA::ALMGFDOPLGA {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(super::ALMGFDOPLGA::ALMGFDOPLGA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OPJONHEBIBG(&mut self) -> super::ALMGFDOPLGA::ALMGFDOPLGA {
+        if self.has_OPJONHEBIBG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::ALMGFDOPLGA::ALMGFDOPLGA::new()
+        }
+    }
+
+    // .PIBOMOCKACA CNGCLILLDJG = 863;
+
+    pub fn CNGCLILLDJG(&self) -> &super::PIBOMOCKACA::PIBOMOCKACA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v)) => v,
+            _ => <super::PIBOMOCKACA::PIBOMOCKACA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CNGCLILLDJG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_CNGCLILLDJG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CNGCLILLDJG(&mut self, v: super::PIBOMOCKACA::PIBOMOCKACA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CNGCLILLDJG(&mut self) -> &mut super::PIBOMOCKACA::PIBOMOCKACA {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(super::PIBOMOCKACA::PIBOMOCKACA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CNGCLILLDJG(&mut self) -> super::PIBOMOCKACA::PIBOMOCKACA {
+        if self.has_CNGCLILLDJG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PIBOMOCKACA::PIBOMOCKACA::new()
+        }
+    }
+
+    // .BOHAJCPBBJI NFMAAGNLALA = 871;
+
+    pub fn NFMAAGNLALA(&self) -> &super::BOHAJCPBBJI::BOHAJCPBBJI {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v)) => v,
+            _ => <super::BOHAJCPBBJI::BOHAJCPBBJI as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NFMAAGNLALA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_NFMAAGNLALA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NFMAAGNLALA(&mut self, v: super::BOHAJCPBBJI::BOHAJCPBBJI) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NFMAAGNLALA(&mut self) -> &mut super::BOHAJCPBBJI::BOHAJCPBBJI {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(super::BOHAJCPBBJI::BOHAJCPBBJI::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NFMAAGNLALA(&mut self) -> super::BOHAJCPBBJI::BOHAJCPBBJI {
+        if self.has_NFMAAGNLALA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BOHAJCPBBJI::BOHAJCPBBJI::new()
+        }
+    }
+
+    // .KIHMNMMJIDL GANJIGMPDNL = 992;
+
+    pub fn GANJIGMPDNL(&self) -> &super::KIHMNMMJIDL::KIHMNMMJIDL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v)) => v,
+            _ => <super::KIHMNMMJIDL::KIHMNMMJIDL as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GANJIGMPDNL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_GANJIGMPDNL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GANJIGMPDNL(&mut self, v: super::KIHMNMMJIDL::KIHMNMMJIDL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GANJIGMPDNL(&mut self) -> &mut super::KIHMNMMJIDL::KIHMNMMJIDL {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(super::KIHMNMMJIDL::KIHMNMMJIDL::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GANJIGMPDNL(&mut self) -> super::KIHMNMMJIDL::KIHMNMMJIDL {
+        if self.has_GANJIGMPDNL() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KIHMNMMJIDL::KIHMNMMJIDL::new()
+        }
+    }
+
+    // .AHNLMMFHOME EGIIEHODAEJ = 1004;
+
+    pub fn EGIIEHODAEJ(&self) -> &super::AHNLMMFHOME::AHNLMMFHOME {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v)) => v,
+            _ => <super::AHNLMMFHOME::AHNLMMFHOME as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_EGIIEHODAEJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_EGIIEHODAEJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EGIIEHODAEJ(&mut self, v: super::AHNLMMFHOME::AHNLMMFHOME) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_EGIIEHODAEJ(&mut self) -> &mut super::AHNLMMFHOME::AHNLMMFHOME {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(super::AHNLMMFHOME::AHNLMMFHOME::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_EGIIEHODAEJ(&mut self) -> super::AHNLMMFHOME::AHNLMMFHOME {
+        if self.has_EGIIEHODAEJ() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AHNLMMFHOME::AHNLMMFHOME::new()
+        }
+    }
+
+    // .IHOFKNBNNLB MNLHCHKLEOG = 1019;
+
+    pub fn MNLHCHKLEOG(&self) -> &super::IHOFKNBNNLB::IHOFKNBNNLB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v)) => v,
+            _ => <super::IHOFKNBNNLB::IHOFKNBNNLB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MNLHCHKLEOG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_MNLHCHKLEOG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MNLHCHKLEOG(&mut self, v: super::IHOFKNBNNLB::IHOFKNBNNLB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MNLHCHKLEOG(&mut self) -> &mut super::IHOFKNBNNLB::IHOFKNBNNLB {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(super::IHOFKNBNNLB::IHOFKNBNNLB::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MNLHCHKLEOG(&mut self) -> super::IHOFKNBNNLB::IHOFKNBNNLB {
+        if self.has_MNLHCHKLEOG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IHOFKNBNNLB::IHOFKNBNNLB::new()
+        }
+    }
+
+    // .DEMENEAAGAA DFKJOGGFDHD = 1130;
+
+    pub fn DFKJOGGFDHD(&self) -> &super::DEMENEAAGAA::DEMENEAAGAA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v)) => v,
+            _ => <super::DEMENEAAGAA::DEMENEAAGAA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_DFKJOGGFDHD(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_DFKJOGGFDHD(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_DFKJOGGFDHD(&mut self, v: super::DEMENEAAGAA::DEMENEAAGAA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_DFKJOGGFDHD(&mut self) -> &mut super::DEMENEAAGAA::DEMENEAAGAA {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(super::DEMENEAAGAA::DEMENEAAGAA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_DFKJOGGFDHD(&mut self) -> super::DEMENEAAGAA::DEMENEAAGAA {
+        if self.has_DFKJOGGFDHD() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::DEMENEAAGAA::DEMENEAAGAA::new()
+        }
+    }
+
+    // .AEJLPCAIODP ILLBNBMCMPF = 1224;
+
+    pub fn ILLBNBMCMPF(&self) -> &super::AEJLPCAIODP::AEJLPCAIODP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v)) => v,
+            _ => <super::AEJLPCAIODP::AEJLPCAIODP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ILLBNBMCMPF(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_ILLBNBMCMPF(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ILLBNBMCMPF(&mut self, v: super::AEJLPCAIODP::AEJLPCAIODP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ILLBNBMCMPF(&mut self) -> &mut super::AEJLPCAIODP::AEJLPCAIODP {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(super::AEJLPCAIODP::AEJLPCAIODP::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ILLBNBMCMPF(&mut self) -> super::AEJLPCAIODP::AEJLPCAIODP {
+        if self.has_ILLBNBMCMPF() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AEJLPCAIODP::AEJLPCAIODP::new()
+        }
+    }
+
+    // .BFAMBJHPNGE CAELBFPKNDN = 1255;
+
+    pub fn CAELBFPKNDN(&self) -> &super::BFAMBJHPNGE::BFAMBJHPNGE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v)) => v,
+            _ => <super::BFAMBJHPNGE::BFAMBJHPNGE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CAELBFPKNDN(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_CAELBFPKNDN(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CAELBFPKNDN(&mut self, v: super::BFAMBJHPNGE::BFAMBJHPNGE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CAELBFPKNDN(&mut self) -> &mut super::BFAMBJHPNGE::BFAMBJHPNGE {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(super::BFAMBJHPNGE::BFAMBJHPNGE::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CAELBFPKNDN(&mut self) -> super::BFAMBJHPNGE::BFAMBJHPNGE {
+        if self.has_CAELBFPKNDN() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BFAMBJHPNGE::BFAMBJHPNGE::new()
+        }
+    }
+
+    // .OGPOHFPHEOB IACMGHACKDA = 1335;
+
+    pub fn IACMGHACKDA(&self) -> &super::OGPOHFPHEOB::OGPOHFPHEOB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v)) => v,
+            _ => <super::OGPOHFPHEOB::OGPOHFPHEOB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_IACMGHACKDA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_IACMGHACKDA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_IACMGHACKDA(&mut self, v: super::OGPOHFPHEOB::OGPOHFPHEOB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_IACMGHACKDA(&mut self) -> &mut super::OGPOHFPHEOB::OGPOHFPHEOB {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(super::OGPOHFPHEOB::OGPOHFPHEOB::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_IACMGHACKDA(&mut self) -> super::OGPOHFPHEOB::OGPOHFPHEOB {
+        if self.has_IACMGHACKDA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::OGPOHFPHEOB::OGPOHFPHEOB::new()
+        }
+    }
+
+    // .MCFEKKMFEHA LEGOBNMKHCO = 1337;
+
+    pub fn LEGOBNMKHCO(&self) -> &super::MCFEKKMFEHA::MCFEKKMFEHA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v)) => v,
+            _ => <super::MCFEKKMFEHA::MCFEKKMFEHA as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LEGOBNMKHCO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_LEGOBNMKHCO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LEGOBNMKHCO(&mut self, v: super::MCFEKKMFEHA::MCFEKKMFEHA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LEGOBNMKHCO(&mut self) -> &mut super::MCFEKKMFEHA::MCFEKKMFEHA {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(super::MCFEKKMFEHA::MCFEKKMFEHA::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LEGOBNMKHCO(&mut self) -> super::MCFEKKMFEHA::MCFEKKMFEHA {
+        if self.has_LEGOBNMKHCO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::MCFEKKMFEHA::MCFEKKMFEHA::new()
+        }
+    }
+
+    // .JEKGAINCPNH HFMOJHNMNJN = 1408;
 
     pub fn HFMOJHNMNJN(&self) -> &super::JEKGAINCPNH::JEKGAINCPNH {
         match self.KKNBOACNCON {
@@ -1763,7 +1371,399 @@ impl RogueBuffDropReq {
         }
     }
 
-    // .MHLLNFJHMEK PDAEHMFKEOF = 3217;
+    // .APOKGADPHDC CGEHCAIKAPJ = 1515;
+
+    pub fn CGEHCAIKAPJ(&self) -> &super::APOKGADPHDC::APOKGADPHDC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref v)) => v,
+            _ => <super::APOKGADPHDC::APOKGADPHDC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CGEHCAIKAPJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_CGEHCAIKAPJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CGEHCAIKAPJ(&mut self, v: super::APOKGADPHDC::APOKGADPHDC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CGEHCAIKAPJ(&mut self) -> &mut super::APOKGADPHDC::APOKGADPHDC {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(super::APOKGADPHDC::APOKGADPHDC::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CGEHCAIKAPJ(&mut self) -> super::APOKGADPHDC::APOKGADPHDC {
+        if self.has_CGEHCAIKAPJ() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::APOKGADPHDC::APOKGADPHDC::new()
+        }
+    }
+
+    // .GJIHIMKICLG LJJNMMGJGNA = 1534;
+
+    pub fn LJJNMMGJGNA(&self) -> &super::GJIHIMKICLG::GJIHIMKICLG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v)) => v,
+            _ => <super::GJIHIMKICLG::GJIHIMKICLG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_LJJNMMGJGNA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_LJJNMMGJGNA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LJJNMMGJGNA(&mut self, v: super::GJIHIMKICLG::GJIHIMKICLG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_LJJNMMGJGNA(&mut self) -> &mut super::GJIHIMKICLG::GJIHIMKICLG {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(super::GJIHIMKICLG::GJIHIMKICLG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_LJJNMMGJGNA(&mut self) -> super::GJIHIMKICLG::GJIHIMKICLG {
+        if self.has_LJJNMMGJGNA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GJIHIMKICLG::GJIHIMKICLG::new()
+        }
+    }
+
+    // .NMMLEBEEJLB HKNPLHMLINB = 1568;
+
+    pub fn HKNPLHMLINB(&self) -> &super::NMMLEBEEJLB::NMMLEBEEJLB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v)) => v,
+            _ => <super::NMMLEBEEJLB::NMMLEBEEJLB as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_HKNPLHMLINB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_HKNPLHMLINB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_HKNPLHMLINB(&mut self, v: super::NMMLEBEEJLB::NMMLEBEEJLB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_HKNPLHMLINB(&mut self) -> &mut super::NMMLEBEEJLB::NMMLEBEEJLB {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(super::NMMLEBEEJLB::NMMLEBEEJLB::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_HKNPLHMLINB(&mut self) -> super::NMMLEBEEJLB::NMMLEBEEJLB {
+        if self.has_HKNPLHMLINB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NMMLEBEEJLB::NMMLEBEEJLB::new()
+        }
+    }
+
+    // .CHEPPLBNOFF BAALMNPNGLO = 1733;
+
+    pub fn BAALMNPNGLO(&self) -> &super::CHEPPLBNOFF::CHEPPLBNOFF {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v)) => v,
+            _ => <super::CHEPPLBNOFF::CHEPPLBNOFF as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BAALMNPNGLO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_BAALMNPNGLO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BAALMNPNGLO(&mut self, v: super::CHEPPLBNOFF::CHEPPLBNOFF) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BAALMNPNGLO(&mut self) -> &mut super::CHEPPLBNOFF::CHEPPLBNOFF {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(super::CHEPPLBNOFF::CHEPPLBNOFF::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BAALMNPNGLO(&mut self) -> super::CHEPPLBNOFF::CHEPPLBNOFF {
+        if self.has_BAALMNPNGLO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CHEPPLBNOFF::CHEPPLBNOFF::new()
+        }
+    }
+
+    // .IGODPKFLDNE NBCHIIFMCNC = 1962;
+
+    pub fn NBCHIIFMCNC(&self) -> &super::IGODPKFLDNE::IGODPKFLDNE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v)) => v,
+            _ => <super::IGODPKFLDNE::IGODPKFLDNE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_NBCHIIFMCNC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_NBCHIIFMCNC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_NBCHIIFMCNC(&mut self, v: super::IGODPKFLDNE::IGODPKFLDNE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_NBCHIIFMCNC(&mut self) -> &mut super::IGODPKFLDNE::IGODPKFLDNE {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(super::IGODPKFLDNE::IGODPKFLDNE::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_NBCHIIFMCNC(&mut self) -> super::IGODPKFLDNE::IGODPKFLDNE {
+        if self.has_NBCHIIFMCNC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::IGODPKFLDNE::IGODPKFLDNE::new()
+        }
+    }
+
+    // .CLMPCCGCADK AIJHFPCFPDM = 1982;
+
+    pub fn AIJHFPCFPDM(&self) -> &super::CLMPCCGCADK::CLMPCCGCADK {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v)) => v,
+            _ => <super::CLMPCCGCADK::CLMPCCGCADK as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_AIJHFPCFPDM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_AIJHFPCFPDM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_AIJHFPCFPDM(&mut self, v: super::CLMPCCGCADK::CLMPCCGCADK) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_AIJHFPCFPDM(&mut self) -> &mut super::CLMPCCGCADK::CLMPCCGCADK {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(super::CLMPCCGCADK::CLMPCCGCADK::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_AIJHFPCFPDM(&mut self) -> super::CLMPCCGCADK::CLMPCCGCADK {
+        if self.has_AIJHFPCFPDM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CLMPCCGCADK::CLMPCCGCADK::new()
+        }
+    }
+
+    // .GDIKLACNOEJ CFCBJDKKCMB = 2040;
+
+    pub fn CFCBJDKKCMB(&self) -> &super::GDIKLACNOEJ::GDIKLACNOEJ {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v)) => v,
+            _ => <super::GDIKLACNOEJ::GDIKLACNOEJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_CFCBJDKKCMB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_CFCBJDKKCMB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_CFCBJDKKCMB(&mut self, v: super::GDIKLACNOEJ::GDIKLACNOEJ) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_CFCBJDKKCMB(&mut self) -> &mut super::GDIKLACNOEJ::GDIKLACNOEJ {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(super::GDIKLACNOEJ::GDIKLACNOEJ::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_CFCBJDKKCMB(&mut self) -> super::GDIKLACNOEJ::GDIKLACNOEJ {
+        if self.has_CFCBJDKKCMB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::GDIKLACNOEJ::GDIKLACNOEJ::new()
+        }
+    }
+
+    // .BPLNKHGAILK OPDCGJEKEKP = 2043;
+
+    pub fn OPDCGJEKEKP(&self) -> &super::BPLNKHGAILK::BPLNKHGAILK {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v)) => v,
+            _ => <super::BPLNKHGAILK::BPLNKHGAILK as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OPDCGJEKEKP(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_OPDCGJEKEKP(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OPDCGJEKEKP(&mut self, v: super::BPLNKHGAILK::BPLNKHGAILK) {
+        self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OPDCGJEKEKP(&mut self) -> &mut super::BPLNKHGAILK::BPLNKHGAILK {
+        if let ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(super::BPLNKHGAILK::BPLNKHGAILK::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OPDCGJEKEKP(&mut self) -> super::BPLNKHGAILK::BPLNKHGAILK {
+        if self.has_OPDCGJEKEKP() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BPLNKHGAILK::BPLNKHGAILK::new()
+        }
+    }
+
+    // .MHLLNFJHMEK PDAEHMFKEOF = 182500;
 
     pub fn PDAEHMFKEOF(&self) -> &super::MHLLNFJHMEK::MHLLNFJHMEK {
         match self.KKNBOACNCON {
@@ -1812,7 +1812,7 @@ impl RogueBuffDropReq {
         }
     }
 
-    // .EBOLNPIMDAL FNGLOCNBCOJ = 144409;
+    // .EBOLNPIMDAL FNGLOCNBCOJ = 257517;
 
     pub fn FNGLOCNBCOJ(&self) -> &super::EBOLNPIMDAL::EBOLNPIMDAL {
         match self.KKNBOACNCON {
@@ -1869,19 +1869,54 @@ impl RogueBuffDropReq {
             |m: &RogueBuffDropReq| { &m.BFNEPPCNOOI },
             |m: &mut RogueBuffDropReq| { &mut m.BFNEPPCNOOI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DEMENEAAGAA::DEMENEAAGAA>(
-            "DFKJOGGFDHD",
-            RogueBuffDropReq::has_DFKJOGGFDHD,
-            RogueBuffDropReq::DFKJOGGFDHD,
-            RogueBuffDropReq::mut_DFKJOGGFDHD,
-            RogueBuffDropReq::set_DFKJOGGFDHD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDFJBLDICPJ::LDFJBLDICPJ>(
+            "OMAKKKMNCJH",
+            RogueBuffDropReq::has_OMAKKKMNCJH,
+            RogueBuffDropReq::OMAKKKMNCJH,
+            RogueBuffDropReq::mut_OMAKKKMNCJH,
+            RogueBuffDropReq::set_OMAKKKMNCJH,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHNLMMFHOME::AHNLMMFHOME>(
-            "EGIIEHODAEJ",
-            RogueBuffDropReq::has_EGIIEHODAEJ,
-            RogueBuffDropReq::EGIIEHODAEJ,
-            RogueBuffDropReq::mut_EGIIEHODAEJ,
-            RogueBuffDropReq::set_EGIIEHODAEJ,
+            "AHKBAEIMCNM",
+            RogueBuffDropReq::has_AHKBAEIMCNM,
+            RogueBuffDropReq::AHKBAEIMCNM,
+            RogueBuffDropReq::mut_AHKBAEIMCNM,
+            RogueBuffDropReq::set_AHKBAEIMCNM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JKLLLNDHJHI::JKLLLNDHJHI>(
+            "GCBFCJIHNFC",
+            RogueBuffDropReq::has_GCBFCJIHNFC,
+            RogueBuffDropReq::GCBFCJIHNFC,
+            RogueBuffDropReq::mut_GCBFCJIHNFC,
+            RogueBuffDropReq::set_GCBFCJIHNFC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHDPILMCJNP::CHDPILMCJNP>(
+            "HPBIAGDDEHN",
+            RogueBuffDropReq::has_HPBIAGDDEHN,
+            RogueBuffDropReq::HPBIAGDDEHN,
+            RogueBuffDropReq::mut_HPBIAGDDEHN,
+            RogueBuffDropReq::set_HPBIAGDDEHN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HELGMBBOGMJ::HELGMBBOGMJ>(
+            "EMEFJODMAOI",
+            RogueBuffDropReq::has_EMEFJODMAOI,
+            RogueBuffDropReq::EMEFJODMAOI,
+            RogueBuffDropReq::mut_EMEFJODMAOI,
+            RogueBuffDropReq::set_EMEFJODMAOI,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PJMEDBOACGL::PJMEDBOACGL>(
+            "HDNGLMGCHEK",
+            RogueBuffDropReq::has_HDNGLMGCHEK,
+            RogueBuffDropReq::HDNGLMGCHEK,
+            RogueBuffDropReq::mut_HDNGLMGCHEK,
+            RogueBuffDropReq::set_HDNGLMGCHEK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BAFNNCHIALG::BAFNNCHIALG>(
+            "KFMELLMNDGG",
+            RogueBuffDropReq::has_KFMELLMNDGG,
+            RogueBuffDropReq::KFMELLMNDGG,
+            RogueBuffDropReq::mut_KFMELLMNDGG,
+            RogueBuffDropReq::set_KFMELLMNDGG,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EKIFAOJKOCL::EKIFAOJKOCL>(
             "LOGMGHBMHPE",
@@ -1890,12 +1925,75 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::mut_LOGMGHBMHPE,
             RogueBuffDropReq::set_LOGMGHBMHPE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PJMEDBOACGL::PJMEDBOACGL>(
-            "HDNGLMGCHEK",
-            RogueBuffDropReq::has_HDNGLMGCHEK,
-            RogueBuffDropReq::HDNGLMGCHEK,
-            RogueBuffDropReq::mut_HDNGLMGCHEK,
-            RogueBuffDropReq::set_HDNGLMGCHEK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AOMOENMNCNB::AOMOENMNCNB>(
+            "EBLALPNFHFM",
+            RogueBuffDropReq::has_EBLALPNFHFM,
+            RogueBuffDropReq::EBLALPNFHFM,
+            RogueBuffDropReq::mut_EBLALPNFHFM,
+            RogueBuffDropReq::set_EBLALPNFHFM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JINFLJMPPHN::JINFLJMPPHN>(
+            "JOGGLMMCMFH",
+            RogueBuffDropReq::has_JOGGLMMCMFH,
+            RogueBuffDropReq::JOGGLMMCMFH,
+            RogueBuffDropReq::mut_JOGGLMMCMFH,
+            RogueBuffDropReq::set_JOGGLMMCMFH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KPDALNGIDAG::KPDALNGIDAG>(
+            "EGOFFKFONDP",
+            RogueBuffDropReq::has_EGOFFKFONDP,
+            RogueBuffDropReq::EGOFFKFONDP,
+            RogueBuffDropReq::mut_EGOFFKFONDP,
+            RogueBuffDropReq::set_EGOFFKFONDP,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIJDFMAJMFD::PIJDFMAJMFD>(
+            "MLBEKIDDGOD",
+            RogueBuffDropReq::has_MLBEKIDDGOD,
+            RogueBuffDropReq::MLBEKIDDGOD,
+            RogueBuffDropReq::mut_MLBEKIDDGOD,
+            RogueBuffDropReq::set_MLBEKIDDGOD,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CIBMBDDOGBH::CIBMBDDOGBH>(
+            "GFILIMKPCDM",
+            RogueBuffDropReq::has_GFILIMKPCDM,
+            RogueBuffDropReq::GFILIMKPCDM,
+            RogueBuffDropReq::mut_GFILIMKPCDM,
+            RogueBuffDropReq::set_GFILIMKPCDM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHNLMMFHOME::AHNLMMFHOME>(
+            "NNPLAAIBOGB",
+            RogueBuffDropReq::has_NNPLAAIBOGB,
+            RogueBuffDropReq::NNPLAAIBOGB,
+            RogueBuffDropReq::mut_NNPLAAIBOGB,
+            RogueBuffDropReq::set_NNPLAAIBOGB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JHBEOHDMHDA::JHBEOHDMHDA>(
+            "CAPLDJMOIPB",
+            RogueBuffDropReq::has_CAPLDJMOIPB,
+            RogueBuffDropReq::CAPLDJMOIPB,
+            RogueBuffDropReq::mut_CAPLDJMOIPB,
+            RogueBuffDropReq::set_CAPLDJMOIPB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ALMGFDOPLGA::ALMGFDOPLGA>(
+            "OPJONHEBIBG",
+            RogueBuffDropReq::has_OPJONHEBIBG,
+            RogueBuffDropReq::OPJONHEBIBG,
+            RogueBuffDropReq::mut_OPJONHEBIBG,
+            RogueBuffDropReq::set_OPJONHEBIBG,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIBOMOCKACA::PIBOMOCKACA>(
+            "CNGCLILLDJG",
+            RogueBuffDropReq::has_CNGCLILLDJG,
+            RogueBuffDropReq::CNGCLILLDJG,
+            RogueBuffDropReq::mut_CNGCLILLDJG,
+            RogueBuffDropReq::set_CNGCLILLDJG,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BOHAJCPBBJI::BOHAJCPBBJI>(
+            "NFMAAGNLALA",
+            RogueBuffDropReq::has_NFMAAGNLALA,
+            RogueBuffDropReq::NFMAAGNLALA,
+            RogueBuffDropReq::mut_NFMAAGNLALA,
+            RogueBuffDropReq::set_NFMAAGNLALA,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KIHMNMMJIDL::KIHMNMMJIDL>(
             "GANJIGMPDNL",
@@ -1905,116 +2003,11 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::set_GANJIGMPDNL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHNLMMFHOME::AHNLMMFHOME>(
-            "AHKBAEIMCNM",
-            RogueBuffDropReq::has_AHKBAEIMCNM,
-            RogueBuffDropReq::AHKBAEIMCNM,
-            RogueBuffDropReq::mut_AHKBAEIMCNM,
-            RogueBuffDropReq::set_AHKBAEIMCNM,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CIBMBDDOGBH::CIBMBDDOGBH>(
-            "GFILIMKPCDM",
-            RogueBuffDropReq::has_GFILIMKPCDM,
-            RogueBuffDropReq::GFILIMKPCDM,
-            RogueBuffDropReq::mut_GFILIMKPCDM,
-            RogueBuffDropReq::set_GFILIMKPCDM,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BAFNNCHIALG::BAFNNCHIALG>(
-            "KFMELLMNDGG",
-            RogueBuffDropReq::has_KFMELLMNDGG,
-            RogueBuffDropReq::KFMELLMNDGG,
-            RogueBuffDropReq::mut_KFMELLMNDGG,
-            RogueBuffDropReq::set_KFMELLMNDGG,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GDIKLACNOEJ::GDIKLACNOEJ>(
-            "CFCBJDKKCMB",
-            RogueBuffDropReq::has_CFCBJDKKCMB,
-            RogueBuffDropReq::CFCBJDKKCMB,
-            RogueBuffDropReq::mut_CFCBJDKKCMB,
-            RogueBuffDropReq::set_CFCBJDKKCMB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGODPKFLDNE::IGODPKFLDNE>(
-            "NBCHIIFMCNC",
-            RogueBuffDropReq::has_NBCHIIFMCNC,
-            RogueBuffDropReq::NBCHIIFMCNC,
-            RogueBuffDropReq::mut_NBCHIIFMCNC,
-            RogueBuffDropReq::set_NBCHIIFMCNC,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JKLLLNDHJHI::JKLLLNDHJHI>(
-            "GCBFCJIHNFC",
-            RogueBuffDropReq::has_GCBFCJIHNFC,
-            RogueBuffDropReq::GCBFCJIHNFC,
-            RogueBuffDropReq::mut_GCBFCJIHNFC,
-            RogueBuffDropReq::set_GCBFCJIHNFC,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NMMLEBEEJLB::NMMLEBEEJLB>(
-            "HKNPLHMLINB",
-            RogueBuffDropReq::has_HKNPLHMLINB,
-            RogueBuffDropReq::HKNPLHMLINB,
-            RogueBuffDropReq::mut_HKNPLHMLINB,
-            RogueBuffDropReq::set_HKNPLHMLINB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJIHIMKICLG::GJIHIMKICLG>(
-            "LJJNMMGJGNA",
-            RogueBuffDropReq::has_LJJNMMGJGNA,
-            RogueBuffDropReq::LJJNMMGJGNA,
-            RogueBuffDropReq::mut_LJJNMMGJGNA,
-            RogueBuffDropReq::set_LJJNMMGJGNA,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIBOMOCKACA::PIBOMOCKACA>(
-            "CNGCLILLDJG",
-            RogueBuffDropReq::has_CNGCLILLDJG,
-            RogueBuffDropReq::CNGCLILLDJG,
-            RogueBuffDropReq::mut_CNGCLILLDJG,
-            RogueBuffDropReq::set_CNGCLILLDJG,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AOMOENMNCNB::AOMOENMNCNB>(
-            "EBLALPNFHFM",
-            RogueBuffDropReq::has_EBLALPNFHFM,
-            RogueBuffDropReq::EBLALPNFHFM,
-            RogueBuffDropReq::mut_EBLALPNFHFM,
-            RogueBuffDropReq::set_EBLALPNFHFM,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFAMBJHPNGE::BFAMBJHPNGE>(
-            "CAELBFPKNDN",
-            RogueBuffDropReq::has_CAELBFPKNDN,
-            RogueBuffDropReq::CAELBFPKNDN,
-            RogueBuffDropReq::mut_CAELBFPKNDN,
-            RogueBuffDropReq::set_CAELBFPKNDN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ALMGFDOPLGA::ALMGFDOPLGA>(
-            "OPJONHEBIBG",
-            RogueBuffDropReq::has_OPJONHEBIBG,
-            RogueBuffDropReq::OPJONHEBIBG,
-            RogueBuffDropReq::mut_OPJONHEBIBG,
-            RogueBuffDropReq::set_OPJONHEBIBG,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AHNLMMFHOME::AHNLMMFHOME>(
-            "NNPLAAIBOGB",
-            RogueBuffDropReq::has_NNPLAAIBOGB,
-            RogueBuffDropReq::NNPLAAIBOGB,
-            RogueBuffDropReq::mut_NNPLAAIBOGB,
-            RogueBuffDropReq::set_NNPLAAIBOGB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JINFLJMPPHN::JINFLJMPPHN>(
-            "JOGGLMMCMFH",
-            RogueBuffDropReq::has_JOGGLMMCMFH,
-            RogueBuffDropReq::JOGGLMMCMFH,
-            RogueBuffDropReq::mut_JOGGLMMCMFH,
-            RogueBuffDropReq::set_JOGGLMMCMFH,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGPOHFPHEOB::OGPOHFPHEOB>(
-            "IACMGHACKDA",
-            RogueBuffDropReq::has_IACMGHACKDA,
-            RogueBuffDropReq::IACMGHACKDA,
-            RogueBuffDropReq::mut_IACMGHACKDA,
-            RogueBuffDropReq::set_IACMGHACKDA,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CLMPCCGCADK::CLMPCCGCADK>(
-            "AIJHFPCFPDM",
-            RogueBuffDropReq::has_AIJHFPCFPDM,
-            RogueBuffDropReq::AIJHFPCFPDM,
-            RogueBuffDropReq::mut_AIJHFPCFPDM,
-            RogueBuffDropReq::set_AIJHFPCFPDM,
+            "EGIIEHODAEJ",
+            RogueBuffDropReq::has_EGIIEHODAEJ,
+            RogueBuffDropReq::EGIIEHODAEJ,
+            RogueBuffDropReq::mut_EGIIEHODAEJ,
+            RogueBuffDropReq::set_EGIIEHODAEJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IHOFKNBNNLB::IHOFKNBNNLB>(
             "MNLHCHKLEOG",
@@ -2023,19 +2016,12 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::mut_MNLHCHKLEOG,
             RogueBuffDropReq::set_MNLHCHKLEOG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BPLNKHGAILK::BPLNKHGAILK>(
-            "OPDCGJEKEKP",
-            RogueBuffDropReq::has_OPDCGJEKEKP,
-            RogueBuffDropReq::OPDCGJEKEKP,
-            RogueBuffDropReq::mut_OPDCGJEKEKP,
-            RogueBuffDropReq::set_OPDCGJEKEKP,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BOHAJCPBBJI::BOHAJCPBBJI>(
-            "NFMAAGNLALA",
-            RogueBuffDropReq::has_NFMAAGNLALA,
-            RogueBuffDropReq::NFMAAGNLALA,
-            RogueBuffDropReq::mut_NFMAAGNLALA,
-            RogueBuffDropReq::set_NFMAAGNLALA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DEMENEAAGAA::DEMENEAAGAA>(
+            "DFKJOGGFDHD",
+            RogueBuffDropReq::has_DFKJOGGFDHD,
+            RogueBuffDropReq::DFKJOGGFDHD,
+            RogueBuffDropReq::mut_DFKJOGGFDHD,
+            RogueBuffDropReq::set_DFKJOGGFDHD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AEJLPCAIODP::AEJLPCAIODP>(
             "ILLBNBMCMPF",
@@ -2044,12 +2030,19 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::mut_ILLBNBMCMPF,
             RogueBuffDropReq::set_ILLBNBMCMPF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KPDALNGIDAG::KPDALNGIDAG>(
-            "EGOFFKFONDP",
-            RogueBuffDropReq::has_EGOFFKFONDP,
-            RogueBuffDropReq::EGOFFKFONDP,
-            RogueBuffDropReq::mut_EGOFFKFONDP,
-            RogueBuffDropReq::set_EGOFFKFONDP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFAMBJHPNGE::BFAMBJHPNGE>(
+            "CAELBFPKNDN",
+            RogueBuffDropReq::has_CAELBFPKNDN,
+            RogueBuffDropReq::CAELBFPKNDN,
+            RogueBuffDropReq::mut_CAELBFPKNDN,
+            RogueBuffDropReq::set_CAELBFPKNDN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGPOHFPHEOB::OGPOHFPHEOB>(
+            "IACMGHACKDA",
+            RogueBuffDropReq::has_IACMGHACKDA,
+            RogueBuffDropReq::IACMGHACKDA,
+            RogueBuffDropReq::mut_IACMGHACKDA,
+            RogueBuffDropReq::set_IACMGHACKDA,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCFEKKMFEHA::MCFEKKMFEHA>(
             "LEGOBNMKHCO",
@@ -2058,47 +2051,12 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::mut_LEGOBNMKHCO,
             RogueBuffDropReq::set_LEGOBNMKHCO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHEPPLBNOFF::CHEPPLBNOFF>(
-            "BAALMNPNGLO",
-            RogueBuffDropReq::has_BAALMNPNGLO,
-            RogueBuffDropReq::BAALMNPNGLO,
-            RogueBuffDropReq::mut_BAALMNPNGLO,
-            RogueBuffDropReq::set_BAALMNPNGLO,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHDPILMCJNP::CHDPILMCJNP>(
-            "HPBIAGDDEHN",
-            RogueBuffDropReq::has_HPBIAGDDEHN,
-            RogueBuffDropReq::HPBIAGDDEHN,
-            RogueBuffDropReq::mut_HPBIAGDDEHN,
-            RogueBuffDropReq::set_HPBIAGDDEHN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JHBEOHDMHDA::JHBEOHDMHDA>(
-            "CAPLDJMOIPB",
-            RogueBuffDropReq::has_CAPLDJMOIPB,
-            RogueBuffDropReq::CAPLDJMOIPB,
-            RogueBuffDropReq::mut_CAPLDJMOIPB,
-            RogueBuffDropReq::set_CAPLDJMOIPB,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PIJDFMAJMFD::PIJDFMAJMFD>(
-            "MLBEKIDDGOD",
-            RogueBuffDropReq::has_MLBEKIDDGOD,
-            RogueBuffDropReq::MLBEKIDDGOD,
-            RogueBuffDropReq::mut_MLBEKIDDGOD,
-            RogueBuffDropReq::set_MLBEKIDDGOD,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HELGMBBOGMJ::HELGMBBOGMJ>(
-            "EMEFJODMAOI",
-            RogueBuffDropReq::has_EMEFJODMAOI,
-            RogueBuffDropReq::EMEFJODMAOI,
-            RogueBuffDropReq::mut_EMEFJODMAOI,
-            RogueBuffDropReq::set_EMEFJODMAOI,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LDFJBLDICPJ::LDFJBLDICPJ>(
-            "OMAKKKMNCJH",
-            RogueBuffDropReq::has_OMAKKKMNCJH,
-            RogueBuffDropReq::OMAKKKMNCJH,
-            RogueBuffDropReq::mut_OMAKKKMNCJH,
-            RogueBuffDropReq::set_OMAKKKMNCJH,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JEKGAINCPNH::JEKGAINCPNH>(
+            "HFMOJHNMNJN",
+            RogueBuffDropReq::has_HFMOJHNMNJN,
+            RogueBuffDropReq::HFMOJHNMNJN,
+            RogueBuffDropReq::mut_HFMOJHNMNJN,
+            RogueBuffDropReq::set_HFMOJHNMNJN,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APOKGADPHDC::APOKGADPHDC>(
             "CGEHCAIKAPJ",
@@ -2107,12 +2065,54 @@ impl RogueBuffDropReq {
             RogueBuffDropReq::mut_CGEHCAIKAPJ,
             RogueBuffDropReq::set_CGEHCAIKAPJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JEKGAINCPNH::JEKGAINCPNH>(
-            "HFMOJHNMNJN",
-            RogueBuffDropReq::has_HFMOJHNMNJN,
-            RogueBuffDropReq::HFMOJHNMNJN,
-            RogueBuffDropReq::mut_HFMOJHNMNJN,
-            RogueBuffDropReq::set_HFMOJHNMNJN,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJIHIMKICLG::GJIHIMKICLG>(
+            "LJJNMMGJGNA",
+            RogueBuffDropReq::has_LJJNMMGJGNA,
+            RogueBuffDropReq::LJJNMMGJGNA,
+            RogueBuffDropReq::mut_LJJNMMGJGNA,
+            RogueBuffDropReq::set_LJJNMMGJGNA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NMMLEBEEJLB::NMMLEBEEJLB>(
+            "HKNPLHMLINB",
+            RogueBuffDropReq::has_HKNPLHMLINB,
+            RogueBuffDropReq::HKNPLHMLINB,
+            RogueBuffDropReq::mut_HKNPLHMLINB,
+            RogueBuffDropReq::set_HKNPLHMLINB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHEPPLBNOFF::CHEPPLBNOFF>(
+            "BAALMNPNGLO",
+            RogueBuffDropReq::has_BAALMNPNGLO,
+            RogueBuffDropReq::BAALMNPNGLO,
+            RogueBuffDropReq::mut_BAALMNPNGLO,
+            RogueBuffDropReq::set_BAALMNPNGLO,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGODPKFLDNE::IGODPKFLDNE>(
+            "NBCHIIFMCNC",
+            RogueBuffDropReq::has_NBCHIIFMCNC,
+            RogueBuffDropReq::NBCHIIFMCNC,
+            RogueBuffDropReq::mut_NBCHIIFMCNC,
+            RogueBuffDropReq::set_NBCHIIFMCNC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CLMPCCGCADK::CLMPCCGCADK>(
+            "AIJHFPCFPDM",
+            RogueBuffDropReq::has_AIJHFPCFPDM,
+            RogueBuffDropReq::AIJHFPCFPDM,
+            RogueBuffDropReq::mut_AIJHFPCFPDM,
+            RogueBuffDropReq::set_AIJHFPCFPDM,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GDIKLACNOEJ::GDIKLACNOEJ>(
+            "CFCBJDKKCMB",
+            RogueBuffDropReq::has_CFCBJDKKCMB,
+            RogueBuffDropReq::CFCBJDKKCMB,
+            RogueBuffDropReq::mut_CFCBJDKKCMB,
+            RogueBuffDropReq::set_CFCBJDKKCMB,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BPLNKHGAILK::BPLNKHGAILK>(
+            "OPDCGJEKEKP",
+            RogueBuffDropReq::has_OPDCGJEKEKP,
+            RogueBuffDropReq::OPDCGJEKEKP,
+            RogueBuffDropReq::mut_OPDCGJEKEKP,
+            RogueBuffDropReq::set_OPDCGJEKEKP,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MHLLNFJHMEK::MHLLNFJHMEK>(
             "PDAEHMFKEOF",
@@ -2147,118 +2147,118 @@ impl ::protobuf::Message for RogueBuffDropReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                80 => {
                     self.BFNEPPCNOOI = is.read_uint32()?;
                 },
-                410 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(is.read_message()?));
-                },
-                530 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(is.read_message()?));
-                },
-                1802 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(is.read_message()?));
-                },
-                1906 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(is.read_message()?));
-                },
-                2834 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(is.read_message()?));
-                },
-                2858 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(is.read_message()?));
-                },
-                3154 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(is.read_message()?));
-                },
-                3466 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(is.read_message()?));
-                },
-                4242 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(is.read_message()?));
-                },
-                6610 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(is.read_message()?));
-                },
-                6754 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(is.read_message()?));
-                },
-                6898 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(is.read_message()?));
-                },
-                6922 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(is.read_message()?));
-                },
-                6970 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(is.read_message()?));
-                },
-                7154 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(is.read_message()?));
-                },
-                8042 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(is.read_message()?));
-                },
-                9490 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(is.read_message()?));
-                },
-                10346 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(is.read_message()?));
-                },
-                10530 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(is.read_message()?));
-                },
-                10698 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(is.read_message()?));
-                },
-                10746 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(is.read_message()?));
-                },
-                11154 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(is.read_message()?));
-                },
-                11794 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(is.read_message()?));
-                },
-                11970 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(is.read_message()?));
-                },
-                12210 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(is.read_message()?));
-                },
-                12218 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(is.read_message()?));
-                },
-                12482 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(is.read_message()?));
-                },
-                12666 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(is.read_message()?));
-                },
-                13546 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(is.read_message()?));
-                },
-                14058 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(is.read_message()?));
-                },
-                14098 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(is.read_message()?));
-                },
-                14338 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(is.read_message()?));
-                },
-                14490 => {
+                242 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OMAKKKMNCJH(is.read_message()?));
                 },
-                15514 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(is.read_message()?));
+                666 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(is.read_message()?));
                 },
-                16362 => {
+                1266 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(is.read_message()?));
+                },
+                1802 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(is.read_message()?));
+                },
+                2202 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(is.read_message()?));
+                },
+                2970 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(is.read_message()?));
+                },
+                3178 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(is.read_message()?));
+                },
+                3866 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(is.read_message()?));
+                },
+                3882 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(is.read_message()?));
+                },
+                4162 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(is.read_message()?));
+                },
+                4274 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(is.read_message()?));
+                },
+                4506 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(is.read_message()?));
+                },
+                5394 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(is.read_message()?));
+                },
+                6114 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(is.read_message()?));
+                },
+                6490 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(is.read_message()?));
+                },
+                6866 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(is.read_message()?));
+                },
+                6906 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(is.read_message()?));
+                },
+                6970 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(is.read_message()?));
+                },
+                7938 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(is.read_message()?));
+                },
+                8034 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(is.read_message()?));
+                },
+                8154 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(is.read_message()?));
+                },
+                9042 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(is.read_message()?));
+                },
+                9794 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(is.read_message()?));
+                },
+                10042 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(is.read_message()?));
+                },
+                10682 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(is.read_message()?));
+                },
+                10698 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(is.read_message()?));
+                },
+                11266 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HFMOJHNMNJN(is.read_message()?));
                 },
-                25738 => {
+                12122 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(is.read_message()?));
+                },
+                12274 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(is.read_message()?));
+                },
+                12546 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(is.read_message()?));
+                },
+                13866 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(is.read_message()?));
+                },
+                15698 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(is.read_message()?));
+                },
+                15858 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(is.read_message()?));
+                },
+                16322 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(is.read_message()?));
+                },
+                16346 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(is.read_message()?));
+                },
+                1460002 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::PDAEHMFKEOF(is.read_message()?));
                 },
-                1155274 => {
+                2060138 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(rogue_buff_drop_req::KKNBOACNCON::FNGLOCNBCOJ(is.read_message()?));
                 },
                 tag => {
@@ -2274,27 +2274,11 @@ impl ::protobuf::Message for RogueBuffDropReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFNEPPCNOOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BFNEPPCNOOI);
+            my_size += ::protobuf::rt::uint32_size(10, self.BFNEPPCNOOI);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v) => {
+                &rogue_buff_drop_req::KKNBOACNCON::OMAKKKMNCJH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2302,91 +2286,7 @@ impl ::protobuf::Message for RogueBuffDropReq {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2394,7 +2294,31 @@ impl ::protobuf::Message for RogueBuffDropReq {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v) => {
+                &rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2402,11 +2326,63 @@ impl ::protobuf::Message for RogueBuffDropReq {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref v) => {
+                &rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::OMAKKKMNCJH(ref v) => {
+                &rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::HFMOJHNMNJN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2414,7 +2390,31 @@ impl ::protobuf::Message for RogueBuffDropReq {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::HFMOJHNMNJN(ref v) => {
+                &rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2435,120 +2435,120 @@ impl ::protobuf::Message for RogueBuffDropReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFNEPPCNOOI != 0 {
-            os.write_uint32(5, self.BFNEPPCNOOI)?;
+            os.write_uint32(10, self.BFNEPPCNOOI)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(51, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(66, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(225, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(238, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(354, v, os)?;
+                &rogue_buff_drop_req::KKNBOACNCON::OMAKKKMNCJH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(30, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::AHKBAEIMCNM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(357, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(394, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(433, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(530, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(826, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(83, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::GCBFCJIHNFC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(844, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(862, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(865, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(871, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(894, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1005, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1186, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1293, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1316, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1337, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1343, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1394, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1474, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1496, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1526, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1527, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1560, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1583, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(158, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::HPBIAGDDEHN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1693, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1757, v, os)?;
-                },
-                &rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1762, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(225, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::EMEFJODMAOI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1792, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(275, v, os)?;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::OMAKKKMNCJH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1811, v, os)?;
+                &rogue_buff_drop_req::KKNBOACNCON::HDNGLMGCHEK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(371, v, os)?;
                 },
-                &rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1939, v, os)?;
+                &rogue_buff_drop_req::KKNBOACNCON::KFMELLMNDGG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(397, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::LOGMGHBMHPE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(483, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EBLALPNFHFM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(485, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::JOGGLMMCMFH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(520, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EGOFFKFONDP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(534, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::MLBEKIDDGOD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(563, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::GFILIMKPCDM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(674, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::NNPLAAIBOGB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(764, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CAPLDJMOIPB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(811, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::OPJONHEBIBG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(858, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CNGCLILLDJG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(863, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::NFMAAGNLALA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(871, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::GANJIGMPDNL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(992, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::EGIIEHODAEJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1004, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::MNLHCHKLEOG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1019, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::DFKJOGGFDHD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1130, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::ILLBNBMCMPF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1224, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CAELBFPKNDN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1255, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::IACMGHACKDA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1335, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::LEGOBNMKHCO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1337, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::HFMOJHNMNJN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2045, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1408, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CGEHCAIKAPJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1515, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::LJJNMMGJGNA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1534, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::HKNPLHMLINB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1568, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::BAALMNPNGLO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::NBCHIIFMCNC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1962, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::AIJHFPCFPDM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1982, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::CFCBJDKKCMB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2040, v, os)?;
+                },
+                &rogue_buff_drop_req::KKNBOACNCON::OPDCGJEKEKP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2043, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::PDAEHMFKEOF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3217, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(182500, v, os)?;
                 },
                 &rogue_buff_drop_req::KKNBOACNCON::FNGLOCNBCOJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(144409, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(257517, v, os)?;
                 },
             };
         }
@@ -2644,76 +2644,76 @@ pub mod rogue_buff_drop_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:RogueBuffDropReq.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.DFKJOGGFDHD)
-        DFKJOGGFDHD(super::super::DEMENEAAGAA::DEMENEAAGAA),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EGIIEHODAEJ)
-        EGIIEHODAEJ(super::super::AHNLMMFHOME::AHNLMMFHOME),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LOGMGHBMHPE)
-        LOGMGHBMHPE(super::super::EKIFAOJKOCL::EKIFAOJKOCL),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HDNGLMGCHEK)
-        HDNGLMGCHEK(super::super::PJMEDBOACGL::PJMEDBOACGL),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GANJIGMPDNL)
-        GANJIGMPDNL(super::super::KIHMNMMJIDL::KIHMNMMJIDL),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.AHKBAEIMCNM)
-        AHKBAEIMCNM(super::super::AHNLMMFHOME::AHNLMMFHOME),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GFILIMKPCDM)
-        GFILIMKPCDM(super::super::CIBMBDDOGBH::CIBMBDDOGBH),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.KFMELLMNDGG)
-        KFMELLMNDGG(super::super::BAFNNCHIALG::BAFNNCHIALG),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CFCBJDKKCMB)
-        CFCBJDKKCMB(super::super::GDIKLACNOEJ::GDIKLACNOEJ),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NBCHIIFMCNC)
-        NBCHIIFMCNC(super::super::IGODPKFLDNE::IGODPKFLDNE),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GCBFCJIHNFC)
-        GCBFCJIHNFC(super::super::JKLLLNDHJHI::JKLLLNDHJHI),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HKNPLHMLINB)
-        HKNPLHMLINB(super::super::NMMLEBEEJLB::NMMLEBEEJLB),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LJJNMMGJGNA)
-        LJJNMMGJGNA(super::super::GJIHIMKICLG::GJIHIMKICLG),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CNGCLILLDJG)
-        CNGCLILLDJG(super::super::PIBOMOCKACA::PIBOMOCKACA),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EBLALPNFHFM)
-        EBLALPNFHFM(super::super::AOMOENMNCNB::AOMOENMNCNB),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CAELBFPKNDN)
-        CAELBFPKNDN(super::super::BFAMBJHPNGE::BFAMBJHPNGE),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.OPJONHEBIBG)
-        OPJONHEBIBG(super::super::ALMGFDOPLGA::ALMGFDOPLGA),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NNPLAAIBOGB)
-        NNPLAAIBOGB(super::super::AHNLMMFHOME::AHNLMMFHOME),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.JOGGLMMCMFH)
-        JOGGLMMCMFH(super::super::JINFLJMPPHN::JINFLJMPPHN),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.IACMGHACKDA)
-        IACMGHACKDA(super::super::OGPOHFPHEOB::OGPOHFPHEOB),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.AIJHFPCFPDM)
-        AIJHFPCFPDM(super::super::CLMPCCGCADK::CLMPCCGCADK),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.MNLHCHKLEOG)
-        MNLHCHKLEOG(super::super::IHOFKNBNNLB::IHOFKNBNNLB),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.OPDCGJEKEKP)
-        OPDCGJEKEKP(super::super::BPLNKHGAILK::BPLNKHGAILK),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NFMAAGNLALA)
-        NFMAAGNLALA(super::super::BOHAJCPBBJI::BOHAJCPBBJI),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.ILLBNBMCMPF)
-        ILLBNBMCMPF(super::super::AEJLPCAIODP::AEJLPCAIODP),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EGOFFKFONDP)
-        EGOFFKFONDP(super::super::KPDALNGIDAG::KPDALNGIDAG),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LEGOBNMKHCO)
-        LEGOBNMKHCO(super::super::MCFEKKMFEHA::MCFEKKMFEHA),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.BAALMNPNGLO)
-        BAALMNPNGLO(super::super::CHEPPLBNOFF::CHEPPLBNOFF),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HPBIAGDDEHN)
-        HPBIAGDDEHN(super::super::CHDPILMCJNP::CHDPILMCJNP),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CAPLDJMOIPB)
-        CAPLDJMOIPB(super::super::JHBEOHDMHDA::JHBEOHDMHDA),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.MLBEKIDDGOD)
-        MLBEKIDDGOD(super::super::PIJDFMAJMFD::PIJDFMAJMFD),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EMEFJODMAOI)
-        EMEFJODMAOI(super::super::HELGMBBOGMJ::HELGMBBOGMJ),
         // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.OMAKKKMNCJH)
         OMAKKKMNCJH(super::super::LDFJBLDICPJ::LDFJBLDICPJ),
-        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CGEHCAIKAPJ)
-        CGEHCAIKAPJ(super::super::APOKGADPHDC::APOKGADPHDC),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.AHKBAEIMCNM)
+        AHKBAEIMCNM(super::super::AHNLMMFHOME::AHNLMMFHOME),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GCBFCJIHNFC)
+        GCBFCJIHNFC(super::super::JKLLLNDHJHI::JKLLLNDHJHI),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HPBIAGDDEHN)
+        HPBIAGDDEHN(super::super::CHDPILMCJNP::CHDPILMCJNP),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EMEFJODMAOI)
+        EMEFJODMAOI(super::super::HELGMBBOGMJ::HELGMBBOGMJ),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HDNGLMGCHEK)
+        HDNGLMGCHEK(super::super::PJMEDBOACGL::PJMEDBOACGL),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.KFMELLMNDGG)
+        KFMELLMNDGG(super::super::BAFNNCHIALG::BAFNNCHIALG),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LOGMGHBMHPE)
+        LOGMGHBMHPE(super::super::EKIFAOJKOCL::EKIFAOJKOCL),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EBLALPNFHFM)
+        EBLALPNFHFM(super::super::AOMOENMNCNB::AOMOENMNCNB),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.JOGGLMMCMFH)
+        JOGGLMMCMFH(super::super::JINFLJMPPHN::JINFLJMPPHN),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EGOFFKFONDP)
+        EGOFFKFONDP(super::super::KPDALNGIDAG::KPDALNGIDAG),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.MLBEKIDDGOD)
+        MLBEKIDDGOD(super::super::PIJDFMAJMFD::PIJDFMAJMFD),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GFILIMKPCDM)
+        GFILIMKPCDM(super::super::CIBMBDDOGBH::CIBMBDDOGBH),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NNPLAAIBOGB)
+        NNPLAAIBOGB(super::super::AHNLMMFHOME::AHNLMMFHOME),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CAPLDJMOIPB)
+        CAPLDJMOIPB(super::super::JHBEOHDMHDA::JHBEOHDMHDA),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.OPJONHEBIBG)
+        OPJONHEBIBG(super::super::ALMGFDOPLGA::ALMGFDOPLGA),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CNGCLILLDJG)
+        CNGCLILLDJG(super::super::PIBOMOCKACA::PIBOMOCKACA),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NFMAAGNLALA)
+        NFMAAGNLALA(super::super::BOHAJCPBBJI::BOHAJCPBBJI),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.GANJIGMPDNL)
+        GANJIGMPDNL(super::super::KIHMNMMJIDL::KIHMNMMJIDL),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.EGIIEHODAEJ)
+        EGIIEHODAEJ(super::super::AHNLMMFHOME::AHNLMMFHOME),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.MNLHCHKLEOG)
+        MNLHCHKLEOG(super::super::IHOFKNBNNLB::IHOFKNBNNLB),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.DFKJOGGFDHD)
+        DFKJOGGFDHD(super::super::DEMENEAAGAA::DEMENEAAGAA),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.ILLBNBMCMPF)
+        ILLBNBMCMPF(super::super::AEJLPCAIODP::AEJLPCAIODP),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CAELBFPKNDN)
+        CAELBFPKNDN(super::super::BFAMBJHPNGE::BFAMBJHPNGE),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.IACMGHACKDA)
+        IACMGHACKDA(super::super::OGPOHFPHEOB::OGPOHFPHEOB),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LEGOBNMKHCO)
+        LEGOBNMKHCO(super::super::MCFEKKMFEHA::MCFEKKMFEHA),
         // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HFMOJHNMNJN)
         HFMOJHNMNJN(super::super::JEKGAINCPNH::JEKGAINCPNH),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CGEHCAIKAPJ)
+        CGEHCAIKAPJ(super::super::APOKGADPHDC::APOKGADPHDC),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.LJJNMMGJGNA)
+        LJJNMMGJGNA(super::super::GJIHIMKICLG::GJIHIMKICLG),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.HKNPLHMLINB)
+        HKNPLHMLINB(super::super::NMMLEBEEJLB::NMMLEBEEJLB),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.BAALMNPNGLO)
+        BAALMNPNGLO(super::super::CHEPPLBNOFF::CHEPPLBNOFF),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.NBCHIIFMCNC)
+        NBCHIIFMCNC(super::super::IGODPKFLDNE::IGODPKFLDNE),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.AIJHFPCFPDM)
+        AIJHFPCFPDM(super::super::CLMPCCGCADK::CLMPCCGCADK),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.CFCBJDKKCMB)
+        CFCBJDKKCMB(super::super::GDIKLACNOEJ::GDIKLACNOEJ),
+        // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.OPDCGJEKEKP)
+        OPDCGJEKEKP(super::super::BPLNKHGAILK::BPLNKHGAILK),
         // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.PDAEHMFKEOF)
         PDAEHMFKEOF(super::super::MHLLNFJHMEK::MHLLNFJHMEK),
         // @@protoc_insertion_point(oneof_field:RogueBuffDropReq.FNGLOCNBCOJ)
@@ -2750,51 +2750,52 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     JHI.proto\x1a\x11KIHMNMMJIDL.proto\x1a\x11KPDALNGIDAG.proto\x1a\x11LDFJB\
     LDICPJ.proto\x1a\x11MCFEKKMFEHA.proto\x1a\x11MHLLNFJHMEK.proto\x1a\x11NM\
     MLEBEEJLB.proto\x1a\x11OGPOHFPHEOB.proto\x1a\x11PIBOMOCKACA.proto\x1a\
-    \x11PIJDFMAJMFD.proto\x1a\x11PJMEDBOACGL.proto\"\xa1\x0f\n\x10RogueBuffD\
-    ropReq\x12\x20\n\x0bBFNEPPCNOOI\x18\x05\x20\x01(\rR\x0bBFNEPPCNOOI\x120\
-    \n\x0bDFKJOGGFDHD\x183\x20\x01(\x0b2\x0c.DEMENEAAGAAH\0R\x0bDFKJOGGFDHD\
-    \x120\n\x0bEGIIEHODAEJ\x18B\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bEGIIEHO\
-    DAEJ\x121\n\x0bLOGMGHBMHPE\x18\xe1\x01\x20\x01(\x0b2\x0c.EKIFAOJKOCLH\0R\
-    \x0bLOGMGHBMHPE\x121\n\x0bHDNGLMGCHEK\x18\xee\x01\x20\x01(\x0b2\x0c.PJME\
-    DBOACGLH\0R\x0bHDNGLMGCHEK\x121\n\x0bGANJIGMPDNL\x18\xe2\x02\x20\x01(\
-    \x0b2\x0c.KIHMNMMJIDLH\0R\x0bGANJIGMPDNL\x121\n\x0bAHKBAEIMCNM\x18\xe5\
-    \x02\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bAHKBAEIMCNM\x121\n\x0bGFILIMKP\
-    CDM\x18\x8a\x03\x20\x01(\x0b2\x0c.CIBMBDDOGBHH\0R\x0bGFILIMKPCDM\x121\n\
-    \x0bKFMELLMNDGG\x18\xb1\x03\x20\x01(\x0b2\x0c.BAFNNCHIALGH\0R\x0bKFMELLM\
-    NDGG\x121\n\x0bCFCBJDKKCMB\x18\x92\x04\x20\x01(\x0b2\x0c.GDIKLACNOEJH\0R\
-    \x0bCFCBJDKKCMB\x121\n\x0bNBCHIIFMCNC\x18\xba\x06\x20\x01(\x0b2\x0c.IGOD\
-    PKFLDNEH\0R\x0bNBCHIIFMCNC\x121\n\x0bGCBFCJIHNFC\x18\xcc\x06\x20\x01(\
-    \x0b2\x0c.JKLLLNDHJHIH\0R\x0bGCBFCJIHNFC\x121\n\x0bHKNPLHMLINB\x18\xde\
-    \x06\x20\x01(\x0b2\x0c.NMMLEBEEJLBH\0R\x0bHKNPLHMLINB\x121\n\x0bLJJNMMGJ\
-    GNA\x18\xe1\x06\x20\x01(\x0b2\x0c.GJIHIMKICLGH\0R\x0bLJJNMMGJGNA\x121\n\
-    \x0bCNGCLILLDJG\x18\xe7\x06\x20\x01(\x0b2\x0c.PIBOMOCKACAH\0R\x0bCNGCLIL\
-    LDJG\x121\n\x0bEBLALPNFHFM\x18\xfe\x06\x20\x01(\x0b2\x0c.AOMOENMNCNBH\0R\
-    \x0bEBLALPNFHFM\x121\n\x0bCAELBFPKNDN\x18\xed\x07\x20\x01(\x0b2\x0c.BFAM\
-    BJHPNGEH\0R\x0bCAELBFPKNDN\x121\n\x0bOPJONHEBIBG\x18\xa2\t\x20\x01(\x0b2\
-    \x0c.ALMGFDOPLGAH\0R\x0bOPJONHEBIBG\x121\n\x0bNNPLAAIBOGB\x18\x8d\n\x20\
-    \x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bNNPLAAIBOGB\x121\n\x0bJOGGLMMCMFH\x18\
-    \xa4\n\x20\x01(\x0b2\x0c.JINFLJMPPHNH\0R\x0bJOGGLMMCMFH\x121\n\x0bIACMGH\
-    ACKDA\x18\xb9\n\x20\x01(\x0b2\x0c.OGPOHFPHEOBH\0R\x0bIACMGHACKDA\x121\n\
-    \x0bAIJHFPCFPDM\x18\xbf\n\x20\x01(\x0b2\x0c.CLMPCCGCADKH\0R\x0bAIJHFPCFP\
-    DM\x121\n\x0bMNLHCHKLEOG\x18\xf2\n\x20\x01(\x0b2\x0c.IHOFKNBNNLBH\0R\x0b\
-    MNLHCHKLEOG\x121\n\x0bOPDCGJEKEKP\x18\xc2\x0b\x20\x01(\x0b2\x0c.BPLNKHGA\
-    ILKH\0R\x0bOPDCGJEKEKP\x121\n\x0bNFMAAGNLALA\x18\xd8\x0b\x20\x01(\x0b2\
-    \x0c.BOHAJCPBBJIH\0R\x0bNFMAAGNLALA\x121\n\x0bILLBNBMCMPF\x18\xf6\x0b\
-    \x20\x01(\x0b2\x0c.AEJLPCAIODPH\0R\x0bILLBNBMCMPF\x121\n\x0bEGOFFKFONDP\
-    \x18\xf7\x0b\x20\x01(\x0b2\x0c.KPDALNGIDAGH\0R\x0bEGOFFKFONDP\x121\n\x0b\
-    LEGOBNMKHCO\x18\x98\x0c\x20\x01(\x0b2\x0c.MCFEKKMFEHAH\0R\x0bLEGOBNMKHCO\
-    \x121\n\x0bBAALMNPNGLO\x18\xaf\x0c\x20\x01(\x0b2\x0c.CHEPPLBNOFFH\0R\x0b\
-    BAALMNPNGLO\x121\n\x0bHPBIAGDDEHN\x18\x9d\r\x20\x01(\x0b2\x0c.CHDPILMCJN\
-    PH\0R\x0bHPBIAGDDEHN\x121\n\x0bCAPLDJMOIPB\x18\xdd\r\x20\x01(\x0b2\x0c.J\
-    HBEOHDMHDAH\0R\x0bCAPLDJMOIPB\x121\n\x0bMLBEKIDDGOD\x18\xe2\r\x20\x01(\
-    \x0b2\x0c.PIJDFMAJMFDH\0R\x0bMLBEKIDDGOD\x121\n\x0bEMEFJODMAOI\x18\x80\
-    \x0e\x20\x01(\x0b2\x0c.HELGMBBOGMJH\0R\x0bEMEFJODMAOI\x121\n\x0bOMAKKKMN\
-    CJH\x18\x93\x0e\x20\x01(\x0b2\x0c.LDFJBLDICPJH\0R\x0bOMAKKKMNCJH\x121\n\
-    \x0bCGEHCAIKAPJ\x18\x93\x0f\x20\x01(\x0b2\x0c.APOKGADPHDCH\0R\x0bCGEHCAI\
-    KAPJ\x121\n\x0bHFMOJHNMNJN\x18\xfd\x0f\x20\x01(\x0b2\x0c.JEKGAINCPNHH\0R\
-    \x0bHFMOJHNMNJN\x121\n\x0bPDAEHMFKEOF\x18\x91\x19\x20\x01(\x0b2\x0c.MHLL\
-    NFJHMEKH\0R\x0bPDAEHMFKEOF\x122\n\x0bFNGLOCNBCOJ\x18\x99\xe8\x08\x20\x01\
-    (\x0b2\x0c.EBOLNPIMDALH\0R\x0bFNGLOCNBCOJB\r\n\x0bKKNBOACNCONb\x06proto3\
+    \x11PIJDFMAJMFD.proto\x1a\x11PJMEDBOACGL.proto\"\xa2\x0f\n\x10RogueBuffD\
+    ropReq\x12\x20\n\x0bBFNEPPCNOOI\x18\n\x20\x01(\rR\x0bBFNEPPCNOOI\x120\n\
+    \x0bOMAKKKMNCJH\x18\x1e\x20\x01(\x0b2\x0c.LDFJBLDICPJH\0R\x0bOMAKKKMNCJH\
+    \x120\n\x0bAHKBAEIMCNM\x18S\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bAHKBAEI\
+    MCNM\x121\n\x0bGCBFCJIHNFC\x18\x9e\x01\x20\x01(\x0b2\x0c.JKLLLNDHJHIH\0R\
+    \x0bGCBFCJIHNFC\x121\n\x0bHPBIAGDDEHN\x18\xe1\x01\x20\x01(\x0b2\x0c.CHDP\
+    ILMCJNPH\0R\x0bHPBIAGDDEHN\x121\n\x0bEMEFJODMAOI\x18\x93\x02\x20\x01(\
+    \x0b2\x0c.HELGMBBOGMJH\0R\x0bEMEFJODMAOI\x121\n\x0bHDNGLMGCHEK\x18\xf3\
+    \x02\x20\x01(\x0b2\x0c.PJMEDBOACGLH\0R\x0bHDNGLMGCHEK\x121\n\x0bKFMELLMN\
+    DGG\x18\x8d\x03\x20\x01(\x0b2\x0c.BAFNNCHIALGH\0R\x0bKFMELLMNDGG\x121\n\
+    \x0bLOGMGHBMHPE\x18\xe3\x03\x20\x01(\x0b2\x0c.EKIFAOJKOCLH\0R\x0bLOGMGHB\
+    MHPE\x121\n\x0bEBLALPNFHFM\x18\xe5\x03\x20\x01(\x0b2\x0c.AOMOENMNCNBH\0R\
+    \x0bEBLALPNFHFM\x121\n\x0bJOGGLMMCMFH\x18\x88\x04\x20\x01(\x0b2\x0c.JINF\
+    LJMPPHNH\0R\x0bJOGGLMMCMFH\x121\n\x0bEGOFFKFONDP\x18\x96\x04\x20\x01(\
+    \x0b2\x0c.KPDALNGIDAGH\0R\x0bEGOFFKFONDP\x121\n\x0bMLBEKIDDGOD\x18\xb3\
+    \x04\x20\x01(\x0b2\x0c.PIJDFMAJMFDH\0R\x0bMLBEKIDDGOD\x121\n\x0bGFILIMKP\
+    CDM\x18\xa2\x05\x20\x01(\x0b2\x0c.CIBMBDDOGBHH\0R\x0bGFILIMKPCDM\x121\n\
+    \x0bNNPLAAIBOGB\x18\xfc\x05\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bNNPLAAI\
+    BOGB\x121\n\x0bCAPLDJMOIPB\x18\xab\x06\x20\x01(\x0b2\x0c.JHBEOHDMHDAH\0R\
+    \x0bCAPLDJMOIPB\x121\n\x0bOPJONHEBIBG\x18\xda\x06\x20\x01(\x0b2\x0c.ALMG\
+    FDOPLGAH\0R\x0bOPJONHEBIBG\x121\n\x0bCNGCLILLDJG\x18\xdf\x06\x20\x01(\
+    \x0b2\x0c.PIBOMOCKACAH\0R\x0bCNGCLILLDJG\x121\n\x0bNFMAAGNLALA\x18\xe7\
+    \x06\x20\x01(\x0b2\x0c.BOHAJCPBBJIH\0R\x0bNFMAAGNLALA\x121\n\x0bGANJIGMP\
+    DNL\x18\xe0\x07\x20\x01(\x0b2\x0c.KIHMNMMJIDLH\0R\x0bGANJIGMPDNL\x121\n\
+    \x0bEGIIEHODAEJ\x18\xec\x07\x20\x01(\x0b2\x0c.AHNLMMFHOMEH\0R\x0bEGIIEHO\
+    DAEJ\x121\n\x0bMNLHCHKLEOG\x18\xfb\x07\x20\x01(\x0b2\x0c.IHOFKNBNNLBH\0R\
+    \x0bMNLHCHKLEOG\x121\n\x0bDFKJOGGFDHD\x18\xea\x08\x20\x01(\x0b2\x0c.DEME\
+    NEAAGAAH\0R\x0bDFKJOGGFDHD\x121\n\x0bILLBNBMCMPF\x18\xc8\t\x20\x01(\x0b2\
+    \x0c.AEJLPCAIODPH\0R\x0bILLBNBMCMPF\x121\n\x0bCAELBFPKNDN\x18\xe7\t\x20\
+    \x01(\x0b2\x0c.BFAMBJHPNGEH\0R\x0bCAELBFPKNDN\x121\n\x0bIACMGHACKDA\x18\
+    \xb7\n\x20\x01(\x0b2\x0c.OGPOHFPHEOBH\0R\x0bIACMGHACKDA\x121\n\x0bLEGOBN\
+    MKHCO\x18\xb9\n\x20\x01(\x0b2\x0c.MCFEKKMFEHAH\0R\x0bLEGOBNMKHCO\x121\n\
+    \x0bHFMOJHNMNJN\x18\x80\x0b\x20\x01(\x0b2\x0c.JEKGAINCPNHH\0R\x0bHFMOJHN\
+    MNJN\x121\n\x0bCGEHCAIKAPJ\x18\xeb\x0b\x20\x01(\x0b2\x0c.APOKGADPHDCH\0R\
+    \x0bCGEHCAIKAPJ\x121\n\x0bLJJNMMGJGNA\x18\xfe\x0b\x20\x01(\x0b2\x0c.GJIH\
+    IMKICLGH\0R\x0bLJJNMMGJGNA\x121\n\x0bHKNPLHMLINB\x18\xa0\x0c\x20\x01(\
+    \x0b2\x0c.NMMLEBEEJLBH\0R\x0bHKNPLHMLINB\x121\n\x0bBAALMNPNGLO\x18\xc5\r\
+    \x20\x01(\x0b2\x0c.CHEPPLBNOFFH\0R\x0bBAALMNPNGLO\x121\n\x0bNBCHIIFMCNC\
+    \x18\xaa\x0f\x20\x01(\x0b2\x0c.IGODPKFLDNEH\0R\x0bNBCHIIFMCNC\x121\n\x0b\
+    AIJHFPCFPDM\x18\xbe\x0f\x20\x01(\x0b2\x0c.CLMPCCGCADKH\0R\x0bAIJHFPCFPDM\
+    \x121\n\x0bCFCBJDKKCMB\x18\xf8\x0f\x20\x01(\x0b2\x0c.GDIKLACNOEJH\0R\x0b\
+    CFCBJDKKCMB\x121\n\x0bOPDCGJEKEKP\x18\xfb\x0f\x20\x01(\x0b2\x0c.BPLNKHGA\
+    ILKH\0R\x0bOPDCGJEKEKP\x122\n\x0bPDAEHMFKEOF\x18\xe4\x91\x0b\x20\x01(\
+    \x0b2\x0c.MHLLNFJHMEKH\0R\x0bPDAEHMFKEOF\x122\n\x0bFNGLOCNBCOJ\x18\xed\
+    \xdb\x0f\x20\x01(\x0b2\x0c.EBOLNPIMDALH\0R\x0bFNGLOCNBCOJB\r\n\x0bKKNBOA\
+    CNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

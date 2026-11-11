@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HipplenCycleResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.FJFJMOGILBM)
-    pub FJFJMOGILBM: ::std::vec::Vec<super::JHBOOCGAKCM::JHBOOCGAKCM>,
     // @@protoc_insertion_point(field:HipplenCycleResultScNotify.IHLCDDOMPKD)
     pub IHLCDDOMPKD: ::std::vec::Vec<super::JHBOOCGAKCM::JHBOOCGAKCM>,
-    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.FCOKODHGEKO)
-    pub FCOKODHGEKO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.BKFICFMMGIN)
-    pub BKFICFMMGIN: u32,
-    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.JFLAEGMBMAK)
-    pub JFLAEGMBMAK: u32,
-    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.H_9f60ad73)
-    pub H_9f60ad73: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HipplenCycleResultScNotify.GNBKDCHLDGL)
     pub GNBKDCHLDGL: ::protobuf::MessageField<super::GEFEDOAOKNO::GEFEDOAOKNO>,
+    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.JFLAEGMBMAK)
+    pub JFLAEGMBMAK: u32,
+    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.BKFICFMMGIN)
+    pub BKFICFMMGIN: u32,
+    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.H_0b0e9102)
+    pub H_0b0e9102: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.FCOKODHGEKO)
+    pub FCOKODHGEKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HipplenCycleResultScNotify.FJFJMOGILBM)
+    pub FJFJMOGILBM: ::std::vec::Vec<super::JHBOOCGAKCM::JHBOOCGAKCM>,
     // special fields
     // @@protoc_insertion_point(special_field:HipplenCycleResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,39 +62,39 @@ impl HipplenCycleResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJFJMOGILBM",
-            |m: &HipplenCycleResultScNotify| { &m.FJFJMOGILBM },
-            |m: &mut HipplenCycleResultScNotify| { &mut m.FJFJMOGILBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IHLCDDOMPKD",
             |m: &HipplenCycleResultScNotify| { &m.IHLCDDOMPKD },
             |m: &mut HipplenCycleResultScNotify| { &mut m.IHLCDDOMPKD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FCOKODHGEKO",
-            |m: &HipplenCycleResultScNotify| { &m.FCOKODHGEKO },
-            |m: &mut HipplenCycleResultScNotify| { &mut m.FCOKODHGEKO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKFICFMMGIN",
-            |m: &HipplenCycleResultScNotify| { &m.BKFICFMMGIN },
-            |m: &mut HipplenCycleResultScNotify| { &mut m.BKFICFMMGIN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEFEDOAOKNO::GEFEDOAOKNO>(
+            "GNBKDCHLDGL",
+            |m: &HipplenCycleResultScNotify| { &m.GNBKDCHLDGL },
+            |m: &mut HipplenCycleResultScNotify| { &mut m.GNBKDCHLDGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JFLAEGMBMAK",
             |m: &HipplenCycleResultScNotify| { &m.JFLAEGMBMAK },
             |m: &mut HipplenCycleResultScNotify| { &mut m.JFLAEGMBMAK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_9f60ad73",
-            |m: &HipplenCycleResultScNotify| { &m.H_9f60ad73 },
-            |m: &mut HipplenCycleResultScNotify| { &mut m.H_9f60ad73 },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BKFICFMMGIN",
+            |m: &HipplenCycleResultScNotify| { &m.BKFICFMMGIN },
+            |m: &mut HipplenCycleResultScNotify| { &mut m.BKFICFMMGIN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEFEDOAOKNO::GEFEDOAOKNO>(
-            "GNBKDCHLDGL",
-            |m: &HipplenCycleResultScNotify| { &m.GNBKDCHLDGL },
-            |m: &mut HipplenCycleResultScNotify| { &mut m.GNBKDCHLDGL },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_0b0e9102",
+            |m: &HipplenCycleResultScNotify| { &m.H_0b0e9102 },
+            |m: &mut HipplenCycleResultScNotify| { &mut m.H_0b0e9102 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FCOKODHGEKO",
+            |m: &HipplenCycleResultScNotify| { &m.FCOKODHGEKO },
+            |m: &mut HipplenCycleResultScNotify| { &mut m.FCOKODHGEKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FJFJMOGILBM",
+            |m: &HipplenCycleResultScNotify| { &m.FJFJMOGILBM },
+            |m: &mut HipplenCycleResultScNotify| { &mut m.FJFJMOGILBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HipplenCycleResultScNotify>(
             "HipplenCycleResultScNotify",
@@ -115,31 +115,31 @@ impl ::protobuf::Message for HipplenCycleResultScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    self.FJFJMOGILBM.push(is.read_message()?);
-                },
-                42 => {
                     self.IHLCDDOMPKD.push(is.read_message()?);
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FCOKODHGEKO)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNBKDCHLDGL)?;
                 },
-                64 => {
-                    self.FCOKODHGEKO.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.BKFICFMMGIN = is.read_uint32()?;
-                },
-                96 => {
+                40 => {
                     self.JFLAEGMBMAK = is.read_uint32()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_9f60ad73)?;
+                48 => {
+                    self.BKFICFMMGIN = is.read_uint32()?;
                 },
-                104 => {
-                    self.H_9f60ad73.push(is.read_uint32()?);
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_0b0e9102)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNBKDCHLDGL)?;
+                56 => {
+                    self.H_0b0e9102.push(is.read_uint32()?);
+                },
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FCOKODHGEKO)?;
+                },
+                80 => {
+                    self.FCOKODHGEKO.push(is.read_uint32()?);
+                },
+                114 => {
+                    self.FJFJMOGILBM.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -153,49 +153,49 @@ impl ::protobuf::Message for HipplenCycleResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FJFJMOGILBM {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.IHLCDDOMPKD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FCOKODHGEKO);
-        if self.BKFICFMMGIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BKFICFMMGIN);
-        }
-        if self.JFLAEGMBMAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.JFLAEGMBMAK);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.H_9f60ad73);
         if let Some(v) = self.GNBKDCHLDGL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.JFLAEGMBMAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JFLAEGMBMAK);
+        }
+        if self.BKFICFMMGIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BKFICFMMGIN);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.H_0b0e9102);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.FCOKODHGEKO);
+        for value in &self.FJFJMOGILBM {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FJFJMOGILBM {
+        for v in &self.IHLCDDOMPKD {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        for v in &self.IHLCDDOMPKD {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        os.write_repeated_packed_uint32(8, &self.FCOKODHGEKO)?;
-        if self.BKFICFMMGIN != 0 {
-            os.write_uint32(11, self.BKFICFMMGIN)?;
+        if let Some(v) = self.GNBKDCHLDGL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.JFLAEGMBMAK != 0 {
-            os.write_uint32(12, self.JFLAEGMBMAK)?;
+            os.write_uint32(5, self.JFLAEGMBMAK)?;
         }
-        os.write_repeated_packed_uint32(13, &self.H_9f60ad73)?;
-        if let Some(v) = self.GNBKDCHLDGL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if self.BKFICFMMGIN != 0 {
+            os.write_uint32(6, self.BKFICFMMGIN)?;
         }
+        os.write_repeated_packed_uint32(7, &self.H_0b0e9102)?;
+        os.write_repeated_packed_uint32(10, &self.FCOKODHGEKO)?;
+        for v in &self.FJFJMOGILBM {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -213,25 +213,25 @@ impl ::protobuf::Message for HipplenCycleResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.FJFJMOGILBM.clear();
         self.IHLCDDOMPKD.clear();
-        self.FCOKODHGEKO.clear();
-        self.BKFICFMMGIN = 0;
-        self.JFLAEGMBMAK = 0;
-        self.H_9f60ad73.clear();
         self.GNBKDCHLDGL.clear();
+        self.JFLAEGMBMAK = 0;
+        self.BKFICFMMGIN = 0;
+        self.H_0b0e9102.clear();
+        self.FCOKODHGEKO.clear();
+        self.FJFJMOGILBM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HipplenCycleResultScNotify {
         static instance: HipplenCycleResultScNotify = HipplenCycleResultScNotify {
-            FJFJMOGILBM: ::std::vec::Vec::new(),
             IHLCDDOMPKD: ::std::vec::Vec::new(),
-            FCOKODHGEKO: ::std::vec::Vec::new(),
-            BKFICFMMGIN: 0,
-            JFLAEGMBMAK: 0,
-            H_9f60ad73: ::std::vec::Vec::new(),
             GNBKDCHLDGL: ::protobuf::MessageField::none(),
+            JFLAEGMBMAK: 0,
+            BKFICFMMGIN: 0,
+            H_0b0e9102: ::std::vec::Vec::new(),
+            FCOKODHGEKO: ::std::vec::Vec::new(),
+            FJFJMOGILBM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,14 +257,14 @@ impl ::protobuf::reflect::ProtobufValue for HipplenCycleResultScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20HipplenCycleResultScNotify.proto\x1a\x11GEFEDOAOKNO.proto\x1a\x11J\
-    HBOOCGAKCM.proto\"\xb1\x02\n\x1aHipplenCycleResultScNotify\x12.\n\x0bFJF\
-    JMOGILBM\x18\x02\x20\x03(\x0b2\x0c.JHBOOCGAKCMR\x0bFJFJMOGILBM\x12.\n\
-    \x0bIHLCDDOMPKD\x18\x05\x20\x03(\x0b2\x0c.JHBOOCGAKCMR\x0bIHLCDDOMPKD\
-    \x12\x20\n\x0bFCOKODHGEKO\x18\x08\x20\x03(\rR\x0bFCOKODHGEKO\x12\x20\n\
-    \x0bBKFICFMMGIN\x18\x0b\x20\x01(\rR\x0bBKFICFMMGIN\x12\x20\n\x0bJFLAEGMB\
-    MAK\x18\x0c\x20\x01(\rR\x0bJFLAEGMBMAK\x12\x1d\n\nH_9f60ad73\x18\r\x20\
-    \x03(\rR\tH9f60ad73\x12.\n\x0bGNBKDCHLDGL\x18\x0f\x20\x01(\x0b2\x0c.GEFE\
-    DOAOKNOR\x0bGNBKDCHLDGLb\x06proto3\
+    HBOOCGAKCM.proto\"\xb1\x02\n\x1aHipplenCycleResultScNotify\x12.\n\x0bIHL\
+    CDDOMPKD\x18\x02\x20\x03(\x0b2\x0c.JHBOOCGAKCMR\x0bIHLCDDOMPKD\x12.\n\
+    \x0bGNBKDCHLDGL\x18\x04\x20\x01(\x0b2\x0c.GEFEDOAOKNOR\x0bGNBKDCHLDGL\
+    \x12\x20\n\x0bJFLAEGMBMAK\x18\x05\x20\x01(\rR\x0bJFLAEGMBMAK\x12\x20\n\
+    \x0bBKFICFMMGIN\x18\x06\x20\x01(\rR\x0bBKFICFMMGIN\x12\x1d\n\nH_0b0e9102\
+    \x18\x07\x20\x03(\rR\tH0b0e9102\x12\x20\n\x0bFCOKODHGEKO\x18\n\x20\x03(\
+    \rR\x0bFCOKODHGEKO\x12.\n\x0bFJFJMOGILBM\x18\x0e\x20\x03(\x0b2\x0c.JHBOO\
+    CGAKCMR\x0bFJFJMOGILBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

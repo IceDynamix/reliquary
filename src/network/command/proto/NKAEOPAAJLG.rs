@@ -70,14 +70,45 @@ impl NKAEOPAAJLG {
         self.BHGKHELCPGO = ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EAGPOCAGMCA(v))
     }
 
+    // uint32 EJIEPKFMIGC = 2;
+
+    pub fn EJIEPKFMIGC(&self) -> u32 {
+        match self.BHGKHELCPGO {
+            ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_EJIEPKFMIGC(&mut self) {
+        self.BHGKHELCPGO = ::std::option::Option::None;
+    }
+
+    pub fn has_EJIEPKFMIGC(&self) -> bool {
+        match self.BHGKHELCPGO {
+            ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EJIEPKFMIGC(&mut self, v: u32) {
+        self.BHGKHELCPGO = ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "EAGPOCAGMCA",
             NKAEOPAAJLG::has_EAGPOCAGMCA,
             NKAEOPAAJLG::EAGPOCAGMCA,
             NKAEOPAAJLG::set_EAGPOCAGMCA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "EJIEPKFMIGC",
+            NKAEOPAAJLG::has_EJIEPKFMIGC,
+            NKAEOPAAJLG::EJIEPKFMIGC,
+            NKAEOPAAJLG::set_EJIEPKFMIGC,
         ));
         oneofs.push(nkaeopaajlg::BHGKHELCPGO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NKAEOPAAJLG>(
@@ -101,6 +132,9 @@ impl ::protobuf::Message for NKAEOPAAJLG {
                 8 => {
                     self.BHGKHELCPGO = ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EAGPOCAGMCA(is.read_uint32()?));
                 },
+                16 => {
+                    self.BHGKHELCPGO = ::std::option::Option::Some(nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(is.read_uint32()?));
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -118,6 +152,9 @@ impl ::protobuf::Message for NKAEOPAAJLG {
                 &nkaeopaajlg::BHGKHELCPGO::EAGPOCAGMCA(v) => {
                     my_size += ::protobuf::rt::uint32_size(1, v);
                 },
+                &nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(v) => {
+                    my_size += ::protobuf::rt::uint32_size(2, v);
+                },
             };
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -130,6 +167,9 @@ impl ::protobuf::Message for NKAEOPAAJLG {
             match v {
                 &nkaeopaajlg::BHGKHELCPGO::EAGPOCAGMCA(v) => {
                     os.write_uint32(1, v)?;
+                },
+                &nkaeopaajlg::BHGKHELCPGO::EJIEPKFMIGC(v) => {
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -150,6 +190,7 @@ impl ::protobuf::Message for NKAEOPAAJLG {
     }
 
     fn clear(&mut self) {
+        self.BHGKHELCPGO = ::std::option::Option::None;
         self.BHGKHELCPGO = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -189,6 +230,8 @@ pub mod nkaeopaajlg {
     pub enum BHGKHELCPGO {
         // @@protoc_insertion_point(oneof_field:NKAEOPAAJLG.EAGPOCAGMCA)
         EAGPOCAGMCA(u32),
+        // @@protoc_insertion_point(oneof_field:NKAEOPAAJLG.EJIEPKFMIGC)
+        EJIEPKFMIGC(u32),
     }
 
     impl ::protobuf::Oneof for BHGKHELCPGO {
@@ -209,8 +252,9 @@ pub mod nkaeopaajlg {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NKAEOPAAJLG.proto\"@\n\x0bNKAEOPAAJLG\x12\"\n\x0bEAGPOCAGMCA\x18\
-    \x01\x20\x01(\rH\0R\x0bEAGPOCAGMCAB\r\n\x0bBHGKHELCPGOb\x06proto3\
+    \n\x11NKAEOPAAJLG.proto\"d\n\x0bNKAEOPAAJLG\x12\"\n\x0bEAGPOCAGMCA\x18\
+    \x01\x20\x01(\rH\0R\x0bEAGPOCAGMCA\x12\"\n\x0bEJIEPKFMIGC\x18\x02\x20\
+    \x01(\rH\0R\x0bEJIEPKFMIGCB\r\n\x0bBHGKHELCPGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

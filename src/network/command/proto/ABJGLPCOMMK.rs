@@ -30,6 +30,8 @@ pub struct ABJGLPCOMMK {
     // message fields
     // @@protoc_insertion_point(field:ABJGLPCOMMK.ENHJCNJFDFI)
     pub ENHJCNJFDFI: u32,
+    // @@protoc_insertion_point(field:ABJGLPCOMMK.IHHNLLAJAGB)
+    pub IHHNLLAJAGB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ABJGLPCOMMK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl ABJGLPCOMMK {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ENHJCNJFDFI",
             |m: &ABJGLPCOMMK| { &m.ENHJCNJFDFI },
             |m: &mut ABJGLPCOMMK| { &mut m.ENHJCNJFDFI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IHHNLLAJAGB",
+            |m: &ABJGLPCOMMK| { &m.IHHNLLAJAGB },
+            |m: &mut ABJGLPCOMMK| { &mut m.IHHNLLAJAGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ABJGLPCOMMK>(
             "ABJGLPCOMMK",
@@ -75,6 +82,9 @@ impl ::protobuf::Message for ABJGLPCOMMK {
                 8 => {
                     self.ENHJCNJFDFI = is.read_uint32()?;
                 },
+                16 => {
+                    self.IHHNLLAJAGB = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -90,6 +100,9 @@ impl ::protobuf::Message for ABJGLPCOMMK {
         if self.ENHJCNJFDFI != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.ENHJCNJFDFI);
         }
+        if self.IHHNLLAJAGB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IHHNLLAJAGB);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -98,6 +111,9 @@ impl ::protobuf::Message for ABJGLPCOMMK {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ENHJCNJFDFI != 0 {
             os.write_uint32(1, self.ENHJCNJFDFI)?;
+        }
+        if self.IHHNLLAJAGB != 0 {
+            os.write_uint32(2, self.IHHNLLAJAGB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +133,14 @@ impl ::protobuf::Message for ABJGLPCOMMK {
 
     fn clear(&mut self) {
         self.ENHJCNJFDFI = 0;
+        self.IHHNLLAJAGB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ABJGLPCOMMK {
         static instance: ABJGLPCOMMK = ABJGLPCOMMK {
             ENHJCNJFDFI: 0,
+            IHHNLLAJAGB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ABJGLPCOMMK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ABJGLPCOMMK.proto\"/\n\x0bABJGLPCOMMK\x12\x20\n\x0bENHJCNJFDFI\x18\
-    \x01\x20\x01(\rR\x0bENHJCNJFDFIb\x06proto3\
+    \n\x11ABJGLPCOMMK.proto\"Q\n\x0bABJGLPCOMMK\x12\x20\n\x0bENHJCNJFDFI\x18\
+    \x01\x20\x01(\rR\x0bENHJCNJFDFI\x12\x20\n\x0bIHHNLLAJAGB\x18\x02\x20\x01\
+    (\rR\x0bIHHNLLAJAGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

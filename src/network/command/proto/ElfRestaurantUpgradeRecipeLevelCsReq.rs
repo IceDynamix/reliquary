@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantUpgradeRecipeLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantUpgradeRecipeLevelCsReq.IGOOJKMPMDC)
-    pub IGOOJKMPMDC: u32,
     // @@protoc_insertion_point(field:ElfRestaurantUpgradeRecipeLevelCsReq.AOOLKNMJLNI)
     pub AOOLKNMJLNI: u32,
+    // @@protoc_insertion_point(field:ElfRestaurantUpgradeRecipeLevelCsReq.IGOOJKMPMDC)
+    pub IGOOJKMPMDC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantUpgradeRecipeLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ElfRestaurantUpgradeRecipeLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGOOJKMPMDC",
-            |m: &ElfRestaurantUpgradeRecipeLevelCsReq| { &m.IGOOJKMPMDC },
-            |m: &mut ElfRestaurantUpgradeRecipeLevelCsReq| { &mut m.IGOOJKMPMDC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AOOLKNMJLNI",
             |m: &ElfRestaurantUpgradeRecipeLevelCsReq| { &m.AOOLKNMJLNI },
             |m: &mut ElfRestaurantUpgradeRecipeLevelCsReq| { &mut m.AOOLKNMJLNI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGOOJKMPMDC",
+            |m: &ElfRestaurantUpgradeRecipeLevelCsReq| { &m.IGOOJKMPMDC },
+            |m: &mut ElfRestaurantUpgradeRecipeLevelCsReq| { &mut m.IGOOJKMPMDC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantUpgradeRecipeLevelCsReq>(
             "ElfRestaurantUpgradeRecipeLevelCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ElfRestaurantUpgradeRecipeLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.IGOOJKMPMDC = is.read_uint32()?;
+                48 => {
+                    self.AOOLKNMJLNI = is.read_uint32()?;
                 },
                 104 => {
-                    self.AOOLKNMJLNI = is.read_uint32()?;
+                    self.IGOOJKMPMDC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ElfRestaurantUpgradeRecipeLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IGOOJKMPMDC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.IGOOJKMPMDC);
-        }
         if self.AOOLKNMJLNI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AOOLKNMJLNI);
+            my_size += ::protobuf::rt::uint32_size(6, self.AOOLKNMJLNI);
+        }
+        if self.IGOOJKMPMDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IGOOJKMPMDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ElfRestaurantUpgradeRecipeLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IGOOJKMPMDC != 0 {
-            os.write_uint32(5, self.IGOOJKMPMDC)?;
-        }
         if self.AOOLKNMJLNI != 0 {
-            os.write_uint32(13, self.AOOLKNMJLNI)?;
+            os.write_uint32(6, self.AOOLKNMJLNI)?;
+        }
+        if self.IGOOJKMPMDC != 0 {
+            os.write_uint32(13, self.IGOOJKMPMDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ElfRestaurantUpgradeRecipeLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.IGOOJKMPMDC = 0;
         self.AOOLKNMJLNI = 0;
+        self.IGOOJKMPMDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantUpgradeRecipeLevelCsReq {
         static instance: ElfRestaurantUpgradeRecipeLevelCsReq = ElfRestaurantUpgradeRecipeLevelCsReq {
-            IGOOJKMPMDC: 0,
             AOOLKNMJLNI: 0,
+            IGOOJKMPMDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantUpgradeRecipeLevelCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*ElfRestaurantUpgradeRecipeLevelCsReq.proto\"j\n$ElfRestaurantUpgradeR\
-    ecipeLevelCsReq\x12\x20\n\x0bIGOOJKMPMDC\x18\x05\x20\x01(\rR\x0bIGOOJKMP\
-    MDC\x12\x20\n\x0bAOOLKNMJLNI\x18\r\x20\x01(\rR\x0bAOOLKNMJLNIb\x06proto3\
+    ecipeLevelCsReq\x12\x20\n\x0bAOOLKNMJLNI\x18\x06\x20\x01(\rR\x0bAOOLKNMJ\
+    LNI\x12\x20\n\x0bIGOOJKMPMDC\x18\r\x20\x01(\rR\x0bIGOOJKMPMDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CBNNMKNBLDI {
     // message fields
-    // @@protoc_insertion_point(field:CBNNMKNBLDI.rarity)
-    pub rarity: u32,
+    // @@protoc_insertion_point(field:CBNNMKNBLDI.H_a45cd9b1)
+    pub H_a45cd9b1: u32,
     // @@protoc_insertion_point(field:CBNNMKNBLDI.level)
     pub level: u32,
     // @@protoc_insertion_point(field:CBNNMKNBLDI.CDMKBCHLPAB)
     pub CDMKBCHLPAB: ::std::vec::Vec<super::CHAGFKJEIMI::CHAGFKJEIMI>,
+    // @@protoc_insertion_point(field:CBNNMKNBLDI.rarity)
+    pub rarity: u32,
     // @@protoc_insertion_point(field:CBNNMKNBLDI.DFKJCMCDMEI)
     pub DFKJCMCDMEI: bool,
-    // @@protoc_insertion_point(field:CBNNMKNBLDI.H_603b4ee2)
-    pub H_603b4ee2: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CBNNMKNBLDI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,9 @@ impl CBNNMKNBLDI {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rarity",
-            |m: &CBNNMKNBLDI| { &m.rarity },
-            |m: &mut CBNNMKNBLDI| { &mut m.rarity },
+            "H_a45cd9b1",
+            |m: &CBNNMKNBLDI| { &m.H_a45cd9b1 },
+            |m: &mut CBNNMKNBLDI| { &mut m.H_a45cd9b1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -73,14 +73,14 @@ impl CBNNMKNBLDI {
             |m: &mut CBNNMKNBLDI| { &mut m.CDMKBCHLPAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rarity",
+            |m: &CBNNMKNBLDI| { &m.rarity },
+            |m: &mut CBNNMKNBLDI| { &mut m.rarity },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DFKJCMCDMEI",
             |m: &CBNNMKNBLDI| { &m.DFKJCMCDMEI },
             |m: &mut CBNNMKNBLDI| { &mut m.DFKJCMCDMEI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "H_603b4ee2",
-            |m: &CBNNMKNBLDI| { &m.H_603b4ee2 },
-            |m: &mut CBNNMKNBLDI| { &mut m.H_603b4ee2 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CBNNMKNBLDI>(
             "CBNNMKNBLDI",
@@ -101,19 +101,19 @@ impl ::protobuf::Message for CBNNMKNBLDI {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.rarity = is.read_uint32()?;
+                    self.H_a45cd9b1 = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                58 => {
+                90 => {
                     self.CDMKBCHLPAB.push(is.read_message()?);
                 },
-                64 => {
-                    self.DFKJCMCDMEI = is.read_bool()?;
+                112 => {
+                    self.rarity = is.read_uint32()?;
                 },
                 120 => {
-                    self.H_603b4ee2 = is.read_uint32()?;
+                    self.DFKJCMCDMEI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for CBNNMKNBLDI {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.rarity != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.rarity);
+        if self.H_a45cd9b1 != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.H_a45cd9b1);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         for value in &self.CDMKBCHLPAB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.rarity != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.rarity);
+        }
         if self.DFKJCMCDMEI != false {
             my_size += 1 + 1;
-        }
-        if self.H_603b4ee2 != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.H_603b4ee2);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for CBNNMKNBLDI {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.rarity != 0 {
-            os.write_uint32(3, self.rarity)?;
+        if self.H_a45cd9b1 != 0 {
+            os.write_uint32(3, self.H_a45cd9b1)?;
         }
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(9, self.level)?;
         }
         for v in &self.CDMKBCHLPAB {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if self.DFKJCMCDMEI != false {
-            os.write_bool(8, self.DFKJCMCDMEI)?;
+        if self.rarity != 0 {
+            os.write_uint32(14, self.rarity)?;
         }
-        if self.H_603b4ee2 != 0 {
-            os.write_uint32(15, self.H_603b4ee2)?;
+        if self.DFKJCMCDMEI != false {
+            os.write_bool(15, self.DFKJCMCDMEI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for CBNNMKNBLDI {
     }
 
     fn clear(&mut self) {
-        self.rarity = 0;
+        self.H_a45cd9b1 = 0;
         self.level = 0;
         self.CDMKBCHLPAB.clear();
+        self.rarity = 0;
         self.DFKJCMCDMEI = false;
-        self.H_603b4ee2 = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CBNNMKNBLDI {
         static instance: CBNNMKNBLDI = CBNNMKNBLDI {
-            rarity: 0,
+            H_a45cd9b1: 0,
             level: 0,
             CDMKBCHLPAB: ::std::vec::Vec::new(),
+            rarity: 0,
             DFKJCMCDMEI: false,
-            H_603b4ee2: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for CBNNMKNBLDI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CBNNMKNBLDI.proto\x1a\x11CHAGFKJEIMI.proto\"\xac\x01\n\x0bCBNNMKNB\
-    LDI\x12\x16\n\x06rarity\x18\x03\x20\x01(\rR\x06rarity\x12\x14\n\x05level\
-    \x18\x05\x20\x01(\rR\x05level\x12.\n\x0bCDMKBCHLPAB\x18\x07\x20\x03(\x0b\
-    2\x0c.CHAGFKJEIMIR\x0bCDMKBCHLPAB\x12\x20\n\x0bDFKJCMCDMEI\x18\x08\x20\
-    \x01(\x08R\x0bDFKJCMCDMEI\x12\x1d\n\nH_603b4ee2\x18\x0f\x20\x01(\rR\tH60\
-    3b4ee2b\x06proto3\
+    LDI\x12\x1d\n\nH_a45cd9b1\x18\x03\x20\x01(\rR\tHA45cd9b1\x12\x14\n\x05le\
+    vel\x18\t\x20\x01(\rR\x05level\x12.\n\x0bCDMKBCHLPAB\x18\x0b\x20\x03(\
+    \x0b2\x0c.CHAGFKJEIMIR\x0bCDMKBCHLPAB\x12\x16\n\x06rarity\x18\x0e\x20\
+    \x01(\rR\x06rarity\x12\x20\n\x0bDFKJCMCDMEI\x18\x0f\x20\x01(\x08R\x0bDFK\
+    JCMCDMEIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

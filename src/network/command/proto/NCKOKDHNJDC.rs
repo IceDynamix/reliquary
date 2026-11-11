@@ -48,7 +48,7 @@ impl NCKOKDHNJDC {
         ::std::default::Default::default()
     }
 
-    // .MDJBBILMHLC MPOBBIPMNNJ = 325;
+    // .MDJBBILMHLC MPOBBIPMNNJ = 44;
 
     pub fn MPOBBIPMNNJ(&self) -> &super::MDJBBILMHLC::MDJBBILMHLC {
         match self.EFECLPJFOCM {
@@ -131,10 +131,10 @@ impl ::protobuf::Message for NCKOKDHNJDC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                48 => {
                     self.LLOEBDLMLJO = is.read_bool()?;
                 },
-                2602 => {
+                354 => {
                     self.EFECLPJFOCM = ::std::option::Option::Some(nckokdhnjdc::EFECLPJFOCM::MPOBBIPMNNJ(is.read_message()?));
                 },
                 tag => {
@@ -167,12 +167,12 @@ impl ::protobuf::Message for NCKOKDHNJDC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LLOEBDLMLJO != false {
-            os.write_bool(10, self.LLOEBDLMLJO)?;
+            os.write_bool(6, self.LLOEBDLMLJO)?;
         }
         if let ::std::option::Option::Some(ref v) = self.EFECLPJFOCM {
             match v {
                 &nckokdhnjdc::EFECLPJFOCM::MPOBBIPMNNJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(325, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(44, v, os)?;
                 },
             };
         }
@@ -254,10 +254,10 @@ pub mod nckokdhnjdc {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NCKOKDHNJDC.proto\x1a\x11MDJBBILMHLC.proto\"q\n\x0bNCKOKDHNJDC\x12\
-    \x20\n\x0bLLOEBDLMLJO\x18\n\x20\x01(\x08R\x0bLLOEBDLMLJO\x121\n\x0bMPOBB\
-    IPMNNJ\x18\xc5\x02\x20\x01(\x0b2\x0c.MDJBBILMHLCH\0R\x0bMPOBBIPMNNJB\r\n\
-    \x0bEFECLPJFOCMb\x06proto3\
+    \n\x11NCKOKDHNJDC.proto\x1a\x11MDJBBILMHLC.proto\"p\n\x0bNCKOKDHNJDC\x12\
+    \x20\n\x0bLLOEBDLMLJO\x18\x06\x20\x01(\x08R\x0bLLOEBDLMLJO\x120\n\x0bMPO\
+    BBIPMNNJ\x18,\x20\x01(\x0b2\x0c.MDJBBILMHLCH\0R\x0bMPOBBIPMNNJB\r\n\x0bE\
+    FECLPJFOCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

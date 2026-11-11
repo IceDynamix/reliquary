@@ -89,10 +89,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
                 24 => {
                     self.FHBNGHINHOG = is.read_uint32()?;
                 },
-                40 => {
+                56 => {
                     self.OFHBPNGDEGO = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
                     self.battle_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
             my_size += ::protobuf::rt::uint32_size(3, self.FHBNGHINHOG);
         }
         if self.OFHBPNGDEGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OFHBPNGDEGO);
+            my_size += ::protobuf::rt::uint32_size(7, self.OFHBPNGDEGO);
         }
         if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.battle_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.battle_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for FantasticStoryActivityBattleEndScNotify {
             os.write_uint32(3, self.FHBNGHINHOG)?;
         }
         if self.OFHBPNGDEGO != 0 {
-            os.write_uint32(5, self.OFHBPNGDEGO)?;
+            os.write_uint32(7, self.OFHBPNGDEGO)?;
         }
         if self.battle_id != 0 {
-            os.write_uint32(12, self.battle_id)?;
+            os.write_uint32(9, self.battle_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for FantasticStoryActivityBattleEndScNot
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-FantasticStoryActivityBattleEndScNotify.proto\"\x8a\x01\n'FantasticSt\
     oryActivityBattleEndScNotify\x12\x20\n\x0bFHBNGHINHOG\x18\x03\x20\x01(\r\
-    R\x0bFHBNGHINHOG\x12\x20\n\x0bOFHBPNGDEGO\x18\x05\x20\x01(\rR\x0bOFHBPNG\
-    DEGO\x12\x1b\n\tbattle_id\x18\x0c\x20\x01(\rR\x08battleIdb\x06proto3\
+    R\x0bFHBNGHINHOG\x12\x20\n\x0bOFHBPNGDEGO\x18\x07\x20\x01(\rR\x0bOFHBPNG\
+    DEGO\x12\x1b\n\tbattle_id\x18\t\x20\x01(\rR\x08battleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

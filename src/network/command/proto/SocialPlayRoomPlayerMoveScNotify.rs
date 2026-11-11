@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayRoomPlayerMoveScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.IKDEIJCEDIO)
+    pub IKDEIJCEDIO: u32,
     // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.PLIDNBMCIJH)
     pub PLIDNBMCIJH: u32,
     // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.JENKGODEIOM)
     pub JENKGODEIOM: ::protobuf::MessageField<super::MHNNEFBOPIE::MHNNEFBOPIE>,
-    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.IKDEIJCEDIO)
-    pub IKDEIJCEDIO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SocialPlayRoomPlayerMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl SocialPlayRoomPlayerMoveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IKDEIJCEDIO",
+            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.IKDEIJCEDIO },
+            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.IKDEIJCEDIO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PLIDNBMCIJH",
             |m: &SocialPlayRoomPlayerMoveScNotify| { &m.PLIDNBMCIJH },
             |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.PLIDNBMCIJH },
@@ -62,11 +67,6 @@ impl SocialPlayRoomPlayerMoveScNotify {
             "JENKGODEIOM",
             |m: &SocialPlayRoomPlayerMoveScNotify| { &m.JENKGODEIOM },
             |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.JENKGODEIOM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKDEIJCEDIO",
-            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.IKDEIJCEDIO },
-            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.IKDEIJCEDIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SocialPlayRoomPlayerMoveScNotify>(
             "SocialPlayRoomPlayerMoveScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
+                    self.IKDEIJCEDIO = is.read_uint32()?;
+                },
+                64 => {
                     self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                42 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JENKGODEIOM)?;
-                },
-                104 => {
-                    self.IKDEIJCEDIO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.IKDEIJCEDIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IKDEIJCEDIO);
+        }
         if self.PLIDNBMCIJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.PLIDNBMCIJH);
+            my_size += ::protobuf::rt::uint32_size(8, self.PLIDNBMCIJH);
         }
         if let Some(v) = self.JENKGODEIOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IKDEIJCEDIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.IKDEIJCEDIO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.IKDEIJCEDIO != 0 {
+            os.write_uint32(3, self.IKDEIJCEDIO)?;
+        }
         if self.PLIDNBMCIJH != 0 {
-            os.write_uint32(2, self.PLIDNBMCIJH)?;
+            os.write_uint32(8, self.PLIDNBMCIJH)?;
         }
         if let Some(v) = self.JENKGODEIOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.IKDEIJCEDIO != 0 {
-            os.write_uint32(13, self.IKDEIJCEDIO)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     }
 
     fn clear(&mut self) {
+        self.IKDEIJCEDIO = 0;
         self.PLIDNBMCIJH = 0;
         self.JENKGODEIOM.clear();
-        self.IKDEIJCEDIO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SocialPlayRoomPlayerMoveScNotify {
         static instance: SocialPlayRoomPlayerMoveScNotify = SocialPlayRoomPlayerMoveScNotify {
+            IKDEIJCEDIO: 0,
             PLIDNBMCIJH: 0,
             JENKGODEIOM: ::protobuf::MessageField::none(),
-            IKDEIJCEDIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayRoomPlayerMoveScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&SocialPlayRoomPlayerMoveScNotify.proto\x1a\x11MHNNEFBOPIE.proto\"\x96\
-    \x01\n\x20SocialPlayRoomPlayerMoveScNotify\x12\x20\n\x0bPLIDNBMCIJH\x18\
-    \x02\x20\x01(\rR\x0bPLIDNBMCIJH\x12.\n\x0bJENKGODEIOM\x18\x05\x20\x01(\
-    \x0b2\x0c.MHNNEFBOPIER\x0bJENKGODEIOM\x12\x20\n\x0bIKDEIJCEDIO\x18\r\x20\
-    \x01(\rR\x0bIKDEIJCEDIOb\x06proto3\
+    \x01\n\x20SocialPlayRoomPlayerMoveScNotify\x12\x20\n\x0bIKDEIJCEDIO\x18\
+    \x03\x20\x01(\rR\x0bIKDEIJCEDIO\x12\x20\n\x0bPLIDNBMCIJH\x18\x08\x20\x01\
+    (\rR\x0bPLIDNBMCIJH\x12.\n\x0bJENKGODEIOM\x18\r\x20\x01(\x0b2\x0c.MHNNEF\
+    BOPIER\x0bJENKGODEIOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

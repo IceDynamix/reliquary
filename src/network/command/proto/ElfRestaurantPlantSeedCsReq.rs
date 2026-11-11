@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantPlantSeedCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantPlantSeedCsReq.BLNHCIBKJOM)
-    pub BLNHCIBKJOM: u32,
     // @@protoc_insertion_point(field:ElfRestaurantPlantSeedCsReq.FMCGHNLBIKP)
     pub FMCGHNLBIKP: ::std::vec::Vec<super::KPLHHLEGGCD::KPLHHLEGGCD>,
+    // @@protoc_insertion_point(field:ElfRestaurantPlantSeedCsReq.BLNHCIBKJOM)
+    pub BLNHCIBKJOM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantPlantSeedCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ElfRestaurantPlantSeedCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BLNHCIBKJOM",
-            |m: &ElfRestaurantPlantSeedCsReq| { &m.BLNHCIBKJOM },
-            |m: &mut ElfRestaurantPlantSeedCsReq| { &mut m.BLNHCIBKJOM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FMCGHNLBIKP",
             |m: &ElfRestaurantPlantSeedCsReq| { &m.FMCGHNLBIKP },
             |m: &mut ElfRestaurantPlantSeedCsReq| { &mut m.FMCGHNLBIKP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLNHCIBKJOM",
+            |m: &ElfRestaurantPlantSeedCsReq| { &m.BLNHCIBKJOM },
+            |m: &mut ElfRestaurantPlantSeedCsReq| { &mut m.BLNHCIBKJOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantPlantSeedCsReq>(
             "ElfRestaurantPlantSeedCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.BLNHCIBKJOM = is.read_uint32()?;
-                },
-                98 => {
+                34 => {
                     self.FMCGHNLBIKP.push(is.read_message()?);
+                },
+                48 => {
+                    self.BLNHCIBKJOM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BLNHCIBKJOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BLNHCIBKJOM);
-        }
         for value in &self.FMCGHNLBIKP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.BLNHCIBKJOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BLNHCIBKJOM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BLNHCIBKJOM != 0 {
-            os.write_uint32(5, self.BLNHCIBKJOM)?;
-        }
         for v in &self.FMCGHNLBIKP {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.BLNHCIBKJOM != 0 {
+            os.write_uint32(6, self.BLNHCIBKJOM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ElfRestaurantPlantSeedCsReq {
     }
 
     fn clear(&mut self) {
-        self.BLNHCIBKJOM = 0;
         self.FMCGHNLBIKP.clear();
+        self.BLNHCIBKJOM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantPlantSeedCsReq {
         static instance: ElfRestaurantPlantSeedCsReq = ElfRestaurantPlantSeedCsReq {
-            BLNHCIBKJOM: 0,
             FMCGHNLBIKP: ::std::vec::Vec::new(),
+            BLNHCIBKJOM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantPlantSeedCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ElfRestaurantPlantSeedCsReq.proto\x1a\x11KPLHHLEGGCD.proto\"o\n\x1bEl\
-    fRestaurantPlantSeedCsReq\x12\x20\n\x0bBLNHCIBKJOM\x18\x05\x20\x01(\rR\
-    \x0bBLNHCIBKJOM\x12.\n\x0bFMCGHNLBIKP\x18\x0c\x20\x03(\x0b2\x0c.KPLHHLEG\
-    GCDR\x0bFMCGHNLBIKPb\x06proto3\
+    fRestaurantPlantSeedCsReq\x12.\n\x0bFMCGHNLBIKP\x18\x04\x20\x03(\x0b2\
+    \x0c.KPLHHLEGGCDR\x0bFMCGHNLBIKP\x12\x20\n\x0bBLNHCIBKJOM\x18\x06\x20\
+    \x01(\rR\x0bBLNHCIBKJOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

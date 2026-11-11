@@ -82,7 +82,7 @@ impl ::protobuf::Message for ChooseAvatarScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                64 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ChooseAvatarScRsp {
             my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ChooseAvatarScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(13, self.avatar_id)?;
+            os.write_uint32(8, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChooseAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChooseAvatarScRsp.proto\"J\n\x11ChooseAvatarScRsp\x12\x18\n\x07ret\
-    code\x18\x05\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\r\x20\x01(\
-    \rR\x08avatarIdb\x06proto3\
+    code\x18\x05\x20\x01(\rR\x07retcode\x12\x1b\n\tavatar_id\x18\x08\x20\x01\
+    (\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

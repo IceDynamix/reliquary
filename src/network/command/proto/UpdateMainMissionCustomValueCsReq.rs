@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateMainMissionCustomValueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                26 => {
                     self.BGDFHBAANLB = is.read_string()?;
                 },
-                96 => {
+                64 => {
                     self.value = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.main_mission_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for UpdateMainMissionCustomValueCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.BGDFHBAANLB.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.BGDFHBAANLB);
+            my_size += ::protobuf::rt::string_size(3, &self.BGDFHBAANLB);
         }
         if self.value != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.value);
+            my_size += ::protobuf::rt::uint32_size(8, self.value);
         }
         if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.main_mission_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.main_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for UpdateMainMissionCustomValueCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.BGDFHBAANLB.is_empty() {
-            os.write_string(11, &self.BGDFHBAANLB)?;
+            os.write_string(3, &self.BGDFHBAANLB)?;
         }
         if self.value != 0 {
-            os.write_uint32(12, self.value)?;
+            os.write_uint32(8, self.value)?;
         }
         if self.main_mission_id != 0 {
-            os.write_uint32(15, self.main_mission_id)?;
+            os.write_uint32(10, self.main_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateMainMissionCustomValueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'UpdateMainMissionCustomValueCsReq.proto\"\x83\x01\n!UpdateMainMission\
-    CustomValueCsReq\x12\x20\n\x0bBGDFHBAANLB\x18\x0b\x20\x01(\tR\x0bBGDFHBA\
-    ANLB\x12\x14\n\x05value\x18\x0c\x20\x01(\rR\x05value\x12&\n\x0fmain_miss\
-    ion_id\x18\x0f\x20\x01(\rR\rmainMissionIdb\x06proto3\
+    CustomValueCsReq\x12\x20\n\x0bBGDFHBAANLB\x18\x03\x20\x01(\tR\x0bBGDFHBA\
+    ANLB\x12\x14\n\x05value\x18\x08\x20\x01(\rR\x05value\x12&\n\x0fmain_miss\
+    ion_id\x18\n\x20\x01(\rR\rmainMissionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

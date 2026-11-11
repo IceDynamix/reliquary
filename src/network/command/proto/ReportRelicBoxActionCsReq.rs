@@ -45,7 +45,7 @@ impl ReportRelicBoxActionCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 KCGLKFKHPIC = 7;
+    // uint32 KCGLKFKHPIC = 2;
 
     pub fn KCGLKFKHPIC(&self) -> u32 {
         match self.MKKDALGEAKK {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                16 => {
                     self.MKKDALGEAKK = ::std::option::Option::Some(report_relic_box_action_cs_req::MKKDALGEAKK::KCGLKFKHPIC(is.read_uint32()?));
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
         if let ::std::option::Option::Some(ref v) = self.MKKDALGEAKK {
             match v {
                 &report_relic_box_action_cs_req::MKKDALGEAKK::KCGLKFKHPIC(v) => {
-                    my_size += ::protobuf::rt::uint32_size(7, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
             };
         }
@@ -129,7 +129,7 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
         if let ::std::option::Option::Some(ref v) = self.MKKDALGEAKK {
             match v {
                 &report_relic_box_action_cs_req::MKKDALGEAKK::KCGLKFKHPIC(v) => {
-                    os.write_uint32(7, v)?;
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -210,7 +210,7 @@ pub mod report_relic_box_action_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fReportRelicBoxActionCsReq.proto\"N\n\x19ReportRelicBoxActionCsReq\
-    \x12\"\n\x0bKCGLKFKHPIC\x18\x07\x20\x01(\rH\0R\x0bKCGLKFKHPICB\r\n\x0bMK\
+    \x12\"\n\x0bKCGLKFKHPIC\x18\x02\x20\x01(\rH\0R\x0bKCGLKFKHPICB\r\n\x0bMK\
     KDALGEAKKb\x06proto3\
 ";
 

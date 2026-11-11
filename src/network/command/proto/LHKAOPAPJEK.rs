@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LHKAOPAPJEK {
     // message fields
-    // @@protoc_insertion_point(field:LHKAOPAPJEK.lineup)
-    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:LHKAOPAPJEK.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:LHKAOPAPJEK.lineup)
+    pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
     // @@protoc_insertion_point(field:LHKAOPAPJEK.JNKLNLKHGBB)
     pub JNKLNLKHGBB: ::protobuf::MessageField<super::FHEGNOPNICH::FHEGNOPNICH>,
     // special fields
@@ -53,15 +53,15 @@ impl LHKAOPAPJEK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
-            "lineup",
-            |m: &LHKAOPAPJEK| { &m.lineup },
-            |m: &mut LHKAOPAPJEK| { &mut m.lineup },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
             |m: &LHKAOPAPJEK| { &m.scene },
             |m: &mut LHKAOPAPJEK| { &mut m.scene },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
+            "lineup",
+            |m: &LHKAOPAPJEK| { &m.lineup },
+            |m: &mut LHKAOPAPJEK| { &mut m.lineup },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHEGNOPNICH::FHEGNOPNICH>(
             "JNKLNLKHGBB",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for LHKAOPAPJEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                114 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                122 => {
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNKLNLKHGBB)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for LHKAOPAPJEK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for LHKAOPAPJEK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.JNKLNLKHGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for LHKAOPAPJEK {
     }
 
     fn clear(&mut self) {
-        self.lineup.clear();
         self.scene.clear();
+        self.lineup.clear();
         self.JNKLNLKHGBB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LHKAOPAPJEK {
         static instance: LHKAOPAPJEK = LHKAOPAPJEK {
-            lineup: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
+            lineup: ::protobuf::MessageField::none(),
             JNKLNLKHGBB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for LHKAOPAPJEK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LHKAOPAPJEK.proto\x1a\x11FHEGNOPNICH.proto\x1a\x10LineupInfo.proto\
-    \x1a\x0fSceneInfo.proto\"\x84\x01\n\x0bLHKAOPAPJEK\x12#\n\x06lineup\x18\
-    \x07\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x20\n\x05scene\x18\x0e\
-    \x20\x01(\x0b2\n.SceneInfoR\x05scene\x12.\n\x0bJNKLNLKHGBB\x18\x0f\x20\
-    \x01(\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBBb\x06proto3\
+    \x1a\x0fSceneInfo.proto\"\x84\x01\n\x0bLHKAOPAPJEK\x12\x20\n\x05scene\
+    \x18\x01\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12#\n\x06lineup\x18\x0b\
+    \x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12.\n\x0bJNKLNLKHGBB\x18\x0c\
+    \x20\x01(\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

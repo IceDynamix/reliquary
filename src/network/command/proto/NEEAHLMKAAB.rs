@@ -30,12 +30,12 @@ pub struct NEEAHLMKAAB {
     // message fields
     // @@protoc_insertion_point(field:NEEAHLMKAAB.BFCNALJDHMP)
     pub BFCNALJDHMP: u32,
-    // @@protoc_insertion_point(field:NEEAHLMKAAB.HCBADDHNIDG)
-    pub HCBADDHNIDG: u32,
     // @@protoc_insertion_point(field:NEEAHLMKAAB.IEPAPOPIFHH)
     pub IEPAPOPIFHH: u64,
     // @@protoc_insertion_point(field:NEEAHLMKAAB.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:NEEAHLMKAAB.HCBADDHNIDG)
+    pub HCBADDHNIDG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NEEAHLMKAAB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl NEEAHLMKAAB {
             |m: &mut NEEAHLMKAAB| { &mut m.BFCNALJDHMP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCBADDHNIDG",
-            |m: &NEEAHLMKAAB| { &m.HCBADDHNIDG },
-            |m: &mut NEEAHLMKAAB| { &mut m.HCBADDHNIDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "IEPAPOPIFHH",
             |m: &NEEAHLMKAAB| { &m.IEPAPOPIFHH },
             |m: &mut NEEAHLMKAAB| { &mut m.IEPAPOPIFHH },
@@ -74,6 +69,11 @@ impl NEEAHLMKAAB {
             "level",
             |m: &NEEAHLMKAAB| { &m.level },
             |m: &mut NEEAHLMKAAB| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCBADDHNIDG",
+            |m: &NEEAHLMKAAB| { &m.HCBADDHNIDG },
+            |m: &mut NEEAHLMKAAB| { &mut m.HCBADDHNIDG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NEEAHLMKAAB>(
             "NEEAHLMKAAB",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.BFCNALJDHMP = is.read_uint32()?;
                 },
-                32 => {
-                    self.HCBADDHNIDG = is.read_uint32()?;
-                },
-                104 => {
+                40 => {
                     self.IEPAPOPIFHH = is.read_uint64()?;
                 },
-                112 => {
+                56 => {
                     self.level = is.read_uint32()?;
+                },
+                112 => {
+                    self.HCBADDHNIDG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for NEEAHLMKAAB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFCNALJDHMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.BFCNALJDHMP);
-        }
-        if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(2, self.BFCNALJDHMP);
         }
         if self.IEPAPOPIFHH != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.IEPAPOPIFHH);
+            my_size += ::protobuf::rt::uint64_size(5, self.IEPAPOPIFHH);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(7, self.level);
+        }
+        if self.HCBADDHNIDG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.HCBADDHNIDG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for NEEAHLMKAAB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFCNALJDHMP != 0 {
-            os.write_uint32(1, self.BFCNALJDHMP)?;
-        }
-        if self.HCBADDHNIDG != 0 {
-            os.write_uint32(4, self.HCBADDHNIDG)?;
+            os.write_uint32(2, self.BFCNALJDHMP)?;
         }
         if self.IEPAPOPIFHH != 0 {
-            os.write_uint64(13, self.IEPAPOPIFHH)?;
+            os.write_uint64(5, self.IEPAPOPIFHH)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(7, self.level)?;
+        }
+        if self.HCBADDHNIDG != 0 {
+            os.write_uint32(14, self.HCBADDHNIDG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for NEEAHLMKAAB {
 
     fn clear(&mut self) {
         self.BFCNALJDHMP = 0;
-        self.HCBADDHNIDG = 0;
         self.IEPAPOPIFHH = 0;
         self.level = 0;
+        self.HCBADDHNIDG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NEEAHLMKAAB {
         static instance: NEEAHLMKAAB = NEEAHLMKAAB {
             BFCNALJDHMP: 0,
-            HCBADDHNIDG: 0,
             IEPAPOPIFHH: 0,
             level: 0,
+            HCBADDHNIDG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for NEEAHLMKAAB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEEAHLMKAAB.proto\"\x89\x01\n\x0bNEEAHLMKAAB\x12\x20\n\x0bBFCNALJD\
-    HMP\x18\x01\x20\x01(\rR\x0bBFCNALJDHMP\x12\x20\n\x0bHCBADDHNIDG\x18\x04\
-    \x20\x01(\rR\x0bHCBADDHNIDG\x12\x20\n\x0bIEPAPOPIFHH\x18\r\x20\x01(\x04R\
-    \x0bIEPAPOPIFHH\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05levelb\x06prot\
-    o3\
+    HMP\x18\x02\x20\x01(\rR\x0bBFCNALJDHMP\x12\x20\n\x0bIEPAPOPIFHH\x18\x05\
+    \x20\x01(\x04R\x0bIEPAPOPIFHH\x12\x14\n\x05level\x18\x07\x20\x01(\rR\x05\
+    level\x12\x20\n\x0bHCBADDHNIDG\x18\x0e\x20\x01(\rR\x0bHCBADDHNIDGb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

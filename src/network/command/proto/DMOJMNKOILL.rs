@@ -93,16 +93,16 @@ impl ::protobuf::Message for DMOJMNKOILL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.AALCCPJCBME = is.read_bool()?;
                 },
-                32 => {
+                64 => {
                     self.IFIGFODOPBB = is.read_bool()?;
                 },
-                64 => {
+                104 => {
                     self.item_id = is.read_uint32()?;
                 },
-                88 => {
+                120 => {
                     self.AGBAIFPNKII = is.read_uint32()?;
                 },
                 tag => {
@@ -124,10 +124,10 @@ impl ::protobuf::Message for DMOJMNKOILL {
             my_size += 1 + 1;
         }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.item_id);
         }
         if self.AGBAIFPNKII != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.AGBAIFPNKII);
+            my_size += ::protobuf::rt::uint32_size(15, self.AGBAIFPNKII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for DMOJMNKOILL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.AALCCPJCBME != false {
-            os.write_bool(3, self.AALCCPJCBME)?;
+            os.write_bool(5, self.AALCCPJCBME)?;
         }
         if self.IFIGFODOPBB != false {
-            os.write_bool(4, self.IFIGFODOPBB)?;
+            os.write_bool(8, self.IFIGFODOPBB)?;
         }
         if self.item_id != 0 {
-            os.write_uint32(8, self.item_id)?;
+            os.write_uint32(13, self.item_id)?;
         }
         if self.AGBAIFPNKII != 0 {
-            os.write_uint32(11, self.AGBAIFPNKII)?;
+            os.write_uint32(15, self.AGBAIFPNKII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for DMOJMNKOILL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DMOJMNKOILL.proto\"\x8c\x01\n\x0bDMOJMNKOILL\x12\x20\n\x0bAALCCPJC\
-    BME\x18\x03\x20\x01(\x08R\x0bAALCCPJCBME\x12\x20\n\x0bIFIGFODOPBB\x18\
-    \x04\x20\x01(\x08R\x0bIFIGFODOPBB\x12\x17\n\x07item_id\x18\x08\x20\x01(\
-    \rR\x06itemId\x12\x20\n\x0bAGBAIFPNKII\x18\x0b\x20\x01(\rR\x0bAGBAIFPNKI\
-    Ib\x06proto3\
+    BME\x18\x05\x20\x01(\x08R\x0bAALCCPJCBME\x12\x20\n\x0bIFIGFODOPBB\x18\
+    \x08\x20\x01(\x08R\x0bIFIGFODOPBB\x12\x17\n\x07item_id\x18\r\x20\x01(\rR\
+    \x06itemId\x12\x20\n\x0bAGBAIFPNKII\x18\x0f\x20\x01(\rR\x0bAGBAIFPNKIIb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

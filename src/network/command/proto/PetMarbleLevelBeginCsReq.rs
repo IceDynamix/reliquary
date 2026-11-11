@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PetMarbleLevelBeginCsReq {
     // message fields
+    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.LLMLOGNFFCD)
+    pub LLMLOGNFFCD: bool,
+    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.JNBIALMKFCL)
+    pub JNBIALMKFCL: u32,
     // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.IIIAGPNGPJM)
     pub IIIAGPNGPJM: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
     // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.JJPLIMAENEB)
     pub JJPLIMAENEB: u32,
-    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.JNBIALMKFCL)
-    pub JNBIALMKFCL: u32,
     // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.FMCCHBBIJKF)
     pub FMCCHBBIJKF: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
-    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.OFNINJLHHDE)
-    pub OFNINJLHHDE: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
-    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.LLMLOGNFFCD)
-    pub LLMLOGNFFCD: bool,
     // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.page_type)
     pub page_type: u32,
+    // @@protoc_insertion_point(field:PetMarbleLevelBeginCsReq.OFNINJLHHDE)
+    pub OFNINJLHHDE: ::std::vec::Vec<super::ODLEEMAALIP::ODLEEMAALIP>,
     // special fields
     // @@protoc_insertion_point(special_field:PetMarbleLevelBeginCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,16 @@ impl PetMarbleLevelBeginCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LLMLOGNFFCD",
+            |m: &PetMarbleLevelBeginCsReq| { &m.LLMLOGNFFCD },
+            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.LLMLOGNFFCD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNBIALMKFCL",
+            |m: &PetMarbleLevelBeginCsReq| { &m.JNBIALMKFCL },
+            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.JNBIALMKFCL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "IIIAGPNGPJM",
             |m: &PetMarbleLevelBeginCsReq| { &m.IIIAGPNGPJM },
@@ -71,30 +81,20 @@ impl PetMarbleLevelBeginCsReq {
             |m: &PetMarbleLevelBeginCsReq| { &m.JJPLIMAENEB },
             |m: &mut PetMarbleLevelBeginCsReq| { &mut m.JJPLIMAENEB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNBIALMKFCL",
-            |m: &PetMarbleLevelBeginCsReq| { &m.JNBIALMKFCL },
-            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.JNBIALMKFCL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FMCCHBBIJKF",
             |m: &PetMarbleLevelBeginCsReq| { &m.FMCCHBBIJKF },
             |m: &mut PetMarbleLevelBeginCsReq| { &mut m.FMCCHBBIJKF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OFNINJLHHDE",
-            |m: &PetMarbleLevelBeginCsReq| { &m.OFNINJLHHDE },
-            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.OFNINJLHHDE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LLMLOGNFFCD",
-            |m: &PetMarbleLevelBeginCsReq| { &m.LLMLOGNFFCD },
-            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.LLMLOGNFFCD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "page_type",
             |m: &PetMarbleLevelBeginCsReq| { &m.page_type },
             |m: &mut PetMarbleLevelBeginCsReq| { &mut m.page_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OFNINJLHHDE",
+            |m: &PetMarbleLevelBeginCsReq| { &m.OFNINJLHHDE },
+            |m: &mut PetMarbleLevelBeginCsReq| { &mut m.OFNINJLHHDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PetMarbleLevelBeginCsReq>(
             "PetMarbleLevelBeginCsReq",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for PetMarbleLevelBeginCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.IIIAGPNGPJM.push(is.read_message()?);
-                },
-                24 => {
-                    self.JJPLIMAENEB = is.read_uint32()?;
-                },
-                40 => {
-                    self.JNBIALMKFCL = is.read_uint32()?;
-                },
-                58 => {
-                    self.FMCCHBBIJKF.push(is.read_message()?);
-                },
-                74 => {
-                    self.OFNINJLHHDE.push(is.read_message()?);
-                },
-                80 => {
+                8 => {
                     self.LLMLOGNFFCD = is.read_bool()?;
                 },
-                104 => {
+                64 => {
+                    self.JNBIALMKFCL = is.read_uint32()?;
+                },
+                74 => {
+                    self.IIIAGPNGPJM.push(is.read_message()?);
+                },
+                80 => {
+                    self.JJPLIMAENEB = is.read_uint32()?;
+                },
+                90 => {
+                    self.FMCCHBBIJKF.push(is.read_message()?);
+                },
+                96 => {
                     self.page_type = is.read_uint32()?;
+                },
+                122 => {
+                    self.OFNINJLHHDE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,57 +147,57 @@ impl ::protobuf::Message for PetMarbleLevelBeginCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.LLMLOGNFFCD != false {
+            my_size += 1 + 1;
+        }
+        if self.JNBIALMKFCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.JNBIALMKFCL);
+        }
         for value in &self.IIIAGPNGPJM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.JJPLIMAENEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JJPLIMAENEB);
-        }
-        if self.JNBIALMKFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JNBIALMKFCL);
+            my_size += ::protobuf::rt::uint32_size(10, self.JJPLIMAENEB);
         }
         for value in &self.FMCCHBBIJKF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.page_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.page_type);
+        }
         for value in &self.OFNINJLHHDE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.LLMLOGNFFCD != false {
-            my_size += 1 + 1;
-        }
-        if self.page_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.page_type);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IIIAGPNGPJM {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        if self.JJPLIMAENEB != 0 {
-            os.write_uint32(3, self.JJPLIMAENEB)?;
+        if self.LLMLOGNFFCD != false {
+            os.write_bool(1, self.LLMLOGNFFCD)?;
         }
         if self.JNBIALMKFCL != 0 {
-            os.write_uint32(5, self.JNBIALMKFCL)?;
+            os.write_uint32(8, self.JNBIALMKFCL)?;
         }
-        for v in &self.FMCCHBBIJKF {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        for v in &self.OFNINJLHHDE {
+        for v in &self.IIIAGPNGPJM {
             ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.LLMLOGNFFCD != false {
-            os.write_bool(10, self.LLMLOGNFFCD)?;
+        if self.JJPLIMAENEB != 0 {
+            os.write_uint32(10, self.JJPLIMAENEB)?;
         }
+        for v in &self.FMCCHBBIJKF {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         if self.page_type != 0 {
-            os.write_uint32(13, self.page_type)?;
+            os.write_uint32(12, self.page_type)?;
         }
+        for v in &self.OFNINJLHHDE {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -215,25 +215,25 @@ impl ::protobuf::Message for PetMarbleLevelBeginCsReq {
     }
 
     fn clear(&mut self) {
+        self.LLMLOGNFFCD = false;
+        self.JNBIALMKFCL = 0;
         self.IIIAGPNGPJM.clear();
         self.JJPLIMAENEB = 0;
-        self.JNBIALMKFCL = 0;
         self.FMCCHBBIJKF.clear();
-        self.OFNINJLHHDE.clear();
-        self.LLMLOGNFFCD = false;
         self.page_type = 0;
+        self.OFNINJLHHDE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PetMarbleLevelBeginCsReq {
         static instance: PetMarbleLevelBeginCsReq = PetMarbleLevelBeginCsReq {
+            LLMLOGNFFCD: false,
+            JNBIALMKFCL: 0,
             IIIAGPNGPJM: ::std::vec::Vec::new(),
             JJPLIMAENEB: 0,
-            JNBIALMKFCL: 0,
             FMCCHBBIJKF: ::std::vec::Vec::new(),
-            OFNINJLHHDE: ::std::vec::Vec::new(),
-            LLMLOGNFFCD: false,
             page_type: 0,
+            OFNINJLHHDE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -259,13 +259,13 @@ impl ::protobuf::reflect::ProtobufValue for PetMarbleLevelBeginCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePetMarbleLevelBeginCsReq.proto\x1a\x11ODLEEMAALIP.proto\"\xad\x02\
-    \n\x18PetMarbleLevelBeginCsReq\x12.\n\x0bIIIAGPNGPJM\x18\x01\x20\x03(\
-    \x0b2\x0c.ODLEEMAALIPR\x0bIIIAGPNGPJM\x12\x20\n\x0bJJPLIMAENEB\x18\x03\
-    \x20\x01(\rR\x0bJJPLIMAENEB\x12\x20\n\x0bJNBIALMKFCL\x18\x05\x20\x01(\rR\
-    \x0bJNBIALMKFCL\x12.\n\x0bFMCCHBBIJKF\x18\x07\x20\x03(\x0b2\x0c.ODLEEMAA\
-    LIPR\x0bFMCCHBBIJKF\x12.\n\x0bOFNINJLHHDE\x18\t\x20\x03(\x0b2\x0c.ODLEEM\
-    AALIPR\x0bOFNINJLHHDE\x12\x20\n\x0bLLMLOGNFFCD\x18\n\x20\x01(\x08R\x0bLL\
-    MLOGNFFCD\x12\x1b\n\tpage_type\x18\r\x20\x01(\rR\x08pageTypeb\x06proto3\
+    \n\x18PetMarbleLevelBeginCsReq\x12\x20\n\x0bLLMLOGNFFCD\x18\x01\x20\x01(\
+    \x08R\x0bLLMLOGNFFCD\x12\x20\n\x0bJNBIALMKFCL\x18\x08\x20\x01(\rR\x0bJNB\
+    IALMKFCL\x12.\n\x0bIIIAGPNGPJM\x18\t\x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bI\
+    IIAGPNGPJM\x12\x20\n\x0bJJPLIMAENEB\x18\n\x20\x01(\rR\x0bJJPLIMAENEB\x12\
+    .\n\x0bFMCCHBBIJKF\x18\x0b\x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bFMCCHBBIJKF\
+    \x12\x1b\n\tpage_type\x18\x0c\x20\x01(\rR\x08pageType\x12.\n\x0bOFNINJLH\
+    HDE\x18\x0f\x20\x03(\x0b2\x0c.ODLEEMAALIPR\x0bOFNINJLHHDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

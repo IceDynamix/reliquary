@@ -30,15 +30,15 @@ pub enum FEGMMLEBKMA {
     // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_NLCDGIPGFDJ)
     FEGMMLEBKMA_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_CKCJOHHLLDI)
-    FEGMMLEBKMA_CKCJOHHLLDI = 7569,
-    // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_IMEGEEBOGOC)
-    FEGMMLEBKMA_IMEGEEBOGOC = 7562,
+    FEGMMLEBKMA_CKCJOHHLLDI = 7570,
     // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_FHJDJDBACKL)
-    FEGMMLEBKMA_FHJDJDBACKL = 7570,
+    FEGMMLEBKMA_FHJDJDBACKL = 7567,
+    // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_IMEGEEBOGOC)
+    FEGMMLEBKMA_IMEGEEBOGOC = 7563,
     // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_CPONBFJGEPM)
-    FEGMMLEBKMA_CPONBFJGEPM = 7563,
+    FEGMMLEBKMA_CPONBFJGEPM = 7566,
     // @@protoc_insertion_point(enum_value:FEGMMLEBKMA.FEGMMLEBKMA_BKHOKHNAIMG)
-    FEGMMLEBKMA_BKHOKHNAIMG = 7564,
+    FEGMMLEBKMA_BKHOKHNAIMG = 7568,
 }
 
 impl ::protobuf::Enum for FEGMMLEBKMA {
@@ -51,11 +51,11 @@ impl ::protobuf::Enum for FEGMMLEBKMA {
     fn from_i32(value: i32) -> ::std::option::Option<FEGMMLEBKMA> {
         match value {
             0 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_NLCDGIPGFDJ),
-            7569 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CKCJOHHLLDI),
-            7562 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC),
-            7570 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL),
-            7563 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CPONBFJGEPM),
-            7564 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_BKHOKHNAIMG),
+            7570 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CKCJOHHLLDI),
+            7567 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL),
+            7563 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC),
+            7566 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CPONBFJGEPM),
+            7568 => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_BKHOKHNAIMG),
             _ => ::std::option::Option::None
         }
     }
@@ -64,8 +64,8 @@ impl ::protobuf::Enum for FEGMMLEBKMA {
         match str {
             "FEGMMLEBKMA_NLCDGIPGFDJ" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_NLCDGIPGFDJ),
             "FEGMMLEBKMA_CKCJOHHLLDI" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CKCJOHHLLDI),
-            "FEGMMLEBKMA_IMEGEEBOGOC" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC),
             "FEGMMLEBKMA_FHJDJDBACKL" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL),
+            "FEGMMLEBKMA_IMEGEEBOGOC" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC),
             "FEGMMLEBKMA_CPONBFJGEPM" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_CPONBFJGEPM),
             "FEGMMLEBKMA_BKHOKHNAIMG" => ::std::option::Option::Some(FEGMMLEBKMA::FEGMMLEBKMA_BKHOKHNAIMG),
             _ => ::std::option::Option::None
@@ -75,8 +75,8 @@ impl ::protobuf::Enum for FEGMMLEBKMA {
     const VALUES: &'static [FEGMMLEBKMA] = &[
         FEGMMLEBKMA::FEGMMLEBKMA_NLCDGIPGFDJ,
         FEGMMLEBKMA::FEGMMLEBKMA_CKCJOHHLLDI,
-        FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC,
         FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL,
+        FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC,
         FEGMMLEBKMA::FEGMMLEBKMA_CPONBFJGEPM,
         FEGMMLEBKMA::FEGMMLEBKMA_BKHOKHNAIMG,
     ];
@@ -92,8 +92,8 @@ impl ::protobuf::EnumFull for FEGMMLEBKMA {
         let index = match self {
             FEGMMLEBKMA::FEGMMLEBKMA_NLCDGIPGFDJ => 0,
             FEGMMLEBKMA::FEGMMLEBKMA_CKCJOHHLLDI => 1,
-            FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC => 2,
-            FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL => 3,
+            FEGMMLEBKMA::FEGMMLEBKMA_FHJDJDBACKL => 2,
+            FEGMMLEBKMA::FEGMMLEBKMA_IMEGEEBOGOC => 3,
             FEGMMLEBKMA::FEGMMLEBKMA_CPONBFJGEPM => 4,
             FEGMMLEBKMA::FEGMMLEBKMA_BKHOKHNAIMG => 5,
         };
@@ -115,10 +115,10 @@ impl FEGMMLEBKMA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FEGMMLEBKMA.proto*\xc0\x01\n\x0bFEGMMLEBKMA\x12\x1b\n\x17FEGMMLEBK\
-    MA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FEGMMLEBKMA_CKCJOHHLLDI\x10\x91;\x12\
-    \x1c\n\x17FEGMMLEBKMA_IMEGEEBOGOC\x10\x8a;\x12\x1c\n\x17FEGMMLEBKMA_FHJD\
-    JDBACKL\x10\x92;\x12\x1c\n\x17FEGMMLEBKMA_CPONBFJGEPM\x10\x8b;\x12\x1c\n\
-    \x17FEGMMLEBKMA_BKHOKHNAIMG\x10\x8c;b\x06proto3\
+    MA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FEGMMLEBKMA_CKCJOHHLLDI\x10\x92;\x12\
+    \x1c\n\x17FEGMMLEBKMA_FHJDJDBACKL\x10\x8f;\x12\x1c\n\x17FEGMMLEBKMA_IMEG\
+    EEBOGOC\x10\x8b;\x12\x1c\n\x17FEGMMLEBKMA_CPONBFJGEPM\x10\x8e;\x12\x1c\n\
+    \x17FEGMMLEBKMA_BKHOKHNAIMG\x10\x90;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

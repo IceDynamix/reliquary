@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JJKOHCPBGAL {
     // message fields
-    // @@protoc_insertion_point(field:JJKOHCPBGAL.FLIEDGKFNOL)
-    pub FLIEDGKFNOL: u32,
-    // @@protoc_insertion_point(field:JJKOHCPBGAL.source)
-    pub source: ::protobuf::MessageField<super::HNAOOMKGFCB::HNAOOMKGFCB>,
     // @@protoc_insertion_point(field:JJKOHCPBGAL.LHEOBNDKGHD)
     pub LHEOBNDKGHD: ::protobuf::MessageField<super::GIEPFAIPADI::GIEPFAIPADI>,
+    // @@protoc_insertion_point(field:JJKOHCPBGAL.source)
+    pub source: ::protobuf::MessageField<super::HNAOOMKGFCB::HNAOOMKGFCB>,
+    // @@protoc_insertion_point(field:JJKOHCPBGAL.FLIEDGKFNOL)
+    pub FLIEDGKFNOL: u32,
     // message oneof groups
     pub BHNPKLCNDNG: ::std::option::Option<jjkohcpbgal::BHNPKLCNDNG>,
     // special fields
@@ -52,32 +52,7 @@ impl JJKOHCPBGAL {
         ::std::default::Default::default()
     }
 
-    // .BDEJGKKACMA LLCOEPJFGPE = 118;
-
-    pub fn LLCOEPJFGPE(&self) -> super::BDEJGKKACMA::BDEJGKKACMA {
-        match self.BHNPKLCNDNG {
-            ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v)) => ::protobuf::EnumOrUnknown::enum_value_or_default(&v),
-            _ => super::BDEJGKKACMA::BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ,
-        }
-    }
-
-    pub fn clear_LLCOEPJFGPE(&mut self) {
-        self.BHNPKLCNDNG = ::std::option::Option::None;
-    }
-
-    pub fn has_LLCOEPJFGPE(&self) -> bool {
-        match self.BHNPKLCNDNG {
-            ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_LLCOEPJFGPE(&mut self, v: super::BDEJGKKACMA::BDEJGKKACMA) {
-        self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(::protobuf::EnumOrUnknown::new(v)))
-    }
-
-    // uint32 BNCCMEGJONF = 446;
+    // uint32 BNCCMEGJONF = 162;
 
     pub fn BNCCMEGJONF(&self) -> u32 {
         match self.BHNPKLCNDNG {
@@ -102,7 +77,32 @@ impl JJKOHCPBGAL {
         self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::BNCCMEGJONF(v))
     }
 
-    // .FJJHCDGNDPD IAECKEDODEF = 451;
+    // .BDEJGKKACMA LLCOEPJFGPE = 344;
+
+    pub fn LLCOEPJFGPE(&self) -> super::BDEJGKKACMA::BDEJGKKACMA {
+        match self.BHNPKLCNDNG {
+            ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v)) => ::protobuf::EnumOrUnknown::enum_value_or_default(&v),
+            _ => super::BDEJGKKACMA::BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ,
+        }
+    }
+
+    pub fn clear_LLCOEPJFGPE(&mut self) {
+        self.BHNPKLCNDNG = ::std::option::Option::None;
+    }
+
+    pub fn has_LLCOEPJFGPE(&self) -> bool {
+        match self.BHNPKLCNDNG {
+            ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_LLCOEPJFGPE(&mut self, v: super::BDEJGKKACMA::BDEJGKKACMA) {
+        self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(::protobuf::EnumOrUnknown::new(v)))
+    }
+
+    // .FJJHCDGNDPD IAECKEDODEF = 864;
 
     pub fn IAECKEDODEF(&self) -> &super::FJJHCDGNDPD::FJJHCDGNDPD {
         match self.BHNPKLCNDNG {
@@ -154,20 +154,26 @@ impl JJKOHCPBGAL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLIEDGKFNOL",
-            |m: &JJKOHCPBGAL| { &m.FLIEDGKFNOL },
-            |m: &mut JJKOHCPBGAL| { &mut m.FLIEDGKFNOL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIEPFAIPADI::GIEPFAIPADI>(
+            "LHEOBNDKGHD",
+            |m: &JJKOHCPBGAL| { &m.LHEOBNDKGHD },
+            |m: &mut JJKOHCPBGAL| { &mut m.LHEOBNDKGHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNAOOMKGFCB::HNAOOMKGFCB>(
             "source",
             |m: &JJKOHCPBGAL| { &m.source },
             |m: &mut JJKOHCPBGAL| { &mut m.source },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GIEPFAIPADI::GIEPFAIPADI>(
-            "LHEOBNDKGHD",
-            |m: &JJKOHCPBGAL| { &m.LHEOBNDKGHD },
-            |m: &mut JJKOHCPBGAL| { &mut m.LHEOBNDKGHD },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FLIEDGKFNOL",
+            |m: &JJKOHCPBGAL| { &m.FLIEDGKFNOL },
+            |m: &mut JJKOHCPBGAL| { &mut m.FLIEDGKFNOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "BNCCMEGJONF",
+            JJKOHCPBGAL::has_BNCCMEGJONF,
+            JJKOHCPBGAL::BNCCMEGJONF,
+            JJKOHCPBGAL::set_BNCCMEGJONF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_enum_accessors::<_, _>(
             "LLCOEPJFGPE",
@@ -179,12 +185,6 @@ impl JJKOHCPBGAL {
                 message.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(e));
             },
             super::BDEJGKKACMA::BDEJGKKACMA::BDEJGKKACMA_NLCDGIPGFDJ,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "BNCCMEGJONF",
-            JJKOHCPBGAL::has_BNCCMEGJONF,
-            JJKOHCPBGAL::BNCCMEGJONF,
-            JJKOHCPBGAL::set_BNCCMEGJONF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FJJHCDGNDPD::FJJHCDGNDPD>(
             "IAECKEDODEF",
@@ -212,22 +212,22 @@ impl ::protobuf::Message for JJKOHCPBGAL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.FLIEDGKFNOL = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
-                },
-                98 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LHEOBNDKGHD)?;
                 },
-                944 => {
-                    self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(is.read_enum_or_unknown()?));
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.source)?;
                 },
-                3568 => {
+                64 => {
+                    self.FLIEDGKFNOL = is.read_uint32()?;
+                },
+                1296 => {
                     self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::BNCCMEGJONF(is.read_uint32()?));
                 },
-                3610 => {
+                2752 => {
+                    self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(is.read_enum_or_unknown()?));
+                },
+                6914 => {
                     self.BHNPKLCNDNG = ::std::option::Option::Some(jjkohcpbgal::BHNPKLCNDNG::IAECKEDODEF(is.read_message()?));
                 },
                 tag => {
@@ -242,24 +242,24 @@ impl ::protobuf::Message for JJKOHCPBGAL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FLIEDGKFNOL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FLIEDGKFNOL);
+        if let Some(v) = self.LHEOBNDKGHD.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.source.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LHEOBNDKGHD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.FLIEDGKFNOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.FLIEDGKFNOL);
         }
         if let ::std::option::Option::Some(ref v) = self.BHNPKLCNDNG {
             match v {
-                &jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v) => {
-                    my_size += ::protobuf::rt::int32_size(118, v.value());
-                },
                 &jjkohcpbgal::BHNPKLCNDNG::BNCCMEGJONF(v) => {
-                    my_size += ::protobuf::rt::uint32_size(446, v);
+                    my_size += ::protobuf::rt::uint32_size(162, v);
+                },
+                &jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v) => {
+                    my_size += ::protobuf::rt::int32_size(344, v.value());
                 },
                 &jjkohcpbgal::BHNPKLCNDNG::IAECKEDODEF(ref v) => {
                     let len = v.compute_size();
@@ -273,25 +273,25 @@ impl ::protobuf::Message for JJKOHCPBGAL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FLIEDGKFNOL != 0 {
-            os.write_uint32(5, self.FLIEDGKFNOL)?;
+        if let Some(v) = self.LHEOBNDKGHD.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if let Some(v) = self.source.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if let Some(v) = self.LHEOBNDKGHD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.FLIEDGKFNOL != 0 {
+            os.write_uint32(8, self.FLIEDGKFNOL)?;
         }
         if let ::std::option::Option::Some(ref v) = self.BHNPKLCNDNG {
             match v {
-                &jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v) => {
-                    os.write_enum(118, ::protobuf::EnumOrUnknown::value(&v))?;
-                },
                 &jjkohcpbgal::BHNPKLCNDNG::BNCCMEGJONF(v) => {
-                    os.write_uint32(446, v)?;
+                    os.write_uint32(162, v)?;
+                },
+                &jjkohcpbgal::BHNPKLCNDNG::LLCOEPJFGPE(v) => {
+                    os.write_enum(344, ::protobuf::EnumOrUnknown::value(&v))?;
                 },
                 &jjkohcpbgal::BHNPKLCNDNG::IAECKEDODEF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(451, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(864, v, os)?;
                 },
             };
         }
@@ -312,9 +312,9 @@ impl ::protobuf::Message for JJKOHCPBGAL {
     }
 
     fn clear(&mut self) {
-        self.FLIEDGKFNOL = 0;
-        self.source.clear();
         self.LHEOBNDKGHD.clear();
+        self.source.clear();
+        self.FLIEDGKFNOL = 0;
         self.BHNPKLCNDNG = ::std::option::Option::None;
         self.BHNPKLCNDNG = ::std::option::Option::None;
         self.BHNPKLCNDNG = ::std::option::Option::None;
@@ -323,9 +323,9 @@ impl ::protobuf::Message for JJKOHCPBGAL {
 
     fn default_instance() -> &'static JJKOHCPBGAL {
         static instance: JJKOHCPBGAL = JJKOHCPBGAL {
-            FLIEDGKFNOL: 0,
-            source: ::protobuf::MessageField::none(),
             LHEOBNDKGHD: ::protobuf::MessageField::none(),
+            source: ::protobuf::MessageField::none(),
+            FLIEDGKFNOL: 0,
             BHNPKLCNDNG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -357,10 +357,10 @@ pub mod jjkohcpbgal {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:JJKOHCPBGAL.BHNPKLCNDNG)
     pub enum BHNPKLCNDNG {
-        // @@protoc_insertion_point(oneof_field:JJKOHCPBGAL.LLCOEPJFGPE)
-        LLCOEPJFGPE(::protobuf::EnumOrUnknown<super::super::BDEJGKKACMA::BDEJGKKACMA>),
         // @@protoc_insertion_point(oneof_field:JJKOHCPBGAL.BNCCMEGJONF)
         BNCCMEGJONF(u32),
+        // @@protoc_insertion_point(oneof_field:JJKOHCPBGAL.LLCOEPJFGPE)
+        LLCOEPJFGPE(::protobuf::EnumOrUnknown<super::super::BDEJGKKACMA::BDEJGKKACMA>),
         // @@protoc_insertion_point(oneof_field:JJKOHCPBGAL.IAECKEDODEF)
         IAECKEDODEF(super::super::FJJHCDGNDPD::FJJHCDGNDPD),
     }
@@ -384,14 +384,14 @@ pub mod jjkohcpbgal {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JJKOHCPBGAL.proto\x1a\x11BDEJGKKACMA.proto\x1a\x11FJJHCDGNDPD.prot\
-    o\x1a\x11GIEPFAIPADI.proto\x1a\x11HNAOOMKGFCB.proto\"\x9e\x02\n\x0bJJKOH\
-    CPBGAL\x12\x20\n\x0bFLIEDGKFNOL\x18\x05\x20\x01(\rR\x0bFLIEDGKFNOL\x12$\
-    \n\x06source\x18\t\x20\x01(\x0b2\x0c.HNAOOMKGFCBR\x06source\x12.\n\x0bLH\
-    EOBNDKGHD\x18\x0c\x20\x01(\x0b2\x0c.GIEPFAIPADIR\x0bLHEOBNDKGHD\x120\n\
-    \x0bLLCOEPJFGPE\x18v\x20\x01(\x0e2\x0c.BDEJGKKACMAH\0R\x0bLLCOEPJFGPE\
-    \x12#\n\x0bBNCCMEGJONF\x18\xbe\x03\x20\x01(\rH\0R\x0bBNCCMEGJONF\x121\n\
-    \x0bIAECKEDODEF\x18\xc3\x03\x20\x01(\x0b2\x0c.FJJHCDGNDPDH\0R\x0bIAECKED\
-    ODEFB\r\n\x0bBHNPKLCNDNGb\x06proto3\
+    o\x1a\x11GIEPFAIPADI.proto\x1a\x11HNAOOMKGFCB.proto\"\x9f\x02\n\x0bJJKOH\
+    CPBGAL\x12.\n\x0bLHEOBNDKGHD\x18\x05\x20\x01(\x0b2\x0c.GIEPFAIPADIR\x0bL\
+    HEOBNDKGHD\x12$\n\x06source\x18\x06\x20\x01(\x0b2\x0c.HNAOOMKGFCBR\x06so\
+    urce\x12\x20\n\x0bFLIEDGKFNOL\x18\x08\x20\x01(\rR\x0bFLIEDGKFNOL\x12#\n\
+    \x0bBNCCMEGJONF\x18\xa2\x01\x20\x01(\rH\0R\x0bBNCCMEGJONF\x121\n\x0bLLCO\
+    EPJFGPE\x18\xd8\x02\x20\x01(\x0e2\x0c.BDEJGKKACMAH\0R\x0bLLCOEPJFGPE\x12\
+    1\n\x0bIAECKEDODEF\x18\xe0\x06\x20\x01(\x0b2\x0c.FJJHCDGNDPDH\0R\x0bIAEC\
+    KEDODEFB\r\n\x0bBHNPKLCNDNGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

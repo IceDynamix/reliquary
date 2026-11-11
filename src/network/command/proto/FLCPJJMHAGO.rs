@@ -93,13 +93,13 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.HCBADDHNIDG = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.AFEMBLFCCCH = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.level = is.read_uint32()?;
                 },
                 120 => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for FLCPJJMHAGO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.HCBADDHNIDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HCBADDHNIDG);
+            my_size += ::protobuf::rt::uint32_size(1, self.HCBADDHNIDG);
         }
         if self.AFEMBLFCCCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AFEMBLFCCCH);
+            my_size += ::protobuf::rt::uint32_size(11, self.AFEMBLFCCCH);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
         }
         if self.exp != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.exp);
@@ -136,13 +136,13 @@ impl ::protobuf::Message for FLCPJJMHAGO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.HCBADDHNIDG != 0 {
-            os.write_uint32(3, self.HCBADDHNIDG)?;
+            os.write_uint32(1, self.HCBADDHNIDG)?;
         }
         if self.AFEMBLFCCCH != 0 {
-            os.write_uint32(13, self.AFEMBLFCCCH)?;
+            os.write_uint32(11, self.AFEMBLFCCCH)?;
         }
         if self.level != 0 {
-            os.write_uint32(14, self.level)?;
+            os.write_uint32(13, self.level)?;
         }
         if self.exp != 0 {
             os.write_uint32(15, self.exp)?;
@@ -202,8 +202,8 @@ impl ::protobuf::reflect::ProtobufValue for FLCPJJMHAGO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLCPJJMHAGO.proto\"y\n\x0bFLCPJJMHAGO\x12\x20\n\x0bHCBADDHNIDG\x18\
-    \x03\x20\x01(\rR\x0bHCBADDHNIDG\x12\x20\n\x0bAFEMBLFCCCH\x18\r\x20\x01(\
-    \rR\x0bAFEMBLFCCCH\x12\x14\n\x05level\x18\x0e\x20\x01(\rR\x05level\x12\
+    \x01\x20\x01(\rR\x0bHCBADDHNIDG\x12\x20\n\x0bAFEMBLFCCCH\x18\x0b\x20\x01\
+    (\rR\x0bAFEMBLFCCCH\x12\x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\
     \x10\n\x03exp\x18\x0f\x20\x01(\rR\x03expb\x06proto3\
 ";
 

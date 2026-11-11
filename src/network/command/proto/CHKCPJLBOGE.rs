@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CHKCPJLBOGE {
     // message fields
+    // @@protoc_insertion_point(field:CHKCPJLBOGE.POJGKJENENA)
+    pub POJGKJENENA: ::std::vec::Vec<super::FHCEIOHLADG::FHCEIOHLADG>,
     // @@protoc_insertion_point(field:CHKCPJLBOGE.BANBECDCDHG)
     pub BANBECDCDHG: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:CHKCPJLBOGE.DNNCAGJIOAP)
     pub DNNCAGJIOAP: u32,
-    // @@protoc_insertion_point(field:CHKCPJLBOGE.POJGKJENENA)
-    pub POJGKJENENA: ::std::vec::Vec<super::FHCEIOHLADG::FHCEIOHLADG>,
     // special fields
     // @@protoc_insertion_point(special_field:CHKCPJLBOGE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl CHKCPJLBOGE {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "POJGKJENENA",
+            |m: &CHKCPJLBOGE| { &m.POJGKJENENA },
+            |m: &mut CHKCPJLBOGE| { &mut m.POJGKJENENA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "BANBECDCDHG",
             |m: &CHKCPJLBOGE| { &m.BANBECDCDHG },
@@ -62,11 +67,6 @@ impl CHKCPJLBOGE {
             "DNNCAGJIOAP",
             |m: &CHKCPJLBOGE| { &m.DNNCAGJIOAP },
             |m: &mut CHKCPJLBOGE| { &mut m.DNNCAGJIOAP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "POJGKJENENA",
-            |m: &CHKCPJLBOGE| { &m.POJGKJENENA },
-            |m: &mut CHKCPJLBOGE| { &mut m.POJGKJENENA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CHKCPJLBOGE>(
             "CHKCPJLBOGE",
@@ -86,6 +86,9 @@ impl ::protobuf::Message for CHKCPJLBOGE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                34 => {
+                    self.POJGKJENENA.push(is.read_message()?);
+                },
                 58 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
@@ -101,11 +104,8 @@ impl ::protobuf::Message for CHKCPJLBOGE {
                     is.pop_limit(old_limit);
                     self.BANBECDCDHG.insert(key, value);
                 },
-                96 => {
+                112 => {
                     self.DNNCAGJIOAP = is.read_uint32()?;
-                },
-                114 => {
-                    self.POJGKJENENA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,6 +119,10 @@ impl ::protobuf::Message for CHKCPJLBOGE {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        for value in &self.POJGKJENENA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -126,18 +130,17 @@ impl ::protobuf::Message for CHKCPJLBOGE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.DNNCAGJIOAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DNNCAGJIOAP);
+            my_size += ::protobuf::rt::uint32_size(14, self.DNNCAGJIOAP);
         }
-        for value in &self.POJGKJENENA {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        for v in &self.POJGKJENENA {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
         for (k, v) in &self.BANBECDCDHG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
@@ -148,11 +151,8 @@ impl ::protobuf::Message for CHKCPJLBOGE {
             os.write_uint32(2, *v)?;
         };
         if self.DNNCAGJIOAP != 0 {
-            os.write_uint32(12, self.DNNCAGJIOAP)?;
+            os.write_uint32(14, self.DNNCAGJIOAP)?;
         }
-        for v in &self.POJGKJENENA {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -170,9 +170,9 @@ impl ::protobuf::Message for CHKCPJLBOGE {
     }
 
     fn clear(&mut self) {
+        self.POJGKJENENA.clear();
         self.BANBECDCDHG.clear();
         self.DNNCAGJIOAP = 0;
-        self.POJGKJENENA.clear();
         self.special_fields.clear();
     }
 
@@ -201,12 +201,12 @@ impl ::protobuf::reflect::ProtobufValue for CHKCPJLBOGE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CHKCPJLBOGE.proto\x1a\x11FHCEIOHLADG.proto\"\xe0\x01\n\x0bCHKCPJLB\
-    OGE\x12?\n\x0bBANBECDCDHG\x18\x07\x20\x03(\x0b2\x1d.CHKCPJLBOGE.BANBECDC\
-    DHGEntryR\x0bBANBECDCDHG\x12\x20\n\x0bDNNCAGJIOAP\x18\x0c\x20\x01(\rR\
-    \x0bDNNCAGJIOAP\x12.\n\x0bPOJGKJENENA\x18\x0e\x20\x03(\x0b2\x0c.FHCEIOHL\
-    ADGR\x0bPOJGKJENENA\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    OGE\x12.\n\x0bPOJGKJENENA\x18\x04\x20\x03(\x0b2\x0c.FHCEIOHLADGR\x0bPOJG\
+    KJENENA\x12?\n\x0bBANBECDCDHG\x18\x07\x20\x03(\x0b2\x1d.CHKCPJLBOGE.BANB\
+    ECDCDHGEntryR\x0bBANBECDCDHG\x12\x20\n\x0bDNNCAGJIOAP\x18\x0e\x20\x01(\r\
+    R\x0bDNNCAGJIOAP\x1a>\n\x10BANBECDCDHGEntry\x12\x10\n\x03key\x18\x01\x20\
+    \x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

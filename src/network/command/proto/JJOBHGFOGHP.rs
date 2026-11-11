@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JJOBHGFOGHP {
     // message fields
-    // @@protoc_insertion_point(field:JJOBHGFOGHP.NALMBOOCCIN)
-    pub NALMBOOCCIN: u32,
-    // @@protoc_insertion_point(field:JJOBHGFOGHP.source)
-    pub source: ::protobuf::EnumOrUnknown<super::H_8e2db1cf::H_8e2db1cf>,
-    // @@protoc_insertion_point(field:JJOBHGFOGHP.H_e211619c)
-    pub H_e211619c: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:JJOBHGFOGHP.BGFFICLCKHE)
     pub BGFFICLCKHE: u32,
     // @@protoc_insertion_point(field:JJOBHGFOGHP.MCJMHBIECMN)
     pub MCJMHBIECMN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JJOBHGFOGHP.H_7250b503)
+    pub H_7250b503: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:JJOBHGFOGHP.NALMBOOCCIN)
+    pub NALMBOOCCIN: u32,
+    // @@protoc_insertion_point(field:JJOBHGFOGHP.source)
+    pub source: ::protobuf::EnumOrUnknown<super::H_5e2a7c90::H_5e2a7c90>,
     // special fields
     // @@protoc_insertion_point(special_field:JJOBHGFOGHP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,21 +58,6 @@ impl JJOBHGFOGHP {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NALMBOOCCIN",
-            |m: &JJOBHGFOGHP| { &m.NALMBOOCCIN },
-            |m: &mut JJOBHGFOGHP| { &mut m.NALMBOOCCIN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &JJOBHGFOGHP| { &m.source },
-            |m: &mut JJOBHGFOGHP| { &mut m.source },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_e211619c",
-            |m: &JJOBHGFOGHP| { &m.H_e211619c },
-            |m: &mut JJOBHGFOGHP| { &mut m.H_e211619c },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BGFFICLCKHE",
             |m: &JJOBHGFOGHP| { &m.BGFFICLCKHE },
             |m: &mut JJOBHGFOGHP| { &mut m.BGFFICLCKHE },
@@ -81,6 +66,21 @@ impl JJOBHGFOGHP {
             "MCJMHBIECMN",
             |m: &JJOBHGFOGHP| { &m.MCJMHBIECMN },
             |m: &mut JJOBHGFOGHP| { &mut m.MCJMHBIECMN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "H_7250b503",
+            |m: &JJOBHGFOGHP| { &m.H_7250b503 },
+            |m: &mut JJOBHGFOGHP| { &mut m.H_7250b503 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NALMBOOCCIN",
+            |m: &JJOBHGFOGHP| { &m.NALMBOOCCIN },
+            |m: &mut JJOBHGFOGHP| { &mut m.NALMBOOCCIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &JJOBHGFOGHP| { &m.source },
+            |m: &mut JJOBHGFOGHP| { &mut m.source },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JJOBHGFOGHP>(
             "JJOBHGFOGHP",
@@ -100,26 +100,26 @@ impl ::protobuf::Message for JJOBHGFOGHP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.NALMBOOCCIN = is.read_uint32()?;
-                },
-                40 => {
-                    self.source = is.read_enum_or_unknown()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.H_e211619c)?;
-                },
-                48 => {
-                    self.H_e211619c.push(is.read_uint32()?);
-                },
-                96 => {
+                16 => {
                     self.BGFFICLCKHE = is.read_uint32()?;
                 },
-                106 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.MCJMHBIECMN)?;
                 },
-                104 => {
+                24 => {
                     self.MCJMHBIECMN.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.H_7250b503)?;
+                },
+                48 => {
+                    self.H_7250b503.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.NALMBOOCCIN = is.read_uint32()?;
+                },
+                96 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,34 +133,34 @@ impl ::protobuf::Message for JJOBHGFOGHP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NALMBOOCCIN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NALMBOOCCIN);
-        }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b) {
-            my_size += ::protobuf::rt::int32_size(5, self.source.value());
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.H_e211619c);
         if self.BGFFICLCKHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.BGFFICLCKHE);
+            my_size += ::protobuf::rt::uint32_size(2, self.BGFFICLCKHE);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.MCJMHBIECMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.MCJMHBIECMN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.H_7250b503);
+        if self.NALMBOOCCIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.NALMBOOCCIN);
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e) {
+            my_size += ::protobuf::rt::int32_size(12, self.source.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NALMBOOCCIN != 0 {
-            os.write_uint32(1, self.NALMBOOCCIN)?;
-        }
-        if self.source != ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.source))?;
-        }
-        os.write_repeated_packed_uint32(6, &self.H_e211619c)?;
         if self.BGFFICLCKHE != 0 {
-            os.write_uint32(12, self.BGFFICLCKHE)?;
+            os.write_uint32(2, self.BGFFICLCKHE)?;
         }
-        os.write_repeated_packed_uint32(13, &self.MCJMHBIECMN)?;
+        os.write_repeated_packed_uint32(3, &self.MCJMHBIECMN)?;
+        os.write_repeated_packed_uint32(6, &self.H_7250b503)?;
+        if self.NALMBOOCCIN != 0 {
+            os.write_uint32(9, self.NALMBOOCCIN)?;
+        }
+        if self.source != ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -178,21 +178,21 @@ impl ::protobuf::Message for JJOBHGFOGHP {
     }
 
     fn clear(&mut self) {
-        self.NALMBOOCCIN = 0;
-        self.source = ::protobuf::EnumOrUnknown::new(super::H_8e2db1cf::H_8e2db1cf::H_3569ff3b);
-        self.H_e211619c.clear();
         self.BGFFICLCKHE = 0;
         self.MCJMHBIECMN.clear();
+        self.H_7250b503.clear();
+        self.NALMBOOCCIN = 0;
+        self.source = ::protobuf::EnumOrUnknown::new(super::H_5e2a7c90::H_5e2a7c90::H_3ac71e8e);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JJOBHGFOGHP {
         static instance: JJOBHGFOGHP = JJOBHGFOGHP {
-            NALMBOOCCIN: 0,
-            source: ::protobuf::EnumOrUnknown::from_i32(0),
-            H_e211619c: ::std::vec::Vec::new(),
             BGFFICLCKHE: 0,
             MCJMHBIECMN: ::std::vec::Vec::new(),
+            H_7250b503: ::std::vec::Vec::new(),
+            NALMBOOCCIN: 0,
+            source: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -217,12 +217,12 @@ impl ::protobuf::reflect::ProtobufValue for JJOBHGFOGHP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11JJOBHGFOGHP.proto\x1a\x10H_8e2db1cf.proto\"\xb7\x01\n\x0bJJOBHGFOG\
-    HP\x12\x20\n\x0bNALMBOOCCIN\x18\x01\x20\x01(\rR\x0bNALMBOOCCIN\x12#\n\
-    \x06source\x18\x05\x20\x01(\x0e2\x0b.H_8e2db1cfR\x06source\x12\x1d\n\nH_\
-    e211619c\x18\x06\x20\x03(\rR\tHE211619c\x12\x20\n\x0bBGFFICLCKHE\x18\x0c\
-    \x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\x0bMCJMHBIECMN\x18\r\x20\x03(\rR\
-    \x0bMCJMHBIECMNb\x06proto3\
+    \n\x11JJOBHGFOGHP.proto\x1a\x10H_5e2a7c90.proto\"\xb7\x01\n\x0bJJOBHGFOG\
+    HP\x12\x20\n\x0bBGFFICLCKHE\x18\x02\x20\x01(\rR\x0bBGFFICLCKHE\x12\x20\n\
+    \x0bMCJMHBIECMN\x18\x03\x20\x03(\rR\x0bMCJMHBIECMN\x12\x1d\n\nH_7250b503\
+    \x18\x06\x20\x03(\rR\tH7250b503\x12\x20\n\x0bNALMBOOCCIN\x18\t\x20\x01(\
+    \rR\x0bNALMBOOCCIN\x12#\n\x06source\x18\x0c\x20\x01(\x0e2\x0b.H_5e2a7c90\
+    R\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -240,7 +240,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::H_8e2db1cf::file_descriptor().clone());
+            deps.push(super::H_5e2a7c90::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(JJOBHGFOGHP::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

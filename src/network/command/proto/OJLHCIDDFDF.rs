@@ -79,10 +79,10 @@ impl ::protobuf::Message for OJLHCIDDFDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLCPOHADBKB)?;
                 },
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBAPICNDIDN)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for OJLHCIDDFDF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.LLCPOHADBKB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.PBAPICNDIDN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for OJLHCIDDFDF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OJLHCIDDFDF.proto\x1a\x11IPGIJFNAFLC.proto\x1a\x11OKIPFIENKIF.prot\
-    o\"m\n\x0bOJLHCIDDFDF\x12.\n\x0bLLCPOHADBKB\x18\x06\x20\x01(\x0b2\x0c.IP\
-    GIJFNAFLCR\x0bLLCPOHADBKB\x12.\n\x0bPBAPICNDIDN\x18\n\x20\x01(\x0b2\x0c.\
-    OKIPFIENKIFR\x0bPBAPICNDIDNb\x06proto3\
+    o\"m\n\x0bOJLHCIDDFDF\x12.\n\x0bLLCPOHADBKB\x18\x0b\x20\x01(\x0b2\x0c.IP\
+    GIJFNAFLCR\x0bLLCPOHADBKB\x12.\n\x0bPBAPICNDIDN\x18\x0f\x20\x01(\x0b2\
+    \x0c.OKIPFIENKIFR\x0bPBAPICNDIDNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

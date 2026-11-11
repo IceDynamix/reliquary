@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                72 => {
                     self.record_id = is.read_uint32()?;
                 },
-                74 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPBHLLOJNEK)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.record_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.record_id);
         }
         if let Some(v) = self.PPBHLLOJNEK.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for ChallengeStoryStatistics {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.record_id != 0 {
-            os.write_uint32(6, self.record_id)?;
+            os.write_uint32(9, self.record_id)?;
         }
         if let Some(v) = self.PPBHLLOJNEK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeStoryStatistics {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChallengeStoryStatistics.proto\x1a\x11EIKPHEMHIOH.proto\"g\n\x18Ch\
-    allengeStoryStatistics\x12\x1b\n\trecord_id\x18\x06\x20\x01(\rR\x08recor\
-    dId\x12.\n\x0bPPBHLLOJNEK\x18\t\x20\x01(\x0b2\x0c.EIKPHEMHIOHR\x0bPPBHLL\
+    allengeStoryStatistics\x12\x1b\n\trecord_id\x18\t\x20\x01(\rR\x08recordI\
+    d\x12.\n\x0bPPBHLLOJNEK\x18\x0f\x20\x01(\x0b2\x0c.EIKPHEMHIOHR\x0bPPBHLL\
     OJNEKb\x06proto3\
 ";
 

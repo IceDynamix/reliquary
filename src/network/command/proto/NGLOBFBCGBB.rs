@@ -79,10 +79,10 @@ impl ::protobuf::Message for NGLOBFBCGBB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
                     self.CLLFACKFNBO = is.read_uint32()?;
                 },
-                112 => {
+                88 => {
                     self.id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NGLOBFBCGBB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CLLFACKFNBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.CLLFACKFNBO);
+            my_size += ::protobuf::rt::uint32_size(4, self.CLLFACKFNBO);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.id);
+            my_size += ::protobuf::rt::uint32_size(11, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NGLOBFBCGBB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CLLFACKFNBO != 0 {
-            os.write_uint32(1, self.CLLFACKFNBO)?;
+            os.write_uint32(4, self.CLLFACKFNBO)?;
         }
         if self.id != 0 {
-            os.write_uint32(14, self.id)?;
+            os.write_uint32(11, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NGLOBFBCGBB {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NGLOBFBCGBB.proto\"?\n\x0bNGLOBFBCGBB\x12\x20\n\x0bCLLFACKFNBO\x18\
-    \x01\x20\x01(\rR\x0bCLLFACKFNBO\x12\x0e\n\x02id\x18\x0e\x20\x01(\rR\x02i\
+    \x04\x20\x01(\rR\x0bCLLFACKFNBO\x12\x0e\n\x02id\x18\x0b\x20\x01(\rR\x02i\
     db\x06proto3\
 ";
 

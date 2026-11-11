@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PAEFDELFKJK {
     // message fields
-    // @@protoc_insertion_point(field:PAEFDELFKJK.KBLKLGDCOMF)
-    pub KBLKLGDCOMF: ::protobuf::MessageField<super::EJAKBKOEEPC::EJAKBKOEEPC>,
-    // @@protoc_insertion_point(field:PAEFDELFKJK.AMLDHBMIGEN)
-    pub AMLDHBMIGEN: ::protobuf::MessageField<super::ICMGDJBDFEA::ICMGDJBDFEA>,
+    // @@protoc_insertion_point(field:PAEFDELFKJK.BAMDEHAICDA)
+    pub BAMDEHAICDA: ::protobuf::MessageField<super::H_02594731::H_02594731>,
     // @@protoc_insertion_point(field:PAEFDELFKJK.BEBEEMKOBNN)
     pub BEBEEMKOBNN: ::protobuf::EnumOrUnknown<super::BattleRecordType::BattleRecordType>,
-    // @@protoc_insertion_point(field:PAEFDELFKJK.BAMDEHAICDA)
-    pub BAMDEHAICDA: ::protobuf::MessageField<super::H_c27e5a5b::H_c27e5a5b>,
+    // @@protoc_insertion_point(field:PAEFDELFKJK.AMLDHBMIGEN)
+    pub AMLDHBMIGEN: ::protobuf::MessageField<super::ICMGDJBDFEA::ICMGDJBDFEA>,
+    // @@protoc_insertion_point(field:PAEFDELFKJK.KBLKLGDCOMF)
+    pub KBLKLGDCOMF: ::protobuf::MessageField<super::EJAKBKOEEPC::EJAKBKOEEPC>,
     // special fields
     // @@protoc_insertion_point(special_field:PAEFDELFKJK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl PAEFDELFKJK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJAKBKOEEPC::EJAKBKOEEPC>(
-            "KBLKLGDCOMF",
-            |m: &PAEFDELFKJK| { &m.KBLKLGDCOMF },
-            |m: &mut PAEFDELFKJK| { &mut m.KBLKLGDCOMF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICMGDJBDFEA::ICMGDJBDFEA>(
-            "AMLDHBMIGEN",
-            |m: &PAEFDELFKJK| { &m.AMLDHBMIGEN },
-            |m: &mut PAEFDELFKJK| { &mut m.AMLDHBMIGEN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_02594731::H_02594731>(
+            "BAMDEHAICDA",
+            |m: &PAEFDELFKJK| { &m.BAMDEHAICDA },
+            |m: &mut PAEFDELFKJK| { &mut m.BAMDEHAICDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEBEEMKOBNN",
             |m: &PAEFDELFKJK| { &m.BEBEEMKOBNN },
             |m: &mut PAEFDELFKJK| { &mut m.BEBEEMKOBNN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::H_c27e5a5b::H_c27e5a5b>(
-            "BAMDEHAICDA",
-            |m: &PAEFDELFKJK| { &m.BAMDEHAICDA },
-            |m: &mut PAEFDELFKJK| { &mut m.BAMDEHAICDA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICMGDJBDFEA::ICMGDJBDFEA>(
+            "AMLDHBMIGEN",
+            |m: &PAEFDELFKJK| { &m.AMLDHBMIGEN },
+            |m: &mut PAEFDELFKJK| { &mut m.AMLDHBMIGEN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJAKBKOEEPC::EJAKBKOEEPC>(
+            "KBLKLGDCOMF",
+            |m: &PAEFDELFKJK| { &m.KBLKLGDCOMF },
+            |m: &mut PAEFDELFKJK| { &mut m.KBLKLGDCOMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PAEFDELFKJK>(
             "PAEFDELFKJK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PAEFDELFKJK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBLKLGDCOMF)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAMDEHAICDA)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMLDHBMIGEN)?;
-                },
-                56 => {
+                48 => {
                     self.BEBEEMKOBNN = is.read_enum_or_unknown()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAMDEHAICDA)?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMLDHBMIGEN)?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KBLKLGDCOMF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for PAEFDELFKJK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KBLKLGDCOMF.as_ref() {
+        if let Some(v) = self.BAMDEHAICDA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BattleRecordType_BattleRecordNone) {
+            my_size += ::protobuf::rt::int32_size(6, self.BEBEEMKOBNN.value());
         }
         if let Some(v) = self.AMLDHBMIGEN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BattleRecordType_BattleRecordNone) {
-            my_size += ::protobuf::rt::int32_size(7, self.BEBEEMKOBNN.value());
-        }
-        if let Some(v) = self.BAMDEHAICDA.as_ref() {
+        if let Some(v) = self.KBLKLGDCOMF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,17 +138,17 @@ impl ::protobuf::Message for PAEFDELFKJK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KBLKLGDCOMF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.AMLDHBMIGEN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.BAMDEHAICDA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.BEBEEMKOBNN != ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BattleRecordType_BattleRecordNone) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.BEBEEMKOBNN))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.BEBEEMKOBNN))?;
         }
-        if let Some(v) = self.BAMDEHAICDA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.AMLDHBMIGEN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.KBLKLGDCOMF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for PAEFDELFKJK {
     }
 
     fn clear(&mut self) {
-        self.KBLKLGDCOMF.clear();
-        self.AMLDHBMIGEN.clear();
-        self.BEBEEMKOBNN = ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BattleRecordType_BattleRecordNone);
         self.BAMDEHAICDA.clear();
+        self.BEBEEMKOBNN = ::protobuf::EnumOrUnknown::new(super::BattleRecordType::BattleRecordType::BattleRecordType_BattleRecordNone);
+        self.AMLDHBMIGEN.clear();
+        self.KBLKLGDCOMF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PAEFDELFKJK {
         static instance: PAEFDELFKJK = PAEFDELFKJK {
-            KBLKLGDCOMF: ::protobuf::MessageField::none(),
-            AMLDHBMIGEN: ::protobuf::MessageField::none(),
-            BEBEEMKOBNN: ::protobuf::EnumOrUnknown::from_i32(0),
             BAMDEHAICDA: ::protobuf::MessageField::none(),
+            BEBEEMKOBNN: ::protobuf::EnumOrUnknown::from_i32(0),
+            AMLDHBMIGEN: ::protobuf::MessageField::none(),
+            KBLKLGDCOMF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -205,12 +205,12 @@ impl ::protobuf::reflect::ProtobufValue for PAEFDELFKJK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PAEFDELFKJK.proto\x1a\x16BattleRecordType.proto\x1a\x11EJAKBKOEEPC\
-    .proto\x1a\x10H_c27e5a5b.proto\x1a\x11ICMGDJBDFEA.proto\"\xd1\x01\n\x0bP\
-    AEFDELFKJK\x12.\n\x0bKBLKLGDCOMF\x18\x01\x20\x01(\x0b2\x0c.EJAKBKOEEPCR\
-    \x0bKBLKLGDCOMF\x12.\n\x0bAMLDHBMIGEN\x18\x02\x20\x01(\x0b2\x0c.ICMGDJBD\
-    FEAR\x0bAMLDHBMIGEN\x123\n\x0bBEBEEMKOBNN\x18\x07\x20\x01(\x0e2\x11.Batt\
-    leRecordTypeR\x0bBEBEEMKOBNN\x12-\n\x0bBAMDEHAICDA\x18\x0b\x20\x01(\x0b2\
-    \x0b.H_c27e5a5bR\x0bBAMDEHAICDAb\x06proto3\
+    .proto\x1a\x10H_02594731.proto\x1a\x11ICMGDJBDFEA.proto\"\xd1\x01\n\x0bP\
+    AEFDELFKJK\x12-\n\x0bBAMDEHAICDA\x18\x04\x20\x01(\x0b2\x0b.H_02594731R\
+    \x0bBAMDEHAICDA\x123\n\x0bBEBEEMKOBNN\x18\x06\x20\x01(\x0e2\x11.BattleRe\
+    cordTypeR\x0bBEBEEMKOBNN\x12.\n\x0bAMLDHBMIGEN\x18\t\x20\x01(\x0b2\x0c.I\
+    CMGDJBDFEAR\x0bAMLDHBMIGEN\x12.\n\x0bKBLKLGDCOMF\x18\x0f\x20\x01(\x0b2\
+    \x0c.EJAKBKOEEPCR\x0bKBLKLGDCOMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -230,7 +230,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::BattleRecordType::file_descriptor().clone());
             deps.push(super::EJAKBKOEEPC::file_descriptor().clone());
-            deps.push(super::H_c27e5a5b::file_descriptor().clone());
+            deps.push(super::H_02594731::file_descriptor().clone());
             deps.push(super::ICMGDJBDFEA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PAEFDELFKJK::generated_message_descriptor_data());

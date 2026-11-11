@@ -79,10 +79,10 @@ impl ::protobuf::Message for IGJLLHMJKPC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                72 => {
                     self.IMKGOKGKDPH = is.read_bool()?;
                 },
-                72 => {
+                96 => {
                     self.gacha_random = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for IGJLLHMJKPC {
             my_size += 1 + 1;
         }
         if self.gacha_random != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.gacha_random);
+            my_size += ::protobuf::rt::uint32_size(12, self.gacha_random);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for IGJLLHMJKPC {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IMKGOKGKDPH != false {
-            os.write_bool(8, self.IMKGOKGKDPH)?;
+            os.write_bool(9, self.IMKGOKGKDPH)?;
         }
         if self.gacha_random != 0 {
-            os.write_uint32(9, self.gacha_random)?;
+            os.write_uint32(12, self.gacha_random)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IGJLLHMJKPC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IGJLLHMJKPC.proto\"R\n\x0bIGJLLHMJKPC\x12\x20\n\x0bIMKGOKGKDPH\x18\
-    \x08\x20\x01(\x08R\x0bIMKGOKGKDPH\x12!\n\x0cgacha_random\x18\t\x20\x01(\
+    \t\x20\x01(\x08R\x0bIMKGOKGKDPH\x12!\n\x0cgacha_random\x18\x0c\x20\x01(\
     \rR\x0bgachaRandomb\x06proto3\
 ";
 

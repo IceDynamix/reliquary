@@ -79,10 +79,10 @@ impl ::protobuf::Message for BMMHJIFCGNO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                24 => {
                     self.MIPKOFFGPFA = is.read_uint32()?;
                 },
-                120 => {
+                80 => {
                     self.KAJCFPKEGBP = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for BMMHJIFCGNO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MIPKOFFGPFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.MIPKOFFGPFA);
+            my_size += ::protobuf::rt::uint32_size(3, self.MIPKOFFGPFA);
         }
         if self.KAJCFPKEGBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KAJCFPKEGBP);
+            my_size += ::protobuf::rt::uint32_size(10, self.KAJCFPKEGBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for BMMHJIFCGNO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MIPKOFFGPFA != 0 {
-            os.write_uint32(9, self.MIPKOFFGPFA)?;
+            os.write_uint32(3, self.MIPKOFFGPFA)?;
         }
         if self.KAJCFPKEGBP != 0 {
-            os.write_uint32(15, self.KAJCFPKEGBP)?;
+            os.write_uint32(10, self.KAJCFPKEGBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for BMMHJIFCGNO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMMHJIFCGNO.proto\"Q\n\x0bBMMHJIFCGNO\x12\x20\n\x0bMIPKOFFGPFA\x18\
-    \t\x20\x01(\rR\x0bMIPKOFFGPFA\x12\x20\n\x0bKAJCFPKEGBP\x18\x0f\x20\x01(\
+    \x03\x20\x01(\rR\x0bMIPKOFFGPFA\x12\x20\n\x0bKAJCFPKEGBP\x18\n\x20\x01(\
     \rR\x0bKAJCFPKEGBPb\x06proto3\
 ";
 

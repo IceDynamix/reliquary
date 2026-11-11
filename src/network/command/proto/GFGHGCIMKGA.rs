@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GFGHGCIMKGA {
     // message fields
-    // @@protoc_insertion_point(field:GFGHGCIMKGA.OPAEGCBNACJ)
-    pub OPAEGCBNACJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GFGHGCIMKGA.EGDEKFJJNEP)
     pub EGDEKFJJNEP: u32,
+    // @@protoc_insertion_point(field:GFGHGCIMKGA.OPAEGCBNACJ)
+    pub OPAEGCBNACJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GFGHGCIMKGA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GFGHGCIMKGA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OPAEGCBNACJ",
-            |m: &GFGHGCIMKGA| { &m.OPAEGCBNACJ },
-            |m: &mut GFGHGCIMKGA| { &mut m.OPAEGCBNACJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EGDEKFJJNEP",
             |m: &GFGHGCIMKGA| { &m.EGDEKFJJNEP },
             |m: &mut GFGHGCIMKGA| { &mut m.EGDEKFJJNEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OPAEGCBNACJ",
+            |m: &GFGHGCIMKGA| { &m.OPAEGCBNACJ },
+            |m: &mut GFGHGCIMKGA| { &mut m.OPAEGCBNACJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GFGHGCIMKGA>(
             "GFGHGCIMKGA",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                8 => {
+                    self.EGDEKFJJNEP = is.read_uint32()?;
+                },
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.OPAEGCBNACJ)?;
                 },
-                40 => {
+                64 => {
                     self.OPAEGCBNACJ.push(is.read_uint32()?);
-                },
-                112 => {
-                    self.EGDEKFJJNEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.OPAEGCBNACJ);
         if self.EGDEKFJJNEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EGDEKFJJNEP);
+            my_size += ::protobuf::rt::uint32_size(1, self.EGDEKFJJNEP);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.OPAEGCBNACJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.OPAEGCBNACJ)?;
         if self.EGDEKFJJNEP != 0 {
-            os.write_uint32(14, self.EGDEKFJJNEP)?;
+            os.write_uint32(1, self.EGDEKFJJNEP)?;
         }
+        os.write_repeated_packed_uint32(8, &self.OPAEGCBNACJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GFGHGCIMKGA {
     }
 
     fn clear(&mut self) {
-        self.OPAEGCBNACJ.clear();
         self.EGDEKFJJNEP = 0;
+        self.OPAEGCBNACJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GFGHGCIMKGA {
         static instance: GFGHGCIMKGA = GFGHGCIMKGA {
-            OPAEGCBNACJ: ::std::vec::Vec::new(),
             EGDEKFJJNEP: 0,
+            OPAEGCBNACJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for GFGHGCIMKGA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11GFGHGCIMKGA.proto\"Q\n\x0bGFGHGCIMKGA\x12\x20\n\x0bOPAEGCBNACJ\x18\
-    \x05\x20\x03(\rR\x0bOPAEGCBNACJ\x12\x20\n\x0bEGDEKFJJNEP\x18\x0e\x20\x01\
-    (\rR\x0bEGDEKFJJNEPb\x06proto3\
+    \n\x11GFGHGCIMKGA.proto\"Q\n\x0bGFGHGCIMKGA\x12\x20\n\x0bEGDEKFJJNEP\x18\
+    \x01\x20\x01(\rR\x0bEGDEKFJJNEP\x12\x20\n\x0bOPAEGCBNACJ\x18\x08\x20\x03\
+    (\rR\x0bOPAEGCBNACJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

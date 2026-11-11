@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HBOCFEEEEII {
     // message fields
-    // @@protoc_insertion_point(field:HBOCFEEEEII.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:HBOCFEEEEII.JALHKMEOOPN)
     pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:HBOCFEEEEII.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:HBOCFEEEEII.item_list)
     pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:HBOCFEEEEII.group_id)
+    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HBOCFEEEEII.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl HBOCFEEEEII {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &HBOCFEEEEII| { &m.group_id },
-            |m: &mut HBOCFEEEEII| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JALHKMEOOPN",
             |m: &HBOCFEEEEII| { &m.JALHKMEOOPN },
             |m: &mut HBOCFEEEEII| { &mut m.JALHKMEOOPN },
@@ -74,6 +69,11 @@ impl HBOCFEEEEII {
             "item_list",
             |m: &HBOCFEEEEII| { &m.item_list },
             |m: &mut HBOCFEEEEII| { &mut m.item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &HBOCFEEEEII| { &m.group_id },
+            |m: &mut HBOCFEEEEII| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HBOCFEEEEII>(
             "HBOCFEEEEII",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HBOCFEEEEII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                32 => {
+                40 => {
                     self.JALHKMEOOPN = is.read_uint32()?;
                 },
-                72 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
+                },
+                112 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for HBOCFEEEEII {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
-        }
         if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JALHKMEOOPN);
+            my_size += ::protobuf::rt::uint32_size(5, self.JALHKMEOOPN);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for HBOCFEEEEII {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(2, self.group_id)?;
-        }
         if self.JALHKMEOOPN != 0 {
-            os.write_uint32(4, self.JALHKMEOOPN)?;
+            os.write_uint32(5, self.JALHKMEOOPN)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(14, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for HBOCFEEEEII {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
         self.JALHKMEOOPN = 0;
         self.retcode = 0;
         self.item_list.clear();
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HBOCFEEEEII {
         static instance: HBOCFEEEEII = HBOCFEEEEII {
-            group_id: 0,
             JALHKMEOOPN: 0,
             retcode: 0,
             item_list: ::protobuf::MessageField::none(),
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for HBOCFEEEEII {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HBOCFEEEEII.proto\x1a\x0eItemList.proto\"\x8c\x01\n\x0bHBOCFEEEEII\
-    \x12\x19\n\x08group_id\x18\x02\x20\x01(\rR\x07groupId\x12\x20\n\x0bJALHK\
-    MEOOPN\x18\x04\x20\x01(\rR\x0bJALHKMEOOPN\x12\x18\n\x07retcode\x18\t\x20\
-    \x01(\rR\x07retcode\x12&\n\titem_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\
-    \x08itemListb\x06proto3\
+    \x12\x20\n\x0bJALHKMEOOPN\x18\x05\x20\x01(\rR\x0bJALHKMEOOPN\x12\x18\n\
+    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12&\n\titem_list\x18\n\x20\
+    \x01(\x0b2\t.ItemListR\x08itemList\x12\x19\n\x08group_id\x18\x0e\x20\x01\
+    (\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

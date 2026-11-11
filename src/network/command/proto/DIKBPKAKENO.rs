@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DIKBPKAKENO {
     // message fields
-    // @@protoc_insertion_point(field:DIKBPKAKENO.EFCAJENMLKA)
-    pub EFCAJENMLKA: u32,
     // @@protoc_insertion_point(field:DIKBPKAKENO.status)
     pub status: ::protobuf::EnumOrUnknown<super::NKLAEHJPIMN::NKLAEHJPIMN>,
+    // @@protoc_insertion_point(field:DIKBPKAKENO.EFCAJENMLKA)
+    pub EFCAJENMLKA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DIKBPKAKENO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DIKBPKAKENO {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFCAJENMLKA",
-            |m: &DIKBPKAKENO| { &m.EFCAJENMLKA },
-            |m: &mut DIKBPKAKENO| { &mut m.EFCAJENMLKA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &DIKBPKAKENO| { &m.status },
             |m: &mut DIKBPKAKENO| { &mut m.status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EFCAJENMLKA",
+            |m: &DIKBPKAKENO| { &m.EFCAJENMLKA },
+            |m: &mut DIKBPKAKENO| { &mut m.EFCAJENMLKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DIKBPKAKENO>(
             "DIKBPKAKENO",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DIKBPKAKENO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.EFCAJENMLKA = is.read_uint32()?;
-                },
-                104 => {
+                88 => {
                     self.status = is.read_enum_or_unknown()?;
+                },
+                112 => {
+                    self.EFCAJENMLKA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DIKBPKAKENO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EFCAJENMLKA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EFCAJENMLKA);
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::NKLAEHJPIMN::NKLAEHJPIMN::NKLAEHJPIMN_FGOFDMDBMAL) {
-            my_size += ::protobuf::rt::int32_size(13, self.status.value());
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
+        }
+        if self.EFCAJENMLKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.EFCAJENMLKA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DIKBPKAKENO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EFCAJENMLKA != 0 {
-            os.write_uint32(4, self.EFCAJENMLKA)?;
-        }
         if self.status != ::protobuf::EnumOrUnknown::new(super::NKLAEHJPIMN::NKLAEHJPIMN::NKLAEHJPIMN_FGOFDMDBMAL) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.EFCAJENMLKA != 0 {
+            os.write_uint32(14, self.EFCAJENMLKA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for DIKBPKAKENO {
     }
 
     fn clear(&mut self) {
-        self.EFCAJENMLKA = 0;
         self.status = ::protobuf::EnumOrUnknown::new(super::NKLAEHJPIMN::NKLAEHJPIMN::NKLAEHJPIMN_FGOFDMDBMAL);
+        self.EFCAJENMLKA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DIKBPKAKENO {
         static instance: DIKBPKAKENO = DIKBPKAKENO {
-            EFCAJENMLKA: 0,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            EFCAJENMLKA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DIKBPKAKENO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DIKBPKAKENO.proto\x1a\x11NKLAEHJPIMN.proto\"U\n\x0bDIKBPKAKENO\x12\
-    \x20\n\x0bEFCAJENMLKA\x18\x04\x20\x01(\rR\x0bEFCAJENMLKA\x12$\n\x06statu\
-    s\x18\r\x20\x01(\x0e2\x0c.NKLAEHJPIMNR\x06statusb\x06proto3\
+    $\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.NKLAEHJPIMNR\x06status\x12\x20\n\
+    \x0bEFCAJENMLKA\x18\x0e\x20\x01(\rR\x0bEFCAJENMLKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

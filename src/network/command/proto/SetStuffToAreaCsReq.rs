@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetStuffToAreaCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.CEAMLKCMMGD)
+    pub CEAMLKCMMGD: u32,
     // @@protoc_insertion_point(field:SetStuffToAreaCsReq.PIKEPJNDJPE)
     pub PIKEPJNDJPE: u32,
     // @@protoc_insertion_point(field:SetStuffToAreaCsReq.pos_index)
     pub pos_index: ::protobuf::EnumOrUnknown<super::GBAEPOLFFMG::GBAEPOLFFMG>,
-    // @@protoc_insertion_point(field:SetStuffToAreaCsReq.CEAMLKCMMGD)
-    pub CEAMLKCMMGD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetStuffToAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl SetStuffToAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CEAMLKCMMGD",
+            |m: &SetStuffToAreaCsReq| { &m.CEAMLKCMMGD },
+            |m: &mut SetStuffToAreaCsReq| { &mut m.CEAMLKCMMGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PIKEPJNDJPE",
             |m: &SetStuffToAreaCsReq| { &m.PIKEPJNDJPE },
             |m: &mut SetStuffToAreaCsReq| { &mut m.PIKEPJNDJPE },
@@ -62,11 +67,6 @@ impl SetStuffToAreaCsReq {
             "pos_index",
             |m: &SetStuffToAreaCsReq| { &m.pos_index },
             |m: &mut SetStuffToAreaCsReq| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEAMLKCMMGD",
-            |m: &SetStuffToAreaCsReq| { &m.CEAMLKCMMGD },
-            |m: &mut SetStuffToAreaCsReq| { &mut m.CEAMLKCMMGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetStuffToAreaCsReq>(
             "SetStuffToAreaCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                32 => {
+                    self.CEAMLKCMMGD = is.read_uint32()?;
+                },
+                64 => {
                     self.PIKEPJNDJPE = is.read_uint32()?;
                 },
-                48 => {
+                112 => {
                     self.pos_index = is.read_enum_or_unknown()?;
-                },
-                96 => {
-                    self.CEAMLKCMMGD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CEAMLKCMMGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.CEAMLKCMMGD);
+        }
         if self.PIKEPJNDJPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PIKEPJNDJPE);
+            my_size += ::protobuf::rt::uint32_size(8, self.PIKEPJNDJPE);
         }
         if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(6, self.pos_index.value());
-        }
-        if self.CEAMLKCMMGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.CEAMLKCMMGD);
+            my_size += ::protobuf::rt::int32_size(14, self.pos_index.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.CEAMLKCMMGD != 0 {
+            os.write_uint32(4, self.CEAMLKCMMGD)?;
+        }
         if self.PIKEPJNDJPE != 0 {
-            os.write_uint32(1, self.PIKEPJNDJPE)?;
+            os.write_uint32(8, self.PIKEPJNDJPE)?;
         }
         if self.pos_index != ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.pos_index))?;
-        }
-        if self.CEAMLKCMMGD != 0 {
-            os.write_uint32(12, self.CEAMLKCMMGD)?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.pos_index))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SetStuffToAreaCsReq {
     }
 
     fn clear(&mut self) {
+        self.CEAMLKCMMGD = 0;
         self.PIKEPJNDJPE = 0;
         self.pos_index = ::protobuf::EnumOrUnknown::new(super::GBAEPOLFFMG::GBAEPOLFFMG::GBAEPOLFFMG_NLCDGIPGFDJ);
-        self.CEAMLKCMMGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetStuffToAreaCsReq {
         static instance: SetStuffToAreaCsReq = SetStuffToAreaCsReq {
+            CEAMLKCMMGD: 0,
             PIKEPJNDJPE: 0,
             pos_index: ::protobuf::EnumOrUnknown::from_i32(0),
-            CEAMLKCMMGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetStuffToAreaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19SetStuffToAreaCsReq.proto\x1a\x11GBAEPOLFFMG.proto\"\x84\x01\n\x13\
-    SetStuffToAreaCsReq\x12\x20\n\x0bPIKEPJNDJPE\x18\x01\x20\x01(\rR\x0bPIKE\
-    PJNDJPE\x12)\n\tpos_index\x18\x06\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x08posI\
-    ndex\x12\x20\n\x0bCEAMLKCMMGD\x18\x0c\x20\x01(\rR\x0bCEAMLKCMMGDb\x06pro\
+    SetStuffToAreaCsReq\x12\x20\n\x0bCEAMLKCMMGD\x18\x04\x20\x01(\rR\x0bCEAM\
+    LKCMMGD\x12\x20\n\x0bPIKEPJNDJPE\x18\x08\x20\x01(\rR\x0bPIKEPJNDJPE\x12)\
+    \n\tpos_index\x18\x0e\x20\x01(\x0e2\x0c.GBAEPOLFFMGR\x08posIndexb\x06pro\
     to3\
 ";
 

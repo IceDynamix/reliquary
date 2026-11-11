@@ -30,14 +30,14 @@ pub struct OPIHMOOHIPC {
     // message fields
     // @@protoc_insertion_point(field:OPIHMOOHIPC.AINKFEINNAK)
     pub AINKFEINNAK: bool,
-    // @@protoc_insertion_point(field:OPIHMOOHIPC.damage)
-    pub damage: u32,
     // @@protoc_insertion_point(field:OPIHMOOHIPC.DHJANOFGDNP)
     pub DHJANOFGDNP: u64,
-    // @@protoc_insertion_point(field:OPIHMOOHIPC.IPDDIKPHGPE)
-    pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
     // @@protoc_insertion_point(field:OPIHMOOHIPC.OLNMGFFJMOJ)
     pub OLNMGFFJMOJ: bool,
+    // @@protoc_insertion_point(field:OPIHMOOHIPC.damage)
+    pub damage: u32,
+    // @@protoc_insertion_point(field:OPIHMOOHIPC.IPDDIKPHGPE)
+    pub IPDDIKPHGPE: ::protobuf::EnumOrUnknown<super::DILHPBMCOFK::DILHPBMCOFK>,
     // special fields
     // @@protoc_insertion_point(special_field:OPIHMOOHIPC.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,24 +63,24 @@ impl OPIHMOOHIPC {
             |m: &mut OPIHMOOHIPC| { &mut m.AINKFEINNAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "damage",
-            |m: &OPIHMOOHIPC| { &m.damage },
-            |m: &mut OPIHMOOHIPC| { &mut m.damage },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DHJANOFGDNP",
             |m: &OPIHMOOHIPC| { &m.DHJANOFGDNP },
             |m: &mut OPIHMOOHIPC| { &mut m.DHJANOFGDNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPDDIKPHGPE",
-            |m: &OPIHMOOHIPC| { &m.IPDDIKPHGPE },
-            |m: &mut OPIHMOOHIPC| { &mut m.IPDDIKPHGPE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "OLNMGFFJMOJ",
             |m: &OPIHMOOHIPC| { &m.OLNMGFFJMOJ },
             |m: &mut OPIHMOOHIPC| { &mut m.OLNMGFFJMOJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "damage",
+            |m: &OPIHMOOHIPC| { &m.damage },
+            |m: &mut OPIHMOOHIPC| { &mut m.damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPDDIKPHGPE",
+            |m: &OPIHMOOHIPC| { &m.IPDDIKPHGPE },
+            |m: &mut OPIHMOOHIPC| { &mut m.IPDDIKPHGPE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OPIHMOOHIPC>(
             "OPIHMOOHIPC",
@@ -103,17 +103,17 @@ impl ::protobuf::Message for OPIHMOOHIPC {
                 8 => {
                     self.AINKFEINNAK = is.read_bool()?;
                 },
-                56 => {
-                    self.damage = is.read_uint32()?;
-                },
-                72 => {
+                24 => {
                     self.DHJANOFGDNP = is.read_uint64()?;
                 },
-                88 => {
-                    self.IPDDIKPHGPE = is.read_enum_or_unknown()?;
-                },
-                104 => {
+                56 => {
                     self.OLNMGFFJMOJ = is.read_bool()?;
+                },
+                64 => {
+                    self.damage = is.read_uint32()?;
+                },
+                112 => {
+                    self.IPDDIKPHGPE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,17 +130,17 @@ impl ::protobuf::Message for OPIHMOOHIPC {
         if self.AINKFEINNAK != false {
             my_size += 1 + 1;
         }
-        if self.damage != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.damage);
-        }
         if self.DHJANOFGDNP != 0 {
-            my_size += ::protobuf::rt::uint64_size(9, self.DHJANOFGDNP);
-        }
-        if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            my_size += ::protobuf::rt::int32_size(11, self.IPDDIKPHGPE.value());
+            my_size += ::protobuf::rt::uint64_size(3, self.DHJANOFGDNP);
         }
         if self.OLNMGFFJMOJ != false {
             my_size += 1 + 1;
+        }
+        if self.damage != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.damage);
+        }
+        if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
+            my_size += ::protobuf::rt::int32_size(14, self.IPDDIKPHGPE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,17 +151,17 @@ impl ::protobuf::Message for OPIHMOOHIPC {
         if self.AINKFEINNAK != false {
             os.write_bool(1, self.AINKFEINNAK)?;
         }
-        if self.damage != 0 {
-            os.write_uint32(7, self.damage)?;
-        }
         if self.DHJANOFGDNP != 0 {
-            os.write_uint64(9, self.DHJANOFGDNP)?;
-        }
-        if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
+            os.write_uint64(3, self.DHJANOFGDNP)?;
         }
         if self.OLNMGFFJMOJ != false {
-            os.write_bool(13, self.OLNMGFFJMOJ)?;
+            os.write_bool(7, self.OLNMGFFJMOJ)?;
+        }
+        if self.damage != 0 {
+            os.write_uint32(8, self.damage)?;
+        }
+        if self.IPDDIKPHGPE != ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.IPDDIKPHGPE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for OPIHMOOHIPC {
 
     fn clear(&mut self) {
         self.AINKFEINNAK = false;
-        self.damage = 0;
         self.DHJANOFGDNP = 0;
-        self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
         self.OLNMGFFJMOJ = false;
+        self.damage = 0;
+        self.IPDDIKPHGPE = ::protobuf::EnumOrUnknown::new(super::DILHPBMCOFK::DILHPBMCOFK::DILHPBMCOFK_GPODJJOHNNE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OPIHMOOHIPC {
         static instance: OPIHMOOHIPC = OPIHMOOHIPC {
             AINKFEINNAK: false,
-            damage: 0,
             DHJANOFGDNP: 0,
-            IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
             OLNMGFFJMOJ: false,
+            damage: 0,
+            IPDDIKPHGPE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,10 +221,10 @@ impl ::protobuf::reflect::ProtobufValue for OPIHMOOHIPC {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OPIHMOOHIPC.proto\x1a\x11DILHPBMCOFK.proto\"\xbb\x01\n\x0bOPIHMOOH\
     IPC\x12\x20\n\x0bAINKFEINNAK\x18\x01\x20\x01(\x08R\x0bAINKFEINNAK\x12\
-    \x16\n\x06damage\x18\x07\x20\x01(\rR\x06damage\x12\x20\n\x0bDHJANOFGDNP\
-    \x18\t\x20\x01(\x04R\x0bDHJANOFGDNP\x12.\n\x0bIPDDIKPHGPE\x18\x0b\x20\
-    \x01(\x0e2\x0c.DILHPBMCOFKR\x0bIPDDIKPHGPE\x12\x20\n\x0bOLNMGFFJMOJ\x18\
-    \r\x20\x01(\x08R\x0bOLNMGFFJMOJb\x06proto3\
+    \x20\n\x0bDHJANOFGDNP\x18\x03\x20\x01(\x04R\x0bDHJANOFGDNP\x12\x20\n\x0b\
+    OLNMGFFJMOJ\x18\x07\x20\x01(\x08R\x0bOLNMGFFJMOJ\x12\x16\n\x06damage\x18\
+    \x08\x20\x01(\rR\x06damage\x12.\n\x0bIPDDIKPHGPE\x18\x0e\x20\x01(\x0e2\
+    \x0c.DILHPBMCOFKR\x0bIPDDIKPHGPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

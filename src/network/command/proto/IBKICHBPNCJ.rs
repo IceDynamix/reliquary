@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IBKICHBPNCJ {
     // message fields
-    // @@protoc_insertion_point(field:IBKICHBPNCJ.JFLAEGMBMAK)
-    pub JFLAEGMBMAK: u32,
     // @@protoc_insertion_point(field:IBKICHBPNCJ.BNFDBMMLEIG)
     pub BNFDBMMLEIG: u32,
+    // @@protoc_insertion_point(field:IBKICHBPNCJ.JFLAEGMBMAK)
+    pub JFLAEGMBMAK: u32,
     // @@protoc_insertion_point(field:IBKICHBPNCJ.IIOAEDEGEFE)
     pub IIOAEDEGEFE: ::protobuf::MessageField<super::HEBIIBBMNKG::HEBIIBBMNKG>,
     // special fields
@@ -54,14 +54,14 @@ impl IBKICHBPNCJ {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JFLAEGMBMAK",
-            |m: &IBKICHBPNCJ| { &m.JFLAEGMBMAK },
-            |m: &mut IBKICHBPNCJ| { &mut m.JFLAEGMBMAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BNFDBMMLEIG",
             |m: &IBKICHBPNCJ| { &m.BNFDBMMLEIG },
             |m: &mut IBKICHBPNCJ| { &mut m.BNFDBMMLEIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFLAEGMBMAK",
+            |m: &IBKICHBPNCJ| { &m.JFLAEGMBMAK },
+            |m: &mut IBKICHBPNCJ| { &mut m.JFLAEGMBMAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEBIIBBMNKG::HEBIIBBMNKG>(
             "IIOAEDEGEFE",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for IBKICHBPNCJ {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.JFLAEGMBMAK = is.read_uint32()?;
-                },
-                88 => {
+                64 => {
                     self.BNFDBMMLEIG = is.read_uint32()?;
+                },
+                104 => {
+                    self.JFLAEGMBMAK = is.read_uint32()?;
                 },
                 122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIOAEDEGEFE)?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for IBKICHBPNCJ {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JFLAEGMBMAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.JFLAEGMBMAK);
-        }
         if self.BNFDBMMLEIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BNFDBMMLEIG);
+            my_size += ::protobuf::rt::uint32_size(8, self.BNFDBMMLEIG);
+        }
+        if self.JFLAEGMBMAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JFLAEGMBMAK);
         }
         if let Some(v) = self.IIOAEDEGEFE.as_ref() {
             let len = v.compute_size();
@@ -123,11 +123,11 @@ impl ::protobuf::Message for IBKICHBPNCJ {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JFLAEGMBMAK != 0 {
-            os.write_uint32(9, self.JFLAEGMBMAK)?;
-        }
         if self.BNFDBMMLEIG != 0 {
-            os.write_uint32(11, self.BNFDBMMLEIG)?;
+            os.write_uint32(8, self.BNFDBMMLEIG)?;
+        }
+        if self.JFLAEGMBMAK != 0 {
+            os.write_uint32(13, self.JFLAEGMBMAK)?;
         }
         if let Some(v) = self.IIOAEDEGEFE.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -149,16 +149,16 @@ impl ::protobuf::Message for IBKICHBPNCJ {
     }
 
     fn clear(&mut self) {
-        self.JFLAEGMBMAK = 0;
         self.BNFDBMMLEIG = 0;
+        self.JFLAEGMBMAK = 0;
         self.IIOAEDEGEFE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IBKICHBPNCJ {
         static instance: IBKICHBPNCJ = IBKICHBPNCJ {
-            JFLAEGMBMAK: 0,
             BNFDBMMLEIG: 0,
+            JFLAEGMBMAK: 0,
             IIOAEDEGEFE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for IBKICHBPNCJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IBKICHBPNCJ.proto\x1a\x11HEBIIBBMNKG.proto\"\x81\x01\n\x0bIBKICHBP\
-    NCJ\x12\x20\n\x0bJFLAEGMBMAK\x18\t\x20\x01(\rR\x0bJFLAEGMBMAK\x12\x20\n\
-    \x0bBNFDBMMLEIG\x18\x0b\x20\x01(\rR\x0bBNFDBMMLEIG\x12.\n\x0bIIOAEDEGEFE\
+    NCJ\x12\x20\n\x0bBNFDBMMLEIG\x18\x08\x20\x01(\rR\x0bBNFDBMMLEIG\x12\x20\
+    \n\x0bJFLAEGMBMAK\x18\r\x20\x01(\rR\x0bJFLAEGMBMAK\x12.\n\x0bIIOAEDEGEFE\
     \x18\x0f\x20\x01(\x0b2\x0c.HEBIIBBMNKGR\x0bIIOAEDEGEFEb\x06proto3\
 ";
 

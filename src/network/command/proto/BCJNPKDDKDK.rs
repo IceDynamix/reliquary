@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BCJNPKDDKDK {
     // message fields
-    // @@protoc_insertion_point(field:BCJNPKDDKDK.IPMHDPKNJLI)
-    pub IPMHDPKNJLI: u32,
     // @@protoc_insertion_point(field:BCJNPKDDKDK.GNAMNBDIEKG)
     pub GNAMNBDIEKG: u32,
+    // @@protoc_insertion_point(field:BCJNPKDDKDK.IPMHDPKNJLI)
+    pub IPMHDPKNJLI: u32,
     // @@protoc_insertion_point(field:BCJNPKDDKDK.DABECDOKHLL)
     pub DABECDOKHLL: u32,
     // special fields
@@ -54,14 +54,14 @@ impl BCJNPKDDKDK {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPMHDPKNJLI",
-            |m: &BCJNPKDDKDK| { &m.IPMHDPKNJLI },
-            |m: &mut BCJNPKDDKDK| { &mut m.IPMHDPKNJLI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNAMNBDIEKG",
             |m: &BCJNPKDDKDK| { &m.GNAMNBDIEKG },
             |m: &mut BCJNPKDDKDK| { &mut m.GNAMNBDIEKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPMHDPKNJLI",
+            |m: &BCJNPKDDKDK| { &m.IPMHDPKNJLI },
+            |m: &mut BCJNPKDDKDK| { &mut m.IPMHDPKNJLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DABECDOKHLL",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for BCJNPKDDKDK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.IPMHDPKNJLI = is.read_uint32()?;
-                },
-                72 => {
+                64 => {
                     self.GNAMNBDIEKG = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
+                    self.IPMHDPKNJLI = is.read_uint32()?;
+                },
+                112 => {
                     self.DABECDOKHLL = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BCJNPKDDKDK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IPMHDPKNJLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IPMHDPKNJLI);
-        }
         if self.GNAMNBDIEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.GNAMNBDIEKG);
+            my_size += ::protobuf::rt::uint32_size(8, self.GNAMNBDIEKG);
+        }
+        if self.IPMHDPKNJLI != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IPMHDPKNJLI);
         }
         if self.DABECDOKHLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DABECDOKHLL);
+            my_size += ::protobuf::rt::uint32_size(14, self.DABECDOKHLL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BCJNPKDDKDK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IPMHDPKNJLI != 0 {
-            os.write_uint32(4, self.IPMHDPKNJLI)?;
-        }
         if self.GNAMNBDIEKG != 0 {
-            os.write_uint32(9, self.GNAMNBDIEKG)?;
+            os.write_uint32(8, self.GNAMNBDIEKG)?;
+        }
+        if self.IPMHDPKNJLI != 0 {
+            os.write_uint32(9, self.IPMHDPKNJLI)?;
         }
         if self.DABECDOKHLL != 0 {
-            os.write_uint32(12, self.DABECDOKHLL)?;
+            os.write_uint32(14, self.DABECDOKHLL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for BCJNPKDDKDK {
     }
 
     fn clear(&mut self) {
-        self.IPMHDPKNJLI = 0;
         self.GNAMNBDIEKG = 0;
+        self.IPMHDPKNJLI = 0;
         self.DABECDOKHLL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BCJNPKDDKDK {
         static instance: BCJNPKDDKDK = BCJNPKDDKDK {
-            IPMHDPKNJLI: 0,
             GNAMNBDIEKG: 0,
+            IPMHDPKNJLI: 0,
             DABECDOKHLL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BCJNPKDDKDK {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BCJNPKDDKDK.proto\"s\n\x0bBCJNPKDDKDK\x12\x20\n\x0bIPMHDPKNJLI\x18\
-    \x04\x20\x01(\rR\x0bIPMHDPKNJLI\x12\x20\n\x0bGNAMNBDIEKG\x18\t\x20\x01(\
-    \rR\x0bGNAMNBDIEKG\x12\x20\n\x0bDABECDOKHLL\x18\x0c\x20\x01(\rR\x0bDABEC\
+    \n\x11BCJNPKDDKDK.proto\"s\n\x0bBCJNPKDDKDK\x12\x20\n\x0bGNAMNBDIEKG\x18\
+    \x08\x20\x01(\rR\x0bGNAMNBDIEKG\x12\x20\n\x0bIPMHDPKNJLI\x18\t\x20\x01(\
+    \rR\x0bIPMHDPKNJLI\x12\x20\n\x0bDABECDOKHLL\x18\x0e\x20\x01(\rR\x0bDABEC\
     DOKHLLb\x06proto3\
 ";
 

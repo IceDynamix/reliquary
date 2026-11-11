@@ -28,8 +28,6 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LEGPFIAPLOO {
     // message fields
-    // @@protoc_insertion_point(field:LEGPFIAPLOO.effect_id)
-    pub effect_id: u32,
     // @@protoc_insertion_point(field:LEGPFIAPLOO.LAJLGHPLAAA)
     pub LAJLGHPLAAA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LEGPFIAPLOO.NKDEGMKKHPB)
@@ -38,6 +36,8 @@ pub struct LEGPFIAPLOO {
     pub EGJDILDEAKP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LEGPFIAPLOO.trait_id)
     pub trait_id: u32,
+    // @@protoc_insertion_point(field:LEGPFIAPLOO.effect_id)
+    pub effect_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LEGPFIAPLOO.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,11 +57,6 @@ impl LEGPFIAPLOO {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "effect_id",
-            |m: &LEGPFIAPLOO| { &m.effect_id },
-            |m: &mut LEGPFIAPLOO| { &mut m.effect_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "LAJLGHPLAAA",
             |m: &LEGPFIAPLOO| { &m.LAJLGHPLAAA },
@@ -82,6 +77,11 @@ impl LEGPFIAPLOO {
             |m: &LEGPFIAPLOO| { &m.trait_id },
             |m: &mut LEGPFIAPLOO| { &mut m.trait_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "effect_id",
+            |m: &LEGPFIAPLOO| { &m.effect_id },
+            |m: &mut LEGPFIAPLOO| { &mut m.effect_id },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LEGPFIAPLOO>(
             "LEGPFIAPLOO",
             fields,
@@ -100,26 +100,26 @@ impl ::protobuf::Message for LEGPFIAPLOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.effect_id = is.read_uint32()?;
-                },
-                18 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.LAJLGHPLAAA)?;
                 },
-                16 => {
+                8 => {
                     self.LAJLGHPLAAA.push(is.read_uint32()?);
                 },
                 24 => {
                     self.NKDEGMKKHPB = is.read_bool()?;
                 },
-                58 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.EGJDILDEAKP)?;
                 },
-                56 => {
+                40 => {
                     self.EGJDILDEAKP.push(is.read_uint32()?);
                 },
-                80 => {
+                48 => {
                     self.trait_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.effect_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -133,16 +133,16 @@ impl ::protobuf::Message for LEGPFIAPLOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.effect_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LAJLGHPLAAA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LAJLGHPLAAA);
         if self.NKDEGMKKHPB != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.EGJDILDEAKP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EGJDILDEAKP);
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.trait_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.trait_id);
+        }
+        if self.effect_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.effect_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,16 +150,16 @@ impl ::protobuf::Message for LEGPFIAPLOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.effect_id != 0 {
-            os.write_uint32(1, self.effect_id)?;
-        }
-        os.write_repeated_packed_uint32(2, &self.LAJLGHPLAAA)?;
+        os.write_repeated_packed_uint32(1, &self.LAJLGHPLAAA)?;
         if self.NKDEGMKKHPB != false {
             os.write_bool(3, self.NKDEGMKKHPB)?;
         }
-        os.write_repeated_packed_uint32(7, &self.EGJDILDEAKP)?;
+        os.write_repeated_packed_uint32(5, &self.EGJDILDEAKP)?;
         if self.trait_id != 0 {
-            os.write_uint32(10, self.trait_id)?;
+            os.write_uint32(6, self.trait_id)?;
+        }
+        if self.effect_id != 0 {
+            os.write_uint32(15, self.effect_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -178,21 +178,21 @@ impl ::protobuf::Message for LEGPFIAPLOO {
     }
 
     fn clear(&mut self) {
-        self.effect_id = 0;
         self.LAJLGHPLAAA.clear();
         self.NKDEGMKKHPB = false;
         self.EGJDILDEAKP.clear();
         self.trait_id = 0;
+        self.effect_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LEGPFIAPLOO {
         static instance: LEGPFIAPLOO = LEGPFIAPLOO {
-            effect_id: 0,
             LAJLGHPLAAA: ::std::vec::Vec::new(),
             NKDEGMKKHPB: false,
             EGJDILDEAKP: ::std::vec::Vec::new(),
             trait_id: 0,
+            effect_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -217,11 +217,11 @@ impl ::protobuf::reflect::ProtobufValue for LEGPFIAPLOO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11LEGPFIAPLOO.proto\"\xab\x01\n\x0bLEGPFIAPLOO\x12\x1b\n\teffect_id\
-    \x18\x01\x20\x01(\rR\x08effectId\x12\x20\n\x0bLAJLGHPLAAA\x18\x02\x20\
-    \x03(\rR\x0bLAJLGHPLAAA\x12\x20\n\x0bNKDEGMKKHPB\x18\x03\x20\x01(\x08R\
-    \x0bNKDEGMKKHPB\x12\x20\n\x0bEGJDILDEAKP\x18\x07\x20\x03(\rR\x0bEGJDILDE\
-    AKP\x12\x19\n\x08trait_id\x18\n\x20\x01(\rR\x07traitIdb\x06proto3\
+    \n\x11LEGPFIAPLOO.proto\"\xab\x01\n\x0bLEGPFIAPLOO\x12\x20\n\x0bLAJLGHPL\
+    AAA\x18\x01\x20\x03(\rR\x0bLAJLGHPLAAA\x12\x20\n\x0bNKDEGMKKHPB\x18\x03\
+    \x20\x01(\x08R\x0bNKDEGMKKHPB\x12\x20\n\x0bEGJDILDEAKP\x18\x05\x20\x03(\
+    \rR\x0bEGJDILDEAKP\x12\x19\n\x08trait_id\x18\x06\x20\x01(\rR\x07traitId\
+    \x12\x1b\n\teffect_id\x18\x0f\x20\x01(\rR\x08effectIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

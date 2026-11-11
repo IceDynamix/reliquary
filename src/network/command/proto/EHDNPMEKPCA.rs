@@ -48,32 +48,7 @@ impl EHDNPMEKPCA {
         ::std::default::Default::default()
     }
 
-    // uint64 EBAAFDHEPLO = 3;
-
-    pub fn EBAAFDHEPLO(&self) -> u64 {
-        match self.HGEOKHHJAIE {
-            ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_EBAAFDHEPLO(&mut self) {
-        self.HGEOKHHJAIE = ::std::option::Option::None;
-    }
-
-    pub fn has_EBAAFDHEPLO(&self) -> bool {
-        match self.HGEOKHHJAIE {
-            ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_EBAAFDHEPLO(&mut self, v: u64) {
-        self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v))
-    }
-
-    // uint32 ODNGMIJLKKA = 13;
+    // uint32 ODNGMIJLKKA = 1;
 
     pub fn ODNGMIJLKKA(&self) -> u32 {
         match self.HGEOKHHJAIE {
@@ -98,6 +73,31 @@ impl EHDNPMEKPCA {
         self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::ODNGMIJLKKA(v))
     }
 
+    // uint64 EBAAFDHEPLO = 15;
+
+    pub fn EBAAFDHEPLO(&self) -> u64 {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_EBAAFDHEPLO(&mut self) {
+        self.HGEOKHHJAIE = ::std::option::Option::None;
+    }
+
+    pub fn has_EBAAFDHEPLO(&self) -> bool {
+        match self.HGEOKHHJAIE {
+            ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_EBAAFDHEPLO(&mut self, v: u64) {
+        self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -107,16 +107,16 @@ impl EHDNPMEKPCA {
             |m: &mut EHDNPMEKPCA| { &mut m.LLGIIPALELD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "EBAAFDHEPLO",
-            EHDNPMEKPCA::has_EBAAFDHEPLO,
-            EHDNPMEKPCA::EBAAFDHEPLO,
-            EHDNPMEKPCA::set_EBAAFDHEPLO,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "ODNGMIJLKKA",
             EHDNPMEKPCA::has_ODNGMIJLKKA,
             EHDNPMEKPCA::ODNGMIJLKKA,
             EHDNPMEKPCA::set_ODNGMIJLKKA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "EBAAFDHEPLO",
+            EHDNPMEKPCA::has_EBAAFDHEPLO,
+            EHDNPMEKPCA::EBAAFDHEPLO,
+            EHDNPMEKPCA::set_EBAAFDHEPLO,
         ));
         oneofs.push(ehdnpmekpca::HGEOKHHJAIE::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EHDNPMEKPCA>(
@@ -137,14 +137,14 @@ impl ::protobuf::Message for EHDNPMEKPCA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.LLGIIPALELD = is.read_enum_or_unknown()?;
                 },
-                24 => {
-                    self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(is.read_uint64()?));
-                },
-                104 => {
+                8 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::ODNGMIJLKKA(is.read_uint32()?));
+                },
+                120 => {
+                    self.HGEOKHHJAIE = ::std::option::Option::Some(ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(is.read_uint64()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -159,15 +159,15 @@ impl ::protobuf::Message for EHDNPMEKPCA {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(9, self.LLGIIPALELD.value());
+            my_size += ::protobuf::rt::int32_size(4, self.LLGIIPALELD.value());
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
-                &ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
-                    my_size += ::protobuf::rt::uint64_size(3, v);
-                },
                 &ehdnpmekpca::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                    my_size += ::protobuf::rt::uint32_size(1, v);
+                },
+                &ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
+                    my_size += ::protobuf::rt::uint64_size(15, v);
                 },
             };
         }
@@ -178,15 +178,15 @@ impl ::protobuf::Message for EHDNPMEKPCA {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.LLGIIPALELD))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.LLGIIPALELD))?;
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
-                &ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
-                    os.write_uint64(3, v)?;
-                },
                 &ehdnpmekpca::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
-                    os.write_uint32(13, v)?;
+                    os.write_uint32(1, v)?;
+                },
+                &ehdnpmekpca::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
+                    os.write_uint64(15, v)?;
                 },
             };
         }
@@ -247,10 +247,10 @@ pub mod ehdnpmekpca {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:EHDNPMEKPCA.HGEOKHHJAIE)
     pub enum HGEOKHHJAIE {
-        // @@protoc_insertion_point(oneof_field:EHDNPMEKPCA.EBAAFDHEPLO)
-        EBAAFDHEPLO(u64),
         // @@protoc_insertion_point(oneof_field:EHDNPMEKPCA.ODNGMIJLKKA)
         ODNGMIJLKKA(u32),
+        // @@protoc_insertion_point(oneof_field:EHDNPMEKPCA.EBAAFDHEPLO)
+        EBAAFDHEPLO(u64),
     }
 
     impl ::protobuf::Oneof for HGEOKHHJAIE {
@@ -272,10 +272,10 @@ pub mod ehdnpmekpca {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EHDNPMEKPCA.proto\x1a\x11EOGNOEJHAGN.proto\"\x94\x01\n\x0bEHDNPMEK\
-    PCA\x12.\n\x0bLLGIIPALELD\x18\t\x20\x01(\x0e2\x0c.EOGNOEJHAGNR\x0bLLGIIP\
-    ALELD\x12\"\n\x0bEBAAFDHEPLO\x18\x03\x20\x01(\x04H\0R\x0bEBAAFDHEPLO\x12\
-    \"\n\x0bODNGMIJLKKA\x18\r\x20\x01(\rH\0R\x0bODNGMIJLKKAB\r\n\x0bHGEOKHHJ\
-    AIEb\x06proto3\
+    PCA\x12.\n\x0bLLGIIPALELD\x18\x04\x20\x01(\x0e2\x0c.EOGNOEJHAGNR\x0bLLGI\
+    IPALELD\x12\"\n\x0bODNGMIJLKKA\x18\x01\x20\x01(\rH\0R\x0bODNGMIJLKKA\x12\
+    \"\n\x0bEBAAFDHEPLO\x18\x0f\x20\x01(\x04H\0R\x0bEBAAFDHEPLOB\r\n\x0bHGEO\
+    KHHJAIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

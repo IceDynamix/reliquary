@@ -30,14 +30,14 @@ pub struct PGIEBMKMECE {
     // message fields
     // @@protoc_insertion_point(field:PGIEBMKMECE.IBLECIJAGBK)
     pub IBLECIJAGBK: ::protobuf::MessageField<super::OPOCANGAEHJ::OPOCANGAEHJ>,
-    // @@protoc_insertion_point(field:PGIEBMKMECE.CDMKBCHLPAB)
-    pub CDMKBCHLPAB: ::std::vec::Vec<f32>,
     // @@protoc_insertion_point(field:PGIEBMKMECE.LJDHGFECMHJ)
     pub LJDHGFECMHJ: u32,
     // @@protoc_insertion_point(field:PGIEBMKMECE.score_id)
     pub score_id: u32,
     // @@protoc_insertion_point(field:PGIEBMKMECE.OMFGAABELHE)
     pub OMFGAABELHE: u32,
+    // @@protoc_insertion_point(field:PGIEBMKMECE.CDMKBCHLPAB)
+    pub CDMKBCHLPAB: ::std::vec::Vec<f32>,
     // special fields
     // @@protoc_insertion_point(special_field:PGIEBMKMECE.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,11 +62,6 @@ impl PGIEBMKMECE {
             |m: &PGIEBMKMECE| { &m.IBLECIJAGBK },
             |m: &mut PGIEBMKMECE| { &mut m.IBLECIJAGBK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CDMKBCHLPAB",
-            |m: &PGIEBMKMECE| { &m.CDMKBCHLPAB },
-            |m: &mut PGIEBMKMECE| { &mut m.CDMKBCHLPAB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LJDHGFECMHJ",
             |m: &PGIEBMKMECE| { &m.LJDHGFECMHJ },
@@ -81,6 +76,11 @@ impl PGIEBMKMECE {
             "OMFGAABELHE",
             |m: &PGIEBMKMECE| { &m.OMFGAABELHE },
             |m: &mut PGIEBMKMECE| { &mut m.OMFGAABELHE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CDMKBCHLPAB",
+            |m: &PGIEBMKMECE| { &m.CDMKBCHLPAB },
+            |m: &mut PGIEBMKMECE| { &mut m.CDMKBCHLPAB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PGIEBMKMECE>(
             "PGIEBMKMECE",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for PGIEBMKMECE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.IBLECIJAGBK)?;
                 },
-                74 => {
-                    is.read_repeated_packed_float_into(&mut self.CDMKBCHLPAB)?;
-                },
-                77 => {
-                    self.CDMKBCHLPAB.push(is.read_float()?);
-                },
-                80 => {
+                32 => {
                     self.LJDHGFECMHJ = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.score_id = is.read_uint32()?;
                 },
-                112 => {
+                64 => {
                     self.OMFGAABELHE = is.read_uint32()?;
+                },
+                114 => {
+                    is.read_repeated_packed_float_into(&mut self.CDMKBCHLPAB)?;
+                },
+                117 => {
+                    self.CDMKBCHLPAB.push(is.read_float()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -134,16 +134,16 @@ impl ::protobuf::Message for PGIEBMKMECE {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_float_size(9, &self.CDMKBCHLPAB);
         if self.LJDHGFECMHJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LJDHGFECMHJ);
+            my_size += ::protobuf::rt::uint32_size(4, self.LJDHGFECMHJ);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
         }
         if self.OMFGAABELHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OMFGAABELHE);
+            my_size += ::protobuf::rt::uint32_size(8, self.OMFGAABELHE);
         }
+        my_size += ::protobuf::rt::vec_packed_float_size(14, &self.CDMKBCHLPAB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -151,18 +151,18 @@ impl ::protobuf::Message for PGIEBMKMECE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.IBLECIJAGBK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        os.write_repeated_packed_float(9, &self.CDMKBCHLPAB)?;
         if self.LJDHGFECMHJ != 0 {
-            os.write_uint32(10, self.LJDHGFECMHJ)?;
+            os.write_uint32(4, self.LJDHGFECMHJ)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(13, self.score_id)?;
+            os.write_uint32(6, self.score_id)?;
         }
         if self.OMFGAABELHE != 0 {
-            os.write_uint32(14, self.OMFGAABELHE)?;
+            os.write_uint32(8, self.OMFGAABELHE)?;
         }
+        os.write_repeated_packed_float(14, &self.CDMKBCHLPAB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,20 +181,20 @@ impl ::protobuf::Message for PGIEBMKMECE {
 
     fn clear(&mut self) {
         self.IBLECIJAGBK.clear();
-        self.CDMKBCHLPAB.clear();
         self.LJDHGFECMHJ = 0;
         self.score_id = 0;
         self.OMFGAABELHE = 0;
+        self.CDMKBCHLPAB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PGIEBMKMECE {
         static instance: PGIEBMKMECE = PGIEBMKMECE {
             IBLECIJAGBK: ::protobuf::MessageField::none(),
-            CDMKBCHLPAB: ::std::vec::Vec::new(),
             LJDHGFECMHJ: 0,
             score_id: 0,
             OMFGAABELHE: 0,
+            CDMKBCHLPAB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PGIEBMKMECE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PGIEBMKMECE.proto\x1a\x11OPOCANGAEHJ.proto\"\xbe\x01\n\x0bPGIEBMKM\
-    ECE\x12.\n\x0bIBLECIJAGBK\x18\x08\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x0bIBLE\
-    CIJAGBK\x12\x20\n\x0bCDMKBCHLPAB\x18\t\x20\x03(\x02R\x0bCDMKBCHLPAB\x12\
-    \x20\n\x0bLJDHGFECMHJ\x18\n\x20\x01(\rR\x0bLJDHGFECMHJ\x12\x19\n\x08scor\
-    e_id\x18\r\x20\x01(\rR\x07scoreId\x12\x20\n\x0bOMFGAABELHE\x18\x0e\x20\
-    \x01(\rR\x0bOMFGAABELHEb\x06proto3\
+    ECE\x12.\n\x0bIBLECIJAGBK\x18\x01\x20\x01(\x0b2\x0c.OPOCANGAEHJR\x0bIBLE\
+    CIJAGBK\x12\x20\n\x0bLJDHGFECMHJ\x18\x04\x20\x01(\rR\x0bLJDHGFECMHJ\x12\
+    \x19\n\x08score_id\x18\x06\x20\x01(\rR\x07scoreId\x12\x20\n\x0bOMFGAABEL\
+    HE\x18\x08\x20\x01(\rR\x0bOMFGAABELHE\x12\x20\n\x0bCDMKBCHLPAB\x18\x0e\
+    \x20\x03(\x02R\x0bCDMKBCHLPABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

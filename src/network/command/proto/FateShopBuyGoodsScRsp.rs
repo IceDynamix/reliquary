@@ -79,7 +79,7 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.COCLMANMAAI = is.read_uint32()?;
                 },
                 64 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.COCLMANMAAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.COCLMANMAAI);
+            my_size += ::protobuf::rt::uint32_size(5, self.COCLMANMAAI);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for FateShopBuyGoodsScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.COCLMANMAAI != 0 {
-            os.write_uint32(4, self.COCLMANMAAI)?;
+            os.write_uint32(5, self.COCLMANMAAI)?;
         }
         if self.retcode != 0 {
             os.write_uint32(8, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FateShopBuyGoodsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFateShopBuyGoodsScRsp.proto\"S\n\x15FateShopBuyGoodsScRsp\x12\x20\
-    \n\x0bCOCLMANMAAI\x18\x04\x20\x01(\rR\x0bCOCLMANMAAI\x12\x18\n\x07retcod\
+    \n\x0bCOCLMANMAAI\x18\x05\x20\x01(\rR\x0bCOCLMANMAAI\x12\x18\n\x07retcod\
     e\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

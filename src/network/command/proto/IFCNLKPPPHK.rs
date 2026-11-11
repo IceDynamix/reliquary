@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct IFCNLKPPPHK {
     // message fields
-    // @@protoc_insertion_point(field:IFCNLKPPPHK.FJKHIFDJMDB)
-    pub FJKHIFDJMDB: bool,
-    // @@protoc_insertion_point(field:IFCNLKPPPHK.COEBCNGCNOO)
-    pub COEBCNGCNOO: ::protobuf::MessageField<super::PGGMPDIMLAE::PGGMPDIMLAE>,
     // @@protoc_insertion_point(field:IFCNLKPPPHK.PBJLMCGIBND)
     pub PBJLMCGIBND: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:IFCNLKPPPHK.area_id)
-    pub area_id: u32,
     // @@protoc_insertion_point(field:IFCNLKPPPHK.is_taken_reward)
     pub is_taken_reward: bool,
     // @@protoc_insertion_point(field:IFCNLKPPPHK.record_info)
     pub record_info: ::protobuf::MessageField<super::NJMOAGDJKFH::NJMOAGDJKFH>,
     // @@protoc_insertion_point(field:IFCNLKPPPHK.GNACLLNFHFD)
     pub GNACLLNFHFD: bool,
+    // @@protoc_insertion_point(field:IFCNLKPPPHK.COEBCNGCNOO)
+    pub COEBCNGCNOO: ::protobuf::MessageField<super::PGGMPDIMLAE::PGGMPDIMLAE>,
+    // @@protoc_insertion_point(field:IFCNLKPPPHK.FJKHIFDJMDB)
+    pub FJKHIFDJMDB: bool,
+    // @@protoc_insertion_point(field:IFCNLKPPPHK.area_id)
+    pub area_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:IFCNLKPPPHK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,25 +61,10 @@ impl IFCNLKPPPHK {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJKHIFDJMDB",
-            |m: &IFCNLKPPPHK| { &m.FJKHIFDJMDB },
-            |m: &mut IFCNLKPPPHK| { &mut m.FJKHIFDJMDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGGMPDIMLAE::PGGMPDIMLAE>(
-            "COEBCNGCNOO",
-            |m: &IFCNLKPPPHK| { &m.COEBCNGCNOO },
-            |m: &mut IFCNLKPPPHK| { &mut m.COEBCNGCNOO },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PBJLMCGIBND",
             |m: &IFCNLKPPPHK| { &m.PBJLMCGIBND },
             |m: &mut IFCNLKPPPHK| { &mut m.PBJLMCGIBND },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &IFCNLKPPPHK| { &m.area_id },
-            |m: &mut IFCNLKPPPHK| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_taken_reward",
@@ -95,6 +80,21 @@ impl IFCNLKPPPHK {
             "GNACLLNFHFD",
             |m: &IFCNLKPPPHK| { &m.GNACLLNFHFD },
             |m: &mut IFCNLKPPPHK| { &mut m.GNACLLNFHFD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGGMPDIMLAE::PGGMPDIMLAE>(
+            "COEBCNGCNOO",
+            |m: &IFCNLKPPPHK| { &m.COEBCNGCNOO },
+            |m: &mut IFCNLKPPPHK| { &mut m.COEBCNGCNOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJKHIFDJMDB",
+            |m: &IFCNLKPPPHK| { &m.FJKHIFDJMDB },
+            |m: &mut IFCNLKPPPHK| { &mut m.FJKHIFDJMDB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &IFCNLKPPPHK| { &m.area_id },
+            |m: &mut IFCNLKPPPHK| { &mut m.area_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IFCNLKPPPHK>(
             "IFCNLKPPPHK",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for IFCNLKPPPHK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.FJKHIFDJMDB = is.read_bool()?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COEBCNGCNOO)?;
-                },
-                42 => {
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.PBJLMCGIBND)?;
                 },
-                40 => {
+                8 => {
                     self.PBJLMCGIBND.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.is_taken_reward = is.read_bool()?;
                 },
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.record_info)?;
                 },
-                120 => {
+                48 => {
                     self.GNACLLNFHFD = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COEBCNGCNOO)?;
+                },
+                104 => {
+                    self.FJKHIFDJMDB = is.read_bool()?;
+                },
+                120 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,17 +150,7 @@ impl ::protobuf::Message for IFCNLKPPPHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FJKHIFDJMDB != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.COEBCNGCNOO.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PBJLMCGIBND);
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.area_id);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.PBJLMCGIBND);
         if self.is_taken_reward != false {
             my_size += 1 + 1;
         }
@@ -170,6 +160,16 @@ impl ::protobuf::Message for IFCNLKPPPHK {
         }
         if self.GNACLLNFHFD != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.COEBCNGCNOO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.FJKHIFDJMDB != false {
+            my_size += 1 + 1;
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -177,24 +177,24 @@ impl ::protobuf::Message for IFCNLKPPPHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FJKHIFDJMDB != false {
-            os.write_bool(1, self.FJKHIFDJMDB)?;
-        }
-        if let Some(v) = self.COEBCNGCNOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        os.write_repeated_packed_uint32(5, &self.PBJLMCGIBND)?;
-        if self.area_id != 0 {
-            os.write_uint32(9, self.area_id)?;
-        }
+        os.write_repeated_packed_uint32(1, &self.PBJLMCGIBND)?;
         if self.is_taken_reward != false {
-            os.write_bool(12, self.is_taken_reward)?;
+            os.write_bool(4, self.is_taken_reward)?;
         }
         if let Some(v) = self.record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.GNACLLNFHFD != false {
-            os.write_bool(15, self.GNACLLNFHFD)?;
+            os.write_bool(6, self.GNACLLNFHFD)?;
+        }
+        if let Some(v) = self.COEBCNGCNOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if self.FJKHIFDJMDB != false {
+            os.write_bool(13, self.FJKHIFDJMDB)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(15, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,25 +213,25 @@ impl ::protobuf::Message for IFCNLKPPPHK {
     }
 
     fn clear(&mut self) {
-        self.FJKHIFDJMDB = false;
-        self.COEBCNGCNOO.clear();
         self.PBJLMCGIBND.clear();
-        self.area_id = 0;
         self.is_taken_reward = false;
         self.record_info.clear();
         self.GNACLLNFHFD = false;
+        self.COEBCNGCNOO.clear();
+        self.FJKHIFDJMDB = false;
+        self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IFCNLKPPPHK {
         static instance: IFCNLKPPPHK = IFCNLKPPPHK {
-            FJKHIFDJMDB: false,
-            COEBCNGCNOO: ::protobuf::MessageField::none(),
             PBJLMCGIBND: ::std::vec::Vec::new(),
-            area_id: 0,
             is_taken_reward: false,
             record_info: ::protobuf::MessageField::none(),
             GNACLLNFHFD: false,
+            COEBCNGCNOO: ::protobuf::MessageField::none(),
+            FJKHIFDJMDB: false,
+            area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,13 +257,13 @@ impl ::protobuf::reflect::ProtobufValue for IFCNLKPPPHK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IFCNLKPPPHK.proto\x1a\x11NJMOAGDJKFH.proto\x1a\x11PGGMPDIMLAE.prot\
-    o\"\x93\x02\n\x0bIFCNLKPPPHK\x12\x20\n\x0bFJKHIFDJMDB\x18\x01\x20\x01(\
-    \x08R\x0bFJKHIFDJMDB\x12.\n\x0bCOEBCNGCNOO\x18\x02\x20\x01(\x0b2\x0c.PGG\
-    MPDIMLAER\x0bCOEBCNGCNOO\x12\x20\n\x0bPBJLMCGIBND\x18\x05\x20\x03(\rR\
-    \x0bPBJLMCGIBND\x12\x17\n\x07area_id\x18\t\x20\x01(\rR\x06areaId\x12&\n\
-    \x0fis_taken_reward\x18\x0c\x20\x01(\x08R\risTakenReward\x12-\n\x0brecor\
-    d_info\x18\r\x20\x01(\x0b2\x0c.NJMOAGDJKFHR\nrecordInfo\x12\x20\n\x0bGNA\
-    CLLNFHFD\x18\x0f\x20\x01(\x08R\x0bGNACLLNFHFDb\x06proto3\
+    o\"\x93\x02\n\x0bIFCNLKPPPHK\x12\x20\n\x0bPBJLMCGIBND\x18\x01\x20\x03(\r\
+    R\x0bPBJLMCGIBND\x12&\n\x0fis_taken_reward\x18\x04\x20\x01(\x08R\risTake\
+    nReward\x12-\n\x0brecord_info\x18\x05\x20\x01(\x0b2\x0c.NJMOAGDJKFHR\nre\
+    cordInfo\x12\x20\n\x0bGNACLLNFHFD\x18\x06\x20\x01(\x08R\x0bGNACLLNFHFD\
+    \x12.\n\x0bCOEBCNGCNOO\x18\x0b\x20\x01(\x0b2\x0c.PGGMPDIMLAER\x0bCOEBCNG\
+    CNOO\x12\x20\n\x0bFJKHIFDJMDB\x18\r\x20\x01(\x08R\x0bFJKHIFDJMDB\x12\x17\
+    \n\x07area_id\x18\x0f\x20\x01(\rR\x06areaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

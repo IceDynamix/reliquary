@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BMOIPALHBJN {
     // message fields
-    // @@protoc_insertion_point(field:BMOIPALHBJN.OGDKJPDFFAI)
-    pub OGDKJPDFFAI: ::std::vec::Vec<super::NJHFBDDHCEN::NJHFBDDHCEN>,
     // @@protoc_insertion_point(field:BMOIPALHBJN.JOMDKGINNEK)
     pub JOMDKGINNEK: u32,
-    // @@protoc_insertion_point(field:BMOIPALHBJN.shop_id)
-    pub shop_id: u32,
+    // @@protoc_insertion_point(field:BMOIPALHBJN.OGDKJPDFFAI)
+    pub OGDKJPDFFAI: ::std::vec::Vec<super::NJHFBDDHCEN::NJHFBDDHCEN>,
     // @@protoc_insertion_point(field:BMOIPALHBJN.AAIODNCLAIP)
     pub AAIODNCLAIP: u32,
+    // @@protoc_insertion_point(field:BMOIPALHBJN.shop_id)
+    pub shop_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BMOIPALHBJN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl BMOIPALHBJN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOMDKGINNEK",
+            |m: &BMOIPALHBJN| { &m.JOMDKGINNEK },
+            |m: &mut BMOIPALHBJN| { &mut m.JOMDKGINNEK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OGDKJPDFFAI",
             |m: &BMOIPALHBJN| { &m.OGDKJPDFFAI },
             |m: &mut BMOIPALHBJN| { &mut m.OGDKJPDFFAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOMDKGINNEK",
-            |m: &BMOIPALHBJN| { &m.JOMDKGINNEK },
-            |m: &mut BMOIPALHBJN| { &mut m.JOMDKGINNEK },
+            "AAIODNCLAIP",
+            |m: &BMOIPALHBJN| { &m.AAIODNCLAIP },
+            |m: &mut BMOIPALHBJN| { &mut m.AAIODNCLAIP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "shop_id",
             |m: &BMOIPALHBJN| { &m.shop_id },
             |m: &mut BMOIPALHBJN| { &mut m.shop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAIODNCLAIP",
-            |m: &BMOIPALHBJN| { &m.AAIODNCLAIP },
-            |m: &mut BMOIPALHBJN| { &mut m.AAIODNCLAIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BMOIPALHBJN>(
             "BMOIPALHBJN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BMOIPALHBJN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                8 => {
+                    self.JOMDKGINNEK = is.read_uint32()?;
+                },
+                42 => {
                     self.OGDKJPDFFAI.push(is.read_message()?);
                 },
                 104 => {
-                    self.JOMDKGINNEK = is.read_uint32()?;
+                    self.AAIODNCLAIP = is.read_uint32()?;
                 },
                 112 => {
                     self.shop_id = is.read_uint32()?;
-                },
-                120 => {
-                    self.AAIODNCLAIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for BMOIPALHBJN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.JOMDKGINNEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JOMDKGINNEK);
+        }
         for value in &self.OGDKJPDFFAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JOMDKGINNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.JOMDKGINNEK);
+        if self.AAIODNCLAIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AAIODNCLAIP);
         }
         if self.shop_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.shop_id);
-        }
-        if self.AAIODNCLAIP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.AAIODNCLAIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for BMOIPALHBJN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OGDKJPDFFAI {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if self.JOMDKGINNEK != 0 {
-            os.write_uint32(13, self.JOMDKGINNEK)?;
+            os.write_uint32(1, self.JOMDKGINNEK)?;
+        }
+        for v in &self.OGDKJPDFFAI {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.AAIODNCLAIP != 0 {
+            os.write_uint32(13, self.AAIODNCLAIP)?;
         }
         if self.shop_id != 0 {
             os.write_uint32(14, self.shop_id)?;
-        }
-        if self.AAIODNCLAIP != 0 {
-            os.write_uint32(15, self.AAIODNCLAIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BMOIPALHBJN {
     }
 
     fn clear(&mut self) {
-        self.OGDKJPDFFAI.clear();
         self.JOMDKGINNEK = 0;
-        self.shop_id = 0;
+        self.OGDKJPDFFAI.clear();
         self.AAIODNCLAIP = 0;
+        self.shop_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BMOIPALHBJN {
         static instance: BMOIPALHBJN = BMOIPALHBJN {
-            OGDKJPDFFAI: ::std::vec::Vec::new(),
             JOMDKGINNEK: 0,
-            shop_id: 0,
+            OGDKJPDFFAI: ::std::vec::Vec::new(),
             AAIODNCLAIP: 0,
+            shop_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BMOIPALHBJN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BMOIPALHBJN.proto\x1a\x11NJHFBDDHCEN.proto\"\x9a\x01\n\x0bBMOIPALH\
-    BJN\x12.\n\x0bOGDKJPDFFAI\x18\x02\x20\x03(\x0b2\x0c.NJHFBDDHCENR\x0bOGDK\
-    JPDFFAI\x12\x20\n\x0bJOMDKGINNEK\x18\r\x20\x01(\rR\x0bJOMDKGINNEK\x12\
-    \x17\n\x07shop_id\x18\x0e\x20\x01(\rR\x06shopId\x12\x20\n\x0bAAIODNCLAIP\
-    \x18\x0f\x20\x01(\rR\x0bAAIODNCLAIPb\x06proto3\
+    BJN\x12\x20\n\x0bJOMDKGINNEK\x18\x01\x20\x01(\rR\x0bJOMDKGINNEK\x12.\n\
+    \x0bOGDKJPDFFAI\x18\x05\x20\x03(\x0b2\x0c.NJHFBDDHCENR\x0bOGDKJPDFFAI\
+    \x12\x20\n\x0bAAIODNCLAIP\x18\r\x20\x01(\rR\x0bAAIODNCLAIP\x12\x17\n\x07\
+    shop_id\x18\x0e\x20\x01(\rR\x06shopIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

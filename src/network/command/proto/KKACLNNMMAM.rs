@@ -30,10 +30,10 @@ pub struct KKACLNNMMAM {
     // message fields
     // @@protoc_insertion_point(field:KKACLNNMMAM.EIHOECKBDOH)
     pub EIHOECKBDOH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:KKACLNNMMAM.BPAOGJPLENJ)
-    pub BPAOGJPLENJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:KKACLNNMMAM.JMAODNEONPF)
     pub JMAODNEONPF: bool,
+    // @@protoc_insertion_point(field:KKACLNNMMAM.BPAOGJPLENJ)
+    pub BPAOGJPLENJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:KKACLNNMMAM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl KKACLNNMMAM {
             |m: &KKACLNNMMAM| { &m.EIHOECKBDOH },
             |m: &mut KKACLNNMMAM| { &mut m.EIHOECKBDOH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BPAOGJPLENJ",
-            |m: &KKACLNNMMAM| { &m.BPAOGJPLENJ },
-            |m: &mut KKACLNNMMAM| { &mut m.BPAOGJPLENJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JMAODNEONPF",
             |m: &KKACLNNMMAM| { &m.JMAODNEONPF },
             |m: &mut KKACLNNMMAM| { &mut m.JMAODNEONPF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BPAOGJPLENJ",
+            |m: &KKACLNNMMAM| { &m.BPAOGJPLENJ },
+            |m: &mut KKACLNNMMAM| { &mut m.BPAOGJPLENJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KKACLNNMMAM>(
             "KKACLNNMMAM",
@@ -86,20 +86,20 @@ impl ::protobuf::Message for KKACLNNMMAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.EIHOECKBDOH)?;
                 },
-                56 => {
+                24 => {
                     self.EIHOECKBDOH.push(is.read_uint32()?);
                 },
-                114 => {
+                40 => {
+                    self.JMAODNEONPF = is.read_bool()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.BPAOGJPLENJ)?;
                 },
-                112 => {
+                56 => {
                     self.BPAOGJPLENJ.push(is.read_uint32()?);
-                },
-                120 => {
-                    self.JMAODNEONPF = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -113,22 +113,22 @@ impl ::protobuf::Message for KKACLNNMMAM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.EIHOECKBDOH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.BPAOGJPLENJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EIHOECKBDOH);
         if self.JMAODNEONPF != false {
             my_size += 1 + 1;
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.BPAOGJPLENJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.EIHOECKBDOH)?;
-        os.write_repeated_packed_uint32(14, &self.BPAOGJPLENJ)?;
+        os.write_repeated_packed_uint32(3, &self.EIHOECKBDOH)?;
         if self.JMAODNEONPF != false {
-            os.write_bool(15, self.JMAODNEONPF)?;
+            os.write_bool(5, self.JMAODNEONPF)?;
         }
+        os.write_repeated_packed_uint32(7, &self.BPAOGJPLENJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,16 +147,16 @@ impl ::protobuf::Message for KKACLNNMMAM {
 
     fn clear(&mut self) {
         self.EIHOECKBDOH.clear();
-        self.BPAOGJPLENJ.clear();
         self.JMAODNEONPF = false;
+        self.BPAOGJPLENJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KKACLNNMMAM {
         static instance: KKACLNNMMAM = KKACLNNMMAM {
             EIHOECKBDOH: ::std::vec::Vec::new(),
-            BPAOGJPLENJ: ::std::vec::Vec::new(),
             JMAODNEONPF: false,
+            BPAOGJPLENJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for KKACLNNMMAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KKACLNNMMAM.proto\"s\n\x0bKKACLNNMMAM\x12\x20\n\x0bEIHOECKBDOH\x18\
-    \x07\x20\x03(\rR\x0bEIHOECKBDOH\x12\x20\n\x0bBPAOGJPLENJ\x18\x0e\x20\x03\
-    (\rR\x0bBPAOGJPLENJ\x12\x20\n\x0bJMAODNEONPF\x18\x0f\x20\x01(\x08R\x0bJM\
-    AODNEONPFb\x06proto3\
+    \x03\x20\x03(\rR\x0bEIHOECKBDOH\x12\x20\n\x0bJMAODNEONPF\x18\x05\x20\x01\
+    (\x08R\x0bJMAODNEONPF\x12\x20\n\x0bBPAOGJPLENJ\x18\x07\x20\x03(\rR\x0bBP\
+    AOGJPLENJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

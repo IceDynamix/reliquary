@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LMMLGKHALLA {
     // message fields
-    // @@protoc_insertion_point(field:LMMLGKHALLA.CEPCGLMFPBC)
-    pub CEPCGLMFPBC: ::std::vec::Vec<super::GOMKGHJBNFM::GOMKGHJBNFM>,
     // @@protoc_insertion_point(field:LMMLGKHALLA.HFPEJIDDDJG)
     pub HFPEJIDDDJG: ::protobuf::EnumOrUnknown<super::EDJKFOBBDJF::EDJKFOBBDJF>,
     // @@protoc_insertion_point(field:LMMLGKHALLA.item_value)
     pub item_value: u32,
+    // @@protoc_insertion_point(field:LMMLGKHALLA.CEPCGLMFPBC)
+    pub CEPCGLMFPBC: ::std::vec::Vec<super::GOMKGHJBNFM::GOMKGHJBNFM>,
     // special fields
     // @@protoc_insertion_point(special_field:LMMLGKHALLA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl LMMLGKHALLA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEPCGLMFPBC",
-            |m: &LMMLGKHALLA| { &m.CEPCGLMFPBC },
-            |m: &mut LMMLGKHALLA| { &mut m.CEPCGLMFPBC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HFPEJIDDDJG",
             |m: &LMMLGKHALLA| { &m.HFPEJIDDDJG },
@@ -67,6 +62,11 @@ impl LMMLGKHALLA {
             "item_value",
             |m: &LMMLGKHALLA| { &m.item_value },
             |m: &mut LMMLGKHALLA| { &mut m.item_value },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CEPCGLMFPBC",
+            |m: &LMMLGKHALLA| { &m.CEPCGLMFPBC },
+            |m: &mut LMMLGKHALLA| { &mut m.CEPCGLMFPBC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LMMLGKHALLA>(
             "LMMLGKHALLA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for LMMLGKHALLA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.CEPCGLMFPBC.push(is.read_message()?);
-                },
-                88 => {
+                72 => {
                     self.HFPEJIDDDJG = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                80 => {
                     self.item_value = is.read_uint32()?;
+                },
+                114 => {
+                    self.CEPCGLMFPBC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for LMMLGKHALLA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
+            my_size += ::protobuf::rt::int32_size(9, self.HFPEJIDDDJG.value());
+        }
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.item_value);
+        }
         for value in &self.CEPCGLMFPBC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
-            my_size += ::protobuf::rt::int32_size(11, self.HFPEJIDDDJG.value());
-        }
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.item_value);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CEPCGLMFPBC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
         if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.HFPEJIDDDJG))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.HFPEJIDDDJG))?;
         }
         if self.item_value != 0 {
-            os.write_uint32(12, self.item_value)?;
+            os.write_uint32(10, self.item_value)?;
         }
+        for v in &self.CEPCGLMFPBC {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for LMMLGKHALLA {
     }
 
     fn clear(&mut self) {
-        self.CEPCGLMFPBC.clear();
         self.HFPEJIDDDJG = ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL);
         self.item_value = 0;
+        self.CEPCGLMFPBC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LMMLGKHALLA {
         static instance: LMMLGKHALLA = LMMLGKHALLA {
-            CEPCGLMFPBC: ::std::vec::Vec::new(),
             HFPEJIDDDJG: ::protobuf::EnumOrUnknown::from_i32(0),
             item_value: 0,
+            CEPCGLMFPBC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for LMMLGKHALLA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LMMLGKHALLA.proto\x1a\x11EDJKFOBBDJF.proto\x1a\x11GOMKGHJBNFM.prot\
-    o\"\x8c\x01\n\x0bLMMLGKHALLA\x12.\n\x0bCEPCGLMFPBC\x18\x06\x20\x03(\x0b2\
-    \x0c.GOMKGHJBNFMR\x0bCEPCGLMFPBC\x12.\n\x0bHFPEJIDDDJG\x18\x0b\x20\x01(\
-    \x0e2\x0c.EDJKFOBBDJFR\x0bHFPEJIDDDJG\x12\x1d\n\nitem_value\x18\x0c\x20\
-    \x01(\rR\titemValueb\x06proto3\
+    o\"\x8c\x01\n\x0bLMMLGKHALLA\x12.\n\x0bHFPEJIDDDJG\x18\t\x20\x01(\x0e2\
+    \x0c.EDJKFOBBDJFR\x0bHFPEJIDDDJG\x12\x1d\n\nitem_value\x18\n\x20\x01(\rR\
+    \titemValue\x12.\n\x0bCEPCGLMFPBC\x18\x0e\x20\x03(\x0b2\x0c.GOMKGHJBNFMR\
+    \x0bCEPCGLMFPBCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEvolveBuildQueryInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.JPDOIGJNGNP)
-    pub JPDOIGJNGNP: ::std::vec::Vec<super::LDLCMMOPKNG::LDLCMMOPKNG>,
     // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.JPDOIGJNGNP)
+    pub JPDOIGJNGNP: ::std::vec::Vec<super::LDLCMMOPKNG::LDLCMMOPKNG>,
     // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.CFDIKLBINHK)
     pub CFDIKLBINHK: ::protobuf::MessageField<super::CJJHNFICDIM::CJJHNFICDIM>,
     // special fields
@@ -53,15 +53,15 @@ impl GetEvolveBuildQueryInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JPDOIGJNGNP",
-            |m: &GetEvolveBuildQueryInfoScRsp| { &m.JPDOIGJNGNP },
-            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.JPDOIGJNGNP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetEvolveBuildQueryInfoScRsp| { &m.retcode },
             |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JPDOIGJNGNP",
+            |m: &GetEvolveBuildQueryInfoScRsp| { &m.JPDOIGJNGNP },
+            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.JPDOIGJNGNP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJJHNFICDIM::CJJHNFICDIM>(
             "CFDIKLBINHK",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.JPDOIGJNGNP.push(is.read_message()?);
-                },
-                88 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                90 => {
+                    self.JPDOIGJNGNP.push(is.read_message()?);
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
                 },
                 tag => {
@@ -107,13 +107,13 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         for value in &self.JPDOIGJNGNP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JPDOIGJNGNP {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.JPDOIGJNGNP {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.JPDOIGJNGNP.clear();
         self.retcode = 0;
+        self.JPDOIGJNGNP.clear();
         self.CFDIKLBINHK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEvolveBuildQueryInfoScRsp {
         static instance: GetEvolveBuildQueryInfoScRsp = GetEvolveBuildQueryInfoScRsp {
-            JPDOIGJNGNP: ::std::vec::Vec::new(),
             retcode: 0,
+            JPDOIGJNGNP: ::std::vec::Vec::new(),
             CFDIKLBINHK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildQueryInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GetEvolveBuildQueryInfoScRsp.proto\x1a\x11CJJHNFICDIM.proto\x1a\x11L\
-    DLCMMOPKNG.proto\"\x98\x01\n\x1cGetEvolveBuildQueryInfoScRsp\x12.\n\x0bJ\
-    PDOIGJNGNP\x18\t\x20\x03(\x0b2\x0c.LDLCMMOPKNGR\x0bJPDOIGJNGNP\x12\x18\n\
-    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bCFDIKLBINHK\x18\x0e\
-    \x20\x01(\x0b2\x0c.CJJHNFICDIMR\x0bCFDIKLBINHKb\x06proto3\
+    DLCMMOPKNG.proto\"\x98\x01\n\x1cGetEvolveBuildQueryInfoScRsp\x12\x18\n\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bJPDOIGJNGNP\x18\x0b\
+    \x20\x03(\x0b2\x0c.LDLCMMOPKNGR\x0bJPDOIGJNGNP\x12.\n\x0bCFDIKLBINHK\x18\
+    \r\x20\x01(\x0b2\x0c.CJJHNFICDIMR\x0bCFDIKLBINHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

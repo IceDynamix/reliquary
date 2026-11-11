@@ -86,13 +86,13 @@ impl ::protobuf::Message for AntiAddictScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                32 => {
                     self.msg_type = is.read_uint32()?;
                 },
-                34 => {
+                90 => {
                     self.level = is.read_string()?;
                 },
-                82 => {
+                114 => {
                     self.msg = is.read_string()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for AntiAddictScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.msg_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.msg_type);
+            my_size += ::protobuf::rt::uint32_size(4, self.msg_type);
         }
         if !self.level.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.level);
+            my_size += ::protobuf::rt::string_size(11, &self.level);
         }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.msg);
+            my_size += ::protobuf::rt::string_size(14, &self.msg);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for AntiAddictScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.msg_type != 0 {
-            os.write_uint32(3, self.msg_type)?;
+            os.write_uint32(4, self.msg_type)?;
         }
         if !self.level.is_empty() {
-            os.write_string(4, &self.level)?;
+            os.write_string(11, &self.level)?;
         }
         if !self.msg.is_empty() {
-            os.write_string(10, &self.msg)?;
+            os.write_string(14, &self.msg)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for AntiAddictScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18AntiAddictScNotify.proto\"W\n\x12AntiAddictScNotify\x12\x19\n\x08m\
-    sg_type\x18\x03\x20\x01(\rR\x07msgType\x12\x14\n\x05level\x18\x04\x20\
-    \x01(\tR\x05level\x12\x10\n\x03msg\x18\n\x20\x01(\tR\x03msgb\x06proto3\
+    sg_type\x18\x04\x20\x01(\rR\x07msgType\x12\x14\n\x05level\x18\x0b\x20\
+    \x01(\tR\x05level\x12\x10\n\x03msg\x18\x0e\x20\x01(\tR\x03msgb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

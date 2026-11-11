@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CEAPCHBBOFN {
     // message fields
-    // @@protoc_insertion_point(field:CEAPCHBBOFN.MBIAIMKHNDB)
-    pub MBIAIMKHNDB: bool,
     // @@protoc_insertion_point(field:CEAPCHBBOFN.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:CEAPCHBBOFN.MBIAIMKHNDB)
+    pub MBIAIMKHNDB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:CEAPCHBBOFN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CEAPCHBBOFN {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBIAIMKHNDB",
-            |m: &CEAPCHBBOFN| { &m.MBIAIMKHNDB },
-            |m: &mut CEAPCHBBOFN| { &mut m.MBIAIMKHNDB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
             |m: &CEAPCHBBOFN| { &m.uid },
             |m: &mut CEAPCHBBOFN| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBIAIMKHNDB",
+            |m: &CEAPCHBBOFN| { &m.MBIAIMKHNDB },
+            |m: &mut CEAPCHBBOFN| { &mut m.MBIAIMKHNDB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CEAPCHBBOFN>(
             "CEAPCHBBOFN",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CEAPCHBBOFN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                8 => {
+                    self.uid = is.read_uint32()?;
+                },
                 16 => {
                     self.MBIAIMKHNDB = is.read_bool()?;
-                },
-                88 => {
-                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CEAPCHBBOFN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        }
         if self.MBIAIMKHNDB != false {
             my_size += 1 + 1;
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CEAPCHBBOFN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
+        }
         if self.MBIAIMKHNDB != false {
             os.write_bool(2, self.MBIAIMKHNDB)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(11, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CEAPCHBBOFN {
     }
 
     fn clear(&mut self) {
-        self.MBIAIMKHNDB = false;
         self.uid = 0;
+        self.MBIAIMKHNDB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CEAPCHBBOFN {
         static instance: CEAPCHBBOFN = CEAPCHBBOFN {
-            MBIAIMKHNDB: false,
             uid: 0,
+            MBIAIMKHNDB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CEAPCHBBOFN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CEAPCHBBOFN.proto\"A\n\x0bCEAPCHBBOFN\x12\x20\n\x0bMBIAIMKHNDB\x18\
-    \x02\x20\x01(\x08R\x0bMBIAIMKHNDB\x12\x10\n\x03uid\x18\x0b\x20\x01(\rR\
-    \x03uidb\x06proto3\
+    \n\x11CEAPCHBBOFN.proto\"A\n\x0bCEAPCHBBOFN\x12\x10\n\x03uid\x18\x01\x20\
+    \x01(\rR\x03uid\x12\x20\n\x0bMBIAIMKHNDB\x18\x02\x20\x01(\x08R\x0bMBIAIM\
+    KHNDBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AvatarLineup {
     // message fields
-    // @@protoc_insertion_point(field:AvatarLineup.assist_uid)
-    pub assist_uid: u32,
     // @@protoc_insertion_point(field:AvatarLineup.id)
     pub id: u32,
     // @@protoc_insertion_point(field:AvatarLineup.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:AvatarLineup.assist_uid)
+    pub assist_uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarLineup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl AvatarLineup {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "assist_uid",
-            |m: &AvatarLineup| { &m.assist_uid },
-            |m: &mut AvatarLineup| { &mut m.assist_uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &AvatarLineup| { &m.id },
             |m: &mut AvatarLineup| { &mut m.id },
@@ -67,6 +62,11 @@ impl AvatarLineup {
             "avatar_type",
             |m: &AvatarLineup| { &m.avatar_type },
             |m: &mut AvatarLineup| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "assist_uid",
+            |m: &AvatarLineup| { &m.assist_uid },
+            |m: &mut AvatarLineup| { &mut m.assist_uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarLineup>(
             "AvatarLineup",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for AvatarLineup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.assist_uid = is.read_uint32()?;
-                },
-                56 => {
+                8 => {
                     self.id = is.read_uint32()?;
                 },
-                104 => {
+                32 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.assist_uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for AvatarLineup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.assist_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.assist_uid);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            my_size += ::protobuf::rt::int32_size(13, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
+        }
+        if self.assist_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.assist_uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for AvatarLineup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.assist_uid != 0 {
-            os.write_uint32(3, self.assist_uid)?;
-        }
         if self.id != 0 {
-            os.write_uint32(7, self.id)?;
+            os.write_uint32(1, self.id)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.assist_uid != 0 {
+            os.write_uint32(7, self.assist_uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for AvatarLineup {
     }
 
     fn clear(&mut self) {
-        self.assist_uid = 0;
         self.id = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AvatarType_None);
+        self.assist_uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AvatarLineup {
         static instance: AvatarLineup = AvatarLineup {
-            assist_uid: 0,
             id: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            assist_uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarLineup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AvatarLineup.proto\x1a\x10AvatarType.proto\"k\n\x0cAvatarLineup\
-    \x12\x1d\n\nassist_uid\x18\x03\x20\x01(\rR\tassistUid\x12\x0e\n\x02id\
-    \x18\x07\x20\x01(\rR\x02id\x12,\n\x0bavatar_type\x18\r\x20\x01(\x0e2\x0b\
-    .AvatarTypeR\navatarTypeb\x06proto3\
+    \x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02id\x12,\n\x0bavatar_type\x18\x04\
+    \x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x1d\n\nassist_uid\x18\x07\
+    \x20\x01(\rR\tassistUidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HGFJAHILCAA {
     // message fields
-    // @@protoc_insertion_point(field:HGFJAHILCAA.area_id)
-    pub area_id: u32,
     // @@protoc_insertion_point(field:HGFJAHILCAA.BHHHNHMMDMH)
     pub BHHHNHMMDMH: ::protobuf::MessageField<super::BBCOLCHCEFP::BBCOLCHCEFP>,
     // @@protoc_insertion_point(field:HGFJAHILCAA.PMKGMLELPPI)
     pub PMKGMLELPPI: ::protobuf::MessageField<super::AJNOEKPLPCL::AJNOEKPLPCL>,
+    // @@protoc_insertion_point(field:HGFJAHILCAA.area_id)
+    pub area_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HGFJAHILCAA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl HGFJAHILCAA {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "area_id",
-            |m: &HGFJAHILCAA| { &m.area_id },
-            |m: &mut HGFJAHILCAA| { &mut m.area_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBCOLCHCEFP::BBCOLCHCEFP>(
             "BHHHNHMMDMH",
             |m: &HGFJAHILCAA| { &m.BHHHNHMMDMH },
@@ -67,6 +62,11 @@ impl HGFJAHILCAA {
             "PMKGMLELPPI",
             |m: &HGFJAHILCAA| { &m.PMKGMLELPPI },
             |m: &mut HGFJAHILCAA| { &mut m.PMKGMLELPPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "area_id",
+            |m: &HGFJAHILCAA| { &m.area_id },
+            |m: &mut HGFJAHILCAA| { &mut m.area_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HGFJAHILCAA>(
             "HGFJAHILCAA",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HGFJAHILCAA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.area_id = is.read_uint32()?;
-                },
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BHHHNHMMDMH)?;
                 },
-                106 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMKGMLELPPI)?;
+                },
+                96 => {
+                    self.area_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,9 +107,6 @@ impl ::protobuf::Message for HGFJAHILCAA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.area_id);
-        }
         if let Some(v) = self.BHHHNHMMDMH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -117,6 +114,9 @@ impl ::protobuf::Message for HGFJAHILCAA {
         if let Some(v) = self.PMKGMLELPPI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.area_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for HGFJAHILCAA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.area_id != 0 {
-            os.write_uint32(8, self.area_id)?;
-        }
         if let Some(v) = self.BHHHNHMMDMH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.PMKGMLELPPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.area_id != 0 {
+            os.write_uint32(12, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for HGFJAHILCAA {
     }
 
     fn clear(&mut self) {
-        self.area_id = 0;
         self.BHHHNHMMDMH.clear();
         self.PMKGMLELPPI.clear();
+        self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HGFJAHILCAA {
         static instance: HGFJAHILCAA = HGFJAHILCAA {
-            area_id: 0,
             BHHHNHMMDMH: ::protobuf::MessageField::none(),
             PMKGMLELPPI: ::protobuf::MessageField::none(),
+            area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for HGFJAHILCAA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGFJAHILCAA.proto\x1a\x11AJNOEKPLPCL.proto\x1a\x11BBCOLCHCEFP.prot\
-    o\"\x86\x01\n\x0bHGFJAHILCAA\x12\x17\n\x07area_id\x18\x08\x20\x01(\rR\
-    \x06areaId\x12.\n\x0bBHHHNHMMDMH\x18\n\x20\x01(\x0b2\x0c.BBCOLCHCEFPR\
-    \x0bBHHHNHMMDMH\x12.\n\x0bPMKGMLELPPI\x18\r\x20\x01(\x0b2\x0c.AJNOEKPLPC\
-    LR\x0bPMKGMLELPPIb\x06proto3\
+    o\"\x86\x01\n\x0bHGFJAHILCAA\x12.\n\x0bBHHHNHMMDMH\x18\x02\x20\x01(\x0b2\
+    \x0c.BBCOLCHCEFPR\x0bBHHHNHMMDMH\x12.\n\x0bPMKGMLELPPI\x18\x05\x20\x01(\
+    \x0b2\x0c.AJNOEKPLPCLR\x0bPMKGMLELPPI\x12\x17\n\x07area_id\x18\x0c\x20\
+    \x01(\rR\x06areaIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

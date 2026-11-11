@@ -30,14 +30,14 @@ pub struct MKGODFLGEAM {
     // message fields
     // @@protoc_insertion_point(field:MKGODFLGEAM.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:MKGODFLGEAM.nickname)
-    pub nickname: ::std::string::String,
-    // @@protoc_insertion_point(field:MKGODFLGEAM.head_icon)
-    pub head_icon: u32,
-    // @@protoc_insertion_point(field:MKGODFLGEAM.AGABADPIGGK)
-    pub AGABADPIGGK: bool,
     // @@protoc_insertion_point(field:MKGODFLGEAM.uid)
     pub uid: u32,
+    // @@protoc_insertion_point(field:MKGODFLGEAM.AGABADPIGGK)
+    pub AGABADPIGGK: bool,
+    // @@protoc_insertion_point(field:MKGODFLGEAM.head_icon)
+    pub head_icon: u32,
+    // @@protoc_insertion_point(field:MKGODFLGEAM.nickname)
+    pub nickname: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:MKGODFLGEAM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,14 +63,9 @@ impl MKGODFLGEAM {
             |m: &mut MKGODFLGEAM| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "nickname",
-            |m: &MKGODFLGEAM| { &m.nickname },
-            |m: &mut MKGODFLGEAM| { &mut m.nickname },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "head_icon",
-            |m: &MKGODFLGEAM| { &m.head_icon },
-            |m: &mut MKGODFLGEAM| { &mut m.head_icon },
+            "uid",
+            |m: &MKGODFLGEAM| { &m.uid },
+            |m: &mut MKGODFLGEAM| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AGABADPIGGK",
@@ -78,9 +73,14 @@ impl MKGODFLGEAM {
             |m: &mut MKGODFLGEAM| { &mut m.AGABADPIGGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &MKGODFLGEAM| { &m.uid },
-            |m: &mut MKGODFLGEAM| { &mut m.uid },
+            "head_icon",
+            |m: &MKGODFLGEAM| { &m.head_icon },
+            |m: &mut MKGODFLGEAM| { &mut m.head_icon },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "nickname",
+            |m: &MKGODFLGEAM| { &m.nickname },
+            |m: &mut MKGODFLGEAM| { &mut m.nickname },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MKGODFLGEAM>(
             "MKGODFLGEAM",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for MKGODFLGEAM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.level = is.read_uint32()?;
                 },
-                42 => {
-                    self.nickname = is.read_string()?;
-                },
-                48 => {
-                    self.head_icon = is.read_uint32()?;
+                40 => {
+                    self.uid = is.read_uint32()?;
                 },
                 64 => {
                     self.AGABADPIGGK = is.read_bool()?;
                 },
-                120 => {
-                    self.uid = is.read_uint32()?;
+                72 => {
+                    self.head_icon = is.read_uint32()?;
+                },
+                122 => {
+                    self.nickname = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,19 +128,19 @@ impl ::protobuf::Message for MKGODFLGEAM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+            my_size += ::protobuf::rt::uint32_size(4, self.level);
         }
-        if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.nickname);
-        }
-        if self.head_icon != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.head_icon);
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.uid);
         }
         if self.AGABADPIGGK != false {
             my_size += 1 + 1;
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+        if self.head_icon != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.head_icon);
+        }
+        if !self.nickname.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.nickname);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,19 +149,19 @@ impl ::protobuf::Message for MKGODFLGEAM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(4, self.level)?;
         }
-        if !self.nickname.is_empty() {
-            os.write_string(5, &self.nickname)?;
-        }
-        if self.head_icon != 0 {
-            os.write_uint32(6, self.head_icon)?;
+        if self.uid != 0 {
+            os.write_uint32(5, self.uid)?;
         }
         if self.AGABADPIGGK != false {
             os.write_bool(8, self.AGABADPIGGK)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+        if self.head_icon != 0 {
+            os.write_uint32(9, self.head_icon)?;
+        }
+        if !self.nickname.is_empty() {
+            os.write_string(15, &self.nickname)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,20 +181,20 @@ impl ::protobuf::Message for MKGODFLGEAM {
 
     fn clear(&mut self) {
         self.level = 0;
-        self.nickname.clear();
-        self.head_icon = 0;
-        self.AGABADPIGGK = false;
         self.uid = 0;
+        self.AGABADPIGGK = false;
+        self.head_icon = 0;
+        self.nickname.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MKGODFLGEAM {
         static instance: MKGODFLGEAM = MKGODFLGEAM {
             level: 0,
-            nickname: ::std::string::String::new(),
-            head_icon: 0,
-            AGABADPIGGK: false,
             uid: 0,
+            AGABADPIGGK: false,
+            head_icon: 0,
+            nickname: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,10 +220,10 @@ impl ::protobuf::reflect::ProtobufValue for MKGODFLGEAM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MKGODFLGEAM.proto\"\x90\x01\n\x0bMKGODFLGEAM\x12\x14\n\x05level\
-    \x18\x02\x20\x01(\rR\x05level\x12\x1a\n\x08nickname\x18\x05\x20\x01(\tR\
-    \x08nickname\x12\x1b\n\thead_icon\x18\x06\x20\x01(\rR\x08headIcon\x12\
-    \x20\n\x0bAGABADPIGGK\x18\x08\x20\x01(\x08R\x0bAGABADPIGGK\x12\x10\n\x03\
-    uid\x18\x0f\x20\x01(\rR\x03uidb\x06proto3\
+    \x18\x04\x20\x01(\rR\x05level\x12\x10\n\x03uid\x18\x05\x20\x01(\rR\x03ui\
+    d\x12\x20\n\x0bAGABADPIGGK\x18\x08\x20\x01(\x08R\x0bAGABADPIGGK\x12\x1b\
+    \n\thead_icon\x18\t\x20\x01(\rR\x08headIcon\x12\x1a\n\x08nickname\x18\
+    \x0f\x20\x01(\tR\x08nicknameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

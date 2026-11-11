@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMonopolyFriendRankingListCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.KDFDFBHKCNG)
-    pub KDFDFBHKCNG: u32,
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.OECIPJIPKEG)
+    pub OECIPJIPKEG: u32,
     // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.DOHOMJBJLLG)
     pub DOHOMJBJLLG: u32,
     // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.HEIHPAPJHID)
     pub HEIHPAPJHID: u32,
-    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.OECIPJIPKEG)
-    pub OECIPJIPKEG: u32,
+    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.KDFDFBHKCNG)
+    pub KDFDFBHKCNG: u32,
+    // @@protoc_insertion_point(field:GetMonopolyFriendRankingListCsReq.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyFriendRankingListCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl GetMonopolyFriendRankingListCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDFDFBHKCNG",
-            |m: &GetMonopolyFriendRankingListCsReq| { &m.KDFDFBHKCNG },
-            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.KDFDFBHKCNG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &GetMonopolyFriendRankingListCsReq| { &m.uid },
-            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.uid },
+            "OECIPJIPKEG",
+            |m: &GetMonopolyFriendRankingListCsReq| { &m.OECIPJIPKEG },
+            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.OECIPJIPKEG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "DOHOMJBJLLG",
@@ -78,9 +73,14 @@ impl GetMonopolyFriendRankingListCsReq {
             |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.HEIHPAPJHID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OECIPJIPKEG",
-            |m: &GetMonopolyFriendRankingListCsReq| { &m.OECIPJIPKEG },
-            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.OECIPJIPKEG },
+            "KDFDFBHKCNG",
+            |m: &GetMonopolyFriendRankingListCsReq| { &m.KDFDFBHKCNG },
+            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.KDFDFBHKCNG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &GetMonopolyFriendRankingListCsReq| { &m.uid },
+            |m: &mut GetMonopolyFriendRankingListCsReq| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyFriendRankingListCsReq>(
             "GetMonopolyFriendRankingListCsReq",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.KDFDFBHKCNG = is.read_uint32()?;
+                16 => {
+                    self.OECIPJIPKEG = is.read_uint32()?;
                 },
-                64 => {
-                    self.uid = is.read_uint32()?;
-                },
-                88 => {
+                32 => {
                     self.DOHOMJBJLLG = is.read_uint32()?;
                 },
-                96 => {
+                72 => {
                     self.HEIHPAPJHID = is.read_uint32()?;
                 },
-                112 => {
-                    self.OECIPJIPKEG = is.read_uint32()?;
+                88 => {
+                    self.KDFDFBHKCNG = is.read_uint32()?;
+                },
+                104 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDFDFBHKCNG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.KDFDFBHKCNG);
-        }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
+        if self.OECIPJIPKEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.OECIPJIPKEG);
         }
         if self.DOHOMJBJLLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DOHOMJBJLLG);
+            my_size += ::protobuf::rt::uint32_size(4, self.DOHOMJBJLLG);
         }
         if self.HEIHPAPJHID != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HEIHPAPJHID);
+            my_size += ::protobuf::rt::uint32_size(9, self.HEIHPAPJHID);
         }
-        if self.OECIPJIPKEG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OECIPJIPKEG);
+        if self.KDFDFBHKCNG != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KDFDFBHKCNG);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDFDFBHKCNG != 0 {
-            os.write_uint32(5, self.KDFDFBHKCNG)?;
-        }
-        if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
+        if self.OECIPJIPKEG != 0 {
+            os.write_uint32(2, self.OECIPJIPKEG)?;
         }
         if self.DOHOMJBJLLG != 0 {
-            os.write_uint32(11, self.DOHOMJBJLLG)?;
+            os.write_uint32(4, self.DOHOMJBJLLG)?;
         }
         if self.HEIHPAPJHID != 0 {
-            os.write_uint32(12, self.HEIHPAPJHID)?;
+            os.write_uint32(9, self.HEIHPAPJHID)?;
         }
-        if self.OECIPJIPKEG != 0 {
-            os.write_uint32(14, self.OECIPJIPKEG)?;
+        if self.KDFDFBHKCNG != 0 {
+            os.write_uint32(11, self.KDFDFBHKCNG)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(13, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for GetMonopolyFriendRankingListCsReq {
     }
 
     fn clear(&mut self) {
-        self.KDFDFBHKCNG = 0;
-        self.uid = 0;
+        self.OECIPJIPKEG = 0;
         self.DOHOMJBJLLG = 0;
         self.HEIHPAPJHID = 0;
-        self.OECIPJIPKEG = 0;
+        self.KDFDFBHKCNG = 0;
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyFriendRankingListCsReq {
         static instance: GetMonopolyFriendRankingListCsReq = GetMonopolyFriendRankingListCsReq {
-            KDFDFBHKCNG: 0,
-            uid: 0,
+            OECIPJIPKEG: 0,
             DOHOMJBJLLG: 0,
             HEIHPAPJHID: 0,
-            OECIPJIPKEG: 0,
+            KDFDFBHKCNG: 0,
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyFriendRankingListCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetMonopolyFriendRankingListCsReq.proto\"\xbd\x01\n!GetMonopolyFriend\
-    RankingListCsReq\x12\x20\n\x0bKDFDFBHKCNG\x18\x05\x20\x01(\rR\x0bKDFDFBH\
-    KCNG\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\x03uid\x12\x20\n\x0bDOHOMJBJLL\
-    G\x18\x0b\x20\x01(\rR\x0bDOHOMJBJLLG\x12\x20\n\x0bHEIHPAPJHID\x18\x0c\
-    \x20\x01(\rR\x0bHEIHPAPJHID\x12\x20\n\x0bOECIPJIPKEG\x18\x0e\x20\x01(\rR\
-    \x0bOECIPJIPKEGb\x06proto3\
+    RankingListCsReq\x12\x20\n\x0bOECIPJIPKEG\x18\x02\x20\x01(\rR\x0bOECIPJI\
+    PKEG\x12\x20\n\x0bDOHOMJBJLLG\x18\x04\x20\x01(\rR\x0bDOHOMJBJLLG\x12\x20\
+    \n\x0bHEIHPAPJHID\x18\t\x20\x01(\rR\x0bHEIHPAPJHID\x12\x20\n\x0bKDFDFBHK\
+    CNG\x18\x0b\x20\x01(\rR\x0bKDFDFBHKCNG\x12\x10\n\x03uid\x18\r\x20\x01(\r\
+    R\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

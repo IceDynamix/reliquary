@@ -45,7 +45,7 @@ impl BPDKJKJGECM {
         ::std::default::Default::default()
     }
 
-    // .NECNANNNGBN NJFNFNBKEMK = 11;
+    // .NECNANNNGBN NJFNFNBKEMK = 10;
 
     pub fn NJFNFNBKEMK(&self) -> &super::NECNANNNGBN::NECNANNNGBN {
         match self.PNBLCPHJNNO {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for BPDKJKJGECM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                82 => {
                     self.PNBLCPHJNNO = ::std::option::Option::Some(bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for BPDKJKJGECM {
         if let ::std::option::Option::Some(ref v) = self.PNBLCPHJNNO {
             match v {
                 &bpdkjkjgecm::PNBLCPHJNNO::NJFNFNBKEMK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -236,8 +236,8 @@ pub mod bpdkjkjgecm {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPDKJKJGECM.proto\x1a\x11NECNANNNGBN.proto\"N\n\x0bBPDKJKJGECM\x12\
-    0\n\x0bNJFNFNBKEMK\x18\x0b\x20\x01(\x0b2\x0c.NECNANNNGBNH\0R\x0bNJFNFNBK\
-    EMKB\r\n\x0bPNBLCPHJNNOb\x06proto3\
+    0\n\x0bNJFNFNBKEMK\x18\n\x20\x01(\x0b2\x0c.NECNANNNGBNH\0R\x0bNJFNFNBKEM\
+    KB\r\n\x0bPNBLCPHJNNOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

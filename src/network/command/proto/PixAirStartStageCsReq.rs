@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PixAirStartStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PixAirStartStageCsReq.ALJNIHNLNMA)
-    pub ALJNIHNLNMA: u32,
     // @@protoc_insertion_point(field:PixAirStartStageCsReq.stage_id)
     pub stage_id: u32,
+    // @@protoc_insertion_point(field:PixAirStartStageCsReq.ALJNIHNLNMA)
+    pub ALJNIHNLNMA: u32,
     // @@protoc_insertion_point(field:PixAirStartStageCsReq.plane_id)
     pub plane_id: u32,
     // @@protoc_insertion_point(field:PixAirStartStageCsReq.EMMGHDLIPOH)
@@ -56,14 +56,14 @@ impl PixAirStartStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALJNIHNLNMA",
-            |m: &PixAirStartStageCsReq| { &m.ALJNIHNLNMA },
-            |m: &mut PixAirStartStageCsReq| { &mut m.ALJNIHNLNMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
             |m: &PixAirStartStageCsReq| { &m.stage_id },
             |m: &mut PixAirStartStageCsReq| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALJNIHNLNMA",
+            |m: &PixAirStartStageCsReq| { &m.ALJNIHNLNMA },
+            |m: &mut PixAirStartStageCsReq| { &mut m.ALJNIHNLNMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for PixAirStartStageCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                16 => {
                     self.ALJNIHNLNMA = is.read_uint32()?;
                 },
                 56 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                96 => {
                     self.plane_id = is.read_uint32()?;
                 },
-                120 => {
+                88 => {
                     self.EMMGHDLIPOH = is.read_bool()?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for PixAirStartStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ALJNIHNLNMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ALJNIHNLNMA);
-        }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
+        }
+        if self.ALJNIHNLNMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.ALJNIHNLNMA);
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
         }
         if self.EMMGHDLIPOH != false {
             my_size += 1 + 1;
@@ -135,17 +135,17 @@ impl ::protobuf::Message for PixAirStartStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ALJNIHNLNMA != 0 {
-            os.write_uint32(1, self.ALJNIHNLNMA)?;
-        }
         if self.stage_id != 0 {
-            os.write_uint32(7, self.stage_id)?;
+            os.write_uint32(1, self.stage_id)?;
+        }
+        if self.ALJNIHNLNMA != 0 {
+            os.write_uint32(2, self.ALJNIHNLNMA)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(12, self.plane_id)?;
+            os.write_uint32(7, self.plane_id)?;
         }
         if self.EMMGHDLIPOH != false {
-            os.write_bool(15, self.EMMGHDLIPOH)?;
+            os.write_bool(11, self.EMMGHDLIPOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for PixAirStartStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.ALJNIHNLNMA = 0;
         self.stage_id = 0;
+        self.ALJNIHNLNMA = 0;
         self.plane_id = 0;
         self.EMMGHDLIPOH = false;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for PixAirStartStageCsReq {
 
     fn default_instance() -> &'static PixAirStartStageCsReq {
         static instance: PixAirStartStageCsReq = PixAirStartStageCsReq {
-            ALJNIHNLNMA: 0,
             stage_id: 0,
+            ALJNIHNLNMA: 0,
             plane_id: 0,
             EMMGHDLIPOH: false,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for PixAirStartStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bPixAirStartStageCsReq.proto\"\x91\x01\n\x15PixAirStartStageCsReq\
-    \x12\x20\n\x0bALJNIHNLNMA\x18\x01\x20\x01(\rR\x0bALJNIHNLNMA\x12\x19\n\
-    \x08stage_id\x18\x07\x20\x01(\rR\x07stageId\x12\x19\n\x08plane_id\x18\
-    \x0c\x20\x01(\rR\x07planeId\x12\x20\n\x0bEMMGHDLIPOH\x18\x0f\x20\x01(\
-    \x08R\x0bEMMGHDLIPOHb\x06proto3\
+    \x12\x19\n\x08stage_id\x18\x01\x20\x01(\rR\x07stageId\x12\x20\n\x0bALJNI\
+    HNLNMA\x18\x02\x20\x01(\rR\x0bALJNIHNLNMA\x12\x19\n\x08plane_id\x18\x07\
+    \x20\x01(\rR\x07planeId\x12\x20\n\x0bEMMGHDLIPOH\x18\x0b\x20\x01(\x08R\
+    \x0bEMMGHDLIPOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

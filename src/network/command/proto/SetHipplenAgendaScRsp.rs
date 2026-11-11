@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetHipplenAgendaScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetHipplenAgendaScRsp.NEMFNENACNB)
-    pub NEMFNENACNB: ::std::vec::Vec<super::AFEDHCKDDFA::AFEDHCKDDFA>,
     // @@protoc_insertion_point(field:SetHipplenAgendaScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetHipplenAgendaScRsp.NEMFNENACNB)
+    pub NEMFNENACNB: ::std::vec::Vec<super::AFEDHCKDDFA::AFEDHCKDDFA>,
     // special fields
     // @@protoc_insertion_point(special_field:SetHipplenAgendaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SetHipplenAgendaScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NEMFNENACNB",
-            |m: &SetHipplenAgendaScRsp| { &m.NEMFNENACNB },
-            |m: &mut SetHipplenAgendaScRsp| { &mut m.NEMFNENACNB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetHipplenAgendaScRsp| { &m.retcode },
             |m: &mut SetHipplenAgendaScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NEMFNENACNB",
+            |m: &SetHipplenAgendaScRsp| { &m.NEMFNENACNB },
+            |m: &mut SetHipplenAgendaScRsp| { &mut m.NEMFNENACNB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetHipplenAgendaScRsp>(
             "SetHipplenAgendaScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetHipplenAgendaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.NEMFNENACNB.push(is.read_message()?);
-                },
-                104 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                50 => {
+                    self.NEMFNENACNB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for SetHipplenAgendaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         for value in &self.NEMFNENACNB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NEMFNENACNB {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
+        for v in &self.NEMFNENACNB {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetHipplenAgendaScRsp {
     }
 
     fn clear(&mut self) {
-        self.NEMFNENACNB.clear();
         self.retcode = 0;
+        self.NEMFNENACNB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetHipplenAgendaScRsp {
         static instance: SetHipplenAgendaScRsp = SetHipplenAgendaScRsp {
-            NEMFNENACNB: ::std::vec::Vec::new(),
             retcode: 0,
+            NEMFNENACNB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for SetHipplenAgendaScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHipplenAgendaScRsp.proto\x1a\x11AFEDHCKDDFA.proto\"a\n\x15SetHi\
-    pplenAgendaScRsp\x12.\n\x0bNEMFNENACNB\x18\t\x20\x03(\x0b2\x0c.AFEDHCKDD\
-    FAR\x0bNEMFNENACNB\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    pplenAgendaScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\
+    .\n\x0bNEMFNENACNB\x18\x06\x20\x03(\x0b2\x0c.AFEDHCKDDFAR\x0bNEMFNENACNB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FBDLJKEBPHM {
     // message fields
-    // @@protoc_insertion_point(field:FBDLJKEBPHM.MDNAGANGNKK)
-    pub MDNAGANGNKK: u32,
-    // @@protoc_insertion_point(field:FBDLJKEBPHM.JPIHLKGCBPC)
-    pub JPIHLKGCBPC: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:FBDLJKEBPHM.role_id)
     pub role_id: u32,
+    // @@protoc_insertion_point(field:FBDLJKEBPHM.JPIHLKGCBPC)
+    pub JPIHLKGCBPC: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:FBDLJKEBPHM.MDNAGANGNKK)
+    pub MDNAGANGNKK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FBDLJKEBPHM.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl FBDLJKEBPHM {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDNAGANGNKK",
-            |m: &FBDLJKEBPHM| { &m.MDNAGANGNKK },
-            |m: &mut FBDLJKEBPHM| { &mut m.MDNAGANGNKK },
+            "role_id",
+            |m: &FBDLJKEBPHM| { &m.role_id },
+            |m: &mut FBDLJKEBPHM| { &mut m.role_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "JPIHLKGCBPC",
@@ -64,9 +64,9 @@ impl FBDLJKEBPHM {
             |m: &mut FBDLJKEBPHM| { &mut m.JPIHLKGCBPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_id",
-            |m: &FBDLJKEBPHM| { &m.role_id },
-            |m: &mut FBDLJKEBPHM| { &mut m.role_id },
+            "MDNAGANGNKK",
+            |m: &FBDLJKEBPHM| { &m.MDNAGANGNKK },
+            |m: &mut FBDLJKEBPHM| { &mut m.MDNAGANGNKK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FBDLJKEBPHM>(
             "FBDLJKEBPHM",
@@ -86,10 +86,10 @@ impl ::protobuf::Message for FBDLJKEBPHM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MDNAGANGNKK = is.read_uint32()?;
+                24 => {
+                    self.role_id = is.read_uint32()?;
                 },
-                90 => {
+                42 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -104,8 +104,8 @@ impl ::protobuf::Message for FBDLJKEBPHM {
                     is.pop_limit(old_limit);
                     self.JPIHLKGCBPC.insert(key, value);
                 },
-                104 => {
-                    self.role_id = is.read_uint32()?;
+                72 => {
+                    self.MDNAGANGNKK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -119,8 +119,8 @@ impl ::protobuf::Message for FBDLJKEBPHM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MDNAGANGNKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MDNAGANGNKK);
+        if self.role_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.role_id);
         }
         for (k, v) in &self.JPIHLKGCBPC {
             let mut entry_size = 0;
@@ -128,8 +128,8 @@ impl ::protobuf::Message for FBDLJKEBPHM {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.role_id);
+        if self.MDNAGANGNKK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MDNAGANGNKK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,20 +137,20 @@ impl ::protobuf::Message for FBDLJKEBPHM {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MDNAGANGNKK != 0 {
-            os.write_uint32(1, self.MDNAGANGNKK)?;
+        if self.role_id != 0 {
+            os.write_uint32(3, self.role_id)?;
         }
         for (k, v) in &self.JPIHLKGCBPC {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(90)?; // Tag.
+            os.write_raw_varint32(42)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.role_id != 0 {
-            os.write_uint32(13, self.role_id)?;
+        if self.MDNAGANGNKK != 0 {
+            os.write_uint32(9, self.MDNAGANGNKK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::Message for FBDLJKEBPHM {
     }
 
     fn clear(&mut self) {
-        self.MDNAGANGNKK = 0;
-        self.JPIHLKGCBPC.clear();
         self.role_id = 0;
+        self.JPIHLKGCBPC.clear();
+        self.MDNAGANGNKK = 0;
         self.special_fields.clear();
     }
 
@@ -199,10 +199,10 @@ impl ::protobuf::reflect::ProtobufValue for FBDLJKEBPHM {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FBDLJKEBPHM.proto\"\xc9\x01\n\x0bFBDLJKEBPHM\x12\x20\n\x0bMDNAGANG\
-    NKK\x18\x01\x20\x01(\rR\x0bMDNAGANGNKK\x12?\n\x0bJPIHLKGCBPC\x18\x0b\x20\
-    \x03(\x0b2\x1d.FBDLJKEBPHM.JPIHLKGCBPCEntryR\x0bJPIHLKGCBPC\x12\x17\n\
-    \x07role_id\x18\r\x20\x01(\rR\x06roleId\x1a>\n\x10JPIHLKGCBPCEntry\x12\
+    \n\x11FBDLJKEBPHM.proto\"\xc9\x01\n\x0bFBDLJKEBPHM\x12\x17\n\x07role_id\
+    \x18\x03\x20\x01(\rR\x06roleId\x12?\n\x0bJPIHLKGCBPC\x18\x05\x20\x03(\
+    \x0b2\x1d.FBDLJKEBPHM.JPIHLKGCBPCEntryR\x0bJPIHLKGCBPC\x12\x20\n\x0bMDNA\
+    GANGNKK\x18\t\x20\x01(\rR\x0bMDNAGANGNKK\x1a>\n\x10JPIHLKGCBPCEntry\x12\
     \x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\
     \x01(\rR\x05value:\x028\x01b\x06proto3\
 ";

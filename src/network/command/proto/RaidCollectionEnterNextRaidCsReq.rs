@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidCollectionEnterNextRaidCsReq {
     // message fields
+    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.world_level)
+    pub world_level: u32,
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.raid_id)
     pub raid_id: u32,
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidCsReq.is_save)
     pub is_save: u32,
     // special fields
@@ -56,6 +56,11 @@ impl RaidCollectionEnterNextRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &RaidCollectionEnterNextRaidCsReq| { &m.world_level },
+            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
             |m: &RaidCollectionEnterNextRaidCsReq| { &m.raid_id },
             |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.raid_id },
@@ -64,11 +69,6 @@ impl RaidCollectionEnterNextRaidCsReq {
             "avatar_list",
             |m: &RaidCollectionEnterNextRaidCsReq| { &m.avatar_list },
             |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &RaidCollectionEnterNextRaidCsReq| { &m.world_level },
-            |m: &mut RaidCollectionEnterNextRaidCsReq| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                40 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                74 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                72 => {
+                80 => {
                     self.avatar_list.push(is.read_uint32()?);
-                },
-                104 => {
-                    self.world_level = is.read_uint32()?;
                 },
                 112 => {
                     self.is_save = is.read_uint32()?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.raid_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.avatar_list);
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.raid_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.avatar_list);
         if self.is_save != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.is_save);
         }
@@ -136,13 +136,13 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.raid_id != 0 {
-            os.write_uint32(8, self.raid_id)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.avatar_list)?;
         if self.world_level != 0 {
-            os.write_uint32(13, self.world_level)?;
+            os.write_uint32(2, self.world_level)?;
         }
+        if self.raid_id != 0 {
+            os.write_uint32(5, self.raid_id)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.avatar_list)?;
         if self.is_save != 0 {
             os.write_uint32(14, self.is_save)?;
         }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidCsReq {
     }
 
     fn clear(&mut self) {
+        self.world_level = 0;
         self.raid_id = 0;
         self.avatar_list.clear();
-        self.world_level = 0;
         self.is_save = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidCollectionEnterNextRaidCsReq {
         static instance: RaidCollectionEnterNextRaidCsReq = RaidCollectionEnterNextRaidCsReq {
+            world_level: 0,
             raid_id: 0,
             avatar_list: ::std::vec::Vec::new(),
-            world_level: 0,
             is_save: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionEnterNextRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&RaidCollectionEnterNextRaidCsReq.proto\"\x96\x01\n\x20RaidCollectionE\
-    nterNextRaidCsReq\x12\x17\n\x07raid_id\x18\x08\x20\x01(\rR\x06raidId\x12\
-    \x1f\n\x0bavatar_list\x18\t\x20\x03(\rR\navatarList\x12\x1f\n\x0bworld_l\
-    evel\x18\r\x20\x01(\rR\nworldLevel\x12\x17\n\x07is_save\x18\x0e\x20\x01(\
-    \rR\x06isSaveb\x06proto3\
+    nterNextRaidCsReq\x12\x1f\n\x0bworld_level\x18\x02\x20\x01(\rR\nworldLev\
+    el\x12\x17\n\x07raid_id\x18\x05\x20\x01(\rR\x06raidId\x12\x1f\n\x0bavata\
+    r_list\x18\n\x20\x03(\rR\navatarList\x12\x17\n\x07is_save\x18\x0e\x20\
+    \x01(\rR\x06isSaveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

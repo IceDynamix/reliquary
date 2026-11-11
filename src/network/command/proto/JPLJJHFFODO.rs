@@ -79,10 +79,10 @@ impl ::protobuf::Message for JPLJJHFFODO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.LAOACNPDOLD = is.read_uint32()?;
                 },
-                96 => {
+                80 => {
                     self.num = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for JPLJJHFFODO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LAOACNPDOLD);
+            my_size += ::protobuf::rt::uint32_size(4, self.LAOACNPDOLD);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.num);
+            my_size += ::protobuf::rt::uint32_size(10, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for JPLJJHFFODO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LAOACNPDOLD != 0 {
-            os.write_uint32(2, self.LAOACNPDOLD)?;
+            os.write_uint32(4, self.LAOACNPDOLD)?;
         }
         if self.num != 0 {
-            os.write_uint32(12, self.num)?;
+            os.write_uint32(10, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for JPLJJHFFODO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JPLJJHFFODO.proto\"A\n\x0bJPLJJHFFODO\x12\x20\n\x0bLAOACNPDOLD\x18\
-    \x02\x20\x01(\rR\x0bLAOACNPDOLD\x12\x10\n\x03num\x18\x0c\x20\x01(\rR\x03\
-    numb\x06proto3\
+    \x04\x20\x01(\rR\x0bLAOACNPDOLD\x12\x10\n\x03num\x18\n\x20\x01(\rR\x03nu\
+    mb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

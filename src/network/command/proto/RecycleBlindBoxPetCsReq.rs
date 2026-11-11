@@ -72,10 +72,10 @@ impl ::protobuf::Message for RecycleBlindBoxPetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                106 => {
                     is.read_repeated_packed_uint64_into(&mut self.AMLGIHGPKPF)?;
                 },
-                88 => {
+                104 => {
                     self.AMLGIHGPKPF.push(is.read_uint64()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for RecycleBlindBoxPetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint64_size(11, &self.AMLGIHGPKPF);
+        my_size += ::protobuf::rt::vec_packed_uint64_size(13, &self.AMLGIHGPKPF);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint64(11, &self.AMLGIHGPKPF)?;
+        os.write_repeated_packed_uint64(13, &self.AMLGIHGPKPF)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for RecycleBlindBoxPetCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRecycleBlindBoxPetCsReq.proto\";\n\x17RecycleBlindBoxPetCsReq\x12\
-    \x20\n\x0bAMLGIHGPKPF\x18\x0b\x20\x03(\x04R\x0bAMLGIHGPKPFb\x06proto3\
+    \x20\n\x0bAMLGIHGPKPF\x18\r\x20\x03(\x04R\x0bAMLGIHGPKPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JHACFFJIPHK {
     // message fields
+    // @@protoc_insertion_point(field:JHACFFJIPHK.status)
+    pub status: ::protobuf::EnumOrUnknown<super::PlanetFesQuestState::PlanetFesQuestState>,
     // @@protoc_insertion_point(field:JHACFFJIPHK.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:JHACFFJIPHK.quest_id)
     pub quest_id: u32,
     // @@protoc_insertion_point(field:JHACFFJIPHK.DPCHGMMCKNN)
     pub DPCHGMMCKNN: u32,
-    // @@protoc_insertion_point(field:JHACFFJIPHK.status)
-    pub status: ::protobuf::EnumOrUnknown<super::PlanetFesQuestState::PlanetFesQuestState>,
     // message oneof groups
     pub JCPHPAHKPDD: ::std::option::Option<jhacffjiphk::JCPHPAHKPDD>,
     // special fields
@@ -54,32 +54,7 @@ impl JHACFFJIPHK {
         ::std::default::Default::default()
     }
 
-    // uint32 MCNLMNOKAFF = 9;
-
-    pub fn MCNLMNOKAFF(&self) -> u32 {
-        match self.JCPHPAHKPDD {
-            ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v)) => v,
-            _ => 0,
-        }
-    }
-
-    pub fn clear_MCNLMNOKAFF(&mut self) {
-        self.JCPHPAHKPDD = ::std::option::Option::None;
-    }
-
-    pub fn has_MCNLMNOKAFF(&self) -> bool {
-        match self.JCPHPAHKPDD {
-            ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MCNLMNOKAFF(&mut self, v: u32) {
-        self.JCPHPAHKPDD = ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v))
-    }
-
-    // .NCFKHDIKCNI KNOCPAJCPJC = 12;
+    // .NCFKHDIKCNI KNOCPAJCPJC = 7;
 
     pub fn KNOCPAJCPJC(&self) -> &super::NCFKHDIKCNI::NCFKHDIKCNI {
         match self.JCPHPAHKPDD {
@@ -128,9 +103,39 @@ impl JHACFFJIPHK {
         }
     }
 
+    // uint32 MCNLMNOKAFF = 9;
+
+    pub fn MCNLMNOKAFF(&self) -> u32 {
+        match self.JCPHPAHKPDD {
+            ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v)) => v,
+            _ => 0,
+        }
+    }
+
+    pub fn clear_MCNLMNOKAFF(&mut self) {
+        self.JCPHPAHKPDD = ::std::option::Option::None;
+    }
+
+    pub fn has_MCNLMNOKAFF(&self) -> bool {
+        match self.JCPHPAHKPDD {
+            ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MCNLMNOKAFF(&mut self, v: u32) {
+        self.JCPHPAHKPDD = ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v))
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "status",
+            |m: &JHACFFJIPHK| { &m.status },
+            |m: &mut JHACFFJIPHK| { &mut m.status },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &JHACFFJIPHK| { &m.progress },
@@ -146,23 +151,18 @@ impl JHACFFJIPHK {
             |m: &JHACFFJIPHK| { &m.DPCHGMMCKNN },
             |m: &mut JHACFFJIPHK| { &mut m.DPCHGMMCKNN },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &JHACFFJIPHK| { &m.status },
-            |m: &mut JHACFFJIPHK| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MCNLMNOKAFF",
-            JHACFFJIPHK::has_MCNLMNOKAFF,
-            JHACFFJIPHK::MCNLMNOKAFF,
-            JHACFFJIPHK::set_MCNLMNOKAFF,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NCFKHDIKCNI::NCFKHDIKCNI>(
             "KNOCPAJCPJC",
             JHACFFJIPHK::has_KNOCPAJCPJC,
             JHACFFJIPHK::KNOCPAJCPJC,
             JHACFFJIPHK::mut_KNOCPAJCPJC,
             JHACFFJIPHK::set_KNOCPAJCPJC,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "MCNLMNOKAFF",
+            JHACFFJIPHK::has_MCNLMNOKAFF,
+            JHACFFJIPHK::MCNLMNOKAFF,
+            JHACFFJIPHK::set_MCNLMNOKAFF,
         ));
         oneofs.push(jhacffjiphk::JCPHPAHKPDD::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JHACFFJIPHK>(
@@ -184,22 +184,22 @@ impl ::protobuf::Message for JHACFFJIPHK {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                32 => {
                     self.progress = is.read_uint32()?;
                 },
-                88 => {
+                80 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                112 => {
+                104 => {
                     self.DPCHGMMCKNN = is.read_uint32()?;
                 },
-                120 => {
-                    self.status = is.read_enum_or_unknown()?;
+                58 => {
+                    self.JCPHPAHKPDD = ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::KNOCPAJCPJC(is.read_message()?));
                 },
                 72 => {
                     self.JCPHPAHKPDD = ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(is.read_uint32()?));
-                },
-                98 => {
-                    self.JCPHPAHKPDD = ::std::option::Option::Some(jhacffjiphk::JCPHPAHKPDD::KNOCPAJCPJC(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -213,26 +213,26 @@ impl ::protobuf::Message for JHACFFJIPHK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone) {
+            my_size += ::protobuf::rt::int32_size(1, self.status.value());
+        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.progress);
+            my_size += ::protobuf::rt::uint32_size(4, self.progress);
         }
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.quest_id);
         }
         if self.DPCHGMMCKNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DPCHGMMCKNN);
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone) {
-            my_size += ::protobuf::rt::int32_size(15, self.status.value());
+            my_size += ::protobuf::rt::uint32_size(13, self.DPCHGMMCKNN);
         }
         if let ::std::option::Option::Some(ref v) = self.JCPHPAHKPDD {
             match v {
-                &jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v) => {
-                    my_size += ::protobuf::rt::uint32_size(9, v);
-                },
                 &jhacffjiphk::JCPHPAHKPDD::KNOCPAJCPJC(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v) => {
+                    my_size += ::protobuf::rt::uint32_size(9, v);
                 },
             };
         }
@@ -242,25 +242,25 @@ impl ::protobuf::Message for JHACFFJIPHK {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
         if self.progress != 0 {
-            os.write_uint32(1, self.progress)?;
+            os.write_uint32(4, self.progress)?;
         }
         if self.quest_id != 0 {
-            os.write_uint32(11, self.quest_id)?;
+            os.write_uint32(10, self.quest_id)?;
         }
         if self.DPCHGMMCKNN != 0 {
-            os.write_uint32(14, self.DPCHGMMCKNN)?;
-        }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_uint32(13, self.DPCHGMMCKNN)?;
         }
         if let ::std::option::Option::Some(ref v) = self.JCPHPAHKPDD {
             match v {
+                &jhacffjiphk::JCPHPAHKPDD::KNOCPAJCPJC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+                },
                 &jhacffjiphk::JCPHPAHKPDD::MCNLMNOKAFF(v) => {
                     os.write_uint32(9, v)?;
-                },
-                &jhacffjiphk::JCPHPAHKPDD::KNOCPAJCPJC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
                 },
             };
         }
@@ -281,10 +281,10 @@ impl ::protobuf::Message for JHACFFJIPHK {
     }
 
     fn clear(&mut self) {
+        self.status = ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone);
         self.progress = 0;
         self.quest_id = 0;
         self.DPCHGMMCKNN = 0;
-        self.status = ::protobuf::EnumOrUnknown::new(super::PlanetFesQuestState::PlanetFesQuestState::PlanetFesQuestState_PlanetFesQuestNone);
         self.JCPHPAHKPDD = ::std::option::Option::None;
         self.JCPHPAHKPDD = ::std::option::Option::None;
         self.special_fields.clear();
@@ -292,10 +292,10 @@ impl ::protobuf::Message for JHACFFJIPHK {
 
     fn default_instance() -> &'static JHACFFJIPHK {
         static instance: JHACFFJIPHK = JHACFFJIPHK {
+            status: ::protobuf::EnumOrUnknown::from_i32(0),
             progress: 0,
             quest_id: 0,
             DPCHGMMCKNN: 0,
-            status: ::protobuf::EnumOrUnknown::from_i32(0),
             JCPHPAHKPDD: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -327,10 +327,10 @@ pub mod jhacffjiphk {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:JHACFFJIPHK.JCPHPAHKPDD)
     pub enum JCPHPAHKPDD {
-        // @@protoc_insertion_point(oneof_field:JHACFFJIPHK.MCNLMNOKAFF)
-        MCNLMNOKAFF(u32),
         // @@protoc_insertion_point(oneof_field:JHACFFJIPHK.KNOCPAJCPJC)
         KNOCPAJCPJC(super::super::NCFKHDIKCNI::NCFKHDIKCNI),
+        // @@protoc_insertion_point(oneof_field:JHACFFJIPHK.MCNLMNOKAFF)
+        MCNLMNOKAFF(u32),
     }
 
     impl ::protobuf::Oneof for JCPHPAHKPDD {
@@ -352,13 +352,13 @@ pub mod jhacffjiphk {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JHACFFJIPHK.proto\x1a\x11NCFKHDIKCNI.proto\x1a\x19PlanetFesQuestSt\
-    ate.proto\"\xf9\x01\n\x0bJHACFFJIPHK\x12\x1a\n\x08progress\x18\x01\x20\
-    \x01(\rR\x08progress\x12\x19\n\x08quest_id\x18\x0b\x20\x01(\rR\x07questI\
-    d\x12\x20\n\x0bDPCHGMMCKNN\x18\x0e\x20\x01(\rR\x0bDPCHGMMCKNN\x12,\n\x06\
-    status\x18\x0f\x20\x01(\x0e2\x14.PlanetFesQuestStateR\x06status\x12\"\n\
-    \x0bMCNLMNOKAFF\x18\t\x20\x01(\rH\0R\x0bMCNLMNOKAFF\x120\n\x0bKNOCPAJCPJ\
-    C\x18\x0c\x20\x01(\x0b2\x0c.NCFKHDIKCNIH\0R\x0bKNOCPAJCPJCB\r\n\x0bJCPHP\
-    AHKPDDb\x06proto3\
+    ate.proto\"\xf9\x01\n\x0bJHACFFJIPHK\x12,\n\x06status\x18\x01\x20\x01(\
+    \x0e2\x14.PlanetFesQuestStateR\x06status\x12\x1a\n\x08progress\x18\x04\
+    \x20\x01(\rR\x08progress\x12\x19\n\x08quest_id\x18\n\x20\x01(\rR\x07ques\
+    tId\x12\x20\n\x0bDPCHGMMCKNN\x18\r\x20\x01(\rR\x0bDPCHGMMCKNN\x120\n\x0b\
+    KNOCPAJCPJC\x18\x07\x20\x01(\x0b2\x0c.NCFKHDIKCNIH\0R\x0bKNOCPAJCPJC\x12\
+    \"\n\x0bMCNLMNOKAFF\x18\t\x20\x01(\rH\0R\x0bMCNLMNOKAFFB\r\n\x0bJCPHPAHK\
+    PDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -89,10 +89,10 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                16 => {
+                80 => {
                     self.EFEGLAOAJDA = is.read_uint32()?;
                 },
-                112 => {
+                96 => {
                     self.cur_song_id = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.EFEGLAOAJDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EFEGLAOAJDA);
+            my_size += ::protobuf::rt::uint32_size(10, self.EFEGLAOAJDA);
         }
         if self.cur_song_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.cur_song_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.cur_song_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,10 +126,10 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataScRsp {
             os.write_uint32(1, self.retcode)?;
         }
         if self.EFEGLAOAJDA != 0 {
-            os.write_uint32(2, self.EFEGLAOAJDA)?;
+            os.write_uint32(10, self.EFEGLAOAJDA)?;
         }
         if self.cur_song_id != 0 {
-            os.write_uint32(14, self.cur_song_id)?;
+            os.write_uint32(12, self.cur_song_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MusicRhythmSaveSongConfigDataScRsp.proto\"\x80\x01\n\"MusicRhythmSave\
     SongConfigDataScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bEFEGLAOAJDA\x18\x02\x20\x01(\rR\x0bEFEGLAOAJDA\x12\x1e\n\
-    \x0bcur_song_id\x18\x0e\x20\x01(\rR\tcurSongIdb\x06proto3\
+    \x12\x20\n\x0bEFEGLAOAJDA\x18\n\x20\x01(\rR\x0bEFEGLAOAJDA\x12\x1e\n\x0b\
+    cur_song_id\x18\x0c\x20\x01(\rR\tcurSongIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

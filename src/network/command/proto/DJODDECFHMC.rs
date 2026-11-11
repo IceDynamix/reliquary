@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DJODDECFHMC {
     // message fields
-    // @@protoc_insertion_point(field:DJODDECFHMC.KJFEFFGPNFF)
-    pub KJFEFFGPNFF: ::std::vec::Vec<super::LEJFIEPMMGG::LEJFIEPMMGG>,
     // @@protoc_insertion_point(field:DJODDECFHMC.ENFIKCCMHAI)
     pub ENFIKCCMHAI: ::protobuf::MessageField<super::HMAAICNBKCI::HMAAICNBKCI>,
+    // @@protoc_insertion_point(field:DJODDECFHMC.KJFEFFGPNFF)
+    pub KJFEFFGPNFF: ::std::vec::Vec<super::LEJFIEPMMGG::LEJFIEPMMGG>,
     // @@protoc_insertion_point(field:DJODDECFHMC.EMLLEPOADED)
     pub EMLLEPOADED: ::std::vec::Vec<super::OMJGKNJKHCH::OMJGKNJKHCH>,
     // special fields
@@ -53,15 +53,15 @@ impl DJODDECFHMC {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KJFEFFGPNFF",
-            |m: &DJODDECFHMC| { &m.KJFEFFGPNFF },
-            |m: &mut DJODDECFHMC| { &mut m.KJFEFFGPNFF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HMAAICNBKCI::HMAAICNBKCI>(
             "ENFIKCCMHAI",
             |m: &DJODDECFHMC| { &m.ENFIKCCMHAI },
             |m: &mut DJODDECFHMC| { &mut m.ENFIKCCMHAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KJFEFFGPNFF",
+            |m: &DJODDECFHMC| { &m.KJFEFFGPNFF },
+            |m: &mut DJODDECFHMC| { &mut m.KJFEFFGPNFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EMLLEPOADED",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for DJODDECFHMC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    self.KJFEFFGPNFF.push(is.read_message()?);
-                },
-                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ENFIKCCMHAI)?;
                 },
-                98 => {
+                74 => {
+                    self.KJFEFFGPNFF.push(is.read_message()?);
+                },
+                114 => {
                     self.EMLLEPOADED.push(is.read_message()?);
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for DJODDECFHMC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KJFEFFGPNFF {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.ENFIKCCMHAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.KJFEFFGPNFF {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         for value in &self.EMLLEPOADED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -125,14 +125,14 @@ impl ::protobuf::Message for DJODDECFHMC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KJFEFFGPNFF {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if let Some(v) = self.ENFIKCCMHAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
+        for v in &self.KJFEFFGPNFF {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         for v in &self.EMLLEPOADED {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,16 +151,16 @@ impl ::protobuf::Message for DJODDECFHMC {
     }
 
     fn clear(&mut self) {
-        self.KJFEFFGPNFF.clear();
         self.ENFIKCCMHAI.clear();
+        self.KJFEFFGPNFF.clear();
         self.EMLLEPOADED.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DJODDECFHMC {
         static instance: DJODDECFHMC = DJODDECFHMC {
-            KJFEFFGPNFF: ::std::vec::Vec::new(),
             ENFIKCCMHAI: ::protobuf::MessageField::none(),
+            KJFEFFGPNFF: ::std::vec::Vec::new(),
             EMLLEPOADED: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -187,10 +187,10 @@ impl ::protobuf::reflect::ProtobufValue for DJODDECFHMC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DJODDECFHMC.proto\x1a\x11HMAAICNBKCI.proto\x1a\x11LEJFIEPMMGG.prot\
-    o\x1a\x11OMJGKNJKHCH.proto\"\x9d\x01\n\x0bDJODDECFHMC\x12.\n\x0bKJFEFFGP\
-    NFF\x18\x07\x20\x03(\x0b2\x0c.LEJFIEPMMGGR\x0bKJFEFFGPNFF\x12.\n\x0bENFI\
-    KCCMHAI\x18\t\x20\x01(\x0b2\x0c.HMAAICNBKCIR\x0bENFIKCCMHAI\x12.\n\x0bEM\
-    LLEPOADED\x18\x0c\x20\x03(\x0b2\x0c.OMJGKNJKHCHR\x0bEMLLEPOADEDb\x06prot\
+    o\x1a\x11OMJGKNJKHCH.proto\"\x9d\x01\n\x0bDJODDECFHMC\x12.\n\x0bENFIKCCM\
+    HAI\x18\x07\x20\x01(\x0b2\x0c.HMAAICNBKCIR\x0bENFIKCCMHAI\x12.\n\x0bKJFE\
+    FFGPNFF\x18\t\x20\x03(\x0b2\x0c.LEJFIEPMMGGR\x0bKJFEFFGPNFF\x12.\n\x0bEM\
+    LLEPOADED\x18\x0e\x20\x03(\x0b2\x0c.OMJGKNJKHCHR\x0bEMLLEPOADEDb\x06prot\
     o3\
 ";
 

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FLDKOELBPGA {
     // message fields
-    // @@protoc_insertion_point(field:FLDKOELBPGA.DOFNEAPHMKH)
-    pub DOFNEAPHMKH: bool,
     // @@protoc_insertion_point(field:FLDKOELBPGA.item_id)
     pub item_id: u32,
     // @@protoc_insertion_point(field:FLDKOELBPGA.OICGFNGNLOE)
     pub OICGFNGNLOE: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
     // @@protoc_insertion_point(field:FLDKOELBPGA.KDMNGCLJDOM)
     pub KDMNGCLJDOM: u32,
+    // @@protoc_insertion_point(field:FLDKOELBPGA.DOFNEAPHMKH)
+    pub DOFNEAPHMKH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FLDKOELBPGA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl FLDKOELBPGA {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOFNEAPHMKH",
-            |m: &FLDKOELBPGA| { &m.DOFNEAPHMKH },
-            |m: &mut FLDKOELBPGA| { &mut m.DOFNEAPHMKH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
             |m: &FLDKOELBPGA| { &m.item_id },
             |m: &mut FLDKOELBPGA| { &mut m.item_id },
@@ -74,6 +69,11 @@ impl FLDKOELBPGA {
             "KDMNGCLJDOM",
             |m: &FLDKOELBPGA| { &m.KDMNGCLJDOM },
             |m: &mut FLDKOELBPGA| { &mut m.KDMNGCLJDOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DOFNEAPHMKH",
+            |m: &FLDKOELBPGA| { &m.DOFNEAPHMKH },
+            |m: &mut FLDKOELBPGA| { &mut m.DOFNEAPHMKH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FLDKOELBPGA>(
             "FLDKOELBPGA",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FLDKOELBPGA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.DOFNEAPHMKH = is.read_bool()?;
-                },
-                40 => {
+                16 => {
                     self.item_id = is.read_uint32()?;
                 },
-                74 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OICGFNGNLOE)?;
                 },
-                112 => {
+                64 => {
                     self.KDMNGCLJDOM = is.read_uint32()?;
+                },
+                112 => {
+                    self.DOFNEAPHMKH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for FLDKOELBPGA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DOFNEAPHMKH != false {
-            my_size += 1 + 1;
-        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.item_id);
         }
         if let Some(v) = self.OICGFNGNLOE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.KDMNGCLJDOM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KDMNGCLJDOM);
+            my_size += ::protobuf::rt::uint32_size(8, self.KDMNGCLJDOM);
+        }
+        if self.DOFNEAPHMKH != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for FLDKOELBPGA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DOFNEAPHMKH != false {
-            os.write_bool(3, self.DOFNEAPHMKH)?;
-        }
         if self.item_id != 0 {
-            os.write_uint32(5, self.item_id)?;
+            os.write_uint32(2, self.item_id)?;
         }
         if let Some(v) = self.OICGFNGNLOE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.KDMNGCLJDOM != 0 {
-            os.write_uint32(14, self.KDMNGCLJDOM)?;
+            os.write_uint32(8, self.KDMNGCLJDOM)?;
+        }
+        if self.DOFNEAPHMKH != false {
+            os.write_bool(14, self.DOFNEAPHMKH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for FLDKOELBPGA {
     }
 
     fn clear(&mut self) {
-        self.DOFNEAPHMKH = false;
         self.item_id = 0;
         self.OICGFNGNLOE.clear();
         self.KDMNGCLJDOM = 0;
+        self.DOFNEAPHMKH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FLDKOELBPGA {
         static instance: FLDKOELBPGA = FLDKOELBPGA {
-            DOFNEAPHMKH: false,
             item_id: 0,
             OICGFNGNLOE: ::protobuf::MessageField::none(),
             KDMNGCLJDOM: 0,
+            DOFNEAPHMKH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for FLDKOELBPGA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FLDKOELBPGA.proto\x1a\x12ItemCostData.proto\"\x9b\x01\n\x0bFLDKOEL\
-    BPGA\x12\x20\n\x0bDOFNEAPHMKH\x18\x03\x20\x01(\x08R\x0bDOFNEAPHMKH\x12\
-    \x17\n\x07item_id\x18\x05\x20\x01(\rR\x06itemId\x12/\n\x0bOICGFNGNLOE\
-    \x18\t\x20\x01(\x0b2\r.ItemCostDataR\x0bOICGFNGNLOE\x12\x20\n\x0bKDMNGCL\
-    JDOM\x18\x0e\x20\x01(\rR\x0bKDMNGCLJDOMb\x06proto3\
+    BPGA\x12\x17\n\x07item_id\x18\x02\x20\x01(\rR\x06itemId\x12/\n\x0bOICGFN\
+    GNLOE\x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x0bOICGFNGNLOE\x12\x20\n\x0b\
+    KDMNGCLJDOM\x18\x08\x20\x01(\rR\x0bKDMNGCLJDOM\x12\x20\n\x0bDOFNEAPHMKH\
+    \x18\x0e\x20\x01(\x08R\x0bDOFNEAPHMKHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,16 +86,16 @@ impl ::protobuf::Message for BJGNOHEEIGD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                32 => {
                     self.DCOONCCIKGL = is.read_uint32()?;
                 },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.FHOBMIHDCDJ)?;
                 },
-                48 => {
+                64 => {
                     self.FHOBMIHDCDJ.push(is.read_uint32()?);
                 },
-                64 => {
+                96 => {
                     self.LCFLDHCDNPA = is.read_uint32()?;
                 },
                 tag => {
@@ -111,11 +111,11 @@ impl ::protobuf::Message for BJGNOHEEIGD {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.DCOONCCIKGL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DCOONCCIKGL);
+            my_size += ::protobuf::rt::uint32_size(4, self.DCOONCCIKGL);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FHOBMIHDCDJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FHOBMIHDCDJ);
         if self.LCFLDHCDNPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LCFLDHCDNPA);
+            my_size += ::protobuf::rt::uint32_size(12, self.LCFLDHCDNPA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,11 +124,11 @@ impl ::protobuf::Message for BJGNOHEEIGD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DCOONCCIKGL != 0 {
-            os.write_uint32(2, self.DCOONCCIKGL)?;
+            os.write_uint32(4, self.DCOONCCIKGL)?;
         }
-        os.write_repeated_packed_uint32(6, &self.FHOBMIHDCDJ)?;
+        os.write_repeated_packed_uint32(8, &self.FHOBMIHDCDJ)?;
         if self.LCFLDHCDNPA != 0 {
-            os.write_uint32(8, self.LCFLDHCDNPA)?;
+            os.write_uint32(12, self.LCFLDHCDNPA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for BJGNOHEEIGD {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BJGNOHEEIGD.proto\"s\n\x0bBJGNOHEEIGD\x12\x20\n\x0bDCOONCCIKGL\x18\
-    \x02\x20\x01(\rR\x0bDCOONCCIKGL\x12\x20\n\x0bFHOBMIHDCDJ\x18\x06\x20\x03\
-    (\rR\x0bFHOBMIHDCDJ\x12\x20\n\x0bLCFLDHCDNPA\x18\x08\x20\x01(\rR\x0bLCFL\
+    \x04\x20\x01(\rR\x0bDCOONCCIKGL\x12\x20\n\x0bFHOBMIHDCDJ\x18\x08\x20\x03\
+    (\rR\x0bFHOBMIHDCDJ\x12\x20\n\x0bLCFLDHCDNPA\x18\x0c\x20\x01(\rR\x0bLCFL\
     DHCDNPAb\x06proto3\
 ";
 

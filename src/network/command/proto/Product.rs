@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Product {
     // message fields
-    // @@protoc_insertion_point(field:Product.ENCDABOOIKJ)
-    pub ENCDABOOIKJ: u32,
     // @@protoc_insertion_point(field:Product.EMIHEDNKBCA)
     pub EMIHEDNKBCA: u32,
-    // @@protoc_insertion_point(field:Product.price_tier)
-    pub price_tier: ::std::string::String,
-    // @@protoc_insertion_point(field:Product.gift_type)
-    pub gift_type: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
-    // @@protoc_insertion_point(field:Product.CLDELMPNAPB)
-    pub CLDELMPNAPB: u32,
-    // @@protoc_insertion_point(field:Product.product_id)
-    pub product_id: ::std::string::String,
-    // @@protoc_insertion_point(field:Product.double_reward)
-    pub double_reward: bool,
     // @@protoc_insertion_point(field:Product.begin_time)
     pub begin_time: i64,
     // @@protoc_insertion_point(field:Product.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:Product.ENCDABOOIKJ)
+    pub ENCDABOOIKJ: u32,
+    // @@protoc_insertion_point(field:Product.gift_type)
+    pub gift_type: ::protobuf::EnumOrUnknown<super::ProductGiftType::ProductGiftType>,
+    // @@protoc_insertion_point(field:Product.CLDELMPNAPB)
+    pub CLDELMPNAPB: u32,
+    // @@protoc_insertion_point(field:Product.price_tier)
+    pub price_tier: ::std::string::String,
+    // @@protoc_insertion_point(field:Product.double_reward)
+    pub double_reward: bool,
+    // @@protoc_insertion_point(field:Product.product_id)
+    pub product_id: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:Product.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,19 +66,24 @@ impl Product {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ENCDABOOIKJ",
-            |m: &Product| { &m.ENCDABOOIKJ },
-            |m: &mut Product| { &mut m.ENCDABOOIKJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EMIHEDNKBCA",
             |m: &Product| { &m.EMIHEDNKBCA },
             |m: &mut Product| { &mut m.EMIHEDNKBCA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "price_tier",
-            |m: &Product| { &m.price_tier },
-            |m: &mut Product| { &mut m.price_tier },
+            "begin_time",
+            |m: &Product| { &m.begin_time },
+            |m: &mut Product| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_time",
+            |m: &Product| { &m.end_time },
+            |m: &mut Product| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ENCDABOOIKJ",
+            |m: &Product| { &m.ENCDABOOIKJ },
+            |m: &mut Product| { &mut m.ENCDABOOIKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gift_type",
@@ -91,9 +96,9 @@ impl Product {
             |m: &mut Product| { &mut m.CLDELMPNAPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "product_id",
-            |m: &Product| { &m.product_id },
-            |m: &mut Product| { &mut m.product_id },
+            "price_tier",
+            |m: &Product| { &m.price_tier },
+            |m: &mut Product| { &mut m.price_tier },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "double_reward",
@@ -101,14 +106,9 @@ impl Product {
             |m: &mut Product| { &mut m.double_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &Product| { &m.begin_time },
-            |m: &mut Product| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_time",
-            |m: &Product| { &m.end_time },
-            |m: &mut Product| { &mut m.end_time },
+            "product_id",
+            |m: &Product| { &m.product_id },
+            |m: &mut Product| { &mut m.product_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Product>(
             "Product",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for Product {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.ENCDABOOIKJ = is.read_uint32()?;
-                },
                 16 => {
                     self.EMIHEDNKBCA = is.read_uint32()?;
                 },
-                26 => {
-                    self.price_tier = is.read_string()?;
+                32 => {
+                    self.begin_time = is.read_int64()?;
                 },
                 40 => {
+                    self.end_time = is.read_int64()?;
+                },
+                48 => {
+                    self.ENCDABOOIKJ = is.read_uint32()?;
+                },
+                72 => {
                     self.gift_type = is.read_enum_or_unknown()?;
                 },
-                56 => {
+                80 => {
                     self.CLDELMPNAPB = is.read_uint32()?;
                 },
-                74 => {
-                    self.product_id = is.read_string()?;
+                90 => {
+                    self.price_tier = is.read_string()?;
                 },
                 96 => {
                     self.double_reward = is.read_bool()?;
                 },
-                112 => {
-                    self.begin_time = is.read_int64()?;
-                },
-                120 => {
-                    self.end_time = is.read_int64()?;
+                114 => {
+                    self.product_id = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,32 +167,32 @@ impl ::protobuf::Message for Product {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ENCDABOOIKJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.ENCDABOOIKJ);
-        }
         if self.EMIHEDNKBCA != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.EMIHEDNKBCA);
         }
-        if !self.price_tier.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.price_tier);
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(4, self.begin_time);
+        }
+        if self.end_time != 0 {
+            my_size += ::protobuf::rt::int64_size(5, self.end_time);
+        }
+        if self.ENCDABOOIKJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ENCDABOOIKJ);
         }
         if self.gift_type != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::ProductGiftType_ProductGiftNone) {
-            my_size += ::protobuf::rt::int32_size(5, self.gift_type.value());
+            my_size += ::protobuf::rt::int32_size(9, self.gift_type.value());
         }
         if self.CLDELMPNAPB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CLDELMPNAPB);
+            my_size += ::protobuf::rt::uint32_size(10, self.CLDELMPNAPB);
         }
-        if !self.product_id.is_empty() {
-            my_size += ::protobuf::rt::string_size(9, &self.product_id);
+        if !self.price_tier.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.price_tier);
         }
         if self.double_reward != false {
             my_size += 1 + 1;
         }
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.begin_time);
-        }
-        if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(15, self.end_time);
+        if !self.product_id.is_empty() {
+            my_size += ::protobuf::rt::string_size(14, &self.product_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -200,32 +200,32 @@ impl ::protobuf::Message for Product {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ENCDABOOIKJ != 0 {
-            os.write_uint32(1, self.ENCDABOOIKJ)?;
-        }
         if self.EMIHEDNKBCA != 0 {
             os.write_uint32(2, self.EMIHEDNKBCA)?;
         }
-        if !self.price_tier.is_empty() {
-            os.write_string(3, &self.price_tier)?;
+        if self.begin_time != 0 {
+            os.write_int64(4, self.begin_time)?;
+        }
+        if self.end_time != 0 {
+            os.write_int64(5, self.end_time)?;
+        }
+        if self.ENCDABOOIKJ != 0 {
+            os.write_uint32(6, self.ENCDABOOIKJ)?;
         }
         if self.gift_type != ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::ProductGiftType_ProductGiftNone) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.gift_type))?;
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.gift_type))?;
         }
         if self.CLDELMPNAPB != 0 {
-            os.write_uint32(7, self.CLDELMPNAPB)?;
+            os.write_uint32(10, self.CLDELMPNAPB)?;
         }
-        if !self.product_id.is_empty() {
-            os.write_string(9, &self.product_id)?;
+        if !self.price_tier.is_empty() {
+            os.write_string(11, &self.price_tier)?;
         }
         if self.double_reward != false {
             os.write_bool(12, self.double_reward)?;
         }
-        if self.begin_time != 0 {
-            os.write_int64(14, self.begin_time)?;
-        }
-        if self.end_time != 0 {
-            os.write_int64(15, self.end_time)?;
+        if !self.product_id.is_empty() {
+            os.write_string(14, &self.product_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -244,29 +244,29 @@ impl ::protobuf::Message for Product {
     }
 
     fn clear(&mut self) {
-        self.ENCDABOOIKJ = 0;
         self.EMIHEDNKBCA = 0;
-        self.price_tier.clear();
-        self.gift_type = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::ProductGiftType_ProductGiftNone);
-        self.CLDELMPNAPB = 0;
-        self.product_id.clear();
-        self.double_reward = false;
         self.begin_time = 0;
         self.end_time = 0;
+        self.ENCDABOOIKJ = 0;
+        self.gift_type = ::protobuf::EnumOrUnknown::new(super::ProductGiftType::ProductGiftType::ProductGiftType_ProductGiftNone);
+        self.CLDELMPNAPB = 0;
+        self.price_tier.clear();
+        self.double_reward = false;
+        self.product_id.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Product {
         static instance: Product = Product {
-            ENCDABOOIKJ: 0,
             EMIHEDNKBCA: 0,
-            price_tier: ::std::string::String::new(),
-            gift_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            CLDELMPNAPB: 0,
-            product_id: ::std::string::String::new(),
-            double_reward: false,
             begin_time: 0,
             end_time: 0,
+            ENCDABOOIKJ: 0,
+            gift_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            CLDELMPNAPB: 0,
+            price_tier: ::std::string::String::new(),
+            double_reward: false,
+            product_id: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,14 +292,14 @@ impl ::protobuf::reflect::ProtobufValue for Product {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\rProduct.proto\x1a\x15ProductGiftType.proto\"\xbb\x02\n\x07Product\
-    \x12\x20\n\x0bENCDABOOIKJ\x18\x01\x20\x01(\rR\x0bENCDABOOIKJ\x12\x20\n\
-    \x0bEMIHEDNKBCA\x18\x02\x20\x01(\rR\x0bEMIHEDNKBCA\x12\x1d\n\nprice_tier\
-    \x18\x03\x20\x01(\tR\tpriceTier\x12-\n\tgift_type\x18\x05\x20\x01(\x0e2\
-    \x10.ProductGiftTypeR\x08giftType\x12\x20\n\x0bCLDELMPNAPB\x18\x07\x20\
-    \x01(\rR\x0bCLDELMPNAPB\x12\x1d\n\nproduct_id\x18\t\x20\x01(\tR\tproduct\
-    Id\x12#\n\rdouble_reward\x18\x0c\x20\x01(\x08R\x0cdoubleReward\x12\x1d\n\
-    \nbegin_time\x18\x0e\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\
-    \x0f\x20\x01(\x03R\x07endTimeb\x06proto3\
+    \x12\x20\n\x0bEMIHEDNKBCA\x18\x02\x20\x01(\rR\x0bEMIHEDNKBCA\x12\x1d\n\n\
+    begin_time\x18\x04\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\
+    \x05\x20\x01(\x03R\x07endTime\x12\x20\n\x0bENCDABOOIKJ\x18\x06\x20\x01(\
+    \rR\x0bENCDABOOIKJ\x12-\n\tgift_type\x18\t\x20\x01(\x0e2\x10.ProductGift\
+    TypeR\x08giftType\x12\x20\n\x0bCLDELMPNAPB\x18\n\x20\x01(\rR\x0bCLDELMPN\
+    APB\x12\x1d\n\nprice_tier\x18\x0b\x20\x01(\tR\tpriceTier\x12#\n\rdouble_\
+    reward\x18\x0c\x20\x01(\x08R\x0cdoubleReward\x12\x1d\n\nproduct_id\x18\
+    \x0e\x20\x01(\tR\tproductIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

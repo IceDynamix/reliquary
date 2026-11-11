@@ -30,10 +30,10 @@ pub struct UpdateFloorSavedValueNotify {
     // message fields
     // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.saved_value)
     pub saved_value: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.plane_id)
-    pub plane_id: u32,
     // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.dimension_id)
     pub dimension_id: u32,
+    // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.plane_id)
+    pub plane_id: u32,
     // @@protoc_insertion_point(field:UpdateFloorSavedValueNotify.floor_id)
     pub floor_id: u32,
     // special fields
@@ -61,14 +61,14 @@ impl UpdateFloorSavedValueNotify {
             |m: &mut UpdateFloorSavedValueNotify| { &mut m.saved_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &UpdateFloorSavedValueNotify| { &m.plane_id },
-            |m: &mut UpdateFloorSavedValueNotify| { &mut m.plane_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dimension_id",
             |m: &UpdateFloorSavedValueNotify| { &m.dimension_id },
             |m: &mut UpdateFloorSavedValueNotify| { &mut m.dimension_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &UpdateFloorSavedValueNotify| { &m.plane_id },
+            |m: &mut UpdateFloorSavedValueNotify| { &mut m.plane_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "floor_id",
@@ -93,7 +93,7 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -108,13 +108,13 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
                     is.pop_limit(old_limit);
                     self.saved_value.insert(key, value);
                 },
-                56 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                64 => {
+                96 => {
                     self.dimension_id = is.read_uint32()?;
                 },
-                72 => {
+                112 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                120 => {
                     self.floor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -135,14 +135,14 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.plane_id);
-        }
         if self.dimension_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.dimension_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.dimension_id);
+        }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.plane_id);
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -154,19 +154,19 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(34)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        if self.plane_id != 0 {
-            os.write_uint32(7, self.plane_id)?;
-        }
         if self.dimension_id != 0 {
-            os.write_uint32(8, self.dimension_id)?;
+            os.write_uint32(12, self.dimension_id)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(14, self.plane_id)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(9, self.floor_id)?;
+            os.write_uint32(15, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,8 +186,8 @@ impl ::protobuf::Message for UpdateFloorSavedValueNotify {
 
     fn clear(&mut self) {
         self.saved_value.clear();
-        self.plane_id = 0;
         self.dimension_id = 0;
+        self.plane_id = 0;
         self.floor_id = 0;
         self.special_fields.clear();
     }
@@ -217,12 +217,12 @@ impl ::protobuf::reflect::ProtobufValue for UpdateFloorSavedValueNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateFloorSavedValueNotify.proto\"\x84\x02\n\x1bUpdateFloorSavedValu\
-    eNotify\x12M\n\x0bsaved_value\x18\x04\x20\x03(\x0b2,.UpdateFloorSavedVal\
-    ueNotify.SavedValueEntryR\nsavedValue\x12\x19\n\x08plane_id\x18\x07\x20\
-    \x01(\rR\x07planeId\x12!\n\x0cdimension_id\x18\x08\x20\x01(\rR\x0bdimens\
-    ionId\x12\x19\n\x08floor_id\x18\t\x20\x01(\rR\x07floorId\x1a=\n\x0fSaved\
-    ValueEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05valu\
-    e\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
+    eNotify\x12M\n\x0bsaved_value\x18\x06\x20\x03(\x0b2,.UpdateFloorSavedVal\
+    ueNotify.SavedValueEntryR\nsavedValue\x12!\n\x0cdimension_id\x18\x0c\x20\
+    \x01(\rR\x0bdimensionId\x12\x19\n\x08plane_id\x18\x0e\x20\x01(\rR\x07pla\
+    neId\x12\x19\n\x08floor_id\x18\x0f\x20\x01(\rR\x07floorId\x1a=\n\x0fSave\
+    dValueEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05val\
+    ue\x18\x02\x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BDGGEHGLFAC {
     // message fields
-    // @@protoc_insertion_point(field:BDGGEHGLFAC.KLKAIFEDLNK)
-    pub KLKAIFEDLNK: u32,
     // @@protoc_insertion_point(field:BDGGEHGLFAC.skill_type)
     pub skill_type: ::protobuf::EnumOrUnknown<super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType>,
+    // @@protoc_insertion_point(field:BDGGEHGLFAC.KLKAIFEDLNK)
+    pub KLKAIFEDLNK: u32,
     // @@protoc_insertion_point(field:BDGGEHGLFAC.skill_id)
     pub skill_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl BDGGEHGLFAC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLKAIFEDLNK",
-            |m: &BDGGEHGLFAC| { &m.KLKAIFEDLNK },
-            |m: &mut BDGGEHGLFAC| { &mut m.KLKAIFEDLNK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_type",
             |m: &BDGGEHGLFAC| { &m.skill_type },
             |m: &mut BDGGEHGLFAC| { &mut m.skill_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KLKAIFEDLNK",
+            |m: &BDGGEHGLFAC| { &m.KLKAIFEDLNK },
+            |m: &mut BDGGEHGLFAC| { &mut m.KLKAIFEDLNK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for BDGGEHGLFAC {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.KLKAIFEDLNK = is.read_uint32()?;
-                },
-                72 => {
                     self.skill_type = is.read_enum_or_unknown()?;
                 },
-                104 => {
+                24 => {
+                    self.KLKAIFEDLNK = is.read_uint32()?;
+                },
+                96 => {
                     self.skill_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BDGGEHGLFAC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KLKAIFEDLNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.KLKAIFEDLNK);
-        }
         if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone) {
-            my_size += ::protobuf::rt::int32_size(9, self.skill_type.value());
+            my_size += ::protobuf::rt::int32_size(2, self.skill_type.value());
+        }
+        if self.KLKAIFEDLNK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.KLKAIFEDLNK);
         }
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.skill_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BDGGEHGLFAC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KLKAIFEDLNK != 0 {
-            os.write_uint32(2, self.KLKAIFEDLNK)?;
-        }
         if self.skill_type != ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.skill_type))?;
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.skill_type))?;
+        }
+        if self.KLKAIFEDLNK != 0 {
+            os.write_uint32(3, self.KLKAIFEDLNK)?;
         }
         if self.skill_id != 0 {
-            os.write_uint32(13, self.skill_id)?;
+            os.write_uint32(12, self.skill_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for BDGGEHGLFAC {
     }
 
     fn clear(&mut self) {
-        self.KLKAIFEDLNK = 0;
         self.skill_type = ::protobuf::EnumOrUnknown::new(super::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_KMtSkillNone);
+        self.KLKAIFEDLNK = 0;
         self.skill_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BDGGEHGLFAC {
         static instance: BDGGEHGLFAC = BDGGEHGLFAC {
-            KLKAIFEDLNK: 0,
             skill_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            KLKAIFEDLNK: 0,
             skill_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for BDGGEHGLFAC {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BDGGEHGLFAC.proto\x1a\x20TrainPartyMtSkillBriefType.proto\"\x86\
-    \x01\n\x0bBDGGEHGLFAC\x12\x20\n\x0bKLKAIFEDLNK\x18\x02\x20\x01(\rR\x0bKL\
-    KAIFEDLNK\x12:\n\nskill_type\x18\t\x20\x01(\x0e2\x1b.TrainPartyMtSkillBr\
-    iefTypeR\tskillType\x12\x19\n\x08skill_id\x18\r\x20\x01(\rR\x07skillIdb\
-    \x06proto3\
+    \x01\n\x0bBDGGEHGLFAC\x12:\n\nskill_type\x18\x02\x20\x01(\x0e2\x1b.Train\
+    PartyMtSkillBriefTypeR\tskillType\x12\x20\n\x0bKLKAIFEDLNK\x18\x03\x20\
+    \x01(\rR\x0bKLKAIFEDLNK\x12\x19\n\x08skill_id\x18\x0c\x20\x01(\rR\x07ski\
+    llIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

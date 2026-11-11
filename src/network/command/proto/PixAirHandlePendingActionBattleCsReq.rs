@@ -48,105 +48,7 @@ impl PixAirHandlePendingActionBattleCsReq {
         ::std::default::Default::default()
     }
 
-    // .HLDLJBFIMOO OOOACLEFDGM = 4;
-
-    pub fn OOOACLEFDGM(&self) -> &super::HLDLJBFIMOO::HLDLJBFIMOO {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v)) => v,
-            _ => <super::HLDLJBFIMOO::HLDLJBFIMOO as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OOOACLEFDGM(&mut self) {
-        self.MMCGBGDJIPN = ::std::option::Option::None;
-    }
-
-    pub fn has_OOOACLEFDGM(&self) -> bool {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OOOACLEFDGM(&mut self, v: super::HLDLJBFIMOO::HLDLJBFIMOO) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OOOACLEFDGM(&mut self) -> &mut super::HLDLJBFIMOO::HLDLJBFIMOO {
-        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(_)) = self.MMCGBGDJIPN {
-        } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(super::HLDLJBFIMOO::HLDLJBFIMOO::new()));
-        }
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OOOACLEFDGM(&mut self) -> super::HLDLJBFIMOO::HLDLJBFIMOO {
-        if self.has_OOOACLEFDGM() {
-            match self.MMCGBGDJIPN.take() {
-                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HLDLJBFIMOO::HLDLJBFIMOO::new()
-        }
-    }
-
-    // .OHPMDJFALNH JEIODBPCKNB = 5;
-
-    pub fn JEIODBPCKNB(&self) -> &super::OHPMDJFALNH::OHPMDJFALNH {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(ref v)) => v,
-            _ => <super::OHPMDJFALNH::OHPMDJFALNH as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_JEIODBPCKNB(&mut self) {
-        self.MMCGBGDJIPN = ::std::option::Option::None;
-    }
-
-    pub fn has_JEIODBPCKNB(&self) -> bool {
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_JEIODBPCKNB(&mut self, v: super::OHPMDJFALNH::OHPMDJFALNH) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_JEIODBPCKNB(&mut self) -> &mut super::OHPMDJFALNH::OHPMDJFALNH {
-        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(_)) = self.MMCGBGDJIPN {
-        } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(super::OHPMDJFALNH::OHPMDJFALNH::new()));
-        }
-        match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_JEIODBPCKNB(&mut self) -> super::OHPMDJFALNH::OHPMDJFALNH {
-        if self.has_JEIODBPCKNB() {
-            match self.MMCGBGDJIPN.take() {
-                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::OHPMDJFALNH::OHPMDJFALNH::new()
-        }
-    }
-
-    // .MOJCEJIPPGO MOFNIOJHBBL = 8;
+    // .MOJCEJIPPGO MOFNIOJHBBL = 2;
 
     pub fn MOFNIOJHBBL(&self) -> &super::MOJCEJIPPGO::MOJCEJIPPGO {
         match self.MMCGBGDJIPN {
@@ -195,56 +97,105 @@ impl PixAirHandlePendingActionBattleCsReq {
         }
     }
 
-    // .AEGGFGBNLPE IPKGIIJEPAJ = 10;
+    // .OHPMDJFALNH JEIODBPCKNB = 3;
 
-    pub fn IPKGIIJEPAJ(&self) -> &super::AEGGFGBNLPE::AEGGFGBNLPE {
+    pub fn JEIODBPCKNB(&self) -> &super::OHPMDJFALNH::OHPMDJFALNH {
         match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v)) => v,
-            _ => <super::AEGGFGBNLPE::AEGGFGBNLPE as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(ref v)) => v,
+            _ => <super::OHPMDJFALNH::OHPMDJFALNH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IPKGIIJEPAJ(&mut self) {
+    pub fn clear_JEIODBPCKNB(&mut self) {
         self.MMCGBGDJIPN = ::std::option::Option::None;
     }
 
-    pub fn has_IPKGIIJEPAJ(&self) -> bool {
+    pub fn has_JEIODBPCKNB(&self) -> bool {
         match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(..)) => true,
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IPKGIIJEPAJ(&mut self, v: super::AEGGFGBNLPE::AEGGFGBNLPE) {
-        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(v))
+    pub fn set_JEIODBPCKNB(&mut self, v: super::OHPMDJFALNH::OHPMDJFALNH) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IPKGIIJEPAJ(&mut self) -> &mut super::AEGGFGBNLPE::AEGGFGBNLPE {
-        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(_)) = self.MMCGBGDJIPN {
+    pub fn mut_JEIODBPCKNB(&mut self) -> &mut super::OHPMDJFALNH::OHPMDJFALNH {
+        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(_)) = self.MMCGBGDJIPN {
         } else {
-            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(super::AEGGFGBNLPE::AEGGFGBNLPE::new()));
+            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(super::OHPMDJFALNH::OHPMDJFALNH::new()));
         }
         match self.MMCGBGDJIPN {
-            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref mut v)) => v,
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IPKGIIJEPAJ(&mut self) -> super::AEGGFGBNLPE::AEGGFGBNLPE {
-        if self.has_IPKGIIJEPAJ() {
+    pub fn take_JEIODBPCKNB(&mut self) -> super::OHPMDJFALNH::OHPMDJFALNH {
+        if self.has_JEIODBPCKNB() {
             match self.MMCGBGDJIPN.take() {
-                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(v)) => v,
+                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AEGGFGBNLPE::AEGGFGBNLPE::new()
+            super::OHPMDJFALNH::OHPMDJFALNH::new()
         }
     }
 
-    // .AGBPBAOCCJF DHJNFOKBPNC = 11;
+    // .HLDLJBFIMOO OOOACLEFDGM = 5;
+
+    pub fn OOOACLEFDGM(&self) -> &super::HLDLJBFIMOO::HLDLJBFIMOO {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v)) => v,
+            _ => <super::HLDLJBFIMOO::HLDLJBFIMOO as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OOOACLEFDGM(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+    }
+
+    pub fn has_OOOACLEFDGM(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OOOACLEFDGM(&mut self, v: super::HLDLJBFIMOO::HLDLJBFIMOO) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OOOACLEFDGM(&mut self) -> &mut super::HLDLJBFIMOO::HLDLJBFIMOO {
+        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(_)) = self.MMCGBGDJIPN {
+        } else {
+            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(super::HLDLJBFIMOO::HLDLJBFIMOO::new()));
+        }
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OOOACLEFDGM(&mut self) -> super::HLDLJBFIMOO::HLDLJBFIMOO {
+        if self.has_OOOACLEFDGM() {
+            match self.MMCGBGDJIPN.take() {
+                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HLDLJBFIMOO::HLDLJBFIMOO::new()
+        }
+    }
+
+    // .AGBPBAOCCJF DHJNFOKBPNC = 9;
 
     pub fn DHJNFOKBPNC(&self) -> &super::AGBPBAOCCJF::AGBPBAOCCJF {
         match self.MMCGBGDJIPN {
@@ -293,7 +244,7 @@ impl PixAirHandlePendingActionBattleCsReq {
         }
     }
 
-    // .LJGKOGKEDOA JFGIMDGOMBH = 12;
+    // .LJGKOGKEDOA JFGIMDGOMBH = 13;
 
     pub fn JFGIMDGOMBH(&self) -> &super::LJGKOGKEDOA::LJGKOGKEDOA {
         match self.MMCGBGDJIPN {
@@ -342,7 +293,56 @@ impl PixAirHandlePendingActionBattleCsReq {
         }
     }
 
-    // .GANGPOOHAKI ADMICNGJLOI = 1099;
+    // .AEGGFGBNLPE IPKGIIJEPAJ = 15;
+
+    pub fn IPKGIIJEPAJ(&self) -> &super::AEGGFGBNLPE::AEGGFGBNLPE {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v)) => v,
+            _ => <super::AEGGFGBNLPE::AEGGFGBNLPE as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_IPKGIIJEPAJ(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+    }
+
+    pub fn has_IPKGIIJEPAJ(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_IPKGIIJEPAJ(&mut self, v: super::AEGGFGBNLPE::AEGGFGBNLPE) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_IPKGIIJEPAJ(&mut self) -> &mut super::AEGGFGBNLPE::AEGGFGBNLPE {
+        if let ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(_)) = self.MMCGBGDJIPN {
+        } else {
+            self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(super::AEGGFGBNLPE::AEGGFGBNLPE::new()));
+        }
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_IPKGIIJEPAJ(&mut self) -> super::AEGGFGBNLPE::AEGGFGBNLPE {
+        if self.has_IPKGIIJEPAJ() {
+            match self.MMCGBGDJIPN.take() {
+                ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::AEGGFGBNLPE::AEGGFGBNLPE::new()
+        }
+    }
+
+    // .GANGPOOHAKI ADMICNGJLOI = 674;
 
     pub fn ADMICNGJLOI(&self) -> &super::GANGPOOHAKI::GANGPOOHAKI {
         match self.MMCGBGDJIPN {
@@ -391,7 +391,7 @@ impl PixAirHandlePendingActionBattleCsReq {
         }
     }
 
-    // .GDNDBHGJBLF AOEMGEFGIFG = 1306;
+    // .GDNDBHGJBLF AOEMGEFGIFG = 1723;
 
     pub fn AOEMGEFGIFG(&self) -> &super::GDNDBHGJBLF::GDNDBHGJBLF {
         match self.MMCGBGDJIPN {
@@ -448,12 +448,12 @@ impl PixAirHandlePendingActionBattleCsReq {
             |m: &PixAirHandlePendingActionBattleCsReq| { &m.queue_position },
             |m: &mut PixAirHandlePendingActionBattleCsReq| { &mut m.queue_position },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLDLJBFIMOO::HLDLJBFIMOO>(
-            "OOOACLEFDGM",
-            PixAirHandlePendingActionBattleCsReq::has_OOOACLEFDGM,
-            PixAirHandlePendingActionBattleCsReq::OOOACLEFDGM,
-            PixAirHandlePendingActionBattleCsReq::mut_OOOACLEFDGM,
-            PixAirHandlePendingActionBattleCsReq::set_OOOACLEFDGM,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MOJCEJIPPGO::MOJCEJIPPGO>(
+            "MOFNIOJHBBL",
+            PixAirHandlePendingActionBattleCsReq::has_MOFNIOJHBBL,
+            PixAirHandlePendingActionBattleCsReq::MOFNIOJHBBL,
+            PixAirHandlePendingActionBattleCsReq::mut_MOFNIOJHBBL,
+            PixAirHandlePendingActionBattleCsReq::set_MOFNIOJHBBL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OHPMDJFALNH::OHPMDJFALNH>(
             "JEIODBPCKNB",
@@ -462,19 +462,12 @@ impl PixAirHandlePendingActionBattleCsReq {
             PixAirHandlePendingActionBattleCsReq::mut_JEIODBPCKNB,
             PixAirHandlePendingActionBattleCsReq::set_JEIODBPCKNB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MOJCEJIPPGO::MOJCEJIPPGO>(
-            "MOFNIOJHBBL",
-            PixAirHandlePendingActionBattleCsReq::has_MOFNIOJHBBL,
-            PixAirHandlePendingActionBattleCsReq::MOFNIOJHBBL,
-            PixAirHandlePendingActionBattleCsReq::mut_MOFNIOJHBBL,
-            PixAirHandlePendingActionBattleCsReq::set_MOFNIOJHBBL,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AEGGFGBNLPE::AEGGFGBNLPE>(
-            "IPKGIIJEPAJ",
-            PixAirHandlePendingActionBattleCsReq::has_IPKGIIJEPAJ,
-            PixAirHandlePendingActionBattleCsReq::IPKGIIJEPAJ,
-            PixAirHandlePendingActionBattleCsReq::mut_IPKGIIJEPAJ,
-            PixAirHandlePendingActionBattleCsReq::set_IPKGIIJEPAJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLDLJBFIMOO::HLDLJBFIMOO>(
+            "OOOACLEFDGM",
+            PixAirHandlePendingActionBattleCsReq::has_OOOACLEFDGM,
+            PixAirHandlePendingActionBattleCsReq::OOOACLEFDGM,
+            PixAirHandlePendingActionBattleCsReq::mut_OOOACLEFDGM,
+            PixAirHandlePendingActionBattleCsReq::set_OOOACLEFDGM,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AGBPBAOCCJF::AGBPBAOCCJF>(
             "DHJNFOKBPNC",
@@ -489,6 +482,13 @@ impl PixAirHandlePendingActionBattleCsReq {
             PixAirHandlePendingActionBattleCsReq::JFGIMDGOMBH,
             PixAirHandlePendingActionBattleCsReq::mut_JFGIMDGOMBH,
             PixAirHandlePendingActionBattleCsReq::set_JFGIMDGOMBH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AEGGFGBNLPE::AEGGFGBNLPE>(
+            "IPKGIIJEPAJ",
+            PixAirHandlePendingActionBattleCsReq::has_IPKGIIJEPAJ,
+            PixAirHandlePendingActionBattleCsReq::IPKGIIJEPAJ,
+            PixAirHandlePendingActionBattleCsReq::mut_IPKGIIJEPAJ,
+            PixAirHandlePendingActionBattleCsReq::set_IPKGIIJEPAJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GANGPOOHAKI::GANGPOOHAKI>(
             "ADMICNGJLOI",
@@ -526,28 +526,28 @@ impl ::protobuf::Message for PixAirHandlePendingActionBattleCsReq {
                 8 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                34 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(is.read_message()?));
-                },
-                42 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(is.read_message()?));
-                },
-                66 => {
+                18 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::MOFNIOJHBBL(is.read_message()?));
                 },
-                82 => {
-                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(is.read_message()?));
+                26 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(is.read_message()?));
                 },
-                90 => {
+                42 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(is.read_message()?));
+                },
+                74 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::DHJNFOKBPNC(is.read_message()?));
                 },
-                98 => {
+                106 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JFGIMDGOMBH(is.read_message()?));
                 },
-                8794 => {
+                122 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(is.read_message()?));
+                },
+                5394 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::ADMICNGJLOI(is.read_message()?));
                 },
-                10450 => {
+                13786 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::AOEMGEFGIFG(is.read_message()?));
                 },
                 tag => {
@@ -567,7 +567,7 @@ impl ::protobuf::Message for PixAirHandlePendingActionBattleCsReq {
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v) => {
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::MOFNIOJHBBL(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -575,11 +575,7 @@ impl ::protobuf::Message for PixAirHandlePendingActionBattleCsReq {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::MOFNIOJHBBL(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v) => {
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -588,6 +584,10 @@ impl ::protobuf::Message for PixAirHandlePendingActionBattleCsReq {
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JFGIMDGOMBH(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -612,29 +612,29 @@ impl ::protobuf::Message for PixAirHandlePendingActionBattleCsReq {
         }
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::MOFNIOJHBBL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JEIODBPCKNB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                },
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::OOOACLEFDGM(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::MOFNIOJHBBL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-                },
-                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-                },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::DHJNFOKBPNC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::JFGIMDGOMBH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                },
+                &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::IPKGIIJEPAJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::ADMICNGJLOI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1099, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(674, v, os)?;
                 },
                 &pix_air_handle_pending_action_battle_cs_req::MMCGBGDJIPN::AOEMGEFGIFG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1306, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(1723, v, os)?;
                 },
             };
         }
@@ -701,18 +701,18 @@ pub mod pix_air_handle_pending_action_battle_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:PixAirHandlePendingActionBattleCsReq.MMCGBGDJIPN)
     pub enum MMCGBGDJIPN {
-        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.OOOACLEFDGM)
-        OOOACLEFDGM(super::super::HLDLJBFIMOO::HLDLJBFIMOO),
-        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.JEIODBPCKNB)
-        JEIODBPCKNB(super::super::OHPMDJFALNH::OHPMDJFALNH),
         // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.MOFNIOJHBBL)
         MOFNIOJHBBL(super::super::MOJCEJIPPGO::MOJCEJIPPGO),
-        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.IPKGIIJEPAJ)
-        IPKGIIJEPAJ(super::super::AEGGFGBNLPE::AEGGFGBNLPE),
+        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.JEIODBPCKNB)
+        JEIODBPCKNB(super::super::OHPMDJFALNH::OHPMDJFALNH),
+        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.OOOACLEFDGM)
+        OOOACLEFDGM(super::super::HLDLJBFIMOO::HLDLJBFIMOO),
         // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.DHJNFOKBPNC)
         DHJNFOKBPNC(super::super::AGBPBAOCCJF::AGBPBAOCCJF),
         // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.JFGIMDGOMBH)
         JFGIMDGOMBH(super::super::LJGKOGKEDOA::LJGKOGKEDOA),
+        // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.IPKGIIJEPAJ)
+        IPKGIIJEPAJ(super::super::AEGGFGBNLPE::AEGGFGBNLPE),
         // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.ADMICNGJLOI)
         ADMICNGJLOI(super::super::GANGPOOHAKI::GANGPOOHAKI),
         // @@protoc_insertion_point(oneof_field:PixAirHandlePendingActionBattleCsReq.AOEMGEFGIFG)
@@ -742,16 +742,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11HLDLJBFIMOO.proto\x1a\x11LJGKOGKEDOA.proto\x1a\x11MOJCEJIPPGO\
     .proto\x1a\x11OHPMDJFALNH.proto\"\xee\x03\n$PixAirHandlePendingActionBat\
     tleCsReq\x12%\n\x0equeue_position\x18\x01\x20\x01(\rR\rqueuePosition\x12\
-    0\n\x0bOOOACLEFDGM\x18\x04\x20\x01(\x0b2\x0c.HLDLJBFIMOOH\0R\x0bOOOACLEF\
-    DGM\x120\n\x0bJEIODBPCKNB\x18\x05\x20\x01(\x0b2\x0c.OHPMDJFALNHH\0R\x0bJ\
-    EIODBPCKNB\x120\n\x0bMOFNIOJHBBL\x18\x08\x20\x01(\x0b2\x0c.MOJCEJIPPGOH\
-    \0R\x0bMOFNIOJHBBL\x120\n\x0bIPKGIIJEPAJ\x18\n\x20\x01(\x0b2\x0c.AEGGFGB\
-    NLPEH\0R\x0bIPKGIIJEPAJ\x120\n\x0bDHJNFOKBPNC\x18\x0b\x20\x01(\x0b2\x0c.\
-    AGBPBAOCCJFH\0R\x0bDHJNFOKBPNC\x120\n\x0bJFGIMDGOMBH\x18\x0c\x20\x01(\
-    \x0b2\x0c.LJGKOGKEDOAH\0R\x0bJFGIMDGOMBH\x121\n\x0bADMICNGJLOI\x18\xcb\
-    \x08\x20\x01(\x0b2\x0c.GANGPOOHAKIH\0R\x0bADMICNGJLOI\x121\n\x0bAOEMGEFG\
-    IFG\x18\x9a\n\x20\x01(\x0b2\x0c.GDNDBHGJBLFH\0R\x0bAOEMGEFGIFGB\r\n\x0bM\
-    MCGBGDJIPNb\x06proto3\
+    0\n\x0bMOFNIOJHBBL\x18\x02\x20\x01(\x0b2\x0c.MOJCEJIPPGOH\0R\x0bMOFNIOJH\
+    BBL\x120\n\x0bJEIODBPCKNB\x18\x03\x20\x01(\x0b2\x0c.OHPMDJFALNHH\0R\x0bJ\
+    EIODBPCKNB\x120\n\x0bOOOACLEFDGM\x18\x05\x20\x01(\x0b2\x0c.HLDLJBFIMOOH\
+    \0R\x0bOOOACLEFDGM\x120\n\x0bDHJNFOKBPNC\x18\t\x20\x01(\x0b2\x0c.AGBPBAO\
+    CCJFH\0R\x0bDHJNFOKBPNC\x120\n\x0bJFGIMDGOMBH\x18\r\x20\x01(\x0b2\x0c.LJ\
+    GKOGKEDOAH\0R\x0bJFGIMDGOMBH\x120\n\x0bIPKGIIJEPAJ\x18\x0f\x20\x01(\x0b2\
+    \x0c.AEGGFGBNLPEH\0R\x0bIPKGIIJEPAJ\x121\n\x0bADMICNGJLOI\x18\xa2\x05\
+    \x20\x01(\x0b2\x0c.GANGPOOHAKIH\0R\x0bADMICNGJLOI\x121\n\x0bAOEMGEFGIFG\
+    \x18\xbb\r\x20\x01(\x0b2\x0c.GDNDBHGJBLFH\0R\x0bAOEMGEFGIFGB\r\n\x0bMMCG\
+    BGDJIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

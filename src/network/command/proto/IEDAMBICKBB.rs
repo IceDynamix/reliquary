@@ -45,7 +45,7 @@ impl IEDAMBICKBB {
         ::std::default::Default::default()
     }
 
-    // int64 KHCGOMAJDGL = 4;
+    // int64 KHCGOMAJDGL = 8;
 
     pub fn KHCGOMAJDGL(&self) -> i64 {
         match self.KKNBOACNCON {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for IEDAMBICKBB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                64 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(iedambickbb::KKNBOACNCON::KHCGOMAJDGL(is.read_int64()?));
                 },
                 tag => {
@@ -116,7 +116,7 @@ impl ::protobuf::Message for IEDAMBICKBB {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v) => {
-                    my_size += ::protobuf::rt::int64_size(4, v);
+                    my_size += ::protobuf::rt::int64_size(8, v);
                 },
             };
         }
@@ -129,7 +129,7 @@ impl ::protobuf::Message for IEDAMBICKBB {
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
                 &iedambickbb::KKNBOACNCON::KHCGOMAJDGL(v) => {
-                    os.write_int64(4, v)?;
+                    os.write_int64(8, v)?;
                 },
             };
         }
@@ -210,7 +210,7 @@ pub mod iedambickbb {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IEDAMBICKBB.proto\"@\n\x0bIEDAMBICKBB\x12\"\n\x0bKHCGOMAJDGL\x18\
-    \x04\x20\x01(\x03H\0R\x0bKHCGOMAJDGLB\r\n\x0bKKNBOACNCONb\x06proto3\
+    \x08\x20\x01(\x03H\0R\x0bKHCGOMAJDGLB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

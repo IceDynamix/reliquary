@@ -79,10 +79,10 @@ impl ::protobuf::Message for MarkPresetLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.IECKKCHJMLP = is.read_bool()?;
                 },
-                72 => {
+                80 => {
                     self.index = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for MarkPresetLineupCsReq {
             my_size += 1 + 1;
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.index);
+            my_size += ::protobuf::rt::uint32_size(10, self.index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for MarkPresetLineupCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IECKKCHJMLP != false {
-            os.write_bool(3, self.IECKKCHJMLP)?;
+            os.write_bool(8, self.IECKKCHJMLP)?;
         }
         if self.index != 0 {
-            os.write_uint32(9, self.index)?;
+            os.write_uint32(10, self.index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MarkPresetLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bMarkPresetLineupCsReq.proto\"O\n\x15MarkPresetLineupCsReq\x12\x20\
-    \n\x0bIECKKCHJMLP\x18\x03\x20\x01(\x08R\x0bIECKKCHJMLP\x12\x14\n\x05inde\
-    x\x18\t\x20\x01(\rR\x05indexb\x06proto3\
+    \n\x0bIECKKCHJMLP\x18\x08\x20\x01(\x08R\x0bIECKKCHJMLP\x12\x14\n\x05inde\
+    x\x18\n\x20\x01(\rR\x05indexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

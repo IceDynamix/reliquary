@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FKCNEPIJJAO {
     // message fields
-    // @@protoc_insertion_point(field:FKCNEPIJJAO.FEFLAJIODHB)
-    pub FEFLAJIODHB: u32,
-    // @@protoc_insertion_point(field:FKCNEPIJJAO.JNCCOGCHNMB)
-    pub JNCCOGCHNMB: u32,
     // @@protoc_insertion_point(field:FKCNEPIJJAO.DCOKLHPBAJO)
     pub DCOKLHPBAJO: u32,
+    // @@protoc_insertion_point(field:FKCNEPIJJAO.JNCCOGCHNMB)
+    pub JNCCOGCHNMB: u32,
+    // @@protoc_insertion_point(field:FKCNEPIJJAO.FEFLAJIODHB)
+    pub FEFLAJIODHB: u32,
     // @@protoc_insertion_point(field:FKCNEPIJJAO.area_id)
     pub area_id: u32,
     // special fields
@@ -56,9 +56,9 @@ impl FKCNEPIJJAO {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEFLAJIODHB",
-            |m: &FKCNEPIJJAO| { &m.FEFLAJIODHB },
-            |m: &mut FKCNEPIJJAO| { &mut m.FEFLAJIODHB },
+            "DCOKLHPBAJO",
+            |m: &FKCNEPIJJAO| { &m.DCOKLHPBAJO },
+            |m: &mut FKCNEPIJJAO| { &mut m.DCOKLHPBAJO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNCCOGCHNMB",
@@ -66,9 +66,9 @@ impl FKCNEPIJJAO {
             |m: &mut FKCNEPIJJAO| { &mut m.JNCCOGCHNMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCOKLHPBAJO",
-            |m: &FKCNEPIJJAO| { &m.DCOKLHPBAJO },
-            |m: &mut FKCNEPIJJAO| { &mut m.DCOKLHPBAJO },
+            "FEFLAJIODHB",
+            |m: &FKCNEPIJJAO| { &m.FEFLAJIODHB },
+            |m: &mut FKCNEPIJJAO| { &mut m.FEFLAJIODHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for FKCNEPIJJAO {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 64 => {
-                    self.FEFLAJIODHB = is.read_uint32()?;
+                    self.DCOKLHPBAJO = is.read_uint32()?;
                 },
                 88 => {
                     self.JNCCOGCHNMB = is.read_uint32()?;
                 },
                 104 => {
-                    self.DCOKLHPBAJO = is.read_uint32()?;
+                    self.FEFLAJIODHB = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.area_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FEFLAJIODHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FEFLAJIODHB);
+        if self.DCOKLHPBAJO != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.DCOKLHPBAJO);
         }
         if self.JNCCOGCHNMB != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.JNCCOGCHNMB);
         }
-        if self.DCOKLHPBAJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.DCOKLHPBAJO);
+        if self.FEFLAJIODHB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FEFLAJIODHB);
         }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.area_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FEFLAJIODHB != 0 {
-            os.write_uint32(8, self.FEFLAJIODHB)?;
+        if self.DCOKLHPBAJO != 0 {
+            os.write_uint32(8, self.DCOKLHPBAJO)?;
         }
         if self.JNCCOGCHNMB != 0 {
             os.write_uint32(11, self.JNCCOGCHNMB)?;
         }
-        if self.DCOKLHPBAJO != 0 {
-            os.write_uint32(13, self.DCOKLHPBAJO)?;
+        if self.FEFLAJIODHB != 0 {
+            os.write_uint32(13, self.FEFLAJIODHB)?;
         }
         if self.area_id != 0 {
-            os.write_uint32(15, self.area_id)?;
+            os.write_uint32(14, self.area_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for FKCNEPIJJAO {
     }
 
     fn clear(&mut self) {
-        self.FEFLAJIODHB = 0;
-        self.JNCCOGCHNMB = 0;
         self.DCOKLHPBAJO = 0;
+        self.JNCCOGCHNMB = 0;
+        self.FEFLAJIODHB = 0;
         self.area_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FKCNEPIJJAO {
         static instance: FKCNEPIJJAO = FKCNEPIJJAO {
-            FEFLAJIODHB: 0,
-            JNCCOGCHNMB: 0,
             DCOKLHPBAJO: 0,
+            JNCCOGCHNMB: 0,
+            FEFLAJIODHB: 0,
             area_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for FKCNEPIJJAO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FKCNEPIJJAO.proto\"\x8c\x01\n\x0bFKCNEPIJJAO\x12\x20\n\x0bFEFLAJIO\
-    DHB\x18\x08\x20\x01(\rR\x0bFEFLAJIODHB\x12\x20\n\x0bJNCCOGCHNMB\x18\x0b\
-    \x20\x01(\rR\x0bJNCCOGCHNMB\x12\x20\n\x0bDCOKLHPBAJO\x18\r\x20\x01(\rR\
-    \x0bDCOKLHPBAJO\x12\x17\n\x07area_id\x18\x0f\x20\x01(\rR\x06areaIdb\x06p\
+    \n\x11FKCNEPIJJAO.proto\"\x8c\x01\n\x0bFKCNEPIJJAO\x12\x20\n\x0bDCOKLHPB\
+    AJO\x18\x08\x20\x01(\rR\x0bDCOKLHPBAJO\x12\x20\n\x0bJNCCOGCHNMB\x18\x0b\
+    \x20\x01(\rR\x0bJNCCOGCHNMB\x12\x20\n\x0bFEFLAJIODHB\x18\r\x20\x01(\rR\
+    \x0bFEFLAJIODHB\x12\x17\n\x07area_id\x18\x0e\x20\x01(\rR\x06areaIdb\x06p\
     roto3\
 ";
 

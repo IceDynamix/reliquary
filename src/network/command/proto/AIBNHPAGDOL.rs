@@ -79,7 +79,7 @@ impl ::protobuf::Message for AIBNHPAGDOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                64 => {
                     self.GKEPPNOLNHF = is.read_bool()?;
                 },
                 72 => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for AIBNHPAGDOL {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GKEPPNOLNHF != false {
-            os.write_bool(1, self.GKEPPNOLNHF)?;
+            os.write_bool(8, self.GKEPPNOLNHF)?;
         }
         if self.DPCJFFPOLFG != 0 {
             os.write_uint32(9, self.DPCJFFPOLFG)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for AIBNHPAGDOL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AIBNHPAGDOL.proto\"Q\n\x0bAIBNHPAGDOL\x12\x20\n\x0bGKEPPNOLNHF\x18\
-    \x01\x20\x01(\x08R\x0bGKEPPNOLNHF\x12\x20\n\x0bDPCJFFPOLFG\x18\t\x20\x01\
+    \x08\x20\x01(\x08R\x0bGKEPPNOLNHF\x12\x20\n\x0bDPCJFFPOLFG\x18\t\x20\x01\
     (\rR\x0bDPCJFFPOLFGb\x06proto3\
 ";
 

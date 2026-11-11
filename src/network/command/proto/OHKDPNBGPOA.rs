@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OHKDPNBGPOA {
     // message fields
-    // @@protoc_insertion_point(field:OHKDPNBGPOA.GNFDDPEMMFN)
-    pub GNFDDPEMMFN: bool,
     // @@protoc_insertion_point(field:OHKDPNBGPOA.PFBHGAHAFMD)
     pub PFBHGAHAFMD: bool,
     // @@protoc_insertion_point(field:OHKDPNBGPOA.IOJEAOCOBBF)
     pub IOJEAOCOBBF: bool,
-    // @@protoc_insertion_point(field:OHKDPNBGPOA.MAKOLELFLFH)
-    pub MAKOLELFLFH: bool,
     // @@protoc_insertion_point(field:OHKDPNBGPOA.DCJECFMMIBC)
     pub DCJECFMMIBC: bool,
+    // @@protoc_insertion_point(field:OHKDPNBGPOA.MAKOLELFLFH)
+    pub MAKOLELFLFH: bool,
+    // @@protoc_insertion_point(field:OHKDPNBGPOA.GNFDDPEMMFN)
+    pub GNFDDPEMMFN: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OHKDPNBGPOA.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,11 +58,6 @@ impl OHKDPNBGPOA {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNFDDPEMMFN",
-            |m: &OHKDPNBGPOA| { &m.GNFDDPEMMFN },
-            |m: &mut OHKDPNBGPOA| { &mut m.GNFDDPEMMFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "PFBHGAHAFMD",
             |m: &OHKDPNBGPOA| { &m.PFBHGAHAFMD },
             |m: &mut OHKDPNBGPOA| { &mut m.PFBHGAHAFMD },
@@ -73,14 +68,19 @@ impl OHKDPNBGPOA {
             |m: &mut OHKDPNBGPOA| { &mut m.IOJEAOCOBBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DCJECFMMIBC",
+            |m: &OHKDPNBGPOA| { &m.DCJECFMMIBC },
+            |m: &mut OHKDPNBGPOA| { &mut m.DCJECFMMIBC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "MAKOLELFLFH",
             |m: &OHKDPNBGPOA| { &m.MAKOLELFLFH },
             |m: &mut OHKDPNBGPOA| { &mut m.MAKOLELFLFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCJECFMMIBC",
-            |m: &OHKDPNBGPOA| { &m.DCJECFMMIBC },
-            |m: &mut OHKDPNBGPOA| { &mut m.DCJECFMMIBC },
+            "GNFDDPEMMFN",
+            |m: &OHKDPNBGPOA| { &m.GNFDDPEMMFN },
+            |m: &mut OHKDPNBGPOA| { &mut m.GNFDDPEMMFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OHKDPNBGPOA>(
             "OHKDPNBGPOA",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for OHKDPNBGPOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.GNFDDPEMMFN = is.read_bool()?;
-                },
-                72 => {
+                8 => {
                     self.PFBHGAHAFMD = is.read_bool()?;
                 },
-                80 => {
+                40 => {
                     self.IOJEAOCOBBF = is.read_bool()?;
                 },
-                104 => {
+                56 => {
+                    self.DCJECFMMIBC = is.read_bool()?;
+                },
+                96 => {
                     self.MAKOLELFLFH = is.read_bool()?;
                 },
                 112 => {
-                    self.DCJECFMMIBC = is.read_bool()?;
+                    self.GNFDDPEMMFN = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,19 +127,19 @@ impl ::protobuf::Message for OHKDPNBGPOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GNFDDPEMMFN != false {
-            my_size += 1 + 1;
-        }
         if self.PFBHGAHAFMD != false {
             my_size += 1 + 1;
         }
         if self.IOJEAOCOBBF != false {
             my_size += 1 + 1;
         }
+        if self.DCJECFMMIBC != false {
+            my_size += 1 + 1;
+        }
         if self.MAKOLELFLFH != false {
             my_size += 1 + 1;
         }
-        if self.DCJECFMMIBC != false {
+        if self.GNFDDPEMMFN != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -148,20 +148,20 @@ impl ::protobuf::Message for OHKDPNBGPOA {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GNFDDPEMMFN != false {
-            os.write_bool(7, self.GNFDDPEMMFN)?;
-        }
         if self.PFBHGAHAFMD != false {
-            os.write_bool(9, self.PFBHGAHAFMD)?;
+            os.write_bool(1, self.PFBHGAHAFMD)?;
         }
         if self.IOJEAOCOBBF != false {
-            os.write_bool(10, self.IOJEAOCOBBF)?;
-        }
-        if self.MAKOLELFLFH != false {
-            os.write_bool(13, self.MAKOLELFLFH)?;
+            os.write_bool(5, self.IOJEAOCOBBF)?;
         }
         if self.DCJECFMMIBC != false {
-            os.write_bool(14, self.DCJECFMMIBC)?;
+            os.write_bool(7, self.DCJECFMMIBC)?;
+        }
+        if self.MAKOLELFLFH != false {
+            os.write_bool(12, self.MAKOLELFLFH)?;
+        }
+        if self.GNFDDPEMMFN != false {
+            os.write_bool(14, self.GNFDDPEMMFN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for OHKDPNBGPOA {
     }
 
     fn clear(&mut self) {
-        self.GNFDDPEMMFN = false;
         self.PFBHGAHAFMD = false;
         self.IOJEAOCOBBF = false;
-        self.MAKOLELFLFH = false;
         self.DCJECFMMIBC = false;
+        self.MAKOLELFLFH = false;
+        self.GNFDDPEMMFN = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OHKDPNBGPOA {
         static instance: OHKDPNBGPOA = OHKDPNBGPOA {
-            GNFDDPEMMFN: false,
             PFBHGAHAFMD: false,
             IOJEAOCOBBF: false,
-            MAKOLELFLFH: false,
             DCJECFMMIBC: false,
+            MAKOLELFLFH: false,
+            GNFDDPEMMFN: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for OHKDPNBGPOA {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11OHKDPNBGPOA.proto\"\xb7\x01\n\x0bOHKDPNBGPOA\x12\x20\n\x0bGNFDDPEM\
-    MFN\x18\x07\x20\x01(\x08R\x0bGNFDDPEMMFN\x12\x20\n\x0bPFBHGAHAFMD\x18\t\
-    \x20\x01(\x08R\x0bPFBHGAHAFMD\x12\x20\n\x0bIOJEAOCOBBF\x18\n\x20\x01(\
-    \x08R\x0bIOJEAOCOBBF\x12\x20\n\x0bMAKOLELFLFH\x18\r\x20\x01(\x08R\x0bMAK\
-    OLELFLFH\x12\x20\n\x0bDCJECFMMIBC\x18\x0e\x20\x01(\x08R\x0bDCJECFMMIBCb\
-    \x06proto3\
+    \n\x11OHKDPNBGPOA.proto\"\xb7\x01\n\x0bOHKDPNBGPOA\x12\x20\n\x0bPFBHGAHA\
+    FMD\x18\x01\x20\x01(\x08R\x0bPFBHGAHAFMD\x12\x20\n\x0bIOJEAOCOBBF\x18\
+    \x05\x20\x01(\x08R\x0bIOJEAOCOBBF\x12\x20\n\x0bDCJECFMMIBC\x18\x07\x20\
+    \x01(\x08R\x0bDCJECFMMIBC\x12\x20\n\x0bMAKOLELFLFH\x18\x0c\x20\x01(\x08R\
+    \x0bMAKOLELFLFH\x12\x20\n\x0bGNFDDPEMMFN\x18\x0e\x20\x01(\x08R\x0bGNFDDP\
+    EMMFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

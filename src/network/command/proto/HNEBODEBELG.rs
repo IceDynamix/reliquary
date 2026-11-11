@@ -34,6 +34,8 @@ pub struct HNEBODEBELG {
     pub ININNFJHJCM: u32,
     // @@protoc_insertion_point(field:HNEBODEBELG.IEBNOGOOEMO)
     pub IEBNOGOOEMO: ::std::vec::Vec<super::BCCONKJHDJL::BCCONKJHDJL>,
+    // @@protoc_insertion_point(field:HNEBODEBELG.LNGPEJNADAH)
+    pub LNGPEJNADAH: ::std::vec::Vec<super::BDNAPDDNGFL::BDNAPDDNGFL>,
     // special fields
     // @@protoc_insertion_point(special_field:HNEBODEBELG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,7 +53,7 @@ impl HNEBODEBELG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "role_star",
@@ -67,6 +69,11 @@ impl HNEBODEBELG {
             "IEBNOGOOEMO",
             |m: &HNEBODEBELG| { &m.IEBNOGOOEMO },
             |m: &mut HNEBODEBELG| { &mut m.IEBNOGOOEMO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LNGPEJNADAH",
+            |m: &HNEBODEBELG| { &m.LNGPEJNADAH },
+            |m: &mut HNEBODEBELG| { &mut m.LNGPEJNADAH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HNEBODEBELG>(
             "HNEBODEBELG",
@@ -86,14 +93,17 @@ impl ::protobuf::Message for HNEBODEBELG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.role_star = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.ININNFJHJCM = is.read_uint32()?;
                 },
-                122 => {
+                74 => {
                     self.IEBNOGOOEMO.push(is.read_message()?);
+                },
+                106 => {
+                    self.LNGPEJNADAH.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,12 +118,16 @@ impl ::protobuf::Message for HNEBODEBELG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.role_star);
+            my_size += ::protobuf::rt::uint32_size(2, self.role_star);
         }
         if self.ININNFJHJCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ININNFJHJCM);
+            my_size += ::protobuf::rt::uint32_size(5, self.ININNFJHJCM);
         }
         for value in &self.IEBNOGOOEMO {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.LNGPEJNADAH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,13 +138,16 @@ impl ::protobuf::Message for HNEBODEBELG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.role_star != 0 {
-            os.write_uint32(8, self.role_star)?;
+            os.write_uint32(2, self.role_star)?;
         }
         if self.ININNFJHJCM != 0 {
-            os.write_uint32(11, self.ININNFJHJCM)?;
+            os.write_uint32(5, self.ININNFJHJCM)?;
         }
         for v in &self.IEBNOGOOEMO {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for v in &self.LNGPEJNADAH {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -152,6 +169,7 @@ impl ::protobuf::Message for HNEBODEBELG {
         self.role_star = 0;
         self.ININNFJHJCM = 0;
         self.IEBNOGOOEMO.clear();
+        self.LNGPEJNADAH.clear();
         self.special_fields.clear();
     }
 
@@ -160,6 +178,7 @@ impl ::protobuf::Message for HNEBODEBELG {
             role_star: 0,
             ININNFJHJCM: 0,
             IEBNOGOOEMO: ::std::vec::Vec::new(),
+            LNGPEJNADAH: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for HNEBODEBELG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11HNEBODEBELG.proto\x1a\x11BCCONKJHDJL.proto\"|\n\x0bHNEBODEBELG\x12\
-    \x1b\n\trole_star\x18\x08\x20\x01(\rR\x08roleStar\x12\x20\n\x0bININNFJHJ\
-    CM\x18\x0b\x20\x01(\rR\x0bININNFJHJCM\x12.\n\x0bIEBNOGOOEMO\x18\x0f\x20\
-    \x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOEMOb\x06proto3\
+    \n\x11HNEBODEBELG.proto\x1a\x11BCCONKJHDJL.proto\x1a\x11BDNAPDDNGFL.prot\
+    o\"\xac\x01\n\x0bHNEBODEBELG\x12\x1b\n\trole_star\x18\x02\x20\x01(\rR\
+    \x08roleStar\x12\x20\n\x0bININNFJHJCM\x18\x05\x20\x01(\rR\x0bININNFJHJCM\
+    \x12.\n\x0bIEBNOGOOEMO\x18\t\x20\x03(\x0b2\x0c.BCCONKJHDJLR\x0bIEBNOGOOE\
+    MO\x12.\n\x0bLNGPEJNADAH\x18\r\x20\x03(\x0b2\x0c.BDNAPDDNGFLR\x0bLNGPEJN\
+    ADAHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -204,8 +225,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(1);
+            let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::BCCONKJHDJL::file_descriptor().clone());
+            deps.push(super::BDNAPDDNGFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HNEBODEBELG::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

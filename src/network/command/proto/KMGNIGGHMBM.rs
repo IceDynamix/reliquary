@@ -30,11 +30,11 @@ pub enum KMGNIGGHMBM {
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_NLCDGIPGFDJ)
     KMGNIGGHMBM_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_HNHCOMDJGJI)
-    KMGNIGGHMBM_HNHCOMDJGJI = 4034,
+    KMGNIGGHMBM_HNHCOMDJGJI = 4074,
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_MCKELFANPPI)
-    KMGNIGGHMBM_MCKELFANPPI = 4005,
+    KMGNIGGHMBM_MCKELFANPPI = 4031,
     // @@protoc_insertion_point(enum_value:KMGNIGGHMBM.KMGNIGGHMBM_GOFMDEDHENA)
-    KMGNIGGHMBM_GOFMDEDHENA = 4025,
+    KMGNIGGHMBM_GOFMDEDHENA = 4019,
 }
 
 impl ::protobuf::Enum for KMGNIGGHMBM {
@@ -47,9 +47,9 @@ impl ::protobuf::Enum for KMGNIGGHMBM {
     fn from_i32(value: i32) -> ::std::option::Option<KMGNIGGHMBM> {
         match value {
             0 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_NLCDGIPGFDJ),
-            4034 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
-            4005 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI),
-            4025 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA),
+            4074 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_HNHCOMDJGJI),
+            4031 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_MCKELFANPPI),
+            4019 => ::std::option::Option::Some(KMGNIGGHMBM::KMGNIGGHMBM_GOFMDEDHENA),
             _ => ::std::option::Option::None
         }
     }
@@ -103,9 +103,9 @@ impl KMGNIGGHMBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11KMGNIGGHMBM.proto*\x84\x01\n\x0bKMGNIGGHMBM\x12\x1b\n\x17KMGNIGGHM\
-    BM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_HNHCOMDJGJI\x10\xc2\x1f\
-    \x12\x1c\n\x17KMGNIGGHMBM_MCKELFANPPI\x10\xa5\x1f\x12\x1c\n\x17KMGNIGGHM\
-    BM_GOFMDEDHENA\x10\xb9\x1fb\x06proto3\
+    BM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17KMGNIGGHMBM_HNHCOMDJGJI\x10\xea\x1f\
+    \x12\x1c\n\x17KMGNIGGHMBM_MCKELFANPPI\x10\xbf\x1f\x12\x1c\n\x17KMGNIGGHM\
+    BM_GOFMDEDHENA\x10\xb3\x1fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

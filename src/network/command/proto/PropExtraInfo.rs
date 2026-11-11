@@ -48,301 +48,7 @@ impl PropExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .BGFLAKMOIGC OGLJIOJBIEN = 1;
-
-    pub fn OGLJIOJBIEN(&self) -> &super::BGFLAKMOIGC::BGFLAKMOIGC {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v)) => v,
-            _ => <super::BGFLAKMOIGC::BGFLAKMOIGC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OGLJIOJBIEN(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_OGLJIOJBIEN(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OGLJIOJBIEN(&mut self, v: super::BGFLAKMOIGC::BGFLAKMOIGC) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OGLJIOJBIEN(&mut self) -> &mut super::BGFLAKMOIGC::BGFLAKMOIGC {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(super::BGFLAKMOIGC::BGFLAKMOIGC::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OGLJIOJBIEN(&mut self) -> super::BGFLAKMOIGC::BGFLAKMOIGC {
-        if self.has_OGLJIOJBIEN() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::BGFLAKMOIGC::BGFLAKMOIGC::new()
-        }
-    }
-
-    // .NBDKNCJGOMN OEMHOKEMBKM = 3;
-
-    pub fn OEMHOKEMBKM(&self) -> &super::NBDKNCJGOMN::NBDKNCJGOMN {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v)) => v,
-            _ => <super::NBDKNCJGOMN::NBDKNCJGOMN as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_OEMHOKEMBKM(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_OEMHOKEMBKM(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_OEMHOKEMBKM(&mut self, v: super::NBDKNCJGOMN::NBDKNCJGOMN) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_OEMHOKEMBKM(&mut self) -> &mut super::NBDKNCJGOMN::NBDKNCJGOMN {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(super::NBDKNCJGOMN::NBDKNCJGOMN::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_OEMHOKEMBKM(&mut self) -> super::NBDKNCJGOMN::NBDKNCJGOMN {
-        if self.has_OEMHOKEMBKM() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::NBDKNCJGOMN::NBDKNCJGOMN::new()
-        }
-    }
-
-    // .PropRogueInfo rogue_game_info = 5;
-
-    pub fn rogue_game_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v)) => v,
-            _ => <super::PropRogueInfo::PropRogueInfo as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_rogue_game_info(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_rogue_game_info(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_rogue_game_info(&mut self, v: super::PropRogueInfo::PropRogueInfo) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_rogue_game_info(&mut self) -> &mut super::PropRogueInfo::PropRogueInfo {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(super::PropRogueInfo::PropRogueInfo::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_rogue_game_info(&mut self) -> super::PropRogueInfo::PropRogueInfo {
-        if self.has_rogue_game_info() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PropRogueInfo::PropRogueInfo::new()
-        }
-    }
-
-    // .EBBOJACNHEC ADNHHAELLNC = 6;
-
-    pub fn ADNHHAELLNC(&self) -> &super::EBBOJACNHEC::EBBOJACNHEC {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v)) => v,
-            _ => <super::EBBOJACNHEC::EBBOJACNHEC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ADNHHAELLNC(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_ADNHHAELLNC(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ADNHHAELLNC(&mut self, v: super::EBBOJACNHEC::EBBOJACNHEC) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ADNHHAELLNC(&mut self) -> &mut super::EBBOJACNHEC::EBBOJACNHEC {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(super::EBBOJACNHEC::EBBOJACNHEC::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ADNHHAELLNC(&mut self) -> super::EBBOJACNHEC::EBBOJACNHEC {
-        if self.has_ADNHHAELLNC() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::EBBOJACNHEC::EBBOJACNHEC::new()
-        }
-    }
-
-    // .APKENKIDMGC ACJPMKHJLDB = 7;
-
-    pub fn ACJPMKHJLDB(&self) -> &super::APKENKIDMGC::APKENKIDMGC {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v)) => v,
-            _ => <super::APKENKIDMGC::APKENKIDMGC as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_ACJPMKHJLDB(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_ACJPMKHJLDB(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_ACJPMKHJLDB(&mut self, v: super::APKENKIDMGC::APKENKIDMGC) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_ACJPMKHJLDB(&mut self) -> &mut super::APKENKIDMGC::APKENKIDMGC {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(super::APKENKIDMGC::APKENKIDMGC::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_ACJPMKHJLDB(&mut self) -> super::APKENKIDMGC::APKENKIDMGC {
-        if self.has_ACJPMKHJLDB() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::APKENKIDMGC::APKENKIDMGC::new()
-        }
-    }
-
-    // .PGLLFCMEFKG IDMAELPELLA = 12;
-
-    pub fn IDMAELPELLA(&self) -> &super::PGLLFCMEFKG::PGLLFCMEFKG {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v)) => v,
-            _ => <super::PGLLFCMEFKG::PGLLFCMEFKG as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_IDMAELPELLA(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_IDMAELPELLA(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_IDMAELPELLA(&mut self, v: super::PGLLFCMEFKG::PGLLFCMEFKG) {
-        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_IDMAELPELLA(&mut self) -> &mut super::PGLLFCMEFKG::PGLLFCMEFKG {
-        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(super::PGLLFCMEFKG::PGLLFCMEFKG::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_IDMAELPELLA(&mut self) -> super::PGLLFCMEFKG::PGLLFCMEFKG {
-        if self.has_IDMAELPELLA() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::PGLLFCMEFKG::PGLLFCMEFKG::new()
-        }
-    }
-
-    // .HLFAKEOBFAB AEFMMOHKCHJ = 13;
+    // .HLFAKEOBFAB AEFMMOHKCHJ = 1;
 
     pub fn AEFMMOHKCHJ(&self) -> &super::HLFAKEOBFAB::HLFAKEOBFAB {
         match self.KKNBOACNCON {
@@ -391,7 +97,301 @@ impl PropExtraInfo {
         }
     }
 
-    // .ONNEJIPGHCK MFCPLGHHPNP = 14;
+    // .APKENKIDMGC ACJPMKHJLDB = 2;
+
+    pub fn ACJPMKHJLDB(&self) -> &super::APKENKIDMGC::APKENKIDMGC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v)) => v,
+            _ => <super::APKENKIDMGC::APKENKIDMGC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ACJPMKHJLDB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_ACJPMKHJLDB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ACJPMKHJLDB(&mut self, v: super::APKENKIDMGC::APKENKIDMGC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ACJPMKHJLDB(&mut self) -> &mut super::APKENKIDMGC::APKENKIDMGC {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(super::APKENKIDMGC::APKENKIDMGC::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ACJPMKHJLDB(&mut self) -> super::APKENKIDMGC::APKENKIDMGC {
+        if self.has_ACJPMKHJLDB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::APKENKIDMGC::APKENKIDMGC::new()
+        }
+    }
+
+    // .BGFLAKMOIGC OGLJIOJBIEN = 3;
+
+    pub fn OGLJIOJBIEN(&self) -> &super::BGFLAKMOIGC::BGFLAKMOIGC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v)) => v,
+            _ => <super::BGFLAKMOIGC::BGFLAKMOIGC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OGLJIOJBIEN(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_OGLJIOJBIEN(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OGLJIOJBIEN(&mut self, v: super::BGFLAKMOIGC::BGFLAKMOIGC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OGLJIOJBIEN(&mut self) -> &mut super::BGFLAKMOIGC::BGFLAKMOIGC {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(super::BGFLAKMOIGC::BGFLAKMOIGC::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OGLJIOJBIEN(&mut self) -> super::BGFLAKMOIGC::BGFLAKMOIGC {
+        if self.has_OGLJIOJBIEN() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::BGFLAKMOIGC::BGFLAKMOIGC::new()
+        }
+    }
+
+    // .EBBOJACNHEC ADNHHAELLNC = 5;
+
+    pub fn ADNHHAELLNC(&self) -> &super::EBBOJACNHEC::EBBOJACNHEC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v)) => v,
+            _ => <super::EBBOJACNHEC::EBBOJACNHEC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_ADNHHAELLNC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_ADNHHAELLNC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_ADNHHAELLNC(&mut self, v: super::EBBOJACNHEC::EBBOJACNHEC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_ADNHHAELLNC(&mut self) -> &mut super::EBBOJACNHEC::EBBOJACNHEC {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(super::EBBOJACNHEC::EBBOJACNHEC::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_ADNHHAELLNC(&mut self) -> super::EBBOJACNHEC::EBBOJACNHEC {
+        if self.has_ADNHHAELLNC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::EBBOJACNHEC::EBBOJACNHEC::new()
+        }
+    }
+
+    // .PGLLFCMEFKG IDMAELPELLA = 6;
+
+    pub fn IDMAELPELLA(&self) -> &super::PGLLFCMEFKG::PGLLFCMEFKG {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v)) => v,
+            _ => <super::PGLLFCMEFKG::PGLLFCMEFKG as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_IDMAELPELLA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_IDMAELPELLA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_IDMAELPELLA(&mut self, v: super::PGLLFCMEFKG::PGLLFCMEFKG) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_IDMAELPELLA(&mut self) -> &mut super::PGLLFCMEFKG::PGLLFCMEFKG {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(super::PGLLFCMEFKG::PGLLFCMEFKG::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_IDMAELPELLA(&mut self) -> super::PGLLFCMEFKG::PGLLFCMEFKG {
+        if self.has_IDMAELPELLA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PGLLFCMEFKG::PGLLFCMEFKG::new()
+        }
+    }
+
+    // .PropRogueInfo rogue_game_info = 7;
+
+    pub fn rogue_game_info(&self) -> &super::PropRogueInfo::PropRogueInfo {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v)) => v,
+            _ => <super::PropRogueInfo::PropRogueInfo as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_rogue_game_info(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_rogue_game_info(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_rogue_game_info(&mut self, v: super::PropRogueInfo::PropRogueInfo) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_rogue_game_info(&mut self) -> &mut super::PropRogueInfo::PropRogueInfo {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(super::PropRogueInfo::PropRogueInfo::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_rogue_game_info(&mut self) -> super::PropRogueInfo::PropRogueInfo {
+        if self.has_rogue_game_info() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::PropRogueInfo::PropRogueInfo::new()
+        }
+    }
+
+    // .NBDKNCJGOMN OEMHOKEMBKM = 8;
+
+    pub fn OEMHOKEMBKM(&self) -> &super::NBDKNCJGOMN::NBDKNCJGOMN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v)) => v,
+            _ => <super::NBDKNCJGOMN::NBDKNCJGOMN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_OEMHOKEMBKM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_OEMHOKEMBKM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_OEMHOKEMBKM(&mut self, v: super::NBDKNCJGOMN::NBDKNCJGOMN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_OEMHOKEMBKM(&mut self) -> &mut super::NBDKNCJGOMN::NBDKNCJGOMN {
+        if let ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(super::NBDKNCJGOMN::NBDKNCJGOMN::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_OEMHOKEMBKM(&mut self) -> super::NBDKNCJGOMN::NBDKNCJGOMN {
+        if self.has_OEMHOKEMBKM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::NBDKNCJGOMN::NBDKNCJGOMN::new()
+        }
+    }
+
+    // .ONNEJIPGHCK MFCPLGHHPNP = 10;
 
     pub fn MFCPLGHHPNP(&self) -> &super::ONNEJIPGHCK::ONNEJIPGHCK {
         match self.KKNBOACNCON {
@@ -448,33 +448,12 @@ impl PropExtraInfo {
             |m: &PropExtraInfo| { &m.timeline_info },
             |m: &mut PropExtraInfo| { &mut m.timeline_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BGFLAKMOIGC::BGFLAKMOIGC>(
-            "OGLJIOJBIEN",
-            PropExtraInfo::has_OGLJIOJBIEN,
-            PropExtraInfo::OGLJIOJBIEN,
-            PropExtraInfo::mut_OGLJIOJBIEN,
-            PropExtraInfo::set_OGLJIOJBIEN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NBDKNCJGOMN::NBDKNCJGOMN>(
-            "OEMHOKEMBKM",
-            PropExtraInfo::has_OEMHOKEMBKM,
-            PropExtraInfo::OEMHOKEMBKM,
-            PropExtraInfo::mut_OEMHOKEMBKM,
-            PropExtraInfo::set_OEMHOKEMBKM,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
-            "rogue_game_info",
-            PropExtraInfo::has_rogue_game_info,
-            PropExtraInfo::rogue_game_info,
-            PropExtraInfo::mut_rogue_game_info,
-            PropExtraInfo::set_rogue_game_info,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EBBOJACNHEC::EBBOJACNHEC>(
-            "ADNHHAELLNC",
-            PropExtraInfo::has_ADNHHAELLNC,
-            PropExtraInfo::ADNHHAELLNC,
-            PropExtraInfo::mut_ADNHHAELLNC,
-            PropExtraInfo::set_ADNHHAELLNC,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLFAKEOBFAB::HLFAKEOBFAB>(
+            "AEFMMOHKCHJ",
+            PropExtraInfo::has_AEFMMOHKCHJ,
+            PropExtraInfo::AEFMMOHKCHJ,
+            PropExtraInfo::mut_AEFMMOHKCHJ,
+            PropExtraInfo::set_AEFMMOHKCHJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APKENKIDMGC::APKENKIDMGC>(
             "ACJPMKHJLDB",
@@ -483,6 +462,20 @@ impl PropExtraInfo {
             PropExtraInfo::mut_ACJPMKHJLDB,
             PropExtraInfo::set_ACJPMKHJLDB,
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BGFLAKMOIGC::BGFLAKMOIGC>(
+            "OGLJIOJBIEN",
+            PropExtraInfo::has_OGLJIOJBIEN,
+            PropExtraInfo::OGLJIOJBIEN,
+            PropExtraInfo::mut_OGLJIOJBIEN,
+            PropExtraInfo::set_OGLJIOJBIEN,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EBBOJACNHEC::EBBOJACNHEC>(
+            "ADNHHAELLNC",
+            PropExtraInfo::has_ADNHHAELLNC,
+            PropExtraInfo::ADNHHAELLNC,
+            PropExtraInfo::mut_ADNHHAELLNC,
+            PropExtraInfo::set_ADNHHAELLNC,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PGLLFCMEFKG::PGLLFCMEFKG>(
             "IDMAELPELLA",
             PropExtraInfo::has_IDMAELPELLA,
@@ -490,12 +483,19 @@ impl PropExtraInfo {
             PropExtraInfo::mut_IDMAELPELLA,
             PropExtraInfo::set_IDMAELPELLA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HLFAKEOBFAB::HLFAKEOBFAB>(
-            "AEFMMOHKCHJ",
-            PropExtraInfo::has_AEFMMOHKCHJ,
-            PropExtraInfo::AEFMMOHKCHJ,
-            PropExtraInfo::mut_AEFMMOHKCHJ,
-            PropExtraInfo::set_AEFMMOHKCHJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PropRogueInfo::PropRogueInfo>(
+            "rogue_game_info",
+            PropExtraInfo::has_rogue_game_info,
+            PropExtraInfo::rogue_game_info,
+            PropExtraInfo::mut_rogue_game_info,
+            PropExtraInfo::set_rogue_game_info,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NBDKNCJGOMN::NBDKNCJGOMN>(
+            "OEMHOKEMBKM",
+            PropExtraInfo::has_OEMHOKEMBKM,
+            PropExtraInfo::OEMHOKEMBKM,
+            PropExtraInfo::mut_OEMHOKEMBKM,
+            PropExtraInfo::set_OEMHOKEMBKM,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ONNEJIPGHCK::ONNEJIPGHCK>(
             "MFCPLGHHPNP",
@@ -523,31 +523,31 @@ impl ::protobuf::Message for PropExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.timeline_info)?;
                 },
                 10 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(is.read_message()?));
-                },
-                26 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(is.read_message()?));
-                },
-                42 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(is.read_message()?));
-                },
-                50 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(is.read_message()?));
-                },
-                58 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(is.read_message()?));
-                },
-                98 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(is.read_message()?));
-                },
-                106 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(is.read_message()?));
                 },
-                114 => {
+                18 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(is.read_message()?));
+                },
+                26 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(is.read_message()?));
+                },
+                42 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::ADNHHAELLNC(is.read_message()?));
+                },
+                50 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::IDMAELPELLA(is.read_message()?));
+                },
+                58 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::RogueGameInfo(is.read_message()?));
+                },
+                66 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(is.read_message()?));
+                },
+                82 => {
                     self.KKNBOACNCON = ::std::option::Option::Some(prop_extra_info::KKNBOACNCON::MFCPLGHHPNP(is.read_message()?));
                 },
                 tag => {
@@ -568,19 +568,7 @@ impl ::protobuf::Message for PropExtraInfo {
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
+                &prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -588,11 +576,23 @@ impl ::protobuf::Message for PropExtraInfo {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
+                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
                 &prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(ref v) => {
+                &prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -609,33 +609,33 @@ impl ::protobuf::Message for PropExtraInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.timeline_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
+                &prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
+                &prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                },
+                &prop_extra_info::KKNBOACNCON::OGLJIOJBIEN(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
+                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::ADNHHAELLNC(ref v) => {
+                &prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::ACJPMKHJLDB(ref v) => {
+                &prop_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &prop_extra_info::KKNBOACNCON::IDMAELPELLA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-                },
-                &prop_extra_info::KKNBOACNCON::AEFMMOHKCHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                &prop_extra_info::KKNBOACNCON::OEMHOKEMBKM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &prop_extra_info::KKNBOACNCON::MFCPLGHHPNP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -702,20 +702,20 @@ pub mod prop_extra_info {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:PropExtraInfo.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.OGLJIOJBIEN)
-        OGLJIOJBIEN(super::super::BGFLAKMOIGC::BGFLAKMOIGC),
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.OEMHOKEMBKM)
-        OEMHOKEMBKM(super::super::NBDKNCJGOMN::NBDKNCJGOMN),
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_game_info)
-        RogueGameInfo(super::super::PropRogueInfo::PropRogueInfo),
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.ADNHHAELLNC)
-        ADNHHAELLNC(super::super::EBBOJACNHEC::EBBOJACNHEC),
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.ACJPMKHJLDB)
-        ACJPMKHJLDB(super::super::APKENKIDMGC::APKENKIDMGC),
-        // @@protoc_insertion_point(oneof_field:PropExtraInfo.IDMAELPELLA)
-        IDMAELPELLA(super::super::PGLLFCMEFKG::PGLLFCMEFKG),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.AEFMMOHKCHJ)
         AEFMMOHKCHJ(super::super::HLFAKEOBFAB::HLFAKEOBFAB),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.ACJPMKHJLDB)
+        ACJPMKHJLDB(super::super::APKENKIDMGC::APKENKIDMGC),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.OGLJIOJBIEN)
+        OGLJIOJBIEN(super::super::BGFLAKMOIGC::BGFLAKMOIGC),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.ADNHHAELLNC)
+        ADNHHAELLNC(super::super::EBBOJACNHEC::EBBOJACNHEC),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.IDMAELPELLA)
+        IDMAELPELLA(super::super::PGLLFCMEFKG::PGLLFCMEFKG),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.rogue_game_info)
+        RogueGameInfo(super::super::PropRogueInfo::PropRogueInfo),
+        // @@protoc_insertion_point(oneof_field:PropExtraInfo.OEMHOKEMBKM)
+        OEMHOKEMBKM(super::super::NBDKNCJGOMN::NBDKNCJGOMN),
         // @@protoc_insertion_point(oneof_field:PropExtraInfo.MFCPLGHHPNP)
         MFCPLGHHPNP(super::super::ONNEJIPGHCK::ONNEJIPGHCK),
     }
@@ -742,16 +742,16 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     oto\x1a\x11EBBOJACNHEC.proto\x1a\x11HLFAKEOBFAB.proto\x1a\x11NBDKNCJGOMN\
     .proto\x1a\x11ONNEJIPGHCK.proto\x1a\x11PGLLFCMEFKG.proto\x1a\x13PropRogu\
     eInfo.proto\x1a\x16PropTimelineInfo.proto\"\xee\x03\n\rPropExtraInfo\x12\
-    6\n\rtimeline_info\x18\n\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimeline\
-    Info\x120\n\x0bOGLJIOJBIEN\x18\x01\x20\x01(\x0b2\x0c.BGFLAKMOIGCH\0R\x0b\
-    OGLJIOJBIEN\x120\n\x0bOEMHOKEMBKM\x18\x03\x20\x01(\x0b2\x0c.NBDKNCJGOMNH\
-    \0R\x0bOEMHOKEMBKM\x128\n\x0frogue_game_info\x18\x05\x20\x01(\x0b2\x0e.P\
-    ropRogueInfoH\0R\rrogueGameInfo\x120\n\x0bADNHHAELLNC\x18\x06\x20\x01(\
-    \x0b2\x0c.EBBOJACNHECH\0R\x0bADNHHAELLNC\x120\n\x0bACJPMKHJLDB\x18\x07\
-    \x20\x01(\x0b2\x0c.APKENKIDMGCH\0R\x0bACJPMKHJLDB\x120\n\x0bIDMAELPELLA\
-    \x18\x0c\x20\x01(\x0b2\x0c.PGLLFCMEFKGH\0R\x0bIDMAELPELLA\x120\n\x0bAEFM\
-    MOHKCHJ\x18\r\x20\x01(\x0b2\x0c.HLFAKEOBFABH\0R\x0bAEFMMOHKCHJ\x120\n\
-    \x0bMFCPLGHHPNP\x18\x0e\x20\x01(\x0b2\x0c.ONNEJIPGHCKH\0R\x0bMFCPLGHHPNP\
+    6\n\rtimeline_info\x18\x0f\x20\x01(\x0b2\x11.PropTimelineInfoR\x0ctimeli\
+    neInfo\x120\n\x0bAEFMMOHKCHJ\x18\x01\x20\x01(\x0b2\x0c.HLFAKEOBFABH\0R\
+    \x0bAEFMMOHKCHJ\x120\n\x0bACJPMKHJLDB\x18\x02\x20\x01(\x0b2\x0c.APKENKID\
+    MGCH\0R\x0bACJPMKHJLDB\x120\n\x0bOGLJIOJBIEN\x18\x03\x20\x01(\x0b2\x0c.B\
+    GFLAKMOIGCH\0R\x0bOGLJIOJBIEN\x120\n\x0bADNHHAELLNC\x18\x05\x20\x01(\x0b\
+    2\x0c.EBBOJACNHECH\0R\x0bADNHHAELLNC\x120\n\x0bIDMAELPELLA\x18\x06\x20\
+    \x01(\x0b2\x0c.PGLLFCMEFKGH\0R\x0bIDMAELPELLA\x128\n\x0frogue_game_info\
+    \x18\x07\x20\x01(\x0b2\x0e.PropRogueInfoH\0R\rrogueGameInfo\x120\n\x0bOE\
+    MHOKEMBKM\x18\x08\x20\x01(\x0b2\x0c.NBDKNCJGOMNH\0R\x0bOEMHOKEMBKM\x120\
+    \n\x0bMFCPLGHHPNP\x18\n\x20\x01(\x0b2\x0c.ONNEJIPGHCKH\0R\x0bMFCPLGHHPNP\
     B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 

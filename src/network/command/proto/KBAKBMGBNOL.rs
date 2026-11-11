@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct KBAKBMGBNOL {
     // message fields
+    // @@protoc_insertion_point(field:KBAKBMGBNOL.KBLBFGANMPJ)
+    pub KBLBFGANMPJ: bool,
     // @@protoc_insertion_point(field:KBAKBMGBNOL.BEOHGAADKPH)
     pub BEOHGAADKPH: u32,
     // @@protoc_insertion_point(field:KBAKBMGBNOL.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:KBAKBMGBNOL.KBLBFGANMPJ)
-    pub KBLBFGANMPJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:KBAKBMGBNOL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,6 +54,11 @@ impl KBAKBMGBNOL {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KBLBFGANMPJ",
+            |m: &KBAKBMGBNOL| { &m.KBLBFGANMPJ },
+            |m: &mut KBAKBMGBNOL| { &mut m.KBLBFGANMPJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BEOHGAADKPH",
             |m: &KBAKBMGBNOL| { &m.BEOHGAADKPH },
             |m: &mut KBAKBMGBNOL| { &mut m.BEOHGAADKPH },
@@ -62,11 +67,6 @@ impl KBAKBMGBNOL {
             "retcode",
             |m: &KBAKBMGBNOL| { &m.retcode },
             |m: &mut KBAKBMGBNOL| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBLBFGANMPJ",
-            |m: &KBAKBMGBNOL| { &m.KBLBFGANMPJ },
-            |m: &mut KBAKBMGBNOL| { &mut m.KBLBFGANMPJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<KBAKBMGBNOL>(
             "KBAKBMGBNOL",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for KBAKBMGBNOL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                56 => {
+                    self.KBLBFGANMPJ = is.read_bool()?;
+                },
+                80 => {
                     self.BEOHGAADKPH = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
-                },
-                112 => {
-                    self.KBLBFGANMPJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for KBAKBMGBNOL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BEOHGAADKPH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.BEOHGAADKPH);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
         if self.KBLBFGANMPJ != false {
             my_size += 1 + 1;
+        }
+        if self.BEOHGAADKPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.BEOHGAADKPH);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for KBAKBMGBNOL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.KBLBFGANMPJ != false {
+            os.write_bool(7, self.KBLBFGANMPJ)?;
+        }
         if self.BEOHGAADKPH != 0 {
-            os.write_uint32(2, self.BEOHGAADKPH)?;
+            os.write_uint32(10, self.BEOHGAADKPH)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
-        if self.KBLBFGANMPJ != false {
-            os.write_bool(14, self.KBLBFGANMPJ)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for KBAKBMGBNOL {
     }
 
     fn clear(&mut self) {
+        self.KBLBFGANMPJ = false;
         self.BEOHGAADKPH = 0;
         self.retcode = 0;
-        self.KBLBFGANMPJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static KBAKBMGBNOL {
         static instance: KBAKBMGBNOL = KBAKBMGBNOL {
+            KBLBFGANMPJ: false,
             BEOHGAADKPH: 0,
             retcode: 0,
-            KBLBFGANMPJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for KBAKBMGBNOL {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KBAKBMGBNOL.proto\"k\n\x0bKBAKBMGBNOL\x12\x20\n\x0bBEOHGAADKPH\x18\
-    \x02\x20\x01(\rR\x0bBEOHGAADKPH\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\
-    \x07retcode\x12\x20\n\x0bKBLBFGANMPJ\x18\x0e\x20\x01(\x08R\x0bKBLBFGANMP\
-    Jb\x06proto3\
+    \n\x11KBAKBMGBNOL.proto\"k\n\x0bKBAKBMGBNOL\x12\x20\n\x0bKBLBFGANMPJ\x18\
+    \x07\x20\x01(\x08R\x0bKBLBFGANMPJ\x12\x20\n\x0bBEOHGAADKPH\x18\n\x20\x01\
+    (\rR\x0bBEOHGAADKPH\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

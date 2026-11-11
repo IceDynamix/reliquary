@@ -30,12 +30,12 @@ pub struct GetFiveDimGameDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFiveDimGameDataScRsp.CPFCMKLCMFG)
     pub CPFCMKLCMFG: u32,
+    // @@protoc_insertion_point(field:GetFiveDimGameDataScRsp.CFDIKLBINHK)
+    pub CFDIKLBINHK: ::protobuf::MessageField<super::DGHPIDMDOJM::DGHPIDMDOJM>,
     // @@protoc_insertion_point(field:GetFiveDimGameDataScRsp.KEGAOHGOALD)
     pub KEGAOHGOALD: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFiveDimGameDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFiveDimGameDataScRsp.CFDIKLBINHK)
-    pub CFDIKLBINHK: ::protobuf::MessageField<super::DGHPIDMDOJM::DGHPIDMDOJM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFiveDimGameDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl GetFiveDimGameDataScRsp {
             |m: &GetFiveDimGameDataScRsp| { &m.CPFCMKLCMFG },
             |m: &mut GetFiveDimGameDataScRsp| { &mut m.CPFCMKLCMFG },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHPIDMDOJM::DGHPIDMDOJM>(
+            "CFDIKLBINHK",
+            |m: &GetFiveDimGameDataScRsp| { &m.CFDIKLBINHK },
+            |m: &mut GetFiveDimGameDataScRsp| { &mut m.CFDIKLBINHK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KEGAOHGOALD",
             |m: &GetFiveDimGameDataScRsp| { &m.KEGAOHGOALD },
@@ -69,11 +74,6 @@ impl GetFiveDimGameDataScRsp {
             "retcode",
             |m: &GetFiveDimGameDataScRsp| { &m.retcode },
             |m: &mut GetFiveDimGameDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGHPIDMDOJM::DGHPIDMDOJM>(
-            "CFDIKLBINHK",
-            |m: &GetFiveDimGameDataScRsp| { &m.CFDIKLBINHK },
-            |m: &mut GetFiveDimGameDataScRsp| { &mut m.CFDIKLBINHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFiveDimGameDataScRsp>(
             "GetFiveDimGameDataScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GetFiveDimGameDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.CPFCMKLCMFG = is.read_uint32()?;
                 },
-                50 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
+                },
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.KEGAOHGOALD)?;
                 },
-                48 => {
+                32 => {
                     self.KEGAOHGOALD.push(is.read_uint32()?);
                 },
-                96 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,15 +121,15 @@ impl ::protobuf::Message for GetFiveDimGameDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.CPFCMKLCMFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.CPFCMKLCMFG);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KEGAOHGOALD);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.CPFCMKLCMFG);
         }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.KEGAOHGOALD);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,14 +138,14 @@ impl ::protobuf::Message for GetFiveDimGameDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.CPFCMKLCMFG != 0 {
-            os.write_uint32(3, self.CPFCMKLCMFG)?;
-        }
-        os.write_repeated_packed_uint32(6, &self.KEGAOHGOALD)?;
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.CPFCMKLCMFG)?;
         }
         if let Some(v) = self.CFDIKLBINHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        os.write_repeated_packed_uint32(4, &self.KEGAOHGOALD)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for GetFiveDimGameDataScRsp {
 
     fn clear(&mut self) {
         self.CPFCMKLCMFG = 0;
+        self.CFDIKLBINHK.clear();
         self.KEGAOHGOALD.clear();
         self.retcode = 0;
-        self.CFDIKLBINHK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFiveDimGameDataScRsp {
         static instance: GetFiveDimGameDataScRsp = GetFiveDimGameDataScRsp {
             CPFCMKLCMFG: 0,
+            CFDIKLBINHK: ::protobuf::MessageField::none(),
             KEGAOHGOALD: ::std::vec::Vec::new(),
             retcode: 0,
-            CFDIKLBINHK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFiveDimGameDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGetFiveDimGameDataScRsp.proto\x1a\x11DGHPIDMDOJM.proto\"\xa7\x01\n\
-    \x17GetFiveDimGameDataScRsp\x12\x20\n\x0bCPFCMKLCMFG\x18\x03\x20\x01(\rR\
-    \x0bCPFCMKLCMFG\x12\x20\n\x0bKEGAOHGOALD\x18\x06\x20\x03(\rR\x0bKEGAOHGO\
-    ALD\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12.\n\x0bCFDIKL\
-    BINHK\x18\x0f\x20\x01(\x0b2\x0c.DGHPIDMDOJMR\x0bCFDIKLBINHKb\x06proto3\
+    \x17GetFiveDimGameDataScRsp\x12\x20\n\x0bCPFCMKLCMFG\x18\x01\x20\x01(\rR\
+    \x0bCPFCMKLCMFG\x12.\n\x0bCFDIKLBINHK\x18\x02\x20\x01(\x0b2\x0c.DGHPIDMD\
+    OJMR\x0bCFDIKLBINHK\x12\x20\n\x0bKEGAOHGOALD\x18\x04\x20\x03(\rR\x0bKEGA\
+    OHGOALD\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

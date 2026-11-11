@@ -79,7 +79,7 @@ impl ::protobuf::Message for ANAJELDHDBH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                32 => {
                     self.key = is.read_uint32()?;
                 },
                 113 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ANAJELDHDBH {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.key);
+            my_size += ::protobuf::rt::uint32_size(4, self.key);
         }
         if self.damage != 0. {
             my_size += 1 + 8;
@@ -110,7 +110,7 @@ impl ::protobuf::Message for ANAJELDHDBH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.key != 0 {
-            os.write_uint32(6, self.key)?;
+            os.write_uint32(4, self.key)?;
         }
         if self.damage != 0. {
             os.write_double(14, self.damage)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for ANAJELDHDBH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11ANAJELDHDBH.proto\"7\n\x0bANAJELDHDBH\x12\x10\n\x03key\x18\x06\x20\
+    \n\x11ANAJELDHDBH.proto\"7\n\x0bANAJELDHDBH\x12\x10\n\x03key\x18\x04\x20\
     \x01(\rR\x03key\x12\x16\n\x06damage\x18\x0e\x20\x01(\x01R\x06damageb\x06\
     proto3\
 ";

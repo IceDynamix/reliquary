@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JEFCEGFBOAF {
     // message fields
+    // @@protoc_insertion_point(field:JEFCEGFBOAF.CCKEBLBMBHH)
+    pub CCKEBLBMBHH: ::protobuf::MessageField<super::MKDHPOGEDOP::MKDHPOGEDOP>,
     // @@protoc_insertion_point(field:JEFCEGFBOAF.GNIFLCBGAAA)
     pub GNIFLCBGAAA: u32,
     // @@protoc_insertion_point(field:JEFCEGFBOAF.EHINOPGCAEE)
     pub EHINOPGCAEE: ::protobuf::MessageField<super::ILMHFEPPKFE::ILMHFEPPKFE>,
-    // @@protoc_insertion_point(field:JEFCEGFBOAF.CCKEBLBMBHH)
-    pub CCKEBLBMBHH: ::protobuf::MessageField<super::MKDHPOGEDOP::MKDHPOGEDOP>,
     // special fields
     // @@protoc_insertion_point(special_field:JEFCEGFBOAF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl JEFCEGFBOAF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MKDHPOGEDOP::MKDHPOGEDOP>(
+            "CCKEBLBMBHH",
+            |m: &JEFCEGFBOAF| { &m.CCKEBLBMBHH },
+            |m: &mut JEFCEGFBOAF| { &mut m.CCKEBLBMBHH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "GNIFLCBGAAA",
             |m: &JEFCEGFBOAF| { &m.GNIFLCBGAAA },
@@ -62,11 +67,6 @@ impl JEFCEGFBOAF {
             "EHINOPGCAEE",
             |m: &JEFCEGFBOAF| { &m.EHINOPGCAEE },
             |m: &mut JEFCEGFBOAF| { &mut m.EHINOPGCAEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MKDHPOGEDOP::MKDHPOGEDOP>(
-            "CCKEBLBMBHH",
-            |m: &JEFCEGFBOAF| { &m.CCKEBLBMBHH },
-            |m: &mut JEFCEGFBOAF| { &mut m.CCKEBLBMBHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JEFCEGFBOAF>(
             "JEFCEGFBOAF",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for JEFCEGFBOAF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCKEBLBMBHH)?;
+                },
+                88 => {
                     self.GNIFLCBGAAA = is.read_uint32()?;
                 },
-                50 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EHINOPGCAEE)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCKEBLBMBHH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for JEFCEGFBOAF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GNIFLCBGAAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GNIFLCBGAAA);
-        }
-        if let Some(v) = self.EHINOPGCAEE.as_ref() {
+        if let Some(v) = self.CCKEBLBMBHH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CCKEBLBMBHH.as_ref() {
+        if self.GNIFLCBGAAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.GNIFLCBGAAA);
+        }
+        if let Some(v) = self.EHINOPGCAEE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for JEFCEGFBOAF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.CCKEBLBMBHH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         if self.GNIFLCBGAAA != 0 {
-            os.write_uint32(2, self.GNIFLCBGAAA)?;
+            os.write_uint32(11, self.GNIFLCBGAAA)?;
         }
         if let Some(v) = self.EHINOPGCAEE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.CCKEBLBMBHH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for JEFCEGFBOAF {
     }
 
     fn clear(&mut self) {
+        self.CCKEBLBMBHH.clear();
         self.GNIFLCBGAAA = 0;
         self.EHINOPGCAEE.clear();
-        self.CCKEBLBMBHH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JEFCEGFBOAF {
         static instance: JEFCEGFBOAF = JEFCEGFBOAF {
+            CCKEBLBMBHH: ::protobuf::MessageField::none(),
             GNIFLCBGAAA: 0,
             EHINOPGCAEE: ::protobuf::MessageField::none(),
-            CCKEBLBMBHH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for JEFCEGFBOAF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JEFCEGFBOAF.proto\x1a\x11ILMHFEPPKFE.proto\x1a\x11MKDHPOGEDOP.prot\
-    o\"\x8f\x01\n\x0bJEFCEGFBOAF\x12\x20\n\x0bGNIFLCBGAAA\x18\x02\x20\x01(\r\
-    R\x0bGNIFLCBGAAA\x12.\n\x0bEHINOPGCAEE\x18\x06\x20\x01(\x0b2\x0c.ILMHFEP\
-    PKFER\x0bEHINOPGCAEE\x12.\n\x0bCCKEBLBMBHH\x18\x0b\x20\x01(\x0b2\x0c.MKD\
-    HPOGEDOPR\x0bCCKEBLBMBHHb\x06proto3\
+    o\"\x8f\x01\n\x0bJEFCEGFBOAF\x12.\n\x0bCCKEBLBMBHH\x18\x02\x20\x01(\x0b2\
+    \x0c.MKDHPOGEDOPR\x0bCCKEBLBMBHH\x12\x20\n\x0bGNIFLCBGAAA\x18\x0b\x20\
+    \x01(\rR\x0bGNIFLCBGAAA\x12.\n\x0bEHINOPGCAEE\x18\x0c\x20\x01(\x0b2\x0c.\
+    ILMHFEPPKFER\x0bEHINOPGCAEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

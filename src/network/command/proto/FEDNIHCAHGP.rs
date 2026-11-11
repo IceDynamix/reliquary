@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FEDNIHCAHGP {
     // message fields
-    // @@protoc_insertion_point(field:FEDNIHCAHGP.GEMHKFCFCCC)
-    pub GEMHKFCFCCC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:FEDNIHCAHGP.FCOKODHGEKO)
     pub FCOKODHGEKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:FEDNIHCAHGP.GEMHKFCFCCC)
+    pub GEMHKFCFCCC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:FEDNIHCAHGP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FEDNIHCAHGP {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GEMHKFCFCCC",
-            |m: &FEDNIHCAHGP| { &m.GEMHKFCFCCC },
-            |m: &mut FEDNIHCAHGP| { &mut m.GEMHKFCFCCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FCOKODHGEKO",
             |m: &FEDNIHCAHGP| { &m.FCOKODHGEKO },
             |m: &mut FEDNIHCAHGP| { &mut m.FCOKODHGEKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GEMHKFCFCCC",
+            |m: &FEDNIHCAHGP| { &m.GEMHKFCFCCC },
+            |m: &mut FEDNIHCAHGP| { &mut m.GEMHKFCFCCC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FEDNIHCAHGP>(
             "FEDNIHCAHGP",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for FEDNIHCAHGP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GEMHKFCFCCC)?;
-                },
-                8 => {
-                    self.GEMHKFCFCCC.push(is.read_uint32()?);
-                },
-                34 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.FCOKODHGEKO)?;
                 },
-                32 => {
+                64 => {
                     self.FCOKODHGEKO.push(is.read_uint32()?);
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GEMHKFCFCCC)?;
+                },
+                96 => {
+                    self.GEMHKFCFCCC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for FEDNIHCAHGP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.GEMHKFCFCCC);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.FCOKODHGEKO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.FCOKODHGEKO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.GEMHKFCFCCC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.GEMHKFCFCCC)?;
-        os.write_repeated_packed_uint32(4, &self.FCOKODHGEKO)?;
+        os.write_repeated_packed_uint32(8, &self.FCOKODHGEKO)?;
+        os.write_repeated_packed_uint32(12, &self.GEMHKFCFCCC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for FEDNIHCAHGP {
     }
 
     fn clear(&mut self) {
-        self.GEMHKFCFCCC.clear();
         self.FCOKODHGEKO.clear();
+        self.GEMHKFCFCCC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FEDNIHCAHGP {
         static instance: FEDNIHCAHGP = FEDNIHCAHGP {
-            GEMHKFCFCCC: ::std::vec::Vec::new(),
             FCOKODHGEKO: ::std::vec::Vec::new(),
+            GEMHKFCFCCC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -163,9 +163,9 @@ impl ::protobuf::reflect::ProtobufValue for FEDNIHCAHGP {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FEDNIHCAHGP.proto\"Q\n\x0bFEDNIHCAHGP\x12\x20\n\x0bGEMHKFCFCCC\x18\
-    \x01\x20\x03(\rR\x0bGEMHKFCFCCC\x12\x20\n\x0bFCOKODHGEKO\x18\x04\x20\x03\
-    (\rR\x0bFCOKODHGEKOb\x06proto3\
+    \n\x11FEDNIHCAHGP.proto\"Q\n\x0bFEDNIHCAHGP\x12\x20\n\x0bFCOKODHGEKO\x18\
+    \x08\x20\x03(\rR\x0bFCOKODHGEKO\x12\x20\n\x0bGEMHKFCFCCC\x18\x0c\x20\x03\
+    (\rR\x0bGEMHKFCFCCCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

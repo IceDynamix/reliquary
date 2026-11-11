@@ -50,6 +50,8 @@ pub struct MCHAMBDHPEN {
     pub MJJONMBGJDO: ::std::vec::Vec<super::NAGIOAKDDMJ::NAGIOAKDDMJ>,
     // @@protoc_insertion_point(field:MCHAMBDHPEN.AEPKHNDKMJC)
     pub AEPKHNDKMJC: ::std::vec::Vec<super::NAGIOAKDDMJ::NAGIOAKDDMJ>,
+    // @@protoc_insertion_point(field:MCHAMBDHPEN.skill_info)
+    pub skill_info: ::std::vec::Vec<super::OELHAMANGBN::OELHAMANGBN>,
     // special fields
     // @@protoc_insertion_point(special_field:MCHAMBDHPEN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,7 +69,7 @@ impl MCHAMBDHPEN {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(11);
+        let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_battle_type",
@@ -124,6 +126,11 @@ impl MCHAMBDHPEN {
             |m: &MCHAMBDHPEN| { &m.AEPKHNDKMJC },
             |m: &mut MCHAMBDHPEN| { &mut m.AEPKHNDKMJC },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "skill_info",
+            |m: &MCHAMBDHPEN| { &m.skill_info },
+            |m: &mut MCHAMBDHPEN| { &mut m.skill_info },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MCHAMBDHPEN>(
             "MCHAMBDHPEN",
             fields,
@@ -175,6 +182,9 @@ impl ::protobuf::Message for MCHAMBDHPEN {
                 90 => {
                     self.AEPKHNDKMJC.push(is.read_message()?);
                 },
+                98 => {
+                    self.skill_info.push(is.read_message()?);
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -225,6 +235,10 @@ impl ::protobuf::Message for MCHAMBDHPEN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        for value in &self.skill_info {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -264,6 +278,9 @@ impl ::protobuf::Message for MCHAMBDHPEN {
         for v in &self.AEPKHNDKMJC {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        for v in &self.skill_info {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -292,6 +309,7 @@ impl ::protobuf::Message for MCHAMBDHPEN {
         self.FKFDKGOMJHB.clear();
         self.MJJONMBGJDO.clear();
         self.AEPKHNDKMJC.clear();
+        self.skill_info.clear();
         self.special_fields.clear();
     }
 
@@ -308,6 +326,7 @@ impl ::protobuf::Message for MCHAMBDHPEN {
             FKFDKGOMJHB: ::std::vec::Vec::new(),
             MJJONMBGJDO: ::std::vec::Vec::new(),
             AEPKHNDKMJC: ::std::vec::Vec::new(),
+            skill_info: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -333,17 +352,19 @@ impl ::protobuf::reflect::ProtobufValue for MCHAMBDHPEN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MCHAMBDHPEN.proto\x1a\x11GFFDMPOCAIP.proto\x1a\x11NAGIOAKDDMJ.prot\
-    o\"\xce\x03\n\x0bMCHAMBDHPEN\x12.\n\x13monster_battle_type\x18\x01\x20\
-    \x01(\rR\x11monsterBattleType\x12\x20\n\x0bJNBIALMKFCL\x18\x02\x20\x01(\
-    \rR\x0bJNBIALMKFCL\x12\x20\n\x0bOCPEPEMNNEK\x18\x03\x20\x01(\rR\x0bOCPEP\
-    EMNNEK\x12\x17\n\x07room_id\x18\x04\x20\x01(\x04R\x06roomId\x12\x20\n\
-    \x0bMCIIFLCKMKL\x18\x05\x20\x01(\tR\x0bMCIIFLCKMKL\x12\x20\n\x0bAFPHLNMG\
-    PHK\x18\x06\x20\x01(\rR\x0bAFPHLNMGPHK\x12.\n\x0bCHEKBELPMPG\x18\x07\x20\
-    \x01(\x0b2\x0c.GFFDMPOCAIPR\x0bCHEKBELPMPG\x12.\n\x0bGJPOPBNKOPJ\x18\x08\
-    \x20\x01(\x0b2\x0c.GFFDMPOCAIPR\x0bGJPOPBNKOPJ\x12.\n\x0bFKFDKGOMJHB\x18\
-    \t\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\x0bFKFDKGOMJHB\x12.\n\x0bMJJONMBGJDO\
-    \x18\n\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\x0bMJJONMBGJDO\x12.\n\x0bAEPKHNDKM\
-    JC\x18\x0b\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\x0bAEPKHNDKMJCb\x06proto3\
+    o\x1a\x11OELHAMANGBN.proto\"\xfb\x03\n\x0bMCHAMBDHPEN\x12.\n\x13monster_\
+    battle_type\x18\x01\x20\x01(\rR\x11monsterBattleType\x12\x20\n\x0bJNBIAL\
+    MKFCL\x18\x02\x20\x01(\rR\x0bJNBIALMKFCL\x12\x20\n\x0bOCPEPEMNNEK\x18\
+    \x03\x20\x01(\rR\x0bOCPEPEMNNEK\x12\x17\n\x07room_id\x18\x04\x20\x01(\
+    \x04R\x06roomId\x12\x20\n\x0bMCIIFLCKMKL\x18\x05\x20\x01(\tR\x0bMCIIFLCK\
+    MKL\x12\x20\n\x0bAFPHLNMGPHK\x18\x06\x20\x01(\rR\x0bAFPHLNMGPHK\x12.\n\
+    \x0bCHEKBELPMPG\x18\x07\x20\x01(\x0b2\x0c.GFFDMPOCAIPR\x0bCHEKBELPMPG\
+    \x12.\n\x0bGJPOPBNKOPJ\x18\x08\x20\x01(\x0b2\x0c.GFFDMPOCAIPR\x0bGJPOPBN\
+    KOPJ\x12.\n\x0bFKFDKGOMJHB\x18\t\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\x0bFKFDK\
+    GOMJHB\x12.\n\x0bMJJONMBGJDO\x18\n\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\x0bMJJ\
+    ONMBGJDO\x12.\n\x0bAEPKHNDKMJC\x18\x0b\x20\x03(\x0b2\x0c.NAGIOAKDDMJR\
+    \x0bAEPKHNDKMJC\x12+\n\nskill_info\x18\x0c\x20\x03(\x0b2\x0c.OELHAMANGBN\
+    R\tskillInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -360,9 +381,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::GFFDMPOCAIP::file_descriptor().clone());
             deps.push(super::NAGIOAKDDMJ::file_descriptor().clone());
+            deps.push(super::OELHAMANGBN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MCHAMBDHPEN::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueExhibitionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.HNCFLOKLJLA)
-    pub HNCFLOKLJLA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.DMIIBKINPNL)
     pub DMIIBKINPNL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.ADGNFDJDCLG)
     pub ADGNFDJDCLG: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::MIGPNAOGHEP::MIGPNAOGHEP>>,
+    // @@protoc_insertion_point(field:SetRogueExhibitionCsReq.HNCFLOKLJLA)
+    pub HNCFLOKLJLA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueExhibitionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl SetRogueExhibitionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HNCFLOKLJLA",
-            |m: &SetRogueExhibitionCsReq| { &m.HNCFLOKLJLA },
-            |m: &mut SetRogueExhibitionCsReq| { &mut m.HNCFLOKLJLA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DMIIBKINPNL",
             |m: &SetRogueExhibitionCsReq| { &m.DMIIBKINPNL },
             |m: &mut SetRogueExhibitionCsReq| { &mut m.DMIIBKINPNL },
@@ -67,6 +62,11 @@ impl SetRogueExhibitionCsReq {
             "ADGNFDJDCLG",
             |m: &SetRogueExhibitionCsReq| { &m.ADGNFDJDCLG },
             |m: &mut SetRogueExhibitionCsReq| { &mut m.ADGNFDJDCLG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HNCFLOKLJLA",
+            |m: &SetRogueExhibitionCsReq| { &m.HNCFLOKLJLA },
+            |m: &mut SetRogueExhibitionCsReq| { &mut m.HNCFLOKLJLA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueExhibitionCsReq>(
             "SetRogueExhibitionCsReq",
@@ -86,23 +86,23 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HNCFLOKLJLA)?;
-                },
-                48 => {
-                    self.HNCFLOKLJLA.push(is.read_uint32()?);
-                },
-                58 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.DMIIBKINPNL)?;
                 },
-                56 => {
+                16 => {
                     self.DMIIBKINPNL.push(is.read_uint32()?);
                 },
-                80 => {
+                48 => {
                     self.ADGNFDJDCLG.push(is.read_enum_or_unknown()?);
                 },
-                82 => {
+                50 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.ADGNFDJDCLG)?
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HNCFLOKLJLA)?;
+                },
+                72 => {
+                    self.HNCFLOKLJLA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,18 +116,18 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.HNCFLOKLJLA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DMIIBKINPNL);
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(10, &self.ADGNFDJDCLG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.DMIIBKINPNL);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(6, &self.ADGNFDJDCLG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HNCFLOKLJLA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.HNCFLOKLJLA)?;
-        os.write_repeated_packed_uint32(7, &self.DMIIBKINPNL)?;
-        os.write_repeated_packed_enum_or_unknown(10, &self.ADGNFDJDCLG)?;
+        os.write_repeated_packed_uint32(2, &self.DMIIBKINPNL)?;
+        os.write_repeated_packed_enum_or_unknown(6, &self.ADGNFDJDCLG)?;
+        os.write_repeated_packed_uint32(9, &self.HNCFLOKLJLA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -145,17 +145,17 @@ impl ::protobuf::Message for SetRogueExhibitionCsReq {
     }
 
     fn clear(&mut self) {
-        self.HNCFLOKLJLA.clear();
         self.DMIIBKINPNL.clear();
         self.ADGNFDJDCLG.clear();
+        self.HNCFLOKLJLA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueExhibitionCsReq {
         static instance: SetRogueExhibitionCsReq = SetRogueExhibitionCsReq {
-            HNCFLOKLJLA: ::std::vec::Vec::new(),
             DMIIBKINPNL: ::std::vec::Vec::new(),
             ADGNFDJDCLG: ::std::vec::Vec::new(),
+            HNCFLOKLJLA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -181,10 +181,10 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueExhibitionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSetRogueExhibitionCsReq.proto\x1a\x11MIGPNAOGHEP.proto\"\x8d\x01\n\
-    \x17SetRogueExhibitionCsReq\x12\x20\n\x0bHNCFLOKLJLA\x18\x06\x20\x03(\rR\
-    \x0bHNCFLOKLJLA\x12\x20\n\x0bDMIIBKINPNL\x18\x07\x20\x03(\rR\x0bDMIIBKIN\
-    PNL\x12.\n\x0bADGNFDJDCLG\x18\n\x20\x03(\x0e2\x0c.MIGPNAOGHEPR\x0bADGNFD\
-    JDCLGb\x06proto3\
+    \x17SetRogueExhibitionCsReq\x12\x20\n\x0bDMIIBKINPNL\x18\x02\x20\x03(\rR\
+    \x0bDMIIBKINPNL\x12.\n\x0bADGNFDJDCLG\x18\x06\x20\x03(\x0e2\x0c.MIGPNAOG\
+    HEPR\x0bADGNFDJDCLG\x12\x20\n\x0bHNCFLOKLJLA\x18\t\x20\x03(\rR\x0bHNCFLO\
+    KLJLAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -32,6 +32,10 @@ pub struct FIIJNPBFJBG {
     pub POCKGKDFLKK: ::std::collections::HashMap<::std::string::String, u32>,
     // @@protoc_insertion_point(field:FIIJNPBFJBG.IFLJPNDPDOA)
     pub IFLJPNDPDOA: u32,
+    // @@protoc_insertion_point(field:FIIJNPBFJBG.DKMNOPCJDDC)
+    pub DKMNOPCJDDC: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:FIIJNPBFJBG.FMNPBOJGLFI)
+    pub FMNPBOJGLFI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FIIJNPBFJBG.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +53,7 @@ impl FIIJNPBFJBG {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "POCKGKDFLKK",
@@ -60,6 +64,16 @@ impl FIIJNPBFJBG {
             "IFLJPNDPDOA",
             |m: &FIIJNPBFJBG| { &m.IFLJPNDPDOA },
             |m: &mut FIIJNPBFJBG| { &mut m.IFLJPNDPDOA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "DKMNOPCJDDC",
+            |m: &FIIJNPBFJBG| { &m.DKMNOPCJDDC },
+            |m: &mut FIIJNPBFJBG| { &mut m.DKMNOPCJDDC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMNPBOJGLFI",
+            |m: &FIIJNPBFJBG| { &m.FMNPBOJGLFI },
+            |m: &mut FIIJNPBFJBG| { &mut m.FMNPBOJGLFI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FIIJNPBFJBG>(
             "FIIJNPBFJBG",
@@ -79,7 +93,7 @@ impl ::protobuf::Message for FIIJNPBFJBG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -94,8 +108,26 @@ impl ::protobuf::Message for FIIJNPBFJBG {
                     is.pop_limit(old_limit);
                     self.POCKGKDFLKK.insert(key, value);
                 },
-                96 => {
+                48 => {
                     self.IFLJPNDPDOA = is.read_uint32()?;
+                },
+                66 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.DKMNOPCJDDC.insert(key, value);
+                },
+                88 => {
+                    self.FMNPBOJGLFI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -116,7 +148,16 @@ impl ::protobuf::Message for FIIJNPBFJBG {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
         if self.IFLJPNDPDOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IFLJPNDPDOA);
+            my_size += ::protobuf::rt::uint32_size(6, self.IFLJPNDPDOA);
+        }
+        for (k, v) in &self.DKMNOPCJDDC {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.FMNPBOJGLFI != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FMNPBOJGLFI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -128,13 +169,25 @@ impl ::protobuf::Message for FIIJNPBFJBG {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
         if self.IFLJPNDPDOA != 0 {
-            os.write_uint32(12, self.IFLJPNDPDOA)?;
+            os.write_uint32(6, self.IFLJPNDPDOA)?;
+        }
+        for (k, v) in &self.DKMNOPCJDDC {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(66)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        if self.FMNPBOJGLFI != 0 {
+            os.write_uint32(11, self.FMNPBOJGLFI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -155,6 +208,8 @@ impl ::protobuf::Message for FIIJNPBFJBG {
     fn clear(&mut self) {
         self.POCKGKDFLKK.clear();
         self.IFLJPNDPDOA = 0;
+        self.DKMNOPCJDDC.clear();
+        self.FMNPBOJGLFI = 0;
         self.special_fields.clear();
     }
 
@@ -182,11 +237,15 @@ impl ::protobuf::reflect::ProtobufValue for FIIJNPBFJBG {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11FIIJNPBFJBG.proto\"\xb0\x01\n\x0bFIIJNPBFJBG\x12?\n\x0bPOCKGKDFLKK\
-    \x18\x05\x20\x03(\x0b2\x1d.FIIJNPBFJBG.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\
-    \x12\x20\n\x0bIFLJPNDPDOA\x18\x0c\x20\x01(\rR\x0bIFLJPNDPDOA\x1a>\n\x10P\
-    OCKGKDFLKKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x11FIIJNPBFJBG.proto\"\xd3\x02\n\x0bFIIJNPBFJBG\x12?\n\x0bPOCKGKDFLKK\
+    \x18\x03\x20\x03(\x0b2\x1d.FIIJNPBFJBG.POCKGKDFLKKEntryR\x0bPOCKGKDFLKK\
+    \x12\x20\n\x0bIFLJPNDPDOA\x18\x06\x20\x01(\rR\x0bIFLJPNDPDOA\x12?\n\x0bD\
+    KMNOPCJDDC\x18\x08\x20\x03(\x0b2\x1d.FIIJNPBFJBG.DKMNOPCJDDCEntryR\x0bDK\
+    MNOPCJDDC\x12\x20\n\x0bFMNPBOJGLFI\x18\x0b\x20\x01(\rR\x0bFMNPBOJGLFI\
+    \x1a>\n\x10POCKGKDFLKKEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\
+    \x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1a>\n\x10DKM\
+    NOPCJDDCEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05v\
+    alue\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

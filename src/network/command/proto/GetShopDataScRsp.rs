@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetShopDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetShopDataScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetShopDataScRsp.OPNFOBJOPCB)
     pub OPNFOBJOPCB: ::std::vec::Vec<super::NJEBDKOJNGA::NJEBDKOJNGA>,
+    // @@protoc_insertion_point(field:GetShopDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetShopDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetShopDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetShopDataScRsp| { &m.retcode },
-            |m: &mut GetShopDataScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "OPNFOBJOPCB",
             |m: &GetShopDataScRsp| { &m.OPNFOBJOPCB },
             |m: &mut GetShopDataScRsp| { &mut m.OPNFOBJOPCB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetShopDataScRsp| { &m.retcode },
+            |m: &mut GetShopDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetShopDataScRsp>(
             "GetShopDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetShopDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                98 => {
+                74 => {
                     self.OPNFOBJOPCB.push(is.read_message()?);
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetShopDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         for value in &self.OPNFOBJOPCB {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         for v in &self.OPNFOBJOPCB {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetShopDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.OPNFOBJOPCB.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetShopDataScRsp {
         static instance: GetShopDataScRsp = GetShopDataScRsp {
-            retcode: 0,
             OPNFOBJOPCB: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetShopDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetShopDataScRsp.proto\x1a\x11NJEBDKOJNGA.proto\"\\\n\x10GetShopDa\
-    taScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bOP\
-    NFOBJOPCB\x18\x0c\x20\x03(\x0b2\x0c.NJEBDKOJNGAR\x0bOPNFOBJOPCBb\x06prot\
-    o3\
+    taScRsp\x12.\n\x0bOPNFOBJOPCB\x18\t\x20\x03(\x0b2\x0c.NJEBDKOJNGAR\x0bOP\
+    NFOBJOPCB\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

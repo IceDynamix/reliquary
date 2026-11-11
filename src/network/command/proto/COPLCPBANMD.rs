@@ -30,6 +30,8 @@ pub struct COPLCPBANMD {
     // message fields
     // @@protoc_insertion_point(field:COPLCPBANMD.FODBOPBEALE)
     pub FODBOPBEALE: ::std::vec::Vec<super::PDFEPMMIKDF::PDFEPMMIKDF>,
+    // @@protoc_insertion_point(field:COPLCPBANMD.GNKMHIBPDEM)
+    pub GNKMHIBPDEM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:COPLCPBANMD.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl COPLCPBANMD {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "FODBOPBEALE",
             |m: &COPLCPBANMD| { &m.FODBOPBEALE },
             |m: &mut COPLCPBANMD| { &mut m.FODBOPBEALE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GNKMHIBPDEM",
+            |m: &COPLCPBANMD| { &m.GNKMHIBPDEM },
+            |m: &mut COPLCPBANMD| { &mut m.GNKMHIBPDEM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<COPLCPBANMD>(
             "COPLCPBANMD",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for COPLCPBANMD {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                98 => {
                     self.FODBOPBEALE.push(is.read_message()?);
+                },
+                112 => {
+                    self.GNKMHIBPDEM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -91,6 +101,9 @@ impl ::protobuf::Message for COPLCPBANMD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.GNKMHIBPDEM != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -98,8 +111,11 @@ impl ::protobuf::Message for COPLCPBANMD {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.FODBOPBEALE {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
+        if self.GNKMHIBPDEM != false {
+            os.write_bool(14, self.GNKMHIBPDEM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -118,12 +134,14 @@ impl ::protobuf::Message for COPLCPBANMD {
 
     fn clear(&mut self) {
         self.FODBOPBEALE.clear();
+        self.GNKMHIBPDEM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static COPLCPBANMD {
         static instance: COPLCPBANMD = COPLCPBANMD {
             FODBOPBEALE: ::std::vec::Vec::new(),
+            GNKMHIBPDEM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for COPLCPBANMD {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11COPLCPBANMD.proto\x1a\x11PDFEPMMIKDF.proto\"=\n\x0bCOPLCPBANMD\x12\
-    .\n\x0bFODBOPBEALE\x18\r\x20\x03(\x0b2\x0c.PDFEPMMIKDFR\x0bFODBOPBEALEb\
-    \x06proto3\
+    \n\x11COPLCPBANMD.proto\x1a\x11PDFEPMMIKDF.proto\"_\n\x0bCOPLCPBANMD\x12\
+    .\n\x0bFODBOPBEALE\x18\x0c\x20\x03(\x0b2\x0c.PDFEPMMIKDFR\x0bFODBOPBEALE\
+    \x12\x20\n\x0bGNKMHIBPDEM\x18\x0e\x20\x01(\x08R\x0bGNKMHIBPDEMb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

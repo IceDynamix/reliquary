@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingFinishBattleCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.GDIMKFNECOK)
-    pub GDIMKFNECOK: u32,
     // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.is_win)
     pub is_win: bool,
     // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.IGEHHFIGBAI)
     pub IGEHHFIGBAI: u32,
+    // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.GDIMKFNECOK)
+    pub GDIMKFNECOK: u32,
     // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.PPCKLBHFCCA)
     pub PPCKLBHFCCA: ::std::vec::Vec<super::OGGELMMFPKP::OGGELMMFPKP>,
     // @@protoc_insertion_point(field:ChenLingFinishBattleCsReq.DDCLCNPONOH)
@@ -58,11 +58,6 @@ impl ChenLingFinishBattleCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDIMKFNECOK",
-            |m: &ChenLingFinishBattleCsReq| { &m.GDIMKFNECOK },
-            |m: &mut ChenLingFinishBattleCsReq| { &mut m.GDIMKFNECOK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_win",
             |m: &ChenLingFinishBattleCsReq| { &m.is_win },
             |m: &mut ChenLingFinishBattleCsReq| { &mut m.is_win },
@@ -71,6 +66,11 @@ impl ChenLingFinishBattleCsReq {
             "IGEHHFIGBAI",
             |m: &ChenLingFinishBattleCsReq| { &m.IGEHHFIGBAI },
             |m: &mut ChenLingFinishBattleCsReq| { &mut m.IGEHHFIGBAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDIMKFNECOK",
+            |m: &ChenLingFinishBattleCsReq| { &m.GDIMKFNECOK },
+            |m: &mut ChenLingFinishBattleCsReq| { &mut m.GDIMKFNECOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "PPCKLBHFCCA",
@@ -101,18 +101,18 @@ impl ::protobuf::Message for ChenLingFinishBattleCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 16 => {
-                    self.GDIMKFNECOK = is.read_uint32()?;
-                },
-                24 => {
                     self.is_win = is.read_bool()?;
                 },
-                32 => {
+                24 => {
                     self.IGEHHFIGBAI = is.read_uint32()?;
                 },
-                58 => {
+                40 => {
+                    self.GDIMKFNECOK = is.read_uint32()?;
+                },
+                74 => {
                     self.PPCKLBHFCCA.push(is.read_message()?);
                 },
-                88 => {
+                104 => {
                     self.DDCLCNPONOH = is.read_uint32()?;
                 },
                 tag => {
@@ -127,21 +127,21 @@ impl ::protobuf::Message for ChenLingFinishBattleCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GDIMKFNECOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.GDIMKFNECOK);
-        }
         if self.is_win != false {
             my_size += 1 + 1;
         }
         if self.IGEHHFIGBAI != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.IGEHHFIGBAI);
+            my_size += ::protobuf::rt::uint32_size(3, self.IGEHHFIGBAI);
+        }
+        if self.GDIMKFNECOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.GDIMKFNECOK);
         }
         for value in &self.PPCKLBHFCCA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.DDCLCNPONOH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DDCLCNPONOH);
+            my_size += ::protobuf::rt::uint32_size(13, self.DDCLCNPONOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for ChenLingFinishBattleCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GDIMKFNECOK != 0 {
-            os.write_uint32(2, self.GDIMKFNECOK)?;
-        }
         if self.is_win != false {
-            os.write_bool(3, self.is_win)?;
+            os.write_bool(2, self.is_win)?;
         }
         if self.IGEHHFIGBAI != 0 {
-            os.write_uint32(4, self.IGEHHFIGBAI)?;
+            os.write_uint32(3, self.IGEHHFIGBAI)?;
+        }
+        if self.GDIMKFNECOK != 0 {
+            os.write_uint32(5, self.GDIMKFNECOK)?;
         }
         for v in &self.PPCKLBHFCCA {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.DDCLCNPONOH != 0 {
-            os.write_uint32(11, self.DDCLCNPONOH)?;
+            os.write_uint32(13, self.DDCLCNPONOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,9 +181,9 @@ impl ::protobuf::Message for ChenLingFinishBattleCsReq {
     }
 
     fn clear(&mut self) {
-        self.GDIMKFNECOK = 0;
         self.is_win = false;
         self.IGEHHFIGBAI = 0;
+        self.GDIMKFNECOK = 0;
         self.PPCKLBHFCCA.clear();
         self.DDCLCNPONOH = 0;
         self.special_fields.clear();
@@ -191,9 +191,9 @@ impl ::protobuf::Message for ChenLingFinishBattleCsReq {
 
     fn default_instance() -> &'static ChenLingFinishBattleCsReq {
         static instance: ChenLingFinishBattleCsReq = ChenLingFinishBattleCsReq {
-            GDIMKFNECOK: 0,
             is_win: false,
             IGEHHFIGBAI: 0,
+            GDIMKFNECOK: 0,
             PPCKLBHFCCA: ::std::vec::Vec::new(),
             DDCLCNPONOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingFinishBattleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChenLingFinishBattleCsReq.proto\x1a\x11OGGELMMFPKP.proto\"\xc8\x01\
-    \n\x19ChenLingFinishBattleCsReq\x12\x20\n\x0bGDIMKFNECOK\x18\x02\x20\x01\
-    (\rR\x0bGDIMKFNECOK\x12\x15\n\x06is_win\x18\x03\x20\x01(\x08R\x05isWin\
-    \x12\x20\n\x0bIGEHHFIGBAI\x18\x04\x20\x01(\rR\x0bIGEHHFIGBAI\x12.\n\x0bP\
-    PCKLBHFCCA\x18\x07\x20\x03(\x0b2\x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\x12\x20\
-    \n\x0bDDCLCNPONOH\x18\x0b\x20\x01(\rR\x0bDDCLCNPONOHb\x06proto3\
+    \n\x19ChenLingFinishBattleCsReq\x12\x15\n\x06is_win\x18\x02\x20\x01(\x08\
+    R\x05isWin\x12\x20\n\x0bIGEHHFIGBAI\x18\x03\x20\x01(\rR\x0bIGEHHFIGBAI\
+    \x12\x20\n\x0bGDIMKFNECOK\x18\x05\x20\x01(\rR\x0bGDIMKFNECOK\x12.\n\x0bP\
+    PCKLBHFCCA\x18\t\x20\x03(\x0b2\x0c.OGGELMMFPKPR\x0bPPCKLBHFCCA\x12\x20\n\
+    \x0bDDCLCNPONOH\x18\r\x20\x01(\rR\x0bDDCLCNPONOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

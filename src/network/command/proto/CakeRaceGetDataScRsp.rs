@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceGetDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.LAJJHAAKGAF)
-    pub LAJJHAAKGAF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.item_value)
-    pub item_value: u32,
     // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.EAHKHGPPLEA)
     pub EAHKHGPPLEA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.JNBEGEOPGFJ)
     pub JNBEGEOPGFJ: u32,
+    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.LAJJHAAKGAF)
+    pub LAJJHAAKGAF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:CakeRaceGetDataScRsp.item_value)
+    pub item_value: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CakeRaceGetDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,25 +59,10 @@ impl CakeRaceGetDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LAJJHAAKGAF",
-            |m: &CakeRaceGetDataScRsp| { &m.LAJJHAAKGAF },
-            |m: &mut CakeRaceGetDataScRsp| { &mut m.LAJJHAAKGAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &CakeRaceGetDataScRsp| { &m.score_id },
             |m: &mut CakeRaceGetDataScRsp| { &mut m.score_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &CakeRaceGetDataScRsp| { &m.retcode },
-            |m: &mut CakeRaceGetDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_value",
-            |m: &CakeRaceGetDataScRsp| { &m.item_value },
-            |m: &mut CakeRaceGetDataScRsp| { &mut m.item_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "EAHKHGPPLEA",
@@ -85,9 +70,24 @@ impl CakeRaceGetDataScRsp {
             |m: &mut CakeRaceGetDataScRsp| { &mut m.EAHKHGPPLEA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &CakeRaceGetDataScRsp| { &m.retcode },
+            |m: &mut CakeRaceGetDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JNBEGEOPGFJ",
             |m: &CakeRaceGetDataScRsp| { &m.JNBEGEOPGFJ },
             |m: &mut CakeRaceGetDataScRsp| { &mut m.JNBEGEOPGFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LAJJHAAKGAF",
+            |m: &CakeRaceGetDataScRsp| { &m.LAJJHAAKGAF },
+            |m: &mut CakeRaceGetDataScRsp| { &mut m.LAJJHAAKGAF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_value",
+            |m: &CakeRaceGetDataScRsp| { &m.item_value },
+            |m: &mut CakeRaceGetDataScRsp| { &mut m.item_value },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CakeRaceGetDataScRsp>(
             "CakeRaceGetDataScRsp",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for CakeRaceGetDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LAJJHAAKGAF)?;
-                },
-                16 => {
-                    self.LAJJHAAKGAF.push(is.read_uint32()?);
-                },
-                40 => {
+                32 => {
                     self.score_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                72 => {
-                    self.item_value = is.read_uint32()?;
-                },
-                114 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.EAHKHGPPLEA)?;
                 },
-                112 => {
+                64 => {
                     self.EAHKHGPPLEA.push(is.read_uint32()?);
                 },
-                120 => {
+                72 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
                     self.JNBEGEOPGFJ = is.read_uint32()?;
+                },
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LAJJHAAKGAF)?;
+                },
+                96 => {
+                    self.LAJJHAAKGAF.push(is.read_uint32()?);
+                },
+                112 => {
+                    self.item_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,19 +143,19 @@ impl ::protobuf::Message for CakeRaceGetDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LAJJHAAKGAF);
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EAHKHGPPLEA);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.item_value);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.EAHKHGPPLEA);
         if self.JNBEGEOPGFJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.JNBEGEOPGFJ);
+            my_size += ::protobuf::rt::uint32_size(10, self.JNBEGEOPGFJ);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.LAJJHAAKGAF);
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.item_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,19 +163,19 @@ impl ::protobuf::Message for CakeRaceGetDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.LAJJHAAKGAF)?;
         if self.score_id != 0 {
-            os.write_uint32(5, self.score_id)?;
+            os.write_uint32(4, self.score_id)?;
         }
+        os.write_repeated_packed_uint32(8, &self.EAHKHGPPLEA)?;
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if self.item_value != 0 {
-            os.write_uint32(9, self.item_value)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.EAHKHGPPLEA)?;
         if self.JNBEGEOPGFJ != 0 {
-            os.write_uint32(15, self.JNBEGEOPGFJ)?;
+            os.write_uint32(10, self.JNBEGEOPGFJ)?;
+        }
+        os.write_repeated_packed_uint32(12, &self.LAJJHAAKGAF)?;
+        if self.item_value != 0 {
+            os.write_uint32(14, self.item_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -194,23 +194,23 @@ impl ::protobuf::Message for CakeRaceGetDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.LAJJHAAKGAF.clear();
         self.score_id = 0;
-        self.retcode = 0;
-        self.item_value = 0;
         self.EAHKHGPPLEA.clear();
+        self.retcode = 0;
         self.JNBEGEOPGFJ = 0;
+        self.LAJJHAAKGAF.clear();
+        self.item_value = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceGetDataScRsp {
         static instance: CakeRaceGetDataScRsp = CakeRaceGetDataScRsp {
-            LAJJHAAKGAF: ::std::vec::Vec::new(),
             score_id: 0,
-            retcode: 0,
-            item_value: 0,
             EAHKHGPPLEA: ::std::vec::Vec::new(),
+            retcode: 0,
             JNBEGEOPGFJ: 0,
+            LAJJHAAKGAF: ::std::vec::Vec::new(),
+            item_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -236,11 +236,11 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceGetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCakeRaceGetDataScRsp.proto\"\xd0\x01\n\x14CakeRaceGetDataScRsp\x12\
-    \x20\n\x0bLAJJHAAKGAF\x18\x02\x20\x03(\rR\x0bLAJJHAAKGAF\x12\x19\n\x08sc\
-    ore_id\x18\x05\x20\x01(\rR\x07scoreId\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12\x1d\n\nitem_value\x18\t\x20\x01(\rR\titemValue\
-    \x12\x20\n\x0bEAHKHGPPLEA\x18\x0e\x20\x03(\rR\x0bEAHKHGPPLEA\x12\x20\n\
-    \x0bJNBEGEOPGFJ\x18\x0f\x20\x01(\rR\x0bJNBEGEOPGFJb\x06proto3\
+    \x19\n\x08score_id\x18\x04\x20\x01(\rR\x07scoreId\x12\x20\n\x0bEAHKHGPPL\
+    EA\x18\x08\x20\x03(\rR\x0bEAHKHGPPLEA\x12\x18\n\x07retcode\x18\t\x20\x01\
+    (\rR\x07retcode\x12\x20\n\x0bJNBEGEOPGFJ\x18\n\x20\x01(\rR\x0bJNBEGEOPGF\
+    J\x12\x20\n\x0bLAJJHAAKGAF\x18\x0c\x20\x03(\rR\x0bLAJJHAAKGAF\x12\x1d\n\
+    \nitem_value\x18\x0e\x20\x01(\rR\titemValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

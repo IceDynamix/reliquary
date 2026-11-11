@@ -59,12 +59,12 @@ pub enum DevelopmentType {
     DevelopmentType_DevelopmentChallengePeak = 14,
     // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DevelopmentRogueTournDivision)
     DevelopmentType_DevelopmentRogueTournDivision = 15,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.H_af7e9cd3)
-    H_af7e9cd3 = 16,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.H_5d00dfec)
-    H_5d00dfec = 17,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.H_529afca3)
-    H_529afca3 = 18,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_6b0783e4)
+    H_6b0783e4 = 16,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_df614e4e)
+    H_df614e4e = 17,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.H_96eca8e0)
+    H_96eca8e0 = 18,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -92,9 +92,9 @@ impl ::protobuf::Enum for DevelopmentType {
             13 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueMagic),
             14 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentChallengePeak),
             15 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision),
-            16 => ::std::option::Option::Some(DevelopmentType::H_af7e9cd3),
-            17 => ::std::option::Option::Some(DevelopmentType::H_5d00dfec),
-            18 => ::std::option::Option::Some(DevelopmentType::H_529afca3),
+            16 => ::std::option::Option::Some(DevelopmentType::H_6b0783e4),
+            17 => ::std::option::Option::Some(DevelopmentType::H_df614e4e),
+            18 => ::std::option::Option::Some(DevelopmentType::H_96eca8e0),
             _ => ::std::option::Option::None
         }
     }
@@ -117,9 +117,9 @@ impl ::protobuf::Enum for DevelopmentType {
             "DevelopmentType_DevelopmentRogueMagic" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueMagic),
             "DevelopmentType_DevelopmentChallengePeak" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentChallengePeak),
             "DevelopmentType_DevelopmentRogueTournDivision" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision),
-            "H_af7e9cd3" => ::std::option::Option::Some(DevelopmentType::H_af7e9cd3),
-            "H_5d00dfec" => ::std::option::Option::Some(DevelopmentType::H_5d00dfec),
-            "H_529afca3" => ::std::option::Option::Some(DevelopmentType::H_529afca3),
+            "H_6b0783e4" => ::std::option::Option::Some(DevelopmentType::H_6b0783e4),
+            "H_df614e4e" => ::std::option::Option::Some(DevelopmentType::H_df614e4e),
+            "H_96eca8e0" => ::std::option::Option::Some(DevelopmentType::H_96eca8e0),
             _ => ::std::option::Option::None
         }
     }
@@ -141,9 +141,9 @@ impl ::protobuf::Enum for DevelopmentType {
         DevelopmentType::DevelopmentType_DevelopmentRogueMagic,
         DevelopmentType::DevelopmentType_DevelopmentChallengePeak,
         DevelopmentType::DevelopmentType_DevelopmentRogueTournDivision,
-        DevelopmentType::H_af7e9cd3,
-        DevelopmentType::H_5d00dfec,
-        DevelopmentType::H_529afca3,
+        DevelopmentType::H_6b0783e4,
+        DevelopmentType::H_df614e4e,
+        DevelopmentType::H_96eca8e0,
     ];
 }
 
@@ -185,8 +185,8 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n)DevelopmentType_DevelopmentRogueTournWeek\x10\x0c\x12)\n%DevelopmentT\
     ype_DevelopmentRogueMagic\x10\r\x12,\n(DevelopmentType_DevelopmentChalle\
     ngePeak\x10\x0e\x121\n-DevelopmentType_DevelopmentRogueTournDivision\x10\
-    \x0f\x12\x0e\n\nH_af7e9cd3\x10\x10\x12\x0e\n\nH_5d00dfec\x10\x11\x12\x0e\
-    \n\nH_529afca3\x10\x12b\x06proto3\
+    \x0f\x12\x0e\n\nH_6b0783e4\x10\x10\x12\x0e\n\nH_df614e4e\x10\x11\x12\x0e\
+    \n\nH_96eca8e0\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

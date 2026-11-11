@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicBattleFailSettleInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.IDCMACCPCBH)
-    pub IDCMACCPCBH: ::protobuf::MessageField<super::EEILAINOLPO::EEILAINOLPO>,
     // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.BFLLJJBHLDF)
     pub BFLLJJBHLDF: ::protobuf::MessageField<super::FKFOIDMNDFG::FKFOIDMNDFG>,
+    // @@protoc_insertion_point(field:RogueMagicBattleFailSettleInfoScNotify.IDCMACCPCBH)
+    pub IDCMACCPCBH: ::protobuf::MessageField<super::EEILAINOLPO::EEILAINOLPO>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicBattleFailSettleInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicBattleFailSettleInfoScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEILAINOLPO::EEILAINOLPO>(
-            "IDCMACCPCBH",
-            |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.IDCMACCPCBH },
-            |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.IDCMACCPCBH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FKFOIDMNDFG::FKFOIDMNDFG>(
             "BFLLJJBHLDF",
             |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.BFLLJJBHLDF },
             |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.BFLLJJBHLDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEILAINOLPO::EEILAINOLPO>(
+            "IDCMACCPCBH",
+            |m: &RogueMagicBattleFailSettleInfoScNotify| { &m.IDCMACCPCBH },
+            |m: &mut RogueMagicBattleFailSettleInfoScNotify| { &mut m.IDCMACCPCBH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicBattleFailSettleInfoScNotify>(
             "RogueMagicBattleFailSettleInfoScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
-                },
-                26 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IDCMACCPCBH.as_ref() {
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IDCMACCPCBH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if let Some(v) = self.BFLLJJBHLDF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RogueMagicBattleFailSettleInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.IDCMACCPCBH.clear();
         self.BFLLJJBHLDF.clear();
+        self.IDCMACCPCBH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicBattleFailSettleInfoScNotify {
         static instance: RogueMagicBattleFailSettleInfoScNotify = RogueMagicBattleFailSettleInfoScNotify {
-            IDCMACCPCBH: ::protobuf::MessageField::none(),
             BFLLJJBHLDF: ::protobuf::MessageField::none(),
+            IDCMACCPCBH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicBattleFailSettleInfoScNoti
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicBattleFailSettleInfoScNotify.proto\x1a\x11EEILAINOLPO.proto\
     \x1a\x11FKFOIDMNDFG.proto\"\x88\x01\n&RogueMagicBattleFailSettleInfoScNo\
-    tify\x12.\n\x0bIDCMACCPCBH\x18\x01\x20\x01(\x0b2\x0c.EEILAINOLPOR\x0bIDC\
-    MACCPCBH\x12.\n\x0bBFLLJJBHLDF\x18\x03\x20\x01(\x0b2\x0c.FKFOIDMNDFGR\
-    \x0bBFLLJJBHLDFb\x06proto3\
+    tify\x12.\n\x0bBFLLJJBHLDF\x18\x07\x20\x01(\x0b2\x0c.FKFOIDMNDFGR\x0bBFL\
+    LJJBHLDF\x12.\n\x0bIDCMACCPCBH\x18\r\x20\x01(\x0b2\x0c.EEILAINOLPOR\x0bI\
+    DCMACCPCBHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

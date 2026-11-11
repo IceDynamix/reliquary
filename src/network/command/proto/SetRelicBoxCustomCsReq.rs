@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRelicBoxCustomCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetRelicBoxCustomCsReq.JKKFJHKHFPL)
-    pub JKKFJHKHFPL: ::std::vec::Vec<super::BEBNHPCBMPF::BEBNHPCBMPF>,
     // @@protoc_insertion_point(field:SetRelicBoxCustomCsReq.EBDIOJPDJIH)
     pub EBDIOJPDJIH: ::protobuf::MessageField<super::BEBNHPCBMPF::BEBNHPCBMPF>,
+    // @@protoc_insertion_point(field:SetRelicBoxCustomCsReq.JKKFJHKHFPL)
+    pub JKKFJHKHFPL: ::std::vec::Vec<super::BEBNHPCBMPF::BEBNHPCBMPF>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRelicBoxCustomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SetRelicBoxCustomCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JKKFJHKHFPL",
-            |m: &SetRelicBoxCustomCsReq| { &m.JKKFJHKHFPL },
-            |m: &mut SetRelicBoxCustomCsReq| { &mut m.JKKFJHKHFPL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BEBNHPCBMPF::BEBNHPCBMPF>(
             "EBDIOJPDJIH",
             |m: &SetRelicBoxCustomCsReq| { &m.EBDIOJPDJIH },
             |m: &mut SetRelicBoxCustomCsReq| { &mut m.EBDIOJPDJIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JKKFJHKHFPL",
+            |m: &SetRelicBoxCustomCsReq| { &m.JKKFJHKHFPL },
+            |m: &mut SetRelicBoxCustomCsReq| { &mut m.JKKFJHKHFPL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRelicBoxCustomCsReq>(
             "SetRelicBoxCustomCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetRelicBoxCustomCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.JKKFJHKHFPL.push(is.read_message()?);
-                },
-                90 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.EBDIOJPDJIH)?;
+                },
+                106 => {
+                    self.JKKFJHKHFPL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,26 +97,26 @@ impl ::protobuf::Message for SetRelicBoxCustomCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JKKFJHKHFPL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if let Some(v) = self.EBDIOJPDJIH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.JKKFJHKHFPL {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JKKFJHKHFPL {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if let Some(v) = self.EBDIOJPDJIH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
+        for v in &self.JKKFJHKHFPL {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SetRelicBoxCustomCsReq {
     }
 
     fn clear(&mut self) {
-        self.JKKFJHKHFPL.clear();
         self.EBDIOJPDJIH.clear();
+        self.JKKFJHKHFPL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRelicBoxCustomCsReq {
         static instance: SetRelicBoxCustomCsReq = SetRelicBoxCustomCsReq {
-            JKKFJHKHFPL: ::std::vec::Vec::new(),
             EBDIOJPDJIH: ::protobuf::MessageField::none(),
+            JKKFJHKHFPL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for SetRelicBoxCustomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetRelicBoxCustomCsReq.proto\x1a\x11BEBNHPCBMPF.proto\"x\n\x16SetR\
-    elicBoxCustomCsReq\x12.\n\x0bJKKFJHKHFPL\x18\x08\x20\x03(\x0b2\x0c.BEBNH\
-    PCBMPFR\x0bJKKFJHKHFPL\x12.\n\x0bEBDIOJPDJIH\x18\x0b\x20\x01(\x0b2\x0c.B\
-    EBNHPCBMPFR\x0bEBDIOJPDJIHb\x06proto3\
+    elicBoxCustomCsReq\x12.\n\x0bEBDIOJPDJIH\x18\x07\x20\x01(\x0b2\x0c.BEBNH\
+    PCBMPFR\x0bEBDIOJPDJIH\x12.\n\x0bJKKFJHKHFPL\x18\r\x20\x03(\x0b2\x0c.BEB\
+    NHPCBMPFR\x0bJKKFJHKHFPLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnTakeExtraHcoinScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnTakeExtraHcoinScNotify.LHGKNPENJDO)
-    pub LHGKNPENJDO: u32,
     // @@protoc_insertion_point(field:PlayerReturnTakeExtraHcoinScNotify.EAJKAIKEHOL)
     pub EAJKAIKEHOL: bool,
+    // @@protoc_insertion_point(field:PlayerReturnTakeExtraHcoinScNotify.LHGKNPENJDO)
+    pub LHGKNPENJDO: u32,
     // @@protoc_insertion_point(field:PlayerReturnTakeExtraHcoinScNotify.ONAEMDLNJDA)
     pub ONAEMDLNJDA: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PlayerReturnTakeExtraHcoinScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHGKNPENJDO",
-            |m: &PlayerReturnTakeExtraHcoinScNotify| { &m.LHGKNPENJDO },
-            |m: &mut PlayerReturnTakeExtraHcoinScNotify| { &mut m.LHGKNPENJDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "EAJKAIKEHOL",
             |m: &PlayerReturnTakeExtraHcoinScNotify| { &m.EAJKAIKEHOL },
             |m: &mut PlayerReturnTakeExtraHcoinScNotify| { &mut m.EAJKAIKEHOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LHGKNPENJDO",
+            |m: &PlayerReturnTakeExtraHcoinScNotify| { &m.LHGKNPENJDO },
+            |m: &mut PlayerReturnTakeExtraHcoinScNotify| { &mut m.LHGKNPENJDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ONAEMDLNJDA",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                40 => {
+                    self.EAJKAIKEHOL = is.read_bool()?;
+                },
                 48 => {
                     self.LHGKNPENJDO = is.read_uint32()?;
                 },
                 64 => {
-                    self.EAJKAIKEHOL = is.read_bool()?;
-                },
-                88 => {
                     self.ONAEMDLNJDA = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LHGKNPENJDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LHGKNPENJDO);
-        }
         if self.EAJKAIKEHOL != false {
             my_size += 1 + 1;
         }
+        if self.LHGKNPENJDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LHGKNPENJDO);
+        }
         if self.ONAEMDLNJDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ONAEMDLNJDA);
+            my_size += ::protobuf::rt::uint32_size(8, self.ONAEMDLNJDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.EAJKAIKEHOL != false {
+            os.write_bool(5, self.EAJKAIKEHOL)?;
+        }
         if self.LHGKNPENJDO != 0 {
             os.write_uint32(6, self.LHGKNPENJDO)?;
         }
-        if self.EAJKAIKEHOL != false {
-            os.write_bool(8, self.EAJKAIKEHOL)?;
-        }
         if self.ONAEMDLNJDA != 0 {
-            os.write_uint32(11, self.ONAEMDLNJDA)?;
+            os.write_uint32(8, self.ONAEMDLNJDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PlayerReturnTakeExtraHcoinScNotify {
     }
 
     fn clear(&mut self) {
-        self.LHGKNPENJDO = 0;
         self.EAJKAIKEHOL = false;
+        self.LHGKNPENJDO = 0;
         self.ONAEMDLNJDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnTakeExtraHcoinScNotify {
         static instance: PlayerReturnTakeExtraHcoinScNotify = PlayerReturnTakeExtraHcoinScNotify {
-            LHGKNPENJDO: 0,
             EAJKAIKEHOL: false,
+            LHGKNPENJDO: 0,
             ONAEMDLNJDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakeExtraHcoinScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(PlayerReturnTakeExtraHcoinScNotify.proto\"\x8a\x01\n\"PlayerReturnTak\
-    eExtraHcoinScNotify\x12\x20\n\x0bLHGKNPENJDO\x18\x06\x20\x01(\rR\x0bLHGK\
-    NPENJDO\x12\x20\n\x0bEAJKAIKEHOL\x18\x08\x20\x01(\x08R\x0bEAJKAIKEHOL\
-    \x12\x20\n\x0bONAEMDLNJDA\x18\x0b\x20\x01(\rR\x0bONAEMDLNJDAb\x06proto3\
+    eExtraHcoinScNotify\x12\x20\n\x0bEAJKAIKEHOL\x18\x05\x20\x01(\x08R\x0bEA\
+    JKAIKEHOL\x12\x20\n\x0bLHGKNPENJDO\x18\x06\x20\x01(\rR\x0bLHGKNPENJDO\
+    \x12\x20\n\x0bONAEMDLNJDA\x18\x08\x20\x01(\rR\x0bONAEMDLNJDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

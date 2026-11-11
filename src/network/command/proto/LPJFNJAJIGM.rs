@@ -79,10 +79,10 @@ impl ::protobuf::Message for LPJFNJAJIGM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.FIEOPKNBHKJ = is.read_uint64()?;
                 },
-                120 => {
+                88 => {
                     self.ONMDDKGCEHK = is.read_uint64()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for LPJFNJAJIGM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.FIEOPKNBHKJ != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.FIEOPKNBHKJ);
+            my_size += ::protobuf::rt::uint64_size(5, self.FIEOPKNBHKJ);
         }
         if self.ONMDDKGCEHK != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.ONMDDKGCEHK);
+            my_size += ::protobuf::rt::uint64_size(11, self.ONMDDKGCEHK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for LPJFNJAJIGM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.FIEOPKNBHKJ != 0 {
-            os.write_uint64(13, self.FIEOPKNBHKJ)?;
+            os.write_uint64(5, self.FIEOPKNBHKJ)?;
         }
         if self.ONMDDKGCEHK != 0 {
-            os.write_uint64(15, self.ONMDDKGCEHK)?;
+            os.write_uint64(11, self.ONMDDKGCEHK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for LPJFNJAJIGM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11LPJFNJAJIGM.proto\"Q\n\x0bLPJFNJAJIGM\x12\x20\n\x0bFIEOPKNBHKJ\x18\
-    \r\x20\x01(\x04R\x0bFIEOPKNBHKJ\x12\x20\n\x0bONMDDKGCEHK\x18\x0f\x20\x01\
-    (\x04R\x0bONMDDKGCEHKb\x06proto3\
+    \x05\x20\x01(\x04R\x0bFIEOPKNBHKJ\x12\x20\n\x0bONMDDKGCEHK\x18\x0b\x20\
+    \x01(\x04R\x0bONMDDKGCEHKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -79,7 +79,7 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                104 => {
                     self.rogue_dialogue_event_id = is.read_uint32()?;
                 },
                 112 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.rogue_dialogue_event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.rogue_dialogue_event_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.rogue_dialogue_event_id);
         }
         if self.HONCDMKPBEG != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.HONCDMKPBEG);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SelectChessRogueSubStoryCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.rogue_dialogue_event_id != 0 {
-            os.write_uint32(9, self.rogue_dialogue_event_id)?;
+            os.write_uint32(13, self.rogue_dialogue_event_id)?;
         }
         if self.HONCDMKPBEG != 0 {
             os.write_uint32(14, self.HONCDMKPBEG)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SelectChessRogueSubStoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SelectChessRogueSubStoryCsReq.proto\"x\n\x1dSelectChessRogueSubStoryC\
-    sReq\x125\n\x17rogue_dialogue_event_id\x18\t\x20\x01(\rR\x14rogueDialogu\
+    sReq\x125\n\x17rogue_dialogue_event_id\x18\r\x20\x01(\rR\x14rogueDialogu\
     eEventId\x12\x20\n\x0bHONCDMKPBEG\x18\x0e\x20\x01(\rR\x0bHONCDMKPBEGb\
     \x06proto3\
 ";

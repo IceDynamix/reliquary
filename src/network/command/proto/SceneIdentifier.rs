@@ -30,10 +30,10 @@ pub struct SceneIdentifier {
     // message fields
     // @@protoc_insertion_point(field:SceneIdentifier.content_id)
     pub content_id: u32,
-    // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
-    pub floor_id: u32,
     // @@protoc_insertion_point(field:SceneIdentifier.game_story_line_id)
     pub game_story_line_id: u32,
+    // @@protoc_insertion_point(field:SceneIdentifier.floor_id)
+    pub floor_id: u32,
     // message oneof groups
     pub teleport_nigger: ::std::option::Option<scene_identifier::Teleport_nigger>,
     // special fields
@@ -52,7 +52,7 @@ impl SceneIdentifier {
         ::std::default::Default::default()
     }
 
-    // .OENPFHDKPNJ MDAIDPPKOPO = 1733;
+    // .OENPFHDKPNJ MDAIDPPKOPO = 888;
 
     pub fn MDAIDPPKOPO(&self) -> &super::OENPFHDKPNJ::OENPFHDKPNJ {
         match self.teleport_nigger {
@@ -110,14 +110,14 @@ impl SceneIdentifier {
             |m: &mut SceneIdentifier| { &mut m.content_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "floor_id",
-            |m: &SceneIdentifier| { &m.floor_id },
-            |m: &mut SceneIdentifier| { &mut m.floor_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "game_story_line_id",
             |m: &SceneIdentifier| { &m.game_story_line_id },
             |m: &mut SceneIdentifier| { &mut m.game_story_line_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "floor_id",
+            |m: &SceneIdentifier| { &m.floor_id },
+            |m: &mut SceneIdentifier| { &mut m.floor_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OENPFHDKPNJ::OENPFHDKPNJ>(
             "MDAIDPPKOPO",
@@ -145,16 +145,16 @@ impl ::protobuf::Message for SceneIdentifier {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.content_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                96 => {
+                88 => {
                     self.game_story_line_id = is.read_uint32()?;
                 },
-                13866 => {
+                104 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                7106 => {
                     self.teleport_nigger = ::std::option::Option::Some(scene_identifier::Teleport_nigger::MDAIDPPKOPO(is.read_message()?));
                 },
                 tag => {
@@ -170,13 +170,13 @@ impl ::protobuf::Message for SceneIdentifier {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.content_id);
-        }
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.content_id);
         }
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.game_story_line_id);
+        }
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.floor_id);
         }
         if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
             match v {
@@ -193,18 +193,18 @@ impl ::protobuf::Message for SceneIdentifier {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.content_id != 0 {
-            os.write_uint32(3, self.content_id)?;
-        }
-        if self.floor_id != 0 {
-            os.write_uint32(7, self.floor_id)?;
+            os.write_uint32(7, self.content_id)?;
         }
         if self.game_story_line_id != 0 {
-            os.write_uint32(12, self.game_story_line_id)?;
+            os.write_uint32(11, self.game_story_line_id)?;
+        }
+        if self.floor_id != 0 {
+            os.write_uint32(13, self.floor_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.teleport_nigger {
             match v {
                 &scene_identifier::Teleport_nigger::MDAIDPPKOPO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1733, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(888, v, os)?;
                 },
             };
         }
@@ -226,8 +226,8 @@ impl ::protobuf::Message for SceneIdentifier {
 
     fn clear(&mut self) {
         self.content_id = 0;
-        self.floor_id = 0;
         self.game_story_line_id = 0;
+        self.floor_id = 0;
         self.teleport_nigger = ::std::option::Option::None;
         self.special_fields.clear();
     }
@@ -235,8 +235,8 @@ impl ::protobuf::Message for SceneIdentifier {
     fn default_instance() -> &'static SceneIdentifier {
         static instance: SceneIdentifier = SceneIdentifier {
             content_id: 0,
-            floor_id: 0,
             game_story_line_id: 0,
+            floor_id: 0,
             teleport_nigger: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -291,11 +291,11 @@ pub mod scene_identifier {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SceneIdentifier.proto\x1a\x11OENPFHDKPNJ.proto\"\xbe\x01\n\x0fScen\
-    eIdentifier\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\tcontentId\x12\x19\
-    \n\x08floor_id\x18\x07\x20\x01(\rR\x07floorId\x12+\n\x12game_story_line_\
-    id\x18\x0c\x20\x01(\rR\x0fgameStoryLineId\x121\n\x0bMDAIDPPKOPO\x18\xc5\
-    \r\x20\x01(\x0b2\x0c.OENPFHDKPNJH\0R\x0bMDAIDPPKOPOB\x11\n\x0fteleport_n\
-    iggerb\x06proto3\
+    eIdentifier\x12\x1d\n\ncontent_id\x18\x07\x20\x01(\rR\tcontentId\x12+\n\
+    \x12game_story_line_id\x18\x0b\x20\x01(\rR\x0fgameStoryLineId\x12\x19\n\
+    \x08floor_id\x18\r\x20\x01(\rR\x07floorId\x121\n\x0bMDAIDPPKOPO\x18\xf8\
+    \x06\x20\x01(\x0b2\x0c.OENPFHDKPNJH\0R\x0bMDAIDPPKOPOB\x11\n\x0fteleport\
+    _niggerb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for IAIDGGGMBPJ {
                 56 => {
                     self.DLODAKOHFOP = is.read_uint32()?;
                 },
-                64 => {
+                120 => {
                     self.stamina = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for IAIDGGGMBPJ {
             my_size += ::protobuf::rt::uint32_size(7, self.DLODAKOHFOP);
         }
         if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.stamina);
+            my_size += ::protobuf::rt::uint32_size(15, self.stamina);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for IAIDGGGMBPJ {
             os.write_uint32(7, self.DLODAKOHFOP)?;
         }
         if self.stamina != 0 {
-            os.write_uint32(8, self.stamina)?;
+            os.write_uint32(15, self.stamina)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for IAIDGGGMBPJ {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11IAIDGGGMBPJ.proto\"I\n\x0bIAIDGGGMBPJ\x12\x20\n\x0bDLODAKOHFOP\x18\
-    \x07\x20\x01(\rR\x0bDLODAKOHFOP\x12\x18\n\x07stamina\x18\x08\x20\x01(\rR\
+    \x07\x20\x01(\rR\x0bDLODAKOHFOP\x12\x18\n\x07stamina\x18\x0f\x20\x01(\rR\
     \x07staminab\x06proto3\
 ";
 

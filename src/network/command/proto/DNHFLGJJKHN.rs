@@ -79,7 +79,7 @@ impl ::protobuf::Message for DNHFLGJJKHN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     self.BECJDIGOOOF.push(is.read_message()?);
                 },
                 90 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for DNHFLGJJKHN {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.BECJDIGOOOF {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_repeated_packed_uint64(11, &self.IKJOGIDIBPK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DNHFLGJJKHN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DNHFLGJJKHN.proto\x1a\x11NMEGIPHFFDA.proto\"_\n\x0bDNHFLGJJKHN\x12\
-    .\n\x0bBECJDIGOOOF\x18\n\x20\x03(\x0b2\x0c.NMEGIPHFFDAR\x0bBECJDIGOOOF\
+    .\n\x0bBECJDIGOOOF\x18\x08\x20\x03(\x0b2\x0c.NMEGIPHFFDAR\x0bBECJDIGOOOF\
     \x12\x20\n\x0bIKJOGIDIBPK\x18\x0b\x20\x03(\x04R\x0bIKJOGIDIBPKb\x06proto\
     3\
 ";

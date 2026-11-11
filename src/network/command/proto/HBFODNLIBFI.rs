@@ -30,12 +30,12 @@ pub struct HBFODNLIBFI {
     // message fields
     // @@protoc_insertion_point(field:HBFODNLIBFI.ECGDECADBDO)
     pub ECGDECADBDO: u32,
-    // @@protoc_insertion_point(field:HBFODNLIBFI.JENKDACFCDO)
-    pub JENKDACFCDO: u32,
     // @@protoc_insertion_point(field:HBFODNLIBFI.JALHKMEOOPN)
     pub JALHKMEOOPN: u32,
     // @@protoc_insertion_point(field:HBFODNLIBFI.AHDCGHABALN)
     pub AHDCGHABALN: bool,
+    // @@protoc_insertion_point(field:HBFODNLIBFI.JENKDACFCDO)
+    pub JENKDACFCDO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HBFODNLIBFI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl HBFODNLIBFI {
             |m: &mut HBFODNLIBFI| { &mut m.ECGDECADBDO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JENKDACFCDO",
-            |m: &HBFODNLIBFI| { &m.JENKDACFCDO },
-            |m: &mut HBFODNLIBFI| { &mut m.JENKDACFCDO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JALHKMEOOPN",
             |m: &HBFODNLIBFI| { &m.JALHKMEOOPN },
             |m: &mut HBFODNLIBFI| { &mut m.JALHKMEOOPN },
@@ -74,6 +69,11 @@ impl HBFODNLIBFI {
             "AHDCGHABALN",
             |m: &HBFODNLIBFI| { &m.AHDCGHABALN },
             |m: &mut HBFODNLIBFI| { &mut m.AHDCGHABALN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JENKDACFCDO",
+            |m: &HBFODNLIBFI| { &m.JENKDACFCDO },
+            |m: &mut HBFODNLIBFI| { &mut m.JENKDACFCDO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HBFODNLIBFI>(
             "HBFODNLIBFI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for HBFODNLIBFI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                32 => {
                     self.ECGDECADBDO = is.read_uint32()?;
                 },
-                88 => {
-                    self.JENKDACFCDO = is.read_uint32()?;
-                },
-                112 => {
+                64 => {
                     self.JALHKMEOOPN = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
                     self.AHDCGHABALN = is.read_bool()?;
+                },
+                104 => {
+                    self.JENKDACFCDO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for HBFODNLIBFI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.ECGDECADBDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ECGDECADBDO);
-        }
-        if self.JENKDACFCDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.JENKDACFCDO);
+            my_size += ::protobuf::rt::uint32_size(4, self.ECGDECADBDO);
         }
         if self.JALHKMEOOPN != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JALHKMEOOPN);
+            my_size += ::protobuf::rt::uint32_size(8, self.JALHKMEOOPN);
         }
         if self.AHDCGHABALN != false {
             my_size += 1 + 1;
+        }
+        if self.JENKDACFCDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JENKDACFCDO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for HBFODNLIBFI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.ECGDECADBDO != 0 {
-            os.write_uint32(9, self.ECGDECADBDO)?;
-        }
-        if self.JENKDACFCDO != 0 {
-            os.write_uint32(11, self.JENKDACFCDO)?;
+            os.write_uint32(4, self.ECGDECADBDO)?;
         }
         if self.JALHKMEOOPN != 0 {
-            os.write_uint32(14, self.JALHKMEOOPN)?;
+            os.write_uint32(8, self.JALHKMEOOPN)?;
         }
         if self.AHDCGHABALN != false {
-            os.write_bool(15, self.AHDCGHABALN)?;
+            os.write_bool(9, self.AHDCGHABALN)?;
+        }
+        if self.JENKDACFCDO != 0 {
+            os.write_uint32(13, self.JENKDACFCDO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for HBFODNLIBFI {
 
     fn clear(&mut self) {
         self.ECGDECADBDO = 0;
-        self.JENKDACFCDO = 0;
         self.JALHKMEOOPN = 0;
         self.AHDCGHABALN = false;
+        self.JENKDACFCDO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HBFODNLIBFI {
         static instance: HBFODNLIBFI = HBFODNLIBFI {
             ECGDECADBDO: 0,
-            JENKDACFCDO: 0,
             JALHKMEOOPN: 0,
             AHDCGHABALN: false,
+            JENKDACFCDO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for HBFODNLIBFI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HBFODNLIBFI.proto\"\x95\x01\n\x0bHBFODNLIBFI\x12\x20\n\x0bECGDECAD\
-    BDO\x18\t\x20\x01(\rR\x0bECGDECADBDO\x12\x20\n\x0bJENKDACFCDO\x18\x0b\
-    \x20\x01(\rR\x0bJENKDACFCDO\x12\x20\n\x0bJALHKMEOOPN\x18\x0e\x20\x01(\rR\
-    \x0bJALHKMEOOPN\x12\x20\n\x0bAHDCGHABALN\x18\x0f\x20\x01(\x08R\x0bAHDCGH\
-    ABALNb\x06proto3\
+    BDO\x18\x04\x20\x01(\rR\x0bECGDECADBDO\x12\x20\n\x0bJALHKMEOOPN\x18\x08\
+    \x20\x01(\rR\x0bJALHKMEOOPN\x12\x20\n\x0bAHDCGHABALN\x18\t\x20\x01(\x08R\
+    \x0bAHDCGHABALN\x12\x20\n\x0bJENKDACFCDO\x18\r\x20\x01(\rR\x0bJENKDACFCD\
+    Ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

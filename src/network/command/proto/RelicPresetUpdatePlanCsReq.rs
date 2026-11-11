@@ -48,56 +48,7 @@ impl RelicPresetUpdatePlanCsReq {
         ::std::default::Default::default()
     }
 
-    // .HPPOINFLEPJ relic_list = 4;
-
-    pub fn relic_list(&self) -> &super::HPPOINFLEPJ::HPPOINFLEPJ {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v)) => v,
-            _ => <super::HPPOINFLEPJ::HPPOINFLEPJ as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_relic_list(&mut self) {
-        self.KKNBOACNCON = ::std::option::Option::None;
-    }
-
-    pub fn has_relic_list(&self) -> bool {
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_relic_list(&mut self, v: super::HPPOINFLEPJ::HPPOINFLEPJ) {
-        self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_relic_list(&mut self) -> &mut super::HPPOINFLEPJ::HPPOINFLEPJ {
-        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(_)) = self.KKNBOACNCON {
-        } else {
-            self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(super::HPPOINFLEPJ::HPPOINFLEPJ::new()));
-        }
-        match self.KKNBOACNCON {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_relic_list(&mut self) -> super::HPPOINFLEPJ::HPPOINFLEPJ {
-        if self.has_relic_list() {
-            match self.KKNBOACNCON.take() {
-                ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::HPPOINFLEPJ::HPPOINFLEPJ::new()
-        }
-    }
-
-    // string name = 8;
+    // string name = 3;
 
     pub fn name(&self) -> &str {
         match self.KKNBOACNCON {
@@ -146,6 +97,55 @@ impl RelicPresetUpdatePlanCsReq {
         }
     }
 
+    // .HPPOINFLEPJ relic_list = 8;
+
+    pub fn relic_list(&self) -> &super::HPPOINFLEPJ::HPPOINFLEPJ {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v)) => v,
+            _ => <super::HPPOINFLEPJ::HPPOINFLEPJ as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_relic_list(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
+    }
+
+    pub fn has_relic_list(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_relic_list(&mut self, v: super::HPPOINFLEPJ::HPPOINFLEPJ) {
+        self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_relic_list(&mut self) -> &mut super::HPPOINFLEPJ::HPPOINFLEPJ {
+        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(_)) = self.KKNBOACNCON {
+        } else {
+            self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(super::HPPOINFLEPJ::HPPOINFLEPJ::new()));
+        }
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_relic_list(&mut self) -> super::HPPOINFLEPJ::HPPOINFLEPJ {
+        if self.has_relic_list() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HPPOINFLEPJ::HPPOINFLEPJ::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
@@ -154,18 +154,18 @@ impl RelicPresetUpdatePlanCsReq {
             |m: &RelicPresetUpdatePlanCsReq| { &m.unique_id },
             |m: &mut RelicPresetUpdatePlanCsReq| { &mut m.unique_id },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
+            "name",
+            RelicPresetUpdatePlanCsReq::has_name,
+            RelicPresetUpdatePlanCsReq::name,
+            RelicPresetUpdatePlanCsReq::set_name,
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HPPOINFLEPJ::HPPOINFLEPJ>(
             "relic_list",
             RelicPresetUpdatePlanCsReq::has_relic_list,
             RelicPresetUpdatePlanCsReq::relic_list,
             RelicPresetUpdatePlanCsReq::mut_relic_list,
             RelicPresetUpdatePlanCsReq::set_relic_list,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
-            "name",
-            RelicPresetUpdatePlanCsReq::has_name,
-            RelicPresetUpdatePlanCsReq::name,
-            RelicPresetUpdatePlanCsReq::set_name,
         ));
         oneofs.push(relic_preset_update_plan_cs_req::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicPresetUpdatePlanCsReq>(
@@ -186,14 +186,14 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                96 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                34 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(is.read_message()?));
+                26 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(is.read_string()?));
                 },
                 66 => {
-                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(is.read_string()?));
+                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -208,16 +208,16 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.unique_id);
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
+                    my_size += ::protobuf::rt::string_size(3, &v);
+                },
                 &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
-                &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(8, &v);
                 },
             };
         }
@@ -228,15 +228,15 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(13, self.unique_id)?;
+            os.write_uint32(12, self.unique_id)?;
         }
         if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-                },
                 &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
-                    os.write_string(8, v)?;
+                    os.write_string(3, v)?;
+                },
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
             };
         }
@@ -297,10 +297,10 @@ pub mod relic_preset_update_plan_cs_req {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:RelicPresetUpdatePlanCsReq.KKNBOACNCON)
     pub enum KKNBOACNCON {
-        // @@protoc_insertion_point(oneof_field:RelicPresetUpdatePlanCsReq.relic_list)
-        RelicList(super::super::HPPOINFLEPJ::HPPOINFLEPJ),
         // @@protoc_insertion_point(oneof_field:RelicPresetUpdatePlanCsReq.name)
         Name(::std::string::String),
+        // @@protoc_insertion_point(oneof_field:RelicPresetUpdatePlanCsReq.relic_list)
+        RelicList(super::super::HPPOINFLEPJ::HPPOINFLEPJ),
     }
 
     impl ::protobuf::Oneof for KKNBOACNCON {
@@ -322,10 +322,10 @@ pub mod relic_preset_update_plan_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RelicPresetUpdatePlanCsReq.proto\x1a\x11HPPOINFLEPJ.proto\"\x8d\
-    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\r\x20\x01(\
-    \rR\x08uniqueId\x12-\n\nrelic_list\x18\x04\x20\x01(\x0b2\x0c.HPPOINFLEPJ\
-    H\0R\trelicList\x12\x14\n\x04name\x18\x08\x20\x01(\tH\0R\x04nameB\r\n\
-    \x0bKKNBOACNCONb\x06proto3\
+    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\x0c\x20\
+    \x01(\rR\x08uniqueId\x12\x14\n\x04name\x18\x03\x20\x01(\tH\0R\x04name\
+    \x12-\n\nrelic_list\x18\x08\x20\x01(\x0b2\x0c.HPPOINFLEPJH\0R\trelicList\
+    B\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyData {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyData.train_party_info)
-    pub train_party_info: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
+    // @@protoc_insertion_point(field:TrainPartyData.record_id)
+    pub record_id: u32,
     // @@protoc_insertion_point(field:TrainPartyData.LNMFDPFOKFF)
     pub LNMFDPFOKFF: bool,
     // @@protoc_insertion_point(field:TrainPartyData.unlock_area_num)
     pub unlock_area_num: u32,
-    // @@protoc_insertion_point(field:TrainPartyData.record_id)
-    pub record_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyData.train_party_info)
+    pub train_party_info: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
     // @@protoc_insertion_point(field:TrainPartyData.passenger_info)
     pub passenger_info: ::protobuf::MessageField<super::TrainPartyPassengerInfo::TrainPartyPassengerInfo>,
     // @@protoc_insertion_point(field:TrainPartyData.HCJJPLKELGC)
@@ -59,10 +59,10 @@ impl TrainPartyData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyInfo::TrainPartyInfo>(
-            "train_party_info",
-            |m: &TrainPartyData| { &m.train_party_info },
-            |m: &mut TrainPartyData| { &mut m.train_party_info },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "record_id",
+            |m: &TrainPartyData| { &m.record_id },
+            |m: &mut TrainPartyData| { &mut m.record_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LNMFDPFOKFF",
@@ -74,10 +74,10 @@ impl TrainPartyData {
             |m: &TrainPartyData| { &m.unlock_area_num },
             |m: &mut TrainPartyData| { &mut m.unlock_area_num },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "record_id",
-            |m: &TrainPartyData| { &m.record_id },
-            |m: &mut TrainPartyData| { &mut m.record_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyInfo::TrainPartyInfo>(
+            "train_party_info",
+            |m: &TrainPartyData| { &m.train_party_info },
+            |m: &mut TrainPartyData| { &mut m.train_party_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyPassengerInfo::TrainPartyPassengerInfo>(
             "passenger_info",
@@ -107,19 +107,19 @@ impl ::protobuf::Message for TrainPartyData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_info)?;
-                },
-                40 => {
-                    self.LNMFDPFOKFF = is.read_bool()?;
-                },
-                48 => {
-                    self.unlock_area_num = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.record_id = is.read_uint32()?;
                 },
-                106 => {
+                16 => {
+                    self.LNMFDPFOKFF = is.read_bool()?;
+                },
+                40 => {
+                    self.unlock_area_num = is.read_uint32()?;
+                },
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.train_party_info)?;
+                },
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.passenger_info)?;
                 },
                 122 => {
@@ -137,18 +137,18 @@ impl ::protobuf::Message for TrainPartyData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.train_party_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.record_id);
         }
         if self.LNMFDPFOKFF != false {
             my_size += 1 + 1;
         }
         if self.unlock_area_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.unlock_area_num);
+            my_size += ::protobuf::rt::uint32_size(5, self.unlock_area_num);
         }
-        if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.record_id);
+        if let Some(v) = self.train_party_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.passenger_info.as_ref() {
             let len = v.compute_size();
@@ -164,20 +164,20 @@ impl ::protobuf::Message for TrainPartyData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.train_party_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if self.record_id != 0 {
+            os.write_uint32(1, self.record_id)?;
         }
         if self.LNMFDPFOKFF != false {
-            os.write_bool(5, self.LNMFDPFOKFF)?;
+            os.write_bool(2, self.LNMFDPFOKFF)?;
         }
         if self.unlock_area_num != 0 {
-            os.write_uint32(6, self.unlock_area_num)?;
+            os.write_uint32(5, self.unlock_area_num)?;
         }
-        if self.record_id != 0 {
-            os.write_uint32(11, self.record_id)?;
+        if let Some(v) = self.train_party_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if let Some(v) = self.passenger_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if let Some(v) = self.HCJJPLKELGC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -199,10 +199,10 @@ impl ::protobuf::Message for TrainPartyData {
     }
 
     fn clear(&mut self) {
-        self.train_party_info.clear();
+        self.record_id = 0;
         self.LNMFDPFOKFF = false;
         self.unlock_area_num = 0;
-        self.record_id = 0;
+        self.train_party_info.clear();
         self.passenger_info.clear();
         self.HCJJPLKELGC.clear();
         self.special_fields.clear();
@@ -210,10 +210,10 @@ impl ::protobuf::Message for TrainPartyData {
 
     fn default_instance() -> &'static TrainPartyData {
         static instance: TrainPartyData = TrainPartyData {
-            train_party_info: ::protobuf::MessageField::none(),
+            record_id: 0,
             LNMFDPFOKFF: false,
             unlock_area_num: 0,
-            record_id: 0,
+            train_party_info: ::protobuf::MessageField::none(),
             passenger_info: ::protobuf::MessageField::none(),
             HCJJPLKELGC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -242,13 +242,13 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyData {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14TrainPartyData.proto\x1a\x11EPHKIEHONGB.proto\x1a\x14TrainPartyInf\
     o.proto\x1a\x1dTrainPartyPassengerInfo.proto\"\xa3\x02\n\x0eTrainPartyDa\
-    ta\x129\n\x10train_party_info\x18\x02\x20\x01(\x0b2\x0f.TrainPartyInfoR\
-    \x0etrainPartyInfo\x12\x20\n\x0bLNMFDPFOKFF\x18\x05\x20\x01(\x08R\x0bLNM\
-    FDPFOKFF\x12&\n\x0funlock_area_num\x18\x06\x20\x01(\rR\runlockAreaNum\
-    \x12\x1b\n\trecord_id\x18\x0b\x20\x01(\rR\x08recordId\x12?\n\x0epassenge\
-    r_info\x18\r\x20\x01(\x0b2\x18.TrainPartyPassengerInfoR\rpassengerInfo\
-    \x12.\n\x0bHCJJPLKELGC\x18\x0f\x20\x01(\x0b2\x0c.EPHKIEHONGBR\x0bHCJJPLK\
-    ELGCb\x06proto3\
+    ta\x12\x1b\n\trecord_id\x18\x01\x20\x01(\rR\x08recordId\x12\x20\n\x0bLNM\
+    FDPFOKFF\x18\x02\x20\x01(\x08R\x0bLNMFDPFOKFF\x12&\n\x0funlock_area_num\
+    \x18\x05\x20\x01(\rR\runlockAreaNum\x129\n\x10train_party_info\x18\t\x20\
+    \x01(\x0b2\x0f.TrainPartyInfoR\x0etrainPartyInfo\x12?\n\x0epassenger_inf\
+    o\x18\x0b\x20\x01(\x0b2\x18.TrainPartyPassengerInfoR\rpassengerInfo\x12.\
+    \n\x0bHCJJPLKELGC\x18\x0f\x20\x01(\x0b2\x0c.EPHKIEHONGBR\x0bHCJJPLKELGCb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

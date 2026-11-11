@@ -82,7 +82,7 @@ impl ::protobuf::Message for PLADCLDJGKK {
                 72 => {
                     self.BEOHGAADKPH = is.read_uint32()?;
                 },
-                80 => {
+                96 => {
                     self.KBLBFGANMPJ = is.read_bool()?;
                 },
                 tag => {
@@ -113,7 +113,7 @@ impl ::protobuf::Message for PLADCLDJGKK {
             os.write_uint32(9, self.BEOHGAADKPH)?;
         }
         if self.KBLBFGANMPJ != false {
-            os.write_bool(10, self.KBLBFGANMPJ)?;
+            os.write_bool(12, self.KBLBFGANMPJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for PLADCLDJGKK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PLADCLDJGKK.proto\"Q\n\x0bPLADCLDJGKK\x12\x20\n\x0bBEOHGAADKPH\x18\
-    \t\x20\x01(\rR\x0bBEOHGAADKPH\x12\x20\n\x0bKBLBFGANMPJ\x18\n\x20\x01(\
+    \t\x20\x01(\rR\x0bBEOHGAADKPH\x12\x20\n\x0bKBLBFGANMPJ\x18\x0c\x20\x01(\
     \x08R\x0bKBLBFGANMPJb\x06proto3\
 ";
 

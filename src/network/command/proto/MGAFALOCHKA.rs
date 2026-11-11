@@ -29,152 +29,152 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum MGAFALOCHKA {
     // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NLCDGIPGFDJ)
     MGAFALOCHKA_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HLAAIJFHPCC)
-    MGAFALOCHKA_HLAAIJFHPCC = 5407,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CKDPKANEJBJ)
-    MGAFALOCHKA_CKDPKANEJBJ = 5549,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BBCEGLICHBO)
-    MGAFALOCHKA_BBCEGLICHBO = 5551,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPOCHBFMMHL)
-    MGAFALOCHKA_PPOCHBFMMHL = 5553,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HMPEODAEHAD)
-    MGAFALOCHKA_HMPEODAEHAD = 5435,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DJLGLGIPFKJ)
-    MGAFALOCHKA_DJLGLGIPFKJ = 5499,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_FKCBJDJPOAC)
-    MGAFALOCHKA_FKCBJDJPOAC = 5476,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JPFNCKAFAGM)
-    MGAFALOCHKA_JPFNCKAFAGM = 5489,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_COANPILADLB)
-    MGAFALOCHKA_COANPILADLB = 5451,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EDDKBAGIIOD)
-    MGAFALOCHKA_EDDKBAGIIOD = 5426,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DEFCIGKJFOM)
-    MGAFALOCHKA_DEFCIGKJFOM = 5514,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BBJHOEONOJJ)
-    MGAFALOCHKA_BBJHOEONOJJ = 5449,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EJCPAMCOPGC)
-    MGAFALOCHKA_EJCPAMCOPGC = 5564,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_INJLFBFMCJM)
-    MGAFALOCHKA_INJLFBFMCJM = 5600,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ADNJNEJGGDC)
-    MGAFALOCHKA_ADNJNEJGGDC = 5523,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IEMGAEICJBH)
-    MGAFALOCHKA_IEMGAEICJBH = 5432,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MEKPPCPENMO)
-    MGAFALOCHKA_MEKPPCPENMO = 5464,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OFGPNBPKHHF)
-    MGAFALOCHKA_OFGPNBPKHHF = 5453,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPOFFIDPLGP)
-    MGAFALOCHKA_PPOFFIDPLGP = 5483,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EFGJEDNFBNB)
-    MGAFALOCHKA_EFGJEDNFBNB = 5493,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GLDJNMIEFGI)
-    MGAFALOCHKA_GLDJNMIEFGI = 5557,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GNIDKFANIGF)
-    MGAFALOCHKA_GNIDKFANIGF = 5487,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CFNCMOPCCNH)
-    MGAFALOCHKA_CFNCMOPCCNH = 5471,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HBKHLJACNCI)
-    MGAFALOCHKA_HBKHLJACNCI = 5580,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_AOACLOOJNLP)
-    MGAFALOCHKA_AOACLOOJNLP = 5474,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GOHNEBADJNM)
-    MGAFALOCHKA_GOHNEBADJNM = 5452,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NCCGHAAOHLJ)
-    MGAFALOCHKA_NCCGHAAOHLJ = 5535,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LDPCNALODPL)
-    MGAFALOCHKA_LDPCNALODPL = 5536,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DEBAMNEOLAL)
-    MGAFALOCHKA_DEBAMNEOLAL = 5433,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EKMEKMFEFFJ)
-    MGAFALOCHKA_EKMEKMFEFFJ = 5501,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OIMLJPNEEHG)
-    MGAFALOCHKA_OIMLJPNEEHG = 5599,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OGNMJKIANLO)
-    MGAFALOCHKA_OGNMJKIANLO = 5419,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_KECIOGLONGF)
-    MGAFALOCHKA_KECIOGLONGF = 5573,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LDCLIBNABEK)
-    MGAFALOCHKA_LDCLIBNABEK = 5525,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NANOCPFIDFJ)
-    MGAFALOCHKA_NANOCPFIDFJ = 5454,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BJJFGPCPOJP)
-    MGAFALOCHKA_BJJFGPCPOJP = 5561,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HMHPNGHANFM)
-    MGAFALOCHKA_HMHPNGHANFM = 5472,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GKACNPEKLFM)
-    MGAFALOCHKA_GKACNPEKLFM = 5477,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ENHFBINMBEP)
-    MGAFALOCHKA_ENHFBINMBEP = 5569,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPHFMJFNMFB)
-    MGAFALOCHKA_PPHFMJFNMFB = 5416,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IPPAMGGBOJJ)
-    MGAFALOCHKA_IPPAMGGBOJJ = 5513,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EJFJAINAICB)
-    MGAFALOCHKA_EJFJAINAICB = 5554,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OEOAIAICMEA)
-    MGAFALOCHKA_OEOAIAICMEA = 5533,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ANLHNMKFJJF)
-    MGAFALOCHKA_ANLHNMKFJJF = 5526,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_APOKJOHILFO)
-    MGAFALOCHKA_APOKJOHILFO = 5468,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NDJDMHKPGCJ)
-    MGAFALOCHKA_NDJDMHKPGCJ = 5410,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MAIKACGOEFB)
-    MGAFALOCHKA_MAIKACGOEFB = 5415,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JAGDJEBLEHD)
-    MGAFALOCHKA_JAGDJEBLEHD = 5589,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NLHKGMGLBOD)
-    MGAFALOCHKA_NLHKGMGLBOD = 5578,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GEJLPCMIHBA)
-    MGAFALOCHKA_GEJLPCMIHBA = 5491,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EKNJANBAKIP)
-    MGAFALOCHKA_EKNJANBAKIP = 5427,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_FBMDGOFCOFL)
-    MGAFALOCHKA_FBMDGOFCOFL = 5422,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PBBFKOCNGCK)
-    MGAFALOCHKA_PBBFKOCNGCK = 5505,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JKJFEHFCGLA)
-    MGAFALOCHKA_JKJFEHFCGLA = 5423,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JIBHEGIINHD)
-    MGAFALOCHKA_JIBHEGIINHD = 5552,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JOELINKIDEK)
-    MGAFALOCHKA_JOELINKIDEK = 5417,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MCMCIABIEHF)
-    MGAFALOCHKA_MCMCIABIEHF = 5484,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HIOMDJAIIBL)
-    MGAFALOCHKA_HIOMDJAIIBL = 5547,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_INPDGFICHDF)
-    MGAFALOCHKA_INPDGFICHDF = 5511,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JAPFHNKBFAP)
-    MGAFALOCHKA_JAPFHNKBFAP = 5516,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PMKFMGDDKHE)
-    MGAFALOCHKA_PMKFMGDDKHE = 5485,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PNGLGNMDKFI)
-    MGAFALOCHKA_PNGLGNMDKFI = 5424,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LMIAHFLCIFD)
-    MGAFALOCHKA_LMIAHFLCIFD = 5510,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IANLHKCHNIH)
-    MGAFALOCHKA_IANLHKCHNIH = 5503,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PJAJDFMJGKA)
-    MGAFALOCHKA_PJAJDFMJGKA = 5462,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GHDIJAOGBEC)
-    MGAFALOCHKA_GHDIJAOGBEC = 5447,
     // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GPAHNLLHJJJ)
-    MGAFALOCHKA_GPAHNLLHJJJ = 5540,
+    MGAFALOCHKA_GPAHNLLHJJJ = 5526,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GNIDKFANIGF)
+    MGAFALOCHKA_GNIDKFANIGF = 5444,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_KECIOGLONGF)
+    MGAFALOCHKA_KECIOGLONGF = 5433,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MEKPPCPENMO)
+    MGAFALOCHKA_MEKPPCPENMO = 5510,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LMIAHFLCIFD)
+    MGAFALOCHKA_LMIAHFLCIFD = 5568,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BBJHOEONOJJ)
+    MGAFALOCHKA_BBJHOEONOJJ = 5495,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OEOAIAICMEA)
+    MGAFALOCHKA_OEOAIAICMEA = 5437,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GOHNEBADJNM)
+    MGAFALOCHKA_GOHNEBADJNM = 5458,
     // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_FANHHDLAKGH)
-    MGAFALOCHKA_FANHHDLAKGH = 5469,
+    MGAFALOCHKA_FANHHDLAKGH = 5571,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CKDPKANEJBJ)
+    MGAFALOCHKA_CKDPKANEJBJ = 5564,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OFGPNBPKHHF)
+    MGAFALOCHKA_OFGPNBPKHHF = 5490,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PJAJDFMJGKA)
+    MGAFALOCHKA_PJAJDFMJGKA = 5445,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OIMLJPNEEHG)
+    MGAFALOCHKA_OIMLJPNEEHG = 5583,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JAGDJEBLEHD)
+    MGAFALOCHKA_JAGDJEBLEHD = 5514,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NCCGHAAOHLJ)
+    MGAFALOCHKA_NCCGHAAOHLJ = 5530,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MCMCIABIEHF)
+    MGAFALOCHKA_MCMCIABIEHF = 5424,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NDJDMHKPGCJ)
+    MGAFALOCHKA_NDJDMHKPGCJ = 5521,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NANOCPFIDFJ)
+    MGAFALOCHKA_NANOCPFIDFJ = 5434,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BJJFGPCPOJP)
+    MGAFALOCHKA_BJJFGPCPOJP = 5457,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HIOMDJAIIBL)
+    MGAFALOCHKA_HIOMDJAIIBL = 5449,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HMHPNGHANFM)
+    MGAFALOCHKA_HMHPNGHANFM = 5592,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_MAIKACGOEFB)
+    MGAFALOCHKA_MAIKACGOEFB = 5432,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GHDIJAOGBEC)
+    MGAFALOCHKA_GHDIJAOGBEC = 5441,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ENHFBINMBEP)
+    MGAFALOCHKA_ENHFBINMBEP = 5517,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DJLGLGIPFKJ)
+    MGAFALOCHKA_DJLGLGIPFKJ = 5565,
     // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PHKEPHJMFBL)
-    MGAFALOCHKA_PHKEPHJMFBL = 5598,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NCFHGIJBPMA)
-    MGAFALOCHKA_NCFHGIJBPMA = 5438,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CHNHBFCCJAA)
-    MGAFALOCHKA_CHNHBFCCJAA = 5488,
-    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IKNFLHGOGKD)
-    MGAFALOCHKA_IKNFLHGOGKD = 5534,
+    MGAFALOCHKA_PHKEPHJMFBL = 5415,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_AOACLOOJNLP)
+    MGAFALOCHKA_AOACLOOJNLP = 5470,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HMPEODAEHAD)
+    MGAFALOCHKA_HMPEODAEHAD = 5460,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPHFMJFNMFB)
+    MGAFALOCHKA_PPHFMJFNMFB = 5589,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NLHKGMGLBOD)
+    MGAFALOCHKA_NLHKGMGLBOD = 5570,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EDDKBAGIIOD)
+    MGAFALOCHKA_EDDKBAGIIOD = 5588,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LDCLIBNABEK)
+    MGAFALOCHKA_LDCLIBNABEK = 5499,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EFGJEDNFBNB)
+    MGAFALOCHKA_EFGJEDNFBNB = 5532,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EKNJANBAKIP)
+    MGAFALOCHKA_EKNJANBAKIP = 5403,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GLDJNMIEFGI)
+    MGAFALOCHKA_GLDJNMIEFGI = 5537,
     // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GGANFIMGOFA)
-    MGAFALOCHKA_GGANFIMGOFA = 5437,
+    MGAFALOCHKA_GGANFIMGOFA = 5461,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPOCHBFMMHL)
+    MGAFALOCHKA_PPOCHBFMMHL = 5547,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ANLHNMKFJJF)
+    MGAFALOCHKA_ANLHNMKFJJF = 5418,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_BBCEGLICHBO)
+    MGAFALOCHKA_BBCEGLICHBO = 5574,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PPOFFIDPLGP)
+    MGAFALOCHKA_PPOFFIDPLGP = 5511,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PBBFKOCNGCK)
+    MGAFALOCHKA_PBBFKOCNGCK = 5436,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JOELINKIDEK)
+    MGAFALOCHKA_JOELINKIDEK = 5426,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HBKHLJACNCI)
+    MGAFALOCHKA_HBKHLJACNCI = 5536,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IEMGAEICJBH)
+    MGAFALOCHKA_IEMGAEICJBH = 5405,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_FBMDGOFCOFL)
+    MGAFALOCHKA_FBMDGOFCOFL = 5407,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_OGNMJKIANLO)
+    MGAFALOCHKA_OGNMJKIANLO = 5446,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IANLHKCHNIH)
+    MGAFALOCHKA_IANLHKCHNIH = 5590,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JAPFHNKBFAP)
+    MGAFALOCHKA_JAPFHNKBFAP = 5600,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JPFNCKAFAGM)
+    MGAFALOCHKA_JPFNCKAFAGM = 5410,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PMKFMGDDKHE)
+    MGAFALOCHKA_PMKFMGDDKHE = 5538,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EKMEKMFEFFJ)
+    MGAFALOCHKA_EKMEKMFEFFJ = 5527,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_APOKJOHILFO)
+    MGAFALOCHKA_APOKJOHILFO = 5550,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IKNFLHGOGKD)
+    MGAFALOCHKA_IKNFLHGOGKD = 5402,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_NCFHGIJBPMA)
+    MGAFALOCHKA_NCFHGIJBPMA = 5412,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EJCPAMCOPGC)
+    MGAFALOCHKA_EJCPAMCOPGC = 5573,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GEJLPCMIHBA)
+    MGAFALOCHKA_GEJLPCMIHBA = 5503,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DEBAMNEOLAL)
+    MGAFALOCHKA_DEBAMNEOLAL = 5595,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JKJFEHFCGLA)
+    MGAFALOCHKA_JKJFEHFCGLA = 5580,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_HLAAIJFHPCC)
+    MGAFALOCHKA_HLAAIJFHPCC = 5567,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_COANPILADLB)
+    MGAFALOCHKA_COANPILADLB = 5452,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_INPDGFICHDF)
+    MGAFALOCHKA_INPDGFICHDF = 5554,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_EJFJAINAICB)
+    MGAFALOCHKA_EJFJAINAICB = 5494,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_IPPAMGGBOJJ)
+    MGAFALOCHKA_IPPAMGGBOJJ = 5496,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_GKACNPEKLFM)
+    MGAFALOCHKA_GKACNPEKLFM = 5515,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CHNHBFCCJAA)
+    MGAFALOCHKA_CHNHBFCCJAA = 5429,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_INJLFBFMCJM)
+    MGAFALOCHKA_INJLFBFMCJM = 5497,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_DEFCIGKJFOM)
+    MGAFALOCHKA_DEFCIGKJFOM = 5459,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_JIBHEGIINHD)
+    MGAFALOCHKA_JIBHEGIINHD = 5559,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_CFNCMOPCCNH)
+    MGAFALOCHKA_CFNCMOPCCNH = 5491,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_LDPCNALODPL)
+    MGAFALOCHKA_LDPCNALODPL = 5555,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_ADNJNEJGGDC)
+    MGAFALOCHKA_ADNJNEJGGDC = 5462,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_PNGLGNMDKFI)
+    MGAFALOCHKA_PNGLGNMDKFI = 5502,
+    // @@protoc_insertion_point(enum_value:MGAFALOCHKA.MGAFALOCHKA_FKCBJDJPOAC)
+    MGAFALOCHKA_FKCBJDJPOAC = 5542,
 }
 
 impl ::protobuf::Enum for MGAFALOCHKA {
@@ -187,79 +187,79 @@ impl ::protobuf::Enum for MGAFALOCHKA {
     fn from_i32(value: i32) -> ::std::option::Option<MGAFALOCHKA> {
         match value {
             0 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLCDGIPGFDJ),
-            5407 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC),
-            5549 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ),
-            5551 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO),
-            5553 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL),
-            5435 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD),
-            5499 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ),
-            5476 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC),
-            5489 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM),
-            5451 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_COANPILADLB),
-            5426 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD),
-            5514 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM),
-            5449 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ),
-            5564 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC),
-            5600 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM),
-            5523 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC),
-            5432 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH),
-            5464 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO),
-            5453 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF),
-            5483 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP),
-            5493 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB),
-            5557 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI),
-            5487 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF),
-            5471 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH),
-            5580 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI),
-            5474 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP),
-            5452 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM),
-            5535 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ),
-            5536 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL),
-            5433 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL),
-            5501 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ),
-            5599 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG),
-            5419 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO),
-            5573 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF),
-            5525 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK),
-            5454 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ),
-            5561 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP),
-            5472 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM),
-            5477 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM),
-            5569 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP),
-            5416 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB),
-            5513 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ),
-            5554 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB),
-            5533 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA),
-            5526 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF),
-            5468 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO),
-            5410 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ),
-            5415 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB),
-            5589 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD),
-            5578 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD),
-            5491 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA),
-            5427 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP),
-            5422 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL),
-            5505 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK),
-            5423 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA),
-            5552 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD),
-            5417 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK),
-            5484 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF),
-            5547 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL),
-            5511 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF),
-            5516 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP),
-            5485 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE),
-            5424 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI),
-            5510 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD),
-            5503 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH),
-            5462 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA),
-            5447 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC),
-            5540 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ),
-            5469 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH),
-            5598 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL),
-            5438 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA),
-            5488 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA),
-            5534 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD),
-            5437 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA),
+            5526 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ),
+            5444 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF),
+            5433 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF),
+            5510 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO),
+            5568 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD),
+            5495 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ),
+            5437 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA),
+            5458 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM),
+            5571 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH),
+            5564 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ),
+            5490 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF),
+            5445 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA),
+            5583 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG),
+            5514 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD),
+            5530 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ),
+            5424 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF),
+            5521 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ),
+            5434 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ),
+            5457 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP),
+            5449 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL),
+            5592 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM),
+            5432 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB),
+            5441 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC),
+            5517 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP),
+            5565 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ),
+            5415 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL),
+            5470 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP),
+            5460 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD),
+            5589 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB),
+            5570 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD),
+            5588 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD),
+            5499 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK),
+            5532 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB),
+            5403 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP),
+            5537 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI),
+            5461 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA),
+            5547 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL),
+            5418 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF),
+            5574 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO),
+            5511 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP),
+            5436 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK),
+            5426 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK),
+            5536 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI),
+            5405 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH),
+            5407 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL),
+            5446 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO),
+            5590 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH),
+            5600 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP),
+            5410 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM),
+            5538 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE),
+            5527 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ),
+            5550 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO),
+            5402 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD),
+            5412 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA),
+            5573 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC),
+            5503 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA),
+            5595 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL),
+            5580 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA),
+            5567 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC),
+            5452 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_COANPILADLB),
+            5554 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF),
+            5494 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB),
+            5496 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ),
+            5515 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM),
+            5429 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA),
+            5497 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM),
+            5459 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM),
+            5559 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD),
+            5491 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH),
+            5555 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL),
+            5462 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC),
+            5502 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI),
+            5542 => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC),
             _ => ::std::option::Option::None
         }
     }
@@ -267,158 +267,158 @@ impl ::protobuf::Enum for MGAFALOCHKA {
     fn from_str(str: &str) -> ::std::option::Option<MGAFALOCHKA> {
         match str {
             "MGAFALOCHKA_NLCDGIPGFDJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLCDGIPGFDJ),
-            "MGAFALOCHKA_HLAAIJFHPCC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC),
-            "MGAFALOCHKA_CKDPKANEJBJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ),
-            "MGAFALOCHKA_BBCEGLICHBO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO),
-            "MGAFALOCHKA_PPOCHBFMMHL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL),
-            "MGAFALOCHKA_HMPEODAEHAD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD),
-            "MGAFALOCHKA_DJLGLGIPFKJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ),
-            "MGAFALOCHKA_FKCBJDJPOAC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC),
-            "MGAFALOCHKA_JPFNCKAFAGM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM),
-            "MGAFALOCHKA_COANPILADLB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_COANPILADLB),
-            "MGAFALOCHKA_EDDKBAGIIOD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD),
-            "MGAFALOCHKA_DEFCIGKJFOM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM),
-            "MGAFALOCHKA_BBJHOEONOJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ),
-            "MGAFALOCHKA_EJCPAMCOPGC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC),
-            "MGAFALOCHKA_INJLFBFMCJM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM),
-            "MGAFALOCHKA_ADNJNEJGGDC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC),
-            "MGAFALOCHKA_IEMGAEICJBH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH),
-            "MGAFALOCHKA_MEKPPCPENMO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO),
-            "MGAFALOCHKA_OFGPNBPKHHF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF),
-            "MGAFALOCHKA_PPOFFIDPLGP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP),
-            "MGAFALOCHKA_EFGJEDNFBNB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB),
-            "MGAFALOCHKA_GLDJNMIEFGI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI),
+            "MGAFALOCHKA_GPAHNLLHJJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ),
             "MGAFALOCHKA_GNIDKFANIGF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF),
-            "MGAFALOCHKA_CFNCMOPCCNH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH),
-            "MGAFALOCHKA_HBKHLJACNCI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI),
-            "MGAFALOCHKA_AOACLOOJNLP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP),
-            "MGAFALOCHKA_GOHNEBADJNM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM),
-            "MGAFALOCHKA_NCCGHAAOHLJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ),
-            "MGAFALOCHKA_LDPCNALODPL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL),
-            "MGAFALOCHKA_DEBAMNEOLAL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL),
-            "MGAFALOCHKA_EKMEKMFEFFJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ),
-            "MGAFALOCHKA_OIMLJPNEEHG" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG),
-            "MGAFALOCHKA_OGNMJKIANLO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO),
             "MGAFALOCHKA_KECIOGLONGF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF),
-            "MGAFALOCHKA_LDCLIBNABEK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK),
+            "MGAFALOCHKA_MEKPPCPENMO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO),
+            "MGAFALOCHKA_LMIAHFLCIFD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD),
+            "MGAFALOCHKA_BBJHOEONOJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ),
+            "MGAFALOCHKA_OEOAIAICMEA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA),
+            "MGAFALOCHKA_GOHNEBADJNM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM),
+            "MGAFALOCHKA_FANHHDLAKGH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH),
+            "MGAFALOCHKA_CKDPKANEJBJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ),
+            "MGAFALOCHKA_OFGPNBPKHHF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF),
+            "MGAFALOCHKA_PJAJDFMJGKA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA),
+            "MGAFALOCHKA_OIMLJPNEEHG" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG),
+            "MGAFALOCHKA_JAGDJEBLEHD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD),
+            "MGAFALOCHKA_NCCGHAAOHLJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ),
+            "MGAFALOCHKA_MCMCIABIEHF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF),
+            "MGAFALOCHKA_NDJDMHKPGCJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ),
             "MGAFALOCHKA_NANOCPFIDFJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ),
             "MGAFALOCHKA_BJJFGPCPOJP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP),
-            "MGAFALOCHKA_HMHPNGHANFM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM),
-            "MGAFALOCHKA_GKACNPEKLFM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM),
-            "MGAFALOCHKA_ENHFBINMBEP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP),
-            "MGAFALOCHKA_PPHFMJFNMFB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB),
-            "MGAFALOCHKA_IPPAMGGBOJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ),
-            "MGAFALOCHKA_EJFJAINAICB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB),
-            "MGAFALOCHKA_OEOAIAICMEA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA),
-            "MGAFALOCHKA_ANLHNMKFJJF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF),
-            "MGAFALOCHKA_APOKJOHILFO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO),
-            "MGAFALOCHKA_NDJDMHKPGCJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ),
-            "MGAFALOCHKA_MAIKACGOEFB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB),
-            "MGAFALOCHKA_JAGDJEBLEHD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD),
-            "MGAFALOCHKA_NLHKGMGLBOD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD),
-            "MGAFALOCHKA_GEJLPCMIHBA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA),
-            "MGAFALOCHKA_EKNJANBAKIP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP),
-            "MGAFALOCHKA_FBMDGOFCOFL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL),
-            "MGAFALOCHKA_PBBFKOCNGCK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK),
-            "MGAFALOCHKA_JKJFEHFCGLA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA),
-            "MGAFALOCHKA_JIBHEGIINHD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD),
-            "MGAFALOCHKA_JOELINKIDEK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK),
-            "MGAFALOCHKA_MCMCIABIEHF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF),
             "MGAFALOCHKA_HIOMDJAIIBL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL),
-            "MGAFALOCHKA_INPDGFICHDF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF),
-            "MGAFALOCHKA_JAPFHNKBFAP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP),
-            "MGAFALOCHKA_PMKFMGDDKHE" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE),
-            "MGAFALOCHKA_PNGLGNMDKFI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI),
-            "MGAFALOCHKA_LMIAHFLCIFD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD),
-            "MGAFALOCHKA_IANLHKCHNIH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH),
-            "MGAFALOCHKA_PJAJDFMJGKA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA),
+            "MGAFALOCHKA_HMHPNGHANFM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM),
+            "MGAFALOCHKA_MAIKACGOEFB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB),
             "MGAFALOCHKA_GHDIJAOGBEC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC),
-            "MGAFALOCHKA_GPAHNLLHJJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ),
-            "MGAFALOCHKA_FANHHDLAKGH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH),
+            "MGAFALOCHKA_ENHFBINMBEP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP),
+            "MGAFALOCHKA_DJLGLGIPFKJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ),
             "MGAFALOCHKA_PHKEPHJMFBL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL),
-            "MGAFALOCHKA_NCFHGIJBPMA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA),
-            "MGAFALOCHKA_CHNHBFCCJAA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA),
-            "MGAFALOCHKA_IKNFLHGOGKD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD),
+            "MGAFALOCHKA_AOACLOOJNLP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP),
+            "MGAFALOCHKA_HMPEODAEHAD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD),
+            "MGAFALOCHKA_PPHFMJFNMFB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB),
+            "MGAFALOCHKA_NLHKGMGLBOD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD),
+            "MGAFALOCHKA_EDDKBAGIIOD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD),
+            "MGAFALOCHKA_LDCLIBNABEK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK),
+            "MGAFALOCHKA_EFGJEDNFBNB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB),
+            "MGAFALOCHKA_EKNJANBAKIP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP),
+            "MGAFALOCHKA_GLDJNMIEFGI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI),
             "MGAFALOCHKA_GGANFIMGOFA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA),
+            "MGAFALOCHKA_PPOCHBFMMHL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL),
+            "MGAFALOCHKA_ANLHNMKFJJF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF),
+            "MGAFALOCHKA_BBCEGLICHBO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO),
+            "MGAFALOCHKA_PPOFFIDPLGP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP),
+            "MGAFALOCHKA_PBBFKOCNGCK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK),
+            "MGAFALOCHKA_JOELINKIDEK" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK),
+            "MGAFALOCHKA_HBKHLJACNCI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI),
+            "MGAFALOCHKA_IEMGAEICJBH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH),
+            "MGAFALOCHKA_FBMDGOFCOFL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL),
+            "MGAFALOCHKA_OGNMJKIANLO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO),
+            "MGAFALOCHKA_IANLHKCHNIH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH),
+            "MGAFALOCHKA_JAPFHNKBFAP" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP),
+            "MGAFALOCHKA_JPFNCKAFAGM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM),
+            "MGAFALOCHKA_PMKFMGDDKHE" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE),
+            "MGAFALOCHKA_EKMEKMFEFFJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ),
+            "MGAFALOCHKA_APOKJOHILFO" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO),
+            "MGAFALOCHKA_IKNFLHGOGKD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD),
+            "MGAFALOCHKA_NCFHGIJBPMA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA),
+            "MGAFALOCHKA_EJCPAMCOPGC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC),
+            "MGAFALOCHKA_GEJLPCMIHBA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA),
+            "MGAFALOCHKA_DEBAMNEOLAL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL),
+            "MGAFALOCHKA_JKJFEHFCGLA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA),
+            "MGAFALOCHKA_HLAAIJFHPCC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC),
+            "MGAFALOCHKA_COANPILADLB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_COANPILADLB),
+            "MGAFALOCHKA_INPDGFICHDF" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF),
+            "MGAFALOCHKA_EJFJAINAICB" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB),
+            "MGAFALOCHKA_IPPAMGGBOJJ" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ),
+            "MGAFALOCHKA_GKACNPEKLFM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM),
+            "MGAFALOCHKA_CHNHBFCCJAA" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA),
+            "MGAFALOCHKA_INJLFBFMCJM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM),
+            "MGAFALOCHKA_DEFCIGKJFOM" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM),
+            "MGAFALOCHKA_JIBHEGIINHD" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD),
+            "MGAFALOCHKA_CFNCMOPCCNH" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH),
+            "MGAFALOCHKA_LDPCNALODPL" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL),
+            "MGAFALOCHKA_ADNJNEJGGDC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC),
+            "MGAFALOCHKA_PNGLGNMDKFI" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI),
+            "MGAFALOCHKA_FKCBJDJPOAC" => ::std::option::Option::Some(MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MGAFALOCHKA] = &[
         MGAFALOCHKA::MGAFALOCHKA_NLCDGIPGFDJ,
-        MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC,
-        MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ,
-        MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO,
-        MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL,
-        MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD,
-        MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ,
-        MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC,
-        MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM,
-        MGAFALOCHKA::MGAFALOCHKA_COANPILADLB,
-        MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD,
-        MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM,
-        MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ,
-        MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC,
-        MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM,
-        MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC,
-        MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH,
-        MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO,
-        MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF,
-        MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP,
-        MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB,
-        MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI,
+        MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ,
         MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF,
-        MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH,
-        MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI,
-        MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP,
-        MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM,
-        MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ,
-        MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL,
-        MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL,
-        MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ,
-        MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG,
-        MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO,
         MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF,
-        MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK,
+        MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO,
+        MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD,
+        MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ,
+        MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA,
+        MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM,
+        MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH,
+        MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ,
+        MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF,
+        MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA,
+        MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG,
+        MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD,
+        MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ,
+        MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF,
+        MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ,
         MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ,
         MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP,
-        MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM,
-        MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM,
-        MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP,
-        MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB,
-        MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ,
-        MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB,
-        MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA,
-        MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF,
-        MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO,
-        MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ,
-        MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB,
-        MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD,
-        MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD,
-        MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA,
-        MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP,
-        MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL,
-        MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK,
-        MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA,
-        MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD,
-        MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK,
-        MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF,
         MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL,
-        MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF,
-        MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP,
-        MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE,
-        MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI,
-        MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD,
-        MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH,
-        MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA,
+        MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM,
+        MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB,
         MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC,
-        MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ,
-        MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH,
+        MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP,
+        MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ,
         MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL,
-        MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA,
-        MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA,
-        MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD,
+        MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP,
+        MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD,
+        MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB,
+        MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD,
+        MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD,
+        MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK,
+        MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB,
+        MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP,
+        MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI,
         MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA,
+        MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL,
+        MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF,
+        MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO,
+        MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP,
+        MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK,
+        MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK,
+        MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI,
+        MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH,
+        MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL,
+        MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO,
+        MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH,
+        MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP,
+        MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM,
+        MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE,
+        MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ,
+        MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO,
+        MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD,
+        MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA,
+        MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC,
+        MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA,
+        MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL,
+        MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA,
+        MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC,
+        MGAFALOCHKA::MGAFALOCHKA_COANPILADLB,
+        MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF,
+        MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB,
+        MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ,
+        MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM,
+        MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA,
+        MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM,
+        MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM,
+        MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD,
+        MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH,
+        MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL,
+        MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC,
+        MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI,
+        MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC,
     ];
 }
 
@@ -431,79 +431,79 @@ impl ::protobuf::EnumFull for MGAFALOCHKA {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             MGAFALOCHKA::MGAFALOCHKA_NLCDGIPGFDJ => 0,
-            MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC => 1,
-            MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ => 2,
-            MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO => 3,
-            MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL => 4,
-            MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD => 5,
-            MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ => 6,
-            MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC => 7,
-            MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM => 8,
-            MGAFALOCHKA::MGAFALOCHKA_COANPILADLB => 9,
-            MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD => 10,
-            MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM => 11,
-            MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ => 12,
-            MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC => 13,
-            MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM => 14,
-            MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC => 15,
-            MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH => 16,
-            MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO => 17,
-            MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF => 18,
-            MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP => 19,
-            MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB => 20,
-            MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI => 21,
-            MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF => 22,
-            MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH => 23,
-            MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI => 24,
-            MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP => 25,
-            MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM => 26,
-            MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ => 27,
-            MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL => 28,
-            MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL => 29,
-            MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ => 30,
-            MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG => 31,
-            MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO => 32,
-            MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF => 33,
-            MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK => 34,
-            MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ => 35,
-            MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP => 36,
-            MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM => 37,
-            MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM => 38,
-            MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP => 39,
-            MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB => 40,
-            MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ => 41,
-            MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB => 42,
-            MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA => 43,
-            MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF => 44,
-            MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO => 45,
-            MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ => 46,
-            MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB => 47,
-            MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD => 48,
-            MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD => 49,
-            MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA => 50,
-            MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP => 51,
-            MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL => 52,
-            MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK => 53,
-            MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA => 54,
-            MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD => 55,
-            MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK => 56,
-            MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF => 57,
-            MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL => 58,
-            MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF => 59,
-            MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP => 60,
-            MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE => 61,
-            MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI => 62,
-            MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD => 63,
-            MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH => 64,
-            MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA => 65,
-            MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC => 66,
-            MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ => 67,
-            MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH => 68,
-            MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL => 69,
-            MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA => 70,
-            MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA => 71,
-            MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD => 72,
-            MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA => 73,
+            MGAFALOCHKA::MGAFALOCHKA_GPAHNLLHJJJ => 1,
+            MGAFALOCHKA::MGAFALOCHKA_GNIDKFANIGF => 2,
+            MGAFALOCHKA::MGAFALOCHKA_KECIOGLONGF => 3,
+            MGAFALOCHKA::MGAFALOCHKA_MEKPPCPENMO => 4,
+            MGAFALOCHKA::MGAFALOCHKA_LMIAHFLCIFD => 5,
+            MGAFALOCHKA::MGAFALOCHKA_BBJHOEONOJJ => 6,
+            MGAFALOCHKA::MGAFALOCHKA_OEOAIAICMEA => 7,
+            MGAFALOCHKA::MGAFALOCHKA_GOHNEBADJNM => 8,
+            MGAFALOCHKA::MGAFALOCHKA_FANHHDLAKGH => 9,
+            MGAFALOCHKA::MGAFALOCHKA_CKDPKANEJBJ => 10,
+            MGAFALOCHKA::MGAFALOCHKA_OFGPNBPKHHF => 11,
+            MGAFALOCHKA::MGAFALOCHKA_PJAJDFMJGKA => 12,
+            MGAFALOCHKA::MGAFALOCHKA_OIMLJPNEEHG => 13,
+            MGAFALOCHKA::MGAFALOCHKA_JAGDJEBLEHD => 14,
+            MGAFALOCHKA::MGAFALOCHKA_NCCGHAAOHLJ => 15,
+            MGAFALOCHKA::MGAFALOCHKA_MCMCIABIEHF => 16,
+            MGAFALOCHKA::MGAFALOCHKA_NDJDMHKPGCJ => 17,
+            MGAFALOCHKA::MGAFALOCHKA_NANOCPFIDFJ => 18,
+            MGAFALOCHKA::MGAFALOCHKA_BJJFGPCPOJP => 19,
+            MGAFALOCHKA::MGAFALOCHKA_HIOMDJAIIBL => 20,
+            MGAFALOCHKA::MGAFALOCHKA_HMHPNGHANFM => 21,
+            MGAFALOCHKA::MGAFALOCHKA_MAIKACGOEFB => 22,
+            MGAFALOCHKA::MGAFALOCHKA_GHDIJAOGBEC => 23,
+            MGAFALOCHKA::MGAFALOCHKA_ENHFBINMBEP => 24,
+            MGAFALOCHKA::MGAFALOCHKA_DJLGLGIPFKJ => 25,
+            MGAFALOCHKA::MGAFALOCHKA_PHKEPHJMFBL => 26,
+            MGAFALOCHKA::MGAFALOCHKA_AOACLOOJNLP => 27,
+            MGAFALOCHKA::MGAFALOCHKA_HMPEODAEHAD => 28,
+            MGAFALOCHKA::MGAFALOCHKA_PPHFMJFNMFB => 29,
+            MGAFALOCHKA::MGAFALOCHKA_NLHKGMGLBOD => 30,
+            MGAFALOCHKA::MGAFALOCHKA_EDDKBAGIIOD => 31,
+            MGAFALOCHKA::MGAFALOCHKA_LDCLIBNABEK => 32,
+            MGAFALOCHKA::MGAFALOCHKA_EFGJEDNFBNB => 33,
+            MGAFALOCHKA::MGAFALOCHKA_EKNJANBAKIP => 34,
+            MGAFALOCHKA::MGAFALOCHKA_GLDJNMIEFGI => 35,
+            MGAFALOCHKA::MGAFALOCHKA_GGANFIMGOFA => 36,
+            MGAFALOCHKA::MGAFALOCHKA_PPOCHBFMMHL => 37,
+            MGAFALOCHKA::MGAFALOCHKA_ANLHNMKFJJF => 38,
+            MGAFALOCHKA::MGAFALOCHKA_BBCEGLICHBO => 39,
+            MGAFALOCHKA::MGAFALOCHKA_PPOFFIDPLGP => 40,
+            MGAFALOCHKA::MGAFALOCHKA_PBBFKOCNGCK => 41,
+            MGAFALOCHKA::MGAFALOCHKA_JOELINKIDEK => 42,
+            MGAFALOCHKA::MGAFALOCHKA_HBKHLJACNCI => 43,
+            MGAFALOCHKA::MGAFALOCHKA_IEMGAEICJBH => 44,
+            MGAFALOCHKA::MGAFALOCHKA_FBMDGOFCOFL => 45,
+            MGAFALOCHKA::MGAFALOCHKA_OGNMJKIANLO => 46,
+            MGAFALOCHKA::MGAFALOCHKA_IANLHKCHNIH => 47,
+            MGAFALOCHKA::MGAFALOCHKA_JAPFHNKBFAP => 48,
+            MGAFALOCHKA::MGAFALOCHKA_JPFNCKAFAGM => 49,
+            MGAFALOCHKA::MGAFALOCHKA_PMKFMGDDKHE => 50,
+            MGAFALOCHKA::MGAFALOCHKA_EKMEKMFEFFJ => 51,
+            MGAFALOCHKA::MGAFALOCHKA_APOKJOHILFO => 52,
+            MGAFALOCHKA::MGAFALOCHKA_IKNFLHGOGKD => 53,
+            MGAFALOCHKA::MGAFALOCHKA_NCFHGIJBPMA => 54,
+            MGAFALOCHKA::MGAFALOCHKA_EJCPAMCOPGC => 55,
+            MGAFALOCHKA::MGAFALOCHKA_GEJLPCMIHBA => 56,
+            MGAFALOCHKA::MGAFALOCHKA_DEBAMNEOLAL => 57,
+            MGAFALOCHKA::MGAFALOCHKA_JKJFEHFCGLA => 58,
+            MGAFALOCHKA::MGAFALOCHKA_HLAAIJFHPCC => 59,
+            MGAFALOCHKA::MGAFALOCHKA_COANPILADLB => 60,
+            MGAFALOCHKA::MGAFALOCHKA_INPDGFICHDF => 61,
+            MGAFALOCHKA::MGAFALOCHKA_EJFJAINAICB => 62,
+            MGAFALOCHKA::MGAFALOCHKA_IPPAMGGBOJJ => 63,
+            MGAFALOCHKA::MGAFALOCHKA_GKACNPEKLFM => 64,
+            MGAFALOCHKA::MGAFALOCHKA_CHNHBFCCJAA => 65,
+            MGAFALOCHKA::MGAFALOCHKA_INJLFBFMCJM => 66,
+            MGAFALOCHKA::MGAFALOCHKA_DEFCIGKJFOM => 67,
+            MGAFALOCHKA::MGAFALOCHKA_JIBHEGIINHD => 68,
+            MGAFALOCHKA::MGAFALOCHKA_CFNCMOPCCNH => 69,
+            MGAFALOCHKA::MGAFALOCHKA_LDPCNALODPL => 70,
+            MGAFALOCHKA::MGAFALOCHKA_ADNJNEJGGDC => 71,
+            MGAFALOCHKA::MGAFALOCHKA_PNGLGNMDKFI => 72,
+            MGAFALOCHKA::MGAFALOCHKA_FKCBJDJPOAC => 73,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -523,54 +523,54 @@ impl MGAFALOCHKA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11MGAFALOCHKA.proto*\xb8\x11\n\x0bMGAFALOCHKA\x12\x1b\n\x17MGAFALOCH\
-    KA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MGAFALOCHKA_HLAAIJFHPCC\x10\x9f*\x12\
-    \x1c\n\x17MGAFALOCHKA_CKDPKANEJBJ\x10\xad+\x12\x1c\n\x17MGAFALOCHKA_BBCE\
-    GLICHBO\x10\xaf+\x12\x1c\n\x17MGAFALOCHKA_PPOCHBFMMHL\x10\xb1+\x12\x1c\n\
-    \x17MGAFALOCHKA_HMPEODAEHAD\x10\xbb*\x12\x1c\n\x17MGAFALOCHKA_DJLGLGIPFK\
-    J\x10\xfb*\x12\x1c\n\x17MGAFALOCHKA_FKCBJDJPOAC\x10\xe4*\x12\x1c\n\x17MG\
-    AFALOCHKA_JPFNCKAFAGM\x10\xf1*\x12\x1c\n\x17MGAFALOCHKA_COANPILADLB\x10\
-    \xcb*\x12\x1c\n\x17MGAFALOCHKA_EDDKBAGIIOD\x10\xb2*\x12\x1c\n\x17MGAFALO\
-    CHKA_DEFCIGKJFOM\x10\x8a+\x12\x1c\n\x17MGAFALOCHKA_BBJHOEONOJJ\x10\xc9*\
-    \x12\x1c\n\x17MGAFALOCHKA_EJCPAMCOPGC\x10\xbc+\x12\x1c\n\x17MGAFALOCHKA_\
-    INJLFBFMCJM\x10\xe0+\x12\x1c\n\x17MGAFALOCHKA_ADNJNEJGGDC\x10\x93+\x12\
-    \x1c\n\x17MGAFALOCHKA_IEMGAEICJBH\x10\xb8*\x12\x1c\n\x17MGAFALOCHKA_MEKP\
-    PCPENMO\x10\xd8*\x12\x1c\n\x17MGAFALOCHKA_OFGPNBPKHHF\x10\xcd*\x12\x1c\n\
-    \x17MGAFALOCHKA_PPOFFIDPLGP\x10\xeb*\x12\x1c\n\x17MGAFALOCHKA_EFGJEDNFBN\
-    B\x10\xf5*\x12\x1c\n\x17MGAFALOCHKA_GLDJNMIEFGI\x10\xb5+\x12\x1c\n\x17MG\
-    AFALOCHKA_GNIDKFANIGF\x10\xef*\x12\x1c\n\x17MGAFALOCHKA_CFNCMOPCCNH\x10\
-    \xdf*\x12\x1c\n\x17MGAFALOCHKA_HBKHLJACNCI\x10\xcc+\x12\x1c\n\x17MGAFALO\
-    CHKA_AOACLOOJNLP\x10\xe2*\x12\x1c\n\x17MGAFALOCHKA_GOHNEBADJNM\x10\xcc*\
-    \x12\x1c\n\x17MGAFALOCHKA_NCCGHAAOHLJ\x10\x9f+\x12\x1c\n\x17MGAFALOCHKA_\
-    LDPCNALODPL\x10\xa0+\x12\x1c\n\x17MGAFALOCHKA_DEBAMNEOLAL\x10\xb9*\x12\
-    \x1c\n\x17MGAFALOCHKA_EKMEKMFEFFJ\x10\xfd*\x12\x1c\n\x17MGAFALOCHKA_OIML\
-    JPNEEHG\x10\xdf+\x12\x1c\n\x17MGAFALOCHKA_OGNMJKIANLO\x10\xab*\x12\x1c\n\
-    \x17MGAFALOCHKA_KECIOGLONGF\x10\xc5+\x12\x1c\n\x17MGAFALOCHKA_LDCLIBNABE\
-    K\x10\x95+\x12\x1c\n\x17MGAFALOCHKA_NANOCPFIDFJ\x10\xce*\x12\x1c\n\x17MG\
-    AFALOCHKA_BJJFGPCPOJP\x10\xb9+\x12\x1c\n\x17MGAFALOCHKA_HMHPNGHANFM\x10\
-    \xe0*\x12\x1c\n\x17MGAFALOCHKA_GKACNPEKLFM\x10\xe5*\x12\x1c\n\x17MGAFALO\
-    CHKA_ENHFBINMBEP\x10\xc1+\x12\x1c\n\x17MGAFALOCHKA_PPHFMJFNMFB\x10\xa8*\
-    \x12\x1c\n\x17MGAFALOCHKA_IPPAMGGBOJJ\x10\x89+\x12\x1c\n\x17MGAFALOCHKA_\
-    EJFJAINAICB\x10\xb2+\x12\x1c\n\x17MGAFALOCHKA_OEOAIAICMEA\x10\x9d+\x12\
-    \x1c\n\x17MGAFALOCHKA_ANLHNMKFJJF\x10\x96+\x12\x1c\n\x17MGAFALOCHKA_APOK\
-    JOHILFO\x10\xdc*\x12\x1c\n\x17MGAFALOCHKA_NDJDMHKPGCJ\x10\xa2*\x12\x1c\n\
-    \x17MGAFALOCHKA_MAIKACGOEFB\x10\xa7*\x12\x1c\n\x17MGAFALOCHKA_JAGDJEBLEH\
-    D\x10\xd5+\x12\x1c\n\x17MGAFALOCHKA_NLHKGMGLBOD\x10\xca+\x12\x1c\n\x17MG\
-    AFALOCHKA_GEJLPCMIHBA\x10\xf3*\x12\x1c\n\x17MGAFALOCHKA_EKNJANBAKIP\x10\
-    \xb3*\x12\x1c\n\x17MGAFALOCHKA_FBMDGOFCOFL\x10\xae*\x12\x1c\n\x17MGAFALO\
-    CHKA_PBBFKOCNGCK\x10\x81+\x12\x1c\n\x17MGAFALOCHKA_JKJFEHFCGLA\x10\xaf*\
-    \x12\x1c\n\x17MGAFALOCHKA_JIBHEGIINHD\x10\xb0+\x12\x1c\n\x17MGAFALOCHKA_\
-    JOELINKIDEK\x10\xa9*\x12\x1c\n\x17MGAFALOCHKA_MCMCIABIEHF\x10\xec*\x12\
-    \x1c\n\x17MGAFALOCHKA_HIOMDJAIIBL\x10\xab+\x12\x1c\n\x17MGAFALOCHKA_INPD\
-    GFICHDF\x10\x87+\x12\x1c\n\x17MGAFALOCHKA_JAPFHNKBFAP\x10\x8c+\x12\x1c\n\
-    \x17MGAFALOCHKA_PMKFMGDDKHE\x10\xed*\x12\x1c\n\x17MGAFALOCHKA_PNGLGNMDKF\
-    I\x10\xb0*\x12\x1c\n\x17MGAFALOCHKA_LMIAHFLCIFD\x10\x86+\x12\x1c\n\x17MG\
-    AFALOCHKA_IANLHKCHNIH\x10\xff*\x12\x1c\n\x17MGAFALOCHKA_PJAJDFMJGKA\x10\
-    \xd6*\x12\x1c\n\x17MGAFALOCHKA_GHDIJAOGBEC\x10\xc7*\x12\x1c\n\x17MGAFALO\
-    CHKA_GPAHNLLHJJJ\x10\xa4+\x12\x1c\n\x17MGAFALOCHKA_FANHHDLAKGH\x10\xdd*\
-    \x12\x1c\n\x17MGAFALOCHKA_PHKEPHJMFBL\x10\xde+\x12\x1c\n\x17MGAFALOCHKA_\
-    NCFHGIJBPMA\x10\xbe*\x12\x1c\n\x17MGAFALOCHKA_CHNHBFCCJAA\x10\xf0*\x12\
-    \x1c\n\x17MGAFALOCHKA_IKNFLHGOGKD\x10\x9e+\x12\x1c\n\x17MGAFALOCHKA_GGAN\
-    FIMGOFA\x10\xbd*b\x06proto3\
+    KA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MGAFALOCHKA_GPAHNLLHJJJ\x10\x96+\x12\
+    \x1c\n\x17MGAFALOCHKA_GNIDKFANIGF\x10\xc4*\x12\x1c\n\x17MGAFALOCHKA_KECI\
+    OGLONGF\x10\xb9*\x12\x1c\n\x17MGAFALOCHKA_MEKPPCPENMO\x10\x86+\x12\x1c\n\
+    \x17MGAFALOCHKA_LMIAHFLCIFD\x10\xc0+\x12\x1c\n\x17MGAFALOCHKA_BBJHOEONOJ\
+    J\x10\xf7*\x12\x1c\n\x17MGAFALOCHKA_OEOAIAICMEA\x10\xbd*\x12\x1c\n\x17MG\
+    AFALOCHKA_GOHNEBADJNM\x10\xd2*\x12\x1c\n\x17MGAFALOCHKA_FANHHDLAKGH\x10\
+    \xc3+\x12\x1c\n\x17MGAFALOCHKA_CKDPKANEJBJ\x10\xbc+\x12\x1c\n\x17MGAFALO\
+    CHKA_OFGPNBPKHHF\x10\xf2*\x12\x1c\n\x17MGAFALOCHKA_PJAJDFMJGKA\x10\xc5*\
+    \x12\x1c\n\x17MGAFALOCHKA_OIMLJPNEEHG\x10\xcf+\x12\x1c\n\x17MGAFALOCHKA_\
+    JAGDJEBLEHD\x10\x8a+\x12\x1c\n\x17MGAFALOCHKA_NCCGHAAOHLJ\x10\x9a+\x12\
+    \x1c\n\x17MGAFALOCHKA_MCMCIABIEHF\x10\xb0*\x12\x1c\n\x17MGAFALOCHKA_NDJD\
+    MHKPGCJ\x10\x91+\x12\x1c\n\x17MGAFALOCHKA_NANOCPFIDFJ\x10\xba*\x12\x1c\n\
+    \x17MGAFALOCHKA_BJJFGPCPOJP\x10\xd1*\x12\x1c\n\x17MGAFALOCHKA_HIOMDJAIIB\
+    L\x10\xc9*\x12\x1c\n\x17MGAFALOCHKA_HMHPNGHANFM\x10\xd8+\x12\x1c\n\x17MG\
+    AFALOCHKA_MAIKACGOEFB\x10\xb8*\x12\x1c\n\x17MGAFALOCHKA_GHDIJAOGBEC\x10\
+    \xc1*\x12\x1c\n\x17MGAFALOCHKA_ENHFBINMBEP\x10\x8d+\x12\x1c\n\x17MGAFALO\
+    CHKA_DJLGLGIPFKJ\x10\xbd+\x12\x1c\n\x17MGAFALOCHKA_PHKEPHJMFBL\x10\xa7*\
+    \x12\x1c\n\x17MGAFALOCHKA_AOACLOOJNLP\x10\xde*\x12\x1c\n\x17MGAFALOCHKA_\
+    HMPEODAEHAD\x10\xd4*\x12\x1c\n\x17MGAFALOCHKA_PPHFMJFNMFB\x10\xd5+\x12\
+    \x1c\n\x17MGAFALOCHKA_NLHKGMGLBOD\x10\xc2+\x12\x1c\n\x17MGAFALOCHKA_EDDK\
+    BAGIIOD\x10\xd4+\x12\x1c\n\x17MGAFALOCHKA_LDCLIBNABEK\x10\xfb*\x12\x1c\n\
+    \x17MGAFALOCHKA_EFGJEDNFBNB\x10\x9c+\x12\x1c\n\x17MGAFALOCHKA_EKNJANBAKI\
+    P\x10\x9b*\x12\x1c\n\x17MGAFALOCHKA_GLDJNMIEFGI\x10\xa1+\x12\x1c\n\x17MG\
+    AFALOCHKA_GGANFIMGOFA\x10\xd5*\x12\x1c\n\x17MGAFALOCHKA_PPOCHBFMMHL\x10\
+    \xab+\x12\x1c\n\x17MGAFALOCHKA_ANLHNMKFJJF\x10\xaa*\x12\x1c\n\x17MGAFALO\
+    CHKA_BBCEGLICHBO\x10\xc6+\x12\x1c\n\x17MGAFALOCHKA_PPOFFIDPLGP\x10\x87+\
+    \x12\x1c\n\x17MGAFALOCHKA_PBBFKOCNGCK\x10\xbc*\x12\x1c\n\x17MGAFALOCHKA_\
+    JOELINKIDEK\x10\xb2*\x12\x1c\n\x17MGAFALOCHKA_HBKHLJACNCI\x10\xa0+\x12\
+    \x1c\n\x17MGAFALOCHKA_IEMGAEICJBH\x10\x9d*\x12\x1c\n\x17MGAFALOCHKA_FBMD\
+    GOFCOFL\x10\x9f*\x12\x1c\n\x17MGAFALOCHKA_OGNMJKIANLO\x10\xc6*\x12\x1c\n\
+    \x17MGAFALOCHKA_IANLHKCHNIH\x10\xd6+\x12\x1c\n\x17MGAFALOCHKA_JAPFHNKBFA\
+    P\x10\xe0+\x12\x1c\n\x17MGAFALOCHKA_JPFNCKAFAGM\x10\xa2*\x12\x1c\n\x17MG\
+    AFALOCHKA_PMKFMGDDKHE\x10\xa2+\x12\x1c\n\x17MGAFALOCHKA_EKMEKMFEFFJ\x10\
+    \x97+\x12\x1c\n\x17MGAFALOCHKA_APOKJOHILFO\x10\xae+\x12\x1c\n\x17MGAFALO\
+    CHKA_IKNFLHGOGKD\x10\x9a*\x12\x1c\n\x17MGAFALOCHKA_NCFHGIJBPMA\x10\xa4*\
+    \x12\x1c\n\x17MGAFALOCHKA_EJCPAMCOPGC\x10\xc5+\x12\x1c\n\x17MGAFALOCHKA_\
+    GEJLPCMIHBA\x10\xff*\x12\x1c\n\x17MGAFALOCHKA_DEBAMNEOLAL\x10\xdb+\x12\
+    \x1c\n\x17MGAFALOCHKA_JKJFEHFCGLA\x10\xcc+\x12\x1c\n\x17MGAFALOCHKA_HLAA\
+    IJFHPCC\x10\xbf+\x12\x1c\n\x17MGAFALOCHKA_COANPILADLB\x10\xcc*\x12\x1c\n\
+    \x17MGAFALOCHKA_INPDGFICHDF\x10\xb2+\x12\x1c\n\x17MGAFALOCHKA_EJFJAINAIC\
+    B\x10\xf6*\x12\x1c\n\x17MGAFALOCHKA_IPPAMGGBOJJ\x10\xf8*\x12\x1c\n\x17MG\
+    AFALOCHKA_GKACNPEKLFM\x10\x8b+\x12\x1c\n\x17MGAFALOCHKA_CHNHBFCCJAA\x10\
+    \xb5*\x12\x1c\n\x17MGAFALOCHKA_INJLFBFMCJM\x10\xf9*\x12\x1c\n\x17MGAFALO\
+    CHKA_DEFCIGKJFOM\x10\xd3*\x12\x1c\n\x17MGAFALOCHKA_JIBHEGIINHD\x10\xb7+\
+    \x12\x1c\n\x17MGAFALOCHKA_CFNCMOPCCNH\x10\xf3*\x12\x1c\n\x17MGAFALOCHKA_\
+    LDPCNALODPL\x10\xb3+\x12\x1c\n\x17MGAFALOCHKA_ADNJNEJGGDC\x10\xd6*\x12\
+    \x1c\n\x17MGAFALOCHKA_PNGLGNMDKFI\x10\xfe*\x12\x1c\n\x17MGAFALOCHKA_FKCB\
+    JDJPOAC\x10\xa6+b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

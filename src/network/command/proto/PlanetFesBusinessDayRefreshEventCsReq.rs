@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesBusinessDayRefreshEventCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.LAOACNPDOLD)
-    pub LAOACNPDOLD: u32,
     // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.LFKDANGNJIM)
     pub LFKDANGNJIM: u32,
     // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.CEIONHPDNDP)
     pub CEIONHPDNDP: bool,
+    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.LAOACNPDOLD)
+    pub LAOACNPDOLD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBusinessDayRefreshEventCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl PlanetFesBusinessDayRefreshEventCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAOACNPDOLD",
-            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.LAOACNPDOLD },
-            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.LAOACNPDOLD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "LFKDANGNJIM",
             |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.LFKDANGNJIM },
             |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.LFKDANGNJIM },
@@ -67,6 +62,11 @@ impl PlanetFesBusinessDayRefreshEventCsReq {
             "CEIONHPDNDP",
             |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.CEIONHPDNDP },
             |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.CEIONHPDNDP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LAOACNPDOLD",
+            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.LAOACNPDOLD },
+            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.LAOACNPDOLD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBusinessDayRefreshEventCsReq>(
             "PlanetFesBusinessDayRefreshEventCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.LAOACNPDOLD = is.read_uint32()?;
-                },
-                88 => {
+                8 => {
                     self.LFKDANGNJIM = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.CEIONHPDNDP = is.read_bool()?;
+                },
+                112 => {
+                    self.LAOACNPDOLD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LAOACNPDOLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LAOACNPDOLD);
-        }
         if self.LFKDANGNJIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LFKDANGNJIM);
+            my_size += ::protobuf::rt::uint32_size(1, self.LFKDANGNJIM);
         }
         if self.CEIONHPDNDP != false {
             my_size += 1 + 1;
+        }
+        if self.LAOACNPDOLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LAOACNPDOLD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LAOACNPDOLD != 0 {
-            os.write_uint32(5, self.LAOACNPDOLD)?;
-        }
         if self.LFKDANGNJIM != 0 {
-            os.write_uint32(11, self.LFKDANGNJIM)?;
+            os.write_uint32(1, self.LFKDANGNJIM)?;
         }
         if self.CEIONHPDNDP != false {
-            os.write_bool(13, self.CEIONHPDNDP)?;
+            os.write_bool(11, self.CEIONHPDNDP)?;
+        }
+        if self.LAOACNPDOLD != 0 {
+            os.write_uint32(14, self.LAOACNPDOLD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     }
 
     fn clear(&mut self) {
-        self.LAOACNPDOLD = 0;
         self.LFKDANGNJIM = 0;
         self.CEIONHPDNDP = false;
+        self.LAOACNPDOLD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBusinessDayRefreshEventCsReq {
         static instance: PlanetFesBusinessDayRefreshEventCsReq = PlanetFesBusinessDayRefreshEventCsReq {
-            LAOACNPDOLD: 0,
             LFKDANGNJIM: 0,
             CEIONHPDNDP: false,
+            LAOACNPDOLD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBusinessDayRefreshEventCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+PlanetFesBusinessDayRefreshEventCsReq.proto\"\x8d\x01\n%PlanetFesBusi\
-    nessDayRefreshEventCsReq\x12\x20\n\x0bLAOACNPDOLD\x18\x05\x20\x01(\rR\
-    \x0bLAOACNPDOLD\x12\x20\n\x0bLFKDANGNJIM\x18\x0b\x20\x01(\rR\x0bLFKDANGN\
-    JIM\x12\x20\n\x0bCEIONHPDNDP\x18\r\x20\x01(\x08R\x0bCEIONHPDNDPb\x06prot\
-    o3\
+    nessDayRefreshEventCsReq\x12\x20\n\x0bLFKDANGNJIM\x18\x01\x20\x01(\rR\
+    \x0bLFKDANGNJIM\x12\x20\n\x0bCEIONHPDNDP\x18\x0b\x20\x01(\x08R\x0bCEIONH\
+    PDNDP\x12\x20\n\x0bLAOACNPDOLD\x18\x0e\x20\x01(\rR\x0bLAOACNPDOLDb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

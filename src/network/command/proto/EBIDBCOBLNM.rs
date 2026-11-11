@@ -86,13 +86,13 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                24 => {
                     self.IHDPGGCJIAK = is.read_uint32()?;
                 },
-                96 => {
+                88 => {
                     self.FOPMPMPNCOA = is.read_uint32()?;
                 },
-                120 => {
+                96 => {
                     self.BNLNGGCHFNF = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for EBIDBCOBLNM {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.IHDPGGCJIAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IHDPGGCJIAK);
+            my_size += ::protobuf::rt::uint32_size(3, self.IHDPGGCJIAK);
         }
         if self.FOPMPMPNCOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FOPMPMPNCOA);
+            my_size += ::protobuf::rt::uint32_size(11, self.FOPMPMPNCOA);
         }
         if self.BNLNGGCHFNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BNLNGGCHFNF);
+            my_size += ::protobuf::rt::uint32_size(12, self.BNLNGGCHFNF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for EBIDBCOBLNM {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.IHDPGGCJIAK != 0 {
-            os.write_uint32(2, self.IHDPGGCJIAK)?;
+            os.write_uint32(3, self.IHDPGGCJIAK)?;
         }
         if self.FOPMPMPNCOA != 0 {
-            os.write_uint32(12, self.FOPMPMPNCOA)?;
+            os.write_uint32(11, self.FOPMPMPNCOA)?;
         }
         if self.BNLNGGCHFNF != 0 {
-            os.write_uint32(15, self.BNLNGGCHFNF)?;
+            os.write_uint32(12, self.BNLNGGCHFNF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for EBIDBCOBLNM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EBIDBCOBLNM.proto\"s\n\x0bEBIDBCOBLNM\x12\x20\n\x0bIHDPGGCJIAK\x18\
-    \x02\x20\x01(\rR\x0bIHDPGGCJIAK\x12\x20\n\x0bFOPMPMPNCOA\x18\x0c\x20\x01\
-    (\rR\x0bFOPMPMPNCOA\x12\x20\n\x0bBNLNGGCHFNF\x18\x0f\x20\x01(\rR\x0bBNLN\
+    \x03\x20\x01(\rR\x0bIHDPGGCJIAK\x12\x20\n\x0bFOPMPMPNCOA\x18\x0b\x20\x01\
+    (\rR\x0bFOPMPMPNCOA\x12\x20\n\x0bBNLNGGCHFNF\x18\x0c\x20\x01(\rR\x0bBNLN\
     GGCHFNFb\x06proto3\
 ";
 

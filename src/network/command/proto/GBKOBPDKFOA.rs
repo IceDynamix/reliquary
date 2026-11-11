@@ -45,7 +45,7 @@ impl GBKOBPDKFOA {
         ::std::default::Default::default()
     }
 
-    // .HOKMNINJPBP LCMADDIMION = 2;
+    // .HOKMNINJPBP LCMADDIMION = 7;
 
     pub fn LCMADDIMION(&self) -> &super::HOKMNINJPBP::HOKMNINJPBP {
         match self.FJIANHMABAB {
@@ -94,7 +94,7 @@ impl GBKOBPDKFOA {
         }
     }
 
-    // .NJPJKJBMKGB PAGPNOKLNOM = 10;
+    // .NJPJKJBMKGB PAGPNOKLNOM = 13;
 
     pub fn PAGPNOKLNOM(&self) -> &super::NJPJKJBMKGB::NJPJKJBMKGB {
         match self.FJIANHMABAB {
@@ -235,10 +235,10 @@ impl ::protobuf::Message for GBKOBPDKFOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                58 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(is.read_message()?));
                 },
-                82 => {
+                106 => {
                     self.FJIANHMABAB = ::std::option::Option::Some(gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(is.read_message()?));
                 },
                 114 => {
@@ -281,10 +281,10 @@ impl ::protobuf::Message for GBKOBPDKFOA {
         if let ::std::option::Option::Some(ref v) = self.FJIANHMABAB {
             match v {
                 &gbkobpdkfoa::FJIANHMABAB::LCMADDIMION(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::PAGPNOKLNOM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
                 },
                 &gbkobpdkfoa::FJIANHMABAB::FNJBFPALOAO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
@@ -375,8 +375,8 @@ pub mod gbkobpdkfoa {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11GBKOBPDKFOA.proto\x1a\x11GJJNNBKCJKF.proto\x1a\x11HOKMNINJPBP.prot\
     o\x1a\x11NJPJKJBMKGB.proto\"\xb2\x01\n\x0bGBKOBPDKFOA\x120\n\x0bLCMADDIM\
-    ION\x18\x02\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMION\x120\n\x0bP\
-    AGPNOKLNOM\x18\n\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\n\
+    ION\x18\x07\x20\x01(\x0b2\x0c.HOKMNINJPBPH\0R\x0bLCMADDIMION\x120\n\x0bP\
+    AGPNOKLNOM\x18\r\x20\x01(\x0b2\x0c.NJPJKJBMKGBH\0R\x0bPAGPNOKLNOM\x120\n\
     \x0bFNJBFPALOAO\x18\x0e\x20\x01(\x0b2\x0c.GJJNNBKCJKFH\0R\x0bFNJBFPALOAO\
     B\r\n\x0bFJIANHMABABb\x06proto3\
 ";

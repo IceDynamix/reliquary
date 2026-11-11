@@ -72,7 +72,7 @@ impl ::protobuf::Message for RecvAiPamChatEventScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.OOOACLEFDGM)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for RecvAiPamChatEventScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.OOOACLEFDGM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::reflect::ProtobufValue for RecvAiPamChatEventScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RecvAiPamChatEventScNotify.proto\x1a\x11FAIFDBLLGKK.proto\"L\n\x1a\
-    RecvAiPamChatEventScNotify\x12.\n\x0bOOOACLEFDGM\x18\x01\x20\x01(\x0b2\
+    RecvAiPamChatEventScNotify\x12.\n\x0bOOOACLEFDGM\x18\x0e\x20\x01(\x0b2\
     \x0c.FAIFDBLLGKKR\x0bOOOACLEFDGMb\x06proto3\
 ";
 

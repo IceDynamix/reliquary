@@ -79,16 +79,16 @@ impl ::protobuf::Message for NEDHMLJKIOA {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.DJJBKIGBGJA)?;
                 },
-                80 => {
+                56 => {
                     self.DJJBKIGBGJA.push(is.read_uint32()?);
                 },
-                90 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.NPHOIMEEDHM)?;
                 },
-                88 => {
+                112 => {
                     self.NPHOIMEEDHM.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,16 +103,16 @@ impl ::protobuf::Message for NEDHMLJKIOA {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.DJJBKIGBGJA);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NPHOIMEEDHM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.DJJBKIGBGJA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NPHOIMEEDHM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.DJJBKIGBGJA)?;
-        os.write_repeated_packed_uint32(11, &self.NPHOIMEEDHM)?;
+        os.write_repeated_packed_uint32(7, &self.DJJBKIGBGJA)?;
+        os.write_repeated_packed_uint32(14, &self.NPHOIMEEDHM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for NEDHMLJKIOA {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEDHMLJKIOA.proto\"Q\n\x0bNEDHMLJKIOA\x12\x20\n\x0bDJJBKIGBGJA\x18\
-    \n\x20\x03(\rR\x0bDJJBKIGBGJA\x12\x20\n\x0bNPHOIMEEDHM\x18\x0b\x20\x03(\
-    \rR\x0bNPHOIMEEDHMb\x06proto3\
+    \x07\x20\x03(\rR\x0bDJJBKIGBGJA\x12\x20\n\x0bNPHOIMEEDHM\x18\x0e\x20\x03\
+    (\rR\x0bNPHOIMEEDHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -86,13 +86,13 @@ impl ::protobuf::Message for FAHFBEJCKLF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                8 => {
                     self.JBGIFBGMLMF = is.read_uint32()?;
                 },
-                72 => {
+                32 => {
                     self.type_ = is.read_uint32()?;
                 },
-                80 => {
+                48 => {
                     self.PIJBPDPEODG = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for FAHFBEJCKLF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.JBGIFBGMLMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JBGIFBGMLMF);
+            my_size += ::protobuf::rt::uint32_size(1, self.JBGIFBGMLMF);
         }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.type_);
+            my_size += ::protobuf::rt::uint32_size(4, self.type_);
         }
         if self.PIJBPDPEODG != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.PIJBPDPEODG);
+            my_size += ::protobuf::rt::uint32_size(6, self.PIJBPDPEODG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for FAHFBEJCKLF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.JBGIFBGMLMF != 0 {
-            os.write_uint32(7, self.JBGIFBGMLMF)?;
+            os.write_uint32(1, self.JBGIFBGMLMF)?;
         }
         if self.type_ != 0 {
-            os.write_uint32(9, self.type_)?;
+            os.write_uint32(4, self.type_)?;
         }
         if self.PIJBPDPEODG != 0 {
-            os.write_uint32(10, self.PIJBPDPEODG)?;
+            os.write_uint32(6, self.PIJBPDPEODG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FAHFBEJCKLF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FAHFBEJCKLF.proto\"e\n\x0bFAHFBEJCKLF\x12\x20\n\x0bJBGIFBGMLMF\x18\
-    \x07\x20\x01(\rR\x0bJBGIFBGMLMF\x12\x12\n\x04type\x18\t\x20\x01(\rR\x04t\
-    ype\x12\x20\n\x0bPIJBPDPEODG\x18\n\x20\x01(\rR\x0bPIJBPDPEODGb\x06proto3\
+    \x01\x20\x01(\rR\x0bJBGIFBGMLMF\x12\x12\n\x04type\x18\x04\x20\x01(\rR\
+    \x04type\x12\x20\n\x0bPIJBPDPEODG\x18\x06\x20\x01(\rR\x0bPIJBPDPEODGb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

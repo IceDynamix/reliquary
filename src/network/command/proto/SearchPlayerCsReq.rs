@@ -79,13 +79,13 @@ impl ::protobuf::Message for SearchPlayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.DDNKHDIKAEL = is.read_bool()?;
                 },
-                90 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.uid_list)?;
                 },
-                88 => {
+                64 => {
                     self.uid_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SearchPlayerCsReq {
         if self.DDNKHDIKAEL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.uid_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.uid_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for SearchPlayerCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.DDNKHDIKAEL != false {
-            os.write_bool(10, self.DDNKHDIKAEL)?;
+            os.write_bool(1, self.DDNKHDIKAEL)?;
         }
-        os.write_repeated_packed_uint32(11, &self.uid_list)?;
+        os.write_repeated_packed_uint32(8, &self.uid_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SearchPlayerCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SearchPlayerCsReq.proto\"P\n\x11SearchPlayerCsReq\x12\x20\n\x0bDDN\
-    KHDIKAEL\x18\n\x20\x01(\x08R\x0bDDNKHDIKAEL\x12\x19\n\x08uid_list\x18\
-    \x0b\x20\x03(\rR\x07uidListb\x06proto3\
+    KHDIKAEL\x18\x01\x20\x01(\x08R\x0bDDNKHDIKAEL\x12\x19\n\x08uid_list\x18\
+    \x08\x20\x03(\rR\x07uidListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

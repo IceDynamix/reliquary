@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PDFEPMMIKDF {
     // message fields
+    // @@protoc_insertion_point(field:PDFEPMMIKDF.page_type)
+    pub page_type: u32,
     // @@protoc_insertion_point(field:PDFEPMMIKDF.KOMOGINENAC)
     pub KOMOGINENAC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PDFEPMMIKDF.AIJPKJICFDJ)
     pub AIJPKJICFDJ: u32,
-    // @@protoc_insertion_point(field:PDFEPMMIKDF.page_type)
-    pub page_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PDFEPMMIKDF.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl PDFEPMMIKDF {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "page_type",
+            |m: &PDFEPMMIKDF| { &m.page_type },
+            |m: &mut PDFEPMMIKDF| { &mut m.page_type },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "KOMOGINENAC",
             |m: &PDFEPMMIKDF| { &m.KOMOGINENAC },
@@ -62,11 +67,6 @@ impl PDFEPMMIKDF {
             "AIJPKJICFDJ",
             |m: &PDFEPMMIKDF| { &m.AIJPKJICFDJ },
             |m: &mut PDFEPMMIKDF| { &mut m.AIJPKJICFDJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "page_type",
-            |m: &PDFEPMMIKDF| { &m.page_type },
-            |m: &mut PDFEPMMIKDF| { &mut m.page_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PDFEPMMIKDF>(
             "PDFEPMMIKDF",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for PDFEPMMIKDF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                16 => {
+                    self.page_type = is.read_uint32()?;
+                },
+                58 => {
                     is.read_repeated_packed_uint32_into(&mut self.KOMOGINENAC)?;
                 },
-                8 => {
+                56 => {
                     self.KOMOGINENAC.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.AIJPKJICFDJ = is.read_uint32()?;
-                },
                 64 => {
-                    self.page_type = is.read_uint32()?;
+                    self.AIJPKJICFDJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for PDFEPMMIKDF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KOMOGINENAC);
-        if self.AIJPKJICFDJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AIJPKJICFDJ);
-        }
         if self.page_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.page_type);
+            my_size += ::protobuf::rt::uint32_size(2, self.page_type);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.KOMOGINENAC);
+        if self.AIJPKJICFDJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AIJPKJICFDJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for PDFEPMMIKDF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.KOMOGINENAC)?;
-        if self.AIJPKJICFDJ != 0 {
-            os.write_uint32(6, self.AIJPKJICFDJ)?;
-        }
         if self.page_type != 0 {
-            os.write_uint32(8, self.page_type)?;
+            os.write_uint32(2, self.page_type)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.KOMOGINENAC)?;
+        if self.AIJPKJICFDJ != 0 {
+            os.write_uint32(8, self.AIJPKJICFDJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for PDFEPMMIKDF {
     }
 
     fn clear(&mut self) {
+        self.page_type = 0;
         self.KOMOGINENAC.clear();
         self.AIJPKJICFDJ = 0;
-        self.page_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PDFEPMMIKDF {
         static instance: PDFEPMMIKDF = PDFEPMMIKDF {
+            page_type: 0,
             KOMOGINENAC: ::std::vec::Vec::new(),
             AIJPKJICFDJ: 0,
-            page_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for PDFEPMMIKDF {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PDFEPMMIKDF.proto\"n\n\x0bPDFEPMMIKDF\x12\x20\n\x0bKOMOGINENAC\x18\
-    \x01\x20\x03(\rR\x0bKOMOGINENAC\x12\x20\n\x0bAIJPKJICFDJ\x18\x06\x20\x01\
-    (\rR\x0bAIJPKJICFDJ\x12\x1b\n\tpage_type\x18\x08\x20\x01(\rR\x08pageType\
-    b\x06proto3\
+    \n\x11PDFEPMMIKDF.proto\"n\n\x0bPDFEPMMIKDF\x12\x1b\n\tpage_type\x18\x02\
+    \x20\x01(\rR\x08pageType\x12\x20\n\x0bKOMOGINENAC\x18\x07\x20\x03(\rR\
+    \x0bKOMOGINENAC\x12\x20\n\x0bAIJPKJICFDJ\x18\x08\x20\x01(\rR\x0bAIJPKJIC\
+    FDJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

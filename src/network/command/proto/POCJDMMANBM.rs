@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct POCJDMMANBM {
     // message fields
-    // @@protoc_insertion_point(field:POCJDMMANBM.OPDCMCFOFAA)
-    pub OPDCMCFOFAA: u32,
     // @@protoc_insertion_point(field:POCJDMMANBM.ABBNGCPECAI)
     pub ABBNGCPECAI: ::protobuf::MessageField<super::MONJNCPINKN::MONJNCPINKN>,
-    // @@protoc_insertion_point(field:POCJDMMANBM.NFGMOPCCPIC)
-    pub NFGMOPCCPIC: u32,
-    // @@protoc_insertion_point(field:POCJDMMANBM.ABGEKPJHHIA)
-    pub ABGEKPJHHIA: bool,
     // @@protoc_insertion_point(field:POCJDMMANBM.OGDKJPDFFAI)
     pub OGDKJPDFFAI: ::std::vec::Vec<super::HDEIAANGMDB::HDEIAANGMDB>,
+    // @@protoc_insertion_point(field:POCJDMMANBM.ABGEKPJHHIA)
+    pub ABGEKPJHHIA: bool,
+    // @@protoc_insertion_point(field:POCJDMMANBM.OPDCMCFOFAA)
+    pub OPDCMCFOFAA: u32,
+    // @@protoc_insertion_point(field:POCJDMMANBM.NFGMOPCCPIC)
+    pub NFGMOPCCPIC: u32,
     // @@protoc_insertion_point(field:POCJDMMANBM.DLDJEOPKNMB)
     pub DLDJEOPKNMB: ::std::vec::Vec<u32>,
     // special fields
@@ -59,30 +59,30 @@ impl POCJDMMANBM {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPDCMCFOFAA",
-            |m: &POCJDMMANBM| { &m.OPDCMCFOFAA },
-            |m: &mut POCJDMMANBM| { &mut m.OPDCMCFOFAA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MONJNCPINKN::MONJNCPINKN>(
             "ABBNGCPECAI",
             |m: &POCJDMMANBM| { &m.ABBNGCPECAI },
             |m: &mut POCJDMMANBM| { &mut m.ABBNGCPECAI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFGMOPCCPIC",
-            |m: &POCJDMMANBM| { &m.NFGMOPCCPIC },
-            |m: &mut POCJDMMANBM| { &mut m.NFGMOPCCPIC },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OGDKJPDFFAI",
+            |m: &POCJDMMANBM| { &m.OGDKJPDFFAI },
+            |m: &mut POCJDMMANBM| { &mut m.OGDKJPDFFAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ABGEKPJHHIA",
             |m: &POCJDMMANBM| { &m.ABGEKPJHHIA },
             |m: &mut POCJDMMANBM| { &mut m.ABGEKPJHHIA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OGDKJPDFFAI",
-            |m: &POCJDMMANBM| { &m.OGDKJPDFFAI },
-            |m: &mut POCJDMMANBM| { &mut m.OGDKJPDFFAI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPDCMCFOFAA",
+            |m: &POCJDMMANBM| { &m.OPDCMCFOFAA },
+            |m: &mut POCJDMMANBM| { &mut m.OPDCMCFOFAA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFGMOPCCPIC",
+            |m: &POCJDMMANBM| { &m.NFGMOPCCPIC },
+            |m: &mut POCJDMMANBM| { &mut m.NFGMOPCCPIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "DLDJEOPKNMB",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for POCJDMMANBM {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.OPDCMCFOFAA = is.read_uint32()?;
-                },
-                42 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABBNGCPECAI)?;
                 },
-                48 => {
-                    self.NFGMOPCCPIC = is.read_uint32()?;
-                },
-                72 => {
-                    self.ABGEKPJHHIA = is.read_bool()?;
-                },
-                82 => {
+                26 => {
                     self.OGDKJPDFFAI.push(is.read_message()?);
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DLDJEOPKNMB)?;
+                40 => {
+                    self.ABGEKPJHHIA = is.read_bool()?;
+                },
+                48 => {
+                    self.OPDCMCFOFAA = is.read_uint32()?;
                 },
                 104 => {
+                    self.NFGMOPCCPIC = is.read_uint32()?;
+                },
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DLDJEOPKNMB)?;
+                },
+                120 => {
                     self.DLDJEOPKNMB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -140,46 +140,46 @@ impl ::protobuf::Message for POCJDMMANBM {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OPDCMCFOFAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.OPDCMCFOFAA);
-        }
         if let Some(v) = self.ABBNGCPECAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NFGMOPCCPIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NFGMOPCCPIC);
-        }
-        if self.ABGEKPJHHIA != false {
-            my_size += 1 + 1;
         }
         for value in &self.OGDKJPDFFAI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DLDJEOPKNMB);
+        if self.ABGEKPJHHIA != false {
+            my_size += 1 + 1;
+        }
+        if self.OPDCMCFOFAA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.OPDCMCFOFAA);
+        }
+        if self.NFGMOPCCPIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.NFGMOPCCPIC);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DLDJEOPKNMB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OPDCMCFOFAA != 0 {
-            os.write_uint32(4, self.OPDCMCFOFAA)?;
-        }
         if let Some(v) = self.ABBNGCPECAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.NFGMOPCCPIC != 0 {
-            os.write_uint32(6, self.NFGMOPCCPIC)?;
-        }
-        if self.ABGEKPJHHIA != false {
-            os.write_bool(9, self.ABGEKPJHHIA)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         for v in &self.OGDKJPDFFAI {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        os.write_repeated_packed_uint32(13, &self.DLDJEOPKNMB)?;
+        if self.ABGEKPJHHIA != false {
+            os.write_bool(5, self.ABGEKPJHHIA)?;
+        }
+        if self.OPDCMCFOFAA != 0 {
+            os.write_uint32(6, self.OPDCMCFOFAA)?;
+        }
+        if self.NFGMOPCCPIC != 0 {
+            os.write_uint32(13, self.NFGMOPCCPIC)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.DLDJEOPKNMB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,22 +197,22 @@ impl ::protobuf::Message for POCJDMMANBM {
     }
 
     fn clear(&mut self) {
-        self.OPDCMCFOFAA = 0;
         self.ABBNGCPECAI.clear();
-        self.NFGMOPCCPIC = 0;
-        self.ABGEKPJHHIA = false;
         self.OGDKJPDFFAI.clear();
+        self.ABGEKPJHHIA = false;
+        self.OPDCMCFOFAA = 0;
+        self.NFGMOPCCPIC = 0;
         self.DLDJEOPKNMB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static POCJDMMANBM {
         static instance: POCJDMMANBM = POCJDMMANBM {
-            OPDCMCFOFAA: 0,
             ABBNGCPECAI: ::protobuf::MessageField::none(),
-            NFGMOPCCPIC: 0,
-            ABGEKPJHHIA: false,
             OGDKJPDFFAI: ::std::vec::Vec::new(),
+            ABGEKPJHHIA: false,
+            OPDCMCFOFAA: 0,
+            NFGMOPCCPIC: 0,
             DLDJEOPKNMB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -239,12 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for POCJDMMANBM {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11POCJDMMANBM.proto\x1a\x11HDEIAANGMDB.proto\x1a\x11MONJNCPINKN.prot\
-    o\"\xf5\x01\n\x0bPOCJDMMANBM\x12\x20\n\x0bOPDCMCFOFAA\x18\x04\x20\x01(\r\
-    R\x0bOPDCMCFOFAA\x12.\n\x0bABBNGCPECAI\x18\x05\x20\x01(\x0b2\x0c.MONJNCP\
-    INKNR\x0bABBNGCPECAI\x12\x20\n\x0bNFGMOPCCPIC\x18\x06\x20\x01(\rR\x0bNFG\
-    MOPCCPIC\x12\x20\n\x0bABGEKPJHHIA\x18\t\x20\x01(\x08R\x0bABGEKPJHHIA\x12\
-    .\n\x0bOGDKJPDFFAI\x18\n\x20\x03(\x0b2\x0c.HDEIAANGMDBR\x0bOGDKJPDFFAI\
-    \x12\x20\n\x0bDLDJEOPKNMB\x18\r\x20\x03(\rR\x0bDLDJEOPKNMBb\x06proto3\
+    o\"\xf5\x01\n\x0bPOCJDMMANBM\x12.\n\x0bABBNGCPECAI\x18\x01\x20\x01(\x0b2\
+    \x0c.MONJNCPINKNR\x0bABBNGCPECAI\x12.\n\x0bOGDKJPDFFAI\x18\x03\x20\x03(\
+    \x0b2\x0c.HDEIAANGMDBR\x0bOGDKJPDFFAI\x12\x20\n\x0bABGEKPJHHIA\x18\x05\
+    \x20\x01(\x08R\x0bABGEKPJHHIA\x12\x20\n\x0bOPDCMCFOFAA\x18\x06\x20\x01(\
+    \rR\x0bOPDCMCFOFAA\x12\x20\n\x0bNFGMOPCCPIC\x18\r\x20\x01(\rR\x0bNFGMOPC\
+    CPIC\x12\x20\n\x0bDLDJEOPKNMB\x18\x0f\x20\x03(\rR\x0bDLDJEOPKNMBb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

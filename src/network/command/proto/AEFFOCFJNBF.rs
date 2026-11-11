@@ -79,10 +79,10 @@ impl ::protobuf::Message for AEFFOCFJNBF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                16 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                122 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for AEFFOCFJNBF {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.buff_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.buff_id);
         }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for AEFFOCFJNBF {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.buff_id != 0 {
-            os.write_uint32(11, self.buff_id)?;
+            os.write_uint32(2, self.buff_id)?;
         }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for AEFFOCFJNBF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11AEFFOCFJNBF.proto\x1a\x12ItemCostData.proto\"R\n\x0bAEFFOCFJNBF\
-    \x12\x17\n\x07buff_id\x18\x0b\x20\x01(\rR\x06buffId\x12*\n\tcost_data\
-    \x18\x0f\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    \x12\x17\n\x07buff_id\x18\x02\x20\x01(\rR\x06buffId\x12*\n\tcost_data\
+    \x18\x03\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

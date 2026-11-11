@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFiveDimGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFiveDimGameCsReq.PPJFMBIGIGB)
-    pub PPJFMBIGIGB: ::protobuf::MessageField<super::AHCLMAGAHPN::AHCLMAGAHPN>,
-    // @@protoc_insertion_point(field:EnterFiveDimGameCsReq.HKGDHOPGCKF)
-    pub HKGDHOPGCKF: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // @@protoc_insertion_point(field:EnterFiveDimGameCsReq.OEIBHLMDJKA)
     pub OEIBHLMDJKA: ::protobuf::MessageField<super::BLPHONLBNBO::BLPHONLBNBO>,
+    // @@protoc_insertion_point(field:EnterFiveDimGameCsReq.HKGDHOPGCKF)
+    pub HKGDHOPGCKF: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:EnterFiveDimGameCsReq.PPJFMBIGIGB)
+    pub PPJFMBIGIGB: ::protobuf::MessageField<super::AHCLMAGAHPN::AHCLMAGAHPN>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFiveDimGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EnterFiveDimGameCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHCLMAGAHPN::AHCLMAGAHPN>(
-            "PPJFMBIGIGB",
-            |m: &EnterFiveDimGameCsReq| { &m.PPJFMBIGIGB },
-            |m: &mut EnterFiveDimGameCsReq| { &mut m.PPJFMBIGIGB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLPHONLBNBO::BLPHONLBNBO>(
+            "OEIBHLMDJKA",
+            |m: &EnterFiveDimGameCsReq| { &m.OEIBHLMDJKA },
+            |m: &mut EnterFiveDimGameCsReq| { &mut m.OEIBHLMDJKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "HKGDHOPGCKF",
             |m: &EnterFiveDimGameCsReq| { &m.HKGDHOPGCKF },
             |m: &mut EnterFiveDimGameCsReq| { &mut m.HKGDHOPGCKF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLPHONLBNBO::BLPHONLBNBO>(
-            "OEIBHLMDJKA",
-            |m: &EnterFiveDimGameCsReq| { &m.OEIBHLMDJKA },
-            |m: &mut EnterFiveDimGameCsReq| { &mut m.OEIBHLMDJKA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AHCLMAGAHPN::AHCLMAGAHPN>(
+            "PPJFMBIGIGB",
+            |m: &EnterFiveDimGameCsReq| { &m.PPJFMBIGIGB },
+            |m: &mut EnterFiveDimGameCsReq| { &mut m.PPJFMBIGIGB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFiveDimGameCsReq>(
             "EnterFiveDimGameCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EnterFiveDimGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFMBIGIGB)?;
-                },
                 58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.HKGDHOPGCKF)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPJFMBIGIGB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,7 +107,7 @@ impl ::protobuf::Message for EnterFiveDimGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PPJFMBIGIGB.as_ref() {
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -115,7 +115,7 @@ impl ::protobuf::Message for EnterFiveDimGameCsReq {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+        if let Some(v) = self.PPJFMBIGIGB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -125,14 +125,14 @@ impl ::protobuf::Message for EnterFiveDimGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PPJFMBIGIGB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if let Some(v) = self.HKGDHOPGCKF.as_ref() {
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.HKGDHOPGCKF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.PPJFMBIGIGB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for EnterFiveDimGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.PPJFMBIGIGB.clear();
-        self.HKGDHOPGCKF.clear();
         self.OEIBHLMDJKA.clear();
+        self.HKGDHOPGCKF.clear();
+        self.PPJFMBIGIGB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFiveDimGameCsReq {
         static instance: EnterFiveDimGameCsReq = EnterFiveDimGameCsReq {
-            PPJFMBIGIGB: ::protobuf::MessageField::none(),
-            HKGDHOPGCKF: ::protobuf::MessageField::none(),
             OEIBHLMDJKA: ::protobuf::MessageField::none(),
+            HKGDHOPGCKF: ::protobuf::MessageField::none(),
+            PPJFMBIGIGB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterFiveDimGameCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bEnterFiveDimGameCsReq.proto\x1a\x11AHCLMAGAHPN.proto\x1a\x11BLPHON\
     LBNBO.proto\x1a\x10MotionInfo.proto\"\xa6\x01\n\x15EnterFiveDimGameCsReq\
-    \x12.\n\x0bPPJFMBIGIGB\x18\x06\x20\x01(\x0b2\x0c.AHCLMAGAHPNR\x0bPPJFMBI\
-    GIGB\x12-\n\x0bHKGDHOPGCKF\x18\x07\x20\x01(\x0b2\x0b.MotionInfoR\x0bHKGD\
-    HOPGCKF\x12.\n\x0bOEIBHLMDJKA\x18\x08\x20\x01(\x0b2\x0c.BLPHONLBNBOR\x0b\
-    OEIBHLMDJKAb\x06proto3\
+    \x12.\n\x0bOEIBHLMDJKA\x18\x07\x20\x01(\x0b2\x0c.BLPHONLBNBOR\x0bOEIBHLM\
+    DJKA\x12-\n\x0bHKGDHOPGCKF\x18\t\x20\x01(\x0b2\x0b.MotionInfoR\x0bHKGDHO\
+    PGCKF\x12.\n\x0bPPJFMBIGIGB\x18\x0b\x20\x01(\x0b2\x0c.AHCLMAGAHPNR\x0bPP\
+    JFMBIGIGBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

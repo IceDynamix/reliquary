@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BPJMEGHIEIN {
     // message fields
-    // @@protoc_insertion_point(field:BPJMEGHIEIN.JMAODNEONPF)
-    pub JMAODNEONPF: bool,
-    // @@protoc_insertion_point(field:BPJMEGHIEIN.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:BPJMEGHIEIN.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:BPJMEGHIEIN.ONOHPMDGNNH)
     pub ONOHPMDGNNH: u32,
+    // @@protoc_insertion_point(field:BPJMEGHIEIN.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:BPJMEGHIEIN.JMAODNEONPF)
+    pub JMAODNEONPF: bool,
+    // @@protoc_insertion_point(field:BPJMEGHIEIN.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:BPJMEGHIEIN.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl BPJMEGHIEIN {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JMAODNEONPF",
-            |m: &BPJMEGHIEIN| { &m.JMAODNEONPF },
-            |m: &mut BPJMEGHIEIN| { &mut m.JMAODNEONPF },
+            "ONOHPMDGNNH",
+            |m: &BPJMEGHIEIN| { &m.ONOHPMDGNNH },
+            |m: &mut BPJMEGHIEIN| { &mut m.ONOHPMDGNNH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &BPJMEGHIEIN| { &m.retcode },
             |m: &mut BPJMEGHIEIN| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JMAODNEONPF",
+            |m: &BPJMEGHIEIN| { &m.JMAODNEONPF },
+            |m: &mut BPJMEGHIEIN| { &mut m.JMAODNEONPF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &BPJMEGHIEIN| { &m.reward },
             |m: &mut BPJMEGHIEIN| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONOHPMDGNNH",
-            |m: &BPJMEGHIEIN| { &m.ONOHPMDGNNH },
-            |m: &mut BPJMEGHIEIN| { &mut m.ONOHPMDGNNH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BPJMEGHIEIN>(
             "BPJMEGHIEIN",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BPJMEGHIEIN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.JMAODNEONPF = is.read_bool()?;
+                32 => {
+                    self.ONOHPMDGNNH = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                56 => {
+                    self.JMAODNEONPF = is.read_bool()?;
                 },
-                120 => {
-                    self.ONOHPMDGNNH = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for BPJMEGHIEIN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JMAODNEONPF != false {
-            my_size += 1 + 1;
+        if self.ONOHPMDGNNH != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.ONOHPMDGNNH);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.JMAODNEONPF != false {
+            my_size += 1 + 1;
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ONOHPMDGNNH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ONOHPMDGNNH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for BPJMEGHIEIN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JMAODNEONPF != false {
-            os.write_bool(6, self.JMAODNEONPF)?;
+        if self.ONOHPMDGNNH != 0 {
+            os.write_uint32(4, self.ONOHPMDGNNH)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.JMAODNEONPF != false {
+            os.write_bool(7, self.JMAODNEONPF)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.ONOHPMDGNNH != 0 {
-            os.write_uint32(15, self.ONOHPMDGNNH)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BPJMEGHIEIN {
     }
 
     fn clear(&mut self) {
-        self.JMAODNEONPF = false;
-        self.retcode = 0;
-        self.reward.clear();
         self.ONOHPMDGNNH = 0;
+        self.retcode = 0;
+        self.JMAODNEONPF = false;
+        self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BPJMEGHIEIN {
         static instance: BPJMEGHIEIN = BPJMEGHIEIN {
-            JMAODNEONPF: false,
-            retcode: 0,
-            reward: ::protobuf::MessageField::none(),
             ONOHPMDGNNH: 0,
+            retcode: 0,
+            JMAODNEONPF: false,
+            reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for BPJMEGHIEIN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11BPJMEGHIEIN.proto\x1a\x0eItemList.proto\"\x8e\x01\n\x0bBPJMEGHIEIN\
-    \x12\x20\n\x0bJMAODNEONPF\x18\x06\x20\x01(\x08R\x0bJMAODNEONPF\x12\x18\n\
-    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x0c\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12\x20\n\x0bONOHPMDGNNH\x18\x0f\x20\
-    \x01(\rR\x0bONOHPMDGNNHb\x06proto3\
+    \x12\x20\n\x0bONOHPMDGNNH\x18\x04\x20\x01(\rR\x0bONOHPMDGNNH\x12\x18\n\
+    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x20\n\x0bJMAODNEONPF\x18\
+    \x07\x20\x01(\x08R\x0bJMAODNEONPF\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\
+    \t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

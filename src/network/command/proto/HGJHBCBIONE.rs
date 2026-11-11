@@ -79,10 +79,10 @@ impl ::protobuf::Message for HGJHBCBIONE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                48 => {
                     self.GMKICMIMAAB = is.read_enum_or_unknown()?;
                 },
-                122 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GLOAGDBEKDP)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HGJHBCBIONE {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.GMKICMIMAAB != ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(3, self.GMKICMIMAAB.value());
+            my_size += ::protobuf::rt::int32_size(6, self.GMKICMIMAAB.value());
         }
         if let Some(v) = self.GLOAGDBEKDP.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HGJHBCBIONE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.GMKICMIMAAB != ::protobuf::EnumOrUnknown::new(super::GJJEOANEDDO::GJJEOANEDDO::GJJEOANEDDO_NLCDGIPGFDJ) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.GMKICMIMAAB))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.GMKICMIMAAB))?;
         }
         if let Some(v) = self.GLOAGDBEKDP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for HGJHBCBIONE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HGJHBCBIONE.proto\x1a\x11GJJEOANEDDO.proto\x1a\x11OJHHACMHFKA.prot\
-    o\"m\n\x0bHGJHBCBIONE\x12.\n\x0bGMKICMIMAAB\x18\x03\x20\x01(\x0e2\x0c.GJ\
-    JEOANEDDOR\x0bGMKICMIMAAB\x12.\n\x0bGLOAGDBEKDP\x18\x0f\x20\x01(\x0b2\
+    o\"m\n\x0bHGJHBCBIONE\x12.\n\x0bGMKICMIMAAB\x18\x06\x20\x01(\x0e2\x0c.GJ\
+    JEOANEDDOR\x0bGMKICMIMAAB\x12.\n\x0bGLOAGDBEKDP\x18\x08\x20\x01(\x0b2\
     \x0c.OJHHACMHFKAR\x0bGLOAGDBEKDPb\x06proto3\
 ";
 

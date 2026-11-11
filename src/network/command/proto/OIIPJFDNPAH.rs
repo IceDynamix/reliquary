@@ -86,13 +86,13 @@ impl ::protobuf::Message for OIIPJFDNPAH {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                26 => {
                     self.OFOKOHGPEDO.push(is.read_message()?);
                 },
-                50 => {
+                106 => {
                     self.GOEJIMNENDC.push(is.read_message()?);
                 },
-                74 => {
+                122 => {
                     self.POLMJFIKNHN.push(is.read_message()?);
                 },
                 tag => {
@@ -126,13 +126,13 @@ impl ::protobuf::Message for OIIPJFDNPAH {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.OFOKOHGPEDO {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
         for v in &self.GOEJIMNENDC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         for v in &self.POLMJFIKNHN {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -188,10 +188,10 @@ impl ::protobuf::reflect::ProtobufValue for OIIPJFDNPAH {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIIPJFDNPAH.proto\x1a\x15AreaDynamicInfo.proto\x1a\x11CLLBJDEJFNF.\
     proto\x1a\x11POFNNGOCEOK.proto\"\xa1\x01\n\x0bOIIPJFDNPAH\x12.\n\x0bOFOK\
-    OHGPEDO\x18\x01\x20\x03(\x0b2\x0c.CLLBJDEJFNFR\x0bOFOKOHGPEDO\x122\n\x0b\
-    GOEJIMNENDC\x18\x06\x20\x03(\x0b2\x10.AreaDynamicInfoR\x0bGOEJIMNENDC\
-    \x12.\n\x0bPOLMJFIKNHN\x18\t\x20\x03(\x0b2\x0c.POFNNGOCEOKR\x0bPOLMJFIKN\
-    HNb\x06proto3\
+    OHGPEDO\x18\x03\x20\x03(\x0b2\x0c.CLLBJDEJFNFR\x0bOFOKOHGPEDO\x122\n\x0b\
+    GOEJIMNENDC\x18\r\x20\x03(\x0b2\x10.AreaDynamicInfoR\x0bGOEJIMNENDC\x12.\
+    \n\x0bPOLMJFIKNHN\x18\x0f\x20\x03(\x0b2\x0c.POFNNGOCEOKR\x0bPOLMJFIKNHNb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

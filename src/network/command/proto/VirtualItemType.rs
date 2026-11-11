@@ -147,16 +147,16 @@ pub enum VirtualItemType {
     VirtualItemType_VirtualItemMatchthreeV2Coin = 281029,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3)
     VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3 = 281030,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.H_6d505e41)
-    H_6d505e41 = 281031,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.H_f282bc8a)
-    H_f282bc8a = 281032,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.H_28d88931)
-    H_28d88931 = 281033,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.H_ba9d7b23)
-    H_ba9d7b23 = 281034,
-    // @@protoc_insertion_point(enum_value:VirtualItemType.H_da757a1a)
-    H_da757a1a = 281035,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_d0826558)
+    H_d0826558 = 281031,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_b693c8c9)
+    H_b693c8c9 = 281032,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_6c2418ba)
+    H_6c2418ba = 281033,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_f74780a7)
+    H_f74780a7 = 281034,
+    // @@protoc_insertion_point(enum_value:VirtualItemType.H_8a02c794)
+    H_8a02c794 = 281035,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemFiveDimMoney)
     VirtualItemType_VirtualItemFiveDimMoney = 281036,
     // @@protoc_insertion_point(enum_value:VirtualItemType.VirtualItemType_VirtualItemChimeraDuelMasterMoney)
@@ -236,11 +236,11 @@ impl ::protobuf::Enum for VirtualItemType {
             281028 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp),
             281029 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin),
             281030 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3),
-            281031 => ::std::option::Option::Some(VirtualItemType::H_6d505e41),
-            281032 => ::std::option::Option::Some(VirtualItemType::H_f282bc8a),
-            281033 => ::std::option::Option::Some(VirtualItemType::H_28d88931),
-            281034 => ::std::option::Option::Some(VirtualItemType::H_ba9d7b23),
-            281035 => ::std::option::Option::Some(VirtualItemType::H_da757a1a),
+            281031 => ::std::option::Option::Some(VirtualItemType::H_d0826558),
+            281032 => ::std::option::Option::Some(VirtualItemType::H_b693c8c9),
+            281033 => ::std::option::Option::Some(VirtualItemType::H_6c2418ba),
+            281034 => ::std::option::Option::Some(VirtualItemType::H_f74780a7),
+            281035 => ::std::option::Option::Some(VirtualItemType::H_8a02c794),
             281036 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney),
             281037 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney),
             281038 => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin),
@@ -311,11 +311,11 @@ impl ::protobuf::Enum for VirtualItemType {
             "VirtualItemType_VirtualItemEvolveBuildRewardExp" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp),
             "VirtualItemType_VirtualItemMatchthreeV2Coin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin),
             "VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3),
-            "H_6d505e41" => ::std::option::Option::Some(VirtualItemType::H_6d505e41),
-            "H_f282bc8a" => ::std::option::Option::Some(VirtualItemType::H_f282bc8a),
-            "H_28d88931" => ::std::option::Option::Some(VirtualItemType::H_28d88931),
-            "H_ba9d7b23" => ::std::option::Option::Some(VirtualItemType::H_ba9d7b23),
-            "H_da757a1a" => ::std::option::Option::Some(VirtualItemType::H_da757a1a),
+            "H_d0826558" => ::std::option::Option::Some(VirtualItemType::H_d0826558),
+            "H_b693c8c9" => ::std::option::Option::Some(VirtualItemType::H_b693c8c9),
+            "H_6c2418ba" => ::std::option::Option::Some(VirtualItemType::H_6c2418ba),
+            "H_f74780a7" => ::std::option::Option::Some(VirtualItemType::H_f74780a7),
+            "H_8a02c794" => ::std::option::Option::Some(VirtualItemType::H_8a02c794),
             "VirtualItemType_VirtualItemFiveDimMoney" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney),
             "VirtualItemType_VirtualItemChimeraDuelMasterMoney" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney),
             "VirtualItemType_VirtualItemCakeRaceCoin" => ::std::option::Option::Some(VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin),
@@ -385,11 +385,11 @@ impl ::protobuf::Enum for VirtualItemType {
         VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp,
         VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin,
         VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3,
-        VirtualItemType::H_6d505e41,
-        VirtualItemType::H_f282bc8a,
-        VirtualItemType::H_28d88931,
-        VirtualItemType::H_ba9d7b23,
-        VirtualItemType::H_da757a1a,
+        VirtualItemType::H_d0826558,
+        VirtualItemType::H_b693c8c9,
+        VirtualItemType::H_6c2418ba,
+        VirtualItemType::H_f74780a7,
+        VirtualItemType::H_8a02c794,
         VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney,
         VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney,
         VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin,
@@ -465,11 +465,11 @@ impl ::protobuf::EnumFull for VirtualItemType {
             VirtualItemType::VirtualItemType_VirtualItemEvolveBuildRewardExp => 57,
             VirtualItemType::VirtualItemType_VirtualItemMatchthreeV2Coin => 58,
             VirtualItemType::VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3 => 59,
-            VirtualItemType::H_6d505e41 => 60,
-            VirtualItemType::H_f282bc8a => 61,
-            VirtualItemType::H_28d88931 => 62,
-            VirtualItemType::H_ba9d7b23 => 63,
-            VirtualItemType::H_da757a1a => 64,
+            VirtualItemType::H_d0826558 => 60,
+            VirtualItemType::H_b693c8c9 => 61,
+            VirtualItemType::H_6c2418ba => 62,
+            VirtualItemType::H_f74780a7 => 63,
+            VirtualItemType::H_8a02c794 => 64,
             VirtualItemType::VirtualItemType_VirtualItemFiveDimMoney => 65,
             VirtualItemType::VirtualItemType_VirtualItemChimeraDuelMasterMoney => 66,
             VirtualItemType::VirtualItemType_VirtualItemCakeRaceCoin => 67,
@@ -544,9 +544,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x125\n/VirtualItemType_VirtualItemEvolveBuildRewardExp\x10\xc4\x93\x11\
     \x121\n+VirtualItemType_VirtualItemMatchthreeV2Coin\x10\xc5\x93\x11\x12=\
     \n7VirtualItemType_VirtualItemRogueTournSeasonTalentCoinS3\x10\xc6\x93\
-    \x11\x12\x10\n\nH_6d505e41\x10\xc7\x93\x11\x12\x10\n\nH_f282bc8a\x10\xc8\
-    \x93\x11\x12\x10\n\nH_28d88931\x10\xc9\x93\x11\x12\x10\n\nH_ba9d7b23\x10\
-    \xca\x93\x11\x12\x10\n\nH_da757a1a\x10\xcb\x93\x11\x12-\n'VirtualItemTyp\
+    \x11\x12\x10\n\nH_d0826558\x10\xc7\x93\x11\x12\x10\n\nH_b693c8c9\x10\xc8\
+    \x93\x11\x12\x10\n\nH_6c2418ba\x10\xc9\x93\x11\x12\x10\n\nH_f74780a7\x10\
+    \xca\x93\x11\x12\x10\n\nH_8a02c794\x10\xcb\x93\x11\x12-\n'VirtualItemTyp\
     e_VirtualItemFiveDimMoney\x10\xcc\x93\x11\x127\n1VirtualItemType_Virtual\
     ItemChimeraDuelMasterMoney\x10\xcd\x93\x11\x12-\n'VirtualItemType_Virtua\
     lItemCakeRaceCoin\x10\xce\x93\x11\x12.\n(VirtualItemType_VirtualItemCake\

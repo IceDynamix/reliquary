@@ -45,56 +45,7 @@ impl CommonRogueUpdateScNotify {
         ::std::default::Default::default()
     }
 
-    // .CDDEIPOBBCN MECOEFEJANE = 1;
-
-    pub fn MECOEFEJANE(&self) -> &super::CDDEIPOBBCN::CDDEIPOBBCN {
-        match self.NOKMOIHLGBN {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v)) => v,
-            _ => <super::CDDEIPOBBCN::CDDEIPOBBCN as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_MECOEFEJANE(&mut self) {
-        self.NOKMOIHLGBN = ::std::option::Option::None;
-    }
-
-    pub fn has_MECOEFEJANE(&self) -> bool {
-        match self.NOKMOIHLGBN {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_MECOEFEJANE(&mut self, v: super::CDDEIPOBBCN::CDDEIPOBBCN) {
-        self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(v))
-    }
-
-    // Mutable pointer to the field.
-    pub fn mut_MECOEFEJANE(&mut self) -> &mut super::CDDEIPOBBCN::CDDEIPOBBCN {
-        if let ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(_)) = self.NOKMOIHLGBN {
-        } else {
-            self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(super::CDDEIPOBBCN::CDDEIPOBBCN::new()));
-        }
-        match self.NOKMOIHLGBN {
-            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref mut v)) => v,
-            _ => panic!(),
-        }
-    }
-
-    // Take field
-    pub fn take_MECOEFEJANE(&mut self) -> super::CDDEIPOBBCN::CDDEIPOBBCN {
-        if self.has_MECOEFEJANE() {
-            match self.NOKMOIHLGBN.take() {
-                ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(v)) => v,
-                _ => panic!(),
-            }
-        } else {
-            super::CDDEIPOBBCN::CDDEIPOBBCN::new()
-        }
-    }
-
-    // .KPIHDPGDMKB BMGOLFNGHGH = 3;
+    // .KPIHDPGDMKB BMGOLFNGHGH = 8;
 
     pub fn BMGOLFNGHGH(&self) -> &super::KPIHDPGDMKB::KPIHDPGDMKB {
         match self.NOKMOIHLGBN {
@@ -143,7 +94,7 @@ impl CommonRogueUpdateScNotify {
         }
     }
 
-    // .AHLALEEJOEG BBEKBJPHEJK = 14;
+    // .AHLALEEJOEG BBEKBJPHEJK = 9;
 
     pub fn BBEKBJPHEJK(&self) -> &super::AHLALEEJOEG::AHLALEEJOEG {
         match self.NOKMOIHLGBN {
@@ -192,16 +143,58 @@ impl CommonRogueUpdateScNotify {
         }
     }
 
+    // .CDDEIPOBBCN MECOEFEJANE = 10;
+
+    pub fn MECOEFEJANE(&self) -> &super::CDDEIPOBBCN::CDDEIPOBBCN {
+        match self.NOKMOIHLGBN {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v)) => v,
+            _ => <super::CDDEIPOBBCN::CDDEIPOBBCN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MECOEFEJANE(&mut self) {
+        self.NOKMOIHLGBN = ::std::option::Option::None;
+    }
+
+    pub fn has_MECOEFEJANE(&self) -> bool {
+        match self.NOKMOIHLGBN {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MECOEFEJANE(&mut self, v: super::CDDEIPOBBCN::CDDEIPOBBCN) {
+        self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_MECOEFEJANE(&mut self) -> &mut super::CDDEIPOBBCN::CDDEIPOBBCN {
+        if let ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(_)) = self.NOKMOIHLGBN {
+        } else {
+            self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(super::CDDEIPOBBCN::CDDEIPOBBCN::new()));
+        }
+        match self.NOKMOIHLGBN {
+            ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_MECOEFEJANE(&mut self) -> super::CDDEIPOBBCN::CDDEIPOBBCN {
+        if self.has_MECOEFEJANE() {
+            match self.NOKMOIHLGBN.take() {
+                ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::CDDEIPOBBCN::CDDEIPOBBCN::new()
+        }
+    }
+
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CDDEIPOBBCN::CDDEIPOBBCN>(
-            "MECOEFEJANE",
-            CommonRogueUpdateScNotify::has_MECOEFEJANE,
-            CommonRogueUpdateScNotify::MECOEFEJANE,
-            CommonRogueUpdateScNotify::mut_MECOEFEJANE,
-            CommonRogueUpdateScNotify::set_MECOEFEJANE,
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KPIHDPGDMKB::KPIHDPGDMKB>(
             "BMGOLFNGHGH",
             CommonRogueUpdateScNotify::has_BMGOLFNGHGH,
@@ -215,6 +208,13 @@ impl CommonRogueUpdateScNotify {
             CommonRogueUpdateScNotify::BBEKBJPHEJK,
             CommonRogueUpdateScNotify::mut_BBEKBJPHEJK,
             CommonRogueUpdateScNotify::set_BBEKBJPHEJK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CDDEIPOBBCN::CDDEIPOBBCN>(
+            "MECOEFEJANE",
+            CommonRogueUpdateScNotify::has_MECOEFEJANE,
+            CommonRogueUpdateScNotify::MECOEFEJANE,
+            CommonRogueUpdateScNotify::mut_MECOEFEJANE,
+            CommonRogueUpdateScNotify::set_MECOEFEJANE,
         ));
         oneofs.push(common_rogue_update_sc_notify::NOKMOIHLGBN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueUpdateScNotify>(
@@ -235,14 +235,14 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(is.read_message()?));
-                },
-                26 => {
+                66 => {
                     self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::BMGOLFNGHGH(is.read_message()?));
                 },
-                114 => {
+                74 => {
                     self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::BBEKBJPHEJK(is.read_message()?));
+                },
+                82 => {
+                    self.NOKMOIHLGBN = ::std::option::Option::Some(common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -258,15 +258,15 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.NOKMOIHLGBN {
             match v {
-                &common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v) => {
-                    let len = v.compute_size();
-                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-                },
                 &common_rogue_update_sc_notify::NOKMOIHLGBN::BMGOLFNGHGH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
                 &common_rogue_update_sc_notify::NOKMOIHLGBN::BBEKBJPHEJK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -280,14 +280,14 @@ impl ::protobuf::Message for CommonRogueUpdateScNotify {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.NOKMOIHLGBN {
             match v {
-                &common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-                },
                 &common_rogue_update_sc_notify::NOKMOIHLGBN::BMGOLFNGHGH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
                 },
                 &common_rogue_update_sc_notify::NOKMOIHLGBN::BBEKBJPHEJK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+                },
+                &common_rogue_update_sc_notify::NOKMOIHLGBN::MECOEFEJANE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
             };
         }
@@ -347,12 +347,12 @@ pub mod common_rogue_update_sc_notify {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:CommonRogueUpdateScNotify.NOKMOIHLGBN)
     pub enum NOKMOIHLGBN {
-        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.MECOEFEJANE)
-        MECOEFEJANE(super::super::CDDEIPOBBCN::CDDEIPOBBCN),
         // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.BMGOLFNGHGH)
         BMGOLFNGHGH(super::super::KPIHDPGDMKB::KPIHDPGDMKB),
         // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.BBEKBJPHEJK)
         BBEKBJPHEJK(super::super::AHLALEEJOEG::AHLALEEJOEG),
+        // @@protoc_insertion_point(oneof_field:CommonRogueUpdateScNotify.MECOEFEJANE)
+        MECOEFEJANE(super::super::CDDEIPOBBCN::CDDEIPOBBCN),
     }
 
     impl ::protobuf::Oneof for NOKMOIHLGBN {
@@ -375,10 +375,10 @@ pub mod common_rogue_update_sc_notify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fCommonRogueUpdateScNotify.proto\x1a\x11AHLALEEJOEG.proto\x1a\x11CD\
     DEIPOBBCN.proto\x1a\x11KPIHDPGDMKB.proto\"\xc0\x01\n\x19CommonRogueUpdat\
-    eScNotify\x120\n\x0bMECOEFEJANE\x18\x01\x20\x01(\x0b2\x0c.CDDEIPOBBCNH\0\
-    R\x0bMECOEFEJANE\x120\n\x0bBMGOLFNGHGH\x18\x03\x20\x01(\x0b2\x0c.KPIHDPG\
-    DMKBH\0R\x0bBMGOLFNGHGH\x120\n\x0bBBEKBJPHEJK\x18\x0e\x20\x01(\x0b2\x0c.\
-    AHLALEEJOEGH\0R\x0bBBEKBJPHEJKB\r\n\x0bNOKMOIHLGBNb\x06proto3\
+    eScNotify\x120\n\x0bBMGOLFNGHGH\x18\x08\x20\x01(\x0b2\x0c.KPIHDPGDMKBH\0\
+    R\x0bBMGOLFNGHGH\x120\n\x0bBBEKBJPHEJK\x18\t\x20\x01(\x0b2\x0c.AHLALEEJO\
+    EGH\0R\x0bBBEKBJPHEJK\x120\n\x0bMECOEFEJANE\x18\n\x20\x01(\x0b2\x0c.CDDE\
+    IPOBBCNH\0R\x0bMECOEFEJANEB\r\n\x0bNOKMOIHLGBNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CLLBJDEJFNF {
     // message fields
-    // @@protoc_insertion_point(field:CLLBJDEJFNF.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:CLLBJDEJFNF.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:CLLBJDEJFNF.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:CLLBJDEJFNF.type)
     pub type_: u32,
     // special fields
@@ -54,14 +54,14 @@ impl CLLBJDEJFNF {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &CLLBJDEJFNF| { &m.id },
-            |m: &mut CLLBJDEJFNF| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &CLLBJDEJFNF| { &m.slot },
             |m: &mut CLLBJDEJFNF| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &CLLBJDEJFNF| { &m.id },
+            |m: &mut CLLBJDEJFNF| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.id = is.read_uint32()?;
-                },
-                48 => {
+                8 => {
                     self.slot = is.read_uint32()?;
                 },
-                88 => {
+                48 => {
+                    self.id = is.read_uint32()?;
+                },
+                64 => {
                     self.type_ = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.id);
-        }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.slot);
+            my_size += ::protobuf::rt::uint32_size(1, self.slot);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
         }
         if self.type_ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.type_);
+            my_size += ::protobuf::rt::uint32_size(8, self.type_);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(2, self.id)?;
-        }
         if self.slot != 0 {
-            os.write_uint32(6, self.slot)?;
+            os.write_uint32(1, self.slot)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(6, self.id)?;
         }
         if self.type_ != 0 {
-            os.write_uint32(11, self.type_)?;
+            os.write_uint32(8, self.type_)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for CLLBJDEJFNF {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.slot = 0;
+        self.id = 0;
         self.type_ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CLLBJDEJFNF {
         static instance: CLLBJDEJFNF = CLLBJDEJFNF {
-            id: 0,
             slot: 0,
+            id: 0,
             type_: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -369,9 +369,9 @@ pub mod cllbjdejfnf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CLLBJDEJFNF.proto\"\xf6\x01\n\x0bCLLBJDEJFNF\x12\x0e\n\x02id\x18\
-    \x02\x20\x01(\rR\x02id\x12\x12\n\x04slot\x18\x06\x20\x01(\rR\x04slot\x12\
-    \x12\n\x04type\x18\x0b\x20\x01(\rR\x04type\x1a\xae\x01\n\x0bOOIDNDCPEAF\
+    \n\x11CLLBJDEJFNF.proto\"\xf6\x01\n\x0bCLLBJDEJFNF\x12\x12\n\x04slot\x18\
+    \x01\x20\x01(\rR\x04slot\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12\
+    \x12\n\x04type\x18\x08\x20\x01(\rR\x04type\x1a\xae\x01\n\x0bOOIDNDCPEAF\
     \"\x9e\x01\n\x0bDAHCIBCIIAD\x12\x1b\n\x17DAHCIBCIIAD_MNEIHEIGLPO\x10\0\
     \x12\x1b\n\x17DAHCIBCIIAD_BPILLPJGGGB\x10\x01\x12\x1b\n\x17DAHCIBCIIAD_A\
     NHFOPPEFAL\x10\x02\x12\x1b\n\x17DAHCIBCIIAD_LEEOOMLKANM\x10\x03\x12\x1b\

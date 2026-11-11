@@ -30,17 +30,17 @@ pub enum CCOCNFLIOGK {
     // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_NLCDGIPGFDJ)
     CCOCNFLIOGK_NLCDGIPGFDJ = 0,
     // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_CFBPOIPOLAL)
-    CCOCNFLIOGK_CFBPOIPOLAL = 4881,
-    // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_ECFPFPKMFFN)
-    CCOCNFLIOGK_ECFPFPKMFFN = 4856,
-    // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_PNDFJJKAFCI)
-    CCOCNFLIOGK_PNDFJJKAFCI = 4870,
+    CCOCNFLIOGK_CFBPOIPOLAL = 4900,
     // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_MKDHLCBNNGO)
-    CCOCNFLIOGK_MKDHLCBNNGO = 4882,
+    CCOCNFLIOGK_MKDHLCBNNGO = 4885,
     // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_IPAGACDDOFA)
-    CCOCNFLIOGK_IPAGACDDOFA = 4884,
+    CCOCNFLIOGK_IPAGACDDOFA = 4892,
     // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_GEBPBMHOAKE)
-    CCOCNFLIOGK_GEBPBMHOAKE = 4879,
+    CCOCNFLIOGK_GEBPBMHOAKE = 4880,
+    // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_PNDFJJKAFCI)
+    CCOCNFLIOGK_PNDFJJKAFCI = 4898,
+    // @@protoc_insertion_point(enum_value:CCOCNFLIOGK.CCOCNFLIOGK_ECFPFPKMFFN)
+    CCOCNFLIOGK_ECFPFPKMFFN = 4888,
 }
 
 impl ::protobuf::Enum for CCOCNFLIOGK {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for CCOCNFLIOGK {
     fn from_i32(value: i32) -> ::std::option::Option<CCOCNFLIOGK> {
         match value {
             0 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_NLCDGIPGFDJ),
-            4881 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_CFBPOIPOLAL),
-            4856 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN),
-            4870 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI),
-            4882 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO),
-            4884 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA),
-            4879 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE),
+            4900 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_CFBPOIPOLAL),
+            4885 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO),
+            4892 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA),
+            4880 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE),
+            4898 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI),
+            4888 => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN),
             _ => ::std::option::Option::None
         }
     }
@@ -67,11 +67,11 @@ impl ::protobuf::Enum for CCOCNFLIOGK {
         match str {
             "CCOCNFLIOGK_NLCDGIPGFDJ" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_NLCDGIPGFDJ),
             "CCOCNFLIOGK_CFBPOIPOLAL" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_CFBPOIPOLAL),
-            "CCOCNFLIOGK_ECFPFPKMFFN" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN),
-            "CCOCNFLIOGK_PNDFJJKAFCI" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI),
             "CCOCNFLIOGK_MKDHLCBNNGO" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO),
             "CCOCNFLIOGK_IPAGACDDOFA" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA),
             "CCOCNFLIOGK_GEBPBMHOAKE" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE),
+            "CCOCNFLIOGK_PNDFJJKAFCI" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI),
+            "CCOCNFLIOGK_ECFPFPKMFFN" => ::std::option::Option::Some(CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN),
             _ => ::std::option::Option::None
         }
     }
@@ -79,11 +79,11 @@ impl ::protobuf::Enum for CCOCNFLIOGK {
     const VALUES: &'static [CCOCNFLIOGK] = &[
         CCOCNFLIOGK::CCOCNFLIOGK_NLCDGIPGFDJ,
         CCOCNFLIOGK::CCOCNFLIOGK_CFBPOIPOLAL,
-        CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN,
-        CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI,
         CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO,
         CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA,
         CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE,
+        CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI,
+        CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN,
     ];
 }
 
@@ -97,11 +97,11 @@ impl ::protobuf::EnumFull for CCOCNFLIOGK {
         let index = match self {
             CCOCNFLIOGK::CCOCNFLIOGK_NLCDGIPGFDJ => 0,
             CCOCNFLIOGK::CCOCNFLIOGK_CFBPOIPOLAL => 1,
-            CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN => 2,
-            CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI => 3,
-            CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO => 4,
-            CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA => 5,
-            CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE => 6,
+            CCOCNFLIOGK::CCOCNFLIOGK_MKDHLCBNNGO => 2,
+            CCOCNFLIOGK::CCOCNFLIOGK_IPAGACDDOFA => 3,
+            CCOCNFLIOGK::CCOCNFLIOGK_GEBPBMHOAKE => 4,
+            CCOCNFLIOGK::CCOCNFLIOGK_PNDFJJKAFCI => 5,
+            CCOCNFLIOGK::CCOCNFLIOGK_ECFPFPKMFFN => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl CCOCNFLIOGK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11CCOCNFLIOGK.proto*\xde\x01\n\x0bCCOCNFLIOGK\x12\x1b\n\x17CCOCNFLIO\
-    GK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CCOCNFLIOGK_CFBPOIPOLAL\x10\x91&\x12\
-    \x1c\n\x17CCOCNFLIOGK_ECFPFPKMFFN\x10\xf8%\x12\x1c\n\x17CCOCNFLIOGK_PNDF\
-    JJKAFCI\x10\x86&\x12\x1c\n\x17CCOCNFLIOGK_MKDHLCBNNGO\x10\x92&\x12\x1c\n\
-    \x17CCOCNFLIOGK_IPAGACDDOFA\x10\x94&\x12\x1c\n\x17CCOCNFLIOGK_GEBPBMHOAK\
-    E\x10\x8f&b\x06proto3\
+    GK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CCOCNFLIOGK_CFBPOIPOLAL\x10\xa4&\x12\
+    \x1c\n\x17CCOCNFLIOGK_MKDHLCBNNGO\x10\x95&\x12\x1c\n\x17CCOCNFLIOGK_IPAG\
+    ACDDOFA\x10\x9c&\x12\x1c\n\x17CCOCNFLIOGK_GEBPBMHOAKE\x10\x90&\x12\x1c\n\
+    \x17CCOCNFLIOGK_PNDFJJKAFCI\x10\xa2&\x12\x1c\n\x17CCOCNFLIOGK_ECFPFPKMFF\
+    N\x10\x98&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

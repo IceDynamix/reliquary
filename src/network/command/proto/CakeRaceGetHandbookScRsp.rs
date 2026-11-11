@@ -82,7 +82,7 @@ impl ::protobuf::Message for CakeRaceGetHandbookScRsp {
                 40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                74 => {
                     self.AOBBDDKFBMD.push(is.read_message()?);
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for CakeRaceGetHandbookScRsp {
             os.write_uint32(5, self.retcode)?;
         }
         for v in &self.AOBBDDKFBMD {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceGetHandbookScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eCakeRaceGetHandbookScRsp.proto\x1a\x11GKCNOIGHOPM.proto\"d\n\x18Ca\
     keRaceGetHandbookScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bAOBBDDKFBMD\x18\x07\x20\x03(\x0b2\x0c.GKCNOIGHOPMR\x0bAOBBD\
-    DKFBMDb\x06proto3\
+    de\x12.\n\x0bAOBBDDKFBMD\x18\t\x20\x03(\x0b2\x0c.GKCNOIGHOPMR\x0bAOBBDDK\
+    FBMDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

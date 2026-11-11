@@ -45,7 +45,7 @@ impl OIJOHMLIEII {
         ::std::default::Default::default()
     }
 
-    // .DNHFLGJJKHN EPHIIBNCCJG = 15;
+    // .DNHFLGJJKHN EPHIIBNCCJG = 5;
 
     pub fn EPHIIBNCCJG(&self) -> &super::DNHFLGJJKHN::DNHFLGJJKHN {
         match self.MMCGBGDJIPN {
@@ -123,7 +123,7 @@ impl ::protobuf::Message for OIJOHMLIEII {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                42 => {
                     self.MMCGBGDJIPN = ::std::option::Option::Some(oijohmlieii::MMCGBGDJIPN::EPHIIBNCCJG(is.read_message()?));
                 },
                 tag => {
@@ -155,7 +155,7 @@ impl ::protobuf::Message for OIJOHMLIEII {
         if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
                 &oijohmlieii::MMCGBGDJIPN::EPHIIBNCCJG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -236,7 +236,7 @@ pub mod oijohmlieii {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OIJOHMLIEII.proto\x1a\x11DNHFLGJJKHN.proto\"N\n\x0bOIJOHMLIEII\x12\
-    0\n\x0bEPHIIBNCCJG\x18\x0f\x20\x01(\x0b2\x0c.DNHFLGJJKHNH\0R\x0bEPHIIBNC\
+    0\n\x0bEPHIIBNCCJG\x18\x05\x20\x01(\x0b2\x0c.DNHFLGJJKHNH\0R\x0bEPHIIBNC\
     CJGB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 

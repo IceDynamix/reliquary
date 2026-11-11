@@ -30,12 +30,12 @@ pub struct NMACHAFCGNI {
     // message fields
     // @@protoc_insertion_point(field:NMACHAFCGNI.MFPOKNMFNGM)
     pub MFPOKNMFNGM: u32,
+    // @@protoc_insertion_point(field:NMACHAFCGNI.ALJNIHNLNMA)
+    pub ALJNIHNLNMA: u32,
     // @@protoc_insertion_point(field:NMACHAFCGNI.stage_id)
     pub stage_id: u32,
     // @@protoc_insertion_point(field:NMACHAFCGNI.NDLIKNEKDLL)
     pub NDLIKNEKDLL: ::protobuf::MessageField<super::IDJALKEGPLI::IDJALKEGPLI>,
-    // @@protoc_insertion_point(field:NMACHAFCGNI.ALJNIHNLNMA)
-    pub ALJNIHNLNMA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NMACHAFCGNI.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl NMACHAFCGNI {
             |m: &mut NMACHAFCGNI| { &mut m.MFPOKNMFNGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ALJNIHNLNMA",
+            |m: &NMACHAFCGNI| { &m.ALJNIHNLNMA },
+            |m: &mut NMACHAFCGNI| { &mut m.ALJNIHNLNMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
             |m: &NMACHAFCGNI| { &m.stage_id },
             |m: &mut NMACHAFCGNI| { &mut m.stage_id },
@@ -69,11 +74,6 @@ impl NMACHAFCGNI {
             "NDLIKNEKDLL",
             |m: &NMACHAFCGNI| { &m.NDLIKNEKDLL },
             |m: &mut NMACHAFCGNI| { &mut m.NDLIKNEKDLL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALJNIHNLNMA",
-            |m: &NMACHAFCGNI| { &m.ALJNIHNLNMA },
-            |m: &mut NMACHAFCGNI| { &mut m.ALJNIHNLNMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NMACHAFCGNI>(
             "NMACHAFCGNI",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for NMACHAFCGNI {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                8 => {
                     self.MFPOKNMFNGM = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
+                    self.ALJNIHNLNMA = is.read_uint32()?;
+                },
+                64 => {
                     self.stage_id = is.read_uint32()?;
                 },
-                66 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDLIKNEKDLL)?;
-                },
-                72 => {
-                    self.ALJNIHNLNMA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,17 +118,17 @@ impl ::protobuf::Message for NMACHAFCGNI {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.MFPOKNMFNGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MFPOKNMFNGM);
+            my_size += ::protobuf::rt::uint32_size(1, self.MFPOKNMFNGM);
+        }
+        if self.ALJNIHNLNMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ALJNIHNLNMA);
         }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.stage_id);
         }
         if let Some(v) = self.NDLIKNEKDLL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.ALJNIHNLNMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ALJNIHNLNMA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for NMACHAFCGNI {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.MFPOKNMFNGM != 0 {
-            os.write_uint32(2, self.MFPOKNMFNGM)?;
-        }
-        if self.stage_id != 0 {
-            os.write_uint32(7, self.stage_id)?;
-        }
-        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            os.write_uint32(1, self.MFPOKNMFNGM)?;
         }
         if self.ALJNIHNLNMA != 0 {
-            os.write_uint32(9, self.ALJNIHNLNMA)?;
+            os.write_uint32(6, self.ALJNIHNLNMA)?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(8, self.stage_id)?;
+        }
+        if let Some(v) = self.NDLIKNEKDLL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for NMACHAFCGNI {
 
     fn clear(&mut self) {
         self.MFPOKNMFNGM = 0;
+        self.ALJNIHNLNMA = 0;
         self.stage_id = 0;
         self.NDLIKNEKDLL.clear();
-        self.ALJNIHNLNMA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMACHAFCGNI {
         static instance: NMACHAFCGNI = NMACHAFCGNI {
             MFPOKNMFNGM: 0,
+            ALJNIHNLNMA: 0,
             stage_id: 0,
             NDLIKNEKDLL: ::protobuf::MessageField::none(),
-            ALJNIHNLNMA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for NMACHAFCGNI {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NMACHAFCGNI.proto\x1a\x11IDJALKEGPLI.proto\"\x9c\x01\n\x0bNMACHAFC\
-    GNI\x12\x20\n\x0bMFPOKNMFNGM\x18\x02\x20\x01(\rR\x0bMFPOKNMFNGM\x12\x19\
-    \n\x08stage_id\x18\x07\x20\x01(\rR\x07stageId\x12.\n\x0bNDLIKNEKDLL\x18\
-    \x08\x20\x01(\x0b2\x0c.IDJALKEGPLIR\x0bNDLIKNEKDLL\x12\x20\n\x0bALJNIHNL\
-    NMA\x18\t\x20\x01(\rR\x0bALJNIHNLNMAb\x06proto3\
+    GNI\x12\x20\n\x0bMFPOKNMFNGM\x18\x01\x20\x01(\rR\x0bMFPOKNMFNGM\x12\x20\
+    \n\x0bALJNIHNLNMA\x18\x06\x20\x01(\rR\x0bALJNIHNLNMA\x12\x19\n\x08stage_\
+    id\x18\x08\x20\x01(\rR\x07stageId\x12.\n\x0bNDLIKNEKDLL\x18\x0e\x20\x01(\
+    \x0b2\x0c.IDJALKEGPLIR\x0bNDLIKNEKDLLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

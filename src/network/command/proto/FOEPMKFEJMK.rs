@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FOEPMKFEJMK {
     // message fields
-    // @@protoc_insertion_point(field:FOEPMKFEJMK.panel_id)
-    pub panel_id: u32,
     // @@protoc_insertion_point(field:FOEPMKFEJMK.BNBAJPBPJFE)
     pub BNBAJPBPJFE: u32,
     // @@protoc_insertion_point(field:FOEPMKFEJMK.CLGMOPPOGGC)
     pub CLGMOPPOGGC: u32,
     // @@protoc_insertion_point(field:FOEPMKFEJMK.OMNDNGDEEGL)
     pub OMNDNGDEEGL: ::std::vec::Vec<super::AAOAEMOHCEP::AAOAEMOHCEP>,
+    // @@protoc_insertion_point(field:FOEPMKFEJMK.panel_id)
+    pub panel_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FOEPMKFEJMK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl FOEPMKFEJMK {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &FOEPMKFEJMK| { &m.panel_id },
-            |m: &mut FOEPMKFEJMK| { &mut m.panel_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BNBAJPBPJFE",
             |m: &FOEPMKFEJMK| { &m.BNBAJPBPJFE },
             |m: &mut FOEPMKFEJMK| { &mut m.BNBAJPBPJFE },
@@ -74,6 +69,11 @@ impl FOEPMKFEJMK {
             "OMNDNGDEEGL",
             |m: &FOEPMKFEJMK| { &m.OMNDNGDEEGL },
             |m: &mut FOEPMKFEJMK| { &mut m.OMNDNGDEEGL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &FOEPMKFEJMK| { &m.panel_id },
+            |m: &mut FOEPMKFEJMK| { &mut m.panel_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FOEPMKFEJMK>(
             "FOEPMKFEJMK",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FOEPMKFEJMK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                56 => {
+                32 => {
                     self.BNBAJPBPJFE = is.read_uint32()?;
                 },
-                64 => {
+                40 => {
                     self.CLGMOPPOGGC = is.read_uint32()?;
                 },
-                90 => {
+                82 => {
                     self.OMNDNGDEEGL.push(is.read_message()?);
+                },
+                112 => {
+                    self.panel_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for FOEPMKFEJMK {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.panel_id);
-        }
         if self.BNBAJPBPJFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.BNBAJPBPJFE);
+            my_size += ::protobuf::rt::uint32_size(4, self.BNBAJPBPJFE);
         }
         if self.CLGMOPPOGGC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CLGMOPPOGGC);
+            my_size += ::protobuf::rt::uint32_size(5, self.CLGMOPPOGGC);
         }
         for value in &self.OMNDNGDEEGL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.panel_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.panel_id != 0 {
-            os.write_uint32(5, self.panel_id)?;
-        }
         if self.BNBAJPBPJFE != 0 {
-            os.write_uint32(7, self.BNBAJPBPJFE)?;
+            os.write_uint32(4, self.BNBAJPBPJFE)?;
         }
         if self.CLGMOPPOGGC != 0 {
-            os.write_uint32(8, self.CLGMOPPOGGC)?;
+            os.write_uint32(5, self.CLGMOPPOGGC)?;
         }
         for v in &self.OMNDNGDEEGL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.panel_id != 0 {
+            os.write_uint32(14, self.panel_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for FOEPMKFEJMK {
     }
 
     fn clear(&mut self) {
-        self.panel_id = 0;
         self.BNBAJPBPJFE = 0;
         self.CLGMOPPOGGC = 0;
         self.OMNDNGDEEGL.clear();
+        self.panel_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FOEPMKFEJMK {
         static instance: FOEPMKFEJMK = FOEPMKFEJMK {
-            panel_id: 0,
             BNBAJPBPJFE: 0,
             CLGMOPPOGGC: 0,
             OMNDNGDEEGL: ::std::vec::Vec::new(),
+            panel_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for FOEPMKFEJMK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FOEPMKFEJMK.proto\x1a\x11AAOAEMOHCEP.proto\"\x9c\x01\n\x0bFOEPMKFE\
-    JMK\x12\x19\n\x08panel_id\x18\x05\x20\x01(\rR\x07panelId\x12\x20\n\x0bBN\
-    BAJPBPJFE\x18\x07\x20\x01(\rR\x0bBNBAJPBPJFE\x12\x20\n\x0bCLGMOPPOGGC\
-    \x18\x08\x20\x01(\rR\x0bCLGMOPPOGGC\x12.\n\x0bOMNDNGDEEGL\x18\x0b\x20\
-    \x03(\x0b2\x0c.AAOAEMOHCEPR\x0bOMNDNGDEEGLb\x06proto3\
+    JMK\x12\x20\n\x0bBNBAJPBPJFE\x18\x04\x20\x01(\rR\x0bBNBAJPBPJFE\x12\x20\
+    \n\x0bCLGMOPPOGGC\x18\x05\x20\x01(\rR\x0bCLGMOPPOGGC\x12.\n\x0bOMNDNGDEE\
+    GL\x18\n\x20\x03(\x0b2\x0c.AAOAEMOHCEPR\x0bOMNDNGDEEGL\x12\x19\n\x08pane\
+    l_id\x18\x0e\x20\x01(\rR\x07panelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

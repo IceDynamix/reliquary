@@ -33,6 +33,10 @@ pub enum NKAFNCBDJAH {
     NKAFNCBDJAH_GPIALFOJHAC = 1,
     // @@protoc_insertion_point(enum_value:NKAFNCBDJAH.NKAFNCBDJAH_FDEMMIICBPB)
     NKAFNCBDJAH_FDEMMIICBPB = 2,
+    // @@protoc_insertion_point(enum_value:NKAFNCBDJAH.NKAFNCBDJAH_KLBCIPJFEGK)
+    NKAFNCBDJAH_KLBCIPJFEGK = 3,
+    // @@protoc_insertion_point(enum_value:NKAFNCBDJAH.NKAFNCBDJAH_PFBJBFBCPLF)
+    NKAFNCBDJAH_PFBJBFBCPLF = 4,
 }
 
 impl ::protobuf::Enum for NKAFNCBDJAH {
@@ -47,6 +51,8 @@ impl ::protobuf::Enum for NKAFNCBDJAH {
             0 => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_FFEDLLJAILE),
             1 => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_GPIALFOJHAC),
             2 => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_FDEMMIICBPB),
+            3 => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_KLBCIPJFEGK),
+            4 => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_PFBJBFBCPLF),
             _ => ::std::option::Option::None
         }
     }
@@ -56,6 +62,8 @@ impl ::protobuf::Enum for NKAFNCBDJAH {
             "NKAFNCBDJAH_FFEDLLJAILE" => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_FFEDLLJAILE),
             "NKAFNCBDJAH_GPIALFOJHAC" => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_GPIALFOJHAC),
             "NKAFNCBDJAH_FDEMMIICBPB" => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_FDEMMIICBPB),
+            "NKAFNCBDJAH_KLBCIPJFEGK" => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_KLBCIPJFEGK),
+            "NKAFNCBDJAH_PFBJBFBCPLF" => ::std::option::Option::Some(NKAFNCBDJAH::NKAFNCBDJAH_PFBJBFBCPLF),
             _ => ::std::option::Option::None
         }
     }
@@ -64,6 +72,8 @@ impl ::protobuf::Enum for NKAFNCBDJAH {
         NKAFNCBDJAH::NKAFNCBDJAH_FFEDLLJAILE,
         NKAFNCBDJAH::NKAFNCBDJAH_GPIALFOJHAC,
         NKAFNCBDJAH::NKAFNCBDJAH_FDEMMIICBPB,
+        NKAFNCBDJAH::NKAFNCBDJAH_KLBCIPJFEGK,
+        NKAFNCBDJAH::NKAFNCBDJAH_PFBJBFBCPLF,
     ];
 }
 
@@ -92,9 +102,10 @@ impl NKAFNCBDJAH {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NKAFNCBDJAH.proto*d\n\x0bNKAFNCBDJAH\x12\x1b\n\x17NKAFNCBDJAH_FFED\
-    LLJAILE\x10\0\x12\x1b\n\x17NKAFNCBDJAH_GPIALFOJHAC\x10\x01\x12\x1b\n\x17\
-    NKAFNCBDJAH_FDEMMIICBPB\x10\x02b\x06proto3\
+    \n\x11NKAFNCBDJAH.proto*\x9e\x01\n\x0bNKAFNCBDJAH\x12\x1b\n\x17NKAFNCBDJ\
+    AH_FFEDLLJAILE\x10\0\x12\x1b\n\x17NKAFNCBDJAH_GPIALFOJHAC\x10\x01\x12\
+    \x1b\n\x17NKAFNCBDJAH_FDEMMIICBPB\x10\x02\x12\x1b\n\x17NKAFNCBDJAH_KLBCI\
+    PJFEGK\x10\x03\x12\x1b\n\x17NKAFNCBDJAH_PFBJBFBCPLF\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

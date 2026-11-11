@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NMKNOLPFJDN {
     // message fields
-    // @@protoc_insertion_point(field:NMKNOLPFJDN.JCKKPPELFHC)
-    pub JCKKPPELFHC: u32,
-    // @@protoc_insertion_point(field:NMKNOLPFJDN.CKLIEKOIGOG)
-    pub CKLIEKOIGOG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:NMKNOLPFJDN.HGDNMKBNMBK)
     pub HGDNMKBNMBK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NMKNOLPFJDN.CKLIEKOIGOG)
+    pub CKLIEKOIGOG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NMKNOLPFJDN.JCKKPPELFHC)
+    pub JCKKPPELFHC: u32,
     // @@protoc_insertion_point(field:NMKNOLPFJDN.KOHGFNGKFPE)
     pub KOHGFNGKFPE: u32,
     // special fields
@@ -55,20 +55,20 @@ impl NMKNOLPFJDN {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JCKKPPELFHC",
-            |m: &NMKNOLPFJDN| { &m.JCKKPPELFHC },
-            |m: &mut NMKNOLPFJDN| { &mut m.JCKKPPELFHC },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HGDNMKBNMBK",
+            |m: &NMKNOLPFJDN| { &m.HGDNMKBNMBK },
+            |m: &mut NMKNOLPFJDN| { &mut m.HGDNMKBNMBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "CKLIEKOIGOG",
             |m: &NMKNOLPFJDN| { &m.CKLIEKOIGOG },
             |m: &mut NMKNOLPFJDN| { &mut m.CKLIEKOIGOG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HGDNMKBNMBK",
-            |m: &NMKNOLPFJDN| { &m.HGDNMKBNMBK },
-            |m: &mut NMKNOLPFJDN| { &mut m.HGDNMKBNMBK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JCKKPPELFHC",
+            |m: &NMKNOLPFJDN| { &m.JCKKPPELFHC },
+            |m: &mut NMKNOLPFJDN| { &mut m.JCKKPPELFHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "KOHGFNGKFPE",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.JCKKPPELFHC = is.read_uint32()?;
-                },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CKLIEKOIGOG)?;
-                },
-                48 => {
-                    self.CKLIEKOIGOG.push(is.read_uint32()?);
-                },
-                74 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.HGDNMKBNMBK)?;
                 },
-                72 => {
+                24 => {
                     self.HGDNMKBNMBK.push(is.read_uint32()?);
                 },
-                104 => {
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CKLIEKOIGOG)?;
+                },
+                40 => {
+                    self.CKLIEKOIGOG.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.JCKKPPELFHC = is.read_uint32()?;
+                },
+                112 => {
                     self.KOHGFNGKFPE = is.read_uint32()?;
                 },
                 tag => {
@@ -123,13 +123,13 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.HGDNMKBNMBK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.CKLIEKOIGOG);
         if self.JCKKPPELFHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.JCKKPPELFHC);
+            my_size += ::protobuf::rt::uint32_size(8, self.JCKKPPELFHC);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.CKLIEKOIGOG);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HGDNMKBNMBK);
         if self.KOHGFNGKFPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.KOHGFNGKFPE);
+            my_size += ::protobuf::rt::uint32_size(14, self.KOHGFNGKFPE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.HGDNMKBNMBK)?;
+        os.write_repeated_packed_uint32(5, &self.CKLIEKOIGOG)?;
         if self.JCKKPPELFHC != 0 {
-            os.write_uint32(3, self.JCKKPPELFHC)?;
+            os.write_uint32(8, self.JCKKPPELFHC)?;
         }
-        os.write_repeated_packed_uint32(6, &self.CKLIEKOIGOG)?;
-        os.write_repeated_packed_uint32(9, &self.HGDNMKBNMBK)?;
         if self.KOHGFNGKFPE != 0 {
-            os.write_uint32(13, self.KOHGFNGKFPE)?;
+            os.write_uint32(14, self.KOHGFNGKFPE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,18 +162,18 @@ impl ::protobuf::Message for NMKNOLPFJDN {
     }
 
     fn clear(&mut self) {
-        self.JCKKPPELFHC = 0;
-        self.CKLIEKOIGOG.clear();
         self.HGDNMKBNMBK.clear();
+        self.CKLIEKOIGOG.clear();
+        self.JCKKPPELFHC = 0;
         self.KOHGFNGKFPE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NMKNOLPFJDN {
         static instance: NMKNOLPFJDN = NMKNOLPFJDN {
-            JCKKPPELFHC: 0,
-            CKLIEKOIGOG: ::std::vec::Vec::new(),
             HGDNMKBNMBK: ::std::vec::Vec::new(),
+            CKLIEKOIGOG: ::std::vec::Vec::new(),
+            JCKKPPELFHC: 0,
             KOHGFNGKFPE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -199,11 +199,11 @@ impl ::protobuf::reflect::ProtobufValue for NMKNOLPFJDN {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NMKNOLPFJDN.proto\"\x95\x01\n\x0bNMKNOLPFJDN\x12\x20\n\x0bJCKKPPEL\
-    FHC\x18\x03\x20\x01(\rR\x0bJCKKPPELFHC\x12\x20\n\x0bCKLIEKOIGOG\x18\x06\
-    \x20\x03(\rR\x0bCKLIEKOIGOG\x12\x20\n\x0bHGDNMKBNMBK\x18\t\x20\x03(\rR\
-    \x0bHGDNMKBNMBK\x12\x20\n\x0bKOHGFNGKFPE\x18\r\x20\x01(\rR\x0bKOHGFNGKFP\
-    Eb\x06proto3\
+    \n\x11NMKNOLPFJDN.proto\"\x95\x01\n\x0bNMKNOLPFJDN\x12\x20\n\x0bHGDNMKBN\
+    MBK\x18\x03\x20\x03(\rR\x0bHGDNMKBNMBK\x12\x20\n\x0bCKLIEKOIGOG\x18\x05\
+    \x20\x03(\rR\x0bCKLIEKOIGOG\x12\x20\n\x0bJCKKPPELFHC\x18\x08\x20\x01(\rR\
+    \x0bJCKKPPELFHC\x12\x20\n\x0bKOHGFNGKFPE\x18\x0e\x20\x01(\rR\x0bKOHGFNGK\
+    FPEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

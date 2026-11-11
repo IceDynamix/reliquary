@@ -79,13 +79,13 @@ impl ::protobuf::Message for NEMJDLLBBGN {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.LIIJNIKIGJD)?;
                 },
-                72 => {
+                64 => {
                     self.LIIJNIKIGJD.push(is.read_uint32()?);
                 },
-                98 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BLEBJLDOLII)?;
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for NEMJDLLBBGN {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.LIIJNIKIGJD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.LIIJNIKIGJD);
         if let Some(v) = self.BLEBJLDOLII.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for NEMJDLLBBGN {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.LIIJNIKIGJD)?;
+        os.write_repeated_packed_uint32(8, &self.LIIJNIKIGJD)?;
         if let Some(v) = self.BLEBJLDOLII.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for NEMJDLLBBGN {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NEMJDLLBBGN.proto\x1a\x11MMBBHFNJILI.proto\"_\n\x0bNEMJDLLBBGN\x12\
-    \x20\n\x0bLIIJNIKIGJD\x18\t\x20\x03(\rR\x0bLIIJNIKIGJD\x12.\n\x0bBLEBJLD\
-    OLII\x18\x0c\x20\x01(\x0b2\x0c.MMBBHFNJILIR\x0bBLEBJLDOLIIb\x06proto3\
+    \x20\n\x0bLIIJNIKIGJD\x18\x08\x20\x03(\rR\x0bLIIJNIKIGJD\x12.\n\x0bBLEBJ\
+    LDOLII\x18\x0f\x20\x01(\x0b2\x0c.MMBBHFNJILIR\x0bBLEBJLDOLIIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

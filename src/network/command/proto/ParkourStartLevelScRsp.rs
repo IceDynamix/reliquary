@@ -30,10 +30,10 @@ pub struct ParkourStartLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:ParkourStartLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ParkourStartLevelScRsp.level_id)
-    pub level_id: u32,
     // @@protoc_insertion_point(field:ParkourStartLevelScRsp.CEKKJHBNEOD)
     pub CEKKJHBNEOD: u32,
+    // @@protoc_insertion_point(field:ParkourStartLevelScRsp.level_id)
+    pub level_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ParkourStartLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl ParkourStartLevelScRsp {
             |m: &mut ParkourStartLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level_id",
-            |m: &ParkourStartLevelScRsp| { &m.level_id },
-            |m: &mut ParkourStartLevelScRsp| { &mut m.level_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "CEKKJHBNEOD",
             |m: &ParkourStartLevelScRsp| { &m.CEKKJHBNEOD },
             |m: &mut ParkourStartLevelScRsp| { &mut m.CEKKJHBNEOD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level_id",
+            |m: &ParkourStartLevelScRsp| { &m.level_id },
+            |m: &mut ParkourStartLevelScRsp| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ParkourStartLevelScRsp>(
             "ParkourStartLevelScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ParkourStartLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.level_id = is.read_uint32()?;
-                },
-                112 => {
+                96 => {
                     self.CEKKJHBNEOD = is.read_uint32()?;
+                },
+                104 => {
+                    self.level_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for ParkourStartLevelScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if self.CEKKJHBNEOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CEKKJHBNEOD);
+            my_size += ::protobuf::rt::uint32_size(12, self.CEKKJHBNEOD);
+        }
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for ParkourStartLevelScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if self.level_id != 0 {
-            os.write_uint32(10, self.level_id)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if self.CEKKJHBNEOD != 0 {
-            os.write_uint32(14, self.CEKKJHBNEOD)?;
+            os.write_uint32(12, self.CEKKJHBNEOD)?;
+        }
+        if self.level_id != 0 {
+            os.write_uint32(13, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for ParkourStartLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.level_id = 0;
         self.CEKKJHBNEOD = 0;
+        self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourStartLevelScRsp {
         static instance: ParkourStartLevelScRsp = ParkourStartLevelScRsp {
             retcode: 0,
-            level_id: 0,
             CEKKJHBNEOD: 0,
+            level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ParkourStartLevelScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cParkourStartLevelScRsp.proto\"o\n\x16ParkourStartLevelScRsp\x12\
-    \x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\
-    \x18\n\x20\x01(\rR\x07levelId\x12\x20\n\x0bCEKKJHBNEOD\x18\x0e\x20\x01(\
-    \rR\x0bCEKKJHBNEODb\x06proto3\
+    \x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bCEKKJHBNEO\
+    D\x18\x0c\x20\x01(\rR\x0bCEKKJHBNEOD\x12\x19\n\x08level_id\x18\r\x20\x01\
+    (\rR\x07levelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

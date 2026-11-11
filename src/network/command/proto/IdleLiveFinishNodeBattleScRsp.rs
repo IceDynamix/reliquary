@@ -30,22 +30,22 @@ pub struct IdleLiveFinishNodeBattleScRsp {
     // message fields
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.BPIOEKHMAIC)
     pub BPIOEKHMAIC: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.IBLOFDAGDCE)
-    pub IBLOFDAGDCE: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
-    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.DHPPLPJOMNB)
     pub DHPPLPJOMNB: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.GBJEALNCMJC)
-    pub GBJEALNCMJC: ::protobuf::EnumOrUnknown<super::JDGNMIDMACL::JDGNMIDMACL>,
-    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.HPCKMFMNOBG)
-    pub HPCKMFMNOBG: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.JEAEFMHIIAC)
     pub JEAEFMHIIAC: u64,
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.IOFKDDFNDGC)
-    pub IOFKDDFNDGC: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    pub IOFKDDFNDGC: ::std::vec::Vec<super::KVP::KVP>,
+    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.GBJEALNCMJC)
+    pub GBJEALNCMJC: ::protobuf::EnumOrUnknown<super::JDGNMIDMACL::JDGNMIDMACL>,
+    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.IBLOFDAGDCE)
+    pub IBLOFDAGDCE: ::std::vec::Vec<super::KVP::KVP>,
+    // @@protoc_insertion_point(field:IdleLiveFinishNodeBattleScRsp.HPCKMFMNOBG)
+    pub HPCKMFMNOBG: ::std::vec::Vec<super::KVP::KVP>,
     // special fields
     // @@protoc_insertion_point(special_field:IdleLiveFinishNodeBattleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -70,30 +70,15 @@ impl IdleLiveFinishNodeBattleScRsp {
             |m: &IdleLiveFinishNodeBattleScRsp| { &m.BPIOEKHMAIC },
             |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.BPIOEKHMAIC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBLOFDAGDCE",
-            |m: &IdleLiveFinishNodeBattleScRsp| { &m.IBLOFDAGDCE },
-            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.IBLOFDAGDCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &IdleLiveFinishNodeBattleScRsp| { &m.retcode },
-            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "DHPPLPJOMNB",
             |m: &IdleLiveFinishNodeBattleScRsp| { &m.DHPPLPJOMNB },
             |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.DHPPLPJOMNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GBJEALNCMJC",
-            |m: &IdleLiveFinishNodeBattleScRsp| { &m.GBJEALNCMJC },
-            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.GBJEALNCMJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HPCKMFMNOBG",
-            |m: &IdleLiveFinishNodeBattleScRsp| { &m.HPCKMFMNOBG },
-            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.HPCKMFMNOBG },
+            "retcode",
+            |m: &IdleLiveFinishNodeBattleScRsp| { &m.retcode },
+            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "JEAEFMHIIAC",
@@ -109,6 +94,21 @@ impl IdleLiveFinishNodeBattleScRsp {
             "IOFKDDFNDGC",
             |m: &IdleLiveFinishNodeBattleScRsp| { &m.IOFKDDFNDGC },
             |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.IOFKDDFNDGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GBJEALNCMJC",
+            |m: &IdleLiveFinishNodeBattleScRsp| { &m.GBJEALNCMJC },
+            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.GBJEALNCMJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IBLOFDAGDCE",
+            |m: &IdleLiveFinishNodeBattleScRsp| { &m.IBLOFDAGDCE },
+            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.IBLOFDAGDCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HPCKMFMNOBG",
+            |m: &IdleLiveFinishNodeBattleScRsp| { &m.HPCKMFMNOBG },
+            |m: &mut IdleLiveFinishNodeBattleScRsp| { &mut m.HPCKMFMNOBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<IdleLiveFinishNodeBattleScRsp>(
             "IdleLiveFinishNodeBattleScRsp",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.BPIOEKHMAIC)?;
                 },
                 26 => {
-                    self.IBLOFDAGDCE.push(is.read_message()?);
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHPPLPJOMNB)?;
                 },
                 32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DHPPLPJOMNB)?;
-                },
-                56 => {
-                    self.GBJEALNCMJC = is.read_enum_or_unknown()?;
-                },
-                74 => {
-                    self.HPCKMFMNOBG.push(is.read_message()?);
-                },
-                104 => {
+                40 => {
                     self.JEAEFMHIIAC = is.read_uint64()?;
                 },
-                114 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                122 => {
+                66 => {
                     self.IOFKDDFNDGC.push(is.read_message()?);
+                },
+                80 => {
+                    self.GBJEALNCMJC = is.read_enum_or_unknown()?;
+                },
+                98 => {
+                    self.IBLOFDAGDCE.push(is.read_message()?);
+                },
+                106 => {
+                    self.HPCKMFMNOBG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -171,32 +171,32 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.IBLOFDAGDCE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         if let Some(v) = self.DHPPLPJOMNB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
-            my_size += ::protobuf::rt::int32_size(7, self.GBJEALNCMJC.value());
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        for value in &self.HPCKMFMNOBG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.JEAEFMHIIAC != 0 {
-            my_size += ::protobuf::rt::uint64_size(13, self.JEAEFMHIIAC);
+            my_size += ::protobuf::rt::uint64_size(5, self.JEAEFMHIIAC);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.IOFKDDFNDGC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
+            my_size += ::protobuf::rt::int32_size(10, self.GBJEALNCMJC.value());
+        }
+        for value in &self.IBLOFDAGDCE {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.HPCKMFMNOBG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -207,31 +207,31 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.BPIOEKHMAIC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        for v in &self.IBLOFDAGDCE {
+        if let Some(v) = self.DHPPLPJOMNB.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        };
+        }
         if self.retcode != 0 {
             os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.DHPPLPJOMNB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.GBJEALNCMJC))?;
-        }
-        for v in &self.HPCKMFMNOBG {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
         if self.JEAEFMHIIAC != 0 {
-            os.write_uint64(13, self.JEAEFMHIIAC)?;
+            os.write_uint64(5, self.JEAEFMHIIAC)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         for v in &self.IOFKDDFNDGC {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.GBJEALNCMJC != ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.GBJEALNCMJC))?;
+        }
+        for v in &self.IBLOFDAGDCE {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        for v in &self.HPCKMFMNOBG {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -251,28 +251,28 @@ impl ::protobuf::Message for IdleLiveFinishNodeBattleScRsp {
 
     fn clear(&mut self) {
         self.BPIOEKHMAIC.clear();
-        self.IBLOFDAGDCE.clear();
-        self.retcode = 0;
         self.DHPPLPJOMNB.clear();
-        self.GBJEALNCMJC = ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA);
-        self.HPCKMFMNOBG.clear();
+        self.retcode = 0;
         self.JEAEFMHIIAC = 0;
         self.reward.clear();
         self.IOFKDDFNDGC.clear();
+        self.GBJEALNCMJC = ::protobuf::EnumOrUnknown::new(super::JDGNMIDMACL::JDGNMIDMACL::JDGNMIDMACL_GAIFBJCKGPA);
+        self.IBLOFDAGDCE.clear();
+        self.HPCKMFMNOBG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static IdleLiveFinishNodeBattleScRsp {
         static instance: IdleLiveFinishNodeBattleScRsp = IdleLiveFinishNodeBattleScRsp {
             BPIOEKHMAIC: ::protobuf::MessageField::none(),
-            IBLOFDAGDCE: ::std::vec::Vec::new(),
-            retcode: 0,
             DHPPLPJOMNB: ::protobuf::MessageField::none(),
-            GBJEALNCMJC: ::protobuf::EnumOrUnknown::from_i32(0),
-            HPCKMFMNOBG: ::std::vec::Vec::new(),
+            retcode: 0,
             JEAEFMHIIAC: 0,
             reward: ::protobuf::MessageField::none(),
             IOFKDDFNDGC: ::std::vec::Vec::new(),
+            GBJEALNCMJC: ::protobuf::EnumOrUnknown::from_i32(0),
+            IBLOFDAGDCE: ::std::vec::Vec::new(),
+            HPCKMFMNOBG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -297,17 +297,17 @@ impl ::protobuf::reflect::ProtobufValue for IdleLiveFinishNodeBattleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#IdleLiveFinishNodeBattleScRsp.proto\x1a\x11APAMFCKFHLL.proto\x1a\x0eI\
-    temList.proto\x1a\x11JDGNMIDMACL.proto\"\x98\x03\n\x1dIdleLiveFinishNode\
-    BattleScRsp\x12+\n\x0bBPIOEKHMAIC\x18\x02\x20\x01(\x0b2\t.ItemListR\x0bB\
-    PIOEKHMAIC\x12.\n\x0bIBLOFDAGDCE\x18\x03\x20\x03(\x0b2\x0c.APAMFCKFHLLR\
-    \x0bIBLOFDAGDCE\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12+\
-    \n\x0bDHPPLPJOMNB\x18\x06\x20\x01(\x0b2\t.ItemListR\x0bDHPPLPJOMNB\x12.\
-    \n\x0bGBJEALNCMJC\x18\x07\x20\x01(\x0e2\x0c.JDGNMIDMACLR\x0bGBJEALNCMJC\
-    \x12.\n\x0bHPCKMFMNOBG\x18\t\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bHPCKMFMNO\
-    BG\x12\x20\n\x0bJEAEFMHIIAC\x18\r\x20\x01(\x04R\x0bJEAEFMHIIAC\x12!\n\
-    \x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bIOFKDDF\
-    NDGC\x18\x0f\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bIOFKDDFNDGCb\x06proto3\
+    \n#IdleLiveFinishNodeBattleScRsp.proto\x1a\x0eItemList.proto\x1a\x11JDGN\
+    MIDMACL.proto\x1a\tKVP.proto\"\x80\x03\n\x1dIdleLiveFinishNodeBattleScRs\
+    p\x12+\n\x0bBPIOEKHMAIC\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bBPIOEKHMAIC\
+    \x12+\n\x0bDHPPLPJOMNB\x18\x03\x20\x01(\x0b2\t.ItemListR\x0bDHPPLPJOMNB\
+    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bJEAEFM\
+    HIIAC\x18\x05\x20\x01(\x04R\x0bJEAEFMHIIAC\x12!\n\x06reward\x18\x06\x20\
+    \x01(\x0b2\t.ItemListR\x06reward\x12&\n\x0bIOFKDDFNDGC\x18\x08\x20\x03(\
+    \x0b2\x04.KVPR\x0bIOFKDDFNDGC\x12.\n\x0bGBJEALNCMJC\x18\n\x20\x01(\x0e2\
+    \x0c.JDGNMIDMACLR\x0bGBJEALNCMJC\x12&\n\x0bIBLOFDAGDCE\x18\x0c\x20\x03(\
+    \x0b2\x04.KVPR\x0bIBLOFDAGDCE\x12&\n\x0bHPCKMFMNOBG\x18\r\x20\x03(\x0b2\
+    \x04.KVPR\x0bHPCKMFMNOBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -325,9 +325,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             deps.push(super::JDGNMIDMACL::file_descriptor().clone());
+            deps.push(super::KVP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(IdleLiveFinishNodeBattleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

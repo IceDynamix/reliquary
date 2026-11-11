@@ -30,8 +30,8 @@ pub struct FFOGFOBHDEK {
     // message fields
     // @@protoc_insertion_point(field:FFOGFOBHDEK.DAOOOBLJOLB)
     pub DAOOOBLJOLB: ::std::vec::Vec<super::IGKKILFFNJK::IGKKILFFNJK>,
-    // @@protoc_insertion_point(field:FFOGFOBHDEK.H_9f60ad73)
-    pub H_9f60ad73: ::std::vec::Vec<super::FBNGHMHHHLL::FBNGHMHHHLL>,
+    // @@protoc_insertion_point(field:FFOGFOBHDEK.H_0b0e9102)
+    pub H_0b0e9102: ::std::vec::Vec<super::FBNGHMHHHLL::FBNGHMHHHLL>,
     // special fields
     // @@protoc_insertion_point(special_field:FFOGFOBHDEK.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl FFOGFOBHDEK {
             |m: &mut FFOGFOBHDEK| { &mut m.DAOOOBLJOLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "H_9f60ad73",
-            |m: &FFOGFOBHDEK| { &m.H_9f60ad73 },
-            |m: &mut FFOGFOBHDEK| { &mut m.H_9f60ad73 },
+            "H_0b0e9102",
+            |m: &FFOGFOBHDEK| { &m.H_0b0e9102 },
+            |m: &mut FFOGFOBHDEK| { &mut m.H_0b0e9102 },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FFOGFOBHDEK>(
             "FFOGFOBHDEK",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FFOGFOBHDEK {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                66 => {
                     self.DAOOOBLJOLB.push(is.read_message()?);
                 },
-                98 => {
-                    self.H_9f60ad73.push(is.read_message()?);
+                90 => {
+                    self.H_0b0e9102.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FFOGFOBHDEK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.H_9f60ad73 {
+        for value in &self.H_0b0e9102 {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -112,10 +112,10 @@ impl ::protobuf::Message for FFOGFOBHDEK {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.DAOOOBLJOLB {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        for v in &self.H_9f60ad73 {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.H_0b0e9102 {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -135,14 +135,14 @@ impl ::protobuf::Message for FFOGFOBHDEK {
 
     fn clear(&mut self) {
         self.DAOOOBLJOLB.clear();
-        self.H_9f60ad73.clear();
+        self.H_0b0e9102.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FFOGFOBHDEK {
         static instance: FFOGFOBHDEK = FFOGFOBHDEK {
             DAOOOBLJOLB: ::std::vec::Vec::new(),
-            H_9f60ad73: ::std::vec::Vec::new(),
+            H_0b0e9102: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for FFOGFOBHDEK {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11FFOGFOBHDEK.proto\x1a\x11FBNGHMHHHLL.proto\x1a\x11IGKKILFFNJK.prot\
-    o\"j\n\x0bFFOGFOBHDEK\x12.\n\x0bDAOOOBLJOLB\x18\n\x20\x03(\x0b2\x0c.IGKK\
-    ILFFNJKR\x0bDAOOOBLJOLB\x12+\n\nH_9f60ad73\x18\x0c\x20\x03(\x0b2\x0c.FBN\
-    GHMHHHLLR\tH9f60ad73b\x06proto3\
+    o\"j\n\x0bFFOGFOBHDEK\x12.\n\x0bDAOOOBLJOLB\x18\x08\x20\x03(\x0b2\x0c.IG\
+    KKILFFNJKR\x0bDAOOOBLJOLB\x12+\n\nH_0b0e9102\x18\x0b\x20\x03(\x0b2\x0c.F\
+    BNGHMHHHLLR\tH0b0e9102b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -48,7 +48,7 @@ impl SummonPetCsReq {
         ::std::default::Default::default()
     }
 
-    // uint32 ODNGMIJLKKA = 1;
+    // uint32 ODNGMIJLKKA = 2;
 
     pub fn ODNGMIJLKKA(&self) -> u32 {
         match self.HGEOKHHJAIE {
@@ -73,7 +73,7 @@ impl SummonPetCsReq {
         self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v))
     }
 
-    // uint64 EBAAFDHEPLO = 14;
+    // uint64 EBAAFDHEPLO = 3;
 
     pub fn EBAAFDHEPLO(&self) -> u64 {
         match self.HGEOKHHJAIE {
@@ -137,13 +137,13 @@ impl ::protobuf::Message for SummonPetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                112 => {
                     self.LLGIIPALELD = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                16 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(is.read_uint32()?));
                 },
-                112 => {
+                24 => {
                     self.HGEOKHHJAIE = ::std::option::Option::Some(summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(is.read_uint64()?));
                 },
                 tag => {
@@ -159,15 +159,15 @@ impl ::protobuf::Message for SummonPetCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
-            my_size += ::protobuf::rt::int32_size(13, self.LLGIIPALELD.value());
+            my_size += ::protobuf::rt::int32_size(14, self.LLGIIPALELD.value());
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
                 &summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
-                    my_size += ::protobuf::rt::uint64_size(14, v);
+                    my_size += ::protobuf::rt::uint64_size(3, v);
                 },
             };
         }
@@ -178,15 +178,15 @@ impl ::protobuf::Message for SummonPetCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.LLGIIPALELD != ::protobuf::EnumOrUnknown::new(super::EOGNOEJHAGN::EOGNOEJHAGN::EOGNOEJHAGN_NLCDGIPGFDJ) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.LLGIIPALELD))?;
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.LLGIIPALELD))?;
         }
         if let ::std::option::Option::Some(ref v) = self.HGEOKHHJAIE {
             match v {
                 &summon_pet_cs_req::HGEOKHHJAIE::ODNGMIJLKKA(v) => {
-                    os.write_uint32(1, v)?;
+                    os.write_uint32(2, v)?;
                 },
                 &summon_pet_cs_req::HGEOKHHJAIE::EBAAFDHEPLO(v) => {
-                    os.write_uint64(14, v)?;
+                    os.write_uint64(3, v)?;
                 },
             };
         }
@@ -272,10 +272,10 @@ pub mod summon_pet_cs_req {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14SummonPetCsReq.proto\x1a\x11EOGNOEJHAGN.proto\"\x97\x01\n\x0eSummo\
-    nPetCsReq\x12.\n\x0bLLGIIPALELD\x18\r\x20\x01(\x0e2\x0c.EOGNOEJHAGNR\x0b\
-    LLGIIPALELD\x12\"\n\x0bODNGMIJLKKA\x18\x01\x20\x01(\rH\0R\x0bODNGMIJLKKA\
-    \x12\"\n\x0bEBAAFDHEPLO\x18\x0e\x20\x01(\x04H\0R\x0bEBAAFDHEPLOB\r\n\x0b\
-    HGEOKHHJAIEb\x06proto3\
+    nPetCsReq\x12.\n\x0bLLGIIPALELD\x18\x0e\x20\x01(\x0e2\x0c.EOGNOEJHAGNR\
+    \x0bLLGIIPALELD\x12\"\n\x0bODNGMIJLKKA\x18\x02\x20\x01(\rH\0R\x0bODNGMIJ\
+    LKKA\x12\"\n\x0bEBAAFDHEPLO\x18\x03\x20\x01(\x04H\0R\x0bEBAAFDHEPLOB\r\n\
+    \x0bHGEOKHHJAIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

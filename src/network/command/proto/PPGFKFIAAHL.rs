@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPGFKFIAAHL {
     // message fields
-    // @@protoc_insertion_point(field:PPGFKFIAAHL.NMFGECJBPLJ)
-    pub NMFGECJBPLJ: ::protobuf::MessageField<super::KDANACKPJIP::KDANACKPJIP>,
     // @@protoc_insertion_point(field:PPGFKFIAAHL.end_status)
     pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PPGFKFIAAHL.NMFGECJBPLJ)
+    pub NMFGECJBPLJ: ::protobuf::MessageField<super::KDANACKPJIP::KDANACKPJIP>,
     // special fields
     // @@protoc_insertion_point(special_field:PPGFKFIAAHL.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PPGFKFIAAHL {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KDANACKPJIP::KDANACKPJIP>(
-            "NMFGECJBPLJ",
-            |m: &PPGFKFIAAHL| { &m.NMFGECJBPLJ },
-            |m: &mut PPGFKFIAAHL| { &mut m.NMFGECJBPLJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_status",
             |m: &PPGFKFIAAHL| { &m.end_status },
             |m: &mut PPGFKFIAAHL| { &mut m.end_status },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KDANACKPJIP::KDANACKPJIP>(
+            "NMFGECJBPLJ",
+            |m: &PPGFKFIAAHL| { &m.NMFGECJBPLJ },
+            |m: &mut PPGFKFIAAHL| { &mut m.NMFGECJBPLJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PPGFKFIAAHL>(
             "PPGFKFIAAHL",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PPGFKFIAAHL {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMFGECJBPLJ)?;
-                },
-                32 => {
+                80 => {
                     self.end_status = is.read_enum_or_unknown()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMFGECJBPLJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for PPGFKFIAAHL {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(10, self.end_status.value());
+        }
         if let Some(v) = self.NMFGECJBPLJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.end_status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PPGFKFIAAHL {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NMFGECJBPLJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
         if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        }
+        if let Some(v) = self.NMFGECJBPLJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PPGFKFIAAHL {
     }
 
     fn clear(&mut self) {
-        self.NMFGECJBPLJ.clear();
         self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.NMFGECJBPLJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPGFKFIAAHL {
         static instance: PPGFKFIAAHL = PPGFKFIAAHL {
-            NMFGECJBPLJ: ::protobuf::MessageField::none(),
             end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            NMFGECJBPLJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for PPGFKFIAAHL {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11PPGFKFIAAHL.proto\x1a\x15BattleEndStatus.proto\x1a\x11KDANACKPJIP.\
-    proto\"n\n\x0bPPGFKFIAAHL\x12.\n\x0bNMFGECJBPLJ\x18\x03\x20\x01(\x0b2\
-    \x0c.KDANACKPJIPR\x0bNMFGECJBPLJ\x12/\n\nend_status\x18\x04\x20\x01(\x0e\
-    2\x10.BattleEndStatusR\tendStatusb\x06proto3\
+    proto\"n\n\x0bPPGFKFIAAHL\x12/\n\nend_status\x18\n\x20\x01(\x0e2\x10.Bat\
+    tleEndStatusR\tendStatus\x12.\n\x0bNMFGECJBPLJ\x18\x0e\x20\x01(\x0b2\x0c\
+    .KDANACKPJIPR\x0bNMFGECJBPLJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

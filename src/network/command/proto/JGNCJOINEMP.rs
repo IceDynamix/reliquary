@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct JGNCJOINEMP {
     // message fields
-    // @@protoc_insertion_point(field:JGNCJOINEMP.unique_id)
-    pub unique_id: i32,
     // @@protoc_insertion_point(field:JGNCJOINEMP.GJBOKLDCKEG)
     pub GJBOKLDCKEG: ::protobuf::MessageField<super::BPDKJKJGECM::BPDKJKJGECM>,
+    // @@protoc_insertion_point(field:JGNCJOINEMP.unique_id)
+    pub unique_id: i32,
+    // @@protoc_insertion_point(field:JGNCJOINEMP.CFKKNEHABHH)
+    pub CFKKNEHABHH: u32,
     // @@protoc_insertion_point(field:JGNCJOINEMP.BHPCOAPAGMA)
     pub BHPCOAPAGMA: bool,
     // @@protoc_insertion_point(field:JGNCJOINEMP.pos_index)
     pub pos_index: ::protobuf::MessageField<super::LIKNJLCIAGI::LIKNJLCIAGI>,
-    // @@protoc_insertion_point(field:JGNCJOINEMP.CFKKNEHABHH)
-    pub CFKKNEHABHH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:JGNCJOINEMP.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,20 @@ impl JGNCJOINEMP {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BPDKJKJGECM::BPDKJKJGECM>(
+            "GJBOKLDCKEG",
+            |m: &JGNCJOINEMP| { &m.GJBOKLDCKEG },
+            |m: &mut JGNCJOINEMP| { &mut m.GJBOKLDCKEG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &JGNCJOINEMP| { &m.unique_id },
             |m: &mut JGNCJOINEMP| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BPDKJKJGECM::BPDKJKJGECM>(
-            "GJBOKLDCKEG",
-            |m: &JGNCJOINEMP| { &m.GJBOKLDCKEG },
-            |m: &mut JGNCJOINEMP| { &mut m.GJBOKLDCKEG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFKKNEHABHH",
+            |m: &JGNCJOINEMP| { &m.CFKKNEHABHH },
+            |m: &mut JGNCJOINEMP| { &mut m.CFKKNEHABHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "BHPCOAPAGMA",
@@ -76,11 +81,6 @@ impl JGNCJOINEMP {
             "pos_index",
             |m: &JGNCJOINEMP| { &m.pos_index },
             |m: &mut JGNCJOINEMP| { &mut m.pos_index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CFKKNEHABHH",
-            |m: &JGNCJOINEMP| { &m.CFKKNEHABHH },
-            |m: &mut JGNCJOINEMP| { &mut m.CFKKNEHABHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<JGNCJOINEMP>(
             "JGNCJOINEMP",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for JGNCJOINEMP {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.unique_id = is.read_int32()?;
-                },
-                34 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.GJBOKLDCKEG)?;
                 },
-                40 => {
+                56 => {
+                    self.unique_id = is.read_int32()?;
+                },
+                64 => {
+                    self.CFKKNEHABHH = is.read_uint32()?;
+                },
+                80 => {
                     self.BHPCOAPAGMA = is.read_bool()?;
                 },
-                82 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.pos_index)?;
-                },
-                120 => {
-                    self.CFKKNEHABHH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,12 +127,15 @@ impl ::protobuf::Message for JGNCJOINEMP {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.unique_id != 0 {
-            my_size += ::protobuf::rt::int32_size(2, self.unique_id);
-        }
         if let Some(v) = self.GJBOKLDCKEG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.unique_id != 0 {
+            my_size += ::protobuf::rt::int32_size(7, self.unique_id);
+        }
+        if self.CFKKNEHABHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CFKKNEHABHH);
         }
         if self.BHPCOAPAGMA != false {
             my_size += 1 + 1;
@@ -141,29 +144,26 @@ impl ::protobuf::Message for JGNCJOINEMP {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.CFKKNEHABHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.CFKKNEHABHH);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.unique_id != 0 {
-            os.write_int32(2, self.unique_id)?;
-        }
         if let Some(v) = self.GJBOKLDCKEG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.BHPCOAPAGMA != false {
-            os.write_bool(5, self.BHPCOAPAGMA)?;
-        }
-        if let Some(v) = self.pos_index.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.unique_id != 0 {
+            os.write_int32(7, self.unique_id)?;
         }
         if self.CFKKNEHABHH != 0 {
-            os.write_uint32(15, self.CFKKNEHABHH)?;
+            os.write_uint32(8, self.CFKKNEHABHH)?;
+        }
+        if self.BHPCOAPAGMA != false {
+            os.write_bool(10, self.BHPCOAPAGMA)?;
+        }
+        if let Some(v) = self.pos_index.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,21 +182,21 @@ impl ::protobuf::Message for JGNCJOINEMP {
     }
 
     fn clear(&mut self) {
-        self.unique_id = 0;
         self.GJBOKLDCKEG.clear();
+        self.unique_id = 0;
+        self.CFKKNEHABHH = 0;
         self.BHPCOAPAGMA = false;
         self.pos_index.clear();
-        self.CFKKNEHABHH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static JGNCJOINEMP {
         static instance: JGNCJOINEMP = JGNCJOINEMP {
-            unique_id: 0,
             GJBOKLDCKEG: ::protobuf::MessageField::none(),
+            unique_id: 0,
+            CFKKNEHABHH: 0,
             BHPCOAPAGMA: false,
             pos_index: ::protobuf::MessageField::none(),
-            CFKKNEHABHH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for JGNCJOINEMP {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JGNCJOINEMP.proto\x1a\x11BPDKJKJGECM.proto\x1a\x11LIKNJLCIAGI.prot\
-    o\"\xc9\x01\n\x0bJGNCJOINEMP\x12\x1b\n\tunique_id\x18\x02\x20\x01(\x05R\
-    \x08uniqueId\x12.\n\x0bGJBOKLDCKEG\x18\x04\x20\x01(\x0b2\x0c.BPDKJKJGECM\
-    R\x0bGJBOKLDCKEG\x12\x20\n\x0bBHPCOAPAGMA\x18\x05\x20\x01(\x08R\x0bBHPCO\
-    APAGMA\x12)\n\tpos_index\x18\n\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x08posInde\
-    x\x12\x20\n\x0bCFKKNEHABHH\x18\x0f\x20\x01(\rR\x0bCFKKNEHABHHb\x06proto3\
+    o\"\xc9\x01\n\x0bJGNCJOINEMP\x12.\n\x0bGJBOKLDCKEG\x18\x03\x20\x01(\x0b2\
+    \x0c.BPDKJKJGECMR\x0bGJBOKLDCKEG\x12\x1b\n\tunique_id\x18\x07\x20\x01(\
+    \x05R\x08uniqueId\x12\x20\n\x0bCFKKNEHABHH\x18\x08\x20\x01(\rR\x0bCFKKNE\
+    HABHH\x12\x20\n\x0bBHPCOAPAGMA\x18\n\x20\x01(\x08R\x0bBHPCOAPAGMA\x12)\n\
+    \tpos_index\x18\x0f\x20\x01(\x0b2\x0c.LIKNJLCIAGIR\x08posIndexb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

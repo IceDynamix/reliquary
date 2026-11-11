@@ -86,10 +86,10 @@ impl ::protobuf::Message for DCEPBLJKNNE {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                56 => {
+                88 => {
                     self.LIAGGDDILGO = is.read_int32()?;
                 },
                 120 => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for DCEPBLJKNNE {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.LIAGGDDILGO != 0 {
-            my_size += ::protobuf::rt::int32_size(7, self.LIAGGDDILGO);
+            my_size += ::protobuf::rt::int32_size(11, self.LIAGGDDILGO);
         }
         if self.JFIGNBBLCIM != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.JFIGNBBLCIM);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for DCEPBLJKNNE {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.LIAGGDDILGO != 0 {
-            os.write_int32(7, self.LIAGGDDILGO)?;
+            os.write_int32(11, self.LIAGGDDILGO)?;
         }
         if self.JFIGNBBLCIM != 0 {
             os.write_uint32(15, self.JFIGNBBLCIM)?;
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for DCEPBLJKNNE {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11DCEPBLJKNNE.proto\x1a\x12ItemCostData.proto\"}\n\x0bDCEPBLJKNNE\
-    \x12*\n\tcost_data\x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
-    \x20\n\x0bLIAGGDDILGO\x18\x07\x20\x01(\x05R\x0bLIAGGDDILGO\x12\x20\n\x0b\
+    \x12*\n\tcost_data\x18\x06\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bLIAGGDDILGO\x18\x0b\x20\x01(\x05R\x0bLIAGGDDILGO\x12\x20\n\x0b\
     JFIGNBBLCIM\x18\x0f\x20\x01(\rR\x0bJFIGNBBLCIMb\x06proto3\
 ";
 

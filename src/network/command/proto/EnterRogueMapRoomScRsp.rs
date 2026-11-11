@@ -30,10 +30,10 @@ pub struct EnterRogueMapRoomScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.ANHDBMOPGDC)
     pub ANHDBMOPGDC: u32,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.JNKLNLKHGBB)
     pub JNKLNLKHGBB: ::protobuf::MessageField<super::FHEGNOPNICH::FHEGNOPNICH>,
     // @@protoc_insertion_point(field:EnterRogueMapRoomScRsp.scene)
@@ -62,15 +62,15 @@ impl EnterRogueMapRoomScRsp {
             |m: &EnterRogueMapRoomScRsp| { &m.ANHDBMOPGDC },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.ANHDBMOPGDC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &EnterRogueMapRoomScRsp| { &m.retcode },
-            |m: &mut EnterRogueMapRoomScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &EnterRogueMapRoomScRsp| { &m.lineup },
             |m: &mut EnterRogueMapRoomScRsp| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &EnterRogueMapRoomScRsp| { &m.retcode },
+            |m: &mut EnterRogueMapRoomScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHEGNOPNICH::FHEGNOPNICH>(
             "JNKLNLKHGBB",
@@ -103,13 +103,13 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
                 16 => {
                     self.ANHDBMOPGDC = is.read_uint32()?;
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                58 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                114 => {
+                96 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JNKLNLKHGBB)?;
                 },
                 122 => {
@@ -130,12 +130,12 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
         if self.ANHDBMOPGDC != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.ANHDBMOPGDC);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.JNKLNLKHGBB.as_ref() {
             let len = v.compute_size();
@@ -154,14 +154,14 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
         if self.ANHDBMOPGDC != 0 {
             os.write_uint32(2, self.ANHDBMOPGDC)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.JNKLNLKHGBB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
@@ -184,8 +184,8 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
 
     fn clear(&mut self) {
         self.ANHDBMOPGDC = 0;
-        self.retcode = 0;
         self.lineup.clear();
+        self.retcode = 0;
         self.JNKLNLKHGBB.clear();
         self.scene.clear();
         self.special_fields.clear();
@@ -194,8 +194,8 @@ impl ::protobuf::Message for EnterRogueMapRoomScRsp {
     fn default_instance() -> &'static EnterRogueMapRoomScRsp {
         static instance: EnterRogueMapRoomScRsp = EnterRogueMapRoomScRsp {
             ANHDBMOPGDC: 0,
-            retcode: 0,
             lineup: ::protobuf::MessageField::none(),
+            retcode: 0,
             JNKLNLKHGBB: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -224,11 +224,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomScRsp.proto\x1a\x11FHEGNOPNICH.proto\x1a\x10Lineu\
     pInfo.proto\x1a\x0fSceneInfo.proto\"\xcb\x01\n\x16EnterRogueMapRoomScRsp\
-    \x12\x20\n\x0bANHDBMOPGDC\x18\x02\x20\x01(\rR\x0bANHDBMOPGDC\x12\x18\n\
-    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12#\n\x06lineup\x18\x07\x20\
-    \x01(\x0b2\x0b.LineupInfoR\x06lineup\x12.\n\x0bJNKLNLKHGBB\x18\x0e\x20\
-    \x01(\x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBB\x12\x20\n\x05scene\x18\x0f\
-    \x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
+    \x12\x20\n\x0bANHDBMOPGDC\x18\x02\x20\x01(\rR\x0bANHDBMOPGDC\x12#\n\x06l\
+    ineup\x18\x04\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x18\n\x07retco\
+    de\x18\x0c\x20\x01(\rR\x07retcode\x12.\n\x0bJNKLNLKHGBB\x18\r\x20\x01(\
+    \x0b2\x0c.FHEGNOPNICHR\x0bJNKLNLKHGBB\x12\x20\n\x05scene\x18\x0f\x20\x01\
+    (\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

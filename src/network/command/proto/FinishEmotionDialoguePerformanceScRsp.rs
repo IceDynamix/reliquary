@@ -30,10 +30,10 @@ pub struct FinishEmotionDialoguePerformanceScRsp {
     // message fields
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.reward_list)
     pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.dialogue_id)
     pub dialogue_id: u32,
+    // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:FinishEmotionDialoguePerformanceScRsp.script_id)
     pub script_id: u32,
     // special fields
@@ -61,14 +61,14 @@ impl FinishEmotionDialoguePerformanceScRsp {
             |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.retcode },
-            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dialogue_id",
             |m: &FinishEmotionDialoguePerformanceScRsp| { &m.dialogue_id },
             |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.dialogue_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &FinishEmotionDialoguePerformanceScRsp| { &m.retcode },
+            |m: &mut FinishEmotionDialoguePerformanceScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "script_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
+                },
+                24 => {
+                    self.dialogue_id = is.read_uint32()?;
                 },
                 48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
-                    self.dialogue_id = is.read_uint32()?;
-                },
-                112 => {
+                64 => {
                     self.script_id = is.read_uint32()?;
                 },
                 tag => {
@@ -121,14 +121,14 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.dialogue_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.dialogue_id);
+        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if self.dialogue_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.dialogue_id);
-        }
         if self.script_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.script_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.script_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.dialogue_id != 0 {
+            os.write_uint32(3, self.dialogue_id)?;
         }
         if self.retcode != 0 {
             os.write_uint32(6, self.retcode)?;
         }
-        if self.dialogue_id != 0 {
-            os.write_uint32(9, self.dialogue_id)?;
-        }
         if self.script_id != 0 {
-            os.write_uint32(14, self.script_id)?;
+            os.write_uint32(8, self.script_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
 
     fn clear(&mut self) {
         self.reward_list.clear();
-        self.retcode = 0;
         self.dialogue_id = 0;
+        self.retcode = 0;
         self.script_id = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for FinishEmotionDialoguePerformanceScRsp {
     fn default_instance() -> &'static FinishEmotionDialoguePerformanceScRsp {
         static instance: FinishEmotionDialoguePerformanceScRsp = FinishEmotionDialoguePerformanceScRsp {
             reward_list: ::protobuf::MessageField::none(),
-            retcode: 0,
             dialogue_id: 0,
+            retcode: 0,
             script_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,10 +204,10 @@ impl ::protobuf::reflect::ProtobufValue for FinishEmotionDialoguePerformanceScRs
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+FinishEmotionDialoguePerformanceScRsp.proto\x1a\x0eItemList.proto\"\
     \xab\x01\n%FinishEmotionDialoguePerformanceScRsp\x12*\n\x0breward_list\
-    \x18\x04\x20\x01(\x0b2\t.ItemListR\nrewardList\x12\x18\n\x07retcode\x18\
-    \x06\x20\x01(\rR\x07retcode\x12\x1f\n\x0bdialogue_id\x18\t\x20\x01(\rR\n\
-    dialogueId\x12\x1b\n\tscript_id\x18\x0e\x20\x01(\rR\x08scriptIdb\x06prot\
-    o3\
+    \x18\x01\x20\x01(\x0b2\t.ItemListR\nrewardList\x12\x1f\n\x0bdialogue_id\
+    \x18\x03\x20\x01(\rR\ndialogueId\x12\x18\n\x07retcode\x18\x06\x20\x01(\r\
+    R\x07retcode\x12\x1b\n\tscript_id\x18\x08\x20\x01(\rR\x08scriptIdb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

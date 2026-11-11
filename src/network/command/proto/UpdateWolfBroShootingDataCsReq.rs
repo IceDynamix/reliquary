@@ -30,10 +30,10 @@ pub struct UpdateWolfBroShootingDataCsReq {
     // message fields
     // @@protoc_insertion_point(field:UpdateWolfBroShootingDataCsReq.uuid)
     pub uuid: u64,
-    // @@protoc_insertion_point(field:UpdateWolfBroShootingDataCsReq.GIJOPFIAMIA)
-    pub GIJOPFIAMIA: u32,
     // @@protoc_insertion_point(field:UpdateWolfBroShootingDataCsReq.AOPPLPDBEHK)
     pub AOPPLPDBEHK: ::protobuf::MessageField<super::BPAGBAALHMP::BPAGBAALHMP>,
+    // @@protoc_insertion_point(field:UpdateWolfBroShootingDataCsReq.GIJOPFIAMIA)
+    pub GIJOPFIAMIA: u32,
     // @@protoc_insertion_point(field:UpdateWolfBroShootingDataCsReq.group_id)
     pub group_id: u32,
     // special fields
@@ -60,15 +60,15 @@ impl UpdateWolfBroShootingDataCsReq {
             |m: &UpdateWolfBroShootingDataCsReq| { &m.uuid },
             |m: &mut UpdateWolfBroShootingDataCsReq| { &mut m.uuid },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIJOPFIAMIA",
-            |m: &UpdateWolfBroShootingDataCsReq| { &m.GIJOPFIAMIA },
-            |m: &mut UpdateWolfBroShootingDataCsReq| { &mut m.GIJOPFIAMIA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BPAGBAALHMP::BPAGBAALHMP>(
             "AOPPLPDBEHK",
             |m: &UpdateWolfBroShootingDataCsReq| { &m.AOPPLPDBEHK },
             |m: &mut UpdateWolfBroShootingDataCsReq| { &mut m.AOPPLPDBEHK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GIJOPFIAMIA",
+            |m: &UpdateWolfBroShootingDataCsReq| { &m.GIJOPFIAMIA },
+            |m: &mut UpdateWolfBroShootingDataCsReq| { &mut m.GIJOPFIAMIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for UpdateWolfBroShootingDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                56 => {
                     self.uuid = is.read_uint64()?;
                 },
-                96 => {
-                    self.GIJOPFIAMIA = is.read_uint32()?;
-                },
-                114 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.AOPPLPDBEHK)?;
                 },
-                120 => {
+                72 => {
+                    self.GIJOPFIAMIA = is.read_uint32()?;
+                },
+                80 => {
                     self.group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -118,17 +118,17 @@ impl ::protobuf::Message for UpdateWolfBroShootingDataCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uuid != 0 {
-            my_size += ::protobuf::rt::uint64_size(8, self.uuid);
-        }
-        if self.GIJOPFIAMIA != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GIJOPFIAMIA);
+            my_size += ::protobuf::rt::uint64_size(7, self.uuid);
         }
         if let Some(v) = self.AOPPLPDBEHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.GIJOPFIAMIA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GIJOPFIAMIA);
+        }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for UpdateWolfBroShootingDataCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uuid != 0 {
-            os.write_uint64(8, self.uuid)?;
-        }
-        if self.GIJOPFIAMIA != 0 {
-            os.write_uint32(12, self.GIJOPFIAMIA)?;
+            os.write_uint64(7, self.uuid)?;
         }
         if let Some(v) = self.AOPPLPDBEHK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.GIJOPFIAMIA != 0 {
+            os.write_uint32(9, self.GIJOPFIAMIA)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(15, self.group_id)?;
+            os.write_uint32(10, self.group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for UpdateWolfBroShootingDataCsReq {
 
     fn clear(&mut self) {
         self.uuid = 0;
-        self.GIJOPFIAMIA = 0;
         self.AOPPLPDBEHK.clear();
+        self.GIJOPFIAMIA = 0;
         self.group_id = 0;
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for UpdateWolfBroShootingDataCsReq {
     fn default_instance() -> &'static UpdateWolfBroShootingDataCsReq {
         static instance: UpdateWolfBroShootingDataCsReq = UpdateWolfBroShootingDataCsReq {
             uuid: 0,
-            GIJOPFIAMIA: 0,
             AOPPLPDBEHK: ::protobuf::MessageField::none(),
+            GIJOPFIAMIA: 0,
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,11 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateWolfBroShootingDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$UpdateWolfBroShootingDataCsReq.proto\x1a\x11BPAGBAALHMP.proto\"\xa1\
-    \x01\n\x1eUpdateWolfBroShootingDataCsReq\x12\x12\n\x04uuid\x18\x08\x20\
-    \x01(\x04R\x04uuid\x12\x20\n\x0bGIJOPFIAMIA\x18\x0c\x20\x01(\rR\x0bGIJOP\
-    FIAMIA\x12.\n\x0bAOPPLPDBEHK\x18\x0e\x20\x01(\x0b2\x0c.BPAGBAALHMPR\x0bA\
-    OPPLPDBEHK\x12\x19\n\x08group_id\x18\x0f\x20\x01(\rR\x07groupIdb\x06prot\
-    o3\
+    \x01\n\x1eUpdateWolfBroShootingDataCsReq\x12\x12\n\x04uuid\x18\x07\x20\
+    \x01(\x04R\x04uuid\x12.\n\x0bAOPPLPDBEHK\x18\x08\x20\x01(\x0b2\x0c.BPAGB\
+    AALHMPR\x0bAOPPLPDBEHK\x12\x20\n\x0bGIJOPFIAMIA\x18\t\x20\x01(\rR\x0bGIJ\
+    OPFIAMIA\x12\x19\n\x08group_id\x18\n\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

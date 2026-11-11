@@ -86,16 +86,16 @@ impl ::protobuf::Message for HLOADNFIOOO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.DCKIGAHCNMJ)?;
                 },
-                24 => {
+                32 => {
                     self.DCKIGAHCNMJ.push(is.read_uint32()?);
                 },
                 72 => {
                     self.level_id = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
                     self.FANPGKBLIOB = is.read_bool()?;
                 },
                 tag => {
@@ -110,7 +110,7 @@ impl ::protobuf::Message for HLOADNFIOOO {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.DCKIGAHCNMJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DCKIGAHCNMJ);
         if self.level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.level_id);
         }
@@ -123,12 +123,12 @@ impl ::protobuf::Message for HLOADNFIOOO {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.DCKIGAHCNMJ)?;
+        os.write_repeated_packed_uint32(4, &self.DCKIGAHCNMJ)?;
         if self.level_id != 0 {
             os.write_uint32(9, self.level_id)?;
         }
         if self.FANPGKBLIOB != false {
-            os.write_bool(10, self.FANPGKBLIOB)?;
+            os.write_bool(13, self.FANPGKBLIOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,8 +183,8 @@ impl ::protobuf::reflect::ProtobufValue for HLOADNFIOOO {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11HLOADNFIOOO.proto\"l\n\x0bHLOADNFIOOO\x12\x20\n\x0bDCKIGAHCNMJ\x18\
-    \x03\x20\x03(\rR\x0bDCKIGAHCNMJ\x12\x19\n\x08level_id\x18\t\x20\x01(\rR\
-    \x07levelId\x12\x20\n\x0bFANPGKBLIOB\x18\n\x20\x01(\x08R\x0bFANPGKBLIOBb\
+    \x04\x20\x03(\rR\x0bDCKIGAHCNMJ\x12\x19\n\x08level_id\x18\t\x20\x01(\rR\
+    \x07levelId\x12\x20\n\x0bFANPGKBLIOB\x18\r\x20\x01(\x08R\x0bFANPGKBLIOBb\
     \x06proto3\
 ";
 

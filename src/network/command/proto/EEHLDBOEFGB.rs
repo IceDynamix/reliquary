@@ -30,14 +30,14 @@ pub struct EEHLDBOEFGB {
     // message fields
     // @@protoc_insertion_point(field:EEHLDBOEFGB.BCAKPNCHIIJ)
     pub BCAKPNCHIIJ: u32,
-    // @@protoc_insertion_point(field:EEHLDBOEFGB.HKEACDBJCOD)
-    pub HKEACDBJCOD: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:EEHLDBOEFGB.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
-    // @@protoc_insertion_point(field:EEHLDBOEFGB.JDFPKAMFHAP)
-    pub JDFPKAMFHAP: ::protobuf::MessageField<super::LAJGLHCCNED::LAJGLHCCNED>,
     // @@protoc_insertion_point(field:EEHLDBOEFGB.OJNGBIBGHBL)
     pub OJNGBIBGHBL: i32,
+    // @@protoc_insertion_point(field:EEHLDBOEFGB.HKEACDBJCOD)
+    pub HKEACDBJCOD: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:EEHLDBOEFGB.JDFPKAMFHAP)
+    pub JDFPKAMFHAP: ::protobuf::MessageField<super::LAJGLHCCNED::LAJGLHCCNED>,
+    // @@protoc_insertion_point(field:EEHLDBOEFGB.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::NPPEMMILLCO::NPPEMMILLCO>,
     // special fields
     // @@protoc_insertion_point(special_field:EEHLDBOEFGB.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,14 +63,14 @@ impl EEHLDBOEFGB {
             |m: &mut EEHLDBOEFGB| { &mut m.BCAKPNCHIIJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OJNGBIBGHBL",
+            |m: &EEHLDBOEFGB| { &m.OJNGBIBGHBL },
+            |m: &mut EEHLDBOEFGB| { &mut m.OJNGBIBGHBL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "HKEACDBJCOD",
             |m: &EEHLDBOEFGB| { &m.HKEACDBJCOD },
             |m: &mut EEHLDBOEFGB| { &mut m.HKEACDBJCOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &EEHLDBOEFGB| { &m.reason },
-            |m: &mut EEHLDBOEFGB| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LAJGLHCCNED::LAJGLHCCNED>(
             "JDFPKAMFHAP",
@@ -78,9 +78,9 @@ impl EEHLDBOEFGB {
             |m: &mut EEHLDBOEFGB| { &mut m.JDFPKAMFHAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJNGBIBGHBL",
-            |m: &EEHLDBOEFGB| { &m.OJNGBIBGHBL },
-            |m: &mut EEHLDBOEFGB| { &mut m.OJNGBIBGHBL },
+            "reason",
+            |m: &EEHLDBOEFGB| { &m.reason },
+            |m: &mut EEHLDBOEFGB| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EEHLDBOEFGB>(
             "EEHLDBOEFGB",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for EEHLDBOEFGB {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                8 => {
                     self.BCAKPNCHIIJ = is.read_uint32()?;
                 },
-                40 => {
+                72 => {
+                    self.OJNGBIBGHBL = is.read_int32()?;
+                },
+                96 => {
                     self.HKEACDBJCOD = is.read_enum_or_unknown()?;
                 },
-                56 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                82 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.JDFPKAMFHAP)?;
                 },
                 120 => {
-                    self.OJNGBIBGHBL = is.read_int32()?;
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -128,20 +128,20 @@ impl ::protobuf::Message for EEHLDBOEFGB {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BCAKPNCHIIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.BCAKPNCHIIJ);
+            my_size += ::protobuf::rt::uint32_size(1, self.BCAKPNCHIIJ);
+        }
+        if self.OJNGBIBGHBL != 0 {
+            my_size += ::protobuf::rt::int32_size(9, self.OJNGBIBGHBL);
         }
         if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            my_size += ::protobuf::rt::int32_size(5, self.HKEACDBJCOD.value());
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            my_size += ::protobuf::rt::int32_size(7, self.reason.value());
+            my_size += ::protobuf::rt::int32_size(12, self.HKEACDBJCOD.value());
         }
         if let Some(v) = self.JDFPKAMFHAP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OJNGBIBGHBL != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.OJNGBIBGHBL);
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
+            my_size += ::protobuf::rt::int32_size(15, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for EEHLDBOEFGB {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BCAKPNCHIIJ != 0 {
-            os.write_uint32(3, self.BCAKPNCHIIJ)?;
-        }
-        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.reason))?;
-        }
-        if let Some(v) = self.JDFPKAMFHAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint32(1, self.BCAKPNCHIIJ)?;
         }
         if self.OJNGBIBGHBL != 0 {
-            os.write_int32(15, self.OJNGBIBGHBL)?;
+            os.write_int32(9, self.OJNGBIBGHBL)?;
+        }
+        if self.HKEACDBJCOD != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.HKEACDBJCOD))?;
+        }
+        if let Some(v) = self.JDFPKAMFHAP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,20 +182,20 @@ impl ::protobuf::Message for EEHLDBOEFGB {
 
     fn clear(&mut self) {
         self.BCAKPNCHIIJ = 0;
-        self.HKEACDBJCOD = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
-        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
-        self.JDFPKAMFHAP.clear();
         self.OJNGBIBGHBL = 0;
+        self.HKEACDBJCOD = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_None);
+        self.JDFPKAMFHAP.clear();
+        self.reason = ::protobuf::EnumOrUnknown::new(super::NPPEMMILLCO::NPPEMMILLCO::NPPEMMILLCO_HGLIFJGHADE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EEHLDBOEFGB {
         static instance: EEHLDBOEFGB = EEHLDBOEFGB {
             BCAKPNCHIIJ: 0,
-            HKEACDBJCOD: ::protobuf::EnumOrUnknown::from_i32(0),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
-            JDFPKAMFHAP: ::protobuf::MessageField::none(),
             OJNGBIBGHBL: 0,
+            HKEACDBJCOD: ::protobuf::EnumOrUnknown::from_i32(0),
+            JDFPKAMFHAP: ::protobuf::MessageField::none(),
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,11 +222,11 @@ impl ::protobuf::reflect::ProtobufValue for EEHLDBOEFGB {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11EEHLDBOEFGB.proto\x1a\x13FightGameMode.proto\x1a\x11LAJGLHCCNED.pr\
     oto\x1a\x11NPPEMMILLCO.proto\"\xd9\x01\n\x0bEEHLDBOEFGB\x12\x20\n\x0bBCA\
-    KPNCHIIJ\x18\x03\x20\x01(\rR\x0bBCAKPNCHIIJ\x120\n\x0bHKEACDBJCOD\x18\
-    \x05\x20\x01(\x0e2\x0e.FightGameModeR\x0bHKEACDBJCOD\x12$\n\x06reason\
-    \x18\x07\x20\x01(\x0e2\x0c.NPPEMMILLCOR\x06reason\x12.\n\x0bJDFPKAMFHAP\
-    \x18\n\x20\x01(\x0b2\x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12\x20\n\x0bOJNGBI\
-    BGHBL\x18\x0f\x20\x01(\x05R\x0bOJNGBIBGHBLb\x06proto3\
+    KPNCHIIJ\x18\x01\x20\x01(\rR\x0bBCAKPNCHIIJ\x12\x20\n\x0bOJNGBIBGHBL\x18\
+    \t\x20\x01(\x05R\x0bOJNGBIBGHBL\x120\n\x0bHKEACDBJCOD\x18\x0c\x20\x01(\
+    \x0e2\x0e.FightGameModeR\x0bHKEACDBJCOD\x12.\n\x0bJDFPKAMFHAP\x18\r\x20\
+    \x01(\x0b2\x0c.LAJGLHCCNEDR\x0bJDFPKAMFHAP\x12$\n\x06reason\x18\x0f\x20\
+    \x01(\x0e2\x0c.NPPEMMILLCOR\x06reasonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

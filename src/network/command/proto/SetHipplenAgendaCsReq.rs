@@ -72,10 +72,10 @@ impl ::protobuf::Message for SetHipplenAgendaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.NEMFNENACNB)?;
                 },
-                112 => {
+                48 => {
                     self.NEMFNENACNB.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for SetHipplenAgendaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.NEMFNENACNB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.NEMFNENACNB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.NEMFNENACNB)?;
+        os.write_repeated_packed_uint32(6, &self.NEMFNENACNB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for SetHipplenAgendaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHipplenAgendaCsReq.proto\"9\n\x15SetHipplenAgendaCsReq\x12\x20\
-    \n\x0bNEMFNENACNB\x18\x0e\x20\x03(\rR\x0bNEMFNENACNBb\x06proto3\
+    \n\x0bNEMFNENACNB\x18\x06\x20\x03(\rR\x0bNEMFNENACNBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

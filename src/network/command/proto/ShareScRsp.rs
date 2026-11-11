@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ShareScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ShareScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:ShareScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:ShareScRsp.NMOKJJMNICM)
     pub NMOKJJMNICM: ::protobuf::MessageField<super::BCBHFBPADEE::BCBHFBPADEE>,
-    // @@protoc_insertion_point(field:ShareScRsp.retcode)
-    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ShareScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl ShareScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &ShareScRsp| { &m.retcode },
+            |m: &mut ShareScRsp| { &mut m.retcode },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &ShareScRsp| { &m.reward },
@@ -62,11 +67,6 @@ impl ShareScRsp {
             "NMOKJJMNICM",
             |m: &ShareScRsp| { &m.NMOKJJMNICM },
             |m: &mut ShareScRsp| { &mut m.NMOKJJMNICM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &ShareScRsp| { &m.retcode },
-            |m: &mut ShareScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ShareScRsp>(
             "ShareScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ShareScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                64 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                34 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMOKJJMNICM)?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,6 +107,9 @@ impl ::protobuf::Message for ShareScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -114,9 +117,6 @@ impl ::protobuf::Message for ShareScRsp {
         if let Some(v) = self.NMOKJJMNICM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for ShareScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if let Some(v) = self.NMOKJJMNICM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for ShareScRsp {
     }
 
     fn clear(&mut self) {
+        self.retcode = 0;
         self.reward.clear();
         self.NMOKJJMNICM.clear();
-        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ShareScRsp {
         static instance: ShareScRsp = ShareScRsp {
+            retcode: 0,
             reward: ::protobuf::MessageField::none(),
             NMOKJJMNICM: ::protobuf::MessageField::none(),
-            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for ShareScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10ShareScRsp.proto\x1a\x11BCBHFBPADEE.proto\x1a\x0eItemList.proto\"y\
-    \n\nShareScRsp\x12!\n\x06reward\x18\x01\x20\x01(\x0b2\t.ItemListR\x06rew\
-    ard\x12.\n\x0bNMOKJJMNICM\x18\x04\x20\x01(\x0b2\x0c.BCBHFBPADEER\x0bNMOK\
-    JJMNICM\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\nShareScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12!\
+    \n\x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bNMOKJ\
+    JMNICM\x18\x0f\x20\x01(\x0b2\x0c.BCBHFBPADEER\x0bNMOKJJMNICMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

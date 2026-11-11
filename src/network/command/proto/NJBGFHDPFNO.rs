@@ -79,7 +79,7 @@ impl ::protobuf::Message for NJBGFHDPFNO {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                24 => {
                     self.role_star = is.read_uint32()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for NJBGFHDPFNO {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.role_star);
+            my_size += ::protobuf::rt::uint32_size(3, self.role_star);
         }
         if self.role_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.role_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for NJBGFHDPFNO {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.role_star != 0 {
-            os.write_uint32(6, self.role_star)?;
+            os.write_uint32(3, self.role_star)?;
         }
         if self.role_id != 0 {
             os.write_uint32(15, self.role_id)?;
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for NJBGFHDPFNO {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11NJBGFHDPFNO.proto\"C\n\x0bNJBGFHDPFNO\x12\x1b\n\trole_star\x18\x06\
+    \n\x11NJBGFHDPFNO.proto\"C\n\x0bNJBGFHDPFNO\x12\x1b\n\trole_star\x18\x03\
     \x20\x01(\rR\x08roleStar\x12\x17\n\x07role_id\x18\x0f\x20\x01(\rR\x06rol\
     eIdb\x06proto3\
 ";

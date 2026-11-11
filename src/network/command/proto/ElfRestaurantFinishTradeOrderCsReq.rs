@@ -72,7 +72,7 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                96 => {
                     self.BFADNHJAJBJ = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BFADNHJAJBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BFADNHJAJBJ);
+            my_size += ::protobuf::rt::uint32_size(12, self.BFADNHJAJBJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BFADNHJAJBJ != 0 {
-            os.write_uint32(15, self.BFADNHJAJBJ)?;
+            os.write_uint32(12, self.BFADNHJAJBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantFinishTradeOrderCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(ElfRestaurantFinishTradeOrderCsReq.proto\"F\n\"ElfRestaurantFinishTra\
-    deOrderCsReq\x12\x20\n\x0bBFADNHJAJBJ\x18\x0f\x20\x01(\rR\x0bBFADNHJAJBJ\
+    deOrderCsReq\x12\x20\n\x0bBFADNHJAJBJ\x18\x0c\x20\x01(\rR\x0bBFADNHJAJBJ\
     b\x06proto3\
 ";
 

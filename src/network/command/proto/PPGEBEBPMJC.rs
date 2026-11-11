@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PPGEBEBPMJC {
     // message fields
-    // @@protoc_insertion_point(field:PPGEBEBPMJC.NEKJGIDPCAI)
-    pub NEKJGIDPCAI: bool,
     // @@protoc_insertion_point(field:PPGEBEBPMJC.AEKOKMPIFLN)
     pub AEKOKMPIFLN: bool,
+    // @@protoc_insertion_point(field:PPGEBEBPMJC.NEKJGIDPCAI)
+    pub NEKJGIDPCAI: bool,
     // @@protoc_insertion_point(field:PPGEBEBPMJC.augment_id)
     pub augment_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl PPGEBEBPMJC {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEKJGIDPCAI",
-            |m: &PPGEBEBPMJC| { &m.NEKJGIDPCAI },
-            |m: &mut PPGEBEBPMJC| { &mut m.NEKJGIDPCAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "AEKOKMPIFLN",
             |m: &PPGEBEBPMJC| { &m.AEKOKMPIFLN },
             |m: &mut PPGEBEBPMJC| { &mut m.AEKOKMPIFLN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NEKJGIDPCAI",
+            |m: &PPGEBEBPMJC| { &m.NEKJGIDPCAI },
+            |m: &mut PPGEBEBPMJC| { &mut m.NEKJGIDPCAI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "augment_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for PPGEBEBPMJC {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.NEKJGIDPCAI = is.read_bool()?;
-                },
                 40 => {
                     self.AEKOKMPIFLN = is.read_bool()?;
                 },
-                64 => {
+                48 => {
+                    self.NEKJGIDPCAI = is.read_bool()?;
+                },
+                88 => {
                     self.augment_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PPGEBEBPMJC {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NEKJGIDPCAI != false {
-            my_size += 1 + 1;
-        }
         if self.AEKOKMPIFLN != false {
             my_size += 1 + 1;
         }
+        if self.NEKJGIDPCAI != false {
+            my_size += 1 + 1;
+        }
         if self.augment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.augment_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.augment_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PPGEBEBPMJC {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NEKJGIDPCAI != false {
-            os.write_bool(2, self.NEKJGIDPCAI)?;
-        }
         if self.AEKOKMPIFLN != false {
             os.write_bool(5, self.AEKOKMPIFLN)?;
         }
+        if self.NEKJGIDPCAI != false {
+            os.write_bool(6, self.NEKJGIDPCAI)?;
+        }
         if self.augment_id != 0 {
-            os.write_uint32(8, self.augment_id)?;
+            os.write_uint32(11, self.augment_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for PPGEBEBPMJC {
     }
 
     fn clear(&mut self) {
-        self.NEKJGIDPCAI = false;
         self.AEKOKMPIFLN = false;
+        self.NEKJGIDPCAI = false;
         self.augment_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PPGEBEBPMJC {
         static instance: PPGEBEBPMJC = PPGEBEBPMJC {
-            NEKJGIDPCAI: false,
             AEKOKMPIFLN: false,
+            NEKJGIDPCAI: false,
             augment_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for PPGEBEBPMJC {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11PPGEBEBPMJC.proto\"p\n\x0bPPGEBEBPMJC\x12\x20\n\x0bNEKJGIDPCAI\x18\
-    \x02\x20\x01(\x08R\x0bNEKJGIDPCAI\x12\x20\n\x0bAEKOKMPIFLN\x18\x05\x20\
-    \x01(\x08R\x0bAEKOKMPIFLN\x12\x1d\n\naugment_id\x18\x08\x20\x01(\rR\taug\
+    \n\x11PPGEBEBPMJC.proto\"p\n\x0bPPGEBEBPMJC\x12\x20\n\x0bAEKOKMPIFLN\x18\
+    \x05\x20\x01(\x08R\x0bAEKOKMPIFLN\x12\x20\n\x0bNEKJGIDPCAI\x18\x06\x20\
+    \x01(\x08R\x0bNEKJGIDPCAI\x12\x1d\n\naugment_id\x18\x0b\x20\x01(\rR\taug\
     mentIdb\x06proto3\
 ";
 

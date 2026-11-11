@@ -45,48 +45,48 @@ impl OFFMCODMKDL {
         ::std::default::Default::default()
     }
 
-    // .NFDHOCKEPGD H_5f484477 = 1001;
+    // .NFDHOCKEPGD H_7fcfa2fe = 1001;
 
-    pub fn H_5f484477(&self) -> &super::NFDHOCKEPGD::NFDHOCKEPGD {
+    pub fn H_7fcfa2fe(&self) -> &super::NFDHOCKEPGD::NFDHOCKEPGD {
         match self.CGIFMOFGECO {
-            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(ref v)) => v,
+            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(ref v)) => v,
             _ => <super::NFDHOCKEPGD::NFDHOCKEPGD as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_H_5f484477(&mut self) {
+    pub fn clear_H_7fcfa2fe(&mut self) {
         self.CGIFMOFGECO = ::std::option::Option::None;
     }
 
-    pub fn has_H_5f484477(&self) -> bool {
+    pub fn has_H_7fcfa2fe(&self) -> bool {
         match self.CGIFMOFGECO {
-            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(..)) => true,
+            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_H_5f484477(&mut self, v: super::NFDHOCKEPGD::NFDHOCKEPGD) {
-        self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(v))
+    pub fn set_H_7fcfa2fe(&mut self, v: super::NFDHOCKEPGD::NFDHOCKEPGD) {
+        self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_H_5f484477(&mut self) -> &mut super::NFDHOCKEPGD::NFDHOCKEPGD {
-        if let ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(_)) = self.CGIFMOFGECO {
+    pub fn mut_H_7fcfa2fe(&mut self) -> &mut super::NFDHOCKEPGD::NFDHOCKEPGD {
+        if let ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(_)) = self.CGIFMOFGECO {
         } else {
-            self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(super::NFDHOCKEPGD::NFDHOCKEPGD::new()));
+            self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(super::NFDHOCKEPGD::NFDHOCKEPGD::new()));
         }
         match self.CGIFMOFGECO {
-            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(ref mut v)) => v,
+            ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_H_5f484477(&mut self) -> super::NFDHOCKEPGD::NFDHOCKEPGD {
-        if self.has_H_5f484477() {
+    pub fn take_H_7fcfa2fe(&mut self) -> super::NFDHOCKEPGD::NFDHOCKEPGD {
+        if self.has_H_7fcfa2fe() {
             match self.CGIFMOFGECO.take() {
-                ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(v)) => v,
+                ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -294,11 +294,11 @@ impl OFFMCODMKDL {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NFDHOCKEPGD::NFDHOCKEPGD>(
-            "H_5f484477",
-            OFFMCODMKDL::has_H_5f484477,
-            OFFMCODMKDL::H_5f484477,
-            OFFMCODMKDL::mut_H_5f484477,
-            OFFMCODMKDL::set_H_5f484477,
+            "H_7fcfa2fe",
+            OFFMCODMKDL::has_H_7fcfa2fe,
+            OFFMCODMKDL::H_7fcfa2fe,
+            OFFMCODMKDL::mut_H_7fcfa2fe,
+            OFFMCODMKDL::set_H_7fcfa2fe,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CEOJGIDJLOA::CEOJGIDJLOA>(
             "GOKJCFBPHCJ",
@@ -348,7 +348,7 @@ impl ::protobuf::Message for OFFMCODMKDL {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8010 => {
-                    self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H5f484477(is.read_message()?));
+                    self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(is.read_message()?));
                 },
                 8018 => {
                     self.CGIFMOFGECO = ::std::option::Option::Some(offmcodmkdl::CGIFMOFGECO::GOKJCFBPHCJ(is.read_message()?));
@@ -376,7 +376,7 @@ impl ::protobuf::Message for OFFMCODMKDL {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.CGIFMOFGECO {
             match v {
-                &offmcodmkdl::CGIFMOFGECO::H5f484477(ref v) => {
+                &offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -406,7 +406,7 @@ impl ::protobuf::Message for OFFMCODMKDL {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.CGIFMOFGECO {
             match v {
-                &offmcodmkdl::CGIFMOFGECO::H5f484477(ref v) => {
+                &offmcodmkdl::CGIFMOFGECO::H7fcfa2fe(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(1001, v, os)?;
                 },
                 &offmcodmkdl::CGIFMOFGECO::GOKJCFBPHCJ(ref v) => {
@@ -481,8 +481,8 @@ pub mod offmcodmkdl {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:OFFMCODMKDL.CGIFMOFGECO)
     pub enum CGIFMOFGECO {
-        // @@protoc_insertion_point(oneof_field:OFFMCODMKDL.H_5f484477)
-        H5f484477(super::super::NFDHOCKEPGD::NFDHOCKEPGD),
+        // @@protoc_insertion_point(oneof_field:OFFMCODMKDL.H_7fcfa2fe)
+        H7fcfa2fe(super::super::NFDHOCKEPGD::NFDHOCKEPGD),
         // @@protoc_insertion_point(oneof_field:OFFMCODMKDL.GOKJCFBPHCJ)
         GOKJCFBPHCJ(super::super::CEOJGIDJLOA::CEOJGIDJLOA),
         // @@protoc_insertion_point(oneof_field:OFFMCODMKDL.FNNOPJBPLPF)
@@ -513,8 +513,8 @@ pub mod offmcodmkdl {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11OFFMCODMKDL.proto\x1a\x11APCDHOBPBHA.proto\x1a\x11CEOJGIDJLOA.prot\
     o\x1a\x11EDLENJAPMBJ.proto\x1a\x11HGLDJBNCABP.proto\x1a\x11NFDHOCKEPGD.p\
-    roto\"\x98\x02\n\x0bOFFMCODMKDL\x12.\n\nH_5f484477\x18\xe9\x07\x20\x01(\
-    \x0b2\x0c.NFDHOCKEPGDH\0R\tH5f484477\x121\n\x0bGOKJCFBPHCJ\x18\xea\x07\
+    roto\"\x98\x02\n\x0bOFFMCODMKDL\x12.\n\nH_7fcfa2fe\x18\xe9\x07\x20\x01(\
+    \x0b2\x0c.NFDHOCKEPGDH\0R\tH7fcfa2fe\x121\n\x0bGOKJCFBPHCJ\x18\xea\x07\
     \x20\x01(\x0b2\x0c.CEOJGIDJLOAH\0R\x0bGOKJCFBPHCJ\x121\n\x0bFNNOPJBPLPF\
     \x18\xeb\x07\x20\x01(\x0b2\x0c.APCDHOBPBHAH\0R\x0bFNNOPJBPLPF\x121\n\x0b\
     MPNPIIHHFPN\x18\xec\x07\x20\x01(\x0b2\x0c.EDLENJAPMBJH\0R\x0bMPNPIIHHFPN\

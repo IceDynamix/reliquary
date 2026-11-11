@@ -79,7 +79,7 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                16 => {
                     self.entry_id = is.read_uint32()?;
                 },
                 80 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for UnlockTeleportNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.entry_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.entry_id);
         }
         if self.entry_id2 != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.entry_id2);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for UnlockTeleportNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.entry_id != 0 {
-            os.write_uint32(8, self.entry_id)?;
+            os.write_uint32(2, self.entry_id)?;
         }
         if self.entry_id2 != 0 {
             os.write_uint32(10, self.entry_id2)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for UnlockTeleportNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aUnlockTeleportNotify.proto\"N\n\x14UnlockTeleportNotify\x12\x19\n\
-    \x08entry_id\x18\x08\x20\x01(\rR\x07entryId\x12\x1b\n\tentry_id2\x18\n\
+    \x08entry_id\x18\x02\x20\x01(\rR\x07entryId\x12\x1b\n\tentry_id2\x18\n\
     \x20\x01(\rR\x08entryId2b\x06proto3\
 ";
 

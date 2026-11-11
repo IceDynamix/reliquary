@@ -29,18 +29,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub enum JKJGPOOLLKF {
     // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_NLCDGIPGFDJ)
     JKJGPOOLLKF_NLCDGIPGFDJ = 0,
-    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_GALJIBIENIB)
-    JKJGPOOLLKF_GALJIBIENIB = 5305,
-    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_KKEHIBPDIEF)
-    JKJGPOOLLKF_KKEHIBPDIEF = 5383,
-    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_ECBIHKFNGGM)
-    JKJGPOOLLKF_ECBIHKFNGGM = 5315,
-    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_PLELMMJJOLM)
-    JKJGPOOLLKF_PLELMMJJOLM = 5356,
     // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_LHGHFLGEBBN)
-    JKJGPOOLLKF_LHGHFLGEBBN = 5360,
+    JKJGPOOLLKF_LHGHFLGEBBN = 5305,
+    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_GALJIBIENIB)
+    JKJGPOOLLKF_GALJIBIENIB = 5331,
     // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_EPPMKBDPDBM)
-    JKJGPOOLLKF_EPPMKBDPDBM = 5375,
+    JKJGPOOLLKF_EPPMKBDPDBM = 5387,
+    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_KKEHIBPDIEF)
+    JKJGPOOLLKF_KKEHIBPDIEF = 5306,
+    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_ECBIHKFNGGM)
+    JKJGPOOLLKF_ECBIHKFNGGM = 5370,
+    // @@protoc_insertion_point(enum_value:JKJGPOOLLKF.JKJGPOOLLKF_PLELMMJJOLM)
+    JKJGPOOLLKF_PLELMMJJOLM = 5318,
 }
 
 impl ::protobuf::Enum for JKJGPOOLLKF {
@@ -53,12 +53,12 @@ impl ::protobuf::Enum for JKJGPOOLLKF {
     fn from_i32(value: i32) -> ::std::option::Option<JKJGPOOLLKF> {
         match value {
             0 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_NLCDGIPGFDJ),
-            5305 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB),
-            5383 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF),
-            5315 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM),
-            5356 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM),
-            5360 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN),
-            5375 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM),
+            5305 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN),
+            5331 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB),
+            5387 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM),
+            5306 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF),
+            5370 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM),
+            5318 => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM),
             _ => ::std::option::Option::None
         }
     }
@@ -66,24 +66,24 @@ impl ::protobuf::Enum for JKJGPOOLLKF {
     fn from_str(str: &str) -> ::std::option::Option<JKJGPOOLLKF> {
         match str {
             "JKJGPOOLLKF_NLCDGIPGFDJ" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_NLCDGIPGFDJ),
+            "JKJGPOOLLKF_LHGHFLGEBBN" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN),
             "JKJGPOOLLKF_GALJIBIENIB" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB),
+            "JKJGPOOLLKF_EPPMKBDPDBM" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM),
             "JKJGPOOLLKF_KKEHIBPDIEF" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF),
             "JKJGPOOLLKF_ECBIHKFNGGM" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM),
             "JKJGPOOLLKF_PLELMMJJOLM" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM),
-            "JKJGPOOLLKF_LHGHFLGEBBN" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN),
-            "JKJGPOOLLKF_EPPMKBDPDBM" => ::std::option::Option::Some(JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [JKJGPOOLLKF] = &[
         JKJGPOOLLKF::JKJGPOOLLKF_NLCDGIPGFDJ,
+        JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN,
         JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB,
+        JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM,
         JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF,
         JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM,
         JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM,
-        JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN,
-        JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM,
     ];
 }
 
@@ -96,12 +96,12 @@ impl ::protobuf::EnumFull for JKJGPOOLLKF {
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
             JKJGPOOLLKF::JKJGPOOLLKF_NLCDGIPGFDJ => 0,
-            JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB => 1,
-            JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF => 2,
-            JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM => 3,
-            JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM => 4,
-            JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN => 5,
-            JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM => 6,
+            JKJGPOOLLKF::JKJGPOOLLKF_LHGHFLGEBBN => 1,
+            JKJGPOOLLKF::JKJGPOOLLKF_GALJIBIENIB => 2,
+            JKJGPOOLLKF::JKJGPOOLLKF_EPPMKBDPDBM => 3,
+            JKJGPOOLLKF::JKJGPOOLLKF_KKEHIBPDIEF => 4,
+            JKJGPOOLLKF::JKJGPOOLLKF_ECBIHKFNGGM => 5,
+            JKJGPOOLLKF::JKJGPOOLLKF_PLELMMJJOLM => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,11 +121,11 @@ impl JKJGPOOLLKF {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11JKJGPOOLLKF.proto*\xde\x01\n\x0bJKJGPOOLLKF\x12\x1b\n\x17JKJGPOOLL\
-    KF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JKJGPOOLLKF_GALJIBIENIB\x10\xb9)\x12\
-    \x1c\n\x17JKJGPOOLLKF_KKEHIBPDIEF\x10\x87*\x12\x1c\n\x17JKJGPOOLLKF_ECBI\
-    HKFNGGM\x10\xc3)\x12\x1c\n\x17JKJGPOOLLKF_PLELMMJJOLM\x10\xec)\x12\x1c\n\
-    \x17JKJGPOOLLKF_LHGHFLGEBBN\x10\xf0)\x12\x1c\n\x17JKJGPOOLLKF_EPPMKBDPDB\
-    M\x10\xff)b\x06proto3\
+    KF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JKJGPOOLLKF_LHGHFLGEBBN\x10\xb9)\x12\
+    \x1c\n\x17JKJGPOOLLKF_GALJIBIENIB\x10\xd3)\x12\x1c\n\x17JKJGPOOLLKF_EPPM\
+    KBDPDBM\x10\x8b*\x12\x1c\n\x17JKJGPOOLLKF_KKEHIBPDIEF\x10\xba)\x12\x1c\n\
+    \x17JKJGPOOLLKF_ECBIHKFNGGM\x10\xfa)\x12\x1c\n\x17JKJGPOOLLKF_PLELMMJJOL\
+    M\x10\xc6)b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

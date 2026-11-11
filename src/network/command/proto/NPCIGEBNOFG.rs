@@ -79,10 +79,10 @@ impl ::protobuf::Message for NPCIGEBNOFG {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                64 => {
                     self.BEBEEMKOBNN = is.read_uint32()?;
                 },
-                120 => {
+                112 => {
                     self.num = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for NPCIGEBNOFG {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.BEBEEMKOBNN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.BEBEEMKOBNN);
+            my_size += ::protobuf::rt::uint32_size(8, self.BEBEEMKOBNN);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.num);
+            my_size += ::protobuf::rt::uint32_size(14, self.num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for NPCIGEBNOFG {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.BEBEEMKOBNN != 0 {
-            os.write_uint32(11, self.BEBEEMKOBNN)?;
+            os.write_uint32(8, self.BEBEEMKOBNN)?;
         }
         if self.num != 0 {
-            os.write_uint32(15, self.num)?;
+            os.write_uint32(14, self.num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for NPCIGEBNOFG {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11NPCIGEBNOFG.proto\"A\n\x0bNPCIGEBNOFG\x12\x20\n\x0bBEBEEMKOBNN\x18\
-    \x0b\x20\x01(\rR\x0bBEBEEMKOBNN\x12\x10\n\x03num\x18\x0f\x20\x01(\rR\x03\
+    \x08\x20\x01(\rR\x0bBEBEEMKOBNN\x12\x10\n\x03num\x18\x0e\x20\x01(\rR\x03\
     numb\x06proto3\
 ";
 
